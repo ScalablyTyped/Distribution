@@ -1,7 +1,7 @@
 package typings.reactDashIntl
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashIntl.distComponentsPluralMod.Props
+import typings.reactDashIntl.libComponentsPluralMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

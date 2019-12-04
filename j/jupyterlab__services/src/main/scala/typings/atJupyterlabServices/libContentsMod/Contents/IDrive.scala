@@ -1,6 +1,7 @@
 package typings.atJupyterlabServices.libContentsMod.Contents
 
 import typings.atJupyterlabObservables.libModeldbMod.ModelDB.IFactory
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.std.Partial
@@ -31,7 +32,7 @@ trait IDrive extends IDisposable {
   /**
     * The server settings of the manager.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = js.native
+  val serverSettings: ISettings = js.native
   /**
     * Copy a file into a given directory.
     *

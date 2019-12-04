@@ -1,6 +1,6 @@
 package typings.cypress.cypressMod
 
-import typings.cypress.Anon_AbsoluteName
+import typings.cypress.Anon_Absolute
 import typings.cypress.Anon_Failures
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait RunResult extends js.Object {
   /**
     * information about the spec test file.
     */
-  var spec: Anon_AbsoluteName
+  var spec: Anon_Absolute
   /**
     * Accurate test results collected by Cypress.
     */
@@ -43,7 +43,7 @@ object RunResult {
     reporterStats: js.Object,
     screenshots: js.Array[ScreenshotInformation],
     shouldUploadVideo: Boolean,
-    spec: Anon_AbsoluteName,
+    spec: Anon_Absolute,
     stats: Anon_Failures,
     tests: js.Array[TestResult],
     error: String = null,

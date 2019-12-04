@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashElementsMod {
   import typings.react.reactMod.ReactElement
+  import typings.reactDashNative.reactDashNativeMod.ViewProperties
   import typings.std.Partial
 
-  type DividerProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
+  type DividerProps = ViewProperties
   /* Rewritten from type alias, can be one of: 
     - typings.react.reactMod.ReactElement
     - typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.TextProps

@@ -12,12 +12,6 @@ trait ViewOptions[TModel /* <: Model */]
   extends typings.backbone.backboneMod.ViewOptions[TModel]
      with ViewMixinOptions {
   /**
-    * The events attribute binds DOM events to actions to perform on the
-    * view. It takes DOM event key and a mapping to the handler.
-    */
-  @JSName("events")
-  var events_ViewOptions: js.UndefOr[EventsHash] = js.undefined
-  /**
     * If you've created a custom region class, you can use it to define
     * your region.
     */
@@ -49,7 +43,7 @@ object ViewOptions {
     collection: Collection[_] = null,
     collectionEvents: EventsHash = null,
     el: js.Any = null,
-    events: EventsHash = null,
+    events: typings.backbone.backboneMod.EventsHash = null,
     id: String = null,
     model: TModel = null,
     modelEvents: EventsHash = null,

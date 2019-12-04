@@ -1,10 +1,10 @@
 package typings.vueDashRouter.typesOptionsMod
 
 import typings.vue.typesVueMod.Vue
-import typings.vueDashRouter.typesMod.default
 import typings.vueDashRouter.typesRouterMod.NavigationGuard
 import typings.vueDashRouter.typesRouterMod.RawLocation
 import typings.vueDashRouter.typesRouterMod.Route
+import typings.vueDashRouter.vueDashRouterMod.default
 import typings.vueDashRouter.vueDashRouterNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`

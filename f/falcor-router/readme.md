@@ -1,7 +1,7 @@
 
 # Scala.js typings for falcor-router
 
-Typings are for version 0.4.0
+Typings are for version 0.8
 
 ## Library description:
 A router DataSource constructor for falcor that allows you to model all your cloud data sources as a single JSON resource.
@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for falcor-router 0.4.0
-// Project: https://github.com/Netflix/falcor-router
-// Definitions by: Quramy <https://github.com/Quramy>, cdhgee <https://github.com/cdhgee>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-```
 

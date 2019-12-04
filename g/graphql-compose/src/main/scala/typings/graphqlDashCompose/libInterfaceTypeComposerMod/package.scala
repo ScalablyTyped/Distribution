@@ -9,7 +9,7 @@ package object libInterfaceTypeComposerMod {
   import typings.graphql.graphqlMod.GraphQLInterfaceType
   import typings.graphql.graphqlMod.GraphQLObjectType
   import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-  import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsGqcInputTypeComposerGqcTypeResolvers
+  import typings.graphqlDashCompose.Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer
   import typings.graphqlDashCompose.libObjectTypeComposerMod.ObjectTypeComposer
   import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
   import typings.graphqlDashCompose.libTypeMapperMod.TypeDefinitionString
@@ -17,7 +17,7 @@ package object libInterfaceTypeComposerMod {
   import typings.std.Map
 
   type ComposeInterfaceType = (InterfaceTypeComposer[js.Any, js.Any]) | GraphQLInterfaceType | TypeDefinitionString | TypeAsString
-  type GraphQLInterfaceTypeExtended[TSource, TContext] = GraphQLInterfaceType with (Anon_GqcExtensionsGqcFieldsGqcInputTypeComposerGqcTypeResolvers[TSource, TContext])
+  type GraphQLInterfaceTypeExtended[TSource, TContext] = GraphQLInterfaceType with (Anon_GqcExtensionsGqcFieldsGqcInputTypeComposer[TSource, TContext])
   type InterfaceTypeComposeDefinition[TSource, TContext] = TypeAsString | (ComposeInterfaceTypeConfig[TSource, TContext])
   type InterfaceTypeResolverCheckFn[TSource, TContext] = js.Function3[
     /* value */ TSource, 

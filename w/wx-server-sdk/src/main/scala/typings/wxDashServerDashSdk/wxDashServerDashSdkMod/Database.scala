@@ -1,7 +1,5 @@
 package typings.wxDashServerDashSdk.wxDashServerDashSdkMod
 
-import typings.wxDashServerDashSdk.DBRegExp
-import typings.wxDashServerDashSdk.ServerDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

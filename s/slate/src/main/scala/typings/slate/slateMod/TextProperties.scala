@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.Set
 import typings.slate.slateStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -3,12 +3,12 @@ package typings.atEmberController.atEmberControllerMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.atEmberController.Anon_As
+import typings.atEmberObject.dashPrivateActionDashHandlerMod.ActionHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionHandler * / any */ trait ControllerMixin extends js.Object {
+trait ControllerMixin extends ActionHandler {
   var model: js.Any
   var queryParams: String | (js.Array[String | StringDictionary[Anon_As]])
   var target: js.Object
@@ -20,6 +20,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ControllerMixin
   extends TopLevel[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mixin<ControllerMixin> */ js.Any
+      typings.atEmberObject.mixinMod.default[ControllerMixin, typings.atEmberObject.atEmberObjectMod.default]
     ]
 

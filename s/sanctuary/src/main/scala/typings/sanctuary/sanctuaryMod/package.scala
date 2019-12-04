@@ -16,6 +16,7 @@ package object sanctuaryMod {
   type ChainRec[A] = Chain[A]
   type Comonad[A] = Extend[A]
   type Extend[A] = Functor[A]
+  type FiniteNumber = Double
   type Fn[A, B] = js.Function1[/* a */ A, B]
   type Fn2[A, B, C] = js.Function1[/* a */ A, js.Function1[/* b */ B, C]]
   type Fn2_[A, B, C] = js.Function2[/* a */ A, /* b */ B, C]
@@ -34,7 +35,10 @@ package object sanctuaryMod {
     ]
   ]
   type Fn5_[A, B, C, D, E, F] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]
+  type Integer = Double
   type Monoid[A] = Semigroup[A]
+  type NonNegativeInteger = Double
+  type NonZeroFiniteNumber = Double
   type Nullable[A] = A | Null
   type Ord[A] = Setoid[A]
   type Pair[A, B] = js.Tuple2[A, B]
@@ -43,4 +47,5 @@ package object sanctuaryMod {
   type Profunctor[B, C] = Functor[C]
   type StrMap[A] = StringDictionary[A]
   type Thunk[A] = js.Function0[A]
+  type ValidNumber = Double
 }

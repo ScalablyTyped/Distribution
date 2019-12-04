@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object mongodbDashMemoryDashServerDashCoreStrings {
   @js.native
+  sealed trait GET extends js.Object
+  
+  @js.native
+  sealed trait POST extends js.Object
+  
+  @js.native
   sealed trait devnull extends StorageEngineT
   
   @js.native
@@ -27,6 +33,10 @@ object mongodbDashMemoryDashServerDashCoreStrings {
   @js.native
   sealed trait wiredTiger extends StorageEngineT
   
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def devnull: devnull = "devnull".asInstanceOf[devnull]
   @scala.inline

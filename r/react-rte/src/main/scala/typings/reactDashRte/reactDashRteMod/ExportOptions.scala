@@ -18,7 +18,7 @@ object ExportOptions {
   def apply(
     blockRenderers: StringDictionary[BlockRenderer] = null,
     blockStyleFn: /* block */ ContentBlock => RenderConfig = null,
-    entityStyleFn: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any => RenderConfig = null,
+    entityStyleFn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any => RenderConfig = null,
     inlineStyles: StringDictionary[RenderConfig] = null
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()

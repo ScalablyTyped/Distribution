@@ -1,15 +1,12 @@
 package typings.atStorybookApi
 
 import typings.atReachRouter.atReachRouterMod.NavigateFn
-import typings.atReachRouter.atReachRouterMod.WindowLocation
 import typings.atStorybookApi.distModulesLayoutMod.Layout
 import typings.atStorybookApi.distModulesLayoutMod.UI
 import typings.atStorybookApi.distModulesNotificationsMod.Notification
 import typings.atStorybookApi.distModulesShortcutsMod.Shortcuts
 import typings.atStorybookApi.distModulesStoriesMod.StoriesHash
 import typings.atStorybookApi.distModulesUrlMod.QueryParams
-import typings.atStorybookApi.distModulesVersionsMod.UnknownEntries
-import typings.atStorybookApi.distModulesVersionsMod.Versions
 import typings.atStorybookTheming.distTypesMod.ThemeVars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +30,7 @@ trait Anon_CustomQueryParams extends js.Object {
   var theme: ThemeVars
   var ui: UI
   var uri: js.UndefOr[String] = js.undefined
-  var versions: Versions with UnknownEntries
+  var versions: VersionsUnknownEntries
   var viewMode: String
 }
 
@@ -54,7 +51,7 @@ object Anon_CustomQueryParams {
     storyId: String,
     theme: ThemeVars,
     ui: UI,
-    versions: Versions with UnknownEntries,
+    versions: VersionsUnknownEntries,
     viewMode: String,
     default: js.UndefOr[Boolean] = js.undefined,
     navigate: NavigateFn = null,

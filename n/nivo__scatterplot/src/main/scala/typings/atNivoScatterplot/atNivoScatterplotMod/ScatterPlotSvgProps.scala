@@ -8,8 +8,8 @@ import typings.atNivoCore.atNivoCoreMod.CssMixBlendMode
 import typings.atNivoCore.atNivoCoreMod.MotionProps
 import typings.atNivoCore.atNivoCoreMod.Theme
 import typings.atNivoLegends.atNivoLegendsMod.LegendProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

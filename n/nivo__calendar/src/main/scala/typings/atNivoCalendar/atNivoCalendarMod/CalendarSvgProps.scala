@@ -4,8 +4,8 @@ import typings.atNivoCalendar.atNivoCalendarStrings.auto
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.BoxAlign
 import typings.atNivoCore.atNivoCoreMod.Theme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.Date
 import typings.std.SVGRectElement
@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/calendar.@nivo/calendar.CalendarData & @nivo/calendar.@nivo/calendar.CalendarCommonProps & std.Partial<{onClick (datum : @nivo/calendar.@nivo/calendar.CalendarDayData, event : react.react.MouseEvent<std.SVGRectElement, react.NativeMouseEvent>): void}> */
+/* Inlined @nivo/calendar.@nivo/calendar.CalendarData & @nivo/calendar.@nivo/calendar.CalendarCommonProps & std.Partial<{onClick (datum : @nivo/calendar.@nivo/calendar.CalendarDayData, event : react.react.MouseEvent<std.SVGRectElement, react.react.NativeMouseEvent>): void}> */
 trait CalendarSvgProps extends js.Object {
   var align: js.UndefOr[BoxAlign] = js.undefined
   var colors: js.UndefOr[js.Array[String]] = js.undefined

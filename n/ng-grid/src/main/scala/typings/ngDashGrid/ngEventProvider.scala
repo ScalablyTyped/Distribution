@@ -1,7 +1,6 @@
 package typings.ngDashGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.angular.angularMod.ITimeoutService
 import typings.ngDashGrid.ngGrid.IColumn
 import typings.ngDashGrid.ngGrid.IEventProvider
 import typings.ngDashGrid.ngGrid.IEventProviderStatic
@@ -19,7 +18,7 @@ class ngEventProvider protected () extends IEventProvider {
     grid: IGridInstance,
     $scope: IGridScope,
     domUtilityService: IDomUtilityService,
-    $timeout: ITimeoutService
+    $timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITimeoutService */ js.Any
   ) = this()
   /* CompleteClass */
   override var colToMove: IColumn = js.native

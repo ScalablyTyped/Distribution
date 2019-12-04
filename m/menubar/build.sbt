@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "menubar"
-version := "7.1.0-8b4d5a"
+version := "7.1.0-c89c32"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "electron" % "6.1.5-7cb82b",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "electron" % "6.1.5-34c3f6",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

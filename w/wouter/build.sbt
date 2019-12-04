@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "wouter"
-version := "2.4.0-5283e4"
+version := "2.4.0-ae6f2d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "preact" % "10.0.5-957ac7",
+  "org.scalablytyped" %%% "preact" % "10.0.5-f6a8a6",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

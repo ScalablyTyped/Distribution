@@ -1,7 +1,9 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsRadioDashGroupRadioDashGroupDashInterfaceMod.RadioChangeEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +17,7 @@ trait IonRadio extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, the user cannot interact with the radio.
     */
@@ -41,14 +41,7 @@ trait IonRadio extends js.Object {
   /**
     * Emitted when the radio button is selected.
     */
-  var onIonSelect: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonSelect: js.UndefOr[js.Function1[/* event */ CustomEvent[RadioChangeEventDetail], Unit]] = js.undefined
   /**
     * the value of the radio.
     */
@@ -59,15 +52,13 @@ object IonRadio {
   @scala.inline
   def apply(
     checked: js.UndefOr[Boolean] = js.undefined,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSelect: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioChangeEventDetail */ _
-    ] => Unit = null,
+    onIonSelect: /* event */ CustomEvent[RadioChangeEventDetail] => Unit = null,
     value: js.Any = null
   ): IonRadio = {
     val __obj = js.Dynamic.literal()

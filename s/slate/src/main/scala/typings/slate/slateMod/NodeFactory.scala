@@ -1,7 +1,7 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.Anon_Data
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +24,6 @@ object NodeFactory extends js.Object {
   def fromJS(value: StringDictionary[js.Any]): NodeJSON = js.native
   def fromJSON(value: StringDictionary[js.Any]): NodeJSON = js.native
   def isNode(maybeNode: js.Any): /* is slate.slate.Node */ Boolean = js.native
-  def isNodeList(maybeNodeList: js.Any): /* is immutable.immutable.List<slate.slate.Node> */ Boolean = js.native
+  def isNodeList(maybeNodeList: js.Any): /* is immutable.Immutable.List<slate.slate.Node> */ Boolean = js.native
 }
 

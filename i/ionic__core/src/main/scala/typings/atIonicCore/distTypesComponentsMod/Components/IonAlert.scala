@@ -2,6 +2,10 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertButton
+import typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod.AlertInput
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +23,7 @@ trait IonAlert extends js.Object {
   /**
     * Array of buttons to be added to the alert.
     */
-  var buttons: js.Array[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertButton */ _) | String
-  ] = js.native
+  var buttons: js.Array[AlertButton | String] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -29,9 +31,7 @@ trait IonAlert extends js.Object {
   /**
     * Animation to use when the alert is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * The main title in the heading of the alert.
     */
@@ -39,9 +39,7 @@ trait IonAlert extends js.Object {
   /**
     * Array of input to show in the alert.
     */
-  var inputs: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertInput */ _
-  ] = js.native
+  var inputs: js.Array[AlertInput] = js.native
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
@@ -49,9 +47,7 @@ trait IonAlert extends js.Object {
   /**
     * Animation to use when the alert is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * The main message to be displayed in the alert. `message` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
@@ -80,15 +76,11 @@ trait IonAlert extends js.Object {
   /**
     * Returns a promise that resolves when the alert did dismiss.
     */
-  def onDidDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Returns a promise that resolves when the alert will dismiss.
     */
-  def onWillDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Present the alert overlay after it has been created.
     */

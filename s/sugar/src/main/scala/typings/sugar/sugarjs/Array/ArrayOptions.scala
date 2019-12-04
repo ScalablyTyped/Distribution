@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArrayOptions extends js.Object {
-  var sortCollate: js.UndefOr[js.Function] = js.undefined
+  var sortCollate: js.UndefOr[typings.sugar.Function] = js.undefined
   var sortEquivalents: js.UndefOr[js.Object] = js.undefined
-  var sortIgnore: js.UndefOr[typings.std.RegExp] = js.undefined
+  var sortIgnore: js.UndefOr[typings.sugar.RegExp] = js.undefined
   var sortIgnoreCase: js.UndefOr[Boolean] = js.undefined
   var sortNatural: js.UndefOr[Boolean] = js.undefined
   var sortOrder: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +16,9 @@ trait ArrayOptions extends js.Object {
 object ArrayOptions {
   @scala.inline
   def apply(
-    sortCollate: js.Function = null,
+    sortCollate: typings.sugar.Function = null,
     sortEquivalents: js.Object = null,
-    sortIgnore: typings.std.RegExp = null,
+    sortIgnore: typings.sugar.RegExp = null,
     sortIgnoreCase: js.UndefOr[Boolean] = js.undefined,
     sortNatural: js.UndefOr[Boolean] = js.undefined,
     sortOrder: java.lang.String = null

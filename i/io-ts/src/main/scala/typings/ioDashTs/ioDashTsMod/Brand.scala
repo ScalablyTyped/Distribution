@@ -14,7 +14,7 @@ object brand extends js.Object {
   {readonly [ K in N ]: symbol}
     */ typings.ioDashTs.ioDashTsStrings.brand with js.Any */](
     codec: C,
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Refinement<C['_A'], Branded<C['_A'], B>> */ js.Any,
+    predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Refinement<C['_A'], Branded<C['_A'], B>> */ js.Any,
     name: N
   ): BrandC[C, B] = js.native
 }

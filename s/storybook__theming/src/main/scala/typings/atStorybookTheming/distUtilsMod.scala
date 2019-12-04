@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object distUtilsMod extends js.Object {
   def darkenColor(color: String): String = js.native
   def lightenColor(color: String): String = js.native
-  def mkColor(color: String): Anon_Color = js.native
+  def mkColor(color: String): Anon_ColorString = js.native
 }
 

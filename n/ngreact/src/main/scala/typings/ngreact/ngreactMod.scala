@@ -1,10 +1,5 @@
 package typings.ngreact
 
-import typings.angular.JQLite
-import typings.angular.angularMod.IAttributes
-import typings.angular.angularMod.IController
-import typings.angular.angularMod.IDirective
-import typings.angular.angularMod.IScope
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import scala.scalajs.js
@@ -19,7 +14,7 @@ object ngreactMod extends js.Object {
     /* propNames */ js.UndefOr[js.Array[String]], 
     /* conf */ js.UndefOr[js.Object], 
     /* injectableProps */ js.UndefOr[js.Object], 
-    IDirective[IScope, JQLite, IAttributes, IController]
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IDirective */ js.Any
   ]
 }
 

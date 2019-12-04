@@ -17,8 +17,6 @@ trait IOptions
   var follow: js.UndefOr[Boolean] = js.undefined
   var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   var mark: js.UndefOr[Boolean] = js.undefined
-  @JSName("matchBase")
-  var matchBase_IOptions: js.UndefOr[js.Any] = js.undefined
   var nodir: js.UndefOr[Boolean] = js.undefined
   var nomount: js.UndefOr[Boolean] = js.undefined
   var nosort: js.UndefOr[Boolean] = js.undefined
@@ -46,7 +44,7 @@ object IOptions {
     follow: js.UndefOr[Boolean] = js.undefined,
     ignore: String | js.Array[String] = null,
     mark: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.Any = null,
+    matchBase: js.UndefOr[Boolean] = js.undefined,
     nobrace: js.UndefOr[Boolean] = js.undefined,
     nocase: js.UndefOr[Boolean] = js.undefined,
     nocomment: js.UndefOr[Boolean] = js.undefined,
@@ -78,7 +76,7 @@ object IOptions {
     if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (matchBase != null) __obj.updateDynamic("matchBase")(matchBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.asInstanceOf[js.Any])
     if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.asInstanceOf[js.Any])
     if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.asInstanceOf[js.Any])
     if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.asInstanceOf[js.Any])

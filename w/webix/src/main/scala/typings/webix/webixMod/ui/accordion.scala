@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.accordion")
 @js.native
-class accordion () extends baseview {
+class accordion ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_accordion: WebixCallback = js.native
   @JSName("config")
   var config_accordion: accordionConfig = js.native
   def addView(view: js.Any): String | Double = js.native

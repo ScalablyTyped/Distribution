@@ -19,9 +19,7 @@ package object reactDashNative {
   import typings.std.Uint8Array
   import typings.std.Uint8ClampedArray
 
-  type AccessibilityChangeEvent = Boolean
   type BodyInit_ = Blob | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | FormData | String | Null
   type HeadersInit_ = Headers | js.Array[js.Array[String]] | StringDictionary[String]
-  type NodeHandle = Double
   type RequestInfo = Request | String
 }

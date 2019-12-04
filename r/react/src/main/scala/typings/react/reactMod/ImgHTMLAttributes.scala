@@ -1,7 +1,6 @@
 package typings.react.reactMod
 
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactStrings.Empty
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`

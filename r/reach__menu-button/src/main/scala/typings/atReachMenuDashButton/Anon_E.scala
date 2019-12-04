@@ -1,9 +1,9 @@
 package typings.atReachMenuDashButton
 
 import typings.atReachMenuDashButton.atReachMenuDashButtonMod.State
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js

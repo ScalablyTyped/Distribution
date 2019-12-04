@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object expandProperties
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectComputedNs.expandProperties */ js.Any
+      js.Function2[
+        /* pattern */ java.lang.String, 
+        /* callback */ js.Function1[/* expanded */ java.lang.String, Unit], 
+        Unit
+      ]
     ]
 

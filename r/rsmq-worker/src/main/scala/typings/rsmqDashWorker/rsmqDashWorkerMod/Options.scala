@@ -26,7 +26,7 @@ object Options {
   @scala.inline
   def apply(
     autostart: js.UndefOr[Boolean] = js.undefined,
-    customExceedCheck: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean = null,
+    customExceedCheck: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any => Boolean = null,
     defaultDelay: Int | Double = null,
     host: String = null,
     interval: Int | Double = null,

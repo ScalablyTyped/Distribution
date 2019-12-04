@@ -2,8 +2,8 @@ package typings.dexie.dexieMod.Dexie
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dexie.Anon_Key
-import typings.dexie.IndexableTypeArrayReadonly
 import typings.dexie.dexieMod.IndexableType
+import typings.dexie.dexieMod.IndexableTypeArrayReadonly
 import typings.dexie.dexieMod.ThenShortcut
 import typings.dexie.dexieStrings.creating
 import typings.dexie.dexieStrings.deleting

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reDashResizableMod {
-  import typings.react.NativeMouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.std.HTMLDivElement
   import typings.std.MouseEvent
   import typings.std.TouchEvent

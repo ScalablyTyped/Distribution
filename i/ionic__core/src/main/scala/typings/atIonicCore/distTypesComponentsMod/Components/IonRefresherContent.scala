@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.distTypesComponentsSpinnerSpinnerDashConfigsMod.SpinnerTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +17,7 @@ trait IonRefresherContent extends js.Object {
   /**
     * An animated SVG spinner that shows when refreshing begins
     */
-  var refreshingSpinner: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any) | Null
-  ] = js.undefined
+  var refreshingSpinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
   /**
     * The text you want to display when performing a refresh. `refreshingText` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
@@ -30,7 +29,7 @@ object IonRefresherContent {
   def apply(
     pullingIcon: String = null,
     pullingText: String = null,
-    refreshingSpinner: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any = null,
+    refreshingSpinner: SpinnerTypes = null,
     refreshingText: String = null
   ): IonRefresherContent = {
     val __obj = js.Dynamic.literal()

@@ -36,27 +36,5 @@ trait Request
     * ```
     */
   var queries: PlainObject[js.Array[String]] = js.native
-  /**
-    * get params pass by querystring, all value are String type.
-    * @member {Object} Request#query
-    * @example
-    * ```js
-    * GET http://127.0.0.1:7001?name=Foo&age=20&age=21
-    * this.query
-    * => { 'name': 'Foo', 'age': 20 }
-    *
-    * GET http://127.0.0.1:7001?a=b&a=c&o[foo]=bar&b[]=1&b[]=2&e=val
-    * this.query
-    * =>
-    * {
-    *   "a": "b",
-    *   "o[foo]": "bar",
-    *   "b[]": "1",
-    *   "e": "val"
-    * }
-    * ```
-    */
-  @JSName("query")
-  var query_Request: PlainObject[String] = js.native
 }
 

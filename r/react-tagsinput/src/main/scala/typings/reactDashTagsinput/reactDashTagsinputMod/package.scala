@@ -15,5 +15,6 @@ package object reactDashTagsinputMod {
     /* inputElement */ ReactElement, 
     ReactChild
   ]
+  type Tag = js.Any
   type TagProps = StringDictionary[js.Any]
 }

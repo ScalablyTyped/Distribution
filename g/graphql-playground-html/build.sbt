@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-playground-html"
-version := "1.6.12-45cd51"
+version := "1.6.12-3f5682"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

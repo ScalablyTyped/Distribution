@@ -33,6 +33,9 @@ object atAngularRouterStrings {
   sealed trait enabled extends InitialNavigation
   
   @js.native
+  sealed trait hash extends js.Object
+  
+  @js.native
   sealed trait hashchange extends js.Object
   
   @js.native
@@ -58,6 +61,9 @@ object atAngularRouterStrings {
   
   @js.native
   sealed trait paramsOrQueryParamsChange extends _RunGuardsAndResolvers
+  
+  @js.native
+  sealed trait path extends js.Object
   
   @js.native
   sealed trait pathParamsChange extends _RunGuardsAndResolvers
@@ -97,6 +103,8 @@ object atAngularRouterStrings {
   @scala.inline
   def enabled: enabled = "enabled".asInstanceOf[enabled]
   @scala.inline
+  def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def hashchange: hashchange = "hashchange".asInstanceOf[hashchange]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
@@ -114,6 +122,8 @@ object atAngularRouterStrings {
   def paramsChange: paramsChange = "paramsChange".asInstanceOf[paramsChange]
   @scala.inline
   def paramsOrQueryParamsChange: paramsOrQueryParamsChange = "paramsOrQueryParamsChange".asInstanceOf[paramsOrQueryParamsChange]
+  @scala.inline
+  def path: path = "path".asInstanceOf[path]
   @scala.inline
   def pathParamsChange: pathParamsChange = "pathParamsChange".asInstanceOf[pathParamsChange]
   @scala.inline

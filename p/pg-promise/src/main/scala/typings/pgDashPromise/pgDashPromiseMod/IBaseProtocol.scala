@@ -6,7 +6,6 @@ import typings.pgDashPromise.Anon_CndMode
 import typings.pgDashPromise.Anon_Duration
 import typings.pgDashPromise.Anon_Mode
 import typings.pgDashPromise.Anon_Tag
-import typings.pgDashPromise.XPromise
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`

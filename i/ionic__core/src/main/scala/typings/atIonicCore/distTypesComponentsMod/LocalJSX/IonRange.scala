@@ -1,7 +1,10 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeChangeEventDetail
+import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,9 +14,7 @@ trait IonRange extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value.
     */
@@ -49,14 +50,7 @@ trait IonRange extends js.Object {
   /**
     * Emitted when the value property has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RangeChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the range has focus.
     */
@@ -80,15 +74,13 @@ trait IonRange extends js.Object {
   /**
     * the value of the range.
     */
-  var value: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any
-  ] = js.undefined
+  var value: js.UndefOr[RangeValue] = js.undefined
 }
 
 object IonRange {
   @scala.inline
   def apply(
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     dualKnobs: js.UndefOr[Boolean] = js.undefined,
@@ -97,15 +89,13 @@ object IonRange {
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[RangeChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     pin: js.UndefOr[Boolean] = js.undefined,
     snaps: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,
     ticks: js.UndefOr[Boolean] = js.undefined,
-    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any = null
+    value: RangeValue = null
   ): IonRange = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

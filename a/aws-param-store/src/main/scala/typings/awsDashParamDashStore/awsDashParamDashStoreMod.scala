@@ -12,75 +12,75 @@ object awsDashParamDashStoreMod extends js.Object {
   trait ParameterQuery extends js.Object {
     def decryption(enabled: Boolean): ParameterQuery = js.native
     def execute(): js.Promise[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
       ] = js.native
-    def executeSync(): /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ js.Any = js.native
+    def executeSync(): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ js.Any = js.native
     def named(
-      nameOrNames: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
+      nameOrNames: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
     ): ParameterQuery = js.native
     def path(
-      path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
+      path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
     ): ParameterQuery = js.native
     def recursive(enabled: Boolean): ParameterQuery = js.native
   }
   
   def getParameter(
-    name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.Parameter */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.Parameter */ _
   ] = js.native
   def getParameter(
-    name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.Parameter */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.Parameter */ _
   ] = js.native
   def getParameterSync(
-    name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any
   ): js.Any = js.native
   def getParameterSync(
-    name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.PSParameterName */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Any = js.native
   def getParameters(
-    names: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    names: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.GetParametersResult */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.GetParametersResult */ _
   ] = js.native
   def getParameters(
-    names: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    names: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.GetParametersResult */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.GetParametersResult */ _
   ] = js.native
   def getParametersByPath(
-    path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
   ] = js.native
   def getParametersByPath(
-    path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterList */ _
   ] = js.native
   def getParametersByPathSync(
-    path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
   ): js.Any = js.native
   def getParametersByPathSync(
-    path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Any = js.native
   def getParametersSync(
-    names: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
+    names: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any
   ): js.Any = js.native
   def getParametersSync(
-    names: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    names: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ParameterNameList */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): js.Any = js.native
   def parameterQuery(): ParameterQuery = js.native
   def parameterQuery(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SSM.Types.ClientConfiguration */ js.Any
   ): ParameterQuery = js.native
 }
 

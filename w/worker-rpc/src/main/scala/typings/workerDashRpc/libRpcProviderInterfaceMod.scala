@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object libRpcProviderInterfaceMod extends js.Object {
   @js.native
   trait RpcProviderInterface extends js.Object {
-    var error: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EventInterface<Error> */ js.Any = js.native
+    var error: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventInterface<Error> */ js.Any = js.native
     def deregisterRpcHandler[T, U](id: String, handler: RpcHandler[T, U]): this.type = js.native
     def deregisterSignalHandler[T](id: String, handler: SignalHandler[T]): this.type = js.native
     def dispatch(message: js.Any): Unit = js.native

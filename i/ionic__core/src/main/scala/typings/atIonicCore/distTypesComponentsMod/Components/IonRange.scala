@@ -1,7 +1,9 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod.RangeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +12,7 @@ trait IonRange extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * How long, in milliseconds, to wait to trigger the `ionChange` event after each change in the range value.
     */
@@ -60,7 +60,7 @@ trait IonRange extends js.Object {
   /**
     * the value of the range.
     */
-  var value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any
+  var value: RangeValue
 }
 
 object IonRange {
@@ -76,8 +76,8 @@ object IonRange {
     snaps: Boolean,
     step: Double,
     ticks: Boolean,
-    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RangeValue */ js.Any,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    value: RangeValue,
+    color: Color = null,
     mode: ios | md = null
   ): IonRange = {
     val __obj = js.Dynamic.literal(debounce = debounce.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dualKnobs = dualKnobs.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], snaps = snaps.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])

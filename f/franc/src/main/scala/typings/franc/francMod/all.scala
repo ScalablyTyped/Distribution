@@ -1,6 +1,5 @@
 package typings.franc.francMod
 
-import typings.franc.ISO6393
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

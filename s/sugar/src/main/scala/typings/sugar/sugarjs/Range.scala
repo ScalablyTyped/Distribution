@@ -9,13 +9,13 @@ trait Range extends js.Object {
   def clamp[T](el: T): T = js.native
   def contains[T](el: T): Boolean = js.native
   def days(): Double = js.native
-  def every[T](amount: java.lang.String): js.Array[T] = js.native
+  def every[T](amount: java.lang.String): typings.sugar.Array[T] = js.native
   def every[T](
     amount: java.lang.String,
     everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]
-  ): js.Array[T] = js.native
-  def every[T](amount: Double): js.Array[T] = js.native
-  def every[T](amount: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]): js.Array[T] = js.native
+  ): typings.sugar.Array[T] = js.native
+  def every[T](amount: Double): typings.sugar.Array[T] = js.native
+  def every[T](amount: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ this.type, Unit]): typings.sugar.Array[T] = js.native
   def hours(): Double = js.native
   def intersect(range: Range): Range = js.native
   def isValid(): Boolean = js.native
@@ -24,7 +24,7 @@ trait Range extends js.Object {
   def months(): Double = js.native
   def seconds(): Double = js.native
   def span(): Double = js.native
-  def toArray[T](): js.Array[T] = js.native
+  def toArray[T](): typings.sugar.Array[T] = js.native
   def union(range: Range): Range = js.native
   def weeks(): Double = js.native
   def years(): Double = js.native

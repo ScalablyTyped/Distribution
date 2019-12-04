@@ -19,8 +19,6 @@ class ScrollbarPlugin protected ()
   override val options: js.Any = js.native
   /* CompleteClass */
   override val scrollbar: typings.smoothDashScrollbar.interfacesScrollbarMod.Scrollbar = js.native
-  @JSName("scrollbar")
-  val scrollbar_ScrollbarPlugin: Scrollbar = js.native
   /* CompleteClass */
   override def onDestroy(): Unit = js.native
   /* CompleteClass */

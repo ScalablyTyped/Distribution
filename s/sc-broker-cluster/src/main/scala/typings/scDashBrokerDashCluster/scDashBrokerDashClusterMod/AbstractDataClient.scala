@@ -31,11 +31,11 @@ class AbstractDataClient protected () extends EventEmitter {
   ): Unit = js.native
   def exec(
     query: js.Function1[/* datamap */ FlexiMap, Unit],
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify QueryOptions */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify QueryOptions */ js.Any
   ): Unit = js.native
   def exec(
     query: js.Function1[/* datamap */ FlexiMap, Unit],
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify QueryOptions */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify QueryOptions */ js.Any,
     callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
   ): Unit = js.native
   def expire(keys: Keys, seconds: Double): Unit = js.native
@@ -93,11 +93,11 @@ class AbstractDataClient protected () extends EventEmitter {
   def splice(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def splice(
     keyChain: KeyChain,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpliceOptions */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpliceOptions */ js.Any
   ): Unit = js.native
   def splice(
     keyChain: KeyChain,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpliceOptions */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpliceOptions */ js.Any,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
   ): Unit = js.native
   def unexpire(keys: Keys): Unit = js.native

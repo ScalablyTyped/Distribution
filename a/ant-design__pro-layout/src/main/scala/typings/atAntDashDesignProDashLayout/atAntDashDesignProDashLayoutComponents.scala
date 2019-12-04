@@ -7,32 +7,34 @@ import scala.scalajs.js.annotation._
 
 object atAntDashDesignProDashLayoutComponents extends atAntDashDesignProDashLayoutProps {
   @scala.inline
-  def BaseMenu: ComponentType[BaseMenuProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esSiderMenuBaseMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[BaseMenuProps]]
+  def BaseMenu: ComponentType[BaseMenuProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[BaseMenuProps]]
   @scala.inline
-  def BasicLayout: ComponentType[BasicLayoutProps] = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[BasicLayoutProps]]
+  def BasicLayout: ComponentType[BasicLayoutProps] = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[BasicLayoutProps]]
   @scala.inline
-  def DefaultFooter: ComponentType[DefaultFooterProps] = typings.atAntDashDesignProDashLayout.esMod.DefaultFooter.asInstanceOf[typings.react.reactMod.ComponentType[DefaultFooterProps]]
+  def BlockCheckbox: ComponentType[BlockCheckboxProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerBlockCheckboxMod.default.asInstanceOf[typings.react.reactMod.ComponentType[BlockCheckboxProps]]
   @scala.inline
-  def DefaultHeader: ComponentType[DefaultHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esMod.DefaultHeader].asInstanceOf[typings.react.reactMod.ComponentType[DefaultHeaderProps]]
+  def DefaultFooter: ComponentType[DefaultFooterProps] = typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutMod.DefaultFooter.asInstanceOf[typings.react.reactMod.ComponentType[DefaultFooterProps]]
   @scala.inline
-  def Es: ComponentType[EsProps] = typings.atAntDashDesignProDashLayout.esMod.default.asInstanceOf[typings.react.reactMod.ComponentType[EsProps]]
+  def DefaultHeader: ComponentType[DefaultHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutMod.DefaultHeader].asInstanceOf[typings.react.reactMod.ComponentType[DefaultHeaderProps]]
   @scala.inline
-  def Footer: ComponentType[FooterProps] = typings.atAntDashDesignProDashLayout.esFooterMod.default.asInstanceOf[typings.react.reactMod.ComponentType[FooterProps]]
+  def Footer: ComponentType[FooterProps] = typings.atAntDashDesignProDashLayout.libFooterMod.default.asInstanceOf[typings.react.reactMod.ComponentType[FooterProps]]
   @scala.inline
-  def GlobalHeader: ComponentType[GlobalHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esGlobalHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[GlobalHeaderProps]]
+  def GlobalHeader: ComponentType[GlobalHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libGlobalHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[GlobalHeaderProps]]
   @scala.inline
-  def GridContent: ComponentType[GridContentProps] = typings.atAntDashDesignProDashLayout.esGridContentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[GridContentProps]]
+  def GridContent: ComponentType[GridContentProps] = typings.atAntDashDesignProDashLayout.libGridContentMod.default.asInstanceOf[typings.react.reactMod.ComponentType[GridContentProps]]
   @scala.inline
-  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
+  def Header: ComponentType[HeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
-  def PageHeaderWrapper: ComponentType[PageHeaderWrapperProps] = typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod.default.asInstanceOf[typings.react.reactMod.ComponentType[PageHeaderWrapperProps]]
+  def PageHeaderWrapper: ComponentType[PageHeaderWrapperProps] = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.default.asInstanceOf[typings.react.reactMod.ComponentType[PageHeaderWrapperProps]]
   @scala.inline
   def ProDashLayout: ComponentType[ProDashLayoutProps] = typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ProDashLayoutProps]]
   @scala.inline
-  def SettingDrawer: ComponentType[SettingDrawerProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esSettingDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SettingDrawerProps]]
+  def SettingDrawer: ComponentType[SettingDrawerProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libSettingDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SettingDrawerProps]]
   @scala.inline
-  def SiderMenu: ComponentType[SiderMenuProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SiderMenuProps]]
+  def SiderMenu: ComponentType[SiderMenuProps] = typings.atAntDashDesignProDashLayout.libSiderMenuMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SiderMenuProps]]
   @scala.inline
-  def TopNavHeader: ComponentType[TopNavHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
+  def ThemeColor: ComponentType[ThemeColorProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ThemeColorProps]]
+  @scala.inline
+  def TopNavHeader: ComponentType[TopNavHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
 }
 

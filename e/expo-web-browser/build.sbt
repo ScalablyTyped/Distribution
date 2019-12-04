@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-web-browser"
-version := "7.0.1-efdff0"
+version := "7.0.1-7e6ed8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

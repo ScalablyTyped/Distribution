@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object default
   extends TopLevel[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any
     ]
 

@@ -1,8 +1,8 @@
 package typings.xstate
 
-import typings.xstate.esTypesMod.Event
-import typings.xstate.esTypesMod.EventObject
-import typings.xstate.esTypesMod.RaiseEvent
+import typings.xstate.libTypesMod.Event
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.RaiseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

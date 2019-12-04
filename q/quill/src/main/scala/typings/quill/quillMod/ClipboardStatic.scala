@@ -10,16 +10,16 @@ trait ClipboardStatic extends js.Object {
     selectorOrNodeType: String,
     callback: js.Function2[
       /* node */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ _
     ]
   ): Unit = js.native
   def addMatcher(
     selectorOrNodeType: Double,
     callback: js.Function2[
       /* node */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ _
     ]
   ): Unit = js.native
   def convert(): js.Any = js.native

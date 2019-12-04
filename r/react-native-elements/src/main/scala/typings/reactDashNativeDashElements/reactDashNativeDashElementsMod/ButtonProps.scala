@@ -8,6 +8,7 @@ import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typings.reactDashNative.reactDashNativeMod.AccessibilityTrait
+import typings.reactDashNative.reactDashNativeMod.ActivityIndicatorProperties
 import typings.reactDashNative.reactDashNativeMod.BackgroundPropType
 import typings.reactDashNative.reactDashNativeMod.GestureResponderEvent
 import typings.reactDashNative.reactDashNativeMod.Insets
@@ -16,6 +17,7 @@ import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
 import typings.reactDashNative.reactDashNativeMod.TargetedEvent
+import typings.reactDashNative.reactDashNativeMod.TextProperties
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -118,9 +120,7 @@ import scala.scalajs.js.annotation._
   /**
     * Additional props to applied to the ActivityIndicator
     */
-  var loadingProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any
-  ] = js.undefined
+  var loadingProps: js.UndefOr[ActivityIndicatorProperties] = js.undefined
   /**
     * Additional style to applied to the ActivityIndicator
     */
@@ -138,9 +138,7 @@ import scala.scalajs.js.annotation._
   /**
     * Optional props for the title inside the button
     */
-  var titleProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
-  ] = js.undefined
+  var titleProps: js.UndefOr[TextProperties] = js.undefined
   /**
     * Title styling
     */
@@ -190,7 +188,7 @@ object ButtonProps {
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     linearGradientProps: js.Object = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any = null,
+    loadingProps: ActivityIndicatorProperties = null,
     loadingStyle: StyleProp[ViewStyle] = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
     onAccessibilityTap: () => Unit = null,
@@ -207,7 +205,7 @@ object ButtonProps {
     style: StyleProp[ViewStyle] = null,
     testID: String = null,
     title: String = null,
-    titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    titleProps: TextProperties = null,
     titleStyle: StyleProp[TextStyle] = null,
     tvParallaxProperties: TVParallaxProperties = null,
     `type`: solid | clear | outline = null,

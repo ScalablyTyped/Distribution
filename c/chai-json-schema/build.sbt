@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-json-schema"
-version := "1.4-dt-20190808Z-848265"
+version := "1.4-dt-20190808Z-5317ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

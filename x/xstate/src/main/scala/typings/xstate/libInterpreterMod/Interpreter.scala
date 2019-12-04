@@ -5,7 +5,7 @@ import typings.std.Partial
 import typings.std.Record
 import typings.xstate.Anon_AutoForward
 import typings.xstate.Anon_Type
-import typings.xstate.Fn_MachineOptions
+import typings.xstate.Fn_Machine
 import typings.xstate.libActorMod.Actor
 import typings.xstate.libStateMod.State
 import typings.xstate.libTypesMod.ActionFunctionMap
@@ -176,7 +176,7 @@ object Interpreter extends js.Object {
     */
   var defaultOptions: InterpreterOptions = js.native
   @JSName("interpret")
-  var interpret_Original: Fn_MachineOptions = js.native
+  var interpret_Original: Fn_Machine = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent], options: Partial[InterpreterOptions]): Interpreter[TContext, TStateSchema, TEvent] = js.native
 }

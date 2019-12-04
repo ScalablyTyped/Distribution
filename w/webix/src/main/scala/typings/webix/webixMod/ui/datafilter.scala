@@ -55,9 +55,9 @@ object datafilter extends js.Object {
     /* CompleteClass */
     override def getValue(node: HTMLElement): js.Any = js.native
     /* CompleteClass */
-    override def refresh(master: baseview, node: HTMLElement, value: js.Any): Unit = js.native
+    override def refresh(master: typings.webix.webix.ui.baseview, node: HTMLElement, value: js.Any): Unit = js.native
     /* CompleteClass */
-    override def render(master: baseview, config: StringDictionary[js.Any]): String = js.native
+    override def render(master: typings.webix.webix.ui.baseview, config: StringDictionary[js.Any]): String = js.native
     /* CompleteClass */
     override def setValue(node: HTMLElement, value: js.Any): js.Any = js.native
   }

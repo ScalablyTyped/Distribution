@@ -14,5 +14,6 @@ trait clipbuffer extends js.Object {
 
 @JSImport("webix", "clipbuffer")
 @js.native
-object clipbuffer extends TopLevel[clipbuffer]
+object clipbuffer
+  extends TopLevel[typings.webix.webix.clipbuffer]
 

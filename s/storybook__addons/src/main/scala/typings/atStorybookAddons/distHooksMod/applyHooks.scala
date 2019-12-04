@@ -1,5 +1,7 @@
 package typings.atStorybookAddons.distHooksMod
 
+import typings.atStorybookAddons.distTypesMod.StoryContext
+import typings.atStorybookAddons.distTypesMod.StoryGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,18 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object applyHooks extends js.Object {
   def apply(
-    applyDecorators: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
-      /* decorators */ js.Array[Decorator], 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ _
-    ]
+    applyDecorators: js.Function2[/* getStory */ StoryGetter, /* decorators */ js.Array[Decorator], StoryGetter]
   ): js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
+    /* getStory */ StoryGetter, 
     /* decorators */ js.Array[Decorator], 
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryContext */ /* context */ _, 
-      _
-    ]
+    js.Function1[/* context */ StoryContext, _]
   ] = js.native
 }
 

@@ -184,6 +184,11 @@ class Series protected () extends js.Object {
   def animate(): Unit = js.native
   def animate(init: Boolean): Unit = js.native
   /**
+    * If implemented in the core, parts of this can probably be shared with
+    * other similar methods in Highcharts.
+    */
+  def destroyGraphics(): Unit = js.native
+  /**
     * Draw the graph. Called internally when rendering line-like series types.
     * The first time it generates the `series.graph` item and optionally other
     * series-wide items like `series.area` for area charts. On subsequent calls
@@ -198,6 +203,14 @@ class Series protected () extends js.Object {
     */
   def drawPoints(): Unit = js.native
   /**
+    * Enter boost mode and apply boost-specific properties.
+    */
+  def enterBoost(): Unit = js.native
+  /**
+    * Exit from boost mode and restore non-boost properties.
+    */
+  def exitBoost(): Unit = js.native
+  /**
     * Return series name in "Series {Number}" format or the one defined by a
     * user. This method can be simply overridden as series name format can vary
     * (e.g. technical indicators).
@@ -209,6 +222,18 @@ class Series protected () extends js.Object {
     * Get the translation and scale for the plot area of this series.
     */
   def getPlotBox(): SeriesPlotBoxObject = js.native
+  /**
+    * Return a full Point object based on the index. The boost module uses
+    * stripped point objects for performance reasons.
+    *
+    * @param boostPoint
+    *        A stripped-down point object
+    *
+    * @return A Point object as per
+    *         http://api.highcharts.com/highcharts#Point
+    */
+  def getPoint(boostPoint: js.Object): Point = js.native
+  def getPoint(boostPoint: Point): Point = js.native
   /**
     * Return the series points with null points filtered out.
     *
@@ -331,6 +356,16 @@ class Series protected () extends js.Object {
   def select(): Unit = js.native
   def select(selected: Boolean): Unit = js.native
   /**
+    * Highstock only. Set the compare mode of the series after render time.
+    * In most cases it is more useful running Axis#setCompare on the X axis
+    * to update all its series.
+    *
+    * @param compare
+    *        Can be one of `null` (default), `"percent"` or `"value"`.
+    */
+  def setCompare(): Unit = js.native
+  def setCompare(compare: String): Unit = js.native
+  /**
     * Apply a new set of data to the series and optionally redraw it. The new
     * data array is passed by reference (except in case of `updatePoints`), and
     * may later be mutated when updating the chart data.
@@ -414,6 +449,13 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#show
     */
   def show(): Unit = js.native
+  /**
+    * Sonify a series.
+    *
+    * @param options
+    *        The options for sonifying this series.
+    */
+  def sonify(options: typings.highcharts.modulesSonificationMod.highchartsMod.SonifySeriesOptionsObject): Unit = js.native
   /**
     * Translate data points from raw data values to chart specific positioning
     * data needed later in the `drawPoints` and `drawGraph` functions. This

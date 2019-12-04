@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "testing-library__vue"
-version := "2.0-dt-20190816Z-b87f17"
+version := "2.0-dt-20190816Z-41cd03"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pretty-format" % "24.9.0-7308f8",
+  "org.scalablytyped" %%% "pretty-format" % "24.9.0-713c64",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "testing-library__dom" % "6.10-dt-20191101Z-3e7edb",
+  "org.scalablytyped" %%% "testing-library__dom" % "6.10-dt-20191101Z-bedd16",
   "org.scalablytyped" %%% "vue" % "2.6.10-8eb705",
-  "org.scalablytyped" %%% "vue-router" % "3.1.3-a11253",
-  "org.scalablytyped" %%% "vuex" % "3.1.2-339070")
+  "org.scalablytyped" %%% "vue-router" % "3.1.3-07cb0a",
+  "org.scalablytyped" %%% "vuex" % "3.1.2-af4ff4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

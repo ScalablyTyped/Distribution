@@ -35,7 +35,7 @@ trait Model
   def createTable(
     callback: js.Function2[
       /* err */ Error, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -43,7 +43,7 @@ trait Model
     options: CreateTablesOptions,
     callback: js.Function2[
       /* err */ Error, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.CreateTableOutput */ /* data */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -51,7 +51,7 @@ trait Model
   def describeTable(
     callback: js.Function2[
       /* err */ Error, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.DescribeTableOutput */ /* data */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.DescribeTableOutput */ /* data */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -81,7 +81,7 @@ trait Model
   def updateTable(
     callback: js.Function2[
       /* err */ Error, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
       Unit
     ]
   ): Unit = js.native
@@ -89,7 +89,7 @@ trait Model
     throughput: Throughput,
     callback: js.Function2[
       /* err */ Error, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.UpdateTableOutput */ /* data */ js.Any, 
       Unit
     ]
   ): Unit = js.native

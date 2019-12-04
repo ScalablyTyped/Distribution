@@ -1,6 +1,6 @@
 package typings.atIonicUtilsDashFs.atIonicUtilsDashFsMod
 
-import typings.fsDashExtra.fsDashExtraMod.WriteFileOptions
+import typings.node.fsMod.WriteFileOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

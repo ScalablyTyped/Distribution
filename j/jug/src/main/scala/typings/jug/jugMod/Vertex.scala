@@ -1,6 +1,5 @@
 package typings.jug.jugMod
 
-import typings.jug.VertexData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

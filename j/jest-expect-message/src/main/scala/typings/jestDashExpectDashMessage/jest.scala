@@ -10,7 +10,7 @@ object jest extends js.Object {
   type Expect = js.Function2[
     /* actual */ js.Any, 
     /* message */ String, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JestMatchers<T> */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JestMatchers<T> */ js.Any
   ]
 }
 

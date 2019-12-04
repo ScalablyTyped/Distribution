@@ -799,14 +799,10 @@ object rcDashMenuStrings {
   sealed trait animationTimingFunction extends js.Object
   
   @js.native
-  sealed trait appear
-    extends MotionStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionStatus
+  sealed trait appear extends MotionStatus
   
   @js.native
-  sealed trait `appear-active`
-    extends MotionActiveStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionActiveStatus
+  sealed trait `appear-active` extends MotionActiveStatus
   
   @js.native
   sealed trait appearance extends js.Object
@@ -1100,9 +1096,7 @@ object rcDashMenuStrings {
   sealed trait clear extends js.Object
   
   @js.native
-  sealed trait click
-    extends TriggerSubMenuAction
-       with typings.rcDashMenu.esInterfaceMod.TriggerSubMenuAction
+  sealed trait click extends TriggerSubMenuAction
   
   @js.native
   sealed trait clip extends js.Object
@@ -1186,14 +1180,10 @@ object rcDashMenuStrings {
   sealed trait emptyCells extends js.Object
   
   @js.native
-  sealed trait enter
-    extends MotionStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionStatus
+  sealed trait enter extends MotionStatus
   
   @js.native
-  sealed trait `enter-active`
-    extends MotionActiveStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionActiveStatus
+  sealed trait `enter-active` extends MotionActiveStatus
   
   @js.native
   sealed trait fill extends js.Object
@@ -1364,14 +1354,10 @@ object rcDashMenuStrings {
   sealed trait height extends js.Object
   
   @js.native
-  sealed trait horizontal
-    extends MenuMode
-       with typings.rcDashMenu.esInterfaceMod.MenuMode
+  sealed trait horizontal extends MenuMode
   
   @js.native
-  sealed trait hover
-    extends TriggerSubMenuAction
-       with typings.rcDashMenu.esInterfaceMod.TriggerSubMenuAction
+  sealed trait hover extends TriggerSubMenuAction
   
   @js.native
   sealed trait hyphens extends js.Object
@@ -1392,9 +1378,7 @@ object rcDashMenuStrings {
   sealed trait initialLetter extends js.Object
   
   @js.native
-  sealed trait `inline`
-    extends MenuMode
-       with typings.rcDashMenu.esInterfaceMod.MenuMode
+  sealed trait `inline` extends MenuMode
   
   @js.native
   sealed trait inlineSize extends js.Object
@@ -1433,14 +1417,10 @@ object rcDashMenuStrings {
   sealed trait justifySelf extends js.Object
   
   @js.native
-  sealed trait leave
-    extends MotionStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionStatus
+  sealed trait leave extends MotionStatus
   
   @js.native
-  sealed trait `leave-active`
-    extends MotionActiveStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionActiveStatus
+  sealed trait `leave-active` extends MotionActiveStatus
   
   @js.native
   sealed trait left extends js.Object
@@ -1824,9 +1804,7 @@ object rcDashMenuStrings {
   sealed trait msWritingMode extends js.Object
   
   @js.native
-  sealed trait none
-    extends MotionStatus
-       with typings.rcDashMenu.esInterfaceMod.MotionStatus
+  sealed trait none extends MotionStatus
   
   @js.native
   sealed trait objectFit extends js.Object
@@ -2300,19 +2278,13 @@ object rcDashMenuStrings {
   sealed trait vectorEffect extends js.Object
   
   @js.native
-  sealed trait vertical
-    extends MenuMode
-       with typings.rcDashMenu.esInterfaceMod.MenuMode
+  sealed trait vertical extends MenuMode
   
   @js.native
-  sealed trait `vertical-left`
-    extends MenuMode
-       with typings.rcDashMenu.esInterfaceMod.MenuMode
+  sealed trait `vertical-left` extends MenuMode
   
   @js.native
-  sealed trait `vertical-right`
-    extends MenuMode
-       with typings.rcDashMenu.esInterfaceMod.MenuMode
+  sealed trait `vertical-right` extends MenuMode
   
   @js.native
   sealed trait verticalAlign extends js.Object

@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +19,7 @@ trait IonRouter extends js.Object {
     * Go back to previous page in the window.history.
     */
   def back(): js.Promise[Unit] = js.native
-  def navChanged(
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-  ): js.Promise[Boolean] = js.native
+  def navChanged(direction: RouterDirection): js.Promise[Boolean] = js.native
   def printDebug(): js.Promise[Unit] = js.native
   /**
     * Navigate to the specified URL.
@@ -28,9 +27,6 @@ trait IonRouter extends js.Object {
     * @param direction The direction of the animation. Defaults to `"forward"`.
     */
   def push(url: String): js.Promise[Boolean] = js.native
-  def push(
-    url: String,
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-  ): js.Promise[Boolean] = js.native
+  def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
 }
 

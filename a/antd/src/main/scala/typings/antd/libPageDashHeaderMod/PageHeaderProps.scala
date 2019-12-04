@@ -2,9 +2,9 @@ package typings.antd.libPageDashHeaderMod
 
 import typings.antd.libAvatarMod.AvatarProps
 import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement

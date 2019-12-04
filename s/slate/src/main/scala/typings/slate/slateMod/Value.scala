@@ -1,8 +1,8 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Map
-import typings.immutable.immutableMod.OrderedSet
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Map
+import typings.immutable.Immutable.OrderedSet
 import typings.slate.Anon_PreserveAnnotations
 import typings.slate.slateStrings.value
 import scala.scalajs.js

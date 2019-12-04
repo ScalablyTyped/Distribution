@@ -4,11 +4,19 @@ import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
+import typings.react.reactMod.HTMLProps
+import typings.reactDashLive.reactDashLiveMod.DivProps
 import typings.reactDashLive.reactDashLiveMod.EditorProps
 import typings.reactDashLive.reactDashLiveMod.LiveEditorProps
 import typings.reactDashLive.reactDashLiveMod.LiveProviderProps
+import typings.reactDashLive.reactDashLiveMod.Omit
+import typings.reactDashLive.reactDashLiveMod.PreProps
 import typings.reactDashLive.reactDashLiveStrings.onChange
 import typings.reactDashLive.reactDashLiveStrings.scope
+import typings.std.Exclude
+import typings.std.HTMLDivElement
+import typings.std.HTMLPreElement
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,8 +65,13 @@ object reactDashLiveMod extends js.Object {
   val LivePreview: ComponentClass[DivProps, ComponentState] = js.native
   val LiveProvider: ComponentClass[LiveProviderProps, ComponentState] = js.native
   def withLive[P](wrappedComponent: ComponentType[P]): ComponentClass[P, ComponentState] = js.native
+  // React Element Props
+  type DivProps = HTMLProps[HTMLDivElement]
   type EditorProps = (Omit[PreProps, onChange]) with Anon_CodeDisabled
   type LiveEditorProps = EditorProps
   type LiveProviderProps = (Omit[DivProps, scope]) with Anon_Code
+  // Helper types
+  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
+  type PreProps = HTMLProps[HTMLPreElement]
 }
 

@@ -2,6 +2,9 @@ package typings.vscodeDashLanguageserver
 
 import typings.vscodeDashJsonrpc.libEventsMod.Disposable
 import typings.vscodeDashJsonrpc.libEventsMod.Event
+import typings.vscodeDashLanguageserver.libWorkspaceFoldersMod.WorkspaceFolders
+import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod.Feature
+import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod._RemoteWorkspace
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFoldersMod.WorkspaceFolder
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotWorkspaceFoldersMod.WorkspaceFoldersChangeEvent
 import scala.scalajs.js
@@ -25,6 +28,6 @@ object libWorkspaceFoldersMod extends js.Object {
     ): Disposable = js.native
   }
   
-  val WorkspaceFoldersFeature: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Feature<_RemoteWorkspace, WorkspaceFolders> */ js.Any = js.native
+  val WorkspaceFoldersFeature: Feature[_RemoteWorkspace, WorkspaceFolders] = js.native
 }
 

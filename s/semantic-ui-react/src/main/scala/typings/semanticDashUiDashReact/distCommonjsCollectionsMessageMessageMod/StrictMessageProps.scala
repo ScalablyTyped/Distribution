@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps
 import typings.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps

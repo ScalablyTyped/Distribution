@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "21.2.0-2cd253"
+version := "21.2.0-b28ef0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "app-builder-lib" % "21.2.0-d6c629",
-  "org.scalablytyped" %%% "builder-util" % "21.2.0-e3ea9d",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.3.0-14b574",
+  "org.scalablytyped" %%% "app-builder-lib" % "21.2.0-ef78a1",
+  "org.scalablytyped" %%% "builder-util" % "21.2.0-66457a",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.3.0-91b159",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-ca3bb7",
-  "org.scalablytyped" %%% "electron-publish" % "21.2.0-8eb848",
-  "org.scalablytyped" %%% "fs-extra" % "8.0-dt-20191016Z-4583b4",
+  "org.scalablytyped" %%% "electron-publish" % "21.2.0-13492d",
+  "org.scalablytyped" %%% "fs-extra" % "8.0-dt-20191016Z-dd0988",
   "org.scalablytyped" %%% "lazy-val" % "1.0.4-432202",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "temp-file" % "3.3.4-0245fc",
-  "org.scalablytyped" %%% "yargs" % "13.0-dt-20191126Z-3c4660",
+  "org.scalablytyped" %%% "yargs" % "13.0-dt-20191126Z-120655",
   "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20190905Z-3f7049")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

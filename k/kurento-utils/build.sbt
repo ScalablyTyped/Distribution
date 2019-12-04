@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "kurento-utils"
-version := "6.7-dt-20190212Z-e0e6d9"
+version := "6.7-dt-20190212Z-741edd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

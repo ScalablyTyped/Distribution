@@ -1,9 +1,5 @@
 package typings.atAngularCore.atAngularCoreMod
 
-import typings.atAngularCore.DirectiveDefList
-import typings.atAngularCore.HookData
-import typings.atAngularCore.PipeDefList
-import typings.atAngularCore.TData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

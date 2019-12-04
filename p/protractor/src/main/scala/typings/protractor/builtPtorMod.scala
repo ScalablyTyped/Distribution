@@ -28,7 +28,7 @@ object builtPtorMod extends js.Object {
     var ActionSequence: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.ActionSequence */ js.Any = js.native
     var Browser: IBrowser = js.native
     var Builder: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Builder] = js.native
-    var Button: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
+    var Button: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
     var By: ProtractorBy = js.native
     var Capabilities: TypeofClassCapabilities = js.native
     var Capability: ICapability = js.native
@@ -39,7 +39,7 @@ object builtPtorMod extends js.Object {
     var EventEmitter: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.EventEmitter] = js.native
     var ExpectedConditions: ProtractorExpectedConditions = js.native
     var FileDetector: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.FileDetector] = js.native
-    var Key: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify webdriver.IKey */ js.Any = js.native
+    var Key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webdriver.IKey */ js.Any = js.native
     var ProtractorBrowser: js.Any = js.native
     var ProtractorBy: js.Any = js.native
     var ProtractorExpectedConditions: js.Any = js.native

@@ -1,7 +1,7 @@
 package typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorWidgets.libMenuMod.Menu.IRenderer
 import scala.scalajs.js

@@ -1,6 +1,8 @@
 package typings.atJupyterlabServices.libSessionSessionMod.Session
 
+import typings.atJupyterlabServices.atJupyterlabServicesMod.ServerConnection.NetworkError
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.ISpecModels
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
@@ -19,10 +21,7 @@ trait IManager extends IDisposable {
   /**
     * A signal emitted when there is a connection failure.
     */
-  var connectionFailure: ISignal[
-    IManager, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.NetworkError */ _
-  ]
+  var connectionFailure: ISignal[IManager, NetworkError]
   /**
     * Test whether the manager is ready.
     */
@@ -38,9 +37,7 @@ trait IManager extends IDisposable {
   /**
     * The server settings for the manager.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
   /**
     * The cached kernel specs.
     *
@@ -144,10 +141,7 @@ object IManager {
   @scala.inline
   def apply(
     connectTo: IModel => ISession,
-    connectionFailure: ISignal[
-      IManager, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.NetworkError */ _
-    ],
+    connectionFailure: ISignal[IManager, NetworkError],
     dispose: () => Unit,
     findById: String => js.Promise[IModel],
     findByPath: String => js.Promise[IModel],
@@ -163,7 +157,7 @@ object IManager {
     specsChanged: ISignal[IManager, ISpecModels],
     startNew: IOptions => js.Promise[ISession],
     stopIfNeeded: String => js.Promise[Unit],
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null,
+    serverSettings: ISettings = null,
     specs: ISpecModels = null
   ): IManager = {
     val __obj = js.Dynamic.literal(connectTo = js.Any.fromFunction1(connectTo), connectionFailure = connectionFailure.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), findById = js.Any.fromFunction1(findById), findByPath = js.Any.fromFunction1(findByPath), isDisposed = isDisposed.asInstanceOf[js.Any], isReady = isReady.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], refreshRunning = js.Any.fromFunction0(refreshRunning), refreshSpecs = js.Any.fromFunction0(refreshSpecs), running = js.Any.fromFunction0(running), runningChanged = runningChanged.asInstanceOf[js.Any], shutdown = js.Any.fromFunction1(shutdown), shutdownAll = js.Any.fromFunction0(shutdownAll), specsChanged = specsChanged.asInstanceOf[js.Any], startNew = js.Any.fromFunction1(startNew), stopIfNeeded = js.Any.fromFunction1(stopIfNeeded))

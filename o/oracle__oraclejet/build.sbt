@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "oracle__oraclejet"
-version := "6.1-dt-20191126Z-22366e"
+version := "6.1-dt-20191126Z-f31a14"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-76b7d5",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

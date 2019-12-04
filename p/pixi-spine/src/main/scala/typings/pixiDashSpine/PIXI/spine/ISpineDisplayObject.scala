@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.DisplayObject * / any */ trait ISpineDisplayObject extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.DisplayObject * / any */ trait ISpineDisplayObject extends js.Object {
   var attachment: js.UndefOr[Attachment] = js.undefined
   var region: js.UndefOr[TextureRegion] = js.undefined
 }

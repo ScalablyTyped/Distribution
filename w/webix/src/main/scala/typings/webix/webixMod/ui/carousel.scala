@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.carousel")
 @js.native
-class carousel () extends baseview {
+class carousel ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_carousel: WebixCallback = js.native
   @JSName("config")
   var config_carousel: carouselConfig = js.native
   def addView(view: js.Any): String | Double = js.native

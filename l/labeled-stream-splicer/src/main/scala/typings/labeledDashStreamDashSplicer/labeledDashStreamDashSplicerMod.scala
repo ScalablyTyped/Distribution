@@ -1,6 +1,7 @@
 package typings.labeledDashStreamDashSplicer
 
 import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.Index
+import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.LabeledStreamList
 import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.Stream
 import typings.labeledDashStreamDashSplicer.labeledDashStreamDashSplicerMod.splicer
 import typings.node.NodeJS.ReadWriteStream
@@ -43,6 +44,7 @@ object labeledDashStreamDashSplicerMod extends js.Object {
   def obj(streams: LabeledStreamList): splicer = js.native
   def obj(streams: LabeledStreamList, opts: TransformOptions): splicer = js.native
   type Index = Double | String
+  type LabeledStreamList = js.Array[String | Stream | js.Array[Stream]]
   type Stream = ReadableStream | WritableStream | ReadWriteStream
 }
 

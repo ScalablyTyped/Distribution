@@ -9,11 +9,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.filemanager")
 @js.native
-class filemanager () extends baseview {
+class filemanager ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$$")
   var $$: js.Any = js.native
   @JSName("$dropAllow")
   var $dropAllow_Original: WebixCallback = js.native
+  @JSName("$skin")
+  var $skin_Original_filemanager: WebixCallback = js.native
   @JSName("config")
   var config_filemanager: filemanagerConfig = js.native
   var data: DataStore = js.native
@@ -29,11 +32,11 @@ class filemanager () extends baseview {
   def clearAll(): Unit = js.native
   def clearAll(soft: Boolean): Unit = js.native
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copyFile(source: String, target: String): Unit = js.native
   def copyFile(source: js.Array[_], target: String): Unit = js.native
   def count(): Double = js.native
@@ -134,7 +137,7 @@ class filemanager () extends baseview {
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: js.Any): typings.webix.webix.ui.baseview = js.native
   def unblockEvent(): Unit = js.native
   def updateItem(id: String, data: js.Any): Unit = js.native
   def updateItem(id: Double, data: js.Any): Unit = js.native

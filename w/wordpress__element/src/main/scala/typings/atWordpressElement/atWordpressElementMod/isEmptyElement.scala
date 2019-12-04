@@ -14,7 +14,7 @@ object isEmptyElement extends js.Object {
     * @return True when an element is considered empty.
     */
   def apply(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any
   ): Boolean = js.native
 }
 

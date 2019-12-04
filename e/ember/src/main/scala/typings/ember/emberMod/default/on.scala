@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object on
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberObjectEventedNs.on */ js.Any
+      js.Function2[
+        /* eventNames */ java.lang.String, 
+        /* func */ js.Function1[/* repeated */ js.Any, Unit], 
+        js.Function1[/* repeated */ js.Any, Unit]
+      ]
     ]
 

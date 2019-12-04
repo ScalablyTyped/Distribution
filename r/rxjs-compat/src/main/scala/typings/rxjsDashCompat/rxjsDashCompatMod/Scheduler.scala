@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat.rxjsDashCompatMod
 
-import typings.rxjs.internalTypesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat", "Scheduler")
 @js.native
 object Scheduler extends js.Object {
-  var animationFrame: SchedulerLike = js.native
-  var asap: SchedulerLike = js.native
-  var async: SchedulerLike = js.native
-  var queue: SchedulerLike = js.native
+  var animationFrame: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+  var asap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+  var async: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
+  var queue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any = js.native
 }
 

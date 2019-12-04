@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object flowableMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IPublisher<T> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> * / any */ @js.native
   trait Flowable[T] extends js.Object {
     def lift[R](
       onSubscribeLift: js.Function1[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<R> */ /* subscriber */ js.Any, 
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ /* subscriber */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
         ]
     ): Flowable[R] = js.native
     def map[R](fn: js.Function1[/* data */ T, R]): Flowable[R] = js.native
@@ -25,7 +25,7 @@ object flowableMod extends js.Object {
     def subscribe(subscriberOrCallback: js.Function1[/* a */ T, Unit]): Unit = js.native
     def subscribe(
       subscriberOrCallback: Partial[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ _
         ]
     ): Unit = js.native
     def take(toTake: Double): Flowable[T] = js.native
@@ -46,7 +46,7 @@ object flowableMod extends js.Object {
   }
   
   type Source[T] = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISubscriber<T> */ /* subscriber */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ /* subscriber */ js.Any, 
     Unit
   ]
 }

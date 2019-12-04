@@ -5,6 +5,7 @@ import typings.csstype.csstypeMod.BorderProperty
 import typings.csstype.csstypeMod.BorderRadiusProperty
 import typings.csstype.csstypeMod.BorderWidthProperty
 import typings.csstype.csstypeMod.BoxShadowProperty
+import typings.csstype.csstypeMod.ColorProperty
 import typings.csstype.csstypeMod.FontFamilyProperty
 import typings.csstype.csstypeMod.FontSizeProperty
 import typings.csstype.csstypeMod.FontWeightProperty
@@ -15,18 +16,12 @@ import typings.csstype.csstypeMod.StandardProperties
 import typings.csstype.csstypeMod.WidthProperty
 import typings.csstype.csstypeMod.ZIndexProperty
 import typings.styledDashSystem.styledDashSystemNumbers.`0`
-import typings.themeDashUi.Anon_K
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Theme
   extends typings.styledDashSystem.styledDashSystemMod.Theme {
-  /**
-    * Define the colors that are available through this theme
-    */
-  @JSName("colors")
-  var colors_Theme: js.UndefOr[ColorMode with Anon_K] = js.undefined
   /**
     * Provide a value here to enable color modes
     */
@@ -61,7 +56,7 @@ object Theme {
     breakpoints: (js.Array[Double | String]) | js.Object = null,
     buttons: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[StandardProperties[String | `0`]] = null,
     colorStyles: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[StandardProperties[String | `0`]] = null,
-    colors: ColorMode with Anon_K = null,
+    colors: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[ColorProperty] = null,
     fontSizes: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[FontSizeProperty[Double]] = null,
     fontWeights: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[FontWeightProperty] = null,
     fonts: typings.styledDashSystem.styledDashSystemMod.ObjectOrArray[FontFamilyProperty] = null,

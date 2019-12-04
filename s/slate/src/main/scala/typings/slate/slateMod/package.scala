@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object slateMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.immutable.immutableMod.List
-  import typings.immutable.immutableMod.Map
+  import typings.immutable.Immutable.List
+  import typings.immutable.Immutable.Map
 
   type CommandFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, Editor]
   type Data = Map[js.Any, js.Any]

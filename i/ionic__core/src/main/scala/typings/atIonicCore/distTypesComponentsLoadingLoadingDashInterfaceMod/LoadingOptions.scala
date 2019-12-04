@@ -1,5 +1,9 @@
 package typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod
 
+import typings.atIonicCore.atIonicCoreMod.Mode
+import typings.atIonicCore.distTypesComponentsSpinnerSpinnerDashConfigsMod.SpinnerTypes
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,22 +13,14 @@ trait LoadingOptions extends js.Object {
   var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var keyboardClose: js.UndefOr[Boolean] = js.undefined
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   var message: js.UndefOr[String] = js.undefined
-  var mode: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
-  ] = js.undefined
+  var mode: js.UndefOr[Mode] = js.undefined
   var showBackdrop: js.UndefOr[Boolean] = js.undefined
-  var spinner: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any) | Null
-  ] = js.undefined
+  var spinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
   var translucent: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -35,14 +31,14 @@ object LoadingOptions {
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
     cssClass: String | js.Array[String] = null,
     duration: Int | Double = null,
-    enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     id: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     message: String = null,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = null,
+    mode: Mode = null,
     showBackdrop: js.UndefOr[Boolean] = js.undefined,
-    spinner: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any = null,
+    spinner: SpinnerTypes = null,
     translucent: js.UndefOr[Boolean] = js.undefined
   ): LoadingOptions = {
     val __obj = js.Dynamic.literal()
@@ -50,10 +46,10 @@ object LoadingOptions {
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.asInstanceOf[js.Any])

@@ -49,7 +49,6 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
@@ -68,6 +67,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.PointerEventHandler
 import typings.react.reactMod.ReactEventHandler

@@ -1,6 +1,6 @@
 package typings.antd.libTimeDashPickerMod
 
-import typings.antd.Anon_Open
+import typings.antd.Anon_OpenBoolean
 import typings.antd.Anon_Placeholder
 import typings.moment.momentMod.Moment
 import typings.react.reactMod.Component
@@ -19,7 +19,7 @@ trait TimePicker
   def getDefaultFormat(): String = js.native
   def getDefaultLocale(): Anon_Placeholder = js.native
   def handleChange(value: Moment): Unit = js.native
-  def handleOpenClose(hasOpen: Anon_Open): Unit = js.native
+  def handleOpenClose(hasOpen: Anon_OpenBoolean): Unit = js.native
   def renderClearIcon(prefixCls: String): Element = js.native
   def renderInputIcon(prefixCls: String): Element = js.native
   def renderTimePicker(locale: TimePickerLocale): Element = js.native

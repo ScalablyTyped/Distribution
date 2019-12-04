@@ -3,7 +3,6 @@ package typings.passportDashGithub.passportDashGithubMod
 import typings.passport.Anon_FamilyName
 import typings.passport.Anon_Type
 import typings.passport.Anon_Value
-import typings.passportDashGithub.passportDashGithubStrings.github
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +12,6 @@ trait Profile
   var _json: js.Object
   var _raw: String
   var profileUrl: String
-  @JSName("provider")
-  var provider_Profile: github
 }
 
 object Profile {
@@ -25,7 +22,7 @@ object Profile {
     displayName: String,
     id: String,
     profileUrl: String,
-    provider: github,
+    provider: String,
     emails: js.Array[Anon_Type] = null,
     name: Anon_FamilyName = null,
     photos: js.Array[Anon_Value] = null,

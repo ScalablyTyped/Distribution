@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JSS.CreateStyleSheetOptions<ClassKey> * / any */ trait WithStylesOptions[ClassKey /* <: String */] extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSS.CreateStyleSheetOptions<ClassKey> * / any */ trait WithStylesOptions[ClassKey /* <: String */] extends js.Object {
   var flip: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var withTheme: js.UndefOr[Boolean] = js.undefined

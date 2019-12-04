@@ -2,7 +2,6 @@ package typings.sanctuary.sanctuaryMod
 
 import typings.sanctuary.Anon_CheckTypes
 import typings.sanctuary.Anon_Name
-import typings.sanctuary.FiniteNumber
 import typings.sanctuary.Fn_Contravariant
 import typings.sanctuary.Fn_F
 import typings.sanctuary.Fn_Foldable
@@ -13,9 +12,6 @@ import typings.sanctuary.Fn_R
 import typings.sanctuary.Fn_X
 import typings.sanctuary.Fn_XY
 import typings.sanctuary.Fn_Xs
-import typings.sanctuary.Integer
-import typings.sanctuary.NonZeroFiniteNumber
-import typings.sanctuary.ValidNumber
 import typings.sanctuary.sanctuaryMod.Sanctuary.Static
 import typings.std.Date
 import typings.std.Error

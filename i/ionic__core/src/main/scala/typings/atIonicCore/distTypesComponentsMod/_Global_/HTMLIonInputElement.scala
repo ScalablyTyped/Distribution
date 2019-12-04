@@ -1,6 +1,8 @@
 package typings.atIonicCore.distTypesComponentsMod._Global_
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.atIonicCore.atIonicCoreMod.Color
+import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
@@ -49,9 +51,7 @@ trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.native
+  var color: js.UndefOr[Color] = js.native
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
@@ -119,7 +119,7 @@ trait HTMLIonInputElement extends HTMLStencilElement {
   /**
     * The type of control to display. The default type is text.
     */
-  var `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any = js.native
+  var `type`: TextFieldTypes = js.native
   /**
     * The value of the input.
     */

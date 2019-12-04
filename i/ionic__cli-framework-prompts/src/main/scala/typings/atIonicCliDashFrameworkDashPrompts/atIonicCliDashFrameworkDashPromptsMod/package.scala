@@ -18,5 +18,5 @@ package object atIonicCliDashFrameworkDashPromptsMod {
   type PromptValueConfirm = Boolean
   type PromptValueOther = String
   type Question = typings.inquirer.inquirerMod.Question[Answers]
-  type Separator = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_inquirer.objects.Separator */ js.Any
+  type Separator = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_inquirer.objects.Separator */ js.Any
 }

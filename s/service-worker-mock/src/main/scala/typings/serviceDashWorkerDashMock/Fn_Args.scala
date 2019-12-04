@@ -23,7 +23,7 @@ trait Fn_Args extends js.Object {
   def apply(
     name: push,
     args: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PushEvent */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ _
     ]
   ): js.Promise[Unit] = js.native
   def apply(`type`: String): js.Promise[Unit] = js.native

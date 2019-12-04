@@ -2,9 +2,9 @@ package typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerCo
 
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

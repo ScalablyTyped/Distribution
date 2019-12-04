@@ -17,5 +17,6 @@ trait color extends js.Object {
 
 @JSImport("webix", "color")
 @js.native
-object color extends TopLevel[color]
+object color
+  extends TopLevel[typings.webix.webix.color]
 

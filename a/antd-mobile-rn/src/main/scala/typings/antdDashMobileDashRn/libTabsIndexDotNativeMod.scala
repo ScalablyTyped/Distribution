@@ -23,7 +23,7 @@ object libTabsIndexDotNativeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DefaultTabBar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RMCDefaultTabBar */ js.Any = js.native
+    var DefaultTabBar: TypeofClassRMCDefaultTabBar = js.native
   }
   
 }

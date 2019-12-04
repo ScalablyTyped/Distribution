@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libContentsMod.Drive
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,18 +23,12 @@ trait IOptions extends js.Object {
   /**
     * The server settings for the server.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    apiEndpoint: String = null,
-    name: String = null,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null
-  ): IOptions = {
+  def apply(apiEndpoint: String = null, name: String = null, serverSettings: ISettings = null): IOptions = {
     val __obj = js.Dynamic.literal()
     if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

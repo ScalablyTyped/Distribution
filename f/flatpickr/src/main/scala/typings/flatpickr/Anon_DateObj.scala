@@ -1,6 +1,6 @@
 package typings.flatpickr
 
-import typings.std.Date
+import typings.flatpickr.distTypesGlobalsMod._Global_.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

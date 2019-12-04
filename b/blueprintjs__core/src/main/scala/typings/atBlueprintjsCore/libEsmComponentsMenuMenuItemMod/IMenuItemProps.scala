@@ -6,8 +6,8 @@ import typings.atBlueprintjsCore.libEsmCommonPropsMod.ILinkProps
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import typings.std.Partial

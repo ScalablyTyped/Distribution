@@ -1,10 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.MonoTypeOperatorFunction
-import typings.rxjs.internalTypesMod.OperatorFunction
-import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.rxjsMod.ConnectableObservable
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,36 +7,52 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/publishReplay", JSImport.Namespace)
 @js.native
 object operatorPublishReplayMod extends js.Object {
-  def publishReplay[T](`this`: Observable[T]): ConnectableObservable[T] = js.native
-  def publishReplay[T](`this`: Observable[T], bufferSize: Double): ConnectableObservable[T] = js.native
-  def publishReplay[T](`this`: Observable[T], bufferSize: Double, windowTime: Double): ConnectableObservable[T] = js.native
-  def publishReplay[T](`this`: Observable[T], bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): ConnectableObservable[T] = js.native
   def publishReplay[T](
-    `this`: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
+  def publishReplay[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    bufferSize: Double
+  ): js.Any = js.native
+  def publishReplay[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    bufferSize: Double,
+    windowTime: Double
+  ): js.Any = js.native
+  def publishReplay[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     bufferSize: Double,
     windowTime: Double,
-    selector: MonoTypeOperatorFunction[T]
-  ): Observable[T] = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any
+  ): js.Any = js.native
   def publishReplay[T](
-    `this`: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     bufferSize: Double,
     windowTime: Double,
-    selector: MonoTypeOperatorFunction[T],
-    scheduler: SchedulerLike
-  ): Observable[T] = js.native
+    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any,
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
   @JSName("publishReplay")
-  def publishReplay_TR[T, R](`this`: Observable[T], bufferSize: Double, windowTime: Double, selector: OperatorFunction[T, R]): Observable[R] = js.native
+  def publishReplay_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
   @JSName("publishReplay")
-  def publishReplay_TR_Observable[T, R](`this`: Observable[T]): Observable[R] = js.native
+  def publishReplay_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    bufferSize: Double
+  ): js.Any = js.native
   @JSName("publishReplay")
-  def publishReplay_TR_Observable[T, R](`this`: Observable[T], bufferSize: Double): Observable[R] = js.native
+  def publishReplay_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    bufferSize: Double,
+    windowTime: Double
+  ): js.Any = js.native
   @JSName("publishReplay")
-  def publishReplay_TR_Observable[T, R](`this`: Observable[T], bufferSize: Double, windowTime: Double): Observable[R] = js.native
-  @JSName("publishReplay")
-  def publishReplay_T_Observable[T](`this`: Observable[T]): Observable[T] = js.native
-  @JSName("publishReplay")
-  def publishReplay_T_Observable[T](`this`: Observable[T], bufferSize: Double): Observable[T] = js.native
-  @JSName("publishReplay")
-  def publishReplay_T_Observable[T](`this`: Observable[T], bufferSize: Double, windowTime: Double): Observable[T] = js.native
+  def publishReplay_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    bufferSize: Double,
+    windowTime: Double,
+    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
+  ): js.Any = js.native
 }
 

@@ -2,7 +2,7 @@ package typings.antd
 
 import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.vertical
-import typings.antd.esListMod.ListGridType
+import typings.antd.libListMod.ListGridType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

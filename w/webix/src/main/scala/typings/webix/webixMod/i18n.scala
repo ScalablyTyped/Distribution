@@ -42,5 +42,6 @@ trait i18n extends js.Object {
 
 @JSImport("webix", "i18n")
 @js.native
-object i18n extends TopLevel[i18n]
+object i18n
+  extends TopLevel[typings.webix.webix.i18n]
 

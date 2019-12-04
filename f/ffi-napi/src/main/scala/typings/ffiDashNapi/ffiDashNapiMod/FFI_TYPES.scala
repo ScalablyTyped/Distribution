@@ -1,7 +1,7 @@
 package typings.ffiDashNapi.ffiDashNapiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.ffiDashNapi.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

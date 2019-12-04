@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("immutable", "isSet")
 @js.native
 object isSet extends js.Object {
-  def apply(maybeSet: js.Any): /* is immutable.immutable.Set<any> */ Boolean = js.native
+  def apply(maybeSet: js.Any): /* is immutable.Immutable.Set<any> */ Boolean = js.native
 }
 

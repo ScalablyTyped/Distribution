@@ -1,8 +1,8 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

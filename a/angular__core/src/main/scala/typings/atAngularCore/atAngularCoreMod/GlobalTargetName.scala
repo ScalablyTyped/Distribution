@@ -1,11 +1,12 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import typings.atAngularCore.atAngularCoreStrings.document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atAngularCore.atAngularCoreStrings.document
+  - typings.atAngularCore.atAngularCoreStrings.document_
   - typings.atAngularCore.atAngularCoreStrings.window
   - typings.atAngularCore.atAngularCoreStrings.body
 */
@@ -17,7 +18,7 @@ object GlobalTargetName {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def document: typings.atAngularCore.atAngularCoreStrings.document = this.cast("document")
+  def document: document_ = this.cast("document")
   @scala.inline
   def window: typings.atAngularCore.atAngularCoreStrings.window = this.cast("window")
 }

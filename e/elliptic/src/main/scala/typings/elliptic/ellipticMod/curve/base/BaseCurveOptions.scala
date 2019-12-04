@@ -9,22 +9,22 @@ trait BaseCurveOptions extends js.Object {
   var g: js.UndefOr[BasePoint] = js.undefined
   var gRed: js.UndefOr[js.Any] = js.undefined
   var n: js.UndefOr[
-    Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer
   ] = js.undefined
-  var p: Double | String | js.Array[Double] | Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any)
+  var p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
   var prime: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | String
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | String
   ] = js.undefined
 }
 
 object BaseCurveOptions {
   @scala.inline
   def apply(
-    p: Double | String | js.Array[Double] | Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any),
+    p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any),
     g: BasePoint = null,
     gRed: js.Any = null,
-    n: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer = null,
-    prime: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | String = null
+    n: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer = null,
+    prime: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | String = null
   ): BaseCurveOptions = {
     val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any])
     if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object prosemirrorDashTestDashBuilderMod {
   import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
-  import typings.prosemirrorDashTestDashBuilder.Args
   import typings.std.Record
 
+  type Args = js.Array[String | TaggedProsemirrorNode[js.Any] | TaggedFlatObject[js.Any]]
   type Builder = js.Function2[
     /* testSchema */ Schema[String, String], 
     /* names */ Record[String, NodeTypeAttributes | MarkTypeAttributes], 

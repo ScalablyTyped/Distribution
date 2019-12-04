@@ -1,7 +1,7 @@
 package typings.webix.webixMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.webix.webixMod.ui.baseview
+import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,5 +16,6 @@ trait markup extends js.Object {
 
 @JSImport("webix", "markup")
 @js.native
-object markup extends TopLevel[markup]
+object markup
+  extends TopLevel[typings.webix.webix.markup]
 

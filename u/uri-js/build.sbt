@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uri-js"
-version := "4.2.2-d956cb"
+version := "4.2.2-50d184"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MarkerClusterGroupOptions * / any */ trait MarkerClusterGroupLayerSupportOptions extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkerClusterGroupOptions * / any */ trait MarkerClusterGroupLayerSupportOptions extends js.Object {
   /**
     * Buffer single addLayer and removeLayer requests for efficiency.
     */

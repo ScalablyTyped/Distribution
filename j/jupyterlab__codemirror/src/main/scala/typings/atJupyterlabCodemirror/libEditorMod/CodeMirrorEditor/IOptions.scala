@@ -12,20 +12,14 @@ import scala.scalajs.js.annotation._
   * The options used to initialize a code mirror editor.
   */
 trait IOptions
-  extends typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions {
-  /**
-    * The configuration options for the editor.
-    */
-  @JSName("config")
-  var config_IOptions: js.UndefOr[Partial[IConfig]] = js.undefined
-}
+  extends typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions
 
 object IOptions {
   @scala.inline
   def apply(
     host: HTMLElement,
     model: IModel,
-    config: Partial[IConfig] = null,
+    config: Partial[typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig] = null,
     selectionStyle: Partial[ISelectionStyle] = null,
     uuid: String = null
   ): IOptions = {

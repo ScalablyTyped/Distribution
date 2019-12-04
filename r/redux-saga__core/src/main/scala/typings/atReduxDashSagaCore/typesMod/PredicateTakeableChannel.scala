@@ -9,7 +9,7 @@ trait PredicateTakeableChannel[T] extends js.Object {
   def take(cb: js.Function1[/* message */ T | END, Unit]): Unit = js.native
   def take(
     cb: js.Function1[/* message */ T | END, Unit],
-    matcher: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Predicate<T> */ js.Any
+    matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<T> */ js.Any
   ): Unit = js.native
 }
 

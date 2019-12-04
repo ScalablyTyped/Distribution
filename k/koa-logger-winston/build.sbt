@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180703Z-46004a"
+version := "0.0-dt-20180703Z-937f3b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-8db10b",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f180da",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-63d9f9",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-d92710",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-2c0b18",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-5c00d3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-3ec72b",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-f62a57",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-ba4afa",
-  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20191127Z-b40dcb",
+  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20191127Z-891b59",
   "org.scalablytyped" %%% "logform" % "2.1.2-2a6424",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-12c9b7",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-4ff83c",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "winston" % "3.2.1-6120cd",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-866e45")
+  "org.scalablytyped" %%% "winston" % "3.2.1-701bc3",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-733c43")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

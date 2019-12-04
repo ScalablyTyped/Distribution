@@ -127,12 +127,12 @@ class JSONSerializer () extends Serializer {
     */
   def serializeIntoHash[K /* <: String */](
     hash: js.Object,
-    typeClass: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    typeClass: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): js.Any = js.native
   def serializeIntoHash[K /* <: String */](
     hash: js.Object,
-    typeClass: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    typeClass: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K],
     options: js.Object
   ): js.Any = js.native

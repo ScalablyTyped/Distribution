@@ -1,5 +1,6 @@
 package typings.jestDashSerializer
 
+import typings.jestDashSerializer.jestDashSerializerMod.Path
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,5 +29,6 @@ object jestDashSerializerMod extends js.Object {
     def writeFileSync(filePath: Path, content: js.Any): Unit = js.native
   }
   
+  type Path = String
 }
 

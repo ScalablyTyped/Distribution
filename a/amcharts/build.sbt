@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amcharts"
-version := "3.21-dt-20191126Z-6d5d42"
+version := "3.21-dt-20191126Z-745a6b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

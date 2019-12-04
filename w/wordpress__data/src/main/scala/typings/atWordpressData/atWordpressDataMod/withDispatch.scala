@@ -16,8 +16,8 @@ object withDispatch extends js.Object {
       DP
     ]
   ): js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P & IP & DP> */ /* component */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P> */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P & IP & DP> */ /* component */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P> */ _
   ] = js.native
 }
 

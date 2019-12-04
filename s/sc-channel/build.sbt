@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-channel"
-version := "1.2-dt-20181130Z-2051fa"
+version := "1.2-dt-20181130Z-67ab45"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esUnderscoreUtilResponsiveObserveMod.BreakpointMap
+import typings.antd.libUnderscoreUtilResponsiveObserveMod.BreakpointMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

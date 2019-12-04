@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-content-loader", "Instagram")
 @js.native
 object Instagram extends js.Object {
-  def apply(
-    props: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IContentLoaderProps */ js.Any
-  ): Element = js.native
+  def apply(props: IContentLoaderProps): Element = js.native
 }
 

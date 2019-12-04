@@ -1,27 +1,29 @@
 organization := "org.scalablytyped"
 name := "ember-mocha"
-version := "0.14-dt-20191003Z-d1c06e"
+version := "0.14-dt-20191003Z-f96513"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember" % "3.1-dt-20191015Z-5afd1f",
-  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-3fd32e",
-  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20191126Z-a25c3e",
-  "org.scalablytyped" %%% "ember__array" % "3.0-dt-20191126Z-faebe7",
-  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20191126Z-dcd54b",
-  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-872813",
-  "org.scalablytyped" %%% "ember__debug" % "3.0-dt-20191126Z-5f69dc",
-  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-464d96",
+  "org.scalablytyped" %%% "ember" % "3.1-dt-20191015Z-622fbc",
+  "org.scalablytyped" %%% "ember-test-helpers" % "1.0-dt-20191003Z-8b9268",
+  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20191126Z-c139e8",
+  "org.scalablytyped" %%% "ember__array" % "3.0-dt-20191126Z-f325d2",
+  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20191126Z-344750",
+  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-16b230",
+  "org.scalablytyped" %%% "ember__debug" % "3.0-dt-20191126Z-09649f",
+  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-7639ec",
   "org.scalablytyped" %%% "ember__error" % "3.0-dt-20190213Z-40a565",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-bb6b99",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-63f068",
   "org.scalablytyped" %%% "ember__polyfills" % "3.0-dt-20191126Z-a2c290",
-  "org.scalablytyped" %%% "ember__runloop" % "3.0-dt-20191126Z-8c4e55",
-  "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-9afacc",
+  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20191126Z-a01c77",
+  "org.scalablytyped" %%% "ember__runloop" % "3.0-dt-20191126Z-3277c9",
+  "org.scalablytyped" %%% "ember__service" % "3.0-dt-20190503Z-640ae3",
   "org.scalablytyped" %%% "ember__template" % "3.0-dt-20191126Z-40754b",
+  "org.scalablytyped" %%% "ember__test" % "3.0-dt-20191126Z-0c0c96",
   "org.scalablytyped" %%% "ember__utils" % "3.0-dt-20191126Z-1f75f1",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-53cd87",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-15659b",
   "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-fa0376",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

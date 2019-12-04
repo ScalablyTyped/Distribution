@@ -1,22 +1,33 @@
 package typings.atStorybookAddonDashKnobs
 
-import typings.atStorybookAddonDashKnobs.atStorybookAddonDashKnobsNumbers.`true`
-import typings.atStorybookAddonDashKnobs.distComponentsTypesButtonMod.ButtonTypeKnob
-import typings.atStorybookAddonDashKnobs.distComponentsTypesButtonMod.ButtonTypeOnClickProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Callback extends js.Object {
-  var callback: ButtonTypeOnClickProp
-  var hideLabel: `true`
+  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var hideLabel: js.UndefOr[Boolean] = js.undefined
+  var label: String
+  var name: String
+  var used: js.UndefOr[Boolean] = js.undefined
 }
 
 object Anon_Callback {
   @scala.inline
-  def apply(callback: /* knob */ ButtonTypeKnob => js.Any, hideLabel: `true`): Anon_Callback = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = hideLabel.asInstanceOf[js.Any])
-  
+  def apply(
+    label: String,
+    name: String,
+    callback: () => _ = null,
+    defaultValue: js.Any = null,
+    hideLabel: js.UndefOr[Boolean] = js.undefined,
+    used: js.UndefOr[Boolean] = js.undefined
+  ): Anon_Callback = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel.asInstanceOf[js.Any])
+    if (!js.isUndefined(used)) __obj.updateDynamic("used")(used.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Callback]
   }
 }

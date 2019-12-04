@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Config extends js.Object {
   var acquireConnectionTimeout: js.UndefOr[Double] = js.undefined
   var asyncStackTraces: js.UndefOr[Boolean] = js.undefined
-  var client: js.UndefOr[String | (Instantiable1[/* config */ Config, typings.knex.knexMod.Client])] = js.undefined
+  var client: js.UndefOr[String | (Instantiable1[/* config */ Config, Client])] = js.undefined
   var connection: js.UndefOr[
     String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | OracleDbConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig
   ] = js.undefined
@@ -37,7 +37,7 @@ object Config {
   def apply(
     acquireConnectionTimeout: Int | Double = null,
     asyncStackTraces: js.UndefOr[Boolean] = js.undefined,
-    client: String | (Instantiable1[/* config */ Config, typings.knex.knexMod.Client]) = null,
+    client: String | (Instantiable1[/* config */ Config, Client]) = null,
     connection: String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | OracleDbConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig = null,
     debug: js.UndefOr[Boolean] = js.undefined,
     dialect: String = null,

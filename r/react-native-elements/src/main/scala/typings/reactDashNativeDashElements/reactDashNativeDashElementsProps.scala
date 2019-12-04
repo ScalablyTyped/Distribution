@@ -1,5 +1,6 @@
 package typings.reactDashNativeDashElements
 
+import typings.reactDashNative.reactDashNativeMod.ViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +27,8 @@ trait reactDashNativeDashElementsProps {
   @scala.inline
   def CheckBoxProps: typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.CheckBoxProps.type = typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.CheckBoxProps
   type CheckBoxProps = typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.CheckBoxProps
+  @scala.inline
+  def DividerProps: ViewProps.type = typings.reactDashNative.reactDashNativeMod.ViewProps
   type DividerProps = typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.DividerProps
   @scala.inline
   def HeaderProps: typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.HeaderProps.type = typings.reactDashNativeDashElements.reactDashNativeDashElementsMod.HeaderProps

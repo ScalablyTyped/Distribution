@@ -1,6 +1,6 @@
 package typings.draftDashJs.draftDashJsMod.Draft.Model.Decorators
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

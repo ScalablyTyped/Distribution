@@ -3,9 +3,9 @@ package typings.emberDashData.emberDashDataMod.default
 import typings.ember.emberMod.Ember.NativeArray
 import typings.ember.emberMod.default.ComputedProperty
 import typings.ember.emberMod.default.Map
-import typings.emberDashData.ModelKeys
 import typings.emberDashData.TypeofClassModel
 import typings.emberDashData.emberDashDataMod.AttributeMeta
+import typings.emberDashData.emberDashDataMod.ModelKeys
 import typings.emberDashData.emberDashDataMod.RelationshipMeta
 import typings.std.InstanceType
 import scala.scalajs.js
@@ -125,6 +125,6 @@ object Model extends js.Object {
   /**
     * For a given relationship name, returns the model type of the relationship.
     */
-  def typeForRelationship[K /* <: String */](name: K, store: typings.emberDashData.emberDashDataMod.DS.Store): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any = js.native
+  def typeForRelationship[K /* <: String */](name: K, store: typings.emberDashData.emberDashDataMod.DS.Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
 }
 

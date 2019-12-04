@@ -13,11 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Linter protected ()
   extends typings.tslint.libLinterMod.Linter {
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any) = this()
-  def this(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any,
-    program: Program
-  ) = this()
+  def this(options: ILinterOptions) = this()
+  def this(options: ILinterOptions, program: Program) = this()
 }
 
 /* static members */

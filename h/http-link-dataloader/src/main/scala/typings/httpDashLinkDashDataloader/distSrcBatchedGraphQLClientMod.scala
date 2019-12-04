@@ -1,5 +1,6 @@
 package typings.httpDashLinkDashDataloader
 
+import typings.httpDashLinkDashDataloader.distSrcTypesMod.ClientOptions
 import typings.httpDashLinkDashDataloader.distSrcTypesMod.Options
 import typings.httpDashLinkDashDataloader.distSrcTypesMod.Variables
 import scala.scalajs.js
@@ -12,10 +13,7 @@ object distSrcBatchedGraphQLClientMod extends js.Object {
   @js.native
   class BatchedGraphQLClient protected () extends js.Object {
     def this(uri: String) = this()
-    def this(
-      uri: String,
-      options: Options with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ClientOptions */ js.Any)
-    ) = this()
+    def this(uri: String, options: Options with ClientOptions) = this()
     var dataloader: js.Any = js.native
     var options: Options = js.native
     var uri: String = js.native

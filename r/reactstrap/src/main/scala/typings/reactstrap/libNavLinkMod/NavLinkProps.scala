@@ -1,11 +1,11 @@
 package typings.reactstrap.libNavLinkMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactType
 import typings.react.reactMod.Ref
 import typings.reactstrap.reactstrapMod.CSSModule

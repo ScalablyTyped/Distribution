@@ -1,20 +1,12 @@
 package typings.atAntDashDesignProDashLayout.libBasicLayoutMod
 
-import typings.antd.esBreadcrumbBreadcrumbMod.Route
-import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.antd.libMenuMod.MenuProps
 import typings.atAntDashDesignProDashLayout.Anon_Locale
-import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlbooleanAuthority
+import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlboolean
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.lg
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.md
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sm
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xl
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xs
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xxl
 import typings.atAntDashDesignProDashLayout.libDefaultSettingsMod.ContentWidth
 import typings.atAntDashDesignProDashLayout.libGetPageTitleMod.GetPageTitleProps
 import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
@@ -23,9 +15,9 @@ import typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuPr
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MessageDescriptor
 import typings.atAntDashDesignProDashLayout.libTypingsMod.WithFalse
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -37,7 +29,10 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings ]:? @ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings[P]} */ /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps because var conflicts: className, logo, menuHeaderRender, siderWidth, style. Inlined isMobile, collapsed, menuRender, headerRender, rightContentRender, menu, navTheme, contentWidth, layout, title, fixedHeader, iconfontUrl, fixSiderbar, primaryColor, collapsedButtonRender, onCollapse */ trait BasicLayoutProps extends SiderMenuProps {
   var breadcrumbRender: js.UndefOr[
-    js.Function1[/* routers */ js.UndefOr[js.Array[Route]], js.UndefOr[js.Array[Route]]]
+    js.Function1[
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any
+    ]
   ] = js.undefined
   var collapsed: js.UndefOr[Boolean] = js.undefined
   var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
@@ -64,13 +59,7 @@ import scala.scalajs.js.annotation._
   var isChildrenLayout: js.UndefOr[Boolean] = js.undefined
   var isMobile: js.UndefOr[Boolean] = js.undefined
   var itemRender: js.UndefOr[
-    js.Function4[
-      /* route */ Route, 
-      /* params */ js.Any, 
-      /* routes */ js.Array[Route], 
-      /* paths */ js.Array[String], 
-      ReactNode
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any
   ] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var locale: js.UndefOr[localeType] = js.undefined
@@ -83,13 +72,15 @@ import scala.scalajs.js.annotation._
   var menuDataRender: js.UndefOr[js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]] = js.undefined
   var menuItemRender: js.UndefOr[
     WithFalse[
-      js.Function2[/* item */ MenuDataItemisUrlbooleanAuthority, /* defaultDom */ ReactNode, ReactNode]
+      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ]
   ] = js.undefined
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
+  ] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
@@ -105,8 +96,8 @@ object BasicLayoutProps {
   @scala.inline
   def apply(
     disableContentMargin: Boolean,
-    breadcrumbRender: /* routers */ js.UndefOr[js.Array[Route]] => js.UndefOr[js.Array[Route]] = null,
-    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
+    breadcrumbRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any = null,
+    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
     className: String = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
@@ -121,7 +112,7 @@ object BasicLayoutProps {
     iconfontUrl: String = null,
     isChildrenLayout: js.UndefOr[Boolean] = js.undefined,
     isMobile: js.UndefOr[Boolean] = js.undefined,
-    itemRender: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode = null,
+    itemRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any = null,
     layout: sidemenu | topmenu = null,
     locale: localeType = null,
     logo: ReactNode | WithFalse[js.Function0[ReactNode]] = null,
@@ -129,11 +120,11 @@ object BasicLayoutProps {
     menuDataRender: /* menuData */ js.Array[MenuDataItem] => js.Array[MenuDataItem] = null,
     menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuItemRender: WithFalse[
-      js.Function2[/* item */ MenuDataItemisUrlbooleanAuthority, /* defaultDom */ ReactNode, ReactNode]
+      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ] = null,
     menuProps: MenuProps = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: MenuTheme | realDark = null,
+    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     pageTitleRender: WithFalse[
@@ -162,7 +153,7 @@ object BasicLayoutProps {
     if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(isChildrenLayout)) __obj.updateDynamic("isChildrenLayout")(isChildrenLayout.asInstanceOf[js.Any])
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
-    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4(itemRender))
+    if (itemRender != null) __obj.updateDynamic("itemRender")(itemRender.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])

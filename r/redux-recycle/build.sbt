@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-recycle"
-version := "1.2-dt-20190322Z-7b0b93"
+version := "1.2-dt-20190322Z-fa7585"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-c08a69",
+  "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

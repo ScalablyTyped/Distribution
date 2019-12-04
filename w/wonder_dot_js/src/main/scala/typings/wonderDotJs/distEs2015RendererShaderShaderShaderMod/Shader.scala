@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation._
 @JSImport("wonder.js/dist/es2015/renderer/shader/shader/Shader", "Shader")
 @js.native
 abstract class Shader () extends js.Object {
-  var attributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+  var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
   var definitionDataDirty: Boolean = js.native
   val dirty: Boolean = js.native
   var fsSource: String = js.native
   var libDirty: Boolean = js.native
-  var libs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ js.Any = js.native
+  var libs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<ShaderLib> */ js.Any = js.native
   val program: Program = js.native
   var sourceBuilder: ShaderSourceBuilder = js.native
-  var uniforms: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
+  var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderData> */ js.Any = js.native
   var vsSource: String = js.native
   def addLib(lib: ShaderLib): Unit = js.native
   def addShaderLibToTop(lib: ShaderLib): Unit = js.native

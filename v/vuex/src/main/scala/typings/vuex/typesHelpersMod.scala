@@ -15,8 +15,8 @@ import typings.vuex.typesHelpersMod.MapperForStateWithNamespace
 import typings.vuex.typesHelpersMod.MapperWithNamespace
 import typings.vuex.typesHelpersMod.MutationMethod
 import typings.vuex.typesHelpersMod.NamespacedMappers
-import typings.vuex.typesMod.Commit
-import typings.vuex.typesMod.Dispatch
+import typings.vuex.vuexMod.Commit
+import typings.vuex.vuexMod.Dispatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,7 +114,7 @@ object typesHelpersMod extends js.Object {
       js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex/types.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex/types.Dispatch, args : ...any): any>[K]>}
+  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForAction with (Record[
       String, 
       js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
@@ -127,7 +127,7 @@ object typesHelpersMod extends js.Object {
       js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex/types.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex/types.Dispatch, args : ...any): any>[K]>}
+  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForActionWithNamespace with (Record[
       String, 
       js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
@@ -139,7 +139,7 @@ object typesHelpersMod extends js.Object {
       js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex/types.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex/types.Commit, args : ...any): any>[K]>}
+  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForMutation with (Record[
       String, 
       js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
@@ -152,7 +152,7 @@ object typesHelpersMod extends js.Object {
       js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex/types.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex/types.Commit, args : ...any): any>[K]>}
+  {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForMutationWithNamespace with (Record[
       String, 
       js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]

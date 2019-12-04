@@ -2,7 +2,7 @@ package typings.stormDashReactDashDiagrams.distSrcRoutingPathFindingMod
 
 import typings.stormDashReactDashDiagrams.Anon_End
 import typings.stormDashReactDashDiagrams.Anon_X
-import typings.stormDashReactDashDiagrams.distSrcMainMod.DiagramEngine
+import typings.stormDashReactDashDiagrams.stormDashReactDashDiagramsMod.DiagramEngine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

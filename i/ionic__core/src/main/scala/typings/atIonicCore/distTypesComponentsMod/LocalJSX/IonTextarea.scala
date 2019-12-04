@@ -1,10 +1,12 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.hard
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.soft
+import typings.atIonicCore.distTypesComponentsTextareaTextareaDashInterfaceMod.TextareaChangeEventDetail
 import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -31,9 +33,7 @@ trait IonTextarea extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * The visible width of the text control, in average character widths. If it is specified, it must be a positive integer.
     */
@@ -69,14 +69,7 @@ trait IonTextarea extends js.Object {
   /**
     * Emitted when the input value has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextareaChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[TextareaChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the input has focus.
     */
@@ -122,7 +115,7 @@ object IonTextarea {
     autocapitalize: String = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     cols: Int | Double = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -131,9 +124,7 @@ object IonTextarea {
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextareaChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[TextareaChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
     placeholder: String = null,

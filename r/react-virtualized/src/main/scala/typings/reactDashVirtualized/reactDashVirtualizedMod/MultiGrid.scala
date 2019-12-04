@@ -1,7 +1,7 @@
 package typings.reactDashVirtualized.reactDashVirtualizedMod
 
 import typings.reactDashVirtualized.Anon_
-import typings.reactDashVirtualized.Anon_ClassNameBottomLeftGridClassNameBottomRightGrid
+import typings.reactDashVirtualized.Anon_ClassNameBottomLeftGrid
 import typings.reactDashVirtualized.distEsMultiGridMod.MultiGridProps
 import typings.reactDashVirtualized.distEsMultiGridMod.MultiGridState
 import scala.scalajs.js
@@ -18,7 +18,7 @@ class MultiGrid ()
 @js.native
 object MultiGrid extends js.Object {
   var defaultProps: Anon_ = js.native
-  var propTypes: Anon_ClassNameBottomLeftGridClassNameBottomRightGrid = js.native
+  var propTypes: Anon_ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
 }
 

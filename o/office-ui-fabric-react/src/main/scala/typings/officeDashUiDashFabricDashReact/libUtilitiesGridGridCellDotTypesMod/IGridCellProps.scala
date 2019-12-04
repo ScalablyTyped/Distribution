@@ -2,9 +2,9 @@ package typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridCellDotTypes
 
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonBaseButtonDotClassNamesMod.IButtonClassNames
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
 import scala.scalajs.js

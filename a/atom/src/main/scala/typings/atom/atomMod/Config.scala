@@ -7,8 +7,12 @@ import typings.atom.Anon_Atom
 import typings.atom.Anon_AtomExperimental
 import typings.atom.Anon_Auto
 import typings.atom.Anon_AutoHard
+import typings.atom.Anon_Cursor
+import typings.atom.Anon_CursorScopeDescriptor
 import typings.atom.Anon_Default
 import typings.atom.Anon_DefaultScopeDescriptor
+import typings.atom.Anon_Enter
+import typings.atom.Anon_EnterScopeDescriptor
 import typings.atom.Anon_ExcludeSources
 import typings.atom.Anon_ExcludeSourcesScope
 import typings.atom.Anon_Key
@@ -16,6 +20,7 @@ import typings.atom.Anon_KeyScopeDescriptor
 import typings.atom.Anon_Limited
 import typings.atom.Anon_LimitedNo
 import typings.atom.Anon_NewValue
+import typings.atom.Anon_NewValueNone
 import typings.atom.Anon_NewValueOldValue
 import typings.atom.Anon_NewValueOldValueBoolean
 import typings.atom.Anon_NewValueOldValueFileEncoding
@@ -24,8 +29,11 @@ import typings.atom.Anon_NewValueOldValueNull
 import typings.atom.Anon_NewValueOldValueNumber
 import typings.atom.Anon_NewValueOldValueNumberString
 import typings.atom.Anon_NewValueOldValueString
+import typings.atom.Anon_NewValueOldValueSubsequence
+import typings.atom.Anon_None
 import typings.atom.Anon_Scope
 import typings.atom.Anon_ScopeDescriptor
+import typings.atom.Anon_ScopeDescriptorSubsequence
 import typings.atom.Anon_ScopeDescriptorValue
 import typings.atom.Anon_ScopeDescriptorValueFileEncoding
 import typings.atom.Anon_ScopeDescriptorValueInvisibles
@@ -34,6 +42,37 @@ import typings.atom.Anon_ScopeDescriptorValueNumber
 import typings.atom.Anon_ScopeDescriptorValueNumberString
 import typings.atom.Anon_ScopeDescriptorValueString
 import typings.atom.Anon_ScopeSelector
+import typings.atom.atomStrings.Subsequence
+import typings.atom.atomStrings.Symbol
+import typings.atom.atomStrings.Word
+import typings.atom.atomStrings.`autocomplete-plusDOTautoActivationDelay`
+import typings.atom.atomStrings.`autocomplete-plusDOTbackspaceTriggersAutocomplete`
+import typings.atom.atomStrings.`autocomplete-plusDOTbuiltinProviderBlacklist`
+import typings.atom.atomStrings.`autocomplete-plusDOTconfirmCompletion`
+import typings.atom.atomStrings.`autocomplete-plusDOTconsumeSuffix`
+import typings.atom.atomStrings.`autocomplete-plusDOTdefaultProvider`
+import typings.atom.atomStrings.`autocomplete-plusDOTenableAutoActivation`
+import typings.atom.atomStrings.`autocomplete-plusDOTenableAutoConfirmSingleSuggestion`
+import typings.atom.atomStrings.`autocomplete-plusDOTenableBuiltinProvider`
+import typings.atom.atomStrings.`autocomplete-plusDOTenableExtendedUnicodeSupport`
+import typings.atom.atomStrings.`autocomplete-plusDOTfileBlacklist`
+import typings.atom.atomStrings.`autocomplete-plusDOTincludeCompletionsFromAllBuffers`
+import typings.atom.atomStrings.`autocomplete-plusDOTmaxVisibleSuggestions`
+import typings.atom.atomStrings.`autocomplete-plusDOTminimumWordLength`
+import typings.atom.atomStrings.`autocomplete-plusDOTscopeBlacklist`
+import typings.atom.atomStrings.`autocomplete-plusDOTsimilarSuggestionRemoval`
+import typings.atom.atomStrings.`autocomplete-plusDOTstrictMatching`
+import typings.atom.atomStrings.`autocomplete-plusDOTsuggestionListFollows`
+import typings.atom.atomStrings.`autocomplete-plusDOTsuppressActivationForEditorClasses`
+import typings.atom.atomStrings.`autocomplete-plusDOTuseAlternateScoring`
+import typings.atom.atomStrings.`autocomplete-plusDOTuseCoreMovementCommands`
+import typings.atom.atomStrings.`autocomplete-plusDOTuseLocalityBonus`
+import typings.atom.atomStrings.`status-barDOTcursorPositionFormat`
+import typings.atom.atomStrings.`status-barDOTfullWidth`
+import typings.atom.atomStrings.`status-barDOTisVisible`
+import typings.atom.atomStrings.`status-barDOTselectionCountFormat`
+import typings.atom.atomStrings.`tab always, enter when suggestion explicitly selected`
+import typings.atom.atomStrings.`tab and enter`
 import typings.atom.atomStrings.always
 import typings.atom.atomStrings.auto
 import typings.atom.atomStrings.coreDOTallowPendingPaneItems
@@ -90,14 +129,24 @@ import typings.atom.atomStrings.editorDOTtabLength
 import typings.atom.atomStrings.editorDOTtabType
 import typings.atom.atomStrings.editorDOTundoGroupingInterval
 import typings.atom.atomStrings.editorDOTzoomFontWhenCtrlScrolling
+import typings.atom.atomStrings.enter
 import typings.atom.atomStrings.experimental
 import typings.atom.atomStrings.hard
 import typings.atom.atomStrings.limited
+import typings.atom.atomStrings.linterDOTdisabledProviders
+import typings.atom.atomStrings.linterDOTignoreGlob
+import typings.atom.atomStrings.linterDOTlintOnChange
+import typings.atom.atomStrings.linterDOTlintOnChangeInterval
+import typings.atom.atomStrings.linterDOTlintOnOpen
+import typings.atom.atomStrings.linterDOTlintPreviewTabs
 import typings.atom.atomStrings.native
 import typings.atom.atomStrings.no
+import typings.atom.atomStrings.none
 import typings.atom.atomStrings.poll
 import typings.atom.atomStrings.soft
 import typings.atom.atomStrings.srgb
+import typings.atom.atomStrings.tab
+import typings.atom.atomStrings.textOrSnippet
 import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
 import scala.scalajs.js
@@ -106,6 +155,100 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Config extends js.Object {
+  @JSName("getAll")
+  def getAll_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusbackspaceTriggersAutocomplete(keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusbackspaceTriggersAutocomplete(keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDOTconfirmCompletion`): js.Array[Anon_EnterScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDOTconfirmCompletion`, options: Anon_ExcludeSourcesScope): js.Array[Anon_EnterScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDOTdefaultProvider`): js.Array[Anon_ScopeDescriptorSubsequence] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDOTdefaultProvider`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorSubsequence] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableAutoConfirmSingleSuggestion(keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    options: Anon_ExcludeSourcesScope
+  ): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableExtendedUnicodeSupport(keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusenableExtendedUnicodeSupport(keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusincludeCompletionsFromAllBuffers(keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusincludeCompletionsFromAllBuffers(keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDOTscopeBlacklist`): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDOTscopeBlacklist`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`): js.Array[Anon_None] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`, options: Anon_ExcludeSourcesScope): js.Array[Anon_None] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDOTsuggestionListFollows`): js.Array[Anon_CursorScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDOTsuggestionListFollows`, options: Anon_ExcludeSourcesScope): js.Array[Anon_CursorScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussuppressActivationForEditorClasses(keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    options: Anon_ExcludeSourcesScope
+  ): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeCoreMovementCommands(keyPath: `autocomplete-plusDOTuseCoreMovementCommands`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeCoreMovementCommands(keyPath: `autocomplete-plusDOTuseCoreMovementCommands`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
   @JSName("getAll")
   def getAll_coreallowPendingPaneItems(keyPath: coreDOTallowPendingPaneItems): js.Array[Anon_ScopeDescriptorValue] = js.native
   @JSName("getAll")
@@ -322,6 +465,46 @@ trait Config extends js.Object {
   def getAll_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling): js.Array[Anon_ScopeDescriptorValue] = js.native
   @JSName("getAll")
   def getAll_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterdisabledProviders(keyPath: linterDOTdisabledProviders): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_linterdisabledProviders(keyPath: linterDOTdisabledProviders, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptor] = js.native
+  @JSName("getAll")
+  def getAll_linterignoreGlob(keyPath: linterDOTignoreGlob): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_linterignoreGlob(keyPath: linterDOTignoreGlob, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnChange(keyPath: linterDOTlintOnChange): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnChange(keyPath: linterDOTlintOnChange, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueNumber] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnOpen(keyPath: linterDOTlintOnOpen): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterlintOnOpen(keyPath: linterDOTlintOnOpen, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_statusbarfullWidth(keyPath: `status-barDOTfullWidth`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_statusbarfullWidth(keyPath: `status-barDOTfullWidth`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_statusbarisVisible(keyPath: `status-barDOTisVisible`): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_statusbarisVisible(keyPath: `status-barDOTisVisible`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValue] = js.native
+  @JSName("getAll")
+  def getAll_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`): js.Array[Anon_ScopeDescriptorValueString] = js.native
+  @JSName("getAll")
+  def getAll_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`, options: Anon_ExcludeSourcesScope): js.Array[Anon_ScopeDescriptorValueString] = js.native
   /**
     *  Retrieve the schema for a specific key path. The schema will tell you what type
     *  the keyPath expects, and other metadata about the config option.
@@ -334,6 +517,94 @@ trait Config extends js.Object {
   def getSources(): js.Array[String] = js.native
   /** Get the string path to the config file being used. */
   def getUserConfigPath(): String = js.native
+  @JSName("get")
+  def get_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`, options: Anon_ExcludeSources): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusbackspaceTriggersAutocomplete(keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusbackspaceTriggersAutocomplete(keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`): String = js.native
+  @JSName("get")
+  def get_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`, options: Anon_ExcludeSources): String = js.native
+  @JSName("get")
+  def get_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDOTconfirmCompletion`): tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`) = js.native
+  @JSName("get")
+  def get_autocompleteplusconfirmCompletion(keyPath: `autocomplete-plusDOTconfirmCompletion`, options: Anon_ExcludeSources): tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`) = js.native
+  @JSName("get")
+  def get_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDOTdefaultProvider`): Subsequence | Symbol = js.native
+  @JSName("get")
+  def get_autocompleteplusdefaultProvider(keyPath: `autocomplete-plusDOTdefaultProvider`, options: Anon_ExcludeSources): Subsequence | Symbol = js.native
+  @JSName("get")
+  def get_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableAutoConfirmSingleSuggestion(keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableAutoConfirmSingleSuggestion(keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableExtendedUnicodeSupport(keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusenableExtendedUnicodeSupport(keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`, options: Anon_ExcludeSources): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplusincludeCompletionsFromAllBuffers(keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusincludeCompletionsFromAllBuffers(keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`, options: Anon_ExcludeSources): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`, options: Anon_ExcludeSources): Double = js.native
+  @JSName("get")
+  def get_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDOTscopeBlacklist`): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDOTscopeBlacklist`, options: Anon_ExcludeSources): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`): none | textOrSnippet = js.native
+  @JSName("get")
+  def get_autocompleteplussimilarSuggestionRemoval(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`, options: Anon_ExcludeSources): none | textOrSnippet = js.native
+  @JSName("get")
+  def get_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDOTsuggestionListFollows`): Word | typings.atom.atomStrings.Cursor = js.native
+  @JSName("get")
+  def get_autocompleteplussuggestionListFollows(keyPath: `autocomplete-plusDOTsuggestionListFollows`, options: Anon_ExcludeSources): Word | typings.atom.atomStrings.Cursor = js.native
+  @JSName("get")
+  def get_autocompleteplussuppressActivationForEditorClasses(keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplussuppressActivationForEditorClasses(keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`, options: Anon_ExcludeSources): js.Array[String] = js.native
+  @JSName("get")
+  def get_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplususeCoreMovementCommands(keyPath: `autocomplete-plusDOTuseCoreMovementCommands`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplususeCoreMovementCommands(keyPath: `autocomplete-plusDOTuseCoreMovementCommands`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`): Boolean = js.native
+  @JSName("get")
+  def get_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`, options: Anon_ExcludeSources): Boolean = js.native
   @JSName("get")
   def get_coreallowPendingPaneItems(keyPath: coreDOTallowPendingPaneItems): Boolean = js.native
   @JSName("get")
@@ -548,6 +819,88 @@ trait Config extends js.Object {
   def get_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling): Boolean = js.native
   @JSName("get")
   def get_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_linterdisabledProviders(keyPath: linterDOTdisabledProviders): js.Array[String] = js.native
+  @JSName("get")
+  def get_linterdisabledProviders(keyPath: linterDOTdisabledProviders, options: Anon_ExcludeSources): js.Array[String] = js.native
+  @JSName("get")
+  def get_linterignoreGlob(keyPath: linterDOTignoreGlob): String = js.native
+  @JSName("get")
+  def get_linterignoreGlob(keyPath: linterDOTignoreGlob, options: Anon_ExcludeSources): String = js.native
+  @JSName("get")
+  def get_linterlintOnChange(keyPath: linterDOTlintOnChange): Boolean = js.native
+  @JSName("get")
+  def get_linterlintOnChange(keyPath: linterDOTlintOnChange, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval): Double = js.native
+  @JSName("get")
+  def get_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval, options: Anon_ExcludeSources): Double = js.native
+  @JSName("get")
+  def get_linterlintOnOpen(keyPath: linterDOTlintOnOpen): Boolean = js.native
+  @JSName("get")
+  def get_linterlintOnOpen(keyPath: linterDOTlintOnOpen, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs): Boolean = js.native
+  @JSName("get")
+  def get_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`): String = js.native
+  @JSName("get")
+  def get_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`, options: Anon_ExcludeSources): String = js.native
+  @JSName("get")
+  def get_statusbarfullWidth(keyPath: `status-barDOTfullWidth`): Boolean = js.native
+  @JSName("get")
+  def get_statusbarfullWidth(keyPath: `status-barDOTfullWidth`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_statusbarisVisible(keyPath: `status-barDOTisVisible`): Boolean = js.native
+  @JSName("get")
+  def get_statusbarisVisible(keyPath: `status-barDOTisVisible`, options: Anon_ExcludeSources): Boolean = js.native
+  @JSName("get")
+  def get_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`): String = js.native
+  @JSName("get")
+  def get_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`, options: Anon_ExcludeSources): String = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    callback: js.Function1[
+      /* value */ tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`), 
+      Unit
+    ]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    options: Anon_Scope,
+    callback: js.Function1[
+      /* value */ tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`), 
+      Unit
+    ]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTdefaultProvider`,
+    callback: js.Function1[/* value */ Subsequence | Symbol, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTdefaultProvider`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Subsequence | Symbol, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`,
+    callback: js.Function1[/* value */ none | textOrSnippet, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ none | textOrSnippet, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTsuggestionListFollows`,
+    callback: js.Function1[/* value */ Word | typings.atom.atomStrings.Cursor, Unit]
+  ): Disposable = js.native
+  def observe(
+    keyPath: `autocomplete-plusDOTsuggestionListFollows`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Word | typings.atom.atomStrings.Cursor, Unit]
+  ): Disposable = js.native
   def observe(keyPath: coreDOTcolorProfile, callback: js.Function1[/* value */ default | srgb, Unit]): Disposable = js.native
   def observe(
     keyPath: coreDOTcolorProfile,
@@ -586,6 +939,192 @@ trait Config extends js.Object {
     keyPath: editorDOTtabType,
     options: Anon_Scope,
     callback: js.Function1[/* value */ auto | soft | hard, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusautoActivationDelay(
+    keyPath: `autocomplete-plusDOTautoActivationDelay`,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusautoActivationDelay(
+    keyPath: `autocomplete-plusDOTautoActivationDelay`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusbackspaceTriggersAutocomplete(
+    keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusbackspaceTriggersAutocomplete(
+    keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusbuiltinProviderBlacklist(
+    keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusbuiltinProviderBlacklist(
+    keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusconsumeSuffix(
+    keyPath: `autocomplete-plusDOTconsumeSuffix`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableAutoActivation(
+    keyPath: `autocomplete-plusDOTenableAutoActivation`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableAutoActivation(
+    keyPath: `autocomplete-plusDOTenableAutoActivation`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableBuiltinProvider(
+    keyPath: `autocomplete-plusDOTenableBuiltinProvider`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableBuiltinProvider(
+    keyPath: `autocomplete-plusDOTenableBuiltinProvider`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableExtendedUnicodeSupport(
+    keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusenableExtendedUnicodeSupport(
+    keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusfileBlacklist(
+    keyPath: `autocomplete-plusDOTfileBlacklist`,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusfileBlacklist(
+    keyPath: `autocomplete-plusDOTfileBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusincludeCompletionsFromAllBuffers(
+    keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusincludeCompletionsFromAllBuffers(
+    keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusmaxVisibleSuggestions(
+    keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusmaxVisibleSuggestions(
+    keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`, callback: js.Function1[/* value */ Double, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusminimumWordLength(
+    keyPath: `autocomplete-plusDOTminimumWordLength`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusscopeBlacklist(
+    keyPath: `autocomplete-plusDOTscopeBlacklist`,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusscopeBlacklist(
+    keyPath: `autocomplete-plusDOTscopeBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplusstrictMatching(
+    keyPath: `autocomplete-plusDOTstrictMatching`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeAlternateScoring(
+    keyPath: `autocomplete-plusDOTuseAlternateScoring`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeAlternateScoring(
+    keyPath: `autocomplete-plusDOTuseAlternateScoring`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeCoreMovementCommands(
+    keyPath: `autocomplete-plusDOTuseCoreMovementCommands`,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeCoreMovementCommands(
+    keyPath: `autocomplete-plusDOTuseCoreMovementCommands`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_autocompleteplususeLocalityBonus(
+    keyPath: `autocomplete-plusDOTuseLocalityBonus`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
   ): Disposable = js.native
   @JSName("observe")
   def observe_coreallowPendingPaneItems(keyPath: coreDOTallowPendingPaneItems, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
@@ -963,12 +1502,334 @@ trait Config extends js.Object {
     options: Anon_Scope,
     callback: js.Function1[/* value */ Boolean, Unit]
   ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterdisabledProviders(keyPath: linterDOTdisabledProviders, callback: js.Function1[/* value */ js.Array[String], Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterdisabledProviders(
+    keyPath: linterDOTdisabledProviders,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ js.Array[String], Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterignoreGlob(keyPath: linterDOTignoreGlob, callback: js.Function1[/* value */ String, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterignoreGlob(
+    keyPath: linterDOTignoreGlob,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnChange(keyPath: linterDOTlintOnChange, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnChange(
+    keyPath: linterDOTlintOnChange,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval, callback: js.Function1[/* value */ Double, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnChangeInterval(
+    keyPath: linterDOTlintOnChangeInterval,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Double, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnOpen(keyPath: linterDOTlintOnOpen, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintOnOpen(
+    keyPath: linterDOTlintOnOpen,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_linterlintPreviewTabs(
+    keyPath: linterDOTlintPreviewTabs,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`, callback: js.Function1[/* value */ String, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarcursorPositionFormat(
+    keyPath: `status-barDOTcursorPositionFormat`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarfullWidth(keyPath: `status-barDOTfullWidth`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarfullWidth(
+    keyPath: `status-barDOTfullWidth`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarisVisible(keyPath: `status-barDOTisVisible`, callback: js.Function1[/* value */ Boolean, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarisVisible(
+    keyPath: `status-barDOTisVisible`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ Boolean, Unit]
+  ): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`, callback: js.Function1[/* value */ String, Unit]): Disposable = js.native
+  @JSName("observe")
+  def observe_statusbarselectionCountFormat(
+    keyPath: `status-barDOTselectionCountFormat`,
+    options: Anon_Scope,
+    callback: js.Function1[/* value */ String, Unit]
+  ): Disposable = js.native
   /**
     *  Add a listener for changes to a given key path. If keyPath is not specified, your
     *  callback will be called on changes to any key.
     */
   // tslint:disable-next-line:no-any
   def onDidChange[T](callback: js.Function1[/* values */ Anon_NewValue[T], Unit]): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusautoActivationDelay(
+    keyPath: `autocomplete-plusDOTautoActivationDelay`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusautoActivationDelay(
+    keyPath: `autocomplete-plusDOTautoActivationDelay`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusbackspaceTriggersAutocomplete(
+    keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusbackspaceTriggersAutocomplete(
+    keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusbuiltinProviderBlacklist(
+    keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusbuiltinProviderBlacklist(
+    keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusconfirmCompletion(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    callback: js.Function1[/* values */ Anon_Enter, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusconfirmCompletion(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_Enter, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusconsumeSuffix(
+    keyPath: `autocomplete-plusDOTconsumeSuffix`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusconsumeSuffix(
+    keyPath: `autocomplete-plusDOTconsumeSuffix`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusdefaultProvider(
+    keyPath: `autocomplete-plusDOTdefaultProvider`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueSubsequence, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusdefaultProvider(
+    keyPath: `autocomplete-plusDOTdefaultProvider`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueSubsequence, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableAutoActivation(
+    keyPath: `autocomplete-plusDOTenableAutoActivation`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableAutoActivation(
+    keyPath: `autocomplete-plusDOTenableAutoActivation`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableBuiltinProvider(
+    keyPath: `autocomplete-plusDOTenableBuiltinProvider`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableBuiltinProvider(
+    keyPath: `autocomplete-plusDOTenableBuiltinProvider`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableExtendedUnicodeSupport(
+    keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusenableExtendedUnicodeSupport(
+    keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusfileBlacklist(
+    keyPath: `autocomplete-plusDOTfileBlacklist`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusfileBlacklist(
+    keyPath: `autocomplete-plusDOTfileBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusincludeCompletionsFromAllBuffers(
+    keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusincludeCompletionsFromAllBuffers(
+    keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusmaxVisibleSuggestions(
+    keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusmaxVisibleSuggestions(
+    keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusminimumWordLength(
+    keyPath: `autocomplete-plusDOTminimumWordLength`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusminimumWordLength(
+    keyPath: `autocomplete-plusDOTminimumWordLength`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusscopeBlacklist(
+    keyPath: `autocomplete-plusDOTscopeBlacklist`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusscopeBlacklist(
+    keyPath: `autocomplete-plusDOTscopeBlacklist`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussimilarSuggestionRemoval(
+    keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`,
+    callback: js.Function1[/* values */ Anon_NewValueNone, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussimilarSuggestionRemoval(
+    keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueNone, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusstrictMatching(
+    keyPath: `autocomplete-plusDOTstrictMatching`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplusstrictMatching(
+    keyPath: `autocomplete-plusDOTstrictMatching`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussuggestionListFollows(
+    keyPath: `autocomplete-plusDOTsuggestionListFollows`,
+    callback: js.Function1[/* values */ Anon_Cursor, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussuggestionListFollows(
+    keyPath: `autocomplete-plusDOTsuggestionListFollows`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_Cursor, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeAlternateScoring(
+    keyPath: `autocomplete-plusDOTuseAlternateScoring`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeAlternateScoring(
+    keyPath: `autocomplete-plusDOTuseAlternateScoring`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeCoreMovementCommands(
+    keyPath: `autocomplete-plusDOTuseCoreMovementCommands`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeCoreMovementCommands(
+    keyPath: `autocomplete-plusDOTuseCoreMovementCommands`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeLocalityBonus(
+    keyPath: `autocomplete-plusDOTuseLocalityBonus`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_autocompleteplususeLocalityBonus(
+    keyPath: `autocomplete-plusDOTuseLocalityBonus`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
   @JSName("onDidChange")
   def onDidChange_coreallowPendingPaneItems(
     keyPath: coreDOTallowPendingPaneItems,
@@ -1527,6 +2388,155 @@ trait Config extends js.Object {
     options: Anon_Scope,
     callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
   ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterdisabledProviders(
+    keyPath: linterDOTdisabledProviders,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterdisabledProviders(
+    keyPath: linterDOTdisabledProviders,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValue, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterignoreGlob(
+    keyPath: linterDOTignoreGlob,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterignoreGlob(
+    keyPath: linterDOTignoreGlob,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnChange(
+    keyPath: linterDOTlintOnChange,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnChange(
+    keyPath: linterDOTlintOnChange,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnChangeInterval(
+    keyPath: linterDOTlintOnChangeInterval,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnChangeInterval(
+    keyPath: linterDOTlintOnChangeInterval,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueNumber, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnOpen(
+    keyPath: linterDOTlintOnOpen,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintOnOpen(
+    keyPath: linterDOTlintOnOpen,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintPreviewTabs(
+    keyPath: linterDOTlintPreviewTabs,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_linterlintPreviewTabs(
+    keyPath: linterDOTlintPreviewTabs,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarcursorPositionFormat(
+    keyPath: `status-barDOTcursorPositionFormat`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarcursorPositionFormat(
+    keyPath: `status-barDOTcursorPositionFormat`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarfullWidth(
+    keyPath: `status-barDOTfullWidth`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarfullWidth(
+    keyPath: `status-barDOTfullWidth`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarisVisible(
+    keyPath: `status-barDOTisVisible`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarisVisible(
+    keyPath: `status-barDOTisVisible`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueBoolean, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarselectionCountFormat(
+    keyPath: `status-barDOTselectionCountFormat`,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  @JSName("onDidChange")
+  def onDidChange_statusbarselectionCountFormat(
+    keyPath: `status-barDOTselectionCountFormat`,
+    options: Anon_Scope,
+    callback: js.Function1[/* values */ Anon_NewValueOldValueString, Unit]
+  ): Disposable = js.native
+  def set(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    value: `tab always, enter when suggestion explicitly selected`
+  ): Unit = js.native
+  def set(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    value: `tab always, enter when suggestion explicitly selected`,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTconfirmCompletion`, value: `tab and enter`): Unit = js.native
+  def set(
+    keyPath: `autocomplete-plusDOTconfirmCompletion`,
+    value: `tab and enter`,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTconfirmCompletion`, value: enter): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTconfirmCompletion`, value: enter, options: Anon_ScopeSelector): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTconfirmCompletion`, value: tab): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTconfirmCompletion`, value: tab, options: Anon_ScopeSelector): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTdefaultProvider`, value: Subsequence): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTdefaultProvider`, value: Subsequence, options: Anon_ScopeSelector): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTdefaultProvider`, value: Symbol): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTdefaultProvider`, value: Symbol, options: Anon_ScopeSelector): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`, value: none): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`, value: none, options: Anon_ScopeSelector): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`, value: textOrSnippet): Unit = js.native
+  def set(
+    keyPath: `autocomplete-plusDOTsimilarSuggestionRemoval`,
+    value: textOrSnippet,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsuggestionListFollows`, value: typings.atom.atomStrings.Cursor): Unit = js.native
+  def set(
+    keyPath: `autocomplete-plusDOTsuggestionListFollows`,
+    value: typings.atom.atomStrings.Cursor,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsuggestionListFollows`, value: Word): Unit = js.native
+  def set(keyPath: `autocomplete-plusDOTsuggestionListFollows`, value: Word, options: Anon_ScopeSelector): Unit = js.native
   def set(keyPath: coreDOTcolorProfile, value: default): Unit = js.native
   def set(keyPath: coreDOTcolorProfile, value: default, options: Anon_ScopeSelector): Unit = js.native
   def set(keyPath: coreDOTcolorProfile, value: srgb): Unit = js.native
@@ -1561,6 +2571,110 @@ trait Config extends js.Object {
   def set(keyPath: editorDOTtabType, value: hard, options: Anon_ScopeSelector): Unit = js.native
   def set(keyPath: editorDOTtabType, value: soft): Unit = js.native
   def set(keyPath: editorDOTtabType, value: soft, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`, value: Double): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusautoActivationDelay(keyPath: `autocomplete-plusDOTautoActivationDelay`, value: Double, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusbackspaceTriggersAutocomplete(keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusbackspaceTriggersAutocomplete(
+    keyPath: `autocomplete-plusDOTbackspaceTriggersAutocomplete`,
+    value: Boolean,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusbuiltinProviderBlacklist(keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`, value: String): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusbuiltinProviderBlacklist(
+    keyPath: `autocomplete-plusDOTbuiltinProviderBlacklist`,
+    value: String,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusconsumeSuffix(keyPath: `autocomplete-plusDOTconsumeSuffix`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableAutoActivation(keyPath: `autocomplete-plusDOTenableAutoActivation`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableAutoConfirmSingleSuggestion(keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableAutoConfirmSingleSuggestion(
+    keyPath: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`,
+    value: Boolean,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableBuiltinProvider(keyPath: `autocomplete-plusDOTenableBuiltinProvider`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableExtendedUnicodeSupport(keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusenableExtendedUnicodeSupport(
+    keyPath: `autocomplete-plusDOTenableExtendedUnicodeSupport`,
+    value: Boolean,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`, value: js.Array[String]): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusfileBlacklist(keyPath: `autocomplete-plusDOTfileBlacklist`, value: js.Array[String], options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusincludeCompletionsFromAllBuffers(keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusincludeCompletionsFromAllBuffers(
+    keyPath: `autocomplete-plusDOTincludeCompletionsFromAllBuffers`,
+    value: Boolean,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`, value: Double): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusmaxVisibleSuggestions(keyPath: `autocomplete-plusDOTmaxVisibleSuggestions`, value: Double, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`, value: Double): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusminimumWordLength(keyPath: `autocomplete-plusDOTminimumWordLength`, value: Double, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusscopeBlacklist(keyPath: `autocomplete-plusDOTscopeBlacklist`, value: js.Array[String]): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusscopeBlacklist(
+    keyPath: `autocomplete-plusDOTscopeBlacklist`,
+    value: js.Array[String],
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplusstrictMatching(keyPath: `autocomplete-plusDOTstrictMatching`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplussuppressActivationForEditorClasses(keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`, value: js.Array[String]): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplussuppressActivationForEditorClasses(
+    keyPath: `autocomplete-plusDOTsuppressActivationForEditorClasses`,
+    value: js.Array[String],
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeAlternateScoring(keyPath: `autocomplete-plusDOTuseAlternateScoring`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeCoreMovementCommands(keyPath: `autocomplete-plusDOTuseCoreMovementCommands`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeCoreMovementCommands(
+    keyPath: `autocomplete-plusDOTuseCoreMovementCommands`,
+    value: Boolean,
+    options: Anon_ScopeSelector
+  ): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_autocompleteplususeLocalityBonus(keyPath: `autocomplete-plusDOTuseLocalityBonus`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
   @JSName("set")
   def set_coreallowPendingPaneItems(keyPath: coreDOTallowPendingPaneItems, value: Boolean): Unit = js.native
   @JSName("set")
@@ -1785,6 +2899,46 @@ trait Config extends js.Object {
   def set_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling, value: Boolean): Unit = js.native
   @JSName("set")
   def set_editorzoomFontWhenCtrlScrolling(keyPath: editorDOTzoomFontWhenCtrlScrolling, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterdisabledProviders(keyPath: linterDOTdisabledProviders, value: js.Array[String]): Unit = js.native
+  @JSName("set")
+  def set_linterdisabledProviders(keyPath: linterDOTdisabledProviders, value: js.Array[String], options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterignoreGlob(keyPath: linterDOTignoreGlob, value: String): Unit = js.native
+  @JSName("set")
+  def set_linterignoreGlob(keyPath: linterDOTignoreGlob, value: String, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnChange(keyPath: linterDOTlintOnChange, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnChange(keyPath: linterDOTlintOnChange, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval, value: Double): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnChangeInterval(keyPath: linterDOTlintOnChangeInterval, value: Double, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnOpen(keyPath: linterDOTlintOnOpen, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_linterlintOnOpen(keyPath: linterDOTlintOnOpen, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_linterlintPreviewTabs(keyPath: linterDOTlintPreviewTabs, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`, value: String): Unit = js.native
+  @JSName("set")
+  def set_statusbarcursorPositionFormat(keyPath: `status-barDOTcursorPositionFormat`, value: String, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_statusbarfullWidth(keyPath: `status-barDOTfullWidth`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_statusbarfullWidth(keyPath: `status-barDOTfullWidth`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_statusbarisVisible(keyPath: `status-barDOTisVisible`, value: Boolean): Unit = js.native
+  @JSName("set")
+  def set_statusbarisVisible(keyPath: `status-barDOTisVisible`, value: Boolean, options: Anon_ScopeSelector): Unit = js.native
+  @JSName("set")
+  def set_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`, value: String): Unit = js.native
+  @JSName("set")
+  def set_statusbarselectionCountFormat(keyPath: `status-barDOTselectionCountFormat`, value: String, options: Anon_ScopeSelector): Unit = js.native
   /**
     *  Suppress calls to handler functions registered with ::onDidChange and ::observe
     *  for the duration of callback. After callback executes, handlers will be called

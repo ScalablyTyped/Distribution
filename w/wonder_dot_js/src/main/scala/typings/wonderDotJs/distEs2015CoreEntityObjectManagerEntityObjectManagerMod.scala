@@ -14,7 +14,7 @@ object distEs2015CoreEntityObjectManagerEntityObjectManagerMod extends js.Object
     def this(entityObject: EntityObject) = this()
     def addChild(child: EntityObject): this.type = js.native
     def addChildren(
-      children: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<EntityObject> */ js.Any
+      children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EntityObject> */ js.Any
     ): js.Any = js.native
     def addChildren(children: js.Array[EntityObject]): js.Any = js.native
     def addChildren(children: EntityObject): js.Any = js.native

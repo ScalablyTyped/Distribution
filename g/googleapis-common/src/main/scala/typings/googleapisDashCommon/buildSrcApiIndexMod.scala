@@ -1,6 +1,8 @@
 package typings.googleapisDashCommon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleapisDashCommon.buildSrcApiMod.GoogleConfigurable
+import typings.googleapisDashCommon.buildSrcApiMod.ServiceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,22 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object buildSrcApiIndexMod extends js.Object {
   def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any]): T = js.native
+  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any], context: GoogleConfigurable): T = js.native
+  def getAPI[T](api: String, options: ServiceOptions, versions: StringDictionary[js.Any]): T = js.native
   def getAPI[T](
     api: String,
-    options: String,
+    options: ServiceOptions,
     versions: StringDictionary[js.Any],
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GoogleConfigurable */ js.Any
-  ): T = js.native
-  def getAPI[T](
-    api: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServiceOptions */ js.Any,
-    versions: StringDictionary[js.Any]
-  ): T = js.native
-  def getAPI[T](
-    api: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServiceOptions */ js.Any,
-    versions: StringDictionary[js.Any],
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GoogleConfigurable */ js.Any
+    context: GoogleConfigurable
   ): T = js.native
 }
 

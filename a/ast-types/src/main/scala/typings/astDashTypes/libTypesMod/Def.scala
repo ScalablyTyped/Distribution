@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Def[T] protected () extends js.Object {
   def this(`type`: Type[T], typeName: String) = this()
-  var allFields: StringDictionary[Field[_]] = js.native
+  var allFields: StringDictionary[FieldType[_]] = js.native
   var allSupertypes: StringDictionary[Def[_]] = js.native
   var baseNames: js.Array[String] = js.native
   var buildParams: js.Array[String] = js.native
   var buildable: Boolean = js.native
   var fieldNames: js.Array[String] = js.native
   var finalized: Boolean = js.native
-  var ownFields: StringDictionary[Field[_]] = js.native
+  var ownFields: StringDictionary[FieldType[_]] = js.native
   var supertypeList: js.Array[String] = js.native
   val `type`: Type[T] = js.native
   val typeName: String = js.native

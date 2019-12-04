@@ -1,7 +1,6 @@
 package typings.mali.maliMod
 
 import typings.grpc.grpcMod.Metadata
-import typings.mali.GrpcRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

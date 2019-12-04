@@ -11,7 +11,7 @@ trait Options extends js.Object {
   var region: js.UndefOr[String] = js.undefined
   var secretAccessKey: js.UndefOr[String] = js.undefined
   var sqs: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any
   ] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object Options {
     batchSize: Int | Double = null,
     region: String = null,
     secretAccessKey: String = null,
-    sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null
+    sqs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any = null
   ): Options = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])

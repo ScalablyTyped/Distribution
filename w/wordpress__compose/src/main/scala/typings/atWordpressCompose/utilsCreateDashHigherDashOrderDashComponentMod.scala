@@ -11,12 +11,12 @@ object utilsCreateDashHigherDashOrderDashComponentMod extends js.Object {
   // prettier-ignore
   def default[EP](
     mapComponentToEnhancedComponent: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<any> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ _
     ],
     modifierName: String
   ): js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<any> */ /* component */ js.Any, 
     _
   ] = js.native
 }

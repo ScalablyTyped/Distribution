@@ -1,8 +1,8 @@
 package typings.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationItemMod.PaginationItemProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.std.HTMLAnchorElement

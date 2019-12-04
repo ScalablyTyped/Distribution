@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eventsource"
-version := "1.1-dt-20191126Z-ee9f73"
+version := "1.1-dt-20191126Z-c03efa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

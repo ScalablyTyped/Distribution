@@ -1,0 +1,26 @@
+package typings.atFirebaseDatabase
+
+import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait TypeofTEST_ACCESS extends js.Object {
+  def forceRestClient(forceRestClient: Boolean): Unit
+  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit]
+  def queryIdentifier(query: Query): String
+}
+
+object TypeofTEST_ACCESS {
+  @scala.inline
+  def apply(
+    forceRestClient: Boolean => Unit,
+    hijackHash: js.Function0[String] => js.Function0[Unit],
+    queryIdentifier: Query => String
+  ): TypeofTEST_ACCESS = {
+    val __obj = js.Dynamic.literal(forceRestClient = js.Any.fromFunction1(forceRestClient), hijackHash = js.Any.fromFunction1(hijackHash), queryIdentifier = js.Any.fromFunction1(queryIdentifier))
+  
+    __obj.asInstanceOf[TypeofTEST_ACCESS]
+  }
+}
+

@@ -1,7 +1,7 @@
 package typings.atJupyterlabFilebrowser.libUploadstatusMod.FileUploadStatus
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.WidgetTracker
-import typings.atJupyterlabFilebrowser.libMod.FileBrowser
+import typings.atJupyterlabFilebrowser.atJupyterlabFilebrowserMod.FileBrowser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

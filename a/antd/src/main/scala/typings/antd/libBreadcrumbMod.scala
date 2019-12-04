@@ -14,8 +14,8 @@ object libBreadcrumbMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Item: TypeofClassBreadcrumbItemANTBREADCRUMBITEM = js.native
-    var Separator: TypeofClassBreadcrumbSeparatorANTBREADCRUMBSEPARATOR = js.native
+    var Item: TypeofClassBreadcrumbItem = js.native
+    var Separator: TypeofClassBreadcrumbSeparator = js.native
     var defaultProps: Anon_Separator = js.native
     var propTypes: Anon_PrefixCls = js.native
   }

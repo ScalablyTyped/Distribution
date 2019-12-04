@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fpSetMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn2[Anon_DateHours, Date | Double, Date]]
+  object default extends TopLevel[CurriedFn2[Anon_Date, Date | Double, Date]]
   
 }
 

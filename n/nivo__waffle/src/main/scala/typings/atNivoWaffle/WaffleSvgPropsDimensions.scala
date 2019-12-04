@@ -11,8 +11,8 @@ import typings.atNivoWaffle.atNivoWaffleMod.ValueFormatter
 import typings.atNivoWaffle.atNivoWaffleMod.WaffleDatum
 import typings.atNivoWaffle.atNivoWaffleMod.WaffleFillDirection
 import typings.atNivoWaffle.atNivoWaffleMod.WaffleTooltipData
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "worker-rpc"
-version := "0.1.1-cc9659"
+version := "0.1.1-6d9cec"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

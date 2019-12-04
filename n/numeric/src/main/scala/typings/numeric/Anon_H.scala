@@ -1,5 +1,6 @@
 package typings.numeric
 
+import typings.numeric.numericMod.Matrix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

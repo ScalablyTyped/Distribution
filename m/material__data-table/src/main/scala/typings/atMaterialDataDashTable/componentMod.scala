@@ -24,7 +24,7 @@ object componentMod extends js.Object {
     def getSelectedRowIds(): js.Array[String | Null] = js.native
     def initialize(): Unit = js.native
     def initialize(
-      checkboxFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCCheckboxFactory */ js.Any
+      checkboxFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCCheckboxFactory */ js.Any
     ): Unit = js.native
     /**
       * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.

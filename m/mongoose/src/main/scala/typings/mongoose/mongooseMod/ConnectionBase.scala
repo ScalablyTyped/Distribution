@@ -1,9 +1,9 @@
 package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongodb.Default
 import typings.mongodb.mongodbMod.CollectionCreateOptions
 import typings.mongodb.mongodbMod.Db
+import typings.mongodb.mongodbMod.Default
 import typings.mongoose.Anon_Catch
 import typings.mongoose.mongooseStrings.autoCreate
 import typings.mongoose.mongooseStrings.autoIndex

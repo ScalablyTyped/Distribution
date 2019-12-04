@@ -58,8 +58,6 @@ trait Request[P /* <: Params */, ResBody, ReqBody]
     * where "proxy2" is the furthest down-stream.
     */
   var ips: js.Array[String] = js.native
-  @JSName("method")
-  var method_Request: String = js.native
   var next: js.UndefOr[NextFunction] = js.native
   var originalUrl: String = js.native
   var params: P = js.native
@@ -108,8 +106,6 @@ trait Request[P /* <: Params */, ResBody, ReqBody]
     * If "subdomain offset" is 3, req.subdomains is `["tobi"]`.
     */
   var subdomains: js.Array[String] = js.native
-  @JSName("url")
-  var url_Request: String = js.native
   /**
     * Check if the request was an _XMLHttpRequest_.
     */

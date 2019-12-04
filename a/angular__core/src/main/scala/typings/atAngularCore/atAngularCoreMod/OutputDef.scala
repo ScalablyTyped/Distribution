@@ -2,7 +2,7 @@ package typings.atAngularCore.atAngularCoreMod
 
 import typings.atAngularCore.atAngularCoreStrings.body
 import typings.atAngularCore.atAngularCoreStrings.component
-import typings.atAngularCore.atAngularCoreStrings.document
+import typings.atAngularCore.atAngularCoreStrings.document_
 import typings.atAngularCore.atAngularCoreStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait OutputDef extends js.Object {
   var eventName: String
   var propName: String | Null
-  var target: window | document | body | component | Null
+  var target: window | document_ | body | component | Null
   var `type`: OutputType
 }
 
@@ -21,7 +21,7 @@ object OutputDef {
     eventName: String,
     `type`: OutputType,
     propName: String = null,
-    target: window | document | body | component = null
+    target: window | document_ | body | component = null
   ): OutputDef = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

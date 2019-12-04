@@ -1,9 +1,9 @@
 package typings.antd.libBreadcrumbBreadcrumbItemMod
 
 import typings.antd.libDropdownDropdownMod.OverlayFunc
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLSpanElement

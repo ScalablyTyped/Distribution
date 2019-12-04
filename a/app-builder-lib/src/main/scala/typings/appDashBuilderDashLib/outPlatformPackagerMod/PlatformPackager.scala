@@ -1,5 +1,8 @@
 package typings.appDashBuilderDashLib.outPlatformPackagerMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Packager
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Target
 import typings.appDashBuilderDashLib.outAppInfoMod.AppInfo
 import typings.appDashBuilderDashLib.outConfigurationMod.AfterPackContext
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
@@ -7,9 +10,6 @@ import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
 import typings.appDashBuilderDashLib.outCoreMod.TargetSpecificOptions
 import typings.appDashBuilderDashLib.outElectronElectronFrameworkMod.ElectronPlatformName
 import typings.appDashBuilderDashLib.outFileMatcherMod.GetFileMatchersOptions
-import typings.appDashBuilderDashLib.outMod.Packager
-import typings.appDashBuilderDashLib.outMod.Platform
-import typings.appDashBuilderDashLib.outMod.Target
 import typings.appDashBuilderDashLib.outOptionsFileAssociationMod.FileAssociation
 import typings.appDashBuilderDashLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import typings.appDashBuilderDashLib.outPackagerApiMod.PackagerOptions

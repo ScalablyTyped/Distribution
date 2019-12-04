@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "constantinople"
-version := "3.1.2-df41ec"
+version := "3.1.2-21ec54"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -3,9 +3,9 @@ package typings.antd.libModalModalMod
 import typings.antd.antdNumbers.`false`
 import typings.antd.libButtonButtonMod.ButtonType
 import typings.antd.libButtonButtonMod.NativeButtonProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

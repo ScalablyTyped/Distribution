@@ -1,6 +1,5 @@
 package typings.atAtlaskitTree.atAtlaskitTreeMod
 
-import typings.atAtlaskitTree.FlattenedTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -15,7 +15,7 @@ object FindMatchingRouteOptions {
   def apply(
     request: Request,
     url: URL,
-    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null
   ): FindMatchingRouteOptions = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])

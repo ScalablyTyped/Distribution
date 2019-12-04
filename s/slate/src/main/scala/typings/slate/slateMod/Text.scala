@@ -1,9 +1,9 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Map
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Map
+import typings.immutable.Immutable.Set
 import typings.slate.Anon_PreserveKeys
 import typings.std.Error
 import scala.scalajs.js
@@ -78,6 +78,6 @@ object Text extends js.Object {
   def fromJSON(properties: TextJSON): Text = js.native
   def fromJSON(properties: TextProperties): Text = js.native
   def isText(maybeText: js.Any): /* is slate.slate.Text */ Boolean = js.native
-  def isTextList(maybeTextList: js.Any): /* is immutable.immutable.List<slate.slate.Text> */ Boolean = js.native
+  def isTextList(maybeTextList: js.Any): /* is immutable.Immutable.List<slate.slate.Text> */ Boolean = js.native
 }
 

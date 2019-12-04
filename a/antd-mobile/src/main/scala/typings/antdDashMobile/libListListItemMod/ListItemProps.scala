@@ -11,10 +11,10 @@ import typings.antdDashMobile.antdDashMobileStrings.middle
 import typings.antdDashMobile.antdDashMobileStrings.top
 import typings.antdDashMobile.antdDashMobileStrings.up
 import typings.antdDashMobile.libListPropsTypeMod.ListItemPropsType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js

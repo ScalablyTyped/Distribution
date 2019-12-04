@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object render extends js.Object {
   def apply(
-    tree: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkElement */ js.Any
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
   ): RenderResponse = js.native
 }
 

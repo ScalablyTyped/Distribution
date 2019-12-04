@@ -2,7 +2,7 @@ package typings.openpgp.openpgpMod.crypto
 
 import typings.openpgp.Anon_C
 import typings.openpgp.Anon_S
-import typings.openpgp.Integer
+import typings.openpgp.openpgpMod.Integer
 import typings.openpgp.openpgpMod.`type`.mpi.MPI
 import typings.openpgp.openpgpMod.`type`.oid.OID
 import typings.openpgp.openpgpMod.crypto.public_key.elliptic.curve.Curve
@@ -30,10 +30,10 @@ object public_key extends js.Object {
     def sign(
       hash_algo: Integer,
       hashed: Uint8Array,
-      g: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      x: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Object = js.native
     /**
       * DSA Verify function
@@ -49,13 +49,13 @@ object public_key extends js.Object {
       */
     def verify(
       hash_algo: Integer,
-      r: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      s: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+      r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
       hashed: Uint8Array,
-      g: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      y: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
   }
   
@@ -70,10 +70,10 @@ object public_key extends js.Object {
       * @returns BN
       */
     def decrypt(
-      c1: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      c2: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      x: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      c1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
     /**
       * ElGamal Encryption function
@@ -84,10 +84,10 @@ object public_key extends js.Object {
       * @returns
       */
     def encrypt(
-      m: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      g: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      y: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Object = js.native
   }
   
@@ -128,7 +128,7 @@ object public_key extends js.Object {
         d: Uint8Array,
         fingerprint: String
       ): js.Promise[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ _
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
           ] = js.native
       /**
         * Encrypt and wrap a session key
@@ -156,7 +156,7 @@ object public_key extends js.Object {
         * @returns Generated ephemeral secret
         */
       def genPrivateEphemeralKey(curve: Curve, V: Uint8Array, d: Uint8Array): js.Promise[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ _
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
           ] = js.native
       /**
         * Generate ECDHE ephemeral key and secret from public key
@@ -262,7 +262,7 @@ object public_key extends js.Object {
       * @returns
       */
     def fermat(
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
       b: Integer
     ): Boolean = js.native
     /**
@@ -273,8 +273,8 @@ object public_key extends js.Object {
       * @returns
       */
     def isProbablePrime(
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
       k: Integer
     ): Boolean = js.native
     /**
@@ -286,7 +286,7 @@ object public_key extends js.Object {
       * @returns
       */
     def millerRabin(
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
       k: Integer,
       rand: js.Function
     ): Boolean = js.native
@@ -299,7 +299,7 @@ object public_key extends js.Object {
       */
     def randomProbablePrime(
       bits: Integer,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
       k: Integer
     ): js.Any = js.native
   }
@@ -318,13 +318,13 @@ object public_key extends js.Object {
       * @returns RSA Plaintext
       */
     def decrypt(
-      m: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      d: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      u: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      u: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
     /**
       * Encrypt message
@@ -334,9 +334,9 @@ object public_key extends js.Object {
       * @returns RSA Ciphertext
       */
     def encrypt(
-      m: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
     /**
       * Generate a new random private key B bits long with public exponent E.
@@ -358,10 +358,10 @@ object public_key extends js.Object {
       * @returns RSA Signature
       */
     def sign(
-      m: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      d: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
     /**
       * Verify signature
@@ -371,9 +371,9 @@ object public_key extends js.Object {
       * @returns
       */
     def verify(
-      s: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      n: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
-      e: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+      s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
+      e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     ): js.Any = js.native
   }
   

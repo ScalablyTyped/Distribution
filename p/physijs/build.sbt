@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "physijs"
-version := "0.0-unknown-dt-20190410Z-dba5ee"
+version := "0.0-unknown-dt-20190410Z-ab9e8a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "three" % "0.109.0-50facb")
+  "org.scalablytyped" %%% "three" % "0.109.0-a8617c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

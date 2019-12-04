@@ -20,11 +20,11 @@ object EdwardsConf {
     a: BNInput,
     c: BNInput,
     d: BNInput,
-    p: Double | String | js.Array[Double] | Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any),
+    p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any),
     g: BasePoint = null,
     gRed: js.Any = null,
-    n: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer = null,
-    prime: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | String = null
+    n: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer = null,
+    prime: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | String = null
   ): EdwardsConf = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])

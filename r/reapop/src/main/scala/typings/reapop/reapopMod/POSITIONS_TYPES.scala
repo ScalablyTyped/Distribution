@@ -1,13 +1,5 @@
 package typings.reapop.reapopMod
 
-import typings.reapop.BOTTOM
-import typings.reapop.BOTTOM_CENTER
-import typings.reapop.BOTTOM_LEFT_POSITION
-import typings.reapop.BOTTOM_RIGHT_POSITION
-import typings.reapop.TOP
-import typings.reapop.TOP_CENTER
-import typings.reapop.TOP_LEFT_POSITION
-import typings.reapop.TOP_RIGHT_POSITION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

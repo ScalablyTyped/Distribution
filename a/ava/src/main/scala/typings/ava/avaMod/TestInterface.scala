@@ -36,10 +36,10 @@ trait TestInterface[Context] extends js.Object {
   var todo_Original: TodoDeclaration = js.native
   def apply(
     macros: OneOrMoreMacros[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ _, 
       Context
     ],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify T */ js.Any
   ): Unit = js.native
   /** Declare a concurrent test. */
   def apply(title: String, implementation: Implementation[Context]): Unit = js.native

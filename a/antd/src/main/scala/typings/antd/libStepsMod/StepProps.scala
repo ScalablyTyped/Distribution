@@ -4,10 +4,10 @@ import typings.antd.antdStrings.error
 import typings.antd.antdStrings.finish
 import typings.antd.antdStrings.process
 import typings.antd.antdStrings.wait
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

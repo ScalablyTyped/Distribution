@@ -121,7 +121,7 @@ class RESTAdapter () extends Adapter {
     */
   def query[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object
   ): Promise[_] = js.native
   /**

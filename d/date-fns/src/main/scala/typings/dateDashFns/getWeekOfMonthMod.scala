@@ -11,9 +11,9 @@ object getWeekOfMonthMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double): Double = js.native
-    def apply(date: Double, options: Anon_01): Double = js.native
+    def apply(date: Double, options: Anon_0): Double = js.native
     def apply(date: Date): Double = js.native
-    def apply(date: Date, options: Anon_01): Double = js.native
+    def apply(date: Date, options: Anon_0): Double = js.native
   }
   
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libTypescriptSrcUtilsDrawerProgressContextMod extends js.Object {
   val default: Context[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
   ] = js.native
 }
 

@@ -3,6 +3,8 @@ package typings.tslint
 import typings.tslint.libConfigurationMod.IConfigurationFile
 import typings.tslint.libConfigurationMod.IConfigurationLoadResult
 import typings.tslint.libLanguageRuleRuleMod.RuleFailure
+import typings.tslint.tslintMod.ILinterOptions
+import typings.tslint.tslintMod.LintResult
 import typings.typescript.typescriptMod.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,11 +15,8 @@ import scala.scalajs.js.annotation._
 object libLinterMod extends js.Object {
   @js.native
   class Linter protected () extends js.Object {
-    def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any) = this()
-    def this(
-      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILinterOptions */ js.Any,
-      program: Program
-    ) = this()
+    def this(options: ILinterOptions) = this()
+    def this(options: ILinterOptions, program: Program) = this()
     var applyAllFixes: js.Any = js.native
     var applyRule: js.Any = js.native
     var failures: js.Any = js.native
@@ -30,7 +29,7 @@ object libLinterMod extends js.Object {
     var program: js.UndefOr[js.Any] = js.native
     var updateProgram: js.Any = js.native
     /* protected */ def applyFixes(sourceFilePath: String, source: String, fixableFailures: js.Array[RuleFailure]): String = js.native
-    def getResult(): js.Any = js.native
+    def getResult(): LintResult = js.native
     def lint(fileName: String, source: String): Unit = js.native
     def lint(fileName: String, source: String, configuration: IConfigurationFile): Unit = js.native
   }

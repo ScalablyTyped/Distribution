@@ -12,7 +12,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.timeline")
 @js.native
-class timeline () extends baseview {
+class timeline ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_timeline: WebixCallback = js.native
   @JSName("config")
   var config_timeline: timelineConfig = js.native
   var data: DataStore = js.native

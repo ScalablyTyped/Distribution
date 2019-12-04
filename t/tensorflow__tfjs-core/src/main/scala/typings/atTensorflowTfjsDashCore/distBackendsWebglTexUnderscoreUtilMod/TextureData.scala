@@ -1,7 +1,7 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
 import typings.atTensorflowTfjsDashCore.Anon_FlatOffset
-import typings.atTensorflowTfjsDashCore.Anon_Imag
+import typings.atTensorflowTfjsDashCore.Anon_ImagRealRank
 import typings.atTensorflowTfjsDashCore.distTypesMod.BackendValues
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.std.WebGLTexture
@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextureData extends js.Object {
-  var complexTensors: js.UndefOr[Anon_Imag] = js.undefined
+  var complexTensors: js.UndefOr[Anon_ImagRealRank] = js.undefined
   var dtype: DataType
   var isPacked: js.UndefOr[Boolean] = js.undefined
   var shape: js.Array[Double]
@@ -27,7 +27,7 @@ object TextureData {
   def apply(
     dtype: DataType,
     shape: js.Array[Double],
-    complexTensors: Anon_Imag = null,
+    complexTensors: Anon_ImagRealRank = null,
     isPacked: js.UndefOr[Boolean] = js.undefined,
     slice: Anon_FlatOffset = null,
     texShape: js.Tuple2[Double, Double] = null,

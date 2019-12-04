@@ -1,6 +1,9 @@
 package typings.caseless
 
 import typings.caseless.caselessMod.Caseless
+import typings.caseless.caselessMod.KeyType
+import typings.caseless.caselessMod.RawDict
+import typings.caseless.caselessMod.ValueType
 import typings.caseless.caselessNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,5 +37,8 @@ object caselessMod extends js.Object {
   def apply(): Caseless = js.native
   def apply(dict: RawDict): Caseless = js.native
   def httpify(resp: js.Object, headers: RawDict): Caseless = js.native
+  type KeyType = String
+  type RawDict = js.Object
+  type ValueType = js.Any
 }
 

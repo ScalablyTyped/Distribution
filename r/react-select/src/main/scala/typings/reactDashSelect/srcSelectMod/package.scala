@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcSelectMod {
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.Ref
   import typings.react.reactMod.TouchEvent
   import typings.std.HTMLElement

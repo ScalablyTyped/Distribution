@@ -1,11 +1,13 @@
 organization := "org.scalablytyped"
 name := "applicationinsights"
-version := "1.6.0-719aee"
+version := "1.6.0-2114aa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "diagnostic-channel" % "0.2.0-038621",
+  "org.scalablytyped" %%% "diagnostic-channel-publishers" % "0.3.3-24d79b",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

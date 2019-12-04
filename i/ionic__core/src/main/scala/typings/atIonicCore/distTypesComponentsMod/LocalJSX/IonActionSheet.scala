@@ -2,6 +2,10 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetButton
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,11 +23,7 @@ trait IonActionSheet extends js.Object {
   /**
     * An array of buttons for the action sheet.
     */
-  var buttons: js.UndefOr[
-    js.Array[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetButton */ _) | String
-    ]
-  ] = js.undefined
+  var buttons: js.UndefOr[js.Array[ActionSheetButton | String]] = js.undefined
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -31,9 +31,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   /**
     * Title for the action sheet.
     */
@@ -45,9 +43,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -55,14 +51,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Emitted after the alert has dismissed.
     */
-  var onIonActionSheetDidDismiss: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonActionSheetDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
   /**
     * Emitted after the alert has presented.
     */
@@ -70,14 +59,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Emitted before the alert has dismissed.
     */
-  var onIonActionSheetWillDismiss: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonActionSheetWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
   /**
     * Emitted before the alert has presented.
     */
@@ -97,22 +79,16 @@ object IonActionSheet {
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
-    buttons: js.Array[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetButton */ _) | String
-    ] = null,
+    buttons: js.Array[ActionSheetButton | String] = null,
     cssClass: String | js.Array[String] = null,
-    enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     header: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: ios | md = null,
-    onIonActionSheetDidDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-    ] => Unit = null,
+    onIonActionSheetDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonActionSheetDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonActionSheetWillDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-    ] => Unit = null,
+    onIonActionSheetWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonActionSheetWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
     subHeader: String = null,
     translucent: js.UndefOr[Boolean] = js.undefined
@@ -122,10 +98,10 @@ object IonActionSheet {
     if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.asInstanceOf[js.Any])
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonActionSheetDidDismiss != null) __obj.updateDynamic("onIonActionSheetDidDismiss")(js.Any.fromFunction1(onIonActionSheetDidDismiss))
     if (onIonActionSheetDidPresent != null) __obj.updateDynamic("onIonActionSheetDidPresent")(js.Any.fromFunction1(onIonActionSheetDidPresent))

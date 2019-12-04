@@ -1,6 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.Integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

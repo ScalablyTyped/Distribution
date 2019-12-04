@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distTypesOptionsMod {
+  import typings.flatpickr.distTypesGlobalsMod._Global_.Date
   import typings.flatpickr.distTypesInstanceMod.Instance
-  import typings.std.Date
   import typings.std.Partial
 
   type DateLimit[D] = D | DateRangeLimit[D] | (js.Function1[/* date */ Date, Boolean])

@@ -68,7 +68,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
   /**
     * The view's current [state](#state.EditorState).
     */
-  var state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any = js.native
+  var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any = js.native
   /**
     * Returns the viewport rectangle at a given document position. `left`
     * and `right` will be the same number, as this returns a flat
@@ -90,7 +90,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * easily passed around.
     */
   def dispatch(
-    tr: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Transaction<S> */ js.Any
+    tr: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction<S> */ js.Any
   ): Unit = js.native
   /**
     * Find the DOM position that corresponds to the given document
@@ -104,35 +104,35 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
   @JSName("endOfTextblock")
   def endOfTextblock_backward(
     dir: backward,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_down(dir: down): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_down(
     dir: down,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_forward(dir: forward): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_forward(
     dir: forward,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_left(dir: left): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_left(
     dir: left,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_right(dir: right): Boolean = js.native
   @JSName("endOfTextblock")
   def endOfTextblock_right(
     dir: right,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   /**
     * Find out whether the selection is at the end of a textblock when
@@ -147,7 +147,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
   @JSName("endOfTextblock")
   def endOfTextblock_up(
     dir: up,
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Boolean = js.native
   /**
     * Focus the editor.
@@ -215,7 +215,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * other props.
     */
   def updateState(
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   ): Unit = js.native
 }
 

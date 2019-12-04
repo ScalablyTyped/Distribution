@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Schema * / any */ @js.native
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema * / any */ @js.native
 trait SequenceSchema extends js.Object {
   // overload for the default mongoose plugin function
   def plugin(
     plugin: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
       /* options */ js.UndefOr[js.Object], 
       Unit
     ]
@@ -21,7 +21,7 @@ trait SequenceSchema extends js.Object {
   ): this.type = js.native
   def plugin(
     plugin: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
       /* options */ js.UndefOr[js.Object], 
       Unit
     ],

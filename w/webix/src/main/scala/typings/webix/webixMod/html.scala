@@ -42,5 +42,6 @@ trait html extends js.Object {
 
 @JSImport("webix", "html")
 @js.native
-object html extends TopLevel[html]
+object html
+  extends TopLevel[typings.webix.webix.html]
 

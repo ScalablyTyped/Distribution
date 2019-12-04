@@ -2,6 +2,8 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeChangeEventDetail
+import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeOptions
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -83,14 +85,7 @@ trait IonDatetime extends js.Object {
   /**
     * Emitted when the value (selected date) has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[DatetimeChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the datetime has focus.
     */
@@ -102,9 +97,7 @@ trait IonDatetime extends js.Object {
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
-  ] = js.undefined
+  var pickerOptions: js.UndefOr[DatetimeOptions] = js.undefined
   /**
     * The text to display when there's no date selected yet. Using lowercase to match the input attribute
     */
@@ -144,12 +137,10 @@ object IonDatetime {
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[DatetimeChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     pickerFormat: String = null,
-    pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any = null,
+    pickerOptions: DatetimeOptions = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     value: String = null,

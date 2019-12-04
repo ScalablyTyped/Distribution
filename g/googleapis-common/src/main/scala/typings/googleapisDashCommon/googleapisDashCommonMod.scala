@@ -5,6 +5,8 @@ import typings.gaxios.buildSrcCommonMod.GaxiosPromise
 import typings.googleDashAuthDashLibrary.buildSrcAuthOauth2clientMod.OAuth2ClientOptions
 import typings.googleapisDashCommon.buildSrcApiMod.APIRequestParams
 import typings.googleapisDashCommon.buildSrcApiMod.BodyResponseCallback
+import typings.googleapisDashCommon.buildSrcApiMod.GoogleConfigurable
+import typings.googleapisDashCommon.buildSrcApiMod.ServiceOptions
 import typings.googleapisDashCommon.buildSrcDiscoveryMod.DiscoveryOptions
 import typings.googleapisDashCommon.googleapisDashCommonStrings.`https://oauth2DOTgoogleapisDOTcom/tokeninfo`
 import scala.scalajs.js
@@ -57,22 +59,13 @@ object googleapisDashCommonMod extends js.Object {
   def createAPIRequest[T](parameters: APIRequestParams[_]): GaxiosPromise[T] = js.native
   def createAPIRequest[T](parameters: APIRequestParams[_], callback: BodyResponseCallback[T]): Unit = js.native
   def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any]): T = js.native
+  def getAPI[T](api: String, options: String, versions: StringDictionary[js.Any], context: GoogleConfigurable): T = js.native
+  def getAPI[T](api: String, options: ServiceOptions, versions: StringDictionary[js.Any]): T = js.native
   def getAPI[T](
     api: String,
-    options: String,
+    options: ServiceOptions,
     versions: StringDictionary[js.Any],
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GoogleConfigurable */ js.Any
-  ): T = js.native
-  def getAPI[T](
-    api: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServiceOptions */ js.Any,
-    versions: StringDictionary[js.Any]
-  ): T = js.native
-  def getAPI[T](
-    api: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServiceOptions */ js.Any,
-    versions: StringDictionary[js.Any],
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GoogleConfigurable */ js.Any
+    context: GoogleConfigurable
   ): T = js.native
   /* static members */
   @js.native

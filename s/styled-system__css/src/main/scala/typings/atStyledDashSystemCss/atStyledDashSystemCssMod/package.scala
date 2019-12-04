@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 package object atStyledDashSystemCssMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.csstype.csstypeMod.PropertiesFallback
+  import typings.std.Exclude
   import typings.std.Partial
+  import typings.std.Pick
 
   type CSSInterpolation = js.UndefOr[Double | String | CSSObject]
   type CSSPropertiesWithMultiValues = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -19,6 +21,11 @@ package object atStyledDashSystemCssMod {
   type CSSPseudosForCSSObject = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.CSSObject}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.CSSPseudosForCSSObject with js.Any
+  /**
+    * Omit exists in TypeScript >= v3.5, we're putting this here so typings can be
+    * used with earlier versions of TypeScript.
+    */
+  type Omit[T, K] = Pick[T, Exclude[String, K]]
   type ResponsiveStyleValue[T] = T | (js.Array[T | Null])
   type StandardCSSProperties = PropertiesFallback[Double | String]
   type SystemCssProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

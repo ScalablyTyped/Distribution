@@ -46,11 +46,6 @@ object distTypesComponentsIonModalMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type ReactModalOptions = (Omit[
-    ModalOptions[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ _
-    ], 
-    component | componentProps
-  ]) with Anon_ChildrenReactNode
+  type ReactModalOptions = (Omit[ModalOptions[ComponentRef], component | componentProps]) with Anon_ChildrenReactNode
 }
 

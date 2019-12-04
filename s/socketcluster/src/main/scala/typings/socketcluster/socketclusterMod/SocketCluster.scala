@@ -28,7 +28,7 @@ trait SocketCluster extends EventEmitter {
   val EVENT_WORKER_CLUSTER_START: workerClusterStart = js.native
   val EVENT_WORKER_EXIT: workerExit = js.native
   val EVENT_WORKER_START: workerStart = js.native
-  var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
+  var options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
   def colorText(message: String): String = js.native
   def colorText(message: String, color: Double): String = js.native
   def colorText(message: String, color: ColorCodes): String = js.native

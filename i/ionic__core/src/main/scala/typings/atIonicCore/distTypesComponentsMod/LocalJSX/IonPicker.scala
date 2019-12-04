@@ -2,6 +2,11 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerButton
+import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerColumn
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,19 +24,11 @@ trait IonPicker extends js.Object {
   /**
     * Array of buttons to be displayed at the top of the picker.
     */
-  var buttons: js.UndefOr[
-    js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerButton */ _
-    ]
-  ] = js.undefined
+  var buttons: js.UndefOr[js.Array[PickerButton]] = js.undefined
   /**
     * Array of columns to be displayed in the picker.
     */
-  var columns: js.UndefOr[
-    js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ _
-    ]
-  ] = js.undefined
+  var columns: js.UndefOr[js.Array[PickerColumn]] = js.undefined
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -43,9 +40,7 @@ trait IonPicker extends js.Object {
   /**
     * Animation to use when the picker is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
@@ -53,9 +48,7 @@ trait IonPicker extends js.Object {
   /**
     * Animation to use when the picker is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -63,14 +56,7 @@ trait IonPicker extends js.Object {
   /**
     * Emitted after the picker has dismissed.
     */
-  var onIonPickerDidDismiss: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonPickerDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
   /**
     * Emitted after the picker has presented.
     */
@@ -78,14 +64,7 @@ trait IonPicker extends js.Object {
   /**
     * Emitted before the picker has dismissed.
     */
-  var onIonPickerWillDismiss: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonPickerWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
   /**
     * Emitted before the picker has presented.
     */
@@ -101,25 +80,17 @@ object IonPicker {
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
     backdropDismiss: js.UndefOr[Boolean] = js.undefined,
-    buttons: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerButton */ _
-    ] = null,
-    columns: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ _
-    ] = null,
+    buttons: js.Array[PickerButton] = null,
+    columns: js.Array[PickerColumn] = null,
     cssClass: String | js.Array[String] = null,
     duration: Int | Double = null,
-    enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    enterAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    leaveAnimation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: ios | md = null,
-    onIonPickerDidDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-    ] => Unit = null,
+    onIonPickerDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonPickerDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonPickerWillDismiss: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail */ _
-    ] => Unit = null,
+    onIonPickerWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
     onIonPickerWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
     showBackdrop: js.UndefOr[Boolean] = js.undefined
   ): IonPicker = {
@@ -130,9 +101,9 @@ object IonPicker {
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction3(enterAnimation))
     if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction3(leaveAnimation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onIonPickerDidDismiss != null) __obj.updateDynamic("onIonPickerDidDismiss")(js.Any.fromFunction1(onIonPickerDidDismiss))
     if (onIonPickerDidPresent != null) __obj.updateDynamic("onIonPickerDidPresent")(js.Any.fromFunction1(onIonPickerDidPresent))

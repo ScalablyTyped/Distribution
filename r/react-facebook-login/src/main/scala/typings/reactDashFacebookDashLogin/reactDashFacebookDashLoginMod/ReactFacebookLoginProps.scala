@@ -1,9 +1,9 @@
 package typings.reactDashFacebookDashLogin.reactDashFacebookDashLoginMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.reactDashFacebookDashLogin.reactDashFacebookDashLoginStrings.medium
 import typings.reactDashFacebookDashLogin.reactDashFacebookDashLoginStrings.metro

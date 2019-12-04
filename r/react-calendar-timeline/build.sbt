@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-calendar-timeline"
-version := "v0.26.6-dt-20190927Z-1d5b05"
+version := "v0.26.6-dt-20190927Z-bf0c03"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

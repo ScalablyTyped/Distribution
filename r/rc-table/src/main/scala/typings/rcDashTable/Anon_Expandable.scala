@@ -1,8 +1,8 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.esInterfaceMod.IconExpandEventHandler
-import typings.react.NativeMouseEvent
+import typings.rcDashTable.libInterfaceMod.IconExpandEventHandler
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

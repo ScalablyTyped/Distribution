@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager
 
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IOpenOptions

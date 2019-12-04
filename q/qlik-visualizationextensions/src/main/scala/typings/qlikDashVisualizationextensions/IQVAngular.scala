@@ -7,7 +7,6 @@ import typings.angular.angularMod.IController
 import typings.angular.angularMod.IDirectiveFactory
 import typings.angular.angularMod.IScope
 import typings.angular.angularMod.Injectable
-import typings.angular.angularMod.auto.IInjectorService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IQVAngular extends js.Object {
   @JSName("$injector")
-  var $injector: IInjectorService = js.native
+  var $injector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IInjectorService */ js.Any = js.native
   /**
     * Register a new directive with the compiler.
     *

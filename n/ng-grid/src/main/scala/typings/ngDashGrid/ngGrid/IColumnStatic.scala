@@ -1,7 +1,6 @@
 package typings.ngDashGrid.ngGrid
 
 import org.scalablytyped.runtime.Instantiable6
-import typings.angular.angularMod.ITemplateCacheService
 import typings.ngDashGrid.ngGrid.service.IDomUtilityService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +13,7 @@ trait IColumnStatic
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 
       /* domUtilityService */ IDomUtilityService, 
-      /* $templateCache */ ITemplateCacheService, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ /* $templateCache */ js.Any, 
       /* $utils */ js.Any, 
       IColumn
     ]

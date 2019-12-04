@@ -15,9 +15,9 @@ import typings.antdDashMobile.antdDashMobileStrings.start
 import typings.antdDashMobile.antdDashMobileStrings.stretch
 import typings.antdDashMobile.antdDashMobileStrings.wrap
 import typings.antdDashMobile.libFlexPropsTypeMod.FlexPropsType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

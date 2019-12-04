@@ -20,8 +20,6 @@ class Variable protected ()
     */
   /* CompleteClass */
   override var termType: typings.rdfDashJs.rdfDashJsStrings.Variable = js.native
-  @JSName("termType")
-  val termType_Variable: typings.n3.n3Strings.Variable = js.native
   /**
     * The name of the variable *without* leading ? (example: a).
     */

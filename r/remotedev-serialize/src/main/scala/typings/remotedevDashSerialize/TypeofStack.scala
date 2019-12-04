@@ -1,6 +1,6 @@
 package typings.remotedevDashSerialize
 
-import typings.immutable.immutableMod.Stack
+import typings.immutable.Immutable.Stack
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait TypeofStack extends js.Object {
   /**
     * True if the provided value is a Stack
     */
-  def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ Boolean = js.native
+  def isStack(maybeStack: js.Any): /* is immutable.Immutable.Stack<any> */ Boolean = js.native
   /**
     * Creates a new Stack containing `values`.
     */

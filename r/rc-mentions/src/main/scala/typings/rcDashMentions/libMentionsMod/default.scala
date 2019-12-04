@@ -1,6 +1,6 @@
 package typings.rcDashMentions.libMentionsMod
 
-import typings.rcDashMentions.Anon_FilterOptionHasValue
+import typings.rcDashMentions.Anon_FilterOption
 import typings.rcDashMentions.libOptionMod.OptionProps
 import typings.react.reactMod.FunctionComponent
 import typings.std.Partial
@@ -19,7 +19,7 @@ class default protected () extends Mentions {
 @js.native
 object default extends js.Object {
   var Option: FunctionComponent[OptionProps] = js.native
-  var defaultProps: Anon_FilterOptionHasValue = js.native
+  var defaultProps: Anon_FilterOption = js.native
   def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): Partial[MentionsState] = js.native
 }
 

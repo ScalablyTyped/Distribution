@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distEs2015UtilsArrayUtilsMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ArrayUtils$ * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArrayUtils$ * / any */ @js.native
   class ArrayUtils () extends js.Object
   
   /* static members */

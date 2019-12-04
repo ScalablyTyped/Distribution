@@ -1,6 +1,5 @@
 package typings.bardjs
 
-import typings.angular.angularMod.auto.IProvideService
 import typings.chai.Chai.AssertionError
 import typings.mocha.Mocha.IHookCallbackContext
 import typings.mocha.Mocha.IRunner
@@ -24,14 +23,18 @@ object bard extends js.Object {
     *  Could restore $q with $qReal in which case don't need to flush.
     */
   @JSName("$httpBackend")
-  def $httpBackend($provide: IProvideService): js.Any = js.native
+  def $httpBackend(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): js.Any = js.native
   /**
     *  Replaces the ngMock'ed $q with the real one from ng thus
     *  obviating the need to flush $http and $q queues
     *  at the expense of ability to control $q timing.
     */
   @JSName("$q")
-  def $q($provide: IProvideService): js.Any = js.native
+  def $q(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): js.Any = js.native
   /**
     * Add names of globals to list of OK globals for this mocha spec
     * NB: Call this method ONLY if you're using mocha!
@@ -68,29 +71,39 @@ object bard extends js.Object {
   /**
     * Registers a fake logger service that you can spy on
     */
-  def fakeLogger($provide: IProvideService): Unit = js.native
+  def fakeLogger(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): Unit = js.native
   /**
     * Registers a fake route helper provider service that you can spy on
     */
-  def fakeRouteHelperProvider($provide: IProvideService): Unit = js.native
+  def fakeRouteHelperProvider(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): Unit = js.native
   /**
     * Stub out the $routeProvider so we avoid
     * all routing calls, including the default route
     * which runs on every test otherwise.
     * Make sure this goes before the inject in the spec.
     */
-  def fakeRouteProvider($provide: IProvideService): Unit = js.native
+  def fakeRouteProvider(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): Unit = js.native
   /**
     * Stub out the $stateProvider so we avoid
     * all routing calls, including the default state
     * which runs on every test otherwise.
     * Make sure this goes before the inject in the spec.
     */
-  def fakeStateProvider($provide: IProvideService): Unit = js.native
+  def fakeStateProvider(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): Unit = js.native
   /**
     * Registers a fake toastr service that you can spy on
     */
-  def fakeToastr($provide: IProvideService): Unit = js.native
+  def fakeToastr(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): Unit = js.native
   /**
     * Inject selected services into the windows object during test
     * then remove them when test ends with an `afterEach`.

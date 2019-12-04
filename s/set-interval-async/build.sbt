@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "set-interval-async"
-version := "1.0-dt-20190814Z-c93864"
+version := "1.0-dt-20190814Z-e77020"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

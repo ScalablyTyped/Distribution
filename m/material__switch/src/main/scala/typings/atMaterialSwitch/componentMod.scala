@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCRippleCapableSurface * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRippleCapableSurface * / any */ @js.native
   class MDCSwitch () extends MDCComponent[MDCSwitchFoundation, default[MDCSwitchFoundation]] {
     var checked: Boolean = js.native
     var disabled: Boolean = js.native
-    val ripple: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
+    val ripple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
     var root_ : Element = js.native
   }
   

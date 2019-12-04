@@ -31,6 +31,9 @@ object cypressStrings {
   sealed trait Chromium extends js.Object
   
   @js.native
+  sealed trait ConformsPredicateObject extends js.Object
+  
+  @js.native
   sealed trait DOLLARel extends js.Object
   
   @js.native
@@ -67,6 +70,33 @@ object cypressStrings {
   sealed trait List extends Reporter
   
   @js.native
+  sealed trait LoDashExplicitWrapper extends js.Object
+  
+  @js.native
+  sealed trait LoDashFp extends js.Object
+  
+  @js.native
+  sealed trait LoDashImplicitWrapper extends js.Object
+  
+  @js.native
+  sealed trait LoDashStatic extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues2x1 extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues2x2 extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues3x1 extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues6x1 extends js.Object
+  
+  @js.native
   sealed trait Markdown extends Reporter
   
   @js.native
@@ -77,6 +107,9 @@ object cypressStrings {
   
   @js.native
   sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait PartialDeep extends js.Object
   
   @js.native
   sealed trait Progress extends Reporter
@@ -154,6 +187,9 @@ object cypressStrings {
   
   @js.native
   sealed trait article extends js.Object
+  
+  @js.native
+  sealed trait asc extends js.Object
   
   @js.native
   sealed trait ascii extends Encodings
@@ -475,6 +511,9 @@ object cypressStrings {
   
   @js.native
   sealed trait del extends js.Object
+  
+  @js.native
+  sealed trait desc extends js.Object
   
   @js.native
   sealed trait details extends js.Object
@@ -1826,6 +1865,8 @@ object cypressStrings {
   @scala.inline
   def Chromium: Chromium = "Chromium".asInstanceOf[Chromium]
   @scala.inline
+  def ConformsPredicateObject: ConformsPredicateObject = "ConformsPredicateObject".asInstanceOf[ConformsPredicateObject]
+  @scala.inline
   def DOLLARel: DOLLARel = "$el".asInstanceOf[DOLLARel]
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
@@ -1850,6 +1891,24 @@ object cypressStrings {
   @scala.inline
   def List: List = "List".asInstanceOf[List]
   @scala.inline
+  def LoDashExplicitWrapper: LoDashExplicitWrapper = "LoDashExplicitWrapper".asInstanceOf[LoDashExplicitWrapper]
+  @scala.inline
+  def LoDashFp: LoDashFp = "LoDashFp".asInstanceOf[LoDashFp]
+  @scala.inline
+  def LoDashImplicitWrapper: LoDashImplicitWrapper = "LoDashImplicitWrapper".asInstanceOf[LoDashImplicitWrapper]
+  @scala.inline
+  def LoDashStatic: LoDashStatic = "LoDashStatic".asInstanceOf[LoDashStatic]
+  @scala.inline
+  def LodashMapValues: LodashMapValues = "LodashMapValues".asInstanceOf[LodashMapValues]
+  @scala.inline
+  def LodashMapValues2x1: LodashMapValues2x1 = "LodashMapValues2x1".asInstanceOf[LodashMapValues2x1]
+  @scala.inline
+  def LodashMapValues2x2: LodashMapValues2x2 = "LodashMapValues2x2".asInstanceOf[LodashMapValues2x2]
+  @scala.inline
+  def LodashMapValues3x1: LodashMapValues3x1 = "LodashMapValues3x1".asInstanceOf[LodashMapValues3x1]
+  @scala.inline
+  def LodashMapValues6x1: LodashMapValues6x1 = "LodashMapValues6x1".asInstanceOf[LodashMapValues6x1]
+  @scala.inline
   def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
   @scala.inline
   def Min: Min = "Min".asInstanceOf[Min]
@@ -1857,6 +1916,8 @@ object cypressStrings {
   def Nyan: Nyan = "Nyan".asInstanceOf[Nyan]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def PartialDeep: PartialDeep = "PartialDeep".asInstanceOf[PartialDeep]
   @scala.inline
   def Progress: Progress = "Progress".asInstanceOf[Progress]
   @scala.inline
@@ -1907,6 +1968,8 @@ object cypressStrings {
   def array: array = "array".asInstanceOf[array]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   @scala.inline
@@ -2121,6 +2184,8 @@ object cypressStrings {
   def defaultCommandTimeout: defaultCommandTimeout = "defaultCommandTimeout".asInstanceOf[defaultCommandTimeout]
   @scala.inline
   def del: del = "del".asInstanceOf[del]
+  @scala.inline
+  def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline

@@ -1,14 +1,18 @@
 package typings.webix.webixMod.ui
 
+import typings.webix.webixMod.WebixCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.barcode")
 @js.native
-class barcode () extends baseview {
+class barcode ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_barcode: WebixCallback = js.native
   @JSName("config")
   var config_barcode: barcodeConfig = js.native
   var types: js.Array[_] = js.native

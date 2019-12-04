@@ -3,7 +3,6 @@ package typings.reactDashRouterDashDom.reactDashRouterDashDomMod
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationDescriptor
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
@@ -14,6 +13,7 @@ import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref

@@ -9,7 +9,7 @@ import typings.antdDashMobileDashRn.Anon_BorderRadiusHeight
 import typings.antdDashMobileDashRn.Anon_ColorFontSizeLineHeight
 import typings.antdDashMobileDashRn.Anon_ColorString
 import typings.antdDashMobileDashRn.Anon_FontSize
-import typings.antdDashMobileDashRn.Anon_FontSizeTextAlign
+import typings.antdDashMobileDashRn.Anon_FontSizeTextAlignNumber
 import typings.antdDashMobileDashRn.Anon_HeightLeftTop
 import typings.antdDashMobileDashRn.Anon_PaddingHorizontal
 import typings.antdDashMobileDashRn.Anon_Transform
@@ -32,7 +32,7 @@ object default extends js.Object {
   var normalText: Anon_ColorString = js.native
   var normalWrap: Anon_BackgroundColorBorderColor = js.native
   var tag: Anon_BackgroundColorBorderRadiusFlexDirection = js.native
-  var text: Anon_FontSizeTextAlign = js.native
+  var text: Anon_FontSizeTextAlignNumber = js.native
   var textSmall: Anon_FontSize = js.native
   var wrap: Anon_BorderRadiusBorderStyle = js.native
   var wrapSmall: Anon_PaddingHorizontal = js.native

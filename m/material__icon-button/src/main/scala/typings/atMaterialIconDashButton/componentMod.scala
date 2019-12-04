@@ -15,7 +15,7 @@ object componentMod extends js.Object {
   @js.native
   class MDCIconButtonToggle () extends MDCComponent[MDCIconButtonToggleFoundation, default[MDCIconButtonToggleFoundation]] {
     var on: Boolean = js.native
-    val ripple: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
+    val ripple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
     var root_ : HTMLElement = js.native
   }
   

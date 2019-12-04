@@ -1,26 +1,23 @@
 package typings.next
 
-import typings.react.reactMod.ComponentType
-import typings.std.Error
+import typings.next.distNextDashServerLibRouterRouterMod.NextRouter
+import typings.next.distNextDashServerLibUtilsMod.NextComponentType
+import typings.next.distNextDashServerLibUtilsMod.NextPageContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Component extends js.Object {
-  var Component: ComponentType[js.Object]
-  var err: js.UndefOr[Error] = js.undefined
-  var error: js.UndefOr[js.Any] = js.undefined
-  var props: js.UndefOr[js.Any] = js.undefined
+trait Anon_Component[P, R /* <: NextRouter */] extends js.Object {
+  var Component: NextComponentType[NextPageContext, _, P]
+  var router: R
 }
 
 object Anon_Component {
   @scala.inline
-  def apply(Component: ComponentType[js.Object], err: Error = null, error: js.Any = null, props: js.Any = null): Anon_Component = {
-    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
-    if (err != null) __obj.updateDynamic("err")(err.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_Component]
+  def apply[P, R /* <: NextRouter */](Component: NextComponentType[NextPageContext, _, P], router: R): Anon_Component[P, R] = {
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Component[P, R]]
   }
 }
 

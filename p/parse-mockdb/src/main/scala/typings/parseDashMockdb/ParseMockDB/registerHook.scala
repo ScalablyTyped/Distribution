@@ -13,7 +13,7 @@ object registerHook extends js.Object {
     hookType: HookType,
     hookFn: js.Function1[
       /* request */ BeforeSaveRequest, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Parse.IPromise<any> */ _
     ]
   ): Unit = js.native
 }

@@ -9,9 +9,9 @@ import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRo
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowFieldsDotTypesMod.IDetailsRowFieldsProps
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.change
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLElement
 import scala.scalajs.js

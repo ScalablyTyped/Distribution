@@ -70,7 +70,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 */
   @JSName("$remove")
   def $remove(): IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Saves all data on the FirebaseObject back to Firebase.
@@ -78,7 +78,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 */
   @JSName("$save")
   def $save(): IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change is received

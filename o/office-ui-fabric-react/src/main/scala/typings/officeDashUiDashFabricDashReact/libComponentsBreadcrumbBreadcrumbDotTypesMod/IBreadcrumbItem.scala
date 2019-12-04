@@ -7,8 +7,8 @@ import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactSt
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.h4
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.h5
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.h6
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

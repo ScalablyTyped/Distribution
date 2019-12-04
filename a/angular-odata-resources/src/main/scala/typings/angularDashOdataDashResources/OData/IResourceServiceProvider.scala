@@ -1,19 +1,19 @@
 package typings.angularDashOdataDashResources.OData
 
-import typings.angular.angularMod.IServiceProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // IResourceServiceProvider used to configure global settings
-trait IResourceServiceProvider extends IServiceProvider {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ trait IResourceServiceProvider extends js.Object {
   var defaults: IResourceOptions
 }
 
 object IResourceServiceProvider {
   @scala.inline
-  def apply($get: js.Any, defaults: IResourceOptions): IResourceServiceProvider = {
-    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
+  def apply(defaults: IResourceOptions): IResourceServiceProvider = {
+    val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IResourceServiceProvider]
   }

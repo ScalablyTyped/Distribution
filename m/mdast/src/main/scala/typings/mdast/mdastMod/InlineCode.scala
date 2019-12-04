@@ -16,7 +16,7 @@ trait InlineCode
 
 object InlineCode {
   @scala.inline
-  def apply(`type`: inlineCode, value: String, data: Data = null, position: Position = null): InlineCode = {
+  def apply(`type`: inlineCode, value: js.Any, data: Data = null, position: Position = null): InlineCode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

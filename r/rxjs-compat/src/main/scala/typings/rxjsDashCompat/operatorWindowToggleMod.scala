@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorWindowToggleMod extends js.Object {
   def windowToggle[T, O](
-    `this`: Observable[T],
-    openings: Observable[O],
-    closingSelector: js.Function1[/* openValue */ O, Observable[_]]
-  ): Observable[Observable[T]] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<O> */ js.Any,
+    closingSelector: js.Function1[
+      /* openValue */ O, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
+    ]
+  ): js.Any = js.native
 }
 

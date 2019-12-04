@@ -5,10 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashAnimatableMod {
+  import typings.reactDashNative.reactDashNativeMod.ImageProperties
   import typings.reactDashNative.reactDashNativeMod.ImageStyle
+  import typings.reactDashNative.reactDashNativeMod.TextProperties
   import typings.reactDashNative.reactDashNativeMod.TextStyle
+  import typings.reactDashNative.reactDashNativeMod.ViewProperties
   import typings.reactDashNative.reactDashNativeMod.ViewStyle
+  import typings.std.Partial
 
+  type AnimatableAnimationMethods = Partial[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in react-native-animatable.react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}
+    */ typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.AnimatableAnimationMethods with js.Any
+  ]
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.linear
     - typings.reactDashNativeDashAnimatable.reactDashNativeDashAnimatableStrings.ease
@@ -44,16 +53,7 @@ package object reactDashNativeDashAnimatableMod {
   type Easing = _Easing | EasingFunction
   type EasingFunction = js.Function1[/* t */ Double, Double]
   type GetPropertyType[B, K /* <: String */] = /* import warning: importer.ImportType#apply Failed type conversion: B[K] */ js.Any
-  type Image = AnimatableComponent[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any, 
-    ImageStyle
-  ]
-  type Text = AnimatableComponent[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any, 
-    TextStyle
-  ]
-  type View = AnimatableComponent[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any, 
-    ViewStyle
-  ]
+  type Image = AnimatableComponent[ImageProperties, ImageStyle]
+  type Text = AnimatableComponent[TextProperties, TextStyle]
+  type View = AnimatableComponent[ViewProperties, ViewStyle]
 }

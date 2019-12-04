@@ -24,8 +24,6 @@ import scala.scalajs.js.annotation._
 
 trait AjaxSettings
   extends typings.jquery.JQuery.AjaxSettings[js.Any] {
-  @JSName("cache")
-  var cache_AjaxSettings: js.UndefOr[js.Any] = js.undefined
   var dataMap: js.UndefOr[js.Object | (js.Function1[/* data */ js.Any, js.Object])] = js.undefined
   var decoder: js.UndefOr[js.Any] = js.undefined
 }
@@ -36,7 +34,7 @@ object AjaxSettings {
     accepts: PlainObject[String] = null,
     async: js.UndefOr[Boolean] = js.undefined,
     beforeSend: js.ThisFunction2[js.Any, /* jqXHR */ jqXHR[_], AjaxSettings, `false` | Unit] = null,
-    cache: js.Any = null,
+    cache: js.UndefOr[Boolean] = js.undefined,
     complete: TypeOrArray[CompleteCallback[js.Any]] = null,
     contentType: String | `false` = null,
     contents: PlainObject[RegExp] = null,
@@ -74,7 +72,7 @@ object AjaxSettings {
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])

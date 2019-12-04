@@ -8,7 +8,6 @@ import typings.angularDashMeteor.Anon_EmailPassword
 import typings.angularDashMeteor.Anon_Height
 import typings.angularDashMeteor.Anon_Id
 import typings.angularDashMeteor.Anon_Username
-import typings.meteor.Meteor.LoginWithExternalServiceOptions
 import typings.meteor.Meteor.SubscriptionHandle
 import typings.meteor.Meteor.User
 import typings.meteor.Mongo.Collection
@@ -23,18 +22,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IMeteorService extends js.Object {
-  @JSName("loginWithFacebook")
-  var loginWithFacebook_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithGithub")
-  var loginWithGithub_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithGoogle")
-  var loginWithGoogle_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithMeetup")
-  var loginWithMeetup_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithTwitter")
-  var loginWithTwitter_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithWeibo")
-  var loginWithWeibo_Original: ILoginWithExternalService = js.native
+  var loginWithFacebook: ILoginWithExternalService = js.native
+  var loginWithGithub: ILoginWithExternalService = js.native
+  var loginWithGoogle: ILoginWithExternalService = js.native
+  var loginWithMeetup: ILoginWithExternalService = js.native
+  var loginWithTwitter: ILoginWithExternalService = js.native
+  var loginWithWeibo: ILoginWithExternalService = js.native
   // <- User Authentication END
   // $meteorUtils BEGIN ->
   /**
@@ -121,10 +114,6 @@ trait IMeteorService extends js.Object {
     */
   def getPicture(): IPromise[_] = js.native
   def getPicture(options: Anon_Height): IPromise[_] = js.native
-  def loginWithFacebook(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
-  def loginWithGithub(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
-  def loginWithGoogle(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
-  def loginWithMeetup(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
   /**
     * Log the user in with a password.
     *
@@ -135,8 +124,6 @@ trait IMeteorService extends js.Object {
   def loginWithPassword(user: Anon_Email, password: String): IPromise[Unit] = js.native
   def loginWithPassword(user: Anon_Id, password: String): IPromise[Unit] = js.native
   def loginWithPassword(user: Anon_Username, password: String): IPromise[Unit] = js.native
-  def loginWithTwitter(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
-  def loginWithWeibo(options: LoginWithExternalServiceOptions): IPromise[Unit] = js.native
   /**
     * Log the user out.
     *

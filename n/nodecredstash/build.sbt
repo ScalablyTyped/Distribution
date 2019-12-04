@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodecredstash"
-version := "2.0-dt-20180327Z-473bee"
+version := "2.0-dt-20180327Z-fa9032"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

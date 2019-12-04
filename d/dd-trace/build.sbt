@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.15.5-bd8329"
+version := "0.15.5-b67870"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
-  "org.scalablytyped" %%% "opentracing" % "0.14.4-8b668a",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "opentracing" % "0.14.4-b7d1f6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

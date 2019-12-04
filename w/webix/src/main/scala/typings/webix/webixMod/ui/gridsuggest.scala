@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.gridsuggest")
 @js.native
-class gridsuggest () extends baseview {
+class gridsuggest ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_gridsuggest: WebixCallback = js.native
   @JSName("config")
   var config_gridsuggest: gridsuggestConfig = js.native
   @JSName("$enterKey")
@@ -27,7 +30,7 @@ class gridsuggest () extends baseview {
   def getItemId(text: String): String | Double = js.native
   def getItemText(id: String): String = js.native
   def getItemText(id: Double): String = js.native
-  def getList(): baseview = js.native
+  def getList(): typings.webix.webix.ui.baseview = js.native
   def getMasterValue(): js.Any = js.native
   def getSuggestion(): String = js.native
   def getValue(): String | Double = js.native

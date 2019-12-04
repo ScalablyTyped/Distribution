@@ -11,19 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class View[TModel /* <: Model */] ()
   extends typings.backbone.backboneMod.View[TModel] {
-  @JSName("afterDispose")
-  var afterDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var app: App = js.native
   var appEvents: js.UndefOr[StringMap] = js.native
-  @JSName("beforeDispose")
-  var beforeDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var children: js.Array[View[TModel]] = js.native
   var dataEvents: js.UndefOr[StringMap] = js.native
   var defaultOptions: js.UndefOr[DefaultOptions] = js.native
-  @JSName("dispose")
-  var dispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var documentTitle: String = js.native
   var parent: View[TModel] = js.native
   var template: js.Any = js.native

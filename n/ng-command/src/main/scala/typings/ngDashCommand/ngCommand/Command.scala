@@ -1,7 +1,5 @@
 package typings.ngDashCommand.ngCommand
 
-import typings.angular.angularMod.IPromise
-import typings.angular.angularMod.IScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +7,19 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ngCommand.Command")
 @js.native
 class Command protected () extends ICommand {
-  def this($scope: IScope, execute: js.Function0[IPromise[_]]) = this()
-  def this($scope: IScope, execute: js.Function0[IPromise[_]], canExecute: js.Function0[Boolean]) = this()
+  def this(
+    $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
+    execute: js.Function0[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ _
+      ]
+  ) = this()
+  def this(
+    $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
+    execute: js.Function0[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ _
+      ],
+    canExecute: js.Function0[Boolean]
+  ) = this()
   /**
   		* Determines whether the command can execute or not.
   		*/
@@ -25,7 +34,7 @@ class Command protected () extends ICommand {
   		* Executes the command function.
   		*/
   /* CompleteClass */
-  override def execute(): IPromise[_] = js.native
+  override def execute(): js.Any = js.native
 }
 
 /* static members */

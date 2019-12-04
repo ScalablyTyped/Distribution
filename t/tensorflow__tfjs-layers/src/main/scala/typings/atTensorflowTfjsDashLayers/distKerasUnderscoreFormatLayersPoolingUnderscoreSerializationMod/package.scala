@@ -1,0 +1,29 @@
+package typings.atTensorflowTfjsDashLayers
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object distKerasUnderscoreFormatLayersPoolingUnderscoreSerializationMod {
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.AveragePooling1D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.AveragePooling2D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.GlobalAveragePooling1D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.GlobalAveragePooling2D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.GlobalMaxPooling1D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.GlobalMaxPooling2D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.MaxPooling1D
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.MaxPooling2D
+  import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTopologyUnderscoreConfigMod.BaseLayerSerialization
+  import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTopologyUnderscoreConfigMod.LayerConfig
+
+  type AveragePooling1DLayerSerialization = BaseLayerSerialization[AveragePooling1D, Pooling1DLayerConfig]
+  type AveragePooling2DLayerSerialization = BaseLayerSerialization[AveragePooling2D, Pooling2DLayerConfig]
+  type GlobalAveragePooling1DLayerSerialization = BaseLayerSerialization[GlobalAveragePooling1D, LayerConfig]
+  type GlobalAveragePooling2DLayerSerialization = BaseLayerSerialization[GlobalAveragePooling2D, GlobalPooling2DLayerConfig]
+  type GlobalMaxPooling1DLayerSerialization = BaseLayerSerialization[GlobalMaxPooling1D, LayerConfig]
+  type GlobalMaxPooling2DLayerSerialization = BaseLayerSerialization[GlobalMaxPooling2D, GlobalPooling2DLayerConfig]
+  type MaxPooling1DLayerSerialization = BaseLayerSerialization[MaxPooling1D, Pooling1DLayerConfig]
+  type MaxPooling2DLayerSerialization = BaseLayerSerialization[MaxPooling2D, Pooling2DLayerConfig]
+  type PoolingLayerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/pooling_serialization.PoolingLayerSerialization['class_name'] */ js.Any
+  type PoolingLayerSerialization = MaxPooling1DLayerSerialization | AveragePooling1DLayerSerialization | MaxPooling2DLayerSerialization | AveragePooling2DLayerSerialization | GlobalAveragePooling1DLayerSerialization | GlobalMaxPooling1DLayerSerialization | GlobalAveragePooling2DLayerSerialization | GlobalMaxPooling2DLayerSerialization
+}

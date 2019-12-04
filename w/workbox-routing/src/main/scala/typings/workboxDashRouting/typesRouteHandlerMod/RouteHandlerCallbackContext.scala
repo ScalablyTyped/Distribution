@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteHandlerCallbackContext extends js.Object {
   var event: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ] = js.undefined
   var params: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
   var request: js.UndefOr[Request] = js.undefined
@@ -20,7 +20,7 @@ object RouteHandlerCallbackContext {
   @scala.inline
   def apply(
     url: URL,
-    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null,
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null,
     params: js.Array[String] | (Record[String, String]) = null,
     request: Request = null
   ): RouteHandlerCallbackContext = {

@@ -3,6 +3,8 @@ package typings.atStorybookClientDashApi
 import typings.atStorybookAddons.Anon_Current
 import typings.atStorybookAddons.distHooksMod.Decorator
 import typings.atStorybookAddons.distHooksMod.EventMap
+import typings.atStorybookAddons.distTypesMod.StoryContext
+import typings.atStorybookAddons.distTypesMod.StoryGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,18 +17,11 @@ object distHooksMod extends js.Object {
     extends typings.atStorybookAddons.atStorybookAddonsMod.HooksContext
   
   def applyHooks(
-    applyDecorators: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
-      /* decorators */ js.Array[Decorator], 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ _
-    ]
+    applyDecorators: js.Function2[/* getStory */ StoryGetter, /* decorators */ js.Array[Decorator], StoryGetter]
   ): js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryGetter */ /* getStory */ js.Any, 
+    /* getStory */ StoryGetter, 
     /* decorators */ js.Array[Decorator], 
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryContext */ /* context */ _, 
-      _
-    ]
+    js.Function1[/* context */ StoryContext, _]
   ] = js.native
   def useCallback[T](callback: T): T = js.native
   def useCallback[T](callback: T, deps: js.Array[_]): T = js.native
@@ -47,6 +42,6 @@ object distHooksMod extends js.Object {
   def useRef[T](initialValue: T): Anon_Current[T] = js.native
   def useState[S](initialState: S): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, js.Function1[/* update */ (js.Function1[/* prevState */ S, S]) | S, Unit]] = js.native
-  def useStoryContext(): js.Any = js.native
+  def useStoryContext(): StoryContext = js.native
 }
 

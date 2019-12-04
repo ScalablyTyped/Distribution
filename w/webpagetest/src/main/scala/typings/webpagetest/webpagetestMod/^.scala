@@ -1,6 +1,5 @@
 package typings.webpagetest.webpagetestMod
 
-import typings.webpagetest.TestScript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,7 +19,7 @@ object distEs2015EventHandlerPointEventHandlerMod extends js.Object {
     /* protected */ def createEventObject(dom: HTMLElement, event: IEventData, eventName: EEventName): DomEvent = js.native
     /* protected */ def handleMove(handler: js.Function1[/* event */ MouseEvent | TouchEvent, Unit]): js.Function2[
         /* event */ MouseEvent | TouchEvent, 
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<any> */ /* eventData */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ /* eventData */ js.Any, 
         Unit
       ] = js.native
     def on(

@@ -2,6 +2,7 @@ package typings.strophe.stropheMod.Strophe
 
 import typings.std.Element
 import typings.strophe.Anon_MatchBare
+import typings.strophe.mucMod.stropheMod.Strophe.MUC.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,6 +86,7 @@ class Connection protected () extends js.Object {
   var domain: String = js.native
   var jid: String = js.native
   var maxRetries: Double = js.native
+  var muc: Plugin = js.native
   var pass: String = js.native
   var servtype: String = js.native
   /** Function: addHandler

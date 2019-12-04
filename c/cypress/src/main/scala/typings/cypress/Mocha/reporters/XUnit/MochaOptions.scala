@@ -7,10 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MochaOptions
-  extends typings.cypress.Mocha.MochaOptions {
-  @JSName("reporterOptions")
-  var reporterOptions_MochaOptions: js.UndefOr[ReporterOptions] = js.undefined
-}
+  extends typings.cypress.Mocha.MochaOptions
 
 object MochaOptions {
   @scala.inline
@@ -31,7 +28,7 @@ object MochaOptions {
     inlineDiffs: js.UndefOr[Boolean] = js.undefined,
     noHighlighting: js.UndefOr[Boolean] = js.undefined,
     reporter: String | typings.cypress.Mocha.ReporterConstructor = null,
-    reporterOptions: ReporterOptions = null,
+    reporterOptions: js.Any = null,
     retries: Int | Double = null,
     slow: Int | Double = null,
     timeout: Int | Double = null,

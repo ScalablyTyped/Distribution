@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.slateStrings.`inline`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,6 +37,6 @@ object Inline extends js.Object {
   def fromJSON(properties: InlineJSON): Inline = js.native
   def fromJSON(properties: InlineProperties): Inline = js.native
   def isInline(maybeInline: js.Any): /* is slate.slate.Inline */ Boolean = js.native
-  def isInlineList(maybeInlineList: js.Any): /* is immutable.immutable.List<slate.slate.Inline> */ Boolean = js.native
+  def isInlineList(maybeInlineList: js.Any): /* is immutable.Immutable.List<slate.slate.Inline> */ Boolean = js.native
 }
 

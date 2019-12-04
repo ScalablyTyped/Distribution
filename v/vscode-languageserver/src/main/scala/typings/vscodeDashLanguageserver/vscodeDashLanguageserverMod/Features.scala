@@ -23,7 +23,7 @@ object Features {
     client: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient with PClient] = null,
     console: /* Base */ Instantiable0[RemoteConsole] => Instantiable0[RemoteConsole with PConsole] = null,
     telemetry: /* Base */ Instantiable0[Telemetry] => Instantiable0[Telemetry with PTelemetry] = null,
-    tracer: /* Base */ Instantiable0[Tracer] => Instantiable0[Tracer with PTracer] = null,
+    tracer: /* Base */ Instantiable0[typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer] => Instantiable0[typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer with PTracer] = null,
     window: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow with PWindow] = null,
     workspace: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace with PWorkspace] = null
   ): Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = {

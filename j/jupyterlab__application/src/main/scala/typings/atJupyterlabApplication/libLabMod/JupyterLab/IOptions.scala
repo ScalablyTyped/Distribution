@@ -3,7 +3,7 @@ package typings.atJupyterlabApplication.libLabMod.JupyterLab
 import typings.atJupyterlabApplication.libFrontendMod.JupyterFrontEnd.IPaths
 import typings.atJupyterlabApplication.libShellMod.LabShell
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.CommandLinker
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabServices.atJupyterlabServicesMod.ServiceManager
 import typings.atPhosphorWidgets.libMenuMod.Menu.IRenderer
 import typings.std.Partial

@@ -1,5 +1,6 @@
 package typings.atobDashLite
 
+import typings.atobDashLite.atobDashLiteMod.DecodedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object atobDashLiteMod extends js.Object {
   def apply(encodedData: String): DecodedData = js.native
+  type DecodedData = String
 }
 

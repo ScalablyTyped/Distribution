@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait TestSequencer extends js.Object {
   var _cache: js.Any
-  def _getCache(test: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ js.Any): Cache
+  def _getCache(
+    test: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ js.Any
+  ): Cache
   def _getCachePath(context: Context): String
   def cacheResults(
     tests: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ],
     results: AggregatedResult
   ): Unit
@@ -36,10 +38,10 @@ trait TestSequencer extends js.Object {
     */
   def sort(
     tests: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ]
   ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
   ]
 }
 
@@ -47,15 +49,15 @@ object TestSequencer {
   @scala.inline
   def apply(
     _cache: js.Any,
-    _getCache: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ js.Any => Cache,
+    _getCache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ js.Any => Cache,
     _getCachePath: Context => String,
     cacheResults: (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ], AggregatedResult) => Unit,
     sort: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ] => js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ]
   ): TestSequencer = {
     val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), cacheResults = js.Any.fromFunction2(cacheResults), sort = js.Any.fromFunction1(sort))

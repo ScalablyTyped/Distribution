@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionicons"
-version := "4.6.3-7523bc"
+version := "4.6.3-80b252"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

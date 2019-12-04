@@ -15,20 +15,20 @@ import scala.scalajs.js.annotation._
 object libVanillaMod extends js.Object {
   @js.native
   abstract class BaseLocationServices protected ()
-    extends typings.atUirouterCore.libVanillaBaseLocationServiceMod.BaseLocationServices {
+    extends typings.atUirouterCore.libVanillaIndexMod.BaseLocationServices {
     def this(router: UIRouter, fireAfterUpdate: Boolean) = this()
   }
   
   @js.native
   class BrowserLocationConfig ()
-    extends typings.atUirouterCore.libVanillaBrowserLocationConfigMod.BrowserLocationConfig {
+    extends typings.atUirouterCore.libVanillaIndexMod.BrowserLocationConfig {
     def this(router: js.Any) = this()
     def this(router: js.Any, _isHtml5: Boolean) = this()
   }
   
   @js.native
   class HashLocationService protected ()
-    extends typings.atUirouterCore.libVanillaHashLocationServiceMod.HashLocationService {
+    extends typings.atUirouterCore.libVanillaIndexMod.HashLocationService {
     def this(router: UIRouter) = this()
   }
   
@@ -38,13 +38,13 @@ object libVanillaMod extends js.Object {
   
   @js.native
   class MemoryLocationService protected ()
-    extends typings.atUirouterCore.libVanillaMemoryLocationServiceMod.MemoryLocationService {
+    extends typings.atUirouterCore.libVanillaIndexMod.MemoryLocationService {
     def this(router: UIRouter) = this()
   }
   
   @js.native
   class PushStateLocationService protected ()
-    extends typings.atUirouterCore.libVanillaPushStateLocationServiceMod.PushStateLocationService {
+    extends typings.atUirouterCore.libVanillaIndexMod.PushStateLocationService {
     def this(router: UIRouter) = this()
   }
   

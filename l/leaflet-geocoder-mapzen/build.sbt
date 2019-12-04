@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet-geocoder-mapzen"
-version := "1.6-dt-20180214Z-44bf5e"
+version := "1.6-dt-20180214Z-ce18a3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

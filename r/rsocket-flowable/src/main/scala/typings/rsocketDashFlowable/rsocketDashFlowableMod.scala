@@ -19,9 +19,9 @@ object rsocketDashFlowableMod extends js.Object {
   @js.native
   class FlowableProcessor[T, R] protected ()
     extends typings.rsocketDashFlowable.flowableProcessorMod.default[T, R] {
-    def this(source: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any) = this()
+    def this(source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any) = this()
     def this(
-      source: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any,
+      source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> */ js.Any,
       fn: js.Function1[/* a */ T, R]
     ) = this()
   }

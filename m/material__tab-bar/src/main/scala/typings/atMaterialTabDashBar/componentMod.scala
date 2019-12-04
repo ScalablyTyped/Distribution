@@ -24,10 +24,10 @@ object componentMod extends js.Object {
     def activateTab(index: Double): Unit = js.native
     def initialize(): Unit = js.native
     def initialize(
-      tabFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCTabFactory */ js.Any
+      tabFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabFactory */ js.Any
     ): Unit = js.native
     def initialize(
-      tabFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCTabFactory */ js.Any,
+      tabFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabFactory */ js.Any,
       tabScrollerFactory: MDCTabScrollerFactory
     ): Unit = js.native
     /**

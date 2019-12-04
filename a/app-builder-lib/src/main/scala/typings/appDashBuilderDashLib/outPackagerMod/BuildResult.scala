@@ -1,8 +1,8 @@
 package typings.appDashBuilderDashLib.outPackagerMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Target
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
-import typings.appDashBuilderDashLib.outMod.Platform
-import typings.appDashBuilderDashLib.outMod.Target
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

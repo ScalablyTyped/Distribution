@@ -2,7 +2,6 @@ package typings.ts3DashNodejsDashLibrary
 
 import typings.node.Buffer
 import typings.ts3DashNodejsDashLibrary.libNodeAbstractMod.Abstract
-import typings.ts3DashNodejsDashLibrary.libTeamSpeakMod.TeamSpeak
 import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.ClientType
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientDBEdit
 import typings.ts3DashNodejsDashLibrary.libTypesPropertyTypesMod.ClientEdit
@@ -13,6 +12,7 @@ import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ClientList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.CustomInfo
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.PermList
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryMod.TeamSpeak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

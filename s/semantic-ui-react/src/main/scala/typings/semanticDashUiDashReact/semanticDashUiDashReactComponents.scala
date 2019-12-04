@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
-  def Accordion: ComponentType[AccordionProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps]]
+  def Accordion: ComponentType[AccordionProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesAccordionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps]]
   @scala.inline
   def AccordionAccordion: ComponentType[AccordionAccordionProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionAccordionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[AccordionAccordionProps]]
   @scala.inline

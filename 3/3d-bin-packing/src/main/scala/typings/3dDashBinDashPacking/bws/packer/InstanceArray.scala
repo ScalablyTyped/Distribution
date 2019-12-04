@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityArray<Instance> * / any */ @JSGlobal("bws.packer.InstanceArray")
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArray<Instance> * / any */ @JSGlobal("bws.packer.InstanceArray")
 @js.native
 /**
   * Default Constructor.
@@ -28,7 +28,7 @@ class InstanceArray () extends js.Object {
     * @inheritdoc
     */
   def createChild(
-    xml: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify library.XML */ js.Any
+    xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
   ): Instance = js.native
 }
 

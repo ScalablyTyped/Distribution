@@ -1,5 +1,6 @@
 package typings.appDashBuilderDashLib
 
+import typings.appDashBuilderDashLib.outCodeSignMacCodeSignMod.CertType
 import typings.appDashBuilderDashLib.outCoreMod.CompressionLevel
 import typings.appDashBuilderDashLib.outElectronElectronFrameworkMod.ElectronPlatformName
 import typings.appDashBuilderDashLib.outOptionsMacOptionsMod.MacOsTargetName
@@ -13,16 +14,61 @@ import scala.scalajs.js.annotation._
 
 object appDashBuilderDashLibStrings {
   @js.native
+  sealed trait `/opt` extends js.Object
+  
+  @js.native
+  sealed trait `3rd Party Mac Developer Application` extends CertType
+  
+  @js.native
+  sealed trait `3rd Party Mac Developer Installer` extends CertType
+  
+  @js.native
   sealed trait `7z` extends MacOsTargetName
+  
+  @js.native
+  sealed trait Bintray extends js.Object
+  
+  @js.native
+  sealed trait Copy extends js.Object
+  
+  @js.native
+  sealed trait DEFAULT extends js.Object
+  
+  @js.native
+  sealed trait DOTblockmap extends js.Object
+  
+  @js.native
+  sealed trait Deflate extends js.Object
+  
+  @js.native
+  sealed trait `Developer ID Application` extends CertType
+  
+  @js.native
+  sealed trait `Developer ID Installer` extends CertType
   
   @js.native
   sealed trait Editor extends js.Object
   
   @js.native
+  sealed trait LZMA extends js.Object
+  
+  @js.native
+  sealed trait `Mac Developer` extends CertType
+  
+  @js.native
   sealed trait None extends js.Object
   
   @js.native
+  sealed trait `Please specify author _quoteemail_quote in the application packageDOTjsonBACKSLASHnBACKSLASHnSee https://docsDOTnpmjsDOTcom/files/packageDOTjson#people-fields-author-contributorsBACKSLASHnBACKSLASHnIt is required to set Linux DOTdeb package maintainerDOT Or you can set maintainer in the custom linux optionsDOTBACKSLASHn(see https://wwwDOTelectronDOTbuild/configuration/linux)DOTBACKSLASHn` extends js.Object
+  
+  @js.native
+  sealed trait S3 extends js.Object
+  
+  @js.native
   sealed trait Shell extends js.Object
+  
+  @js.native
+  sealed trait Spaces extends js.Object
   
   @js.native
   sealed trait UDBZ extends js.Object
@@ -55,6 +101,9 @@ object appDashBuilderDashLibStrings {
   sealed trait asInvoker extends RequestedExecutionLevel
   
   @js.native
+  sealed trait base64 extends js.Object
+  
+  @js.native
   sealed trait bottom extends BackgroundAlignment
   
   @js.native
@@ -73,10 +122,13 @@ object appDashBuilderDashLibStrings {
   sealed trait classic extends js.Object
   
   @js.native
+  sealed trait `comDOTproton-nativeDOT` extends js.Object
+  
+  @js.native
   sealed trait darwin extends ElectronPlatformName
   
   @js.native
-  sealed trait default extends MacOsTargetName
+  sealed trait default_ extends MacOsTargetName
   
   @js.native
   sealed trait devel extends js.Object
@@ -97,10 +149,16 @@ object appDashBuilderDashLibStrings {
   sealed trait dmg extends MacOsTargetName
   
   @js.native
+  sealed trait elementary extends js.Object
+  
+  @js.native
   sealed trait file extends js.Object
   
   @js.native
   sealed trait gz extends js.Object
+  
+  @js.native
+  sealed trait hex extends js.Object
   
   @js.native
   sealed trait highest extends js.Object
@@ -150,10 +208,16 @@ object appDashBuilderDashLibStrings {
   sealed trait proportional extends BackgroundScaling
   
   @js.native
+  sealed trait proton extends js.Object
+  
+  @js.native
   sealed trait requireAdministrator extends RequestedExecutionLevel
   
   @js.native
   sealed trait right extends BackgroundAlignment
+  
+  @js.native
+  sealed trait running extends js.Object
   
   @js.native
   sealed trait set extends IconFormat
@@ -171,10 +235,16 @@ object appDashBuilderDashLibStrings {
   sealed trait stable extends js.Object
   
   @js.native
+  sealed trait stopped extends js.Object
+  
+  @js.native
   sealed trait store extends CompressionLevel
   
   @js.native
   sealed trait strict extends js.Object
+  
+  @js.native
+  sealed trait suspended extends js.Object
   
   @js.native
   sealed trait tarDOTbz2 extends MacOsTargetName
@@ -201,6 +271,9 @@ object appDashBuilderDashLibStrings {
   sealed trait topright extends BackgroundAlignment
   
   @js.native
+  sealed trait ubuntu extends js.Object
+  
+  @js.native
   sealed trait update extends js.Object
   
   @js.native
@@ -208,6 +281,9 @@ object appDashBuilderDashLibStrings {
   
   @js.native
   sealed trait user extends js.Object
+  
+  @js.native
+  sealed trait `win-10` extends js.Object
   
   @js.native
   sealed trait win32 extends ElectronPlatformName
@@ -219,13 +295,43 @@ object appDashBuilderDashLibStrings {
   sealed trait zip extends MacOsTargetName
   
   @scala.inline
+  def `/opt`: `/opt` = "/opt".asInstanceOf[`/opt`]
+  @scala.inline
+  def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = "3rd Party Mac Developer Application".asInstanceOf[`3rd Party Mac Developer Application`]
+  @scala.inline
+  def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = "3rd Party Mac Developer Installer".asInstanceOf[`3rd Party Mac Developer Installer`]
+  @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]
+  @scala.inline
+  def Bintray: Bintray = "Bintray".asInstanceOf[Bintray]
+  @scala.inline
+  def Copy: Copy = "Copy".asInstanceOf[Copy]
+  @scala.inline
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  @scala.inline
+  def DOTblockmap: DOTblockmap = ".blockmap".asInstanceOf[DOTblockmap]
+  @scala.inline
+  def Deflate: Deflate = "Deflate".asInstanceOf[Deflate]
+  @scala.inline
+  def `Developer ID Application`: `Developer ID Application` = "Developer ID Application".asInstanceOf[`Developer ID Application`]
+  @scala.inline
+  def `Developer ID Installer`: `Developer ID Installer` = "Developer ID Installer".asInstanceOf[`Developer ID Installer`]
   @scala.inline
   def Editor: Editor = "Editor".asInstanceOf[Editor]
   @scala.inline
+  def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
+  @scala.inline
+  def `Mac Developer`: `Mac Developer` = "Mac Developer".asInstanceOf[`Mac Developer`]
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
+  def `Please specify author _quoteemail_quote in the application packageDOTjsonBACKSLASHnBACKSLASHnSee https://docsDOTnpmjsDOTcom/files/packageDOTjson#people-fields-author-contributorsBACKSLASHnBACKSLASHnIt is required to set Linux DOTdeb package maintainerDOT Or you can set maintainer in the custom linux optionsDOTBACKSLASHn(see https://wwwDOTelectronDOTbuild/configuration/linux)DOTBACKSLASHn`: `Please specify author _quoteemail_quote in the application packageDOTjsonBACKSLASHnBACKSLASHnSee https://docsDOTnpmjsDOTcom/files/packageDOTjson#people-fields-author-contributorsBACKSLASHnBACKSLASHnIt is required to set Linux DOTdeb package maintainerDOT Or you can set maintainer in the custom linux optionsDOTBACKSLASHn(see https://wwwDOTelectronDOTbuild/configuration/linux)DOTBACKSLASHn` = "Please specify author 'email' in the application package.json\n\nSee https://docs.npmjs.com/files/package.json#people-fields-author-contributors\n\nIt is required to set Linux .deb package maintainer. Or you can set maintainer in the custom linux options.\n(see https://www.electron.build/configuration/linux).\n".asInstanceOf[`Please specify author _quoteemail_quote in the application packageDOTjsonBACKSLASHnBACKSLASHnSee https://docsDOTnpmjsDOTcom/files/packageDOTjson#people-fields-author-contributorsBACKSLASHnBACKSLASHnIt is required to set Linux DOTdeb package maintainerDOT Or you can set maintainer in the custom linux optionsDOTBACKSLASHn(see https://wwwDOTelectronDOTbuild/configuration/linux)DOTBACKSLASHn`]
+  @scala.inline
+  def S3: S3 = "S3".asInstanceOf[S3]
+  @scala.inline
   def Shell: Shell = "Shell".asInstanceOf[Shell]
+  @scala.inline
+  def Spaces: Spaces = "Spaces".asInstanceOf[Spaces]
   @scala.inline
   def UDBZ: UDBZ = "UDBZ".asInstanceOf[UDBZ]
   @scala.inline
@@ -247,6 +353,8 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
@@ -259,9 +367,11 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def classic: classic = "classic".asInstanceOf[classic]
   @scala.inline
+  def `comDOTproton-nativeDOT`: `comDOTproton-nativeDOT` = "com.proton-native.".asInstanceOf[`comDOTproton-nativeDOT`]
+  @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  def default_ : default_ = "default".asInstanceOf[default_]
   @scala.inline
   def devel: devel = "devel".asInstanceOf[devel]
   @scala.inline
@@ -275,9 +385,13 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def dmg: dmg = "dmg".asInstanceOf[dmg]
   @scala.inline
+  def elementary: elementary = "elementary".asInstanceOf[elementary]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
   def gz: gz = "gz".asInstanceOf[gz]
+  @scala.inline
+  def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
   def highest: highest = "highest".asInstanceOf[highest]
   @scala.inline
@@ -309,9 +423,13 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def proportional: proportional = "proportional".asInstanceOf[proportional]
   @scala.inline
+  def proton: proton = "proton".asInstanceOf[proton]
+  @scala.inline
   def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def running: running = "running".asInstanceOf[running]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
@@ -323,9 +441,13 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def stable: stable = "stable".asInstanceOf[stable]
   @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
+  @scala.inline
   def store: store = "store".asInstanceOf[store]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
+  def suspended: suspended = "suspended".asInstanceOf[suspended]
   @scala.inline
   def tarDOTbz2: tarDOTbz2 = "tar.bz2".asInstanceOf[tarDOTbz2]
   @scala.inline
@@ -343,11 +465,15 @@ object appDashBuilderDashLibStrings {
   @scala.inline
   def topright: topright = "topright".asInstanceOf[topright]
   @scala.inline
+  def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
+  @scala.inline
+  def `win-10`: `win-10` = "win-10".asInstanceOf[`win-10`]
   @scala.inline
   def win32: win32 = "win32".asInstanceOf[win32]
   @scala.inline

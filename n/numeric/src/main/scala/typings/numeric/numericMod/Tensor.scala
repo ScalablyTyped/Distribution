@@ -1,7 +1,6 @@
 package typings.numeric.numericMod
 
 import typings.numeric.Anon_E
-import typings.numeric.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,8 +13,6 @@ class Strategy protected ()
   def this(verify: VerifyFunction) = this()
   def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: StrategyOptions, verify: VerifyFunction) = this()
-  @JSName("name")
-  var name_Strategy: String = js.native
   def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }

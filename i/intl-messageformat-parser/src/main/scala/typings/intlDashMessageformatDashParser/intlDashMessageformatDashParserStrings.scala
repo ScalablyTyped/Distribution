@@ -1,6 +1,6 @@
 package typings.intlDashMessageformatDashParser
 
-import typings.intlDashMessageformatDashParser.distTypesMod._ValidPluralRule
+import typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,6 @@ object intlDashMessageformatDashParserStrings {
   @js.native
   sealed trait few
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
@@ -42,13 +41,11 @@ object intlDashMessageformatDashParserStrings {
   @js.native
   sealed trait many
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
   sealed trait one
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
@@ -57,19 +54,16 @@ object intlDashMessageformatDashParserStrings {
   @js.native
   sealed trait other
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
   sealed trait two
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @js.native
   sealed trait zero
     extends _ValidPluralRule
-       with typings.intlDashMessageformatDashParser.libTypesMod._ValidPluralRule
        with typings.intlDashMessageformatDashParser.intlDashMessageformatDashParserMod._ValidPluralRule
   
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.wouter.preactMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.preact.srcMod.FunctionComponent
+import typings.preact.preactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -35,7 +35,7 @@ object KustoConnectionStringBuilder extends js.Object {
     connectionString: String,
     authorityId: String,
     authCallback: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserCodeInfo */ /* tokenReponse */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserCodeInfo */ /* tokenReponse */ js.Any, 
       Unit
     ]
   ): KustoConnectionStringBuilder = js.native

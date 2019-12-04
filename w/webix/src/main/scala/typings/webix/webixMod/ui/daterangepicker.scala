@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.daterangepicker")
 @js.native
-class daterangepicker () extends baseview {
+class daterangepicker ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -24,6 +25,8 @@ class daterangepicker () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_daterangepicker: WebixCallback = js.native
   @JSName("config")
   var config_daterangepicker: daterangepickerConfig = js.native
   @JSName("on_click")
@@ -61,7 +64,7 @@ class daterangepicker () extends baseview {
   def detachEvent(id: String): Unit = js.native
   def focus(): Unit = js.native
   def getInputNode(): HTMLElement = js.native
-  def getPopup(): baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def getText(): String = js.native
   def getValue(): String = js.native
   def hasEvent(name: String): Boolean = js.native

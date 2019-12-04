@@ -2,12 +2,12 @@ package typings.antd.libInputGroupMod
 
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLSpanElement
 import scala.scalajs.js

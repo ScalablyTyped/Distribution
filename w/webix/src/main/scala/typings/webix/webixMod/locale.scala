@@ -11,5 +11,6 @@ trait locale extends js.Object {
 
 @JSImport("webix", "locale")
 @js.native
-object locale extends TopLevel[locale]
+object locale
+  extends TopLevel[typings.webix.webix.locale]
 

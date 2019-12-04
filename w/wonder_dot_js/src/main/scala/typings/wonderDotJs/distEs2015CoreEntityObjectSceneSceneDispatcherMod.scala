@@ -16,7 +16,7 @@ object distEs2015CoreEntityObjectSceneSceneDispatcherMod extends js.Object {
     var currentCamera: GameObject = js.native
     var gameObjectScene: GameObjectScene = js.native
     def addChildren(
-      children: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<EntityObject> */ js.Any
+      children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EntityObject> */ js.Any
     ): js.Any = js.native
     def addChildren(children: js.Array[EntityObject]): js.Any = js.native
     def addChildren(children: EntityObject): js.Any = js.native

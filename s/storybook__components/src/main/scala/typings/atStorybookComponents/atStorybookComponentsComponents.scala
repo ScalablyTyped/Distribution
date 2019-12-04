@@ -29,6 +29,8 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   @scala.inline
   def DocsPageWrapper: ComponentType[js.Object] = typings.atStorybookComponents.distBlocksMod.DocsPageWrapper.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
+  def EmptyBlock: ComponentType[js.Any] = typings.atStorybookComponents.distBlocksEmptyBlockMod.asInstanceOf[js.Dynamic].selectDynamic("EmptyBlock").asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
+  @scala.inline
   def Field: ComponentType[FieldProps] = typings.atStorybookComponents.distFormFieldFieldMod.Field.asInstanceOf[typings.react.reactMod.ComponentType[FieldProps]]
   @scala.inline
   def FlexBar: ComponentType[FlexBarProps] = typings.atStorybookComponents.distBarBarMod.FlexBar.asInstanceOf[typings.react.reactMod.ComponentType[FlexBarProps]]
@@ -48,7 +50,13 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   @scala.inline
   def Placeholder: ComponentType[js.Object] = typings.atStorybookComponents.atStorybookComponentsMod.Placeholder.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
+  def PrettyPropType: ComponentType[PrettyPropTypeProps] = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropType.asInstanceOf[typings.react.reactMod.ComponentType[PrettyPropTypeProps]]
+  @scala.inline
+  def PrettyPropVal: ComponentType[PrettyPropValProps] = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropVal.asInstanceOf[typings.react.reactMod.ComponentType[PrettyPropValProps]]
+  @scala.inline
   def Preview: ComponentType[PreviewProps] = typings.atStorybookComponents.distBlocksMod.Preview.asInstanceOf[typings.react.reactMod.ComponentType[PreviewProps]]
+  @scala.inline
+  def PropRow: ComponentType[PropRowProps] = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRow.asInstanceOf[typings.react.reactMod.ComponentType[PropRowProps]]
   @scala.inline
   def PropsTable: ComponentType[PropsTableProps] = typings.atStorybookComponents.distBlocksMod.PropsTable.asInstanceOf[typings.react.reactMod.ComponentType[PropsTableProps]]
   @scala.inline
@@ -72,6 +80,10 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   def Tabs: ComponentType[TabsProps] = typings.atStorybookComponents.distTabsTabsMod.Tabs.asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline
   def TabsState: ComponentType[TabsStateProps] = js.constructorOf[typings.atStorybookComponents.distTabsTabsMod.TabsState].asInstanceOf[typings.react.reactMod.ComponentType[TabsStateProps]]
+  @scala.inline
+  def Toolbar: ComponentType[ToolbarProps] = typings.atStorybookComponents.distBlocksToolbarMod.Toolbar.asInstanceOf[typings.react.reactMod.ComponentType[ToolbarProps]]
+  @scala.inline
+  def Tooltip: ComponentType[TooltipProps] = typings.atStorybookComponents.distTooltipTooltipMod.Tooltip.asInstanceOf[typings.react.reactMod.ComponentType[TooltipProps]]
   @scala.inline
   def TooltipLinkList: ComponentType[TooltipLinkListProps] = typings.atStorybookComponents.atStorybookComponentsMod.TooltipLinkList.asInstanceOf[typings.react.reactMod.ComponentType[TooltipLinkListProps]]
   @scala.inline

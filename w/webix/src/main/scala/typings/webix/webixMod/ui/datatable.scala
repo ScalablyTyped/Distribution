@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.datatable")
 @js.native
-class datatable () extends baseview {
+class datatable ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   @JSName("$dragHTML")
@@ -23,6 +24,8 @@ class datatable () extends baseview {
   var $dropHTML_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_datatable: WebixCallback = js.native
   @JSName("$touch")
   var $touch_Original: WebixCallback = js.native
   @JSName("config")

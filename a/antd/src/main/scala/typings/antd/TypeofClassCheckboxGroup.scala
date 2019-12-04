@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antd.esCheckboxGroupMod.CheckboxGroupProps
-import typings.antd.esCheckboxGroupMod.default
+import typings.antd.libCheckboxGroupMod.CheckboxGroupProps
+import typings.antd.libCheckboxGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

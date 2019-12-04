@@ -22,7 +22,9 @@ package object sequelizeMod {
   import typings.sequelize.sequelizeStrings.`READ COMMITTED`
   import typings.sequelize.sequelizeStrings.`READ UNCOMMITTED`
   import typings.sequelize.sequelizeStrings.`REPEATABLE READ`
+  import typings.std.Exclude
   import typings.std.Partial
+  import typings.std.Pick
 
   type AnyFindOptions = FindOptions[js.Any]
   /**
@@ -846,6 +848,7 @@ package object sequelizeMod {
     */
   type Models = StringDictionary[Model[js.Any, js.Any, js.Any]]
   type ModelsHashInterface = StringDictionary[Model[js.Any, js.Any, js.Any]]
+  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
   type OperatorsAliases = Partial[Anon_Adjacent]
   /**
     * A hash of attributes to describe your search. See above for examples.

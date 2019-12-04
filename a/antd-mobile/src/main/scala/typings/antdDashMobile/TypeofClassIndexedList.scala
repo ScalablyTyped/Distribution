@@ -1,7 +1,7 @@
 package typings.antdDashMobile
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antdDashMobile.esListDashViewIndexedMod.default
+import typings.antdDashMobile.libListDashViewIndexedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

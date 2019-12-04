@@ -3,7 +3,7 @@ package typings.webix.webixMod
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.webix.webixMod.ui.baseview
+import typings.webix.webix.ui.baseview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

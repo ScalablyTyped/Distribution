@@ -2,17 +2,11 @@ package typings.atAntDashDesignProDashLayout.libTopNavHeaderMod
 
 import typings.antd.libMenuMod.MenuProps
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.lg
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.md
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sm
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xl
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xs
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xxl
 import typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuProps
 import typings.atAntDashDesignProDashLayout.libTypingsMod.WithFalse
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -27,7 +21,7 @@ trait TopNavHeaderProps extends SiderMenuProps {
 object TopNavHeaderProps {
   @scala.inline
   def apply(
-    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
+    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
     className: String = null,
     logo: ReactNode = null,
     menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,

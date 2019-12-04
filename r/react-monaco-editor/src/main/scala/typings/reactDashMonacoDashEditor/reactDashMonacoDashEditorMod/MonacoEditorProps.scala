@@ -1,5 +1,10 @@
 package typings.reactDashMonacoDashEditor.reactDashMonacoDashEditorMod
 
+import typings.monacoDashEditor.monacoDashEditorMod.editor.IEditorConstructionOptions
+import typings.monacoDashEditor.monacoDashEditorMod.editor.IEditorOverrideServices
+import typings.monacoDashEditor.monacoDashEditorMod.editor.IModelContentChangedEvent
+import typings.monacoDashEditor.monacoDashEditorMod.editor.IStandaloneCodeEditor
+import typings.reactDashMonacoDashEditor.TypeofmonacoEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,15 +25,11 @@ trait MonacoEditorProps extends MonacoEditorBaseProps {
   /**
     * Refer to Monaco interface {monaco.editor.IEditorConstructionOptions}.
     */
-  var options: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any
-  ] = js.undefined
+  var options: js.UndefOr[IEditorConstructionOptions] = js.undefined
   /**
     * Refer to Monaco interface {monaco.editor.IEditorOverrideServices}.
     */
-  var overrideServices: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorOverrideServices */ js.Any
-  ] = js.undefined
+  var overrideServices: js.UndefOr[IEditorOverrideServices] = js.undefined
   /**
     * Value of the auto created model in the editor.
     * If you specify `null` or `undefined` for this property, the component behaves in uncontrolled mode.
@@ -42,13 +43,13 @@ object MonacoEditorProps {
   def apply(
     context: js.Any = null,
     defaultValue: String = null,
-    editorDidMount: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IStandaloneCodeEditor */ /* editor */ js.Any, /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any) => Unit = null,
-    editorWillMount: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any => Unit | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any) = null,
+    editorDidMount: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit = null,
+    editorWillMount: /* monaco */ TypeofmonacoEditor => Unit | IEditorConstructionOptions = null,
     height: String | Double = null,
     language: String = null,
-    onChange: (/* value */ String, /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IModelContentChangedEvent */ /* event */ js.Any) => Unit = null,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any = null,
-    overrideServices: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorOverrideServices */ js.Any = null,
+    onChange: (/* value */ String, /* event */ IModelContentChangedEvent) => Unit = null,
+    options: IEditorConstructionOptions = null,
+    overrideServices: IEditorOverrideServices = null,
     theme: String = null,
     value: String = null,
     width: String | Double = null

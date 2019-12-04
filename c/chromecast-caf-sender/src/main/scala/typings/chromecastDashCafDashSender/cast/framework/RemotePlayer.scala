@@ -1,5 +1,7 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
+import typings.chrome.chrome.cast.media.MediaInfo
+import typings.chrome.chrome.cast.media.PlayerState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +22,8 @@ class RemotePlayer () extends js.Object {
   var isMediaLoaded: Boolean = js.native
   var isMuted: Boolean = js.native
   var isPaused: Boolean = js.native
-  var mediaInfo: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.media.MediaInfo */ js.Any
-  ] = js.native
-  var playerState: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.media.PlayerState */ js.Any) | Null = js.native
+  var mediaInfo: js.UndefOr[MediaInfo] = js.native
+  var playerState: PlayerState | Null = js.native
   var savedPlayerState: SavedPlayerState | Null = js.native
   var statusText: String = js.native
   var title: String = js.native

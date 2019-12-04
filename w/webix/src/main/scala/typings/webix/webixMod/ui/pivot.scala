@@ -9,11 +9,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.pivot")
 @js.native
-class pivot () extends baseview {
+class pivot ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$$")
   var $$: js.Any = js.native
   @JSName("$divider")
   var $divider: String = js.native
+  @JSName("$skin")
+  var $skin_Original_pivot: WebixCallback = js.native
   @JSName("config")
   var config_pivot: pivotConfig = js.native
   var data: DataStore = js.native
@@ -78,7 +81,7 @@ class pivot () extends baseview {
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: js.Any): typings.webix.webix.ui.baseview = js.native
   def unblockEvent(): Unit = js.native
   def updateItem(id: String, data: js.Any): Unit = js.native
   def updateItem(id: Double, data: js.Any): Unit = js.native

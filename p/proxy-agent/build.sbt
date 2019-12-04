@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "proxy-agent"
-version := "3.1.0-f5d0ee"
+version := "3.1.0-b866d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "agent-base" % "4.2-dt-20180801Z-2eee95",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "agent-base" % "4.2-dt-20180801Z-fdbf02",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

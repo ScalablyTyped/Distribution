@@ -1,10 +1,10 @@
 package typings.reactDashSelect.srcSelectMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.TouchEvent
 import typings.reactDashSelect.Anon_Action

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "inversify-binding-decorators"
-version := "4.0.0-b9390d"
+version := "4.0.0-eba6f7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "inversify" % "5.0.1-fd9c9e",
+  "org.scalablytyped" %%% "inversify" % "5.0.1-4dfaa6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

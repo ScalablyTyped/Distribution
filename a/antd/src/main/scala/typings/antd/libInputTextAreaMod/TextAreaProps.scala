@@ -2,7 +2,6 @@ package typings.antd.libInputTextAreaMod
 
 import typings.antd.libInputResizableTextAreaMod.AutoSizeType
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
@@ -14,6 +13,7 @@ import typings.react.reactMod.FormEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

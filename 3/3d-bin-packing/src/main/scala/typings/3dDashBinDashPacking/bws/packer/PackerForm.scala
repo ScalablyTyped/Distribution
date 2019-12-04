@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.PackerForm")
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.PackerForm")
 @js.native
 /**
   * Default Constructor.
@@ -33,7 +33,7 @@ class PackerForm () extends js.Object {
   var wrapperArray: js.Any = js.native
   def TAG(): String = js.native
   def construct(
-    xml: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify library.XML */ js.Any
+    xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
   ): Unit = js.native
   def getInstanceFormArray(): InstanceFormArray = js.native
   def getWrapperArray(): WrapperArray = js.native

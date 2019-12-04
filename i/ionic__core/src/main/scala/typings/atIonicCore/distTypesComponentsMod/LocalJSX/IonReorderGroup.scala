@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.distTypesComponentsReorderDashGroupReorderDashGroupDashInterfaceMod.ItemReorderEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,23 +14,14 @@ trait IonReorderGroup extends js.Object {
   /**
     * Event that needs to be listened to in order to complete the reorder action. Once the event has been emitted, the `complete()` method then needs to be called in order to finalize the reorder action.
     */
-  var onIonItemReorder: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemReorderEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonItemReorder: js.UndefOr[js.Function1[/* event */ CustomEvent[ItemReorderEventDetail], Unit]] = js.undefined
 }
 
 object IonReorderGroup {
   @scala.inline
   def apply(
     disabled: js.UndefOr[Boolean] = js.undefined,
-    onIonItemReorder: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemReorderEventDetail */ _
-    ] => Unit = null
+    onIonItemReorder: /* event */ CustomEvent[ItemReorderEventDetail] => Unit = null
   ): IonReorderGroup = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])

@@ -11,36 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDragZone
-  extends typings.extjs.Ext.dd.IDragZone {
-  /** [Method] Called before a repair of an invalid drop to get the XY to animate to
-  		* @param e Object
-  		* @param data Object
-  		* @returns Number[] The xy location (e.g. [100, 200])
-  		*/
-  @JSName("getRepairXY")
-  var getRepairXY_IDragZone: js.UndefOr[js.Function2[/* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Array]] = js.undefined
-  /** [Method] Sets up the DragDrop object
-  		* @param id Object
-  		* @param sGroup Object
-  		* @param config Object
-  		*/
-  @JSName("init")
-  var init_IDragZone: js.UndefOr[
-    js.Function3[
-      /* id */ js.UndefOr[js.Any], 
-      /* sGroup */ js.UndefOr[js.Any], 
-      /* config */ js.UndefOr[js.Any], 
-      Unit
-    ]
-  ] = js.undefined
-  /** [Method] Called once drag threshold has been reached to initialize the proxy element
-  		* @param x Object
-  		* @param y Object
-  		* @returns Boolean true to continue the drag, false to cancel
-  		*/
-  @JSName("onInitDrag")
-  var onInitDrag_IDragZone: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], Boolean]] = js.undefined
-}
+  extends typings.extjs.Ext.dd.IDragZone
 
 object IDragZone {
   @scala.inline
@@ -94,14 +65,14 @@ object IDragZone {
     getEl: () => HTMLElement = null,
     getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     getProxy: () => IStatusProxy = null,
-    getRepairXY: (/* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Array = null,
+    getRepairXY: /* e */ js.UndefOr[Event] => Array = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
     hideProxy: () => Unit = null,
     id: java.lang.String = null,
     ignoreSelf: js.UndefOr[Boolean] = js.undefined,
     inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[js.Any], /* sGroup */ js.UndefOr[js.Any], /* config */ js.UndefOr[js.Any]) => Unit = null,
+    init: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
     initConfig: /* config */ js.UndefOr[js.Any] => IDragZone = null,
     initFrame: () => Unit = null,
     initTarget: (/* id */ js.UndefOr[java.lang.String], /* sGroup */ js.UndefOr[java.lang.String], /* config */ js.UndefOr[js.Any]) => Unit = null,
@@ -122,7 +93,7 @@ object IDragZone {
     onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInitDrag: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => Boolean = null,
+    onInitDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean = null,
     onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
@@ -209,7 +180,7 @@ object IDragZone {
     if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
-    if (getRepairXY != null) __obj.updateDynamic("getRepairXY")(js.Any.fromFunction2(getRepairXY))
+    if (getRepairXY != null) __obj.updateDynamic("getRepairXY")(js.Any.fromFunction1(getRepairXY))
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (!js.isUndefined(hasOuterHandles)) __obj.updateDynamic("hasOuterHandles")(hasOuterHandles.asInstanceOf[js.Any])
     if (hideProxy != null) __obj.updateDynamic("hideProxy")(js.Any.fromFunction0(hideProxy))

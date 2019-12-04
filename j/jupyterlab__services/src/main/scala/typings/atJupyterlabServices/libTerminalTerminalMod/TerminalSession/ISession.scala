@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
@@ -33,7 +34,7 @@ trait ISession extends IDisposable {
   /**
     * The server settings for the session.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
+  val serverSettings: ISettings
   /**
     * A signal emitted when the session is shut down.
     */
@@ -66,7 +67,7 @@ object ISession {
     ready: js.Promise[Unit],
     reconnect: () => js.Promise[Unit],
     send: IMessage => Unit,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any,
+    serverSettings: ISettings,
     shutdown: () => js.Promise[Unit],
     terminated: ISignal[ISession, Unit]
   ): ISession = {

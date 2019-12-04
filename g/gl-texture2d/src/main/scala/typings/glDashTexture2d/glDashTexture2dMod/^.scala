@@ -1,6 +1,5 @@
 package typings.glDashTexture2d.glDashTexture2dMod
 
-import typings.glDashTexture2d.GLenum
 import typings.ndarray.ndarrayMod.ndarray
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js

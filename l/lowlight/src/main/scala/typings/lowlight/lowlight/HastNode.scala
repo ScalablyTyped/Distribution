@@ -8,7 +8,6 @@ import typings.lowlight.lowlightStrings.comment
 import typings.lowlight.lowlightStrings.doctype
 import typings.lowlight.lowlightStrings.element
 import typings.lowlight.lowlightStrings.root
-import typings.lowlight.lowlightStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,7 +63,7 @@ object HastNode {
     __obj.asInstanceOf[HastNode]
   }
   @scala.inline
-  def Text(`type`: text, value: String, data: Data = null, position: Location = null): HastNode = {
+  def Text(`type`: String, value: String, data: Data = null, position: Location = null): HastNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

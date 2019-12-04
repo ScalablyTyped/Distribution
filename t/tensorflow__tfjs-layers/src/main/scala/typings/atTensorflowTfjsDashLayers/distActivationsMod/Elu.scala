@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distActivationsMod
 
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.elu
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.elu_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class Elu () extends Activation
 @js.native
 object Elu extends js.Object {
   /** @nocollapse */
-  val className: elu = js.native
+  val className: elu_ = js.native
 }
 

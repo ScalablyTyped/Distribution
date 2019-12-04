@@ -5,6 +5,7 @@ import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
+import typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +22,7 @@ trait IonSegmentButton extends js.Object {
   /**
     * Set the layout of the text and icon in the segment.
     */
-  var layout: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.Any
-  ] = js.undefined
+  var layout: js.UndefOr[SegmentButtonLayout] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -45,7 +44,7 @@ object IonSegmentButton {
     disabled: Boolean,
     `type`: submit | reset | button,
     value: String,
-    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.Any = null,
+    layout: SegmentButtonLayout = null,
     mode: ios | md = null
   ): IonSegmentButton = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])

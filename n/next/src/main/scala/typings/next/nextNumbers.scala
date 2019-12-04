@@ -6,16 +6,11 @@ import scala.scalajs.js.annotation._
 
 object nextNumbers {
   @js.native
-  sealed trait `307` extends js.Object
-  
-  @js.native
   sealed trait `false` extends js.Object
   
   @js.native
   sealed trait `true` extends js.Object
   
-  @scala.inline
-  def `307`: `307` = 307.asInstanceOf[`307`]
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
   @scala.inline

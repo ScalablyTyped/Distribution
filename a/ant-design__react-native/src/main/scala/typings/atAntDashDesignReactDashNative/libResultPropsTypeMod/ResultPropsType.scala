@@ -3,6 +3,7 @@ package typings.atAntDashDesignReactDashNative.libResultPropsTypeMod
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.ghost
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.primary
 import typings.react.reactMod.ReactNode
+import typings.reactDashNative.reactDashNativeMod.ImagePropertiesSourceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +12,7 @@ trait ResultPropsType extends js.Object {
   var buttonText: js.UndefOr[String] = js.undefined
   var buttonType: js.UndefOr[primary | ghost] = js.undefined
   var img: js.UndefOr[ReactNode] = js.undefined
-  var imgUrl: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImagePropertiesSourceOptions */ js.Any
-  ] = js.undefined
+  var imgUrl: js.UndefOr[ImagePropertiesSourceOptions] = js.undefined
   var message: js.UndefOr[ReactNode] = js.undefined
   var onButtonClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
   var title: js.UndefOr[ReactNode] = js.undefined
@@ -25,7 +24,7 @@ object ResultPropsType {
     buttonText: String = null,
     buttonType: primary | ghost = null,
     img: ReactNode = null,
-    imgUrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImagePropertiesSourceOptions */ js.Any = null,
+    imgUrl: ImagePropertiesSourceOptions = null,
     message: ReactNode = null,
     onButtonClick: /* e */ js.Any => Unit = null,
     title: ReactNode = null

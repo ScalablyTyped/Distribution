@@ -1,8 +1,8 @@
 package typings.reactDashBigDashCalendar.reactDashBigDashCalendarMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.reactDashBigDashCalendar.Anon_DayProp
 import typings.reactDashBigDashCalendar.Anon_End
 import typings.reactDashBigDashCalendar.Anon_XOffset

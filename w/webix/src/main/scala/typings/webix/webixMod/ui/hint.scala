@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.hint")
 @js.native
-class hint () extends baseview {
+class hint ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_hint: WebixCallback = js.native
   @JSName("config")
   var config_hint: hintConfig = js.native
   def attachEvent(`type`: hintEventName, functor: WebixCallback): String | Double = js.native

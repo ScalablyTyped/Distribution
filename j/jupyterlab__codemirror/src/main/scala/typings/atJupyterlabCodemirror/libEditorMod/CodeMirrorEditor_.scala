@@ -51,6 +51,8 @@ import typings.atPhosphorSignaling.atPhosphorSignalingMod.Signal
 import typings.codemirror.codemirrorMod.Doc
 import typings.codemirror.codemirrorMod.Editor
 import typings.codemirror.codemirrorMod.Position
+import typings.codemirror.codemirrorMod.SearchCursor
+import typings.codemirror.codemirrorMod.StyleActiveLine
 import typings.codemirror.codemirrorMod.TextMarker
 import typings.std.Event
 import typings.std.KeyboardEvent
@@ -283,7 +285,7 @@ class CodeMirrorEditor_ protected () extends IEditor {
   @JSName("getOption")
   def getOption_smartIndent(option: smartIndent): Boolean = js.native
   @JSName("getOption")
-  def getOption_styleActiveLine(option: styleActiveLine): Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ js.Any) = js.native
+  def getOption_styleActiveLine(option: styleActiveLine): Boolean | StyleActiveLine = js.native
   @JSName("getOption")
   def getOption_styleSelectedText(option: styleSelectedText): Boolean = js.native
   @JSName("getOption")
@@ -294,12 +296,12 @@ class CodeMirrorEditor_ protected () extends IEditor {
   def getOption_wordWrapColumn(option: wordWrapColumn): Double = js.native
   def getRange(from: Position, to: Position): String = js.native
   def getRange(from: Position, to: Position, seperator: String): String = js.native
-  def getSearchCursor(query: String): js.Any = js.native
-  def getSearchCursor(query: String, start: Position): js.Any = js.native
-  def getSearchCursor(query: String, start: Position, caseFold: Boolean): js.Any = js.native
-  def getSearchCursor(query: RegExp): js.Any = js.native
-  def getSearchCursor(query: RegExp, start: Position): js.Any = js.native
-  def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): js.Any = js.native
+  def getSearchCursor(query: String): SearchCursor = js.native
+  def getSearchCursor(query: String, start: Position): SearchCursor = js.native
+  def getSearchCursor(query: String, start: Position, caseFold: Boolean): SearchCursor = js.native
+  def getSearchCursor(query: RegExp): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: Position): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): SearchCursor = js.native
   /**
     * Returns the primary selection, never `null`.
     */
@@ -413,12 +415,9 @@ class CodeMirrorEditor_ protected () extends IEditor {
   @JSName("setOption")
   def setOption_smartIndent(option: smartIndent, value: Boolean): Unit = js.native
   @JSName("setOption")
-  def setOption_styleActiveLine(
-    option: styleActiveLine,
-    value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ js.Any
-  ): Unit = js.native
-  @JSName("setOption")
   def setOption_styleActiveLine(option: styleActiveLine, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine, value: StyleActiveLine): Unit = js.native
   @JSName("setOption")
   def setOption_styleSelectedText(option: styleSelectedText, value: Boolean): Unit = js.native
   @JSName("setOption")

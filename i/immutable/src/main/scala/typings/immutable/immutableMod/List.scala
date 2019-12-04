@@ -1,6 +1,6 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.Collection.Indexed
+import typings.immutable.Immutable.Collection.Indexed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `clear` can be used in `withMutations`.
     */
-  def clear(): List[T] = js.native
+  def clear(): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List which excludes this `index` and with a size 1 less
     * than this List. Values at indices above `index` are shifted down by 1 to
@@ -67,7 +67,7 @@ trait List[T] extends Indexed[T] {
     *
     * @alias remove
     */
-  def delete(index: Double): List[T] = js.native
+  def delete(index: Double): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List having removed the value at this `keyPath`. If any
     * keys in `keyPath` do not exist, no change will occur.
@@ -107,12 +107,12 @@ trait List[T] extends Indexed[T] {
   @JSName("filter")
   def filter_F_T_List[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-  ): List[F] = js.native
+  ): typings.immutable.Immutable.List[F] = js.native
   @JSName("filter")
   def filter_F_T_List[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): List[F] = js.native
+  ): typings.immutable.Immutable.List[F] = js.native
   /**
     * Returns a new List with `value` at `index` with a size 1 more than this
     * List. Values at indices above `index` are shifted over by 1.
@@ -132,8 +132,8 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `insert` *cannot* be used in `withMutations`.
     */
-  def insert(index: Double, value: T): List[T] = js.native
-  def merge[C](collections: Iterable[C]*): List[T | C] = js.native
+  def insert(index: Double, value: T): typings.immutable.Immutable.List[T] = js.native
+  def merge[C](collections: Iterable[C]*): typings.immutable.Immutable.List[T | C] = js.native
   /**
     * Note: `mergeDeepIn` can be used in `withMutations`.
     *
@@ -161,7 +161,7 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `pop` can be used in `withMutations`.
     */
-  def pop(): List[T] = js.native
+  def pop(): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List with the provided `values` appended, starting at this
     * List's `size`.
@@ -176,8 +176,8 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `push` can be used in `withMutations`.
     */
-  def push(values: T*): List[T] = js.native
-  def remove(index: Double): List[T] = js.native
+  def push(values: T*): typings.immutable.Immutable.List[T] = js.native
+  def remove(index: Double): typings.immutable.Immutable.List[T] = js.native
   def removeIn(keyPath: Iterable[_]): this.type = js.native
   // Persistent changes
   /**
@@ -209,7 +209,7 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `set` can be used in `withMutations`.
     */
-  def set(index: Double, value: T): List[T] = js.native
+  def set(index: Double, value: T): typings.immutable.Immutable.List[T] = js.native
   // Deep persistent changes
   /**
     * Returns a new List having set `value` at this `keyPath`. If any keys in
@@ -251,7 +251,7 @@ trait List[T] extends Indexed[T] {
     * used in conjunction with `withMutations` may result in the more
     * performant construction.
     */
-  def setSize(size: Double): List[T] = js.native
+  def setSize(size: Double): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List with a size ones less than this List, excluding
     * the first index in this List, shifting all other values to a lower index.
@@ -270,7 +270,7 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `shift` can be used in `withMutations`.
     */
-  def shift(): List[T] = js.native
+  def shift(): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List with the provided `values` prepended, shifting other
     * values ahead to higher indices.
@@ -285,7 +285,7 @@ trait List[T] extends Indexed[T] {
     *
     * Note: `unshift` can be used in `withMutations`.
     */
-  def unshift(values: T*): List[T] = js.native
+  def unshift(values: T*): typings.immutable.Immutable.List[T] = js.native
   /**
     * Returns a new List with an updated value at `index` with the return
     * value of calling `updater` with the existing value, or `notSetValue` if
@@ -355,8 +355,8 @@ trait List[T] extends Indexed[T] {
 @JSImport("immutable", "List")
 @js.native
 object List extends js.Object {
-  def apply(): List[_] = js.native
-  def apply[T](collection: Iterable[T]): List[T] = js.native
+  def apply(): typings.immutable.Immutable.List[_] = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.List[T] = js.native
   /**
     * True if the provided value is a List
     *
@@ -367,7 +367,7 @@ object List extends js.Object {
     * List.isList(List()); // true
     * ```
     */
-  def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean = js.native
+  def isList(maybeList: js.Any): /* is immutable.Immutable.List<any> */ Boolean = js.native
   /**
     * Creates a new List containing `values`.
     *
@@ -387,6 +387,6 @@ object List extends js.Object {
     * // List [ { x: 1 }, 2, [ 3 ], 4 ]
     * ```
     */
-  def of[T](values: T*): List[T] = js.native
+  def of[T](values: T*): typings.immutable.Immutable.List[T] = js.native
 }
 

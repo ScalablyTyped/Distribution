@@ -1,7 +1,7 @@
 package typings.graphqlDashCompose
 
-import typings.graphqlDashCompose.esmInputTypeComposerMod.ComposeInputFieldConfigMap
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Extensions
+import typings.graphqlDashCompose.libInputTypeComposerMod.ComposeInputFieldConfigMap
+import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

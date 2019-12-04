@@ -20,8 +20,8 @@ import typings.atNivoColors.atNivoColorsMod.OrdinalColorsInstruction
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.Theme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libConfigMod.ConfigSection
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,17 +16,12 @@ trait IOptions extends js.Object {
   /**
     * The optional server settings.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    name: String,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null
-  ): IOptions = {
+  def apply(name: String, serverSettings: ISettings = null): IOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]

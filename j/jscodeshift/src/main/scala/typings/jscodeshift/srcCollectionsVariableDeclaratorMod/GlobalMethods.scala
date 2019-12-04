@@ -1,5 +1,6 @@
 package typings.jscodeshift.srcCollectionsVariableDeclaratorMod
 
+import typings.astDashTypes.genNodesMod.VariableDeclarator
 import typings.jscodeshift.srcCollectionMod.Collection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +11,7 @@ trait GlobalMethods extends js.Object {
   /**
     * Finds all variable declarators, optionally filtered by name.
     */
-  def findVariableDeclarators(): Collection[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
-  ] = js.native
-  def findVariableDeclarators(name: String): Collection[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
-  ] = js.native
+  def findVariableDeclarators(): Collection[VariableDeclarator] = js.native
+  def findVariableDeclarators(name: String): Collection[VariableDeclarator] = js.native
 }
 

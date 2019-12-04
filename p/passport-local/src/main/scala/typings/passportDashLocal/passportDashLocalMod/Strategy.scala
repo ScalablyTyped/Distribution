@@ -11,7 +11,5 @@ class Strategy protected ()
   def this(verify: VerifyFunction) = this()
   def this(options: IStrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
   def this(options: IStrategyOptions, verify: VerifyFunction) = this()
-  @JSName("name")
-  var name_Strategy: String = js.native
 }
 

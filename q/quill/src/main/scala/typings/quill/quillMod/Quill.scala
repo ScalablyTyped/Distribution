@@ -101,9 +101,11 @@ class Quill protected () extends EventEmitter {
   def pasteHTML(index: Double, html: String, source: Sources): String = js.native
   def removeFormat(index: Double, length: Double): js.Any = js.native
   def removeFormat(index: Double, length: Double, source: Sources): js.Any = js.native
-  def setContents(delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any): js.Any = js.native
   def setContents(
-    delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any,
+    delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any
+  ): js.Any = js.native
+  def setContents(
+    delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any,
     source: Sources
   ): js.Any = js.native
   def setSelection(index: Double, length: Double): Unit = js.native
@@ -114,9 +116,11 @@ class Quill protected () extends EventEmitter {
   def setText(text: String, source: Sources): js.Any = js.native
   def update(): Unit = js.native
   def update(source: Sources): Unit = js.native
-  def updateContents(delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any): js.Any = js.native
   def updateContents(
-    delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any,
+    delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any
+  ): js.Any = js.native
+  def updateContents(
+    delta: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Delta */ js.Any,
     source: Sources
   ): js.Any = js.native
 }

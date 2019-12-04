@@ -9,7 +9,7 @@ trait QueryPopulateOptions extends js.Object {
   var `match`: js.UndefOr[js.Any] = js.undefined
   /** optional model to use for population */
   var model: js.UndefOr[
-    String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<any> */ js.Any)
+    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ js.Any)
   ] = js.undefined
   /** optional query options like sort, limit, etc */
   var options: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +26,7 @@ object QueryPopulateOptions {
   def apply(
     path: String,
     `match`: js.Any = null,
-    model: String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<any> */ js.Any) = null,
+    model: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ js.Any) = null,
     options: js.Any = null,
     populate: QueryPopulateOptions | js.Array[QueryPopulateOptions] = null,
     select: js.Any = null

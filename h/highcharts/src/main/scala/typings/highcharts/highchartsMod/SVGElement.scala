@@ -170,6 +170,15 @@ class SVGElement () extends js.Object {
     */
   def destroy(): js.UndefOr[scala.Nothing] = js.native
   /**
+    * A general fadeIn method.
+    *
+    * @param animation
+    *        The animation options for the element fade.
+    */
+  def fadeIn(): Unit = js.native
+  def fadeIn(animation: Boolean): Unit = js.native
+  def fadeIn(animation: AnimationOptionsObject): Unit = js.native
+  /**
     * Fade out an element by animating its opacity down to 0, and hide it on
     * complete. Used internally for the tooltip.
     *

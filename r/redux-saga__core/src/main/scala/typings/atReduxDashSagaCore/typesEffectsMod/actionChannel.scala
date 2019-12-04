@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object actionChannel extends js.Object {
   def apply(
-    pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
   ): ActionChannelEffect = js.native
   def apply(
-    pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
     buffer: Buffer
   ): ActionChannelEffect = js.native
 }

@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/exhaust", JSImport.Namespace)
 @js.native
 object operatorExhaustMod extends js.Object {
-  def exhaust[T](`this`: Observable[ObservableInput[T]]): Observable[T] = js.native
+  def exhaust[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ObservableInput<T>> */ js.Any
+  ): js.Any = js.native
   @JSName("exhaust")
-  def exhaust_TR[T, R](`this`: Observable[T]): Observable[R] = js.native
+  def exhaust_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
 }
 

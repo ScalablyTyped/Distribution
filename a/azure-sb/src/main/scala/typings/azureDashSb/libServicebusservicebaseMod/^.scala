@@ -4,10 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServiceBusServiceClient * / any */ @JSImport("azure-sb/lib/servicebusservicebase", JSImport.Namespace)
+@JSImport("azure-sb/lib/servicebusservicebase", JSImport.Namespace)
 @js.native
-class ^ protected () extends js.Object {
+class ^ protected ()
+  extends typings.azureDashSb.libServicebusserviceclientMod.^ {
   def this(configOrNamespaceOrConnectionString: String) = this()
   def this(configOrNamespaceOrConnectionString: String, accessKey: String) = this()
   def this(configOrNamespaceOrConnectionString: String, accessKey: String, issuer: String) = this()

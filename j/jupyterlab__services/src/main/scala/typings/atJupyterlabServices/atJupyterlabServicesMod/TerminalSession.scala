@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.atJupyterlabServicesMod
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.IModel
 import typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.IOptions
 import typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession.ISession
@@ -24,9 +25,7 @@ object TerminalSession extends js.Object {
     * @returns A promise that resolves with the list of running session models.
     */
   def listRunning(): js.Promise[js.Array[IModel]] = js.native
-  def listRunning(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[js.Array[IModel]] = js.native
+  def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
   /**
     * Shut down a terminal session by name.
     *
@@ -37,19 +36,14 @@ object TerminalSession extends js.Object {
     * @returns A promise that resolves when the session is shut down.
     */
   def shutdown(name: String): js.Promise[Unit] = js.native
-  def shutdown(
-    name: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def shutdown(name: String, settings: ISettings): js.Promise[Unit] = js.native
   /**
     * Shut down all terminal sessions.
     *
     * @returns A promise that resolves when all of the sessions are shut down.
     */
   def shutdownAll(): js.Promise[Unit] = js.native
-  def shutdownAll(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def shutdownAll(settings: ISettings): js.Promise[Unit] = js.native
   /**
     * Start a new terminal session.
     *

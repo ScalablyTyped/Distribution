@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait portletConfig extends js.Object {
   var animate: js.UndefOr[js.Any] = js.undefined
-  var body: js.UndefOr[String | baseview] = js.undefined
+  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var cols: js.UndefOr[js.Array[_]] = js.undefined
   var container: js.UndefOr[String | HTMLElement] = js.undefined
@@ -43,7 +43,7 @@ object portletConfig {
   @scala.inline
   def apply(
     animate: js.Any = null,
-    body: String | baseview = null,
+    body: String | typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     cols: js.Array[_] = null,
     container: String | HTMLElement = null,

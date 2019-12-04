@@ -4,7 +4,6 @@ import typings.react.reactMod.Component
 import typings.reactDashNative.reactDashNativeMod.TextInputProps
 import typings.reactDashNative.reactDashNativeMod.TextProps
 import typings.reactDashNative.reactDashNativeMod.ViewProps
-import typings.reactDashNativeDashDialog.reactNativeModalContainerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

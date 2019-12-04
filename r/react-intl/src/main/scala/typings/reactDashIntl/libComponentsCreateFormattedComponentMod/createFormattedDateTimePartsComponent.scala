@@ -1,7 +1,7 @@
 package typings.reactDashIntl.libComponentsCreateFormattedComponentMod
 
 import typings.react.reactMod.FC
-import typings.reactDashIntl.Anon_0ChildrenVal
+import typings.reactDashIntl.Anon_0Children
 import typings.reactDashIntl.reactDashIntlStrings.formatDate
 import typings.reactDashIntl.reactDashIntlStrings.formatTime
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createFormattedDateTimePartsComponent extends js.Object {
   def apply[Name /* <: formatDate | formatTime */](name: Name): FC[
-    (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/lib/components/createFormattedComponent.Formatter[Name] */ js.Any) with Anon_0ChildrenVal[Name]
+    (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/lib/components/createFormattedComponent.Formatter[Name] */ js.Any) with Anon_0Children[Name]
   ] = js.native
 }
 

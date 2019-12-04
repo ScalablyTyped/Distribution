@@ -11,7 +11,7 @@ trait CachedResponseWillBeUsedCallbackParam extends js.Object {
   var cacheName: String
   var cachedResponse: js.UndefOr[Response] = js.undefined
   var event: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
   ] = js.undefined
   var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
   var request: Request
@@ -23,7 +23,7 @@ object CachedResponseWillBeUsedCallbackParam {
     cacheName: String,
     request: Request,
     cachedResponse: Response = null,
-    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null,
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any = null,
     matchOptions: CacheQueryOptions = null
   ): CachedResponseWillBeUsedCallbackParam = {
     val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])

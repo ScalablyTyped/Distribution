@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 class SCChannel protected () extends Emitter {
   def this(
     name: String,
-    client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCExchange */ js.Any
+    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCExchange */ js.Any
   ) = this()
   def this(
     name: String,
-    client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCExchange */ js.Any,
+    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCExchange */ js.Any,
     options: SCChannelOptions
   ) = this()
   val PENDING: pending = js.native
@@ -42,13 +42,13 @@ class SCChannel protected () extends Emitter {
   def unsubscribe(): Unit = js.native
   def unwatch(): Unit = js.native
   def unwatch(
-    handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify handlerFunction */ js.Any
+    handler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify handlerFunction */ js.Any
   ): Unit = js.native
   def watch(
-    handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify handlerFunction */ js.Any
+    handler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify handlerFunction */ js.Any
   ): Unit = js.native
   def watchers(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify handlerFunction */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify handlerFunction */ _
   ] = js.native
 }
 

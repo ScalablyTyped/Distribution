@@ -1,19 +1,20 @@
 package typings.rmcDashCascader
 
-import typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps
+import typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
+import typings.rmcDashCascader.libPopupMod.IPopupCascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait rmcDashCascaderProps {
   @scala.inline
-  def CascaderProps: ICascaderProps.type = typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps
+  def CascaderProps: ICascaderProps.type = typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
   type CascaderProps = ICascaderProps
   @scala.inline
-  def EsProps: ICascaderProps.type = typings.rmcDashCascader.esCascaderTypesMod.ICascaderProps
-  type EsProps = ICascaderProps
+  def PopupProps: IPopupCascaderProps.type = typings.rmcDashCascader.libPopupMod.IPopupCascaderProps
+  type PopupProps = IPopupCascaderProps
   @scala.inline
-  def RmcDashCascaderProps: typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps.type = typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
-  type RmcDashCascaderProps = typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
+  def RmcDashCascaderProps: ICascaderProps.type = typings.rmcDashCascader.libCascaderTypesMod.ICascaderProps
+  type RmcDashCascaderProps = ICascaderProps
 }
 

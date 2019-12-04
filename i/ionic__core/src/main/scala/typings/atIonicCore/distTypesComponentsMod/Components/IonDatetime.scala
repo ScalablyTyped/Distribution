@@ -2,6 +2,7 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsDatetimeDatetimeDashInterfaceMod.DatetimeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,9 +79,7 @@ trait IonDatetime extends js.Object {
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
-  ] = js.undefined
+  var pickerOptions: js.UndefOr[DatetimeOptions] = js.undefined
   /**
     * The text to display when there's no date selected yet. Using lowercase to match the input attribute
     */
@@ -125,7 +124,7 @@ object IonDatetime {
     monthShortNames: js.Array[String] | String = null,
     monthValues: js.Array[Double] | Double | String = null,
     pickerFormat: String = null,
-    pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any = null,
+    pickerOptions: DatetimeOptions = null,
     placeholder: String = null,
     value: String = null,
     yearValues: js.Array[Double] | Double | String = null

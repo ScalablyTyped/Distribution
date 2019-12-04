@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "activex-word"
-version := "14.0-dt-20190213Z-25b2af"
+version := "14.0-dt-20190213Z-41bc1d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20190213Z-e42807",
-  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-f23942",
+  "org.scalablytyped" %%% "activex-office" % "16.0-dt-20190213Z-cb9e22",
+  "org.scalablytyped" %%% "activex-outlook" % "14.0-dt-20190213Z-84ec1c",
   "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-0ae63e",
-  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20190213Z-98e723",
+  "org.scalablytyped" %%% "activex-vbide" % "14.0-dt-20190213Z-318d1f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

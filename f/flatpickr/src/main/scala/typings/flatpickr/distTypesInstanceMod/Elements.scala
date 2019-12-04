@@ -1,7 +1,7 @@
 package typings.flatpickr.distTypesInstanceMod
 
+import typings.flatpickr.distTypesGlobalsMod._Global_.HTMLElement
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLSpanElement

@@ -18,7 +18,5 @@ class Variable ()
   override var name: String = js.native
   /* CompleteClass */
   override var references: js.Array[typings.eslint.eslintMod.Scope.Reference] = js.native
-  @JSName("references")
-  var references_Variable: js.Array[Reference] = js.native
 }
 

@@ -30,10 +30,10 @@ class UninterpretedOption_ () extends IUninterpretedOption {
   var name_UninterpretedOption_ : js.Array[INamePart] = js.native
   /** UninterpretedOption negativeIntValue. */
   @JSName("negativeIntValue")
-  var negativeIntValue_UninterpretedOption_ : Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var negativeIntValue_UninterpretedOption_ : Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
   /** UninterpretedOption positiveIntValue. */
   @JSName("positiveIntValue")
-  var positiveIntValue_UninterpretedOption_ : Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var positiveIntValue_UninterpretedOption_ : Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
   /** UninterpretedOption stringValue. */
   @JSName("stringValue")
   var stringValue_UninterpretedOption_ : Uint8Array = js.native

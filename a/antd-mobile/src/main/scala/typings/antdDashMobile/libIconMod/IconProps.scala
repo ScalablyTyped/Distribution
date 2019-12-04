@@ -6,9 +6,9 @@ import typings.antdDashMobile.antdDashMobileStrings.sm
 import typings.antdDashMobile.antdDashMobileStrings.xs
 import typings.antdDashMobile.antdDashMobileStrings.xxs
 import typings.antdDashMobile.libIconPropsTypeMod.IconPropsType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

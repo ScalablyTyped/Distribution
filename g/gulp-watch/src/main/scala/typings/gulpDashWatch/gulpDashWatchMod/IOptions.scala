@@ -41,7 +41,7 @@ object IOptions {
     ignore: String | js.Array[String] = null,
     ignoreInitial: js.UndefOr[Boolean] = js.undefined,
     mark: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.Any = null,
+    matchBase: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     nobrace: js.UndefOr[Boolean] = js.undefined,
     nocase: js.UndefOr[Boolean] = js.undefined,
@@ -93,7 +93,7 @@ object IOptions {
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreInitial)) __obj.updateDynamic("ignoreInitial")(ignoreInitial.asInstanceOf[js.Any])
     if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (matchBase != null) __obj.updateDynamic("matchBase")(matchBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.asInstanceOf[js.Any])
     if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.asInstanceOf[js.Any])

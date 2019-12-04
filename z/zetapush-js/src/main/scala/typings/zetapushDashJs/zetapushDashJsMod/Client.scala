@@ -1,6 +1,5 @@
 package typings.zetapushDashJs.zetapushDashJsMod
 
-import typings.zetapushDashJs.ConnectionStatusHandler
 import typings.zetapushDashJs.zetapushDashJsMod.services.Macro
 import scala.scalajs.js
 import scala.scalajs.js.`|`

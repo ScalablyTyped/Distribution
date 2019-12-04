@@ -1,6 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

@@ -210,7 +210,7 @@ trait TestContext extends js.Object {
   def render(): js.Promise[Unit] = js.native
   def render(template: String): js.Promise[Unit] = js.native
   def render(
-    template: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TemplateFactory */ js.Any
+    template: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateFactory */ js.Any
   ): js.Promise[Unit] = js.native
   def render(template: js.Array[String]): js.Promise[Unit] = js.native
   def resumeTest(): Unit = js.native

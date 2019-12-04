@@ -45,7 +45,7 @@ object reactDashNavigationDashDrawerMod extends js.Object {
   
   val DrawerGestureContext: Context[RefObject[js.Any] | Null] = js.native
   val DrawerProgressContext: Context[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
   ] = js.native
   def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _]): Anon_Action = js.native
   def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _], config: Anon_InitialRouteName): Anon_Action = js.native

@@ -11,4 +11,6 @@ package object maliMod {
   import typings.grpc.grpcMod.ServerWriteableStream
 
   type GrpcCall = ServerUnaryCall[js.Any] | ServerReadableStream[js.Any] | ServerWriteableStream[js.Any] | (ServerDuplexStream[js.Any, js.Any])
+  type GrpcRequest = js.Any
+  type GrpcResponse = js.Any
 }

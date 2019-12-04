@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__service-error-classification"
-version := "0.1.0-preview.1-0337fd"
+version := "0.1.0-preview.1-9f3bab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

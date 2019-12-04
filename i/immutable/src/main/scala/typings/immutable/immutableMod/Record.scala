@@ -2,8 +2,7 @@ package typings.immutable.immutableMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.immutable.immutableMod.Record.Factory
-import typings.immutable.immutableMod.Seq.Keyed
+import typings.immutable.Immutable.Seq.Keyed
 import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.std.Partial
@@ -135,30 +134,30 @@ trait Record[TProps /* <: js.Object */] extends js.Object {
 object Record extends js.Object {
   @js.native
   trait Factory[TProps /* <: js.Object */]
-    extends Instantiable0[Record[TProps] with TProps]
+    extends Instantiable0[typings.immutable.Immutable.Record[TProps] with TProps]
        with Instantiable1[
           (/* values */ Iterable[js.Tuple2[String, js.Any]]) | (/* values */ Partial[TProps]), 
-          Record[TProps] with TProps
+          typings.immutable.Immutable.Record[TProps] with TProps
         ] {
     /**
       * The name provided to `Record(values, name)` can be accessed with
       * `displayName`.
       */
     var displayName: String = js.native
-    def apply(): Record[TProps] with TProps = js.native
-    def apply(values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
-    def apply(values: Partial[TProps]): Record[TProps] with TProps = js.native
+    def apply(): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+    def apply(values: Iterable[js.Tuple2[String, _]]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+    def apply(values: Partial[TProps]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
   }
   
-  def apply[TProps](defaultValues: TProps): Factory[TProps] = js.native
-  def apply[TProps](defaultValues: TProps, name: String): Factory[TProps] = js.native
-  def getDescriptiveName(record: Record[_]): String = js.native
-  def isRecord(maybeRecord: js.Any): /* is immutable.immutable.Record<any> */ Boolean = js.native
+  def apply[TProps](defaultValues: TProps): typings.immutable.Immutable.Record.Factory[TProps] = js.native
+  def apply[TProps](defaultValues: TProps, name: String): typings.immutable.Immutable.Record.Factory[TProps] = js.native
+  def getDescriptiveName(record: typings.immutable.Immutable.Record[_]): String = js.native
+  def isRecord(maybeRecord: js.Any): /* is immutable.Immutable.Record<any> */ Boolean = js.native
   @js.native
   object Factory extends js.Object {
-    def apply[TProps /* <: js.Object */](): Record[TProps] with TProps = js.native
-    def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): Record[TProps] with TProps = js.native
-    def apply[TProps /* <: js.Object */](values: Partial[TProps]): Record[TProps] with TProps = js.native
+    def apply[TProps /* <: js.Object */](): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+    def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+    def apply[TProps /* <: js.Object */](values: Partial[TProps]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
   }
   
 }

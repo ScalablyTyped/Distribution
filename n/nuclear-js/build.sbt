@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "nuclear-js"
-version := "1.4-dt-20191115Z-76f4bb"
+version := "1.4-dt-20191115Z-6f289a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-088719",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-0794f1",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

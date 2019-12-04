@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsonldMod {
-  import typings.jsonld.RdfDataSet
   import typings.jsonld.jsonldDashSpecMod.JsonLd
   import typings.jsonld.jsonldStrings.`application/n-quads`
   import typings.std.Error
@@ -14,5 +13,6 @@ package object jsonldMod {
   type DocCallback = Callback[JsonLd]
   // Some typealiases for better readability and some placeholders
   type MimeNQuad = `application/n-quads`
+  type RdfDataSet = js.Object
   type RdfOrString = RdfDataSet | String
 }

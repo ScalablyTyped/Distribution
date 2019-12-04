@@ -1,7 +1,6 @@
 package typings.ngDashGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.angular.angularMod.IFilterService
 import typings.ngDashGrid.ngGrid.IGridInstance
 import typings.ngDashGrid.ngGrid.IGridScope
 import typings.ngDashGrid.ngGrid.ISearchProvider
@@ -13,7 +12,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ngSearchProvider")
 @js.native
 class ngSearchProvider protected () extends ISearchProvider {
-  def this($scope: IGridScope, grid: IGridInstance, $filter: IFilterService) = this()
+  def this(
+    $scope: IGridScope,
+    grid: IGridInstance,
+    $filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ js.Any
+  ) = this()
   /* CompleteClass */
   override var extFilter: Boolean = js.native
   /* CompleteClass */

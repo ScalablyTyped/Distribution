@@ -4,6 +4,7 @@ import typings.atAngularCore.atAngularCoreMod.ComponentFactoryResolver
 import typings.atAngularCore.atAngularCoreMod.Injector
 import typings.atIonicAngular.distProvidersAngularDashDelegateMod.AngularDelegate
 import typings.atIonicAngular.distUtilOverlayMod.OverlayBaseController
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonModalElement
 import typings.atIonicCore.distTypesComponentsModalModalDashInterfaceMod.ModalOptions
 import scala.scalajs.js
@@ -14,13 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distProvidersModalDashControllerMod extends js.Object {
   @js.native
-  class ModalController protected ()
-    extends OverlayBaseController[
-          ModalOptions[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any
-          ], 
-          HTMLIonModalElement
-        ] {
+  class ModalController protected () extends OverlayBaseController[ModalOptions[ComponentRef], HTMLIonModalElement] {
     def this(angularDelegate: AngularDelegate, resolver: ComponentFactoryResolver, injector: Injector) = this()
     var angularDelegate: js.Any = js.native
     var injector: js.Any = js.native

@@ -2,6 +2,7 @@ package typings.hastDashFormat.hastDashFormatMod
 
 import typings.hastDashFormat.hastDashFormatStrings.root
 import typings.unist.unistMod.Data
+import typings.unist.unistMod.Node
 import typings.unist.unistMod.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,12 +18,7 @@ trait Root extends Parent {
 
 object Root {
   @scala.inline
-  def apply(
-    children: js.Array[Element | DocType | Comment | Text],
-    `type`: root,
-    data: Data = null,
-    position: Position = null
-  ): Root = {
+  def apply(children: js.Array[Node], `type`: root, data: Data = null, position: Position = null): Root = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/buffer", JSImport.Namespace)
 @js.native
 object operatorBufferMod extends js.Object {
-  def buffer[T](`this`: Observable[T], closingNotifier: Observable[_]): Observable[js.Array[T]] = js.native
+  def buffer[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    closingNotifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
+  ): js.Any = js.native
 }
 

@@ -13,7 +13,7 @@ class TextureAtlas () extends Disposable {
     textureLoader: js.Function2[
         /* path */ String, 
         /* loaderFunction */ js.Function1[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
           _
         ], 
         _
@@ -24,7 +24,7 @@ class TextureAtlas () extends Disposable {
     textureLoader: js.Function2[
         /* path */ String, 
         /* loaderFunction */ js.Function1[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
           _
         ], 
         _
@@ -39,7 +39,7 @@ class TextureAtlas () extends Disposable {
     textureLoader: js.Function2[
       /* path */ String, 
       /* loaderFunction */ js.Function1[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
         _
       ], 
       _
@@ -48,11 +48,11 @@ class TextureAtlas () extends Disposable {
   ): Unit = js.native
   def addTexture(
     name: String,
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): TextureAtlasRegion = js.native
   def addTextureHash(
     textures: Map[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ _
     ],
     stripExtension: Boolean
   ): Unit = js.native

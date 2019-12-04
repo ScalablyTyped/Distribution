@@ -10,9 +10,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.calendar")
 @js.native
-class calendar () extends baseview {
+class calendar ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_calendar: WebixCallback = js.native
   @JSName("config")
   var config_calendar: calendarConfig = js.native
   @JSName("on_click")

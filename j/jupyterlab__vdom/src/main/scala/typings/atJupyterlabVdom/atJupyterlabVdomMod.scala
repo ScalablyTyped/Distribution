@@ -1,7 +1,7 @@
 package typings.atJupyterlabVdom
 
 import typings.atJupyterlabApputils.libWidgettrackerMod.IWidgetTracker
-import typings.atJupyterlabDocregistry.libMod.MimeDocument
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.MimeDocument
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IContext
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabRendermimeDashInterfaces.atJupyterlabRendermimeDashInterfacesMod.IRenderMime.IRenderer

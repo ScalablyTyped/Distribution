@@ -10,10 +10,10 @@ import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSet
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PartialI18n
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.PickerProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

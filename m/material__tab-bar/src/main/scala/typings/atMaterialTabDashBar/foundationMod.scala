@@ -24,7 +24,7 @@ object foundationMod extends js.Object {
       * Handles the MDCTab:interacted event
       */
     def handleTabInteraction(
-      evt: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MDCTabInteractionEvent */ js.Any
+      evt: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabInteractionEvent */ js.Any
     ): Unit = js.native
     // Subclasses should override this method to perform initialization routines (registering events, etc.)
     /* CompleteClass */

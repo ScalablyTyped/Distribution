@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashGraphqlMod {
-  import typings.expressDashGraphql.Request
-  import typings.expressDashGraphql.Response
+  import typings.node.httpMod.IncomingMessage
+  import typings.node.httpMod.ServerResponse
 
   type Middleware = js.Function2[
     /* request */ Request, 
@@ -27,4 +27,6 @@ package object expressDashGraphqlMod {
     OptionsResult
   ]) | OptionsResult
   type OptionsResult = OptionsData | js.Promise[OptionsData]
+  type Request = IncomingMessage
+  type Response = ServerResponse
 }

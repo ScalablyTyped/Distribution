@@ -1,5 +1,7 @@
 package typings.flatpickr.distTypesOptionsMod
 
+import typings.flatpickr.distTypesGlobalsMod._Global_.Date
+import typings.flatpickr.distTypesGlobalsMod._Global_.HTMLElement
 import typings.flatpickr.distTypesLocaleMod.CustomLocale
 import typings.flatpickr.distTypesLocaleMod.key
 import typings.flatpickr.flatpickrStrings.above
@@ -9,9 +11,7 @@ import typings.flatpickr.flatpickrStrings.multiple
 import typings.flatpickr.flatpickrStrings.range
 import typings.flatpickr.flatpickrStrings.single
 import typings.flatpickr.flatpickrStrings.time
-import typings.std.Date
 import typings.std.Error
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

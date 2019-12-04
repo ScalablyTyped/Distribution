@@ -5,24 +5,35 @@ import typings.atUifabricUtilities.libCustomizationsCustomizerDotTypesMod.ICusto
 import typings.atUifabricUtilities.libDelayedRenderMod.IDelayedRenderProps
 import typings.officeDashUiDashFabricDashReact.libComponentsActivityItemActivityItemDotTypesMod.IActivityItemProps
 import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDotTypesMod.IAnnouncedProps
+import typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedExamplesAnnouncedDotLazyLoadingDotExampleMod.IAnnouncedLazyLoadingExampleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillDotTypesMod.IAutofillProps
 import typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonBaseButtonMod.IBaseButtonProps
 import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotActionDotExampleMod.IButtonExampleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarDayMod.ICalendarDayProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarDotTypesMod.ICalendarProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarMonthMod.ICalendarMonthProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarYearMod.ICalendarYearProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCalendarExamplesCalendarDotButtonDotExampleMod.ICalendarButtonExampleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCalendarExamplesCalendarDotInlineDotExampleMod.ICalendarInlineExampleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCheckboxCheckboxDotTypesMod.ICheckboxProps
 import typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps
 import typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps
+import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkBeakBeakDotTypesMod.IBeakProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkPositioningContainerPositioningContainerDotTypesMod.IPositioningContainerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps
+import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorRectangleColorRectangleDotTypesMod.IColorRectangleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorSliderColorSliderDotTypesMod.IColorSliderProps
 import typings.officeDashUiDashFabricDashReact.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps
 import typings.officeDashUiDashFabricDashReact.libComponentsCommandBarCommandBarDotTypesMod.ICommandBarProps
 import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
 import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps
+import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDotTypesMod.IContextualMenuItemWrapperProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps
@@ -62,6 +73,8 @@ import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHead
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShowAllDotTypesMod.IGroupShowAllProps
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupSpacerDotTypesMod.IGroupSpacerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps
+import typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupedListSectionMod.IGroupedListSectionProps
+import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardCardCalloutCardCalloutMod.ICardCalloutProps
 import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps
 import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps
 import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps
@@ -75,6 +88,10 @@ import typings.officeDashUiDashFabricDashReact.libComponentsLabelLabelDotTypesMo
 import typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerDotTypesMod.ILayerProps
 import typings.officeDashUiDashFabricDashReact.libComponentsLayerLayerHostDotTypesMod.ILayerHostProps
 import typings.officeDashUiDashFabricDashReact.libComponentsLinkLinkDotTypesMod.ILinkProps
+import typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotBasicDotExampleMod.IListBasicExampleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotGhostingDotExampleMod.IListGhostingExampleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotGridDotExampleMod.IListGridExampleProps
+import typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotScrollingDotExampleMod.IListScrollingExampleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsListListDotTypesMod.IListProps
 import typings.officeDashUiDashFabricDashReact.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps
 import typings.officeDashUiDashFabricDashReact.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps
@@ -84,10 +101,13 @@ import typings.officeDashUiDashFabricDashReact.libComponentsOverflowSetOverflowS
 import typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotTypesMod.IOverlayProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotTypesMod.IPanelProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaPresenceProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSuggestionProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemWithMenuProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionsProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsItemDotTypesMod.ISuggestionItemProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps
@@ -101,6 +121,8 @@ import typings.officeDashUiDashFabricDashReact.libComponentsRatingRatingDotTypes
 import typings.officeDashUiDashFabricDashReact.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps
 import typings.officeDashUiDashFabricDashReact.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps
+import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListItemsEditingItemMod.IEditingSelectedPeopleItemProps
+import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListItemsSelectedItemWithContextMenuMod.ISelectedItemWithContextMenuProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleItemProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSeparatorSeparatorDotTypesMod.ISeparatorProps
@@ -122,6 +144,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsTextTextDotTypesMod.
 import typings.officeDashUiDashFabricDashReact.libComponentsToggleToggleDotTypesMod.IToggleProps
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.ITooltipProps
 import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDraggableZoneDraggableZoneDotTypesMod.IDraggableZoneProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod.IGridProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
 import scala.scalajs.js
@@ -141,6 +164,7 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def AnnouncedBaseProps: IAnnouncedProps.type = typings.officeDashUiDashFabricDashReact.libComponentsAnnouncedAnnouncedDotTypesMod.IAnnouncedProps
   type AnnouncedBaseProps = IAnnouncedProps
+  type AnnouncedLazyLoadingExampleProps = IAnnouncedLazyLoadingExampleProps
   @scala.inline
   def AutofillProps: IAutofillProps.type = typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillDotTypesMod.IAutofillProps
   type AutofillProps = IAutofillProps
@@ -159,6 +183,9 @@ trait officeDashUiDashFabricDashReactProps {
   def BasePeopleSelectedItemsListProps: ISelectedPeopleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleProps
   type BasePeopleSelectedItemsListProps = ISelectedPeopleProps
   @scala.inline
+  def BeakProps: IBeakProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkBeakBeakDotTypesMod.IBeakProps
+  type BeakProps = IBeakProps
+  @scala.inline
   def BreadcrumbProps: IBreadcrumbProps.type = typings.officeDashUiDashFabricDashReact.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
   type BreadcrumbProps = IBreadcrumbProps
   @scala.inline
@@ -168,14 +195,69 @@ trait officeDashUiDashFabricDashReactProps {
   def ButtonProps: IButtonProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
   type ButtonProps = IButtonProps
   @scala.inline
+  def ButtonActionExampleProps: IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotActionDotExampleMod.IButtonExampleProps
+  type ButtonActionExampleProps = IButtonExampleProps
+  @scala.inline
+  def ButtonAnchorExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotAnchorDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotAnchorDotExampleMod.IButtonExampleProps
+  type ButtonAnchorExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotAnchorDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonCommandBarExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandBarDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandBarDotExampleMod.IButtonExampleProps
+  type ButtonCommandBarExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandBarDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonCommandExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandDotExampleMod.IButtonExampleProps
+  type ButtonCommandExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCommandDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonCompoundExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCompoundDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCompoundDotExampleMod.IButtonExampleProps
+  type ButtonCompoundExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCompoundDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonContextualMenuExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotContextualMenuDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotContextualMenuDotExampleMod.IButtonExampleProps
+  type ButtonContextualMenuExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotContextualMenuDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonDefaultExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotDefaultDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotDefaultDotExampleMod.IButtonExampleProps
+  type ButtonDefaultExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotDefaultDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonIconExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotIconDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotIconDotExampleMod.IButtonExampleProps
+  type ButtonIconExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotIconDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonScreenReaderExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotScreenReaderDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotScreenReaderDotExampleMod.IButtonExampleProps
+  type ButtonScreenReaderExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotScreenReaderDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonSplitCustomExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCustomSplitDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCustomSplitDotExampleMod.IButtonExampleProps
+  type ButtonSplitCustomExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotCustomSplitDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonSplitExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotSplitDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotSplitDotExampleMod.IButtonExampleProps
+  type ButtonSplitExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotSplitDotExampleMod.IButtonExampleProps
+  @scala.inline
+  def ButtonToggleExampleProps: typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotToggleDotExampleMod.IButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotToggleDotExampleMod.IButtonExampleProps
+  type ButtonToggleExampleProps = typings.officeDashUiDashFabricDashReact.libComponentsButtonExamplesButtonDotToggleDotExampleMod.IButtonExampleProps
+  @scala.inline
   def CalendarProps: ICalendarProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarDotTypesMod.ICalendarProps
   type CalendarProps = ICalendarProps
+  @scala.inline
+  def CalendarButtonExampleProps: ICalendarButtonExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalendarExamplesCalendarDotButtonDotExampleMod.ICalendarButtonExampleProps
+  type CalendarButtonExampleProps = ICalendarButtonExampleProps
+  type CalendarDayProps = ICalendarDayProps
+  @scala.inline
+  def CalendarInlineExampleProps: ICalendarInlineExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalendarExamplesCalendarDotInlineDotExampleMod.ICalendarInlineExampleProps
+  type CalendarInlineExampleProps = ICalendarInlineExampleProps
+  @scala.inline
+  def CalendarMonthProps: ICalendarMonthProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarMonthMod.ICalendarMonthProps
+  type CalendarMonthProps = ICalendarMonthProps
+  @scala.inline
+  def CalendarYearProps: ICalendarYearProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalendarCalendarYearMod.ICalendarYearProps
+  type CalendarYearProps = ICalendarYearProps
   @scala.inline
   def CalloutProps: ICalloutProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
   type CalloutProps = ICalloutProps
   @scala.inline
+  def CalloutContentProps: ICalloutProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
+  type CalloutContentProps = ICalloutProps
+  @scala.inline
   def CalloutContentBaseProps: ICalloutProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
   type CalloutContentBaseProps = ICalloutProps
+  @scala.inline
+  def CardCalloutProps: ICardCalloutProps.type = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardCardCalloutCardCalloutMod.ICardCalloutProps
+  type CardCalloutProps = ICardCalloutProps
   @scala.inline
   def CheckProps: ICheckProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCheckCheckDotTypesMod.ICheckProps
   type CheckProps = ICheckProps
@@ -198,6 +280,9 @@ trait officeDashUiDashFabricDashReactProps {
   def ChoiceGroupOptionProps: IChoiceGroupOptionProps.type = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps
   type ChoiceGroupOptionProps = IChoiceGroupOptionProps
   @scala.inline
+  def ChoiceGroupOptionBaseProps: IChoiceGroupOptionProps.type = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps
+  type ChoiceGroupOptionBaseProps = IChoiceGroupOptionProps
+  @scala.inline
   def CoachmarkProps: ICoachmarkProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps
   type CoachmarkProps = ICoachmarkProps
   @scala.inline
@@ -215,6 +300,18 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def ColorPickerGridCellBaseProps: IColorPickerGridCellProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps
   type ColorPickerGridCellBaseProps = IColorPickerGridCellProps
+  @scala.inline
+  def ColorRectangleProps: IColorRectangleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorRectangleColorRectangleDotTypesMod.IColorRectangleProps
+  type ColorRectangleProps = IColorRectangleProps
+  @scala.inline
+  def ColorRectangleBaseProps: IColorRectangleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorRectangleColorRectangleDotTypesMod.IColorRectangleProps
+  type ColorRectangleBaseProps = IColorRectangleProps
+  @scala.inline
+  def ColorSliderProps: IColorSliderProps.type = typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorSliderColorSliderDotTypesMod.IColorSliderProps
+  type ColorSliderProps = IColorSliderProps
+  @scala.inline
+  def ColorSliderBaseProps: IColorSliderProps.type = typings.officeDashUiDashFabricDashReact.libComponentsColorPickerColorSliderColorSliderDotTypesMod.IColorSliderProps
+  type ColorSliderBaseProps = IColorSliderProps
   @scala.inline
   def ComboBoxProps: IComboBoxProps.type = typings.officeDashUiDashFabricDashReact.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps
   type ComboBoxProps = IComboBoxProps
@@ -236,14 +333,26 @@ trait officeDashUiDashFabricDashReactProps {
   def ContextualMenuProps: IContextualMenuProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
   type ContextualMenuProps = IContextualMenuProps
   @scala.inline
+  def ContextualMenuAnchorProps: IContextualMenuItemWrapperProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDotTypesMod.IContextualMenuItemWrapperProps
+  type ContextualMenuAnchorProps = IContextualMenuItemWrapperProps
+  @scala.inline
   def ContextualMenuBaseProps: IContextualMenuProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
   type ContextualMenuBaseProps = IContextualMenuProps
+  @scala.inline
+  def ContextualMenuButtonProps: IContextualMenuItemWrapperProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDotTypesMod.IContextualMenuItemWrapperProps
+  type ContextualMenuButtonProps = IContextualMenuItemWrapperProps
   @scala.inline
   def ContextualMenuItemProps: IContextualMenuItemProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps
   type ContextualMenuItemProps = IContextualMenuItemProps
   @scala.inline
   def ContextualMenuItemBaseProps: IContextualMenuItemProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps
   type ContextualMenuItemBaseProps = IContextualMenuItemProps
+  @scala.inline
+  def ContextualMenuItemWrapperProps: IContextualMenuItemWrapperProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDotTypesMod.IContextualMenuItemWrapperProps
+  type ContextualMenuItemWrapperProps = IContextualMenuItemWrapperProps
+  @scala.inline
+  def ContextualMenuSplitButtonProps: IContextualMenuItemWrapperProps.type = typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWrapperDotTypesMod.IContextualMenuItemWrapperProps
+  type ContextualMenuSplitButtonProps = IContextualMenuItemWrapperProps
   @scala.inline
   def CustomizerProps: ICustomizerProps.type = typings.atUifabricUtilities.libCustomizationsCustomizerDotTypesMod.ICustomizerProps
   type CustomizerProps = ICustomizerProps
@@ -323,6 +432,9 @@ trait officeDashUiDashFabricDashReactProps {
   def DocumentCardActivityBaseProps: IDocumentCardActivityProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardActivityDotTypesMod.IDocumentCardActivityProps
   type DocumentCardActivityBaseProps = IDocumentCardActivityProps
   @scala.inline
+  def DocumentCardBaseProps: IDocumentCardProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.IDocumentCardProps
+  type DocumentCardBaseProps = IDocumentCardProps
+  @scala.inline
   def DocumentCardDetailsProps: IDocumentCardDetailsProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDetailsDotTypesMod.IDocumentCardDetailsProps
   type DocumentCardDetailsProps = IDocumentCardDetailsProps
   @scala.inline
@@ -331,6 +443,9 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def DocumentCardImageProps: IDocumentCardImageProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardImageDotTypesMod.IDocumentCardImageProps
   type DocumentCardImageProps = IDocumentCardImageProps
+  @scala.inline
+  def DocumentCardImageBaseProps: IDocumentCardImageProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardImageDotTypesMod.IDocumentCardImageProps
+  type DocumentCardImageBaseProps = IDocumentCardImageProps
   @scala.inline
   def DocumentCardLocationProps: IDocumentCardLocationProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardLocationDotTypesMod.IDocumentCardLocationProps
   type DocumentCardLocationProps = IDocumentCardLocationProps
@@ -347,6 +462,9 @@ trait officeDashUiDashFabricDashReactProps {
   def DocumentCardPreviewProps: IDocumentCardPreviewProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardPreviewDotTypesMod.IDocumentCardPreviewProps
   type DocumentCardPreviewProps = IDocumentCardPreviewProps
   @scala.inline
+  def DocumentCardPreviewBaseProps: IDocumentCardPreviewProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardPreviewDotTypesMod.IDocumentCardPreviewProps
+  type DocumentCardPreviewBaseProps = IDocumentCardPreviewProps
+  @scala.inline
   def DocumentCardStatusProps: IDocumentCardStatusProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardStatusDotTypesMod.IDocumentCardStatusProps
   type DocumentCardStatusProps = IDocumentCardStatusProps
   @scala.inline
@@ -359,11 +477,17 @@ trait officeDashUiDashFabricDashReactProps {
   def DocumentCardTitleBaseProps: IDocumentCardTitleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardTitleDotTypesMod.IDocumentCardTitleProps
   type DocumentCardTitleBaseProps = IDocumentCardTitleProps
   @scala.inline
+  def DraggableZoneProps: IDraggableZoneProps.type = typings.officeDashUiDashFabricDashReact.libUtilitiesDraggableZoneDraggableZoneDotTypesMod.IDraggableZoneProps
+  type DraggableZoneProps = IDraggableZoneProps
+  @scala.inline
   def DropdownProps: IDropdownProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownDotTypesMod.IDropdownProps
   type DropdownProps = IDropdownProps
   @scala.inline
   def DropdownBaseProps: IDropdownInternalProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDropdownDropdownDotBaseMod.IDropdownInternalProps
   type DropdownBaseProps = IDropdownInternalProps
+  @scala.inline
+  def EditingItemProps: IEditingSelectedPeopleItemProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListItemsEditingItemMod.IEditingSelectedPeopleItemProps
+  type EditingItemProps = IEditingSelectedPeopleItemProps
   @scala.inline
   def ExpandingCardProps: IExpandingCardProps.type = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps
   type ExpandingCardProps = IExpandingCardProps
@@ -388,6 +512,9 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def FacepileBaseProps: IFacepileProps.type = typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.IFacepileProps
   type FacepileBaseProps = IFacepileProps
+  @scala.inline
+  def FacepileButtonProps: IButtonProps.type = typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.IButtonProps
+  type FacepileButtonProps = IButtonProps
   type FloatingPeoplePickerProps = IPeopleFloatingPickerProps
   @scala.inline
   def FocusTrapCalloutProps: IFocusTrapCalloutProps.type = typings.officeDashUiDashFabricDashReact.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
@@ -405,19 +532,32 @@ trait officeDashUiDashFabricDashReactProps {
   def GridProps: IGridProps.type = typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod.IGridProps
   type GridProps = IGridProps
   @scala.inline
+  def GridBaseProps: IGridProps.type = typings.officeDashUiDashFabricDashReact.libUtilitiesGridGridDotTypesMod.IGridProps
+  type GridBaseProps = IGridProps
+  @scala.inline
   def GroupFooterProps: IGroupFooterProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupFooterDotTypesMod.IGroupFooterProps
   type GroupFooterProps = IGroupFooterProps
+  @scala.inline
+  def GroupFooterBaseProps: IGroupFooterProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupFooterDotTypesMod.IGroupFooterProps
+  type GroupFooterBaseProps = IGroupFooterProps
   @scala.inline
   def GroupHeaderProps: IGroupHeaderProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
   type GroupHeaderProps = IGroupHeaderProps
   @scala.inline
+  def GroupHeaderBaseProps: IGroupHeaderProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
+  type GroupHeaderBaseProps = IGroupHeaderProps
+  @scala.inline
   def GroupShowAllProps: IGroupShowAllProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShowAllDotTypesMod.IGroupShowAllProps
   type GroupShowAllProps = IGroupShowAllProps
+  @scala.inline
+  def GroupShowAllBaseProps: IGroupShowAllProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupShowAllDotTypesMod.IGroupShowAllProps
+  type GroupShowAllBaseProps = IGroupShowAllProps
   @scala.inline
   def GroupSpacerProps: IGroupSpacerProps.type = typings.officeDashUiDashFabricDashReact.libComponentsGroupedListGroupSpacerDotTypesMod.IGroupSpacerProps
   type GroupSpacerProps = IGroupSpacerProps
   type GroupedListProps = IGroupedListProps
   type GroupedListBaseProps = IGroupedListProps
+  type GroupedListSectionProps = IGroupedListSectionProps
   @scala.inline
   def HoverCardProps: IHoverCardProps.type = typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps
   type HoverCardProps = IHoverCardProps
@@ -445,6 +585,12 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def KeytipProps: IKeytipProps.type = typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
   type KeytipProps = IKeytipProps
+  @scala.inline
+  def KeytipContentProps: IKeytipProps.type = typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+  type KeytipContentProps = IKeytipProps
+  @scala.inline
+  def KeytipContentBaseProps: IKeytipProps.type = typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+  type KeytipContentBaseProps = IKeytipProps
   @scala.inline
   def KeytipLayerProps: IKeytipLayerProps.type = typings.officeDashUiDashFabricDashReact.libComponentsKeytipLayerKeytipLayerDotTypesMod.IKeytipLayerProps
   type KeytipLayerProps = IKeytipLayerProps
@@ -475,11 +621,26 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def ListProps: IListProps.type = typings.officeDashUiDashFabricDashReact.libComponentsListListDotTypesMod.IListProps
   type ListProps[T] = IListProps[T]
+  @scala.inline
+  def ListBasicExampleProps: IListBasicExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotBasicDotExampleMod.IListBasicExampleProps
+  type ListBasicExampleProps = IListBasicExampleProps
+  @scala.inline
+  def ListGhostingExampleProps: IListGhostingExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotGhostingDotExampleMod.IListGhostingExampleProps
+  type ListGhostingExampleProps = IListGhostingExampleProps
+  @scala.inline
+  def ListGridExampleProps: IListGridExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotGridDotExampleMod.IListGridExampleProps
+  type ListGridExampleProps = IListGridExampleProps
   type ListPeoplePickerProps = IPeoplePickerProps
   type ListPeoplePickerBaseProps = IPeoplePickerProps
   @scala.inline
+  def ListScrollingExampleProps: IListScrollingExampleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsListExamplesListDotScrollingDotExampleMod.IListScrollingExampleProps
+  type ListScrollingExampleProps = IListScrollingExampleProps
+  @scala.inline
   def MarqueeSelectionProps: IMarqueeSelectionProps.type = typings.officeDashUiDashFabricDashReact.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps
   type MarqueeSelectionProps = IMarqueeSelectionProps
+  @scala.inline
+  def MarqueeSelectionBaseProps: IMarqueeSelectionProps.type = typings.officeDashUiDashFabricDashReact.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps
+  type MarqueeSelectionBaseProps = IMarqueeSelectionProps
   @scala.inline
   def MaskedTextFieldProps: ITextFieldProps.type = typings.officeDashUiDashFabricDashReact.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps
   type MaskedTextFieldProps = ITextFieldProps
@@ -550,6 +711,12 @@ trait officeDashUiDashFabricDashReactProps {
   def PersonaCoinBaseProps: IPersonaCoinProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps
   type PersonaCoinBaseProps = IPersonaCoinProps
   @scala.inline
+  def PersonaPresenceProps: IPersonaPresenceProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaPresenceProps
+  type PersonaPresenceProps = IPersonaPresenceProps
+  @scala.inline
+  def PersonaPresenceBaseProps: IPersonaPresenceProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaPresenceProps
+  type PersonaPresenceBaseProps = IPersonaPresenceProps
+  @scala.inline
   def PivotProps: IPivotProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.IPivotProps
   type PivotProps = IPivotProps
   @scala.inline
@@ -600,6 +767,15 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def SearchBoxBaseProps: ISearchBoxProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps
   type SearchBoxBaseProps = ISearchBoxProps
+  @scala.inline
+  def SelectedItemDefaultProps: IPeoplePickerItemSelectedProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod.IPeoplePickerItemSelectedProps
+  type SelectedItemDefaultProps = IPeoplePickerItemSelectedProps
+  @scala.inline
+  def SelectedItemWithContextMenuProps: ISelectedItemWithContextMenuProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListItemsSelectedItemWithContextMenuMod.ISelectedItemWithContextMenuProps
+  type SelectedItemWithContextMenuProps = ISelectedItemWithContextMenuProps
+  @scala.inline
+  def SelectedItemWithMenuProps: IPickerItemProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps
+  type SelectedItemWithMenuProps = IPeoplePickerItemWithMenuProps
   @scala.inline
   def SelectedPeopleListProps: ISelectedPeopleProps.type = typings.officeDashUiDashFabricDashReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleProps
   type SelectedPeopleListProps = ISelectedPeopleProps
@@ -669,6 +845,12 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def StickyProps: IStickyProps.type = typings.officeDashUiDashFabricDashReact.libComponentsStickyStickyDotTypesMod.IStickyProps
   type StickyProps = IStickyProps
+  @scala.inline
+  def SuggestionItemNormalProps: IPersonaProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
+  type SuggestionItemNormalProps = IPersonaProps
+  @scala.inline
+  def SuggestionItemSmallProps: IPersonaProps.type = typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
+  type SuggestionItemSmallProps = IPersonaProps
   type SuggestionsProps[T] = ISuggestionsProps[T]
   type SuggestionsControlProps[T] = ISuggestionsControlProps[T]
   type SuggestionsCoreProps[T] = ISuggestionsCoreProps[T]
@@ -743,6 +925,9 @@ trait officeDashUiDashFabricDashReactProps {
   @scala.inline
   def VerticalDividerProps: IVerticalDividerProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps
   type VerticalDividerProps = IVerticalDividerProps
+  @scala.inline
+  def VerticalDividerBaseProps: IVerticalDividerProps.type = typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps
+  type VerticalDividerBaseProps = IVerticalDividerProps
   @scala.inline
   def VirtualizedComboBoxProps: IComboBoxProps.type = typings.officeDashUiDashFabricDashReact.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps
   type VirtualizedComboBoxProps = IComboBoxProps

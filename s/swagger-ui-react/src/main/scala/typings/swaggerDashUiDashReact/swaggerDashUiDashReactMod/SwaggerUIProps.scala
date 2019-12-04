@@ -1,6 +1,5 @@
 package typings.swaggerDashUiDashReact.swaggerDashUiDashReactMod
 
-import typings.swaggerDashUiDashReact.System
 import typings.swaggerDashUiDashReact.swaggerDashUiDashReactStrings.full
 import typings.swaggerDashUiDashReact.swaggerDashUiDashReactStrings.list
 import typings.swaggerDashUiDashReact.swaggerDashUiDashReactStrings.none

@@ -17,8 +17,6 @@ class Literal protected ()
   /* CompleteClass */
   override var datatype: typings.rdfDashJs.rdfDashJsMod.NamedNode = js.native
   val datatypeString: String = js.native
-  @JSName("datatype")
-  val datatype_Literal: NamedNode = js.native
   val id: String = js.native
   /**
     * the language as lowercase BCP47 string (examples: en, en-gb)
@@ -32,8 +30,6 @@ class Literal protected ()
     */
   /* CompleteClass */
   override var termType: typings.rdfDashJs.rdfDashJsStrings.Literal = js.native
-  @JSName("termType")
-  val termType_Literal: typings.n3.n3Strings.Literal = js.native
   /**
     * The text value, unescaped, without language or type (example: Brad Pitt).
     */

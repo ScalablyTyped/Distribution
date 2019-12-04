@@ -47,7 +47,7 @@ trait CoordinateGridMixin[T]
   var xAxisPadding_Original: IGetSet[Double, T] = js.native
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     T
   ] = js.native
   @JSName("xUnits")
@@ -60,7 +60,7 @@ trait CoordinateGridMixin[T]
   var yAxisPadding_Original: IGetSet[Double, T] = js.native
   @JSName("yAxis")
   var yAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     T
   ] = js.native
   @JSName("y")
@@ -115,7 +115,9 @@ trait CoordinateGridMixin[T]
   def x(): js.Function1[/* n */ js.Any, _] = js.native
   def x(t: js.Function1[/* n */ js.Any, _]): T = js.native
   def xAxis(): js.Any = js.native
-  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): T = js.native
+  def xAxis(
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+  ): T = js.native
   def xAxisLabel(): String = js.native
   def xAxisLabel(t: String): T = js.native
   def xAxisLabel(t: String, r: Double): T = js.native
@@ -129,7 +131,9 @@ trait CoordinateGridMixin[T]
   def y(): Scale[Double] = js.native
   def y(t: Scale[Double]): T = js.native
   def yAxis(): js.Any = js.native
-  def yAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): T = js.native
+  def yAxis(
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+  ): T = js.native
   def yAxisLabel(): String = js.native
   def yAxisLabel(t: String): T = js.native
   def yAxisLabel(t: String, r: Double): T = js.native

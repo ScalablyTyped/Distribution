@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.6.1-cb6e0b"
+version := "3.6.1-c1e755"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

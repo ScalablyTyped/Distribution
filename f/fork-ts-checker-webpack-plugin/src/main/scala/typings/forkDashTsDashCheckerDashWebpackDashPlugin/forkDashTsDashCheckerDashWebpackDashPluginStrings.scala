@@ -9,7 +9,16 @@ import scala.scalajs.js.annotation._
 
 object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   @js.native
+  sealed trait `0DOT8` extends js.Object
+  
+  @js.native
+  sealed trait `3DOT7` extends js.Object
+  
+  @js.native
   sealed trait INTERNAL_ERROR extends js.Object
+  
+  @js.native
+  sealed trait JS extends js.Object
   
   @js.native
   sealed trait cancel extends ForkTsCheckerHooks
@@ -27,6 +36,9 @@ object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   sealed trait done extends ForkTsCheckerHooks
   
   @js.native
+  sealed trait dts extends js.Object
+  
+  @js.native
   sealed trait emit extends ForkTsCheckerHooks
   
   @js.native
@@ -37,6 +49,9 @@ object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   
   @js.native
   sealed trait receive extends ForkTsCheckerHooks
+  
+  @js.native
+  sealed trait run extends js.Object
   
   @js.native
   sealed trait serviceBeforeStart extends ForkTsCheckerHooks
@@ -57,7 +72,13 @@ object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   sealed trait warning extends Severity
   
   @scala.inline
+  def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
+  @scala.inline
+  def `3DOT7`: `3DOT7` = "3.7".asInstanceOf[`3DOT7`]
+  @scala.inline
   def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
+  @scala.inline
+  def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
@@ -69,6 +90,8 @@ object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   @scala.inline
+  def dts: dts = "dts".asInstanceOf[dts]
+  @scala.inline
   def emit: emit = "emit".asInstanceOf[emit]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
@@ -76,6 +99,8 @@ object forkDashTsDashCheckerDashWebpackDashPluginStrings {
   def lint: lint = "lint".asInstanceOf[lint]
   @scala.inline
   def receive: receive = "receive".asInstanceOf[receive]
+  @scala.inline
+  def run: run = "run".asInstanceOf[run]
   @scala.inline
   def serviceBeforeStart: serviceBeforeStart = "serviceBeforeStart".asInstanceOf[serviceBeforeStart]
   @scala.inline

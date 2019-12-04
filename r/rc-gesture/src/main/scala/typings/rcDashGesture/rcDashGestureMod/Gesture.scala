@@ -1,6 +1,6 @@
 package typings.rcDashGesture.rcDashGestureMod
 
-import typings.rcDashGesture.Anon_AvailablePanDirection
+import typings.rcDashGesture.Anon_AvailablePan
 import typings.rcDashGesture.rcDashGestureStrings.`pan-x pan-y`
 import typings.rcDashGesture.rcDashGestureStrings.`pan-x`
 import typings.rcDashGesture.rcDashGestureStrings.`pan-y`
@@ -31,7 +31,7 @@ trait Gesture
   @JSName("componentWillUnmount")
   def componentWillUnmount_MGesture(): Unit = js.native
   def doSingleTouchEnd(status: js.Any): Unit = js.native
-  def getGestureState(): Anon_AvailablePanDirection = js.native
+  def getGestureState(): Anon_AvailablePan = js.native
   def getTouchAction(): auto | (`pan-x pan-y`) | `pan-x` | `pan-y` = js.native
   def getTouches(e: js.Any): js.Any = js.native
   def initGestureStatus(e: js.Any): Unit = js.native

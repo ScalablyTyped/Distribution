@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vuex"
-version := "3.1.2-339070"
+version := "3.1.2-af4ff4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

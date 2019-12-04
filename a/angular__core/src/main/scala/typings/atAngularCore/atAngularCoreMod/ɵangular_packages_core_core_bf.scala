@@ -1,7 +1,5 @@
 package typings.atAngularCore.atAngularCoreMod
 
-import typings.atAngularCore.InitialInputData
-import typings.atAngularCore.TAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

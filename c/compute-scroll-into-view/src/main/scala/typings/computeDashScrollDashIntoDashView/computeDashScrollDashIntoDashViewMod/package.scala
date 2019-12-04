@@ -9,4 +9,5 @@ package object computeDashScrollDashIntoDashViewMod {
 
   type CustomScrollBoundary = Element | CustomScrollBoundaryCallback | Null
   type CustomScrollBoundaryCallback = js.Function1[/* parent */ Element, Boolean]
+  type SkipOverflowHiddenElements = Boolean
 }

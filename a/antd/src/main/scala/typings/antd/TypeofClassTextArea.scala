@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antd.esInputTextAreaMod.TextAreaProps
-import typings.antd.esInputTextAreaMod.default
+import typings.antd.libInputTextAreaMod.TextAreaProps
+import typings.antd.libInputTextAreaMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

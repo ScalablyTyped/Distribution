@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod.crypto
 
-import typings.openpgp.Integer
+import typings.openpgp.openpgpMod.Integer
 import typings.openpgp.openpgpMod.`type`.kdf_params.KDFParams
 import typings.openpgp.openpgpMod.`type`.mpi.MPI
 import typings.openpgp.openpgpMod.`type`.oid.OID

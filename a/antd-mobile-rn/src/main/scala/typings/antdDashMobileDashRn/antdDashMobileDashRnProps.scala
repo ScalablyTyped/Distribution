@@ -1,32 +1,46 @@
 package typings.antdDashMobileDashRn
 
 import typings.antdDashMobileDashRn.libAccordionIndexDotNativeMod.AccordionNativeProps
+import typings.antdDashMobileDashRn.libActionDashSheetAndroidContainerDotNativeMod.ActionSheetNativeProps
 import typings.antdDashMobileDashRn.libActivityDashIndicatorIndexDotNativeMod.ActivityIndicatorNativeProps
 import typings.antdDashMobileDashRn.libBadgeIndexDotNativeMod.BadgeNativeProps
 import typings.antdDashMobileDashRn.libCardCardBodyDotNativeMod.CardBodyProps
 import typings.antdDashMobileDashRn.libCardCardFooterDotNativeMod.CardFooterProps
 import typings.antdDashMobileDashRn.libCardCardHeaderDotNativeMod.CardHeaderProps
 import typings.antdDashMobileDashRn.libCardIndexDotNativeMod.CardNativeProps
+import typings.antdDashMobileDashRn.libCheckboxAgreeItemDotNativeMod.AgreeItemNativeProps
 import typings.antdDashMobileDashRn.libCheckboxCheckboxDotNativeMod.ICheckboxNativeProps
+import typings.antdDashMobileDashRn.libCheckboxCheckboxItemDotNativeMod.ICheckboxItemNativeProps
 import typings.antdDashMobileDashRn.libDateDashPickerIndexDotNativeMod.DatePickerNativeProps
 import typings.antdDashMobileDashRn.libDrawerIndexDotNativeMod.DrawerNativeProps
+import typings.antdDashMobileDashRn.libFlexFlexItemDotNativeMod.FlexItemProps
+import typings.antdDashMobileDashRn.libImageDashPickerImageRollDotNativeMod.ImageRollProps
 import typings.antdDashMobileDashRn.libImageDashPickerIndexDotNativeMod.ImagePickerNativeProps
 import typings.antdDashMobileDashRn.libInputDashItemInputDotNativeMod.TextInputProps
 import typings.antdDashMobileDashRn.libListListItemDotNativeMod.ListItemProps
+import typings.antdDashMobileDashRn.libModalAlertContainerDotNativeMod.AlertContainerProps
 import typings.antdDashMobileDashRn.libModalModalDotNativeMod.IModalNativeProps
+import typings.antdDashMobileDashRn.libModalOperationContainerDotNativeMod.OperationContainerProps
+import typings.antdDashMobileDashRn.libModalPromptContainerDotNativeMod.PropmptContainerProps
 import typings.antdDashMobileDashRn.libNoticeDashBarIndexDotNativeMod.NoticeNativeProps
 import typings.antdDashMobileDashRn.libNoticeDashBarMarqueeDotNativeMod.MarqueeProps
 import typings.antdDashMobileDashRn.libPaginationIndexDotNativeMod.PaginationNativeProps
 import typings.antdDashMobileDashRn.libPickerAbstractPickerMod.AbstractPickerProps
 import typings.antdDashMobileDashRn.libPickerDashViewPickerViewMod.IPickerView
 import typings.antdDashMobileDashRn.libRadioRadioDotNativeMod.RadioNativeProps
+import typings.antdDashMobileDashRn.libRadioRadioItemDotNativeMod.RadioItemNativeProps
 import typings.antdDashMobileDashRn.libResultIndexDotNativeMod.ResultNativeProps
 import typings.antdDashMobileDashRn.libSearchDashBarIndexDotNativeMod.SearchBarNativeProps
+import typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotAndroidMod.SegmentControlNativeProps
 import typings.antdDashMobileDashRn.libStepperIndexDotNativeMod.StepProps
 import typings.antdDashMobileDashRn.libStepsIndexDotNativeMod.StepsNativeProps
+import typings.antdDashMobileDashRn.libStepsStepsItemDotNativeMod.StepsItemProps
 import typings.antdDashMobileDashRn.libSwitchIndexDotNativeMod.AntmSwitchProps
+import typings.antdDashMobileDashRn.libTabDashBarTabBarItemDotNativeMod.TabBarItemProps
+import typings.antdDashMobileDashRn.libTabDashBarTabbarDotAndroidMod.TabBarNativeProps
 import typings.antdDashMobileDashRn.libTagIndexDotNativeMod.TagNativeProps
 import typings.antdDashMobileDashRn.libTextareaDashItemIndexDotNativeMod.TextareaItemNativeProps
+import typings.antdDashMobileDashRn.libToastToastContainerDotNativeMod.ToastProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,6 +52,15 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def ActivityIndicatorProps: ActivityIndicatorNativeProps.type = typings.antdDashMobileDashRn.libActivityDashIndicatorIndexDotNativeMod.ActivityIndicatorNativeProps
   type ActivityIndicatorProps = ActivityIndicatorNativeProps
+  @scala.inline
+  def AgreeItemDotNativeProps: AgreeItemNativeProps.type = typings.antdDashMobileDashRn.libCheckboxAgreeItemDotNativeMod.AgreeItemNativeProps
+  type AgreeItemDotNativeProps = AgreeItemNativeProps
+  @scala.inline
+  def AlertContainerDotNativeProps: AlertContainerProps.type = typings.antdDashMobileDashRn.libModalAlertContainerDotNativeMod.AlertContainerProps
+  type AlertContainerDotNativeProps = AlertContainerProps
+  @scala.inline
+  def AndroidContainerDotNativeProps: ActionSheetNativeProps.type = typings.antdDashMobileDashRn.libActionDashSheetAndroidContainerDotNativeMod.ActionSheetNativeProps
+  type AndroidContainerDotNativeProps = ActionSheetNativeProps
   @scala.inline
   def BadgeProps: BadgeNativeProps.type = typings.antdDashMobileDashRn.libBadgeIndexDotNativeMod.BadgeNativeProps
   type BadgeProps = BadgeNativeProps
@@ -69,6 +92,9 @@ trait antdDashMobileDashRnProps {
   def CheckboxDotNativeProps: ICheckboxNativeProps.type = typings.antdDashMobileDashRn.libCheckboxCheckboxDotNativeMod.ICheckboxNativeProps
   type CheckboxDotNativeProps = ICheckboxNativeProps
   @scala.inline
+  def CheckboxItemDotNativeProps: ICheckboxItemNativeProps.type = typings.antdDashMobileDashRn.libCheckboxCheckboxItemDotNativeMod.ICheckboxItemNativeProps
+  type CheckboxItemDotNativeProps = ICheckboxItemNativeProps
+  @scala.inline
   def DateDashPickerDashViewProps: typings.antdDashMobileDashRn.libDateDashPickerDashViewPropsTypeMod.DatePickerProps.type = typings.antdDashMobileDashRn.libDateDashPickerDashViewPropsTypeMod.DatePickerProps
   type DateDashPickerDashViewProps = typings.antdDashMobileDashRn.libDateDashPickerDashViewPropsTypeMod.DatePickerProps
   @scala.inline
@@ -87,6 +113,9 @@ trait antdDashMobileDashRnProps {
   def FlexDotNativeProps: typings.antdDashMobileDashRn.libFlexFlexDotNativeMod.FlexProps.type = typings.antdDashMobileDashRn.libFlexFlexDotNativeMod.FlexProps
   type FlexDotNativeProps = typings.antdDashMobileDashRn.libFlexFlexDotNativeMod.FlexProps
   @scala.inline
+  def FlexItemDotNativeProps: FlexItemProps.type = typings.antdDashMobileDashRn.libFlexFlexItemDotNativeMod.FlexItemProps
+  type FlexItemDotNativeProps = FlexItemProps
+  @scala.inline
   def GridProps: typings.antdDashMobileDashRn.libGridIndexDotNativeMod.GridProps.type = typings.antdDashMobileDashRn.libGridIndexDotNativeMod.GridProps
   type GridProps = typings.antdDashMobileDashRn.libGridIndexDotNativeMod.GridProps
   @scala.inline
@@ -95,6 +124,9 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def ImagePickerProps: ImagePickerNativeProps.type = typings.antdDashMobileDashRn.libImageDashPickerIndexDotNativeMod.ImagePickerNativeProps
   type ImagePickerProps = ImagePickerNativeProps
+  @scala.inline
+  def ImageRollDotNativeProps: ImageRollProps.type = typings.antdDashMobileDashRn.libImageDashPickerImageRollDotNativeMod.ImageRollProps
+  type ImageRollDotNativeProps = ImageRollProps
   @scala.inline
   def IndexDotNativeProps: TagNativeProps.type = typings.antdDashMobileDashRn.libTagIndexDotNativeMod.TagNativeProps
   type IndexDotNativeProps = TagNativeProps
@@ -129,6 +161,9 @@ trait antdDashMobileDashRnProps {
   def NoticeBarProps: NoticeNativeProps.type = typings.antdDashMobileDashRn.libNoticeDashBarIndexDotNativeMod.NoticeNativeProps
   type NoticeBarProps = NoticeNativeProps
   @scala.inline
+  def OperationContainerDotNativeProps: OperationContainerProps.type = typings.antdDashMobileDashRn.libModalOperationContainerDotNativeMod.OperationContainerProps
+  type OperationContainerDotNativeProps = OperationContainerProps
+  @scala.inline
   def PaginationProps: PaginationNativeProps.type = typings.antdDashMobileDashRn.libPaginationIndexDotNativeMod.PaginationNativeProps
   type PaginationProps = PaginationNativeProps
   @scala.inline
@@ -144,11 +179,17 @@ trait antdDashMobileDashRnProps {
   def ProgressProps: typings.antdDashMobileDashRn.libProgressIndexDotNativeMod.ProgressProps.type = typings.antdDashMobileDashRn.libProgressIndexDotNativeMod.ProgressProps
   type ProgressProps = typings.antdDashMobileDashRn.libProgressIndexDotNativeMod.ProgressProps
   @scala.inline
+  def PromptContainerDotNativeProps: PropmptContainerProps.type = typings.antdDashMobileDashRn.libModalPromptContainerDotNativeMod.PropmptContainerProps
+  type PromptContainerDotNativeProps = PropmptContainerProps
+  @scala.inline
   def RadioProps: RadioNativeProps.type = typings.antdDashMobileDashRn.libRadioRadioDotNativeMod.RadioNativeProps
   type RadioProps = RadioNativeProps
   @scala.inline
   def RadioDotNativeProps: RadioNativeProps.type = typings.antdDashMobileDashRn.libRadioRadioDotNativeMod.RadioNativeProps
   type RadioDotNativeProps = RadioNativeProps
+  @scala.inline
+  def RadioItemDotNativeProps: RadioItemNativeProps.type = typings.antdDashMobileDashRn.libRadioRadioItemDotNativeMod.RadioItemNativeProps
+  type RadioItemDotNativeProps = RadioItemNativeProps
   @scala.inline
   def ResultProps: ResultNativeProps.type = typings.antdDashMobileDashRn.libResultIndexDotNativeMod.ResultNativeProps
   type ResultProps = ResultNativeProps
@@ -158,6 +199,9 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def SegmentedControlProps: typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps.type = typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
   type SegmentedControlProps = typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
+  @scala.inline
+  def SegmentedDotAndroidProps: SegmentControlNativeProps.type = typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotAndroidMod.SegmentControlNativeProps
+  type SegmentedDotAndroidProps = SegmentControlNativeProps
   @scala.inline
   def SegmentedDotIosProps: typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps.type = typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
   type SegmentedDotIosProps = typings.antdDashMobileDashRn.libSegmentedDashControlSegmentedDotIosMod.SegmentedControlProps
@@ -171,6 +215,9 @@ trait antdDashMobileDashRnProps {
   def StepsProps: StepsNativeProps.type = typings.antdDashMobileDashRn.libStepsIndexDotNativeMod.StepsNativeProps
   type StepsProps = StepsNativeProps
   @scala.inline
+  def StepsItemDotNativeProps: StepsItemProps.type = typings.antdDashMobileDashRn.libStepsStepsItemDotNativeMod.StepsItemProps
+  type StepsItemDotNativeProps = StepsItemProps
+  @scala.inline
   def SwipeActionProps: typings.antdDashMobileDashRn.libSwipeDashActionIndexDotNativeMod.SwipeActionProps.type = typings.antdDashMobileDashRn.libSwipeDashActionIndexDotNativeMod.SwipeActionProps
   type SwipeActionProps = typings.antdDashMobileDashRn.libSwipeDashActionIndexDotNativeMod.SwipeActionProps
   @scala.inline
@@ -179,6 +226,12 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def TabBarProps: typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps.type = typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps
   type TabBarProps = typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps
+  @scala.inline
+  def TabBarItemDotNativeProps: TabBarItemProps.type = typings.antdDashMobileDashRn.libTabDashBarTabBarItemDotNativeMod.TabBarItemProps
+  type TabBarItemDotNativeProps = TabBarItemProps
+  @scala.inline
+  def TabbarDotAndroidProps: TabBarNativeProps.type = typings.antdDashMobileDashRn.libTabDashBarTabbarDotAndroidMod.TabBarNativeProps
+  type TabbarDotAndroidProps = TabBarNativeProps
   @scala.inline
   def TabbarDotIosProps: typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps.type = typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps
   type TabbarDotIosProps = typings.antdDashMobileDashRn.libTabDashBarPropsTypeMod.TabBarProps
@@ -191,6 +244,9 @@ trait antdDashMobileDashRnProps {
   @scala.inline
   def TextareaItemProps: TextareaItemNativeProps.type = typings.antdDashMobileDashRn.libTextareaDashItemIndexDotNativeMod.TextareaItemNativeProps
   type TextareaItemProps = TextareaItemNativeProps
+  @scala.inline
+  def ToastContainerDotNativeProps: ToastProps.type = typings.antdDashMobileDashRn.libToastToastContainerDotNativeMod.ToastProps
+  type ToastContainerDotNativeProps = ToastProps
   @scala.inline
   def WhiteSpaceProps: typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps.type = typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps
   type WhiteSpaceProps = typings.antdDashMobileDashRn.libWhiteDashSpaceIndexDotNativeMod.WhiteSpaceProps

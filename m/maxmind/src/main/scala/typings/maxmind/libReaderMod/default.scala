@@ -1,8 +1,8 @@
 package typings.maxmind.libReaderMod
 
 import typings.maxmind.libMetadataMod.Metadata
-import typings.maxmind.libMod.OpenOpts
 import typings.maxmind.libReaderResponseMod.Response
+import typings.maxmind.maxmindMod.OpenOpts
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

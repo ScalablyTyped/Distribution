@@ -22,7 +22,7 @@ object libMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Option: FunctionComponent[OptionProps] = js.native
-    var defaultProps: Anon_FilterOptionHasValue = js.native
+    var defaultProps: Anon_FilterOption = js.native
     def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): Partial[MentionsState] = js.native
   }
   

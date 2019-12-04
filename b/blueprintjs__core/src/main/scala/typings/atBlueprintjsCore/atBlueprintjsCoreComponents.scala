@@ -93,6 +93,8 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def HTMLTable: ComponentType[HTMLTableProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.HTMLTable].asInstanceOf[typings.react.reactMod.ComponentType[HTMLTableProps]]
   @scala.inline
+  def Handle: ComponentType[HandleProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsSliderHandleMod.Handle].asInstanceOf[typings.react.reactMod.ComponentType[HandleProps]]
+  @scala.inline
   def Hotkey: ComponentType[HotkeyProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Hotkey].asInstanceOf[typings.react.reactMod.ComponentType[HotkeyProps]]
   @scala.inline
   def Hotkeys: ComponentType[HotkeysProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Hotkeys].asInstanceOf[typings.react.reactMod.ComponentType[HotkeysProps]]
@@ -141,7 +143,11 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   @scala.inline
   def PanelStack: ComponentType[PanelStackProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.PanelStack].asInstanceOf[typings.react.reactMod.ComponentType[PanelStackProps]]
   @scala.inline
+  def PanelView: ComponentType[PanelViewProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelViewMod.PanelView].asInstanceOf[typings.react.reactMod.ComponentType[PanelViewProps]]
+  @scala.inline
   def Popover: ComponentType[PopoverProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Popover].asInstanceOf[typings.react.reactMod.ComponentType[PopoverProps]]
+  @scala.inline
+  def PopoverArrow: ComponentType[PopoverArrowProps] = typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverArrowMod.PopoverArrow.asInstanceOf[typings.react.reactMod.ComponentType[PopoverArrowProps]]
   @scala.inline
   def Portal: ComponentType[PortalProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Portal].asInstanceOf[typings.react.reactMod.ComponentType[PortalProps]]
   @scala.inline
@@ -165,6 +171,8 @@ object atBlueprintjsCoreComponents extends atBlueprintjsCoreProps {
   def Switch: ComponentType[SwitchProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Switch].asInstanceOf[typings.react.reactMod.ComponentType[SwitchProps]]
   @scala.inline
   def Tab: ComponentType[TabProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Tab].asInstanceOf[typings.react.reactMod.ComponentType[TabProps]]
+  @scala.inline
+  def TabTitle: ComponentType[TabTitleProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsTabsTabTitleMod.TabTitle].asInstanceOf[typings.react.reactMod.ComponentType[TabTitleProps]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.atBlueprintjsCore.libEsmComponentsMod.Tabs].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline

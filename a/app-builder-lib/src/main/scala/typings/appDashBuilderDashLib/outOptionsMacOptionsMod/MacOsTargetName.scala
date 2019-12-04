@@ -1,11 +1,12 @@
 package typings.appDashBuilderDashLib.outOptionsMacOptionsMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.default_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.default
+  - typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.default_
   - typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.dmg
   - typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.mas
   - typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.`mas-dev`
@@ -26,7 +27,7 @@ object MacOsTargetName {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def default: typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.default = this.cast("default")
+  def default: default_ = this.cast("default")
   @scala.inline
   def dir: typings.appDashBuilderDashLib.appDashBuilderDashLibStrings.dir = this.cast("dir")
   @scala.inline

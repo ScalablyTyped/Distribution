@@ -1,6 +1,5 @@
 package typings.reactDashDayDashPicker.typesPropsMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.DetailedHTMLProps
@@ -8,6 +7,7 @@ import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SFC

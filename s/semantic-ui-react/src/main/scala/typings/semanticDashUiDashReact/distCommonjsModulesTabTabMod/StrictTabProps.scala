@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesTabTabMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.semanticDashUiDashReact.Anon_MenuItem
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.left
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.right

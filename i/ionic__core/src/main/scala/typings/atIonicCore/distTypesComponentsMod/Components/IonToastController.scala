@@ -1,6 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToastElement
+import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +13,7 @@ trait IonToastController extends js.Object {
     * @param options The options to use to create the toast.
     */
   def create(): js.Promise[HTMLIonToastElement] = js.native
-  def create(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastOptions */ js.Any
-  ): js.Promise[HTMLIonToastElement] = js.native
+  def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = js.native
   /**
     * Dismiss the open toast overlay.
     * @param data Any data to emit in the dismiss events.

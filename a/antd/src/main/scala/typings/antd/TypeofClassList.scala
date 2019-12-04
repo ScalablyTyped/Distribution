@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antd.esTransferListMod.TransferListProps
-import typings.antd.esTransferListMod.default
+import typings.antd.libTransferListMod.TransferListProps
+import typings.antd.libTransferListMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esModalModalMod.ModalFuncProps
+import typings.antd.libModalModalMod.ModalFuncProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -24,7 +24,7 @@ trait Options extends js.Object {
   var autostop: js.UndefOr[Boolean] = js.undefined
   var displayName: js.UndefOr[String] = js.undefined
   var dtmfType: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DtmfType */ js.Any
   ] = js.undefined
   var experimentalFeatures: js.UndefOr[Boolean] = js.undefined
   var extraSupported: js.UndefOr[js.Array[String]] = js.undefined
@@ -62,7 +62,7 @@ object Options {
     autostart: js.UndefOr[Boolean] = js.undefined,
     autostop: js.UndefOr[Boolean] = js.undefined,
     displayName: String = null,
-    dtmfType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.Any = null,
+    dtmfType: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DtmfType */ js.Any = null,
     experimentalFeatures: js.UndefOr[Boolean] = js.undefined,
     extraSupported: js.Array[String] = null,
     forceRport: js.UndefOr[Boolean] = js.undefined,

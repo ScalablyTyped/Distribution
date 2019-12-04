@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.SubscribableOrPromise
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +7,12 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/debounce", JSImport.Namespace)
 @js.native
 object operatorDebounceMod extends js.Object {
-  def debounce[T](`this`: Observable[T], durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[_]]): Observable[T] = js.native
+  def debounce[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    durationSelector: js.Function1[
+      /* value */ T, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
+    ]
+  ): js.Any = js.native
 }
 

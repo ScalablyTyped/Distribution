@@ -2,7 +2,7 @@ package typings.rcDashTable.libTableMod
 
 import typings.rcDashTable.Anon_Cancel
 import typings.rcDashTable.Anon_Remove
-import typings.rcDashTable.Anon_TableAnonColumnManagerComponents
+import typings.rcDashTable.Anon_TableAnonColumnManager
 import typings.rcDashTable.libInterfaceMod.DefaultValueType
 import typings.rcDashTable.libInterfaceMod.Expander
 import typings.rcDashTable.libInterfaceMod.ScrollPosition
@@ -43,7 +43,7 @@ trait Table[ValueType]
   def componentDidUpdate_MTable(prevProps: js.Any): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTable(): Unit = js.native
-  def getChildContext(): Anon_TableAnonColumnManagerComponents[ValueType] = js.native
+  def getChildContext(): Anon_TableAnonColumnManager[ValueType] = js.native
   def getRowKey(record: ValueType, index: Double): js.Any = js.native
   def handleWindowResize(): Unit = js.native
   def hasScrollX(): Boolean = js.native

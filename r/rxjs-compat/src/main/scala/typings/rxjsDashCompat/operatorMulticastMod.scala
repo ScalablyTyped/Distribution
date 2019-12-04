@@ -1,11 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.FactoryOrValue
-import typings.rxjs.internalTypesMod.MonoTypeOperatorFunction
-import typings.rxjs.internalTypesMod.OperatorFunction
-import typings.rxjs.rxjsMod.ConnectableObservable
-import typings.rxjs.rxjsMod.Observable
-import typings.rxjs.rxjsMod.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,18 +7,37 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/multicast", JSImport.Namespace)
 @js.native
 object operatorMulticastMod extends js.Object {
-  def multicast[T](SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): ConnectableObservable[T] = js.native
   def multicast[T](
-    SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]],
-    selector: MonoTypeOperatorFunction[T]
-  ): Observable[T] = js.native
-  def multicast[T](`this`: Observable[T], subjectOrSubjectFactory: FactoryOrValue[Subject[T]]): ConnectableObservable[T] = js.native
-  @JSName("multicast")
-  def multicast_TR[T, R](SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): ConnectableObservable[R] = js.native
+    SubjectFactory: js.ThisFunction0[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ _
+    ]
+  ): js.Any = js.native
+  def multicast[T](
+    SubjectFactory: js.ThisFunction0[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ _
+    ],
+    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MonoTypeOperatorFunction<T> */ js.Any
+  ): js.Any = js.native
+  def multicast[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    subjectOrSubjectFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FactoryOrValue<Subject<T>> */ js.Any
+  ): js.Any = js.native
   @JSName("multicast")
   def multicast_TR[T, R](
-    SubjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]],
-    selector: OperatorFunction[T, R]
-  ): Observable[R] = js.native
+    SubjectFactory: js.ThisFunction0[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ _
+    ]
+  ): js.Any = js.native
+  @JSName("multicast")
+  def multicast_TR[T, R](
+    SubjectFactory: js.ThisFunction0[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* this */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subject<T> */ _
+    ],
+    selector: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OperatorFunction<T, R> */ js.Any
+  ): js.Any = js.native
 }
 

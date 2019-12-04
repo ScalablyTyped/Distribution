@@ -1,8 +1,8 @@
 package typings.atFormatjsIntlDashUtils
 
 import typings.atFormatjsIntlDashUtils.distDiffMod.Unit
+import typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
 import typings.atFormatjsIntlDashUtils.distRelativeDashTimeDashTypesMod.RelativeTimeField
-import typings.atFormatjsIntlDashUtils.libPluralDashRulesDashTypesMod.LDMLPluralRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,174 +23,114 @@ object atFormatjsIntlDashUtilsStrings {
   @js.native
   sealed trait day
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `day-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `day-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `day-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `day-short` extends RelativeTimeField
   
   @js.native
-  sealed trait few
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait few extends LDMLPluralRule
   
   @js.native
   sealed trait hour
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `hour-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `hour-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `hour-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `hour-short` extends RelativeTimeField
   
   @js.native
   sealed trait lookup extends js.Object
   
   @js.native
-  sealed trait many
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait many extends LDMLPluralRule
   
   @js.native
   sealed trait minute
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `minute-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `minute-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `minute-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `minute-short` extends RelativeTimeField
   
   @js.native
   sealed trait month
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `month-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `month-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `month-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `month-short` extends RelativeTimeField
   
   @js.native
-  sealed trait one
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait one extends LDMLPluralRule
   
   @js.native
-  sealed trait other
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait other extends LDMLPluralRule
   
   @js.native
   sealed trait quarter
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `quarter-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `quarter-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `quarter-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `quarter-short` extends RelativeTimeField
   
   @js.native
   sealed trait second
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `second-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `second-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `second-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `second-short` extends RelativeTimeField
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait two
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait two extends LDMLPluralRule
   
   @js.native
   sealed trait week
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `week-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `week-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `week-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `week-short` extends RelativeTimeField
   
   @js.native
   sealed trait year
     extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
        with Unit
-       with typings.atFormatjsIntlDashUtils.libDiffMod.Unit
   
   @js.native
-  sealed trait `year-narrow`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `year-narrow` extends RelativeTimeField
   
   @js.native
-  sealed trait `year-short`
-    extends RelativeTimeField
-       with typings.atFormatjsIntlDashUtils.libRelativeDashTimeDashTypesMod.RelativeTimeField
+  sealed trait `year-short` extends RelativeTimeField
   
   @js.native
-  sealed trait zero
-    extends LDMLPluralRule
-       with typings.atFormatjsIntlDashUtils.distPluralDashRulesDashTypesMod.LDMLPluralRule
+  sealed trait zero extends LDMLPluralRule
   
   @scala.inline
   def RelativeTimeData: RelativeTimeData = "RelativeTimeData".asInstanceOf[RelativeTimeData]

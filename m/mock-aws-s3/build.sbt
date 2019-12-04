@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mock-aws-s3"
-version := "2.6-dt-20181017Z-a15f3c"
+version := "2.6-dt-20181017Z-1e737b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

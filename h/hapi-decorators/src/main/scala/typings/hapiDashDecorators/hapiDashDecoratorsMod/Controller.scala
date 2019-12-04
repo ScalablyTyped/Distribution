@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait Controller extends js.Object {
   var baseUrl: String
   def routes(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
   ]
 }
 
@@ -16,7 +16,7 @@ object Controller {
   def apply(
     baseUrl: String,
     routes: () => js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify hapi.RouteConfiguration */ _
     ]
   ): Controller = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], routes = js.Any.fromFunction0(routes))

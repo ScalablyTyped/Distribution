@@ -11,7 +11,7 @@ object eachWeekOfIntervalMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(interval: typings.dateDashFns.dateDashFnsMod.Interval): js.Array[Date] = js.native
-    def apply(interval: typings.dateDashFns.dateDashFnsMod.Interval, options: Anon_01): js.Array[Date] = js.native
+    def apply(interval: typings.dateDashFns.dateDashFnsMod.Interval, options: Anon_0): js.Array[Date] = js.native
   }
   
 }

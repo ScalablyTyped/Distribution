@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DSResourceDefinition[T] extends js.Object {
   def bindAll(
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+    params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: IScope,
     expr: String
   ): js.Function = js.native
   def bindAll(
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+    params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: IScope,
     expr: String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
       /* items */ js.Array[
-        T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+        T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
       ], 
       Unit
     ]
@@ -30,8 +30,8 @@ trait DSResourceDefinition[T] extends js.Object {
     scope: IScope,
     expr: String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+      /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       Unit
     ]
   ): js.Function = js.native
@@ -41,8 +41,8 @@ trait DSResourceDefinition[T] extends js.Object {
     scope: IScope,
     expr: String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+      /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       Unit
     ]
   ): js.Function = js.native

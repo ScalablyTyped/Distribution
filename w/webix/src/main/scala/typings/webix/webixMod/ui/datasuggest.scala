@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.datasuggest")
 @js.native
-class datasuggest () extends baseview {
+class datasuggest ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_datasuggest: WebixCallback = js.native
   @JSName("config")
   var config_datasuggest: datasuggestConfig = js.native
   @JSName("$enterKey")
@@ -27,7 +30,7 @@ class datasuggest () extends baseview {
   def getItemId(text: String): String | Double = js.native
   def getItemText(id: String): String = js.native
   def getItemText(id: Double): String = js.native
-  def getList(): baseview = js.native
+  def getList(): typings.webix.webix.ui.baseview = js.native
   def getMasterValue(): js.Any = js.native
   def getSuggestion(): String = js.native
   def getValue(): String | Double = js.native

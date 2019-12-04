@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any extends any ? std.Pick</ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any, utility-types.utility-types/dist/mapped-types.SetComplement<keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties * / any, 'onChange' | 'onFocus' | 'onBlur'>> : never */ trait TextareaItemNativeProps extends TextAreaItemPropsType {
+- Dropped react-native.react-native.TextInputProperties extends any ? std.Pick<react-native.react-native.TextInputProperties, utility-types.utility-types/dist/mapped-types.SetComplement<keyof react-native.react-native.TextInputProperties, 'onChange' | 'onFocus' | 'onBlur'>> : never */ trait TextareaItemNativeProps extends TextAreaItemPropsType {
   var last: js.UndefOr[Boolean] = js.undefined
   var onContentSizeChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
   var styles: js.UndefOr[ITextareaItemStyle] = js.undefined

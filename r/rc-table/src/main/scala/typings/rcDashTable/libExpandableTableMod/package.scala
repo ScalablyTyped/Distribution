@@ -9,8 +9,8 @@ package object libExpandableTableMod {
   import typings.rcDashTable.libInterfaceMod.FixedType
   import typings.rcDashTable.libInterfaceMod.Key
   import typings.rcDashTable.libInterfaceMod.RenderRows
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.ReactElement
   import typings.std.HTMLElement
 

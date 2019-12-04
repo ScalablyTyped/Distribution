@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libSessionSessionMod.Session
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,9 +32,7 @@ trait IOptions extends js.Object {
   /**
     * The server settings.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
   /**
     * The type of the session.
     */
@@ -52,7 +51,7 @@ object IOptions {
     kernelId: String = null,
     kernelName: String = null,
     name: String = null,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null,
+    serverSettings: ISettings = null,
     `type`: String = null,
     username: String = null
   ): IOptions = {

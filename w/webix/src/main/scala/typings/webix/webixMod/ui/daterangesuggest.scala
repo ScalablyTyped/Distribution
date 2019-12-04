@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.daterangesuggest")
 @js.native
-class daterangesuggest () extends baseview {
+class daterangesuggest ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$enterKey")
   var $enterKey_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_daterangesuggest: WebixCallback = js.native
   @JSName("config")
   var config_daterangesuggest: daterangesuggestConfig = js.native
   @JSName("$enterKey")
@@ -23,14 +26,14 @@ class daterangesuggest () extends baseview {
   def callEvent(name: String, params: js.Array[_]): Boolean = js.native
   def detachEvent(id: String): Unit = js.native
   def getBody(): js.Any = js.native
-  def getButton(): baseview = js.native
+  def getButton(): typings.webix.webix.ui.baseview = js.native
   def getHead(): js.Any = js.native
   def getItemId(text: String): String | Double = js.native
   def getItemText(id: String): String = js.native
   def getItemText(id: Double): String = js.native
-  def getList(): baseview = js.native
+  def getList(): typings.webix.webix.ui.baseview = js.native
   def getMasterValue(): js.Any = js.native
-  def getRange(): baseview = js.native
+  def getRange(): typings.webix.webix.ui.baseview = js.native
   def getSuggestion(): String = js.native
   def getValue(): String | Double = js.native
   def hasEvent(name: String): Boolean = js.native

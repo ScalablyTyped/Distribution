@@ -1,6 +1,5 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
-import typings.pgDashPromise.XPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

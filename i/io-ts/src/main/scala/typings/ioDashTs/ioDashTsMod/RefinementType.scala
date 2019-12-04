@@ -13,10 +13,10 @@ class RefinementType[C /* <: Any */, A, O, I] protected () extends Type[A, O, I]
     validate: Validate[I, A],
     encode: Encode[A, O],
     `type`: C,
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any
+    predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any
   ) = this()
   val _tag: typings.ioDashTs.ioDashTsStrings.RefinementType = js.native
-  val predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any = js.native
+  val predicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<A> */ js.Any = js.native
   val `type`: C = js.native
 }
 

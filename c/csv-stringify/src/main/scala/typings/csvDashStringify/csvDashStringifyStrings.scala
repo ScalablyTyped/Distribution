@@ -1,28 +1,40 @@
 package typings.csvDashStringify
 
-import typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
+import typings.csvDashStringify.libEs5Mod._RecordDelimiter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object csvDashStringifyStrings {
   @js.native
-  sealed trait ascii extends _RecordDelimiter
+  sealed trait ascii
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @js.native
-  sealed trait auto extends _RecordDelimiter
+  sealed trait auto
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @js.native
-  sealed trait mac extends _RecordDelimiter
+  sealed trait mac
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @js.native
-  sealed trait unicode extends _RecordDelimiter
+  sealed trait unicode
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @js.native
-  sealed trait unix extends _RecordDelimiter
+  sealed trait unix
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @js.native
-  sealed trait windows extends _RecordDelimiter
+  sealed trait windows
+    extends _RecordDelimiter
+       with typings.csvDashStringify.csvDashStringifyMod._RecordDelimiter
   
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]

@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,6 @@ object shutdown extends js.Object {
     * @returns A promise that resolves when the session is shut down.
     */
   def apply(name: String): js.Promise[Unit] = js.native
-  def apply(
-    name: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def apply(name: String, settings: ISettings): js.Promise[Unit] = js.native
 }
 

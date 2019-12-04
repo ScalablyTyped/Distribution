@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "0.29.0-c7c6a7"
+version := "0.29.0-cb9bcd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-104ef4",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-99a672",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-525001",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-55fa07",
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-07c5ef",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-1835e6",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-249e4d",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-8d3912")
 publishArtifact in packageDoc := false

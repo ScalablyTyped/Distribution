@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorCatchMod extends js.Object {
   def _catch[T, R](
-    `this`: Observable[T],
-    selector: js.Function2[/* err */ js.Any, /* caught */ Observable[T], ObservableInput[R]]
-  ): Observable[T | R] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    selector: js.Function2[
+      /* err */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* caught */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ]
+  ): js.Any = js.native
 }
 

@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +7,13 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/switchMapTo", JSImport.Namespace)
 @js.native
 object operatorSwitchMapToMod extends js.Object {
-  def switchMapTo[T, R](`this`: Observable[T], observable: ObservableInput[R]): Observable[R] = js.native
+  def switchMapTo[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+  ): js.Any = js.native
   def switchMapTo[T, I, R](
-    `this`: Observable[T],
-    observable: ObservableInput[I],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ js.Any,
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ I, 
@@ -20,6 +21,6 @@ object operatorSwitchMapToMod extends js.Object {
       /* innerIndex */ Double, 
       R
     ]
-  ): Observable[R] = js.native
+  ): js.Any = js.native
 }
 

@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 package object reactDashCopyDashWriteMod {
   import typings.react.reactMod.Component
   import typings.react.reactMod._Global_.JSX.Element
-  import typings.reactDashCopyDashWrite.AnyDeepMemberOfState
   import typings.std.ReturnType
 
+  // It'd be nice if this could somehow be improved! Perhaps we need variadic
+  // kinds plus infer keyword? Alternatively unions may solve our issue if we had
+  // the ability to restrict type widening.
+  type AnyDeepMemberOfState[T] = js.Any
   type Consumer[T] = Component[ConsumerProps[T], js.Object, js.Any]
   type MutateFn[T] = js.Function2[/* draft */ T, /* state */ T, Unit]
   type Mutator[T] = js.Function1[/* mutator */ MutateFn[T], Unit]

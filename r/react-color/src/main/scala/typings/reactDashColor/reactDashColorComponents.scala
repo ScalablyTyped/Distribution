@@ -29,6 +29,8 @@ object reactDashColorComponents extends reactDashColorProps {
   @scala.inline
   def CompactPicker: ComponentType[CompactPickerProps] = js.constructorOf[typings.reactDashColor.reactDashColorMod.CompactPicker].asInstanceOf[typings.react.reactMod.ComponentType[CompactPickerProps]]
   @scala.inline
+  def EditableInput: ComponentType[EditableInputProps] = js.constructorOf[typings.reactDashColor.libComponentsCommonEditableInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[EditableInputProps]]
+  @scala.inline
   def Github: ComponentType[GithubProps] = js.constructorOf[typings.reactDashColor.libComponentsGithubGithubMod.default].asInstanceOf[typings.react.reactMod.ComponentType[GithubProps]]
   @scala.inline
   def GithubPicker: ComponentType[GithubPickerProps] = js.constructorOf[typings.reactDashColor.reactDashColorMod.GithubPicker].asInstanceOf[typings.react.reactMod.ComponentType[GithubPickerProps]]
@@ -44,6 +46,8 @@ object reactDashColorComponents extends reactDashColorProps {
   def Photoshop: ComponentType[PhotoshopProps] = js.constructorOf[typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PhotoshopProps]]
   @scala.inline
   def PhotoshopPicker: ComponentType[PhotoshopPickerProps] = js.constructorOf[typings.reactDashColor.reactDashColorMod.PhotoshopPicker].asInstanceOf[typings.react.reactMod.ComponentType[PhotoshopPickerProps]]
+  @scala.inline
+  def Saturation: ComponentType[SaturationProps] = js.constructorOf[typings.reactDashColor.libComponentsCommonSaturationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SaturationProps]]
   @scala.inline
   def Sketch: ComponentType[SketchProps] = js.constructorOf[typings.reactDashColor.libComponentsSketchSketchMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SketchProps]]
   @scala.inline

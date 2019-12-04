@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__tab-bar"
-version := "3.2.0-6b4be1"
+version := "3.2.0-66bc33"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

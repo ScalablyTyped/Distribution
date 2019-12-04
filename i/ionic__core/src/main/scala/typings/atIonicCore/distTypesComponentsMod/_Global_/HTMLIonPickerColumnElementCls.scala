@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod._Global_
 
+import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerColumn
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import typings.std.HTMLSlotElement
@@ -16,7 +17,7 @@ class HTMLIonPickerColumnElementCls () extends HTMLIonPickerColumnElement {
     * Picker column data
     */
   /* CompleteClass */
-  override var col: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ js.Any = js.native
+  override var col: PickerColumn = js.native
   /* CompleteClass */
   override var contentEditable: String = js.native
   /* CompleteClass */

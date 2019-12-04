@@ -93,6 +93,9 @@ object highchartsStrings {
   sealed trait Chart extends js.Object
   
   @js.native
+  sealed trait DELETE extends js.Object
+  
+  @js.native
   sealed trait Dash extends DashStyleValue
   
   @js.native
@@ -103,6 +106,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait Empty extends OptionsDraggableValue
+  
+  @js.native
+  sealed trait GET extends js.Object
   
   @js.native
   sealed trait H extends SVGPathCommand
@@ -124,6 +130,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait Map extends js.Object
+  
+  @js.native
+  sealed trait POST extends js.Object
   
   @js.native
   sealed trait Q extends SVGPathCommand
@@ -151,6 +160,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait T extends SVGPathCommand
+  
+  @js.native
+  sealed trait UPDATE extends js.Object
   
   @js.native
   sealed trait V extends SVGPathCommand
@@ -532,6 +544,9 @@ object highchartsStrings {
   sealed trait item extends js.Object
   
   @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
   sealed trait justify
     extends DataLabelsOverflowValue
        with OptionsOverflowValue
@@ -690,6 +705,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait `nwse-resize` extends CursorValue
+  
+  @js.native
+  sealed trait octet extends js.Object
   
   @js.native
   sealed trait offset extends OptionsPosition3dValue
@@ -1055,6 +1073,9 @@ object highchartsStrings {
        with OptionsZoomTypeValue
   
   @js.native
+  sealed trait xml extends js.Object
+  
+  @js.native
   sealed trait xrange extends js.Object
   
   @js.native
@@ -1113,6 +1134,8 @@ object highchartsStrings {
   @scala.inline
   def Chart: Chart = "Chart".asInstanceOf[Chart]
   @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Dash: Dash = "Dash".asInstanceOf[Dash]
   @scala.inline
   def DashDot: DashDot = "DashDot".asInstanceOf[DashDot]
@@ -1120,6 +1143,8 @@ object highchartsStrings {
   def Dot: Dot = "Dot".asInstanceOf[Dot]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   @scala.inline
@@ -1134,6 +1159,8 @@ object highchartsStrings {
   def M: M = "M".asInstanceOf[M]
   @scala.inline
   def Map: Map = "Map".asInstanceOf[Map]
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
@@ -1152,6 +1179,8 @@ object highchartsStrings {
   def StockChart: StockChart = "StockChart".asInstanceOf[StockChart]
   @scala.inline
   def T: T = "T".asInstanceOf[T]
+  @scala.inline
+  def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   @scala.inline
   def V: V = "V".asInstanceOf[V]
   @scala.inline
@@ -1377,6 +1406,8 @@ object highchartsStrings {
   @scala.inline
   def item: item = "item".asInstanceOf[item]
   @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
   @scala.inline
   def keltnerchannels: keltnerchannels = "keltnerchannels".asInstanceOf[keltnerchannels]
@@ -1466,6 +1497,8 @@ object highchartsStrings {
   def `nw-resize`: `nw-resize` = "nw-resize".asInstanceOf[`nw-resize`]
   @scala.inline
   def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
+  @scala.inline
+  def octet: octet = "octet".asInstanceOf[octet]
   @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
   @scala.inline
@@ -1690,6 +1723,8 @@ object highchartsStrings {
   def wordcloud: wordcloud = "wordcloud".asInstanceOf[wordcloud]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
+  def xml: xml = "xml".asInstanceOf[xml]
   @scala.inline
   def xrange: xrange = "xrange".asInstanceOf[xrange]
   @scala.inline

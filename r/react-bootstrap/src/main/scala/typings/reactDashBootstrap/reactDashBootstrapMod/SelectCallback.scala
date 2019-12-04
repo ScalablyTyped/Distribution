@@ -1,8 +1,8 @@
 package typings.reactDashBootstrap.reactDashBootstrapMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.EventHandler
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.SyntheticEvent
 import typings.std.Event
 import scala.scalajs.js

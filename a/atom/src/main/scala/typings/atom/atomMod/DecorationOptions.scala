@@ -4,7 +4,7 @@ import typings.atom.atomStrings.`line-number`
 import typings.atom.atomStrings.after
 import typings.atom.atomStrings.before
 import typings.atom.atomStrings.block
-import typings.atom.atomStrings.cursor
+import typings.atom.atomStrings.cursor_
 import typings.atom.atomStrings.gutter
 import typings.atom.atomStrings.head
 import typings.atom.atomStrings.highlight
@@ -20,7 +20,7 @@ trait DecorationOptions extends SharedDecorationOptions {
   /** The name of the gutter we're decorating, if type is "gutter". */
   var gutterName: js.UndefOr[String] = js.undefined
   /** One of several supported decoration types. */
-  var `type`: js.UndefOr[line | `line-number` | text | highlight | overlay | gutter | block | cursor] = js.undefined
+  var `type`: js.UndefOr[line | `line-number` | text | highlight | overlay | gutter | block | cursor_] = js.undefined
 }
 
 object DecorationOptions {
@@ -37,7 +37,7 @@ object DecorationOptions {
     order: Int | Double = null,
     position: head | tail | before | after = null,
     style: js.Object = null,
-    `type`: line | `line-number` | text | highlight | overlay | gutter | block | cursor = null
+    `type`: line | `line-number` | text | highlight | overlay | gutter | block | cursor_ = null
   ): DecorationOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(avoidOverflow)) __obj.updateDynamic("avoidOverflow")(avoidOverflow.asInstanceOf[js.Any])

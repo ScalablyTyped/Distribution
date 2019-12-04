@@ -1,6 +1,7 @@
 package typings.atBandagedbdBdapi
 
 import typings.react.Anon_Children
+import typings.react.experimentalMod.reactMod.SuspenseListProps
 import typings.react.reactMod.ProfilerProps
 import typings.react.reactMod.SuspenseProps
 import scala.scalajs.js
@@ -20,5 +21,8 @@ trait atBandagedbdBdapiProps {
   @scala.inline
   def BdApiModuleReactSuspenseProps: SuspenseProps.type = typings.react.reactMod.SuspenseProps
   type BdApiModuleReactSuspenseProps = SuspenseProps
+  @scala.inline
+  def BdApiModuleReactSuspenseListProps: SuspenseListProps.type = typings.react.experimentalMod.reactMod.SuspenseListProps
+  type BdApiModuleReactSuspenseListProps = SuspenseListProps
 }
 

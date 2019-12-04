@@ -13,7 +13,7 @@ object distEs2015ObserverSubjectObserverMod extends js.Object {
   @js.native
   class SubjectObserver () extends IObserver {
     var _disposable: js.Any = js.native
-    var observers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<IObserver> */ js.Any = js.native
+    var observers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<IObserver> */ js.Any = js.native
     def addChild(observer: Observer): Unit = js.native
     /* CompleteClass */
     override def completed(): js.Any = js.native

@@ -1,11 +1,11 @@
 package typings.materialDashUi.__MaterialUI.Tabs
 
 import typings.materialDashUi.__MaterialUI.SharedEnhancedButtonProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.rcDashTable
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.rcDashTable.esColumnGroupMod.default
+import typings.rcDashTable.libColumnGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

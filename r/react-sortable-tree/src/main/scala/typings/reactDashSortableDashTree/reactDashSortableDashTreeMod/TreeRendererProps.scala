@@ -5,7 +5,6 @@ import typings.react.reactMod.ReactElement
 import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDropTarget
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
-import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
 import scala.scalajs.js

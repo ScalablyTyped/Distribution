@@ -1,6 +1,6 @@
 package typings.tslint.libLanguageRuleRuleMod
 
-import typings.tslint.Anon_Options
+import typings.tslint.Anon_OptionsAny
 import typings.tslint.tslintNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ trait IRuleMetadata extends js.Object {
     * Examples of what a standard config for the rule might look like.
     * Using a string[] here is deprecated. Write the options as a JSON object instead.
     */
-  var optionExamples: js.UndefOr[js.Array[`true` | Anon_Options | js.Array[_] | String]] = js.undefined
+  var optionExamples: js.UndefOr[js.Array[`true` | Anon_OptionsAny | js.Array[_] | String]] = js.undefined
   /**
     * Schema of the options the rule accepts.
     * The first boolean for whether the rule is enabled or not is already implied.
@@ -78,7 +78,7 @@ object IRuleMetadata {
     deprecationMessage: String = null,
     descriptionDetails: String = null,
     hasFix: js.UndefOr[Boolean] = js.undefined,
-    optionExamples: js.Array[`true` | Anon_Options | js.Array[_] | String] = null,
+    optionExamples: js.Array[`true` | Anon_OptionsAny | js.Array[_] | String] = null,
     rationale: String = null,
     requiresTypeInfo: js.UndefOr[Boolean] = js.undefined
   ): IRuleMetadata = {

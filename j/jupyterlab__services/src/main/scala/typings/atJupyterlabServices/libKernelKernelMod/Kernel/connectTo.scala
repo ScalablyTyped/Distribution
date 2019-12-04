@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libKernelKernelMod.Kernel
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +22,6 @@ object connectTo extends js.Object {
     * Kernel object info is used to create another instance.
     */
   def apply(model: IModel): IKernel = js.native
-  def apply(
-    model: IModel,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): IKernel = js.native
+  def apply(model: IModel, settings: ISettings): IKernel = js.native
 }
 

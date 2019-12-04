@@ -16,7 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @JSGlobal("PIXI.spine.Spine")
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container * / any */ @JSGlobal("PIXI.spine.Spine")
 @js.native
 class Spine protected () extends js.Object {
   def this(spineData: SkeletonData) = this()
@@ -28,13 +28,13 @@ class Spine protected () extends js.Object {
   var setSpriteRegion: js.Any = js.native
   var skeleton: Skeleton = js.native
   var slotContainers: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Container */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ _
   ] = js.native
   var spineData: SkeletonData = js.native
   var state: AnimationState = js.native
   var stateData: AnimationStateData = js.native
   var tempClipContainers: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Container */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Container */ _
   ] = js.native
   var tint: Double = js.native
   var tintRgb: ArrayLike[Double] = js.native
@@ -48,52 +48,52 @@ class Spine protected () extends js.Object {
   def hackTextureBySlotIndex(slotIndex: Double): Boolean = js.native
   def hackTextureBySlotIndex(
     slotIndex: Double,
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotIndex(
     slotIndex: Double,
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    size: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotName(slotName: String): Boolean = js.native
   def hackTextureBySlotName(
     slotName: String,
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotName(
     slotName: String,
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
-    size: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   def newContainer(): js.Any = js.native
   def newGraphics(): js.Any = js.native
   def newMesh(
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): SpineMesh = js.native
   def newMesh(
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array
   ): SpineMesh = js.native
   def newMesh(
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
     uvs: Float32Array
   ): SpineMesh = js.native
   def newMesh(
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
     uvs: Float32Array,
     indices: Uint16Array
   ): SpineMesh = js.native
   def newMesh(
-    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
     uvs: Float32Array,
     indices: Uint16Array,
     drawMode: Double
   ): SpineMesh = js.native
   def newSprite(
-    tex: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+    tex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): SpineSprite = js.native
   def transformHack(): Double = js.native
   def update(dt: Double): Unit = js.native

@@ -3,6 +3,7 @@ package typings.atFeathersjsExpress
 import typings.atFeathersjsExpress.atFeathersjsExpressMod.Application
 import typings.atFeathersjsExpress.atFeathersjsExpressMod.FeathersApplicationRequestHandler
 import typings.atFeathersjsExpress.atFeathersjsExpressMod.FeathersRouterMatcher
+import typings.atFeathersjsExpress.atFeathersjsExpressMod.Omit
 import typings.atFeathersjsExpress.atFeathersjsExpressStrings.use
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.ServiceMethods
 import typings.atFeathersjsFeathers.atFeathersjsFeathersMod.SetupMethod
@@ -23,7 +24,9 @@ import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDash
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.RequestHandlerParams
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response
 import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
+import typings.std.Exclude
 import typings.std.Partial
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,5 +109,6 @@ object atFeathersjsExpressMod extends js.Object {
     T
   ]
   type FeathersServiceOptions = js.Any
+  type Omit[T, K] = Pick[T, Exclude[String, K]]
 }
 

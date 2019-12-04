@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object useStyletron
   extends TopLevel[
       UseStyletronFn[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
       ]
     ]
 

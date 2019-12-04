@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends js.Object {
   var arrowProps: PopperArrowProps
   var closeOnOutOfBoundaries: Boolean
-  var innerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
+  var innerRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
   var outOfBoundaries: Boolean | Null
   var placement: Placement
   var style: CSSProperties
@@ -29,7 +29,7 @@ object TooltipProps {
     clearScheduled: () => Unit,
     closeOnOutOfBoundaries: Boolean,
     hideTooltip: () => Unit,
-    innerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any,
+    innerRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any,
     placement: Placement,
     scheduleUpdate: () => Unit,
     style: CSSProperties,

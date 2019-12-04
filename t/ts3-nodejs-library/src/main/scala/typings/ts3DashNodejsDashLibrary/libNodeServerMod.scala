@@ -1,9 +1,9 @@
 package typings.ts3DashNodejsDashLibrary
 
 import typings.ts3DashNodejsDashLibrary.libNodeAbstractMod.Abstract
-import typings.ts3DashNodejsDashLibrary.libTeamSpeakMod.TeamSpeak
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ServerList
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryMod.TeamSpeak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

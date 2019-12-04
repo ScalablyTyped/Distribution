@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.segmented")
 @js.native
-class segmented () extends baseview {
+class segmented ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class segmented () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_segmented: WebixCallback = js.native
   @JSName("config")
   var config_segmented: segmentedConfig = js.native
   @JSName("on_click")

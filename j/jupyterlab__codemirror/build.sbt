@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codemirror"
-version := "1.2.1-e295e0"
+version := "1.2.1-8b213c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191126Z-ff850c",
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191126Z-28285e",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-cf446d",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-7dfc41",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-f37823",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-41da8a",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-25b97f",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-e7a73f",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-57570a",
-  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-a1eab4",
+  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-852fa2",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-cad8ac",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-86b809",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-18e14c",
@@ -21,8 +22,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-075c8c",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-ca1d2a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
-  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d",
+  "org.scalablytyped" %%% "tern" % "0.23-dt-20191126Z-7975d0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

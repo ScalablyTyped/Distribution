@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait ActionChannelEffectDescriptor extends js.Object {
   var buffer: js.UndefOr[Buffer] = js.undefined
-  var pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+  var pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
 }
 
 object ActionChannelEffectDescriptor {
   @scala.inline
   def apply(
-    pattern: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
     buffer: Buffer = null
   ): ActionChannelEffectDescriptor = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])

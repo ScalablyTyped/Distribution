@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object JSXInternal {
   import typings.preact.Anon_CurrentTarget
+  import typings.preact.preactMod.Component
+  import typings.preact.preactMod.VNode
   import typings.preact.preactStrings.currentTarget
   import typings.preact.srcJsxMod.Defaultize
-  import typings.preact.srcMod.Component
-  import typings.preact.srcMod.VNode
   import typings.std.AnimationEvent
   import typings.std.ClipboardEvent
   import typings.std.CompositionEvent

@@ -11,7 +11,7 @@ trait windowConfig extends js.Object {
   var animate: js.UndefOr[js.Any] = js.undefined
   var autofit: js.UndefOr[Boolean] = js.undefined
   var autofocus: js.UndefOr[Boolean] = js.undefined
-  var body: js.UndefOr[String | baseview] = js.undefined
+  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var close: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[String | HTMLElement] = js.undefined
@@ -52,7 +52,7 @@ object windowConfig {
     animate: js.Any = null,
     autofit: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
-    body: String | baseview = null,
+    body: String | typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     close: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement = null,

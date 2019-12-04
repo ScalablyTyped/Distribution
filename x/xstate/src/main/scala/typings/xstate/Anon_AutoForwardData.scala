@@ -1,13 +1,13 @@
 package typings.xstate
 
-import typings.xstate.esTypesMod.DoneInvokeEvent
-import typings.xstate.esTypesMod.EventObject
-import typings.xstate.esTypesMod.InvokeCreator
-import typings.xstate.esTypesMod.Mapper
-import typings.xstate.esTypesMod.PropertyMapper
-import typings.xstate.esTypesMod.SingleOrArray
-import typings.xstate.esTypesMod.StateMachine
-import typings.xstate.esTypesMod.TransitionConfig
+import typings.xstate.libTypesMod.DoneInvokeEvent
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.InvokeCreator
+import typings.xstate.libTypesMod.Mapper
+import typings.xstate.libTypesMod.PropertyMapper
+import typings.xstate.libTypesMod.SingleOrArray
+import typings.xstate.libTypesMod.StateMachine
+import typings.xstate.libTypesMod.TransitionConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

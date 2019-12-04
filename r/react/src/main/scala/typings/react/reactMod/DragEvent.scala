@@ -1,6 +1,5 @@
 package typings.react.reactMod
 
-import typings.react.NativeDragEvent
 import typings.std.DataTransfer
 import typings.std.EventTarget
 import scala.scalajs.js

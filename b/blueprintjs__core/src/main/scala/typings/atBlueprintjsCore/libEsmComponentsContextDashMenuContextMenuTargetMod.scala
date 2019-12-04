@@ -2,9 +2,9 @@ package typings.atBlueprintjsCore
 
 import typings.atBlueprintjsCore.libEsmCommonConstructorMod.IConstructor
 import typings.atBlueprintjsCore.libEsmComponentsContextDashMenuContextMenuTargetMod.IContextMenuTargetComponent
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js

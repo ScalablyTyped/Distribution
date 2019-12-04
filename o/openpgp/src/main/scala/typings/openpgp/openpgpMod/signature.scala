@@ -1,6 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.ReadableStream
 import typings.openpgp.openpgpMod.packet.List
 import typings.openpgp.openpgpMod.signature.Signature
 import typings.std.Uint8Array

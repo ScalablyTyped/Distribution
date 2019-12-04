@@ -9,11 +9,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.googleMap")
 @js.native
-class googleMap () extends baseview {
+class googleMap ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_googleMap: WebixCallback = js.native
   @JSName("config")
   var config_googleMap: googleMapConfig = js.native
   var data: DataStore = js.native

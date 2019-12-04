@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "graphql-binding" : "2.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "graphql-binding" : "2.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

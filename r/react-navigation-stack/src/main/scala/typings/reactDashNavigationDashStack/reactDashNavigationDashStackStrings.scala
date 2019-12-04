@@ -21,6 +21,9 @@ object reactDashNavigationDashStackStrings {
   sealed trait balanced extends js.Object
   
   @js.native
+  sealed trait `box-none` extends js.Object
+  
+  @js.native
   sealed trait `box-only` extends PointerEvents
   
   @js.native
@@ -127,6 +130,8 @@ object reactDashNavigationDashStackStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
+  @scala.inline
+  def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
   @scala.inline
   def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   @scala.inline

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 package object atNivoGeoMod {
   import typings.atNivoGeo.Anon_Feature
   import typings.atNivoGeo.Anon_FeatureChoroplethBoundFeature
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.FunctionComponent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
 
   type ChoroplethEventHandler = js.Function2[
     /* feature */ ChoroplethBoundFeature, 

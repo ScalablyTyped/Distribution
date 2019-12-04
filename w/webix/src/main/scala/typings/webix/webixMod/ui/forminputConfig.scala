@@ -9,7 +9,7 @@ trait forminputConfig extends js.Object {
   @JSName("$cssName")
   var $cssName: js.UndefOr[String] = js.undefined
   var animate: js.UndefOr[js.Any] = js.undefined
-  var body: js.UndefOr[baseview] = js.undefined
+  var body: js.UndefOr[typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   var css: js.UndefOr[js.Any] = js.undefined
@@ -36,7 +36,7 @@ object forminputConfig {
   def apply(
     $cssName: String = null,
     animate: js.Any = null,
-    body: baseview = null,
+    body: typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement = null,
     css: js.Any = null,

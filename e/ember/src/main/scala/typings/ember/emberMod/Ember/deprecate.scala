@@ -1,6 +1,7 @@
 package typings.ember.emberMod.Ember
 
 import org.scalablytyped.runtime.TopLevel
+import typings.atEmberApplication.deprecationsMod.DeprecationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object deprecate
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberApplicationDeprecateNs.deprecate */ js.Any
+      js.Function3[
+        /* message */ java.lang.String, 
+        /* test */ Boolean, 
+        /* options */ DeprecationOptions, 
+        js.Any
+      ]
     ]
 

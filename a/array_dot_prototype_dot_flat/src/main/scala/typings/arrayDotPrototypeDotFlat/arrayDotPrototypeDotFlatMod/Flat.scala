@@ -1,5 +1,7 @@
 package typings.arrayDotPrototypeDotFlat.arrayDotPrototypeDotFlatMod
 
+import typings.arrayDotPrototypeDotFlat.Array
+import typings.arrayDotPrototypeDotFlat.ReadonlyArray
 import typings.arrayDotPrototypeDotFlat.arrayDotPrototypeDotFlatNumbers.`0`
 import typings.arrayDotPrototypeDotFlat.arrayDotPrototypeDotFlatNumbers.`1`
 import typings.arrayDotPrototypeDotFlat.arrayDotPrototypeDotFlatNumbers.`2`
@@ -17,29 +19,49 @@ trait Flat extends FlatImpl {
   @JSName("implementation")
   var implementation_Original: FlatImpl = js.native
   def getPolyfill(): FlatImpl = js.native
-  def implementation(receiver: js.Array[_]): js.Array[_] = js.native
-  def implementation(receiver: js.Array[_], depth: Double): js.Array[_] = js.native
+  def implementation(receiver: ReadonlyArray[_]): Array[_] = js.native
+  def implementation(receiver: ReadonlyArray[_], depth: Double): Array[_] = js.native
   @JSName("implementation")
-  def implementation_0[U](receiver: js.Array[U], depth: `0`): js.Array[U] = js.native
+  def implementation_0[U](receiver: ReadonlyArray[U], depth: `0`): Array[U] = js.native
   @JSName("implementation")
-  def implementation_1[U](receiver: js.Array[js.Array[U]], depth: `1`): js.Array[U] = js.native
+  def implementation_1[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]], depth: `1`): Array[U] = js.native
   @JSName("implementation")
-  def implementation_2[U](receiver: js.Array[js.Array[js.Array[U]]], depth: `2`): js.Array[U] = js.native
+  def implementation_2[U](
+    receiver: ReadonlyArray[
+      (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
+    ],
+    depth: `2`
+  ): Array[U] = js.native
   @JSName("implementation")
-  def implementation_3[U](receiver: js.Array[js.Array[js.Array[js.Array[U]]]], depth: `3`): js.Array[U] = js.native
+  def implementation_3[U](
+    receiver: ReadonlyArray[
+      (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
+        (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
+      ])
+    ],
+    depth: `3`
+  ): Array[U] = js.native
   @JSName("implementation")
-  def implementation_4[U](receiver: js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]], depth: `4`): js.Array[U] = js.native
+  def implementation_4[U](
+    receiver: ReadonlyArray[
+      (Array[
+        (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[Array[Array[U]] | ReadonlyArray[ReadonlyArray[U]]])
+      ]) | (ReadonlyArray[
+        (Array[(Array[Array[U] | ReadonlyArray[U]]) | ReadonlyArray[Array[U]]]) | (ReadonlyArray[
+          (Array[Array[U] | ReadonlyArray[U]]) | (ReadonlyArray[Array[U] | ReadonlyArray[U]])
+        ])
+      ])
+    ],
+    depth: `4`
+  ): Array[U] = js.native
   @JSName("implementation")
-  def implementation_5[U](receiver: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]], depth: `5`): js.Array[U] = js.native
+  def implementation_5[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = js.native
   @JSName("implementation")
-  def implementation_6[U](receiver: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]], depth: `6`): js.Array[U] = js.native
+  def implementation_6[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = js.native
   @JSName("implementation")
-  def implementation_7[U](
-    receiver: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]]]]],
-    depth: `7`
-  ): js.Array[U] = js.native
+  def implementation_7[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = js.native
   @JSName("implementation")
-  def implementation_U[U](receiver: js.Array[js.Array[U]]): js.Array[U] = js.native
+  def implementation_U[U](receiver: ReadonlyArray[Array[U] | ReadonlyArray[U]]): Array[U] = js.native
   def shim(): FlatImpl = js.native
 }
 

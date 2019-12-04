@@ -39,11 +39,11 @@ object reduxDashRouterMod extends js.Object {
   def isActive(pathname: Pathname): Boolean = js.native
   def isActive(
     pathname: Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any
   ): Boolean = js.native
   def isActive(
     pathname: Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any,
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any,
     indexOnly: Boolean
   ): Boolean = js.native
   def push(args: js.Object*): ReduxRouterAction = js.native

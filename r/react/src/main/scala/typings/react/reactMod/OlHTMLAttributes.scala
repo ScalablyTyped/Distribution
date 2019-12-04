@@ -1,7 +1,6 @@
 package typings.react.reactMod
 
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactStrings.A
 import typings.react.reactStrings.I
 import typings.react.reactStrings.`1`

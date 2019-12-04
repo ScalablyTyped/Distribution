@@ -1,6 +1,7 @@
 package typings.sanctuary
 
 import typings.sanctuary.sanctuaryMod.Maybe
+import typings.sanctuary.sanctuaryMod.NonNegativeInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

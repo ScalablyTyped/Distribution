@@ -1,6 +1,6 @@
 package typings.xstate.libTypesMod
 
-import typings.xstate.Anon_TypeTEventType
+import typings.xstate.Anon_TypeTEventType_867072877
 import typings.xstate.libStateNodeMod.StateNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] extends js.Object {
   var actions: js.Array[Action[TContext, TEvent]]
-  var cond: js.UndefOr[Condition[TContext, TEvent with Anon_TypeTEventType[TEventType]]] = js.undefined
+  var cond: js.UndefOr[Condition[TContext, TEvent with Anon_TypeTEventType_867072877[TEventType]]] = js.undefined
   var event: TEventType
   var meta: js.UndefOr[MetaObject] = js.undefined
   var source: StateNode[TContext, _, TEvent]
@@ -24,7 +24,7 @@ object Edge {
     source: StateNode[TContext, _, TEvent],
     target: StateNode[TContext, _, TEvent],
     transition: TransitionDefinition[TContext, OmniEventObject[TEvent]],
-    cond: Condition[TContext, TEvent with Anon_TypeTEventType[TEventType]] = null,
+    cond: Condition[TContext, TEvent with Anon_TypeTEventType_867072877[TEventType]] = null,
     meta: MetaObject = null
   ): Edge[TContext, TEvent, TEventType] = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])

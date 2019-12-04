@@ -2,13 +2,13 @@ package typings.atTestingDashLibraryVue.atTestingDashLibraryVueMod
 
 import typings.vue.typesVueMod.Vue
 import typings.vueDashRouter.typesRouterMod.RouteConfig
-import typings.vuex.typesMod.StoreOptions
+import typings.vuex.vuexMod.StoreOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThisTypedMountOptions<V> * / any, 'store' | 'props'> ]: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThisTypedMountOptions<V> * / any[P]} */ trait RenderOptions[V /* <: Vue */, S] extends js.Object {
+- Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThisTypedMountOptions<V> * / any, 'store' | 'props'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThisTypedMountOptions<V> * / any[P]} */ trait RenderOptions[V /* <: Vue */, S] extends js.Object {
   var props: js.UndefOr[js.Object] = js.undefined
   var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
   var store: js.UndefOr[StoreOptions[S]] = js.undefined

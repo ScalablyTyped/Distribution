@@ -7,6 +7,7 @@ import typings.codemirror.Anon_FromMode
 import typings.codemirror.Anon_InsertLeft
 import typings.codemirror.Anon_Redo
 import typings.std.HTMLElement
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,6 +76,18 @@ trait Doc extends js.Object {
     An optional third argument can be given to indicate the line separator string to use (defaults to "\n"). */
   def getRange(from: Position, to: Position): String = js.native
   def getRange(from: Position, to: Position, seperator: String): String = js.native
+  /** This method can be used to implement search/replace functionality.
+    *  `query`: This can be a regular * expression or a string (only strings will match across lines -
+    *          if they contain newlines).
+    *  `start`: This provides the starting position of the search. It can be a `{line, ch} object,
+    *          or can be left off to default to the start of the document
+    *  `caseFold`: This is only relevant when matching a string. IT will cause the search to be case-insenstive */
+  def getSearchCursor(query: String): SearchCursor = js.native
+  def getSearchCursor(query: String, start: Position): SearchCursor = js.native
+  def getSearchCursor(query: String, start: Position, caseFold: Boolean): SearchCursor = js.native
+  def getSearchCursor(query: RegExp): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: Position): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): SearchCursor = js.native
   /** Get the currently selected code. */
   def getSelection(): String = js.native
   /** Returns an array containing a string for each selection, representing the content of the selections. */

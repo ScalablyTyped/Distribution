@@ -7,19 +7,19 @@ import typings.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagNameV
 import typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconCorner
 import typings.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconSizeProp
 import typings.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticFLOATS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
+import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
 import typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TRANSITION_STATUSES
 import typings.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticCOLORS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticFLOATS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticICONS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticSIZES
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticSTATICTRANSITIONS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticTEXTALIGNMENTS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticTRANSITIONS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticVERTICALALIGNMENTS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHS
-import typings.semanticDashUiDashReact.srcGenericMod.SemanticWIDTHSSTRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,58 +28,42 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `1`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `10`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `11`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `12`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `13`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `14`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `15`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `16`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `16:9` extends js.Object
@@ -87,9 +71,7 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `2`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `21:9` extends js.Object
@@ -97,16 +79,12 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `3`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `4`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `4:3` extends js.Object
@@ -114,42 +92,30 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `5`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `500px`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `500px` extends SemanticICONS
   
   @js.native
   sealed trait `6`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `7`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `8`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `9`
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait ENTERED extends TRANSITION_STATUSES
@@ -164,9 +130,7 @@ object semanticDashUiDashReactStrings {
   sealed trait EXITING extends TRANSITION_STATUSES
   
   @js.native
-  sealed trait JS
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait JS extends SemanticICONS
   
   @js.native
   sealed trait UNMOUNTED extends TRANSITION_STATUSES
@@ -175,82 +139,52 @@ object semanticDashUiDashReactStrings {
   sealed trait above extends js.Object
   
   @js.native
-  sealed trait accessible
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait accessible extends SemanticICONS
   
   @js.native
-  sealed trait accusoft
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait accusoft extends SemanticICONS
   
   @js.native
   sealed trait ad extends FlagNameValues
   
   @js.native
-  sealed trait add
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait add extends SemanticICONS
   
   @js.native
-  sealed trait `add circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `add circle` extends SemanticICONS
   
   @js.native
-  sealed trait `add square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `add square` extends SemanticICONS
   
   @js.native
-  sealed trait `add to calendar`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `add to calendar` extends SemanticICONS
   
   @js.native
-  sealed trait `add to cart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `add to cart` extends SemanticICONS
   
   @js.native
-  sealed trait `add user`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `add user` extends SemanticICONS
   
   @js.native
-  sealed trait `address book`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `address book` extends SemanticICONS
   
   @js.native
-  sealed trait `address book outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `address book outline` extends SemanticICONS
   
   @js.native
-  sealed trait `address card`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `address card` extends SemanticICONS
   
   @js.native
-  sealed trait `address card outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `address card outline` extends SemanticICONS
   
   @js.native
-  sealed trait adjust
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait adjust extends SemanticICONS
   
   @js.native
-  sealed trait adn
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait adn extends SemanticICONS
   
   @js.native
-  sealed trait adversal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait adversal extends SemanticICONS
   
   @js.native
   sealed trait ae extends FlagNameValues
@@ -259,9 +193,7 @@ object semanticDashUiDashReactStrings {
   sealed trait af extends FlagNameValues
   
   @js.native
-  sealed trait affiliatetheme
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait affiliatetheme extends SemanticICONS
   
   @js.native
   sealed trait afghanistan extends FlagNameValues
@@ -279,73 +211,49 @@ object semanticDashUiDashReactStrings {
   sealed trait `aland islands` extends FlagNameValues
   
   @js.native
-  sealed trait alarm
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait alarm extends SemanticICONS
   
   @js.native
-  sealed trait `alarm mute`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `alarm mute` extends SemanticICONS
   
   @js.native
   sealed trait albania extends FlagNameValues
   
   @js.native
-  sealed trait ald
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ald extends SemanticICONS
   
   @js.native
   sealed trait algeria extends FlagNameValues
   
   @js.native
-  sealed trait algolia
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait algolia extends SemanticICONS
   
   @js.native
-  sealed trait `align center`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `align center` extends SemanticICONS
   
   @js.native
-  sealed trait `align justify`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `align justify` extends SemanticICONS
   
   @js.native
-  sealed trait `align left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `align left` extends SemanticICONS
   
   @js.native
-  sealed trait `align right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `align right` extends SemanticICONS
   
   @js.native
-  sealed trait als
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait als extends SemanticICONS
   
   @js.native
   sealed trait am extends FlagNameValues
   
   @js.native
-  sealed trait amazon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait amazon extends SemanticICONS
   
   @js.native
-  sealed trait `amazon pay`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `amazon pay` extends SemanticICONS
   
   @js.native
-  sealed trait ambulance
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ambulance extends SemanticICONS
   
   @js.native
   sealed trait america extends FlagNameValues
@@ -354,96 +262,64 @@ object semanticDashUiDashReactStrings {
   sealed trait `american samoa` extends FlagNameValues
   
   @js.native
-  sealed trait `american sign language interpreting`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `american sign language interpreting` extends SemanticICONS
   
   @js.native
-  sealed trait amilia
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait amilia extends SemanticICONS
   
   @js.native
   sealed trait an extends FlagNameValues
   
   @js.native
-  sealed trait anchor
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait anchor extends SemanticICONS
   
   @js.native
   sealed trait andorra extends FlagNameValues
   
   @js.native
-  sealed trait android
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait android extends SemanticICONS
   
   @js.native
-  sealed trait angellist
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait angellist extends SemanticICONS
   
   @js.native
-  sealed trait `angle double down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle double down` extends SemanticICONS
   
   @js.native
-  sealed trait `angle double left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle double left` extends SemanticICONS
   
   @js.native
-  sealed trait `angle double right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle double right` extends SemanticICONS
   
   @js.native
-  sealed trait `angle double up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle double up` extends SemanticICONS
   
   @js.native
-  sealed trait `angle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle down` extends SemanticICONS
   
   @js.native
-  sealed trait `angle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle left` extends SemanticICONS
   
   @js.native
-  sealed trait `angle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle right` extends SemanticICONS
   
   @js.native
-  sealed trait `angle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `angle up` extends SemanticICONS
   
   @js.native
   sealed trait angola extends FlagNameValues
   
   @js.native
-  sealed trait angrycreative
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait angrycreative extends SemanticICONS
   
   @js.native
   sealed trait anguilla extends FlagNameValues
   
   @js.native
-  sealed trait angular
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait angular extends SemanticICONS
   
   @js.native
-  sealed trait announcement
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait announcement extends SemanticICONS
   
   @js.native
   sealed trait antigua extends FlagNameValues
@@ -452,47 +328,31 @@ object semanticDashUiDashReactStrings {
   sealed trait ao extends FlagNameValues
   
   @js.native
-  sealed trait `app store`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `app store` extends SemanticICONS
   
   @js.native
-  sealed trait `app store ios`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `app store ios` extends SemanticICONS
   
   @js.native
-  sealed trait apper
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait apper extends SemanticICONS
   
   @js.native
-  sealed trait apple
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait apple extends SemanticICONS
   
   @js.native
-  sealed trait `apple pay`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `apple pay` extends SemanticICONS
   
   @js.native
   sealed trait ar extends FlagNameValues
   
   @js.native
-  sealed trait archive
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait archive extends SemanticICONS
   
   @js.native
-  sealed trait `area chart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `area chart` extends SemanticICONS
   
   @js.native
-  sealed trait `area graph`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `area graph` extends SemanticICONS
   
   @js.native
   sealed trait argentina extends FlagNameValues
@@ -501,104 +361,64 @@ object semanticDashUiDashReactStrings {
   sealed trait armenia extends FlagNameValues
   
   @js.native
-  sealed trait `arrow alternate circle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle down` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle down outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle down outline` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle left` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle left outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle left outline` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle right` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle right outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle right outline` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle up` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow alternate circle up outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow alternate circle up outline` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow circle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow circle down` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow circle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow circle left` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow circle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow circle right` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow circle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow circle up` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow down` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow down cart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow down cart` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow left` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow right` extends SemanticICONS
   
   @js.native
-  sealed trait `arrow up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrow up` extends SemanticICONS
   
   @js.native
-  sealed trait `arrows alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrows alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `arrows alternate horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrows alternate horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `arrows alternate vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `arrows alternate vertical` extends SemanticICONS
   
   @js.native
   sealed trait aruba extends FlagNameValues
@@ -610,68 +430,45 @@ object semanticDashUiDashReactStrings {
   sealed trait ascending extends js.Object
   
   @js.native
-  sealed trait asexual
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait asexual extends SemanticICONS
   
   @js.native
-  sealed trait asl
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait asl extends SemanticICONS
   
   @js.native
-  sealed trait `asl interpreting`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `asl interpreting` extends SemanticICONS
   
   @js.native
-  sealed trait `assistive listening devices`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `assistive listening devices` extends SemanticICONS
   
   @js.native
-  sealed trait `assistive listening systems`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `assistive listening systems` extends SemanticICONS
   
   @js.native
-  sealed trait asterisk
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait asterisk extends SemanticICONS
   
   @js.native
-  sealed trait asymmetrik
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait asymmetrik extends SemanticICONS
   
   @js.native
   sealed trait at
     extends FlagNameValues
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
   
   @js.native
-  sealed trait attach
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait attach extends SemanticICONS
   
   @js.native
-  sealed trait attention
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait attention extends SemanticICONS
   
   @js.native
   sealed trait au extends FlagNameValues
   
   @js.native
-  sealed trait audible
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait audible extends SemanticICONS
   
   @js.native
-  sealed trait `audio description`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `audio description` extends SemanticICONS
   
   @js.native
   sealed trait australia extends FlagNameValues
@@ -683,27 +480,19 @@ object semanticDashUiDashReactStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait autoprefixer
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait autoprefixer extends SemanticICONS
   
   @js.native
-  sealed trait avianex
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait avianex extends SemanticICONS
   
   @js.native
-  sealed trait aviato
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait aviato extends SemanticICONS
   
   @js.native
   sealed trait aw extends FlagNameValues
   
   @js.native
-  sealed trait aws
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait aws extends SemanticICONS
   
   @js.native
   sealed trait ax extends FlagNameValues
@@ -718,9 +507,7 @@ object semanticDashUiDashReactStrings {
   sealed trait ba extends FlagNameValues
   
   @js.native
-  sealed trait backward
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait backward extends SemanticICONS
   
   @js.native
   sealed trait bahamas extends FlagNameValues
@@ -729,29 +516,19 @@ object semanticDashUiDashReactStrings {
   sealed trait bahrain extends FlagNameValues
   
   @js.native
-  sealed trait balance
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait balance extends SemanticICONS
   
   @js.native
-  sealed trait `balance scale`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `balance scale` extends SemanticICONS
   
   @js.native
-  sealed trait ban
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ban extends SemanticICONS
   
   @js.native
-  sealed trait `band aid`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `band aid` extends SemanticICONS
   
   @js.native
-  sealed trait bandcamp
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bandcamp extends SemanticICONS
   
   @js.native
   sealed trait bangladesh extends FlagNameValues
@@ -760,102 +537,64 @@ object semanticDashUiDashReactStrings {
   sealed trait banner extends js.Object
   
   @js.native
-  sealed trait bar
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bar extends SemanticICONS
   
   @js.native
   sealed trait barbados extends FlagNameValues
   
   @js.native
-  sealed trait barcode
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait barcode extends SemanticICONS
   
   @js.native
-  sealed trait bars
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bars extends SemanticICONS
   
   @js.native
-  sealed trait `baseball ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `baseball ball` extends SemanticICONS
   
   @js.native
-  sealed trait `basketball ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `basketball ball` extends SemanticICONS
   
   @js.native
-  sealed trait bath
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bath extends SemanticICONS
   
   @js.native
-  sealed trait bathtub
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bathtub extends SemanticICONS
   
   @js.native
-  sealed trait `battery empty`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery empty` extends SemanticICONS
   
   @js.native
-  sealed trait `battery four`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery four` extends SemanticICONS
   
   @js.native
-  sealed trait `battery full`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery full` extends SemanticICONS
   
   @js.native
-  sealed trait `battery half`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery half` extends SemanticICONS
   
   @js.native
-  sealed trait `battery high`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery high` extends SemanticICONS
   
   @js.native
-  sealed trait `battery low`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery low` extends SemanticICONS
   
   @js.native
-  sealed trait `battery one`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery one` extends SemanticICONS
   
   @js.native
-  sealed trait `battery quarter`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery quarter` extends SemanticICONS
   
   @js.native
-  sealed trait `battery three`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery three` extends SemanticICONS
   
   @js.native
-  sealed trait `battery three quarters`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery three quarters` extends SemanticICONS
   
   @js.native
-  sealed trait `battery two`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery two` extends SemanticICONS
   
   @js.native
-  sealed trait `battery zero`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `battery zero` extends SemanticICONS
   
   @js.native
   sealed trait bb extends FlagNameValues
@@ -867,24 +606,16 @@ object semanticDashUiDashReactStrings {
   sealed trait be extends FlagNameValues
   
   @js.native
-  sealed trait bed
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bed extends SemanticICONS
   
   @js.native
-  sealed trait beer
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait beer extends SemanticICONS
   
   @js.native
-  sealed trait behance
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait behance extends SemanticICONS
   
   @js.native
-  sealed trait `behance square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `behance square` extends SemanticICONS
   
   @js.native
   sealed trait belarus extends FlagNameValues
@@ -896,24 +627,16 @@ object semanticDashUiDashReactStrings {
   sealed trait belize extends FlagNameValues
   
   @js.native
-  sealed trait bell
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bell extends SemanticICONS
   
   @js.native
-  sealed trait `bell outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bell outline` extends SemanticICONS
   
   @js.native
-  sealed trait `bell slash`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bell slash` extends SemanticICONS
   
   @js.native
-  sealed trait `bell slash outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bell slash outline` extends SemanticICONS
   
   @js.native
   sealed trait below extends js.Object
@@ -940,9 +663,7 @@ object semanticDashUiDashReactStrings {
   sealed trait bi extends FlagNameValues
   
   @js.native
-  sealed trait bicycle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bicycle extends SemanticICONS
   
   @js.native
   sealed trait big
@@ -950,108 +671,69 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
   sealed trait billboard extends js.Object
   
   @js.native
-  sealed trait bimobject
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bimobject extends SemanticICONS
   
   @js.native
-  sealed trait binoculars
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait binoculars extends SemanticICONS
   
   @js.native
-  sealed trait birthday
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait birthday extends SemanticICONS
   
   @js.native
-  sealed trait `birthday cake`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `birthday cake` extends SemanticICONS
   
   @js.native
-  sealed trait bitbucket
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bitbucket extends SemanticICONS
   
   @js.native
-  sealed trait `bitbucket square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bitbucket square` extends SemanticICONS
   
   @js.native
-  sealed trait bitcoin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bitcoin extends SemanticICONS
   
   @js.native
-  sealed trait bity
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bity extends SemanticICONS
   
   @js.native
   sealed trait bj extends FlagNameValues
   
   @js.native
-  sealed trait black
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait black extends SemanticCOLORS
   
   @js.native
-  sealed trait `black tie`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `black tie` extends SemanticICONS
   
   @js.native
-  sealed trait blackberry
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait blackberry extends SemanticICONS
   
   @js.native
-  sealed trait blind
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait blind extends SemanticICONS
   
   @js.native
-  sealed trait `block layout`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `block layout` extends SemanticICONS
   
   @js.native
-  sealed trait blogger
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait blogger extends SemanticICONS
   
   @js.native
-  sealed trait `blogger b`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `blogger b` extends SemanticICONS
   
   @js.native
-  sealed trait blue
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait blue extends SemanticCOLORS
   
   @js.native
-  sealed trait bluetooth
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bluetooth extends SemanticICONS
   
   @js.native
-  sealed trait `bluetooth alternative`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bluetooth alternative` extends SemanticICONS
   
   @js.native
-  sealed trait `bluetooth b`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bluetooth b` extends SemanticICONS
   
   @js.native
   sealed trait blurring extends js.Object
@@ -1066,37 +748,25 @@ object semanticDashUiDashReactStrings {
   sealed trait bo extends FlagNameValues
   
   @js.native
-  sealed trait bold
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bold extends SemanticICONS
   
   @js.native
   sealed trait bolivia extends FlagNameValues
   
   @js.native
-  sealed trait bolt
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bolt extends SemanticICONS
   
   @js.native
-  sealed trait bomb
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bomb extends SemanticICONS
   
   @js.native
-  sealed trait book
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait book extends SemanticICONS
   
   @js.native
-  sealed trait bookmark
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bookmark extends SemanticICONS
   
   @js.native
-  sealed trait `bookmark outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bookmark outline` extends SemanticICONS
   
   @js.native
   sealed trait bosnia extends FlagNameValues
@@ -1105,9 +775,7 @@ object semanticDashUiDashReactStrings {
   sealed trait botswana extends FlagNameValues
   
   @js.native
-  sealed trait bottom
-    extends SemanticVERTICALALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
+  sealed trait bottom extends SemanticVERTICALALIGNMENTS
   
   @js.native
   sealed trait `bottom center` extends js.Object
@@ -1121,75 +789,53 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait bounce
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `bouvet island` extends FlagNameValues
   
   @js.native
-  sealed trait `bowling ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `bowling ball` extends SemanticICONS
   
   @js.native
-  sealed trait box
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait box extends SemanticICONS
   
   @js.native
-  sealed trait boxes
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait boxes extends SemanticICONS
   
   @js.native
   sealed trait br extends FlagNameValues
   
   @js.native
-  sealed trait braille
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait braille extends SemanticICONS
   
   @js.native
   sealed trait brazil extends FlagNameValues
   
   @js.native
-  sealed trait briefcase
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait briefcase extends SemanticICONS
   
   @js.native
   sealed trait `british virgin islands` extends FlagNameValues
   
   @js.native
-  sealed trait `broken chain`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `broken chain` extends SemanticICONS
   
   @js.native
-  sealed trait brown
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait brown extends SemanticCOLORS
   
   @js.native
   sealed trait browse
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `browse right`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait browser
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait browser extends SemanticICONS
   
   @js.native
   sealed trait brunei extends FlagNameValues
@@ -1201,37 +847,25 @@ object semanticDashUiDashReactStrings {
   sealed trait bt extends FlagNameValues
   
   @js.native
-  sealed trait btc
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait btc extends SemanticICONS
   
   @js.native
-  sealed trait bug
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bug extends SemanticICONS
   
   @js.native
-  sealed trait building
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait building extends SemanticICONS
   
   @js.native
-  sealed trait `building outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `building outline` extends SemanticICONS
   
   @js.native
   sealed trait bulgaria extends FlagNameValues
   
   @js.native
-  sealed trait bullhorn
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bullhorn extends SemanticICONS
   
   @js.native
-  sealed trait bullseye
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bullseye extends SemanticICONS
   
   @js.native
   sealed trait `burkina faso` extends FlagNameValues
@@ -1240,25 +874,19 @@ object semanticDashUiDashReactStrings {
   sealed trait burma extends FlagNameValues
   
   @js.native
-  sealed trait buromobelexperte
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait buromobelexperte extends SemanticICONS
   
   @js.native
   sealed trait burundi extends FlagNameValues
   
   @js.native
-  sealed trait bus
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait bus extends SemanticICONS
   
   @js.native
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait buysellads
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait buysellads extends SemanticICONS
   
   @js.native
   sealed trait bv extends FlagNameValues
@@ -1279,92 +907,58 @@ object semanticDashUiDashReactStrings {
   sealed trait `caicos islands` extends FlagNameValues
   
   @js.native
-  sealed trait calculator
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait calculator extends SemanticICONS
   
   @js.native
-  sealed trait calendar
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait calendar extends SemanticICONS
   
   @js.native
-  sealed trait `calendar alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar alternate outline` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar check`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar check` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar check outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar check outline` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar minus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar minus` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar minus outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar minus outline` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar outline` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar plus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar plus` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar plus outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar plus outline` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar times`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar times` extends SemanticICONS
   
   @js.native
-  sealed trait `calendar times outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `calendar times outline` extends SemanticICONS
   
   @js.native
-  sealed trait call
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait call extends SemanticICONS
   
   @js.native
-  sealed trait `call square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `call square` extends SemanticICONS
   
   @js.native
   sealed trait cambodia extends FlagNameValues
   
   @js.native
-  sealed trait camera
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait camera extends SemanticICONS
   
   @js.native
-  sealed trait `camera retro`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `camera retro` extends SemanticICONS
   
   @js.native
   sealed trait cameroon extends FlagNameValues
@@ -1373,92 +967,58 @@ object semanticDashUiDashReactStrings {
   sealed trait canada extends FlagNameValues
   
   @js.native
-  sealed trait cancel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cancel extends SemanticICONS
   
   @js.native
   sealed trait `cape verde` extends FlagNameValues
   
   @js.native
-  sealed trait car
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait car extends SemanticICONS
   
   @js.native
-  sealed trait `caret down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret down` extends SemanticICONS
   
   @js.native
-  sealed trait `caret left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret left` extends SemanticICONS
   
   @js.native
-  sealed trait `caret right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret right` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square down` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square down outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square down outline` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square left` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square left outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square left outline` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square right` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square right outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square right outline` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square up` extends SemanticICONS
   
   @js.native
-  sealed trait `caret square up outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret square up outline` extends SemanticICONS
   
   @js.native
-  sealed trait `caret up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `caret up` extends SemanticICONS
   
   @js.native
-  sealed trait cart
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cart extends SemanticICONS
   
   @js.native
-  sealed trait `cart arrow down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cart arrow down` extends SemanticICONS
   
   @js.native
-  sealed trait `cart plus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cart plus` extends SemanticICONS
   
   @js.native
   sealed trait `cayman islands` extends FlagNameValues
@@ -1467,70 +1027,45 @@ object semanticDashUiDashReactStrings {
   sealed trait cc
     extends FlagNameValues
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
   
   @js.native
-  sealed trait `cc amazon pay`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc amazon pay` extends SemanticICONS
   
   @js.native
-  sealed trait `cc amex`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc amex` extends SemanticICONS
   
   @js.native
-  sealed trait `cc apple pay`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc apple pay` extends SemanticICONS
   
   @js.native
-  sealed trait `cc diners club`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc diners club` extends SemanticICONS
   
   @js.native
-  sealed trait `cc discover`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc discover` extends SemanticICONS
   
   @js.native
-  sealed trait `cc jcb`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc jcb` extends SemanticICONS
   
   @js.native
-  sealed trait `cc mastercard`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc mastercard` extends SemanticICONS
   
   @js.native
-  sealed trait `cc paypal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc paypal` extends SemanticICONS
   
   @js.native
-  sealed trait `cc stripe`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc stripe` extends SemanticICONS
   
   @js.native
-  sealed trait `cc visa`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cc visa` extends SemanticICONS
   
   @js.native
   sealed trait cd extends FlagNameValues
   
   @js.native
-  sealed trait center
-    extends SemanticTEXTALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
+  sealed trait center extends SemanticTEXTALIGNMENTS
   
   @js.native
-  sealed trait centercode
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait centercode extends SemanticICONS
   
   @js.native
   sealed trait centered extends js.Object
@@ -1539,9 +1074,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `central african republic` extends FlagNameValues
   
   @js.native
-  sealed trait certificate
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait certificate extends SemanticICONS
   
   @js.native
   sealed trait cf extends FlagNameValues
@@ -1556,172 +1089,106 @@ object semanticDashUiDashReactStrings {
   sealed trait chad extends FlagNameValues
   
   @js.native
-  sealed trait chain
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait chain extends SemanticICONS
   
   @js.native
-  sealed trait `chart area`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chart area` extends SemanticICONS
   
   @js.native
-  sealed trait `chart bar`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chart bar` extends SemanticICONS
   
   @js.native
-  sealed trait `chart bar outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chart bar outline` extends SemanticICONS
   
   @js.native
-  sealed trait `chart line`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chart line` extends SemanticICONS
   
   @js.native
-  sealed trait `chart pie`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chart pie` extends SemanticICONS
   
   @js.native
-  sealed trait chat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait chat extends SemanticICONS
   
   @js.native
-  sealed trait check
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait check extends SemanticICONS
   
   @js.native
-  sealed trait `check circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `check circle` extends SemanticICONS
   
   @js.native
-  sealed trait `check circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `check circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait `check square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `check square` extends SemanticICONS
   
   @js.native
-  sealed trait `check square outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `check square outline` extends SemanticICONS
   
   @js.native
   sealed trait checkbox extends js.Object
   
   @js.native
-  sealed trait `checked calendar`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `checked calendar` extends SemanticICONS
   
   @js.native
-  sealed trait checkmark
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait checkmark extends SemanticICONS
   
   @js.native
-  sealed trait `checkmark box`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `checkmark box` extends SemanticICONS
   
   @js.native
-  sealed trait chess
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait chess extends SemanticICONS
   
   @js.native
-  sealed trait `chess bishop`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess bishop` extends SemanticICONS
   
   @js.native
-  sealed trait `chess board`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess board` extends SemanticICONS
   
   @js.native
-  sealed trait `chess king`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess king` extends SemanticICONS
   
   @js.native
-  sealed trait `chess knight`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess knight` extends SemanticICONS
   
   @js.native
-  sealed trait `chess pawn`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess pawn` extends SemanticICONS
   
   @js.native
-  sealed trait `chess queen`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess queen` extends SemanticICONS
   
   @js.native
-  sealed trait `chess rock`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess rock` extends SemanticICONS
   
   @js.native
-  sealed trait `chess rook`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chess rook` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron circle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron circle down` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron circle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron circle left` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron circle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron circle right` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron circle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron circle up` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron down` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron left` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron right` extends SemanticICONS
   
   @js.native
-  sealed trait `chevron up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `chevron up` extends SemanticICONS
   
   @js.native
-  sealed trait child
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait child extends SemanticICONS
   
   @js.native
   sealed trait chile extends FlagNameValues
@@ -1733,37 +1200,25 @@ object semanticDashUiDashReactStrings {
   sealed trait `christmas island` extends FlagNameValues
   
   @js.native
-  sealed trait chrome
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait chrome extends SemanticICONS
   
   @js.native
   sealed trait ci extends FlagNameValues
   
   @js.native
-  sealed trait circle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait circle extends SemanticICONS
   
   @js.native
-  sealed trait `circle notch`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `circle notch` extends SemanticICONS
   
   @js.native
-  sealed trait `circle notched`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `circle notched` extends SemanticICONS
   
   @js.native
-  sealed trait `circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait `circle thin`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `circle thin` extends SemanticICONS
   
   @js.native
   sealed trait ck extends FlagNameValues
@@ -1775,92 +1230,58 @@ object semanticDashUiDashReactStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait clipboard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait clipboard extends SemanticICONS
   
   @js.native
-  sealed trait `clipboard check`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `clipboard check` extends SemanticICONS
   
   @js.native
-  sealed trait `clipboard list`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `clipboard list` extends SemanticICONS
   
   @js.native
-  sealed trait `clipboard outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `clipboard outline` extends SemanticICONS
   
   @js.native
-  sealed trait clock
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait clock extends SemanticICONS
   
   @js.native
-  sealed trait `clock outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `clock outline` extends SemanticICONS
   
   @js.native
   sealed trait clockwise extends js.Object
   
   @js.native
-  sealed trait clone
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait clone extends SemanticICONS
   
   @js.native
-  sealed trait `clone outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `clone outline` extends SemanticICONS
   
   @js.native
-  sealed trait close
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait close extends SemanticICONS
   
   @js.native
-  sealed trait `closed captioning`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `closed captioning` extends SemanticICONS
   
   @js.native
-  sealed trait `closed captioning outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `closed captioning outline` extends SemanticICONS
   
   @js.native
-  sealed trait cloud
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cloud extends SemanticICONS
   
   @js.native
-  sealed trait `cloud download`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cloud download` extends SemanticICONS
   
   @js.native
-  sealed trait `cloud upload`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `cloud upload` extends SemanticICONS
   
   @js.native
-  sealed trait cloudscale
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cloudscale extends SemanticICONS
   
   @js.native
-  sealed trait cloudsmith
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cloudsmith extends SemanticICONS
   
   @js.native
-  sealed trait cloudversify
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cloudversify extends SemanticICONS
   
   @js.native
   sealed trait cm extends FlagNameValues
@@ -1869,126 +1290,83 @@ object semanticDashUiDashReactStrings {
   sealed trait cn extends FlagNameValues
   
   @js.native
-  sealed trait cny
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cny extends SemanticICONS
   
   @js.native
   sealed trait co extends FlagNameValues
   
   @js.native
-  sealed trait cocktail
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cocktail extends SemanticICONS
   
   @js.native
   sealed trait `cocos islands` extends FlagNameValues
   
   @js.native
-  sealed trait code
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait code extends SemanticICONS
   
   @js.native
-  sealed trait `code branch`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `code branch` extends SemanticICONS
   
   @js.native
-  sealed trait codepen
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait codepen extends SemanticICONS
   
   @js.native
-  sealed trait codiepie
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait codiepie extends SemanticICONS
   
   @js.native
-  sealed trait coffee
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait coffee extends SemanticICONS
   
   @js.native
-  sealed trait cog
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cog extends SemanticICONS
   
   @js.native
-  sealed trait cogs
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cogs extends SemanticICONS
   
   @js.native
   sealed trait colombia extends FlagNameValues
   
   @js.native
-  sealed trait columns
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait columns extends SemanticICONS
   
   @js.native
-  sealed trait comment
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait comment extends SemanticICONS
   
   @js.native
-  sealed trait `comment alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `comment alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `comment alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `comment alternate outline` extends SemanticICONS
   
   @js.native
-  sealed trait `comment outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `comment outline` extends SemanticICONS
   
   @js.native
-  sealed trait commenting
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait commenting extends SemanticICONS
   
   @js.native
-  sealed trait comments
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait comments extends SemanticICONS
   
   @js.native
-  sealed trait `comments outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `comments outline` extends SemanticICONS
   
   @js.native
   sealed trait comoros extends FlagNameValues
   
   @js.native
-  sealed trait compass
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait compass extends SemanticICONS
   
   @js.native
-  sealed trait `compass outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `compass outline` extends SemanticICONS
   
   @js.native
-  sealed trait compose
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait compose extends SemanticICONS
   
   @js.native
-  sealed trait compress
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait compress extends SemanticICONS
   
   @js.native
   sealed trait computer
     extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
        with _GridOnlyProp
        with _GridReversedProp
   
@@ -1996,9 +1374,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `computer vertically` extends _GridReversedProp
   
   @js.native
-  sealed trait configure
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait configure extends SemanticICONS
   
   @js.native
   sealed trait congo extends FlagNameValues
@@ -2007,47 +1383,31 @@ object semanticDashUiDashReactStrings {
   sealed trait `congo brazzaville` extends FlagNameValues
   
   @js.native
-  sealed trait connectdevelop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait connectdevelop extends SemanticICONS
   
   @js.native
-  sealed trait contao
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait contao extends SemanticICONS
   
   @js.native
-  sealed trait content
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait content extends SemanticICONS
   
   @js.native
-  sealed trait conversation
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait conversation extends SemanticICONS
   
   @js.native
   sealed trait `cook islands` extends FlagNameValues
   
   @js.native
-  sealed trait copy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait copy extends SemanticICONS
   
   @js.native
-  sealed trait `copy outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `copy outline` extends SemanticICONS
   
   @js.native
-  sealed trait copyright
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait copyright extends SemanticICONS
   
   @js.native
-  sealed trait `copyright outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `copyright outline` extends SemanticICONS
   
   @js.native
   sealed trait `costa rica` extends FlagNameValues
@@ -2059,58 +1419,40 @@ object semanticDashUiDashReactStrings {
   sealed trait counterclockwise extends js.Object
   
   @js.native
-  sealed trait cpanel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cpanel extends SemanticICONS
   
   @js.native
   sealed trait cr extends FlagNameValues
   
   @js.native
-  sealed trait `creative commons`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `creative commons` extends SemanticICONS
   
   @js.native
-  sealed trait `credit card`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `credit card` extends SemanticICONS
   
   @js.native
-  sealed trait `credit card alternative`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `credit card alternative` extends SemanticICONS
   
   @js.native
-  sealed trait `credit card outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `credit card outline` extends SemanticICONS
   
   @js.native
   sealed trait croatia extends FlagNameValues
   
   @js.native
-  sealed trait crop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait crop extends SemanticICONS
   
   @js.native
-  sealed trait crosshairs
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait crosshairs extends SemanticICONS
   
   @js.native
   sealed trait cs extends FlagNameValues
   
   @js.native
-  sealed trait css3
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait css3 extends SemanticICONS
   
   @js.native
-  sealed trait `css3 alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `css3 alternate` extends SemanticICONS
   
   @js.native
   sealed trait cu extends FlagNameValues
@@ -2119,29 +1461,19 @@ object semanticDashUiDashReactStrings {
   sealed trait cuba extends FlagNameValues
   
   @js.native
-  sealed trait cube
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cube extends SemanticICONS
   
   @js.native
-  sealed trait cubes
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cubes extends SemanticICONS
   
   @js.native
-  sealed trait currency
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait currency extends SemanticICONS
   
   @js.native
-  sealed trait cut
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cut extends SemanticICONS
   
   @js.native
-  sealed trait cuttlefish
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait cuttlefish extends SemanticICONS
   
   @js.native
   sealed trait cv extends FlagNameValues
@@ -2162,118 +1494,76 @@ object semanticDashUiDashReactStrings {
   sealed trait `czech republic` extends FlagNameValues
   
   @js.native
-  sealed trait `d and d`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `d and d` extends SemanticICONS
   
   @js.native
-  sealed trait dashboard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dashboard extends SemanticICONS
   
   @js.native
-  sealed trait dashcube
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dashcube extends SemanticICONS
   
   @js.native
-  sealed trait database
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait database extends SemanticICONS
   
   @js.native
   sealed trait de extends FlagNameValues
   
   @js.native
-  sealed trait deaf
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait deaf extends SemanticICONS
   
   @js.native
-  sealed trait deafness
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait deafness extends SemanticICONS
   
   @js.native
-  sealed trait delete
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait delete extends SemanticICONS
   
   @js.native
-  sealed trait `delete calendar`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `delete calendar` extends SemanticICONS
   
   @js.native
-  sealed trait delicious
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait delicious extends SemanticICONS
   
   @js.native
   sealed trait denmark extends FlagNameValues
   
   @js.native
-  sealed trait deploydog
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait deploydog extends SemanticICONS
   
   @js.native
   sealed trait descending extends js.Object
   
   @js.native
-  sealed trait deskpro
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait deskpro extends SemanticICONS
   
   @js.native
-  sealed trait desktop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait desktop extends SemanticICONS
   
   @js.native
-  sealed trait detective
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait detective extends SemanticICONS
   
   @js.native
-  sealed trait deviantart
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait deviantart extends SemanticICONS
   
   @js.native
-  sealed trait diamond
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait diamond extends SemanticICONS
   
   @js.native
-  sealed trait digg
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait digg extends SemanticICONS
   
   @js.native
-  sealed trait `digital ocean`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `digital ocean` extends SemanticICONS
   
   @js.native
-  sealed trait discord
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait discord extends SemanticICONS
   
   @js.native
-  sealed trait discourse
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait discourse extends SemanticICONS
   
   @js.native
-  sealed trait discussions
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait discussions extends SemanticICONS
   
   @js.native
-  sealed trait disk
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait disk extends SemanticICONS
   
   @js.native
   sealed trait dj extends FlagNameValues
@@ -2288,47 +1578,31 @@ object semanticDashUiDashReactStrings {
   sealed trait dm extends FlagNameValues
   
   @js.native
-  sealed trait dna
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dna extends SemanticICONS
   
   @js.native
   sealed trait `do` extends FlagNameValues
   
   @js.native
-  sealed trait dochub
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dochub extends SemanticICONS
   
   @js.native
-  sealed trait docker
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait docker extends SemanticICONS
   
   @js.native
-  sealed trait doctor
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait doctor extends SemanticICONS
   
   @js.native
-  sealed trait dollar
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dollar extends SemanticICONS
   
   @js.native
-  sealed trait `dollar sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `dollar sign` extends SemanticICONS
   
   @js.native
-  sealed trait dolly
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dolly extends SemanticICONS
   
   @js.native
-  sealed trait `dolly flatbed`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `dolly flatbed` extends SemanticICONS
   
   @js.native
   sealed trait dominica extends FlagNameValues
@@ -2337,82 +1611,54 @@ object semanticDashUiDashReactStrings {
   sealed trait `dominican republic` extends FlagNameValues
   
   @js.native
-  sealed trait dont
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dont extends SemanticICONS
   
   @js.native
-  sealed trait `dot circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `dot circle` extends SemanticICONS
   
   @js.native
-  sealed trait `dot circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `dot circle outline` extends SemanticICONS
   
   @js.native
   sealed trait down extends js.Object
   
   @js.native
-  sealed trait download
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait download extends SemanticICONS
   
   @js.native
-  sealed trait draft2digital
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait draft2digital extends SemanticICONS
   
   @js.native
-  sealed trait dribbble
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dribbble extends SemanticICONS
   
   @js.native
-  sealed trait `dribbble square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `dribbble square` extends SemanticICONS
   
   @js.native
-  sealed trait `drivers license`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `drivers license` extends SemanticICONS
   
   @js.native
   sealed trait drop
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait dropbox
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dropbox extends SemanticICONS
   
   @js.native
-  sealed trait dropdown
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dropdown extends SemanticICONS
   
   @js.native
-  sealed trait drupal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait drupal extends SemanticICONS
   
   @js.native
-  sealed trait dyalog
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait dyalog extends SemanticICONS
   
   @js.native
   sealed trait dz extends FlagNameValues
   
   @js.native
-  sealed trait earlybirds
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait earlybirds extends SemanticICONS
   
   @js.native
   sealed trait ec extends FlagNameValues
@@ -2421,19 +1667,13 @@ object semanticDashUiDashReactStrings {
   sealed trait ecuador extends FlagNameValues
   
   @js.native
-  sealed trait edge
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait edge extends SemanticICONS
   
   @js.native
-  sealed trait edit
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait edit extends SemanticICONS
   
   @js.native
-  sealed trait `edit outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `edit outline` extends SemanticICONS
   
   @js.native
   sealed trait ee extends FlagNameValues
@@ -2450,92 +1690,60 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait eight
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait eject
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait eject extends SemanticICONS
   
   @js.native
   sealed trait `el salvador` extends FlagNameValues
   
   @js.native
-  sealed trait elementor
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait elementor extends SemanticICONS
   
   @js.native
   sealed trait eleven
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `ellipsis horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ellipsis horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `ellipsis vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ellipsis vertical` extends SemanticICONS
   
   @js.native
   sealed trait ellipsisItem extends js.Object
   
   @js.native
-  sealed trait ember
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ember extends SemanticICONS
   
   @js.native
-  sealed trait emergency
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait emergency extends SemanticICONS
   
   @js.native
-  sealed trait empire
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait empire extends SemanticICONS
   
   @js.native
-  sealed trait envelope
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait envelope extends SemanticICONS
   
   @js.native
-  sealed trait `envelope open`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `envelope open` extends SemanticICONS
   
   @js.native
-  sealed trait `envelope open outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `envelope open outline` extends SemanticICONS
   
   @js.native
-  sealed trait `envelope outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `envelope outline` extends SemanticICONS
   
   @js.native
-  sealed trait `envelope square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `envelope square` extends SemanticICONS
   
   @js.native
-  sealed trait envira
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait envira extends SemanticICONS
   
   @js.native
-  sealed trait `envira gallery`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `envira gallery` extends SemanticICONS
   
   @js.native
   sealed trait equal extends js.Object
@@ -2547,22 +1755,16 @@ object semanticDashUiDashReactStrings {
   sealed trait er extends FlagNameValues
   
   @js.native
-  sealed trait erase
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait erase extends SemanticICONS
   
   @js.native
-  sealed trait eraser
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait eraser extends SemanticICONS
   
   @js.native
   sealed trait eritrea extends FlagNameValues
   
   @js.native
-  sealed trait erlang
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait erlang extends SemanticICONS
   
   @js.native
   sealed trait es extends FlagNameValues
@@ -2574,35 +1776,25 @@ object semanticDashUiDashReactStrings {
   sealed trait et extends FlagNameValues
   
   @js.native
-  sealed trait ethereum
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ethereum extends SemanticICONS
   
   @js.native
   sealed trait ethiopia extends FlagNameValues
   
   @js.native
-  sealed trait etsy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait etsy extends SemanticICONS
   
   @js.native
   sealed trait eu extends FlagNameValues
   
   @js.native
-  sealed trait eur
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait eur extends SemanticICONS
   
   @js.native
-  sealed trait euro
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait euro extends SemanticICONS
   
   @js.native
-  sealed trait `euro sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `euro sign` extends SemanticICONS
   
   @js.native
   sealed trait `european union` extends FlagNameValues
@@ -2611,154 +1803,98 @@ object semanticDashUiDashReactStrings {
   sealed trait events extends js.Object
   
   @js.native
-  sealed trait exchange
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait exchange extends SemanticICONS
   
   @js.native
-  sealed trait exclamation
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait exclamation extends SemanticICONS
   
   @js.native
-  sealed trait `exclamation circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `exclamation circle` extends SemanticICONS
   
   @js.native
-  sealed trait `exclamation triangle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `exclamation triangle` extends SemanticICONS
   
   @js.native
-  sealed trait expand
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait expand extends SemanticICONS
   
   @js.native
-  sealed trait `expand arrows alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `expand arrows alternate` extends SemanticICONS
   
   @js.native
-  sealed trait expeditedssl
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait expeditedssl extends SemanticICONS
   
   @js.native
-  sealed trait external
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait external extends SemanticICONS
   
   @js.native
-  sealed trait `external alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `external alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `external share`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `external share` extends SemanticICONS
   
   @js.native
-  sealed trait `external square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `external square` extends SemanticICONS
   
   @js.native
-  sealed trait `external square alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `external square alternate` extends SemanticICONS
   
   @js.native
-  sealed trait eye
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait eye extends SemanticICONS
   
   @js.native
-  sealed trait `eye dropper`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `eye dropper` extends SemanticICONS
   
   @js.native
-  sealed trait `eye slash`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `eye slash` extends SemanticICONS
   
   @js.native
-  sealed trait `eye slash outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `eye slash outline` extends SemanticICONS
   
   @js.native
-  sealed trait eyedropper
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait eyedropper extends SemanticICONS
   
   @js.native
-  sealed trait facebook
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait facebook extends SemanticICONS
   
   @js.native
-  sealed trait `facebook f`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `facebook f` extends SemanticICONS
   
   @js.native
-  sealed trait `facebook messenger`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `facebook messenger` extends SemanticICONS
   
   @js.native
-  sealed trait `facebook official`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `facebook official` extends SemanticICONS
   
   @js.native
-  sealed trait `facebook square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `facebook square` extends SemanticICONS
   
   @js.native
-  sealed trait factory
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait factory extends SemanticICONS
   
   @js.native
   sealed trait fade
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade down`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade left`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade right`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fade up`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `falkland islands` extends FlagNameValues
@@ -2767,39 +1903,25 @@ object semanticDashUiDashReactStrings {
   sealed trait `faroe islands` extends FlagNameValues
   
   @js.native
-  sealed trait `fast backward`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fast backward` extends SemanticICONS
   
   @js.native
-  sealed trait `fast forward`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fast forward` extends SemanticICONS
   
   @js.native
-  sealed trait favorite
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait favorite extends SemanticICONS
   
   @js.native
-  sealed trait fax
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait fax extends SemanticICONS
   
   @js.native
-  sealed trait feed
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait feed extends SemanticICONS
   
   @js.native
-  sealed trait female
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait female extends SemanticICONS
   
   @js.native
-  sealed trait `female homosexual`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `female homosexual` extends SemanticICONS
   
   @js.native
   sealed trait fi extends FlagNameValues
@@ -2807,195 +1929,123 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait fifteen
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `fighter jet`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fighter jet` extends SemanticICONS
   
   @js.native
   sealed trait fiji extends FlagNameValues
   
   @js.native
-  sealed trait file
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait file extends SemanticICONS
   
   @js.native
-  sealed trait `file alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `file alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file alternate outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file archive`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file archive` extends SemanticICONS
   
   @js.native
-  sealed trait `file archive outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file archive outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file audio`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file audio` extends SemanticICONS
   
   @js.native
-  sealed trait `file audio outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file audio outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file code`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file code` extends SemanticICONS
   
   @js.native
-  sealed trait `file code outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file code outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file excel`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file excel` extends SemanticICONS
   
   @js.native
-  sealed trait `file excel outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file excel outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file image`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file image` extends SemanticICONS
   
   @js.native
-  sealed trait `file image outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file image outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file pdf`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file pdf` extends SemanticICONS
   
   @js.native
-  sealed trait `file pdf outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file pdf outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file powerpoint`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file powerpoint` extends SemanticICONS
   
   @js.native
-  sealed trait `file powerpoint outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file powerpoint outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file text`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file text` extends SemanticICONS
   
   @js.native
-  sealed trait `file text outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file text outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file video`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file video` extends SemanticICONS
   
   @js.native
-  sealed trait `file video outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file video outline` extends SemanticICONS
   
   @js.native
-  sealed trait `file word`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file word` extends SemanticICONS
   
   @js.native
-  sealed trait `file word outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `file word outline` extends SemanticICONS
   
   @js.native
-  sealed trait film
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait film extends SemanticICONS
   
   @js.native
-  sealed trait filter
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait filter extends SemanticICONS
   
   @js.native
-  sealed trait find
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait find extends SemanticICONS
   
   @js.native
   sealed trait finland extends FlagNameValues
   
   @js.native
-  sealed trait fire
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait fire extends SemanticICONS
   
   @js.native
-  sealed trait `fire extinguisher`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fire extinguisher` extends SemanticICONS
   
   @js.native
-  sealed trait firefox
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait firefox extends SemanticICONS
   
   @js.native
-  sealed trait `first aid`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `first aid` extends SemanticICONS
   
   @js.native
-  sealed trait `first order`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `first order` extends SemanticICONS
   
   @js.native
   sealed trait firstItem extends js.Object
   
   @js.native
-  sealed trait firstdraft
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait firstdraft extends SemanticICONS
   
   @js.native
   sealed trait five
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait fj extends FlagNameValues
@@ -3004,74 +2054,50 @@ object semanticDashUiDashReactStrings {
   sealed trait fk extends FlagNameValues
   
   @js.native
-  sealed trait flag
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait flag extends SemanticICONS
   
   @js.native
-  sealed trait `flag checkered`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `flag checkered` extends SemanticICONS
   
   @js.native
-  sealed trait `flag outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `flag outline` extends SemanticICONS
   
   @js.native
   sealed trait flash
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait flask
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait flask extends SemanticICONS
   
   @js.native
-  sealed trait flickr
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait flickr extends SemanticICONS
   
   @js.native
-  sealed trait flipboard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait flipboard extends SemanticICONS
   
   @js.native
-  sealed trait fly
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait fly extends SemanticICONS
   
   @js.native
   sealed trait `fly down`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly left`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly right`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `fly up`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait fm extends FlagNameValues
@@ -3083,108 +2109,68 @@ object semanticDashUiDashReactStrings {
   sealed trait focus extends js.Object
   
   @js.native
-  sealed trait folder
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait folder extends SemanticICONS
   
   @js.native
-  sealed trait `folder open`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `folder open` extends SemanticICONS
   
   @js.native
-  sealed trait `folder open outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `folder open outline` extends SemanticICONS
   
   @js.native
-  sealed trait `folder outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `folder outline` extends SemanticICONS
   
   @js.native
-  sealed trait font
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait font extends SemanticICONS
   
   @js.native
-  sealed trait `font awesome`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `font awesome` extends SemanticICONS
   
   @js.native
-  sealed trait `font awesome alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `font awesome alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `font awesome flag`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `font awesome flag` extends SemanticICONS
   
   @js.native
-  sealed trait fonticons
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait fonticons extends SemanticICONS
   
   @js.native
-  sealed trait `fonticons fi`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fonticons fi` extends SemanticICONS
   
   @js.native
-  sealed trait food
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait food extends SemanticICONS
   
   @js.native
-  sealed trait `football ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `football ball` extends SemanticICONS
   
   @js.native
-  sealed trait fork
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait fork extends SemanticICONS
   
   @js.native
-  sealed trait `fort awesome`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fort awesome` extends SemanticICONS
   
   @js.native
-  sealed trait `fort awesome alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `fort awesome alternate` extends SemanticICONS
   
   @js.native
-  sealed trait forumbee
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait forumbee extends SemanticICONS
   
   @js.native
-  sealed trait forward
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait forward extends SemanticICONS
   
   @js.native
   sealed trait four
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait foursquare
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait foursquare extends SemanticICONS
   
   @js.native
   sealed trait fourteen
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait fr extends FlagNameValues
@@ -3193,14 +2179,10 @@ object semanticDashUiDashReactStrings {
   sealed trait france extends FlagNameValues
   
   @js.native
-  sealed trait `free code camp`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `free code camp` extends SemanticICONS
   
   @js.native
-  sealed trait freebsd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait freebsd extends SemanticICONS
   
   @js.native
   sealed trait `french guiana` extends FlagNameValues
@@ -3212,14 +2194,10 @@ object semanticDashUiDashReactStrings {
   sealed trait `french territories` extends FlagNameValues
   
   @js.native
-  sealed trait frown
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait frown extends SemanticICONS
   
   @js.native
-  sealed trait `frown outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `frown outline` extends SemanticICONS
   
   @js.native
   sealed trait full extends js.Object
@@ -3228,14 +2206,10 @@ object semanticDashUiDashReactStrings {
   sealed trait fullscreen extends js.Object
   
   @js.native
-  sealed trait futbol
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait futbol extends SemanticICONS
   
   @js.native
-  sealed trait `futbol outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `futbol outline` extends SemanticICONS
   
   @js.native
   sealed trait ga extends FlagNameValues
@@ -3247,24 +2221,16 @@ object semanticDashUiDashReactStrings {
   sealed trait gambia extends FlagNameValues
   
   @js.native
-  sealed trait game
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait game extends SemanticICONS
   
   @js.native
-  sealed trait gamepad
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gamepad extends SemanticICONS
   
   @js.native
-  sealed trait gavel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gavel extends SemanticICONS
   
   @js.native
-  sealed trait gay
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gay extends SemanticICONS
   
   @js.native
   sealed trait gb extends FlagNameValues
@@ -3276,9 +2242,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `gb wls` extends FlagNameValues
   
   @js.native
-  sealed trait gbp
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gbp extends SemanticICONS
   
   @js.native
   sealed trait gd extends FlagNameValues
@@ -3287,19 +2251,13 @@ object semanticDashUiDashReactStrings {
   sealed trait ge extends FlagNameValues
   
   @js.native
-  sealed trait gem
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gem extends SemanticICONS
   
   @js.native
-  sealed trait `gem outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `gem outline` extends SemanticICONS
   
   @js.native
-  sealed trait genderless
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait genderless extends SemanticICONS
   
   @js.native
   sealed trait georgia extends FlagNameValues
@@ -3308,22 +2266,16 @@ object semanticDashUiDashReactStrings {
   sealed trait germany extends FlagNameValues
   
   @js.native
-  sealed trait `get pocket`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `get pocket` extends SemanticICONS
   
   @js.native
   sealed trait gf extends FlagNameValues
   
   @js.native
-  sealed trait gg
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gg extends SemanticICONS
   
   @js.native
-  sealed trait `gg circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `gg circle` extends SemanticICONS
   
   @js.native
   sealed trait gh extends FlagNameValues
@@ -3338,79 +2290,51 @@ object semanticDashUiDashReactStrings {
   sealed trait gibraltar extends FlagNameValues
   
   @js.native
-  sealed trait gift
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gift extends SemanticICONS
   
   @js.native
-  sealed trait git
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait git extends SemanticICONS
   
   @js.native
-  sealed trait `git square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `git square` extends SemanticICONS
   
   @js.native
-  sealed trait github
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait github extends SemanticICONS
   
   @js.native
-  sealed trait `github alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `github alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `github square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `github square` extends SemanticICONS
   
   @js.native
-  sealed trait gitkraken
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gitkraken extends SemanticICONS
   
   @js.native
-  sealed trait gitlab
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gitlab extends SemanticICONS
   
   @js.native
-  sealed trait gitter
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gitter extends SemanticICONS
   
   @js.native
   sealed trait gl extends FlagNameValues
   
   @js.native
-  sealed trait `glass martini`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `glass martini` extends SemanticICONS
   
   @js.native
-  sealed trait glide
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait glide extends SemanticICONS
   
   @js.native
-  sealed trait `glide g`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `glide g` extends SemanticICONS
   
   @js.native
-  sealed trait globe
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait globe extends SemanticICONS
   
   @js.native
   sealed trait glow
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait gm extends FlagNameValues
@@ -3419,69 +2343,43 @@ object semanticDashUiDashReactStrings {
   sealed trait gn extends FlagNameValues
   
   @js.native
-  sealed trait gofore
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gofore extends SemanticICONS
   
   @js.native
-  sealed trait `golf ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `golf ball` extends SemanticICONS
   
   @js.native
-  sealed trait goodreads
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait goodreads extends SemanticICONS
   
   @js.native
-  sealed trait `goodreads g`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `goodreads g` extends SemanticICONS
   
   @js.native
-  sealed trait google
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait google extends SemanticICONS
   
   @js.native
-  sealed trait `google drive`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google drive` extends SemanticICONS
   
   @js.native
-  sealed trait `google play`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google play` extends SemanticICONS
   
   @js.native
-  sealed trait `google plus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google plus` extends SemanticICONS
   
   @js.native
-  sealed trait `google plus circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google plus circle` extends SemanticICONS
   
   @js.native
-  sealed trait `google plus g`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google plus g` extends SemanticICONS
   
   @js.native
-  sealed trait `google plus official`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google plus official` extends SemanticICONS
   
   @js.native
-  sealed trait `google plus square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google plus square` extends SemanticICONS
   
   @js.native
-  sealed trait `google wallet`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `google wallet` extends SemanticICONS
   
   @js.native
   sealed trait gp extends FlagNameValues
@@ -3493,37 +2391,25 @@ object semanticDashUiDashReactStrings {
   sealed trait gr extends FlagNameValues
   
   @js.native
-  sealed trait grab
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait grab extends SemanticICONS
   
   @js.native
-  sealed trait graduation
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait graduation extends SemanticICONS
   
   @js.native
-  sealed trait `graduation cap`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `graduation cap` extends SemanticICONS
   
   @js.native
-  sealed trait gratipay
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gratipay extends SemanticICONS
   
   @js.native
-  sealed trait grav
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait grav extends SemanticICONS
   
   @js.native
   sealed trait greece extends FlagNameValues
   
   @js.native
-  sealed trait green
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait green extends SemanticCOLORS
   
   @js.native
   sealed trait greenland extends FlagNameValues
@@ -3532,29 +2418,19 @@ object semanticDashUiDashReactStrings {
   sealed trait grenada extends FlagNameValues
   
   @js.native
-  sealed trait grey
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait grey extends SemanticCOLORS
   
   @js.native
-  sealed trait `grid layout`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `grid layout` extends SemanticICONS
   
   @js.native
-  sealed trait gripfire
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gripfire extends SemanticICONS
   
   @js.native
-  sealed trait group
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait group extends SemanticICONS
   
   @js.native
-  sealed trait grunt
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait grunt extends SemanticICONS
   
   @js.native
   sealed trait gs extends FlagNameValues
@@ -3581,9 +2457,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `guinea-bissau` extends FlagNameValues
   
   @js.native
-  sealed trait gulp
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait gulp extends SemanticICONS
   
   @js.native
   sealed trait guyana extends FlagNameValues
@@ -3595,24 +2469,16 @@ object semanticDashUiDashReactStrings {
   sealed trait gy extends FlagNameValues
   
   @js.native
-  sealed trait h
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait h extends SemanticICONS
   
   @js.native
-  sealed trait `h square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `h square` extends SemanticICONS
   
   @js.native
-  sealed trait `hacker news`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hacker news` extends SemanticICONS
   
   @js.native
-  sealed trait `hacker news square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hacker news square` extends SemanticICONS
   
   @js.native
   sealed trait haiti extends FlagNameValues
@@ -3624,222 +2490,136 @@ object semanticDashUiDashReactStrings {
   sealed trait `half page` extends js.Object
   
   @js.native
-  sealed trait `hand lizard`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand lizard` extends SemanticICONS
   
   @js.native
-  sealed trait `hand lizard outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand lizard outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand paper`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand paper` extends SemanticICONS
   
   @js.native
-  sealed trait `hand paper outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand paper outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand peace`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand peace` extends SemanticICONS
   
   @js.native
-  sealed trait `hand peace outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand peace outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point down` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point down outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point down outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point left` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point left outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point left outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point right` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point right outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point right outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point up` extends SemanticICONS
   
   @js.native
-  sealed trait `hand point up outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand point up outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand pointer`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand pointer` extends SemanticICONS
   
   @js.native
-  sealed trait `hand pointer outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand pointer outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand rock`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand rock` extends SemanticICONS
   
   @js.native
-  sealed trait `hand rock outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand rock outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand scissors`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand scissors` extends SemanticICONS
   
   @js.native
-  sealed trait `hand scissors outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand scissors outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand spock`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand spock` extends SemanticICONS
   
   @js.native
-  sealed trait `hand spock outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand spock outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hand victory`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hand victory` extends SemanticICONS
   
   @js.native
-  sealed trait handicap
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait handicap extends SemanticICONS
   
   @js.native
-  sealed trait handshake
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait handshake extends SemanticICONS
   
   @js.native
-  sealed trait `handshake outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `handshake outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hard of hearing`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hard of hearing` extends SemanticICONS
   
   @js.native
-  sealed trait hashtag
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hashtag extends SemanticICONS
   
   @js.native
-  sealed trait hdd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hdd extends SemanticICONS
   
   @js.native
-  sealed trait `hdd outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hdd outline` extends SemanticICONS
   
   @js.native
-  sealed trait header
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait header extends SemanticICONS
   
   @js.native
-  sealed trait heading
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait heading extends SemanticICONS
   
   @js.native
-  sealed trait headphones
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait headphones extends SemanticICONS
   
   @js.native
   sealed trait `heard island` extends FlagNameValues
   
   @js.native
-  sealed trait heart
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait heart extends SemanticICONS
   
   @js.native
-  sealed trait `heart outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `heart outline` extends SemanticICONS
   
   @js.native
-  sealed trait heartbeat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait heartbeat extends SemanticICONS
   
   @js.native
-  sealed trait help
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait help extends SemanticICONS
   
   @js.native
-  sealed trait `help circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `help circle` extends SemanticICONS
   
   @js.native
-  sealed trait heterosexual
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait heterosexual extends SemanticICONS
   
   @js.native
-  sealed trait hide
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hide extends SemanticICONS
   
   @js.native
-  sealed trait hips
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hips extends SemanticICONS
   
   @js.native
-  sealed trait `hire a helper`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hire a helper` extends SemanticICONS
   
   @js.native
-  sealed trait history
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait history extends SemanticICONS
   
   @js.native
   sealed trait hk extends FlagNameValues
@@ -3851,14 +2631,10 @@ object semanticDashUiDashReactStrings {
   sealed trait hn extends FlagNameValues
   
   @js.native
-  sealed trait `hockey puck`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hockey puck` extends SemanticICONS
   
   @js.native
-  sealed trait home
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait home extends SemanticICONS
   
   @js.native
   sealed trait honduras extends FlagNameValues
@@ -3867,104 +2643,66 @@ object semanticDashUiDashReactStrings {
   sealed trait `hong kong` extends FlagNameValues
   
   @js.native
-  sealed trait hooli
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hooli extends SemanticICONS
   
   @js.native
   sealed trait `horizontal flip`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait horizontally extends js.Object
   
   @js.native
-  sealed trait hospital
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hospital extends SemanticICONS
   
   @js.native
-  sealed trait `hospital outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hospital outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hospital symbol`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hospital symbol` extends SemanticICONS
   
   @js.native
-  sealed trait hotel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hotel extends SemanticICONS
   
   @js.native
-  sealed trait hotjar
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hotjar extends SemanticICONS
   
   @js.native
-  sealed trait hourglass
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hourglass extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass end`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass end` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass four`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass four` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass full`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass full` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass half`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass half` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass one`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass one` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass outline` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass start`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass start` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass three`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass three` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass two`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass two` extends SemanticICONS
   
   @js.native
-  sealed trait `hourglass zero`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `hourglass zero` extends SemanticICONS
   
   @js.native
-  sealed trait houzz
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait houzz extends SemanticICONS
   
   @js.native
   sealed trait hover extends js.Object
@@ -3976,17 +2714,13 @@ object semanticDashUiDashReactStrings {
   sealed trait ht extends FlagNameValues
   
   @js.native
-  sealed trait html5
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait html5 extends SemanticICONS
   
   @js.native
   sealed trait hu extends FlagNameValues
   
   @js.native
-  sealed trait hubspot
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait hubspot extends SemanticICONS
   
   @js.native
   sealed trait huge
@@ -3994,16 +2728,13 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
        with StatisticSizeProp
   
   @js.native
   sealed trait hungary extends FlagNameValues
   
   @js.native
-  sealed trait `i cursor`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `i cursor` extends SemanticICONS
   
   @js.native
   sealed trait iceland extends FlagNameValues
@@ -4012,29 +2743,19 @@ object semanticDashUiDashReactStrings {
   sealed trait id extends FlagNameValues
   
   @js.native
-  sealed trait `id badge`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `id badge` extends SemanticICONS
   
   @js.native
-  sealed trait `id badge outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `id badge outline` extends SemanticICONS
   
   @js.native
-  sealed trait `id card`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `id card` extends SemanticICONS
   
   @js.native
-  sealed trait `id card outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `id card outline` extends SemanticICONS
   
   @js.native
-  sealed trait idea
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait idea extends SemanticICONS
   
   @js.native
   sealed trait ie extends FlagNameValues
@@ -4043,52 +2764,34 @@ object semanticDashUiDashReactStrings {
   sealed trait il extends FlagNameValues
   
   @js.native
-  sealed trait ils
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ils extends SemanticICONS
   
   @js.native
-  sealed trait image
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait image extends SemanticICONS
   
   @js.native
-  sealed trait `image outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `image outline` extends SemanticICONS
   
   @js.native
-  sealed trait images
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait images extends SemanticICONS
   
   @js.native
-  sealed trait `images outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `images outline` extends SemanticICONS
   
   @js.native
-  sealed trait imdb
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait imdb extends SemanticICONS
   
   @js.native
   sealed trait in extends FlagNameValues
   
   @js.native
-  sealed trait `in cart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `in cart` extends SemanticICONS
   
   @js.native
-  sealed trait inbox
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait inbox extends SemanticICONS
   
   @js.native
-  sealed trait indent
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait indent extends SemanticICONS
   
   @js.native
   sealed trait india extends FlagNameValues
@@ -4100,47 +2803,31 @@ object semanticDashUiDashReactStrings {
   sealed trait indonesia extends FlagNameValues
   
   @js.native
-  sealed trait industry
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait industry extends SemanticICONS
   
   @js.native
-  sealed trait info
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait info extends SemanticICONS
   
   @js.native
-  sealed trait `info circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `info circle` extends SemanticICONS
   
   @js.native
-  sealed trait inr
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait inr extends SemanticICONS
   
   @js.native
-  sealed trait instagram
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait instagram extends SemanticICONS
   
   @js.native
-  sealed trait intergender
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait intergender extends SemanticICONS
   
   @js.native
   sealed trait internally extends js.Object
   
   @js.native
-  sealed trait `internet explorer`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `internet explorer` extends SemanticICONS
   
   @js.native
-  sealed trait intersex
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait intersex extends SemanticICONS
   
   @js.native
   sealed trait inverted extends js.Object
@@ -4149,9 +2836,7 @@ object semanticDashUiDashReactStrings {
   sealed trait io extends FlagNameValues
   
   @js.native
-  sealed trait ioxhost
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ioxhost extends SemanticICONS
   
   @js.native
   sealed trait iq extends FlagNameValues
@@ -4178,22 +2863,16 @@ object semanticDashUiDashReactStrings {
   sealed trait it extends FlagNameValues
   
   @js.native
-  sealed trait italic
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait italic extends SemanticICONS
   
   @js.native
   sealed trait italy extends FlagNameValues
   
   @js.native
-  sealed trait itunes
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait itunes extends SemanticICONS
   
   @js.native
-  sealed trait `itunes note`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `itunes note` extends SemanticICONS
   
   @js.native
   sealed trait jamaica extends FlagNameValues
@@ -4205,16 +2884,12 @@ object semanticDashUiDashReactStrings {
   sealed trait japan extends FlagNameValues
   
   @js.native
-  sealed trait jenkins
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait jenkins extends SemanticICONS
   
   @js.native
   sealed trait jiggle
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait jm extends FlagNameValues
@@ -4223,14 +2898,10 @@ object semanticDashUiDashReactStrings {
   sealed trait jo extends FlagNameValues
   
   @js.native
-  sealed trait joget
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait joget extends SemanticICONS
   
   @js.native
-  sealed trait joomla
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait joomla extends SemanticICONS
   
   @js.native
   sealed trait jordan extends FlagNameValues
@@ -4239,24 +2910,16 @@ object semanticDashUiDashReactStrings {
   sealed trait jp extends FlagNameValues
   
   @js.native
-  sealed trait jpy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait jpy extends SemanticICONS
   
   @js.native
-  sealed trait `js square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `js square` extends SemanticICONS
   
   @js.native
-  sealed trait jsfiddle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait jsfiddle extends SemanticICONS
   
   @js.native
-  sealed trait justified
-    extends SemanticTEXTALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
+  sealed trait justified extends SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait kazakhstan extends FlagNameValues
@@ -4268,24 +2931,16 @@ object semanticDashUiDashReactStrings {
   sealed trait kenya extends FlagNameValues
   
   @js.native
-  sealed trait key
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait key extends SemanticICONS
   
   @js.native
-  sealed trait keyboard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait keyboard extends SemanticICONS
   
   @js.native
-  sealed trait `keyboard outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `keyboard outline` extends SemanticICONS
   
   @js.native
-  sealed trait keycdn
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait keycdn extends SemanticICONS
   
   @js.native
   sealed trait kg extends FlagNameValues
@@ -4297,14 +2952,10 @@ object semanticDashUiDashReactStrings {
   sealed trait ki extends FlagNameValues
   
   @js.native
-  sealed trait kickstarter
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait kickstarter extends SemanticICONS
   
   @js.native
-  sealed trait `kickstarter k`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `kickstarter k` extends SemanticICONS
   
   @js.native
   sealed trait kiribati extends FlagNameValues
@@ -4316,9 +2967,7 @@ object semanticDashUiDashReactStrings {
   sealed trait kn extends FlagNameValues
   
   @js.native
-  sealed trait korvue
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait korvue extends SemanticICONS
   
   @js.native
   sealed trait kp extends FlagNameValues
@@ -4327,9 +2976,7 @@ object semanticDashUiDashReactStrings {
   sealed trait kr extends FlagNameValues
   
   @js.native
-  sealed trait krw
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait krw extends SemanticICONS
   
   @js.native
   sealed trait kuwait extends FlagNameValues
@@ -4350,30 +2997,22 @@ object semanticDashUiDashReactStrings {
   sealed trait la extends FlagNameValues
   
   @js.native
-  sealed trait lab
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lab extends SemanticICONS
   
   @js.native
   sealed trait labeled extends js.Object
   
   @js.native
-  sealed trait language
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait language extends SemanticICONS
   
   @js.native
   sealed trait laos extends FlagNameValues
   
   @js.native
-  sealed trait laptop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait laptop extends SemanticICONS
   
   @js.native
-  sealed trait laravel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait laravel extends SemanticICONS
   
   @js.native
   sealed trait large
@@ -4381,7 +3020,6 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
        with StatisticSizeProp
   
   @js.native
@@ -4397,22 +3035,16 @@ object semanticDashUiDashReactStrings {
   sealed trait lastItem extends js.Object
   
   @js.native
-  sealed trait lastfm
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lastfm extends SemanticICONS
   
   @js.native
-  sealed trait `lastfm square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `lastfm square` extends SemanticICONS
   
   @js.native
   sealed trait latvia extends FlagNameValues
   
   @js.native
-  sealed trait law
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait law extends SemanticICONS
   
   @js.native
   sealed trait lb extends FlagNameValues
@@ -4424,14 +3056,10 @@ object semanticDashUiDashReactStrings {
   sealed trait leaderboard extends js.Object
   
   @js.native
-  sealed trait leaf
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait leaf extends SemanticICONS
   
   @js.native
-  sealed trait leanpub
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait leanpub extends SemanticICONS
   
   @js.native
   sealed trait lebanon extends FlagNameValues
@@ -4439,9 +3067,7 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait left
     extends SemanticFLOATS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticFLOATS
        with SemanticTEXTALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait `left center` extends js.Object
@@ -4450,52 +3076,34 @@ object semanticDashUiDashReactStrings {
   sealed trait `left corner` extends js.Object
   
   @js.native
-  sealed trait legal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait legal extends SemanticICONS
   
   @js.native
-  sealed trait lemon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lemon extends SemanticICONS
   
   @js.native
-  sealed trait `lemon outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `lemon outline` extends SemanticICONS
   
   @js.native
-  sealed trait lesbian
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lesbian extends SemanticICONS
   
   @js.native
   sealed trait lesotho extends FlagNameValues
   
   @js.native
-  sealed trait less
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait less extends SemanticICONS
   
   @js.native
-  sealed trait `level down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `level down` extends SemanticICONS
   
   @js.native
-  sealed trait `level down alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `level down alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `level up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `level up` extends SemanticICONS
   
   @js.native
-  sealed trait `level up alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `level up alternate` extends SemanticICONS
   
   @js.native
   sealed trait li extends FlagNameValues
@@ -4510,114 +3118,70 @@ object semanticDashUiDashReactStrings {
   sealed trait liechtenstein extends FlagNameValues
   
   @js.native
-  sealed trait `life ring`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `life ring` extends SemanticICONS
   
   @js.native
-  sealed trait `life ring outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `life ring outline` extends SemanticICONS
   
   @js.native
-  sealed trait lightbulb
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lightbulb extends SemanticICONS
   
   @js.native
-  sealed trait `lightbulb outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `lightbulb outline` extends SemanticICONS
   
   @js.native
-  sealed trait lightning
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lightning extends SemanticICONS
   
   @js.native
-  sealed trait like
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait like extends SemanticICONS
   
   @js.native
-  sealed trait `line graph`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `line graph` extends SemanticICONS
   
   @js.native
-  sealed trait linechat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait linechat extends SemanticICONS
   
   @js.native
-  sealed trait linkedin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait linkedin extends SemanticICONS
   
   @js.native
-  sealed trait `linkedin alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `linkedin alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `linkedin square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `linkedin square` extends SemanticICONS
   
   @js.native
-  sealed trait linkify
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait linkify extends SemanticICONS
   
   @js.native
-  sealed trait linode
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait linode extends SemanticICONS
   
   @js.native
-  sealed trait linux
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait linux extends SemanticICONS
   
   @js.native
-  sealed trait lira
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lira extends SemanticICONS
   
   @js.native
-  sealed trait `lira sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `lira sign` extends SemanticICONS
   
   @js.native
-  sealed trait list
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait list extends SemanticICONS
   
   @js.native
-  sealed trait `list alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `list alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `list alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `list alternate outline` extends SemanticICONS
   
   @js.native
-  sealed trait `list layout`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `list layout` extends SemanticICONS
   
   @js.native
-  sealed trait `list ol`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `list ol` extends SemanticICONS
   
   @js.native
-  sealed trait `list ul`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `list ul` extends SemanticICONS
   
   @js.native
   sealed trait lithuania extends FlagNameValues
@@ -4626,52 +3190,34 @@ object semanticDashUiDashReactStrings {
   sealed trait lk extends FlagNameValues
   
   @js.native
-  sealed trait `location arrow`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `location arrow` extends SemanticICONS
   
   @js.native
-  sealed trait lock
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lock extends SemanticICONS
   
   @js.native
-  sealed trait `lock open`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `lock open` extends SemanticICONS
   
   @js.native
-  sealed trait `log out`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `log out` extends SemanticICONS
   
   @js.native
   sealed trait long extends js.Object
   
   @js.native
-  sealed trait `long arrow alternate down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `long arrow alternate down` extends SemanticICONS
   
   @js.native
-  sealed trait `long arrow alternate left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `long arrow alternate left` extends SemanticICONS
   
   @js.native
-  sealed trait `long arrow alternate right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `long arrow alternate right` extends SemanticICONS
   
   @js.native
-  sealed trait `long arrow alternate up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `long arrow alternate up` extends SemanticICONS
   
   @js.native
-  sealed trait `low vision`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `low vision` extends SemanticICONS
   
   @js.native
   sealed trait lr extends FlagNameValues
@@ -4695,9 +3241,7 @@ object semanticDashUiDashReactStrings {
   sealed trait ly extends FlagNameValues
   
   @js.native
-  sealed trait lyft
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait lyft extends SemanticICONS
   
   @js.native
   sealed trait ma extends FlagNameValues
@@ -4712,44 +3256,28 @@ object semanticDashUiDashReactStrings {
   sealed trait madagascar extends FlagNameValues
   
   @js.native
-  sealed trait magento
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait magento extends SemanticICONS
   
   @js.native
-  sealed trait magic
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait magic extends SemanticICONS
   
   @js.native
-  sealed trait magnet
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait magnet extends SemanticICONS
   
   @js.native
-  sealed trait magnify
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait magnify extends SemanticICONS
   
   @js.native
-  sealed trait mail
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mail extends SemanticICONS
   
   @js.native
-  sealed trait `mail forward`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mail forward` extends SemanticICONS
   
   @js.native
-  sealed trait `mail outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mail outline` extends SemanticICONS
   
   @js.native
-  sealed trait `mail square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mail square` extends SemanticICONS
   
   @js.native
   sealed trait malawi extends FlagNameValues
@@ -4761,14 +3289,10 @@ object semanticDashUiDashReactStrings {
   sealed trait maldives extends FlagNameValues
   
   @js.native
-  sealed trait male
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait male extends SemanticICONS
   
   @js.native
-  sealed trait `male homosexual`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `male homosexual` extends SemanticICONS
   
   @js.native
   sealed trait mali extends FlagNameValues
@@ -4777,84 +3301,52 @@ object semanticDashUiDashReactStrings {
   sealed trait malta extends FlagNameValues
   
   @js.native
-  sealed trait man
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait man extends SemanticICONS
   
   @js.native
-  sealed trait map
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait map extends SemanticICONS
   
   @js.native
-  sealed trait `map marker`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `map marker` extends SemanticICONS
   
   @js.native
-  sealed trait `map marker alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `map marker alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `map outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `map outline` extends SemanticICONS
   
   @js.native
-  sealed trait `map pin`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `map pin` extends SemanticICONS
   
   @js.native
-  sealed trait `map signs`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `map signs` extends SemanticICONS
   
   @js.native
-  sealed trait marker
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait marker extends SemanticICONS
   
   @js.native
-  sealed trait mars
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mars extends SemanticICONS
   
   @js.native
-  sealed trait `mars alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `mars double`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars double` extends SemanticICONS
   
   @js.native
-  sealed trait `mars horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `mars stroke`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars stroke` extends SemanticICONS
   
   @js.native
-  sealed trait `mars stroke horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars stroke horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `mars stroke vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars stroke vertical` extends SemanticICONS
   
   @js.native
-  sealed trait `mars vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mars vertical` extends SemanticICONS
   
   @js.native
   sealed trait `marshall islands` extends FlagNameValues
@@ -4868,7 +3360,6 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
   sealed trait mauritania extends FlagNameValues
@@ -4877,9 +3368,7 @@ object semanticDashUiDashReactStrings {
   sealed trait mauritius extends FlagNameValues
   
   @js.native
-  sealed trait maxcdn
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait maxcdn extends SemanticICONS
   
   @js.native
   sealed trait mayotte extends FlagNameValues
@@ -4894,59 +3383,39 @@ object semanticDashUiDashReactStrings {
   sealed trait me extends FlagNameValues
   
   @js.native
-  sealed trait meanpath
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait meanpath extends SemanticICONS
   
   @js.native
-  sealed trait medapps
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait medapps extends SemanticICONS
   
   @js.native
   sealed trait medium
     extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
-  sealed trait `medium m`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `medium m` extends SemanticICONS
   
   @js.native
   sealed trait `medium rectangle` extends js.Object
   
   @js.native
-  sealed trait medkit
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait medkit extends SemanticICONS
   
   @js.native
-  sealed trait medrt
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait medrt extends SemanticICONS
   
   @js.native
-  sealed trait meetup
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait meetup extends SemanticICONS
   
   @js.native
-  sealed trait meh
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait meh extends SemanticICONS
   
   @js.native
-  sealed trait `meh outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `meh outline` extends SemanticICONS
   
   @js.native
-  sealed trait mercury
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mercury extends SemanticICONS
   
   @js.native
   sealed trait mexico extends FlagNameValues
@@ -4958,42 +3427,28 @@ object semanticDashUiDashReactStrings {
   sealed trait mh extends FlagNameValues
   
   @js.native
-  sealed trait microchip
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait microchip extends SemanticICONS
   
   @js.native
   sealed trait micronesia extends FlagNameValues
   
   @js.native
-  sealed trait microphone
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait microphone extends SemanticICONS
   
   @js.native
-  sealed trait `microphone slash`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `microphone slash` extends SemanticICONS
   
   @js.native
-  sealed trait microsoft
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait microsoft extends SemanticICONS
   
   @js.native
-  sealed trait `microsoft edge`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `microsoft edge` extends SemanticICONS
   
   @js.native
-  sealed trait middle
-    extends SemanticVERTICALALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
+  sealed trait middle extends SemanticVERTICALALIGNMENTS
   
   @js.native
-  sealed trait military
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait military extends SemanticICONS
   
   @js.native
   sealed trait mini
@@ -5001,43 +3456,28 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
        with StatisticSizeProp
   
   @js.native
-  sealed trait minus
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait minus extends SemanticICONS
   
   @js.native
-  sealed trait `minus circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `minus circle` extends SemanticICONS
   
   @js.native
-  sealed trait `minus square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `minus square` extends SemanticICONS
   
   @js.native
-  sealed trait `minus square outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `minus square outline` extends SemanticICONS
   
   @js.native
-  sealed trait mix
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mix extends SemanticICONS
   
   @js.native
-  sealed trait mixcloud
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mixcloud extends SemanticICONS
   
   @js.native
-  sealed trait mizuni
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mizuni extends SemanticICONS
   
   @js.native
   sealed trait mk extends FlagNameValues
@@ -5057,14 +3497,11 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait mobile
     extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
        with _GridOnlyProp
        with _GridReversedProp
   
   @js.native
-  sealed trait `mobile alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mobile alternate` extends SemanticICONS
   
   @js.native
   sealed trait `mobile banner` extends js.Object
@@ -5076,9 +3513,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `mobile vertically` extends _GridReversedProp
   
   @js.native
-  sealed trait modx
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait modx extends SemanticICONS
   
   @js.native
   sealed trait moldova extends FlagNameValues
@@ -5087,24 +3522,16 @@ object semanticDashUiDashReactStrings {
   sealed trait monaco extends FlagNameValues
   
   @js.native
-  sealed trait monero
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait monero extends SemanticICONS
   
   @js.native
-  sealed trait money
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait money extends SemanticICONS
   
   @js.native
-  sealed trait `money bill alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `money bill alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `money bill alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `money bill alternate outline` extends SemanticICONS
   
   @js.native
   sealed trait mongolia extends FlagNameValues
@@ -5116,32 +3543,22 @@ object semanticDashUiDashReactStrings {
   sealed trait montserrat extends FlagNameValues
   
   @js.native
-  sealed trait moon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait moon extends SemanticICONS
   
   @js.native
-  sealed trait `moon outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `moon outline` extends SemanticICONS
   
   @js.native
   sealed trait morocco extends FlagNameValues
   
   @js.native
-  sealed trait motorcycle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait motorcycle extends SemanticICONS
   
   @js.native
-  sealed trait `mouse pointer`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `mouse pointer` extends SemanticICONS
   
   @js.native
-  sealed trait move
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait move extends SemanticICONS
   
   @js.native
   sealed trait `move down` extends js.Object
@@ -5168,9 +3585,7 @@ object semanticDashUiDashReactStrings {
   sealed trait ms extends FlagNameValues
   
   @js.native
-  sealed trait `ms edge`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ms edge` extends SemanticICONS
   
   @js.native
   sealed trait mt extends FlagNameValues
@@ -5179,14 +3594,10 @@ object semanticDashUiDashReactStrings {
   sealed trait mu extends FlagNameValues
   
   @js.native
-  sealed trait music
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait music extends SemanticICONS
   
   @js.native
-  sealed trait mute
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait mute extends SemanticICONS
   
   @js.native
   sealed trait mv extends FlagNameValues
@@ -5213,9 +3624,7 @@ object semanticDashUiDashReactStrings {
   sealed trait namibia extends FlagNameValues
   
   @js.native
-  sealed trait napster
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait napster extends SemanticICONS
   
   @js.native
   sealed trait nauru extends FlagNameValues
@@ -5239,9 +3648,7 @@ object semanticDashUiDashReactStrings {
   sealed trait `netherlands antilles` extends FlagNameValues
   
   @js.native
-  sealed trait neuter
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait neuter extends SemanticICONS
   
   @js.native
   sealed trait `new caledonia` extends FlagNameValues
@@ -5250,22 +3657,16 @@ object semanticDashUiDashReactStrings {
   sealed trait `new guinea` extends FlagNameValues
   
   @js.native
-  sealed trait `new pied piper`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `new pied piper` extends SemanticICONS
   
   @js.native
   sealed trait `new zealand` extends FlagNameValues
   
   @js.native
-  sealed trait newspaper
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait newspaper extends SemanticICONS
   
   @js.native
-  sealed trait `newspaper outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `newspaper outline` extends SemanticICONS
   
   @js.native
   sealed trait nextItem extends js.Object
@@ -5291,14 +3692,10 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait nine
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `nintendo switch`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `nintendo switch` extends SemanticICONS
   
   @js.native
   sealed trait niue extends FlagNameValues
@@ -5310,19 +3707,13 @@ object semanticDashUiDashReactStrings {
   sealed trait no extends FlagNameValues
   
   @js.native
-  sealed trait node
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait node extends SemanticICONS
   
   @js.native
-  sealed trait `node js`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `node js` extends SemanticICONS
   
   @js.native
-  sealed trait `non binary transgender`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `non binary transgender` extends SemanticICONS
   
   @js.native
   sealed trait `norfolk island` extends FlagNameValues
@@ -5340,68 +3731,46 @@ object semanticDashUiDashReactStrings {
   sealed trait np extends FlagNameValues
   
   @js.native
-  sealed trait npm
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait npm extends SemanticICONS
   
   @js.native
   sealed trait nr extends FlagNameValues
   
   @js.native
-  sealed trait ns8
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ns8 extends SemanticICONS
   
   @js.native
   sealed trait nu extends FlagNameValues
   
   @js.native
-  sealed trait `numbered list`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `numbered list` extends SemanticICONS
   
   @js.native
-  sealed trait nutritionix
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait nutritionix extends SemanticICONS
   
   @js.native
   sealed trait nz extends FlagNameValues
   
   @js.native
-  sealed trait `object group`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `object group` extends SemanticICONS
   
   @js.native
-  sealed trait `object group outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `object group outline` extends SemanticICONS
   
   @js.native
-  sealed trait `object ungroup`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `object ungroup` extends SemanticICONS
   
   @js.native
-  sealed trait `object ungroup outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `object ungroup outline` extends SemanticICONS
   
   @js.native
-  sealed trait odnoklassniki
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait odnoklassniki extends SemanticICONS
   
   @js.native
-  sealed trait `odnoklassniki square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `odnoklassniki square` extends SemanticICONS
   
   @js.native
-  sealed trait olive
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait olive extends SemanticCOLORS
   
   @js.native
   sealed trait om extends FlagNameValues
@@ -5412,69 +3781,43 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait one
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait opencart
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait opencart extends SemanticICONS
   
   @js.native
-  sealed trait openid
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait openid extends SemanticICONS
   
   @js.native
-  sealed trait opera
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait opera extends SemanticICONS
   
   @js.native
-  sealed trait `optin monster`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `optin monster` extends SemanticICONS
   
   @js.native
-  sealed trait options
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait options extends SemanticICONS
   
   @js.native
-  sealed trait orange
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait orange extends SemanticCOLORS
   
   @js.native
-  sealed trait `ordered list`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ordered list` extends SemanticICONS
   
   @js.native
-  sealed trait osi
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait osi extends SemanticICONS
   
   @js.native
-  sealed trait `other gender`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `other gender` extends SemanticICONS
   
   @js.native
-  sealed trait `other gender horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `other gender horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `other gender vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `other gender vertical` extends SemanticICONS
   
   @js.native
-  sealed trait outdent
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait outdent extends SemanticICONS
   
   @js.native
   sealed trait overlay extends js.Object
@@ -5483,22 +3826,16 @@ object semanticDashUiDashReactStrings {
   sealed trait pa extends FlagNameValues
   
   @js.native
-  sealed trait page4
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait page4 extends SemanticICONS
   
   @js.native
   sealed trait pageItem extends js.Object
   
   @js.native
-  sealed trait pagelines
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pagelines extends SemanticICONS
   
   @js.native
-  sealed trait `paint brush`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `paint brush` extends SemanticICONS
   
   @js.native
   sealed trait pakistan extends FlagNameValues
@@ -5510,14 +3847,10 @@ object semanticDashUiDashReactStrings {
   sealed trait palestine extends FlagNameValues
   
   @js.native
-  sealed trait palfed
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait palfed extends SemanticICONS
   
   @js.native
-  sealed trait pallet
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pallet extends SemanticICONS
   
   @js.native
   sealed trait panama extends FlagNameValues
@@ -5526,105 +3859,67 @@ object semanticDashUiDashReactStrings {
   sealed trait panorama extends js.Object
   
   @js.native
-  sealed trait `paper plane`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `paper plane` extends SemanticICONS
   
   @js.native
-  sealed trait `paper plane outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `paper plane outline` extends SemanticICONS
   
   @js.native
-  sealed trait paperclip
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait paperclip extends SemanticICONS
   
   @js.native
-  sealed trait paragraph
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait paragraph extends SemanticICONS
   
   @js.native
   sealed trait paraguay extends FlagNameValues
   
   @js.native
-  sealed trait paste
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait paste extends SemanticICONS
   
   @js.native
-  sealed trait patreon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait patreon extends SemanticICONS
   
   @js.native
-  sealed trait pause
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pause extends SemanticICONS
   
   @js.native
-  sealed trait `pause circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pause circle` extends SemanticICONS
   
   @js.native
-  sealed trait `pause circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pause circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait paw
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait paw extends SemanticICONS
   
   @js.native
-  sealed trait payment
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait payment extends SemanticICONS
   
   @js.native
-  sealed trait paypal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait paypal extends SemanticICONS
   
   @js.native
-  sealed trait `paypal card`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `paypal card` extends SemanticICONS
   
   @js.native
   sealed trait pe extends FlagNameValues
   
   @js.native
-  sealed trait `pen square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pen square` extends SemanticICONS
   
   @js.native
-  sealed trait pencil
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pencil extends SemanticICONS
   
   @js.native
-  sealed trait `pencil alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pencil alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `pencil square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pencil square` extends SemanticICONS
   
   @js.native
-  sealed trait percent
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait percent extends SemanticICONS
   
   @js.native
-  sealed trait periscope
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait periscope extends SemanticICONS
   
   @js.native
   sealed trait peru extends FlagNameValues
@@ -5639,107 +3934,67 @@ object semanticDashUiDashReactStrings {
   sealed trait ph extends FlagNameValues
   
   @js.native
-  sealed trait phabricator
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait phabricator extends SemanticICONS
   
   @js.native
   sealed trait philippines extends FlagNameValues
   
   @js.native
-  sealed trait `phoenix framework`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `phoenix framework` extends SemanticICONS
   
   @js.native
-  sealed trait phone
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait phone extends SemanticICONS
   
   @js.native
-  sealed trait `phone square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `phone square` extends SemanticICONS
   
   @js.native
-  sealed trait `phone volume`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `phone volume` extends SemanticICONS
   
   @js.native
-  sealed trait photo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait photo extends SemanticICONS
   
   @js.native
-  sealed trait php
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait php extends SemanticICONS
   
   @js.native
-  sealed trait picture
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait picture extends SemanticICONS
   
   @js.native
-  sealed trait `pie chart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pie chart` extends SemanticICONS
   
   @js.native
-  sealed trait `pie graph`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pie graph` extends SemanticICONS
   
   @js.native
-  sealed trait `pied piper`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pied piper` extends SemanticICONS
   
   @js.native
-  sealed trait `pied piper alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pied piper alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `pied piper hat`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pied piper hat` extends SemanticICONS
   
   @js.native
-  sealed trait `pied piper pp`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pied piper pp` extends SemanticICONS
   
   @js.native
-  sealed trait pills
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pills extends SemanticICONS
   
   @js.native
-  sealed trait pin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pin extends SemanticICONS
   
   @js.native
-  sealed trait pink
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait pink extends SemanticCOLORS
   
   @js.native
-  sealed trait pinterest
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pinterest extends SemanticICONS
   
   @js.native
-  sealed trait `pinterest p`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pinterest p` extends SemanticICONS
   
   @js.native
-  sealed trait `pinterest square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pinterest square` extends SemanticICONS
   
   @js.native
   sealed trait `pitcairn islands` extends FlagNameValues
@@ -5751,59 +4006,37 @@ object semanticDashUiDashReactStrings {
   sealed trait pl extends FlagNameValues
   
   @js.native
-  sealed trait plane
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait plane extends SemanticICONS
   
   @js.native
-  sealed trait play
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait play extends SemanticICONS
   
   @js.native
-  sealed trait `play circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `play circle` extends SemanticICONS
   
   @js.native
-  sealed trait `play circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `play circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait playstation
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait playstation extends SemanticICONS
   
   @js.native
-  sealed trait plug
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait plug extends SemanticICONS
   
   @js.native
-  sealed trait plus
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait plus extends SemanticICONS
   
   @js.native
-  sealed trait `plus cart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `plus cart` extends SemanticICONS
   
   @js.native
-  sealed trait `plus circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `plus circle` extends SemanticICONS
   
   @js.native
-  sealed trait `plus square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `plus square` extends SemanticICONS
   
   @js.native
-  sealed trait `plus square outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `plus square outline` extends SemanticICONS
   
   @js.native
   sealed trait pm extends FlagNameValues
@@ -5812,34 +4045,22 @@ object semanticDashUiDashReactStrings {
   sealed trait pn extends FlagNameValues
   
   @js.native
-  sealed trait podcast
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait podcast extends SemanticICONS
   
   @js.native
-  sealed trait point
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait point extends SemanticICONS
   
   @js.native
-  sealed trait `pointing down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pointing down` extends SemanticICONS
   
   @js.native
-  sealed trait `pointing left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pointing left` extends SemanticICONS
   
   @js.native
-  sealed trait `pointing right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pointing right` extends SemanticICONS
   
   @js.native
-  sealed trait `pointing up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pointing up` extends SemanticICONS
   
   @js.native
   sealed trait poland extends FlagNameValues
@@ -5848,29 +4069,19 @@ object semanticDashUiDashReactStrings {
   sealed trait portugal extends FlagNameValues
   
   @js.native
-  sealed trait pound
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pound extends SemanticICONS
   
   @js.native
-  sealed trait `pound sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `pound sign` extends SemanticICONS
   
   @js.native
-  sealed trait power
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait power extends SemanticICONS
   
   @js.native
-  sealed trait `power cord`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `power cord` extends SemanticICONS
   
   @js.native
-  sealed trait `power off`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `power off` extends SemanticICONS
   
   @js.native
   sealed trait pr extends FlagNameValues
@@ -5879,24 +4090,16 @@ object semanticDashUiDashReactStrings {
   sealed trait prevItem extends js.Object
   
   @js.native
-  sealed trait print
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait print extends SemanticICONS
   
   @js.native
-  sealed trait privacy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait privacy extends SemanticICONS
   
   @js.native
-  sealed trait `product hunt`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `product hunt` extends SemanticICONS
   
   @js.native
-  sealed trait protect
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait protect extends SemanticICONS
   
   @js.native
   sealed trait ps extends FlagNameValues
@@ -5910,32 +4113,22 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait pulse
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait purple
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait purple extends SemanticCOLORS
   
   @js.native
   sealed trait push extends js.Object
   
   @js.native
-  sealed trait pushed
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait pushed extends SemanticICONS
   
   @js.native
-  sealed trait puzzle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait puzzle extends SemanticICONS
   
   @js.native
-  sealed trait `puzzle piece`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `puzzle piece` extends SemanticICONS
   
   @js.native
   sealed trait pw extends FlagNameValues
@@ -5944,9 +4137,7 @@ object semanticDashUiDashReactStrings {
   sealed trait py extends FlagNameValues
   
   @js.native
-  sealed trait python
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait python extends SemanticICONS
   
   @js.native
   sealed trait qa extends FlagNameValues
@@ -5955,233 +4146,145 @@ object semanticDashUiDashReactStrings {
   sealed trait qatar extends FlagNameValues
   
   @js.native
-  sealed trait qq
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait qq extends SemanticICONS
   
   @js.native
-  sealed trait qrcode
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait qrcode extends SemanticICONS
   
   @js.native
-  sealed trait question
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait question extends SemanticICONS
   
   @js.native
-  sealed trait `question circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `question circle` extends SemanticICONS
   
   @js.native
-  sealed trait `question circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `question circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait quidditch
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait quidditch extends SemanticICONS
   
   @js.native
-  sealed trait quinscape
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait quinscape extends SemanticICONS
   
   @js.native
-  sealed trait quora
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait quora extends SemanticICONS
   
   @js.native
-  sealed trait `quote left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `quote left` extends SemanticICONS
   
   @js.native
-  sealed trait `quote right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `quote right` extends SemanticICONS
   
   @js.native
-  sealed trait `r circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `r circle` extends SemanticICONS
   
   @js.native
-  sealed trait radio
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait radio extends SemanticICONS
   
   @js.native
-  sealed trait rain
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rain extends SemanticICONS
   
   @js.native
-  sealed trait random
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait random extends SemanticICONS
   
   @js.native
   sealed trait ratio extends js.Object
   
   @js.native
-  sealed trait ravelry
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ravelry extends SemanticICONS
   
   @js.native
   sealed trait re extends FlagNameValues
   
   @js.native
-  sealed trait react
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait react extends SemanticICONS
   
   @js.native
-  sealed trait rebel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rebel extends SemanticICONS
   
   @js.native
-  sealed trait record
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait record extends SemanticICONS
   
   @js.native
-  sealed trait recycle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait recycle extends SemanticICONS
   
   @js.native
-  sealed trait red
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait red extends SemanticCOLORS
   
   @js.native
-  sealed trait reddit
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait reddit extends SemanticICONS
   
   @js.native
-  sealed trait `reddit alien`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `reddit alien` extends SemanticICONS
   
   @js.native
-  sealed trait `reddit square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `reddit square` extends SemanticICONS
   
   @js.native
-  sealed trait redo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait redo extends SemanticICONS
   
   @js.native
-  sealed trait `redo alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `redo alternate` extends SemanticICONS
   
   @js.native
-  sealed trait redriver
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait redriver extends SemanticICONS
   
   @js.native
-  sealed trait refresh
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait refresh extends SemanticICONS
   
   @js.native
-  sealed trait registered
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait registered extends SemanticICONS
   
   @js.native
-  sealed trait `registered outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `registered outline` extends SemanticICONS
   
   @js.native
-  sealed trait remove
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait remove extends SemanticICONS
   
   @js.native
-  sealed trait `remove bookmark`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `remove bookmark` extends SemanticICONS
   
   @js.native
-  sealed trait `remove circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `remove circle` extends SemanticICONS
   
   @js.native
-  sealed trait `remove from calendar`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `remove from calendar` extends SemanticICONS
   
   @js.native
-  sealed trait `remove user`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `remove user` extends SemanticICONS
   
   @js.native
-  sealed trait rendact
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rendact extends SemanticICONS
   
   @js.native
-  sealed trait renren
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait renren extends SemanticICONS
   
   @js.native
   sealed trait repaint extends js.Object
   
   @js.native
-  sealed trait repeat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait repeat extends SemanticICONS
   
   @js.native
-  sealed trait reply
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait reply extends SemanticICONS
   
   @js.native
-  sealed trait `reply all`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `reply all` extends SemanticICONS
   
   @js.native
-  sealed trait replyd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait replyd extends SemanticICONS
   
   @js.native
-  sealed trait `resize horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `resize horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait `resize vertical`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `resize vertical` extends SemanticICONS
   
   @js.native
-  sealed trait resolving
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait resolving extends SemanticICONS
   
   @js.native
-  sealed trait retweet
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait retweet extends SemanticICONS
   
   @js.native
   sealed trait reunion extends FlagNameValues
@@ -6189,9 +4292,7 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait right
     extends SemanticFLOATS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticFLOATS
        with SemanticTEXTALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait `right center` extends js.Object
@@ -6200,32 +4301,22 @@ object semanticDashUiDashReactStrings {
   sealed trait `right corner` extends js.Object
   
   @js.native
-  sealed trait rmb
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rmb extends SemanticICONS
   
   @js.native
   sealed trait ro extends FlagNameValues
   
   @js.native
-  sealed trait road
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait road extends SemanticICONS
   
   @js.native
-  sealed trait rocket
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rocket extends SemanticICONS
   
   @js.native
-  sealed trait rocketchat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rocketchat extends SemanticICONS
   
   @js.native
-  sealed trait rockrms
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rockrms extends SemanticICONS
   
   @js.native
   sealed trait romania extends FlagNameValues
@@ -6237,50 +4328,34 @@ object semanticDashUiDashReactStrings {
   sealed trait `rotate left` extends js.Object
   
   @js.native
-  sealed trait rouble
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rouble extends SemanticICONS
   
   @js.native
   sealed trait rs extends FlagNameValues
   
   @js.native
-  sealed trait rss
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rss extends SemanticICONS
   
   @js.native
-  sealed trait `rss square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `rss square` extends SemanticICONS
   
   @js.native
   sealed trait ru extends FlagNameValues
   
   @js.native
-  sealed trait rub
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rub extends SemanticICONS
   
   @js.native
-  sealed trait ruble
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ruble extends SemanticICONS
   
   @js.native
-  sealed trait `ruble sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ruble sign` extends SemanticICONS
   
   @js.native
-  sealed trait rupee
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait rupee extends SemanticICONS
   
   @js.native
-  sealed trait `rupee sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `rupee sign` extends SemanticICONS
   
   @js.native
   sealed trait russia extends FlagNameValues
@@ -6292,17 +4367,13 @@ object semanticDashUiDashReactStrings {
   sealed trait rwanda extends FlagNameValues
   
   @js.native
-  sealed trait s15
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait s15 extends SemanticICONS
   
   @js.native
   sealed trait sa extends FlagNameValues
   
   @js.native
-  sealed trait safari
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait safari extends SemanticICONS
   
   @js.native
   sealed trait `saint helena` extends FlagNameValues
@@ -6332,22 +4403,16 @@ object semanticDashUiDashReactStrings {
   sealed trait `sao tome` extends FlagNameValues
   
   @js.native
-  sealed trait sass
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sass extends SemanticICONS
   
   @js.native
   sealed trait `saudi arabia` extends FlagNameValues
   
   @js.native
-  sealed trait save
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait save extends SemanticICONS
   
   @js.native
-  sealed trait `save outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `save outline` extends SemanticICONS
   
   @js.native
   sealed trait sb extends FlagNameValues
@@ -6358,25 +4423,19 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait scale
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `scale down` extends js.Object
   
   @js.native
-  sealed trait schlix
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait schlix extends SemanticICONS
   
   @js.native
   sealed trait scotland extends FlagNameValues
   
   @js.native
-  sealed trait scribd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait scribd extends SemanticICONS
   
   @js.native
   sealed trait sd extends FlagNameValues
@@ -6385,44 +4444,28 @@ object semanticDashUiDashReactStrings {
   sealed trait se extends FlagNameValues
   
   @js.native
-  sealed trait search
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait search extends SemanticICONS
   
   @js.native
-  sealed trait `search minus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `search minus` extends SemanticICONS
   
   @js.native
-  sealed trait `search plus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `search plus` extends SemanticICONS
   
   @js.native
-  sealed trait searchengin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait searchengin extends SemanticICONS
   
   @js.native
-  sealed trait `selected radio`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `selected radio` extends SemanticICONS
   
   @js.native
-  sealed trait sellcast
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sellcast extends SemanticICONS
   
   @js.native
-  sealed trait sellsy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sellsy extends SemanticICONS
   
   @js.native
-  sealed trait send
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait send extends SemanticICONS
   
   @js.native
   sealed trait senegal extends FlagNameValues
@@ -6431,31 +4474,21 @@ object semanticDashUiDashReactStrings {
   sealed trait serbia extends FlagNameValues
   
   @js.native
-  sealed trait server
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait server extends SemanticICONS
   
   @js.native
-  sealed trait servicestack
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait servicestack extends SemanticICONS
   
   @js.native
-  sealed trait setting
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait setting extends SemanticICONS
   
   @js.native
-  sealed trait settings
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait settings extends SemanticICONS
   
   @js.native
   sealed trait seven
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait seychelles extends FlagNameValues
@@ -6469,220 +4502,140 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait shake
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait share
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait share extends SemanticICONS
   
   @js.native
-  sealed trait `share alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `share alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `share alternate square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `share alternate square` extends SemanticICONS
   
   @js.native
-  sealed trait `share square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `share square` extends SemanticICONS
   
   @js.native
-  sealed trait `share square outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `share square outline` extends SemanticICONS
   
   @js.native
-  sealed trait shekel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shekel extends SemanticICONS
   
   @js.native
-  sealed trait `shekel sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shekel sign` extends SemanticICONS
   
   @js.native
-  sealed trait sheqel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sheqel extends SemanticICONS
   
   @js.native
-  sealed trait shield
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shield extends SemanticICONS
   
   @js.native
-  sealed trait `shield alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shield alternate` extends SemanticICONS
   
   @js.native
-  sealed trait ship
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ship extends SemanticICONS
   
   @js.native
-  sealed trait shipping
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shipping extends SemanticICONS
   
   @js.native
-  sealed trait `shipping fast`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shipping fast` extends SemanticICONS
   
   @js.native
-  sealed trait shirtsinbulk
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shirtsinbulk extends SemanticICONS
   
   @js.native
-  sealed trait shop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shop extends SemanticICONS
   
   @js.native
-  sealed trait `shopping bag`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shopping bag` extends SemanticICONS
   
   @js.native
-  sealed trait `shopping basket`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shopping basket` extends SemanticICONS
   
   @js.native
-  sealed trait `shopping cart`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `shopping cart` extends SemanticICONS
   
   @js.native
   sealed trait short extends js.Object
   
   @js.native
-  sealed trait shower
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shower extends SemanticICONS
   
   @js.native
-  sealed trait shuffle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shuffle extends SemanticICONS
   
   @js.native
-  sealed trait shutdown
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait shutdown extends SemanticICONS
   
   @js.native
   sealed trait si extends FlagNameValues
   
   @js.native
-  sealed trait sidebar
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sidebar extends SemanticICONS
   
   @js.native
   sealed trait `sierra leone` extends FlagNameValues
   
   @js.native
-  sealed trait `sign in`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign in` extends SemanticICONS
   
   @js.native
-  sealed trait `sign in alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign in alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `sign language`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign language` extends SemanticICONS
   
   @js.native
-  sealed trait `sign out`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign out` extends SemanticICONS
   
   @js.native
-  sealed trait `sign out alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign out alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `sign-in`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign-in` extends SemanticICONS
   
   @js.native
-  sealed trait `sign-in alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign-in alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `sign-out`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign-out` extends SemanticICONS
   
   @js.native
-  sealed trait `sign-out alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sign-out alternate` extends SemanticICONS
   
   @js.native
-  sealed trait signal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait signal extends SemanticICONS
   
   @js.native
-  sealed trait signing
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait signing extends SemanticICONS
   
   @js.native
-  sealed trait signup
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait signup extends SemanticICONS
   
   @js.native
-  sealed trait simplybuilt
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait simplybuilt extends SemanticICONS
   
   @js.native
   sealed trait singapore extends FlagNameValues
   
   @js.native
-  sealed trait sistrix
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sistrix extends SemanticICONS
   
   @js.native
-  sealed trait sitemap
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sitemap extends SemanticICONS
   
   @js.native
   sealed trait six
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait sixteen
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait sj extends FlagNameValues
@@ -6691,14 +4644,10 @@ object semanticDashUiDashReactStrings {
   sealed trait sk extends FlagNameValues
   
   @js.native
-  sealed trait skyatlas
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait skyatlas extends SemanticICONS
   
   @js.native
-  sealed trait skype
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait skype extends SemanticICONS
   
   @js.native
   sealed trait skyscraper extends js.Object
@@ -6707,14 +4656,10 @@ object semanticDashUiDashReactStrings {
   sealed trait sl extends FlagNameValues
   
   @js.native
-  sealed trait slack
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait slack extends SemanticICONS
   
   @js.native
-  sealed trait `slack hash`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `slack hash` extends SemanticICONS
   
   @js.native
   sealed trait `slide along` extends js.Object
@@ -6722,16 +4667,12 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `slide down`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide left`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide out` extends js.Object
@@ -6739,31 +4680,21 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `slide right`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `slide up`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait sliders
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sliders extends SemanticICONS
   
   @js.native
-  sealed trait `sliders horizontal`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sliders horizontal` extends SemanticICONS
   
   @js.native
-  sealed trait slideshare
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait slideshare extends SemanticICONS
   
   @js.native
   sealed trait slovakia extends FlagNameValues
@@ -6780,7 +4711,6 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
        with StatisticSizeProp
   
   @js.native
@@ -6796,50 +4726,34 @@ object semanticDashUiDashReactStrings {
   sealed trait `small square` extends js.Object
   
   @js.native
-  sealed trait smile
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait smile extends SemanticICONS
   
   @js.native
-  sealed trait `smile outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `smile outline` extends SemanticICONS
   
   @js.native
   sealed trait sn extends FlagNameValues
   
   @js.native
-  sealed trait snapchat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait snapchat extends SemanticICONS
   
   @js.native
-  sealed trait `snapchat ghost`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `snapchat ghost` extends SemanticICONS
   
   @js.native
-  sealed trait `snapchat square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `snapchat square` extends SemanticICONS
   
   @js.native
-  sealed trait snowflake
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait snowflake extends SemanticICONS
   
   @js.native
-  sealed trait `snowflake outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `snowflake outline` extends SemanticICONS
   
   @js.native
   sealed trait so extends FlagNameValues
   
   @js.native
-  sealed trait soccer
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait soccer extends SemanticICONS
   
   @js.native
   sealed trait `solomon islands` extends FlagNameValues
@@ -6848,99 +4762,61 @@ object semanticDashUiDashReactStrings {
   sealed trait somalia extends FlagNameValues
   
   @js.native
-  sealed trait sort
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sort extends SemanticICONS
   
   @js.native
-  sealed trait `sort alphabet ascending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort alphabet ascending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort alphabet descending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort alphabet descending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort alphabet down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort alphabet down` extends SemanticICONS
   
   @js.native
-  sealed trait `sort alphabet up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort alphabet up` extends SemanticICONS
   
   @js.native
-  sealed trait `sort amount down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort amount down` extends SemanticICONS
   
   @js.native
-  sealed trait `sort amount up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort amount up` extends SemanticICONS
   
   @js.native
-  sealed trait `sort ascending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort ascending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort content ascending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort content ascending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort content descending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort content descending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort descending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort descending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort down` extends SemanticICONS
   
   @js.native
-  sealed trait `sort numeric ascending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort numeric ascending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort numeric descending`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort numeric descending` extends SemanticICONS
   
   @js.native
-  sealed trait `sort numeric down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort numeric down` extends SemanticICONS
   
   @js.native
-  sealed trait `sort numeric up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort numeric up` extends SemanticICONS
   
   @js.native
-  sealed trait `sort up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sort up` extends SemanticICONS
   
   @js.native
-  sealed trait sound
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sound extends SemanticICONS
   
   @js.native
-  sealed trait soundcloud
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait soundcloud extends SemanticICONS
   
   @js.native
   sealed trait `south africa` extends FlagNameValues
@@ -6949,55 +4825,37 @@ object semanticDashUiDashReactStrings {
   sealed trait `south korea` extends FlagNameValues
   
   @js.native
-  sealed trait `space shuttle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `space shuttle` extends SemanticICONS
   
   @js.native
   sealed trait spain extends FlagNameValues
   
   @js.native
-  sealed trait speakap
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait speakap extends SemanticICONS
   
   @js.native
-  sealed trait spinner
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait spinner extends SemanticICONS
   
   @js.native
-  sealed trait spoon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait spoon extends SemanticICONS
   
   @js.native
-  sealed trait spotify
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait spotify extends SemanticICONS
   
   @js.native
-  sealed trait spy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait spy extends SemanticICONS
   
   @js.native
-  sealed trait square
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait square extends SemanticICONS
   
   @js.native
   sealed trait `square button` extends js.Object
   
   @js.native
-  sealed trait `square full`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `square full` extends SemanticICONS
   
   @js.native
-  sealed trait `square outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `square outline` extends SemanticICONS
   
   @js.native
   sealed trait sr extends FlagNameValues
@@ -7009,207 +4867,127 @@ object semanticDashUiDashReactStrings {
   sealed trait st extends FlagNameValues
   
   @js.native
-  sealed trait `stack exchange`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stack exchange` extends SemanticICONS
   
   @js.native
-  sealed trait `stack overflow`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stack overflow` extends SemanticICONS
   
   @js.native
-  sealed trait star
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait star extends SemanticICONS
   
   @js.native
-  sealed trait `star half`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `star half` extends SemanticICONS
   
   @js.native
-  sealed trait `star half empty`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `star half empty` extends SemanticICONS
   
   @js.native
-  sealed trait `star half full`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `star half full` extends SemanticICONS
   
   @js.native
-  sealed trait `star half outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `star half outline` extends SemanticICONS
   
   @js.native
-  sealed trait `star outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `star outline` extends SemanticICONS
   
   @js.native
-  sealed trait staylinked
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait staylinked extends SemanticICONS
   
   @js.native
-  sealed trait steam
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait steam extends SemanticICONS
   
   @js.native
-  sealed trait `steam square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `steam square` extends SemanticICONS
   
   @js.native
-  sealed trait `steam symbol`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `steam symbol` extends SemanticICONS
   
   @js.native
-  sealed trait `step backward`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `step backward` extends SemanticICONS
   
   @js.native
-  sealed trait `step forward`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `step forward` extends SemanticICONS
   
   @js.native
-  sealed trait stethoscope
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait stethoscope extends SemanticICONS
   
   @js.native
-  sealed trait `sticker mule`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sticker mule` extends SemanticICONS
   
   @js.native
-  sealed trait `sticky note`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sticky note` extends SemanticICONS
   
   @js.native
-  sealed trait `sticky note outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sticky note outline` extends SemanticICONS
   
   @js.native
-  sealed trait stop
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait stop extends SemanticICONS
   
   @js.native
-  sealed trait `stop circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stop circle` extends SemanticICONS
   
   @js.native
-  sealed trait `stop circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stop circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait stopwatch
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait stopwatch extends SemanticICONS
   
   @js.native
-  sealed trait strava
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait strava extends SemanticICONS
   
   @js.native
-  sealed trait `street view`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `street view` extends SemanticICONS
   
   @js.native
-  sealed trait strikethrough
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait strikethrough extends SemanticICONS
   
   @js.native
-  sealed trait stripe
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait stripe extends SemanticICONS
   
   @js.native
-  sealed trait `stripe card`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stripe card` extends SemanticICONS
   
   @js.native
-  sealed trait `stripe s`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stripe s` extends SemanticICONS
   
   @js.native
-  sealed trait student
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait student extends SemanticICONS
   
   @js.native
-  sealed trait studiovinari
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait studiovinari extends SemanticICONS
   
   @js.native
-  sealed trait stumbleupon
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait stumbleupon extends SemanticICONS
   
   @js.native
-  sealed trait `stumbleupon circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `stumbleupon circle` extends SemanticICONS
   
   @js.native
-  sealed trait subscript
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait subscript extends SemanticICONS
   
   @js.native
-  sealed trait subway
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait subway extends SemanticICONS
   
   @js.native
   sealed trait sudan extends FlagNameValues
   
   @js.native
-  sealed trait suitcase
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait suitcase extends SemanticICONS
   
   @js.native
-  sealed trait sun
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sun extends SemanticICONS
   
   @js.native
-  sealed trait `sun outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sun outline` extends SemanticICONS
   
   @js.native
-  sealed trait superpowers
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait superpowers extends SemanticICONS
   
   @js.native
-  sealed trait superscript
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait superscript extends SemanticICONS
   
   @js.native
-  sealed trait supple
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait supple extends SemanticICONS
   
   @js.native
   sealed trait suriname extends FlagNameValues
@@ -7229,30 +5007,22 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `swing down`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing left`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing right`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `swing up`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait switzerland extends FlagNameValues
@@ -7261,47 +5031,34 @@ object semanticDashUiDashReactStrings {
   sealed trait sy extends FlagNameValues
   
   @js.native
-  sealed trait sync
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait sync extends SemanticICONS
   
   @js.native
-  sealed trait `sync alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `sync alternate` extends SemanticICONS
   
   @js.native
   sealed trait syria extends FlagNameValues
   
   @js.native
-  sealed trait syringe
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait syringe extends SemanticICONS
   
   @js.native
   sealed trait sz extends FlagNameValues
   
   @js.native
-  sealed trait table
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait table extends SemanticICONS
   
   @js.native
-  sealed trait `table tennis`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `table tennis` extends SemanticICONS
   
   @js.native
   sealed trait tablet
     extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
        with _GridOnlyProp
        with _GridReversedProp
   
   @js.native
-  sealed trait `tablet alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `tablet alternate` extends SemanticICONS
   
   @js.native
   sealed trait `tablet mobile` extends _GridOnlyProp
@@ -7310,26 +5067,18 @@ object semanticDashUiDashReactStrings {
   sealed trait `tablet vertically` extends _GridReversedProp
   
   @js.native
-  sealed trait `tachometer alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `tachometer alternate` extends SemanticICONS
   
   @js.native
   sealed trait tada
     extends SemanticSTATICTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait tag
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tag extends SemanticICONS
   
   @js.native
-  sealed trait tags
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tags extends SemanticICONS
   
   @js.native
   sealed trait taiwan extends FlagNameValues
@@ -7338,27 +5087,19 @@ object semanticDashUiDashReactStrings {
   sealed trait tajikistan extends FlagNameValues
   
   @js.native
-  sealed trait talk
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait talk extends SemanticICONS
   
   @js.native
   sealed trait tanzania extends FlagNameValues
   
   @js.native
-  sealed trait target
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait target extends SemanticICONS
   
   @js.native
-  sealed trait tasks
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tasks extends SemanticICONS
   
   @js.native
-  sealed trait taxi
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait taxi extends SemanticICONS
   
   @js.native
   sealed trait tc extends FlagNameValues
@@ -7367,66 +5108,42 @@ object semanticDashUiDashReactStrings {
   sealed trait td extends FlagNameValues
   
   @js.native
-  sealed trait teal
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait teal extends SemanticCOLORS
   
   @js.native
-  sealed trait telegram
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait telegram extends SemanticICONS
   
   @js.native
-  sealed trait `telegram plane`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `telegram plane` extends SemanticICONS
   
   @js.native
-  sealed trait teletype
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait teletype extends SemanticICONS
   
   @js.native
-  sealed trait television
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait television extends SemanticICONS
   
   @js.native
   sealed trait ten
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `tencent weibo`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `tencent weibo` extends SemanticICONS
   
   @js.native
-  sealed trait terminal
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait terminal extends SemanticICONS
   
   @js.native
-  sealed trait `text cursor`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `text cursor` extends SemanticICONS
   
   @js.native
-  sealed trait `text height`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `text height` extends SemanticICONS
   
   @js.native
-  sealed trait `text telephone`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `text telephone` extends SemanticICONS
   
   @js.native
-  sealed trait `text width`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `text width` extends SemanticICONS
   
   @js.native
   sealed trait tf extends FlagNameValues
@@ -7438,60 +5155,39 @@ object semanticDashUiDashReactStrings {
   sealed trait th
     extends FlagNameValues
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
   
   @js.native
-  sealed trait `th large`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `th large` extends SemanticICONS
   
   @js.native
-  sealed trait `th list`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `th list` extends SemanticICONS
   
   @js.native
   sealed trait thailand extends FlagNameValues
   
   @js.native
-  sealed trait theme
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait theme extends SemanticICONS
   
   @js.native
-  sealed trait themeisle
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait themeisle extends SemanticICONS
   
   @js.native
-  sealed trait thermometer
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait thermometer extends SemanticICONS
   
   @js.native
-  sealed trait `thermometer empty`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thermometer empty` extends SemanticICONS
   
   @js.native
-  sealed trait `thermometer full`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thermometer full` extends SemanticICONS
   
   @js.native
-  sealed trait `thermometer half`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thermometer half` extends SemanticICONS
   
   @js.native
-  sealed trait `thermometer quarter`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thermometer quarter` extends SemanticICONS
   
   @js.native
-  sealed trait `thermometer three quarters`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thermometer three quarters` extends SemanticICONS
   
   @js.native
   sealed trait thin extends js.Object
@@ -7499,89 +5195,57 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait thirteen
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait three
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait `thumb tack`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thumb tack` extends SemanticICONS
   
   @js.native
-  sealed trait `thumbs down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thumbs down` extends SemanticICONS
   
   @js.native
-  sealed trait `thumbs down outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thumbs down outline` extends SemanticICONS
   
   @js.native
-  sealed trait `thumbs up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thumbs up` extends SemanticICONS
   
   @js.native
-  sealed trait `thumbs up outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `thumbs up outline` extends SemanticICONS
   
   @js.native
-  sealed trait thumbtack
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait thumbtack extends SemanticICONS
   
   @js.native
-  sealed trait ticket
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ticket extends SemanticICONS
   
   @js.native
-  sealed trait `ticket alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `ticket alternate` extends SemanticICONS
   
   @js.native
-  sealed trait time
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait time extends SemanticICONS
   
   @js.native
-  sealed trait times
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait times extends SemanticICONS
   
   @js.native
-  sealed trait `times circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `times circle` extends SemanticICONS
   
   @js.native
-  sealed trait `times circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `times circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait `times rectangle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `times rectangle` extends SemanticICONS
   
   @js.native
   sealed trait timorleste extends FlagNameValues
   
   @js.native
-  sealed trait tint
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tint extends SemanticICONS
   
   @js.native
   sealed trait tiny
@@ -7589,7 +5253,6 @@ object semanticDashUiDashReactStrings {
        with MessageSizeProp
        with SegmentSizeProp
        with SemanticSIZES
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticSIZES
        with StatisticSizeProp
   
   @js.native
@@ -7605,7 +5268,6 @@ object semanticDashUiDashReactStrings {
   sealed trait tm
     extends FlagNameValues
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tn extends FlagNameValues
@@ -7614,34 +5276,22 @@ object semanticDashUiDashReactStrings {
   sealed trait to extends FlagNameValues
   
   @js.native
-  sealed trait `toggle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle down` extends SemanticICONS
   
   @js.native
-  sealed trait `toggle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle left` extends SemanticICONS
   
   @js.native
-  sealed trait `toggle off`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle off` extends SemanticICONS
   
   @js.native
-  sealed trait `toggle on`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle on` extends SemanticICONS
   
   @js.native
-  sealed trait `toggle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle right` extends SemanticICONS
   
   @js.native
-  sealed trait `toggle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `toggle up` extends SemanticICONS
   
   @js.native
   sealed trait togo extends FlagNameValues
@@ -7653,9 +5303,7 @@ object semanticDashUiDashReactStrings {
   sealed trait tonga extends FlagNameValues
   
   @js.native
-  sealed trait top
-    extends SemanticVERTICALALIGNMENTS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
+  sealed trait top extends SemanticVERTICALALIGNMENTS
   
   @js.native
   sealed trait `top banner` extends js.Object
@@ -7673,125 +5321,79 @@ object semanticDashUiDashReactStrings {
   sealed trait tr extends FlagNameValues
   
   @js.native
-  sealed trait trademark
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait trademark extends SemanticICONS
   
   @js.native
-  sealed trait train
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait train extends SemanticICONS
   
   @js.native
-  sealed trait transgender
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait transgender extends SemanticICONS
   
   @js.native
-  sealed trait `transgender alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `transgender alternate` extends SemanticICONS
   
   @js.native
-  sealed trait translate
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait translate extends SemanticICONS
   
   @js.native
-  sealed trait trash
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait trash extends SemanticICONS
   
   @js.native
-  sealed trait `trash alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `trash alternate` extends SemanticICONS
   
   @js.native
-  sealed trait `trash alternate outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `trash alternate outline` extends SemanticICONS
   
   @js.native
-  sealed trait travel
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait travel extends SemanticICONS
   
   @js.native
-  sealed trait treatment
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait treatment extends SemanticICONS
   
   @js.native
-  sealed trait tree
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tree extends SemanticICONS
   
   @js.native
-  sealed trait trello
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait trello extends SemanticICONS
   
   @js.native
-  sealed trait `triangle down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `triangle down` extends SemanticICONS
   
   @js.native
-  sealed trait `triangle left`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `triangle left` extends SemanticICONS
   
   @js.native
-  sealed trait `triangle right`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `triangle right` extends SemanticICONS
   
   @js.native
-  sealed trait `triangle up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `triangle up` extends SemanticICONS
   
   @js.native
   sealed trait trinidad extends FlagNameValues
   
   @js.native
-  sealed trait tripadvisor
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tripadvisor extends SemanticICONS
   
   @js.native
-  sealed trait trophy
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait trophy extends SemanticICONS
   
   @js.native
-  sealed trait truck
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait truck extends SemanticICONS
   
   @js.native
-  sealed trait `try`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `try` extends SemanticICONS
   
   @js.native
   sealed trait tt extends FlagNameValues
   
   @js.native
-  sealed trait tty
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tty extends SemanticICONS
   
   @js.native
-  sealed trait tumblr
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait tumblr extends SemanticICONS
   
   @js.native
-  sealed trait `tumblr square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `tumblr square` extends SemanticICONS
   
   @js.native
   sealed trait tunisia extends FlagNameValues
@@ -7809,7 +5411,6 @@ object semanticDashUiDashReactStrings {
   sealed trait tv
     extends FlagNameValues
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tw extends FlagNameValues
@@ -7817,36 +5418,24 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait twelve
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait twitch
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait twitch extends SemanticICONS
   
   @js.native
-  sealed trait twitter
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait twitter extends SemanticICONS
   
   @js.native
-  sealed trait `twitter square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `twitter square` extends SemanticICONS
   
   @js.native
   sealed trait two
     extends SemanticWIDTHS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHS
        with SemanticWIDTHSSTRING
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
-  sealed trait typo3
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait typo3 extends SemanticICONS
   
   @js.native
   sealed trait tz extends FlagNameValues
@@ -7858,9 +5447,7 @@ object semanticDashUiDashReactStrings {
   sealed trait uae extends FlagNameValues
   
   @js.native
-  sealed trait uber
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait uber extends SemanticICONS
   
   @js.native
   sealed trait ug extends FlagNameValues
@@ -7869,9 +5456,7 @@ object semanticDashUiDashReactStrings {
   sealed trait uganda extends FlagNameValues
   
   @js.native
-  sealed trait uikit
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait uikit extends SemanticICONS
   
   @js.native
   sealed trait uk extends FlagNameValues
@@ -7883,37 +5468,25 @@ object semanticDashUiDashReactStrings {
   sealed trait um extends FlagNameValues
   
   @js.native
-  sealed trait umbrella
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait umbrella extends SemanticICONS
   
   @js.native
   sealed trait uncover extends js.Object
   
   @js.native
-  sealed trait underline
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait underline extends SemanticICONS
   
   @js.native
-  sealed trait undo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait undo extends SemanticICONS
   
   @js.native
-  sealed trait `undo alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `undo alternate` extends SemanticICONS
   
   @js.native
-  sealed trait unhide
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait unhide extends SemanticICONS
   
   @js.native
-  sealed trait uniregistry
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait uniregistry extends SemanticICONS
   
   @js.native
   sealed trait `united arab emirates` extends FlagNameValues
@@ -7925,57 +5498,37 @@ object semanticDashUiDashReactStrings {
   sealed trait `united states` extends FlagNameValues
   
   @js.native
-  sealed trait `universal access`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `universal access` extends SemanticICONS
   
   @js.native
-  sealed trait university
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait university extends SemanticICONS
   
   @js.native
-  sealed trait unlink
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait unlink extends SemanticICONS
   
   @js.native
-  sealed trait unlinkify
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait unlinkify extends SemanticICONS
   
   @js.native
-  sealed trait unlock
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait unlock extends SemanticICONS
   
   @js.native
-  sealed trait `unlock alternate`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `unlock alternate` extends SemanticICONS
   
   @js.native
-  sealed trait unmute
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait unmute extends SemanticICONS
   
   @js.native
-  sealed trait `unordered list`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `unordered list` extends SemanticICONS
   
   @js.native
-  sealed trait untappd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait untappd extends SemanticICONS
   
   @js.native
   sealed trait up extends js.Object
   
   @js.native
-  sealed trait upload
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait upload extends SemanticICONS
   
   @js.native
   sealed trait uruguay extends FlagNameValues
@@ -7990,99 +5543,61 @@ object semanticDashUiDashReactStrings {
   sealed trait `us virgin islands` extends FlagNameValues
   
   @js.native
-  sealed trait usb
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait usb extends SemanticICONS
   
   @js.native
-  sealed trait usd
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait usd extends SemanticICONS
   
   @js.native
-  sealed trait user
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait user extends SemanticICONS
   
   @js.native
-  sealed trait `user cancel`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user cancel` extends SemanticICONS
   
   @js.native
-  sealed trait `user circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user circle` extends SemanticICONS
   
   @js.native
-  sealed trait `user circle outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user circle outline` extends SemanticICONS
   
   @js.native
-  sealed trait `user close`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user close` extends SemanticICONS
   
   @js.native
-  sealed trait `user delete`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user delete` extends SemanticICONS
   
   @js.native
-  sealed trait `user doctor`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user doctor` extends SemanticICONS
   
   @js.native
-  sealed trait `user md`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user md` extends SemanticICONS
   
   @js.native
-  sealed trait `user outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user outline` extends SemanticICONS
   
   @js.native
-  sealed trait `user plus`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user plus` extends SemanticICONS
   
   @js.native
-  sealed trait `user secret`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user secret` extends SemanticICONS
   
   @js.native
-  sealed trait `user times`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user times` extends SemanticICONS
   
   @js.native
-  sealed trait `user x`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `user x` extends SemanticICONS
   
   @js.native
-  sealed trait users
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait users extends SemanticICONS
   
   @js.native
-  sealed trait ussunnah
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait ussunnah extends SemanticICONS
   
   @js.native
-  sealed trait `utensil spoon`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `utensil spoon` extends SemanticICONS
   
   @js.native
-  sealed trait utensils
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait utensils extends SemanticICONS
   
   @js.native
   sealed trait uy extends FlagNameValues
@@ -8097,9 +5612,7 @@ object semanticDashUiDashReactStrings {
   sealed trait va extends FlagNameValues
   
   @js.native
-  sealed trait vaadin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vaadin extends SemanticICONS
   
   @js.native
   sealed trait value extends js.Object
@@ -8114,9 +5627,7 @@ object semanticDashUiDashReactStrings {
   sealed trait vc extends FlagNameValues
   
   @js.native
-  sealed trait vcard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vcard extends SemanticICONS
   
   @js.native
   sealed trait ve extends FlagNameValues
@@ -8125,19 +5636,13 @@ object semanticDashUiDashReactStrings {
   sealed trait venezuela extends FlagNameValues
   
   @js.native
-  sealed trait venus
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait venus extends SemanticICONS
   
   @js.native
-  sealed trait `venus double`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `venus double` extends SemanticICONS
   
   @js.native
-  sealed trait `venus mars`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `venus mars` extends SemanticICONS
   
   @js.native
   sealed trait vertical extends js.Object
@@ -8148,9 +5653,7 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait `vertical flip`
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
   sealed trait `vertical rectangle` extends js.Object
@@ -8180,118 +5683,76 @@ object semanticDashUiDashReactStrings {
   sealed trait vi extends FlagNameValues
   
   @js.native
-  sealed trait viacoin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait viacoin extends SemanticICONS
   
   @js.native
-  sealed trait viadeo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait viadeo extends SemanticICONS
   
   @js.native
-  sealed trait `viadeo square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `viadeo square` extends SemanticICONS
   
   @js.native
-  sealed trait viber
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait viber extends SemanticICONS
   
   @js.native
-  sealed trait video
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait video extends SemanticICONS
   
   @js.native
-  sealed trait `video camera`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `video camera` extends SemanticICONS
   
   @js.native
-  sealed trait `video play`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `video play` extends SemanticICONS
   
   @js.native
   sealed trait vietnam extends FlagNameValues
   
   @js.native
-  sealed trait vimeo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vimeo extends SemanticICONS
   
   @js.native
-  sealed trait `vimeo square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `vimeo square` extends SemanticICONS
   
   @js.native
-  sealed trait `vimeo v`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `vimeo v` extends SemanticICONS
   
   @js.native
-  sealed trait vine
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vine extends SemanticICONS
   
   @js.native
-  sealed trait violet
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait violet extends SemanticCOLORS
   
   @js.native
-  sealed trait vk
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vk extends SemanticICONS
   
   @js.native
   sealed trait vn extends FlagNameValues
   
   @js.native
-  sealed trait vnv
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vnv extends SemanticICONS
   
   @js.native
-  sealed trait `volleyball ball`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `volleyball ball` extends SemanticICONS
   
   @js.native
-  sealed trait `volume control phone`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `volume control phone` extends SemanticICONS
   
   @js.native
-  sealed trait `volume down`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `volume down` extends SemanticICONS
   
   @js.native
-  sealed trait `volume off`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `volume off` extends SemanticICONS
   
   @js.native
-  sealed trait `volume up`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `volume up` extends SemanticICONS
   
   @js.native
   sealed trait vu extends FlagNameValues
   
   @js.native
-  sealed trait vuejs
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait vuejs extends SemanticICONS
   
   @js.native
-  sealed trait wait
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wait extends SemanticICONS
   
   @js.native
   sealed trait wales extends FlagNameValues
@@ -8300,44 +5761,28 @@ object semanticDashUiDashReactStrings {
   sealed trait `wallis and futuna` extends FlagNameValues
   
   @js.native
-  sealed trait warehouse
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait warehouse extends SemanticICONS
   
   @js.native
-  sealed trait warning
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait warning extends SemanticICONS
   
   @js.native
-  sealed trait `warning circle`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `warning circle` extends SemanticICONS
   
   @js.native
-  sealed trait `warning sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `warning sign` extends SemanticICONS
   
   @js.native
-  sealed trait wechat
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wechat extends SemanticICONS
   
   @js.native
-  sealed trait weibo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait weibo extends SemanticICONS
   
   @js.native
-  sealed trait weight
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait weight extends SemanticICONS
   
   @js.native
-  sealed trait weixin
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait weixin extends SemanticICONS
   
   @js.native
   sealed trait `western sahara` extends FlagNameValues
@@ -8346,29 +5791,19 @@ object semanticDashUiDashReactStrings {
   sealed trait wf extends FlagNameValues
   
   @js.native
-  sealed trait whatsapp
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait whatsapp extends SemanticICONS
   
   @js.native
-  sealed trait `whatsapp square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `whatsapp square` extends SemanticICONS
   
   @js.native
-  sealed trait wheelchair
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wheelchair extends SemanticICONS
   
   @js.native
-  sealed trait whmcs
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait whmcs extends SemanticICONS
   
   @js.native
-  sealed trait `wi-fi`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `wi-fi` extends SemanticICONS
   
   @js.native
   sealed trait wide extends js.Object
@@ -8380,228 +5815,142 @@ object semanticDashUiDashReactStrings {
   sealed trait widescreen extends _GridOnlyProp
   
   @js.native
-  sealed trait wifi
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wifi extends SemanticICONS
   
   @js.native
-  sealed trait `wikipedia w`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `wikipedia w` extends SemanticICONS
   
   @js.native
-  sealed trait `window close`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window close` extends SemanticICONS
   
   @js.native
-  sealed trait `window close outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window close outline` extends SemanticICONS
   
   @js.native
-  sealed trait `window maximize`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window maximize` extends SemanticICONS
   
   @js.native
-  sealed trait `window maximize outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window maximize outline` extends SemanticICONS
   
   @js.native
-  sealed trait `window minimize`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window minimize` extends SemanticICONS
   
   @js.native
-  sealed trait `window minimize outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window minimize outline` extends SemanticICONS
   
   @js.native
-  sealed trait `window restore`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window restore` extends SemanticICONS
   
   @js.native
-  sealed trait `window restore outline`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `window restore outline` extends SemanticICONS
   
   @js.native
-  sealed trait windows
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait windows extends SemanticICONS
   
   @js.native
-  sealed trait winner
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait winner extends SemanticICONS
   
   @js.native
-  sealed trait wizard
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wizard extends SemanticICONS
   
   @js.native
-  sealed trait woman
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait woman extends SemanticICONS
   
   @js.native
-  sealed trait won
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait won extends SemanticICONS
   
   @js.native
-  sealed trait `won sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `won sign` extends SemanticICONS
   
   @js.native
-  sealed trait wordpress
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wordpress extends SemanticICONS
   
   @js.native
-  sealed trait `wordpress beginner`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `wordpress beginner` extends SemanticICONS
   
   @js.native
-  sealed trait `wordpress forms`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `wordpress forms` extends SemanticICONS
   
   @js.native
-  sealed trait `wordpress simple`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `wordpress simple` extends SemanticICONS
   
   @js.native
-  sealed trait world
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait world extends SemanticICONS
   
   @js.native
-  sealed trait wpbeginner
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wpbeginner extends SemanticICONS
   
   @js.native
-  sealed trait wpexplorer
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wpexplorer extends SemanticICONS
   
   @js.native
-  sealed trait wpforms
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wpforms extends SemanticICONS
   
   @js.native
-  sealed trait wrench
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait wrench extends SemanticICONS
   
   @js.native
-  sealed trait write
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait write extends SemanticICONS
   
   @js.native
-  sealed trait `write square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `write square` extends SemanticICONS
   
   @js.native
   sealed trait ws extends FlagNameValues
   
   @js.native
-  sealed trait x
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait x extends SemanticICONS
   
   @js.native
-  sealed trait xbox
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait xbox extends SemanticICONS
   
   @js.native
-  sealed trait xing
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait xing extends SemanticICONS
   
   @js.native
-  sealed trait `xing square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `xing square` extends SemanticICONS
   
   @js.native
-  sealed trait `y combinator`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `y combinator` extends SemanticICONS
   
   @js.native
-  sealed trait yahoo
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait yahoo extends SemanticICONS
   
   @js.native
-  sealed trait yandex
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait yandex extends SemanticICONS
   
   @js.native
-  sealed trait `yandex international`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `yandex international` extends SemanticICONS
   
   @js.native
   sealed trait ye extends FlagNameValues
   
   @js.native
-  sealed trait yellow
-    extends SemanticCOLORS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticCOLORS
+  sealed trait yellow extends SemanticCOLORS
   
   @js.native
-  sealed trait yelp
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait yelp extends SemanticICONS
   
   @js.native
   sealed trait yemen extends FlagNameValues
   
   @js.native
-  sealed trait yen
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait yen extends SemanticICONS
   
   @js.native
-  sealed trait `yen sign`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `yen sign` extends SemanticICONS
   
   @js.native
-  sealed trait yoast
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait yoast extends SemanticICONS
   
   @js.native
-  sealed trait youtube
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait youtube extends SemanticICONS
   
   @js.native
-  sealed trait `youtube play`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `youtube play` extends SemanticICONS
   
   @js.native
-  sealed trait `youtube square`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `youtube square` extends SemanticICONS
   
   @js.native
   sealed trait yt extends FlagNameValues
@@ -8616,9 +5965,7 @@ object semanticDashUiDashReactStrings {
   sealed trait zimbabwe extends FlagNameValues
   
   @js.native
-  sealed trait zip
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait zip extends SemanticICONS
   
   @js.native
   sealed trait zm extends FlagNameValues
@@ -8626,31 +5973,20 @@ object semanticDashUiDashReactStrings {
   @js.native
   sealed trait zoom
     extends SemanticDIRECTIONALTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
        with SemanticTRANSITIONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticTRANSITIONS
   
   @js.native
-  sealed trait `zoom in`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `zoom in` extends SemanticICONS
   
   @js.native
-  sealed trait `zoom out`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `zoom out` extends SemanticICONS
   
   @js.native
-  sealed trait `zoom-in`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `zoom-in` extends SemanticICONS
   
   @js.native
-  sealed trait `zoom-out`
-    extends SemanticICONS
-       with typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticICONS
+  sealed trait `zoom-out` extends SemanticICONS
   
   @js.native
   sealed trait zw extends FlagNameValues

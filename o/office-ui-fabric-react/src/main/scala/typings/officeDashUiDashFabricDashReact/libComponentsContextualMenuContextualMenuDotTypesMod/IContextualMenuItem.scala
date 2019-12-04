@@ -10,10 +10,10 @@ import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContex
 import typings.officeDashUiDashFabricDashReact.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerClassNames
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement

@@ -28,4 +28,5 @@ package object pgDashPromiseMod {
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam */ js.Object
   ]) | String
   type ValidSchema = String | js.Array[String] | Null | Unit
+  type XPromise[T] = js.Promise[T]
 }

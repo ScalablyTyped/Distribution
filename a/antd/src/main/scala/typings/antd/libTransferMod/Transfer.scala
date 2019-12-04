@@ -1,7 +1,7 @@
 package typings.antd.libTransferMod
 
-import typings.antd.Anon_ItemUnit
-import typings.antd.Anon_LeftDataSourceRightDataSource
+import typings.antd.Anon_ItemUnitItemsUnitNotFoundContentSearchPlaceholderTitles
+import typings.antd.Anon_LeftDataSource
 import typings.antd.antdStrings.sourceSelectedKeys
 import typings.antd.antdStrings.targetSelectedKeys
 import typings.antd.libCollapseCollapseMod.ExpandIconPosition
@@ -21,11 +21,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Transfer
   extends Component[TransferProps, js.Any, js.Any] {
-  var separatedDataSource: Anon_LeftDataSourceRightDataSource | Null = js.native
+  var separatedDataSource: Anon_LeftDataSource | Null = js.native
   def getLocale(
     transferLocale: TransferLocale,
     renderEmpty: js.Function1[/* componentName */ js.UndefOr[String], ReactNode]
-  ): Anon_ItemUnit = js.native
+  ): Anon_ItemUnitItemsUnitNotFoundContentSearchPlaceholderTitles = js.native
   def getSelectedKeysName(direction: TransferDirection): sourceSelectedKeys | targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[String] = js.native
   def handleClear(direction: ExpandIconPosition): Unit = js.native
@@ -56,6 +56,6 @@ trait Transfer
   def onRightItemSelect(selectedKey: String, checked: Boolean): Unit = js.native
   def onRightItemSelectAll(selectedKeys: js.Array[String], checkAll: Boolean): Unit = js.native
   def renderTransfer(transferLocale: TransferLocale): Element = js.native
-  def separateDataSource(): Anon_LeftDataSourceRightDataSource = js.native
+  def separateDataSource(): Anon_LeftDataSource = js.native
 }
 

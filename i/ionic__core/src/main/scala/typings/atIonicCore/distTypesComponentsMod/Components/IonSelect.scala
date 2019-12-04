@@ -3,6 +3,7 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.distTypesComponentsSelectSelectDashInterfaceMod.SelectCompareFn
+import typings.atIonicCore.distTypesComponentsSelectSelectDashInterfaceMod.SelectInterface
 import typings.std.UIEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +26,7 @@ trait IonSelect extends js.Object {
   /**
     * The interface the select should use: `action-sheet`, `popover` or `alert`.
     */
-  var interface: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectInterface */ js.Any = js.native
+  var interface: SelectInterface = js.native
   /**
     * Any additional options that the `alert`, `action-sheet` or `popover` interface can take. See the [AlertController API docs](../../alert/AlertController/#create), the [ActionSheetController API docs](../../action-sheet/ActionSheetController/#create) and the [PopoverController API docs](../../popover/PopoverController/#create) for the create options for each interface.
     */

@@ -27,6 +27,9 @@ object maxmindStrings {
   sealed trait SA extends js.Object
   
   @js.native
+  sealed trait buffer extends js.Object
+  
+  @js.native
   sealed trait business extends js.Object
   
   @js.native
@@ -85,6 +88,8 @@ object maxmindStrings {
   def OC: OC = "OC".asInstanceOf[OC]
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
+  @scala.inline
+  def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
   def business: business = "business".asInstanceOf[business]
   @scala.inline

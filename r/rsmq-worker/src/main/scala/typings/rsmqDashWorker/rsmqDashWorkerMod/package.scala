@@ -9,7 +9,7 @@ package object rsmqDashWorkerMod {
 
   type CallbackT[R] = js.Function2[/* e */ js.UndefOr[Error], /* res */ js.UndefOr[R], Unit]
   type CustomExceedCheckCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisSMQ.Message */ /* message */ js.Any, 
     Boolean
   ]
 }

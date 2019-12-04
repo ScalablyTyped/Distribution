@@ -1,9 +1,7 @@
 package typings.smoothDashScrollbar
 
 import typings.smoothDashScrollbar.interfacesScrollbarMod.ScrollbarOptions
-import typings.smoothDashScrollbar.optionsMod.Options
 import typings.smoothDashScrollbar.scrollbarMod.Scrollbar
-import typings.smoothDashScrollbar.trackMod.TrackController
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Partial
@@ -29,33 +27,6 @@ object scrollbarMod extends js.Object {
     var _renderID: js.Any = js.native
     var _shouldPropagateMomentum: js.Any = js.native
     var _updateDebounced: js.Any = js.native
-    /**
-      * Container bounding rect
-      */
-    @JSName("bounding")
-    var bounding_Scrollbar: Anon_Bottom = js.native
-    /**
-      * Max-allowed scrolling offsets
-      */
-    @JSName("limit")
-    var limit_Scrollbar: Anon_X = js.native
-    /**
-      * Current scrolling offsets
-      */
-    @JSName("offset")
-    var offset_Scrollbar: Anon_X = js.native
-    /**
-      * Options for current scrollbar instancs
-      */
-    @JSName("options")
-    val options_Scrollbar: Options = js.native
-    /**
-      * Parent scrollbar
-      */
-    @JSName("parent")
-    val parent_Scrollbar: Scrollbar | Null = js.native
-    @JSName("track")
-    val track_Scrollbar: TrackController = js.native
   }
   
   val scrollbarMap: Map[HTMLElement, Scrollbar] = js.native

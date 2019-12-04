@@ -1,5 +1,7 @@
 package typings.javascriptDashObfuscator
 
+import typings.javascriptDashObfuscator.espreeMod.SourceType
+import typings.javascriptDashObfuscator.srcTypesNodeDashTransformersTVisitorDirectionMod.TVisitorDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +9,9 @@ import scala.scalajs.js.annotation._
 object javascriptDashObfuscatorStrings {
   @js.native
   sealed trait compact extends js.Object
+  
+  @js.native
+  sealed trait config extends js.Object
   
   @js.native
   sealed trait controlFlowFlattening extends js.Object
@@ -33,6 +38,12 @@ object javascriptDashObfuscatorStrings {
   sealed trait domainLock extends js.Object
   
   @js.native
+  sealed trait enter extends TVisitorDirection
+  
+  @js.native
+  sealed trait exclude extends js.Object
+  
+  @js.native
   sealed trait identifierNamesGenerator extends js.Object
   
   @js.native
@@ -42,7 +53,16 @@ object javascriptDashObfuscatorStrings {
   sealed trait inputFileName extends js.Object
   
   @js.native
+  sealed trait leave extends TVisitorDirection
+  
+  @js.native
   sealed trait log extends js.Object
+  
+  @js.native
+  sealed trait module extends SourceType
+  
+  @js.native
+  sealed trait output extends js.Object
   
   @js.native
   sealed trait renameGlobals extends js.Object
@@ -55,6 +75,9 @@ object javascriptDashObfuscatorStrings {
   
   @js.native
   sealed trait rotateStringArray extends js.Object
+  
+  @js.native
+  sealed trait script extends SourceType
   
   @js.native
   sealed trait seed extends js.Object
@@ -92,8 +115,16 @@ object javascriptDashObfuscatorStrings {
   @js.native
   sealed trait unicodeEscapeSequence extends js.Object
   
+  @js.native
+  sealed trait `use strict` extends js.Object
+  
+  @js.native
+  sealed trait version extends js.Object
+  
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
+  @scala.inline
+  def config: config = "config".asInstanceOf[config]
   @scala.inline
   def controlFlowFlattening: controlFlowFlattening = "controlFlowFlattening".asInstanceOf[controlFlowFlattening]
   @scala.inline
@@ -111,13 +142,23 @@ object javascriptDashObfuscatorStrings {
   @scala.inline
   def domainLock: domainLock = "domainLock".asInstanceOf[domainLock]
   @scala.inline
+  def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
+  def exclude: exclude = "exclude".asInstanceOf[exclude]
+  @scala.inline
   def identifierNamesGenerator: identifierNamesGenerator = "identifierNamesGenerator".asInstanceOf[identifierNamesGenerator]
   @scala.inline
   def identifiersPrefix: identifiersPrefix = "identifiersPrefix".asInstanceOf[identifiersPrefix]
   @scala.inline
   def inputFileName: inputFileName = "inputFileName".asInstanceOf[inputFileName]
   @scala.inline
+  def leave: leave = "leave".asInstanceOf[leave]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
+  def module: module = "module".asInstanceOf[module]
+  @scala.inline
+  def output: output = "output".asInstanceOf[output]
   @scala.inline
   def renameGlobals: renameGlobals = "renameGlobals".asInstanceOf[renameGlobals]
   @scala.inline
@@ -126,6 +167,8 @@ object javascriptDashObfuscatorStrings {
   def reservedStrings: reservedStrings = "reservedStrings".asInstanceOf[reservedStrings]
   @scala.inline
   def rotateStringArray: rotateStringArray = "rotateStringArray".asInstanceOf[rotateStringArray]
+  @scala.inline
+  def script: script = "script".asInstanceOf[script]
   @scala.inline
   def seed: seed = "seed".asInstanceOf[seed]
   @scala.inline
@@ -150,5 +193,9 @@ object javascriptDashObfuscatorStrings {
   def transformObjectKeys: transformObjectKeys = "transformObjectKeys".asInstanceOf[transformObjectKeys]
   @scala.inline
   def unicodeEscapeSequence: unicodeEscapeSequence = "unicodeEscapeSequence".asInstanceOf[unicodeEscapeSequence]
+  @scala.inline
+  def `use strict`: `use strict` = "use strict".asInstanceOf[`use strict`]
+  @scala.inline
+  def version: version = "version".asInstanceOf[version]
 }
 

@@ -1,7 +1,7 @@
 package typings.openpgp.openpgpMod.packet
 
-import typings.openpgp.Integer
-import typings.openpgp.ReadableStream
+import typings.openpgp.openpgpMod.Integer
+import typings.openpgp.openpgpMod.ReadableStream
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

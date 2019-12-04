@@ -1,6 +1,6 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.esInterfaceMod.CustomizeComponent
+import typings.rcDashTable.libInterfaceMod.CustomizeComponent
 import typings.react.reactMod.HTMLAttributes
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -6,7 +6,6 @@ import typings.react.reactMod.Props
 import typings.react.reactMod.ReactChild
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
-import typings.reactDashTagsinput.Tag
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

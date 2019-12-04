@@ -2,6 +2,7 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsTabDashBarTabDashBarDashInterfaceMod.TabButtonLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +23,7 @@ trait IonTabButton extends js.Object {
   /**
     * Set the layout of the text and icon in the tab bar. It defaults to `'icon-top'`.
     */
-  var layout: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.Any
-  ] = js.undefined
+  var layout: js.UndefOr[TabButtonLayout] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -53,7 +52,7 @@ object IonTabButton {
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: String = null,
     href: String = null,
-    layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.Any = null,
+    layout: TabButtonLayout = null,
     mode: ios | md = null,
     rel: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,

@@ -1,7 +1,7 @@
 package typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeMod
 
 import typings.atAntDashDesignReactDashNative.Anon_AntLocale
-import typings.atAntDashDesignReactDashNative.Anon_Disabled
+import typings.atAntDashDesignReactDashNative.Anon_DisabledOnBlur
 import typings.atAntDashDesignReactDashNative.libSearchDashBarMod.SearchBarProps
 import typings.atAntDashDesignReactDashNative.libSearchDashBarMod.default
 import scala.scalajs.js
@@ -19,6 +19,6 @@ class SearchBar protected () extends default {
 @js.native
 object SearchBar extends js.Object {
   var contextTypes: Anon_AntLocale = js.native
-  var defaultProps: Anon_Disabled = js.native
+  var defaultProps: Anon_DisabledOnBlur = js.native
 }
 

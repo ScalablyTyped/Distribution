@@ -9,8 +9,8 @@ import typings.atNivoPie.atNivoPieMod.AccessorFunc
 import typings.atNivoPie.atNivoPieMod.PieDatum
 import typings.atNivoPie.atNivoPieMod.PieDatumWithColor
 import typings.atNivoPie.atNivoPieMod.ValueFormatter
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.SVGPathElement
 import scala.scalajs.js

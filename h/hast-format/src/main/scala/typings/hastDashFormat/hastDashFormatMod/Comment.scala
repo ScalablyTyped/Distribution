@@ -17,7 +17,7 @@ trait Comment extends Literal {
 
 object Comment {
   @scala.inline
-  def apply(`type`: comment, value: String, data: Data = null, position: Position = null): Comment = {
+  def apply(`type`: comment, value: js.Any, data: Data = null, position: Position = null): Comment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 package typings.reactDashDnd.libInterfacesMonitorsMod
 
 import typings.dndDashCore.libInterfacesMod.Identifier
-import typings.reactDashDnd.Anon_Shallow
+import typings.reactDashDnd.Anon_ShallowBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,6 +65,6 @@ trait DropTargetMonitor
     * to a nested target.
     */
   def isOver(): Boolean = js.native
-  def isOver(options: Anon_Shallow): Boolean = js.native
+  def isOver(options: Anon_ShallowBoolean): Boolean = js.native
 }
 

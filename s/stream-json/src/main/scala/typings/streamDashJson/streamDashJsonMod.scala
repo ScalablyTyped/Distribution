@@ -1,6 +1,8 @@
 package typings.streamDashJson
 
 import typings.streamDashJson.parserMod.ParserOptions
+import typings.streamDashJson.parserMod.^
+import typings.streamDashJson.streamDashJsonMod.ParserClass
 import typings.streamDashJson.streamDashJsonMod.ParserType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +17,7 @@ object streamDashJsonMod extends js.Object {
   def parser(): typings.streamDashJson.streamDashJsonMod.Parser = js.native
   def parser(options: ParserOptions): typings.streamDashJson.streamDashJsonMod.Parser = js.native
   type Parser = ParserClass
+  type ParserClass = ^
   type ParserType = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias stream-json.stream-json.ParserType */ js.Object
 }
 

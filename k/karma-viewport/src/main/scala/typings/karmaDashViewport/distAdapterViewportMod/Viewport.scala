@@ -1,7 +1,7 @@
 package typings.karmaDashViewport.distAdapterViewportMod
 
+import typings.karmaDashViewport.distAdapterMod._Global_.Window
 import typings.std.HTMLIFrameElement
-import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

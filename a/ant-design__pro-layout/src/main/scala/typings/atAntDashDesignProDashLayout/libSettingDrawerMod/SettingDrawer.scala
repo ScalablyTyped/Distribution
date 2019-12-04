@@ -1,7 +1,7 @@
 package typings.atAntDashDesignProDashLayout.libSettingDrawerMod
 
 import typings.atAntDashDesignProDashLayout.Anon_ColorList
-import typings.atAntDashDesignProDashLayout.Anon_DefaultMessage
+import typings.atAntDashDesignProDashLayout.Anon_DefaultMessageId
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait SettingDrawer
   def componentDidMount_MSettingDrawer(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSettingDrawer(): Unit = js.native
-  def getFormatMessage(): js.Function1[/* data */ Anon_DefaultMessage, String] = js.native
+  def getFormatMessage(): js.Function1[/* data */ Anon_DefaultMessageId, String] = js.native
   def getLayoutSetting(): js.Array[SettingItemProps] = js.native
   def getThemeList(): Anon_ColorList = js.native
   def onLanguageChange(): Unit = js.native

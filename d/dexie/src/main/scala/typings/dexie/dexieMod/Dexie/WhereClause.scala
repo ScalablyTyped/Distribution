@@ -1,8 +1,8 @@
 package typings.dexie.dexieMod.Dexie
 
-import typings.dexie.IndexableTypeArray
-import typings.dexie.IndexableTypeArrayReadonly
 import typings.dexie.dexieMod.IndexableType
+import typings.dexie.dexieMod.IndexableTypeArray
+import typings.dexie.dexieMod.IndexableTypeArrayReadonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

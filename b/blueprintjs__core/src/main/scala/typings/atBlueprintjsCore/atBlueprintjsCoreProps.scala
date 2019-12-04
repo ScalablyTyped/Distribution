@@ -36,16 +36,20 @@ import typings.atBlueprintjsCore.libEsmComponentsNonDashIdealDashStateNonIdealSt
 import typings.atBlueprintjsCore.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps
 import typings.atBlueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayProps
 import typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelStackMod.IPanelStackProps
+import typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelViewMod.IPanelViewProps
+import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverArrowMod.IPopoverArrowProps
 import typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import typings.atBlueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps
 import typings.atBlueprintjsCore.libEsmComponentsProgressDashBarProgressBarMod.IProgressBarProps
 import typings.atBlueprintjsCore.libEsmComponentsResizeDashSensorResizeSensorMod.IResizeSensorProps
+import typings.atBlueprintjsCore.libEsmComponentsSliderHandleMod.IInternalHandleProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderRangeSliderMod.IRangeSliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSliderSliderMod.ISliderProps
 import typings.atBlueprintjsCore.libEsmComponentsSpinnerSpinnerMod.ISpinnerProps
 import typings.atBlueprintjsCore.libEsmComponentsTabsTabMod.ITabProps
+import typings.atBlueprintjsCore.libEsmComponentsTabsTabTitleMod.ITabTitleProps
 import typings.atBlueprintjsCore.libEsmComponentsTabsTabsMod.ITabsProps
 import typings.atBlueprintjsCore.libEsmComponentsTagDashInputTagInputMod.ITagInputProps
 import typings.atBlueprintjsCore.libEsmComponentsTagTagMod.ITagProps
@@ -115,6 +119,9 @@ trait atBlueprintjsCoreProps {
   def HTMLTableProps: IHTMLTableProps.type = typings.atBlueprintjsCore.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps
   type HTMLTableProps = IHTMLTableProps
   @scala.inline
+  def HandleProps: IInternalHandleProps.type = typings.atBlueprintjsCore.libEsmComponentsSliderHandleMod.IInternalHandleProps
+  type HandleProps = IInternalHandleProps
+  @scala.inline
   def HotkeyProps: IHotkeyProps.type = typings.atBlueprintjsCore.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps
   type HotkeyProps = IHotkeyProps
   @scala.inline
@@ -160,8 +167,14 @@ trait atBlueprintjsCoreProps {
   def PanelStackProps: IPanelStackProps.type = typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelStackMod.IPanelStackProps
   type PanelStackProps = IPanelStackProps
   @scala.inline
+  def PanelViewProps: IPanelViewProps.type = typings.atBlueprintjsCore.libEsmComponentsPanelDashStackPanelViewMod.IPanelViewProps
+  type PanelViewProps = IPanelViewProps
+  @scala.inline
   def PopoverProps: IPopoverProps.type = typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
   type PopoverProps = IPopoverProps
+  @scala.inline
+  def PopoverArrowProps: IPopoverArrowProps.type = typings.atBlueprintjsCore.libEsmComponentsPopoverPopoverArrowMod.IPopoverArrowProps
+  type PopoverArrowProps = IPopoverArrowProps
   @scala.inline
   def PortalProps: IPortalProps.type = typings.atBlueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps
   type PortalProps = IPortalProps
@@ -192,6 +205,9 @@ trait atBlueprintjsCoreProps {
   @scala.inline
   def TabProps: ITabProps.type = typings.atBlueprintjsCore.libEsmComponentsTabsTabMod.ITabProps
   type TabProps = ITabProps
+  @scala.inline
+  def TabTitleProps: ITabTitleProps.type = typings.atBlueprintjsCore.libEsmComponentsTabsTabTitleMod.ITabTitleProps
+  type TabTitleProps = ITabTitleProps
   @scala.inline
   def TabsProps: ITabsProps.type = typings.atBlueprintjsCore.libEsmComponentsTabsTabsMod.ITabsProps
   type TabsProps = ITabsProps

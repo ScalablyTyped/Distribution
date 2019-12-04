@@ -8,8 +8,8 @@ import typings.atOracleOraclejet.Anon_Deferred
 import typings.atOracleOraclejet.Anon_DeferredPropName
 import typings.atOracleOraclejet.Anon_DeferredPropNameSilent
 import typings.atOracleOraclejet.Anon_Error
-import typings.atOracleOraclejet.Anon_PropName
 import typings.atOracleOraclejet.Anon_PropNameSilent
+import typings.atOracleOraclejet.Anon_PropNameSilentAny
 import typings.atOracleOraclejet.ojmodelMod.Collection.CustomPagingOptionsReturn
 import typings.atOracleOraclejet.ojmodelMod.Collection.SetRangeLocalPromise
 import scala.scalajs.js
@@ -162,14 +162,14 @@ class Collection_ () extends js.Object {
   def push(m: Model): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
   def push(m: Model, options: Anon_At): js.UndefOr[js.Promise[js.Array[Model]]] = js.native
   def refresh(): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
-  def refresh(options: Anon_PropName): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
+  def refresh(options: Anon_PropNameSilent): js.Promise[js.UndefOr[SetRangeLocalPromise]] = js.native
   def remove(m: js.Array[Model]): js.Array[Model] | js.Object = js.native
   def remove(m: js.Array[Model], options: js.Object): js.Array[Model] | js.Object = js.native
   def remove(m: Model): js.Array[Model] | js.Object = js.native
   def remove(m: Model, options: js.Object): js.Array[Model] | js.Object = js.native
   def reset(): Model | js.Array[Model] = js.native
   def reset(data: js.Object): Model | js.Array[Model] = js.native
-  def reset(data: js.Object, options: Anon_PropNameSilent): Model | js.Array[Model] = js.native
+  def reset(data: js.Object, options: Anon_PropNameSilentAny): Model | js.Array[Model] = js.native
   def rest(): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double): js.Array[js.Object] | js.Promise[_] = js.native
   def rest(n: Double, options: js.Object): js.Array[js.Object] | js.Promise[_] = js.native
@@ -185,7 +185,7 @@ class Collection_ () extends js.Object {
   def slice(start: Double, end: Double): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def slice(start: Double, end: Double, options: js.Object): js.Promise[js.Array[Model]] | js.Array[Model] = js.native
   def sort(): js.Promise[SetRangeLocalPromise] | Null = js.native
-  def sort(options: Anon_PropName): js.Promise[SetRangeLocalPromise] | Null = js.native
+  def sort(options: Anon_PropNameSilent): js.Promise[SetRangeLocalPromise] | Null = js.native
   def sortBy(iterator: String): js.Array[Model] = js.native
   def sortBy(iterator: String, context: js.Object): js.Array[Model] = js.native
   def sortBy(iterator: js.Function1[/* param0 */ Model, js.Object]): js.Array[Model] = js.native

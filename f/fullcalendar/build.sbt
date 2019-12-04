@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fullcalendar"
-version := "3.10.1-37c224"
+version := "3.10.1-c4235b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
   "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

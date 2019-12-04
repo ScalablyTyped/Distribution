@@ -38,13 +38,13 @@ trait TooltipTriggerProps extends js.Object {
     * Function that can be used to obtain a tooltip element reference
     */
   var getTooltipRef: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
   ] = js.undefined
   /**
     * Function that can be used to obtain a trigger element reference
     */
   var getTriggerRef: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
   ] = js.undefined
   /**
     * Modifiers passed directly to the underlying popper.js instance
@@ -106,8 +106,8 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => ReactNode,
     trigger: Trigger,
     usePortal: Boolean,
-    getTooltipRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
-    getTriggerRef: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
+    getTooltipRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
+    getTriggerRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {

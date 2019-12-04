@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.kanban")
 @js.native
-class kanban () extends baseview {
+class kanban ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_kanban: WebixCallback = js.native
   @JSName("config")
   var config_kanban: kanbanConfig = js.native
   var data: DataStore = js.native
@@ -41,8 +44,8 @@ class kanban () extends baseview {
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
   def getColors(): DataCollection = js.native
-  def getComments(): baseview = js.native
-  def getEditor(): baseview = js.native
+  def getComments(): typings.webix.webix.ui.baseview = js.native
+  def getEditor(): typings.webix.webix.ui.baseview = js.native
   def getFirstId(): Double | String = js.native
   def getIdByIndex(index: String): String | Double = js.native
   def getIdByIndex(index: Double): String | Double = js.native
@@ -51,7 +54,7 @@ class kanban () extends baseview {
   def getItem(id: String): js.Any = js.native
   def getItem(id: Double): js.Any = js.native
   def getLastId(): Double | String = js.native
-  def getMenu(): baseview = js.native
+  def getMenu(): typings.webix.webix.ui.baseview = js.native
   def getNextId(id: String, step: Double): String | Double = js.native
   def getNextId(id: Double, step: Double): String | Double = js.native
   def getOwnerList(itemId: String): js.Any = js.native
@@ -61,7 +64,7 @@ class kanban () extends baseview {
   def getSelectedId(): String | Double = js.native
   def getStatuses(): js.Array[_] = js.native
   def getTags(): DataCollection = js.native
-  def getUserList(): baseview = js.native
+  def getUserList(): typings.webix.webix.ui.baseview = js.native
   def getUsers(): DataCollection = js.native
   def hasEvent(name: String): Boolean = js.native
   def index(obj: js.Any): Double = js.native

@@ -14,7 +14,7 @@ object libAnchorMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Link: TypeofClassAnchorLinkContextTypes = js.native
+    var Link: TypeofClassAnchorLink = js.native
     var childContextTypes: Anon_AntAnchor = js.native
     var defaultProps: Anon_Affix = js.native
   }

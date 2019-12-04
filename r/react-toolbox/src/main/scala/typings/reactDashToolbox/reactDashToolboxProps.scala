@@ -123,8 +123,14 @@ trait reactDashToolboxProps {
   def NavigationProps: typings.reactDashToolbox.libNavigationNavigationMod.NavigationProps.type = typings.reactDashToolbox.libNavigationNavigationMod.NavigationProps
   type NavigationProps = typings.reactDashToolbox.libNavigationNavigationMod.NavigationProps
   @scala.inline
+  def OverlayProps: typings.reactDashToolbox.libOverlayOverlayMod.OverlayProps.type = typings.reactDashToolbox.libOverlayOverlayMod.OverlayProps
+  type OverlayProps = typings.reactDashToolbox.libOverlayOverlayMod.OverlayProps
+  @scala.inline
   def PanelProps: typings.reactDashToolbox.libLayoutPanelMod.PanelProps.type = typings.reactDashToolbox.libLayoutPanelMod.PanelProps
   type PanelProps = typings.reactDashToolbox.libLayoutPanelMod.PanelProps
+  @scala.inline
+  def PortalProps: typings.reactDashToolbox.libHocPortalMod.PortalProps.type = typings.reactDashToolbox.libHocPortalMod.PortalProps
+  type PortalProps = typings.reactDashToolbox.libHocPortalMod.PortalProps
   @scala.inline
   def ProgressBarProps: typings.reactDashToolbox.libProgressUnderscoreBarProgressBarMod.ProgressBarProps.type = typings.reactDashToolbox.libProgressUnderscoreBarProgressBarMod.ProgressBarProps
   type ProgressBarProps = typings.reactDashToolbox.libProgressUnderscoreBarProgressBarMod.ProgressBarProps
@@ -173,6 +179,9 @@ trait reactDashToolboxProps {
   @scala.inline
   def TabsProps: typings.reactDashToolbox.libTabsTabsMod.TabsProps.type = typings.reactDashToolbox.libTabsTabsMod.TabsProps
   type TabsProps = typings.reactDashToolbox.libTabsTabsMod.TabsProps
+  @scala.inline
+  def ThemeProviderProps: typings.reactDashCssDashThemr.reactDashCssDashThemrMod.ThemeProviderProps.type = typings.reactDashCssDashThemr.reactDashCssDashThemrMod.ThemeProviderProps
+  type ThemeProviderProps = typings.reactDashCssDashThemr.reactDashCssDashThemrMod.ThemeProviderProps
   @scala.inline
   def TimePickerProps: typings.reactDashToolbox.libTimeUnderscorePickerTimePickerMod.TimePickerProps.type = typings.reactDashToolbox.libTimeUnderscorePickerTimePickerMod.TimePickerProps
   type TimePickerProps = typings.reactDashToolbox.libTimeUnderscorePickerTimePickerMod.TimePickerProps

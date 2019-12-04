@@ -5,7 +5,7 @@ import typings.graphql.typeDefinitionMod.GraphQLFieldConfig
 import typings.graphql.typeDefinitionMod.GraphQLInputType
 import typings.graphql.typeDefinitionMod.GraphQLOutputType
 import typings.graphqlDashCompose.Anon_Params
-import typings.graphqlDashCompose.Anon_ProjectionProjectionTypeOptional
+import typings.graphqlDashCompose.Anon_ProjectionProjectionType
 import typings.graphqlDashCompose.libInputTypeComposerMod.InputTypeComposer
 import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeArgumentConfig
 import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeArgumentConfigAsObject
@@ -69,7 +69,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
     * -----------------------------------------------
     */
   def getFieldConfig(): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
-  def getFieldConfig(opts: Anon_ProjectionProjectionTypeOptional): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
+  def getFieldConfig(opts: Anon_ProjectionProjectionType): GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getKind(): ResolverKinds | Unit = js.native
   /**
     * -----------------------------------------------

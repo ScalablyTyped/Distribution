@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DomEventRegisterData extends js.Object {
   var dom: js.UndefOr[HTMLElement] = js.undefined
   var domHandler: js.Function
-  var eventData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<any> */ js.Any
+  var eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any
   var handler: js.Function
   var originHandler: js.Function
   var priority: Double
@@ -20,7 +20,7 @@ object DomEventRegisterData {
   @scala.inline
   def apply(
     domHandler: js.Function,
-    eventData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
+    eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
     handler: js.Function,
     originHandler: js.Function,
     priority: Double,

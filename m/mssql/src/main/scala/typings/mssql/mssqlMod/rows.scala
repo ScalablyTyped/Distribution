@@ -1,6 +1,5 @@
 package typings.mssql.mssqlMod
 
-import typings.mssql.IRow
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

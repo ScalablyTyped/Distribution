@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.Anon_Snapshot
 import typings.slate.Anon_Target
 import typings.std.Partial
@@ -59,17 +59,17 @@ trait Controller extends js.Object {
   def addMarksAtRange(range: RangeTypeJSON, marks: js.Array[MarkProperties | MarkJSON | Mark | String]): Controller = js.native
   def addMarksAtRange(
     range: RangeTypeJSON,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   def addMarksAtRange(range: RangeTypeProperties, marks: js.Array[MarkProperties | MarkJSON | Mark | String]): Controller = js.native
   def addMarksAtRange(
     range: RangeTypeProperties,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   def addMarksAtRange(range: RangeType, marks: js.Array[MarkProperties | MarkJSON | Mark | String]): Controller = js.native
   def addMarksAtRange(
     range: RangeType,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   def addMarksByPath(
     path: List[Double],
@@ -81,7 +81,7 @@ trait Controller extends js.Object {
     path: List[Double],
     offset: Double,
     length: Double,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   /**
     * Apply an `operation` to the controller, updating its value.
@@ -311,7 +311,7 @@ trait Controller extends js.Object {
     key: String,
     offset: Double,
     text: String,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   /**
     * Insert text at an offset in a text node by its path with optional marks
@@ -327,7 +327,7 @@ trait Controller extends js.Object {
     path: List[Double],
     offset: Double,
     text: String,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   /**
     * Merge a node by its key with its previous sibling
@@ -997,7 +997,7 @@ trait Controller extends js.Object {
     path: List[Double],
     offset: Double,
     length: Double,
-    marks: typings.immutable.immutableMod.Set[MarkProperties | MarkJSON | Mark | String]
+    marks: typings.immutable.Immutable.Set[MarkProperties | MarkJSON | Mark | String]
   ): Controller = js.native
   /**
     * Remove a node from the document by its key
@@ -1060,7 +1060,7 @@ trait Controller extends js.Object {
     offset: Double,
     length: Double,
     text: String,
-    marks: typings.immutable.immutableMod.Set[Mark]
+    marks: typings.immutable.Immutable.Set[Mark]
   ): Controller = js.native
   /**
     * Run the middleware stack by key with args, returning its result.
@@ -1220,11 +1220,11 @@ trait Controller extends js.Object {
   /**
     *  Insert `text` at `offset` in node by `key`.
     */
-  def setTextByKey(key: String, text: String, marks: typings.immutable.immutableMod.Set[Mark]): Controller = js.native
+  def setTextByKey(key: String, text: String, marks: typings.immutable.Immutable.Set[Mark]): Controller = js.native
   /**
     *  Insert `text` at `offset` in node by `path`.
     */
-  def setTextByPath(path: List[Double], text: String, marks: typings.immutable.immutableMod.Set[Mark]): Controller = js.native
+  def setTextByPath(path: List[Double], text: String, marks: typings.immutable.Immutable.Set[Mark]): Controller = js.native
   /**
     * Snapshot the current selection for undo purposes.
     */

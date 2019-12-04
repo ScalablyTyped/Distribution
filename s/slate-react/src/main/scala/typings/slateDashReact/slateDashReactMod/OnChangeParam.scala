@@ -1,6 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.slateMod.Operation
 import typings.slate.slateMod.Value
 import scala.scalajs.js

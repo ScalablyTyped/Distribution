@@ -12,9 +12,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.proto")
 @js.native
-class proto () extends baseview {
+class proto ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_proto: WebixCallback = js.native
   @JSName("config")
   var config_proto: protoConfig = js.native
   var data: DataStore = js.native

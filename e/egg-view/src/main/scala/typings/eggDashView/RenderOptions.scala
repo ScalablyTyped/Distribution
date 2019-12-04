@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject * / any */ trait RenderOptions extends js.Object {
   var locals: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any
   ] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var root: js.UndefOr[String] = js.undefined
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 object RenderOptions {
   @scala.inline
   def apply(
-    locals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.Any = null,
+    locals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ js.Any = null,
     name: String = null,
     root: String = null,
     viewEngine: String = null

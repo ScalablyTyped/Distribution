@@ -1,9 +1,9 @@
 package typings.stampit.stampitMod.stampit
 
-import typings.stampit.PropertyMap
 import typings.stampit.stampitMod.Chainables
 import typings.stampit.stampitMod.ComposeMethod
 import typings.stampit.stampitMod.FactoryFunction
+import typings.stampit.stampitMod.PropertyMap
 import typings.stampit.stampitMod.StampObjectType
 import typings.stampit.stampitMod.StampSignature
 import typings.stampit.stampitMod.StampType

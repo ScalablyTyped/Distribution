@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object srcTypesMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.FocusEvent
   import typings.react.reactMod.KeyboardEvent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.Ref
   import typings.reactDashSelect.Anon_Data
   import typings.std.HTMLElement

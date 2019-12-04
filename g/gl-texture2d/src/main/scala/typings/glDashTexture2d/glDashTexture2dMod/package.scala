@@ -10,5 +10,6 @@ package object glDashTexture2dMod {
   import typings.std.HTMLVideoElement
   import typings.std.ImageData
 
+  type GLenum = Double
   type InputType = ImageData | HTMLCanvasElement | HTMLImageElement | HTMLVideoElement
 }

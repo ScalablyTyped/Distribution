@@ -2,7 +2,7 @@ package typings.reactDashVirtualized.distEsMultiGridMod
 
 import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_
-import typings.reactDashVirtualized.Anon_ClassNameBottomLeftGridClassNameBottomRightGrid
+import typings.reactDashVirtualized.Anon_ClassNameBottomLeftGrid
 import typings.reactDashVirtualized.Anon_ColumnIndexRowIndex
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellPosition
 import typings.std.Partial
@@ -30,7 +30,7 @@ class MultiGrid ()
 @js.native
 object MultiGrid extends js.Object {
   var defaultProps: Anon_ = js.native
-  var propTypes: Anon_ClassNameBottomLeftGridClassNameBottomRightGrid = js.native
+  var propTypes: Anon_ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = js.native
 }
 

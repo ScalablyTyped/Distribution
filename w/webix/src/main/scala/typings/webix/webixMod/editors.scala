@@ -24,5 +24,6 @@ trait editors extends js.Object {
 
 @JSImport("webix", "editors")
 @js.native
-object editors extends TopLevel[editors]
+object editors
+  extends TopLevel[typings.webix.webix.editors]
 

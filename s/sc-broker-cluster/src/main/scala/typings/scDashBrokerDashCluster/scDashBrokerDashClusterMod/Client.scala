@@ -30,16 +30,16 @@ class Client protected () extends EventEmitter {
   @JSName("on")
   def on_warning(event: warning, listener: js.Function1[/* warning */ js.UndefOr[Error], Unit]): this.type = js.native
   def setSCServer(
-    scServer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer */ js.Any
+    scServer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer */ js.Any
   ): Unit = js.native
   def subscribe(channel: String): Unit = js.native
   def subscribe(channel: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def subscribeSocket(
-    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: String
   ): Unit = js.native
   def subscribeSocket(
-    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: String,
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
   ): Unit = js.native
@@ -48,11 +48,11 @@ class Client protected () extends EventEmitter {
   def unsubscribeAll(): Unit = js.native
   def unsubscribeAll(callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
   def unsubscribeSocket(
-    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: String
   ): Unit = js.native
   def unsubscribeSocket(
-    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: String,
     callback: js.Function0[Unit]
   ): Unit = js.native

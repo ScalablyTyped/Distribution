@@ -1,7 +1,6 @@
 package typings.reactDashResizeDashDetector.reactDashResizeDashDetectorMod
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashResizeDashDetector.Omit
 import typings.reactDashResizeDashDetector.reactDashResizeDashDetectorStrings.height
 import typings.reactDashResizeDashDetector.reactDashResizeDashDetectorStrings.width
 import typings.std.Partial

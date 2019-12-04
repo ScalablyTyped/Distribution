@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-viewport"
-version := "1.0.4-1413dd"
+version := "1.0.4-095155"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

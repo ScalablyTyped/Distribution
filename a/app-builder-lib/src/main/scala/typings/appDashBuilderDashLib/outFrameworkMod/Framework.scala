@@ -1,7 +1,7 @@
 package typings.appDashBuilderDashLib.outFrameworkMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform
 import typings.appDashBuilderDashLib.outConfigurationMod.AfterPackContext
-import typings.appDashBuilderDashLib.outMod.Platform
 import typings.builderDashUtil.outFsMod.FileTransformer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

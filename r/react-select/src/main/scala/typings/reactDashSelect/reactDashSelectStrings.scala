@@ -1,5 +1,6 @@
 package typings.reactDashSelect
 
+import typings.reactDashSelect.srcAnimatedTransitionsMod.TransitionState
 import typings.reactDashSelect.srcSelectMod.FormatOptionLabelContext
 import typings.reactDashSelect.srcTypesMod.ActionTypes
 import typings.reactDashSelect.srcTypesMod.FocusDirection
@@ -40,6 +41,12 @@ object reactDashSelectStrings {
   
   @js.native
   sealed trait down extends FocusDirection
+  
+  @js.native
+  sealed trait exited extends TransitionState
+  
+  @js.native
+  sealed trait exiting extends TransitionState
   
   @js.native
   sealed trait first extends FocusDirection
@@ -150,6 +157,10 @@ object reactDashSelectStrings {
   def `deselect-option`: `deselect-option` = "deselect-option".asInstanceOf[`deselect-option`]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
+  def exited: exited = "exited".asInstanceOf[exited]
+  @scala.inline
+  def exiting: exiting = "exiting".asInstanceOf[exiting]
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   @scala.inline

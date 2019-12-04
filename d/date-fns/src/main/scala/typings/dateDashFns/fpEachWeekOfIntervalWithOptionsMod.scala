@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object fpEachWeekOfIntervalWithOptionsMod extends js.Object {
   @js.native
   object default
-    extends TopLevel[CurriedFn2[Anon_0123456, Interval, js.Array[Date]]]
+    extends TopLevel[CurriedFn2[Anon_012345, Interval, js.Array[Date]]]
   
 }
 

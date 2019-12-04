@@ -1,7 +1,7 @@
 package typings.atJupyterlabCells.libModelMod
 
 import typings.atJupyterlabCells.libModelMod.CellModel.IOptions
-import typings.atJupyterlabCodeeditor.libMod.CodeEditor.Model
+import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorMod.CodeEditor.Model
 import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.CellType
 import typings.atJupyterlabCoreutils.libNbformatMod.nbformat.ICell

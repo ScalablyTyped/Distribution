@@ -1,7 +1,7 @@
 package typings.antdDashMobile.antdDashMobileMod
 
 import typings.antdDashMobile.Anon_ListPrefixCls
-import typings.antdDashMobile.TypeofClassIndexedListDefaultProps
+import typings.antdDashMobile.TypeofClassIndexedList
 import typings.antdDashMobile.libListDashViewMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ class ListView () extends default
 @js.native
 object ListView extends js.Object {
   var DataSource: js.Any = js.native
-  var IndexedList: TypeofClassIndexedListDefaultProps = js.native
+  var IndexedList: TypeofClassIndexedList = js.native
   var defaultProps: Anon_ListPrefixCls = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ibm-openapi-validator"
-version := "0.15-dt-20191123Z-2d3f70"
+version := "0.15-dt-20191123Z-4a476a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

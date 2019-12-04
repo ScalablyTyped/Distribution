@@ -1,15 +1,15 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.esExpandableTableMod.ExpandChangeEventHandler
-import typings.rcDashTable.esExpandableTableMod.ExpandableTableProps
-import typings.rcDashTable.esExpandableTableMod.RenderExpandIndentCell
-import typings.rcDashTable.esExpandableTableMod.RenderTableRows
-import typings.rcDashTable.esInterfaceMod.Cell
-import typings.rcDashTable.esInterfaceMod.FixedType
-import typings.rcDashTable.esInterfaceMod.Key
-import typings.rcDashTable.esInterfaceMod.RenderRows
-import typings.react.NativeMouseEvent
+import typings.rcDashTable.libExpandableTableMod.ExpandChangeEventHandler
+import typings.rcDashTable.libExpandableTableMod.ExpandableTableProps
+import typings.rcDashTable.libExpandableTableMod.RenderExpandIndentCell
+import typings.rcDashTable.libExpandableTableMod.RenderTableRows
+import typings.rcDashTable.libInterfaceMod.Cell
+import typings.rcDashTable.libInterfaceMod.FixedType
+import typings.rcDashTable.libInterfaceMod.Key
+import typings.rcDashTable.libInterfaceMod.RenderRows
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.antdDashMobile.libListMod
 
-import typings.antdDashMobile.TypeofClassItemBrief
+import typings.antdDashMobile.TypeofClassItem
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ class default () extends List
 @JSImport("antd-mobile/lib/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: TypeofClassItemBrief = js.native
+  var Item: TypeofClassItem = js.native
   var defaultProps: Partial[ListProps] = js.native
 }
 

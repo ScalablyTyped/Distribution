@@ -8,9 +8,9 @@ trait ExtendOptions extends js.Object {
   var enhance: js.UndefOr[Boolean] = js.undefined
   var enhanceArray: js.UndefOr[Boolean] = js.undefined
   var enhanceString: js.UndefOr[Boolean] = js.undefined
-  var except: js.UndefOr[js.Array[java.lang.String | NativeConstructor]] = js.undefined
-  var methods: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var namespaces: js.UndefOr[js.Array[NativeConstructor]] = js.undefined
+  var except: js.UndefOr[typings.sugar.Array[java.lang.String | NativeConstructor]] = js.undefined
+  var methods: js.UndefOr[typings.sugar.Array[java.lang.String]] = js.undefined
+  var namespaces: js.UndefOr[typings.sugar.Array[NativeConstructor]] = js.undefined
   var objectPrototype: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -20,9 +20,9 @@ object ExtendOptions {
     enhance: js.UndefOr[Boolean] = js.undefined,
     enhanceArray: js.UndefOr[Boolean] = js.undefined,
     enhanceString: js.UndefOr[Boolean] = js.undefined,
-    except: js.Array[java.lang.String | NativeConstructor] = null,
-    methods: js.Array[java.lang.String] = null,
-    namespaces: js.Array[NativeConstructor] = null,
+    except: typings.sugar.Array[java.lang.String | NativeConstructor] = null,
+    methods: typings.sugar.Array[java.lang.String] = null,
+    namespaces: typings.sugar.Array[NativeConstructor] = null,
     objectPrototype: js.UndefOr[Boolean] = js.undefined
   ): ExtendOptions = {
     val __obj = js.Dynamic.literal()

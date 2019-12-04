@@ -1,6 +1,5 @@
 package typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod
 
-import typings.coinbaseDashCommerceDashNode.Timestamp
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:confirmed`
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:created`
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.`charge:delayed`

@@ -1,6 +1,6 @@
 package typings.remotedevDashSerialize
 
-import typings.immutable.immutableMod.Collection.Indexed
+import typings.immutable.Immutable.Collection.Indexed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

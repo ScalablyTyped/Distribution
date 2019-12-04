@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Side
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,17 +14,12 @@ trait IonItemOptions extends js.Object {
   /**
     * The side the option button should be on. Possible values: `"start"` and `"end"`. If you have multiple `ion-item-options`, a side must be provided for each.
     */
-  var side: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any
-  ] = js.undefined
+  var side: js.UndefOr[Side] = js.undefined
 }
 
 object IonItemOptions {
   @scala.inline
-  def apply(
-    onIonSwipe: /* event */ CustomEvent[_] => Unit = null,
-    side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = null
-  ): IonItemOptions = {
+  def apply(onIonSwipe: /* event */ CustomEvent[_] => Unit = null, side: Side = null): IonItemOptions = {
     val __obj = js.Dynamic.literal()
     if (onIonSwipe != null) __obj.updateDynamic("onIonSwipe")(js.Any.fromFunction1(onIonSwipe))
     if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])

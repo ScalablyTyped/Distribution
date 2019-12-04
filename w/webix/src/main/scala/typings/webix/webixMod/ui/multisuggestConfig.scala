@@ -12,7 +12,7 @@ trait multisuggestConfig extends js.Object {
   var animate: js.UndefOr[js.Any] = js.undefined
   var autofit: js.UndefOr[Boolean] = js.undefined
   var autofocus: js.UndefOr[Boolean] = js.undefined
-  var body: js.UndefOr[String | baseview] = js.undefined
+  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var button: js.UndefOr[Boolean] = js.undefined
   var buttonText: js.UndefOr[String] = js.undefined
@@ -31,7 +31,7 @@ trait multisuggestConfig extends js.Object {
   var input: js.UndefOr[HTMLElement | String] = js.undefined
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
   var left: js.UndefOr[Double] = js.undefined
-  var master: js.UndefOr[baseview] = js.undefined
+  var master: js.UndefOr[typings.webix.webix.ui.baseview] = js.undefined
   var maxHeight: js.UndefOr[Double] = js.undefined
   var maxWidth: js.UndefOr[Double] = js.undefined
   var minHeight: js.UndefOr[Double] = js.undefined
@@ -63,7 +63,7 @@ object multisuggestConfig {
     animate: js.Any = null,
     autofit: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
-    body: String | baseview = null,
+    body: String | typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     button: js.UndefOr[Boolean] = js.undefined,
     buttonText: String = null,
@@ -82,7 +82,7 @@ object multisuggestConfig {
     input: HTMLElement | String = null,
     keyPressTimeout: Int | Double = null,
     left: Int | Double = null,
-    master: baseview = null,
+    master: typings.webix.webix.ui.baseview = null,
     maxHeight: Int | Double = null,
     maxWidth: Int | Double = null,
     minHeight: Int | Double = null,

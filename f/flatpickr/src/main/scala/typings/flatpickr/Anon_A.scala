@@ -1,13 +1,13 @@
 package typings.flatpickr
 
+import typings.flatpickr.distTypesGlobalsMod._Global_.Date
+import typings.flatpickr.distTypesGlobalsMod._Global_.HTMLElement
 import typings.flatpickr.distTypesLocaleMod.Locale
 import typings.flatpickr.distTypesOptionsMod.DateOption
 import typings.flatpickr.distTypesOptionsMod.Options
 import typings.flatpickr.distTypesOptionsMod.ParsedOptions
-import typings.std.Date
 import typings.std.Element
 import typings.std.FocusEvent
-import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

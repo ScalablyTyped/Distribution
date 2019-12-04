@@ -1,7 +1,7 @@
 package typings.antd
 
-import typings.antd.esUploadInterfaceMod.UploadListType
-import typings.antd.esUploadInterfaceMod.UploadType
+import typings.antd.libUploadInterfaceMod.UploadListType
+import typings.antd.libUploadInterfaceMod.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

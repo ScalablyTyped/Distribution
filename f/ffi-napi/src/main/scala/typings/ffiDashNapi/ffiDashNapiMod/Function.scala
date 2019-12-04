@@ -2,7 +2,7 @@ package typings.ffiDashNapi.ffiDashNapiMod
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.node.Buffer
+import typings.ffiDashNapi.Buffer
 import typings.refDashNapi.refDashNapiMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`

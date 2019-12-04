@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Fps
+import typings.playcanvas.Anon_FpsLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SpriteAnimationClip")
 @js.native
 class SpriteAnimationClip protected () extends EventHandler {
-  def this(component: SpriteComponent, data: Anon_Fps) = this()
+  def this(component: SpriteComponent, data: Anon_FpsLoop) = this()
   /**
     * The total duration of the animation in seconds.
     */

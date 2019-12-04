@@ -1,6 +1,6 @@
 package typings.csvDashStringify.csvDashStringifyMod
 
-import typings.csvDashStringify.Anon_Boolean
+import typings.csvDashStringify.Anon_BooleanDate
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ trait Options extends js.Object {
   /**
     * Key-value object which defines custom cast for certain data types
     */
-  var cast: js.UndefOr[Anon_Boolean] = js.undefined
+  var cast: js.UndefOr[Anon_BooleanDate] = js.undefined
   /**
     * List of fields, applied when `transform` returns an object
     * order matters
@@ -67,7 +67,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    cast: Anon_Boolean = null,
+    cast: Anon_BooleanDate = null,
     columns: (js.Array[ColumnOption | String]) | PlainObject[String] = null,
     delimiter: String | Buffer = null,
     eof: js.UndefOr[Boolean] = js.undefined,

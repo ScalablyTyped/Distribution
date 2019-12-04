@@ -17,6 +17,7 @@ trait Table[T]
   def as(name: String): Table[T] = js.native
   def create(): CreateQuery = js.native
   def drop(): DropQuery = js.native
+  def from[U](statement: String): Query[U] = js.native
   def from[U](table: TableNode): Query[U] = js.native
   def indexes(): IndexQuery = js.native
   def insert(row: T): ModifyingQuery = js.native

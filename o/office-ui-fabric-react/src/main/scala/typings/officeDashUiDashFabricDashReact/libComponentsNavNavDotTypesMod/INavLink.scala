@@ -2,8 +2,8 @@ package typings.officeDashUiDashFabricDashReact.libComponentsNavNavDotTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
 object esmGetOverlappingDaysInIntervalsMod extends js.Object {
   @js.native
   object default extends js.Object {
-    def apply(intervalLeft: Interval, intervalRight: Interval): Double = js.native
+    def apply(
+      intervalLeft: typings.dateDashFns.dateDashFnsMod.Interval | Interval,
+      intervalRight: typings.dateDashFns.dateDashFnsMod.Interval | Interval
+    ): Double = js.native
   }
   
 }

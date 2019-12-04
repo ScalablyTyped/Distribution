@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.libListMod
 
-import typings.atAntDashDesignReactDashNative.TypeofClassItemBrief
+import typings.atAntDashDesignReactDashNative.TypeofClassItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends List
 @JSImport("@ant-design/react-native/lib/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: TypeofClassItemBrief = js.native
+  var Item: TypeofClassItem = js.native
 }
 

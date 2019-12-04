@@ -22,6 +22,12 @@ object _SpecialEventHook {
     __obj.asInstanceOf[_SpecialEventHook[TTarget, TData]]
   }
   @scala.inline
+  def Anon_Add[TTarget, TData](add: (TTarget, HandleObject[TTarget, TData]) => Unit): _SpecialEventHook[TTarget, TData] = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
+  
+    __obj.asInstanceOf[_SpecialEventHook[TTarget, TData]]
+  }
+  @scala.inline
   def Anon_DataEventHandle[TTarget, TData](
     handle: (TTarget, (TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObjHandleObject[TTarget, TData]), /* repeated */ TData) => Unit
   ): _SpecialEventHook[TTarget, TData] = {
@@ -68,12 +74,6 @@ object _SpecialEventHook {
   @scala.inline
   def Anon_False[TTarget, TData](teardown: TTarget => Unit | `false`): _SpecialEventHook[TTarget, TData] = {
     val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction1(teardown))
-  
-    __obj.asInstanceOf[_SpecialEventHook[TTarget, TData]]
-  }
-  @scala.inline
-  def Anon_AddHandleObj[TTarget, TData](add: (TTarget, HandleObject[TTarget, TData]) => Unit): _SpecialEventHook[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
   
     __obj.asInstanceOf[_SpecialEventHook[TTarget, TData]]
   }

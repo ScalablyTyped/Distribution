@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.auto
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.heart
 import typings.semanticDashUiDashReact.semanticDashUiDashReactStrings.huge

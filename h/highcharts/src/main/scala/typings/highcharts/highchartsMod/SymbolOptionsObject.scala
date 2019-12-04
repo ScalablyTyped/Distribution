@@ -29,6 +29,10 @@ trait SymbolOptionsObject extends js.Object {
     */
   var r: js.UndefOr[Double] = js.undefined
   /**
+    * Whether to draw rounded edges.
+    */
+  var rounded: js.UndefOr[Boolean] = js.undefined
+  /**
     * The start angle of an `arc` symbol.
     */
   var start: js.UndefOr[Double] = js.undefined
@@ -42,6 +46,7 @@ object SymbolOptionsObject {
     end: Int | Double = null,
     open: js.UndefOr[Boolean] = js.undefined,
     r: Int | Double = null,
+    rounded: js.UndefOr[Boolean] = js.undefined,
     start: Int | Double = null
   ): SymbolOptionsObject = {
     val __obj = js.Dynamic.literal()
@@ -50,6 +55,7 @@ object SymbolOptionsObject {
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolOptionsObject]
   }

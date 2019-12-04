@@ -1,7 +1,6 @@
 package typings.ngDashStomp
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angular.angularMod.IHttpPromise
 import typings.ngDashStomp.ngStomp.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,9 +12,9 @@ trait ngStomp extends js.Object {
   var off: js.Any = js.native
   var sock: js.Any = js.native
   var stomp: js.Any = js.native
-  def connect(endpoint: String): IHttpPromise[_] = js.native
-  def connect(endpoint: String, headers: Headers): IHttpPromise[_] = js.native
-  def disconnect(callback: js.Function0[Unit]): IHttpPromise[_] = js.native
+  def connect(endpoint: String): js.Any = js.native
+  def connect(endpoint: String, headers: Headers): js.Any = js.native
+  def disconnect(callback: js.Function0[Unit]): js.Any = js.native
   def send(destination: String, body: js.Any, headers: Headers): js.Any = js.native
   def setDebug(callback: js.Function): Unit = js.native
   def subscribe(

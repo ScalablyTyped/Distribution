@@ -10,6 +10,8 @@ import typings.codemirror.Anon_ChLine
 import typings.codemirror.Anon_From
 import typings.codemirror.Anon_FromTo
 import typings.codemirror.Anon_Left
+import typings.codemirror.codemirrorStrings.autoCloseBrackets
+import typings.codemirror.codemirrorStrings.autoCloseTags
 import typings.codemirror.codemirrorStrings.autofocus
 import typings.codemirror.codemirrorStrings.beforeChange
 import typings.codemirror.codemirrorStrings.beforeSelectionChange
@@ -33,6 +35,8 @@ import typings.codemirror.codemirrorStrings.foldGutter
 import typings.codemirror.codemirrorStrings.gutterClick
 import typings.codemirror.codemirrorStrings.gutterContextMenu
 import typings.codemirror.codemirrorStrings.gutters
+import typings.codemirror.codemirrorStrings.highlightSelectionMatches
+import typings.codemirror.codemirrorStrings.hintOptions
 import typings.codemirror.codemirrorStrings.historyEventDelay
 import typings.codemirror.codemirrorStrings.indentUnit
 import typings.codemirror.codemirrorStrings.indentWithTabs
@@ -44,6 +48,8 @@ import typings.codemirror.codemirrorStrings.lineNumbers
 import typings.codemirror.codemirrorStrings.lineWiseCopyCut
 import typings.codemirror.codemirrorStrings.lineWrapping
 import typings.codemirror.codemirrorStrings.lint
+import typings.codemirror.codemirrorStrings.matchBrackets
+import typings.codemirror.codemirrorStrings.matchTags
 import typings.codemirror.codemirrorStrings.maxHighlightLength
 import typings.codemirror.codemirrorStrings.mode
 import typings.codemirror.codemirrorStrings.optionChange
@@ -56,9 +62,12 @@ import typings.codemirror.codemirrorStrings.renderLine
 import typings.codemirror.codemirrorStrings.rtlMoveVisually
 import typings.codemirror.codemirrorStrings.scroll
 import typings.codemirror.codemirrorStrings.scrollCursorIntoView
+import typings.codemirror.codemirrorStrings.scrollPastEnd
 import typings.codemirror.codemirrorStrings.scrollbarStyle
 import typings.codemirror.codemirrorStrings.showCursorWhenSelecting
+import typings.codemirror.codemirrorStrings.showHint
 import typings.codemirror.codemirrorStrings.smartIndent
+import typings.codemirror.codemirrorStrings.styleActiveLine
 import typings.codemirror.codemirrorStrings.swapDoc
 import typings.codemirror.codemirrorStrings.tabSize
 import typings.codemirror.codemirrorStrings.tabindex
@@ -106,10 +115,21 @@ trait Editor extends Doc {
     to override the styling of the base mode entirely, instead of the two being applied together. */
   def addOverlay(mode: js.Any): Unit = js.native
   def addOverlay(mode: js.Any, options: js.Any): Unit = js.native
+  /**
+    * Places a DOM node above or below an editor and shrinks the editor to make room for the node.
+    * When using the `after`, `before` or `replace` options, if the panel doesn't exists or has been removed, the value of the `position` option will be used as a fallback.
+    * @param node the DOM node
+    * @param options optional options object
+    */
+  def addPanel(node: HTMLElement): Panel = js.native
+  def addPanel(node: HTMLElement, options: ShowPanelOptions): Panel = js.native
   /** Puts node, which should be an absolutely positioned DOM node, into the editor, positioned right below the given { line , ch } position.
     When scrollIntoView is true, the editor will ensure that the entire node is visible (if possible).
     To remove the widget again, simply use DOM methods (move it somewhere else, or call removeChild on its parent). */
   def addWidget(pos: Position, node: HTMLElement, scrollIntoView: Boolean): Unit = js.native
+  /** Wrap the code in the given range in a block comment. Will fall back to `lineComment` when no block comment style is defined for the mode. */
+  def blockComment(from: Position, to: Position): Unit = js.native
+  def blockComment(from: Position, to: Position, options: CommentOptions): Unit = js.native
   /** Returns the position and dimensions of an arbitrary character. pos should be a { line , ch } object.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
@@ -167,6 +187,10 @@ trait Editor extends Doc {
   /** Gets the inner mode at a given position. This will return the same as getMode for simple modes, but will return an inner mode for nesting modes (such as htmlmixed). */
   def getModeAt(pos: Position): js.Any = js.native
   @JSName("getOption")
+  def getOption_autoCloseBrackets(option: autoCloseBrackets): AutoCloseBrackets | Boolean | String = js.native
+  @JSName("getOption")
+  def getOption_autoCloseTags(option: autoCloseTags): AutoCloseTags | Boolean = js.native
+  @JSName("getOption")
   def getOption_autofocus(option: autofocus): Boolean = js.native
   @JSName("getOption")
   def getOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar): Boolean = js.native
@@ -193,6 +217,10 @@ trait Editor extends Doc {
   @JSName("getOption")
   def getOption_gutters(option: gutters): js.Array[String] = js.native
   @JSName("getOption")
+  def getOption_highlightSelectionMatches(option: highlightSelectionMatches): HighlightSelectionMatches | Boolean = js.native
+  @JSName("getOption")
+  def getOption_hintOptions(option: hintOptions): ShowHintOptions = js.native
+  @JSName("getOption")
   def getOption_historyEventDelay(option: historyEventDelay): Double = js.native
   @JSName("getOption")
   def getOption_indentUnit(option: indentUnit): Double = js.native
@@ -211,6 +239,10 @@ trait Editor extends Doc {
   @JSName("getOption")
   def getOption_lint(option: lint): Boolean | LintOptions = js.native
   @JSName("getOption")
+  def getOption_matchBrackets(option: matchBrackets): MatchBrackets | Boolean = js.native
+  @JSName("getOption")
+  def getOption_matchTags(option: matchTags): MatchTags | Boolean = js.native
+  @JSName("getOption")
   def getOption_maxHighlightLength(option: maxHighlightLength): Double = js.native
   @JSName("getOption")
   def getOption_mode(option: mode): js.Any = js.native
@@ -223,11 +255,17 @@ trait Editor extends Doc {
   @JSName("getOption")
   def getOption_rtlMoveVisually(option: rtlMoveVisually): Boolean = js.native
   @JSName("getOption")
+  def getOption_scrollPastEnd(option: scrollPastEnd): Boolean = js.native
+  @JSName("getOption")
   def getOption_scrollbarStyle(option: scrollbarStyle): String = js.native
   @JSName("getOption")
   def getOption_showCursorWhenSelecting(option: showCursorWhenSelecting): Boolean = js.native
   @JSName("getOption")
+  def getOption_showHint(option: showHint): Boolean = js.native
+  @JSName("getOption")
   def getOption_smartIndent(option: smartIndent): Boolean = js.native
+  @JSName("getOption")
+  def getOption_styleActiveLine(option: styleActiveLine): StyleActiveLine | Boolean = js.native
   @JSName("getOption")
   def getOption_tabSize(option: tabSize): Double = js.native
   @JSName("getOption")
@@ -291,9 +329,13 @@ trait Editor extends Doc {
     to use to compute this line, it may be "window", "page" (the default), or "local" */
   def lineAtHeight(height: Double): Double = js.native
   def lineAtHeight(height: Double, mode: CoordsMode): Double = js.native
+  /** Set the lines in the given range to be line comments. Will fall back to `blockComment` when no line comment style is defined for the mode. */
+  def lineComment(from: Position, to: Position): Unit = js.native
+  def lineComment(from: Position, to: Position, options: CommentOptions): Unit = js.native
   /** Returns the line number, text content, and marker status of the given line, which can be either a number or a line handle. */
   def lineInfo(line: js.Any): Anon_BgClass = js.native
   def off(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  def off(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   def off[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
     eventName: K,
     handler: js.Function2[
@@ -394,6 +436,8 @@ trait Editor extends Doc {
     These are the events that fire on the instance object. The name of the event is followed by the arguments that will be passed to the handler.
     The instance argument always refers to the editor instance. */
   def on(eventName: String, handler: js.Function1[/* instance */ this.type, Unit]): Unit = js.native
+  /** An extension of the existing CodeMirror typings for the Editor.on("keyup", func) syntax */
+  def on(eventName: String, handler: js.Function2[/* doc */ Doc, /* event */ js.Any, Unit]): Unit = js.native
   /** Fires when one of the DOM events fires. */
   def on[K /* <: DOMEvent with (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ js.Any) */](
     eventName: K,
@@ -579,6 +623,16 @@ trait Editor extends Doc {
     Value can be either null, to clear the marker, or a DOM element, to set it. The DOM element will be shown in the specified gutter next to the specified line. */
   def setGutterMarker(line: js.Any, gutterID: String, value: HTMLElement): LineHandle = js.native
   @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: String): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseBrackets(option: autoCloseBrackets, value: AutoCloseBrackets): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseTags(option: autoCloseTags, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoCloseTags(option: autoCloseTags, value: AutoCloseTags): Unit = js.native
+  @JSName("setOption")
   def setOption_autofocus(option: autofocus, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_coverGutterNextToScrollbar(option: coverGutterNextToScrollbar, value: Boolean): Unit = js.native
@@ -607,6 +661,12 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_gutters(option: gutters, value: js.Array[String]): Unit = js.native
   @JSName("setOption")
+  def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_highlightSelectionMatches(option: highlightSelectionMatches, value: HighlightSelectionMatches): Unit = js.native
+  @JSName("setOption")
+  def setOption_hintOptions(option: hintOptions, value: ShowHintOptions): Unit = js.native
+  @JSName("setOption")
   def setOption_historyEventDelay(option: historyEventDelay, value: Double): Unit = js.native
   @JSName("setOption")
   def setOption_indentUnit(option: indentUnit, value: Double): Unit = js.native
@@ -627,6 +687,14 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_lint(option: lint, value: LintOptions): Unit = js.native
   @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchBrackets(option: matchBrackets, value: MatchBrackets): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchTags(option: matchTags, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_matchTags(option: matchTags, value: MatchTags): Unit = js.native
+  @JSName("setOption")
   def setOption_maxHighlightLength(option: maxHighlightLength, value: Double): Unit = js.native
   @JSName("setOption")
   def setOption_mode(option: mode, value: js.Any): Unit = js.native
@@ -639,11 +707,19 @@ trait Editor extends Doc {
   @JSName("setOption")
   def setOption_rtlMoveVisually(option: rtlMoveVisually, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_scrollPastEnd(option: scrollPastEnd, value: Boolean): Unit = js.native
+  @JSName("setOption")
   def setOption_scrollbarStyle(option: scrollbarStyle, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_showCursorWhenSelecting(option: showCursorWhenSelecting, value: Boolean): Unit = js.native
   @JSName("setOption")
+  def setOption_showHint(option: showHint, value: Boolean): Unit = js.native
+  @JSName("setOption")
   def setOption_smartIndent(option: smartIndent, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_styleActiveLine(option: styleActiveLine, value: StyleActiveLine): Unit = js.native
   @JSName("setOption")
   def setOption_tabSize(option: tabSize, value: Double): Unit = js.native
   @JSName("setOption")
@@ -665,15 +741,22 @@ trait Editor extends Doc {
     width and height height can be either numbers(interpreted as pixels) or CSS units ("100%", for example).
     You can pass null for either of them to indicate that that dimension should not be changed. */
   def setSize(width: js.Any, height: js.Any): Unit = js.native
+  def showHint(options: ShowHintOptions): Unit = js.native
   /** In normal circumstances, use the above operation method. But if you want to buffer operations happening asynchronously, or that can't all be wrapped in a callback
     function, you can call startOperation to tell CodeMirror to start buffering changes, and endOperation to actually render all the updates. Be careful: if you use this
     API and forget to call endOperation, the editor will just never update. */
   def startOperation(): Unit = js.native
   /** Attach a new document to the editor. Returns the old document, which is now no longer associated with an editor. */
   def swapDoc(doc: Doc): Doc = js.native
+  /** Tries to uncomment the current selection, and if that fails, line-comments it. */
+  def toggleComment(): Unit = js.native
+  def toggleComment(options: CommentOptions): Unit = js.native
   /** Switches between overwrite and normal insert mode (when not given an argument),
     or sets the overwrite mode to a specific state (when given an argument). */
   def toggleOverwrite(): Unit = js.native
   def toggleOverwrite(value: Boolean): Unit = js.native
+  /** Try to uncomment the given range. Returns `true` if a comment range was found and removed, `false` otherwise. */
+  def uncomment(from: Position, to: Position): Boolean = js.native
+  def uncomment(from: Position, to: Position, options: CommentOptions): Boolean = js.native
 }
 

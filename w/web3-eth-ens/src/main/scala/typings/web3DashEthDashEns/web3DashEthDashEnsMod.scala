@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object web3DashEthDashEnsMod extends js.Object {
   @js.native
   class Ens protected () extends js.Object {
-    def this(eth: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Eth */ js.Any) = this()
+    def this(eth: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eth */ js.Any) = this()
     var registry: Registry = js.native
     def getAddress(name: String): js.Promise[String] = js.native
     def getAddress(name: String, callback: js.Function2[/* error */ Error, /* address */ String, Unit]): js.Promise[String] = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify adal.TokenResponse * / any */ trait TokenResponse
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify adal.TokenResponse * / any */ trait TokenResponse
   extends /* x */ StringDictionary[js.Any] {
   /**
     * @property {number} [notBefore] The time from which the access token becomes usable.

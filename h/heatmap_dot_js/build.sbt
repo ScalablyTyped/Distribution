@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "heatmap_dot_js"
-version := "2.0-dt-20190212Z-bb452c"
+version := "2.0-dt-20190212Z-9b6b65"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

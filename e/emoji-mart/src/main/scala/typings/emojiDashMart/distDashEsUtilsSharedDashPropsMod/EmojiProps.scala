@@ -2,9 +2,9 @@ package typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod
 
 import typings.emojiDashMart.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData
 import typings.emojiDashMart.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

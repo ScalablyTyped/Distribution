@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.esListItemMod.default
+import typings.antd.libListItemMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

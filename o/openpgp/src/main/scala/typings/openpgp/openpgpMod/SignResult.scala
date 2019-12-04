@@ -1,7 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.NodeStream
-import typings.openpgp.ReadableStream
 import typings.openpgp.openpgpMod.message.Message
 import typings.openpgp.openpgpMod.signature.Signature
 import scala.scalajs.js

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var bugsnagClient: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
+  var bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
   var errorLevel: js.UndefOr[Double | String] = js.undefined
   var systemInfo: js.UndefOr[js.Array[String]] = js.undefined
   var warningLevel: js.UndefOr[Double | String] = js.undefined
@@ -14,7 +14,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    bugsnagClient: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any,
+    bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any,
     errorLevel: Double | String = null,
     systemInfo: js.Array[String] = null,
     warningLevel: Double | String = null

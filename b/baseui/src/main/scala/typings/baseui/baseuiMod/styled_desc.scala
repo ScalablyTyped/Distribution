@@ -2,7 +2,7 @@ package typings.baseui.baseuiMod
 
 import typings.baseui.Anon_ClassName
 import typings.baseui.Anon_Theme
-import typings.baseui.baseuiStrings.desc
+import typings.baseui.baseuiStrings.desc_
 import typings.react.reactMod.ComponentProps
 import typings.std.Exclude
 import typings.std.Pick
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("baseui", "styled")
 @js.native
 object styled_desc extends js.Object {
-  def apply[P /* <: js.Object */, T](component: desc, styledFn: js.Function1[/* props */ Anon_Theme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[desc], Exclude[String, Anon_ClassName]]) with P] = js.native
-  def apply[P /* <: js.Object */, T](component: desc, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[desc], Exclude[String, Anon_ClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: desc_, styledFn: js.Function1[/* props */ Anon_Theme[T] with P, StyleObject]): StyletronComponent[(Pick[ComponentProps[desc_], Exclude[String, Anon_ClassName]]) with P] = js.native
+  def apply[P /* <: js.Object */, T](component: desc_, styledFn: StyleObject): StyletronComponent[(Pick[ComponentProps[desc_], Exclude[String, Anon_ClassName]]) with P] = js.native
 }
 

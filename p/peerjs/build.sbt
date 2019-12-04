@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "peerjs"
-version := "1.1.0-d2b802"
+version := "1.1.0-3e286b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

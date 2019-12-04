@@ -1,9 +1,9 @@
 package typings.reactDashSortableDashPane.reactDashSortableDashPaneMod
 
 import typings.reDashResizable.reDashResizableMod.ResizableDirection
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.TouchEvent
 import typings.react.reactMod._Global_.JSX.Element

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gl-texture2d"
-version := "2.1-dt-20180801Z-1c0b58"
+version := "2.1-dt-20180801Z-8cd4bf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

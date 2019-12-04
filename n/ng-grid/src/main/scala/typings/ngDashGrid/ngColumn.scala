@@ -1,7 +1,6 @@
 package typings.ngDashGrid
 
 import org.scalablytyped.runtime.TopLevel
-import typings.angular.angularMod.ITemplateCacheService
 import typings.ngDashGrid.ngGrid.IColumn
 import typings.ngDashGrid.ngGrid.IColumnDef
 import typings.ngDashGrid.ngGrid.IColumnStatic
@@ -21,7 +20,7 @@ class ngColumn protected () extends IColumn {
     $scope: IGridScope,
     grid: IGridInstance,
     domUtilityService: IDomUtilityService,
-    $templateCache: ITemplateCacheService,
+    $templateCache: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ITemplateCacheService */ js.Any,
     $utils: js.Any
   ) = this()
   /* CompleteClass */

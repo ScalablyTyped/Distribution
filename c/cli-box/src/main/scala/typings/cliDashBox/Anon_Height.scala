@@ -1,5 +1,6 @@
 package typings.cliDashBox
 
+import typings.cliDashBox.cliDashBoxMod.Marks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

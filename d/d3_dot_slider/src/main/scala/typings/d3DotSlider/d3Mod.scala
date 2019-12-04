@@ -26,9 +26,9 @@ object d3Mod extends js.Object {
     def animate(): Boolean | Double = js.native
     def animate(`val`: Boolean): Slider = js.native
     def animate(`val`: Double): Slider = js.native
-    def axis(): Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any) = js.native
+    def axis(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any) = js.native
     def axis(
-      `val`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+      `val`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
     ): Slider = js.native
     def axis(`val`: Boolean): Slider = js.native
     def margin(): Double = js.native

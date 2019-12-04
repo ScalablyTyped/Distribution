@@ -1,16 +1,21 @@
 package typings.atAngularAnimations
 
 import typings.atAngularAnimations.atAngularAnimationsMod.AnimationMetadataType
+import typings.atAngularAnimations.browserBrowserMod.AnimationTransitionInstructionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atAngularAnimationsNumbers {
   @js.native
-  sealed trait `0` extends AnimationMetadataType
+  sealed trait `0`
+    extends AnimationMetadataType
+       with AnimationTransitionInstructionType
   
   @js.native
-  sealed trait `1` extends AnimationMetadataType
+  sealed trait `1`
+    extends AnimationMetadataType
+       with AnimationTransitionInstructionType
   
   @js.native
   sealed trait `10` extends AnimationMetadataType

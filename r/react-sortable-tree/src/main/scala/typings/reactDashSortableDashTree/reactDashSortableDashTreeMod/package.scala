@@ -9,6 +9,7 @@ package object reactDashSortableDashTreeMod {
 
   type GetTreeItemChildrenFn = js.Function1[/* data */ GetTreeItemChildren, Unit]
   type NodeRenderer = ComponentType[NodeRendererProps]
+  type NumberOrStringArray = js.Array[String | Double]
   type PlaceholderRenderer = ComponentType[PlaceholderRendererProps]
   type TreeRenderer = ComponentType[TreeRendererProps]
 }

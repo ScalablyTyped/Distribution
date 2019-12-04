@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait IRedirectParams extends js.Object {
   var params: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any
   ] = js.undefined
   var state: String
 }
@@ -15,7 +15,7 @@ object IRedirectParams {
   @scala.inline
   def apply(
     state: String,
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any = null
+    params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any = null
   ): IRedirectParams = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])

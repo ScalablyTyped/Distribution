@@ -69,12 +69,12 @@ object bitwiseMod extends js.Object {
   
   @js.native
   object default extends js.Object {
-    var bits: Anon_And = js.native
-    var buffer: Anon_A = js.native
-    var byte: Anon_Byte = js.native
-    var integer: Anon_GetBit = js.native
-    var nibble: Anon_Nibble = js.native
-    var string: Anon_String = js.native
+    var bits: Anon_AndBits = js.native
+    var buffer: Anon_AAnd = js.native
+    var byte: Anon_ByteRead = js.native
+    var integer: Anon_GetBitInt32 = js.native
+    var nibble: Anon_NibbleRead = js.native
+    var string: Anon_StringToBits = js.native
   }
   
   @js.native

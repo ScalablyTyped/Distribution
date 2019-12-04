@@ -12,15 +12,15 @@ import typings.atNivoCore.Anon_
 import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.CartesianMarkerProps
 import typings.atNivoCore.atNivoCoreMod.Theme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.SVGRectElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/bar.@nivo/bar.Data & @nivo/bar.@nivo/bar.BarProps & @nivo/core.@nivo/core.MotionProps & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/bar.@nivo/bar.BarDatum> & std.Partial<{  layers  :std.Array<@nivo/bar.@nivo/bar.Layer>, onClick (datum : @nivo/bar.@nivo/bar.BarExtendedDatum, event : react.react.MouseEvent<std.SVGRectElement, react.NativeMouseEvent>): void}> */
+/* Inlined @nivo/bar.@nivo/bar.Data & @nivo/bar.@nivo/bar.BarProps & @nivo/core.@nivo/core.MotionProps & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/bar.@nivo/bar.BarDatum> & std.Partial<{  layers  :std.Array<@nivo/bar.@nivo/bar.Layer>, onClick (datum : @nivo/bar.@nivo/bar.BarExtendedDatum, event : react.react.MouseEvent<std.SVGRectElement, react.react.NativeMouseEvent>): void}> */
 trait BarSvgProps extends js.Object {
   var animate: js.UndefOr[Boolean] = js.undefined
   var axisBottom: js.UndefOr[Axis] = js.undefined

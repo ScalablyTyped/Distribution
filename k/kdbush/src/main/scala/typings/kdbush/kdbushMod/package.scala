@@ -14,4 +14,5 @@ package object kdbushMod {
 
   type ArrayType = Int8ArrayConstructor | Int16ArrayConstructor | Int32ArrayConstructor | Float32ArrayConstructor | Float64ArrayConstructor | ArrayConstructor
   type Get[T] = js.Function1[/* point */ T, Double]
+  type Points = js.Array[js.Array[Double]]
 }

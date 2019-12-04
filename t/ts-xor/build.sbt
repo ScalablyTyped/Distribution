@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-xor"
-version := "1.0.8-d487b0"
+version := "1.0.8-0b0094"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

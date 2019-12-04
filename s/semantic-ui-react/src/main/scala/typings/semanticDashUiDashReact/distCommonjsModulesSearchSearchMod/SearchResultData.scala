@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.semanticDashUiDashReact.distCommonjsElementsInputInputMod.InputProps

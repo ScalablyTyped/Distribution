@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "libra-core"
-version := "1.0.7-709bbd"
+version := "1.0.7-f693de"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-d445da",
-  "org.scalablytyped" %%% "grpc" % "1.21.1-56b9de",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-d57d48",
+  "org.scalablytyped" %%% "google-protobuf" % "3.7-dt-20191126Z-3580f5",
+  "org.scalablytyped" %%% "grpc" % "1.21.1-0e3fd0",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-f6bdfb",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

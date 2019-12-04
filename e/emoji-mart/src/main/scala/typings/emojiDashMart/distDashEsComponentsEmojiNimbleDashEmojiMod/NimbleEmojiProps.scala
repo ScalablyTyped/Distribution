@@ -6,9 +6,9 @@ import typings.emojiDashMart.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashInd
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiProps
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSet
 import typings.emojiDashMart.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,10 +1,12 @@
 package typings.inversify
 
 import typings.inversify.dtsAnnotationInjectMod.ServiceIdentifierOrFunc
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Abstract
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.AsyncContainerModuleCallBack
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ConstraintFunction
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ContainerModuleCallBack
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ContainerOptions
+import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Newable
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.Request
 import typings.inversify.dtsInterfacesInterfacesMod.interfaces.ServiceIdentifier
 import typings.inversify.inversifyStrings.`design:paramtypes`
@@ -71,14 +73,9 @@ object inversifyMod extends js.Object {
   def id(): Double = js.native
   def inject(serviceIdentifier: ServiceIdentifierOrFunc): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
   def injectable(): js.Function1[/* target */ js.Any, _] = js.native
-  def multiBindToService(
-    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify interfaces.Container */ js.Any
-  ): js.Function1[
-    /* service */ String | js.Symbol | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify interfaces.Newable<any> */ js.Any), 
-    js.Function1[
-      /* repeated */ String | js.Symbol | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify interfaces.Newable<any> */ _), 
-      Unit
-    ]
+  def multiBindToService(container: typings.inversify.dtsInterfacesInterfacesMod.interfaces.Container): js.Function1[
+    /* service */ String | js.Symbol | Newable[_] | Abstract[_], 
+    js.Function1[/* repeated */ String | js.Symbol | Newable[_] | Abstract[_], Unit]
   ] = js.native
   def multiInject(serviceIdentifier: ServiceIdentifier[_]): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native
   def named(name: String): js.Function3[/* target */ js.Any, /* targetKey */ String, /* index */ js.UndefOr[Double], Unit] = js.native

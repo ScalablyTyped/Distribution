@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.dbllist")
 @js.native
-class dbllist () extends baseview {
+class dbllist ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$$")
   var $$: js.Any = js.native
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
+  @JSName("$skin")
+  var $skin_Original_dbllist: WebixCallback = js.native
   @JSName("config")
   var config_dbllist: dbllistConfig = js.native
   @JSName("$onLoad")
@@ -35,7 +38,7 @@ class dbllist () extends baseview {
   def select(id: js.Array[_], mode: Boolean): Unit = js.native
   def setValue(ids: String): Unit = js.native
   def setValue(ids: js.Array[_]): Unit = js.native
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: js.Any): typings.webix.webix.ui.baseview = js.native
   def unblockEvent(): Unit = js.native
 }
 

@@ -6,10 +6,31 @@ import scala.scalajs.js.annotation._
 
 object olStrings {
   @js.native
+  sealed trait CanvasReplayGroup extends js.Object
+  
+  @js.native
   sealed trait add extends js.Object
   
   @js.native
   sealed trait addfeature extends js.Object
+  
+  @js.native
+  sealed trait addfeatures extends js.Object
+  
+  @js.native
+  sealed trait afteroperations extends js.Object
+  
+  @js.native
+  sealed trait beforeoperations extends js.Object
+  
+  @js.native
+  sealed trait boxdrag extends js.Object
+  
+  @js.native
+  sealed trait boxend extends js.Object
+  
+  @js.native
+  sealed trait boxstart extends js.Object
   
   @js.native
   sealed trait change extends js.Object
@@ -30,7 +51,13 @@ object olStrings {
   sealed trait `change:altitudeAccuracy` extends js.Object
   
   @js.native
+  sealed trait `change:blur` extends js.Object
+  
+  @js.native
   sealed trait `change:center` extends js.Object
+  
+  @js.native
+  sealed trait `change:coordinateFormat` extends js.Object
   
   @js.native
   sealed trait `change:element` extends js.Object
@@ -40,6 +67,9 @@ object olStrings {
   
   @js.native
   sealed trait `change:geometry` extends js.Object
+  
+  @js.native
+  sealed trait `change:gradient` extends js.Object
   
   @js.native
   sealed trait `change:heading` extends js.Object
@@ -75,7 +105,13 @@ object olStrings {
   sealed trait `change:positioning` extends js.Object
   
   @js.native
+  sealed trait `change:preload` extends js.Object
+  
+  @js.native
   sealed trait `change:projection` extends js.Object
+  
+  @js.native
+  sealed trait `change:radius` extends js.Object
   
   @js.native
   sealed trait `change:resolution` extends js.Object
@@ -102,6 +138,12 @@ object olStrings {
   sealed trait `change:trackingOptions` extends js.Object
   
   @js.native
+  sealed trait `change:units` extends js.Object
+  
+  @js.native
+  sealed trait `change:useInterimTilesOnError` extends js.Object
+  
+  @js.native
   sealed trait `change:view` extends js.Object
   
   @js.native
@@ -126,13 +168,40 @@ object olStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
+  sealed trait drawend extends js.Object
+  
+  @js.native
+  sealed trait drawstart extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait image extends js.Object
+  
+  @js.native
+  sealed trait imageloadend extends js.Object
+  
+  @js.native
+  sealed trait imageloaderror extends js.Object
+  
+  @js.native
+  sealed trait imageloadstart extends js.Object
+  
+  @js.native
+  sealed trait modifyend extends js.Object
+  
+  @js.native
+  sealed trait modifystart extends js.Object
   
   @js.native
   sealed trait moveend extends js.Object
   
   @js.native
   sealed trait movestart extends js.Object
+  
+  @js.native
+  sealed trait pixel extends js.Object
   
   @js.native
   sealed trait pointerdrag extends js.Object
@@ -165,6 +234,9 @@ object olStrings {
   sealed trait rendercomplete extends js.Object
   
   @js.native
+  sealed trait select extends js.Object
+  
+  @js.native
   sealed trait singleclick extends js.Object
   
   @js.native
@@ -176,10 +248,33 @@ object olStrings {
   @js.native
   sealed trait tileloadstart extends js.Object
   
+  @js.native
+  sealed trait translateend extends js.Object
+  
+  @js.native
+  sealed trait translatestart extends js.Object
+  
+  @js.native
+  sealed trait translating extends js.Object
+  
+  @scala.inline
+  def CanvasReplayGroup: CanvasReplayGroup = "CanvasReplayGroup".asInstanceOf[CanvasReplayGroup]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
   def addfeature: addfeature = "addfeature".asInstanceOf[addfeature]
+  @scala.inline
+  def addfeatures: addfeatures = "addfeatures".asInstanceOf[addfeatures]
+  @scala.inline
+  def afteroperations: afteroperations = "afteroperations".asInstanceOf[afteroperations]
+  @scala.inline
+  def beforeoperations: beforeoperations = "beforeoperations".asInstanceOf[beforeoperations]
+  @scala.inline
+  def boxdrag: boxdrag = "boxdrag".asInstanceOf[boxdrag]
+  @scala.inline
+  def boxend: boxend = "boxend".asInstanceOf[boxend]
+  @scala.inline
+  def boxstart: boxstart = "boxstart".asInstanceOf[boxstart]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
@@ -193,13 +288,19 @@ object olStrings {
   @scala.inline
   def `change:altitudeAccuracy`: `change:altitudeAccuracy` = "change:altitudeAccuracy".asInstanceOf[`change:altitudeAccuracy`]
   @scala.inline
+  def `change:blur`: `change:blur` = "change:blur".asInstanceOf[`change:blur`]
+  @scala.inline
   def `change:center`: `change:center` = "change:center".asInstanceOf[`change:center`]
+  @scala.inline
+  def `change:coordinateFormat`: `change:coordinateFormat` = "change:coordinateFormat".asInstanceOf[`change:coordinateFormat`]
   @scala.inline
   def `change:element`: `change:element` = "change:element".asInstanceOf[`change:element`]
   @scala.inline
   def `change:extent`: `change:extent` = "change:extent".asInstanceOf[`change:extent`]
   @scala.inline
   def `change:geometry`: `change:geometry` = "change:geometry".asInstanceOf[`change:geometry`]
+  @scala.inline
+  def `change:gradient`: `change:gradient` = "change:gradient".asInstanceOf[`change:gradient`]
   @scala.inline
   def `change:heading`: `change:heading` = "change:heading".asInstanceOf[`change:heading`]
   @scala.inline
@@ -223,7 +324,11 @@ object olStrings {
   @scala.inline
   def `change:positioning`: `change:positioning` = "change:positioning".asInstanceOf[`change:positioning`]
   @scala.inline
+  def `change:preload`: `change:preload` = "change:preload".asInstanceOf[`change:preload`]
+  @scala.inline
   def `change:projection`: `change:projection` = "change:projection".asInstanceOf[`change:projection`]
+  @scala.inline
+  def `change:radius`: `change:radius` = "change:radius".asInstanceOf[`change:radius`]
   @scala.inline
   def `change:resolution`: `change:resolution` = "change:resolution".asInstanceOf[`change:resolution`]
   @scala.inline
@@ -241,6 +346,10 @@ object olStrings {
   @scala.inline
   def `change:trackingOptions`: `change:trackingOptions` = "change:trackingOptions".asInstanceOf[`change:trackingOptions`]
   @scala.inline
+  def `change:units`: `change:units` = "change:units".asInstanceOf[`change:units`]
+  @scala.inline
+  def `change:useInterimTilesOnError`: `change:useInterimTilesOnError` = "change:useInterimTilesOnError".asInstanceOf[`change:useInterimTilesOnError`]
+  @scala.inline
   def `change:view`: `change:view` = "change:view".asInstanceOf[`change:view`]
   @scala.inline
   def `change:visible`: `change:visible` = "change:visible".asInstanceOf[`change:visible`]
@@ -257,11 +366,29 @@ object olStrings {
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
+  def drawend: drawend = "drawend".asInstanceOf[drawend]
+  @scala.inline
+  def drawstart: drawstart = "drawstart".asInstanceOf[drawstart]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def image: image = "image".asInstanceOf[image]
+  @scala.inline
+  def imageloadend: imageloadend = "imageloadend".asInstanceOf[imageloadend]
+  @scala.inline
+  def imageloaderror: imageloaderror = "imageloaderror".asInstanceOf[imageloaderror]
+  @scala.inline
+  def imageloadstart: imageloadstart = "imageloadstart".asInstanceOf[imageloadstart]
+  @scala.inline
+  def modifyend: modifyend = "modifyend".asInstanceOf[modifyend]
+  @scala.inline
+  def modifystart: modifystart = "modifystart".asInstanceOf[modifystart]
   @scala.inline
   def moveend: moveend = "moveend".asInstanceOf[moveend]
   @scala.inline
   def movestart: movestart = "movestart".asInstanceOf[movestart]
+  @scala.inline
+  def pixel: pixel = "pixel".asInstanceOf[pixel]
   @scala.inline
   def pointerdrag: pointerdrag = "pointerdrag".asInstanceOf[pointerdrag]
   @scala.inline
@@ -283,6 +410,8 @@ object olStrings {
   @scala.inline
   def rendercomplete: rendercomplete = "rendercomplete".asInstanceOf[rendercomplete]
   @scala.inline
+  def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def singleclick: singleclick = "singleclick".asInstanceOf[singleclick]
   @scala.inline
   def tileloadend: tileloadend = "tileloadend".asInstanceOf[tileloadend]
@@ -290,5 +419,11 @@ object olStrings {
   def tileloaderror: tileloaderror = "tileloaderror".asInstanceOf[tileloaderror]
   @scala.inline
   def tileloadstart: tileloadstart = "tileloadstart".asInstanceOf[tileloadstart]
+  @scala.inline
+  def translateend: translateend = "translateend".asInstanceOf[translateend]
+  @scala.inline
+  def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
+  @scala.inline
+  def translating: translating = "translating".asInstanceOf[translating]
 }
 

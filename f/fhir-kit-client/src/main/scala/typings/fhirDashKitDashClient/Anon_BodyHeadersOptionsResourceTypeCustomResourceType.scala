@@ -1,6 +1,7 @@
 package typings.fhirDashKitDashClient
 
 import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.CustomResource
+import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.CustomResourceType
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options
 import scala.scalajs.js

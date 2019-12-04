@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "slate-html-serializer"
-version := "0.6-dt-20181217Z-49d38f"
+version := "0.6-dt-20181217Z-7b7cff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-088719",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-0794f1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
-  "org.scalablytyped" %%% "slate" % "0.47-dt-20191118Z-943a2a",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "slate" % "0.47-dt-20191118Z-c9b62a",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

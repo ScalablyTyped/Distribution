@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.distTypesComponentsRadioDashGroupRadioDashGroupDashInterfaceMod.RadioGroupChangeEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,14 +18,7 @@ trait IonRadioGroup extends js.Object {
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioGroupChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RadioGroupChangeEventDetail], Unit]] = js.undefined
   /**
     * the value of the radio group.
     */
@@ -36,9 +30,7 @@ object IonRadioGroup {
   def apply(
     allowEmptySelection: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RadioGroupChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[RadioGroupChangeEventDetail] => Unit = null,
     value: js.Any = null
   ): IonRadioGroup = {
     val __obj = js.Dynamic.literal()

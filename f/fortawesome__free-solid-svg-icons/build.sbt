@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fortawesome__free-solid-svg-icons"
-version := "5.11.2-3eb344"
+version := "5.11.2-02ec5d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

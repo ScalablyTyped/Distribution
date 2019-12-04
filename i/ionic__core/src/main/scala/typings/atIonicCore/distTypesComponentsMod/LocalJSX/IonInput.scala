@@ -1,5 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
+import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
@@ -12,6 +14,7 @@ import typings.atIonicCore.atIonicCoreStrings.search
 import typings.atIonicCore.atIonicCoreStrings.tel
 import typings.atIonicCore.atIonicCoreStrings.text
 import typings.atIonicCore.atIonicCoreStrings.url
+import typings.atIonicCore.distTypesComponentsInputInputDashInterfaceMod.InputChangeEventDetail
 import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -50,9 +53,7 @@ trait IonInput extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
@@ -100,14 +101,7 @@ trait IonInput extends js.Object {
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InputChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[InputChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the input has focus.
     */
@@ -147,9 +141,7 @@ trait IonInput extends js.Object {
   /**
     * The type of control to display. The default type is text.
     */
-  var `type`: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any
-  ] = js.undefined
+  var `type`: js.UndefOr[TextFieldTypes] = js.undefined
   /**
     * The value of the input.
     */
@@ -166,7 +158,7 @@ object IonInput {
     autofocus: js.UndefOr[Boolean] = js.undefined,
     clearInput: js.UndefOr[Boolean] = js.undefined,
     clearOnEdit: js.UndefOr[Boolean] = js.undefined,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputmode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -178,9 +170,7 @@ object IonInput {
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InputChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[InputChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,
     pattern: String = null,
@@ -190,7 +180,7 @@ object IonInput {
     size: Int | Double = null,
     spellcheck: js.UndefOr[Boolean] = js.undefined,
     step: String = null,
-    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any = null,
+    `type`: TextFieldTypes = null,
     value: String = null
   ): IonInput = {
     val __obj = js.Dynamic.literal()

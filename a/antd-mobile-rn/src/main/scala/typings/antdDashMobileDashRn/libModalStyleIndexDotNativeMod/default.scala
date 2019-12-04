@@ -7,7 +7,7 @@ import typings.antdDashMobileDashRn.Anon_BorderBottomLeftRadius
 import typings.antdDashMobileDashRn.Anon_BorderColorBorderRightWidth
 import typings.antdDashMobileDashRn.Anon_BorderColorBorderTopWidthFlexGrow
 import typings.antdDashMobileDashRn.Anon_BorderRadiusOverflowPaddingTop
-import typings.antdDashMobileDashRn.Anon_Bottom
+import typings.antdDashMobileDashRn.Anon_BottomLeft
 import typings.antdDashMobileDashRn.Anon_ColorFontSizeFontWeight
 import typings.antdDashMobileDashRn.Anon_ColorFontSizePaddingHorizontal
 import typings.antdDashMobileDashRn.Anon_ColorPaddingHorizontal
@@ -40,7 +40,7 @@ object default extends js.Object {
   var maskClosable: Anon_BackgroundColorBottom = js.native
   var operationBody: Anon_PaddingBottomPaddingHorizontal = js.native
   var operationContainer: Anon_PaddingTop = js.native
-  var popupSlideUp: Anon_Bottom = js.native
+  var popupSlideUp: Anon_BottomLeft = js.native
   var wrap: Anon_AlignItemsJustifyContent = js.native
 }
 

@@ -4,6 +4,7 @@ import typings.atAngularCore.atAngularCoreMod.ChangeDetectorRef
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.EventEmitter
 import typings.atAngularCore.atAngularCoreMod.NgZone
+import typings.atIonicCore.atIonicCoreMod.Side
 import typings.std.CustomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -21,7 +22,7 @@ class IonItemOptions protected ()
     * The side the option button should be on. Possible values: `"start"` and `"end"`. If you have multiple `ion-item-options`, a side must be provided for each.
     */
   /* CompleteClass */
-  override var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = js.native
+  override var side: Side = js.native
   var z: NgZone = js.native
   /* CompleteClass */
   override def fireSwipeEvent(): js.Promise[Unit] = js.native

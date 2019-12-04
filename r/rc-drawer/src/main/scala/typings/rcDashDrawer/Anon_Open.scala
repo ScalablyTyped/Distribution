@@ -1,6 +1,6 @@
 package typings.rcDashDrawer
 
-import typings.rcDashDrawer.esIDrawerPropTypesMod.IDrawerProps
+import typings.rcDashDrawer.libIDrawerPropTypesMod.IDrawerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

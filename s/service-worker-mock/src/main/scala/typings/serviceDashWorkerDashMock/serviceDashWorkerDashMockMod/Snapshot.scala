@@ -14,7 +14,7 @@ trait Snapshot extends js.Object {
     * A list of active clients.
     */
   var clients: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ _
   ]
   /**
     * A list of active notifications.
@@ -27,7 +27,7 @@ object Snapshot {
   def apply(
     caches: Caches,
     clients: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ _
     ],
     notifications: js.Array[Notification]
   ): Snapshot = {

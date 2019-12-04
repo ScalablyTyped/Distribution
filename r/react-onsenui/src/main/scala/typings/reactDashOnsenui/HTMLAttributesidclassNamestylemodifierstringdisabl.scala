@@ -1,14 +1,14 @@
 package typings.reactDashOnsenui
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  modifier ? :string,   disabled ? :boolean,   onClick ? :(e ? : react.react.MouseEvent<std.HTMLElement, react.NativeMouseEvent>): void} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  modifier ? :string,   disabled ? :boolean,   onClick ? :(e ? : react.react.MouseEvent<std.HTMLElement, react.react.NativeMouseEvent>): void} */
 trait HTMLAttributesidclassNamestylemodifierstringdisabl extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined

@@ -9,6 +9,11 @@ package object stampitMod {
   import typings.stampit.stampitMod.stampit.Stamp
 
   type MethodMap[This] = StringDictionary[(js.ThisFunction1[/* this */ This, /* repeated */ js.Any, js.Any]) | js.Object]
+  /** @internal A plain old JavaScript object created by a `Stamp`. */
+  type Pojo = js.Object
+  /** @internal Base type for all `properties`-like metadata. */
+  // TODO: discriminate Array
+  type PropertyMap = js.Object
   /**
     * @internal Chainables `Stamp` additionnal methods
     * @template Obj The object type that the `Stamp` will create.

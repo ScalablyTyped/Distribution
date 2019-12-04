@@ -1,9 +1,9 @@
 package typings.rcDashCheckbox.rcDashCheckboxMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js

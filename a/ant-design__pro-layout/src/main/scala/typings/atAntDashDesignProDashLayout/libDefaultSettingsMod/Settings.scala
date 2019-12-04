@@ -1,6 +1,5 @@
 package typings.atAntDashDesignProDashLayout.libDefaultSettingsMod
 
-import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
@@ -31,7 +30,9 @@ trait Settings extends js.Object {
   /**
     * theme for nav menu
     */
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
+  ] = js.undefined
   var primaryColor: String
   var title: String
 }
@@ -47,7 +48,7 @@ object Settings {
     menu: Anon_Locale,
     primaryColor: String,
     title: String,
-    navTheme: MenuTheme | realDark = null
+    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null
   ): Settings = {
     val __obj = js.Dynamic.literal(contentWidth = contentWidth.asInstanceOf[js.Any], fixSiderbar = fixSiderbar.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any], iconfontUrl = iconfontUrl.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], primaryColor = primaryColor.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])

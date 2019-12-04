@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsAlertAlertDashInterfaceMod
 
+import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.atIonicCoreStrings.checkbox
 import typings.atIonicCore.atIonicCoreStrings.radio
 import scala.scalajs.js
@@ -16,9 +17,7 @@ trait AlertInput extends js.Object {
   var min: js.UndefOr[String | Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any) | checkbox | radio
-  ] = js.undefined
+  var `type`: js.UndefOr[TextFieldTypes | checkbox | radio] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -34,7 +33,7 @@ object AlertInput {
     min: String | Double = null,
     name: String = null,
     placeholder: String = null,
-    `type`: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any) | checkbox | radio = null,
+    `type`: TextFieldTypes | checkbox | radio = null,
     value: js.Any = null
   ): AlertInput = {
     val __obj = js.Dynamic.literal()

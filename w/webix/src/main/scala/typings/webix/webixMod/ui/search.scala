@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.search")
 @js.native
-class search () extends baseview {
+class search ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class search () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_search: WebixCallback = js.native
   @JSName("config")
   var config_search: searchConfig = js.native
   @JSName("on_click")

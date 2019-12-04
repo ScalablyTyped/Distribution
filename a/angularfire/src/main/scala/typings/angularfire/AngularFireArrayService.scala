@@ -11,7 +11,7 @@ trait AngularFireArrayService extends js.Object {
   @JSName("$extend")
   def $extend(ChildClass: js.Object, methods: js.Object): js.Object = js.native
   def apply(
-    firebase: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ js.Any
+    firebase: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ): AngularFireArray = js.native
 }
 

@@ -78,10 +78,10 @@ trait EventListenerProps extends js.Object {
   var onEnded: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onEndedCapture: js.UndefOr[js.Function1[/* ev */ Event, _]] = js.undefined
   var onError: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
   ] = js.undefined
   var onErrorCapture: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
   ] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* ev */ FocusEvent, _]] = js.undefined
   var onFocusCapture: js.UndefOr[js.Function1[/* ev */ FocusEvent, _]] = js.undefined
@@ -290,8 +290,8 @@ object EventListenerProps {
     onEmptiedCapture: /* ev */ Event => _ = null,
     onEnded: /* ev */ Event => _ = null,
     onEndedCapture: /* ev */ Event => _ = null,
-    onError: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
-    onErrorCapture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
+    onError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
+    onErrorCapture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
     onFocus: /* ev */ FocusEvent => _ = null,
     onFocusCapture: /* ev */ FocusEvent => _ = null,
     onHashChange: /* ev */ HashChangeEvent => _ = null,

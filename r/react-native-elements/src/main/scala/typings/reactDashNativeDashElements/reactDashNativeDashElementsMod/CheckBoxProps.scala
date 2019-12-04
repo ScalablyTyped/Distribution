@@ -4,6 +4,7 @@ import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ReactElement
 import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.TextProperties
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.std.Partial
@@ -104,11 +105,7 @@ trait CheckBoxProps extends js.Object {
   /**
     * Additional props for the title
     */
-  var titleProps: js.UndefOr[
-    Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ _
-    ]
-  ] = js.undefined
+  var titleProps: js.UndefOr[Partial[TextProperties]] = js.undefined
   /**
     * Default unchecked color
     * @default '#bfbfbf'
@@ -147,9 +144,7 @@ object CheckBoxProps {
     size: Int | Double = null,
     textStyle: StyleProp[TextStyle] = null,
     title: String | ReactElement = null,
-    titleProps: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ _
-    ] = null,
+    titleProps: Partial[TextProperties] = null,
     uncheckedColor: String = null,
     uncheckedIcon: String | ReactElement = null,
     wrapperStyle: StyleProp[ViewStyle] = null

@@ -12,8 +12,10 @@ object esmSetWeekMod extends js.Object {
   object default extends js.Object {
     def apply(date: Double, week: Double): Date = js.native
     def apply(date: Double, week: Double, options: Anon_01234567FirstWeekContainsDateLocale): Date = js.native
+    def apply(date: Double, week: Double, options: Anon_01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
     def apply(date: Date, week: Double): Date = js.native
     def apply(date: Date, week: Double, options: Anon_01234567FirstWeekContainsDateLocale): Date = js.native
+    def apply(date: Date, week: Double, options: Anon_01234567FirstWeekContainsDateLocaleWeekStartsOn): Date = js.native
   }
   
 }

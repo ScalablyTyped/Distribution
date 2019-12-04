@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tmp-promise"
-version := "1.1.0-8373ea"
+version := "1.1.0-50e3df"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

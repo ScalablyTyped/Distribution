@@ -17,6 +17,6 @@ trait Comparable extends js.Object {
 @js.native
 object Comparable
   extends TopLevel[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberMixin<Comparable> */ js.Any
+      typings.atEmberObject.mixinMod.default[Comparable, typings.atEmberObject.atEmberObjectMod.default]
     ]
 

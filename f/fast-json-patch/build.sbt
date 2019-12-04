@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-json-patch"
-version := "3.0.0-1-a1701a"
+version := "3.0.0-1-4a1a41"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

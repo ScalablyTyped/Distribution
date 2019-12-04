@@ -1,7 +1,6 @@
 package typings.prosemirrorDashTestDashBuilder.prosemirrorDashTestDashBuilderMod
 
 import typings.prosemirrorDashModel.prosemirrorDashModelMod.Schema
-import typings.prosemirrorDashTestDashBuilder.Args
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

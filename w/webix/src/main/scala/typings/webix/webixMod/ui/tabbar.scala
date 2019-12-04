@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.tabbar")
 @js.native
-class tabbar () extends baseview {
+class tabbar ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class tabbar () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_tabbar: WebixCallback = js.native
   @JSName("config")
   var config_tabbar: tabbarConfig = js.native
   @JSName("on_click")
@@ -73,7 +76,7 @@ class tabbar () extends baseview {
   def getInputNode(): HTMLElement = js.native
   def getOption(id: String): js.Any = js.native
   def getOption(id: Double): js.Any = js.native
-  def getPopup(): baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def getValue(): String = js.native
   def hasEvent(name: String): Boolean = js.native
   def hideOption(id: String): Unit = js.native

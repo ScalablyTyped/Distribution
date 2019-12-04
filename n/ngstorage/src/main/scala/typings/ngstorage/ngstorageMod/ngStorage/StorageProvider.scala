@@ -1,11 +1,11 @@
 package typings.ngstorage.ngstorageMod.ngStorage
 
-import typings.angular.angularMod.IServiceProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StorageProvider extends IServiceProvider {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ trait StorageProvider extends js.Object {
   def get[T](key: String): T | Boolean
   def remove(key: String): Unit
   def set[T](key: String, value: T): T | Boolean
@@ -18,7 +18,6 @@ trait StorageProvider extends IServiceProvider {
 object StorageProvider {
   @scala.inline
   def apply(
-    $get: js.Any,
     get: String => js.Any | Boolean,
     remove: String => Unit,
     set: (String, js.Any) => js.Any | Boolean,
@@ -27,7 +26,7 @@ object StorageProvider {
     setSerializer: js.Function1[/* value */ js.Any, String] => Unit,
     supported: () => Boolean
   ): StorageProvider = {
-    val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), setDeserializer = js.Any.fromFunction1(setDeserializer), setKeyPrefix = js.Any.fromFunction1(setKeyPrefix), setSerializer = js.Any.fromFunction1(setSerializer), supported = js.Any.fromFunction0(supported))
   
     __obj.asInstanceOf[StorageProvider]
   }

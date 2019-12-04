@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libSessionManagerMod
 
+import typings.atJupyterlabServices.atJupyterlabServicesMod.ServerConnection.NetworkError
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.ISpecModels
 import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atJupyterlabServices.libSessionManagerMod.SessionManager.IOptions
@@ -49,10 +50,7 @@ class SessionManager_ () extends IManager {
     * A signal emitted when there is a connection failure.
     */
   /* CompleteClass */
-  override var connectionFailure: ISignal[
-    IManager, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.NetworkError */ _
-  ] = js.native
+  override var connectionFailure: ISignal[IManager, NetworkError] = js.native
   /**
     * A signal emitted when there is a connection failure.
     */

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-sass"
-version := "4.0.2-dt-20190508Z-1dd07b"
+version := "4.0.2-dt-20190508Z-d88fc9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
-  "org.scalablytyped" %%% "node-sass" % "4.11-dt-20190213Z-de86a5",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "node-sass" % "4.11-dt-20190213Z-a635b8",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,19 +1,14 @@
 package typings.atStorybookApi.distModulesShortcutsMod
 
+import typings.atStorybookApi.atStorybookApiMod.API
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubAPI extends js.Object {
   def getShortcutKeys(): Shortcuts
-  def handleKeydownEvent(
-    api: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any,
-    event: Event
-  ): Unit
-  def handleShortcutFeature(
-    api: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any,
-    feature: Action
-  ): Unit
+  def handleKeydownEvent(api: API, event: Event): Unit
+  def handleShortcutFeature(api: API, feature: Action): Unit
   def restoreAllDefaultShortcuts(): js.Promise[Shortcuts]
   def restoreDefaultShortcut(action: Action): js.Promise[KeyCollection]
   def setShortcut(action: Action, value: KeyCollection): js.Promise[KeyCollection]
@@ -24,8 +19,8 @@ object SubAPI {
   @scala.inline
   def apply(
     getShortcutKeys: () => Shortcuts,
-    handleKeydownEvent: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any, Event) => Unit,
-    handleShortcutFeature: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify API */ js.Any, Action) => Unit,
+    handleKeydownEvent: (API, Event) => Unit,
+    handleShortcutFeature: (API, Action) => Unit,
     restoreAllDefaultShortcuts: () => js.Promise[Shortcuts],
     restoreDefaultShortcut: Action => js.Promise[KeyCollection],
     setShortcut: (Action, KeyCollection) => js.Promise[KeyCollection],

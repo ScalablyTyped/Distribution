@@ -13,7 +13,8 @@ package object reactDashInstantsearchDashCoreMod {
   import typings.reactDashInstantsearchDashCore.Anon_CurrentRefinement
   import typings.reactDashInstantsearchDashCore.Anon_CurrentRefinementItems
   import typings.reactDashInstantsearchDashCore.Anon_HighlightResult
-  import typings.reactDashInstantsearchDashCore.Omit
+  import typings.std.Exclude
+  import typings.std.Pick
 
   type AllSearchResults[TDoc] = StringDictionary[SearchResults[TDoc]] with SearchResults[TDoc]
   type BasicDoc = StringDictionary[String]
@@ -26,6 +27,7 @@ package object reactDashInstantsearchDashCoreMod {
   type HighlightResultArray[TItem] = js.Array[HighlightResult[TItem] | HighlightResultPrimitive]
   type HighlightResultField[TField] = HighlightResult[TField] | HighlightResultPrimitive | HighlightResultArray[js.Any]
   type Hit[TDoc] = TDoc with Anon_HighlightResult[TDoc]
+  type Omit[T1, T2] = Pick[T1, Exclude[String, String]]
   type Refinement = Anon_Attribute with (Anon_CurrentRefinement | Anon_CurrentRefinementItems)
   type RefinementValue = js.Function1[/* searchState */ SearchState, SearchState]
 }

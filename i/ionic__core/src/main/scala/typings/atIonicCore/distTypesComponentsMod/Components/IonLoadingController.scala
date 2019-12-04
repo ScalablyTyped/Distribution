@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.distTypesComponentsLoadingLoadingDashInterfaceMod.LoadingOptions
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonLoadingElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +13,7 @@ trait IonLoadingController extends js.Object {
     * @param options The options to use to create the loading.
     */
   def create(): js.Promise[HTMLIonLoadingElement] = js.native
-  def create(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any
-  ): js.Promise[HTMLIonLoadingElement] = js.native
+  def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = js.native
   /**
     * Dismiss the open loading overlay.
     * @param data Any data to emit in the dismiss events.

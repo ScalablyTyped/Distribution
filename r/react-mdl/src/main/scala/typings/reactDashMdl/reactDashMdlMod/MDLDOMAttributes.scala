@@ -1,6 +1,5 @@
 package typings.reactDashMdl.reactDashMdlMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.CompositionEvent
@@ -15,6 +14,7 @@ import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

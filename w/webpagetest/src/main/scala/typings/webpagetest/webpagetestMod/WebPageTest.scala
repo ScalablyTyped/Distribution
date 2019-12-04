@@ -1,7 +1,6 @@
 package typings.webpagetest.webpagetestMod
 
 import typings.webpagetest.Anon_Response
-import typings.webpagetest.TestScript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

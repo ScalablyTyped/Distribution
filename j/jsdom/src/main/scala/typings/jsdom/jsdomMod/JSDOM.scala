@@ -23,7 +23,7 @@ class JSDOM () extends js.Object {
   /**
     * The nodeLocation() method will find where a DOM node is within the source document, returning the parse5 location info for the node.
     */
-  def nodeLocation(node: Node): (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any) | Null = js.native
+  def nodeLocation(node: Node): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any) | Null = js.native
   def reconfigure(settings: ReconfigureSettings): Unit = js.native
   /**
     * The built-in vm module of Node.js allows you to create Script instances,

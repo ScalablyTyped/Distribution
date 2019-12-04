@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "excel-style-dataformatter"
-version := "2.0-dt-20191126Z-98fb0f"
+version := "2.0-dt-20191126Z-ae9542"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

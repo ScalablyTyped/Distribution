@@ -19,7 +19,7 @@ object libTableMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Column: Instantiable0[typings.antd.libTableColumnMod.default[js.Object]] = js.native
-    var ColumnGroup: TypeofClassColumnGroupANTTABLECOLUMNGROUP = js.native
+    var ColumnGroup: TypeofClassColumnGroup = js.native
     var displayName: String = js.native
   }
   

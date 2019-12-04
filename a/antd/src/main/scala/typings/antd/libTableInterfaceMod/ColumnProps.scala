@@ -1,6 +1,6 @@
 package typings.antd.libTableInterfaceMod
 
-import typings.antd.Anon_FiltersSortColumn
+import typings.antd.Anon_Filters
 import typings.antd.antdStrings.center
 import typings.antd.antdStrings.left
 import typings.antd.antdStrings.right
@@ -36,7 +36,7 @@ trait ColumnProps[T] extends js.Object {
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder | Boolean] = js.undefined
   var sorter: js.UndefOr[Boolean | CompareFn[T]] = js.undefined
-  var title: js.UndefOr[ReactNode | (js.Function1[/* options */ Anon_FiltersSortColumn[T], ReactNode])] = js.undefined
+  var title: js.UndefOr[ReactNode | (js.Function1[/* options */ Anon_Filters[T], ReactNode])] = js.undefined
   var width: js.UndefOr[String | Double] = js.undefined
 }
 
@@ -67,7 +67,7 @@ object ColumnProps {
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | Boolean = null,
     sorter: Boolean | CompareFn[T] = null,
-    title: ReactNode | (js.Function1[/* options */ Anon_FiltersSortColumn[T], ReactNode]) = null,
+    title: ReactNode | (js.Function1[/* options */ Anon_Filters[T], ReactNode]) = null,
     width: String | Double = null
   ): ColumnProps[T] = {
     val __obj = js.Dynamic.literal()

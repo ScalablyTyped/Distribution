@@ -1,6 +1,5 @@
 package typings.neverbounce.neverbounceMod
 
-import typings.neverbounce.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

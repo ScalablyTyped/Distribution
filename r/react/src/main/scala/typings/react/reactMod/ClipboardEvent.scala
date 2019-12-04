@@ -1,6 +1,5 @@
 package typings.react.reactMod
 
-import typings.react.NativeClipboardEvent
 import typings.std.DataTransfer
 import typings.std.EventTarget
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.globalize.distGlobalizeUnitMod.distGlobalizeMod
 
-import typings.globalize.distGlobalizeNumberMod.distGlobalizeMod.NumberFormatterOptions
+import typings.globalize.distGlobalizeMod.NumberFormatterOptions
 import typings.globalize.globalizeStrings.long
 import typings.globalize.globalizeStrings.narrow
 import typings.globalize.globalizeStrings.short

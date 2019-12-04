@@ -1,6 +1,6 @@
 package typings.fsDashExtraDashPromise.fsDashExtraDashPromiseMod
 
-import typings.fsDashExtra.fsDashExtraMod.WriteFileOptions
+import typings.node.fsMod.WriteFileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

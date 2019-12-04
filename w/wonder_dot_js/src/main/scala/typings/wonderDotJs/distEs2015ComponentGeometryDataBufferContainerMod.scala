@@ -15,7 +15,7 @@ object distEs2015ComponentGeometryDataBufferContainerMod extends js.Object {
   @js.native
   abstract class BufferContainer protected () extends js.Object {
     def this(entityObject: GameObject) = this()
-    var container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
+    var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
     var entityObject: GameObject = js.native
     var geometryData: GeometryData = js.native
     def createBuffersFromGeometryData(): Unit = js.native

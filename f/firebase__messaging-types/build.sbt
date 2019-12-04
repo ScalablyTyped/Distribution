@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging-types"
-version := "0.3.5-141150"
+version := "0.3.5-0ac836"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.33-a09405",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.33-34219b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

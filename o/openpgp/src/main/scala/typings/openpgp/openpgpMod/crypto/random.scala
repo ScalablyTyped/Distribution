@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod.crypto
 
-import typings.openpgp.Integer
+import typings.openpgp.openpgpMod.Integer
 import typings.openpgp.openpgpMod.`type`.mpi.MPI
 import typings.std.Uint8Array
 import scala.scalajs.js

@@ -4,6 +4,7 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IIOPubMes
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IMessage
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOPubMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.MessageType
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +30,7 @@ trait IKernel extends IKernelConnection {
   /**
     * The server settings for the kernel.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = js.native
+  val serverSettings: ISettings = js.native
   /**
     * A signal emitted when the kernel status changes.
     */

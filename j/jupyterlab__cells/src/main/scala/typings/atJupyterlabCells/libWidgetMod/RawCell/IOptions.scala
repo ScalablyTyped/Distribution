@@ -1,6 +1,6 @@
 package typings.atJupyterlabCells.libWidgetMod.RawCell
 
-import typings.atJupyterlabCells.libModelMod.IRawCellModel
+import typings.atJupyterlabCells.libModelMod.ICellModel
 import typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
 import typings.std.Partial
@@ -12,18 +12,12 @@ import scala.scalajs.js.annotation._
   * An options object for initializing a base cell widget.
   */
 trait IOptions
-  extends typings.atJupyterlabCells.libWidgetMod.Cell.IOptions {
-  /**
-    * The model used by the cell.
-    */
-  @JSName("model")
-  var model_IOptions: IRawCellModel
-}
+  extends typings.atJupyterlabCells.libWidgetMod.Cell.IOptions
 
 object IOptions {
   @scala.inline
   def apply(
-    model: IRawCellModel,
+    model: ICellModel,
     contentFactory: IContentFactory = null,
     editorConfig: Partial[IConfig] = null,
     updateEditorOnShow: js.UndefOr[Boolean] = js.undefined

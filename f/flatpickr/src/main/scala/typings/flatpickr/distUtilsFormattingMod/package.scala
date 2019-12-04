@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distUtilsFormattingMod {
+  import typings.flatpickr.distTypesGlobalsMod._Global_.Date
   import typings.flatpickr.distTypesLocaleMod.Locale
   import typings.flatpickr.distTypesOptionsMod.ParsedOptions
-  import typings.std.Date
   import typings.std.Record
 
   type Formats = Record[

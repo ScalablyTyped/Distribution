@@ -41,6 +41,9 @@ object menubarStrings {
   sealed trait leftCenter extends js.Object
   
   @js.native
+  sealed trait mockDOTappDOTgetAppPath extends js.Object
+  
+  @js.native
   sealed trait preloadWindow extends js.Object
   
   @js.native
@@ -119,6 +122,8 @@ object menubarStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
+  @scala.inline
+  def mockDOTappDOTgetAppPath: mockDOTappDOTgetAppPath = "mock.app.getAppPath".asInstanceOf[mockDOTappDOTgetAppPath]
   @scala.inline
   def preloadWindow: preloadWindow = "preloadWindow".asInstanceOf[preloadWindow]
   @scala.inline

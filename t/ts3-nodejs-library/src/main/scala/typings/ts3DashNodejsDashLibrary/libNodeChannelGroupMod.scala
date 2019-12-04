@@ -2,12 +2,12 @@ package typings.ts3DashNodejsDashLibrary
 
 import typings.node.Buffer
 import typings.ts3DashNodejsDashLibrary.libNodeAbstractMod.Abstract
-import typings.ts3DashNodejsDashLibrary.libTeamSpeakMod.TeamSpeak
 import typings.ts3DashNodejsDashLibrary.libTypesQueryResponseMod.QueryResponseTypes
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupClientList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupCopy
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.ChannelGroupList
 import typings.ts3DashNodejsDashLibrary.libTypesResponseTypesMod.PermList
+import typings.ts3DashNodejsDashLibrary.ts3DashNodejsDashLibraryMod.TeamSpeak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

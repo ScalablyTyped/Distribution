@@ -54,42 +54,42 @@ object atAntDashDesignProDashLayoutMod extends js.Object {
     * @param props
     */
   val default: FC[BasicLayoutProps] = js.native
-  def getMenuData(routes: js.Array[Route]): Anon_BreadcrumbKey = js.native
+  def getMenuData(routes: js.Array[Route]): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: js.UndefOr[scala.Nothing],
     formatMessage: js.UndefOr[scala.Nothing],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: js.UndefOr[scala.Nothing],
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: js.UndefOr[scala.Nothing],
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Anon_BreadcrumbKey = js.native
-  def getMenuData(routes: js.Array[Route], menu: Anon_Locale): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
+  def getMenuData(routes: js.Array[Route], menu: Anon_Locale): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: Anon_Locale,
     formatMessage: js.UndefOr[scala.Nothing],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: Anon_Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
-  ): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: Anon_Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
-  ): Anon_BreadcrumbKey = js.native
+  ): Anon_Breadcrumb = js.native
   def getPageTitle(props: GetPageTitleProps): String = js.native
   def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
   /* static members */

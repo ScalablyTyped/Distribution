@@ -33,10 +33,10 @@ trait baseview extends js.Object {
   def disable(): Unit = js.native
   def enable(): Unit = js.native
   def getChildViews(): js.Array[_] = js.native
-  def getFormView(): baseview = js.native
+  def getFormView(): typings.webix.webix.ui.baseview = js.native
   def getNode(): js.Any = js.native
   def getParentView(): js.Any = js.native
-  def getTopParentView(): baseview = js.native
+  def getTopParentView(): typings.webix.webix.ui.baseview = js.native
   def hide(): Unit = js.native
   def isEnabled(): Boolean = js.native
   def isVisible(): Boolean = js.native

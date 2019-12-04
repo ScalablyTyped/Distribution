@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browserslist"
-version := "4.4-dt-20191126Z-c1eceb"
+version := "4.4-dt-20191126Z-955567"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

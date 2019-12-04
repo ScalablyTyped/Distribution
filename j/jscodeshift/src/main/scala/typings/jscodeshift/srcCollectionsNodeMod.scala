@@ -1,5 +1,7 @@
 package typings.jscodeshift
 
+import typings.astDashTypes.genNodesMod.ASTNode
+import typings.astDashTypes.genNodesMod.VariableDeclarator
 import typings.jscodeshift.srcCollectionMod.Collection
 import typings.jscodeshift.srcCollectionsNodeMod.ASTPath
 import scala.scalajs.js
@@ -36,31 +38,29 @@ object srcCollectionsNodeMod extends js.Object {
       * Traverse the AST up and finds the closest node of the provided type.
       */
     def closest[T](
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any
     ): Collection[T] = js.native
     def closest[T](
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
       filter: js.Any
     ): Collection[T] = js.native
     /**
       * Returns a collection containing the paths that create the scope of the
       * currently selected paths. Dedupes the paths.
       */
-    def closestScope(): Collection[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.ASTNode */ _
-      ] = js.native
+    def closestScope(): Collection[ASTNode] = js.native
     /**
       * Find nodes of a specific type within the nodes of this collection.
       */
     def find[T](
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any
     ): Collection[T] = js.native
     def find[T](
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
       filter: js.Function1[/* value */ js.Any, Boolean]
     ): Collection[T] = js.native
     def find[T](
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<T> */ js.Any,
       filter: js.Object
     ): Collection[T] = js.native
     /**
@@ -70,12 +70,10 @@ object srcCollectionsNodeMod extends js.Object {
       *
       * If the callback returns a falsy value, the element is skipped.
       */
-    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): Collection[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
-      ] = js.native
+    def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): Collection[VariableDeclarator] = js.native
   }
   
   def register(): Unit = js.native
-  type ASTPath[N] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
+  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
 }
 

@@ -10,7 +10,7 @@ trait RenderResponse extends js.Object {
   var stdin: Anon_Data
   def lastFrame(): String
   def rerender(
-    tree: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkElement */ js.Any
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
   ): Unit
   def unmount(): Unit
 }
@@ -20,7 +20,7 @@ object RenderResponse {
   def apply(
     frames: js.Array[String],
     lastFrame: () => String,
-    rerender: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit,
+    rerender: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit,
     stdin: Anon_Data,
     unmount: () => Unit
   ): RenderResponse = {

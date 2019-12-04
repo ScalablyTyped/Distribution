@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "immer"
-version := "1.10.0-9bd39d"
+version := "1.10.0-b04a71"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

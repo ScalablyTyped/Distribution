@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 object atIonicCliDashFrameworkStrings {
   @js.native
+  sealed trait BIN_NOT_FOUND extends js.Object
+  
+  @js.native
   sealed trait CommandNotFoundError extends js.Object
   
   @js.native
@@ -33,6 +36,9 @@ object atIonicCliDashFrameworkStrings {
   
   @js.native
   sealed trait INFO extends LoggerLevel
+  
+  @js.native
+  sealed trait INVALID_PACKAGE_JSON extends js.Object
   
   @js.native
   sealed trait IPCError extends js.Object
@@ -107,6 +113,8 @@ object atIonicCliDashFrameworkStrings {
   sealed trait tick extends js.Object
   
   @scala.inline
+  def BIN_NOT_FOUND: BIN_NOT_FOUND = "BIN_NOT_FOUND".asInstanceOf[BIN_NOT_FOUND]
+  @scala.inline
   def CommandNotFoundError: CommandNotFoundError = "CommandNotFoundError".asInstanceOf[CommandNotFoundError]
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
@@ -124,6 +132,8 @@ object atIonicCliDashFrameworkStrings {
   def HelpGroupColors: HelpGroupColors = "HelpGroupColors".asInstanceOf[HelpGroupColors]
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
+  def INVALID_PACKAGE_JSON: INVALID_PACKAGE_JSON = "INVALID_PACKAGE_JSON".asInstanceOf[INVALID_PACKAGE_JSON]
   @scala.inline
   def IPCError: IPCError = "IPCError".asInstanceOf[IPCError]
   @scala.inline

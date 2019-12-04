@@ -5,15 +5,15 @@ import typings.atNivoCore.atNivoCoreMod.Box
 import typings.atNivoCore.atNivoCoreMod.Colors
 import typings.atNivoCore.atNivoCoreMod.GetColor
 import typings.atNivoCore.atNivoCoreMod.Theme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/core.@nivo/core.ColorProps<@nivo/waffle.@nivo/waffle.WaffleDatum> & std.Partial<{  margin  :@nivo/core.@nivo/core.Box,   fillDirection  :@nivo/waffle.@nivo/waffle.WaffleFillDirection,   padding  :number,   theme  :@nivo/core.@nivo/core.Theme,   emptyColor  :string,   emptyOpacity  :number,   borderWidth  :number,   borderColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/waffle.@nivo/waffle.WaffleDatum>,   enableLabels  :boolean,   isInteractive  :boolean, onClick (datum : @nivo/waffle.@nivo/waffle.WaffleDatum, event : react.react.MouseEvent<std.HTMLCanvasElement, react.NativeMouseEvent>): void,   tooltipFormat  :string | @nivo/waffle.@nivo/waffle.ValueFormatter,   tooltip  :react.react.StatelessComponent<@nivo/waffle.@nivo/waffle.WaffleTooltipData>}> */
+/* Inlined @nivo/core.@nivo/core.ColorProps<@nivo/waffle.@nivo/waffle.WaffleDatum> & std.Partial<{  margin  :@nivo/core.@nivo/core.Box,   fillDirection  :@nivo/waffle.@nivo/waffle.WaffleFillDirection,   padding  :number,   theme  :@nivo/core.@nivo/core.Theme,   emptyColor  :string,   emptyOpacity  :number,   borderWidth  :number,   borderColor  :@nivo/colors.@nivo/colors.InheritedColorProp<@nivo/waffle.@nivo/waffle.WaffleDatum>,   enableLabels  :boolean,   isInteractive  :boolean, onClick (datum : @nivo/waffle.@nivo/waffle.WaffleDatum, event : react.react.MouseEvent<std.HTMLCanvasElement, react.react.NativeMouseEvent>): void,   tooltipFormat  :string | @nivo/waffle.@nivo/waffle.ValueFormatter,   tooltip  :react.react.StatelessComponent<@nivo/waffle.@nivo/waffle.WaffleTooltipData>}> */
 trait WaffleCommonProps extends js.Object {
   var borderColor: js.UndefOr[InheritedColorProp[WaffleDatum]] = js.undefined
   var borderWidth: js.UndefOr[Double] = js.undefined

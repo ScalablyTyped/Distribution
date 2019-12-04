@@ -10,6 +10,48 @@ import scala.scalajs.js.annotation._
 
 object polishedStrings {
   @js.native
+  sealed trait `!` extends js.Object
+  
+  @js.native
+  sealed trait `(` extends js.Object
+  
+  @js.native
+  sealed trait `)` extends js.Object
+  
+  @js.native
+  sealed trait `*` extends js.Object
+  
+  @js.native
+  sealed trait `+` extends js.Object
+  
+  @js.native
+  sealed trait `,` extends js.Object
+  
+  @js.native
+  sealed trait `-` extends js.Object
+  
+  @js.native
+  sealed trait `/` extends js.Object
+  
+  @js.native
+  sealed trait `BACKSLASHBACKSLASH(` extends js.Object
+  
+  @js.native
+  sealed trait `BACKSLASHBACKSLASH)` extends js.Object
+  
+  @js.native
+  sealed trait `BACKSLASHBACKSLASH*` extends js.Object
+  
+  @js.native
+  sealed trait `BACKSLASHBACKSLASH+` extends js.Object
+  
+  @js.native
+  sealed trait `BACKSLASHBACKSLASH^` extends js.Object
+  
+  @js.native
+  sealed trait `_backtick^_backtick` extends js.Object
+  
+  @js.native
   sealed trait active extends _InteractionState
   
   @js.native
@@ -103,10 +145,16 @@ object polishedStrings {
   sealed trait focus extends _InteractionState
   
   @js.native
+  sealed trait func extends js.Object
+  
+  @js.native
   sealed trait goldenSection extends _ModularScaleRatio
   
   @js.native
   sealed trait hover extends _InteractionState
+  
+  @js.native
+  sealed trait infix extends js.Object
   
   @js.native
   sealed trait left extends SideKeyword
@@ -133,6 +181,18 @@ object polishedStrings {
   sealed trait majorTwelfth extends _ModularScaleRatio
   
   @js.native
+  sealed trait max extends js.Object
+  
+  @js.native
+  sealed trait maxBACKSLASHBACKSLASHb extends js.Object
+  
+  @js.native
+  sealed trait min extends js.Object
+  
+  @js.native
+  sealed trait minBACKSLASHBACKSLASHb extends js.Object
+  
+  @js.native
   sealed trait minorSecond extends _ModularScaleRatio
   
   @js.native
@@ -154,7 +214,19 @@ object polishedStrings {
   sealed trait perfectFourth extends _ModularScaleRatio
   
   @js.native
+  sealed trait postfix extends js.Object
+  
+  @js.native
+  sealed trait prefix extends js.Object
+  
+  @js.native
   sealed trait right extends SideKeyword
+  
+  @js.native
+  sealed trait sqrt extends js.Object
+  
+  @js.native
+  sealed trait sqrtBACKSLASHBACKSLASHb extends js.Object
   
   @js.native
   sealed trait top extends SideKeyword
@@ -165,6 +237,34 @@ object polishedStrings {
   @js.native
   sealed trait topRight extends SideKeyword
   
+  @scala.inline
+  def `!`: `!` = "!".asInstanceOf[`!`]
+  @scala.inline
+  def `(`: `(` = "(".asInstanceOf[`(`]
+  @scala.inline
+  def `)`: `)` = ")".asInstanceOf[`)`]
+  @scala.inline
+  def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
+  def `+`: `+` = "+".asInstanceOf[`+`]
+  @scala.inline
+  def `,`: `,` = ",".asInstanceOf[`,`]
+  @scala.inline
+  def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
+  def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
+  def `BACKSLASHBACKSLASH(`: `BACKSLASHBACKSLASH(` = "\\(".asInstanceOf[`BACKSLASHBACKSLASH(`]
+  @scala.inline
+  def `BACKSLASHBACKSLASH)`: `BACKSLASHBACKSLASH)` = "\\)".asInstanceOf[`BACKSLASHBACKSLASH)`]
+  @scala.inline
+  def `BACKSLASHBACKSLASH*`: `BACKSLASHBACKSLASH*` = "\\*".asInstanceOf[`BACKSLASHBACKSLASH*`]
+  @scala.inline
+  def `BACKSLASHBACKSLASH+`: `BACKSLASHBACKSLASH+` = "\\+".asInstanceOf[`BACKSLASHBACKSLASH+`]
+  @scala.inline
+  def `BACKSLASHBACKSLASH^`: `BACKSLASHBACKSLASH^` = "\\^".asInstanceOf[`BACKSLASHBACKSLASH^`]
+  @scala.inline
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
@@ -228,9 +328,13 @@ object polishedStrings {
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
+  def func: func = "func".asInstanceOf[func]
+  @scala.inline
   def goldenSection: goldenSection = "goldenSection".asInstanceOf[goldenSection]
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
+  @scala.inline
+  def infix: infix = "infix".asInstanceOf[infix]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -248,6 +352,14 @@ object polishedStrings {
   @scala.inline
   def majorTwelfth: majorTwelfth = "majorTwelfth".asInstanceOf[majorTwelfth]
   @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
+  def maxBACKSLASHBACKSLASHb: maxBACKSLASHBACKSLASHb = "max\\b".asInstanceOf[maxBACKSLASHBACKSLASHb]
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
+  @scala.inline
+  def minBACKSLASHBACKSLASHb: minBACKSLASHBACKSLASHb = "min\\b".asInstanceOf[minBACKSLASHBACKSLASHb]
+  @scala.inline
   def minorSecond: minorSecond = "minorSecond".asInstanceOf[minorSecond]
   @scala.inline
   def minorSeventh: minorSeventh = "minorSeventh".asInstanceOf[minorSeventh]
@@ -262,7 +374,15 @@ object polishedStrings {
   @scala.inline
   def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
   @scala.inline
+  def postfix: postfix = "postfix".asInstanceOf[postfix]
+  @scala.inline
+  def prefix: prefix = "prefix".asInstanceOf[prefix]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
+  @scala.inline
+  def sqrtBACKSLASHBACKSLASHb: sqrtBACKSLASHBACKSLASHb = "sqrt\\b".asInstanceOf[sqrtBACKSLASHBACKSLASHb]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

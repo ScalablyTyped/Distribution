@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^
   extends TopLevel[
       js.Function1[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Parser */ /* parser */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Parser */ /* parser */ js.Any, 
         Template
       ]
     ]

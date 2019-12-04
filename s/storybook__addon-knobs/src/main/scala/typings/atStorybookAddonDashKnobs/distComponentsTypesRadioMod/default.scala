@@ -1,6 +1,6 @@
 package typings.atStorybookAddonDashKnobs.distComponentsTypesRadioMod
 
-import typings.atStorybookAddonDashKnobs.Anon_IsInline
+import typings.atStorybookAddonDashKnobs.Anon_IsInlineKnob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends RadiosType
 @js.native
 object default extends js.Object {
   var defaultProps: RadiosTypeProps = js.native
-  var propTypes: Anon_IsInline = js.native
+  var propTypes: Anon_IsInlineKnob = js.native
   def deserialize(): js.UndefOr[String | Double | Null] = js.native
   def deserialize(value: String): js.UndefOr[String | Double | Null] = js.native
   def deserialize(value: Double): js.UndefOr[String | Double | Null] = js.native

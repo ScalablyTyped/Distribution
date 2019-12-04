@@ -1,8 +1,8 @@
 package typings.antdDashMobile
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antdDashMobile.esTabDashBarMod.Item
-import typings.antdDashMobile.esTabDashBarPropsTypeMod.TabBarItemProps
+import typings.antdDashMobile.libTabDashBarMod.Item
+import typings.antdDashMobile.libTabDashBarPropsTypeMod.TabBarItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

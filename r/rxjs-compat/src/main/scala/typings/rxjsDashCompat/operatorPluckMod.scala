@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +7,9 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/pluck", JSImport.Namespace)
 @js.native
 object operatorPluckMod extends js.Object {
-  def pluck[T, R](`this`: Observable[T], properties: String*): Observable[R] = js.native
+  def pluck[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    properties: String*
+  ): js.Any = js.native
 }
 

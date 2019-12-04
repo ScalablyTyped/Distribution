@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.spreadsheet")
 @js.native
-class spreadsheet () extends baseview {
+class spreadsheet ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$$")
   var $$: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_spreadsheet: WebixCallback = js.native
   var comments: js.Any = js.native
   @JSName("config")
   var config_spreadsheet: spreadsheetConfig = js.native
@@ -98,7 +101,7 @@ class spreadsheet () extends baseview {
   def sortRange(range: String): Unit = js.native
   def sortRange(range: String, dir: String): Unit = js.native
   def splitCell(row: Double, column: Double): Unit = js.native
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: js.Any): typings.webix.webix.ui.baseview = js.native
   def unblockEvent(): Unit = js.native
   def undo(id: String): Unit = js.native
 }

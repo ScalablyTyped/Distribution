@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Select extends js.Object {
   def apply(
-    props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with DOMAttributes[_]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with DOMAttributes[_]
   ): Element = js.native
 }
 

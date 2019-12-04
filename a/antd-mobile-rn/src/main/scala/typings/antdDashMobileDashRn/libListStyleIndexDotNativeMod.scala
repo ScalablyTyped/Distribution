@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object libListStyleIndexDotNativeMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Arrow: Anon_HeightMarginLeft = js.native
+    var Arrow: Anon_HeightMarginLeftMarginTop = js.native
     var ArrowV: Anon_HeightMarginLeftWidth = js.native
     var Body: Anon_BackgroundColorBorderTopColor = js.native
     var BodyBottomLine: Anon_BackgroundColorBorderBottomColor = js.native
@@ -20,9 +20,9 @@ object libListStyleIndexDotNativeMod extends js.Object {
     var Footer: Anon_BackgroundColorColorFontSizePaddingHorizontal = js.native
     var Header: Anon_BackgroundColorColorFontSizePaddingBottom = js.native
     var Item: Anon_AlignItemsBackgroundColorFlexDirection = js.native
-    var Line: Anon_AlignItemsBorderBottomColor = js.native
+    var Line: Anon_AlignItemsBorderBottomColorBorderBottomWidth = js.native
     var Thumb: Anon_HeightMarginRight = js.native
-    var column: Anon_Flex = js.native
+    var column: Anon_FlexFlexDirection = js.native
     var multipleLine: Anon_PaddingVertical = js.native
     var multipleThumb: Anon_HeightWidth = js.native
     var underlayColor: Anon_BackgroundColorString = js.native

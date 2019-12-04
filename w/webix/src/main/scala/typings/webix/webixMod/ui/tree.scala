@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.tree")
 @js.native
-class tree () extends baseview {
+class tree ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$dragHTML")
   var $dragHTML_Original: WebixCallback = js.native
   @JSName("$dropAllow")
@@ -23,6 +24,8 @@ class tree () extends baseview {
   var $fixEditor_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_tree: WebixCallback = js.native
   @JSName("config")
   var config_tree: treeConfig = js.native
   var data: DataStore = js.native
@@ -84,11 +87,11 @@ class tree () extends baseview {
   def close(id: Double): Unit = js.native
   def closeAll(): Unit = js.native
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def count(): Double = js.native
   def customize(obj: js.Any): Unit = js.native
   def detachEvent(id: String): Unit = js.native

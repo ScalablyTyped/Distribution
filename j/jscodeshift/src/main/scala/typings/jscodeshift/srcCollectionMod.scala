@@ -34,7 +34,7 @@ object srcCollectionMod extends js.Object {
           /* paths */ js.Array[ASTPath[N]], 
           /* parent */ Collection[js.Any], 
           /* types */ js.Array[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
           ], 
           Collection[N]
         ] {
@@ -86,7 +86,7 @@ object srcCollectionMod extends js.Object {
       * Returns true if this collection has the type 'type'.
       */
     def isOfType(
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
     ): Boolean = js.native
     /**
       * Executes the callback for every path in the collection and returns a new
@@ -116,7 +116,7 @@ object srcCollectionMod extends js.Object {
           /* paths */ js.Array[ASTPath[N]], 
           js.UndefOr[ASTPath[T] | js.Array[ASTPath[T]] | Null]
         ],
-      `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+      `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
     ): Collection[T] = js.native
     /** Returns an array of AST nodes in this collection. */
     def nodes(): js.Array[N] = js.native
@@ -136,7 +136,7 @@ object srcCollectionMod extends js.Object {
       */
     def toSource(): String = js.native
     def toSource(
-      options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Options */ js.Any
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Options */ js.Any
     ): String = js.native
   }
   
@@ -146,9 +146,9 @@ object srcCollectionMod extends js.Object {
   def registerMethods(methods: js.Object): Unit = js.native
   def registerMethods(
     methods: js.Object,
-    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
+    `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
   ): Unit = js.native
   def setDefaultCollectionType(args: js.Any*): js.Any = js.native
-  type ASTPath[N] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
+  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
 }
 

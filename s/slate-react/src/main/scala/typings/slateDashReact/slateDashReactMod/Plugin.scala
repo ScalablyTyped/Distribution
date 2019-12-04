@@ -1,7 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
 import typings.react.reactMod.DragEvent
@@ -9,6 +8,7 @@ import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FormEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.SyntheticEvent
 import typings.slate.slateMod.Command
 import typings.slate.slateMod.CommandFunc

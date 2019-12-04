@@ -1,8 +1,8 @@
 package typings.atNivoLegends.atNivoLegendsMod
 
 import typings.atNivoLegends.Anon_Color
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

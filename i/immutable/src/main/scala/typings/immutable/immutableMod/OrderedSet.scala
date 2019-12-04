@@ -7,7 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OrderedSet[T] extends Set[T] {
+trait OrderedSet[T]
+  extends typings.immutable.Immutable.Set[T] {
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.
@@ -16,13 +17,13 @@ trait OrderedSet[T] extends Set[T] {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_T_OrderedSet[F /* <: T */](predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean]): OrderedSet[F] = js.native
+  def filter_F_T_OrderedSet[F /* <: T */](predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.OrderedSet[F] = js.native
   @JSName("filter")
   def filter_F_T_OrderedSet[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): OrderedSet[F] = js.native
-  def zip(collections: (Collection[_, _])*): OrderedSet[_] = js.native
+  ): typings.immutable.Immutable.OrderedSet[F] = js.native
+  def zip(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.OrderedSet[_] = js.native
   /**
     * Returns an OrderedSet of the same type "zipped" with the provided
     * collections.
@@ -36,9 +37,12 @@ trait OrderedSet[T] extends Set[T] {
     * // OrderedSet [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
     * ```
     */
-  def zip[U](other: Collection[_, U]): OrderedSet[js.Tuple2[T, U]] = js.native
-  def zip[U, V](other1: Collection[_, U], other2: Collection[_, V]): OrderedSet[js.Tuple3[T, U, V]] = js.native
-  def zipAll(collections: (Collection[_, _])*): OrderedSet[_] = js.native
+  def zip[U](other: typings.immutable.Immutable.Collection[_, U]): typings.immutable.Immutable.OrderedSet[js.Tuple2[T, U]] = js.native
+  def zip[U, V](
+    other1: typings.immutable.Immutable.Collection[_, U],
+    other2: typings.immutable.Immutable.Collection[_, V]
+  ): typings.immutable.Immutable.OrderedSet[js.Tuple3[T, U, V]] = js.native
+  def zipAll(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.OrderedSet[_] = js.native
   /**
     * Returns a OrderedSet of the same type "zipped" with the provided
     * collections.
@@ -56,34 +60,43 @@ trait OrderedSet[T] extends Set[T] {
     * input, some results may contain undefined values. TypeScript cannot
     * account for these without cases (as of v2.5).
     */
-  def zipAll[U](other: Collection[_, U]): OrderedSet[js.Tuple2[T, U]] = js.native
-  def zipAll[U, V](other1: Collection[_, U], other2: Collection[_, V]): OrderedSet[js.Tuple3[T, U, V]] = js.native
-  def zipWith[Z](zipper: js.Function1[/* repeated */ js.Any, Z], collections: (Collection[_, _])*): OrderedSet[Z] = js.native
+  def zipAll[U](other: typings.immutable.Immutable.Collection[_, U]): typings.immutable.Immutable.OrderedSet[js.Tuple2[T, U]] = js.native
+  def zipAll[U, V](
+    other1: typings.immutable.Immutable.Collection[_, U],
+    other2: typings.immutable.Immutable.Collection[_, V]
+  ): typings.immutable.Immutable.OrderedSet[js.Tuple3[T, U, V]] = js.native
+  def zipWith[Z](
+    zipper: js.Function1[/* repeated */ js.Any, Z],
+    collections: (typings.immutable.Immutable.Collection[_, _])*
+  ): typings.immutable.Immutable.OrderedSet[Z] = js.native
   /**
     * Returns an OrderedSet of the same type "zipped" with the provided
     * collections by using a custom `zipper` function.
     *
     * @see Seq.Indexed.zipWith
     */
-  def zipWith[U, Z](zipper: js.Function2[/* value */ T, /* otherValue */ U, Z], otherCollection: Collection[_, U]): OrderedSet[Z] = js.native
+  def zipWith[U, Z](
+    zipper: js.Function2[/* value */ T, /* otherValue */ U, Z],
+    otherCollection: typings.immutable.Immutable.Collection[_, U]
+  ): typings.immutable.Immutable.OrderedSet[Z] = js.native
   def zipWith[U, V, Z](
     zipper: js.Function3[/* value */ T, /* otherValue */ U, /* thirdValue */ V, Z],
-    otherCollection: Collection[_, U],
-    thirdCollection: Collection[_, V]
-  ): OrderedSet[Z] = js.native
+    otherCollection: typings.immutable.Immutable.Collection[_, U],
+    thirdCollection: typings.immutable.Immutable.Collection[_, V]
+  ): typings.immutable.Immutable.OrderedSet[Z] = js.native
 }
 
 @JSImport("immutable", "OrderedSet")
 @js.native
 object OrderedSet extends js.Object {
-  def apply(): OrderedSet[_] = js.native
-  def apply[T](collection: Iterable[T]): OrderedSet[T] = js.native
-  def fromKeys(obj: StringDictionary[js.Any]): OrderedSet[String] = js.native
+  def apply(): typings.immutable.Immutable.OrderedSet[_] = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.OrderedSet[T] = js.native
+  def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.OrderedSet[String] = js.native
   /**
     * `OrderedSet.fromKeys()` creates a new immutable OrderedSet containing
     * the keys from this Collection or JavaScript Object.
     */
-  def fromKeys[T](iter: Collection[T, _]): OrderedSet[T] = js.native
+  def fromKeys[T](iter: typings.immutable.Immutable.Collection[T, _]): typings.immutable.Immutable.OrderedSet[T] = js.native
   /**
     * True if the provided value is an OrderedSet.
     */
@@ -91,6 +104,6 @@ object OrderedSet extends js.Object {
   /**
     * Creates a new OrderedSet containing `values`.
     */
-  def of[T](values: T*): OrderedSet[T] = js.native
+  def of[T](values: T*): typings.immutable.Immutable.OrderedSet[T] = js.native
 }
 

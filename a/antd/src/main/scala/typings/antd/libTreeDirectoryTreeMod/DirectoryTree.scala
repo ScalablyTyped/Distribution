@@ -4,8 +4,8 @@ import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.antd.libTreeTreeMod.AntTreeNode
 import typings.antd.libTreeTreeMod.AntTreeNodeExpandedEvent
 import typings.antd.libTreeTreeMod.AntTreeNodeSelectedEvent
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent

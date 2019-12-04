@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor-helpers"
-version := "v1.0.0-dt-20190329Z-9da593"
+version := "v1.0.0-dt-20190329Z-7a3e13"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

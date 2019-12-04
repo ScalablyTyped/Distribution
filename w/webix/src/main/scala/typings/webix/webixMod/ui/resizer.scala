@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.resizer")
 @js.native
-class resizer () extends baseview {
+class resizer ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_resizer: WebixCallback = js.native
   @JSName("config")
   var config_resizer: resizerConfig = js.native
   @JSName("on_click")

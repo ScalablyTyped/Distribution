@@ -3,6 +3,7 @@ package typings.atIonicCore.distTypesComponentsMod._Global_
 import typings.atIonicCore.atIonicCoreStrings.button
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import typings.std.HTMLSlotElement
@@ -47,7 +48,7 @@ class HTMLIonFabButtonElementCls () extends HTMLIonFabButtonElement {
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
   /* CompleteClass */
-  override var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = js.native
+  override var routerDirection: RouterDirection = js.native
   /**
     * If `true`, the fab button will show when in a fab-list.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-outlook"
-version := "14.0-dt-20190213Z-f23942"
+version := "14.0-dt-20190213Z-84ec1c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

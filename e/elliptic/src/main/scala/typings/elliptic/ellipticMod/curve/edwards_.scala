@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class edwards_ protected () extends base {
   def this(conf: EdwardsConf) = this()
-  var a: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-  var c: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-  var c2: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-  var d: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-  var dd: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+  var a: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+  var c: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+  var c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+  var d: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+  var dd: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
   def point(x: BNInput, y: BNInput): EdwardsPoint = js.native
   def point(x: BNInput, y: BNInput, z: BNInput): EdwardsPoint = js.native
   def point(x: BNInput, y: BNInput, z: BNInput, t: BNInput): EdwardsPoint = js.native

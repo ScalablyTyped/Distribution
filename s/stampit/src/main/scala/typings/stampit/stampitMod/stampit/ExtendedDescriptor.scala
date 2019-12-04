@@ -1,7 +1,7 @@
 package typings.stampit.stampitMod.stampit
 
-import typings.stampit.PropertyMap
 import typings.stampit.stampitMod.MethodMap
+import typings.stampit.stampitMod.PropertyMap
 import typings.stampit.stampitMod.StampSignature
 import typings.std.PropertyDescriptorMap
 import scala.scalajs.js

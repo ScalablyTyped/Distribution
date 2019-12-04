@@ -29,8 +29,8 @@ object atMaterialDashUiLabMod extends js.Object {
   }
   
   val Rating: ComponentType[RatingProps] = js.native
-  val Skeleton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
-  val ToggleButton: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
+  val Skeleton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
+  val ToggleButton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
   val createFilterOptions: CreateFilterOptions = js.native
   def Autocomplete(props: AutocompleteProps): Element = js.native
   def SpeedDial(props: SpeedDialProps): Element = js.native

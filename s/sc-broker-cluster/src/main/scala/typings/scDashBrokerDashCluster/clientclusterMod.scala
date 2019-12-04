@@ -12,7 +12,7 @@ object clientclusterMod extends js.Object {
   @js.native
   class ClientCluster protected () extends EventEmitter {
     def this(clients: js.Array[
-            /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCBrokerClient */ _
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCBrokerClient */ _
           ]) = this()
     def getMapper(): mapperFunction = js.native
     def setMapper(mapper: mapperFunction): Unit = js.native

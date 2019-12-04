@@ -31,7 +31,7 @@ trait IPreviousStateService extends js.Object {
   def go(memoName: String): IPromise[_] = js.native
   def go(
     memoName: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateOptions */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IStateOptions */ js.Any
   ): IPromise[_] = js.native
   /**
     * Memorize a state

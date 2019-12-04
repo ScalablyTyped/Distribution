@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager.libWidgetmanagerMod.DocumentWidgetManager
 
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

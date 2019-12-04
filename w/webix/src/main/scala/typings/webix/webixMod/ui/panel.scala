@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.panel")
 @js.native
-class panel () extends baseview {
+class panel ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_panel: WebixCallback = js.native
   @JSName("config")
   var config_panel: panelConfig = js.native
   @JSName("$resizeEnd")

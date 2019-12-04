@@ -1,7 +1,7 @@
 package typings.immutable.immutableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Collection.Keyed
+import typings.immutable.Immutable.Collection.Keyed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -114,13 +114,13 @@ trait Map[K, V] extends Keyed[K, V] {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_V_Map[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): Map[K, F] = js.native
+  def filter_F_V_Map[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.Map[K, F] = js.native
   @JSName("filter")
   def filter_F_V_Map[F /* <: V */](
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): Map[K, F] = js.native
-  def merge[C](collections: StringDictionary[C]*): Map[K | String, V | C] = js.native
+  ): typings.immutable.Immutable.Map[K, F] = js.native
+  def merge[C](collections: StringDictionary[C]*): typings.immutable.Immutable.Map[K | String, V | C] = js.native
   /**
     * Like `merge()`, but when two Collections conflict, it merges them as well,
     * recursing deeply through the nested data.
@@ -237,7 +237,7 @@ trait Map[K, V] extends Keyed[K, V] {
     * @alias concat
     */
   @JSName("merge")
-  def merge_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): Map[K | KC, V | VC] = js.native
+  def merge_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): typings.immutable.Immutable.Map[K | KC, V | VC] = js.native
   def remove(key: K): this.type = js.native
   def removeAll(keys: Iterable[K]): this.type = js.native
   def removeIn(keyPath: Iterable[_]): this.type = js.native
@@ -556,9 +556,9 @@ trait Map[K, V] extends Keyed[K, V] {
 @JSImport("immutable", "Map")
 @js.native
 object Map extends js.Object {
-  def apply(): Map[_, _] = js.native
-  def apply[V](obj: StringDictionary[V]): Map[String, V] = js.native
-  def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): Map[K, V] = js.native
+  def apply(): typings.immutable.Immutable.Map[_, _] = js.native
+  def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Map[String, V] = js.native
+  def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Map[K, V] = js.native
   /**
     * True if the provided value is a Map
     *
@@ -569,7 +569,7 @@ object Map extends js.Object {
     * Map.isMap(Map()) // true
     * ```
     */
-  def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean = js.native
+  def isMap(maybeMap: js.Any): /* is immutable.Immutable.Map<any, any> */ Boolean = js.native
   /**
     * Creates a new Map from alternating keys and values
     *
@@ -586,6 +586,6 @@ object Map extends js.Object {
     *
     * @deprecated Use Map([ [ 'k', 'v' ] ]) or Map({ k: 'v' })
     */
-  def of(keyValues: js.Any*): Map[_, _] = js.native
+  def of(keyValues: js.Any*): typings.immutable.Immutable.Map[_, _] = js.native
 }
 

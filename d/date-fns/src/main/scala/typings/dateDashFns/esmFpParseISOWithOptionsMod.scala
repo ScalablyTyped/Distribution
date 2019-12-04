@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmFpParseISOWithOptionsMod extends js.Object {
   @js.native
-  object default extends TopLevel[CurriedFn2[Anon_012, String, Date]]
+  object default extends TopLevel[CurriedFn2[Anon_01, String, Date]]
   
 }
 

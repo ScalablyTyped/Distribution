@@ -2,8 +2,8 @@ package typings.atNivoBar.atNivoBarMod
 
 import typings.atNivoBar.Anon_Id
 import typings.atNivoCore.atNivoCoreMod.Theme
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js

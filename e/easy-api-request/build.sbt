@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "easy-api-request"
-version := "0.0-unknown-dt-20190322Z-4c17e2"
+version := "0.0-unknown-dt-20190322Z-fee361"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f180da",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-3d5c10",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-99a672",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d03b6a",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-d92710",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-4d11bc",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-525001",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-12c9b7",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-5c00d3",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-a9a851",
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-07c5ef",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-3ec72b",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-1835e6",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-2de10c",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-55fa07",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-4ff83c",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190909Z-249e4d",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-8d3912")
 publishArtifact in packageDoc := false

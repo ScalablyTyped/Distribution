@@ -1,7 +1,7 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.esColumnManagerMod.default
-import typings.rcDashTable.esTableMod.TableProps
+import typings.rcDashTable.libColumnManagerMod.default
+import typings.rcDashTable.libTableMod.TableProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -4,6 +4,7 @@ import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IManager
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.ISpecModels
 import typings.atJupyterlabServices.libKernelManagerMod.KernelManager.IOptions
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.std.Error
 import scala.scalajs.js
@@ -56,6 +57,11 @@ class KernelManager_ () extends IManager {
     */
   @JSName("runningChanged")
   val runningChanged_KernelManager_ : ISignal[this.type, js.Array[IModel]] = js.native
+  /**
+    * The server settings for the manager.
+    */
+  @JSName("serverSettings")
+  val serverSettings_KernelManager_ : ISettings = js.native
   /**
     * A signal emitted when the specs change.
     */

@@ -54,11 +54,6 @@ class Image protected ()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
   /**
-    * This Game Object's Physics Body.
-    */
-  @JSName("body")
-  var body_Image: Body | StaticBody = js.native
-  /**
     * The color of the body outline when it renders to the debug display.
     */
   /* CompleteClass */

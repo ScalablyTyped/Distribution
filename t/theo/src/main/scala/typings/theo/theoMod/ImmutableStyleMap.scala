@@ -1,6 +1,6 @@
 package typings.theo.theoMod
 
-import typings.immutable.immutableMod.Map
+import typings.immutable.Immutable.Map
 import typings.theo.theoStrings.aliases
 import typings.theo.theoStrings.global
 import typings.theo.theoStrings.imports

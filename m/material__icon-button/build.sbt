@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__icon-button"
-version := "3.2.0-0fbb98"
+version := "3.2.0-ec94aa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -24,7 +24,7 @@ class ec_ protected () extends js.Object {
   var g: js.Any = js.native
   var hash: js.Any = js.native
   var n: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
   ] = js.native
   var nh: js.Any = js.native
   def genKeyPair(): KeyPair = js.native
@@ -32,45 +32,45 @@ class ec_ protected () extends js.Object {
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
     signature: SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
     signature: SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
     signature: Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
     signature: Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
     signature: SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
     signature: SignatureOptions,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
     signature: Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
     signature: Signature,
-    Q: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any,
+    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
   def keyFromPrivate(priv: String): KeyPair = js.native

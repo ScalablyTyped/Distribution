@@ -13,7 +13,7 @@ class Face3 protected ()
     bIndex: Double,
     cIndex: Double,
     faceNormal: typings.wonderDotJs.distEs2015MathVector3Mod.Vector3,
-    vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
   ) = this()
 }
 
@@ -33,7 +33,7 @@ object Face3 extends js.Object {
     bIndex: Double,
     cIndex: Double,
     faceNormal: typings.wonderDotJs.distEs2015MathVector3Mod.Vector3,
-    vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+    vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
   ): typings.wonderDotJs.distEs2015StructureFace3Mod.Face3 = js.native
 }
 

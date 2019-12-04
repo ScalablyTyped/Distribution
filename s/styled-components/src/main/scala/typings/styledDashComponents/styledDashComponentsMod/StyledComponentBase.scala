@@ -185,7 +185,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
+/* Inlined parent styled-components.styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
 trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] extends js.Object {
   @JSName("$$typeof")

@@ -1,19 +1,15 @@
 package typings.reapop.reapopMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reapop.ADD_NOTIFICATION
-import typings.reapop.REMOVE_NOTIFICATION
-import typings.reapop.REMOVE_NOTIFICATIONS
-import typings.reapop.UPDATE_NOTIFICATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Types extends js.Object {
-  var ADD_NOTIFICATION: typings.reapop.ADD_NOTIFICATION
-  var REMOVE_NOTIFICATION: typings.reapop.REMOVE_NOTIFICATION
-  var REMOVE_NOTIFICATIONS: typings.reapop.REMOVE_NOTIFICATIONS
-  var UPDATE_NOTIFICATION: typings.reapop.UPDATE_NOTIFICATION
+  var ADD_NOTIFICATION: typings.reapop.reapopMod.ADD_NOTIFICATION
+  var REMOVE_NOTIFICATION: typings.reapop.reapopMod.REMOVE_NOTIFICATION
+  var REMOVE_NOTIFICATIONS: typings.reapop.reapopMod.REMOVE_NOTIFICATIONS
+  var UPDATE_NOTIFICATION: typings.reapop.reapopMod.UPDATE_NOTIFICATION
 }
 
 object Types {

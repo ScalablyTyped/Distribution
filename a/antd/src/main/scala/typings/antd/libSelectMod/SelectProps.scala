@@ -2,10 +2,10 @@ package typings.antd.libSelectMod
 
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.UIEvent

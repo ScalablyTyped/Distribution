@@ -93,7 +93,7 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any
   ): Unit = js.native
   def send(
     /**
@@ -105,7 +105,7 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */
@@ -156,7 +156,7 @@ class CMClient () extends EventEmitter {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+  body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
     /**
     * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
     */

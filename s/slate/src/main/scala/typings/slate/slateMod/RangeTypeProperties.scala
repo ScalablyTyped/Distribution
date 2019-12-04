@@ -1,7 +1,7 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.Set
 import typings.slate.slateStrings.annotation
 import typings.slate.slateStrings.decoration
 import typings.slate.slateStrings.range

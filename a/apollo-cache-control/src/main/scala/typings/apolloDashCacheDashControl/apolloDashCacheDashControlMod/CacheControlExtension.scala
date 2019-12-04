@@ -20,7 +20,7 @@ class CacheControlExtension[TContext] () extends GraphQLExtension[TContext] {
   @JSName("willSendResponse")
   var willSendResponse_CacheControlExtension: js.UndefOr[js.Function1[/* o */ Anon_GraphqlResponse, Unit]] = js.native
   def addHint(
-    path: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResponsePath */ js.Any,
+    path: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponsePath */ js.Any,
     hint: CacheHint
   ): Unit = js.native
   def computeOverallCachePolicy(): js.UndefOr[Required[CacheHint]] = js.native

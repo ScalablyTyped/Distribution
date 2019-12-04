@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libSessionSessionMod.Session
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,8 +23,6 @@ object listRunning extends js.Object {
     * The promise is fulfilled on a valid response and rejected otherwise.
     */
   def apply(): js.Promise[js.Array[IModel]] = js.native
-  def apply(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[js.Array[IModel]] = js.native
+  def apply(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
 }
 

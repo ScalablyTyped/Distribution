@@ -126,7 +126,7 @@ trait GeocoderOptions extends js.Object {
     * Default value: 'topleft'.
     */
   var position: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any
   ] = js.undefined
   /**
     * Tooltip text to display on the search icon. Set to blank or null to disable.
@@ -158,7 +158,7 @@ object GeocoderOptions {
     place: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
     polygonIcon: Boolean | String = null,
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.Any = null,
+    position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any = null,
     title: String = null,
     url: String = null
   ): GeocoderOptions = {

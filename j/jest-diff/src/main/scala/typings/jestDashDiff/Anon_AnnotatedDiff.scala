@@ -1,11 +1,12 @@
 package typings.jestDashDiff
 
+import typings.jestDashDiff.buildPrintDiffsMod._StringDiffResult
 import typings.jestDashDiff.jestDashDiffNumbers.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_AnnotatedDiff extends js.Object {
+trait Anon_AnnotatedDiff extends _StringDiffResult {
   var annotatedDiff: String
   var isMultiline: `true`
 }

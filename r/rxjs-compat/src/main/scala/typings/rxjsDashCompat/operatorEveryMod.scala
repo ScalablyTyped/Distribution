@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,13 +8,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorEveryMod extends js.Object {
   def every[T](
-    `this`: Observable[T],
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]
-  ): Observable[Boolean] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    predicate: js.Function3[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      Boolean
+    ]
+  ): js.Any = js.native
   def every[T](
-    `this`: Observable[T],
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    predicate: js.Function3[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ /* source */ js.Any, 
+      Boolean
+    ],
     thisArg: js.Any
-  ): Observable[Boolean] = js.native
+  ): js.Any = js.native
 }
 

@@ -4,7 +4,6 @@ import typings.navigation.navigationMod.FluentNavigator
 import typings.navigationDashReact.navigationDashReactStrings.add
 import typings.navigationDashReact.navigationDashReactStrings.replace
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
@@ -16,6 +15,7 @@ import typings.react.reactMod.Key
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

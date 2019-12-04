@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ng-facebook"
-version := "0.0-unknown-dt-20190322Z-8a5f2d"
+version := "0.0-unknown-dt-20190322Z-8a5893"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-af02cb",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-157a0a",
   "org.scalablytyped" %%% "fb" % "0.0-unknown-dt-20190322Z-64511a",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

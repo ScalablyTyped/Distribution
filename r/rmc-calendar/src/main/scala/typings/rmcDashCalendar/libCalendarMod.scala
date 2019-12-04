@@ -52,7 +52,7 @@ object libCalendarMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DefaultHeader: TypeofClassHeaderDefaultProps = js.native
+    var DefaultHeader: TypeofClassHeader = js.native
     var DefaultShortcut: Instantiable0[typings.rmcDashCalendar.libCalendarShortcutPanelMod.default] = js.native
     var defaultProps: PropsType = js.native
   }

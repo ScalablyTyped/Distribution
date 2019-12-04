@@ -20,7 +20,7 @@ object RawHTML extends js.Object {
     * @return Dangerously-rendering element.
     */
   def apply(
-    props: Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
+    props: Anon_Children with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
   ): Element = js.native
 }
 

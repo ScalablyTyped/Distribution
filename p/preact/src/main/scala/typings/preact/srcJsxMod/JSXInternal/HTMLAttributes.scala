@@ -1,7 +1,7 @@
 package typings.preact.srcJsxMod.JSXInternal
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.preact.srcMod.ClassAttributes
+import typings.preact.preactMod.ClassAttributes
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

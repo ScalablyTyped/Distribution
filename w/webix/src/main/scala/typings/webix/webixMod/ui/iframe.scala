@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.iframe")
 @js.native
-class iframe () extends baseview {
+class iframe ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_iframe: WebixCallback = js.native
   @JSName("config")
   var config_iframe: iframeConfig = js.native
   def attachEvent(`type`: iframeEventName, functor: WebixCallback): String | Double = js.native

@@ -1,7 +1,7 @@
 package typings.antd
 
 import typings.antd.antdNumbers.`false`
-import typings.antd.esPaginationPaginationMod.PaginationConfig
+import typings.antd.libPaginationPaginationMod.PaginationConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

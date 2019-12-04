@@ -7,8 +7,8 @@ import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

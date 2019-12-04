@@ -1,0 +1,143 @@
+package typings.atFormatjsIntlDashUtils
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@formatjs/intl-utils/dist/parentLocales", JSImport.Namespace)
+@js.native
+object distParentLocalesMod extends js.Object {
+  @js.native
+  object default extends js.Object {
+    var `en-150`: String = js.native
+    var `en-AG`: String = js.native
+    var `en-AI`: String = js.native
+    var `en-AT`: String = js.native
+    var `en-AU`: String = js.native
+    var `en-BB`: String = js.native
+    var `en-BE`: String = js.native
+    var `en-BM`: String = js.native
+    var `en-BS`: String = js.native
+    var `en-BW`: String = js.native
+    var `en-BZ`: String = js.native
+    var `en-CA`: String = js.native
+    var `en-CC`: String = js.native
+    var `en-CH`: String = js.native
+    var `en-CK`: String = js.native
+    var `en-CM`: String = js.native
+    var `en-CX`: String = js.native
+    var `en-CY`: String = js.native
+    var `en-DE`: String = js.native
+    var `en-DG`: String = js.native
+    var `en-DK`: String = js.native
+    var `en-DM`: String = js.native
+    var `en-ER`: String = js.native
+    var `en-FI`: String = js.native
+    var `en-FJ`: String = js.native
+    var `en-FK`: String = js.native
+    var `en-FM`: String = js.native
+    var `en-GB`: String = js.native
+    var `en-GD`: String = js.native
+    var `en-GG`: String = js.native
+    var `en-GH`: String = js.native
+    var `en-GI`: String = js.native
+    var `en-GM`: String = js.native
+    var `en-GY`: String = js.native
+    var `en-HK`: String = js.native
+    var `en-IE`: String = js.native
+    var `en-IL`: String = js.native
+    var `en-IM`: String = js.native
+    var `en-IN`: String = js.native
+    var `en-IO`: String = js.native
+    var `en-JE`: String = js.native
+    var `en-JM`: String = js.native
+    var `en-KE`: String = js.native
+    var `en-KI`: String = js.native
+    var `en-KN`: String = js.native
+    var `en-KY`: String = js.native
+    var `en-LC`: String = js.native
+    var `en-LR`: String = js.native
+    var `en-LS`: String = js.native
+    var `en-MG`: String = js.native
+    var `en-MO`: String = js.native
+    var `en-MS`: String = js.native
+    var `en-MT`: String = js.native
+    var `en-MU`: String = js.native
+    var `en-MW`: String = js.native
+    var `en-MY`: String = js.native
+    var `en-NA`: String = js.native
+    var `en-NF`: String = js.native
+    var `en-NG`: String = js.native
+    var `en-NL`: String = js.native
+    var `en-NR`: String = js.native
+    var `en-NU`: String = js.native
+    var `en-NZ`: String = js.native
+    var `en-PG`: String = js.native
+    var `en-PH`: String = js.native
+    var `en-PK`: String = js.native
+    var `en-PN`: String = js.native
+    var `en-PW`: String = js.native
+    var `en-RW`: String = js.native
+    var `en-SB`: String = js.native
+    var `en-SC`: String = js.native
+    var `en-SD`: String = js.native
+    var `en-SE`: String = js.native
+    var `en-SG`: String = js.native
+    var `en-SH`: String = js.native
+    var `en-SI`: String = js.native
+    var `en-SL`: String = js.native
+    var `en-SS`: String = js.native
+    var `en-SX`: String = js.native
+    var `en-SZ`: String = js.native
+    var `en-TC`: String = js.native
+    var `en-TK`: String = js.native
+    var `en-TO`: String = js.native
+    var `en-TT`: String = js.native
+    var `en-TV`: String = js.native
+    var `en-TZ`: String = js.native
+    var `en-UG`: String = js.native
+    var `en-VC`: String = js.native
+    var `en-VG`: String = js.native
+    var `en-VU`: String = js.native
+    var `en-WS`: String = js.native
+    var `en-ZA`: String = js.native
+    var `en-ZM`: String = js.native
+    var `en-ZW`: String = js.native
+    var `es-AR`: String = js.native
+    var `es-BO`: String = js.native
+    var `es-BR`: String = js.native
+    var `es-BZ`: String = js.native
+    var `es-CL`: String = js.native
+    var `es-CO`: String = js.native
+    var `es-CR`: String = js.native
+    var `es-CU`: String = js.native
+    var `es-DO`: String = js.native
+    var `es-EC`: String = js.native
+    var `es-GT`: String = js.native
+    var `es-HN`: String = js.native
+    var `es-MX`: String = js.native
+    var `es-NI`: String = js.native
+    var `es-PA`: String = js.native
+    var `es-PE`: String = js.native
+    var `es-PR`: String = js.native
+    var `es-PY`: String = js.native
+    var `es-SV`: String = js.native
+    var `es-US`: String = js.native
+    var `es-UY`: String = js.native
+    var `es-VE`: String = js.native
+    var `pt-AO`: String = js.native
+    var `pt-CH`: String = js.native
+    var `pt-CV`: String = js.native
+    var `pt-FR`: String = js.native
+    var `pt-GQ`: String = js.native
+    var `pt-GW`: String = js.native
+    var `pt-LU`: String = js.native
+    var `pt-MO`: String = js.native
+    var `pt-MZ`: String = js.native
+    var `pt-ST`: String = js.native
+    var `pt-TL`: String = js.native
+    var `zh-Hant-MO`: String = js.native
+  }
+  
+}
+

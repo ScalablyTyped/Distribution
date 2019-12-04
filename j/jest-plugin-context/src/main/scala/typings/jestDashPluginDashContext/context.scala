@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object context
   extends TopLevel[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.Describe */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.Describe */ js.Any
     ]
 

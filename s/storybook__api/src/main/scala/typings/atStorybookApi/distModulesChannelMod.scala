@@ -1,5 +1,6 @@
 package typings.atStorybookApi
 
+import typings.atStorybookApi.atStorybookApiMod.Module
 import typings.atStorybookChannels.atStorybookChannelsMod.Channel
 import typings.atStorybookChannels.atStorybookChannelsMod.Listener
 import scala.scalajs.js
@@ -20,8 +21,6 @@ object distModulesChannelMod extends js.Object {
     def once(`type`: String, cb: Listener): Unit = js.native
   }
   
-  def default(
-    hasProvider: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Module */ js.Any
-  ): Anon_ApiSubAPI = js.native
+  def default(hasProvider: Module): Anon_ApiSubAPI = js.native
 }
 

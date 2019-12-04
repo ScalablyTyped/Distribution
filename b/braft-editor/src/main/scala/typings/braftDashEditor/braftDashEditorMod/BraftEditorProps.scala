@@ -14,7 +14,7 @@ import typings.braftDashEditor.braftDashEditorStrings.right
 import typings.braftDashEditor.braftDashEditorStrings.ru
 import typings.braftDashEditor.braftDashEditorStrings.tr
 import typings.braftDashEditor.braftDashEditorStrings.zh
-import typings.immutable.immutableMod.Map
+import typings.immutable.Immutable.Map
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
@@ -37,7 +37,7 @@ trait BraftEditorProps extends js.Object {
   var defaultLinkTarget: js.UndefOr[String] = js.undefined
   var defaultValue: js.UndefOr[EditorState] = js.undefined
   var draftProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any
   ] = js.undefined
   var editorId: js.UndefOr[String] = js.undefined
   var emojis: js.UndefOr[js.Array[String]] = js.undefined
@@ -96,7 +96,7 @@ object BraftEditorProps {
     converts: js.Object = null,
     defaultLinkTarget: String = null,
     defaultValue: EditorState = null,
-    draftProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any = null,
+    draftProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any = null,
     editorId: String = null,
     emojis: js.Array[String] = null,
     excludeControls: js.Array[BuiltInControlType] = null,

@@ -14,7 +14,7 @@ class PresetCurve_ protected () extends js.Object {
   var hash: js.Any = js.native
    // ?
   var n: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Null
   ] = js.native
   var `type`: String = js.native
 }

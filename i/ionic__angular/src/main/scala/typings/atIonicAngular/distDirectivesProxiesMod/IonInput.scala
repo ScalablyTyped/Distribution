@@ -4,6 +4,7 @@ import typings.atAngularCore.atAngularCoreMod.ChangeDetectorRef
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.EventEmitter
 import typings.atAngularCore.atAngularCoreMod.NgZone
+import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.atIonicCoreStrings.off
 import typings.atIonicCore.atIonicCoreStrings.on
 import typings.std.CustomEvent
@@ -82,7 +83,7 @@ class IonInput protected ()
     * The type of control to display. The default type is text.
     */
   /* CompleteClass */
-  override var `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextFieldTypes */ js.Any = js.native
+  override var `type`: TextFieldTypes = js.native
   var z: NgZone = js.native
   /**
     * Returns the native `<input>` element used under the hood.

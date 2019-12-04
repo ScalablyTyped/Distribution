@@ -28,11 +28,6 @@ trait AjaxSettings
     * Data property or manipulation method for table data. Since: 1.10
     */
   var dataSrc: js.UndefOr[String | (js.Function1[/* data */ js.Any, js.Array[_]])] = js.undefined
-  /**
-    * Add or modify data submitted to the server upon an Ajax request. Since: 1.10
-    */
-  @JSName("data")
-  var data_AjaxSettings: js.UndefOr[js.Object | FunctionAjaxData] = js.undefined
 }
 
 object AjaxSettings {
@@ -48,7 +43,7 @@ object AjaxSettings {
     context: js.Any = null,
     converters: PlainObject[(js.Function1[/* value */ _, _]) | `true`] = null,
     crossDomain: js.UndefOr[Boolean] = js.undefined,
-    data: js.Object | FunctionAjaxData = null,
+    data: PlainObject[_] | String = null,
     dataFilter: (/* data */ String, /* type */ String) => _ = null,
     dataSrc: String | (js.Function1[/* data */ js.Any, js.Array[_]]) = null,
     dataType: xml | html | script | json | jsonp | text | String = null,

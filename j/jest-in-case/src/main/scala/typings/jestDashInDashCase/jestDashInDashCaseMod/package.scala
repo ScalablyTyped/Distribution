@@ -10,7 +10,7 @@ package object jestDashInDashCaseMod {
   type TestCases[Opts] = js.Array[Opts] | StringDictionary[Opts]
   type Tester[Opts] = js.Function2[
     /* opts */ Opts, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.DoneCallback */ /* done */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.DoneCallback */ /* done */ js.Any, 
     js.Any
   ]
 }

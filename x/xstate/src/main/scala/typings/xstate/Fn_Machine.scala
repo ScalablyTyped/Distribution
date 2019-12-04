@@ -1,11 +1,11 @@
 package typings.xstate
 
 import typings.std.Partial
-import typings.xstate.esInterpreterMod.Interpreter
-import typings.xstate.esTypesMod.EventObject
-import typings.xstate.esTypesMod.InterpreterOptions
-import typings.xstate.esTypesMod.StateMachine
-import typings.xstate.esTypesMod.StateSchema
+import typings.xstate.libInterpreterMod.Interpreter
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.InterpreterOptions
+import typings.xstate.libTypesMod.StateMachine
+import typings.xstate.libTypesMod.StateSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

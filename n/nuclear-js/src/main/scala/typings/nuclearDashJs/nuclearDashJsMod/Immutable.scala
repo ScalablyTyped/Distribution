@@ -1,12 +1,12 @@
 package typings.nuclearDashJs.nuclearDashJsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Collection
-import typings.immutable.immutableMod.Collection.Keyed
-import typings.immutable.immutableMod.Collection.Set
-import typings.immutable.immutableMod.Record
-import typings.immutable.immutableMod.Record.Factory
-import typings.immutable.immutableMod.Seq.Indexed
+import typings.immutable.Immutable.Collection
+import typings.immutable.Immutable.Collection.Keyed
+import typings.immutable.Immutable.Collection.Set
+import typings.immutable.Immutable.Record
+import typings.immutable.Immutable.Record.Factory
+import typings.immutable.Immutable.Seq.Indexed
 import typings.std.Iterable
 import typings.std.Partial
 import scala.scalajs.js
@@ -27,7 +27,7 @@ object Immutable extends js.Object {
     jsValue: js.Any,
     reviver: js.Function3[
       /* key */ String | Double, 
-      /* sequence */ (Keyed[String, _]) | typings.immutable.immutableMod.Collection.Indexed[_], 
+      /* sequence */ (Keyed[String, _]) | typings.immutable.Immutable.Collection.Indexed[_], 
       /* path */ js.UndefOr[js.Array[String | Double]], 
       _
     ]
@@ -46,20 +46,20 @@ object Immutable extends js.Object {
   def hash(value: js.Any): Double = js.native
   def is(first: js.Any, second: js.Any): Boolean = js.native
   def isAssociative(maybeAssociative: js.Any): Boolean = js.native
-  def isCollection(maybeCollection: js.Any): /* is immutable.immutable.Collection<any, any> */ Boolean = js.native
-  def isImmutable(maybeImmutable: js.Any): /* is immutable.immutable.Collection<any, any> */ Boolean = js.native
-  def isIndexed(maybeIndexed: js.Any): /* is immutable.immutable.Collection.Indexed<any> */ Boolean = js.native
-  def isKeyed(maybeKeyed: js.Any): /* is immutable.immutable.Collection.Keyed<any, any> */ Boolean = js.native
-  def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean = js.native
-  def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean = js.native
+  def isCollection(maybeCollection: js.Any): /* is immutable.Immutable.Collection<any, any> */ Boolean = js.native
+  def isImmutable(maybeImmutable: js.Any): /* is immutable.Immutable.Collection<any, any> */ Boolean = js.native
+  def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
+  def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
+  def isList(maybeList: js.Any): /* is immutable.Immutable.List<any> */ Boolean = js.native
+  def isMap(maybeMap: js.Any): /* is immutable.Immutable.Map<any, any> */ Boolean = js.native
   def isOrdered(maybeOrdered: js.Any): Boolean = js.native
-  def isOrderedMap(maybeOrderedMap: js.Any): /* is immutable.immutable.OrderedMap<any, any> */ Boolean = js.native
-  def isOrderedSet(maybeOrderedSet: js.Any): /* is immutable.immutable.OrderedSet<any> */ Boolean = js.native
-  def isRecord(maybeRecord: js.Any): /* is immutable.immutable.Record<any> */ Boolean = js.native
+  def isOrderedMap(maybeOrderedMap: js.Any): /* is immutable.Immutable.OrderedMap<any, any> */ Boolean = js.native
+  def isOrderedSet(maybeOrderedSet: js.Any): /* is immutable.Immutable.OrderedSet<any> */ Boolean = js.native
+  def isRecord(maybeRecord: js.Any): /* is immutable.Immutable.Record<any> */ Boolean = js.native
   def isSeq(maybeSeq: js.Any): Boolean = js.native
-  def isSet(maybeSet: js.Any): /* is immutable.immutable.Set<any> */ Boolean = js.native
-  def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ Boolean = js.native
-  def isValueObject(maybeValue: js.Any): /* is immutable.immutable.ValueObject */ Boolean = js.native
+  def isSet(maybeSet: js.Any): /* is immutable.Immutable.Set<any> */ Boolean = js.native
+  def isStack(maybeStack: js.Any): /* is immutable.Immutable.Stack<any> */ Boolean = js.native
+  def isValueObject(maybeValue: js.Any): /* is immutable.Immutable.ValueObject */ Boolean = js.native
   def merge[C](collection: C, collections: ((Iterable[_ | (js.Tuple2[_, _])]) | StringDictionary[js.Any])*): C = js.native
   def mergeDeep[C](collection: C, collections: ((Iterable[_ | (js.Tuple2[_, _])]) | StringDictionary[js.Any])*): C = js.native
   def mergeDeepWith[C](
@@ -156,8 +156,8 @@ object Immutable extends js.Object {
   def update_VC_StringDictionaryVK_String_StringDictionary[V, C /* <: StringDictionary[V] */, K /* <: String */](collection: C, key: K, updater: js.Function1[/* value */ V, V]): StringDictionary[V] = js.native
   @js.native
   object Collection extends js.Object {
-    def apply[I /* <: typings.immutable.immutableMod.Collection[_, _] */](collection: I): I = js.native
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Indexed[T] = js.native
+    def apply[I /* <: typings.immutable.Immutable.Collection[_, _] */](collection: I): I = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
     def apply[V](obj: StringDictionary[V]): Keyed[String, V] = js.native
     /**
       * @deprecated use `const { isAssociative } = require('immutable')`
@@ -166,37 +166,37 @@ object Immutable extends js.Object {
     /**
       * @deprecated use `const { isIndexed } = require('immutable')`
       */
-    def isIndexed(maybeIndexed: js.Any): /* is immutable.immutable.Collection.Indexed<any> */ Boolean = js.native
+    def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
     /**
       * @deprecated use `const { isKeyed } = require('immutable')`
       */
-    def isKeyed(maybeKeyed: js.Any): /* is immutable.immutable.Collection.Keyed<any, any> */ Boolean = js.native
+    def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
     /**
       * @deprecated use `const { isOrdered } = require('immutable')`
       */
     def isOrdered(maybeOrdered: js.Any): Boolean = js.native
     @js.native
     object Indexed extends js.Object {
-      def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Indexed[T] = js.native
+      def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
     }
     
     @js.native
     object Keyed extends js.Object {
-      def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Collection.Keyed[String, V] = js.native
-      def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.Collection.Keyed[K, V] = js.native
+      def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
+      def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Collection.Keyed[K, V] = js.native
     }
     
     @js.native
     object Set extends js.Object {
-      def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Set[T] = js.native
+      def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Set[T] = js.native
     }
     
   }
   
   @js.native
   object List extends js.Object {
-    def apply(): typings.immutable.immutableMod.List[_] = js.native
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.List[T] = js.native
+    def apply(): typings.immutable.Immutable.List[_] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.List[T] = js.native
     /**
       * True if the provided value is a List
       *
@@ -207,7 +207,7 @@ object Immutable extends js.Object {
       * List.isList(List()); // true
       * ```
       */
-    def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean = js.native
+    def isList(maybeList: js.Any): /* is immutable.Immutable.List<any> */ Boolean = js.native
     /**
       * Creates a new List containing `values`.
       *
@@ -227,14 +227,14 @@ object Immutable extends js.Object {
       * // List [ { x: 1 }, 2, [ 3 ], 4 ]
       * ```
       */
-    def of[T](values: T*): typings.immutable.immutableMod.List[T] = js.native
+    def of[T](values: T*): typings.immutable.Immutable.List[T] = js.native
   }
   
   @js.native
   object Map extends js.Object {
-    def apply(): typings.immutable.immutableMod.Map[_, _] = js.native
-    def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Map[String, V] = js.native
-    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.Map[K, V] = js.native
+    def apply(): typings.immutable.Immutable.Map[_, _] = js.native
+    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Map[String, V] = js.native
+    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Map[K, V] = js.native
     /**
       * True if the provided value is a Map
       *
@@ -245,7 +245,7 @@ object Immutable extends js.Object {
       * Map.isMap(Map()) // true
       * ```
       */
-    def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean = js.native
+    def isMap(maybeMap: js.Any): /* is immutable.Immutable.Map<any, any> */ Boolean = js.native
     /**
       * Creates a new Map from alternating keys and values
       *
@@ -262,30 +262,30 @@ object Immutable extends js.Object {
       *
       * @deprecated Use Map([ [ 'k', 'v' ] ]) or Map({ k: 'v' })
       */
-    def of(keyValues: js.Any*): typings.immutable.immutableMod.Map[_, _] = js.native
+    def of(keyValues: js.Any*): typings.immutable.Immutable.Map[_, _] = js.native
   }
   
   @js.native
   object OrderedMap extends js.Object {
-    def apply(): typings.immutable.immutableMod.OrderedMap[_, _] = js.native
-    def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.OrderedMap[String, V] = js.native
-    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.OrderedMap[K, V] = js.native
+    def apply(): typings.immutable.Immutable.OrderedMap[_, _] = js.native
+    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.OrderedMap[String, V] = js.native
+    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.OrderedMap[K, V] = js.native
     /**
       * True if the provided value is an OrderedMap.
       */
-    def isOrderedMap(maybeOrderedMap: js.Any): /* is immutable.immutable.OrderedMap<any, any> */ Boolean = js.native
+    def isOrderedMap(maybeOrderedMap: js.Any): /* is immutable.Immutable.OrderedMap<any, any> */ Boolean = js.native
   }
   
   @js.native
   object OrderedSet extends js.Object {
-    def apply(): typings.immutable.immutableMod.OrderedSet[_] = js.native
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.OrderedSet[T] = js.native
-    def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.immutableMod.OrderedSet[String] = js.native
+    def apply(): typings.immutable.Immutable.OrderedSet[_] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.OrderedSet[T] = js.native
+    def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.OrderedSet[String] = js.native
     /**
       * `OrderedSet.fromKeys()` creates a new immutable OrderedSet containing
       * the keys from this Collection or JavaScript Object.
       */
-    def fromKeys[T](iter: Collection[T, _]): typings.immutable.immutableMod.OrderedSet[T] = js.native
+    def fromKeys[T](iter: Collection[T, _]): typings.immutable.Immutable.OrderedSet[T] = js.native
     /**
       * True if the provided value is an OrderedSet.
       */
@@ -293,33 +293,33 @@ object Immutable extends js.Object {
     /**
       * Creates a new OrderedSet containing `values`.
       */
-    def of[T](values: T*): typings.immutable.immutableMod.OrderedSet[T] = js.native
+    def of[T](values: T*): typings.immutable.Immutable.OrderedSet[T] = js.native
   }
   
   @js.native
   object Record extends js.Object {
     def apply[TProps](defaultValues: TProps): Factory[TProps] = js.native
     def apply[TProps](defaultValues: TProps, name: String): Factory[TProps] = js.native
-    def getDescriptiveName(record: typings.immutable.immutableMod.Record[_]): String = js.native
-    def isRecord(maybeRecord: js.Any): /* is immutable.immutable.Record<any> */ Boolean = js.native
+    def getDescriptiveName(record: typings.immutable.Immutable.Record[_]): String = js.native
+    def isRecord(maybeRecord: js.Any): /* is immutable.Immutable.Record<any> */ Boolean = js.native
     @js.native
     object Factory extends js.Object {
-      def apply[TProps /* <: js.Object */](): typings.immutable.immutableMod.Record[TProps] with TProps = js.native
-      def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): typings.immutable.immutableMod.Record[TProps] with TProps = js.native
-      def apply[TProps /* <: js.Object */](values: Partial[TProps]): typings.immutable.immutableMod.Record[TProps] with TProps = js.native
+      def apply[TProps /* <: js.Object */](): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+      def apply[TProps /* <: js.Object */](values: Iterable[js.Tuple2[String, _]]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
+      def apply[TProps /* <: js.Object */](values: Partial[TProps]): typings.immutable.Immutable.Record[TProps] with TProps = js.native
     }
     
   }
   
   @js.native
   object Seq extends js.Object {
-    def apply(): typings.immutable.immutableMod.Seq[_, _] = js.native
-    def apply[T](collection: typings.immutable.immutableMod.Collection.Indexed[T]): Indexed[T] = js.native
-    def apply[T](collection: Set[T]): typings.immutable.immutableMod.Seq.Set[T] = js.native
+    def apply(): typings.immutable.Immutable.Seq[_, _] = js.native
+    def apply[T](collection: typings.immutable.Immutable.Collection.Indexed[T]): Indexed[T] = js.native
+    def apply[T](collection: Set[T]): typings.immutable.Immutable.Seq.Set[T] = js.native
     def apply[T](collection: Iterable[T]): Indexed[T] = js.native
-    def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Seq.Keyed[String, V] = js.native
-    def apply[S /* <: typings.immutable.immutableMod.Seq[_, _] */](seq: S): S = js.native
-    def apply[K, V](collection: Keyed[K, V]): typings.immutable.immutableMod.Seq.Keyed[K, V] = js.native
+    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Seq.Keyed[String, V] = js.native
+    def apply[S /* <: typings.immutable.Immutable.Seq[_, _] */](seq: S): S = js.native
+    def apply[K, V](collection: Keyed[K, V]): typings.immutable.Immutable.Seq.Keyed[K, V] = js.native
     /**
       * True if `maybeSeq` is a Seq, it is not backed by a concrete
       * structure such as Map, List, or Set.
@@ -330,43 +330,43 @@ object Immutable extends js.Object {
       */
     @js.native
     object Indexed extends js.Object {
-      def apply(): typings.immutable.immutableMod.Seq.Indexed[_] = js.native
-      def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Seq.Indexed[T] = js.native
+      def apply(): typings.immutable.Immutable.Seq.Indexed[_] = js.native
+      def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Seq.Indexed[T] = js.native
       /**
         * Provides an Seq.Indexed of the values provided.
         */
-      def of[T](values: T*): typings.immutable.immutableMod.Seq.Indexed[T] = js.native
+      def of[T](values: T*): typings.immutable.Immutable.Seq.Indexed[T] = js.native
     }
     
     @js.native
     object Keyed extends js.Object {
-      def apply(): typings.immutable.immutableMod.Seq.Keyed[_, _] = js.native
-      def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Seq.Keyed[String, V] = js.native
-      def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.Seq.Keyed[K, V] = js.native
+      def apply(): typings.immutable.Immutable.Seq.Keyed[_, _] = js.native
+      def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Seq.Keyed[String, V] = js.native
+      def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Seq.Keyed[K, V] = js.native
     }
     
     @js.native
     object Set extends js.Object {
-      def apply(): typings.immutable.immutableMod.Seq.Set[_] = js.native
-      def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Seq.Set[T] = js.native
+      def apply(): typings.immutable.Immutable.Seq.Set[_] = js.native
+      def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Seq.Set[T] = js.native
       /**
         * Returns a Seq.Set of the provided values
         */
-      def of[T](values: T*): typings.immutable.immutableMod.Seq.Set[T] = js.native
+      def of[T](values: T*): typings.immutable.Immutable.Seq.Set[T] = js.native
     }
     
   }
   
   @js.native
   object Set extends js.Object {
-    def apply(): typings.immutable.immutableMod.Set[_] = js.native
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Set[T] = js.native
-    def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.immutableMod.Set[String] = js.native
+    def apply(): typings.immutable.Immutable.Set[_] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Set[T] = js.native
+    def fromKeys(obj: StringDictionary[js.Any]): typings.immutable.Immutable.Set[String] = js.native
     /**
       * `Set.fromKeys()` creates a new immutable Set containing the keys from
       * this Collection or JavaScript Object.
       */
-    def fromKeys[T](iter: Collection[T, _]): typings.immutable.immutableMod.Set[T] = js.native
+    def fromKeys[T](iter: Collection[T, _]): typings.immutable.Immutable.Set[T] = js.native
     /**
       * `Set.intersect()` creates a new immutable Set that is the intersection of
       * a collection of other sets.
@@ -380,15 +380,15 @@ object Immutable extends js.Object {
       * // Set [ "a", "c"" ]
       * ```
       */
-    def intersect[T](sets: Iterable[Iterable[T]]): typings.immutable.immutableMod.Set[T] = js.native
+    def intersect[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set[T] = js.native
     /**
       * True if the provided value is a Set
       */
-    def isSet(maybeSet: js.Any): /* is immutable.immutable.Set<any> */ Boolean = js.native
+    def isSet(maybeSet: js.Any): /* is immutable.Immutable.Set<any> */ Boolean = js.native
     /**
       * Creates a new Set containing `values`.
       */
-    def of[T](values: T*): typings.immutable.immutableMod.Set[T] = js.native
+    def of[T](values: T*): typings.immutable.Immutable.Set[T] = js.native
     /**
       * `Set.union()` creates a new immutable Set that is the union of a
       * collection of other sets.
@@ -402,21 +402,21 @@ object Immutable extends js.Object {
       * // Set [ "a", "b", "c", "t"" ]
       * ```
       */
-    def union[T](sets: Iterable[Iterable[T]]): typings.immutable.immutableMod.Set[T] = js.native
+    def union[T](sets: Iterable[Iterable[T]]): typings.immutable.Immutable.Set[T] = js.native
   }
   
   @js.native
   object Stack extends js.Object {
-    def apply(): typings.immutable.immutableMod.Stack[_] = js.native
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Stack[T] = js.native
+    def apply(): typings.immutable.Immutable.Stack[_] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Stack[T] = js.native
     /**
       * True if the provided value is a Stack
       */
-    def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ Boolean = js.native
+    def isStack(maybeStack: js.Any): /* is immutable.Immutable.Stack<any> */ Boolean = js.native
     /**
       * Creates a new Stack containing `values`.
       */
-    def of[T](values: T*): typings.immutable.immutableMod.Stack[T] = js.native
+    def of[T](values: T*): typings.immutable.Immutable.Stack[T] = js.native
   }
   
 }

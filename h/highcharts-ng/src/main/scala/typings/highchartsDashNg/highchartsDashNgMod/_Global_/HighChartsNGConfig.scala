@@ -12,7 +12,7 @@ trait HighChartsNGConfig extends js.Object {
   //function (optional) - setup some logic for the chart
   var func: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any, 
       Unit
     ]
   ] = js.undefined
@@ -26,7 +26,7 @@ trait HighChartsNGConfig extends js.Object {
   //Series object (optional) - a list of series using normal highcharts series options.
   var series: js.UndefOr[
     js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
     ]
   ] = js.undefined
   //size (optional) if left out the chart will default to size of the div or something sensible.
@@ -44,11 +44,11 @@ object HighChartsNGConfig {
   @scala.inline
   def apply(
     options: Options,
-    func: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit = null,
+    func: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit = null,
     loading: Boolean | String = null,
     noData: String = null,
     series: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
     ] = null,
     size: Anon_Height = null,
     title: Anon_Text = null,

@@ -1,6 +1,5 @@
 package typings.tslint
 
-import typings.tslint.libFormattersCodeFrameFormatterMod.Formatter
 import typings.tslint.libLanguageFormatterFormatterMod.IFormatterMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,39 +13,40 @@ object libFormattersMod extends js.Object {
     extends typings.tslint.libLanguageFormatterAbstractFormatterMod.AbstractFormatter
   
   @js.native
-  class CodeFrameFormatter () extends Formatter
+  class CodeFrameFormatter ()
+    extends typings.tslint.libFormattersIndexMod.CodeFrameFormatter
   
   @js.native
   class FileslistFormatter ()
-    extends typings.tslint.libFormattersFileslistFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.FileslistFormatter
   
   @js.native
   class JUnitFormatter ()
-    extends typings.tslint.libFormattersJunitFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.JUnitFormatter
   
   @js.native
   class JsonFormatter ()
-    extends typings.tslint.libFormattersJsonFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.JsonFormatter
   
   @js.native
   class PmdFormatter ()
-    extends typings.tslint.libFormattersPmdFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.PmdFormatter
   
   @js.native
   class ProseFormatter ()
-    extends typings.tslint.libFormattersProseFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.ProseFormatter
   
   @js.native
   class StylishFormatter ()
-    extends typings.tslint.libFormattersStylishFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.StylishFormatter
   
   @js.native
   class TapFormatter ()
-    extends typings.tslint.libFormattersTapFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.TapFormatter
   
   @js.native
   class VerboseFormatter ()
-    extends typings.tslint.libFormattersVerboseFormatterMod.Formatter
+    extends typings.tslint.libFormattersIndexMod.VerboseFormatter
   
   /* static members */
   @js.native

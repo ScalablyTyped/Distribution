@@ -54,11 +54,11 @@ object distEsmSrcNlpTotextMod extends js.Object {
   
   @js.native
   class default protected () extends ToText {
-    def this(rrule: typings.rrule.distEsmSrcMod.default) = this()
-    def this(rrule: typings.rrule.distEsmSrcMod.default, gettext: GetText) = this()
-    def this(rrule: typings.rrule.distEsmSrcMod.default, gettext: GetText, language: Language) = this()
+    def this(rrule: typings.rrule.rruleMod.default) = this()
+    def this(rrule: typings.rrule.rruleMod.default, gettext: GetText) = this()
+    def this(rrule: typings.rrule.rruleMod.default, gettext: GetText, language: Language) = this()
     def this(
-      rrule: typings.rrule.distEsmSrcMod.default,
+      rrule: typings.rrule.rruleMod.default,
       gettext: GetText,
       language: Language,
       dateFormatter: DateFormatter
@@ -74,7 +74,7 @@ object distEsmSrcNlpTotextMod extends js.Object {
       * @param {RRule} rrule
       * @return {Boolean}
       */
-    def isFullyConvertible(rrule: typings.rrule.distEsmSrcMod.default): Boolean = js.native
+    def isFullyConvertible(rrule: typings.rrule.rruleMod.default): Boolean = js.native
   }
   
   type DateFormatter = js.Function3[/* year */ Double, /* month */ String, /* day */ Double, String]

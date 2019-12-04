@@ -3,6 +3,7 @@ package typings.atStorybookAddons.distHooksMod
 import typings.atStorybookAddons.atStorybookAddonsStrings.MOUNT
 import typings.atStorybookAddons.atStorybookAddonsStrings.NONE
 import typings.atStorybookAddons.atStorybookAddonsStrings.UPDATE
+import typings.atStorybookAddons.distTypesMod.StoryContext
 import typings.std.Set
 import typings.std.WeakMap
 import scala.scalajs.js
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@storybook/addons/dist/hooks", "HooksContext")
 @js.native
 class HooksContext () extends js.Object {
-  var currentContext: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StoryContext */ js.Any) | Null = js.native
+  var currentContext: StoryContext | Null = js.native
   var currentDecoratorName: String | Null = js.native
   var currentEffects: js.Array[Effect] = js.native
   var currentHooks: js.Array[Hook] = js.native

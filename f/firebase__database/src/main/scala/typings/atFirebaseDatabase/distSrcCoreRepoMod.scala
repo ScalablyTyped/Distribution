@@ -2,6 +2,7 @@ package typings.atFirebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseDatabase.atFirebaseDatabaseMod.DataSnapshot
 import typings.atFirebaseDatabase.distSrcApiDatabaseMod.Database
 import typings.atFirebaseDatabase.distSrcApiQueryMod.Query
 import typings.atFirebaseDatabase.distSrcCorePersistentConnectionMod.PersistentConnection
@@ -126,6 +127,18 @@ object distSrcCoreRepoMod extends js.Object {
       newVal: js.Any,
       newPriority: Null,
       onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+    ): Unit = js.native
+    def startTransaction(
+      path: Path,
+      transactionUpdate: js.Function1[/* a */ js.Any, Unit],
+      onComplete: js.Function3[/* a */ Error, /* b */ Boolean, /* c */ DataSnapshot, Unit],
+      applyLocally: Boolean
+    ): Unit = js.native
+    def startTransaction(
+      path: Path,
+      transactionUpdate: js.Function1[/* a */ js.Any, Unit],
+      onComplete: Null,
+      applyLocally: Boolean
     ): Unit = js.native
     def stats(): Unit = js.native
     def stats(showDelta: Boolean): Unit = js.native

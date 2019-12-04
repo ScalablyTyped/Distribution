@@ -115,2307 +115,4196 @@ object webixStrings {
   @js.native
   sealed trait onAfterAdd
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onAfterAreaAdd
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterAreaRemove
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterBack extends filemanagerEventName
+  sealed trait onAfterBack
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterBlockSelect
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterClose
     extends organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterCollapse
     extends accordionEventName
+       with typings.webix.webix.ui.accordionEventName
        with headerlayoutEventName
+       with typings.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onAfterColumnDrop
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterColumnDropOrder
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterColumnHide
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterColumnShow
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterConditionSet extends spreadsheetEventName
+  sealed trait onAfterConditionSet
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onAfterContextMenu
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterCopy extends kanbanEventName
+  sealed trait onAfterCopy
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onAfterCreateFolder extends filemanagerEventName
+  sealed trait onAfterCreateFolder
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterCursorChange
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
   
   @js.native
   sealed trait onAfterDateSelect
     extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
   
   @js.native
   sealed trait onAfterDelete
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterDeleteFile extends filemanagerEventName
+  sealed trait onAfterDeleteFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterDrop
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterDynParse extends filemanagerEventName
+  sealed trait onAfterDynParse
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterEditFile extends filemanagerEventName
+  sealed trait onAfterEditFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterEditStart
     extends commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onAfterEditStop
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterEditorShow extends kanbanEventName
+  sealed trait onAfterEditorShow
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onAfterExpand
     extends accordionEventName
+       with typings.webix.webix.ui.accordionEventName
        with headerlayoutEventName
+       with typings.webix.webix.ui.headerlayoutEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onAfterFileAdd extends uploaderEventName
+  sealed trait onAfterFileAdd
+    extends uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onAfterFileUpload extends filemanagerEventName
+  sealed trait onAfterFileUpload
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterFilter
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterHideTree extends filemanagerEventName
+  sealed trait onAfterHideTree
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterLevelDown extends filemanagerEventName
+  sealed trait onAfterLevelDown
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterLevelUp extends filemanagerEventName
+  sealed trait onAfterLevelUp
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterLoad
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with DataRecordEventName
+       with typings.webix.webix.DataRecordEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterMarkCopy extends filemanagerEventName
+  sealed trait onAfterMarkCopy
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterMarkCut extends filemanagerEventName
+  sealed trait onAfterMarkCut
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterMenu extends filemanagerEventName
+  sealed trait onAfterMenu
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterModeChange extends filemanagerEventName
+  sealed trait onAfterModeChange
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterMonthChange extends calendarEventName
+  sealed trait onAfterMonthChange
+    extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
   
   @js.native
   sealed trait onAfterOpen
     extends organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterPageChange extends pagerEventName
+  sealed trait onAfterPageChange
+    extends pagerEventName
+       with typings.webix.webix.ui.pagerEventName
   
   @js.native
-  sealed trait onAfterPasteFile extends filemanagerEventName
+  sealed trait onAfterPasteFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterPathClick extends filemanagerEventName
+  sealed trait onAfterPathClick
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onAfterPortletMove extends portletEventName
+  sealed trait onAfterPortletMove
+    extends portletEventName
+       with typings.webix.webix.ui.portletEventName
   
   @js.native
-  sealed trait onAfterRangeChange extends rangechartEventName
+  sealed trait onAfterRangeChange
+    extends rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
   
   @js.native
-  sealed trait onAfterRangeSet extends spreadsheetEventName
+  sealed trait onAfterRangeSet
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onAfterRender
     extends buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onAfterRun extends filemanagerEventName
+  sealed trait onAfterRun
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterScroll
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onAfterSearch extends filemanagerEventName
+  sealed trait onAfterSearch
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterSelect
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterSheetShow extends spreadsheetEventName
+  sealed trait onAfterSheetShow
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onAfterShowTree extends filemanagerEventName
+  sealed trait onAfterShowTree
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterSort
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onAfterSpan extends spreadsheetEventName
+  sealed trait onAfterSpan
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onAfterSplit extends spreadsheetEventName
+  sealed trait onAfterSplit
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onAfterStart extends hintEventName
+  sealed trait onAfterStart
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
-  sealed trait onAfterStatusChange extends kanbanEventName
+  sealed trait onAfterStatusChange
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onAfterTabClick
     extends segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
   
   @js.native
   sealed trait onAfterUnSelect
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAfterUploadDialog extends filemanagerEventName
+  sealed trait onAfterUploadDialog
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onAfterValidation
     extends formEventName
+       with typings.webix.webix.ui.formEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
   
   @js.native
-  sealed trait onAfterZoom extends calendarEventName
+  sealed trait onAfterZoom
+    extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
   
   @js.native
   sealed trait onAreaDrag
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onAvatarClick extends kanbanEventName
+  sealed trait onAvatarClick
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onBeforeAdd
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeApply extends pivotEventName
+  sealed trait onBeforeApply
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
   sealed trait onBeforeAreaAdd
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeAreaRemove
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeBack
     extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with multiviewEventName
+       with typings.webix.webix.ui.multiviewEventName
   
   @js.native
   sealed trait onBeforeBlockSelect
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforeCancel extends pivotEventName
+  sealed trait onBeforeCancel
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
   sealed trait onBeforeClose
     extends organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeColumnDrag
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeColumnDrop
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeColumnDropOrder
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeColumnHide
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeColumnShow
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforeCommentShow extends spreadsheetEventName
+  sealed trait onBeforeCommentShow
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onBeforeContextMenu
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeCopy extends kanbanEventName
+  sealed trait onBeforeCopy
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onBeforeCreateFolder extends filemanagerEventName
+  sealed trait onBeforeCreateFolder
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeCursorChange
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
   
   @js.native
   sealed trait onBeforeDateSelect
     extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
   
   @js.native
   sealed trait onBeforeDelete
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeDeleteFile extends filemanagerEventName
+  sealed trait onBeforeDeleteFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeDrag
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onBeforeDragIn
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onBeforeDrop
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onBeforeDropOut
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeDynLoad extends filemanagerEventName
+  sealed trait onBeforeDynLoad
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeDynParse extends filemanagerEventName
+  sealed trait onBeforeDynParse
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeEditFile extends filemanagerEventName
+  sealed trait onBeforeEditFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeEditStart
     extends commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onBeforeEditStop
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforeEditorAction extends kanbanEventName
+  sealed trait onBeforeEditorAction
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onBeforeEditorShow extends kanbanEventName
+  sealed trait onBeforeEditorShow
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onBeforeFileAdd extends uploaderEventName
+  sealed trait onBeforeFileAdd
+    extends uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onBeforeFileUpload extends filemanagerEventName
+  sealed trait onBeforeFileUpload
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeFilter
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforeHideTree extends filemanagerEventName
+  sealed trait onBeforeHideTree
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeLevelDown extends filemanagerEventName
+  sealed trait onBeforeLevelDown
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeLevelUp extends filemanagerEventName
+  sealed trait onBeforeLevelUp
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeLoad
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with DataRecordEventName
+       with typings.webix.webix.DataRecordEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeMarkCopy extends filemanagerEventName
+  sealed trait onBeforeMarkCopy
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeMarkCut extends filemanagerEventName
+  sealed trait onBeforeMarkCut
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeMenu extends filemanagerEventName
+  sealed trait onBeforeMenu
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeMenuAction extends commentsEventName
+  sealed trait onBeforeMenuAction
+    extends commentsEventName
+       with typings.webix.webix.ui.commentsEventName
   
   @js.native
-  sealed trait onBeforeModeChange extends filemanagerEventName
+  sealed trait onBeforeModeChange
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeMonthChange extends calendarEventName
+  sealed trait onBeforeMonthChange
+    extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
   
   @js.native
   sealed trait onBeforeOpen
     extends organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforePageChange extends pagerEventName
+  sealed trait onBeforePageChange
+    extends pagerEventName
+       with typings.webix.webix.ui.pagerEventName
   
   @js.native
-  sealed trait onBeforePasteFile extends filemanagerEventName
+  sealed trait onBeforePasteFile
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforePortletMove extends portletEventName
+  sealed trait onBeforePortletMove
+    extends portletEventName
+       with typings.webix.webix.ui.portletEventName
   
   @js.native
   sealed trait onBeforeRender
     extends buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onBeforeRequest extends filemanagerEventName
+  sealed trait onBeforeRequest
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeRun extends filemanagerEventName
+  sealed trait onBeforeRun
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeSearch extends filemanagerEventName
+  sealed trait onBeforeSearch
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onBeforeSearchRequest extends filemanagerEventName
+  sealed trait onBeforeSearchRequest
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeSelect
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeSheetShow extends spreadsheetEventName
+  sealed trait onBeforeSheetShow
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onBeforeShow
     extends checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onBeforeShowTree extends filemanagerEventName
+  sealed trait onBeforeShowTree
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeSort
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onBeforeSpan extends spreadsheetEventName
+  sealed trait onBeforeSpan
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onBeforeSplit extends spreadsheetEventName
+  sealed trait onBeforeSplit
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onBeforeStart extends hintEventName
+  sealed trait onBeforeStart
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
-  sealed trait onBeforeStatusChange extends kanbanEventName
+  sealed trait onBeforeStatusChange
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onBeforeTabClick
     extends segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
   
   @js.native
-  sealed trait onBeforeTabClose extends tabbarEventName
+  sealed trait onBeforeTabClose
+    extends tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
   
   @js.native
   sealed trait onBeforeUnSelect
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onBeforeUploadDialog extends filemanagerEventName
+  sealed trait onBeforeUploadDialog
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onBeforeValidate
     extends formEventName
+       with typings.webix.webix.ui.formEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
   
   @js.native
-  sealed trait onBeforeValueChange extends spreadsheetEventName
+  sealed trait onBeforeValueChange
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onBeforeZoom extends calendarEventName
+  sealed trait onBeforeZoom
+    extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
   
   @js.native
   sealed trait onBindRequest
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with DataRecordEventName
+       with typings.webix.webix.DataRecordEventName
        with DataValueEventName
+       with typings.webix.webix.DataValueEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with abslayoutEventName
+       with typings.webix.webix.ui.abslayoutEventName
        with accordionEventName
+       with typings.webix.webix.ui.accordionEventName
        with accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with baselayoutEventName
+       with typings.webix.webix.ui.baselayoutEventName
        with baseviewEventName
+       with typings.webix.webix.ui.baseviewEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridlayoutEventName
+       with typings.webix.webix.ui.gridlayoutEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with headerlayoutEventName
+       with typings.webix.webix.ui.headerlayoutEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with layoutEventName
+       with typings.webix.webix.ui.layoutEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
+       with typings.webix.webix.ui.multiviewEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with panelEventName
+       with typings.webix.webix.ui.panelEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with portletEventName
+       with typings.webix.webix.ui.portletEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with querybuilderEventName
+       with typings.webix.webix.ui.querybuilderEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with richtextEventName
+       with typings.webix.webix.ui.richtextEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with tabviewEventName
+       with typings.webix.webix.ui.tabviewEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onBindUpdate
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
   
   @js.native
   sealed trait onBlur
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onCancel extends pivotEventName
+  sealed trait onCancel
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
-  sealed trait onCellChange extends spreadsheetEventName
+  sealed trait onCellChange
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onChange
     extends DataRecordEventName
+       with typings.webix.webix.DataRecordEventName
        with DataValueEventName
+       with typings.webix.webix.DataValueEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with gridlayoutEventName
+       with typings.webix.webix.ui.gridlayoutEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with richtextEventName
+       with typings.webix.webix.ui.richtextEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
   
   @js.native
   sealed trait onCheck
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onCollectValues
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onColumnGroupCollapse
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onColumnResize
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onCommentHide extends spreadsheetEventName
+  sealed trait onCommentHide
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onComponentInit
     extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onCopyError extends filemanagerEventName
+  sealed trait onCopyError
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onDataParse extends spreadsheetEventName
+  sealed trait onDataParse
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onDataRequest
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onDataSerialize extends spreadsheetEventName
+  sealed trait onDataSerialize
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onDataUpdate
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onDateClear
     extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
   
   @js.native
-  sealed trait onDateSelect extends calendarEventName
+  sealed trait onDateSelect
+    extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
   
   @js.native
   sealed trait onDestruct
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with abslayoutEventName
+       with typings.webix.webix.ui.abslayoutEventName
        with accordionEventName
+       with typings.webix.webix.ui.accordionEventName
        with accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with baselayoutEventName
+       with typings.webix.webix.ui.baselayoutEventName
        with baseviewEventName
+       with typings.webix.webix.ui.baseviewEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridlayoutEventName
+       with typings.webix.webix.ui.gridlayoutEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with headerlayoutEventName
+       with typings.webix.webix.ui.headerlayoutEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with layoutEventName
+       with typings.webix.webix.ui.layoutEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
+       with typings.webix.webix.ui.multiviewEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with panelEventName
+       with typings.webix.webix.ui.panelEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with portletEventName
+       with typings.webix.webix.ui.portletEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with querybuilderEventName
+       with typings.webix.webix.ui.querybuilderEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with richtextEventName
+       with typings.webix.webix.ui.richtextEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with tabviewEventName
+       with typings.webix.webix.ui.tabviewEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onDocumentReady extends pdfviewerEventName
+  sealed trait onDocumentReady
+    extends pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
   
   @js.native
   sealed trait onDragOut
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onDynLoadError extends filemanagerEventName
+  sealed trait onDynLoadError
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onEditorChange
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onEnd extends hintEventName
+  sealed trait onEnd
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
   sealed trait onEnter
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onErrorResponse extends filemanagerEventName
+  sealed trait onErrorResponse
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onFileUpload extends uploaderEventName
+  sealed trait onFileUpload
+    extends uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onFileUploadError extends uploaderEventName
+  sealed trait onFileUploadError
+    extends uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onFilterChange extends pivotEventName
+  sealed trait onFilterChange
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
-  sealed trait onFilterCreate extends pivotEventName
+  sealed trait onFilterCreate
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
   sealed trait onFocus
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onFolderSelect extends filemanagerEventName
+  sealed trait onFolderSelect
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onHeaderClick
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onHeaderInit extends pivotEventName
+  sealed trait onHeaderInit
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
-  sealed trait onHeatMapRender extends googleMapEventName
+  sealed trait onHeatMapRender
+    extends googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
   
   @js.native
   sealed trait onHide
     extends checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onHideSearchResults extends filemanagerEventName
+  sealed trait onHideSearchResults
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onHistoryChange extends filemanagerEventName
+  sealed trait onHistoryChange
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onItemCheck
     extends organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onItemClick
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
   sealed trait onItemDblClick
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onItemRename extends filemanagerEventName
+  sealed trait onItemRename
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onItemRender
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onItemSelect extends filemanagerEventName
+  sealed trait onItemSelect
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onKeyPress
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onKeySelect extends querybuilderEventName
+  sealed trait onKeySelect
+    extends querybuilderEventName
+       with typings.webix.webix.ui.querybuilderEventName
   
   @js.native
   sealed trait onLegendClick
     extends chartEventName
+       with typings.webix.webix.ui.chartEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
   
   @js.native
-  sealed trait onListAfterContextMenu extends kanbanEventName
+  sealed trait onListAfterContextMenu
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListAfterDrop extends kanbanEventName
+  sealed trait onListAfterDrop
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListAfterSelect extends kanbanEventName
+  sealed trait onListAfterSelect
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListBeforeContextMenu extends kanbanEventName
+  sealed trait onListBeforeContextMenu
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListBeforeDrag extends kanbanEventName
+  sealed trait onListBeforeDrag
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListBeforeDragIn extends kanbanEventName
+  sealed trait onListBeforeDragIn
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListBeforeDrop extends kanbanEventName
+  sealed trait onListBeforeDrop
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListBeforeSelect extends kanbanEventName
+  sealed trait onListBeforeSelect
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListIconClick extends kanbanEventName
+  sealed trait onListIconClick
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListItemClick extends kanbanEventName
+  sealed trait onListItemClick
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
-  sealed trait onListItemDblClick extends kanbanEventName
+  sealed trait onListItemDblClick
+    extends kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
   
   @js.native
   sealed trait onLiveEdit
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onLoadError
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with DataRecordEventName
+       with typings.webix.webix.DataRecordEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onLongTouch
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onMapError extends geochartEventName
+  sealed trait onMapError
+    extends geochartEventName
+       with typings.webix.webix.ui.geochartEventName
   
   @js.native
-  sealed trait onMapReady extends geochartEventName
+  sealed trait onMapReady
+    extends geochartEventName
+       with typings.webix.webix.ui.geochartEventName
   
   @js.native
-  sealed trait onMathRefresh extends spreadsheetEventName
+  sealed trait onMathRefresh
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onMenuItemClick
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
   
   @js.native
   sealed trait onMouseMove
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onMouseMoving
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onMouseOut
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onMoveError extends filemanagerEventName
+  sealed trait onMoveError
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onNext extends hintEventName
+  sealed trait onNext
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
   sealed trait onOptionAdd
     extends radioEventName
+       with typings.webix.webix.ui.radioEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
   
   @js.native
   sealed trait onOptionRemove
     extends radioEventName
+       with typings.webix.webix.ui.radioEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
   
   @js.native
-  sealed trait onPageRender extends pdfviewerEventName
+  sealed trait onPageRender
+    extends pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
   
   @js.native
   sealed trait onPartialRender
     extends sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
   
   @js.native
   sealed trait onPaste
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onPathComplete extends filemanagerEventName
+  sealed trait onPathComplete
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onPathLevel extends filemanagerEventName
+  sealed trait onPathLevel
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onPopup extends pivotEventName
+  sealed trait onPopup
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
-  sealed trait onPrevious extends hintEventName
+  sealed trait onPrevious
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
-  sealed trait onRegionClick extends geochartEventName
+  sealed trait onRegionClick
+    extends geochartEventName
+       with typings.webix.webix.ui.geochartEventName
   
   @js.native
-  sealed trait onReset extends spreadsheetEventName
+  sealed trait onReset
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onResize
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with resizeareaEventName
+       with typings.webix.webix.ui.resizeareaEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onResizeEnd extends resizeareaEventName
+  sealed trait onResizeEnd
+    extends resizeareaEventName
+       with typings.webix.webix.ui.resizeareaEventName
   
   @js.native
   sealed trait onRowResize
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onScaleChange extends pdfviewerEventName
+  sealed trait onScaleChange
+    extends pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
   
   @js.native
   sealed trait onScroll extends js.Object
@@ -2423,927 +4312,1751 @@ object webixStrings {
   @js.native
   sealed trait onScrollX
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onScrollY
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onSearchIconClick extends searchEventName
+  sealed trait onSearchIconClick
+    extends searchEventName
+       with typings.webix.webix.ui.searchEventName
   
   @js.native
-  sealed trait onSectionAdd extends multitextEventName
+  sealed trait onSectionAdd
+    extends multitextEventName
+       with typings.webix.webix.ui.multitextEventName
   
   @js.native
-  sealed trait onSectionRemove extends multitextEventName
+  sealed trait onSectionRemove
+    extends multitextEventName
+       with typings.webix.webix.ui.multitextEventName
   
   @js.native
-  sealed trait onSelect extends colorboardEventName
+  sealed trait onSelect
+    extends colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
   
   @js.native
   sealed trait onSelectChange
     extends contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
-  sealed trait onSheetAdd extends spreadsheetEventName
+  sealed trait onSheetAdd
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onSheetRemove extends spreadsheetEventName
+  sealed trait onSheetRemove
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
-  sealed trait onSheetRename extends spreadsheetEventName
+  sealed trait onSheetRename
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onShow
     extends carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onShowSearchResults extends filemanagerEventName
+  sealed trait onShowSearchResults
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
-  sealed trait onSkip extends hintEventName
+  sealed trait onSkip
+    extends hintEventName
+       with typings.webix.webix.ui.hintEventName
   
   @js.native
   sealed trait onSliderDrag
     extends rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
   
   @js.native
   sealed trait onStructureLoad
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onStructureUpdate
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onStyleSet extends spreadsheetEventName
+  sealed trait onStyleSet
+    extends spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onSubViewClose
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onSubViewCreate
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onSubViewOpen
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
   sealed trait onSubViewRender
     extends datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
   
   @js.native
-  sealed trait onSubmit extends formEventName
+  sealed trait onSubmit
+    extends formEventName
+       with typings.webix.webix.ui.formEventName
   
   @js.native
-  sealed trait onSuccessResponse extends filemanagerEventName
+  sealed trait onSuccessResponse
+    extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
   
   @js.native
   sealed trait onSwipeX
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onSwipeY
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onTabFocus
     extends chartEventName
+       with typings.webix.webix.ui.chartEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
   
   @js.native
   sealed trait onTimedKeyPress
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onTodaySet
     extends calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
   
   @js.native
   sealed trait onTouchEnd
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onTouchMove
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onTouchStart
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onUploadComplete extends uploaderEventName
+  sealed trait onUploadComplete
+    extends uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
   
   @js.native
-  sealed trait onUserMentioned extends commentsEventName
+  sealed trait onUserMentioned
+    extends commentsEventName
+       with typings.webix.webix.ui.commentsEventName
   
   @js.native
   sealed trait onValidationError
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onValidationSuccess
     extends DataCollectionEventName
+       with typings.webix.webix.DataCollectionEventName
        with TreeCollectionEventName
+       with typings.webix.webix.TreeCollectionEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
   
   @js.native
   sealed trait onValueSuggest
     extends checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
   
   @js.native
   sealed trait onValues
     extends formEventName
+       with typings.webix.webix.ui.formEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
   
   @js.native
-  sealed trait onViewChange extends multiviewEventName
+  sealed trait onViewChange
+    extends multiviewEventName
+       with typings.webix.webix.ui.multiviewEventName
   
   @js.native
   sealed trait onViewInit
     extends filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
   
   @js.native
   sealed trait onViewMove
     extends checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onViewMoveEnd
     extends checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onViewResize
     extends accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with panelEventName
+       with typings.webix.webix.ui.panelEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
   sealed trait onViewShow
     extends abslayoutEventName
+       with typings.webix.webix.ui.abslayoutEventName
        with accordionEventName
+       with typings.webix.webix.ui.accordionEventName
        with accordionitemEventName
+       with typings.webix.webix.ui.accordionitemEventName
        with alignEventName
+       with typings.webix.webix.ui.alignEventName
        with barcodeEventName
+       with typings.webix.webix.ui.barcodeEventName
        with baselayoutEventName
+       with typings.webix.webix.ui.baselayoutEventName
        with baseviewEventName
+       with typings.webix.webix.ui.baseviewEventName
        with bulletEventName
+       with typings.webix.webix.ui.bulletEventName
        with buttonEventName
+       with typings.webix.webix.ui.buttonEventName
        with calendarEventName
+       with typings.webix.webix.ui.calendarEventName
        with carouselEventName
+       with typings.webix.webix.ui.carouselEventName
        with chartEventName
+       with typings.webix.webix.ui.chartEventName
        with checkboxEventName
+       with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
+       with typings.webix.webix.ui.checksuggestEventName
        with colorboardEventName
+       with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
+       with typings.webix.webix.ui.colorpickerEventName
        with comboEventName
+       with typings.webix.webix.ui.comboEventName
        with commentsEventName
+       with typings.webix.webix.ui.commentsEventName
        with contextEventName
+       with typings.webix.webix.ui.contextEventName
        with contextmenuEventName
+       with typings.webix.webix.ui.contextmenuEventName
        with counterEventName
+       with typings.webix.webix.ui.counterEventName
        with dashboardEventName
+       with typings.webix.webix.ui.dashboardEventName
        with datalayoutEventName
+       with typings.webix.webix.ui.datalayoutEventName
        with datasuggestEventName
+       with typings.webix.webix.ui.datasuggestEventName
        with datatableEventName
+       with typings.webix.webix.ui.datatableEventName
        with dataviewEventName
+       with typings.webix.webix.ui.dataviewEventName
        with datepickerEventName
+       with typings.webix.webix.ui.datepickerEventName
        with daterangeEventName
+       with typings.webix.webix.ui.daterangeEventName
        with daterangepickerEventName
+       with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
+       with typings.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
+       with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
+       with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
+       with typings.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
+       with typings.webix.webix.ui.formEventName
        with forminputEventName
+       with typings.webix.webix.ui.forminputEventName
        with gageEventName
+       with typings.webix.webix.ui.gageEventName
        with geochartEventName
+       with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
+       with typings.webix.webix.ui.googleMapEventName
        with gridlayoutEventName
+       with typings.webix.webix.ui.gridlayoutEventName
        with gridsuggestEventName
+       with typings.webix.webix.ui.gridsuggestEventName
        with grouplistEventName
+       with typings.webix.webix.ui.grouplistEventName
        with headerlayoutEventName
+       with typings.webix.webix.ui.headerlayoutEventName
        with hintEventName
+       with typings.webix.webix.ui.hintEventName
        with htmlformEventName
+       with typings.webix.webix.ui.htmlformEventName
        with iconEventName
+       with typings.webix.webix.ui.iconEventName
        with iframeEventName
+       with typings.webix.webix.ui.iframeEventName
        with kanbanEventName
+       with typings.webix.webix.ui.kanbanEventName
        with labelEventName
+       with typings.webix.webix.ui.labelEventName
        with layoutEventName
+       with typings.webix.webix.ui.layoutEventName
        with listEventName
+       with typings.webix.webix.ui.listEventName
        with menuEventName
+       with typings.webix.webix.ui.menuEventName
        with multicomboEventName
+       with typings.webix.webix.ui.multicomboEventName
        with multiselectEventName
+       with typings.webix.webix.ui.multiselectEventName
        with multisuggestEventName
+       with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
+       with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
+       with typings.webix.webix.ui.multiviewEventName
        with organogramEventName
+       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
+       with typings.webix.webix.ui.pagerEventName
        with panelEventName
+       with typings.webix.webix.ui.panelEventName
        with pdfviewerEventName
+       with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
+       with typings.webix.webix.ui.pivotEventName
        with popupEventName
+       with typings.webix.webix.ui.popupEventName
        with portletEventName
+       with typings.webix.webix.ui.portletEventName
        with propertyEventName
+       with typings.webix.webix.ui.propertyEventName
        with protoEventName
+       with typings.webix.webix.ui.protoEventName
        with proxyEventName
+       with typings.webix.webix.ui.proxyEventName
        with querybuilderEventName
+       with typings.webix.webix.ui.querybuilderEventName
        with radioEventName
+       with typings.webix.webix.ui.radioEventName
        with rangechartEventName
+       with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
+       with typings.webix.webix.ui.rangesliderEventName
        with richselectEventName
+       with typings.webix.webix.ui.richselectEventName
        with richtextEventName
+       with typings.webix.webix.ui.richtextEventName
        with scrollviewEventName
+       with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
+       with typings.webix.webix.ui.searchEventName
        with segmentedEventName
+       with typings.webix.webix.ui.segmentedEventName
        with selectEventName
+       with typings.webix.webix.ui.selectEventName
        with sidebarEventName
+       with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
+       with typings.webix.webix.ui.sidemenuEventName
        with sliderEventName
+       with typings.webix.webix.ui.sliderEventName
        with spacerEventName
+       with typings.webix.webix.ui.spacerEventName
        with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
        with submenuEventName
+       with typings.webix.webix.ui.submenuEventName
        with suggestEventName
+       with typings.webix.webix.ui.suggestEventName
        with switchButtonEventName
+       with typings.webix.webix.ui.switchButtonEventName
        with tabbarEventName
+       with typings.webix.webix.ui.tabbarEventName
        with tabviewEventName
+       with typings.webix.webix.ui.tabviewEventName
        with templateEventName
+       with typings.webix.webix.ui.templateEventName
        with textEventName
+       with typings.webix.webix.ui.textEventName
        with textareaEventName
+       with typings.webix.webix.ui.textareaEventName
        with timelineEventName
+       with typings.webix.webix.ui.timelineEventName
        with toggleEventName
+       with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
+       with typings.webix.webix.ui.toolbarEventName
        with tooltipEventName
+       with typings.webix.webix.ui.tooltipEventName
        with treeEventName
+       with typings.webix.webix.ui.treeEventName
        with treemapEventName
+       with typings.webix.webix.ui.treemapEventName
        with treetableEventName
+       with typings.webix.webix.ui.treetableEventName
        with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
+       with typings.webix.webix.ui.uploaderEventName
        with videoEventName
+       with typings.webix.webix.ui.videoEventName
        with viewEventName
+       with typings.webix.webix.ui.viewEventName
        with windowEventName
+       with typings.webix.webix.ui.windowEventName
   
   @js.native
-  sealed trait onWebWorkerEnd extends pivotEventName
+  sealed trait onWebWorkerEnd
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @js.native
-  sealed trait onWebWorkerStart extends pivotEventName
+  sealed trait onWebWorkerStart
+    extends pivotEventName
+       with typings.webix.webix.ui.pivotEventName
   
   @scala.inline
   def onAfterAdd: onAfterAdd = "onAfterAdd".asInstanceOf[onAfterAdd]

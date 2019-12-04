@@ -1,5 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
+import typings.atIonicCore.distTypesComponentsSpinnerSpinnerDashConfigsMod.SpinnerTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +10,7 @@ trait IonSpinner extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * Duration of the spinner animation in milliseconds. The default varies based on the spinner.
     */
@@ -18,9 +18,7 @@ trait IonSpinner extends js.Object {
   /**
     * The name of the SVG spinner to use. If a name is not provided, the platform's default spinner will be used.
     */
-  var name: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any
-  ] = js.undefined
+  var name: js.UndefOr[SpinnerTypes] = js.undefined
   /**
     * If `true`, the spinner's animation will be paused.
     */
@@ -30,9 +28,9 @@ trait IonSpinner extends js.Object {
 object IonSpinner {
   @scala.inline
   def apply(
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     duration: Int | Double = null,
-    name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any = null,
+    name: SpinnerTypes = null,
     paused: js.UndefOr[Boolean] = js.undefined
   ): IonSpinner = {
     val __obj = js.Dynamic.literal()

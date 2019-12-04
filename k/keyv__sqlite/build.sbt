@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "keyv__sqlite"
-version := "2.0-dt-20181231Z-20022a"
+version := "2.0-dt-20181231Z-36a424"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-64f19a",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-b17bba",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

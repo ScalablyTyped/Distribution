@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Attributes
+import typings.playcanvas.Anon_AttributesFshader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Shader")
 @js.native
 class Shader protected () extends js.Object {
-  def this(graphicsDevice: GraphicsDevice, definition: Anon_Attributes) = this()
+  def this(graphicsDevice: GraphicsDevice, definition: Anon_AttributesFshader) = this()
   /**
     * @function
     * @name pc.Shader#destroy

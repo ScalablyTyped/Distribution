@@ -19,6 +19,7 @@ package object codemirrorMod {
     /* codeMirror */ Editor, 
     Unit
   ]
+  type HintFunction = js.Function1[/* cm */ Editor, Hints]
   type KeyMap = StringDictionary[
     `false` | String | (js.Function1[/* instance */ Editor, Unit | Anon_CodeMirrorPASS])
   ]

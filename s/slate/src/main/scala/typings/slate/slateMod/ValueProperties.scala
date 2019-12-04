@@ -1,7 +1,7 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Map
+import typings.immutable.Immutable.Map
 import typings.slate.slateStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`

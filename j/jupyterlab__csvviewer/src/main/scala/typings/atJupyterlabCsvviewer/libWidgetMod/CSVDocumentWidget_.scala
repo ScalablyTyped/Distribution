@@ -1,7 +1,7 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
 import typings.atJupyterlabCsvviewer.libWidgetMod.CSVDocumentWidget.IOptions
-import typings.atJupyterlabDocregistry.libMod.DocumentWidget
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentWidget
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esCheckboxGroupMod.CheckboxValueType
+import typings.antd.libCheckboxGroupMod.CheckboxValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

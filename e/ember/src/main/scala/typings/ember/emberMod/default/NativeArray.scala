@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object NativeArray
   extends TopLevel[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmberNativeArray */ js.Any
+      typings.atEmberObject.mixinMod.default[
+        typings.atEmberArray.dashPrivateNativeDashArrayMod.NativeArray[js.Any], 
+        typings.atEmberObject.atEmberObjectMod.default
+      ]
     ]
 

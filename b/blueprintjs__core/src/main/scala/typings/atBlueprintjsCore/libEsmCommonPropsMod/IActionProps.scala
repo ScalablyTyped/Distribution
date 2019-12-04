@@ -2,8 +2,8 @@ package typings.atBlueprintjsCore.libEsmCommonPropsMod
 
 import typings.atBlueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.atBlueprintjsIcons.libEsmIconNameMod.IconName
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libKernelKernelMod.Kernel
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +24,6 @@ object findById extends js.Object {
     * rejected.
     */
   def apply(id: String): js.Promise[IModel] = js.native
-  def apply(
-    id: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[IModel] = js.native
+  def apply(id: String, settings: ISettings): js.Promise[IModel] = js.native
 }
 

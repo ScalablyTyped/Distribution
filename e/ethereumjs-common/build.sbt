@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ethereumjs-common"
-version := "1.3.2-c59b57"
+version := "1.3.2-c6e3c2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

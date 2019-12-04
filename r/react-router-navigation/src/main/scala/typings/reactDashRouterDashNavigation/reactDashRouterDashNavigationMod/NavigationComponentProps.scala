@@ -20,9 +20,9 @@ object NavigationComponentProps {
     backButtonTitle: String = null,
     cardStyle: StyleProp[ViewStyle] = null,
     children: js.Array[ReactElement] = null,
-    configureTransition: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
-    ]) => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
+    configureTransition: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+    ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     hideNavBar: js.UndefOr[Boolean] = js.undefined,
     navBarStyle: StyleProp[ViewStyle] = null,

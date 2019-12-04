@@ -22,7 +22,7 @@ object atOctokitRequestDashErrorMod extends js.Object {
     /**
       * error response headers
       */
-    var headers: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = js.native
+    var headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = js.native
     /* CompleteClass */
     override var message: String = js.native
     /* CompleteClass */
@@ -32,7 +32,7 @@ object atOctokitRequestDashErrorMod extends js.Object {
     /**
       * Request options that lead to the error.
       */
-    var request: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RequestOptions */ js.Any = js.native
+    var request: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ js.Any = js.native
     /**
       * http status code
       */

@@ -1,0 +1,18 @@
+package typings.nodemailer
+
+import typings.nodemailer.libDkimMessageDashParserMod.Header
+import typings.nodemailer.libDkimMod.SingleKeyOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("nodemailer/lib/dkim/sign", JSImport.Namespace)
+@js.native
+object libDkimSignMod extends js.Object {
+  /** Returns DKIM signature header line */
+  def apply(headers: js.Array[Header], hashAlgo: String, bodyHash: String): String = js.native
+  def apply(headers: js.Array[Header], hashAlgo: String, bodyHash: String, options: SingleKeyOptions): String = js.native
+  def relaxedHeaders(headers: js.Array[Header], hashAlgo: String, bodyHash: String): String = js.native
+  def relaxedHeaders(headers: js.Array[Header], hashAlgo: String, bodyHash: String, options: SingleKeyOptions): String = js.native
+}
+

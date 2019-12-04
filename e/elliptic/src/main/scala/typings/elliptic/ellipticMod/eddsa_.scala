@@ -18,7 +18,9 @@ class eddsa_ protected () extends js.Object {
   var curve: edwards = js.native
   def decodeInt(bytes: BNInput): js.Any = js.native
   def decodePoint(bytes: Bytes): Point = js.native
-  def encodeInt(num: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any): Buffer = js.native
+  def encodeInt(
+    num: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+  ): Buffer = js.native
   def encodePoint(point: Point): Buffer = js.native
   def hashInt(): js.Any = js.native
   def isPoint(`val`: js.Any): Boolean = js.native

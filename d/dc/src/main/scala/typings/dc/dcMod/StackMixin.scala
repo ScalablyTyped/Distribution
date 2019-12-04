@@ -11,7 +11,7 @@ trait StackMixin[T] extends js.Object {
   // title(stackName: string, titleFn: Accessor<any, T>);
   @JSName("stackLayout")
   var stackLayout_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ _, 
     T
   ] = js.native
   def hidableStacks(): Boolean = js.native
@@ -25,7 +25,7 @@ trait StackMixin[T] extends js.Object {
   def stackLayout(): js.Any = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);
   def stackLayout(
-    t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.layout.Stack<Array<any>, any> */ js.Any
   ): T = js.native
 }
 

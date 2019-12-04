@@ -1,6 +1,8 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.atIonicCoreMod.ComponentRef
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
+import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +13,7 @@ trait IonPopoverController extends js.Object {
     * Create a popover overlay with popover options.
     * @param options The options to use to create the popover.
     */
-  def create[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any */](
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<T> */ js.Any
-  ): js.Promise[HTMLIonPopoverElement] = js.native
+  def create[T /* <: ComponentRef */](options: PopoverOptions[T]): js.Promise[HTMLIonPopoverElement] = js.native
   /**
     * Dismiss the open popover overlay.
     * @param data Any data to emit in the dismiss events.

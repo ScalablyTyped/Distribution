@@ -51,7 +51,7 @@ object boxologic extends js.Object {
       * Whether the {@link Box} is packed into a {@link Pallet}.
       */
     var is_packed: Boolean = js.native
-    var overlapped_boxes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify std.HashSet<Box> */ js.Any = js.native
+    var overlapped_boxes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashSet<Box> */ js.Any = js.native
     def hit_test(obj: Box): Boolean = js.native
     /* private */ def hit_test_point(x: js.Any, y: js.Any, z: js.Any): js.Any = js.native
     /* private */ def hit_test_single(obj: js.Any): js.Any = js.native

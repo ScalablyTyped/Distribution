@@ -23,7 +23,7 @@ class Duration () extends IDuration {
   var nanos_Duration: Double = js.native
   /** Duration seconds. */
   @JSName("seconds")
-  var seconds_Duration: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var seconds_Duration: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
   /**
     * Converts this Duration to JSON.
     * @returns JSON object

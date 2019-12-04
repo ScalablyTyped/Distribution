@@ -19,9 +19,9 @@ import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewpor
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithViewportMod.IWithViewportProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDragdropInterfacesMod.IDragDropEvents
 import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.Event

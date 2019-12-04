@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Disabled extends js.Object {
   var disabled: Boolean
-  var placeholder: String
-  var showCancelButton: Boolean
-  def onBlur(): Unit
-  def onChange(): Unit
-  def onClear(): Unit
-  def onFocus(): Unit
-  def onSubmit(): Unit
+  var locale: Anon_AmDay
+  var minuteStep: Double
+  var mode: String
+  var pickerPrefixCls: String
+  var prefixCls: String
+  var use12Hours: Boolean
+  def onDateChange(): Unit
 }
 
 object Anon_Disabled {
   @scala.inline
   def apply(
     disabled: Boolean,
-    onBlur: () => Unit,
-    onChange: () => Unit,
-    onClear: () => Unit,
-    onFocus: () => Unit,
-    onSubmit: () => Unit,
-    placeholder: String,
-    showCancelButton: Boolean
+    locale: Anon_AmDay,
+    minuteStep: Double,
+    mode: String,
+    onDateChange: () => Unit,
+    pickerPrefixCls: String,
+    prefixCls: String,
+    use12Hours: Boolean
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder.asInstanceOf[js.Any], showCancelButton = showCancelButton.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minuteStep = minuteStep.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], onDateChange = js.Any.fromFunction0(onDateChange), pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], use12Hours = use12Hours.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Disabled]
   }

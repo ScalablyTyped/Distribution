@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "highcharts-ng"
-version := "0.0.8-dt-20191107Z-7a8fb2"
+version := "0.0.8-dt-20191107Z-3944f5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "highcharts" % "7.2.1-828497",
+  "org.scalablytyped" %%% "highcharts" % "7.2.1-1f5ca4",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

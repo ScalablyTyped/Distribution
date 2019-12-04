@@ -14,9 +14,7 @@ object rcDashTableStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait both
-    extends ScrollPosition
-       with typings.rcDashTable.esInterfaceMod.ScrollPosition
+  sealed trait both extends ScrollPosition
   
   @js.native
   sealed trait center extends js.Object
@@ -30,21 +28,15 @@ object rcDashTableStrings {
   @js.native
   sealed trait left
     extends ScrollPosition
-       with typings.rcDashTable.esInterfaceMod.ScrollPosition
        with _FixedType
-       with typings.rcDashTable.esInterfaceMod._FixedType
   
   @js.native
-  sealed trait middle
-    extends ScrollPosition
-       with typings.rcDashTable.esInterfaceMod.ScrollPosition
+  sealed trait middle extends ScrollPosition
   
   @js.native
   sealed trait right
     extends ScrollPosition
-       with typings.rcDashTable.esInterfaceMod.ScrollPosition
        with _FixedType
-       with typings.rcDashTable.esInterfaceMod._FixedType
   
   @js.native
   sealed trait vertical extends js.Object

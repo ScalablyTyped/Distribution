@@ -1,7 +1,7 @@
 
 # Scala.js typings for freedom
 
-Typings are for version v0.6.29
+Typings are for version v0.6.26
 
 ## Library description:
 Embracing a distributed web

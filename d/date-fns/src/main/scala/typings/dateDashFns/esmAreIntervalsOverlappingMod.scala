@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
 object esmAreIntervalsOverlappingMod extends js.Object {
   @js.native
   object default extends js.Object {
-    def apply(intervalLeft: Interval, intervalRight: Interval): Boolean = js.native
+    def apply(
+      intervalLeft: typings.dateDashFns.dateDashFnsMod.Interval | Interval,
+      intervalRight: typings.dateDashFns.dateDashFnsMod.Interval | Interval
+    ): Boolean = js.native
   }
   
 }

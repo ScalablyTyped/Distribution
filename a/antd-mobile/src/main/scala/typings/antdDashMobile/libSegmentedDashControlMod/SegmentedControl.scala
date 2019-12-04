@@ -1,8 +1,8 @@
 package typings.antdDashMobile.libSegmentedDashControlMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js

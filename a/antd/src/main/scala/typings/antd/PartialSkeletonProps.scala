@@ -1,14 +1,14 @@
 package typings.antd
 
-import typings.antd.esSkeletonAvatarMod.SkeletonAvatarProps
-import typings.antd.esSkeletonParagraphMod.SkeletonParagraphProps
-import typings.antd.esSkeletonTitleMod.SkeletonTitleProps
+import typings.antd.libSkeletonAvatarMod.SkeletonAvatarProps
+import typings.antd.libSkeletonParagraphMod.SkeletonParagraphProps
+import typings.antd.libSkeletonTitleMod.SkeletonTitleProps
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/skeleton.SkeletonProps> */
+/* Inlined std.Partial<antd.antd/lib/skeleton.SkeletonProps> */
 trait PartialSkeletonProps extends js.Object {
   var active: js.UndefOr[Boolean] = js.undefined
   var avatar: js.UndefOr[SkeletonAvatarProps | Boolean] = js.undefined

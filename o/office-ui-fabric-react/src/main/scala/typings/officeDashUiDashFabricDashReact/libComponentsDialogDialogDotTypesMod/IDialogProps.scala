@@ -13,11 +13,11 @@ import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogDotBaseM
 import typings.officeDashUiDashFabricDashReact.libComponentsModalModalDotTypesMod.IModalProps
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState
 import typings.officeDashUiDashFabricDashReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement

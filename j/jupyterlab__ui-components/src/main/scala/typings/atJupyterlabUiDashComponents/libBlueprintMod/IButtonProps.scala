@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IBPButtonProps * / any */ trait IButtonProps extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBPButtonProps * / any */ trait IButtonProps extends js.Object {
   var title: js.UndefOr[String] = js.undefined
   var `type`: js.UndefOr[button | submit | reset] = js.undefined
 }

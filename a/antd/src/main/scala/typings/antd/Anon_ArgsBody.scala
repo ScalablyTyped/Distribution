@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esTransferMod.TransferItem
+import typings.antd.libTransferMod.TransferItem
 import typings.propDashTypes.propDashTypesMod.ReactNodeLike
 import typings.propDashTypes.propDashTypesMod.Requireable
 import typings.propDashTypes.propDashTypesMod.Validator

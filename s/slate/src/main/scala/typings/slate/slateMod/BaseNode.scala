@@ -1,9 +1,9 @@
 package typings.slate.slateMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.OrderedSet
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.OrderedSet
+import typings.immutable.Immutable.Set
 import typings.slate.Anon_End
 import typings.slate.Anon_OnlyLeaves
 import typings.slate.Anon_OnlyTypes

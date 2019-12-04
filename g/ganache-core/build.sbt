@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ganache-core"
-version := "2.8.0-d997b3"
+version := "2.8.0-ce58fa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

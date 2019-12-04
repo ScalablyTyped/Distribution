@@ -1,7 +1,7 @@
 package typings.csvDashStringify
 
-import typings.csvDashStringify.csvDashStringifyMod.Cast
-import typings.csvDashStringify.csvDashStringifyMod.CastingContext
+import typings.csvDashStringify.libEs5Mod.Cast
+import typings.csvDashStringify.libEs5Mod.CastingContext
 import typings.std.Date
 import typings.std.Record
 import scala.scalajs.js

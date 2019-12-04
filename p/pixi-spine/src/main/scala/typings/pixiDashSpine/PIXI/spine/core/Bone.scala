@@ -19,7 +19,7 @@ class Bone protected () extends Updatable {
   var ay: Double = js.native
   var children: js.Array[Bone] = js.native
   var data: BoneData = js.native
-  var matrix: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Matrix */ js.Any = js.native
+  var matrix: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Matrix */ js.Any = js.native
   var parent: Bone = js.native
   var rotation: Double = js.native
   var scaleX: Double = js.native

@@ -14,6 +14,6 @@ object libMod extends js.Object {
     def this(props: IDrawerProps) = this()
   }
   
-  val default: TypeofClassDrawerWrapperDefaultProps with Anon_ContextType = js.native
+  val default: TypeofClassDrawerWrapper with Anon_ContextTypeDefaultProps = js.native
 }
 

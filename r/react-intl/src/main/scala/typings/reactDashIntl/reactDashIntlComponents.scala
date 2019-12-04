@@ -37,8 +37,8 @@ object reactDashIntlComponents extends reactDashIntlProps {
   def FormattedNumber: ComponentType[UnifiedNumberFormatOptions with CustomFormatConfig with Anon_ValueNumber] = typings.reactDashIntl.libMod.FormattedNumber.asInstanceOf[typings.react.reactMod.ComponentType[
   typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.UnifiedNumberFormatOptions with typings.reactDashIntl.libTypesMod.CustomFormatConfig with typings.reactDashIntl.Anon_ValueNumber]]
   @scala.inline
-  def FormattedNumberParts: ComponentType[FormatNumberOptions with Anon_0ChildrenFormatOptsVal] = typings.reactDashIntl.libMod.FormattedNumberParts.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashIntl.libTypesMod.FormatNumberOptions with typings.reactDashIntl.Anon_0ChildrenFormatOptsVal]]
+  def FormattedNumberParts: ComponentType[FormatNumberOptions with Anon_0] = typings.reactDashIntl.libMod.FormattedNumberParts.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.reactDashIntl.libTypesMod.FormatNumberOptions with typings.reactDashIntl.Anon_0]]
   @scala.inline
   def FormattedRelativeTime: ComponentType[FormattedRelativeTimeProps] = js.constructorOf[typings.reactDashIntl.libMod.FormattedRelativeTime].asInstanceOf[typings.react.reactMod.ComponentType[FormattedRelativeTimeProps]]
   @scala.inline

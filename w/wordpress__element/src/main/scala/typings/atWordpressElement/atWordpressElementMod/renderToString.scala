@@ -17,14 +17,14 @@ object renderToString extends js.Object {
     * @return Serialized element.
     */
   def apply(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any
   ): String = js.native
   def apply(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
     context: js.Any
   ): String = js.native
   def apply(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
     context: js.Any,
     legacyContext: js.Any
   ): String = js.native

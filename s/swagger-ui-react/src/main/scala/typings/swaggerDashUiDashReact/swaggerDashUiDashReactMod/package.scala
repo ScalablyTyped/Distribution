@@ -11,4 +11,5 @@ package object swaggerDashUiDashReactMod {
   type Request = StringDictionary[js.Any]
   type Response = StringDictionary[js.Any]
   type SwaggerUI = Component[SwaggerUIProps, js.Object, js.Any]
+  type System = js.Any
 }

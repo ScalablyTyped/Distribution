@@ -9,6 +9,8 @@ object reactDashPopperDashTooltipComponents extends reactDashPopperDashTooltipPr
   @scala.inline
   def ReactDashPopperDashTooltip: ComponentType[ReactDashPopperDashTooltipProps] = js.constructorOf[typings.reactDashPopperDashTooltip.reactDashPopperDashTooltipMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashPopperDashTooltipProps]]
   @scala.inline
+  def Tooltip: ComponentType[TooltipProps] = js.constructorOf[typings.reactDashPopperDashTooltip.distTooltipMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TooltipProps]]
+  @scala.inline
   def TooltipTrigger: ComponentType[TooltipTriggerProps] = js.constructorOf[typings.reactDashPopperDashTooltip.distTooltipTriggerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TooltipTriggerProps]]
 }
 

@@ -20,7 +20,7 @@ object libFormMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Item: TypeofClassFormItemDefaultProps = js.native
+    var Item: TypeofClassFormItem = js.native
     var createFormField: js.Any = js.native
     var defaultProps: Anon_Colon = js.native
     var propTypes: Anon_ArgsChildren = js.native

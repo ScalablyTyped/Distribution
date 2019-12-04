@@ -2,6 +2,10 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerButton
+import typings.atIonicCore.distTypesComponentsPickerPickerDashInterfaceMod.PickerColumn
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +23,11 @@ trait IonPicker extends js.Object {
   /**
     * Array of buttons to be displayed at the top of the picker.
     */
-  var buttons: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerButton */ _
-  ] = js.native
+  var buttons: js.Array[PickerButton] = js.native
   /**
     * Array of columns to be displayed in the picker.
     */
-  var columns: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ _
-  ] = js.native
+  var columns: js.Array[PickerColumn] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -39,9 +39,7 @@ trait IonPicker extends js.Object {
   /**
     * Animation to use when the picker is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
@@ -49,9 +47,7 @@ trait IonPicker extends js.Object {
   /**
     * Animation to use when the picker is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * The mode determines which platform styles to use.
     */
@@ -73,23 +69,15 @@ trait IonPicker extends js.Object {
     * Get the column that matches the specified name.
     * @param name The name of the column.
     */
-  def getColumn(name: String): js.Promise[
-    js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerColumn */ _
-    ]
-  ] = js.native
+  def getColumn(name: String): js.Promise[js.UndefOr[PickerColumn]] = js.native
   /**
     * Returns a promise that resolves when the picker did dismiss.
     */
-  def onDidDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Returns a promise that resolves when the picker will dismiss.
     */
-  def onWillDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Present the picker overlay after it has been created.
     */

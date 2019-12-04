@@ -1,6 +1,6 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

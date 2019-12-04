@@ -87,8 +87,6 @@ class Transport protected ()
     * @returns {Boolean}
     */
   var sendKeepAlive: js.Any = js.native
-  @JSName("server")
-  var server_Transport: WsServer = js.native
   /**
     * Start sending keep-alives.
     */

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object jestDashRuntimeStrings {
   @js.native
+  sealed trait `Usage: DOLLAR0 [--config=<pathToConfigFile>] <file>` extends js.Object
+  
+  @js.native
   sealed trait cache extends js.Object
   
   @js.native
@@ -20,6 +23,8 @@ object jestDashRuntimeStrings {
   @js.native
   sealed trait watchman extends js.Object
   
+  @scala.inline
+  def `Usage: DOLLAR0 [--config=<pathToConfigFile>] <file>`: `Usage: DOLLAR0 [--config=<pathToConfigFile>] <file>` = "Usage: $0 [--config=<pathToConfigFile>] <file>".asInstanceOf[`Usage: DOLLAR0 [--config=<pathToConfigFile>] <file>`]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline

@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.richtext")
 @js.native
-class richtext () extends baseview {
+class richtext ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$$")
   var $$: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_richtext: WebixCallback = js.native
   @JSName("config")
   var config_richtext: richtextConfig = js.native
   def attachEvent(`type`: richtextEventName, functor: WebixCallback): String | Double = js.native
@@ -27,7 +30,7 @@ class richtext () extends baseview {
   def mapEvent(map: js.Any): Unit = js.native
   def refresh(): Unit = js.native
   def setValue(value: String): Unit = js.native
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: js.Any): typings.webix.webix.ui.baseview = js.native
   def unblockEvent(): Unit = js.native
 }
 

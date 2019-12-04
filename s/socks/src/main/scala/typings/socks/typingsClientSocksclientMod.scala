@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object typingsClientSocksclientMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SocksClient * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocksClient * / any */ @js.native
   class SocksClient protected () extends EventEmitter {
     def this(options: SocksClientOptions) = this()
     var _nextRequiredPacketBufferSize: js.Any = js.native

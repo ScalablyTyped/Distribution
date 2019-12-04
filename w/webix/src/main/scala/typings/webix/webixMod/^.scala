@@ -85,21 +85,21 @@ object ^ extends js.Object {
   var ValueBind: typings.webix.webixMod.ValueBind = js.native
   var Values: typings.webix.webixMod.Values = js.native
   var VirtualRenderStack: typings.webix.webixMod.VirtualRenderStack = js.native
-  var clipbuffer: typings.webix.webixMod.clipbuffer = js.native
+  var clipbuffer: typings.webix.webix.clipbuffer = js.native
   var codebase: String = js.native
-  var color: typings.webix.webixMod.color = js.native
-  var csv: typings.webix.webixMod.csv = js.native
-  var editors: typings.webix.webixMod.editors = js.native
-  var env: typings.webix.webixMod.env = js.native
-  var history: typings.webix.webixMod.history = js.native
-  var html: typings.webix.webixMod.html = js.native
-  var i18n: typings.webix.webixMod.i18n = js.native
-  var locale: typings.webix.webixMod.locale = js.native
-  var markup: typings.webix.webixMod.markup = js.native
+  var color: typings.webix.webix.color = js.native
+  var csv: typings.webix.webix.csv = js.native
+  var editors: typings.webix.webix.editors = js.native
+  var env: typings.webix.webix.env = js.native
+  var history: typings.webix.webix.history = js.native
+  var html: typings.webix.webix.html = js.native
+  var i18n: typings.webix.webix.i18n = js.native
+  var locale: typings.webix.webix.locale = js.native
+  var markup: typings.webix.webix.markup = js.native
   var name: String = js.native
-  var promise: typings.webix.webixMod.promise = js.native
-  var rules: typings.webix.webixMod.rules = js.native
-  var storage: typings.webix.webixMod.storage = js.native
+  var promise: typings.webix.webix.promise = js.native
+  var rules: typings.webix.webix.rules = js.native
+  var storage: typings.webix.webix.storage = js.native
   var version: String = js.native
 }
 

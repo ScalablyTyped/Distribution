@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ink-testing-library"
-version := "1.0-dt-20191107Z-10bd7e"
+version := "1.0-dt-20191107Z-3f6996"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

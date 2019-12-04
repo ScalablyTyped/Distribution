@@ -3,6 +3,7 @@ package typings.apolloDashServerDashCore.distRequestPipelineMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheControlExtensionOptions
 import typings.apolloDashServerDashCaching.apolloDashServerDashCachingMod.InMemoryLRUCache
+import typings.apolloDashServerDashCore.distGraphqlOptionsMod.PersistedQueryOptions
 import typings.apolloDashServerDashPluginDashBase.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
 import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLExecutionResult
 import typings.apolloDashServerDashTypes.apolloDashServerDashTypesMod.GraphQLExecutor
@@ -44,9 +45,7 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
     ]
   ] = js.undefined
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
-  var persistedQueries: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PersistedQueryOptions */ js.Any
-  ] = js.undefined
+  var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
   var plugins: js.UndefOr[js.Array[ApolloServerPlugin]] = js.undefined
   var rootValue: js.UndefOr[(js.Function1[/* document */ DocumentNode, _]) | js.Any] = js.undefined
   var schema: GraphQLSchema
@@ -70,7 +69,7 @@ object GraphQLRequestPipelineConfig {
     formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, _]] = null,
     formatResponse: (/* response */ GraphQLResponse | Null, /* requestContext */ GraphQLRequestContext[TContext]) => GraphQLResponse = null,
     parseOptions: GraphQLParseOptions = null,
-    persistedQueries: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PersistedQueryOptions */ js.Any = null,
+    persistedQueries: PersistedQueryOptions = null,
     plugins: js.Array[ApolloServerPlugin] = null,
     rootValue: (js.Function1[/* document */ DocumentNode, _]) | js.Any = null,
     tracing: js.UndefOr[Boolean] = js.undefined,

@@ -1,5 +1,6 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
+import typings.chrome.chrome.cast.ErrorCode
 import typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.CAST_STATE_CHANGED
 import typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.SESSION_STATE_CHANGED
 import scala.scalajs.js
@@ -17,11 +18,7 @@ class CastContext () extends js.Object {
   def getSessionState(): SessionState = js.native
   def removeEventListener(`type`: CAST_STATE_CHANGED, handler: js.Function1[/* event */ CastStateEventData, Unit]): Unit = js.native
   def removeEventListener(`type`: SESSION_STATE_CHANGED, handler: js.Function1[/* event */ SessionStateEventData, Unit]): Unit = js.native
-  def requestSession(): js.Promise[
-    js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify chrome.cast.ErrorCode */ _
-    ]
-  ] = js.native
+  def requestSession(): js.Promise[js.UndefOr[ErrorCode]] = js.native
   def setOptions(options: CastOptions): Unit = js.native
 }
 

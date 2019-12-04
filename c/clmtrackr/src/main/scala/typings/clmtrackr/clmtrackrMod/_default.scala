@@ -1,6 +1,5 @@
 package typings.clmtrackr.clmtrackrMod
 
-import typings.clmtrackr.Model
 import typings.clmtrackr.clmtrackrNumbers.`false`
 import typings.clmtrackr.clmtrackrStrings.blend
 import typings.clmtrackr.clmtrackrStrings.cycle

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bugsnag-js"
-version := "4.7.3-6a15c2"
+version := "4.7.3-ab013c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

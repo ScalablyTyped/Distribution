@@ -253,6 +253,9 @@ object atIonicReactStrings {
   sealed trait defaultChecked extends js.Object
   
   @js.native
+  sealed trait defaultHref extends js.Object
+  
+  @js.native
   sealed trait defaultValue extends js.Object
   
   @js.native
@@ -991,6 +994,9 @@ object atIonicReactStrings {
   sealed trait target extends js.Object
   
   @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait title extends js.Object
   
   @js.native
@@ -1175,6 +1181,8 @@ object atIonicReactStrings {
   def datatype: datatype = "datatype".asInstanceOf[datatype]
   @scala.inline
   def defaultChecked: defaultChecked = "defaultChecked".asInstanceOf[defaultChecked]
+  @scala.inline
+  def defaultHref: defaultHref = "defaultHref".asInstanceOf[defaultHref]
   @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   @scala.inline
@@ -1667,6 +1675,8 @@ object atIonicReactStrings {
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   @scala.inline
   def target: target = "target".asInstanceOf[target]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   @scala.inline

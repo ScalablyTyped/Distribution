@@ -16,12 +16,8 @@ object trackMod extends js.Object {
     var _scrollbar: js.Any = js.native
     /* CompleteClass */
     override val xAxis: ScrollbarTrack = js.native
-    @JSName("xAxis")
-    val xAxis_TrackController: typings.smoothDashScrollbar.trackTrackMod.ScrollbarTrack = js.native
     /* CompleteClass */
     override val yAxis: ScrollbarTrack = js.native
-    @JSName("yAxis")
-    val yAxis_TrackController: typings.smoothDashScrollbar.trackTrackMod.ScrollbarTrack = js.native
     /* CompleteClass */
     override def autoHideOnIdle(): Unit = js.native
     /* CompleteClass */

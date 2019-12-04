@@ -13,12 +13,12 @@ import typings.officeDashUiDashFabricDashReact.libComponentsButtonSplitButtonSpl
 import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
 import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IIconProps
 import typings.officeDashUiDashFabricDashReact.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.AnchorHTMLAttributes
 import typings.react.reactMod.ButtonHTMLAttributes
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement

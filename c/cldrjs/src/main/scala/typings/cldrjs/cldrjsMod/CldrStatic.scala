@@ -39,6 +39,8 @@ trait CldrStatic extends js.Object {
     * The locale string.
     */
   var locale: String = js.native
+  @JSName("supplemental")
+  var supplemental_Original: SupplementalStatic = js.native
   /**
     * @name get
     * @memberof cldr.CldrStatic
@@ -98,5 +100,7 @@ trait CldrStatic extends js.Object {
   def off(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
   def on(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
   def once(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+  def supplemental(path: String): js.Any = js.native
+  def supplemental(paths: js.Array[String]): js.Any = js.native
 }
 

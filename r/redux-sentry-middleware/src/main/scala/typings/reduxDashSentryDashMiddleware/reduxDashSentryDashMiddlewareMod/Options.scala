@@ -13,13 +13,13 @@ trait Options[T] extends js.Object {
   var getTags: js.UndefOr[
     js.Function1[
       /* state */ T, 
-      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any
     ]
   ] = js.undefined
   var getUserContext: js.UndefOr[
     js.Function1[
       /* state */ T, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.User */ _
     ]
   ] = js.undefined
   var stateTransformer: js.UndefOr[js.Function1[/* state */ T, _]] = js.undefined
@@ -32,8 +32,8 @@ object Options {
     breadcrumbCategory: String = null,
     breadcrumbDataFromAction: /* action */ Action[_] => _ = null,
     filterBreadcrumbActions: /* action */ Action[_] => Boolean = null,
-    getTags: /* state */ T => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
-    getUserContext: /* state */ T => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
+    getTags: /* state */ T => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.Event * / any['tags'] */ js.Any = null,
+    getUserContext: /* state */ T => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
     stateTransformer: /* state */ T => _ = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()

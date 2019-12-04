@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 trait CredstashConfig extends js.Object {
   var awsOpts: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
   ] = js.undefined
   var dynamoOpts: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any
   ] = js.undefined
   var kmsKey: js.UndefOr[String] = js.undefined
   var kmsOpts: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any
   ] = js.undefined
   var table: js.UndefOr[String] = js.undefined
 }
@@ -21,10 +21,10 @@ trait CredstashConfig extends js.Object {
 object CredstashConfig {
   @scala.inline
   def apply(
-    awsOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
-    dynamoOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any = null,
+    awsOpts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
+    dynamoOpts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.DynamoDB.ClientConfiguration */ js.Any = null,
     kmsKey: String = null,
-    kmsOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
+    kmsOpts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.KMS.ClientConfiguration */ js.Any = null,
     table: String = null
   ): CredstashConfig = {
     val __obj = js.Dynamic.literal()

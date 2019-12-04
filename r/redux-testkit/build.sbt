@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-testkit"
-version := "1.0-dt-20181020Z-be22d6"
+version := "1.0-dt-20181020Z-53e3dc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-c08a69",
-  "org.scalablytyped" %%% "redux-thunk" % "2.3.0-71f895",
+  "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
+  "org.scalablytyped" %%% "redux-thunk" % "2.3.0-e005db",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -4,7 +4,6 @@ import typings.express.expressMod.Request
 import typings.express.expressMod.RequestHandler
 import typings.express.expressMod.Response
 import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
-import typings.shrinkDashRay.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

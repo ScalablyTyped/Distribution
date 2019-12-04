@@ -1,8 +1,8 @@
 package typings.cypress.Cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.Anon_Absolute
-import typings.cypress.Anon_Add
+import typings.cypress.Anon_AbsoluteName
+import typings.cypress.Anon_AddArgs
 import typings.cypress.Anon_Debug
 import typings.cypress.Anon_Defaults
 import typings.cypress.Anon_DefaultsOptions
@@ -67,9 +67,17 @@ import typings.cypress.cypressStrings.viewportHeight
 import typings.cypress.cypressStrings.viewportWidth
 import typings.cypress.cypressStrings.waitForAnimations
 import typings.cypress.cypressStrings.watchForFileChanges
+import typings.cypress.typesCyDashBlobDashUtilMod.BlobUtilStatic
+import typings.cypress.typesCyDashBluebirdMod.BluebirdStatic
+import typings.cypress.typesCyDashMinimatchMod.MinimatchOptions
+import typings.cypress.typesCyDashMomentMod.MomentStatic
+import typings.cypress.typesLodashMod.LoDashImplicitWrapper
 import typings.cypress.typesLodashMod.LoDashStatic
 import typings.cypress.typesSinonMod.SinonSpy
 import typings.cypress.typesSinonMod.SinonStub
+import typings.moment.momentMod.Moment
+import typings.moment.momentMod.MomentFormatSpecification
+import typings.moment.momentMod.MomentInput
 import typings.std.ArrayLike
 import typings.std.BeforeUnloadEvent
 import typings.std.Document
@@ -108,11 +116,11 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress.Blob.method()
     */
-  var Blob: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BlobUtil.BlobUtilStatic */ js.Any = js.native
+  var Blob: BlobUtilStatic = js.native
   /**
     * @see https://on.cypress.io/api/commands
     */
-  var Commands: Anon_Add = js.native
+  var Commands: Anon_AddArgs = js.native
   /**
     * @see https://on.cypress.io/cookies
     */
@@ -129,7 +137,7 @@ trait Cypress extends js.Object {
     * @example
     *   new Cypress.Promise((resolve, reject) => { ... })
     */
-  var Promise: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Bluebird.BluebirdStatic */ js.Any = js.native
+  var Promise: BluebirdStatic = js.native
   /**
     * @see https://on.cypress.io/api/screenshot-api
     */
@@ -145,7 +153,8 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress._.keys(obj)
     */
-  var `_`: LoDashStatic = js.native
+  @JSName("_")
+  var __Original: LoDashStatic = js.native
   /**
     * CPU architecture, from Node `os.arch()`
     *
@@ -167,7 +176,13 @@ trait Cypress extends js.Object {
     *
     * @see https://on.cypress.io/minimatch
     */
-  var minimatch: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Minimatch.minimatch */ js.Any = js.native
+  @JSName("minimatch")
+  var minimatch_Original: js.Function3[
+    /* target */ String, 
+    /* pattern */ String, 
+    /* options */ js.UndefOr[MinimatchOptions], 
+    Boolean
+  ] = js.native
   /**
     * Cypress automatically includes moment.js and exposes it as Cypress.moment.
     *
@@ -176,7 +191,8 @@ trait Cypress extends js.Object {
     * @example
     *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
     */
-  var moment: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Moment.MomentStatic */ js.Any = js.native
+  @JSName("moment")
+  var moment_Original: MomentStatic = js.native
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
     * @see https://on.cypress.io/catalog-of-events#App-Events
@@ -215,7 +231,7 @@ trait Cypress extends js.Object {
     // }
     ```
     */
-  var spec: Anon_Absolute = js.native
+  var spec: Anon_AbsoluteName = js.native
   /**
     * Cypress version string. i.e. "1.1.2"
     * @see https://on.cypress.io/version
@@ -457,6 +473,82 @@ trait Cypress extends js.Object {
   @JSName("$")
   def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
   /**
+    * Creates a lodash object which wraps value to enable implicit method chain sequences.
+    * Methods that operate on and return arrays, collections, and functions can be chained together.
+    * Methods that retrieve a single value or may return a primitive value will automatically end the
+    * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
+    *
+    * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
+    *
+    * The execution of chained methods is lazy, that is, it's deferred until value() is
+    * implicitly or explicitly called.
+    *
+    * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
+    * is an optimization to merge iteratee calls; this avoids the creation of intermediate
+    * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
+    * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
+    * accept only one argument. The heuristic for whether a section qualifies for shortcut
+    * fusion is subject to change.
+    *
+    * Chaining is supported in custom builds as long as the value() method is directly or
+    * indirectly included in the build.
+    *
+    * In addition to lodash methods, wrappers have Array and String methods.
+    * The wrapper Array methods are:
+    * concat, join, pop, push, shift, sort, splice, and unshift.
+    * The wrapper String methods are:
+    * replace and split.
+    *
+    * The wrapper methods that support shortcut fusion are:
+    * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
+    * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
+    *
+    * The chainable wrapper methods are:
+    * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
+    * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
+    * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
+    * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
+    * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
+    * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
+    * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
+    * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
+    * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
+    * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
+    * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
+    * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
+    * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
+    * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
+    * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
+    * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
+    *
+    * The wrapper methods that are not chainable by default are:
+    * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
+    * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
+    * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
+    * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
+    * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
+    * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
+    * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
+    * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
+    * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
+    * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
+    * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
+    * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
+    * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
+    * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
+    * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
+    * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
+    * upperFirst, value, and words.
+    **/
+  /**
+    * Lodash library
+    *
+    * @see https://on.cypress.io/_
+    * @example
+    *    Cypress._.keys(obj)
+    */
+  def `_`[T](value: T): LoDashImplicitWrapper[T] = js.native
+  /**
     * Returns all configuration objects.
     * @see https://on.cypress.io/config
     * @example
@@ -671,6 +763,67 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/cypress-log
     */
   def log(options: Partial[LogConfig]): Log = js.native
+  /**
+    * Cypress automatically includes minimatch and exposes it as Cypress.minimatch.
+    *
+    * @see https://on.cypress.io/minimatch
+    */
+  def minimatch(target: String, pattern: String): Boolean = js.native
+  def minimatch(target: String, pattern: String, options: MinimatchOptions): Boolean = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(): Moment = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(inp: MomentInput): Moment = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
+  /**
+    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+    *
+    * @see https://on.cypress.io/moment
+    * @see http://momentjs.com/
+    * @example
+    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+    */
+  def moment(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
   /**
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.

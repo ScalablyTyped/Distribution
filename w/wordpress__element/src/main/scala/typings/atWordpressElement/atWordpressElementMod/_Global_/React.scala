@@ -27,7 +27,7 @@ object React extends js.Object {
     * @return Dangerously-rendering element.
     */
   def RawHTML(
-    props: Anon_Children with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
+    props: Anon_Children with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLProps<HTMLDivElement> */ js.Any)
   ): typings.react.reactMod._Global_.JSX.Element = js.native
   /**
     * Checks if the provided WP element is empty.
@@ -36,7 +36,7 @@ object React extends js.Object {
     * @return True when an element is considered empty.
     */
   def isEmptyElement(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any
   ): Boolean = js.native
   /**
     * Serializes a React element to string.
@@ -48,14 +48,14 @@ object React extends js.Object {
     * @return Serialized element.
     */
   def renderToString(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any
   ): String = js.native
   def renderToString(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
     context: js.Any
   ): String = js.native
   def renderToString(
-    element: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
+    element: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactNode */ js.Any,
     context: js.Any,
     legacyContext: js.Any
   ): String = js.native

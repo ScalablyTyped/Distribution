@@ -437,7 +437,6 @@
 | 572 | [cli-spinner](./c/cli-spinner) | A simple spinner
 | 570 | [react-dnd](./r/react-dnd) | Drag and Drop for React
 | 569 | [watchify](./w/watchify) | watch mode for browserify builds
-| 568 | [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI
 | 568 | [text-table](./t/text-table) | borderless text tables with alignment
 | 566 | [object-path](./o/object-path) | Access deep object properties using a path
 | 565 | [detect-port](./d/detect-port) | Node.js implementation of port detector
@@ -2595,7 +2594,6 @@
 | 47 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 47 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG
 | 47 | [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node
-| 47 | [jest-config](./j/jest-config) | -
 | 47 | [jsonapi-serializer](./j/jsonapi-serializer) | A Node.js framework agnostic library for serializi
 | 47 | [lab](./l/lab) | Test utility
 | 47 | [lodash_dot_assignin](./l/lodash_dot_assignin) | The lodash method _.assignIn exported as a module.
@@ -2886,6 +2884,7 @@
 | 37 | [eth-lightwallet](./e/eth-lightwallet) | A lightweight ethereum javascript wallet.
 | 37 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 37 | [git-username](./g/git-username) | Get the username (or 'owner' name) from a git/GitH
+| 37 | [graphql-binding](./g/graphql-binding) | -
 | 37 | [html-webpack-template](./h/html-webpack-template) | A template with more features than the default htm
 | 37 | [idb](./i/idb) | A small wrapper that makes IndexedDB usable
 | 37 | [jsuri](./j/jsuri) | Uri and query string manipulation
@@ -3047,6 +3046,7 @@
 | 33 | [node-dogstatsd](./n/node-dogstatsd) | node client for extended StatsD server of Datadog
 | 33 | [normalize-scroll-left](./n/normalize-scroll-left) | Utility library to determine and normalize Element
 | 33 | [pem-jwk](./p/pem-jwk) | convert between PEM and JWK formats
+| 33 | [prisma-binding](./p/prisma-binding) | -
 | 33 | [pulumi__pulumi](./p/pulumi__pulumi) | Pulumi's Node.js SDK
 | 33 | [react-stripe-elements](./r/react-stripe-elements) | React components for Stripe.js and Stripe Elements
 | 33 | [redux-router](./r/redux-router) | Redux bindings for React Router — keep your router
@@ -4071,6 +4071,7 @@
 | 14 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio
 | 14 | [expo-file-system](./e/expo-file-system) | Provides access to the local file system on the de
 | 14 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
+| 14 | [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al
 | 14 | [ffprobe-static](./f/ffprobe-static) | Static binaries for ffprobe.
 | 14 | [firebase__auth](./f/firebase__auth) | Javascript library for Firebase Auth SDK
 | 14 | [generate-changelog](./g/generate-changelog) | Generate a changelog from git commits.
@@ -4080,7 +4081,6 @@
 | 14 | [hey-listen](./h/hey-listen) | Warning and invariant dev-ex messaging.
 | 14 | [ionic](./i/ionic) | A tool for creating and developing Ionic Framework
 | 14 | [ipify](./i/ipify) | Get your public IP address
-| 14 | [jasmine-expect](./j/jasmine-expect) | Write Beautiful Specs with Custom Matchers
 | 14 | [jdenticon](./j/jdenticon) | Javascript identicon generator
 | 14 | [jest__environment](./j/jest__environment) | -
 | 14 | [json-editor](./j/json-editor) | JSON Schema based editor
@@ -4348,7 +4348,6 @@
 | 11 | [fined](./f/fined) | Find a file given a declaration of locations.
 | 11 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o
 | 11 | [firebase__firestore](./f/firebase__firestore) | This is the 
-| 11 | [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas
 | 11 | [flagged-respawn](./f/flagged-respawn) | A tool for respawning node binaries when special f
 | 11 | [flatbush](./f/flatbush) | Fast static spatial index for rectangles
 | 11 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
@@ -4684,6 +4683,7 @@
 | 9 | [storybook__client-api](./s/storybook__client-api) | Storybook Client API
 | 9 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat
 | 9 | [super-error](./s/super-error) | Easily subclass errors
+| 9 | [tablesorter](./t/tablesorter) | tablesorter (FORK) is a jQuery plugin for turning 
 | 9 | [timezone-support](./t/timezone-support) | Lightweight time zone support for your application
 | 9 | [traverson](./t/traverson) | Hypermedia API/HATEOAS client for Node.js and the 
 | 9 | [ts-xor](./t/ts-xor) | Compose custom types containing mutually exclusive
@@ -5174,7 +5174,6 @@
 | 6 | [wtfnode](./w/wtfnode) | Utility to help find out why Node isn't exiting
 | 6 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
 | 6 | [zipcodes](./z/zipcodes) | Useful zipcode database with helper methods
-| 5 | [add-matchers](./a/add-matchers) | Write useful test matchers compatible with Jest an
 | 5 | [angular-breadcrumb](./a/angular-breadcrumb) | AngularJS module that generates a breadcrumb from 
 | 5 | [angular-hotkeys](./a/angular-hotkeys) | Automatic keyboard shortcuts for your Angular Apps
 | 5 | [ant-design__pro-layout](./a/ant-design__pro-layout) | ant-design-pro layout, easy to use pro scaffolding
@@ -5725,7 +5724,6 @@
 | 3 | [js-graph-algorithms](./j/js-graph-algorithms) | Package implements data structures and algorithms 
 | 3 | [jsdeferred](./j/jsdeferred) | Asynchronous library in JavaScript. Standalone and
 | 3 | [jshamcrest](./j/jshamcrest) | Library of matcher objects for JavaScript, based o
-| 3 | [jsnlog](./j/jsnlog) | Simple logging package. Use on client and/or serve
 | 3 | [json-patch-gen](./j/json-patch-gen) | JavaScript library that generates JSON patches (RF
 | 3 | [json-schema-typed](./j/json-schema-typed) | JSONSchema TypeScript definitions.
 | 3 | [json-stream-stringify](./j/json-stream-stringify) | JSON.Stringify as a readable stream
@@ -6124,7 +6122,6 @@
 | 2 | [math-trunc](./m/math-trunc) | ES6 Math.trunc() ponyfill
 | 2 | [merge-anything](./m/merge-anything) | Merge objects & other types recursively. A simple 
 | 2 | [merge-env](./m/merge-env) | An object merging function that has special suppor
-| 2 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor
 | 2 | [microevent_dot_ts](./m/microevent_dot_ts) | Zero cost events
 | 2 | [minecraft-scripting-types](./m/minecraft-scripting-types-shared) | Shared TypeScript definitions for Minecraft Bedroc
 | 2 | [minimal-bit-array](./m/minimal-bit-array) | Minimal bit array implementation that is compatibl
@@ -6585,7 +6582,6 @@
 | 1 | [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension
 | 1 | [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension
 | 1 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension
-| 1 | [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension
 | 1 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension
 | 1 | [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension
 | 1 | [jupyterlab__htmlviewer-ex](./j/jupyterlab__htmlviewer-extension) | JupyterLab extension to render HTML files
@@ -7505,6 +7501,7 @@
 | 0 | [rx-lite-joinpatterns](./r/rx-lite-joinpatterns) | Lightweight library with join pattern functions fo
 | 0 | [rx-lite-testing](./r/rx-lite-testing) | Lightweight library with testing functions for com
 | 0 | [rx-lite-time](./r/rx-lite-time) | Lightweight library with time-based functions for 
+| 0 | [rx_dot_wamp](./r/rx_dot_wamp) | A wrapper library for the autobahn wamp v1/v2 libr
 | 0 | [sasl-external](./s/sasl-external) | JavaScript implementation of EXTERNAL SASL mechani
 | 0 | [satnav](./s/satnav) | A micro front-end router
 | 0 | [sauronjs](./s/sauronjs) | frontend library for advanced interactivity based 

@@ -8,7 +8,7 @@ package object distNextDashServerLibUtilsMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.next.Anon_AmpPath
   import typings.next.Anon_Body
-  import typings.next.Anon_ComponentRouter
+  import typings.next.Anon_Component
   import typings.next.Anon_Context
   import typings.next.Anon_Document
   import typings.next.Anon_EnhanceApp
@@ -20,7 +20,7 @@ package object distNextDashServerLibUtilsMod {
   import typings.node.httpMod.ServerResponse
   import typings.react.reactMod.ComponentType
 
-  type AppPropsType[R /* <: NextRouter */, P] = AppInitialProps with (Anon_ComponentRouter[P, R])
+  type AppPropsType[R /* <: NextRouter */, P] = AppInitialProps with (Anon_Component[P, R])
   type AppTreeType = ComponentType[AppInitialProps with StringDictionary[js.Any]]
   type AppType = NextComponentType[AppContextType[NextRouter], AppInitialProps, AppPropsType[NextRouter, js.Object]]
   type ComponentsEnhancer = Anon_EnhanceApp | (Enhancer[NextComponentType[NextPageContext, js.Object, js.Object]])

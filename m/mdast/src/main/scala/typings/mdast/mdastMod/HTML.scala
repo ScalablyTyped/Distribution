@@ -17,7 +17,7 @@ trait HTML
 
 object HTML {
   @scala.inline
-  def apply(`type`: html, value: String, data: Data = null, position: Position = null): HTML = {
+  def apply(`type`: html, value: js.Any, data: Data = null, position: Position = null): HTML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

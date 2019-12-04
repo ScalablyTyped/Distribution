@@ -19,7 +19,7 @@ class GAWrapperArray protected () extends WrapperArray {
   def this(instanceArray: InstanceArray) = this()
   var instanceArray: InstanceArray = js.native
   var price: js.Any = js.native
-  var result: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
+  var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
   /**
     * @brief Validity of this sequence list.
     */

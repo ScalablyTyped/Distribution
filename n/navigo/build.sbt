@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "navigo"
-version := "7.0-dt-20180326Z-348f35"
+version := "7.0-dt-20180326Z-664ede"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

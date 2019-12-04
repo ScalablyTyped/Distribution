@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FileConstructor
-  extends Instantiable0[File]
+  extends Instantiable0[typings.std.File]
      with Instantiable1[
       (/* options */ ConstructorOptions with Anon_Contents) | (/* options */ ConstructorOptions with Anon_ContentsBuffer) | (/* options */ ConstructorOptions with Anon_ContentsReadableStream) | (/* options */ ConstructorOptions), 
-      BufferFile | File | NullFile | StreamFile
+      BufferFile | typings.std.File | NullFile | StreamFile
     ] {
   /**
     * Checks if a property is not managed internally.
@@ -23,6 +23,6 @@ trait FileConstructor
   /**
     * Checks if a given object is a vinyl file.
     */
-  def isVinyl(obj: js.Any): /* is vinyl.vinyl.File */ Boolean = js.native
+  def isVinyl(obj: js.Any): /* is std.File */ Boolean = js.native
 }
 

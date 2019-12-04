@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod.packet
 
-import typings.openpgp.Integer
+import typings.openpgp.openpgpMod.Integer
 import typings.openpgp.openpgpMod.`type`.keyid.Keyid
 import typings.std.Date
 import typings.std.Uint8Array

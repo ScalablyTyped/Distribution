@@ -1,8 +1,8 @@
 package typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.reactDashSimpleDashMaps.Anon_Default
 import typings.std.SVGPathElement
 import scala.scalajs.js

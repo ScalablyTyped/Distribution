@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import scala.scalajs.js
@@ -14,9 +15,7 @@ trait IonRadio extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, the user cannot interact with the radio.
     */
@@ -41,7 +40,7 @@ object IonRadio {
     checked: Boolean,
     disabled: Boolean,
     name: String,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     mode: ios | md = null,
     value: js.Any = null
   ): IonRadio = {

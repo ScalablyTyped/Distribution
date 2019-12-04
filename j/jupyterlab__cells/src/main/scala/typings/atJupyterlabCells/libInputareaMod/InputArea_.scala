@@ -3,8 +3,8 @@ package typings.atJupyterlabCells.libInputareaMod
 import typings.atJupyterlabCells.libInputareaMod.InputArea.IContentFactory
 import typings.atJupyterlabCells.libInputareaMod.InputArea.IOptions
 import typings.atJupyterlabCells.libModelMod.ICellModel
+import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorMod.CodeEditorWrapper
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
-import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
 import typings.atPhosphorWidgets.atPhosphorWidgetsMod.Widget
 import typings.std.HTMLElement
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.atJupyterlabImageviewer
 
 import typings.atJupyterlabApputils.libPrintingMod.Printing.IPrintable
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.ABCWidgetFactory
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget

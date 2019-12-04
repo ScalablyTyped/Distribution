@@ -1,9 +1,9 @@
 package typings.reactDashCalendarDashTimeline
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.Ref
 import typings.react.reactMod.SyntheticEvent

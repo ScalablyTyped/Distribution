@@ -8,7 +8,6 @@ import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectDragSource
 import typings.reactDashDnd.libInterfacesConnectorsMod.ConnectableElement
 import typings.reactDashDnd.libInterfacesOptionsMod.DragPreviewOptions
 import typings.reactDashDnd.libInterfacesOptionsMod.DragSourceOptions
-import typings.reactDashSortableDashTree.NumberOrStringArray
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.ltr
 import typings.reactDashSortableDashTree.reactDashSortableDashTreeStrings.rtl
 import scala.scalajs.js

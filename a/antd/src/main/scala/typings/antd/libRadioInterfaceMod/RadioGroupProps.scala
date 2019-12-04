@@ -5,10 +5,10 @@ import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.antd.libCheckboxGroupMod.AbstractCheckboxGroupProps
 import typings.antd.libCheckboxGroupMod.CheckboxOptionType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js

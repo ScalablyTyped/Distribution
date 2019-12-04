@@ -17,7 +17,7 @@ trait Props extends js.Object {
   var contentComponent: js.UndefOr[ComponentType[DrawerContentComponentProps]] = js.undefined
   var contentOptions: js.UndefOr[js.Object] = js.undefined
   var descriptors: SceneDescriptorMap
-  var drawerOpenProgress: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any
+  var drawerOpenProgress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any
   var drawerPosition: left | right
   var navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams]
   var screenProps: js.UndefOr[js.Any] = js.undefined
@@ -28,7 +28,7 @@ object Props {
   @scala.inline
   def apply(
     descriptors: SceneDescriptorMap,
-    drawerOpenProgress: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
+    drawerOpenProgress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
     drawerPosition: left | right,
     navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams],
     contentComponent: ComponentType[DrawerContentComponentProps] = null,

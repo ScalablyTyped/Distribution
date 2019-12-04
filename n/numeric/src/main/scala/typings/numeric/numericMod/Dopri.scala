@@ -1,8 +1,5 @@
 package typings.numeric.numericMod
 
-import typings.numeric.Matrix
-import typings.numeric.Vector
-import typings.numeric.VectorBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,22 +17,22 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Application")
 @js.native
 class Application protected () extends js.Object {
-  val AnswerWizard: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
+  val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
   val Application: typings.activexDashOutlook.Outlook.Application = js.native
-  val Assistance: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
-  val Assistant: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
-  val COMAddIns: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
+  val Assistance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
+  val Assistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
+  val COMAddIns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
   val Class: OlObjectClass = js.native
   val DefaultProfileName: String = js.native
   val Explorers: typings.activexDashOutlook.Outlook.Explorers = js.native
-  var FeatureInstall: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
+  var FeatureInstall: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
   val Inspectors: typings.activexDashOutlook.Outlook.Inspectors = js.native
   val IsTrusted: Boolean = js.native
-  val LanguageSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
+  val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
   val Name: String = js.native
   var `Outlook.Application_typekey`: typings.activexDashOutlook.Outlook.Application = js.native
   val Parent: js.Any = js.native
-  val PickerDialog: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
+  val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
   val ProductCode: String = js.native
   val Reminders: typings.activexDashOutlook.Outlook.Reminders = js.native
   val Session: NameSpace = js.native

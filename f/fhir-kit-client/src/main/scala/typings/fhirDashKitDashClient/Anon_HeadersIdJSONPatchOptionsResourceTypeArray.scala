@@ -1,5 +1,6 @@
 package typings.fhirDashKitDashClient
 
+import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.CustomResourceType
 import typings.jsonDashPatch.jsonDashPatchMod.OpPatch
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options

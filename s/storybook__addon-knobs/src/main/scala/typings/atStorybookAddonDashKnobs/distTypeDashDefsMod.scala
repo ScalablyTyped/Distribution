@@ -38,7 +38,7 @@ object distTypeDashDefsMod extends js.Object {
   
   type Knob[T /* <: KnobType */] = KnobPlus[
     T, 
-    ((Pick[SelectTypeKnob[SelectTypeKnobValue], value | options]) with Anon_SelectV2) | Anon_Callback | (Pick[
+    ((Pick[SelectTypeKnob[SelectTypeKnobValue], value | options]) with Anon_SelectV2) | Anon_CallbackHideLabel | (Pick[
       ArrayTypeKnob | BooleanTypeKnob | ColorTypeKnob | DateTypeKnob | FileTypeKnob | NumberTypeKnob | ObjectTypeKnob[js.Any] | OptionsTypeKnob[js.Any] | RadiosTypeKnob | TextTypeKnob, 
       options | value | optionsObj | accept | separator | range | min | max | step
     ])

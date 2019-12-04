@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ArrowArrowV extends js.Object {
-  var Arrow: Anon_HeightMarginLeft
+  var Arrow: Anon_HeightMarginLeftMarginTop
   var ArrowV: Anon_HeightMarginLeftWidth
   var Body: Anon_BackgroundColorBorderTopColor
   var BodyBottomLine: Anon_BackgroundColorBorderBottomColor
@@ -16,9 +16,9 @@ trait Anon_ArrowArrowV extends js.Object {
   var Footer: Anon_BackgroundColorColorFontSizePaddingHorizontal
   var Header: Anon_BackgroundColorColorFontSizePaddingBottom
   var Item: Anon_AlignItemsBackgroundColorFlexDirection
-  var Line: Anon_AlignItemsBorderBottomColor
+  var Line: Anon_AlignItemsBorderBottomColorBorderBottomWidth
   var Thumb: Anon_HeightMarginRight
-  var column: Anon_Flex
+  var column: Anon_FlexFlexDirection
   var multipleLine: Anon_PaddingVertical
   var multipleThumb: Anon_HeightWidth
   var underlayColor: Anon_BackgroundColorString
@@ -27,7 +27,7 @@ trait Anon_ArrowArrowV extends js.Object {
 object Anon_ArrowArrowV {
   @scala.inline
   def apply(
-    Arrow: Anon_HeightMarginLeft,
+    Arrow: Anon_HeightMarginLeftMarginTop,
     ArrowV: Anon_HeightMarginLeftWidth,
     Body: Anon_BackgroundColorBorderTopColor,
     BodyBottomLine: Anon_BackgroundColorBorderBottomColor,
@@ -38,9 +38,9 @@ object Anon_ArrowArrowV {
     Footer: Anon_BackgroundColorColorFontSizePaddingHorizontal,
     Header: Anon_BackgroundColorColorFontSizePaddingBottom,
     Item: Anon_AlignItemsBackgroundColorFlexDirection,
-    Line: Anon_AlignItemsBorderBottomColor,
+    Line: Anon_AlignItemsBorderBottomColorBorderBottomWidth,
     Thumb: Anon_HeightMarginRight,
-    column: Anon_Flex,
+    column: Anon_FlexFlexDirection,
     multipleLine: Anon_PaddingVertical,
     multipleThumb: Anon_HeightWidth,
     underlayColor: Anon_BackgroundColorString

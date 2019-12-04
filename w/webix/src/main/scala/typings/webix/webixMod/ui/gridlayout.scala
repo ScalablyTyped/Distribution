@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.gridlayout")
 @js.native
-class gridlayout () extends baseview {
+class gridlayout ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_gridlayout: WebixCallback = js.native
   @JSName("config")
   var config_gridlayout: gridlayoutConfig = js.native
   def addView(view: js.Any): String | Double = js.native

@@ -1,7 +1,7 @@
 package typings.antd
 
 import typings.antd.antdStrings.load
-import typings.antd.esTreeTreeMod.AntTreeNode
+import typings.antd.libTreeTreeMod.AntTreeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

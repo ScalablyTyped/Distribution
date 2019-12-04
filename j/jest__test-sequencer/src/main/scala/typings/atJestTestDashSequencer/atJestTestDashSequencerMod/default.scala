@@ -12,13 +12,15 @@ class default () extends TestSequencer {
   /* CompleteClass */
   override var _cache: js.Any = js.native
   /* CompleteClass */
-  override def _getCache(test: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ js.Any): Cache = js.native
+  override def _getCache(
+    test: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ js.Any
+  ): Cache = js.native
   /* CompleteClass */
   override def _getCachePath(context: Context): String = js.native
   /* CompleteClass */
   override def cacheResults(
     tests: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ],
     results: AggregatedResult
   ): Unit = js.native
@@ -43,10 +45,10 @@ class default () extends TestSequencer {
   /* CompleteClass */
   override def sort(
     tests: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
     ]
   ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Test */ _
   ] = js.native
 }
 

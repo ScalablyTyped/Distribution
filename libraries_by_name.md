@@ -54,7 +54,6 @@
 | [activex-wia](./a/activex-wia) | - | - |
 | [activex-word](./a/activex-word) | - | - |
 | [adal-angular](./a/adal-angular) | Windows Azure Active Directory Client Library for  | implicit, js, AAD, adal, oauth |
-| [add-matchers](./a/add-matchers) | Write useful test matchers compatible with Jest an | BDD, TDD, jasmine, testing |
 | [add-zero](./a/add-zero) | Add a leading zero to a number. | zero, leading, places, decimal, number, format, formatter, digits |
 | [add2home](./a/add2home) | - | - |
 | [address](./a/address) | Get current machine IP, MAC and DNS servers. | address, ip, ipv4, mac |
@@ -1973,6 +1972,7 @@
 | [falcor-express](./f/falcor-express) | A falcor server for express. | - |
 | [falcor-http-datasource](./f/falcor-http-datasource) | This package contains falcor components for use in | Falcor, Browser |
 | [falcor-json-graph](./f/falcor-json-graph) | A set of factory functions for creating JSON Graph | falcorjs, Observable, JSON, JSON Graph |
+| [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al | Falcor, Router, Netflix, falcorjs |
 | [famous](./f/famous) | Famous Engine ================= | - |
 | [fancy-log](./f/fancy-log) | Log things, prefixed with a timestamp. | console.log, log, logger, logging, pretty, timestamp |
 | [fancybox](./f/fancybox) | fancyBox is a tool that offers a nice and elegant  | fancybox, fancy, box, lightbox |
@@ -2109,7 +2109,6 @@
 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F | - |
 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK | - |
 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types | - |
-| [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas | - |
 | [firebase__storage-types](./f/firebase__storage-types) | @firebase/storage Types | - |
 | [firebase__util](./f/firebase__util) | _NOTE: This is specifically tailored for Firebase  | - |
 | [firebird](./f/firebird) | Firebird binding to node, uses libfbclient. | - |
@@ -2567,6 +2566,7 @@
 | [graphql](./g/graphql) | A Query Language and Runtime which can target any  | graphql, graphql-js |
 | [graphql-api-koa](./g/graphql-api-koa) | GraphQL API Koa middleware; the first Node.js Grap | graphql, api, koa, esm, mjs |
 | [graphql-bigint](./g/graphql-bigint) | A 53-bit wide implementation of integers for Graph | graphql, int, bigint, long, number |
+| [graphql-binding](./g/graphql-binding) | - | - |
 | [graphql-compose](./g/graphql-compose) | GraphQL schema builder from different data sources | graphql, compose |
 | [graphql-config](./g/graphql-config) | The easiest way to configure your development envi | graphql, config, relay, apollo |
 | [graphql-date](./g/graphql-date) | GraphQL Date Type | graphql, date, type, datetype |
@@ -3202,7 +3202,6 @@
 | [jasmine-data_driven_tests](./j/jasmine-data_driven_tests) | This plugin for Jasmine 2.x allows you to easily c | jasmine, unit, test, testing, helpers, all |
 | [jasmine-enzyme](./j/jasmine-enzyme) | Jasmine assertions for enzyme | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, jasmine, enzyme |
 | [jasmine-es6-promise-match](./j/jasmine-es6-promise-matchers) | Jasmine matchers for testing ES6 Promises | Promise, ES6Promise, Jasmine, matchers, unit, test, tests |
-| [jasmine-expect](./j/jasmine-expect) | Write Beautiful Specs with Custom Matchers | BDD, TDD, assertions, expectations, expects, jasmine, jest, test-matchers, testing |
 | [jasmine-fixture](./j/jasmine-fixture) | Makes injecting HTML snippets into the DOM easy &  | jasmine, bdd |
 | [jasmine-given](./j/jasmine-given) | Adds a Given-When-Then DSL to jasmine as an altern | jasmine, bdd |
 | [jasmine-jquery](./j/jasmine-jquery) | jQuery matchers and fixture loader for Jasmine fra | jasmine, jquery |
@@ -3229,7 +3228,6 @@
 | [jest-axe](./j/jest-axe) | Custom Jest matcher for aXe for testing accessibil | jest, matcher, axe, accessibility, a11y |
 | [jest-changed-files](./j/jest-changed-files) | A module used internally by Jest to check which fi | - |
 | [jest-cli](./j/jest-cli) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| [jest-config](./j/jest-config) | - | - |
 | [jest-dev-server](./j/jest-dev-server) | Starts a server before your Jest tests and tears i | jest, jest-environment, server |
 | [jest-diff](./j/jest-diff) | - | - |
 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa | - |
@@ -3504,7 +3502,6 @@
 | [jshamcrest](./j/jshamcrest) | Library of matcher objects for JavaScript, based o | - |
 | [jsmediatags](./j/jsmediatags) | Media Tags Reader (ID3, MP4) | ID3, tags, mp3, audio, mp4 |
 | [jsmockito](./j/jsmockito) | Javascript mocking framework inspired by the aweso | - |
-| [jsnlog](./j/jsnlog) | Simple logging package. Use on client and/or serve | logging, client, exceptions, ajax, timeouts, debugging, winston |
 | [jsnox](./j/jsnox) | Write concise React components without JSX | react, reactjs, jsx |
 | [json-buffer](./j/json-buffer) | JSON parse & stringify that supports binary via bo | - |
 | [json-editor](./j/json-editor) | JSON Schema based editor | json, schema, jsonschema, editor |
@@ -3622,7 +3619,6 @@
 | [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension | - |
 | [jupyterlab__coreutils](./j/jupyterlab__coreutils) | JupyterLab - Core Utilities | - |
 | [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget | - |
-| [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension | - |
 | [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
 | [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
 | [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
@@ -4423,7 +4419,6 @@
 | [material-ui-datatables](./m/material-ui-datatables) | An another React Data tables component. | react, react-component, material design, material-ui, datatables |
 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone | pagination, material-ui |
 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material  | react, react-component, material design, material-ui |
-| [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI | react, react-component, material design, material-ui, icons |
 | [material-ui__lab](./m/material-ui__lab) | Material-UI Lab - Incubator for Material-UI React  | react, react-component, material design, material-ui, lab |
 | [material__animation](./m/material__animation) | Animation Variables and Mixins used by Material Co | material components, material design, animation |
 | [material__auto-init](./m/material__auto-init) | Declarative, easy-to-use auto-initialization for M | - |
@@ -4513,13 +4508,11 @@
 | [meteor](./m/meteor) | Meteor, the JavaScript App Platform | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
 | [meteor-astronomy](./m/meteor-astronomy) | - | - |
-| [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
 | [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
 | [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
 | [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
 | [meteor-roles](./m/meteor-roles) | - | - |
-| [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
 | [meteor-universe-i18n](./m/meteor-universe-i18n) | - | - |
 | [method-override](./m/method-override) | Override HTTP verbs | - |
 | [methods](./m/methods) | HTTP methods that node supports | http, methods |
@@ -5514,6 +5507,7 @@
 | [printj](./p/printj) | Pure-JS printf | printf, sprintf, format, string |
 | [priorityqueuejs](./p/priorityqueuejs) | a simple priority queue data structure | heap, priority, queue, priority queue, data structure |
 | [prism-react-renderer](./p/prism-react-renderer) | Renders highlighted Prism output using React | - |
+| [prisma-binding](./p/prisma-binding) | - | - |
 | [prismic-dom](./p/prismic-dom) | render prismic json fragments in HTML | - |
 | [private-ip](./p/private-ip) | Check if IP address is private. | ip, address, private |
 | [probability-distributions](./p/probability-distributions) | Generate random variables from a variety of probab | statistical distributions, normal distribution, gamma distribution, beta distribution, Laplace distribution, Poisson distribution, Chi-squared distribution, probability, probability distributions, random, random numbers, random variates, random variables, Random words, random number generator, Rstats, Rlang, R-stats, prng, Uniform distribution, Sampling |
@@ -6624,6 +6618,7 @@
 | [rx-lite-time](./r/rx-lite-time) | Lightweight library with time-based functions for  | React, Reactive, Events, Rx, RxJS |
 | [rx-lite-virtualtime](./r/rx-lite-virtualtime) | Lightweight library with virtual time functions fo | React, Reactive, Events, Rx, RxJS |
 | [rx-node](./r/rx-node) | RxJS Bindings for Node.js and io.js | Rx, RxJS, EventEmitter, Streams, Reactive |
+| [rx_dot_wamp](./r/rx_dot_wamp) | A wrapper library for the autobahn wamp v1/v2 libr | rx, rxjs, wamp, async, realtime |
 | [rxjs](./r/rxjs) | Reactive Extensions for modern JavaScript | Rx, RxJS, ReactiveX, ReactiveExtensions, Streams, Observables, Observable, Stream, ES6, ES2015 |
 | [rxjs-compat](./r/rxjs-compat) |  RxJS: Reactive Extensions For JavaScript ======== | - |
 | [s3-download-stream](./s/s3-download-stream) | s3 download streams | s3 |
@@ -7277,6 +7272,7 @@
 | [table-resolver](./t/table-resolver) | Table resolution utilities | table, tables, resolve, resolving, algorithm, reactabular |
 | [tableau](./t/tableau) | Construct rows and columns from an alphabet with w | tableau, cipher, encrypt, decrypt |
 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects | object, html, table |
+| [tablesorter](./t/tablesorter) | tablesorter (FORK) is a jQuery plugin for turning  | table, sort, sorting, alphanumeric, natural, jquery-plugin |
 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Ins | terminal, tab, unix, console, complete, completion |
 | [tabulator](./t/tabulator) | Put data into tables | - |
 | [tabulator-tables](./t/tabulator-tables) | Interactive table generation JavaScript library | table, grid, datagrid, tabulator, editable, cookie, sort, format, resizable, list, scrollable, ajax, json, widget, jquery, react, angular, vue |

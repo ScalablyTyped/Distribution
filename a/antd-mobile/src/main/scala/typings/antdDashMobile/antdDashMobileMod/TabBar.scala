@@ -1,6 +1,6 @@
 package typings.antdDashMobile.antdDashMobileMod
 
-import typings.antdDashMobile.TypeofClassItemDefaultPropsItemTabBarItemProps
+import typings.antdDashMobile.TypeofClassItemDefaultPropsItem
 import typings.antdDashMobile.libTabDashBarMod.AntTabbarProps
 import typings.antdDashMobile.libTabDashBarMod.default
 import scala.scalajs.js
@@ -15,7 +15,7 @@ class TabBar () extends default
 @JSImport("antd-mobile", "TabBar")
 @js.native
 object TabBar extends js.Object {
-  var Item: TypeofClassItemDefaultPropsItemTabBarItemProps = js.native
+  var Item: TypeofClassItemDefaultPropsItem = js.native
   var defaultProps: AntTabbarProps = js.native
 }
 

@@ -1,10 +1,5 @@
 package typings.reapop.reapopMod
 
-import typings.reapop.DEFAULT_STATUS
-import typings.reapop.ERROR_STATUS
-import typings.reapop.INFO_STATUS
-import typings.reapop.SUCCESS_STATUS
-import typings.reapop.WARNING_STATUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

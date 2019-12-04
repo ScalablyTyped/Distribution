@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object distEs2015ComponentTransformTransformMod extends js.Object {
   @js.native
   abstract class Transform () extends Component {
-    var children: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Transform> */ js.Any = js.native
+    var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Transform> */ js.Any = js.native
     var dirtyLocal: Boolean = js.native
     var isLocalRotate: Boolean = js.native
     var isLocalScale: Boolean = js.native

@@ -22,5 +22,5 @@ package object reactDashNativeDashCalendarsMod {
   type CalendarMarkingProps = _CalendarMarkingProps | js.Object
   type CalendarThemeIdStyle = StringDictionary[ViewStyle | TextStyle]
   type DateCallbackHandler = js.Function1[/* date */ DateObject, Unit]
-  type TCalendarDate = Date | DateObject | Double | String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify XDate */ js.Any)
+  type TCalendarDate = Date | DateObject | Double | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XDate */ js.Any)
 }

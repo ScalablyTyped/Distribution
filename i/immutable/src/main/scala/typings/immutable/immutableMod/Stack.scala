@@ -1,6 +1,6 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.Collection.Indexed
+import typings.immutable.Immutable.Collection.Indexed
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ trait Stack[T] extends Indexed[T] {
     *
     * Note: `clear` can be used in `withMutations`.
     */
-  def clear(): Stack[T] = js.native
+  def clear(): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Returns a new Set with only the values for which the `predicate`
     * function returns true.
@@ -41,12 +41,12 @@ trait Stack[T] extends Indexed[T] {
   @JSName("filter")
   def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-  ): Set[F] = js.native
+  ): typings.immutable.Immutable.Set[F] = js.native
   @JSName("filter")
   def filter_F_T_Set[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): Set[F] = js.native
+  ): typings.immutable.Immutable.Set[F] = js.native
   // Reading values
   /**
     * Alias for `Stack.first()`.
@@ -55,15 +55,15 @@ trait Stack[T] extends Indexed[T] {
   /**
     * Alias for `Stack#shift` and is not equivalent to `List#pop`.
     */
-  def pop(): Stack[T] = js.native
+  def pop(): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Alias for `Stack#unshift` and is not equivalent to `List#push`.
     */
-  def push(values: T*): Stack[T] = js.native
+  def push(values: T*): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Alias for `Stack#unshiftAll`.
     */
-  def pushAll(iter: Iterable[T]): Stack[T] = js.native
+  def pushAll(iter: Iterable[T]): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Returns a new Stack with a size ones less than this Stack, excluding
     * the first item in this Stack, shifting all other values to a lower index.
@@ -74,7 +74,7 @@ trait Stack[T] extends Indexed[T] {
     *
     * Note: `shift` can be used in `withMutations`.
     */
-  def shift(): Stack[T] = js.native
+  def shift(): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Returns a new Stack with the provided `values` prepended, shifting other
     * values ahead to higher indices.
@@ -83,13 +83,13 @@ trait Stack[T] extends Indexed[T] {
     *
     * Note: `unshift` can be used in `withMutations`.
     */
-  def unshift(values: T*): Stack[T] = js.native
+  def unshift(values: T*): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * Like `Stack#unshift`, but accepts a collection rather than varargs.
     *
     * Note: `unshiftAll` can be used in `withMutations`.
     */
-  def unshiftAll(iter: Iterable[T]): Stack[T] = js.native
+  def unshiftAll(iter: Iterable[T]): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * @see `Map#wasAltered`
     */
@@ -108,15 +108,15 @@ trait Stack[T] extends Indexed[T] {
 @JSImport("immutable", "Stack")
 @js.native
 object Stack extends js.Object {
-  def apply(): Stack[_] = js.native
-  def apply[T](collection: Iterable[T]): Stack[T] = js.native
+  def apply(): typings.immutable.Immutable.Stack[_] = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Stack[T] = js.native
   /**
     * True if the provided value is a Stack
     */
-  def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ Boolean = js.native
+  def isStack(maybeStack: js.Any): /* is immutable.Immutable.Stack<any> */ Boolean = js.native
   /**
     * Creates a new Stack containing `values`.
     */
-  def of[T](values: T*): Stack[T] = js.native
+  def of[T](values: T*): typings.immutable.Immutable.Stack[T] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distEs2015UtilsLogMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Log$ * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Log$ * / any */ @js.native
   class Log () extends js.Object
   
 }

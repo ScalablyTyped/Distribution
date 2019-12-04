@@ -13,10 +13,10 @@ object s3DashUploadDashStreamMod extends js.Object {
   @js.native
   trait S3StreamUploader extends js.Object {
     def upload(
-      destinationDetails: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3.PutObjectRequest */ js.Any
+      destinationDetails: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.S3.PutObjectRequest */ js.Any
     ): S3WriteStream = js.native
     def upload(
-      destinationDetails: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3.PutObjectRequest */ js.Any,
+      destinationDetails: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.S3.PutObjectRequest */ js.Any,
       sessionDetails: js.Any
     ): S3WriteStream = js.native
   }
@@ -27,6 +27,8 @@ object s3DashUploadDashStreamMod extends js.Object {
     def maxPartSize(sizeInBytes: Double): Unit = js.native
   }
   
-  def apply(client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any): S3StreamUploader = js.native
+  def apply(
+    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.S3 */ js.Any
+  ): S3StreamUploader = js.native
 }
 

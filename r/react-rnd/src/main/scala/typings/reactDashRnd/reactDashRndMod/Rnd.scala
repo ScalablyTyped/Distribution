@@ -1,9 +1,8 @@
 package typings.reactDashRnd.reactDashRndMod
 
 import typings.reDashResizable.reDashResizableMod.Resizable
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
-import typings.reactDashRnd.$TODO
+import typings.react.reactMod.NativeMouseEvent
 import typings.reactDashRnd.Anon_Height
 import typings.reactDashRnd.Anon_HeightWidth
 import typings.reactDashRnd.Anon_HeightWidthNumber
@@ -42,35 +41,35 @@ class Rnd protected ()
   def onDragStop(e: RndDragEvent, data: DraggableData): `false` | Unit = js.native
   def onResize(
     e: MouseEvent,
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    direction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement,
     delta: Anon_HeightWidth
   ): Unit = js.native
   def onResize(
     e: TouchEvent,
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    direction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement,
     delta: Anon_HeightWidth
   ): Unit = js.native
   def onResizeStart(
     e: typings.react.reactMod.MouseEvent[HTMLDivElement, NativeMouseEvent],
-    dir: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement
   ): Unit = js.native
   def onResizeStart(
     e: typings.react.reactMod.TouchEvent[HTMLDivElement],
-    dir: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement
   ): Unit = js.native
   def onResizeStop(
     e: MouseEvent,
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    direction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement,
     delta: Anon_HeightWidth
   ): Unit = js.native
   def onResizeStop(
     e: TouchEvent,
-    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
+    direction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ js.Any,
     elementRef: HTMLDivElement,
     delta: Anon_HeightWidth
   ): Unit = js.native

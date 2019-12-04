@@ -3,6 +3,7 @@ package typings.atIonicAngular.distDirectivesProxiesMod
 import typings.atAngularCore.atAngularCoreMod.ChangeDetectorRef
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.NgZone
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,7 @@ class IonNavLink protected ()
     * The transition direction when navigating to another page.
     */
   /* CompleteClass */
-  override var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = js.native
+  override var routerDirection: RouterDirection = js.native
   var z: NgZone = js.native
 }
 

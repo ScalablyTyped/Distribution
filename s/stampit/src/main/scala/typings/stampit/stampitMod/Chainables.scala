@@ -1,6 +1,5 @@
 package typings.stampit.stampitMod
 
-import typings.stampit.PropertyMap
 import typings.stampit.stampitMod.stampit.Composer
 import typings.stampit.stampitMod.stampit.Initializer
 import typings.std.PropertyDescriptorMap

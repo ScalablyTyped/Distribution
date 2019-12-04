@@ -1,7 +1,7 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.Collection.Indexed
-import typings.immutable.immutableMod.Collection.Keyed
+import typings.immutable.Immutable.Collection.Indexed
+import typings.immutable.Immutable.Collection.Keyed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

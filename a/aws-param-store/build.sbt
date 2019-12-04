@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-param-store"
-version := "2.1-dt-20190207Z-c3ed36"
+version := "2.1-dt-20190207Z-1379ba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

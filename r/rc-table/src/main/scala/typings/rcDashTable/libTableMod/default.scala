@@ -1,10 +1,10 @@
 package typings.rcDashTable.libTableMod
 
 import typings.rcDashTable.Anon_BodyStyle
+import typings.rcDashTable.Anon_Children
 import typings.rcDashTable.Anon_ChildrenColumns
-import typings.rcDashTable.Anon_ChildrenColumnsAny
 import typings.rcDashTable.Anon_Components
-import typings.rcDashTable.TypeofClassColumnGroupIsTableColumnGroup
+import typings.rcDashTable.TypeofClassColumnGroup
 import typings.rcDashTable.libInterfaceMod.ColumnType
 import typings.rcDashTable.libInterfaceMod.DefaultValueType
 import typings.react.reactMod.FunctionComponent
@@ -24,9 +24,9 @@ class default[ValueType] protected () extends Table[ValueType] {
 @js.native
 object default extends js.Object {
   var Column: FunctionComponent[ColumnType[Record[String, _]]] = js.native
-  var ColumnGroup: TypeofClassColumnGroupIsTableColumnGroup = js.native
+  var ColumnGroup: TypeofClassColumnGroup = js.native
   var childContextTypes: Anon_Components = js.native
   var defaultProps: Anon_BodyStyle = js.native
-  def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): Anon_ChildrenColumnsAny | Anon_ChildrenColumns = js.native
+  def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): Anon_Children | Anon_ChildrenColumns = js.native
 }
 

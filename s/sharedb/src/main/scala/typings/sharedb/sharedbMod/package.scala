@@ -10,7 +10,7 @@ package object sharedbMod {
   import typings.sharedb.sharedbNumbers.`true`
 
   type AddNumOp = typings.sharedb.libSharedbMod.AddNumOp
-  type BasicCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type BasicCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error], Unit]
   type DBQueryCallback = js.Function3[
     /* err */ Error | Null, 
     /* snapshots */ js.Array[Snapshot], 

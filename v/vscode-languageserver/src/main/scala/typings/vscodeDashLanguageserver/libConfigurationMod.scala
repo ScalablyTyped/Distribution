@@ -1,5 +1,8 @@
 package typings.vscodeDashLanguageserver
 
+import typings.vscodeDashLanguageserver.libConfigurationMod.Configuration
+import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod.Feature
+import typings.vscodeDashLanguageserver.vscodeDashLanguageserverMod._RemoteWorkspace
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolDotConfigurationMod.ConfigurationItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +19,6 @@ object libConfigurationMod extends js.Object {
     def getConfiguration(section: String): Thenable[_] = js.native
   }
   
-  val ConfigurationFeature: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Feature<_RemoteWorkspace, Configuration> */ js.Any = js.native
+  val ConfigurationFeature: Feature[_RemoteWorkspace, Configuration] = js.native
 }
 

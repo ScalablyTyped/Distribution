@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.gage")
 @js.native
-class gage () extends baseview {
+class gage ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_gage: WebixCallback = js.native
   @JSName("config")
   var config_gage: gageConfig = js.native
   def attachEvent(`type`: gageEventName, functor: WebixCallback): String | Double = js.native

@@ -16,7 +16,7 @@ trait ConsumerOptions extends js.Object {
   var queueUrl: js.UndefOr[String] = js.undefined
   var region: js.UndefOr[String] = js.undefined
   var sqs: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any
   ] = js.undefined
   var stopped: js.UndefOr[Boolean] = js.undefined
   var terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined
@@ -37,7 +37,7 @@ object ConsumerOptions {
     pollingWaitTimeMs: Int | Double = null,
     queueUrl: String = null,
     region: String = null,
-    sqs: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SQS */ js.Any = null,
+    sqs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any = null,
     stopped: js.UndefOr[Boolean] = js.undefined,
     terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined,
     visibilityTimeout: Int | Double = null,

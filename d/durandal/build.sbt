@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "durandal"
-version := "2.1.0-dt-20191014Z-478e4e"
+version := "2.1.0-dt-20191014Z-9c8444"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
   "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-76b7d5",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

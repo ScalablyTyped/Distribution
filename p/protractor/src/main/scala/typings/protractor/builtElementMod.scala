@@ -505,13 +505,13 @@ object builtElementMod extends js.Object {
     def `then`[T](
       fn: js.Function1[
           /* value */ js.Array[_ | ElementFinder], 
-          T | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
         ]
     ): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
           /* value */ js.Array[_ | ElementFinder], 
-          T | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
         ],
       errorFn: js.Function1[/* error */ js.Any, _]
     ): js.Promise[T] = js.native

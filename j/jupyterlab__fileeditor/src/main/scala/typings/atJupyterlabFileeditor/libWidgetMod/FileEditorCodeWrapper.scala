@@ -1,6 +1,6 @@
 package typings.atJupyterlabFileeditor.libWidgetMod
 
-import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
+import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorMod.CodeEditorWrapper
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabFileeditor.libWidgetMod.FileEditor.IOptions
 import scala.scalajs.js

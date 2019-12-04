@@ -25,5 +25,6 @@ trait promise
 
 @JSImport("webix", "promise")
 @js.native
-object promise extends TopLevel[promise]
+object promise
+  extends TopLevel[typings.webix.webix.promise]
 

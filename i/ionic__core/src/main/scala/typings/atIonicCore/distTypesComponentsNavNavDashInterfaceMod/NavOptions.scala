@@ -1,14 +1,15 @@
 package typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod
 
+import typings.atIonicCore.atIonicCoreMod.FrameworkDelegate
+import typings.atIonicCore.atIonicCoreMod.Mode
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavOptions extends RouterOutletOptions {
-  var delegate: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
-  ] = js.undefined
+  var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
   var updateURL: js.UndefOr[Boolean] = js.undefined
   var viewIsReady: js.UndefOr[js.Function1[/* enteringEl */ HTMLElement, js.Promise[_]]] = js.undefined
 }
@@ -17,14 +18,14 @@ object NavOptions {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animationBuilder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    animationBuilder: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     deepWait: js.UndefOr[Boolean] = js.undefined,
-    delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any = null,
+    delegate: FrameworkDelegate = null,
     direction: NavDirection = null,
     duration: Int | Double = null,
     easing: String = null,
     keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = null,
+    mode: Mode = null,
     progressAnimation: js.UndefOr[Boolean] = js.undefined,
     showGoBack: js.UndefOr[Boolean] = js.undefined,
     skipIfBusy: js.UndefOr[Boolean] = js.undefined,
@@ -33,7 +34,7 @@ object NavOptions {
   ): NavOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(animationBuilder.asInstanceOf[js.Any])
+    if (animationBuilder != null) __obj.updateDynamic("animationBuilder")(js.Any.fromFunction3(animationBuilder))
     if (!js.isUndefined(deepWait)) __obj.updateDynamic("deepWait")(deepWait.asInstanceOf[js.Any])
     if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

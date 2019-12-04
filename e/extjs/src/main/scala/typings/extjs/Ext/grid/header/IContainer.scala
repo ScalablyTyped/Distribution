@@ -52,19 +52,6 @@ trait IContainer
   var getVisibleHeaderClosestToIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
   /** [Property] (Boolean) */
   var isGroupHeader: js.UndefOr[Boolean] = js.undefined
-  /** [Method] Invalidate column cache on add We cannot refresh the View on every add because this method is called when the HeaderD
-  		* @param c Object
-  		*/
-  @JSName("onAdd")
-  var onAdd_IContainer: js.UndefOr[js.Function1[/* c */ js.UndefOr[js.Any], Unit]] = js.undefined
-  /** [Method] Invalidate column cache on remove We cannot refresh the View on every remove because this method is called when the H
-  		* @param c Object
-  		*/
-  @JSName("onRemove")
-  var onRemove_IContainer: js.UndefOr[js.Function1[/* c */ js.UndefOr[js.Any], Unit]] = js.undefined
-  /** [Method] Allows addition of behavior to the show operation  */
-  @JSName("onShow")
-  var onShow_IContainer: js.UndefOr[js.Function0[Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var `sealed`: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -89,9 +76,6 @@ object IContainer {
     getVisibleGridColumns: () => Array = null,
     getVisibleHeaderClosestToIndex: /* index */ js.UndefOr[Double] => Unit = null,
     isGroupHeader: js.UndefOr[Boolean] = js.undefined,
-    onAdd: /* c */ js.UndefOr[js.Any] => Unit = null,
-    onRemove: /* c */ js.UndefOr[js.Any] => Unit = null,
-    onShow: () => Unit = null,
     `sealed`: js.UndefOr[Boolean] = js.undefined,
     sortable: js.UndefOr[Boolean] = js.undefined,
     weight: Int | Double = null
@@ -110,9 +94,6 @@ object IContainer {
     if (getVisibleGridColumns != null) __obj.updateDynamic("getVisibleGridColumns")(js.Any.fromFunction0(getVisibleGridColumns))
     if (getVisibleHeaderClosestToIndex != null) __obj.updateDynamic("getVisibleHeaderClosestToIndex")(js.Any.fromFunction1(getVisibleHeaderClosestToIndex))
     if (!js.isUndefined(isGroupHeader)) __obj.updateDynamic("isGroupHeader")(isGroupHeader.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (!js.isUndefined(`sealed`)) __obj.updateDynamic("sealed")(`sealed`.asInstanceOf[js.Any])
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])

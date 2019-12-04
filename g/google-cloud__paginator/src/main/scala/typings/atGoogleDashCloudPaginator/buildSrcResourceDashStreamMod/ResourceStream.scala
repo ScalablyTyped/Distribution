@@ -1,7 +1,7 @@
 package typings.atGoogleDashCloudPaginator.buildSrcResourceDashStreamMod
 
+import typings.atGoogleDashCloudPaginator.atGoogleDashCloudPaginatorMod.ParsedArguments
 import typings.atGoogleDashCloudPaginator.atGoogleDashCloudPaginatorStrings.data
-import typings.atGoogleDashCloudPaginator.buildSrcMod.ParsedArguments
 import typings.node.Anon_End
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Transform

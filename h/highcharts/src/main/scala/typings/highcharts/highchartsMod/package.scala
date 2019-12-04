@@ -36,6 +36,10 @@ package object highchartsMod {
   type ColorType = _ColorType | ColorString
   type DataBeforeParseCallbackFunction = js.Function1[/* csv */ String, String]
   type DataCompleteCallbackFunction = js.Function1[/* chartOptions */ Options, Unit]
+  /**
+    * Callback function that returns the correspondig Date object to a match.
+    */
+  type DataDateFormatCallbackFunction = js.Function1[/* match */ js.Array[Double], Double]
   type DataLabelsFormatterCallbackFunction = js.ThisFunction0[/* this */ DataLabelsFormatterContextObject, js.UndefOr[Double | String | Null]]
   type DataParseDateCallbackFunction = js.Function1[/* dateValue */ String, Double]
   type DataParsedCallbackFunction = js.Function1[/* columns */ js.Array[js.Array[js.Any]], js.UndefOr[Boolean]]

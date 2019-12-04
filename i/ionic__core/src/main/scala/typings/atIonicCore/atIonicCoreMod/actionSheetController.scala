@@ -1,5 +1,6 @@
 package typings.atIonicCore.atIonicCoreMod
 
+import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetOptions
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonActionSheetElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/core", "actionSheetController")
 @js.native
 object actionSheetController extends js.Object {
-  def create(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetOptions */ js.Any
-  ): js.Promise[HTMLIonActionSheetElement] = js.native
+  def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
   def dismiss(): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native

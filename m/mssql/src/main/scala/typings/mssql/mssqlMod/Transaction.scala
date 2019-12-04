@@ -1,6 +1,5 @@
 package typings.mssql.mssqlMod
 
-import typings.mssql.IIsolationLevel
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

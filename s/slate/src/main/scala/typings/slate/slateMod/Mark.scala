@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.Set
 import typings.slate.slateStrings.mark
 import typings.std.Partial
 import scala.scalajs.js
@@ -37,6 +37,6 @@ object Mark extends js.Object {
   def fromJSON(properties: MarkJSON): Mark = js.native
   def fromJSON(properties: MarkProperties): Mark = js.native
   def isMark(maybeMark: js.Any): /* is slate.slate.Mark */ Boolean = js.native
-  def isMarkSet(maybeMarkSet: js.Any): /* is immutable.immutable.Set<slate.slate.Mark> */ Boolean = js.native
+  def isMarkSet(maybeMarkSet: js.Any): /* is immutable.Immutable.Set<slate.slate.Mark> */ Boolean = js.native
 }
 

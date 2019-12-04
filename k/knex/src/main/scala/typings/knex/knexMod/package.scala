@@ -36,6 +36,9 @@ package object knexMod {
   // Intersection conditionally applied only when TParams is non-empty
   // This is primarily to keep the signatures more intuitive.
   type AugmentParams[TTarget, TParams] = TTarget | (js.Object with TTarget with TParams)
+  // # Type-aliases for common type combinations
+  type Callback = js.Function
+  type Client = js.Function
   type ColumnDescriptor[TRecord, TResult] = String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | Dict[String]
   type CreateTableBuilder = TableBuilder
   // Convenience alias and associated companion namespace for working

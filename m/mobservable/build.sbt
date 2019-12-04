@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mobservable"
-version := "1.2.5-87b296"
+version := "1.2.5-31e92b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

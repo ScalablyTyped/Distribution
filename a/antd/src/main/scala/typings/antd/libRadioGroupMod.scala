@@ -17,7 +17,7 @@ object libRadioGroupMod extends js.Object {
   @js.native
   trait RadioGroup
     extends Component[RadioGroupProps, RadioGroupState, js.Any] {
-    def getChildContext(): Anon_RadioGroupAnonDisabledEvName = js.native
+    def getChildContext(): Anon_RadioGroupAnonDisabledEv = js.native
     def onRadioChange(ev: RadioChangeEvent): Unit = js.native
     def renderGroup(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
     @JSName("shouldComponentUpdate")
@@ -33,7 +33,7 @@ object libRadioGroupMod extends js.Object {
   @js.native
   object default extends js.Object {
     var childContextTypes: Anon_RadioGroup = js.native
-    var defaultProps: Anon_ButtonStyleRadioGroupButtonStyle = js.native
+    var defaultProps: Anon_ButtonStyle = js.native
     def getDerivedStateFromProps(nextProps: RadioGroupProps): Anon_ValueAny | Null = js.native
   }
   

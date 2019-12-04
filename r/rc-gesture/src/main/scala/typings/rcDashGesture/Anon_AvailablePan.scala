@@ -1,8 +1,8 @@
 package typings.rcDashGesture
 
-import typings.rcDashGesture.esMod.Finger
-import typings.rcDashGesture.esMod.MultiFingerStatus
-import typings.rcDashGesture.esMod.SingeFingerMoveStatus
+import typings.rcDashGesture.rcDashGestureMod.Finger
+import typings.rcDashGesture.rcDashGestureMod.MultiFingerStatus
+import typings.rcDashGesture.rcDashGestureMod.SingeFingerMoveStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

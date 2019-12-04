@@ -1,6 +1,6 @@
 package typings.immutable.immutableMod
 
-import typings.immutable.immutableMod.Seq.Indexed
+import typings.immutable.Immutable.Seq.Indexed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

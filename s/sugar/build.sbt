@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sugar"
-version := "2.0.6-fffdbb"
+version := "2.0.6-8e6928"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

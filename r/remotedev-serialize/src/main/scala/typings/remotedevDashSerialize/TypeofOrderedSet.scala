@@ -1,8 +1,8 @@
 package typings.remotedevDashSerialize
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Collection
-import typings.immutable.immutableMod.OrderedSet
+import typings.immutable.Immutable.Collection
+import typings.immutable.Immutable.OrderedSet
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

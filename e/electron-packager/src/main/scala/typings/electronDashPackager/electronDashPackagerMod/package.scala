@@ -5,16 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object electronDashPackagerMod {
-  import typings.electronDashPackager.Omit
   import typings.electronDashPackager.electronDashPackagerStrings.appBundleId
   import typings.electronDashPackager.electronDashPackagerStrings.appPath
   import typings.std.Error
+  import typings.std.Exclude
+  import typings.std.Pick
 
   // see https://github.com/electron-userland/electron-packager/blob/92d09bba34599283a794fd6f24b88470f0cb1074/src/mac.js#L372
   type ElectronNotarizeOptions = Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NotarizeOptions */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotarizeOptions */ js.Any, 
     appBundleId | appPath
   ]
+  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
   /**
     * Callback which is called when electron-packager is done.
     *

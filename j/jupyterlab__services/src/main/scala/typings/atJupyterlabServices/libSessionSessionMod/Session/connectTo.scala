@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libSessionSessionMod.Session
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +24,6 @@ object connectTo extends js.Object {
     * Otherwise, we attempt to connect to the existing session.
     */
   def apply(model: IModel): ISession = js.native
-  def apply(
-    model: IModel,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): ISession = js.native
+  def apply(model: IModel, settings: ISettings): ISession = js.native
 }
 

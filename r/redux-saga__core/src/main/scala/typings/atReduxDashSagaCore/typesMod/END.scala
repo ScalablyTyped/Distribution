@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object END
   extends TopLevel[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EndType */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndType */ js.Any
     ]
 

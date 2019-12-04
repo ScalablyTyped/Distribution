@@ -13,8 +13,10 @@ import typings.reactDashNative.reactDashNativeMod.Insets
 import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.SwitchProperties
 import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
 import typings.reactDashNative.reactDashNativeMod.TargetedEvent
+import typings.reactDashNative.reactDashNativeMod.TextProperties
 import typings.reactDashNative.reactDashNativeMod.TextStyle
 import typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -55,28 +57,18 @@ trait ListItemProps extends TouchableHighlightProps {
   var rightElement: js.UndefOr[ReactElement] = js.undefined
   var rightIcon: js.UndefOr[Partial[IconProps] | ReactElement] = js.undefined
   var rightSubtitle: js.UndefOr[String | ReactElement] = js.undefined
-  var rightSubtitleProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
-  ] = js.undefined
+  var rightSubtitleProps: js.UndefOr[TextProperties] = js.undefined
   var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var rightTitle: js.UndefOr[String | ReactElement] = js.undefined
-  var rightTitleProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
-  ] = js.undefined
+  var rightTitleProps: js.UndefOr[TextProperties] = js.undefined
   var rightTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var scaleProps: js.UndefOr[ScaleProps] = js.undefined
   var subtitle: js.UndefOr[String | ReactElement] = js.undefined
-  var subtitleProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
-  ] = js.undefined
+  var subtitleProps: js.UndefOr[TextProperties] = js.undefined
   var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  var switch: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any
-  ] = js.undefined
+  var switch: js.UndefOr[SwitchProperties] = js.undefined
   var title: js.UndefOr[String | ReactElement] = js.undefined
-  var titleProps: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
-  ] = js.undefined
+  var titleProps: js.UndefOr[TextProperties] = js.undefined
   var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var topDivider: js.UndefOr[Boolean] = js.undefined
 }
@@ -139,20 +131,20 @@ object ListItemProps {
     rightElement: ReactElement = null,
     rightIcon: Partial[IconProps] | ReactElement = null,
     rightSubtitle: String | ReactElement = null,
-    rightSubtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    rightSubtitleProps: TextProperties = null,
     rightSubtitleStyle: StyleProp[TextStyle] = null,
     rightTitle: String | ReactElement = null,
-    rightTitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    rightTitleProps: TextProperties = null,
     rightTitleStyle: StyleProp[TextStyle] = null,
     scaleProps: ScaleProps = null,
     style: StyleProp[ViewStyle] = null,
     subtitle: String | ReactElement = null,
-    subtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    subtitleProps: TextProperties = null,
     subtitleStyle: StyleProp[TextStyle] = null,
-    switch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any = null,
+    switch: SwitchProperties = null,
     testID: String = null,
     title: String | ReactElement = null,
-    titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    titleProps: TextProperties = null,
     titleStyle: StyleProp[TextStyle] = null,
     topDivider: js.UndefOr[Boolean] = js.undefined,
     tvParallaxProperties: TVParallaxProperties = null,

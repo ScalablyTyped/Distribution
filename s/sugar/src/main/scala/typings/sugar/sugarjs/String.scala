@@ -22,10 +22,10 @@ object String extends js.Object {
   trait ChainableBase[RawValue] extends js.Object {
     var raw: RawValue = js.native
     def anchor(name: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-    def at[T](index: js.Array[Double]): SugarDefaultChainable[T] = js.native
-    def at[T](index: js.Array[Double], loop: Boolean): SugarDefaultChainable[T] = js.native
     def at[T](index: Double): SugarDefaultChainable[T] = js.native
     def at[T](index: Double, loop: Boolean): SugarDefaultChainable[T] = js.native
+    def at[T](index: typings.sugar.Array[Double]): SugarDefaultChainable[T] = js.native
+    def at[T](index: typings.sugar.Array[Double], loop: Boolean): SugarDefaultChainable[T] = js.native
     def big(): SugarDefaultChainable[java.lang.String] = js.native
     def blink(): SugarDefaultChainable[java.lang.String] = js.native
     def bold(): SugarDefaultChainable[java.lang.String] = js.native
@@ -36,17 +36,17 @@ object String extends js.Object {
     def capitalize(lower: Boolean, all: Boolean): SugarDefaultChainable[java.lang.String] = js.native
     def charAt(pos: Double): SugarDefaultChainable[java.lang.String] = js.native
     def charCodeAt(index: Double): SugarDefaultChainable[Double] = js.native
-    def chars[T](): SugarDefaultChainable[js.Array[T]] = js.native
+    def chars[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def chars[T](
       eachCharFn: js.Function3[
           /* char */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def codePointAt(pos: Double): SugarDefaultChainable[js.UndefOr[Double]] = js.native
-    def codes[T](): SugarDefaultChainable[js.Array[T]] = js.native
+    def codes[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def codes[T](
       eachCodeFn: js.Function3[
           /* code */ Double, 
@@ -54,7 +54,7 @@ object String extends js.Object {
           /* str */ java.lang.String, 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def compact(): SugarDefaultChainable[java.lang.String] = js.native
     def concat(strings: java.lang.String*): SugarDefaultChainable[java.lang.String] = js.native
     def dasherize(): SugarDefaultChainable[java.lang.String] = js.native
@@ -71,35 +71,35 @@ object String extends js.Object {
     def fontcolor(color: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def fontsize(size: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def fontsize(size: Double): SugarDefaultChainable[java.lang.String] = js.native
-    def forEach[T](): SugarDefaultChainable[js.Array[T]] = js.native
+    def forEach[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def forEach[T](
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
-    def forEach[T](search: java.lang.String): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def forEach[T](search: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def forEach[T](
       search: java.lang.String,
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
-    def forEach[T](search: typings.std.RegExp): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def forEach[T](search: typings.sugar.RegExp): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def forEach[T](
-      search: typings.std.RegExp,
+      search: typings.sugar.RegExp,
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def format(args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
     def from(): SugarDefaultChainable[java.lang.String] = js.native
     def from(index: Double): SugarDefaultChainable[java.lang.String] = js.native
@@ -148,23 +148,23 @@ object String extends js.Object {
     def last(n: Double): SugarDefaultChainable[java.lang.String] = js.native
     def lastIndexOf(searchString: java.lang.String): SugarDefaultChainable[Double] = js.native
     def lastIndexOf(searchString: java.lang.String, position: Double): SugarDefaultChainable[Double] = js.native
-    def lines[T](): SugarDefaultChainable[js.Array[T]] = js.native
+    def lines[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def lines[T](
       eachLineFn: js.Function3[
           /* line */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def link(url: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def localeCompare(that: java.lang.String): SugarDefaultChainable[Double] = js.native
     def localeCompare(that: java.lang.String, locales: java.lang.String): SugarDefaultChainable[Double] = js.native
     def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): SugarDefaultChainable[Double] = js.native
-    def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): SugarDefaultChainable[Double] = js.native
-    def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): SugarDefaultChainable[Double] = js.native
+    def localeCompare(that: java.lang.String, locales: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[Double] = js.native
+    def localeCompare(that: java.lang.String, locales: typings.sugar.Array[java.lang.String], options: CollatorOptions): SugarDefaultChainable[Double] = js.native
     def `match`(regexp: java.lang.String): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
-    def `match`(regexp: typings.std.RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
+    def `match`(regexp: typings.sugar.RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
     def normalize(): SugarDefaultChainable[java.lang.String] = js.native
     def normalize(form: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     @JSName("normalize")
@@ -185,9 +185,9 @@ object String extends js.Object {
     def pluralize(): SugarDefaultChainable[java.lang.String] = js.native
     def pluralize(num: Double): SugarDefaultChainable[java.lang.String] = js.native
     def remove(f: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-    def remove(f: typings.std.RegExp): SugarDefaultChainable[java.lang.String] = js.native
+    def remove(f: typings.sugar.RegExp): SugarDefaultChainable[java.lang.String] = js.native
     def removeAll(f: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-    def removeAll(f: typings.std.RegExp): SugarDefaultChainable[java.lang.String] = js.native
+    def removeAll(f: typings.sugar.RegExp): SugarDefaultChainable[java.lang.String] = js.native
     def removeTags(): SugarDefaultChainable[java.lang.String] = js.native
     def removeTags(tag: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def removeTags(tag: java.lang.String, replace: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
@@ -198,27 +198,27 @@ object String extends js.Object {
       searchValue: java.lang.String,
       replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
     ): SugarDefaultChainable[java.lang.String] = js.native
-    def replace(searchValue: typings.std.RegExp, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def replace(searchValue: typings.sugar.RegExp, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def replace(
-      searchValue: typings.std.RegExp,
+      searchValue: typings.sugar.RegExp,
       replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
     ): SugarDefaultChainable[java.lang.String] = js.native
     def replaceAll(f: java.lang.String, args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
-    def replaceAll(f: typings.std.RegExp, args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
+    def replaceAll(f: typings.sugar.RegExp, args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
     def reverse(): SugarDefaultChainable[java.lang.String] = js.native
     def search(regexp: java.lang.String): SugarDefaultChainable[Double] = js.native
-    def search(regexp: typings.std.RegExp): SugarDefaultChainable[Double] = js.native
-    def shift[T](n: Double): SugarDefaultChainable[js.Array[T]] = js.native
+    def search(regexp: typings.sugar.RegExp): SugarDefaultChainable[Double] = js.native
+    def shift[T](n: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def singularize(): SugarDefaultChainable[java.lang.String] = js.native
     def slice(): SugarDefaultChainable[java.lang.String] = js.native
     def slice(start: Double): SugarDefaultChainable[java.lang.String] = js.native
     def slice(start: Double, end: Double): SugarDefaultChainable[java.lang.String] = js.native
     def small(): SugarDefaultChainable[java.lang.String] = js.native
     def spacify(): SugarDefaultChainable[java.lang.String] = js.native
-    def split(separator: java.lang.String): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
-    def split(separator: java.lang.String, limit: Double): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
-    def split(separator: typings.std.RegExp): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
-    def split(separator: typings.std.RegExp, limit: Double): SugarDefaultChainable[js.Array[java.lang.String]] = js.native
+    def split(separator: java.lang.String): SugarDefaultChainable[typings.sugar.Array[java.lang.String]] = js.native
+    def split(separator: java.lang.String, limit: Double): SugarDefaultChainable[typings.sugar.Array[java.lang.String]] = js.native
+    def split(separator: typings.sugar.RegExp): SugarDefaultChainable[typings.sugar.Array[java.lang.String]] = js.native
+    def split(separator: typings.sugar.RegExp, limit: Double): SugarDefaultChainable[typings.sugar.Array[java.lang.String]] = js.native
     def startsWith(searchString: java.lang.String): SugarDefaultChainable[Boolean] = js.native
     def startsWith(searchString: java.lang.String, position: Double): SugarDefaultChainable[Boolean] = js.native
     def strike(): SugarDefaultChainable[java.lang.String] = js.native
@@ -254,15 +254,15 @@ object String extends js.Object {
     def unescapeHTML(): SugarDefaultChainable[java.lang.String] = js.native
     def unescapeURL(): SugarDefaultChainable[java.lang.String] = js.native
     def unescapeURL(partial: Boolean): SugarDefaultChainable[java.lang.String] = js.native
-    def words[T](): SugarDefaultChainable[js.Array[T]] = js.native
+    def words[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def words[T](
       eachWordFn: js.Function3[
           /* word */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           SugarDefaultChainable[Unit]
         ]
-    ): SugarDefaultChainable[js.Array[T]] = js.native
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def zenkaku(): SugarDefaultChainable[java.lang.String] = js.native
     def zenkaku(mode: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
   }
@@ -276,33 +276,33 @@ object String extends js.Object {
     def apply(raw: java.lang.String): Chainable[java.lang.String] = js.native
     def addAcronym(src: java.lang.String): Unit = js.native
     def addHuman(src: java.lang.String, human: java.lang.String): Unit = js.native
-    def addHuman(src: typings.std.RegExp, human: java.lang.String): Unit = js.native
+    def addHuman(src: typings.sugar.RegExp, human: java.lang.String): Unit = js.native
     def addPlural(singular: java.lang.String): Unit = js.native
     def addPlural(singular: java.lang.String, plural: java.lang.String): Unit = js.native
-    def at[T](instance: java.lang.String, index: js.Array[Double]): T = js.native
-    def at[T](instance: java.lang.String, index: js.Array[Double], loop: Boolean): T = js.native
     def at[T](instance: java.lang.String, index: Double): T = js.native
     def at[T](instance: java.lang.String, index: Double, loop: Boolean): T = js.native
+    def at[T](instance: java.lang.String, index: typings.sugar.Array[Double]): T = js.native
+    def at[T](instance: java.lang.String, index: typings.sugar.Array[Double], loop: Boolean): T = js.native
     def camelize(instance: java.lang.String): java.lang.String = js.native
     def camelize(instance: java.lang.String, upper: Boolean): java.lang.String = js.native
     def capitalize(instance: java.lang.String): java.lang.String = js.native
     def capitalize(instance: java.lang.String, lower: Boolean): java.lang.String = js.native
     def capitalize(instance: java.lang.String, lower: Boolean, all: Boolean): java.lang.String = js.native
-    def chars[T](instance: java.lang.String): js.Array[T] = js.native
+    def chars[T](instance: java.lang.String): typings.sugar.Array[T] = js.native
     def chars[T](
       instance: java.lang.String,
       eachCharFn: js.Function3[
           /* char */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
-    def codes[T](instance: java.lang.String): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
+    def codes[T](instance: java.lang.String): typings.sugar.Array[T] = js.native
     def codes[T](
       instance: java.lang.String,
       eachCodeFn: js.Function3[/* code */ Double, /* i */ Double, /* str */ java.lang.String, Unit]
-    ): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
     def compact(instance: java.lang.String): java.lang.String = js.native
     def dasherize(instance: java.lang.String): java.lang.String = js.native
     def decodeBase64(instance: java.lang.String): java.lang.String = js.native
@@ -312,38 +312,38 @@ object String extends js.Object {
     def escapeURL(instance: java.lang.String, param: Boolean): java.lang.String = js.native
     def first(instance: java.lang.String): java.lang.String = js.native
     def first(instance: java.lang.String, n: Double): java.lang.String = js.native
-    def forEach[T](instance: java.lang.String): js.Array[T] = js.native
+    def forEach[T](instance: java.lang.String): typings.sugar.Array[T] = js.native
     def forEach[T](
       instance: java.lang.String,
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
-    def forEach[T](instance: java.lang.String, search: java.lang.String): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
+    def forEach[T](instance: java.lang.String, search: java.lang.String): typings.sugar.Array[T] = js.native
     def forEach[T](
       instance: java.lang.String,
       search: java.lang.String,
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
-    def forEach[T](instance: java.lang.String, search: typings.std.RegExp): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
+    def forEach[T](instance: java.lang.String, search: typings.sugar.RegExp): typings.sugar.Array[T] = js.native
     def forEach[T](
       instance: java.lang.String,
-      search: typings.std.RegExp,
+      search: typings.sugar.RegExp,
       eachFn: js.Function3[
           /* match */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
     def format(instance: java.lang.String, args: js.Any*): java.lang.String = js.native
     def from(instance: java.lang.String): java.lang.String = js.native
     def from(instance: java.lang.String, index: Double): java.lang.String = js.native
@@ -385,16 +385,16 @@ object String extends js.Object {
     def katakana(instance: java.lang.String): java.lang.String = js.native
     def last(instance: java.lang.String): java.lang.String = js.native
     def last(instance: java.lang.String, n: Double): java.lang.String = js.native
-    def lines[T](instance: java.lang.String): js.Array[T] = js.native
+    def lines[T](instance: java.lang.String): typings.sugar.Array[T] = js.native
     def lines[T](
       instance: java.lang.String,
       eachLineFn: js.Function3[
           /* line */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
     def pad(instance: java.lang.String, num: Double): java.lang.String = js.native
     def pad(instance: java.lang.String, num: Double, padding: java.lang.String): java.lang.String = js.native
     def padLeft(instance: java.lang.String, num: Double): java.lang.String = js.native
@@ -408,17 +408,17 @@ object String extends js.Object {
     def range(start: java.lang.String): Range = js.native
     def range(start: java.lang.String, end: java.lang.String): Range = js.native
     def remove(instance: java.lang.String, f: java.lang.String): java.lang.String = js.native
-    def remove(instance: java.lang.String, f: typings.std.RegExp): java.lang.String = js.native
+    def remove(instance: java.lang.String, f: typings.sugar.RegExp): java.lang.String = js.native
     def removeAll(instance: java.lang.String, f: java.lang.String): java.lang.String = js.native
-    def removeAll(instance: java.lang.String, f: typings.std.RegExp): java.lang.String = js.native
+    def removeAll(instance: java.lang.String, f: typings.sugar.RegExp): java.lang.String = js.native
     def removeTags(instance: java.lang.String): java.lang.String = js.native
     def removeTags(instance: java.lang.String, tag: java.lang.String): java.lang.String = js.native
     def removeTags(instance: java.lang.String, tag: java.lang.String, replace: java.lang.String): java.lang.String = js.native
     def removeTags(instance: java.lang.String, tag: java.lang.String, replace: replaceFn): java.lang.String = js.native
     def replaceAll(instance: java.lang.String, f: java.lang.String, args: js.Any*): java.lang.String = js.native
-    def replaceAll(instance: java.lang.String, f: typings.std.RegExp, args: js.Any*): java.lang.String = js.native
+    def replaceAll(instance: java.lang.String, f: typings.sugar.RegExp, args: js.Any*): java.lang.String = js.native
     def reverse(instance: java.lang.String): java.lang.String = js.native
-    def shift[T](instance: java.lang.String, n: Double): js.Array[T] = js.native
+    def shift[T](instance: java.lang.String, n: Double): typings.sugar.Array[T] = js.native
     def singularize(instance: java.lang.String): java.lang.String = js.native
     def spacify(instance: java.lang.String): java.lang.String = js.native
     def stripTags(instance: java.lang.String): java.lang.String = js.native
@@ -442,16 +442,16 @@ object String extends js.Object {
     def unescapeHTML(instance: java.lang.String): java.lang.String = js.native
     def unescapeURL(instance: java.lang.String): java.lang.String = js.native
     def unescapeURL(instance: java.lang.String, partial: Boolean): java.lang.String = js.native
-    def words[T](instance: java.lang.String): js.Array[T] = js.native
+    def words[T](instance: java.lang.String): typings.sugar.Array[T] = js.native
     def words[T](
       instance: java.lang.String,
       eachWordFn: js.Function3[
           /* word */ java.lang.String, 
           /* i */ Double, 
-          /* arr */ js.Array[java.lang.String], 
+          /* arr */ typings.sugar.Array[java.lang.String], 
           Unit
         ]
-    ): js.Array[T] = js.native
+    ): typings.sugar.Array[T] = js.native
     def zenkaku(instance: java.lang.String): java.lang.String = js.native
     def zenkaku(instance: java.lang.String, mode: java.lang.String): java.lang.String = js.native
   }

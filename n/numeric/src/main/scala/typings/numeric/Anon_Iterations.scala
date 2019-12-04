@@ -1,5 +1,7 @@
 package typings.numeric
 
+import typings.numeric.numericMod.Scalar
+import typings.numeric.numericMod.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

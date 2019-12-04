@@ -6,6 +6,7 @@ import typings.atAntDashDesignReactDashNative.libResultPropsTypeMod.ResultPropsT
 import typings.atAntDashDesignReactDashNative.libResultStyleMod.ResultStyle
 import typings.atAntDashDesignReactDashNative.libStyleMod.WithThemeStyles
 import typings.react.reactMod.ReactNode
+import typings.reactDashNative.reactDashNativeMod.ImagePropertiesSourceOptions
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.std.Partial
@@ -25,7 +26,7 @@ object ResultNativeProps {
     buttonText: String = null,
     buttonType: primary | ghost = null,
     img: ReactNode = null,
-    imgUrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImagePropertiesSourceOptions */ js.Any = null,
+    imgUrl: ImagePropertiesSourceOptions = null,
     message: ReactNode = null,
     onButtonClick: /* e */ js.Any => Unit = null,
     style: StyleProp[ViewStyle] = null,

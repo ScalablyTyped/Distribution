@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rsocket-flowable"
-version := "0.0-dt-20191126Z-e7f407"
+version := "0.0-dt-20191126Z-bac27d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

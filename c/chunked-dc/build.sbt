@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chunked-dc"
-version := "1.0.0-a0d89c"
+version := "1.0.0-e46307"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

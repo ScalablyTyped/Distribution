@@ -1,6 +1,6 @@
 package typings.rcDashTable
 
-import typings.rcDashTable.esInterfaceMod.ColumnType
+import typings.rcDashTable.libInterfaceMod.ColumnType
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

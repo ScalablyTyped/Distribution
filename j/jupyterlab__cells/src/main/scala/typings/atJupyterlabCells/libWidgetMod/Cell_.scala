@@ -4,8 +4,8 @@ import typings.atJupyterlabCells.libInputareaMod.InputArea
 import typings.atJupyterlabCells.libModelMod.ICellModel
 import typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
 import typings.atJupyterlabCells.libWidgetMod.Cell.IOptions
+import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorMod.CodeEditorWrapper
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IEditor
-import typings.atJupyterlabCodeeditor.libMod.CodeEditorWrapper
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap
 import typings.atJupyterlabObservables.libObservablemapMod.IObservableMap.IChangedArgs
 import typings.atPhosphorCoreutils.libJsonMod.JSONValue

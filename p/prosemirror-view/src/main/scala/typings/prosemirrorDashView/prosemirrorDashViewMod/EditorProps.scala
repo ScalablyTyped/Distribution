@@ -29,7 +29,7 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     */
   var attributes: js.UndefOr[
     StringDictionary[String] | (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
       js.UndefOr[StringDictionary[String] | Null | Unit]
     ]) | Null
   ] = js.undefined
@@ -82,7 +82,7 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     */
   var decorations: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       js.UndefOr[DecorationSet[S] | Null]
     ]) | Null
   ] = js.undefined
@@ -99,7 +99,7 @@ trait EditorProps[S /* <: Schema[_, _] */] extends js.Object {
     */
   var editable: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       Boolean
     ]) | Null
   ] = js.undefined
@@ -284,7 +284,7 @@ object EditorProps {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](
     attributes: StringDictionary[String] | (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
       js.UndefOr[StringDictionary[String] | Null | Unit]
     ]) = null,
     clipboardParser: DOMParser[S] = null,
@@ -292,9 +292,9 @@ object EditorProps {
     clipboardTextParser: (/* text */ String, /* $context */ ResolvedPos[S]) => Slice[S] = null,
     clipboardTextSerializer: /* p */ Slice[S] => String = null,
     createSelectionBetween: (/* view */ EditorView[S], /* anchor */ ResolvedPos[S], /* head */ ResolvedPos[S]) => js.UndefOr[Selection | Null] = null,
-    decorations: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null] = null,
+    decorations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null] = null,
     domParser: DOMParser[S] = null,
-    editable: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean = null,
+    editable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean = null,
     handleClick: (/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean = null,
     handleClickOn: (/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean = null,
     handleDOMEvents: StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ Event, Boolean]] = null,

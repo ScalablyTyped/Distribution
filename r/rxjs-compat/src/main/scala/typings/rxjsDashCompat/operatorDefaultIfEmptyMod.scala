@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +7,21 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/defaultIfEmpty", JSImport.Namespace)
 @js.native
 object operatorDefaultIfEmptyMod extends js.Object {
-  def defaultIfEmpty[T](`this`: Observable[T]): Observable[T] = js.native
-  def defaultIfEmpty[T](`this`: Observable[T], defaultValue: T): Observable[T] = js.native
+  def defaultIfEmpty[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
+  def defaultIfEmpty[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    defaultValue: T
+  ): js.Any = js.native
   @JSName("defaultIfEmpty")
-  def defaultIfEmpty_TR[T, R](`this`: Observable[T]): Observable[T | R] = js.native
+  def defaultIfEmpty_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
   @JSName("defaultIfEmpty")
-  def defaultIfEmpty_TR[T, R](`this`: Observable[T], defaultValue: R): Observable[T | R] = js.native
+  def defaultIfEmpty_TR[T, R](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    defaultValue: R
+  ): js.Any = js.native
 }
 

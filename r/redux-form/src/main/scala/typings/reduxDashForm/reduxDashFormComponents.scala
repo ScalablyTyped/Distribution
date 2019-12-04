@@ -13,9 +13,9 @@ object reduxDashFormComponents extends reduxDashFormProps {
   @scala.inline
   def Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */]: ComponentType[P] = js.constructorOf[typings.reduxDashForm.libFieldMod.default[P]].asInstanceOf[typings.react.reactMod.ComponentType[P]]
   @scala.inline
-  def FieldArray[P, FieldValue]: ComponentType[FieldArrayProps[P, FieldValue]] = js.constructorOf[typings.reduxDashForm.libFieldArrayMod.FieldArray[P, FieldValue]].asInstanceOf[typings.react.reactMod.ComponentType[FieldArrayProps[P, FieldValue]]]
+  def FieldArray[P, FieldValue]: ComponentType[FieldArrayProps[P, FieldValue]] = js.constructorOf[typings.reduxDashForm.immutableMod.FieldArray[P, FieldValue]].asInstanceOf[typings.react.reactMod.ComponentType[FieldArrayProps[P, FieldValue]]]
   @scala.inline
-  def Fields[P]: ComponentType[BaseFieldsProps[P] with P] = js.constructorOf[typings.reduxDashForm.libFieldsMod.Fields[P]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFieldsMod.BaseFieldsProps[P] with P]]
+  def Fields[P]: ComponentType[BaseFieldsProps[P] with P] = js.constructorOf[typings.reduxDashForm.immutableMod.Fields[P]].asInstanceOf[typings.react.reactMod.ComponentType[typings.reduxDashForm.libFieldsMod.BaseFieldsProps[P] with P]]
   @scala.inline
   def Form[FormData, P, ErrorType]: ComponentType[FormProps[FormData, P, ErrorType]] = js.constructorOf[typings.reduxDashForm.libFormMod.Form[FormData, P, ErrorType]].asInstanceOf[typings.react.reactMod.ComponentType[FormProps[FormData, P, ErrorType]]]
   @scala.inline

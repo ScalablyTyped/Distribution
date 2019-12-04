@@ -1,5 +1,6 @@
 package typings.atHyperlorisTyson
 
+import typings.atHyperlorisTyson.atHyperlorisTysonMod.Tyson
 import typings.atHyperlorisTyson.distTypesReflectTypeTokenMod.ClassType
 import typings.atHyperlorisTyson.distTypesTypeAdapterFactoryMod.TypeAdapterFactory
 import typings.atHyperlorisTyson.distTypesTypeAdapterMod.TypeAdapter
@@ -23,7 +24,7 @@ object distTypesTysonBuilderMod extends js.Object {
       * @returns {Tyson} a Tyson instance
       * @memberof TysonBuilder
       */
-    def build(): js.Any = js.native
+    def build(): Tyson = js.native
     /**
       * Configure Tyson to serialize null fields. By default, Tyson omits all fields that are null
       * during serialization.

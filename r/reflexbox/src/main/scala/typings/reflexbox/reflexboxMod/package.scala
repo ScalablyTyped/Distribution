@@ -5,5 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reflexboxMod {
-  type BoxType = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StyledComponent<JSX.IntrinsicElements['div'], Omit<JSX.IntrinsicElements['div'] & BoxProps, keyof React.ClassAttributes<any>>, {}> */ js.Any
+  import typings.atEmotionStyledDashBase.atEmotionStyledDashBaseMod.StyledComponent
+  import typings.atEmotionStyledDashBase.typesHelperMod.Omit
+  import typings.react.reactMod.DetailedHTMLProps
+  import typings.react.reactMod.HTMLAttributes
+  import typings.std.HTMLDivElement
+
+  type BoxType = StyledComponent[
+    DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
+    Omit[
+      (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) with BoxProps, 
+      String
+    ], 
+    js.Object
+  ]
 }

@@ -28,22 +28,22 @@ trait DirectEditorProps[S /* <: Schema[_, _] */] extends EditorProps[S] {
     */
   var dispatchTransaction: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any, 
       Unit
     ]) | Null
   ] = js.undefined
   /**
     * The current state of the editor.
     */
-  var state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
+  var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
 }
 
 object DirectEditorProps {
   @scala.inline
   def apply[S /* <: Schema[_, _] */](
-    state: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any,
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any,
     attributes: StringDictionary[String] | (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
       js.UndefOr[StringDictionary[String] | Null | Unit]
     ]) = null,
     clipboardParser: DOMParser[S] = null,
@@ -51,10 +51,10 @@ object DirectEditorProps {
     clipboardTextParser: (/* text */ String, /* $context */ ResolvedPos[S]) => Slice[S] = null,
     clipboardTextSerializer: /* p */ Slice[S] => String = null,
     createSelectionBetween: (/* view */ EditorView[S], /* anchor */ ResolvedPos[S], /* head */ ResolvedPos[S]) => js.UndefOr[Selection | Null] = null,
-    decorations: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null] = null,
-    dispatchTransaction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any => Unit = null,
+    decorations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => js.UndefOr[DecorationSet[S] | Null] = null,
+    dispatchTransaction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any => Unit = null,
     domParser: DOMParser[S] = null,
-    editable: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean = null,
+    editable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any => Boolean = null,
     handleClick: (/* view */ EditorView[S], /* pos */ Double, /* event */ MouseEvent) => Boolean = null,
     handleClickOn: (/* view */ EditorView[S], /* pos */ Double, /* node */ Node[S], /* nodePos */ Double, /* event */ MouseEvent, /* direct */ Boolean) => Boolean = null,
     handleDOMEvents: StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ Event, Boolean]] = null,

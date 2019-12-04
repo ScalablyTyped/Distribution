@@ -1,5 +1,7 @@
 package typings.atJupyterlabServices.libKernelKernelMod.Kernel
 
+import typings.atJupyterlabServices.atJupyterlabServicesMod.ServerConnection.NetworkError
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
@@ -19,10 +21,7 @@ trait IManager extends IDisposable {
   /**
     * A signal emitted when there is a connection failure.
     */
-  var connectionFailure: ISignal[
-    IManager, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.NetworkError */ _
-  ] = js.native
+  var connectionFailure: ISignal[IManager, NetworkError] = js.native
   /**
     * Whether the manager is ready.
     */
@@ -38,9 +37,7 @@ trait IManager extends IDisposable {
   /**
     * The server settings for the manager.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.native
+  var serverSettings: js.UndefOr[ISettings] = js.native
   /**
     * The kernel spec models.
     *

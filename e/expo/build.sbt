@@ -1,19 +1,25 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "35.0.1-6fb033"
+version := "35.0.1-e2bf23"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "expo-asset" % "7.0.0-3d1470",
-  "org.scalablytyped" %%% "expo-constants" % "7.0.1-0e4860",
+  "org.scalablytyped" %%% "expo-asset" % "7.0.0-8658bf",
+  "org.scalablytyped" %%% "expo-constants" % "7.0.1-451a47",
+  "org.scalablytyped" %%% "expo-font" % "7.0.0-092e56",
+  "org.scalablytyped" %%% "expo-linear-gradient" % "7.0.1-2158cd",
+  "org.scalablytyped" %%% "expo-sqlite" % "7.0.0-1f9cfe",
+  "org.scalablytyped" %%% "expo__vector-icons" % "9.0-dt-20190213Z-de4dbd",
   "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190503Z-81934b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191121Z-036156",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191121Z-cb9adb",
+  "org.scalablytyped" %%% "react-native-vector-icons" % "6.4-dt-20191126Z-c2907e",
+  "org.scalablytyped" %%% "react-native-view-shot" % "2.6.0-7bb600",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "4.0.0-30ebdb")
+  "org.scalablytyped" %%% "unimodules__react-native-adapter" % "4.0.0-878069")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

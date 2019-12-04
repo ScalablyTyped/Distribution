@@ -31,8 +31,6 @@ class Strategy protected ()
         Unit
       ]
   ) = this()
-  @JSName("name")
-  var name_Strategy: String = js.native
   def authenticate(req: Request[ParamsDictionary]): Unit = js.native
   def authenticate(req: Request[ParamsDictionary], options: js.Object): Unit = js.native
 }

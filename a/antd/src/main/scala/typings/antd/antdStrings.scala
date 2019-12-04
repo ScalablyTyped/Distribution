@@ -1,46 +1,41 @@
 package typings.antd
 
-import typings.antd.esCalendarMod.CalendarMode
-import typings.antd.esCardMod.CardSize
-import typings.antd.esCarouselMod.CarouselEffect
-import typings.antd.esCarouselMod.DotPosition
-import typings.antd.esCollapseCollapseMod.ExpandIconPosition
-import typings.antd.esDateDashPickerInterfaceMod.DatePickerMode
-import typings.antd.esDrawerMod.placementType
-import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
-import typings.antd.esDropdownDropdownMod.Placement
-import typings.antd.esFormFormItemMod.FormLabelAlign
-import typings.antd.esLayoutSiderMod.CollapseType
-import typings.antd.esLayoutSiderMod.SiderTheme
-import typings.antd.esMentionMod.MentionPlacement
-import typings.antd.esMenuMod.MenuMode
-import typings.antd.esMessageMod.NoticeType
-import typings.antd.esNotificationMod.IconType
-import typings.antd.esNotificationMod.NotificationPlacement
-import typings.antd.esRadioInterfaceMod.RadioGroupButtonStyle
-import typings.antd.esSelectMod.ModeOption
-import typings.antd.esStatisticUtilsMod._Formatter
-import typings.antd.esTooltipMod.TooltipPlacement
-import typings.antd.esTooltipMod.TooltipTrigger
-import typings.antd.esTypographyBaseMod.BaseType
-import typings.antd.esUploadInterfaceMod.UploadFileStatus
-import typings.antd.esUploadInterfaceMod.UploadListType
-import typings.antd.esUploadInterfaceMod.UploadType
 import typings.antd.libButtonButtonMod.ButtonHTMLType
 import typings.antd.libButtonButtonMod.ButtonShape
 import typings.antd.libButtonButtonMod.ButtonSize
 import typings.antd.libButtonButtonMod.ButtonType
+import typings.antd.libCalendarMod.CalendarMode
+import typings.antd.libCardMod.CardSize
+import typings.antd.libCarouselMod.CarouselEffect
+import typings.antd.libCarouselMod.DotPosition
 import typings.antd.libCascaderMod.CascaderExpandTrigger
+import typings.antd.libCollapseCollapseMod.ExpandIconPosition
+import typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+import typings.antd.libDateDashPickerWrapPickerMod.PickerType
+import typings.antd.libDrawerMod.placementType
+import typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
+import typings.antd.libDropdownDropdownMod.Placement
+import typings.antd.libFormFormItemMod.FormLabelAlign
 import typings.antd.libFormFormMod.FormLayout
 import typings.antd.libIconMod.ThemeType
 import typings.antd.libInputDashNumberMod.OmitAttrs
+import typings.antd.libLayoutSiderMod.CollapseType
+import typings.antd.libLayoutSiderMod.SiderTheme
 import typings.antd.libListMod.ColumnType
 import typings.antd.libListMod.ListItemLayout
 import typings.antd.libListMod.ListSize
+import typings.antd.libMentionsMod.MentionPlacement
 import typings.antd.libMenuMenuContextMod.MenuTheme
+import typings.antd.libMenuMod.MenuMode
+import typings.antd.libMessageMod.NoticeType
+import typings.antd.libNotificationMod.IconType
+import typings.antd.libNotificationMod.NotificationPlacement
 import typings.antd.libProgressProgressMod.ProgressSize
 import typings.antd.libProgressProgressMod.ProgressType
+import typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.libSelectMod.ModeOption
 import typings.antd.libSpinMod.SpinSize
+import typings.antd.libStatisticUtilsMod._Formatter
 import typings.antd.libSwitchMod.SwitchSize
 import typings.antd.libTableInterfaceMod.RowSelectionType
 import typings.antd.libTableInterfaceMod.SortOrder
@@ -48,10 +43,17 @@ import typings.antd.libTableInterfaceMod.TableSelectWay
 import typings.antd.libTableInterfaceMod.TableSize
 import typings.antd.libTabsMod.TabsPosition
 import typings.antd.libTabsMod.TabsType
+import typings.antd.libTooltipMod.TooltipPlacement
+import typings.antd.libTooltipMod.TooltipTrigger
 import typings.antd.libTransferMod.TransferDirection
 import typings.antd.libTransferRenderListBodyMod.OmitProp
 import typings.antd.libTreeDirectoryTreeMod.ExpandAction
+import typings.antd.libTypographyBaseMod.BaseType
+import typings.antd.libUnderscoreUtilColorsMod.PresetColorType
 import typings.antd.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+import typings.antd.libUploadInterfaceMod.UploadFileStatus
+import typings.antd.libUploadInterfaceMod.UploadListType
+import typings.antd.libUploadInterfaceMod.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -178,9 +180,7 @@ object antdStrings {
   sealed trait PUT extends js.Object
   
   @js.native
-  sealed trait SECRET_COMBOBOX_MODE_DO_NOT_USE
-    extends ModeOption
-       with typings.antd.libSelectMod.ModeOption
+  sealed trait SECRET_COMBOBOX_MODE_DO_NOT_USE extends ModeOption
   
   @js.native
   sealed trait SHOW_ALL extends js.Object
@@ -234,12 +234,16 @@ object antdStrings {
   sealed trait always extends js.Object
   
   @js.native
+  sealed trait `ant-click-animating` extends js.Object
+  
+  @js.native
+  sealed trait `ant-click-animating-without-extra-node` extends js.Object
+  
+  @js.native
   sealed trait anywhere extends js.Object
   
   @js.native
-  sealed trait ascend
-    extends SortOrder
-       with typings.antd.esTableInterfaceMod.SortOrder
+  sealed trait ascend extends SortOrder
   
   @js.native
   sealed trait ascending extends js.Object
@@ -296,9 +300,10 @@ object antdStrings {
   sealed trait `block-start` extends js.Object
   
   @js.native
-  sealed trait body
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait blue extends PresetColorType
+  
+  @js.native
+  sealed trait body extends OmitProp
   
   @js.native
   sealed trait bold extends js.Object
@@ -315,40 +320,26 @@ object antdStrings {
   @js.native
   sealed trait bottom
     extends DotPosition
-       with typings.antd.libCarouselMod.DotPosition
        with MentionPlacement
-       with typings.antd.libMentionsMod.MentionPlacement
-       with typings.antd.esMentionsMod.MentionPlacement
        with typings.antd.libMentionMod.MentionPlacement
        with TabsPosition
-       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
        with placementType
-       with typings.antd.libDrawerMod.placementType
   
   @js.native
-  sealed trait bottomCenter
-    extends Placement
-       with typings.antd.libDropdownDropdownMod.Placement
+  sealed trait bottomCenter extends Placement
   
   @js.native
   sealed trait bottomLeft
     extends NotificationPlacement
-       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait bottomRight
     extends NotificationPlacement
-       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait `break-all` extends js.Object
@@ -366,9 +357,7 @@ object antdStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait button
-    extends ButtonHTMLType
-       with typings.antd.esButtonButtonMod.ButtonHTMLType
+  sealed trait button extends ButtonHTMLType
   
   @js.native
   sealed trait `button-arrow-down` extends js.Object
@@ -395,9 +384,7 @@ object antdStrings {
   sealed trait capitalize extends js.Object
   
   @js.native
-  sealed trait card
-    extends TabsType
-       with typings.antd.esTabsMod.TabsType
+  sealed trait card extends TabsType
   
   @js.native
   sealed trait caret extends js.Object
@@ -418,9 +405,7 @@ object antdStrings {
   sealed trait check extends js.Object
   
   @js.native
-  sealed trait checkbox
-    extends RowSelectionType
-       with typings.antd.esTableInterfaceMod.RowSelectionType
+  sealed trait checkbox extends RowSelectionType
   
   @js.native
   sealed trait `checkbox-container` extends js.Object
@@ -429,9 +414,7 @@ object antdStrings {
   sealed trait `checkbox-label` extends js.Object
   
   @js.native
-  sealed trait checkedKeys
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait checkedKeys extends OmitProp
   
   @js.native
   sealed trait checkmenuitem extends js.Object
@@ -439,14 +422,10 @@ object antdStrings {
   @js.native
   sealed trait circle
     extends ButtonShape
-       with typings.antd.esButtonButtonMod.ButtonShape
        with ProgressType
-       with typings.antd.esProgressProgressMod.ProgressType
   
   @js.native
-  sealed trait `circle-outline`
-    extends ButtonShape
-       with typings.antd.esButtonButtonMod.ButtonShape
+  sealed trait `circle-outline` extends ButtonShape
   
   @js.native
   sealed trait clear extends js.Object
@@ -454,16 +433,11 @@ object antdStrings {
   @js.native
   sealed trait click
     extends CascaderExpandTrigger
-       with typings.antd.esCascaderMod.CascaderExpandTrigger
        with ExpandAction
-       with typings.antd.esTreeDirectoryTreeMod.ExpandAction
        with TooltipTrigger
-       with typings.antd.libTooltipMod.TooltipTrigger
   
   @js.native
-  sealed trait clickTrigger
-    extends CollapseType
-       with typings.antd.libLayoutSiderMod.CollapseType
+  sealed trait clickTrigger extends CollapseType
   
   @js.native
   sealed trait clip extends js.Object
@@ -484,36 +458,31 @@ object antdStrings {
   sealed trait `color-dodge` extends js.Object
   
   @js.native
-  sealed trait column
-    extends ColumnType
-       with typings.antd.esListMod.ColumnType
+  sealed trait column extends ColumnType
   
   @js.native
   sealed trait `column-reverse` extends js.Object
   
   @js.native
-  sealed trait combobox
-    extends ModeOption
-       with typings.antd.libSelectMod.ModeOption
+  sealed trait combobox extends ModeOption
   
   @js.native
   sealed trait contain extends js.Object
   
   @js.native
+  sealed trait content extends js.Object
+  
+  @js.native
   sealed trait `content-box` extends js.Object
   
   @js.native
-  sealed trait contextMenu
-    extends TooltipTrigger
-       with typings.antd.libTooltipMod.TooltipTrigger
+  sealed trait contextMenu extends TooltipTrigger
   
   @js.native
   sealed trait copy extends js.Object
   
   @js.native
-  sealed trait countdown
-    extends _Formatter
-       with typings.antd.libStatisticUtilsMod._Formatter
+  sealed trait countdown extends _Formatter
   
   @js.native
   sealed trait cover extends js.Object
@@ -525,43 +494,42 @@ object antdStrings {
   sealed trait crispEdges extends js.Object
   
   @js.native
+  sealed trait cyan extends PresetColorType
+  
+  @js.native
   sealed trait danger
     extends BaseType
-       with typings.antd.libTypographyBaseMod.BaseType
        with ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
   
   @js.native
   sealed trait dark
     extends MenuTheme
-       with typings.antd.esMenuMenuContextMod.MenuTheme
        with SiderTheme
-       with typings.antd.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait darken extends js.Object
   
   @js.native
-  sealed trait dashboard
-    extends ProgressType
-       with typings.antd.esProgressProgressMod.ProgressType
+  sealed trait dashboard extends ProgressType
   
   @js.native
   sealed trait dashed
     extends ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
+  
+  @js.native
+  sealed trait `data-__field` extends js.Object
+  
+  @js.native
+  sealed trait `data-__meta` extends js.Object
   
   @js.native
   sealed trait date
     extends DatePickerMode
-       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+       with PickerType
   
   @js.native
-  sealed trait decade
-    extends DatePickerMode
-       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+  sealed trait decade extends DatePickerMode
   
   @js.native
   sealed trait decimal extends js.Object
@@ -569,36 +537,23 @@ object antdStrings {
   @js.native
   sealed trait default
     extends ButtonSize
-       with typings.antd.esButtonButtonMod.ButtonSize
        with ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
        with CardSize
-       with typings.antd.libCardMod.CardSize
        with ListSize
-       with typings.antd.esListMod.ListSize
        with ModeOption
-       with typings.antd.libSelectMod.ModeOption
        with ProgressSize
-       with typings.antd.esProgressProgressMod.ProgressSize
        with SpinSize
-       with typings.antd.esSpinMod.SpinSize
        with SwitchSize
-       with typings.antd.esSwitchMod.SwitchSize
        with TableSize
-       with typings.antd.esTableInterfaceMod.TableSize
   
   @js.native
   sealed trait `default-button` extends js.Object
   
   @js.native
-  sealed trait defaultValue
-    extends OmitAttrs
-       with typings.antd.esInputDashNumberMod.OmitAttrs
+  sealed trait defaultValue extends OmitAttrs
   
   @js.native
-  sealed trait descend
-    extends SortOrder
-       with typings.antd.esTableInterfaceMod.SortOrder
+  sealed trait descend extends SortOrder
   
   @js.native
   sealed trait descending extends js.Object
@@ -613,9 +568,7 @@ object antdStrings {
   sealed trait disabled extends js.Object
   
   @js.native
-  sealed trait done
-    extends UploadFileStatus
-       with typings.antd.libUploadInterfaceMod.UploadFileStatus
+  sealed trait done extends UploadFileStatus
   
   @js.native
   sealed trait dotted extends js.Object
@@ -624,14 +577,10 @@ object antdStrings {
   sealed trait double extends js.Object
   
   @js.native
-  sealed trait doubleClick
-    extends ExpandAction
-       with typings.antd.esTreeDirectoryTreeMod.ExpandAction
+  sealed trait doubleClick extends ExpandAction
   
   @js.native
-  sealed trait drag
-    extends UploadType
-       with typings.antd.libUploadInterfaceMod.UploadType
+  sealed trait drag extends UploadType
   
   @js.native
   sealed trait dualbutton extends js.Object
@@ -640,9 +589,7 @@ object antdStrings {
   sealed trait economy extends js.Object
   
   @js.native
-  sealed trait `editable-card`
-    extends TabsType
-       with typings.antd.esTabsMod.TabsType
+  sealed trait `editable-card` extends TabsType
   
   @js.native
   sealed trait element extends js.Object
@@ -662,11 +609,8 @@ object antdStrings {
   @js.native
   sealed trait error
     extends IconType
-       with typings.antd.libNotificationMod.IconType
        with NoticeType
-       with typings.antd.libMessageMod.NoticeType
        with UploadFileStatus
-       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -684,9 +628,7 @@ object antdStrings {
   sealed trait execute extends js.Object
   
   @js.native
-  sealed trait fade
-    extends CarouselEffect
-       with typings.antd.libCarouselMod.CarouselEffect
+  sealed trait fade extends CarouselEffect
   
   @js.native
   sealed trait `false` extends js.Object
@@ -698,9 +640,7 @@ object antdStrings {
   sealed trait `fill-box` extends js.Object
   
   @js.native
-  sealed trait filled
-    extends ThemeType
-       with typings.antd.esIconMod.ThemeType
+  sealed trait filled extends ThemeType
   
   @js.native
   sealed trait finish extends js.Object
@@ -715,9 +655,7 @@ object antdStrings {
   sealed trait flex extends js.Object
   
   @js.native
-  sealed trait focus
-    extends TooltipTrigger
-       with typings.antd.libTooltipMod.TooltipTrigger
+  sealed trait focus extends TooltipTrigger
   
   @js.native
   sealed trait footer extends js.Object
@@ -729,17 +667,24 @@ object antdStrings {
   sealed trait `full-width` extends js.Object
   
   @js.native
+  sealed trait geekblue extends PresetColorType
+  
+  @js.native
   sealed trait geometricPrecision extends js.Object
   
   @js.native
   sealed trait ghost
     extends ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
+  
+  @js.native
+  sealed trait gold extends PresetColorType
   
   @js.native
   sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait green extends PresetColorType
   
   @js.native
   sealed trait grid extends js.Object
@@ -754,29 +699,19 @@ object antdStrings {
   sealed trait groupbox extends js.Object
   
   @js.native
-  sealed trait gutter
-    extends ColumnType
-       with typings.antd.esListMod.ColumnType
+  sealed trait gutter extends ColumnType
   
   @js.native
-  sealed trait handleClear
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait handleClear extends OmitProp
   
   @js.native
-  sealed trait handleFilter
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait handleFilter extends OmitProp
   
   @js.native
-  sealed trait handleSelect
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait handleSelect extends OmitProp
   
   @js.native
-  sealed trait handleSelectAll
-    extends OmitProp
-       with typings.antd.esTransferRenderListBodyMod.OmitProp
+  sealed trait handleSelectAll extends OmitProp
   
   @js.native
   sealed trait hanging extends js.Object
@@ -796,11 +731,8 @@ object antdStrings {
   @js.native
   sealed trait horizontal
     extends FormLayout
-       with typings.antd.esFormFormMod.FormLayout
        with ListItemLayout
-       with typings.antd.esListMod.ListItemLayout
        with MenuMode
-       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `horizontal-tb` extends js.Object
@@ -808,9 +740,7 @@ object antdStrings {
   @js.native
   sealed trait hover
     extends CascaderExpandTrigger
-       with typings.antd.esCascaderMod.CascaderExpandTrigger
        with TooltipTrigger
-       with typings.antd.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait hue extends js.Object
@@ -839,9 +769,7 @@ object antdStrings {
   @js.native
   sealed trait info
     extends IconType
-       with typings.antd.libNotificationMod.IconType
        with NoticeType
-       with typings.antd.libMessageMod.NoticeType
   
   @js.native
   sealed trait inherit extends js.Object
@@ -852,9 +780,7 @@ object antdStrings {
   @js.native
   sealed trait `inline`
     extends FormLayout
-       with typings.antd.esFormFormMod.FormLayout
        with MenuMode
-       with typings.antd.libMenuMod.MenuMode
   
   @js.native
   sealed trait `inline-axis` extends js.Object
@@ -908,54 +834,39 @@ object antdStrings {
   sealed trait `keep-all` extends js.Object
   
   @js.native
+  sealed trait label extends js.Object
+  
+  @js.native
   sealed trait large
     extends ButtonSize
-       with typings.antd.esButtonButtonMod.ButtonSize
        with ListSize
-       with typings.antd.esListMod.ListSize
        with SpinSize
-       with typings.antd.esSpinMod.SpinSize
   
   @js.native
   sealed trait left
     extends DotPosition
-       with typings.antd.libCarouselMod.DotPosition
        with ExpandIconPosition
-       with typings.antd.libCollapseCollapseMod.ExpandIconPosition
        with FormLabelAlign
-       with typings.antd.libFormFormItemMod.FormLabelAlign
        with TabsPosition
-       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
        with TransferDirection
-       with typings.antd.esTransferMod.TransferDirection
        with placementType
-       with typings.antd.libDrawerMod.placementType
   
   @js.native
-  sealed trait leftBottom
-    extends TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
+  sealed trait leftBottom extends TooltipPlacement
   
   @js.native
-  sealed trait leftTop
-    extends TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
+  sealed trait leftTop extends TooltipPlacement
   
   @js.native
   sealed trait lg
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait light
     extends MenuTheme
-       with typings.antd.esMenuMenuContextMod.MenuTheme
        with SiderTheme
-       with typings.antd.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait lighten extends js.Object
@@ -964,19 +875,18 @@ object antdStrings {
   sealed trait lighter extends js.Object
   
   @js.native
+  sealed trait lime extends PresetColorType
+  
+  @js.native
   sealed trait line
     extends ProgressType
-       with typings.antd.esProgressProgressMod.ProgressType
        with TabsType
-       with typings.antd.esTabsMod.TabsType
   
   @js.native
   sealed trait linearRGB extends js.Object
   
   @js.native
-  sealed trait link
-    extends ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
+  sealed trait link extends ButtonType
   
   @js.native
   sealed trait list extends js.Object
@@ -991,9 +901,7 @@ object antdStrings {
   sealed trait load extends js.Object
   
   @js.native
-  sealed trait loading
-    extends NoticeType
-       with typings.antd.libMessageMod.NoticeType
+  sealed trait loading extends NoticeType
   
   @js.native
   sealed trait location extends js.Object
@@ -1015,6 +923,9 @@ object antdStrings {
   
   @js.native
   sealed trait luminosity extends js.Object
+  
+  @js.native
+  sealed trait magenta extends PresetColorType
   
   @js.native
   sealed trait main extends js.Object
@@ -1040,9 +951,7 @@ object antdStrings {
   @js.native
   sealed trait md
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait `media-controls-background` extends js.Object
@@ -1150,9 +1059,7 @@ object antdStrings {
   sealed trait meterchunk extends js.Object
   
   @js.native
-  sealed trait middle
-    extends TableSize
-       with typings.antd.esTableInterfaceMod.TableSize
+  sealed trait middle extends TableSize
   
   @js.native
   sealed trait miter extends js.Object
@@ -1163,17 +1070,14 @@ object antdStrings {
   @js.native
   sealed trait month
     extends CalendarMode
-       with typings.antd.libCalendarMod.CalendarMode
        with DatePickerMode
-       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+       with PickerType
   
   @js.native
   sealed trait move extends js.Object
   
   @js.native
-  sealed trait multiple
-    extends ModeOption
-       with typings.antd.libSelectMod.ModeOption
+  sealed trait multiple extends ModeOption
   
   @js.native
   sealed trait multiply extends js.Object
@@ -1215,9 +1119,7 @@ object antdStrings {
   sealed trait nowrap extends js.Object
   
   @js.native
-  sealed trait number
-    extends _Formatter
-       with typings.antd.libStatisticUtilsMod._Formatter
+  sealed trait number extends _Formatter
   
   @js.native
   sealed trait numeric extends js.Object
@@ -1232,29 +1134,19 @@ object antdStrings {
   sealed trait on extends js.Object
   
   @js.native
-  sealed trait onChange
-    extends OmitAttrs
-       with typings.antd.esInputDashNumberMod.OmitAttrs
+  sealed trait onChange extends OmitAttrs
   
   @js.native
-  sealed trait onSelect
-    extends TableSelectWay
-       with typings.antd.esTableInterfaceMod.TableSelectWay
+  sealed trait onSelect extends TableSelectWay
   
   @js.native
-  sealed trait onSelectAll
-    extends TableSelectWay
-       with typings.antd.esTableInterfaceMod.TableSelectWay
+  sealed trait onSelectAll extends TableSelectWay
   
   @js.native
-  sealed trait onSelectInvert
-    extends TableSelectWay
-       with typings.antd.esTableInterfaceMod.TableSelectWay
+  sealed trait onSelectInvert extends TableSelectWay
   
   @js.native
-  sealed trait onSelectMultiple
-    extends TableSelectWay
-       with typings.antd.esTableInterfaceMod.TableSelectWay
+  sealed trait onSelectMultiple extends TableSelectWay
   
   @js.native
   sealed trait optimizeLegibility extends js.Object
@@ -1266,17 +1158,16 @@ object antdStrings {
   sealed trait optimizeSpeed extends js.Object
   
   @js.native
+  sealed trait orange extends PresetColorType
+  
+  @js.native
   sealed trait other extends js.Object
   
   @js.native
-  sealed trait outline
-    extends RadioGroupButtonStyle
-       with typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
+  sealed trait outline extends RadioGroupButtonStyle
   
   @js.native
-  sealed trait outlined
-    extends ThemeType
-       with typings.antd.esIconMod.ThemeType
+  sealed trait outlined extends ThemeType
   
   @js.native
   sealed trait outset extends js.Object
@@ -1306,14 +1197,13 @@ object antdStrings {
   sealed trait `petite-caps` extends js.Object
   
   @js.native
-  sealed trait picture
-    extends UploadListType
-       with typings.antd.libUploadInterfaceMod.UploadListType
+  sealed trait picture extends UploadListType
   
   @js.native
-  sealed trait `picture-card`
-    extends UploadListType
-       with typings.antd.libUploadInterfaceMod.UploadListType
+  sealed trait `picture-card` extends UploadListType
+  
+  @js.native
+  sealed trait pink extends PresetColorType
   
   @js.native
   sealed trait pixelated extends js.Object
@@ -1348,9 +1238,7 @@ object antdStrings {
   @js.native
   sealed trait primary
     extends ButtonType
-       with typings.antd.esButtonButtonMod.ButtonType
        with DropdownButtonType
-       with typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait process extends js.Object
@@ -1380,15 +1268,16 @@ object antdStrings {
   sealed trait proximity extends js.Object
   
   @js.native
+  sealed trait purple extends PresetColorType
+  
+  @js.native
   sealed trait `push-button` extends js.Object
   
   @js.native
   sealed trait put_ extends js.Object
   
   @js.native
-  sealed trait radio
-    extends RowSelectionType
-       with typings.antd.esTableInterfaceMod.RowSelectionType
+  sealed trait radio extends RowSelectionType
   
   @js.native
   sealed trait `radio-container` extends js.Object
@@ -1421,6 +1310,9 @@ object antdStrings {
   sealed trait recto extends js.Object
   
   @js.native
+  sealed trait red extends PresetColorType
+  
+  @js.native
   sealed trait region extends js.Object
   
   @js.native
@@ -1433,17 +1325,13 @@ object antdStrings {
   sealed trait remove extends js.Object
   
   @js.native
-  sealed trait removed
-    extends UploadFileStatus
-       with typings.antd.libUploadInterfaceMod.UploadFileStatus
+  sealed trait removed extends UploadFileStatus
   
   @js.native
   sealed trait repeat extends js.Object
   
   @js.native
-  sealed trait reset
-    extends ButtonHTMLType
-       with typings.antd.esButtonButtonMod.ButtonHTMLType
+  sealed trait reset extends ButtonHTMLType
   
   @js.native
   sealed trait `reset-size` extends js.Object
@@ -1455,9 +1343,7 @@ object antdStrings {
   sealed trait resizerpanel extends js.Object
   
   @js.native
-  sealed trait responsive
-    extends CollapseType
-       with typings.antd.libLayoutSiderMod.CollapseType
+  sealed trait responsive extends CollapseType
   
   @js.native
   sealed trait reverse extends js.Object
@@ -1471,37 +1357,24 @@ object antdStrings {
   @js.native
   sealed trait right
     extends DotPosition
-       with typings.antd.libCarouselMod.DotPosition
        with ExpandIconPosition
-       with typings.antd.libCollapseCollapseMod.ExpandIconPosition
        with FormLabelAlign
-       with typings.antd.libFormFormItemMod.FormLabelAlign
        with TabsPosition
-       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
        with TransferDirection
-       with typings.antd.esTransferMod.TransferDirection
        with placementType
-       with typings.antd.libDrawerMod.placementType
   
   @js.native
-  sealed trait rightBottom
-    extends TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
+  sealed trait rightBottom extends TooltipPlacement
   
   @js.native
-  sealed trait rightTop
-    extends TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
+  sealed trait rightTop extends TooltipPlacement
   
   @js.native
   sealed trait rl extends js.Object
   
   @js.native
-  sealed trait round
-    extends ButtonShape
-       with typings.antd.esButtonButtonMod.ButtonShape
+  sealed trait round extends ButtonShape
   
   @js.native
   sealed trait row extends js.Object
@@ -1576,9 +1449,7 @@ object antdStrings {
   sealed trait `scrollbartrack-vertical` extends js.Object
   
   @js.native
-  sealed trait scrollx
-    extends CarouselEffect
-       with typings.antd.libCarouselMod.CarouselEffect
+  sealed trait scrollx extends CarouselEffect
   
   @js.native
   sealed trait search extends js.Object
@@ -1599,17 +1470,13 @@ object antdStrings {
   sealed trait `searchfield-results-decoration` extends js.Object
   
   @js.native
-  sealed trait secondary
-    extends BaseType
-       with typings.antd.libTypographyBaseMod.BaseType
+  sealed trait secondary extends BaseType
   
   @js.native
   sealed trait section extends js.Object
   
   @js.native
-  sealed trait select
-    extends UploadType
-       with typings.antd.libUploadInterfaceMod.UploadType
+  sealed trait select extends UploadType
   
   @js.native
   sealed trait `select-after` extends js.Object
@@ -1651,9 +1518,7 @@ object antdStrings {
   sealed trait single extends js.Object
   
   @js.native
-  sealed trait size
-    extends OmitAttrs
-       with typings.antd.esInputDashNumberMod.OmitAttrs
+  sealed trait size extends OmitAttrs
   
   @js.native
   sealed trait slice extends js.Object
@@ -1673,26 +1538,17 @@ object antdStrings {
   @js.native
   sealed trait sm
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait small
     extends ButtonSize
-       with typings.antd.esButtonButtonMod.ButtonSize
        with CardSize
-       with typings.antd.libCardMod.CardSize
        with ListSize
-       with typings.antd.esListMod.ListSize
        with ProgressSize
-       with typings.antd.esProgressProgressMod.ProgressSize
        with SpinSize
-       with typings.antd.esSpinMod.SpinSize
        with SwitchSize
-       with typings.antd.esSwitchMod.SwitchSize
        with TableSize
-       with typings.antd.esTableInterfaceMod.TableSize
   
   @js.native
   sealed trait `small-caps` extends js.Object
@@ -1704,9 +1560,7 @@ object antdStrings {
   sealed trait `soft-light` extends js.Object
   
   @js.native
-  sealed trait solid
-    extends RadioGroupButtonStyle
-       with typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
+  sealed trait solid extends RadioGroupButtonStyle
   
   @js.native
   sealed trait sourceSelectedKeys extends js.Object
@@ -1778,18 +1632,13 @@ object antdStrings {
   sealed trait sub extends js.Object
   
   @js.native
-  sealed trait submit
-    extends ButtonHTMLType
-       with typings.antd.esButtonButtonMod.ButtonHTMLType
+  sealed trait submit extends ButtonHTMLType
   
   @js.native
   sealed trait success
     extends IconType
-       with typings.antd.libNotificationMod.IconType
        with NoticeType
-       with typings.antd.libMessageMod.NoticeType
        with UploadFileStatus
-       with typings.antd.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait `super` extends js.Object
@@ -1810,9 +1659,7 @@ object antdStrings {
   sealed trait tabpanels extends js.Object
   
   @js.native
-  sealed trait tags
-    extends ModeOption
-       with typings.antd.libSelectMod.ModeOption
+  sealed trait tags extends ModeOption
   
   @js.native
   sealed trait targetSelectedKeys extends js.Object
@@ -1824,9 +1671,7 @@ object antdStrings {
   sealed trait tel extends js.Object
   
   @js.native
-  sealed trait text
-    extends UploadListType
-       with typings.antd.libUploadInterfaceMod.UploadListType
+  sealed trait text extends UploadListType
   
   @js.native
   sealed trait `text-after-edge` extends js.Object
@@ -1847,9 +1692,7 @@ object antdStrings {
   sealed trait thin extends js.Object
   
   @js.native
-  sealed trait time
-    extends DatePickerMode
-       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+  sealed trait time extends DatePickerMode
   
   @js.native
   sealed trait `titling-caps` extends js.Object
@@ -1875,40 +1718,26 @@ object antdStrings {
   @js.native
   sealed trait top
     extends DotPosition
-       with typings.antd.libCarouselMod.DotPosition
        with MentionPlacement
-       with typings.antd.libMentionsMod.MentionPlacement
-       with typings.antd.esMentionsMod.MentionPlacement
        with typings.antd.libMentionMod.MentionPlacement
        with TabsPosition
-       with typings.antd.esTabsMod.TabsPosition
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
        with placementType
-       with typings.antd.libDrawerMod.placementType
   
   @js.native
-  sealed trait topCenter
-    extends Placement
-       with typings.antd.libDropdownDropdownMod.Placement
+  sealed trait topCenter extends Placement
   
   @js.native
   sealed trait topLeft
     extends NotificationPlacement
-       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait topRight
     extends NotificationPlacement
-       with typings.antd.libNotificationMod.NotificationPlacement
        with Placement
-       with typings.antd.libDropdownDropdownMod.Placement
        with TooltipPlacement
-       with typings.antd.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait touch extends js.Object
@@ -1944,9 +1773,7 @@ object antdStrings {
   sealed trait `true` extends js.Object
   
   @js.native
-  sealed trait twoTone
-    extends ThemeType
-       with typings.antd.esIconMod.ThemeType
+  sealed trait twoTone extends ThemeType
   
   @js.native
   sealed trait under extends js.Object
@@ -1958,9 +1785,7 @@ object antdStrings {
   sealed trait unset extends js.Object
   
   @js.native
-  sealed trait uploading
-    extends UploadFileStatus
-       with typings.antd.libUploadInterfaceMod.UploadFileStatus
+  sealed trait uploading extends UploadFileStatus
   
   @js.native
   sealed trait uppercase extends js.Object
@@ -1983,24 +1808,17 @@ object antdStrings {
   @js.native
   sealed trait vertical
     extends FormLayout
-       with typings.antd.esFormFormMod.FormLayout
        with ListItemLayout
-       with typings.antd.esListMod.ListItemLayout
        with MenuMode
-       with typings.antd.libMenuMod.MenuMode
   
   @js.native
-  sealed trait `vertical-left`
-    extends MenuMode
-       with typings.antd.libMenuMod.MenuMode
+  sealed trait `vertical-left` extends MenuMode
   
   @js.native
   sealed trait `vertical-lr` extends js.Object
   
   @js.native
-  sealed trait `vertical-right`
-    extends MenuMode
-       with typings.antd.libMenuMod.MenuMode
+  sealed trait `vertical-right` extends MenuMode
   
   @js.native
   sealed trait `vertical-rl` extends js.Object
@@ -2024,19 +1842,22 @@ object antdStrings {
   sealed trait visibleStroke extends js.Object
   
   @js.native
+  sealed trait volcano extends PresetColorType
+  
+  @js.native
   sealed trait wait extends js.Object
   
   @js.native
   sealed trait warning
     extends BaseType
-       with typings.antd.libTypographyBaseMod.BaseType
        with IconType
-       with typings.antd.libNotificationMod.IconType
        with NoticeType
-       with typings.antd.libMessageMod.NoticeType
   
   @js.native
   sealed trait wavy extends js.Object
+  
+  @js.native
+  sealed trait week extends PickerType
   
   @js.native
   sealed trait wrap extends js.Object
@@ -2050,30 +1871,25 @@ object antdStrings {
   @js.native
   sealed trait xl
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait xs
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait xxl
     extends Breakpoint
-       with typings.antd.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with ColumnType
-       with typings.antd.esListMod.ColumnType
   
   @js.native
   sealed trait year
     extends CalendarMode
-       with typings.antd.libCalendarMod.CalendarMode
        with DatePickerMode
-       with typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
+  
+  @js.native
+  sealed trait yellow extends PresetColorType
   
   @js.native
   sealed trait yes extends js.Object
@@ -2198,6 +2014,10 @@ object antdStrings {
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
+  def `ant-click-animating`: `ant-click-animating` = "ant-click-animating".asInstanceOf[`ant-click-animating`]
+  @scala.inline
+  def `ant-click-animating-without-extra-node`: `ant-click-animating-without-extra-node` = "ant-click-animating-without-extra-node".asInstanceOf[`ant-click-animating-without-extra-node`]
+  @scala.inline
   def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
   @scala.inline
   def ascend: ascend = "ascend".asInstanceOf[ascend]
@@ -2237,6 +2057,8 @@ object antdStrings {
   def `block-end`: `block-end` = "block-end".asInstanceOf[`block-end`]
   @scala.inline
   def `block-start`: `block-start` = "block-start".asInstanceOf[`block-start`]
+  @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
@@ -2336,6 +2158,8 @@ object antdStrings {
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
+  def content: content = "content".asInstanceOf[content]
+  @scala.inline
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   @scala.inline
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
@@ -2350,6 +2174,8 @@ object antdStrings {
   @scala.inline
   def crispEdges: crispEdges = "crispEdges".asInstanceOf[crispEdges]
   @scala.inline
+  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
@@ -2359,6 +2185,10 @@ object antdStrings {
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
+  @scala.inline
+  def `data-__field`: `data-__field` = "data-__field".asInstanceOf[`data-__field`]
+  @scala.inline
+  def `data-__meta`: `data-__meta` = "data-__meta".asInstanceOf[`data-__meta`]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
@@ -2446,11 +2276,17 @@ object antdStrings {
   @scala.inline
   def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
   @scala.inline
+  def geekblue: geekblue = "geekblue".asInstanceOf[geekblue]
+  @scala.inline
   def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
   @scala.inline
+  def gold: gold = "gold".asInstanceOf[gold]
+  @scala.inline
   def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
@@ -2544,6 +2380,8 @@ object antdStrings {
   @scala.inline
   def `keep-all`: `keep-all` = "keep-all".asInstanceOf[`keep-all`]
   @scala.inline
+  def label: label = "label".asInstanceOf[label]
+  @scala.inline
   def large: large = "large".asInstanceOf[large]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
@@ -2559,6 +2397,8 @@ object antdStrings {
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
+  @scala.inline
+  def lime: lime = "lime".asInstanceOf[lime]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline
@@ -2589,6 +2429,8 @@ object antdStrings {
   def luminance: luminance = "luminance".asInstanceOf[luminance]
   @scala.inline
   def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
+  @scala.inline
+  def magenta: magenta = "magenta".asInstanceOf[magenta]
   @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
@@ -2740,6 +2582,8 @@ object antdStrings {
   @scala.inline
   def optimizeSpeed: optimizeSpeed = "optimizeSpeed".asInstanceOf[optimizeSpeed]
   @scala.inline
+  def orange: orange = "orange".asInstanceOf[orange]
+  @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
@@ -2767,6 +2611,8 @@ object antdStrings {
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
   def `picture-card`: `picture-card` = "picture-card".asInstanceOf[`picture-card`]
+  @scala.inline
+  def pink: pink = "pink".asInstanceOf[pink]
   @scala.inline
   def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   @scala.inline
@@ -2808,6 +2654,8 @@ object antdStrings {
   @scala.inline
   def proximity: proximity = "proximity".asInstanceOf[proximity]
   @scala.inline
+  def purple: purple = "purple".asInstanceOf[purple]
+  @scala.inline
   def `push-button`: `push-button` = "push-button".asInstanceOf[`push-button`]
   @scala.inline
   def put_ : put_ = "put".asInstanceOf[put_]
@@ -2833,6 +2681,8 @@ object antdStrings {
   def `read-write-plaintext-only`: `read-write-plaintext-only` = "read-write-plaintext-only".asInstanceOf[`read-write-plaintext-only`]
   @scala.inline
   def recto: recto = "recto".asInstanceOf[recto]
+  @scala.inline
+  def red: red = "red".asInstanceOf[red]
   @scala.inline
   def region: region = "region".asInstanceOf[region]
   @scala.inline
@@ -3164,9 +3014,13 @@ object antdStrings {
   @scala.inline
   def visibleStroke: visibleStroke = "visibleStroke".asInstanceOf[visibleStroke]
   @scala.inline
+  def volcano: volcano = "volcano".asInstanceOf[volcano]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
   def wavy: wavy = "wavy".asInstanceOf[wavy]
+  @scala.inline
+  def week: week = "week".asInstanceOf[week]
   @scala.inline
   def wrap: wrap = "wrap".asInstanceOf[wrap]
   @scala.inline
@@ -3181,6 +3035,8 @@ object antdStrings {
   def xxl: xxl = "xxl".asInstanceOf[xxl]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
   @scala.inline

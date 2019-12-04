@@ -1,7 +1,7 @@
 package typings.next.distNextDashServerServerRenderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.next.Anon_Error_1933525888
+import typings.next.Anon_Error
 import typings.next.Anon_FalseProps
 import typings.next.Anon_Params
 import typings.next.distNextDashServerLibUtilsMod.AppType
@@ -18,7 +18,7 @@ trait RenderOpts extends js.Object {
   var App: AppType
   var Component: ComponentType[js.Object]
   var Document: DocumentType
-  var ErrorDebug: js.UndefOr[ComponentType[Anon_Error_1933525888]] = js.undefined
+  var ErrorDebug: js.UndefOr[ComponentType[Anon_Error]] = js.undefined
   var ampBindInitData: Boolean
   var ampMode: js.UndefOr[js.Any] = js.undefined
   var ampPath: js.UndefOr[String] = js.undefined
@@ -37,7 +37,7 @@ trait RenderOpts extends js.Object {
   var hybridAmp: js.UndefOr[Boolean] = js.undefined
   var inAmpMode: js.UndefOr[Boolean] = js.undefined
   var nextExport: js.UndefOr[Boolean] = js.undefined
-  var pageConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PageConfig */ js.Any
+  var pageConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PageConfig */ js.Any
   var reactLoadableManifest: ReactLoadableManifest
   var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var staticMarkup: Boolean
@@ -60,10 +60,10 @@ object RenderOpts {
     dangerousAsPath: String,
     documentMiddlewareEnabled: Boolean,
     hasCssMode: Boolean,
-    pageConfig: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PageConfig */ js.Any,
+    pageConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PageConfig */ js.Any,
     reactLoadableManifest: ReactLoadableManifest,
     staticMarkup: Boolean,
-    ErrorDebug: ComponentType[Anon_Error_1933525888] = null,
+    ErrorDebug: ComponentType[Anon_Error] = null,
     ampMode: js.Any = null,
     ampPath: String = null,
     ampValidator: (/* html */ String, /* pathname */ String) => js.Promise[Unit] = null,

@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.datalayout")
 @js.native
-class datalayout () extends baseview {
+class datalayout ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_datalayout: WebixCallback = js.native
   @JSName("config")
   var config_datalayout: datalayoutConfig = js.native
   var data: DataStore = js.native

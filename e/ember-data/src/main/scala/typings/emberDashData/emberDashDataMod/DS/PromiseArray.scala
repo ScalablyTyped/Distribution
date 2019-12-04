@@ -1,5 +1,6 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberObject.promiseDashProxyDashMixinMod.PromiseProxyMixin
 import typings.ember.emberMod.default.ArrayProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +13,9 @@ import scala.scalajs.js.annotation._
   * it easy to create data bindings with the `PromiseArray` that will be
   * updated when the promise resolves.
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PromiseProxyMixin<Ember.ArrayProxy<T>> * / any */ @JSImport("ember-data", "DS.PromiseArray")
+@JSImport("ember-data", "DS.PromiseArray")
 @js.native
-class PromiseArray[T] () extends ArrayProxy[T]
+class PromiseArray[T] ()
+  extends PromiseProxyMixin[ArrayProxy[T]]
+     with typings.atEmberArray.proxyMod.ArrayProxy[T]
 

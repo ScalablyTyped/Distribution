@@ -16,12 +16,12 @@ trait NatsTransport extends js.Object {
   def request(
     subject: String,
     msg: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any
   ): Double = js.native
   def request(
     subject: String,
     msg: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any,
     callback: js.Function
   ): Double = js.native
   def send(subject: String): Unit = js.native
@@ -33,7 +33,7 @@ trait NatsTransport extends js.Object {
   def send(subject: String, msg: Buffer, reply: String, callback: js.Function): Unit = js.native
   def subscribe(
     subject: String,
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any,
+    opts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nats.SubscribeOptions */ js.Any,
     callback: js.Function
   ): Double = js.native
   def timeout(sid: Double, timeout: Double, expected: Double, callback: js.Function1[/* sid */ Double, Unit]): Unit = js.native

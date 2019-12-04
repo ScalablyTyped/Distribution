@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ K in keyof webdriverio.BrowserPromise ]: (args : std.Parameters<webdriverio.BrowserPromise[K]>): std.Promise<std.ReturnType<webdriverio.BrowserPromise[K]>>}
-- Dropped {[ P in 'addCommand' | 'overwriteCommand' | 'options' | 'config' ]: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser * / any[P]} */ @js.native
+- Dropped {[ P in 'addCommand' | 'overwriteCommand' | 'options' | 'config' ]: webdriverio.WebdriverIO.Browser[P]} */ @js.native
 trait Browser extends AsyncSelectors {
   // there is no way to wrap generic functions, like `<T>(arg: T) => T`
   // have to declare explicitly for sync and async typings.

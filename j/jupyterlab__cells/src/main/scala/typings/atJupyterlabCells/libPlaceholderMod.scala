@@ -2,8 +2,8 @@ package typings.atJupyterlabCells
 
 import typings.atJupyterlabApputils.atJupyterlabApputilsMod.ReactWidget
 import typings.atJupyterlabCells.libPlaceholderMod.Placeholder
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

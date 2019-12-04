@@ -1,12 +1,12 @@
 package typings.appDashBuilderDashLib.outPackagerMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Target
 import typings.appDashBuilderDashLib.outAppInfoMod.AppInfo
 import typings.appDashBuilderDashLib.outConfigurationMod.AfterPackContext
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
 import typings.appDashBuilderDashLib.outCoreMod.SourceRepositoryInfo
 import typings.appDashBuilderDashLib.outFrameworkMod.Framework
-import typings.appDashBuilderDashLib.outMod.Platform
-import typings.appDashBuilderDashLib.outMod.Target
 import typings.appDashBuilderDashLib.outOptionsMetadataMod.Metadata
 import typings.appDashBuilderDashLib.outPackagerApiMod.ArtifactBuildStarted
 import typings.appDashBuilderDashLib.outPackagerApiMod.ArtifactCreated

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "wepy-redux"
-version := "1.7-dt-20190717Z-6bfeb5"
+version := "1.7-dt-20190717Z-f29e08"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "redux" % "4.0.4-c08a69",
+  "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "wepy" % "1.7-dt-20191126Z-c06f0a")
 publishArtifact in packageDoc := false

@@ -11,9 +11,9 @@ object setDayMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double, day: Double): Date = js.native
-    def apply(date: Double, day: Double, options: Anon_01): Date = js.native
+    def apply(date: Double, day: Double, options: Anon_0): Date = js.native
     def apply(date: Date, day: Double): Date = js.native
-    def apply(date: Date, day: Double, options: Anon_01): Date = js.native
+    def apply(date: Date, day: Double, options: Anon_0): Date = js.native
   }
   
 }

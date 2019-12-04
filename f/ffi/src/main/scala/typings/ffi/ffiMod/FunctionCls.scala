@@ -1,6 +1,5 @@
 package typings.ffi.ffiMod
 
-import typings.node.Buffer
 import typings.ref.refMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,9 +20,9 @@ class FunctionCls protected () extends Function {
   override var size: Double = js.native
   /** To invoke when `ref.get` is invoked on a buffer of this type. */
   /* CompleteClass */
-  override def get(buffer: Buffer, offset: Double): js.Any = js.native
+  override def get(buffer: typings.node.Buffer, offset: Double): js.Any = js.native
   /** To invoke when `ref.set` is invoked on a buffer of this type. */
   /* CompleteClass */
-  override def set(buffer: Buffer, offset: Double, value: js.Any): Unit = js.native
+  override def set(buffer: typings.node.Buffer, offset: Double, value: js.Any): Unit = js.native
 }
 

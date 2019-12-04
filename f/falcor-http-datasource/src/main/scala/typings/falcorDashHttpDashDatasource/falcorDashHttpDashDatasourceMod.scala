@@ -11,7 +11,7 @@ object falcorDashHttpDashDatasourceMod extends js.Object {
     * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
     **/
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @js.native
   class XMlHttpSource protected () extends js.Object {
     def this(jsonGraphUrl: String) = this()
     def this(jsonGraphUrl: String, config: js.Any) = this()
@@ -21,7 +21,7 @@ object falcorDashHttpDashDatasourceMod extends js.Object {
     * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
     **/
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource * / any */ @js.native
   class default protected () extends js.Object {
     def this(jsonGraphUrl: String) = this()
     def this(jsonGraphUrl: String, config: js.Any) = this()
@@ -32,7 +32,7 @@ object falcorDashHttpDashDatasourceMod extends js.Object {
     /**
       * A HttpDataSource object is a {@link DataSource} can be used to retrieve data from a remote JSONGraph object using the browser's XMLHttpRequest.
       **/
-    type XMlHttpSource = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FalcorModel.DataSource */ js.Any
+    type XMlHttpSource = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FalcorModel.DataSource */ js.Any
   }
   
 }

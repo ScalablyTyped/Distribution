@@ -91,7 +91,7 @@ trait excelviewerConfig extends js.Object {
   var spans: js.UndefOr[js.Array[_]] = js.undefined
   var subRowHeight: js.UndefOr[String] = js.undefined
   var subrow: js.UndefOr[String] = js.undefined
-  var subview: js.UndefOr[baseview | WebixCallback] = js.undefined
+  var subview: js.UndefOr[typings.webix.webix.ui.baseview | WebixCallback] = js.undefined
   var templateCopy: js.UndefOr[WebixCallback] = js.undefined
   var toolbar: js.UndefOr[String] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -189,7 +189,7 @@ object excelviewerConfig {
     spans: js.Array[_] = null,
     subRowHeight: String = null,
     subrow: String = null,
-    subview: baseview | WebixCallback = null,
+    subview: typings.webix.webix.ui.baseview | WebixCallback = null,
     templateCopy: /* repeated */ js.Any => js.Any = null,
     toolbar: String = null,
     tooltip: js.Any = null,

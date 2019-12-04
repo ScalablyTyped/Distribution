@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esRadioInterfaceMod.RadioChangeEvent
+import typings.antd.libRadioInterfaceMod.RadioChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

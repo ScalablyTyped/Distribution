@@ -1,7 +1,7 @@
 package typings.atAntDashDesignReactDashNative.libTabDashBarMod
 
 import typings.atAntDashDesignReactDashNative.Anon_BarTintColor
-import typings.atAntDashDesignReactDashNative.TypeofClassTabBarItemDefaultProps
+import typings.atAntDashDesignReactDashNative.TypeofClassTabBarItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends TabBar
 @JSImport("@ant-design/react-native/lib/tab-bar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: TypeofClassTabBarItemDefaultProps = js.native
+  var Item: TypeofClassTabBarItem = js.native
   var defaultProps: Anon_BarTintColor = js.native
 }
 

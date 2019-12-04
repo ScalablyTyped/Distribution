@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.excelviewer")
 @js.native
-class excelviewer () extends baseview {
+class excelviewer ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   @JSName("$dragHTML")
@@ -23,6 +24,8 @@ class excelviewer () extends baseview {
   var $dropHTML_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_excelviewer: WebixCallback = js.native
   @JSName("$touch")
   var $touch_Original: WebixCallback = js.native
   @JSName("config")

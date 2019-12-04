@@ -2,8 +2,8 @@ package typings.gatsbyDashLink.gatsbyDashLinkMod
 
 import typings.atReachRouter.atReachRouterMod.LinkGetProps
 import typings.atReachRouter.atReachRouterMod.LinkProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

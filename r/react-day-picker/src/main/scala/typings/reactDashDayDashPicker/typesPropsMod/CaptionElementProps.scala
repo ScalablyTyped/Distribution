@@ -1,8 +1,8 @@
 package typings.reactDashDayDashPicker.typesPropsMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.reactDashDayDashPicker.typesCommonMod.ClassNames
 import typings.std.Date
 import typings.std.HTMLElement

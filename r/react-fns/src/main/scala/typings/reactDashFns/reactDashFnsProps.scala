@@ -19,10 +19,16 @@ trait reactDashFnsProps {
   def LocalesProps: SharedRenderProps.type = typings.reactDashFns.distTypesMod.SharedRenderProps
   type LocalesProps[P] = SharedRenderProps[P]
   @scala.inline
+  def MailtoProps: typings.reactDashFns.distMailtoMod.MailtoProps.type = typings.reactDashFns.distMailtoMod.MailtoProps
+  type MailtoProps = typings.reactDashFns.distMailtoMod.MailtoProps
+  @scala.inline
   def MediaProps: SharedRenderProps.type = typings.reactDashFns.distTypesMod.SharedRenderProps
   type MediaProps[P] = SharedRenderProps[P]
   @scala.inline
   def NetworkProps: SharedRenderProps.type = typings.reactDashFns.distTypesMod.SharedRenderProps
   type NetworkProps[P] = SharedRenderProps[P]
+  @scala.inline
+  def SmsProps: typings.reactDashFns.distSmsMod.SmsProps.type = typings.reactDashFns.distSmsMod.SmsProps
+  type SmsProps = typings.reactDashFns.distSmsMod.SmsProps
 }
 

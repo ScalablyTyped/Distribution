@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__css"
-version := "10.0.14-d22245"
+version := "10.0.14-41b095"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

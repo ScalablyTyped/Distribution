@@ -8,9 +8,9 @@ package object mongodbMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.mongodb.Anon_IdAny
   import typings.mongodb.Anon_IdExtractIdType
-  import typings.mongodb.Omit
   import typings.mongodb.mongodbStrings._id
   import typings.std.Exclude
+  import typings.std.Pick
   import typings.std.RegExp
 
   type AcceptedFields[TSchema, FieldType, AssignableType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -24,6 +24,7 @@ package object mongodbMod {
   type CommandCursorResult = js.Object | Null
   type Condition[T] = MongoAltQuery[T] | QuerySelector[MongoAltQuery[T]]
   type CursorResult = js.Object | Null | Boolean
+  type Default = js.Any
   type DotAndArrayNotation[AssignableType] = StringDictionary[AssignableType]
   type EndCallback = js.Function1[/* error */ MongoError, Unit]
   type ExtractIdType[TSchema] = typings.bson.bsonMod.ObjectId | (Exclude[js.Any, js.Object])
@@ -44,6 +45,8 @@ package object mongodbMod {
   type ObjectQuerySelector[T] = QuerySelector[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? mongodb.mongodb.QuerySelector<T[key]>}
     */ typings.mongodb.mongodbStrings.ObjectQuerySelector with T)
+  // This line can be removed after minimum required TypeScript Version is above 3.5
+  type Omit[T, K] = Pick[T, Exclude[String, K]]
   type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (AcceptedFields[TSchema, FieldType, AssignableType]) with (NotAcceptedFields[TSchema, FieldType]) with DotAndArrayNotation[AssignableType]
   type OptionalId[TSchema] = (Omit[TSchema, _id]) with Anon_IdAny
   type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator with TSchema with (NotAcceptedFields[TSchema, js.Array[_]]) with StringDictionary[js.Array[_]]

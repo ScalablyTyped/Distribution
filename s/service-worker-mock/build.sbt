@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "service-worker-mock"
-version := "2.0-dt-20190911Z-3d0b23"
+version := "2.0-dt-20190911Z-51eef8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

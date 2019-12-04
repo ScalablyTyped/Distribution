@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 // statics
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
 trait PassportLocalModel[T /* <: Document */] extends js.Object {
   def authenticate(): AuthenticateMethod[T] = js.native
   def createStrategy(): Strategy = js.native

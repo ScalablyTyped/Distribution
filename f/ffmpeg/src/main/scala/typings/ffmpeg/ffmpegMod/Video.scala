@@ -1,10 +1,5 @@
 package typings.ffmpeg.ffmpegMod
 
-import typings.ffmpeg.AVIMetadata
-import typings.ffmpeg.FLVMetadata
-import typings.ffmpeg.FrameToJPGSettings
-import typings.ffmpeg.StandardVideoMetadata
-import typings.ffmpeg.WatermarkSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,14 +1,14 @@
 package typings.antd
 
-import typings.antd.esStatisticUtilsMod.Formatter
-import typings.antd.esStatisticUtilsMod.countdownValueType
+import typings.antd.libStatisticUtilsMod.Formatter
+import typings.antd.libStatisticUtilsMod.countdownValueType
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/statistic/Countdown.CountdownProps> */
+/* Inlined std.Partial<antd.antd/lib/statistic/Countdown.CountdownProps> */
 trait PartialCountdownProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var decimalSeparator: js.UndefOr[String] = js.undefined

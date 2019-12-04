@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-view"
-version := "2.1.2-b6e24d"
+version := "2.1.2-cfd6e0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

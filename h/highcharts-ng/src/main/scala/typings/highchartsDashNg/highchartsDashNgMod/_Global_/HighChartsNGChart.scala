@@ -19,11 +19,11 @@ object HighChartsNGChart {
   def apply(
     getHighcharts: () => js.Any,
     options: Options,
-    func: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit = null,
+    func: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit = null,
     loading: Boolean | String = null,
     noData: String = null,
     series: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ _
     ] = null,
     size: Anon_Height = null,
     title: Anon_Text = null,

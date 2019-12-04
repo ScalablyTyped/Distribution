@@ -1,8 +1,8 @@
 package typings.reactDashRnd.reactDashRndMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.reactDashDraggable.reactDashDraggableMod.DraggableEvent
 import typings.reactDashDraggable.reactDashDraggableNumbers.`false`
@@ -85,9 +85,9 @@ object Props {
     onDragStop: (/* e */ DraggableEvent, /* data */ typings.reactDashDraggable.reactDashDraggableMod.DraggableData) => Unit | `false` = null,
     onMouseDown: /* e */ MouseEvent => Unit = null,
     onMouseUp: /* e */ MouseEvent => Unit = null,
-    onResize: (/* e */ MouseEvent | TouchEvent, /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
-    onResizeStart: (/* e */ (typings.react.reactMod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.reactMod.TouchEvent[HTMLDivElement], /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement) => Unit = null,
-    onResizeStop: (/* e */ MouseEvent | TouchEvent, /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
+    onResize: (/* e */ MouseEvent | TouchEvent, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
+    onResizeStart: (/* e */ (typings.react.reactMod.MouseEvent[HTMLDivElement, NativeMouseEvent]) | typings.react.reactMod.TouchEvent[HTMLDivElement], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement) => Unit = null,
+    onResizeStop: (/* e */ MouseEvent | TouchEvent, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResizeDirection */ /* dir */ js.Any, /* elementRef */ HTMLDivElement, /* delta */ ResizableDelta, /* position */ Position) => Unit = null,
     position: Anon_X = null,
     resizeGrid: Grid = null,
     resizeHandleClasses: HandleClasses = null,

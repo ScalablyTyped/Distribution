@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phosphor__datagrid"
-version := "0.1.11-b56928"
+version := "0.1.11-3340d3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

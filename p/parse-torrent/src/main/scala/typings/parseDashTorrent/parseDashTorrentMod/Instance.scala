@@ -18,12 +18,8 @@ import scala.scalajs.js.annotation._
   var files: js.UndefOr[js.Array[ParsedFile]] = js.undefined
   var info: js.UndefOr[TorrentInfo] = js.undefined
   var infoBuffer: js.UndefOr[Buffer] = js.undefined
-  @JSName("infoHash")
-  var infoHash_Instance: String
   var lastPieceLength: js.UndefOr[Double] = js.undefined
   var length: js.UndefOr[Double] = js.undefined
-  @JSName("name")
-  var name_Instance: js.UndefOr[String] = js.undefined
   var pieceLength: js.UndefOr[Double] = js.undefined
   var pieces: js.UndefOr[js.Array[String]] = js.undefined
   var `private`: js.UndefOr[Boolean] = js.undefined
@@ -34,7 +30,6 @@ object Instance {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    infoHash: String,
     propertyIsEnumerable: PropertyKey => Boolean,
     announce: js.Array[String] = null,
     as: String | js.Array[String] = null,
@@ -44,13 +39,14 @@ object Instance {
     files: js.Array[ParsedFile] = null,
     info: TorrentInfo = null,
     infoBuffer: Buffer = null,
+    infoHash: String = null,
     infoHashBuffer: Buffer = null,
     ix: Double | js.Array[Double] = null,
     keywords: String | js.Array[String] = null,
     kt: js.Array[String] = null,
     lastPieceLength: Int | Double = null,
     length: Int | Double = null,
-    name: String = null,
+    name: String | js.Array[String] = null,
     pieceLength: Int | Double = null,
     pieces: js.Array[String] = null,
     `private`: js.UndefOr[Boolean] = js.undefined,
@@ -60,7 +56,7 @@ object Instance {
     xs: String | js.Array[String] = null,
     xt: String | js.Array[String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), infoHash = infoHash.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (announce != null) __obj.updateDynamic("announce")(announce.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
@@ -69,6 +65,7 @@ object Instance {
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
     if (infoBuffer != null) __obj.updateDynamic("infoBuffer")(infoBuffer.asInstanceOf[js.Any])
+    if (infoHash != null) __obj.updateDynamic("infoHash")(infoHash.asInstanceOf[js.Any])
     if (infoHashBuffer != null) __obj.updateDynamic("infoHashBuffer")(infoHashBuffer.asInstanceOf[js.Any])
     if (ix != null) __obj.updateDynamic("ix")(ix.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])

@@ -16,13 +16,13 @@ object distEs2015StructureFace3Mod extends js.Object {
       bIndex: Double,
       cIndex: Double,
       faceNormal: Vector3,
-      vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
     ) = this()
     var aIndex: Double = js.native
     var bIndex: Double = js.native
     var cIndex: Double = js.native
     var faceNormal: Vector3 = js.native
-    var vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any = js.native
+    var vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any = js.native
     def hasFaceNormal(): Boolean = js.native
     def hasVertexNormal(): Boolean = js.native
   }
@@ -37,7 +37,7 @@ object distEs2015StructureFace3Mod extends js.Object {
       bIndex: Double,
       cIndex: Double,
       faceNormal: Vector3,
-      vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
     ): Face3 = js.native
   }
   

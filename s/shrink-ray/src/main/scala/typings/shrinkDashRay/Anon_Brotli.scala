@@ -1,34 +1,23 @@
 package typings.shrinkDashRay
 
+import typings.express.expressMod.Request
+import typings.express.expressMod.Response
+import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.shrinkDashRay.shrinkDashRayMod.FilterFunction
 import typings.std.Partial
-import typings.std.Request
-import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Brotli extends js.Object {
-  var brotli: Anon_01
-  var cacheSize: Double
-  var filter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FilterFunction */ js.Any
-  var threshold: Double
-  var zlib: Partial[Anon_0]
-  def cache(req: Request, res: Response): Boolean
-}
-
-object Anon_Brotli {
-  @scala.inline
-  def apply(
-    brotli: Anon_01,
-    cache: (Request, Response) => Boolean,
-    cacheSize: Double,
-    filter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FilterFunction */ js.Any,
-    threshold: Double,
-    zlib: Partial[Anon_0]
-  ): Anon_Brotli = {
-    val __obj = js.Dynamic.literal(brotli = brotli.asInstanceOf[js.Any], cache = js.Any.fromFunction2(cache), cacheSize = cacheSize.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], zlib = zlib.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_Brotli]
-  }
+  var brotli: Anon_01 = js.native
+  var cacheSize: Double = js.native
+  @JSName("filter")
+  var filter_Original: FilterFunction = js.native
+  var threshold: Double = js.native
+  var zlib: Partial[Anon_0] = js.native
+  def cache(req: Request[ParamsDictionary], res: Response): Boolean = js.native
+  def filter(req: Request[ParamsDictionary], res: Response): Boolean = js.native
 }
 

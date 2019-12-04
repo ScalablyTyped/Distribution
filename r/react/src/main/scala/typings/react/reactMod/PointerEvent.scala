@@ -1,6 +1,5 @@
 package typings.react.reactMod
 
-import typings.react.NativePointerEvent
 import typings.react.reactStrings.mouse
 import typings.react.reactStrings.pen
 import typings.react.reactStrings.touch

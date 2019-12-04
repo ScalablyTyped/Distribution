@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.decimal
 import typings.atIonicCore.atIonicCoreStrings.email
 import typings.atIonicCore.atIonicCoreStrings.ios
@@ -14,6 +15,7 @@ import typings.atIonicCore.atIonicCoreStrings.search
 import typings.atIonicCore.atIonicCoreStrings.tel
 import typings.atIonicCore.atIonicCoreStrings.text
 import typings.atIonicCore.atIonicCoreStrings.url
+import typings.atIonicCore.distTypesComponentsSearchbarSearchbarDashInterfaceMod.SearchbarChangeEventDetail
 import typings.std.CustomEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -48,9 +50,7 @@ trait IonSearchbar extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
@@ -78,14 +78,7 @@ trait IonSearchbar extends js.Object {
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SearchbarChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SearchbarChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the clear input button is clicked.
     */
@@ -133,16 +126,14 @@ object IonSearchbar {
     cancelButtonIcon: String = null,
     cancelButtonText: String = null,
     clearIcon: String = null,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     debounce: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputmode: none | text | tel | url | email | numeric | decimal | search = null,
     mode: ios | md = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
     onIonCancel: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SearchbarChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[SearchbarChangeEventDetail] => Unit = null,
     onIonClear: /* event */ CustomEvent[Unit] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     onIonInput: /* event */ CustomEvent[KeyboardEvent] => Unit = null,

@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.slateStrings.operation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,6 +32,6 @@ object BaseOperation extends js.Object {
   def fromJSON(`object`: OperationJSON): Operation = js.native
   def fromJSON(`object`: OperationProperties): Operation = js.native
   def isOperation(maybeOperation: js.Any): /* is slate.slate.Operation */ Boolean = js.native
-  def isOperationList(maybeOperationList: js.Any): /* is immutable.immutable.List<slate.slate.Operation> */ Boolean = js.native
+  def isOperationList(maybeOperationList: js.Any): /* is immutable.Immutable.List<slate.slate.Operation> */ Boolean = js.native
 }
 

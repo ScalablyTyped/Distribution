@@ -1,7 +1,7 @@
 package typings.reactDashNativeDashMaps.reactDashNativeDashMapsMod
 
 import typings.react.reactMod.BaseSyntheticEvent
-import typings.reactDashNative.NodeHandle
+import typings.reactDashNative.reactDashNativeMod.NodeHandle
 import typings.reactDashNativeDashMaps.Anon_CoordinateAnonAccuracy
 import scala.scalajs.js
 import scala.scalajs.js.`|`

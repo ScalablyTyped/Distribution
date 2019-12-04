@@ -1,6 +1,7 @@
 package typings.fhirDashKitDashClient
 
 import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.Compartment
+import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.ResourceType
 import typings.fhirDashKitDashClient.fhirDashKitDashClientMod.SearchParams
 import typings.request.requestMod.Headers
 import typings.request.requestMod.Options

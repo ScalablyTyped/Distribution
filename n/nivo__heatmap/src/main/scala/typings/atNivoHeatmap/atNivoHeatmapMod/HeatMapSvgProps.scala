@@ -13,15 +13,15 @@ import typings.atNivoHeatmap.atNivoHeatmapStrings.column
 import typings.atNivoHeatmap.atNivoHeatmapStrings.rect
 import typings.atNivoHeatmap.atNivoHeatmapStrings.row
 import typings.atNivoHeatmap.atNivoHeatmapStrings.rowColumn
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.SVGGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & @nivo/core.@nivo/core.MotionProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.SVGGElement, react.NativeMouseEvent>): void}> */
+/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & @nivo/core.@nivo/core.MotionProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.SVGGElement, react.react.NativeMouseEvent>): void}> */
 trait HeatMapSvgProps extends js.Object {
   var animate: js.UndefOr[Boolean] = js.undefined
   var axisBottom: js.UndefOr[Axis] = js.undefined

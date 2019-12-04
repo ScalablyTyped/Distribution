@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distCommonjsJudgeUtilsMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JudgeUtils$ * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JudgeUtils$ * / any */ @js.native
   class JudgeUtils () extends js.Object
   
   /* static members */

@@ -1,6 +1,6 @@
 package typings.antd.libStatisticCountdownMod
 
-import typings.antd.PartialCountdownPropsClassName
+import typings.antd.PartialCountdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ class default () extends Countdown
 @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: PartialCountdownPropsClassName = js.native
+  var defaultProps: PartialCountdownProps = js.native
 }
 

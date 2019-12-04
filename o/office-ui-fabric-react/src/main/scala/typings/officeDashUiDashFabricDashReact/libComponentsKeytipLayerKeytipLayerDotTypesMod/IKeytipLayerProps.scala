@@ -3,12 +3,12 @@ package typings.officeDashUiDashFabricDashReact.libComponentsKeytipLayerKeytipLa
 import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrObject
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libUtilitiesKeytipsIKeytipTransitionKeyMod.IKeytipTransitionKey
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.Key
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.accordionitem")
 @js.native
-class accordionitem () extends baseview {
+class accordionitem ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_accordionitem: WebixCallback = js.native
   @JSName("config")
   var config_accordionitem: accordionitemConfig = js.native
   @JSName("on_click")

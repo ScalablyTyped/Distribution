@@ -29,6 +29,7 @@ import typings.atMaterialDashUiCore.expansionPanelExpansionPanelMod.ExpansionPan
 import typings.atMaterialDashUiCore.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
 import typings.atMaterialDashUiCore.fabFabMod.FabClassKey
 import typings.atMaterialDashUiCore.filledInputFilledInputMod.FilledInputClassKey
+import typings.atMaterialDashUiCore.formControlFormControlContextMod.ContextFromPropsKey
 import typings.atMaterialDashUiCore.formControlFormControlMod.FormControlClassKey
 import typings.atMaterialDashUiCore.formControlLabelFormControlLabelMod.FormControlLabelClassKey
 import typings.atMaterialDashUiCore.formGroupFormGroupMod.FormGroupClassKey
@@ -48,6 +49,7 @@ import typings.atMaterialDashUiCore.iconButtonIconButtonMod.IconButtonClassKey
 import typings.atMaterialDashUiCore.iconIconMod.IconClassKey
 import typings.atMaterialDashUiCore.inputAdornmentInputAdornmentMod.InputAdornmentClassKey
 import typings.atMaterialDashUiCore.inputBaseInputBaseMod.InputBaseClassKey
+import typings.atMaterialDashUiCore.inputBaseTextareaMod.TextareaClassKey
 import typings.atMaterialDashUiCore.inputInputMod.InputClassKey
 import typings.atMaterialDashUiCore.inputLabelInputLabelMod.InputLabelClassKey
 import typings.atMaterialDashUiCore.internalSwitchBaseMod.SwitchBaseClassKey
@@ -62,6 +64,7 @@ import typings.atMaterialDashUiCore.menuItemMenuItemMod.MenuItemClassKey
 import typings.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperClassKey
 import typings.atMaterialDashUiCore.modalModalMod.ModalClassKey
 import typings.atMaterialDashUiCore.nativeSelectNativeSelectMod.NativeSelectClassKey
+import typings.atMaterialDashUiCore.outlinedInputNotchedOutlineMod.NotchedOutlineClassKey
 import typings.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputClassKey
 import typings.atMaterialDashUiCore.paperPaperMod.PaperClassKey
 import typings.atMaterialDashUiCore.popoverPopoverMod.PopoverReference
@@ -78,6 +81,7 @@ import typings.atMaterialDashUiCore.stepLabelStepLabelMod.StepLabelClasskey
 import typings.atMaterialDashUiCore.stepStepMod.StepClasskey
 import typings.atMaterialDashUiCore.stepperStepperMod.Orientation
 import typings.atMaterialDashUiCore.stepperStepperMod.StepperClasskey
+import typings.atMaterialDashUiCore.stylesColorManipulatorMod.ColorFormat
 import typings.atMaterialDashUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.atMaterialDashUiCore.stylesCreateMuiThemeMod.Direction
 import typings.atMaterialDashUiCore.stylesCreateTypographyMod.ThemeStyle
@@ -631,6 +635,7 @@ object atMaterialDashUiCoreStrings {
     extends ButtonBaseClassKey
        with ButtonClassKey
        with CheckboxClassKey
+       with ContextFromPropsKey
        with ExpansionPanelClassKey
        with ExpansionPanelSummaryClassKey
        with FabClassKey
@@ -644,6 +649,7 @@ object atMaterialDashUiCoreStrings {
        with InputLabelClassKey
        with ListItemClassKey
        with NativeSelectClassKey
+       with NotchedOutlineClassKey
        with OutlinedInputClassKey
        with RadioClassKey
        with SelectClassKey
@@ -783,12 +789,14 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait error
-    extends FilledInputClassKey
+    extends ContextFromPropsKey
+       with FilledInputClassKey
        with FormHelperTextClassKey
        with FormLabelClassKey
        with InputBaseClassKey
        with InputClassKey
        with InputLabelClassKey
+       with NotchedOutlineClassKey
        with OutlinedInputClassKey
        with StepIconClasskey
        with StepLabelClasskey
@@ -872,6 +880,7 @@ object atMaterialDashUiCoreStrings {
        with InputBaseClassKey
        with InputClassKey
        with InputLabelClassKey
+       with NotchedOutlineClassKey
        with OutlinedInputClassKey
   
   @js.native
@@ -1031,6 +1040,12 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait hover extends TableRowClassKey
+  
+  @js.native
+  sealed trait hsl extends ColorFormat
+  
+  @js.native
+  sealed trait hsla extends ColorFormat
   
   @js.native
   sealed trait icon
@@ -1215,6 +1230,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait `left-start` extends PopperPlacementType
   
   @js.native
+  sealed trait legend extends NotchedOutlineClassKey
+  
+  @js.native
   sealed trait lg
     extends Breakpoint
        with StrippedProps
@@ -1250,6 +1268,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait ltr extends Direction
+  
+  @js.native
+  sealed trait margin extends ContextFromPropsKey
   
   @js.native
   sealed trait marginDense
@@ -1300,6 +1321,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait modal extends DrawerClassKey
+  
+  @js.native
+  sealed trait mount extends js.Object
   
   @js.native
   sealed trait mountOnEnter extends TransitionKeys
@@ -1576,12 +1600,19 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait required
-    extends FormHelperTextClassKey
+    extends ContextFromPropsKey
+       with FormHelperTextClassKey
        with FormLabelClassKey
        with InputLabelClassKey
   
   @js.native
   sealed trait reset extends js.Object
+  
+  @js.native
+  sealed trait rgb extends ColorFormat
+  
+  @js.native
+  sealed trait rgba extends ColorFormat
   
   @js.native
   sealed trait right
@@ -1651,6 +1682,7 @@ object atMaterialDashUiCoreStrings {
        with MobileStepperClassKey
        with ModalClassKey
        with NativeSelectClassKey
+       with NotchedOutlineClassKey
        with OutlinedInputClassKey
        with PaperClassKey
        with RadioClassKey
@@ -1674,6 +1706,7 @@ object atMaterialDashUiCoreStrings {
        with TableRowClassKey
        with TableSortLabelClassKey
        with TabsClassKey
+       with TextareaClassKey
        with ToolbarClassKey
        with TouchRippleClassKey
        with TypographyClassKey
@@ -1757,6 +1790,12 @@ object atMaterialDashUiCoreStrings {
        with MenuItemClassKey
        with TabClassKey
        with TableRowClassKey
+  
+  @js.native
+  sealed trait shadow extends TextareaClassKey
+  
+  @js.native
+  sealed trait shallow extends js.Object
   
   @js.native
   sealed trait shrink extends InputLabelClassKey
@@ -1919,6 +1958,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait textSecondary extends ButtonClassKey
   
   @js.native
+  sealed trait textarea extends TextareaClassKey
+  
+  @js.native
   sealed trait tile extends GridListTileClassKey
   
   @js.native
@@ -2011,6 +2053,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait url extends js.Object
+  
+  @js.native
+  sealed trait variant extends ContextFromPropsKey
   
   @js.native
   sealed trait vertical
@@ -2522,6 +2567,10 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
+  def hsl: hsl = "hsl".asInstanceOf[hsl]
+  @scala.inline
+  def hsla: hsla = "hsla".asInstanceOf[hsla]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   @scala.inline
   def iconChecked: iconChecked = "iconChecked".asInstanceOf[iconChecked]
@@ -2606,6 +2655,8 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
   @scala.inline
+  def legend: legend = "legend".asInstanceOf[legend]
+  @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   @scala.inline
   def light: light = "light".asInstanceOf[light]
@@ -2627,6 +2678,8 @@ object atMaterialDashUiCoreStrings {
   def location: location = "location".asInstanceOf[location]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def margin: margin = "margin".asInstanceOf[margin]
   @scala.inline
   def marginDense: marginDense = "marginDense".asInstanceOf[marginDense]
   @scala.inline
@@ -2657,6 +2710,8 @@ object atMaterialDashUiCoreStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
+  @scala.inline
+  def mount: mount = "mount".asInstanceOf[mount]
   @scala.inline
   def mountOnEnter: mountOnEnter = "mountOnEnter".asInstanceOf[mountOnEnter]
   @scala.inline
@@ -2818,6 +2873,10 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
+  def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
+  def rgba: rgba = "rgba".asInstanceOf[rgba]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
@@ -2873,6 +2932,10 @@ object atMaterialDashUiCoreStrings {
   def selectRoot: selectRoot = "selectRoot".asInstanceOf[selectRoot]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
+  def shadow: shadow = "shadow".asInstanceOf[shadow]
+  @scala.inline
+  def shallow: shallow = "shallow".asInstanceOf[shallow]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   @scala.inline
@@ -2964,6 +3027,8 @@ object atMaterialDashUiCoreStrings {
   @scala.inline
   def textSecondary: textSecondary = "textSecondary".asInstanceOf[textSecondary]
   @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  @scala.inline
   def tile: tile = "tile".asInstanceOf[tile]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
@@ -3021,6 +3086,8 @@ object atMaterialDashUiCoreStrings {
   def up: up = "up".asInstanceOf[up]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def variant: variant = "variant".asInstanceOf[variant]
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline

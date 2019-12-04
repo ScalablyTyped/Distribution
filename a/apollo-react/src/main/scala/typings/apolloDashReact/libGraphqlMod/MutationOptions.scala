@@ -13,7 +13,7 @@ trait MutationOptions extends js.Object {
   var optimisticResponse: js.UndefOr[js.Object] = js.undefined
   var resultBehaviors: js.UndefOr[
     js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MutationBehavior */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MutationBehavior */ _
     ]
   ] = js.undefined
   var updateQueries: js.UndefOr[MutationQueryReducersMap[StringDictionary[_]]] = js.undefined
@@ -27,7 +27,7 @@ object MutationOptions {
     fragments: js.Array[js.Array[FragmentDefinition] | FragmentDefinition] = null,
     optimisticResponse: js.Object = null,
     resultBehaviors: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MutationBehavior */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MutationBehavior */ _
     ] = null,
     updateQueries: MutationQueryReducersMap[StringDictionary[_]] = null,
     variables: js.Object = null

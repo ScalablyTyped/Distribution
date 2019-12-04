@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object distTypesComponentsNavNavDashInterfaceMod {
   import org.scalablytyped.runtime.Instantiable1
-  import typings.std.Animation
+  import typings.atIonicCore.atIonicCoreMod.ComponentRef
+  import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 
-  type NavComponent = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any) | typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController
+  type NavComponent = ComponentRef | typings.atIonicCore.distTypesComponentsNavViewDashControllerMod.ViewController
   type Page = Instantiable1[/* args (repeated) */ js.Any, js.Any]
   type TransitionDoneFn = js.Function5[
     /* hasCompleted */ Boolean, 

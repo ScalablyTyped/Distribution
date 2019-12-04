@@ -5,10 +5,10 @@ import typings.ember.emberMod.default.ComputedProperty
 import typings.ember.emberMod.default.Map
 import typings.emberDashData.Anon_AdapterOptions
 import typings.emberDashData.Anon_IncludeId
-import typings.emberDashData.ModelKeys
 import typings.emberDashData.TypeofClassModel
 import typings.emberDashData.emberDashDataMod.AttributeMeta
 import typings.emberDashData.emberDashDataMod.ChangedAttributes
+import typings.emberDashData.emberDashDataMod.ModelKeys
 import typings.emberDashData.emberDashDataMod.RelationshipMeta
 import typings.emberDashData.emberDashDataMod.RelationshipsFor
 import typings.rsvp.rsvpMod.default.Promise
@@ -326,6 +326,6 @@ object Model extends js.Object {
   /**
     * For a given relationship name, returns the model type of the relationship.
     */
-  def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any = js.native
+  def typeForRelationship[K /* <: String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
 }
 

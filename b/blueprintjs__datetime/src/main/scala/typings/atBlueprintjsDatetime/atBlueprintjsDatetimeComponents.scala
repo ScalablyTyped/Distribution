@@ -11,6 +11,10 @@ object atBlueprintjsDatetimeComponents extends atBlueprintjsDatetimeProps {
   @scala.inline
   def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.atBlueprintjsDatetime.libEsmDatePickerMod.DatePicker].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerProps]]
   @scala.inline
+  def DatePickerCaption: ComponentType[DatePickerCaptionProps] = js.constructorOf[typings.atBlueprintjsDatetime.libEsmDatePickerCaptionMod.DatePickerCaption].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerCaptionProps]]
+  @scala.inline
+  def DatePickerNavbar: ComponentType[DatePickerNavbarProps] = js.constructorOf[typings.atBlueprintjsDatetime.libEsmDatePickerNavbarMod.DatePickerNavbar].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerNavbarProps]]
+  @scala.inline
   def DateRangeInput: ComponentType[DateRangeInputProps] = js.constructorOf[typings.atBlueprintjsDatetime.libEsmDateRangeInputMod.DateRangeInput].asInstanceOf[typings.react.reactMod.ComponentType[DateRangeInputProps]]
   @scala.inline
   def DateRangePicker: ComponentType[DateRangePickerProps] = js.constructorOf[typings.atBlueprintjsDatetime.atBlueprintjsDatetimeMod.DateRangePicker].asInstanceOf[typings.react.reactMod.ComponentType[DateRangePickerProps]]

@@ -12,9 +12,9 @@ import typings.antdDashMobile.antdDashMobileStrings.text
 import typings.antdDashMobile.antdDashMobileStrings.top
 import typings.antdDashMobile.libInputDashItemPropsTypeMod.InputItemPropsType
 import typings.antdDashMobile.libInputDashItemPropsTypeMod.InputKey
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js

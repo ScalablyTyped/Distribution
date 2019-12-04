@@ -31,7 +31,9 @@ class BasePoint protected () extends js.Object {
   def getY(): js.Any = js.native
   def inspect(): String = js.native
   def isInfinity(): Boolean = js.native
-  def mul(k: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any): BasePoint = js.native
+  def mul(
+    k: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+  ): BasePoint = js.native
   def neg(): BasePoint = js.native
   def precompute(power: Double): BasePoint = js.native
   def validate(): Boolean = js.native

@@ -1,8 +1,8 @@
 package typings.antd
 
-import typings.antd.esTableInterfaceMod.ColumnProps
-import typings.antd.esTableInterfaceMod.SortOrder
-import typings.antd.esTableInterfaceMod.TableStateFilters
+import typings.antd.libTableInterfaceMod.ColumnProps
+import typings.antd.libTableInterfaceMod.SortOrder
+import typings.antd.libTableInterfaceMod.TableStateFilters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

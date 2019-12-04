@@ -1,13 +1,13 @@
 package typings.atNteractTransformDashVdom
 
 import typings.atNteractTransformDashVdom.libEventDashToDashObjectMod.SerializedEvent
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod.TouchEvent

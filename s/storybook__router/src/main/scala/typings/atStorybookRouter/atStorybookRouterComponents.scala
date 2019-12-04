@@ -16,5 +16,7 @@ object atStorybookRouterComponents extends atStorybookRouterProps {
   def Match: ComponentType[MatchProps] = typings.atStorybookRouter.distRouterMod.Match.asInstanceOf[typings.react.reactMod.ComponentType[MatchProps]]
   @scala.inline
   def Route: ComponentType[RouteProps] = typings.atStorybookRouter.distRouterMod.Route.asInstanceOf[typings.react.reactMod.ComponentType[RouteProps]]
+  @scala.inline
+  def ToggleVisibility: ComponentType[ToggleVisibilityProps] = typings.atStorybookRouter.distVisibilityMod.ToggleVisibility.asInstanceOf[typings.react.reactMod.ComponentType[ToggleVisibilityProps]]
 }
 

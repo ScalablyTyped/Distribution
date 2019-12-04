@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.unitlist")
 @js.native
-class unitlist () extends baseview {
+class unitlist ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   @JSName("$dragHTML")
@@ -23,6 +24,8 @@ class unitlist () extends baseview {
   var $dropHTML_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_unitlist: WebixCallback = js.native
   @JSName("config")
   var config_unitlist: unitlistConfig = js.native
   var data: DataStore = js.native

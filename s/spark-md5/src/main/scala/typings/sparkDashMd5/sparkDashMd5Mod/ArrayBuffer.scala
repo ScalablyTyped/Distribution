@@ -1,6 +1,5 @@
 package typings.sparkDashMd5.sparkDashMd5Mod
 
-import typings.sparkDashMd5.JsArrayBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

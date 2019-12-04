@@ -1,8 +1,8 @@
 package typings.agenda.agendaMod
 
-import typings.mongodb.Default
 import typings.mongodb.mongodbMod.Collection
 import typings.mongodb.mongodbMod.Db
+import typings.mongodb.mongodbMod.Default
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Error

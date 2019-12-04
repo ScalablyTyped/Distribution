@@ -2,7 +2,7 @@ package typings.atAntDashDesignReactDashNative
 
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.bottom
 import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeStrings.top
-import typings.atAntDashDesignReactDashNative.esTabsPropsTypeMod.TabData
+import typings.atAntDashDesignReactDashNative.libTabsPropsTypeMod.TabData
 import typings.react.reactMod.ReactNode
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TextStyle

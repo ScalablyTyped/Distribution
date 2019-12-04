@@ -13,7 +13,7 @@ import typings.atApolloReactDashComponents.libTypesMod.SubscriptionComponentOpti
 import typings.atApolloReactDashHoc.libTypesMod.ChildProps
 import typings.atApolloReactDashHoc.libTypesMod.OperationOption
 import typings.atApolloReactDashHoc.libTypesMod.WithApolloClient
-import typings.atApolloReactDashHooks.Anon_Data
+import typings.atApolloReactDashHooks.Anon_DataError
 import typings.atApolloReactDashHooks.libTypesMod.LazyQueryHookOptions
 import typings.atApolloReactDashHooks.libTypesMod.MutationHookOptions
 import typings.atApolloReactDashHooks.libTypesMod.MutationTuple
@@ -73,8 +73,8 @@ object reactDashApolloMod extends js.Object {
   def useMutation[TData, TVariables](mutation: DocumentNode, options: MutationHookOptions[TData, TVariables]): MutationTuple[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode): QueryResult[TData, TVariables] = js.native
   def useQuery[TData, TVariables](query: DocumentNode, options: QueryHookOptions[TData, TVariables]): QueryResult[TData, TVariables] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode): Anon_Data[TVariables, TData] = js.native
-  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): Anon_Data[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode): Anon_DataError[TVariables, TData] = js.native
+  def useSubscription[TData, TVariables](subscription: DocumentNode, options: SubscriptionHookOptions[TData, TVariables]): Anon_DataError[TVariables, TData] = js.native
   @JSName("withApollo")
   def withApollo_client[TProps, TResult](WrappedComponent: ComponentType[WithApolloClient[Omit[TProps, client]]]): ComponentClass[Omit[TProps, client], ComponentState] = js.native
   @JSName("withApollo")

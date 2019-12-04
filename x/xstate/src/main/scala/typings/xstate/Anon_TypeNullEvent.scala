@@ -1,7 +1,7 @@
 package typings.xstate
 
-import typings.xstate.esTypesMod.ActionTypes.NullEvent
-import typings.xstate.esTypesMod.BuiltInEvent
+import typings.xstate.libTypesMod.ActionTypes.NullEvent
+import typings.xstate.libTypesMod.BuiltInEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

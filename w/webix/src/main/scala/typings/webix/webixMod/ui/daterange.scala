@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.daterange")
 @js.native
-class daterange () extends baseview {
+class daterange ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_daterange: WebixCallback = js.native
   @JSName("config")
   var config_daterange: daterangeConfig = js.native
   def addToRange(dates: String): Unit = js.native

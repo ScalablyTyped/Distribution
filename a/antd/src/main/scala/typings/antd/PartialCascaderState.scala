@@ -1,12 +1,12 @@
 package typings.antd
 
-import typings.antd.esCascaderMod.CascaderOptionType
-import typings.antd.esCascaderMod.CascaderProps
+import typings.antd.libCascaderMod.CascaderOptionType
+import typings.antd.libCascaderMod.CascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/cascader.CascaderState> */
+/* Inlined std.Partial<antd.antd/lib/cascader.CascaderState> */
 trait PartialCascaderState extends js.Object {
   var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.undefined
   var inputFocused: js.UndefOr[Boolean] = js.undefined

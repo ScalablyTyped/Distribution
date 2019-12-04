@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEnumTypeComposerMod {
-  import typings.graphqlDashCompose.Anon_GqcExtensionsExtensions
+  import typings.graphqlDashCompose.Anon_GqcExtensions
   import typings.graphqlDashCompose.libGraphqlMod.GraphQLEnumType
   import typings.graphqlDashCompose.libTypeMapperMod.TypeAsString
   import typings.graphqlDashCompose.libTypeMapperMod.TypeDefinitionString
@@ -19,5 +19,5 @@ package object libEnumTypeComposerMod {
     - typings.graphqlDashCompose.libGraphqlMod.GraphQLEnumType
   */
   type EnumTypeComposeDefinition = _EnumTypeComposeDefinition | TypeAsString
-  type GraphQLEnumTypeExtended = GraphQLEnumType with Anon_GqcExtensionsExtensions
+  type GraphQLEnumTypeExtended = GraphQLEnumType with Anon_GqcExtensions
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "facebook-js-sdk"
-version := "3.3-dt-20190515Z-cf8cbb"
+version := "3.3-dt-20190515Z-de1d17"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

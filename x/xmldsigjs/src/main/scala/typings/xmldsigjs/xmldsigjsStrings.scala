@@ -122,6 +122,18 @@ object xmldsigjsStrings {
   @js.native
   sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1` extends js.Object
   
+  @js.native
+  sealed trait jwk extends js.Object
+  
+  @js.native
+  sealed trait pkcs8 extends js.Object
+  
+  @js.native
+  sealed trait raw extends js.Object
+  
+  @js.native
+  sealed trait spki extends js.Object
+  
   @scala.inline
   def ECDSA: ECDSA = "ECDSA".asInstanceOf[ECDSA]
   @scala.inline
@@ -198,5 +210,13 @@ object xmldsigjsStrings {
   def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1`]
   @scala.inline
   def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1`]
+  @scala.inline
+  def jwk: jwk = "jwk".asInstanceOf[jwk]
+  @scala.inline
+  def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
+  def spki: spki = "spki".asInstanceOf[spki]
 }
 

@@ -5,8 +5,8 @@ import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.atUifabricUtilities.libIComponentAsMod.IComponentAs
 import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js

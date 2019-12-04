@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "dexie-batch"
-version := "0.4-dt-20190802Z-db4583"
+version := "0.4-dt-20190802Z-191f42"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dexie" % "2.0.4-f0e948",
+  "org.scalablytyped" %%% "dexie" % "2.0.4-008e90",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

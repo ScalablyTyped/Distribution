@@ -6,16 +6,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ExecContext extends js.Object {
-  var context: js.Any = js.native
-  var defaultOperationType: String = js.native
-  var exportedVariables: Record[String, _] = js.native
-  var fragmentMap: FragmentMap = js.native
-  @JSName("fragmentMatcher")
-  var fragmentMatcher_Original: FragmentMatcher = js.native
-  var onlyRunForcedResolvers: Boolean = js.native
-  var variables: VariableMap = js.native
-  def fragmentMatcher(rootValue: js.Any, typeCondition: String, context: js.Any): Boolean = js.native
+  var context: js.Any
+  var defaultOperationType: String
+  var exportedVariables: Record[String, _]
+  var fragmentMap: FragmentMap
+  var fragmentMatcher: FragmentMatcher
+  var onlyRunForcedResolvers: Boolean
+  var variables: VariableMap
+}
+
+object ExecContext {
+  @scala.inline
+  def apply(
+    context: js.Any,
+    defaultOperationType: String,
+    exportedVariables: Record[String, _],
+    fragmentMap: FragmentMap,
+    fragmentMatcher: (/* rootValue */ js.Any, /* typeCondition */ String, /* context */ js.Any) => Boolean,
+    onlyRunForcedResolvers: Boolean,
+    variables: VariableMap
+  ): ExecContext = {
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], defaultOperationType = defaultOperationType.asInstanceOf[js.Any], exportedVariables = exportedVariables.asInstanceOf[js.Any], fragmentMap = fragmentMap.asInstanceOf[js.Any], fragmentMatcher = js.Any.fromFunction3(fragmentMatcher), onlyRunForcedResolvers = onlyRunForcedResolvers.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[ExecContext]
+  }
 }
 

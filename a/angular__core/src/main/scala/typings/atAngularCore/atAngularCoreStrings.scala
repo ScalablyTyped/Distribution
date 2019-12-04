@@ -2,6 +2,7 @@ package typings.atAngularCore
 
 import typings.atAngularCore.atAngularCoreMod.BypassType
 import typings.atAngularCore.atAngularCoreMod.GlobalTargetName
+import typings.atAngularCore.schematicsMigrationsRendererDashToDashRenderer2HelpersMod.HelperFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +10,12 @@ import scala.scalajs.js.annotation._
 object atAngularCoreStrings {
   @js.native
   sealed trait `*` extends js.Object
+  
+  @js.native
+  sealed trait `@angular/common` extends js.Object
+  
+  @js.native
+  sealed trait `@angular/platform-browser` extends js.Object
   
   @js.native
   sealed trait Anon_ChangeDetection extends js.Object
@@ -20,10 +27,19 @@ object atAngularCoreStrings {
   sealed trait Anon_ContentQueriesExportAs extends js.Object
   
   @js.native
+  sealed trait AnyDuringRendererMigration extends HelperFunction
+  
+  @js.native
   sealed trait `Brand for OpaqueViewState that nothing will match` extends js.Object
   
   @js.native
   sealed trait `Brand for PlayerFactory that nothing will match` extends js.Object
+  
+  @js.native
+  sealed trait DOCUMENT extends js.Object
+  
+  @js.native
+  sealed trait Empty extends js.Object
   
   @js.native
   sealed trait Html extends BypassType
@@ -44,6 +60,36 @@ object atAngularCoreStrings {
   sealed trait Url extends BypassType
   
   @js.native
+  sealed trait __ngRendererAnimateHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererAttachViewAfterHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererCreateElementHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererCreateTemplateAnchorHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererCreateTextHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererDestroyViewHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererDetachViewHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererProjectNodesHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererSetElementAttributeHelper extends HelperFunction
+  
+  @js.native
+  sealed trait __ngRendererSplitNamespaceHelper extends HelperFunction
+  
+  @js.native
   sealed trait any extends js.Object
   
   @js.native
@@ -56,7 +102,7 @@ object atAngularCoreStrings {
   sealed trait component extends js.Object
   
   @js.native
-  sealed trait document extends GlobalTargetName
+  sealed trait document_ extends GlobalTargetName
   
   @js.native
   sealed trait element extends js.Object
@@ -82,15 +128,25 @@ object atAngularCoreStrings {
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
   @scala.inline
+  def `@angular/common`: `@angular/common` = "@angular/common".asInstanceOf[`@angular/common`]
+  @scala.inline
+  def `@angular/platform-browser`: `@angular/platform-browser` = "@angular/platform-browser".asInstanceOf[`@angular/platform-browser`]
+  @scala.inline
   def Anon_ChangeDetection: Anon_ChangeDetection = "Anon_ChangeDetection".asInstanceOf[Anon_ChangeDetection]
   @scala.inline
   def Anon_ContentQueries: Anon_ContentQueries = "Anon_ContentQueries".asInstanceOf[Anon_ContentQueries]
   @scala.inline
   def Anon_ContentQueriesExportAs: Anon_ContentQueriesExportAs = "Anon_ContentQueriesExportAs".asInstanceOf[Anon_ContentQueriesExportAs]
   @scala.inline
+  def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
+  @scala.inline
   def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   @scala.inline
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
+  @scala.inline
+  def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Html: Html = "Html".asInstanceOf[Html]
   @scala.inline
@@ -104,6 +160,26 @@ object atAngularCoreStrings {
   @scala.inline
   def Url: Url = "Url".asInstanceOf[Url]
   @scala.inline
+  def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
+  @scala.inline
+  def __ngRendererAttachViewAfterHelper: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
+  @scala.inline
+  def __ngRendererCreateElementHelper: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
+  @scala.inline
+  def __ngRendererCreateTemplateAnchorHelper: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
+  @scala.inline
+  def __ngRendererCreateTextHelper: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
+  @scala.inline
+  def __ngRendererDestroyViewHelper: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
+  @scala.inline
+  def __ngRendererDetachViewHelper: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
+  @scala.inline
+  def __ngRendererProjectNodesHelper: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
+  @scala.inline
+  def __ngRendererSetElementAttributeHelper: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
+  @scala.inline
+  def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
   def body: body = "body".asInstanceOf[body]
@@ -112,7 +188,7 @@ object atAngularCoreStrings {
   @scala.inline
   def component: component = "component".asInstanceOf[component]
   @scala.inline
-  def document: document = "document".asInstanceOf[document]
+  def document_ : document_ = "document".asInstanceOf[document_]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
   @scala.inline

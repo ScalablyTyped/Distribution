@@ -1,6 +1,9 @@
 package typings.atIonicCore
 
+import typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod.MenuI
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
+import typings.atIonicCore.distTypesUtilsAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,19 +13,12 @@ import scala.scalajs.js.annotation._
 object distTypesUtilsMenuDashControllerMod extends js.Object {
   @js.native
   object menuController extends js.Object {
-    def _createAnimation(
-      `type`: String,
-      menuCmp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any
-    ): js.Any = js.native
+    def _createAnimation(`type`: String, menuCmp: MenuI): js.Any = js.native
     def _getOpenSync(): js.UndefOr[HTMLIonMenuElement] = js.native
-    def _register(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
-    def _setActiveMenu(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
-    def _setOpen(
-      menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any,
-      shouldOpen: Boolean,
-      animated: Boolean
-    ): js.Promise[Boolean] = js.native
-    def _unregister(menu: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ js.Any): Unit = js.native
+    def _register(menu: MenuI): Unit = js.native
+    def _setActiveMenu(menu: MenuI): Unit = js.native
+    def _setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = js.native
+    def _unregister(menu: MenuI): Unit = js.native
     def close(): js.Promise[Boolean] = js.native
     def close(menu: String): js.Promise[Boolean] = js.native
     def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
@@ -38,17 +34,8 @@ object distTypesUtilsMenuDashControllerMod extends js.Object {
     def isOpen(menu: String): js.Promise[Boolean] = js.native
     def open(): js.Promise[Boolean] = js.native
     def open(menu: String): js.Promise[Boolean] = js.native
-    def registerAnimation(
-      name: String,
-      animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-    ): Unit = js.native
-    def registerAnimation(
-      name: String,
-      animation: js.Function1[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuI */ /* menu */ js.Any, 
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicAnimation */ _
-        ]
-    ): Unit = js.native
+    def registerAnimation(name: String, animation: js.Function1[/* menu */ MenuI, Animation]): Unit = js.native
+    def registerAnimation(name: String, animation: AnimationBuilder): Unit = js.native
     def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
     def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
     def toggle(): js.Promise[Boolean] = js.native

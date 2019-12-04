@@ -1,0 +1,28 @@
+package typings.baseui
+
+import typings.baseui.baseuiStrings.BA
+import typings.baseui.baseuiStrings.`+387`
+import typings.baseui.baseuiStrings.`Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_387 extends js.Object {
+  var dialCode: `+387`
+  var id: BA
+  var label: `Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)`
+}
+
+object Anon_387 {
+  @scala.inline
+  def apply(
+    dialCode: `+387`,
+    id: BA,
+    label: `Bosnia and Herzegovina (BACKSLASHu0411BACKSLASHu043EBACKSLASHu0441BACKSLASHu043DBACKSLASHu0430 BACKSLASHu0438 BACKSLASHu0425BACKSLASHu0435BACKSLASHu0440BACKSLASHu0446BACKSLASHu0435BACKSLASHu0433BACKSLASHu043EBACKSLASHu0432BACKSLASHu0438BACKSLASHu043DBACKSLASHu0430)`
+  ): Anon_387 = {
+    val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_387]
+  }
+}
+

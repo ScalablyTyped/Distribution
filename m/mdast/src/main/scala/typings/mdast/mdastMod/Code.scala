@@ -20,7 +20,7 @@ object Code {
   @scala.inline
   def apply(
     `type`: code,
-    value: String,
+    value: js.Any,
     data: Data = null,
     lang: String = null,
     meta: String = null,

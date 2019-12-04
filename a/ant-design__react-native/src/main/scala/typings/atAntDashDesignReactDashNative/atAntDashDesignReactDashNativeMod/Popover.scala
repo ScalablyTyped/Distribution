@@ -1,7 +1,7 @@
 package typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeMod
 
 import typings.atAntDashDesignReactDashNative.Anon_OnSelect
-import typings.atAntDashDesignReactDashNative.TypeofClassPopoverItemDisplayName
+import typings.atAntDashDesignReactDashNative.TypeofClassPopoverItem
 import typings.atAntDashDesignReactDashNative.libPopoverMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ class Popover () extends default
 @JSImport("@ant-design/react-native", "Popover")
 @js.native
 object Popover extends js.Object {
-  var Item: TypeofClassPopoverItemDisplayName = js.native
+  var Item: TypeofClassPopoverItem = js.native
   var defaultProps: Anon_OnSelect = js.native
 }
 

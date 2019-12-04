@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phenomnomnominal__tsquery"
-version := "3.0.0-8fef01"
+version := "3.0.0-9d404b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

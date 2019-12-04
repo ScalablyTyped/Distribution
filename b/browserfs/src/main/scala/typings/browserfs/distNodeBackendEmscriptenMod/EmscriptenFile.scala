@@ -33,19 +33,19 @@ class EmscriptenFile protected ()
   /* InferMemberOverrides */
   override def datasyncSync(): Unit = js.native
   def read(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double,
     position: Double,
     cb: BFSThreeArgCallback[Double, Buffer]
   ): Unit = js.native
   def readSync(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double
   ): Double = js.native
   def readSync(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double,
     position: Double
@@ -59,19 +59,19 @@ class EmscriptenFile protected ()
   /* InferMemberOverrides */
   override def utimesSync(atime: Date, mtime: Date): Unit = js.native
   def write(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double,
     position: Double,
     cb: BFSThreeArgCallback[Double, Buffer]
   ): Unit = js.native
   def writeSync(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double
   ): Double = js.native
   def writeSync(
-    buffer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
+    buffer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeBuffer */ js.Any,
     offset: Double,
     length: Double,
     position: Double

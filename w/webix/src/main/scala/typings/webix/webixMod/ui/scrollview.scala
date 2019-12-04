@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.scrollview")
 @js.native
-class scrollview () extends baseview {
+class scrollview ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_scrollview: WebixCallback = js.native
   @JSName("config")
   var config_scrollview: scrollviewConfig = js.native
   def attachEvent(`type`: scrollviewEventName, functor: WebixCallback): String | Double = js.native

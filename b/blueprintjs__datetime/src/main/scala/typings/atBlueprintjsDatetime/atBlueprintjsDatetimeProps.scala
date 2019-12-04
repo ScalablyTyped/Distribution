@@ -1,7 +1,9 @@
 package typings.atBlueprintjsDatetime
 
 import typings.atBlueprintjsDatetime.libEsmDateInputMod.IDateInputProps
+import typings.atBlueprintjsDatetime.libEsmDatePickerCaptionMod.IDatePickerCaptionProps
 import typings.atBlueprintjsDatetime.libEsmDatePickerMod.IDatePickerProps
+import typings.atBlueprintjsDatetime.libEsmDatePickerNavbarMod.IDatePickerNavbarProps
 import typings.atBlueprintjsDatetime.libEsmDateRangeInputMod.IDateRangeInputProps
 import typings.atBlueprintjsDatetime.libEsmDateRangePickerMod.IDateRangePickerProps
 import typings.atBlueprintjsDatetime.libEsmDateTimePickerMod.IDateTimePickerProps
@@ -16,6 +18,10 @@ trait atBlueprintjsDatetimeProps {
   @scala.inline
   def DatePickerProps: IDatePickerProps.type = typings.atBlueprintjsDatetime.libEsmDatePickerMod.IDatePickerProps
   type DatePickerProps = IDatePickerProps
+  @scala.inline
+  def DatePickerCaptionProps: IDatePickerCaptionProps.type = typings.atBlueprintjsDatetime.libEsmDatePickerCaptionMod.IDatePickerCaptionProps
+  type DatePickerCaptionProps = IDatePickerCaptionProps
+  type DatePickerNavbarProps = IDatePickerNavbarProps
   type DateRangeInputProps = IDateRangeInputProps
   @scala.inline
   def DateRangePickerProps: IDateRangePickerProps.type = typings.atBlueprintjsDatetime.libEsmDateRangePickerMod.IDateRangePickerProps

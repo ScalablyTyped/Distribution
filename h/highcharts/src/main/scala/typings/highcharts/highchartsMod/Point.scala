@@ -34,6 +34,14 @@ class Point () extends js.Object {
     */
   var dataGroup: js.UndefOr[DataGroupingInfoObject] = js.native
   /**
+    * Range series only. The high or maximum value for each data point.
+    */
+  var high: js.UndefOr[Double] = js.native
+  /**
+    * Range series only. The low or minimum value for each data point.
+    */
+  var low: js.UndefOr[Double] = js.native
+  /**
     * The name of the point. The name can be given as the first position of the
     * point configuration array, or as a `name` property in the configuration:
     */
@@ -52,6 +60,15 @@ class Point () extends js.Object {
     */
   var percentage: Double = js.native
   /**
+    * Heatmap series only. Padding between the points in the heatmap.
+    */
+  var pointPadding: js.UndefOr[Double] = js.native
+  /**
+    * In Highmaps, when data is loaded from GeoJSON, the GeoJSON item's
+    * properies are copied over here.
+    */
+  var properties: js.Any = js.native
+  /**
     * Whether the point is selected or not.
     */
   var selected: Boolean = js.native
@@ -69,6 +86,11 @@ class Point () extends js.Object {
     */
   var total: Double = js.native
   /**
+    * Heatmap series only. The value of the point, resulting in a color
+    * controled by options as set in the colorAxis configuration.
+    */
+  var value: js.UndefOr[Double | Null] = js.native
+  /**
     * For certain series types, like pie charts, where individual points can be
     * shown or hidden.
     */
@@ -78,9 +100,22 @@ class Point () extends js.Object {
     */
   var x: Double = js.native
   /**
+    * The ending X value of the range point.
+    */
+  var x2: js.UndefOr[Double] = js.native
+  /**
     * The y value of the point.
     */
   var y: js.UndefOr[Double] = js.native
+  /**
+    * Cancel sonification of a point. Calls onEnd functions.
+    *
+    * @param fadeOut
+    *        Whether or not to fade out as we stop. If false, the points
+    *        are cancelled synchronously.
+    */
+  def cancelSonify(): Unit = js.native
+  def cancelSonify(fadeOut: Boolean): Unit = js.native
   /**
     * Get the CSS class names for individual points. Used internally where the
     * returned value is set on every point.
@@ -236,6 +271,13 @@ class Point () extends js.Object {
   def setState(state: String): Unit = js.native
   def setState(state: String, move: Boolean): Unit = js.native
   /**
+    * Sonify a single point.
+    *
+    * @param options
+    *        Options for the sonification of the point.
+    */
+  def sonify(options: typings.highcharts.modulesSonificationMod.highchartsMod.PointSonifyOptionsObject): Unit = js.native
+  /**
     * Extendable method for formatting each point's tooltip line.
     *
     * @param pointFormat
@@ -271,5 +313,9 @@ class Point () extends js.Object {
   def update(options: PointOptionsType, redraw: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
+  /**
+    * Highmaps only. Zoom in on the point using the global animation.
+    */
+  def zoomTo(): Unit = js.native
 }
 

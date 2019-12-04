@@ -1,6 +1,5 @@
 package typings.ngDashGrid.ngGrid.service
 
-import typings.angular.angularMod.IAugmentedJQuery
 import typings.ngDashGrid.ngGrid.IColumn
 import typings.ngDashGrid.ngGrid.IDimension
 import typings.ngDashGrid.ngGrid.IGridInstance
@@ -16,7 +15,11 @@ trait IDomUtilityService extends js.Object {
   var eventStorage: js.Any
   var immediate: Double
   var numberOfGrids: Double
-  def AssignGridContainers($scope: IGridScope, rootel: IAugmentedJQuery, grid: IGridInstance): Unit
+  def AssignGridContainers(
+    $scope: IGridScope,
+    rootel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    grid: IGridInstance
+  ): Unit
   def BuildStyles($scope: IGridScope, grid: IGridInstance, digest: Boolean): Unit
   def RebuildGrid($scope: IGridScope, grid: IGridInstance): Unit
   def UpdateGridLayout($scope: IGridScope, grid: IGridInstance): Unit
@@ -29,7 +32,7 @@ trait IDomUtilityService extends js.Object {
 object IDomUtilityService {
   @scala.inline
   def apply(
-    AssignGridContainers: (IGridScope, IAugmentedJQuery, IGridInstance) => Unit,
+    AssignGridContainers: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any, IGridInstance) => Unit,
     BuildStyles: (IGridScope, IGridInstance, Boolean) => Unit,
     LetterW: Double,
     RebuildGrid: (IGridScope, IGridInstance) => Unit,

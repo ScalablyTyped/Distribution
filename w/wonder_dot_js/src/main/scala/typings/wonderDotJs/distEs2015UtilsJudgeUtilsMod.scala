@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distEs2015UtilsJudgeUtilsMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify JudgeUtils$ * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JudgeUtils$ * / any */ @js.native
   class JudgeUtils () extends js.Object
   
   /* static members */
@@ -18,7 +18,7 @@ object distEs2015UtilsJudgeUtilsMod extends js.Object {
   object JudgeUtils extends js.Object {
     def isClass(objInstance: js.Any, className: String): Boolean = js.native
     def isCollection(
-      list: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<any> */ js.Any
+      list: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any
     ): Boolean = js.native
     def isComponenet(component: Component): Boolean = js.native
     def isDom(obj: js.Any): Boolean = js.native

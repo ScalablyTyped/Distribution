@@ -1,0 +1,14 @@
+package typings.atTensorflowTfjsDashLayers
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object distKerasUnderscoreFormatLayersConvolutionalUnderscoreDepthwiseUnderscoreSerializationMod {
+  import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.DepthwiseConv2D
+  import typings.atTensorflowTfjsDashLayers.distKerasUnderscoreFormatTopologyUnderscoreConfigMod.BaseLayerSerialization
+
+  type ConvolutionalDepthwiseLayerClassName = DepthwiseConv2D
+  type ConvolutionalDepthwiseLayerSerialization = DepthwiseConv2DLayerSerialization
+  type DepthwiseConv2DLayerSerialization = BaseLayerSerialization[DepthwiseConv2D, DepthwiseConv2DLayerConfig]
+}

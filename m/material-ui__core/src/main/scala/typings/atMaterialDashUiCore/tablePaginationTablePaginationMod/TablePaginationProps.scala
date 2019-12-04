@@ -63,7 +63,6 @@ import typings.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typings.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEventHandler
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEventHandler
@@ -75,6 +74,7 @@ import typings.react.reactMod.FormEventHandler
 import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEventHandler
 import typings.react.reactMod.ReactEventHandler
 import typings.react.reactMod.ReactNode

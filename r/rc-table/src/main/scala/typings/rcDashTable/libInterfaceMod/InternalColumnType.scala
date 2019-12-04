@@ -3,9 +3,9 @@ package typings.rcDashTable.libInterfaceMod
 import typings.rcDashTable.rcDashTableStrings.center
 import typings.rcDashTable.rcDashTableStrings.left
 import typings.rcDashTable.rcDashTableStrings.right
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.HTMLAttributes
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

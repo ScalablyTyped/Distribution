@@ -3,8 +3,8 @@ package typings.dexie.dexieMod.Dexie
 import org.scalablytyped.runtime.StringDictionary
 import typings.dexie.Anon_Key
 import typings.dexie.Anon_Value
-import typings.dexie.IndexableTypeArray
 import typings.dexie.dexieMod.IndexableType
+import typings.dexie.dexieMod.IndexableTypeArray
 import typings.dexie.dexieMod.ThenShortcut
 import scala.scalajs.js
 import scala.scalajs.js.`|`

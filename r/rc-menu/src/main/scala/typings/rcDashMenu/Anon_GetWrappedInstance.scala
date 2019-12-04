@@ -1,6 +1,6 @@
 package typings.rcDashMenu
 
-import typings.rcDashMenu.esSubPopupMenuMod.SubPopupMenu
+import typings.rcDashMenu.libSubPopupMenuMod.SubPopupMenu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

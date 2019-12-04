@@ -1,5 +1,6 @@
 package typings.babelDashPluginDashMacros
 
+import typings.babelDashPluginDashMacros.babelDashPluginDashMacrosMod.References
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

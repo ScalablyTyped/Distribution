@@ -17,7 +17,7 @@ trait Text extends Literal {
 
 object Text {
   @scala.inline
-  def apply(`type`: text, value: String, data: Data = null, position: Position = null): Text = {
+  def apply(`type`: text, value: js.Any, data: Data = null, position: Position = null): Text = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

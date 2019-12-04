@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @author Jeongho Nam <http://samchon.org>
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.InstanceForm")
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.Entity * / any */ @JSGlobal("bws.packer.InstanceForm")
 @js.native
 /**
   * Default Constructor.
@@ -47,7 +47,7 @@ class InstanceForm () extends js.Object {
     * @inheritdoc
     */
   def construct(
-    xml: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify library.XML */ js.Any
+    xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
   ): Unit = js.native
   /* private */ def createInstance(xml: js.Any): js.Any = js.native
   def getCount(): Double = js.native

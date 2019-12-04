@@ -1,6 +1,5 @@
 package typings.ngDashCommand.ngCommand
 
-import typings.angular.angularMod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,12 +19,12 @@ trait ICommand extends js.Object {
   /**
   		* Executes the command function.
   		*/
-  def execute(): IPromise[_]
+  def execute(): js.Any
 }
 
 object ICommand {
   @scala.inline
-  def apply(canExecute: Boolean, execute: () => IPromise[_], isExecuting: Boolean): ICommand = {
+  def apply(canExecute: Boolean, execute: () => js.Any, isExecuting: Boolean): ICommand = {
     val __obj = js.Dynamic.literal(canExecute = canExecute.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), isExecuting = isExecuting.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ICommand]

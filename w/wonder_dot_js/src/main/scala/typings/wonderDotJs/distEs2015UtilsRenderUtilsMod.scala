@@ -14,7 +14,7 @@ object distEs2015UtilsRenderUtilsMod extends js.Object {
   @js.native
   object RenderUtils extends js.Object {
     def getGameObjectRenderList(
-      sourceList: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<GameObject> */ js.Any
+      sourceList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<GameObject> */ js.Any
     ): js.Any = js.native
   }
   

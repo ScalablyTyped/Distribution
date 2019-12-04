@@ -1,12 +1,13 @@
 package typings.ecmarkup.libSpecMod
 
+import typings.ecmarkup.ecmarkupMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Spec extends js.Object {
   var namespace: String
-  var opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Options */ js.Any
+  var opts: Options
   var rootDir: String
   var rootPath: String
   var spec: this.type
@@ -19,7 +20,7 @@ object Spec {
   def apply(
     exportBiblio: () => js.Any,
     namespace: String,
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Options */ js.Any,
+    opts: Options,
     rootDir: String,
     rootPath: String,
     spec: Spec,

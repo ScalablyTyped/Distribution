@@ -1,6 +1,6 @@
 package typings.mongoose.mongooseMod
 
-import typings.mongodb.Default
+import typings.mongodb.mongodbMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

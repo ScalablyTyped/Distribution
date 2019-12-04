@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "relay-compiler"
-version := "7.0-dt-20191126Z-46e780"
+version := "7.0-dt-20191126Z-dbfa0a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-933f73",
+  "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
   "org.scalablytyped" %%% "relay-runtime" % "6.0-dt-20191115Z-7d71ec",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "typescript" % "3.7.2-cef6ee")

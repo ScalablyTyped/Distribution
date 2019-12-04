@@ -9,6 +9,7 @@ import typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ContainerP
 import typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.DescriptionProps
 import typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.InputProps
 import typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.TitleProps
+import typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.reactNativeModalContainerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object reactDashNativeDashDialogComponents extends reactDashNativeDashDialogProp
   typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ButtonProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNative.reactDashNativeMod.TextProps]]
   @scala.inline
   def Container: ComponentType[ContainerProps with ViewProps with reactNativeModalContainerProps] = js.constructorOf[typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.default.Container].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ContainerProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNativeDashDialog.reactNativeModalContainerProps]]
+  typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ContainerProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.reactNativeModalContainerProps]]
   @scala.inline
   def Description: ComponentType[DescriptionProps with ViewProps with TextProps] = js.constructorOf[typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.default.Description].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.DescriptionProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNative.reactDashNativeMod.TextProps]]
@@ -28,7 +29,7 @@ object reactDashNativeDashDialogComponents extends reactDashNativeDashDialogProp
   typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ButtonProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNative.reactDashNativeMod.TextProps]]
   @scala.inline
   def DialogContainer: ComponentType[ContainerProps with ViewProps with reactNativeModalContainerProps] = js.constructorOf[typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Container].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ContainerProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNativeDashDialog.reactNativeModalContainerProps]]
+  typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.ContainerProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.reactNativeModalContainerProps]]
   @scala.inline
   def DialogDescription: ComponentType[DescriptionProps with ViewProps with TextProps] = js.constructorOf[typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.Dialog.Description].asInstanceOf[typings.react.reactMod.ComponentType[
   typings.reactDashNativeDashDialog.reactDashNativeDashDialogMod.DescriptionProps with typings.reactDashNative.reactDashNativeMod.ViewProps with typings.reactDashNative.reactDashNativeMod.TextProps]]

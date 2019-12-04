@@ -11,9 +11,9 @@ package object libObjectTypeComposerMod {
   import typings.graphql.typeDefinitionMod.GraphQLInputType
   import typings.graphql.typeDefinitionMod.GraphQLOutputType
   import typings.graphql.typeDefinitionMod.GraphQLResolveInfo
-  import typings.graphqlDashCompose.Anon_DescriptionGqcExtensions
+  import typings.graphqlDashCompose.Anon_Description
   import typings.graphqlDashCompose.Anon_Projection
-  import typings.graphqlDashCompose.Anon_ResolveGraphQLFieldResolver
+  import typings.graphqlDashCompose.Anon_Resolve
   import typings.graphqlDashCompose.libEnumTypeComposerMod.EnumTypeComposer
   import typings.graphqlDashCompose.libInputTypeComposerMod.InputTypeComposer
   import typings.graphqlDashCompose.libInterfaceTypeComposerMod.InterfaceTypeComposer
@@ -54,7 +54,7 @@ package object libObjectTypeComposerMod {
     GraphQLOutputType | (ObjectTypeComposer[TReturn, TContext]) | EnumTypeComposer[TContext] | ScalarTypeComposer[TContext] | TypeAsString | (Resolver[js.Any, TContext, js.Any, js.Any]) | (InterfaceTypeComposer[TReturn, TContext]) | (UnionTypeComposer[TReturn, TContext])
   ]) | GraphQLOutputType | TypeAsString
   type GetRecordIdFn[TSource, TContext] = js.Function3[/* source */ TSource, /* args */ js.Any, /* context */ TContext, String]
-  type GraphQLObjectTypeExtended[TSource, TContext] = (GraphQLObjectType[_, _, StringDictionary[_]]) with (Anon_DescriptionGqcExtensions[TContext, TSource])
+  type GraphQLObjectTypeExtended[TSource, TContext] = (GraphQLObjectType[_, _, StringDictionary[_]]) with (Anon_Description[TContext, TSource])
   type GraphqlFieldConfigExtended[TSource, TContext] = (GraphQLFieldConfig[TSource, TContext, StringDictionary[_]]) with Anon_Projection
   type ObjectTypeComposeDefinition[TSource, TContext] = TypeAsString | (ComposeObjectTypeConfig[TSource, TContext]) | (GraphQLObjectType[js.Any, js.Any, StringDictionary[js.Any]])
   type RelationArgsMapper[TSource, TContext, TArgs] = StringDictionary[
@@ -68,6 +68,6 @@ package object libObjectTypeComposerMod {
     js.Any
   ]
   type RelationOpts[TRelationSource, TSource, TContext, TArgs] = (RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]) | (RelationOptsWithFieldConfig[TSource, TContext, TArgs])
-  type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (Anon_ResolveGraphQLFieldResolver[TSource, TContext, TArgs])
+  type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (Anon_Resolve[TSource, TContext, TArgs])
   type RelationThunkMap[TSource, TContext] = StringDictionary[Thunk[RelationOpts[TSource, TContext, ArgsMap, ArgsMap]]]
 }

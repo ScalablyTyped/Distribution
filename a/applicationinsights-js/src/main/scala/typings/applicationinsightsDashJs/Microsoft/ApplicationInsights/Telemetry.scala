@@ -7,8 +7,6 @@ import typings.applicationinsightsDashJs.AI.MessageData
 import typings.applicationinsightsDashJs.AI.PageViewData
 import typings.applicationinsightsDashJs.AI.PageViewPerfData
 import typings.applicationinsightsDashJs.AI.SeverityLevel
-import typings.applicationinsightsDashJs.Anon_Async
-import typings.applicationinsightsDashJs.Anon_BaseData
 import typings.applicationinsightsDashJs.Anon_DomProcessing
 import typings.applicationinsightsDashJs.Anon_Duration
 import typings.applicationinsightsDashJs.Anon_Exceptions
@@ -196,8 +194,6 @@ object Telemetry extends js.Object {
       */
     /* CompleteClass */
     override var aiDataContract: js.Any = js.native
-    @JSName("aiDataContract")
-    var aiDataContract_RemoteDependencyData: Anon_Async = js.native
     /* private */ def formatDependencyName(method: js.Any, absoluteUrl: js.Any): js.Any = js.native
   }
   
@@ -251,11 +247,6 @@ object Telemetry extends js.Object {
         */
       /* CompleteClass */
       override var aiDataContract: js.Any = js.native
-      /**
-        * The data contract for serializing this object.
-        */
-      @JSName("aiDataContract")
-      var aiDataContract_Data: Anon_BaseData = js.native
     }
     
     @js.native

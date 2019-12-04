@@ -1,15 +1,14 @@
 package typings.atAntDashDesignProDashLayout
 
-import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.topmenu
-import typings.atAntDashDesignProDashLayout.esDefaultSettingsMod.ContentWidth
+import typings.atAntDashDesignProDashLayout.libDefaultSettingsMod.ContentWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.Settings> */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings> */
 trait MergerSettingsTypeSettings extends js.Object {
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   var contentWidth: js.UndefOr[ContentWidth] = js.undefined
@@ -18,7 +17,9 @@ trait MergerSettingsTypeSettings extends js.Object {
   var iconfontUrl: js.UndefOr[String] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
+  ] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -33,7 +34,7 @@ object MergerSettingsTypeSettings {
     iconfontUrl: String = null,
     layout: sidemenu | topmenu = null,
     menu: Anon_Locale = null,
-    navTheme: MenuTheme | realDark = null,
+    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     primaryColor: String = null,
     title: String = null
   ): MergerSettingsTypeSettings = {

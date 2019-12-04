@@ -1,12 +1,12 @@
 package typings.reactDashImmutableDashProptypes
 
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Map
-import typings.immutable.immutableMod.OrderedMap
-import typings.immutable.immutableMod.OrderedSet
-import typings.immutable.immutableMod.Seq
-import typings.immutable.immutableMod.Set
-import typings.immutable.immutableMod.Stack
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Map
+import typings.immutable.Immutable.OrderedMap
+import typings.immutable.Immutable.OrderedSet
+import typings.immutable.Immutable.Seq
+import typings.immutable.Immutable.Set
+import typings.immutable.Immutable.Stack
 import typings.propDashTypes.propDashTypesMod.Requireable
 import typings.propDashTypes.propDashTypesMod.ValidationMap
 import typings.propDashTypes.propDashTypesMod.Validator

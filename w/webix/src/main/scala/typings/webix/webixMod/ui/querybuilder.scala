@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.querybuilder")
 @js.native
-class querybuilder () extends baseview {
+class querybuilder ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_querybuilder: WebixCallback = js.native
   @JSName("config")
   var config_querybuilder: querybuilderConfig = js.native
   var sqlOperators: js.Any = js.native

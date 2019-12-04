@@ -1,6 +1,7 @@
 package typings.atTensorflowTfjsDashConverter.distSrcOperationsTypesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.IAttrValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,11 +15,7 @@ trait Node extends js.Object {
   var inputs: js.Array[Node]
   var name: String
   var op: String
-  var rawAttrs: js.UndefOr[
-    StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify tensorflow.IAttrValue */ js.Any
-    ]
-  ] = js.undefined
+  var rawAttrs: js.UndefOr[StringDictionary[IAttrValue]] = js.undefined
 }
 
 object Node {
@@ -32,9 +29,7 @@ object Node {
     inputs: js.Array[Node],
     name: String,
     op: String,
-    rawAttrs: StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify tensorflow.IAttrValue */ js.Any
-    ] = null
+    rawAttrs: StringDictionary[IAttrValue] = null
   ): Node = {
     val __obj = js.Dynamic.literal(attrParams = attrParams.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], inputNames = inputNames.asInstanceOf[js.Any], inputParams = inputParams.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     if (rawAttrs != null) __obj.updateDynamic("rawAttrs")(rawAttrs.asInstanceOf[js.Any])

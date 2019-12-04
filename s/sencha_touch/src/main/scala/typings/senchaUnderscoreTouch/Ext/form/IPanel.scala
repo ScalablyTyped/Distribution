@@ -144,12 +144,6 @@ trait IPanel
   		* @param paramsAsHash Boolean The new value.
   		*/
   var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
-  /** [Method] Loads matching fields from a model instance into this form
-  		* @param record Ext.data.Model The model instance.
-  		* @returns Ext.form.Panel This form.
-  		*/
-  @JSName("setRecord")
-  var setRecord_IPanel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
   /** [Method] Sets the value of standardSubmit
   		* @param standardSubmit Boolean The new value.
   		*/
@@ -244,7 +238,6 @@ object IPanel {
     setMultipartDetection: /* multipartDetection */ js.UndefOr[Boolean] => Unit = null,
     setParamOrder: /* paramOrder */ js.UndefOr[js.Any] => Unit = null,
     setParamsAsHash: /* paramsAsHash */ js.UndefOr[Boolean] => Unit = null,
-    setRecord: /* record */ js.UndefOr[IModel] => typings.senchaUnderscoreTouch.Ext.form.IPanel = null,
     setStandardSubmit: /* standardSubmit */ js.UndefOr[Boolean] => Unit = null,
     setSubmitOnAction: /* submitOnAction */ js.UndefOr[js.Any] => Unit = null,
     setTimeout: /* timeout */ js.UndefOr[Double] => Unit = null,
@@ -299,7 +292,6 @@ object IPanel {
     if (setMultipartDetection != null) __obj.updateDynamic("setMultipartDetection")(js.Any.fromFunction1(setMultipartDetection))
     if (setParamOrder != null) __obj.updateDynamic("setParamOrder")(js.Any.fromFunction1(setParamOrder))
     if (setParamsAsHash != null) __obj.updateDynamic("setParamsAsHash")(js.Any.fromFunction1(setParamsAsHash))
-    if (setRecord != null) __obj.updateDynamic("setRecord")(js.Any.fromFunction1(setRecord))
     if (setStandardSubmit != null) __obj.updateDynamic("setStandardSubmit")(js.Any.fromFunction1(setStandardSubmit))
     if (setSubmitOnAction != null) __obj.updateDynamic("setSubmitOnAction")(js.Any.fromFunction1(setSubmitOnAction))
     if (setTimeout != null) __obj.updateDynamic("setTimeout")(js.Any.fromFunction1(setTimeout))

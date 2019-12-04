@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libKernelKernelMod.Kernel
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +18,6 @@ object shutdown extends js.Object {
     * @returns A promise that resolves when the kernel is shut down.
     */
   def apply(id: String): js.Promise[Unit] = js.native
-  def apply(
-    id: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def apply(id: String, settings: ISettings): js.Promise[Unit] = js.native
 }
 

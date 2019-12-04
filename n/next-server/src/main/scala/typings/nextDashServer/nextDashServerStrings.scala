@@ -9,7 +9,16 @@ object nextDashServerStrings {
   sealed trait BUILD_ID extends js.Object
   
   @js.native
+  sealed trait back extends js.Object
+  
+  @js.native
+  sealed trait beforePopState extends js.Object
+  
+  @js.native
   sealed trait `build-manifestDOTjson` extends js.Object
+  
+  @js.native
+  sealed trait events extends js.Object
   
   @js.native
   sealed trait hybrid extends js.Object
@@ -33,13 +42,25 @@ object nextDashServerStrings {
   sealed trait `phase-production-server` extends js.Object
   
   @js.native
+  sealed trait prefetch extends js.Object
+  
+  @js.native
   sealed trait `prerender-manifestDOTjson` extends js.Object
   
   @js.native
   sealed trait public extends js.Object
   
   @js.native
+  sealed trait push extends js.Object
+  
+  @js.native
   sealed trait `react-loadable-manifestDOTjson` extends js.Object
+  
+  @js.native
+  sealed trait reload extends js.Object
+  
+  @js.native
+  sealed trait replace extends js.Object
   
   @js.native
   sealed trait runtime extends js.Object
@@ -56,7 +77,13 @@ object nextDashServerStrings {
   @scala.inline
   def BUILD_ID: BUILD_ID = "BUILD_ID".asInstanceOf[BUILD_ID]
   @scala.inline
+  def back: back = "back".asInstanceOf[back]
+  @scala.inline
+  def beforePopState: beforePopState = "beforePopState".asInstanceOf[beforePopState]
+  @scala.inline
   def `build-manifestDOTjson`: `build-manifestDOTjson` = "build-manifest.json".asInstanceOf[`build-manifestDOTjson`]
+  @scala.inline
+  def events: events = "events".asInstanceOf[events]
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
@@ -72,11 +99,19 @@ object nextDashServerStrings {
   @scala.inline
   def `phase-production-server`: `phase-production-server` = "phase-production-server".asInstanceOf[`phase-production-server`]
   @scala.inline
+  def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
+  @scala.inline
   def `prerender-manifestDOTjson`: `prerender-manifestDOTjson` = "prerender-manifest.json".asInstanceOf[`prerender-manifestDOTjson`]
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
+  def push: push = "push".asInstanceOf[push]
+  @scala.inline
   def `react-loadable-manifestDOTjson`: `react-loadable-manifestDOTjson` = "react-loadable-manifest.json".asInstanceOf[`react-loadable-manifestDOTjson`]
+  @scala.inline
+  def reload: reload = "reload".asInstanceOf[reload]
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def runtime: runtime = "runtime".asInstanceOf[runtime]
   @scala.inline

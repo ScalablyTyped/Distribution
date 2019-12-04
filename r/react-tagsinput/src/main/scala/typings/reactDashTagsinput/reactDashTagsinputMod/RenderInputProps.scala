@@ -3,7 +3,6 @@ package typings.reactDashTagsinput.reactDashTagsinputMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.reactMod.ChangeEvent
 import typings.reactDashTagsinput.Anon_Value
-import typings.reactDashTagsinput.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

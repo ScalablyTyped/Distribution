@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<Wrapper> * / any */ @JSGlobal("bws.packer.WrapperArray")
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify protocol.EntityArrayCollection<Wrapper> * / any */ @JSGlobal("bws.packer.WrapperArray")
 @js.native
 /**
   * Default Constructor.
@@ -23,7 +23,7 @@ class WrapperArray () extends js.Object {
     * @inheritdoc
     */
   def createChild(
-    xml: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify library.XML */ js.Any
+    xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
   ): Wrapper = js.native
   /**
     * Get (calculate) price.

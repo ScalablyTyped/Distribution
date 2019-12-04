@@ -14,5 +14,6 @@ trait rules extends js.Object {
 
 @JSImport("webix", "rules")
 @js.native
-object rules extends TopLevel[rules]
+object rules
+  extends TopLevel[typings.webix.webix.rules]
 

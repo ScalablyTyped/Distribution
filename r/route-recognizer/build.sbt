@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "route-recognizer"
-version := "0.3.4-addc8a"
+version := "0.3.4-cf9a54"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

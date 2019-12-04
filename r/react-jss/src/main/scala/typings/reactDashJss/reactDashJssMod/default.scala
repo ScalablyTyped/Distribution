@@ -3,7 +3,6 @@ package typings.reactDashJss.reactDashJssMod
 import typings.jss.jssMod.Styles
 import typings.react.reactMod.ComponentType
 import typings.reactDashJss.Anon_Classes
-import typings.reactDashJss.Omit
 import typings.reactDashJss.reactDashJssStrings.classes
 import scala.scalajs.js
 import scala.scalajs.js.`|`

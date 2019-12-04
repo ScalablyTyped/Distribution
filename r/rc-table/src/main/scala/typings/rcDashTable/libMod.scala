@@ -38,10 +38,10 @@ object libMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Column: FunctionComponent[ColumnType[Record[String, _]]] = js.native
-    var ColumnGroup: TypeofClassColumnGroupIsTableColumnGroup = js.native
+    var ColumnGroup: TypeofClassColumnGroup = js.native
     var childContextTypes: Anon_Components = js.native
     var defaultProps: Anon_BodyStyle = js.native
-    def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): Anon_ChildrenColumnsAny | Anon_ChildrenColumns = js.native
+    def getDerivedStateFromProps(nextProps: TableProps[DefaultValueType], prevState: TableState): Anon_Children | Anon_ChildrenColumns = js.native
   }
   
 }

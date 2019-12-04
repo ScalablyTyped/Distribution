@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.window")
 @js.native
-class window () extends baseview {
+class window ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_window: WebixCallback = js.native
   @JSName("config")
   var config_window: windowConfig = js.native
   def attachEvent(`type`: windowEventName, functor: WebixCallback): String | Double = js.native

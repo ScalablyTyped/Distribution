@@ -1,8 +1,8 @@
 package typings.immutable.immutableMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Seq.Indexed
-import typings.immutable.immutableMod.Seq.Keyed
+import typings.immutable.Immutable.Seq.Indexed
+import typings.immutable.Immutable.Seq.Keyed
 import typings.std.Iterable
 import typings.std.IterableIterator
 import scala.scalajs.js
@@ -10,7 +10,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Collection[K, V] extends ValueObject {
+trait Collection[K, V]
+  extends typings.immutable.Immutable.ValueObject {
   /**
     * Returns a new Collection of the same type containing all entries except
     * the last.
@@ -24,7 +25,7 @@ trait Collection[K, V] extends ValueObject {
     * For Seqs, all entries will be present in the resulting Seq, even if they
     * have the same key.
     */
-  def concat(valuesOrCollections: js.Any*): Collection[_, _] = js.native
+  def concat(valuesOrCollections: js.Any*): typings.immutable.Immutable.Collection[_, _] = js.native
   def contains(value: V): Boolean = js.native
   /**
     * Returns the size of this Collection.
@@ -48,8 +49,8 @@ trait Collection[K, V] extends ValueObject {
     *
     * Note: This is not a lazy operation.
     */
-  def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): Map[G, Double] = js.native
-  def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): Map[G, Double] = js.native
+  def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): typings.immutable.Immutable.Map[G, Double] = js.native
+  def countBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): typings.immutable.Immutable.Map[G, Double] = js.native
   /**
     * An iterator of this `Collection`'s entries as `[ key, value ]` tuples.
     *
@@ -106,12 +107,12 @@ trait Collection[K, V] extends ValueObject {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_V_Collection[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): Collection[K, F] = js.native
+  def filter_F_V_Collection[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.Collection[K, F] = js.native
   @JSName("filter")
   def filter_F_V_Collection[F /* <: V */](
     predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): Collection[K, F] = js.native
+  ): typings.immutable.Immutable.Collection[K, F] = js.native
   // Search for value
   /**
     * Returns the first value for which the `predicate` returns true.
@@ -201,11 +202,11 @@ trait Collection[K, V] extends ValueObject {
     *
     * Similar to `collection.map(...).flatten(true)`.
     */
-  def flatMap[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[M]]): Collection[K, M] = js.native
+  def flatMap[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[M]]): typings.immutable.Immutable.Collection[K, M] = js.native
   def flatMap[M](
     mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[M]],
     context: js.Any
-  ): Collection[K, M] = js.native
+  ): typings.immutable.Immutable.Collection[K, M] = js.native
   /**
     * Flat-maps the Collection, returning a Collection of the same type.
     *
@@ -215,12 +216,12 @@ trait Collection[K, V] extends ValueObject {
   @JSName("flatMap")
   def flatMap_KMVM[KM, VM](
     mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[js.Tuple2[KM, VM]]]
-  ): Collection[KM, VM] = js.native
+  ): typings.immutable.Immutable.Collection[KM, VM] = js.native
   @JSName("flatMap")
   def flatMap_KMVM[KM, VM](
     mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, Iterable[js.Tuple2[KM, VM]]],
     context: js.Any
-  ): Collection[KM, VM] = js.native
+  ): typings.immutable.Immutable.Collection[KM, VM] = js.native
   /**
     * Flattens nested Collections.
     *
@@ -234,9 +235,9 @@ trait Collection[K, V] extends ValueObject {
     * Note: `flatten(true)` operates on Collection<any, Collection<K, V>> and
     * returns Collection<K, V>
     */
-  def flatten(): Collection[_, _] = js.native
-  def flatten(depth: Double): Collection[_, _] = js.native
-  def flatten(shallow: Boolean): Collection[_, _] = js.native
+  def flatten(): typings.immutable.Immutable.Collection[_, _] = js.native
+  def flatten(depth: Double): typings.immutable.Immutable.Collection[_, _] = js.native
+  def flatten(shallow: Boolean): typings.immutable.Immutable.Collection[_, _] = js.native
   // Side effects
   /**
     * The `sideEffect` is executed for every entry in the Collection.
@@ -306,8 +307,8 @@ trait Collection[K, V] extends ValueObject {
     * // }
     * ```
     */
-  def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): /*Map*/ Keyed[G, /*this*/ Collection[K, V]] = js.native
-  def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): /*Map*/ Keyed[G, /*this*/ Collection[K, V]] = js.native
+  def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G]): /*Map*/ Keyed[G, /*this*/ typings.immutable.Immutable.Collection[K, V]] = js.native
+  def groupBy[G](grouper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, G], context: js.Any): /*Map*/ Keyed[G, /*this*/ typings.immutable.Immutable.Collection[K, V]] = js.native
   /**
     * True if a key exists within this `Collection`, using `Immutable.is`
     * to determine equality
@@ -399,8 +400,8 @@ trait Collection[K, V] extends ValueObject {
     * Note: `map()` always returns a new instance, even if it produced the same
     * value at every step.
     */
-  def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M]): Collection[K, M] = js.native
-  def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M], context: js.Any): Collection[K, M] = js.native
+  def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M]): typings.immutable.Immutable.Collection[K, M] = js.native
+  def map[M](mapper: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, M], context: js.Any): typings.immutable.Immutable.Collection[K, M] = js.native
   /**
     * Returns the maximum value in this collection. If any values are
     * comparatively equivalent, the first one found will be returned.
@@ -736,7 +737,7 @@ trait Collection[K, V] extends ValueObject {
     * myMap.toList() // List [ "Apple", "Banana" ]
     * ```
     */
-  def toList(): List[V] = js.native
+  def toList(): typings.immutable.Immutable.List[V] = js.native
   // Conversion to Collections
   /**
     * Converts this Collection to a Map, Throws if keys are not hashable.
@@ -744,7 +745,7 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `Map(this.toKeyedSeq())`, but provided
     * for convenience and to allow for chained expressions.
     */
-  def toMap(): Map[K, V] = js.native
+  def toMap(): typings.immutable.Immutable.Map[K, V] = js.native
   /**
     * Shallowly converts this Collection to an Object.
     *
@@ -757,7 +758,7 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `OrderedMap(this.toKeyedSeq())`, but
     * provided for convenience and to allow for chained expressions.
     */
-  def toOrderedMap(): OrderedMap[K, V] = js.native
+  def toOrderedMap(): typings.immutable.Immutable.OrderedMap[K, V] = js.native
   /**
     * Converts this Collection to a Set, maintaining the order of iteration and
     * discarding keys.
@@ -765,13 +766,13 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `OrderedSet(this.valueSeq())`, but provided
     * for convenience and to allow for chained expressions.
     */
-  def toOrderedSet(): OrderedSet[V] = js.native
+  def toOrderedSet(): typings.immutable.Immutable.OrderedSet[V] = js.native
   // Conversion to Seq
   /**
     * Converts this Collection to a Seq of the same kind (indexed,
     * keyed, or set).
     */
-  def toSeq(): Seq[K, V] = js.native
+  def toSeq(): typings.immutable.Immutable.Seq[K, V] = js.native
   /**
     * Converts this Collection to a Set, discarding keys. Throws if values
     * are not hashable.
@@ -779,11 +780,11 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `Set(this)`, but provided to allow for
     * chained expressions.
     */
-  def toSet(): Set[V] = js.native
+  def toSet(): typings.immutable.Immutable.Set[V] = js.native
   /**
     * Returns a Seq.Set of the values of this Collection, discarding keys.
     */
-  def toSetSeq(): typings.immutable.immutableMod.Seq.Set[V] = js.native
+  def toSetSeq(): typings.immutable.Immutable.Seq.Set[V] = js.native
   /**
     * Converts this Collection to a Stack, discarding keys. Throws if values
     * are not hashable.
@@ -791,7 +792,7 @@ trait Collection[K, V] extends ValueObject {
     * Note: This is equivalent to `Stack(this)`, but provided to allow for
     * chained expressions.
     */
-  def toStack(): Stack[V] = js.native
+  def toStack(): typings.immutable.Immutable.Stack[V] = js.native
   // Persistent changes
   /**
     * This can be very useful as a way to "chain" a normal function into a
@@ -833,7 +834,8 @@ trait Collection[K, V] extends ValueObject {
 @js.native
 object Collection extends js.Object {
   @js.native
-  trait Indexed[T] extends Collection[Double, T] {
+  trait Indexed[T]
+    extends typings.immutable.Immutable.Collection[Double, T] {
     @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     /**
@@ -846,12 +848,12 @@ object Collection extends js.Object {
     @JSName("filter")
     def filter_F_T_Indexed[F /* <: T */](
       predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-    ): typings.immutable.immutableMod.Collection.Indexed[F] = js.native
+    ): typings.immutable.Immutable.Collection.Indexed[F] = js.native
     @JSName("filter")
     def filter_F_T_Indexed[F /* <: T */](
       predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
-    ): typings.immutable.immutableMod.Collection.Indexed[F] = js.native
+    ): typings.immutable.Immutable.Collection.Indexed[F] = js.native
     /**
       * Returns the first index in the Collection where a value satisfies the
       * provided predicate function. Otherwise -1 is returned.
@@ -874,7 +876,7 @@ object Collection extends js.Object {
       * If this is a collection of [key, value] entry tuples, it will return a
       * Seq.Keyed of those entries.
       */
-    def fromEntrySeq(): typings.immutable.immutableMod.Seq.Keyed[_, _] = js.native
+    def fromEntrySeq(): typings.immutable.Immutable.Seq.Keyed[_, _] = js.native
     // Search for value
     /**
       * Returns the first index at which a given value can be found in the
@@ -915,7 +917,7 @@ object Collection extends js.Object {
       *
       * Note: `interleave` *cannot* be used in `withMutations`.
       */
-    def interleave(collections: (Collection[_, T])*): this.type = js.native
+    def interleave(collections: (typings.immutable.Immutable.Collection[_, T])*): this.type = js.native
     // Combination
     /**
       * Returns a Collection of the same type with `separator` between each item
@@ -948,7 +950,7 @@ object Collection extends js.Object {
       * Note: `splice` *cannot* be used in `withMutations`.
       */
     def splice(index: Double, removeNum: Double, values: T*): this.type = js.native
-    def zip(collections: (Collection[_, _])*): typings.immutable.immutableMod.Collection.Indexed[_] = js.native
+    def zip(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.Collection.Indexed[_] = js.native
     /**
       * Returns a Collection of the same type "zipped" with the provided
       * collections.
@@ -965,9 +967,12 @@ object Collection extends js.Object {
       * const c = a.zip(b); // List [ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
       * ```
       */
-    def zip[U](other: Collection[_, U]): typings.immutable.immutableMod.Collection.Indexed[js.Tuple2[T, U]] = js.native
-    def zip[U, V](other: Collection[_, U], other2: Collection[_, V]): typings.immutable.immutableMod.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
-    def zipAll(collections: (Collection[_, _])*): typings.immutable.immutableMod.Collection.Indexed[_] = js.native
+    def zip[U](other: typings.immutable.Immutable.Collection[_, U]): typings.immutable.Immutable.Collection.Indexed[js.Tuple2[T, U]] = js.native
+    def zip[U, V](
+      other: typings.immutable.Immutable.Collection[_, U],
+      other2: typings.immutable.Immutable.Collection[_, V]
+    ): typings.immutable.Immutable.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
+    def zipAll(collections: (typings.immutable.Immutable.Collection[_, _])*): typings.immutable.Immutable.Collection.Indexed[_] = js.native
     /**
       * Returns a Collection "zipped" with the provided collections.
       *
@@ -980,9 +985,15 @@ object Collection extends js.Object {
       * const c = a.zipAll(b); // List [ [ 1, 3 ], [ 2, 4 ], [ undefined, 5 ] ]
       * ```
       */
-    def zipAll[U](other: Collection[_, U]): typings.immutable.immutableMod.Collection.Indexed[js.Tuple2[T, U]] = js.native
-    def zipAll[U, V](other: Collection[_, U], other2: Collection[_, V]): typings.immutable.immutableMod.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
-    def zipWith[Z](zipper: js.Function1[/* repeated */ js.Any, Z], collections: (Collection[_, _])*): typings.immutable.immutableMod.Collection.Indexed[Z] = js.native
+    def zipAll[U](other: typings.immutable.Immutable.Collection[_, U]): typings.immutable.Immutable.Collection.Indexed[js.Tuple2[T, U]] = js.native
+    def zipAll[U, V](
+      other: typings.immutable.Immutable.Collection[_, U],
+      other2: typings.immutable.Immutable.Collection[_, V]
+    ): typings.immutable.Immutable.Collection.Indexed[js.Tuple3[T, U, V]] = js.native
+    def zipWith[Z](
+      zipper: js.Function1[/* repeated */ js.Any, Z],
+      collections: (typings.immutable.Immutable.Collection[_, _])*
+    ): typings.immutable.Immutable.Collection.Indexed[Z] = js.native
     /**
       * Returns a Collection of the same type "zipped" with the provided
       * collections by using a custom `zipper` function.
@@ -997,23 +1008,27 @@ object Collection extends js.Object {
       * // List [ 5, 7, 9 ]
       * ```
       */
-    def zipWith[U, Z](zipper: js.Function2[/* value */ T, /* otherValue */ U, Z], otherCollection: Collection[_, U]): typings.immutable.immutableMod.Collection.Indexed[Z] = js.native
+    def zipWith[U, Z](
+      zipper: js.Function2[/* value */ T, /* otherValue */ U, Z],
+      otherCollection: typings.immutable.Immutable.Collection[_, U]
+    ): typings.immutable.Immutable.Collection.Indexed[Z] = js.native
     def zipWith[U, V, Z](
       zipper: js.Function3[/* value */ T, /* otherValue */ U, /* thirdValue */ V, Z],
-      otherCollection: Collection[_, U],
-      thirdCollection: Collection[_, V]
-    ): typings.immutable.immutableMod.Collection.Indexed[Z] = js.native
+      otherCollection: typings.immutable.Immutable.Collection[_, U],
+      thirdCollection: typings.immutable.Immutable.Collection[_, V]
+    ): typings.immutable.Immutable.Collection.Indexed[Z] = js.native
   }
   
   @js.native
-  trait Keyed[K, V] extends Collection[K, V] {
+  trait Keyed[K, V]
+    extends typings.immutable.Immutable.Collection[K, V] {
     @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
     /**
       * Returns a new Collection with other collections concatenated to this one.
       */
     @JSName("concat")
-    def concat_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): typings.immutable.immutableMod.Collection.Keyed[K | KC, V | VC] = js.native
+    def concat_KCVC[KC, VC](collections: (Iterable[js.Tuple2[KC, VC]])*): typings.immutable.Immutable.Collection.Keyed[K | KC, V | VC] = js.native
     /**
       * Returns a new Collection with only the values for which the `predicate`
       * function returns true.
@@ -1022,12 +1037,12 @@ object Collection extends js.Object {
       * not filtering out any values.
       */
     @JSName("filter")
-    def filter_F_V_Keyed[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.immutableMod.Collection.Keyed[K, F] = js.native
+    def filter_F_V_Keyed[F /* <: V */](predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.Collection.Keyed[K, F] = js.native
     @JSName("filter")
     def filter_F_V_Keyed[F /* <: V */](
       predicate: js.Function3[/* value */ V, /* key */ K, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
-    ): typings.immutable.immutableMod.Collection.Keyed[K, F] = js.native
+    ): typings.immutable.Immutable.Collection.Keyed[K, F] = js.native
     // Sequence functions
     /**
       * Returns a new Collection.Keyed of the same type where the keys and values
@@ -1040,7 +1055,7 @@ object Collection extends js.Object {
       * // Map { "z": "a", "y": "b" }
       * ```
       */
-    def flip(): typings.immutable.immutableMod.Collection.Keyed[V, K] = js.native
+    def flip(): typings.immutable.Immutable.Collection.Keyed[V, K] = js.native
     /**
       * Returns a new Collection.Keyed of the same type with entries
       * ([key, value] tuples) passed through a `mapper` function.
@@ -1063,7 +1078,7 @@ object Collection extends js.Object {
           /* iter */ this.type, 
           js.Tuple2[KM, VM]
         ]
-    ): typings.immutable.immutableMod.Collection.Keyed[KM, VM] = js.native
+    ): typings.immutable.Immutable.Collection.Keyed[KM, VM] = js.native
     def mapEntries[KM, VM](
       mapper: js.Function3[
           /* entry */ js.Tuple2[K, V], 
@@ -1072,7 +1087,7 @@ object Collection extends js.Object {
           js.Tuple2[KM, VM]
         ],
       context: js.Any
-    ): typings.immutable.immutableMod.Collection.Keyed[KM, VM] = js.native
+    ): typings.immutable.Immutable.Collection.Keyed[KM, VM] = js.native
     /**
       * Returns a new Collection.Keyed of the same type with keys passed through
       * a `mapper` function.
@@ -1087,12 +1102,13 @@ object Collection extends js.Object {
       * Note: `mapKeys()` always returns a new instance, even if it produced
       * the same key at every step.
       */
-    def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M]): typings.immutable.immutableMod.Collection.Keyed[M, V] = js.native
-    def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M], context: js.Any): typings.immutable.immutableMod.Collection.Keyed[M, V] = js.native
+    def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M]): typings.immutable.Immutable.Collection.Keyed[M, V] = js.native
+    def mapKeys[M](mapper: js.Function3[/* key */ K, /* value */ V, /* iter */ this.type, M], context: js.Any): typings.immutable.Immutable.Collection.Keyed[M, V] = js.native
   }
   
   @js.native
-  trait Set[T] extends Collection[T, T] {
+  trait Set[T]
+    extends typings.immutable.Immutable.Collection[T, T] {
     @JSName(scala.scalajs.js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[T]] = js.native
     /**
@@ -1103,17 +1119,17 @@ object Collection extends js.Object {
       * not filtering out any values.
       */
     @JSName("filter")
-    def filter_F_T_Set[F /* <: T */](predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.immutableMod.Collection.Set[F] = js.native
+    def filter_F_T_Set[F /* <: T */](predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean]): typings.immutable.Immutable.Collection.Set[F] = js.native
     @JSName("filter")
     def filter_F_T_Set[F /* <: T */](
       predicate: js.Function3[/* value */ T, /* key */ T, /* iter */ this.type, /* is F */ Boolean],
       context: js.Any
-    ): typings.immutable.immutableMod.Collection.Set[F] = js.native
+    ): typings.immutable.Immutable.Collection.Set[F] = js.native
   }
   
-  def apply[I /* <: Collection[_, _] */](collection: I): I = js.native
-  def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Indexed[T] = js.native
-  def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Collection.Keyed[String, V] = js.native
+  def apply[I /* <: typings.immutable.Immutable.Collection[_, _] */](collection: I): I = js.native
+  def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
+  def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
   /**
     * @deprecated use `const { isAssociative } = require('immutable')`
     */
@@ -1121,29 +1137,29 @@ object Collection extends js.Object {
   /**
     * @deprecated use `const { isIndexed } = require('immutable')`
     */
-  def isIndexed(maybeIndexed: js.Any): /* is immutable.immutable.Collection.Indexed<any> */ Boolean = js.native
+  def isIndexed(maybeIndexed: js.Any): /* is immutable.Immutable.Collection.Indexed<any> */ Boolean = js.native
   /**
     * @deprecated use `const { isKeyed } = require('immutable')`
     */
-  def isKeyed(maybeKeyed: js.Any): /* is immutable.immutable.Collection.Keyed<any, any> */ Boolean = js.native
+  def isKeyed(maybeKeyed: js.Any): /* is immutable.Immutable.Collection.Keyed<any, any> */ Boolean = js.native
   /**
     * @deprecated use `const { isOrdered } = require('immutable')`
     */
   def isOrdered(maybeOrdered: js.Any): Boolean = js.native
   @js.native
   object Indexed extends js.Object {
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Indexed[T] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Indexed[T] = js.native
   }
   
   @js.native
   object Keyed extends js.Object {
-    def apply[V](obj: StringDictionary[V]): typings.immutable.immutableMod.Collection.Keyed[String, V] = js.native
-    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.immutableMod.Collection.Keyed[K, V] = js.native
+    def apply[V](obj: StringDictionary[V]): typings.immutable.Immutable.Collection.Keyed[String, V] = js.native
+    def apply[K, V](collection: Iterable[js.Tuple2[K, V]]): typings.immutable.Immutable.Collection.Keyed[K, V] = js.native
   }
   
   @js.native
   object Set extends js.Object {
-    def apply[T](collection: Iterable[T]): typings.immutable.immutableMod.Collection.Set[T] = js.native
+    def apply[T](collection: Iterable[T]): typings.immutable.Immutable.Collection.Set[T] = js.native
   }
   
 }

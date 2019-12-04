@@ -1,6 +1,5 @@
 package typings.googleDashMapsDashReact.googleDashMapsDashReactMod
 
-import typings.googleDashMapsDashReact.Omit
 import typings.react.reactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`

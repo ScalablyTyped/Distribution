@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.multitext")
 @js.native
-class multitext () extends baseview {
+class multitext ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -24,6 +25,8 @@ class multitext () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_multitext: WebixCallback = js.native
   @JSName("config")
   var config_multitext: multitextConfig = js.native
   @JSName("on_click")

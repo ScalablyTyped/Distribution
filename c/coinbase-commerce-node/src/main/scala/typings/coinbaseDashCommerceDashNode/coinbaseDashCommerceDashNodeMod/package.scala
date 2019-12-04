@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object coinbaseDashCommerceDashNodeMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.coinbaseDashCommerceDashNode.Omit
   import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.pricing_type
+  import typings.std.Exclude
+  import typings.std.Pick
 
   /**
     * Node callback
@@ -46,9 +47,18 @@ package object coinbaseDashCommerceDashNodeMod {
     */
   type KeyVal = StringDictionary[js.Any]
   /**
+    * Omit a property from the given type.
+    */
+  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
+  /**
     * Pagination callback.
     */
   type PaginationCallback[T] = js.Function3[/* error */ js.Any, /* response */ js.Array[T], /* pagination */ Pagination, Unit]
+  /**
+    * Timestamp string.
+    * ISO 8601
+    */
+  type Timestamp = String
   /**
     * Update a checkout resource.
     *

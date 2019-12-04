@@ -4,6 +4,7 @@ import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IKernel
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IModel
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.IOptions
 import typings.atJupyterlabServices.libKernelKernelMod.Kernel.ISpecModels
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +26,7 @@ object Kernel extends js.Object {
     * Kernel object info is used to create another instance.
     */
   def connectTo(model: IModel): IKernel = js.native
-  def connectTo(
-    model: IModel,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): IKernel = js.native
+  def connectTo(model: IModel, settings: ISettings): IKernel = js.native
   /**
     * Find a kernel by id.
     *
@@ -45,10 +43,7 @@ object Kernel extends js.Object {
     * rejected.
     */
   def findById(id: String): js.Promise[IModel] = js.native
-  def findById(
-    id: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[IModel] = js.native
+  def findById(id: String, settings: ISettings): js.Promise[IModel] = js.native
   /**
     * Fetch all of the kernel specs.
     *
@@ -60,9 +55,7 @@ object Kernel extends js.Object {
     * Uses the [Jupyter Notebook API](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/jupyter/notebook/master/notebook/services/api/api.yaml#!/kernelspecs).
     */
   def getSpecs(): js.Promise[ISpecModels] = js.native
-  def getSpecs(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[ISpecModels] = js.native
+  def getSpecs(settings: ISettings): js.Promise[ISpecModels] = js.native
   /**
     * Fetch the running kernels.
     *
@@ -76,9 +69,7 @@ object Kernel extends js.Object {
     * The promise is fulfilled on a valid response and rejected otherwise.
     */
   def listRunning(): js.Promise[js.Array[IModel]] = js.native
-  def listRunning(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[js.Array[IModel]] = js.native
+  def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
   /**
     * Shut down a kernel by id.
     *
@@ -89,19 +80,14 @@ object Kernel extends js.Object {
     * @returns A promise that resolves when the kernel is shut down.
     */
   def shutdown(id: String): js.Promise[Unit] = js.native
-  def shutdown(
-    id: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def shutdown(id: String, settings: ISettings): js.Promise[Unit] = js.native
   /**
     * Shut down all kernels.
     *
     * @returns A promise that resolves when all of the kernels are shut down.
     */
   def shutdownAll(): js.Promise[Unit] = js.native
-  def shutdownAll(
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[Unit] = js.native
+  def shutdownAll(settings: ISettings): js.Promise[Unit] = js.native
   /**
     * Start a new kernel.
     *

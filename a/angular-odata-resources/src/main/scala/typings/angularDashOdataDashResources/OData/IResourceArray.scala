@@ -1,6 +1,5 @@
 package typings.angularDashOdataDashResources.OData
 
-import typings.angular.angularMod.IPromise
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait IResourceArray[T] extends Array[T] {
   /** the promise of the original server interaction that created this collection. **/
   @JSName("$promise")
-  var $promise: IPromise[IResourceArray[T]] = js.native
+  var $promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<IResourceArray<T>> */ js.Any = js.native
   @JSName("$resolved")
   var $resolved: Boolean = js.native
 }

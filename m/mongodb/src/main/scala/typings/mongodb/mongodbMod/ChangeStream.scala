@@ -1,7 +1,6 @@
 package typings.mongodb.mongodbMod
 
 import typings.mongodb.Anon_Transform
-import typings.mongodb.Default
 import typings.node.streamMod.Readable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

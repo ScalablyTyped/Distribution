@@ -1,7 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod
 
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
-import typings.std.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

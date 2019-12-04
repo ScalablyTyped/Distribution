@@ -18,7 +18,7 @@ class DomEventRegister () extends EventRegister {
   def register(
     dom: HTMLElement,
     eventName: EEventName,
-    eventData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
+    eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
     handler: js.Function,
     originHandler: js.Function,
     domHandler: js.Function,

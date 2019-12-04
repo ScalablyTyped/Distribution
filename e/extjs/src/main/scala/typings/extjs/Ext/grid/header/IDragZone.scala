@@ -11,23 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDragZone
-  extends typings.extjs.Ext.dd.IDragZone {
-  /** [Method] Called before a repair of an invalid drop to get the XY to animate to
-  		* @returns Number[] The xy location (e.g. [100, 200])
-  		*/
-  @JSName("getRepairXY")
-  var getRepairXY_IDragZone: js.UndefOr[js.Function0[Array]] = js.undefined
-  /** [Method] An empty function by default but provided so that you can perform a custom action before the initial drag event begi
-  		* @returns Boolean isValid True if the drag event is valid, else false to cancel
-  		*/
-  @JSName("onBeforeDrag")
-  var onBeforeDrag_IDragZone: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  /** [Method] Called once drag threshold has been reached to initialize the proxy element
-  		* @returns Boolean true to continue the drag, false to cancel
-  		*/
-  @JSName("onInitDrag")
-  var onInitDrag_IDragZone: js.UndefOr[js.Function0[Boolean]] = js.undefined
-}
+  extends typings.extjs.Ext.dd.IDragZone
 
 object IDragZone {
   @scala.inline
@@ -81,7 +65,7 @@ object IDragZone {
     getEl: () => HTMLElement = null,
     getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
     getProxy: () => IStatusProxy = null,
-    getRepairXY: () => Array = null,
+    getRepairXY: /* e */ js.UndefOr[Event] => Array = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
     hideProxy: () => Unit = null,
@@ -103,13 +87,13 @@ object IDragZone {
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     onAvailable: () => Unit = null,
-    onBeforeDrag: () => Boolean = null,
+    onBeforeDrag: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event]) => Boolean = null,
     onDrag: /* e */ js.UndefOr[Event] => Unit = null,
     onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInitDrag: () => Boolean = null,
+    onInitDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Boolean = null,
     onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
@@ -196,7 +180,7 @@ object IDragZone {
     if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
     if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
     if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
-    if (getRepairXY != null) __obj.updateDynamic("getRepairXY")(js.Any.fromFunction0(getRepairXY))
+    if (getRepairXY != null) __obj.updateDynamic("getRepairXY")(js.Any.fromFunction1(getRepairXY))
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (!js.isUndefined(hasOuterHandles)) __obj.updateDynamic("hasOuterHandles")(hasOuterHandles.asInstanceOf[js.Any])
     if (hideProxy != null) __obj.updateDynamic("hideProxy")(js.Any.fromFunction0(hideProxy))
@@ -218,13 +202,13 @@ object IDragZone {
     if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
     if (!js.isUndefined(moveOnly)) __obj.updateDynamic("moveOnly")(moveOnly.asInstanceOf[js.Any])
     if (onAvailable != null) __obj.updateDynamic("onAvailable")(js.Any.fromFunction0(onAvailable))
-    if (onBeforeDrag != null) __obj.updateDynamic("onBeforeDrag")(js.Any.fromFunction0(onBeforeDrag))
+    if (onBeforeDrag != null) __obj.updateDynamic("onBeforeDrag")(js.Any.fromFunction2(onBeforeDrag))
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
     if (onDragDrop != null) __obj.updateDynamic("onDragDrop")(js.Any.fromFunction2(onDragDrop))
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction2(onDragEnter))
     if (onDragOut != null) __obj.updateDynamic("onDragOut")(js.Any.fromFunction2(onDragOut))
     if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction2(onDragOver))
-    if (onInitDrag != null) __obj.updateDynamic("onInitDrag")(js.Any.fromFunction0(onInitDrag))
+    if (onInitDrag != null) __obj.updateDynamic("onInitDrag")(js.Any.fromFunction2(onInitDrag))
     if (onInvalidDrop != null) __obj.updateDynamic("onInvalidDrop")(js.Any.fromFunction1(onInvalidDrop))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))

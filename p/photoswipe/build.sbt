@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "photoswipe"
-version := "4.0.8-dt-20191126Z-f82b5e"
+version := "4.0.8-dt-20191126Z-07e201"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

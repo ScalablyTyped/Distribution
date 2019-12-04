@@ -1,7 +1,6 @@
 package typings.babelDashPluginDashMacros.babelDashPluginDashMacrosMod
 
 import typings.babelDashPluginDashMacros.Anon_Default
-import typings.babelDashPluginDashMacros.References
 import typings.babelDashPluginDashMacros.TypeofBabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`

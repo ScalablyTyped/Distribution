@@ -1,5 +1,7 @@
 package typings.emberDashData.emberDashDataMod.DS
 
+import typings.atEmberArray.dashPrivateEnumerableMod.Enumerable
+import typings.atEmberObject.eventedMod.Evented
 import typings.ember.emberMod.default.ComputedProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,12 +10,12 @@ import scala.scalajs.js.annotation._
 /**
   * Holds validation errors for a given record, organized by attribute names.
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberEnumerable<T> * / any
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Evented * / any */ @JSImport("ember-data", "DS.Errors")
+@JSImport("ember-data", "DS.Errors")
 @js.native
 class Errors ()
-  extends typings.atEmberObject.atEmberObjectMod.default {
+  extends typings.atEmberObject.atEmberObjectMod.default
+     with Enumerable[js.Any]
+     with Evented {
   var isEmpty: ComputedProperty[Boolean, Boolean] = js.native
   /**
     * Total number of errors.
@@ -41,10 +43,6 @@ class Errors ()
     * Returns errors for a given attribute
     */
   def errorsFor(attribute: String): js.Array[_] = js.native
-  /**
-    * Checks if there is error messages for the given attribute.
-    */
-  def has(attribute: String): Boolean = js.native
   /**
     * DEPRECATED:
     * Register with target handler

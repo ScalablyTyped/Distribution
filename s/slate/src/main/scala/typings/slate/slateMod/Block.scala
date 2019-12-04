@@ -1,6 +1,6 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.slateStrings.block
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,6 +37,6 @@ object Block extends js.Object {
   def fromJSON(properties: BlockJSON): Block = js.native
   def fromJSON(properties: BlockProperties): Block = js.native
   def isBlock(maybeBlock: js.Any): /* is slate.slate.Block */ Boolean = js.native
-  def isBlockList(maybeBlockList: js.Any): /* is immutable.immutable.List<slate.slate.Block> */ Boolean = js.native
+  def isBlockList(maybeBlockList: js.Any): /* is immutable.Immutable.List<slate.slate.Block> */ Boolean = js.native
 }
 

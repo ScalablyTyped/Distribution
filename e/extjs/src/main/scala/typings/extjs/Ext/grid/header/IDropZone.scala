@@ -10,51 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDropZone
-  extends typings.extjs.Ext.dd.IDropZone {
-  /** [Method] Returns a custom data object associated with the DOM node that is the target of the event
-  		* @param e Object
-  		* @returns Object data The custom data
-  		*/
-  @JSName("getTargetFromEvent")
-  var getTargetFromEvent_IDropZone: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], _]] = js.undefined
-  /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped onto the drop node
-  		* @param node Object
-  		* @param dragZone Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns Boolean True if the drop was valid, else false
-  		*/
-  @JSName("onNodeDrop")
-  var onNodeDrop_IDropZone: js.UndefOr[
-    js.Function4[
-      /* node */ js.UndefOr[js.Any], 
-      /* dragZone */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      Boolean
-    ]
-  ] = js.undefined
-  /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dragged out of the drop node without dropping  */
-  @JSName("onNodeOut")
-  var onNodeOut_IDropZone: js.UndefOr[js.Function0[Unit]] = js.undefined
-  /** [Method] Called while the DropZone determines that a Ext dd DragSource is over a drop node that has either been registered or
-  		* @param node Object
-  		* @param dragZone Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns String status The CSS class that communicates the drop status back to the source so that the underlying Ext.dd.StatusProxy can be updated
-  		*/
-  @JSName("onNodeOver")
-  var onNodeOver_IDropZone: js.UndefOr[
-    js.Function4[
-      /* node */ js.UndefOr[js.Any], 
-      /* dragZone */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      java.lang.String
-    ]
-  ] = js.undefined
-}
+  extends typings.extjs.Ext.dd.IDropZone
 
 object IDropZone {
   @scala.inline
@@ -84,7 +40,7 @@ object IDropZone {
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
     getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getTargetFromEvent: /* e */ js.UndefOr[js.Any] => _ = null,
+    getTargetFromEvent: /* e */ js.UndefOr[Event] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
     id: java.lang.String = null,
@@ -118,10 +74,10 @@ object IDropZone {
     onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
-    onNodeDrop: (/* node */ js.UndefOr[js.Any], /* dragZone */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    onNodeDrop: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
     onNodeEnter: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onNodeOut: () => Unit = null,
-    onNodeOver: (/* node */ js.UndefOr[js.Any], /* dragZone */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
+    onNodeOut: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onNodeOver: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
     overClass: java.lang.String = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
@@ -211,7 +167,7 @@ object IDropZone {
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (onNodeDrop != null) __obj.updateDynamic("onNodeDrop")(js.Any.fromFunction4(onNodeDrop))
     if (onNodeEnter != null) __obj.updateDynamic("onNodeEnter")(js.Any.fromFunction4(onNodeEnter))
-    if (onNodeOut != null) __obj.updateDynamic("onNodeOut")(js.Any.fromFunction0(onNodeOut))
+    if (onNodeOut != null) __obj.updateDynamic("onNodeOut")(js.Any.fromFunction4(onNodeOut))
     if (onNodeOver != null) __obj.updateDynamic("onNodeOver")(js.Any.fromFunction4(onNodeOver))
     if (overClass != null) __obj.updateDynamic("overClass")(overClass.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object withRegistry extends js.Object {
   def apply[P](
-    component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<P> */ js.Any
+    component: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<P> */ js.Any
   ): js.Any = js.native
 }
 

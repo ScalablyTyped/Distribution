@@ -1,7 +1,7 @@
 package typings.vuex.typesOptionsMod
 
 import typings.vue.typesVueMod.Vue
-import typings.vuex.typesMod.Store
+import typings.vuex.vuexMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

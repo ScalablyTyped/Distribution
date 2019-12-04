@@ -1,7 +1,11 @@
 package typings.atIonicReact
 
+import typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackButton
+import typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet
+import typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTabBar
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAppElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAvatarElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackButtonElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackdropElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBadgeElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonButtonElement
@@ -64,6 +68,7 @@ import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlideElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSlidesElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSpinnerElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonSplitPaneElement
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabBarElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabButtonElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTextElement
@@ -78,6 +83,7 @@ import typings.atIonicReact.atIonicReactStrings.activated
 import typings.atIonicReact.atIonicReactStrings.button
 import typings.atIonicReact.atIonicReactStrings.buttonType
 import typings.atIonicReact.atIonicReactStrings.color
+import typings.atIonicReact.atIonicReactStrings.defaultHref
 import typings.atIonicReact.atIonicReactStrings.detail
 import typings.atIonicReact.atIonicReactStrings.detailIcon
 import typings.atIonicReact.atIonicReactStrings.disabled
@@ -96,6 +102,7 @@ import typings.atIonicReact.atIonicReactStrings.show
 import typings.atIonicReact.atIonicReactStrings.size
 import typings.atIonicReact.atIonicReactStrings.strong
 import typings.atIonicReact.atIonicReactStrings.target
+import typings.atIonicReact.atIonicReactStrings.text
 import typings.atIonicReact.atIonicReactStrings.translucent
 import typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps
 import typings.atIonicReact.distTypesComponentsUtilsMod.IonicReactExternalProps
@@ -131,6 +138,20 @@ object atIonicReactComponents extends atIonicReactProps {
     typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAvatarElement], 
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonAvatarElement]]]
+  @scala.inline
+  def IonBackButtonInner: ComponentType[
+    (Pick[IonBackButton, disabled | text | color | mode | `type` | defaultHref]) with (Pick[
+      HTMLAttributes[HTMLIonBackButtonElement], 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonBackButtonElement]
+  ] = typings.atIonicReact.distTypesComponentsInnerDashProxiesMod.IonBackButtonInner.asInstanceOf[typings.react.reactMod.ComponentType[
+  (typings.std.Pick[
+    typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackButton, 
+    typings.atIonicReact.atIonicReactStrings.disabled | typings.atIonicReact.atIonicReactStrings.text | typings.atIonicReact.atIonicReactStrings.color | typings.atIonicReact.atIonicReactStrings.mode | typings.atIonicReact.atIonicReactStrings.`type` | typings.atIonicReact.atIonicReactStrings.defaultHref
+  ]) with (typings.std.Pick[
+    typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackButtonElement], 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+  ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonBackButtonElement]]]
   @scala.inline
   def IonBackdrop: ComponentType[
     typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonBackdrop with (Pick[
@@ -746,6 +767,17 @@ object atIonicReactComponents extends atIonicReactProps {
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 257 */ js.Any
   ]) with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement]]]
   @scala.inline
+  def IonRouterOutletInner: ComponentType[
+    IonRouterOutlet with (Pick[
+      HTMLAttributes[HTMLIonRouterOutletElement], 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonRouterOutletElement]
+  ] = typings.atIonicReact.distTypesComponentsInnerDashProxiesMod.IonRouterOutletInner.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet with (typings.std.Pick[
+    typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement], 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+  ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonRouterOutletElement]]]
+  @scala.inline
   def IonRow: ComponentType[
     typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRow with (Pick[
       HTMLAttributes[HTMLIonRowElement], 
@@ -890,6 +922,17 @@ object atIonicReactComponents extends atIonicReactProps {
   ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabElement]]]
   @scala.inline
   def IonTabBar: ComponentType[IonTabBarProps] = typings.atIonicReact.atIonicReactMod.IonTabBar.asInstanceOf[typings.react.reactMod.ComponentType[IonTabBarProps]]
+  @scala.inline
+  def IonTabBarInner: ComponentType[
+    IonTabBar with (Pick[
+      HTMLAttributes[HTMLIonTabBarElement], 
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+    ]) with IonicReactProps with RefAttributes[HTMLIonTabBarElement]
+  ] = typings.atIonicReact.distTypesComponentsInnerDashProxiesMod.IonTabBarInner.asInstanceOf[typings.react.reactMod.ComponentType[
+  typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTabBar with (typings.std.Pick[
+    typings.react.reactMod.HTMLAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabBarElement], 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+  ]) with typings.atIonicReact.distTypesComponentsIonicReactPropsMod.IonicReactProps with typings.react.reactMod.RefAttributes[typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonTabBarElement]]]
   @scala.inline
   def IonTabButton: ComponentType[
     typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonTabButton with (Pick[

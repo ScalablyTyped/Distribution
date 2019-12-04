@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cosmiconfig"
-version := "6.0.0-1ca38f"
+version := "6.0.0-e8e001"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

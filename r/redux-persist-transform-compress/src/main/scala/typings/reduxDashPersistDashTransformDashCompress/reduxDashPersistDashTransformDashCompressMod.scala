@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object reduxDashPersistDashTransformDashCompressMod extends js.Object {
   def default[State, Raw](): Transform[State, Raw, _, _] = js.native
   def default[State, Raw](
-    config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PersistorConfig */ js.Any
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PersistorConfig */ js.Any
   ): Transform[State, Raw, _, _] = js.native
 }
 

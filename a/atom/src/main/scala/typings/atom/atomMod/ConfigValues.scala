@@ -1,17 +1,26 @@
 package typings.atom.atomMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atom.atomStrings.Subsequence
+import typings.atom.atomStrings.Symbol
+import typings.atom.atomStrings.Word
+import typings.atom.atomStrings.`tab always, enter when suggestion explicitly selected`
+import typings.atom.atomStrings.`tab and enter`
 import typings.atom.atomStrings.always
 import typings.atom.atomStrings.auto
 import typings.atom.atomStrings.default
+import typings.atom.atomStrings.enter
 import typings.atom.atomStrings.experimental
 import typings.atom.atomStrings.hard
 import typings.atom.atomStrings.limited
 import typings.atom.atomStrings.native
 import typings.atom.atomStrings.no
+import typings.atom.atomStrings.none
 import typings.atom.atomStrings.poll
 import typings.atom.atomStrings.soft
 import typings.atom.atomStrings.srgb
+import typings.atom.atomStrings.tab
+import typings.atom.atomStrings.textOrSnippet
 import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
 import scala.scalajs.js
@@ -21,6 +30,103 @@ import scala.scalajs.js.annotation._
 trait ConfigValues
   extends // tslint:disable-next-line:no-any
 /* key */ StringDictionary[js.Any] {
+  /**
+    *  If you are experiencing performance issues when typing, you should try
+    *  increasing this value to a non-zero number (e.g. 100).
+    */
+  var `autocomplete-plus.autoActivationDelay`: Double
+  /**
+    *  If enabled, typing `backspace` will show the suggestion list if suggestions
+    *  are available. If disabled, suggestions will not be shown while backspacing.
+    */
+  var `autocomplete-plus.backspaceTriggersAutocomplete`: Boolean
+  /** Don't use the built-in provider for these selector(s). */
+  var `autocomplete-plus.builtinProviderBlacklist`: String
+  /**
+    *  You should use the key(s) indicated here to confirm a suggestion from the
+    *  suggestion list and have it inserted into the file.
+    */
+  var `autocomplete-plus.confirmCompletion`: tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`)
+  /**
+    *  Completing a suggestion consumes text following the cursor matching the
+    *  suffix of the chosen suggestion.
+    */
+  var `autocomplete-plus.consumeSuffix`: Boolean
+  /**
+    *  If you're having trouble with autocomplete, you may consider falling back
+    *  to the Symbol provider and filing an issue.
+    */
+  var `autocomplete-plus.defaultProvider`: Subsequence | Symbol
+  /**
+    *  Suggestions will show as you type if this preference is enabled. If it is
+    *  disabled, you can still see suggestions by using the keymapping for
+    *  'autocomplete-plus:activate' (shown below).
+    */
+  var `autocomplete-plus.enableAutoActivation`: Boolean
+  /**
+    *  If enabled, automatically insert suggestion on manual activation with
+    *  'autocomplete-plus:activate' when there is only one match.
+    */
+  var `autocomplete-plus.enableAutoConfirmSingleSuggestion`: Boolean
+  /**
+    *  The package comes with a built-in provider that will provide suggestions
+    *  using the words in your current buffer or all open buffers. You will get
+    *  better suggestions by installing additional autocomplete+ providers.
+    *  To stop using the built-in provider, disable this option.
+    */
+  var `autocomplete-plus.enableBuiltinProvider`: Boolean
+  /** Identifies non-latin alphabet characters as letters. */
+  var `autocomplete-plus.enableExtendedUnicodeSupport`: Boolean
+  /**
+    *  Suggestions will not be provided for files matching this list, e.g. *.md
+    *  for Markdown files. To blacklist more than one file extension, use comma
+    *  as a separator, e.g. ["*.md", "*.txt"] (both Markdown and text files).
+    */
+  var `autocomplete-plus.fileBlacklist`: js.Array[String]
+  /**
+    *  For grammars with no registered provider(s), the default provider will
+    *  include completions from all buffers, instead of just the buffer you are
+    *  currently editing.
+    */
+  var `autocomplete-plus.includeCompletionsFromAllBuffers`: Boolean
+  /** The suggestion list will only show this many suggestions. */
+  var `autocomplete-plus.maxVisibleSuggestions`: Double
+  /**
+    *  Only autocomplete when you've typed at least this many characters.
+    *  Note: May not affect external providers.
+    */
+  var `autocomplete-plus.minimumWordLength`: Double
+  /** Suggestions will not be provided for scopes matching this list. */
+  var `autocomplete-plus.scopeBlacklist`: js.Array[String]
+  /**
+    *  Should similar suggestions be removed from the list? If so how to determine
+    *  they are similar.
+    */
+  var `autocomplete-plus.similarSuggestionRemoval`: none | textOrSnippet
+  /**
+    *  Fuzzy searching is performed if this is disabled; if it is enabled, suggestions
+    *  must begin with the prefix from the current word.
+    */
+  var `autocomplete-plus.strictMatching`: Boolean
+  /**
+    *  With 'Cursor' the suggestion list appears at the cursor's position.
+    *  With 'Word' it appears at the beginning of the word that's being completed.
+    */
+  var `autocomplete-plus.suggestionListFollows`: Word | typings.atom.atomStrings.Cursor
+  /** Don't auto-activate when any of these classes are present in the editor. */
+  var `autocomplete-plus.suppressActivationForEditorClasses`: js.Array[String]
+  /**
+    *  -EXPERIMENTAL- Prefers runs of consecutive characters, acronyms and start
+    *  of words.
+    */
+  var `autocomplete-plus.useAlternateScoring`: Boolean
+  /**
+    *  Disable this if you want to bind your own keystrokes to move around the
+    *  suggestion list. You will also need to add definitions to your keymap.
+    */
+  var `autocomplete-plus.useCoreMovementCommands`: Boolean
+  /** Gives words near the cursor position a higher score than those far away. */
+  var `autocomplete-plus.useLocalityBonus`: Boolean
   /**
     *  Allow items to be previewed without adding them to a pane permanently, such as
     *  when single clicking files in the tree view.
@@ -212,11 +318,62 @@ trait ConfigValues
     *  up/down.
     */
   var `editor.zoomFontWhenCtrlScrolling`: Boolean
+  /** Disabled providers. */
+  var `linter.disabledProviders`: js.Array[String]
+  /** Ignore files matching this Glob. */
+  var `linter.ignoreGlob`: String
+  /**
+    *  Lint files while typing, without the need to save (only for supported
+    *  providers).
+    */
+  var `linter.lintOnChange`: Boolean
+  /** Interval at which linting is done as you type (in ms). */
+  var `linter.lintOnChangeInterval`: Double
+  /** Lint files automatically when they are opened. */
+  var `linter.lintOnOpen`: Boolean
+  /** Lint tabs while they are still in preview status. */
+  var `linter.lintPreviewTabs`: Boolean
+  /**
+    *  Format for the cursor position status bar element, where %L is the line
+    *  number and %C is the column number.
+    */
+  var `status-bar.cursorPositionFormat`: String
+  /** Fit the status-bar to the window's full-width. */
+  var `status-bar.fullWidth`: Boolean
+  /** Show status bar at the bottom of the workspace. */
+  var `status-bar.isVisible`: Boolean
+  /**
+    *  Format for the selection count status bar element, where %L is the line
+    *  count and %C is the character count.
+    */
+  var `status-bar.selectionCountFormat`: String
 }
 
 object ConfigValues {
   @scala.inline
   def apply(
+    `autocomplete-plus.autoActivationDelay`: Double,
+    `autocomplete-plus.backspaceTriggersAutocomplete`: Boolean,
+    `autocomplete-plus.builtinProviderBlacklist`: String,
+    `autocomplete-plus.confirmCompletion`: tab | enter | (`tab and enter`) | (`tab always, enter when suggestion explicitly selected`),
+    `autocomplete-plus.consumeSuffix`: Boolean,
+    `autocomplete-plus.defaultProvider`: Subsequence | Symbol,
+    `autocomplete-plus.enableAutoActivation`: Boolean,
+    `autocomplete-plus.enableAutoConfirmSingleSuggestion`: Boolean,
+    `autocomplete-plus.enableBuiltinProvider`: Boolean,
+    `autocomplete-plus.enableExtendedUnicodeSupport`: Boolean,
+    `autocomplete-plus.fileBlacklist`: js.Array[String],
+    `autocomplete-plus.includeCompletionsFromAllBuffers`: Boolean,
+    `autocomplete-plus.maxVisibleSuggestions`: Double,
+    `autocomplete-plus.minimumWordLength`: Double,
+    `autocomplete-plus.scopeBlacklist`: js.Array[String],
+    `autocomplete-plus.similarSuggestionRemoval`: none | textOrSnippet,
+    `autocomplete-plus.strictMatching`: Boolean,
+    `autocomplete-plus.suggestionListFollows`: Word | typings.atom.atomStrings.Cursor,
+    `autocomplete-plus.suppressActivationForEditorClasses`: js.Array[String],
+    `autocomplete-plus.useAlternateScoring`: Boolean,
+    `autocomplete-plus.useCoreMovementCommands`: Boolean,
+    `autocomplete-plus.useLocalityBonus`: Boolean,
     `core.allowPendingPaneItems`: Boolean,
     `core.audioBeep`: Boolean,
     `core.automaticallyUpdate`: Boolean,
@@ -265,6 +422,16 @@ object ConfigValues {
     `editor.tabType`: auto | soft | hard,
     `editor.undoGroupingInterval`: Double,
     `editor.zoomFontWhenCtrlScrolling`: Boolean,
+    `linter.disabledProviders`: js.Array[String],
+    `linter.ignoreGlob`: String,
+    `linter.lintOnChange`: Boolean,
+    `linter.lintOnChangeInterval`: Double,
+    `linter.lintOnOpen`: Boolean,
+    `linter.lintPreviewTabs`: Boolean,
+    `status-bar.cursorPositionFormat`: String,
+    `status-bar.fullWidth`: Boolean,
+    `status-bar.isVisible`: Boolean,
+    `status-bar.selectionCountFormat`: String,
     StringDictionary: // tslint:disable-next-line:no-any
   /* key */ StringDictionary[js.Any] = null,
     `editor.commentEnd`: String = null,
@@ -274,6 +441,28 @@ object ConfigValues {
     `editor.increaseIndentPattern`: String = null
   ): ConfigValues = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autocomplete-plus.autoActivationDelay")(`autocomplete-plus.autoActivationDelay`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.backspaceTriggersAutocomplete")(`autocomplete-plus.backspaceTriggersAutocomplete`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.builtinProviderBlacklist")(`autocomplete-plus.builtinProviderBlacklist`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.confirmCompletion")(`autocomplete-plus.confirmCompletion`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.consumeSuffix")(`autocomplete-plus.consumeSuffix`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.defaultProvider")(`autocomplete-plus.defaultProvider`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.enableAutoActivation")(`autocomplete-plus.enableAutoActivation`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.enableAutoConfirmSingleSuggestion")(`autocomplete-plus.enableAutoConfirmSingleSuggestion`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.enableBuiltinProvider")(`autocomplete-plus.enableBuiltinProvider`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.enableExtendedUnicodeSupport")(`autocomplete-plus.enableExtendedUnicodeSupport`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.fileBlacklist")(`autocomplete-plus.fileBlacklist`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.includeCompletionsFromAllBuffers")(`autocomplete-plus.includeCompletionsFromAllBuffers`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.maxVisibleSuggestions")(`autocomplete-plus.maxVisibleSuggestions`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.minimumWordLength")(`autocomplete-plus.minimumWordLength`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.scopeBlacklist")(`autocomplete-plus.scopeBlacklist`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.similarSuggestionRemoval")(`autocomplete-plus.similarSuggestionRemoval`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.strictMatching")(`autocomplete-plus.strictMatching`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.suggestionListFollows")(`autocomplete-plus.suggestionListFollows`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.suppressActivationForEditorClasses")(`autocomplete-plus.suppressActivationForEditorClasses`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.useAlternateScoring")(`autocomplete-plus.useAlternateScoring`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.useCoreMovementCommands")(`autocomplete-plus.useCoreMovementCommands`.asInstanceOf[js.Any])
+    __obj.updateDynamic("autocomplete-plus.useLocalityBonus")(`autocomplete-plus.useLocalityBonus`.asInstanceOf[js.Any])
     __obj.updateDynamic("core.allowPendingPaneItems")(`core.allowPendingPaneItems`.asInstanceOf[js.Any])
     __obj.updateDynamic("core.audioBeep")(`core.audioBeep`.asInstanceOf[js.Any])
     __obj.updateDynamic("core.automaticallyUpdate")(`core.automaticallyUpdate`.asInstanceOf[js.Any])
@@ -322,6 +511,16 @@ object ConfigValues {
     __obj.updateDynamic("editor.tabType")(`editor.tabType`.asInstanceOf[js.Any])
     __obj.updateDynamic("editor.undoGroupingInterval")(`editor.undoGroupingInterval`.asInstanceOf[js.Any])
     __obj.updateDynamic("editor.zoomFontWhenCtrlScrolling")(`editor.zoomFontWhenCtrlScrolling`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.disabledProviders")(`linter.disabledProviders`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.ignoreGlob")(`linter.ignoreGlob`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.lintOnChange")(`linter.lintOnChange`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.lintOnChangeInterval")(`linter.lintOnChangeInterval`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.lintOnOpen")(`linter.lintOnOpen`.asInstanceOf[js.Any])
+    __obj.updateDynamic("linter.lintPreviewTabs")(`linter.lintPreviewTabs`.asInstanceOf[js.Any])
+    __obj.updateDynamic("status-bar.cursorPositionFormat")(`status-bar.cursorPositionFormat`.asInstanceOf[js.Any])
+    __obj.updateDynamic("status-bar.fullWidth")(`status-bar.fullWidth`.asInstanceOf[js.Any])
+    __obj.updateDynamic("status-bar.isVisible")(`status-bar.isVisible`.asInstanceOf[js.Any])
+    __obj.updateDynamic("status-bar.selectionCountFormat")(`status-bar.selectionCountFormat`.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`editor.commentEnd` != null) __obj.updateDynamic("editor.commentEnd")(`editor.commentEnd`.asInstanceOf[js.Any])
     if (`editor.commentStart` != null) __obj.updateDynamic("editor.commentStart")(`editor.commentStart`.asInstanceOf[js.Any])

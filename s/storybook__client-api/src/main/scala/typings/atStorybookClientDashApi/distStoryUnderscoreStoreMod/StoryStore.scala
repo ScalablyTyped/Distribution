@@ -11,6 +11,7 @@ import typings.atStorybookClientDashApi.distTypesMod.LegacyData
 import typings.atStorybookClientDashApi.distTypesMod.StoreData
 import typings.atStorybookClientDashApi.distTypesMod.StoreItem
 import typings.eventemitter3.eventemitter3Mod.^
+import typings.lodash.lodashMod.Cancelable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,7 @@ trait StoryStore
   var _legacydata: LegacyData = js.native
   var _revision: Double = js.native
   var _selection: Selection = js.native
-  var pushToManager: js.Function0[Unit] with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_lodash.Cancelable */ js.Any) = js.native
+  var pushToManager: js.Function0[Unit] with Cancelable = js.native
   def addLegacyStory(hasKindNameStoryFnParameters: Anon_Kind): Unit = js.native
   def addStory(
     hasIdKindNameStoryFnParameters: AddStoryArgs,

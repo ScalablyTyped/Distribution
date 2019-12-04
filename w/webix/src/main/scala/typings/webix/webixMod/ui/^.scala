@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var scrollSize: Double = js.native
   var zIndexBase: Double = js.native
-  def apply(config: js.Any): baseview = js.native
-  def apply(config: js.Any, parent: js.Any): baseview = js.native
-  def apply(config: js.Any, parent: js.Any, replacement: js.Any): baseview = js.native
+  def apply(config: js.Any): typings.webix.webix.ui.baseview = js.native
+  def apply(config: js.Any, parent: js.Any): typings.webix.webix.ui.baseview = js.native
+  def apply(config: js.Any, parent: js.Any, replacement: js.Any): typings.webix.webix.ui.baseview = js.native
 }
 

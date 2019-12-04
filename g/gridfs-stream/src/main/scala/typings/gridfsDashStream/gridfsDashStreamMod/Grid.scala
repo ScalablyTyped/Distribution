@@ -3,8 +3,8 @@ package typings.gridfsDashStream.gridfsDashStreamMod
 import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.Options
 import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.ReadStream
 import typings.gridfsDashStream.gridfsDashStreamMod.GridFSStream.WriteStream
-import typings.mongodb.Default
 import typings.mongodb.mongodbMod.Collection
+import typings.mongodb.mongodbMod.Default
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

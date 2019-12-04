@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tsutils"
-version := "3.17.1-40fc7f"
+version := "3.17.1-baf264"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

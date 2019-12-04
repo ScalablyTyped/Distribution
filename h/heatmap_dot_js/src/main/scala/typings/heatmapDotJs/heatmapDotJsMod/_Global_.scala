@@ -12,7 +12,7 @@ object _Global_ extends js.Object {
     * The overlay layer to be added onto leaflet map
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Leaflet.ILayer * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Leaflet.ILayer * / any */ @js.native
   class HeatmapOverlay[V /* <: String */, TLat /* <: String */, TLng /* <: String */] protected () extends js.Object {
     /**
       * Initialization function

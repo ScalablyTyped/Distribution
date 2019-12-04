@@ -15,7 +15,7 @@ package object GmeCommon {
   type Aspect = String
   type AttrMeta = js.Any
   type Buffer = js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GLbyte */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GLbyte */ js.Any
   ]
   type CatchCallback = ErrorOnlyCallback
   type Constraint = String

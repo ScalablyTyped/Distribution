@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sanctuary"
-version := "0.14-dt-20180323Z-21a00a"
+version := "0.14-dt-20180323Z-567b84"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

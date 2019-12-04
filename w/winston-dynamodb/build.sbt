@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winston-dynamodb"
-version := "0.0-unknown-dt-20190322Z-6437cf"
+version := "0.0-unknown-dt-20190322Z-e7f6ea"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

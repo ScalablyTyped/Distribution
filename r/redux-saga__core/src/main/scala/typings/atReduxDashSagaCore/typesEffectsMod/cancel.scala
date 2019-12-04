@@ -8,10 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object cancel extends js.Object {
   def apply(): CancelEffect = js.native
-  def apply(task: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Task */ js.Any): CancelEffect = js.native
+  def apply(
+    task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+  ): CancelEffect = js.native
   def apply(
     tasks: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Task */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ _
     ]
   ): CancelEffect = js.native
 }

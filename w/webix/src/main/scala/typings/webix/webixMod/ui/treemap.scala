@@ -12,9 +12,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.treemap")
 @js.native
-class treemap () extends baseview {
+class treemap ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_treemap: WebixCallback = js.native
   @JSName("config")
   var config_treemap: treemapConfig = js.native
   var data: DataStore = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_markercluster_dot_layersupport"
-version := "1.0-dt-20180214Z-a4ae03"
+version := "1.0-dt-20180214Z-39c38e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

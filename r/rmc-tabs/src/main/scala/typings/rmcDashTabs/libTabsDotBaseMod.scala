@@ -68,7 +68,7 @@ object libTabsDotBaseMod extends js.Object {
         /* allPrefix */ js.UndefOr[String], 
         StringDictionary[ReactNode]
       ] = js.native
-    def getTabBarBaseProps(): Anon_ActiveTabAnimated[S, P] = js.native
+    def getTabBarBaseProps(): Anon_ActiveTab[S, P] = js.native
     def getTabIndex(props: P): Double = js.native
     def goToTab(index: Double): Boolean = js.native
     def goToTab(index: Double, force: Boolean): Boolean = js.native

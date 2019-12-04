@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object s3ClientMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify __aws_sdk_types.AWSClient<InputTypesUnion, OutputTypesUnion, Blob> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.AWSClient<InputTypesUnion, OutputTypesUnion, Blob> * / any */ @js.native
   class S3Client protected () extends js.Object {
     def this(configuration: S3Configuration) = this()
     val config: S3ResolvedConfiguration = js.native

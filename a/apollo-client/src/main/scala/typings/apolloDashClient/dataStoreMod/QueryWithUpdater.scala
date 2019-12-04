@@ -8,11 +8,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait QueryWithUpdater extends js.Object {
-  var query: QueryStoreValue = js.native
-  @JSName("updater")
-  var updater_Original: MutationQueryReducer[js.Object] = js.native
-  def updater(previousResult: Record[String, _], options: Anon_MutationResult[js.Object]): Record[String, _] = js.native
+  var query: QueryStoreValue
+  var updater: MutationQueryReducer[js.Object]
+}
+
+object QueryWithUpdater {
+  @scala.inline
+  def apply(
+    query: QueryStoreValue,
+    updater: (/* previousResult */ Record[String, js.Any], /* options */ Anon_MutationResult[js.Object]) => Record[String, js.Any]
+  ): QueryWithUpdater = {
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], updater = js.Any.fromFunction2(updater))
+  
+    __obj.asInstanceOf[QueryWithUpdater]
+  }
 }
 

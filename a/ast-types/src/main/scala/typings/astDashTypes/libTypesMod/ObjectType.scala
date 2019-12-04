@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ObjectType[T]
   extends BaseType[T]
      with Type[T] {
-  val fields: js.Array[Field[_]] = js.native
+  val fields: js.Array[FieldType[_]] = js.native
   val kind: typings.astDashTypes.astDashTypesStrings.ObjectType = js.native
 }
 

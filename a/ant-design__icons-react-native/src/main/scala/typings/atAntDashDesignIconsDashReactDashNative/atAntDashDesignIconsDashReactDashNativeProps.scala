@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait atAntDashDesignIconsDashReactDashNativeProps {
   @scala.inline
-  def FillProps: typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps.type = typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
-  type FillProps = typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
+  def FillProps: typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps.type = typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
+  type FillProps = typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
   @scala.inline
-  def IconFillProps: typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps.type = typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
-  type IconFillProps = typings.atAntDashDesignIconsDashReactDashNative.esFillMod.IconFillProps
+  def IconFillProps: typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps.type = typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
+  type IconFillProps = typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
   @scala.inline
-  def IconOutlineProps: typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps.type = typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
-  type IconOutlineProps = typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
+  def IconOutlineProps: typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps.type = typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
+  type IconOutlineProps = typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
   @scala.inline
-  def OutlineProps: typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps.type = typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
-  type OutlineProps = typings.atAntDashDesignIconsDashReactDashNative.esOutlineMod.IconOutlineProps
+  def OutlineProps: typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps.type = typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
+  type OutlineProps = typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
 }
 

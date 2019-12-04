@@ -43,6 +43,8 @@ trait IScrollOptions extends js.Object {
   // New in IScroll 5?
   var resizeIndicator: js.UndefOr[Boolean] = js.undefined
   var resizePolling: js.UndefOr[Double] = js.undefined
+  //hScroll?: boolean;
+  //vScroll?: boolean;
   var scrollX: js.UndefOr[Boolean] = js.undefined
   var scrollY: js.UndefOr[Boolean] = js.undefined
   var scrollbarClass: js.UndefOr[String] = js.undefined

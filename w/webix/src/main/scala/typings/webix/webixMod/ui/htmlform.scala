@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.htmlform")
 @js.native
-class htmlform () extends baseview {
+class htmlform ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_htmlform: WebixCallback = js.native
   @JSName("config")
   var config_htmlform: htmlformConfig = js.native
   @JSName("$tooltipIn")

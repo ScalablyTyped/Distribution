@@ -6,7 +6,7 @@ import typings.antd.antdStrings.bottomRight
 import typings.antd.antdStrings.topCenter
 import typings.antd.antdStrings.topLeft
 import typings.antd.antdStrings.topRight
-import typings.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+import typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

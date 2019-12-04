@@ -14,14 +14,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.DrawerNavigatorItemsProps & {  navigation  :react-navigation.react-navigation.NavigationScreenProp<react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.NavigationDrawerState, react-navigation.react-navigation.NavigationParams>,   descriptors  :react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.SceneDescriptorMap,   drawerOpenProgress  :/ * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> * / any,   screenProps  :unknown} */
+/* Inlined react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.DrawerNavigatorItemsProps & {  navigation  :react-navigation.react-navigation.NavigationScreenProp<react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.NavigationDrawerState, react-navigation.react-navigation.NavigationParams>,   descriptors  :react-navigation-drawer.react-navigation-drawer/lib/typescript/src/types.SceneDescriptorMap,   drawerOpenProgress  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> * / any,   screenProps  :unknown} */
 trait DrawerContentComponentProps extends js.Object {
   var activeBackgroundColor: js.UndefOr[String | ThemedColor] = js.undefined
   var activeItemKey: js.UndefOr[String | Null] = js.undefined
   var activeLabelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var activeTintColor: js.UndefOr[String | ThemedColor] = js.undefined
   var descriptors: SceneDescriptorMap
-  var drawerOpenProgress: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any
+  var drawerOpenProgress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any
   var drawerPosition: left | right
   var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var inactiveBackgroundColor: js.UndefOr[String | ThemedColor] = js.undefined
@@ -42,7 +42,7 @@ object DrawerContentComponentProps {
   @scala.inline
   def apply(
     descriptors: SceneDescriptorMap,
-    drawerOpenProgress: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
+    drawerOpenProgress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
     drawerPosition: left | right,
     getLabel: Scene => ReactNode,
     items: js.Array[NavigationRoute[NavigationParams]],

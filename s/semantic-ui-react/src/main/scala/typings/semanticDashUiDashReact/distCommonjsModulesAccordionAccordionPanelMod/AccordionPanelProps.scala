@@ -1,8 +1,8 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionPanelMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandItem
 import typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps
 import typings.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps

@@ -3,7 +3,6 @@ package typings.reactDashI18next.reactDashI18nextMod
 import typings.i18next.i18nextMod.WithT
 import typings.react.reactMod.ComponentType
 import typings.reactDashI18next.Anon_WithRef
-import typings.reactDashI18next.Omit
 import typings.reactDashI18next.reactDashI18nextStrings.i18n
 import typings.reactDashI18next.reactDashI18nextStrings.tReady
 import scala.scalajs.js

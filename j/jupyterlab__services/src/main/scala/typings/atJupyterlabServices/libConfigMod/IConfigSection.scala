@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libConfigMod
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorCoreutils.libJsonMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ trait IConfigSection extends js.Object {
   /**
     * The server settings for the section.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
+  val serverSettings: ISettings
   /**
     * Modify the stored config values.
     *
@@ -27,11 +28,7 @@ trait IConfigSection extends js.Object {
 
 object IConfigSection {
   @scala.inline
-  def apply(
-    data: JSONObject,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any,
-    update: JSONObject => js.Promise[JSONObject]
-  ): IConfigSection = {
+  def apply(data: JSONObject, serverSettings: ISettings, update: JSONObject => js.Promise[JSONObject]): IConfigSection = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], serverSettings = serverSettings.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
   
     __obj.asInstanceOf[IConfigSection]

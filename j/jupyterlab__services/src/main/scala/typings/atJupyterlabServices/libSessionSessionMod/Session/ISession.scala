@@ -10,6 +10,7 @@ import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IIOPubMes
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IMessage
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOPubMessageType
 import typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.MessageType
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
 import typings.std.Partial
@@ -69,7 +70,7 @@ trait ISession extends IDisposable {
   /**
     * The server settings of the session.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
+  val serverSettings: ISettings
   /**
     * The current status of the session.
     *
@@ -152,7 +153,7 @@ object ISession {
     name: String,
     path: String,
     propertyChanged: ISignal[ISession, path | name | `type`],
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any,
+    serverSettings: ISettings,
     setName: String => js.Promise[Unit],
     setPath: String => js.Promise[Unit],
     setType: String => js.Promise[Unit],

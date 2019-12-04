@@ -1,0 +1,15 @@
+package typings.mongodbDashMemoryDashServerDashCore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("mongodb-memory-server-core/lib/util/resolve-config", JSImport.Namespace)
+@js.native
+object libUtilResolveDashConfigMod extends js.Object {
+  def default(variableName: String): js.UndefOr[String] = js.native
+  def reInitializePackageJson(): Unit = js.native
+  def reInitializePackageJson(directory: String): Unit = js.native
+  def setDefaultValue(key: String, value: String): Unit = js.native
+}
+

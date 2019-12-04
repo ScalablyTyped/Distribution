@@ -13,7 +13,7 @@ object copyAsync extends js.Object {
   def apply(
     src: String,
     dest: String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CopyFilter */ js.Any
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CopyFilter */ js.Any
   ): ^[Unit] = js.native
   def apply(src: String, dest: String, options: CopyOptions): ^[Unit] = js.native
 }

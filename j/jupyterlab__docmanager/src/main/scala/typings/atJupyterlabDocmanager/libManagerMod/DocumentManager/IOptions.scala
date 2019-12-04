@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocmanager.libManagerMod.DocumentManager
 
-import typings.atJupyterlabDocregistry.libMod.DocumentRegistry
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabServices.libManagerMod.ServiceManager.IManager
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js

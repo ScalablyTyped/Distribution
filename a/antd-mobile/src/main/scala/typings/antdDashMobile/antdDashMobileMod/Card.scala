@@ -1,9 +1,9 @@
 package typings.antdDashMobile.antdDashMobileMod
 
 import typings.antdDashMobile.Anon_Full
-import typings.antdDashMobile.TypeofClassCardBodyDefaultProps
-import typings.antdDashMobile.TypeofClassCardFooterDefaultProps
-import typings.antdDashMobile.TypeofClassCardHeaderDefaultProps
+import typings.antdDashMobile.TypeofClassCardBody
+import typings.antdDashMobile.TypeofClassCardFooter
+import typings.antdDashMobile.TypeofClassCardHeader
 import typings.antdDashMobile.libCardMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,9 +17,9 @@ class Card () extends default
 @JSImport("antd-mobile", "Card")
 @js.native
 object Card extends js.Object {
-  var Body: TypeofClassCardBodyDefaultProps = js.native
-  var Footer: TypeofClassCardFooterDefaultProps = js.native
-  var Header: TypeofClassCardHeaderDefaultProps = js.native
+  var Body: TypeofClassCardBody = js.native
+  var Footer: TypeofClassCardFooter = js.native
+  var Header: TypeofClassCardHeader = js.native
   var defaultProps: Anon_Full = js.native
 }
 

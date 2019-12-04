@@ -20,7 +20,7 @@ package object libTypesMod {
   import typings.popmotionDashPose.Anon_Spring
   import typings.popmotionDashPose.Anon_Tween
   import typings.popmotionDashPose.popmotionDashPoseNumbers.`false`
-  import typings.tsDashEssentials.distTypesMod.Merge
+  import typings.tsDashEssentials.tsDashEssentialsMod.Merge
 
   type AnimationDef = TransitionDefinition
   type BoundingBox = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

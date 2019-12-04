@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Sticky state
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState * / any */ trait IStickyState extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState * / any */ trait IStickyState extends js.Object {
   /*
     * The most-recently-activate substate of the DSR marked state is remembered.
     * When the DSR marked state is transitioned to directly, UI-Router Extras will instead redirect to the remembered state and parameters.
@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
     */
   var views: js.UndefOr[
     StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
     ]
   ] = js.undefined
 }
@@ -52,7 +52,7 @@ object IStickyState {
     onReactivate: /* repeated */ js.Any => Unit = null,
     sticky: js.UndefOr[Boolean] = js.undefined,
     views: StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
     ] = null
   ): IStickyState = {
     val __obj = js.Dynamic.literal()

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens extends js.Object {
   var firstWeekContainsDate: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
-  var locale: js.UndefOr[Locale] = js.undefined
+  var locale: js.UndefOr[typings.dateDashFns.dateDashFnsMod.Locale] = js.undefined
   var useAdditionalDayOfYearTokens: js.UndefOr[Boolean] = js.undefined
   var useAdditionalWeekYearTokens: js.UndefOr[Boolean] = js.undefined
   var weekStartsOn: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
@@ -24,7 +24,7 @@ object Anon_01234567FirstWeekContainsDateLocaleUseAdditionalDayOfYearTokens {
   @scala.inline
   def apply(
     firstWeekContainsDate: `1` | `2` | `3` | `4` | `5` | `6` | `7` = null,
-    locale: Locale = null,
+    locale: typings.dateDashFns.dateDashFnsMod.Locale = null,
     useAdditionalDayOfYearTokens: js.UndefOr[Boolean] = js.undefined,
     useAdditionalWeekYearTokens: js.UndefOr[Boolean] = js.undefined,
     weekStartsOn: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null

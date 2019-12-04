@@ -1,5 +1,7 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +10,7 @@ trait IonRouterLink extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
     */
@@ -22,9 +22,7 @@ trait IonRouterLink extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-  ] = js.undefined
+  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
   /**
     * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
     */
@@ -34,10 +32,10 @@ trait IonRouterLink extends js.Object {
 object IonRouterLink {
   @scala.inline
   def apply(
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     href: String = null,
     rel: String = null,
-    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
+    routerDirection: RouterDirection = null,
     target: String = null
   ): IonRouterLink = {
     val __obj = js.Dynamic.literal()

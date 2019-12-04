@@ -23,7 +23,7 @@ trait Anon_Bottom[T /* <: Route */] extends js.Object {
   var lazyPreloadDistance: Double
   var navigationState: NavigationState[T]
   var position: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Value<number> */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Value<number> */ js.Any
   ] = js.undefined
   var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   var sceneContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -50,7 +50,7 @@ object Anon_Bottom {
     renderTabBar: SceneRendererProps with Anon_NavigationState[T] => ReactNode,
     tabBarPosition: top | bottom,
     initialLayout: Anon_Height = null,
-    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Animated.Value<number> */ js.Any = null,
+    position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Value<number> */ js.Any = null,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     sceneContainerStyle: StyleProp[ViewStyle] = null,
     style: StyleProp[ViewStyle] = null

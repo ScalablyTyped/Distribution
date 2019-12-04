@@ -13,8 +13,6 @@ trait Profile
   var _json: js.Any
   var _raw: String
   var gender: String
-  @JSName("username")
-  var username_Profile: String
 }
 
 object Profile {
@@ -27,15 +25,16 @@ object Profile {
     gender: String,
     id: String,
     provider: String,
-    username: String,
     emails: js.Array[Anon_Type] = null,
     name: Anon_FamilyName = null,
-    photos: js.Array[Anon_Value] = null
+    photos: js.Array[Anon_Value] = null,
+    username: String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal(_accessLevel = _accessLevel.asInstanceOf[js.Any], _json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_accessLevel = _accessLevel.asInstanceOf[js.Any], _json = _json.asInstanceOf[js.Any], _raw = _raw.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
     if (emails != null) __obj.updateDynamic("emails")(emails.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (photos != null) __obj.updateDynamic("photos")(photos.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Profile]
   }
 }

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__tabmanager-extension"
-version := "1.2.1-58220e"
+version := "1.2.1-ff4da1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-e64d71",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-cf446d",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-7dfc41",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-f709d7",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-41da8a",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-25b97f",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-e7a73f",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-2891e3",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-c29858",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-57570a",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-ca5f3c",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-d0f997",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-be49b7",
-  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-a1eab4",
+  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-852fa2",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-cad8ac",
   "org.scalablytyped" %%% "phosphor__application" % "1.7.3-8f1d21",
   "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-86b809",
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-075c8c",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-ca1d2a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-0aa2c4",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

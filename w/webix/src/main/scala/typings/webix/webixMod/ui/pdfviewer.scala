@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.pdfviewer")
 @js.native
-class pdfviewer () extends baseview {
+class pdfviewer ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$numPages")
   var $numPages: Double = js.native
   @JSName("$onLoad")
@@ -16,6 +17,8 @@ class pdfviewer () extends baseview {
   var $pageNum: Double = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_pdfviewer: WebixCallback = js.native
   @JSName("config")
   var config_pdfviewer: pdfviewerConfig = js.native
   @JSName("$onLoad")
@@ -27,7 +30,7 @@ class pdfviewer () extends baseview {
   def clear(): Unit = js.native
   def detachEvent(id: String): Unit = js.native
   def download(): Unit = js.native
-  def getPopup(): baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def hasEvent(name: String): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native

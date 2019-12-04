@@ -9,8 +9,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.xstate.Anon_TypeNullEvent_2082489049
-  - typings.xstate.Anon_TypeInit_765438870
+  - typings.xstate.Anon_TypeNullEvent
+  - typings.xstate.Anon_TypeInit
   - typings.xstate.libTypesMod.RaisedEvent[TEvent]
   - typings.xstate.libTypesMod.ErrorExecutionEvent
 */
@@ -18,13 +18,13 @@ trait BuiltInEvent[TEvent /* <: EventObject */] extends js.Object
 
 object BuiltInEvent {
   @scala.inline
-  def Anon_TypeNullEvent_2082489049[TEvent /* <: EventObject */](`type`: NullEvent): BuiltInEvent[TEvent] = {
+  def Anon_TypeNullEvent[TEvent /* <: EventObject */](`type`: NullEvent): BuiltInEvent[TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltInEvent[TEvent]]
   }
   @scala.inline
-  def Anon_TypeInit_765438870[TEvent /* <: EventObject */](`type`: Init): BuiltInEvent[TEvent] = {
+  def Anon_TypeInit[TEvent /* <: EventObject */](`type`: Init): BuiltInEvent[TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuiltInEvent[TEvent]]

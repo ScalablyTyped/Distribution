@@ -36,7 +36,7 @@ object _TopLevelContent {
   @scala.inline
   def Code(
     `type`: code,
-    value: String,
+    value: js.Any,
     data: Data = null,
     lang: String = null,
     meta: String = null,
@@ -135,7 +135,7 @@ object _TopLevelContent {
     __obj.asInstanceOf[_TopLevelContent]
   }
   @scala.inline
-  def HTML(`type`: html, value: String, data: Data = null, position: Position = null): _TopLevelContent = {
+  def HTML(`type`: html, value: js.Any, data: Data = null, position: Position = null): _TopLevelContent = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

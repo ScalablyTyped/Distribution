@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "neverbounce"
-version := "4.2-dt-20190620Z-7490a2"
+version := "4.2-dt-20190620Z-688727"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

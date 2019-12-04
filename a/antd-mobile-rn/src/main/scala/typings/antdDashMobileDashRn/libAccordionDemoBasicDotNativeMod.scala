@@ -1,0 +1,22 @@
+package typings.antdDashMobileDashRn
+
+import typings.antdDashMobileDashRn.libAccordionDemoBasicDotNativeMod.AccordionExmple
+import typings.react.reactMod.Component
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("antd-mobile-rn/lib/accordion/demo/basic.native", JSImport.Namespace)
+@js.native
+object libAccordionDemoBasicDotNativeMod extends js.Object {
+  @js.native
+  trait AccordionExmple
+    extends Component[js.Any, js.Any, js.Any] {
+    def onChange(key: String): Unit = js.native
+  }
+  
+  @js.native
+  class default () extends AccordionExmple
+  
+}
+

@@ -4,6 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.fluxxor.fluxxorStrings.input
 import typings.react.Anon_Children
 import typings.react.Anon_Default
+import typings.react.experimentalMod.reactMod.SuspenseConfig
+import typings.react.experimentalMod.reactMod.SuspenseListProps
+import typings.react.experimentalMod.reactMod.TimeoutConfig
+import typings.react.experimentalMod.reactMod.TransitionStartFunction
 import typings.react.reactMod.Attributes
 import typings.react.reactMod.CElement
 import typings.react.reactMod.CFactory
@@ -81,6 +85,7 @@ trait TypeofReact extends js.Object {
     * Suspense support will be added in a later release.
     */
   val Suspense: ExoticComponent[SuspenseProps] = js.native
+  val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
   val version: String = js.native
   // Custom components
   def cloneElement[P](element: FunctionComponentElement[P]): FunctionComponentElement[P] = js.native
@@ -212,6 +217,8 @@ trait TypeofReact extends js.Object {
     Component: SFC[P],
     propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
   ): NamedExoticComponent[P] = js.native
+  def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
+  def unstable_withSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**
@@ -245,6 +252,8 @@ trait TypeofReact extends js.Object {
   // it's just the function name without the "use" prefix.
   def useDebugValue[T](value: T): Unit = js.native
   def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+  def useDeferredValue[T](value: T): T = js.native
+  def useDeferredValue[T](value: T, config: TimeoutConfig): T = js.native
   /**
     * Accepts a function that contains imperative, possibly effectful code.
     *
@@ -402,5 +411,7 @@ trait TypeofReact extends js.Object {
     */
   def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+  def useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+  def useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
 }
 

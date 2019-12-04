@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cometd"
-version := "4.0-dt-20191126Z-cf044d"
+version := "4.0-dt-20191126Z-74cc0a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

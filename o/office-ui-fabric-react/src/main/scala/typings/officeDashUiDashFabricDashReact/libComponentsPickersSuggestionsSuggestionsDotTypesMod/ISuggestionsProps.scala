@@ -7,8 +7,8 @@ import typings.atUifabricUtilities.libIRenderFunctionMod.IRenderFunction
 import typings.atUifabricUtilities.libKeyCodesMod.KeyCodes
 import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
 import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsItemDotTypesMod.ISuggestionItemProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.Props
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLElement

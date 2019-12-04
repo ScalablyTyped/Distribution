@@ -1,6 +1,7 @@
 package typings.opentracing
 
 import typings.opentracing.libMockUnderscoreTracerMockUnderscoreTracerMod.MockTracer
+import typings.opentracing.libTracerMod.Tracer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("opentracing/lib/mock_tracer/mock_tracer", JSImport.Namespace)
 @js.native
 object libMockUnderscoreTracerMockUnderscoreTracerMod extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Tracer * / any */ @js.native
-  class MockTracer () extends js.Object {
+  @js.native
+  class MockTracer () extends Tracer {
     var _allocSpan: js.Any = js.native
     var _spans: js.Any = js.native
     /* protected */ def _extract(format: js.Any, carrier: js.Any): scala.Nothing = js.native
@@ -19,10 +19,6 @@ object libMockUnderscoreTracerMockUnderscoreTracerMod extends js.Object {
       format: js.Any,
       carrier: js.Any
     ): scala.Nothing = js.native
-    /* protected */ def _startSpan(
-      name: String,
-      fields: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.SpanOptions */ js.Any
-    ): typings.opentracing.libMockUnderscoreTracerMockUnderscoreSpanMod.default = js.native
     /**
       * Discard any buffered data.
       */

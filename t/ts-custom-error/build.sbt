@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-custom-error"
-version := "2.2.2-566333"
+version := "2.2.2-d89a3a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

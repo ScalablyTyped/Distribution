@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mindbox__redux-helpers"
-version := "1.0.11-b868bc"
+version := "1.0.11-9bd111"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.template")
 @js.native
-class template () extends baseview {
+class template ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_template: WebixCallback = js.native
   @JSName("config")
   var config_template: templateConfig = js.native
   @JSName("$tooltipIn")

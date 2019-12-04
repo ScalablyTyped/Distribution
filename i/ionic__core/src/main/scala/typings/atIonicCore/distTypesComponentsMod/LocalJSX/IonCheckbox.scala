@@ -1,7 +1,9 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsCheckboxCheckboxDashInterfaceMod.CheckboxChangeEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +17,7 @@ trait IonCheckbox extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, the user cannot interact with the checkbox.
     */
@@ -41,14 +41,7 @@ trait IonCheckbox extends js.Object {
   /**
     * Emitted when the checked property has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CheckboxChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[CheckboxChangeEventDetail], Unit]] = js.undefined
   /**
     * Emitted when the toggle has focus.
     */
@@ -63,15 +56,13 @@ object IonCheckbox {
   @scala.inline
   def apply(
     checked: js.UndefOr[Boolean] = js.undefined,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     indeterminate: js.UndefOr[Boolean] = js.undefined,
     mode: ios | md = null,
     name: String = null,
     onIonBlur: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CheckboxChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[CheckboxChangeEventDetail] => Unit = null,
     onIonFocus: /* event */ CustomEvent[Unit] => Unit = null,
     value: String = null
   ): IonCheckbox = {

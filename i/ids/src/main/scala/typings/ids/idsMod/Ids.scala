@@ -1,6 +1,5 @@
 package typings.ids.idsMod
 
-import typings.ids.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

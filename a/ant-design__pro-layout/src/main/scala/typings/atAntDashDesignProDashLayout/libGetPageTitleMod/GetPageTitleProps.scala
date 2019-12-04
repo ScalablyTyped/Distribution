@@ -1,7 +1,7 @@
 package typings.atAntDashDesignProDashLayout.libGetPageTitleMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAntDashDesignProDashLayout.Anon_DefaultMessageId
+import typings.atAntDashDesignProDashLayout.Anon_DefaultMessage
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait GetPageTitleProps extends js.Object {
   var breadcrumb: js.UndefOr[StringDictionary[MenuDataItem]] = js.undefined
-  var formatMessage: js.UndefOr[js.Function1[/* data */ Anon_DefaultMessageId, String]] = js.undefined
+  var formatMessage: js.UndefOr[js.Function1[/* data */ Anon_DefaultMessage, String]] = js.undefined
   var menu: js.UndefOr[Anon_Locale] = js.undefined
   var pageName: js.UndefOr[String] = js.undefined
   var pathname: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ object GetPageTitleProps {
   @scala.inline
   def apply(
     breadcrumb: StringDictionary[MenuDataItem] = null,
-    formatMessage: /* data */ Anon_DefaultMessageId => String = null,
+    formatMessage: /* data */ Anon_DefaultMessage => String = null,
     menu: Anon_Locale = null,
     pageName: String = null,
     pathname: String = null,

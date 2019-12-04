@@ -14,7 +14,7 @@ object libDataQueryDataMod extends js.Object {
   @js.native
   class QueryData[TData, TVariables] protected ()
     extends OperationData[js.Any] {
-    def this(hasOptionsContextForceUpdate: Anon_Context[TData, TVariables]) = this()
+    def this(hasOptionsContextForceUpdate: Anon_ContextForceUpdate[TData, TVariables]) = this()
     var currentObservable: js.Any = js.native
     var forceUpdate: js.Any = js.native
     var getExecuteResult: js.Any = js.native

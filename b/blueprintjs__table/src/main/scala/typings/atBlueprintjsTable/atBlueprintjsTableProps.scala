@@ -5,6 +5,8 @@ import typings.atBlueprintjsTable.libEsmCellEditableCellMod.IEditableCellProps
 import typings.atBlueprintjsTable.libEsmCellFormatsJsonFormatMod.IJSONFormatProps
 import typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.ITruncatedFormatProps
 import typings.atBlueprintjsTable.libEsmColumnMod.IColumnProps
+import typings.atBlueprintjsTable.libEsmCommonContextMenuTargetWrapperMod.IContextMenuTargetWrapper
+import typings.atBlueprintjsTable.libEsmCommonLoadableContentMod.ILoadableContentProps
 import typings.atBlueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
 import typings.atBlueprintjsTable.libEsmHeadersColumnHeaderMod.IColumnHeaderProps
 import typings.atBlueprintjsTable.libEsmHeadersEditableNameMod.IEditableNameProps
@@ -18,6 +20,12 @@ import typings.atBlueprintjsTable.libEsmInteractionsReorderableMod.IDragReordera
 import typings.atBlueprintjsTable.libEsmInteractionsResizableMod.IResizableProps
 import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.IResizeHandleProps
 import typings.atBlueprintjsTable.libEsmInteractionsSelectableMod.IDragSelectableProps
+import typings.atBlueprintjsTable.libEsmLayersGuidesMod.IGuideLayerProps
+import typings.atBlueprintjsTable.libEsmLayersRegionsMod.IRegionLayerProps
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.ITableQuadrantProps
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantStackMod.ITableQuadrantStackProps
+import typings.atBlueprintjsTable.libEsmTableBodyCellsMod.ITableBodyCellsProps
+import typings.atBlueprintjsTable.libEsmTableBodyMod.ITableBodyProps
 import typings.atBlueprintjsTable.libEsmTableMod.ITableProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,6 +43,9 @@ trait atBlueprintjsTableProps {
   def ColumnHeaderCellProps: IColumnHeaderCellProps.type = typings.atBlueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
   type ColumnHeaderCellProps = IColumnHeaderCellProps
   @scala.inline
+  def ContextMenuTargetWrapperProps: IContextMenuTargetWrapper.type = typings.atBlueprintjsTable.libEsmCommonContextMenuTargetWrapperMod.IContextMenuTargetWrapper
+  type ContextMenuTargetWrapperProps = IContextMenuTargetWrapper
+  @scala.inline
   def CopyCellsMenuItemProps: ICopyCellsMenuItemProps.type = typings.atBlueprintjsTable.libEsmInteractionsMenusCopyCellsMenuItemMod.ICopyCellsMenuItemProps
   type CopyCellsMenuItemProps = ICopyCellsMenuItemProps
   type DragReorderableProps = IDragReorderable
@@ -48,6 +59,9 @@ trait atBlueprintjsTableProps {
   @scala.inline
   def EditableNameProps: IEditableNameProps.type = typings.atBlueprintjsTable.libEsmHeadersEditableNameMod.IEditableNameProps
   type EditableNameProps = IEditableNameProps
+  @scala.inline
+  def GuideLayerProps: IGuideLayerProps.type = typings.atBlueprintjsTable.libEsmLayersGuidesMod.IGuideLayerProps
+  type GuideLayerProps = IGuideLayerProps
   type HeaderProps = IInternalHeaderProps
   @scala.inline
   def HeaderCellProps: IInternalHeaderCellProps.type = typings.atBlueprintjsTable.libEsmHeadersHeaderCellMod.IInternalHeaderCellProps
@@ -55,6 +69,12 @@ trait atBlueprintjsTableProps {
   @scala.inline
   def JSONFormatProps: IJSONFormatProps.type = typings.atBlueprintjsTable.libEsmCellFormatsJsonFormatMod.IJSONFormatProps
   type JSONFormatProps = IJSONFormatProps
+  @scala.inline
+  def LoadableContentProps: ILoadableContentProps.type = typings.atBlueprintjsTable.libEsmCommonLoadableContentMod.ILoadableContentProps
+  type LoadableContentProps = ILoadableContentProps
+  @scala.inline
+  def RegionLayerProps: IRegionLayerProps.type = typings.atBlueprintjsTable.libEsmLayersRegionsMod.IRegionLayerProps
+  type RegionLayerProps = IRegionLayerProps
   type ResizableProps = IResizableProps
   type ResizeHandleProps = IResizeHandleProps
   type RowHeaderProps = IRowHeaderProps
@@ -64,6 +84,14 @@ trait atBlueprintjsTableProps {
   @scala.inline
   def TableProps: ITableProps.type = typings.atBlueprintjsTable.libEsmTableMod.ITableProps
   type TableProps = ITableProps
+  @scala.inline
+  def TableBodyProps: ITableBodyProps.type = typings.atBlueprintjsTable.libEsmTableBodyMod.ITableBodyProps
+  type TableBodyProps = ITableBodyProps
+  @scala.inline
+  def TableBodyCellsProps: ITableBodyCellsProps.type = typings.atBlueprintjsTable.libEsmTableBodyCellsMod.ITableBodyCellsProps
+  type TableBodyCellsProps = ITableBodyCellsProps
+  type TableQuadrantProps = ITableQuadrantProps
+  type TableQuadrantStackProps = ITableQuadrantStackProps
   @scala.inline
   def TruncatedFormatProps: ITruncatedFormatProps.type = typings.atBlueprintjsTable.libEsmCellFormatsTruncatedFormatMod.ITruncatedFormatProps
   type TruncatedFormatProps = ITruncatedFormatProps

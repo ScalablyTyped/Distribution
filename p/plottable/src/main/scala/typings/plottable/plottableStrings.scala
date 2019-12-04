@@ -141,6 +141,9 @@ object plottableStrings {
   sealed trait linearClosed extends js.Object
   
   @js.native
+  sealed trait makeEnum extends js.Object
+  
+  @js.native
   sealed trait middle extends js.Object
   
   @js.native
@@ -320,6 +323,8 @@ object plottableStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def linearClosed: linearClosed = "linearClosed".asInstanceOf[linearClosed]
+  @scala.inline
+  def makeEnum: makeEnum = "makeEnum".asInstanceOf[makeEnum]
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline

@@ -9,10 +9,10 @@ import typings.antd.libButtonButtonMod.ButtonSize
 import typings.antd.libDropdownDropdownMod.Align
 import typings.antd.libDropdownDropdownMod.OverlayFunc
 import typings.antd.libDropdownDropdownMod.Placement
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement

@@ -17,7 +17,7 @@ trait AngularFireObjectService extends js.Object {
   	 * @returns {FirebaseObject}
   	 */
   def apply(
-    firebase: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ js.Any
+    firebase: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ): AngularFireObject = js.native
 }
 

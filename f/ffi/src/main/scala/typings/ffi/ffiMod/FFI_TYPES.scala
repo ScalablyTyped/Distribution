@@ -1,7 +1,7 @@
 package typings.ffi.ffiMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.ffi.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

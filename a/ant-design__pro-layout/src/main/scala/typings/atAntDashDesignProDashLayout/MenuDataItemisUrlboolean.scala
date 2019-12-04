@@ -1,12 +1,12 @@
 package typings.atAntDashDesignProDashLayout
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAntDashDesignProDashLayout.esTypingsMod.MenuDataItem
+import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem & {  isUrl  :boolean} */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.MenuDataItem & {  isUrl  :boolean} */
 trait MenuDataItemisUrlboolean
   extends /* key */ StringDictionary[js.Any] {
   var authority: js.UndefOr[js.Array[String] | String] = js.undefined

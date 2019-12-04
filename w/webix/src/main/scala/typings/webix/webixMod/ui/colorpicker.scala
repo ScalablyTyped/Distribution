@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.colorpicker")
 @js.native
-class colorpicker () extends baseview {
+class colorpicker ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class colorpicker () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_colorpicker: WebixCallback = js.native
   @JSName("config")
   var config_colorpicker: colorpickerConfig = js.native
   @JSName("on_click")
@@ -61,7 +64,7 @@ class colorpicker () extends baseview {
   def detachEvent(id: String): Unit = js.native
   def focus(): Unit = js.native
   def getInputNode(): HTMLElement = js.native
-  def getPopup(): baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def getText(): String = js.native
   def getValue(): String = js.native
   def hasEvent(name: String): Boolean = js.native

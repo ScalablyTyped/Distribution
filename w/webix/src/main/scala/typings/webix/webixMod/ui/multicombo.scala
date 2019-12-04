@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.multicombo")
 @js.native
-class multicombo () extends baseview {
+class multicombo ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class multicombo () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_multicombo: WebixCallback = js.native
   @JSName("config")
   var config_multicombo: multicomboConfig = js.native
   @JSName("on_click")
@@ -59,8 +62,8 @@ class multicombo () extends baseview {
   def detachEvent(id: String): Unit = js.native
   def focus(): Unit = js.native
   def getInputNode(): HTMLElement = js.native
-  def getList(): baseview = js.native
-  def getPopup(): baseview = js.native
+  def getList(): typings.webix.webix.ui.baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def getText(): String = js.native
   def getValue(): String | js.Array[_] = js.native
   def getValue(config: js.Any): String | js.Array[_] = js.native

@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod.key
 
-import typings.openpgp.ReadableStream
+import typings.openpgp.openpgpMod.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

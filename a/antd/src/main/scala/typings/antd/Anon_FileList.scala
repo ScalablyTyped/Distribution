@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esUploadInterfaceMod.UploadFile
+import typings.antd.libUploadInterfaceMod.UploadFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

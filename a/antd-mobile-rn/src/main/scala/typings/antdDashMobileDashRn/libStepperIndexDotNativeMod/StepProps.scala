@@ -1,5 +1,6 @@
 package typings.antdDashMobileDashRn.libStepperIndexDotNativeMod
 
+import typings.antdDashMobileDashRn.Anon_ContainerDisabledStepTextColor
 import typings.antdDashMobileDashRn.libStepperPropsTypeMod.StepPropsType
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait StepProps extends StepPropsType {
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof styles */ js.Any
-  ] = js.undefined
+  var styles: js.UndefOr[Anon_ContainerDisabledStepTextColor] = js.undefined
 }
 
 object StepProps {
@@ -29,7 +28,7 @@ object StepProps {
     readOnly: js.UndefOr[Boolean] = js.undefined,
     step: Double | String = null,
     style: StyleProp[ViewStyle] = null,
-    styles: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof styles */ js.Any = null,
+    styles: Anon_ContainerDisabledStepTextColor = null,
     upStyle: js.Object = null,
     value: Int | Double = null
   ): StepProps = {

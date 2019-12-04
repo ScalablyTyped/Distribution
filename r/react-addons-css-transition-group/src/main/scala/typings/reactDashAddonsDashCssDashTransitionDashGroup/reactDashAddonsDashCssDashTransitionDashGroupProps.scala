@@ -1,0 +1,16 @@
+package typings.reactDashAddonsDashCssDashTransitionDashGroup
+
+import typings.reactDashAddonsDashCssDashTransitionDashGroup.reactDashAddonsDashCssDashTransitionDashGroupMod.reactMod.CSSTransitionGroupProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait reactDashAddonsDashCssDashTransitionDashGroupProps {
+  @scala.inline
+  def ClassProps: CSSTransitionGroupProps.type = typings.reactDashAddonsDashCssDashTransitionDashGroup.reactDashAddonsDashCssDashTransitionDashGroupMod.reactMod.CSSTransitionGroupProps
+  type ClassProps = CSSTransitionGroupProps
+  @scala.inline
+  def ReactDashAddonsDashCssDashTransitionDashGroupProps: CSSTransitionGroupProps.type = typings.reactDashAddonsDashCssDashTransitionDashGroup.reactDashAddonsDashCssDashTransitionDashGroupMod.reactMod.CSSTransitionGroupProps
+  type ReactDashAddonsDashCssDashTransitionDashGroupProps = CSSTransitionGroupProps
+}
+

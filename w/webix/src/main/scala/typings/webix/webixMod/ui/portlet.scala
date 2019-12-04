@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.portlet")
 @js.native
-class portlet () extends baseview {
+class portlet ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_portlet: WebixCallback = js.native
   @JSName("config")
   var config_portlet: portletConfig = js.native
   @JSName("$drag")

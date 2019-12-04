@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pouchdb-adapter-localstorage"
-version := "6.1-dt-20190212Z-c89d1c"
+version := "6.1-dt-20190212Z-ec8440"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-ca3bb7",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20191111Z-4995c6",
-  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-fc87e1",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20191111Z-9309b1",
+  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-a694c1",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

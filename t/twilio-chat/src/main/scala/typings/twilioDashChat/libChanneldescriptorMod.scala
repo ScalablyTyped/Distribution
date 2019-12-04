@@ -5,6 +5,7 @@ import typings.twilioDashChat.libChannelMod.Channel
 import typings.twilioDashChat.libChannelMod.Channel.NotificationLevel
 import typings.twilioDashChat.libChannelMod.Channel.Status
 import typings.twilioDashChat.libChannelMod.Channel.Type
+import typings.twilioDashChat.twilioDashChatMod.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,13 +39,10 @@ object libChanneldescriptorMod extends js.Object {
       * @param {Object} descriptor Channel descriptor data object
       * @private
       */
-    def this(
-      client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ js.Any,
-      descriptor: js.Any
-    ) = this()
+    def this(client: Client, descriptor: js.Any) = this()
     val attributes: js.Object = js.native
     val channel: String = js.native
-    var client: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ js.Any = js.native
+    var client: Client = js.native
     val createdBy: String = js.native
     val dateCreated: Date = js.native
     val dateUpdated: Date = js.native

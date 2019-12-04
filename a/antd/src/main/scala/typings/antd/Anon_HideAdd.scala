@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esTabsMod.TabsPosition
+import typings.antd.libTabsMod.TabsPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

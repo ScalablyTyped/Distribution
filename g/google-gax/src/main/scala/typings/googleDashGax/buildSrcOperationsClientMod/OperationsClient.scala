@@ -9,6 +9,7 @@ import typings.googleDashGax.buildSrcApitypesMod.ResponseType
 import typings.googleDashGax.buildSrcCallMod.CancellablePromise
 import typings.googleDashGax.buildSrcFallbackMod.GrpcClient
 import typings.googleDashGax.buildSrcGaxMod.CallSettings
+import typings.googleDashGax.googleDashGaxMod.Operation
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,27 +60,21 @@ class OperationsClient protected () extends js.Object {
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   def cancelOperation(request: js.Any, options: js.Any): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   def cancelOperation(request: js.Any, options: js.Any, callback: js.Any): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -110,9 +105,7 @@ class OperationsClient protected () extends js.Object {
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -150,18 +143,14 @@ class OperationsClient protected () extends js.Object {
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   def getOperation(request: js.Object, options: js.Object, callback: js.Any): (CancellablePromise[
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   /**
@@ -252,9 +241,7 @@ class OperationsClient protected () extends js.Object {
     js.Tuple3[
       ResponseType, 
       js.UndefOr[StringDictionary[String] | Null], 
-      js.UndefOr[
-        js.Object | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_src.Operation */ _)
-      ]
+      js.UndefOr[js.Object | Operation]
     ]
   ]) | CancellableStream = js.native
   /**

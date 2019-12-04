@@ -9,7 +9,7 @@ package object Base {
   import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftBlockType
   import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftEditorCommand
   import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftBlockRenderConfig
-  import typings.immutable.immutableMod.Map
+  import typings.immutable.Immutable.Map
   import typings.react.reactMod.CSSProperties
 
   type DraftBlockRenderMap = Map[DraftBlockType, DraftBlockRenderConfig]

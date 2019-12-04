@@ -15,6 +15,7 @@ package object zetapushDashJsMod {
     js.Promise[js.Any]
   ]
   type AuthenticationCallback = js.Function0[AbstractHandshake]
+  type ConnectionStatusHandler = Double
   type MacroServicePublisher = js.Function4[
     /* method */ String, 
     /* parameters */ js.UndefOr[PublishParameters], 

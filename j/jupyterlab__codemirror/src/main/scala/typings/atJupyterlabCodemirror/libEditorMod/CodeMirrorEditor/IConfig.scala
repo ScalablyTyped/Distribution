@@ -5,6 +5,7 @@ import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.off
 import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.on
 import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorStrings.wordWrapColumn
 import typings.atJupyterlabCodemirror.libModeMod.Mode.IMode
+import typings.codemirror.codemirrorMod.StyleActiveLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -115,7 +116,7 @@ trait IConfig
     * CodeMirror-activeline-background, and adds the class
     * CodeMirror-activeline-gutter to the line's gutter space is enabled.
     */
-  var styleActiveLine: Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ js.Any)
+  var styleActiveLine: Boolean | StyleActiveLine
   /**
     * Whether to causes the selected text to be marked with the CSS class
     * CodeMirror-selectedtext. Useful to change the colour of the selection
@@ -142,7 +143,7 @@ object IConfig {
     readOnly: Boolean,
     rulers: js.Array[Double],
     selectionPointer: Boolean | String,
-    styleActiveLine: Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ js.Any),
+    styleActiveLine: Boolean | StyleActiveLine,
     styleSelectedText: Boolean,
     tabSize: Double,
     wordWrapColumn: Double,

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-resolve-batch"
-version := "1.1-dt-20190826Z-d3bf76"
+version := "1.1-dt-20190826Z-d9accc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-933f73",
+  "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.form")
 @js.native
-class form () extends baseview {
+class form ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_form: WebixCallback = js.native
   @JSName("config")
   var config_form: formConfig = js.native
   var elements: js.Any = js.native

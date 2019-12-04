@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.multiview")
 @js.native
-class multiview () extends baseview {
+class multiview ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_multiview: WebixCallback = js.native
   @JSName("config")
   var config_multiview: multiviewConfig = js.native
   def addView(view: js.Any): String | Double = js.native

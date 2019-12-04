@@ -292,7 +292,7 @@ package object ioDashTsMod {
   type UnknownC = UnknownType
   type UnknownRecordC = AnyDictionaryType
   type Validate[I, A] = js.Function2[/* i */ I, /* context */ Context, Validation[A]]
-  type Validation[A] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Either<Errors, A> */ js.Any
+  type Validation[A] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Either<Errors, A> */ js.Any
   type VoidC = VoidType
   type mixed = js.Any
 }

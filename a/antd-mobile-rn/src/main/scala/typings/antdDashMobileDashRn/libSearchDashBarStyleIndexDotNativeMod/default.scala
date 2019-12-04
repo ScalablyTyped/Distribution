@@ -4,7 +4,7 @@ import typings.antdDashMobileDashRn.Anon_AlignItemsBackgroundColorFlexDirectionH
 import typings.antdDashMobileDashRn.Anon_AlignItemsHeight
 import typings.antdDashMobileDashRn.Anon_BackgroundColorBorderColorBorderRadiusBorderWidth
 import typings.antdDashMobileDashRn.Anon_ColorFontSizePaddingLeft
-import typings.antdDashMobileDashRn.Anon_Flex
+import typings.antdDashMobileDashRn.Anon_FlexFlexDirection
 import typings.antdDashMobileDashRn.Anon_HeightLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ object default extends js.Object {
   var cancelText: Anon_ColorFontSizePaddingLeft = js.native
   var cancelTextContainer: Anon_AlignItemsHeight = js.native
   var input: Anon_BackgroundColorBorderColorBorderRadiusBorderWidth = js.native
-  var inputWrapper: Anon_Flex = js.native
+  var inputWrapper: Anon_FlexFlexDirection = js.native
   var search: Anon_HeightLeft = js.native
   var wrapper: Anon_AlignItemsBackgroundColorFlexDirectionHeightPaddingLeft = js.native
 }

@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 object esmEachWeekOfIntervalMod extends js.Object {
   @js.native
   object default extends js.Object {
-    def apply(interval: Interval): js.Array[Date] = js.native
-    def apply(interval: Interval, options: Anon_0123456Locale): js.Array[Date] = js.native
+    def apply(interval: typings.dateDashFns.dateDashFnsMod.Interval | Interval): js.Array[Date] = js.native
+    def apply(interval: Interval, options: Anon_012): js.Array[Date] = js.native
+    def apply(interval: typings.dateDashFns.dateDashFnsMod.Interval, options: Anon_0): js.Array[Date] = js.native
   }
   
 }

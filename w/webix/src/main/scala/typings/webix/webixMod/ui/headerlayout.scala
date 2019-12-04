@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.headerlayout")
 @js.native
-class headerlayout () extends baseview {
+class headerlayout ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_headerlayout: WebixCallback = js.native
   @JSName("config")
   var config_headerlayout: headerlayoutConfig = js.native
   def addView(view: js.Any): String | Double = js.native

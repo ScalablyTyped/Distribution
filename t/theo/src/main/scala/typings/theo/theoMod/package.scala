@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object theoMod {
-  import typings.immutable.immutableMod.List
-  import typings.immutable.immutableMod.Map
-  import typings.immutable.immutableMod.OrderedMap
+  import typings.immutable.Immutable.List
+  import typings.immutable.Immutable.Map
+  import typings.immutable.Immutable.OrderedMap
 
   type Aliases = OrderedMap[String, Map[String, String | Double]]
   type FormatResultFn = js.Function1[/* result */ ImmutableStyleMap, String]

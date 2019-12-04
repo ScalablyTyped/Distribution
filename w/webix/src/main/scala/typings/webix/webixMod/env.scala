@@ -24,5 +24,6 @@ trait env extends js.Object {
 
 @JSImport("webix", "env")
 @js.native
-object env extends TopLevel[env]
+object env
+  extends TopLevel[typings.webix.webix.env]
 

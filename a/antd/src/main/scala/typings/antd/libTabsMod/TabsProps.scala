@@ -5,12 +5,12 @@ import typings.antd.antdStrings.add
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.remove
 import typings.antd.antdStrings.small
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement

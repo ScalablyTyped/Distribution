@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
 trait TabsProps extends TabBarProps {
   var configureTransition: js.UndefOr[
     js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
       /* prevTransitionProps */ js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
       ], 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _
     ]
   ] = js.undefined
   // <Tabs /> only:
@@ -28,9 +28,9 @@ trait TabsProps extends TabBarProps {
 object TabsProps {
   @scala.inline
   def apply(
-    configureTransition: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
-    ]) => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
+    configureTransition: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+    ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
     hideTabBar: js.UndefOr[Boolean] = js.undefined,
     initialLayout: Anon_Height = null,
     label: String = null,

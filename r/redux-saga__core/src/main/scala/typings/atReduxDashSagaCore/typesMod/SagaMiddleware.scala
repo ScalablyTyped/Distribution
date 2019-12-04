@@ -51,7 +51,7 @@ trait SagaMiddleware[C /* <: js.Object */]
     * @param saga a Generator function
     * @param args arguments to be provided to `saga`
     */
-  def run[S /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Saga */ js.Any */](
+  def run[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
     saga: S,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
   ): js.Any = js.native

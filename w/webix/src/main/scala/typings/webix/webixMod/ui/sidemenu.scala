@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.sidemenu")
 @js.native
-class sidemenu () extends baseview {
+class sidemenu ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_sidemenu: WebixCallback = js.native
   @JSName("config")
   var config_sidemenu: sidemenuConfig = js.native
   def attachEvent(`type`: sidemenuEventName, functor: WebixCallback): String | Double = js.native

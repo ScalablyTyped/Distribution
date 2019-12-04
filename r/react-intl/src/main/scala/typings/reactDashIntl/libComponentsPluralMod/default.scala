@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.ForwardRefExoticComponent
 import typings.react.reactMod.RefAttributes
 import typings.reactDashIntl.Anon_ForwardedRefInstance
-import typings.reactDashIntl.Anon_WrappedComponentComponentTypeProps
+import typings.reactDashIntl.Anon_WrappedComponentComponentType
 import typings.reactDashIntl.reactDashIntlStrings.`type`
 import typings.reactDashIntl.reactDashIntlStrings.children
 import typings.reactDashIntl.reactDashIntlStrings.few
@@ -29,6 +29,6 @@ object default extends TopLevel[
           Props, 
           children | other | zero | one | two | few | many | `type` | localeMatcher | format | value
         ]) with Anon_ForwardedRefInstance with RefAttributes[_]
-      ]) with Anon_WrappedComponentComponentTypeProps
+      ]) with Anon_WrappedComponentComponentType
     ]
 

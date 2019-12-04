@@ -1,6 +1,6 @@
 package typings.rcDashMenu.libMenuMod
 
-import typings.rcDashMenu.Anon_GetWrappedInstanceSubPopupMenu
+import typings.rcDashMenu.Anon_GetWrappedInstance
 import typings.rcDashMenu.libInterfaceMod.MenuClickEventHandler
 import typings.rcDashMenu.libInterfaceMod.MiniStore
 import typings.rcDashMenu.libInterfaceMod.SelectInfo
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Menu
   extends Component[MenuProps, js.Object, js.Any] {
-  var innerMenu: (ComponentClass[SubPopupMenuProps, _]) with Anon_GetWrappedInstanceSubPopupMenu = js.native
+  var innerMenu: (ComponentClass[SubPopupMenuProps, _]) with Anon_GetWrappedInstance = js.native
   var isRootMenu: Boolean = js.native
   var onClick: MenuClickEventHandler = js.native
   var store: MiniStore = js.native

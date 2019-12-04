@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3_dot_slider"
-version := "0.0-unknown-dt-20190322Z-6d9e46"
+version := "0.0-unknown-dt-20190322Z-7ca8d4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

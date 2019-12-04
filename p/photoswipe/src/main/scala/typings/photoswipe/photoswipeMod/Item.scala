@@ -1,6 +1,6 @@
 package typings.photoswipe.photoswipeMod
 
-import typings.photoswipe.Anon_Bottom
+import typings.photoswipe.Anon_BottomTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +42,7 @@ trait Item extends js.Object {
   /**
     * Internal property added by PhotoSwipe.
     */
-  var vGap: js.UndefOr[Anon_Bottom] = js.undefined
+  var vGap: js.UndefOr[Anon_BottomTop] = js.undefined
   /**
     * The width of this image.
     */
@@ -61,7 +61,7 @@ object Item {
     initialZoomLevel: Int | Double = null,
     loadError: js.UndefOr[Boolean] = js.undefined,
     msrc: String = null,
-    vGap: Anon_Bottom = null
+    vGap: Anon_BottomTop = null
   ): Item = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])

@@ -15,6 +15,9 @@ object codemirrorStrings {
   sealed trait abort extends js.Object
   
   @js.native
+  sealed trait `after-top` extends js.Object
+  
+  @js.native
   sealed trait animationcancel extends js.Object
   
   @js.native
@@ -27,10 +30,19 @@ object codemirrorStrings {
   sealed trait animationstart extends js.Object
   
   @js.native
+  sealed trait autoCloseBrackets extends js.Object
+  
+  @js.native
+  sealed trait autoCloseTags extends js.Object
+  
+  @js.native
   sealed trait autofocus extends js.Object
   
   @js.native
   sealed trait auxclick extends js.Object
+  
+  @js.native
+  sealed trait `before-bottom` extends js.Object
   
   @js.native
   sealed trait beforeChange extends js.Object
@@ -43,6 +55,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait blur extends js.Object
+  
+  @js.native
+  sealed trait bottom extends js.Object
   
   @js.native
   sealed trait cancel extends js.Object
@@ -192,6 +207,12 @@ object codemirrorStrings {
   sealed trait hide extends js.Object
   
   @js.native
+  sealed trait highlightSelectionMatches extends js.Object
+  
+  @js.native
+  sealed trait hintOptions extends js.Object
+  
+  @js.native
   sealed trait historyEventDelay extends js.Object
   
   @js.native
@@ -259,6 +280,12 @@ object codemirrorStrings {
   
   @js.native
   sealed trait lostpointercapture extends js.Object
+  
+  @js.native
+  sealed trait matchBrackets extends js.Object
+  
+  @js.native
+  sealed trait matchTags extends js.Object
   
   @js.native
   sealed trait maxHighlightLength extends js.Object
@@ -372,6 +399,9 @@ object codemirrorStrings {
   sealed trait scrollCursorIntoView extends js.Object
   
   @js.native
+  sealed trait scrollPastEnd extends js.Object
+  
+  @js.native
   sealed trait scrollbarStyle extends js.Object
   
   @js.native
@@ -396,10 +426,16 @@ object codemirrorStrings {
   sealed trait showCursorWhenSelecting extends js.Object
   
   @js.native
+  sealed trait showHint extends js.Object
+  
+  @js.native
   sealed trait smartIndent extends js.Object
   
   @js.native
   sealed trait stalled extends js.Object
+  
+  @js.native
+  sealed trait styleActiveLine extends js.Object
   
   @js.native
   sealed trait submit extends js.Object
@@ -427,6 +463,9 @@ object codemirrorStrings {
   
   @js.native
   sealed trait toggle extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -493,6 +532,8 @@ object codemirrorStrings {
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
+  def `after-top`: `after-top` = "after-top".asInstanceOf[`after-top`]
+  @scala.inline
   def animationcancel: animationcancel = "animationcancel".asInstanceOf[animationcancel]
   @scala.inline
   def animationend: animationend = "animationend".asInstanceOf[animationend]
@@ -501,9 +542,15 @@ object codemirrorStrings {
   @scala.inline
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   @scala.inline
+  def autoCloseBrackets: autoCloseBrackets = "autoCloseBrackets".asInstanceOf[autoCloseBrackets]
+  @scala.inline
+  def autoCloseTags: autoCloseTags = "autoCloseTags".asInstanceOf[autoCloseTags]
+  @scala.inline
   def autofocus: autofocus = "autofocus".asInstanceOf[autofocus]
   @scala.inline
   def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
+  @scala.inline
+  def `before-bottom`: `before-bottom` = "before-bottom".asInstanceOf[`before-bottom`]
   @scala.inline
   def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
   @scala.inline
@@ -512,6 +559,8 @@ object codemirrorStrings {
   def beforeSelectionChange: beforeSelectionChange = "beforeSelectionChange".asInstanceOf[beforeSelectionChange]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
@@ -611,6 +660,10 @@ object codemirrorStrings {
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   @scala.inline
+  def highlightSelectionMatches: highlightSelectionMatches = "highlightSelectionMatches".asInstanceOf[highlightSelectionMatches]
+  @scala.inline
+  def hintOptions: hintOptions = "hintOptions".asInstanceOf[hintOptions]
+  @scala.inline
   def historyEventDelay: historyEventDelay = "historyEventDelay".asInstanceOf[historyEventDelay]
   @scala.inline
   def indentUnit: indentUnit = "indentUnit".asInstanceOf[indentUnit]
@@ -656,6 +709,10 @@ object codemirrorStrings {
   def local: local = "local".asInstanceOf[local]
   @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
+  @scala.inline
+  def matchBrackets: matchBrackets = "matchBrackets".asInstanceOf[matchBrackets]
+  @scala.inline
+  def matchTags: matchTags = "matchTags".asInstanceOf[matchTags]
   @scala.inline
   def maxHighlightLength: maxHighlightLength = "maxHighlightLength".asInstanceOf[maxHighlightLength]
   @scala.inline
@@ -731,6 +788,8 @@ object codemirrorStrings {
   @scala.inline
   def scrollCursorIntoView: scrollCursorIntoView = "scrollCursorIntoView".asInstanceOf[scrollCursorIntoView]
   @scala.inline
+  def scrollPastEnd: scrollPastEnd = "scrollPastEnd".asInstanceOf[scrollPastEnd]
+  @scala.inline
   def scrollbarStyle: scrollbarStyle = "scrollbarStyle".asInstanceOf[scrollbarStyle]
   @scala.inline
   def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
@@ -747,9 +806,13 @@ object codemirrorStrings {
   @scala.inline
   def showCursorWhenSelecting: showCursorWhenSelecting = "showCursorWhenSelecting".asInstanceOf[showCursorWhenSelecting]
   @scala.inline
+  def showHint: showHint = "showHint".asInstanceOf[showHint]
+  @scala.inline
   def smartIndent: smartIndent = "smartIndent".asInstanceOf[smartIndent]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
+  @scala.inline
+  def styleActiveLine: styleActiveLine = "styleActiveLine".asInstanceOf[styleActiveLine]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
@@ -768,6 +831,8 @@ object codemirrorStrings {
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   @scala.inline

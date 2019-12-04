@@ -36,7 +36,7 @@ object libListDashViewMod extends js.Object {
   @js.native
   object default extends js.Object {
     var DataSource: js.Any = js.native
-    var IndexedList: TypeofClassIndexedListDefaultProps = js.native
+    var IndexedList: TypeofClassIndexedList = js.native
     var defaultProps: Anon_ListPrefixCls = js.native
   }
   

@@ -8,7 +8,7 @@ trait Locale extends js.Object {
   var formatLong: js.Object
   var localize: Anon_Args
   var `match`: Anon_Args
-  var options: js.UndefOr[Anon_0] = js.undefined
+  var options: js.UndefOr[Anon_01234567FirstWeekContainsDateWeekStartsOn] = js.undefined
   def date(args: js.Any*): js.Any
   def dateTime(args: js.Any*): js.Any
   def formatDistance(args: js.Any*): js.Any
@@ -27,7 +27,7 @@ object Locale {
     localize: Anon_Args,
     `match`: Anon_Args,
     time: /* repeated */ js.Any => js.Any,
-    options: Anon_0 = null
+    options: Anon_01234567FirstWeekContainsDateWeekStartsOn = null
   ): Locale = {
     val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateTime = js.Any.fromFunction1(dateTime), formatDistance = js.Any.fromFunction1(formatDistance), formatLong = formatLong.asInstanceOf[js.Any], formatRelative = js.Any.fromFunction1(formatRelative), localize = localize.asInstanceOf[js.Any], time = js.Any.fromFunction1(time))
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])

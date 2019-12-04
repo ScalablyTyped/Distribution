@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object xstateStrings {
   @js.native
+  sealed trait DOT extends js.Object
+  
+  @js.native
   sealed trait PropertyAssigner extends js.Object
   
   @js.native
@@ -25,20 +28,19 @@ object xstateStrings {
   sealed trait TransitionsDefinition extends js.Object
   
   @js.native
+  sealed trait ValueAdjMapOptions extends js.Object
+  
+  @js.native
   sealed trait actions extends js.Object
   
   @js.native
   sealed trait assign extends js.Object
   
   @js.native
-  sealed trait atomic
-    extends _StateTypes
-       with typings.xstate.esTypesMod._StateTypes
+  sealed trait atomic extends _StateTypes
   
   @js.native
-  sealed trait compound
-    extends _StateTypes
-       with typings.xstate.esTypesMod._StateTypes
+  sealed trait compound extends _StateTypes
   
   @js.native
   sealed trait deep extends js.Object
@@ -47,22 +49,16 @@ object xstateStrings {
   sealed trait external extends js.Object
   
   @js.native
-  sealed trait `final`
-    extends _StateTypes
-       with typings.xstate.esTypesMod._StateTypes
+  sealed trait `final` extends _StateTypes
   
   @js.native
-  sealed trait history
-    extends _StateTypes
-       with typings.xstate.esTypesMod._StateTypes
+  sealed trait history extends _StateTypes
   
   @js.native
   sealed trait internal extends js.Object
   
   @js.native
-  sealed trait parallel
-    extends _StateTypes
-       with typings.xstate.esTypesMod._StateTypes
+  sealed trait parallel extends _StateTypes
   
   @js.native
   sealed trait platform extends js.Object
@@ -77,6 +73,8 @@ object xstateStrings {
   sealed trait xstateDOTguard extends js.Object
   
   @scala.inline
+  def DOT: DOT = ".".asInstanceOf[DOT]
+  @scala.inline
   def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
   @scala.inline
   def StateNodesConfig: StateNodesConfig = "StateNodesConfig".asInstanceOf[StateNodesConfig]
@@ -88,6 +86,8 @@ object xstateStrings {
   def TransitionsConfig: TransitionsConfig = "TransitionsConfig".asInstanceOf[TransitionsConfig]
   @scala.inline
   def TransitionsDefinition: TransitionsDefinition = "TransitionsDefinition".asInstanceOf[TransitionsDefinition]
+  @scala.inline
+  def ValueAdjMapOptions: ValueAdjMapOptions = "ValueAdjMapOptions".asInstanceOf[ValueAdjMapOptions]
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
   @scala.inline

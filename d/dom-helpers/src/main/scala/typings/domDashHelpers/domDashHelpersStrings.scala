@@ -1,5 +1,6 @@
 package typings.domDashHelpers
 
+import typings.domDashHelpers.cjsIsTransformMod.TransformValue
 import typings.domDashHelpers.cjsTypesMod.Styles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -772,6 +773,12 @@ object domDashHelpersStrings {
   sealed trait maskType extends Styles
   
   @js.native
+  sealed trait matrix extends TransformValue
+  
+  @js.native
+  sealed trait matrix3d extends TransformValue
+  
+  @js.native
   sealed trait maxBlockSize extends Styles
   
   @js.native
@@ -1039,6 +1046,12 @@ object domDashHelpersStrings {
   sealed trait pageBreakInside extends Styles
   
   @js.native
+  sealed trait pageXOffset extends js.Object
+  
+  @js.native
+  sealed trait pageYOffset extends js.Object
+  
+  @js.native
   sealed trait paintOrder extends Styles
   
   @js.native
@@ -1054,7 +1067,9 @@ object domDashHelpersStrings {
   sealed trait penAction extends Styles
   
   @js.native
-  sealed trait perspective extends Styles
+  sealed trait perspective
+    extends Styles
+       with TransformValue
   
   @js.native
   sealed trait perspectiveOrigin extends Styles
@@ -1123,7 +1138,21 @@ object domDashHelpersStrings {
   sealed trait right extends Styles
   
   @js.native
-  sealed trait rotate extends Styles
+  sealed trait rotate
+    extends Styles
+       with TransformValue
+  
+  @js.native
+  sealed trait rotate3d extends TransformValue
+  
+  @js.native
+  sealed trait rotateX extends TransformValue
+  
+  @js.native
+  sealed trait rotateY extends TransformValue
+  
+  @js.native
+  sealed trait rotateZ extends TransformValue
   
   @js.native
   sealed trait rowGap extends Styles
@@ -1138,7 +1167,21 @@ object domDashHelpersStrings {
   sealed trait rubyPosition extends Styles
   
   @js.native
-  sealed trait scale extends Styles
+  sealed trait scale
+    extends Styles
+       with TransformValue
+  
+  @js.native
+  sealed trait scale3d extends TransformValue
+  
+  @js.native
+  sealed trait scaleX extends TransformValue
+  
+  @js.native
+  sealed trait scaleY extends TransformValue
+  
+  @js.native
+  sealed trait scaleZ extends TransformValue
   
   @js.native
   sealed trait scroll extends js.Object
@@ -1166,6 +1209,15 @@ object domDashHelpersStrings {
   
   @js.native
   sealed trait shapeRendering extends Styles
+  
+  @js.native
+  sealed trait skew extends TransformValue
+  
+  @js.native
+  sealed trait skewX extends TransformValue
+  
+  @js.native
+  sealed trait skewY extends TransformValue
   
   @js.native
   sealed trait stalled extends js.Object
@@ -1342,7 +1394,21 @@ object domDashHelpersStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
-  sealed trait translate extends Styles
+  sealed trait translate
+    extends Styles
+       with TransformValue
+  
+  @js.native
+  sealed trait translate3d extends TransformValue
+  
+  @js.native
+  sealed trait translateX extends TransformValue
+  
+  @js.native
+  sealed trait translateY extends TransformValue
+  
+  @js.native
+  sealed trait translateZ extends TransformValue
   
   @js.native
   sealed trait unicodeBidi extends Styles
@@ -2167,6 +2233,10 @@ object domDashHelpersStrings {
   @scala.inline
   def maskType: maskType = "maskType".asInstanceOf[maskType]
   @scala.inline
+  def matrix: matrix = "matrix".asInstanceOf[matrix]
+  @scala.inline
+  def matrix3d: matrix3d = "matrix3d".asInstanceOf[matrix3d]
+  @scala.inline
   def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
   @scala.inline
   def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
@@ -2345,6 +2415,10 @@ object domDashHelpersStrings {
   @scala.inline
   def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
   @scala.inline
+  def pageXOffset: pageXOffset = "pageXOffset".asInstanceOf[pageXOffset]
+  @scala.inline
+  def pageYOffset: pageYOffset = "pageYOffset".asInstanceOf[pageYOffset]
+  @scala.inline
   def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
   @scala.inline
   def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
@@ -2403,6 +2477,14 @@ object domDashHelpersStrings {
   @scala.inline
   def rotate: rotate = "rotate".asInstanceOf[rotate]
   @scala.inline
+  def rotate3d: rotate3d = "rotate3d".asInstanceOf[rotate3d]
+  @scala.inline
+  def rotateX: rotateX = "rotateX".asInstanceOf[rotateX]
+  @scala.inline
+  def rotateY: rotateY = "rotateY".asInstanceOf[rotateY]
+  @scala.inline
+  def rotateZ: rotateZ = "rotateZ".asInstanceOf[rotateZ]
+  @scala.inline
   def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
   @scala.inline
   def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
@@ -2412,6 +2494,14 @@ object domDashHelpersStrings {
   def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
+  @scala.inline
+  def scale3d: scale3d = "scale3d".asInstanceOf[scale3d]
+  @scala.inline
+  def scaleX: scaleX = "scaleX".asInstanceOf[scaleX]
+  @scala.inline
+  def scaleY: scaleY = "scaleY".asInstanceOf[scaleY]
+  @scala.inline
+  def scaleZ: scaleZ = "scaleZ".asInstanceOf[scaleZ]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
@@ -2430,6 +2520,12 @@ object domDashHelpersStrings {
   def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
+  @scala.inline
+  def skew: skew = "skew".asInstanceOf[skew]
+  @scala.inline
+  def skewX: skewX = "skewX".asInstanceOf[skewX]
+  @scala.inline
+  def skewY: skewY = "skewY".asInstanceOf[skewY]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
@@ -2548,6 +2644,14 @@ object domDashHelpersStrings {
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
+  @scala.inline
+  def translate3d: translate3d = "translate3d".asInstanceOf[translate3d]
+  @scala.inline
+  def translateX: translateX = "translateX".asInstanceOf[translateX]
+  @scala.inline
+  def translateY: translateY = "translateY".asInstanceOf[translateY]
+  @scala.inline
+  def translateZ: translateZ = "translateZ".asInstanceOf[translateZ]
   @scala.inline
   def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
   @scala.inline

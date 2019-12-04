@@ -1,7 +1,7 @@
 package typings.atAntDashDesignReactDashNative
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.atAntDashDesignReactDashNative.esTabDashBarTabBarItemMod.default
+import typings.atAntDashDesignReactDashNative.libTabDashBarTabBarItemMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

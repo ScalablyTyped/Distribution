@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod._Global_
 
+import typings.atIonicCore.atIonicCoreMod.Side
 import typings.std.CSSStyleDeclaration
 import typings.std.Element
 import typings.std.HTMLSlotElement
@@ -34,7 +35,7 @@ class HTMLIonItemOptionsElementCls () extends HTMLIonItemOptionsElement {
     * The side the option button should be on. Possible values: `"start"` and `"end"`. If you have multiple `ion-item-options`, a side must be provided for each.
     */
   /* CompleteClass */
-  override var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = js.native
+  override var side: Side = js.native
   /* CompleteClass */
   override val style: CSSStyleDeclaration = js.native
   /* CompleteClass */

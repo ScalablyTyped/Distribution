@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.colorboard")
 @js.native
-class colorboard () extends baseview {
+class colorboard ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_colorboard: WebixCallback = js.native
   @JSName("config")
   var config_colorboard: colorboardConfig = js.native
   @JSName("$setValue")

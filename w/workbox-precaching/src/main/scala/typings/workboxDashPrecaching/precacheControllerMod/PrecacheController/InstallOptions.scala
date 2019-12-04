@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InstallOptions extends js.Object {
   var event: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ] = js.undefined
   var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
 }
@@ -15,7 +15,7 @@ trait InstallOptions extends js.Object {
 object InstallOptions {
   @scala.inline
   def apply(
-    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null,
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any = null,
     plugins: js.Array[WorkboxPlugin] = null
   ): InstallOptions = {
     val __obj = js.Dynamic.literal()

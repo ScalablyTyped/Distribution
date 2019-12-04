@@ -1,6 +1,5 @@
 package typings.stampit.stampitMod
 
-import typings.stampit.PropertyMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

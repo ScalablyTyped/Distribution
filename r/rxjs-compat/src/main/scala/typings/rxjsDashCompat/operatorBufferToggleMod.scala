@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.SubscribableOrPromise
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorBufferToggleMod extends js.Object {
   def bufferToggle[T, O](
-    `this`: Observable[T],
-    openings: SubscribableOrPromise[O],
-    closingSelector: js.Function1[/* value */ O, SubscribableOrPromise[_]]
-  ): Observable[js.Array[T]] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    openings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<O> */ js.Any,
+    closingSelector: js.Function1[
+      /* value */ O, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ _
+    ]
+  ): js.Any = js.native
 }
 

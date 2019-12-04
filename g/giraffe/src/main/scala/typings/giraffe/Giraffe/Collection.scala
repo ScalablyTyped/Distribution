@@ -1,6 +1,5 @@
 package typings.giraffe.Giraffe
 
-import typings.giraffe.Anon_TModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,5 @@ class Collection[TModel /* <: Model */] ()
   var dataEvents: js.UndefOr[StringMap] = js.native
   var defaultOptions: js.UndefOr[DefaultOptions] = js.native
   var dispose: js.UndefOr[js.Function0[js.Any]] = js.native
-  //model: typeof TModel;
-  @JSName("model")
-  var model_Collection: Anon_TModel[TModel] = js.native
 }
 

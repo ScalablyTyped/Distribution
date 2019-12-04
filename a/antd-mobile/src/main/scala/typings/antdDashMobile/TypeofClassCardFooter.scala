@@ -1,7 +1,7 @@
 package typings.antdDashMobile
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antdDashMobile.esCardCardFooterMod.default
+import typings.antdDashMobile.libCardCardFooterMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

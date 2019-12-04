@@ -11,7 +11,7 @@ object aliasMethod
   extends TopLevel[
       js.Function1[
         /* methodName */ java.lang.String, 
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComputedProperty<any> */ js.Any
+        typings.atEmberObject.computedMod.ComputedProperty[js.Any, js.Any]
       ]
     ]
 

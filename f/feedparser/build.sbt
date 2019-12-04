@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "feedparser"
-version := "2.2-dt-20190703Z-98c87f"
+version := "2.2-dt-20190703Z-8d91c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
-  "org.scalablytyped" %%% "sax" % "1.2-dt-20190531Z-a246e9",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "sax" % "1.2-dt-20190531Z-f7e73c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

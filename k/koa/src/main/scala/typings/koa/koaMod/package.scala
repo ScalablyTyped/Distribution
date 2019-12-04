@@ -14,7 +14,7 @@ package object koaMod {
     */
   type DefaultState = DefaultStateExtends
   type DefaultStateExtends = js.Any
-  type Middleware[StateT, CustomT] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> */ js.Any
+  type Middleware[StateT, CustomT] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compose.Middleware<ParameterizedContext<StateT, CustomT>> */ js.Any
   type Next = js.Function0[js.Promise[js.Any]]
   type ParameterizedContext[StateT, CustomT] = ExtendableContext with Anon_State[StateT] with CustomT
 }

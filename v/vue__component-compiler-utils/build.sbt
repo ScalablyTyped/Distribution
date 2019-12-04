@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__component-compiler-utils"
-version := "3.0.0-c653ea"
+version := "3.0.0-cac8b3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

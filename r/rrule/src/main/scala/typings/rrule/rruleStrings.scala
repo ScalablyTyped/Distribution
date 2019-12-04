@@ -86,6 +86,9 @@ object rruleStrings {
   sealed trait freq extends js.Object
   
   @js.native
+  sealed trait getTime extends js.Object
+  
+  @js.native
   sealed trait interval extends js.Object
   
   @js.native
@@ -149,6 +152,8 @@ object rruleStrings {
   def dtstart: dtstart = "dtstart".asInstanceOf[dtstart]
   @scala.inline
   def freq: freq = "freq".asInstanceOf[freq]
+  @scala.inline
+  def getTime: getTime = "getTime".asInstanceOf[getTime]
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
   @scala.inline

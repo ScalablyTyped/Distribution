@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet-geosearch"
-version := "2.7-dt-20190826Z-c38f7c"
+version := "2.7-dt-20190826Z-0a2426"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,8 +1,8 @@
 package typings.reactDashSparklines.reactDashSparklinesMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

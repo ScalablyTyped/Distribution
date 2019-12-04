@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Side
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,9 +42,7 @@ trait IonMenu extends js.Object {
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any
-  ] = js.undefined
+  var side: js.UndefOr[Side] = js.undefined
   /**
     * If `true`, swiping the menu is enabled.
     */
@@ -65,7 +64,7 @@ object IonMenu {
     onIonDidOpen: /* event */ CustomEvent[Unit] => Unit = null,
     onIonWillClose: /* event */ CustomEvent[Unit] => Unit = null,
     onIonWillOpen: /* event */ CustomEvent[Unit] => Unit = null,
-    side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = null,
+    side: Side = null,
     swipeGesture: js.UndefOr[Boolean] = js.undefined,
     `type`: String = null
   ): IonMenu = {

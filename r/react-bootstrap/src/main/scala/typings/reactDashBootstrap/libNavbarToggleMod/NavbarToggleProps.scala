@@ -1,10 +1,10 @@
 package typings.reactDashBootstrap.libNavbarToggleMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AllHTMLAttributes
 import typings.react.reactMod.ClassAttributes
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

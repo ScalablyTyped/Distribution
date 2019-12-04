@@ -15,26 +15,26 @@ import scala.scalajs.js.annotation._
 object distEs2015RendererShaderLibEngineShaderLibMod extends js.Object {
   @js.native
   abstract class EngineShaderLib () extends ShaderLib {
-    var attributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
+    var attributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
     var fsChunk: GLSLChunk = js.native
     var fsSource: String = js.native
     var fsSourceBody: String = js.native
     var fsSourceDefine: String = js.native
-    var fsSourceDefineList: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
-    var fsSourceExtensionList: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var fsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
+    var fsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
     var fsSourceFuncDeclare: String = js.native
     var fsSourceFuncDefine: String = js.native
     var fsSourceTop: String = js.native
     var fsSourceVarDeclare: String = js.native
     @JSName("shader")
     var shader_EngineShaderLib: EngineShader = js.native
-    var uniforms: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
+    var uniforms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<ShaderVariable> */ js.Any = js.native
     var vsChunk: GLSLChunk = js.native
     var vsSource: String = js.native
     var vsSourceBody: String = js.native
     var vsSourceDefine: String = js.native
-    var vsSourceDefineList: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
-    var vsSourceExtensionList: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
+    var vsSourceDefineList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any = js.native
+    var vsSourceExtensionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<string> */ js.Any = js.native
     var vsSourceFuncDeclare: String = js.native
     var vsSourceFuncDefine: String = js.native
     var vsSourceTop: String = js.native

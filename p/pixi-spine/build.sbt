@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi-spine"
-version := "2.1.4-4d3f7a"
+version := "2.1.4-3044f3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.atJupyterlabCsvviewer.libWidgetMod
 
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.ABCWidgetFactory
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabDocregistry.libRegistryMod.IDocumentWidget
 import scala.scalajs.js

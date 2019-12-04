@@ -1,7 +1,7 @@
 package typings.slate.slateMod
 
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

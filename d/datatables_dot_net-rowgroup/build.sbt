@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-rowgroup"
-version := "1.0-dt-20190212Z-bfea8f"
+version := "1.0-dt-20190212Z-feec12"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20191018Z-d479f9",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-36922a",
+  "org.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20191018Z-8405b9",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

@@ -1,6 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.ReadableStream
 import typings.openpgp.openpgpMod.message.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`

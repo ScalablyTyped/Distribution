@@ -8,13 +8,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.comments")
 @js.native
-class comments () extends baseview {
+class comments ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$onLoad")
   var $onLoad_Original: WebixCallback = js.native
+  @JSName("$skin")
+  var $skin_Original_comments: WebixCallback = js.native
   @JSName("config")
   var config_comments: commentsConfig = js.native
   @JSName("$exportView")
-  def $exportView(): baseview = js.native
+  def $exportView(): typings.webix.webix.ui.baseview = js.native
   @JSName("$onLoad")
   def $onLoad(args: js.Any*): js.Any = js.native
   def attachEvent(`type`: commentsEventName, functor: WebixCallback): String | Double = js.native

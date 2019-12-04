@@ -1,6 +1,7 @@
 package typings.dmgDashBuilder
 
-import typings.appDashBuilderDashLib.outMod.Target
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Target
+import typings.appDashBuilderDashLib.outMacPackagerMod.default
 import typings.appDashBuilderDashLib.outOptionsMacOptionsMod.DmgOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation._
 object dmgDashBuilderMod extends js.Object {
   @js.native
   class DmgTarget protected () extends Target {
-    def this(
-      packager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MacPackager */ js.Any,
-      outDir: String
-    ) = this()
+    def this(packager: default, outDir: String) = this()
     @JSName("options")
     val options_DmgTarget: DmgOptions = js.native
     val packager: js.Any = js.native

@@ -10,94 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IDropZone
-  extends typings.extjs.Ext.dd.IDropZone {
-  /** [Method] Returns a custom data object associated with the DOM node that is the target of the event
-  		* @param e Object
-  		* @returns Object data The custom data
-  		*/
-  @JSName("getTargetFromEvent")
-  var getTargetFromEvent_IDropZone: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], _]] = js.undefined
-  /** [Method] Moved out of the DropZone without dropping
-  		* @param node Object
-  		* @param dragZone Object
-  		* @param e Object
-  		* @param data Object
-  		*/
-  @JSName("notifyOut")
-  var notifyOut_IDropZone: js.UndefOr[
-    js.Function4[
-      /* node */ js.UndefOr[js.Any], 
-      /* dragZone */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      Unit
-    ]
-  ] = js.undefined
-  /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped on it but not on any of its registered
-  		* @param dd Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns Boolean True if the drop was valid, else false
-  		*/
-  @JSName("onContainerDrop")
-  var onContainerDrop_IDropZone: js.UndefOr[
-    js.Function3[
-      /* dd */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      Boolean
-    ]
-  ] = js.undefined
-  /** [Method] The mouse is past the end of all nodes or there are no nodes
-  		* @param dd Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns String status The CSS class that communicates the drop status back to the source so that the underlying Ext.dd.StatusProxy can be updated
-  		*/
-  @JSName("onContainerOver")
-  var onContainerOver_IDropZone: js.UndefOr[
-    js.Function3[
-      /* dd */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      java.lang.String
-    ]
-  ] = js.undefined
-  /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped onto the drop node
-  		* @param targetNode Object
-  		* @param dragZone Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns Boolean True if the drop was valid, else false
-  		*/
-  @JSName("onNodeDrop")
-  var onNodeDrop_IDropZone: js.UndefOr[
-    js.Function4[
-      /* targetNode */ js.UndefOr[js.Any], 
-      /* dragZone */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      Boolean
-    ]
-  ] = js.undefined
-  /** [Method] The mouse is over a View node
-  		* @param node Object
-  		* @param dragZone Object
-  		* @param e Object
-  		* @param data Object
-  		* @returns String status The CSS class that communicates the drop status back to the source so that the underlying Ext.dd.StatusProxy can be updated
-  		*/
-  @JSName("onNodeOver")
-  var onNodeOver_IDropZone: js.UndefOr[
-    js.Function4[
-      /* node */ js.UndefOr[js.Any], 
-      /* dragZone */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[js.Any], 
-      /* data */ js.UndefOr[js.Any], 
-      java.lang.String
-    ]
-  ] = js.undefined
-}
+  extends typings.extjs.Ext.dd.IDropZone
 
 object IDropZone {
   @scala.inline
@@ -127,7 +40,7 @@ object IDropZone {
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
     getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    getTargetFromEvent: /* e */ js.UndefOr[js.Any] => _ = null,
+    getTargetFromEvent: /* e */ js.UndefOr[Event] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
     id: java.lang.String = null,
@@ -148,11 +61,11 @@ object IDropZone {
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     notifyDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
     notifyEnter: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
-    notifyOut: (/* node */ js.UndefOr[js.Any], /* dragZone */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Unit = null,
+    notifyOut: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
     notifyOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
     onAvailable: () => Unit = null,
-    onContainerDrop: (/* dd */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Boolean = null,
-    onContainerOver: (/* dd */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
+    onContainerDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    onContainerOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
     onDrag: /* e */ js.UndefOr[Event] => Unit = null,
     onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
     onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
@@ -161,10 +74,10 @@ object IDropZone {
     onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
     onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
-    onNodeDrop: (/* targetNode */ js.UndefOr[js.Any], /* dragZone */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    onNodeDrop: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
     onNodeEnter: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
     onNodeOut: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onNodeOver: (/* node */ js.UndefOr[js.Any], /* dragZone */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
+    onNodeOver: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => java.lang.String = null,
     overClass: java.lang.String = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
@@ -239,7 +152,7 @@ object IDropZone {
     if (!js.isUndefined(moveOnly)) __obj.updateDynamic("moveOnly")(moveOnly.asInstanceOf[js.Any])
     if (notifyDrop != null) __obj.updateDynamic("notifyDrop")(js.Any.fromFunction3(notifyDrop))
     if (notifyEnter != null) __obj.updateDynamic("notifyEnter")(js.Any.fromFunction3(notifyEnter))
-    if (notifyOut != null) __obj.updateDynamic("notifyOut")(js.Any.fromFunction4(notifyOut))
+    if (notifyOut != null) __obj.updateDynamic("notifyOut")(js.Any.fromFunction3(notifyOut))
     if (notifyOver != null) __obj.updateDynamic("notifyOver")(js.Any.fromFunction3(notifyOver))
     if (onAvailable != null) __obj.updateDynamic("onAvailable")(js.Any.fromFunction0(onAvailable))
     if (onContainerDrop != null) __obj.updateDynamic("onContainerDrop")(js.Any.fromFunction3(onContainerDrop))

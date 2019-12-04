@@ -1,6 +1,9 @@
 package typings.objectDotOmit
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.objectDotOmit.objectDotOmitMod.Omit
+import typings.std.Exclude
+import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,5 +33,6 @@ object objectDotOmitMod extends js.Object {
     */
   def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = js.native
   def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = js.native
+  type Omit[GType, GKeys /* <: String */] = Pick[GType, Exclude[String, GKeys]]
 }
 

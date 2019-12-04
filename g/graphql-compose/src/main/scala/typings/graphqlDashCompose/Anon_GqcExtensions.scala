@@ -1,6 +1,6 @@
 package typings.graphqlDashCompose
 
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Extensions
+import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

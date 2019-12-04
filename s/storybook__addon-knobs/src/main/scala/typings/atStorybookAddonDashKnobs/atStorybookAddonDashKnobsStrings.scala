@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object atStorybookAddonDashKnobsStrings {
   @js.native
+  sealed trait Other extends js.Object
+  
+  @js.native
   sealed trait accept extends js.Object
   
   @js.native
@@ -28,7 +31,13 @@ object atStorybookAddonDashKnobsStrings {
   sealed trait date extends js.Object
   
   @js.native
+  sealed trait emit extends js.Object
+  
+  @js.native
   sealed trait files extends js.Object
+  
+  @js.native
+  sealed trait getQueryParam extends js.Object
   
   @js.native
   sealed trait `inline-check` extends OptionsKnobOptionsDisplay
@@ -55,6 +64,12 @@ object atStorybookAddonDashKnobsStrings {
   sealed trait `object` extends js.Object
   
   @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
+  sealed trait on extends js.Object
+  
+  @js.native
   sealed trait options extends js.Object
   
   @js.native
@@ -76,6 +91,9 @@ object atStorybookAddonDashKnobsStrings {
   sealed trait separator extends js.Object
   
   @js.native
+  sealed trait setQueryParams extends js.Object
+  
+  @js.native
   sealed trait step extends js.Object
   
   @js.native
@@ -87,6 +105,8 @@ object atStorybookAddonDashKnobsStrings {
   @js.native
   sealed trait value extends js.Object
   
+  @scala.inline
+  def Other: Other = "Other".asInstanceOf[Other]
   @scala.inline
   def accept: accept = "accept".asInstanceOf[accept]
   @scala.inline
@@ -102,7 +122,11 @@ object atStorybookAddonDashKnobsStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def emit: emit = "emit".asInstanceOf[emit]
+  @scala.inline
   def files: files = "files".asInstanceOf[files]
+  @scala.inline
+  def getQueryParam: getQueryParam = "getQueryParam".asInstanceOf[getQueryParam]
   @scala.inline
   def `inline-check`: `inline-check` = "inline-check".asInstanceOf[`inline-check`]
   @scala.inline
@@ -120,6 +144,10 @@ object atStorybookAddonDashKnobsStrings {
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
+  @scala.inline
   def options: options = "options".asInstanceOf[options]
   @scala.inline
   def optionsObj: optionsObj = "optionsObj".asInstanceOf[optionsObj]
@@ -133,6 +161,8 @@ object atStorybookAddonDashKnobsStrings {
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
+  @scala.inline
+  def setQueryParams: setQueryParams = "setQueryParams".asInstanceOf[setQueryParams]
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   @scala.inline

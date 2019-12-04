@@ -1,6 +1,5 @@
 package typings.atAntDashDesignProDashLayout.libHeaderMod
 
-import typings.antd.esMenuMenuContextMod.MenuTheme
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.realDark
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sidemenu
@@ -34,7 +33,9 @@ trait HeaderViewProps extends js.Object {
   var menuRender: js.UndefOr[
     WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
   ] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark
+  ] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
   var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
@@ -60,7 +61,7 @@ object HeaderViewProps {
     menu: Anon_Locale = null,
     menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,
     menuRender: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]] = null,
-    navTheme: MenuTheme | realDark = null,
+    navTheme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any) | realDark = null,
     onCollapse: /* collapsed */ Boolean => Unit = null,
     primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[HeaderViewProps, ReactNode]] = null,

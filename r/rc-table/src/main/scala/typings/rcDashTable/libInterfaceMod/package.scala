@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInterfaceMod {
-  import typings.rcDashTable.Anon_ExpandableExpanded
-  import typings.react.NativeMouseEvent
+  import typings.rcDashTable.Anon_Expandable
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.FC
   import typings.react.reactMod.HTMLAttributes
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.ReactElement
   import typings.react.reactMod.ReactNode
   import typings.react.reactMod.SyntheticEvent
@@ -44,7 +44,7 @@ package object libInterfaceMod {
     /* event */ SyntheticEvent[Element, Event], 
     Unit
   ]
-  type RenderExpandIcon[ValueType] = js.Function1[/* props */ Anon_ExpandableExpanded[ValueType], ReactNode]
+  type RenderExpandIcon[ValueType] = js.Function1[/* props */ Anon_Expandable[ValueType], ReactNode]
   type RenderNode = js.Function0[ReactNode]
   type RenderRows[ValueType] = js.Function3[
     /* renderData */ js.Array[ValueType], 

@@ -9,5 +9,6 @@ package object webpagetestMod {
   import typings.std.Error
 
   type Callback[R] = js.Function3[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[R], /* info */ js.Any, Unit]
+  type TestScript = js.Array[TestScriptCommand]
   type TestScriptCommand = String | (StringDictionary[String | Double | (js.Array[Double | String])])
 }

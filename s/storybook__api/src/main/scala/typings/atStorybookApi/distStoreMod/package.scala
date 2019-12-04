@@ -5,22 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distStoreMod {
-  import typings.std.Partial
+  import typings.atStorybookApi.atStorybookApiMod.State
 
-  type CallBack = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ /* s */ js.Any, 
-    Unit
-  ]
-  type GetState = js.Function0[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ js.Any
-  ]
-  type InputFnPatch = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ /* s */ js.Any, 
-    Patch
-  ]
+  type CallBack = js.Function1[/* s */ State, Unit]
+  type GetState = js.Function0[State]
+  type InputFnPatch = js.Function1[/* s */ State, Patch]
   type InputPatch = Patch | InputFnPatch
-  type Patch = Partial[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify State */ js.Any
-  ]
   type SetState = js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]
 }

@@ -1,8 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,37 +8,61 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorExpandMod extends js.Object {
   def expand[T](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]
-  ): Observable[T] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
+    ]
+  ): js.Any = js.native
   def expand[T](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
+    ],
     concurrent: Double
-  ): Observable[T] = js.native
+  ): js.Any = js.native
   def expand[T](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
+    ],
     concurrent: Double,
-    scheduler: SchedulerLike
-  ): Observable[T] = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]
-  ): Observable[R] = js.native
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ]
+  ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ],
     concurrent: Double
-  ): Observable[R] = js.native
+  ): js.Any = js.native
   @JSName("expand")
   def expand_TR[T, R](
-    `this`: Observable[T],
-    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    project: js.Function2[
+      /* value */ T, 
+      /* index */ Double, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ],
     concurrent: Double,
-    scheduler: SchedulerLike
-  ): Observable[R] = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
 }
 

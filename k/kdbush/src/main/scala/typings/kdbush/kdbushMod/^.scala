@@ -1,6 +1,5 @@
 package typings.kdbush.kdbushMod
 
-import typings.kdbush.Points
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

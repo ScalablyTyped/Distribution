@@ -1,5 +1,7 @@
 package typings.decimalDotJs
 
+import typings.decimalDotJs.decimalDotGlobalMod.DecimalModulo
+import typings.decimalDotJs.decimalDotGlobalMod.DecimalRounding
 import typings.decimalDotJs.decimalDotJsMod.Decimal.Modulo
 import typings.decimalDotJs.decimalDotJsMod.Decimal.Rounding
 import scala.scalajs.js
@@ -9,51 +11,71 @@ import scala.scalajs.js.annotation._
 object decimalDotJsNumbers {
   @js.native
   sealed trait `0`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `1`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `2`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `3`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `4`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `5`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `6`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `7`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
   sealed trait `8`
-    extends Modulo
+    extends DecimalModulo
+       with DecimalRounding
+       with Modulo
        with Rounding
   
   @js.native
-  sealed trait `9` extends Modulo
+  sealed trait `9`
+    extends DecimalModulo
+       with Modulo
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

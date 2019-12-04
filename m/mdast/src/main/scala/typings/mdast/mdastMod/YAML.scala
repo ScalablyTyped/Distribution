@@ -14,7 +14,7 @@ trait YAML extends Literal {
 
 object YAML {
   @scala.inline
-  def apply(`type`: yaml, value: String, data: Data = null, position: Position = null): YAML = {
+  def apply(`type`: yaml, value: js.Any, data: Data = null, position: Position = null): YAML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

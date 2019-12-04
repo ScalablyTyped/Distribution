@@ -4,9 +4,9 @@ import typings.atUifabricMergeDashStyles.libIStyleFunctionMod.IStyleFunctionOrOb
 import typings.atUifabricStyling.libInterfacesIThemeMod.ITheme
 import typings.atUifabricUtilities.libCreateRefMod.IRefObject
 import typings.officeDashUiDashFabricDashReact.libUtilitiesColorInterfacesMod.IColor
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

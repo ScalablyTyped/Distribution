@@ -91,7 +91,11 @@ object reactDashToolboxComponents extends reactDashToolboxProps {
   @scala.inline
   def Navigation: ComponentType[NavigationProps] = js.constructorOf[typings.reactDashToolbox.libNavigationMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NavigationProps]]
   @scala.inline
+  def Overlay: ComponentType[OverlayProps] = js.constructorOf[typings.reactDashToolbox.libOverlayMod.default].asInstanceOf[typings.react.reactMod.ComponentType[OverlayProps]]
+  @scala.inline
   def Panel: ComponentType[PanelProps] = js.constructorOf[typings.reactDashToolbox.libLayoutMod.Panel].asInstanceOf[typings.react.reactMod.ComponentType[PanelProps]]
+  @scala.inline
+  def Portal: ComponentType[PortalProps] = js.constructorOf[typings.reactDashToolbox.libHocPortalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[PortalProps]]
   @scala.inline
   def ProgressBar: ComponentType[ProgressBarProps] = js.constructorOf[typings.reactDashToolbox.libProgressUnderscoreBarProgressBarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ProgressBarProps]]
   @scala.inline
@@ -124,6 +128,8 @@ object reactDashToolboxComponents extends reactDashToolboxProps {
   def TableRow: ComponentType[TableRowProps] = js.constructorOf[typings.reactDashToolbox.libTableTableRowMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TableRowProps]]
   @scala.inline
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.reactDashToolbox.libTabsTabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
+  @scala.inline
+  def ThemeProvider: ComponentType[ThemeProviderProps] = js.constructorOf[typings.reactDashToolbox.libThemeProviderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ThemeProviderProps]]
   @scala.inline
   def TimePicker: ComponentType[TimePickerProps] = js.constructorOf[typings.reactDashToolbox.libTimeUnderscorePickerTimePickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TimePickerProps]]
   @scala.inline

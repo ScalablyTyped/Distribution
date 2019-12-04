@@ -1,7 +1,5 @@
 package typings.mali.maliMod
 
-import typings.mali.GrpcRequest
-import typings.mali.GrpcResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

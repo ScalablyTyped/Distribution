@@ -24,9 +24,12 @@ package object cypress {
   import typings.std.FocusEvent
   import typings.std.KeyboardEvent
   import typings.std.MouseEvent
+  import typings.std.Partial
   import typings.std.TouchEvent
   import typings.std.UIEvent
 
+  // tslint:disable-next-line:strict-export-declare-modifiers
+  type GlobalPartial[T] = Partial[T]
   type JQuery[TElement] = JQuery_[TElement]
   // tslint:disable-next-line:no-empty-interface
   type JQueryAjaxSettings = AjaxSettings[js.Any]

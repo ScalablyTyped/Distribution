@@ -1,7 +1,7 @@
 package typings.rcDashTable.libExpandableTableMod
 
-import typings.rcDashTable.Anon_ExpandableExpanded
-import typings.rcDashTable.Anon_HandleExpandChangeNeedIndentSpaced
+import typings.rcDashTable.Anon_Expandable
+import typings.rcDashTable.Anon_HandleExpandChange
 import typings.rcDashTable.libInterfaceMod.ExpandedRowRender
 import typings.rcDashTable.libInterfaceMod.GetRowKey
 import typings.rcDashTable.libInterfaceMod.Key
@@ -32,13 +32,13 @@ trait ExpandableTableProps[ValueType] extends js.Object {
   var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
   var prefixCls: String
   var store: TableStore
-  def children(info: Anon_HandleExpandChangeNeedIndentSpaced[ValueType]): ReactNode
+  def children(info: Anon_HandleExpandChange[ValueType]): ReactNode
 }
 
 object ExpandableTableProps {
   @scala.inline
   def apply[ValueType](
-    children: Anon_HandleExpandChangeNeedIndentSpaced[ValueType] => ReactNode,
+    children: Anon_HandleExpandChange[ValueType] => ReactNode,
     columnManager: typings.rcDashTable.libColumnManagerMod.default,
     getRowKey: (ValueType, /* index */ Double) => Key,
     prefixCls: String,
@@ -47,7 +47,7 @@ object ExpandableTableProps {
     data: js.Array[ValueType] = null,
     defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[Key] = null,
-    expandIcon: /* props */ Anon_ExpandableExpanded[ValueType] => ReactNode = null,
+    expandIcon: /* props */ Anon_Expandable[ValueType] => ReactNode = null,
     expandIconAsCell: js.UndefOr[Boolean] = js.undefined,
     expandIconColumnIndex: Int | Double = null,
     expandedRowClassName: (/* record */ ValueType, /* index */ Double, /* indent */ Double) => String = null,

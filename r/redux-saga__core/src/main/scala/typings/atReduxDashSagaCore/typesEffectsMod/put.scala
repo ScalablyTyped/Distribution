@@ -13,7 +13,7 @@ object put extends js.Object {
   def apply[T](channel: PuttableChannel[T], action: T): ChannelPutEffect[T] = js.native
   def apply[T](
     channel: PuttableChannel[T],
-    action: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify END */ js.Any
+    action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify END */ js.Any
   ): ChannelPutEffect[T] = js.native
 }
 

@@ -1,6 +1,7 @@
 package typings.plottable
 
 import typings.plottable.buildSrcComponentsComponentMod.Component
+import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcUtilsTransformAwareTranslatorMod.Translator
 import typings.std.Event
 import typings.std.HTMLElement
@@ -25,7 +26,7 @@ object buildSrcUtilsTransformAwareTranslatorMod extends js.Object {
       *
       * Does not support `transform-origin` CSS property other than the default.
       */
-    def computePosition(clientX: Double, clientY: Double): js.Any = js.native
+    def computePosition(clientX: Double, clientY: Double): Point = js.native
   }
   
   def getTranslator(component: Component): Translator = js.native

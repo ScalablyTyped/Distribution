@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,27 +7,38 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/windowTime", JSImport.Namespace)
 @js.native
 object operatorWindowTimeMod extends js.Object {
-  def windowTime[T](`this`: Observable[T], windowTimeSpan: Double): Observable[Observable[T]] = js.native
-  def windowTime[T](`this`: Observable[T], windowTimeSpan: Double, scheduler: SchedulerLike): Observable[Observable[T]] = js.native
-  def windowTime[T](`this`: Observable[T], windowTimeSpan: Double, windowCreationInterval: Double): Observable[Observable[T]] = js.native
   def windowTime[T](
-    `this`: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    windowTimeSpan: Double
+  ): js.Any = js.native
+  def windowTime[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    windowTimeSpan: Double,
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
+  def windowTime[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    windowTimeSpan: Double,
+    windowCreationInterval: Double
+  ): js.Any = js.native
+  def windowTime[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     windowTimeSpan: Double,
     windowCreationInterval: Double,
     maxWindowSize: Double
-  ): Observable[Observable[T]] = js.native
+  ): js.Any = js.native
   def windowTime[T](
-    `this`: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     windowTimeSpan: Double,
     windowCreationInterval: Double,
     maxWindowSize: Double,
-    scheduler: SchedulerLike
-  ): Observable[Observable[T]] = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
   def windowTime[T](
-    `this`: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     windowTimeSpan: Double,
     windowCreationInterval: Double,
-    scheduler: SchedulerLike
-  ): Observable[Observable[T]] = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
 }
 

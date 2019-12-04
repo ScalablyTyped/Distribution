@@ -15,7 +15,7 @@ package object vscodeDashLanguageserverMod {
   type IConnection = Connection[`_`, `_`, `_`, `_`, `_`, `_`]
   type RemoteWorkspace = _RemoteWorkspace with Configuration with WorkspaceFolders
   type TelemetryFeature[P] = Feature[Telemetry, P]
-  type TracerFeature[P] = Feature[Tracer, P]
+  type TracerFeature[P] = Feature[typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.Tracer, P]
   type WindowFeature[P] = Feature[RemoteWindow, P]
   type WorkspaceFeature[P] = Feature[RemoteWorkspace, P]
 }

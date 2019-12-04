@@ -4,8 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberDefaultResolver * / any */ @JSImport("ember", "Ember.DefaultResolver")
+@JSImport("ember", "Ember.DefaultResolver")
 @js.native
-class DefaultResolver () extends js.Object
+class DefaultResolver ()
+  extends typings.atEmberApplication.dashPrivateDefaultDashResolverMod.DefaultResolver
 

@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoLegendsMod {
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.FunctionComponent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
 
   type LegendMouseHandler = js.Function2[
     /* data */ LegendMouseHandlerData, 

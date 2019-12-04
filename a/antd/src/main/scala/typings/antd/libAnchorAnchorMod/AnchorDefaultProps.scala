@@ -1,9 +1,9 @@
 package typings.antd.libAnchorAnchorMod
 
 import typings.antd.Anon_Href
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

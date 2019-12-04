@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Leaflet.Map.MapOptions * / any */ trait MapOptions extends js.Object {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Leaflet.Map.MapOptions * / any */ trait MapOptions extends js.Object {
   var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
   var gridLayer: js.UndefOr[js.Any] = js.undefined
   var infoControl: js.UndefOr[ControlOptions] = js.undefined

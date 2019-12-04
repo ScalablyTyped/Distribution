@@ -52,12 +52,8 @@ class Event protected ()
   ) = this()
   var changedPointers: js.Array[Pointer] = js.native
   var currentPointer: Pointer = js.native
-  @JSName("currentTarget")
-  var currentTarget_Event: Object | Map = js.native
   var originalEvent: Event = js.native
   var pointers: js.Array[Pointer] = js.native
   var targetPointers: js.Array[Pointer] = js.native
-  @JSName("target")
-  var target_Event: Object | Map = js.native
 }
 

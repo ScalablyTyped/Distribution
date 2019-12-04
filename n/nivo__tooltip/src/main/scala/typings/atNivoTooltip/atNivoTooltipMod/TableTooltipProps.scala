@@ -1,6 +1,6 @@
 package typings.atNivoTooltip.atNivoTooltipMod
 
-import typings.atNivoTooltip.PickimportwarningQualifyReferencesresolveTypeRefma
+import typings.atNivoTooltip.PickimportwarningtransformsQualifyReferencesresolv
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TableTooltipProps extends js.Object {
   var renderContent: js.UndefOr[js.Function0[ReactNode]] = js.undefined
   var rows: js.Array[js.Array[ReactNode]]
-  var theme: PickimportwarningQualifyReferencesresolveTypeRefma
+  var theme: PickimportwarningtransformsQualifyReferencesresolv
   var title: js.UndefOr[ReactNode] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object TableTooltipProps {
   @scala.inline
   def apply(
     rows: js.Array[js.Array[ReactNode]],
-    theme: PickimportwarningQualifyReferencesresolveTypeRefma,
+    theme: PickimportwarningtransformsQualifyReferencesresolv,
     renderContent: () => ReactNode = null,
     title: ReactNode = null
   ): TableTooltipProps = {

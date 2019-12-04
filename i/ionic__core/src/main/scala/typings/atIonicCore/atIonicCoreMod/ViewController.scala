@@ -9,9 +9,6 @@ import scala.scalajs.js.annotation._
 class ViewController protected ()
   extends typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.ViewController {
   def this(component: js.Any) = this()
-  def this(
-    component: js.Any,
-    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
-  ) = this()
+  def this(component: js.Any, params: ComponentProps[Null]) = this()
 }
 

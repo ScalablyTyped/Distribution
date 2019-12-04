@@ -36,7 +36,7 @@ class Adapter ()
     */
   def createRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
   /**
@@ -45,7 +45,7 @@ class Adapter ()
     */
   def deleteRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
   /**
@@ -53,7 +53,7 @@ class Adapter ()
     */
   def findAll[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     sinceToken: String,
     snapshotRecordArray: SnapshotRecordArray[K]
   ): Promise[_] = js.native
@@ -64,7 +64,7 @@ class Adapter ()
     */
   def findMany[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     ids: js.Array[_],
     snapshots: js.Array[_]
   ): Promise[_] = js.native
@@ -77,7 +77,7 @@ class Adapter ()
     */
   def findRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     id: String,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
@@ -89,7 +89,7 @@ class Adapter ()
     */
   def generateIdForRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     inputProperties: js.Object
   ): String | Double = js.native
   /**
@@ -102,7 +102,7 @@ class Adapter ()
     */
   def query[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object,
     recordArray: AdapterPopulatedRecordArray[_]
   ): Promise[_] = js.native
@@ -112,7 +112,7 @@ class Adapter ()
     */
   def queryRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     query: js.Object
   ): Promise[_] = js.native
   /**
@@ -149,7 +149,7 @@ class Adapter ()
     */
   def updateRecord[K /* <: String */](
     store: Store,
-    `type`: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModelRegistry * / any[K] */ js.Any,
+    `type`: /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any,
     snapshot: Snapshot[K]
   ): Promise[_] = js.native
 }

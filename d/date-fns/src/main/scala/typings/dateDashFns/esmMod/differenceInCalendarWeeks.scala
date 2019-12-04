@@ -1,6 +1,6 @@
 package typings.dateDashFns.esmMod
 
-import typings.dateDashFns.Anon_0123456Locale
+import typings.dateDashFns.Anon_012
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object differenceInCalendarWeeks extends js.Object {
   def apply(dateLeft: Double, dateRight: Double): Double = js.native
-  def apply(dateLeft: Double, dateRight: Double, options: Anon_0123456Locale): Double = js.native
+  def apply(dateLeft: Double, dateRight: Double, options: Anon_012): Double = js.native
   def apply(dateLeft: Double, dateRight: Date): Double = js.native
-  def apply(dateLeft: Double, dateRight: Date, options: Anon_0123456Locale): Double = js.native
+  def apply(dateLeft: Double, dateRight: Date, options: Anon_012): Double = js.native
   def apply(dateLeft: Date, dateRight: Double): Double = js.native
-  def apply(dateLeft: Date, dateRight: Double, options: Anon_0123456Locale): Double = js.native
+  def apply(dateLeft: Date, dateRight: Double, options: Anon_012): Double = js.native
   def apply(dateLeft: Date, dateRight: Date): Double = js.native
-  def apply(dateLeft: Date, dateRight: Date, options: Anon_0123456Locale): Double = js.native
+  def apply(dateLeft: Date, dateRight: Date, options: Anon_012): Double = js.native
 }
 

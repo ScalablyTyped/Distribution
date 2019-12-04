@@ -1,0 +1,13 @@
+package typings.atMaterialDashUiCore.stylesColorManipulatorMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/core/styles/colorManipulator", "lighten")
+@js.native
+object lighten extends js.Object {
+  def apply(color: String): String = js.native
+  def apply(color: String, coefficient: Double): String = js.native
+}
+

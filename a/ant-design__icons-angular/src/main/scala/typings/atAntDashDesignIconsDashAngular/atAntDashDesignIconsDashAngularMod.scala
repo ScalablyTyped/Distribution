@@ -1,5 +1,6 @@
 package typings.atAntDashDesignIconsDashAngular
 
+import typings.atAngularCommon.httpMod.HttpBackend
 import typings.atAngularCore.atAngularCoreMod.ElementRef
 import typings.atAngularCore.atAngularCoreMod.Renderer2
 import typings.atAngularCore.atAngularCoreMod.RendererFactory2
@@ -36,7 +37,7 @@ object atAntDashDesignIconsDashAngularMod extends js.Object {
     extends typings.atAntDashDesignIconsDashAngular.publicUnderscoreApiMod.IconService {
     def this(
       _rendererFactory: RendererFactory2,
-      _handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpBackend */ js.Any,
+      _handler: HttpBackend,
       _document: js.Any,
       sanitizer: DomSanitizer
     ) = this()

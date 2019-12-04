@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reconnectingwebsocket"
-version := "1.0-dt-20190910Z-1f3ee0"
+version := "1.0-dt-20190910Z-3ab88e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

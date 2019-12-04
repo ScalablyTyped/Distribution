@@ -1,6 +1,6 @@
 package typings.antdDashMobile.antdDashMobileMod
 
-import typings.antdDashMobile.TypeofClassItemBrief
+import typings.antdDashMobile.TypeofClassItem
 import typings.antdDashMobile.libListMod.ListProps
 import typings.antdDashMobile.libListMod.default
 import typings.std.Partial
@@ -16,7 +16,7 @@ class List () extends default
 @JSImport("antd-mobile", "List")
 @js.native
 object List extends js.Object {
-  var Item: TypeofClassItemBrief = js.native
+  var Item: TypeofClassItem = js.native
   var defaultProps: Partial[ListProps] = js.native
 }
 

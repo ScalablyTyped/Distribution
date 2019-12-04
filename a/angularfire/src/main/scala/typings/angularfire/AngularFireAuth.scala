@@ -88,11 +88,11 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$authWithPassword")
   def $authWithPassword(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
   ): IPromise[_] = js.native
   @JSName("$authWithPassword")
   def $authWithPassword(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any,
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any,
     options: js.Object
   ): IPromise[_] = js.native
   /**
@@ -104,7 +104,7 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$changeEmail")
   def $changeEmail(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseChangeEmailCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangeEmailCredentials */ js.Any
   ): IPromise[_] = js.native
   /**
   	 * Changes the password for an email/password user.
@@ -115,7 +115,7 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$changePassword")
   def $changePassword(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseChangePasswordCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseChangePasswordCredentials */ js.Any
   ): IPromise[_] = js.native
   /**
   	 * Creates a new email/password user. Note that this function only creates the user, if you
@@ -128,7 +128,7 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$createUser")
   def $createUser(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
   ): IPromise[_] = js.native
   /**
   	 * Synchronously retrieves the current authentication data.
@@ -161,7 +161,7 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$removeUser")
   def $removeUser(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseCredentials */ js.Any
   ): IPromise[_] = js.native
   /**
   	 * Utility method which can be used in a route's resolve() method to require that a route has
@@ -181,7 +181,7 @@ trait AngularFireAuth extends js.Object {
   	 */
   @JSName("$resetPassword")
   def $resetPassword(
-    credentials: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FirebaseResetPasswordCredentials */ js.Any
+    credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseResetPasswordCredentials */ js.Any
   ): IPromise[_] = js.native
   /**
   	 * Unauthenticates the Firebase reference.

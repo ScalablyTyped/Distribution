@@ -1,6 +1,5 @@
 package typings.mssql.mssqlMod
 
-import typings.mssql.IIsolationLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

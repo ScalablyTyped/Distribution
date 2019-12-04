@@ -1,6 +1,5 @@
 package typings.reactDashRte.reactDashRteMod
 
-import typings.reactDashRte.StyleConfigList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

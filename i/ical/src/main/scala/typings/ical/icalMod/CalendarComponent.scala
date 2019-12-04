@@ -1,7 +1,7 @@
 package typings.ical.icalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rrule.distEsmSrcMod.RRule
+import typings.rrule.rruleMod.RRule
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

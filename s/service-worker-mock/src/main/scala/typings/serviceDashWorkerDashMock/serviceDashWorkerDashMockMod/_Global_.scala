@@ -40,7 +40,7 @@ object _Global_ extends js.Object {
     def trigger_push(
       name: push,
       args: Partial[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PushEvent */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ _
         ]
     ): js.Promise[Unit] = js.native
   }
@@ -71,7 +71,7 @@ object _Global_ extends js.Object {
   def trigger_push(
     name: push,
     args: Partial[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PushEvent */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ _
     ]
   ): js.Promise[Unit] = js.native
 }

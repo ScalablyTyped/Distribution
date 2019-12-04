@@ -221,6 +221,9 @@ object officeDashUiDashFabricDashReactNumbers {
   sealed trait `40` extends js.Object
   
   @js.native
+  sealed trait `42` extends js.Object
+  
+  @js.native
   sealed trait `45` extends js.Object
   
   @js.native
@@ -516,6 +519,8 @@ object officeDashUiDashFabricDashReactNumbers {
   def `4`: `4` = 4.asInstanceOf[`4`]
   @scala.inline
   def `40`: `40` = 40.asInstanceOf[`40`]
+  @scala.inline
+  def `42`: `42` = 42.asInstanceOf[`42`]
   @scala.inline
   def `45`: `45` = 45.asInstanceOf[`45`]
   @scala.inline

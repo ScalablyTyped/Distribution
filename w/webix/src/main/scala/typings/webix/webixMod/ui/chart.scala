@@ -12,9 +12,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.chart")
 @js.native
-class chart () extends baseview {
+class chart ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_chart: WebixCallback = js.native
   var colormap: StringDictionary[js.Any] = js.native
   @JSName("config")
   var config_chart: chartConfig = js.native

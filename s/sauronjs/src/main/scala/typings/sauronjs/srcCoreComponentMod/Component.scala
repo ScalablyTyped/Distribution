@@ -20,12 +20,12 @@ trait Component extends js.Object {
   def findAll(selector: String): NodeListOf[HTMLElement] = js.native
   def registerSubscription(
     subscriptions: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Subscription */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ _
     ]
   ): Unit = js.native
   def subscribe(
     observables: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Observable<any> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
     ]
   ): Unit = js.native
 }

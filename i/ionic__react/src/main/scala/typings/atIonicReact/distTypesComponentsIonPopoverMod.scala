@@ -48,11 +48,6 @@ object distTypesComponentsIonPopoverMod extends js.Object {
     val displayName: String = js.native
   }
   
-  type ReactPopoverOptions = (Omit[
-    PopoverOptions[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ _
-    ], 
-    component | componentProps
-  ]) with Anon_ChildrenReactNode
+  type ReactPopoverOptions = (Omit[PopoverOptions[ComponentRef], component | componentProps]) with Anon_ChildrenReactNode
 }
 

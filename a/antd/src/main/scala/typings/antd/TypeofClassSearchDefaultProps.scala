@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.esTransferSearchMod.default
+import typings.antd.libTransferSearchMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

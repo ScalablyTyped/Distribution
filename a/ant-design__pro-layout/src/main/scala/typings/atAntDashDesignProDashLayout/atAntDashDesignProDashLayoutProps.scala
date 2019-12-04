@@ -1,50 +1,55 @@
 package typings.atAntDashDesignProDashLayout
 
-import typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps
+import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait atAntDashDesignProDashLayoutProps {
-  type BaseMenuProps = typings.atAntDashDesignProDashLayout.esSiderMenuBaseMenuMod.BaseMenuProps
   @scala.inline
-  def BasicLayoutProps: typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps
-  type BasicLayoutProps = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps
+  def BaseMenuProps: typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.BaseMenuProps.type = typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.BaseMenuProps
+  type BaseMenuProps = typings.atAntDashDesignProDashLayout.libSiderMenuBaseMenuMod.BaseMenuProps
   @scala.inline
-  def DefaultFooterProps: typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps.type = typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps
-  type DefaultFooterProps = typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps
+  def BasicLayoutProps: typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
+  type BasicLayoutProps = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
   @scala.inline
-  def DefaultHeaderProps: HeaderViewProps.type = typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps
+  def BlockCheckboxProps: typings.atAntDashDesignProDashLayout.libSettingDrawerBlockCheckboxMod.BlockCheckboxProps.type = typings.atAntDashDesignProDashLayout.libSettingDrawerBlockCheckboxMod.BlockCheckboxProps
+  type BlockCheckboxProps = typings.atAntDashDesignProDashLayout.libSettingDrawerBlockCheckboxMod.BlockCheckboxProps
+  @scala.inline
+  def DefaultFooterProps: typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps.type = typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps
+  type DefaultFooterProps = typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps
+  @scala.inline
+  def DefaultHeaderProps: HeaderViewProps.type = typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
   type DefaultHeaderProps = HeaderViewProps
   @scala.inline
-  def EsProps: typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps
-  type EsProps = typings.atAntDashDesignProDashLayout.esBasicLayoutMod.BasicLayoutProps
+  def FooterProps: typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps.type = typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps
+  type FooterProps = typings.atAntDashDesignProDashLayout.libFooterMod.FooterProps
   @scala.inline
-  def FooterProps: typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps.type = typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps
-  type FooterProps = typings.atAntDashDesignProDashLayout.esFooterMod.FooterProps
+  def GlobalHeaderProps: typings.atAntDashDesignProDashLayout.libGlobalHeaderMod.GlobalHeaderProps.type = typings.atAntDashDesignProDashLayout.libGlobalHeaderMod.GlobalHeaderProps
+  type GlobalHeaderProps = typings.atAntDashDesignProDashLayout.libGlobalHeaderMod.GlobalHeaderProps
   @scala.inline
-  def GlobalHeaderProps: typings.atAntDashDesignProDashLayout.esGlobalHeaderMod.GlobalHeaderProps.type = typings.atAntDashDesignProDashLayout.esGlobalHeaderMod.GlobalHeaderProps
-  type GlobalHeaderProps = typings.atAntDashDesignProDashLayout.esGlobalHeaderMod.GlobalHeaderProps
+  def GridContentProps: typings.atAntDashDesignProDashLayout.libGridContentMod.GridContentProps.type = typings.atAntDashDesignProDashLayout.libGridContentMod.GridContentProps
+  type GridContentProps = typings.atAntDashDesignProDashLayout.libGridContentMod.GridContentProps
   @scala.inline
-  def GridContentProps: typings.atAntDashDesignProDashLayout.esGridContentMod.GridContentProps.type = typings.atAntDashDesignProDashLayout.esGridContentMod.GridContentProps
-  type GridContentProps = typings.atAntDashDesignProDashLayout.esGridContentMod.GridContentProps
-  @scala.inline
-  def HeaderProps: HeaderViewProps.type = typings.atAntDashDesignProDashLayout.esHeaderMod.HeaderViewProps
+  def HeaderProps: HeaderViewProps.type = typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
   type HeaderProps = HeaderViewProps
   @scala.inline
-  def PageHeaderWrapperProps: typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod.PageHeaderWrapperProps.type = typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod.PageHeaderWrapperProps
-  type PageHeaderWrapperProps = typings.atAntDashDesignProDashLayout.esPageHeaderWrapperMod.PageHeaderWrapperProps
+  def PageHeaderWrapperProps: typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps.type = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
+  type PageHeaderWrapperProps = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
   @scala.inline
   def ProDashLayoutProps: typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
   type ProDashLayoutProps = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
   @scala.inline
-  def SettingDrawerProps: typings.atAntDashDesignProDashLayout.esSettingDrawerMod.SettingDrawerProps.type = typings.atAntDashDesignProDashLayout.esSettingDrawerMod.SettingDrawerProps
-  type SettingDrawerProps = typings.atAntDashDesignProDashLayout.esSettingDrawerMod.SettingDrawerProps
+  def SettingDrawerProps: typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerProps.type = typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerProps
+  type SettingDrawerProps = typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerProps
   @scala.inline
-  def SiderMenuProps: typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps.type = typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps
-  type SiderMenuProps = typings.atAntDashDesignProDashLayout.esSiderMenuSiderMenuMod.SiderMenuProps
+  def SiderMenuProps: typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuProps.type = typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuProps
+  type SiderMenuProps = typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod.SiderMenuProps
   @scala.inline
-  def TopNavHeaderProps: typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps.type = typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps
-  type TopNavHeaderProps = typings.atAntDashDesignProDashLayout.esTopNavHeaderMod.TopNavHeaderProps
+  def ThemeColorProps: typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.ThemeColorProps.type = typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.ThemeColorProps
+  type ThemeColorProps = typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.ThemeColorProps
+  @scala.inline
+  def TopNavHeaderProps: typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps.type = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps
+  type TopNavHeaderProps = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps
 }
 

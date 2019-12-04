@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.tabview")
 @js.native
-class tabview () extends baseview {
+class tabview ()
+  extends typings.webix.webix.ui.baseview {
+  @JSName("$skin")
+  var $skin_Original_tabview: WebixCallback = js.native
   @JSName("config")
   var config_tabview: tabviewConfig = js.native
   def addView(obj: js.Any): Unit = js.native

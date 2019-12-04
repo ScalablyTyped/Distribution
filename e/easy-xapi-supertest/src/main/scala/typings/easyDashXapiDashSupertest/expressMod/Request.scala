@@ -1,6 +1,5 @@
 package typings.easyDashXapiDashSupertest.expressMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.easyDashXapiDashSupertest.httpMod.ServerRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,8 +45,6 @@ trait Request
     * still match.
     */
   var fresh: Boolean = js.native
-  @JSName("headers")
-  var headers_Request: StringDictionary[String] = js.native
   /**
     * @deprecated Use hostname instead.
     */
@@ -71,8 +68,6 @@ trait Request
     * where "proxy2" is the furthest down-stream.
     */
   var ips: js.Array[String] = js.native
-  @JSName("method")
-  var method_Request: String = js.native
   var originalUrl: String = js.native
   var params: js.Any = js.native
   /**
@@ -115,8 +110,6 @@ trait Request
     * If "subdomain offset" is 3, req.subdomains is `["tobi"]`.
     */
   var subdomains: js.Array[String] = js.native
-  @JSName("url")
-  var url_Request: String = js.native
   var user: js.Any = js.native
   /**
     * Check if the request was an _XMLHttpRequest_.

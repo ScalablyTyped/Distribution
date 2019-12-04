@@ -17,8 +17,6 @@ object buildAbortControllerMod extends js.Object {
       */
     /* CompleteClass */
     override val signal: AbortSignal = js.native
-    @JSName("signal")
-    val signal_AbortController: typings.atAwsDashSdkAbortDashController.buildAbortSignalMod.AbortSignal = js.native
     /**
       * Declares the operation associated with this AbortController to have been
       * cancelled.

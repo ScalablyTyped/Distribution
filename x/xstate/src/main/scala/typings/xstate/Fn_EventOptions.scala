@@ -1,10 +1,10 @@
 package typings.xstate
 
-import typings.xstate.esTypesMod.Event
-import typings.xstate.esTypesMod.EventObject
-import typings.xstate.esTypesMod.SendAction
-import typings.xstate.esTypesMod.SendActionOptions
-import typings.xstate.esTypesMod.SendExpr
+import typings.xstate.libTypesMod.Event
+import typings.xstate.libTypesMod.EventObject
+import typings.xstate.libTypesMod.SendAction
+import typings.xstate.libTypesMod.SendActionOptions
+import typings.xstate.libTypesMod.SendExpr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

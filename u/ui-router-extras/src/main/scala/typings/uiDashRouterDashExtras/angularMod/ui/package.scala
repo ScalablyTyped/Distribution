@@ -16,7 +16,7 @@ package object ui {
       /* repeated */ js.Any, 
       IPromise[
         js.UndefOr[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IState */ js.Any
         ]
       ]
     ]

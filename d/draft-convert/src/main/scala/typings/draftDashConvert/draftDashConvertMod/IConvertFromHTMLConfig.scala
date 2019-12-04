@@ -23,7 +23,7 @@ trait IConvertFromHTMLConfig extends js.Object {
       /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], 
       /* getEntity */ js.Function1[
         /* key */ EntityKey, 
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Entity */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
       ], 
       /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
       /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
@@ -41,7 +41,7 @@ trait IConvertFromHTMLConfig extends js.Object {
       /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], 
       /* getEntity */ js.Function1[
         /* key */ EntityKey, 
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Entity */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
       ], 
       /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
       /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], 
@@ -56,12 +56,12 @@ object IConvertFromHTMLConfig {
     htmlToBlock: (/* nodeName */ String, /* node */ HTMLElement) => DraftBlockType | Anon_Data | `false` = null,
     htmlToEntity: (/* nodeName */ String, /* node */ HTMLElement, /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], /* getEntity */ js.Function1[
       /* key */ EntityKey, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Entity */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
     ], /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit]) => Unit = null,
     htmlToStyle: (/* nodeName */ String, /* node */ HTMLElement) => DraftInlineStyleType = null,
     textToEntity: (/* text */ String, /* createEntity */ js.Function3[/* type */ String, /* mutability */ String, /* data */ js.Object, EntityKey], /* getEntity */ js.Function1[
       /* key */ EntityKey, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Entity */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ _
     ], /* mergeEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit], /* replaceEntityData */ js.Function2[/* key */ String, /* data */ js.Object, Unit]) => js.Array[Anon_Entity] = null
   ): IConvertFromHTMLConfig = {
     val __obj = js.Dynamic.literal()

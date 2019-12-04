@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "business-rules-engine"
-version := "v1.0.20-dt-20191126Z-0bf7cb"
+version := "v1.0.20-dt-20191126Z-00f56e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

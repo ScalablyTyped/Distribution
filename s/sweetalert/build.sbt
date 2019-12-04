@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sweetalert"
-version := "2.1.2-da2f2f"
+version := "2.1.2-fbd3a7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

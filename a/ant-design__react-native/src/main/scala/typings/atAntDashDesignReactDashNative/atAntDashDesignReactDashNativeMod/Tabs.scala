@@ -1,6 +1,6 @@
 package typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeMod
 
-import typings.atAntDashDesignReactDashNative.TypeofClassDefaultTabBarDefaultProps
+import typings.atAntDashDesignReactDashNative.TypeofClassDefaultTabBar
 import typings.atAntDashDesignReactDashNative.libTabsMod.default
 import typings.atAntDashDesignReactDashNative.libTabsPropsTypeMod.PropsType
 import scala.scalajs.js
@@ -17,7 +17,7 @@ class Tabs protected () extends default {
 @JSImport("@ant-design/react-native", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: TypeofClassDefaultTabBarDefaultProps = js.native
+  var DefaultTabBar: TypeofClassDefaultTabBar = js.native
   var defaultProps: PropsType = js.native
 }
 

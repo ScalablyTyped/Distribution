@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stylisMod {
-  import typings.stylis.Selectors
-
   type Plugin = js.ThisFunction9[
     /* this */ Stylis, 
     /* context */ Context, 
@@ -20,4 +18,5 @@ package object stylisMod {
     /* depth */ Double, 
     js.Any
   ]
+  type Selectors = js.Array[String]
 }

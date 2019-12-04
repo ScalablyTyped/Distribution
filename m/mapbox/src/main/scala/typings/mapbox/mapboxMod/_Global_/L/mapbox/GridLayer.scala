@@ -12,7 +12,7 @@ trait GridLayer extends js.Object {
   			 * Load data for a given latitude, longitude point on the map, and call the callback function with that data, if any.
   			 */
   def getData(
-    latlng: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LatLng */ js.Any,
+    latlng: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LatLng */ js.Any,
     callback: js.Function
   ): js.Any = js.native
   /**

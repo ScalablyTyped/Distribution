@@ -1,0 +1,13 @@
+package typings.atAwsDashSdkClientDashS3DashNode
+
+import typings.atAwsDashSdkTypes.buildProtocolMod.Structure
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-s3-node/model/_GlacierJobParameters", JSImport.Namespace)
+@js.native
+object modelUnderscoreGlacierJobParametersMod extends js.Object {
+  val _GlacierJobParameters: Structure = js.native
+}
+

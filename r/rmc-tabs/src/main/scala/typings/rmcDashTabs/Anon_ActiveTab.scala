@@ -1,7 +1,7 @@
 package typings.rmcDashTabs
 
-import typings.rmcDashTabs.esPropsTypeMod.PropsType
-import typings.rmcDashTabs.esTabsDotBaseMod.StateType
+import typings.rmcDashTabs.libPropsTypeMod.PropsType
+import typings.rmcDashTabs.libTabsDotBaseMod.StateType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

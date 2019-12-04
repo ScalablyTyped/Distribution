@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,25 +10,11 @@ trait IonRouter extends js.Object {
   /**
     * Emitted when the route had changed
     */
-  var onIonRouteDidChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonRouteDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RouterEventDetail], Unit]] = js.undefined
   /**
     * Event emitted when the route is about to change
     */
-  var onIonRouteWillChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonRouteWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RouterEventDetail], Unit]] = js.undefined
   /**
     * By default `ion-router` will match the routes at the root path ("/"). That can be changed when
     */
@@ -41,12 +28,8 @@ trait IonRouter extends js.Object {
 object IonRouter {
   @scala.inline
   def apply(
-    onIonRouteDidChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
-    ] => Unit = null,
-    onIonRouteWillChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterEventDetail */ _
-    ] => Unit = null,
+    onIonRouteDidChange: /* event */ CustomEvent[RouterEventDetail] => Unit = null,
+    onIonRouteWillChange: /* event */ CustomEvent[RouterEventDetail] => Unit = null,
     root: String = null,
     useHash: js.UndefOr[Boolean] = js.undefined
   ): IonRouter = {

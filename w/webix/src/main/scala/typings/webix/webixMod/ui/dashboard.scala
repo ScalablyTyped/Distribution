@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.dashboard")
 @js.native
-class dashboard () extends baseview {
+class dashboard ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$dragPos")
   var $dragPos_Original: WebixCallback = js.native
+  @JSName("$skin")
+  var $skin_Original_dashboard: WebixCallback = js.native
   @JSName("config")
   var config_dashboard: dashboardConfig = js.native
   @JSName("$dragCreate")

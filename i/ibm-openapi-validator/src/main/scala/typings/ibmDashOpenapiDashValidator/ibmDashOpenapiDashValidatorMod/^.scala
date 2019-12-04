@@ -1,7 +1,6 @@
 package typings.ibmDashOpenapiDashValidator.ibmDashOpenapiDashValidatorMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ibmDashOpenapiDashValidator.validatorParameterDefaultMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

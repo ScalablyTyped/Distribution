@@ -1,6 +1,6 @@
 package typings.slateDashReact
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.slate.slateMod.Controller
 import typings.slate.slateMod.Editor
 import typings.slate.slateMod.InlineProperties

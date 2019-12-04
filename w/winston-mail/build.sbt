@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winston-mail"
-version := "1.5-dt-20181019Z-1580d0"
+version := "1.5-dt-20181019Z-174fcb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.ffi.ffiMod
 
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.node.Buffer
+import typings.ffi.Buffer
 import typings.ref.refMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`

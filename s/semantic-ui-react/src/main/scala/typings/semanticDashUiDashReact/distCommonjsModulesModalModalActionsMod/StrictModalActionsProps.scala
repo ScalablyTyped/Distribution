@@ -1,7 +1,7 @@
 package typings.semanticDashUiDashReact.distCommonjsModulesModalModalActionsMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.semanticDashUiDashReact.distCommonjsElementsButtonButtonMod.ButtonProps
 import typings.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandCollection

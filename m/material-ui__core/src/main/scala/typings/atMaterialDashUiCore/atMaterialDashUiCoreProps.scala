@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import typings.atMaterialDashUiCore.listItemMergeListContextMod.MergeWithListContextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -141,6 +142,12 @@ trait atMaterialDashUiCoreProps {
   def HiddenProps: typings.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps.type = typings.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps
   type HiddenProps = typings.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps
   @scala.inline
+  def HiddenCssProps: typings.atMaterialDashUiCore.hiddenHiddenCssMod.HiddenCssProps.type = typings.atMaterialDashUiCore.hiddenHiddenCssMod.HiddenCssProps
+  type HiddenCssProps = typings.atMaterialDashUiCore.hiddenHiddenCssMod.HiddenCssProps
+  @scala.inline
+  def HiddenJsProps: typings.atMaterialDashUiCore.hiddenHiddenJsMod.HiddenJsProps.type = typings.atMaterialDashUiCore.hiddenHiddenJsMod.HiddenJsProps
+  type HiddenJsProps = typings.atMaterialDashUiCore.hiddenHiddenJsMod.HiddenJsProps
+  @scala.inline
   def IconProps: typings.atMaterialDashUiCore.iconIconMod.IconProps.type = typings.atMaterialDashUiCore.iconIconMod.IconProps
   type IconProps = typings.atMaterialDashUiCore.iconIconMod.IconProps
   @scala.inline
@@ -195,6 +202,9 @@ trait atMaterialDashUiCoreProps {
   def MenuListProps: typings.atMaterialDashUiCore.menuListMenuListMod.MenuListProps.type = typings.atMaterialDashUiCore.menuListMenuListMod.MenuListProps
   type MenuListProps = typings.atMaterialDashUiCore.menuListMenuListMod.MenuListProps
   @scala.inline
+  def MergeListContextProps: MergeWithListContextProps.type = typings.atMaterialDashUiCore.listItemMergeListContextMod.MergeWithListContextProps
+  type MergeListContextProps = MergeWithListContextProps
+  @scala.inline
   def MobileStepperProps: typings.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps.type = typings.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps
   type MobileStepperProps = typings.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps
   @scala.inline
@@ -212,6 +222,9 @@ trait atMaterialDashUiCoreProps {
   @scala.inline
   def NoSsrProps: typings.atMaterialDashUiCore.noSsrNoSsrMod.NoSsrProps.type = typings.atMaterialDashUiCore.noSsrNoSsrMod.NoSsrProps
   type NoSsrProps = typings.atMaterialDashUiCore.noSsrNoSsrMod.NoSsrProps
+  @scala.inline
+  def NotchedOutlineProps: typings.atMaterialDashUiCore.outlinedInputNotchedOutlineMod.NotchedOutlineProps.type = typings.atMaterialDashUiCore.outlinedInputNotchedOutlineMod.NotchedOutlineProps
+  type NotchedOutlineProps = typings.atMaterialDashUiCore.outlinedInputNotchedOutlineMod.NotchedOutlineProps
   @scala.inline
   def OutlinedInputProps: typings.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputProps.type = typings.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputProps
   type OutlinedInputProps = typings.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputProps
@@ -291,6 +304,9 @@ trait atMaterialDashUiCoreProps {
   def TabIndicatorProps: typings.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorProps.type = typings.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorProps
   type TabIndicatorProps = typings.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorProps
   @scala.inline
+  def TabScrollButtonProps: typings.atMaterialDashUiCore.tabsTabScrollButtonMod.TabScrollButtonProps.type = typings.atMaterialDashUiCore.tabsTabScrollButtonMod.TabScrollButtonProps
+  type TabScrollButtonProps = typings.atMaterialDashUiCore.tabsTabScrollButtonMod.TabScrollButtonProps
+  @scala.inline
   def TableProps: typings.atMaterialDashUiCore.tableTableMod.TableProps.type = typings.atMaterialDashUiCore.tableTableMod.TableProps
   type TableProps = typings.atMaterialDashUiCore.tableTableMod.TableProps
   @scala.inline
@@ -317,6 +333,9 @@ trait atMaterialDashUiCoreProps {
   def TabsProps: typings.atMaterialDashUiCore.tabsTabsMod.TabsProps.type = typings.atMaterialDashUiCore.tabsTabsMod.TabsProps
   type TabsProps = typings.atMaterialDashUiCore.tabsTabsMod.TabsProps
   type TextFieldProps = typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps
+  @scala.inline
+  def TextareaProps: typings.atMaterialDashUiCore.inputBaseTextareaMod.TextareaProps.type = typings.atMaterialDashUiCore.inputBaseTextareaMod.TextareaProps
+  type TextareaProps = typings.atMaterialDashUiCore.inputBaseTextareaMod.TextareaProps
   @scala.inline
   def ToolbarProps: typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps.type = typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps
   type ToolbarProps = typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps

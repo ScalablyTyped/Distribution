@@ -1,6 +1,5 @@
 package typings.backo2.backo2Mod
 
-import typings.backo2.BackoffOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -14,7 +14,7 @@ object libDropdownMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Button: TypeofClassDropdownButtonDefaultProps = js.native
+    var Button: TypeofClassDropdownButton = js.native
     var defaultProps: Anon_BottomCenterBottomLeft = js.native
   }
   

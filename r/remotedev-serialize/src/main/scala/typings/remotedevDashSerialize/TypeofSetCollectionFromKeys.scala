@@ -1,8 +1,8 @@
 package typings.remotedevDashSerialize
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Collection
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.Collection
+import typings.immutable.Immutable.Set
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ trait TypeofSetCollectionFromKeys extends js.Object {
   /**
     * True if the provided value is a Set
     */
-  def isSet(maybeSet: js.Any): /* is immutable.immutable.Set<any> */ Boolean = js.native
+  def isSet(maybeSet: js.Any): /* is immutable.Immutable.Set<any> */ Boolean = js.native
   /**
     * Creates a new Set containing `values`.
     */

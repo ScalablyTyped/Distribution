@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 package object webdriverio {
   import typings.std.Omit
   import typings.std.Pick
+  import typings.webdriverio.WebdriverIO.Browser
+  import typings.webdriverio.WebdriverIO.TouchAction
   import typings.webdriverio.WebdriverIOAsync.Element
   import typings.webdriverio.webdriverioStrings.DOLLAR
   import typings.webdriverio.webdriverioStrings.DOLLARDOLLAR
@@ -28,29 +30,23 @@ package object webdriverio {
   type BrowserAsync = typings.webdriverio.webdriverioStrings.BrowserAsync with js.Any with AsyncSelectors
   // Browser commands that should be wrapper with Promise
   type BrowserPromise = Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
+    Browser, 
     addCommand | overwriteCommand | options | config | DOLLAR | DOLLARDOLLAR | touchAction
   ]
   // Browser commands that should not be wrapper with promise
-  type BrowserStatic = Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
-    addCommand | overwriteCommand | options | config
-  ]
+  type BrowserStatic = Pick[Browser, addCommand | overwriteCommand | options | config]
   // Element commands wrapper with Promise
   type ElementAsync = typings.webdriverio.webdriverioStrings.ElementAsync with js.Any with AsyncSelectors
   // Element commands that should be wrapper with Promise
   type ElementPromise = Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
+    typings.webdriverio.WebdriverIO.Element, 
     addCommand | DOLLAR | DOLLARDOLLAR | selector | elementId | `element-6066-11e4-a52e-4f735466cecf` | ELEMENT | dragAndDrop | touchAction
   ]
   // Element commands that should not be wrapper with promise
   type ElementStatic = Pick[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
+    typings.webdriverio.WebdriverIO.Element, 
     addCommand | selector | elementId | `element-6066-11e4-a52e-4f735466cecf` | ELEMENT
   ]
   // Properties of TouchAction which are similar in sync and async mode
-  type TouchActionSync = Omit[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.TouchAction */ js.Any, 
-    element_
-  ]
+  type TouchActionSync = Omit[TouchAction, element_]
 }

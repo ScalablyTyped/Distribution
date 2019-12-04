@@ -1,6 +1,5 @@
 package typings.reactDashCssDashModules.reactDashCssDashModulesMod
 
-import typings.reactDashCssDashModules.StylesObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

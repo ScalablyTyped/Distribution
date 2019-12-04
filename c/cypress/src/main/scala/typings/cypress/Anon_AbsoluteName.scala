@@ -5,25 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AbsoluteName extends js.Object {
-  /**
-    * resolved filename of the spec
-    */
-  var absolute: String
-  /**
-    * filename like "spec.js"
-    */
+  // "cypress/integration/config_passing_spec.coffee"
+  var absolute: String | Null
   var name: String
-  /**
-    * name relative to the project root, like "cypress/integration/spec.js"
-    */
-  var relative: String
+  // "config_passing_spec.coffee"
+  var relative: String | Null
 }
 
 object Anon_AbsoluteName {
   @scala.inline
-  def apply(absolute: String, name: String, relative: String): Anon_AbsoluteName = {
-    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any])
-  
+  def apply(name: String, absolute: String = null, relative: String = null): Anon_AbsoluteName = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (absolute != null) __obj.updateDynamic("absolute")(absolute.asInstanceOf[js.Any])
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AbsoluteName]
   }
 }

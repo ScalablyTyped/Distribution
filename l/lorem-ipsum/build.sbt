@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lorem-ipsum"
-version := "2.0.3-081eab"
+version := "2.0.3-09abfe"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,6 +14,8 @@ trait primereactProps {
   @scala.inline
   def AutoCompleteProps: typings.primereact.componentsAutocompleteAutoCompleteMod.AutoCompleteProps.type = typings.primereact.componentsAutocompleteAutoCompleteMod.AutoCompleteProps
   type AutoCompleteProps = typings.primereact.componentsAutocompleteAutoCompleteMod.AutoCompleteProps
+  type BodyCellProps = typings.primereact.componentsDatatableBodyCellMod.BodyCellProps
+  type BodyRowProps = typings.primereact.componentsDatatableBodyRowMod.BodyRowProps
   @scala.inline
   def BreadCrumbProps: typings.primereact.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps.type = typings.primereact.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps
   type BreadCrumbProps = typings.primereact.componentsBreadcrumbBreadCrumbMod.BreadCrumbProps
@@ -73,6 +75,9 @@ trait primereactProps {
   def DropdownProps: typings.primereact.componentsDropdownDropdownMod.DropdownProps.type = typings.primereact.componentsDropdownDropdownMod.DropdownProps
   type DropdownProps = typings.primereact.componentsDropdownDropdownMod.DropdownProps
   @scala.inline
+  def DropdownItemProps: typings.primereact.componentsDropdownDropdownItemMod.DropdownItemProps.type = typings.primereact.componentsDropdownDropdownItemMod.DropdownItemProps
+  type DropdownItemProps = typings.primereact.componentsDropdownDropdownItemMod.DropdownItemProps
+  @scala.inline
   def EditorProps: typings.primereact.componentsEditorEditorMod.EditorProps.type = typings.primereact.componentsEditorEditorMod.EditorProps
   type EditorProps = typings.primereact.componentsEditorEditorMod.EditorProps
   @scala.inline
@@ -81,6 +86,7 @@ trait primereactProps {
   @scala.inline
   def FileUploadProps: typings.primereact.componentsFileuploadFileUploadMod.FileUploadProps.type = typings.primereact.componentsFileuploadFileUploadMod.FileUploadProps
   type FileUploadProps = typings.primereact.componentsFileuploadFileUploadMod.FileUploadProps
+  type FooterCellProps = typings.primereact.componentsDatatableFooterCellMod.FooterCellProps
   @scala.inline
   def FullCalendarProps: typings.primereact.componentsFullcalendarFullCalendarMod.FullCalendarProps.type = typings.primereact.componentsFullcalendarFullCalendarMod.FullCalendarProps
   type FullCalendarProps = typings.primereact.componentsFullcalendarFullCalendarMod.FullCalendarProps
@@ -90,6 +96,7 @@ trait primereactProps {
   @scala.inline
   def GrowlProps: typings.primereact.componentsGrowlGrowlMod.GrowlProps.type = typings.primereact.componentsGrowlGrowlMod.GrowlProps
   type GrowlProps = typings.primereact.componentsGrowlGrowlMod.GrowlProps
+  type HeaderCellProps = typings.primereact.componentsDatatableHeaderCellMod.HeaderCellProps
   @scala.inline
   def InplaceProps: typings.primereact.componentsInplaceInplaceMod.InplaceProps.type = typings.primereact.componentsInplaceInplaceMod.InplaceProps
   type InplaceProps = typings.primereact.componentsInplaceInplaceMod.InplaceProps
@@ -112,6 +119,12 @@ trait primereactProps {
   def ListBoxProps: typings.primereact.componentsListboxListBoxMod.ListBoxProps.type = typings.primereact.componentsListboxListBoxMod.ListBoxProps
   type ListBoxProps = typings.primereact.componentsListboxListBoxMod.ListBoxProps
   @scala.inline
+  def ListBoxHeaderProps: typings.primereact.componentsListboxListBoxHeaderMod.ListBoxHeaderProps.type = typings.primereact.componentsListboxListBoxHeaderMod.ListBoxHeaderProps
+  type ListBoxHeaderProps = typings.primereact.componentsListboxListBoxHeaderMod.ListBoxHeaderProps
+  @scala.inline
+  def ListBoxItemProps: typings.primereact.componentsListboxListBoxItemMod.ListBoxItemProps.type = typings.primereact.componentsListboxListBoxItemMod.ListBoxItemProps
+  type ListBoxItemProps = typings.primereact.componentsListboxListBoxItemMod.ListBoxItemProps
+  @scala.inline
   def MegaMenuProps: typings.primereact.componentsMegamenuMegaMenuMod.MegaMenuProps.type = typings.primereact.componentsMegamenuMegaMenuMod.MegaMenuProps
   type MegaMenuProps = typings.primereact.componentsMegamenuMegaMenuMod.MegaMenuProps
   @scala.inline
@@ -129,6 +142,9 @@ trait primereactProps {
   @scala.inline
   def MultiSelectProps: typings.primereact.componentsMultiselectMultiSelectMod.MultiSelectProps.type = typings.primereact.componentsMultiselectMultiSelectMod.MultiSelectProps
   type MultiSelectProps = typings.primereact.componentsMultiselectMultiSelectMod.MultiSelectProps
+  @scala.inline
+  def NextPageLinkProps: typings.primereact.componentsPaginatorNextPageLinkMod.NextPageLinkProps.type = typings.primereact.componentsPaginatorNextPageLinkMod.NextPageLinkProps
+  type NextPageLinkProps = typings.primereact.componentsPaginatorNextPageLinkMod.NextPageLinkProps
   @scala.inline
   def OrderListProps: typings.primereact.componentsOrderlistOrderListMod.OrderListProps.type = typings.primereact.componentsOrderlistOrderListMod.OrderListProps
   type OrderListProps = typings.primereact.componentsOrderlistOrderListMod.OrderListProps
@@ -154,6 +170,18 @@ trait primereactProps {
   def PickListProps: typings.primereact.componentsPicklistPickListMod.PickListProps.type = typings.primereact.componentsPicklistPickListMod.PickListProps
   type PickListProps = typings.primereact.componentsPicklistPickListMod.PickListProps
   @scala.inline
+  def PickListControlsProps: typings.primereact.componentsPicklistPickListControlsMod.PickListControlsProps.type = typings.primereact.componentsPicklistPickListControlsMod.PickListControlsProps
+  type PickListControlsProps = typings.primereact.componentsPicklistPickListControlsMod.PickListControlsProps
+  @scala.inline
+  def PickListItemProps: typings.primereact.componentsPicklistPickListItemMod.PickListItemProps.type = typings.primereact.componentsPicklistPickListItemMod.PickListItemProps
+  type PickListItemProps = typings.primereact.componentsPicklistPickListItemMod.PickListItemProps
+  @scala.inline
+  def PickListSubListProps: typings.primereact.componentsPicklistPickListSubListMod.PickListSubListProps.type = typings.primereact.componentsPicklistPickListSubListMod.PickListSubListProps
+  type PickListSubListProps = typings.primereact.componentsPicklistPickListSubListMod.PickListSubListProps
+  @scala.inline
+  def PickListTransferControlsProps: typings.primereact.componentsPicklistPickListTransferControlsMod.PickListTransferControlsProps.type = typings.primereact.componentsPicklistPickListTransferControlsMod.PickListTransferControlsProps
+  type PickListTransferControlsProps = typings.primereact.componentsPicklistPickListTransferControlsMod.PickListTransferControlsProps
+  @scala.inline
   def ProgressBarProps: typings.primereact.componentsProgressbarProgressBarMod.ProgressBarProps.type = typings.primereact.componentsProgressbarProgressBarMod.ProgressBarProps
   type ProgressBarProps = typings.primereact.componentsProgressbarProgressBarMod.ProgressBarProps
   @scala.inline
@@ -169,8 +197,17 @@ trait primereactProps {
   def RowProps: typings.primereact.componentsRowRowMod.RowProps.type = typings.primereact.componentsRowRowMod.RowProps
   type RowProps = typings.primereact.componentsRowRowMod.RowProps
   @scala.inline
+  def RowCheckboxProps: typings.primereact.componentsDatatableRowCheckboxMod.RowCheckboxProps.type = typings.primereact.componentsDatatableRowCheckboxMod.RowCheckboxProps
+  type RowCheckboxProps = typings.primereact.componentsDatatableRowCheckboxMod.RowCheckboxProps
+  @scala.inline
+  def RowRadioButtonProps: typings.primereact.componentsDatatableRowRadioButtonMod.RowRadioButtonProps.type = typings.primereact.componentsDatatableRowRadioButtonMod.RowRadioButtonProps
+  type RowRadioButtonProps = typings.primereact.componentsDatatableRowRadioButtonMod.RowRadioButtonProps
+  @scala.inline
   def ScrollPanelProps: typings.primereact.componentsScrollpanelScrollPanelMod.ScrollPanelProps.type = typings.primereact.componentsScrollpanelScrollPanelMod.ScrollPanelProps
   type ScrollPanelProps = typings.primereact.componentsScrollpanelScrollPanelMod.ScrollPanelProps
+  @scala.inline
+  def ScrollableViewProps: typings.primereact.componentsDatatableScrollableViewMod.ScrollableViewProps.type = typings.primereact.componentsDatatableScrollableViewMod.ScrollableViewProps
+  type ScrollableViewProps = typings.primereact.componentsDatatableScrollableViewMod.ScrollableViewProps
   @scala.inline
   def SelectButtonProps: typings.primereact.componentsSelectbuttonSelectButtonMod.SelectButtonProps.type = typings.primereact.componentsSelectbuttonSelectButtonMod.SelectButtonProps
   type SelectButtonProps = typings.primereact.componentsSelectbuttonSelectButtonMod.SelectButtonProps
@@ -201,6 +238,9 @@ trait primereactProps {
   @scala.inline
   def TabViewProps: typings.primereact.componentsTabviewTabViewMod.TabViewProps.type = typings.primereact.componentsTabviewTabViewMod.TabViewProps
   type TabViewProps = typings.primereact.componentsTabviewTabViewMod.TabViewProps
+  type TableBodyProps = typings.primereact.componentsDatatableTableBodyMod.TableBodyProps
+  type TableFooterProps = typings.primereact.componentsDatatableTableFooterMod.TableFooterProps
+  type TableHeaderProps = typings.primereact.componentsDatatableTableHeaderMod.TableHeaderProps
   @scala.inline
   def TieredMenuProps: typings.primereact.componentsTieredmenuTieredMenuMod.TieredMenuProps.type = typings.primereact.componentsTieredmenuTieredMenuMod.TieredMenuProps
   type TieredMenuProps = typings.primereact.componentsTieredmenuTieredMenuMod.TieredMenuProps

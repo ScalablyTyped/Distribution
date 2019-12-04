@@ -12,5 +12,6 @@ trait history extends js.Object {
 
 @JSImport("webix", "history")
 @js.native
-object history extends TopLevel[history]
+object history
+  extends TopLevel[typings.webix.webix.history]
 

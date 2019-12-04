@@ -1,9 +1,9 @@
 package typings.vuex
 
-import typings.vuex.typesMod.ActionTree
-import typings.vuex.typesMod.GetterTree
-import typings.vuex.typesMod.ModuleTree
-import typings.vuex.typesMod.MutationTree
+import typings.vuex.vuexMod.ActionTree
+import typings.vuex.vuexMod.GetterTree
+import typings.vuex.vuexMod.ModuleTree
+import typings.vuex.vuexMod.MutationTree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -12,8 +12,6 @@ package object reactMod {
   import typings.react.Anon_RefAny
   import typings.react.Anon_Result
   import typings.react.Anon_Type
-  import typings.react.NativeMouseEvent
-  import typings.react.NotExactlyAnyPropertyKeys
   import typings.react.reactStrings.mount
   import typings.react.reactStrings.ref
   import typings.react.reactStrings.update
@@ -130,6 +128,19 @@ package object reactMod {
   // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
   type MergePropTypes[P, T] = ((Pick[P, NotExactlyAnyPropertyKeys[P]]) with (Pick[T, Exclude[String, NotExactlyAnyPropertyKeys[P]]]) with (Pick[P, Exclude[String, String]])) | P | T
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
+  type NativeAnimationEvent = typings.std.AnimationEvent
+  type NativeClipboardEvent = typings.std.ClipboardEvent
+  type NativeCompositionEvent = typings.std.CompositionEvent
+  type NativeDragEvent = typings.std.DragEvent
+  type NativeFocusEvent = typings.std.FocusEvent
+  type NativeKeyboardEvent = typings.std.KeyboardEvent
+  type NativeMouseEvent = typings.std.MouseEvent
+  type NativePointerEvent = typings.std.PointerEvent
+  type NativeTouchEvent = typings.std.TouchEvent
+  type NativeTransitionEvent = typings.std.TransitionEvent
+  type NativeUIEvent = typings.std.UIEvent
+  type NativeWheelEvent = typings.std.WheelEvent
+  type NotExactlyAnyPropertyKeys[T] = Exclude[String, ExactlyAnyPropertyKeys[T]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
   /**
     * {@link https://github.com/bvaughn/rfcs/blob/profiler/text/0000-profiler.md#detailed-design | API}
@@ -223,6 +234,8 @@ package object reactMod {
   type SyntheticEvent[T, E] = BaseSyntheticEvent[E, EventTarget with T, EventTarget]
   type TouchEventHandler[T] = EventHandler[TouchEvent[T]]
   type TransitionEventHandler[T] = EventHandler[TransitionEvent[T]]
+  type TransitionFunction = js.Function0[js.UndefOr[Unit]]
+  type TransitionStartFunction = js.Function1[/* callback */ typings.react.experimentalMod.reactMod.TransitionFunction, Unit]
   type UIEventHandler[T] = EventHandler[UIEvent[T]]
   type ValidationMap[T] = typings.propDashTypes.propDashTypesMod.ValidationMap[T]
   //

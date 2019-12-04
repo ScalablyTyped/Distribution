@@ -1,7 +1,7 @@
 package typings.remotedevDashSerialize
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.immutable.immutableMod.Map
+import typings.immutable.Immutable.Map
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait TypeofMap extends js.Object {
     * Map.isMap(Map()) // true
     * ```
     */
-  def isMap(maybeMap: js.Any): /* is immutable.immutable.Map<any, any> */ Boolean = js.native
+  def isMap(maybeMap: js.Any): /* is immutable.Immutable.Map<any, any> */ Boolean = js.native
   /**
     * Creates a new Map from alternating keys and values
     *

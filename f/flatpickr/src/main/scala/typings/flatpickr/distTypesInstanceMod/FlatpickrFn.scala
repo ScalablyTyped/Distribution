@@ -1,12 +1,12 @@
 package typings.flatpickr.distTypesInstanceMod
 
 import typings.flatpickr.Anon_Default
+import typings.flatpickr.distTypesGlobalsMod._Global_.Date
 import typings.flatpickr.distTypesLocaleMod.CustomLocale
 import typings.flatpickr.distTypesOptionsMod.DateOption
 import typings.flatpickr.distTypesOptionsMod.Options
 import typings.flatpickr.distTypesOptionsMod.ParsedOptions
 import typings.std.ArrayLike
-import typings.std.Date
 import typings.std.Node
 import typings.std.Partial
 import scala.scalajs.js

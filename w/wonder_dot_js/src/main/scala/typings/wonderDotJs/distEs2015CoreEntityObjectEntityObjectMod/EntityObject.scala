@@ -17,7 +17,7 @@ abstract class EntityObject () extends Entity {
   var bubbleParent: EntityObject = js.native
   var componentDirty: Boolean = js.native
   var componentManager: ComponentManager = js.native
-  var customEventMap: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<Collection<CustomEventRegisterData>> */ js.Any = js.native
+  var customEventMap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Collection<CustomEventRegisterData>> */ js.Any = js.native
   var name: String = js.native
   var parent: EntityObject = js.native
   val transform: Transform = js.native

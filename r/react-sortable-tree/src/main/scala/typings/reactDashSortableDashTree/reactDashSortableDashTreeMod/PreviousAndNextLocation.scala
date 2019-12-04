@@ -1,6 +1,5 @@
 package typings.reactDashSortableDashTree.reactDashSortableDashTreeMod
 
-import typings.reactDashSortableDashTree.NumberOrStringArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,17 @@
+package typings.atTensorflowTfjsDashCore
+
+import typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreStrings.`BACKSLASHn  const float FLOAT_MAX = 1DOT70141184e38;BACKSLASHn  const float FLOAT_MIN = 1DOT17549435e-38;BACKSLASHnBACKSLASHn  lowp vec4 encode_float(highp float v) {BACKSLASHn    if (isnan(v)) {BACKSLASHn      return vec4(255, 255, 255, 255);BACKSLASHn    }BACKSLASHnBACKSLASHn    highp float av = abs(v);BACKSLASHnBACKSLASHn    if(av < FLOAT_MIN) {BACKSLASHn      return vec4(0DOT0, 0DOT0, 0DOT0, 0DOT0);BACKSLASHn    } else if(v > FLOAT_MAX) {BACKSLASHn      return vec4(0DOT0, 0DOT0, 128DOT0, 127DOT0) / 255DOT0;BACKSLASHn    } else if(v < -FLOAT_MAX) {BACKSLASHn      return vec4(0DOT0, 0DOT0,  128DOT0, 255DOT0) / 255DOT0;BACKSLASHn    }BACKSLASHnBACKSLASHn    highp vec4 c = vec4(0,0,0,0);BACKSLASHnBACKSLASHn    highp float e = floor(log2(av));BACKSLASHn    highp float m = exp2(fract(log2(av))) - 1DOT0;BACKSLASHnBACKSLASHn    c[2] = floor(128DOT0 * m);BACKSLASHn    m -= c[2] / 128DOT0;BACKSLASHn    c[1] = floor(32768DOT0 * m);BACKSLASHn    m -= c[1] / 32768DOT0;BACKSLASHn    c[0] = floor(8388608DOT0 * m);BACKSLASHnBACKSLASHn    highp float ebias = e + 127DOT0;BACKSLASHn    c[3] = floor(ebias / 2DOT0);BACKSLASHn    ebias -= c[3] * 2DOT0;BACKSLASHn    c[2] += floor(ebias) * 128DOT0;BACKSLASHnBACKSLASHn    c[3] += 128DOT0 * step(0DOT0, -v);BACKSLASHnBACKSLASHn    return c / 255DOT0;BACKSLASHn  }BACKSLASHn`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tensorflow/tfjs-core/dist/backends/webgl/shader_compiler_util", JSImport.Namespace)
+@js.native
+object distBackendsWebglShaderUnderscoreCompilerUnderscoreUtilMod extends js.Object {
+  val ENCODE_FLOAT_SNIPPET: `BACKSLASHn  const float FLOAT_MAX = 1DOT70141184e38;BACKSLASHn  const float FLOAT_MIN = 1DOT17549435e-38;BACKSLASHnBACKSLASHn  lowp vec4 encode_float(highp float v) {BACKSLASHn    if (isnan(v)) {BACKSLASHn      return vec4(255, 255, 255, 255);BACKSLASHn    }BACKSLASHnBACKSLASHn    highp float av = abs(v);BACKSLASHnBACKSLASHn    if(av < FLOAT_MIN) {BACKSLASHn      return vec4(0DOT0, 0DOT0, 0DOT0, 0DOT0);BACKSLASHn    } else if(v > FLOAT_MAX) {BACKSLASHn      return vec4(0DOT0, 0DOT0, 128DOT0, 127DOT0) / 255DOT0;BACKSLASHn    } else if(v < -FLOAT_MAX) {BACKSLASHn      return vec4(0DOT0, 0DOT0,  128DOT0, 255DOT0) / 255DOT0;BACKSLASHn    }BACKSLASHnBACKSLASHn    highp vec4 c = vec4(0,0,0,0);BACKSLASHnBACKSLASHn    highp float e = floor(log2(av));BACKSLASHn    highp float m = exp2(fract(log2(av))) - 1DOT0;BACKSLASHnBACKSLASHn    c[2] = floor(128DOT0 * m);BACKSLASHn    m -= c[2] / 128DOT0;BACKSLASHn    c[1] = floor(32768DOT0 * m);BACKSLASHn    m -= c[1] / 32768DOT0;BACKSLASHn    c[0] = floor(8388608DOT0 * m);BACKSLASHnBACKSLASHn    highp float ebias = e + 127DOT0;BACKSLASHn    c[3] = floor(ebias / 2DOT0);BACKSLASHn    ebias -= c[3] * 2DOT0;BACKSLASHn    c[2] += floor(ebias) * 128DOT0;BACKSLASHnBACKSLASHn    c[3] += 128DOT0 * step(0DOT0, -v);BACKSLASHnBACKSLASHn    return c / 255DOT0;BACKSLASHn  }BACKSLASHn` = js.native
+  def dotify(x: js.Array[String], y: js.Array[String]): String = js.native
+  def getFlatIndexFrom3D(shape: js.Tuple3[Double, Double, Double]): String = js.native
+  def getLogicalCoordinatesFromFlatIndex(coords: js.Array[String], shape: js.Array[Double]): String = js.native
+  def getLogicalCoordinatesFromFlatIndex(coords: js.Array[String], shape: js.Array[Double], index: String): String = js.native
+}
+

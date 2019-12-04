@@ -1,6 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,11 +7,14 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/sequenceEqual", JSImport.Namespace)
 @js.native
 object operatorSequenceEqualMod extends js.Object {
-  def sequenceEqual[T](`this`: Observable[T], compareTo: Observable[T]): Observable[Boolean] = js.native
   def sequenceEqual[T](
-    `this`: Observable[T],
-    compareTo: Observable[T],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
+  ): js.Any = js.native
+  def sequenceEqual[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    compareTo: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
     comparor: js.Function2[/* a */ T, /* b */ T, Boolean]
-  ): Observable[Boolean] = js.native
+  ): js.Any = js.native
 }
 

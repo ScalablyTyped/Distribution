@@ -1,6 +1,6 @@
 package typings.antd.libTransferListMod
 
-import typings.antd.Anon_FilteredItemsFilteredRenderItems
+import typings.antd.Anon_FilteredItems
 import typings.antd.antdNumbers.`false`
 import typings.antd.antdStrings.all
 import typings.antd.antdStrings.none
@@ -38,7 +38,7 @@ trait TransferList
     disabled: Boolean
   ): `false` | Element = js.native
   def getCheckStatus(filteredItems: js.Array[TransferItem]): none | all | part = js.native
-  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): Anon_FilteredItemsFilteredRenderItems = js.native
+  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): Anon_FilteredItems = js.native
   def getListBody(
     prefixCls: String,
     searchPlaceholder: String,

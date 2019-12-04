@@ -1,6 +1,6 @@
 package typings.atTensorflowTfjsDashLayers.distActivationsMod
 
-import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.relu
+import typings.atTensorflowTfjsDashLayers.atTensorflowTfjsDashLayersStrings.relu_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ class Relu () extends Activation
 @js.native
 object Relu extends js.Object {
   /** @nocollapse */
-  val className: relu = js.native
+  val className: relu_ = js.native
 }
 

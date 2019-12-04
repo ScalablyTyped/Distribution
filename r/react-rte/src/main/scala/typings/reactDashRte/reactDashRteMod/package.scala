@@ -27,15 +27,16 @@ package object reactDashRteMod {
     /* element */ Element, 
     /* inlineCreators */ InlineCreators, 
     js.UndefOr[
-      Null | Style | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ js.Any)
+      Null | Style | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ js.Any)
     ]
   ]
   type EntityStyleFn = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any, 
     RenderConfig
   ]
   type GetControlState = js.Function1[/* key */ String, js.UndefOr[String]]
   type RichTextEditor = Component[Props, js.Any, js.Any]
   type SetControlState = js.Function2[/* key */ String, /* value */ String, Unit]
   type StringMap = StringDictionary[String]
+  type StyleConfigList = js.Array[StyleConfig]
 }

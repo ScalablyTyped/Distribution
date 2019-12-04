@@ -14,67 +14,67 @@ object Function extends js.Object {
   @js.native
   trait ChainableBase[RawValue] extends js.Object {
     var raw: RawValue = js.native
-    def after(n: Double): SugarDefaultChainable[js.Function] = js.native
+    def after(n: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
     @JSName("apply")
     def apply(thisArg: js.Any): SugarDefaultChainable[_] = js.native
     @JSName("apply")
     def apply(thisArg: js.Any, argArray: js.Any): SugarDefaultChainable[_] = js.native
     def bind(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[_] = js.native
     def call(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[_] = js.native
-    def cancel(): SugarDefaultChainable[js.Function] = js.native
-    def debounce(): SugarDefaultChainable[js.Function] = js.native
-    def debounce(ms: Double): SugarDefaultChainable[js.Function] = js.native
-    def delay(): SugarDefaultChainable[js.Function] = js.native
-    def delay(ms: Double, args: js.Any*): SugarDefaultChainable[js.Function] = js.native
-    def every(): SugarDefaultChainable[js.Function] = js.native
-    def every(ms: Double, args: js.Any*): SugarDefaultChainable[js.Function] = js.native
-    def `lazy`(): SugarDefaultChainable[js.Function] = js.native
-    def `lazy`(ms: Double): SugarDefaultChainable[js.Function] = js.native
-    def `lazy`(ms: Double, immediate: Boolean): SugarDefaultChainable[js.Function] = js.native
-    def `lazy`(ms: Double, immediate: Boolean, limit: Double): SugarDefaultChainable[js.Function] = js.native
-    def lock(): SugarDefaultChainable[js.Function] = js.native
-    def lock(n: Double): SugarDefaultChainable[js.Function] = js.native
-    def memoize(): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: java.lang.String): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: java.lang.String, limit: Double): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: js.Function): SugarDefaultChainable[js.Function] = js.native
-    def memoize(hashFn: js.Function, limit: Double): SugarDefaultChainable[js.Function] = js.native
-    def once(): SugarDefaultChainable[js.Function] = js.native
-    def partial(args: js.Any*): SugarDefaultChainable[js.Function] = js.native
-    def throttle(): SugarDefaultChainable[js.Function] = js.native
-    def throttle(ms: Double): SugarDefaultChainable[js.Function] = js.native
+    def cancel(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def debounce(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def debounce(ms: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def delay(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def delay(ms: Double, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def every(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def every(ms: Double, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def `lazy`(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def `lazy`(ms: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def `lazy`(ms: Double, immediate: Boolean): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def `lazy`(ms: Double, immediate: Boolean, limit: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def lock(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def lock(n: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def memoize(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def memoize(hashFn: java.lang.String): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def memoize(hashFn: java.lang.String, limit: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def memoize(hashFn: typings.sugar.Function): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def memoize(hashFn: typings.sugar.Function, limit: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def once(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def partial(args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def throttle(): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def throttle(ms: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
   }
   
   @js.native
   trait Constructor
     extends SugarNamespace
-       with Instantiable0[Chainable[js.Function]]
-       with Instantiable1[/* raw */ js.Function, Chainable[js.Function]] {
-    def apply(): Chainable[js.Function] = js.native
-    def apply(raw: js.Function): Chainable[js.Function] = js.native
-    def after(instance: js.Function, n: Double): js.Function = js.native
-    def cancel(instance: js.Function): js.Function = js.native
-    def debounce(instance: js.Function): js.Function = js.native
-    def debounce(instance: js.Function, ms: Double): js.Function = js.native
-    def delay(instance: js.Function): js.Function = js.native
-    def delay(instance: js.Function, ms: Double, args: js.Any*): js.Function = js.native
-    def every(instance: js.Function): js.Function = js.native
-    def every(instance: js.Function, ms: Double, args: js.Any*): js.Function = js.native
-    def `lazy`(instance: js.Function): js.Function = js.native
-    def `lazy`(instance: js.Function, ms: Double): js.Function = js.native
-    def `lazy`(instance: js.Function, ms: Double, immediate: Boolean): js.Function = js.native
-    def `lazy`(instance: js.Function, ms: Double, immediate: Boolean, limit: Double): js.Function = js.native
-    def lock(instance: js.Function): js.Function = js.native
-    def lock(instance: js.Function, n: Double): js.Function = js.native
-    def memoize(instance: js.Function): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: java.lang.String): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: java.lang.String, limit: Double): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: js.Function): js.Function = js.native
-    def memoize(instance: js.Function, hashFn: js.Function, limit: Double): js.Function = js.native
-    def once(instance: js.Function): js.Function = js.native
-    def partial(instance: js.Function, args: js.Any*): js.Function = js.native
-    def throttle(instance: js.Function): js.Function = js.native
-    def throttle(instance: js.Function, ms: Double): js.Function = js.native
+       with Instantiable0[Chainable[typings.sugar.Function]]
+       with Instantiable1[/* raw */ typings.sugar.Function, Chainable[typings.sugar.Function]] {
+    def apply(): Chainable[typings.sugar.Function] = js.native
+    def apply(raw: typings.sugar.Function): Chainable[typings.sugar.Function] = js.native
+    def after(instance: typings.sugar.Function, n: Double): typings.sugar.Function = js.native
+    def cancel(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def debounce(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def debounce(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native
+    def delay(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def delay(instance: typings.sugar.Function, ms: Double, args: js.Any*): typings.sugar.Function = js.native
+    def every(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def every(instance: typings.sugar.Function, ms: Double, args: js.Any*): typings.sugar.Function = js.native
+    def `lazy`(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def `lazy`(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native
+    def `lazy`(instance: typings.sugar.Function, ms: Double, immediate: Boolean): typings.sugar.Function = js.native
+    def `lazy`(instance: typings.sugar.Function, ms: Double, immediate: Boolean, limit: Double): typings.sugar.Function = js.native
+    def lock(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def lock(instance: typings.sugar.Function, n: Double): typings.sugar.Function = js.native
+    def memoize(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def memoize(instance: typings.sugar.Function, hashFn: java.lang.String): typings.sugar.Function = js.native
+    def memoize(instance: typings.sugar.Function, hashFn: java.lang.String, limit: Double): typings.sugar.Function = js.native
+    def memoize(instance: typings.sugar.Function, hashFn: typings.sugar.Function): typings.sugar.Function = js.native
+    def memoize(instance: typings.sugar.Function, hashFn: typings.sugar.Function, limit: Double): typings.sugar.Function = js.native
+    def once(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def partial(instance: typings.sugar.Function, args: js.Any*): typings.sugar.Function = js.native
+    def throttle(instance: typings.sugar.Function): typings.sugar.Function = js.native
+    def throttle(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native
   }
   
   type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]

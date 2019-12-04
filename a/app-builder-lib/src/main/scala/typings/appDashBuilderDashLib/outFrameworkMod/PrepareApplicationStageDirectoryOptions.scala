@@ -1,7 +1,7 @@
 package typings.appDashBuilderDashLib.outFrameworkMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.PlatformPackager
 import typings.appDashBuilderDashLib.outElectronElectronFrameworkMod.ElectronPlatformName
-import typings.appDashBuilderDashLib.outMod.PlatformPackager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

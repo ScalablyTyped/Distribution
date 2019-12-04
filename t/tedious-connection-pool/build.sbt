@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "tedious-connection-pool"
-version := "1.0-dt-20190604Z-633b05"
+version := "1.0-dt-20190604Z-e950e4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-08e889",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "tedious" % "4.0.0-dt-20190604Z-651157")
+  "org.scalablytyped" %%% "tedious" % "4.0.0-dt-20190604Z-180c16")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,5 @@
 package typings.atTestingDashLibraryReact.atTestingDashLibraryReactMod
 
-import typings.atTestingDashLibraryReact.Omit
 import typings.atTestingDashLibraryReact.Typeofqueries
 import typings.react.reactMod.ReactElement
 import scala.scalajs.js

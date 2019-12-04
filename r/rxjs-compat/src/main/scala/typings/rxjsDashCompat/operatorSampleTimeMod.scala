@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +7,14 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs-compat/operator/sampleTime", JSImport.Namespace)
 @js.native
 object operatorSampleTimeMod extends js.Object {
-  def sampleTime[T](`this`: Observable[T], period: Double): Observable[T] = js.native
-  def sampleTime[T](`this`: Observable[T], period: Double, scheduler: SchedulerLike): Observable[T] = js.native
+  def sampleTime[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    period: Double
+  ): js.Any = js.native
+  def sampleTime[T](
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    period: Double,
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = js.native
 }
 

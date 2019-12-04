@@ -1,5 +1,7 @@
 package typings.openpgp
 
+import typings.openpgp.openpgpMod.NodeStream
+import typings.openpgp.openpgpMod.ReadableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

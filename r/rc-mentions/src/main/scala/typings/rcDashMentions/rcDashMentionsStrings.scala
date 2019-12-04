@@ -10,9 +10,7 @@ object rcDashMentionsStrings {
   sealed trait OmitFunc extends js.Object
   
   @js.native
-  sealed trait bottom
-    extends Placement
-       with typings.rcDashMentions.esMentionsMod.Placement
+  sealed trait bottom extends Placement
   
   @js.native
   sealed trait onChange extends js.Object
@@ -24,9 +22,7 @@ object rcDashMentionsStrings {
   sealed trait prefix extends js.Object
   
   @js.native
-  sealed trait top
-    extends Placement
-       with typings.rcDashMentions.esMentionsMod.Placement
+  sealed trait top extends Placement
   
   @scala.inline
   def OmitFunc: OmitFunc = "OmitFunc".asInstanceOf[OmitFunc]

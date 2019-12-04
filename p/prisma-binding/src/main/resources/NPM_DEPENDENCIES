@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prisma-binding" : "2.3.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prisma-binding" : "2.3.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

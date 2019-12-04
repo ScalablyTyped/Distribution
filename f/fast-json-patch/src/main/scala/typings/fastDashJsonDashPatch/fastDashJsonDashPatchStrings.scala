@@ -7,43 +7,69 @@ import scala.scalajs.js.annotation._
 
 object fastDashJsonDashPatchStrings {
   @js.native
-  sealed trait OPERATION_FROM_REQUIRED extends JsonPatchErrorName
+  sealed trait OPERATION_FROM_REQUIRED
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_FROM_UNRESOLVABLE extends JsonPatchErrorName
+  sealed trait OPERATION_FROM_UNRESOLVABLE
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_NOT_AN_OBJECT extends JsonPatchErrorName
+  sealed trait OPERATION_NOT_AN_OBJECT
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_OP_INVALID extends JsonPatchErrorName
+  sealed trait OPERATION_OP_INVALID
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_PATH_CANNOT_ADD extends JsonPatchErrorName
+  sealed trait OPERATION_PATH_CANNOT_ADD
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_PATH_ILLEGAL_ARRAY_INDEX extends JsonPatchErrorName
+  sealed trait OPERATION_PATH_ILLEGAL_ARRAY_INDEX
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_PATH_INVALID extends JsonPatchErrorName
+  sealed trait OPERATION_PATH_INVALID
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_PATH_UNRESOLVABLE extends JsonPatchErrorName
+  sealed trait OPERATION_PATH_UNRESOLVABLE
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED extends JsonPatchErrorName
+  sealed trait OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_VALUE_OUT_OF_BOUNDS extends JsonPatchErrorName
+  sealed trait OPERATION_VALUE_OUT_OF_BOUNDS
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait OPERATION_VALUE_REQUIRED extends JsonPatchErrorName
+  sealed trait OPERATION_VALUE_REQUIRED
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait SEQUENCE_NOT_AN_ARRAY extends JsonPatchErrorName
+  sealed trait SEQUENCE_NOT_AN_ARRAY
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
-  sealed trait TEST_OPERATION_FAILED extends JsonPatchErrorName
+  sealed trait TEST_OPERATION_FAILED
+    extends JsonPatchErrorName
+       with typings.fastDashJsonDashPatch.commonjsHelpersMod.JsonPatchErrorName
   
   @js.native
   sealed trait _get extends js.Object

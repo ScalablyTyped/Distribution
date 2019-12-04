@@ -9,13 +9,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.button")
 @js.native
-class button () extends baseview {
+class button ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$compareValue")
   var $compareValue_Original: WebixCallback = js.native
   @JSName("$prepareValue")
   var $prepareValue_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_button: WebixCallback = js.native
   @JSName("config")
   var config_button: buttonConfig = js.native
   @JSName("on_click")

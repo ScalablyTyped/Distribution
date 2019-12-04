@@ -10,7 +10,7 @@ trait ITimestamp extends js.Object {
   var nanos: js.UndefOr[Double | Null] = js.undefined
   /** Timestamp seconds */
   var seconds: js.UndefOr[
-    Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
   ] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object ITimestamp {
   @scala.inline
   def apply(
     nanos: Int | Double = null,
-    seconds: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = null
+    seconds: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null
   ): ITimestamp = {
     val __obj = js.Dynamic.literal()
     if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])

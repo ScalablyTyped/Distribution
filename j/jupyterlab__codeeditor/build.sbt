@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__codeeditor"
-version := "1.2.0-7dfc41"
+version := "1.2.0-25b97f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

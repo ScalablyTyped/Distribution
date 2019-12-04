@@ -3,11 +3,11 @@ package typings.reactDashDatepicker
 import org.scalablytyped.runtime.StringDictionary
 import typings.dateDashFns.dateDashFnsMod.Locale
 import typings.popperDotJs.popperDotJsMod.Modifiers
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent
 import typings.reactDashDatepicker.reactDashDatepickerMod.HighlightDates

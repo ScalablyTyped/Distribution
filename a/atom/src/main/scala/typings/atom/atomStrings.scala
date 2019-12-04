@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 
 object atomStrings {
   @js.native
+  sealed trait Cursor extends js.Object
+  
+  @js.native
+  sealed trait Subsequence extends js.Object
+  
+  @js.native
+  sealed trait Symbol extends js.Object
+  
+  @js.native
+  sealed trait Word extends js.Object
+  
+  @js.native
   sealed trait after extends js.Object
   
   @js.native
@@ -33,6 +45,72 @@ object atomStrings {
   
   @js.native
   sealed trait `auto top` extends TooltipPlacement
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTautoActivationDelay` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTbackspaceTriggersAutocomplete` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTbuiltinProviderBlacklist` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTconfirmCompletion` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTconsumeSuffix` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTdefaultProvider` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTenableAutoActivation` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTenableAutoConfirmSingleSuggestion` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTenableBuiltinProvider` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTenableExtendedUnicodeSupport` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTfileBlacklist` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTincludeCompletionsFromAllBuffers` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTmaxVisibleSuggestions` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTminimumWordLength` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTscopeBlacklist` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTsimilarSuggestionRemoval` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTstrictMatching` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTsuggestionListFollows` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTsuppressActivationForEditorClasses` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTuseAlternateScoring` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTuseCoreMovementCommands` extends js.Object
+  
+  @js.native
+  sealed trait `autocomplete-plusDOTuseLocalityBonus` extends js.Object
   
   @js.native
   sealed trait backward extends js.Object
@@ -149,7 +227,7 @@ object atomStrings {
   sealed trait created extends js.Object
   
   @js.native
-  sealed trait cursor extends js.Object
+  sealed trait cursor_ extends js.Object
   
   @js.native
   sealed trait decorated extends js.Object
@@ -257,6 +335,9 @@ object atomStrings {
   sealed trait editorDOTzoomFontWhenCtrlScrolling extends js.Object
   
   @js.native
+  sealed trait enter extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -270,6 +351,9 @@ object atomStrings {
   
   @js.native
   sealed trait fatal extends js.Object
+  
+  @js.native
+  sealed trait file extends js.Object
   
   @js.native
   sealed trait focus extends js.Object
@@ -371,6 +455,24 @@ object atomStrings {
   sealed trait `line-number` extends js.Object
   
   @js.native
+  sealed trait linterDOTdisabledProviders extends js.Object
+  
+  @js.native
+  sealed trait linterDOTignoreGlob extends js.Object
+  
+  @js.native
+  sealed trait linterDOTlintOnChange extends js.Object
+  
+  @js.native
+  sealed trait linterDOTlintOnChangeInterval extends js.Object
+  
+  @js.native
+  sealed trait linterDOTlintOnOpen extends js.Object
+  
+  @js.native
+  sealed trait linterDOTlintPreviewTabs extends js.Object
+  
+  @js.native
   sealed trait macroman extends FileEncoding
   
   @js.native
@@ -404,6 +506,9 @@ object atomStrings {
   sealed trait poll extends js.Object
   
   @js.native
+  sealed trait project extends js.Object
+  
+  @js.native
   sealed trait question extends js.Object
   
   @js.native
@@ -431,16 +536,40 @@ object atomStrings {
   sealed trait stable extends js.Object
   
   @js.native
+  sealed trait `status-barDOTcursorPositionFormat` extends js.Object
+  
+  @js.native
+  sealed trait `status-barDOTfullWidth` extends js.Object
+  
+  @js.native
+  sealed trait `status-barDOTisVisible` extends js.Object
+  
+  @js.native
+  sealed trait `status-barDOTselectionCountFormat` extends js.Object
+  
+  @js.native
   sealed trait success extends js.Object
   
   @js.native
   sealed trait surround extends js.Object
   
   @js.native
+  sealed trait tab extends js.Object
+  
+  @js.native
+  sealed trait `tab always, enter when suggestion explicitly selected` extends js.Object
+  
+  @js.native
+  sealed trait `tab and enter` extends js.Object
+  
+  @js.native
   sealed trait tail extends js.Object
   
   @js.native
   sealed trait text extends js.Object
+  
+  @js.native
+  sealed trait textOrSnippet extends js.Object
   
   @js.native
   sealed trait top extends TooltipPlacement
@@ -497,6 +626,14 @@ object atomStrings {
   sealed trait yes extends js.Object
   
   @scala.inline
+  def Cursor: Cursor = "Cursor".asInstanceOf[Cursor]
+  @scala.inline
+  def Subsequence: Subsequence = "Subsequence".asInstanceOf[Subsequence]
+  @scala.inline
+  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  @scala.inline
+  def Word: Word = "Word".asInstanceOf[Word]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
@@ -514,6 +651,50 @@ object atomStrings {
   def `auto right`: `auto right` = "auto right".asInstanceOf[`auto right`]
   @scala.inline
   def `auto top`: `auto top` = "auto top".asInstanceOf[`auto top`]
+  @scala.inline
+  def `autocomplete-plusDOTautoActivationDelay`: `autocomplete-plusDOTautoActivationDelay` = "autocomplete-plus.autoActivationDelay".asInstanceOf[`autocomplete-plusDOTautoActivationDelay`]
+  @scala.inline
+  def `autocomplete-plusDOTbackspaceTriggersAutocomplete`: `autocomplete-plusDOTbackspaceTriggersAutocomplete` = "autocomplete-plus.backspaceTriggersAutocomplete".asInstanceOf[`autocomplete-plusDOTbackspaceTriggersAutocomplete`]
+  @scala.inline
+  def `autocomplete-plusDOTbuiltinProviderBlacklist`: `autocomplete-plusDOTbuiltinProviderBlacklist` = "autocomplete-plus.builtinProviderBlacklist".asInstanceOf[`autocomplete-plusDOTbuiltinProviderBlacklist`]
+  @scala.inline
+  def `autocomplete-plusDOTconfirmCompletion`: `autocomplete-plusDOTconfirmCompletion` = "autocomplete-plus.confirmCompletion".asInstanceOf[`autocomplete-plusDOTconfirmCompletion`]
+  @scala.inline
+  def `autocomplete-plusDOTconsumeSuffix`: `autocomplete-plusDOTconsumeSuffix` = "autocomplete-plus.consumeSuffix".asInstanceOf[`autocomplete-plusDOTconsumeSuffix`]
+  @scala.inline
+  def `autocomplete-plusDOTdefaultProvider`: `autocomplete-plusDOTdefaultProvider` = "autocomplete-plus.defaultProvider".asInstanceOf[`autocomplete-plusDOTdefaultProvider`]
+  @scala.inline
+  def `autocomplete-plusDOTenableAutoActivation`: `autocomplete-plusDOTenableAutoActivation` = "autocomplete-plus.enableAutoActivation".asInstanceOf[`autocomplete-plusDOTenableAutoActivation`]
+  @scala.inline
+  def `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion` = "autocomplete-plus.enableAutoConfirmSingleSuggestion".asInstanceOf[`autocomplete-plusDOTenableAutoConfirmSingleSuggestion`]
+  @scala.inline
+  def `autocomplete-plusDOTenableBuiltinProvider`: `autocomplete-plusDOTenableBuiltinProvider` = "autocomplete-plus.enableBuiltinProvider".asInstanceOf[`autocomplete-plusDOTenableBuiltinProvider`]
+  @scala.inline
+  def `autocomplete-plusDOTenableExtendedUnicodeSupport`: `autocomplete-plusDOTenableExtendedUnicodeSupport` = "autocomplete-plus.enableExtendedUnicodeSupport".asInstanceOf[`autocomplete-plusDOTenableExtendedUnicodeSupport`]
+  @scala.inline
+  def `autocomplete-plusDOTfileBlacklist`: `autocomplete-plusDOTfileBlacklist` = "autocomplete-plus.fileBlacklist".asInstanceOf[`autocomplete-plusDOTfileBlacklist`]
+  @scala.inline
+  def `autocomplete-plusDOTincludeCompletionsFromAllBuffers`: `autocomplete-plusDOTincludeCompletionsFromAllBuffers` = "autocomplete-plus.includeCompletionsFromAllBuffers".asInstanceOf[`autocomplete-plusDOTincludeCompletionsFromAllBuffers`]
+  @scala.inline
+  def `autocomplete-plusDOTmaxVisibleSuggestions`: `autocomplete-plusDOTmaxVisibleSuggestions` = "autocomplete-plus.maxVisibleSuggestions".asInstanceOf[`autocomplete-plusDOTmaxVisibleSuggestions`]
+  @scala.inline
+  def `autocomplete-plusDOTminimumWordLength`: `autocomplete-plusDOTminimumWordLength` = "autocomplete-plus.minimumWordLength".asInstanceOf[`autocomplete-plusDOTminimumWordLength`]
+  @scala.inline
+  def `autocomplete-plusDOTscopeBlacklist`: `autocomplete-plusDOTscopeBlacklist` = "autocomplete-plus.scopeBlacklist".asInstanceOf[`autocomplete-plusDOTscopeBlacklist`]
+  @scala.inline
+  def `autocomplete-plusDOTsimilarSuggestionRemoval`: `autocomplete-plusDOTsimilarSuggestionRemoval` = "autocomplete-plus.similarSuggestionRemoval".asInstanceOf[`autocomplete-plusDOTsimilarSuggestionRemoval`]
+  @scala.inline
+  def `autocomplete-plusDOTstrictMatching`: `autocomplete-plusDOTstrictMatching` = "autocomplete-plus.strictMatching".asInstanceOf[`autocomplete-plusDOTstrictMatching`]
+  @scala.inline
+  def `autocomplete-plusDOTsuggestionListFollows`: `autocomplete-plusDOTsuggestionListFollows` = "autocomplete-plus.suggestionListFollows".asInstanceOf[`autocomplete-plusDOTsuggestionListFollows`]
+  @scala.inline
+  def `autocomplete-plusDOTsuppressActivationForEditorClasses`: `autocomplete-plusDOTsuppressActivationForEditorClasses` = "autocomplete-plus.suppressActivationForEditorClasses".asInstanceOf[`autocomplete-plusDOTsuppressActivationForEditorClasses`]
+  @scala.inline
+  def `autocomplete-plusDOTuseAlternateScoring`: `autocomplete-plusDOTuseAlternateScoring` = "autocomplete-plus.useAlternateScoring".asInstanceOf[`autocomplete-plusDOTuseAlternateScoring`]
+  @scala.inline
+  def `autocomplete-plusDOTuseCoreMovementCommands`: `autocomplete-plusDOTuseCoreMovementCommands` = "autocomplete-plus.useCoreMovementCommands".asInstanceOf[`autocomplete-plusDOTuseCoreMovementCommands`]
+  @scala.inline
+  def `autocomplete-plusDOTuseLocalityBonus`: `autocomplete-plusDOTuseLocalityBonus` = "autocomplete-plus.useLocalityBonus".asInstanceOf[`autocomplete-plusDOTuseLocalityBonus`]
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
@@ -591,7 +772,7 @@ object atomStrings {
   @scala.inline
   def created: created = "created".asInstanceOf[created]
   @scala.inline
-  def cursor: cursor = "cursor".asInstanceOf[cursor]
+  def cursor_ : cursor_ = "cursor".asInstanceOf[cursor_]
   @scala.inline
   def decorated: decorated = "decorated".asInstanceOf[decorated]
   @scala.inline
@@ -663,6 +844,8 @@ object atomStrings {
   @scala.inline
   def editorDOTzoomFontWhenCtrlScrolling: editorDOTzoomFontWhenCtrlScrolling = "editor.zoomFontWhenCtrlScrolling".asInstanceOf[editorDOTzoomFontWhenCtrlScrolling]
   @scala.inline
+  def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def eucjp: eucjp = "eucjp".asInstanceOf[eucjp]
@@ -672,6 +855,8 @@ object atomStrings {
   def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
+  @scala.inline
+  def file: file = "file".asInstanceOf[file]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
@@ -739,6 +924,18 @@ object atomStrings {
   @scala.inline
   def `line-number`: `line-number` = "line-number".asInstanceOf[`line-number`]
   @scala.inline
+  def linterDOTdisabledProviders: linterDOTdisabledProviders = "linter.disabledProviders".asInstanceOf[linterDOTdisabledProviders]
+  @scala.inline
+  def linterDOTignoreGlob: linterDOTignoreGlob = "linter.ignoreGlob".asInstanceOf[linterDOTignoreGlob]
+  @scala.inline
+  def linterDOTlintOnChange: linterDOTlintOnChange = "linter.lintOnChange".asInstanceOf[linterDOTlintOnChange]
+  @scala.inline
+  def linterDOTlintOnChangeInterval: linterDOTlintOnChangeInterval = "linter.lintOnChangeInterval".asInstanceOf[linterDOTlintOnChangeInterval]
+  @scala.inline
+  def linterDOTlintOnOpen: linterDOTlintOnOpen = "linter.lintOnOpen".asInstanceOf[linterDOTlintOnOpen]
+  @scala.inline
+  def linterDOTlintPreviewTabs: linterDOTlintPreviewTabs = "linter.lintPreviewTabs".asInstanceOf[linterDOTlintPreviewTabs]
+  @scala.inline
   def macroman: macroman = "macroman".asInstanceOf[macroman]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
@@ -761,6 +958,8 @@ object atomStrings {
   @scala.inline
   def poll: poll = "poll".asInstanceOf[poll]
   @scala.inline
+  def project: project = "project".asInstanceOf[project]
+  @scala.inline
   def question: question = "question".asInstanceOf[question]
   @scala.inline
   def renamed: renamed = "renamed".asInstanceOf[renamed]
@@ -779,13 +978,29 @@ object atomStrings {
   @scala.inline
   def stable: stable = "stable".asInstanceOf[stable]
   @scala.inline
+  def `status-barDOTcursorPositionFormat`: `status-barDOTcursorPositionFormat` = "status-bar.cursorPositionFormat".asInstanceOf[`status-barDOTcursorPositionFormat`]
+  @scala.inline
+  def `status-barDOTfullWidth`: `status-barDOTfullWidth` = "status-bar.fullWidth".asInstanceOf[`status-barDOTfullWidth`]
+  @scala.inline
+  def `status-barDOTisVisible`: `status-barDOTisVisible` = "status-bar.isVisible".asInstanceOf[`status-barDOTisVisible`]
+  @scala.inline
+  def `status-barDOTselectionCountFormat`: `status-barDOTselectionCountFormat` = "status-bar.selectionCountFormat".asInstanceOf[`status-barDOTselectionCountFormat`]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
   def surround: surround = "surround".asInstanceOf[surround]
   @scala.inline
+  def tab: tab = "tab".asInstanceOf[tab]
+  @scala.inline
+  def `tab always, enter when suggestion explicitly selected`: `tab always, enter when suggestion explicitly selected` = "tab always, enter when suggestion explicitly selected".asInstanceOf[`tab always, enter when suggestion explicitly selected`]
+  @scala.inline
+  def `tab and enter`: `tab and enter` = "tab and enter".asInstanceOf[`tab and enter`]
+  @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def textOrSnippet: textOrSnippet = "textOrSnippet".asInstanceOf[textOrSnippet]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

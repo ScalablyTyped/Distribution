@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Anon_0ChildrenOpts extends js.Object {
   var children: js.UndefOr[js.Function1[/* val */ String, ReactElement | Null]] = js.undefined
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(values : std.Array<string | react.react.ReactNode>, opts ? : react-intl.react-intl/dist/types.FormatListOptions): react.react.ReactNode>[0] */ js.Any
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(values : std.Array<string | react.react.ReactNode>, opts ? : react-intl.react-intl/lib/types.FormatListOptions): react.react.ReactNode>[0] */ js.Any
 }
 
 object Anon_0ChildrenOpts {
   @scala.inline
   def apply(
-    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(values : std.Array<string | react.react.ReactNode>, opts ? : react-intl.react-intl/dist/types.FormatListOptions): react.react.ReactNode>[0] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(values : std.Array<string | react.react.ReactNode>, opts ? : react-intl.react-intl/lib/types.FormatListOptions): react.react.ReactNode>[0] */ js.Any,
     children: /* val */ String => ReactElement | Null = null
   ): Anon_0ChildrenOpts = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])

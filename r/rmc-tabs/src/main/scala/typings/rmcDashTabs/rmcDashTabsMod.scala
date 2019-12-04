@@ -29,7 +29,7 @@ object rmcDashTabsMod extends js.Object {
   /* static members */
   @js.native
   object Tabs extends js.Object {
-    var DefaultTabBar: TypeofClassDefaultTabBarDefaultProps = js.native
+    var DefaultTabBar: TypeofClassDefaultTabBar = js.native
     var defaultProps: typings.rmcDashTabs.libTabsMod.PropsType = js.native
   }
   

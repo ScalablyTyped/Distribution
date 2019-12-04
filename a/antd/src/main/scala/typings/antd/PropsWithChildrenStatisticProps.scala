@@ -1,14 +1,14 @@
 package typings.antd
 
-import typings.antd.esStatisticUtilsMod.Formatter
-import typings.antd.esStatisticUtilsMod.valueType
+import typings.antd.libStatisticUtilsMod.Formatter
+import typings.antd.libStatisticUtilsMod.valueType
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.PropsWithChildren<antd.antd/es/statistic/Statistic.StatisticProps> */
+/* Inlined react.react.PropsWithChildren<antd.antd/lib/statistic/Statistic.StatisticProps> */
 trait PropsWithChildrenStatisticProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined

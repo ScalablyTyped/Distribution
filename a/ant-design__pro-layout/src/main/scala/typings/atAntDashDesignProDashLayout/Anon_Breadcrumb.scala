@@ -1,7 +1,7 @@
 package typings.atAntDashDesignProDashLayout
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atAntDashDesignProDashLayout.esTypingsMod.MenuDataItem
+import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

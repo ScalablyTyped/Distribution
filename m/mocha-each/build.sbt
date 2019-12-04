@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mocha-each"
-version := "1.1-dt-20180217Z-9090e8"
+version := "1.1-dt-20180217Z-970997"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-53cd87",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-15659b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

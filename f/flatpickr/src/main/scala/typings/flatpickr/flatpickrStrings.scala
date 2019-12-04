@@ -324,6 +324,9 @@ object flatpickrStrings {
   sealed trait img extends js.Object
   
   @js.native
+  sealed trait increment extends js.Object
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -361,6 +364,9 @@ object flatpickrStrings {
   
   @js.native
   sealed trait label extends js.Object
+  
+  @js.native
+  sealed trait left extends js.Object
   
   @js.native
   sealed trait legend extends js.Object
@@ -873,6 +879,8 @@ object flatpickrStrings {
   @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
+  def increment: increment = "increment".asInstanceOf[increment]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
   def ins: ins = "ins".asInstanceOf[ins]
@@ -898,6 +906,8 @@ object flatpickrStrings {
   def l: l = "l".asInstanceOf[l]
   @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
+  def left: left = "left".asInstanceOf[left]
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline

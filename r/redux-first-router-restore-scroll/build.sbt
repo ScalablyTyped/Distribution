@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-first-router-restore-scroll"
-version := "1.2-dt-20190730Z-15ab02"
+version := "1.2-dt-20190730Z-a1f7e3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20191126Z-410aca",
-  "org.scalablytyped" %%% "redux" % "4.0.4-c08a69",
-  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190730Z-b0183d",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20191126Z-4ceb2f",
+  "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
+  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190730Z-84d386",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

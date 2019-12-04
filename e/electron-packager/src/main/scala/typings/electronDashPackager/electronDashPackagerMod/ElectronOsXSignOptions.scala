@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // see https://github.com/electron-userland/electron-packager/blob/92d09bba34599283a794fd6f24b88470f0cb1074/src/mac.js#L340
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OsXSignOptions * / any, 'app' | 'binaries' | 'identity' | 'platform' | 'version'> ]: / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OsXSignOptions * / any[P]} */ trait ElectronOsXSignOptions extends js.Object {
+- Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OsXSignOptions * / any, 'app' | 'binaries' | 'identity' | 'platform' | 'version'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OsXSignOptions * / any[P]} */ trait ElectronOsXSignOptions extends js.Object {
   var identity: js.UndefOr[String | `true`] = js.undefined
 }
 

@@ -1,5 +1,6 @@
 package typings.fibers.fibersMod
 
+import typings.fibers.futureMod._Global_.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +19,6 @@ class Class protected () extends Fiber {
     * After the function returns the fiber is reset to original state and
     * may be restarted with another call to run().
     */
-  def this(fn: js.Function) = this()
+  def this(fn: Function) = this()
 }
 

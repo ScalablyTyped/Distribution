@@ -25,14 +25,6 @@ trait IPanel
   var maxTabWidth: js.UndefOr[Double] = js.undefined
   /** [Config Option] (Number) */
   var minTabWidth: js.UndefOr[Double] = js.undefined
-  /** [Method] Makes sure we have a Tab for each item added to the TabPanel
-  		* @param item Object
-  		* @param index Object
-  		*/
-  @JSName("onAdd")
-  var onAdd_IPanel: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
   /** [Config Option] (Boolean) */
   var plain: js.UndefOr[Boolean] = js.undefined
   /** [Config Option] (Boolean) */
@@ -59,7 +51,6 @@ object IPanel {
     itemCls: java.lang.String = null,
     maxTabWidth: Int | Double = null,
     minTabWidth: Int | Double = null,
-    onAdd: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     removePanelHeader: js.UndefOr[Boolean] = js.undefined,
     setActiveTab: /* card */ js.UndefOr[js.Any] => IComponent = null,
@@ -75,7 +66,6 @@ object IPanel {
     if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls.asInstanceOf[js.Any])
     if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
     if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (!js.isUndefined(removePanelHeader)) __obj.updateDynamic("removePanelHeader")(removePanelHeader.asInstanceOf[js.Any])
     if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(js.Any.fromFunction1(setActiveTab))

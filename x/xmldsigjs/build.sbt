@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "xmldsigjs"
-version := "2.0.26-f27eb4"
+version := "2.0.26-418ebb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20190322Z-9dc4b3",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "xml-core" % "1.0.15-b4dbf6")
 publishArtifact in packageDoc := false

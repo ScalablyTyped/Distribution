@@ -100,8 +100,8 @@ object libScalarTypeComposerMod extends js.Object {
     def createTemp[TCtx](typeDef: ScalarTypeComposeDefinition, schemaComposer: SchemaComposer[TCtx]): ScalarTypeComposer[TCtx] = js.native
   }
   
-  type ComposeScalarTypeConfig = (GraphQLScalarTypeConfig[_, _]) with Anon_ExtensionsOptional
-  type GraphQLScalarTypeExtended = GraphQLScalarType with Anon_GqcExtensionsExtensions
+  type ComposeScalarTypeConfig = (GraphQLScalarTypeConfig[_, _]) with Anon_Extensions
+  type GraphQLScalarTypeExtended = GraphQLScalarType with Anon_GqcExtensions
   type ScalarTypeComposeDefinition = TypeAsString | ComposeScalarTypeConfig | GraphQLScalarType
 }
 

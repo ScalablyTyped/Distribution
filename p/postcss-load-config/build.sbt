@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "postcss-load-config"
-version := "2.0-dt-20191112Z-e81ed4"
+version := "2.0-dt-20191112Z-1e3cf8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cosmiconfig" % "6.0.0-1ca38f",
+  "org.scalablytyped" %%% "cosmiconfig" % "6.0.0-e8e001",
   "org.scalablytyped" %%% "postcss" % "7.0.18-56dffc",
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

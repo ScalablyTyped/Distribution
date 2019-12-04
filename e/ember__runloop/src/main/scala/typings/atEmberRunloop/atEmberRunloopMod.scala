@@ -1,6 +1,9 @@
 package typings.atEmberRunloop
 
 import typings.atEmberRunloop.atEmberRunloopMod.RunNamespace
+import typings.atEmberRunloop.dashPrivateTypesMod.EmberRunQueues
+import typings.atEmberRunloop.dashPrivateTypesMod.RunMethod
+import typings.atEmberRunloop.typesMod.EmberRunTimer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,20 +13,14 @@ import scala.scalajs.js.annotation._
 object atEmberRunloopMod extends js.Object {
   @js.native
   trait RunNamespace extends js.Object {
-    var queues: js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ _
-      ] = js.native
+    var queues: js.Array[EmberRunQueues] = js.native
     /**
       * Runs the passed target and method inside of a RunLoop, ensuring any
       * deferred actions including bindings and views updates are flushed at the
       * end.
       */
     def apply[Ret](method: js.Function1[/* repeated */ js.Any, Ret]): Ret = js.native
-    def apply[Target, Ret](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target, Ret> */ js.Any,
-      args: js.Any*
-    ): Ret = js.native
+    def apply[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): Ret = js.native
     /**
       * Begins a new RunLoop. Any deferred actions invoked after the begin will
       * be buffered until you invoke a matching call to `run.end()`. This is
@@ -36,30 +33,24 @@ object atEmberRunloopMod extends js.Object {
       * makes this method a great way to asynchronously integrate third-party libraries
       * into your Ember application.
       */
-    def bind[Target, Ret](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target, Ret> */ js.Any,
-      args: js.Any*
-    ): js.Function1[/* repeated */ js.Any, Ret] = js.native
+    def bind[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = js.native
     /**
       * Cancels a scheduled item. Must be a value returned by `run.later()`,
       * `run.once()`, `run.scheduleOnce()`, `run.next()`, `run.debounce()`, or
       * `run.throttle()`.
       */
-    def cancel(
-      timer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunTimer */ js.Any
-    ): Boolean = js.native
+    def cancel(timer: EmberRunTimer): Boolean = js.native
     /**
       * Delay calling the target method until the debounce period has elapsed
       * with no additional debounce calls. If `debounce` is called again before
       * the specified time has elapsed, the timer is reset and the entire period
       * must pass again before the target method is called.
       */
-    def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double): js.Any = js.native
-    def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): js.Any = js.native
+    def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
+    def debounce(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -67,10 +58,10 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -79,20 +70,20 @@ object atEmberRunloopMod extends js.Object {
       arg5: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -100,82 +91,56 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
     def debounce[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def debounce[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
-    def debounce[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def debounce[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): js.Any = js.native
-    def debounce[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def debounce[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+    def debounce[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = js.native
+    def debounce[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
+    def debounce[Target](target: Target, method: RunMethod[Target, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
     /**
       * Ends a RunLoop. This must be called sometime after you call
       * `run.begin()` to flush any deferred actions. This is a lower-level way
@@ -188,20 +153,16 @@ object atEmberRunloopMod extends js.Object {
       * queue.
       */
     def join[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
-    def join[Target, Ret](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target, Ret> */ js.Any,
-      args: js.Any*
-    ): js.UndefOr[Ret] = js.native
+    def join[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
     /**
       * Invokes the passed target/method and optional arguments after a specified
       * period of time. The last parameter of this method must always be a number
       * of milliseconds.
       */
-    def later(method: js.Function1[/* repeated */ js.Any, _], wait: Double): js.Any = js.native
+    def later(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
     def later[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -209,108 +170,71 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def later[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def later[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def later[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double
-    ): js.Any = js.native
-    def later[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def later[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def later[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def later[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
+    def later[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+    def later[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
     /**
       * Schedules an item to run from within a separate run loop, after
       * control has been returned to the system. This is equivalent to calling
       * `run.later` with a wait time of 1ms.
       */
-    def next[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def next[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
     /**
       * Schedule a function to run one time during the current RunLoop. This is equivalent
       * to calling `scheduleOnce` with the "actions" queue.
       */
-    def once[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
-    def schedule(
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      method: js.Function1[/* args */ js.Array[_], _],
-      args: js.Any*
-    ): js.Any = js.native
+    def once[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
+    def schedule(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[_], _], args: js.Any*): EmberRunTimer = js.native
     /**
       * Adds the passed target/method and any optional arguments to the named
       * queue to be executed at the end of the RunLoop. If you have not already
       * started a RunLoop when calling this method one will be started for you
       * automatically.
       */
-    def schedule[Target](
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def schedule[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
     /**
       * Schedules a function to run one time in a given queue of the current RunLoop.
       * Calling this method with the same queue/target/method combination will have
       * no effect (past the initial call).
       */
-    def scheduleOnce[Target](
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def scheduleOnce[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
     /**
       * Ensure that the target method is never called more frequently than
       * the specified spacing period. The target method is called immediately.
       */
-    def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): js.Any = js.native
-    def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): js.Any = js.native
+    def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): EmberRunTimer = js.native
+    def throttle(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -318,10 +242,10 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -330,20 +254,20 @@ object atEmberRunloopMod extends js.Object {
       arg5: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -351,107 +275,74 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = js.native
     def throttle[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def throttle[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
-    def throttle[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def throttle[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): js.Any = js.native
-    def throttle[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def throttle[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double): EmberRunTimer = js.native
+    def throttle[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double, immediate: Boolean): EmberRunTimer = js.native
+    def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double): EmberRunTimer = js.native
+    def throttle[Target](target: Target, method: RunMethod[Target, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
   }
   
   val begin: js.Function0[Unit] = js.native
-  val cancel: js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunTimer */ /* timer */ js.Any, 
-    Boolean
-  ] = js.native
+  val cancel: js.Function1[/* timer */ EmberRunTimer, Boolean] = js.native
   val end: js.Function0[Unit] = js.native
   val run: RunNamespace = js.native
   @js.native
   object bind extends js.Object {
-    def apply[Target, Ret](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target, Ret> */ js.Any,
-      args: js.Any*
-    ): js.Function1[/* repeated */ js.Any, Ret] = js.native
+    def apply[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.Function1[/* repeated */ js.Any, Ret] = js.native
   }
   
   @js.native
   object debounce extends js.Object {
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): js.Any = js.native
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): js.Any = js.native
+    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
+    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -459,10 +350,10 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -471,20 +362,20 @@ object atEmberRunloopMod extends js.Object {
       arg5: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -492,100 +383,70 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       wait: Double,
       immediate: Boolean
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double,
-      immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double, immediate: Boolean): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double, immediate: Boolean): EmberRunTimer = js.native
   }
   
   @js.native
   object join extends js.Object {
     def apply[Ret](method: js.Function1[/* repeated */ js.Any, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
-    def apply[Target, Ret](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target, Ret> */ js.Any,
-      args: js.Any*
-    ): js.UndefOr[Ret] = js.native
+    def apply[Target, Ret](target: Target, method: RunMethod[Target, Ret], args: js.Any*): js.UndefOr[Ret] = js.native
   }
   
   @js.native
   object later extends js.Object {
-    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): js.Any = js.native
+    def apply(method: js.Function1[/* repeated */ js.Any, _], wait: Double): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -593,104 +454,67 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      wait: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      wait: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, wait: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, wait: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], wait: Double): EmberRunTimer = js.native
   }
   
   @js.native
   object next extends js.Object {
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
   }
   
   @js.native
   object once extends js.Object {
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
   }
   
   @js.native
   object schedule extends js.Object {
-    def apply(
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      method: js.Function1[/* args */ js.Array[_], _],
-      args: js.Any*
-    ): js.Any = js.native
-    def apply[Target](
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def apply(queue: EmberRunQueues, method: js.Function1[/* args */ js.Array[_], _], args: js.Any*): EmberRunTimer = js.native
+    def apply[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
   }
   
   @js.native
   object scheduleOnce extends js.Object {
-    def apply[Target](
-      queue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EmberRunQueues */ js.Any,
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      args: js.Any*
-    ): js.Any = js.native
+    def apply[Target](queue: EmberRunQueues, target: Target, method: RunMethod[Target, _], args: js.Any*): EmberRunTimer = js.native
   }
   
   @js.native
   object throttle extends js.Object {
-    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): js.Any = js.native
-    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): js.Any = js.native
+    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double): EmberRunTimer = js.native
+    def apply(method: js.Function1[/* repeated */ js.Any, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -698,10 +522,10 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       arg5: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -710,20 +534,20 @@ object atEmberRunloopMod extends js.Object {
       arg5: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       arg4: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
@@ -731,82 +555,56 @@ object atEmberRunloopMod extends js.Object {
       arg4: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       arg3: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       spacing: Double
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       arg2: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, arg1: js.Any, spacing: Double): EmberRunTimer = js.native
     def apply[Target](
       target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      arg1: js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
+      method: RunMethod[Target, _],
       arg0: js.Any,
       arg1: js.Any,
       spacing: Double,
       immediate: Boolean
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      arg0: js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      spacing: Double
-    ): js.Any = js.native
-    def apply[Target](
-      target: Target,
-      method: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RunMethod<Target> */ js.Any,
-      spacing: Double,
-      immediate: Boolean
-    ): js.Any = js.native
+    ): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], arg0: js.Any, spacing: Double, immediate: Boolean): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], spacing: Double): EmberRunTimer = js.native
+    def apply[Target](target: Target, method: RunMethod[Target, _], spacing: Double, immediate: Boolean): EmberRunTimer = js.native
   }
   
 }

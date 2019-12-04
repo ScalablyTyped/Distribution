@@ -1,7 +1,6 @@
 package typings.smoothDashScrollbar
 
 import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection
-import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,11 +21,6 @@ object trackThumbMod extends js.Object {
     override var displaySize: Double = js.native
     /* CompleteClass */
     override val element: HTMLElement = js.native
-    /**
-      * Thumb element
-      */
-    @JSName("element")
-    val element_ScrollbarThumb: HTMLDivElement = js.native
     /* CompleteClass */
     override var offset: Double = js.native
     /* CompleteClass */

@@ -7,7 +7,7 @@ import typings.atIonicCore.atIonicCoreMod.TextFieldTypes
 import typings.atIonicCore.distTypesComponentsNavNavDashInterfaceMod.NavDirection
 import typings.atIonicCore.distTypesComponentsRangeRangeDashInterfaceMod._KnobName
 import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
-import typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
+import typings.atIonicCore.distTypesComponentsSegmentDashButtonSegmentDashInterfaceMod.SegmentButtonLayout
 import typings.atIonicCore.distTypesComponentsSelectSelectDashInterfaceMod.SelectInterface
 import typings.atIonicCore.distTypesComponentsTabDashBarTabDashBarDashInterfaceMod.TabButtonLayout
 import typings.atIonicCore.distTypesComponentsVirtualDashScrollVirtualDashScrollDashInterfaceMod.CellType
@@ -183,6 +183,9 @@ object atIonicCoreStrings {
        with Side
   
   @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
   sealed trait evenodd extends js.Object
   
   @js.native
@@ -221,6 +224,9 @@ object atIonicCoreStrings {
   sealed trait header extends CellType
   
   @js.native
+  sealed trait heavy extends js.Object
+  
+  @js.native
   sealed trait hideCaretOnScroll extends js.Object
   
   @js.native
@@ -232,26 +238,31 @@ object atIonicCoreStrings {
   @js.native
   sealed trait `icon-bottom`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-end`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-hide`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-start`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
   sealed trait `icon-top`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
@@ -314,6 +325,7 @@ object atIonicCoreStrings {
   @js.native
   sealed trait `label-hide`
     extends SegmentButtonLayout
+       with typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   
   @js.native
@@ -686,6 +698,8 @@ object atIonicCoreStrings {
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def experimentalTransitionShadow: experimentalTransitionShadow = "experimentalTransitionShadow".asInstanceOf[experimentalTransitionShadow]
@@ -709,6 +723,8 @@ object atIonicCoreStrings {
   def hardwareBackButton: hardwareBackButton = "hardwareBackButton".asInstanceOf[hardwareBackButton]
   @scala.inline
   def header: header = "header".asInstanceOf[header]
+  @scala.inline
+  def heavy: heavy = "heavy".asInstanceOf[heavy]
   @scala.inline
   def hideCaretOnScroll: hideCaretOnScroll = "hideCaretOnScroll".asInstanceOf[hideCaretOnScroll]
   @scala.inline

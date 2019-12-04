@@ -84,6 +84,9 @@ object reactDashIntlStrings {
   sealed trait datalist extends js.Object
   
   @js.native
+  sealed trait date extends js.Object
+  
+  @js.native
   sealed trait dd extends js.Object
   
   @js.native
@@ -220,6 +223,9 @@ object reactDashIntlStrings {
   
   @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait locale extends js.Object
   
   @js.native
   sealed trait localeMatcher extends js.Object
@@ -478,6 +484,8 @@ object reactDashIntlStrings {
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
   def defaultFormats: defaultFormats = "defaultFormats".asInstanceOf[defaultFormats]
@@ -569,6 +577,8 @@ object reactDashIntlStrings {
   def li: li = "li".asInstanceOf[li]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def locale: locale = "locale".asInstanceOf[locale]
   @scala.inline
   def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline

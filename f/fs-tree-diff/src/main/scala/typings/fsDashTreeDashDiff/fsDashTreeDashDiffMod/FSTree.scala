@@ -16,13 +16,13 @@ trait FSTree extends js.Object {
   def calculatePatch(tree: FSTree, isEqual: js.Function2[/* a */ this.type, /* b */ this.type, Boolean]): js.Array[Patch] = js.native
   def forEach(
     cb: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FSEntry */ /* entry */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FSEntry */ /* entry */ js.Any, 
       Unit
     ]
   ): Unit = js.native
   def forEach(
     cb: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FSEntry */ /* entry */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FSEntry */ /* entry */ js.Any, 
       Unit
     ],
     context: js.Any

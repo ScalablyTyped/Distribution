@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait panelConfig extends js.Object {
   var animate: js.UndefOr[js.Any] = js.undefined
-  var body: js.UndefOr[String | baseview] = js.undefined
+  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   var css: js.UndefOr[js.Any] = js.undefined
@@ -36,7 +36,7 @@ object panelConfig {
   @scala.inline
   def apply(
     animate: js.Any = null,
-    body: String | baseview = null,
+    body: String | typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     container: String | HTMLElement = null,
     css: js.Any = null,

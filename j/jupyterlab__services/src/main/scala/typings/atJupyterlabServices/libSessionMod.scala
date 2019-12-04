@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atJupyterlabServices.libSessionManagerMod.SessionManager.IOptions
 import typings.atJupyterlabServices.libSessionSessionMod.Session.IModel
 import typings.atJupyterlabServices.libSessionSessionMod.Session.ISession
@@ -39,10 +40,7 @@ object libSessionMod extends js.Object {
       * Otherwise, we attempt to connect to the existing session.
       */
     def connectTo(model: IModel): ISession = js.native
-    def connectTo(
-      model: IModel,
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): ISession = js.native
+    def connectTo(model: IModel, settings: ISettings): ISession = js.native
     /**
       * Find a session by id.
       *
@@ -61,10 +59,7 @@ object libSessionMod extends js.Object {
       * otherwise the promise is rejected.
       */
     def findById(id: String): js.Promise[IModel] = js.native
-    def findById(
-      id: String,
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): js.Promise[IModel] = js.native
+    def findById(id: String, settings: ISettings): js.Promise[IModel] = js.native
     /**
       * Find a session by path.
       *
@@ -87,10 +82,7 @@ object libSessionMod extends js.Object {
       * the promise is rejected.
       */
     def findByPath(path: String): js.Promise[IModel] = js.native
-    def findByPath(
-      path: String,
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): js.Promise[IModel] = js.native
+    def findByPath(path: String, settings: ISettings): js.Promise[IModel] = js.native
     /**
       * List the running sessions.
       *
@@ -106,9 +98,7 @@ object libSessionMod extends js.Object {
       * The promise is fulfilled on a valid response and rejected otherwise.
       */
     def listRunning(): js.Promise[js.Array[IModel]] = js.native
-    def listRunning(
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): js.Promise[js.Array[IModel]] = js.native
+    def listRunning(settings: ISettings): js.Promise[js.Array[IModel]] = js.native
     /**
       * Shut down a session by id.
       *
@@ -120,19 +110,14 @@ object libSessionMod extends js.Object {
       *
       */
     def shutdown(id: String): js.Promise[Unit] = js.native
-    def shutdown(
-      id: String,
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): js.Promise[Unit] = js.native
+    def shutdown(id: String, settings: ISettings): js.Promise[Unit] = js.native
     /**
       * Shut down all sessions.
       *
       * @returns A promise that resolves when all of the sessions are shut down.
       */
     def shutdownAll(): js.Promise[Unit] = js.native
-    def shutdownAll(
-      settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-    ): js.Promise[Unit] = js.native
+    def shutdownAll(settings: ISettings): js.Promise[Unit] = js.native
     /**
       * Start a new session.
       *

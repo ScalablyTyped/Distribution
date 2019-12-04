@@ -1,6 +1,5 @@
 package typings.mendixmodelsdk.distGenMappingsMod.mappings
 
-import typings.mendixmodelsdk.distGenBaseDashModelMod.IModel
 import typings.mendixmodelsdk.distGenJsonstructuresMod.jsonstructures.JsonStructure
 import typings.mendixmodelsdk.distGenMappingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.distGenMessagedefinitionsMod.messagedefinitions.EntityMessageDefinition
@@ -47,8 +46,6 @@ abstract class Element protected ()
   var maxLength: Double = js.native
   var maxOccurs: Double = js.native
   var minOccurs: Double = js.native
-  @JSName("model")
-  var model_Element: IModel = js.native
   var nillable: Boolean = js.native
   /**
     * The value of this property is conceptually of type mappings.ElementPath.

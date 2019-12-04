@@ -20,8 +20,6 @@ class NamedNode protected ()
     */
   /* CompleteClass */
   override var termType: typings.rdfDashJs.rdfDashJsStrings.NamedNode = js.native
-  @JSName("termType")
-  val termType_NamedNode: typings.n3.n3Strings.NamedNode = js.native
   /**
     * The IRI of the named node (example: `http://example.org/resource`)
     */

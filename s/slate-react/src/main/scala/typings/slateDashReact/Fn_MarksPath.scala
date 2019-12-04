@@ -1,7 +1,7 @@
 package typings.slateDashReact
 
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Set
 import typings.slate.slateMod.Editor
 import typings.slate.slateMod.Mark
 import scala.scalajs.js

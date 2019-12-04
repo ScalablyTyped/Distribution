@@ -27,6 +27,9 @@ object browserfsStrings {
   sealed trait fs extends js.Object
   
   @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
   sealed trait path extends js.Object
   
   @js.native
@@ -52,6 +55,8 @@ object browserfsStrings {
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
   def fs: fs = "fs".asInstanceOf[fs]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline

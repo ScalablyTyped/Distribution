@@ -1,6 +1,6 @@
 package typings.autolinker.distCommonjsMatchMatchMod
 
-import typings.autolinker.distCommonjsMod.HtmlTag
+import typings.autolinker.autolinkerMod.HtmlTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

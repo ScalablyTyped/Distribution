@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent utility-types.utility-types/dist.Omit<@ant-design/react-native.@ant-design/react-native/lib/picker/PopupPickerTypes.PopupPickerProps, 'styles'> */
+/* Inlined parent utility-types.utility-types.Omit<@ant-design/react-native.@ant-design/react-native/lib/picker/PopupPickerTypes.PopupPickerProps, 'styles'> */
 trait PickerPropsType extends js.Object {
   var WrapComponent: js.UndefOr[js.Any] = js.undefined
   var actionTextActiveOpacity: js.UndefOr[Double] = js.undefined

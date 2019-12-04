@@ -27,6 +27,9 @@ object typedocStrings {
   sealed trait keyof extends js.Object
   
   @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
   sealed trait number extends js.Object
   
   @js.native
@@ -79,6 +82,8 @@ object typedocStrings {
   def intrinsic: intrinsic = "intrinsic".asInstanceOf[intrinsic]
   @scala.inline
   def keyof: keyof = "keyof".asInstanceOf[keyof]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline

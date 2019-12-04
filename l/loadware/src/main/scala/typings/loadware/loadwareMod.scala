@@ -1,5 +1,6 @@
 package typings.loadware
 
+import typings.loadware.loadwareMod.AnyFunction
 import typings.loadware.loadwareMod.Loadable
 import typings.loadware.loadwareMod.RecursiveLoadable
 import typings.std.Array
@@ -14,6 +15,7 @@ object loadwareMod extends js.Object {
   trait RecursiveLoadable[F /* <: AnyFunction */] extends Array[F | Loadable[F]]
   
   def apply[F /* <: AnyFunction */](loadable: Loadable[F]*): js.Array[F] = js.native
+  type AnyFunction = js.Function
   type Loadable[F /* <: AnyFunction */] = String | F | RecursiveLoadable[F]
 }
 

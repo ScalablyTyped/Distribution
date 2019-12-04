@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libKernelKernelMod.Kernel
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,9 +31,7 @@ trait IOptions extends js.Object {
   /**
     * The server settings for the kernel.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
   /**
     * The username of the kernel client.
     */
@@ -45,7 +44,7 @@ object IOptions {
     clientId: String = null,
     handleComms: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null,
+    serverSettings: ISettings = null,
     username: String = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()

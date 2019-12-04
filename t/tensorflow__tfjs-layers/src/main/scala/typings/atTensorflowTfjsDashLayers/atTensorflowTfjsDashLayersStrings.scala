@@ -23,6 +23,9 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait `1DOT3DOT2` extends js.Object
   
   @js.native
+  sealed trait Activation extends js.Object
+  
+  @js.native
   sealed trait Adadelta extends js.Object
   
   @js.native
@@ -35,7 +38,79 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait Adamax extends js.Object
   
   @js.native
+  sealed trait Add extends js.Object
+  
+  @js.native
+  sealed trait Average extends js.Object
+  
+  @js.native
+  sealed trait AveragePooling1D extends js.Object
+  
+  @js.native
+  sealed trait AveragePooling2D extends js.Object
+  
+  @js.native
+  sealed trait BatchNormalization extends js.Object
+  
+  @js.native
+  sealed trait Bidirectional extends js.Object
+  
+  @js.native
+  sealed trait Concatenate extends js.Object
+  
+  @js.native
   sealed trait Constant extends js.Object
+  
+  @js.native
+  sealed trait Conv1D extends js.Object
+  
+  @js.native
+  sealed trait Conv2D extends js.Object
+  
+  @js.native
+  sealed trait Conv2DTranspose extends js.Object
+  
+  @js.native
+  sealed trait Cropping2D extends js.Object
+  
+  @js.native
+  sealed trait Dense extends js.Object
+  
+  @js.native
+  sealed trait DepthwiseConv2D extends js.Object
+  
+  @js.native
+  sealed trait Dot extends js.Object
+  
+  @js.native
+  sealed trait Dropout extends js.Object
+  
+  @js.native
+  sealed trait ELU extends js.Object
+  
+  @js.native
+  sealed trait Embedding extends js.Object
+  
+  @js.native
+  sealed trait Flatten extends js.Object
+  
+  @js.native
+  sealed trait GRU extends js.Object
+  
+  @js.native
+  sealed trait GRUCell extends js.Object
+  
+  @js.native
+  sealed trait GlobalAveragePooling1D extends js.Object
+  
+  @js.native
+  sealed trait GlobalAveragePooling2D extends js.Object
+  
+  @js.native
+  sealed trait GlobalMaxPooling1D extends js.Object
+  
+  @js.native
+  sealed trait GlobalMaxPooling2D extends js.Object
   
   @js.native
   sealed trait Identity extends js.Object
@@ -44,13 +119,46 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait InputLayer extends js.Object
   
   @js.native
+  sealed trait L1L2 extends js.Object
+  
+  @js.native
+  sealed trait LSTM extends js.Object
+  
+  @js.native
+  sealed trait LSTMCell extends js.Object
+  
+  @js.native
+  sealed trait LeakyReLU extends js.Object
+  
+  @js.native
+  sealed trait Masking extends js.Object
+  
+  @js.native
   sealed trait MaxNorm extends js.Object
+  
+  @js.native
+  sealed trait MaxPooling1D extends js.Object
+  
+  @js.native
+  sealed trait MaxPooling2D extends js.Object
+  
+  @js.native
+  sealed trait Maximum extends js.Object
   
   @js.native
   sealed trait MinMaxNorm extends js.Object
   
   @js.native
+  sealed trait Minimum extends js.Object
+  
+  @js.native
+  sealed trait Model extends js.Object
+  
+  @js.native
   sealed trait Momentum extends js.Object
+  
+  @js.native
+  sealed trait Multiply extends js.Object
   
   @js.native
   sealed trait NonNeg extends js.Object
@@ -60,6 +168,12 @@ object atTensorflowTfjsDashLayersStrings {
   
   @js.native
   sealed trait Orthogonal extends js.Object
+  
+  @js.native
+  sealed trait PReLU extends js.Object
+  
+  @js.native
+  sealed trait Permute extends js.Object
   
   @js.native
   sealed trait PyJson extends js.Object
@@ -74,7 +188,40 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait RandomUniform extends js.Object
   
   @js.native
+  sealed trait ReLU extends js.Object
+  
+  @js.native
+  sealed trait RepeatVector extends js.Object
+  
+  @js.native
+  sealed trait Reshape extends js.Object
+  
+  @js.native
   sealed trait SGD extends js.Object
+  
+  @js.native
+  sealed trait SeparableConv2D extends js.Object
+  
+  @js.native
+  sealed trait Sequential extends js.Object
+  
+  @js.native
+  sealed trait SimpleRNN extends js.Object
+  
+  @js.native
+  sealed trait SimpleRNNCell extends js.Object
+  
+  @js.native
+  sealed trait Softmax extends js.Object
+  
+  @js.native
+  sealed trait StackedRNNCells extends js.Object
+  
+  @js.native
+  sealed trait ThresholdedReLU extends js.Object
+  
+  @js.native
+  sealed trait TimeDistributed extends js.Object
   
   @js.native
   sealed trait TruncatedNormal extends js.Object
@@ -83,7 +230,13 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait UnitNorm extends js.Object
   
   @js.native
+  sealed trait UpSampling2D extends js.Object
+  
+  @js.native
   sealed trait VarianceScaling extends js.Object
+  
+  @js.native
+  sealed trait ZeroPadding2D extends js.Object
   
   @js.native
   sealed trait Zeros extends js.Object
@@ -143,10 +296,13 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait cosine_proximity extends js.Object
   
   @js.native
+  sealed trait cpu extends js.Object
+  
+  @js.native
   sealed trait dtype extends js.Object
   
   @js.native
-  sealed trait elu extends ActivationIdentifier
+  sealed trait elu_ extends ActivationIdentifier
   
   @js.native
   sealed trait epoch extends _YieldEveryOptions
@@ -209,7 +365,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait kullback_leibler_divergence extends js.Object
   
   @js.native
-  sealed trait l1l2 extends js.Object
+  sealed trait l1l2_ extends js.Object
   
   @js.native
   sealed trait leCunNormal extends _InitializerIdentifier
@@ -283,10 +439,10 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait randomUniform_ extends _InitializerIdentifier
   
   @js.native
-  sealed trait relu extends ActivationIdentifier
+  sealed trait relu6 extends ActivationIdentifier
   
   @js.native
-  sealed trait relu6 extends ActivationIdentifier
+  sealed trait relu_ extends ActivationIdentifier
   
   @js.native
   sealed trait same extends PaddingMode
@@ -298,7 +454,7 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait sigmoid extends ActivationIdentifier
   
   @js.native
-  sealed trait softmax extends ActivationIdentifier
+  sealed trait softmax_ extends ActivationIdentifier
   
   @js.native
   sealed trait softplus extends ActivationIdentifier
@@ -350,10 +506,15 @@ object atTensorflowTfjsDashLayersStrings {
   sealed trait varianceScaling_ extends _InitializerIdentifier
   
   @js.native
+  sealed trait webgl extends js.Object
+  
+  @js.native
   sealed trait zeros_ extends _InitializerIdentifier
   
   @scala.inline
   def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
+  @scala.inline
+  def Activation: Activation = "Activation".asInstanceOf[Activation]
   @scala.inline
   def Adadelta: Adadelta = "Adadelta".asInstanceOf[Adadelta]
   @scala.inline
@@ -363,23 +524,97 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def Adamax: Adamax = "Adamax".asInstanceOf[Adamax]
   @scala.inline
+  def Add: Add = "Add".asInstanceOf[Add]
+  @scala.inline
+  def Average: Average = "Average".asInstanceOf[Average]
+  @scala.inline
+  def AveragePooling1D: AveragePooling1D = "AveragePooling1D".asInstanceOf[AveragePooling1D]
+  @scala.inline
+  def AveragePooling2D: AveragePooling2D = "AveragePooling2D".asInstanceOf[AveragePooling2D]
+  @scala.inline
+  def BatchNormalization: BatchNormalization = "BatchNormalization".asInstanceOf[BatchNormalization]
+  @scala.inline
+  def Bidirectional: Bidirectional = "Bidirectional".asInstanceOf[Bidirectional]
+  @scala.inline
+  def Concatenate: Concatenate = "Concatenate".asInstanceOf[Concatenate]
+  @scala.inline
   def Constant: Constant = "Constant".asInstanceOf[Constant]
+  @scala.inline
+  def Conv1D: Conv1D = "Conv1D".asInstanceOf[Conv1D]
+  @scala.inline
+  def Conv2D: Conv2D = "Conv2D".asInstanceOf[Conv2D]
+  @scala.inline
+  def Conv2DTranspose: Conv2DTranspose = "Conv2DTranspose".asInstanceOf[Conv2DTranspose]
+  @scala.inline
+  def Cropping2D: Cropping2D = "Cropping2D".asInstanceOf[Cropping2D]
+  @scala.inline
+  def Dense: Dense = "Dense".asInstanceOf[Dense]
+  @scala.inline
+  def DepthwiseConv2D: DepthwiseConv2D = "DepthwiseConv2D".asInstanceOf[DepthwiseConv2D]
+  @scala.inline
+  def Dot: Dot = "Dot".asInstanceOf[Dot]
+  @scala.inline
+  def Dropout: Dropout = "Dropout".asInstanceOf[Dropout]
+  @scala.inline
+  def ELU: ELU = "ELU".asInstanceOf[ELU]
+  @scala.inline
+  def Embedding: Embedding = "Embedding".asInstanceOf[Embedding]
+  @scala.inline
+  def Flatten: Flatten = "Flatten".asInstanceOf[Flatten]
+  @scala.inline
+  def GRU: GRU = "GRU".asInstanceOf[GRU]
+  @scala.inline
+  def GRUCell: GRUCell = "GRUCell".asInstanceOf[GRUCell]
+  @scala.inline
+  def GlobalAveragePooling1D: GlobalAveragePooling1D = "GlobalAveragePooling1D".asInstanceOf[GlobalAveragePooling1D]
+  @scala.inline
+  def GlobalAveragePooling2D: GlobalAveragePooling2D = "GlobalAveragePooling2D".asInstanceOf[GlobalAveragePooling2D]
+  @scala.inline
+  def GlobalMaxPooling1D: GlobalMaxPooling1D = "GlobalMaxPooling1D".asInstanceOf[GlobalMaxPooling1D]
+  @scala.inline
+  def GlobalMaxPooling2D: GlobalMaxPooling2D = "GlobalMaxPooling2D".asInstanceOf[GlobalMaxPooling2D]
   @scala.inline
   def Identity: Identity = "Identity".asInstanceOf[Identity]
   @scala.inline
   def InputLayer: InputLayer = "InputLayer".asInstanceOf[InputLayer]
   @scala.inline
+  def L1L2: L1L2 = "L1L2".asInstanceOf[L1L2]
+  @scala.inline
+  def LSTM: LSTM = "LSTM".asInstanceOf[LSTM]
+  @scala.inline
+  def LSTMCell: LSTMCell = "LSTMCell".asInstanceOf[LSTMCell]
+  @scala.inline
+  def LeakyReLU: LeakyReLU = "LeakyReLU".asInstanceOf[LeakyReLU]
+  @scala.inline
+  def Masking: Masking = "Masking".asInstanceOf[Masking]
+  @scala.inline
   def MaxNorm: MaxNorm = "MaxNorm".asInstanceOf[MaxNorm]
+  @scala.inline
+  def MaxPooling1D: MaxPooling1D = "MaxPooling1D".asInstanceOf[MaxPooling1D]
+  @scala.inline
+  def MaxPooling2D: MaxPooling2D = "MaxPooling2D".asInstanceOf[MaxPooling2D]
+  @scala.inline
+  def Maximum: Maximum = "Maximum".asInstanceOf[Maximum]
   @scala.inline
   def MinMaxNorm: MinMaxNorm = "MinMaxNorm".asInstanceOf[MinMaxNorm]
   @scala.inline
+  def Minimum: Minimum = "Minimum".asInstanceOf[Minimum]
+  @scala.inline
+  def Model: Model = "Model".asInstanceOf[Model]
+  @scala.inline
   def Momentum: Momentum = "Momentum".asInstanceOf[Momentum]
+  @scala.inline
+  def Multiply: Multiply = "Multiply".asInstanceOf[Multiply]
   @scala.inline
   def NonNeg: NonNeg = "NonNeg".asInstanceOf[NonNeg]
   @scala.inline
   def Ones: Ones = "Ones".asInstanceOf[Ones]
   @scala.inline
   def Orthogonal: Orthogonal = "Orthogonal".asInstanceOf[Orthogonal]
+  @scala.inline
+  def PReLU: PReLU = "PReLU".asInstanceOf[PReLU]
+  @scala.inline
+  def Permute: Permute = "Permute".asInstanceOf[Permute]
   @scala.inline
   def PyJson: PyJson = "PyJson".asInstanceOf[PyJson]
   @scala.inline
@@ -389,13 +624,39 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def RandomUniform: RandomUniform = "RandomUniform".asInstanceOf[RandomUniform]
   @scala.inline
+  def ReLU: ReLU = "ReLU".asInstanceOf[ReLU]
+  @scala.inline
+  def RepeatVector: RepeatVector = "RepeatVector".asInstanceOf[RepeatVector]
+  @scala.inline
+  def Reshape: Reshape = "Reshape".asInstanceOf[Reshape]
+  @scala.inline
   def SGD: SGD = "SGD".asInstanceOf[SGD]
+  @scala.inline
+  def SeparableConv2D: SeparableConv2D = "SeparableConv2D".asInstanceOf[SeparableConv2D]
+  @scala.inline
+  def Sequential: Sequential = "Sequential".asInstanceOf[Sequential]
+  @scala.inline
+  def SimpleRNN: SimpleRNN = "SimpleRNN".asInstanceOf[SimpleRNN]
+  @scala.inline
+  def SimpleRNNCell: SimpleRNNCell = "SimpleRNNCell".asInstanceOf[SimpleRNNCell]
+  @scala.inline
+  def Softmax: Softmax = "Softmax".asInstanceOf[Softmax]
+  @scala.inline
+  def StackedRNNCells: StackedRNNCells = "StackedRNNCells".asInstanceOf[StackedRNNCells]
+  @scala.inline
+  def ThresholdedReLU: ThresholdedReLU = "ThresholdedReLU".asInstanceOf[ThresholdedReLU]
+  @scala.inline
+  def TimeDistributed: TimeDistributed = "TimeDistributed".asInstanceOf[TimeDistributed]
   @scala.inline
   def TruncatedNormal: TruncatedNormal = "TruncatedNormal".asInstanceOf[TruncatedNormal]
   @scala.inline
   def UnitNorm: UnitNorm = "UnitNorm".asInstanceOf[UnitNorm]
   @scala.inline
+  def UpSampling2D: UpSampling2D = "UpSampling2D".asInstanceOf[UpSampling2D]
+  @scala.inline
   def VarianceScaling: VarianceScaling = "VarianceScaling".asInstanceOf[VarianceScaling]
+  @scala.inline
+  def ZeroPadding2D: ZeroPadding2D = "ZeroPadding2D".asInstanceOf[ZeroPadding2D]
   @scala.inline
   def Zeros: Zeros = "Zeros".asInstanceOf[Zeros]
   @scala.inline
@@ -435,9 +696,11 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def cosine_proximity: cosine_proximity = "cosine_proximity".asInstanceOf[cosine_proximity]
   @scala.inline
+  def cpu: cpu = "cpu".asInstanceOf[cpu]
+  @scala.inline
   def dtype: dtype = "dtype".asInstanceOf[dtype]
   @scala.inline
-  def elu: elu = "elu".asInstanceOf[elu]
+  def elu_ : elu_ = "elu".asInstanceOf[elu_]
   @scala.inline
   def epoch: epoch = "epoch".asInstanceOf[epoch]
   @scala.inline
@@ -479,7 +742,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def kullback_leibler_divergence: kullback_leibler_divergence = "kullback_leibler_divergence".asInstanceOf[kullback_leibler_divergence]
   @scala.inline
-  def l1l2: l1l2 = "l1l2".asInstanceOf[l1l2]
+  def l1l2_ : l1l2_ = "l1l2".asInstanceOf[l1l2_]
   @scala.inline
   def leCunNormal: leCunNormal = "leCunNormal".asInstanceOf[leCunNormal]
   @scala.inline
@@ -527,9 +790,9 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def randomUniform_ : randomUniform_ = "randomUniform".asInstanceOf[randomUniform_]
   @scala.inline
-  def relu: relu = "relu".asInstanceOf[relu]
-  @scala.inline
   def relu6: relu6 = "relu6".asInstanceOf[relu6]
+  @scala.inline
+  def relu_ : relu_ = "relu".asInstanceOf[relu_]
   @scala.inline
   def same: same = "same".asInstanceOf[same]
   @scala.inline
@@ -537,7 +800,7 @@ object atTensorflowTfjsDashLayersStrings {
   @scala.inline
   def sigmoid: sigmoid = "sigmoid".asInstanceOf[sigmoid]
   @scala.inline
-  def softmax: softmax = "softmax".asInstanceOf[softmax]
+  def softmax_ : softmax_ = "softmax".asInstanceOf[softmax_]
   @scala.inline
   def softplus: softplus = "softplus".asInstanceOf[softplus]
   @scala.inline
@@ -568,6 +831,8 @@ object atTensorflowTfjsDashLayersStrings {
   def valid: valid = "valid".asInstanceOf[valid]
   @scala.inline
   def varianceScaling_ : varianceScaling_ = "varianceScaling".asInstanceOf[varianceScaling_]
+  @scala.inline
+  def webgl: webgl = "webgl".asInstanceOf[webgl]
   @scala.inline
   def zeros_ : zeros_ = "zeros".asInstanceOf[zeros_]
 }

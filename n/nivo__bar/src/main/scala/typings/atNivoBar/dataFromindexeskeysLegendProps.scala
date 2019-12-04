@@ -11,8 +11,8 @@ import typings.atNivoLegends.atNivoLegendsMod.LegendItemDirection
 import typings.atNivoLegends.atNivoLegendsMod.LegendMouseHandler
 import typings.atNivoLegends.atNivoLegendsMod.LegendMouseHandlerData
 import typings.atNivoLegends.atNivoLegendsMod.LegendSymbolShape
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

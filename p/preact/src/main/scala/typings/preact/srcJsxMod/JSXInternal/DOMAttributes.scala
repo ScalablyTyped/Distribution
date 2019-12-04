@@ -1,8 +1,8 @@
 package typings.preact.srcJsxMod.JSXInternal
 
 import typings.preact.Anon_Html
-import typings.preact.srcMod.ComponentChildren
-import typings.preact.srcMod.PreactDOMAttributes
+import typings.preact.preactMod.ComponentChildren
+import typings.preact.preactMod.PreactDOMAttributes
 import typings.std.Event
 import typings.std.EventTarget
 import scala.scalajs.js

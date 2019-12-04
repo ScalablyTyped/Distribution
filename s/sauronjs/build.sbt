@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sauronjs"
-version := "0.1.5-8a8620"
+version := "0.1.5-b6ea82"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

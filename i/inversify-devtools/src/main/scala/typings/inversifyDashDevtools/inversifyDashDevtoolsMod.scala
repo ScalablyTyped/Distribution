@@ -12,7 +12,7 @@ object inversifyDashDevtoolsMod extends js.Object {
   trait ConnectKernel
     extends js.Function {
     def apply(
-      kernel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ js.Any
+      kernel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify inversify.interfaces.Kernel */ js.Any
     ): Unit = js.native
   }
   

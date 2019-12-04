@@ -6,7 +6,7 @@ import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
 import typings.rmcDashTabs.Anon_Children
 import typings.rmcDashTabs.Anon_OffsetOnPanEnd
-import typings.rmcDashTabs.TypeofClassDefaultTabBarDefaultProps
+import typings.rmcDashTabs.TypeofClassDefaultTabBar
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ class Tabs protected ()
 @JSImport("rmc-tabs/lib/Tabs", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: TypeofClassDefaultTabBarDefaultProps = js.native
+  var DefaultTabBar: TypeofClassDefaultTabBar = js.native
   var defaultProps: PropsType = js.native
 }
 

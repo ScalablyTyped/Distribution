@@ -1,6 +1,6 @@
 package typings.electronDashBuilder.outBuilderMod
 
-import typings.appDashBuilderDashLib.outMod.Platform
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform
 import typings.builderDashUtil.outArchMod.Arch
 import typings.std.Map
 import scala.scalajs.js

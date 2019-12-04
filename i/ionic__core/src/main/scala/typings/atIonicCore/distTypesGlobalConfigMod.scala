@@ -1,6 +1,7 @@
 package typings.atIonicCore
 
 import typings.atIonicCore.distTypesGlobalConfigMod.Config
+import typings.atIonicCore.distTypesUtilsConfigMod.IonicConfig
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,9 +19,7 @@ object distTypesGlobalConfigMod extends js.Object {
     def getBoolean(key: String, fallback: Boolean): Boolean = js.native
     def getNumber(key: String): Double = js.native
     def getNumber(key: String, fallback: Double): Double = js.native
-    def reset(
-      configObj: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IonicConfig */ js.Any
-    ): Unit = js.native
+    def reset(configObj: IonicConfig): Unit = js.native
     def set(key: String, value: js.Any): Unit = js.native
   }
   

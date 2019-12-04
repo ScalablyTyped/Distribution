@@ -1,6 +1,6 @@
 package typings.graphqlDashCompose
 
-import typings.graphqlDashCompose.esmUtilsProjectionMod.ProjectionType
+import typings.graphqlDashCompose.libUtilsProjectionMod.ProjectionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

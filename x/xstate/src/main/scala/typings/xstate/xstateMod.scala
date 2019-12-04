@@ -163,7 +163,7 @@ object xstateMod extends js.Object {
       */
     var defaultOptions: InterpreterOptions = js.native
     @JSName("interpret")
-    var interpret_Original: Fn_MachineOptions = js.native
+    var interpret_Original: Fn_Machine = js.native
     def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent]): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
     def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent], options: Partial[InterpreterOptions]): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   }
@@ -209,17 +209,17 @@ object xstateMod extends js.Object {
     @JSName("done")
     var done_Original: js.Function2[/* id */ String, /* data */ js.UndefOr[js.Any], DoneEventObject] = js.native
     @JSName("log")
-    var log_Original: Fn_CtxEvent = js.native
+    var log_Original: Fn_Ctx = js.native
     @JSName("raise")
-    var raise_Original: Fn_EventEventObject = js.native
+    var raise_Original: Fn_Event = js.native
     @JSName("sendParent")
-    var sendParent_Original: Fn_EventOptionsEventObject = js.native
+    var sendParent_Original: Fn_EventOptions = js.native
     @JSName("send")
-    var send_Original: Fn_EventOptionsEventObject = js.native
+    var send_Original: Fn_EventOptions = js.native
     @JSName("start")
-    var start_Original: Fn_ActivityActivityActionObject = js.native
+    var start_Original: Fn_Activity = js.native
     @JSName("stop")
-    var stop_Original: Fn_ActivityActivityActionObject = js.native
+    var stop_Original: Fn_Activity = js.native
     def after(delayRef: String): String = js.native
     def after(delayRef: String, id: String): String = js.native
     def after(delayRef: Double): String = js.native
@@ -236,9 +236,9 @@ object xstateMod extends js.Object {
     def cancel(sendId: Double): CancelAction = js.native
     def done(id: String): DoneEventObject = js.native
     def done(id: String, data: js.Any): DoneEventObject = js.native
-    def log[TContext, TEvent /* <: EventObject */](): Anon_CtxEvent[TContext, TEvent] = js.native
-    def log[TContext, TEvent /* <: EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): Anon_CtxEvent[TContext, TEvent] = js.native
-    def log[TContext, TEvent /* <: EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: String): Anon_CtxEvent[TContext, TEvent] = js.native
+    def log[TContext, TEvent /* <: EventObject */](): Anon_Ctx[TContext, TEvent] = js.native
+    def log[TContext, TEvent /* <: EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): Anon_Ctx[TContext, TEvent] = js.native
+    def log[TContext, TEvent /* <: EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: String): Anon_Ctx[TContext, TEvent] = js.native
     def raise[TContext, TEvent /* <: EventObject */](event: Event[TEvent]): RaiseEvent[TContext, TEvent] = js.native
     def send[TContext, TEvent /* <: EventObject */](event: Event[TEvent]): SendAction[TContext, TEvent] = js.native
     def send[TContext, TEvent /* <: EventObject */](event: Event[TEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native

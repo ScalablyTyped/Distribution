@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.uploader")
 @js.native
-class uploader () extends baseview {
+class uploader ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -20,6 +21,8 @@ class uploader () extends baseview {
   var $prepareValue_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_uploader: WebixCallback = js.native
   @JSName("$updateProgress")
   var $updateProgress_Original: WebixCallback = js.native
   @JSName("config")

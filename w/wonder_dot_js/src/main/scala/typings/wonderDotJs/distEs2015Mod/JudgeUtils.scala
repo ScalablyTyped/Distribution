@@ -15,7 +15,7 @@ class JudgeUtils ()
 object JudgeUtils extends js.Object {
   def isClass(objInstance: js.Any, className: String): Boolean = js.native
   def isCollection(
-    list: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<any> */ js.Any
+    list: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ js.Any
   ): Boolean = js.native
   def isComponenet(component: typings.wonderDotJs.distEs2015CoreComponentMod.Component): Boolean = js.native
   def isDom(obj: js.Any): Boolean = js.native

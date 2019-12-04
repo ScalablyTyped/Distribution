@@ -19,7 +19,7 @@ object ImportOptions {
   def apply(
     customBlockFn: /* element */ Element => js.UndefOr[Null | CustomBlockObject] = null,
     customInlineFn: (/* element */ Element, /* inlineCreators */ InlineCreators) => js.UndefOr[
-      Null | Style | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ js.Any)
+      Null | Style | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ js.Any)
     ] = null,
     elementStyles: StringDictionary[String] = null,
     parser: /* html */ String => HTMLBodyElement = null

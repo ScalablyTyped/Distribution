@@ -1,6 +1,5 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
-import typings.pgDashPromise.XPromise
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IClient
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IConnectionParameters
 import scala.scalajs.js

@@ -17,15 +17,11 @@ class DefaultGraph ()
     */
   /* CompleteClass */
   override var termType: typings.rdfDashJs.rdfDashJsStrings.DefaultGraph = js.native
-  @JSName("termType")
-  val termType_DefaultGraph: typings.n3.n3Strings.DefaultGraph = js.native
   /**
     * Contains an empty string as constant value.
     */
   /* CompleteClass */
   override var value: Empty = js.native
-  @JSName("value")
-  val value_DefaultGraph: typings.n3.n3Strings.Empty = js.native
   /**
     * @param other The term to compare with.
     * @return True if and only if other has termType "DefaultGraph".

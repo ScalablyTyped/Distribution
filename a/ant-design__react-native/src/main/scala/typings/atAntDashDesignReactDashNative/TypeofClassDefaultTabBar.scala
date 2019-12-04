@@ -1,8 +1,8 @@
 package typings.atAntDashDesignReactDashNative
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.DefaultTabBar
-import typings.atAntDashDesignReactDashNative.esTabsDefaultTabBarMod.PropsType
+import typings.atAntDashDesignReactDashNative.libTabsDefaultTabBarMod.DefaultTabBar
+import typings.atAntDashDesignReactDashNative.libTabsDefaultTabBarMod.PropsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

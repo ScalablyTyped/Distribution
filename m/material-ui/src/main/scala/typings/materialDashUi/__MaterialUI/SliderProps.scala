@@ -4,12 +4,12 @@ import typings.materialDashUi.materialDashUiStrings.`x-reverse`
 import typings.materialDashUi.materialDashUiStrings.`y-reverse`
 import typings.materialDashUi.materialDashUiStrings.x
 import typings.materialDashUi.materialDashUiStrings.y
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.FocusEvent
 import typings.react.reactMod.FocusEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

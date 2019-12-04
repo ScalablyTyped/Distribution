@@ -19,8 +19,6 @@ class BlankNode protected ()
     */
   /* CompleteClass */
   override var termType: typings.rdfDashJs.rdfDashJsStrings.BlankNode = js.native
-  @JSName("termType")
-  val termType_BlankNode: typings.n3.n3Strings.BlankNode = js.native
   /**
     * Blank node name as a string, without any serialization specific prefixes,
     * e.g. when parsing,

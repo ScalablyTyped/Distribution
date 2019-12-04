@@ -51,15 +51,15 @@ object atJupyterlabUiDashComponentsMod extends js.Object {
   val defaultIconRegistry: typings.atJupyterlabUiDashComponents.libIconIconregistryMod.IconRegistry = js.native
   def Button(props: IButtonProps with DOMAttributes[_]): Element = js.native
   def Collapse(
-    props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with DOMAttributes[_]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ICollapseProps */ js.Any) with DOMAttributes[_]
   ): Element = js.native
   def DefaultIconReact(props: INodeOptions with Anon_DivSpan): ReactElement = js.native
   def HTMLSelect(
-    props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IHTMLSelectProps */ js.Any) with DOMAttributes[_]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IHTMLSelectProps */ js.Any) with DOMAttributes[_]
   ): Element = js.native
   def InputGroup(props: IInputGroupProps with DOMAttributes[_]): Element = js.native
   def Select(
-    props: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with DOMAttributes[_]
+    props: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISelectProps<any> */ js.Any) with DOMAttributes[_]
   ): Element = js.native
   def combineClasses(classNames: js.UndefOr[String]*): String = js.native
   @js.native

@@ -3,7 +3,7 @@ package typings.openpgp.openpgpMod.key
 import typings.openpgp.Anon_Keyid
 import typings.openpgp.Anon_KeyidUserid
 import typings.openpgp.Anon_SelfCertification
-import typings.openpgp.Infinity
+import typings.openpgp.openpgpMod.Infinity
 import typings.openpgp.openpgpMod.`type`.keyid.Keyid
 import typings.openpgp.openpgpMod.enums.keyStatus
 import typings.openpgp.openpgpMod.packet.List

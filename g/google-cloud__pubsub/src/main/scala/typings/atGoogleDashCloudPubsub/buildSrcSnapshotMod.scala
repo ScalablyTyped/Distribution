@@ -1,8 +1,8 @@
 package typings.atGoogleDashCloudPubsub
 
+import typings.atGoogleDashCloudPubsub.atGoogleDashCloudPubsubMod.PubSub
 import typings.atGoogleDashCloudPubsub.buildProtoPubsubMod.google.pubsub.v1.ISeekResponse
 import typings.atGoogleDashCloudPubsub.buildProtoPubsubMod.google.pubsub.v1.ISnapshot
-import typings.atGoogleDashCloudPubsub.buildSrcMod.PubSub
 import typings.atGoogleDashCloudPubsub.buildSrcPubsubMod.EmptyCallback
 import typings.atGoogleDashCloudPubsub.buildSrcPubsubMod.EmptyResponse
 import typings.atGoogleDashCloudPubsub.buildSrcPubsubMod.RequestCallback

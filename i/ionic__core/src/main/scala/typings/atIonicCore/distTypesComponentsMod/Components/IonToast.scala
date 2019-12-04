@@ -1,10 +1,14 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.bottom
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.middle
 import typings.atIonicCore.atIonicCoreStrings.top
+import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastButton
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +22,7 @@ trait IonToast extends js.Object {
   /**
     * An array of buttons for the toast.
     */
-  var buttons: js.UndefOr[
-    js.Array[
-      (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ToastButton */ _) | String
-    ]
-  ] = js.native
+  var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
   /**
     * @deprecated Use `buttons` instead. Text to display in the close button.
     */
@@ -30,9 +30,7 @@ trait IonToast extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.native
+  var color: js.UndefOr[Color] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -44,9 +42,7 @@ trait IonToast extends js.Object {
   /**
     * Animation to use when the toast is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * Header to be shown in the toast.
     */
@@ -58,9 +54,7 @@ trait IonToast extends js.Object {
   /**
     * Animation to use when the toast is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * Message to be shown in the toast.
     */
@@ -93,15 +87,11 @@ trait IonToast extends js.Object {
   /**
     * Returns a promise that resolves when the toast did dismiss.
     */
-  def onDidDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Returns a promise that resolves when the toast will dismiss.
     */
-  def onWillDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Present the toast overlay after it has been created.
     */

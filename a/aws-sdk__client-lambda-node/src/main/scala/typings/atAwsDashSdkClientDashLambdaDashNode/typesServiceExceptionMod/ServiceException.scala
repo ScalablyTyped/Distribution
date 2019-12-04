@@ -66,10 +66,7 @@ trait ServiceException
      with UpdateAliasExceptionsUnion
      with UpdateEventSourceMappingExceptionsUnion
      with UpdateFunctionCodeExceptionsUnion
-     with UpdateFunctionConfigurationExceptionsUnion {
-  @JSName("name")
-  var name_ServiceException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.ServiceException
-}
+     with UpdateFunctionConfigurationExceptionsUnion
 
 object ServiceException {
   @scala.inline
@@ -77,7 +74,7 @@ object ServiceException {
     $metadata: ResponseMetadata,
     details: _ServiceExceptionDetails,
     message: String,
-    name: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.ServiceException,
+    name: String,
     stack: String = null
   ): ServiceException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])

@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.contextmenu")
 @js.native
-class contextmenu () extends baseview {
+class contextmenu ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   @JSName("$dragHTML")
@@ -23,6 +24,8 @@ class contextmenu () extends baseview {
   var $dropHTML_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_contextmenu: WebixCallback = js.native
   @JSName("config")
   var config_contextmenu: contextmenuConfig = js.native
   var data: DataStore = js.native

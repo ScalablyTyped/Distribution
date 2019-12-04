@@ -1,6 +1,7 @@
 package typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod
 
 import typings.react.reactMod.Component
+import typings.reactDashNative.reactDashNativeMod.DrawerLayoutAndroidProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DrawerLayoutAndroid ()
   extends Component[
-      NativeViewGestureHandlerProperties with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DrawerLayoutAndroidProperties */ js.Any), 
+      NativeViewGestureHandlerProperties with DrawerLayoutAndroidProperties, 
       js.Object, 
       js.Any
     ]

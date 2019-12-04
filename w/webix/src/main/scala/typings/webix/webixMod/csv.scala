@@ -17,5 +17,6 @@ trait csv extends js.Object {
 
 @JSImport("webix", "csv")
 @js.native
-object csv extends TopLevel[csv]
+object csv
+  extends TopLevel[typings.webix.webix.csv]
 

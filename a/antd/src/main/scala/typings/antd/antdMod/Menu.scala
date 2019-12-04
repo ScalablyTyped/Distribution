@@ -1,7 +1,7 @@
 package typings.antd.antdMod
 
-import typings.antd.TypeofClassItemIsMenuItemBoolean
-import typings.antd.TypeofClassSubMenuContextTypes
+import typings.antd.TypeofClassItemIsMenuItem
+import typings.antd.TypeofClassSubMenu
 import typings.antd.libMenuMod.default
 import typings.rcDashMenu.libDividerMod.DividerProps
 import typings.react.reactMod.FC
@@ -18,8 +18,8 @@ class Menu () extends default
 @js.native
 object Menu extends js.Object {
   var Divider: FC[DividerProps] = js.native
-  var Item: TypeofClassItemIsMenuItemBoolean = js.native
+  var Item: TypeofClassItemIsMenuItem = js.native
   var ItemGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemGroup */ js.Any = js.native
-  var SubMenu: TypeofClassSubMenuContextTypes = js.native
+  var SubMenu: TypeofClassSubMenu = js.native
 }
 

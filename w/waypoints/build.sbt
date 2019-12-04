@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "waypoints"
-version := "4.x-dt-20191126Z-cc0d1d"
+version := "4.x-dt-20191126Z-34026f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

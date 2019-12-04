@@ -1,6 +1,6 @@
 package typings.atOracleOraclejet.ojmodelMod
 
-import typings.atOracleOraclejet.Anon_Attributes
+import typings.atOracleOraclejet.Anon_AttributesData
 import typings.atOracleOraclejet.Anon_Attrs
 import typings.atOracleOraclejet.Anon_ErrorModel
 import typings.atOracleOraclejet.Anon_ErrorModelOptions
@@ -128,7 +128,7 @@ class Model () extends js.Object {
 @js.native
 object Model extends js.Object {
   def extend(): js.Any = js.native
-  def extend(properties: Anon_Attributes): js.Any = js.native
-  def extend(properties: Anon_Attributes, classProperties: js.Object): js.Any = js.native
+  def extend(properties: Anon_AttributesData): js.Any = js.native
+  def extend(properties: Anon_AttributesData, classProperties: js.Object): js.Any = js.native
 }
 

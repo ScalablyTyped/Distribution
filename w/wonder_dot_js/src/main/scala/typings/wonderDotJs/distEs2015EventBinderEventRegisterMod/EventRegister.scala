@@ -15,14 +15,14 @@ abstract class EventRegister () extends js.Object {
   def clear(): Unit = js.native
   def forEachAll(
     func: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
       /* eventName */ EEventName, 
       Unit
     ]
   ): Unit = js.native
   def forEachEventName(
     func: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<EventRegisterData> */ /* list */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<EventRegisterData> */ /* list */ js.Any, 
       /* eventName */ EEventName, 
       Unit
     ]

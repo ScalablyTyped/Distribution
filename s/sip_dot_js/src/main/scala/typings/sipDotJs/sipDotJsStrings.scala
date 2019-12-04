@@ -67,13 +67,22 @@ object sipDotJsStrings {
   sealed trait addTrack extends js.Object
   
   @js.native
+  sealed trait any extends js.Object
+  
+  @js.native
   sealed trait bye_ extends js.Object
   
   @js.native
   sealed trait cancel_ extends js.Object
   
   @js.native
+  sealed trait `class` extends js.Object
+  
+  @js.native
   sealed trait confirmed extends js.Object
+  
+  @js.native
+  sealed trait connected extends js.Object
   
   @js.native
   sealed trait connecting extends js.Object
@@ -88,7 +97,16 @@ object sipDotJsStrings {
   sealed trait directionChanged extends js.Object
   
   @js.native
+  sealed trait disconnected extends js.Object
+  
+  @js.native
+  sealed trait disconnecting extends js.Object
+  
+  @js.native
   sealed trait dtmf extends js.Object
+  
+  @js.native
+  sealed trait end extends js.Object
   
   @js.native
   sealed trait error extends LogLevel
@@ -136,6 +154,9 @@ object sipDotJsStrings {
   sealed trait invite_ extends js.Object
   
   @js.native
+  sealed trait literal extends js.Object
+  
+  @js.native
   sealed trait log extends LogLevel
   
   @js.native
@@ -143,6 +164,9 @@ object sipDotJsStrings {
   
   @js.native
   sealed trait notify_ extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
   
   @js.native
   sealed trait outOfDialogReferRequested extends js.Object
@@ -296,11 +320,17 @@ object sipDotJsStrings {
   @scala.inline
   def addTrack: addTrack = "addTrack".asInstanceOf[addTrack]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def bye_ : bye_ = "bye".asInstanceOf[bye_]
   @scala.inline
   def cancel_ : cancel_ = "cancel".asInstanceOf[cancel_]
   @scala.inline
+  def `class`: `class` = "class".asInstanceOf[`class`]
+  @scala.inline
   def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
+  @scala.inline
+  def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   @scala.inline
@@ -310,7 +340,13 @@ object sipDotJsStrings {
   @scala.inline
   def directionChanged: directionChanged = "directionChanged".asInstanceOf[directionChanged]
   @scala.inline
+  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  @scala.inline
+  def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
+  @scala.inline
   def dtmf: dtmf = "dtmf".asInstanceOf[dtmf]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -342,11 +378,15 @@ object sipDotJsStrings {
   @scala.inline
   def invite_ : invite_ = "invite".asInstanceOf[invite_]
   @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
   @scala.inline
   def message_ : message_ = "message".asInstanceOf[message_]
   @scala.inline
   def notify_ : notify_ = "notify".asInstanceOf[notify_]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
   @scala.inline

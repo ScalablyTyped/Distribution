@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMenuMenuDashInterfaceMod
 
+import typings.atIonicCore.atIonicCoreMod.Side
 import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonMenuElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -18,7 +19,7 @@ trait MenuI extends js.Object {
   var menuCtrl: js.UndefOr[MenuControllerI] = js.native
   var menuId: js.UndefOr[String] = js.native
   var menuInnerEl: js.UndefOr[HTMLElement] = js.native
-  var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any = js.native
+  var side: Side = js.native
   var width: Double = js.native
   def _setOpen(shouldOpen: Boolean): js.Promise[Boolean] = js.native
   def _setOpen(shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = js.native

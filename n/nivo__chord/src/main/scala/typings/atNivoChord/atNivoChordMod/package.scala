@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object atNivoChordMod {
   import typings.atNivoChord.OmitArcDataformattedValuelabel
   import typings.atNivoChord.OmitArcDatalabel
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
 
   type ChordArcMouseHandler = js.Function2[/* arc */ ArcData, /* event */ MouseEvent[js.Any, NativeMouseEvent], Unit]
   type ChordRibbonMouseHandler = js.Function2[/* ribbon */ RibbonData, /* event */ MouseEvent[js.Any, NativeMouseEvent], Unit]

@@ -1,7 +1,6 @@
 package typings.openpgp.openpgpMod
 
 import typings.openpgp.Anon_Keyid
-import typings.openpgp.ReadableStream
 import typings.openpgp.openpgpMod.cleartext.CleartextMessage
 import typings.openpgp.openpgpMod.signature.Signature
 import typings.std.Date

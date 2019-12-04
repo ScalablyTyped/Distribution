@@ -7,9 +7,9 @@ import typings.antd.libTooltipMod.TooltipAlignConfig
 import typings.antd.libTooltipMod.TooltipPlacement
 import typings.antd.libTooltipMod.TooltipTrigger
 import typings.antd.libTooltipPlacementsMod.AdjustOverflow
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

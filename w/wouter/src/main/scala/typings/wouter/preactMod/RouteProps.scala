@@ -1,7 +1,7 @@
 package typings.wouter.preactMod
 
-import typings.preact.srcMod.ComponentChildren
-import typings.preact.srcMod.ComponentType
+import typings.preact.preactMod.ComponentChildren
+import typings.preact.preactMod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

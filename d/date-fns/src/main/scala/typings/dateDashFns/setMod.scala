@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object setMod extends js.Object {
   @js.native
   object default extends js.Object {
-    def apply(date: Double, values: Anon_Date): Date = js.native
-    def apply(date: Date, values: Anon_Date): Date = js.native
+    def apply(date: Double, values: Anon_DateHours): Date = js.native
+    def apply(date: Date, values: Anon_DateHours): Date = js.native
   }
   
 }

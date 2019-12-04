@@ -5,7 +5,6 @@ import typings.sequelize.Anon_Count
 import typings.sequelize.Anon_False
 import typings.sequelize.Anon_FalseReturning
 import typings.sequelize.Anon_Returning
-import typings.sequelize.Omit
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

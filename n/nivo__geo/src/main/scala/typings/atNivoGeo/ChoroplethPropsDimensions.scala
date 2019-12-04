@@ -6,8 +6,8 @@ import typings.atNivoGeo.atNivoGeoMod.ChoroplethTooltip
 import typings.atNivoGeo.atNivoGeoMod.DatumMatcher
 import typings.atNivoGeo.atNivoGeoMod.FeatureAccessor
 import typings.atNivoGeo.atNivoGeoMod.GeoProjectionType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -110,7 +110,7 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def Text(`type`: text, value: String, data: Data = null, position: Position = null): PhrasingContent = {
+  def Text(`type`: text, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -118,7 +118,7 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def HTML(`type`: html, value: String, data: Data = null, position: Position = null): PhrasingContent = {
+  def HTML(`type`: html, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
@@ -161,7 +161,7 @@ object PhrasingContent {
     __obj.asInstanceOf[PhrasingContent]
   }
   @scala.inline
-  def InlineCode(`type`: inlineCode, value: String, data: Data = null, position: Position = null): PhrasingContent = {
+  def InlineCode(`type`: inlineCode, value: js.Any, data: Data = null, position: Position = null): PhrasingContent = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

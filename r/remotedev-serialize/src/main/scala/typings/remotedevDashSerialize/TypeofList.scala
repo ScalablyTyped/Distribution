@@ -1,6 +1,6 @@
 package typings.remotedevDashSerialize
 
-import typings.immutable.immutableMod.List
+import typings.immutable.Immutable.List
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait TypeofList extends js.Object {
     * List.isList(List()); // true
     * ```
     */
-  def isList(maybeList: js.Any): /* is immutable.immutable.List<any> */ Boolean = js.native
+  def isList(maybeList: js.Any): /* is immutable.Immutable.List<any> */ Boolean = js.native
   /**
     * Creates a new List containing `values`.
     *

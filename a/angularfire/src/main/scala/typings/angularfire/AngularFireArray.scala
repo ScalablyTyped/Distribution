@@ -35,7 +35,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   	 */
   @JSName("$add")
   def $add(newData: js.Any): IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Informs $firebase to stop sending events and clears memory being used
@@ -114,7 +114,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   	 */
   @JSName("$remove")
   def $remove(recordOrIndex: js.Any): IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Pass either an item in the array or the index of an item and it will be saved back
@@ -132,7 +132,7 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   	 */
   @JSName("$save")
   def $save(recordOrIndex: js.Any): IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change (add, updated,

@@ -2,6 +2,8 @@ package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.Animation
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +16,7 @@ trait IonRouterOutlet extends js.Object {
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
-  var animation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.undefined
+  var animation: js.UndefOr[AnimationBuilder] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
@@ -27,12 +27,12 @@ object IonRouterOutlet {
   @scala.inline
   def apply(
     animated: js.UndefOr[Boolean] = js.undefined,
-    animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any = null,
+    animation: (/* Animation */ Animation, /* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => js.Promise[Animation] = null,
     mode: ios | md = null
   ): IonRouterOutlet = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(js.Any.fromFunction3(animation))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouterOutlet]
   }

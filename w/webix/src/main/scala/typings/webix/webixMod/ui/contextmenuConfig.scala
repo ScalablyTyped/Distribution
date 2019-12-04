@@ -14,7 +14,7 @@ trait contextmenuConfig extends js.Object {
   var autofocus: js.UndefOr[Boolean] = js.undefined
   var autoheight: js.UndefOr[Boolean] = js.undefined
   var autowidth: js.UndefOr[Boolean] = js.undefined
-  var body: js.UndefOr[String | baseview] = js.undefined
+  var body: js.UndefOr[String | typings.webix.webix.ui.baseview] = js.undefined
   var borderless: js.UndefOr[Boolean] = js.undefined
   var click: js.UndefOr[String | WebixCallback] = js.undefined
   var clipboard: js.UndefOr[Boolean | String] = js.undefined
@@ -91,7 +91,7 @@ object contextmenuConfig {
     autofocus: js.UndefOr[Boolean] = js.undefined,
     autoheight: js.UndefOr[Boolean] = js.undefined,
     autowidth: js.UndefOr[Boolean] = js.undefined,
-    body: String | baseview = null,
+    body: String | typings.webix.webix.ui.baseview = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     click: String | WebixCallback = null,
     clipboard: Boolean | String = null,

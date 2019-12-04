@@ -43,8 +43,17 @@ trait atStorybookComponentsProps {
   def ListItemProps: typings.atStorybookComponents.distTooltipListItemMod.ListItemProps.type = typings.atStorybookComponents.distTooltipListItemMod.ListItemProps
   type ListItemProps = typings.atStorybookComponents.distTooltipListItemMod.ListItemProps
   @scala.inline
+  def PrettyPropTypeProps: typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropTypeProps.type = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropTypeProps
+  type PrettyPropTypeProps = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropTypeProps
+  @scala.inline
+  def PrettyPropValProps: typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropValProps.type = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropValProps
+  type PrettyPropValProps = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PrettyPropValProps
+  @scala.inline
   def PreviewProps: typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps.type = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
   type PreviewProps = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
+  @scala.inline
+  def PropRowProps: typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps.type = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps
+  type PropRowProps = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps
   @scala.inline
   def PropsTableProps: typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps.type = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
   type PropsTableProps = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
@@ -68,6 +77,10 @@ trait atStorybookComponentsProps {
   @scala.inline
   def TabsStateProps: typings.atStorybookComponents.distTabsTabsMod.TabsStateProps.type = typings.atStorybookComponents.distTabsTabsMod.TabsStateProps
   type TabsStateProps = typings.atStorybookComponents.distTabsTabsMod.TabsStateProps
+  type ToolbarProps = typings.atStorybookComponents.distBlocksToolbarMod.ToolbarProps
+  @scala.inline
+  def TooltipProps: typings.atStorybookComponents.distTooltipTooltipMod.TooltipProps.type = typings.atStorybookComponents.distTooltipTooltipMod.TooltipProps
+  type TooltipProps = typings.atStorybookComponents.distTooltipTooltipMod.TooltipProps
   @scala.inline
   def TooltipLinkListProps: typings.atStorybookComponents.distTooltipTooltipLinkListMod.TooltipLinkListProps.type = typings.atStorybookComponents.distTooltipTooltipLinkListMod.TooltipLinkListProps
   type TooltipLinkListProps = typings.atStorybookComponents.distTooltipTooltipLinkListMod.TooltipLinkListProps

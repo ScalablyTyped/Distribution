@@ -1,5 +1,7 @@
 package typings.atJupyterlabServices.libTerminalTerminalMod.TerminalSession
 
+import typings.atJupyterlabServices.atJupyterlabServicesMod.ServerConnection.NetworkError
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.atPhosphorAlgorithm.libIterMod.IIterator
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import typings.atPhosphorSignaling.atPhosphorSignalingMod.ISignal
@@ -19,10 +21,7 @@ trait IManager extends IDisposable {
   /**
     * A signal emitted when there is a connection failure.
     */
-  var connectionFailure: ISignal[
-    IManager, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.NetworkError */ _
-  ] = js.native
+  var connectionFailure: ISignal[IManager, NetworkError] = js.native
   /**
     * Test whether the manager is ready.
     */
@@ -38,7 +37,7 @@ trait IManager extends IDisposable {
   /**
     * The server settings for the manager.
     */
-  val serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = js.native
+  val serverSettings: ISettings = js.native
   def connectTo(name: String): js.Promise[ISession] = js.native
   /**
     * Whether the terminal service is available.

@@ -6,10 +6,10 @@ import typings.antdDashMobile.antdDashMobileStrings.primary
 import typings.antdDashMobile.antdDashMobileStrings.small
 import typings.antdDashMobile.antdDashMobileStrings.warning
 import typings.antdDashMobile.libButtonPropsTypeMod.ButtonPropsType
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js

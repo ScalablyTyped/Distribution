@@ -1,5 +1,6 @@
 package typings.antdDashMobileDashRn.antdDashMobileDashRnMod
 
+import typings.antdDashMobileDashRn.TypeofClassRMCDefaultTabBar
 import typings.antdDashMobileDashRn.libTabsIndexDotNativeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +14,6 @@ class Tabs () extends default
 @JSImport("antd-mobile-rn", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RMCDefaultTabBar */ js.Any = js.native
+  var DefaultTabBar: TypeofClassRMCDefaultTabBar = js.native
 }
 

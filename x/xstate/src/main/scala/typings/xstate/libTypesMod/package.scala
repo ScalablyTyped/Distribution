@@ -8,8 +8,8 @@ package object libTypesMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.Partial
   import typings.std.Record
-  import typings.xstate.Anon_AutoForwardDataForward
-  import typings.xstate.Anon_DelayExpr
+  import typings.xstate.Anon_AutoForwardData
+  import typings.xstate.Anon_Delay
   import typings.xstate.Anon_TypeString
   import typings.xstate.libStateMod.State
   import typings.xstate.libStateNodeMod.StateNode
@@ -46,7 +46,7 @@ package object libTypesMod {
   type DefaultContext = js.UndefOr[Record[String, js.Any]]
   type DefaultGuardType = xstateDOTguard
   type DelayConfig[TContext, TEvent /* <: EventObject */] = Double | (Expr[TContext, OmniEventObject[TEvent], Double])
-  type DelayedTransitions[TContext, TEvent /* <: EventObject */] = (Record[String | Double, String | (SingleOrArray[TransitionConfig[TContext, TEvent]])]) | (js.Array[(TransitionConfig[TContext, TEvent]) with (Anon_DelayExpr[TContext, TEvent])])
+  type DelayedTransitions[TContext, TEvent /* <: EventObject */] = (Record[String | Double, String | (SingleOrArray[TransitionConfig[TContext, TEvent]])]) | (js.Array[(TransitionConfig[TContext, TEvent]) with (Anon_Delay[TContext, TEvent])])
   type DisposeActivityFunction = js.Function0[Unit]
   type DoneEvent = DoneEventObject with String
   type Event[TEvent /* <: EventObject */] = (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | TEvent
@@ -54,7 +54,7 @@ package object libTypesMod {
   type Expr[TContext, TEvent /* <: EventObject */, T] = js.Function2[/* context */ TContext, /* event */ TEvent, T]
   type Guard[TContext, TEvent /* <: EventObject */] = (GuardPredicate[TContext, TEvent]) | ((Record[String, _]) with Anon_TypeString)
   type InvokeCallback = js.Function2[/* sender */ Sender[js.Any], /* onEvent */ Receiver[EventObject], js.Any]
-  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (Anon_AutoForwardDataForward[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
+  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (Anon_AutoForwardData[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
   type InvokeCreator[TContext, TFinalContext] = js.Function2[
     /* context */ TContext, 
     /* event */ EventObject, 

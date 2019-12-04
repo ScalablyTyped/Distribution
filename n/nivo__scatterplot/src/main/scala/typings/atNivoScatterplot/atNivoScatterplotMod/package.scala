@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atNivoScatterplotMod {
-  import typings.react.NativeMouseEvent
   import typings.react.reactMod.MouseEvent
+  import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.ReactNode
   import typings.std.CanvasRenderingContext2D
   import typings.std.Date

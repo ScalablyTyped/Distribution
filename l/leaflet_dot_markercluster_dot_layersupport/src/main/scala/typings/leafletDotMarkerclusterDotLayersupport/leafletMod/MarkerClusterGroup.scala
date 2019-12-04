@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object MarkerClusterGroup extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MarkerClusterGroup * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkerClusterGroup * / any */ @js.native
   trait LayerSupport extends js.Object {
     def checkIn(layers: js.Array[Layer]): this.type = js.native
     /**

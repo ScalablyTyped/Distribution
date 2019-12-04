@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__util-utf8-browser"
-version := "0.1.0-preview.1-5a7b95"
+version := "0.1.0-preview.1-23d162"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

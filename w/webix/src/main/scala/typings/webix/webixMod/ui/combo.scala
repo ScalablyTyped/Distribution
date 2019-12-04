@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.combo")
 @js.native
-class combo () extends baseview {
+class combo ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
   @JSName("$compareValue")
@@ -22,6 +23,8 @@ class combo () extends baseview {
   var $render_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_combo: WebixCallback = js.native
   @JSName("config")
   var config_combo: comboConfig = js.native
   @JSName("on_click")
@@ -61,8 +64,8 @@ class combo () extends baseview {
   def detachEvent(id: String): Unit = js.native
   def focus(): Unit = js.native
   def getInputNode(): HTMLElement = js.native
-  def getList(): baseview = js.native
-  def getPopup(): baseview = js.native
+  def getList(): typings.webix.webix.ui.baseview = js.native
+  def getPopup(): typings.webix.webix.ui.baseview = js.native
   def getText(): String = js.native
   def getValue(): String = js.native
   def hasEvent(name: String): Boolean = js.native

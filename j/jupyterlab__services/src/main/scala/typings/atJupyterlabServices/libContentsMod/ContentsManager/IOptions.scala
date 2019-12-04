@@ -1,6 +1,7 @@
 package typings.atJupyterlabServices.libContentsMod.ContentsManager
 
 import typings.atJupyterlabServices.libContentsMod.Contents.IDrive
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,17 +17,12 @@ trait IOptions extends js.Object {
   /**
     * The server settings associated with the manager.
     */
-  var serverSettings: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ] = js.undefined
+  var serverSettings: js.UndefOr[ISettings] = js.undefined
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    defaultDrive: IDrive = null,
-    serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any = null
-  ): IOptions = {
+  def apply(defaultDrive: IDrive = null, serverSettings: ISettings = null): IOptions = {
     val __obj = js.Dynamic.literal()
     if (defaultDrive != null) __obj.updateDynamic("defaultDrive")(defaultDrive.asInstanceOf[js.Any])
     if (serverSettings != null) __obj.updateDynamic("serverSettings")(serverSettings.asInstanceOf[js.Any])

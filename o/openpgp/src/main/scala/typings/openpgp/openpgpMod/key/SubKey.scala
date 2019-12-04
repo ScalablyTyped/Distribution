@@ -1,6 +1,6 @@
 package typings.openpgp.openpgpMod.key
 
-import typings.openpgp.Infinity
+import typings.openpgp.openpgpMod.Infinity
 import typings.openpgp.openpgpMod.enums.keyStatus
 import typings.openpgp.openpgpMod.packet.List
 import typings.openpgp.openpgpMod.packet.PublicKey

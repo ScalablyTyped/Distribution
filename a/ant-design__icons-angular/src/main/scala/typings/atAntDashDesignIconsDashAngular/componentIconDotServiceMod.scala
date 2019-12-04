@@ -1,5 +1,7 @@
 package typings.atAntDashDesignIconsDashAngular
 
+import typings.atAngularCommon.httpMod.HttpBackend
+import typings.atAngularCommon.httpMod.HttpClient
 import typings.atAngularCore.atAngularCoreMod.Renderer2
 import typings.atAngularCore.atAngularCoreMod.RendererFactory2
 import typings.atAngularPlatformDashBrowser.atAngularPlatformDashBrowserMod.DomSanitizer
@@ -22,7 +24,7 @@ object componentIconDotServiceMod extends js.Object {
   class IconService protected () extends js.Object {
     def this(
       _rendererFactory: RendererFactory2,
-      _handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpBackend */ js.Any,
+      _handler: HttpBackend,
       _document: js.Any,
       sanitizer: DomSanitizer
     ) = this()
@@ -33,8 +35,8 @@ object componentIconDotServiceMod extends js.Object {
     var _document: js.Any = js.native
     /** A flag indicates whether jsonp loading is enabled. */
     var _enableJsonpLoading: js.Any = js.native
-    var _handler: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpBackend */ js.Any = js.native
-    var _http: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HttpClient */ js.Any = js.native
+    var _handler: HttpBackend = js.native
+    var _http: HttpClient = js.native
     var _inProgressFetches: Map[String, Observable[IconDefinition | Null]] = js.native
     @JSName("_jsonpIconLoad$")
     val _jsonpIconLoad$: js.Any = js.native

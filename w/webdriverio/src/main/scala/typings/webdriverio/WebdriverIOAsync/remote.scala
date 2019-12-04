@@ -1,5 +1,6 @@
 package typings.webdriverio.WebdriverIOAsync
 
+import typings.webdriverio.WebdriverIO.RemoteOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object remote extends js.Object {
   def apply(): BrowserObject = js.native
-  def apply(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.RemoteOptions */ js.Any
-  ): BrowserObject = js.native
-  def apply(
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.RemoteOptions */ js.Any,
-    modifier: js.Function1[/* repeated */ js.Any, _]
-  ): BrowserObject = js.native
+  def apply(options: RemoteOptions): BrowserObject = js.native
+  def apply(options: RemoteOptions, modifier: js.Function1[/* repeated */ js.Any, _]): BrowserObject = js.native
 }
 

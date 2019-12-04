@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "naver-whale"
-version := "0.0-unknown-dt-20190327Z-371c90"
+version := "0.0-unknown-dt-20190327Z-7c9cfd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20191126Z-db0004",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20191126Z-b8ef7c",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-8283e4",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-e77311",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iscroll"
-version := "5.2-dt-20191119Z-d8eb9c"
+version := "5.2-dt-20191119Z-ea08ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

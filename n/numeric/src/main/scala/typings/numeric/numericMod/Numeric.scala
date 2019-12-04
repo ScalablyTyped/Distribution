@@ -11,12 +11,6 @@ import typings.numeric.Anon_Iterations
 import typings.numeric.Anon_LU
 import typings.numeric.Anon_Random
 import typings.numeric.Anon_S
-import typings.numeric.DeprecatedSparseMatrix
-import typings.numeric.DeprecatedSparseVector
-import typings.numeric.Matrix
-import typings.numeric.Scalar
-import typings.numeric.Vector
-import typings.numeric.VectorBoolean
 import typings.numeric.numericStrings.L
 import typings.numeric.numericStrings.periodic
 import scala.scalajs.js
@@ -30,13 +24,13 @@ trait Numeric extends js.Object {
   var precision: Double = js.native
   var seedrandom: Anon_Random = js.native
   val version: String = js.native
+  def `!==`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `!==`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `!==`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `!==`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `!==`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `!==`(x: Vector, y: Vector): VectorBoolean = js.native
   @JSName("!==")
-  def `!==_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `!==_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
   def `%`(
     x: js.Array[
       js.Array[
@@ -1003,11 +997,11 @@ trait Numeric extends js.Object {
   def `/_Vector`(x: Vector, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
   @JSName("/")
   def `/_Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
+  def `<`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `<`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `<`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `<`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `<`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `<`(x: Vector, y: Vector): VectorBoolean = js.native
   def `<<`(
     x: js.Array[
       js.Array[
@@ -1146,15 +1140,15 @@ trait Numeric extends js.Object {
   def `<<_Vector`(x: Vector, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
   @JSName("<<")
   def `<<_Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
+  def `<=`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `<=`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `<=`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `<=`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `<=`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `<=`(x: Vector, y: Vector): VectorBoolean = js.native
   @JSName("<=")
-  def `<=_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `<=_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
   @JSName("<")
-  def `<_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `<_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
   def apply(
     x: js.Array[
       js.Array[
@@ -1287,25 +1281,25 @@ trait Numeric extends js.Object {
   ): js.Array[js.Array[Double]] = js.native
   def apply(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
   def apply(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
+  def `===`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `===`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `===`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `===`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `===`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `===`(x: Vector, y: Vector): VectorBoolean = js.native
   @JSName("===")
-  def `===_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `===_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
+  def `>`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `>`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `>`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `>`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `>`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `>`(x: Vector, y: Vector): VectorBoolean = js.native
+  def `>=`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def `>=`(x: Scalar, y: Scalar): VectorBoolean = js.native
   def `>=`(x: Scalar, y: Scalar, args: Scalar*): Boolean = js.native
   def `>=`(x: Scalar, y: Vector): VectorBoolean = js.native
   def `>=`(x: Vector, y: Scalar): VectorBoolean = js.native
-  def `>=`(x: Vector, y: Vector): VectorBoolean = js.native
   @JSName(">=")
-  def `>=_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `>=_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
   def `>>`(
     x: js.Array[
       js.Array[
@@ -1583,7 +1577,7 @@ trait Numeric extends js.Object {
   @JSName(">>")
   def `>>_Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   @JSName(">")
-  def `>_MultidimensionalArray`(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def `>_VectorBoolean`(x: Vector, y: Vector): VectorBoolean = js.native
   def LU(matrix: Matrix): Anon_LU = js.native
   def LU(matrix: Matrix, fast: Boolean): Anon_LU = js.native
   def LUsolve(lup: Anon_LU, vector: Vector): Vector = js.native
@@ -3248,10 +3242,10 @@ trait Numeric extends js.Object {
   def echelonize(matrix: Matrix): Anon_A = js.native
   def eig(A: Matrix): Anon_E = js.native
   def eig(A: Matrix, maxiter: Double): Anon_E = js.native
+  def eq(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def eq(x: Scalar, y: Scalar): VectorBoolean = js.native
   def eq(x: Scalar, y: Vector): VectorBoolean = js.native
   def eq(x: Vector, y: Scalar): VectorBoolean = js.native
-  def eq(x: Vector, y: Vector): VectorBoolean = js.native
   def eqSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def eqVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def eqVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -3259,7 +3253,7 @@ trait Numeric extends js.Object {
   @JSName("eq")
   def eq_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("eq")
-  def eq_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def eq_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def eqeq(x: Vector, y: Scalar): VectorBoolean = js.native
   def eqeq(x: Vector, y: Vector): VectorBoolean = js.native
   def eqeqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -3378,10 +3372,10 @@ trait Numeric extends js.Object {
     ]
   ): js.Array[Double] = js.native
   def flooreqV(x: Vector): Vector = js.native
+  def geq(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def geq(x: Scalar, y: Scalar): VectorBoolean = js.native
   def geq(x: Scalar, y: Vector): VectorBoolean = js.native
   def geq(x: Vector, y: Scalar): VectorBoolean = js.native
-  def geq(x: Vector, y: Vector): VectorBoolean = js.native
   def geqSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def geqVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def geqVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -3389,7 +3383,7 @@ trait Numeric extends js.Object {
   @JSName("geq")
   def geq_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("geq")
-  def geq_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def geq_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def geqeq(x: Vector, y: Scalar): VectorBoolean = js.native
   def geqeq(x: Vector, y: Vector): VectorBoolean = js.native
   def geqeqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -3428,10 +3422,10 @@ trait Numeric extends js.Object {
   def getDiag(matrix: Matrix): Vector = js.native
   def getURL(url: String): js.Any = js.native
   def gradient(f: js.Function1[/* x */ Vector, Scalar], x: Vector): Vector = js.native
+  def gt(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def gt(x: Scalar, y: Scalar): VectorBoolean = js.native
   def gt(x: Scalar, y: Vector): VectorBoolean = js.native
   def gt(x: Vector, y: Scalar): VectorBoolean = js.native
-  def gt(x: Vector, y: Vector): VectorBoolean = js.native
   def gtSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def gtVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def gtVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -3439,7 +3433,7 @@ trait Numeric extends js.Object {
   @JSName("gt")
   def gt_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("gt")
-  def gt_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def gt_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def gteq(x: Vector, y: Scalar): VectorBoolean = js.native
   def gteq(x: Vector, y: Vector): VectorBoolean = js.native
   def gteqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -3456,28 +3450,28 @@ trait Numeric extends js.Object {
   def infV(x: Vector): Double = js.native
   // Matrix inverse
   def inv(x: Matrix): Matrix = js.native
-  // Pointwise Number.isFinite(x)
-  def isFinite(x: Vector): VectorBoolean = js.native
+  def isFinite(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def isFiniteV(x: Vector): VectorBoolean = js.native
+  // Pointwise Number.isFinite(x)
   @JSName("isFinite")
-  def isFinite_MultidimensionalArray(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
-  def isFiniteeq(x: Vector): VectorBoolean = js.native
+  def isFinite_VectorBoolean(x: Vector): VectorBoolean = js.native
+  def isFiniteeq(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def isFiniteeqV(x: Vector): VectorBoolean = js.native
   @JSName("isFiniteeq")
-  def isFiniteeq_MultidimensionalArray(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
-  // Pointwise Number.isNan(x)
-  def isNaN(x: Vector): VectorBoolean = js.native
+  def isFiniteeq_VectorBoolean(x: Vector): VectorBoolean = js.native
+  def isNaN(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def isNaNV(x: Vector): VectorBoolean = js.native
+  // Pointwise Number.isNan(x)
   @JSName("isNaN")
-  def isNaN_MultidimensionalArray(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
-  def isNaNeq(x: Vector): VectorBoolean = js.native
+  def isNaN_VectorBoolean(x: Vector): VectorBoolean = js.native
+  def isNaNeq(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def isNaNeqV(x: Vector): VectorBoolean = js.native
   @JSName("isNaNeq")
-  def isNaNeq_MultidimensionalArray(x: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def isNaNeq_VectorBoolean(x: Vector): VectorBoolean = js.native
+  def leq(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def leq(x: Scalar, y: Scalar): VectorBoolean = js.native
   def leq(x: Scalar, y: Vector): VectorBoolean = js.native
   def leq(x: Vector, y: Scalar): VectorBoolean = js.native
-  def leq(x: Vector, y: Vector): VectorBoolean = js.native
   def leqSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def leqVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def leqVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -3485,7 +3479,7 @@ trait Numeric extends js.Object {
   @JSName("leq")
   def leq_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("leq")
-  def leq_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def leq_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def leqeq(x: Vector, y: Scalar): VectorBoolean = js.native
   def leqeq(x: Vector, y: Vector): VectorBoolean = js.native
   def leqeqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -3696,10 +3690,10 @@ trait Numeric extends js.Object {
   def lshifteq(x: Vector, y: Vector): Vector = js.native
   def lshifteqS(x: Vector, y: Scalar): Vector = js.native
   def lshifteqV(x: Vector, y: Vector): Vector = js.native
+  def lt(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def lt(x: Scalar, y: Scalar): VectorBoolean = js.native
   def lt(x: Scalar, y: Vector): VectorBoolean = js.native
   def lt(x: Vector, y: Scalar): VectorBoolean = js.native
-  def lt(x: Vector, y: Vector): VectorBoolean = js.native
   def ltSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def ltVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def ltVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -3707,7 +3701,7 @@ trait Numeric extends js.Object {
   @JSName("lt")
   def lt_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("lt")
-  def lt_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def lt_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def lteq(x: Vector, y: Scalar): VectorBoolean = js.native
   def lteq(x: Vector, y: Vector): VectorBoolean = js.native
   def lteqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -4357,10 +4351,10 @@ trait Numeric extends js.Object {
   def negeqV(x: Vector): Vector = js.native
   // Negate matrix and transpose
   def negtranspose(x: Matrix): Matrix = js.native
+  def neq(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
   def neq(x: Scalar, y: Scalar): VectorBoolean = js.native
   def neq(x: Scalar, y: Vector): VectorBoolean = js.native
   def neq(x: Vector, y: Scalar): VectorBoolean = js.native
-  def neq(x: Vector, y: Vector): VectorBoolean = js.native
   def neqSV(x: Scalar, y: Vector): VectorBoolean = js.native
   def neqVS(x: Vector, y: Scalar): VectorBoolean = js.native
   def neqVV(x: Vector, y: Vector): VectorBoolean = js.native
@@ -4368,7 +4362,7 @@ trait Numeric extends js.Object {
   @JSName("neq")
   def neq_Boolean(x: Scalar, y: Scalar): Boolean = js.native
   @JSName("neq")
-  def neq_MultidimensionalArray(x: MultidimensionalMatrix, y: MultidimensionalMatrix): MultidimensionalArray[Boolean] = js.native
+  def neq_VectorBoolean(x: Vector, y: Vector): VectorBoolean = js.native
   def neqeq(x: Vector, y: Scalar): VectorBoolean = js.native
   def neqeq(x: Vector, y: Vector): VectorBoolean = js.native
   def neqeqS(x: Vector, y: Scalar): VectorBoolean = js.native
@@ -4388,17 +4382,17 @@ trait Numeric extends js.Object {
   // Largest modulus entry of x
   def norminf(x: Scalar): Double = js.native
   def norminfV(x: Vector): Double = js.native
-  def not(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
+  def not(x: MultidimensionalArray[NonNullPrimitive]): MultidimensionalArray[Boolean] = js.native
   // Pointwise logical negation !x
   def not(x: NonNullPrimitive): Boolean = js.native
   def notV(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
   @JSName("not")
-  def not_MultidimensionalArray(x: MultidimensionalArray[NonNullPrimitive]): MultidimensionalArray[Boolean] = js.native
-  def noteq(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
+  def not_VectorBoolean(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
+  def noteq(x: MultidimensionalArray[NonNullPrimitive]): MultidimensionalArray[Boolean] = js.native
   def noteq(x: NonNullPrimitive): Boolean = js.native
   def noteqV(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
   @JSName("noteq")
-  def noteq_MultidimensionalArray(x: MultidimensionalArray[NonNullPrimitive]): MultidimensionalArray[Boolean] = js.native
+  def noteq_VectorBoolean(x: js.Array[NonNullPrimitive]): VectorBoolean = js.native
   def or(
     x: js.Array[
       js.Array[

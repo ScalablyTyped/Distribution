@@ -18,11 +18,11 @@ trait IUninterpretedOption extends js.Object {
   var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   /** UninterpretedOption negativeIntValue */
   var negativeIntValue: js.UndefOr[
-    Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
   ] = js.undefined
   /** UninterpretedOption positiveIntValue */
   var positiveIntValue: js.UndefOr[
-    Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
   ] = js.undefined
   /** UninterpretedOption stringValue */
   var stringValue: js.UndefOr[Uint8Array | Null] = js.undefined
@@ -35,8 +35,8 @@ object IUninterpretedOption {
     doubleValue: Int | Double = null,
     identifierValue: String = null,
     name: js.Array[INamePart] = null,
-    negativeIntValue: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
-    positiveIntValue: Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
+    negativeIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
+    positiveIntValue: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = null,
     stringValue: Uint8Array = null
   ): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()

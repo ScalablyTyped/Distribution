@@ -20,8 +20,8 @@ import typings.atNivoScatterplot.atNivoScatterplotMod.Scale
 import typings.atNivoScatterplot.atNivoScatterplotMod.Serie
 import typings.atNivoScatterplot.atNivoScatterplotMod.Value
 import typings.atNivoScatterplot.atNivoScatterplotMod.ValueFormatter
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -15,7 +15,7 @@ trait IOptions extends js.Object {
   val debugProtectionInterval: Boolean
   val disableConsoleOutput: Boolean
   val domainLock: js.Array[String]
-  val identifierNamesGenerator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IdentifierNamesGenerator */ js.Any
+  val identifierNamesGenerator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IdentifierNamesGenerator */ js.Any
   val identifiersPrefix: String
   val inputFileName: String
   val log: Boolean
@@ -28,11 +28,11 @@ trait IOptions extends js.Object {
   val sourceMap: Boolean
   val sourceMapBaseUrl: String
   val sourceMapFileName: String
-  val sourceMapMode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SourceMapMode */ js.Any
+  val sourceMapMode: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SourceMapMode */ js.Any
   val stringArray: Boolean
   val stringArrayEncoding: TStringArrayEncoding
   val stringArrayThreshold: Double
-  val target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ObfuscationTarget */ js.Any
+  val target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObfuscationTarget */ js.Any
   val transformObjectKeys: Boolean
   val unicodeEscapeSequence: Boolean
 }
@@ -49,7 +49,7 @@ object IOptions {
     debugProtectionInterval: Boolean,
     disableConsoleOutput: Boolean,
     domainLock: js.Array[String],
-    identifierNamesGenerator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IdentifierNamesGenerator */ js.Any,
+    identifierNamesGenerator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IdentifierNamesGenerator */ js.Any,
     identifiersPrefix: String,
     inputFileName: String,
     log: Boolean,
@@ -62,11 +62,11 @@ object IOptions {
     sourceMap: Boolean,
     sourceMapBaseUrl: String,
     sourceMapFileName: String,
-    sourceMapMode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SourceMapMode */ js.Any,
+    sourceMapMode: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SourceMapMode */ js.Any,
     stringArray: Boolean,
     stringArrayEncoding: TStringArrayEncoding,
     stringArrayThreshold: Double,
-    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ObfuscationTarget */ js.Any,
+    target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObfuscationTarget */ js.Any,
     transformObjectKeys: Boolean,
     unicodeEscapeSequence: Boolean
   ): IOptions = {

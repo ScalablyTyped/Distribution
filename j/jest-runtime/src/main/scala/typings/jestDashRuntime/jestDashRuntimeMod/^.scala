@@ -36,7 +36,7 @@ class ^ protected () extends Runtime {
     environment: JestEnvironment,
     resolver: typings.jestDashResolve.jestDashResolveMod.^,
     cacheFS: CacheFS,
-    coverageOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ShouldInstrumentOptions */ js.Any
+    coverageOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShouldInstrumentOptions */ js.Any
   ) = this()
 }
 
@@ -54,7 +54,7 @@ object ^ extends js.Object {
   def runCLI(args: Argv, info: js.Array[String]): Unit = js.native
   def shouldInstrument(
     filename: Path,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ShouldInstrumentOptions */ js.Any,
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShouldInstrumentOptions */ js.Any,
     config: ProjectConfig
   ): Boolean = js.native
 }

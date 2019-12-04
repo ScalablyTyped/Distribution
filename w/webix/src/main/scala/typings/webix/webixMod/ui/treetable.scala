@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.treetable")
 @js.native
-class treetable () extends baseview {
+class treetable ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$customPrint")
   var $customPrint_Original: WebixCallback = js.native
   @JSName("$dragHTML")
@@ -23,6 +24,8 @@ class treetable () extends baseview {
   var $dropHTML_Original: WebixCallback = js.native
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_treetable: WebixCallback = js.native
   @JSName("$touch")
   var $touch_Original: WebixCallback = js.native
   @JSName("config")
@@ -109,11 +112,11 @@ class treetable () extends baseview {
   def collectValues(id: Double, mode: js.Any): js.Array[_] = js.native
   def columnId(index: Double): String | Double = js.native
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def count(): Double = js.native
   def detachEvent(id: String): Unit = js.native
   def eachColumn(handler: WebixCallback): Unit = js.native
@@ -257,11 +260,11 @@ class treetable () extends baseview {
   def mapSelection(callback: WebixCallback): Unit = js.native
   def markSorting(column_id: String, direction: String): Unit = js.native
   def move(sid: String, tindex: Double): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
   def moveBottom(id: String): Unit = js.native
   def moveBottom(id: Double): Unit = js.native
   def moveColumn(id: String, index: Double): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.atJupyterlabDocregistry.libDefaultMod
 
-import typings.atJupyterlabCodeeditor.libMod.CodeEditor.Model
+import typings.atJupyterlabCodeeditor.atJupyterlabCodeeditorMod.CodeEditor.Model
 import typings.atJupyterlabCoreutils.libInterfacesMod.IChangedArgs
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabObservables.libModeldbMod.IModelDB

@@ -1,5 +1,6 @@
 package typings.atJupyterlabServices.libSessionSessionMod.Session
 
+import typings.atJupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +30,6 @@ object findByPath extends js.Object {
     * the promise is rejected.
     */
   def apply(path: String): js.Promise[IModel] = js.native
-  def apply(
-    path: String,
-    settings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
-  ): js.Promise[IModel] = js.native
+  def apply(path: String, settings: ISettings): js.Promise[IModel] = js.native
 }
 

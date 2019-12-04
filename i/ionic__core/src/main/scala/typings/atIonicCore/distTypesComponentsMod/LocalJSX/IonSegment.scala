@@ -1,7 +1,9 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsSegmentSegmentDashInterfaceMod.SegmentChangeEventDetail
 import typings.std.CustomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,9 +13,7 @@ trait IonSegment extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, the user cannot interact with the segment.
     */
@@ -25,14 +25,7 @@ trait IonSegment extends js.Object {
   /**
     * Emitted when the value property has changed.
     */
-  var onIonChange: js.UndefOr[
-    js.Function1[
-      /* event */ CustomEvent[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentChangeEventDetail */ _
-      ], 
-      Unit
-    ]
-  ] = js.undefined
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[SegmentChangeEventDetail], Unit]] = js.undefined
   /**
     * If `true`, the segment buttons will overflow and the user can swipe to see them.
     */
@@ -46,12 +39,10 @@ trait IonSegment extends js.Object {
 object IonSegment {
   @scala.inline
   def apply(
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     mode: ios | md = null,
-    onIonChange: /* event */ CustomEvent[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentChangeEventDetail */ _
-    ] => Unit = null,
+    onIonChange: /* event */ CustomEvent[SegmentChangeEventDetail] => Unit = null,
     scrollable: js.UndefOr[Boolean] = js.undefined,
     value: String = null
   ): IonSegment = {

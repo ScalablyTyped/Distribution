@@ -4,7 +4,7 @@ import typings.atom.atomStrings.`line-number`
 import typings.atom.atomStrings.after
 import typings.atom.atomStrings.before
 import typings.atom.atomStrings.block
-import typings.atom.atomStrings.cursor
+import typings.atom.atomStrings.cursor_
 import typings.atom.atomStrings.head
 import typings.atom.atomStrings.highlight
 import typings.atom.atomStrings.line
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 trait DecorationLayerOptions extends SharedDecorationOptions {
   /** One of several supported decoration types. */
-  var `type`: js.UndefOr[line | `line-number` | text | highlight | block | cursor] = js.undefined
+  var `type`: js.UndefOr[line | `line-number` | text | highlight | block | cursor_] = js.undefined
 }
 
 object DecorationLayerOptions {
@@ -32,7 +32,7 @@ object DecorationLayerOptions {
     order: Int | Double = null,
     position: head | tail | before | after = null,
     style: js.Object = null,
-    `type`: line | `line-number` | text | highlight | block | cursor = null
+    `type`: line | `line-number` | text | highlight | block | cursor_ = null
   ): DecorationLayerOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(avoidOverflow)) __obj.updateDynamic("avoidOverflow")(avoidOverflow.asInstanceOf[js.Any])

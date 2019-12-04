@@ -13,8 +13,8 @@ class AtlasParser () extends js.Object
 @js.native
 object AtlasParser extends js.Object {
   def use(
-    `this`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Loader */ js.Any,
-    resource: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.LoaderResource */ js.Any,
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Loader */ js.Any,
+    resource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.LoaderResource */ js.Any,
     next: js.Function0[_]
   ): js.Any = js.native
 }

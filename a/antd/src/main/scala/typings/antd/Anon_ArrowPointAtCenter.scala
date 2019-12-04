@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.esTooltipMod.TooltipPlacement
+import typings.antd.libTooltipMod.TooltipPlacement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

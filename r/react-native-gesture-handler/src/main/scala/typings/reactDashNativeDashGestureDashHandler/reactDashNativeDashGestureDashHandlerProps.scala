@@ -1,5 +1,9 @@
 package typings.reactDashNativeDashGestureDashHandler
 
+import typings.reactDashNative.reactDashNativeMod.TouchableHighlightProperties
+import typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProperties
+import typings.reactDashNative.reactDashNativeMod.TouchableOpacityProperties
+import typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProperties
 import typings.reactDashNativeDashGestureDashHandler.drawerLayoutMod.DrawerLayoutProperties
 import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.BaseButtonProperties
 import typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.BorderlessButtonProperties
@@ -61,5 +65,17 @@ trait reactDashNativeDashGestureDashHandlerProps {
   @scala.inline
   def TapGestureHandlerProps: TapGestureHandlerProperties.type = typings.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.TapGestureHandlerProperties
   type TapGestureHandlerProps = TapGestureHandlerProperties
+  @scala.inline
+  def TouchableHighlightProps: typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps.type = typings.reactDashNative.reactDashNativeMod.TouchableHighlightProps
+  type TouchableHighlightProps = TouchableHighlightProperties
+  @scala.inline
+  def TouchableNativeFeedbackProps: typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps.type = typings.reactDashNative.reactDashNativeMod.TouchableNativeFeedbackProps
+  type TouchableNativeFeedbackProps = TouchableNativeFeedbackProperties
+  @scala.inline
+  def TouchableOpacityProps: typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps.type = typings.reactDashNative.reactDashNativeMod.TouchableOpacityProps
+  type TouchableOpacityProps = TouchableOpacityProperties
+  @scala.inline
+  def TouchableWithoutFeedbackProps: typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps.type = typings.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackProps
+  type TouchableWithoutFeedbackProps = TouchableWithoutFeedbackProperties
 }
 

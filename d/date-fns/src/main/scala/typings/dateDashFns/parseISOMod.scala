@@ -11,7 +11,7 @@ object parseISOMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(argument: String): Date = js.native
-    def apply(argument: String, options: Anon_012): Date = js.native
+    def apply(argument: String, options: Anon_01): Date = js.native
   }
   
 }

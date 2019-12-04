@@ -3,7 +3,7 @@ package typings.reactDashVirtualized.distEsTableMod
 import typings.react.reactMod.Component
 import typings.reactDashVirtualized.Anon_0110
 import typings.reactDashVirtualized.Anon_AlignmentIndex
-import typings.reactDashVirtualized.Anon_ArialabelAutoHeightChildren
+import typings.reactDashVirtualized.Anon_ArialabelAutoHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,6 +34,6 @@ class Table ()
 @js.native
 object Table extends js.Object {
   var defaultProps: Anon_0110 = js.native
-  var propTypes: Anon_ArialabelAutoHeightChildren = js.native
+  var propTypes: Anon_ArialabelAutoHeight = js.native
 }
 

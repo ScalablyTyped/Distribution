@@ -1,6 +1,5 @@
 package typings.openpgp.openpgpMod
 
-import typings.openpgp.Integer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

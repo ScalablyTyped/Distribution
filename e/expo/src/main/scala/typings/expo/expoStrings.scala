@@ -1,5 +1,6 @@
 package typings.expo
 
+import typings.expo.buildLogsRemoteLoggingMod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,16 @@ object expoStrings {
   sealed trait Anon_BlendShapes extends js.Object
   
   @js.native
+  sealed trait __expoConsoleLog extends js.Object
+  
+  @js.native
   sealed trait cancel extends js.Object
   
   @js.native
   sealed trait day extends js.Object
+  
+  @js.native
+  sealed trait debug extends LogLevel
   
   @js.native
   sealed trait dismiss extends js.Object
@@ -27,10 +34,13 @@ object expoStrings {
   sealed trait downloadStart extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends LogLevel
   
   @js.native
   sealed trait hour extends js.Object
+  
+  @js.native
+  sealed trait info extends LogLevel
   
   @js.native
   sealed trait locked extends js.Object
@@ -54,6 +64,12 @@ object expoStrings {
   sealed trait success extends js.Object
   
   @js.native
+  sealed trait url extends js.Object
+  
+  @js.native
+  sealed trait warn extends LogLevel
+  
+  @js.native
   sealed trait week extends js.Object
   
   @js.native
@@ -62,9 +78,13 @@ object expoStrings {
   @scala.inline
   def Anon_BlendShapes: Anon_BlendShapes = "Anon_BlendShapes".asInstanceOf[Anon_BlendShapes]
   @scala.inline
+  def __expoConsoleLog: __expoConsoleLog = "__expoConsoleLog".asInstanceOf[__expoConsoleLog]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
   @scala.inline
@@ -77,6 +97,8 @@ object expoStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   @scala.inline
@@ -91,6 +113,10 @@ object expoStrings {
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
+  def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline

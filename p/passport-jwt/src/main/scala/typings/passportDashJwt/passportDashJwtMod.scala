@@ -21,8 +21,6 @@ object passportDashJwtMod extends js.Object {
     extends typings.passportDashStrategy.passportDashStrategyMod.Strategy {
     def this(opt: StrategyOptions, verify: VerifyCallback) = this()
     def this(opt: StrategyOptions, verify: VerifyCallbackWithRequest) = this()
-    @JSName("name")
-    var name_Strategy: String = js.native
   }
   
   @js.native

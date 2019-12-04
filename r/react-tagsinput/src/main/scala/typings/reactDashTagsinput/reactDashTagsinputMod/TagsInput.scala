@@ -1,7 +1,6 @@
 package typings.reactDashTagsinput.reactDashTagsinputMod
 
 import typings.react.reactMod.Component
-import typings.reactDashTagsinput.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-when"
-version := "2.7-dt-20190904Z-4a37d4"
+version := "2.7-dt-20190904Z-a8b17a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

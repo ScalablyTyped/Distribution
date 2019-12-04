@@ -1,7 +1,7 @@
 package typings.expressDashBruteDashMongo.expressDashBruteDashMongoMod
 
-import typings.mongodb.Default
 import typings.mongodb.mongodbMod.Collection
+import typings.mongodb.mongodbMod.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

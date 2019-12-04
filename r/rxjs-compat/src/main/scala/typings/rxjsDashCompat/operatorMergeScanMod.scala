@@ -1,7 +1,5 @@
 package typings.rxjsDashCompat
 
-import typings.rxjs.internalTypesMod.ObservableInput
-import typings.rxjs.rxjsMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,15 +8,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object operatorMergeScanMod extends js.Object {
   def mergeScan[T, R](
-    `this`: Observable[T],
-    accumulator: js.Function2[/* acc */ R, /* value */ T, ObservableInput[R]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    accumulator: js.Function2[
+      /* acc */ R, 
+      /* value */ T, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ],
     seed: R
-  ): Observable[R] = js.native
+  ): js.Any = js.native
   def mergeScan[T, R](
-    `this`: Observable[T],
-    accumulator: js.Function2[/* acc */ R, /* value */ T, ObservableInput[R]],
+    `this`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any,
+    accumulator: js.Function2[
+      /* acc */ R, 
+      /* value */ T, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
+    ],
     seed: R,
     concurrent: Double
-  ): Observable[R] = js.native
+  ): js.Any = js.native
 }
 

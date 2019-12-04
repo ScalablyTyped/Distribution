@@ -1,6 +1,5 @@
 package typings.atBlueprintjsCore.libEsmComponentsFormsFileInputMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
@@ -13,6 +12,7 @@ import typings.react.reactMod.HTMLProps
 import typings.react.reactMod.KeyboardEvent
 import typings.react.reactMod.LabelHTMLAttributes
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.PointerEvent
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.SyntheticEvent

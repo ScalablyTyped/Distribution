@@ -12,7 +12,7 @@ trait NamedFormatConfiguration extends FormatConfiguration {
 object NamedFormatConfiguration {
   @scala.inline
   def apply(
-    edit: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentType<FormatProps> */ js.Any,
+    edit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentType<FormatProps> */ js.Any,
     name: String,
     tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String,
     title: String,

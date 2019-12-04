@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.Components
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.button
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
@@ -15,9 +16,7 @@ trait IonMenuButton extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, the user cannot interact with the menu button.
     */
@@ -38,7 +37,7 @@ object IonMenuButton {
     autoHide: Boolean,
     disabled: Boolean,
     `type`: submit | reset | button,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     menu: String = null
   ): IonMenuButton = {
     val __obj = js.Dynamic.literal(autoHide = autoHide.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any])

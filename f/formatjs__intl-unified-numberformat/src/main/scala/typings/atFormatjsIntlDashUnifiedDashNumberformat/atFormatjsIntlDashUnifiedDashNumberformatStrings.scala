@@ -12,7 +12,6 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait acre
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -24,25 +23,21 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait bit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait byte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait celsius
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait centimeter
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -54,13 +49,11 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait day
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait degree
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -72,91 +65,76 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait fahrenheit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait `fluid-ounce`
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait foot
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait gallon
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait gigabit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait gigabyte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait gram
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait hectare
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait hour
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait inch
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait kilobit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait kilobyte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait kilogram
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait kilometer
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait liter
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -168,61 +146,51 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait megabit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait megabyte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait meter
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait mile
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait `mile-scandinavian`
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait milliliter
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait millimeter
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait millisecond
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait minute
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait month
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -240,25 +208,21 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait ounce
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait percent
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait petabyte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait pound
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -267,7 +231,6 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait second
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -279,7 +242,6 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait stone
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
@@ -288,31 +250,26 @@ object atFormatjsIntlDashUnifiedDashNumberformatStrings {
   @js.native
   sealed trait terabit
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait terabyte
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait week
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait yard
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @js.native
   sealed trait year
     extends Unit
-       with typings.atFormatjsIntlDashUnifiedDashNumberformat.distUnitsDashConstantsMod.Unit
        with typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.Unit
   
   @scala.inline

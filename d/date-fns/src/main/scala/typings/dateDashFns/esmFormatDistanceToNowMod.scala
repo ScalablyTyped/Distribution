@@ -11,9 +11,11 @@ object esmFormatDistanceToNowMod extends js.Object {
   @js.native
   object default extends js.Object {
     def apply(date: Double): String = js.native
-    def apply(date: Double, options: Anon_AddSuffixIncludeSecondsLocale): String = js.native
+    def apply(date: Double, options: Anon_AddSuffix): String = js.native
+    def apply(date: Double, options: Anon_AddSuffixIncludeSeconds): String = js.native
     def apply(date: Date): String = js.native
-    def apply(date: Date, options: Anon_AddSuffixIncludeSecondsLocale): String = js.native
+    def apply(date: Date, options: Anon_AddSuffix): String = js.native
+    def apply(date: Date, options: Anon_AddSuffixIncludeSeconds): String = js.native
   }
   
 }

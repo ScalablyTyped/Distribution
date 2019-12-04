@@ -10,9 +10,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.property")
 @js.native
-class property () extends baseview {
+class property ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_property: WebixCallback = js.native
   @JSName("config")
   var config_property: propertyConfig = js.native
   @JSName("on_click")

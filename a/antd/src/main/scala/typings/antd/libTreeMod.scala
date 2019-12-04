@@ -17,7 +17,7 @@ object libTreeMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DirectoryTree: TypeofClassDirectoryTreeDefaultProps = js.native
+    var DirectoryTree: TypeofClassDirectoryTree = js.native
     var TreeNode: ComponentClass[AntTreeNodeProps, ComponentState] = js.native
     var defaultProps: Anon_BlockNode = js.native
   }

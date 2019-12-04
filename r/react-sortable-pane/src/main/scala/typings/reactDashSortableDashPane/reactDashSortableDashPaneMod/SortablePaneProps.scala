@@ -1,8 +1,8 @@
 package typings.reactDashSortableDashPane.reactDashSortableDashPaneMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactElement
 import typings.react.reactMod.TouchEvent
 import typings.reactDashMotion.reactDashMotionMod.SpringHelperConfig

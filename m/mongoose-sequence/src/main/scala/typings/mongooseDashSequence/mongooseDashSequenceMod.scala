@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mongooseDashSequenceMod
   extends TopLevel[
       js.Function2[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify mongoose.Schema */ /* schema */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mongoose.Schema */ /* schema */ js.Any, 
         /* options */ js.UndefOr[js.Object], 
         Unit
       ]

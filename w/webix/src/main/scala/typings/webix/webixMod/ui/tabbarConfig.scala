@@ -58,7 +58,7 @@ trait tabbarConfig extends js.Object {
   var tabMinWidth: js.UndefOr[Double] = js.undefined
   var tabMoreWidth: js.UndefOr[Double] = js.undefined
   var tabOffset: js.UndefOr[Double] = js.undefined
-  var tabbarPopup: js.UndefOr[baseview] = js.undefined
+  var tabbarPopup: js.UndefOr[typings.webix.webix.ui.baseview] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var topOffset: js.UndefOr[Double] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
@@ -123,7 +123,7 @@ object tabbarConfig {
     tabMinWidth: Int | Double = null,
     tabMoreWidth: Int | Double = null,
     tabOffset: Int | Double = null,
-    tabbarPopup: baseview = null,
+    tabbarPopup: typings.webix.webix.ui.baseview = null,
     tooltip: js.Any = null,
     topOffset: Int | Double = null,
     `type`: String = null,

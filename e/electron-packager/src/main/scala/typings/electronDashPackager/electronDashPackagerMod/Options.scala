@@ -70,7 +70,7 @@ trait Options extends js.Object {
     * If present, passes custom options to `@electron/get`
     */
   var download: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
   ] = js.undefined
   /**
     * The Electron version with which the app is built (without the leading 'v') - for example, 1.4.13
@@ -165,7 +165,7 @@ object Options {
     buildVersion: String = null,
     darwinDarkModeSupport: js.UndefOr[Boolean] = js.undefined,
     derefSymlinks: js.UndefOr[Boolean] = js.undefined,
-    download: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any = null,
+    download: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any = null,
     electronVersion: String = null,
     executableName: String = null,
     extendInfo: String | StringDictionary[js.Any] = null,

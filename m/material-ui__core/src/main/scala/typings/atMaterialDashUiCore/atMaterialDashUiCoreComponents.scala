@@ -97,6 +97,10 @@ object atMaterialDashUiCoreComponents extends atMaterialDashUiCoreProps {
   @scala.inline
   def Hidden: ComponentType[HiddenProps] = js.constructorOf[typings.atMaterialDashUiCore.hiddenMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HiddenProps]]
   @scala.inline
+  def HiddenCss: ComponentType[HiddenCssProps] = js.constructorOf[typings.atMaterialDashUiCore.hiddenHiddenCssMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HiddenCssProps]]
+  @scala.inline
+  def HiddenJs: ComponentType[HiddenJsProps] = js.constructorOf[typings.atMaterialDashUiCore.hiddenHiddenJsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HiddenJsProps]]
+  @scala.inline
   def Icon: ComponentType[IconProps] = js.constructorOf[typings.atMaterialDashUiCore.iconMod.default].asInstanceOf[typings.react.reactMod.ComponentType[IconProps]]
   @scala.inline
   def IconButton: ComponentType[IconButtonProps] = js.constructorOf[typings.atMaterialDashUiCore.iconButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[IconButtonProps]]
@@ -133,6 +137,8 @@ object atMaterialDashUiCoreComponents extends atMaterialDashUiCoreProps {
   @scala.inline
   def MenuList: ComponentType[MenuListProps] = js.constructorOf[typings.atMaterialDashUiCore.menuListMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MenuListProps]]
   @scala.inline
+  def MergeListContext: ComponentType[MergeListContextProps] = js.constructorOf[typings.atMaterialDashUiCore.listItemMergeListContextMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MergeListContextProps]]
+  @scala.inline
   def MobileStepper: ComponentType[MobileStepperProps] = js.constructorOf[typings.atMaterialDashUiCore.mobileStepperMod.default].asInstanceOf[typings.react.reactMod.ComponentType[MobileStepperProps]]
   @scala.inline
   def Modal: ComponentType[ModalProps] = js.constructorOf[typings.atMaterialDashUiCore.modalMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ModalProps]]
@@ -144,6 +150,8 @@ object atMaterialDashUiCoreComponents extends atMaterialDashUiCoreProps {
   def NativeSelectInput: ComponentType[NativeSelectInputProps] = js.constructorOf[typings.atMaterialDashUiCore.nativeSelectNativeSelectInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NativeSelectInputProps]]
   @scala.inline
   def NoSsr: ComponentType[NoSsrProps] = js.constructorOf[typings.atMaterialDashUiCore.noSsrMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NoSsrProps]]
+  @scala.inline
+  def NotchedOutline: ComponentType[NotchedOutlineProps] = js.constructorOf[typings.atMaterialDashUiCore.outlinedInputNotchedOutlineMod.default].asInstanceOf[typings.react.reactMod.ComponentType[NotchedOutlineProps]]
   @scala.inline
   def OutlinedInput: ComponentType[OutlinedInputProps] = js.constructorOf[typings.atMaterialDashUiCore.outlinedInputMod.default].asInstanceOf[typings.react.reactMod.ComponentType[OutlinedInputProps]]
   @scala.inline
@@ -197,6 +205,8 @@ object atMaterialDashUiCoreComponents extends atMaterialDashUiCoreProps {
   @scala.inline
   def TabIndicator: ComponentType[TabIndicatorProps] = js.constructorOf[typings.atMaterialDashUiCore.tabsTabIndicatorMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabIndicatorProps]]
   @scala.inline
+  def TabScrollButton: ComponentType[TabScrollButtonProps] = js.constructorOf[typings.atMaterialDashUiCore.tabsTabScrollButtonMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabScrollButtonProps]]
+  @scala.inline
   def Table: ComponentType[TableProps] = js.constructorOf[typings.atMaterialDashUiCore.tableMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TableProps]]
   @scala.inline
   def TableBody: ComponentType[TableBodyProps] = js.constructorOf[typings.atMaterialDashUiCore.tableBodyMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TableBodyProps]]
@@ -218,6 +228,8 @@ object atMaterialDashUiCoreComponents extends atMaterialDashUiCoreProps {
   def Tabs: ComponentType[TabsProps] = js.constructorOf[typings.atMaterialDashUiCore.tabsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TabsProps]]
   @scala.inline
   def TextField: ComponentType[TextFieldProps] = js.constructorOf[typings.atMaterialDashUiCore.textFieldMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TextFieldProps]]
+  @scala.inline
+  def Textarea: ComponentType[TextareaProps] = js.constructorOf[typings.atMaterialDashUiCore.inputBaseTextareaMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TextareaProps]]
   @scala.inline
   def Toolbar: ComponentType[ToolbarProps] = js.constructorOf[typings.atMaterialDashUiCore.toolbarMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ToolbarProps]]
   @scala.inline

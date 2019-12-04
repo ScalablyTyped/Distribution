@@ -1,6 +1,7 @@
 package typings.reactDashCopyDashWrite
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.AnyDeepMemberOfState
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.Consumer
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.MutateFn
 import typings.reactDashCopyDashWrite.reactDashCopyDashWriteMod.Mutator

@@ -30,8 +30,8 @@ trait Ajax extends js.Object {
 @JSImport("webix", "ajax")
 @js.native
 object ajax extends js.Object {
-  def apply(): Ajax | js.Promise[_] = js.native
-  def apply(url: String): Ajax | js.Promise[_] = js.native
-  def apply(url: String, params: js.Any): Ajax | js.Promise[_] = js.native
+  def apply(): typings.webix.webix.Ajax | js.Promise[_] = js.native
+  def apply(url: String): typings.webix.webix.Ajax | js.Promise[_] = js.native
+  def apply(url: String, params: js.Any): typings.webix.webix.Ajax | js.Promise[_] = js.native
 }
 

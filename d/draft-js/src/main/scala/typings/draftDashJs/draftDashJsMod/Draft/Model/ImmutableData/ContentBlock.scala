@@ -1,8 +1,8 @@
 package typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData
 
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Constants.DraftBlockType
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Map
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

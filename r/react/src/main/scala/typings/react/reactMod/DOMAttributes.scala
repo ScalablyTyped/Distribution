@@ -1,7 +1,6 @@
 package typings.react.reactMod
 
 import typings.react.Anon_Html
-import typings.react.NativeMouseEvent
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 object electronDashBuilderMod extends js.Object {
   @js.native
   class AppInfo protected ()
-    extends typings.appDashBuilderDashLib.outMod.AppInfo {
+    extends typings.appDashBuilderDashLib.appDashBuilderDashLibMod.AppInfo {
     def this(info: typings.appDashBuilderDashLib.outPackagerMod.Packager) = this()
     def this(info: typings.appDashBuilderDashLib.outPackagerMod.Packager, buildVersion: String) = this()
     def this(
@@ -46,7 +46,7 @@ object electronDashBuilderMod extends js.Object {
   
   @js.native
   class Packager protected ()
-    extends typings.appDashBuilderDashLib.outMod.Packager {
+    extends typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Packager {
     def this(options: PackagerOptions) = this()
     def this(
       options: PackagerOptions,
@@ -56,13 +56,13 @@ object electronDashBuilderMod extends js.Object {
   
   @js.native
   class Platform protected ()
-    extends typings.appDashBuilderDashLib.outMod.Platform {
+    extends typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform {
     def this(name: String, buildConfigurationKey: String, nodeName: typings.node.NodeJS.Platform) = this()
   }
   
   @js.native
   class PublishManager protected ()
-    extends typings.appDashBuilderDashLib.outMod.PublishManager {
+    extends typings.appDashBuilderDashLib.appDashBuilderDashLibMod.PublishManager {
     def this(packager: typings.appDashBuilderDashLib.outPackagerMod.Packager, publishOptions: PublishOptions) = this()
     def this(
       packager: typings.appDashBuilderDashLib.outPackagerMod.Packager,
@@ -73,7 +73,7 @@ object electronDashBuilderMod extends js.Object {
   
   @js.native
   abstract class Target protected ()
-    extends typings.appDashBuilderDashLib.outMod.Target {
+    extends typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Target {
     protected def this(name: String) = this()
     protected def this(name: String, isAsyncSupported: Boolean) = this()
   }
@@ -84,10 +84,33 @@ object electronDashBuilderMod extends js.Object {
   def build(): js.Promise[js.Array[String]] = js.native
   def build(rawOptions: CliOptions): js.Promise[js.Array[String]] = js.native
   def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = js.native
-  def createTargets(platforms: js.Array[typings.appDashBuilderDashLib.outMod.Platform]): Map[typings.appDashBuilderDashLib.outMod.Platform, Map[Arch, js.Array[String]]] = js.native
-  def createTargets(platforms: js.Array[typings.appDashBuilderDashLib.outMod.Platform], `type`: String): Map[typings.appDashBuilderDashLib.outMod.Platform, Map[Arch, js.Array[String]]] = js.native
-  def createTargets(platforms: js.Array[typings.appDashBuilderDashLib.outMod.Platform], `type`: String, arch: String): Map[typings.appDashBuilderDashLib.outMod.Platform, Map[Arch, js.Array[String]]] = js.native
-  def createTargets(platforms: js.Array[typings.appDashBuilderDashLib.outMod.Platform], `type`: Null, arch: String): Map[typings.appDashBuilderDashLib.outMod.Platform, Map[Arch, js.Array[String]]] = js.native
+  def createTargets(platforms: js.Array[typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform]): Map[
+    typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform, 
+    Map[Arch, js.Array[String]]
+  ] = js.native
+  def createTargets(
+    platforms: js.Array[typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform],
+    `type`: String
+  ): Map[
+    typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform, 
+    Map[Arch, js.Array[String]]
+  ] = js.native
+  def createTargets(
+    platforms: js.Array[typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform],
+    `type`: String,
+    arch: String
+  ): Map[
+    typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform, 
+    Map[Arch, js.Array[String]]
+  ] = js.native
+  def createTargets(
+    platforms: js.Array[typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform],
+    `type`: Null,
+    arch: String
+  ): Map[
+    typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Platform, 
+    Map[Arch, js.Array[String]]
+  ] = js.native
   def getArchSuffix(arch: Arch): String = js.native
   @js.native
   object Arch extends js.Object {

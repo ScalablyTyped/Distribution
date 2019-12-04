@@ -13,15 +13,15 @@ import typings.atNivoHeatmap.atNivoHeatmapStrings.column
 import typings.atNivoHeatmap.atNivoHeatmapStrings.rect
 import typings.atNivoHeatmap.atNivoHeatmapStrings.row
 import typings.atNivoHeatmap.atNivoHeatmapStrings.rowColumn
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.StatelessComponent
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.HTMLCanvasElement, react.NativeMouseEvent>): void,   pixelRatio  :number}> */
+/* Inlined @nivo/heatmap.@nivo/heatmap.HeatMapData & @nivo/heatmap.@nivo/heatmap.HeatMapCommonProps & std.Partial<{onClick (datum : @nivo/heatmap.@nivo/heatmap.NodeData, event : react.react.MouseEvent<std.HTMLCanvasElement, react.react.NativeMouseEvent>): void,   pixelRatio  :number}> */
 trait HeatMapCanvasProps extends js.Object {
   var axisBottom: js.UndefOr[Axis] = js.undefined
   var axisLeft: js.UndefOr[Axis] = js.undefined

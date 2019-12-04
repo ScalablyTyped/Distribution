@@ -8,7 +8,7 @@ package object griddleDashReactMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.griddleDashReact.griddleDashReactMod.components.ColumnDefinitionProps
   import typings.griddleDashReact.griddleDashReactMod.components.RowDefinitionProps
-  import typings.immutable.immutableMod.List
+  import typings.immutable.Immutable.List
   import typings.react.reactMod.Component
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentState

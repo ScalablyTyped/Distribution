@@ -1,6 +1,7 @@
 package typings.reactDashColor
 
 import typings.reactDashColor.reactDashColorMod.ColorPickerProps
+import typings.reactDashColor.reactDashColorMod.CustomPickerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,6 +41,9 @@ trait reactDashColorProps {
   def CompactPickerProps: typings.reactDashColor.libComponentsCompactCompactMod.CompactPickerProps.type = typings.reactDashColor.libComponentsCompactCompactMod.CompactPickerProps
   type CompactPickerProps = typings.reactDashColor.libComponentsCompactCompactMod.CompactPickerProps
   @scala.inline
+  def EditableInputProps: typings.reactDashColor.libComponentsCommonEditableInputMod.EditableInputProps.type = typings.reactDashColor.libComponentsCommonEditableInputMod.EditableInputProps
+  type EditableInputProps = typings.reactDashColor.libComponentsCommonEditableInputMod.EditableInputProps
+  @scala.inline
   def GithubProps: typings.reactDashColor.libComponentsGithubGithubMod.GithubPickerProps.type = typings.reactDashColor.libComponentsGithubGithubMod.GithubPickerProps
   type GithubProps = typings.reactDashColor.libComponentsGithubGithubMod.GithubPickerProps
   @scala.inline
@@ -63,6 +67,9 @@ trait reactDashColorProps {
   @scala.inline
   def PhotoshopPickerProps: typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps.type = typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps
   type PhotoshopPickerProps = typings.reactDashColor.libComponentsPhotoshopPhotoshopMod.PhotoshopPickerProps
+  @scala.inline
+  def SaturationProps: CustomPickerProps.type = typings.reactDashColor.reactDashColorMod.CustomPickerProps
+  type SaturationProps = typings.reactDashColor.libComponentsCommonSaturationMod.SaturationProps
   @scala.inline
   def SketchProps: typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps.type = typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps
   type SketchProps = typings.reactDashColor.libComponentsSketchSketchMod.SketchPickerProps

@@ -309,6 +309,9 @@ object expressDashValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait bindAll extends js.Object
+  
+  @js.native
   sealed trait `bn-BD` extends MobilePhoneLocale
   
   @js.native
@@ -833,6 +836,8 @@ object expressDashValidatorStrings {
   def `be-BY`: `be-BY` = "be-BY".asInstanceOf[`be-BY`]
   @scala.inline
   def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
+  @scala.inline
+  def bindAll: bindAll = "bindAll".asInstanceOf[bindAll]
   @scala.inline
   def `bn-BD`: `bn-BD` = "bn-BD".asInstanceOf[`bn-BD`]
   @scala.inline

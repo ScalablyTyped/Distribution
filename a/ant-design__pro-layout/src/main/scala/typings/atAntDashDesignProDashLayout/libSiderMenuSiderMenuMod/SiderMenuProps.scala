@@ -2,16 +2,10 @@ package typings.atAntDashDesignProDashLayout.libSiderMenuSiderMenuMod
 
 import typings.antd.libMenuMod.MenuProps
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.lg
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.md
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.sm
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xl
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xs
-import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.xxl
 import typings.atAntDashDesignProDashLayout.libTypingsMod.WithFalse
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.MouseEvent
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -19,8 +13,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<'className' | 'collapsed' | 'flatMenuKeys' | 'isMobile' | 'menuData' | 'mode' | 'openKeys' | 'style' | 'theme' | 'menuItemRender' | 'location' | 'staticContext' | 'history' | 'computedMatch' | 'match' | 'route' | 'onClick' | 'subMenuCloseDelay' | 'getPopupContainer' | 'selectedKeys' | 'defaultOpenKeys' | 'onOpenChange' | 'inlineCollapsed' | 'motion' | 'focusable' | 'defaultSelectedKeys' | 'prefixCls' | 'overflowedIndicator' | 'subMenuOpenDelay' | 'selectable' | 'id' | 'onSelect' | 'onDeselect' | 'multiple' | 'inlineIndent' | 'openTransitionName' | 'onMouseEnter' | 'openAnimation' | 'forceSubMenuRender' | 'menu' | 'navTheme' | 'contentWidth' | 'layout' | 'title' | 'fixedHeader' | 'iconfontUrl' | 'fixSiderbar' | 'primaryColor', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ trait SiderMenuProps extends js.Object {
-  var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl | `false`] = js.undefined
+- Dropped {[ P in std.Exclude<'className' | 'collapsed' | 'flatMenuKeys' | 'isMobile' | 'menuData' | 'mode' | 'openKeys' | 'style' | 'theme' | 'menuItemRender', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ trait SiderMenuProps extends js.Object {
+  var breakpoint: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false`
+  ] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var logo: js.UndefOr[ReactNode] = js.undefined
   var menuHeaderRender: js.UndefOr[WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]]] = js.undefined
@@ -36,7 +32,7 @@ import scala.scalajs.js.annotation._
 object SiderMenuProps {
   @scala.inline
   def apply(
-    breakpoint: xs | sm | md | lg | xl | xxl | `false` = null,
+    breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
     className: String = null,
     logo: ReactNode = null,
     menuHeaderRender: WithFalse[js.Function2[/* logo */ ReactNode, /* title */ ReactNode, ReactNode]] = null,

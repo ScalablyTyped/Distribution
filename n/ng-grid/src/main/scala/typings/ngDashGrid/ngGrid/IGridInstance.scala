@@ -1,30 +1,28 @@
 package typings.ngDashGrid.ngGrid
 
-import typings.angular.angularMod.IAugmentedJQuery
-import typings.angular.angularMod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGridInstance extends js.Object {
   @JSName("$canvas")
-  var $canvas: IAugmentedJQuery
+  var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$footerPanel")
-  var $footerPanel: IAugmentedJQuery
+  var $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$groupPanel")
-  var $groupPanel: IAugmentedJQuery
+  var $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$headerContainer")
-  var $headerContainer: IAugmentedJQuery
+  var $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$headerScroller")
-  var $headerScroller: IAugmentedJQuery
+  var $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$headers")
-  var $headers: IAugmentedJQuery
+  var $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$root")
-  var $root: IAugmentedJQuery
+  var $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$topPanel")
-  var $topPanel: IAugmentedJQuery
+  var $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   @JSName("$viewport")
-  var $viewport: IAugmentedJQuery
+  var $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
   var config: IGridOptions
   var data: js.Any
   var elementDims: IElementDimension
@@ -50,9 +48,9 @@ trait IGridInstance extends js.Object {
   def configureColumnWidths(): Unit
   def fixColumnIndexes(): Unit
   def fixGroupIndexes(): Unit
-  def getTemplate(key: String): IPromise[_]
-  def init(): IPromise[_]
-  def initTemplates(): IPromise[_]
+  def getTemplate(key: String): js.Any
+  def init(): js.Any
+  def initTemplates(): js.Any
   def minRowsToRender(): Unit
   def refreshDomSizes(): Unit
   def resizeOnData(col: IColumn): Unit
@@ -65,15 +63,15 @@ trait IGridInstance extends js.Object {
 object IGridInstance {
   @scala.inline
   def apply(
-    $canvas: IAugmentedJQuery,
-    $footerPanel: IAugmentedJQuery,
-    $groupPanel: IAugmentedJQuery,
-    $headerContainer: IAugmentedJQuery,
-    $headerScroller: IAugmentedJQuery,
-    $headers: IAugmentedJQuery,
-    $root: IAugmentedJQuery,
-    $topPanel: IAugmentedJQuery,
-    $viewport: IAugmentedJQuery,
+    $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
     buildColumnDefsFromData: () => Unit,
     buildColumns: () => Unit,
     calcMaxCanvasHeight: () => Unit,
@@ -87,10 +85,10 @@ object IGridInstance {
     fixColumnIndexes: () => Unit,
     fixGroupIndexes: () => Unit,
     footerController: js.Any,
-    getTemplate: String => IPromise[_],
+    getTemplate: String => js.Any,
     gridId: String,
-    init: () => IPromise[_],
-    initTemplates: () => IPromise[_],
+    init: () => js.Any,
+    initTemplates: () => js.Any,
     lastSortedColumns: js.Array[IColumn],
     lateBindColumns: Boolean,
     maxCanvasHt: Double,

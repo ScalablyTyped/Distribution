@@ -1,0 +1,20 @@
+package typings.atStorybookAddonDashLinks
+
+import typings.atStorybookAddonDashLinks.atStorybookAddonDashLinksStrings.`storybook/links`
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@storybook/addon-links/dist/constants", JSImport.Namespace)
+@js.native
+object distConstantsMod extends js.Object {
+  val ADDON_ID: `storybook/links` = js.native
+  @js.native
+  object default extends js.Object {
+    var NAVIGATE: String = js.native
+    var RECEIVE: String = js.native
+    var REQUEST: String = js.native
+  }
+  
+}
+

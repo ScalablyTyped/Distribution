@@ -1,14 +1,18 @@
 package typings.webix.webixMod.ui
 
+import typings.webix.webixMod.WebixCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.forminput")
 @js.native
-class forminput () extends baseview {
+class forminput ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_forminput: WebixCallback = js.native
   @JSName("config")
   var config_forminput: forminputConfig = js.native
   def focus(): Unit = js.native

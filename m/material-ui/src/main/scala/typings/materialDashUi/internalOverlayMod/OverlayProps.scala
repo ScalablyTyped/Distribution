@@ -1,11 +1,11 @@
 package typings.materialDashUi.internalOverlayMod
 
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.Key
 import typings.react.reactMod.LegacyRef
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.Props
 import typings.react.reactMod.ReactNode
 import scala.scalajs.js

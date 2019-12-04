@@ -3,9 +3,9 @@ package typings.draftDashJs.draftDashJsMod
 import typings.draftDashJs.draftDashJsMod.Draft.Model.Decorators.DraftDecoratorType
 import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.DraftInlineStyle
 import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorChangeType
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.OrderedMap
-import typings.immutable.immutableMod.Stack
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.OrderedMap
+import typings.immutable.Immutable.Stack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

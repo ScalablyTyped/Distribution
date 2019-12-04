@@ -3,6 +3,7 @@ package typings.atStorybookRouter
 import typings.atStorybookRouter.distRouterMod.QueryLinkProps
 import typings.atStorybookRouter.distRouterMod.QueryLocationProps
 import typings.atStorybookRouter.distRouterMod.QueryMatchProps
+import typings.atStorybookRouter.distVisibilityMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,5 +24,8 @@ trait atStorybookRouterProps {
   @scala.inline
   def RouteProps: typings.atStorybookRouter.distRouterMod.RouteProps.type = typings.atStorybookRouter.distRouterMod.RouteProps
   type RouteProps = typings.atStorybookRouter.distRouterMod.RouteProps
+  @scala.inline
+  def ToggleVisibilityProps: Props.type = typings.atStorybookRouter.distVisibilityMod.Props
+  type ToggleVisibilityProps = Props
 }
 

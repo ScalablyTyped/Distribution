@@ -12,11 +12,11 @@ trait NavigationProps extends NavBarProps {
   var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var configureTransition: js.UndefOr[
     js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
       /* prevTransitionProps */ js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
       ], 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _
     ]
   ] = js.undefined
   var onTransitionEnd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
@@ -29,9 +29,9 @@ object NavigationProps {
     backButtonTintColor: String = null,
     backButtonTitle: String = null,
     cardStyle: StyleProp[ViewStyle] = null,
-    configureTransition: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
-    ]) => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
+    configureTransition: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+    ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ _ = null,
     hideBackButton: js.UndefOr[Boolean] = js.undefined,
     hideNavBar: js.UndefOr[Boolean] = js.undefined,
     navBarStyle: StyleProp[ViewStyle] = null,

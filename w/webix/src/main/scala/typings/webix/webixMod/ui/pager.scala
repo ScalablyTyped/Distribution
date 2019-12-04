@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.pager")
 @js.native
-class pager () extends baseview {
+class pager ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_pager: WebixCallback = js.native
   @JSName("config")
   var config_pager: pagerConfig = js.native
   @JSName("on_click")

@@ -6,7 +6,37 @@ import scala.scalajs.js.annotation._
 
 object antdDashMobileDashRnStrings {
   @js.native
+  sealed trait ActionSheet extends js.Object
+  
+  @js.native
+  sealed trait `ActionSheet example` extends js.Object
+  
+  @js.native
   sealed trait Empty extends js.Object
+  
+  @js.native
+  sealed trait Icon extends js.Object
+  
+  @js.native
+  sealed trait `Icon Example` extends js.Object
+  
+  @js.native
+  sealed trait List extends js.Object
+  
+  @js.native
+  sealed trait `List Example` extends js.Object
+  
+  @js.native
+  sealed trait Popover extends js.Object
+  
+  @js.native
+  sealed trait `Popover example` extends js.Object
+  
+  @js.native
+  sealed trait Tabs extends js.Object
+  
+  @js.native
+  sealed trait `Tabs example` extends js.Object
   
   @js.native
   sealed trait android extends js.Object
@@ -48,6 +78,9 @@ object antdDashMobileDashRnStrings {
   sealed trait datetime extends js.Object
   
   @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait digit extends js.Object
   
   @js.native
@@ -82,6 +115,9 @@ object antdDashMobileDashRnStrings {
   
   @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait `login-password` extends js.Object
   
   @js.native
   sealed trait md extends js.Object
@@ -132,6 +168,9 @@ object antdDashMobileDashRnStrings {
   sealed trait `row-reverse` extends js.Object
   
   @js.native
+  sealed trait `secure-text` extends js.Object
+  
+  @js.native
   sealed trait sm extends js.Object
   
   @js.native
@@ -180,7 +219,27 @@ object antdDashMobileDashRnStrings {
   sealed trait year extends js.Object
   
   @scala.inline
+  def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
+  @scala.inline
+  def `ActionSheet example`: `ActionSheet example` = "ActionSheet example".asInstanceOf[`ActionSheet example`]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def Icon: Icon = "Icon".asInstanceOf[Icon]
+  @scala.inline
+  def `Icon Example`: `Icon Example` = "Icon Example".asInstanceOf[`Icon Example`]
+  @scala.inline
+  def List: List = "List".asInstanceOf[List]
+  @scala.inline
+  def `List Example`: `List Example` = "List Example".asInstanceOf[`List Example`]
+  @scala.inline
+  def Popover: Popover = "Popover".asInstanceOf[Popover]
+  @scala.inline
+  def `Popover example`: `Popover example` = "Popover example".asInstanceOf[`Popover example`]
+  @scala.inline
+  def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
+  @scala.inline
+  def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
@@ -208,6 +267,8 @@ object antdDashMobileDashRnStrings {
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def digit: digit = "digit".asInstanceOf[digit]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
@@ -231,6 +292,8 @@ object antdDashMobileDashRnStrings {
   def lg: lg = "lg".asInstanceOf[lg]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
   @scala.inline
   def md: md = "md".asInstanceOf[md]
   @scala.inline
@@ -263,6 +326,8 @@ object antdDashMobileDashRnStrings {
   def row: row = "row".asInstanceOf[row]
   @scala.inline
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
+  @scala.inline
+  def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   @scala.inline

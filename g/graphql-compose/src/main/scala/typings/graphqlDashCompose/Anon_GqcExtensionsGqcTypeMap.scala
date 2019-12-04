@@ -1,8 +1,8 @@
 package typings.graphqlDashCompose
 
-import typings.graphqlDashCompose.esmObjectTypeComposerMod.ComposeObjectType
-import typings.graphqlDashCompose.esmUnionTypeComposerMod.UnionTypeResolversMap
-import typings.graphqlDashCompose.esmUtilsDefinitionsMod.Extensions
+import typings.graphqlDashCompose.libObjectTypeComposerMod.ComposeObjectType
+import typings.graphqlDashCompose.libUnionTypeComposerMod.UnionTypeResolversMap
+import typings.graphqlDashCompose.libUtilsDefinitionsMod.Extensions
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`

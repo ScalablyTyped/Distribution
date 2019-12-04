@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 object atAwsDashCryptoSha256DashBrowserStrings {
   @js.native
+  sealed trait HMAC extends js.Object
+  
+  @js.native
+  sealed trait `SHA-256` extends js.Object
+  
+  @js.native
   sealed trait ascii extends js.Object
   
   @js.native
@@ -14,6 +20,10 @@ object atAwsDashCryptoSha256DashBrowserStrings {
   @js.native
   sealed trait utf8 extends js.Object
   
+  @scala.inline
+  def HMAC: HMAC = "HMAC".asInstanceOf[HMAC]
+  @scala.inline
+  def `SHA-256`: `SHA-256` = "SHA-256".asInstanceOf[`SHA-256`]
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   @scala.inline

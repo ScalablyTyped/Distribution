@@ -1,7 +1,6 @@
 package typings.reactDashSizeme.reactDashSizemeMod
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashSizeme.Omit
 import typings.reactDashSizeme.reactDashSizemeStrings.size
 import scala.scalajs.js
 import scala.scalajs.js.`|`

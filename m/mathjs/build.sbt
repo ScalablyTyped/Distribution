@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mathjs"
-version := "6.0-dt-20190826Z-76e4db"
+version := "6.0-dt-20190826Z-468ae4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "decimal_dot_js" % "10.2.0-0c899c",
+  "org.scalablytyped" %%% "decimal_dot_js" % "10.2.0-51acbf",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

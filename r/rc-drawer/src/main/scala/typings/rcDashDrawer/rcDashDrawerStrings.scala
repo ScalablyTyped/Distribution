@@ -7,24 +7,16 @@ import scala.scalajs.js.annotation._
 
 object rcDashDrawerStrings {
   @js.native
-  sealed trait bottom
-    extends IPlacement
-       with typings.rcDashDrawer.esIDrawerPropTypesMod.IPlacement
+  sealed trait bottom extends IPlacement
   
   @js.native
-  sealed trait left
-    extends IPlacement
-       with typings.rcDashDrawer.esIDrawerPropTypesMod.IPlacement
+  sealed trait left extends IPlacement
   
   @js.native
-  sealed trait right
-    extends IPlacement
-       with typings.rcDashDrawer.esIDrawerPropTypesMod.IPlacement
+  sealed trait right extends IPlacement
   
   @js.native
-  sealed trait top
-    extends IPlacement
-       with typings.rcDashDrawer.esIDrawerPropTypesMod.IPlacement
+  sealed trait top extends IPlacement
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object distEs2015CoreEntityObjectGameObjectGameObjectMod extends js.Object {
   @js.native
   class GameObject () extends EntityObject {
-    var children: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<GameObject> */ js.Any = js.native
+    var children: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<GameObject> */ js.Any = js.native
     var isVisible: Boolean = js.native
     @JSName("parent")
     var parent_GameObject: GameObject = js.native

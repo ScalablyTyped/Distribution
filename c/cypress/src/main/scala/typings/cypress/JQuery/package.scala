@@ -133,7 +133,7 @@ package object JQuery {
     - typings.cypress.Anon_DelegateType
     - typings.cypress.Anon_Data[TTarget, TData]
     - typings.cypress.Anon_False[TTarget]
-    - typings.cypress.Anon_AddHandleObj[TTarget, TData]
+    - typings.cypress.Anon_Add[TTarget, TData]
     - typings.cypress.Anon_HandleObj[TTarget, TData]
     - typings.cypress.Anon_DataEvent[TTarget, TData]
     - typings.cypress.Anon_DataDefault[TTarget, TData]

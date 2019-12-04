@@ -8,10 +8,11 @@ trait Anon_AlignItemsBorderBottomColorBorderBottomWidth extends js.Object {
   var alignItems: String
   var borderBottomColor: String
   var borderBottomWidth: Double
+  var flex: Double
   var flexDirection: String
-  var flexGrow: Double
-  var height: Double
-  var justifyContent: String
+  var minHeight: Double
+  var paddingRight: Double
+  var paddingVertical: Double
 }
 
 object Anon_AlignItemsBorderBottomColorBorderBottomWidth {
@@ -20,12 +21,13 @@ object Anon_AlignItemsBorderBottomColorBorderBottomWidth {
     alignItems: String,
     borderBottomColor: String,
     borderBottomWidth: Double,
+    flex: Double,
     flexDirection: String,
-    flexGrow: Double,
-    height: Double,
-    justifyContent: String
+    minHeight: Double,
+    paddingRight: Double,
+    paddingVertical: Double
   ): Anon_AlignItemsBorderBottomColorBorderBottomWidth = {
-    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], paddingVertical = paddingVertical.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_AlignItemsBorderBottomColorBorderBottomWidth]
   }

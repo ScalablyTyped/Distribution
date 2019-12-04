@@ -32,15 +32,15 @@ object libRadioMod extends js.Object {
   @js.native
   object Group extends js.Object {
     var childContextTypes: Anon_RadioGroup = js.native
-    var defaultProps: Anon_ButtonStyleRadioGroupButtonStyle = js.native
+    var defaultProps: Anon_ButtonStyle = js.native
     def getDerivedStateFromProps(nextProps: RadioGroupProps): Anon_ValueAny | Null = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    var Button: TypeofClassRadioButtonContextTypes = js.native
-    var Group: TypeofClassRadioGroupChildContextTypes = js.native
+    var Button: TypeofClassRadioButton = js.native
+    var Group: TypeofClassRadioGroup = js.native
     var contextTypes: Anon_RadioGroup = js.native
     var defaultProps: Anon_Type = js.native
   }

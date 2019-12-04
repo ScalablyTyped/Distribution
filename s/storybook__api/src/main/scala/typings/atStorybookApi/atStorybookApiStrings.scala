@@ -9,16 +9,31 @@ import scala.scalajs.js.annotation._
 
 object atStorybookApiStrings {
   @js.native
+  sealed trait `5DOT2DOT6` extends js.Object
+  
+  @js.native
   sealed trait `@storybook/ui/store` extends js.Object
   
   @js.native
+  sealed trait BACKSLASHu2318 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHu2325 extends js.Object
+  
+  @js.native
   sealed trait aboutPage extends Action
+  
+  @js.native
+  sealed trait alt extends js.Object
   
   @js.native
   sealed trait bottom extends PanelPositions
   
   @js.native
   sealed trait control extends js.Object
+  
+  @js.native
+  sealed trait ctrl extends js.Object
   
   @js.native
   sealed trait development extends js.Object
@@ -93,13 +108,23 @@ object atStorybookApiStrings {
   sealed trait toolbar extends Action
   
   @scala.inline
+  def `5DOT2DOT6`: `5DOT2DOT6` = "5.2.6".asInstanceOf[`5DOT2DOT6`]
+  @scala.inline
   def `@storybook/ui/store`: `@storybook/ui/store` = "@storybook/ui/store".asInstanceOf[`@storybook/ui/store`]
   @scala.inline
+  def BACKSLASHu2318: BACKSLASHu2318 = "\u2318".asInstanceOf[BACKSLASHu2318]
+  @scala.inline
+  def BACKSLASHu2325: BACKSLASHu2325 = "\u2325".asInstanceOf[BACKSLASHu2325]
+  @scala.inline
   def aboutPage: aboutPage = "aboutPage".asInstanceOf[aboutPage]
+  @scala.inline
+  def alt: alt = "alt".asInstanceOf[alt]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def control: control = "control".asInstanceOf[control]
+  @scala.inline
+  def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   @scala.inline

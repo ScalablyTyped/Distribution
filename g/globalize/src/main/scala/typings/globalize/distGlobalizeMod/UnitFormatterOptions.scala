@@ -15,15 +15,12 @@ trait UnitFormatterOptions extends js.Object {
   /**
   		 * numberFormatter: [Function] a number formatter function. Defaults to Globalize .numberFormatter() for the current locale using the default options.
   		 */
-  var numberFormatter: js.UndefOr[typings.globalize.distGlobalizeNumberMod.distGlobalizeMod.NumberFormatterOptions] = js.undefined
+  var numberFormatter: js.UndefOr[NumberFormatterOptions] = js.undefined
 }
 
 object UnitFormatterOptions {
   @scala.inline
-  def apply(
-    form: long | short | narrow = null,
-    numberFormatter: typings.globalize.distGlobalizeNumberMod.distGlobalizeMod.NumberFormatterOptions = null
-  ): UnitFormatterOptions = {
+  def apply(form: long | short | narrow = null, numberFormatter: NumberFormatterOptions = null): UnitFormatterOptions = {
     val __obj = js.Dynamic.literal()
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(numberFormatter.asInstanceOf[js.Any])

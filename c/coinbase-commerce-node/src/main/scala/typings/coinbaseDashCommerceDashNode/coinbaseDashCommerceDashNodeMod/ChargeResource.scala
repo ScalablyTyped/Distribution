@@ -3,7 +3,6 @@ package typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeMod
 import typings.coinbaseDashCommerceDashNode.Anon_Block
 import typings.coinbaseDashCommerceDashNode.Anon_Context
 import typings.coinbaseDashCommerceDashNode.Anon_Id
-import typings.coinbaseDashCommerceDashNode.Timestamp
 import typings.coinbaseDashCommerceDashNode.coinbaseDashCommerceDashNodeStrings.charge
 import typings.std.Partial
 import typings.std.Record

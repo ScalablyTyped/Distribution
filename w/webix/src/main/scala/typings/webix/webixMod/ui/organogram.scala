@@ -12,9 +12,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("webix", "ui.organogram")
 @js.native
-class organogram () extends baseview {
+class organogram ()
+  extends typings.webix.webix.ui.baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
+  @JSName("$skin")
+  var $skin_Original_organogram: WebixCallback = js.native
   @JSName("config")
   var config_organogram: organogramConfig = js.native
   var data: DataStore = js.native

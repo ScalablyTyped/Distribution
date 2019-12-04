@@ -1,7 +1,7 @@
 package typings.slateDashReact.slateDashReactMod
 
-import typings.immutable.immutableMod.List
-import typings.immutable.immutableMod.Set
+import typings.immutable.Immutable.List
+import typings.immutable.Immutable.Set
 import typings.react.reactMod.ReactNode
 import typings.slate.slateMod.Annotation
 import typings.slate.slateMod.Decoration

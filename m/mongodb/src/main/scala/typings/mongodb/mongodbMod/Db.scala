@@ -7,7 +7,6 @@ import typings.mongodb.Anon_ReadPreference
 import typings.mongodb.Anon_ReadPreferenceSession
 import typings.mongodb.Anon_Scale
 import typings.mongodb.Anon_Session
-import typings.mongodb.Default
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

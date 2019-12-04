@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object staticImageLoader extends js.Object {
   def apply(
     pages: StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ js.Any
     ]
   ): js.Function2[/* line */ js.Any, /* callback */ js.Any, Unit] = js.native
 }

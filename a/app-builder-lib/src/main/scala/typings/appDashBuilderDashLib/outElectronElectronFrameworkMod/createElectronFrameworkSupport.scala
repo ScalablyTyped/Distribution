@@ -1,8 +1,8 @@
 package typings.appDashBuilderDashLib.outElectronElectronFrameworkMod
 
+import typings.appDashBuilderDashLib.appDashBuilderDashLibMod.Packager
 import typings.appDashBuilderDashLib.outConfigurationMod.Configuration
 import typings.appDashBuilderDashLib.outFrameworkMod.Framework
-import typings.appDashBuilderDashLib.outMod.Packager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

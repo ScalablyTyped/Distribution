@@ -2,7 +2,7 @@ package typings.antd.antdMod
 
 import typings.antd.Anon_ArgsChildren
 import typings.antd.Anon_Colon
-import typings.antd.TypeofClassFormItemDefaultProps
+import typings.antd.TypeofClassFormItem
 import typings.antd.libFormFormMod.FormComponentProps
 import typings.antd.libFormFormMod.FormCreateOption
 import typings.antd.libFormFormMod.FormProps
@@ -22,7 +22,7 @@ class Form protected () extends default {
 @JSImport("antd", "Form")
 @js.native
 object Form extends js.Object {
-  var Item: TypeofClassFormItemDefaultProps = js.native
+  var Item: TypeofClassFormItem = js.native
   var createFormField: js.Any = js.native
   var defaultProps: Anon_Colon = js.native
   var propTypes: Anon_ArgsChildren = js.native

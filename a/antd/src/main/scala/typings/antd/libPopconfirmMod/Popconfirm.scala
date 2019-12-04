@@ -1,8 +1,8 @@
 package typings.antd.libPopconfirmMod
 
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
-import typings.react.NativeMouseEvent
 import typings.react.reactMod.Component
+import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
 import typings.std.MouseEvent

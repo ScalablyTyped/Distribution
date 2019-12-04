@@ -37,7 +37,7 @@ object libPortalMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Host: TypeofClassPortalHostDisplayName = js.native
+    var Host: TypeofClassPortalHost = js.native
     def add(e: ReactNode): Double = js.native
     def remove(key: Double): Unit = js.native
   }

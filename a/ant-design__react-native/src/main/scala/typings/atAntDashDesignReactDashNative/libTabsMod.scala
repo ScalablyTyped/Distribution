@@ -17,7 +17,7 @@ object libTabsMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var DefaultTabBar: TypeofClassDefaultTabBarDefaultProps = js.native
+    var DefaultTabBar: TypeofClassDefaultTabBar = js.native
     var defaultProps: PropsType = js.native
   }
   

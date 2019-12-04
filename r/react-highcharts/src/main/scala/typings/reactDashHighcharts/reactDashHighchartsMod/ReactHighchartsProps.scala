@@ -15,7 +15,7 @@ trait ReactHighchartsProps extends js.Object {
     */
   var callback: js.UndefOr[
     js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any, 
       Unit
     ]
   ] = js.undefined
@@ -33,7 +33,7 @@ object ReactHighchartsProps {
   @scala.inline
   def apply(
     config: Options,
-    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any => Unit = null,
+    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any => Unit = null,
     isPureConfig: js.UndefOr[Boolean] = js.undefined
   ): ReactHighchartsProps = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])

@@ -1,5 +1,6 @@
 package typings.atIonicCore.distTypesComponentsMod.LocalJSX
 
+import typings.atIonicCore.atIonicCoreMod.Color
 import typings.atIonicCore.atIonicCoreStrings.button
 import typings.atIonicCore.atIonicCoreStrings.full
 import typings.atIonicCore.atIonicCoreStrings.inset
@@ -8,6 +9,7 @@ import typings.atIonicCore.atIonicCoreStrings.md
 import typings.atIonicCore.atIonicCoreStrings.none
 import typings.atIonicCore.atIonicCoreStrings.reset
 import typings.atIonicCore.atIonicCoreStrings.submit
+import typings.atIonicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +22,7 @@ trait IonItem extends js.Object {
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
-  ] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
   /**
     * If `true`, a detail arrow will appear on the item. Defaults to `false` unless the `mode` is `ios` and an `href` or `button` property is present.
     */
@@ -58,9 +58,7 @@ trait IonItem extends js.Object {
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
-  ] = js.undefined
+  var routerDirection: js.UndefOr[RouterDirection] = js.undefined
   /**
     * Specifies where to display the linked URL. Only applies when an `href` is provided. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
     */
@@ -75,7 +73,7 @@ object IonItem {
   @scala.inline
   def apply(
     button: js.UndefOr[Boolean] = js.undefined,
-    color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
+    color: Color = null,
     detail: js.UndefOr[Boolean] = js.undefined,
     detailIcon: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -84,7 +82,7 @@ object IonItem {
     lines: full | inset | none = null,
     mode: ios | md = null,
     rel: String = null,
-    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
+    routerDirection: RouterDirection = null,
     target: String = null,
     `type`: submit | reset | button = null
   ): IonItem = {

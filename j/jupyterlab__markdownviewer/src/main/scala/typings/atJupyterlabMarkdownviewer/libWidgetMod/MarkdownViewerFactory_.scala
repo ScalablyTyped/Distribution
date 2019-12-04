@@ -1,6 +1,6 @@
 package typings.atJupyterlabMarkdownviewer.libWidgetMod
 
-import typings.atJupyterlabDocregistry.libMod.ABCWidgetFactory
+import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.ABCWidgetFactory
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
 import typings.atJupyterlabMarkdownviewer.libWidgetMod.MarkdownViewerFactory.IOptions
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.reactDashIntl
 
 import typings.react.reactMod.ComponentType
-import typings.reactDashIntl.libComponentsInjectIntlMod.WrappedComponentProps
+import typings.reactDashIntl.reactDashIntlMod.WrappedComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,6 +2,9 @@ package typings.atIonicCore.distTypesComponentsMod.Components
 
 import typings.atIonicCore.atIonicCoreStrings.ios
 import typings.atIonicCore.atIonicCoreStrings.md
+import typings.atIonicCore.distTypesComponentsActionDashSheetActionDashSheetDashInterfaceMod.ActionSheetButton
+import typings.atIonicCore.distTypesUtilsAnimationOldDashAnimationAnimationDashInterfaceMod.AnimationBuilder
+import typings.atIonicCore.distTypesUtilsOverlaysDashInterfaceMod.OverlayEventDetail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,7 @@ trait IonActionSheet extends js.Object {
   /**
     * An array of buttons for the action sheet.
     */
-  var buttons: js.Array[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetButton */ _) | String
-  ] = js.native
+  var buttons: js.Array[ActionSheetButton | String] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
@@ -29,9 +30,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is presented.
     */
-  var enterAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * Title for the action sheet.
     */
@@ -43,9 +42,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is dismissed.
     */
-  var leaveAnimation: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
-  ] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * The mode determines which platform styles to use.
     */
@@ -70,15 +67,11 @@ trait IonActionSheet extends js.Object {
   /**
     * Returns a promise that resolves when the action sheet did dismiss.
     */
-  def onDidDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onDidDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Returns a promise that resolves when the action sheet will dismiss.
     */
-  def onWillDismiss(): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
-  ] = js.native
+  def onWillDismiss(): js.Promise[OverlayEventDetail[_]] = js.native
   /**
     * Present the action sheet overlay after it has been created.
     */

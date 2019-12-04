@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-macros"
-version := "2.6-dt-20191016Z-b4eb30"
+version := "2.6-dt-20191016Z-b4752b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

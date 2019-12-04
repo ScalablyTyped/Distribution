@@ -1,0 +1,12 @@
+package typings.pDashQueue
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("p-queue/dist/lower-bound", JSImport.Namespace)
+@js.native
+object distLowerDashBoundMod extends js.Object {
+  def default[T](array: js.Array[T], value: T, comparator: js.Function2[/* a */ T, /* b */ T, Double]): Double = js.native
+}
+

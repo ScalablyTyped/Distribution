@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("immutable", "isRecord")
 @js.native
 object isRecord extends js.Object {
-  def apply(maybeRecord: js.Any): /* is immutable.immutable.Record<any> */ Boolean = js.native
+  def apply(maybeRecord: js.Any): /* is immutable.Immutable.Record<any> */ Boolean = js.native
 }
 

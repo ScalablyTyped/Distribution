@@ -5,7 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object googleDashMapsDashReactMod {
+  import typings.std.Exclude
+  import typings.std.Pick
+
   type GoogleApiOptionsFunc = js.Function1[/* props */ js.Any, GoogleApiOptions]
+  type Omit[T1, T2] = Pick[T1, Exclude[String, String]]
   type mapEventHandler = js.Function3[
     /* mapProps */ js.UndefOr[MapProps], 
     /* map */ js.UndefOr[typings.googlemaps.google.maps.Map], 

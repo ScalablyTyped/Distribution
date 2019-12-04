@@ -1,6 +1,6 @@
 package typings.atJupyterlabCells.libWidgetMod.CodeCell
 
-import typings.atJupyterlabCells.libModelMod.ICodeCellModel
+import typings.atJupyterlabCells.libModelMod.ICellModel
 import typings.atJupyterlabCells.libWidgetMod.Cell.IContentFactory
 import typings.atJupyterlabCodeeditor.libEditorMod.CodeEditor.IConfig
 import typings.atJupyterlabRendermime.libTokensMod.IRenderMimeRegistry
@@ -15,11 +15,6 @@ import scala.scalajs.js.annotation._
 trait IOptions
   extends typings.atJupyterlabCells.libWidgetMod.Cell.IOptions {
   /**
-    * The model used by the cell.
-    */
-  @JSName("model")
-  var model_IOptions: ICodeCellModel
-  /**
     * The mime renderer for the cell widget.
     */
   var rendermime: IRenderMimeRegistry
@@ -28,7 +23,7 @@ trait IOptions
 object IOptions {
   @scala.inline
   def apply(
-    model: ICodeCellModel,
+    model: ICellModel,
     rendermime: IRenderMimeRegistry,
     contentFactory: IContentFactory = null,
     editorConfig: Partial[IConfig] = null,
