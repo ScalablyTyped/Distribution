@@ -4419,6 +4419,7 @@
 | [material-ui-datatables](./m/material-ui-datatables) | An another React Data tables component. | react, react-component, material design, material-ui, datatables |
 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone | pagination, material-ui |
 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material  | react, react-component, material design, material-ui |
+| [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI | react, react-component, material design, material-ui, icons |
 | [material-ui__lab](./m/material-ui__lab) | Material-UI Lab - Incubator for Material-UI React  | react, react-component, material design, material-ui, lab |
 | [material__animation](./m/material__animation) | Animation Variables and Mixins used by Material Co | material components, material design, animation |
 | [material__auto-init](./m/material__auto-init) | Declarative, easy-to-use auto-initialization for M | - |

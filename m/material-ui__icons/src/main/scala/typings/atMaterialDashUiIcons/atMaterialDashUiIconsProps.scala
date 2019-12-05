@@ -3835,6 +3835,9 @@ trait atMaterialDashUiIconsProps {
   def DeckTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DeckTwoToneProps = SvgIconProps
   @scala.inline
+  def DefaultProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
+  type DefaultProps = SvgIconProps
+  @scala.inline
   def DehazeProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type DehazeProps = SvgIconProps
   @scala.inline
@@ -10503,8 +10506,5 @@ trait atMaterialDashUiIconsProps {
   @scala.inline
   def PermPhoneMsgTwoToneProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
   type PermPhoneMsgTwoToneProps = SvgIconProps
-  @scala.inline
-  def PermScanWifiProps: SvgIconProps.type = typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermScanWifiProps = SvgIconProps
 }
 
