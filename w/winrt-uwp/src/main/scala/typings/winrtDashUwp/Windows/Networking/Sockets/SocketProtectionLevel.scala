@@ -1,5 +1,15 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionAllowNullAuthentication
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionWithAuthentication
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.plainSocket
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl3AllowWeakEncryption
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.sslAllowNullEncryption
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls10
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls11
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls12
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +57,34 @@ object SocketProtectionLevel extends js.Object {
   @js.native
   sealed trait tls12 extends SocketProtectionLevel
   
-  /* 3 */ val bluetoothEncryptionAllowNullAuthentication: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionAllowNullAuthentication with Double = js.native
-  /* 4 */ val bluetoothEncryptionWithAuthentication: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.bluetoothEncryptionWithAuthentication with Double = js.native
-  /* 0 */ val plainSocket: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.plainSocket with Double = js.native
-  /* 1 */ val ssl: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl with Double = js.native
-  /* 5 */ val ssl3AllowWeakEncryption: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.ssl3AllowWeakEncryption with Double = js.native
-  /* 2 */ val sslAllowNullEncryption: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.sslAllowNullEncryption with Double = js.native
-  /* 6 */ val tls10: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls10 with Double = js.native
-  /* 7 */ val tls11: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls11 with Double = js.native
-  /* 8 */ val tls12: typings.winrtDashUwp.Windows.Networking.Sockets.SocketProtectionLevel.tls12 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocketProtectionLevel with Double] = js.native
+  /* 3 */ @js.native
+  object bluetoothEncryptionAllowNullAuthentication extends TopLevel[bluetoothEncryptionAllowNullAuthentication with Double]
+  
+  /* 4 */ @js.native
+  object bluetoothEncryptionWithAuthentication extends TopLevel[bluetoothEncryptionWithAuthentication with Double]
+  
+  /* 0 */ @js.native
+  object plainSocket extends TopLevel[plainSocket with Double]
+  
+  /* 1 */ @js.native
+  object ssl extends TopLevel[ssl with Double]
+  
+  /* 5 */ @js.native
+  object ssl3AllowWeakEncryption extends TopLevel[ssl3AllowWeakEncryption with Double]
+  
+  /* 2 */ @js.native
+  object sslAllowNullEncryption extends TopLevel[sslAllowNullEncryption with Double]
+  
+  /* 6 */ @js.native
+  object tls10 extends TopLevel[tls10 with Double]
+  
+  /* 7 */ @js.native
+  object tls11 extends TopLevel[tls11 with Double]
+  
+  /* 8 */ @js.native
+  object tls12 extends TopLevel[tls12 with Double]
+  
 }
 

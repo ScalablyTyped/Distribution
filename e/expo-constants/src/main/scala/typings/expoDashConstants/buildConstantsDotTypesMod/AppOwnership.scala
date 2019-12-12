@@ -1,5 +1,9 @@
 package typings.expoDashConstants.buildConstantsDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Expo
+import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Guest
+import typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Standalone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object AppOwnership extends js.Object {
   @js.native
   sealed trait Standalone extends AppOwnership
   
-  /* "expo" */ val Expo: typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Expo with String = js.native
-  /* "guest" */ val Guest: typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Guest with String = js.native
-  /* "standalone" */ val Standalone: typings.expoDashConstants.buildConstantsDotTypesMod.AppOwnership.Standalone with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AppOwnership with String] = js.native
+  /* "expo" */ @js.native
+  object Expo extends TopLevel[Expo with String]
+  
+  /* "guest" */ @js.native
+  object Guest extends TopLevel[Guest with String]
+  
+  /* "standalone" */ @js.native
+  object Standalone extends TopLevel[Standalone with String]
+  
 }
 

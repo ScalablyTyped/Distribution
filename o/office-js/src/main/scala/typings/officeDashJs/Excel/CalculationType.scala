@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.CalculationType.full
+import typings.officeDashJs.Excel.CalculationType.fullRebuild
+import typings.officeDashJs.Excel.CalculationType.recalculate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object CalculationType extends js.Object {
   @js.native
   sealed trait recalculate extends CalculationType
   
-  /* "Full" */ val full: typings.officeDashJs.Excel.CalculationType.full with String = js.native
-  /* "FullRebuild" */ val fullRebuild: typings.officeDashJs.Excel.CalculationType.fullRebuild with String = js.native
-  /* "Recalculate" */ val recalculate: typings.officeDashJs.Excel.CalculationType.recalculate with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CalculationType with String] = js.native
+  /* "Full" */ @js.native
+  object full extends TopLevel[full with String]
+  
+  /* "FullRebuild" */ @js.native
+  object fullRebuild extends TopLevel[fullRebuild with String]
+  
+  /* "Recalculate" */ @js.native
+  object recalculate extends TopLevel[recalculate with String]
+  
 }
 

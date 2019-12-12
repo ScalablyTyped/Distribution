@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.CellSelectionMode.Box
+import typings.ejDotWebDotAll.ej.Grid.CellSelectionMode.Flow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object CellSelectionMode extends js.Object {
   @js.native
   sealed trait Flow extends CellSelectionMode
   
-  /* 1 */ val Box: typings.ejDotWebDotAll.ej.Grid.CellSelectionMode.Box with Double = js.native
-  /* 0 */ val Flow: typings.ejDotWebDotAll.ej.Grid.CellSelectionMode.Flow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CellSelectionMode with Double] = js.native
+  /* 1 */ @js.native
+  object Box extends TopLevel[Box with Double]
+  
+  /* 0 */ @js.native
+  object Flow extends TopLevel[Flow with Double]
+  
 }
 

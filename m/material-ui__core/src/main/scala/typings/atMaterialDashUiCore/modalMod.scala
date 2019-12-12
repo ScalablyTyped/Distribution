@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.modalModalMod.ModalProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -24,6 +25,8 @@ object modalMod extends js.Object {
     def this(props: ModalProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ModalProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ModalProps]]
+  
 }
 

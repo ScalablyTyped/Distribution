@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ethereum-protocol"
-version := "1.0-dt-20180612Z-728291"
+version := "1.0-dt-20180612Z-eb163f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

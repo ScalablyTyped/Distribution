@@ -1,5 +1,9 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.KeyboardEventModifier.ALT
+import typings.cesium.cesiumMod.KeyboardEventModifier.CTRL
+import typings.cesium.cesiumMod.KeyboardEventModifier.SHIFT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object KeyboardEventModifier extends js.Object {
   @js.native
   sealed trait SHIFT extends KeyboardEventModifier
   
-  /* 2 */ val ALT: typings.cesium.cesiumMod.KeyboardEventModifier.ALT with Double = js.native
-  /* 1 */ val CTRL: typings.cesium.cesiumMod.KeyboardEventModifier.CTRL with Double = js.native
-  /* 0 */ val SHIFT: typings.cesium.cesiumMod.KeyboardEventModifier.SHIFT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyboardEventModifier with Double] = js.native
+  /* 2 */ @js.native
+  object ALT extends TopLevel[ALT with Double]
+  
+  /* 1 */ @js.native
+  object CTRL extends TopLevel[CTRL with Double]
+  
+  /* 0 */ @js.native
+  object SHIFT extends TopLevel[SHIFT with Double]
+  
 }
 

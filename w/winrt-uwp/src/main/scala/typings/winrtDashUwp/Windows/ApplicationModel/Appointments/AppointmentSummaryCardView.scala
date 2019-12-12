@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.app
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.system
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object AppointmentSummaryCardView extends js.Object {
   @js.native
   sealed trait system extends AppointmentSummaryCardView
   
-  /* 1 */ val app: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.app with Double = js.native
-  /* 0 */ val system: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentSummaryCardView.system with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentSummaryCardView with Double] = js.native
+  /* 1 */ @js.native
+  object app extends TopLevel[app with Double]
+  
+  /* 0 */ @js.native
+  object system extends TopLevel[system with Double]
+  
 }
 

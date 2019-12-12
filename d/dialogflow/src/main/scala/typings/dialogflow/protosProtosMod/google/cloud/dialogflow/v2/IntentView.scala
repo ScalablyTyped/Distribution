@@ -1,5 +1,8 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_FULL
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +20,13 @@ object IntentView extends js.Object {
   @js.native
   sealed trait INTENT_VIEW_UNSPECIFIED extends IntentView
   
-  /* 1 */ val INTENT_VIEW_FULL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_FULL with Double = js.native
-  /* 0 */ val INTENT_VIEW_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.IntentView.INTENT_VIEW_UNSPECIFIED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IntentView with Double] = js.native
+  /* 1 */ @js.native
+  object INTENT_VIEW_FULL extends TopLevel[INTENT_VIEW_FULL with Double]
+  
+  /* 0 */ @js.native
+  object INTENT_VIEW_UNSPECIFIED extends TopLevel[INTENT_VIEW_UNSPECIFIED with Double]
+  
 }
 

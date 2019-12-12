@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_UploadDataFormat.Base64
+import typings.dwt.EnumDWT_UploadDataFormat.Binary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EnumDWT_UploadDataFormat extends js.Object {
   @js.native
   sealed trait Binary extends EnumDWT_UploadDataFormat
   
-  /* 1 */ val Base64: typings.dwt.EnumDWT_UploadDataFormat.Base64 with Double = js.native
-  /* 0 */ val Binary: typings.dwt.EnumDWT_UploadDataFormat.Binary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_UploadDataFormat with Double] = js.native
+  /* 1 */ @js.native
+  object Base64 extends TopLevel[Base64 with Double]
+  
+  /* 0 */ @js.native
+  object Binary extends TopLevel[Binary with Double]
+  
 }
 

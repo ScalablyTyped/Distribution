@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Ascending
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Default
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object SortOrderType extends js.Object {
   @js.native
   sealed trait Descending extends SortOrderType
   
-  /* 1 */ val Ascending: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Ascending with Double = js.native
-  /* 0 */ val Default: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Default with Double = js.native
-  /* 2 */ val Descending: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortOrderType.Descending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SortOrderType with Double] = js.native
+  /* 1 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 2 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.ClockRange.CLAMPED
+import typings.cesium.cesiumMod.ClockRange.LOOP_STOP
+import typings.cesium.cesiumMod.ClockRange.UNBOUNDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ClockRange extends js.Object {
   @js.native
   sealed trait UNBOUNDED extends ClockRange
   
-  /* 1 */ val CLAMPED: typings.cesium.cesiumMod.ClockRange.CLAMPED with Double = js.native
-  /* 2 */ val LOOP_STOP: typings.cesium.cesiumMod.ClockRange.LOOP_STOP with Double = js.native
-  /* 0 */ val UNBOUNDED: typings.cesium.cesiumMod.ClockRange.UNBOUNDED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClockRange with Double] = js.native
+  /* 1 */ @js.native
+  object CLAMPED extends TopLevel[CLAMPED with Double]
+  
+  /* 2 */ @js.native
+  object LOOP_STOP extends TopLevel[LOOP_STOP with Double]
+  
+  /* 0 */ @js.native
+  object UNBOUNDED extends TopLevel[UNBOUNDED with Double]
+  
 }
 

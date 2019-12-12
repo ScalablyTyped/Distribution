@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.read
+import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.readWrite
+import typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AudioBufferAccessMode extends js.Object {
   @js.native
   sealed trait write extends AudioBufferAccessMode
   
-  /* 0 */ val read: typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.read with Double = js.native
-  /* 1 */ val readWrite: typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.readWrite with Double = js.native
-  /* 2 */ val write: typings.winrtDashUwp.Windows.Media.AudioBufferAccessMode.write with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioBufferAccessMode with Double] = js.native
+  /* 0 */ @js.native
+  object read extends TopLevel[read with Double]
+  
+  /* 1 */ @js.native
+  object readWrite extends TopLevel[readWrite with Double]
+  
+  /* 2 */ @js.native
+  object write extends TopLevel[write with Double]
+  
 }
 

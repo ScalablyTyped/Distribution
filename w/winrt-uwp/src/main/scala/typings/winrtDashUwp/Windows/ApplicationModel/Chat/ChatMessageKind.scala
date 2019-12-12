@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.fileTransferRequest
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.joinedConversation
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.leftConversation
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantJoinedConversation
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantLeftConversation
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.standard
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.transportCustom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object ChatMessageKind extends js.Object {
   @js.native
   sealed trait transportCustom extends ChatMessageKind
   
-  /* 1 */ val fileTransferRequest: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.fileTransferRequest with Double = js.native
-  /* 3 */ val joinedConversation: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.joinedConversation with Double = js.native
-  /* 4 */ val leftConversation: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.leftConversation with Double = js.native
-  /* 5 */ val otherParticipantJoinedConversation: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantJoinedConversation with Double = js.native
-  /* 6 */ val otherParticipantLeftConversation: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.otherParticipantLeftConversation with Double = js.native
-  /* 0 */ val standard: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.standard with Double = js.native
-  /* 2 */ val transportCustom: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageKind.transportCustom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatMessageKind with Double] = js.native
+  /* 1 */ @js.native
+  object fileTransferRequest extends TopLevel[fileTransferRequest with Double]
+  
+  /* 3 */ @js.native
+  object joinedConversation extends TopLevel[joinedConversation with Double]
+  
+  /* 4 */ @js.native
+  object leftConversation extends TopLevel[leftConversation with Double]
+  
+  /* 5 */ @js.native
+  object otherParticipantJoinedConversation extends TopLevel[otherParticipantJoinedConversation with Double]
+  
+  /* 6 */ @js.native
+  object otherParticipantLeftConversation extends TopLevel[otherParticipantLeftConversation with Double]
+  
+  /* 0 */ @js.native
+  object standard extends TopLevel[standard with Double]
+  
+  /* 2 */ @js.native
+  object transportCustom extends TopLevel[transportCustom with Double]
+  
 }
 

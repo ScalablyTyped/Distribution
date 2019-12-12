@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Add
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Delete
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Undelete
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object AuditAction extends js.Object {
   @js.native
   sealed trait Update extends AuditAction
   
-  /* 1 */ val Add: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Add with Double = js.native
-  /* 3 */ val Delete: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Delete with Double = js.native
-  /* 4 */ val Undelete: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Undelete with Double = js.native
-  /* 2 */ val Update: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AuditAction.Update with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AuditAction with Double] = js.native
+  /* 1 */ @js.native
+  object Add extends TopLevel[Add with Double]
+  
+  /* 3 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 4 */ @js.native
+  object Undelete extends TopLevel[Undelete with Double]
+  
+  /* 2 */ @js.native
+  object Update extends TopLevel[Update with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.Extension.Dts
+import typings.typescript.typescriptMod.Extension.Js
+import typings.typescript.typescriptMod.Extension.Json
+import typings.typescript.typescriptMod.Extension.Jsx
+import typings.typescript.typescriptMod.Extension.Ts
+import typings.typescript.typescriptMod.Extension.TsBuildInfo
+import typings.typescript.typescriptMod.Extension.Tsx
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Extension extends js.Object {
   @js.native
   sealed trait Tsx extends Extension
   
-  /* ".d.ts" */ val Dts: typings.typescript.typescriptMod.Extension.Dts with String = js.native
-  /* ".js" */ val Js: typings.typescript.typescriptMod.Extension.Js with String = js.native
-  /* ".json" */ val Json: typings.typescript.typescriptMod.Extension.Json with String = js.native
-  /* ".jsx" */ val Jsx: typings.typescript.typescriptMod.Extension.Jsx with String = js.native
-  /* ".ts" */ val Ts: typings.typescript.typescriptMod.Extension.Ts with String = js.native
-  /* ".tsbuildinfo" */ val TsBuildInfo: typings.typescript.typescriptMod.Extension.TsBuildInfo with String = js.native
-  /* ".tsx" */ val Tsx: typings.typescript.typescriptMod.Extension.Tsx with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Extension with String] = js.native
+  /* ".d.ts" */ @js.native
+  object Dts extends TopLevel[Dts with String]
+  
+  /* ".js" */ @js.native
+  object Js extends TopLevel[Js with String]
+  
+  /* ".json" */ @js.native
+  object Json extends TopLevel[Json with String]
+  
+  /* ".jsx" */ @js.native
+  object Jsx extends TopLevel[Jsx with String]
+  
+  /* ".ts" */ @js.native
+  object Ts extends TopLevel[Ts with String]
+  
+  /* ".tsbuildinfo" */ @js.native
+  object TsBuildInfo extends TopLevel[TsBuildInfo with String]
+  
+  /* ".tsx" */ @js.native
+  object Tsx extends TopLevel[Tsx with String]
+  
 }
 

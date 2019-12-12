@@ -1,5 +1,9 @@
 package typings.androiduix.android.graphics.Paint
 
+import org.scalablytyped.runtime.TopLevel
+import typings.androiduix.android.graphics.Paint.Join.BEVEL
+import typings.androiduix.android.graphics.Paint.Join.MITER
+import typings.androiduix.android.graphics.Paint.Join.ROUND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Join extends js.Object {
   @js.native
   sealed trait ROUND extends Join
   
-  /* 2 */ val BEVEL: typings.androiduix.android.graphics.Paint.Join.BEVEL with Double = js.native
-  /* 0 */ val MITER: typings.androiduix.android.graphics.Paint.Join.MITER with Double = js.native
-  /* 1 */ val ROUND: typings.androiduix.android.graphics.Paint.Join.ROUND with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Join with Double] = js.native
+  /* 2 */ @js.native
+  object BEVEL extends TopLevel[BEVEL with Double]
+  
+  /* 0 */ @js.native
+  object MITER extends TopLevel[MITER with Double]
+  
+  /* 1 */ @js.native
+  object ROUND extends TopLevel[ROUND with Double]
+  
 }
 

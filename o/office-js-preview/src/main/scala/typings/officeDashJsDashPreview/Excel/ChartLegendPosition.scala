@@ -1,5 +1,13 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.bottom
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.corner
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.custom
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.invalid
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.left
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.right
+import typings.officeDashJsDashPreview.Excel.ChartLegendPosition.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object ChartLegendPosition extends js.Object {
   @js.native
   sealed trait top extends ChartLegendPosition
   
-  /* "Bottom" */ val bottom: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.bottom with String = js.native
-  /* "Corner" */ val corner: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.corner with String = js.native
-  /* "Custom" */ val custom: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.custom with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.invalid with String = js.native
-  /* "Left" */ val left: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.right with String = js.native
-  /* "Top" */ val top: typings.officeDashJsDashPreview.Excel.ChartLegendPosition.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartLegendPosition with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Corner" */ @js.native
+  object corner extends TopLevel[corner with String]
+  
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

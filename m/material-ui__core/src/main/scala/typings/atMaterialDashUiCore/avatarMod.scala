@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.avatarAvatarMod.AvatarProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object avatarMod extends js.Object {
     def this(props: AvatarProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[AvatarProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[AvatarProps]]
+  
 }
 

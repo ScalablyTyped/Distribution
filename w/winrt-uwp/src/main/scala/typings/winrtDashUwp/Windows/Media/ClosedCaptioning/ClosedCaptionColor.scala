@@ -1,5 +1,15 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.black
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.blue
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.cyan
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.default
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.green
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.magenta
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.red
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.white
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +57,34 @@ object ClosedCaptionColor extends js.Object {
   @js.native
   sealed trait yellow extends ClosedCaptionColor
   
-  /* 2 */ val black: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.black with Double = js.native
-  /* 5 */ val blue: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.blue with Double = js.native
-  /* 8 */ val cyan: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.cyan with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.default with Double = js.native
-  /* 4 */ val green: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.green with Double = js.native
-  /* 7 */ val magenta: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.magenta with Double = js.native
-  /* 3 */ val red: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.red with Double = js.native
-  /* 1 */ val white: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.white with Double = js.native
-  /* 6 */ val yellow: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.yellow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClosedCaptionColor with Double] = js.native
+  /* 2 */ @js.native
+  object black extends TopLevel[black with Double]
+  
+  /* 5 */ @js.native
+  object blue extends TopLevel[blue with Double]
+  
+  /* 8 */ @js.native
+  object cyan extends TopLevel[cyan with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 4 */ @js.native
+  object green extends TopLevel[green with Double]
+  
+  /* 7 */ @js.native
+  object magenta extends TopLevel[magenta with Double]
+  
+  /* 3 */ @js.native
+  object red extends TopLevel[red with Double]
+  
+  /* 1 */ @js.native
+  object white extends TopLevel[white with Double]
+  
+  /* 6 */ @js.native
+  object yellow extends TopLevel[yellow with Double]
+  
 }
 

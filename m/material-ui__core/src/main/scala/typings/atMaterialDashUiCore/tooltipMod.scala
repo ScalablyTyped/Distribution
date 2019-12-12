@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.tooltipTooltipMod.TooltipProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object tooltipMod extends js.Object {
     def this(props: TooltipProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TooltipProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TooltipProps]]
+  
 }
 

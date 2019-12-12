@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "dialogflow"
-version := "0.12.2-0f7016"
+version := "0.12.2-a99788"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-f6bdfb",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-1047c6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

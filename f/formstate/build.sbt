@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formstate"
-version := "1.3.0-d9d82c"
+version := "1.3.0-cb086c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

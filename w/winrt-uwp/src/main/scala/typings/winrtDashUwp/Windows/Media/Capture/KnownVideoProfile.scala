@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.balancedVideoAndPhoto
+import typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.highQualityPhoto
+import typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.photoSequence
+import typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.videoConferencing
+import typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.videoRecording
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object KnownVideoProfile extends js.Object {
   @js.native
   sealed trait videoRecording extends KnownVideoProfile
   
-  /* 2 */ val balancedVideoAndPhoto: typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.balancedVideoAndPhoto with Double = js.native
-  /* 1 */ val highQualityPhoto: typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.highQualityPhoto with Double = js.native
-  /* 4 */ val photoSequence: typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.photoSequence with Double = js.native
-  /* 3 */ val videoConferencing: typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.videoConferencing with Double = js.native
-  /* 0 */ val videoRecording: typings.winrtDashUwp.Windows.Media.Capture.KnownVideoProfile.videoRecording with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KnownVideoProfile with Double] = js.native
+  /* 2 */ @js.native
+  object balancedVideoAndPhoto extends TopLevel[balancedVideoAndPhoto with Double]
+  
+  /* 1 */ @js.native
+  object highQualityPhoto extends TopLevel[highQualityPhoto with Double]
+  
+  /* 4 */ @js.native
+  object photoSequence extends TopLevel[photoSequence with Double]
+  
+  /* 3 */ @js.native
+  object videoConferencing extends TopLevel[videoConferencing with Double]
+  
+  /* 0 */ @js.native
+  object videoRecording extends TopLevel[videoRecording with Double]
+  
 }
 

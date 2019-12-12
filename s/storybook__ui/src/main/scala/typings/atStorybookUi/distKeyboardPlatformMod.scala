@@ -1,8 +1,13 @@
 package typings.atStorybookUi
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atStorybookUi.atStorybookUiNumbers.`false`
 import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem
+import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Linux
+import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Macintosh
+import typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Windows
 import typings.atStorybookUi.distKeyboardPlatformMod.Platform
+import typings.atStorybookUi.distKeyboardPlatformMod.Platform.Mac
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,11 +36,17 @@ object distKeyboardPlatformMod extends js.Object {
     @js.native
     sealed trait Windows extends OperatingSystem
     
-    /* 3 */ val Linux: typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Linux with Double = js.native
-    /* 2 */ val Macintosh: typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Macintosh with Double = js.native
-    /* 1 */ val Windows: typings.atStorybookUi.distKeyboardPlatformMod.OperatingSystem.Windows with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[OperatingSystem with Double] = js.native
+    /* 3 */ @js.native
+    object Linux extends TopLevel[Linux with Double]
+    
+    /* 2 */ @js.native
+    object Macintosh extends TopLevel[Macintosh with Double]
+    
+    /* 1 */ @js.native
+    object Windows extends TopLevel[Windows with Double]
+    
   }
   
   @js.native
@@ -49,11 +60,19 @@ object distKeyboardPlatformMod extends js.Object {
     @js.native
     sealed trait Windows extends Platform
     
-    /* 1 */ val Linux: typings.atStorybookUi.distKeyboardPlatformMod.Platform.Linux with Double = js.native
-    /* 0 */ val Mac: typings.atStorybookUi.distKeyboardPlatformMod.Platform.Mac with Double = js.native
-    /* 2 */ val Windows: typings.atStorybookUi.distKeyboardPlatformMod.Platform.Windows with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Platform with Double] = js.native
+    /* 1 */ @js.native
+    object Linux
+      extends TopLevel[typings.atStorybookUi.distKeyboardPlatformMod.Platform.Linux with Double]
+    
+    /* 0 */ @js.native
+    object Mac extends TopLevel[Mac with Double]
+    
+    /* 2 */ @js.native
+    object Windows
+      extends TopLevel[typings.atStorybookUi.distKeyboardPlatformMod.Platform.Windows with Double]
+    
   }
   
 }

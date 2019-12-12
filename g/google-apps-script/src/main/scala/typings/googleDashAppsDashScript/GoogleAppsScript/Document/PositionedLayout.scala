@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.ABOVE_TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_BOTH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_LEFT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.WRAP_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,12 +35,22 @@ object PositionedLayout extends js.Object {
   @js.native
   sealed trait WRAP_TEXT extends PositionedLayout
   
-  /* 0 */ val ABOVE_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.ABOVE_TEXT with Double = js.native
-  /* 1 */ val BREAK_BOTH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_BOTH with Double = js.native
-  /* 2 */ val BREAK_LEFT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_LEFT with Double = js.native
-  /* 3 */ val BREAK_RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.BREAK_RIGHT with Double = js.native
-  /* 4 */ val WRAP_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.PositionedLayout.WRAP_TEXT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PositionedLayout with Double] = js.native
+  /* 0 */ @js.native
+  object ABOVE_TEXT extends TopLevel[ABOVE_TEXT with Double]
+  
+  /* 1 */ @js.native
+  object BREAK_BOTH extends TopLevel[BREAK_BOTH with Double]
+  
+  /* 2 */ @js.native
+  object BREAK_LEFT extends TopLevel[BREAK_LEFT with Double]
+  
+  /* 3 */ @js.native
+  object BREAK_RIGHT extends TopLevel[BREAK_RIGHT with Double]
+  
+  /* 4 */ @js.native
+  object WRAP_TEXT extends TopLevel[WRAP_TEXT with Double]
+  
 }
 

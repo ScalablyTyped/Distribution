@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.AzureSubscription
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Chef
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Custom
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Generic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object ConnectedServiceKind extends js.Object {
   @js.native
   sealed trait Generic extends ConnectedServiceKind
   
-  /* 1 */ val AzureSubscription: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.AzureSubscription with Double = js.native
-  /* 2 */ val Chef: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Chef with Double = js.native
-  /* 0 */ val Custom: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Custom with Double = js.native
-  /* 3 */ val Generic: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ConnectedServiceKind.Generic with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConnectedServiceKind with Double] = js.native
+  /* 1 */ @js.native
+  object AzureSubscription extends TopLevel[AzureSubscription with Double]
+  
+  /* 2 */ @js.native
+  object Chef extends TopLevel[Chef with Double]
+  
+  /* 0 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 3 */ @js.native
+  object Generic extends TopLevel[Generic with Double]
+  
 }
 

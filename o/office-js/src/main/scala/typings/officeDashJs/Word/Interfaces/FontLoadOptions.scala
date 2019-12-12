@@ -10,30 +10,31 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: WordApi 1.1]
   */
+@js.native
 trait FontLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.undefined
+  var bold: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
     *
     * [Api set: WordApi 1.1]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var doubleStrikeThrough: js.UndefOr[Boolean] = js.undefined
+  var doubleStrikeThrough: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
@@ -41,88 +42,55 @@ trait FontLoadOptions extends js.Object {
     *
     * [Api set: WordApi 1.1]
     */
-  var highlightColor: js.UndefOr[Boolean] = js.undefined
+  var highlightColor: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.undefined
+  var italic: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that represents the name of the font.
     *
     * [Api set: WordApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that represents the font size in points.
     *
     * [Api set: WordApi 1.1]
     */
-  var size: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var strikeThrough: js.UndefOr[Boolean] = js.undefined
+  var strikeThrough: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var subscript: js.UndefOr[Boolean] = js.undefined
+  var subscript: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
     *
     * [Api set: WordApi 1.1]
     */
-  var superscript: js.UndefOr[Boolean] = js.undefined
+  var superscript: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
     *
     * [Api set: WordApi 1.1]
     */
-  var underline: js.UndefOr[Boolean] = js.undefined
-}
-
-object FontLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    doubleStrikeThrough: js.UndefOr[Boolean] = js.undefined,
-    highlightColor: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Boolean] = js.undefined,
-    strikeThrough: js.UndefOr[Boolean] = js.undefined,
-    subscript: js.UndefOr[Boolean] = js.undefined,
-    superscript: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined
-  ): FontLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleStrikeThrough)) __obj.updateDynamic("doubleStrikeThrough")(doubleStrikeThrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightColor)) __obj.updateDynamic("highlightColor")(highlightColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FontLoadOptions]
-  }
+  var underline: js.UndefOr[Boolean] = js.native
 }
 

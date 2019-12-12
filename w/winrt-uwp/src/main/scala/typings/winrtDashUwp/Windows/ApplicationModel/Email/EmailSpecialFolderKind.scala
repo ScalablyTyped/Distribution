@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.deletedItems
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.drafts
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.inbox
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.outbox
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.root
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.sent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object EmailSpecialFolderKind extends js.Object {
   @js.native
   sealed trait sent extends EmailSpecialFolderKind
   
-  /* 5 */ val deletedItems: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.deletedItems with Double = js.native
-  /* 4 */ val drafts: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.drafts with Double = js.native
-  /* 2 */ val inbox: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.inbox with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.none with Double = js.native
-  /* 3 */ val outbox: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.outbox with Double = js.native
-  /* 1 */ val root: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.root with Double = js.native
-  /* 6 */ val sent: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailSpecialFolderKind.sent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailSpecialFolderKind with Double] = js.native
+  /* 5 */ @js.native
+  object deletedItems extends TopLevel[deletedItems with Double]
+  
+  /* 4 */ @js.native
+  object drafts extends TopLevel[drafts with Double]
+  
+  /* 2 */ @js.native
+  object inbox extends TopLevel[inbox with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object outbox extends TopLevel[outbox with Double]
+  
+  /* 1 */ @js.native
+  object root extends TopLevel[root with Double]
+  
+  /* 6 */ @js.native
+  object sent extends TopLevel[sent with Double]
+  
 }
 

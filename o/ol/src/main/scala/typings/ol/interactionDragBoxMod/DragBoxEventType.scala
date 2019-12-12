@@ -1,5 +1,9 @@
 package typings.ol.interactionDragBoxMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXDRAG
+import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXEND
+import typings.ol.interactionDragBoxMod.DragBoxEventType.BOXSTART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object DragBoxEventType extends js.Object {
   @js.native
   sealed trait BOXSTART extends DragBoxEventType
   
-  /* "boxdrag" */ val BOXDRAG: typings.ol.interactionDragBoxMod.DragBoxEventType.BOXDRAG with String = js.native
-  /* "boxend" */ val BOXEND: typings.ol.interactionDragBoxMod.DragBoxEventType.BOXEND with String = js.native
-  /* "boxstart" */ val BOXSTART: typings.ol.interactionDragBoxMod.DragBoxEventType.BOXSTART with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DragBoxEventType with String] = js.native
+  /* "boxdrag" */ @js.native
+  object BOXDRAG extends TopLevel[BOXDRAG with String]
+  
+  /* "boxend" */ @js.native
+  object BOXEND extends TopLevel[BOXEND with String]
+  
+  /* "boxstart" */ @js.native
+  object BOXSTART extends TopLevel[BOXSTART with String]
+  
 }
 

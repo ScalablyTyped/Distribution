@@ -1,5 +1,13 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.AddFieldOptions.addFieldCheckDisplayName
+import typings.sharepoint.SP.AddFieldOptions.addFieldInternalNameHint
+import typings.sharepoint.SP.AddFieldOptions.addFieldToDefaultView
+import typings.sharepoint.SP.AddFieldOptions.addToAllContentTypes
+import typings.sharepoint.SP.AddFieldOptions.addToDefaultContentType
+import typings.sharepoint.SP.AddFieldOptions.addToNoContentType
+import typings.sharepoint.SP.AddFieldOptions.defaultValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object AddFieldOptions extends js.Object {
   @js.native
   sealed trait defaultValue extends AddFieldOptions
   
-  /* 6 */ val addFieldCheckDisplayName: typings.sharepoint.SP.AddFieldOptions.addFieldCheckDisplayName with Double = js.native
-  /* 4 */ val addFieldInternalNameHint: typings.sharepoint.SP.AddFieldOptions.addFieldInternalNameHint with Double = js.native
-  /* 5 */ val addFieldToDefaultView: typings.sharepoint.SP.AddFieldOptions.addFieldToDefaultView with Double = js.native
-  /* 3 */ val addToAllContentTypes: typings.sharepoint.SP.AddFieldOptions.addToAllContentTypes with Double = js.native
-  /* 1 */ val addToDefaultContentType: typings.sharepoint.SP.AddFieldOptions.addToDefaultContentType with Double = js.native
-  /* 2 */ val addToNoContentType: typings.sharepoint.SP.AddFieldOptions.addToNoContentType with Double = js.native
-  /* 0 */ val defaultValue: typings.sharepoint.SP.AddFieldOptions.defaultValue with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AddFieldOptions with Double] = js.native
+  /* 6 */ @js.native
+  object addFieldCheckDisplayName extends TopLevel[addFieldCheckDisplayName with Double]
+  
+  /* 4 */ @js.native
+  object addFieldInternalNameHint extends TopLevel[addFieldInternalNameHint with Double]
+  
+  /* 5 */ @js.native
+  object addFieldToDefaultView extends TopLevel[addFieldToDefaultView with Double]
+  
+  /* 3 */ @js.native
+  object addToAllContentTypes extends TopLevel[addToAllContentTypes with Double]
+  
+  /* 1 */ @js.native
+  object addToDefaultContentType extends TopLevel[addToDefaultContentType with Double]
+  
+  /* 2 */ @js.native
+  object addToNoContentType extends TopLevel[addToNoContentType with Double]
+  
+  /* 0 */ @js.native
+  object defaultValue extends TopLevel[defaultValue with Double]
+  
 }
 

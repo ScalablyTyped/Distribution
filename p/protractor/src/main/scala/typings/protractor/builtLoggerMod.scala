@@ -1,8 +1,17 @@
 package typings.protractor
 
+import org.scalablytyped.runtime.TopLevel
 import typings.protractor.builtConfigMod.Config
 import typings.protractor.builtLoggerMod.LogLevel
+import typings.protractor.builtLoggerMod.LogLevel.DEBUG
+import typings.protractor.builtLoggerMod.LogLevel.ERROR
+import typings.protractor.builtLoggerMod.LogLevel.INFO
+import typings.protractor.builtLoggerMod.LogLevel.WARN
 import typings.protractor.builtLoggerMod.WriteTo
+import typings.protractor.builtLoggerMod.WriteTo.BOTH
+import typings.protractor.builtLoggerMod.WriteTo.CONSOLE
+import typings.protractor.builtLoggerMod.WriteTo.FILE
+import typings.protractor.builtLoggerMod.WriteTo.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,12 +82,20 @@ object builtLoggerMod extends js.Object {
     @js.native
     sealed trait WARN extends LogLevel
     
-    /* 3 */ val DEBUG: typings.protractor.builtLoggerMod.LogLevel.DEBUG with Double = js.native
-    /* 0 */ val ERROR: typings.protractor.builtLoggerMod.LogLevel.ERROR with Double = js.native
-    /* 2 */ val INFO: typings.protractor.builtLoggerMod.LogLevel.INFO with Double = js.native
-    /* 1 */ val WARN: typings.protractor.builtLoggerMod.LogLevel.WARN with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    /* 3 */ @js.native
+    object DEBUG extends TopLevel[DEBUG with Double]
+    
+    /* 0 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 2 */ @js.native
+    object INFO extends TopLevel[INFO with Double]
+    
+    /* 1 */ @js.native
+    object WARN extends TopLevel[WARN with Double]
+    
   }
   
   /* static members */
@@ -144,12 +161,20 @@ object builtLoggerMod extends js.Object {
     @js.native
     sealed trait NONE extends WriteTo
     
-    /* 2 */ val BOTH: typings.protractor.builtLoggerMod.WriteTo.BOTH with Double = js.native
-    /* 0 */ val CONSOLE: typings.protractor.builtLoggerMod.WriteTo.CONSOLE with Double = js.native
-    /* 1 */ val FILE: typings.protractor.builtLoggerMod.WriteTo.FILE with Double = js.native
-    /* 3 */ val NONE: typings.protractor.builtLoggerMod.WriteTo.NONE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[WriteTo with Double] = js.native
+    /* 2 */ @js.native
+    object BOTH extends TopLevel[BOTH with Double]
+    
+    /* 0 */ @js.native
+    object CONSOLE extends TopLevel[CONSOLE with Double]
+    
+    /* 1 */ @js.native
+    object FILE extends TopLevel[FILE with Double]
+    
+    /* 3 */ @js.native
+    object NONE extends TopLevel[NONE with Double]
+    
   }
   
 }

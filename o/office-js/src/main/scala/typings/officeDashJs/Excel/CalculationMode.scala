@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.CalculationMode.automatic
+import typings.officeDashJs.Excel.CalculationMode.automaticExceptTables
+import typings.officeDashJs.Excel.CalculationMode.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object CalculationMode extends js.Object {
   @js.native
   sealed trait manual extends CalculationMode
   
-  /* "Automatic" */ val automatic: typings.officeDashJs.Excel.CalculationMode.automatic with String = js.native
-  /* "AutomaticExceptTables" */ val automaticExceptTables: typings.officeDashJs.Excel.CalculationMode.automaticExceptTables with String = js.native
-  /* "Manual" */ val manual: typings.officeDashJs.Excel.CalculationMode.manual with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CalculationMode with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "AutomaticExceptTables" */ @js.native
+  object automaticExceptTables extends TopLevel[automaticExceptTables with String]
+  
+  /* "Manual" */ @js.native
+  object manual extends TopLevel[manual with String]
+  
 }
 

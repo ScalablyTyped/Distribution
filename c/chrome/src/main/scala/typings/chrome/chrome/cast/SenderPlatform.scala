@@ -1,5 +1,9 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.SenderPlatform.ANDROID
+import typings.chrome.chrome.cast.SenderPlatform.CHROME
+import typings.chrome.chrome.cast.SenderPlatform.IOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SenderPlatform extends js.Object {
   @js.native
   sealed trait IOS extends SenderPlatform
   
-  /* "android" */ val ANDROID: typings.chrome.chrome.cast.SenderPlatform.ANDROID with String = js.native
-  /* "chrome" */ val CHROME: typings.chrome.chrome.cast.SenderPlatform.CHROME with String = js.native
-  /* "ios" */ val IOS: typings.chrome.chrome.cast.SenderPlatform.IOS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SenderPlatform with String] = js.native
+  /* "android" */ @js.native
+  object ANDROID extends TopLevel[ANDROID with String]
+  
+  /* "chrome" */ @js.native
+  object CHROME extends TopLevel[CHROME with String]
+  
+  /* "ios" */ @js.native
+  object IOS extends TopLevel[IOS with String]
+  
 }
 

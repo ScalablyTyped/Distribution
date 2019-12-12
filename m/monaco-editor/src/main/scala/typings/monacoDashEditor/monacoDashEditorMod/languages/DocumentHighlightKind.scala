@@ -1,5 +1,9 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Read
+import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Text
+import typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object DocumentHighlightKind extends js.Object {
   @js.native
   sealed trait Write extends DocumentHighlightKind
   
-  /* 1 */ val Read: typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Read with Double = js.native
-  /* 0 */ val Text: typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Text with Double = js.native
-  /* 2 */ val Write: typings.monacoDashEditor.monacoDashEditorMod.languages.DocumentHighlightKind.Write with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentHighlightKind with Double] = js.native
+  /* 1 */ @js.native
+  object Read extends TopLevel[Read with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 2 */ @js.native
+  object Write extends TopLevel[Write with Double]
+  
 }
 

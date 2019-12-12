@@ -1,5 +1,14 @@
 package typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.currentContext
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.formSheet
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.fullScreen
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.none
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overCurrentContext
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overFullScreen
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.pageSheet
+import typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.popOver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object OptionsModalPresentationStyle extends js.Object {
   @js.native
   sealed trait popOver extends OptionsModalPresentationStyle
   
-  /* "currentContext" */ val currentContext: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.currentContext with String = js.native
-  /* "formSheet" */ val formSheet: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.formSheet with String = js.native
-  /* "fullScreen" */ val fullScreen: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.fullScreen with String = js.native
-  /* "none" */ val none: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.none with String = js.native
-  /* "overCurrentContext" */ val overCurrentContext: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overCurrentContext with String = js.native
-  /* "overFullScreen" */ val overFullScreen: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.overFullScreen with String = js.native
-  /* "pageSheet" */ val pageSheet: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.pageSheet with String = js.native
-  /* "popOver" */ val popOver: typings.reactDashNativeDashNavigation.libDistInterfacesOptionsMod.OptionsModalPresentationStyle.popOver with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OptionsModalPresentationStyle with String] = js.native
+  /* "currentContext" */ @js.native
+  object currentContext extends TopLevel[currentContext with String]
+  
+  /* "formSheet" */ @js.native
+  object formSheet extends TopLevel[formSheet with String]
+  
+  /* "fullScreen" */ @js.native
+  object fullScreen extends TopLevel[fullScreen with String]
+  
+  /* "none" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "overCurrentContext" */ @js.native
+  object overCurrentContext extends TopLevel[overCurrentContext with String]
+  
+  /* "overFullScreen" */ @js.native
+  object overFullScreen extends TopLevel[overFullScreen with String]
+  
+  /* "pageSheet" */ @js.native
+  object pageSheet extends TopLevel[pageSheet with String]
+  
+  /* "popOver" */ @js.native
+  object popOver extends TopLevel[popOver with String]
+  
 }
 

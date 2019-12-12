@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.Default
+import typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.NewTab
+import typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object PrintOptions extends js.Object {
   @js.native
   sealed trait None extends PrintOptions
   
-  /* 0 */ val Default: typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.Default with Double = js.native
-  /* 1 */ val NewTab: typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.NewTab with Double = js.native
-  /* 2 */ val None: typings.ejDotWebDotAll.ej.ReportViewer.PrintOptions.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintOptions with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object NewTab extends TopLevel[NewTab with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

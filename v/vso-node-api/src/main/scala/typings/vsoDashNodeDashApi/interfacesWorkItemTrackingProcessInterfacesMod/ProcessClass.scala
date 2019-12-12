@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.Custom
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.Derived
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ProcessClass extends js.Object {
   @js.native
   sealed trait System extends ProcessClass
   
-  /* 2 */ val Custom: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.Custom with Double = js.native
-  /* 1 */ val Derived: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.Derived with Double = js.native
-  /* 0 */ val System: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.ProcessClass.System with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessClass with Double] = js.native
+  /* 2 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 1 */ @js.native
+  object Derived extends TopLevel[Derived with Double]
+  
+  /* 0 */ @js.native
+  object System extends TopLevel[System with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.ejDotWebDotAll.ej.Ribbon
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +19,15 @@ object CustomItemType extends js.Object {
   @js.native
   sealed trait Menu extends CustomItemType
   
-  /* 0 */ val Button: typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Button with Double = js.native
-  /* 1 */ val Menu: typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Menu with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomItemType with Double] = js.native
+  /* 0 */ @js.native
+  object Button
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Button with Double]
+  
+  /* 1 */ @js.native
+  object Menu
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.CustomItemType.Menu with Double]
+  
 }
 

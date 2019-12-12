@@ -1,7 +1,13 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.CRITICAL
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.ERROR
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.INFO
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.SEVERITY_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.WARNING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -124,13 +130,23 @@ object ValidationError extends js.Object {
     @js.native
     sealed trait WARNING extends Severity
     
-    /* 4 */ val CRITICAL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.CRITICAL with Double = js.native
-    /* 3 */ val ERROR: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.ERROR with Double = js.native
-    /* 1 */ val INFO: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.INFO with Double = js.native
-    /* 0 */ val SEVERITY_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.SEVERITY_UNSPECIFIED with Double = js.native
-    /* 2 */ val WARNING: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.WARNING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Severity with Double] = js.native
+    /* 4 */ @js.native
+    object CRITICAL extends TopLevel[CRITICAL with Double]
+    
+    /* 3 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 1 */ @js.native
+    object INFO extends TopLevel[INFO with Double]
+    
+    /* 0 */ @js.native
+    object SEVERITY_UNSPECIFIED extends TopLevel[SEVERITY_UNSPECIFIED with Double]
+    
+    /* 2 */ @js.native
+    object WARNING extends TopLevel[WARNING with Double]
+    
   }
   
 }

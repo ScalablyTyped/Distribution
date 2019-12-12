@@ -1,5 +1,197 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.BorderLineStyle.Apples
+import typings.devexpressDashWeb.BorderLineStyle.ArchedScallops
+import typings.devexpressDashWeb.BorderLineStyle.BabyPacifier
+import typings.devexpressDashWeb.BorderLineStyle.BabyRattle
+import typings.devexpressDashWeb.BorderLineStyle.Balloons3Colors
+import typings.devexpressDashWeb.BorderLineStyle.BalloonsHotAir
+import typings.devexpressDashWeb.BorderLineStyle.BasicBlackDashes
+import typings.devexpressDashWeb.BorderLineStyle.BasicBlackDots
+import typings.devexpressDashWeb.BorderLineStyle.BasicBlackSquares
+import typings.devexpressDashWeb.BorderLineStyle.BasicThinLines
+import typings.devexpressDashWeb.BorderLineStyle.BasicWhiteDashes
+import typings.devexpressDashWeb.BorderLineStyle.BasicWhiteDots
+import typings.devexpressDashWeb.BorderLineStyle.BasicWhiteSquares
+import typings.devexpressDashWeb.BorderLineStyle.BasicWideInline
+import typings.devexpressDashWeb.BorderLineStyle.BasicWideMidline
+import typings.devexpressDashWeb.BorderLineStyle.BasicWideOutline
+import typings.devexpressDashWeb.BorderLineStyle.Bats
+import typings.devexpressDashWeb.BorderLineStyle.Birds
+import typings.devexpressDashWeb.BorderLineStyle.BirdsFlight
+import typings.devexpressDashWeb.BorderLineStyle.Cabins
+import typings.devexpressDashWeb.BorderLineStyle.CakeSlice
+import typings.devexpressDashWeb.BorderLineStyle.CandyCorn
+import typings.devexpressDashWeb.BorderLineStyle.CelticKnotwork
+import typings.devexpressDashWeb.BorderLineStyle.CertificateBanner
+import typings.devexpressDashWeb.BorderLineStyle.ChainLink
+import typings.devexpressDashWeb.BorderLineStyle.ChampagneBottle
+import typings.devexpressDashWeb.BorderLineStyle.CheckedBarBlack
+import typings.devexpressDashWeb.BorderLineStyle.CheckedBarColor
+import typings.devexpressDashWeb.BorderLineStyle.Checkered
+import typings.devexpressDashWeb.BorderLineStyle.ChristmasTree
+import typings.devexpressDashWeb.BorderLineStyle.CirclesLines
+import typings.devexpressDashWeb.BorderLineStyle.CirclesRectangles
+import typings.devexpressDashWeb.BorderLineStyle.ClassicalWave
+import typings.devexpressDashWeb.BorderLineStyle.Clocks
+import typings.devexpressDashWeb.BorderLineStyle.Compass
+import typings.devexpressDashWeb.BorderLineStyle.Confetti
+import typings.devexpressDashWeb.BorderLineStyle.ConfettiGrays
+import typings.devexpressDashWeb.BorderLineStyle.ConfettiOutline
+import typings.devexpressDashWeb.BorderLineStyle.ConfettiStreamers
+import typings.devexpressDashWeb.BorderLineStyle.ConfettiWhite
+import typings.devexpressDashWeb.BorderLineStyle.CornerTriangles
+import typings.devexpressDashWeb.BorderLineStyle.CouponCutoutDashes
+import typings.devexpressDashWeb.BorderLineStyle.CouponCutoutDots
+import typings.devexpressDashWeb.BorderLineStyle.CrazyMaze
+import typings.devexpressDashWeb.BorderLineStyle.CreaturesButterfly
+import typings.devexpressDashWeb.BorderLineStyle.CreaturesFish
+import typings.devexpressDashWeb.BorderLineStyle.CreaturesInsects
+import typings.devexpressDashWeb.BorderLineStyle.CreaturesLadyBug
+import typings.devexpressDashWeb.BorderLineStyle.CrossStitch
+import typings.devexpressDashWeb.BorderLineStyle.Cup
+import typings.devexpressDashWeb.BorderLineStyle.DashDotStroked
+import typings.devexpressDashWeb.BorderLineStyle.DashSmallGap
+import typings.devexpressDashWeb.BorderLineStyle.Dashed
+import typings.devexpressDashWeb.BorderLineStyle.DecoArch
+import typings.devexpressDashWeb.BorderLineStyle.DecoArchColor
+import typings.devexpressDashWeb.BorderLineStyle.DecoBlocks
+import typings.devexpressDashWeb.BorderLineStyle.DiamondsGray
+import typings.devexpressDashWeb.BorderLineStyle.DotDash
+import typings.devexpressDashWeb.BorderLineStyle.DotDotDash
+import typings.devexpressDashWeb.BorderLineStyle.Dotted
+import typings.devexpressDashWeb.BorderLineStyle.Double
+import typings.devexpressDashWeb.BorderLineStyle.DoubleD
+import typings.devexpressDashWeb.BorderLineStyle.DoubleDiamonds
+import typings.devexpressDashWeb.BorderLineStyle.DoubleWave
+import typings.devexpressDashWeb.BorderLineStyle.Earth1
+import typings.devexpressDashWeb.BorderLineStyle.Earth2
+import typings.devexpressDashWeb.BorderLineStyle.EclipsingSquares1
+import typings.devexpressDashWeb.BorderLineStyle.EclipsingSquares2
+import typings.devexpressDashWeb.BorderLineStyle.EggsBlack
+import typings.devexpressDashWeb.BorderLineStyle.Fans
+import typings.devexpressDashWeb.BorderLineStyle.Film
+import typings.devexpressDashWeb.BorderLineStyle.Firecrackers
+import typings.devexpressDashWeb.BorderLineStyle.FlowersBlockPrint
+import typings.devexpressDashWeb.BorderLineStyle.FlowersDaisies
+import typings.devexpressDashWeb.BorderLineStyle.FlowersModern1
+import typings.devexpressDashWeb.BorderLineStyle.FlowersModern2
+import typings.devexpressDashWeb.BorderLineStyle.FlowersPansy
+import typings.devexpressDashWeb.BorderLineStyle.FlowersRedRose
+import typings.devexpressDashWeb.BorderLineStyle.FlowersRoses
+import typings.devexpressDashWeb.BorderLineStyle.FlowersTeacup
+import typings.devexpressDashWeb.BorderLineStyle.FlowersTiny
+import typings.devexpressDashWeb.BorderLineStyle.Gems
+import typings.devexpressDashWeb.BorderLineStyle.GingerbreadMan
+import typings.devexpressDashWeb.BorderLineStyle.Gradient
+import typings.devexpressDashWeb.BorderLineStyle.Handmade1
+import typings.devexpressDashWeb.BorderLineStyle.Handmade2
+import typings.devexpressDashWeb.BorderLineStyle.HeartBalloon
+import typings.devexpressDashWeb.BorderLineStyle.HeartGray
+import typings.devexpressDashWeb.BorderLineStyle.Hearts
+import typings.devexpressDashWeb.BorderLineStyle.HeebieJeebies
+import typings.devexpressDashWeb.BorderLineStyle.Holly
+import typings.devexpressDashWeb.BorderLineStyle.HouseFunky
+import typings.devexpressDashWeb.BorderLineStyle.Hypnotic
+import typings.devexpressDashWeb.BorderLineStyle.IceCreamCones
+import typings.devexpressDashWeb.BorderLineStyle.Inset
+import typings.devexpressDashWeb.BorderLineStyle.LightBulb
+import typings.devexpressDashWeb.BorderLineStyle.Lightning1
+import typings.devexpressDashWeb.BorderLineStyle.Lightning2
+import typings.devexpressDashWeb.BorderLineStyle.MapPins
+import typings.devexpressDashWeb.BorderLineStyle.MapleLeaf
+import typings.devexpressDashWeb.BorderLineStyle.MapleMuffins
+import typings.devexpressDashWeb.BorderLineStyle.Marquee
+import typings.devexpressDashWeb.BorderLineStyle.MarqueeToothed
+import typings.devexpressDashWeb.BorderLineStyle.Moons
+import typings.devexpressDashWeb.BorderLineStyle.Mosaic
+import typings.devexpressDashWeb.BorderLineStyle.MusicNotes
+import typings.devexpressDashWeb.BorderLineStyle.Nil
+import typings.devexpressDashWeb.BorderLineStyle.None
+import typings.devexpressDashWeb.BorderLineStyle.Northwest
+import typings.devexpressDashWeb.BorderLineStyle.Outset
+import typings.devexpressDashWeb.BorderLineStyle.Ovals
+import typings.devexpressDashWeb.BorderLineStyle.Packages
+import typings.devexpressDashWeb.BorderLineStyle.PalmsBlack
+import typings.devexpressDashWeb.BorderLineStyle.PalmsColor
+import typings.devexpressDashWeb.BorderLineStyle.PaperClips
+import typings.devexpressDashWeb.BorderLineStyle.Papyrus
+import typings.devexpressDashWeb.BorderLineStyle.PartyFavor
+import typings.devexpressDashWeb.BorderLineStyle.PartyGlass
+import typings.devexpressDashWeb.BorderLineStyle.Pencils
+import typings.devexpressDashWeb.BorderLineStyle.People
+import typings.devexpressDashWeb.BorderLineStyle.PeopleHats
+import typings.devexpressDashWeb.BorderLineStyle.PeopleWaving
+import typings.devexpressDashWeb.BorderLineStyle.Poinsettias
+import typings.devexpressDashWeb.BorderLineStyle.PostageStamp
+import typings.devexpressDashWeb.BorderLineStyle.Pumpkin1
+import typings.devexpressDashWeb.BorderLineStyle.PushPinNote1
+import typings.devexpressDashWeb.BorderLineStyle.PushPinNote2
+import typings.devexpressDashWeb.BorderLineStyle.Pyramids
+import typings.devexpressDashWeb.BorderLineStyle.PyramidsAbove
+import typings.devexpressDashWeb.BorderLineStyle.Quadrants
+import typings.devexpressDashWeb.BorderLineStyle.Rings
+import typings.devexpressDashWeb.BorderLineStyle.Safari
+import typings.devexpressDashWeb.BorderLineStyle.Sawtooth
+import typings.devexpressDashWeb.BorderLineStyle.SawtoothGray
+import typings.devexpressDashWeb.BorderLineStyle.ScaredCat
+import typings.devexpressDashWeb.BorderLineStyle.Seattle
+import typings.devexpressDashWeb.BorderLineStyle.ShadowedSquares
+import typings.devexpressDashWeb.BorderLineStyle.SharksTeeth
+import typings.devexpressDashWeb.BorderLineStyle.ShorebirdTracks
+import typings.devexpressDashWeb.BorderLineStyle.Single
+import typings.devexpressDashWeb.BorderLineStyle.Skyrocket
+import typings.devexpressDashWeb.BorderLineStyle.SnowflakeFancy
+import typings.devexpressDashWeb.BorderLineStyle.Snowflakes
+import typings.devexpressDashWeb.BorderLineStyle.Sombrero
+import typings.devexpressDashWeb.BorderLineStyle.Southwest
+import typings.devexpressDashWeb.BorderLineStyle.Stars
+import typings.devexpressDashWeb.BorderLineStyle.Stars3d
+import typings.devexpressDashWeb.BorderLineStyle.StarsBlack
+import typings.devexpressDashWeb.BorderLineStyle.StarsShadowed
+import typings.devexpressDashWeb.BorderLineStyle.StarsTop
+import typings.devexpressDashWeb.BorderLineStyle.Sun
+import typings.devexpressDashWeb.BorderLineStyle.Swirligig
+import typings.devexpressDashWeb.BorderLineStyle.Thick
+import typings.devexpressDashWeb.BorderLineStyle.ThickThinLargeGap
+import typings.devexpressDashWeb.BorderLineStyle.ThickThinMediumGap
+import typings.devexpressDashWeb.BorderLineStyle.ThickThinSmallGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickLargeGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickMediumGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickSmallGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickThinLargeGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickThinMediumGap
+import typings.devexpressDashWeb.BorderLineStyle.ThinThickThinSmallGap
+import typings.devexpressDashWeb.BorderLineStyle.ThreeDEmboss
+import typings.devexpressDashWeb.BorderLineStyle.ThreeDEngrave
+import typings.devexpressDashWeb.BorderLineStyle.TornPaper
+import typings.devexpressDashWeb.BorderLineStyle.TornPaperBlack
+import typings.devexpressDashWeb.BorderLineStyle.Trees
+import typings.devexpressDashWeb.BorderLineStyle.TriangleParty
+import typings.devexpressDashWeb.BorderLineStyle.Triangles
+import typings.devexpressDashWeb.BorderLineStyle.Tribal1
+import typings.devexpressDashWeb.BorderLineStyle.Tribal2
+import typings.devexpressDashWeb.BorderLineStyle.Tribal3
+import typings.devexpressDashWeb.BorderLineStyle.Tribal4
+import typings.devexpressDashWeb.BorderLineStyle.Tribal5
+import typings.devexpressDashWeb.BorderLineStyle.Tribal6
+import typings.devexpressDashWeb.BorderLineStyle.Triple
+import typings.devexpressDashWeb.BorderLineStyle.TwistedLines1
+import typings.devexpressDashWeb.BorderLineStyle.TwistedLines2
+import typings.devexpressDashWeb.BorderLineStyle.Vine
+import typings.devexpressDashWeb.BorderLineStyle.Wave
+import typings.devexpressDashWeb.BorderLineStyle.Waveline
+import typings.devexpressDashWeb.BorderLineStyle.WeavingAngles
+import typings.devexpressDashWeb.BorderLineStyle.WeavingBraid
+import typings.devexpressDashWeb.BorderLineStyle.WeavingRibbon
+import typings.devexpressDashWeb.BorderLineStyle.WeavingStrips
+import typings.devexpressDashWeb.BorderLineStyle.WhiteFlowers
+import typings.devexpressDashWeb.BorderLineStyle.Woodwork
+import typings.devexpressDashWeb.BorderLineStyle.XIllusions
+import typings.devexpressDashWeb.BorderLineStyle.ZanyTriangles
+import typings.devexpressDashWeb.BorderLineStyle.ZigZag
+import typings.devexpressDashWeb.BorderLineStyle.ZigZagStitch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1159,198 +1351,771 @@ object BorderLineStyle extends js.Object {
   @js.native
   sealed trait ZigZagStitch extends BorderLineStyle
   
-  /* 26 */ val Apples: typings.devexpressDashWeb.BorderLineStyle.Apples with scala.Double = js.native
-  /* 27 */ val ArchedScallops: typings.devexpressDashWeb.BorderLineStyle.ArchedScallops with scala.Double = js.native
-  /* 28 */ val BabyPacifier: typings.devexpressDashWeb.BorderLineStyle.BabyPacifier with scala.Double = js.native
-  /* 29 */ val BabyRattle: typings.devexpressDashWeb.BorderLineStyle.BabyRattle with scala.Double = js.native
-  /* 30 */ val Balloons3Colors: typings.devexpressDashWeb.BorderLineStyle.Balloons3Colors with scala.Double = js.native
-  /* 31 */ val BalloonsHotAir: typings.devexpressDashWeb.BorderLineStyle.BalloonsHotAir with scala.Double = js.native
-  /* 32 */ val BasicBlackDashes: typings.devexpressDashWeb.BorderLineStyle.BasicBlackDashes with scala.Double = js.native
-  /* 33 */ val BasicBlackDots: typings.devexpressDashWeb.BorderLineStyle.BasicBlackDots with scala.Double = js.native
-  /* 34 */ val BasicBlackSquares: typings.devexpressDashWeb.BorderLineStyle.BasicBlackSquares with scala.Double = js.native
-  /* 35 */ val BasicThinLines: typings.devexpressDashWeb.BorderLineStyle.BasicThinLines with scala.Double = js.native
-  /* 36 */ val BasicWhiteDashes: typings.devexpressDashWeb.BorderLineStyle.BasicWhiteDashes with scala.Double = js.native
-  /* 37 */ val BasicWhiteDots: typings.devexpressDashWeb.BorderLineStyle.BasicWhiteDots with scala.Double = js.native
-  /* 38 */ val BasicWhiteSquares: typings.devexpressDashWeb.BorderLineStyle.BasicWhiteSquares with scala.Double = js.native
-  /* 39 */ val BasicWideInline: typings.devexpressDashWeb.BorderLineStyle.BasicWideInline with scala.Double = js.native
-  /* 40 */ val BasicWideMidline: typings.devexpressDashWeb.BorderLineStyle.BasicWideMidline with scala.Double = js.native
-  /* 41 */ val BasicWideOutline: typings.devexpressDashWeb.BorderLineStyle.BasicWideOutline with scala.Double = js.native
-  /* 42 */ val Bats: typings.devexpressDashWeb.BorderLineStyle.Bats with scala.Double = js.native
-  /* 43 */ val Birds: typings.devexpressDashWeb.BorderLineStyle.Birds with scala.Double = js.native
-  /* 44 */ val BirdsFlight: typings.devexpressDashWeb.BorderLineStyle.BirdsFlight with scala.Double = js.native
-  /* 45 */ val Cabins: typings.devexpressDashWeb.BorderLineStyle.Cabins with scala.Double = js.native
-  /* 46 */ val CakeSlice: typings.devexpressDashWeb.BorderLineStyle.CakeSlice with scala.Double = js.native
-  /* 47 */ val CandyCorn: typings.devexpressDashWeb.BorderLineStyle.CandyCorn with scala.Double = js.native
-  /* 48 */ val CelticKnotwork: typings.devexpressDashWeb.BorderLineStyle.CelticKnotwork with scala.Double = js.native
-  /* 49 */ val CertificateBanner: typings.devexpressDashWeb.BorderLineStyle.CertificateBanner with scala.Double = js.native
-  /* 50 */ val ChainLink: typings.devexpressDashWeb.BorderLineStyle.ChainLink with scala.Double = js.native
-  /* 51 */ val ChampagneBottle: typings.devexpressDashWeb.BorderLineStyle.ChampagneBottle with scala.Double = js.native
-  /* 52 */ val CheckedBarBlack: typings.devexpressDashWeb.BorderLineStyle.CheckedBarBlack with scala.Double = js.native
-  /* 53 */ val CheckedBarColor: typings.devexpressDashWeb.BorderLineStyle.CheckedBarColor with scala.Double = js.native
-  /* 54 */ val Checkered: typings.devexpressDashWeb.BorderLineStyle.Checkered with scala.Double = js.native
-  /* 55 */ val ChristmasTree: typings.devexpressDashWeb.BorderLineStyle.ChristmasTree with scala.Double = js.native
-  /* 56 */ val CirclesLines: typings.devexpressDashWeb.BorderLineStyle.CirclesLines with scala.Double = js.native
-  /* 57 */ val CirclesRectangles: typings.devexpressDashWeb.BorderLineStyle.CirclesRectangles with scala.Double = js.native
-  /* 58 */ val ClassicalWave: typings.devexpressDashWeb.BorderLineStyle.ClassicalWave with scala.Double = js.native
-  /* 59 */ val Clocks: typings.devexpressDashWeb.BorderLineStyle.Clocks with scala.Double = js.native
-  /* 60 */ val Compass: typings.devexpressDashWeb.BorderLineStyle.Compass with scala.Double = js.native
-  /* 61 */ val Confetti: typings.devexpressDashWeb.BorderLineStyle.Confetti with scala.Double = js.native
-  /* 62 */ val ConfettiGrays: typings.devexpressDashWeb.BorderLineStyle.ConfettiGrays with scala.Double = js.native
-  /* 63 */ val ConfettiOutline: typings.devexpressDashWeb.BorderLineStyle.ConfettiOutline with scala.Double = js.native
-  /* 64 */ val ConfettiStreamers: typings.devexpressDashWeb.BorderLineStyle.ConfettiStreamers with scala.Double = js.native
-  /* 65 */ val ConfettiWhite: typings.devexpressDashWeb.BorderLineStyle.ConfettiWhite with scala.Double = js.native
-  /* 66 */ val CornerTriangles: typings.devexpressDashWeb.BorderLineStyle.CornerTriangles with scala.Double = js.native
-  /* 67 */ val CouponCutoutDashes: typings.devexpressDashWeb.BorderLineStyle.CouponCutoutDashes with scala.Double = js.native
-  /* 68 */ val CouponCutoutDots: typings.devexpressDashWeb.BorderLineStyle.CouponCutoutDots with scala.Double = js.native
-  /* 69 */ val CrazyMaze: typings.devexpressDashWeb.BorderLineStyle.CrazyMaze with scala.Double = js.native
-  /* 70 */ val CreaturesButterfly: typings.devexpressDashWeb.BorderLineStyle.CreaturesButterfly with scala.Double = js.native
-  /* 71 */ val CreaturesFish: typings.devexpressDashWeb.BorderLineStyle.CreaturesFish with scala.Double = js.native
-  /* 72 */ val CreaturesInsects: typings.devexpressDashWeb.BorderLineStyle.CreaturesInsects with scala.Double = js.native
-  /* 73 */ val CreaturesLadyBug: typings.devexpressDashWeb.BorderLineStyle.CreaturesLadyBug with scala.Double = js.native
-  /* 74 */ val CrossStitch: typings.devexpressDashWeb.BorderLineStyle.CrossStitch with scala.Double = js.native
-  /* 75 */ val Cup: typings.devexpressDashWeb.BorderLineStyle.Cup with scala.Double = js.native
-  /* 21 */ val DashDotStroked: typings.devexpressDashWeb.BorderLineStyle.DashDotStroked with scala.Double = js.native
-  /* 20 */ val DashSmallGap: typings.devexpressDashWeb.BorderLineStyle.DashSmallGap with scala.Double = js.native
-  /* 5 */ val Dashed: typings.devexpressDashWeb.BorderLineStyle.Dashed with scala.Double = js.native
-  /* 76 */ val DecoArch: typings.devexpressDashWeb.BorderLineStyle.DecoArch with scala.Double = js.native
-  /* 77 */ val DecoArchColor: typings.devexpressDashWeb.BorderLineStyle.DecoArchColor with scala.Double = js.native
-  /* 78 */ val DecoBlocks: typings.devexpressDashWeb.BorderLineStyle.DecoBlocks with scala.Double = js.native
-  /* 79 */ val DiamondsGray: typings.devexpressDashWeb.BorderLineStyle.DiamondsGray with scala.Double = js.native
-  /* 6 */ val DotDash: typings.devexpressDashWeb.BorderLineStyle.DotDash with scala.Double = js.native
-  /* 7 */ val DotDotDash: typings.devexpressDashWeb.BorderLineStyle.DotDotDash with scala.Double = js.native
-  /* 4 */ val Dotted: typings.devexpressDashWeb.BorderLineStyle.Dotted with scala.Double = js.native
-  /* 3 */ val Double: typings.devexpressDashWeb.BorderLineStyle.Double with scala.Double = js.native
-  /* 80 */ val DoubleD: typings.devexpressDashWeb.BorderLineStyle.DoubleD with scala.Double = js.native
-  /* 81 */ val DoubleDiamonds: typings.devexpressDashWeb.BorderLineStyle.DoubleDiamonds with scala.Double = js.native
-  /* 19 */ val DoubleWave: typings.devexpressDashWeb.BorderLineStyle.DoubleWave with scala.Double = js.native
-  /* 82 */ val Earth1: typings.devexpressDashWeb.BorderLineStyle.Earth1 with scala.Double = js.native
-  /* 83 */ val Earth2: typings.devexpressDashWeb.BorderLineStyle.Earth2 with scala.Double = js.native
-  /* 84 */ val EclipsingSquares1: typings.devexpressDashWeb.BorderLineStyle.EclipsingSquares1 with scala.Double = js.native
-  /* 85 */ val EclipsingSquares2: typings.devexpressDashWeb.BorderLineStyle.EclipsingSquares2 with scala.Double = js.native
-  /* 86 */ val EggsBlack: typings.devexpressDashWeb.BorderLineStyle.EggsBlack with scala.Double = js.native
-  /* 87 */ val Fans: typings.devexpressDashWeb.BorderLineStyle.Fans with scala.Double = js.native
-  /* 88 */ val Film: typings.devexpressDashWeb.BorderLineStyle.Film with scala.Double = js.native
-  /* 89 */ val Firecrackers: typings.devexpressDashWeb.BorderLineStyle.Firecrackers with scala.Double = js.native
-  /* 90 */ val FlowersBlockPrint: typings.devexpressDashWeb.BorderLineStyle.FlowersBlockPrint with scala.Double = js.native
-  /* 91 */ val FlowersDaisies: typings.devexpressDashWeb.BorderLineStyle.FlowersDaisies with scala.Double = js.native
-  /* 92 */ val FlowersModern1: typings.devexpressDashWeb.BorderLineStyle.FlowersModern1 with scala.Double = js.native
-  /* 93 */ val FlowersModern2: typings.devexpressDashWeb.BorderLineStyle.FlowersModern2 with scala.Double = js.native
-  /* 94 */ val FlowersPansy: typings.devexpressDashWeb.BorderLineStyle.FlowersPansy with scala.Double = js.native
-  /* 95 */ val FlowersRedRose: typings.devexpressDashWeb.BorderLineStyle.FlowersRedRose with scala.Double = js.native
-  /* 96 */ val FlowersRoses: typings.devexpressDashWeb.BorderLineStyle.FlowersRoses with scala.Double = js.native
-  /* 97 */ val FlowersTeacup: typings.devexpressDashWeb.BorderLineStyle.FlowersTeacup with scala.Double = js.native
-  /* 98 */ val FlowersTiny: typings.devexpressDashWeb.BorderLineStyle.FlowersTiny with scala.Double = js.native
-  /* 99 */ val Gems: typings.devexpressDashWeb.BorderLineStyle.Gems with scala.Double = js.native
-  /* 100 */ val GingerbreadMan: typings.devexpressDashWeb.BorderLineStyle.GingerbreadMan with scala.Double = js.native
-  /* 101 */ val Gradient: typings.devexpressDashWeb.BorderLineStyle.Gradient with scala.Double = js.native
-  /* 102 */ val Handmade1: typings.devexpressDashWeb.BorderLineStyle.Handmade1 with scala.Double = js.native
-  /* 103 */ val Handmade2: typings.devexpressDashWeb.BorderLineStyle.Handmade2 with scala.Double = js.native
-  /* 104 */ val HeartBalloon: typings.devexpressDashWeb.BorderLineStyle.HeartBalloon with scala.Double = js.native
-  /* 105 */ val HeartGray: typings.devexpressDashWeb.BorderLineStyle.HeartGray with scala.Double = js.native
-  /* 106 */ val Hearts: typings.devexpressDashWeb.BorderLineStyle.Hearts with scala.Double = js.native
-  /* 107 */ val HeebieJeebies: typings.devexpressDashWeb.BorderLineStyle.HeebieJeebies with scala.Double = js.native
-  /* 108 */ val Holly: typings.devexpressDashWeb.BorderLineStyle.Holly with scala.Double = js.native
-  /* 109 */ val HouseFunky: typings.devexpressDashWeb.BorderLineStyle.HouseFunky with scala.Double = js.native
-  /* 110 */ val Hypnotic: typings.devexpressDashWeb.BorderLineStyle.Hypnotic with scala.Double = js.native
-  /* 111 */ val IceCreamCones: typings.devexpressDashWeb.BorderLineStyle.IceCreamCones with scala.Double = js.native
-  /* 25 */ val Inset: typings.devexpressDashWeb.BorderLineStyle.Inset with scala.Double = js.native
-  /* 112 */ val LightBulb: typings.devexpressDashWeb.BorderLineStyle.LightBulb with scala.Double = js.native
-  /* 113 */ val Lightning1: typings.devexpressDashWeb.BorderLineStyle.Lightning1 with scala.Double = js.native
-  /* 114 */ val Lightning2: typings.devexpressDashWeb.BorderLineStyle.Lightning2 with scala.Double = js.native
-  /* 117 */ val MapPins: typings.devexpressDashWeb.BorderLineStyle.MapPins with scala.Double = js.native
-  /* 115 */ val MapleLeaf: typings.devexpressDashWeb.BorderLineStyle.MapleLeaf with scala.Double = js.native
-  /* 116 */ val MapleMuffins: typings.devexpressDashWeb.BorderLineStyle.MapleMuffins with scala.Double = js.native
-  /* 118 */ val Marquee: typings.devexpressDashWeb.BorderLineStyle.Marquee with scala.Double = js.native
-  /* 119 */ val MarqueeToothed: typings.devexpressDashWeb.BorderLineStyle.MarqueeToothed with scala.Double = js.native
-  /* 120 */ val Moons: typings.devexpressDashWeb.BorderLineStyle.Moons with scala.Double = js.native
-  /* 121 */ val Mosaic: typings.devexpressDashWeb.BorderLineStyle.Mosaic with scala.Double = js.native
-  /* 122 */ val MusicNotes: typings.devexpressDashWeb.BorderLineStyle.MusicNotes with scala.Double = js.native
-  /* -1 */ val Nil: typings.devexpressDashWeb.BorderLineStyle.Nil with scala.Double = js.native
-  /* 0 */ val None: typings.devexpressDashWeb.BorderLineStyle.None with scala.Double = js.native
-  /* 123 */ val Northwest: typings.devexpressDashWeb.BorderLineStyle.Northwest with scala.Double = js.native
-  /* 24 */ val Outset: typings.devexpressDashWeb.BorderLineStyle.Outset with scala.Double = js.native
-  /* 124 */ val Ovals: typings.devexpressDashWeb.BorderLineStyle.Ovals with scala.Double = js.native
-  /* 125 */ val Packages: typings.devexpressDashWeb.BorderLineStyle.Packages with scala.Double = js.native
-  /* 126 */ val PalmsBlack: typings.devexpressDashWeb.BorderLineStyle.PalmsBlack with scala.Double = js.native
-  /* 127 */ val PalmsColor: typings.devexpressDashWeb.BorderLineStyle.PalmsColor with scala.Double = js.native
-  /* 128 */ val PaperClips: typings.devexpressDashWeb.BorderLineStyle.PaperClips with scala.Double = js.native
-  /* 129 */ val Papyrus: typings.devexpressDashWeb.BorderLineStyle.Papyrus with scala.Double = js.native
-  /* 130 */ val PartyFavor: typings.devexpressDashWeb.BorderLineStyle.PartyFavor with scala.Double = js.native
-  /* 131 */ val PartyGlass: typings.devexpressDashWeb.BorderLineStyle.PartyGlass with scala.Double = js.native
-  /* 132 */ val Pencils: typings.devexpressDashWeb.BorderLineStyle.Pencils with scala.Double = js.native
-  /* 133 */ val People: typings.devexpressDashWeb.BorderLineStyle.People with scala.Double = js.native
-  /* 134 */ val PeopleHats: typings.devexpressDashWeb.BorderLineStyle.PeopleHats with scala.Double = js.native
-  /* 135 */ val PeopleWaving: typings.devexpressDashWeb.BorderLineStyle.PeopleWaving with scala.Double = js.native
-  /* 136 */ val Poinsettias: typings.devexpressDashWeb.BorderLineStyle.Poinsettias with scala.Double = js.native
-  /* 137 */ val PostageStamp: typings.devexpressDashWeb.BorderLineStyle.PostageStamp with scala.Double = js.native
-  /* 138 */ val Pumpkin1: typings.devexpressDashWeb.BorderLineStyle.Pumpkin1 with scala.Double = js.native
-  /* 139 */ val PushPinNote1: typings.devexpressDashWeb.BorderLineStyle.PushPinNote1 with scala.Double = js.native
-  /* 140 */ val PushPinNote2: typings.devexpressDashWeb.BorderLineStyle.PushPinNote2 with scala.Double = js.native
-  /* 141 */ val Pyramids: typings.devexpressDashWeb.BorderLineStyle.Pyramids with scala.Double = js.native
-  /* 142 */ val PyramidsAbove: typings.devexpressDashWeb.BorderLineStyle.PyramidsAbove with scala.Double = js.native
-  /* 143 */ val Quadrants: typings.devexpressDashWeb.BorderLineStyle.Quadrants with scala.Double = js.native
-  /* 144 */ val Rings: typings.devexpressDashWeb.BorderLineStyle.Rings with scala.Double = js.native
-  /* 145 */ val Safari: typings.devexpressDashWeb.BorderLineStyle.Safari with scala.Double = js.native
-  /* 146 */ val Sawtooth: typings.devexpressDashWeb.BorderLineStyle.Sawtooth with scala.Double = js.native
-  /* 147 */ val SawtoothGray: typings.devexpressDashWeb.BorderLineStyle.SawtoothGray with scala.Double = js.native
-  /* 148 */ val ScaredCat: typings.devexpressDashWeb.BorderLineStyle.ScaredCat with scala.Double = js.native
-  /* 149 */ val Seattle: typings.devexpressDashWeb.BorderLineStyle.Seattle with scala.Double = js.native
-  /* 150 */ val ShadowedSquares: typings.devexpressDashWeb.BorderLineStyle.ShadowedSquares with scala.Double = js.native
-  /* 151 */ val SharksTeeth: typings.devexpressDashWeb.BorderLineStyle.SharksTeeth with scala.Double = js.native
-  /* 152 */ val ShorebirdTracks: typings.devexpressDashWeb.BorderLineStyle.ShorebirdTracks with scala.Double = js.native
-  /* 1 */ val Single: typings.devexpressDashWeb.BorderLineStyle.Single with scala.Double = js.native
-  /* 153 */ val Skyrocket: typings.devexpressDashWeb.BorderLineStyle.Skyrocket with scala.Double = js.native
-  /* 154 */ val SnowflakeFancy: typings.devexpressDashWeb.BorderLineStyle.SnowflakeFancy with scala.Double = js.native
-  /* 155 */ val Snowflakes: typings.devexpressDashWeb.BorderLineStyle.Snowflakes with scala.Double = js.native
-  /* 156 */ val Sombrero: typings.devexpressDashWeb.BorderLineStyle.Sombrero with scala.Double = js.native
-  /* 157 */ val Southwest: typings.devexpressDashWeb.BorderLineStyle.Southwest with scala.Double = js.native
-  /* 158 */ val Stars: typings.devexpressDashWeb.BorderLineStyle.Stars with scala.Double = js.native
-  /* 159 */ val Stars3d: typings.devexpressDashWeb.BorderLineStyle.Stars3d with scala.Double = js.native
-  /* 160 */ val StarsBlack: typings.devexpressDashWeb.BorderLineStyle.StarsBlack with scala.Double = js.native
-  /* 161 */ val StarsShadowed: typings.devexpressDashWeb.BorderLineStyle.StarsShadowed with scala.Double = js.native
-  /* 162 */ val StarsTop: typings.devexpressDashWeb.BorderLineStyle.StarsTop with scala.Double = js.native
-  /* 163 */ val Sun: typings.devexpressDashWeb.BorderLineStyle.Sun with scala.Double = js.native
-  /* 164 */ val Swirligig: typings.devexpressDashWeb.BorderLineStyle.Swirligig with scala.Double = js.native
-  /* 2 */ val Thick: typings.devexpressDashWeb.BorderLineStyle.Thick with scala.Double = js.native
-  /* 16 */ val ThickThinLargeGap: typings.devexpressDashWeb.BorderLineStyle.ThickThinLargeGap with scala.Double = js.native
-  /* 13 */ val ThickThinMediumGap: typings.devexpressDashWeb.BorderLineStyle.ThickThinMediumGap with scala.Double = js.native
-  /* 10 */ val ThickThinSmallGap: typings.devexpressDashWeb.BorderLineStyle.ThickThinSmallGap with scala.Double = js.native
-  /* 15 */ val ThinThickLargeGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickLargeGap with scala.Double = js.native
-  /* 12 */ val ThinThickMediumGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickMediumGap with scala.Double = js.native
-  /* 9 */ val ThinThickSmallGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickSmallGap with scala.Double = js.native
-  /* 17 */ val ThinThickThinLargeGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickThinLargeGap with scala.Double = js.native
-  /* 14 */ val ThinThickThinMediumGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickThinMediumGap with scala.Double = js.native
-  /* 11 */ val ThinThickThinSmallGap: typings.devexpressDashWeb.BorderLineStyle.ThinThickThinSmallGap with scala.Double = js.native
-  /* 22 */ val ThreeDEmboss: typings.devexpressDashWeb.BorderLineStyle.ThreeDEmboss with scala.Double = js.native
-  /* 23 */ val ThreeDEngrave: typings.devexpressDashWeb.BorderLineStyle.ThreeDEngrave with scala.Double = js.native
-  /* 165 */ val TornPaper: typings.devexpressDashWeb.BorderLineStyle.TornPaper with scala.Double = js.native
-  /* 166 */ val TornPaperBlack: typings.devexpressDashWeb.BorderLineStyle.TornPaperBlack with scala.Double = js.native
-  /* 167 */ val Trees: typings.devexpressDashWeb.BorderLineStyle.Trees with scala.Double = js.native
-  /* 168 */ val TriangleParty: typings.devexpressDashWeb.BorderLineStyle.TriangleParty with scala.Double = js.native
-  /* 169 */ val Triangles: typings.devexpressDashWeb.BorderLineStyle.Triangles with scala.Double = js.native
-  /* 170 */ val Tribal1: typings.devexpressDashWeb.BorderLineStyle.Tribal1 with scala.Double = js.native
-  /* 171 */ val Tribal2: typings.devexpressDashWeb.BorderLineStyle.Tribal2 with scala.Double = js.native
-  /* 172 */ val Tribal3: typings.devexpressDashWeb.BorderLineStyle.Tribal3 with scala.Double = js.native
-  /* 173 */ val Tribal4: typings.devexpressDashWeb.BorderLineStyle.Tribal4 with scala.Double = js.native
-  /* 174 */ val Tribal5: typings.devexpressDashWeb.BorderLineStyle.Tribal5 with scala.Double = js.native
-  /* 175 */ val Tribal6: typings.devexpressDashWeb.BorderLineStyle.Tribal6 with scala.Double = js.native
-  /* 8 */ val Triple: typings.devexpressDashWeb.BorderLineStyle.Triple with scala.Double = js.native
-  /* 176 */ val TwistedLines1: typings.devexpressDashWeb.BorderLineStyle.TwistedLines1 with scala.Double = js.native
-  /* 177 */ val TwistedLines2: typings.devexpressDashWeb.BorderLineStyle.TwistedLines2 with scala.Double = js.native
-  /* 178 */ val Vine: typings.devexpressDashWeb.BorderLineStyle.Vine with scala.Double = js.native
-  /* 18 */ val Wave: typings.devexpressDashWeb.BorderLineStyle.Wave with scala.Double = js.native
-  /* 179 */ val Waveline: typings.devexpressDashWeb.BorderLineStyle.Waveline with scala.Double = js.native
-  /* 180 */ val WeavingAngles: typings.devexpressDashWeb.BorderLineStyle.WeavingAngles with scala.Double = js.native
-  /* 181 */ val WeavingBraid: typings.devexpressDashWeb.BorderLineStyle.WeavingBraid with scala.Double = js.native
-  /* 182 */ val WeavingRibbon: typings.devexpressDashWeb.BorderLineStyle.WeavingRibbon with scala.Double = js.native
-  /* 183 */ val WeavingStrips: typings.devexpressDashWeb.BorderLineStyle.WeavingStrips with scala.Double = js.native
-  /* 184 */ val WhiteFlowers: typings.devexpressDashWeb.BorderLineStyle.WhiteFlowers with scala.Double = js.native
-  /* 185 */ val Woodwork: typings.devexpressDashWeb.BorderLineStyle.Woodwork with scala.Double = js.native
-  /* 186 */ val XIllusions: typings.devexpressDashWeb.BorderLineStyle.XIllusions with scala.Double = js.native
-  /* 187 */ val ZanyTriangles: typings.devexpressDashWeb.BorderLineStyle.ZanyTriangles with scala.Double = js.native
-  /* 188 */ val ZigZag: typings.devexpressDashWeb.BorderLineStyle.ZigZag with scala.Double = js.native
-  /* 189 */ val ZigZagStitch: typings.devexpressDashWeb.BorderLineStyle.ZigZagStitch with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[BorderLineStyle with scala.Double] = js.native
+  /* 26 */ @js.native
+  object Apples
+    extends TopLevel[Apples with scala.Double]
+  
+  /* 27 */ @js.native
+  object ArchedScallops
+    extends TopLevel[ArchedScallops with scala.Double]
+  
+  /* 28 */ @js.native
+  object BabyPacifier
+    extends TopLevel[BabyPacifier with scala.Double]
+  
+  /* 29 */ @js.native
+  object BabyRattle
+    extends TopLevel[BabyRattle with scala.Double]
+  
+  /* 30 */ @js.native
+  object Balloons3Colors
+    extends TopLevel[Balloons3Colors with scala.Double]
+  
+  /* 31 */ @js.native
+  object BalloonsHotAir
+    extends TopLevel[BalloonsHotAir with scala.Double]
+  
+  /* 32 */ @js.native
+  object BasicBlackDashes
+    extends TopLevel[BasicBlackDashes with scala.Double]
+  
+  /* 33 */ @js.native
+  object BasicBlackDots
+    extends TopLevel[BasicBlackDots with scala.Double]
+  
+  /* 34 */ @js.native
+  object BasicBlackSquares
+    extends TopLevel[BasicBlackSquares with scala.Double]
+  
+  /* 35 */ @js.native
+  object BasicThinLines
+    extends TopLevel[BasicThinLines with scala.Double]
+  
+  /* 36 */ @js.native
+  object BasicWhiteDashes
+    extends TopLevel[BasicWhiteDashes with scala.Double]
+  
+  /* 37 */ @js.native
+  object BasicWhiteDots
+    extends TopLevel[BasicWhiteDots with scala.Double]
+  
+  /* 38 */ @js.native
+  object BasicWhiteSquares
+    extends TopLevel[BasicWhiteSquares with scala.Double]
+  
+  /* 39 */ @js.native
+  object BasicWideInline
+    extends TopLevel[BasicWideInline with scala.Double]
+  
+  /* 40 */ @js.native
+  object BasicWideMidline
+    extends TopLevel[BasicWideMidline with scala.Double]
+  
+  /* 41 */ @js.native
+  object BasicWideOutline
+    extends TopLevel[BasicWideOutline with scala.Double]
+  
+  /* 42 */ @js.native
+  object Bats
+    extends TopLevel[Bats with scala.Double]
+  
+  /* 43 */ @js.native
+  object Birds
+    extends TopLevel[Birds with scala.Double]
+  
+  /* 44 */ @js.native
+  object BirdsFlight
+    extends TopLevel[BirdsFlight with scala.Double]
+  
+  /* 45 */ @js.native
+  object Cabins
+    extends TopLevel[Cabins with scala.Double]
+  
+  /* 46 */ @js.native
+  object CakeSlice
+    extends TopLevel[CakeSlice with scala.Double]
+  
+  /* 47 */ @js.native
+  object CandyCorn
+    extends TopLevel[CandyCorn with scala.Double]
+  
+  /* 48 */ @js.native
+  object CelticKnotwork
+    extends TopLevel[CelticKnotwork with scala.Double]
+  
+  /* 49 */ @js.native
+  object CertificateBanner
+    extends TopLevel[CertificateBanner with scala.Double]
+  
+  /* 50 */ @js.native
+  object ChainLink
+    extends TopLevel[ChainLink with scala.Double]
+  
+  /* 51 */ @js.native
+  object ChampagneBottle
+    extends TopLevel[ChampagneBottle with scala.Double]
+  
+  /* 52 */ @js.native
+  object CheckedBarBlack
+    extends TopLevel[CheckedBarBlack with scala.Double]
+  
+  /* 53 */ @js.native
+  object CheckedBarColor
+    extends TopLevel[CheckedBarColor with scala.Double]
+  
+  /* 54 */ @js.native
+  object Checkered
+    extends TopLevel[Checkered with scala.Double]
+  
+  /* 55 */ @js.native
+  object ChristmasTree
+    extends TopLevel[ChristmasTree with scala.Double]
+  
+  /* 56 */ @js.native
+  object CirclesLines
+    extends TopLevel[CirclesLines with scala.Double]
+  
+  /* 57 */ @js.native
+  object CirclesRectangles
+    extends TopLevel[CirclesRectangles with scala.Double]
+  
+  /* 58 */ @js.native
+  object ClassicalWave
+    extends TopLevel[ClassicalWave with scala.Double]
+  
+  /* 59 */ @js.native
+  object Clocks
+    extends TopLevel[Clocks with scala.Double]
+  
+  /* 60 */ @js.native
+  object Compass
+    extends TopLevel[Compass with scala.Double]
+  
+  /* 61 */ @js.native
+  object Confetti
+    extends TopLevel[Confetti with scala.Double]
+  
+  /* 62 */ @js.native
+  object ConfettiGrays
+    extends TopLevel[ConfettiGrays with scala.Double]
+  
+  /* 63 */ @js.native
+  object ConfettiOutline
+    extends TopLevel[ConfettiOutline with scala.Double]
+  
+  /* 64 */ @js.native
+  object ConfettiStreamers
+    extends TopLevel[ConfettiStreamers with scala.Double]
+  
+  /* 65 */ @js.native
+  object ConfettiWhite
+    extends TopLevel[ConfettiWhite with scala.Double]
+  
+  /* 66 */ @js.native
+  object CornerTriangles
+    extends TopLevel[CornerTriangles with scala.Double]
+  
+  /* 67 */ @js.native
+  object CouponCutoutDashes
+    extends TopLevel[CouponCutoutDashes with scala.Double]
+  
+  /* 68 */ @js.native
+  object CouponCutoutDots
+    extends TopLevel[CouponCutoutDots with scala.Double]
+  
+  /* 69 */ @js.native
+  object CrazyMaze
+    extends TopLevel[CrazyMaze with scala.Double]
+  
+  /* 70 */ @js.native
+  object CreaturesButterfly
+    extends TopLevel[CreaturesButterfly with scala.Double]
+  
+  /* 71 */ @js.native
+  object CreaturesFish
+    extends TopLevel[CreaturesFish with scala.Double]
+  
+  /* 72 */ @js.native
+  object CreaturesInsects
+    extends TopLevel[CreaturesInsects with scala.Double]
+  
+  /* 73 */ @js.native
+  object CreaturesLadyBug
+    extends TopLevel[CreaturesLadyBug with scala.Double]
+  
+  /* 74 */ @js.native
+  object CrossStitch
+    extends TopLevel[CrossStitch with scala.Double]
+  
+  /* 75 */ @js.native
+  object Cup
+    extends TopLevel[Cup with scala.Double]
+  
+  /* 21 */ @js.native
+  object DashDotStroked
+    extends TopLevel[DashDotStroked with scala.Double]
+  
+  /* 20 */ @js.native
+  object DashSmallGap
+    extends TopLevel[DashSmallGap with scala.Double]
+  
+  /* 5 */ @js.native
+  object Dashed
+    extends TopLevel[Dashed with scala.Double]
+  
+  /* 76 */ @js.native
+  object DecoArch
+    extends TopLevel[DecoArch with scala.Double]
+  
+  /* 77 */ @js.native
+  object DecoArchColor
+    extends TopLevel[DecoArchColor with scala.Double]
+  
+  /* 78 */ @js.native
+  object DecoBlocks
+    extends TopLevel[DecoBlocks with scala.Double]
+  
+  /* 79 */ @js.native
+  object DiamondsGray
+    extends TopLevel[DiamondsGray with scala.Double]
+  
+  /* 6 */ @js.native
+  object DotDash
+    extends TopLevel[DotDash with scala.Double]
+  
+  /* 7 */ @js.native
+  object DotDotDash
+    extends TopLevel[DotDotDash with scala.Double]
+  
+  /* 4 */ @js.native
+  object Dotted
+    extends TopLevel[Dotted with scala.Double]
+  
+  /* 3 */ @js.native
+  object Double
+    extends TopLevel[Double with scala.Double]
+  
+  /* 80 */ @js.native
+  object DoubleD
+    extends TopLevel[DoubleD with scala.Double]
+  
+  /* 81 */ @js.native
+  object DoubleDiamonds
+    extends TopLevel[DoubleDiamonds with scala.Double]
+  
+  /* 19 */ @js.native
+  object DoubleWave
+    extends TopLevel[DoubleWave with scala.Double]
+  
+  /* 82 */ @js.native
+  object Earth1
+    extends TopLevel[Earth1 with scala.Double]
+  
+  /* 83 */ @js.native
+  object Earth2
+    extends TopLevel[Earth2 with scala.Double]
+  
+  /* 84 */ @js.native
+  object EclipsingSquares1
+    extends TopLevel[EclipsingSquares1 with scala.Double]
+  
+  /* 85 */ @js.native
+  object EclipsingSquares2
+    extends TopLevel[EclipsingSquares2 with scala.Double]
+  
+  /* 86 */ @js.native
+  object EggsBlack
+    extends TopLevel[EggsBlack with scala.Double]
+  
+  /* 87 */ @js.native
+  object Fans
+    extends TopLevel[Fans with scala.Double]
+  
+  /* 88 */ @js.native
+  object Film
+    extends TopLevel[Film with scala.Double]
+  
+  /* 89 */ @js.native
+  object Firecrackers
+    extends TopLevel[Firecrackers with scala.Double]
+  
+  /* 90 */ @js.native
+  object FlowersBlockPrint
+    extends TopLevel[FlowersBlockPrint with scala.Double]
+  
+  /* 91 */ @js.native
+  object FlowersDaisies
+    extends TopLevel[FlowersDaisies with scala.Double]
+  
+  /* 92 */ @js.native
+  object FlowersModern1
+    extends TopLevel[FlowersModern1 with scala.Double]
+  
+  /* 93 */ @js.native
+  object FlowersModern2
+    extends TopLevel[FlowersModern2 with scala.Double]
+  
+  /* 94 */ @js.native
+  object FlowersPansy
+    extends TopLevel[FlowersPansy with scala.Double]
+  
+  /* 95 */ @js.native
+  object FlowersRedRose
+    extends TopLevel[FlowersRedRose with scala.Double]
+  
+  /* 96 */ @js.native
+  object FlowersRoses
+    extends TopLevel[FlowersRoses with scala.Double]
+  
+  /* 97 */ @js.native
+  object FlowersTeacup
+    extends TopLevel[FlowersTeacup with scala.Double]
+  
+  /* 98 */ @js.native
+  object FlowersTiny
+    extends TopLevel[FlowersTiny with scala.Double]
+  
+  /* 99 */ @js.native
+  object Gems
+    extends TopLevel[Gems with scala.Double]
+  
+  /* 100 */ @js.native
+  object GingerbreadMan
+    extends TopLevel[GingerbreadMan with scala.Double]
+  
+  /* 101 */ @js.native
+  object Gradient
+    extends TopLevel[Gradient with scala.Double]
+  
+  /* 102 */ @js.native
+  object Handmade1
+    extends TopLevel[Handmade1 with scala.Double]
+  
+  /* 103 */ @js.native
+  object Handmade2
+    extends TopLevel[Handmade2 with scala.Double]
+  
+  /* 104 */ @js.native
+  object HeartBalloon
+    extends TopLevel[HeartBalloon with scala.Double]
+  
+  /* 105 */ @js.native
+  object HeartGray
+    extends TopLevel[HeartGray with scala.Double]
+  
+  /* 106 */ @js.native
+  object Hearts
+    extends TopLevel[Hearts with scala.Double]
+  
+  /* 107 */ @js.native
+  object HeebieJeebies
+    extends TopLevel[HeebieJeebies with scala.Double]
+  
+  /* 108 */ @js.native
+  object Holly
+    extends TopLevel[Holly with scala.Double]
+  
+  /* 109 */ @js.native
+  object HouseFunky
+    extends TopLevel[HouseFunky with scala.Double]
+  
+  /* 110 */ @js.native
+  object Hypnotic
+    extends TopLevel[Hypnotic with scala.Double]
+  
+  /* 111 */ @js.native
+  object IceCreamCones
+    extends TopLevel[IceCreamCones with scala.Double]
+  
+  /* 25 */ @js.native
+  object Inset
+    extends TopLevel[Inset with scala.Double]
+  
+  /* 112 */ @js.native
+  object LightBulb
+    extends TopLevel[LightBulb with scala.Double]
+  
+  /* 113 */ @js.native
+  object Lightning1
+    extends TopLevel[Lightning1 with scala.Double]
+  
+  /* 114 */ @js.native
+  object Lightning2
+    extends TopLevel[Lightning2 with scala.Double]
+  
+  /* 117 */ @js.native
+  object MapPins
+    extends TopLevel[MapPins with scala.Double]
+  
+  /* 115 */ @js.native
+  object MapleLeaf
+    extends TopLevel[MapleLeaf with scala.Double]
+  
+  /* 116 */ @js.native
+  object MapleMuffins
+    extends TopLevel[MapleMuffins with scala.Double]
+  
+  /* 118 */ @js.native
+  object Marquee
+    extends TopLevel[Marquee with scala.Double]
+  
+  /* 119 */ @js.native
+  object MarqueeToothed
+    extends TopLevel[MarqueeToothed with scala.Double]
+  
+  /* 120 */ @js.native
+  object Moons
+    extends TopLevel[Moons with scala.Double]
+  
+  /* 121 */ @js.native
+  object Mosaic
+    extends TopLevel[Mosaic with scala.Double]
+  
+  /* 122 */ @js.native
+  object MusicNotes
+    extends TopLevel[MusicNotes with scala.Double]
+  
+  /* -1 */ @js.native
+  object Nil
+    extends TopLevel[Nil with scala.Double]
+  
+  /* 0 */ @js.native
+  object None
+    extends TopLevel[None with scala.Double]
+  
+  /* 123 */ @js.native
+  object Northwest
+    extends TopLevel[Northwest with scala.Double]
+  
+  /* 24 */ @js.native
+  object Outset
+    extends TopLevel[Outset with scala.Double]
+  
+  /* 124 */ @js.native
+  object Ovals
+    extends TopLevel[Ovals with scala.Double]
+  
+  /* 125 */ @js.native
+  object Packages
+    extends TopLevel[Packages with scala.Double]
+  
+  /* 126 */ @js.native
+  object PalmsBlack
+    extends TopLevel[PalmsBlack with scala.Double]
+  
+  /* 127 */ @js.native
+  object PalmsColor
+    extends TopLevel[PalmsColor with scala.Double]
+  
+  /* 128 */ @js.native
+  object PaperClips
+    extends TopLevel[PaperClips with scala.Double]
+  
+  /* 129 */ @js.native
+  object Papyrus
+    extends TopLevel[Papyrus with scala.Double]
+  
+  /* 130 */ @js.native
+  object PartyFavor
+    extends TopLevel[PartyFavor with scala.Double]
+  
+  /* 131 */ @js.native
+  object PartyGlass
+    extends TopLevel[PartyGlass with scala.Double]
+  
+  /* 132 */ @js.native
+  object Pencils
+    extends TopLevel[Pencils with scala.Double]
+  
+  /* 133 */ @js.native
+  object People
+    extends TopLevel[People with scala.Double]
+  
+  /* 134 */ @js.native
+  object PeopleHats
+    extends TopLevel[PeopleHats with scala.Double]
+  
+  /* 135 */ @js.native
+  object PeopleWaving
+    extends TopLevel[PeopleWaving with scala.Double]
+  
+  /* 136 */ @js.native
+  object Poinsettias
+    extends TopLevel[Poinsettias with scala.Double]
+  
+  /* 137 */ @js.native
+  object PostageStamp
+    extends TopLevel[PostageStamp with scala.Double]
+  
+  /* 138 */ @js.native
+  object Pumpkin1
+    extends TopLevel[Pumpkin1 with scala.Double]
+  
+  /* 139 */ @js.native
+  object PushPinNote1
+    extends TopLevel[PushPinNote1 with scala.Double]
+  
+  /* 140 */ @js.native
+  object PushPinNote2
+    extends TopLevel[PushPinNote2 with scala.Double]
+  
+  /* 141 */ @js.native
+  object Pyramids
+    extends TopLevel[Pyramids with scala.Double]
+  
+  /* 142 */ @js.native
+  object PyramidsAbove
+    extends TopLevel[PyramidsAbove with scala.Double]
+  
+  /* 143 */ @js.native
+  object Quadrants
+    extends TopLevel[Quadrants with scala.Double]
+  
+  /* 144 */ @js.native
+  object Rings
+    extends TopLevel[Rings with scala.Double]
+  
+  /* 145 */ @js.native
+  object Safari
+    extends TopLevel[Safari with scala.Double]
+  
+  /* 146 */ @js.native
+  object Sawtooth
+    extends TopLevel[Sawtooth with scala.Double]
+  
+  /* 147 */ @js.native
+  object SawtoothGray
+    extends TopLevel[SawtoothGray with scala.Double]
+  
+  /* 148 */ @js.native
+  object ScaredCat
+    extends TopLevel[ScaredCat with scala.Double]
+  
+  /* 149 */ @js.native
+  object Seattle
+    extends TopLevel[Seattle with scala.Double]
+  
+  /* 150 */ @js.native
+  object ShadowedSquares
+    extends TopLevel[ShadowedSquares with scala.Double]
+  
+  /* 151 */ @js.native
+  object SharksTeeth
+    extends TopLevel[SharksTeeth with scala.Double]
+  
+  /* 152 */ @js.native
+  object ShorebirdTracks
+    extends TopLevel[ShorebirdTracks with scala.Double]
+  
+  /* 1 */ @js.native
+  object Single
+    extends TopLevel[Single with scala.Double]
+  
+  /* 153 */ @js.native
+  object Skyrocket
+    extends TopLevel[Skyrocket with scala.Double]
+  
+  /* 154 */ @js.native
+  object SnowflakeFancy
+    extends TopLevel[SnowflakeFancy with scala.Double]
+  
+  /* 155 */ @js.native
+  object Snowflakes
+    extends TopLevel[Snowflakes with scala.Double]
+  
+  /* 156 */ @js.native
+  object Sombrero
+    extends TopLevel[Sombrero with scala.Double]
+  
+  /* 157 */ @js.native
+  object Southwest
+    extends TopLevel[Southwest with scala.Double]
+  
+  /* 158 */ @js.native
+  object Stars
+    extends TopLevel[Stars with scala.Double]
+  
+  /* 159 */ @js.native
+  object Stars3d
+    extends TopLevel[Stars3d with scala.Double]
+  
+  /* 160 */ @js.native
+  object StarsBlack
+    extends TopLevel[StarsBlack with scala.Double]
+  
+  /* 161 */ @js.native
+  object StarsShadowed
+    extends TopLevel[StarsShadowed with scala.Double]
+  
+  /* 162 */ @js.native
+  object StarsTop
+    extends TopLevel[StarsTop with scala.Double]
+  
+  /* 163 */ @js.native
+  object Sun
+    extends TopLevel[Sun with scala.Double]
+  
+  /* 164 */ @js.native
+  object Swirligig
+    extends TopLevel[Swirligig with scala.Double]
+  
+  /* 2 */ @js.native
+  object Thick
+    extends TopLevel[Thick with scala.Double]
+  
+  /* 16 */ @js.native
+  object ThickThinLargeGap
+    extends TopLevel[ThickThinLargeGap with scala.Double]
+  
+  /* 13 */ @js.native
+  object ThickThinMediumGap
+    extends TopLevel[ThickThinMediumGap with scala.Double]
+  
+  /* 10 */ @js.native
+  object ThickThinSmallGap
+    extends TopLevel[ThickThinSmallGap with scala.Double]
+  
+  /* 15 */ @js.native
+  object ThinThickLargeGap
+    extends TopLevel[ThinThickLargeGap with scala.Double]
+  
+  /* 12 */ @js.native
+  object ThinThickMediumGap
+    extends TopLevel[ThinThickMediumGap with scala.Double]
+  
+  /* 9 */ @js.native
+  object ThinThickSmallGap
+    extends TopLevel[ThinThickSmallGap with scala.Double]
+  
+  /* 17 */ @js.native
+  object ThinThickThinLargeGap
+    extends TopLevel[ThinThickThinLargeGap with scala.Double]
+  
+  /* 14 */ @js.native
+  object ThinThickThinMediumGap
+    extends TopLevel[ThinThickThinMediumGap with scala.Double]
+  
+  /* 11 */ @js.native
+  object ThinThickThinSmallGap
+    extends TopLevel[ThinThickThinSmallGap with scala.Double]
+  
+  /* 22 */ @js.native
+  object ThreeDEmboss
+    extends TopLevel[ThreeDEmboss with scala.Double]
+  
+  /* 23 */ @js.native
+  object ThreeDEngrave
+    extends TopLevel[ThreeDEngrave with scala.Double]
+  
+  /* 165 */ @js.native
+  object TornPaper
+    extends TopLevel[TornPaper with scala.Double]
+  
+  /* 166 */ @js.native
+  object TornPaperBlack
+    extends TopLevel[TornPaperBlack with scala.Double]
+  
+  /* 167 */ @js.native
+  object Trees
+    extends TopLevel[Trees with scala.Double]
+  
+  /* 168 */ @js.native
+  object TriangleParty
+    extends TopLevel[TriangleParty with scala.Double]
+  
+  /* 169 */ @js.native
+  object Triangles
+    extends TopLevel[Triangles with scala.Double]
+  
+  /* 170 */ @js.native
+  object Tribal1
+    extends TopLevel[Tribal1 with scala.Double]
+  
+  /* 171 */ @js.native
+  object Tribal2
+    extends TopLevel[Tribal2 with scala.Double]
+  
+  /* 172 */ @js.native
+  object Tribal3
+    extends TopLevel[Tribal3 with scala.Double]
+  
+  /* 173 */ @js.native
+  object Tribal4
+    extends TopLevel[Tribal4 with scala.Double]
+  
+  /* 174 */ @js.native
+  object Tribal5
+    extends TopLevel[Tribal5 with scala.Double]
+  
+  /* 175 */ @js.native
+  object Tribal6
+    extends TopLevel[Tribal6 with scala.Double]
+  
+  /* 8 */ @js.native
+  object Triple
+    extends TopLevel[Triple with scala.Double]
+  
+  /* 176 */ @js.native
+  object TwistedLines1
+    extends TopLevel[TwistedLines1 with scala.Double]
+  
+  /* 177 */ @js.native
+  object TwistedLines2
+    extends TopLevel[TwistedLines2 with scala.Double]
+  
+  /* 178 */ @js.native
+  object Vine
+    extends TopLevel[Vine with scala.Double]
+  
+  /* 18 */ @js.native
+  object Wave
+    extends TopLevel[Wave with scala.Double]
+  
+  /* 179 */ @js.native
+  object Waveline
+    extends TopLevel[Waveline with scala.Double]
+  
+  /* 180 */ @js.native
+  object WeavingAngles
+    extends TopLevel[WeavingAngles with scala.Double]
+  
+  /* 181 */ @js.native
+  object WeavingBraid
+    extends TopLevel[WeavingBraid with scala.Double]
+  
+  /* 182 */ @js.native
+  object WeavingRibbon
+    extends TopLevel[WeavingRibbon with scala.Double]
+  
+  /* 183 */ @js.native
+  object WeavingStrips
+    extends TopLevel[WeavingStrips with scala.Double]
+  
+  /* 184 */ @js.native
+  object WhiteFlowers
+    extends TopLevel[WhiteFlowers with scala.Double]
+  
+  /* 185 */ @js.native
+  object Woodwork
+    extends TopLevel[Woodwork with scala.Double]
+  
+  /* 186 */ @js.native
+  object XIllusions
+    extends TopLevel[XIllusions with scala.Double]
+  
+  /* 187 */ @js.native
+  object ZanyTriangles
+    extends TopLevel[ZanyTriangles with scala.Double]
+  
+  /* 188 */ @js.native
+  object ZigZag
+    extends TopLevel[ZigZag with scala.Double]
+  
+  /* 189 */ @js.native
+  object ZigZagStitch
+    extends TopLevel[ZigZagStitch with scala.Double]
+  
 }
 

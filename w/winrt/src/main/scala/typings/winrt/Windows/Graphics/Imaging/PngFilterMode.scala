@@ -1,5 +1,13 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.adaptive
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.automatic
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.average
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.none
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.paeth
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.sub
+import typings.winrt.Windows.Graphics.Imaging.PngFilterMode.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object PngFilterMode extends js.Object {
   @js.native
   sealed trait up extends PngFilterMode
   
-  /* 6 */ val adaptive: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.adaptive with Double = js.native
-  /* 0 */ val automatic: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.automatic with Double = js.native
-  /* 4 */ val average: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.average with Double = js.native
-  /* 1 */ val none: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.none with Double = js.native
-  /* 5 */ val paeth: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.paeth with Double = js.native
-  /* 2 */ val sub: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.sub with Double = js.native
-  /* 3 */ val up: typings.winrt.Windows.Graphics.Imaging.PngFilterMode.up with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PngFilterMode with Double] = js.native
+  /* 6 */ @js.native
+  object adaptive extends TopLevel[adaptive with Double]
+  
+  /* 0 */ @js.native
+  object automatic extends TopLevel[automatic with Double]
+  
+  /* 4 */ @js.native
+  object average extends TopLevel[average with Double]
+  
+  /* 1 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object paeth extends TopLevel[paeth with Double]
+  
+  /* 2 */ @js.native
+  object sub extends TopLevel[sub with Double]
+  
+  /* 3 */ @js.native
+  object up extends TopLevel[up with Double]
+  
 }
 

@@ -1,5 +1,7 @@
 package typings.atJupyterlabApputils
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atJupyterlabApputils.libSplashMod.ISplashScreen
 import typings.atPhosphorCoreutils.atPhosphorCoreutilsMod.Token
 import typings.atPhosphorDisposable.atPhosphorDisposableMod.IDisposable
 import scala.scalajs.js
@@ -22,6 +24,8 @@ object libSplashMod extends js.Object {
     def show(light: Boolean): IDisposable = js.native
   }
   
-  val ISplashScreen: Token[typings.atJupyterlabApputils.libSplashMod.ISplashScreen] = js.native
+  @js.native
+  object ISplashScreen extends TopLevel[Token[ISplashScreen]]
+  
 }
 

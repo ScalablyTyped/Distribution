@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportViewer.ProcessingMode.Local
+import typings.ejDotWebDotAll.ej.ReportViewer.ProcessingMode.Remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ProcessingMode extends js.Object {
   @js.native
   sealed trait Remote extends ProcessingMode
   
-  /* 1 */ val Local: typings.ejDotWebDotAll.ej.ReportViewer.ProcessingMode.Local with Double = js.native
-  /* 0 */ val Remote: typings.ejDotWebDotAll.ej.ReportViewer.ProcessingMode.Remote with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessingMode with Double] = js.native
+  /* 1 */ @js.native
+  object Local extends TopLevel[Local with Double]
+  
+  /* 0 */ @js.native
+  object Remote extends TopLevel[Remote with Double]
+  
 }
 

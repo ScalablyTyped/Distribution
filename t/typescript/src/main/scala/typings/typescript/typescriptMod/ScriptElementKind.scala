@@ -1,5 +1,40 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ScriptElementKind.alias
+import typings.typescript.typescriptMod.ScriptElementKind.callSignatureElement
+import typings.typescript.typescriptMod.ScriptElementKind.classElement
+import typings.typescript.typescriptMod.ScriptElementKind.constElement
+import typings.typescript.typescriptMod.ScriptElementKind.constructSignatureElement
+import typings.typescript.typescriptMod.ScriptElementKind.constructorImplementationElement
+import typings.typescript.typescriptMod.ScriptElementKind.directory
+import typings.typescript.typescriptMod.ScriptElementKind.enumElement
+import typings.typescript.typescriptMod.ScriptElementKind.enumMemberElement
+import typings.typescript.typescriptMod.ScriptElementKind.externalModuleName
+import typings.typescript.typescriptMod.ScriptElementKind.functionElement
+import typings.typescript.typescriptMod.ScriptElementKind.indexSignatureElement
+import typings.typescript.typescriptMod.ScriptElementKind.interfaceElement
+import typings.typescript.typescriptMod.ScriptElementKind.jsxAttribute
+import typings.typescript.typescriptMod.ScriptElementKind.keyword
+import typings.typescript.typescriptMod.ScriptElementKind.label
+import typings.typescript.typescriptMod.ScriptElementKind.letElement
+import typings.typescript.typescriptMod.ScriptElementKind.localClassElement
+import typings.typescript.typescriptMod.ScriptElementKind.localFunctionElement
+import typings.typescript.typescriptMod.ScriptElementKind.localVariableElement
+import typings.typescript.typescriptMod.ScriptElementKind.memberFunctionElement
+import typings.typescript.typescriptMod.ScriptElementKind.memberGetAccessorElement
+import typings.typescript.typescriptMod.ScriptElementKind.memberSetAccessorElement
+import typings.typescript.typescriptMod.ScriptElementKind.memberVariableElement
+import typings.typescript.typescriptMod.ScriptElementKind.moduleElement
+import typings.typescript.typescriptMod.ScriptElementKind.parameterElement
+import typings.typescript.typescriptMod.ScriptElementKind.primitiveType
+import typings.typescript.typescriptMod.ScriptElementKind.scriptElement
+import typings.typescript.typescriptMod.ScriptElementKind.string
+import typings.typescript.typescriptMod.ScriptElementKind.typeElement
+import typings.typescript.typescriptMod.ScriptElementKind.typeParameterElement
+import typings.typescript.typescriptMod.ScriptElementKind.unknown
+import typings.typescript.typescriptMod.ScriptElementKind.variableElement
+import typings.typescript.typescriptMod.ScriptElementKind.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,41 +180,109 @@ object ScriptElementKind extends js.Object {
   @js.native
   sealed trait warning extends ScriptElementKind
   
-  /* "alias" */ val alias: typings.typescript.typescriptMod.ScriptElementKind.alias with String = js.native
-  /* "call" */ val callSignatureElement: typings.typescript.typescriptMod.ScriptElementKind.callSignatureElement with String = js.native
-  /* "class" */ val classElement: typings.typescript.typescriptMod.ScriptElementKind.classElement with String = js.native
-  /* "const" */ val constElement: typings.typescript.typescriptMod.ScriptElementKind.constElement with String = js.native
-  /* "construct" */ val constructSignatureElement: typings.typescript.typescriptMod.ScriptElementKind.constructSignatureElement with String = js.native
-  /* "constructor" */ val constructorImplementationElement: typings.typescript.typescriptMod.ScriptElementKind.constructorImplementationElement with String = js.native
-  /* "directory" */ val directory: typings.typescript.typescriptMod.ScriptElementKind.directory with String = js.native
-  /* "enum" */ val enumElement: typings.typescript.typescriptMod.ScriptElementKind.enumElement with String = js.native
-  /* "enum member" */ val enumMemberElement: typings.typescript.typescriptMod.ScriptElementKind.enumMemberElement with String = js.native
-  /* "external module name" */ val externalModuleName: typings.typescript.typescriptMod.ScriptElementKind.externalModuleName with String = js.native
-  /* "function" */ val functionElement: typings.typescript.typescriptMod.ScriptElementKind.functionElement with String = js.native
-  /* "index" */ val indexSignatureElement: typings.typescript.typescriptMod.ScriptElementKind.indexSignatureElement with String = js.native
-  /* "interface" */ val interfaceElement: typings.typescript.typescriptMod.ScriptElementKind.interfaceElement with String = js.native
-  /* "JSX attribute" */ val jsxAttribute: typings.typescript.typescriptMod.ScriptElementKind.jsxAttribute with String = js.native
-  /* "keyword" */ val keyword: typings.typescript.typescriptMod.ScriptElementKind.keyword with String = js.native
-  /* "label" */ val label: typings.typescript.typescriptMod.ScriptElementKind.label with String = js.native
-  /* "let" */ val letElement: typings.typescript.typescriptMod.ScriptElementKind.letElement with String = js.native
-  /* "local class" */ val localClassElement: typings.typescript.typescriptMod.ScriptElementKind.localClassElement with String = js.native
-  /* "local function" */ val localFunctionElement: typings.typescript.typescriptMod.ScriptElementKind.localFunctionElement with String = js.native
-  /* "local var" */ val localVariableElement: typings.typescript.typescriptMod.ScriptElementKind.localVariableElement with String = js.native
-  /* "method" */ val memberFunctionElement: typings.typescript.typescriptMod.ScriptElementKind.memberFunctionElement with String = js.native
-  /* "getter" */ val memberGetAccessorElement: typings.typescript.typescriptMod.ScriptElementKind.memberGetAccessorElement with String = js.native
-  /* "setter" */ val memberSetAccessorElement: typings.typescript.typescriptMod.ScriptElementKind.memberSetAccessorElement with String = js.native
-  /* "property" */ val memberVariableElement: typings.typescript.typescriptMod.ScriptElementKind.memberVariableElement with String = js.native
-  /* "module" */ val moduleElement: typings.typescript.typescriptMod.ScriptElementKind.moduleElement with String = js.native
-  /* "parameter" */ val parameterElement: typings.typescript.typescriptMod.ScriptElementKind.parameterElement with String = js.native
-  /* "primitive type" */ val primitiveType: typings.typescript.typescriptMod.ScriptElementKind.primitiveType with String = js.native
-  /* "script" */ val scriptElement: typings.typescript.typescriptMod.ScriptElementKind.scriptElement with String = js.native
-  /* "string" */ val string: typings.typescript.typescriptMod.ScriptElementKind.string with String = js.native
-  /* "type" */ val typeElement: typings.typescript.typescriptMod.ScriptElementKind.typeElement with String = js.native
-  /* "type parameter" */ val typeParameterElement: typings.typescript.typescriptMod.ScriptElementKind.typeParameterElement with String = js.native
-  /* "" */ val unknown: typings.typescript.typescriptMod.ScriptElementKind.unknown with String = js.native
-  /* "var" */ val variableElement: typings.typescript.typescriptMod.ScriptElementKind.variableElement with String = js.native
-  /* "warning" */ val warning: typings.typescript.typescriptMod.ScriptElementKind.warning with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ScriptElementKind with String] = js.native
+  /* "alias" */ @js.native
+  object alias extends TopLevel[alias with String]
+  
+  /* "call" */ @js.native
+  object callSignatureElement extends TopLevel[callSignatureElement with String]
+  
+  /* "class" */ @js.native
+  object classElement extends TopLevel[classElement with String]
+  
+  /* "const" */ @js.native
+  object constElement extends TopLevel[constElement with String]
+  
+  /* "construct" */ @js.native
+  object constructSignatureElement extends TopLevel[constructSignatureElement with String]
+  
+  /* "constructor" */ @js.native
+  object constructorImplementationElement extends TopLevel[constructorImplementationElement with String]
+  
+  /* "directory" */ @js.native
+  object directory extends TopLevel[directory with String]
+  
+  /* "enum" */ @js.native
+  object enumElement extends TopLevel[enumElement with String]
+  
+  /* "enum member" */ @js.native
+  object enumMemberElement extends TopLevel[enumMemberElement with String]
+  
+  /* "external module name" */ @js.native
+  object externalModuleName extends TopLevel[externalModuleName with String]
+  
+  /* "function" */ @js.native
+  object functionElement extends TopLevel[functionElement with String]
+  
+  /* "index" */ @js.native
+  object indexSignatureElement extends TopLevel[indexSignatureElement with String]
+  
+  /* "interface" */ @js.native
+  object interfaceElement extends TopLevel[interfaceElement with String]
+  
+  /* "JSX attribute" */ @js.native
+  object jsxAttribute extends TopLevel[jsxAttribute with String]
+  
+  /* "keyword" */ @js.native
+  object keyword extends TopLevel[keyword with String]
+  
+  /* "label" */ @js.native
+  object label extends TopLevel[label with String]
+  
+  /* "let" */ @js.native
+  object letElement extends TopLevel[letElement with String]
+  
+  /* "local class" */ @js.native
+  object localClassElement extends TopLevel[localClassElement with String]
+  
+  /* "local function" */ @js.native
+  object localFunctionElement extends TopLevel[localFunctionElement with String]
+  
+  /* "local var" */ @js.native
+  object localVariableElement extends TopLevel[localVariableElement with String]
+  
+  /* "method" */ @js.native
+  object memberFunctionElement extends TopLevel[memberFunctionElement with String]
+  
+  /* "getter" */ @js.native
+  object memberGetAccessorElement extends TopLevel[memberGetAccessorElement with String]
+  
+  /* "setter" */ @js.native
+  object memberSetAccessorElement extends TopLevel[memberSetAccessorElement with String]
+  
+  /* "property" */ @js.native
+  object memberVariableElement extends TopLevel[memberVariableElement with String]
+  
+  /* "module" */ @js.native
+  object moduleElement extends TopLevel[moduleElement with String]
+  
+  /* "parameter" */ @js.native
+  object parameterElement extends TopLevel[parameterElement with String]
+  
+  /* "primitive type" */ @js.native
+  object primitiveType extends TopLevel[primitiveType with String]
+  
+  /* "script" */ @js.native
+  object scriptElement extends TopLevel[scriptElement with String]
+  
+  /* "string" */ @js.native
+  object string extends TopLevel[string with String]
+  
+  /* "type" */ @js.native
+  object typeElement extends TopLevel[typeElement with String]
+  
+  /* "type parameter" */ @js.native
+  object typeParameterElement extends TopLevel[typeParameterElement with String]
+  
+  /* "" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
+  /* "var" */ @js.native
+  object variableElement extends TopLevel[variableElement with String]
+  
+  /* "warning" */ @js.native
+  object warning extends TopLevel[warning with String]
+  
 }
 

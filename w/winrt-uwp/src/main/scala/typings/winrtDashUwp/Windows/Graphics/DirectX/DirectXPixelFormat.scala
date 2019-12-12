@@ -1,5 +1,125 @@
 package typings.winrtDashUwp.Windows.Graphics.DirectX
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.a8P8
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.a8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ai44
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ayuv
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b4G4R4A4UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b5G5R5A1UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b5G6R5UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6H16Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6H16UnsignedFloat
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6HTypeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d16UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d24UIntNormalizedS8UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d32Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d32FloatS8X24UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.g8R8G8B8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ia44
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.nv11
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.nv12
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.opaque420
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p010
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p016
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p208
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p8
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10XRBiasA2UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r11G11B10Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r1UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r24G8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r24UIntNormalizedX8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32FloatX8X24Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Float
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G8X24Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UIntNormalizedSrgb
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8G8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8Int
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8IntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8Typeless
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8UIntNormalized
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r9G9B9E5SharedExponent
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.unknown
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.v208
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.v408
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.x24TypelessG8UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.x32TypelessG8X24UInt
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y210
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y216
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y410
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y416
+import typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.yuy2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -368,126 +488,364 @@ object DirectXPixelFormat extends js.Object {
   @js.native
   sealed trait yuy2 extends DirectXPixelFormat
   
-  /* 114 */ val a8P8: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.a8P8 with Double = js.native
-  /* 65 */ val a8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.a8UIntNormalized with Double = js.native
-  /* 111 */ val ai44: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ai44 with Double = js.native
-  /* 100 */ val ayuv: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ayuv with Double = js.native
-  /* 115 */ val b4G4R4A4UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b4G4R4A4UIntNormalized with Double = js.native
-  /* 86 */ val b5G5R5A1UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b5G5R5A1UIntNormalized with Double = js.native
-  /* 85 */ val b5G6R5UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b5G6R5UIntNormalized with Double = js.native
-  /* 90 */ val b8G8R8A8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8Typeless with Double = js.native
-  /* 87 */ val b8G8R8A8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8UIntNormalized with Double = js.native
-  /* 91 */ val b8G8R8A8UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8A8UIntNormalizedSrgb with Double = js.native
-  /* 92 */ val b8G8R8X8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8Typeless with Double = js.native
-  /* 88 */ val b8G8R8X8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8UIntNormalized with Double = js.native
-  /* 93 */ val b8G8R8X8UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.b8G8R8X8UIntNormalizedSrgb with Double = js.native
-  /* 70 */ val bc1Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1Typeless with Double = js.native
-  /* 71 */ val bc1UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1UIntNormalized with Double = js.native
-  /* 72 */ val bc1UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc1UIntNormalizedSrgb with Double = js.native
-  /* 73 */ val bc2Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2Typeless with Double = js.native
-  /* 74 */ val bc2UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2UIntNormalized with Double = js.native
-  /* 75 */ val bc2UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc2UIntNormalizedSrgb with Double = js.native
-  /* 76 */ val bc3Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3Typeless with Double = js.native
-  /* 77 */ val bc3UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3UIntNormalized with Double = js.native
-  /* 78 */ val bc3UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc3UIntNormalizedSrgb with Double = js.native
-  /* 81 */ val bc4IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4IntNormalized with Double = js.native
-  /* 79 */ val bc4Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4Typeless with Double = js.native
-  /* 80 */ val bc4UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc4UIntNormalized with Double = js.native
-  /* 84 */ val bc5IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5IntNormalized with Double = js.native
-  /* 82 */ val bc5Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5Typeless with Double = js.native
-  /* 83 */ val bc5UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc5UIntNormalized with Double = js.native
-  /* 96 */ val bc6H16Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6H16Float with Double = js.native
-  /* 95 */ val bc6H16UnsignedFloat: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6H16UnsignedFloat with Double = js.native
-  /* 94 */ val bc6HTypeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc6HTypeless with Double = js.native
-  /* 97 */ val bc7Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7Typeless with Double = js.native
-  /* 98 */ val bc7UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7UIntNormalized with Double = js.native
-  /* 99 */ val bc7UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.bc7UIntNormalizedSrgb with Double = js.native
-  /* 55 */ val d16UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d16UIntNormalized with Double = js.native
-  /* 45 */ val d24UIntNormalizedS8UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d24UIntNormalizedS8UInt with Double = js.native
-  /* 40 */ val d32Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d32Float with Double = js.native
-  /* 20 */ val d32FloatS8X24UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.d32FloatS8X24UInt with Double = js.native
-  /* 69 */ val g8R8G8B8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.g8R8G8B8UIntNormalized with Double = js.native
-  /* 112 */ val ia44: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.ia44 with Double = js.native
-  /* 110 */ val nv11: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.nv11 with Double = js.native
-  /* 103 */ val nv12: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.nv12 with Double = js.native
-  /* 106 */ val opaque420: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.opaque420 with Double = js.native
-  /* 104 */ val p010: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p010 with Double = js.native
-  /* 105 */ val p016: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p016 with Double = js.native
-  /* 116 */ val p208: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p208 with Double = js.native
-  /* 113 */ val p8: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.p8 with Double = js.native
-  /* 23 */ val r10G10B10A2Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2Typeless with Double = js.native
-  /* 25 */ val r10G10B10A2UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2UInt with Double = js.native
-  /* 24 */ val r10G10B10A2UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10A2UIntNormalized with Double = js.native
-  /* 89 */ val r10G10B10XRBiasA2UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r10G10B10XRBiasA2UIntNormalized with Double = js.native
-  /* 26 */ val r11G11B10Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r11G11B10Float with Double = js.native
-  /* 54 */ val r16Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Float with Double = js.native
-  /* 10 */ val r16G16B16A16Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Float with Double = js.native
-  /* 14 */ val r16G16B16A16Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Int with Double = js.native
-  /* 13 */ val r16G16B16A16IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16IntNormalized with Double = js.native
-  /* 9 */ val r16G16B16A16Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16Typeless with Double = js.native
-  /* 12 */ val r16G16B16A16UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16UInt with Double = js.native
-  /* 11 */ val r16G16B16A16UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16B16A16UIntNormalized with Double = js.native
-  /* 34 */ val r16G16Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Float with Double = js.native
-  /* 38 */ val r16G16Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Int with Double = js.native
-  /* 37 */ val r16G16IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16IntNormalized with Double = js.native
-  /* 33 */ val r16G16Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16Typeless with Double = js.native
-  /* 36 */ val r16G16UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16UInt with Double = js.native
-  /* 35 */ val r16G16UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16G16UIntNormalized with Double = js.native
-  /* 59 */ val r16Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Int with Double = js.native
-  /* 58 */ val r16IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16IntNormalized with Double = js.native
-  /* 53 */ val r16Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16Typeless with Double = js.native
-  /* 57 */ val r16UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16UInt with Double = js.native
-  /* 56 */ val r16UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r16UIntNormalized with Double = js.native
-  /* 66 */ val r1UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r1UIntNormalized with Double = js.native
-  /* 44 */ val r24G8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r24G8Typeless with Double = js.native
-  /* 46 */ val r24UIntNormalizedX8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r24UIntNormalizedX8Typeless with Double = js.native
-  /* 41 */ val r32Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Float with Double = js.native
-  /* 21 */ val r32FloatX8X24Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32FloatX8X24Typeless with Double = js.native
-  /* 2 */ val r32G32B32A32Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Float with Double = js.native
-  /* 4 */ val r32G32B32A32Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Int with Double = js.native
-  /* 1 */ val r32G32B32A32Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32Typeless with Double = js.native
-  /* 3 */ val r32G32B32A32UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32A32UInt with Double = js.native
-  /* 6 */ val r32G32B32Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Float with Double = js.native
-  /* 8 */ val r32G32B32Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Int with Double = js.native
-  /* 5 */ val r32G32B32Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32Typeless with Double = js.native
-  /* 7 */ val r32G32B32UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32B32UInt with Double = js.native
-  /* 16 */ val r32G32Float: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Float with Double = js.native
-  /* 18 */ val r32G32Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Int with Double = js.native
-  /* 15 */ val r32G32Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32Typeless with Double = js.native
-  /* 17 */ val r32G32UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G32UInt with Double = js.native
-  /* 19 */ val r32G8X24Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32G8X24Typeless with Double = js.native
-  /* 43 */ val r32Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Int with Double = js.native
-  /* 39 */ val r32Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32Typeless with Double = js.native
-  /* 42 */ val r32UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r32UInt with Double = js.native
-  /* 32 */ val r8G8B8A8Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8Int with Double = js.native
-  /* 31 */ val r8G8B8A8IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8IntNormalized with Double = js.native
-  /* 27 */ val r8G8B8A8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8Typeless with Double = js.native
-  /* 30 */ val r8G8B8A8UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UInt with Double = js.native
-  /* 28 */ val r8G8B8A8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UIntNormalized with Double = js.native
-  /* 29 */ val r8G8B8A8UIntNormalizedSrgb: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8A8UIntNormalizedSrgb with Double = js.native
-  /* 68 */ val r8G8B8G8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8B8G8UIntNormalized with Double = js.native
-  /* 52 */ val r8G8Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8Int with Double = js.native
-  /* 51 */ val r8G8IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8IntNormalized with Double = js.native
-  /* 48 */ val r8G8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8Typeless with Double = js.native
-  /* 50 */ val r8G8UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8UInt with Double = js.native
-  /* 49 */ val r8G8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8G8UIntNormalized with Double = js.native
-  /* 64 */ val r8Int: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8Int with Double = js.native
-  /* 63 */ val r8IntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8IntNormalized with Double = js.native
-  /* 60 */ val r8Typeless: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8Typeless with Double = js.native
-  /* 62 */ val r8UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8UInt with Double = js.native
-  /* 61 */ val r8UIntNormalized: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r8UIntNormalized with Double = js.native
-  /* 67 */ val r9G9B9E5SharedExponent: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.r9G9B9E5SharedExponent with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.unknown with Double = js.native
-  /* 117 */ val v208: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.v208 with Double = js.native
-  /* 118 */ val v408: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.v408 with Double = js.native
-  /* 47 */ val x24TypelessG8UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.x24TypelessG8UInt with Double = js.native
-  /* 22 */ val x32TypelessG8X24UInt: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.x32TypelessG8X24UInt with Double = js.native
-  /* 108 */ val y210: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y210 with Double = js.native
-  /* 109 */ val y216: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y216 with Double = js.native
-  /* 101 */ val y410: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y410 with Double = js.native
-  /* 102 */ val y416: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.y416 with Double = js.native
-  /* 107 */ val yuy2: typings.winrtDashUwp.Windows.Graphics.DirectX.DirectXPixelFormat.yuy2 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DirectXPixelFormat with Double] = js.native
+  /* 114 */ @js.native
+  object a8P8 extends TopLevel[a8P8 with Double]
+  
+  /* 65 */ @js.native
+  object a8UIntNormalized extends TopLevel[a8UIntNormalized with Double]
+  
+  /* 111 */ @js.native
+  object ai44 extends TopLevel[ai44 with Double]
+  
+  /* 100 */ @js.native
+  object ayuv extends TopLevel[ayuv with Double]
+  
+  /* 115 */ @js.native
+  object b4G4R4A4UIntNormalized extends TopLevel[b4G4R4A4UIntNormalized with Double]
+  
+  /* 86 */ @js.native
+  object b5G5R5A1UIntNormalized extends TopLevel[b5G5R5A1UIntNormalized with Double]
+  
+  /* 85 */ @js.native
+  object b5G6R5UIntNormalized extends TopLevel[b5G6R5UIntNormalized with Double]
+  
+  /* 90 */ @js.native
+  object b8G8R8A8Typeless extends TopLevel[b8G8R8A8Typeless with Double]
+  
+  /* 87 */ @js.native
+  object b8G8R8A8UIntNormalized extends TopLevel[b8G8R8A8UIntNormalized with Double]
+  
+  /* 91 */ @js.native
+  object b8G8R8A8UIntNormalizedSrgb extends TopLevel[b8G8R8A8UIntNormalizedSrgb with Double]
+  
+  /* 92 */ @js.native
+  object b8G8R8X8Typeless extends TopLevel[b8G8R8X8Typeless with Double]
+  
+  /* 88 */ @js.native
+  object b8G8R8X8UIntNormalized extends TopLevel[b8G8R8X8UIntNormalized with Double]
+  
+  /* 93 */ @js.native
+  object b8G8R8X8UIntNormalizedSrgb extends TopLevel[b8G8R8X8UIntNormalizedSrgb with Double]
+  
+  /* 70 */ @js.native
+  object bc1Typeless extends TopLevel[bc1Typeless with Double]
+  
+  /* 71 */ @js.native
+  object bc1UIntNormalized extends TopLevel[bc1UIntNormalized with Double]
+  
+  /* 72 */ @js.native
+  object bc1UIntNormalizedSrgb extends TopLevel[bc1UIntNormalizedSrgb with Double]
+  
+  /* 73 */ @js.native
+  object bc2Typeless extends TopLevel[bc2Typeless with Double]
+  
+  /* 74 */ @js.native
+  object bc2UIntNormalized extends TopLevel[bc2UIntNormalized with Double]
+  
+  /* 75 */ @js.native
+  object bc2UIntNormalizedSrgb extends TopLevel[bc2UIntNormalizedSrgb with Double]
+  
+  /* 76 */ @js.native
+  object bc3Typeless extends TopLevel[bc3Typeless with Double]
+  
+  /* 77 */ @js.native
+  object bc3UIntNormalized extends TopLevel[bc3UIntNormalized with Double]
+  
+  /* 78 */ @js.native
+  object bc3UIntNormalizedSrgb extends TopLevel[bc3UIntNormalizedSrgb with Double]
+  
+  /* 81 */ @js.native
+  object bc4IntNormalized extends TopLevel[bc4IntNormalized with Double]
+  
+  /* 79 */ @js.native
+  object bc4Typeless extends TopLevel[bc4Typeless with Double]
+  
+  /* 80 */ @js.native
+  object bc4UIntNormalized extends TopLevel[bc4UIntNormalized with Double]
+  
+  /* 84 */ @js.native
+  object bc5IntNormalized extends TopLevel[bc5IntNormalized with Double]
+  
+  /* 82 */ @js.native
+  object bc5Typeless extends TopLevel[bc5Typeless with Double]
+  
+  /* 83 */ @js.native
+  object bc5UIntNormalized extends TopLevel[bc5UIntNormalized with Double]
+  
+  /* 96 */ @js.native
+  object bc6H16Float extends TopLevel[bc6H16Float with Double]
+  
+  /* 95 */ @js.native
+  object bc6H16UnsignedFloat extends TopLevel[bc6H16UnsignedFloat with Double]
+  
+  /* 94 */ @js.native
+  object bc6HTypeless extends TopLevel[bc6HTypeless with Double]
+  
+  /* 97 */ @js.native
+  object bc7Typeless extends TopLevel[bc7Typeless with Double]
+  
+  /* 98 */ @js.native
+  object bc7UIntNormalized extends TopLevel[bc7UIntNormalized with Double]
+  
+  /* 99 */ @js.native
+  object bc7UIntNormalizedSrgb extends TopLevel[bc7UIntNormalizedSrgb with Double]
+  
+  /* 55 */ @js.native
+  object d16UIntNormalized extends TopLevel[d16UIntNormalized with Double]
+  
+  /* 45 */ @js.native
+  object d24UIntNormalizedS8UInt extends TopLevel[d24UIntNormalizedS8UInt with Double]
+  
+  /* 40 */ @js.native
+  object d32Float extends TopLevel[d32Float with Double]
+  
+  /* 20 */ @js.native
+  object d32FloatS8X24UInt extends TopLevel[d32FloatS8X24UInt with Double]
+  
+  /* 69 */ @js.native
+  object g8R8G8B8UIntNormalized extends TopLevel[g8R8G8B8UIntNormalized with Double]
+  
+  /* 112 */ @js.native
+  object ia44 extends TopLevel[ia44 with Double]
+  
+  /* 110 */ @js.native
+  object nv11 extends TopLevel[nv11 with Double]
+  
+  /* 103 */ @js.native
+  object nv12 extends TopLevel[nv12 with Double]
+  
+  /* 106 */ @js.native
+  object opaque420 extends TopLevel[opaque420 with Double]
+  
+  /* 104 */ @js.native
+  object p010 extends TopLevel[p010 with Double]
+  
+  /* 105 */ @js.native
+  object p016 extends TopLevel[p016 with Double]
+  
+  /* 116 */ @js.native
+  object p208 extends TopLevel[p208 with Double]
+  
+  /* 113 */ @js.native
+  object p8 extends TopLevel[p8 with Double]
+  
+  /* 23 */ @js.native
+  object r10G10B10A2Typeless extends TopLevel[r10G10B10A2Typeless with Double]
+  
+  /* 25 */ @js.native
+  object r10G10B10A2UInt extends TopLevel[r10G10B10A2UInt with Double]
+  
+  /* 24 */ @js.native
+  object r10G10B10A2UIntNormalized extends TopLevel[r10G10B10A2UIntNormalized with Double]
+  
+  /* 89 */ @js.native
+  object r10G10B10XRBiasA2UIntNormalized extends TopLevel[r10G10B10XRBiasA2UIntNormalized with Double]
+  
+  /* 26 */ @js.native
+  object r11G11B10Float extends TopLevel[r11G11B10Float with Double]
+  
+  /* 54 */ @js.native
+  object r16Float extends TopLevel[r16Float with Double]
+  
+  /* 10 */ @js.native
+  object r16G16B16A16Float extends TopLevel[r16G16B16A16Float with Double]
+  
+  /* 14 */ @js.native
+  object r16G16B16A16Int extends TopLevel[r16G16B16A16Int with Double]
+  
+  /* 13 */ @js.native
+  object r16G16B16A16IntNormalized extends TopLevel[r16G16B16A16IntNormalized with Double]
+  
+  /* 9 */ @js.native
+  object r16G16B16A16Typeless extends TopLevel[r16G16B16A16Typeless with Double]
+  
+  /* 12 */ @js.native
+  object r16G16B16A16UInt extends TopLevel[r16G16B16A16UInt with Double]
+  
+  /* 11 */ @js.native
+  object r16G16B16A16UIntNormalized extends TopLevel[r16G16B16A16UIntNormalized with Double]
+  
+  /* 34 */ @js.native
+  object r16G16Float extends TopLevel[r16G16Float with Double]
+  
+  /* 38 */ @js.native
+  object r16G16Int extends TopLevel[r16G16Int with Double]
+  
+  /* 37 */ @js.native
+  object r16G16IntNormalized extends TopLevel[r16G16IntNormalized with Double]
+  
+  /* 33 */ @js.native
+  object r16G16Typeless extends TopLevel[r16G16Typeless with Double]
+  
+  /* 36 */ @js.native
+  object r16G16UInt extends TopLevel[r16G16UInt with Double]
+  
+  /* 35 */ @js.native
+  object r16G16UIntNormalized extends TopLevel[r16G16UIntNormalized with Double]
+  
+  /* 59 */ @js.native
+  object r16Int extends TopLevel[r16Int with Double]
+  
+  /* 58 */ @js.native
+  object r16IntNormalized extends TopLevel[r16IntNormalized with Double]
+  
+  /* 53 */ @js.native
+  object r16Typeless extends TopLevel[r16Typeless with Double]
+  
+  /* 57 */ @js.native
+  object r16UInt extends TopLevel[r16UInt with Double]
+  
+  /* 56 */ @js.native
+  object r16UIntNormalized extends TopLevel[r16UIntNormalized with Double]
+  
+  /* 66 */ @js.native
+  object r1UIntNormalized extends TopLevel[r1UIntNormalized with Double]
+  
+  /* 44 */ @js.native
+  object r24G8Typeless extends TopLevel[r24G8Typeless with Double]
+  
+  /* 46 */ @js.native
+  object r24UIntNormalizedX8Typeless extends TopLevel[r24UIntNormalizedX8Typeless with Double]
+  
+  /* 41 */ @js.native
+  object r32Float extends TopLevel[r32Float with Double]
+  
+  /* 21 */ @js.native
+  object r32FloatX8X24Typeless extends TopLevel[r32FloatX8X24Typeless with Double]
+  
+  /* 2 */ @js.native
+  object r32G32B32A32Float extends TopLevel[r32G32B32A32Float with Double]
+  
+  /* 4 */ @js.native
+  object r32G32B32A32Int extends TopLevel[r32G32B32A32Int with Double]
+  
+  /* 1 */ @js.native
+  object r32G32B32A32Typeless extends TopLevel[r32G32B32A32Typeless with Double]
+  
+  /* 3 */ @js.native
+  object r32G32B32A32UInt extends TopLevel[r32G32B32A32UInt with Double]
+  
+  /* 6 */ @js.native
+  object r32G32B32Float extends TopLevel[r32G32B32Float with Double]
+  
+  /* 8 */ @js.native
+  object r32G32B32Int extends TopLevel[r32G32B32Int with Double]
+  
+  /* 5 */ @js.native
+  object r32G32B32Typeless extends TopLevel[r32G32B32Typeless with Double]
+  
+  /* 7 */ @js.native
+  object r32G32B32UInt extends TopLevel[r32G32B32UInt with Double]
+  
+  /* 16 */ @js.native
+  object r32G32Float extends TopLevel[r32G32Float with Double]
+  
+  /* 18 */ @js.native
+  object r32G32Int extends TopLevel[r32G32Int with Double]
+  
+  /* 15 */ @js.native
+  object r32G32Typeless extends TopLevel[r32G32Typeless with Double]
+  
+  /* 17 */ @js.native
+  object r32G32UInt extends TopLevel[r32G32UInt with Double]
+  
+  /* 19 */ @js.native
+  object r32G8X24Typeless extends TopLevel[r32G8X24Typeless with Double]
+  
+  /* 43 */ @js.native
+  object r32Int extends TopLevel[r32Int with Double]
+  
+  /* 39 */ @js.native
+  object r32Typeless extends TopLevel[r32Typeless with Double]
+  
+  /* 42 */ @js.native
+  object r32UInt extends TopLevel[r32UInt with Double]
+  
+  /* 32 */ @js.native
+  object r8G8B8A8Int extends TopLevel[r8G8B8A8Int with Double]
+  
+  /* 31 */ @js.native
+  object r8G8B8A8IntNormalized extends TopLevel[r8G8B8A8IntNormalized with Double]
+  
+  /* 27 */ @js.native
+  object r8G8B8A8Typeless extends TopLevel[r8G8B8A8Typeless with Double]
+  
+  /* 30 */ @js.native
+  object r8G8B8A8UInt extends TopLevel[r8G8B8A8UInt with Double]
+  
+  /* 28 */ @js.native
+  object r8G8B8A8UIntNormalized extends TopLevel[r8G8B8A8UIntNormalized with Double]
+  
+  /* 29 */ @js.native
+  object r8G8B8A8UIntNormalizedSrgb extends TopLevel[r8G8B8A8UIntNormalizedSrgb with Double]
+  
+  /* 68 */ @js.native
+  object r8G8B8G8UIntNormalized extends TopLevel[r8G8B8G8UIntNormalized with Double]
+  
+  /* 52 */ @js.native
+  object r8G8Int extends TopLevel[r8G8Int with Double]
+  
+  /* 51 */ @js.native
+  object r8G8IntNormalized extends TopLevel[r8G8IntNormalized with Double]
+  
+  /* 48 */ @js.native
+  object r8G8Typeless extends TopLevel[r8G8Typeless with Double]
+  
+  /* 50 */ @js.native
+  object r8G8UInt extends TopLevel[r8G8UInt with Double]
+  
+  /* 49 */ @js.native
+  object r8G8UIntNormalized extends TopLevel[r8G8UIntNormalized with Double]
+  
+  /* 64 */ @js.native
+  object r8Int extends TopLevel[r8Int with Double]
+  
+  /* 63 */ @js.native
+  object r8IntNormalized extends TopLevel[r8IntNormalized with Double]
+  
+  /* 60 */ @js.native
+  object r8Typeless extends TopLevel[r8Typeless with Double]
+  
+  /* 62 */ @js.native
+  object r8UInt extends TopLevel[r8UInt with Double]
+  
+  /* 61 */ @js.native
+  object r8UIntNormalized extends TopLevel[r8UIntNormalized with Double]
+  
+  /* 67 */ @js.native
+  object r9G9B9E5SharedExponent extends TopLevel[r9G9B9E5SharedExponent with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 117 */ @js.native
+  object v208 extends TopLevel[v208 with Double]
+  
+  /* 118 */ @js.native
+  object v408 extends TopLevel[v408 with Double]
+  
+  /* 47 */ @js.native
+  object x24TypelessG8UInt extends TopLevel[x24TypelessG8UInt with Double]
+  
+  /* 22 */ @js.native
+  object x32TypelessG8X24UInt extends TopLevel[x32TypelessG8X24UInt with Double]
+  
+  /* 108 */ @js.native
+  object y210 extends TopLevel[y210 with Double]
+  
+  /* 109 */ @js.native
+  object y216 extends TopLevel[y216 with Double]
+  
+  /* 101 */ @js.native
+  object y410 extends TopLevel[y410 with Double]
+  
+  /* 102 */ @js.native
+  object y416 extends TopLevel[y416 with Double]
+  
+  /* 107 */ @js.native
+  object yuy2 extends TopLevel[yuy2 with Double]
+  
 }
 

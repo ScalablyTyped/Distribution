@@ -1,5 +1,36 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.EventType.OnBeforeGridDispose
+import typings.sharepoint.SP.JsGrid.EventType.OnBeforePropertyChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnBeginRedoDataUpdateChange
+import typings.sharepoint.SP.JsGrid.EventType.OnBeginRenameColumn
+import typings.sharepoint.SP.JsGrid.EventType.OnBeginUndoDataUpdateChange
+import typings.sharepoint.SP.JsGrid.EventType.OnCellEditBegin
+import typings.sharepoint.SP.JsGrid.EventType.OnCellEditCompleted
+import typings.sharepoint.SP.JsGrid.EventType.OnCellErrorStateChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnCellFocusChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnDoubleClick
+import typings.sharepoint.SP.JsGrid.EventType.OnEndRenameColumn
+import typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordAdded
+import typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordCommitted
+import typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordPropertyChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnGridErrorStateChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnInitialChangesForChangeKeyComplete
+import typings.sharepoint.SP.JsGrid.EventType.OnPasteBegin
+import typings.sharepoint.SP.JsGrid.EventType.OnPasteEnd
+import typings.sharepoint.SP.JsGrid.EventType.OnPropertyChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnRecordChecked
+import typings.sharepoint.SP.JsGrid.EventType.OnRecordDeleted
+import typings.sharepoint.SP.JsGrid.EventType.OnRecordInserted
+import typings.sharepoint.SP.JsGrid.EventType.OnRecordsReordered
+import typings.sharepoint.SP.JsGrid.EventType.OnRightClick
+import typings.sharepoint.SP.JsGrid.EventType.OnRowErrorStateChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnRowEscape
+import typings.sharepoint.SP.JsGrid.EventType.OnRowFocusChanged
+import typings.sharepoint.SP.JsGrid.EventType.OnSingleCellClick
+import typings.sharepoint.SP.JsGrid.EventType.OnSingleCellKeyDown
+import typings.sharepoint.SP.JsGrid.EventType.OnVacateChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -100,37 +131,97 @@ object EventType extends js.Object {
   @js.native
   sealed trait OnVacateChange extends EventType
   
-  /* 15 */ val OnBeforeGridDispose: typings.sharepoint.SP.JsGrid.EventType.OnBeforeGridDispose with Double = js.native
-  /* 22 */ val OnBeforePropertyChanged: typings.sharepoint.SP.JsGrid.EventType.OnBeforePropertyChanged with Double = js.native
-  /* 28 */ val OnBeginRedoDataUpdateChange: typings.sharepoint.SP.JsGrid.EventType.OnBeginRedoDataUpdateChange with Double = js.native
-  /* 24 */ val OnBeginRenameColumn: typings.sharepoint.SP.JsGrid.EventType.OnBeginRenameColumn with Double = js.native
-  /* 29 */ val OnBeginUndoDataUpdateChange: typings.sharepoint.SP.JsGrid.EventType.OnBeginUndoDataUpdateChange with Double = js.native
-  /* 2 */ val OnCellEditBegin: typings.sharepoint.SP.JsGrid.EventType.OnCellEditBegin with Double = js.native
-  /* 3 */ val OnCellEditCompleted: typings.sharepoint.SP.JsGrid.EventType.OnCellEditCompleted with Double = js.native
-  /* 9 */ val OnCellErrorStateChanged: typings.sharepoint.SP.JsGrid.EventType.OnCellErrorStateChanged with Double = js.native
-  /* 0 */ val OnCellFocusChanged: typings.sharepoint.SP.JsGrid.EventType.OnCellFocusChanged with Double = js.native
-  /* 14 */ val OnDoubleClick: typings.sharepoint.SP.JsGrid.EventType.OnDoubleClick with Double = js.native
-  /* 25 */ val OnEndRenameColumn: typings.sharepoint.SP.JsGrid.EventType.OnEndRenameColumn with Double = js.native
-  /* 10 */ val OnEntryRecordAdded: typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordAdded with Double = js.native
-  /* 11 */ val OnEntryRecordCommitted: typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordCommitted with Double = js.native
-  /* 12 */ val OnEntryRecordPropertyChanged: typings.sharepoint.SP.JsGrid.EventType.OnEntryRecordPropertyChanged with Double = js.native
-  /* 19 */ val OnGridErrorStateChanged: typings.sharepoint.SP.JsGrid.EventType.OnGridErrorStateChanged with Double = js.native
-  /* 17 */ val OnInitialChangesForChangeKeyComplete: typings.sharepoint.SP.JsGrid.EventType.OnInitialChangesForChangeKeyComplete with Double = js.native
-  /* 26 */ val OnPasteBegin: typings.sharepoint.SP.JsGrid.EventType.OnPasteBegin with Double = js.native
-  /* 27 */ val OnPasteEnd: typings.sharepoint.SP.JsGrid.EventType.OnPasteEnd with Double = js.native
-  /* 5 */ val OnPropertyChanged: typings.sharepoint.SP.JsGrid.EventType.OnPropertyChanged with Double = js.native
-  /* 8 */ val OnRecordChecked: typings.sharepoint.SP.JsGrid.EventType.OnRecordChecked with Double = js.native
-  /* 7 */ val OnRecordDeleted: typings.sharepoint.SP.JsGrid.EventType.OnRecordDeleted with Double = js.native
-  /* 6 */ val OnRecordInserted: typings.sharepoint.SP.JsGrid.EventType.OnRecordInserted with Double = js.native
-  /* 21 */ val OnRecordsReordered: typings.sharepoint.SP.JsGrid.EventType.OnRecordsReordered with Double = js.native
-  /* 4 */ val OnRightClick: typings.sharepoint.SP.JsGrid.EventType.OnRightClick with Double = js.native
-  /* 13 */ val OnRowErrorStateChanged: typings.sharepoint.SP.JsGrid.EventType.OnRowErrorStateChanged with Double = js.native
-  /* 23 */ val OnRowEscape: typings.sharepoint.SP.JsGrid.EventType.OnRowEscape with Double = js.native
-  /* 1 */ val OnRowFocusChanged: typings.sharepoint.SP.JsGrid.EventType.OnRowFocusChanged with Double = js.native
-  /* 16 */ val OnSingleCellClick: typings.sharepoint.SP.JsGrid.EventType.OnSingleCellClick with Double = js.native
-  /* 20 */ val OnSingleCellKeyDown: typings.sharepoint.SP.JsGrid.EventType.OnSingleCellKeyDown with Double = js.native
-  /* 18 */ val OnVacateChange: typings.sharepoint.SP.JsGrid.EventType.OnVacateChange with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+  /* 15 */ @js.native
+  object OnBeforeGridDispose extends TopLevel[OnBeforeGridDispose with Double]
+  
+  /* 22 */ @js.native
+  object OnBeforePropertyChanged extends TopLevel[OnBeforePropertyChanged with Double]
+  
+  /* 28 */ @js.native
+  object OnBeginRedoDataUpdateChange extends TopLevel[OnBeginRedoDataUpdateChange with Double]
+  
+  /* 24 */ @js.native
+  object OnBeginRenameColumn extends TopLevel[OnBeginRenameColumn with Double]
+  
+  /* 29 */ @js.native
+  object OnBeginUndoDataUpdateChange extends TopLevel[OnBeginUndoDataUpdateChange with Double]
+  
+  /* 2 */ @js.native
+  object OnCellEditBegin extends TopLevel[OnCellEditBegin with Double]
+  
+  /* 3 */ @js.native
+  object OnCellEditCompleted extends TopLevel[OnCellEditCompleted with Double]
+  
+  /* 9 */ @js.native
+  object OnCellErrorStateChanged extends TopLevel[OnCellErrorStateChanged with Double]
+  
+  /* 0 */ @js.native
+  object OnCellFocusChanged extends TopLevel[OnCellFocusChanged with Double]
+  
+  /* 14 */ @js.native
+  object OnDoubleClick extends TopLevel[OnDoubleClick with Double]
+  
+  /* 25 */ @js.native
+  object OnEndRenameColumn extends TopLevel[OnEndRenameColumn with Double]
+  
+  /* 10 */ @js.native
+  object OnEntryRecordAdded extends TopLevel[OnEntryRecordAdded with Double]
+  
+  /* 11 */ @js.native
+  object OnEntryRecordCommitted extends TopLevel[OnEntryRecordCommitted with Double]
+  
+  /* 12 */ @js.native
+  object OnEntryRecordPropertyChanged extends TopLevel[OnEntryRecordPropertyChanged with Double]
+  
+  /* 19 */ @js.native
+  object OnGridErrorStateChanged extends TopLevel[OnGridErrorStateChanged with Double]
+  
+  /* 17 */ @js.native
+  object OnInitialChangesForChangeKeyComplete extends TopLevel[OnInitialChangesForChangeKeyComplete with Double]
+  
+  /* 26 */ @js.native
+  object OnPasteBegin extends TopLevel[OnPasteBegin with Double]
+  
+  /* 27 */ @js.native
+  object OnPasteEnd extends TopLevel[OnPasteEnd with Double]
+  
+  /* 5 */ @js.native
+  object OnPropertyChanged extends TopLevel[OnPropertyChanged with Double]
+  
+  /* 8 */ @js.native
+  object OnRecordChecked extends TopLevel[OnRecordChecked with Double]
+  
+  /* 7 */ @js.native
+  object OnRecordDeleted extends TopLevel[OnRecordDeleted with Double]
+  
+  /* 6 */ @js.native
+  object OnRecordInserted extends TopLevel[OnRecordInserted with Double]
+  
+  /* 21 */ @js.native
+  object OnRecordsReordered extends TopLevel[OnRecordsReordered with Double]
+  
+  /* 4 */ @js.native
+  object OnRightClick extends TopLevel[OnRightClick with Double]
+  
+  /* 13 */ @js.native
+  object OnRowErrorStateChanged extends TopLevel[OnRowErrorStateChanged with Double]
+  
+  /* 23 */ @js.native
+  object OnRowEscape extends TopLevel[OnRowEscape with Double]
+  
+  /* 1 */ @js.native
+  object OnRowFocusChanged extends TopLevel[OnRowFocusChanged with Double]
+  
+  /* 16 */ @js.native
+  object OnSingleCellClick extends TopLevel[OnSingleCellClick with Double]
+  
+  /* 20 */ @js.native
+  object OnSingleCellKeyDown extends TopLevel[OnSingleCellKeyDown with Double]
+  
+  /* 18 */ @js.native
+  object OnVacateChange extends TopLevel[OnVacateChange with Double]
+  
 }
 

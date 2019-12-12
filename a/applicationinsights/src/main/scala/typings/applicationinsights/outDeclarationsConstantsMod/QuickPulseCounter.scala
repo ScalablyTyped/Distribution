@@ -1,5 +1,15 @@
 package typings.applicationinsights.outDeclarationsConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.COMMITTED_BYTES
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_DURATION
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_FAILURE_RATE
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_RATE
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.EXCEPTION_RATE
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.PROCESSOR_TIME
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_DURATION
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_FAILURE_RATE
+import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_RATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object QuickPulseCounter extends js.Object {
   @js.native
   sealed trait REQUEST_RATE extends QuickPulseCounter
   
-  /* "\\Memory\\Committed Bytes" */ val COMMITTED_BYTES: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.COMMITTED_BYTES with String = js.native
-  /* "\\ApplicationInsights\\Dependency Call Duration" */ val DEPENDENCY_DURATION: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_DURATION with String = js.native
-  /* "\\ApplicationInsights\\Dependency Calls Failed/Sec" */ val DEPENDENCY_FAILURE_RATE: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_FAILURE_RATE with String = js.native
-  /* "\\ApplicationInsights\\Dependency Calls/Sec" */ val DEPENDENCY_RATE: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.DEPENDENCY_RATE with String = js.native
-  /* "\\ApplicationInsights\\Exceptions/Sec" */ val EXCEPTION_RATE: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.EXCEPTION_RATE with String = js.native
-  /* "\\Processor(_Total)\\% Processor Time" */ val PROCESSOR_TIME: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.PROCESSOR_TIME with String = js.native
-  /* "\\ApplicationInsights\\Request Duration" */ val REQUEST_DURATION: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_DURATION with String = js.native
-  /* "\\ApplicationInsights\\Requests Failed/Sec" */ val REQUEST_FAILURE_RATE: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_FAILURE_RATE with String = js.native
-  /* "\\ApplicationInsights\\Requests/Sec" */ val REQUEST_RATE: typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseCounter.REQUEST_RATE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[QuickPulseCounter with String] = js.native
+  /* "\\Memory\\Committed Bytes" */ @js.native
+  object COMMITTED_BYTES extends TopLevel[COMMITTED_BYTES with String]
+  
+  /* "\\ApplicationInsights\\Dependency Call Duration" */ @js.native
+  object DEPENDENCY_DURATION extends TopLevel[DEPENDENCY_DURATION with String]
+  
+  /* "\\ApplicationInsights\\Dependency Calls Failed/Sec" */ @js.native
+  object DEPENDENCY_FAILURE_RATE extends TopLevel[DEPENDENCY_FAILURE_RATE with String]
+  
+  /* "\\ApplicationInsights\\Dependency Calls/Sec" */ @js.native
+  object DEPENDENCY_RATE extends TopLevel[DEPENDENCY_RATE with String]
+  
+  /* "\\ApplicationInsights\\Exceptions/Sec" */ @js.native
+  object EXCEPTION_RATE extends TopLevel[EXCEPTION_RATE with String]
+  
+  /* "\\Processor(_Total)\\% Processor Time" */ @js.native
+  object PROCESSOR_TIME extends TopLevel[PROCESSOR_TIME with String]
+  
+  /* "\\ApplicationInsights\\Request Duration" */ @js.native
+  object REQUEST_DURATION extends TopLevel[REQUEST_DURATION with String]
+  
+  /* "\\ApplicationInsights\\Requests Failed/Sec" */ @js.native
+  object REQUEST_FAILURE_RATE extends TopLevel[REQUEST_FAILURE_RATE with String]
+  
+  /* "\\ApplicationInsights\\Requests/Sec" */ @js.native
+  object REQUEST_RATE extends TopLevel[REQUEST_RATE with String]
+  
 }
 

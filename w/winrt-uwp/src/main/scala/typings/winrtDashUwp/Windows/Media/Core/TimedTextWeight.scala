@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWeight.bold
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWeight.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object TimedTextWeight extends js.Object {
   @js.native
   sealed trait normal extends TimedTextWeight
   
-  /* 1 */ val bold: typings.winrtDashUwp.Windows.Media.Core.TimedTextWeight.bold with Double = js.native
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.Media.Core.TimedTextWeight.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimedTextWeight with Double] = js.native
+  /* 1 */ @js.native
+  object bold extends TopLevel[bold with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

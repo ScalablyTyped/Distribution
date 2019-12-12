@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.accessDenied
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.invalidXmlSyntax
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.ok
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.other
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileInvalidAppId
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileNameTooLong
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object VpnManagementErrorStatus extends js.Object {
   @js.native
   sealed trait profileNameTooLong extends VpnManagementErrorStatus
   
-  /* 5 */ val accessDenied: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.accessDenied with Double = js.native
-  /* 2 */ val invalidXmlSyntax: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.invalidXmlSyntax with Double = js.native
-  /* 0 */ val ok: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.ok with Double = js.native
-  /* 1 */ val other: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.other with Double = js.native
-  /* 4 */ val profileInvalidAppId: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileInvalidAppId with Double = js.native
-  /* 3 */ val profileNameTooLong: typings.winrtDashUwp.Windows.Networking.Vpn.VpnManagementErrorStatus.profileNameTooLong with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnManagementErrorStatus with Double] = js.native
+  /* 5 */ @js.native
+  object accessDenied extends TopLevel[accessDenied with Double]
+  
+  /* 2 */ @js.native
+  object invalidXmlSyntax extends TopLevel[invalidXmlSyntax with Double]
+  
+  /* 0 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 1 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 4 */ @js.native
+  object profileInvalidAppId extends TopLevel[profileInvalidAppId with Double]
+  
+  /* 3 */ @js.native
+  object profileNameTooLong extends TopLevel[profileNameTooLong with Double]
+  
 }
 

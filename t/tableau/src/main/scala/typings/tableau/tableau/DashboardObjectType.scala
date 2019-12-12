@@ -1,5 +1,17 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.DashboardObjectType.ADDIN
+import typings.tableau.tableau.DashboardObjectType.BLANK
+import typings.tableau.tableau.DashboardObjectType.IMAGE
+import typings.tableau.tableau.DashboardObjectType.LEGEND
+import typings.tableau.tableau.DashboardObjectType.PAGE_FILTER
+import typings.tableau.tableau.DashboardObjectType.PARAMETER_CONTROL
+import typings.tableau.tableau.DashboardObjectType.QUICK_FILTER
+import typings.tableau.tableau.DashboardObjectType.TEXT
+import typings.tableau.tableau.DashboardObjectType.TITLE
+import typings.tableau.tableau.DashboardObjectType.WEB_PAGE
+import typings.tableau.tableau.DashboardObjectType.WORKSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object DashboardObjectType extends js.Object {
   @js.native
   sealed trait WORKSHEET extends DashboardObjectType
   
-  /* "addIn" */ val ADDIN: typings.tableau.tableau.DashboardObjectType.ADDIN with String = js.native
-  /* "blank" */ val BLANK: typings.tableau.tableau.DashboardObjectType.BLANK with String = js.native
-  /* "image" */ val IMAGE: typings.tableau.tableau.DashboardObjectType.IMAGE with String = js.native
-  /* "legend" */ val LEGEND: typings.tableau.tableau.DashboardObjectType.LEGEND with String = js.native
-  /* "pageFilter" */ val PAGE_FILTER: typings.tableau.tableau.DashboardObjectType.PAGE_FILTER with String = js.native
-  /* "parameterControl" */ val PARAMETER_CONTROL: typings.tableau.tableau.DashboardObjectType.PARAMETER_CONTROL with String = js.native
-  /* "quickFilter" */ val QUICK_FILTER: typings.tableau.tableau.DashboardObjectType.QUICK_FILTER with String = js.native
-  /* "text" */ val TEXT: typings.tableau.tableau.DashboardObjectType.TEXT with String = js.native
-  /* "title" */ val TITLE: typings.tableau.tableau.DashboardObjectType.TITLE with String = js.native
-  /* "webPage" */ val WEB_PAGE: typings.tableau.tableau.DashboardObjectType.WEB_PAGE with String = js.native
-  /* "worksheet" */ val WORKSHEET: typings.tableau.tableau.DashboardObjectType.WORKSHEET with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DashboardObjectType with String] = js.native
+  /* "addIn" */ @js.native
+  object ADDIN extends TopLevel[ADDIN with String]
+  
+  /* "blank" */ @js.native
+  object BLANK extends TopLevel[BLANK with String]
+  
+  /* "image" */ @js.native
+  object IMAGE extends TopLevel[IMAGE with String]
+  
+  /* "legend" */ @js.native
+  object LEGEND extends TopLevel[LEGEND with String]
+  
+  /* "pageFilter" */ @js.native
+  object PAGE_FILTER extends TopLevel[PAGE_FILTER with String]
+  
+  /* "parameterControl" */ @js.native
+  object PARAMETER_CONTROL extends TopLevel[PARAMETER_CONTROL with String]
+  
+  /* "quickFilter" */ @js.native
+  object QUICK_FILTER extends TopLevel[QUICK_FILTER with String]
+  
+  /* "text" */ @js.native
+  object TEXT extends TopLevel[TEXT with String]
+  
+  /* "title" */ @js.native
+  object TITLE extends TopLevel[TITLE with String]
+  
+  /* "webPage" */ @js.native
+  object WEB_PAGE extends TopLevel[WEB_PAGE with String]
+  
+  /* "worksheet" */ @js.native
+  object WORKSHEET extends TopLevel[WORKSHEET with String]
+  
 }
 

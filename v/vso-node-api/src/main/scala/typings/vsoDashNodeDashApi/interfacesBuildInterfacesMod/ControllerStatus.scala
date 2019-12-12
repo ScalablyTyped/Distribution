@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Available
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Offline
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ControllerStatus extends js.Object {
   @js.native
   sealed trait Unavailable extends ControllerStatus
   
-  /* 1 */ val Available: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Available with Double = js.native
-  /* 2 */ val Offline: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Offline with Double = js.native
-  /* 0 */ val Unavailable: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ControllerStatus.Unavailable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControllerStatus with Double] = js.native
+  /* 1 */ @js.native
+  object Available extends TopLevel[Available with Double]
+  
+  /* 2 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
+  /* 0 */ @js.native
+  object Unavailable extends TopLevel[Unavailable with Double]
+  
 }
 

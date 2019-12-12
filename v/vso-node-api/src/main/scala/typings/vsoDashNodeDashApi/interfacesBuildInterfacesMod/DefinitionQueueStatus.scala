@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Disabled
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Enabled
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object DefinitionQueueStatus extends js.Object {
   @js.native
   sealed trait Paused extends DefinitionQueueStatus
   
-  /* 2 */ val Disabled: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Disabled with Double = js.native
-  /* 0 */ val Enabled: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Enabled with Double = js.native
-  /* 1 */ val Paused: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueueStatus.Paused with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DefinitionQueueStatus with Double] = js.native
+  /* 2 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 0 */ @js.native
+  object Enabled extends TopLevel[Enabled with Double]
+  
+  /* 1 */ @js.native
+  object Paused extends TopLevel[Paused with Double]
+  
 }
 

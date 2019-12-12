@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.FormPosition.BottomLeft
+import typings.ejDotWebDotAll.ej.Grid.FormPosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object FormPosition extends js.Object {
   @js.native
   sealed trait TopRight extends FormPosition
   
-  /* 0 */ val BottomLeft: typings.ejDotWebDotAll.ej.Grid.FormPosition.BottomLeft with Double = js.native
-  /* 1 */ val TopRight: typings.ejDotWebDotAll.ej.Grid.FormPosition.TopRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormPosition with Double] = js.native
+  /* 0 */ @js.native
+  object BottomLeft extends TopLevel[BottomLeft with Double]
+  
+  /* 1 */ @js.native
+  object TopRight extends TopLevel[TopRight with Double]
+  
 }
 

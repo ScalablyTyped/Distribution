@@ -1,5 +1,10 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.None
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot180
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot270
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot90
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PrintRotation extends js.Object {
   @js.native
   sealed trait Rot90 extends PrintRotation
   
-  /* 3 */ val None: typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.None with Double = js.native
-  /* 6 */ val Rot180: typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot180 with Double = js.native
-  /* 4 */ val Rot270: typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot270 with Double = js.native
-  /* 5 */ val Rot90: typings.jsprintmanager.jsprintmanagerMod.JSPM.PrintRotation.Rot90 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintRotation with Double] = js.native
+  /* 3 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 6 */ @js.native
+  object Rot180 extends TopLevel[Rot180 with Double]
+  
+  /* 4 */ @js.native
+  object Rot270 extends TopLevel[Rot270 with Double]
+  
+  /* 5 */ @js.native
+  object Rot90 extends TopLevel[Rot90 with Double]
+  
 }
 

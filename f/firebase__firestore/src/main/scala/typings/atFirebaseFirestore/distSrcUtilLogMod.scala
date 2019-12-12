@@ -1,6 +1,10 @@
 package typings.atFirebaseFirestore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel
+import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.DEBUG
+import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.ERROR
+import typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.SILENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +30,17 @@ object distSrcUtilLogMod extends js.Object {
     @js.native
     sealed trait SILENT extends LogLevel
     
-    /* 0 */ val DEBUG: typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.DEBUG with Double = js.native
-    /* 1 */ val ERROR: typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.ERROR with Double = js.native
-    /* 2 */ val SILENT: typings.atFirebaseFirestore.distSrcUtilLogMod.LogLevel.SILENT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    /* 0 */ @js.native
+    object DEBUG extends TopLevel[DEBUG with Double]
+    
+    /* 1 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 2 */ @js.native
+    object SILENT extends TopLevel[SILENT with Double]
+    
   }
   
 }

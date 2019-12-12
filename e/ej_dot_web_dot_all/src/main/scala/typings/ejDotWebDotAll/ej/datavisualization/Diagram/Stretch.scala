@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Fill
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Uniform
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.UniformToFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object Stretch extends js.Object {
   @js.native
   sealed trait UniformToFill extends Stretch
   
-  /* 1 */ val Fill: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Fill with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.None with Double = js.native
-  /* 2 */ val Uniform: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.Uniform with Double = js.native
-  /* 3 */ val UniformToFill: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Stretch.UniformToFill with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Stretch with Double] = js.native
+  /* 1 */ @js.native
+  object Fill extends TopLevel[Fill with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Uniform extends TopLevel[Uniform with Double]
+  
+  /* 3 */ @js.native
+  object UniformToFill extends TopLevel[UniformToFill with Double]
+  
 }
 

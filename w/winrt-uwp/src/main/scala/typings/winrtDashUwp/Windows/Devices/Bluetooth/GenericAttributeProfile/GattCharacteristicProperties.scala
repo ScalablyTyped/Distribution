@@ -1,6 +1,17 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.authenticatedSignedWrites
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.broadcast
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.extendedProperties
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.indicate
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.none
 import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.notify
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.read
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.reliableWrites
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writableAuxiliaries
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.write
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writeWithoutResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,19 +67,39 @@ object GattCharacteristicProperties extends js.Object {
   @js.native
   sealed trait writeWithoutResponse extends GattCharacteristicProperties
   
-  /* 7 */ val authenticatedSignedWrites: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.authenticatedSignedWrites with Double = js.native
-  /* 1 */ val broadcast: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.broadcast with Double = js.native
-  /* 8 */ val extendedProperties: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.extendedProperties with Double = js.native
-  /* 6 */ val indicate: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.indicate with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.none with Double = js.native
   /* 5 */ @JSName("notify")
-  val notify_FGattCharacteristicProperties: notify with Double = js.native
-  /* 2 */ val read: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.read with Double = js.native
-  /* 9 */ val reliableWrites: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.reliableWrites with Double = js.native
-  /* 10 */ val writableAuxiliaries: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writableAuxiliaries with Double = js.native
-  /* 4 */ val write: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.write with Double = js.native
-  /* 3 */ val writeWithoutResponse: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicProperties.writeWithoutResponse with Double = js.native
+  val notify_ : notify with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GattCharacteristicProperties with Double] = js.native
+  /* 7 */ @js.native
+  object authenticatedSignedWrites extends TopLevel[authenticatedSignedWrites with Double]
+  
+  /* 1 */ @js.native
+  object broadcast extends TopLevel[broadcast with Double]
+  
+  /* 8 */ @js.native
+  object extendedProperties extends TopLevel[extendedProperties with Double]
+  
+  /* 6 */ @js.native
+  object indicate extends TopLevel[indicate with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object read extends TopLevel[read with Double]
+  
+  /* 9 */ @js.native
+  object reliableWrites extends TopLevel[reliableWrites with Double]
+  
+  /* 10 */ @js.native
+  object writableAuxiliaries extends TopLevel[writableAuxiliaries with Double]
+  
+  /* 4 */ @js.native
+  object write extends TopLevel[write with Double]
+  
+  /* 3 */ @js.native
+  object writeWithoutResponse extends TopLevel[writeWithoutResponse with Double]
+  
 }
 

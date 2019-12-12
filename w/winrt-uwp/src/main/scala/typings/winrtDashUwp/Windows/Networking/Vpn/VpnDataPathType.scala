@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.receive
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.send
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object VpnDataPathType extends js.Object {
   @js.native
   sealed trait send extends VpnDataPathType
   
-  /* 1 */ val receive: typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.receive with Double = js.native
-  /* 0 */ val send: typings.winrtDashUwp.Windows.Networking.Vpn.VpnDataPathType.send with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnDataPathType with Double] = js.native
+  /* 1 */ @js.native
+  object receive extends TopLevel[receive with Double]
+  
+  /* 0 */ @js.native
+  object send extends TopLevel[send with Double]
+  
 }
 

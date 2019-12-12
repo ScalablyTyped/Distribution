@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Ascending
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Descending
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object FolderPathQueryOrder extends js.Object {
   @js.native
   sealed trait None extends FolderPathQueryOrder
   
-  /* 1 */ val Ascending: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Ascending with Double = js.native
-  /* 2 */ val Descending: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.Descending with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.FolderPathQueryOrder.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FolderPathQueryOrder with Double] = js.native
+  /* 1 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 2 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

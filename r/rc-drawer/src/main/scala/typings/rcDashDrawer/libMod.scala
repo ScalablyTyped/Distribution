@@ -1,5 +1,6 @@
 package typings.rcDashDrawer
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rcDashDrawer.libDrawerWrapperMod.DrawerWrapper
 import typings.rcDashDrawer.libIDrawerPropTypesMod.IDrawerProps
 import scala.scalajs.js
@@ -14,6 +15,8 @@ object libMod extends js.Object {
     def this(props: IDrawerProps) = this()
   }
   
-  val default: TypeofClassDrawerWrapper with Anon_ContextTypeDefaultProps = js.native
+  @js.native
+  object default extends TopLevel[TypeofClassDrawerWrapper with Anon_ContextTypeDefaultProps]
+  
 }
 

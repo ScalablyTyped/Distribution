@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_COLUMNS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_ROWS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ChartMergeStrategy extends js.Object {
   @js.native
   sealed trait MERGE_ROWS extends ChartMergeStrategy
   
-  /* 0 */ val MERGE_COLUMNS: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_COLUMNS with Double = js.native
-  /* 1 */ val MERGE_ROWS: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartMergeStrategy.MERGE_ROWS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChartMergeStrategy with Double] = js.native
+  /* 0 */ @js.native
+  object MERGE_COLUMNS extends TopLevel[MERGE_COLUMNS with Double]
+  
+  /* 1 */ @js.native
+  object MERGE_ROWS extends TopLevel[MERGE_ROWS with Double]
+  
 }
 

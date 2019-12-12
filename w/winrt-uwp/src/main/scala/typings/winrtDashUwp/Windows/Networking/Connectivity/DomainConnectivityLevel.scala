@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.authenticated
+import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.none
+import typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.unauthenticated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object DomainConnectivityLevel extends js.Object {
   @js.native
   sealed trait unauthenticated extends DomainConnectivityLevel
   
-  /* 2 */ val authenticated: typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.authenticated with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.none with Double = js.native
-  /* 1 */ val unauthenticated: typings.winrtDashUwp.Windows.Networking.Connectivity.DomainConnectivityLevel.unauthenticated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DomainConnectivityLevel with Double] = js.native
+  /* 2 */ @js.native
+  object authenticated extends TopLevel[authenticated with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object unauthenticated extends TopLevel[unauthenticated with Double]
+  
 }
 

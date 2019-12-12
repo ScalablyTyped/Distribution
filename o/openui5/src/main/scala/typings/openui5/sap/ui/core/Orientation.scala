@@ -1,5 +1,8 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.Orientation.Horizontal
+import typings.openui5.sap.ui.core.Orientation.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Orientation extends js.Object {
   @js.native
   sealed trait Vertical extends Orientation
   
-  /* 0 */ val Horizontal: typings.openui5.sap.ui.core.Orientation.Horizontal with Double = js.native
-  /* 1 */ val Vertical: typings.openui5.sap.ui.core.Orientation.Vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
+  /* 0 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 1 */ @js.native
+  object Vertical extends TopLevel[Vertical with Double]
+  
 }
 

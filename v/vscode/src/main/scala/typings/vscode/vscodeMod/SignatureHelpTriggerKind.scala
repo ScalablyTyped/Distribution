@@ -1,5 +1,9 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.SignatureHelpTriggerKind.ContentChange
+import typings.vscode.vscodeMod.SignatureHelpTriggerKind.Invoke
+import typings.vscode.vscodeMod.SignatureHelpTriggerKind.TriggerCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object SignatureHelpTriggerKind extends js.Object {
   @js.native
   sealed trait TriggerCharacter extends SignatureHelpTriggerKind
   
-  /* 3 */ val ContentChange: typings.vscode.vscodeMod.SignatureHelpTriggerKind.ContentChange with Double = js.native
-  /* 1 */ val Invoke: typings.vscode.vscodeMod.SignatureHelpTriggerKind.Invoke with Double = js.native
-  /* 2 */ val TriggerCharacter: typings.vscode.vscodeMod.SignatureHelpTriggerKind.TriggerCharacter with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind with Double] = js.native
+  /* 3 */ @js.native
+  object ContentChange extends TopLevel[ContentChange with Double]
+  
+  /* 1 */ @js.native
+  object Invoke extends TopLevel[Invoke with Double]
+  
+  /* 2 */ @js.native
+  object TriggerCharacter extends TopLevel[TriggerCharacter with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Security.Credentials.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.canceled
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.deviceBusy
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.deviceNotPresent
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.disabledByPolicy
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.notConfiguredForUser
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.retriesExhausted
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.verified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object UserConsentVerificationResult extends js.Object {
   @js.native
   sealed trait verified extends UserConsentVerificationResult
   
-  /* 6 */ val canceled: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.canceled with Double = js.native
-  /* 4 */ val deviceBusy: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.deviceBusy with Double = js.native
-  /* 1 */ val deviceNotPresent: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.deviceNotPresent with Double = js.native
-  /* 3 */ val disabledByPolicy: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.disabledByPolicy with Double = js.native
-  /* 2 */ val notConfiguredForUser: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.notConfiguredForUser with Double = js.native
-  /* 5 */ val retriesExhausted: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.retriesExhausted with Double = js.native
-  /* 0 */ val verified: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerificationResult.verified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserConsentVerificationResult with Double] = js.native
+  /* 6 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 4 */ @js.native
+  object deviceBusy extends TopLevel[deviceBusy with Double]
+  
+  /* 1 */ @js.native
+  object deviceNotPresent extends TopLevel[deviceNotPresent with Double]
+  
+  /* 3 */ @js.native
+  object disabledByPolicy extends TopLevel[disabledByPolicy with Double]
+  
+  /* 2 */ @js.native
+  object notConfiguredForUser extends TopLevel[notConfiguredForUser with Double]
+  
+  /* 5 */ @js.native
+  object retriesExhausted extends TopLevel[retriesExhausted with Double]
+  
+  /* 0 */ @js.native
+  object verified extends TopLevel[verified with Double]
+  
 }
 

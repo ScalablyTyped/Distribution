@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.high
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.low
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.medium
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object SpeechRecognitionConfidence extends js.Object {
   @js.native
   sealed trait rejected extends SpeechRecognitionConfidence
   
-  /* 0 */ val high: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.high with Double = js.native
-  /* 2 */ val low: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.low with Double = js.native
-  /* 1 */ val medium: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.medium with Double = js.native
-  /* 3 */ val rejected: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConfidence.rejected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpeechRecognitionConfidence with Double] = js.native
+  /* 0 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 2 */ @js.native
+  object low extends TopLevel[low with Double]
+  
+  /* 1 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
+  /* 3 */ @js.native
+  object rejected extends TopLevel[rejected with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.HighlightSpanKind.definition
+import typings.typescript.typescriptMod.HighlightSpanKind.none
+import typings.typescript.typescriptMod.HighlightSpanKind.reference
+import typings.typescript.typescriptMod.HighlightSpanKind.writtenReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object HighlightSpanKind extends js.Object {
   @js.native
   sealed trait writtenReference extends HighlightSpanKind
   
-  /* "definition" */ val definition: typings.typescript.typescriptMod.HighlightSpanKind.definition with String = js.native
-  /* "none" */ val none: typings.typescript.typescriptMod.HighlightSpanKind.none with String = js.native
-  /* "reference" */ val reference: typings.typescript.typescriptMod.HighlightSpanKind.reference with String = js.native
-  /* "writtenReference" */ val writtenReference: typings.typescript.typescriptMod.HighlightSpanKind.writtenReference with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HighlightSpanKind with String] = js.native
+  /* "definition" */ @js.native
+  object definition extends TopLevel[definition with String]
+  
+  /* "none" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "reference" */ @js.native
+  object reference extends TopLevel[reference with String]
+  
+  /* "writtenReference" */ @js.native
+  object writtenReference extends TopLevel[writtenReference with String]
+  
 }
 

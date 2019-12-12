@@ -2,6 +2,7 @@ package typings.libxslt.libxsltMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
 import typings.libxmljs.libxmljsMod.ParserOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,17 +46,6 @@ object libxmljs extends js.Object {
   class SaxPushParser ()
     extends typings.libxmljs.libxmljsMod.SaxPushParser
   
-  var Attribute: Instantiable0[typings.libxmljs.libxmljsMod.Attribute] = js.native
-  var Document: Instantiable0[typings.libxmljs.libxmljsMod.Document] = js.native
-  var Element: Instantiable2[
-    /* doc */ typings.libxmljs.libxmljsMod.Document, 
-    /* name */ String, 
-    typings.libxmljs.libxmljsMod.Element
-  ] = js.native
-  var Namespace: Instantiable0[typings.libxmljs.libxmljsMod.Namespace] = js.native
-  var Node: Instantiable0[typings.libxmljs.libxmljsMod.Node] = js.native
-  var SaxParser: Instantiable0[typings.libxmljs.libxmljsMod.SaxParser] = js.native
-  var SaxPushParser: Instantiable0[typings.libxmljs.libxmljsMod.SaxPushParser] = js.native
   val libxml_parser_version: String = js.native
   val libxml_version: String = js.native
   val version: String = js.native
@@ -71,5 +61,39 @@ object libxmljs extends js.Object {
   def parseXml(source: String, options: ParserOptions): typings.libxmljs.libxmljsMod.Document = js.native
   def parseXmlString(source: String): typings.libxmljs.libxmljsMod.Document = js.native
   def parseXmlString(source: String, options: ParserOptions): typings.libxmljs.libxmljsMod.Document = js.native
+  @js.native
+  object Attribute
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.Attribute]]
+  
+  @js.native
+  object Document
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.Document]]
+  
+  @js.native
+  object Element
+    extends TopLevel[
+          Instantiable2[
+            /* doc */ typings.libxmljs.libxmljsMod.Document, 
+            /* name */ String, 
+            typings.libxmljs.libxmljsMod.Element
+          ]
+        ]
+  
+  @js.native
+  object Namespace
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.Namespace]]
+  
+  @js.native
+  object Node
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.Node]]
+  
+  @js.native
+  object SaxParser
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.SaxParser]]
+  
+  @js.native
+  object SaxPushParser
+    extends TopLevel[Instantiable0[typings.libxmljs.libxmljsMod.SaxPushParser]]
+  
 }
 

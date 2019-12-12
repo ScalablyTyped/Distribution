@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.Manage
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.None
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.Use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TaskAgentPoolActionFilter extends js.Object {
   @js.native
   sealed trait Use extends TaskAgentPoolActionFilter
   
-  /* 2 */ val Manage: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.Manage with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.None with Double = js.native
-  /* 16 */ val Use: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolActionFilter.Use with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskAgentPoolActionFilter with Double] = js.native
+  /* 2 */ @js.native
+  object Manage extends TopLevel[Manage with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 16 */ @js.native
+  object Use extends TopLevel[Use with Double]
+  
 }
 

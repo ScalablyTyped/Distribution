@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.MultiRange
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Range
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SelectionUnit extends js.Object {
   @js.native
   sealed trait Single extends SelectionUnit
   
-  /* 2 */ val MultiRange: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.MultiRange with Double = js.native
-  /* 1 */ val Range: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Range with Double = js.native
-  /* 0 */ val Single: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionUnit.Single with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionUnit with Double] = js.native
+  /* 2 */ @js.native
+  object MultiRange extends TopLevel[MultiRange with Double]
+  
+  /* 1 */ @js.native
+  object Range extends TopLevel[Range with Double]
+  
+  /* 0 */ @js.native
+  object Single extends TopLevel[Single with Double]
+  
 }
 

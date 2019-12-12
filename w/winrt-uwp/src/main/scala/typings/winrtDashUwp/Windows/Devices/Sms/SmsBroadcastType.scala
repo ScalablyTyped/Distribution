@@ -1,5 +1,21 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasAmber
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasExtreme
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasPresidential
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasSevere
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasTest
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsEarthquake
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunami
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunamiAndEarthquake
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert1
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert2
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert3
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertAmber
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertInfo
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.latAlertLocal
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.other
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,22 +87,52 @@ object SmsBroadcastType extends js.Object {
   @js.native
   sealed trait other extends SmsBroadcastType
   
-  /* 4 */ val cmasAmber: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasAmber with Double = js.native
-  /* 2 */ val cmasExtreme: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasExtreme with Double = js.native
-  /* 1 */ val cmasPresidential: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasPresidential with Double = js.native
-  /* 3 */ val cmasSevere: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasSevere with Double = js.native
-  /* 5 */ val cmasTest: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.cmasTest with Double = js.native
-  /* 11 */ val etwsEarthquake: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsEarthquake with Double = js.native
-  /* 12 */ val etwsTsunami: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunami with Double = js.native
-  /* 13 */ val etwsTsunamiAndEarthquake: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.etwsTsunamiAndEarthquake with Double = js.native
-  /* 6 */ val euAlert1: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert1 with Double = js.native
-  /* 7 */ val euAlert2: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert2 with Double = js.native
-  /* 8 */ val euAlert3: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlert3 with Double = js.native
-  /* 9 */ val euAlertAmber: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertAmber with Double = js.native
-  /* 10 */ val euAlertInfo: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.euAlertInfo with Double = js.native
-  /* 14 */ val latAlertLocal: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.latAlertLocal with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.Devices.Sms.SmsBroadcastType.other with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmsBroadcastType with Double] = js.native
+  /* 4 */ @js.native
+  object cmasAmber extends TopLevel[cmasAmber with Double]
+  
+  /* 2 */ @js.native
+  object cmasExtreme extends TopLevel[cmasExtreme with Double]
+  
+  /* 1 */ @js.native
+  object cmasPresidential extends TopLevel[cmasPresidential with Double]
+  
+  /* 3 */ @js.native
+  object cmasSevere extends TopLevel[cmasSevere with Double]
+  
+  /* 5 */ @js.native
+  object cmasTest extends TopLevel[cmasTest with Double]
+  
+  /* 11 */ @js.native
+  object etwsEarthquake extends TopLevel[etwsEarthquake with Double]
+  
+  /* 12 */ @js.native
+  object etwsTsunami extends TopLevel[etwsTsunami with Double]
+  
+  /* 13 */ @js.native
+  object etwsTsunamiAndEarthquake extends TopLevel[etwsTsunamiAndEarthquake with Double]
+  
+  /* 6 */ @js.native
+  object euAlert1 extends TopLevel[euAlert1 with Double]
+  
+  /* 7 */ @js.native
+  object euAlert2 extends TopLevel[euAlert2 with Double]
+  
+  /* 8 */ @js.native
+  object euAlert3 extends TopLevel[euAlert3 with Double]
+  
+  /* 9 */ @js.native
+  object euAlertAmber extends TopLevel[euAlertAmber with Double]
+  
+  /* 10 */ @js.native
+  object euAlertInfo extends TopLevel[euAlertInfo with Double]
+  
+  /* 14 */ @js.native
+  object latAlertLocal extends TopLevel[latAlertLocal with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
 }
 

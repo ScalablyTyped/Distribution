@@ -1,5 +1,17 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.all
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.createShapes
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.edit
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.editShapes
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.erase
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.fillStyle
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.point
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polygon
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polyline
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.strokeStyle
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.styleShapes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,18 +66,40 @@ object DrawingBarAction extends js.Object {
   @js.native
   sealed trait styleShapes extends DrawingBarAction
   
-  /* 7 */ val all: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.all with Double = js.native
-  /* 8 */ val createShapes: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.createShapes with Double = js.native
-  /* 4 */ val edit: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.edit with Double = js.native
-  /* 9 */ val editShapes: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.editShapes with Double = js.native
-  /* 3 */ val erase: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.erase with Double = js.native
-  /* 6 */ val fillStyle: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.fillStyle with Double = js.native
-  /* 0 */ val point: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.point with Double = js.native
-  /* 2 */ val polygon: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polygon with Double = js.native
-  /* 1 */ val polyline: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.polyline with Double = js.native
-  /* 5 */ val strokeStyle: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.strokeStyle with Double = js.native
-  /* 10 */ val styleShapes: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction.styleShapes with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawingBarAction with Double] = js.native
+  /* 7 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 8 */ @js.native
+  object createShapes extends TopLevel[createShapes with Double]
+  
+  /* 4 */ @js.native
+  object edit extends TopLevel[edit with Double]
+  
+  /* 9 */ @js.native
+  object editShapes extends TopLevel[editShapes with Double]
+  
+  /* 3 */ @js.native
+  object erase extends TopLevel[erase with Double]
+  
+  /* 6 */ @js.native
+  object fillStyle extends TopLevel[fillStyle with Double]
+  
+  /* 0 */ @js.native
+  object point extends TopLevel[point with Double]
+  
+  /* 2 */ @js.native
+  object polygon extends TopLevel[polygon with Double]
+  
+  /* 1 */ @js.native
+  object polyline extends TopLevel[polyline with Double]
+  
+  /* 5 */ @js.native
+  object strokeStyle extends TopLevel[strokeStyle with Double]
+  
+  /* 10 */ @js.native
+  object styleShapes extends TopLevel[styleShapes with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.TransitRoutePreference.FEWER_TRANSFERS
+import typings.googlemaps.google.maps.TransitRoutePreference.LESS_WALKING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object TransitRoutePreference extends js.Object {
   @js.native
   sealed trait LESS_WALKING extends TransitRoutePreference
   
-  /* "FEWER_TRANSFERS" */ val FEWER_TRANSFERS: typings.googlemaps.google.maps.TransitRoutePreference.FEWER_TRANSFERS with String = js.native
-  /* "LESS_WALKING" */ val LESS_WALKING: typings.googlemaps.google.maps.TransitRoutePreference.LESS_WALKING with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TransitRoutePreference with String] = js.native
+  /* "FEWER_TRANSFERS" */ @js.native
+  object FEWER_TRANSFERS extends TopLevel[FEWER_TRANSFERS with String]
+  
+  /* "LESS_WALKING" */ @js.native
+  object LESS_WALKING extends TopLevel[LESS_WALKING with String]
+  
 }
 

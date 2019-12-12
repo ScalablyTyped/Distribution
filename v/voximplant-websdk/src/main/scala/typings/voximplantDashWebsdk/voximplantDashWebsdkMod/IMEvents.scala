@@ -1,5 +1,39 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatHistoryReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomBanList
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomCreated
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomError
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomHistoryReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInvitation
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInviteDeclined
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageModified
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageNotModified
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageRemoved
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomNewParticipant
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomOperation
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomParticipantExit
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomParticipants
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomPresenceUpdate
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomStateUpdate
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomSubjectChange
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomsDataReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatStateUpdate
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageModified
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageNotModified
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageRemoved
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageStatus
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.PresenceUpdate
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterItemChange
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterPresenceUpdate
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterReceived
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.SubscriptionRequest
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.SystemError
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.UCConnected
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.UCDisconnected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -115,41 +149,112 @@ object IMEvents extends js.Object {
   @js.native
   sealed trait UCDisconnected extends IMEvents
   
-  /* 0 */ val ChatHistoryReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatHistoryReceived with Double = js.native
-  /* 1 */ val ChatRoomBanList: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomBanList with Double = js.native
-  /* 2 */ val ChatRoomCreated: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomCreated with Double = js.native
-  /* 3 */ val ChatRoomError: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomError with Double = js.native
-  /* 4 */ val ChatRoomHistoryReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomHistoryReceived with Double = js.native
-  /* 5 */ val ChatRoomInfo: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInfo with Double = js.native
-  /* 6 */ val ChatRoomInvitation: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInvitation with Double = js.native
-  /* 7 */ val ChatRoomInviteDeclined: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInviteDeclined with Double = js.native
-  /* 8 */ val ChatRoomMessageModified: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageModified with Double = js.native
-  /* 9 */ val ChatRoomMessageNotModified: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageNotModified with Double = js.native
-  /* 10 */ val ChatRoomMessageReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageReceived with Double = js.native
-  /* 11 */ val ChatRoomMessageRemoved: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomMessageRemoved with Double = js.native
-  /* 12 */ val ChatRoomNewParticipant: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomNewParticipant with Double = js.native
-  /* 13 */ val ChatRoomOperation: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomOperation with Double = js.native
-  /* 14 */ val ChatRoomParticipantExit: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomParticipantExit with Double = js.native
-  /* 15 */ val ChatRoomParticipants: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomParticipants with Double = js.native
-  /* 16 */ val ChatRoomPresenceUpdate: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomPresenceUpdate with Double = js.native
-  /* 17 */ val ChatRoomStateUpdate: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomStateUpdate with Double = js.native
-  /* 18 */ val ChatRoomSubjectChange: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomSubjectChange with Double = js.native
-  /* 19 */ val ChatRoomsDataReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomsDataReceived with Double = js.native
-  /* 20 */ val ChatStateUpdate: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatStateUpdate with Double = js.native
-  /* 21 */ val MessageModified: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageModified with Double = js.native
-  /* 22 */ val MessageNotModified: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageNotModified with Double = js.native
-  /* 23 */ val MessageReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageReceived with Double = js.native
-  /* 24 */ val MessageRemoved: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageRemoved with Double = js.native
-  /* 25 */ val MessageStatus: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.MessageStatus with Double = js.native
-  /* 26 */ val PresenceUpdate: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.PresenceUpdate with Double = js.native
-  /* 27 */ val RosterItemChange: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterItemChange with Double = js.native
-  /* 28 */ val RosterPresenceUpdate: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterPresenceUpdate with Double = js.native
-  /* 29 */ val RosterReceived: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.RosterReceived with Double = js.native
-  /* 30 */ val SubscriptionRequest: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.SubscriptionRequest with Double = js.native
-  /* 31 */ val SystemError: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.SystemError with Double = js.native
-  /* 32 */ val UCConnected: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.UCConnected with Double = js.native
-  /* 33 */ val UCDisconnected: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.UCDisconnected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IMEvents with Double] = js.native
+  /* 0 */ @js.native
+  object ChatHistoryReceived extends TopLevel[ChatHistoryReceived with Double]
+  
+  /* 1 */ @js.native
+  object ChatRoomBanList extends TopLevel[ChatRoomBanList with Double]
+  
+  /* 2 */ @js.native
+  object ChatRoomCreated extends TopLevel[ChatRoomCreated with Double]
+  
+  /* 3 */ @js.native
+  object ChatRoomError extends TopLevel[ChatRoomError with Double]
+  
+  /* 4 */ @js.native
+  object ChatRoomHistoryReceived extends TopLevel[ChatRoomHistoryReceived with Double]
+  
+  /* 5 */ @js.native
+  object ChatRoomInfo
+    extends TopLevel[
+          typings.voximplantDashWebsdk.voximplantDashWebsdkMod.IMEvents.ChatRoomInfo with Double
+        ]
+  
+  /* 6 */ @js.native
+  object ChatRoomInvitation extends TopLevel[ChatRoomInvitation with Double]
+  
+  /* 7 */ @js.native
+  object ChatRoomInviteDeclined extends TopLevel[ChatRoomInviteDeclined with Double]
+  
+  /* 8 */ @js.native
+  object ChatRoomMessageModified extends TopLevel[ChatRoomMessageModified with Double]
+  
+  /* 9 */ @js.native
+  object ChatRoomMessageNotModified extends TopLevel[ChatRoomMessageNotModified with Double]
+  
+  /* 10 */ @js.native
+  object ChatRoomMessageReceived extends TopLevel[ChatRoomMessageReceived with Double]
+  
+  /* 11 */ @js.native
+  object ChatRoomMessageRemoved extends TopLevel[ChatRoomMessageRemoved with Double]
+  
+  /* 12 */ @js.native
+  object ChatRoomNewParticipant extends TopLevel[ChatRoomNewParticipant with Double]
+  
+  /* 13 */ @js.native
+  object ChatRoomOperation extends TopLevel[ChatRoomOperation with Double]
+  
+  /* 14 */ @js.native
+  object ChatRoomParticipantExit extends TopLevel[ChatRoomParticipantExit with Double]
+  
+  /* 15 */ @js.native
+  object ChatRoomParticipants extends TopLevel[ChatRoomParticipants with Double]
+  
+  /* 16 */ @js.native
+  object ChatRoomPresenceUpdate extends TopLevel[ChatRoomPresenceUpdate with Double]
+  
+  /* 17 */ @js.native
+  object ChatRoomStateUpdate extends TopLevel[ChatRoomStateUpdate with Double]
+  
+  /* 18 */ @js.native
+  object ChatRoomSubjectChange extends TopLevel[ChatRoomSubjectChange with Double]
+  
+  /* 19 */ @js.native
+  object ChatRoomsDataReceived extends TopLevel[ChatRoomsDataReceived with Double]
+  
+  /* 20 */ @js.native
+  object ChatStateUpdate extends TopLevel[ChatStateUpdate with Double]
+  
+  /* 21 */ @js.native
+  object MessageModified extends TopLevel[MessageModified with Double]
+  
+  /* 22 */ @js.native
+  object MessageNotModified extends TopLevel[MessageNotModified with Double]
+  
+  /* 23 */ @js.native
+  object MessageReceived extends TopLevel[MessageReceived with Double]
+  
+  /* 24 */ @js.native
+  object MessageRemoved extends TopLevel[MessageRemoved with Double]
+  
+  /* 25 */ @js.native
+  object MessageStatus extends TopLevel[MessageStatus with Double]
+  
+  /* 26 */ @js.native
+  object PresenceUpdate extends TopLevel[PresenceUpdate with Double]
+  
+  /* 27 */ @js.native
+  object RosterItemChange extends TopLevel[RosterItemChange with Double]
+  
+  /* 28 */ @js.native
+  object RosterPresenceUpdate extends TopLevel[RosterPresenceUpdate with Double]
+  
+  /* 29 */ @js.native
+  object RosterReceived extends TopLevel[RosterReceived with Double]
+  
+  /* 30 */ @js.native
+  object SubscriptionRequest extends TopLevel[SubscriptionRequest with Double]
+  
+  /* 31 */ @js.native
+  object SystemError extends TopLevel[SystemError with Double]
+  
+  /* 32 */ @js.native
+  object UCConnected extends TopLevel[UCConnected with Double]
+  
+  /* 33 */ @js.native
+  object UCDisconnected extends TopLevel[UCDisconnected with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.angle
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.flex
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.frequency
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.length
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.percent
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.resolution
+import typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object CSSNumericBaseType extends js.Object {
   @js.native
   sealed trait time extends CSSNumericBaseType
   
-  /* 1 */ val angle: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.angle with Double = js.native
-  /* 5 */ val flex: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.flex with Double = js.native
-  /* 3 */ val frequency: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.frequency with Double = js.native
-  /* 0 */ val length: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.length with Double = js.native
-  /* 6 */ val percent: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.percent with Double = js.native
-  /* 4 */ val resolution: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.resolution with Double = js.native
-  /* 2 */ val time: typings.w3cDashCssDashTypedDashObjectDashModelDashLevelDash1.CSSNumericBaseType.time with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CSSNumericBaseType with Double] = js.native
+  /* 1 */ @js.native
+  object angle extends TopLevel[angle with Double]
+  
+  /* 5 */ @js.native
+  object flex extends TopLevel[flex with Double]
+  
+  /* 3 */ @js.native
+  object frequency extends TopLevel[frequency with Double]
+  
+  /* 0 */ @js.native
+  object length extends TopLevel[length with Double]
+  
+  /* 6 */ @js.native
+  object percent extends TopLevel[percent with Double]
+  
+  /* 4 */ @js.native
+  object resolution extends TopLevel[resolution with Double]
+  
+  /* 2 */ @js.native
+  object time extends TopLevel[time with Double]
+  
 }
 

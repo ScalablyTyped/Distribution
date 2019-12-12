@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionComponent
@@ -18,6 +19,8 @@ object distCommonjsModulesTransitionMod extends js.Object {
     def this(props: TransitionProps, context: js.Any) = this()
   }
   
-  val default: TransitionComponent = js.native
+  @js.native
+  object default extends TopLevel[TransitionComponent]
+  
 }
 

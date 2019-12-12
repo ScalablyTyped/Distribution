@@ -1,7 +1,11 @@
 package typings.mobservable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mobservable.libDnodeMod.DataNode
 import typings.mobservable.libDnodeMod.NodeState
+import typings.mobservable.libDnodeMod.NodeState.PENDING
+import typings.mobservable.libDnodeMod.NodeState.READY
+import typings.mobservable.libDnodeMod.NodeState.STALE
 import typings.mobservable.libDnodeMod.ViewNode
 import typings.mobservable.libInterfacesMod.IContextInfoStruct
 import scala.scalajs.js
@@ -73,11 +77,17 @@ object libDnodeMod extends js.Object {
     @js.native
     sealed trait STALE extends NodeState
     
-    /* 1 */ val PENDING: typings.mobservable.libDnodeMod.NodeState.PENDING with Double = js.native
-    /* 2 */ val READY: typings.mobservable.libDnodeMod.NodeState.READY with Double = js.native
-    /* 0 */ val STALE: typings.mobservable.libDnodeMod.NodeState.STALE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeState with Double] = js.native
+    /* 1 */ @js.native
+    object PENDING extends TopLevel[PENDING with Double]
+    
+    /* 2 */ @js.native
+    object READY extends TopLevel[READY with Double]
+    
+    /* 0 */ @js.native
+    object STALE extends TopLevel[STALE with Double]
+    
   }
   
 }

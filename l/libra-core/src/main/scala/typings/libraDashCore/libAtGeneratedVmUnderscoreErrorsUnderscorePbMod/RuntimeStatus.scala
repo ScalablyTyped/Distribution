@@ -1,5 +1,22 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.ACCOUNTADDRESSALREADYEXISTS
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.CANNOTWRITEEXISTINGRESOURCE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.DATAFORMATERROR
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.DUPLICATEMODULENAME
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.EVICTEDACCOUNTACCESS
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.EXECUTED
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.INVALIDDATA
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.MISSINGDATA
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.OUTOFGAS
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.REMOTEDATAERROR
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.RESOURCEALREADYEXISTS
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.RESOURCEDOESNOTEXIST
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.TYPEERROR
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.UNKNOWNRUNTIMESTATUS
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.VALUEDESERIALIZATIONERROR
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.VALUESERIALIZATIONERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,23 +75,55 @@ object RuntimeStatus extends js.Object {
   @js.native
   sealed trait VALUESERIALIZATIONERROR extends RuntimeStatus
   
-  /* 6 */ val ACCOUNTADDRESSALREADYEXISTS: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.ACCOUNTADDRESSALREADYEXISTS with Double = js.native
-  /* 12 */ val CANNOTWRITEEXISTINGRESOURCE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.CANNOTWRITEEXISTINGRESOURCE with Double = js.native
-  /* 9 */ val DATAFORMATERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.DATAFORMATERROR with Double = js.native
-  /* 15 */ val DUPLICATEMODULENAME: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.DUPLICATEMODULENAME with Double = js.native
-  /* 5 */ val EVICTEDACCOUNTACCESS: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.EVICTEDACCOUNTACCESS with Double = js.native
-  /* 1 */ val EXECUTED: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.EXECUTED with Double = js.native
-  /* 10 */ val INVALIDDATA: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.INVALIDDATA with Double = js.native
-  /* 8 */ val MISSINGDATA: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.MISSINGDATA with Double = js.native
-  /* 2 */ val OUTOFGAS: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.OUTOFGAS with Double = js.native
-  /* 11 */ val REMOTEDATAERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.REMOTEDATAERROR with Double = js.native
-  /* 4 */ val RESOURCEALREADYEXISTS: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.RESOURCEALREADYEXISTS with Double = js.native
-  /* 3 */ val RESOURCEDOESNOTEXIST: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.RESOURCEDOESNOTEXIST with Double = js.native
-  /* 7 */ val TYPEERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.TYPEERROR with Double = js.native
-  /* 0 */ val UNKNOWNRUNTIMESTATUS: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.UNKNOWNRUNTIMESTATUS with Double = js.native
-  /* 14 */ val VALUEDESERIALIZATIONERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.VALUEDESERIALIZATIONERROR with Double = js.native
-  /* 13 */ val VALUESERIALIZATIONERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.RuntimeStatus.VALUESERIALIZATIONERROR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RuntimeStatus with Double] = js.native
+  /* 6 */ @js.native
+  object ACCOUNTADDRESSALREADYEXISTS extends TopLevel[ACCOUNTADDRESSALREADYEXISTS with Double]
+  
+  /* 12 */ @js.native
+  object CANNOTWRITEEXISTINGRESOURCE extends TopLevel[CANNOTWRITEEXISTINGRESOURCE with Double]
+  
+  /* 9 */ @js.native
+  object DATAFORMATERROR extends TopLevel[DATAFORMATERROR with Double]
+  
+  /* 15 */ @js.native
+  object DUPLICATEMODULENAME extends TopLevel[DUPLICATEMODULENAME with Double]
+  
+  /* 5 */ @js.native
+  object EVICTEDACCOUNTACCESS extends TopLevel[EVICTEDACCOUNTACCESS with Double]
+  
+  /* 1 */ @js.native
+  object EXECUTED extends TopLevel[EXECUTED with Double]
+  
+  /* 10 */ @js.native
+  object INVALIDDATA extends TopLevel[INVALIDDATA with Double]
+  
+  /* 8 */ @js.native
+  object MISSINGDATA extends TopLevel[MISSINGDATA with Double]
+  
+  /* 2 */ @js.native
+  object OUTOFGAS extends TopLevel[OUTOFGAS with Double]
+  
+  /* 11 */ @js.native
+  object REMOTEDATAERROR extends TopLevel[REMOTEDATAERROR with Double]
+  
+  /* 4 */ @js.native
+  object RESOURCEALREADYEXISTS extends TopLevel[RESOURCEALREADYEXISTS with Double]
+  
+  /* 3 */ @js.native
+  object RESOURCEDOESNOTEXIST extends TopLevel[RESOURCEDOESNOTEXIST with Double]
+  
+  /* 7 */ @js.native
+  object TYPEERROR extends TopLevel[TYPEERROR with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWNRUNTIMESTATUS extends TopLevel[UNKNOWNRUNTIMESTATUS with Double]
+  
+  /* 14 */ @js.native
+  object VALUEDESERIALIZATIONERROR extends TopLevel[VALUEDESERIALIZATIONERROR with Double]
+  
+  /* 13 */ @js.native
+  object VALUESERIALIZATIONERROR extends TopLevel[VALUESERIALIZATIONERROR with Double]
+  
 }
 

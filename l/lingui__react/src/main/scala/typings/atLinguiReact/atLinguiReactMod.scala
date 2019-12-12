@@ -1,5 +1,6 @@
 package typings.atLinguiReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atLinguiReact.atLinguiReactStrings.i18n
 import typings.atLinguiReact.createFormatMod.FormatPropsWithoutI18n
 import typings.atLinguiReact.i18nMod.I18nComponentProps
@@ -62,8 +63,6 @@ object atLinguiReactMod extends js.Object {
   class Trans ()
     extends Component[TransPropsWithoutI18n, js.Object, js.Any]
   
-  val DateFormat: ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState] = js.native
-  val NumberFormat: ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState] = js.native
   def i18nMark(id: String): String = js.native
   def withI18n(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
@@ -73,5 +72,15 @@ object atLinguiReactMod extends js.Object {
     /* WrappedComponent */ ComponentConstructor[_], 
     ComponentClass[Pick[_, Exclude[String, i18n]], ComponentState]
   ] = js.native
+  @js.native
+  object DateFormat extends TopLevel[
+          ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState]
+        ]
+  
+  @js.native
+  object NumberFormat extends TopLevel[
+          ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState]
+        ]
+  
 }
 

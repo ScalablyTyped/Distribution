@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.default
+import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.dynamic
+import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.immutable
+import typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.staging
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object Direct3DUsage extends js.Object {
   @js.native
   sealed trait staging extends Direct3DUsage
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.default with Double = js.native
-  /* 2 */ val dynamic: typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.dynamic with Double = js.native
-  /* 1 */ val immutable: typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.immutable with Double = js.native
-  /* 3 */ val staging: typings.winrtDashUwp.Windows.Graphics.DirectX.Direct3D11.Direct3DUsage.staging with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Direct3DUsage with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object dynamic extends TopLevel[dynamic with Double]
+  
+  /* 1 */ @js.native
+  object immutable extends TopLevel[immutable with Double]
+  
+  /* 3 */ @js.native
+  object staging extends TopLevel[staging with Double]
+  
 }
 

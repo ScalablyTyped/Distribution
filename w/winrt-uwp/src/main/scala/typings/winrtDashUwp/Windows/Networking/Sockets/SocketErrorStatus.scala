@@ -1,5 +1,37 @@
 package typings.winrtDashUwp.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.addressAlreadyInUse
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.addressFamilyNotSupported
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.cannotAssignRequestedAddress
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateCommonNameIsIncorrect
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateExpired
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateIsInvalid
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateNoRevocationCheck
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateRevocationServerOffline
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateRevoked
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateUntrustedRoot
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateWrongUsage
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.classTypeNotFound
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionRefused
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionResetByPeer
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionTimedOut
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.hostIsDown
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.hostNotFound
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.httpInvalidServerResponse
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.messageTooLong
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkDroppedConnectionOnReset
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkIsDown
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkIsUnreachable
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.noAddressesFound
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.noDataRecordOfRequestedType
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.nonAuthoritativeHostNotFound
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.operationAborted
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.socketTypeNotSupported
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.softwareCausedConnectionAbort
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.tooManyOpenFiles
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.unknown
+import typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.unreachableHost
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -135,38 +167,100 @@ object SocketErrorStatus extends js.Object {
   @js.native
   sealed trait unreachableHost extends SocketErrorStatus
   
-  /* 10 */ val addressAlreadyInUse: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.addressAlreadyInUse with Double = js.native
-  /* 4 */ val addressFamilyNotSupported: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.addressFamilyNotSupported with Double = js.native
-  /* 11 */ val cannotAssignRequestedAddress: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.cannotAssignRequestedAddress with Double = js.native
-  /* 25 */ val certificateCommonNameIsIncorrect: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateCommonNameIsIncorrect with Double = js.native
-  /* 23 */ val certificateExpired: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateExpired with Double = js.native
-  /* 30 */ val certificateIsInvalid: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateIsInvalid with Double = js.native
-  /* 28 */ val certificateNoRevocationCheck: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateNoRevocationCheck with Double = js.native
-  /* 29 */ val certificateRevocationServerOffline: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateRevocationServerOffline with Double = js.native
-  /* 27 */ val certificateRevoked: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateRevoked with Double = js.native
-  /* 24 */ val certificateUntrustedRoot: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateUntrustedRoot with Double = js.native
-  /* 26 */ val certificateWrongUsage: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.certificateWrongUsage with Double = js.native
-  /* 9 */ val classTypeNotFound: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.classTypeNotFound with Double = js.native
-  /* 12 */ val connectionRefused: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionRefused with Double = js.native
-  /* 18 */ val connectionResetByPeer: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionResetByPeer with Double = js.native
-  /* 3 */ val connectionTimedOut: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.connectionTimedOut with Double = js.native
-  /* 19 */ val hostIsDown: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.hostIsDown with Double = js.native
-  /* 6 */ val hostNotFound: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.hostNotFound with Double = js.native
-  /* 2 */ val httpInvalidServerResponse: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.httpInvalidServerResponse with Double = js.native
-  /* 22 */ val messageTooLong: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.messageTooLong with Double = js.native
-  /* 16 */ val networkDroppedConnectionOnReset: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkDroppedConnectionOnReset with Double = js.native
-  /* 15 */ val networkIsDown: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkIsDown with Double = js.native
-  /* 13 */ val networkIsUnreachable: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.networkIsUnreachable with Double = js.native
-  /* 20 */ val noAddressesFound: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.noAddressesFound with Double = js.native
-  /* 7 */ val noDataRecordOfRequestedType: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.noDataRecordOfRequestedType with Double = js.native
-  /* 8 */ val nonAuthoritativeHostNotFound: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.nonAuthoritativeHostNotFound with Double = js.native
-  /* 1 */ val operationAborted: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.operationAborted with Double = js.native
-  /* 5 */ val socketTypeNotSupported: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.socketTypeNotSupported with Double = js.native
-  /* 17 */ val softwareCausedConnectionAbort: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.softwareCausedConnectionAbort with Double = js.native
-  /* 21 */ val tooManyOpenFiles: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.tooManyOpenFiles with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.unknown with Double = js.native
-  /* 14 */ val unreachableHost: typings.winrtDashUwp.Windows.Networking.Sockets.SocketErrorStatus.unreachableHost with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocketErrorStatus with Double] = js.native
+  /* 10 */ @js.native
+  object addressAlreadyInUse extends TopLevel[addressAlreadyInUse with Double]
+  
+  /* 4 */ @js.native
+  object addressFamilyNotSupported extends TopLevel[addressFamilyNotSupported with Double]
+  
+  /* 11 */ @js.native
+  object cannotAssignRequestedAddress extends TopLevel[cannotAssignRequestedAddress with Double]
+  
+  /* 25 */ @js.native
+  object certificateCommonNameIsIncorrect extends TopLevel[certificateCommonNameIsIncorrect with Double]
+  
+  /* 23 */ @js.native
+  object certificateExpired extends TopLevel[certificateExpired with Double]
+  
+  /* 30 */ @js.native
+  object certificateIsInvalid extends TopLevel[certificateIsInvalid with Double]
+  
+  /* 28 */ @js.native
+  object certificateNoRevocationCheck extends TopLevel[certificateNoRevocationCheck with Double]
+  
+  /* 29 */ @js.native
+  object certificateRevocationServerOffline extends TopLevel[certificateRevocationServerOffline with Double]
+  
+  /* 27 */ @js.native
+  object certificateRevoked extends TopLevel[certificateRevoked with Double]
+  
+  /* 24 */ @js.native
+  object certificateUntrustedRoot extends TopLevel[certificateUntrustedRoot with Double]
+  
+  /* 26 */ @js.native
+  object certificateWrongUsage extends TopLevel[certificateWrongUsage with Double]
+  
+  /* 9 */ @js.native
+  object classTypeNotFound extends TopLevel[classTypeNotFound with Double]
+  
+  /* 12 */ @js.native
+  object connectionRefused extends TopLevel[connectionRefused with Double]
+  
+  /* 18 */ @js.native
+  object connectionResetByPeer extends TopLevel[connectionResetByPeer with Double]
+  
+  /* 3 */ @js.native
+  object connectionTimedOut extends TopLevel[connectionTimedOut with Double]
+  
+  /* 19 */ @js.native
+  object hostIsDown extends TopLevel[hostIsDown with Double]
+  
+  /* 6 */ @js.native
+  object hostNotFound extends TopLevel[hostNotFound with Double]
+  
+  /* 2 */ @js.native
+  object httpInvalidServerResponse extends TopLevel[httpInvalidServerResponse with Double]
+  
+  /* 22 */ @js.native
+  object messageTooLong extends TopLevel[messageTooLong with Double]
+  
+  /* 16 */ @js.native
+  object networkDroppedConnectionOnReset extends TopLevel[networkDroppedConnectionOnReset with Double]
+  
+  /* 15 */ @js.native
+  object networkIsDown extends TopLevel[networkIsDown with Double]
+  
+  /* 13 */ @js.native
+  object networkIsUnreachable extends TopLevel[networkIsUnreachable with Double]
+  
+  /* 20 */ @js.native
+  object noAddressesFound extends TopLevel[noAddressesFound with Double]
+  
+  /* 7 */ @js.native
+  object noDataRecordOfRequestedType extends TopLevel[noDataRecordOfRequestedType with Double]
+  
+  /* 8 */ @js.native
+  object nonAuthoritativeHostNotFound extends TopLevel[nonAuthoritativeHostNotFound with Double]
+  
+  /* 1 */ @js.native
+  object operationAborted extends TopLevel[operationAborted with Double]
+  
+  /* 5 */ @js.native
+  object socketTypeNotSupported extends TopLevel[socketTypeNotSupported with Double]
+  
+  /* 17 */ @js.native
+  object softwareCausedConnectionAbort extends TopLevel[softwareCausedConnectionAbort with Double]
+  
+  /* 21 */ @js.native
+  object tooManyOpenFiles extends TopLevel[tooManyOpenFiles with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 14 */ @js.native
+  object unreachableHost extends TopLevel[unreachableHost with Double]
+  
 }
 

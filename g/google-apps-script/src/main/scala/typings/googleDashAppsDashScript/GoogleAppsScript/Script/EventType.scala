@@ -1,5 +1,12 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.CLOCK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_CHANGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EDIT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EVENT_UPDATED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_FORM_SUBMIT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object EventType extends js.Object {
   @js.native
   sealed trait ON_OPEN extends EventType
   
-  /* 0 */ val CLOCK: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.CLOCK with Double = js.native
-  /* 4 */ val ON_CHANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_CHANGE with Double = js.native
-  /* 2 */ val ON_EDIT: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EDIT with Double = js.native
-  /* 5 */ val ON_EVENT_UPDATED: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_EVENT_UPDATED with Double = js.native
-  /* 3 */ val ON_FORM_SUBMIT: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_FORM_SUBMIT with Double = js.native
-  /* 1 */ val ON_OPEN: typings.googleDashAppsDashScript.GoogleAppsScript.Script.EventType.ON_OPEN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+  /* 0 */ @js.native
+  object CLOCK extends TopLevel[CLOCK with Double]
+  
+  /* 4 */ @js.native
+  object ON_CHANGE extends TopLevel[ON_CHANGE with Double]
+  
+  /* 2 */ @js.native
+  object ON_EDIT extends TopLevel[ON_EDIT with Double]
+  
+  /* 5 */ @js.native
+  object ON_EVENT_UPDATED extends TopLevel[ON_EVENT_UPDATED with Double]
+  
+  /* 3 */ @js.native
+  object ON_FORM_SUBMIT extends TopLevel[ON_FORM_SUBMIT with Double]
+  
+  /* 1 */ @js.native
+  object ON_OPEN extends TopLevel[ON_OPEN with Double]
+  
 }
 

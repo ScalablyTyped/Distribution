@@ -1,5 +1,12 @@
 package typings.navermaps.naver.maps.drawing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.drawing.DrawingEvent.ADD
+import typings.navermaps.naver.maps.drawing.DrawingEvent.Added
+import typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE
+import typings.navermaps.naver.maps.drawing.DrawingEvent.Removed
+import typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT
+import typings.navermaps.naver.maps.drawing.DrawingEvent.Selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object DrawingEvent extends js.Object {
   @js.native
   sealed trait Selected extends DrawingEvent
   
-  /* 0 */ val ADD: typings.navermaps.naver.maps.drawing.DrawingEvent.ADD with Double = js.native
-  /* 3 */ val Added: typings.navermaps.naver.maps.drawing.DrawingEvent.Added with Double = js.native
-  /* 1 */ val REMOVE: typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE with Double = js.native
-  /* 4 */ val Removed: typings.navermaps.naver.maps.drawing.DrawingEvent.Removed with Double = js.native
-  /* 2 */ val SELECT: typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT with Double = js.native
-  /* 5 */ val Selected: typings.navermaps.naver.maps.drawing.DrawingEvent.Selected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawingEvent with Double] = js.native
+  /* 0 */ @js.native
+  object ADD extends TopLevel[ADD with Double]
+  
+  /* 3 */ @js.native
+  object Added extends TopLevel[Added with Double]
+  
+  /* 1 */ @js.native
+  object REMOVE extends TopLevel[REMOVE with Double]
+  
+  /* 4 */ @js.native
+  object Removed extends TopLevel[Removed with Double]
+  
+  /* 2 */ @js.native
+  object SELECT extends TopLevel[SELECT with Double]
+  
+  /* 5 */ @js.native
+  object Selected extends TopLevel[Selected with Double]
+  
 }
 

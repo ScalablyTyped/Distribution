@@ -1,5 +1,6 @@
 package typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrMod
 
+import typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`-`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,9 +63,10 @@ object BinOp {
   @scala.inline
   def `+=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`+=` = this.cast("+=")
   @scala.inline
-  def `-`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`-` = this.cast("-")
-  @scala.inline
   def `-=`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`-=` = this.cast("-=")
+  @JSName("-")
+  @scala.inline
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   def `/`: typings.solidityDashParserDashAntlr.solidityDashParserDashAntlrStrings.`/` = this.cast("/")
   @scala.inline

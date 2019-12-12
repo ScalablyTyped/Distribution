@@ -1,5 +1,9 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.CRLF
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.LF
+import typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.TextDefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object EndOfLinePreference extends js.Object {
   @js.native
   sealed trait TextDefined extends EndOfLinePreference
   
-  /* 2 */ val CRLF: typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.CRLF with Double = js.native
-  /* 1 */ val LF: typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.LF with Double = js.native
-  /* 0 */ val TextDefined: typings.monacoDashEditor.monacoDashEditorMod.editor.EndOfLinePreference.TextDefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EndOfLinePreference with Double] = js.native
+  /* 2 */ @js.native
+  object CRLF extends TopLevel[CRLF with Double]
+  
+  /* 1 */ @js.native
+  object LF extends TopLevel[LF with Double]
+  
+  /* 0 */ @js.native
+  object TextDefined extends TopLevel[TextDefined with Double]
+  
 }
 

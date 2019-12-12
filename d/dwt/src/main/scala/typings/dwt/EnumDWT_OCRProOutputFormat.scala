@@ -1,5 +1,12 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF_MRC
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTCSV
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTF
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTS
+import typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object EnumDWT_OCRProOutputFormat extends js.Object {
   @js.native
   sealed trait OCRPFT_XML extends EnumDWT_OCRProOutputFormat
   
-  /* "IOTPDF" */ val OCRPFT_IOTPDF: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF with String = js.native
-  /* "IOTPDF_MRC" */ val OCRPFT_IOTPDF_MRC: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_IOTPDF_MRC with String = js.native
-  /* "TXTCSV" */ val OCRPFT_TXTCSV: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTCSV with String = js.native
-  /* "TXTF" */ val OCRPFT_TXTF: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTF with String = js.native
-  /* "TXTS" */ val OCRPFT_TXTS: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_TXTS with String = js.native
-  /* "XML" */ val OCRPFT_XML: typings.dwt.EnumDWT_OCRProOutputFormat.OCRPFT_XML with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EnumDWT_OCRProOutputFormat with String] = js.native
+  /* "IOTPDF" */ @js.native
+  object OCRPFT_IOTPDF extends TopLevel[OCRPFT_IOTPDF with String]
+  
+  /* "IOTPDF_MRC" */ @js.native
+  object OCRPFT_IOTPDF_MRC extends TopLevel[OCRPFT_IOTPDF_MRC with String]
+  
+  /* "TXTCSV" */ @js.native
+  object OCRPFT_TXTCSV extends TopLevel[OCRPFT_TXTCSV with String]
+  
+  /* "TXTF" */ @js.native
+  object OCRPFT_TXTF extends TopLevel[OCRPFT_TXTF with String]
+  
+  /* "TXTS" */ @js.native
+  object OCRPFT_TXTS extends TopLevel[OCRPFT_TXTS with String]
+  
+  /* "XML" */ @js.native
+  object OCRPFT_XML extends TopLevel[OCRPFT_XML with String]
+  
 }
 

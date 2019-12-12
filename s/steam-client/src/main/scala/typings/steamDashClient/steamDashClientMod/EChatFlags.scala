@@ -1,5 +1,10 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatFlags.InvisibleToFriends
+import typings.steamDashClient.steamDashClientMod.EChatFlags.Locked
+import typings.steamDashClient.steamDashClientMod.EChatFlags.Moderated
+import typings.steamDashClient.steamDashClientMod.EChatFlags.Unjoinable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object EChatFlags extends js.Object {
   @js.native
   sealed trait Unjoinable extends EChatFlags
   
-  /* 2 */ val InvisibleToFriends: typings.steamDashClient.steamDashClientMod.EChatFlags.InvisibleToFriends with Double = js.native
-  /* 1 */ val Locked: typings.steamDashClient.steamDashClientMod.EChatFlags.Locked with Double = js.native
-  /* 4 */ val Moderated: typings.steamDashClient.steamDashClientMod.EChatFlags.Moderated with Double = js.native
-  /* 8 */ val Unjoinable: typings.steamDashClient.steamDashClientMod.EChatFlags.Unjoinable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatFlags with Double] = js.native
+  /* 2 */ @js.native
+  object InvisibleToFriends extends TopLevel[InvisibleToFriends with Double]
+  
+  /* 1 */ @js.native
+  object Locked extends TopLevel[Locked with Double]
+  
+  /* 4 */ @js.native
+  object Moderated extends TopLevel[Moderated with Double]
+  
+  /* 8 */ @js.native
+  object Unjoinable extends TopLevel[Unjoinable with Double]
+  
 }
 

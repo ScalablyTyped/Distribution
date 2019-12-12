@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Conflicts
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Failure
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.NotSet
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Queued
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.RejectedByPolicy
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object PullRequestAsyncStatus extends js.Object {
   @js.native
   sealed trait Succeeded extends PullRequestAsyncStatus
   
-  /* 2 */ val Conflicts: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Conflicts with Double = js.native
-  /* 5 */ val Failure: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Failure with Double = js.native
-  /* 0 */ val NotSet: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.NotSet with Double = js.native
-  /* 1 */ val Queued: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Queued with Double = js.native
-  /* 4 */ val RejectedByPolicy: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.RejectedByPolicy with Double = js.native
-  /* 3 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.PullRequestAsyncStatus.Succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PullRequestAsyncStatus with Double] = js.native
+  /* 2 */ @js.native
+  object Conflicts extends TopLevel[Conflicts with Double]
+  
+  /* 5 */ @js.native
+  object Failure extends TopLevel[Failure with Double]
+  
+  /* 0 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 1 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 4 */ @js.native
+  object RejectedByPolicy extends TopLevel[RejectedByPolicy with Double]
+  
+  /* 3 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
 }
 

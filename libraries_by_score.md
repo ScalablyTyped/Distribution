@@ -404,6 +404,7 @@
 | 0.8215232559217134 | [arrify](./a/arrify) | Convert a value to an array
 | 0.821426535569127 | [cacache](./c/cacache) | Fast, fault-tolerant, cross-platform, disk-based, 
 | 0.8214026185902057 | [engine_dot_io-client](./e/engine_dot_io-client) | Client for the realtime Engine
+| 0.8212550024029992 | [jest-config](./j/jest-config) | -
 | 0.8212275224907168 | [warning](./w/warning) | A mirror of Facebook's Warning
 | 0.8212078888243088 | [split](./s/split) | split a Text Stream into a Line Stream
 | 0.8211528929260425 | [fancy-log](./f/fancy-log) | Log things, prefixed with a timestamp.
@@ -995,7 +996,6 @@
 | 0.7755957233955663 | [d3-collection](./d/d3-collection) | Handy data structures for elements keyed by string
 | 0.7753509563535208 | [p-reduce](./p/p-reduce) | Reduce a list of values using promises into a prom
 | 0.7753417740304802 | [archiver](./a/archiver) | a streaming interface for archive generation
-| 0.775328265796162 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
 | 0.7751928308733431 | [aria-query](./a/aria-query) | Programmatic access to the ARIA specification
 | 0.775183742745352 | [p-retry](./p/p-retry) | Retry a promise-returning or async function
 | 0.7750712948739287 | [flux-standard-action](./f/flux-standard-action) | A human-friendly standard for Flux action objects
@@ -1324,6 +1324,7 @@
 | 0.7575599767993527 | [webpack-assets-manifest](./w/webpack-assets-manifest) | This Webpack plugin will generate a JSON file that
 | 0.7575269889896799 | [is-negated-glob](./i/is-negated-glob) | Returns an object with a negated boolean and the 
 | 0.7575091781670354 | [framesync](./f/framesync) | A Unity-inspired render loop for JavaScript
+| 0.75750532537788 | [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas
 | 0.757498402341609 | [yaml](./y/yaml) | JavaScript parser and stringifier for YAML
 | 0.7572999720203588 | [lodash_dot_samplesize](./l/lodash_dot_samplesize) | The lodash method _.sampleSize exported as a modul
 | 0.7569877242219831 | [browser-pack](./b/browser-pack) | pack node-style source files from a json stream in
@@ -5832,7 +5833,6 @@
 | 0.4209475333572231 | [storybook__router](./s/storybook__router) | Core Storybook Router
 | 0.420895490542806 | [angulartics](./a/angulartics) | Vendor-agnostic web analytics for AngularJS applic
 | 0.4206299317057244 | [jquery_dot_rateit](./j/jquery_dot_rateit) | Rating plugin for jQuery.
-| 0.42058562408504274 | [typescript-services](./t/typescript-services) | Open up TypeScript language services for nodejs co
 | 0.4204303464241952 | [ping](./p/ping) | a simple wrapper for ping
 | 0.4203840051276075 | [atlaskit__button](./a/atlaskit__button) | A React component that is a base button.
 | 0.42012238189303475 | [raspi-i2c](./r/raspi-i2c) | Provides access to I2C on the Raspberry Pi from No

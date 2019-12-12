@@ -1,5 +1,9 @@
 package typings.tsutils.utilUtilMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tsutils.utilUtilMod.VariableDeclarationKind.Const
+import typings.tsutils.utilUtilMod.VariableDeclarationKind.Let
+import typings.tsutils.utilUtilMod.VariableDeclarationKind.Var
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object VariableDeclarationKind extends js.Object {
   @js.native
   sealed trait Var extends VariableDeclarationKind
   
-  /* 2 */ val Const: typings.tsutils.utilUtilMod.VariableDeclarationKind.Const with Double = js.native
-  /* 1 */ val Let: typings.tsutils.utilUtilMod.VariableDeclarationKind.Let with Double = js.native
-  /* 0 */ val Var: typings.tsutils.utilUtilMod.VariableDeclarationKind.Var with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VariableDeclarationKind with Double] = js.native
+  /* 2 */ @js.native
+  object Const extends TopLevel[Const with Double]
+  
+  /* 1 */ @js.native
+  object Let extends TopLevel[Let with Double]
+  
+  /* 0 */ @js.native
+  object Var extends TopLevel[Var with Double]
+  
 }
 

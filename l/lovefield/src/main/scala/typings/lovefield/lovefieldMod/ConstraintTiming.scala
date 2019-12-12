@@ -1,5 +1,8 @@
 package typings.lovefield.lovefieldMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.lovefield.lovefieldMod.ConstraintTiming.DEFERRABLE
+import typings.lovefield.lovefieldMod.ConstraintTiming.IMMEDIATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ConstraintTiming extends js.Object {
   @js.native
   sealed trait IMMEDIATE extends ConstraintTiming
   
-  /* 1 */ val DEFERRABLE: typings.lovefield.lovefieldMod.ConstraintTiming.DEFERRABLE with Double = js.native
-  /* 0 */ val IMMEDIATE: typings.lovefield.lovefieldMod.ConstraintTiming.IMMEDIATE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConstraintTiming with Double] = js.native
+  /* 1 */ @js.native
+  object DEFERRABLE extends TopLevel[DEFERRABLE with Double]
+  
+  /* 0 */ @js.native
+  object IMMEDIATE extends TopLevel[IMMEDIATE with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-mysql-wrapper"
-version := "0.0-unknown-dt-20191014Z-bf8fd9"
+version := "0.0-unknown-dt-20191014Z-05df70"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

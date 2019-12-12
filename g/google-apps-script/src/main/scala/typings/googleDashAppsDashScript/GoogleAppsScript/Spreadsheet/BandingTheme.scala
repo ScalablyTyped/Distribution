@@ -1,5 +1,18 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BLUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BROWN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.CYAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.INDIGO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.ORANGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.PINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.TEAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,19 +63,43 @@ object BandingTheme extends js.Object {
   @js.native
   sealed trait YELLOW extends BandingTheme
   
-  /* 5 */ val BLUE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BLUE with Double = js.native
-  /* 8 */ val BROWN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.BROWN with Double = js.native
-  /* 1 */ val CYAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.CYAN with Double = js.native
-  /* 2 */ val GREEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREEN with Double = js.native
-  /* 7 */ val GREY: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.GREY with Double = js.native
-  /* 10 */ val INDIGO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.INDIGO with Double = js.native
-  /* 9 */ val LIGHT_GREEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREEN with Double = js.native
-  /* 0 */ val LIGHT_GREY: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.LIGHT_GREY with Double = js.native
-  /* 4 */ val ORANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.ORANGE with Double = js.native
-  /* 11 */ val PINK: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.PINK with Double = js.native
-  /* 6 */ val TEAL: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.TEAL with Double = js.native
-  /* 3 */ val YELLOW: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BandingTheme.YELLOW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BandingTheme with Double] = js.native
+  /* 5 */ @js.native
+  object BLUE extends TopLevel[BLUE with Double]
+  
+  /* 8 */ @js.native
+  object BROWN extends TopLevel[BROWN with Double]
+  
+  /* 1 */ @js.native
+  object CYAN extends TopLevel[CYAN with Double]
+  
+  /* 2 */ @js.native
+  object GREEN extends TopLevel[GREEN with Double]
+  
+  /* 7 */ @js.native
+  object GREY extends TopLevel[GREY with Double]
+  
+  /* 10 */ @js.native
+  object INDIGO extends TopLevel[INDIGO with Double]
+  
+  /* 9 */ @js.native
+  object LIGHT_GREEN extends TopLevel[LIGHT_GREEN with Double]
+  
+  /* 0 */ @js.native
+  object LIGHT_GREY extends TopLevel[LIGHT_GREY with Double]
+  
+  /* 4 */ @js.native
+  object ORANGE extends TopLevel[ORANGE with Double]
+  
+  /* 11 */ @js.native
+  object PINK extends TopLevel[PINK with Double]
+  
+  /* 6 */ @js.native
+  object TEAL extends TopLevel[TEAL with Double]
+  
+  /* 3 */ @js.native
+  object YELLOW extends TopLevel[YELLOW with Double]
+  
 }
 

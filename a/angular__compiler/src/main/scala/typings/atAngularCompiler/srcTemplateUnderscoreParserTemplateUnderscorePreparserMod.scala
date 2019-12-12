@@ -1,8 +1,14 @@
 package typings.atAngularCompiler
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCompiler.srcMlUnderscoreParserAstMod.Element
 import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElement
 import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.NG_CONTENT
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.OTHER
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.SCRIPT
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.STYLE
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.STYLESHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,13 +53,23 @@ object srcTemplateUnderscoreParserTemplateUnderscorePreparserMod extends js.Obje
     @js.native
     sealed trait STYLESHEET extends PreparsedElementType
     
-    /* 0 */ val NG_CONTENT: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.NG_CONTENT with Double = js.native
-    /* 4 */ val OTHER: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.OTHER with Double = js.native
-    /* 3 */ val SCRIPT: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.SCRIPT with Double = js.native
-    /* 1 */ val STYLE: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.STYLE with Double = js.native
-    /* 2 */ val STYLESHEET: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscorePreparserMod.PreparsedElementType.STYLESHEET with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PreparsedElementType with Double] = js.native
+    /* 0 */ @js.native
+    object NG_CONTENT extends TopLevel[NG_CONTENT with Double]
+    
+    /* 4 */ @js.native
+    object OTHER extends TopLevel[OTHER with Double]
+    
+    /* 3 */ @js.native
+    object SCRIPT extends TopLevel[SCRIPT with Double]
+    
+    /* 1 */ @js.native
+    object STYLE extends TopLevel[STYLE with Double]
+    
+    /* 2 */ @js.native
+    object STYLESHEET extends TopLevel[STYLESHEET with Double]
+    
   }
   
 }

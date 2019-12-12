@@ -1,5 +1,8 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.ReferenceFrame.FIXED
+import typings.cesium.cesiumMod.ReferenceFrame.INERTIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ReferenceFrame extends js.Object {
   @js.native
   sealed trait INERTIAL extends ReferenceFrame
   
-  /* 0 */ val FIXED: typings.cesium.cesiumMod.ReferenceFrame.FIXED with Double = js.native
-  /* 1 */ val INERTIAL: typings.cesium.cesiumMod.ReferenceFrame.INERTIAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReferenceFrame with Double] = js.native
+  /* 0 */ @js.native
+  object FIXED extends TopLevel[FIXED with Double]
+  
+  /* 1 */ @js.native
+  object INERTIAL extends TopLevel[INERTIAL with Double]
+  
 }
 

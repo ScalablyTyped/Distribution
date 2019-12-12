@@ -1,5 +1,10 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Center
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Justify
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Left
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TextAlignment extends js.Object {
   @js.native
   sealed trait Right extends TextAlignment
   
-  /* 1 */ val Center: typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Center with Double = js.native
-  /* 3 */ val Justify: typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Justify with Double = js.native
-  /* 0 */ val Left: typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Left with Double = js.native
-  /* 2 */ val Right: typings.jsprintmanager.jsprintmanagerMod.JSPM.TextAlignment.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
+  /* 1 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 3 */ @js.native
+  object Justify extends TopLevel[Justify with Double]
+  
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 2 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,5 +1,42 @@
 package typings.winrt.Windows.UI.Core.AnimationMetrics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToGrid
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToList
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToSearchGrid
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToSearchList
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.collapse
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.crossFade
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromGrid
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromList
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromSearchGrid
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromSearchList
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragBetweenEnter
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragBetweenLeave
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragSourceEnd
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragSourceStart
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.enterPage
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.expand
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.fadeIn
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.fadeOut
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hide
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hideEdgeUI
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hidePanel
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hidePopup
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.peek
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.pointerDown
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.pointerUp
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.reposition
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.reveal
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showEdgeUI
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showPanel
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showPopup
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeDeselect
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeReveal
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeSelect
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.transitionContent
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.transitionPage
+import typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.updateBadge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -118,43 +155,115 @@ object AnimationEffect extends js.Object {
   @js.native
   sealed trait updateBadge extends AnimationEffect
   
-  /* 7 */ val addToGrid: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToGrid with Double = js.native
-  /* 5 */ val addToList: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToList with Double = js.native
-  /* 9 */ val addToSearchGrid: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToSearchGrid with Double = js.native
-  /* 11 */ val addToSearchList: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.addToSearchList with Double = js.native
-  /* 1 */ val collapse: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.collapse with Double = js.native
-  /* 33 */ val crossFade: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.crossFade with Double = js.native
-  /* 8 */ val deleteFromGrid: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromGrid with Double = js.native
-  /* 6 */ val deleteFromList: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromList with Double = js.native
-  /* 10 */ val deleteFromSearchGrid: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromSearchGrid with Double = js.native
-  /* 12 */ val deleteFromSearchList: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.deleteFromSearchList with Double = js.native
-  /* 26 */ val dragBetweenEnter: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragBetweenEnter with Double = js.native
-  /* 27 */ val dragBetweenLeave: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragBetweenLeave with Double = js.native
-  /* 22 */ val dragSourceEnd: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragSourceEnd with Double = js.native
-  /* 21 */ val dragSourceStart: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.dragSourceStart with Double = js.native
-  /* 31 */ val enterPage: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.enterPage with Double = js.native
-  /* 0 */ val expand: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.expand with Double = js.native
-  /* 3 */ val fadeIn: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.fadeIn with Double = js.native
-  /* 4 */ val fadeOut: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.fadeOut with Double = js.native
-  /* 25 */ val hide: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hide with Double = js.native
-  /* 15 */ val hideEdgeUI: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hideEdgeUI with Double = js.native
-  /* 16 */ val hidePanel: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hidePanel with Double = js.native
-  /* 18 */ val hidePopup: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.hidePopup with Double = js.native
-  /* 34 */ val peek: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.peek with Double = js.native
-  /* 19 */ val pointerDown: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.pointerDown with Double = js.native
-  /* 20 */ val pointerUp: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.pointerUp with Double = js.native
-  /* 2 */ val reposition: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.reposition with Double = js.native
-  /* 24 */ val reveal: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.reveal with Double = js.native
-  /* 13 */ val showEdgeUI: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showEdgeUI with Double = js.native
-  /* 14 */ val showPanel: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showPanel with Double = js.native
-  /* 17 */ val showPopup: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.showPopup with Double = js.native
-  /* 29 */ val swipeDeselect: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeDeselect with Double = js.native
-  /* 30 */ val swipeReveal: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeReveal with Double = js.native
-  /* 28 */ val swipeSelect: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.swipeSelect with Double = js.native
-  /* 23 */ val transitionContent: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.transitionContent with Double = js.native
-  /* 32 */ val transitionPage: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.transitionPage with Double = js.native
-  /* 35 */ val updateBadge: typings.winrt.Windows.UI.Core.AnimationMetrics.AnimationEffect.updateBadge with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AnimationEffect with Double] = js.native
+  /* 7 */ @js.native
+  object addToGrid extends TopLevel[addToGrid with Double]
+  
+  /* 5 */ @js.native
+  object addToList extends TopLevel[addToList with Double]
+  
+  /* 9 */ @js.native
+  object addToSearchGrid extends TopLevel[addToSearchGrid with Double]
+  
+  /* 11 */ @js.native
+  object addToSearchList extends TopLevel[addToSearchList with Double]
+  
+  /* 1 */ @js.native
+  object collapse extends TopLevel[collapse with Double]
+  
+  /* 33 */ @js.native
+  object crossFade extends TopLevel[crossFade with Double]
+  
+  /* 8 */ @js.native
+  object deleteFromGrid extends TopLevel[deleteFromGrid with Double]
+  
+  /* 6 */ @js.native
+  object deleteFromList extends TopLevel[deleteFromList with Double]
+  
+  /* 10 */ @js.native
+  object deleteFromSearchGrid extends TopLevel[deleteFromSearchGrid with Double]
+  
+  /* 12 */ @js.native
+  object deleteFromSearchList extends TopLevel[deleteFromSearchList with Double]
+  
+  /* 26 */ @js.native
+  object dragBetweenEnter extends TopLevel[dragBetweenEnter with Double]
+  
+  /* 27 */ @js.native
+  object dragBetweenLeave extends TopLevel[dragBetweenLeave with Double]
+  
+  /* 22 */ @js.native
+  object dragSourceEnd extends TopLevel[dragSourceEnd with Double]
+  
+  /* 21 */ @js.native
+  object dragSourceStart extends TopLevel[dragSourceStart with Double]
+  
+  /* 31 */ @js.native
+  object enterPage extends TopLevel[enterPage with Double]
+  
+  /* 0 */ @js.native
+  object expand extends TopLevel[expand with Double]
+  
+  /* 3 */ @js.native
+  object fadeIn extends TopLevel[fadeIn with Double]
+  
+  /* 4 */ @js.native
+  object fadeOut extends TopLevel[fadeOut with Double]
+  
+  /* 25 */ @js.native
+  object hide extends TopLevel[hide with Double]
+  
+  /* 15 */ @js.native
+  object hideEdgeUI extends TopLevel[hideEdgeUI with Double]
+  
+  /* 16 */ @js.native
+  object hidePanel extends TopLevel[hidePanel with Double]
+  
+  /* 18 */ @js.native
+  object hidePopup extends TopLevel[hidePopup with Double]
+  
+  /* 34 */ @js.native
+  object peek extends TopLevel[peek with Double]
+  
+  /* 19 */ @js.native
+  object pointerDown extends TopLevel[pointerDown with Double]
+  
+  /* 20 */ @js.native
+  object pointerUp extends TopLevel[pointerUp with Double]
+  
+  /* 2 */ @js.native
+  object reposition extends TopLevel[reposition with Double]
+  
+  /* 24 */ @js.native
+  object reveal extends TopLevel[reveal with Double]
+  
+  /* 13 */ @js.native
+  object showEdgeUI extends TopLevel[showEdgeUI with Double]
+  
+  /* 14 */ @js.native
+  object showPanel extends TopLevel[showPanel with Double]
+  
+  /* 17 */ @js.native
+  object showPopup extends TopLevel[showPopup with Double]
+  
+  /* 29 */ @js.native
+  object swipeDeselect extends TopLevel[swipeDeselect with Double]
+  
+  /* 30 */ @js.native
+  object swipeReveal extends TopLevel[swipeReveal with Double]
+  
+  /* 28 */ @js.native
+  object swipeSelect extends TopLevel[swipeSelect with Double]
+  
+  /* 23 */ @js.native
+  object transitionContent extends TopLevel[transitionContent with Double]
+  
+  /* 32 */ @js.native
+  object transitionPage extends TopLevel[transitionPage with Double]
+  
+  /* 35 */ @js.native
+  object updateBadge extends TopLevel[updateBadge with Double]
+  
 }
 

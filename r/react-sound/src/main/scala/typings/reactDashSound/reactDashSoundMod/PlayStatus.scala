@@ -1,5 +1,9 @@
 package typings.reactDashSound.reactDashSoundMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashSound.reactDashSoundMod.PlayStatus.Paused
+import typings.reactDashSound.reactDashSoundMod.PlayStatus.Playing
+import typings.reactDashSound.reactDashSoundMod.PlayStatus.Stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PlayStatus extends js.Object {
   @js.native
   sealed trait Stopped extends PlayStatus
   
-  /* "PAUSED" */ val Paused: typings.reactDashSound.reactDashSoundMod.PlayStatus.Paused with String = js.native
-  /* "PLAYING" */ val Playing: typings.reactDashSound.reactDashSoundMod.PlayStatus.Playing with String = js.native
-  /* "STOPPED" */ val Stopped: typings.reactDashSound.reactDashSoundMod.PlayStatus.Stopped with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PlayStatus with String] = js.native
+  /* "PAUSED" */ @js.native
+  object Paused extends TopLevel[Paused with String]
+  
+  /* "PLAYING" */ @js.native
+  object Playing extends TopLevel[Playing with String]
+  
+  /* "STOPPED" */ @js.native
+  object Stopped extends TopLevel[Stopped with String]
+  
 }
 

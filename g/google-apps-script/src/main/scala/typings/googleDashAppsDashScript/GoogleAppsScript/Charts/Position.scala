@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.BOTTOM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object Position extends js.Object {
   @js.native
   sealed trait TOP extends Position
   
-  /* 2 */ val BOTTOM: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.BOTTOM with Double = js.native
-  /* 3 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.NONE with Double = js.native
-  /* 1 */ val RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.RIGHT with Double = js.native
-  /* 0 */ val TOP: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Position.TOP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Position with Double] = js.native
+  /* 2 */ @js.native
+  object BOTTOM extends TopLevel[BOTTOM with Double]
+  
+  /* 3 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 1 */ @js.native
+  object RIGHT extends TopLevel[RIGHT with Double]
+  
+  /* 0 */ @js.native
+  object TOP extends TopLevel[TOP with Double]
+  
 }
 

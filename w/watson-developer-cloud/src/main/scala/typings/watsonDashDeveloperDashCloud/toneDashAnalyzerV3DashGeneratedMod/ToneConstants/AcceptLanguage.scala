@@ -1,5 +1,17 @@
 package typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.AR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.DE
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.EN
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ES
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.FR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.IT
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.JA
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.KO
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.PT_BR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ZH_CN
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ZH_TW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,18 +56,40 @@ object AcceptLanguage extends js.Object {
   @js.native
   sealed trait ZH_TW extends AcceptLanguage
   
-  /* "ar" */ val AR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.AR with String = js.native
-  /* "de" */ val DE: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.DE with String = js.native
-  /* "en" */ val EN: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.EN with String = js.native
-  /* "es" */ val ES: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ES with String = js.native
-  /* "fr" */ val FR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.FR with String = js.native
-  /* "it" */ val IT: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.IT with String = js.native
-  /* "ja" */ val JA: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.JA with String = js.native
-  /* "ko" */ val KO: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.KO with String = js.native
-  /* "pt-br" */ val PT_BR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.PT_BR with String = js.native
-  /* "zh-cn" */ val ZH_CN: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ZH_CN with String = js.native
-  /* "zh-tw" */ val ZH_TW: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.AcceptLanguage.ZH_TW with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AcceptLanguage with String] = js.native
+  /* "ar" */ @js.native
+  object AR extends TopLevel[AR with String]
+  
+  /* "de" */ @js.native
+  object DE extends TopLevel[DE with String]
+  
+  /* "en" */ @js.native
+  object EN extends TopLevel[EN with String]
+  
+  /* "es" */ @js.native
+  object ES extends TopLevel[ES with String]
+  
+  /* "fr" */ @js.native
+  object FR extends TopLevel[FR with String]
+  
+  /* "it" */ @js.native
+  object IT extends TopLevel[IT with String]
+  
+  /* "ja" */ @js.native
+  object JA extends TopLevel[JA with String]
+  
+  /* "ko" */ @js.native
+  object KO extends TopLevel[KO with String]
+  
+  /* "pt-br" */ @js.native
+  object PT_BR extends TopLevel[PT_BR with String]
+  
+  /* "zh-cn" */ @js.native
+  object ZH_CN extends TopLevel[ZH_CN with String]
+  
+  /* "zh-tw" */ @js.native
+  object ZH_TW extends TopLevel[ZH_TW with String]
+  
 }
 

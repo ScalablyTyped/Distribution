@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.I2c
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.I2c.I2cBusSpeed.fastMode
+import typings.winrtDashUwp.Windows.Devices.I2c.I2cBusSpeed.standardMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object I2cBusSpeed extends js.Object {
   @js.native
   sealed trait standardMode extends I2cBusSpeed
   
-  /* 1 */ val fastMode: typings.winrtDashUwp.Windows.Devices.I2c.I2cBusSpeed.fastMode with Double = js.native
-  /* 0 */ val standardMode: typings.winrtDashUwp.Windows.Devices.I2c.I2cBusSpeed.standardMode with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[I2cBusSpeed with Double] = js.native
+  /* 1 */ @js.native
+  object fastMode extends TopLevel[fastMode with Double]
+  
+  /* 0 */ @js.native
+  object standardMode extends TopLevel[standardMode with Double]
+  
 }
 

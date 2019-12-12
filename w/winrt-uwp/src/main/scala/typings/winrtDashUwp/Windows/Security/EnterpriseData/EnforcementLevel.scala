@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.`override`
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.block
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.noProtection
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.silent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object EnforcementLevel extends js.Object {
   @js.native
   sealed trait silent extends EnforcementLevel
   
-  /* 3 */ val block: typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.block with Double = js.native
-  /* 0 */ val noProtection: typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.noProtection with Double = js.native
-  /* 2 */ val `override`: typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.`override` with Double = js.native
-  /* 1 */ val silent: typings.winrtDashUwp.Windows.Security.EnterpriseData.EnforcementLevel.silent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnforcementLevel with Double] = js.native
+  /* 3 */ @js.native
+  object block extends TopLevel[block with Double]
+  
+  /* 0 */ @js.native
+  object noProtection extends TopLevel[noProtection with Double]
+  
+  /* 2 */ @js.native
+  object `override` extends TopLevel[`override` with Double]
+  
+  /* 1 */ @js.native
+  object silent extends TopLevel[silent with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.tsutils.utilUtilMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tsutils.utilUtilMod.SideEffectOptions.Constructor
+import typings.tsutils.utilUtilMod.SideEffectOptions.JsxElement
+import typings.tsutils.utilUtilMod.SideEffectOptions.None
+import typings.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object SideEffectOptions extends js.Object {
   @js.native
   sealed trait TaggedTemplate extends SideEffectOptions
   
-  /* 2 */ val Constructor: typings.tsutils.utilUtilMod.SideEffectOptions.Constructor with Double = js.native
-  /* 4 */ val JsxElement: typings.tsutils.utilUtilMod.SideEffectOptions.JsxElement with Double = js.native
-  /* 0 */ val None: typings.tsutils.utilUtilMod.SideEffectOptions.None with Double = js.native
-  /* 1 */ val TaggedTemplate: typings.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SideEffectOptions with Double] = js.native
+  /* 2 */ @js.native
+  object Constructor extends TopLevel[Constructor with Double]
+  
+  /* 4 */ @js.native
+  object JsxElement extends TopLevel[JsxElement with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object TaggedTemplate extends TopLevel[TaggedTemplate with Double]
+  
 }
 

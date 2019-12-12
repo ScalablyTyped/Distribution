@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.blockedForPrivacy
+import typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.notStreaming
+import typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.shutdown
+import typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.streaming
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object CameraStreamState extends js.Object {
   @js.native
   sealed trait streaming extends CameraStreamState
   
-  /* 2 */ val blockedForPrivacy: typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.blockedForPrivacy with Double = js.native
-  /* 0 */ val notStreaming: typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.notStreaming with Double = js.native
-  /* 3 */ val shutdown: typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.shutdown with Double = js.native
-  /* 1 */ val streaming: typings.winrtDashUwp.Windows.Media.Devices.CameraStreamState.streaming with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CameraStreamState with Double] = js.native
+  /* 2 */ @js.native
+  object blockedForPrivacy extends TopLevel[blockedForPrivacy with Double]
+  
+  /* 0 */ @js.native
+  object notStreaming extends TopLevel[notStreaming with Double]
+  
+  /* 3 */ @js.native
+  object shutdown extends TopLevel[shutdown with Double]
+  
+  /* 1 */ @js.native
+  object streaming extends TopLevel[streaming with Double]
+  
 }
 

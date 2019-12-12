@@ -1,5 +1,10 @@
 package typings.atGoogleDashCloudStorage.buildSrcFileMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.delete
+import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.read
+import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.resumable
+import typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ActionToHTTPMethod extends js.Object {
   @js.native
   sealed trait write extends ActionToHTTPMethod
   
-  /* "DELETE" */ val delete: typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.delete with String = js.native
-  /* "GET" */ val read: typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.read with String = js.native
-  /* "POST" */ val resumable: typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.resumable with String = js.native
-  /* "PUT" */ val write: typings.atGoogleDashCloudStorage.buildSrcFileMod.ActionToHTTPMethod.write with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ActionToHTTPMethod with String] = js.native
+  /* "DELETE" */ @js.native
+  object delete extends TopLevel[delete with String]
+  
+  /* "GET" */ @js.native
+  object read extends TopLevel[read with String]
+  
+  /* "POST" */ @js.native
+  object resumable extends TopLevel[resumable with String]
+  
+  /* "PUT" */ @js.native
+  object write extends TopLevel[write with String]
+  
 }
 

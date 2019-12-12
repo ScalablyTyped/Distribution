@@ -1,5 +1,14 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.BorderIndex.diagonalDown
+import typings.officeDashJsDashPreview.Excel.BorderIndex.diagonalUp
+import typings.officeDashJsDashPreview.Excel.BorderIndex.edgeBottom
+import typings.officeDashJsDashPreview.Excel.BorderIndex.edgeLeft
+import typings.officeDashJsDashPreview.Excel.BorderIndex.edgeRight
+import typings.officeDashJsDashPreview.Excel.BorderIndex.edgeTop
+import typings.officeDashJsDashPreview.Excel.BorderIndex.insideHorizontal
+import typings.officeDashJsDashPreview.Excel.BorderIndex.insideVertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object BorderIndex extends js.Object {
   @js.native
   sealed trait insideVertical extends BorderIndex
   
-  /* "DiagonalDown" */ val diagonalDown: typings.officeDashJsDashPreview.Excel.BorderIndex.diagonalDown with String = js.native
-  /* "DiagonalUp" */ val diagonalUp: typings.officeDashJsDashPreview.Excel.BorderIndex.diagonalUp with String = js.native
-  /* "EdgeBottom" */ val edgeBottom: typings.officeDashJsDashPreview.Excel.BorderIndex.edgeBottom with String = js.native
-  /* "EdgeLeft" */ val edgeLeft: typings.officeDashJsDashPreview.Excel.BorderIndex.edgeLeft with String = js.native
-  /* "EdgeRight" */ val edgeRight: typings.officeDashJsDashPreview.Excel.BorderIndex.edgeRight with String = js.native
-  /* "EdgeTop" */ val edgeTop: typings.officeDashJsDashPreview.Excel.BorderIndex.edgeTop with String = js.native
-  /* "InsideHorizontal" */ val insideHorizontal: typings.officeDashJsDashPreview.Excel.BorderIndex.insideHorizontal with String = js.native
-  /* "InsideVertical" */ val insideVertical: typings.officeDashJsDashPreview.Excel.BorderIndex.insideVertical with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BorderIndex with String] = js.native
+  /* "DiagonalDown" */ @js.native
+  object diagonalDown extends TopLevel[diagonalDown with String]
+  
+  /* "DiagonalUp" */ @js.native
+  object diagonalUp extends TopLevel[diagonalUp with String]
+  
+  /* "EdgeBottom" */ @js.native
+  object edgeBottom extends TopLevel[edgeBottom with String]
+  
+  /* "EdgeLeft" */ @js.native
+  object edgeLeft extends TopLevel[edgeLeft with String]
+  
+  /* "EdgeRight" */ @js.native
+  object edgeRight extends TopLevel[edgeRight with String]
+  
+  /* "EdgeTop" */ @js.native
+  object edgeTop extends TopLevel[edgeTop with String]
+  
+  /* "InsideHorizontal" */ @js.native
+  object insideHorizontal extends TopLevel[insideHorizontal with String]
+  
+  /* "InsideVertical" */ @js.native
+  object insideVertical extends TopLevel[insideVertical with String]
+  
 }
 

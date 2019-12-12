@@ -1,5 +1,8 @@
 package typings.vortexDashWebDashClient.DDS
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vortexDashWebDashClient.DDS.ReliabilityKind.BestEffort
+import typings.vortexDashWebDashClient.DDS.ReliabilityKind.Reliable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ReliabilityKind extends js.Object {
   @js.native
   sealed trait Reliable extends ReliabilityKind
   
-  /* 1 */ val BestEffort: typings.vortexDashWebDashClient.DDS.ReliabilityKind.BestEffort with Double = js.native
-  /* 0 */ val Reliable: typings.vortexDashWebDashClient.DDS.ReliabilityKind.Reliable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReliabilityKind with Double] = js.native
+  /* 1 */ @js.native
+  object BestEffort extends TopLevel[BestEffort with Double]
+  
+  /* 0 */ @js.native
+  object Reliable extends TopLevel[Reliable with Double]
+  
 }
 

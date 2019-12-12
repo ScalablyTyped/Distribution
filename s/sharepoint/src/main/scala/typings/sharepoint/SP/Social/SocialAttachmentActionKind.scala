@@ -1,5 +1,8 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialAttachmentActionKind.adHocAction
+import typings.sharepoint.SP.Social.SocialAttachmentActionKind.navigate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SocialAttachmentActionKind extends js.Object {
   @js.native
   sealed trait navigate extends SocialAttachmentActionKind
   
-  /* 1 */ val adHocAction: typings.sharepoint.SP.Social.SocialAttachmentActionKind.adHocAction with Double = js.native
-  /* 0 */ val navigate: typings.sharepoint.SP.Social.SocialAttachmentActionKind.navigate with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialAttachmentActionKind with Double] = js.native
+  /* 1 */ @js.native
+  object adHocAction extends TopLevel[adHocAction with Double]
+  
+  /* 0 */ @js.native
+  object navigate extends TopLevel[navigate with Double]
+  
 }
 

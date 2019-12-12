@@ -1,5 +1,13 @@
 package typings.thrift.thriftMod.Thrift
 
+import org.scalablytyped.runtime.TopLevel
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.BAD_VERSION
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.DEPTH_LIMIT
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.INVALID_DATA
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NEGATIVE_SIZE
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NOT_IMPLEMENTED
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.SIZE_LIMIT
+import typings.thrift.thriftMod.Thrift.TProtocolExceptionType.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object TProtocolExceptionType extends js.Object {
   @js.native
   sealed trait UNKNOWN extends TProtocolExceptionType
   
-  /* 4 */ val BAD_VERSION: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.BAD_VERSION with Double = js.native
-  /* 6 */ val DEPTH_LIMIT: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.DEPTH_LIMIT with Double = js.native
-  /* 1 */ val INVALID_DATA: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.INVALID_DATA with Double = js.native
-  /* 2 */ val NEGATIVE_SIZE: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NEGATIVE_SIZE with Double = js.native
-  /* 5 */ val NOT_IMPLEMENTED: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.NOT_IMPLEMENTED with Double = js.native
-  /* 3 */ val SIZE_LIMIT: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.SIZE_LIMIT with Double = js.native
-  /* 0 */ val UNKNOWN: typings.thrift.thriftMod.Thrift.TProtocolExceptionType.UNKNOWN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TProtocolExceptionType with Double] = js.native
+  /* 4 */ @js.native
+  object BAD_VERSION extends TopLevel[BAD_VERSION with Double]
+  
+  /* 6 */ @js.native
+  object DEPTH_LIMIT extends TopLevel[DEPTH_LIMIT with Double]
+  
+  /* 1 */ @js.native
+  object INVALID_DATA extends TopLevel[INVALID_DATA with Double]
+  
+  /* 2 */ @js.native
+  object NEGATIVE_SIZE extends TopLevel[NEGATIVE_SIZE with Double]
+  
+  /* 5 */ @js.native
+  object NOT_IMPLEMENTED extends TopLevel[NOT_IMPLEMENTED with Double]
+  
+  /* 3 */ @js.native
+  object SIZE_LIMIT extends TopLevel[SIZE_LIMIT with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
 }
 

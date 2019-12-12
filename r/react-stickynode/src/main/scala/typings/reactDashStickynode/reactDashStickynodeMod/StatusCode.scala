@@ -1,5 +1,9 @@
 package typings.reactDashStickynode.reactDashStickynodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_FIXED
+import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_ORIGINAL
+import typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_RELEASED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,10 +28,16 @@ object StatusCode extends js.Object {
   @js.native
   sealed trait STATUS_RELEASED extends StatusCode
   
-  /* 2 */ val STATUS_FIXED: typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_FIXED with Double = js.native
-  /* 0 */ val STATUS_ORIGINAL: typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_ORIGINAL with Double = js.native
-  /* 1 */ val STATUS_RELEASED: typings.reactDashStickynode.reactDashStickynodeMod.StatusCode.STATUS_RELEASED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StatusCode with Double] = js.native
+  /* 2 */ @js.native
+  object STATUS_FIXED extends TopLevel[STATUS_FIXED with Double]
+  
+  /* 0 */ @js.native
+  object STATUS_ORIGINAL extends TopLevel[STATUS_ORIGINAL with Double]
+  
+  /* 1 */ @js.native
+  object STATUS_RELEASED extends TopLevel[STATUS_RELEASED with Double]
+  
 }
 

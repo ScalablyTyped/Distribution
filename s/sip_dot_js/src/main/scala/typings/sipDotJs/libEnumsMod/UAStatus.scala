@@ -1,5 +1,11 @@
 package typings.sipDotJs.libEnumsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_INIT
+import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_NOT_READY
+import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_READY
+import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_STARTING
+import typings.sipDotJs.libEnumsMod.UAStatus.STATUS_USER_CLOSED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object UAStatus extends js.Object {
   @js.native
   sealed trait STATUS_USER_CLOSED extends UAStatus
   
-  /* 0 */ val STATUS_INIT: typings.sipDotJs.libEnumsMod.UAStatus.STATUS_INIT with Double = js.native
-  /* 4 */ val STATUS_NOT_READY: typings.sipDotJs.libEnumsMod.UAStatus.STATUS_NOT_READY with Double = js.native
-  /* 2 */ val STATUS_READY: typings.sipDotJs.libEnumsMod.UAStatus.STATUS_READY with Double = js.native
-  /* 1 */ val STATUS_STARTING: typings.sipDotJs.libEnumsMod.UAStatus.STATUS_STARTING with Double = js.native
-  /* 3 */ val STATUS_USER_CLOSED: typings.sipDotJs.libEnumsMod.UAStatus.STATUS_USER_CLOSED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UAStatus with Double] = js.native
+  /* 0 */ @js.native
+  object STATUS_INIT extends TopLevel[STATUS_INIT with Double]
+  
+  /* 4 */ @js.native
+  object STATUS_NOT_READY extends TopLevel[STATUS_NOT_READY with Double]
+  
+  /* 2 */ @js.native
+  object STATUS_READY extends TopLevel[STATUS_READY with Double]
+  
+  /* 1 */ @js.native
+  object STATUS_STARTING extends TopLevel[STATUS_STARTING with Double]
+  
+  /* 3 */ @js.native
+  object STATUS_USER_CLOSED extends TopLevel[STATUS_USER_CLOSED with Double]
+  
 }
 

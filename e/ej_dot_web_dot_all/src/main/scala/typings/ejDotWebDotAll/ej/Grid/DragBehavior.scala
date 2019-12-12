@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.DragBehavior.Copy
+import typings.ejDotWebDotAll.ej.Grid.DragBehavior.Move
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object DragBehavior extends js.Object {
   @js.native
   sealed trait Move extends DragBehavior
   
-  /* 1 */ val Copy: typings.ejDotWebDotAll.ej.Grid.DragBehavior.Copy with Double = js.native
-  /* 0 */ val Move: typings.ejDotWebDotAll.ej.Grid.DragBehavior.Move with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DragBehavior with Double] = js.native
+  /* 1 */ @js.native
+  object Copy extends TopLevel[Copy with Double]
+  
+  /* 0 */ @js.native
+  object Move extends TopLevel[Move with Double]
+  
 }
 

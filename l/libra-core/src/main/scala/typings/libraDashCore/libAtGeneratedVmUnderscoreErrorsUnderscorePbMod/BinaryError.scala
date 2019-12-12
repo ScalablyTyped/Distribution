@@ -1,5 +1,17 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.BADHEADERTABLE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.BADMAGIC
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.DUPLICATETABLE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.MALFORMED
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNEXPECTEDSIGNATURETYPE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNBINARYERROR
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNOPCODE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNSERIALIZEDTYPE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNSIGNATURETYPE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNTABLETYPE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNVERSION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object BinaryError extends js.Object {
   @js.native
   sealed trait UNKNOWNVERSION extends BinaryError
   
-  /* 8 */ val BADHEADERTABLE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.BADHEADERTABLE with Double = js.native
-  /* 2 */ val BADMAGIC: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.BADMAGIC with Double = js.native
-  /* 10 */ val DUPLICATETABLE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.DUPLICATETABLE with Double = js.native
-  /* 1 */ val MALFORMED: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.MALFORMED with Double = js.native
-  /* 9 */ val UNEXPECTEDSIGNATURETYPE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNEXPECTEDSIGNATURETYPE with Double = js.native
-  /* 0 */ val UNKNOWNBINARYERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNBINARYERROR with Double = js.native
-  /* 7 */ val UNKNOWNOPCODE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNOPCODE with Double = js.native
-  /* 6 */ val UNKNOWNSERIALIZEDTYPE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNSERIALIZEDTYPE with Double = js.native
-  /* 5 */ val UNKNOWNSIGNATURETYPE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNSIGNATURETYPE with Double = js.native
-  /* 4 */ val UNKNOWNTABLETYPE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNTABLETYPE with Double = js.native
-  /* 3 */ val UNKNOWNVERSION: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.BinaryError.UNKNOWNVERSION with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BinaryError with Double] = js.native
+  /* 8 */ @js.native
+  object BADHEADERTABLE extends TopLevel[BADHEADERTABLE with Double]
+  
+  /* 2 */ @js.native
+  object BADMAGIC extends TopLevel[BADMAGIC with Double]
+  
+  /* 10 */ @js.native
+  object DUPLICATETABLE extends TopLevel[DUPLICATETABLE with Double]
+  
+  /* 1 */ @js.native
+  object MALFORMED extends TopLevel[MALFORMED with Double]
+  
+  /* 9 */ @js.native
+  object UNEXPECTEDSIGNATURETYPE extends TopLevel[UNEXPECTEDSIGNATURETYPE with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWNBINARYERROR extends TopLevel[UNKNOWNBINARYERROR with Double]
+  
+  /* 7 */ @js.native
+  object UNKNOWNOPCODE extends TopLevel[UNKNOWNOPCODE with Double]
+  
+  /* 6 */ @js.native
+  object UNKNOWNSERIALIZEDTYPE extends TopLevel[UNKNOWNSERIALIZEDTYPE with Double]
+  
+  /* 5 */ @js.native
+  object UNKNOWNSIGNATURETYPE extends TopLevel[UNKNOWNSIGNATURETYPE with Double]
+  
+  /* 4 */ @js.native
+  object UNKNOWNTABLETYPE extends TopLevel[UNKNOWNTABLETYPE with Double]
+  
+  /* 3 */ @js.native
+  object UNKNOWNVERSION extends TopLevel[UNKNOWNVERSION with Double]
+  
 }
 

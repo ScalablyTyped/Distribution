@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Aborted
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Completed
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.InProgress
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NeedsInvestigation
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NotStarted
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Unspecified
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Waiting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object TestRunState extends js.Object {
   @js.native
   sealed trait Waiting extends TestRunState
   
-  /* 4 */ val Aborted: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Aborted with Double = js.native
-  /* 3 */ val Completed: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Completed with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.InProgress with Double = js.native
-  /* 6 */ val NeedsInvestigation: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NeedsInvestigation with Double = js.native
-  /* 1 */ val NotStarted: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.NotStarted with Double = js.native
-  /* 0 */ val Unspecified: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Unspecified with Double = js.native
-  /* 5 */ val Waiting: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunState.Waiting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TestRunState with Double] = js.native
+  /* 4 */ @js.native
+  object Aborted extends TopLevel[Aborted with Double]
+  
+  /* 3 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 6 */ @js.native
+  object NeedsInvestigation extends TopLevel[NeedsInvestigation with Double]
+  
+  /* 1 */ @js.native
+  object NotStarted extends TopLevel[NotStarted with Double]
+  
+  /* 0 */ @js.native
+  object Unspecified extends TopLevel[Unspecified with Double]
+  
+  /* 5 */ @js.native
+  object Waiting extends TopLevel[Waiting with Double]
+  
 }
 

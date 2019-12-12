@@ -1,5 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.edit
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.erase
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.none
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polygon
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polyline
+import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.pushpin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object DrawingMode extends js.Object {
   @js.native
   sealed trait pushpin extends DrawingMode
   
-  /* 0 */ val edit: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.edit with Double = js.native
-  /* 1 */ val erase: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.erase with Double = js.native
-  /* 2 */ val none: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.none with Double = js.native
-  /* 3 */ val polygon: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polygon with Double = js.native
-  /* 4 */ val polyline: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.polyline with Double = js.native
-  /* 5 */ val pushpin: typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingMode.pushpin with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawingMode with Double] = js.native
+  /* 0 */ @js.native
+  object edit extends TopLevel[edit with Double]
+  
+  /* 1 */ @js.native
+  object erase extends TopLevel[erase with Double]
+  
+  /* 2 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object polygon extends TopLevel[polygon with Double]
+  
+  /* 4 */ @js.native
+  object polyline extends TopLevel[polyline with Double]
+  
+  /* 5 */ @js.native
+  object pushpin extends TopLevel[pushpin with Double]
+  
 }
 

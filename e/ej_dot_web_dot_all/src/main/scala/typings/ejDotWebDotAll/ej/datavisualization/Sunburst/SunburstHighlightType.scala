@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Color
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Opacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object SunburstHighlightType extends js.Object {
   @js.native
   sealed trait Opacity extends SunburstHighlightType
   
-  /* 1 */ val Color: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Color with Double = js.native
-  /* 0 */ val Opacity: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstHighlightType.Opacity with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SunburstHighlightType with Double] = js.native
+  /* 1 */ @js.native
+  object Color extends TopLevel[Color with Double]
+  
+  /* 0 */ @js.native
+  object Opacity extends TopLevel[Opacity with Double]
+  
 }
 

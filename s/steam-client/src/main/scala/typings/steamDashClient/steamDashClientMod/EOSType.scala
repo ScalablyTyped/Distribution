@@ -1,5 +1,59 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EOSType.AndroidUnknown
+import typings.steamDashClient.steamDashClientMod.EOSType.IOSUnknown
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux22
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux24
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux26
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux310
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux32
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux35
+import typings.steamDashClient.steamDashClientMod.EOSType.Linux36
+import typings.steamDashClient.steamDashClientMod.EOSType.LinuxMax
+import typings.steamDashClient.steamDashClientMod.EOSType.LinuxUnknown
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1010
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1011
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1012
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS104
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS105
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1058
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS106
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1063
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1064_slgu
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS1067
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS107
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS108
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOS109
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOSMax
+import typings.steamDashClient.steamDashClientMod.EOSType.MacOSUnknown
+import typings.steamDashClient.steamDashClientMod.EOSType.Max
+import typings.steamDashClient.steamDashClientMod.EOSType.PS3
+import typings.steamDashClient.steamDashClientMod.EOSType.UMQ
+import typings.steamDashClient.steamDashClientMod.EOSType.Unknown
+import typings.steamDashClient.steamDashClientMod.EOSType.Win10
+import typings.steamDashClient.steamDashClientMod.EOSType.Win200
+import typings.steamDashClient.steamDashClientMod.EOSType.Win2000
+import typings.steamDashClient.steamDashClientMod.EOSType.Win2003
+import typings.steamDashClient.steamDashClientMod.EOSType.Win2008
+import typings.steamDashClient.steamDashClientMod.EOSType.Win2012
+import typings.steamDashClient.steamDashClientMod.EOSType.Win2012R2
+import typings.steamDashClient.steamDashClientMod.EOSType.Win311
+import typings.steamDashClient.steamDashClientMod.EOSType.Win7
+import typings.steamDashClient.steamDashClientMod.EOSType.Win8
+import typings.steamDashClient.steamDashClientMod.EOSType.Win81
+import typings.steamDashClient.steamDashClientMod.EOSType.Win95
+import typings.steamDashClient.steamDashClientMod.EOSType.Win98
+import typings.steamDashClient.steamDashClientMod.EOSType.WinMAX
+import typings.steamDashClient.steamDashClientMod.EOSType.WinME
+import typings.steamDashClient.steamDashClientMod.EOSType.WinNT
+import typings.steamDashClient.steamDashClientMod.EOSType.WinUnknown
+import typings.steamDashClient.steamDashClientMod.EOSType.WinVista
+import typings.steamDashClient.steamDashClientMod.EOSType.WinXP
+import typings.steamDashClient.steamDashClientMod.EOSType.Windows10
+import typings.steamDashClient.steamDashClientMod.EOSType.Windows7
+import typings.steamDashClient.steamDashClientMod.EOSType.Windows8
+import typings.steamDashClient.steamDashClientMod.EOSType.Windows81
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -174,60 +228,166 @@ object EOSType extends js.Object {
   @js.native
   sealed trait Windows81 extends EOSType
   
-  /* -500 */ val AndroidUnknown: typings.steamDashClient.steamDashClientMod.EOSType.AndroidUnknown with Double = js.native
-  /* -600 */ val IOSUnknown: typings.steamDashClient.steamDashClientMod.EOSType.IOSUnknown with Double = js.native
-  /* -202 */ val Linux22: typings.steamDashClient.steamDashClientMod.EOSType.Linux22 with Double = js.native
-  /* -201 */ val Linux24: typings.steamDashClient.steamDashClientMod.EOSType.Linux24 with Double = js.native
-  /* -200 */ val Linux26: typings.steamDashClient.steamDashClientMod.EOSType.Linux26 with Double = js.native
-  /* -196 */ val Linux310: typings.steamDashClient.steamDashClientMod.EOSType.Linux310 with Double = js.native
-  /* -199 */ val Linux32: typings.steamDashClient.steamDashClientMod.EOSType.Linux32 with Double = js.native
-  /* -198 */ val Linux35: typings.steamDashClient.steamDashClientMod.EOSType.Linux35 with Double = js.native
-  /* -197 */ val Linux36: typings.steamDashClient.steamDashClientMod.EOSType.Linux36 with Double = js.native
-  /* -103 */ val LinuxMax: typings.steamDashClient.steamDashClientMod.EOSType.LinuxMax with Double = js.native
-  /* -203 */ val LinuxUnknown: typings.steamDashClient.steamDashClientMod.EOSType.LinuxUnknown with Double = js.native
-  /* -87 */ val MacOS1010: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1010 with Double = js.native
-  /* -86 */ val MacOS1011: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1011 with Double = js.native
-  /* -85 */ val MacOS1012: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1012 with Double = js.native
-  /* -101 */ val MacOS104: typings.steamDashClient.steamDashClientMod.EOSType.MacOS104 with Double = js.native
-  /* -100 */ val MacOS105: typings.steamDashClient.steamDashClientMod.EOSType.MacOS105 with Double = js.native
-  /* -99 */ val MacOS1058: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1058 with Double = js.native
-  /* -95 */ val MacOS106: typings.steamDashClient.steamDashClientMod.EOSType.MacOS106 with Double = js.native
-  /* -94 */ val MacOS1063: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1063 with Double = js.native
-  /* -93 */ val MacOS1064_slgu: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1064_slgu with Double = js.native
-  /* -92 */ val MacOS1067: typings.steamDashClient.steamDashClientMod.EOSType.MacOS1067 with Double = js.native
-  /* -90 */ val MacOS107: typings.steamDashClient.steamDashClientMod.EOSType.MacOS107 with Double = js.native
-  /* -89 */ val MacOS108: typings.steamDashClient.steamDashClientMod.EOSType.MacOS108 with Double = js.native
-  /* -88 */ val MacOS109: typings.steamDashClient.steamDashClientMod.EOSType.MacOS109 with Double = js.native
-  /* -1 */ val MacOSMax: typings.steamDashClient.steamDashClientMod.EOSType.MacOSMax with Double = js.native
-  /* -102 */ val MacOSUnknown: typings.steamDashClient.steamDashClientMod.EOSType.MacOSUnknown with Double = js.native
-  /* 26 */ val Max: typings.steamDashClient.steamDashClientMod.EOSType.Max with Double = js.native
-  /* -300 */ val PS3: typings.steamDashClient.steamDashClientMod.EOSType.PS3 with Double = js.native
-  /* -400 */ val UMQ: typings.steamDashClient.steamDashClientMod.EOSType.UMQ with Double = js.native
-  /* -1 */ val Unknown: typings.steamDashClient.steamDashClientMod.EOSType.Unknown with Double = js.native
-  /* 16 */ val Win10: typings.steamDashClient.steamDashClientMod.EOSType.Win10 with Double = js.native
-  /* 6 */ val Win200: typings.steamDashClient.steamDashClientMod.EOSType.Win200 with Double = js.native
-  /* 6 */ val Win2000: typings.steamDashClient.steamDashClientMod.EOSType.Win2000 with Double = js.native
-  /* 8 */ val Win2003: typings.steamDashClient.steamDashClientMod.EOSType.Win2003 with Double = js.native
-  /* 11 */ val Win2008: typings.steamDashClient.steamDashClientMod.EOSType.Win2008 with Double = js.native
-  /* 12 */ val Win2012: typings.steamDashClient.steamDashClientMod.EOSType.Win2012 with Double = js.native
-  /* 15 */ val Win2012R2: typings.steamDashClient.steamDashClientMod.EOSType.Win2012R2 with Double = js.native
-  /* 1 */ val Win311: typings.steamDashClient.steamDashClientMod.EOSType.Win311 with Double = js.native
-  /* 10 */ val Win7: typings.steamDashClient.steamDashClientMod.EOSType.Win7 with Double = js.native
-  /* 13 */ val Win8: typings.steamDashClient.steamDashClientMod.EOSType.Win8 with Double = js.native
-  /* 14 */ val Win81: typings.steamDashClient.steamDashClientMod.EOSType.Win81 with Double = js.native
-  /* 2 */ val Win95: typings.steamDashClient.steamDashClientMod.EOSType.Win95 with Double = js.native
-  /* 3 */ val Win98: typings.steamDashClient.steamDashClientMod.EOSType.Win98 with Double = js.native
-  /* 15 */ val WinMAX: typings.steamDashClient.steamDashClientMod.EOSType.WinMAX with Double = js.native
-  /* 4 */ val WinME: typings.steamDashClient.steamDashClientMod.EOSType.WinME with Double = js.native
-  /* 5 */ val WinNT: typings.steamDashClient.steamDashClientMod.EOSType.WinNT with Double = js.native
-  /* 0 */ val WinUnknown: typings.steamDashClient.steamDashClientMod.EOSType.WinUnknown with Double = js.native
-  /* 9 */ val WinVista: typings.steamDashClient.steamDashClientMod.EOSType.WinVista with Double = js.native
-  /* 7 */ val WinXP: typings.steamDashClient.steamDashClientMod.EOSType.WinXP with Double = js.native
-  /* 16 */ val Windows10: typings.steamDashClient.steamDashClientMod.EOSType.Windows10 with Double = js.native
-  /* 10 */ val Windows7: typings.steamDashClient.steamDashClientMod.EOSType.Windows7 with Double = js.native
-  /* 13 */ val Windows8: typings.steamDashClient.steamDashClientMod.EOSType.Windows8 with Double = js.native
-  /* 14 */ val Windows81: typings.steamDashClient.steamDashClientMod.EOSType.Windows81 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EOSType with Double] = js.native
+  /* -500 */ @js.native
+  object AndroidUnknown extends TopLevel[AndroidUnknown with Double]
+  
+  /* -600 */ @js.native
+  object IOSUnknown extends TopLevel[IOSUnknown with Double]
+  
+  /* -202 */ @js.native
+  object Linux22 extends TopLevel[Linux22 with Double]
+  
+  /* -201 */ @js.native
+  object Linux24 extends TopLevel[Linux24 with Double]
+  
+  /* -200 */ @js.native
+  object Linux26 extends TopLevel[Linux26 with Double]
+  
+  /* -196 */ @js.native
+  object Linux310 extends TopLevel[Linux310 with Double]
+  
+  /* -199 */ @js.native
+  object Linux32 extends TopLevel[Linux32 with Double]
+  
+  /* -198 */ @js.native
+  object Linux35 extends TopLevel[Linux35 with Double]
+  
+  /* -197 */ @js.native
+  object Linux36 extends TopLevel[Linux36 with Double]
+  
+  /* -103 */ @js.native
+  object LinuxMax extends TopLevel[LinuxMax with Double]
+  
+  /* -203 */ @js.native
+  object LinuxUnknown extends TopLevel[LinuxUnknown with Double]
+  
+  /* -87 */ @js.native
+  object MacOS1010 extends TopLevel[MacOS1010 with Double]
+  
+  /* -86 */ @js.native
+  object MacOS1011 extends TopLevel[MacOS1011 with Double]
+  
+  /* -85 */ @js.native
+  object MacOS1012 extends TopLevel[MacOS1012 with Double]
+  
+  /* -101 */ @js.native
+  object MacOS104 extends TopLevel[MacOS104 with Double]
+  
+  /* -100 */ @js.native
+  object MacOS105 extends TopLevel[MacOS105 with Double]
+  
+  /* -99 */ @js.native
+  object MacOS1058 extends TopLevel[MacOS1058 with Double]
+  
+  /* -95 */ @js.native
+  object MacOS106 extends TopLevel[MacOS106 with Double]
+  
+  /* -94 */ @js.native
+  object MacOS1063 extends TopLevel[MacOS1063 with Double]
+  
+  /* -93 */ @js.native
+  object MacOS1064_slgu extends TopLevel[MacOS1064_slgu with Double]
+  
+  /* -92 */ @js.native
+  object MacOS1067 extends TopLevel[MacOS1067 with Double]
+  
+  /* -90 */ @js.native
+  object MacOS107 extends TopLevel[MacOS107 with Double]
+  
+  /* -89 */ @js.native
+  object MacOS108 extends TopLevel[MacOS108 with Double]
+  
+  /* -88 */ @js.native
+  object MacOS109 extends TopLevel[MacOS109 with Double]
+  
+  /* -1 */ @js.native
+  object MacOSMax extends TopLevel[MacOSMax with Double]
+  
+  /* -102 */ @js.native
+  object MacOSUnknown extends TopLevel[MacOSUnknown with Double]
+  
+  /* 26 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* -300 */ @js.native
+  object PS3 extends TopLevel[PS3 with Double]
+  
+  /* -400 */ @js.native
+  object UMQ extends TopLevel[UMQ with Double]
+  
+  /* -1 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 16 */ @js.native
+  object Win10 extends TopLevel[Win10 with Double]
+  
+  /* 6 */ @js.native
+  object Win200 extends TopLevel[Win200 with Double]
+  
+  /* 6 */ @js.native
+  object Win2000 extends TopLevel[Win2000 with Double]
+  
+  /* 8 */ @js.native
+  object Win2003 extends TopLevel[Win2003 with Double]
+  
+  /* 11 */ @js.native
+  object Win2008 extends TopLevel[Win2008 with Double]
+  
+  /* 12 */ @js.native
+  object Win2012 extends TopLevel[Win2012 with Double]
+  
+  /* 15 */ @js.native
+  object Win2012R2 extends TopLevel[Win2012R2 with Double]
+  
+  /* 1 */ @js.native
+  object Win311 extends TopLevel[Win311 with Double]
+  
+  /* 10 */ @js.native
+  object Win7 extends TopLevel[Win7 with Double]
+  
+  /* 13 */ @js.native
+  object Win8 extends TopLevel[Win8 with Double]
+  
+  /* 14 */ @js.native
+  object Win81 extends TopLevel[Win81 with Double]
+  
+  /* 2 */ @js.native
+  object Win95 extends TopLevel[Win95 with Double]
+  
+  /* 3 */ @js.native
+  object Win98 extends TopLevel[Win98 with Double]
+  
+  /* 15 */ @js.native
+  object WinMAX extends TopLevel[WinMAX with Double]
+  
+  /* 4 */ @js.native
+  object WinME extends TopLevel[WinME with Double]
+  
+  /* 5 */ @js.native
+  object WinNT extends TopLevel[WinNT with Double]
+  
+  /* 0 */ @js.native
+  object WinUnknown extends TopLevel[WinUnknown with Double]
+  
+  /* 9 */ @js.native
+  object WinVista extends TopLevel[WinVista with Double]
+  
+  /* 7 */ @js.native
+  object WinXP extends TopLevel[WinXP with Double]
+  
+  /* 16 */ @js.native
+  object Windows10 extends TopLevel[Windows10 with Double]
+  
+  /* 10 */ @js.native
+  object Windows7 extends TopLevel[Windows7 with Double]
+  
+  /* 13 */ @js.native
+  object Windows8 extends TopLevel[Windows8 with Double]
+  
+  /* 14 */ @js.native
+  object Windows81 extends TopLevel[Windows81 with Double]
+  
 }
 

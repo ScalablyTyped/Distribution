@@ -1,5 +1,9 @@
 package typings.phaser.Phaser.Physics.Impact
 
+import org.scalablytyped.runtime.TopLevel
+import typings.phaser.Phaser.Physics.Impact.TYPE.A
+import typings.phaser.Phaser.Physics.Impact.TYPE.B
+import typings.phaser.Phaser.Physics.Impact.TYPE.BOTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,11 +47,20 @@ object TYPE extends js.Object {
   @js.native
   sealed trait NONE extends TYPE
   
-  /* 1 */ val A: typings.phaser.Phaser.Physics.Impact.TYPE.A with Double = js.native
-  /* 2 */ val B: typings.phaser.Phaser.Physics.Impact.TYPE.B with Double = js.native
-  /* 3 */ val BOTH: typings.phaser.Phaser.Physics.Impact.TYPE.BOTH with Double = js.native
-  /* 0 */ val NONE: typings.phaser.Phaser.Physics.Impact.TYPE.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TYPE with Double] = js.native
+  /* 1 */ @js.native
+  object A extends TopLevel[A with Double]
+  
+  /* 2 */ @js.native
+  object B extends TopLevel[B with Double]
+  
+  /* 3 */ @js.native
+  object BOTH extends TopLevel[BOTH with Double]
+  
+  /* 0 */ @js.native
+  object NONE
+    extends TopLevel[typings.phaser.Phaser.Physics.Impact.TYPE.NONE with Double]
+  
 }
 

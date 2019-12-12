@@ -1,9 +1,11 @@
 package typings.reactDashResolver
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.Factory
 import typings.react.reactMod.StatelessComponent
 import typings.reactDashResolver.reactDashResolverMod.ResolveFn
+import typings.reactDashResolver.reactDashResolverMod.Resolver
 import typings.std.Node
 import typings.std.Record
 import scala.scalajs.js
@@ -20,7 +22,6 @@ object reactDashResolverMod extends js.Object {
     def resolve[P](factory: Factory[P]): js.Promise[Anon_Data[P]] = js.native
   }
   
-  val Resolver: typings.reactDashResolver.reactDashResolverMod.Resolver = js.native
   def client(loadingComponent: ComponentType[_]): js.Function1[/* component */ ComponentType[_], StatelessComponent[_]] = js.native
   def context[K /* <: String */](prop: K): js.Function1[/* component */ ComponentType[_], StatelessComponent[js.Any with (Record[K, _])]] = js.native
   def resolve[OwnProps, ResolvableProps, MoreProps](
@@ -39,6 +40,9 @@ object reactDashResolverMod extends js.Object {
     ], 
     StatelessComponent[OwnProps with MoreProps]
   ] = js.native
+  @js.native
+  object Resolver extends TopLevel[Resolver]
+  
   type ResolveFn[Props, V] = js.Function1[/* props */ Props, js.Promise[V]]
 }
 

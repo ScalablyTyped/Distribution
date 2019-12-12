@@ -1,5 +1,8 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.leftToRight
+import typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CoreWindowFlowDirection extends js.Object {
   @js.native
   sealed trait rightToLeft extends CoreWindowFlowDirection
   
-  /* 0 */ val leftToRight: typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.leftToRight with Double = js.native
-  /* 1 */ val rightToLeft: typings.winrt.Windows.UI.Core.CoreWindowFlowDirection.rightToLeft with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreWindowFlowDirection with Double] = js.native
+  /* 0 */ @js.native
+  object leftToRight extends TopLevel[leftToRight with Double]
+  
+  /* 1 */ @js.native
+  object rightToLeft extends TopLevel[rightToLeft with Double]
+  
 }
 

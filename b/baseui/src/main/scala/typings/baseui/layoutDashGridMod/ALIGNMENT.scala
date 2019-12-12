@@ -1,5 +1,9 @@
 package typings.baseui.layoutDashGridMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.baseui.layoutDashGridMod.ALIGNMENT.center
+import typings.baseui.layoutDashGridMod.ALIGNMENT.end
+import typings.baseui.layoutDashGridMod.ALIGNMENT.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ALIGNMENT extends js.Object {
   @js.native
   sealed trait start extends ALIGNMENT
   
-  /* "center" */ val center: typings.baseui.layoutDashGridMod.ALIGNMENT.center with String = js.native
-  /* "end" */ val end: typings.baseui.layoutDashGridMod.ALIGNMENT.end with String = js.native
-  /* "start" */ val start: typings.baseui.layoutDashGridMod.ALIGNMENT.start with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ALIGNMENT with String] = js.native
+  /* "center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "end" */ @js.native
+  object end extends TopLevel[end with String]
+  
+  /* "start" */ @js.native
+  object start extends TopLevel[start with String]
+  
 }
 

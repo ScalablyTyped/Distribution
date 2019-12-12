@@ -1,5 +1,11 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALALREADYBORROWED
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALREFALREADYRELEASED
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.MISSINGRELEASEREF
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.MOVEOFBORROWEDRESOURCE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.UNKNOWNDYNAMICREFERENCEERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object DynamicReferenceErrorType extends js.Object {
   @js.native
   sealed trait UNKNOWNDYNAMICREFERENCEERROR extends DynamicReferenceErrorType
   
-  /* 4 */ val GLOBALALREADYBORROWED: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALALREADYBORROWED with Double = js.native
-  /* 2 */ val GLOBALREFALREADYRELEASED: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.GLOBALREFALREADYRELEASED with Double = js.native
-  /* 3 */ val MISSINGRELEASEREF: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.MISSINGRELEASEREF with Double = js.native
-  /* 1 */ val MOVEOFBORROWEDRESOURCE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.MOVEOFBORROWEDRESOURCE with Double = js.native
-  /* 0 */ val UNKNOWNDYNAMICREFERENCEERROR: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.DynamicReferenceError.DynamicReferenceErrorType.UNKNOWNDYNAMICREFERENCEERROR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DynamicReferenceErrorType with Double] = js.native
+  /* 4 */ @js.native
+  object GLOBALALREADYBORROWED extends TopLevel[GLOBALALREADYBORROWED with Double]
+  
+  /* 2 */ @js.native
+  object GLOBALREFALREADYRELEASED extends TopLevel[GLOBALREFALREADYRELEASED with Double]
+  
+  /* 3 */ @js.native
+  object MISSINGRELEASEREF extends TopLevel[MISSINGRELEASEREF with Double]
+  
+  /* 1 */ @js.native
+  object MOVEOFBORROWEDRESOURCE extends TopLevel[MOVEOFBORROWEDRESOURCE with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWNDYNAMICREFERENCEERROR extends TopLevel[UNKNOWNDYNAMICREFERENCEERROR with Double]
+  
 }
 

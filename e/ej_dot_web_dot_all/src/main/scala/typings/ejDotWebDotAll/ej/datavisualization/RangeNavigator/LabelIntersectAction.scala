@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelIntersectAction.Hide
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelIntersectAction.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object LabelIntersectAction extends js.Object {
   @js.native
   sealed trait None extends LabelIntersectAction
   
-  /* 1 */ val Hide: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelIntersectAction.Hide with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.LabelIntersectAction.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LabelIntersectAction with Double] = js.native
+  /* 1 */ @js.native
+  object Hide extends TopLevel[Hide with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

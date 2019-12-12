@@ -1,5 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.CheckinType.majorCheckIn
+import typings.sharepoint.SP.CheckinType.minorCheckIn
+import typings.sharepoint.SP.CheckinType.overwriteCheckIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object CheckinType extends js.Object {
   @js.native
   sealed trait overwriteCheckIn extends CheckinType
   
-  /* 1 */ val majorCheckIn: typings.sharepoint.SP.CheckinType.majorCheckIn with Double = js.native
-  /* 0 */ val minorCheckIn: typings.sharepoint.SP.CheckinType.minorCheckIn with Double = js.native
-  /* 2 */ val overwriteCheckIn: typings.sharepoint.SP.CheckinType.overwriteCheckIn with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CheckinType with Double] = js.native
+  /* 1 */ @js.native
+  object majorCheckIn extends TopLevel[majorCheckIn with Double]
+  
+  /* 0 */ @js.native
+  object minorCheckIn extends TopLevel[minorCheckIn with Double]
+  
+  /* 2 */ @js.native
+  object overwriteCheckIn extends TopLevel[overwriteCheckIn with Double]
+  
 }
 

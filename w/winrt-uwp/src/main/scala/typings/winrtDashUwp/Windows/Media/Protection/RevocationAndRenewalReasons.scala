@@ -1,5 +1,21 @@
 package typings.winrtDashUwp.Windows.Media.Protection
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.appComponent
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.bootDriverVerificationFailed
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentCertificateRevoked
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentHighSecurityCertificateRevoked
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentLowSecurityCertificateRevoked
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentRevoked
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentSignedWithTestCertificate
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.encryptionFailure
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListAbsent
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListLoadFailed
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateExtendedKeyUse
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateRoot
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidGlobalRevocationListSignature
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.kernelModeComponentLoad
+import typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.userModeComponentLoad
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,22 +87,52 @@ object RevocationAndRenewalReasons extends js.Object {
   @js.native
   sealed trait userModeComponentLoad extends RevocationAndRenewalReasons
   
-  /* 2 */ val appComponent: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.appComponent with Double = js.native
-  /* 12 */ val bootDriverVerificationFailed: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.bootDriverVerificationFailed with Double = js.native
-  /* 8 */ val componentCertificateRevoked: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentCertificateRevoked with Double = js.native
-  /* 10 */ val componentHighSecurityCertificateRevoked: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentHighSecurityCertificateRevoked with Double = js.native
-  /* 11 */ val componentLowSecurityCertificateRevoked: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentLowSecurityCertificateRevoked with Double = js.native
-  /* 6 */ val componentRevoked: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentRevoked with Double = js.native
-  /* 13 */ val componentSignedWithTestCertificate: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.componentSignedWithTestCertificate with Double = js.native
-  /* 14 */ val encryptionFailure: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.encryptionFailure with Double = js.native
-  /* 5 */ val globalRevocationListAbsent: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListAbsent with Double = js.native
-  /* 3 */ val globalRevocationListLoadFailed: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.globalRevocationListLoadFailed with Double = js.native
-  /* 7 */ val invalidComponentCertificateExtendedKeyUse: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateExtendedKeyUse with Double = js.native
-  /* 9 */ val invalidComponentCertificateRoot: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidComponentCertificateRoot with Double = js.native
-  /* 4 */ val invalidGlobalRevocationListSignature: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.invalidGlobalRevocationListSignature with Double = js.native
-  /* 1 */ val kernelModeComponentLoad: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.kernelModeComponentLoad with Double = js.native
-  /* 0 */ val userModeComponentLoad: typings.winrtDashUwp.Windows.Media.Protection.RevocationAndRenewalReasons.userModeComponentLoad with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RevocationAndRenewalReasons with Double] = js.native
+  /* 2 */ @js.native
+  object appComponent extends TopLevel[appComponent with Double]
+  
+  /* 12 */ @js.native
+  object bootDriverVerificationFailed extends TopLevel[bootDriverVerificationFailed with Double]
+  
+  /* 8 */ @js.native
+  object componentCertificateRevoked extends TopLevel[componentCertificateRevoked with Double]
+  
+  /* 10 */ @js.native
+  object componentHighSecurityCertificateRevoked extends TopLevel[componentHighSecurityCertificateRevoked with Double]
+  
+  /* 11 */ @js.native
+  object componentLowSecurityCertificateRevoked extends TopLevel[componentLowSecurityCertificateRevoked with Double]
+  
+  /* 6 */ @js.native
+  object componentRevoked extends TopLevel[componentRevoked with Double]
+  
+  /* 13 */ @js.native
+  object componentSignedWithTestCertificate extends TopLevel[componentSignedWithTestCertificate with Double]
+  
+  /* 14 */ @js.native
+  object encryptionFailure extends TopLevel[encryptionFailure with Double]
+  
+  /* 5 */ @js.native
+  object globalRevocationListAbsent extends TopLevel[globalRevocationListAbsent with Double]
+  
+  /* 3 */ @js.native
+  object globalRevocationListLoadFailed extends TopLevel[globalRevocationListLoadFailed with Double]
+  
+  /* 7 */ @js.native
+  object invalidComponentCertificateExtendedKeyUse extends TopLevel[invalidComponentCertificateExtendedKeyUse with Double]
+  
+  /* 9 */ @js.native
+  object invalidComponentCertificateRoot extends TopLevel[invalidComponentCertificateRoot with Double]
+  
+  /* 4 */ @js.native
+  object invalidGlobalRevocationListSignature extends TopLevel[invalidGlobalRevocationListSignature with Double]
+  
+  /* 1 */ @js.native
+  object kernelModeComponentLoad extends TopLevel[kernelModeComponentLoad with Double]
+  
+  /* 0 */ @js.native
+  object userModeComponentLoad extends TopLevel[userModeComponentLoad with Double]
+  
 }
 

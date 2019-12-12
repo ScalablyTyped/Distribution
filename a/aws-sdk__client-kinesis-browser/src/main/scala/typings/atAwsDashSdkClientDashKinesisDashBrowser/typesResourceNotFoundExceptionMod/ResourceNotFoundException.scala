@@ -25,11 +25,11 @@ import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStartStreamEncrypti
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesUpdateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceNotFoundException
   extends ServiceException[_ResourceNotFoundExceptionDetails]
      with AddTagsToStreamExceptionsUnion
@@ -57,21 +57,6 @@ trait ResourceNotFoundException
      with StopStreamEncryptionExceptionsUnion
      with UpdateShardCountExceptionsUnion {
   @JSName("name")
-  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceNotFoundException
-}
-
-object ResourceNotFoundException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ResourceNotFoundExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceNotFoundException,
-    stack: String = null
-  ): ResourceNotFoundException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceNotFoundException]
-  }
+  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceNotFoundException = js.native
 }
 

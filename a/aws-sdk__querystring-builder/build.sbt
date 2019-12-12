@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__querystring-builder"
-version := "0.1.0-preview.1-ac7fb1"
+version := "0.1.0-preview.1-4de6cb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-e307b2",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-59e680",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

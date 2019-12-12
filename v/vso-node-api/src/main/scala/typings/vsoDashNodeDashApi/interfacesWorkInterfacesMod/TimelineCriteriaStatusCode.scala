@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.InvalidFilterClause
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.OK
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object TimelineCriteriaStatusCode extends js.Object {
   @js.native
   sealed trait Unknown extends TimelineCriteriaStatusCode
   
-  /* 1 */ val InvalidFilterClause: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.InvalidFilterClause with Double = js.native
-  /* 0 */ val OK: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.OK with Double = js.native
-  /* 2 */ val Unknown: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineCriteriaStatusCode with Double] = js.native
+  /* 1 */ @js.native
+  object InvalidFilterClause extends TopLevel[InvalidFilterClause with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 2 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 

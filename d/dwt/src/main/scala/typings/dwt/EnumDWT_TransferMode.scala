@@ -1,5 +1,9 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_TransferMode.TWSX_FILE
+import typings.dwt.EnumDWT_TransferMode.TWSX_MEMORY
+import typings.dwt.EnumDWT_TransferMode.TWSX_NATIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object EnumDWT_TransferMode extends js.Object {
   @js.native
   sealed trait TWSX_NATIVE extends EnumDWT_TransferMode
   
-  /* 1 */ val TWSX_FILE: typings.dwt.EnumDWT_TransferMode.TWSX_FILE with Double = js.native
-  /* 2 */ val TWSX_MEMORY: typings.dwt.EnumDWT_TransferMode.TWSX_MEMORY with Double = js.native
-  /* 0 */ val TWSX_NATIVE: typings.dwt.EnumDWT_TransferMode.TWSX_NATIVE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_TransferMode with Double] = js.native
+  /* 1 */ @js.native
+  object TWSX_FILE extends TopLevel[TWSX_FILE with Double]
+  
+  /* 2 */ @js.native
+  object TWSX_MEMORY extends TopLevel[TWSX_MEMORY with Double]
+  
+  /* 0 */ @js.native
+  object TWSX_NATIVE extends TopLevel[TWSX_NATIVE with Double]
+  
 }
 

@@ -72,11 +72,11 @@ import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateGcmChannelEx
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSegmentExceptionsUnionMod.UpdateSegmentExceptionsUnion
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ForbiddenException
   extends ServiceException[_ForbiddenExceptionDetails]
      with CreateAppExceptionsUnion
@@ -151,21 +151,6 @@ trait ForbiddenException
      with UpdateSegmentExceptionsUnion
      with UpdateSmsChannelExceptionsUnion {
   @JSName("name")
-  var name_ForbiddenException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.ForbiddenException
-}
-
-object ForbiddenException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ForbiddenExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.ForbiddenException,
-    stack: String = null
-  ): ForbiddenException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ForbiddenException]
-  }
+  var name_ForbiddenException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.ForbiddenException = js.native
 }
 

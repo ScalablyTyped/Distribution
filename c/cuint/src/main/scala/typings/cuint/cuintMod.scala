@@ -3,6 +3,7 @@ package typings.cuint
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.TopLevel
 import typings.cuint.cuintMod.Uint
 import typings.cuint.cuintMod.Uint64Constructor
 import typings.cuint.cuintMod.UintConstructor
@@ -98,7 +99,11 @@ object cuintMod extends js.Object {
     def apply(text: String, radix: Double): T = js.native
   }
   
-  val UINT32: UintConstructor[Uint] = js.native
-  val UINT64: Uint64Constructor[Uint] = js.native
+  @js.native
+  object UINT32 extends TopLevel[UintConstructor[Uint]]
+  
+  @js.native
+  object UINT64 extends TopLevel[Uint64Constructor[Uint]]
+  
 }
 

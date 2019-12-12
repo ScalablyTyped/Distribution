@@ -1,5 +1,22 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.FlowFlags.AfterFinally
+import typings.typescript.typescriptMod.FlowFlags.ArrayMutation
+import typings.typescript.typescriptMod.FlowFlags.Assignment
+import typings.typescript.typescriptMod.FlowFlags.BranchLabel
+import typings.typescript.typescriptMod.FlowFlags.Call
+import typings.typescript.typescriptMod.FlowFlags.Condition
+import typings.typescript.typescriptMod.FlowFlags.FalseCondition
+import typings.typescript.typescriptMod.FlowFlags.Label
+import typings.typescript.typescriptMod.FlowFlags.LoopLabel
+import typings.typescript.typescriptMod.FlowFlags.PreFinally
+import typings.typescript.typescriptMod.FlowFlags.Referenced
+import typings.typescript.typescriptMod.FlowFlags.Shared
+import typings.typescript.typescriptMod.FlowFlags.Start
+import typings.typescript.typescriptMod.FlowFlags.SwitchClause
+import typings.typescript.typescriptMod.FlowFlags.TrueCondition
+import typings.typescript.typescriptMod.FlowFlags.Unreachable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,23 +75,55 @@ object FlowFlags extends js.Object {
   @js.native
   sealed trait Unreachable extends FlowFlags
   
-  /* 8192 */ val AfterFinally: typings.typescript.typescriptMod.FlowFlags.AfterFinally with Double = js.native
-  /* 256 */ val ArrayMutation: typings.typescript.typescriptMod.FlowFlags.ArrayMutation with Double = js.native
-  /* 16 */ val Assignment: typings.typescript.typescriptMod.FlowFlags.Assignment with Double = js.native
-  /* 4 */ val BranchLabel: typings.typescript.typescriptMod.FlowFlags.BranchLabel with Double = js.native
-  /* 512 */ val Call: typings.typescript.typescriptMod.FlowFlags.Call with Double = js.native
-  /* 96 */ val Condition: typings.typescript.typescriptMod.FlowFlags.Condition with Double = js.native
-  /* 64 */ val FalseCondition: typings.typescript.typescriptMod.FlowFlags.FalseCondition with Double = js.native
-  /* 12 */ val Label: typings.typescript.typescriptMod.FlowFlags.Label with Double = js.native
-  /* 8 */ val LoopLabel: typings.typescript.typescriptMod.FlowFlags.LoopLabel with Double = js.native
-  /* 4096 */ val PreFinally: typings.typescript.typescriptMod.FlowFlags.PreFinally with Double = js.native
-  /* 1024 */ val Referenced: typings.typescript.typescriptMod.FlowFlags.Referenced with Double = js.native
-  /* 2048 */ val Shared: typings.typescript.typescriptMod.FlowFlags.Shared with Double = js.native
-  /* 2 */ val Start: typings.typescript.typescriptMod.FlowFlags.Start with Double = js.native
-  /* 128 */ val SwitchClause: typings.typescript.typescriptMod.FlowFlags.SwitchClause with Double = js.native
-  /* 32 */ val TrueCondition: typings.typescript.typescriptMod.FlowFlags.TrueCondition with Double = js.native
-  /* 1 */ val Unreachable: typings.typescript.typescriptMod.FlowFlags.Unreachable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlowFlags with Double] = js.native
+  /* 8192 */ @js.native
+  object AfterFinally extends TopLevel[AfterFinally with Double]
+  
+  /* 256 */ @js.native
+  object ArrayMutation extends TopLevel[ArrayMutation with Double]
+  
+  /* 16 */ @js.native
+  object Assignment extends TopLevel[Assignment with Double]
+  
+  /* 4 */ @js.native
+  object BranchLabel extends TopLevel[BranchLabel with Double]
+  
+  /* 512 */ @js.native
+  object Call extends TopLevel[Call with Double]
+  
+  /* 96 */ @js.native
+  object Condition extends TopLevel[Condition with Double]
+  
+  /* 64 */ @js.native
+  object FalseCondition extends TopLevel[FalseCondition with Double]
+  
+  /* 12 */ @js.native
+  object Label extends TopLevel[Label with Double]
+  
+  /* 8 */ @js.native
+  object LoopLabel extends TopLevel[LoopLabel with Double]
+  
+  /* 4096 */ @js.native
+  object PreFinally extends TopLevel[PreFinally with Double]
+  
+  /* 1024 */ @js.native
+  object Referenced extends TopLevel[Referenced with Double]
+  
+  /* 2048 */ @js.native
+  object Shared extends TopLevel[Shared with Double]
+  
+  /* 2 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
+  /* 128 */ @js.native
+  object SwitchClause extends TopLevel[SwitchClause with Double]
+  
+  /* 32 */ @js.native
+  object TrueCondition extends TopLevel[TrueCondition with Double]
+  
+  /* 1 */ @js.native
+  object Unreachable extends TopLevel[Unreachable with Double]
+  
 }
 

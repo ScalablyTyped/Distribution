@@ -1,5 +1,13 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartLegendPosition.bottom
+import typings.officeDashJs.Excel.ChartLegendPosition.corner
+import typings.officeDashJs.Excel.ChartLegendPosition.custom
+import typings.officeDashJs.Excel.ChartLegendPosition.invalid
+import typings.officeDashJs.Excel.ChartLegendPosition.left
+import typings.officeDashJs.Excel.ChartLegendPosition.right
+import typings.officeDashJs.Excel.ChartLegendPosition.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object ChartLegendPosition extends js.Object {
   @js.native
   sealed trait top extends ChartLegendPosition
   
-  /* "Bottom" */ val bottom: typings.officeDashJs.Excel.ChartLegendPosition.bottom with String = js.native
-  /* "Corner" */ val corner: typings.officeDashJs.Excel.ChartLegendPosition.corner with String = js.native
-  /* "Custom" */ val custom: typings.officeDashJs.Excel.ChartLegendPosition.custom with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJs.Excel.ChartLegendPosition.invalid with String = js.native
-  /* "Left" */ val left: typings.officeDashJs.Excel.ChartLegendPosition.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJs.Excel.ChartLegendPosition.right with String = js.native
-  /* "Top" */ val top: typings.officeDashJs.Excel.ChartLegendPosition.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartLegendPosition with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Corner" */ @js.native
+  object corner extends TopLevel[corner with String]
+  
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.auto
+import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.off
+import typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object HdrVideoMode extends js.Object {
   @js.native
   sealed trait on extends HdrVideoMode
   
-  /* 2 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.auto with Double = js.native
-  /* 0 */ val off: typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.off with Double = js.native
-  /* 1 */ val on: typings.winrtDashUwp.Windows.Media.Devices.HdrVideoMode.on with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HdrVideoMode with Double] = js.native
+  /* 2 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 0 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
 }
 

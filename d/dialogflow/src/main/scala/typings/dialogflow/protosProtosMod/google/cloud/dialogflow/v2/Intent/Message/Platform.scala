@@ -1,5 +1,16 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.ACTIONS_ON_GOOGLE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.FACEBOOK
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.GOOGLE_HANGOUTS
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.KIK
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.LINE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.PLATFORM_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SKYPE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SLACK
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.TELEGRAM
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.VIBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,17 +52,37 @@ object Platform extends js.Object {
   @js.native
   sealed trait VIBER extends Platform
   
-  /* 8 */ val ACTIONS_ON_GOOGLE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.ACTIONS_ON_GOOGLE with Double = js.native
-  /* 1 */ val FACEBOOK: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.FACEBOOK with Double = js.native
-  /* 11 */ val GOOGLE_HANGOUTS: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.GOOGLE_HANGOUTS with Double = js.native
-  /* 4 */ val KIK: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.KIK with Double = js.native
-  /* 6 */ val LINE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.LINE with Double = js.native
-  /* 0 */ val PLATFORM_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.PLATFORM_UNSPECIFIED with Double = js.native
-  /* 5 */ val SKYPE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SKYPE with Double = js.native
-  /* 2 */ val SLACK: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.SLACK with Double = js.native
-  /* 3 */ val TELEGRAM: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.TELEGRAM with Double = js.native
-  /* 7 */ val VIBER: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Intent.Message.Platform.VIBER with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Platform with Double] = js.native
+  /* 8 */ @js.native
+  object ACTIONS_ON_GOOGLE extends TopLevel[ACTIONS_ON_GOOGLE with Double]
+  
+  /* 1 */ @js.native
+  object FACEBOOK extends TopLevel[FACEBOOK with Double]
+  
+  /* 11 */ @js.native
+  object GOOGLE_HANGOUTS extends TopLevel[GOOGLE_HANGOUTS with Double]
+  
+  /* 4 */ @js.native
+  object KIK extends TopLevel[KIK with Double]
+  
+  /* 6 */ @js.native
+  object LINE extends TopLevel[LINE with Double]
+  
+  /* 0 */ @js.native
+  object PLATFORM_UNSPECIFIED extends TopLevel[PLATFORM_UNSPECIFIED with Double]
+  
+  /* 5 */ @js.native
+  object SKYPE extends TopLevel[SKYPE with Double]
+  
+  /* 2 */ @js.native
+  object SLACK extends TopLevel[SLACK with Double]
+  
+  /* 3 */ @js.native
+  object TELEGRAM extends TopLevel[TELEGRAM with Double]
+  
+  /* 7 */ @js.native
+  object VIBER extends TopLevel[VIBER with Double]
+  
 }
 

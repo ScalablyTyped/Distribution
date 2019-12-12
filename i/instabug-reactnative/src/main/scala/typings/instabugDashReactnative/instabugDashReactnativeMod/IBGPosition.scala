@@ -1,5 +1,10 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomLeft
+import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomRight
+import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topLeft
+import typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object IBGPosition extends js.Object {
   @js.native
   sealed trait topRight extends IBGPosition
   
-  /* 2 */ val bottomLeft: typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomLeft with Double = js.native
-  /* 0 */ val bottomRight: typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.bottomRight with Double = js.native
-  /* 3 */ val topLeft: typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topLeft with Double = js.native
-  /* 1 */ val topRight: typings.instabugDashReactnative.instabugDashReactnativeMod.IBGPosition.topRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IBGPosition with Double] = js.native
+  /* 2 */ @js.native
+  object bottomLeft extends TopLevel[bottomLeft with Double]
+  
+  /* 0 */ @js.native
+  object bottomRight extends TopLevel[bottomRight with Double]
+  
+  /* 3 */ @js.native
+  object topLeft extends TopLevel[topLeft with Double]
+  
+  /* 1 */ @js.native
+  object topRight extends TopLevel[topRight with Double]
+  
 }
 

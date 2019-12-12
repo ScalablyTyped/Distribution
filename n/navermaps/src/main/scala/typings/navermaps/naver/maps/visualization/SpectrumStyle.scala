@@ -1,5 +1,17 @@
 package typings.navermaps.naver.maps.visualization
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.COOL
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.GREYS
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.HOT
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.HSV
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.JET
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.OXYGEN
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.PORTLAND
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.RAINBOW
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.RdBu
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.YIGnBu
+import typings.navermaps.naver.maps.visualization.SpectrumStyle.YIOrRd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object SpectrumStyle extends js.Object {
   @js.native
   sealed trait YIOrRd extends SpectrumStyle
   
-  /* 3 */ val COOL: typings.navermaps.naver.maps.visualization.SpectrumStyle.COOL with Double = js.native
-  /* 4 */ val GREYS: typings.navermaps.naver.maps.visualization.SpectrumStyle.GREYS with Double = js.native
-  /* 2 */ val HOT: typings.navermaps.naver.maps.visualization.SpectrumStyle.HOT with Double = js.native
-  /* 1 */ val HSV: typings.navermaps.naver.maps.visualization.SpectrumStyle.HSV with Double = js.native
-  /* 0 */ val JET: typings.navermaps.naver.maps.visualization.SpectrumStyle.JET with Double = js.native
-  /* 10 */ val OXYGEN: typings.navermaps.naver.maps.visualization.SpectrumStyle.OXYGEN with Double = js.native
-  /* 9 */ val PORTLAND: typings.navermaps.naver.maps.visualization.SpectrumStyle.PORTLAND with Double = js.native
-  /* 8 */ val RAINBOW: typings.navermaps.naver.maps.visualization.SpectrumStyle.RAINBOW with Double = js.native
-  /* 7 */ val RdBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.RdBu with Double = js.native
-  /* 5 */ val YIGnBu: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIGnBu with Double = js.native
-  /* 6 */ val YIOrRd: typings.navermaps.naver.maps.visualization.SpectrumStyle.YIOrRd with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpectrumStyle with Double] = js.native
+  /* 3 */ @js.native
+  object COOL extends TopLevel[COOL with Double]
+  
+  /* 4 */ @js.native
+  object GREYS extends TopLevel[GREYS with Double]
+  
+  /* 2 */ @js.native
+  object HOT extends TopLevel[HOT with Double]
+  
+  /* 1 */ @js.native
+  object HSV extends TopLevel[HSV with Double]
+  
+  /* 0 */ @js.native
+  object JET extends TopLevel[JET with Double]
+  
+  /* 10 */ @js.native
+  object OXYGEN extends TopLevel[OXYGEN with Double]
+  
+  /* 9 */ @js.native
+  object PORTLAND extends TopLevel[PORTLAND with Double]
+  
+  /* 8 */ @js.native
+  object RAINBOW extends TopLevel[RAINBOW with Double]
+  
+  /* 7 */ @js.native
+  object RdBu extends TopLevel[RdBu with Double]
+  
+  /* 5 */ @js.native
+  object YIGnBu extends TopLevel[YIGnBu with Double]
+  
+  /* 6 */ @js.native
+  object YIOrRd extends TopLevel[YIOrRd with Double]
+  
 }
 

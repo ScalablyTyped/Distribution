@@ -1,5 +1,9 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +24,16 @@ object WebhookState extends js.Object {
   @js.native
   sealed trait WEBHOOK_STATE_UNSPECIFIED extends WebhookState
   
-  /* 1 */ val WEBHOOK_STATE_ENABLED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED with Double = js.native
-  /* 2 */ val WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING with Double = js.native
-  /* 0 */ val WEBHOOK_STATE_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.WebhookState.WEBHOOK_STATE_UNSPECIFIED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebhookState with Double] = js.native
+  /* 1 */ @js.native
+  object WEBHOOK_STATE_ENABLED extends TopLevel[WEBHOOK_STATE_ENABLED with Double]
+  
+  /* 2 */ @js.native
+  object WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING extends TopLevel[WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING with Double]
+  
+  /* 0 */ @js.native
+  object WEBHOOK_STATE_UNSPECIFIED extends TopLevel[WEBHOOK_STATE_UNSPECIFIED with Double]
+  
 }
 

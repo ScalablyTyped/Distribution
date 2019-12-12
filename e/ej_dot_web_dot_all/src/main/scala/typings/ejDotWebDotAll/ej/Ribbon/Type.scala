@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Ribbon
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Ribbon.Type.Custom
+import typings.ejDotWebDotAll.ej.Ribbon.Type.Gallery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,13 +43,29 @@ object Type extends js.Object {
   sealed trait ToggleButton
     extends typings.ejDotWebDotAll.ej.Ribbon.Type
   
-  /* 0 */ val Button: typings.ejDotWebDotAll.ej.Ribbon.Type.Button with Double = js.native
-  /* 3 */ val Custom: typings.ejDotWebDotAll.ej.Ribbon.Type.Custom with Double = js.native
-  /* 2 */ val DropDownList: typings.ejDotWebDotAll.ej.Ribbon.Type.DropDownList with Double = js.native
-  /* 5 */ val Gallery: typings.ejDotWebDotAll.ej.Ribbon.Type.Gallery with Double = js.native
-  /* 1 */ val SplitButton: typings.ejDotWebDotAll.ej.Ribbon.Type.SplitButton with Double = js.native
-  /* 4 */ val ToggleButton: typings.ejDotWebDotAll.ej.Ribbon.Type.ToggleButton with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Ribbon.Type with Double] = js.native
+  /* 0 */ @js.native
+  object Button
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.Type.Button with Double]
+  
+  /* 3 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 2 */ @js.native
+  object DropDownList
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.Type.DropDownList with Double]
+  
+  /* 5 */ @js.native
+  object Gallery extends TopLevel[Gallery with Double]
+  
+  /* 1 */ @js.native
+  object SplitButton
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.Type.SplitButton with Double]
+  
+  /* 4 */ @js.native
+  object ToggleButton
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.Type.ToggleButton with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.constrained
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.enabled
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PrintOptionStates extends js.Object {
   @js.native
   sealed trait none extends PrintOptionStates
   
-  /* 2 */ val constrained: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.constrained with Double = js.native
-  /* 1 */ val enabled: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.enabled with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionStates.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintOptionStates with Double] = js.native
+  /* 2 */ @js.native
+  object constrained extends TopLevel[constrained with Double]
+  
+  /* 1 */ @js.native
+  object enabled extends TopLevel[enabled with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

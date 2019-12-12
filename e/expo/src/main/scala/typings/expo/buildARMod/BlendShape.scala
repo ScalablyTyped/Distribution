@@ -1,5 +1,57 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.BlendShape.BrowDownL
+import typings.expo.buildARMod.BlendShape.BrowDownR
+import typings.expo.buildARMod.BlendShape.BrowInnerUp
+import typings.expo.buildARMod.BlendShape.BrowOuterUpL
+import typings.expo.buildARMod.BlendShape.BrowOuterUpR
+import typings.expo.buildARMod.BlendShape.CheekPuff
+import typings.expo.buildARMod.BlendShape.CheekSquintL
+import typings.expo.buildARMod.BlendShape.CheekSquintR
+import typings.expo.buildARMod.BlendShape.EyeBlinkL
+import typings.expo.buildARMod.BlendShape.EyeBlinkR
+import typings.expo.buildARMod.BlendShape.EyeLookDownL
+import typings.expo.buildARMod.BlendShape.EyeLookDownR
+import typings.expo.buildARMod.BlendShape.EyeLookInL
+import typings.expo.buildARMod.BlendShape.EyeLookInR
+import typings.expo.buildARMod.BlendShape.EyeLookOutL
+import typings.expo.buildARMod.BlendShape.EyeLookOutR
+import typings.expo.buildARMod.BlendShape.EyeLookUpL
+import typings.expo.buildARMod.BlendShape.EyeLookUpR
+import typings.expo.buildARMod.BlendShape.EyeSquintL
+import typings.expo.buildARMod.BlendShape.EyeSquintR
+import typings.expo.buildARMod.BlendShape.EyeWideL
+import typings.expo.buildARMod.BlendShape.EyeWideR
+import typings.expo.buildARMod.BlendShape.JawForward
+import typings.expo.buildARMod.BlendShape.JawLeft
+import typings.expo.buildARMod.BlendShape.JawOpen
+import typings.expo.buildARMod.BlendShape.JawRight
+import typings.expo.buildARMod.BlendShape.MouthClose
+import typings.expo.buildARMod.BlendShape.MouthDimpleL
+import typings.expo.buildARMod.BlendShape.MouthDimpleR
+import typings.expo.buildARMod.BlendShape.MouthFrownL
+import typings.expo.buildARMod.BlendShape.MouthFrownR
+import typings.expo.buildARMod.BlendShape.MouthFunnel
+import typings.expo.buildARMod.BlendShape.MouthLeft
+import typings.expo.buildARMod.BlendShape.MouthLowerDownL
+import typings.expo.buildARMod.BlendShape.MouthLowerDownR
+import typings.expo.buildARMod.BlendShape.MouthPressL
+import typings.expo.buildARMod.BlendShape.MouthPressR
+import typings.expo.buildARMod.BlendShape.MouthPucker
+import typings.expo.buildARMod.BlendShape.MouthRight
+import typings.expo.buildARMod.BlendShape.MouthRollLower
+import typings.expo.buildARMod.BlendShape.MouthRollUpper
+import typings.expo.buildARMod.BlendShape.MouthShrugLower
+import typings.expo.buildARMod.BlendShape.MouthShrugUpper
+import typings.expo.buildARMod.BlendShape.MouthSmileL
+import typings.expo.buildARMod.BlendShape.MouthSmileR
+import typings.expo.buildARMod.BlendShape.MouthStretchL
+import typings.expo.buildARMod.BlendShape.MouthStretchR
+import typings.expo.buildARMod.BlendShape.MouthUpperUpL
+import typings.expo.buildARMod.BlendShape.MouthUpperUpR
+import typings.expo.buildARMod.BlendShape.NoseSneerL
+import typings.expo.buildARMod.BlendShape.NoseSneerR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -163,58 +215,160 @@ object BlendShape extends js.Object {
   @js.native
   sealed trait NoseSneerR extends BlendShape
   
-  /* "browDown_L" */ val BrowDownL: typings.expo.buildARMod.BlendShape.BrowDownL with String = js.native
-  /* "browDown_R" */ val BrowDownR: typings.expo.buildARMod.BlendShape.BrowDownR with String = js.native
-  /* "browInnerUp" */ val BrowInnerUp: typings.expo.buildARMod.BlendShape.BrowInnerUp with String = js.native
-  /* "browOuterUp_L" */ val BrowOuterUpL: typings.expo.buildARMod.BlendShape.BrowOuterUpL with String = js.native
-  /* "browOuterUp_R" */ val BrowOuterUpR: typings.expo.buildARMod.BlendShape.BrowOuterUpR with String = js.native
-  /* "cheekPuff" */ val CheekPuff: typings.expo.buildARMod.BlendShape.CheekPuff with String = js.native
-  /* "cheekSquint_L" */ val CheekSquintL: typings.expo.buildARMod.BlendShape.CheekSquintL with String = js.native
-  /* "cheekSquint_R" */ val CheekSquintR: typings.expo.buildARMod.BlendShape.CheekSquintR with String = js.native
-  /* "eyeBlink_L" */ val EyeBlinkL: typings.expo.buildARMod.BlendShape.EyeBlinkL with String = js.native
-  /* "eyeBlink_R" */ val EyeBlinkR: typings.expo.buildARMod.BlendShape.EyeBlinkR with String = js.native
-  /* "eyeLookDown_L" */ val EyeLookDownL: typings.expo.buildARMod.BlendShape.EyeLookDownL with String = js.native
-  /* "eyeLookDown_R" */ val EyeLookDownR: typings.expo.buildARMod.BlendShape.EyeLookDownR with String = js.native
-  /* "eyeLookIn_L" */ val EyeLookInL: typings.expo.buildARMod.BlendShape.EyeLookInL with String = js.native
-  /* "eyeLookIn_R" */ val EyeLookInR: typings.expo.buildARMod.BlendShape.EyeLookInR with String = js.native
-  /* "eyeLookOut_L" */ val EyeLookOutL: typings.expo.buildARMod.BlendShape.EyeLookOutL with String = js.native
-  /* "eyeLookOut_R" */ val EyeLookOutR: typings.expo.buildARMod.BlendShape.EyeLookOutR with String = js.native
-  /* "eyeLookUp_L" */ val EyeLookUpL: typings.expo.buildARMod.BlendShape.EyeLookUpL with String = js.native
-  /* "eyeLookUp_R" */ val EyeLookUpR: typings.expo.buildARMod.BlendShape.EyeLookUpR with String = js.native
-  /* "eyeSquint_L" */ val EyeSquintL: typings.expo.buildARMod.BlendShape.EyeSquintL with String = js.native
-  /* "eyeSquint_R" */ val EyeSquintR: typings.expo.buildARMod.BlendShape.EyeSquintR with String = js.native
-  /* "eyeWide_L" */ val EyeWideL: typings.expo.buildARMod.BlendShape.EyeWideL with String = js.native
-  /* "eyeWide_R" */ val EyeWideR: typings.expo.buildARMod.BlendShape.EyeWideR with String = js.native
-  /* "jawForward" */ val JawForward: typings.expo.buildARMod.BlendShape.JawForward with String = js.native
-  /* "jawLeft" */ val JawLeft: typings.expo.buildARMod.BlendShape.JawLeft with String = js.native
-  /* "jawOpen" */ val JawOpen: typings.expo.buildARMod.BlendShape.JawOpen with String = js.native
-  /* "jawRight" */ val JawRight: typings.expo.buildARMod.BlendShape.JawRight with String = js.native
-  /* "mouthClose" */ val MouthClose: typings.expo.buildARMod.BlendShape.MouthClose with String = js.native
-  /* "mouthDimple_L" */ val MouthDimpleL: typings.expo.buildARMod.BlendShape.MouthDimpleL with String = js.native
-  /* "mouthDimple_R" */ val MouthDimpleR: typings.expo.buildARMod.BlendShape.MouthDimpleR with String = js.native
-  /* "mouthFrown_L" */ val MouthFrownL: typings.expo.buildARMod.BlendShape.MouthFrownL with String = js.native
-  /* "mouthFrown_R" */ val MouthFrownR: typings.expo.buildARMod.BlendShape.MouthFrownR with String = js.native
-  /* "mouthFunnel" */ val MouthFunnel: typings.expo.buildARMod.BlendShape.MouthFunnel with String = js.native
-  /* "mouthLeft" */ val MouthLeft: typings.expo.buildARMod.BlendShape.MouthLeft with String = js.native
-  /* "mouthLowerDown_L" */ val MouthLowerDownL: typings.expo.buildARMod.BlendShape.MouthLowerDownL with String = js.native
-  /* "mouthLowerDown_R" */ val MouthLowerDownR: typings.expo.buildARMod.BlendShape.MouthLowerDownR with String = js.native
-  /* "mouthPress_L" */ val MouthPressL: typings.expo.buildARMod.BlendShape.MouthPressL with String = js.native
-  /* "mouthPress_R" */ val MouthPressR: typings.expo.buildARMod.BlendShape.MouthPressR with String = js.native
-  /* "mouthPucker" */ val MouthPucker: typings.expo.buildARMod.BlendShape.MouthPucker with String = js.native
-  /* "mouthRight" */ val MouthRight: typings.expo.buildARMod.BlendShape.MouthRight with String = js.native
-  /* "mouthRollLower" */ val MouthRollLower: typings.expo.buildARMod.BlendShape.MouthRollLower with String = js.native
-  /* "mouthRollUpper" */ val MouthRollUpper: typings.expo.buildARMod.BlendShape.MouthRollUpper with String = js.native
-  /* "mouthShrugLower" */ val MouthShrugLower: typings.expo.buildARMod.BlendShape.MouthShrugLower with String = js.native
-  /* "mouthShrugUpper" */ val MouthShrugUpper: typings.expo.buildARMod.BlendShape.MouthShrugUpper with String = js.native
-  /* "mouthSmile_L" */ val MouthSmileL: typings.expo.buildARMod.BlendShape.MouthSmileL with String = js.native
-  /* "mouthSmile_R" */ val MouthSmileR: typings.expo.buildARMod.BlendShape.MouthSmileR with String = js.native
-  /* "mouthStretch_L" */ val MouthStretchL: typings.expo.buildARMod.BlendShape.MouthStretchL with String = js.native
-  /* "mouthStretch_R" */ val MouthStretchR: typings.expo.buildARMod.BlendShape.MouthStretchR with String = js.native
-  /* "mouthUpperUp_L" */ val MouthUpperUpL: typings.expo.buildARMod.BlendShape.MouthUpperUpL with String = js.native
-  /* "mouthUpperUp_R" */ val MouthUpperUpR: typings.expo.buildARMod.BlendShape.MouthUpperUpR with String = js.native
-  /* "noseSneer_L" */ val NoseSneerL: typings.expo.buildARMod.BlendShape.NoseSneerL with String = js.native
-  /* "noseSneer_R" */ val NoseSneerR: typings.expo.buildARMod.BlendShape.NoseSneerR with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BlendShape with String] = js.native
+  /* "browDown_L" */ @js.native
+  object BrowDownL extends TopLevel[BrowDownL with String]
+  
+  /* "browDown_R" */ @js.native
+  object BrowDownR extends TopLevel[BrowDownR with String]
+  
+  /* "browInnerUp" */ @js.native
+  object BrowInnerUp extends TopLevel[BrowInnerUp with String]
+  
+  /* "browOuterUp_L" */ @js.native
+  object BrowOuterUpL extends TopLevel[BrowOuterUpL with String]
+  
+  /* "browOuterUp_R" */ @js.native
+  object BrowOuterUpR extends TopLevel[BrowOuterUpR with String]
+  
+  /* "cheekPuff" */ @js.native
+  object CheekPuff extends TopLevel[CheekPuff with String]
+  
+  /* "cheekSquint_L" */ @js.native
+  object CheekSquintL extends TopLevel[CheekSquintL with String]
+  
+  /* "cheekSquint_R" */ @js.native
+  object CheekSquintR extends TopLevel[CheekSquintR with String]
+  
+  /* "eyeBlink_L" */ @js.native
+  object EyeBlinkL extends TopLevel[EyeBlinkL with String]
+  
+  /* "eyeBlink_R" */ @js.native
+  object EyeBlinkR extends TopLevel[EyeBlinkR with String]
+  
+  /* "eyeLookDown_L" */ @js.native
+  object EyeLookDownL extends TopLevel[EyeLookDownL with String]
+  
+  /* "eyeLookDown_R" */ @js.native
+  object EyeLookDownR extends TopLevel[EyeLookDownR with String]
+  
+  /* "eyeLookIn_L" */ @js.native
+  object EyeLookInL extends TopLevel[EyeLookInL with String]
+  
+  /* "eyeLookIn_R" */ @js.native
+  object EyeLookInR extends TopLevel[EyeLookInR with String]
+  
+  /* "eyeLookOut_L" */ @js.native
+  object EyeLookOutL extends TopLevel[EyeLookOutL with String]
+  
+  /* "eyeLookOut_R" */ @js.native
+  object EyeLookOutR extends TopLevel[EyeLookOutR with String]
+  
+  /* "eyeLookUp_L" */ @js.native
+  object EyeLookUpL extends TopLevel[EyeLookUpL with String]
+  
+  /* "eyeLookUp_R" */ @js.native
+  object EyeLookUpR extends TopLevel[EyeLookUpR with String]
+  
+  /* "eyeSquint_L" */ @js.native
+  object EyeSquintL extends TopLevel[EyeSquintL with String]
+  
+  /* "eyeSquint_R" */ @js.native
+  object EyeSquintR extends TopLevel[EyeSquintR with String]
+  
+  /* "eyeWide_L" */ @js.native
+  object EyeWideL extends TopLevel[EyeWideL with String]
+  
+  /* "eyeWide_R" */ @js.native
+  object EyeWideR extends TopLevel[EyeWideR with String]
+  
+  /* "jawForward" */ @js.native
+  object JawForward extends TopLevel[JawForward with String]
+  
+  /* "jawLeft" */ @js.native
+  object JawLeft extends TopLevel[JawLeft with String]
+  
+  /* "jawOpen" */ @js.native
+  object JawOpen extends TopLevel[JawOpen with String]
+  
+  /* "jawRight" */ @js.native
+  object JawRight extends TopLevel[JawRight with String]
+  
+  /* "mouthClose" */ @js.native
+  object MouthClose extends TopLevel[MouthClose with String]
+  
+  /* "mouthDimple_L" */ @js.native
+  object MouthDimpleL extends TopLevel[MouthDimpleL with String]
+  
+  /* "mouthDimple_R" */ @js.native
+  object MouthDimpleR extends TopLevel[MouthDimpleR with String]
+  
+  /* "mouthFrown_L" */ @js.native
+  object MouthFrownL extends TopLevel[MouthFrownL with String]
+  
+  /* "mouthFrown_R" */ @js.native
+  object MouthFrownR extends TopLevel[MouthFrownR with String]
+  
+  /* "mouthFunnel" */ @js.native
+  object MouthFunnel extends TopLevel[MouthFunnel with String]
+  
+  /* "mouthLeft" */ @js.native
+  object MouthLeft extends TopLevel[MouthLeft with String]
+  
+  /* "mouthLowerDown_L" */ @js.native
+  object MouthLowerDownL extends TopLevel[MouthLowerDownL with String]
+  
+  /* "mouthLowerDown_R" */ @js.native
+  object MouthLowerDownR extends TopLevel[MouthLowerDownR with String]
+  
+  /* "mouthPress_L" */ @js.native
+  object MouthPressL extends TopLevel[MouthPressL with String]
+  
+  /* "mouthPress_R" */ @js.native
+  object MouthPressR extends TopLevel[MouthPressR with String]
+  
+  /* "mouthPucker" */ @js.native
+  object MouthPucker extends TopLevel[MouthPucker with String]
+  
+  /* "mouthRight" */ @js.native
+  object MouthRight extends TopLevel[MouthRight with String]
+  
+  /* "mouthRollLower" */ @js.native
+  object MouthRollLower extends TopLevel[MouthRollLower with String]
+  
+  /* "mouthRollUpper" */ @js.native
+  object MouthRollUpper extends TopLevel[MouthRollUpper with String]
+  
+  /* "mouthShrugLower" */ @js.native
+  object MouthShrugLower extends TopLevel[MouthShrugLower with String]
+  
+  /* "mouthShrugUpper" */ @js.native
+  object MouthShrugUpper extends TopLevel[MouthShrugUpper with String]
+  
+  /* "mouthSmile_L" */ @js.native
+  object MouthSmileL extends TopLevel[MouthSmileL with String]
+  
+  /* "mouthSmile_R" */ @js.native
+  object MouthSmileR extends TopLevel[MouthSmileR with String]
+  
+  /* "mouthStretch_L" */ @js.native
+  object MouthStretchL extends TopLevel[MouthStretchL with String]
+  
+  /* "mouthStretch_R" */ @js.native
+  object MouthStretchR extends TopLevel[MouthStretchR with String]
+  
+  /* "mouthUpperUp_L" */ @js.native
+  object MouthUpperUpL extends TopLevel[MouthUpperUpL with String]
+  
+  /* "mouthUpperUp_R" */ @js.native
+  object MouthUpperUpR extends TopLevel[MouthUpperUpR with String]
+  
+  /* "noseSneer_L" */ @js.native
+  object NoseSneerL extends TopLevel[NoseSneerL with String]
+  
+  /* "noseSneer_R" */ @js.native
+  object NoseSneerR extends TopLevel[NoseSneerR with String]
+  
 }
 

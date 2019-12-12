@@ -1,5 +1,13 @@
 package typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Default
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.High
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Low
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Max
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Min
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.None
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Importance extends js.Object {
   @js.native
   sealed trait Unspecified extends Importance
   
-  /* 3 */ val Default: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Default with Double = js.native
-  /* 4 */ val High: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.High with Double = js.native
-  /* 2 */ val Low: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Low with Double = js.native
-  /* 5 */ val Max: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Max with Double = js.native
-  /* 1 */ val Min: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Min with Double = js.native
-  /* 3 */ val None: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.None with Double = js.native
-  /* -1000 */ val Unspecified: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.Importance.Unspecified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Importance with Double] = js.native
+  /* 3 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 4 */ @js.native
+  object High extends TopLevel[High with Double]
+  
+  /* 2 */ @js.native
+  object Low extends TopLevel[Low with Double]
+  
+  /* 5 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 1 */ @js.native
+  object Min extends TopLevel[Min with Double]
+  
+  /* 3 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* -1000 */ @js.native
+  object Unspecified extends TopLevel[Unspecified with Double]
+  
 }
 

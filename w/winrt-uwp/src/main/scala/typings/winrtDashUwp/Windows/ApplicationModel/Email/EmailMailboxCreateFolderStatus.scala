@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.nameCollision
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.networkError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.permissionsError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.serverError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.serverRejected
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.success
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object EmailMailboxCreateFolderStatus extends js.Object {
   @js.native
   sealed trait unknownFailure extends EmailMailboxCreateFolderStatus
   
-  /* 5 */ val nameCollision: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.nameCollision with Double = js.native
-  /* 1 */ val networkError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.networkError with Double = js.native
-  /* 2 */ val permissionsError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.permissionsError with Double = js.native
-  /* 3 */ val serverError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.serverError with Double = js.native
-  /* 6 */ val serverRejected: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.serverRejected with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.success with Double = js.native
-  /* 4 */ val unknownFailure: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus.unknownFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxCreateFolderStatus with Double] = js.native
+  /* 5 */ @js.native
+  object nameCollision extends TopLevel[nameCollision with Double]
+  
+  /* 1 */ @js.native
+  object networkError extends TopLevel[networkError with Double]
+  
+  /* 2 */ @js.native
+  object permissionsError extends TopLevel[permissionsError with Double]
+  
+  /* 3 */ @js.native
+  object serverError extends TopLevel[serverError with Double]
+  
+  /* 6 */ @js.native
+  object serverRejected extends TopLevel[serverRejected with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 4 */ @js.native
+  object unknownFailure extends TopLevel[unknownFailure with Double]
+  
 }
 

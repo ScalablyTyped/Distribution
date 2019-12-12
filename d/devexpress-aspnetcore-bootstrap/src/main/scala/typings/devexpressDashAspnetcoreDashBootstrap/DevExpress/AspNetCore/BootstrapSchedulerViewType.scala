@@ -1,5 +1,13 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Agenda
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Day
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.FullWeek
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Month
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Timeline
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Week
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.WorkWeek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object BootstrapSchedulerViewType extends js.Object {
   @js.native
   sealed trait WorkWeek extends BootstrapSchedulerViewType
   
-  /* "Agenda" */ val Agenda: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Agenda with String = js.native
-  /* "Day" */ val Day: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Day with String = js.native
-  /* "FullWeek" */ val FullWeek: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.FullWeek with String = js.native
-  /* "Month" */ val Month: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Month with String = js.native
-  /* "Timeline" */ val Timeline: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Timeline with String = js.native
-  /* "Week" */ val Week: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.Week with String = js.native
-  /* "WorkWeek" */ val WorkWeek: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerViewType.WorkWeek with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BootstrapSchedulerViewType with String] = js.native
+  /* "Agenda" */ @js.native
+  object Agenda extends TopLevel[Agenda with String]
+  
+  /* "Day" */ @js.native
+  object Day extends TopLevel[Day with String]
+  
+  /* "FullWeek" */ @js.native
+  object FullWeek extends TopLevel[FullWeek with String]
+  
+  /* "Month" */ @js.native
+  object Month extends TopLevel[Month with String]
+  
+  /* "Timeline" */ @js.native
+  object Timeline extends TopLevel[Timeline with String]
+  
+  /* "Week" */ @js.native
+  object Week extends TopLevel[Week with String]
+  
+  /* "WorkWeek" */ @js.native
+  object WorkWeek extends TopLevel[WorkWeek with String]
+  
 }
 

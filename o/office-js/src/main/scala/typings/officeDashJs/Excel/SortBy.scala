@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.SortBy.ascending
+import typings.officeDashJs.Excel.SortBy.descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +35,13 @@ object SortBy extends js.Object {
   @js.native
   sealed trait descending extends SortBy
   
-  /* "Ascending" */ val ascending: typings.officeDashJs.Excel.SortBy.ascending with String = js.native
-  /* "Descending" */ val descending: typings.officeDashJs.Excel.SortBy.descending with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SortBy with String] = js.native
+  /* "Ascending" */ @js.native
+  object ascending extends TopLevel[ascending with String]
+  
+  /* "Descending" */ @js.native
+  object descending extends TopLevel[descending with String]
+  
 }
 

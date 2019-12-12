@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Kanban.SelectionType.Multiple
+import typings.ejDotWebDotAll.ej.Kanban.SelectionType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object SelectionType extends js.Object {
   @js.native
   sealed trait Single extends SelectionType
   
-  /* 1 */ val Multiple: typings.ejDotWebDotAll.ej.Kanban.SelectionType.Multiple with Double = js.native
-  /* 0 */ val Single: typings.ejDotWebDotAll.ej.Kanban.SelectionType.Single with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionType with Double] = js.native
+  /* 1 */ @js.native
+  object Multiple extends TopLevel[Multiple with Double]
+  
+  /* 0 */ @js.native
+  object Single extends TopLevel[Single with Double]
+  
 }
 

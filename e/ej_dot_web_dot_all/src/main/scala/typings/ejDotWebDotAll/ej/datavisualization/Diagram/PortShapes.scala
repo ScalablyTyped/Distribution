@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Path
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Square
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object PortShapes extends js.Object {
   @js.native
   sealed trait X extends PortShapes
   
-  /* 1 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Circle with Double = js.native
-  /* 3 */ val Path: typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Path with Double = js.native
-  /* 2 */ val Square: typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.Square with Double = js.native
-  /* 0 */ val X: typings.ejDotWebDotAll.ej.datavisualization.Diagram.PortShapes.X with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PortShapes with Double] = js.native
+  /* 1 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 3 */ @js.native
+  object Path extends TopLevel[Path with Double]
+  
+  /* 2 */ @js.native
+  object Square extends TopLevel[Square with Double]
+  
+  /* 0 */ @js.native
+  object X extends TopLevel[X with Double]
+  
 }
 

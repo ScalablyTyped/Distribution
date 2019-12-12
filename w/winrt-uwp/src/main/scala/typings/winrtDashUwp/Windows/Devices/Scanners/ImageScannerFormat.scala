@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.deviceIndependentBitmap
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.jpeg
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.openXps
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.pdf
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.png
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.tiff
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.xps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object ImageScannerFormat extends js.Object {
   @js.native
   sealed trait xps extends ImageScannerFormat
   
-  /* 2 */ val deviceIndependentBitmap: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.deviceIndependentBitmap with Double = js.native
-  /* 0 */ val jpeg: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.jpeg with Double = js.native
-  /* 5 */ val openXps: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.openXps with Double = js.native
-  /* 6 */ val pdf: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.pdf with Double = js.native
-  /* 1 */ val png: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.png with Double = js.native
-  /* 3 */ val tiff: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.tiff with Double = js.native
-  /* 4 */ val xps: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerFormat.xps with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageScannerFormat with Double] = js.native
+  /* 2 */ @js.native
+  object deviceIndependentBitmap extends TopLevel[deviceIndependentBitmap with Double]
+  
+  /* 0 */ @js.native
+  object jpeg extends TopLevel[jpeg with Double]
+  
+  /* 5 */ @js.native
+  object openXps extends TopLevel[openXps with Double]
+  
+  /* 6 */ @js.native
+  object pdf extends TopLevel[pdf with Double]
+  
+  /* 1 */ @js.native
+  object png extends TopLevel[png with Double]
+  
+  /* 3 */ @js.native
+  object tiff extends TopLevel[tiff with Double]
+  
+  /* 4 */ @js.native
+  object xps extends TopLevel[xps with Double]
+  
 }
 

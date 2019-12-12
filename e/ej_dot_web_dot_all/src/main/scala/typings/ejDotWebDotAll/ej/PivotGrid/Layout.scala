@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.PivotGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.PivotGrid.Layout.ExcelLikeLayout
+import typings.ejDotWebDotAll.ej.PivotGrid.Layout.NoSummaries
+import typings.ejDotWebDotAll.ej.PivotGrid.Layout.Normal
+import typings.ejDotWebDotAll.ej.PivotGrid.Layout.NormalTopSummary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object Layout extends js.Object {
   @js.native
   sealed trait NormalTopSummary extends Layout
   
-  /* 3 */ val ExcelLikeLayout: typings.ejDotWebDotAll.ej.PivotGrid.Layout.ExcelLikeLayout with Double = js.native
-  /* 2 */ val NoSummaries: typings.ejDotWebDotAll.ej.PivotGrid.Layout.NoSummaries with Double = js.native
-  /* 0 */ val Normal: typings.ejDotWebDotAll.ej.PivotGrid.Layout.Normal with Double = js.native
-  /* 1 */ val NormalTopSummary: typings.ejDotWebDotAll.ej.PivotGrid.Layout.NormalTopSummary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Layout with Double] = js.native
+  /* 3 */ @js.native
+  object ExcelLikeLayout extends TopLevel[ExcelLikeLayout with Double]
+  
+  /* 2 */ @js.native
+  object NoSummaries extends TopLevel[NoSummaries with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
+  /* 1 */ @js.native
+  object NormalTopSummary extends TopLevel[NormalTopSummary with Double]
+  
 }
 

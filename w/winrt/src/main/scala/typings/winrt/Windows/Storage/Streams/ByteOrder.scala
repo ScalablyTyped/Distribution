@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Storage.Streams
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.Streams.ByteOrder.bigEndian
+import typings.winrt.Windows.Storage.Streams.ByteOrder.littleEndian
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ByteOrder extends js.Object {
   @js.native
   sealed trait littleEndian extends ByteOrder
   
-  /* 1 */ val bigEndian: typings.winrt.Windows.Storage.Streams.ByteOrder.bigEndian with Double = js.native
-  /* 0 */ val littleEndian: typings.winrt.Windows.Storage.Streams.ByteOrder.littleEndian with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ByteOrder with Double] = js.native
+  /* 1 */ @js.native
+  object bigEndian extends TopLevel[bigEndian with Double]
+  
+  /* 0 */ @js.native
+  object littleEndian extends TopLevel[littleEndian with Double]
+  
 }
 

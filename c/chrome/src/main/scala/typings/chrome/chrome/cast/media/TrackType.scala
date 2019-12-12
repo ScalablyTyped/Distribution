@@ -1,5 +1,9 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.TrackType.AUDIO
+import typings.chrome.chrome.cast.media.TrackType.TEXT
+import typings.chrome.chrome.cast.media.TrackType.VIDEO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TrackType extends js.Object {
   @js.native
   sealed trait VIDEO extends TrackType
   
-  /* "AUDIO" */ val AUDIO: typings.chrome.chrome.cast.media.TrackType.AUDIO with String = js.native
-  /* "TEXT" */ val TEXT: typings.chrome.chrome.cast.media.TrackType.TEXT with String = js.native
-  /* "VIDEO" */ val VIDEO: typings.chrome.chrome.cast.media.TrackType.VIDEO with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TrackType with String] = js.native
+  /* "AUDIO" */ @js.native
+  object AUDIO extends TopLevel[AUDIO with String]
+  
+  /* "TEXT" */ @js.native
+  object TEXT extends TopLevel[TEXT with String]
+  
+  /* "VIDEO" */ @js.native
+  object VIDEO extends TopLevel[VIDEO with String]
+  
 }
 

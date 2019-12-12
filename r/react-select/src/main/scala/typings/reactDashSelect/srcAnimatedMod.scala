@@ -1,5 +1,6 @@
 package typings.reactDashSelect
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -53,14 +54,28 @@ object srcAnimatedMod extends js.Object {
     def this(props: AnimatedValueContainerProps[_], context: js.Any) = this()
   }
   
-  val Input: ComponentType[AnimatedInputProps] = js.native
-  val MultiValue: ComponentType[AnimatedMultiValueProps[js.Any]] = js.native
-  val Placeholder: ComponentType[AnimatedPlaceholderProps[js.Any]] = js.native
-  val SingleValue: ComponentType[AnimatedSingleValueProps[js.Any]] = js.native
-  val ValueContainer: ComponentType[AnimatedValueContainerProps[js.Any]] = js.native
   def default[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = js.native
   def default[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
   def makeAnimated[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = js.native
   def makeAnimated[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = js.native
+  @js.native
+  object Input extends TopLevel[ComponentType[AnimatedInputProps]]
+  
+  @js.native
+  object MultiValue
+    extends TopLevel[ComponentType[AnimatedMultiValueProps[js.Any]]]
+  
+  @js.native
+  object Placeholder
+    extends TopLevel[ComponentType[AnimatedPlaceholderProps[js.Any]]]
+  
+  @js.native
+  object SingleValue
+    extends TopLevel[ComponentType[AnimatedSingleValueProps[js.Any]]]
+  
+  @js.native
+  object ValueContainer
+    extends TopLevel[ComponentType[AnimatedValueContainerProps[js.Any]]]
+  
 }
 

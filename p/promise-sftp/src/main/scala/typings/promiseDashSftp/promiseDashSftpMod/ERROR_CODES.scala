@@ -1,5 +1,38 @@
 package typings.promiseDashSftp.promiseDashSftpMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BAD_MESSAGE
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BYTE_RANGE_LOCK_CONFLICT
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BYTE_RANGE_LOCK_REFUSED
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.CANNOT_DELETE
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.CONNECTION_LOST
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.DELETE_PENDING
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.DIR_NOT_EMPTY
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.EOF
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FAILURE
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_ALREADY_EXISTS
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_CORRUPT
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_IS_A_DIRECTORY
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.GROUP_INVALID
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_FILENAME
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_HANDLE
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_PARAMETER
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.LINK_LOOP
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.LOCK_CONFLICT
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NOT_A_DIRECTORY
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_CONNECTION
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_MATCHING_BYTE_RANGE_LOCK
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_MEDIA
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SPACE_ON_FILESYSTEM
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SUCH_FILE
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SUCH_PATH
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OK
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OP_UNSUPPORTED
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OWNER_INVALID
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.PERMISSION_DENIED
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.QUOTA_EXCEEDED
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.UNKNOWN_PRINCIPAL
+import typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.WRITE_PROTECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,39 +139,103 @@ object ERROR_CODES extends js.Object {
   @js.native
   sealed trait WRITE_PROTECT extends ERROR_CODES
   
-  /* 5 */ val BAD_MESSAGE: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BAD_MESSAGE with Double = js.native
-  /* 25 */ val BYTE_RANGE_LOCK_CONFLICT: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BYTE_RANGE_LOCK_CONFLICT with Double = js.native
-  /* 26 */ val BYTE_RANGE_LOCK_REFUSED: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.BYTE_RANGE_LOCK_REFUSED with Double = js.native
-  /* 22 */ val CANNOT_DELETE: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.CANNOT_DELETE with Double = js.native
-  /* 7 */ val CONNECTION_LOST: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.CONNECTION_LOST with Double = js.native
-  /* 27 */ val DELETE_PENDING: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.DELETE_PENDING with Double = js.native
-  /* 18 */ val DIR_NOT_EMPTY: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.DIR_NOT_EMPTY with Double = js.native
-  /* 1 */ val EOF: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.EOF with Double = js.native
-  /* 4 */ val FAILURE: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FAILURE with Double = js.native
-  /* 11 */ val FILE_ALREADY_EXISTS: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_ALREADY_EXISTS with Double = js.native
-  /* 28 */ val FILE_CORRUPT: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_CORRUPT with Double = js.native
-  /* 24 */ val FILE_IS_A_DIRECTORY: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.FILE_IS_A_DIRECTORY with Double = js.native
-  /* 30 */ val GROUP_INVALID: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.GROUP_INVALID with Double = js.native
-  /* 20 */ val INVALID_FILENAME: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_FILENAME with Double = js.native
-  /* 9 */ val INVALID_HANDLE: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_HANDLE with Double = js.native
-  /* 23 */ val INVALID_PARAMETER: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.INVALID_PARAMETER with Double = js.native
-  /* 21 */ val LINK_LOOP: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.LINK_LOOP with Double = js.native
-  /* 17 */ val LOCK_CONFLICT: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.LOCK_CONFLICT with Double = js.native
-  /* 19 */ val NOT_A_DIRECTORY: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NOT_A_DIRECTORY with Double = js.native
-  /* 6 */ val NO_CONNECTION: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_CONNECTION with Double = js.native
-  /* 31 */ val NO_MATCHING_BYTE_RANGE_LOCK: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_MATCHING_BYTE_RANGE_LOCK with Double = js.native
-  /* 13 */ val NO_MEDIA: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_MEDIA with Double = js.native
-  /* 14 */ val NO_SPACE_ON_FILESYSTEM: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SPACE_ON_FILESYSTEM with Double = js.native
-  /* 2 */ val NO_SUCH_FILE: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SUCH_FILE with Double = js.native
-  /* 10 */ val NO_SUCH_PATH: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.NO_SUCH_PATH with Double = js.native
-  /* 0 */ val OK: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OK with Double = js.native
-  /* 8 */ val OP_UNSUPPORTED: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OP_UNSUPPORTED with Double = js.native
-  /* 29 */ val OWNER_INVALID: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.OWNER_INVALID with Double = js.native
-  /* 3 */ val PERMISSION_DENIED: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.PERMISSION_DENIED with Double = js.native
-  /* 15 */ val QUOTA_EXCEEDED: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.QUOTA_EXCEEDED with Double = js.native
-  /* 16 */ val UNKNOWN_PRINCIPAL: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.UNKNOWN_PRINCIPAL with Double = js.native
-  /* 12 */ val WRITE_PROTECT: typings.promiseDashSftp.promiseDashSftpMod.ERROR_CODES.WRITE_PROTECT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ERROR_CODES with Double] = js.native
+  /* 5 */ @js.native
+  object BAD_MESSAGE extends TopLevel[BAD_MESSAGE with Double]
+  
+  /* 25 */ @js.native
+  object BYTE_RANGE_LOCK_CONFLICT extends TopLevel[BYTE_RANGE_LOCK_CONFLICT with Double]
+  
+  /* 26 */ @js.native
+  object BYTE_RANGE_LOCK_REFUSED extends TopLevel[BYTE_RANGE_LOCK_REFUSED with Double]
+  
+  /* 22 */ @js.native
+  object CANNOT_DELETE extends TopLevel[CANNOT_DELETE with Double]
+  
+  /* 7 */ @js.native
+  object CONNECTION_LOST extends TopLevel[CONNECTION_LOST with Double]
+  
+  /* 27 */ @js.native
+  object DELETE_PENDING extends TopLevel[DELETE_PENDING with Double]
+  
+  /* 18 */ @js.native
+  object DIR_NOT_EMPTY extends TopLevel[DIR_NOT_EMPTY with Double]
+  
+  /* 1 */ @js.native
+  object EOF extends TopLevel[EOF with Double]
+  
+  /* 4 */ @js.native
+  object FAILURE extends TopLevel[FAILURE with Double]
+  
+  /* 11 */ @js.native
+  object FILE_ALREADY_EXISTS extends TopLevel[FILE_ALREADY_EXISTS with Double]
+  
+  /* 28 */ @js.native
+  object FILE_CORRUPT extends TopLevel[FILE_CORRUPT with Double]
+  
+  /* 24 */ @js.native
+  object FILE_IS_A_DIRECTORY extends TopLevel[FILE_IS_A_DIRECTORY with Double]
+  
+  /* 30 */ @js.native
+  object GROUP_INVALID extends TopLevel[GROUP_INVALID with Double]
+  
+  /* 20 */ @js.native
+  object INVALID_FILENAME extends TopLevel[INVALID_FILENAME with Double]
+  
+  /* 9 */ @js.native
+  object INVALID_HANDLE extends TopLevel[INVALID_HANDLE with Double]
+  
+  /* 23 */ @js.native
+  object INVALID_PARAMETER extends TopLevel[INVALID_PARAMETER with Double]
+  
+  /* 21 */ @js.native
+  object LINK_LOOP extends TopLevel[LINK_LOOP with Double]
+  
+  /* 17 */ @js.native
+  object LOCK_CONFLICT extends TopLevel[LOCK_CONFLICT with Double]
+  
+  /* 19 */ @js.native
+  object NOT_A_DIRECTORY extends TopLevel[NOT_A_DIRECTORY with Double]
+  
+  /* 6 */ @js.native
+  object NO_CONNECTION extends TopLevel[NO_CONNECTION with Double]
+  
+  /* 31 */ @js.native
+  object NO_MATCHING_BYTE_RANGE_LOCK extends TopLevel[NO_MATCHING_BYTE_RANGE_LOCK with Double]
+  
+  /* 13 */ @js.native
+  object NO_MEDIA extends TopLevel[NO_MEDIA with Double]
+  
+  /* 14 */ @js.native
+  object NO_SPACE_ON_FILESYSTEM extends TopLevel[NO_SPACE_ON_FILESYSTEM with Double]
+  
+  /* 2 */ @js.native
+  object NO_SUCH_FILE extends TopLevel[NO_SUCH_FILE with Double]
+  
+  /* 10 */ @js.native
+  object NO_SUCH_PATH extends TopLevel[NO_SUCH_PATH with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 8 */ @js.native
+  object OP_UNSUPPORTED extends TopLevel[OP_UNSUPPORTED with Double]
+  
+  /* 29 */ @js.native
+  object OWNER_INVALID extends TopLevel[OWNER_INVALID with Double]
+  
+  /* 3 */ @js.native
+  object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+  
+  /* 15 */ @js.native
+  object QUOTA_EXCEEDED extends TopLevel[QUOTA_EXCEEDED with Double]
+  
+  /* 16 */ @js.native
+  object UNKNOWN_PRINCIPAL extends TopLevel[UNKNOWN_PRINCIPAL with Double]
+  
+  /* 12 */ @js.native
+  object WRITE_PROTECT extends TopLevel[WRITE_PROTECT with Double]
+  
 }
 

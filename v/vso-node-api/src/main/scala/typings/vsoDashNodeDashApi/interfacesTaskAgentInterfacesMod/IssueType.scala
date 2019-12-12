@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Error
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object IssueType extends js.Object {
   @js.native
   sealed trait Warning extends IssueType
   
-  /* 1 */ val Error: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Error with Double = js.native
-  /* 2 */ val Warning: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.IssueType.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IssueType with Double] = js.native
+  /* 1 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 2 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

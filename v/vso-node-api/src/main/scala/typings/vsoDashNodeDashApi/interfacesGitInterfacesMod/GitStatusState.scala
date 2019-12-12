@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Error
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Failed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotApplicable
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotSet
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Pending
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object GitStatusState extends js.Object {
   @js.native
   sealed trait Succeeded extends GitStatusState
   
-  /* 4 */ val Error: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Error with Double = js.native
-  /* 3 */ val Failed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Failed with Double = js.native
-  /* 5 */ val NotApplicable: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotApplicable with Double = js.native
-  /* 0 */ val NotSet: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.NotSet with Double = js.native
-  /* 1 */ val Pending: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Pending with Double = js.native
-  /* 2 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitStatusState.Succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitStatusState with Double] = js.native
+  /* 4 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 3 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 5 */ @js.native
+  object NotApplicable extends TopLevel[NotApplicable with Double]
+  
+  /* 0 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 1 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
+  /* 2 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
 }
 

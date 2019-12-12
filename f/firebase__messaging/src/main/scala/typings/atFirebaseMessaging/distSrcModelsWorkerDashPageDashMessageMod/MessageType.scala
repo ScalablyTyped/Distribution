@@ -1,5 +1,8 @@
 package typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.NOTIFICATION_CLICKED
+import typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.PUSH_MSG_RECEIVED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object MessageType extends js.Object {
   @js.native
   sealed trait PUSH_MSG_RECEIVED extends MessageType
   
-  /* "notification-clicked" */ val NOTIFICATION_CLICKED: typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.NOTIFICATION_CLICKED with String = js.native
-  /* "push-msg-received" */ val PUSH_MSG_RECEIVED: typings.atFirebaseMessaging.distSrcModelsWorkerDashPageDashMessageMod.MessageType.PUSH_MSG_RECEIVED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[MessageType with String] = js.native
+  /* "notification-clicked" */ @js.native
+  object NOTIFICATION_CLICKED extends TopLevel[NOTIFICATION_CLICKED with String]
+  
+  /* "push-msg-received" */ @js.native
+  object PUSH_MSG_RECEIVED extends TopLevel[PUSH_MSG_RECEIVED with String]
+  
 }
 

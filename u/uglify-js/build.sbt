@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uglify-js"
-version := "3.0-dt-20181015Z-c659dd"
+version := "3.0-dt-20181015Z-40c681"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

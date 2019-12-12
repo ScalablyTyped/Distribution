@@ -1,5 +1,11 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.CameraEventType.LEFT_DRAG
+import typings.cesium.cesiumMod.CameraEventType.MIDDLE_DRAG
+import typings.cesium.cesiumMod.CameraEventType.PINCH
+import typings.cesium.cesiumMod.CameraEventType.RIGHT_DRAG
+import typings.cesium.cesiumMod.CameraEventType.WHEEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object CameraEventType extends js.Object {
   @js.native
   sealed trait WHEEL extends CameraEventType
   
-  /* 0 */ val LEFT_DRAG: typings.cesium.cesiumMod.CameraEventType.LEFT_DRAG with Double = js.native
-  /* 2 */ val MIDDLE_DRAG: typings.cesium.cesiumMod.CameraEventType.MIDDLE_DRAG with Double = js.native
-  /* 4 */ val PINCH: typings.cesium.cesiumMod.CameraEventType.PINCH with Double = js.native
-  /* 1 */ val RIGHT_DRAG: typings.cesium.cesiumMod.CameraEventType.RIGHT_DRAG with Double = js.native
-  /* 3 */ val WHEEL: typings.cesium.cesiumMod.CameraEventType.WHEEL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CameraEventType with Double] = js.native
+  /* 0 */ @js.native
+  object LEFT_DRAG extends TopLevel[LEFT_DRAG with Double]
+  
+  /* 2 */ @js.native
+  object MIDDLE_DRAG extends TopLevel[MIDDLE_DRAG with Double]
+  
+  /* 4 */ @js.native
+  object PINCH extends TopLevel[PINCH with Double]
+  
+  /* 1 */ @js.native
+  object RIGHT_DRAG extends TopLevel[RIGHT_DRAG with Double]
+  
+  /* 3 */ @js.native
+  object WHEEL extends TopLevel[WHEEL with Double]
+  
 }
 

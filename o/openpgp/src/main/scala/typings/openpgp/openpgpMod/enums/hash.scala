@@ -1,5 +1,13 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.hash.md5
+import typings.openpgp.openpgpMod.enums.hash.ripemd
+import typings.openpgp.openpgpMod.enums.hash.sha1
+import typings.openpgp.openpgpMod.enums.hash.sha224
+import typings.openpgp.openpgpMod.enums.hash.sha256
+import typings.openpgp.openpgpMod.enums.hash.sha384
+import typings.openpgp.openpgpMod.enums.hash.sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object hash extends js.Object {
   @js.native
   sealed trait sha512 extends hash
   
-  /* 1 */ val md5: typings.openpgp.openpgpMod.enums.hash.md5 with Double = js.native
-  /* 3 */ val ripemd: typings.openpgp.openpgpMod.enums.hash.ripemd with Double = js.native
-  /* 2 */ val sha1: typings.openpgp.openpgpMod.enums.hash.sha1 with Double = js.native
-  /* 11 */ val sha224: typings.openpgp.openpgpMod.enums.hash.sha224 with Double = js.native
-  /* 8 */ val sha256: typings.openpgp.openpgpMod.enums.hash.sha256 with Double = js.native
-  /* 9 */ val sha384: typings.openpgp.openpgpMod.enums.hash.sha384 with Double = js.native
-  /* 10 */ val sha512: typings.openpgp.openpgpMod.enums.hash.sha512 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[hash with Double] = js.native
+  /* 1 */ @js.native
+  object md5 extends TopLevel[md5 with Double]
+  
+  /* 3 */ @js.native
+  object ripemd extends TopLevel[ripemd with Double]
+  
+  /* 2 */ @js.native
+  object sha1 extends TopLevel[sha1 with Double]
+  
+  /* 11 */ @js.native
+  object sha224 extends TopLevel[sha224 with Double]
+  
+  /* 8 */ @js.native
+  object sha256 extends TopLevel[sha256 with Double]
+  
+  /* 9 */ @js.native
+  object sha384 extends TopLevel[sha384 with Double]
+  
+  /* 10 */ @js.native
+  object sha512 extends TopLevel[sha512 with Double]
+  
 }
 

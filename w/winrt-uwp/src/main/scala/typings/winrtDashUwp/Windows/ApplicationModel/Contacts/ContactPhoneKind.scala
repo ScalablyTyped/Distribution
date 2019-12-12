@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.assistant
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.businessFax
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.company
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.home
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.homeFax
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.mobile
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.other
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.pager
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.radio
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object ContactPhoneKind extends js.Object {
   @js.native
   sealed trait work extends ContactPhoneKind
   
-  /* 8 */ val assistant: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.assistant with Double = js.native
-  /* 5 */ val businessFax: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.businessFax with Double = js.native
-  /* 7 */ val company: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.company with Double = js.native
-  /* 0 */ val home: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.home with Double = js.native
-  /* 6 */ val homeFax: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.homeFax with Double = js.native
-  /* 1 */ val mobile: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.mobile with Double = js.native
-  /* 3 */ val other: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.other with Double = js.native
-  /* 4 */ val pager: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.pager with Double = js.native
-  /* 9 */ val radio: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.radio with Double = js.native
-  /* 2 */ val work: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactPhoneKind.work with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactPhoneKind with Double] = js.native
+  /* 8 */ @js.native
+  object assistant extends TopLevel[assistant with Double]
+  
+  /* 5 */ @js.native
+  object businessFax extends TopLevel[businessFax with Double]
+  
+  /* 7 */ @js.native
+  object company extends TopLevel[company with Double]
+  
+  /* 0 */ @js.native
+  object home extends TopLevel[home with Double]
+  
+  /* 6 */ @js.native
+  object homeFax extends TopLevel[homeFax with Double]
+  
+  /* 1 */ @js.native
+  object mobile extends TopLevel[mobile with Double]
+  
+  /* 3 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 4 */ @js.native
+  object pager extends TopLevel[pager with Double]
+  
+  /* 9 */ @js.native
+  object radio extends TopLevel[radio with Double]
+  
+  /* 2 */ @js.native
+  object work extends TopLevel[work with Double]
+  
 }
 

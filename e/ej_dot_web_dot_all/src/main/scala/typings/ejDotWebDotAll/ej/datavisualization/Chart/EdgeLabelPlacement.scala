@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.Hide
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.None
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.Shift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object EdgeLabelPlacement extends js.Object {
   @js.native
   sealed trait Shift extends EdgeLabelPlacement
   
-  /* 2 */ val Hide: typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.Hide with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.None with Double = js.native
-  /* 1 */ val Shift: typings.ejDotWebDotAll.ej.datavisualization.Chart.EdgeLabelPlacement.Shift with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EdgeLabelPlacement with Double] = js.native
+  /* 2 */ @js.native
+  object Hide extends TopLevel[Hide with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Shift extends TopLevel[Shift with Double]
+  
 }
 

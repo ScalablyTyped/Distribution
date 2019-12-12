@@ -1,5 +1,8 @@
 package typings.atUifabricUtilities.libSelectionSelectionDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionDirection.horizontal
+import typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionDirection.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SelectionDirection extends js.Object {
   @js.native
   sealed trait vertical extends SelectionDirection
   
-  /* 0 */ val horizontal: typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionDirection.horizontal with Double = js.native
-  /* 1 */ val vertical: typings.atUifabricUtilities.libSelectionSelectionDotTypesMod.SelectionDirection.vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionDirection with Double] = js.native
+  /* 0 */ @js.native
+  object horizontal extends TopLevel[horizontal with Double]
+  
+  /* 1 */ @js.native
+  object vertical extends TopLevel[vertical with Double]
+  
 }
 

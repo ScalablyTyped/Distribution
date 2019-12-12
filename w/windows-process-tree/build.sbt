@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "windows-process-tree"
-version := "0.2-dt-20191112Z-7aabc7"
+version := "0.2-dt-20191112Z-57013f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,14 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.automatic
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.city
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.continent
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.country
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.county
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.dataOnly
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.state
+import typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.world
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,15 +49,31 @@ object ChartMapAreaLevel extends js.Object {
   @js.native
   sealed trait world extends ChartMapAreaLevel
   
-  /* "Automatic" */ val automatic: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.automatic with String = js.native
-  /* "City" */ val city: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.city with String = js.native
-  /* "Continent" */ val continent: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.continent with String = js.native
-  /* "Country" */ val country: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.country with String = js.native
-  /* "County" */ val county: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.county with String = js.native
-  /* "DataOnly" */ val dataOnly: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.dataOnly with String = js.native
-  /* "State" */ val state: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.state with String = js.native
-  /* "World" */ val world: typings.officeDashJsDashPreview.Excel.ChartMapAreaLevel.world with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartMapAreaLevel with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "City" */ @js.native
+  object city extends TopLevel[city with String]
+  
+  /* "Continent" */ @js.native
+  object continent extends TopLevel[continent with String]
+  
+  /* "Country" */ @js.native
+  object country extends TopLevel[country with String]
+  
+  /* "County" */ @js.native
+  object county extends TopLevel[county with String]
+  
+  /* "DataOnly" */ @js.native
+  object dataOnly extends TopLevel[dataOnly with String]
+  
+  /* "State" */ @js.native
+  object state extends TopLevel[state with String]
+  
+  /* "World" */ @js.native
+  object world extends TopLevel[world with String]
+  
 }
 

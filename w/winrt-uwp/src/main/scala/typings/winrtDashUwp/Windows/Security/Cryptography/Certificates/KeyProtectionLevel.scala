@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithFingerprint
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object KeyProtectionLevel extends js.Object {
   @js.native
   sealed trait noConsent extends KeyProtectionLevel
   
-  /* 1 */ val consentOnly: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentOnly with Double = js.native
-  /* 3 */ val consentWithFingerprint: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithFingerprint with Double = js.native
-  /* 2 */ val consentWithPassword: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.consentWithPassword with Double = js.native
-  /* 0 */ val noConsent: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.KeyProtectionLevel.noConsent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyProtectionLevel with Double] = js.native
+  /* 1 */ @js.native
+  object consentOnly extends TopLevel[consentOnly with Double]
+  
+  /* 3 */ @js.native
+  object consentWithFingerprint extends TopLevel[consentWithFingerprint with Double]
+  
+  /* 2 */ @js.native
+  object consentWithPassword extends TopLevel[consentWithPassword with Double]
+  
+  /* 0 */ @js.native
+  object noConsent extends TopLevel[noConsent with Double]
+  
 }
 

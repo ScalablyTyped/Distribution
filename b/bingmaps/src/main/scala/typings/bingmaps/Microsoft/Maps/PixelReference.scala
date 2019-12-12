@@ -1,5 +1,9 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.PixelReference.control
+import typings.bingmaps.Microsoft.Maps.PixelReference.page
+import typings.bingmaps.Microsoft.Maps.PixelReference.viewport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object PixelReference extends js.Object {
   @js.native
   sealed trait viewport extends PixelReference
   
-  /* 0 */ val control: typings.bingmaps.Microsoft.Maps.PixelReference.control with Double = js.native
-  /* 1 */ val page: typings.bingmaps.Microsoft.Maps.PixelReference.page with Double = js.native
-  /* 2 */ val viewport: typings.bingmaps.Microsoft.Maps.PixelReference.viewport with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PixelReference with Double] = js.native
+  /* 0 */ @js.native
+  object control extends TopLevel[control with Double]
+  
+  /* 1 */ @js.native
+  object page extends TopLevel[page with Double]
+  
+  /* 2 */ @js.native
+  object viewport extends TopLevel[viewport with Double]
+  
 }
 

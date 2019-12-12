@@ -1,5 +1,18 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.auto
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso100
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso12800
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso1600
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso200
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso25600
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso3200
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso400
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso50
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso6400
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso80
+import typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso800
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,19 +72,43 @@ object IsoSpeedPreset extends js.Object {
   @js.native
   sealed trait iso800 extends IsoSpeedPreset
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.auto with Double = js.native
-  /* 3 */ val iso100: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso100 with Double = js.native
-  /* 10 */ val iso12800: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso12800 with Double = js.native
-  /* 7 */ val iso1600: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso1600 with Double = js.native
-  /* 4 */ val iso200: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso200 with Double = js.native
-  /* 11 */ val iso25600: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso25600 with Double = js.native
-  /* 8 */ val iso3200: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso3200 with Double = js.native
-  /* 5 */ val iso400: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso400 with Double = js.native
-  /* 1 */ val iso50: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso50 with Double = js.native
-  /* 9 */ val iso6400: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso6400 with Double = js.native
-  /* 2 */ val iso80: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso80 with Double = js.native
-  /* 6 */ val iso800: typings.winrtDashUwp.Windows.Media.Devices.IsoSpeedPreset.iso800 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IsoSpeedPreset with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 3 */ @js.native
+  object iso100 extends TopLevel[iso100 with Double]
+  
+  /* 10 */ @js.native
+  object iso12800 extends TopLevel[iso12800 with Double]
+  
+  /* 7 */ @js.native
+  object iso1600 extends TopLevel[iso1600 with Double]
+  
+  /* 4 */ @js.native
+  object iso200 extends TopLevel[iso200 with Double]
+  
+  /* 11 */ @js.native
+  object iso25600 extends TopLevel[iso25600 with Double]
+  
+  /* 8 */ @js.native
+  object iso3200 extends TopLevel[iso3200 with Double]
+  
+  /* 5 */ @js.native
+  object iso400 extends TopLevel[iso400 with Double]
+  
+  /* 1 */ @js.native
+  object iso50 extends TopLevel[iso50 with Double]
+  
+  /* 9 */ @js.native
+  object iso6400 extends TopLevel[iso6400 with Double]
+  
+  /* 2 */ @js.native
+  object iso80 extends TopLevel[iso80 with Double]
+  
+  /* 6 */ @js.native
+  object iso800 extends TopLevel[iso800 with Double]
+  
 }
 

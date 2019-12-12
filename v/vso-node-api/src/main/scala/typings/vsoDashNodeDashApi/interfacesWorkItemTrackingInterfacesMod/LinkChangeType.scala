@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkChangeType.Create
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkChangeType.Remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object LinkChangeType extends js.Object {
   @js.native
   sealed trait Remove extends LinkChangeType
   
-  /* 0 */ val Create: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkChangeType.Create with Double = js.native
-  /* 1 */ val Remove: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkChangeType.Remove with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LinkChangeType with Double] = js.native
+  /* 0 */ @js.native
+  object Create extends TopLevel[Create with Double]
+  
+  /* 1 */ @js.native
+  object Remove extends TopLevel[Remove with Double]
+  
 }
 

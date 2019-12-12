@@ -1,5 +1,28 @@
 package typings.backlogDashJs.backlogDashJsMod.Option
 
+import org.scalablytyped.runtime.TopLevel
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileAdded
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileDeleted
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileUpdated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.GitPushed
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.GitRepositoryCreated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueCommented
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueCreated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueDeleted
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueMultiUpdated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueUpdated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.NotifyAdded
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.ProjectUserAdded
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.ProjectUserRemoved
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestAdded
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestCommented
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestMerged
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestUpdated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.SvnCommitted
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.Undefined
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiCreated
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiDeleted
+import typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiUpdated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,29 +99,73 @@ object ActivityType extends js.Object {
   @js.native
   sealed trait WikiUpdated extends ActivityType
   
-  /* 8 */ val FileAdded: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileAdded with Double = js.native
-  /* 10 */ val FileDeleted: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileDeleted with Double = js.native
-  /* 9 */ val FileUpdated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.FileUpdated with Double = js.native
-  /* 12 */ val GitPushed: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.GitPushed with Double = js.native
-  /* 13 */ val GitRepositoryCreated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.GitRepositoryCreated with Double = js.native
-  /* 3 */ val IssueCommented: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueCommented with Double = js.native
-  /* 1 */ val IssueCreated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueCreated with Double = js.native
-  /* 4 */ val IssueDeleted: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueDeleted with Double = js.native
-  /* 14 */ val IssueMultiUpdated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueMultiUpdated with Double = js.native
-  /* 2 */ val IssueUpdated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.IssueUpdated with Double = js.native
-  /* 17 */ val NotifyAdded: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.NotifyAdded with Double = js.native
-  /* 15 */ val ProjectUserAdded: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.ProjectUserAdded with Double = js.native
-  /* 16 */ val ProjectUserRemoved: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.ProjectUserRemoved with Double = js.native
-  /* 18 */ val PullRequestAdded: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestAdded with Double = js.native
-  /* 20 */ val PullRequestCommented: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestCommented with Double = js.native
-  /* 21 */ val PullRequestMerged: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestMerged with Double = js.native
-  /* 19 */ val PullRequestUpdated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.PullRequestUpdated with Double = js.native
-  /* 11 */ val SvnCommitted: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.SvnCommitted with Double = js.native
-  /* -1 */ val Undefined: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.Undefined with Double = js.native
-  /* 5 */ val WikiCreated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiCreated with Double = js.native
-  /* 7 */ val WikiDeleted: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiDeleted with Double = js.native
-  /* 6 */ val WikiUpdated: typings.backlogDashJs.backlogDashJsMod.Option.ActivityType.WikiUpdated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ActivityType with Double] = js.native
+  /* 8 */ @js.native
+  object FileAdded extends TopLevel[FileAdded with Double]
+  
+  /* 10 */ @js.native
+  object FileDeleted extends TopLevel[FileDeleted with Double]
+  
+  /* 9 */ @js.native
+  object FileUpdated extends TopLevel[FileUpdated with Double]
+  
+  /* 12 */ @js.native
+  object GitPushed extends TopLevel[GitPushed with Double]
+  
+  /* 13 */ @js.native
+  object GitRepositoryCreated extends TopLevel[GitRepositoryCreated with Double]
+  
+  /* 3 */ @js.native
+  object IssueCommented extends TopLevel[IssueCommented with Double]
+  
+  /* 1 */ @js.native
+  object IssueCreated extends TopLevel[IssueCreated with Double]
+  
+  /* 4 */ @js.native
+  object IssueDeleted extends TopLevel[IssueDeleted with Double]
+  
+  /* 14 */ @js.native
+  object IssueMultiUpdated extends TopLevel[IssueMultiUpdated with Double]
+  
+  /* 2 */ @js.native
+  object IssueUpdated extends TopLevel[IssueUpdated with Double]
+  
+  /* 17 */ @js.native
+  object NotifyAdded extends TopLevel[NotifyAdded with Double]
+  
+  /* 15 */ @js.native
+  object ProjectUserAdded extends TopLevel[ProjectUserAdded with Double]
+  
+  /* 16 */ @js.native
+  object ProjectUserRemoved extends TopLevel[ProjectUserRemoved with Double]
+  
+  /* 18 */ @js.native
+  object PullRequestAdded extends TopLevel[PullRequestAdded with Double]
+  
+  /* 20 */ @js.native
+  object PullRequestCommented extends TopLevel[PullRequestCommented with Double]
+  
+  /* 21 */ @js.native
+  object PullRequestMerged extends TopLevel[PullRequestMerged with Double]
+  
+  /* 19 */ @js.native
+  object PullRequestUpdated extends TopLevel[PullRequestUpdated with Double]
+  
+  /* 11 */ @js.native
+  object SvnCommitted extends TopLevel[SvnCommitted with Double]
+  
+  /* -1 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
+  /* 5 */ @js.native
+  object WikiCreated extends TopLevel[WikiCreated with Double]
+  
+  /* 7 */ @js.native
+  object WikiDeleted extends TopLevel[WikiDeleted with Double]
+  
+  /* 6 */ @js.native
+  object WikiUpdated extends TopLevel[WikiUpdated with Double]
+  
 }
 

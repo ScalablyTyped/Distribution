@@ -1,5 +1,28 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelCenter
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelInsideBase
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelInsideEnd
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelNone
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelOutsideEnd
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsBottom
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsLeft
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsNone
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsRight
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsTop
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryHorizontal
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryHorizontalAxisTitle
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMajorHorizontal
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMajorVertical
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMinorHorizontal
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMinorVertical
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryVertical
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryVerticalAxisTitle
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleCenter
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleFar
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleNear
+import typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleNone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,29 +121,73 @@ object ChartProperties extends js.Object {
   @js.native
   sealed trait TitleNone extends ChartProperties
   
-  /* 0 */ val DataLabelCenter: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelCenter with Double = js.native
-  /* 1 */ val DataLabelInsideBase: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelInsideBase with Double = js.native
-  /* 2 */ val DataLabelInsideEnd: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelInsideEnd with Double = js.native
-  /* 3 */ val DataLabelNone: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelNone with Double = js.native
-  /* 4 */ val DataLabelOutsideEnd: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.DataLabelOutsideEnd with Double = js.native
-  /* 5 */ val LegendsBottom: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsBottom with Double = js.native
-  /* 6 */ val LegendsLeft: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsLeft with Double = js.native
-  /* 7 */ val LegendsNone: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsNone with Double = js.native
-  /* 8 */ val LegendsRight: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsRight with Double = js.native
-  /* 9 */ val LegendsTop: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.LegendsTop with Double = js.native
-  /* 10 */ val PrimaryHorizontal: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryHorizontal with Double = js.native
-  /* 11 */ val PrimaryHorizontalAxisTitle: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryHorizontalAxisTitle with Double = js.native
-  /* 12 */ val PrimaryMajorHorizontal: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMajorHorizontal with Double = js.native
-  /* 13 */ val PrimaryMajorVertical: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMajorVertical with Double = js.native
-  /* 14 */ val PrimaryMinorHorizontal: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMinorHorizontal with Double = js.native
-  /* 15 */ val PrimaryMinorVertical: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryMinorVertical with Double = js.native
-  /* 16 */ val PrimaryVertical: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryVertical with Double = js.native
-  /* 17 */ val PrimaryVerticalAxisTitle: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.PrimaryVerticalAxisTitle with Double = js.native
-  /* 18 */ val TitleCenter: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleCenter with Double = js.native
-  /* 19 */ val TitleFar: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleFar with Double = js.native
-  /* 20 */ val TitleNear: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleNear with Double = js.native
-  /* 21 */ val TitleNone: typings.ejDotWebDotAll.ej.Spreadsheet.ChartProperties.TitleNone with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChartProperties with Double] = js.native
+  /* 0 */ @js.native
+  object DataLabelCenter extends TopLevel[DataLabelCenter with Double]
+  
+  /* 1 */ @js.native
+  object DataLabelInsideBase extends TopLevel[DataLabelInsideBase with Double]
+  
+  /* 2 */ @js.native
+  object DataLabelInsideEnd extends TopLevel[DataLabelInsideEnd with Double]
+  
+  /* 3 */ @js.native
+  object DataLabelNone extends TopLevel[DataLabelNone with Double]
+  
+  /* 4 */ @js.native
+  object DataLabelOutsideEnd extends TopLevel[DataLabelOutsideEnd with Double]
+  
+  /* 5 */ @js.native
+  object LegendsBottom extends TopLevel[LegendsBottom with Double]
+  
+  /* 6 */ @js.native
+  object LegendsLeft extends TopLevel[LegendsLeft with Double]
+  
+  /* 7 */ @js.native
+  object LegendsNone extends TopLevel[LegendsNone with Double]
+  
+  /* 8 */ @js.native
+  object LegendsRight extends TopLevel[LegendsRight with Double]
+  
+  /* 9 */ @js.native
+  object LegendsTop extends TopLevel[LegendsTop with Double]
+  
+  /* 10 */ @js.native
+  object PrimaryHorizontal extends TopLevel[PrimaryHorizontal with Double]
+  
+  /* 11 */ @js.native
+  object PrimaryHorizontalAxisTitle extends TopLevel[PrimaryHorizontalAxisTitle with Double]
+  
+  /* 12 */ @js.native
+  object PrimaryMajorHorizontal extends TopLevel[PrimaryMajorHorizontal with Double]
+  
+  /* 13 */ @js.native
+  object PrimaryMajorVertical extends TopLevel[PrimaryMajorVertical with Double]
+  
+  /* 14 */ @js.native
+  object PrimaryMinorHorizontal extends TopLevel[PrimaryMinorHorizontal with Double]
+  
+  /* 15 */ @js.native
+  object PrimaryMinorVertical extends TopLevel[PrimaryMinorVertical with Double]
+  
+  /* 16 */ @js.native
+  object PrimaryVertical extends TopLevel[PrimaryVertical with Double]
+  
+  /* 17 */ @js.native
+  object PrimaryVerticalAxisTitle extends TopLevel[PrimaryVerticalAxisTitle with Double]
+  
+  /* 18 */ @js.native
+  object TitleCenter extends TopLevel[TitleCenter with Double]
+  
+  /* 19 */ @js.native
+  object TitleFar extends TopLevel[TitleFar with Double]
+  
+  /* 20 */ @js.native
+  object TitleNear extends TopLevel[TitleNear with Double]
+  
+  /* 21 */ @js.native
+  object TitleNone extends TopLevel[TitleNone with Double]
+  
 }
 

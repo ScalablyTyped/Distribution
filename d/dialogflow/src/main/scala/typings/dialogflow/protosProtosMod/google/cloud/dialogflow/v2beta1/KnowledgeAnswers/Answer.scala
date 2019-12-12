@@ -1,7 +1,12 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.HIGH
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.LOW
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MATCH_CONFIDENCE_LEVEL_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MEDIUM
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -127,12 +132,20 @@ object Answer extends js.Object {
     @js.native
     sealed trait MEDIUM extends MatchConfidenceLevel
     
-    /* 3 */ val HIGH: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.HIGH with Double = js.native
-    /* 1 */ val LOW: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.LOW with Double = js.native
-    /* 0 */ val MATCH_CONFIDENCE_LEVEL_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MATCH_CONFIDENCE_LEVEL_UNSPECIFIED with Double = js.native
-    /* 2 */ val MEDIUM: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.KnowledgeAnswers.Answer.MatchConfidenceLevel.MEDIUM with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MatchConfidenceLevel with Double] = js.native
+    /* 3 */ @js.native
+    object HIGH extends TopLevel[HIGH with Double]
+    
+    /* 1 */ @js.native
+    object LOW extends TopLevel[LOW with Double]
+    
+    /* 0 */ @js.native
+    object MATCH_CONFIDENCE_LEVEL_UNSPECIFIED extends TopLevel[MATCH_CONFIDENCE_LEVEL_UNSPECIFIED with Double]
+    
+    /* 2 */ @js.native
+    object MEDIUM extends TopLevel[MEDIUM with Double]
+    
   }
   
 }

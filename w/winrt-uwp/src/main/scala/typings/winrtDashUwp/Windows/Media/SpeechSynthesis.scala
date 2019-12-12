@@ -1,10 +1,13 @@
 package typings.winrtDashUwp.Windows.Media
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.SpeechSynthesisStream
 import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender
+import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.female
+import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.male
 import typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceInformation
 import typings.winrtDashUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtDashUwp.Windows.Storage.Streams.IInputStream
@@ -139,10 +142,14 @@ object SpeechSynthesis extends js.Object {
     @js.native
     sealed trait male extends VoiceGender
     
-    /* 1 */ val female: typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.female with Double = js.native
-    /* 0 */ val male: typings.winrtDashUwp.Windows.Media.SpeechSynthesis.VoiceGender.male with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[VoiceGender with Double] = js.native
+    /* 1 */ @js.native
+    object female extends TopLevel[female with Double]
+    
+    /* 0 */ @js.native
+    object male extends TopLevel[male with Double]
+    
   }
   
 }

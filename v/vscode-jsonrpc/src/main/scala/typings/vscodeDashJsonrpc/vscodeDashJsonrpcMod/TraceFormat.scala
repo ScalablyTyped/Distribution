@@ -1,5 +1,8 @@
 package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.JSON
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,10 +19,14 @@ object TraceFormat extends js.Object {
   @js.native
   sealed trait Text extends TraceFormat
   
-  /* "json" */ val JSON: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.JSON with String = js.native
-  /* "text" */ val Text: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.TraceFormat.Text with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TraceFormat with String] = js.native
   def fromString(value: String): TraceFormat = js.native
+  /* "json" */ @js.native
+  object JSON extends TopLevel[JSON with String]
+  
+  /* "text" */ @js.native
+  object Text extends TopLevel[Text with String]
+  
 }
 

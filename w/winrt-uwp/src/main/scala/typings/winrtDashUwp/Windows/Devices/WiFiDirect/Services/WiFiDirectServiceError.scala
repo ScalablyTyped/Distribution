@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.noHardware
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.radioNotAvailable
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.resourceInUse
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.success
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.unsupportedHardware
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object WiFiDirectServiceError extends js.Object {
   @js.native
   sealed trait unsupportedHardware extends WiFiDirectServiceError
   
-  /* 4 */ val noHardware: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.noHardware with Double = js.native
-  /* 1 */ val radioNotAvailable: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.radioNotAvailable with Double = js.native
-  /* 2 */ val resourceInUse: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.resourceInUse with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.success with Double = js.native
-  /* 3 */ val unsupportedHardware: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError.unsupportedHardware with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectServiceError with Double] = js.native
+  /* 4 */ @js.native
+  object noHardware extends TopLevel[noHardware with Double]
+  
+  /* 1 */ @js.native
+  object radioNotAvailable extends TopLevel[radioNotAvailable with Double]
+  
+  /* 2 */ @js.native
+  object resourceInUse extends TopLevel[resourceInUse with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 3 */ @js.native
+  object unsupportedHardware extends TopLevel[unsupportedHardware with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.CELT_MONO
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_NARROWBAND
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_ULTRAWIDEBAND
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_WIDEBAND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object Codec extends js.Object {
   @js.native
   sealed trait SPEEX_WIDEBAND extends Codec
   
-  /* 3 */ val CELT_MONO: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.CELT_MONO with Double = js.native
-  /* 0 */ val SPEEX_NARROWBAND: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_NARROWBAND with Double = js.native
-  /* 2 */ val SPEEX_ULTRAWIDEBAND: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_ULTRAWIDEBAND with Double = js.native
-  /* 1 */ val SPEEX_WIDEBAND: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.Codec.SPEEX_WIDEBAND with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Codec with Double] = js.native
+  /* 3 */ @js.native
+  object CELT_MONO extends TopLevel[CELT_MONO with Double]
+  
+  /* 0 */ @js.native
+  object SPEEX_NARROWBAND extends TopLevel[SPEEX_NARROWBAND with Double]
+  
+  /* 2 */ @js.native
+  object SPEEX_ULTRAWIDEBAND extends TopLevel[SPEEX_ULTRAWIDEBAND with Double]
+  
+  /* 1 */ @js.native
+  object SPEEX_WIDEBAND extends TopLevel[SPEEX_WIDEBAND with Double]
+  
 }
 

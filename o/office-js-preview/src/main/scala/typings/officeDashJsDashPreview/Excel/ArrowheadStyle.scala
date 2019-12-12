@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.diamond
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.none
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.open
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.oval
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.stealth
+import typings.officeDashJsDashPreview.Excel.ArrowheadStyle.triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object ArrowheadStyle extends js.Object {
   @js.native
   sealed trait triangle extends ArrowheadStyle
   
-  /* "Diamond" */ val diamond: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.diamond with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.none with String = js.native
-  /* "Open" */ val open: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.open with String = js.native
-  /* "Oval" */ val oval: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.oval with String = js.native
-  /* "Stealth" */ val stealth: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.stealth with String = js.native
-  /* "Triangle" */ val triangle: typings.officeDashJsDashPreview.Excel.ArrowheadStyle.triangle with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ArrowheadStyle with String] = js.native
+  /* "Diamond" */ @js.native
+  object diamond extends TopLevel[diamond with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Open" */ @js.native
+  object open extends TopLevel[open with String]
+  
+  /* "Oval" */ @js.native
+  object oval extends TopLevel[oval with String]
+  
+  /* "Stealth" */ @js.native
+  object stealth extends TopLevel[stealth with String]
+  
+  /* "Triangle" */ @js.native
+  object triangle extends TopLevel[triangle with String]
+  
 }
 

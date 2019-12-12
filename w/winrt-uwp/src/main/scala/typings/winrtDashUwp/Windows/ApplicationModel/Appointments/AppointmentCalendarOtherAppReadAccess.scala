@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.full
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.limited
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AppointmentCalendarOtherAppReadAccess extends js.Object {
   @js.native
   sealed trait systemOnly extends AppointmentCalendarOtherAppReadAccess
   
-  /* 2 */ val full: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.full with Double = js.native
-  /* 1 */ val limited: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.limited with Double = js.native
-  /* 0 */ val systemOnly: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppReadAccess.systemOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentCalendarOtherAppReadAccess with Double] = js.native
+  /* 2 */ @js.native
+  object full extends TopLevel[full with Double]
+  
+  /* 1 */ @js.native
+  object limited extends TopLevel[limited with Double]
+  
+  /* 0 */ @js.native
+  object systemOnly extends TopLevel[systemOnly with Double]
+  
 }
 

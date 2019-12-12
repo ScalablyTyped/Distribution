@@ -1,5 +1,21 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.attachment
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.color
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.deform
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.drawOrder
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.event
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.ikConstraint
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintMix
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintPosition
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintSpacing
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.rotate
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.scale
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.shear
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.transformConstraint
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.translate
+import typings.pixiDashSpine.PIXI.spine.core.TimelineType.twoColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,22 +71,52 @@ object TimelineType extends js.Object {
   @js.native
   sealed trait twoColor extends TimelineType
   
-  /* 4 */ val attachment: typings.pixiDashSpine.PIXI.spine.core.TimelineType.attachment with Double = js.native
-  /* 5 */ val color: typings.pixiDashSpine.PIXI.spine.core.TimelineType.color with Double = js.native
-  /* 6 */ val deform: typings.pixiDashSpine.PIXI.spine.core.TimelineType.deform with Double = js.native
-  /* 8 */ val drawOrder: typings.pixiDashSpine.PIXI.spine.core.TimelineType.drawOrder with Double = js.native
-  /* 7 */ val event: typings.pixiDashSpine.PIXI.spine.core.TimelineType.event with Double = js.native
-  /* 9 */ val ikConstraint: typings.pixiDashSpine.PIXI.spine.core.TimelineType.ikConstraint with Double = js.native
-  /* 13 */ val pathConstraintMix: typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintMix with Double = js.native
-  /* 11 */ val pathConstraintPosition: typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintPosition with Double = js.native
-  /* 12 */ val pathConstraintSpacing: typings.pixiDashSpine.PIXI.spine.core.TimelineType.pathConstraintSpacing with Double = js.native
-  /* 0 */ val rotate: typings.pixiDashSpine.PIXI.spine.core.TimelineType.rotate with Double = js.native
-  /* 2 */ val scale: typings.pixiDashSpine.PIXI.spine.core.TimelineType.scale with Double = js.native
-  /* 3 */ val shear: typings.pixiDashSpine.PIXI.spine.core.TimelineType.shear with Double = js.native
-  /* 10 */ val transformConstraint: typings.pixiDashSpine.PIXI.spine.core.TimelineType.transformConstraint with Double = js.native
-  /* 1 */ val translate: typings.pixiDashSpine.PIXI.spine.core.TimelineType.translate with Double = js.native
-  /* 14 */ val twoColor: typings.pixiDashSpine.PIXI.spine.core.TimelineType.twoColor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineType with Double] = js.native
+  /* 4 */ @js.native
+  object attachment extends TopLevel[attachment with Double]
+  
+  /* 5 */ @js.native
+  object color extends TopLevel[color with Double]
+  
+  /* 6 */ @js.native
+  object deform extends TopLevel[deform with Double]
+  
+  /* 8 */ @js.native
+  object drawOrder extends TopLevel[drawOrder with Double]
+  
+  /* 7 */ @js.native
+  object event extends TopLevel[event with Double]
+  
+  /* 9 */ @js.native
+  object ikConstraint extends TopLevel[ikConstraint with Double]
+  
+  /* 13 */ @js.native
+  object pathConstraintMix extends TopLevel[pathConstraintMix with Double]
+  
+  /* 11 */ @js.native
+  object pathConstraintPosition extends TopLevel[pathConstraintPosition with Double]
+  
+  /* 12 */ @js.native
+  object pathConstraintSpacing extends TopLevel[pathConstraintSpacing with Double]
+  
+  /* 0 */ @js.native
+  object rotate extends TopLevel[rotate with Double]
+  
+  /* 2 */ @js.native
+  object scale extends TopLevel[scale with Double]
+  
+  /* 3 */ @js.native
+  object shear extends TopLevel[shear with Double]
+  
+  /* 10 */ @js.native
+  object transformConstraint extends TopLevel[transformConstraint with Double]
+  
+  /* 1 */ @js.native
+  object translate extends TopLevel[translate with Double]
+  
+  /* 14 */ @js.native
+  object twoColor extends TopLevel[twoColor with Double]
+  
 }
 

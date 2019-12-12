@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.nothingToFulfill
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchasePending
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchaseReverted
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.serverError
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object FulfillmentResult extends js.Object {
   @js.native
   sealed trait succeeded extends FulfillmentResult
   
-  /* 1 */ val nothingToFulfill: typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.nothingToFulfill with Double = js.native
-  /* 2 */ val purchasePending: typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchasePending with Double = js.native
-  /* 3 */ val purchaseReverted: typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.purchaseReverted with Double = js.native
-  /* 4 */ val serverError: typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.serverError with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.ApplicationModel.Store.FulfillmentResult.succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FulfillmentResult with Double] = js.native
+  /* 1 */ @js.native
+  object nothingToFulfill extends TopLevel[nothingToFulfill with Double]
+  
+  /* 2 */ @js.native
+  object purchasePending extends TopLevel[purchasePending with Double]
+  
+  /* 3 */ @js.native
+  object purchaseReverted extends TopLevel[purchaseReverted with Double]
+  
+  /* 4 */ @js.native
+  object serverError extends TopLevel[serverError with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
 }
 

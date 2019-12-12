@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ContentType.ImageBoth
+import typings.ejDotWebDotAll.ej.ContentType.ImageOnly
+import typings.ejDotWebDotAll.ej.ContentType.ImageTextImage
+import typings.ejDotWebDotAll.ej.ContentType.TextAndImage
+import typings.ejDotWebDotAll.ej.ContentType.TextOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object ContentType extends js.Object {
   @js.native
   sealed trait TextOnly extends ContentType
   
-  /* 2 */ val ImageBoth: typings.ejDotWebDotAll.ej.ContentType.ImageBoth with Double = js.native
-  /* 1 */ val ImageOnly: typings.ejDotWebDotAll.ej.ContentType.ImageOnly with Double = js.native
-  /* 4 */ val ImageTextImage: typings.ejDotWebDotAll.ej.ContentType.ImageTextImage with Double = js.native
-  /* 3 */ val TextAndImage: typings.ejDotWebDotAll.ej.ContentType.TextAndImage with Double = js.native
-  /* 0 */ val TextOnly: typings.ejDotWebDotAll.ej.ContentType.TextOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
+  /* 2 */ @js.native
+  object ImageBoth extends TopLevel[ImageBoth with Double]
+  
+  /* 1 */ @js.native
+  object ImageOnly extends TopLevel[ImageOnly with Double]
+  
+  /* 4 */ @js.native
+  object ImageTextImage extends TopLevel[ImageTextImage with Double]
+  
+  /* 3 */ @js.native
+  object TextAndImage extends TopLevel[TextAndImage with Double]
+  
+  /* 0 */ @js.native
+  object TextOnly extends TopLevel[TextOnly with Double]
+  
 }
 

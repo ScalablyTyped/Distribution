@@ -1,5 +1,10 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.PointingIcon.BLOCK_ARROW
+import typings.navermaps.naver.maps.PointingIcon.CIRCLE
+import typings.navermaps.naver.maps.PointingIcon.DIAMOND
+import typings.navermaps.naver.maps.PointingIcon.OPEN_ARROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PointingIcon extends js.Object {
   @js.native
   sealed trait OPEN_ARROW extends PointingIcon
   
-  /* 0 */ val BLOCK_ARROW: typings.navermaps.naver.maps.PointingIcon.BLOCK_ARROW with Double = js.native
-  /* 1 */ val CIRCLE: typings.navermaps.naver.maps.PointingIcon.CIRCLE with Double = js.native
-  /* 2 */ val DIAMOND: typings.navermaps.naver.maps.PointingIcon.DIAMOND with Double = js.native
-  /* 1 */ val OPEN_ARROW: typings.navermaps.naver.maps.PointingIcon.OPEN_ARROW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointingIcon with Double] = js.native
+  /* 0 */ @js.native
+  object BLOCK_ARROW extends TopLevel[BLOCK_ARROW with Double]
+  
+  /* 1 */ @js.native
+  object CIRCLE extends TopLevel[CIRCLE with Double]
+  
+  /* 2 */ @js.native
+  object DIAMOND extends TopLevel[DIAMOND with Double]
+  
+  /* 1 */ @js.native
+  object OPEN_ARROW extends TopLevel[OPEN_ARROW with Double]
+  
 }
 

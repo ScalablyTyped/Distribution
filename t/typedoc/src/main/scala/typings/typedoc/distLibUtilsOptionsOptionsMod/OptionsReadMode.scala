@@ -1,5 +1,8 @@
 package typings.typedoc.distLibUtilsOptionsOptionsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Fetch
+import typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Prefetch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object OptionsReadMode extends js.Object {
   @js.native
   sealed trait Prefetch extends OptionsReadMode
   
-  /* 1 */ val Fetch: typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Fetch with Double = js.native
-  /* 0 */ val Prefetch: typings.typedoc.distLibUtilsOptionsOptionsMod.OptionsReadMode.Prefetch with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OptionsReadMode with Double] = js.native
+  /* 1 */ @js.native
+  object Fetch extends TopLevel[Fetch with Double]
+  
+  /* 0 */ @js.native
+  object Prefetch extends TopLevel[Prefetch with Double]
+  
 }
 

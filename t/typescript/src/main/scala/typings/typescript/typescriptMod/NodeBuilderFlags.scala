@@ -1,5 +1,35 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowAnonymousIdentifier
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyIndexInfoType
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyTuple
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyUnionOrIntersection
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowNodeModulesRelativePaths
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowThisInObjectLiteral
+import typings.typescript.typescriptMod.NodeBuilderFlags.AllowUniqueESSymbolType
+import typings.typescript.typescriptMod.NodeBuilderFlags.ForbidIndexedAccessSymbolReferences
+import typings.typescript.typescriptMod.NodeBuilderFlags.GenerateNamesForShadowedTypeParams
+import typings.typescript.typescriptMod.NodeBuilderFlags.IgnoreErrors
+import typings.typescript.typescriptMod.NodeBuilderFlags.InInitialEntityName
+import typings.typescript.typescriptMod.NodeBuilderFlags.InObjectTypeLiteral
+import typings.typescript.typescriptMod.NodeBuilderFlags.InReverseMappedType
+import typings.typescript.typescriptMod.NodeBuilderFlags.InTypeAlias
+import typings.typescript.typescriptMod.NodeBuilderFlags.MultilineObjectLiterals
+import typings.typescript.typescriptMod.NodeBuilderFlags.NoTruncation
+import typings.typescript.typescriptMod.NodeBuilderFlags.None
+import typings.typescript.typescriptMod.NodeBuilderFlags.OmitParameterModifiers
+import typings.typescript.typescriptMod.NodeBuilderFlags.SuppressAnyReturnType
+import typings.typescript.typescriptMod.NodeBuilderFlags.UseAliasDefinedOutsideCurrentScope
+import typings.typescript.typescriptMod.NodeBuilderFlags.UseFullyQualifiedType
+import typings.typescript.typescriptMod.NodeBuilderFlags.UseOnlyExternalAliasing
+import typings.typescript.typescriptMod.NodeBuilderFlags.UseStructuralFallback
+import typings.typescript.typescriptMod.NodeBuilderFlags.UseTypeOfFunction
+import typings.typescript.typescriptMod.NodeBuilderFlags.WriteArrayAsGenericType
+import typings.typescript.typescriptMod.NodeBuilderFlags.WriteClassExpressionAsTypeLiteral
+import typings.typescript.typescriptMod.NodeBuilderFlags.WriteTypeArgumentsOfSignature
+import typings.typescript.typescriptMod.NodeBuilderFlags.WriteTypeParametersInQualifiedName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,36 +127,94 @@ object NodeBuilderFlags extends js.Object {
   @js.native
   sealed trait WriteTypeParametersInQualifiedName extends NodeBuilderFlags
   
-  /* 131072 */ val AllowAnonymousIdentifier: typings.typescript.typescriptMod.NodeBuilderFlags.AllowAnonymousIdentifier with Double = js.native
-  /* 2097152 */ val AllowEmptyIndexInfoType: typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyIndexInfoType with Double = js.native
-  /* 524288 */ val AllowEmptyTuple: typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyTuple with Double = js.native
-  /* 262144 */ val AllowEmptyUnionOrIntersection: typings.typescript.typescriptMod.NodeBuilderFlags.AllowEmptyUnionOrIntersection with Double = js.native
-  /* 67108864 */ val AllowNodeModulesRelativePaths: typings.typescript.typescriptMod.NodeBuilderFlags.AllowNodeModulesRelativePaths with Double = js.native
-  /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typings.typescript.typescriptMod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier with Double = js.native
-  /* 32768 */ val AllowThisInObjectLiteral: typings.typescript.typescriptMod.NodeBuilderFlags.AllowThisInObjectLiteral with Double = js.native
-  /* 1048576 */ val AllowUniqueESSymbolType: typings.typescript.typescriptMod.NodeBuilderFlags.AllowUniqueESSymbolType with Double = js.native
-  /* 16 */ val ForbidIndexedAccessSymbolReferences: typings.typescript.typescriptMod.NodeBuilderFlags.ForbidIndexedAccessSymbolReferences with Double = js.native
-  /* 4 */ val GenerateNamesForShadowedTypeParams: typings.typescript.typescriptMod.NodeBuilderFlags.GenerateNamesForShadowedTypeParams with Double = js.native
-  /* 70221824 */ val IgnoreErrors: typings.typescript.typescriptMod.NodeBuilderFlags.IgnoreErrors with Double = js.native
-  /* 16777216 */ val InInitialEntityName: typings.typescript.typescriptMod.NodeBuilderFlags.InInitialEntityName with Double = js.native
-  /* 4194304 */ val InObjectTypeLiteral: typings.typescript.typescriptMod.NodeBuilderFlags.InObjectTypeLiteral with Double = js.native
-  /* 33554432 */ val InReverseMappedType: typings.typescript.typescriptMod.NodeBuilderFlags.InReverseMappedType with Double = js.native
-  /* 8388608 */ val InTypeAlias: typings.typescript.typescriptMod.NodeBuilderFlags.InTypeAlias with Double = js.native
-  /* 1024 */ val MultilineObjectLiterals: typings.typescript.typescriptMod.NodeBuilderFlags.MultilineObjectLiterals with Double = js.native
-  /* 1 */ val NoTruncation: typings.typescript.typescriptMod.NodeBuilderFlags.NoTruncation with Double = js.native
-  /* 0 */ val None: typings.typescript.typescriptMod.NodeBuilderFlags.None with Double = js.native
-  /* 8192 */ val OmitParameterModifiers: typings.typescript.typescriptMod.NodeBuilderFlags.OmitParameterModifiers with Double = js.native
-  /* 256 */ val SuppressAnyReturnType: typings.typescript.typescriptMod.NodeBuilderFlags.SuppressAnyReturnType with Double = js.native
-  /* 16384 */ val UseAliasDefinedOutsideCurrentScope: typings.typescript.typescriptMod.NodeBuilderFlags.UseAliasDefinedOutsideCurrentScope with Double = js.native
-  /* 64 */ val UseFullyQualifiedType: typings.typescript.typescriptMod.NodeBuilderFlags.UseFullyQualifiedType with Double = js.native
-  /* 128 */ val UseOnlyExternalAliasing: typings.typescript.typescriptMod.NodeBuilderFlags.UseOnlyExternalAliasing with Double = js.native
-  /* 8 */ val UseStructuralFallback: typings.typescript.typescriptMod.NodeBuilderFlags.UseStructuralFallback with Double = js.native
-  /* 4096 */ val UseTypeOfFunction: typings.typescript.typescriptMod.NodeBuilderFlags.UseTypeOfFunction with Double = js.native
-  /* 2 */ val WriteArrayAsGenericType: typings.typescript.typescriptMod.NodeBuilderFlags.WriteArrayAsGenericType with Double = js.native
-  /* 2048 */ val WriteClassExpressionAsTypeLiteral: typings.typescript.typescriptMod.NodeBuilderFlags.WriteClassExpressionAsTypeLiteral with Double = js.native
-  /* 32 */ val WriteTypeArgumentsOfSignature: typings.typescript.typescriptMod.NodeBuilderFlags.WriteTypeArgumentsOfSignature with Double = js.native
-  /* 512 */ val WriteTypeParametersInQualifiedName: typings.typescript.typescriptMod.NodeBuilderFlags.WriteTypeParametersInQualifiedName with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NodeBuilderFlags with Double] = js.native
+  /* 131072 */ @js.native
+  object AllowAnonymousIdentifier extends TopLevel[AllowAnonymousIdentifier with Double]
+  
+  /* 2097152 */ @js.native
+  object AllowEmptyIndexInfoType extends TopLevel[AllowEmptyIndexInfoType with Double]
+  
+  /* 524288 */ @js.native
+  object AllowEmptyTuple extends TopLevel[AllowEmptyTuple with Double]
+  
+  /* 262144 */ @js.native
+  object AllowEmptyUnionOrIntersection extends TopLevel[AllowEmptyUnionOrIntersection with Double]
+  
+  /* 67108864 */ @js.native
+  object AllowNodeModulesRelativePaths extends TopLevel[AllowNodeModulesRelativePaths with Double]
+  
+  /* 65536 */ @js.native
+  object AllowQualifedNameInPlaceOfIdentifier extends TopLevel[AllowQualifedNameInPlaceOfIdentifier with Double]
+  
+  /* 32768 */ @js.native
+  object AllowThisInObjectLiteral extends TopLevel[AllowThisInObjectLiteral with Double]
+  
+  /* 1048576 */ @js.native
+  object AllowUniqueESSymbolType extends TopLevel[AllowUniqueESSymbolType with Double]
+  
+  /* 16 */ @js.native
+  object ForbidIndexedAccessSymbolReferences extends TopLevel[ForbidIndexedAccessSymbolReferences with Double]
+  
+  /* 4 */ @js.native
+  object GenerateNamesForShadowedTypeParams extends TopLevel[GenerateNamesForShadowedTypeParams with Double]
+  
+  /* 70221824 */ @js.native
+  object IgnoreErrors extends TopLevel[IgnoreErrors with Double]
+  
+  /* 16777216 */ @js.native
+  object InInitialEntityName extends TopLevel[InInitialEntityName with Double]
+  
+  /* 4194304 */ @js.native
+  object InObjectTypeLiteral extends TopLevel[InObjectTypeLiteral with Double]
+  
+  /* 33554432 */ @js.native
+  object InReverseMappedType extends TopLevel[InReverseMappedType with Double]
+  
+  /* 8388608 */ @js.native
+  object InTypeAlias extends TopLevel[InTypeAlias with Double]
+  
+  /* 1024 */ @js.native
+  object MultilineObjectLiterals extends TopLevel[MultilineObjectLiterals with Double]
+  
+  /* 1 */ @js.native
+  object NoTruncation extends TopLevel[NoTruncation with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 8192 */ @js.native
+  object OmitParameterModifiers extends TopLevel[OmitParameterModifiers with Double]
+  
+  /* 256 */ @js.native
+  object SuppressAnyReturnType extends TopLevel[SuppressAnyReturnType with Double]
+  
+  /* 16384 */ @js.native
+  object UseAliasDefinedOutsideCurrentScope extends TopLevel[UseAliasDefinedOutsideCurrentScope with Double]
+  
+  /* 64 */ @js.native
+  object UseFullyQualifiedType extends TopLevel[UseFullyQualifiedType with Double]
+  
+  /* 128 */ @js.native
+  object UseOnlyExternalAliasing extends TopLevel[UseOnlyExternalAliasing with Double]
+  
+  /* 8 */ @js.native
+  object UseStructuralFallback extends TopLevel[UseStructuralFallback with Double]
+  
+  /* 4096 */ @js.native
+  object UseTypeOfFunction extends TopLevel[UseTypeOfFunction with Double]
+  
+  /* 2 */ @js.native
+  object WriteArrayAsGenericType extends TopLevel[WriteArrayAsGenericType with Double]
+  
+  /* 2048 */ @js.native
+  object WriteClassExpressionAsTypeLiteral extends TopLevel[WriteClassExpressionAsTypeLiteral with Double]
+  
+  /* 32 */ @js.native
+  object WriteTypeArgumentsOfSignature extends TopLevel[WriteTypeArgumentsOfSignature with Double]
+  
+  /* 512 */ @js.native
+  object WriteTypeParametersInQualifiedName extends TopLevel[WriteTypeParametersInQualifiedName with Double]
+  
 }
 

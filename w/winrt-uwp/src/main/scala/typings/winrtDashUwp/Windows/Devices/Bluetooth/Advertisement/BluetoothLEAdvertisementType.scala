@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.connectableDirected
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.connectableUndirected
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.nonConnectableUndirected
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.scanResponse
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.scannableUndirected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object BluetoothLEAdvertisementType extends js.Object {
   @js.native
   sealed trait scannableUndirected extends BluetoothLEAdvertisementType
   
-  /* 1 */ val connectableDirected: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.connectableDirected with Double = js.native
-  /* 0 */ val connectableUndirected: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.connectableUndirected with Double = js.native
-  /* 3 */ val nonConnectableUndirected: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.nonConnectableUndirected with Double = js.native
-  /* 4 */ val scanResponse: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.scanResponse with Double = js.native
-  /* 2 */ val scannableUndirected: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType.scannableUndirected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementType with Double] = js.native
+  /* 1 */ @js.native
+  object connectableDirected extends TopLevel[connectableDirected with Double]
+  
+  /* 0 */ @js.native
+  object connectableUndirected extends TopLevel[connectableUndirected with Double]
+  
+  /* 3 */ @js.native
+  object nonConnectableUndirected extends TopLevel[nonConnectableUndirected with Double]
+  
+  /* 4 */ @js.native
+  object scanResponse extends TopLevel[scanResponse with Double]
+  
+  /* 2 */ @js.native
+  object scannableUndirected extends TopLevel[scannableUndirected with Double]
+  
 }
 

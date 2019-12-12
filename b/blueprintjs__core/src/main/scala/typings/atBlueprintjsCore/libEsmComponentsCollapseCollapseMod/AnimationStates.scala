@@ -1,5 +1,12 @@
 package typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSED
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING_START
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPENING
+import typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN_START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,13 +60,25 @@ object AnimationStates extends js.Object {
   @js.native
   sealed trait OPEN_START extends AnimationStates
   
-  /* 5 */ val CLOSED: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSED with Double = js.native
-  /* 4 */ val CLOSING: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING with Double = js.native
-  /* 3 */ val CLOSING_START: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.CLOSING_START with Double = js.native
-  /* 2 */ val OPEN: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN with Double = js.native
-  /* 1 */ val OPENING: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPENING with Double = js.native
-  /* 0 */ val OPEN_START: typings.atBlueprintjsCore.libEsmComponentsCollapseCollapseMod.AnimationStates.OPEN_START with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AnimationStates with Double] = js.native
+  /* 5 */ @js.native
+  object CLOSED extends TopLevel[CLOSED with Double]
+  
+  /* 4 */ @js.native
+  object CLOSING extends TopLevel[CLOSING with Double]
+  
+  /* 3 */ @js.native
+  object CLOSING_START extends TopLevel[CLOSING_START with Double]
+  
+  /* 2 */ @js.native
+  object OPEN extends TopLevel[OPEN with Double]
+  
+  /* 1 */ @js.native
+  object OPENING extends TopLevel[OPENING with Double]
+  
+  /* 0 */ @js.native
+  object OPEN_START extends TopLevel[OPEN_START with Double]
+  
 }
 

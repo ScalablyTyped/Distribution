@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Media.Transcoding
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.codecNotFound
+import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.invalidProfile
+import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.none
+import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TranscodeFailureReason extends js.Object {
   @js.native
   sealed trait unknown extends TranscodeFailureReason
   
-  /* 3 */ val codecNotFound: typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.codecNotFound with Double = js.native
-  /* 2 */ val invalidProfile: typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.invalidProfile with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.none with Double = js.native
-  /* 1 */ val unknown: typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TranscodeFailureReason with Double] = js.native
+  /* 3 */ @js.native
+  object codecNotFound extends TopLevel[codecNotFound with Double]
+  
+  /* 2 */ @js.native
+  object invalidProfile extends TopLevel[invalidProfile with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

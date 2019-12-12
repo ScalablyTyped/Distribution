@@ -22,11 +22,11 @@ import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStartStreamEncrypti
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesUpdateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LimitExceededException
   extends ServiceException[_LimitExceededExceptionDetails]
      with AddTagsToStreamExceptionsUnion
@@ -51,21 +51,6 @@ trait LimitExceededException
      with StopStreamEncryptionExceptionsUnion
      with UpdateShardCountExceptionsUnion {
   @JSName("name")
-  var name_LimitExceededException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.LimitExceededException
-}
-
-object LimitExceededException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _LimitExceededExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.LimitExceededException,
-    stack: String = null
-  ): LimitExceededException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LimitExceededException]
-  }
+  var name_LimitExceededException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.LimitExceededException = js.native
 }
 

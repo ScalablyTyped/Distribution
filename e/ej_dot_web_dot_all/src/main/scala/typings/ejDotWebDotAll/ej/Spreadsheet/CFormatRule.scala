@@ -1,5 +1,12 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.Between
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.DateOccurs
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.EqualTo
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.GreaterThan
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.LessThan
+import typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.TextContains
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object CFormatRule extends js.Object {
   @js.native
   sealed trait TextContains extends CFormatRule
   
-  /* 2 */ val Between: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.Between with Double = js.native
-  /* 5 */ val DateOccurs: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.DateOccurs with Double = js.native
-  /* 3 */ val EqualTo: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.EqualTo with Double = js.native
-  /* 0 */ val GreaterThan: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.GreaterThan with Double = js.native
-  /* 1 */ val LessThan: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.LessThan with Double = js.native
-  /* 4 */ val TextContains: typings.ejDotWebDotAll.ej.Spreadsheet.CFormatRule.TextContains with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CFormatRule with Double] = js.native
+  /* 2 */ @js.native
+  object Between extends TopLevel[Between with Double]
+  
+  /* 5 */ @js.native
+  object DateOccurs extends TopLevel[DateOccurs with Double]
+  
+  /* 3 */ @js.native
+  object EqualTo extends TopLevel[EqualTo with Double]
+  
+  /* 0 */ @js.native
+  object GreaterThan extends TopLevel[GreaterThan with Double]
+  
+  /* 1 */ @js.native
+  object LessThan extends TopLevel[LessThan with Double]
+  
+  /* 4 */ @js.native
+  object TextContains extends TopLevel[TextContains with Double]
+  
 }
 

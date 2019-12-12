@@ -1,5 +1,11 @@
 package typings.winrt.Windows.Devices.Enumeration.Pnp
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.device
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceContainer
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterface
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterfaceClass
+import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object PnpObjectType extends js.Object {
   @js.native
   sealed trait unknown extends PnpObjectType
   
-  /* 3 */ val device: typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.device with Double = js.native
-  /* 2 */ val deviceContainer: typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceContainer with Double = js.native
-  /* 1 */ val deviceInterface: typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterface with Double = js.native
-  /* 4 */ val deviceInterfaceClass: typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.deviceInterfaceClass with Double = js.native
-  /* 0 */ val unknown: typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObjectType.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PnpObjectType with Double] = js.native
+  /* 3 */ @js.native
+  object device extends TopLevel[device with Double]
+  
+  /* 2 */ @js.native
+  object deviceContainer extends TopLevel[deviceContainer with Double]
+  
+  /* 1 */ @js.native
+  object deviceInterface extends TopLevel[deviceInterface with Double]
+  
+  /* 4 */ @js.native
+  object deviceInterfaceClass extends TopLevel[deviceInterfaceClass with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

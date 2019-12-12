@@ -1,5 +1,10 @@
 package typings.jsDashClipper.ClipperLib
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsDashClipper.ClipperLib.ClipType.ctDifference
+import typings.jsDashClipper.ClipperLib.ClipType.ctIntersection
+import typings.jsDashClipper.ClipperLib.ClipType.ctUnion
+import typings.jsDashClipper.ClipperLib.ClipType.ctXor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ClipType extends js.Object {
   @js.native
   sealed trait ctXor extends ClipType
   
-  /* 2 */ val ctDifference: typings.jsDashClipper.ClipperLib.ClipType.ctDifference with Double = js.native
-  /* 0 */ val ctIntersection: typings.jsDashClipper.ClipperLib.ClipType.ctIntersection with Double = js.native
-  /* 1 */ val ctUnion: typings.jsDashClipper.ClipperLib.ClipType.ctUnion with Double = js.native
-  /* 3 */ val ctXor: typings.jsDashClipper.ClipperLib.ClipType.ctXor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClipType with Double] = js.native
+  /* 2 */ @js.native
+  object ctDifference extends TopLevel[ctDifference with Double]
+  
+  /* 0 */ @js.native
+  object ctIntersection extends TopLevel[ctIntersection with Double]
+  
+  /* 1 */ @js.native
+  object ctUnion extends TopLevel[ctUnion with Double]
+  
+  /* 3 */ @js.native
+  object ctXor extends TopLevel[ctXor with Double]
+  
 }
 

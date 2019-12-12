@@ -2595,6 +2595,7 @@
 | 47 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 47 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG
 | 47 | [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node
+| 47 | [jest-config](./j/jest-config) | -
 | 47 | [jsonapi-serializer](./j/jsonapi-serializer) | A Node.js framework agnostic library for serializi
 | 47 | [lab](./l/lab) | Test utility
 | 47 | [lodash_dot_assignin](./l/lodash_dot_assignin) | The lodash method _.assignIn exported as a module.
@@ -3914,7 +3915,6 @@
 | 17 | [vimeo__player](./v/vimeo__player) | Interact with and control an embedded Vimeo Player
 | 17 | [webpack-virtual-modules](./w/webpack-virtual-modules) | Webpack Virtual Modules
 | 17 | [wordpress__compose](./w/wordpress__compose) | WordPress higher-order components (HOCs).
-| 17 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
 | 17 | [zip-webpack-plugin](./z/zip-webpack-plugin) | Webpack plugin to zip up emitted files.
 | 16 | [aws-sdk__config-resolver](./a/aws-sdk__config-resolver) | -
 | 16 | [aws-sdk__core-handler](./a/aws-sdk__core-handler) | AWS SDK Core Handler
@@ -4349,6 +4349,7 @@
 | 11 | [fined](./f/fined) | Find a file given a declaration of locations.
 | 11 | [firebase__database](./f/firebase__database) | This is the Firebase Realtime Database component o
 | 11 | [firebase__firestore](./f/firebase__firestore) | This is the 
+| 11 | [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas
 | 11 | [flagged-respawn](./f/flagged-respawn) | A tool for respawning node binaries when special f
 | 11 | [flatbush](./f/flatbush) | Fast static spatial index for rectangles
 | 11 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
@@ -6850,7 +6851,6 @@
 | 1 | [typeahead](./t/typeahead) | typeahead component
 | 1 | [typescript-event-handler](./t/typescript-event-handler) | Event handler written in Typescript.
 | 1 | [typescript-logic](./t/typescript-logic) | TypeScript generics to work with boolean types
-| 1 | [typescript-services](./t/typescript-services) | Open up TypeScript language services for nodejs co
 | 1 | [typesettable](./t/typesettable) | A typesetting library for SVG and Canvas
 | 1 | [typestub-ipfs](./t/typestub-ipfs) | The type definition for IPFS package
 | 1 | [tz-offset](./t/tz-offset) | Javascript Timezone Offset

@@ -1,6 +1,24 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.DOSI
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.FUKU
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.GOBI
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.HOKA
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.JODO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.JOSI
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KATO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KEDO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KEYO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KIGO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KOYU
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.MESI
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.RETA
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STBI
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STTO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STZO
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.SUJI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,25 +84,59 @@ object AddWordConstants extends js.Object {
     @js.native
     sealed trait SUJI extends PartOfSpeech
     
-    /* "Dosi" */ val DOSI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.DOSI with String = js.native
-    /* "Fuku" */ val FUKU: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.FUKU with String = js.native
-    /* "Gobi" */ val GOBI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.GOBI with String = js.native
-    /* "Hoka" */ val HOKA: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.HOKA with String = js.native
-    /* "Jodo" */ val JODO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.JODO with String = js.native
-    /* "Josi" */ val JOSI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.JOSI with String = js.native
-    /* "Kato" */ val KATO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KATO with String = js.native
-    /* "Kedo" */ val KEDO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KEDO with String = js.native
-    /* "Keyo" */ val KEYO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KEYO with String = js.native
-    /* "Kigo" */ val KIGO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KIGO with String = js.native
-    /* "Koyu" */ val KOYU: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.KOYU with String = js.native
-    /* "Mesi" */ val MESI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.MESI with String = js.native
-    /* "Reta" */ val RETA: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.RETA with String = js.native
-    /* "Stbi" */ val STBI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STBI with String = js.native
-    /* "Stto" */ val STTO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STTO with String = js.native
-    /* "Stzo" */ val STZO: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.STZO with String = js.native
-    /* "Suji" */ val SUJI: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.AddWordConstants.PartOfSpeech.SUJI with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[PartOfSpeech with String] = js.native
+    /* "Dosi" */ @js.native
+    object DOSI extends TopLevel[DOSI with String]
+    
+    /* "Fuku" */ @js.native
+    object FUKU extends TopLevel[FUKU with String]
+    
+    /* "Gobi" */ @js.native
+    object GOBI extends TopLevel[GOBI with String]
+    
+    /* "Hoka" */ @js.native
+    object HOKA extends TopLevel[HOKA with String]
+    
+    /* "Jodo" */ @js.native
+    object JODO extends TopLevel[JODO with String]
+    
+    /* "Josi" */ @js.native
+    object JOSI extends TopLevel[JOSI with String]
+    
+    /* "Kato" */ @js.native
+    object KATO extends TopLevel[KATO with String]
+    
+    /* "Kedo" */ @js.native
+    object KEDO extends TopLevel[KEDO with String]
+    
+    /* "Keyo" */ @js.native
+    object KEYO extends TopLevel[KEYO with String]
+    
+    /* "Kigo" */ @js.native
+    object KIGO extends TopLevel[KIGO with String]
+    
+    /* "Koyu" */ @js.native
+    object KOYU extends TopLevel[KOYU with String]
+    
+    /* "Mesi" */ @js.native
+    object MESI extends TopLevel[MESI with String]
+    
+    /* "Reta" */ @js.native
+    object RETA extends TopLevel[RETA with String]
+    
+    /* "Stbi" */ @js.native
+    object STBI extends TopLevel[STBI with String]
+    
+    /* "Stto" */ @js.native
+    object STTO extends TopLevel[STTO with String]
+    
+    /* "Stzo" */ @js.native
+    object STZO extends TopLevel[STZO with String]
+    
+    /* "Suji" */ @js.native
+    object SUJI extends TopLevel[SUJI with String]
+    
   }
   
 }

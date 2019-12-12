@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.System.Power
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.charging
+import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.discharging
+import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.idle
+import typings.winrtDashUwp.Windows.System.Power.BatteryStatus.notPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object BatteryStatus extends js.Object {
   @js.native
   sealed trait notPresent extends BatteryStatus
   
-  /* 3 */ val charging: typings.winrtDashUwp.Windows.System.Power.BatteryStatus.charging with Double = js.native
-  /* 1 */ val discharging: typings.winrtDashUwp.Windows.System.Power.BatteryStatus.discharging with Double = js.native
-  /* 2 */ val idle: typings.winrtDashUwp.Windows.System.Power.BatteryStatus.idle with Double = js.native
-  /* 0 */ val notPresent: typings.winrtDashUwp.Windows.System.Power.BatteryStatus.notPresent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BatteryStatus with Double] = js.native
+  /* 3 */ @js.native
+  object charging extends TopLevel[charging with Double]
+  
+  /* 1 */ @js.native
+  object discharging extends TopLevel[discharging with Double]
+  
+  /* 2 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
+  /* 0 */ @js.native
+  object notPresent extends TopLevel[notPresent with Double]
+  
 }
 

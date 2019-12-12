@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeEventTypeInformation
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeGroup
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUser
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUserAndGroup
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,12 +43,22 @@ object SubscriptionTemplateQueryFlags extends js.Object {
   @js.native
   sealed trait None extends SubscriptionTemplateQueryFlags
   
-  /* 22 */ val IncludeEventTypeInformation: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeEventTypeInformation with Double = js.native
-  /* 2 */ val IncludeGroup: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeGroup with Double = js.native
-  /* 1 */ val IncludeUser: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUser with Double = js.native
-  /* 4 */ val IncludeUserAndGroup: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.IncludeUserAndGroup with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionTemplateQueryFlags with Double] = js.native
+  /* 22 */ @js.native
+  object IncludeEventTypeInformation extends TopLevel[IncludeEventTypeInformation with Double]
+  
+  /* 2 */ @js.native
+  object IncludeGroup extends TopLevel[IncludeGroup with Double]
+  
+  /* 1 */ @js.native
+  object IncludeUser extends TopLevel[IncludeUser with Double]
+  
+  /* 4 */ @js.native
+  object IncludeUserAndGroup extends TopLevel[IncludeUserAndGroup with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

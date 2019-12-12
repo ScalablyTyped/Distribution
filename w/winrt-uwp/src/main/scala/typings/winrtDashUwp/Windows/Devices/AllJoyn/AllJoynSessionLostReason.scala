@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.linkTimeout
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.none
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.other
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerClosedAbruptly
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerLeftSession
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.removedByProducer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object AllJoynSessionLostReason extends js.Object {
   @js.native
   sealed trait removedByProducer extends AllJoynSessionLostReason
   
-  /* 4 */ val linkTimeout: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.linkTimeout with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.none with Double = js.native
-  /* 5 */ val other: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.other with Double = js.native
-  /* 2 */ val producerClosedAbruptly: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerClosedAbruptly with Double = js.native
-  /* 1 */ val producerLeftSession: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.producerLeftSession with Double = js.native
-  /* 3 */ val removedByProducer: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason.removedByProducer with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AllJoynSessionLostReason with Double] = js.native
+  /* 4 */ @js.native
+  object linkTimeout extends TopLevel[linkTimeout with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 2 */ @js.native
+  object producerClosedAbruptly extends TopLevel[producerClosedAbruptly with Double]
+  
+  /* 1 */ @js.native
+  object producerLeftSession extends TopLevel[producerLeftSession with Double]
+  
+  /* 3 */ @js.native
+  object removedByProducer extends TopLevel[removedByProducer with Double]
+  
 }
 

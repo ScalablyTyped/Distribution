@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseQueryOrder.Ascending
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseQueryOrder.Descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ReleaseQueryOrder extends js.Object {
   @js.native
   sealed trait Descending extends ReleaseQueryOrder
   
-  /* 1 */ val Ascending: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseQueryOrder.Ascending with Double = js.native
-  /* 0 */ val Descending: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseQueryOrder.Descending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReleaseQueryOrder with Double] = js.native
+  /* 1 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 0 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
 }
 

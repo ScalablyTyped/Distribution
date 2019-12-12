@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.addAccount
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.deleteAccount
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.getTokenSilently
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.manageAccount
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.requestToken
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.retrieveCookies
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.signOutAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object WebAccountProviderOperationKind extends js.Object {
   @js.native
   sealed trait signOutAccount extends WebAccountProviderOperationKind
   
-  /* 2 */ val addAccount: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.addAccount with Double = js.native
-  /* 4 */ val deleteAccount: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.deleteAccount with Double = js.native
-  /* 1 */ val getTokenSilently: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.getTokenSilently with Double = js.native
-  /* 3 */ val manageAccount: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.manageAccount with Double = js.native
-  /* 0 */ val requestToken: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.requestToken with Double = js.native
-  /* 5 */ val retrieveCookies: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.retrieveCookies with Double = js.native
-  /* 6 */ val signOutAccount: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountProviderOperationKind.signOutAccount with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAccountProviderOperationKind with Double] = js.native
+  /* 2 */ @js.native
+  object addAccount extends TopLevel[addAccount with Double]
+  
+  /* 4 */ @js.native
+  object deleteAccount extends TopLevel[deleteAccount with Double]
+  
+  /* 1 */ @js.native
+  object getTokenSilently extends TopLevel[getTokenSilently with Double]
+  
+  /* 3 */ @js.native
+  object manageAccount extends TopLevel[manageAccount with Double]
+  
+  /* 0 */ @js.native
+  object requestToken extends TopLevel[requestToken with Double]
+  
+  /* 5 */ @js.native
+  object retrieveCookies extends TopLevel[retrieveCookies with Double]
+  
+  /* 6 */ @js.native
+  object signOutAccount extends TopLevel[signOutAccount with Double]
+  
 }
 

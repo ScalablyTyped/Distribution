@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__s3-request-presigner"
-version := "0.1.0-preview.2-287232"
+version := "0.1.0-preview.2-7693ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "0.1.0-preview.2-4ab557",
-  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-e307b2",
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "0.1.0-preview.2-c0caf3",
+  "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-59e680",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

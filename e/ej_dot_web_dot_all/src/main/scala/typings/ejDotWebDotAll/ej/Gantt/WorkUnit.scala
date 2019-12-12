@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Day
+import typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Hour
+import typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Minute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object WorkUnit extends js.Object {
   @js.native
   sealed trait Minute extends WorkUnit
   
-  /* 0 */ val Day: typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Day with Double = js.native
-  /* 1 */ val Hour: typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Hour with Double = js.native
-  /* 2 */ val Minute: typings.ejDotWebDotAll.ej.Gantt.WorkUnit.Minute with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WorkUnit with Double] = js.native
+  /* 0 */ @js.native
+  object Day extends TopLevel[Day with Double]
+  
+  /* 1 */ @js.native
+  object Hour extends TopLevel[Hour with Double]
+  
+  /* 2 */ @js.native
+  object Minute extends TopLevel[Minute with Double]
+  
 }
 

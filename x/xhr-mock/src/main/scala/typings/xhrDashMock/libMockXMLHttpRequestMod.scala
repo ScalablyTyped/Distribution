@@ -1,5 +1,6 @@
 package typings.xhrDashMock
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.AddEventListenerOptions
 import typings.std.BodyInit
 import typings.std.Document
@@ -12,6 +13,11 @@ import typings.std.stdStrings.readystatechange
 import typings.xhrDashMock.libMockXMLHttpRequestEventTargetMod.MockXMLHttpRequestEventTarget
 import typings.xhrDashMock.libMockXMLHttpRequestMod.MockXMLHttpRequest
 import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState
+import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.DONE
+import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.HEADERS_RECEIVED
+import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.LOADING
+import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.OPENED
+import typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.UNSENT
 import typings.xhrDashMock.libTypesMod.ErrorCallbackEvent
 import typings.xhrDashMock.libTypesMod.MockFunction
 import scala.scalajs.js
@@ -159,13 +165,23 @@ object libMockXMLHttpRequestMod extends js.Object {
     @js.native
     sealed trait UNSENT extends ReadyState
     
-    /* 4 */ val DONE: typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.DONE with Double = js.native
-    /* 2 */ val HEADERS_RECEIVED: typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.HEADERS_RECEIVED with Double = js.native
-    /* 3 */ val LOADING: typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.LOADING with Double = js.native
-    /* 1 */ val OPENED: typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.OPENED with Double = js.native
-    /* 0 */ val UNSENT: typings.xhrDashMock.libMockXMLHttpRequestMod.ReadyState.UNSENT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
+    /* 4 */ @js.native
+    object DONE extends TopLevel[DONE with Double]
+    
+    /* 2 */ @js.native
+    object HEADERS_RECEIVED extends TopLevel[HEADERS_RECEIVED with Double]
+    
+    /* 3 */ @js.native
+    object LOADING extends TopLevel[LOADING with Double]
+    
+    /* 1 */ @js.native
+    object OPENED extends TopLevel[OPENED with Double]
+    
+    /* 0 */ @js.native
+    object UNSENT extends TopLevel[UNSENT with Double]
+    
   }
   
   /* static members */

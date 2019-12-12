@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.PivotPager
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.PivotPager.Mode.Both
+import typings.ejDotWebDotAll.ej.PivotPager.Mode.Categorical
+import typings.ejDotWebDotAll.ej.PivotPager.Mode.Series
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object Mode extends js.Object {
   @js.native
   sealed trait Series extends Mode
   
-  /* 0 */ val Both: typings.ejDotWebDotAll.ej.PivotPager.Mode.Both with Double = js.native
-  /* 1 */ val Categorical: typings.ejDotWebDotAll.ej.PivotPager.Mode.Categorical with Double = js.native
-  /* 2 */ val Series: typings.ejDotWebDotAll.ej.PivotPager.Mode.Series with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Mode with Double] = js.native
+  /* 0 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 1 */ @js.native
+  object Categorical extends TopLevel[Categorical with Double]
+  
+  /* 2 */ @js.native
+  object Series extends TopLevel[Series with Double]
+  
 }
 

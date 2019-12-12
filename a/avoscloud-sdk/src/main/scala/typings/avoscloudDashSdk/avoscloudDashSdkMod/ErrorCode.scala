@@ -1,5 +1,61 @@
 package typings.avoscloudDashSdk.avoscloudDashSdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.ACCOUNT_ALREADY_LINKED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.AGGREGATE_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.CACHE_MISS
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.COMMAND_UNAVAILABLE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.CONNECTION_FAILED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.DUPLICATE_VALUE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_MISSING
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_NOT_FOUND
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_TAKEN
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EXCEEDED_QUOTA
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_DELETE_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_READ_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_SAVE_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_TOO_LARGE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INCORRECT_TYPE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INTERNAL_SERVER_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_ACL
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CHANNEL_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CLASS_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CONTENT_LENGTH
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_EMAIL_ADDRESS
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_EVENT_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_FILE_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_IMAGE_DATA
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_JSON
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_KEY_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_LINKED_SESSION
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_NESTED_KEY
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_POINTER
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_PUSH_TIME_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_QUERY
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_ROLE_NAME
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_SESSION_TOKEN
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.LINKED_ID_MISSING
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_CONTENT_LENGTH
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_CONTENT_TYPE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_OBJECT_ID
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MUST_CREATE_USER_THROUGH_SIGNUP
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.NOT_INITIALIZED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OBJECT_NOT_FOUND
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OBJECT_TOO_LARGE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OPERATION_FORBIDDEN
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OTHER_CAUSE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.PASSWORD_MISSING
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.PUSH_MISCONFIGURED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.REQUEST_LIMIT_EXCEEDED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.SCRIPT_FAILED
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.SESSION_MISSING
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.TIMEOUT
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.UNSAVED_FILE_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.UNSUPPORTED_SERVICE
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.USERNAME_MISSING
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.USERNAME_TAKEN
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.VALIDATION_ERROR
+import typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.X_DOMAIN_REQUEST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -175,62 +231,172 @@ object ErrorCode extends js.Object {
   @js.native
   sealed trait X_DOMAIN_REQUEST extends ErrorCode
   
-  /* 208 */ val ACCOUNT_ALREADY_LINKED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.ACCOUNT_ALREADY_LINKED with Double = js.native
-  /* 600 */ val AGGREGATE_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.AGGREGATE_ERROR with Double = js.native
-  /* 120 */ val CACHE_MISS: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.CACHE_MISS with Double = js.native
-  /* 108 */ val COMMAND_UNAVAILABLE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.COMMAND_UNAVAILABLE with Double = js.native
-  /* 100 */ val CONNECTION_FAILED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.CONNECTION_FAILED with Double = js.native
-  /* 137 */ val DUPLICATE_VALUE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.DUPLICATE_VALUE with Double = js.native
-  /* 204 */ val EMAIL_MISSING: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_MISSING with Double = js.native
-  /* 205 */ val EMAIL_NOT_FOUND: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_NOT_FOUND with Double = js.native
-  /* 203 */ val EMAIL_TAKEN: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EMAIL_TAKEN with Double = js.native
-  /* 140 */ val EXCEEDED_QUOTA: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.EXCEEDED_QUOTA with Double = js.native
-  /* 153 */ val FILE_DELETE_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_DELETE_ERROR with Double = js.native
-  /* 601 */ val FILE_READ_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_READ_ERROR with Double = js.native
-  /* 130 */ val FILE_SAVE_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_SAVE_ERROR with Double = js.native
-  /* 129 */ val FILE_TOO_LARGE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.FILE_TOO_LARGE with Double = js.native
-  /* 111 */ val INCORRECT_TYPE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INCORRECT_TYPE with Double = js.native
-  /* 1 */ val INTERNAL_SERVER_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INTERNAL_SERVER_ERROR with Double = js.native
-  /* 123 */ val INVALID_ACL: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_ACL with Double = js.native
-  /* 112 */ val INVALID_CHANNEL_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CHANNEL_NAME with Double = js.native
-  /* 103 */ val INVALID_CLASS_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CLASS_NAME with Double = js.native
-  /* 128 */ val INVALID_CONTENT_LENGTH: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_CONTENT_LENGTH with Double = js.native
-  /* 125 */ val INVALID_EMAIL_ADDRESS: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_EMAIL_ADDRESS with Double = js.native
-  /* 160 */ val INVALID_EVENT_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_EVENT_NAME with Double = js.native
-  /* 122 */ val INVALID_FILE_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_FILE_NAME with Double = js.native
-  /* 150 */ val INVALID_IMAGE_DATA: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_IMAGE_DATA with Double = js.native
-  /* 107 */ val INVALID_JSON: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_JSON with Double = js.native
-  /* 105 */ val INVALID_KEY_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_KEY_NAME with Double = js.native
-  /* 251 */ val INVALID_LINKED_SESSION: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_LINKED_SESSION with Double = js.native
-  /* 121 */ val INVALID_NESTED_KEY: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_NESTED_KEY with Double = js.native
-  /* 106 */ val INVALID_POINTER: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_POINTER with Double = js.native
-  /* 152 */ val INVALID_PUSH_TIME_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_PUSH_TIME_ERROR with Double = js.native
-  /* 102 */ val INVALID_QUERY: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_QUERY with Double = js.native
-  /* 139 */ val INVALID_ROLE_NAME: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_ROLE_NAME with Double = js.native
-  /* 209 */ val INVALID_SESSION_TOKEN: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.INVALID_SESSION_TOKEN with Double = js.native
-  /* 250 */ val LINKED_ID_MISSING: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.LINKED_ID_MISSING with Double = js.native
-  /* 127 */ val MISSING_CONTENT_LENGTH: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_CONTENT_LENGTH with Double = js.native
-  /* 126 */ val MISSING_CONTENT_TYPE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_CONTENT_TYPE with Double = js.native
-  /* 104 */ val MISSING_OBJECT_ID: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MISSING_OBJECT_ID with Double = js.native
-  /* 207 */ val MUST_CREATE_USER_THROUGH_SIGNUP: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.MUST_CREATE_USER_THROUGH_SIGNUP with Double = js.native
-  /* 109 */ val NOT_INITIALIZED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.NOT_INITIALIZED with Double = js.native
-  /* 101 */ val OBJECT_NOT_FOUND: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OBJECT_NOT_FOUND with Double = js.native
-  /* 116 */ val OBJECT_TOO_LARGE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OBJECT_TOO_LARGE with Double = js.native
-  /* 119 */ val OPERATION_FORBIDDEN: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OPERATION_FORBIDDEN with Double = js.native
-  /* -1 */ val OTHER_CAUSE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.OTHER_CAUSE with Double = js.native
-  /* 201 */ val PASSWORD_MISSING: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.PASSWORD_MISSING with Double = js.native
-  /* 115 */ val PUSH_MISCONFIGURED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.PUSH_MISCONFIGURED with Double = js.native
-  /* 155 */ val REQUEST_LIMIT_EXCEEDED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.REQUEST_LIMIT_EXCEEDED with Double = js.native
-  /* 141 */ val SCRIPT_FAILED: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.SCRIPT_FAILED with Double = js.native
-  /* 206 */ val SESSION_MISSING: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.SESSION_MISSING with Double = js.native
-  /* 124 */ val TIMEOUT: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.TIMEOUT with Double = js.native
-  /* 151 */ val UNSAVED_FILE_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.UNSAVED_FILE_ERROR with Double = js.native
-  /* 252 */ val UNSUPPORTED_SERVICE: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.UNSUPPORTED_SERVICE with Double = js.native
-  /* 200 */ val USERNAME_MISSING: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.USERNAME_MISSING with Double = js.native
-  /* 202 */ val USERNAME_TAKEN: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.USERNAME_TAKEN with Double = js.native
-  /* 142 */ val VALIDATION_ERROR: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.VALIDATION_ERROR with Double = js.native
-  /* 602 */ val X_DOMAIN_REQUEST: typings.avoscloudDashSdk.avoscloudDashSdkMod.ErrorCode.X_DOMAIN_REQUEST with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
+  /* 208 */ @js.native
+  object ACCOUNT_ALREADY_LINKED extends TopLevel[ACCOUNT_ALREADY_LINKED with Double]
+  
+  /* 600 */ @js.native
+  object AGGREGATE_ERROR extends TopLevel[AGGREGATE_ERROR with Double]
+  
+  /* 120 */ @js.native
+  object CACHE_MISS extends TopLevel[CACHE_MISS with Double]
+  
+  /* 108 */ @js.native
+  object COMMAND_UNAVAILABLE extends TopLevel[COMMAND_UNAVAILABLE with Double]
+  
+  /* 100 */ @js.native
+  object CONNECTION_FAILED extends TopLevel[CONNECTION_FAILED with Double]
+  
+  /* 137 */ @js.native
+  object DUPLICATE_VALUE extends TopLevel[DUPLICATE_VALUE with Double]
+  
+  /* 204 */ @js.native
+  object EMAIL_MISSING extends TopLevel[EMAIL_MISSING with Double]
+  
+  /* 205 */ @js.native
+  object EMAIL_NOT_FOUND extends TopLevel[EMAIL_NOT_FOUND with Double]
+  
+  /* 203 */ @js.native
+  object EMAIL_TAKEN extends TopLevel[EMAIL_TAKEN with Double]
+  
+  /* 140 */ @js.native
+  object EXCEEDED_QUOTA extends TopLevel[EXCEEDED_QUOTA with Double]
+  
+  /* 153 */ @js.native
+  object FILE_DELETE_ERROR extends TopLevel[FILE_DELETE_ERROR with Double]
+  
+  /* 601 */ @js.native
+  object FILE_READ_ERROR extends TopLevel[FILE_READ_ERROR with Double]
+  
+  /* 130 */ @js.native
+  object FILE_SAVE_ERROR extends TopLevel[FILE_SAVE_ERROR with Double]
+  
+  /* 129 */ @js.native
+  object FILE_TOO_LARGE extends TopLevel[FILE_TOO_LARGE with Double]
+  
+  /* 111 */ @js.native
+  object INCORRECT_TYPE extends TopLevel[INCORRECT_TYPE with Double]
+  
+  /* 1 */ @js.native
+  object INTERNAL_SERVER_ERROR extends TopLevel[INTERNAL_SERVER_ERROR with Double]
+  
+  /* 123 */ @js.native
+  object INVALID_ACL extends TopLevel[INVALID_ACL with Double]
+  
+  /* 112 */ @js.native
+  object INVALID_CHANNEL_NAME extends TopLevel[INVALID_CHANNEL_NAME with Double]
+  
+  /* 103 */ @js.native
+  object INVALID_CLASS_NAME extends TopLevel[INVALID_CLASS_NAME with Double]
+  
+  /* 128 */ @js.native
+  object INVALID_CONTENT_LENGTH extends TopLevel[INVALID_CONTENT_LENGTH with Double]
+  
+  /* 125 */ @js.native
+  object INVALID_EMAIL_ADDRESS extends TopLevel[INVALID_EMAIL_ADDRESS with Double]
+  
+  /* 160 */ @js.native
+  object INVALID_EVENT_NAME extends TopLevel[INVALID_EVENT_NAME with Double]
+  
+  /* 122 */ @js.native
+  object INVALID_FILE_NAME extends TopLevel[INVALID_FILE_NAME with Double]
+  
+  /* 150 */ @js.native
+  object INVALID_IMAGE_DATA extends TopLevel[INVALID_IMAGE_DATA with Double]
+  
+  /* 107 */ @js.native
+  object INVALID_JSON extends TopLevel[INVALID_JSON with Double]
+  
+  /* 105 */ @js.native
+  object INVALID_KEY_NAME extends TopLevel[INVALID_KEY_NAME with Double]
+  
+  /* 251 */ @js.native
+  object INVALID_LINKED_SESSION extends TopLevel[INVALID_LINKED_SESSION with Double]
+  
+  /* 121 */ @js.native
+  object INVALID_NESTED_KEY extends TopLevel[INVALID_NESTED_KEY with Double]
+  
+  /* 106 */ @js.native
+  object INVALID_POINTER extends TopLevel[INVALID_POINTER with Double]
+  
+  /* 152 */ @js.native
+  object INVALID_PUSH_TIME_ERROR extends TopLevel[INVALID_PUSH_TIME_ERROR with Double]
+  
+  /* 102 */ @js.native
+  object INVALID_QUERY extends TopLevel[INVALID_QUERY with Double]
+  
+  /* 139 */ @js.native
+  object INVALID_ROLE_NAME extends TopLevel[INVALID_ROLE_NAME with Double]
+  
+  /* 209 */ @js.native
+  object INVALID_SESSION_TOKEN extends TopLevel[INVALID_SESSION_TOKEN with Double]
+  
+  /* 250 */ @js.native
+  object LINKED_ID_MISSING extends TopLevel[LINKED_ID_MISSING with Double]
+  
+  /* 127 */ @js.native
+  object MISSING_CONTENT_LENGTH extends TopLevel[MISSING_CONTENT_LENGTH with Double]
+  
+  /* 126 */ @js.native
+  object MISSING_CONTENT_TYPE extends TopLevel[MISSING_CONTENT_TYPE with Double]
+  
+  /* 104 */ @js.native
+  object MISSING_OBJECT_ID extends TopLevel[MISSING_OBJECT_ID with Double]
+  
+  /* 207 */ @js.native
+  object MUST_CREATE_USER_THROUGH_SIGNUP extends TopLevel[MUST_CREATE_USER_THROUGH_SIGNUP with Double]
+  
+  /* 109 */ @js.native
+  object NOT_INITIALIZED extends TopLevel[NOT_INITIALIZED with Double]
+  
+  /* 101 */ @js.native
+  object OBJECT_NOT_FOUND extends TopLevel[OBJECT_NOT_FOUND with Double]
+  
+  /* 116 */ @js.native
+  object OBJECT_TOO_LARGE extends TopLevel[OBJECT_TOO_LARGE with Double]
+  
+  /* 119 */ @js.native
+  object OPERATION_FORBIDDEN extends TopLevel[OPERATION_FORBIDDEN with Double]
+  
+  /* -1 */ @js.native
+  object OTHER_CAUSE extends TopLevel[OTHER_CAUSE with Double]
+  
+  /* 201 */ @js.native
+  object PASSWORD_MISSING extends TopLevel[PASSWORD_MISSING with Double]
+  
+  /* 115 */ @js.native
+  object PUSH_MISCONFIGURED extends TopLevel[PUSH_MISCONFIGURED with Double]
+  
+  /* 155 */ @js.native
+  object REQUEST_LIMIT_EXCEEDED extends TopLevel[REQUEST_LIMIT_EXCEEDED with Double]
+  
+  /* 141 */ @js.native
+  object SCRIPT_FAILED extends TopLevel[SCRIPT_FAILED with Double]
+  
+  /* 206 */ @js.native
+  object SESSION_MISSING extends TopLevel[SESSION_MISSING with Double]
+  
+  /* 124 */ @js.native
+  object TIMEOUT extends TopLevel[TIMEOUT with Double]
+  
+  /* 151 */ @js.native
+  object UNSAVED_FILE_ERROR extends TopLevel[UNSAVED_FILE_ERROR with Double]
+  
+  /* 252 */ @js.native
+  object UNSUPPORTED_SERVICE extends TopLevel[UNSUPPORTED_SERVICE with Double]
+  
+  /* 200 */ @js.native
+  object USERNAME_MISSING extends TopLevel[USERNAME_MISSING with Double]
+  
+  /* 202 */ @js.native
+  object USERNAME_TAKEN extends TopLevel[USERNAME_TAKEN with Double]
+  
+  /* 142 */ @js.native
+  object VALIDATION_ERROR extends TopLevel[VALIDATION_ERROR with Double]
+  
+  /* 602 */ @js.native
+  object X_DOMAIN_REQUEST extends TopLevel[X_DOMAIN_REQUEST with Double]
+  
 }
 

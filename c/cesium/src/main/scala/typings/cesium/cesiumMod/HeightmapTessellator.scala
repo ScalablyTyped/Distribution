@@ -1,6 +1,8 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.cesium.Anon_EllipsoidHeight
+import typings.cesium.cesiumMod.HeightmapTessellator.DEFAULT_STRUCTURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +16,11 @@ object HeightmapTessellator extends js.Object {
   @js.native
   sealed trait DEFAULT_STRUCTURE extends HeightmapTessellator
   
-  /* 0 */ val DEFAULT_STRUCTURE: typings.cesium.cesiumMod.HeightmapTessellator.DEFAULT_STRUCTURE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HeightmapTessellator with Double] = js.native
   def computeVertices(options: Anon_EllipsoidHeight): js.UndefOr[scala.Nothing] = js.native
+  /* 0 */ @js.native
+  object DEFAULT_STRUCTURE extends TopLevel[DEFAULT_STRUCTURE with Double]
+  
 }
 

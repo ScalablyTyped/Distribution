@@ -1,5 +1,15 @@
 package typings.socks.typingsCommonConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.socks.typingsCommonConstantsMod.Socks5Response.AddressNotSupported
+import typings.socks.typingsCommonConstantsMod.Socks5Response.CommandNotSupported
+import typings.socks.typingsCommonConstantsMod.Socks5Response.ConnectionRefused
+import typings.socks.typingsCommonConstantsMod.Socks5Response.Failure
+import typings.socks.typingsCommonConstantsMod.Socks5Response.Granted
+import typings.socks.typingsCommonConstantsMod.Socks5Response.HostUnreachable
+import typings.socks.typingsCommonConstantsMod.Socks5Response.NetworkUnreachable
+import typings.socks.typingsCommonConstantsMod.Socks5Response.NotAllowed
+import typings.socks.typingsCommonConstantsMod.Socks5Response.TTLExpired
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object Socks5Response extends js.Object {
   @js.native
   sealed trait TTLExpired extends Socks5Response
   
-  /* 8 */ val AddressNotSupported: typings.socks.typingsCommonConstantsMod.Socks5Response.AddressNotSupported with Double = js.native
-  /* 7 */ val CommandNotSupported: typings.socks.typingsCommonConstantsMod.Socks5Response.CommandNotSupported with Double = js.native
-  /* 5 */ val ConnectionRefused: typings.socks.typingsCommonConstantsMod.Socks5Response.ConnectionRefused with Double = js.native
-  /* 1 */ val Failure: typings.socks.typingsCommonConstantsMod.Socks5Response.Failure with Double = js.native
-  /* 0 */ val Granted: typings.socks.typingsCommonConstantsMod.Socks5Response.Granted with Double = js.native
-  /* 4 */ val HostUnreachable: typings.socks.typingsCommonConstantsMod.Socks5Response.HostUnreachable with Double = js.native
-  /* 3 */ val NetworkUnreachable: typings.socks.typingsCommonConstantsMod.Socks5Response.NetworkUnreachable with Double = js.native
-  /* 2 */ val NotAllowed: typings.socks.typingsCommonConstantsMod.Socks5Response.NotAllowed with Double = js.native
-  /* 6 */ val TTLExpired: typings.socks.typingsCommonConstantsMod.Socks5Response.TTLExpired with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Socks5Response with Double] = js.native
+  /* 8 */ @js.native
+  object AddressNotSupported extends TopLevel[AddressNotSupported with Double]
+  
+  /* 7 */ @js.native
+  object CommandNotSupported extends TopLevel[CommandNotSupported with Double]
+  
+  /* 5 */ @js.native
+  object ConnectionRefused extends TopLevel[ConnectionRefused with Double]
+  
+  /* 1 */ @js.native
+  object Failure extends TopLevel[Failure with Double]
+  
+  /* 0 */ @js.native
+  object Granted extends TopLevel[Granted with Double]
+  
+  /* 4 */ @js.native
+  object HostUnreachable extends TopLevel[HostUnreachable with Double]
+  
+  /* 3 */ @js.native
+  object NetworkUnreachable extends TopLevel[NetworkUnreachable with Double]
+  
+  /* 2 */ @js.native
+  object NotAllowed extends TopLevel[NotAllowed with Double]
+  
+  /* 6 */ @js.native
+  object TTLExpired extends TopLevel[TTLExpired with Double]
+  
 }
 

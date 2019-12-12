@@ -1,5 +1,9 @@
 package typings.mobx.libCoreDerivationMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.mobx.libCoreDerivationMod.TraceMode.BREAK
+import typings.mobx.libCoreDerivationMod.TraceMode.LOG
+import typings.mobx.libCoreDerivationMod.TraceMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TraceMode extends js.Object {
   @js.native
   sealed trait NONE extends TraceMode
   
-  /* 2 */ val BREAK: typings.mobx.libCoreDerivationMod.TraceMode.BREAK with Double = js.native
-  /* 1 */ val LOG: typings.mobx.libCoreDerivationMod.TraceMode.LOG with Double = js.native
-  /* 0 */ val NONE: typings.mobx.libCoreDerivationMod.TraceMode.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TraceMode with Double] = js.native
+  /* 2 */ @js.native
+  object BREAK extends TopLevel[BREAK with Double]
+  
+  /* 1 */ @js.native
+  object LOG extends TopLevel[LOG with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
 }
 

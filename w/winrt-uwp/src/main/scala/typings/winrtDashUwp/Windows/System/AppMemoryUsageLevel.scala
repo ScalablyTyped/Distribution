@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.high
+import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.low
+import typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AppMemoryUsageLevel extends js.Object {
   @js.native
   sealed trait medium extends AppMemoryUsageLevel
   
-  /* 2 */ val high: typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.high with Double = js.native
-  /* 0 */ val low: typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.low with Double = js.native
-  /* 1 */ val medium: typings.winrtDashUwp.Windows.System.AppMemoryUsageLevel.medium with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppMemoryUsageLevel with Double] = js.native
+  /* 2 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 0 */ @js.native
+  object low extends TopLevel[low with Double]
+  
+  /* 1 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
 }
 

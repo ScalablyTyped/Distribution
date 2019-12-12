@@ -7,128 +7,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cell
   extends Style
      with Address {
   /**
   	 * comment of the cell
   	 */
-  var comment: Comment
+  var comment: Comment = js.native
   /**
   	 * Cells can define what values are valid or not and provide
   	 * prompting to the user to help guide them.
   	 */
-  var dataValidation: DataValidation
-  val effectiveType: ValueType
+  var dataValidation: DataValidation = js.native
+  val effectiveType: ValueType = js.native
   /**
   	 * convenience getter to access the formula
   	 */
-  val formula: String
+  val formula: String = js.native
   /**
   	 * The type of the cell's formula
   	 */
-  val formulaType: FormulaType
-  val fullAddress: Anon_Address
-  val hyperlink: String
-  val isHyperlink: Boolean
-  val isMerged: Boolean
-  val master: Cell
-  var model: CellModel
+  val formulaType: FormulaType = js.native
+  val fullAddress: Anon_Address = js.native
+  val hyperlink: String = js.native
+  val isHyperlink: Boolean = js.native
+  val isMerged: Boolean = js.native
+  val master: Cell = js.native
+  var model: CellModel = js.native
   /**
   	 * Assign (or get) a name for a cell (will overwrite any other names that cell had)
   	 */
-  var name: String
+  var name: String = js.native
   /**
   	 * Assign (or get) an array of names for a cell (cells can have more than one name)
   	 */
-  var names: js.Array[String]
+  var names: js.Array[String] = js.native
   /**
   	 * convenience getter to access the formula result
   	 */
-  val result: Double | String | Date
+  val result: Double | String | Date = js.native
   /**
   	 * The styles of the cell
   	 */
-  var style: Partial[Style]
+  var style: Partial[Style] = js.native
   	// todo
-  val text: String
+  val text: String = js.native
   /**
   	 * The type of the cell's value
   	 */
-  val `type`: ValueType
+  val `type`: ValueType = js.native
   /**
   	 * Value of the cell
   	 */
-  var value: CellValue
-  val workbook: Workbook
-  val worksheet: Worksheet
-  def addMergeRef(): Unit
-  def addName(name: String): Unit
-  def destroy(): Unit
-  def isMergedTo(master: Cell): Boolean
-  def merge(master: Cell): Unit
-  def release(): Unit
-  def releaseMergeRef(): Unit
-  def removeAllNames(): Unit
+  var value: CellValue = js.native
+  val workbook: Workbook = js.native
+  val worksheet: Worksheet = js.native
+  def addMergeRef(): Unit = js.native
+  def addName(name: String): Unit = js.native
+  def destroy(): Unit = js.native
+  def isMergedTo(master: Cell): Boolean = js.native
+  def merge(master: Cell): Unit = js.native
+  def release(): Unit = js.native
+  def releaseMergeRef(): Unit = js.native
+  def removeAllNames(): Unit = js.native
   /**
   	 * Remove a name from a cell
   	 */
-  def removeName(name: String): Unit
-  def toCsvString(): String
-  def unmerge(): Unit
-}
-
-object Cell {
-  @scala.inline
-  def apply(
-    $col$row: String,
-    addMergeRef: () => Unit,
-    addName: String => Unit,
-    address: String,
-    alignment: Partial[Alignment],
-    border: Partial[Borders],
-    col: String,
-    comment: Comment,
-    dataValidation: DataValidation,
-    destroy: () => Unit,
-    effectiveType: ValueType,
-    fill: Fill,
-    font: Partial[Font],
-    formula: String,
-    formulaType: FormulaType,
-    fullAddress: Anon_Address,
-    hyperlink: String,
-    isHyperlink: Boolean,
-    isMerged: Boolean,
-    isMergedTo: Cell => Boolean,
-    master: Cell,
-    merge: Cell => Unit,
-    model: CellModel,
-    name: String,
-    names: js.Array[String],
-    numFmt: String,
-    protection: Partial[Protection],
-    release: () => Unit,
-    releaseMergeRef: () => Unit,
-    removeAllNames: () => Unit,
-    removeName: String => Unit,
-    result: Double | String | Date,
-    row: String,
-    style: Partial[Style],
-    text: String,
-    toCsvString: () => String,
-    `type`: ValueType,
-    unmerge: () => Unit,
-    workbook: Workbook,
-    worksheet: Worksheet,
-    sheetName: String = null,
-    value: CellValue = null
-  ): Cell = {
-    val __obj = js.Dynamic.literal($col$row = $col$row.asInstanceOf[js.Any], addMergeRef = js.Any.fromFunction0(addMergeRef), addName = js.Any.fromFunction1(addName), address = address.asInstanceOf[js.Any], alignment = alignment.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], dataValidation = dataValidation.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), effectiveType = effectiveType.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any], formulaType = formulaType.asInstanceOf[js.Any], fullAddress = fullAddress.asInstanceOf[js.Any], hyperlink = hyperlink.asInstanceOf[js.Any], isHyperlink = isHyperlink.asInstanceOf[js.Any], isMerged = isMerged.asInstanceOf[js.Any], isMergedTo = js.Any.fromFunction1(isMergedTo), master = master.asInstanceOf[js.Any], merge = js.Any.fromFunction1(merge), model = model.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], numFmt = numFmt.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), releaseMergeRef = js.Any.fromFunction0(releaseMergeRef), removeAllNames = js.Any.fromFunction0(removeAllNames), removeName = js.Any.fromFunction1(removeName), result = result.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], toCsvString = js.Any.fromFunction0(toCsvString), unmerge = js.Any.fromFunction0(unmerge), workbook = workbook.asInstanceOf[js.Any], worksheet = worksheet.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Cell]
-  }
+  def removeName(name: String): Unit = js.native
+  def toCsvString(): String = js.native
+  def unmerge(): Unit = js.native
 }
 

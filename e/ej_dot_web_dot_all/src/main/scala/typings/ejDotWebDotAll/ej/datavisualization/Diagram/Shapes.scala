@@ -1,5 +1,15 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.BPMN
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Basic
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Flow
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.HTML
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Image
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Native
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Text
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLActivity
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLClassifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,16 +56,34 @@ object Shapes extends js.Object {
   @js.native
   sealed trait UMLClassifier extends Shapes
   
-  /* 6 */ val BPMN: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.BPMN with Double = js.native
-  /* 4 */ val Basic: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Basic with Double = js.native
-  /* 5 */ val Flow: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Flow with Double = js.native
-  /* 2 */ val HTML: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.HTML with Double = js.native
-  /* 1 */ val Image: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Image with Double = js.native
-  /* 3 */ val Native: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Native with Double = js.native
-  /* 0 */ val Text: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.Text with Double = js.native
-  /* 8 */ val UMLActivity: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLActivity with Double = js.native
-  /* 7 */ val UMLClassifier: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Shapes.UMLClassifier with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Shapes with Double] = js.native
+  /* 6 */ @js.native
+  object BPMN extends TopLevel[BPMN with Double]
+  
+  /* 4 */ @js.native
+  object Basic extends TopLevel[Basic with Double]
+  
+  /* 5 */ @js.native
+  object Flow extends TopLevel[Flow with Double]
+  
+  /* 2 */ @js.native
+  object HTML extends TopLevel[HTML with Double]
+  
+  /* 1 */ @js.native
+  object Image extends TopLevel[Image with Double]
+  
+  /* 3 */ @js.native
+  object Native extends TopLevel[Native with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 8 */ @js.native
+  object UMLActivity extends TopLevel[UMLActivity with Double]
+  
+  /* 7 */ @js.native
+  object UMLClassifier extends TopLevel[UMLClassifier with Double]
+  
 }
 

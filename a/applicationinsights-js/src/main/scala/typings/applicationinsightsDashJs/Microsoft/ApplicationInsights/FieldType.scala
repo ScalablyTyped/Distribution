@@ -1,5 +1,10 @@
 package typings.applicationinsightsDashJs.Microsoft.ApplicationInsights
 
+import org.scalablytyped.runtime.TopLevel
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Array
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Default
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Hidden
+import typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object FieldType extends js.Object {
   @js.native
   sealed trait Required extends FieldType
   
-  /* 2 */ val Array: typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Array with Double = js.native
-  /* 0 */ val Default: typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Default with Double = js.native
-  /* 4 */ val Hidden: typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Hidden with Double = js.native
-  /* 1 */ val Required: typings.applicationinsightsDashJs.Microsoft.ApplicationInsights.FieldType.Required with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldType with Double] = js.native
+  /* 2 */ @js.native
+  object Array extends TopLevel[Array with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 4 */ @js.native
+  object Hidden extends TopLevel[Hidden with Double]
+  
+  /* 1 */ @js.native
+  object Required extends TopLevel[Required with Double]
+  
 }
 

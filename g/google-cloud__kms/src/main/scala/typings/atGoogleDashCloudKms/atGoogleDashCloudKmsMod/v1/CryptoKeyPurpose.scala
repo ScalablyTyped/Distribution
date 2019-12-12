@@ -1,5 +1,10 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_DECRYPT
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_SIGN
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.CRYPTO_KEY_PURPOSE_UNSPECIFIED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ENCRYPT_DECRYPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +37,19 @@ object CryptoKeyPurpose extends js.Object {
   @js.native
   sealed trait ENCRYPT_DECRYPT extends CryptoKeyPurpose
   
-  /* 6 */ val ASYMMETRIC_DECRYPT: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_DECRYPT with Double = js.native
-  /* 5 */ val ASYMMETRIC_SIGN: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ASYMMETRIC_SIGN with Double = js.native
-  /* 0 */ val CRYPTO_KEY_PURPOSE_UNSPECIFIED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.CRYPTO_KEY_PURPOSE_UNSPECIFIED with Double = js.native
-  /* 1 */ val ENCRYPT_DECRYPT: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyPurpose.ENCRYPT_DECRYPT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptoKeyPurpose with Double] = js.native
+  /* 6 */ @js.native
+  object ASYMMETRIC_DECRYPT extends TopLevel[ASYMMETRIC_DECRYPT with Double]
+  
+  /* 5 */ @js.native
+  object ASYMMETRIC_SIGN extends TopLevel[ASYMMETRIC_SIGN with Double]
+  
+  /* 0 */ @js.native
+  object CRYPTO_KEY_PURPOSE_UNSPECIFIED extends TopLevel[CRYPTO_KEY_PURPOSE_UNSPECIFIED with Double]
+  
+  /* 1 */ @js.native
+  object ENCRYPT_DECRYPT extends TopLevel[ENCRYPT_DECRYPT with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrt.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.ViewManagement.HandPreference.leftHanded
+import typings.winrt.Windows.UI.ViewManagement.HandPreference.rightHanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object HandPreference extends js.Object {
   @js.native
   sealed trait rightHanded extends HandPreference
   
-  /* 0 */ val leftHanded: typings.winrt.Windows.UI.ViewManagement.HandPreference.leftHanded with Double = js.native
-  /* 1 */ val rightHanded: typings.winrt.Windows.UI.ViewManagement.HandPreference.rightHanded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HandPreference with Double] = js.native
+  /* 0 */ @js.native
+  object leftHanded extends TopLevel[leftHanded with Double]
+  
+  /* 1 */ @js.native
+  object rightHanded extends TopLevel[rightHanded with Double]
+  
 }
 

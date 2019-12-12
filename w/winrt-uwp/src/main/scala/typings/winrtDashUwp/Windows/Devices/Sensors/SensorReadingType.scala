@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sensors.SensorReadingType.absolute
+import typings.winrtDashUwp.Windows.Devices.Sensors.SensorReadingType.relative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SensorReadingType extends js.Object {
   @js.native
   sealed trait relative extends SensorReadingType
   
-  /* 0 */ val absolute: typings.winrtDashUwp.Windows.Devices.Sensors.SensorReadingType.absolute with Double = js.native
-  /* 1 */ val relative: typings.winrtDashUwp.Windows.Devices.Sensors.SensorReadingType.relative with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SensorReadingType with Double] = js.native
+  /* 0 */ @js.native
+  object absolute extends TopLevel[absolute with Double]
+  
+  /* 1 */ @js.native
+  object relative extends TopLevel[relative with Double]
+  
 }
 

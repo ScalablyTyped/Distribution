@@ -1,5 +1,11 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.ObjectMarkerType.Draft
+import typings.openui5.sap.m.ObjectMarkerType.Favorite
+import typings.openui5.sap.m.ObjectMarkerType.Flagged
+import typings.openui5.sap.m.ObjectMarkerType.Locked
+import typings.openui5.sap.m.ObjectMarkerType.Unsaved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object ObjectMarkerType extends js.Object {
   @js.native
   sealed trait Unsaved extends ObjectMarkerType
   
-  /* 0 */ val Draft: typings.openui5.sap.m.ObjectMarkerType.Draft with Double = js.native
-  /* 1 */ val Favorite: typings.openui5.sap.m.ObjectMarkerType.Favorite with Double = js.native
-  /* 2 */ val Flagged: typings.openui5.sap.m.ObjectMarkerType.Flagged with Double = js.native
-  /* 3 */ val Locked: typings.openui5.sap.m.ObjectMarkerType.Locked with Double = js.native
-  /* 4 */ val Unsaved: typings.openui5.sap.m.ObjectMarkerType.Unsaved with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ObjectMarkerType with Double] = js.native
+  /* 0 */ @js.native
+  object Draft extends TopLevel[Draft with Double]
+  
+  /* 1 */ @js.native
+  object Favorite extends TopLevel[Favorite with Double]
+  
+  /* 2 */ @js.native
+  object Flagged extends TopLevel[Flagged with Double]
+  
+  /* 3 */ @js.native
+  object Locked extends TopLevel[Locked with Double]
+  
+  /* 4 */ @js.native
+  object Unsaved extends TopLevel[Unsaved with Double]
+  
 }
 

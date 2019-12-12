@@ -1,5 +1,20 @@
 package typings.officeDashJs.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Word.ImageFormat.bmp
+import typings.officeDashJs.Word.ImageFormat.emf
+import typings.officeDashJs.Word.ImageFormat.exif
+import typings.officeDashJs.Word.ImageFormat.gif
+import typings.officeDashJs.Word.ImageFormat.icon
+import typings.officeDashJs.Word.ImageFormat.jpeg
+import typings.officeDashJs.Word.ImageFormat.pdf
+import typings.officeDashJs.Word.ImageFormat.pict
+import typings.officeDashJs.Word.ImageFormat.png
+import typings.officeDashJs.Word.ImageFormat.svg
+import typings.officeDashJs.Word.ImageFormat.tiff
+import typings.officeDashJs.Word.ImageFormat.undefined
+import typings.officeDashJs.Word.ImageFormat.unsupported
+import typings.officeDashJs.Word.ImageFormat.wmf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,21 +70,49 @@ object ImageFormat extends js.Object {
   @js.native
   sealed trait wmf extends ImageFormat
   
-  /* "Bmp" */ val bmp: typings.officeDashJs.Word.ImageFormat.bmp with String = js.native
-  /* "Emf" */ val emf: typings.officeDashJs.Word.ImageFormat.emf with String = js.native
-  /* "Exif" */ val exif: typings.officeDashJs.Word.ImageFormat.exif with String = js.native
-  /* "Gif" */ val gif: typings.officeDashJs.Word.ImageFormat.gif with String = js.native
-  /* "Icon" */ val icon: typings.officeDashJs.Word.ImageFormat.icon with String = js.native
-  /* "Jpeg" */ val jpeg: typings.officeDashJs.Word.ImageFormat.jpeg with String = js.native
-  /* "Pdf" */ val pdf: typings.officeDashJs.Word.ImageFormat.pdf with String = js.native
-  /* "Pict" */ val pict: typings.officeDashJs.Word.ImageFormat.pict with String = js.native
-  /* "Png" */ val png: typings.officeDashJs.Word.ImageFormat.png with String = js.native
-  /* "Svg" */ val svg: typings.officeDashJs.Word.ImageFormat.svg with String = js.native
-  /* "Tiff" */ val tiff: typings.officeDashJs.Word.ImageFormat.tiff with String = js.native
-  /* "Undefined" */ val undefined: typings.officeDashJs.Word.ImageFormat.undefined with String = js.native
-  /* "Unsupported" */ val unsupported: typings.officeDashJs.Word.ImageFormat.unsupported with String = js.native
-  /* "Wmf" */ val wmf: typings.officeDashJs.Word.ImageFormat.wmf with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ImageFormat with String] = js.native
+  /* "Bmp" */ @js.native
+  object bmp extends TopLevel[bmp with String]
+  
+  /* "Emf" */ @js.native
+  object emf extends TopLevel[emf with String]
+  
+  /* "Exif" */ @js.native
+  object exif extends TopLevel[exif with String]
+  
+  /* "Gif" */ @js.native
+  object gif extends TopLevel[gif with String]
+  
+  /* "Icon" */ @js.native
+  object icon extends TopLevel[icon with String]
+  
+  /* "Jpeg" */ @js.native
+  object jpeg extends TopLevel[jpeg with String]
+  
+  /* "Pdf" */ @js.native
+  object pdf extends TopLevel[pdf with String]
+  
+  /* "Pict" */ @js.native
+  object pict extends TopLevel[pict with String]
+  
+  /* "Png" */ @js.native
+  object png extends TopLevel[png with String]
+  
+  /* "Svg" */ @js.native
+  object svg extends TopLevel[svg with String]
+  
+  /* "Tiff" */ @js.native
+  object tiff extends TopLevel[tiff with String]
+  
+  /* "Undefined" */ @js.native
+  object undefined extends TopLevel[undefined with String]
+  
+  /* "Unsupported" */ @js.native
+  object unsupported extends TopLevel[unsupported with String]
+  
+  /* "Wmf" */ @js.native
+  object wmf extends TopLevel[wmf with String]
+  
 }
 

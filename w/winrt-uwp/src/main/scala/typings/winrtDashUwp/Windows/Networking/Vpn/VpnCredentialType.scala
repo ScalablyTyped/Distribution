@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.protectedCertificate
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.smartCard
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.unProtectedCertificate
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernameOtpPin
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePassword
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordAndPin
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object VpnCredentialType extends js.Object {
   @js.native
   sealed trait usernamePasswordChange extends VpnCredentialType
   
-  /* 5 */ val protectedCertificate: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.protectedCertificate with Double = js.native
-  /* 4 */ val smartCard: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.smartCard with Double = js.native
-  /* 6 */ val unProtectedCertificate: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.unProtectedCertificate with Double = js.native
-  /* 1 */ val usernameOtpPin: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernameOtpPin with Double = js.native
-  /* 0 */ val usernamePassword: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePassword with Double = js.native
-  /* 2 */ val usernamePasswordAndPin: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordAndPin with Double = js.native
-  /* 3 */ val usernamePasswordChange: typings.winrtDashUwp.Windows.Networking.Vpn.VpnCredentialType.usernamePasswordChange with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnCredentialType with Double] = js.native
+  /* 5 */ @js.native
+  object protectedCertificate extends TopLevel[protectedCertificate with Double]
+  
+  /* 4 */ @js.native
+  object smartCard extends TopLevel[smartCard with Double]
+  
+  /* 6 */ @js.native
+  object unProtectedCertificate extends TopLevel[unProtectedCertificate with Double]
+  
+  /* 1 */ @js.native
+  object usernameOtpPin extends TopLevel[usernameOtpPin with Double]
+  
+  /* 0 */ @js.native
+  object usernamePassword extends TopLevel[usernamePassword with Double]
+  
+  /* 2 */ @js.native
+  object usernamePasswordAndPin extends TopLevel[usernamePasswordAndPin with Double]
+  
+  /* 3 */ @js.native
+  object usernamePasswordChange extends TopLevel[usernamePasswordChange with Double]
+  
 }
 

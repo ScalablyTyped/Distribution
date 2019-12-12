@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.denied
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.deregistered
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.home
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.none
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.partner
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.roaming
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.searching
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object NetworkRegistrationState extends js.Object {
   @js.native
   sealed trait searching extends NetworkRegistrationState
   
-  /* 6 */ val denied: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.denied with Double = js.native
-  /* 1 */ val deregistered: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.deregistered with Double = js.native
-  /* 3 */ val home: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.home with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.none with Double = js.native
-  /* 5 */ val partner: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.partner with Double = js.native
-  /* 4 */ val roaming: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.roaming with Double = js.native
-  /* 2 */ val searching: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkRegistrationState.searching with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NetworkRegistrationState with Double] = js.native
+  /* 6 */ @js.native
+  object denied extends TopLevel[denied with Double]
+  
+  /* 1 */ @js.native
+  object deregistered extends TopLevel[deregistered with Double]
+  
+  /* 3 */ @js.native
+  object home extends TopLevel[home with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object partner extends TopLevel[partner with Double]
+  
+  /* 4 */ @js.native
+  object roaming extends TopLevel[roaming with Double]
+  
+  /* 2 */ @js.native
+  object searching extends TopLevel[searching with Double]
+  
 }
 

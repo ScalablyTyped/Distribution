@@ -10,76 +10,54 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait ShapeFontLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bold: js.UndefOr[Boolean] = js.undefined
+  var bold: js.UndefOr[Boolean] = js.native
   /**
     *
     * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text fragments.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var italic: js.UndefOr[Boolean] = js.undefined
+  var italic: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var size: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[Boolean] = js.native
   /**
     *
     * Type of underline applied to the font. Returns null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var underline: js.UndefOr[Boolean] = js.undefined
-}
-
-object ShapeFontLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Boolean] = js.undefined,
-    underline: js.UndefOr[Boolean] = js.undefined
-  ): ShapeFontLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShapeFontLoadOptions]
-  }
+  var underline: js.UndefOr[Boolean] = js.native
 }
 

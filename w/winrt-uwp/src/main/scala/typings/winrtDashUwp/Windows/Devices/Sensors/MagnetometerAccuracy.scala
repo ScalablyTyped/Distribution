@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.approximate
+import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.high
+import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unknown
+import typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unreliable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MagnetometerAccuracy extends js.Object {
   @js.native
   sealed trait unreliable extends MagnetometerAccuracy
   
-  /* 2 */ val approximate: typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.approximate with Double = js.native
-  /* 3 */ val high: typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.high with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unknown with Double = js.native
-  /* 1 */ val unreliable: typings.winrtDashUwp.Windows.Devices.Sensors.MagnetometerAccuracy.unreliable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MagnetometerAccuracy with Double] = js.native
+  /* 2 */ @js.native
+  object approximate extends TopLevel[approximate with Double]
+  
+  /* 3 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 1 */ @js.native
+  object unreliable extends TopLevel[unreliable with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.autoColor
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.color
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.grayscale
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.monochrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ImageScannerColorMode extends js.Object {
   @js.native
   sealed trait monochrome extends ImageScannerColorMode
   
-  /* 3 */ val autoColor: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.autoColor with Double = js.native
-  /* 0 */ val color: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.color with Double = js.native
-  /* 1 */ val grayscale: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.grayscale with Double = js.native
-  /* 2 */ val monochrome: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerColorMode.monochrome with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageScannerColorMode with Double] = js.native
+  /* 3 */ @js.native
+  object autoColor extends TopLevel[autoColor with Double]
+  
+  /* 0 */ @js.native
+  object color extends TopLevel[color with Double]
+  
+  /* 1 */ @js.native
+  object grayscale extends TopLevel[grayscale with Double]
+  
+  /* 2 */ @js.native
+  object monochrome extends TopLevel[monochrome with Double]
+  
 }
 

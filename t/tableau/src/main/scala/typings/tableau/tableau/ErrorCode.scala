@@ -1,5 +1,39 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.ErrorCode.BROWSER_NOT_CAPABLE
+import typings.tableau.tableau.ErrorCode.DOWNLOAD_WORKBOOK_NOT_ALLOWED
+import typings.tableau.tableau.ErrorCode.FILTER_CANNOT_BE_PERFORMED
+import typings.tableau.tableau.ErrorCode.INDEX_OUT_OF_RANGE
+import typings.tableau.tableau.ErrorCode.INTERNAL_ERROR
+import typings.tableau.tableau.ErrorCode.INVALID_AGGREGATION_FIELD_NAME
+import typings.tableau.tableau.ErrorCode.INVALID_CUSTOM_VIEW_NAME
+import typings.tableau.tableau.ErrorCode.INVALID_DATE_PARAMETER
+import typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDNAME
+import typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDNAME_OR_VALUE
+import typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDVALUE
+import typings.tableau.tableau.ErrorCode.INVALID_PARAMETER
+import typings.tableau.tableau.ErrorCode.INVALID_SELECTION_DATE
+import typings.tableau.tableau.ErrorCode.INVALID_SELECTION_FIELDNAME
+import typings.tableau.tableau.ErrorCode.INVALID_SELECTION_VALUE
+import typings.tableau.tableau.ErrorCode.INVALID_SIZE
+import typings.tableau.tableau.ErrorCode.INVALID_SIZE_BEHAVIOR_ON_WORKSHEET
+import typings.tableau.tableau.ErrorCode.INVALID_TOOLBAR_BUTTON_NAME
+import typings.tableau.tableau.ErrorCode.INVALID_URL
+import typings.tableau.tableau.ErrorCode.MAX_VIZ_RESIZE_ATTEMPTS
+import typings.tableau.tableau.ErrorCode.MISSING_MAX_SIZE
+import typings.tableau.tableau.ErrorCode.MISSING_MINMAX_SIZE
+import typings.tableau.tableau.ErrorCode.MISSING_MIN_SIZE
+import typings.tableau.tableau.ErrorCode.MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS
+import typings.tableau.tableau.ErrorCode.NOT_ACTIVE_SHEET
+import typings.tableau.tableau.ErrorCode.NO_URL_FOR_HIDDEN_WORKSHEET
+import typings.tableau.tableau.ErrorCode.NO_URL_OR_PARENT_ELEMENT_NOT_FOUND
+import typings.tableau.tableau.ErrorCode.NULL_OR_EMPTY_PARAMETER
+import typings.tableau.tableau.ErrorCode.SERVER_ERROR
+import typings.tableau.tableau.ErrorCode.SHEET_NOT_IN_WORKBOOK
+import typings.tableau.tableau.ErrorCode.STALE_DATA_REFERENCE
+import typings.tableau.tableau.ErrorCode.UNSUPPORTED_EVENT_NAME
+import typings.tableau.tableau.ErrorCode.VIZ_ALREADY_IN_MANAGER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -149,40 +183,106 @@ object ErrorCode extends js.Object {
   @js.native
   sealed trait VIZ_ALREADY_IN_MANAGER extends ErrorCode
   
-  /* "browserNotCapable" */ val BROWSER_NOT_CAPABLE: typings.tableau.tableau.ErrorCode.BROWSER_NOT_CAPABLE with String = js.native
-  /* "downloadWorkbookNotAllowed" */ val DOWNLOAD_WORKBOOK_NOT_ALLOWED: typings.tableau.tableau.ErrorCode.DOWNLOAD_WORKBOOK_NOT_ALLOWED with String = js.native
-  /* "filterCannotBePerformed" */ val FILTER_CANNOT_BE_PERFORMED: typings.tableau.tableau.ErrorCode.FILTER_CANNOT_BE_PERFORMED with String = js.native
-  /* "indexOutOfRange" */ val INDEX_OUT_OF_RANGE: typings.tableau.tableau.ErrorCode.INDEX_OUT_OF_RANGE with String = js.native
-  /* "internalError" */ val INTERNAL_ERROR: typings.tableau.tableau.ErrorCode.INTERNAL_ERROR with String = js.native
-  /* "invalidAggregationFieldName" */ val INVALID_AGGREGATION_FIELD_NAME: typings.tableau.tableau.ErrorCode.INVALID_AGGREGATION_FIELD_NAME with String = js.native
-  /* "invalidCustomViewName" */ val INVALID_CUSTOM_VIEW_NAME: typings.tableau.tableau.ErrorCode.INVALID_CUSTOM_VIEW_NAME with String = js.native
-  /* "invalidDateParameter" */ val INVALID_DATE_PARAMETER: typings.tableau.tableau.ErrorCode.INVALID_DATE_PARAMETER with String = js.native
-  /* "invalidFilterFieldName" */ val INVALID_FILTER_FIELDNAME: typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDNAME with String = js.native
-  /* "invalidFilterFieldNameOrValue" */ val INVALID_FILTER_FIELDNAME_OR_VALUE: typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDNAME_OR_VALUE with String = js.native
-  /* "invalidFilterFieldValue" */ val INVALID_FILTER_FIELDVALUE: typings.tableau.tableau.ErrorCode.INVALID_FILTER_FIELDVALUE with String = js.native
-  /* "invalidParameter" */ val INVALID_PARAMETER: typings.tableau.tableau.ErrorCode.INVALID_PARAMETER with String = js.native
-  /* "invalidSelectionDate" */ val INVALID_SELECTION_DATE: typings.tableau.tableau.ErrorCode.INVALID_SELECTION_DATE with String = js.native
-  /* "invalidSelectionFieldName" */ val INVALID_SELECTION_FIELDNAME: typings.tableau.tableau.ErrorCode.INVALID_SELECTION_FIELDNAME with String = js.native
-  /* "invalidSelectionValue" */ val INVALID_SELECTION_VALUE: typings.tableau.tableau.ErrorCode.INVALID_SELECTION_VALUE with String = js.native
-  /* "invalidSize" */ val INVALID_SIZE: typings.tableau.tableau.ErrorCode.INVALID_SIZE with String = js.native
-  /* "invalidSizeBehaviorOnWorksheet" */ val INVALID_SIZE_BEHAVIOR_ON_WORKSHEET: typings.tableau.tableau.ErrorCode.INVALID_SIZE_BEHAVIOR_ON_WORKSHEET with String = js.native
-  /* "invalidToolbarButtonName" */ val INVALID_TOOLBAR_BUTTON_NAME: typings.tableau.tableau.ErrorCode.INVALID_TOOLBAR_BUTTON_NAME with String = js.native
-  /* "invalidUrl" */ val INVALID_URL: typings.tableau.tableau.ErrorCode.INVALID_URL with String = js.native
-  /* "maxVizResizeAttempts" */ val MAX_VIZ_RESIZE_ATTEMPTS: typings.tableau.tableau.ErrorCode.MAX_VIZ_RESIZE_ATTEMPTS with String = js.native
-  /* "missingMaxSize" */ val MISSING_MAX_SIZE: typings.tableau.tableau.ErrorCode.MISSING_MAX_SIZE with String = js.native
-  /* "missingMinMaxSize" */ val MISSING_MINMAX_SIZE: typings.tableau.tableau.ErrorCode.MISSING_MINMAX_SIZE with String = js.native
-  /* "missingMinSize" */ val MISSING_MIN_SIZE: typings.tableau.tableau.ErrorCode.MISSING_MIN_SIZE with String = js.native
-  /* "missingRangeNForRelativeDateFilters" */ val MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS: typings.tableau.tableau.ErrorCode.MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS with String = js.native
-  /* "notActiveSheet" */ val NOT_ACTIVE_SHEET: typings.tableau.tableau.ErrorCode.NOT_ACTIVE_SHEET with String = js.native
-  /* "noUrlForHiddenWorksheet" */ val NO_URL_FOR_HIDDEN_WORKSHEET: typings.tableau.tableau.ErrorCode.NO_URL_FOR_HIDDEN_WORKSHEET with String = js.native
-  /* "noUrlOrParentElementNotFound" */ val NO_URL_OR_PARENT_ELEMENT_NOT_FOUND: typings.tableau.tableau.ErrorCode.NO_URL_OR_PARENT_ELEMENT_NOT_FOUND with String = js.native
-  /* "nullOrEmptyParameter" */ val NULL_OR_EMPTY_PARAMETER: typings.tableau.tableau.ErrorCode.NULL_OR_EMPTY_PARAMETER with String = js.native
-  /* "serverError" */ val SERVER_ERROR: typings.tableau.tableau.ErrorCode.SERVER_ERROR with String = js.native
-  /* "sheetNotInWorkbook" */ val SHEET_NOT_IN_WORKBOOK: typings.tableau.tableau.ErrorCode.SHEET_NOT_IN_WORKBOOK with String = js.native
-  /* "staleDataReference" */ val STALE_DATA_REFERENCE: typings.tableau.tableau.ErrorCode.STALE_DATA_REFERENCE with String = js.native
-  /* "unsupportedEventName" */ val UNSUPPORTED_EVENT_NAME: typings.tableau.tableau.ErrorCode.UNSUPPORTED_EVENT_NAME with String = js.native
-  /* "vizAlreadyInManager" */ val VIZ_ALREADY_IN_MANAGER: typings.tableau.tableau.ErrorCode.VIZ_ALREADY_IN_MANAGER with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ErrorCode with String] = js.native
+  /* "browserNotCapable" */ @js.native
+  object BROWSER_NOT_CAPABLE extends TopLevel[BROWSER_NOT_CAPABLE with String]
+  
+  /* "downloadWorkbookNotAllowed" */ @js.native
+  object DOWNLOAD_WORKBOOK_NOT_ALLOWED extends TopLevel[DOWNLOAD_WORKBOOK_NOT_ALLOWED with String]
+  
+  /* "filterCannotBePerformed" */ @js.native
+  object FILTER_CANNOT_BE_PERFORMED extends TopLevel[FILTER_CANNOT_BE_PERFORMED with String]
+  
+  /* "indexOutOfRange" */ @js.native
+  object INDEX_OUT_OF_RANGE extends TopLevel[INDEX_OUT_OF_RANGE with String]
+  
+  /* "internalError" */ @js.native
+  object INTERNAL_ERROR extends TopLevel[INTERNAL_ERROR with String]
+  
+  /* "invalidAggregationFieldName" */ @js.native
+  object INVALID_AGGREGATION_FIELD_NAME extends TopLevel[INVALID_AGGREGATION_FIELD_NAME with String]
+  
+  /* "invalidCustomViewName" */ @js.native
+  object INVALID_CUSTOM_VIEW_NAME extends TopLevel[INVALID_CUSTOM_VIEW_NAME with String]
+  
+  /* "invalidDateParameter" */ @js.native
+  object INVALID_DATE_PARAMETER extends TopLevel[INVALID_DATE_PARAMETER with String]
+  
+  /* "invalidFilterFieldName" */ @js.native
+  object INVALID_FILTER_FIELDNAME extends TopLevel[INVALID_FILTER_FIELDNAME with String]
+  
+  /* "invalidFilterFieldNameOrValue" */ @js.native
+  object INVALID_FILTER_FIELDNAME_OR_VALUE extends TopLevel[INVALID_FILTER_FIELDNAME_OR_VALUE with String]
+  
+  /* "invalidFilterFieldValue" */ @js.native
+  object INVALID_FILTER_FIELDVALUE extends TopLevel[INVALID_FILTER_FIELDVALUE with String]
+  
+  /* "invalidParameter" */ @js.native
+  object INVALID_PARAMETER extends TopLevel[INVALID_PARAMETER with String]
+  
+  /* "invalidSelectionDate" */ @js.native
+  object INVALID_SELECTION_DATE extends TopLevel[INVALID_SELECTION_DATE with String]
+  
+  /* "invalidSelectionFieldName" */ @js.native
+  object INVALID_SELECTION_FIELDNAME extends TopLevel[INVALID_SELECTION_FIELDNAME with String]
+  
+  /* "invalidSelectionValue" */ @js.native
+  object INVALID_SELECTION_VALUE extends TopLevel[INVALID_SELECTION_VALUE with String]
+  
+  /* "invalidSize" */ @js.native
+  object INVALID_SIZE extends TopLevel[INVALID_SIZE with String]
+  
+  /* "invalidSizeBehaviorOnWorksheet" */ @js.native
+  object INVALID_SIZE_BEHAVIOR_ON_WORKSHEET extends TopLevel[INVALID_SIZE_BEHAVIOR_ON_WORKSHEET with String]
+  
+  /* "invalidToolbarButtonName" */ @js.native
+  object INVALID_TOOLBAR_BUTTON_NAME extends TopLevel[INVALID_TOOLBAR_BUTTON_NAME with String]
+  
+  /* "invalidUrl" */ @js.native
+  object INVALID_URL extends TopLevel[INVALID_URL with String]
+  
+  /* "maxVizResizeAttempts" */ @js.native
+  object MAX_VIZ_RESIZE_ATTEMPTS extends TopLevel[MAX_VIZ_RESIZE_ATTEMPTS with String]
+  
+  /* "missingMaxSize" */ @js.native
+  object MISSING_MAX_SIZE extends TopLevel[MISSING_MAX_SIZE with String]
+  
+  /* "missingMinMaxSize" */ @js.native
+  object MISSING_MINMAX_SIZE extends TopLevel[MISSING_MINMAX_SIZE with String]
+  
+  /* "missingMinSize" */ @js.native
+  object MISSING_MIN_SIZE extends TopLevel[MISSING_MIN_SIZE with String]
+  
+  /* "missingRangeNForRelativeDateFilters" */ @js.native
+  object MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS extends TopLevel[MISSING_RANGEN_FOR_RELATIVE_DATE_FILTERS with String]
+  
+  /* "notActiveSheet" */ @js.native
+  object NOT_ACTIVE_SHEET extends TopLevel[NOT_ACTIVE_SHEET with String]
+  
+  /* "noUrlForHiddenWorksheet" */ @js.native
+  object NO_URL_FOR_HIDDEN_WORKSHEET extends TopLevel[NO_URL_FOR_HIDDEN_WORKSHEET with String]
+  
+  /* "noUrlOrParentElementNotFound" */ @js.native
+  object NO_URL_OR_PARENT_ELEMENT_NOT_FOUND extends TopLevel[NO_URL_OR_PARENT_ELEMENT_NOT_FOUND with String]
+  
+  /* "nullOrEmptyParameter" */ @js.native
+  object NULL_OR_EMPTY_PARAMETER extends TopLevel[NULL_OR_EMPTY_PARAMETER with String]
+  
+  /* "serverError" */ @js.native
+  object SERVER_ERROR extends TopLevel[SERVER_ERROR with String]
+  
+  /* "sheetNotInWorkbook" */ @js.native
+  object SHEET_NOT_IN_WORKBOOK extends TopLevel[SHEET_NOT_IN_WORKBOOK with String]
+  
+  /* "staleDataReference" */ @js.native
+  object STALE_DATA_REFERENCE extends TopLevel[STALE_DATA_REFERENCE with String]
+  
+  /* "unsupportedEventName" */ @js.native
+  object UNSUPPORTED_EVENT_NAME extends TopLevel[UNSUPPORTED_EVENT_NAME with String]
+  
+  /* "vizAlreadyInManager" */ @js.native
+  object VIZ_ALREADY_IN_MANAGER extends TopLevel[VIZ_ALREADY_IN_MANAGER with String]
+  
 }
 

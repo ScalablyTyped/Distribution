@@ -1,5 +1,8 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_DEFAULT
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +20,13 @@ object AutoExpansionMode extends js.Object {
   @js.native
   sealed trait AUTO_EXPANSION_MODE_UNSPECIFIED extends AutoExpansionMode
   
-  /* 1 */ val AUTO_EXPANSION_MODE_DEFAULT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_DEFAULT with Double = js.native
-  /* 0 */ val AUTO_EXPANSION_MODE_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_UNSPECIFIED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AutoExpansionMode with Double] = js.native
+  /* 1 */ @js.native
+  object AUTO_EXPANSION_MODE_DEFAULT extends TopLevel[AUTO_EXPANSION_MODE_DEFAULT with Double]
+  
+  /* 0 */ @js.native
+  object AUTO_EXPANSION_MODE_UNSPECIFIED extends TopLevel[AUTO_EXPANSION_MODE_UNSPECIFIED with Double]
+  
 }
 

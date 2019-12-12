@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.Media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelDown
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelUp
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.fastForward
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.next
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.pause
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.play
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.previous
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.record
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.rewind
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object SystemMediaTransportControlsButton extends js.Object {
   @js.native
   sealed trait stop extends SystemMediaTransportControlsButton
   
-  /* 9 */ val channelDown: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelDown with Double = js.native
-  /* 8 */ val channelUp: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.channelUp with Double = js.native
-  /* 4 */ val fastForward: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.fastForward with Double = js.native
-  /* 6 */ val next: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.next with Double = js.native
-  /* 1 */ val pause: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.pause with Double = js.native
-  /* 0 */ val play: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.play with Double = js.native
-  /* 7 */ val previous: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.previous with Double = js.native
-  /* 3 */ val record: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.record with Double = js.native
-  /* 5 */ val rewind: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.rewind with Double = js.native
-  /* 2 */ val stop: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsButton.stop with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SystemMediaTransportControlsButton with Double] = js.native
+  /* 9 */ @js.native
+  object channelDown extends TopLevel[channelDown with Double]
+  
+  /* 8 */ @js.native
+  object channelUp extends TopLevel[channelUp with Double]
+  
+  /* 4 */ @js.native
+  object fastForward extends TopLevel[fastForward with Double]
+  
+  /* 6 */ @js.native
+  object next extends TopLevel[next with Double]
+  
+  /* 1 */ @js.native
+  object pause extends TopLevel[pause with Double]
+  
+  /* 0 */ @js.native
+  object play extends TopLevel[play with Double]
+  
+  /* 7 */ @js.native
+  object previous extends TopLevel[previous with Double]
+  
+  /* 3 */ @js.native
+  object record extends TopLevel[record with Double]
+  
+  /* 5 */ @js.native
+  object rewind extends TopLevel[rewind with Double]
+  
+  /* 2 */ @js.native
+  object stop extends TopLevel[stop with Double]
+  
 }
 

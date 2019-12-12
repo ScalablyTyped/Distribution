@@ -1,5 +1,12 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Array
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Boolean
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Map
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Mixed
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Number
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object ParameterType extends js.Object {
   @js.native
   sealed trait String extends ParameterType
   
-  /* 5 */ val Array: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Array with Double = js.native
-  /* 2 */ val Boolean: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Boolean with Double = js.native
-  /* 3 */ val Map: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Map with Double = js.native
-  /* 4 */ val Mixed: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Mixed with Double = js.native
-  /* 1 */ val Number: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.Number with Double = js.native
-  /* 0 */ val String: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterType.String with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParameterType with Double] = js.native
+  /* 5 */ @js.native
+  object Array extends TopLevel[Array with Double]
+  
+  /* 2 */ @js.native
+  object Boolean extends TopLevel[Boolean with Double]
+  
+  /* 3 */ @js.native
+  object Map extends TopLevel[Map with Double]
+  
+  /* 4 */ @js.native
+  object Mixed extends TopLevel[Mixed with Double]
+  
+  /* 1 */ @js.native
+  object Number extends TopLevel[Number with Double]
+  
+  /* 0 */ @js.native
+  object String extends TopLevel[String with Double]
+  
 }
 

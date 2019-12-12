@@ -1,5 +1,8 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.ValueFormat.Formatted
+import typings.officeDashJs.Office.ValueFormat.Unformatted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,9 +34,13 @@ object ValueFormat extends js.Object {
   @js.native
   sealed trait Unformatted extends ValueFormat
   
-  /* 1 */ val Formatted: typings.officeDashJs.Office.ValueFormat.Formatted with Double = js.native
-  /* 0 */ val Unformatted: typings.officeDashJs.Office.ValueFormat.Unformatted with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ValueFormat with Double] = js.native
+  /* 1 */ @js.native
+  object Formatted extends TopLevel[Formatted with Double]
+  
+  /* 0 */ @js.native
+  object Unformatted extends TopLevel[Unformatted with Double]
+  
 }
 

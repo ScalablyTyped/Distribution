@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.SOLID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object FillType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends FillType
   
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.NONE with Double = js.native
-  /* 2 */ val SOLID: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.SOLID with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.FillType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FillType with Double] = js.native
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 2 */ @js.native
+  object SOLID extends TopLevel[SOLID with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

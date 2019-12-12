@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.clamp
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.mirror
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.none
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.wrap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object Printing3DTextureEdgeBehavior extends js.Object {
   @js.native
   sealed trait wrap extends Printing3DTextureEdgeBehavior
   
-  /* 3 */ val clamp: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.clamp with Double = js.native
-  /* 2 */ val mirror: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.mirror with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.none with Double = js.native
-  /* 1 */ val wrap: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DTextureEdgeBehavior.wrap with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Printing3DTextureEdgeBehavior with Double] = js.native
+  /* 3 */ @js.native
+  object clamp extends TopLevel[clamp with Double]
+  
+  /* 2 */ @js.native
+  object mirror extends TopLevel[mirror with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object wrap extends TopLevel[wrap with Double]
+  
 }
 

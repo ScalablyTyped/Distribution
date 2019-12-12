@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.auto
+import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.direct
+import typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.smooth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ZoomTransitionMode extends js.Object {
   @js.native
   sealed trait smooth extends ZoomTransitionMode
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.auto with Double = js.native
-  /* 1 */ val direct: typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.direct with Double = js.native
-  /* 2 */ val smooth: typings.winrtDashUwp.Windows.Media.Devices.ZoomTransitionMode.smooth with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ZoomTransitionMode with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 1 */ @js.native
+  object direct extends TopLevel[direct with Double]
+  
+  /* 2 */ @js.native
+  object smooth extends TopLevel[smooth with Double]
+  
 }
 

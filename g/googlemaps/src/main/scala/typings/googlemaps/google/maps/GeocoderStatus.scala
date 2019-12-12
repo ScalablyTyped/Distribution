@@ -1,5 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.GeocoderStatus.ERROR
+import typings.googlemaps.google.maps.GeocoderStatus.INVALID_REQUEST
+import typings.googlemaps.google.maps.GeocoderStatus.OK
+import typings.googlemaps.google.maps.GeocoderStatus.OVER_QUERY_LIMIT
+import typings.googlemaps.google.maps.GeocoderStatus.REQUEST_DENIED
+import typings.googlemaps.google.maps.GeocoderStatus.UNKNOWN_ERROR
+import typings.googlemaps.google.maps.GeocoderStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object GeocoderStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends GeocoderStatus
   
-  /* "ERROR" */ val ERROR: typings.googlemaps.google.maps.GeocoderStatus.ERROR with String = js.native
-  /* "INVALID_REQUEST" */ val INVALID_REQUEST: typings.googlemaps.google.maps.GeocoderStatus.INVALID_REQUEST with String = js.native
-  /* "OK" */ val OK: typings.googlemaps.google.maps.GeocoderStatus.OK with String = js.native
-  /* "OVER_QUERY_LIMIT" */ val OVER_QUERY_LIMIT: typings.googlemaps.google.maps.GeocoderStatus.OVER_QUERY_LIMIT with String = js.native
-  /* "REQUEST_DENIED" */ val REQUEST_DENIED: typings.googlemaps.google.maps.GeocoderStatus.REQUEST_DENIED with String = js.native
-  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.GeocoderStatus.UNKNOWN_ERROR with String = js.native
-  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.GeocoderStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[GeocoderStatus with String] = js.native
+  /* "ERROR" */ @js.native
+  object ERROR extends TopLevel[ERROR with String]
+  
+  /* "INVALID_REQUEST" */ @js.native
+  object INVALID_REQUEST extends TopLevel[INVALID_REQUEST with String]
+  
+  /* "OK" */ @js.native
+  object OK extends TopLevel[OK with String]
+  
+  /* "OVER_QUERY_LIMIT" */ @js.native
+  object OVER_QUERY_LIMIT extends TopLevel[OVER_QUERY_LIMIT with String]
+  
+  /* "REQUEST_DENIED" */ @js.native
+  object REQUEST_DENIED extends TopLevel[REQUEST_DENIED with String]
+  
+  /* "UNKNOWN_ERROR" */ @js.native
+  object UNKNOWN_ERROR extends TopLevel[UNKNOWN_ERROR with String]
+  
+  /* "ZERO_RESULTS" */ @js.native
+  object ZERO_RESULTS extends TopLevel[ZERO_RESULTS with String]
+  
 }
 

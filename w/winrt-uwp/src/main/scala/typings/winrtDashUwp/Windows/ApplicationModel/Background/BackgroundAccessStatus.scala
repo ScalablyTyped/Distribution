@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedMayUseActiveRealTimeConnectivity
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedWithAlwaysOnRealTimeConnectivity
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.denied
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object BackgroundAccessStatus extends js.Object {
   @js.native
   sealed trait unspecified extends BackgroundAccessStatus
   
-  /* 2 */ val allowedMayUseActiveRealTimeConnectivity: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedMayUseActiveRealTimeConnectivity with Double = js.native
-  /* 1 */ val allowedWithAlwaysOnRealTimeConnectivity: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.allowedWithAlwaysOnRealTimeConnectivity with Double = js.native
-  /* 3 */ val denied: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.denied with Double = js.native
-  /* 0 */ val unspecified: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundAccessStatus.unspecified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BackgroundAccessStatus with Double] = js.native
+  /* 2 */ @js.native
+  object allowedMayUseActiveRealTimeConnectivity extends TopLevel[allowedMayUseActiveRealTimeConnectivity with Double]
+  
+  /* 1 */ @js.native
+  object allowedWithAlwaysOnRealTimeConnectivity extends TopLevel[allowedWithAlwaysOnRealTimeConnectivity with Double]
+  
+  /* 3 */ @js.native
+  object denied extends TopLevel[denied with Double]
+  
+  /* 0 */ @js.native
+  object unspecified extends TopLevel[unspecified with Double]
+  
 }
 

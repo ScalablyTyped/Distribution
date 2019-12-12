@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.add
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.remove
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object DeviceWatcherEventKind extends js.Object {
   @js.native
   sealed trait update extends DeviceWatcherEventKind
   
-  /* 0 */ val add: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.add with Double = js.native
-  /* 2 */ val remove: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.remove with Double = js.native
-  /* 1 */ val update: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherEventKind.update with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeviceWatcherEventKind with Double] = js.native
+  /* 0 */ @js.native
+  object add extends TopLevel[add with Double]
+  
+  /* 2 */ @js.native
+  object remove extends TopLevel[remove with Double]
+  
+  /* 1 */ @js.native
+  object update extends TopLevel[update with Double]
+  
 }
 

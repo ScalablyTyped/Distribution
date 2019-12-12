@@ -1,5 +1,11 @@
 package typings.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.allStreamsIdentical
+import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.allStreamsIndependent
+import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.previewPhotoStreamsIdentical
+import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.previewRecordStreamsIdentical
+import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.recordPhotoStreamsIdentical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object VideoDeviceCharacteristic extends js.Object {
   @js.native
   sealed trait recordPhotoStreamsIdentical extends VideoDeviceCharacteristic
   
-  /* 4 */ val allStreamsIdentical: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.allStreamsIdentical with Double = js.native
-  /* 0 */ val allStreamsIndependent: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.allStreamsIndependent with Double = js.native
-  /* 2 */ val previewPhotoStreamsIdentical: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.previewPhotoStreamsIdentical with Double = js.native
-  /* 1 */ val previewRecordStreamsIdentical: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.previewRecordStreamsIdentical with Double = js.native
-  /* 3 */ val recordPhotoStreamsIdentical: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.recordPhotoStreamsIdentical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VideoDeviceCharacteristic with Double] = js.native
+  /* 4 */ @js.native
+  object allStreamsIdentical extends TopLevel[allStreamsIdentical with Double]
+  
+  /* 0 */ @js.native
+  object allStreamsIndependent extends TopLevel[allStreamsIndependent with Double]
+  
+  /* 2 */ @js.native
+  object previewPhotoStreamsIdentical extends TopLevel[previewPhotoStreamsIdentical with Double]
+  
+  /* 1 */ @js.native
+  object previewRecordStreamsIdentical extends TopLevel[previewRecordStreamsIdentical with Double]
+  
+  /* 3 */ @js.native
+  object recordPhotoStreamsIdentical extends TopLevel[recordPhotoStreamsIdentical with Double]
+  
 }
 

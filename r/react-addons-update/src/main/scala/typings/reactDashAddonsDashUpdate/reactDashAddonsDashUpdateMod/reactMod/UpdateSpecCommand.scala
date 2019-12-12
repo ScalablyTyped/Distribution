@@ -4,23 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateSpecCommand extends _UpdateSpec {
   @JSName("$apply")
-  var $apply: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  var $apply: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
   @JSName("$merge")
-  var $merge: js.UndefOr[js.Object] = js.undefined
+  var $merge: js.UndefOr[js.Object] = js.native
   @JSName("$set")
-  var $set: js.UndefOr[js.Any] = js.undefined
-}
-
-object UpdateSpecCommand {
-  @scala.inline
-  def apply($apply: /* value */ js.Any => _ = null, $merge: js.Object = null, $set: js.Any = null): UpdateSpecCommand = {
-    val __obj = js.Dynamic.literal()
-    if ($apply != null) __obj.updateDynamic("$apply")(js.Any.fromFunction1($apply))
-    if ($merge != null) __obj.updateDynamic("$merge")($merge.asInstanceOf[js.Any])
-    if ($set != null) __obj.updateDynamic("$set")($set.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UpdateSpecCommand]
-  }
+  var $set: js.UndefOr[js.Any] = js.native
 }
 

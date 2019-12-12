@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Available
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Offline
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object AgentStatus extends js.Object {
   @js.native
   sealed trait Unavailable extends AgentStatus
   
-  /* 1 */ val Available: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Available with Double = js.native
-  /* 2 */ val Offline: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Offline with Double = js.native
-  /* 0 */ val Unavailable: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.AgentStatus.Unavailable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AgentStatus with Double] = js.native
+  /* 1 */ @js.native
+  object Available extends TopLevel[Available with Double]
+  
+  /* 2 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
+  /* 0 */ @js.native
+  object Unavailable extends TopLevel[Unavailable with Double]
+  
 }
 

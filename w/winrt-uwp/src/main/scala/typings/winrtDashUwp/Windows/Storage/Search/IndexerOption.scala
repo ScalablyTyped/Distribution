@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.doNotUseIndexer
+import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.onlyUseIndexer
+import typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.useIndexerWhenAvailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object IndexerOption extends js.Object {
   @js.native
   sealed trait useIndexerWhenAvailable extends IndexerOption
   
-  /* 2 */ val doNotUseIndexer: typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.doNotUseIndexer with Double = js.native
-  /* 1 */ val onlyUseIndexer: typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.onlyUseIndexer with Double = js.native
-  /* 0 */ val useIndexerWhenAvailable: typings.winrtDashUwp.Windows.Storage.Search.IndexerOption.useIndexerWhenAvailable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IndexerOption with Double] = js.native
+  /* 2 */ @js.native
+  object doNotUseIndexer extends TopLevel[doNotUseIndexer with Double]
+  
+  /* 1 */ @js.native
+  object onlyUseIndexer extends TopLevel[onlyUseIndexer with Double]
+  
+  /* 0 */ @js.native
+  object useIndexerWhenAvailable extends TopLevel[useIndexerWhenAvailable with Double]
+  
 }
 

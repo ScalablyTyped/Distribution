@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.high
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.low
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EmailImportance extends js.Object {
   @js.native
   sealed trait normal extends EmailImportance
   
-  /* 1 */ val high: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.high with Double = js.native
-  /* 2 */ val low: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.low with Double = js.native
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailImportance.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailImportance with Double] = js.native
+  /* 1 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 2 */ @js.native
+  object low extends TopLevel[low with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

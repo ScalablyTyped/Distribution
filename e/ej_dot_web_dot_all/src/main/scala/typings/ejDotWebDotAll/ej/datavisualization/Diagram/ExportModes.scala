@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ExportModes.Data
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ExportModes.Download
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ExportModes extends js.Object {
   @js.native
   sealed trait Download extends ExportModes
   
-  /* 1 */ val Data: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ExportModes.Data with Double = js.native
-  /* 0 */ val Download: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ExportModes.Download with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExportModes with Double] = js.native
+  /* 1 */ @js.native
+  object Data extends TopLevel[Data with Double]
+  
+  /* 0 */ @js.native
+  object Download extends TopLevel[Download with Double]
+  
 }
 

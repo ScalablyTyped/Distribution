@@ -1,5 +1,11 @@
 package typings.androiduix.android.text.TextUtils
 
+import org.scalablytyped.runtime.TopLevel
+import typings.androiduix.android.text.TextUtils.TruncateAt.END
+import typings.androiduix.android.text.TextUtils.TruncateAt.END_SMALL
+import typings.androiduix.android.text.TextUtils.TruncateAt.MARQUEE
+import typings.androiduix.android.text.TextUtils.TruncateAt.MIDDLE
+import typings.androiduix.android.text.TextUtils.TruncateAt.START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object TruncateAt extends js.Object {
   @js.native
   sealed trait START extends TruncateAt
   
-  /* 2 */ val END: typings.androiduix.android.text.TextUtils.TruncateAt.END with Double = js.native
-  /* 4 */ val END_SMALL: typings.androiduix.android.text.TextUtils.TruncateAt.END_SMALL with Double = js.native
-  /* 3 */ val MARQUEE: typings.androiduix.android.text.TextUtils.TruncateAt.MARQUEE with Double = js.native
-  /* 1 */ val MIDDLE: typings.androiduix.android.text.TextUtils.TruncateAt.MIDDLE with Double = js.native
-  /* 0 */ val START: typings.androiduix.android.text.TextUtils.TruncateAt.START with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TruncateAt with Double] = js.native
+  /* 2 */ @js.native
+  object END extends TopLevel[END with Double]
+  
+  /* 4 */ @js.native
+  object END_SMALL extends TopLevel[END_SMALL with Double]
+  
+  /* 3 */ @js.native
+  object MARQUEE extends TopLevel[MARQUEE with Double]
+  
+  /* 1 */ @js.native
+  object MIDDLE extends TopLevel[MIDDLE with Double]
+  
+  /* 0 */ @js.native
+  object START extends TopLevel[START with Double]
+  
 }
 

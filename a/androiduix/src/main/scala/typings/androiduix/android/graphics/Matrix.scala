@@ -1,6 +1,11 @@
 package typings.androiduix.android.graphics
 
+import org.scalablytyped.runtime.TopLevel
 import typings.androiduix.android.graphics.Matrix.ScaleToFit
+import typings.androiduix.android.graphics.Matrix.ScaleToFit.CENTER
+import typings.androiduix.android.graphics.Matrix.ScaleToFit.END
+import typings.androiduix.android.graphics.Matrix.ScaleToFit.FILL
+import typings.androiduix.android.graphics.Matrix.ScaleToFit.START
 import typings.androiduix.java.lang.StringBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -144,12 +149,20 @@ object Matrix extends js.Object {
     @js.native
     sealed trait START extends ScaleToFit
     
-    /* 2 */ val CENTER: typings.androiduix.android.graphics.Matrix.ScaleToFit.CENTER with Double = js.native
-    /* 3 */ val END: typings.androiduix.android.graphics.Matrix.ScaleToFit.END with Double = js.native
-    /* 0 */ val FILL: typings.androiduix.android.graphics.Matrix.ScaleToFit.FILL with Double = js.native
-    /* 1 */ val START: typings.androiduix.android.graphics.Matrix.ScaleToFit.START with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ScaleToFit with Double] = js.native
+    /* 2 */ @js.native
+    object CENTER extends TopLevel[CENTER with Double]
+    
+    /* 3 */ @js.native
+    object END extends TopLevel[END with Double]
+    
+    /* 0 */ @js.native
+    object FILL extends TopLevel[FILL with Double]
+    
+    /* 1 */ @js.native
+    object START extends TopLevel[START with Double]
+    
   }
   
 }

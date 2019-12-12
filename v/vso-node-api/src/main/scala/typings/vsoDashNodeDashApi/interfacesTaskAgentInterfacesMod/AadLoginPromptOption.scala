@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.FreshLogin
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.Login
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.NoOption
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.SelectAccount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object AadLoginPromptOption extends js.Object {
   @js.native
   sealed trait SelectAccount extends AadLoginPromptOption
   
-  /* 3 */ val FreshLogin: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.FreshLogin with Double = js.native
-  /* 1 */ val Login: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.Login with Double = js.native
-  /* 0 */ val NoOption: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.NoOption with Double = js.native
-  /* 2 */ val SelectAccount: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.AadLoginPromptOption.SelectAccount with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AadLoginPromptOption with Double] = js.native
+  /* 3 */ @js.native
+  object FreshLogin extends TopLevel[FreshLogin with Double]
+  
+  /* 1 */ @js.native
+  object Login extends TopLevel[Login with Double]
+  
+  /* 0 */ @js.native
+  object NoOption extends TopLevel[NoOption with Double]
+  
+  /* 2 */ @js.native
+  object SelectAccount extends TopLevel[SelectAccount with Double]
+  
 }
 

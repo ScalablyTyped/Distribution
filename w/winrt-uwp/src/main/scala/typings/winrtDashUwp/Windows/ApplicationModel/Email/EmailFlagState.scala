@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.cleared
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.completed
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.flagged
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.unflagged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object EmailFlagState extends js.Object {
   @js.native
   sealed trait unflagged extends EmailFlagState
   
-  /* 3 */ val cleared: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.cleared with Double = js.native
-  /* 2 */ val completed: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.completed with Double = js.native
-  /* 1 */ val flagged: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.flagged with Double = js.native
-  /* 0 */ val unflagged: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailFlagState.unflagged with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailFlagState with Double] = js.native
+  /* 3 */ @js.native
+  object cleared extends TopLevel[cleared with Double]
+  
+  /* 2 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 1 */ @js.native
+  object flagged extends TopLevel[flagged with Double]
+  
+  /* 0 */ @js.native
+  object unflagged extends TopLevel[unflagged with Double]
+  
 }
 

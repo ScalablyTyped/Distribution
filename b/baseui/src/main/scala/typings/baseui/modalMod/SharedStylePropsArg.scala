@@ -10,46 +10,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SharedStylePropsArg extends js.Object {
   @JSName("$animate")
-  var $animate: js.UndefOr[Boolean] = js.undefined
+  var $animate: js.UndefOr[Boolean] = js.native
   @JSName("$closeable")
-  var $closeable: js.UndefOr[Boolean] = js.undefined
+  var $closeable: js.UndefOr[Boolean] = js.native
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.undefined
+  var $isOpen: js.UndefOr[Boolean] = js.native
   @JSName("$isVisible")
-  var $isVisible: js.UndefOr[Boolean] = js.undefined
+  var $isVisible: js.UndefOr[Boolean] = js.native
   @JSName("$role")
-  var $role: js.UndefOr[dialog | alertdialog] = js.undefined
+  var $role: js.UndefOr[dialog | alertdialog] = js.native
   @JSName("$size")
-  var $size: js.UndefOr[default_ | full | auto] = js.undefined
+  var $size: js.UndefOr[default_ | full | auto] = js.native
   @JSName("$unstable_ModalBackdropScroll")
-  var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-}
-
-object SharedStylePropsArg {
-  @scala.inline
-  def apply(
-    $animate: js.UndefOr[Boolean] = js.undefined,
-    $closeable: js.UndefOr[Boolean] = js.undefined,
-    $isOpen: js.UndefOr[Boolean] = js.undefined,
-    $isVisible: js.UndefOr[Boolean] = js.undefined,
-    $role: dialog | alertdialog = null,
-    $size: default_ | full | auto = null,
-    $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null
-  ): SharedStylePropsArg = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($animate)) __obj.updateDynamic("$animate")($animate.asInstanceOf[js.Any])
-    if (!js.isUndefined($closeable)) __obj.updateDynamic("$closeable")($closeable.asInstanceOf[js.Any])
-    if (!js.isUndefined($isOpen)) __obj.updateDynamic("$isOpen")($isOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined($isVisible)) __obj.updateDynamic("$isVisible")($isVisible.asInstanceOf[js.Any])
-    if ($role != null) __obj.updateDynamic("$role")($role.asInstanceOf[js.Any])
-    if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
-    if (!js.isUndefined($unstable_ModalBackdropScroll)) __obj.updateDynamic("$unstable_ModalBackdropScroll")($unstable_ModalBackdropScroll.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SharedStylePropsArg]
-  }
+  var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
 }
 

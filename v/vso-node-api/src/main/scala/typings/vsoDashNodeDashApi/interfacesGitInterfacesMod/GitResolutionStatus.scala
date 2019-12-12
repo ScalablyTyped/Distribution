@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.PartiallyResolved
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Resolved
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Unresolved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object GitResolutionStatus extends js.Object {
   @js.native
   sealed trait Unresolved extends GitResolutionStatus
   
-  /* 1 */ val PartiallyResolved: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.PartiallyResolved with Double = js.native
-  /* 2 */ val Resolved: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Resolved with Double = js.native
-  /* 0 */ val Unresolved: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionStatus.Unresolved with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitResolutionStatus with Double] = js.native
+  /* 1 */ @js.native
+  object PartiallyResolved extends TopLevel[PartiallyResolved with Double]
+  
+  /* 2 */ @js.native
+  object Resolved extends TopLevel[Resolved with Double]
+  
+  /* 0 */ @js.native
+  object Unresolved extends TopLevel[Unresolved with Double]
+  
 }
 

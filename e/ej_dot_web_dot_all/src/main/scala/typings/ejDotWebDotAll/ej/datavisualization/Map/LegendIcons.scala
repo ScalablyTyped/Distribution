@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LegendIcons.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LegendIcons.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object LegendIcons extends js.Object {
   @js.native
   sealed trait Rectangle extends LegendIcons
   
-  /* 1 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.Map.LegendIcons.Circle with Double = js.native
-  /* 0 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.Map.LegendIcons.Rectangle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LegendIcons with Double] = js.native
+  /* 1 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 0 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
 }
 

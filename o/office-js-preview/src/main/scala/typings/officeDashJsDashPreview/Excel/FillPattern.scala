@@ -1,5 +1,27 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.FillPattern.checker
+import typings.officeDashJsDashPreview.Excel.FillPattern.crissCross
+import typings.officeDashJsDashPreview.Excel.FillPattern.down
+import typings.officeDashJsDashPreview.Excel.FillPattern.gray16
+import typings.officeDashJsDashPreview.Excel.FillPattern.gray25
+import typings.officeDashJsDashPreview.Excel.FillPattern.gray50
+import typings.officeDashJsDashPreview.Excel.FillPattern.gray75
+import typings.officeDashJsDashPreview.Excel.FillPattern.gray8
+import typings.officeDashJsDashPreview.Excel.FillPattern.grid
+import typings.officeDashJsDashPreview.Excel.FillPattern.horizontal
+import typings.officeDashJsDashPreview.Excel.FillPattern.lightDown
+import typings.officeDashJsDashPreview.Excel.FillPattern.lightHorizontal
+import typings.officeDashJsDashPreview.Excel.FillPattern.lightUp
+import typings.officeDashJsDashPreview.Excel.FillPattern.lightVertical
+import typings.officeDashJsDashPreview.Excel.FillPattern.linearGradient
+import typings.officeDashJsDashPreview.Excel.FillPattern.none
+import typings.officeDashJsDashPreview.Excel.FillPattern.rectangularGradient
+import typings.officeDashJsDashPreview.Excel.FillPattern.semiGray75
+import typings.officeDashJsDashPreview.Excel.FillPattern.solid
+import typings.officeDashJsDashPreview.Excel.FillPattern.up
+import typings.officeDashJsDashPreview.Excel.FillPattern.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,28 +98,70 @@ object FillPattern extends js.Object {
   @js.native
   sealed trait vertical extends FillPattern
   
-  /* "Checker" */ val checker: typings.officeDashJsDashPreview.Excel.FillPattern.checker with String = js.native
-  /* "CrissCross" */ val crissCross: typings.officeDashJsDashPreview.Excel.FillPattern.crissCross with String = js.native
-  /* "Down" */ val down: typings.officeDashJsDashPreview.Excel.FillPattern.down with String = js.native
-  /* "Gray16" */ val gray16: typings.officeDashJsDashPreview.Excel.FillPattern.gray16 with String = js.native
-  /* "Gray25" */ val gray25: typings.officeDashJsDashPreview.Excel.FillPattern.gray25 with String = js.native
-  /* "Gray50" */ val gray50: typings.officeDashJsDashPreview.Excel.FillPattern.gray50 with String = js.native
-  /* "Gray75" */ val gray75: typings.officeDashJsDashPreview.Excel.FillPattern.gray75 with String = js.native
-  /* "Gray8" */ val gray8: typings.officeDashJsDashPreview.Excel.FillPattern.gray8 with String = js.native
-  /* "Grid" */ val grid: typings.officeDashJsDashPreview.Excel.FillPattern.grid with String = js.native
-  /* "Horizontal" */ val horizontal: typings.officeDashJsDashPreview.Excel.FillPattern.horizontal with String = js.native
-  /* "LightDown" */ val lightDown: typings.officeDashJsDashPreview.Excel.FillPattern.lightDown with String = js.native
-  /* "LightHorizontal" */ val lightHorizontal: typings.officeDashJsDashPreview.Excel.FillPattern.lightHorizontal with String = js.native
-  /* "LightUp" */ val lightUp: typings.officeDashJsDashPreview.Excel.FillPattern.lightUp with String = js.native
-  /* "LightVertical" */ val lightVertical: typings.officeDashJsDashPreview.Excel.FillPattern.lightVertical with String = js.native
-  /* "LinearGradient" */ val linearGradient: typings.officeDashJsDashPreview.Excel.FillPattern.linearGradient with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.Excel.FillPattern.none with String = js.native
-  /* "RectangularGradient" */ val rectangularGradient: typings.officeDashJsDashPreview.Excel.FillPattern.rectangularGradient with String = js.native
-  /* "SemiGray75" */ val semiGray75: typings.officeDashJsDashPreview.Excel.FillPattern.semiGray75 with String = js.native
-  /* "Solid" */ val solid: typings.officeDashJsDashPreview.Excel.FillPattern.solid with String = js.native
-  /* "Up" */ val up: typings.officeDashJsDashPreview.Excel.FillPattern.up with String = js.native
-  /* "Vertical" */ val vertical: typings.officeDashJsDashPreview.Excel.FillPattern.vertical with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FillPattern with String] = js.native
+  /* "Checker" */ @js.native
+  object checker extends TopLevel[checker with String]
+  
+  /* "CrissCross" */ @js.native
+  object crissCross extends TopLevel[crissCross with String]
+  
+  /* "Down" */ @js.native
+  object down extends TopLevel[down with String]
+  
+  /* "Gray16" */ @js.native
+  object gray16 extends TopLevel[gray16 with String]
+  
+  /* "Gray25" */ @js.native
+  object gray25 extends TopLevel[gray25 with String]
+  
+  /* "Gray50" */ @js.native
+  object gray50 extends TopLevel[gray50 with String]
+  
+  /* "Gray75" */ @js.native
+  object gray75 extends TopLevel[gray75 with String]
+  
+  /* "Gray8" */ @js.native
+  object gray8 extends TopLevel[gray8 with String]
+  
+  /* "Grid" */ @js.native
+  object grid extends TopLevel[grid with String]
+  
+  /* "Horizontal" */ @js.native
+  object horizontal extends TopLevel[horizontal with String]
+  
+  /* "LightDown" */ @js.native
+  object lightDown extends TopLevel[lightDown with String]
+  
+  /* "LightHorizontal" */ @js.native
+  object lightHorizontal extends TopLevel[lightHorizontal with String]
+  
+  /* "LightUp" */ @js.native
+  object lightUp extends TopLevel[lightUp with String]
+  
+  /* "LightVertical" */ @js.native
+  object lightVertical extends TopLevel[lightVertical with String]
+  
+  /* "LinearGradient" */ @js.native
+  object linearGradient extends TopLevel[linearGradient with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "RectangularGradient" */ @js.native
+  object rectangularGradient extends TopLevel[rectangularGradient with String]
+  
+  /* "SemiGray75" */ @js.native
+  object semiGray75 extends TopLevel[semiGray75 with String]
+  
+  /* "Solid" */ @js.native
+  object solid extends TopLevel[solid with String]
+  
+  /* "Up" */ @js.native
+  object up extends TopLevel[up with String]
+  
+  /* "Vertical" */ @js.native
+  object vertical extends TopLevel[vertical with String]
+  
 }
 

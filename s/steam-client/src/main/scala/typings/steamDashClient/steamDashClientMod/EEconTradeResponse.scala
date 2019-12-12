@@ -1,5 +1,38 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Accepted
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.AlreadyHasTradeRequest
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.AlreadyTrading
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Cancel
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.ConnectionFailed
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.CyberCafeInitiator
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.CyberCafeTarget
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Declined
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Disabled
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorBlockedTarget
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNeedsSteamGuard
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNeedsVerifiedEmail
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNewDeviceCooldown
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorPasswordResetProbation
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorRecentEmailChange
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorSentInvalidCookie
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorSteamGuardDuration
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NeedsEmailConfirmation
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NeedsMobileConfirmation
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NoResponse
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NotLoggedIn
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.OKToDeliver
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.SchoolLabInitiator
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.SchoolLabTarget
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TargetAccountCannotTrade
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TargetAlreadyTrading
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TooSoon
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TooSoonPenalty
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradeBannedInitiator
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradeBannedTarget
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradingHoldForClearedTradeOffersInitiator
+import typings.steamDashClient.steamDashClientMod.EEconTradeResponse.WouldExceedMaxAssetCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,39 +139,103 @@ object EEconTradeResponse extends js.Object {
   @js.native
   sealed trait WouldExceedMaxAssetCount extends EEconTradeResponse
   
-  /* 0 */ val Accepted: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Accepted with Double = js.native
-  /* 12 */ val AlreadyHasTradeRequest: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.AlreadyHasTradeRequest with Double = js.native
-  /* 11 */ val AlreadyTrading: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.AlreadyTrading with Double = js.native
-  /* 7 */ val Cancel: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Cancel with Double = js.native
-  /* 10 */ val ConnectionFailed: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.ConnectionFailed with Double = js.native
-  /* 14 */ val CyberCafeInitiator: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.CyberCafeInitiator with Double = js.native
-  /* 15 */ val CyberCafeTarget: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.CyberCafeTarget with Double = js.native
-  /* 1 */ val Declined: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Declined with Double = js.native
-  /* 5 */ val Disabled: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.Disabled with Double = js.native
-  /* 18 */ val InitiatorBlockedTarget: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorBlockedTarget with Double = js.native
-  /* 21 */ val InitiatorNeedsSteamGuard: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNeedsSteamGuard with Double = js.native
-  /* 20 */ val InitiatorNeedsVerifiedEmail: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNeedsVerifiedEmail with Double = js.native
-  /* 25 */ val InitiatorNewDeviceCooldown: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorNewDeviceCooldown with Double = js.native
-  /* 24 */ val InitiatorPasswordResetProbation: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorPasswordResetProbation with Double = js.native
-  /* 28 */ val InitiatorRecentEmailChange: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorRecentEmailChange with Double = js.native
-  /* 26 */ val InitiatorSentInvalidCookie: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorSentInvalidCookie with Double = js.native
-  /* 23 */ val InitiatorSteamGuardDuration: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.InitiatorSteamGuardDuration with Double = js.native
-  /* 27 */ val NeedsEmailConfirmation: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NeedsEmailConfirmation with Double = js.native
-  /* 29 */ val NeedsMobileConfirmation: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NeedsMobileConfirmation with Double = js.native
-  /* 13 */ val NoResponse: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NoResponse with Double = js.native
-  /* 6 */ val NotLoggedIn: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.NotLoggedIn with Double = js.native
-  /* 50 */ val OKToDeliver: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.OKToDeliver with Double = js.native
-  /* 16 */ val SchoolLabInitiator: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.SchoolLabInitiator with Double = js.native
-  /* 16 */ val SchoolLabTarget: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.SchoolLabTarget with Double = js.native
-  /* 22 */ val TargetAccountCannotTrade: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TargetAccountCannotTrade with Double = js.native
-  /* 4 */ val TargetAlreadyTrading: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TargetAlreadyTrading with Double = js.native
-  /* 8 */ val TooSoon: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TooSoon with Double = js.native
-  /* 9 */ val TooSoonPenalty: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TooSoonPenalty with Double = js.native
-  /* 2 */ val TradeBannedInitiator: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradeBannedInitiator with Double = js.native
-  /* 3 */ val TradeBannedTarget: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradeBannedTarget with Double = js.native
-  /* 30 */ val TradingHoldForClearedTradeOffersInitiator: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.TradingHoldForClearedTradeOffersInitiator with Double = js.native
-  /* 31 */ val WouldExceedMaxAssetCount: typings.steamDashClient.steamDashClientMod.EEconTradeResponse.WouldExceedMaxAssetCount with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EEconTradeResponse with Double] = js.native
+  /* 0 */ @js.native
+  object Accepted extends TopLevel[Accepted with Double]
+  
+  /* 12 */ @js.native
+  object AlreadyHasTradeRequest extends TopLevel[AlreadyHasTradeRequest with Double]
+  
+  /* 11 */ @js.native
+  object AlreadyTrading extends TopLevel[AlreadyTrading with Double]
+  
+  /* 7 */ @js.native
+  object Cancel extends TopLevel[Cancel with Double]
+  
+  /* 10 */ @js.native
+  object ConnectionFailed extends TopLevel[ConnectionFailed with Double]
+  
+  /* 14 */ @js.native
+  object CyberCafeInitiator extends TopLevel[CyberCafeInitiator with Double]
+  
+  /* 15 */ @js.native
+  object CyberCafeTarget extends TopLevel[CyberCafeTarget with Double]
+  
+  /* 1 */ @js.native
+  object Declined extends TopLevel[Declined with Double]
+  
+  /* 5 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 18 */ @js.native
+  object InitiatorBlockedTarget extends TopLevel[InitiatorBlockedTarget with Double]
+  
+  /* 21 */ @js.native
+  object InitiatorNeedsSteamGuard extends TopLevel[InitiatorNeedsSteamGuard with Double]
+  
+  /* 20 */ @js.native
+  object InitiatorNeedsVerifiedEmail extends TopLevel[InitiatorNeedsVerifiedEmail with Double]
+  
+  /* 25 */ @js.native
+  object InitiatorNewDeviceCooldown extends TopLevel[InitiatorNewDeviceCooldown with Double]
+  
+  /* 24 */ @js.native
+  object InitiatorPasswordResetProbation extends TopLevel[InitiatorPasswordResetProbation with Double]
+  
+  /* 28 */ @js.native
+  object InitiatorRecentEmailChange extends TopLevel[InitiatorRecentEmailChange with Double]
+  
+  /* 26 */ @js.native
+  object InitiatorSentInvalidCookie extends TopLevel[InitiatorSentInvalidCookie with Double]
+  
+  /* 23 */ @js.native
+  object InitiatorSteamGuardDuration extends TopLevel[InitiatorSteamGuardDuration with Double]
+  
+  /* 27 */ @js.native
+  object NeedsEmailConfirmation extends TopLevel[NeedsEmailConfirmation with Double]
+  
+  /* 29 */ @js.native
+  object NeedsMobileConfirmation extends TopLevel[NeedsMobileConfirmation with Double]
+  
+  /* 13 */ @js.native
+  object NoResponse extends TopLevel[NoResponse with Double]
+  
+  /* 6 */ @js.native
+  object NotLoggedIn extends TopLevel[NotLoggedIn with Double]
+  
+  /* 50 */ @js.native
+  object OKToDeliver extends TopLevel[OKToDeliver with Double]
+  
+  /* 16 */ @js.native
+  object SchoolLabInitiator extends TopLevel[SchoolLabInitiator with Double]
+  
+  /* 16 */ @js.native
+  object SchoolLabTarget extends TopLevel[SchoolLabTarget with Double]
+  
+  /* 22 */ @js.native
+  object TargetAccountCannotTrade extends TopLevel[TargetAccountCannotTrade with Double]
+  
+  /* 4 */ @js.native
+  object TargetAlreadyTrading extends TopLevel[TargetAlreadyTrading with Double]
+  
+  /* 8 */ @js.native
+  object TooSoon extends TopLevel[TooSoon with Double]
+  
+  /* 9 */ @js.native
+  object TooSoonPenalty extends TopLevel[TooSoonPenalty with Double]
+  
+  /* 2 */ @js.native
+  object TradeBannedInitiator extends TopLevel[TradeBannedInitiator with Double]
+  
+  /* 3 */ @js.native
+  object TradeBannedTarget extends TopLevel[TradeBannedTarget with Double]
+  
+  /* 30 */ @js.native
+  object TradingHoldForClearedTradeOffersInitiator extends TopLevel[TradingHoldForClearedTradeOffersInitiator with Double]
+  
+  /* 31 */ @js.native
+  object WouldExceedMaxAssetCount extends TopLevel[WouldExceedMaxAssetCount with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.END
+import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.HOVER
+import typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.START
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EVENT_TYPE extends js.Object {
   @js.native
   sealed trait START extends EVENT_TYPE
   
-  /* 1 */ val END: typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.END with Double = js.native
-  /* 0 */ val HOVER: typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.HOVER with Double = js.native
-  /* 1 */ val START: typings.reactDashInfiniteDashCalendar.reactDashInfiniteDashCalendarMod.EVENT_TYPE.START with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EVENT_TYPE with Double] = js.native
+  /* 1 */ @js.native
+  object END extends TopLevel[END with Double]
+  
+  /* 0 */ @js.native
+  object HOVER extends TopLevel[HOVER with Double]
+  
+  /* 1 */ @js.native
+  object START extends TopLevel[START with Double]
+  
 }
 

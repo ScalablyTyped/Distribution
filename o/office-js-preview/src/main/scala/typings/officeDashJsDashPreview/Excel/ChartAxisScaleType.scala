@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartAxisScaleType.linear
+import typings.officeDashJsDashPreview.Excel.ChartAxisScaleType.logarithmic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ChartAxisScaleType extends js.Object {
   @js.native
   sealed trait logarithmic extends ChartAxisScaleType
   
-  /* "Linear" */ val linear: typings.officeDashJsDashPreview.Excel.ChartAxisScaleType.linear with String = js.native
-  /* "Logarithmic" */ val logarithmic: typings.officeDashJsDashPreview.Excel.ChartAxisScaleType.logarithmic with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisScaleType with String] = js.native
+  /* "Linear" */ @js.native
+  object linear extends TopLevel[linear with String]
+  
+  /* "Logarithmic" */ @js.native
+  object logarithmic extends TopLevel[logarithmic with String]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.DENSE
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.SHARED_BATCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,9 +50,13 @@ object PackingScheme extends js.Object {
   @js.native
   sealed trait SHARED_BATCH extends PackingScheme
   
-  /* 0 */ val DENSE: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.DENSE with Double = js.native
-  /* 1 */ val SHARED_BATCH: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PackingScheme.SHARED_BATCH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PackingScheme with Double] = js.native
+  /* 0 */ @js.native
+  object DENSE extends TopLevel[DENSE with Double]
+  
+  /* 1 */ @js.native
+  object SHARED_BATCH extends TopLevel[SHARED_BATCH with Double]
+  
 }
 

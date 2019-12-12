@@ -1,5 +1,9 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENT
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object IdempotencyLevel extends js.Object {
   @js.native
   sealed trait NO_SIDE_EFFECTS extends IdempotencyLevel
   
-  /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN with Double = js.native
-  /* 2 */ val IDEMPOTENT: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.IDEMPOTENT with Double = js.native
-  /* 1 */ val NO_SIDE_EFFECTS: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IdempotencyLevel with Double] = js.native
+  /* 0 */ @js.native
+  object IDEMPOTENCY_UNKNOWN extends TopLevel[IDEMPOTENCY_UNKNOWN with Double]
+  
+  /* 2 */ @js.native
+  object IDEMPOTENT extends TopLevel[IDEMPOTENT with Double]
+  
+  /* 1 */ @js.native
+  object NO_SIDE_EFFECTS extends TopLevel[NO_SIDE_EFFECTS with Double]
+  
 }
 

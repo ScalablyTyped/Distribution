@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ComposedEmailType.REPLY_AS_DRAFT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ComposedEmailType.STANDALONE_DRAFT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ComposedEmailType extends js.Object {
   @js.native
   sealed trait STANDALONE_DRAFT extends ComposedEmailType
   
-  /* 0 */ val REPLY_AS_DRAFT: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ComposedEmailType.REPLY_AS_DRAFT with Double = js.native
-  /* 1 */ val STANDALONE_DRAFT: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ComposedEmailType.STANDALONE_DRAFT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ComposedEmailType with Double] = js.native
+  /* 0 */ @js.native
+  object REPLY_AS_DRAFT extends TopLevel[REPLY_AS_DRAFT with Double]
+  
+  /* 1 */ @js.native
+  object STANDALONE_DRAFT extends TopLevel[STANDALONE_DRAFT with Double]
+  
 }
 

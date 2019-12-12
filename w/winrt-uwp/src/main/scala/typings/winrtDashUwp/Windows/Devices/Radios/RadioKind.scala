@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.bluetooth
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.fm
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.mobileBroadband
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.other
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.wiFi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object RadioKind extends js.Object {
   @js.native
   sealed trait wiFi extends RadioKind
   
-  /* 3 */ val bluetooth: typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.bluetooth with Double = js.native
-  /* 4 */ val fm: typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.fm with Double = js.native
-  /* 2 */ val mobileBroadband: typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.mobileBroadband with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.other with Double = js.native
-  /* 1 */ val wiFi: typings.winrtDashUwp.Windows.Devices.Radios.RadioKind.wiFi with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RadioKind with Double] = js.native
+  /* 3 */ @js.native
+  object bluetooth extends TopLevel[bluetooth with Double]
+  
+  /* 4 */ @js.native
+  object fm extends TopLevel[fm with Double]
+  
+  /* 2 */ @js.native
+  object mobileBroadband extends TopLevel[mobileBroadband with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 1 */ @js.native
+  object wiFi extends TopLevel[wiFi with Double]
+  
 }
 

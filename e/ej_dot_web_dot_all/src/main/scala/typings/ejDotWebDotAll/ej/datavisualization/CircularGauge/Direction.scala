@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction.Clockwise
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction.CounterClockwise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object Direction extends js.Object {
   sealed trait CounterClockwise
     extends typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction
   
-  /* 0 */ val Clockwise: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction.Clockwise with Double = js.native
-  /* 1 */ val CounterClockwise: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction.CounterClockwise with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.Direction with Double] = js.native
+  /* 0 */ @js.native
+  object Clockwise extends TopLevel[Clockwise with Double]
+  
+  /* 1 */ @js.native
+  object CounterClockwise extends TopLevel[CounterClockwise with Double]
+  
 }
 

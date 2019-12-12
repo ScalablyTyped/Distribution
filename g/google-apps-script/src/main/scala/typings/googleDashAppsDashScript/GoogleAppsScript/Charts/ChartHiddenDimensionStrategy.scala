@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_BOTH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_COLUMNS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_ROWS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.SHOW_BOTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ChartHiddenDimensionStrategy extends js.Object {
   @js.native
   sealed trait SHOW_BOTH extends ChartHiddenDimensionStrategy
   
-  /* 0 */ val IGNORE_BOTH: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_BOTH with Double = js.native
-  /* 2 */ val IGNORE_COLUMNS: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_COLUMNS with Double = js.native
-  /* 1 */ val IGNORE_ROWS: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.IGNORE_ROWS with Double = js.native
-  /* 3 */ val SHOW_BOTH: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.ChartHiddenDimensionStrategy.SHOW_BOTH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChartHiddenDimensionStrategy with Double] = js.native
+  /* 0 */ @js.native
+  object IGNORE_BOTH extends TopLevel[IGNORE_BOTH with Double]
+  
+  /* 2 */ @js.native
+  object IGNORE_COLUMNS extends TopLevel[IGNORE_COLUMNS with Double]
+  
+  /* 1 */ @js.native
+  object IGNORE_ROWS extends TopLevel[IGNORE_ROWS with Double]
+  
+  /* 3 */ @js.native
+  object SHOW_BOTH extends TopLevel[SHOW_BOTH with Double]
+  
 }
 

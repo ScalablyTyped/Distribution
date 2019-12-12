@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.clickable
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.disabled
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.hasDropdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ColumnActionsMode extends js.Object {
   @js.native
   sealed trait hasDropdown extends ColumnActionsMode
   
-  /* 1 */ val clickable: typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.clickable with Double = js.native
-  /* 0 */ val disabled: typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.disabled with Double = js.native
-  /* 2 */ val hasDropdown: typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode.hasDropdown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ColumnActionsMode with Double] = js.native
+  /* 1 */ @js.native
+  object clickable extends TopLevel[clickable with Double]
+  
+  /* 0 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 2 */ @js.native
+  object hasDropdown extends TopLevel[hasDropdown with Double]
+  
 }
 

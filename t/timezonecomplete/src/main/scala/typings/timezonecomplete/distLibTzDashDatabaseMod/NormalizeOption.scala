@@ -1,5 +1,8 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Down
+import typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object NormalizeOption extends js.Object {
   @js.native
   sealed trait Up extends NormalizeOption
   
-  /* 1 */ val Down: typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Down with Double = js.native
-  /* 0 */ val Up: typings.timezonecomplete.distLibTzDashDatabaseMod.NormalizeOption.Up with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NormalizeOption with Double] = js.native
+  /* 1 */ @js.native
+  object Down extends TopLevel[Down with Double]
+  
+  /* 0 */ @js.native
+  object Up extends TopLevel[Up with Double]
+  
 }
 

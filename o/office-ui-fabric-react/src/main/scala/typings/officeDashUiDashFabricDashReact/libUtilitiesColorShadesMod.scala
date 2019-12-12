@@ -1,7 +1,17 @@
 package typings.officeDashUiDashFabricDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.officeDashUiDashFabricDashReact.libUtilitiesColorInterfacesMod.IColor
 import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade1
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade2
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade3
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade4
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade5
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade6
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade7
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade8
+import typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Unshaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,17 +59,35 @@ object libUtilitiesColorShadesMod extends js.Object {
     @js.native
     sealed trait Unshaded extends Shade
     
-    /* 1 */ val Shade1: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade1 with Double = js.native
-    /* 2 */ val Shade2: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade2 with Double = js.native
-    /* 3 */ val Shade3: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade3 with Double = js.native
-    /* 4 */ val Shade4: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade4 with Double = js.native
-    /* 5 */ val Shade5: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade5 with Double = js.native
-    /* 6 */ val Shade6: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade6 with Double = js.native
-    /* 7 */ val Shade7: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade7 with Double = js.native
-    /* 8 */ val Shade8: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Shade8 with Double = js.native
-    /* 0 */ val Unshaded: typings.officeDashUiDashFabricDashReact.libUtilitiesColorShadesMod.Shade.Unshaded with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Shade with Double] = js.native
+    /* 1 */ @js.native
+    object Shade1 extends TopLevel[Shade1 with Double]
+    
+    /* 2 */ @js.native
+    object Shade2 extends TopLevel[Shade2 with Double]
+    
+    /* 3 */ @js.native
+    object Shade3 extends TopLevel[Shade3 with Double]
+    
+    /* 4 */ @js.native
+    object Shade4 extends TopLevel[Shade4 with Double]
+    
+    /* 5 */ @js.native
+    object Shade5 extends TopLevel[Shade5 with Double]
+    
+    /* 6 */ @js.native
+    object Shade6 extends TopLevel[Shade6 with Double]
+    
+    /* 7 */ @js.native
+    object Shade7 extends TopLevel[Shade7 with Double]
+    
+    /* 8 */ @js.native
+    object Shade8 extends TopLevel[Shade8 with Double]
+    
+    /* 0 */ @js.native
+    object Unshaded extends TopLevel[Unshaded with Double]
+    
   }
   
 }

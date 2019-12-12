@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_firebasedynamiclinks"
-version := "1.0-dt-20190213Z-008090"
+version := "1.0-dt-20190213Z-827ea6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

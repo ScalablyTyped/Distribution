@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sw-precache-webpack-plugin"
-version := "0.11-dt-20180507Z-411658"
+version := "0.11-dt-20180507Z-492a7b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "sw-precache" % "5.2-dt-20180504Z-59b7c1",
   "org.scalablytyped" %%% "sw-toolbox" % "3.6.0-c5d473",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-bfd05e",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-f7ef3e",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-05c57b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

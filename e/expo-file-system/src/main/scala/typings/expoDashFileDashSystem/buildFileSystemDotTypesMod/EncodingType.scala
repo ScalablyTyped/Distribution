@@ -1,5 +1,8 @@
 package typings.expoDashFileDashSystem.buildFileSystemDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.Base64
+import typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.UTF8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EncodingType extends js.Object {
   @js.native
   sealed trait UTF8 extends EncodingType
   
-  /* "base64" */ val Base64: typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.Base64 with String = js.native
-  /* "utf8" */ val UTF8: typings.expoDashFileDashSystem.buildFileSystemDotTypesMod.EncodingType.UTF8 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EncodingType with String] = js.native
+  /* "base64" */ @js.native
+  object Base64 extends TopLevel[Base64 with String]
+  
+  /* "utf8" */ @js.native
+  object UTF8 extends TopLevel[UTF8 with String]
+  
 }
 

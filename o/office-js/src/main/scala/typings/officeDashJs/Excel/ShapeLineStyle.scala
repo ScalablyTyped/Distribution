@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeLineStyle.single
+import typings.officeDashJs.Excel.ShapeLineStyle.thickBetweenThin
+import typings.officeDashJs.Excel.ShapeLineStyle.thickThin
+import typings.officeDashJs.Excel.ShapeLineStyle.thinThick
+import typings.officeDashJs.Excel.ShapeLineStyle.thinThin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,12 +62,22 @@ object ShapeLineStyle extends js.Object {
   @js.native
   sealed trait thinThin extends ShapeLineStyle
   
-  /* "Single" */ val single: typings.officeDashJs.Excel.ShapeLineStyle.single with String = js.native
-  /* "ThickBetweenThin" */ val thickBetweenThin: typings.officeDashJs.Excel.ShapeLineStyle.thickBetweenThin with String = js.native
-  /* "ThickThin" */ val thickThin: typings.officeDashJs.Excel.ShapeLineStyle.thickThin with String = js.native
-  /* "ThinThick" */ val thinThick: typings.officeDashJs.Excel.ShapeLineStyle.thinThick with String = js.native
-  /* "ThinThin" */ val thinThin: typings.officeDashJs.Excel.ShapeLineStyle.thinThin with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeLineStyle with String] = js.native
+  /* "Single" */ @js.native
+  object single extends TopLevel[single with String]
+  
+  /* "ThickBetweenThin" */ @js.native
+  object thickBetweenThin extends TopLevel[thickBetweenThin with String]
+  
+  /* "ThickThin" */ @js.native
+  object thickThin extends TopLevel[thickThin with String]
+  
+  /* "ThinThick" */ @js.native
+  object thinThick extends TopLevel[thinThick with String]
+  
+  /* "ThinThin" */ @js.native
+  object thinThin extends TopLevel[thinThin with String]
+  
 }
 

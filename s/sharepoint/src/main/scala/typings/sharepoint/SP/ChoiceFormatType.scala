@@ -1,5 +1,8 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.ChoiceFormatType.dropdown
+import typings.sharepoint.SP.ChoiceFormatType.radioButtons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ChoiceFormatType extends js.Object {
   @js.native
   sealed trait radioButtons extends ChoiceFormatType
   
-  /* 0 */ val dropdown: typings.sharepoint.SP.ChoiceFormatType.dropdown with Double = js.native
-  /* 1 */ val radioButtons: typings.sharepoint.SP.ChoiceFormatType.radioButtons with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChoiceFormatType with Double] = js.native
+  /* 0 */ @js.native
+  object dropdown extends TopLevel[dropdown with Double]
+  
+  /* 1 */ @js.native
+  object radioButtons extends TopLevel[radioButtons with Double]
+  
 }
 

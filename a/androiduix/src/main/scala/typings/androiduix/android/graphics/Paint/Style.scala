@@ -1,5 +1,9 @@
 package typings.androiduix.android.graphics.Paint
 
+import org.scalablytyped.runtime.TopLevel
+import typings.androiduix.android.graphics.Paint.Style.FILL
+import typings.androiduix.android.graphics.Paint.Style.FILL_AND_STROKE
+import typings.androiduix.android.graphics.Paint.Style.STROKE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Style extends js.Object {
   @js.native
   sealed trait STROKE extends Style
   
-  /* 0 */ val FILL: typings.androiduix.android.graphics.Paint.Style.FILL with Double = js.native
-  /* 2 */ val FILL_AND_STROKE: typings.androiduix.android.graphics.Paint.Style.FILL_AND_STROKE with Double = js.native
-  /* 1 */ val STROKE: typings.androiduix.android.graphics.Paint.Style.STROKE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Style with Double] = js.native
+  /* 0 */ @js.native
+  object FILL extends TopLevel[FILL with Double]
+  
+  /* 2 */ @js.native
+  object FILL_AND_STROKE extends TopLevel[FILL_AND_STROKE with Double]
+  
+  /* 1 */ @js.native
+  object STROKE extends TopLevel[STROKE with Double]
+  
 }
 

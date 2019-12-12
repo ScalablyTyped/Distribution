@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "steam-client"
-version := "2.5-dt-20180322Z-8200c1"
+version := "2.5-dt-20180322Z-c1caa6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

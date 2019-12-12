@@ -1,5 +1,9 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.TCP
+import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.UDP
+import typings.steamDashClient.steamDashClientMod.EConnectionProtocol.WebSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EConnectionProtocol extends js.Object {
   @js.native
   sealed trait WebSocket extends EConnectionProtocol
   
-  /* 1 */ val TCP: typings.steamDashClient.steamDashClientMod.EConnectionProtocol.TCP with Double = js.native
-  /* 2 */ val UDP: typings.steamDashClient.steamDashClientMod.EConnectionProtocol.UDP with Double = js.native
-  /* 3 */ val WebSocket: typings.steamDashClient.steamDashClientMod.EConnectionProtocol.WebSocket with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EConnectionProtocol with Double] = js.native
+  /* 1 */ @js.native
+  object TCP extends TopLevel[TCP with Double]
+  
+  /* 2 */ @js.native
+  object UDP extends TopLevel[UDP with Double]
+  
+  /* 3 */ @js.native
+  object WebSocket extends TopLevel[WebSocket with Double]
+  
 }
 

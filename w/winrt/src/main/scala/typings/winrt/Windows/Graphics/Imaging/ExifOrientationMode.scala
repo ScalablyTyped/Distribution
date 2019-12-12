@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.ignoreExifOrientation
+import typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.respectExifOrientation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ExifOrientationMode extends js.Object {
   @js.native
   sealed trait respectExifOrientation extends ExifOrientationMode
   
-  /* 0 */ val ignoreExifOrientation: typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.ignoreExifOrientation with Double = js.native
-  /* 1 */ val respectExifOrientation: typings.winrt.Windows.Graphics.Imaging.ExifOrientationMode.respectExifOrientation with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExifOrientationMode with Double] = js.native
+  /* 0 */ @js.native
+  object ignoreExifOrientation extends TopLevel[ignoreExifOrientation with Double]
+  
+  /* 1 */ @js.native
+  object respectExifOrientation extends TopLevel[respectExifOrientation with Double]
+  
 }
 

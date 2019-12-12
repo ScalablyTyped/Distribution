@@ -1,5 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_ALL
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +24,16 @@ object DigressOutSlots extends js.Object {
   @js.native
   sealed trait NOT_ALLOWED extends DigressOutSlots
   
-  /* "allow_all" */ val ALLOW_ALL: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_ALL with String = js.native
-  /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING with String = js.native
-  /* "not_allowed" */ val NOT_ALLOWED: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DigressOutSlots with String] = js.native
+  /* "allow_all" */ @js.native
+  object ALLOW_ALL extends TopLevel[ALLOW_ALL with String]
+  
+  /* "allow_returning" */ @js.native
+  object ALLOW_RETURNING extends TopLevel[ALLOW_RETURNING with String]
+  
+  /* "not_allowed" */ @js.native
+  object NOT_ALLOWED extends TopLevel[NOT_ALLOWED with String]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.Machines
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object DeploymentGroupExpands extends js.Object {
   @js.native
   sealed trait None extends DeploymentGroupExpands
   
-  /* 2 */ val Machines: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.Machines with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.DeploymentGroupExpands.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentGroupExpands with Double] = js.native
+  /* 2 */ @js.native
+  object Machines extends TopLevel[Machines with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

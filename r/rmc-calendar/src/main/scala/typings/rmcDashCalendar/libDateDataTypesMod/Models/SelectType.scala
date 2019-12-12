@@ -1,5 +1,13 @@
 package typings.rmcDashCalendar.libDateDataTypesMod.Models
 
+import org.scalablytyped.runtime.TopLevel
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.All
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.End
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Middle
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.None
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Only
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Single
+import typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object SelectType extends js.Object {
   @js.native
   sealed trait Start extends SelectType
   
-  /* 2 */ val All: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.All with Double = js.native
-  /* 6 */ val End: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.End with Double = js.native
-  /* 5 */ val Middle: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Middle with Double = js.native
-  /* 0 */ val None: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.None with Double = js.native
-  /* 3 */ val Only: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Only with Double = js.native
-  /* 1 */ val Single: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Single with Double = js.native
-  /* 4 */ val Start: typings.rmcDashCalendar.libDateDataTypesMod.Models.SelectType.Start with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectType with Double] = js.native
+  /* 2 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 6 */ @js.native
+  object End extends TopLevel[End with Double]
+  
+  /* 5 */ @js.native
+  object Middle extends TopLevel[Middle with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Only extends TopLevel[Only with Double]
+  
+  /* 1 */ @js.native
+  object Single extends TopLevel[Single with Double]
+  
+  /* 4 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
 }
 

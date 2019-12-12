@@ -1,5 +1,11 @@
 package typings.gulpDashTypescript.releaseInputMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Deleted
+import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Equal
+import typings.gulpDashTypescript.releaseInputMod.FileChangeState.Modified
+import typings.gulpDashTypescript.releaseInputMod.FileChangeState.New
+import typings.gulpDashTypescript.releaseInputMod.FileChangeState.NotFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object FileChangeState extends js.Object {
   @js.native
   sealed trait NotFound extends FileChangeState
   
-  /* 3 */ val Deleted: typings.gulpDashTypescript.releaseInputMod.FileChangeState.Deleted with Double = js.native
-  /* 1 */ val Equal: typings.gulpDashTypescript.releaseInputMod.FileChangeState.Equal with Double = js.native
-  /* 2 */ val Modified: typings.gulpDashTypescript.releaseInputMod.FileChangeState.Modified with Double = js.native
-  /* 0 */ val New: typings.gulpDashTypescript.releaseInputMod.FileChangeState.New with Double = js.native
-  /* 4 */ val NotFound: typings.gulpDashTypescript.releaseInputMod.FileChangeState.NotFound with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FileChangeState with Double] = js.native
+  /* 3 */ @js.native
+  object Deleted extends TopLevel[Deleted with Double]
+  
+  /* 1 */ @js.native
+  object Equal extends TopLevel[Equal with Double]
+  
+  /* 2 */ @js.native
+  object Modified extends TopLevel[Modified with Double]
+  
+  /* 0 */ @js.native
+  object New extends TopLevel[New with Double]
+  
+  /* 4 */ @js.native
+  object NotFound extends TopLevel[NotFound with Double]
+  
 }
 

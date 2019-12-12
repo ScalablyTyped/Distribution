@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.Kanban
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Kanban.EditingType.Dropdown
+import typings.ejDotWebDotAll.ej.Kanban.EditingType.Numeric
+import typings.ejDotWebDotAll.ej.Kanban.EditingType.String
+import typings.ejDotWebDotAll.ej.Kanban.EditingType.TextArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +43,31 @@ object EditingType extends js.Object {
   @js.native
   sealed trait TextArea extends EditingType
   
-  /* 3 */ val DatePicker: typings.ejDotWebDotAll.ej.Kanban.EditingType.DatePicker with Double = js.native
-  /* 4 */ val DateTimePicker: typings.ejDotWebDotAll.ej.Kanban.EditingType.DateTimePicker with Double = js.native
-  /* 2 */ val Dropdown: typings.ejDotWebDotAll.ej.Kanban.EditingType.Dropdown with Double = js.native
-  /* 1 */ val Numeric: typings.ejDotWebDotAll.ej.Kanban.EditingType.Numeric with Double = js.native
-  /* 6 */ val RTE: typings.ejDotWebDotAll.ej.Kanban.EditingType.RTE with Double = js.native
-  /* 0 */ val String: typings.ejDotWebDotAll.ej.Kanban.EditingType.String with Double = js.native
-  /* 5 */ val TextArea: typings.ejDotWebDotAll.ej.Kanban.EditingType.TextArea with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditingType with Double] = js.native
+  /* 3 */ @js.native
+  object DatePicker
+    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.DatePicker with Double]
+  
+  /* 4 */ @js.native
+  object DateTimePicker
+    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.DateTimePicker with Double]
+  
+  /* 2 */ @js.native
+  object Dropdown extends TopLevel[Dropdown with Double]
+  
+  /* 1 */ @js.native
+  object Numeric extends TopLevel[Numeric with Double]
+  
+  /* 6 */ @js.native
+  object RTE
+    extends TopLevel[typings.ejDotWebDotAll.ej.Kanban.EditingType.RTE with Double]
+  
+  /* 0 */ @js.native
+  object String extends TopLevel[String with Double]
+  
+  /* 5 */ @js.native
+  object TextArea extends TopLevel[TextArea with Double]
+  
 }
 

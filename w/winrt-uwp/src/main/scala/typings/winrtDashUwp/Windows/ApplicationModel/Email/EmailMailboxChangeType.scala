@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.changeTrackingLost
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderCreated
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderDeleted
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderModified
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageCreated
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageDeleted
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object EmailMailboxChangeType extends js.Object {
   @js.native
   sealed trait messageModified extends EmailMailboxChangeType
   
-  /* 6 */ val changeTrackingLost: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.changeTrackingLost with Double = js.native
-  /* 3 */ val folderCreated: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderCreated with Double = js.native
-  /* 5 */ val folderDeleted: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderDeleted with Double = js.native
-  /* 4 */ val folderModified: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.folderModified with Double = js.native
-  /* 0 */ val messageCreated: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageCreated with Double = js.native
-  /* 2 */ val messageDeleted: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageDeleted with Double = js.native
-  /* 1 */ val messageModified: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxChangeType.messageModified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxChangeType with Double] = js.native
+  /* 6 */ @js.native
+  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
+  
+  /* 3 */ @js.native
+  object folderCreated extends TopLevel[folderCreated with Double]
+  
+  /* 5 */ @js.native
+  object folderDeleted extends TopLevel[folderDeleted with Double]
+  
+  /* 4 */ @js.native
+  object folderModified extends TopLevel[folderModified with Double]
+  
+  /* 0 */ @js.native
+  object messageCreated extends TopLevel[messageCreated with Double]
+  
+  /* 2 */ @js.native
+  object messageDeleted extends TopLevel[messageDeleted with Double]
+  
+  /* 1 */ @js.native
+  object messageModified extends TopLevel[messageModified with Double]
+  
 }
 

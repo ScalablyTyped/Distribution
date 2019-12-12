@@ -1,5 +1,9 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.ZoomControlStyle.DEFAULT
+import typings.googlemaps.google.maps.ZoomControlStyle.LARGE
+import typings.googlemaps.google.maps.ZoomControlStyle.SMALL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ZoomControlStyle extends js.Object {
   @js.native
   sealed trait SMALL extends ZoomControlStyle
   
-  /* 0 */ val DEFAULT: typings.googlemaps.google.maps.ZoomControlStyle.DEFAULT with Double = js.native
-  /* 2 */ val LARGE: typings.googlemaps.google.maps.ZoomControlStyle.LARGE with Double = js.native
-  /* 1 */ val SMALL: typings.googlemaps.google.maps.ZoomControlStyle.SMALL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ZoomControlStyle with Double] = js.native
+  /* 0 */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with Double]
+  
+  /* 2 */ @js.native
+  object LARGE extends TopLevel[LARGE with Double]
+  
+  /* 1 */ @js.native
+  object SMALL extends TopLevel[SMALL with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartSplitType.splitByCustomSplit
+import typings.officeDashJs.Excel.ChartSplitType.splitByPercentValue
+import typings.officeDashJs.Excel.ChartSplitType.splitByPosition
+import typings.officeDashJs.Excel.ChartSplitType.splitByValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ChartSplitType extends js.Object {
   @js.native
   sealed trait splitByValue extends ChartSplitType
   
-  /* "SplitByCustomSplit" */ val splitByCustomSplit: typings.officeDashJs.Excel.ChartSplitType.splitByCustomSplit with String = js.native
-  /* "SplitByPercentValue" */ val splitByPercentValue: typings.officeDashJs.Excel.ChartSplitType.splitByPercentValue with String = js.native
-  /* "SplitByPosition" */ val splitByPosition: typings.officeDashJs.Excel.ChartSplitType.splitByPosition with String = js.native
-  /* "SplitByValue" */ val splitByValue: typings.officeDashJs.Excel.ChartSplitType.splitByValue with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartSplitType with String] = js.native
+  /* "SplitByCustomSplit" */ @js.native
+  object splitByCustomSplit extends TopLevel[splitByCustomSplit with String]
+  
+  /* "SplitByPercentValue" */ @js.native
+  object splitByPercentValue extends TopLevel[splitByPercentValue with String]
+  
+  /* "SplitByPosition" */ @js.native
+  object splitByPosition extends TopLevel[splitByPosition with String]
+  
+  /* "SplitByValue" */ @js.native
+  object splitByValue extends TopLevel[splitByValue with String]
+  
 }
 

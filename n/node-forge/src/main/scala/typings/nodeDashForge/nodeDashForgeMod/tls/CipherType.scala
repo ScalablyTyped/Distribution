@@ -1,5 +1,9 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.aead
+import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.block
+import typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object CipherType extends js.Object {
   @js.native
   sealed trait stream extends CipherType
   
-  /* 2 */ val aead: typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.aead with Double = js.native
-  /* 1 */ val block: typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.block with Double = js.native
-  /* 0 */ val stream: typings.nodeDashForge.nodeDashForgeMod.tls.CipherType.stream with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CipherType with Double] = js.native
+  /* 2 */ @js.native
+  object aead extends TopLevel[aead with Double]
+  
+  /* 1 */ @js.native
+  object block extends TopLevel[block with Double]
+  
+  /* 0 */ @js.native
+  object stream extends TopLevel[stream with Double]
+  
 }
 

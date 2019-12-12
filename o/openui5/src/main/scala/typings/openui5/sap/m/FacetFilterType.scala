@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.FacetFilterType.Light
+import typings.openui5.sap.m.FacetFilterType.Simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object FacetFilterType extends js.Object {
   @js.native
   sealed trait Simple extends FacetFilterType
   
-  /* 0 */ val Light: typings.openui5.sap.m.FacetFilterType.Light with Double = js.native
-  /* 1 */ val Simple: typings.openui5.sap.m.FacetFilterType.Simple with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FacetFilterType with Double] = js.native
+  /* 0 */ @js.native
+  object Light extends TopLevel[Light with Double]
+  
+  /* 1 */ @js.native
+  object Simple extends TopLevel[Simple with Double]
+  
 }
 

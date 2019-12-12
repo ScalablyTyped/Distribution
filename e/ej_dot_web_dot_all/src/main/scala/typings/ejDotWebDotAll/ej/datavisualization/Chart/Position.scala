@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Bottom
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Left
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Right
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object Position extends js.Object {
   @js.native
   sealed trait Top extends Position
   
-  /* 3 */ val Bottom: typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Bottom with Double = js.native
-  /* 0 */ val Left: typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Left with Double = js.native
-  /* 1 */ val Right: typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Right with Double = js.native
-  /* 2 */ val Top: typings.ejDotWebDotAll.ej.datavisualization.Chart.Position.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Position with Double] = js.native
+  /* 3 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 1 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
+  /* 2 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

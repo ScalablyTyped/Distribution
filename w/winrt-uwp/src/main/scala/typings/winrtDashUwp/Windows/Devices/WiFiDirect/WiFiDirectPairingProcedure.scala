@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.groupOwnerNegotiation
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.invitation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object WiFiDirectPairingProcedure extends js.Object {
   @js.native
   sealed trait invitation extends WiFiDirectPairingProcedure
   
-  /* 0 */ val groupOwnerNegotiation: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.groupOwnerNegotiation with Double = js.native
-  /* 1 */ val invitation: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectPairingProcedure.invitation with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectPairingProcedure with Double] = js.native
+  /* 0 */ @js.native
+  object groupOwnerNegotiation extends TopLevel[groupOwnerNegotiation with Double]
+  
+  /* 1 */ @js.native
+  object invitation extends TopLevel[invitation with Double]
+  
 }
 

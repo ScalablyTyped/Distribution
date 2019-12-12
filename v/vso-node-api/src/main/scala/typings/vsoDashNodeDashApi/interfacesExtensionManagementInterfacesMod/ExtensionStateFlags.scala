@@ -1,5 +1,17 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.AutoUpgradeError
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.BuiltIn
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Disabled
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Error
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.MultiVersion
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.NeedsReauthorization
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.None
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Trusted
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.UnInstalled
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.VersionCheckError
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,18 +88,40 @@ object ExtensionStateFlags extends js.Object {
   @js.native
   sealed trait Warning extends ExtensionStateFlags
   
-  /* 256 */ val AutoUpgradeError: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.AutoUpgradeError with Double = js.native
-  /* 2 */ val BuiltIn: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.BuiltIn with Double = js.native
-  /* 1 */ val Disabled: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Disabled with Double = js.native
-  /* 64 */ val Error: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Error with Double = js.native
-  /* 4 */ val MultiVersion: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.MultiVersion with Double = js.native
-  /* 128 */ val NeedsReauthorization: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.NeedsReauthorization with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.None with Double = js.native
-  /* 32 */ val Trusted: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Trusted with Double = js.native
-  /* 8 */ val UnInstalled: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.UnInstalled with Double = js.native
-  /* 16 */ val VersionCheckError: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.VersionCheckError with Double = js.native
-  /* 512 */ val Warning: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionStateFlags.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionStateFlags with Double] = js.native
+  /* 256 */ @js.native
+  object AutoUpgradeError extends TopLevel[AutoUpgradeError with Double]
+  
+  /* 2 */ @js.native
+  object BuiltIn extends TopLevel[BuiltIn with Double]
+  
+  /* 1 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 64 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 4 */ @js.native
+  object MultiVersion extends TopLevel[MultiVersion with Double]
+  
+  /* 128 */ @js.native
+  object NeedsReauthorization extends TopLevel[NeedsReauthorization with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 32 */ @js.native
+  object Trusted extends TopLevel[Trusted with Double]
+  
+  /* 8 */ @js.native
+  object UnInstalled extends TopLevel[UnInstalled with Double]
+  
+  /* 16 */ @js.native
+  object VersionCheckError extends TopLevel[VersionCheckError with Double]
+  
+  /* 512 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

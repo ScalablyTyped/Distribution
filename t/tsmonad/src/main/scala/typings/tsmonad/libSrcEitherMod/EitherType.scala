@@ -1,5 +1,8 @@
 package typings.tsmonad.libSrcEitherMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tsmonad.libSrcEitherMod.EitherType.Left
+import typings.tsmonad.libSrcEitherMod.EitherType.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EitherType extends js.Object {
   @js.native
   sealed trait Right extends EitherType
   
-  /* 0 */ val Left: typings.tsmonad.libSrcEitherMod.EitherType.Left with Double = js.native
-  /* 1 */ val Right: typings.tsmonad.libSrcEitherMod.EitherType.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EitherType with Double] = js.native
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 1 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

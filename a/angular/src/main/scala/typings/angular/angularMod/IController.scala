@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   * https://docs.angularjs.org/guide/component
   */
+@js.native
 trait IController
   extends // IController implementations frequently do not implement any of its methods.
 // A string indexer indicates to TypeScript not to issue a weak type error in this case.
@@ -24,7 +25,7 @@ trait IController
     * you must store the previous value(s) for comparison to the current values.
     */
   @JSName("$doCheck")
-  var $doCheck: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var $doCheck: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Called whenever one-way bindings are updated. The onChangesObj is a hash whose keys are the names of the bound
     * properties that have changed, and the values are an {@link IChangesObject} object  of the form
@@ -32,20 +33,20 @@ trait IController
     * cloning the bound value to prevent accidental mutation of the outer value.
     */
   @JSName("$onChanges")
-  var $onChanges: js.UndefOr[js.Function1[/* onChangesObj */ IOnChangesObject, Unit]] = js.undefined
+  var $onChanges: js.UndefOr[js.Function1[/* onChangesObj */ IOnChangesObject, Unit]] = js.native
   /**
     * Called on a controller when its containing scope is destroyed. Use this hook for releasing external resources,
     * watches and event handlers.
     */
   @JSName("$onDestroy")
-  var $onDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var $onDestroy: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Called on each controller after all the controllers on an element have been constructed and had their bindings
     * initialized (and before the pre & post linking functions for the directives on this element). This is a good
     * place to put initialization code for your controller.
     */
   @JSName("$onInit")
-  var $onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var $onInit: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Called after this controller's element and its children have been linked. Similar to the post-link function this
     * hook can be used to set up DOM event handlers and do direct DOM manipulation. Note that child elements that contain
@@ -55,29 +56,6 @@ trait IController
     * different in Angular 1 there is no direct mapping and care should be taken when upgrading.
     */
   @JSName("$postLink")
-  var $postLink: js.UndefOr[js.Function0[Unit]] = js.undefined
-}
-
-object IController {
-  @scala.inline
-  def apply(
-    $doCheck: () => Unit = null,
-    $onChanges: /* onChangesObj */ IOnChangesObject => Unit = null,
-    $onDestroy: () => Unit = null,
-    $onInit: () => Unit = null,
-    $postLink: () => Unit = null,
-    StringDictionary: // IController implementations frequently do not implement any of its methods.
-  // A string indexer indicates to TypeScript not to issue a weak type error in this case.
-  /* s */ StringDictionary[js.Any] = null
-  ): IController = {
-    val __obj = js.Dynamic.literal()
-    if ($doCheck != null) __obj.updateDynamic("$doCheck")(js.Any.fromFunction0($doCheck))
-    if ($onChanges != null) __obj.updateDynamic("$onChanges")(js.Any.fromFunction1($onChanges))
-    if ($onDestroy != null) __obj.updateDynamic("$onDestroy")(js.Any.fromFunction0($onDestroy))
-    if ($onInit != null) __obj.updateDynamic("$onInit")(js.Any.fromFunction0($onInit))
-    if ($postLink != null) __obj.updateDynamic("$postLink")(js.Any.fromFunction0($postLink))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[IController]
-  }
+  var $postLink: js.UndefOr[js.Function0[Unit]] = js.native
 }
 

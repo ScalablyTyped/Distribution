@@ -1,5 +1,8 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialPostType.reply
+import typings.sharepoint.SP.Social.SocialPostType.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SocialPostType extends js.Object {
   @js.native
   sealed trait root extends SocialPostType
   
-  /* 1 */ val reply: typings.sharepoint.SP.Social.SocialPostType.reply with Double = js.native
-  /* 0 */ val root: typings.sharepoint.SP.Social.SocialPostType.root with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialPostType with Double] = js.native
+  /* 1 */ @js.native
+  object reply extends TopLevel[reply with Double]
+  
+  /* 0 */ @js.native
+  object root extends TopLevel[root with Double]
+  
 }
 

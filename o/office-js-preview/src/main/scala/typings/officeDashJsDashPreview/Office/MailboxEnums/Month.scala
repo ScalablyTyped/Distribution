@@ -1,5 +1,18 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Apr
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Aug
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Dec
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Feb
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jan
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jul
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jun
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Mar
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.May
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Nov
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Oct
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Sep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,19 +104,43 @@ object Month extends js.Object {
   @js.native
   sealed trait Sep extends Month
   
-  /* "apr" */ val Apr: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Apr with String = js.native
-  /* "aug" */ val Aug: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Aug with String = js.native
-  /* "dec" */ val Dec: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Dec with String = js.native
-  /* "feb" */ val Feb: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Feb with String = js.native
-  /* "jan" */ val Jan: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jan with String = js.native
-  /* "jul" */ val Jul: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jul with String = js.native
-  /* "jun" */ val Jun: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Jun with String = js.native
-  /* "mar" */ val Mar: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Mar with String = js.native
-  /* "may" */ val May: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.May with String = js.native
-  /* "nov" */ val Nov: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Nov with String = js.native
-  /* "oct" */ val Oct: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Oct with String = js.native
-  /* "sep" */ val Sep: typings.officeDashJsDashPreview.Office.MailboxEnums.Month.Sep with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Month with String] = js.native
+  /* "apr" */ @js.native
+  object Apr extends TopLevel[Apr with String]
+  
+  /* "aug" */ @js.native
+  object Aug extends TopLevel[Aug with String]
+  
+  /* "dec" */ @js.native
+  object Dec extends TopLevel[Dec with String]
+  
+  /* "feb" */ @js.native
+  object Feb extends TopLevel[Feb with String]
+  
+  /* "jan" */ @js.native
+  object Jan extends TopLevel[Jan with String]
+  
+  /* "jul" */ @js.native
+  object Jul extends TopLevel[Jul with String]
+  
+  /* "jun" */ @js.native
+  object Jun extends TopLevel[Jun with String]
+  
+  /* "mar" */ @js.native
+  object Mar extends TopLevel[Mar with String]
+  
+  /* "may" */ @js.native
+  object May extends TopLevel[May with String]
+  
+  /* "nov" */ @js.native
+  object Nov extends TopLevel[Nov with String]
+  
+  /* "oct" */ @js.native
+  object Oct extends TopLevel[Oct with String]
+  
+  /* "sep" */ @js.native
+  object Sep extends TopLevel[Sep with String]
+  
 }
 

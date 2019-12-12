@@ -1,5 +1,14 @@
 package typings.zui
 
+import org.scalablytyped.runtime.TopLevel
+import typings.zui.MessagerTypeEnum.danger
+import typings.zui.MessagerTypeEnum.default
+import typings.zui.MessagerTypeEnum.important
+import typings.zui.MessagerTypeEnum.info
+import typings.zui.MessagerTypeEnum.primary
+import typings.zui.MessagerTypeEnum.special
+import typings.zui.MessagerTypeEnum.success
+import typings.zui.MessagerTypeEnum.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object MessagerTypeEnum extends js.Object {
   @js.native
   sealed trait warning extends MessagerTypeEnum
   
-  /* 5 */ val danger: typings.zui.MessagerTypeEnum.danger with Double = js.native
-  /* 0 */ val default: typings.zui.MessagerTypeEnum.default with Double = js.native
-  /* 6 */ val important: typings.zui.MessagerTypeEnum.important with Double = js.native
-  /* 3 */ val info: typings.zui.MessagerTypeEnum.info with Double = js.native
-  /* 1 */ val primary: typings.zui.MessagerTypeEnum.primary with Double = js.native
-  /* 7 */ val special: typings.zui.MessagerTypeEnum.special with Double = js.native
-  /* 2 */ val success: typings.zui.MessagerTypeEnum.success with Double = js.native
-  /* 4 */ val warning: typings.zui.MessagerTypeEnum.warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MessagerTypeEnum with Double] = js.native
+  /* 5 */ @js.native
+  object danger extends TopLevel[danger with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 6 */ @js.native
+  object important extends TopLevel[important with Double]
+  
+  /* 3 */ @js.native
+  object info extends TopLevel[info with Double]
+  
+  /* 1 */ @js.native
+  object primary extends TopLevel[primary with Double]
+  
+  /* 7 */ @js.native
+  object special extends TopLevel[special with Double]
+  
+  /* 2 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 4 */ @js.native
+  object warning extends TopLevel[warning with Double]
+  
 }
 

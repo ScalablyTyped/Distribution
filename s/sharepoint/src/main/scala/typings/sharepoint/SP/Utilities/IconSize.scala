@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Utilities.IconSize.size16
+import typings.sharepoint.SP.Utilities.IconSize.size256
+import typings.sharepoint.SP.Utilities.IconSize.size32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object IconSize extends js.Object {
   @js.native
   sealed trait size32 extends IconSize
   
-  /* 0 */ val size16: typings.sharepoint.SP.Utilities.IconSize.size16 with Double = js.native
-  /* 2 */ val size256: typings.sharepoint.SP.Utilities.IconSize.size256 with Double = js.native
-  /* 1 */ val size32: typings.sharepoint.SP.Utilities.IconSize.size32 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IconSize with Double] = js.native
+  /* 0 */ @js.native
+  object size16 extends TopLevel[size16 with Double]
+  
+  /* 2 */ @js.native
+  object size256 extends TopLevel[size256 with Double]
+  
+  /* 1 */ @js.native
+  object size32 extends TopLevel[size32 with Double]
+  
 }
 

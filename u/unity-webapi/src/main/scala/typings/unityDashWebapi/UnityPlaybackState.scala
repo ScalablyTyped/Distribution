@@ -1,5 +1,8 @@
 package typings.unityDashWebapi
 
+import org.scalablytyped.runtime.TopLevel
+import typings.unityDashWebapi.UnityPlaybackState.Paused
+import typings.unityDashWebapi.UnityPlaybackState.Playing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object UnityPlaybackState extends js.Object {
   @js.native
   sealed trait Playing extends UnityPlaybackState
   
-  /* 1 */ val Paused: typings.unityDashWebapi.UnityPlaybackState.Paused with Double = js.native
-  /* 0 */ val Playing: typings.unityDashWebapi.UnityPlaybackState.Playing with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnityPlaybackState with Double] = js.native
+  /* 1 */ @js.native
+  object Paused extends TopLevel[Paused with Double]
+  
+  /* 0 */ @js.native
+  object Playing extends TopLevel[Playing with Double]
+  
 }
 

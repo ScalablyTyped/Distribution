@@ -1,5 +1,16 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.publicKey.aedh
+import typings.openpgp.openpgpMod.enums.publicKey.aedsa
+import typings.openpgp.openpgpMod.enums.publicKey.dsa
+import typings.openpgp.openpgpMod.enums.publicKey.ecdh
+import typings.openpgp.openpgpMod.enums.publicKey.ecdsa
+import typings.openpgp.openpgpMod.enums.publicKey.eddsa
+import typings.openpgp.openpgpMod.enums.publicKey.elgamal
+import typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt
+import typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt_sign
+import typings.openpgp.openpgpMod.enums.publicKey.rsa_sign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,17 +85,37 @@ object publicKey extends js.Object {
   @js.native
   sealed trait rsa_sign extends publicKey
   
-  /* 23 */ val aedh: typings.openpgp.openpgpMod.enums.publicKey.aedh with Double = js.native
-  /* 24 */ val aedsa: typings.openpgp.openpgpMod.enums.publicKey.aedsa with Double = js.native
-  /* 17 */ val dsa: typings.openpgp.openpgpMod.enums.publicKey.dsa with Double = js.native
-  /* 18 */ val ecdh: typings.openpgp.openpgpMod.enums.publicKey.ecdh with Double = js.native
-  /* 19 */ val ecdsa: typings.openpgp.openpgpMod.enums.publicKey.ecdsa with Double = js.native
-  /* 22 */ val eddsa: typings.openpgp.openpgpMod.enums.publicKey.eddsa with Double = js.native
-  /* 16 */ val elgamal: typings.openpgp.openpgpMod.enums.publicKey.elgamal with Double = js.native
-  /* 2 */ val rsa_encrypt: typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt with Double = js.native
-  /* 1 */ val rsa_encrypt_sign: typings.openpgp.openpgpMod.enums.publicKey.rsa_encrypt_sign with Double = js.native
-  /* 3 */ val rsa_sign: typings.openpgp.openpgpMod.enums.publicKey.rsa_sign with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[publicKey with Double] = js.native
+  /* 23 */ @js.native
+  object aedh extends TopLevel[aedh with Double]
+  
+  /* 24 */ @js.native
+  object aedsa extends TopLevel[aedsa with Double]
+  
+  /* 17 */ @js.native
+  object dsa extends TopLevel[dsa with Double]
+  
+  /* 18 */ @js.native
+  object ecdh extends TopLevel[ecdh with Double]
+  
+  /* 19 */ @js.native
+  object ecdsa extends TopLevel[ecdsa with Double]
+  
+  /* 22 */ @js.native
+  object eddsa extends TopLevel[eddsa with Double]
+  
+  /* 16 */ @js.native
+  object elgamal extends TopLevel[elgamal with Double]
+  
+  /* 2 */ @js.native
+  object rsa_encrypt extends TopLevel[rsa_encrypt with Double]
+  
+  /* 1 */ @js.native
+  object rsa_encrypt_sign extends TopLevel[rsa_encrypt_sign with Double]
+  
+  /* 3 */ @js.native
+  object rsa_sign extends TopLevel[rsa_sign with Double]
+  
 }
 

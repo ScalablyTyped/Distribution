@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatusType.any
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatusType.available
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object RemoteSystemStatusType extends js.Object {
   @js.native
   sealed trait available extends RemoteSystemStatusType
   
-  /* 0 */ val any: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatusType.any with Double = js.native
-  /* 1 */ val available: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatusType.available with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RemoteSystemStatusType with Double] = js.native
+  /* 0 */ @js.native
+  object any extends TopLevel[any with Double]
+  
+  /* 1 */ @js.native
+  object available extends TopLevel[available with Double]
+  
 }
 

@@ -1,5 +1,18 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.AutoFillType.fillCopy
+import typings.officeDashJs.Excel.AutoFillType.fillDays
+import typings.officeDashJs.Excel.AutoFillType.fillDefault
+import typings.officeDashJs.Excel.AutoFillType.fillFormats
+import typings.officeDashJs.Excel.AutoFillType.fillMonths
+import typings.officeDashJs.Excel.AutoFillType.fillSeries
+import typings.officeDashJs.Excel.AutoFillType.fillValues
+import typings.officeDashJs.Excel.AutoFillType.fillWeekdays
+import typings.officeDashJs.Excel.AutoFillType.fillYears
+import typings.officeDashJs.Excel.AutoFillType.flashFill
+import typings.officeDashJs.Excel.AutoFillType.growthTrend
+import typings.officeDashJs.Excel.AutoFillType.linearTrend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,19 +62,43 @@ object AutoFillType extends js.Object {
   @js.native
   sealed trait linearTrend extends AutoFillType
   
-  /* "FillCopy" */ val fillCopy: typings.officeDashJs.Excel.AutoFillType.fillCopy with String = js.native
-  /* "FillDays" */ val fillDays: typings.officeDashJs.Excel.AutoFillType.fillDays with String = js.native
-  /* "FillDefault" */ val fillDefault: typings.officeDashJs.Excel.AutoFillType.fillDefault with String = js.native
-  /* "FillFormats" */ val fillFormats: typings.officeDashJs.Excel.AutoFillType.fillFormats with String = js.native
-  /* "FillMonths" */ val fillMonths: typings.officeDashJs.Excel.AutoFillType.fillMonths with String = js.native
-  /* "FillSeries" */ val fillSeries: typings.officeDashJs.Excel.AutoFillType.fillSeries with String = js.native
-  /* "FillValues" */ val fillValues: typings.officeDashJs.Excel.AutoFillType.fillValues with String = js.native
-  /* "FillWeekdays" */ val fillWeekdays: typings.officeDashJs.Excel.AutoFillType.fillWeekdays with String = js.native
-  /* "FillYears" */ val fillYears: typings.officeDashJs.Excel.AutoFillType.fillYears with String = js.native
-  /* "FlashFill" */ val flashFill: typings.officeDashJs.Excel.AutoFillType.flashFill with String = js.native
-  /* "GrowthTrend" */ val growthTrend: typings.officeDashJs.Excel.AutoFillType.growthTrend with String = js.native
-  /* "LinearTrend" */ val linearTrend: typings.officeDashJs.Excel.AutoFillType.linearTrend with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AutoFillType with String] = js.native
+  /* "FillCopy" */ @js.native
+  object fillCopy extends TopLevel[fillCopy with String]
+  
+  /* "FillDays" */ @js.native
+  object fillDays extends TopLevel[fillDays with String]
+  
+  /* "FillDefault" */ @js.native
+  object fillDefault extends TopLevel[fillDefault with String]
+  
+  /* "FillFormats" */ @js.native
+  object fillFormats extends TopLevel[fillFormats with String]
+  
+  /* "FillMonths" */ @js.native
+  object fillMonths extends TopLevel[fillMonths with String]
+  
+  /* "FillSeries" */ @js.native
+  object fillSeries extends TopLevel[fillSeries with String]
+  
+  /* "FillValues" */ @js.native
+  object fillValues extends TopLevel[fillValues with String]
+  
+  /* "FillWeekdays" */ @js.native
+  object fillWeekdays extends TopLevel[fillWeekdays with String]
+  
+  /* "FillYears" */ @js.native
+  object fillYears extends TopLevel[fillYears with String]
+  
+  /* "FlashFill" */ @js.native
+  object flashFill extends TopLevel[flashFill with String]
+  
+  /* "GrowthTrend" */ @js.native
+  object growthTrend extends TopLevel[growthTrend with String]
+  
+  /* "LinearTrend" */ @js.native
+  object linearTrend extends TopLevel[linearTrend with String]
+  
 }
 

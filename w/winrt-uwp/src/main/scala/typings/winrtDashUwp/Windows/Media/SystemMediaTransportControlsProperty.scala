@@ -1,5 +1,7 @@
 package typings.winrtDashUwp.Windows.Media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsProperty.soundLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +17,10 @@ object SystemMediaTransportControlsProperty extends js.Object {
   @js.native
   sealed trait soundLevel extends SystemMediaTransportControlsProperty
   
-  /* 0 */ val soundLevel: typings.winrtDashUwp.Windows.Media.SystemMediaTransportControlsProperty.soundLevel with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SystemMediaTransportControlsProperty with Double] = js.native
+  /* 0 */ @js.native
+  object soundLevel extends TopLevel[soundLevel with Double]
+  
 }
 

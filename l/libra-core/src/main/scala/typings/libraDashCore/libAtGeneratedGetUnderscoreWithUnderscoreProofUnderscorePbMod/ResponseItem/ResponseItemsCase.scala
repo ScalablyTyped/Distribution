@@ -1,5 +1,11 @@
 package typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_STATE_RESPONSE
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_TRANSACTIONS_RESPONSE
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.RESPONSEITEMS_NOT_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ResponseItemsCase extends js.Object {
   @js.native
   sealed trait RESPONSEITEMS_NOT_SET extends ResponseItemsCase
   
-  /* 3 */ val GET_ACCOUNT_STATE_RESPONSE: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_STATE_RESPONSE with Double = js.native
-  /* 4 */ val GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE with Double = js.native
-  /* 5 */ val GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE with Double = js.native
-  /* 6 */ val GET_TRANSACTIONS_RESPONSE: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.GET_TRANSACTIONS_RESPONSE with Double = js.native
-  /* 0 */ val RESPONSEITEMS_NOT_SET: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.ResponseItem.ResponseItemsCase.RESPONSEITEMS_NOT_SET with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResponseItemsCase with Double] = js.native
+  /* 3 */ @js.native
+  object GET_ACCOUNT_STATE_RESPONSE extends TopLevel[GET_ACCOUNT_STATE_RESPONSE with Double]
+  
+  /* 4 */ @js.native
+  object GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE extends TopLevel[GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_RESPONSE with Double]
+  
+  /* 5 */ @js.native
+  object GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE extends TopLevel[GET_EVENTS_BY_EVENT_ACCESS_PATH_RESPONSE with Double]
+  
+  /* 6 */ @js.native
+  object GET_TRANSACTIONS_RESPONSE extends TopLevel[GET_TRANSACTIONS_RESPONSE with Double]
+  
+  /* 0 */ @js.native
+  object RESPONSEITEMS_NOT_SET extends TopLevel[RESPONSEITEMS_NOT_SET with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Required
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Supported
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object SupportLevel extends js.Object {
   @js.native
   sealed trait Unsupported extends SupportLevel
   
-  /* 2 */ val Required: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Required with Double = js.native
-  /* 1 */ val Supported: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Supported with Double = js.native
-  /* 0 */ val Unsupported: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.SupportLevel.Unsupported with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SupportLevel with Double] = js.native
+  /* 2 */ @js.native
+  object Required extends TopLevel[Required with Double]
+  
+  /* 1 */ @js.native
+  object Supported extends TopLevel[Supported with Double]
+  
+  /* 0 */ @js.native
+  object Unsupported extends TopLevel[Unsupported with Double]
+  
 }
 

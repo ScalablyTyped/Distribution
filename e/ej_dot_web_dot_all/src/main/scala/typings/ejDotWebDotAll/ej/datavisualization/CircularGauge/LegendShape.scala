@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Diamond
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Ellipse
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Line
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Pentagon
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Rectangle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Trapezoid
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,16 +55,37 @@ object LegendShape extends js.Object {
   @js.native
   sealed trait Triangle extends LegendShape
   
-  /* 1 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Circle with Double = js.native
-  /* 4 */ val Diamond: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Diamond with Double = js.native
-  /* 3 */ val Ellipse: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Ellipse with Double = js.native
-  /* 8 */ val Line: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Line with Double = js.native
-  /* 5 */ val Pentagon: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Pentagon with Double = js.native
-  /* 0 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Rectangle with Double = js.native
-  /* 6 */ val Slider: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Slider with Double = js.native
-  /* 7 */ val Trapezoid: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Trapezoid with Double = js.native
-  /* 2 */ val Triangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Triangle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LegendShape with Double] = js.native
+  /* 1 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 4 */ @js.native
+  object Diamond extends TopLevel[Diamond with Double]
+  
+  /* 3 */ @js.native
+  object Ellipse extends TopLevel[Ellipse with Double]
+  
+  /* 8 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 5 */ @js.native
+  object Pentagon extends TopLevel[Pentagon with Double]
+  
+  /* 0 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
+  /* 6 */ @js.native
+  object Slider
+    extends TopLevel[
+          typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.LegendShape.Slider with Double
+        ]
+  
+  /* 7 */ @js.native
+  object Trapezoid extends TopLevel[Trapezoid with Double]
+  
+  /* 2 */ @js.native
+  object Triangle extends TopLevel[Triangle with Double]
+  
 }
 

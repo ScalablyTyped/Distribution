@@ -3,6 +3,7 @@ package typings.jestDashUtil
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
 import typings.atJestConsole.atJestConsoleMod.CustomConsole
 import typings.atJestConsole.buildTypesMod.LogEntry
 import typings.atJestFakeDashTimers.Anon_Config
@@ -51,15 +52,6 @@ object jestDashUtilMod extends js.Object {
     extends typings.atJestConsole.atJestConsoleMod.NullConsole
   
   var BufferedConsole: TypeofClassBufferedConsole = js.native
-  var Console: Instantiable2[/* stdout */ WritableStream, /* stderr */ WritableStream, CustomConsole] = js.native
-  var ErrorWithStack: Instantiable2[/* message */ js.UndefOr[String], /* callsite */ js.Function, default] = js.native
-  var FakeTimers: Instantiable1[
-    /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ Anon_Config[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam TimerRef */ js.Any
-    ], 
-    JestFakeTimers[js.Object]
-  ] = js.native
-  var NullConsole: Instantiable0[typings.atJestConsole.atJestConsoleMod.NullConsole] = js.native
   @JSName("convertDescriptorToString")
   var convertDescriptorToString_Original: Fn_Descriptor = js.native
   @JSName("createDirectory")
@@ -109,5 +101,31 @@ object jestDashUtilMod extends js.Object {
   def setGlobal(globalToMutate: Global, key: String, value: js.Any): Unit = js.native
   def setGlobal(globalToMutate: Window, key: String, value: js.Any): Unit = js.native
   def testPathPatternToRegExp(testPathPattern: String): RegExp = js.native
+  @js.native
+  object Console extends TopLevel[
+          Instantiable2[/* stdout */ WritableStream, /* stderr */ WritableStream, CustomConsole]
+        ]
+  
+  @js.native
+  object ErrorWithStack
+    extends TopLevel[
+          Instantiable2[/* message */ js.UndefOr[String], /* callsite */ js.Function, default]
+        ]
+  
+  @js.native
+  object FakeTimers
+    extends TopLevel[
+          Instantiable1[
+            /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ Anon_Config[
+              /* import warning: RewrittenClass.unapply cls $anonfun was tparam TimerRef */ js.Any
+            ], 
+            JestFakeTimers[js.Object]
+          ]
+        ]
+  
+  @js.native
+  object NullConsole
+    extends TopLevel[Instantiable0[typings.atJestConsole.atJestConsoleMod.NullConsole]]
+  
 }
 

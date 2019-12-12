@@ -1,5 +1,6 @@
 package typings.atLinguiMacro
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atLinguiCore.i18nMod.MessageDescriptor
 import typings.atLinguiMacro.createFormatMod.FormatPropsWithoutI18n
 import typings.atLinguiMacro.reactSelectMod.PluralPropsWithoutI18n
@@ -51,8 +52,6 @@ object atLinguiMacroMod extends js.Object {
   class Trans ()
     extends Component[TransPropsWithoutI18n, js.Object, js.Any]
   
-  val DateFormat: ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState] = js.native
-  val NumberFormat: ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState] = js.native
   def date(value: Date): MessageDescriptor = js.native
   def date(value: Date, format: DateTimeFormatOptions): MessageDescriptor = js.native
   def number(value: Double): MessageDescriptor = js.native
@@ -65,5 +64,15 @@ object atLinguiMacroMod extends js.Object {
   def selectOrdinal(id: String, config: PluralProps): MessageDescriptor = js.native
   def t(id: String): js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor] = js.native
   def t(strings: TemplateStringsArray, values: js.Any*): MessageDescriptor = js.native
+  @js.native
+  object DateFormat extends TopLevel[
+          ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState]
+        ]
+  
+  @js.native
+  object NumberFormat extends TopLevel[
+          ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState]
+        ]
+  
 }
 

@@ -1,5 +1,17 @@
 package typings.openui5.sap.ui.unified
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.unified.CalendarDayType.None
+import typings.openui5.sap.ui.unified.CalendarDayType.Type01
+import typings.openui5.sap.ui.unified.CalendarDayType.Type02
+import typings.openui5.sap.ui.unified.CalendarDayType.Type03
+import typings.openui5.sap.ui.unified.CalendarDayType.Type04
+import typings.openui5.sap.ui.unified.CalendarDayType.Type05
+import typings.openui5.sap.ui.unified.CalendarDayType.Type06
+import typings.openui5.sap.ui.unified.CalendarDayType.Type07
+import typings.openui5.sap.ui.unified.CalendarDayType.Type08
+import typings.openui5.sap.ui.unified.CalendarDayType.Type09
+import typings.openui5.sap.ui.unified.CalendarDayType.Type10
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,18 +58,40 @@ object CalendarDayType extends js.Object {
   @js.native
   sealed trait Type10 extends CalendarDayType
   
-  /* 0 */ val None: typings.openui5.sap.ui.unified.CalendarDayType.None with Double = js.native
-  /* 1 */ val Type01: typings.openui5.sap.ui.unified.CalendarDayType.Type01 with Double = js.native
-  /* 2 */ val Type02: typings.openui5.sap.ui.unified.CalendarDayType.Type02 with Double = js.native
-  /* 3 */ val Type03: typings.openui5.sap.ui.unified.CalendarDayType.Type03 with Double = js.native
-  /* 4 */ val Type04: typings.openui5.sap.ui.unified.CalendarDayType.Type04 with Double = js.native
-  /* 5 */ val Type05: typings.openui5.sap.ui.unified.CalendarDayType.Type05 with Double = js.native
-  /* 6 */ val Type06: typings.openui5.sap.ui.unified.CalendarDayType.Type06 with Double = js.native
-  /* 7 */ val Type07: typings.openui5.sap.ui.unified.CalendarDayType.Type07 with Double = js.native
-  /* 8 */ val Type08: typings.openui5.sap.ui.unified.CalendarDayType.Type08 with Double = js.native
-  /* 9 */ val Type09: typings.openui5.sap.ui.unified.CalendarDayType.Type09 with Double = js.native
-  /* 10 */ val Type10: typings.openui5.sap.ui.unified.CalendarDayType.Type10 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CalendarDayType with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Type01 extends TopLevel[Type01 with Double]
+  
+  /* 2 */ @js.native
+  object Type02 extends TopLevel[Type02 with Double]
+  
+  /* 3 */ @js.native
+  object Type03 extends TopLevel[Type03 with Double]
+  
+  /* 4 */ @js.native
+  object Type04 extends TopLevel[Type04 with Double]
+  
+  /* 5 */ @js.native
+  object Type05 extends TopLevel[Type05 with Double]
+  
+  /* 6 */ @js.native
+  object Type06 extends TopLevel[Type06 with Double]
+  
+  /* 7 */ @js.native
+  object Type07 extends TopLevel[Type07 with Double]
+  
+  /* 8 */ @js.native
+  object Type08 extends TopLevel[Type08 with Double]
+  
+  /* 9 */ @js.native
+  object Type09 extends TopLevel[Type09 with Double]
+  
+  /* 10 */ @js.native
+  object Type10 extends TopLevel[Type10 with Double]
+  
 }
 

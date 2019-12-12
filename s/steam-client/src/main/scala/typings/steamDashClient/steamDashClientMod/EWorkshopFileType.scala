@@ -1,5 +1,24 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Art
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Collection
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Community
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Concept
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.ControllerBinding
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.First
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Game
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.GameManagedItem
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.IntegratedGuide
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Max
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Merch
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Microtransaction
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Screenshot
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Software
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamVideo
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamworksAccessInvite
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Video
+import typings.steamDashClient.steamDashClientMod.EWorkshopFileType.WebGuide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,25 +83,61 @@ object EWorkshopFileType extends js.Object {
   @js.native
   sealed trait WebGuide extends EWorkshopFileType
   
-  /* 3 */ val Art: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Art with Double = js.native
-  /* 2 */ val Collection: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Collection with Double = js.native
-  /* 0 */ val Community: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Community with Double = js.native
-  /* 8 */ val Concept: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Concept with Double = js.native
-  /* 12 */ val ControllerBinding: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.ControllerBinding with Double = js.native
-  /* 0 */ val First: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.First with Double = js.native
-  /* 6 */ val Game: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Game with Double = js.native
-  /* 15 */ val GameManagedItem: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.GameManagedItem with Double = js.native
-  /* 10 */ val IntegratedGuide: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.IntegratedGuide with Double = js.native
-  /* 16 */ val Max: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Max with Double = js.native
-  /* 11 */ val Merch: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Merch with Double = js.native
-  /* 1 */ val Microtransaction: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Microtransaction with Double = js.native
-  /* 5 */ val Screenshot: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Screenshot with Double = js.native
-  /* 7 */ val Software: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Software with Double = js.native
-  /* 14 */ val SteamVideo: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamVideo with Double = js.native
-  /* 13 */ val SteamworksAccessInvite: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.SteamworksAccessInvite with Double = js.native
-  /* 4 */ val Video: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.Video with Double = js.native
-  /* 9 */ val WebGuide: typings.steamDashClient.steamDashClientMod.EWorkshopFileType.WebGuide with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EWorkshopFileType with Double] = js.native
+  /* 3 */ @js.native
+  object Art extends TopLevel[Art with Double]
+  
+  /* 2 */ @js.native
+  object Collection extends TopLevel[Collection with Double]
+  
+  /* 0 */ @js.native
+  object Community extends TopLevel[Community with Double]
+  
+  /* 8 */ @js.native
+  object Concept extends TopLevel[Concept with Double]
+  
+  /* 12 */ @js.native
+  object ControllerBinding extends TopLevel[ControllerBinding with Double]
+  
+  /* 0 */ @js.native
+  object First extends TopLevel[First with Double]
+  
+  /* 6 */ @js.native
+  object Game extends TopLevel[Game with Double]
+  
+  /* 15 */ @js.native
+  object GameManagedItem extends TopLevel[GameManagedItem with Double]
+  
+  /* 10 */ @js.native
+  object IntegratedGuide extends TopLevel[IntegratedGuide with Double]
+  
+  /* 16 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 11 */ @js.native
+  object Merch extends TopLevel[Merch with Double]
+  
+  /* 1 */ @js.native
+  object Microtransaction extends TopLevel[Microtransaction with Double]
+  
+  /* 5 */ @js.native
+  object Screenshot extends TopLevel[Screenshot with Double]
+  
+  /* 7 */ @js.native
+  object Software extends TopLevel[Software with Double]
+  
+  /* 14 */ @js.native
+  object SteamVideo extends TopLevel[SteamVideo with Double]
+  
+  /* 13 */ @js.native
+  object SteamworksAccessInvite extends TopLevel[SteamworksAccessInvite with Double]
+  
+  /* 4 */ @js.native
+  object Video extends TopLevel[Video with Double]
+  
+  /* 9 */ @js.native
+  object WebGuide extends TopLevel[WebGuide with Double]
+  
 }
 

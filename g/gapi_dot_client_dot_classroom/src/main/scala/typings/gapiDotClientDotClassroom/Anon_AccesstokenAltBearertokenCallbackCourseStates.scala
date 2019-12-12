@@ -4,36 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_AccesstokenAltBearertokenCallbackCourseStates extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.undefined
+  var `$.xgafv`: js.UndefOr[String] = js.native
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.undefined
+  var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.undefined
+  var bearer_token: js.UndefOr[String] = js.native
   /** JSONP */
-  var callback: js.UndefOr[String] = js.undefined
+  var callback: js.UndefOr[String] = js.native
   /**
     * Restricts returned courses to those in one of the specified states
     * The default value is ACTIVE, ARCHIVED, PROVISIONED, DECLINED.
     */
-  var courseStates: js.UndefOr[String] = js.undefined
+  var courseStates: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /**
     * Maximum number of items to return. Zero or unspecified indicates that the
     * server may assign a maximum.
     *
     * The server may return fewer than the specified number of results.
     */
-  var pageSize: js.UndefOr[Double] = js.undefined
+  var pageSize: js.UndefOr[Double] = js.native
   /**
     * nextPageToken
     * value returned from a previous
@@ -43,13 +44,13 @@ trait Anon_AccesstokenAltBearertokenCallbackCourseStates extends js.Object {
     * The list request must be
     * otherwise identical to the one that resulted in this token.
     */
-  var pageToken: js.UndefOr[String] = js.undefined
+  var pageToken: js.UndefOr[String] = js.native
   /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.undefined
+  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /**
     * Restricts returned courses to those having a student with the specified
     * identifier. The identifier can be one of the following:
@@ -58,7 +59,7 @@ trait Anon_AccesstokenAltBearertokenCallbackCourseStates extends js.Object {
     * &#42; the email address of the user
     * &#42; the string literal `"me"`, indicating the requesting user
     */
-  var studentId: js.UndefOr[String] = js.undefined
+  var studentId: js.UndefOr[String] = js.native
   /**
     * Restricts returned courses to those having a teacher with the specified
     * identifier. The identifier can be one of the following:
@@ -67,55 +68,10 @@ trait Anon_AccesstokenAltBearertokenCallbackCourseStates extends js.Object {
     * &#42; the email address of the user
     * &#42; the string literal `"me"`, indicating the requesting user
     */
-  var teacherId: js.UndefOr[String] = js.undefined
+  var teacherId: js.UndefOr[String] = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.undefined
+  var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.undefined
-}
-
-object Anon_AccesstokenAltBearertokenCallbackCourseStates {
-  @scala.inline
-  def apply(
-    `$.xgafv`: String = null,
-    access_token: String = null,
-    alt: String = null,
-    bearer_token: String = null,
-    callback: String = null,
-    courseStates: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    pageSize: Int | Double = null,
-    pageToken: String = null,
-    pp: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    studentId: String = null,
-    teacherId: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): Anon_AccesstokenAltBearertokenCallbackCourseStates = {
-    val __obj = js.Dynamic.literal()
-    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (courseStates != null) __obj.updateDynamic("courseStates")(courseStates.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (studentId != null) __obj.updateDynamic("studentId")(studentId.asInstanceOf[js.Any])
-    if (teacherId != null) __obj.updateDynamic("teacherId")(teacherId.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_AccesstokenAltBearertokenCallbackCourseStates]
-  }
+  var upload_protocol: js.UndefOr[String] = js.native
 }
 

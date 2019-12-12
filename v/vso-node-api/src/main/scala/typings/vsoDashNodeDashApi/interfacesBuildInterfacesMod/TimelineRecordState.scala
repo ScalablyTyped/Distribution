@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.Completed
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.InProgress
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TimelineRecordState extends js.Object {
   @js.native
   sealed trait Pending extends TimelineRecordState
   
-  /* 2 */ val Completed: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.Completed with Double = js.native
-  /* 1 */ val InProgress: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.InProgress with Double = js.native
-  /* 0 */ val Pending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TimelineRecordState.Pending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineRecordState with Double] = js.native
+  /* 2 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 1 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 0 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
 }
 

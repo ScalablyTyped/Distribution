@@ -1,5 +1,11 @@
 package typings.winrt.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.System.VirtualKeyModifiers.control
+import typings.winrt.Windows.System.VirtualKeyModifiers.menu
+import typings.winrt.Windows.System.VirtualKeyModifiers.none
+import typings.winrt.Windows.System.VirtualKeyModifiers.shift
+import typings.winrt.Windows.System.VirtualKeyModifiers.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object VirtualKeyModifiers extends js.Object {
   @js.native
   sealed trait windows extends VirtualKeyModifiers
   
-  /* 1 */ val control: typings.winrt.Windows.System.VirtualKeyModifiers.control with Double = js.native
-  /* 2 */ val menu: typings.winrt.Windows.System.VirtualKeyModifiers.menu with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.System.VirtualKeyModifiers.none with Double = js.native
-  /* 3 */ val shift: typings.winrt.Windows.System.VirtualKeyModifiers.shift with Double = js.native
-  /* 4 */ val windows: typings.winrt.Windows.System.VirtualKeyModifiers.windows with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VirtualKeyModifiers with Double] = js.native
+  /* 1 */ @js.native
+  object control extends TopLevel[control with Double]
+  
+  /* 2 */ @js.native
+  object menu extends TopLevel[menu with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object shift extends TopLevel[shift with Double]
+  
+  /* 4 */ @js.native
+  object windows extends TopLevel[windows with Double]
+  
 }
 

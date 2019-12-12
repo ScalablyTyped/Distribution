@@ -1,10 +1,16 @@
 package typings.androiduix.android.text
 
+import org.scalablytyped.runtime.TopLevel
 import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Paint
 import typings.androiduix.android.graphics.Path
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.text.Layout.Alignment
+import typings.androiduix.android.text.Layout.Alignment.ALIGN_CENTER
+import typings.androiduix.android.text.Layout.Alignment.ALIGN_LEFT
+import typings.androiduix.android.text.Layout.Alignment.ALIGN_NORMAL
+import typings.androiduix.android.text.Layout.Alignment.ALIGN_OPPOSITE
+import typings.androiduix.android.text.Layout.Alignment.ALIGN_RIGHT
 import typings.androiduix.android.text.Layout.Directions
 import typings.androiduix.android.text.Layout.Ellipsizer
 import typings.androiduix.android.text.TextUtils.TruncateAt
@@ -221,13 +227,23 @@ object Layout extends js.Object {
     @js.native
     sealed trait ALIGN_RIGHT extends Alignment
     
-    /* 2 */ val ALIGN_CENTER: typings.androiduix.android.text.Layout.Alignment.ALIGN_CENTER with Double = js.native
-    /* 3 */ val ALIGN_LEFT: typings.androiduix.android.text.Layout.Alignment.ALIGN_LEFT with Double = js.native
-    /* 0 */ val ALIGN_NORMAL: typings.androiduix.android.text.Layout.Alignment.ALIGN_NORMAL with Double = js.native
-    /* 1 */ val ALIGN_OPPOSITE: typings.androiduix.android.text.Layout.Alignment.ALIGN_OPPOSITE with Double = js.native
-    /* 4 */ val ALIGN_RIGHT: typings.androiduix.android.text.Layout.Alignment.ALIGN_RIGHT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Alignment with Double] = js.native
+    /* 2 */ @js.native
+    object ALIGN_CENTER extends TopLevel[ALIGN_CENTER with Double]
+    
+    /* 3 */ @js.native
+    object ALIGN_LEFT extends TopLevel[ALIGN_LEFT with Double]
+    
+    /* 0 */ @js.native
+    object ALIGN_NORMAL extends TopLevel[ALIGN_NORMAL with Double]
+    
+    /* 1 */ @js.native
+    object ALIGN_OPPOSITE extends TopLevel[ALIGN_OPPOSITE with Double]
+    
+    /* 4 */ @js.native
+    object ALIGN_RIGHT extends TopLevel[ALIGN_RIGHT with Double]
+    
   }
   
   /* static members */

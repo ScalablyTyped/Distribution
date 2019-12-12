@@ -1,5 +1,31 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.CHECKBOX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.CUSTOM_FORMULA
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_AFTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_BEFORE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_IS_VALID_DATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_NOT_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_ON_OR_AFTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_ON_OR_BEFORE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_GREATER_THAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_GREATER_THAN_OR_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_LESS_THAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_LESS_THAN_OR_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_NOT_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_NOT_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_CONTAINS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_DOES_NOT_CONTAIN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_IS_VALID_EMAIL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_IS_VALID_URL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.VALUE_IN_LIST
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.VALUE_IN_RANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,32 +140,82 @@ object DataValidationCriteria extends js.Object {
   @js.native
   sealed trait VALUE_IN_RANGE extends DataValidationCriteria
   
-  /* 24 */ val CHECKBOX: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.CHECKBOX with Double = js.native
-  /* 23 */ val CUSTOM_FORMULA: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.CUSTOM_FORMULA with Double = js.native
-  /* 0 */ val DATE_AFTER: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_AFTER with Double = js.native
-  /* 1 */ val DATE_BEFORE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_BEFORE with Double = js.native
-  /* 2 */ val DATE_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_BETWEEN with Double = js.native
-  /* 3 */ val DATE_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_EQUAL_TO with Double = js.native
-  /* 4 */ val DATE_IS_VALID_DATE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_IS_VALID_DATE with Double = js.native
-  /* 5 */ val DATE_NOT_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_NOT_BETWEEN with Double = js.native
-  /* 6 */ val DATE_ON_OR_AFTER: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_ON_OR_AFTER with Double = js.native
-  /* 7 */ val DATE_ON_OR_BEFORE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.DATE_ON_OR_BEFORE with Double = js.native
-  /* 8 */ val NUMBER_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_BETWEEN with Double = js.native
-  /* 9 */ val NUMBER_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_EQUAL_TO with Double = js.native
-  /* 10 */ val NUMBER_GREATER_THAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_GREATER_THAN with Double = js.native
-  /* 11 */ val NUMBER_GREATER_THAN_OR_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_GREATER_THAN_OR_EQUAL_TO with Double = js.native
-  /* 12 */ val NUMBER_LESS_THAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_LESS_THAN with Double = js.native
-  /* 13 */ val NUMBER_LESS_THAN_OR_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_LESS_THAN_OR_EQUAL_TO with Double = js.native
-  /* 14 */ val NUMBER_NOT_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_NOT_BETWEEN with Double = js.native
-  /* 15 */ val NUMBER_NOT_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.NUMBER_NOT_EQUAL_TO with Double = js.native
-  /* 16 */ val TEXT_CONTAINS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_CONTAINS with Double = js.native
-  /* 17 */ val TEXT_DOES_NOT_CONTAIN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_DOES_NOT_CONTAIN with Double = js.native
-  /* 18 */ val TEXT_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_EQUAL_TO with Double = js.native
-  /* 19 */ val TEXT_IS_VALID_EMAIL: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_IS_VALID_EMAIL with Double = js.native
-  /* 20 */ val TEXT_IS_VALID_URL: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.TEXT_IS_VALID_URL with Double = js.native
-  /* 21 */ val VALUE_IN_LIST: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.VALUE_IN_LIST with Double = js.native
-  /* 22 */ val VALUE_IN_RANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataValidationCriteria.VALUE_IN_RANGE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataValidationCriteria with Double] = js.native
+  /* 24 */ @js.native
+  object CHECKBOX extends TopLevel[CHECKBOX with Double]
+  
+  /* 23 */ @js.native
+  object CUSTOM_FORMULA extends TopLevel[CUSTOM_FORMULA with Double]
+  
+  /* 0 */ @js.native
+  object DATE_AFTER extends TopLevel[DATE_AFTER with Double]
+  
+  /* 1 */ @js.native
+  object DATE_BEFORE extends TopLevel[DATE_BEFORE with Double]
+  
+  /* 2 */ @js.native
+  object DATE_BETWEEN extends TopLevel[DATE_BETWEEN with Double]
+  
+  /* 3 */ @js.native
+  object DATE_EQUAL_TO extends TopLevel[DATE_EQUAL_TO with Double]
+  
+  /* 4 */ @js.native
+  object DATE_IS_VALID_DATE extends TopLevel[DATE_IS_VALID_DATE with Double]
+  
+  /* 5 */ @js.native
+  object DATE_NOT_BETWEEN extends TopLevel[DATE_NOT_BETWEEN with Double]
+  
+  /* 6 */ @js.native
+  object DATE_ON_OR_AFTER extends TopLevel[DATE_ON_OR_AFTER with Double]
+  
+  /* 7 */ @js.native
+  object DATE_ON_OR_BEFORE extends TopLevel[DATE_ON_OR_BEFORE with Double]
+  
+  /* 8 */ @js.native
+  object NUMBER_BETWEEN extends TopLevel[NUMBER_BETWEEN with Double]
+  
+  /* 9 */ @js.native
+  object NUMBER_EQUAL_TO extends TopLevel[NUMBER_EQUAL_TO with Double]
+  
+  /* 10 */ @js.native
+  object NUMBER_GREATER_THAN extends TopLevel[NUMBER_GREATER_THAN with Double]
+  
+  /* 11 */ @js.native
+  object NUMBER_GREATER_THAN_OR_EQUAL_TO extends TopLevel[NUMBER_GREATER_THAN_OR_EQUAL_TO with Double]
+  
+  /* 12 */ @js.native
+  object NUMBER_LESS_THAN extends TopLevel[NUMBER_LESS_THAN with Double]
+  
+  /* 13 */ @js.native
+  object NUMBER_LESS_THAN_OR_EQUAL_TO extends TopLevel[NUMBER_LESS_THAN_OR_EQUAL_TO with Double]
+  
+  /* 14 */ @js.native
+  object NUMBER_NOT_BETWEEN extends TopLevel[NUMBER_NOT_BETWEEN with Double]
+  
+  /* 15 */ @js.native
+  object NUMBER_NOT_EQUAL_TO extends TopLevel[NUMBER_NOT_EQUAL_TO with Double]
+  
+  /* 16 */ @js.native
+  object TEXT_CONTAINS extends TopLevel[TEXT_CONTAINS with Double]
+  
+  /* 17 */ @js.native
+  object TEXT_DOES_NOT_CONTAIN extends TopLevel[TEXT_DOES_NOT_CONTAIN with Double]
+  
+  /* 18 */ @js.native
+  object TEXT_EQUAL_TO extends TopLevel[TEXT_EQUAL_TO with Double]
+  
+  /* 19 */ @js.native
+  object TEXT_IS_VALID_EMAIL extends TopLevel[TEXT_IS_VALID_EMAIL with Double]
+  
+  /* 20 */ @js.native
+  object TEXT_IS_VALID_URL extends TopLevel[TEXT_IS_VALID_URL with Double]
+  
+  /* 21 */ @js.native
+  object VALUE_IN_LIST extends TopLevel[VALUE_IN_LIST with Double]
+  
+  /* 22 */ @js.native
+  object VALUE_IN_RANGE extends TopLevel[VALUE_IN_RANGE with Double]
+  
 }
 

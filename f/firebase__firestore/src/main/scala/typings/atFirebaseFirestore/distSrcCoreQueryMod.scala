@@ -1,10 +1,13 @@
 package typings.atFirebaseFirestore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.Bound
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.Direction
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.FieldFilter
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.Filter
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType
+import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.First
+import typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.Last
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.Operator
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.OrderBy
 import typings.atFirebaseFirestore.distSrcCoreQueryMod.Query
@@ -210,10 +213,14 @@ object distSrcCoreQueryMod extends js.Object {
     @js.native
     sealed trait Last extends LimitType
     
-    /* "F" */ val First: typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.First with String = js.native
-    /* "L" */ val Last: typings.atFirebaseFirestore.distSrcCoreQueryMod.LimitType.Last with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LimitType with String] = js.native
+    /* "F" */ @js.native
+    object First extends TopLevel[First with String]
+    
+    /* "L" */ @js.native
+    object Last extends TopLevel[Last with String]
+    
   }
   
   /* static members */

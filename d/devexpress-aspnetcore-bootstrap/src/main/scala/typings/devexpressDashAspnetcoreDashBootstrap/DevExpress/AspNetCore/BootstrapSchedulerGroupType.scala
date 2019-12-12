@@ -1,5 +1,9 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.Date
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.None
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.Resource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BootstrapSchedulerGroupType extends js.Object {
   @js.native
   sealed trait Resource extends BootstrapSchedulerGroupType
   
-  /* "Date" */ val Date: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.Date with String = js.native
-  /* "None" */ val None: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.None with String = js.native
-  /* "Resource" */ val Resource: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerGroupType.Resource with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BootstrapSchedulerGroupType with String] = js.native
+  /* "Date" */ @js.native
+  object Date extends TopLevel[Date with String]
+  
+  /* "None" */ @js.native
+  object None extends TopLevel[None with String]
+  
+  /* "Resource" */ @js.native
+  object Resource extends TopLevel[Resource with String]
+  
 }
 

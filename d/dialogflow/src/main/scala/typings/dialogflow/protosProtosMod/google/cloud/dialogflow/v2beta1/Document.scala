@@ -1,10 +1,14 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.dialogflowStrings.content
 import typings.dialogflow.dialogflowStrings.contentUri
 import typings.dialogflow.dialogflowStrings.rawContent
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.EXTRACTIVE_QA
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.FAQ
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.KNOWLEDGE_TYPE_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -135,11 +139,17 @@ object Document extends js.Object {
     @js.native
     sealed trait KNOWLEDGE_TYPE_UNSPECIFIED extends KnowledgeType
     
-    /* 2 */ val EXTRACTIVE_QA: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.EXTRACTIVE_QA with Double = js.native
-    /* 1 */ val FAQ: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.FAQ with Double = js.native
-    /* 0 */ val KNOWLEDGE_TYPE_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType.KNOWLEDGE_TYPE_UNSPECIFIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[KnowledgeType with Double] = js.native
+    /* 2 */ @js.native
+    object EXTRACTIVE_QA extends TopLevel[EXTRACTIVE_QA with Double]
+    
+    /* 1 */ @js.native
+    object FAQ extends TopLevel[FAQ with Double]
+    
+    /* 0 */ @js.native
+    object KNOWLEDGE_TYPE_UNSPECIFIED extends TopLevel[KNOWLEDGE_TYPE_UNSPECIFIED with Double]
+    
   }
   
 }

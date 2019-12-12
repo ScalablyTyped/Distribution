@@ -1,5 +1,10 @@
 package typings.officeDashJs.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Word.CellPaddingLocation.bottom
+import typings.officeDashJs.Word.CellPaddingLocation.left
+import typings.officeDashJs.Word.CellPaddingLocation.right
+import typings.officeDashJs.Word.CellPaddingLocation.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object CellPaddingLocation extends js.Object {
   @js.native
   sealed trait top extends CellPaddingLocation
   
-  /* "Bottom" */ val bottom: typings.officeDashJs.Word.CellPaddingLocation.bottom with String = js.native
-  /* "Left" */ val left: typings.officeDashJs.Word.CellPaddingLocation.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJs.Word.CellPaddingLocation.right with String = js.native
-  /* "Top" */ val top: typings.officeDashJs.Word.CellPaddingLocation.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CellPaddingLocation with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

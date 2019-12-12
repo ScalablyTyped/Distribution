@@ -1,5 +1,9 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.TrafficModel.BEST_GUESS
+import typings.googlemaps.google.maps.TrafficModel.OPTIMISTIC
+import typings.googlemaps.google.maps.TrafficModel.PESSIMISTIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TrafficModel extends js.Object {
   @js.native
   sealed trait PESSIMISTIC extends TrafficModel
   
-  /* "bestguess" */ val BEST_GUESS: typings.googlemaps.google.maps.TrafficModel.BEST_GUESS with String = js.native
-  /* "optimistic" */ val OPTIMISTIC: typings.googlemaps.google.maps.TrafficModel.OPTIMISTIC with String = js.native
-  /* "pessimistic" */ val PESSIMISTIC: typings.googlemaps.google.maps.TrafficModel.PESSIMISTIC with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TrafficModel with String] = js.native
+  /* "bestguess" */ @js.native
+  object BEST_GUESS extends TopLevel[BEST_GUESS with String]
+  
+  /* "optimistic" */ @js.native
+  object OPTIMISTIC extends TopLevel[OPTIMISTIC with String]
+  
+  /* "pessimistic" */ @js.native
+  object PESSIMISTIC extends TopLevel[PESSIMISTIC with String]
+  
 }
 

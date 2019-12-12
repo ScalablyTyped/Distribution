@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-big-scheduler"
-version := "0.2-dt-20190507Z-2f96a4"
+version := "0.2-dt-20190507Z-91eae9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

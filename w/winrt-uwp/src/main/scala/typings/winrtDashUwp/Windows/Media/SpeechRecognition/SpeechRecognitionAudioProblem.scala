@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.noSignal
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.none
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooFast
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooLoud
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooNoisy
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooQuiet
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooSlow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object SpeechRecognitionAudioProblem extends js.Object {
   @js.native
   sealed trait tooSlow extends SpeechRecognitionAudioProblem
   
-  /* 2 */ val noSignal: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.noSignal with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.none with Double = js.native
-  /* 5 */ val tooFast: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooFast with Double = js.native
-  /* 3 */ val tooLoud: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooLoud with Double = js.native
-  /* 1 */ val tooNoisy: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooNoisy with Double = js.native
-  /* 4 */ val tooQuiet: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooQuiet with Double = js.native
-  /* 6 */ val tooSlow: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionAudioProblem.tooSlow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpeechRecognitionAudioProblem with Double] = js.native
+  /* 2 */ @js.native
+  object noSignal extends TopLevel[noSignal with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object tooFast extends TopLevel[tooFast with Double]
+  
+  /* 3 */ @js.native
+  object tooLoud extends TopLevel[tooLoud with Double]
+  
+  /* 1 */ @js.native
+  object tooNoisy extends TopLevel[tooNoisy with Double]
+  
+  /* 4 */ @js.native
+  object tooQuiet extends TopLevel[tooQuiet with Double]
+  
+  /* 6 */ @js.native
+  object tooSlow extends TopLevel[tooSlow with Double]
+  
 }
 

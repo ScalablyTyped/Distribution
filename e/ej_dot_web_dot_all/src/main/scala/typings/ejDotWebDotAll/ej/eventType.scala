@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.eventType.click
+import typings.ejDotWebDotAll.ej.eventType.mouseDown
+import typings.ejDotWebDotAll.ej.eventType.mouseLeave
+import typings.ejDotWebDotAll.ej.eventType.mouseMove
+import typings.ejDotWebDotAll.ej.eventType.mouseUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object eventType extends js.Object {
   @js.native
   sealed trait mouseUp extends eventType
   
-  /* 0 */ val click: typings.ejDotWebDotAll.ej.eventType.click with Double = js.native
-  /* 1 */ val mouseDown: typings.ejDotWebDotAll.ej.eventType.mouseDown with Double = js.native
-  /* 2 */ val mouseLeave: typings.ejDotWebDotAll.ej.eventType.mouseLeave with Double = js.native
-  /* 3 */ val mouseMove: typings.ejDotWebDotAll.ej.eventType.mouseMove with Double = js.native
-  /* 4 */ val mouseUp: typings.ejDotWebDotAll.ej.eventType.mouseUp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[eventType with Double] = js.native
+  /* 0 */ @js.native
+  object click extends TopLevel[click with Double]
+  
+  /* 1 */ @js.native
+  object mouseDown extends TopLevel[mouseDown with Double]
+  
+  /* 2 */ @js.native
+  object mouseLeave extends TopLevel[mouseLeave with Double]
+  
+  /* 3 */ @js.native
+  object mouseMove extends TopLevel[mouseMove with Double]
+  
+  /* 4 */ @js.native
+  object mouseUp extends TopLevel[mouseUp with Double]
+  
 }
 

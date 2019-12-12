@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grpc__grpc-js"
-version := "0.6.9-e0dbf3"
+version := "0.6.9-66dc75"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

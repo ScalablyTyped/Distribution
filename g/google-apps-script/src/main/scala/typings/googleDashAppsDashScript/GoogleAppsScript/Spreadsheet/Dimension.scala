@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Dimension.COLUMNS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Dimension.ROWS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Dimension extends js.Object {
   @js.native
   sealed trait ROWS extends Dimension
   
-  /* 0 */ val COLUMNS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Dimension.COLUMNS with Double = js.native
-  /* 1 */ val ROWS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Dimension.ROWS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Dimension with Double] = js.native
+  /* 0 */ @js.native
+  object COLUMNS extends TopLevel[COLUMNS with Double]
+  
+  /* 1 */ @js.native
+  object ROWS extends TopLevel[ROWS with Double]
+  
 }
 

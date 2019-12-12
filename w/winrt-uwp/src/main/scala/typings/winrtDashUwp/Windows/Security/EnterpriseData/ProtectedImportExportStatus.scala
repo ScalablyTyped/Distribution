@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.accessSuspended
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.licenseExpired
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.notRoamable
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.ok
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.protectedToOtherIdentity
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.revoked
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.undetermined
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object ProtectedImportExportStatus extends js.Object {
   @js.native
   sealed trait unprotected extends ProtectedImportExportStatus
   
-  /* 7 */ val accessSuspended: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.accessSuspended with Double = js.native
-  /* 6 */ val licenseExpired: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.licenseExpired with Double = js.native
-  /* 4 */ val notRoamable: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.notRoamable with Double = js.native
-  /* 0 */ val ok: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.ok with Double = js.native
-  /* 5 */ val protectedToOtherIdentity: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.protectedToOtherIdentity with Double = js.native
-  /* 3 */ val revoked: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.revoked with Double = js.native
-  /* 1 */ val undetermined: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.undetermined with Double = js.native
-  /* 2 */ val unprotected: typings.winrtDashUwp.Windows.Security.EnterpriseData.ProtectedImportExportStatus.unprotected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProtectedImportExportStatus with Double] = js.native
+  /* 7 */ @js.native
+  object accessSuspended extends TopLevel[accessSuspended with Double]
+  
+  /* 6 */ @js.native
+  object licenseExpired extends TopLevel[licenseExpired with Double]
+  
+  /* 4 */ @js.native
+  object notRoamable extends TopLevel[notRoamable with Double]
+  
+  /* 0 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 5 */ @js.native
+  object protectedToOtherIdentity extends TopLevel[protectedToOtherIdentity with Double]
+  
+  /* 3 */ @js.native
+  object revoked extends TopLevel[revoked with Double]
+  
+  /* 1 */ @js.native
+  object undetermined extends TopLevel[undetermined with Double]
+  
+  /* 2 */ @js.native
+  object unprotected extends TopLevel[unprotected with Double]
+  
 }
 

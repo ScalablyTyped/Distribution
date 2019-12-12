@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-snap7"
-version := "0.2.2-dt-20190322Z-e79e00"
+version := "0.2.2-dt-20190322Z-06077a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

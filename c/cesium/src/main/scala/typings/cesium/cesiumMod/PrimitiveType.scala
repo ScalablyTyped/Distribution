@@ -1,5 +1,13 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.PrimitiveType.LINES
+import typings.cesium.cesiumMod.PrimitiveType.LINE_LOOP
+import typings.cesium.cesiumMod.PrimitiveType.LINE_STRIP
+import typings.cesium.cesiumMod.PrimitiveType.POINTS
+import typings.cesium.cesiumMod.PrimitiveType.TRIANGLES
+import typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_FAN
+import typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_STRIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object PrimitiveType extends js.Object {
   @js.native
   sealed trait TRIANGLE_STRIP extends PrimitiveType
   
-  /* 1 */ val LINES: typings.cesium.cesiumMod.PrimitiveType.LINES with Double = js.native
-  /* 2 */ val LINE_LOOP: typings.cesium.cesiumMod.PrimitiveType.LINE_LOOP with Double = js.native
-  /* 3 */ val LINE_STRIP: typings.cesium.cesiumMod.PrimitiveType.LINE_STRIP with Double = js.native
-  /* 0 */ val POINTS: typings.cesium.cesiumMod.PrimitiveType.POINTS with Double = js.native
-  /* 4 */ val TRIANGLES: typings.cesium.cesiumMod.PrimitiveType.TRIANGLES with Double = js.native
-  /* 6 */ val TRIANGLE_FAN: typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_FAN with Double = js.native
-  /* 5 */ val TRIANGLE_STRIP: typings.cesium.cesiumMod.PrimitiveType.TRIANGLE_STRIP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrimitiveType with Double] = js.native
+  /* 1 */ @js.native
+  object LINES extends TopLevel[LINES with Double]
+  
+  /* 2 */ @js.native
+  object LINE_LOOP extends TopLevel[LINE_LOOP with Double]
+  
+  /* 3 */ @js.native
+  object LINE_STRIP extends TopLevel[LINE_STRIP with Double]
+  
+  /* 0 */ @js.native
+  object POINTS extends TopLevel[POINTS with Double]
+  
+  /* 4 */ @js.native
+  object TRIANGLES extends TopLevel[TRIANGLES with Double]
+  
+  /* 6 */ @js.native
+  object TRIANGLE_FAN extends TopLevel[TRIANGLE_FAN with Double]
+  
+  /* 5 */ @js.native
+  object TRIANGLE_STRIP extends TopLevel[TRIANGLE_STRIP with Double]
+  
 }
 

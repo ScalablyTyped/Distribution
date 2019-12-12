@@ -1,5 +1,10 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_AUTO
+import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_BALANCED
+import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_FASTEST
+import typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_MOSTACCURATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object EnumDWT_OCRProRecognitionModule extends js.Object {
   @js.native
   sealed trait OCRPM_MOSTACCURATE extends EnumDWT_OCRProRecognitionModule
   
-  /* "AUTO" */ val OCRPM_AUTO: typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_AUTO with String = js.native
-  /* "BALANCED" */ val OCRPM_BALANCED: typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_BALANCED with String = js.native
-  /* "FASTEST" */ val OCRPM_FASTEST: typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_FASTEST with String = js.native
-  /* "MOSTACCURATE" */ val OCRPM_MOSTACCURATE: typings.dwt.EnumDWT_OCRProRecognitionModule.OCRPM_MOSTACCURATE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EnumDWT_OCRProRecognitionModule with String] = js.native
+  /* "AUTO" */ @js.native
+  object OCRPM_AUTO extends TopLevel[OCRPM_AUTO with String]
+  
+  /* "BALANCED" */ @js.native
+  object OCRPM_BALANCED extends TopLevel[OCRPM_BALANCED with String]
+  
+  /* "FASTEST" */ @js.native
+  object OCRPM_FASTEST extends TopLevel[OCRPM_FASTEST with String]
+  
+  /* "MOSTACCURATE" */ @js.native
+  object OCRPM_MOSTACCURATE extends TopLevel[OCRPM_MOSTACCURATE with String]
+  
 }
 

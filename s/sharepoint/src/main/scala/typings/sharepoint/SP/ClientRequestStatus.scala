@@ -1,5 +1,10 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.ClientRequestStatus.active
+import typings.sharepoint.SP.ClientRequestStatus.completedException
+import typings.sharepoint.SP.ClientRequestStatus.completedSuccess
+import typings.sharepoint.SP.ClientRequestStatus.inProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ClientRequestStatus extends js.Object {
   @js.native
   sealed trait inProgress extends ClientRequestStatus
   
-  /* 0 */ val active: typings.sharepoint.SP.ClientRequestStatus.active with Double = js.native
-  /* 3 */ val completedException: typings.sharepoint.SP.ClientRequestStatus.completedException with Double = js.native
-  /* 2 */ val completedSuccess: typings.sharepoint.SP.ClientRequestStatus.completedSuccess with Double = js.native
-  /* 1 */ val inProgress: typings.sharepoint.SP.ClientRequestStatus.inProgress with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClientRequestStatus with Double] = js.native
+  /* 0 */ @js.native
+  object active extends TopLevel[active with Double]
+  
+  /* 3 */ @js.native
+  object completedException extends TopLevel[completedException with Double]
+  
+  /* 2 */ @js.native
+  object completedSuccess extends TopLevel[completedSuccess with Double]
+  
+  /* 1 */ @js.native
+  object inProgress extends TopLevel[inProgress with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.notEvaluated
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.otherEncryption
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.windowsEncryption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EasEncryptionProviderType extends js.Object {
   @js.native
   sealed trait windowsEncryption extends EasEncryptionProviderType
   
-  /* 0 */ val notEvaluated: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.notEvaluated with Double = js.native
-  /* 2 */ val otherEncryption: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.otherEncryption with Double = js.native
-  /* 1 */ val windowsEncryption: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasEncryptionProviderType.windowsEncryption with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EasEncryptionProviderType with Double] = js.native
+  /* 0 */ @js.native
+  object notEvaluated extends TopLevel[notEvaluated with Double]
+  
+  /* 2 */ @js.native
+  object otherEncryption extends TopLevel[otherEncryption with Double]
+  
+  /* 1 */ @js.native
+  object windowsEncryption extends TopLevel[windowsEncryption with Double]
+  
 }
 

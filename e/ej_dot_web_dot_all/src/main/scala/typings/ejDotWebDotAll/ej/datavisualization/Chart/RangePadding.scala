@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Additional
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.None
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Normal
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Round
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object RangePadding extends js.Object {
   @js.native
   sealed trait Round extends RangePadding
   
-  /* 0 */ val Additional: typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Additional with Double = js.native
-  /* 2 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.None with Double = js.native
-  /* 1 */ val Normal: typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Normal with Double = js.native
-  /* 3 */ val Round: typings.ejDotWebDotAll.ej.datavisualization.Chart.RangePadding.Round with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RangePadding with Double] = js.native
+  /* 0 */ @js.native
+  object Additional extends TopLevel[Additional with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
+  /* 3 */ @js.native
+  object Round extends TopLevel[Round with Double]
+  
 }
 

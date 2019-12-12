@@ -1,6 +1,11 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState
+import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Initial
+import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Registered
+import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Terminated
+import typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Unregistered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,20 @@ object libApiRegistererDashStateMod extends js.Object {
     @js.native
     sealed trait Unregistered extends RegistererState
     
-    /* "Initial" */ val Initial: typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Initial with String = js.native
-    /* "Registered" */ val Registered: typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Registered with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Terminated with String = js.native
-    /* "Unregistered" */ val Unregistered: typings.sipDotJs.libApiRegistererDashStateMod.RegistererState.Unregistered with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[RegistererState with String] = js.native
+    /* "Initial" */ @js.native
+    object Initial extends TopLevel[Initial with String]
+    
+    /* "Registered" */ @js.native
+    object Registered extends TopLevel[Registered with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
+    /* "Unregistered" */ @js.native
+    object Unregistered extends TopLevel[Unregistered with String]
+    
   }
   
 }

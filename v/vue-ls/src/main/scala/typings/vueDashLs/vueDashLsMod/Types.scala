@@ -1,5 +1,9 @@
 package typings.vueDashLs.vueDashLsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vueDashLs.vueDashLsMod.Types.Local
+import typings.vueDashLs.vueDashLsMod.Types.Memory
+import typings.vueDashLs.vueDashLsMod.Types.Session
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Types extends js.Object {
   @js.native
   sealed trait Session extends Types
   
-  /* "local" */ val Local: typings.vueDashLs.vueDashLsMod.Types.Local with String = js.native
-  /* "memory" */ val Memory: typings.vueDashLs.vueDashLsMod.Types.Memory with String = js.native
-  /* "session" */ val Session: typings.vueDashLs.vueDashLsMod.Types.Session with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Types with String] = js.native
+  /* "local" */ @js.native
+  object Local extends TopLevel[Local with String]
+  
+  /* "memory" */ @js.native
+  object Memory extends TopLevel[Memory with String]
+  
+  /* "session" */ @js.native
+  object Session extends TopLevel[Session with String]
+  
 }
 

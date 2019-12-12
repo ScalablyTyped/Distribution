@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-rest-client"
-version := "1.5.0-cf139c"
+version := "1.5.0-a092b8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

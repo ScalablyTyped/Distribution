@@ -1,5 +1,11 @@
 package typings.winrt.Windows.UI.Popups
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Popups.Placement.above
+import typings.winrt.Windows.UI.Popups.Placement.below
+import typings.winrt.Windows.UI.Popups.Placement.default
+import typings.winrt.Windows.UI.Popups.Placement.left
+import typings.winrt.Windows.UI.Popups.Placement.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Placement extends js.Object {
   @js.native
   sealed trait right extends Placement
   
-  /* 1 */ val above: typings.winrt.Windows.UI.Popups.Placement.above with Double = js.native
-  /* 2 */ val below: typings.winrt.Windows.UI.Popups.Placement.below with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.UI.Popups.Placement.default with Double = js.native
-  /* 3 */ val left: typings.winrt.Windows.UI.Popups.Placement.left with Double = js.native
-  /* 4 */ val right: typings.winrt.Windows.UI.Popups.Placement.right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Placement with Double] = js.native
+  /* 1 */ @js.native
+  object above extends TopLevel[above with Double]
+  
+  /* 2 */ @js.native
+  object below extends TopLevel[below with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 3 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* 4 */ @js.native
+  object right extends TopLevel[right with Double]
+  
 }
 

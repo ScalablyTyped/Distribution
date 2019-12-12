@@ -1,5 +1,119 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ABNT_C1
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ABNT_C2
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Alt
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Backspace
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.CapsLock
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ContextMenu
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Ctrl
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Delete
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.DownArrow
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.End
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Enter
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Escape
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F1
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F10
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F11
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F12
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F13
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F14
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F15
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F16
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F17
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F18
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F19
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F2
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F3
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F4
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F5
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F6
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F7
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F8
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F9
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Home
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Insert
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_0
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_1
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_2
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_3
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_4
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_5
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_6
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_7
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_8
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_9
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_A
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_B
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_C
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_D
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_E
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_F
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_G
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_H
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_I
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_IN_COMPOSITION
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_J
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_K
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_L
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_M
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_N
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_O
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_P
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Q
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_R
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_S
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_T
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_U
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_V
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_W
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_X
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Y
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Z
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.LeftArrow
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.MAX_VALUE
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Meta
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_0
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_1
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_2
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_3
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_4
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_5
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_6
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_7
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_8
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_9
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_ADD
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_DECIMAL
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_DIVIDE
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_MULTIPLY
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_SEPARATOR
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_SUBTRACT
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NumLock
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.OEM_102
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.OEM_8
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PageDown
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PageUp
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PauseBreak
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.RightArrow
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ScrollLock
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Shift
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Space
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Tab
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_BACKSLASH
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_BACKTICK
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_CLOSE_SQUARE_BRACKET
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_COMMA
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_DOT
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_EQUAL
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_MINUS
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_OPEN_SQUARE_BRACKET
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_QUOTE
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_SEMICOLON
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_SLASH
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Unknown
+import typings.monacoDashEditor.monacoDashEditorMod.KeyCode.UpArrow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -409,120 +523,346 @@ object KeyCode extends js.Object {
   @js.native
   sealed trait UpArrow extends KeyCode
   
-  /* 110 */ val ABNT_C1: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ABNT_C1 with Double = js.native
-  /* 111 */ val ABNT_C2: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ABNT_C2 with Double = js.native
-  /* 6 */ val Alt: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Alt with Double = js.native
-  /* 1 */ val Backspace: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Backspace with Double = js.native
-  /* 8 */ val CapsLock: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.CapsLock with Double = js.native
-  /* 58 */ val ContextMenu: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ContextMenu with Double = js.native
-  /* 5 */ val Ctrl: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Ctrl with Double = js.native
-  /* 20 */ val Delete: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Delete with Double = js.native
-  /* 18 */ val DownArrow: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.DownArrow with Double = js.native
-  /* 13 */ val End: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.End with Double = js.native
-  /* 3 */ val Enter: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Enter with Double = js.native
-  /* 9 */ val Escape: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Escape with Double = js.native
-  /* 59 */ val F1: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F1 with Double = js.native
-  /* 68 */ val F10: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F10 with Double = js.native
-  /* 69 */ val F11: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F11 with Double = js.native
-  /* 70 */ val F12: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F12 with Double = js.native
-  /* 71 */ val F13: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F13 with Double = js.native
-  /* 72 */ val F14: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F14 with Double = js.native
-  /* 73 */ val F15: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F15 with Double = js.native
-  /* 74 */ val F16: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F16 with Double = js.native
-  /* 75 */ val F17: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F17 with Double = js.native
-  /* 76 */ val F18: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F18 with Double = js.native
-  /* 77 */ val F19: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F19 with Double = js.native
-  /* 60 */ val F2: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F2 with Double = js.native
-  /* 61 */ val F3: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F3 with Double = js.native
-  /* 62 */ val F4: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F4 with Double = js.native
-  /* 63 */ val F5: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F5 with Double = js.native
-  /* 64 */ val F6: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F6 with Double = js.native
-  /* 65 */ val F7: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F7 with Double = js.native
-  /* 66 */ val F8: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F8 with Double = js.native
-  /* 67 */ val F9: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.F9 with Double = js.native
-  /* 14 */ val Home: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Home with Double = js.native
-  /* 19 */ val Insert: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Insert with Double = js.native
-  /* 21 */ val KEY_0: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_0 with Double = js.native
-  /* 22 */ val KEY_1: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_1 with Double = js.native
-  /* 23 */ val KEY_2: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_2 with Double = js.native
-  /* 24 */ val KEY_3: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_3 with Double = js.native
-  /* 25 */ val KEY_4: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_4 with Double = js.native
-  /* 26 */ val KEY_5: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_5 with Double = js.native
-  /* 27 */ val KEY_6: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_6 with Double = js.native
-  /* 28 */ val KEY_7: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_7 with Double = js.native
-  /* 29 */ val KEY_8: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_8 with Double = js.native
-  /* 30 */ val KEY_9: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_9 with Double = js.native
-  /* 31 */ val KEY_A: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_A with Double = js.native
-  /* 32 */ val KEY_B: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_B with Double = js.native
-  /* 33 */ val KEY_C: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_C with Double = js.native
-  /* 34 */ val KEY_D: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_D with Double = js.native
-  /* 35 */ val KEY_E: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_E with Double = js.native
-  /* 36 */ val KEY_F: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_F with Double = js.native
-  /* 37 */ val KEY_G: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_G with Double = js.native
-  /* 38 */ val KEY_H: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_H with Double = js.native
-  /* 39 */ val KEY_I: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_I with Double = js.native
-  /* 109 */ val KEY_IN_COMPOSITION: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_IN_COMPOSITION with Double = js.native
-  /* 40 */ val KEY_J: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_J with Double = js.native
-  /* 41 */ val KEY_K: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_K with Double = js.native
-  /* 42 */ val KEY_L: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_L with Double = js.native
-  /* 43 */ val KEY_M: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_M with Double = js.native
-  /* 44 */ val KEY_N: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_N with Double = js.native
-  /* 45 */ val KEY_O: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_O with Double = js.native
-  /* 46 */ val KEY_P: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_P with Double = js.native
-  /* 47 */ val KEY_Q: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Q with Double = js.native
-  /* 48 */ val KEY_R: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_R with Double = js.native
-  /* 49 */ val KEY_S: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_S with Double = js.native
-  /* 50 */ val KEY_T: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_T with Double = js.native
-  /* 51 */ val KEY_U: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_U with Double = js.native
-  /* 52 */ val KEY_V: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_V with Double = js.native
-  /* 53 */ val KEY_W: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_W with Double = js.native
-  /* 54 */ val KEY_X: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_X with Double = js.native
-  /* 55 */ val KEY_Y: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Y with Double = js.native
-  /* 56 */ val KEY_Z: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.KEY_Z with Double = js.native
-  /* 15 */ val LeftArrow: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.LeftArrow with Double = js.native
-  /* 112 */ val MAX_VALUE: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.MAX_VALUE with Double = js.native
-  /* 57 */ val Meta: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Meta with Double = js.native
-  /* 93 */ val NUMPAD_0: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_0 with Double = js.native
-  /* 94 */ val NUMPAD_1: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_1 with Double = js.native
-  /* 95 */ val NUMPAD_2: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_2 with Double = js.native
-  /* 96 */ val NUMPAD_3: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_3 with Double = js.native
-  /* 97 */ val NUMPAD_4: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_4 with Double = js.native
-  /* 98 */ val NUMPAD_5: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_5 with Double = js.native
-  /* 99 */ val NUMPAD_6: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_6 with Double = js.native
-  /* 100 */ val NUMPAD_7: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_7 with Double = js.native
-  /* 101 */ val NUMPAD_8: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_8 with Double = js.native
-  /* 102 */ val NUMPAD_9: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_9 with Double = js.native
-  /* 104 */ val NUMPAD_ADD: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_ADD with Double = js.native
-  /* 107 */ val NUMPAD_DECIMAL: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_DECIMAL with Double = js.native
-  /* 108 */ val NUMPAD_DIVIDE: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_DIVIDE with Double = js.native
-  /* 103 */ val NUMPAD_MULTIPLY: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_MULTIPLY with Double = js.native
-  /* 105 */ val NUMPAD_SEPARATOR: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_SEPARATOR with Double = js.native
-  /* 106 */ val NUMPAD_SUBTRACT: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NUMPAD_SUBTRACT with Double = js.native
-  /* 78 */ val NumLock: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.NumLock with Double = js.native
-  /* 92 */ val OEM_102: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.OEM_102 with Double = js.native
-  /* 91 */ val OEM_8: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.OEM_8 with Double = js.native
-  /* 12 */ val PageDown: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PageDown with Double = js.native
-  /* 11 */ val PageUp: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PageUp with Double = js.native
-  /* 7 */ val PauseBreak: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.PauseBreak with Double = js.native
-  /* 17 */ val RightArrow: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.RightArrow with Double = js.native
-  /* 79 */ val ScrollLock: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.ScrollLock with Double = js.native
-  /* 4 */ val Shift: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Shift with Double = js.native
-  /* 10 */ val Space: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Space with Double = js.native
-  /* 2 */ val Tab: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Tab with Double = js.native
-  /* 88 */ val US_BACKSLASH: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_BACKSLASH with Double = js.native
-  /* 86 */ val US_BACKTICK: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_BACKTICK with Double = js.native
-  /* 89 */ val US_CLOSE_SQUARE_BRACKET: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_CLOSE_SQUARE_BRACKET with Double = js.native
-  /* 82 */ val US_COMMA: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_COMMA with Double = js.native
-  /* 84 */ val US_DOT: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_DOT with Double = js.native
-  /* 81 */ val US_EQUAL: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_EQUAL with Double = js.native
-  /* 83 */ val US_MINUS: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_MINUS with Double = js.native
-  /* 87 */ val US_OPEN_SQUARE_BRACKET: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_OPEN_SQUARE_BRACKET with Double = js.native
-  /* 90 */ val US_QUOTE: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_QUOTE with Double = js.native
-  /* 80 */ val US_SEMICOLON: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_SEMICOLON with Double = js.native
-  /* 85 */ val US_SLASH: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.US_SLASH with Double = js.native
-  /* 0 */ val Unknown: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.Unknown with Double = js.native
-  /* 16 */ val UpArrow: typings.monacoDashEditor.monacoDashEditorMod.KeyCode.UpArrow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyCode with Double] = js.native
+  /* 110 */ @js.native
+  object ABNT_C1 extends TopLevel[ABNT_C1 with Double]
+  
+  /* 111 */ @js.native
+  object ABNT_C2 extends TopLevel[ABNT_C2 with Double]
+  
+  /* 6 */ @js.native
+  object Alt extends TopLevel[Alt with Double]
+  
+  /* 1 */ @js.native
+  object Backspace extends TopLevel[Backspace with Double]
+  
+  /* 8 */ @js.native
+  object CapsLock extends TopLevel[CapsLock with Double]
+  
+  /* 58 */ @js.native
+  object ContextMenu extends TopLevel[ContextMenu with Double]
+  
+  /* 5 */ @js.native
+  object Ctrl extends TopLevel[Ctrl with Double]
+  
+  /* 20 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 18 */ @js.native
+  object DownArrow extends TopLevel[DownArrow with Double]
+  
+  /* 13 */ @js.native
+  object End extends TopLevel[End with Double]
+  
+  /* 3 */ @js.native
+  object Enter extends TopLevel[Enter with Double]
+  
+  /* 9 */ @js.native
+  object Escape extends TopLevel[Escape with Double]
+  
+  /* 59 */ @js.native
+  object F1 extends TopLevel[F1 with Double]
+  
+  /* 68 */ @js.native
+  object F10 extends TopLevel[F10 with Double]
+  
+  /* 69 */ @js.native
+  object F11 extends TopLevel[F11 with Double]
+  
+  /* 70 */ @js.native
+  object F12 extends TopLevel[F12 with Double]
+  
+  /* 71 */ @js.native
+  object F13 extends TopLevel[F13 with Double]
+  
+  /* 72 */ @js.native
+  object F14 extends TopLevel[F14 with Double]
+  
+  /* 73 */ @js.native
+  object F15 extends TopLevel[F15 with Double]
+  
+  /* 74 */ @js.native
+  object F16 extends TopLevel[F16 with Double]
+  
+  /* 75 */ @js.native
+  object F17 extends TopLevel[F17 with Double]
+  
+  /* 76 */ @js.native
+  object F18 extends TopLevel[F18 with Double]
+  
+  /* 77 */ @js.native
+  object F19 extends TopLevel[F19 with Double]
+  
+  /* 60 */ @js.native
+  object F2 extends TopLevel[F2 with Double]
+  
+  /* 61 */ @js.native
+  object F3 extends TopLevel[F3 with Double]
+  
+  /* 62 */ @js.native
+  object F4 extends TopLevel[F4 with Double]
+  
+  /* 63 */ @js.native
+  object F5 extends TopLevel[F5 with Double]
+  
+  /* 64 */ @js.native
+  object F6 extends TopLevel[F6 with Double]
+  
+  /* 65 */ @js.native
+  object F7 extends TopLevel[F7 with Double]
+  
+  /* 66 */ @js.native
+  object F8 extends TopLevel[F8 with Double]
+  
+  /* 67 */ @js.native
+  object F9 extends TopLevel[F9 with Double]
+  
+  /* 14 */ @js.native
+  object Home extends TopLevel[Home with Double]
+  
+  /* 19 */ @js.native
+  object Insert extends TopLevel[Insert with Double]
+  
+  /* 21 */ @js.native
+  object KEY_0 extends TopLevel[KEY_0 with Double]
+  
+  /* 22 */ @js.native
+  object KEY_1 extends TopLevel[KEY_1 with Double]
+  
+  /* 23 */ @js.native
+  object KEY_2 extends TopLevel[KEY_2 with Double]
+  
+  /* 24 */ @js.native
+  object KEY_3 extends TopLevel[KEY_3 with Double]
+  
+  /* 25 */ @js.native
+  object KEY_4 extends TopLevel[KEY_4 with Double]
+  
+  /* 26 */ @js.native
+  object KEY_5 extends TopLevel[KEY_5 with Double]
+  
+  /* 27 */ @js.native
+  object KEY_6 extends TopLevel[KEY_6 with Double]
+  
+  /* 28 */ @js.native
+  object KEY_7 extends TopLevel[KEY_7 with Double]
+  
+  /* 29 */ @js.native
+  object KEY_8 extends TopLevel[KEY_8 with Double]
+  
+  /* 30 */ @js.native
+  object KEY_9 extends TopLevel[KEY_9 with Double]
+  
+  /* 31 */ @js.native
+  object KEY_A extends TopLevel[KEY_A with Double]
+  
+  /* 32 */ @js.native
+  object KEY_B extends TopLevel[KEY_B with Double]
+  
+  /* 33 */ @js.native
+  object KEY_C extends TopLevel[KEY_C with Double]
+  
+  /* 34 */ @js.native
+  object KEY_D extends TopLevel[KEY_D with Double]
+  
+  /* 35 */ @js.native
+  object KEY_E extends TopLevel[KEY_E with Double]
+  
+  /* 36 */ @js.native
+  object KEY_F extends TopLevel[KEY_F with Double]
+  
+  /* 37 */ @js.native
+  object KEY_G extends TopLevel[KEY_G with Double]
+  
+  /* 38 */ @js.native
+  object KEY_H extends TopLevel[KEY_H with Double]
+  
+  /* 39 */ @js.native
+  object KEY_I extends TopLevel[KEY_I with Double]
+  
+  /* 109 */ @js.native
+  object KEY_IN_COMPOSITION extends TopLevel[KEY_IN_COMPOSITION with Double]
+  
+  /* 40 */ @js.native
+  object KEY_J extends TopLevel[KEY_J with Double]
+  
+  /* 41 */ @js.native
+  object KEY_K extends TopLevel[KEY_K with Double]
+  
+  /* 42 */ @js.native
+  object KEY_L extends TopLevel[KEY_L with Double]
+  
+  /* 43 */ @js.native
+  object KEY_M extends TopLevel[KEY_M with Double]
+  
+  /* 44 */ @js.native
+  object KEY_N extends TopLevel[KEY_N with Double]
+  
+  /* 45 */ @js.native
+  object KEY_O extends TopLevel[KEY_O with Double]
+  
+  /* 46 */ @js.native
+  object KEY_P extends TopLevel[KEY_P with Double]
+  
+  /* 47 */ @js.native
+  object KEY_Q extends TopLevel[KEY_Q with Double]
+  
+  /* 48 */ @js.native
+  object KEY_R extends TopLevel[KEY_R with Double]
+  
+  /* 49 */ @js.native
+  object KEY_S extends TopLevel[KEY_S with Double]
+  
+  /* 50 */ @js.native
+  object KEY_T extends TopLevel[KEY_T with Double]
+  
+  /* 51 */ @js.native
+  object KEY_U extends TopLevel[KEY_U with Double]
+  
+  /* 52 */ @js.native
+  object KEY_V extends TopLevel[KEY_V with Double]
+  
+  /* 53 */ @js.native
+  object KEY_W extends TopLevel[KEY_W with Double]
+  
+  /* 54 */ @js.native
+  object KEY_X extends TopLevel[KEY_X with Double]
+  
+  /* 55 */ @js.native
+  object KEY_Y extends TopLevel[KEY_Y with Double]
+  
+  /* 56 */ @js.native
+  object KEY_Z extends TopLevel[KEY_Z with Double]
+  
+  /* 15 */ @js.native
+  object LeftArrow extends TopLevel[LeftArrow with Double]
+  
+  /* 112 */ @js.native
+  object MAX_VALUE extends TopLevel[MAX_VALUE with Double]
+  
+  /* 57 */ @js.native
+  object Meta extends TopLevel[Meta with Double]
+  
+  /* 93 */ @js.native
+  object NUMPAD_0 extends TopLevel[NUMPAD_0 with Double]
+  
+  /* 94 */ @js.native
+  object NUMPAD_1 extends TopLevel[NUMPAD_1 with Double]
+  
+  /* 95 */ @js.native
+  object NUMPAD_2 extends TopLevel[NUMPAD_2 with Double]
+  
+  /* 96 */ @js.native
+  object NUMPAD_3 extends TopLevel[NUMPAD_3 with Double]
+  
+  /* 97 */ @js.native
+  object NUMPAD_4 extends TopLevel[NUMPAD_4 with Double]
+  
+  /* 98 */ @js.native
+  object NUMPAD_5 extends TopLevel[NUMPAD_5 with Double]
+  
+  /* 99 */ @js.native
+  object NUMPAD_6 extends TopLevel[NUMPAD_6 with Double]
+  
+  /* 100 */ @js.native
+  object NUMPAD_7 extends TopLevel[NUMPAD_7 with Double]
+  
+  /* 101 */ @js.native
+  object NUMPAD_8 extends TopLevel[NUMPAD_8 with Double]
+  
+  /* 102 */ @js.native
+  object NUMPAD_9 extends TopLevel[NUMPAD_9 with Double]
+  
+  /* 104 */ @js.native
+  object NUMPAD_ADD extends TopLevel[NUMPAD_ADD with Double]
+  
+  /* 107 */ @js.native
+  object NUMPAD_DECIMAL extends TopLevel[NUMPAD_DECIMAL with Double]
+  
+  /* 108 */ @js.native
+  object NUMPAD_DIVIDE extends TopLevel[NUMPAD_DIVIDE with Double]
+  
+  /* 103 */ @js.native
+  object NUMPAD_MULTIPLY extends TopLevel[NUMPAD_MULTIPLY with Double]
+  
+  /* 105 */ @js.native
+  object NUMPAD_SEPARATOR extends TopLevel[NUMPAD_SEPARATOR with Double]
+  
+  /* 106 */ @js.native
+  object NUMPAD_SUBTRACT extends TopLevel[NUMPAD_SUBTRACT with Double]
+  
+  /* 78 */ @js.native
+  object NumLock extends TopLevel[NumLock with Double]
+  
+  /* 92 */ @js.native
+  object OEM_102 extends TopLevel[OEM_102 with Double]
+  
+  /* 91 */ @js.native
+  object OEM_8 extends TopLevel[OEM_8 with Double]
+  
+  /* 12 */ @js.native
+  object PageDown extends TopLevel[PageDown with Double]
+  
+  /* 11 */ @js.native
+  object PageUp extends TopLevel[PageUp with Double]
+  
+  /* 7 */ @js.native
+  object PauseBreak extends TopLevel[PauseBreak with Double]
+  
+  /* 17 */ @js.native
+  object RightArrow extends TopLevel[RightArrow with Double]
+  
+  /* 79 */ @js.native
+  object ScrollLock extends TopLevel[ScrollLock with Double]
+  
+  /* 4 */ @js.native
+  object Shift extends TopLevel[Shift with Double]
+  
+  /* 10 */ @js.native
+  object Space extends TopLevel[Space with Double]
+  
+  /* 2 */ @js.native
+  object Tab extends TopLevel[Tab with Double]
+  
+  /* 88 */ @js.native
+  object US_BACKSLASH extends TopLevel[US_BACKSLASH with Double]
+  
+  /* 86 */ @js.native
+  object US_BACKTICK extends TopLevel[US_BACKTICK with Double]
+  
+  /* 89 */ @js.native
+  object US_CLOSE_SQUARE_BRACKET extends TopLevel[US_CLOSE_SQUARE_BRACKET with Double]
+  
+  /* 82 */ @js.native
+  object US_COMMA extends TopLevel[US_COMMA with Double]
+  
+  /* 84 */ @js.native
+  object US_DOT extends TopLevel[US_DOT with Double]
+  
+  /* 81 */ @js.native
+  object US_EQUAL extends TopLevel[US_EQUAL with Double]
+  
+  /* 83 */ @js.native
+  object US_MINUS extends TopLevel[US_MINUS with Double]
+  
+  /* 87 */ @js.native
+  object US_OPEN_SQUARE_BRACKET extends TopLevel[US_OPEN_SQUARE_BRACKET with Double]
+  
+  /* 90 */ @js.native
+  object US_QUOTE extends TopLevel[US_QUOTE with Double]
+  
+  /* 80 */ @js.native
+  object US_SEMICOLON extends TopLevel[US_SEMICOLON with Double]
+  
+  /* 85 */ @js.native
+  object US_SLASH extends TopLevel[US_SLASH with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 16 */ @js.native
+  object UpArrow extends TopLevel[UpArrow with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atJimpCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atJimpCore.typesEtcMod.Bitmap
 import typings.atJimpCore.typesEtcMod.ImageCallback
 import typings.atJimpCore.typesEtcMod.URLOptions
@@ -35,7 +36,6 @@ object atJimpCoreMod extends js.Object {
     def this(w: Double, h: Double, background: Double, cb: ImageCallback[JimpConstructors]) = this()
   }
   
-  val default: Jimp = js.native
   def addConstants(constants: js.Tuple2[String, String | Double]): Unit = js.native
   def addConstants(constants: js.Tuple2[String, String | Double], jimpInstance: Jimp): Unit = js.native
   def addJimpMethods(methods: js.Tuple2[String, js.Function]): Unit = js.native
@@ -43,5 +43,8 @@ object atJimpCoreMod extends js.Object {
   def addType(mime: String, extensions: js.Array[String]): Unit = js.native
   def jimpEvChange(methodName: String, method: js.Function): Unit = js.native
   def jimpEvMethod(methodName: String, evName: String, method: js.Function): Unit = js.native
+  @js.native
+  object default extends TopLevel[Jimp]
+  
 }
 

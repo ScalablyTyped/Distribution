@@ -2,30 +2,15 @@ package typings.atAwsDashSdkClientDashLambdaDashNode.typesInvalidSubnetIDExcepti
 
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesInvokeExceptionsUnionMod.InvokeExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidSubnetIDException
   extends ServiceException[_InvalidSubnetIDExceptionDetails]
      with InvokeExceptionsUnion {
   @JSName("name")
-  var name_InvalidSubnetIDException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.InvalidSubnetIDException
-}
-
-object InvalidSubnetIDException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InvalidSubnetIDExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.InvalidSubnetIDException,
-    stack: String = null
-  ): InvalidSubnetIDException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvalidSubnetIDException]
-  }
+  var name_InvalidSubnetIDException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.InvalidSubnetIDException = js.native
 }
 

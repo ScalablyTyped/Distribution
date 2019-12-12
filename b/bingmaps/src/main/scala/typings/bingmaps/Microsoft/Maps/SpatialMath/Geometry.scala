@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps.SpatialMath
 
+import org.scalablytyped.runtime.TopLevel
 import typings.bingmaps.Microsoft.Maps.IPolygonOptions
 import typings.bingmaps.Microsoft.Maps.IPolylineOptions
 import typings.bingmaps.Microsoft.Maps.IPrimitive
@@ -8,6 +9,9 @@ import typings.bingmaps.Microsoft.Maps.LocationRect
 import typings.bingmaps.Microsoft.Maps.Polygon
 import typings.bingmaps.Microsoft.Maps.Polyline
 import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap
+import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Flat
+import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Round
+import typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -309,11 +313,17 @@ object Geometry extends js.Object {
     @js.native
     sealed trait Square extends BufferEndCap
     
-    /* 1 */ val Flat: typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Flat with Double = js.native
-    /* 0 */ val Round: typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Round with Double = js.native
-    /* 2 */ val Square: typings.bingmaps.Microsoft.Maps.SpatialMath.Geometry.BufferEndCap.Square with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[BufferEndCap with Double] = js.native
+    /* 1 */ @js.native
+    object Flat extends TopLevel[Flat with Double]
+    
+    /* 0 */ @js.native
+    object Round extends TopLevel[Round with Double]
+    
+    /* 2 */ @js.native
+    object Square extends TopLevel[Square with Double]
+    
   }
   
 }

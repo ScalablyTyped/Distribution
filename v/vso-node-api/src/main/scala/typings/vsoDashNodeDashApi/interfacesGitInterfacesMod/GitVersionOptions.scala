@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.FirstParent
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.None
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.PreviousChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object GitVersionOptions extends js.Object {
   @js.native
   sealed trait PreviousChange extends GitVersionOptions
   
-  /* 2 */ val FirstParent: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.FirstParent with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.None with Double = js.native
-  /* 1 */ val PreviousChange: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitVersionOptions.PreviousChange with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitVersionOptions with Double] = js.native
+  /* 2 */ @js.native
+  object FirstParent extends TopLevel[FirstParent with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object PreviousChange extends TopLevel[PreviousChange with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.hyperfocal
+import typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.infinity
+import typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.nearest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ManualFocusDistance extends js.Object {
   @js.native
   sealed trait nearest extends ManualFocusDistance
   
-  /* 1 */ val hyperfocal: typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.hyperfocal with Double = js.native
-  /* 0 */ val infinity: typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.infinity with Double = js.native
-  /* 2 */ val nearest: typings.winrtDashUwp.Windows.Media.Devices.ManualFocusDistance.nearest with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ManualFocusDistance with Double] = js.native
+  /* 1 */ @js.native
+  object hyperfocal extends TopLevel[hyperfocal with Double]
+  
+  /* 0 */ @js.native
+  object infinity extends TopLevel[infinity with Double]
+  
+  /* 2 */ @js.native
+  object nearest extends TopLevel[nearest with Double]
+  
 }
 

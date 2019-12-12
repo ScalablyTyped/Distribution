@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prom-client"
-version := "11.5.3-cb1901"
+version := "11.5.3-70e022"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.autoConfigured
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.default
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.feeder
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.flatbed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ImageScannerScanSource extends js.Object {
   @js.native
   sealed trait flatbed extends ImageScannerScanSource
   
-  /* 3 */ val autoConfigured: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.autoConfigured with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.default with Double = js.native
-  /* 2 */ val feeder: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.feeder with Double = js.native
-  /* 1 */ val flatbed: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerScanSource.flatbed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageScannerScanSource with Double] = js.native
+  /* 3 */ @js.native
+  object autoConfigured extends TopLevel[autoConfigured with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object feeder extends TopLevel[feeder with Double]
+  
+  /* 1 */ @js.native
+  object flatbed extends TopLevel[flatbed with Double]
+  
 }
 

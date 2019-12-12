@@ -1,5 +1,19 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_BASIC
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_FLAC
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_L16
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MP3
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MPEG
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MULAW
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG_CODECS_OPUS
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG_CODECS_VORBIS
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WAV
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM_CODECS_OPUS
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM_CODECS_VORBIS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,20 +64,46 @@ object Accept extends js.Object {
   @js.native
   sealed trait AUDIO_WEBM_CODECS_VORBIS extends Accept
   
-  /* "audio/basic" */ val AUDIO_BASIC: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_BASIC with String = js.native
-  /* "audio/flac" */ val AUDIO_FLAC: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_FLAC with String = js.native
-  /* "audio/l16" */ val AUDIO_L16: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_L16 with String = js.native
-  /* "audio/mp3" */ val AUDIO_MP3: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MP3 with String = js.native
-  /* "audio/mpeg" */ val AUDIO_MPEG: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MPEG with String = js.native
-  /* "audio/mulaw" */ val AUDIO_MULAW: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_MULAW with String = js.native
-  /* "audio/ogg" */ val AUDIO_OGG: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG with String = js.native
-  /* "audio/ogg;codecs=opus" */ val AUDIO_OGG_CODECS_OPUS: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG_CODECS_OPUS with String = js.native
-  /* "audio/ogg;codecs=vorbis" */ val AUDIO_OGG_CODECS_VORBIS: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_OGG_CODECS_VORBIS with String = js.native
-  /* "audio/wav" */ val AUDIO_WAV: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WAV with String = js.native
-  /* "audio/webm" */ val AUDIO_WEBM: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM with String = js.native
-  /* "audio/webm;codecs=opus" */ val AUDIO_WEBM_CODECS_OPUS: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM_CODECS_OPUS with String = js.native
-  /* "audio/webm;codecs=vorbis" */ val AUDIO_WEBM_CODECS_VORBIS: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.SynthesizeConstants.Accept.AUDIO_WEBM_CODECS_VORBIS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Accept with String] = js.native
+  /* "audio/basic" */ @js.native
+  object AUDIO_BASIC extends TopLevel[AUDIO_BASIC with String]
+  
+  /* "audio/flac" */ @js.native
+  object AUDIO_FLAC extends TopLevel[AUDIO_FLAC with String]
+  
+  /* "audio/l16" */ @js.native
+  object AUDIO_L16 extends TopLevel[AUDIO_L16 with String]
+  
+  /* "audio/mp3" */ @js.native
+  object AUDIO_MP3 extends TopLevel[AUDIO_MP3 with String]
+  
+  /* "audio/mpeg" */ @js.native
+  object AUDIO_MPEG extends TopLevel[AUDIO_MPEG with String]
+  
+  /* "audio/mulaw" */ @js.native
+  object AUDIO_MULAW extends TopLevel[AUDIO_MULAW with String]
+  
+  /* "audio/ogg" */ @js.native
+  object AUDIO_OGG extends TopLevel[AUDIO_OGG with String]
+  
+  /* "audio/ogg;codecs=opus" */ @js.native
+  object AUDIO_OGG_CODECS_OPUS extends TopLevel[AUDIO_OGG_CODECS_OPUS with String]
+  
+  /* "audio/ogg;codecs=vorbis" */ @js.native
+  object AUDIO_OGG_CODECS_VORBIS extends TopLevel[AUDIO_OGG_CODECS_VORBIS with String]
+  
+  /* "audio/wav" */ @js.native
+  object AUDIO_WAV extends TopLevel[AUDIO_WAV with String]
+  
+  /* "audio/webm" */ @js.native
+  object AUDIO_WEBM extends TopLevel[AUDIO_WEBM with String]
+  
+  /* "audio/webm;codecs=opus" */ @js.native
+  object AUDIO_WEBM_CODECS_OPUS extends TopLevel[AUDIO_WEBM_CODECS_OPUS with String]
+  
+  /* "audio/webm;codecs=vorbis" */ @js.native
+  object AUDIO_WEBM_CODECS_VORBIS extends TopLevel[AUDIO_WEBM_CODECS_VORBIS with String]
+  
 }
 

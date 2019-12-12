@@ -1,5 +1,10 @@
 package typings.ndnDashJs.nameMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ndnDashJs.nameMod.ComponentType.GENERIC
+import typings.ndnDashJs.nameMod.ComponentType.IMPLICIT_SHA256_DIGEST
+import typings.ndnDashJs.nameMod.ComponentType.OTHER_CODE
+import typings.ndnDashJs.nameMod.ComponentType.PARAMETERS_SHA256_DIGEST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ComponentType extends js.Object {
   @js.native
   sealed trait PARAMETERS_SHA256_DIGEST extends ComponentType
   
-  /* 8 */ val GENERIC: typings.ndnDashJs.nameMod.ComponentType.GENERIC with Double = js.native
-  /* 1 */ val IMPLICIT_SHA256_DIGEST: typings.ndnDashJs.nameMod.ComponentType.IMPLICIT_SHA256_DIGEST with Double = js.native
-  /* 0x7fff */ val OTHER_CODE: typings.ndnDashJs.nameMod.ComponentType.OTHER_CODE with Double = js.native
-  /* 2 */ val PARAMETERS_SHA256_DIGEST: typings.ndnDashJs.nameMod.ComponentType.PARAMETERS_SHA256_DIGEST with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ComponentType with Double] = js.native
+  /* 8 */ @js.native
+  object GENERIC extends TopLevel[GENERIC with Double]
+  
+  /* 1 */ @js.native
+  object IMPLICIT_SHA256_DIGEST extends TopLevel[IMPLICIT_SHA256_DIGEST with Double]
+  
+  /* 0x7fff */ @js.native
+  object OTHER_CODE extends TopLevel[OTHER_CODE with Double]
+  
+  /* 2 */ @js.native
+  object PARAMETERS_SHA256_DIGEST extends TopLevel[PARAMETERS_SHA256_DIGEST with Double]
+  
 }
 

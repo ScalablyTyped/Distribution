@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-permissions"
-version := "7.0.0-b9d1f0"
+version := "7.0.0-350909"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,12 +13,13 @@ import scala.scalajs.js.annotation._
   * correctly in managed contexts.
   *
   */
+@js.native
 trait global extends js.Object {
   /**
     *
     */
   @JSName("$")
-  def $(): js.Any
+  def $(): js.Any = js.native
   /**
     *
     * @param start
@@ -26,33 +27,18 @@ trait global extends js.Object {
     * @param responseCode
     * @param errorMsg
     */
-  def GoogleSearchStoreCallback_undefined_NaN(start: js.Any, data: js.Any, responseCode: js.Any, errorMsg: js.Any): Unit
+  def GoogleSearchStoreCallback_undefined_NaN(start: js.Any, data: js.Any, responseCode: js.Any, errorMsg: js.Any): Unit = js.native
   /**
     *
     */
-  def jQuery(): js.Any
+  def jQuery(): js.Any = js.native
   /**
     *
     */
-  def swfIsInHTML(): Unit
+  def swfIsInHTML(): Unit = js.native
   /**
     *
     */
-  def undefined_onload(): Unit
-}
-
-object global {
-  @scala.inline
-  def apply(
-    $: () => js.Any,
-    GoogleSearchStoreCallback_undefined_NaN: (js.Any, js.Any, js.Any, js.Any) => Unit,
-    jQuery: () => js.Any,
-    swfIsInHTML: () => Unit,
-    undefined_onload: () => Unit
-  ): global = {
-    val __obj = js.Dynamic.literal($ = js.Any.fromFunction0($), GoogleSearchStoreCallback_undefined_NaN = js.Any.fromFunction4(GoogleSearchStoreCallback_undefined_NaN), jQuery = js.Any.fromFunction0(jQuery), swfIsInHTML = js.Any.fromFunction0(swfIsInHTML), undefined_onload = js.Any.fromFunction0(undefined_onload))
-  
-    __obj.asInstanceOf[global]
-  }
+  def undefined_onload(): Unit = js.native
 }
 

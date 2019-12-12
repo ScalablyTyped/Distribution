@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.Custom
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.Derived
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.System
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object WorkItemTypeClass extends js.Object {
   @js.native
   sealed trait System extends WorkItemTypeClass
   
-  /* 2 */ val Custom: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.Custom with Double = js.native
-  /* 1 */ val Derived: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.Derived with Double = js.native
-  /* 0 */ val System: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.WorkItemTypeClass.System with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WorkItemTypeClass with Double] = js.native
+  /* 2 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 1 */ @js.native
+  object Derived extends TopLevel[Derived with Double]
+  
+  /* 0 */ @js.native
+  object System extends TopLevel[System with Double]
+  
 }
 

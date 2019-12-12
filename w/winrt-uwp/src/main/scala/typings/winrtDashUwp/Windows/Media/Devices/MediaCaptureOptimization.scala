@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.default
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latency
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenPower
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenQuality
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.power
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.powerAndQuality
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.quality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object MediaCaptureOptimization extends js.Object {
   @js.native
   sealed trait quality extends MediaCaptureOptimization
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.default with Double = js.native
-  /* 2 */ val latency: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latency with Double = js.native
-  /* 5 */ val latencyThenPower: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenPower with Double = js.native
-  /* 4 */ val latencyThenQuality: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.latencyThenQuality with Double = js.native
-  /* 3 */ val power: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.power with Double = js.native
-  /* 6 */ val powerAndQuality: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.powerAndQuality with Double = js.native
-  /* 1 */ val quality: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureOptimization.quality with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaCaptureOptimization with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object latency extends TopLevel[latency with Double]
+  
+  /* 5 */ @js.native
+  object latencyThenPower extends TopLevel[latencyThenPower with Double]
+  
+  /* 4 */ @js.native
+  object latencyThenQuality extends TopLevel[latencyThenQuality with Double]
+  
+  /* 3 */ @js.native
+  object power extends TopLevel[power with Double]
+  
+  /* 6 */ @js.native
+  object powerAndQuality extends TopLevel[powerAndQuality with Double]
+  
+  /* 1 */ @js.native
+  object quality extends TopLevel[quality with Double]
+  
 }
 

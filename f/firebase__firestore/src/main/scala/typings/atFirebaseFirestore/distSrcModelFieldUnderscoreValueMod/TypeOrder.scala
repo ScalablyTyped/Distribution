@@ -1,5 +1,6 @@
 package typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +41,67 @@ object TypeOrder extends js.Object {
   @js.native
   sealed trait TimestampValue extends TypeOrder
   
-  /* 8 */ val ArrayValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.ArrayValue with Double = js.native
-  /* 5 */ val BlobValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.BlobValue with Double = js.native
-  /* 1 */ val BooleanValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.BooleanValue with Double = js.native
-  /* 7 */ val GeoPointValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.GeoPointValue with Double = js.native
-  /* 0 */ val NullValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.NullValue with Double = js.native
-  /* 2 */ val NumberValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.NumberValue with Double = js.native
-  /* 9 */ val ObjectValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.ObjectValue with Double = js.native
-  /* 6 */ val RefValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.RefValue with Double = js.native
-  /* 4 */ val StringValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.StringValue with Double = js.native
-  /* 3 */ val TimestampValue: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.TimestampValue with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeOrder with Double] = js.native
+  /* 8 */ @js.native
+  object ArrayValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.ArrayValue with Double
+        ]
+  
+  /* 5 */ @js.native
+  object BlobValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.BlobValue with Double
+        ]
+  
+  /* 1 */ @js.native
+  object BooleanValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.BooleanValue with Double
+        ]
+  
+  /* 7 */ @js.native
+  object GeoPointValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.GeoPointValue with Double
+        ]
+  
+  /* 0 */ @js.native
+  object NullValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.NullValue with Double
+        ]
+  
+  /* 2 */ @js.native
+  object NumberValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.NumberValue with Double
+        ]
+  
+  /* 9 */ @js.native
+  object ObjectValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.ObjectValue with Double
+        ]
+  
+  /* 6 */ @js.native
+  object RefValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.RefValue with Double
+        ]
+  
+  /* 4 */ @js.native
+  object StringValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.StringValue with Double
+        ]
+  
+  /* 3 */ @js.native
+  object TimestampValue
+    extends TopLevel[
+          typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.TypeOrder.TimestampValue with Double
+        ]
+  
 }
 

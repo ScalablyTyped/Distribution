@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ConnectorType.curve
+import typings.officeDashJs.Excel.ConnectorType.elbow
+import typings.officeDashJs.Excel.ConnectorType.straight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ConnectorType extends js.Object {
   @js.native
   sealed trait straight extends ConnectorType
   
-  /* "Curve" */ val curve: typings.officeDashJs.Excel.ConnectorType.curve with String = js.native
-  /* "Elbow" */ val elbow: typings.officeDashJs.Excel.ConnectorType.elbow with String = js.native
-  /* "Straight" */ val straight: typings.officeDashJs.Excel.ConnectorType.straight with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConnectorType with String] = js.native
+  /* "Curve" */ @js.native
+  object curve extends TopLevel[curve with String]
+  
+  /* "Elbow" */ @js.native
+  object elbow extends TopLevel[elbow with String]
+  
+  /* "Straight" */ @js.native
+  object straight extends TopLevel[straight with String]
+  
 }
 

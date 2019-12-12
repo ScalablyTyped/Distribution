@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "openapi-security-handler"
-version := "2.0.4-e6ebd1"
+version := "2.0.4-78e153"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-559860",
+  "org.scalablytyped" %%% "openapi-types" % "1.3.5-cde569",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

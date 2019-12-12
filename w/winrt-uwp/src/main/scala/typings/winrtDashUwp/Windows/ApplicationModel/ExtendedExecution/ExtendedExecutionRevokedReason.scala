@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.resumed
+import typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.systemPolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ExtendedExecutionRevokedReason extends js.Object {
   @js.native
   sealed trait systemPolicy extends ExtendedExecutionRevokedReason
   
-  /* 0 */ val resumed: typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.resumed with Double = js.native
-  /* 1 */ val systemPolicy: typings.winrtDashUwp.Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedReason.systemPolicy with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtendedExecutionRevokedReason with Double] = js.native
+  /* 0 */ @js.native
+  object resumed extends TopLevel[resumed with Double]
+  
+  /* 1 */ @js.native
+  object systemPolicy extends TopLevel[systemPolicy with Double]
+  
 }
 

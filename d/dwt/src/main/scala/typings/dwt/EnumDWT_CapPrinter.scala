@@ -1,5 +1,14 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMAFTER
+import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMBEFORE
+import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPAFTER
+import typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPBEFORE
+import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMAFTER
+import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMBEFORE
+import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPAFTER
+import typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPBEFORE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,15 +44,31 @@ object EnumDWT_CapPrinter extends js.Object {
   @js.native
   sealed trait TWPR_IMPRINTERTOPBEFORE extends EnumDWT_CapPrinter
   
-  /* 7 */ val TWPR_ENDORSERBOTTOMAFTER: typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMAFTER with Double = js.native
-  /* 6 */ val TWPR_ENDORSERBOTTOMBEFORE: typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERBOTTOMBEFORE with Double = js.native
-  /* 5 */ val TWPR_ENDORSERTOPAFTER: typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPAFTER with Double = js.native
-  /* 4 */ val TWPR_ENDORSERTOPBEFORE: typings.dwt.EnumDWT_CapPrinter.TWPR_ENDORSERTOPBEFORE with Double = js.native
-  /* 3 */ val TWPR_IMPRINTERBOTTOMAFTER: typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMAFTER with Double = js.native
-  /* 2 */ val TWPR_IMPRINTERBOTTOMBEFORE: typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERBOTTOMBEFORE with Double = js.native
-  /* 1 */ val TWPR_IMPRINTERTOPAFTER: typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPAFTER with Double = js.native
-  /* 0 */ val TWPR_IMPRINTERTOPBEFORE: typings.dwt.EnumDWT_CapPrinter.TWPR_IMPRINTERTOPBEFORE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapPrinter with Double] = js.native
+  /* 7 */ @js.native
+  object TWPR_ENDORSERBOTTOMAFTER extends TopLevel[TWPR_ENDORSERBOTTOMAFTER with Double]
+  
+  /* 6 */ @js.native
+  object TWPR_ENDORSERBOTTOMBEFORE extends TopLevel[TWPR_ENDORSERBOTTOMBEFORE with Double]
+  
+  /* 5 */ @js.native
+  object TWPR_ENDORSERTOPAFTER extends TopLevel[TWPR_ENDORSERTOPAFTER with Double]
+  
+  /* 4 */ @js.native
+  object TWPR_ENDORSERTOPBEFORE extends TopLevel[TWPR_ENDORSERTOPBEFORE with Double]
+  
+  /* 3 */ @js.native
+  object TWPR_IMPRINTERBOTTOMAFTER extends TopLevel[TWPR_IMPRINTERBOTTOMAFTER with Double]
+  
+  /* 2 */ @js.native
+  object TWPR_IMPRINTERBOTTOMBEFORE extends TopLevel[TWPR_IMPRINTERBOTTOMBEFORE with Double]
+  
+  /* 1 */ @js.native
+  object TWPR_IMPRINTERTOPAFTER extends TopLevel[TWPR_IMPRINTERTOPAFTER with Double]
+  
+  /* 0 */ @js.native
+  object TWPR_IMPRINTERTOPBEFORE extends TopLevel[TWPR_IMPRINTERTOPBEFORE with Double]
+  
 }
 

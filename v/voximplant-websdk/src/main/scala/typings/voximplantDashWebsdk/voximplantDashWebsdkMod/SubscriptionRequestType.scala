@@ -1,5 +1,8 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.SubscriptionRequestType.Subscribe
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.SubscriptionRequestType.Unsubscribe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object SubscriptionRequestType extends js.Object {
   @js.native
   sealed trait Unsubscribe extends SubscriptionRequestType
   
-  /* 0 */ val Subscribe: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.SubscriptionRequestType.Subscribe with Double = js.native
-  /* 1 */ val Unsubscribe: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.SubscriptionRequestType.Unsubscribe with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionRequestType with Double] = js.native
+  /* 0 */ @js.native
+  object Subscribe extends TopLevel[Subscribe with Double]
+  
+  /* 1 */ @js.native
+  object Unsubscribe extends TopLevel[Unsubscribe with Double]
+  
 }
 

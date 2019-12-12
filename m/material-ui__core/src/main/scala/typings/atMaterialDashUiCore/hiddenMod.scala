@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object hiddenMod extends js.Object {
     def this(props: HiddenProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[HiddenProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[HiddenProps]]
+  
 }
 

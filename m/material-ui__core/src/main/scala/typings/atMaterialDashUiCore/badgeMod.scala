@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.badgeBadgeMod.BadgeProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object badgeMod extends js.Object {
     def this(props: BadgeProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[BadgeProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[BadgeProps]]
+  
 }
 

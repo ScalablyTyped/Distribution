@@ -1,5 +1,17 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ScriptTarget.ES2015
+import typings.typescript.typescriptMod.ScriptTarget.ES2016
+import typings.typescript.typescriptMod.ScriptTarget.ES2017
+import typings.typescript.typescriptMod.ScriptTarget.ES2018
+import typings.typescript.typescriptMod.ScriptTarget.ES2019
+import typings.typescript.typescriptMod.ScriptTarget.ES2020
+import typings.typescript.typescriptMod.ScriptTarget.ES3
+import typings.typescript.typescriptMod.ScriptTarget.ES5
+import typings.typescript.typescriptMod.ScriptTarget.ESNext
+import typings.typescript.typescriptMod.ScriptTarget.JSON
+import typings.typescript.typescriptMod.ScriptTarget.Latest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object ScriptTarget extends js.Object {
   @js.native
   sealed trait Latest extends ScriptTarget
   
-  /* 2 */ val ES2015: typings.typescript.typescriptMod.ScriptTarget.ES2015 with Double = js.native
-  /* 3 */ val ES2016: typings.typescript.typescriptMod.ScriptTarget.ES2016 with Double = js.native
-  /* 4 */ val ES2017: typings.typescript.typescriptMod.ScriptTarget.ES2017 with Double = js.native
-  /* 5 */ val ES2018: typings.typescript.typescriptMod.ScriptTarget.ES2018 with Double = js.native
-  /* 6 */ val ES2019: typings.typescript.typescriptMod.ScriptTarget.ES2019 with Double = js.native
-  /* 7 */ val ES2020: typings.typescript.typescriptMod.ScriptTarget.ES2020 with Double = js.native
-  /* 0 */ val ES3: typings.typescript.typescriptMod.ScriptTarget.ES3 with Double = js.native
-  /* 1 */ val ES5: typings.typescript.typescriptMod.ScriptTarget.ES5 with Double = js.native
-  /* 99 */ val ESNext: typings.typescript.typescriptMod.ScriptTarget.ESNext with Double = js.native
-  /* 100 */ val JSON: typings.typescript.typescriptMod.ScriptTarget.JSON with Double = js.native
-  /* 99 */ val Latest: typings.typescript.typescriptMod.ScriptTarget.Latest with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScriptTarget with Double] = js.native
+  /* 2 */ @js.native
+  object ES2015 extends TopLevel[ES2015 with Double]
+  
+  /* 3 */ @js.native
+  object ES2016 extends TopLevel[ES2016 with Double]
+  
+  /* 4 */ @js.native
+  object ES2017 extends TopLevel[ES2017 with Double]
+  
+  /* 5 */ @js.native
+  object ES2018 extends TopLevel[ES2018 with Double]
+  
+  /* 6 */ @js.native
+  object ES2019 extends TopLevel[ES2019 with Double]
+  
+  /* 7 */ @js.native
+  object ES2020 extends TopLevel[ES2020 with Double]
+  
+  /* 0 */ @js.native
+  object ES3 extends TopLevel[ES3 with Double]
+  
+  /* 1 */ @js.native
+  object ES5 extends TopLevel[ES5 with Double]
+  
+  /* 99 */ @js.native
+  object ESNext extends TopLevel[ESNext with Double]
+  
+  /* 100 */ @js.native
+  object JSON extends TopLevel[JSON with Double]
+  
+  /* 99 */ @js.native
+  object Latest extends TopLevel[Latest with Double]
+  
 }
 

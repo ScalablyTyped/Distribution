@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.BacklogInError
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.DoesntExistOrAccessDenied
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamFieldsExceeded
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamsExceeded
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MissingTeamFieldValue
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.NoIterationsExist
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.OK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object TimelineTeamStatusCode extends js.Object {
   @js.native
   sealed trait OK extends TimelineTeamStatusCode
   
-  /* 4 */ val BacklogInError: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.BacklogInError with Double = js.native
-  /* 1 */ val DoesntExistOrAccessDenied: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.DoesntExistOrAccessDenied with Double = js.native
-  /* 3 */ val MaxTeamFieldsExceeded: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamFieldsExceeded with Double = js.native
-  /* 2 */ val MaxTeamsExceeded: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MaxTeamsExceeded with Double = js.native
-  /* 5 */ val MissingTeamFieldValue: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.MissingTeamFieldValue with Double = js.native
-  /* 6 */ val NoIterationsExist: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.NoIterationsExist with Double = js.native
-  /* 0 */ val OK: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineTeamStatusCode.OK with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineTeamStatusCode with Double] = js.native
+  /* 4 */ @js.native
+  object BacklogInError extends TopLevel[BacklogInError with Double]
+  
+  /* 1 */ @js.native
+  object DoesntExistOrAccessDenied extends TopLevel[DoesntExistOrAccessDenied with Double]
+  
+  /* 3 */ @js.native
+  object MaxTeamFieldsExceeded extends TopLevel[MaxTeamFieldsExceeded with Double]
+  
+  /* 2 */ @js.native
+  object MaxTeamsExceeded extends TopLevel[MaxTeamsExceeded with Double]
+  
+  /* 5 */ @js.native
+  object MissingTeamFieldValue extends TopLevel[MissingTeamFieldValue with Double]
+  
+  /* 6 */ @js.native
+  object NoIterationsExist extends TopLevel[NoIterationsExist with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
 }
 

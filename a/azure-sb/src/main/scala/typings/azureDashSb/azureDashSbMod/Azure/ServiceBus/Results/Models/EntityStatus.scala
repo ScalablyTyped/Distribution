@@ -1,5 +1,15 @@
 package typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models
 
+import org.scalablytyped.runtime.TopLevel
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Active
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Creating
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Deleting
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Disabled
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.ReceiveDisabled
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Renaming
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Restoring
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.SendDisabled
+import typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object EntityStatus extends js.Object {
   @js.native
   sealed trait Unknown extends EntityStatus
   
-  /* "Active" */ val Active: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Active with String = js.native
-  /* "Creating" */ val Creating: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Creating with String = js.native
-  /* "Deleting" */ val Deleting: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Deleting with String = js.native
-  /* "Disabled" */ val Disabled: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Disabled with String = js.native
-  /* "ReceiveDisabled" */ val ReceiveDisabled: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.ReceiveDisabled with String = js.native
-  /* "Renaming" */ val Renaming: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Renaming with String = js.native
-  /* "Restoring" */ val Restoring: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Restoring with String = js.native
-  /* "SendDisabled" */ val SendDisabled: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.SendDisabled with String = js.native
-  /* "Unknown" */ val Unknown: typings.azureDashSb.azureDashSbMod.Azure.ServiceBus.Results.Models.EntityStatus.Unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EntityStatus with String] = js.native
+  /* "Active" */ @js.native
+  object Active extends TopLevel[Active with String]
+  
+  /* "Creating" */ @js.native
+  object Creating extends TopLevel[Creating with String]
+  
+  /* "Deleting" */ @js.native
+  object Deleting extends TopLevel[Deleting with String]
+  
+  /* "Disabled" */ @js.native
+  object Disabled extends TopLevel[Disabled with String]
+  
+  /* "ReceiveDisabled" */ @js.native
+  object ReceiveDisabled extends TopLevel[ReceiveDisabled with String]
+  
+  /* "Renaming" */ @js.native
+  object Renaming extends TopLevel[Renaming with String]
+  
+  /* "Restoring" */ @js.native
+  object Restoring extends TopLevel[Restoring with String]
+  
+  /* "SendDisabled" */ @js.native
+  object SendDisabled extends TopLevel[SendDisabled with String]
+  
+  /* "Unknown" */ @js.native
+  object Unknown extends TopLevel[Unknown with String]
+  
 }
 

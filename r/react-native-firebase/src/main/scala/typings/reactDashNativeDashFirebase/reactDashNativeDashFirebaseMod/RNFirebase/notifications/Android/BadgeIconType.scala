@@ -1,5 +1,9 @@
 package typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.Large
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.None
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BadgeIconType extends js.Object {
   @js.native
   sealed trait Small extends BadgeIconType
   
-  /* 2 */ val Large: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.Large with Double = js.native
-  /* 0 */ val None: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.None with Double = js.native
-  /* 1 */ val Small: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.BadgeIconType.Small with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BadgeIconType with Double] = js.native
+  /* 2 */ @js.native
+  object Large extends TopLevel[Large with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Small extends TopLevel[Small with Double]
+  
 }
 

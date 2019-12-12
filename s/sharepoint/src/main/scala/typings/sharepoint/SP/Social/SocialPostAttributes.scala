@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialPostAttributes.canDelete
+import typings.sharepoint.SP.Social.SocialPostAttributes.canFollowUp
+import typings.sharepoint.SP.Social.SocialPostAttributes.canLike
+import typings.sharepoint.SP.Social.SocialPostAttributes.none
+import typings.sharepoint.SP.Social.SocialPostAttributes.useAuthorImage
+import typings.sharepoint.SP.Social.SocialPostAttributes.useSmallImage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +36,25 @@ object SocialPostAttributes extends js.Object {
   @js.native
   sealed trait useSmallImage extends SocialPostAttributes
   
-  /* 2 */ val canDelete: typings.sharepoint.SP.Social.SocialPostAttributes.canDelete with Double = js.native
-  /* 5 */ val canFollowUp: typings.sharepoint.SP.Social.SocialPostAttributes.canFollowUp with Double = js.native
-  /* 1 */ val canLike: typings.sharepoint.SP.Social.SocialPostAttributes.canLike with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.Social.SocialPostAttributes.none with Double = js.native
-  /* 3 */ val useAuthorImage: typings.sharepoint.SP.Social.SocialPostAttributes.useAuthorImage with Double = js.native
-  /* 4 */ val useSmallImage: typings.sharepoint.SP.Social.SocialPostAttributes.useSmallImage with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialPostAttributes with Double] = js.native
+  /* 2 */ @js.native
+  object canDelete extends TopLevel[canDelete with Double]
+  
+  /* 5 */ @js.native
+  object canFollowUp extends TopLevel[canFollowUp with Double]
+  
+  /* 1 */ @js.native
+  object canLike extends TopLevel[canLike with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object useAuthorImage extends TopLevel[useAuthorImage with Double]
+  
+  /* 4 */ @js.native
+  object useSmallImage extends TopLevel[useSmallImage with Double]
+  
 }
 

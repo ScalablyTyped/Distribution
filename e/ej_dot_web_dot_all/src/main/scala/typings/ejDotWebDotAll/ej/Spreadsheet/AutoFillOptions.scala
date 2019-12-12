@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.CopyCells
+import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillFormattingOnly
+import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillSeries
+import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillWithoutFormatting
+import typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FlashFill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object AutoFillOptions extends js.Object {
   @js.native
   sealed trait FlashFill extends AutoFillOptions
   
-  /* 0 */ val CopyCells: typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.CopyCells with Double = js.native
-  /* 2 */ val FillFormattingOnly: typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillFormattingOnly with Double = js.native
-  /* 1 */ val FillSeries: typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillSeries with Double = js.native
-  /* 3 */ val FillWithoutFormatting: typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FillWithoutFormatting with Double = js.native
-  /* 4 */ val FlashFill: typings.ejDotWebDotAll.ej.Spreadsheet.AutoFillOptions.FlashFill with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AutoFillOptions with Double] = js.native
+  /* 0 */ @js.native
+  object CopyCells extends TopLevel[CopyCells with Double]
+  
+  /* 2 */ @js.native
+  object FillFormattingOnly extends TopLevel[FillFormattingOnly with Double]
+  
+  /* 1 */ @js.native
+  object FillSeries extends TopLevel[FillSeries with Double]
+  
+  /* 3 */ @js.native
+  object FillWithoutFormatting extends TopLevel[FillWithoutFormatting with Double]
+  
+  /* 4 */ @js.native
+  object FlashFill extends TopLevel[FlashFill with Double]
+  
 }
 

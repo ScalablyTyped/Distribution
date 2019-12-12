@@ -1,5 +1,14 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.HorizontalAlignment.center
+import typings.officeDashJs.Excel.HorizontalAlignment.centerAcrossSelection
+import typings.officeDashJs.Excel.HorizontalAlignment.distributed
+import typings.officeDashJs.Excel.HorizontalAlignment.fill
+import typings.officeDashJs.Excel.HorizontalAlignment.general
+import typings.officeDashJs.Excel.HorizontalAlignment.justify
+import typings.officeDashJs.Excel.HorizontalAlignment.left
+import typings.officeDashJs.Excel.HorizontalAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object HorizontalAlignment extends js.Object {
   @js.native
   sealed trait right extends HorizontalAlignment
   
-  /* "Center" */ val center: typings.officeDashJs.Excel.HorizontalAlignment.center with String = js.native
-  /* "CenterAcrossSelection" */ val centerAcrossSelection: typings.officeDashJs.Excel.HorizontalAlignment.centerAcrossSelection with String = js.native
-  /* "Distributed" */ val distributed: typings.officeDashJs.Excel.HorizontalAlignment.distributed with String = js.native
-  /* "Fill" */ val fill: typings.officeDashJs.Excel.HorizontalAlignment.fill with String = js.native
-  /* "General" */ val general: typings.officeDashJs.Excel.HorizontalAlignment.general with String = js.native
-  /* "Justify" */ val justify: typings.officeDashJs.Excel.HorizontalAlignment.justify with String = js.native
-  /* "Left" */ val left: typings.officeDashJs.Excel.HorizontalAlignment.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJs.Excel.HorizontalAlignment.right with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HorizontalAlignment with String] = js.native
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "CenterAcrossSelection" */ @js.native
+  object centerAcrossSelection extends TopLevel[centerAcrossSelection with String]
+  
+  /* "Distributed" */ @js.native
+  object distributed extends TopLevel[distributed with String]
+  
+  /* "Fill" */ @js.native
+  object fill extends TopLevel[fill with String]
+  
+  /* "General" */ @js.native
+  object general extends TopLevel[general with String]
+  
+  /* "Justify" */ @js.native
+  object justify extends TopLevel[justify with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
 }
 

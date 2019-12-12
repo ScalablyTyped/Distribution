@@ -1,5 +1,132 @@
 package typings.winrtDashUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Block
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150IconWithBadge
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Image
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310BlockAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310BlockAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Image
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollection
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollectionAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollectionAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text07
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text08
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text09
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare71x71IconWithBadge
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare71x71Image
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareBlock
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareImage
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileTall150x310Image
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150BlockAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150BlockAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150IconWithBadgeAndText
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Image
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageCollection
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text07
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text08
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text09
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text10
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text11
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideBlockAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideBlockAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImage
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageCollection
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText01
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText02
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText03
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText04
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText05
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText06
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText07
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText08
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText09
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText10
+import typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText11
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -515,133 +642,385 @@ object TileTemplateType extends js.Object {
   @js.native
   sealed trait tileWideText11 extends TileTemplateType
   
-  /* 47 */ val tileSquare150x150Block: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Block with Double = js.native
-  /* 122 */ val tileSquare150x150IconWithBadge: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150IconWithBadge with Double = js.native
-  /* 46 */ val tileSquare150x150Image: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Image with Double = js.native
-  /* 52 */ val tileSquare150x150PeekImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText01 with Double = js.native
-  /* 53 */ val tileSquare150x150PeekImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText02 with Double = js.native
-  /* 54 */ val tileSquare150x150PeekImageAndText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText03 with Double = js.native
-  /* 55 */ val tileSquare150x150PeekImageAndText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150PeekImageAndText04 with Double = js.native
-  /* 48 */ val tileSquare150x150Text01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text01 with Double = js.native
-  /* 49 */ val tileSquare150x150Text02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text02 with Double = js.native
-  /* 50 */ val tileSquare150x150Text03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text03 with Double = js.native
-  /* 51 */ val tileSquare150x150Text04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare150x150Text04 with Double = js.native
-  /* 92 */ val tileSquare310x310BlockAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310BlockAndText01 with Double = js.native
-  /* 93 */ val tileSquare310x310BlockAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310BlockAndText02 with Double = js.native
-  /* 94 */ val tileSquare310x310Image: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Image with Double = js.native
-  /* 95 */ val tileSquare310x310ImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndText01 with Double = js.native
-  /* 96 */ val tileSquare310x310ImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndText02 with Double = js.native
-  /* 97 */ val tileSquare310x310ImageAndTextOverlay01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay01 with Double = js.native
-  /* 98 */ val tileSquare310x310ImageAndTextOverlay02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay02 with Double = js.native
-  /* 99 */ val tileSquare310x310ImageAndTextOverlay03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageAndTextOverlay03 with Double = js.native
-  /* 102 */ val tileSquare310x310ImageCollection: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollection with Double = js.native
-  /* 100 */ val tileSquare310x310ImageCollectionAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollectionAndText01 with Double = js.native
-  /* 101 */ val tileSquare310x310ImageCollectionAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310ImageCollectionAndText02 with Double = js.native
-  /* 118 */ val tileSquare310x310SmallImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImageAndText01 with Double = js.native
-  /* 103 */ val tileSquare310x310SmallImagesAndTextList01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList01 with Double = js.native
-  /* 104 */ val tileSquare310x310SmallImagesAndTextList02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList02 with Double = js.native
-  /* 105 */ val tileSquare310x310SmallImagesAndTextList03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList03 with Double = js.native
-  /* 106 */ val tileSquare310x310SmallImagesAndTextList04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList04 with Double = js.native
-  /* 119 */ val tileSquare310x310SmallImagesAndTextList05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310SmallImagesAndTextList05 with Double = js.native
-  /* 107 */ val tileSquare310x310Text01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text01 with Double = js.native
-  /* 108 */ val tileSquare310x310Text02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text02 with Double = js.native
-  /* 109 */ val tileSquare310x310Text03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text03 with Double = js.native
-  /* 110 */ val tileSquare310x310Text04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text04 with Double = js.native
-  /* 111 */ val tileSquare310x310Text05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text05 with Double = js.native
-  /* 112 */ val tileSquare310x310Text06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text06 with Double = js.native
-  /* 113 */ val tileSquare310x310Text07: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text07 with Double = js.native
-  /* 114 */ val tileSquare310x310Text08: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text08 with Double = js.native
-  /* 120 */ val tileSquare310x310Text09: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310Text09 with Double = js.native
-  /* 115 */ val tileSquare310x310TextList01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList01 with Double = js.native
-  /* 116 */ val tileSquare310x310TextList02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList02 with Double = js.native
-  /* 117 */ val tileSquare310x310TextList03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare310x310TextList03 with Double = js.native
-  /* 121 */ val tileSquare71x71IconWithBadge: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare71x71IconWithBadge with Double = js.native
-  /* 124 */ val tileSquare71x71Image: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquare71x71Image with Double = js.native
-  /* 1 */ val tileSquareBlock: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareBlock with Double = js.native
-  /* 0 */ val tileSquareImage: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareImage with Double = js.native
-  /* 6 */ val tileSquarePeekImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText01 with Double = js.native
-  /* 7 */ val tileSquarePeekImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText02 with Double = js.native
-  /* 8 */ val tileSquarePeekImageAndText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText03 with Double = js.native
-  /* 9 */ val tileSquarePeekImageAndText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquarePeekImageAndText04 with Double = js.native
-  /* 2 */ val tileSquareText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText01 with Double = js.native
-  /* 3 */ val tileSquareText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText02 with Double = js.native
-  /* 4 */ val tileSquareText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText03 with Double = js.native
-  /* 5 */ val tileSquareText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileSquareText04 with Double = js.native
-  /* 125 */ val tileTall150x310Image: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileTall150x310Image with Double = js.native
-  /* 60 */ val tileWide310x150BlockAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150BlockAndText01 with Double = js.native
-  /* 61 */ val tileWide310x150BlockAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150BlockAndText02 with Double = js.native
-  /* 123 */ val tileWide310x150IconWithBadgeAndText: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150IconWithBadgeAndText with Double = js.native
-  /* 56 */ val tileWide310x150Image: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Image with Double = js.native
-  /* 58 */ val tileWide310x150ImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageAndText01 with Double = js.native
-  /* 59 */ val tileWide310x150ImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageAndText02 with Double = js.native
-  /* 57 */ val tileWide310x150ImageCollection: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150ImageCollection with Double = js.native
-  /* 70 */ val tileWide310x150PeekImage01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage01 with Double = js.native
-  /* 71 */ val tileWide310x150PeekImage02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage02 with Double = js.native
-  /* 72 */ val tileWide310x150PeekImage03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage03 with Double = js.native
-  /* 73 */ val tileWide310x150PeekImage04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage04 with Double = js.native
-  /* 74 */ val tileWide310x150PeekImage05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage05 with Double = js.native
-  /* 75 */ val tileWide310x150PeekImage06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImage06 with Double = js.native
-  /* 68 */ val tileWide310x150PeekImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageAndText01 with Double = js.native
-  /* 69 */ val tileWide310x150PeekImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageAndText02 with Double = js.native
-  /* 62 */ val tileWide310x150PeekImageCollection01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection01 with Double = js.native
-  /* 63 */ val tileWide310x150PeekImageCollection02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection02 with Double = js.native
-  /* 64 */ val tileWide310x150PeekImageCollection03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection03 with Double = js.native
-  /* 65 */ val tileWide310x150PeekImageCollection04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection04 with Double = js.native
-  /* 66 */ val tileWide310x150PeekImageCollection05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection05 with Double = js.native
-  /* 67 */ val tileWide310x150PeekImageCollection06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150PeekImageCollection06 with Double = js.native
-  /* 76 */ val tileWide310x150SmallImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText01 with Double = js.native
-  /* 77 */ val tileWide310x150SmallImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText02 with Double = js.native
-  /* 78 */ val tileWide310x150SmallImageAndText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText03 with Double = js.native
-  /* 79 */ val tileWide310x150SmallImageAndText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText04 with Double = js.native
-  /* 80 */ val tileWide310x150SmallImageAndText05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150SmallImageAndText05 with Double = js.native
-  /* 81 */ val tileWide310x150Text01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text01 with Double = js.native
-  /* 82 */ val tileWide310x150Text02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text02 with Double = js.native
-  /* 83 */ val tileWide310x150Text03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text03 with Double = js.native
-  /* 84 */ val tileWide310x150Text04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text04 with Double = js.native
-  /* 85 */ val tileWide310x150Text05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text05 with Double = js.native
-  /* 86 */ val tileWide310x150Text06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text06 with Double = js.native
-  /* 87 */ val tileWide310x150Text07: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text07 with Double = js.native
-  /* 88 */ val tileWide310x150Text08: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text08 with Double = js.native
-  /* 89 */ val tileWide310x150Text09: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text09 with Double = js.native
-  /* 90 */ val tileWide310x150Text10: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text10 with Double = js.native
-  /* 91 */ val tileWide310x150Text11: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWide310x150Text11 with Double = js.native
-  /* 14 */ val tileWideBlockAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideBlockAndText01 with Double = js.native
-  /* 15 */ val tileWideBlockAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideBlockAndText02 with Double = js.native
-  /* 10 */ val tileWideImage: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImage with Double = js.native
-  /* 12 */ val tileWideImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageAndText01 with Double = js.native
-  /* 13 */ val tileWideImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageAndText02 with Double = js.native
-  /* 11 */ val tileWideImageCollection: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideImageCollection with Double = js.native
-  /* 24 */ val tileWidePeekImage01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage01 with Double = js.native
-  /* 25 */ val tileWidePeekImage02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage02 with Double = js.native
-  /* 26 */ val tileWidePeekImage03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage03 with Double = js.native
-  /* 27 */ val tileWidePeekImage04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage04 with Double = js.native
-  /* 28 */ val tileWidePeekImage05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage05 with Double = js.native
-  /* 29 */ val tileWidePeekImage06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImage06 with Double = js.native
-  /* 22 */ val tileWidePeekImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText01 with Double = js.native
-  /* 23 */ val tileWidePeekImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageAndText02 with Double = js.native
-  /* 16 */ val tileWidePeekImageCollection01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection01 with Double = js.native
-  /* 17 */ val tileWidePeekImageCollection02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection02 with Double = js.native
-  /* 18 */ val tileWidePeekImageCollection03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection03 with Double = js.native
-  /* 19 */ val tileWidePeekImageCollection04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection04 with Double = js.native
-  /* 20 */ val tileWidePeekImageCollection05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection05 with Double = js.native
-  /* 21 */ val tileWidePeekImageCollection06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWidePeekImageCollection06 with Double = js.native
-  /* 30 */ val tileWideSmallImageAndText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText01 with Double = js.native
-  /* 31 */ val tileWideSmallImageAndText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText02 with Double = js.native
-  /* 32 */ val tileWideSmallImageAndText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText03 with Double = js.native
-  /* 33 */ val tileWideSmallImageAndText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText04 with Double = js.native
-  /* 34 */ val tileWideSmallImageAndText05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideSmallImageAndText05 with Double = js.native
-  /* 35 */ val tileWideText01: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText01 with Double = js.native
-  /* 36 */ val tileWideText02: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText02 with Double = js.native
-  /* 37 */ val tileWideText03: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText03 with Double = js.native
-  /* 38 */ val tileWideText04: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText04 with Double = js.native
-  /* 39 */ val tileWideText05: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText05 with Double = js.native
-  /* 40 */ val tileWideText06: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText06 with Double = js.native
-  /* 41 */ val tileWideText07: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText07 with Double = js.native
-  /* 42 */ val tileWideText08: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText08 with Double = js.native
-  /* 43 */ val tileWideText09: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText09 with Double = js.native
-  /* 44 */ val tileWideText10: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText10 with Double = js.native
-  /* 45 */ val tileWideText11: typings.winrtDashUwp.Windows.UI.Notifications.TileTemplateType.tileWideText11 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TileTemplateType with Double] = js.native
+  /* 47 */ @js.native
+  object tileSquare150x150Block extends TopLevel[tileSquare150x150Block with Double]
+  
+  /* 122 */ @js.native
+  object tileSquare150x150IconWithBadge extends TopLevel[tileSquare150x150IconWithBadge with Double]
+  
+  /* 46 */ @js.native
+  object tileSquare150x150Image extends TopLevel[tileSquare150x150Image with Double]
+  
+  /* 52 */ @js.native
+  object tileSquare150x150PeekImageAndText01 extends TopLevel[tileSquare150x150PeekImageAndText01 with Double]
+  
+  /* 53 */ @js.native
+  object tileSquare150x150PeekImageAndText02 extends TopLevel[tileSquare150x150PeekImageAndText02 with Double]
+  
+  /* 54 */ @js.native
+  object tileSquare150x150PeekImageAndText03 extends TopLevel[tileSquare150x150PeekImageAndText03 with Double]
+  
+  /* 55 */ @js.native
+  object tileSquare150x150PeekImageAndText04 extends TopLevel[tileSquare150x150PeekImageAndText04 with Double]
+  
+  /* 48 */ @js.native
+  object tileSquare150x150Text01 extends TopLevel[tileSquare150x150Text01 with Double]
+  
+  /* 49 */ @js.native
+  object tileSquare150x150Text02 extends TopLevel[tileSquare150x150Text02 with Double]
+  
+  /* 50 */ @js.native
+  object tileSquare150x150Text03 extends TopLevel[tileSquare150x150Text03 with Double]
+  
+  /* 51 */ @js.native
+  object tileSquare150x150Text04 extends TopLevel[tileSquare150x150Text04 with Double]
+  
+  /* 92 */ @js.native
+  object tileSquare310x310BlockAndText01 extends TopLevel[tileSquare310x310BlockAndText01 with Double]
+  
+  /* 93 */ @js.native
+  object tileSquare310x310BlockAndText02 extends TopLevel[tileSquare310x310BlockAndText02 with Double]
+  
+  /* 94 */ @js.native
+  object tileSquare310x310Image extends TopLevel[tileSquare310x310Image with Double]
+  
+  /* 95 */ @js.native
+  object tileSquare310x310ImageAndText01 extends TopLevel[tileSquare310x310ImageAndText01 with Double]
+  
+  /* 96 */ @js.native
+  object tileSquare310x310ImageAndText02 extends TopLevel[tileSquare310x310ImageAndText02 with Double]
+  
+  /* 97 */ @js.native
+  object tileSquare310x310ImageAndTextOverlay01 extends TopLevel[tileSquare310x310ImageAndTextOverlay01 with Double]
+  
+  /* 98 */ @js.native
+  object tileSquare310x310ImageAndTextOverlay02 extends TopLevel[tileSquare310x310ImageAndTextOverlay02 with Double]
+  
+  /* 99 */ @js.native
+  object tileSquare310x310ImageAndTextOverlay03 extends TopLevel[tileSquare310x310ImageAndTextOverlay03 with Double]
+  
+  /* 102 */ @js.native
+  object tileSquare310x310ImageCollection extends TopLevel[tileSquare310x310ImageCollection with Double]
+  
+  /* 100 */ @js.native
+  object tileSquare310x310ImageCollectionAndText01 extends TopLevel[tileSquare310x310ImageCollectionAndText01 with Double]
+  
+  /* 101 */ @js.native
+  object tileSquare310x310ImageCollectionAndText02 extends TopLevel[tileSquare310x310ImageCollectionAndText02 with Double]
+  
+  /* 118 */ @js.native
+  object tileSquare310x310SmallImageAndText01 extends TopLevel[tileSquare310x310SmallImageAndText01 with Double]
+  
+  /* 103 */ @js.native
+  object tileSquare310x310SmallImagesAndTextList01 extends TopLevel[tileSquare310x310SmallImagesAndTextList01 with Double]
+  
+  /* 104 */ @js.native
+  object tileSquare310x310SmallImagesAndTextList02 extends TopLevel[tileSquare310x310SmallImagesAndTextList02 with Double]
+  
+  /* 105 */ @js.native
+  object tileSquare310x310SmallImagesAndTextList03 extends TopLevel[tileSquare310x310SmallImagesAndTextList03 with Double]
+  
+  /* 106 */ @js.native
+  object tileSquare310x310SmallImagesAndTextList04 extends TopLevel[tileSquare310x310SmallImagesAndTextList04 with Double]
+  
+  /* 119 */ @js.native
+  object tileSquare310x310SmallImagesAndTextList05 extends TopLevel[tileSquare310x310SmallImagesAndTextList05 with Double]
+  
+  /* 107 */ @js.native
+  object tileSquare310x310Text01 extends TopLevel[tileSquare310x310Text01 with Double]
+  
+  /* 108 */ @js.native
+  object tileSquare310x310Text02 extends TopLevel[tileSquare310x310Text02 with Double]
+  
+  /* 109 */ @js.native
+  object tileSquare310x310Text03 extends TopLevel[tileSquare310x310Text03 with Double]
+  
+  /* 110 */ @js.native
+  object tileSquare310x310Text04 extends TopLevel[tileSquare310x310Text04 with Double]
+  
+  /* 111 */ @js.native
+  object tileSquare310x310Text05 extends TopLevel[tileSquare310x310Text05 with Double]
+  
+  /* 112 */ @js.native
+  object tileSquare310x310Text06 extends TopLevel[tileSquare310x310Text06 with Double]
+  
+  /* 113 */ @js.native
+  object tileSquare310x310Text07 extends TopLevel[tileSquare310x310Text07 with Double]
+  
+  /* 114 */ @js.native
+  object tileSquare310x310Text08 extends TopLevel[tileSquare310x310Text08 with Double]
+  
+  /* 120 */ @js.native
+  object tileSquare310x310Text09 extends TopLevel[tileSquare310x310Text09 with Double]
+  
+  /* 115 */ @js.native
+  object tileSquare310x310TextList01 extends TopLevel[tileSquare310x310TextList01 with Double]
+  
+  /* 116 */ @js.native
+  object tileSquare310x310TextList02 extends TopLevel[tileSquare310x310TextList02 with Double]
+  
+  /* 117 */ @js.native
+  object tileSquare310x310TextList03 extends TopLevel[tileSquare310x310TextList03 with Double]
+  
+  /* 121 */ @js.native
+  object tileSquare71x71IconWithBadge extends TopLevel[tileSquare71x71IconWithBadge with Double]
+  
+  /* 124 */ @js.native
+  object tileSquare71x71Image extends TopLevel[tileSquare71x71Image with Double]
+  
+  /* 1 */ @js.native
+  object tileSquareBlock extends TopLevel[tileSquareBlock with Double]
+  
+  /* 0 */ @js.native
+  object tileSquareImage extends TopLevel[tileSquareImage with Double]
+  
+  /* 6 */ @js.native
+  object tileSquarePeekImageAndText01 extends TopLevel[tileSquarePeekImageAndText01 with Double]
+  
+  /* 7 */ @js.native
+  object tileSquarePeekImageAndText02 extends TopLevel[tileSquarePeekImageAndText02 with Double]
+  
+  /* 8 */ @js.native
+  object tileSquarePeekImageAndText03 extends TopLevel[tileSquarePeekImageAndText03 with Double]
+  
+  /* 9 */ @js.native
+  object tileSquarePeekImageAndText04 extends TopLevel[tileSquarePeekImageAndText04 with Double]
+  
+  /* 2 */ @js.native
+  object tileSquareText01 extends TopLevel[tileSquareText01 with Double]
+  
+  /* 3 */ @js.native
+  object tileSquareText02 extends TopLevel[tileSquareText02 with Double]
+  
+  /* 4 */ @js.native
+  object tileSquareText03 extends TopLevel[tileSquareText03 with Double]
+  
+  /* 5 */ @js.native
+  object tileSquareText04 extends TopLevel[tileSquareText04 with Double]
+  
+  /* 125 */ @js.native
+  object tileTall150x310Image extends TopLevel[tileTall150x310Image with Double]
+  
+  /* 60 */ @js.native
+  object tileWide310x150BlockAndText01 extends TopLevel[tileWide310x150BlockAndText01 with Double]
+  
+  /* 61 */ @js.native
+  object tileWide310x150BlockAndText02 extends TopLevel[tileWide310x150BlockAndText02 with Double]
+  
+  /* 123 */ @js.native
+  object tileWide310x150IconWithBadgeAndText extends TopLevel[tileWide310x150IconWithBadgeAndText with Double]
+  
+  /* 56 */ @js.native
+  object tileWide310x150Image extends TopLevel[tileWide310x150Image with Double]
+  
+  /* 58 */ @js.native
+  object tileWide310x150ImageAndText01 extends TopLevel[tileWide310x150ImageAndText01 with Double]
+  
+  /* 59 */ @js.native
+  object tileWide310x150ImageAndText02 extends TopLevel[tileWide310x150ImageAndText02 with Double]
+  
+  /* 57 */ @js.native
+  object tileWide310x150ImageCollection extends TopLevel[tileWide310x150ImageCollection with Double]
+  
+  /* 70 */ @js.native
+  object tileWide310x150PeekImage01 extends TopLevel[tileWide310x150PeekImage01 with Double]
+  
+  /* 71 */ @js.native
+  object tileWide310x150PeekImage02 extends TopLevel[tileWide310x150PeekImage02 with Double]
+  
+  /* 72 */ @js.native
+  object tileWide310x150PeekImage03 extends TopLevel[tileWide310x150PeekImage03 with Double]
+  
+  /* 73 */ @js.native
+  object tileWide310x150PeekImage04 extends TopLevel[tileWide310x150PeekImage04 with Double]
+  
+  /* 74 */ @js.native
+  object tileWide310x150PeekImage05 extends TopLevel[tileWide310x150PeekImage05 with Double]
+  
+  /* 75 */ @js.native
+  object tileWide310x150PeekImage06 extends TopLevel[tileWide310x150PeekImage06 with Double]
+  
+  /* 68 */ @js.native
+  object tileWide310x150PeekImageAndText01 extends TopLevel[tileWide310x150PeekImageAndText01 with Double]
+  
+  /* 69 */ @js.native
+  object tileWide310x150PeekImageAndText02 extends TopLevel[tileWide310x150PeekImageAndText02 with Double]
+  
+  /* 62 */ @js.native
+  object tileWide310x150PeekImageCollection01 extends TopLevel[tileWide310x150PeekImageCollection01 with Double]
+  
+  /* 63 */ @js.native
+  object tileWide310x150PeekImageCollection02 extends TopLevel[tileWide310x150PeekImageCollection02 with Double]
+  
+  /* 64 */ @js.native
+  object tileWide310x150PeekImageCollection03 extends TopLevel[tileWide310x150PeekImageCollection03 with Double]
+  
+  /* 65 */ @js.native
+  object tileWide310x150PeekImageCollection04 extends TopLevel[tileWide310x150PeekImageCollection04 with Double]
+  
+  /* 66 */ @js.native
+  object tileWide310x150PeekImageCollection05 extends TopLevel[tileWide310x150PeekImageCollection05 with Double]
+  
+  /* 67 */ @js.native
+  object tileWide310x150PeekImageCollection06 extends TopLevel[tileWide310x150PeekImageCollection06 with Double]
+  
+  /* 76 */ @js.native
+  object tileWide310x150SmallImageAndText01 extends TopLevel[tileWide310x150SmallImageAndText01 with Double]
+  
+  /* 77 */ @js.native
+  object tileWide310x150SmallImageAndText02 extends TopLevel[tileWide310x150SmallImageAndText02 with Double]
+  
+  /* 78 */ @js.native
+  object tileWide310x150SmallImageAndText03 extends TopLevel[tileWide310x150SmallImageAndText03 with Double]
+  
+  /* 79 */ @js.native
+  object tileWide310x150SmallImageAndText04 extends TopLevel[tileWide310x150SmallImageAndText04 with Double]
+  
+  /* 80 */ @js.native
+  object tileWide310x150SmallImageAndText05 extends TopLevel[tileWide310x150SmallImageAndText05 with Double]
+  
+  /* 81 */ @js.native
+  object tileWide310x150Text01 extends TopLevel[tileWide310x150Text01 with Double]
+  
+  /* 82 */ @js.native
+  object tileWide310x150Text02 extends TopLevel[tileWide310x150Text02 with Double]
+  
+  /* 83 */ @js.native
+  object tileWide310x150Text03 extends TopLevel[tileWide310x150Text03 with Double]
+  
+  /* 84 */ @js.native
+  object tileWide310x150Text04 extends TopLevel[tileWide310x150Text04 with Double]
+  
+  /* 85 */ @js.native
+  object tileWide310x150Text05 extends TopLevel[tileWide310x150Text05 with Double]
+  
+  /* 86 */ @js.native
+  object tileWide310x150Text06 extends TopLevel[tileWide310x150Text06 with Double]
+  
+  /* 87 */ @js.native
+  object tileWide310x150Text07 extends TopLevel[tileWide310x150Text07 with Double]
+  
+  /* 88 */ @js.native
+  object tileWide310x150Text08 extends TopLevel[tileWide310x150Text08 with Double]
+  
+  /* 89 */ @js.native
+  object tileWide310x150Text09 extends TopLevel[tileWide310x150Text09 with Double]
+  
+  /* 90 */ @js.native
+  object tileWide310x150Text10 extends TopLevel[tileWide310x150Text10 with Double]
+  
+  /* 91 */ @js.native
+  object tileWide310x150Text11 extends TopLevel[tileWide310x150Text11 with Double]
+  
+  /* 14 */ @js.native
+  object tileWideBlockAndText01 extends TopLevel[tileWideBlockAndText01 with Double]
+  
+  /* 15 */ @js.native
+  object tileWideBlockAndText02 extends TopLevel[tileWideBlockAndText02 with Double]
+  
+  /* 10 */ @js.native
+  object tileWideImage extends TopLevel[tileWideImage with Double]
+  
+  /* 12 */ @js.native
+  object tileWideImageAndText01 extends TopLevel[tileWideImageAndText01 with Double]
+  
+  /* 13 */ @js.native
+  object tileWideImageAndText02 extends TopLevel[tileWideImageAndText02 with Double]
+  
+  /* 11 */ @js.native
+  object tileWideImageCollection extends TopLevel[tileWideImageCollection with Double]
+  
+  /* 24 */ @js.native
+  object tileWidePeekImage01 extends TopLevel[tileWidePeekImage01 with Double]
+  
+  /* 25 */ @js.native
+  object tileWidePeekImage02 extends TopLevel[tileWidePeekImage02 with Double]
+  
+  /* 26 */ @js.native
+  object tileWidePeekImage03 extends TopLevel[tileWidePeekImage03 with Double]
+  
+  /* 27 */ @js.native
+  object tileWidePeekImage04 extends TopLevel[tileWidePeekImage04 with Double]
+  
+  /* 28 */ @js.native
+  object tileWidePeekImage05 extends TopLevel[tileWidePeekImage05 with Double]
+  
+  /* 29 */ @js.native
+  object tileWidePeekImage06 extends TopLevel[tileWidePeekImage06 with Double]
+  
+  /* 22 */ @js.native
+  object tileWidePeekImageAndText01 extends TopLevel[tileWidePeekImageAndText01 with Double]
+  
+  /* 23 */ @js.native
+  object tileWidePeekImageAndText02 extends TopLevel[tileWidePeekImageAndText02 with Double]
+  
+  /* 16 */ @js.native
+  object tileWidePeekImageCollection01 extends TopLevel[tileWidePeekImageCollection01 with Double]
+  
+  /* 17 */ @js.native
+  object tileWidePeekImageCollection02 extends TopLevel[tileWidePeekImageCollection02 with Double]
+  
+  /* 18 */ @js.native
+  object tileWidePeekImageCollection03 extends TopLevel[tileWidePeekImageCollection03 with Double]
+  
+  /* 19 */ @js.native
+  object tileWidePeekImageCollection04 extends TopLevel[tileWidePeekImageCollection04 with Double]
+  
+  /* 20 */ @js.native
+  object tileWidePeekImageCollection05 extends TopLevel[tileWidePeekImageCollection05 with Double]
+  
+  /* 21 */ @js.native
+  object tileWidePeekImageCollection06 extends TopLevel[tileWidePeekImageCollection06 with Double]
+  
+  /* 30 */ @js.native
+  object tileWideSmallImageAndText01 extends TopLevel[tileWideSmallImageAndText01 with Double]
+  
+  /* 31 */ @js.native
+  object tileWideSmallImageAndText02 extends TopLevel[tileWideSmallImageAndText02 with Double]
+  
+  /* 32 */ @js.native
+  object tileWideSmallImageAndText03 extends TopLevel[tileWideSmallImageAndText03 with Double]
+  
+  /* 33 */ @js.native
+  object tileWideSmallImageAndText04 extends TopLevel[tileWideSmallImageAndText04 with Double]
+  
+  /* 34 */ @js.native
+  object tileWideSmallImageAndText05 extends TopLevel[tileWideSmallImageAndText05 with Double]
+  
+  /* 35 */ @js.native
+  object tileWideText01 extends TopLevel[tileWideText01 with Double]
+  
+  /* 36 */ @js.native
+  object tileWideText02 extends TopLevel[tileWideText02 with Double]
+  
+  /* 37 */ @js.native
+  object tileWideText03 extends TopLevel[tileWideText03 with Double]
+  
+  /* 38 */ @js.native
+  object tileWideText04 extends TopLevel[tileWideText04 with Double]
+  
+  /* 39 */ @js.native
+  object tileWideText05 extends TopLevel[tileWideText05 with Double]
+  
+  /* 40 */ @js.native
+  object tileWideText06 extends TopLevel[tileWideText06 with Double]
+  
+  /* 41 */ @js.native
+  object tileWideText07 extends TopLevel[tileWideText07 with Double]
+  
+  /* 42 */ @js.native
+  object tileWideText08 extends TopLevel[tileWideText08 with Double]
+  
+  /* 43 */ @js.native
+  object tileWideText09 extends TopLevel[tileWideText09 with Double]
+  
+  /* 44 */ @js.native
+  object tileWideText10 extends TopLevel[tileWideText10 with Double]
+  
+  /* 45 */ @js.native
+  object tileWideText11 extends TopLevel[tileWideText11 with Double]
+  
 }
 

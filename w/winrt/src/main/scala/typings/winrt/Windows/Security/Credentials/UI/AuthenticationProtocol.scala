@@ -1,5 +1,13 @@
 package typings.winrt.Windows.Security.Credentials.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.basic
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.credSsp
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.custom
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.digest
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.kerberos
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.negotiate
+import typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.ntlm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object AuthenticationProtocol extends js.Object {
   @js.native
   sealed trait ntlm extends AuthenticationProtocol
   
-  /* 0 */ val basic: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.basic with Double = js.native
-  /* 5 */ val credSsp: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.credSsp with Double = js.native
-  /* 6 */ val custom: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.custom with Double = js.native
-  /* 1 */ val digest: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.digest with Double = js.native
-  /* 3 */ val kerberos: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.kerberos with Double = js.native
-  /* 4 */ val negotiate: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.negotiate with Double = js.native
-  /* 2 */ val ntlm: typings.winrt.Windows.Security.Credentials.UI.AuthenticationProtocol.ntlm with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AuthenticationProtocol with Double] = js.native
+  /* 0 */ @js.native
+  object basic extends TopLevel[basic with Double]
+  
+  /* 5 */ @js.native
+  object credSsp extends TopLevel[credSsp with Double]
+  
+  /* 6 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 1 */ @js.native
+  object digest extends TopLevel[digest with Double]
+  
+  /* 3 */ @js.native
+  object kerberos extends TopLevel[kerberos with Double]
+  
+  /* 4 */ @js.native
+  object negotiate extends TopLevel[negotiate with Double]
+  
+  /* 2 */ @js.native
+  object ntlm extends TopLevel[ntlm with Double]
+  
 }
 

@@ -1,5 +1,16 @@
 package typings.twoDotJs.twoDotJsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.twoDotJs.twoDotJsMod.Events.change
+import typings.twoDotJs.twoDotJsMod.Events.insert
+import typings.twoDotJs.twoDotJsMod.Events.load
+import typings.twoDotJs.twoDotJsMod.Events.order
+import typings.twoDotJs.twoDotJsMod.Events.pause
+import typings.twoDotJs.twoDotJsMod.Events.play
+import typings.twoDotJs.twoDotJsMod.Events.remove
+import typings.twoDotJs.twoDotJsMod.Events.render
+import typings.twoDotJs.twoDotJsMod.Events.resize
+import typings.twoDotJs.twoDotJsMod.Events.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object Events extends js.Object {
   @js.native
   sealed trait update extends Events
   
-  /* 0 */ val change: typings.twoDotJs.twoDotJsMod.Events.change with Double = js.native
-  /* 1 */ val insert: typings.twoDotJs.twoDotJsMod.Events.insert with Double = js.native
-  /* 2 */ val load: typings.twoDotJs.twoDotJsMod.Events.load with Double = js.native
-  /* 3 */ val order: typings.twoDotJs.twoDotJsMod.Events.order with Double = js.native
-  /* 4 */ val pause: typings.twoDotJs.twoDotJsMod.Events.pause with Double = js.native
-  /* 5 */ val play: typings.twoDotJs.twoDotJsMod.Events.play with Double = js.native
-  /* 6 */ val remove: typings.twoDotJs.twoDotJsMod.Events.remove with Double = js.native
-  /* 7 */ val render: typings.twoDotJs.twoDotJsMod.Events.render with Double = js.native
-  /* 8 */ val resize: typings.twoDotJs.twoDotJsMod.Events.resize with Double = js.native
-  /* 9 */ val update: typings.twoDotJs.twoDotJsMod.Events.update with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Events with Double] = js.native
+  /* 0 */ @js.native
+  object change extends TopLevel[change with Double]
+  
+  /* 1 */ @js.native
+  object insert extends TopLevel[insert with Double]
+  
+  /* 2 */ @js.native
+  object load extends TopLevel[load with Double]
+  
+  /* 3 */ @js.native
+  object order extends TopLevel[order with Double]
+  
+  /* 4 */ @js.native
+  object pause extends TopLevel[pause with Double]
+  
+  /* 5 */ @js.native
+  object play extends TopLevel[play with Double]
+  
+  /* 6 */ @js.native
+  object remove extends TopLevel[remove with Double]
+  
+  /* 7 */ @js.native
+  object render extends TopLevel[render with Double]
+  
+  /* 8 */ @js.native
+  object resize extends TopLevel[resize with Double]
+  
+  /* 9 */ @js.native
+  object update extends TopLevel[update with Double]
+  
 }
 

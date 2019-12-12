@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Address
+import typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.EmailAddress
+import typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,14 +65,40 @@ object EntityType extends js.Object {
   @js.native
   sealed trait Url extends EntityType
   
-  /* "address" */ val Address: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Address with String = js.native
-  /* "contact" */ val Contact: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Contact with String = js.native
-  /* "emailAddress" */ val EmailAddress: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.EmailAddress with String = js.native
-  /* "meetingSuggestion" */ val MeetingSuggestion: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.MeetingSuggestion with String = js.native
-  /* "phoneNumber" */ val PhoneNumber: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.PhoneNumber with String = js.native
-  /* "taskSuggestion" */ val TaskSuggestion: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.TaskSuggestion with String = js.native
-  /* "url" */ val Url: typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Url with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EntityType with String] = js.native
+  /* "address" */ @js.native
+  object Address extends TopLevel[Address with String]
+  
+  /* "contact" */ @js.native
+  object Contact
+    extends TopLevel[
+          typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.Contact with String
+        ]
+  
+  /* "emailAddress" */ @js.native
+  object EmailAddress extends TopLevel[EmailAddress with String]
+  
+  /* "meetingSuggestion" */ @js.native
+  object MeetingSuggestion
+    extends TopLevel[
+          typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.MeetingSuggestion with String
+        ]
+  
+  /* "phoneNumber" */ @js.native
+  object PhoneNumber
+    extends TopLevel[
+          typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.PhoneNumber with String
+        ]
+  
+  /* "taskSuggestion" */ @js.native
+  object TaskSuggestion
+    extends TopLevel[
+          typings.officeDashJsDashPreview.Office.MailboxEnums.EntityType.TaskSuggestion with String
+        ]
+  
+  /* "url" */ @js.native
+  object Url extends TopLevel[Url with String]
+  
 }
 

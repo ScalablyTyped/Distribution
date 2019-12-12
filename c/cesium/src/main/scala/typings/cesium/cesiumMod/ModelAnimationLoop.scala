@@ -1,5 +1,9 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.ModelAnimationLoop.MIRRORED_REPEAT
+import typings.cesium.cesiumMod.ModelAnimationLoop.NONE
+import typings.cesium.cesiumMod.ModelAnimationLoop.REPEAT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ModelAnimationLoop extends js.Object {
   @js.native
   sealed trait REPEAT extends ModelAnimationLoop
   
-  /* 2 */ val MIRRORED_REPEAT: typings.cesium.cesiumMod.ModelAnimationLoop.MIRRORED_REPEAT with Double = js.native
-  /* 0 */ val NONE: typings.cesium.cesiumMod.ModelAnimationLoop.NONE with Double = js.native
-  /* 1 */ val REPEAT: typings.cesium.cesiumMod.ModelAnimationLoop.REPEAT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ModelAnimationLoop with Double] = js.native
+  /* 2 */ @js.native
+  object MIRRORED_REPEAT extends TopLevel[MIRRORED_REPEAT with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 1 */ @js.native
+  object REPEAT extends TopLevel[REPEAT with Double]
+  
 }
 

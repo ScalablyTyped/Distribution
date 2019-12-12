@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.snackbarContentSnackbarContentMod.SnackbarContentProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object snackbarContentMod extends js.Object {
     def this(props: SnackbarContentProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[SnackbarContentProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[SnackbarContentProps]]
+  
 }
 

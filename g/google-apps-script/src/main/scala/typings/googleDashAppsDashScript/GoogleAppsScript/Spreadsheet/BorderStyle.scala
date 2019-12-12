@@ -1,5 +1,12 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DASHED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOTTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOUBLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_MEDIUM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_THICK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object BorderStyle extends js.Object {
   @js.native
   sealed trait SOLID_THICK extends BorderStyle
   
-  /* 1 */ val DASHED: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DASHED with Double = js.native
-  /* 0 */ val DOTTED: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOTTED with Double = js.native
-  /* 5 */ val DOUBLE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.DOUBLE with Double = js.native
-  /* 2 */ val SOLID: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID with Double = js.native
-  /* 3 */ val SOLID_MEDIUM: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_MEDIUM with Double = js.native
-  /* 4 */ val SOLID_THICK: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BorderStyle.SOLID_THICK with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BorderStyle with Double] = js.native
+  /* 1 */ @js.native
+  object DASHED extends TopLevel[DASHED with Double]
+  
+  /* 0 */ @js.native
+  object DOTTED extends TopLevel[DOTTED with Double]
+  
+  /* 5 */ @js.native
+  object DOUBLE extends TopLevel[DOUBLE with Double]
+  
+  /* 2 */ @js.native
+  object SOLID extends TopLevel[SOLID with Double]
+  
+  /* 3 */ @js.native
+  object SOLID_MEDIUM extends TopLevel[SOLID_MEDIUM with Double]
+  
+  /* 4 */ @js.native
+  object SOLID_THICK extends TopLevel[SOLID_THICK with Double]
+  
 }
 

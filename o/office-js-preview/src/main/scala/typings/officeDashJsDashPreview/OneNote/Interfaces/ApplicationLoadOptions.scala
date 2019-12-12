@@ -10,25 +10,16 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
+@js.native
 trait ApplicationLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only one notebook at a time is open in the application instance.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var notebooks: js.UndefOr[NotebookCollectionLoadOptions] = js.undefined
-}
-
-object ApplicationLoadOptions {
-  @scala.inline
-  def apply($all: js.UndefOr[Boolean] = js.undefined, notebooks: NotebookCollectionLoadOptions = null): ApplicationLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ApplicationLoadOptions]
-  }
+  var notebooks: js.UndefOr[NotebookCollectionLoadOptions] = js.native
 }
 

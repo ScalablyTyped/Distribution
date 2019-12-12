@@ -1,5 +1,9 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.SheetType.DASHBOARD
+import typings.tableau.tableau.SheetType.STORY
+import typings.tableau.tableau.SheetType.WORKSHEET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SheetType extends js.Object {
   @js.native
   sealed trait WORKSHEET extends SheetType
   
-  /* "dashboard" */ val DASHBOARD: typings.tableau.tableau.SheetType.DASHBOARD with String = js.native
-  /* "story" */ val STORY: typings.tableau.tableau.SheetType.STORY with String = js.native
-  /* "worksheet" */ val WORKSHEET: typings.tableau.tableau.SheetType.WORKSHEET with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SheetType with String] = js.native
+  /* "dashboard" */ @js.native
+  object DASHBOARD extends TopLevel[DASHBOARD with String]
+  
+  /* "story" */ @js.native
+  object STORY extends TopLevel[STORY with String]
+  
+  /* "worksheet" */ @js.native
+  object WORKSHEET extends TopLevel[WORKSHEET with String]
+  
 }
 

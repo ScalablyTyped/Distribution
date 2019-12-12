@@ -1,5 +1,8 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.TimeStandard.TAI
+import typings.cesium.cesiumMod.TimeStandard.UTC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object TimeStandard extends js.Object {
   @js.native
   sealed trait UTC extends TimeStandard
   
-  /* 1 */ val TAI: typings.cesium.cesiumMod.TimeStandard.TAI with Double = js.native
-  /* 0 */ val UTC: typings.cesium.cesiumMod.TimeStandard.UTC with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimeStandard with Double] = js.native
+  /* 1 */ @js.native
+  object TAI extends TopLevel[TAI with Double]
+  
+  /* 0 */ @js.native
+  object UTC extends TopLevel[UTC with Double]
+  
 }
 

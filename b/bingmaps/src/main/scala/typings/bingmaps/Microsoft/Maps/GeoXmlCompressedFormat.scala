@@ -1,5 +1,9 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.arrayBuffer
+import typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.base64
+import typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object GeoXmlCompressedFormat extends js.Object {
   @js.native
   sealed trait blob extends GeoXmlCompressedFormat
   
-  /* 2 */ val arrayBuffer: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.arrayBuffer with Double = js.native
-  /* 0 */ val base64: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.base64 with Double = js.native
-  /* 1 */ val blob: typings.bingmaps.Microsoft.Maps.GeoXmlCompressedFormat.blob with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GeoXmlCompressedFormat with Double] = js.native
+  /* 2 */ @js.native
+  object arrayBuffer extends TopLevel[arrayBuffer with Double]
+  
+  /* 0 */ @js.native
+  object base64 extends TopLevel[base64 with Double]
+  
+  /* 1 */ @js.native
+  object blob extends TopLevel[blob with Double]
+  
 }
 

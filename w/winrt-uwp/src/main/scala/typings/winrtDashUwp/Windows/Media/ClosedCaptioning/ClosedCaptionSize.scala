@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.ClosedCaptioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.default
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.fiftyPercent
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredFiftyPercent
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredPercent
+import typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.twoHundredPercent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ClosedCaptionSize extends js.Object {
   @js.native
   sealed trait twoHundredPercent extends ClosedCaptionSize
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.default with Double = js.native
-  /* 1 */ val fiftyPercent: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.fiftyPercent with Double = js.native
-  /* 3 */ val oneHundredFiftyPercent: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredFiftyPercent with Double = js.native
-  /* 2 */ val oneHundredPercent: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredPercent with Double = js.native
-  /* 4 */ val twoHundredPercent: typings.winrtDashUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.twoHundredPercent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClosedCaptionSize with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object fiftyPercent extends TopLevel[fiftyPercent with Double]
+  
+  /* 3 */ @js.native
+  object oneHundredFiftyPercent extends TopLevel[oneHundredFiftyPercent with Double]
+  
+  /* 2 */ @js.native
+  object oneHundredPercent extends TopLevel[oneHundredPercent with Double]
+  
+  /* 4 */ @js.native
+  object twoHundredPercent extends TopLevel[twoHundredPercent with Double]
+  
 }
 

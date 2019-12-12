@@ -1,5 +1,149 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARC
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_EAST
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_NORTH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_NORTH_EAST
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BENT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BENT_UP_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BEVEL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BLOCK_ARC
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BRACE_PAIR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BRACKET_PAIR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CHEVRON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CHORD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CLOUD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CLOUD_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CORNER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CUBE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_DOWN_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_LEFT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_RIGHT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_UP_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CUSTOM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DECAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DIAGONAL_STRIPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DIAMOND
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DODECAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DONUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOUBLE_WAVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOWN_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOWN_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE_RIBBON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE_RIBBON_2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_ALTERNATE_PROCESS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_COLLATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_CONNECTOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DECISION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DELAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DISPLAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DOCUMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_EXTRACT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_INPUT_OUTPUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_INTERNAL_STORAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_DISK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_DRUM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_TAPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MANUAL_INPUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MANUAL_OPERATION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MERGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MULTIDOCUMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OFFLINE_STORAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OFFPAGE_CONNECTOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_ONLINE_STORAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PREDEFINED_PROCESS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PREPARATION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PROCESS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PUNCHED_CARD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PUNCHED_TAPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_SORT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_SUMMING_JUNCTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_TERMINATOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FOLDED_CORNER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FRAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HALF_FRAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEART
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEPTAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEXAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HOME_PLATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HORIZONTAL_SCROLL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.IRREGULAR_SEAL_1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.IRREGULAR_SEAL_2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_BRACE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_BRACKET
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_UP_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_UP_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LIGHTNING_BOLT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_DIVIDE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_EQUAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_MINUS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_MULTIPLY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_NOT_EQUAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_PLUS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MOON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.NOTCHED_RIGHT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.NO_SMOKING
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.OCTAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PARALLELOGRAM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PENTAGON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PIE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PLAQUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PLUS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.QUAD_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.QUAD_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIBBON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIBBON_2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_BRACE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_BRACKET
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_TRIANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_1_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_2_DIAGONAL_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_2_SAME_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SMILEY_FACE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_1_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_2_DIAGONAL_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_2_SAME_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_ROUND_RECTANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SPEECH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STARBURST
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_10
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_12
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_16
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_24
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_32
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_4
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_6
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_7
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_8
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STRIPED_RIGHT_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SUN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TEARDROP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TEXT_BOX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TRAPEZOID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TRIANGLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UNSUPPORTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_ARROW_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_DOWN_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UTURN_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.VERTICAL_SCROLL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WAVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_ELLIPSE_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_RECTANGLE_CALLOUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_ROUND_RECTANGLE_CALLOUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -446,150 +590,436 @@ object ShapeType extends js.Object {
   @js.native
   sealed trait WEDGE_ROUND_RECTANGLE_CALLOUT extends ShapeType
   
-  /* 5 */ val ARC: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARC with Double = js.native
-  /* 133 */ val ARROW_EAST: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_EAST with Double = js.native
-  /* 135 */ val ARROW_NORTH: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_NORTH with Double = js.native
-  /* 134 */ val ARROW_NORTH_EAST: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ARROW_NORTH_EAST with Double = js.native
-  /* 6 */ val BENT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BENT_ARROW with Double = js.native
-  /* 7 */ val BENT_UP_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BENT_UP_ARROW with Double = js.native
-  /* 8 */ val BEVEL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BEVEL with Double = js.native
-  /* 9 */ val BLOCK_ARC: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BLOCK_ARC with Double = js.native
-  /* 10 */ val BRACE_PAIR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BRACE_PAIR with Double = js.native
-  /* 11 */ val BRACKET_PAIR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.BRACKET_PAIR with Double = js.native
-  /* 12 */ val CAN: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CAN with Double = js.native
-  /* 13 */ val CHEVRON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CHEVRON with Double = js.native
-  /* 14 */ val CHORD: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CHORD with Double = js.native
-  /* 15 */ val CLOUD: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CLOUD with Double = js.native
-  /* 141 */ val CLOUD_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CLOUD_CALLOUT with Double = js.native
-  /* 16 */ val CORNER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CORNER with Double = js.native
-  /* 17 */ val CUBE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CUBE with Double = js.native
-  /* 18 */ val CURVED_DOWN_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_DOWN_ARROW with Double = js.native
-  /* 19 */ val CURVED_LEFT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_LEFT_ARROW with Double = js.native
-  /* 20 */ val CURVED_RIGHT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_RIGHT_ARROW with Double = js.native
-  /* 21 */ val CURVED_UP_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CURVED_UP_ARROW with Double = js.native
-  /* 142 */ val CUSTOM: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.CUSTOM with Double = js.native
-  /* 22 */ val DECAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DECAGON with Double = js.native
-  /* 23 */ val DIAGONAL_STRIPE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DIAGONAL_STRIPE with Double = js.native
-  /* 24 */ val DIAMOND: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DIAMOND with Double = js.native
-  /* 25 */ val DODECAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DODECAGON with Double = js.native
-  /* 26 */ val DONUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DONUT with Double = js.native
-  /* 27 */ val DOUBLE_WAVE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOUBLE_WAVE with Double = js.native
-  /* 28 */ val DOWN_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOWN_ARROW with Double = js.native
-  /* 29 */ val DOWN_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.DOWN_ARROW_CALLOUT with Double = js.native
-  /* 4 */ val ELLIPSE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE with Double = js.native
-  /* 139 */ val ELLIPSE_RIBBON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE_RIBBON with Double = js.native
-  /* 140 */ val ELLIPSE_RIBBON_2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ELLIPSE_RIBBON_2 with Double = js.native
-  /* 104 */ val FLOW_CHART_ALTERNATE_PROCESS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_ALTERNATE_PROCESS with Double = js.native
-  /* 105 */ val FLOW_CHART_COLLATE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_COLLATE with Double = js.native
-  /* 106 */ val FLOW_CHART_CONNECTOR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_CONNECTOR with Double = js.native
-  /* 107 */ val FLOW_CHART_DECISION: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DECISION with Double = js.native
-  /* 108 */ val FLOW_CHART_DELAY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DELAY with Double = js.native
-  /* 109 */ val FLOW_CHART_DISPLAY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DISPLAY with Double = js.native
-  /* 110 */ val FLOW_CHART_DOCUMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_DOCUMENT with Double = js.native
-  /* 111 */ val FLOW_CHART_EXTRACT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_EXTRACT with Double = js.native
-  /* 112 */ val FLOW_CHART_INPUT_OUTPUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_INPUT_OUTPUT with Double = js.native
-  /* 113 */ val FLOW_CHART_INTERNAL_STORAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_INTERNAL_STORAGE with Double = js.native
-  /* 114 */ val FLOW_CHART_MAGNETIC_DISK: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_DISK with Double = js.native
-  /* 115 */ val FLOW_CHART_MAGNETIC_DRUM: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_DRUM with Double = js.native
-  /* 116 */ val FLOW_CHART_MAGNETIC_TAPE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MAGNETIC_TAPE with Double = js.native
-  /* 117 */ val FLOW_CHART_MANUAL_INPUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MANUAL_INPUT with Double = js.native
-  /* 118 */ val FLOW_CHART_MANUAL_OPERATION: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MANUAL_OPERATION with Double = js.native
-  /* 119 */ val FLOW_CHART_MERGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MERGE with Double = js.native
-  /* 120 */ val FLOW_CHART_MULTIDOCUMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_MULTIDOCUMENT with Double = js.native
-  /* 121 */ val FLOW_CHART_OFFLINE_STORAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OFFLINE_STORAGE with Double = js.native
-  /* 122 */ val FLOW_CHART_OFFPAGE_CONNECTOR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OFFPAGE_CONNECTOR with Double = js.native
-  /* 123 */ val FLOW_CHART_ONLINE_STORAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_ONLINE_STORAGE with Double = js.native
-  /* 124 */ val FLOW_CHART_OR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_OR with Double = js.native
-  /* 125 */ val FLOW_CHART_PREDEFINED_PROCESS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PREDEFINED_PROCESS with Double = js.native
-  /* 126 */ val FLOW_CHART_PREPARATION: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PREPARATION with Double = js.native
-  /* 127 */ val FLOW_CHART_PROCESS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PROCESS with Double = js.native
-  /* 128 */ val FLOW_CHART_PUNCHED_CARD: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PUNCHED_CARD with Double = js.native
-  /* 129 */ val FLOW_CHART_PUNCHED_TAPE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_PUNCHED_TAPE with Double = js.native
-  /* 130 */ val FLOW_CHART_SORT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_SORT with Double = js.native
-  /* 131 */ val FLOW_CHART_SUMMING_JUNCTION: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_SUMMING_JUNCTION with Double = js.native
-  /* 132 */ val FLOW_CHART_TERMINATOR: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FLOW_CHART_TERMINATOR with Double = js.native
-  /* 30 */ val FOLDED_CORNER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FOLDED_CORNER with Double = js.native
-  /* 31 */ val FRAME: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.FRAME with Double = js.native
-  /* 32 */ val HALF_FRAME: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HALF_FRAME with Double = js.native
-  /* 33 */ val HEART: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEART with Double = js.native
-  /* 34 */ val HEPTAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEPTAGON with Double = js.native
-  /* 35 */ val HEXAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HEXAGON with Double = js.native
-  /* 36 */ val HOME_PLATE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HOME_PLATE with Double = js.native
-  /* 37 */ val HORIZONTAL_SCROLL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.HORIZONTAL_SCROLL with Double = js.native
-  /* 38 */ val IRREGULAR_SEAL_1: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.IRREGULAR_SEAL_1 with Double = js.native
-  /* 39 */ val IRREGULAR_SEAL_2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.IRREGULAR_SEAL_2 with Double = js.native
-  /* 40 */ val LEFT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_ARROW with Double = js.native
-  /* 41 */ val LEFT_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_ARROW_CALLOUT with Double = js.native
-  /* 42 */ val LEFT_BRACE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_BRACE with Double = js.native
-  /* 43 */ val LEFT_BRACKET: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_BRACKET with Double = js.native
-  /* 44 */ val LEFT_RIGHT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_ARROW with Double = js.native
-  /* 45 */ val LEFT_RIGHT_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_ARROW_CALLOUT with Double = js.native
-  /* 46 */ val LEFT_RIGHT_UP_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_RIGHT_UP_ARROW with Double = js.native
-  /* 47 */ val LEFT_UP_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LEFT_UP_ARROW with Double = js.native
-  /* 48 */ val LIGHTNING_BOLT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.LIGHTNING_BOLT with Double = js.native
-  /* 49 */ val MATH_DIVIDE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_DIVIDE with Double = js.native
-  /* 50 */ val MATH_EQUAL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_EQUAL with Double = js.native
-  /* 51 */ val MATH_MINUS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_MINUS with Double = js.native
-  /* 52 */ val MATH_MULTIPLY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_MULTIPLY with Double = js.native
-  /* 53 */ val MATH_NOT_EQUAL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_NOT_EQUAL with Double = js.native
-  /* 54 */ val MATH_PLUS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MATH_PLUS with Double = js.native
-  /* 55 */ val MOON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.MOON with Double = js.native
-  /* 57 */ val NOTCHED_RIGHT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.NOTCHED_RIGHT_ARROW with Double = js.native
-  /* 56 */ val NO_SMOKING: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.NO_SMOKING with Double = js.native
-  /* 58 */ val OCTAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.OCTAGON with Double = js.native
-  /* 59 */ val PARALLELOGRAM: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PARALLELOGRAM with Double = js.native
-  /* 60 */ val PENTAGON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PENTAGON with Double = js.native
-  /* 61 */ val PIE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PIE with Double = js.native
-  /* 62 */ val PLAQUE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PLAQUE with Double = js.native
-  /* 63 */ val PLUS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.PLUS with Double = js.native
-  /* 64 */ val QUAD_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.QUAD_ARROW with Double = js.native
-  /* 65 */ val QUAD_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.QUAD_ARROW_CALLOUT with Double = js.native
-  /* 2 */ val RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RECTANGLE with Double = js.native
-  /* 66 */ val RIBBON: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIBBON with Double = js.native
-  /* 67 */ val RIBBON_2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIBBON_2 with Double = js.native
-  /* 68 */ val RIGHT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_ARROW with Double = js.native
-  /* 69 */ val RIGHT_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_ARROW_CALLOUT with Double = js.native
-  /* 70 */ val RIGHT_BRACE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_BRACE with Double = js.native
-  /* 71 */ val RIGHT_BRACKET: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_BRACKET with Double = js.native
-  /* 75 */ val RIGHT_TRIANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.RIGHT_TRIANGLE with Double = js.native
-  /* 72 */ val ROUND_1_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_1_RECTANGLE with Double = js.native
-  /* 73 */ val ROUND_2_DIAGONAL_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_2_DIAGONAL_RECTANGLE with Double = js.native
-  /* 74 */ val ROUND_2_SAME_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_2_SAME_RECTANGLE with Double = js.native
-  /* 3 */ val ROUND_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.ROUND_RECTANGLE with Double = js.native
-  /* 76 */ val SMILEY_FACE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SMILEY_FACE with Double = js.native
-  /* 77 */ val SNIP_1_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_1_RECTANGLE with Double = js.native
-  /* 78 */ val SNIP_2_DIAGONAL_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_2_DIAGONAL_RECTANGLE with Double = js.native
-  /* 79 */ val SNIP_2_SAME_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_2_SAME_RECTANGLE with Double = js.native
-  /* 80 */ val SNIP_ROUND_RECTANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SNIP_ROUND_RECTANGLE with Double = js.native
-  /* 136 */ val SPEECH: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SPEECH with Double = js.native
-  /* 137 */ val STARBURST: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STARBURST with Double = js.native
-  /* 81 */ val STAR_10: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_10 with Double = js.native
-  /* 82 */ val STAR_12: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_12 with Double = js.native
-  /* 83 */ val STAR_16: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_16 with Double = js.native
-  /* 84 */ val STAR_24: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_24 with Double = js.native
-  /* 85 */ val STAR_32: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_32 with Double = js.native
-  /* 86 */ val STAR_4: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_4 with Double = js.native
-  /* 87 */ val STAR_5: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_5 with Double = js.native
-  /* 88 */ val STAR_6: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_6 with Double = js.native
-  /* 89 */ val STAR_7: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_7 with Double = js.native
-  /* 90 */ val STAR_8: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STAR_8 with Double = js.native
-  /* 91 */ val STRIPED_RIGHT_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.STRIPED_RIGHT_ARROW with Double = js.native
-  /* 92 */ val SUN: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.SUN with Double = js.native
-  /* 138 */ val TEARDROP: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TEARDROP with Double = js.native
-  /* 1 */ val TEXT_BOX: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TEXT_BOX with Double = js.native
-  /* 93 */ val TRAPEZOID: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TRAPEZOID with Double = js.native
-  /* 94 */ val TRIANGLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.TRIANGLE with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UNSUPPORTED with Double = js.native
-  /* 95 */ val UP_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_ARROW with Double = js.native
-  /* 96 */ val UP_ARROW_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_ARROW_CALLOUT with Double = js.native
-  /* 97 */ val UP_DOWN_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UP_DOWN_ARROW with Double = js.native
-  /* 98 */ val UTURN_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.UTURN_ARROW with Double = js.native
-  /* 99 */ val VERTICAL_SCROLL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.VERTICAL_SCROLL with Double = js.native
-  /* 100 */ val WAVE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WAVE with Double = js.native
-  /* 101 */ val WEDGE_ELLIPSE_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_ELLIPSE_CALLOUT with Double = js.native
-  /* 102 */ val WEDGE_RECTANGLE_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_RECTANGLE_CALLOUT with Double = js.native
-  /* 103 */ val WEDGE_ROUND_RECTANGLE_CALLOUT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ShapeType.WEDGE_ROUND_RECTANGLE_CALLOUT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShapeType with Double] = js.native
+  /* 5 */ @js.native
+  object ARC extends TopLevel[ARC with Double]
+  
+  /* 133 */ @js.native
+  object ARROW_EAST extends TopLevel[ARROW_EAST with Double]
+  
+  /* 135 */ @js.native
+  object ARROW_NORTH extends TopLevel[ARROW_NORTH with Double]
+  
+  /* 134 */ @js.native
+  object ARROW_NORTH_EAST extends TopLevel[ARROW_NORTH_EAST with Double]
+  
+  /* 6 */ @js.native
+  object BENT_ARROW extends TopLevel[BENT_ARROW with Double]
+  
+  /* 7 */ @js.native
+  object BENT_UP_ARROW extends TopLevel[BENT_UP_ARROW with Double]
+  
+  /* 8 */ @js.native
+  object BEVEL extends TopLevel[BEVEL with Double]
+  
+  /* 9 */ @js.native
+  object BLOCK_ARC extends TopLevel[BLOCK_ARC with Double]
+  
+  /* 10 */ @js.native
+  object BRACE_PAIR extends TopLevel[BRACE_PAIR with Double]
+  
+  /* 11 */ @js.native
+  object BRACKET_PAIR extends TopLevel[BRACKET_PAIR with Double]
+  
+  /* 12 */ @js.native
+  object CAN extends TopLevel[CAN with Double]
+  
+  /* 13 */ @js.native
+  object CHEVRON extends TopLevel[CHEVRON with Double]
+  
+  /* 14 */ @js.native
+  object CHORD extends TopLevel[CHORD with Double]
+  
+  /* 15 */ @js.native
+  object CLOUD extends TopLevel[CLOUD with Double]
+  
+  /* 141 */ @js.native
+  object CLOUD_CALLOUT extends TopLevel[CLOUD_CALLOUT with Double]
+  
+  /* 16 */ @js.native
+  object CORNER extends TopLevel[CORNER with Double]
+  
+  /* 17 */ @js.native
+  object CUBE extends TopLevel[CUBE with Double]
+  
+  /* 18 */ @js.native
+  object CURVED_DOWN_ARROW extends TopLevel[CURVED_DOWN_ARROW with Double]
+  
+  /* 19 */ @js.native
+  object CURVED_LEFT_ARROW extends TopLevel[CURVED_LEFT_ARROW with Double]
+  
+  /* 20 */ @js.native
+  object CURVED_RIGHT_ARROW extends TopLevel[CURVED_RIGHT_ARROW with Double]
+  
+  /* 21 */ @js.native
+  object CURVED_UP_ARROW extends TopLevel[CURVED_UP_ARROW with Double]
+  
+  /* 142 */ @js.native
+  object CUSTOM extends TopLevel[CUSTOM with Double]
+  
+  /* 22 */ @js.native
+  object DECAGON extends TopLevel[DECAGON with Double]
+  
+  /* 23 */ @js.native
+  object DIAGONAL_STRIPE extends TopLevel[DIAGONAL_STRIPE with Double]
+  
+  /* 24 */ @js.native
+  object DIAMOND extends TopLevel[DIAMOND with Double]
+  
+  /* 25 */ @js.native
+  object DODECAGON extends TopLevel[DODECAGON with Double]
+  
+  /* 26 */ @js.native
+  object DONUT extends TopLevel[DONUT with Double]
+  
+  /* 27 */ @js.native
+  object DOUBLE_WAVE extends TopLevel[DOUBLE_WAVE with Double]
+  
+  /* 28 */ @js.native
+  object DOWN_ARROW extends TopLevel[DOWN_ARROW with Double]
+  
+  /* 29 */ @js.native
+  object DOWN_ARROW_CALLOUT extends TopLevel[DOWN_ARROW_CALLOUT with Double]
+  
+  /* 4 */ @js.native
+  object ELLIPSE extends TopLevel[ELLIPSE with Double]
+  
+  /* 139 */ @js.native
+  object ELLIPSE_RIBBON extends TopLevel[ELLIPSE_RIBBON with Double]
+  
+  /* 140 */ @js.native
+  object ELLIPSE_RIBBON_2 extends TopLevel[ELLIPSE_RIBBON_2 with Double]
+  
+  /* 104 */ @js.native
+  object FLOW_CHART_ALTERNATE_PROCESS extends TopLevel[FLOW_CHART_ALTERNATE_PROCESS with Double]
+  
+  /* 105 */ @js.native
+  object FLOW_CHART_COLLATE extends TopLevel[FLOW_CHART_COLLATE with Double]
+  
+  /* 106 */ @js.native
+  object FLOW_CHART_CONNECTOR extends TopLevel[FLOW_CHART_CONNECTOR with Double]
+  
+  /* 107 */ @js.native
+  object FLOW_CHART_DECISION extends TopLevel[FLOW_CHART_DECISION with Double]
+  
+  /* 108 */ @js.native
+  object FLOW_CHART_DELAY extends TopLevel[FLOW_CHART_DELAY with Double]
+  
+  /* 109 */ @js.native
+  object FLOW_CHART_DISPLAY extends TopLevel[FLOW_CHART_DISPLAY with Double]
+  
+  /* 110 */ @js.native
+  object FLOW_CHART_DOCUMENT extends TopLevel[FLOW_CHART_DOCUMENT with Double]
+  
+  /* 111 */ @js.native
+  object FLOW_CHART_EXTRACT extends TopLevel[FLOW_CHART_EXTRACT with Double]
+  
+  /* 112 */ @js.native
+  object FLOW_CHART_INPUT_OUTPUT extends TopLevel[FLOW_CHART_INPUT_OUTPUT with Double]
+  
+  /* 113 */ @js.native
+  object FLOW_CHART_INTERNAL_STORAGE extends TopLevel[FLOW_CHART_INTERNAL_STORAGE with Double]
+  
+  /* 114 */ @js.native
+  object FLOW_CHART_MAGNETIC_DISK extends TopLevel[FLOW_CHART_MAGNETIC_DISK with Double]
+  
+  /* 115 */ @js.native
+  object FLOW_CHART_MAGNETIC_DRUM extends TopLevel[FLOW_CHART_MAGNETIC_DRUM with Double]
+  
+  /* 116 */ @js.native
+  object FLOW_CHART_MAGNETIC_TAPE extends TopLevel[FLOW_CHART_MAGNETIC_TAPE with Double]
+  
+  /* 117 */ @js.native
+  object FLOW_CHART_MANUAL_INPUT extends TopLevel[FLOW_CHART_MANUAL_INPUT with Double]
+  
+  /* 118 */ @js.native
+  object FLOW_CHART_MANUAL_OPERATION extends TopLevel[FLOW_CHART_MANUAL_OPERATION with Double]
+  
+  /* 119 */ @js.native
+  object FLOW_CHART_MERGE extends TopLevel[FLOW_CHART_MERGE with Double]
+  
+  /* 120 */ @js.native
+  object FLOW_CHART_MULTIDOCUMENT extends TopLevel[FLOW_CHART_MULTIDOCUMENT with Double]
+  
+  /* 121 */ @js.native
+  object FLOW_CHART_OFFLINE_STORAGE extends TopLevel[FLOW_CHART_OFFLINE_STORAGE with Double]
+  
+  /* 122 */ @js.native
+  object FLOW_CHART_OFFPAGE_CONNECTOR extends TopLevel[FLOW_CHART_OFFPAGE_CONNECTOR with Double]
+  
+  /* 123 */ @js.native
+  object FLOW_CHART_ONLINE_STORAGE extends TopLevel[FLOW_CHART_ONLINE_STORAGE with Double]
+  
+  /* 124 */ @js.native
+  object FLOW_CHART_OR extends TopLevel[FLOW_CHART_OR with Double]
+  
+  /* 125 */ @js.native
+  object FLOW_CHART_PREDEFINED_PROCESS extends TopLevel[FLOW_CHART_PREDEFINED_PROCESS with Double]
+  
+  /* 126 */ @js.native
+  object FLOW_CHART_PREPARATION extends TopLevel[FLOW_CHART_PREPARATION with Double]
+  
+  /* 127 */ @js.native
+  object FLOW_CHART_PROCESS extends TopLevel[FLOW_CHART_PROCESS with Double]
+  
+  /* 128 */ @js.native
+  object FLOW_CHART_PUNCHED_CARD extends TopLevel[FLOW_CHART_PUNCHED_CARD with Double]
+  
+  /* 129 */ @js.native
+  object FLOW_CHART_PUNCHED_TAPE extends TopLevel[FLOW_CHART_PUNCHED_TAPE with Double]
+  
+  /* 130 */ @js.native
+  object FLOW_CHART_SORT extends TopLevel[FLOW_CHART_SORT with Double]
+  
+  /* 131 */ @js.native
+  object FLOW_CHART_SUMMING_JUNCTION extends TopLevel[FLOW_CHART_SUMMING_JUNCTION with Double]
+  
+  /* 132 */ @js.native
+  object FLOW_CHART_TERMINATOR extends TopLevel[FLOW_CHART_TERMINATOR with Double]
+  
+  /* 30 */ @js.native
+  object FOLDED_CORNER extends TopLevel[FOLDED_CORNER with Double]
+  
+  /* 31 */ @js.native
+  object FRAME extends TopLevel[FRAME with Double]
+  
+  /* 32 */ @js.native
+  object HALF_FRAME extends TopLevel[HALF_FRAME with Double]
+  
+  /* 33 */ @js.native
+  object HEART extends TopLevel[HEART with Double]
+  
+  /* 34 */ @js.native
+  object HEPTAGON extends TopLevel[HEPTAGON with Double]
+  
+  /* 35 */ @js.native
+  object HEXAGON extends TopLevel[HEXAGON with Double]
+  
+  /* 36 */ @js.native
+  object HOME_PLATE extends TopLevel[HOME_PLATE with Double]
+  
+  /* 37 */ @js.native
+  object HORIZONTAL_SCROLL extends TopLevel[HORIZONTAL_SCROLL with Double]
+  
+  /* 38 */ @js.native
+  object IRREGULAR_SEAL_1 extends TopLevel[IRREGULAR_SEAL_1 with Double]
+  
+  /* 39 */ @js.native
+  object IRREGULAR_SEAL_2 extends TopLevel[IRREGULAR_SEAL_2 with Double]
+  
+  /* 40 */ @js.native
+  object LEFT_ARROW extends TopLevel[LEFT_ARROW with Double]
+  
+  /* 41 */ @js.native
+  object LEFT_ARROW_CALLOUT extends TopLevel[LEFT_ARROW_CALLOUT with Double]
+  
+  /* 42 */ @js.native
+  object LEFT_BRACE extends TopLevel[LEFT_BRACE with Double]
+  
+  /* 43 */ @js.native
+  object LEFT_BRACKET extends TopLevel[LEFT_BRACKET with Double]
+  
+  /* 44 */ @js.native
+  object LEFT_RIGHT_ARROW extends TopLevel[LEFT_RIGHT_ARROW with Double]
+  
+  /* 45 */ @js.native
+  object LEFT_RIGHT_ARROW_CALLOUT extends TopLevel[LEFT_RIGHT_ARROW_CALLOUT with Double]
+  
+  /* 46 */ @js.native
+  object LEFT_RIGHT_UP_ARROW extends TopLevel[LEFT_RIGHT_UP_ARROW with Double]
+  
+  /* 47 */ @js.native
+  object LEFT_UP_ARROW extends TopLevel[LEFT_UP_ARROW with Double]
+  
+  /* 48 */ @js.native
+  object LIGHTNING_BOLT extends TopLevel[LIGHTNING_BOLT with Double]
+  
+  /* 49 */ @js.native
+  object MATH_DIVIDE extends TopLevel[MATH_DIVIDE with Double]
+  
+  /* 50 */ @js.native
+  object MATH_EQUAL extends TopLevel[MATH_EQUAL with Double]
+  
+  /* 51 */ @js.native
+  object MATH_MINUS extends TopLevel[MATH_MINUS with Double]
+  
+  /* 52 */ @js.native
+  object MATH_MULTIPLY extends TopLevel[MATH_MULTIPLY with Double]
+  
+  /* 53 */ @js.native
+  object MATH_NOT_EQUAL extends TopLevel[MATH_NOT_EQUAL with Double]
+  
+  /* 54 */ @js.native
+  object MATH_PLUS extends TopLevel[MATH_PLUS with Double]
+  
+  /* 55 */ @js.native
+  object MOON extends TopLevel[MOON with Double]
+  
+  /* 57 */ @js.native
+  object NOTCHED_RIGHT_ARROW extends TopLevel[NOTCHED_RIGHT_ARROW with Double]
+  
+  /* 56 */ @js.native
+  object NO_SMOKING extends TopLevel[NO_SMOKING with Double]
+  
+  /* 58 */ @js.native
+  object OCTAGON extends TopLevel[OCTAGON with Double]
+  
+  /* 59 */ @js.native
+  object PARALLELOGRAM extends TopLevel[PARALLELOGRAM with Double]
+  
+  /* 60 */ @js.native
+  object PENTAGON extends TopLevel[PENTAGON with Double]
+  
+  /* 61 */ @js.native
+  object PIE extends TopLevel[PIE with Double]
+  
+  /* 62 */ @js.native
+  object PLAQUE extends TopLevel[PLAQUE with Double]
+  
+  /* 63 */ @js.native
+  object PLUS extends TopLevel[PLUS with Double]
+  
+  /* 64 */ @js.native
+  object QUAD_ARROW extends TopLevel[QUAD_ARROW with Double]
+  
+  /* 65 */ @js.native
+  object QUAD_ARROW_CALLOUT extends TopLevel[QUAD_ARROW_CALLOUT with Double]
+  
+  /* 2 */ @js.native
+  object RECTANGLE extends TopLevel[RECTANGLE with Double]
+  
+  /* 66 */ @js.native
+  object RIBBON extends TopLevel[RIBBON with Double]
+  
+  /* 67 */ @js.native
+  object RIBBON_2 extends TopLevel[RIBBON_2 with Double]
+  
+  /* 68 */ @js.native
+  object RIGHT_ARROW extends TopLevel[RIGHT_ARROW with Double]
+  
+  /* 69 */ @js.native
+  object RIGHT_ARROW_CALLOUT extends TopLevel[RIGHT_ARROW_CALLOUT with Double]
+  
+  /* 70 */ @js.native
+  object RIGHT_BRACE extends TopLevel[RIGHT_BRACE with Double]
+  
+  /* 71 */ @js.native
+  object RIGHT_BRACKET extends TopLevel[RIGHT_BRACKET with Double]
+  
+  /* 75 */ @js.native
+  object RIGHT_TRIANGLE extends TopLevel[RIGHT_TRIANGLE with Double]
+  
+  /* 72 */ @js.native
+  object ROUND_1_RECTANGLE extends TopLevel[ROUND_1_RECTANGLE with Double]
+  
+  /* 73 */ @js.native
+  object ROUND_2_DIAGONAL_RECTANGLE extends TopLevel[ROUND_2_DIAGONAL_RECTANGLE with Double]
+  
+  /* 74 */ @js.native
+  object ROUND_2_SAME_RECTANGLE extends TopLevel[ROUND_2_SAME_RECTANGLE with Double]
+  
+  /* 3 */ @js.native
+  object ROUND_RECTANGLE extends TopLevel[ROUND_RECTANGLE with Double]
+  
+  /* 76 */ @js.native
+  object SMILEY_FACE extends TopLevel[SMILEY_FACE with Double]
+  
+  /* 77 */ @js.native
+  object SNIP_1_RECTANGLE extends TopLevel[SNIP_1_RECTANGLE with Double]
+  
+  /* 78 */ @js.native
+  object SNIP_2_DIAGONAL_RECTANGLE extends TopLevel[SNIP_2_DIAGONAL_RECTANGLE with Double]
+  
+  /* 79 */ @js.native
+  object SNIP_2_SAME_RECTANGLE extends TopLevel[SNIP_2_SAME_RECTANGLE with Double]
+  
+  /* 80 */ @js.native
+  object SNIP_ROUND_RECTANGLE extends TopLevel[SNIP_ROUND_RECTANGLE with Double]
+  
+  /* 136 */ @js.native
+  object SPEECH extends TopLevel[SPEECH with Double]
+  
+  /* 137 */ @js.native
+  object STARBURST extends TopLevel[STARBURST with Double]
+  
+  /* 81 */ @js.native
+  object STAR_10 extends TopLevel[STAR_10 with Double]
+  
+  /* 82 */ @js.native
+  object STAR_12 extends TopLevel[STAR_12 with Double]
+  
+  /* 83 */ @js.native
+  object STAR_16 extends TopLevel[STAR_16 with Double]
+  
+  /* 84 */ @js.native
+  object STAR_24 extends TopLevel[STAR_24 with Double]
+  
+  /* 85 */ @js.native
+  object STAR_32 extends TopLevel[STAR_32 with Double]
+  
+  /* 86 */ @js.native
+  object STAR_4 extends TopLevel[STAR_4 with Double]
+  
+  /* 87 */ @js.native
+  object STAR_5 extends TopLevel[STAR_5 with Double]
+  
+  /* 88 */ @js.native
+  object STAR_6 extends TopLevel[STAR_6 with Double]
+  
+  /* 89 */ @js.native
+  object STAR_7 extends TopLevel[STAR_7 with Double]
+  
+  /* 90 */ @js.native
+  object STAR_8 extends TopLevel[STAR_8 with Double]
+  
+  /* 91 */ @js.native
+  object STRIPED_RIGHT_ARROW extends TopLevel[STRIPED_RIGHT_ARROW with Double]
+  
+  /* 92 */ @js.native
+  object SUN extends TopLevel[SUN with Double]
+  
+  /* 138 */ @js.native
+  object TEARDROP extends TopLevel[TEARDROP with Double]
+  
+  /* 1 */ @js.native
+  object TEXT_BOX extends TopLevel[TEXT_BOX with Double]
+  
+  /* 93 */ @js.native
+  object TRAPEZOID extends TopLevel[TRAPEZOID with Double]
+  
+  /* 94 */ @js.native
+  object TRIANGLE extends TopLevel[TRIANGLE with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
+  /* 95 */ @js.native
+  object UP_ARROW extends TopLevel[UP_ARROW with Double]
+  
+  /* 96 */ @js.native
+  object UP_ARROW_CALLOUT extends TopLevel[UP_ARROW_CALLOUT with Double]
+  
+  /* 97 */ @js.native
+  object UP_DOWN_ARROW extends TopLevel[UP_DOWN_ARROW with Double]
+  
+  /* 98 */ @js.native
+  object UTURN_ARROW extends TopLevel[UTURN_ARROW with Double]
+  
+  /* 99 */ @js.native
+  object VERTICAL_SCROLL extends TopLevel[VERTICAL_SCROLL with Double]
+  
+  /* 100 */ @js.native
+  object WAVE extends TopLevel[WAVE with Double]
+  
+  /* 101 */ @js.native
+  object WEDGE_ELLIPSE_CALLOUT extends TopLevel[WEDGE_ELLIPSE_CALLOUT with Double]
+  
+  /* 102 */ @js.native
+  object WEDGE_RECTANGLE_CALLOUT extends TopLevel[WEDGE_RECTANGLE_CALLOUT with Double]
+  
+  /* 103 */ @js.native
+  object WEDGE_ROUND_RECTANGLE_CALLOUT extends TopLevel[WEDGE_ROUND_RECTANGLE_CALLOUT with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.All
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.Me
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object AcquisitionAssignmentType extends js.Object {
   @js.native
   sealed trait None extends AcquisitionAssignmentType
   
-  /* 2 */ val All: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.All with Double = js.native
-  /* 1 */ val Me: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.Me with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionAssignmentType.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AcquisitionAssignmentType with Double] = js.native
+  /* 2 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 1 */ @js.native
+  object Me extends TopLevel[Me with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

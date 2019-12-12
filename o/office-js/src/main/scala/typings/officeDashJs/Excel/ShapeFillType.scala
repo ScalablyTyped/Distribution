@@ -1,5 +1,12 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeFillType.gradient
+import typings.officeDashJs.Excel.ShapeFillType.mixed
+import typings.officeDashJs.Excel.ShapeFillType.noFill
+import typings.officeDashJs.Excel.ShapeFillType.pattern
+import typings.officeDashJs.Excel.ShapeFillType.pictureAndTexture
+import typings.officeDashJs.Excel.ShapeFillType.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,13 +71,25 @@ object ShapeFillType extends js.Object {
   @js.native
   sealed trait solid extends ShapeFillType
   
-  /* "Gradient" */ val gradient: typings.officeDashJs.Excel.ShapeFillType.gradient with String = js.native
-  /* "Mixed" */ val mixed: typings.officeDashJs.Excel.ShapeFillType.mixed with String = js.native
-  /* "NoFill" */ val noFill: typings.officeDashJs.Excel.ShapeFillType.noFill with String = js.native
-  /* "Pattern" */ val pattern: typings.officeDashJs.Excel.ShapeFillType.pattern with String = js.native
-  /* "PictureAndTexture" */ val pictureAndTexture: typings.officeDashJs.Excel.ShapeFillType.pictureAndTexture with String = js.native
-  /* "Solid" */ val solid: typings.officeDashJs.Excel.ShapeFillType.solid with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeFillType with String] = js.native
+  /* "Gradient" */ @js.native
+  object gradient extends TopLevel[gradient with String]
+  
+  /* "Mixed" */ @js.native
+  object mixed extends TopLevel[mixed with String]
+  
+  /* "NoFill" */ @js.native
+  object noFill extends TopLevel[noFill with String]
+  
+  /* "Pattern" */ @js.native
+  object pattern extends TopLevel[pattern with String]
+  
+  /* "PictureAndTexture" */ @js.native
+  object pictureAndTexture extends TopLevel[pictureAndTexture with String]
+  
+  /* "Solid" */ @js.native
+  object solid extends TopLevel[solid with String]
+  
 }
 

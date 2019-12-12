@@ -129,7 +129,8 @@ object Simulate extends js.Object {
      // = 187,
     var `,`: Double = js.native
      // = 188,
-    var `-`: Double = js.native
+    @JSName("-")
+    var `-_`: Double = js.native
      // = 189,
     var `.`: Double = js.native
      // = 190,

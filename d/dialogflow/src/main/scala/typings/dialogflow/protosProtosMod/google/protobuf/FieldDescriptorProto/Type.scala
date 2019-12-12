@@ -1,5 +1,24 @@
 package typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,25 +84,61 @@ object Type extends js.Object {
   @js.native
   sealed trait TYPE_UINT64 extends Type
   
-  /* 8 */ val TYPE_BOOL: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL with Double = js.native
-  /* 12 */ val TYPE_BYTES: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES with Double = js.native
-  /* 1 */ val TYPE_DOUBLE: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE with Double = js.native
-  /* 14 */ val TYPE_ENUM: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM with Double = js.native
-  /* 7 */ val TYPE_FIXED32: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32 with Double = js.native
-  /* 6 */ val TYPE_FIXED64: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64 with Double = js.native
-  /* 2 */ val TYPE_FLOAT: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT with Double = js.native
-  /* 10 */ val TYPE_GROUP: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP with Double = js.native
-  /* 5 */ val TYPE_INT32: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32 with Double = js.native
-  /* 3 */ val TYPE_INT64: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64 with Double = js.native
-  /* 11 */ val TYPE_MESSAGE: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE with Double = js.native
-  /* 15 */ val TYPE_SFIXED32: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32 with Double = js.native
-  /* 16 */ val TYPE_SFIXED64: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64 with Double = js.native
-  /* 17 */ val TYPE_SINT32: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32 with Double = js.native
-  /* 18 */ val TYPE_SINT64: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64 with Double = js.native
-  /* 9 */ val TYPE_STRING: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING with Double = js.native
-  /* 13 */ val TYPE_UINT32: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32 with Double = js.native
-  /* 4 */ val TYPE_UINT64: typings.dialogflow.protosProtosMod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Type with Double] = js.native
+  /* 8 */ @js.native
+  object TYPE_BOOL extends TopLevel[TYPE_BOOL with Double]
+  
+  /* 12 */ @js.native
+  object TYPE_BYTES extends TopLevel[TYPE_BYTES with Double]
+  
+  /* 1 */ @js.native
+  object TYPE_DOUBLE extends TopLevel[TYPE_DOUBLE with Double]
+  
+  /* 14 */ @js.native
+  object TYPE_ENUM extends TopLevel[TYPE_ENUM with Double]
+  
+  /* 7 */ @js.native
+  object TYPE_FIXED32 extends TopLevel[TYPE_FIXED32 with Double]
+  
+  /* 6 */ @js.native
+  object TYPE_FIXED64 extends TopLevel[TYPE_FIXED64 with Double]
+  
+  /* 2 */ @js.native
+  object TYPE_FLOAT extends TopLevel[TYPE_FLOAT with Double]
+  
+  /* 10 */ @js.native
+  object TYPE_GROUP extends TopLevel[TYPE_GROUP with Double]
+  
+  /* 5 */ @js.native
+  object TYPE_INT32 extends TopLevel[TYPE_INT32 with Double]
+  
+  /* 3 */ @js.native
+  object TYPE_INT64 extends TopLevel[TYPE_INT64 with Double]
+  
+  /* 11 */ @js.native
+  object TYPE_MESSAGE extends TopLevel[TYPE_MESSAGE with Double]
+  
+  /* 15 */ @js.native
+  object TYPE_SFIXED32 extends TopLevel[TYPE_SFIXED32 with Double]
+  
+  /* 16 */ @js.native
+  object TYPE_SFIXED64 extends TopLevel[TYPE_SFIXED64 with Double]
+  
+  /* 17 */ @js.native
+  object TYPE_SINT32 extends TopLevel[TYPE_SINT32 with Double]
+  
+  /* 18 */ @js.native
+  object TYPE_SINT64 extends TopLevel[TYPE_SINT64 with Double]
+  
+  /* 9 */ @js.native
+  object TYPE_STRING extends TopLevel[TYPE_STRING with Double]
+  
+  /* 13 */ @js.native
+  object TYPE_UINT32 extends TopLevel[TYPE_UINT32 with Double]
+  
+  /* 4 */ @js.native
+  object TYPE_UINT64 extends TopLevel[TYPE_UINT64 with Double]
+  
 }
 

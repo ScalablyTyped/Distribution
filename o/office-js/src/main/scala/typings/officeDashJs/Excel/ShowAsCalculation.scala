@@ -1,5 +1,22 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShowAsCalculation.differenceFrom
+import typings.officeDashJs.Excel.ShowAsCalculation.index
+import typings.officeDashJs.Excel.ShowAsCalculation.none
+import typings.officeDashJs.Excel.ShowAsCalculation.percentDifferenceFrom
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOf
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfColumnTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfGrandTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentColumnTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentRowTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentOfRowTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.percentRunningTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.rankAscending
+import typings.officeDashJs.Excel.ShowAsCalculation.rankDecending
+import typings.officeDashJs.Excel.ShowAsCalculation.runningTotal
+import typings.officeDashJs.Excel.ShowAsCalculation.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,23 +162,55 @@ object ShowAsCalculation extends js.Object {
   @js.native
   sealed trait unknown extends ShowAsCalculation
   
-  /* "DifferenceFrom" */ val differenceFrom: typings.officeDashJs.Excel.ShowAsCalculation.differenceFrom with String = js.native
-  /* "Index" */ val index: typings.officeDashJs.Excel.ShowAsCalculation.index with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.ShowAsCalculation.none with String = js.native
-  /* "PercentDifferenceFrom" */ val percentDifferenceFrom: typings.officeDashJs.Excel.ShowAsCalculation.percentDifferenceFrom with String = js.native
-  /* "PercentOf" */ val percentOf: typings.officeDashJs.Excel.ShowAsCalculation.percentOf with String = js.native
-  /* "PercentOfColumnTotal" */ val percentOfColumnTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfColumnTotal with String = js.native
-  /* "PercentOfGrandTotal" */ val percentOfGrandTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfGrandTotal with String = js.native
-  /* "PercentOfParentColumnTotal" */ val percentOfParentColumnTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentColumnTotal with String = js.native
-  /* "PercentOfParentRowTotal" */ val percentOfParentRowTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentRowTotal with String = js.native
-  /* "PercentOfParentTotal" */ val percentOfParentTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfParentTotal with String = js.native
-  /* "PercentOfRowTotal" */ val percentOfRowTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentOfRowTotal with String = js.native
-  /* "PercentRunningTotal" */ val percentRunningTotal: typings.officeDashJs.Excel.ShowAsCalculation.percentRunningTotal with String = js.native
-  /* "RankAscending" */ val rankAscending: typings.officeDashJs.Excel.ShowAsCalculation.rankAscending with String = js.native
-  /* "RankDecending" */ val rankDecending: typings.officeDashJs.Excel.ShowAsCalculation.rankDecending with String = js.native
-  /* "RunningTotal" */ val runningTotal: typings.officeDashJs.Excel.ShowAsCalculation.runningTotal with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJs.Excel.ShowAsCalculation.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShowAsCalculation with String] = js.native
+  /* "DifferenceFrom" */ @js.native
+  object differenceFrom extends TopLevel[differenceFrom with String]
+  
+  /* "Index" */ @js.native
+  object index extends TopLevel[index with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "PercentDifferenceFrom" */ @js.native
+  object percentDifferenceFrom extends TopLevel[percentDifferenceFrom with String]
+  
+  /* "PercentOf" */ @js.native
+  object percentOf extends TopLevel[percentOf with String]
+  
+  /* "PercentOfColumnTotal" */ @js.native
+  object percentOfColumnTotal extends TopLevel[percentOfColumnTotal with String]
+  
+  /* "PercentOfGrandTotal" */ @js.native
+  object percentOfGrandTotal extends TopLevel[percentOfGrandTotal with String]
+  
+  /* "PercentOfParentColumnTotal" */ @js.native
+  object percentOfParentColumnTotal extends TopLevel[percentOfParentColumnTotal with String]
+  
+  /* "PercentOfParentRowTotal" */ @js.native
+  object percentOfParentRowTotal extends TopLevel[percentOfParentRowTotal with String]
+  
+  /* "PercentOfParentTotal" */ @js.native
+  object percentOfParentTotal extends TopLevel[percentOfParentTotal with String]
+  
+  /* "PercentOfRowTotal" */ @js.native
+  object percentOfRowTotal extends TopLevel[percentOfRowTotal with String]
+  
+  /* "PercentRunningTotal" */ @js.native
+  object percentRunningTotal extends TopLevel[percentRunningTotal with String]
+  
+  /* "RankAscending" */ @js.native
+  object rankAscending extends TopLevel[rankAscending with String]
+  
+  /* "RankDecending" */ @js.native
+  object rankDecending extends TopLevel[rankDecending with String]
+  
+  /* "RunningTotal" */ @js.native
+  object runningTotal extends TopLevel[runningTotal with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.tableTableMod.TableProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object tableMod extends js.Object {
     def this(props: TableProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TableProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TableProps]]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.atStorybookComponents.distBlocksSourceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookComponents.distBlocksSourceMod.SourceError.NO_STORY
+import typings.atStorybookComponents.distBlocksSourceMod.SourceError.SOURCE_UNAVAILABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SourceError extends js.Object {
   @js.native
   sealed trait SOURCE_UNAVAILABLE extends SourceError
   
-  /* "There\\u2019s no story here." */ val NO_STORY: typings.atStorybookComponents.distBlocksSourceMod.SourceError.NO_STORY with String = js.native
-  /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.atStorybookComponents.distBlocksSourceMod.SourceError.SOURCE_UNAVAILABLE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SourceError with String] = js.native
+  /* "There\\u2019s no story here." */ @js.native
+  object NO_STORY extends TopLevel[NO_STORY with String]
+  
+  /* "Oh no! The source is not available." */ @js.native
+  object SOURCE_UNAVAILABLE extends TopLevel[SOURCE_UNAVAILABLE with String]
+  
 }
 

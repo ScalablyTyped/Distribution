@@ -1,5 +1,43 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.PermissionKind.addAndCustomizePages
+import typings.sharepoint.SP.PermissionKind.addDelPrivateWebParts
+import typings.sharepoint.SP.PermissionKind.addListItems
+import typings.sharepoint.SP.PermissionKind.anonymousSearchAccessList
+import typings.sharepoint.SP.PermissionKind.anonymousSearchAccessWebLists
+import typings.sharepoint.SP.PermissionKind.applyStyleSheets
+import typings.sharepoint.SP.PermissionKind.applyThemeAndBorder
+import typings.sharepoint.SP.PermissionKind.approveItems
+import typings.sharepoint.SP.PermissionKind.browseDirectories
+import typings.sharepoint.SP.PermissionKind.browseUserInfo
+import typings.sharepoint.SP.PermissionKind.cancelCheckout
+import typings.sharepoint.SP.PermissionKind.createAlerts
+import typings.sharepoint.SP.PermissionKind.createGroups
+import typings.sharepoint.SP.PermissionKind.createSSCSite
+import typings.sharepoint.SP.PermissionKind.deleteListItems
+import typings.sharepoint.SP.PermissionKind.deleteVersions
+import typings.sharepoint.SP.PermissionKind.editListItems
+import typings.sharepoint.SP.PermissionKind.editMyUserInfo
+import typings.sharepoint.SP.PermissionKind.emptyMask
+import typings.sharepoint.SP.PermissionKind.enumeratePermissions
+import typings.sharepoint.SP.PermissionKind.fullMask
+import typings.sharepoint.SP.PermissionKind.manageAlerts
+import typings.sharepoint.SP.PermissionKind.manageLists
+import typings.sharepoint.SP.PermissionKind.managePermissions
+import typings.sharepoint.SP.PermissionKind.managePersonalViews
+import typings.sharepoint.SP.PermissionKind.manageSubwebs
+import typings.sharepoint.SP.PermissionKind.manageWeb
+import typings.sharepoint.SP.PermissionKind.open
+import typings.sharepoint.SP.PermissionKind.openItems
+import typings.sharepoint.SP.PermissionKind.updatePersonalWebParts
+import typings.sharepoint.SP.PermissionKind.useClientIntegration
+import typings.sharepoint.SP.PermissionKind.useRemoteAPIs
+import typings.sharepoint.SP.PermissionKind.viewFormPages
+import typings.sharepoint.SP.PermissionKind.viewListItems
+import typings.sharepoint.SP.PermissionKind.viewPages
+import typings.sharepoint.SP.PermissionKind.viewUsageData
+import typings.sharepoint.SP.PermissionKind.viewVersions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -159,44 +197,118 @@ object PermissionKind extends js.Object {
   @js.native
   sealed trait viewVersions extends PermissionKind
   
-  /* 16 */ val addAndCustomizePages: typings.sharepoint.SP.PermissionKind.addAndCustomizePages with Double = js.native
-  /* 26 */ val addDelPrivateWebParts: typings.sharepoint.SP.PermissionKind.addDelPrivateWebParts with Double = js.native
-  /* 2 */ val addListItems: typings.sharepoint.SP.PermissionKind.addListItems with Double = js.native
-  /* 13 */ val anonymousSearchAccessList: typings.sharepoint.SP.PermissionKind.anonymousSearchAccessList with Double = js.native
-  /* 29 */ val anonymousSearchAccessWebLists: typings.sharepoint.SP.PermissionKind.anonymousSearchAccessWebLists with Double = js.native
-  /* 18 */ val applyStyleSheets: typings.sharepoint.SP.PermissionKind.applyStyleSheets with Double = js.native
-  /* 17 */ val applyThemeAndBorder: typings.sharepoint.SP.PermissionKind.applyThemeAndBorder with Double = js.native
-  /* 5 */ val approveItems: typings.sharepoint.SP.PermissionKind.approveItems with Double = js.native
-  /* 24 */ val browseDirectories: typings.sharepoint.SP.PermissionKind.browseDirectories with Double = js.native
-  /* 25 */ val browseUserInfo: typings.sharepoint.SP.PermissionKind.browseUserInfo with Double = js.native
-  /* 9 */ val cancelCheckout: typings.sharepoint.SP.PermissionKind.cancelCheckout with Double = js.native
-  /* 33 */ val createAlerts: typings.sharepoint.SP.PermissionKind.createAlerts with Double = js.native
-  /* 22 */ val createGroups: typings.sharepoint.SP.PermissionKind.createGroups with Double = js.native
-  /* 20 */ val createSSCSite: typings.sharepoint.SP.PermissionKind.createSSCSite with Double = js.native
-  /* 4 */ val deleteListItems: typings.sharepoint.SP.PermissionKind.deleteListItems with Double = js.native
-  /* 8 */ val deleteVersions: typings.sharepoint.SP.PermissionKind.deleteVersions with Double = js.native
-  /* 3 */ val editListItems: typings.sharepoint.SP.PermissionKind.editListItems with Double = js.native
-  /* 34 */ val editMyUserInfo: typings.sharepoint.SP.PermissionKind.editMyUserInfo with Double = js.native
-  /* 0 */ val emptyMask: typings.sharepoint.SP.PermissionKind.emptyMask with Double = js.native
-  /* 35 */ val enumeratePermissions: typings.sharepoint.SP.PermissionKind.enumeratePermissions with Double = js.native
-  /* 36 */ val fullMask: typings.sharepoint.SP.PermissionKind.fullMask with Double = js.native
-  /* 32 */ val manageAlerts: typings.sharepoint.SP.PermissionKind.manageAlerts with Double = js.native
-  /* 11 */ val manageLists: typings.sharepoint.SP.PermissionKind.manageLists with Double = js.native
-  /* 23 */ val managePermissions: typings.sharepoint.SP.PermissionKind.managePermissions with Double = js.native
-  /* 10 */ val managePersonalViews: typings.sharepoint.SP.PermissionKind.managePersonalViews with Double = js.native
-  /* 21 */ val manageSubwebs: typings.sharepoint.SP.PermissionKind.manageSubwebs with Double = js.native
-  /* 28 */ val manageWeb: typings.sharepoint.SP.PermissionKind.manageWeb with Double = js.native
-  /* 14 */ val open: typings.sharepoint.SP.PermissionKind.open with Double = js.native
-  /* 6 */ val openItems: typings.sharepoint.SP.PermissionKind.openItems with Double = js.native
-  /* 27 */ val updatePersonalWebParts: typings.sharepoint.SP.PermissionKind.updatePersonalWebParts with Double = js.native
-  /* 30 */ val useClientIntegration: typings.sharepoint.SP.PermissionKind.useClientIntegration with Double = js.native
-  /* 31 */ val useRemoteAPIs: typings.sharepoint.SP.PermissionKind.useRemoteAPIs with Double = js.native
-  /* 12 */ val viewFormPages: typings.sharepoint.SP.PermissionKind.viewFormPages with Double = js.native
-  /* 1 */ val viewListItems: typings.sharepoint.SP.PermissionKind.viewListItems with Double = js.native
-  /* 15 */ val viewPages: typings.sharepoint.SP.PermissionKind.viewPages with Double = js.native
-  /* 19 */ val viewUsageData: typings.sharepoint.SP.PermissionKind.viewUsageData with Double = js.native
-  /* 7 */ val viewVersions: typings.sharepoint.SP.PermissionKind.viewVersions with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PermissionKind with Double] = js.native
+  /* 16 */ @js.native
+  object addAndCustomizePages extends TopLevel[addAndCustomizePages with Double]
+  
+  /* 26 */ @js.native
+  object addDelPrivateWebParts extends TopLevel[addDelPrivateWebParts with Double]
+  
+  /* 2 */ @js.native
+  object addListItems extends TopLevel[addListItems with Double]
+  
+  /* 13 */ @js.native
+  object anonymousSearchAccessList extends TopLevel[anonymousSearchAccessList with Double]
+  
+  /* 29 */ @js.native
+  object anonymousSearchAccessWebLists extends TopLevel[anonymousSearchAccessWebLists with Double]
+  
+  /* 18 */ @js.native
+  object applyStyleSheets extends TopLevel[applyStyleSheets with Double]
+  
+  /* 17 */ @js.native
+  object applyThemeAndBorder extends TopLevel[applyThemeAndBorder with Double]
+  
+  /* 5 */ @js.native
+  object approveItems extends TopLevel[approveItems with Double]
+  
+  /* 24 */ @js.native
+  object browseDirectories extends TopLevel[browseDirectories with Double]
+  
+  /* 25 */ @js.native
+  object browseUserInfo extends TopLevel[browseUserInfo with Double]
+  
+  /* 9 */ @js.native
+  object cancelCheckout extends TopLevel[cancelCheckout with Double]
+  
+  /* 33 */ @js.native
+  object createAlerts extends TopLevel[createAlerts with Double]
+  
+  /* 22 */ @js.native
+  object createGroups extends TopLevel[createGroups with Double]
+  
+  /* 20 */ @js.native
+  object createSSCSite extends TopLevel[createSSCSite with Double]
+  
+  /* 4 */ @js.native
+  object deleteListItems extends TopLevel[deleteListItems with Double]
+  
+  /* 8 */ @js.native
+  object deleteVersions extends TopLevel[deleteVersions with Double]
+  
+  /* 3 */ @js.native
+  object editListItems extends TopLevel[editListItems with Double]
+  
+  /* 34 */ @js.native
+  object editMyUserInfo extends TopLevel[editMyUserInfo with Double]
+  
+  /* 0 */ @js.native
+  object emptyMask extends TopLevel[emptyMask with Double]
+  
+  /* 35 */ @js.native
+  object enumeratePermissions extends TopLevel[enumeratePermissions with Double]
+  
+  /* 36 */ @js.native
+  object fullMask extends TopLevel[fullMask with Double]
+  
+  /* 32 */ @js.native
+  object manageAlerts extends TopLevel[manageAlerts with Double]
+  
+  /* 11 */ @js.native
+  object manageLists extends TopLevel[manageLists with Double]
+  
+  /* 23 */ @js.native
+  object managePermissions extends TopLevel[managePermissions with Double]
+  
+  /* 10 */ @js.native
+  object managePersonalViews extends TopLevel[managePersonalViews with Double]
+  
+  /* 21 */ @js.native
+  object manageSubwebs extends TopLevel[manageSubwebs with Double]
+  
+  /* 28 */ @js.native
+  object manageWeb extends TopLevel[manageWeb with Double]
+  
+  /* 14 */ @js.native
+  object open extends TopLevel[open with Double]
+  
+  /* 6 */ @js.native
+  object openItems extends TopLevel[openItems with Double]
+  
+  /* 27 */ @js.native
+  object updatePersonalWebParts extends TopLevel[updatePersonalWebParts with Double]
+  
+  /* 30 */ @js.native
+  object useClientIntegration extends TopLevel[useClientIntegration with Double]
+  
+  /* 31 */ @js.native
+  object useRemoteAPIs extends TopLevel[useRemoteAPIs with Double]
+  
+  /* 12 */ @js.native
+  object viewFormPages extends TopLevel[viewFormPages with Double]
+  
+  /* 1 */ @js.native
+  object viewListItems extends TopLevel[viewListItems with Double]
+  
+  /* 15 */ @js.native
+  object viewPages extends TopLevel[viewPages with Double]
+  
+  /* 19 */ @js.native
+  object viewUsageData extends TopLevel[viewUsageData with Double]
+  
+  /* 7 */ @js.native
+  object viewVersions extends TopLevel[viewVersions with Double]
+  
 }
 

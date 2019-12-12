@@ -1,5 +1,21 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.BlendFunction.CONSTANT_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.CONSTANT_COLOR
+import typings.cesium.cesiumMod.BlendFunction.DESTINATION_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.DESTINATION_COLOR
+import typings.cesium.cesiumMod.BlendFunction.ONE
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_COLOR
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_COLOR
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_COLOR
+import typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA
+import typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA_SATURATE
+import typings.cesium.cesiumMod.BlendFunction.SOURCE_COLOR
+import typings.cesium.cesiumMod.BlendFunction.ZERO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,22 +71,52 @@ object BlendFunction extends js.Object {
   @js.native
   sealed trait ZERO extends BlendFunction
   
-  /* 12 */ val CONSTANT_ALPHA: typings.cesium.cesiumMod.BlendFunction.CONSTANT_ALPHA with Double = js.native
-  /* 10 */ val CONSTANT_COLOR: typings.cesium.cesiumMod.BlendFunction.CONSTANT_COLOR with Double = js.native
-  /* 8 */ val DESTINATION_ALPHA: typings.cesium.cesiumMod.BlendFunction.DESTINATION_ALPHA with Double = js.native
-  /* 4 */ val DESTINATION_COLOR: typings.cesium.cesiumMod.BlendFunction.DESTINATION_COLOR with Double = js.native
-  /* 1 */ val ONE: typings.cesium.cesiumMod.BlendFunction.ONE with Double = js.native
-  /* 13 */ val ONE_MINUS_CONSTANT_ALPHA: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_ALPHA with Double = js.native
-  /* 11 */ val ONE_MINUS_CONSTANT_COLOR: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_CONSTANT_COLOR with Double = js.native
-  /* 9 */ val ONE_MINUS_DESTINATION_ALPHA: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_ALPHA with Double = js.native
-  /* 5 */ val ONE_MINUS_DESTINATION_COLOR: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_DESTINATION_COLOR with Double = js.native
-  /* 7 */ val ONE_MINUS_SOURCE_ALPHA: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_ALPHA with Double = js.native
-  /* 3 */ val ONE_MINUS_SOURCE_COLOR: typings.cesium.cesiumMod.BlendFunction.ONE_MINUS_SOURCE_COLOR with Double = js.native
-  /* 6 */ val SOURCE_ALPHA: typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA with Double = js.native
-  /* 14 */ val SOURCE_ALPHA_SATURATE: typings.cesium.cesiumMod.BlendFunction.SOURCE_ALPHA_SATURATE with Double = js.native
-  /* 2 */ val SOURCE_COLOR: typings.cesium.cesiumMod.BlendFunction.SOURCE_COLOR with Double = js.native
-  /* 0 */ val ZERO: typings.cesium.cesiumMod.BlendFunction.ZERO with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlendFunction with Double] = js.native
+  /* 12 */ @js.native
+  object CONSTANT_ALPHA extends TopLevel[CONSTANT_ALPHA with Double]
+  
+  /* 10 */ @js.native
+  object CONSTANT_COLOR extends TopLevel[CONSTANT_COLOR with Double]
+  
+  /* 8 */ @js.native
+  object DESTINATION_ALPHA extends TopLevel[DESTINATION_ALPHA with Double]
+  
+  /* 4 */ @js.native
+  object DESTINATION_COLOR extends TopLevel[DESTINATION_COLOR with Double]
+  
+  /* 1 */ @js.native
+  object ONE extends TopLevel[ONE with Double]
+  
+  /* 13 */ @js.native
+  object ONE_MINUS_CONSTANT_ALPHA extends TopLevel[ONE_MINUS_CONSTANT_ALPHA with Double]
+  
+  /* 11 */ @js.native
+  object ONE_MINUS_CONSTANT_COLOR extends TopLevel[ONE_MINUS_CONSTANT_COLOR with Double]
+  
+  /* 9 */ @js.native
+  object ONE_MINUS_DESTINATION_ALPHA extends TopLevel[ONE_MINUS_DESTINATION_ALPHA with Double]
+  
+  /* 5 */ @js.native
+  object ONE_MINUS_DESTINATION_COLOR extends TopLevel[ONE_MINUS_DESTINATION_COLOR with Double]
+  
+  /* 7 */ @js.native
+  object ONE_MINUS_SOURCE_ALPHA extends TopLevel[ONE_MINUS_SOURCE_ALPHA with Double]
+  
+  /* 3 */ @js.native
+  object ONE_MINUS_SOURCE_COLOR extends TopLevel[ONE_MINUS_SOURCE_COLOR with Double]
+  
+  /* 6 */ @js.native
+  object SOURCE_ALPHA extends TopLevel[SOURCE_ALPHA with Double]
+  
+  /* 14 */ @js.native
+  object SOURCE_ALPHA_SATURATE extends TopLevel[SOURCE_ALPHA_SATURATE with Double]
+  
+  /* 2 */ @js.native
+  object SOURCE_COLOR extends TopLevel[SOURCE_COLOR with Double]
+  
+  /* 0 */ @js.native
+  object ZERO extends TopLevel[ZERO with Double]
+  
 }
 

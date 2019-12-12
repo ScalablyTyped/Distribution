@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.boardingPass
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.deal
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.general
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.invalid
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.membershipCard
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.paymentInstrument
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.ticket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object WalletItemKind extends js.Object {
   @js.native
   sealed trait ticket extends WalletItemKind
   
-  /* 5 */ val boardingPass: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.boardingPass with Double = js.native
-  /* 1 */ val deal: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.deal with Double = js.native
-  /* 2 */ val general: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.general with Double = js.native
-  /* 0 */ val invalid: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.invalid with Double = js.native
-  /* 6 */ val membershipCard: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.membershipCard with Double = js.native
-  /* 3 */ val paymentInstrument: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.paymentInstrument with Double = js.native
-  /* 4 */ val ticket: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletItemKind.ticket with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WalletItemKind with Double] = js.native
+  /* 5 */ @js.native
+  object boardingPass extends TopLevel[boardingPass with Double]
+  
+  /* 1 */ @js.native
+  object deal extends TopLevel[deal with Double]
+  
+  /* 2 */ @js.native
+  object general extends TopLevel[general with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 6 */ @js.native
+  object membershipCard extends TopLevel[membershipCard with Double]
+  
+  /* 3 */ @js.native
+  object paymentInstrument extends TopLevel[paymentInstrument with Double]
+  
+  /* 4 */ @js.native
+  object ticket extends TopLevel[ticket with Double]
+  
 }
 

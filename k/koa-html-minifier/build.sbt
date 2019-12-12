@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-html-minifier"
-version := "1.0-dt-20180823Z-f226d5"
+version := "1.0-dt-20180823Z-fa0ffa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-f62a57",
   "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-643b5b",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-1d74f8",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-ba4afa",
   "org.scalablytyped" %%% "koa" % "2.11.0-dt-20191127Z-891b59",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd")
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

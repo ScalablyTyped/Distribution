@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.center
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.end
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object TimedTextLineAlignment extends js.Object {
   @js.native
   sealed trait start extends TimedTextLineAlignment
   
-  /* 2 */ val center: typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.center with Double = js.native
-  /* 1 */ val end: typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.end with Double = js.native
-  /* 0 */ val start: typings.winrtDashUwp.Windows.Media.Core.TimedTextLineAlignment.start with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimedTextLineAlignment with Double] = js.native
+  /* 2 */ @js.native
+  object center extends TopLevel[center with Double]
+  
+  /* 1 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 0 */ @js.native
+  object start extends TopLevel[start with Double]
+  
 }
 

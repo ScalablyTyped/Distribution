@@ -1,5 +1,10 @@
 package typings.pinterestDashSdk.pinterestDashSdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.delete
+import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.get
+import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.post
+import typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object HttpMethod extends js.Object {
   @js.native
   sealed trait put extends HttpMethod
   
-  /* 3 */ val delete: typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.delete with Double = js.native
-  /* 0 */ val get: typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.get with Double = js.native
-  /* 2 */ val post: typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.post with Double = js.native
-  /* 1 */ val put: typings.pinterestDashSdk.pinterestDashSdkMod.HttpMethod.put with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpMethod with Double] = js.native
+  /* 3 */ @js.native
+  object delete extends TopLevel[delete with Double]
+  
+  /* 0 */ @js.native
+  object get extends TopLevel[get with Double]
+  
+  /* 2 */ @js.native
+  object post extends TopLevel[post with Double]
+  
+  /* 1 */ @js.native
+  object put extends TopLevel[put with Double]
+  
 }
 

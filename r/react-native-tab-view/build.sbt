@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-tab-view"
-version := "2.11.0-42aa8c"
+version := "2.11.0-2cdbba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "react-native" % "0.60-dt-20191121Z-cb9adb",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.5.1-44998c",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.5.1-c00d93",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

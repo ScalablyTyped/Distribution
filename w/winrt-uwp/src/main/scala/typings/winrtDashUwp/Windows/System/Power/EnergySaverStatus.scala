@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.System.Power
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.disabled
+import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.off
+import typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EnergySaverStatus extends js.Object {
   @js.native
   sealed trait on extends EnergySaverStatus
   
-  /* 0 */ val disabled: typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.disabled with Double = js.native
-  /* 1 */ val off: typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.off with Double = js.native
-  /* 2 */ val on: typings.winrtDashUwp.Windows.System.Power.EnergySaverStatus.on with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnergySaverStatus with Double] = js.native
+  /* 0 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 1 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 2 */ @js.native
+  object on extends TopLevel[on with Double]
+  
 }
 

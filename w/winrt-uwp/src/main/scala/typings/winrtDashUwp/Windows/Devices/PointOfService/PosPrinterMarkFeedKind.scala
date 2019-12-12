@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toCurrentTopOfForm
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toCutter
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toNextTopOfForm
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toTakeUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PosPrinterMarkFeedKind extends js.Object {
   @js.native
   sealed trait toTakeUp extends PosPrinterMarkFeedKind
   
-  /* 2 */ val toCurrentTopOfForm: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toCurrentTopOfForm with Double = js.native
-  /* 1 */ val toCutter: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toCutter with Double = js.native
-  /* 3 */ val toNextTopOfForm: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toNextTopOfForm with Double = js.native
-  /* 0 */ val toTakeUp: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedKind.toTakeUp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterMarkFeedKind with Double] = js.native
+  /* 2 */ @js.native
+  object toCurrentTopOfForm extends TopLevel[toCurrentTopOfForm with Double]
+  
+  /* 1 */ @js.native
+  object toCutter extends TopLevel[toCutter with Double]
+  
+  /* 3 */ @js.native
+  object toNextTopOfForm extends TopLevel[toNextTopOfForm with Double]
+  
+  /* 0 */ @js.native
+  object toTakeUp extends TopLevel[toTakeUp with Double]
+  
 }
 

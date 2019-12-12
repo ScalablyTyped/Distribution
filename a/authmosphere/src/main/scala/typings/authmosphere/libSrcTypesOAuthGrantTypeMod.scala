@@ -1,6 +1,11 @@
 package typings.authmosphere
 
+import org.scalablytyped.runtime.TopLevel
 import typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType
+import typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT
+import typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT
+import typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT
+import typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,20 @@ object libSrcTypesOAuthGrantTypeMod extends js.Object {
     @js.native
     sealed trait REFRESH_TOKEN_GRANT extends OAuthGrantType
     
-    /* "authorization_code" */ val AUTHORIZATION_CODE_GRANT: typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.AUTHORIZATION_CODE_GRANT with String = js.native
-    /* "client_credentials" */ val CLIENT_CREDENTIALS_GRANT: typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.CLIENT_CREDENTIALS_GRANT with String = js.native
-    /* "password" */ val PASSWORD_CREDENTIALS_GRANT: typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.PASSWORD_CREDENTIALS_GRANT with String = js.native
-    /* "refresh_token" */ val REFRESH_TOKEN_GRANT: typings.authmosphere.libSrcTypesOAuthGrantTypeMod.OAuthGrantType.REFRESH_TOKEN_GRANT with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[OAuthGrantType with String] = js.native
+    /* "authorization_code" */ @js.native
+    object AUTHORIZATION_CODE_GRANT extends TopLevel[AUTHORIZATION_CODE_GRANT with String]
+    
+    /* "client_credentials" */ @js.native
+    object CLIENT_CREDENTIALS_GRANT extends TopLevel[CLIENT_CREDENTIALS_GRANT with String]
+    
+    /* "password" */ @js.native
+    object PASSWORD_CREDENTIALS_GRANT extends TopLevel[PASSWORD_CREDENTIALS_GRANT with String]
+    
+    /* "refresh_token" */ @js.native
+    object REFRESH_TOKEN_GRANT extends TopLevel[REFRESH_TOKEN_GRANT with String]
+    
   }
   
 }

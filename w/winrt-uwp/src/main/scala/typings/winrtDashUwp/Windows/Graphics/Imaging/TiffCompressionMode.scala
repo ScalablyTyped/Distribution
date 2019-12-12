@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.automatic
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.ccitt3
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.ccitt4
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.lzw
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.lzwhDifferencing
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.none
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.rle
+import typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.zip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object TiffCompressionMode extends js.Object {
   @js.native
   sealed trait zip extends TiffCompressionMode
   
-  /* 0 */ val automatic: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.automatic with Double = js.native
-  /* 2 */ val ccitt3: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.ccitt3 with Double = js.native
-  /* 3 */ val ccitt4: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.ccitt4 with Double = js.native
-  /* 4 */ val lzw: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.lzw with Double = js.native
-  /* 7 */ val lzwhDifferencing: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.lzwhDifferencing with Double = js.native
-  /* 1 */ val none: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.none with Double = js.native
-  /* 5 */ val rle: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.rle with Double = js.native
-  /* 6 */ val zip: typings.winrtDashUwp.Windows.Graphics.Imaging.TiffCompressionMode.zip with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TiffCompressionMode with Double] = js.native
+  /* 0 */ @js.native
+  object automatic extends TopLevel[automatic with Double]
+  
+  /* 2 */ @js.native
+  object ccitt3 extends TopLevel[ccitt3 with Double]
+  
+  /* 3 */ @js.native
+  object ccitt4 extends TopLevel[ccitt4 with Double]
+  
+  /* 4 */ @js.native
+  object lzw extends TopLevel[lzw with Double]
+  
+  /* 7 */ @js.native
+  object lzwhDifferencing extends TopLevel[lzwhDifferencing with Double]
+  
+  /* 1 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object rle extends TopLevel[rle with Double]
+  
+  /* 6 */ @js.native
+  object zip extends TopLevel[zip with Double]
+  
 }
 

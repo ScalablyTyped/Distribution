@@ -1,5 +1,18 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.abort
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.conditionLoss
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.energySaver
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.executionTimeExceeded
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.idleTask
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.loggingOff
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.quietHoursEntered
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.resourceRevocation
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.servicingUpdate
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.systemPolicy
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.terminating
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.uninstall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,19 +72,43 @@ object BackgroundTaskCancellationReason extends js.Object {
   @js.native
   sealed trait uninstall extends BackgroundTaskCancellationReason
   
-  /* 0 */ val abort: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.abort with Double = js.native
-  /* 6 */ val conditionLoss: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.conditionLoss with Double = js.native
-  /* 11 */ val energySaver: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.energySaver with Double = js.native
-  /* 9 */ val executionTimeExceeded: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.executionTimeExceeded with Double = js.native
-  /* 4 */ val idleTask: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.idleTask with Double = js.native
-  /* 2 */ val loggingOff: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.loggingOff with Double = js.native
-  /* 8 */ val quietHoursEntered: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.quietHoursEntered with Double = js.native
-  /* 10 */ val resourceRevocation: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.resourceRevocation with Double = js.native
-  /* 3 */ val servicingUpdate: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.servicingUpdate with Double = js.native
-  /* 7 */ val systemPolicy: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.systemPolicy with Double = js.native
-  /* 1 */ val terminating: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.terminating with Double = js.native
-  /* 5 */ val uninstall: typings.winrtDashUwp.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason.uninstall with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BackgroundTaskCancellationReason with Double] = js.native
+  /* 0 */ @js.native
+  object abort extends TopLevel[abort with Double]
+  
+  /* 6 */ @js.native
+  object conditionLoss extends TopLevel[conditionLoss with Double]
+  
+  /* 11 */ @js.native
+  object energySaver extends TopLevel[energySaver with Double]
+  
+  /* 9 */ @js.native
+  object executionTimeExceeded extends TopLevel[executionTimeExceeded with Double]
+  
+  /* 4 */ @js.native
+  object idleTask extends TopLevel[idleTask with Double]
+  
+  /* 2 */ @js.native
+  object loggingOff extends TopLevel[loggingOff with Double]
+  
+  /* 8 */ @js.native
+  object quietHoursEntered extends TopLevel[quietHoursEntered with Double]
+  
+  /* 10 */ @js.native
+  object resourceRevocation extends TopLevel[resourceRevocation with Double]
+  
+  /* 3 */ @js.native
+  object servicingUpdate extends TopLevel[servicingUpdate with Double]
+  
+  /* 7 */ @js.native
+  object systemPolicy extends TopLevel[systemPolicy with Double]
+  
+  /* 1 */ @js.native
+  object terminating extends TopLevel[terminating with Double]
+  
+  /* 5 */ @js.native
+  object uninstall extends TopLevel[uninstall with Double]
+  
 }
 

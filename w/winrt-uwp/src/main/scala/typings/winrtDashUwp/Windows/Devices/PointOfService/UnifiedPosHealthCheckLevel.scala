@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.external
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.interactive
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.posinternal
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.unknownHealthCheckLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object UnifiedPosHealthCheckLevel extends js.Object {
   @js.native
   sealed trait unknownHealthCheckLevel extends UnifiedPosHealthCheckLevel
   
-  /* 2 */ val external: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.external with Double = js.native
-  /* 3 */ val interactive: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.interactive with Double = js.native
-  /* 1 */ val posinternal: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.posinternal with Double = js.native
-  /* 0 */ val unknownHealthCheckLevel: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosHealthCheckLevel.unknownHealthCheckLevel with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnifiedPosHealthCheckLevel with Double] = js.native
+  /* 2 */ @js.native
+  object external extends TopLevel[external with Double]
+  
+  /* 3 */ @js.native
+  object interactive extends TopLevel[interactive with Double]
+  
+  /* 1 */ @js.native
+  object posinternal extends TopLevel[posinternal with Double]
+  
+  /* 0 */ @js.native
+  object unknownHealthCheckLevel extends TopLevel[unknownHealthCheckLevel with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.AutohideBehavior.all
+import typings.playerframework.PlayerFramework.AutohideBehavior.allowDuringPlaybackOnly
+import typings.playerframework.PlayerFramework.AutohideBehavior.none
+import typings.playerframework.PlayerFramework.AutohideBehavior.preventDuringInteractiveHover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object AutohideBehavior extends js.Object {
   @js.native
   sealed trait preventDuringInteractiveHover extends AutohideBehavior
   
-  /* 3 */ val all: typings.playerframework.PlayerFramework.AutohideBehavior.all with Double = js.native
-  /* 1 */ val allowDuringPlaybackOnly: typings.playerframework.PlayerFramework.AutohideBehavior.allowDuringPlaybackOnly with Double = js.native
-  /* 0 */ val none: typings.playerframework.PlayerFramework.AutohideBehavior.none with Double = js.native
-  /* 2 */ val preventDuringInteractiveHover: typings.playerframework.PlayerFramework.AutohideBehavior.preventDuringInteractiveHover with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AutohideBehavior with Double] = js.native
+  /* 3 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 1 */ @js.native
+  object allowDuringPlaybackOnly extends TopLevel[allowDuringPlaybackOnly with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object preventDuringInteractiveHover extends TopLevel[preventDuringInteractiveHover with Double]
+  
 }
 

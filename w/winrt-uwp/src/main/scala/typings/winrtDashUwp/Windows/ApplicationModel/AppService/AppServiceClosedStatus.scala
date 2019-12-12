@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.AppService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.canceled
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.completed
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.resourceLimitsExceeded
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object AppServiceClosedStatus extends js.Object {
   @js.native
   sealed trait unknown extends AppServiceClosedStatus
   
-  /* 1 */ val canceled: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.canceled with Double = js.native
-  /* 0 */ val completed: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.completed with Double = js.native
-  /* 2 */ val resourceLimitsExceeded: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.resourceLimitsExceeded with Double = js.native
-  /* 3 */ val unknown: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppServiceClosedStatus with Double] = js.native
+  /* 1 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 0 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 2 */ @js.native
+  object resourceLimitsExceeded extends TopLevel[resourceLimitsExceeded with Double]
+  
+  /* 3 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

@@ -1,5 +1,18 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.AliasMemberGroupRole
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.DirectMember
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.DirectMemberGroupRole
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Follows
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.GroupAlias
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.InDirectMemberGroupRole
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.IndirectMember
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Personal
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.PersonalAlias
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.SingleRole
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.SubscriptionAlias
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object NotificationReasonType extends js.Object {
   @js.native
   sealed trait Unknown extends NotificationReasonType
   
-  /* 11 */ val AliasMemberGroupRole: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.AliasMemberGroupRole with Double = js.native
-  /* 4 */ val DirectMember: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.DirectMember with Double = js.native
-  /* 9 */ val DirectMemberGroupRole: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.DirectMemberGroupRole with Double = js.native
-  /* 1 */ val Follows: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Follows with Double = js.native
-  /* 6 */ val GroupAlias: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.GroupAlias with Double = js.native
-  /* 10 */ val InDirectMemberGroupRole: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.InDirectMemberGroupRole with Double = js.native
-  /* 5 */ val IndirectMember: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.IndirectMember with Double = js.native
-  /* 2 */ val Personal: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Personal with Double = js.native
-  /* 3 */ val PersonalAlias: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.PersonalAlias with Double = js.native
-  /* 8 */ val SingleRole: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.SingleRole with Double = js.native
-  /* 7 */ val SubscriptionAlias: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.SubscriptionAlias with Double = js.native
-  /* 0 */ val Unknown: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationReasonType.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NotificationReasonType with Double] = js.native
+  /* 11 */ @js.native
+  object AliasMemberGroupRole extends TopLevel[AliasMemberGroupRole with Double]
+  
+  /* 4 */ @js.native
+  object DirectMember extends TopLevel[DirectMember with Double]
+  
+  /* 9 */ @js.native
+  object DirectMemberGroupRole extends TopLevel[DirectMemberGroupRole with Double]
+  
+  /* 1 */ @js.native
+  object Follows extends TopLevel[Follows with Double]
+  
+  /* 6 */ @js.native
+  object GroupAlias extends TopLevel[GroupAlias with Double]
+  
+  /* 10 */ @js.native
+  object InDirectMemberGroupRole extends TopLevel[InDirectMemberGroupRole with Double]
+  
+  /* 5 */ @js.native
+  object IndirectMember extends TopLevel[IndirectMember with Double]
+  
+  /* 2 */ @js.native
+  object Personal extends TopLevel[Personal with Double]
+  
+  /* 3 */ @js.native
+  object PersonalAlias extends TopLevel[PersonalAlias with Double]
+  
+  /* 8 */ @js.native
+  object SingleRole extends TopLevel[SingleRole with Double]
+  
+  /* 7 */ @js.native
+  object SubscriptionAlias extends TopLevel[SubscriptionAlias with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 

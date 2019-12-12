@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Git
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Tfvc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SourceControlTypes extends js.Object {
   @js.native
   sealed trait Tfvc extends SourceControlTypes
   
-  /* 2 */ val Git: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Git with Double = js.native
-  /* 1 */ val Tfvc: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.SourceControlTypes.Tfvc with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SourceControlTypes with Double] = js.native
+  /* 2 */ @js.native
+  object Git extends TopLevel[Git with Double]
+  
+  /* 1 */ @js.native
+  object Tfvc extends TopLevel[Tfvc with Double]
+  
 }
 

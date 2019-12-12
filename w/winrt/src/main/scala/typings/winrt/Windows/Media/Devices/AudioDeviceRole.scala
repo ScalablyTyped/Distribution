@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.Devices.AudioDeviceRole.communications
+import typings.winrt.Windows.Media.Devices.AudioDeviceRole.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object AudioDeviceRole extends js.Object {
   @js.native
   sealed trait default extends AudioDeviceRole
   
-  /* 1 */ val communications: typings.winrt.Windows.Media.Devices.AudioDeviceRole.communications with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.Media.Devices.AudioDeviceRole.default with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioDeviceRole with Double] = js.native
+  /* 1 */ @js.native
+  object communications extends TopLevel[communications with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
 }
 

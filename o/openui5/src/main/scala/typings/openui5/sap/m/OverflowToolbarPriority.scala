@@ -1,5 +1,11 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.OverflowToolbarPriority.AlwaysOverflow
+import typings.openui5.sap.m.OverflowToolbarPriority.Disappear
+import typings.openui5.sap.m.OverflowToolbarPriority.High
+import typings.openui5.sap.m.OverflowToolbarPriority.Low
+import typings.openui5.sap.m.OverflowToolbarPriority.NeverOverflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object OverflowToolbarPriority extends js.Object {
   @js.native
   sealed trait NeverOverflow extends OverflowToolbarPriority
   
-  /* 0 */ val AlwaysOverflow: typings.openui5.sap.m.OverflowToolbarPriority.AlwaysOverflow with Double = js.native
-  /* 1 */ val Disappear: typings.openui5.sap.m.OverflowToolbarPriority.Disappear with Double = js.native
-  /* 2 */ val High: typings.openui5.sap.m.OverflowToolbarPriority.High with Double = js.native
-  /* 3 */ val Low: typings.openui5.sap.m.OverflowToolbarPriority.Low with Double = js.native
-  /* 4 */ val NeverOverflow: typings.openui5.sap.m.OverflowToolbarPriority.NeverOverflow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverflowToolbarPriority with Double] = js.native
+  /* 0 */ @js.native
+  object AlwaysOverflow extends TopLevel[AlwaysOverflow with Double]
+  
+  /* 1 */ @js.native
+  object Disappear extends TopLevel[Disappear with Double]
+  
+  /* 2 */ @js.native
+  object High extends TopLevel[High with Double]
+  
+  /* 3 */ @js.native
+  object Low extends TopLevel[Low with Double]
+  
+  /* 4 */ @js.native
+  object NeverOverflow extends TopLevel[NeverOverflow with Double]
+  
 }
 

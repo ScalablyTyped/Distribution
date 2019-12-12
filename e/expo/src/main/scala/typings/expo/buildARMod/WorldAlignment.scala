@@ -1,5 +1,9 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.WorldAlignment.AlignmentCamera
+import typings.expo.buildARMod.WorldAlignment.Gravity
+import typings.expo.buildARMod.WorldAlignment.GravityAndHeading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +33,16 @@ object WorldAlignment extends js.Object {
   @js.native
   sealed trait GravityAndHeading extends WorldAlignment
   
-  /* "alignmentCamera" */ val AlignmentCamera: typings.expo.buildARMod.WorldAlignment.AlignmentCamera with String = js.native
-  /* "gravity" */ val Gravity: typings.expo.buildARMod.WorldAlignment.Gravity with String = js.native
-  /* "gravityAndHeading" */ val GravityAndHeading: typings.expo.buildARMod.WorldAlignment.GravityAndHeading with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WorldAlignment with String] = js.native
+  /* "alignmentCamera" */ @js.native
+  object AlignmentCamera extends TopLevel[AlignmentCamera with String]
+  
+  /* "gravity" */ @js.native
+  object Gravity extends TopLevel[Gravity with String]
+  
+  /* "gravityAndHeading" */ @js.native
+  object GravityAndHeading extends TopLevel[GravityAndHeading with String]
+  
 }
 

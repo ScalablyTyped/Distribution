@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.image
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.unknown
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PhotoImportContentType extends js.Object {
   @js.native
   sealed trait video extends PhotoImportContentType
   
-  /* 1 */ val image: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.image with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.unknown with Double = js.native
-  /* 2 */ val video: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentType.video with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhotoImportContentType with Double] = js.native
+  /* 1 */ @js.native
+  object image extends TopLevel[image with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object video extends TopLevel[video with Double]
+  
 }
 

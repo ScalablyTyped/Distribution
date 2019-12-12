@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.alphanumeric
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.numeric
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MobileBroadbandPinFormat extends js.Object {
   @js.native
   sealed trait unknown extends MobileBroadbandPinFormat
   
-  /* 2 */ val alphanumeric: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.alphanumeric with Double = js.native
-  /* 1 */ val numeric: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.numeric with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinFormat.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MobileBroadbandPinFormat with Double] = js.native
+  /* 2 */ @js.native
+  object alphanumeric extends TopLevel[alphanumeric with Double]
+  
+  /* 1 */ @js.native
+  object numeric extends TopLevel[numeric with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

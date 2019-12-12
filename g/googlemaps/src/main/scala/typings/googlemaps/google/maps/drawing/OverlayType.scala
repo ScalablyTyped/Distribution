@@ -1,5 +1,11 @@
 package typings.googlemaps.google.maps.drawing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE
+import typings.googlemaps.google.maps.drawing.OverlayType.MARKER
+import typings.googlemaps.google.maps.drawing.OverlayType.POLYGON
+import typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE
+import typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,12 +56,22 @@ object OverlayType extends js.Object {
   @js.native
   sealed trait RECTANGLE extends OverlayType
   
-  /* "circle" */ val CIRCLE: typings.googlemaps.google.maps.drawing.OverlayType.CIRCLE with String = js.native
-  /* "marker" */ val MARKER: typings.googlemaps.google.maps.drawing.OverlayType.MARKER with String = js.native
-  /* "polygon" */ val POLYGON: typings.googlemaps.google.maps.drawing.OverlayType.POLYGON with String = js.native
-  /* "polyline" */ val POLYLINE: typings.googlemaps.google.maps.drawing.OverlayType.POLYLINE with String = js.native
-  /* "rectangle" */ val RECTANGLE: typings.googlemaps.google.maps.drawing.OverlayType.RECTANGLE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OverlayType with String] = js.native
+  /* "circle" */ @js.native
+  object CIRCLE extends TopLevel[CIRCLE with String]
+  
+  /* "marker" */ @js.native
+  object MARKER extends TopLevel[MARKER with String]
+  
+  /* "polygon" */ @js.native
+  object POLYGON extends TopLevel[POLYGON with String]
+  
+  /* "polyline" */ @js.native
+  object POLYLINE extends TopLevel[POLYLINE with String]
+  
+  /* "rectangle" */ @js.native
+  object RECTANGLE extends TopLevel[RECTANGLE with String]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.CodeChange
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.System
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Text
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object CommentType extends js.Object {
   @js.native
   sealed trait Unknown extends CommentType
   
-  /* 2 */ val CodeChange: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.CodeChange with Double = js.native
-  /* 3 */ val System: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.System with Double = js.native
-  /* 1 */ val Text: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Text with Double = js.native
-  /* 0 */ val Unknown: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentType.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommentType with Double] = js.native
+  /* 2 */ @js.native
+  object CodeChange extends TopLevel[CodeChange with Double]
+  
+  /* 3 */ @js.native
+  object System extends TopLevel[System with Double]
+  
+  /* 1 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 

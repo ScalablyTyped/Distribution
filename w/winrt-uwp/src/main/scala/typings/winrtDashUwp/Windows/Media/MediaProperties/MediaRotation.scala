@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise180Degrees
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise270Degrees
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise90Degrees
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MediaRotation extends js.Object {
   @js.native
   sealed trait none extends MediaRotation
   
-  /* 2 */ val clockwise180Degrees: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise180Degrees with Double = js.native
-  /* 3 */ val clockwise270Degrees: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise270Degrees with Double = js.native
-  /* 1 */ val clockwise90Degrees: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.clockwise90Degrees with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaRotation.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaRotation with Double] = js.native
+  /* 2 */ @js.native
+  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
+  
+  /* 3 */ @js.native
+  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
+  
+  /* 1 */ @js.native
+  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xmlpoke"
-version := "0.1.12-dt-20190322Z-e95049"
+version := "0.1.12-dt-20190322Z-15a727"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

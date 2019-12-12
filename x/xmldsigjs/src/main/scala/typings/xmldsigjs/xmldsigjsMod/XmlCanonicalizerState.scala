@@ -1,5 +1,9 @@
 package typings.xmldsigjs.xmldsigjsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.AfterDocElement
+import typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.BeforeDocElement
+import typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.InsideDocElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object XmlCanonicalizerState extends js.Object {
   @js.native
   sealed trait InsideDocElement extends XmlCanonicalizerState
   
-  /* 2 */ val AfterDocElement: typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.AfterDocElement with Double = js.native
-  /* 0 */ val BeforeDocElement: typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.BeforeDocElement with Double = js.native
-  /* 1 */ val InsideDocElement: typings.xmldsigjs.xmldsigjsMod.XmlCanonicalizerState.InsideDocElement with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[XmlCanonicalizerState with Double] = js.native
+  /* 2 */ @js.native
+  object AfterDocElement extends TopLevel[AfterDocElement with Double]
+  
+  /* 0 */ @js.native
+  object BeforeDocElement extends TopLevel[BeforeDocElement with Double]
+  
+  /* 1 */ @js.native
+  object InsideDocElement extends TopLevel[InsideDocElement with Double]
+  
 }
 

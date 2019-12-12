@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.PointerType.Marker
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.PointerType.Needle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object PointerType extends js.Object {
   @js.native
   sealed trait Needle extends PointerType
   
-  /* 1 */ val Marker: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.PointerType.Marker with Double = js.native
-  /* 0 */ val Needle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.PointerType.Needle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointerType with Double] = js.native
+  /* 1 */ @js.native
+  object Marker extends TopLevel[Marker with Double]
+  
+  /* 0 */ @js.native
+  object Needle extends TopLevel[Needle with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.TableCellVerticalAlignment.Both
+import typings.devexpressDashWeb.TableCellVerticalAlignment.Bottom
+import typings.devexpressDashWeb.TableCellVerticalAlignment.Center
+import typings.devexpressDashWeb.TableCellVerticalAlignment.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object TableCellVerticalAlignment extends js.Object {
   @js.native
   sealed trait Top extends TableCellVerticalAlignment
   
-  /* 1 */ val Both: typings.devexpressDashWeb.TableCellVerticalAlignment.Both with Double = js.native
-  /* 3 */ val Bottom: typings.devexpressDashWeb.TableCellVerticalAlignment.Bottom with Double = js.native
-  /* 2 */ val Center: typings.devexpressDashWeb.TableCellVerticalAlignment.Center with Double = js.native
-  /* 0 */ val Top: typings.devexpressDashWeb.TableCellVerticalAlignment.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TableCellVerticalAlignment with Double] = js.native
+  /* 1 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 3 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 0 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

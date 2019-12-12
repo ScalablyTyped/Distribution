@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.inputBaseInputBaseMod.InputBaseProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object inputBaseMod extends js.Object {
     def this(props: InputBaseProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[InputBaseProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[InputBaseProps]]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.listSubheaderListSubheaderMod.ListSubheaderProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object listSubheaderMod extends js.Object {
     def this(props: ListSubheaderProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ListSubheaderProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ListSubheaderProps]]
+  
 }
 

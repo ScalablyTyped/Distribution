@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Themes.FlatDark
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Themes.FlatLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object Themes extends js.Object {
   @js.native
   sealed trait FlatLight extends Themes
   
-  /* 1 */ val FlatDark: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Themes.FlatDark with Double = js.native
-  /* 0 */ val FlatLight: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.Themes.FlatLight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Themes with Double] = js.native
+  /* 1 */ @js.native
+  object FlatDark extends TopLevel[FlatDark with Double]
+  
+  /* 0 */ @js.native
+  object FlatLight extends TopLevel[FlatLight with Double]
+  
 }
 

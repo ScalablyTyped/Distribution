@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.BorderWeight.hairline
+import typings.officeDashJsDashPreview.Excel.BorderWeight.medium
+import typings.officeDashJsDashPreview.Excel.BorderWeight.thick
+import typings.officeDashJsDashPreview.Excel.BorderWeight.thin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object BorderWeight extends js.Object {
   @js.native
   sealed trait thin extends BorderWeight
   
-  /* "Hairline" */ val hairline: typings.officeDashJsDashPreview.Excel.BorderWeight.hairline with String = js.native
-  /* "Medium" */ val medium: typings.officeDashJsDashPreview.Excel.BorderWeight.medium with String = js.native
-  /* "Thick" */ val thick: typings.officeDashJsDashPreview.Excel.BorderWeight.thick with String = js.native
-  /* "Thin" */ val thin: typings.officeDashJsDashPreview.Excel.BorderWeight.thin with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BorderWeight with String] = js.native
+  /* "Hairline" */ @js.native
+  object hairline extends TopLevel[hairline with String]
+  
+  /* "Medium" */ @js.native
+  object medium extends TopLevel[medium with String]
+  
+  /* "Thick" */ @js.native
+  object thick extends TopLevel[thick with String]
+  
+  /* "Thin" */ @js.native
+  object thin extends TopLevel[thin with String]
+  
 }
 

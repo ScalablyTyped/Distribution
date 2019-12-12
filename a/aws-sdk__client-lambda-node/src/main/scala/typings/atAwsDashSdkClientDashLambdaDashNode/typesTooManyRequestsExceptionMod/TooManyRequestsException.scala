@@ -30,11 +30,11 @@ import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateEventSourceMappin
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateFunctionCodeExceptionsUnionMod.UpdateFunctionCodeExceptionsUnion
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooManyRequestsException
   extends ServiceException[_TooManyRequestsExceptionDetails]
      with AddPermissionExceptionsUnion
@@ -67,21 +67,6 @@ trait TooManyRequestsException
      with UpdateFunctionCodeExceptionsUnion
      with UpdateFunctionConfigurationExceptionsUnion {
   @JSName("name")
-  var name_TooManyRequestsException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.TooManyRequestsException
-}
-
-object TooManyRequestsException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _TooManyRequestsExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.TooManyRequestsException,
-    stack: String = null
-  ): TooManyRequestsException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TooManyRequestsException]
-  }
+  var name_TooManyRequestsException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.TooManyRequestsException = js.native
 }
 

@@ -1,5 +1,15 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.contentTypeIs
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.fileExtensionMatches
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.manualCondition
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultContainsKeyword
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultHasTag
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleContainsKeyword
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleMatchesKeyword
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlExactlyMatches
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlStartsWith
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object ReorderingRuleMatchType extends js.Object {
   @js.native
   sealed trait urlStartsWith extends ReorderingRuleMatchType
   
-  /* 5 */ val contentTypeIs: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.contentTypeIs with Double = js.native
-  /* 6 */ val fileExtensionMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.fileExtensionMatches with Double = js.native
-  /* 8 */ val manualCondition: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.manualCondition with Double = js.native
-  /* 0 */ val resultContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultContainsKeyword with Double = js.native
-  /* 7 */ val resultHasTag: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultHasTag with Double = js.native
-  /* 1 */ val titleContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleContainsKeyword with Double = js.native
-  /* 2 */ val titleMatchesKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleMatchesKeyword with Double = js.native
-  /* 4 */ val urlExactlyMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlExactlyMatches with Double = js.native
-  /* 3 */ val urlStartsWith: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlStartsWith with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReorderingRuleMatchType with Double] = js.native
+  /* 5 */ @js.native
+  object contentTypeIs extends TopLevel[contentTypeIs with Double]
+  
+  /* 6 */ @js.native
+  object fileExtensionMatches extends TopLevel[fileExtensionMatches with Double]
+  
+  /* 8 */ @js.native
+  object manualCondition extends TopLevel[manualCondition with Double]
+  
+  /* 0 */ @js.native
+  object resultContainsKeyword extends TopLevel[resultContainsKeyword with Double]
+  
+  /* 7 */ @js.native
+  object resultHasTag extends TopLevel[resultHasTag with Double]
+  
+  /* 1 */ @js.native
+  object titleContainsKeyword extends TopLevel[titleContainsKeyword with Double]
+  
+  /* 2 */ @js.native
+  object titleMatchesKeyword extends TopLevel[titleMatchesKeyword with Double]
+  
+  /* 4 */ @js.native
+  object urlExactlyMatches extends TopLevel[urlExactlyMatches with Double]
+  
+  /* 3 */ @js.native
+  object urlStartsWith extends TopLevel[urlStartsWith with Double]
+  
 }
 

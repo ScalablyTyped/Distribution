@@ -1,5 +1,12 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.PictureFormat.bmp
+import typings.officeDashJs.Excel.PictureFormat.gif
+import typings.officeDashJs.Excel.PictureFormat.jpeg
+import typings.officeDashJs.Excel.PictureFormat.png
+import typings.officeDashJs.Excel.PictureFormat.svg
+import typings.officeDashJs.Excel.PictureFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,13 +66,25 @@ object PictureFormat extends js.Object {
   @js.native
   sealed trait unknown extends PictureFormat
   
-  /* "BMP" */ val bmp: typings.officeDashJs.Excel.PictureFormat.bmp with String = js.native
-  /* "GIF" */ val gif: typings.officeDashJs.Excel.PictureFormat.gif with String = js.native
-  /* "JPEG" */ val jpeg: typings.officeDashJs.Excel.PictureFormat.jpeg with String = js.native
-  /* "PNG" */ val png: typings.officeDashJs.Excel.PictureFormat.png with String = js.native
-  /* "SVG" */ val svg: typings.officeDashJs.Excel.PictureFormat.svg with String = js.native
-  /* "UNKNOWN" */ val unknown: typings.officeDashJs.Excel.PictureFormat.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PictureFormat with String] = js.native
+  /* "BMP" */ @js.native
+  object bmp extends TopLevel[bmp with String]
+  
+  /* "GIF" */ @js.native
+  object gif extends TopLevel[gif with String]
+  
+  /* "JPEG" */ @js.native
+  object jpeg extends TopLevel[jpeg with String]
+  
+  /* "PNG" */ @js.native
+  object png extends TopLevel[png with String]
+  
+  /* "SVG" */ @js.native
+  object svg extends TopLevel[svg with String]
+  
+  /* "UNKNOWN" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

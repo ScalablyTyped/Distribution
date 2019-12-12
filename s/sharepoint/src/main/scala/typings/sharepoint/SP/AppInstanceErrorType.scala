@@ -1,5 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.AppInstanceErrorType.app
+import typings.sharepoint.SP.AppInstanceErrorType.configuration
+import typings.sharepoint.SP.AppInstanceErrorType.transient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object AppInstanceErrorType extends js.Object {
   @js.native
   sealed trait transient extends AppInstanceErrorType
   
-  /* 2 */ val app: typings.sharepoint.SP.AppInstanceErrorType.app with Double = js.native
-  /* 1 */ val configuration: typings.sharepoint.SP.AppInstanceErrorType.configuration with Double = js.native
-  /* 0 */ val transient: typings.sharepoint.SP.AppInstanceErrorType.transient with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppInstanceErrorType with Double] = js.native
+  /* 2 */ @js.native
+  object app extends TopLevel[app with Double]
+  
+  /* 1 */ @js.native
+  object configuration extends TopLevel[configuration with Double]
+  
+  /* 0 */ @js.native
+  object transient extends TopLevel[transient with Double]
+  
 }
 

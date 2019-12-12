@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object formHelperTextMod extends js.Object {
     def this(props: FormHelperTextProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[FormHelperTextProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[FormHelperTextProps]]
+  
 }
 

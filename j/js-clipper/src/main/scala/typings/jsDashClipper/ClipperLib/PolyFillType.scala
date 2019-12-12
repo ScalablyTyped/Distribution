@@ -1,5 +1,10 @@
 package typings.jsDashClipper.ClipperLib
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsDashClipper.ClipperLib.PolyFillType.pftEvenOdd
+import typings.jsDashClipper.ClipperLib.PolyFillType.pftNegative
+import typings.jsDashClipper.ClipperLib.PolyFillType.pftNonZero
+import typings.jsDashClipper.ClipperLib.PolyFillType.pftPositive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PolyFillType extends js.Object {
   @js.native
   sealed trait pftPositive extends PolyFillType
   
-  /* 0 */ val pftEvenOdd: typings.jsDashClipper.ClipperLib.PolyFillType.pftEvenOdd with Double = js.native
-  /* 3 */ val pftNegative: typings.jsDashClipper.ClipperLib.PolyFillType.pftNegative with Double = js.native
-  /* 1 */ val pftNonZero: typings.jsDashClipper.ClipperLib.PolyFillType.pftNonZero with Double = js.native
-  /* 2 */ val pftPositive: typings.jsDashClipper.ClipperLib.PolyFillType.pftPositive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PolyFillType with Double] = js.native
+  /* 0 */ @js.native
+  object pftEvenOdd extends TopLevel[pftEvenOdd with Double]
+  
+  /* 3 */ @js.native
+  object pftNegative extends TopLevel[pftNegative with Double]
+  
+  /* 1 */ @js.native
+  object pftNonZero extends TopLevel[pftNonZero with Double]
+  
+  /* 2 */ @js.native
+  object pftPositive extends TopLevel[pftPositive with Double]
+  
 }
 

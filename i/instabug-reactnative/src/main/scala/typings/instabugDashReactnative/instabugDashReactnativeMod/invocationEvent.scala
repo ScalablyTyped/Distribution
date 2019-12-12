@@ -1,5 +1,11 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.floatingButton
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.none
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.screenshot
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.shake
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.twoFingersSwipe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object invocationEvent extends js.Object {
   @js.native
   sealed trait twoFingersSwipe extends invocationEvent
   
-  /* 4 */ val floatingButton: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.floatingButton with Double = js.native
-  /* 0 */ val none: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.none with Double = js.native
-  /* 2 */ val screenshot: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.screenshot with Double = js.native
-  /* 1 */ val shake: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.shake with Double = js.native
-  /* 3 */ val twoFingersSwipe: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationEvent.twoFingersSwipe with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[invocationEvent with Double] = js.native
+  /* 4 */ @js.native
+  object floatingButton extends TopLevel[floatingButton with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object screenshot extends TopLevel[screenshot with Double]
+  
+  /* 1 */ @js.native
+  object shake extends TopLevel[shake with Double]
+  
+  /* 3 */ @js.native
+  object twoFingersSwipe extends TopLevel[twoFingersSwipe with Double]
+  
 }
 

@@ -1,5 +1,25 @@
 package typings.kythe.kytheMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kythe.kytheMod.FactName.BUILD_CONFIG
+import typings.kythe.kytheMod.FactName.CODE
+import typings.kythe.kytheMod.FactName.COMPLETE
+import typings.kythe.kytheMod.FactName.CONTEXT_URL
+import typings.kythe.kytheMod.FactName.DETAILS
+import typings.kythe.kytheMod.FactName.DOC_URI
+import typings.kythe.kytheMod.FactName.LABEL
+import typings.kythe.kytheMod.FactName.LOC_END
+import typings.kythe.kytheMod.FactName.LOC_START
+import typings.kythe.kytheMod.FactName.MESSAGE
+import typings.kythe.kytheMod.FactName.NODE_KIND
+import typings.kythe.kytheMod.FactName.PARAM_DEFAULT
+import typings.kythe.kytheMod.FactName.RULE_CLASS
+import typings.kythe.kytheMod.FactName.SNIPPET_END
+import typings.kythe.kytheMod.FactName.SNIPPET_START
+import typings.kythe.kytheMod.FactName.SUBKIND
+import typings.kythe.kytheMod.FactName.TEXT
+import typings.kythe.kytheMod.FactName.TEXT_ENCODING
+import typings.kythe.kytheMod.FactName.VISIBILITY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,26 +87,64 @@ object FactName extends js.Object {
   @js.native
   sealed trait VISIBILITY extends FactName
   
-  /* "/kythe/build/config" */ val BUILD_CONFIG: typings.kythe.kytheMod.FactName.BUILD_CONFIG with String = js.native
-  /* "/kythe/code" */ val CODE: typings.kythe.kytheMod.FactName.CODE with String = js.native
-  /* "/kythe/complete" */ val COMPLETE: typings.kythe.kytheMod.FactName.COMPLETE with String = js.native
-  /* "/kythe/context/url" */ val CONTEXT_URL: typings.kythe.kytheMod.FactName.CONTEXT_URL with String = js.native
-  /* "/kythe/details" */ val DETAILS: typings.kythe.kytheMod.FactName.DETAILS with String = js.native
-  /* "/kythe/doc/uri" */ val DOC_URI: typings.kythe.kytheMod.FactName.DOC_URI with String = js.native
-  /* "/kythe/label" */ val LABEL: typings.kythe.kytheMod.FactName.LABEL with String = js.native
-  /* "/kythe/loc/end" */ val LOC_END: typings.kythe.kytheMod.FactName.LOC_END with String = js.native
-  /* "/kythe/loc/start" */ val LOC_START: typings.kythe.kytheMod.FactName.LOC_START with String = js.native
-  /* "/kythe/message" */ val MESSAGE: typings.kythe.kytheMod.FactName.MESSAGE with String = js.native
-  /* "/kythe/node/kind" */ val NODE_KIND: typings.kythe.kytheMod.FactName.NODE_KIND with String = js.native
-  /* "/kythe/param/default" */ val PARAM_DEFAULT: typings.kythe.kytheMod.FactName.PARAM_DEFAULT with String = js.native
-  /* "/kythe/ruleclass" */ val RULE_CLASS: typings.kythe.kytheMod.FactName.RULE_CLASS with String = js.native
-  /* "/kythe/snippet/end" */ val SNIPPET_END: typings.kythe.kytheMod.FactName.SNIPPET_END with String = js.native
-  /* "/kythe/snippet/start" */ val SNIPPET_START: typings.kythe.kytheMod.FactName.SNIPPET_START with String = js.native
-  /* "/kythe/subkind" */ val SUBKIND: typings.kythe.kytheMod.FactName.SUBKIND with String = js.native
-  /* "/kythe/text" */ val TEXT: typings.kythe.kytheMod.FactName.TEXT with String = js.native
-  /* "/kythe/text/encoding" */ val TEXT_ENCODING: typings.kythe.kytheMod.FactName.TEXT_ENCODING with String = js.native
-  /* "/kythe/visibility" */ val VISIBILITY: typings.kythe.kytheMod.FactName.VISIBILITY with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FactName with String] = js.native
+  /* "/kythe/build/config" */ @js.native
+  object BUILD_CONFIG extends TopLevel[BUILD_CONFIG with String]
+  
+  /* "/kythe/code" */ @js.native
+  object CODE extends TopLevel[CODE with String]
+  
+  /* "/kythe/complete" */ @js.native
+  object COMPLETE extends TopLevel[COMPLETE with String]
+  
+  /* "/kythe/context/url" */ @js.native
+  object CONTEXT_URL extends TopLevel[CONTEXT_URL with String]
+  
+  /* "/kythe/details" */ @js.native
+  object DETAILS extends TopLevel[DETAILS with String]
+  
+  /* "/kythe/doc/uri" */ @js.native
+  object DOC_URI extends TopLevel[DOC_URI with String]
+  
+  /* "/kythe/label" */ @js.native
+  object LABEL extends TopLevel[LABEL with String]
+  
+  /* "/kythe/loc/end" */ @js.native
+  object LOC_END extends TopLevel[LOC_END with String]
+  
+  /* "/kythe/loc/start" */ @js.native
+  object LOC_START extends TopLevel[LOC_START with String]
+  
+  /* "/kythe/message" */ @js.native
+  object MESSAGE extends TopLevel[MESSAGE with String]
+  
+  /* "/kythe/node/kind" */ @js.native
+  object NODE_KIND extends TopLevel[NODE_KIND with String]
+  
+  /* "/kythe/param/default" */ @js.native
+  object PARAM_DEFAULT extends TopLevel[PARAM_DEFAULT with String]
+  
+  /* "/kythe/ruleclass" */ @js.native
+  object RULE_CLASS extends TopLevel[RULE_CLASS with String]
+  
+  /* "/kythe/snippet/end" */ @js.native
+  object SNIPPET_END extends TopLevel[SNIPPET_END with String]
+  
+  /* "/kythe/snippet/start" */ @js.native
+  object SNIPPET_START extends TopLevel[SNIPPET_START with String]
+  
+  /* "/kythe/subkind" */ @js.native
+  object SUBKIND extends TopLevel[SUBKIND with String]
+  
+  /* "/kythe/text" */ @js.native
+  object TEXT extends TopLevel[TEXT with String]
+  
+  /* "/kythe/text/encoding" */ @js.native
+  object TEXT_ENCODING extends TopLevel[TEXT_ENCODING with String]
+  
+  /* "/kythe/visibility" */ @js.native
+  object VISIBILITY extends TopLevel[VISIBILITY with String]
+  
 }
 

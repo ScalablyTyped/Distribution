@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardComponent
@@ -18,6 +19,8 @@ object distCommonjsViewsCardMod extends js.Object {
     def this(props: CardProps, context: js.Any) = this()
   }
   
-  val default: CardComponent = js.native
+  @js.native
+  object default extends TopLevel[CardComponent]
+  
 }
 

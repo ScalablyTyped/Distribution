@@ -1,5 +1,9 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.HostType.Access
+import typings.officeDashJs.Office.HostType.Outlook
+import typings.officeDashJs.Office.HostType.Project
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,14 +63,32 @@ object HostType extends js.Object {
   @js.native
   sealed trait Word extends HostType
   
-  /* 6 */ val Access: typings.officeDashJs.Office.HostType.Access with Double = js.native
-  /* 1 */ val Excel: typings.officeDashJs.Office.HostType.Excel with Double = js.native
-  /* 4 */ val OneNote: typings.officeDashJs.Office.HostType.OneNote with Double = js.native
-  /* 3 */ val Outlook: typings.officeDashJs.Office.HostType.Outlook with Double = js.native
-  /* 2 */ val PowerPoint: typings.officeDashJs.Office.HostType.PowerPoint with Double = js.native
-  /* 5 */ val Project: typings.officeDashJs.Office.HostType.Project with Double = js.native
-  /* 0 */ val Word: typings.officeDashJs.Office.HostType.Word with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HostType with Double] = js.native
+  /* 6 */ @js.native
+  object Access extends TopLevel[Access with Double]
+  
+  /* 1 */ @js.native
+  object Excel
+    extends TopLevel[typings.officeDashJs.Office.HostType.Excel with Double]
+  
+  /* 4 */ @js.native
+  object OneNote
+    extends TopLevel[typings.officeDashJs.Office.HostType.OneNote with Double]
+  
+  /* 3 */ @js.native
+  object Outlook extends TopLevel[Outlook with Double]
+  
+  /* 2 */ @js.native
+  object PowerPoint
+    extends TopLevel[typings.officeDashJs.Office.HostType.PowerPoint with Double]
+  
+  /* 5 */ @js.native
+  object Project extends TopLevel[Project with Double]
+  
+  /* 0 */ @js.native
+  object Word
+    extends TopLevel[typings.officeDashJs.Office.HostType.Word with Double]
+  
 }
 

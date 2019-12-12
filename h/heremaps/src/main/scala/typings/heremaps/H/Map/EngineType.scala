@@ -1,5 +1,8 @@
 package typings.heremaps.H.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.heremaps.H.Map.EngineType.P2D
+import typings.heremaps.H.Map.EngineType.PANORAMA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EngineType extends js.Object {
   @js.native
   sealed trait PANORAMA extends EngineType
   
-  /* 0 */ val P2D: typings.heremaps.H.Map.EngineType.P2D with Double = js.native
-  /* 1 */ val PANORAMA: typings.heremaps.H.Map.EngineType.PANORAMA with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EngineType with Double] = js.native
+  /* 0 */ @js.native
+  object P2D extends TopLevel[P2D with Double]
+  
+  /* 1 */ @js.native
+  object PANORAMA extends TopLevel[PANORAMA with Double]
+  
 }
 

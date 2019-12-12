@@ -1,5 +1,7 @@
 package typings.navermaps.naver.maps.Service
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.Service.CoordType.LATLNG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +18,14 @@ object CoordType extends js.Object {
   @js.native
   sealed trait TM128 extends CoordType
   
-  /* 0 */ val LATLNG: typings.navermaps.naver.maps.Service.CoordType.LATLNG with Double = js.native
-  /* 1 */ val TM128: typings.navermaps.naver.maps.Service.CoordType.TM128 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoordType with Double] = js.native
+  /* 0 */ @js.native
+  object LATLNG extends TopLevel[LATLNG with Double]
+  
+  /* 1 */ @js.native
+  object TM128
+    extends TopLevel[typings.navermaps.naver.maps.Service.CoordType.TM128 with Double]
+  
 }
 

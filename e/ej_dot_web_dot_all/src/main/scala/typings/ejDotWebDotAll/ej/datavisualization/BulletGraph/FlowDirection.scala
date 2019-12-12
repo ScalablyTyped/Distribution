@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Backward
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Forward
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object FlowDirection extends js.Object {
   @js.native
   sealed trait Forward extends FlowDirection
   
-  /* 1 */ val Backward: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Backward with Double = js.native
-  /* 0 */ val Forward: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FlowDirection.Forward with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlowDirection with Double] = js.native
+  /* 1 */ @js.native
+  object Backward extends TopLevel[Backward with Double]
+  
+  /* 0 */ @js.native
+  object Forward extends TopLevel[Forward with Double]
+  
 }
 

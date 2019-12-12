@@ -1,5 +1,6 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +23,15 @@ object SourceProperty extends js.Object {
   @js.native
   sealed trait Subject extends SourceProperty
   
-  /* 0 */ val Body: typings.officeDashJsDashPreview.Office.SourceProperty.Body with Double = js.native
-  /* 1 */ val Subject: typings.officeDashJsDashPreview.Office.SourceProperty.Subject with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SourceProperty with Double] = js.native
+  /* 0 */ @js.native
+  object Body
+    extends TopLevel[typings.officeDashJsDashPreview.Office.SourceProperty.Body with Double]
+  
+  /* 1 */ @js.native
+  object Subject
+    extends TopLevel[typings.officeDashJsDashPreview.Office.SourceProperty.Subject with Double]
+  
 }
 

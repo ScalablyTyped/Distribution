@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.All
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CSV
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CustomItems
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Excel
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Html
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.PPT
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Pdf
+import typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object ExportOptions extends js.Object {
   @js.native
   sealed trait Word extends ExportOptions
   
-  /* 0 */ val All: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.All with Double = js.native
-  /* 6 */ val CSV: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CSV with Double = js.native
-  /* 7 */ val CustomItems: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.CustomItems with Double = js.native
-  /* 3 */ val Excel: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Excel with Double = js.native
-  /* 4 */ val Html: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Html with Double = js.native
-  /* 5 */ val PPT: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.PPT with Double = js.native
-  /* 1 */ val Pdf: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Pdf with Double = js.native
-  /* 2 */ val Word: typings.ejDotWebDotAll.ej.ReportViewer.ExportOptions.Word with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExportOptions with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 6 */ @js.native
+  object CSV extends TopLevel[CSV with Double]
+  
+  /* 7 */ @js.native
+  object CustomItems extends TopLevel[CustomItems with Double]
+  
+  /* 3 */ @js.native
+  object Excel extends TopLevel[Excel with Double]
+  
+  /* 4 */ @js.native
+  object Html extends TopLevel[Html with Double]
+  
+  /* 5 */ @js.native
+  object PPT extends TopLevel[PPT with Double]
+  
+  /* 1 */ @js.native
+  object Pdf extends TopLevel[Pdf with Double]
+  
+  /* 2 */ @js.native
+  object Word extends TopLevel[Word with Double]
+  
 }
 

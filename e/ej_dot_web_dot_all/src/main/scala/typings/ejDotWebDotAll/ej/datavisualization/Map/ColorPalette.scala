@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Custompalette
+import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette1
+import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette2
+import typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object ColorPalette extends js.Object {
   @js.native
   sealed trait Palette3 extends ColorPalette
   
-  /* 3 */ val Custompalette: typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Custompalette with Double = js.native
-  /* 0 */ val Palette1: typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette1 with Double = js.native
-  /* 1 */ val Palette2: typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette2 with Double = js.native
-  /* 2 */ val Palette3: typings.ejDotWebDotAll.ej.datavisualization.Map.ColorPalette.Palette3 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ColorPalette with Double] = js.native
+  /* 3 */ @js.native
+  object Custompalette extends TopLevel[Custompalette with Double]
+  
+  /* 0 */ @js.native
+  object Palette1 extends TopLevel[Palette1 with Double]
+  
+  /* 1 */ @js.native
+  object Palette2 extends TopLevel[Palette2 with Double]
+  
+  /* 2 */ @js.native
+  object Palette3 extends TopLevel[Palette3 with Double]
+  
 }
 

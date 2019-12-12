@@ -1,5 +1,11 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT16
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT32
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_4X1_UNSIGNED_BYTE
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.UNPACKED_FLOAT16
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.UNPACKED_FLOAT32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object PhysicalTextureType extends js.Object {
   @js.native
   sealed trait UNPACKED_FLOAT32 extends PhysicalTextureType
   
-  /* 4 */ val PACKED_2X2_FLOAT16: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT16 with Double = js.native
-  /* 3 */ val PACKED_2X2_FLOAT32: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT32 with Double = js.native
-  /* 2 */ val PACKED_4X1_UNSIGNED_BYTE: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.PACKED_4X1_UNSIGNED_BYTE with Double = js.native
-  /* 0 */ val UNPACKED_FLOAT16: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.UNPACKED_FLOAT16 with Double = js.native
-  /* 1 */ val UNPACKED_FLOAT32: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.PhysicalTextureType.UNPACKED_FLOAT32 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhysicalTextureType with Double] = js.native
+  /* 4 */ @js.native
+  object PACKED_2X2_FLOAT16 extends TopLevel[PACKED_2X2_FLOAT16 with Double]
+  
+  /* 3 */ @js.native
+  object PACKED_2X2_FLOAT32 extends TopLevel[PACKED_2X2_FLOAT32 with Double]
+  
+  /* 2 */ @js.native
+  object PACKED_4X1_UNSIGNED_BYTE extends TopLevel[PACKED_4X1_UNSIGNED_BYTE with Double]
+  
+  /* 0 */ @js.native
+  object UNPACKED_FLOAT16 extends TopLevel[UNPACKED_FLOAT16 with Double]
+  
+  /* 1 */ @js.native
+  object UNPACKED_FLOAT32 extends TopLevel[UNPACKED_FLOAT32 with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tampermonkey"
-version := "4.x-dt-20190312Z-e08e72"
+version := "4.x-dt-20190312Z-d8eb06"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Script
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.CUSTOM_FUNCTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.FULL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.LIMITED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,11 +54,19 @@ object AuthMode extends js.Object {
   @js.native
   sealed trait NONE extends AuthMode
   
-  /* 1 */ val CUSTOM_FUNCTION: typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.CUSTOM_FUNCTION with Double = js.native
-  /* 3 */ val FULL: typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.FULL with Double = js.native
-  /* 2 */ val LIMITED: typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.LIMITED with Double = js.native
-  /* 0 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Script.AuthMode.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AuthMode with Double] = js.native
+  /* 1 */ @js.native
+  object CUSTOM_FUNCTION extends TopLevel[CUSTOM_FUNCTION with Double]
+  
+  /* 3 */ @js.native
+  object FULL extends TopLevel[FULL with Double]
+  
+  /* 2 */ @js.native
+  object LIMITED extends TopLevel[LIMITED with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
 }
 

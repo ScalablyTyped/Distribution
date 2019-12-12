@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.IconTabFilterDesign.Horizontal
+import typings.openui5.sap.m.IconTabFilterDesign.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object IconTabFilterDesign extends js.Object {
   @js.native
   sealed trait Vertical extends IconTabFilterDesign
   
-  /* 0 */ val Horizontal: typings.openui5.sap.m.IconTabFilterDesign.Horizontal with Double = js.native
-  /* 1 */ val Vertical: typings.openui5.sap.m.IconTabFilterDesign.Vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IconTabFilterDesign with Double] = js.native
+  /* 0 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 1 */ @js.native
+  object Vertical extends TopLevel[Vertical with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.switchSwitchMod.SwitchProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object switchMod extends js.Object {
     def this(props: SwitchProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[SwitchProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[SwitchProps]]
+  
 }
 

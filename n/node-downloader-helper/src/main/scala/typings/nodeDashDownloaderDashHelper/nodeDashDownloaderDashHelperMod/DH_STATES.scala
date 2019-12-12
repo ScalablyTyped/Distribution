@@ -1,5 +1,14 @@
 package typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.DOWNLOADING
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FAILED
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FINISHED
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.IDLE
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.PAUSED
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.RESUMED
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STARTED
+import typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object DH_STATES extends js.Object {
   @js.native
   sealed trait STOPPED extends DH_STATES
   
-  /* "DOWNLOADING" */ val DOWNLOADING: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.DOWNLOADING with String = js.native
-  /* "FAILED" */ val FAILED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FAILED with String = js.native
-  /* "FINISHED" */ val FINISHED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.FINISHED with String = js.native
-  /* "IDLE" */ val IDLE: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.IDLE with String = js.native
-  /* "PAUSED" */ val PAUSED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.PAUSED with String = js.native
-  /* "RESUMED" */ val RESUMED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.RESUMED with String = js.native
-  /* "STARTED" */ val STARTED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STARTED with String = js.native
-  /* "STOPPED" */ val STOPPED: typings.nodeDashDownloaderDashHelper.nodeDashDownloaderDashHelperMod.DH_STATES.STOPPED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DH_STATES with String] = js.native
+  /* "DOWNLOADING" */ @js.native
+  object DOWNLOADING extends TopLevel[DOWNLOADING with String]
+  
+  /* "FAILED" */ @js.native
+  object FAILED extends TopLevel[FAILED with String]
+  
+  /* "FINISHED" */ @js.native
+  object FINISHED extends TopLevel[FINISHED with String]
+  
+  /* "IDLE" */ @js.native
+  object IDLE extends TopLevel[IDLE with String]
+  
+  /* "PAUSED" */ @js.native
+  object PAUSED extends TopLevel[PAUSED with String]
+  
+  /* "RESUMED" */ @js.native
+  object RESUMED extends TopLevel[RESUMED with String]
+  
+  /* "STARTED" */ @js.native
+  object STARTED extends TopLevel[STARTED with String]
+  
+  /* "STOPPED" */ @js.native
+  object STOPPED extends TopLevel[STOPPED with String]
+  
 }
 

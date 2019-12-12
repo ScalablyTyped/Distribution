@@ -1,5 +1,13 @@
 package typings.pako.pakoMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pako.pakoMod.ReturnCodes.Z_BUF_ERROR
+import typings.pako.pakoMod.ReturnCodes.Z_DATA_ERROR
+import typings.pako.pakoMod.ReturnCodes.Z_ERRNO
+import typings.pako.pakoMod.ReturnCodes.Z_NEED_DICT
+import typings.pako.pakoMod.ReturnCodes.Z_OK
+import typings.pako.pakoMod.ReturnCodes.Z_STREAM_END
+import typings.pako.pakoMod.ReturnCodes.Z_STREAM_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object ReturnCodes extends js.Object {
   @js.native
   sealed trait Z_STREAM_ERROR extends ReturnCodes
   
-  /* -5 */ val Z_BUF_ERROR: typings.pako.pakoMod.ReturnCodes.Z_BUF_ERROR with Double = js.native
-  /* -3 */ val Z_DATA_ERROR: typings.pako.pakoMod.ReturnCodes.Z_DATA_ERROR with Double = js.native
-  /* -1 */ val Z_ERRNO: typings.pako.pakoMod.ReturnCodes.Z_ERRNO with Double = js.native
-  /* 2 */ val Z_NEED_DICT: typings.pako.pakoMod.ReturnCodes.Z_NEED_DICT with Double = js.native
-  /* 0 */ val Z_OK: typings.pako.pakoMod.ReturnCodes.Z_OK with Double = js.native
-  /* 1 */ val Z_STREAM_END: typings.pako.pakoMod.ReturnCodes.Z_STREAM_END with Double = js.native
-  /* -2 */ val Z_STREAM_ERROR: typings.pako.pakoMod.ReturnCodes.Z_STREAM_ERROR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReturnCodes with Double] = js.native
+  /* -5 */ @js.native
+  object Z_BUF_ERROR extends TopLevel[Z_BUF_ERROR with Double]
+  
+  /* -3 */ @js.native
+  object Z_DATA_ERROR extends TopLevel[Z_DATA_ERROR with Double]
+  
+  /* -1 */ @js.native
+  object Z_ERRNO extends TopLevel[Z_ERRNO with Double]
+  
+  /* 2 */ @js.native
+  object Z_NEED_DICT extends TopLevel[Z_NEED_DICT with Double]
+  
+  /* 0 */ @js.native
+  object Z_OK extends TopLevel[Z_OK with Double]
+  
+  /* 1 */ @js.native
+  object Z_STREAM_END extends TopLevel[Z_STREAM_END with Double]
+  
+  /* -2 */ @js.native
+  object Z_STREAM_ERROR extends TopLevel[Z_STREAM_ERROR with Double]
+  
 }
 

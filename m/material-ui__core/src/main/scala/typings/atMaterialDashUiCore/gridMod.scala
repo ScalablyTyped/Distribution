@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.gridGridMod.GridProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object gridMod extends js.Object {
     def this(props: GridProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[GridProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[GridProps]]
+  
 }
 

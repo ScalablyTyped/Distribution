@@ -10,49 +10,33 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
+@js.native
 trait ChartLineFormatLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * HTML color code representing the color of lines in the chart.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the line style. See Excel.ChartLineStyle for details.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var lineStyle: js.UndefOr[Boolean] = js.undefined
+  var lineStyle: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents weight of the line, in points.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var weight: js.UndefOr[Boolean] = js.undefined
-}
-
-object ChartLineFormatLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: js.UndefOr[Boolean] = js.undefined,
-    weight: js.UndefOr[Boolean] = js.undefined
-  ): ChartLineFormatLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineStyle)) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChartLineFormatLoadOptions]
-  }
+  var weight: js.UndefOr[Boolean] = js.native
 }
 

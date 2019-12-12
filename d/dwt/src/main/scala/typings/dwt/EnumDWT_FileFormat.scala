@@ -1,5 +1,23 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_FileFormat.TWFF_BMP
+import typings.dwt.EnumDWT_FileFormat.TWFF_DEJAVU
+import typings.dwt.EnumDWT_FileFormat.TWFF_EXIF
+import typings.dwt.EnumDWT_FileFormat.TWFF_FPX
+import typings.dwt.EnumDWT_FileFormat.TWFF_JFIF
+import typings.dwt.EnumDWT_FileFormat.TWFF_JP2
+import typings.dwt.EnumDWT_FileFormat.TWFF_JPN
+import typings.dwt.EnumDWT_FileFormat.TWFF_JPX
+import typings.dwt.EnumDWT_FileFormat.TWFF_PDF
+import typings.dwt.EnumDWT_FileFormat.TWFF_PDFA
+import typings.dwt.EnumDWT_FileFormat.TWFF_PDFA2
+import typings.dwt.EnumDWT_FileFormat.TWFF_PICT
+import typings.dwt.EnumDWT_FileFormat.TWFF_PNG
+import typings.dwt.EnumDWT_FileFormat.TWFF_SPIFF
+import typings.dwt.EnumDWT_FileFormat.TWFF_TIFF
+import typings.dwt.EnumDWT_FileFormat.TWFF_TIFFMULTI
+import typings.dwt.EnumDWT_FileFormat.TWFF_XBM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,24 +97,58 @@ object EnumDWT_FileFormat extends js.Object {
   @js.native
   sealed trait TWFF_XBM extends EnumDWT_FileFormat
   
-  /* 2 */ val TWFF_BMP: typings.dwt.EnumDWT_FileFormat.TWFF_BMP with Double = js.native
-  /* 14 */ val TWFF_DEJAVU: typings.dwt.EnumDWT_FileFormat.TWFF_DEJAVU with Double = js.native
-  /* 9 */ val TWFF_EXIF: typings.dwt.EnumDWT_FileFormat.TWFF_EXIF with Double = js.native
-  /* 5 */ val TWFF_FPX: typings.dwt.EnumDWT_FileFormat.TWFF_FPX with Double = js.native
-  /* 4 */ val TWFF_JFIF: typings.dwt.EnumDWT_FileFormat.TWFF_JFIF with Double = js.native
-  /* 11 */ val TWFF_JP2: typings.dwt.EnumDWT_FileFormat.TWFF_JP2 with Double = js.native
-  /* 12 */ val TWFF_JPN: typings.dwt.EnumDWT_FileFormat.TWFF_JPN with Double = js.native
-  /* 13 */ val TWFF_JPX: typings.dwt.EnumDWT_FileFormat.TWFF_JPX with Double = js.native
-  /* 10 */ val TWFF_PDF: typings.dwt.EnumDWT_FileFormat.TWFF_PDF with Double = js.native
-  /* 15 */ val TWFF_PDFA: typings.dwt.EnumDWT_FileFormat.TWFF_PDFA with Double = js.native
-  /* 16 */ val TWFF_PDFA2: typings.dwt.EnumDWT_FileFormat.TWFF_PDFA2 with Double = js.native
-  /* 1 */ val TWFF_PICT: typings.dwt.EnumDWT_FileFormat.TWFF_PICT with Double = js.native
-  /* 7 */ val TWFF_PNG: typings.dwt.EnumDWT_FileFormat.TWFF_PNG with Double = js.native
-  /* 8 */ val TWFF_SPIFF: typings.dwt.EnumDWT_FileFormat.TWFF_SPIFF with Double = js.native
-  /* 0 */ val TWFF_TIFF: typings.dwt.EnumDWT_FileFormat.TWFF_TIFF with Double = js.native
-  /* 6 */ val TWFF_TIFFMULTI: typings.dwt.EnumDWT_FileFormat.TWFF_TIFFMULTI with Double = js.native
-  /* 3 */ val TWFF_XBM: typings.dwt.EnumDWT_FileFormat.TWFF_XBM with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_FileFormat with Double] = js.native
+  /* 2 */ @js.native
+  object TWFF_BMP extends TopLevel[TWFF_BMP with Double]
+  
+  /* 14 */ @js.native
+  object TWFF_DEJAVU extends TopLevel[TWFF_DEJAVU with Double]
+  
+  /* 9 */ @js.native
+  object TWFF_EXIF extends TopLevel[TWFF_EXIF with Double]
+  
+  /* 5 */ @js.native
+  object TWFF_FPX extends TopLevel[TWFF_FPX with Double]
+  
+  /* 4 */ @js.native
+  object TWFF_JFIF extends TopLevel[TWFF_JFIF with Double]
+  
+  /* 11 */ @js.native
+  object TWFF_JP2 extends TopLevel[TWFF_JP2 with Double]
+  
+  /* 12 */ @js.native
+  object TWFF_JPN extends TopLevel[TWFF_JPN with Double]
+  
+  /* 13 */ @js.native
+  object TWFF_JPX extends TopLevel[TWFF_JPX with Double]
+  
+  /* 10 */ @js.native
+  object TWFF_PDF extends TopLevel[TWFF_PDF with Double]
+  
+  /* 15 */ @js.native
+  object TWFF_PDFA extends TopLevel[TWFF_PDFA with Double]
+  
+  /* 16 */ @js.native
+  object TWFF_PDFA2 extends TopLevel[TWFF_PDFA2 with Double]
+  
+  /* 1 */ @js.native
+  object TWFF_PICT extends TopLevel[TWFF_PICT with Double]
+  
+  /* 7 */ @js.native
+  object TWFF_PNG extends TopLevel[TWFF_PNG with Double]
+  
+  /* 8 */ @js.native
+  object TWFF_SPIFF extends TopLevel[TWFF_SPIFF with Double]
+  
+  /* 0 */ @js.native
+  object TWFF_TIFF extends TopLevel[TWFF_TIFF with Double]
+  
+  /* 6 */ @js.native
+  object TWFF_TIFFMULTI extends TopLevel[TWFF_TIFFMULTI with Double]
+  
+  /* 3 */ @js.native
+  object TWFF_XBM extends TopLevel[TWFF_XBM with Double]
+  
 }
 

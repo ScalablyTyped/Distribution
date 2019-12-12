@@ -1,5 +1,125 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EResult.AccessDenied
+import typings.steamDashClient.steamDashClientMod.EResult.AccountActivityLimitExceeded
+import typings.steamDashClient.steamDashClientMod.EResult.AccountAssociatedToMultiplePartners
+import typings.steamDashClient.steamDashClientMod.EResult.AccountAssociatedToMultiplePlayers
+import typings.steamDashClient.steamDashClientMod.EResult.AccountDisabled
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLimitExceeded
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLocked
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLockedDown
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLoginDeniedNeedTwoFactor
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLoginDeniedThrottle
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDenied
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNeedTwoFactorCode
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNoMail
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNoMailSent
+import typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedVerifiedEmailRequired
+import typings.steamDashClient.steamDashClientMod.EResult.AccountNotFeatured
+import typings.steamDashClient.steamDashClientMod.EResult.AccountNotFound
+import typings.steamDashClient.steamDashClientMod.EResult.AdministratorOK
+import typings.steamDashClient.steamDashClientMod.EResult.AlreadyLoggedInElsewhere
+import typings.steamDashClient.steamDashClientMod.EResult.AlreadyOwned
+import typings.steamDashClient.steamDashClientMod.EResult.AlreadyRedeemed
+import typings.steamDashClient.steamDashClientMod.EResult.BadResponse
+import typings.steamDashClient.steamDashClientMod.EResult.Banned
+import typings.steamDashClient.steamDashClientMod.EResult.Blocked
+import typings.steamDashClient.steamDashClientMod.EResult.Busy
+import typings.steamDashClient.steamDashClientMod.EResult.Cancelled
+import typings.steamDashClient.steamDashClientMod.EResult.CannotUseOldPassword
+import typings.steamDashClient.steamDashClientMod.EResult.ConnectFailed
+import typings.steamDashClient.steamDashClientMod.EResult.ContentVersion
+import typings.steamDashClient.steamDashClientMod.EResult.DataCorruption
+import typings.steamDashClient.steamDashClientMod.EResult.Disabled
+import typings.steamDashClient.steamDashClientMod.EResult.DiskFull
+import typings.steamDashClient.steamDashClientMod.EResult.DuplicateName
+import typings.steamDashClient.steamDashClientMod.EResult.DuplicateRequest
+import typings.steamDashClient.steamDashClientMod.EResult.EmailSendFailure
+import typings.steamDashClient.steamDashClientMod.EResult.EncryptionFailure
+import typings.steamDashClient.steamDashClientMod.EResult.Expired
+import typings.steamDashClient.steamDashClientMod.EResult.ExpiredLoginAuthCode
+import typings.steamDashClient.steamDashClientMod.EResult.ExternalAccountAlreadyLinked
+import typings.steamDashClient.steamDashClientMod.EResult.ExternalAccountUnlinked
+import typings.steamDashClient.steamDashClientMod.EResult.FacebookQueryError
+import typings.steamDashClient.steamDashClientMod.EResult.Fail
+import typings.steamDashClient.steamDashClientMod.EResult.FileNotFound
+import typings.steamDashClient.steamDashClientMod.EResult.GSLTDenied
+import typings.steamDashClient.steamDashClientMod.EResult.GSLTExpired
+import typings.steamDashClient.steamDashClientMod.EResult.GSOwnerDenied
+import typings.steamDashClient.steamDashClientMod.EResult.HandshakeFailed
+import typings.steamDashClient.steamDashClientMod.EResult.HardwareNotCapableOfIPT
+import typings.steamDashClient.steamDashClientMod.EResult.IOFailure
+import typings.steamDashClient.steamDashClientMod.EResult.IPBanned
+import typings.steamDashClient.steamDashClientMod.EResult.IPLoginRestrictionFailed
+import typings.steamDashClient.steamDashClientMod.EResult.IPNotFound
+import typings.steamDashClient.steamDashClientMod.EResult.IPTInitError
+import typings.steamDashClient.steamDashClientMod.EResult.Ignored
+import typings.steamDashClient.steamDashClientMod.EResult.IllegalPassword
+import typings.steamDashClient.steamDashClientMod.EResult.InsufficientFunds
+import typings.steamDashClient.steamDashClientMod.EResult.InsufficientPrivilege
+import typings.steamDashClient.steamDashClientMod.EResult.Invalid
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidCEGSubmission
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidEmail
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidItemType
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidLoginAuthCode
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidName
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidParam
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidPassword
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidProtocolVer
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidState
+import typings.steamDashClient.steamDashClientMod.EResult.InvalidSteamID
+import typings.steamDashClient.steamDashClientMod.EResult.ItemDeleted
+import typings.steamDashClient.steamDashClientMod.EResult.ItemOrEntryHasBeenDeleted
+import typings.steamDashClient.steamDashClientMod.EResult.LimitExceeded
+import typings.steamDashClient.steamDashClientMod.EResult.LockingFailed
+import typings.steamDashClient.steamDashClientMod.EResult.LoggedInElsewhere
+import typings.steamDashClient.steamDashClientMod.EResult.LogonSessionReplaced
+import typings.steamDashClient.steamDashClientMod.EResult.NeedCaptcha
+import typings.steamDashClient.steamDashClientMod.EResult.NoConnection
+import typings.steamDashClient.steamDashClientMod.EResult.NoMatch
+import typings.steamDashClient.steamDashClientMod.EResult.NoMatchingURL
+import typings.steamDashClient.steamDashClientMod.EResult.NoMobileDevice
+import typings.steamDashClient.steamDashClientMod.EResult.NoMobileDeviceAvailable
+import typings.steamDashClient.steamDashClientMod.EResult.NoSiteLicensesFound
+import typings.steamDashClient.steamDashClientMod.EResult.NotLoggedOn
+import typings.steamDashClient.steamDashClientMod.EResult.NotModified
+import typings.steamDashClient.steamDashClientMod.EResult.NotSettled
+import typings.steamDashClient.steamDashClientMod.EResult.OK
+import typings.steamDashClient.steamDashClientMod.EResult.PSNTicketInvalid
+import typings.steamDashClient.steamDashClientMod.EResult.ParentalControlRestricted
+import typings.steamDashClient.steamDashClientMod.EResult.PasswordNotSet
+import typings.steamDashClient.steamDashClientMod.EResult.PasswordRequiredToKickSession
+import typings.steamDashClient.steamDashClientMod.EResult.PasswordUnset
+import typings.steamDashClient.steamDashClientMod.EResult.Pending
+import typings.steamDashClient.steamDashClientMod.EResult.PersistFailed
+import typings.steamDashClient.steamDashClientMod.EResult.PhoneActivityLimitExceeded
+import typings.steamDashClient.steamDashClientMod.EResult.RateLimitExceeded
+import typings.steamDashClient.steamDashClientMod.EResult.RefundToWallet
+import typings.steamDashClient.steamDashClientMod.EResult.RegionLocked
+import typings.steamDashClient.steamDashClientMod.EResult.RemoteCallFailed
+import typings.steamDashClient.steamDashClientMod.EResult.RemoteDisconnect
+import typings.steamDashClient.steamDashClientMod.EResult.RemoteFileConflict
+import typings.steamDashClient.steamDashClientMod.EResult.RequirePasswordReEntry
+import typings.steamDashClient.steamDashClientMod.EResult.RestrictedDevice
+import typings.steamDashClient.steamDashClientMod.EResult.Revoked
+import typings.steamDashClient.steamDashClientMod.EResult.SMSCodeFailed
+import typings.steamDashClient.steamDashClientMod.EResult.SameAsPreviousValue
+import typings.steamDashClient.steamDashClientMod.EResult.ServiceReadOnly
+import typings.steamDashClient.steamDashClientMod.EResult.ServiceUnavailable
+import typings.steamDashClient.steamDashClientMod.EResult.ShoppingCartNotFound
+import typings.steamDashClient.steamDashClientMod.EResult.Suspended
+import typings.steamDashClient.steamDashClientMod.EResult.TimeIsOutOfSync
+import typings.steamDashClient.steamDashClientMod.EResult.TimeNotSynced
+import typings.steamDashClient.steamDashClientMod.EResult.Timeout
+import typings.steamDashClient.steamDashClientMod.EResult.TooManyAccountsAccessThisResource
+import typings.steamDashClient.steamDashClientMod.EResult.TooManyPending
+import typings.steamDashClient.steamDashClientMod.EResult.TryAnotherCM
+import typings.steamDashClient.steamDashClientMod.EResult.TwoFactorActivationCodeMismatch
+import typings.steamDashClient.steamDashClientMod.EResult.TwoFactorCodeMismatch
+import typings.steamDashClient.steamDashClientMod.EResult.UnexpectedError
+import typings.steamDashClient.steamDashClientMod.EResult.ValueOutOfRange
+import typings.steamDashClient.steamDashClientMod.EResult.WGNetworkSendExceeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -376,126 +496,364 @@ object EResult extends js.Object {
   @js.native
   sealed trait WGNetworkSendExceeded extends EResult
   
-  /* 15 */ val AccessDenied: typings.steamDashClient.steamDashClientMod.EResult.AccessDenied with Double = js.native
-  /* 96 */ val AccountActivityLimitExceeded: typings.steamDashClient.steamDashClientMod.EResult.AccountActivityLimitExceeded with Double = js.native
-  /* 90 */ val AccountAssociatedToMultiplePartners: typings.steamDashClient.steamDashClientMod.EResult.AccountAssociatedToMultiplePartners with Double = js.native
-  /* 90 */ val AccountAssociatedToMultiplePlayers: typings.steamDashClient.steamDashClientMod.EResult.AccountAssociatedToMultiplePlayers with Double = js.native
-  /* 43 */ val AccountDisabled: typings.steamDashClient.steamDashClientMod.EResult.AccountDisabled with Double = js.native
-  /* 95 */ val AccountLimitExceeded: typings.steamDashClient.steamDashClientMod.EResult.AccountLimitExceeded with Double = js.native
-  /* 73 */ val AccountLocked: typings.steamDashClient.steamDashClientMod.EResult.AccountLocked with Double = js.native
-  /* 73 */ val AccountLockedDown: typings.steamDashClient.steamDashClientMod.EResult.AccountLockedDown with Double = js.native
-  /* 85 */ val AccountLoginDeniedNeedTwoFactor: typings.steamDashClient.steamDashClientMod.EResult.AccountLoginDeniedNeedTwoFactor with Double = js.native
-  /* 87 */ val AccountLoginDeniedThrottle: typings.steamDashClient.steamDashClientMod.EResult.AccountLoginDeniedThrottle with Double = js.native
-  /* 63 */ val AccountLogonDenied: typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDenied with Double = js.native
-  /* 85 */ val AccountLogonDeniedNeedTwoFactorCode: typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNeedTwoFactorCode with Double = js.native
-  /* 66 */ val AccountLogonDeniedNoMail: typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNoMail with Double = js.native
-  /* 66 */ val AccountLogonDeniedNoMailSent: typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedNoMailSent with Double = js.native
-  /* 74 */ val AccountLogonDeniedVerifiedEmailRequired: typings.steamDashClient.steamDashClientMod.EResult.AccountLogonDeniedVerifiedEmailRequired with Double = js.native
-  /* 45 */ val AccountNotFeatured: typings.steamDashClient.steamDashClientMod.EResult.AccountNotFeatured with Double = js.native
-  /* 18 */ val AccountNotFound: typings.steamDashClient.steamDashClientMod.EResult.AccountNotFound with Double = js.native
-  /* 46 */ val AdministratorOK: typings.steamDashClient.steamDashClientMod.EResult.AdministratorOK with Double = js.native
-  /* 50 */ val AlreadyLoggedInElsewhere: typings.steamDashClient.steamDashClientMod.EResult.AlreadyLoggedInElsewhere with Double = js.native
-  /* 30 */ val AlreadyOwned: typings.steamDashClient.steamDashClientMod.EResult.AlreadyOwned with Double = js.native
-  /* 28 */ val AlreadyRedeemed: typings.steamDashClient.steamDashClientMod.EResult.AlreadyRedeemed with Double = js.native
-  /* 76 */ val BadResponse: typings.steamDashClient.steamDashClientMod.EResult.BadResponse with Double = js.native
-  /* 17 */ val Banned: typings.steamDashClient.steamDashClientMod.EResult.Banned with Double = js.native
-  /* 40 */ val Blocked: typings.steamDashClient.steamDashClientMod.EResult.Blocked with Double = js.native
-  /* 10 */ val Busy: typings.steamDashClient.steamDashClientMod.EResult.Busy with Double = js.native
-  /* 52 */ val Cancelled: typings.steamDashClient.steamDashClientMod.EResult.Cancelled with Double = js.native
-  /* 64 */ val CannotUseOldPassword: typings.steamDashClient.steamDashClientMod.EResult.CannotUseOldPassword with Double = js.native
-  /* 35 */ val ConnectFailed: typings.steamDashClient.steamDashClientMod.EResult.ConnectFailed with Double = js.native
-  /* 47 */ val ContentVersion: typings.steamDashClient.steamDashClientMod.EResult.ContentVersion with Double = js.native
-  /* 53 */ val DataCorruption: typings.steamDashClient.steamDashClientMod.EResult.DataCorruption with Double = js.native
-  /* 80 */ val Disabled: typings.steamDashClient.steamDashClientMod.EResult.Disabled with Double = js.native
-  /* 54 */ val DiskFull: typings.steamDashClient.steamDashClientMod.EResult.DiskFull with Double = js.native
-  /* 14 */ val DuplicateName: typings.steamDashClient.steamDashClientMod.EResult.DuplicateName with Double = js.native
-  /* 29 */ val DuplicateRequest: typings.steamDashClient.steamDashClientMod.EResult.DuplicateRequest with Double = js.native
-  /* 99 */ val EmailSendFailure: typings.steamDashClient.steamDashClientMod.EResult.EmailSendFailure with Double = js.native
-  /* 23 */ val EncryptionFailure: typings.steamDashClient.steamDashClientMod.EResult.EncryptionFailure with Double = js.native
-  /* 27 */ val Expired: typings.steamDashClient.steamDashClientMod.EResult.Expired with Double = js.native
-  /* 71 */ val ExpiredLoginAuthCode: typings.steamDashClient.steamDashClientMod.EResult.ExpiredLoginAuthCode with Double = js.native
-  /* 59 */ val ExternalAccountAlreadyLinked: typings.steamDashClient.steamDashClientMod.EResult.ExternalAccountAlreadyLinked with Double = js.native
-  /* 57 */ val ExternalAccountUnlinked: typings.steamDashClient.steamDashClientMod.EResult.ExternalAccountUnlinked with Double = js.native
-  /* 70 */ val FacebookQueryError: typings.steamDashClient.steamDashClientMod.EResult.FacebookQueryError with Double = js.native
-  /* 2 */ val Fail: typings.steamDashClient.steamDashClientMod.EResult.Fail with Double = js.native
-  /* 9 */ val FileNotFound: typings.steamDashClient.steamDashClientMod.EResult.FileNotFound with Double = js.native
-  /* 102 */ val GSLTDenied: typings.steamDashClient.steamDashClientMod.EResult.GSLTDenied with Double = js.native
-  /* 106 */ val GSLTExpired: typings.steamDashClient.steamDashClientMod.EResult.GSLTExpired with Double = js.native
-  /* 103 */ val GSOwnerDenied: typings.steamDashClient.steamDashClientMod.EResult.GSOwnerDenied with Double = js.native
-  /* 36 */ val HandshakeFailed: typings.steamDashClient.steamDashClientMod.EResult.HandshakeFailed with Double = js.native
-  /* 67 */ val HardwareNotCapableOfIPT: typings.steamDashClient.steamDashClientMod.EResult.HardwareNotCapableOfIPT with Double = js.native
-  /* 37 */ val IOFailure: typings.steamDashClient.steamDashClientMod.EResult.IOFailure with Double = js.native
-  /* 105 */ val IPBanned: typings.steamDashClient.steamDashClientMod.EResult.IPBanned with Double = js.native
-  /* 72 */ val IPLoginRestrictionFailed: typings.steamDashClient.steamDashClientMod.EResult.IPLoginRestrictionFailed with Double = js.native
-  /* 31 */ val IPNotFound: typings.steamDashClient.steamDashClientMod.EResult.IPNotFound with Double = js.native
-  /* 68 */ val IPTInitError: typings.steamDashClient.steamDashClientMod.EResult.IPTInitError with Double = js.native
-  /* 41 */ val Ignored: typings.steamDashClient.steamDashClientMod.EResult.Ignored with Double = js.native
-  /* 61 */ val IllegalPassword: typings.steamDashClient.steamDashClientMod.EResult.IllegalPassword with Double = js.native
-  /* 107 */ val InsufficientFunds: typings.steamDashClient.steamDashClientMod.EResult.InsufficientFunds with Double = js.native
-  /* 24 */ val InsufficientPrivilege: typings.steamDashClient.steamDashClientMod.EResult.InsufficientPrivilege with Double = js.native
-  /* 0 */ val Invalid: typings.steamDashClient.steamDashClientMod.EResult.Invalid with Double = js.native
-  /* 81 */ val InvalidCEGSubmission: typings.steamDashClient.steamDashClientMod.EResult.InvalidCEGSubmission with Double = js.native
-  /* 13 */ val InvalidEmail: typings.steamDashClient.steamDashClientMod.EResult.InvalidEmail with Double = js.native
-  /* 104 */ val InvalidItemType: typings.steamDashClient.steamDashClientMod.EResult.InvalidItemType with Double = js.native
-  /* 65 */ val InvalidLoginAuthCode: typings.steamDashClient.steamDashClientMod.EResult.InvalidLoginAuthCode with Double = js.native
-  /* 12 */ val InvalidName: typings.steamDashClient.steamDashClientMod.EResult.InvalidName with Double = js.native
-  /* 8 */ val InvalidParam: typings.steamDashClient.steamDashClientMod.EResult.InvalidParam with Double = js.native
-  /* 5 */ val InvalidPassword: typings.steamDashClient.steamDashClientMod.EResult.InvalidPassword with Double = js.native
-  /* 7 */ val InvalidProtocolVer: typings.steamDashClient.steamDashClientMod.EResult.InvalidProtocolVer with Double = js.native
-  /* 11 */ val InvalidState: typings.steamDashClient.steamDashClientMod.EResult.InvalidState with Double = js.native
-  /* 19 */ val InvalidSteamID: typings.steamDashClient.steamDashClientMod.EResult.InvalidSteamID with Double = js.native
-  /* 86 */ val ItemDeleted: typings.steamDashClient.steamDashClientMod.EResult.ItemDeleted with Double = js.native
-  /* 86 */ val ItemOrEntryHasBeenDeleted: typings.steamDashClient.steamDashClientMod.EResult.ItemOrEntryHasBeenDeleted with Double = js.native
-  /* 25 */ val LimitExceeded: typings.steamDashClient.steamDashClientMod.EResult.LimitExceeded with Double = js.native
-  /* 33 */ val LockingFailed: typings.steamDashClient.steamDashClientMod.EResult.LockingFailed with Double = js.native
-  /* 6 */ val LoggedInElsewhere: typings.steamDashClient.steamDashClientMod.EResult.LoggedInElsewhere with Double = js.native
-  /* 34 */ val LogonSessionReplaced: typings.steamDashClient.steamDashClientMod.EResult.LogonSessionReplaced with Double = js.native
-  /* 101 */ val NeedCaptcha: typings.steamDashClient.steamDashClientMod.EResult.NeedCaptcha with Double = js.native
-  /* 3 */ val NoConnection: typings.steamDashClient.steamDashClientMod.EResult.NoConnection with Double = js.native
-  /* 42 */ val NoMatch: typings.steamDashClient.steamDashClientMod.EResult.NoMatch with Double = js.native
-  /* 75 */ val NoMatchingURL: typings.steamDashClient.steamDashClientMod.EResult.NoMatchingURL with Double = js.native
-  /* 92 */ val NoMobileDevice: typings.steamDashClient.steamDashClientMod.EResult.NoMobileDevice with Double = js.native
-  /* 92 */ val NoMobileDeviceAvailable: typings.steamDashClient.steamDashClientMod.EResult.NoMobileDeviceAvailable with Double = js.native
-  /* 109 */ val NoSiteLicensesFound: typings.steamDashClient.steamDashClientMod.EResult.NoSiteLicensesFound with Double = js.native
-  /* 21 */ val NotLoggedOn: typings.steamDashClient.steamDashClientMod.EResult.NotLoggedOn with Double = js.native
-  /* 91 */ val NotModified: typings.steamDashClient.steamDashClientMod.EResult.NotModified with Double = js.native
-  /* 100 */ val NotSettled: typings.steamDashClient.steamDashClientMod.EResult.NotSettled with Double = js.native
-  /* 1 */ val OK: typings.steamDashClient.steamDashClientMod.EResult.OK with Double = js.native
-  /* 58 */ val PSNTicketInvalid: typings.steamDashClient.steamDashClientMod.EResult.PSNTicketInvalid with Double = js.native
-  /* 69 */ val ParentalControlRestricted: typings.steamDashClient.steamDashClientMod.EResult.ParentalControlRestricted with Double = js.native
-  /* 56 */ val PasswordNotSet: typings.steamDashClient.steamDashClientMod.EResult.PasswordNotSet with Double = js.native
-  /* 49 */ val PasswordRequiredToKickSession: typings.steamDashClient.steamDashClientMod.EResult.PasswordRequiredToKickSession with Double = js.native
-  /* 56 */ val PasswordUnset: typings.steamDashClient.steamDashClientMod.EResult.PasswordUnset with Double = js.native
-  /* 22 */ val Pending: typings.steamDashClient.steamDashClientMod.EResult.Pending with Double = js.native
-  /* 32 */ val PersistFailed: typings.steamDashClient.steamDashClientMod.EResult.PersistFailed with Double = js.native
-  /* 97 */ val PhoneActivityLimitExceeded: typings.steamDashClient.steamDashClientMod.EResult.PhoneActivityLimitExceeded with Double = js.native
-  /* 84 */ val RateLimitExceeded: typings.steamDashClient.steamDashClientMod.EResult.RateLimitExceeded with Double = js.native
-  /* 98 */ val RefundToWallet: typings.steamDashClient.steamDashClientMod.EResult.RefundToWallet with Double = js.native
-  /* 83 */ val RegionLocked: typings.steamDashClient.steamDashClientMod.EResult.RegionLocked with Double = js.native
-  /* 55 */ val RemoteCallFailed: typings.steamDashClient.steamDashClientMod.EResult.RemoteCallFailed with Double = js.native
-  /* 38 */ val RemoteDisconnect: typings.steamDashClient.steamDashClientMod.EResult.RemoteDisconnect with Double = js.native
-  /* 60 */ val RemoteFileConflict: typings.steamDashClient.steamDashClientMod.EResult.RemoteFileConflict with Double = js.native
-  /* 77 */ val RequirePasswordReEntry: typings.steamDashClient.steamDashClientMod.EResult.RequirePasswordReEntry with Double = js.native
-  /* 82 */ val RestrictedDevice: typings.steamDashClient.steamDashClientMod.EResult.RestrictedDevice with Double = js.native
-  /* 26 */ val Revoked: typings.steamDashClient.steamDashClientMod.EResult.Revoked with Double = js.native
-  /* 94 */ val SMSCodeFailed: typings.steamDashClient.steamDashClientMod.EResult.SMSCodeFailed with Double = js.native
-  /* 62 */ val SameAsPreviousValue: typings.steamDashClient.steamDashClientMod.EResult.SameAsPreviousValue with Double = js.native
-  /* 44 */ val ServiceReadOnly: typings.steamDashClient.steamDashClientMod.EResult.ServiceReadOnly with Double = js.native
-  /* 20 */ val ServiceUnavailable: typings.steamDashClient.steamDashClientMod.EResult.ServiceUnavailable with Double = js.native
-  /* 39 */ val ShoppingCartNotFound: typings.steamDashClient.steamDashClientMod.EResult.ShoppingCartNotFound with Double = js.native
-  /* 51 */ val Suspended: typings.steamDashClient.steamDashClientMod.EResult.Suspended with Double = js.native
-  /* 93 */ val TimeIsOutOfSync: typings.steamDashClient.steamDashClientMod.EResult.TimeIsOutOfSync with Double = js.native
-  /* 93 */ val TimeNotSynced: typings.steamDashClient.steamDashClientMod.EResult.TimeNotSynced with Double = js.native
-  /* 16 */ val Timeout: typings.steamDashClient.steamDashClientMod.EResult.Timeout with Double = js.native
-  /* 95 */ val TooManyAccountsAccessThisResource: typings.steamDashClient.steamDashClientMod.EResult.TooManyAccountsAccessThisResource with Double = js.native
-  /* 108 */ val TooManyPending: typings.steamDashClient.steamDashClientMod.EResult.TooManyPending with Double = js.native
-  /* 48 */ val TryAnotherCM: typings.steamDashClient.steamDashClientMod.EResult.TryAnotherCM with Double = js.native
-  /* 89 */ val TwoFactorActivationCodeMismatch: typings.steamDashClient.steamDashClientMod.EResult.TwoFactorActivationCodeMismatch with Double = js.native
-  /* 88 */ val TwoFactorCodeMismatch: typings.steamDashClient.steamDashClientMod.EResult.TwoFactorCodeMismatch with Double = js.native
-  /* 79 */ val UnexpectedError: typings.steamDashClient.steamDashClientMod.EResult.UnexpectedError with Double = js.native
-  /* 78 */ val ValueOutOfRange: typings.steamDashClient.steamDashClientMod.EResult.ValueOutOfRange with Double = js.native
-  /* 110 */ val WGNetworkSendExceeded: typings.steamDashClient.steamDashClientMod.EResult.WGNetworkSendExceeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EResult with Double] = js.native
+  /* 15 */ @js.native
+  object AccessDenied extends TopLevel[AccessDenied with Double]
+  
+  /* 96 */ @js.native
+  object AccountActivityLimitExceeded extends TopLevel[AccountActivityLimitExceeded with Double]
+  
+  /* 90 */ @js.native
+  object AccountAssociatedToMultiplePartners extends TopLevel[AccountAssociatedToMultiplePartners with Double]
+  
+  /* 90 */ @js.native
+  object AccountAssociatedToMultiplePlayers extends TopLevel[AccountAssociatedToMultiplePlayers with Double]
+  
+  /* 43 */ @js.native
+  object AccountDisabled extends TopLevel[AccountDisabled with Double]
+  
+  /* 95 */ @js.native
+  object AccountLimitExceeded extends TopLevel[AccountLimitExceeded with Double]
+  
+  /* 73 */ @js.native
+  object AccountLocked extends TopLevel[AccountLocked with Double]
+  
+  /* 73 */ @js.native
+  object AccountLockedDown extends TopLevel[AccountLockedDown with Double]
+  
+  /* 85 */ @js.native
+  object AccountLoginDeniedNeedTwoFactor extends TopLevel[AccountLoginDeniedNeedTwoFactor with Double]
+  
+  /* 87 */ @js.native
+  object AccountLoginDeniedThrottle extends TopLevel[AccountLoginDeniedThrottle with Double]
+  
+  /* 63 */ @js.native
+  object AccountLogonDenied extends TopLevel[AccountLogonDenied with Double]
+  
+  /* 85 */ @js.native
+  object AccountLogonDeniedNeedTwoFactorCode extends TopLevel[AccountLogonDeniedNeedTwoFactorCode with Double]
+  
+  /* 66 */ @js.native
+  object AccountLogonDeniedNoMail extends TopLevel[AccountLogonDeniedNoMail with Double]
+  
+  /* 66 */ @js.native
+  object AccountLogonDeniedNoMailSent extends TopLevel[AccountLogonDeniedNoMailSent with Double]
+  
+  /* 74 */ @js.native
+  object AccountLogonDeniedVerifiedEmailRequired extends TopLevel[AccountLogonDeniedVerifiedEmailRequired with Double]
+  
+  /* 45 */ @js.native
+  object AccountNotFeatured extends TopLevel[AccountNotFeatured with Double]
+  
+  /* 18 */ @js.native
+  object AccountNotFound extends TopLevel[AccountNotFound with Double]
+  
+  /* 46 */ @js.native
+  object AdministratorOK extends TopLevel[AdministratorOK with Double]
+  
+  /* 50 */ @js.native
+  object AlreadyLoggedInElsewhere extends TopLevel[AlreadyLoggedInElsewhere with Double]
+  
+  /* 30 */ @js.native
+  object AlreadyOwned extends TopLevel[AlreadyOwned with Double]
+  
+  /* 28 */ @js.native
+  object AlreadyRedeemed extends TopLevel[AlreadyRedeemed with Double]
+  
+  /* 76 */ @js.native
+  object BadResponse extends TopLevel[BadResponse with Double]
+  
+  /* 17 */ @js.native
+  object Banned extends TopLevel[Banned with Double]
+  
+  /* 40 */ @js.native
+  object Blocked extends TopLevel[Blocked with Double]
+  
+  /* 10 */ @js.native
+  object Busy extends TopLevel[Busy with Double]
+  
+  /* 52 */ @js.native
+  object Cancelled extends TopLevel[Cancelled with Double]
+  
+  /* 64 */ @js.native
+  object CannotUseOldPassword extends TopLevel[CannotUseOldPassword with Double]
+  
+  /* 35 */ @js.native
+  object ConnectFailed extends TopLevel[ConnectFailed with Double]
+  
+  /* 47 */ @js.native
+  object ContentVersion extends TopLevel[ContentVersion with Double]
+  
+  /* 53 */ @js.native
+  object DataCorruption extends TopLevel[DataCorruption with Double]
+  
+  /* 80 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 54 */ @js.native
+  object DiskFull extends TopLevel[DiskFull with Double]
+  
+  /* 14 */ @js.native
+  object DuplicateName extends TopLevel[DuplicateName with Double]
+  
+  /* 29 */ @js.native
+  object DuplicateRequest extends TopLevel[DuplicateRequest with Double]
+  
+  /* 99 */ @js.native
+  object EmailSendFailure extends TopLevel[EmailSendFailure with Double]
+  
+  /* 23 */ @js.native
+  object EncryptionFailure extends TopLevel[EncryptionFailure with Double]
+  
+  /* 27 */ @js.native
+  object Expired extends TopLevel[Expired with Double]
+  
+  /* 71 */ @js.native
+  object ExpiredLoginAuthCode extends TopLevel[ExpiredLoginAuthCode with Double]
+  
+  /* 59 */ @js.native
+  object ExternalAccountAlreadyLinked extends TopLevel[ExternalAccountAlreadyLinked with Double]
+  
+  /* 57 */ @js.native
+  object ExternalAccountUnlinked extends TopLevel[ExternalAccountUnlinked with Double]
+  
+  /* 70 */ @js.native
+  object FacebookQueryError extends TopLevel[FacebookQueryError with Double]
+  
+  /* 2 */ @js.native
+  object Fail extends TopLevel[Fail with Double]
+  
+  /* 9 */ @js.native
+  object FileNotFound extends TopLevel[FileNotFound with Double]
+  
+  /* 102 */ @js.native
+  object GSLTDenied extends TopLevel[GSLTDenied with Double]
+  
+  /* 106 */ @js.native
+  object GSLTExpired extends TopLevel[GSLTExpired with Double]
+  
+  /* 103 */ @js.native
+  object GSOwnerDenied extends TopLevel[GSOwnerDenied with Double]
+  
+  /* 36 */ @js.native
+  object HandshakeFailed extends TopLevel[HandshakeFailed with Double]
+  
+  /* 67 */ @js.native
+  object HardwareNotCapableOfIPT extends TopLevel[HardwareNotCapableOfIPT with Double]
+  
+  /* 37 */ @js.native
+  object IOFailure extends TopLevel[IOFailure with Double]
+  
+  /* 105 */ @js.native
+  object IPBanned extends TopLevel[IPBanned with Double]
+  
+  /* 72 */ @js.native
+  object IPLoginRestrictionFailed extends TopLevel[IPLoginRestrictionFailed with Double]
+  
+  /* 31 */ @js.native
+  object IPNotFound extends TopLevel[IPNotFound with Double]
+  
+  /* 68 */ @js.native
+  object IPTInitError extends TopLevel[IPTInitError with Double]
+  
+  /* 41 */ @js.native
+  object Ignored extends TopLevel[Ignored with Double]
+  
+  /* 61 */ @js.native
+  object IllegalPassword extends TopLevel[IllegalPassword with Double]
+  
+  /* 107 */ @js.native
+  object InsufficientFunds extends TopLevel[InsufficientFunds with Double]
+  
+  /* 24 */ @js.native
+  object InsufficientPrivilege extends TopLevel[InsufficientPrivilege with Double]
+  
+  /* 0 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 81 */ @js.native
+  object InvalidCEGSubmission extends TopLevel[InvalidCEGSubmission with Double]
+  
+  /* 13 */ @js.native
+  object InvalidEmail extends TopLevel[InvalidEmail with Double]
+  
+  /* 104 */ @js.native
+  object InvalidItemType extends TopLevel[InvalidItemType with Double]
+  
+  /* 65 */ @js.native
+  object InvalidLoginAuthCode extends TopLevel[InvalidLoginAuthCode with Double]
+  
+  /* 12 */ @js.native
+  object InvalidName extends TopLevel[InvalidName with Double]
+  
+  /* 8 */ @js.native
+  object InvalidParam extends TopLevel[InvalidParam with Double]
+  
+  /* 5 */ @js.native
+  object InvalidPassword extends TopLevel[InvalidPassword with Double]
+  
+  /* 7 */ @js.native
+  object InvalidProtocolVer extends TopLevel[InvalidProtocolVer with Double]
+  
+  /* 11 */ @js.native
+  object InvalidState extends TopLevel[InvalidState with Double]
+  
+  /* 19 */ @js.native
+  object InvalidSteamID extends TopLevel[InvalidSteamID with Double]
+  
+  /* 86 */ @js.native
+  object ItemDeleted extends TopLevel[ItemDeleted with Double]
+  
+  /* 86 */ @js.native
+  object ItemOrEntryHasBeenDeleted extends TopLevel[ItemOrEntryHasBeenDeleted with Double]
+  
+  /* 25 */ @js.native
+  object LimitExceeded extends TopLevel[LimitExceeded with Double]
+  
+  /* 33 */ @js.native
+  object LockingFailed extends TopLevel[LockingFailed with Double]
+  
+  /* 6 */ @js.native
+  object LoggedInElsewhere extends TopLevel[LoggedInElsewhere with Double]
+  
+  /* 34 */ @js.native
+  object LogonSessionReplaced extends TopLevel[LogonSessionReplaced with Double]
+  
+  /* 101 */ @js.native
+  object NeedCaptcha extends TopLevel[NeedCaptcha with Double]
+  
+  /* 3 */ @js.native
+  object NoConnection extends TopLevel[NoConnection with Double]
+  
+  /* 42 */ @js.native
+  object NoMatch extends TopLevel[NoMatch with Double]
+  
+  /* 75 */ @js.native
+  object NoMatchingURL extends TopLevel[NoMatchingURL with Double]
+  
+  /* 92 */ @js.native
+  object NoMobileDevice extends TopLevel[NoMobileDevice with Double]
+  
+  /* 92 */ @js.native
+  object NoMobileDeviceAvailable extends TopLevel[NoMobileDeviceAvailable with Double]
+  
+  /* 109 */ @js.native
+  object NoSiteLicensesFound extends TopLevel[NoSiteLicensesFound with Double]
+  
+  /* 21 */ @js.native
+  object NotLoggedOn extends TopLevel[NotLoggedOn with Double]
+  
+  /* 91 */ @js.native
+  object NotModified extends TopLevel[NotModified with Double]
+  
+  /* 100 */ @js.native
+  object NotSettled extends TopLevel[NotSettled with Double]
+  
+  /* 1 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 58 */ @js.native
+  object PSNTicketInvalid extends TopLevel[PSNTicketInvalid with Double]
+  
+  /* 69 */ @js.native
+  object ParentalControlRestricted extends TopLevel[ParentalControlRestricted with Double]
+  
+  /* 56 */ @js.native
+  object PasswordNotSet extends TopLevel[PasswordNotSet with Double]
+  
+  /* 49 */ @js.native
+  object PasswordRequiredToKickSession extends TopLevel[PasswordRequiredToKickSession with Double]
+  
+  /* 56 */ @js.native
+  object PasswordUnset extends TopLevel[PasswordUnset with Double]
+  
+  /* 22 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
+  /* 32 */ @js.native
+  object PersistFailed extends TopLevel[PersistFailed with Double]
+  
+  /* 97 */ @js.native
+  object PhoneActivityLimitExceeded extends TopLevel[PhoneActivityLimitExceeded with Double]
+  
+  /* 84 */ @js.native
+  object RateLimitExceeded extends TopLevel[RateLimitExceeded with Double]
+  
+  /* 98 */ @js.native
+  object RefundToWallet extends TopLevel[RefundToWallet with Double]
+  
+  /* 83 */ @js.native
+  object RegionLocked extends TopLevel[RegionLocked with Double]
+  
+  /* 55 */ @js.native
+  object RemoteCallFailed extends TopLevel[RemoteCallFailed with Double]
+  
+  /* 38 */ @js.native
+  object RemoteDisconnect extends TopLevel[RemoteDisconnect with Double]
+  
+  /* 60 */ @js.native
+  object RemoteFileConflict extends TopLevel[RemoteFileConflict with Double]
+  
+  /* 77 */ @js.native
+  object RequirePasswordReEntry extends TopLevel[RequirePasswordReEntry with Double]
+  
+  /* 82 */ @js.native
+  object RestrictedDevice extends TopLevel[RestrictedDevice with Double]
+  
+  /* 26 */ @js.native
+  object Revoked extends TopLevel[Revoked with Double]
+  
+  /* 94 */ @js.native
+  object SMSCodeFailed extends TopLevel[SMSCodeFailed with Double]
+  
+  /* 62 */ @js.native
+  object SameAsPreviousValue extends TopLevel[SameAsPreviousValue with Double]
+  
+  /* 44 */ @js.native
+  object ServiceReadOnly extends TopLevel[ServiceReadOnly with Double]
+  
+  /* 20 */ @js.native
+  object ServiceUnavailable extends TopLevel[ServiceUnavailable with Double]
+  
+  /* 39 */ @js.native
+  object ShoppingCartNotFound extends TopLevel[ShoppingCartNotFound with Double]
+  
+  /* 51 */ @js.native
+  object Suspended extends TopLevel[Suspended with Double]
+  
+  /* 93 */ @js.native
+  object TimeIsOutOfSync extends TopLevel[TimeIsOutOfSync with Double]
+  
+  /* 93 */ @js.native
+  object TimeNotSynced extends TopLevel[TimeNotSynced with Double]
+  
+  /* 16 */ @js.native
+  object Timeout extends TopLevel[Timeout with Double]
+  
+  /* 95 */ @js.native
+  object TooManyAccountsAccessThisResource extends TopLevel[TooManyAccountsAccessThisResource with Double]
+  
+  /* 108 */ @js.native
+  object TooManyPending extends TopLevel[TooManyPending with Double]
+  
+  /* 48 */ @js.native
+  object TryAnotherCM extends TopLevel[TryAnotherCM with Double]
+  
+  /* 89 */ @js.native
+  object TwoFactorActivationCodeMismatch extends TopLevel[TwoFactorActivationCodeMismatch with Double]
+  
+  /* 88 */ @js.native
+  object TwoFactorCodeMismatch extends TopLevel[TwoFactorCodeMismatch with Double]
+  
+  /* 79 */ @js.native
+  object UnexpectedError extends TopLevel[UnexpectedError with Double]
+  
+  /* 78 */ @js.native
+  object ValueOutOfRange extends TopLevel[ValueOutOfRange with Double]
+  
+  /* 110 */ @js.native
+  object WGNetworkSendExceeded extends TopLevel[WGNetworkSendExceeded with Double]
+  
 }
 

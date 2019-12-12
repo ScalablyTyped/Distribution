@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_proximitybeacon"
-version := "1.0-dt-20190213Z-cd2bed"
+version := "1.0-dt-20190213Z-cb634f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

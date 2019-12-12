@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Custom
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Default
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Upgrade
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ProcessTemplateType extends js.Object {
   @js.native
   sealed trait Upgrade extends ProcessTemplateType
   
-  /* 0 */ val Custom: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Custom with Double = js.native
-  /* 1 */ val Default: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Default with Double = js.native
-  /* 2 */ val Upgrade: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.ProcessTemplateType.Upgrade with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessTemplateType with Double] = js.native
+  /* 0 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 1 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 2 */ @js.native
+  object Upgrade extends TopLevel[Upgrade with Double]
+  
 }
 

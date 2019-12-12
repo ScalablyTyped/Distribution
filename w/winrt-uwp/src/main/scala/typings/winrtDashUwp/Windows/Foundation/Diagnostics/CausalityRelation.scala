@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.assignDelegate
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.cancel
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.choice
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.error
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.join
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object CausalityRelation extends js.Object {
   @js.native
   sealed trait join extends CausalityRelation
   
-  /* 0 */ val assignDelegate: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.assignDelegate with Double = js.native
-  /* 3 */ val cancel: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.cancel with Double = js.native
-  /* 2 */ val choice: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.choice with Double = js.native
-  /* 4 */ val error: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.error with Double = js.native
-  /* 1 */ val join: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityRelation.join with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CausalityRelation with Double] = js.native
+  /* 0 */ @js.native
+  object assignDelegate extends TopLevel[assignDelegate with Double]
+  
+  /* 3 */ @js.native
+  object cancel extends TopLevel[cancel with Double]
+  
+  /* 2 */ @js.native
+  object choice extends TopLevel[choice with Double]
+  
+  /* 4 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 1 */ @js.native
+  object join extends TopLevel[join with Double]
+  
 }
 

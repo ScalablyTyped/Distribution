@@ -1,5 +1,25 @@
 package typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.canBeCompliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.compliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deFixedDataNotSupported
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deHardwareNotCompliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deOsVolumeNotProtected
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionNotYetEnabled
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionSuspended
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deWinReNotConfigured
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.fixedDataNotSupported
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.hardwareNotCompliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.lockNotConfigured
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.noFeatureLicense
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notEvaluated
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notProvisionedOnAllVolumes
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osNotProtected
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osVolumeNotProtected
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.protectionNotYetEnabled
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.protectionSuspended
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.unexpectedFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,26 +107,64 @@ object EasRequireEncryptionResult extends js.Object {
   @js.native
   sealed trait unexpectedFailure extends EasRequireEncryptionResult
   
-  /* 2 */ val canBeCompliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.canBeCompliant with Double = js.native
-  /* 1 */ val compliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.compliant with Double = js.native
-  /* 4 */ val deFixedDataNotSupported: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deFixedDataNotSupported with Double = js.native
-  /* 6 */ val deHardwareNotCompliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deHardwareNotCompliant with Double = js.native
-  /* 12 */ val deOsVolumeNotProtected: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deOsVolumeNotProtected with Double = js.native
-  /* 14 */ val deProtectionNotYetEnabled: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionNotYetEnabled with Double = js.native
-  /* 10 */ val deProtectionSuspended: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionSuspended with Double = js.native
-  /* 8 */ val deWinReNotConfigured: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deWinReNotConfigured with Double = js.native
-  /* 5 */ val fixedDataNotSupported: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.fixedDataNotSupported with Double = js.native
-  /* 7 */ val hardwareNotCompliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.hardwareNotCompliant with Double = js.native
-  /* 9 */ val lockNotConfigured: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.lockNotConfigured with Double = js.native
-  /* 16 */ val noFeatureLicense: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.noFeatureLicense with Double = js.native
-  /* 0 */ val notEvaluated: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notEvaluated with Double = js.native
-  /* 3 */ val notProvisionedOnAllVolumes: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notProvisionedOnAllVolumes with Double = js.native
-  /* 17 */ val osNotProtected: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osNotProtected with Double = js.native
-  /* 13 */ val osVolumeNotProtected: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osVolumeNotProtected with Double = js.native
-  /* 15 */ val protectionNotYetEnabled: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.protectionNotYetEnabled with Double = js.native
-  /* 11 */ val protectionSuspended: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.protectionSuspended with Double = js.native
-  /* 18 */ val unexpectedFailure: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.unexpectedFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EasRequireEncryptionResult with Double] = js.native
+  /* 2 */ @js.native
+  object canBeCompliant extends TopLevel[canBeCompliant with Double]
+  
+  /* 1 */ @js.native
+  object compliant extends TopLevel[compliant with Double]
+  
+  /* 4 */ @js.native
+  object deFixedDataNotSupported extends TopLevel[deFixedDataNotSupported with Double]
+  
+  /* 6 */ @js.native
+  object deHardwareNotCompliant extends TopLevel[deHardwareNotCompliant with Double]
+  
+  /* 12 */ @js.native
+  object deOsVolumeNotProtected extends TopLevel[deOsVolumeNotProtected with Double]
+  
+  /* 14 */ @js.native
+  object deProtectionNotYetEnabled extends TopLevel[deProtectionNotYetEnabled with Double]
+  
+  /* 10 */ @js.native
+  object deProtectionSuspended extends TopLevel[deProtectionSuspended with Double]
+  
+  /* 8 */ @js.native
+  object deWinReNotConfigured extends TopLevel[deWinReNotConfigured with Double]
+  
+  /* 5 */ @js.native
+  object fixedDataNotSupported extends TopLevel[fixedDataNotSupported with Double]
+  
+  /* 7 */ @js.native
+  object hardwareNotCompliant extends TopLevel[hardwareNotCompliant with Double]
+  
+  /* 9 */ @js.native
+  object lockNotConfigured extends TopLevel[lockNotConfigured with Double]
+  
+  /* 16 */ @js.native
+  object noFeatureLicense extends TopLevel[noFeatureLicense with Double]
+  
+  /* 0 */ @js.native
+  object notEvaluated extends TopLevel[notEvaluated with Double]
+  
+  /* 3 */ @js.native
+  object notProvisionedOnAllVolumes extends TopLevel[notProvisionedOnAllVolumes with Double]
+  
+  /* 17 */ @js.native
+  object osNotProtected extends TopLevel[osNotProtected with Double]
+  
+  /* 13 */ @js.native
+  object osVolumeNotProtected extends TopLevel[osVolumeNotProtected with Double]
+  
+  /* 15 */ @js.native
+  object protectionNotYetEnabled extends TopLevel[protectionNotYetEnabled with Double]
+  
+  /* 11 */ @js.native
+  object protectionSuspended extends TopLevel[protectionSuspended with Double]
+  
+  /* 18 */ @js.native
+  object unexpectedFailure extends TopLevel[unexpectedFailure with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.landscape
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ApplicationViewOrientation extends js.Object {
   @js.native
   sealed trait portrait extends ApplicationViewOrientation
   
-  /* 0 */ val landscape: typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.landscape with Double = js.native
-  /* 1 */ val portrait: typings.winrtDashUwp.Windows.UI.ViewManagement.ApplicationViewOrientation.portrait with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApplicationViewOrientation with Double] = js.native
+  /* 0 */ @js.native
+  object landscape extends TopLevel[landscape with Double]
+  
+  /* 1 */ @js.native
+  object portrait extends TopLevel[portrait with Double]
+  
 }
 

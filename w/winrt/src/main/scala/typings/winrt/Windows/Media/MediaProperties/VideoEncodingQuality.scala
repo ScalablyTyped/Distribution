@@ -1,5 +1,14 @@
 package typings.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.auto
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.hD1080p
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.hD720p
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.ntsc
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.pal
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.qvga
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.vga
+import typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.wvga
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object VideoEncodingQuality extends js.Object {
   @js.native
   sealed trait wvga extends VideoEncodingQuality
   
-  /* 0 */ val auto: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.auto with Double = js.native
-  /* 1 */ val hD1080p: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.hD1080p with Double = js.native
-  /* 2 */ val hD720p: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.hD720p with Double = js.native
-  /* 4 */ val ntsc: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.ntsc with Double = js.native
-  /* 5 */ val pal: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.pal with Double = js.native
-  /* 7 */ val qvga: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.qvga with Double = js.native
-  /* 6 */ val vga: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.vga with Double = js.native
-  /* 3 */ val wvga: typings.winrt.Windows.Media.MediaProperties.VideoEncodingQuality.wvga with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VideoEncodingQuality with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 1 */ @js.native
+  object hD1080p extends TopLevel[hD1080p with Double]
+  
+  /* 2 */ @js.native
+  object hD720p extends TopLevel[hD720p with Double]
+  
+  /* 4 */ @js.native
+  object ntsc extends TopLevel[ntsc with Double]
+  
+  /* 5 */ @js.native
+  object pal extends TopLevel[pal with Double]
+  
+  /* 7 */ @js.native
+  object qvga extends TopLevel[qvga with Double]
+  
+  /* 6 */ @js.native
+  object vga extends TopLevel[vga with Double]
+  
+  /* 3 */ @js.native
+  object wvga extends TopLevel[wvga with Double]
+  
 }
 

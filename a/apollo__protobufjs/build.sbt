@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo__protobufjs"
-version := "1.0.3-95b4a3"
+version := "1.0.3-6007d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

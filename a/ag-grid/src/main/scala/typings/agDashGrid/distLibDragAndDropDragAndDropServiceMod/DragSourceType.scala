@@ -1,5 +1,9 @@
 package typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.HeaderCell
+import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.RowDrag
+import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.ToolPanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object DragSourceType extends js.Object {
   @js.native
   sealed trait ToolPanel extends DragSourceType
   
-  /* 1 */ val HeaderCell: typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.HeaderCell with Double = js.native
-  /* 2 */ val RowDrag: typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.RowDrag with Double = js.native
-  /* 0 */ val ToolPanel: typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.DragSourceType.ToolPanel with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DragSourceType with Double] = js.native
+  /* 1 */ @js.native
+  object HeaderCell extends TopLevel[HeaderCell with Double]
+  
+  /* 2 */ @js.native
+  object RowDrag extends TopLevel[RowDrag with Double]
+  
+  /* 0 */ @js.native
+  object ToolPanel extends TopLevel[ToolPanel with Double]
+  
 }
 

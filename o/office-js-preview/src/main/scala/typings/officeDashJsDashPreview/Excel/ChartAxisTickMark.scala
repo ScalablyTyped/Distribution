@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.cross
+import typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.inside
+import typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.none
+import typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.outside
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ChartAxisTickMark extends js.Object {
   @js.native
   sealed trait outside extends ChartAxisTickMark
   
-  /* "Cross" */ val cross: typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.cross with String = js.native
-  /* "Inside" */ val inside: typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.inside with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.none with String = js.native
-  /* "Outside" */ val outside: typings.officeDashJsDashPreview.Excel.ChartAxisTickMark.outside with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisTickMark with String] = js.native
+  /* "Cross" */ @js.native
+  object cross extends TopLevel[cross with String]
+  
+  /* "Inside" */ @js.native
+  object inside extends TopLevel[inside with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Outside" */ @js.native
+  object outside extends TopLevel[outside with String]
+  
 }
 

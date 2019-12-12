@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.descriptive
+import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.downArrow
+import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.more
+import typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object OverflowButtonType extends js.Object {
   @js.native
   sealed trait none extends OverflowButtonType
   
-  /* 1 */ val descriptive: typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.descriptive with Double = js.native
-  /* 3 */ val downArrow: typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.downArrow with Double = js.native
-  /* 2 */ val more: typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.more with Double = js.native
-  /* 0 */ val none: typings.officeDashUiDashFabricDashReact.libComponentsFacepileFacepileDotTypesMod.OverflowButtonType.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverflowButtonType with Double] = js.native
+  /* 1 */ @js.native
+  object descriptive extends TopLevel[descriptive with Double]
+  
+  /* 3 */ @js.native
+  object downArrow extends TopLevel[downArrow with Double]
+  
+  /* 2 */ @js.native
+  object more extends TopLevel[more with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

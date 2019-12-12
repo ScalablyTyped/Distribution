@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.Input.Inking
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Input.Inking.PenTipShape.circle
+import typings.winrtDashUwp.Windows.UI.Input.Inking.PenTipShape.rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PenTipShape extends js.Object {
   @js.native
   sealed trait rectangle extends PenTipShape
   
-  /* 0 */ val circle: typings.winrtDashUwp.Windows.UI.Input.Inking.PenTipShape.circle with Double = js.native
-  /* 1 */ val rectangle: typings.winrtDashUwp.Windows.UI.Input.Inking.PenTipShape.rectangle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PenTipShape with Double] = js.native
+  /* 0 */ @js.native
+  object circle extends TopLevel[circle with Double]
+  
+  /* 1 */ @js.native
+  object rectangle extends TopLevel[rectangle with Double]
+  
 }
 

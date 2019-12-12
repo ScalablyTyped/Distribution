@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Core.AppViewBackButtonVisibility.collapsed
+import typings.winrtDashUwp.Windows.UI.Core.AppViewBackButtonVisibility.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object AppViewBackButtonVisibility extends js.Object {
   @js.native
   sealed trait visible extends AppViewBackButtonVisibility
   
-  /* 1 */ val collapsed: typings.winrtDashUwp.Windows.UI.Core.AppViewBackButtonVisibility.collapsed with Double = js.native
-  /* 0 */ val visible: typings.winrtDashUwp.Windows.UI.Core.AppViewBackButtonVisibility.visible with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppViewBackButtonVisibility with Double] = js.native
+  /* 1 */ @js.native
+  object collapsed extends TopLevel[collapsed with Double]
+  
+  /* 0 */ @js.native
+  object visible extends TopLevel[visible with Double]
+  
 }
 

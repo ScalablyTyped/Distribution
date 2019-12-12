@@ -1,5 +1,11 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.MapTypeControlStyle.DEFAULT
+import typings.googlemaps.google.maps.MapTypeControlStyle.DROPDOWN_MENU
+import typings.googlemaps.google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+import typings.googlemaps.google.maps.MapTypeControlStyle.INSET
+import typings.googlemaps.google.maps.MapTypeControlStyle.INSET_LARGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object MapTypeControlStyle extends js.Object {
   @js.native
   sealed trait INSET_LARGE extends MapTypeControlStyle
   
-  /* 0 */ val DEFAULT: typings.googlemaps.google.maps.MapTypeControlStyle.DEFAULT with Double = js.native
-  /* 2 */ val DROPDOWN_MENU: typings.googlemaps.google.maps.MapTypeControlStyle.DROPDOWN_MENU with Double = js.native
-  /* 1 */ val HORIZONTAL_BAR: typings.googlemaps.google.maps.MapTypeControlStyle.HORIZONTAL_BAR with Double = js.native
-  /* 3 */ val INSET: typings.googlemaps.google.maps.MapTypeControlStyle.INSET with Double = js.native
-  /* 4 */ val INSET_LARGE: typings.googlemaps.google.maps.MapTypeControlStyle.INSET_LARGE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MapTypeControlStyle with Double] = js.native
+  /* 0 */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with Double]
+  
+  /* 2 */ @js.native
+  object DROPDOWN_MENU extends TopLevel[DROPDOWN_MENU with Double]
+  
+  /* 1 */ @js.native
+  object HORIZONTAL_BAR extends TopLevel[HORIZONTAL_BAR with Double]
+  
+  /* 3 */ @js.native
+  object INSET extends TopLevel[INSET with Double]
+  
+  /* 4 */ @js.native
+  object INSET_LARGE extends TopLevel[INSET_LARGE with Double]
+  
 }
 

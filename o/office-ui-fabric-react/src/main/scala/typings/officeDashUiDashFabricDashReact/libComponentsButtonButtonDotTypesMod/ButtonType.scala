@@ -1,5 +1,13 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.command
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.compound
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.default
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.hero
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.icon
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.normal
+import typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.primary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object ButtonType extends js.Object {
   @js.native
   sealed trait primary extends ButtonType
   
-  /* 4 */ val command: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.command with Double = js.native
-  /* 3 */ val compound: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.compound with Double = js.native
-  /* 6 */ val default: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.default with Double = js.native
-  /* 2 */ val hero: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.hero with Double = js.native
-  /* 5 */ val icon: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.icon with Double = js.native
-  /* 0 */ val normal: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.normal with Double = js.native
-  /* 1 */ val primary: typings.officeDashUiDashFabricDashReact.libComponentsButtonButtonDotTypesMod.ButtonType.primary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ButtonType with Double] = js.native
+  /* 4 */ @js.native
+  object command extends TopLevel[command with Double]
+  
+  /* 3 */ @js.native
+  object compound extends TopLevel[compound with Double]
+  
+  /* 6 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object hero extends TopLevel[hero with Double]
+  
+  /* 5 */ @js.native
+  object icon extends TopLevel[icon with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 1 */ @js.native
+  object primary extends TopLevel[primary with Double]
+  
 }
 

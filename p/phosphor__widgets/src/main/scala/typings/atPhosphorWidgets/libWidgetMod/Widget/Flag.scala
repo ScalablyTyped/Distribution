@@ -1,5 +1,11 @@
 package typings.atPhosphorWidgets.libWidgetMod.Widget
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.DisallowLayout
+import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsAttached
+import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsDisposed
+import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsHidden
+import typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,12 +49,22 @@ object Flag extends js.Object {
   @js.native
   sealed trait IsVisible extends Flag
   
-  /* 16 */ val DisallowLayout: typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.DisallowLayout with Double = js.native
-  /* 2 */ val IsAttached: typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsAttached with Double = js.native
-  /* 1 */ val IsDisposed: typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsDisposed with Double = js.native
-  /* 4 */ val IsHidden: typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsHidden with Double = js.native
-  /* 8 */ val IsVisible: typings.atPhosphorWidgets.libWidgetMod.Widget.Flag.IsVisible with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Flag with Double] = js.native
+  /* 16 */ @js.native
+  object DisallowLayout extends TopLevel[DisallowLayout with Double]
+  
+  /* 2 */ @js.native
+  object IsAttached extends TopLevel[IsAttached with Double]
+  
+  /* 1 */ @js.native
+  object IsDisposed extends TopLevel[IsDisposed with Double]
+  
+  /* 4 */ @js.native
+  object IsHidden extends TopLevel[IsHidden with Double]
+  
+  /* 8 */ @js.native
+  object IsVisible extends TopLevel[IsVisible with Double]
+  
 }
 

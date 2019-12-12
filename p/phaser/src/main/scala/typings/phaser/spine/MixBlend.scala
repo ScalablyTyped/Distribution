@@ -1,5 +1,10 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.TopLevel
+import typings.phaser.spine.MixBlend.add
+import typings.phaser.spine.MixBlend.first
+import typings.phaser.spine.MixBlend.replace
+import typings.phaser.spine.MixBlend.setup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object MixBlend extends js.Object {
   @js.native
   sealed trait setup extends MixBlend
   
-  /* 3 */ val add: typings.phaser.spine.MixBlend.add with Double = js.native
-  /* 1 */ val first: typings.phaser.spine.MixBlend.first with Double = js.native
-  /* 2 */ val replace: typings.phaser.spine.MixBlend.replace with Double = js.native
-  /* 0 */ val setup: typings.phaser.spine.MixBlend.setup with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MixBlend with Double] = js.native
+  /* 3 */ @js.native
+  object add extends TopLevel[add with Double]
+  
+  /* 1 */ @js.native
+  object first extends TopLevel[first with Double]
+  
+  /* 2 */ @js.native
+  object replace extends TopLevel[replace with Double]
+  
+  /* 0 */ @js.native
+  object setup extends TopLevel[setup with Double]
+  
 }
 

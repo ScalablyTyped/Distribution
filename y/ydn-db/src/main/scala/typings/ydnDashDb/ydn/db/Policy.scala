@@ -1,5 +1,11 @@
 package typings.ydnDashDb.ydn.db
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ydnDashDb.ydn.db.Policy.all
+import typings.ydnDashDb.ydn.db.Policy.atomic
+import typings.ydnDashDb.ydn.db.Policy.multi
+import typings.ydnDashDb.ydn.db.Policy.repeat
+import typings.ydnDashDb.ydn.db.Policy.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Policy extends js.Object {
   @js.native
   sealed trait single extends Policy
   
-  /* 0 */ val all: typings.ydnDashDb.ydn.db.Policy.all with Double = js.native
-  /* 1 */ val atomic: typings.ydnDashDb.ydn.db.Policy.atomic with Double = js.native
-  /* 2 */ val multi: typings.ydnDashDb.ydn.db.Policy.multi with Double = js.native
-  /* 3 */ val repeat: typings.ydnDashDb.ydn.db.Policy.repeat with Double = js.native
-  /* 4 */ val single: typings.ydnDashDb.ydn.db.Policy.single with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Policy with Double] = js.native
+  /* 0 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 1 */ @js.native
+  object atomic extends TopLevel[atomic with Double]
+  
+  /* 2 */ @js.native
+  object multi extends TopLevel[multi with Double]
+  
+  /* 3 */ @js.native
+  object repeat extends TopLevel[repeat with Double]
+  
+  /* 4 */ @js.native
+  object single extends TopLevel[single with Double]
+  
 }
 

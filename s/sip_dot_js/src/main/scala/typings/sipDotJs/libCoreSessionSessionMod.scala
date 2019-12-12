@@ -1,5 +1,6 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libCoreMessagesBodyMod.Body
 import typings.sipDotJs.libCoreMessagesMethodsByeMod.OutgoingByeRequest
 import typings.sipDotJs.libCoreMessagesMethodsInfoMod.OutgoingInfoRequest
@@ -13,7 +14,16 @@ import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDel
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.RequestOptions
 import typings.sipDotJs.libCoreSessionSessionDashDelegateMod.SessionDelegate
 import typings.sipDotJs.libCoreSessionSessionMod.SessionState
+import typings.sipDotJs.libCoreSessionSessionMod.SessionState.AckWait
+import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Confirmed
+import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Early
+import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Initial
+import typings.sipDotJs.libCoreSessionSessionMod.SessionState.Terminated
 import typings.sipDotJs.libCoreSessionSessionMod.SignalingState
+import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Closed
+import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveLocalOffer
+import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveRemoteOffer
+import typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Stable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -128,13 +138,23 @@ object libCoreSessionSessionMod extends js.Object {
     @js.native
     sealed trait Terminated extends SessionState
     
-    /* "AckWait" */ val AckWait: typings.sipDotJs.libCoreSessionSessionMod.SessionState.AckWait with String = js.native
-    /* "Confirmed" */ val Confirmed: typings.sipDotJs.libCoreSessionSessionMod.SessionState.Confirmed with String = js.native
-    /* "Early" */ val Early: typings.sipDotJs.libCoreSessionSessionMod.SessionState.Early with String = js.native
-    /* "Initial" */ val Initial: typings.sipDotJs.libCoreSessionSessionMod.SessionState.Initial with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libCoreSessionSessionMod.SessionState.Terminated with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    /* "AckWait" */ @js.native
+    object AckWait extends TopLevel[AckWait with String]
+    
+    /* "Confirmed" */ @js.native
+    object Confirmed extends TopLevel[Confirmed with String]
+    
+    /* "Early" */ @js.native
+    object Early extends TopLevel[Early with String]
+    
+    /* "Initial" */ @js.native
+    object Initial extends TopLevel[Initial with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
   }
   
   @js.native
@@ -154,13 +174,24 @@ object libCoreSessionSessionMod extends js.Object {
     @js.native
     sealed trait Stable extends SignalingState
     
-    /* "Closed" */ val Closed: typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Closed with String = js.native
-    /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveLocalOffer with String = js.native
-    /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipDotJs.libCoreSessionSessionMod.SignalingState.HaveRemoteOffer with String = js.native
-    /* "Initial" */ val Initial: typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Initial with String = js.native
-    /* "Stable" */ val Stable: typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Stable with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SignalingState with String] = js.native
+    /* "Closed" */ @js.native
+    object Closed extends TopLevel[Closed with String]
+    
+    /* "HaveLocalOffer" */ @js.native
+    object HaveLocalOffer extends TopLevel[HaveLocalOffer with String]
+    
+    /* "HaveRemoteOffer" */ @js.native
+    object HaveRemoteOffer extends TopLevel[HaveRemoteOffer with String]
+    
+    /* "Initial" */ @js.native
+    object Initial
+      extends TopLevel[typings.sipDotJs.libCoreSessionSessionMod.SignalingState.Initial with String]
+    
+    /* "Stable" */ @js.native
+    object Stable extends TopLevel[Stable with String]
+    
   }
   
 }

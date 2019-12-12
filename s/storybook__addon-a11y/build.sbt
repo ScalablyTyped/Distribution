@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-a11y"
-version := "5.2.6-7944a5"
+version := "5.2.6-489761"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "storybook__api" % "5.2.6-def4ec",
+  "org.scalablytyped" %%% "storybook__api" % "5.2.6-1da756",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.6-06fa66",
   "org.scalablytyped" %%% "storybook__theming" % "5.2.6-9ccce3")
 publishArtifact in packageDoc := false

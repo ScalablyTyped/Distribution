@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.System.UserProfile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.changeDisabled
+import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.success
+import typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object SetImageFeedResult extends js.Object {
   @js.native
   sealed trait userCanceled extends SetImageFeedResult
   
-  /* 1 */ val changeDisabled: typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.changeDisabled with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.success with Double = js.native
-  /* 2 */ val userCanceled: typings.winrtDashUwp.Windows.System.UserProfile.SetImageFeedResult.userCanceled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SetImageFeedResult with Double] = js.native
+  /* 1 */ @js.native
+  object changeDisabled extends TopLevel[changeDisabled with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 2 */ @js.native
+  object userCanceled extends TopLevel[userCanceled with Double]
+  
 }
 

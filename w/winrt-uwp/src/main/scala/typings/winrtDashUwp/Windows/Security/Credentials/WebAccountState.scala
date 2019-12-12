@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.connected
+import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.error
+import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object WebAccountState extends js.Object {
   @js.native
   sealed trait none extends WebAccountState
   
-  /* 1 */ val connected: typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.connected with Double = js.native
-  /* 2 */ val error: typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.error with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Security.Credentials.WebAccountState.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAccountState with Double] = js.native
+  /* 1 */ @js.native
+  object connected extends TopLevel[connected with Double]
+  
+  /* 2 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

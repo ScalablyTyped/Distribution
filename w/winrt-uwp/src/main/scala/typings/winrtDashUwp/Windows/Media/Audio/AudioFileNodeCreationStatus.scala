@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.fileNotFound
+import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.formatNotSupported
+import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.invalidFileType
+import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.success
+import typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AudioFileNodeCreationStatus extends js.Object {
   @js.native
   sealed trait unknownFailure extends AudioFileNodeCreationStatus
   
-  /* 1 */ val fileNotFound: typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.fileNotFound with Double = js.native
-  /* 3 */ val formatNotSupported: typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.formatNotSupported with Double = js.native
-  /* 2 */ val invalidFileType: typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.invalidFileType with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.success with Double = js.native
-  /* 4 */ val unknownFailure: typings.winrtDashUwp.Windows.Media.Audio.AudioFileNodeCreationStatus.unknownFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioFileNodeCreationStatus with Double] = js.native
+  /* 1 */ @js.native
+  object fileNotFound extends TopLevel[fileNotFound with Double]
+  
+  /* 3 */ @js.native
+  object formatNotSupported extends TopLevel[formatNotSupported with Double]
+  
+  /* 2 */ @js.native
+  object invalidFileType extends TopLevel[invalidFileType with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 4 */ @js.native
+  object unknownFailure extends TopLevel[unknownFailure with Double]
+  
 }
 

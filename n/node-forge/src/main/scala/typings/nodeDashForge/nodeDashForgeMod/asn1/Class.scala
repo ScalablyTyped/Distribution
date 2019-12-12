@@ -1,5 +1,10 @@
 package typings.nodeDashForge.nodeDashForgeMod.asn1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.APPLICATION
+import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.CONTEXT_SPECIFIC
+import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.PRIVATE
+import typings.nodeDashForge.nodeDashForgeMod.asn1.Class.UNIVERSAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Class extends js.Object {
   @js.native
   sealed trait UNIVERSAL extends Class
   
-  /* 0x40 */ val APPLICATION: typings.nodeDashForge.nodeDashForgeMod.asn1.Class.APPLICATION with Double = js.native
-  /* 0x80 */ val CONTEXT_SPECIFIC: typings.nodeDashForge.nodeDashForgeMod.asn1.Class.CONTEXT_SPECIFIC with Double = js.native
-  /* 0xC0 */ val PRIVATE: typings.nodeDashForge.nodeDashForgeMod.asn1.Class.PRIVATE with Double = js.native
-  /* 0x00 */ val UNIVERSAL: typings.nodeDashForge.nodeDashForgeMod.asn1.Class.UNIVERSAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Class with Double] = js.native
+  /* 0x40 */ @js.native
+  object APPLICATION extends TopLevel[APPLICATION with Double]
+  
+  /* 0x80 */ @js.native
+  object CONTEXT_SPECIFIC extends TopLevel[CONTEXT_SPECIFIC with Double]
+  
+  /* 0xC0 */ @js.native
+  object PRIVATE extends TopLevel[PRIVATE with Double]
+  
+  /* 0x00 */ @js.native
+  object UNIVERSAL extends TopLevel[UNIVERSAL with Double]
+  
 }
 

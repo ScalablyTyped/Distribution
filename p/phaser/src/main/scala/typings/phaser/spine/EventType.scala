@@ -1,5 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.TopLevel
+import typings.phaser.spine.EventType.complete
+import typings.phaser.spine.EventType.dispose
+import typings.phaser.spine.EventType.end
+import typings.phaser.spine.EventType.event
+import typings.phaser.spine.EventType.interrupt
+import typings.phaser.spine.EventType.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object EventType extends js.Object {
   @js.native
   sealed trait start extends EventType
   
-  /* 4 */ val complete: typings.phaser.spine.EventType.complete with Double = js.native
-  /* 3 */ val dispose: typings.phaser.spine.EventType.dispose with Double = js.native
-  /* 2 */ val end: typings.phaser.spine.EventType.end with Double = js.native
-  /* 5 */ val event: typings.phaser.spine.EventType.event with Double = js.native
-  /* 1 */ val interrupt: typings.phaser.spine.EventType.interrupt with Double = js.native
-  /* 0 */ val start: typings.phaser.spine.EventType.start with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+  /* 4 */ @js.native
+  object complete extends TopLevel[complete with Double]
+  
+  /* 3 */ @js.native
+  object dispose extends TopLevel[dispose with Double]
+  
+  /* 2 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 5 */ @js.native
+  object event extends TopLevel[event with Double]
+  
+  /* 1 */ @js.native
+  object interrupt extends TopLevel[interrupt with Double]
+  
+  /* 0 */ @js.native
+  object start extends TopLevel[start with Double]
+  
 }
 

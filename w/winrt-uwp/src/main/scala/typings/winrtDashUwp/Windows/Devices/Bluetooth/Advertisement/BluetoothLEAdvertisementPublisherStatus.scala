@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.aborted
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.created
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.started
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.stopped
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.stopping
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.waiting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object BluetoothLEAdvertisementPublisherStatus extends js.Object {
   @js.native
   sealed trait waiting extends BluetoothLEAdvertisementPublisherStatus
   
-  /* 5 */ val aborted: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.aborted with Double = js.native
-  /* 0 */ val created: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.created with Double = js.native
-  /* 2 */ val started: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.started with Double = js.native
-  /* 4 */ val stopped: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.stopped with Double = js.native
-  /* 3 */ val stopping: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.stopping with Double = js.native
-  /* 1 */ val waiting: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus.waiting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementPublisherStatus with Double] = js.native
+  /* 5 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 0 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 2 */ @js.native
+  object started extends TopLevel[started with Double]
+  
+  /* 4 */ @js.native
+  object stopped extends TopLevel[stopped with Double]
+  
+  /* 3 */ @js.native
+  object stopping extends TopLevel[stopping with Double]
+  
+  /* 1 */ @js.native
+  object waiting extends TopLevel[waiting with Double]
+  
 }
 

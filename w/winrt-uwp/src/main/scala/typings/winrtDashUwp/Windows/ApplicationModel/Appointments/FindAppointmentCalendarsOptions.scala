@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.FindAppointmentCalendarsOptions.includeHidden
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.FindAppointmentCalendarsOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object FindAppointmentCalendarsOptions extends js.Object {
   @js.native
   sealed trait none extends FindAppointmentCalendarsOptions
   
-  /* 1 */ val includeHidden: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.FindAppointmentCalendarsOptions.includeHidden with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.FindAppointmentCalendarsOptions.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FindAppointmentCalendarsOptions with Double] = js.native
+  /* 1 */ @js.native
+  object includeHidden extends TopLevel[includeHidden with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

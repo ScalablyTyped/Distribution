@@ -1,5 +1,10 @@
 package typings.sharepoint.SP.Publishing.Navigation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.inheritFromParentWeb
+import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.portalProvider
+import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.taxonomyProvider
+import typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object StandardNavigationSource extends js.Object {
   @js.native
   sealed trait unknown extends StandardNavigationSource
   
-  /* 3 */ val inheritFromParentWeb: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.inheritFromParentWeb with Double = js.native
-  /* 1 */ val portalProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.portalProvider with Double = js.native
-  /* 2 */ val taxonomyProvider: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.taxonomyProvider with Double = js.native
-  /* 0 */ val unknown: typings.sharepoint.SP.Publishing.Navigation.StandardNavigationSource.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StandardNavigationSource with Double] = js.native
+  /* 3 */ @js.native
+  object inheritFromParentWeb extends TopLevel[inheritFromParentWeb with Double]
+  
+  /* 1 */ @js.native
+  object portalProvider extends TopLevel[portalProvider with Double]
+  
+  /* 2 */ @js.native
+  object taxonomyProvider extends TopLevel[taxonomyProvider with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

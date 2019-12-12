@@ -1,5 +1,15 @@
 package typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.ERROR
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOG
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGIN
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGOUT
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_START
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_STOP
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.REFRESH_TOKEN_SET
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_INVALID
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object EventTypes extends js.Object {
   @js.native
   sealed trait TOKEN_SET extends EventTypes
   
-  /* 2 */ val ERROR: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.ERROR with Double = js.native
-  /* 4 */ val LOG: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOG with Double = js.native
-  /* 5 */ val LOGIN: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGIN with Double = js.native
-  /* 6 */ val LOGOUT: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.LOGOUT with Double = js.native
-  /* 1 */ val RECORD_START: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_START with Double = js.native
-  /* 0 */ val RECORD_STOP: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.RECORD_STOP with Double = js.native
-  /* 8 */ val REFRESH_TOKEN_SET: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.REFRESH_TOKEN_SET with Double = js.native
-  /* 3 */ val TOKEN_INVALID: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_INVALID with Double = js.native
-  /* 7 */ val TOKEN_SET: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.EventTypes.TOKEN_SET with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventTypes with Double] = js.native
+  /* 2 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 4 */ @js.native
+  object LOG extends TopLevel[LOG with Double]
+  
+  /* 5 */ @js.native
+  object LOGIN extends TopLevel[LOGIN with Double]
+  
+  /* 6 */ @js.native
+  object LOGOUT extends TopLevel[LOGOUT with Double]
+  
+  /* 1 */ @js.native
+  object RECORD_START extends TopLevel[RECORD_START with Double]
+  
+  /* 0 */ @js.native
+  object RECORD_STOP extends TopLevel[RECORD_STOP with Double]
+  
+  /* 8 */ @js.native
+  object REFRESH_TOKEN_SET extends TopLevel[REFRESH_TOKEN_SET with Double]
+  
+  /* 3 */ @js.native
+  object TOKEN_INVALID extends TopLevel[TOKEN_INVALID with Double]
+  
+  /* 7 */ @js.native
+  object TOKEN_SET extends TopLevel[TOKEN_SET with Double]
+  
 }
 

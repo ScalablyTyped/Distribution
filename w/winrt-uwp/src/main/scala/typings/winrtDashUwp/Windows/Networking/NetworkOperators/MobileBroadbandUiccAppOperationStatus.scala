@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.accessConditionNotHeld
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.invalidUiccFilePath
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.success
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.uiccBusy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MobileBroadbandUiccAppOperationStatus extends js.Object {
   @js.native
   sealed trait uiccBusy extends MobileBroadbandUiccAppOperationStatus
   
-  /* 2 */ val accessConditionNotHeld: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.accessConditionNotHeld with Double = js.native
-  /* 1 */ val invalidUiccFilePath: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.invalidUiccFilePath with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.success with Double = js.native
-  /* 3 */ val uiccBusy: typings.winrtDashUwp.Windows.Networking.NetworkOperators.MobileBroadbandUiccAppOperationStatus.uiccBusy with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MobileBroadbandUiccAppOperationStatus with Double] = js.native
+  /* 2 */ @js.native
+  object accessConditionNotHeld extends TopLevel[accessConditionNotHeld with Double]
+  
+  /* 1 */ @js.native
+  object invalidUiccFilePath extends TopLevel[invalidUiccFilePath with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 3 */ @js.native
+  object uiccBusy extends TopLevel[uiccBusy with Double]
+  
 }
 

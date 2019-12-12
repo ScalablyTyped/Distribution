@@ -1,5 +1,11 @@
 package typings.ngDashCordova.ngCordova
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultDark
+import typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultLight
+import typings.ngDashCordova.ngCordova.AndroidTheme.HoloDark
+import typings.ngDashCordova.ngCordova.AndroidTheme.HoloLight
+import typings.ngDashCordova.ngCordova.AndroidTheme.Traditional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object AndroidTheme extends js.Object {
   @js.native
   sealed trait Traditional extends AndroidTheme
   
-  /* 4 */ val DeviceDefaultDark: typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultDark with Double = js.native
-  /* 5 */ val DeviceDefaultLight: typings.ngDashCordova.ngCordova.AndroidTheme.DeviceDefaultLight with Double = js.native
-  /* 2 */ val HoloDark: typings.ngDashCordova.ngCordova.AndroidTheme.HoloDark with Double = js.native
-  /* 3 */ val HoloLight: typings.ngDashCordova.ngCordova.AndroidTheme.HoloLight with Double = js.native
-  /* 1 */ val Traditional: typings.ngDashCordova.ngCordova.AndroidTheme.Traditional with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AndroidTheme with Double] = js.native
+  /* 4 */ @js.native
+  object DeviceDefaultDark extends TopLevel[DeviceDefaultDark with Double]
+  
+  /* 5 */ @js.native
+  object DeviceDefaultLight extends TopLevel[DeviceDefaultLight with Double]
+  
+  /* 2 */ @js.native
+  object HoloDark extends TopLevel[HoloDark with Double]
+  
+  /* 3 */ @js.native
+  object HoloLight extends TopLevel[HoloLight with Double]
+  
+  /* 1 */ @js.native
+  object Traditional extends TopLevel[Traditional with Double]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IgnoreConstraints
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeAll
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeChildren
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeSelf
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeSubTree
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,13 +50,25 @@ object ContributionQueryOptions extends js.Object {
   @js.native
   sealed trait None extends ContributionQueryOptions
   
-  /* 256 */ val IgnoreConstraints: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IgnoreConstraints with Double = js.native
-  /* 112 */ val IncludeAll: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeAll with Double = js.native
-  /* 32 */ val IncludeChildren: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeChildren with Double = js.native
-  /* 16 */ val IncludeSelf: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeSelf with Double = js.native
-  /* 96 */ val IncludeSubTree: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.IncludeSubTree with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContributionQueryOptions with Double] = js.native
+  /* 256 */ @js.native
+  object IgnoreConstraints extends TopLevel[IgnoreConstraints with Double]
+  
+  /* 112 */ @js.native
+  object IncludeAll extends TopLevel[IncludeAll with Double]
+  
+  /* 32 */ @js.native
+  object IncludeChildren extends TopLevel[IncludeChildren with Double]
+  
+  /* 16 */ @js.native
+  object IncludeSelf extends TopLevel[IncludeSelf with Double]
+  
+  /* 96 */ @js.native
+  object IncludeSubTree extends TopLevel[IncludeSubTree with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

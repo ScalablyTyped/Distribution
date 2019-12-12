@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Utilities.PrincipalSource.all
+import typings.sharepoint.SP.Utilities.PrincipalSource.membershipProvider
+import typings.sharepoint.SP.Utilities.PrincipalSource.none
+import typings.sharepoint.SP.Utilities.PrincipalSource.roleProvider
+import typings.sharepoint.SP.Utilities.PrincipalSource.userInfoList
+import typings.sharepoint.SP.Utilities.PrincipalSource.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object PrincipalSource extends js.Object {
   @js.native
   sealed trait windows extends PrincipalSource
   
-  /* 5 */ val all: typings.sharepoint.SP.Utilities.PrincipalSource.all with Double = js.native
-  /* 3 */ val membershipProvider: typings.sharepoint.SP.Utilities.PrincipalSource.membershipProvider with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.Utilities.PrincipalSource.none with Double = js.native
-  /* 4 */ val roleProvider: typings.sharepoint.SP.Utilities.PrincipalSource.roleProvider with Double = js.native
-  /* 1 */ val userInfoList: typings.sharepoint.SP.Utilities.PrincipalSource.userInfoList with Double = js.native
-  /* 2 */ val windows: typings.sharepoint.SP.Utilities.PrincipalSource.windows with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrincipalSource with Double] = js.native
+  /* 5 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 3 */ @js.native
+  object membershipProvider extends TopLevel[membershipProvider with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 4 */ @js.native
+  object roleProvider extends TopLevel[roleProvider with Double]
+  
+  /* 1 */ @js.native
+  object userInfoList extends TopLevel[userInfoList with Double]
+  
+  /* 2 */ @js.native
+  object windows extends TopLevel[windows with Double]
+  
 }
 

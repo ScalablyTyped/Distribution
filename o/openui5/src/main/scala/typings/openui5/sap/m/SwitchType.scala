@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.SwitchType.AcceptReject
+import typings.openui5.sap.m.SwitchType.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SwitchType extends js.Object {
   @js.native
   sealed trait Default extends SwitchType
   
-  /* 0 */ val AcceptReject: typings.openui5.sap.m.SwitchType.AcceptReject with Double = js.native
-  /* 1 */ val Default: typings.openui5.sap.m.SwitchType.Default with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SwitchType with Double] = js.native
+  /* 0 */ @js.native
+  object AcceptReject extends TopLevel[AcceptReject with Double]
+  
+  /* 1 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
 }
 

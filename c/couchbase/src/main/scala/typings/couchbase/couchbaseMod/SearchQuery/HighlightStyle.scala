@@ -1,5 +1,9 @@
 package typings.couchbase.couchbaseMod.SearchQuery
 
+import org.scalablytyped.runtime.TopLevel
+import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.ANSI
+import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.DEFAULT
+import typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.HTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object HighlightStyle extends js.Object {
   @js.native
   sealed trait HTML extends HighlightStyle
   
-  /* 2 */ val ANSI: typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.ANSI with Double = js.native
-  /* 0 */ val DEFAULT: typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.DEFAULT with Double = js.native
-  /* 1 */ val HTML: typings.couchbase.couchbaseMod.SearchQuery.HighlightStyle.HTML with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HighlightStyle with Double] = js.native
+  /* 2 */ @js.native
+  object ANSI extends TopLevel[ANSI with Double]
+  
+  /* 0 */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with Double]
+  
+  /* 1 */ @js.native
+  object HTML extends TopLevel[HTML with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.General
+import typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.TrySimple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object BindingForm extends js.Object {
   @js.native
   sealed trait TrySimple extends BindingForm
   
-  /* 0 */ val General: typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.General with Double = js.native
-  /* 1 */ val TrySimple: typings.atAngularCompiler.srcCompilerUnderscoreUtilExpressionUnderscoreConverterMod.BindingForm.TrySimple with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BindingForm with Double] = js.native
+  /* 0 */ @js.native
+  object General extends TopLevel[General with Double]
+  
+  /* 1 */ @js.native
+  object TrySimple extends TopLevel[TrySimple with Double]
+  
 }
 

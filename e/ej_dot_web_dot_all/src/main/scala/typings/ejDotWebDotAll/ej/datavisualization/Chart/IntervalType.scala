@@ -1,5 +1,13 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Days
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Hours
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Milliseconds
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Minutes
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Months
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Seconds
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +46,28 @@ object IntervalType extends js.Object {
   @js.native
   sealed trait Years extends IntervalType
   
-  /* 0 */ val Days: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Days with Double = js.native
-  /* 1 */ val Hours: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Hours with Double = js.native
-  /* 3 */ val Milliseconds: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Milliseconds with Double = js.native
-  /* 4 */ val Minutes: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Minutes with Double = js.native
-  /* 5 */ val Months: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Months with Double = js.native
-  /* 2 */ val Seconds: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Seconds with Double = js.native
-  /* 6 */ val Years: typings.ejDotWebDotAll.ej.datavisualization.Chart.IntervalType.Years with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IntervalType with Double] = js.native
+  /* 0 */ @js.native
+  object Days extends TopLevel[Days with Double]
+  
+  /* 1 */ @js.native
+  object Hours extends TopLevel[Hours with Double]
+  
+  /* 3 */ @js.native
+  object Milliseconds extends TopLevel[Milliseconds with Double]
+  
+  /* 4 */ @js.native
+  object Minutes extends TopLevel[Minutes with Double]
+  
+  /* 5 */ @js.native
+  object Months extends TopLevel[Months with Double]
+  
+  /* 2 */ @js.native
+  object Seconds extends TopLevel[Seconds with Double]
+  
+  /* 6 */ @js.native
+  object Years extends TopLevel[Years with Double]
+  
 }
 

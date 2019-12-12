@@ -1,5 +1,10 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.compression.bzip2
+import typings.openpgp.openpgpMod.enums.compression.uncompressed
+import typings.openpgp.openpgpMod.enums.compression.zip
+import typings.openpgp.openpgpMod.enums.compression.zlib
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,11 +36,19 @@ object compression extends js.Object {
   @js.native
   sealed trait zlib extends compression
   
-  /* 3 */ val bzip2: typings.openpgp.openpgpMod.enums.compression.bzip2 with Double = js.native
-  /* 0 */ val uncompressed: typings.openpgp.openpgpMod.enums.compression.uncompressed with Double = js.native
-  /* 1 */ val zip: typings.openpgp.openpgpMod.enums.compression.zip with Double = js.native
-  /* 2 */ val zlib: typings.openpgp.openpgpMod.enums.compression.zlib with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[compression with Double] = js.native
+  /* 3 */ @js.native
+  object bzip2 extends TopLevel[bzip2 with Double]
+  
+  /* 0 */ @js.native
+  object uncompressed extends TopLevel[uncompressed with Double]
+  
+  /* 1 */ @js.native
+  object zip extends TopLevel[zip with Double]
+  
+  /* 2 */ @js.native
+  object zlib extends TopLevel[zlib with Double]
+  
 }
 

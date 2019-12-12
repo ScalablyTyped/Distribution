@@ -1,5 +1,8 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyActive
+import typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyDisabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ReadOnlyActiveState extends js.Object {
   @js.native
   sealed trait ReadOnlyDisabled extends ReadOnlyActiveState
   
-  /* 0 */ val ReadOnlyActive: typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyActive with Double = js.native
-  /* 1 */ val ReadOnlyDisabled: typings.sharepoint.SP.JsGrid.ReadOnlyActiveState.ReadOnlyDisabled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReadOnlyActiveState with Double] = js.native
+  /* 0 */ @js.native
+  object ReadOnlyActive extends TopLevel[ReadOnlyActive with Double]
+  
+  /* 1 */ @js.native
+  object ReadOnlyDisabled extends TopLevel[ReadOnlyDisabled with Double]
+  
 }
 

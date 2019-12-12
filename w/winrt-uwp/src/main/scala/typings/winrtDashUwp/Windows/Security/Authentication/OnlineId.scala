@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.AsyncActionCompletedHandler
 import typings.winrtDashUwp.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrtDashUwp.Windows.Foundation.AsyncStatus
@@ -9,6 +10,9 @@ import typings.winrtDashUwp.Windows.Foundation.IAsyncAction
 import typings.winrtDashUwp.Windows.Foundation.IAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithOperation
 import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType
+import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt
+import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded
+import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials
 import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket
 import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest
 import typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.SignOutUserOperation
@@ -170,11 +174,17 @@ object OnlineId extends js.Object {
     @js.native
     sealed trait retypeCredentials extends CredentialPromptType
     
-    /* 2 */ val doNotPrompt: typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.doNotPrompt with Double = js.native
-    /* 0 */ val promptIfNeeded: typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.promptIfNeeded with Double = js.native
-    /* 1 */ val retypeCredentials: typings.winrtDashUwp.Windows.Security.Authentication.OnlineId.CredentialPromptType.retypeCredentials with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CredentialPromptType with Double] = js.native
+    /* 2 */ @js.native
+    object doNotPrompt extends TopLevel[doNotPrompt with Double]
+    
+    /* 0 */ @js.native
+    object promptIfNeeded extends TopLevel[promptIfNeeded with Double]
+    
+    /* 1 */ @js.native
+    object retypeCredentials extends TopLevel[retypeCredentials with Double]
+    
   }
   
 }

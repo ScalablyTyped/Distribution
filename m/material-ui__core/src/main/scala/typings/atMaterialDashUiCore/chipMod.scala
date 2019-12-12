@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.chipChipMod.ChipProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object chipMod extends js.Object {
     def this(props: ChipProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ChipProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ChipProps]]
+  
 }
 

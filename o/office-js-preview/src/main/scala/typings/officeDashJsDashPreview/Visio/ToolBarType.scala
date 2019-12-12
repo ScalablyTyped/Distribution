@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Visio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Visio.ToolBarType.commandBar
+import typings.officeDashJsDashPreview.Visio.ToolBarType.pageNavigationBar
+import typings.officeDashJsDashPreview.Visio.ToolBarType.statusBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object ToolBarType extends js.Object {
   @js.native
   sealed trait statusBar extends ToolBarType
   
-  /* "CommandBar" */ val commandBar: typings.officeDashJsDashPreview.Visio.ToolBarType.commandBar with String = js.native
-  /* "PageNavigationBar" */ val pageNavigationBar: typings.officeDashJsDashPreview.Visio.ToolBarType.pageNavigationBar with String = js.native
-  /* "StatusBar" */ val statusBar: typings.officeDashJsDashPreview.Visio.ToolBarType.statusBar with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ToolBarType with String] = js.native
+  /* "CommandBar" */ @js.native
+  object commandBar extends TopLevel[commandBar with String]
+  
+  /* "PageNavigationBar" */ @js.native
+  object pageNavigationBar extends TopLevel[pageNavigationBar with String]
+  
+  /* "StatusBar" */ @js.native
+  object statusBar extends TopLevel[statusBar with String]
+  
 }
 

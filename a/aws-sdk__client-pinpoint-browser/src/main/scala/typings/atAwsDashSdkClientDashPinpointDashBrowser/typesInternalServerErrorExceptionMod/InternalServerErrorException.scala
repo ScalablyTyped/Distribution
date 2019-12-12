@@ -72,11 +72,11 @@ import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateGcmChannelEx
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSegmentExceptionsUnionMod.UpdateSegmentExceptionsUnion
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InternalServerErrorException
   extends ServiceException[_InternalServerErrorExceptionDetails]
      with CreateAppExceptionsUnion
@@ -151,21 +151,6 @@ trait InternalServerErrorException
      with UpdateSegmentExceptionsUnion
      with UpdateSmsChannelExceptionsUnion {
   @JSName("name")
-  var name_InternalServerErrorException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.InternalServerErrorException
-}
-
-object InternalServerErrorException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InternalServerErrorExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.InternalServerErrorException,
-    stack: String = null
-  ): InternalServerErrorException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InternalServerErrorException]
-  }
+  var name_InternalServerErrorException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.InternalServerErrorException = js.native
 }
 

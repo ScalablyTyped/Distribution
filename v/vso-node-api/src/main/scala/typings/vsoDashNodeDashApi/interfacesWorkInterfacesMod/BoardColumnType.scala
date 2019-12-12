@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.InProgress
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Incoming
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Outgoing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BoardColumnType extends js.Object {
   @js.native
   sealed trait Outgoing extends BoardColumnType
   
-  /* 1 */ val InProgress: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.InProgress with Double = js.native
-  /* 0 */ val Incoming: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Incoming with Double = js.native
-  /* 2 */ val Outgoing: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.BoardColumnType.Outgoing with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BoardColumnType with Double] = js.native
+  /* 1 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 0 */ @js.native
+  object Incoming extends TopLevel[Incoming with Double]
+  
+  /* 2 */ @js.native
+  object Outgoing extends TopLevel[Outgoing with Double]
+  
 }
 

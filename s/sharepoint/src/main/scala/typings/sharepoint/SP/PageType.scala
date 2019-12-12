@@ -1,5 +1,19 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.PageType.defaultView
+import typings.sharepoint.SP.PageType.dialogView
+import typings.sharepoint.SP.PageType.displayForm
+import typings.sharepoint.SP.PageType.displayFormDialog
+import typings.sharepoint.SP.PageType.editForm
+import typings.sharepoint.SP.PageType.editFormDialog
+import typings.sharepoint.SP.PageType.invalid
+import typings.sharepoint.SP.PageType.newForm
+import typings.sharepoint.SP.PageType.newFormDialog
+import typings.sharepoint.SP.PageType.normalView
+import typings.sharepoint.SP.PageType.pAGE_MAXITEMS
+import typings.sharepoint.SP.PageType.solutionForm
+import typings.sharepoint.SP.PageType.view
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +63,46 @@ object PageType extends js.Object {
   @js.native
   sealed trait view extends PageType
   
-  /* 1 */ val defaultView: typings.sharepoint.SP.PageType.defaultView with Double = js.native
-  /* 3 */ val dialogView: typings.sharepoint.SP.PageType.dialogView with Double = js.native
-  /* 5 */ val displayForm: typings.sharepoint.SP.PageType.displayForm with Double = js.native
-  /* 6 */ val displayFormDialog: typings.sharepoint.SP.PageType.displayFormDialog with Double = js.native
-  /* 7 */ val editForm: typings.sharepoint.SP.PageType.editForm with Double = js.native
-  /* 8 */ val editFormDialog: typings.sharepoint.SP.PageType.editFormDialog with Double = js.native
-  /* 0 */ val invalid: typings.sharepoint.SP.PageType.invalid with Double = js.native
-  /* 9 */ val newForm: typings.sharepoint.SP.PageType.newForm with Double = js.native
-  /* 10 */ val newFormDialog: typings.sharepoint.SP.PageType.newFormDialog with Double = js.native
-  /* 2 */ val normalView: typings.sharepoint.SP.PageType.normalView with Double = js.native
-  /* 12 */ val pAGE_MAXITEMS: typings.sharepoint.SP.PageType.pAGE_MAXITEMS with Double = js.native
-  /* 11 */ val solutionForm: typings.sharepoint.SP.PageType.solutionForm with Double = js.native
-  /* 4 */ val view: typings.sharepoint.SP.PageType.view with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PageType with Double] = js.native
+  /* 1 */ @js.native
+  object defaultView extends TopLevel[defaultView with Double]
+  
+  /* 3 */ @js.native
+  object dialogView extends TopLevel[dialogView with Double]
+  
+  /* 5 */ @js.native
+  object displayForm extends TopLevel[displayForm with Double]
+  
+  /* 6 */ @js.native
+  object displayFormDialog extends TopLevel[displayFormDialog with Double]
+  
+  /* 7 */ @js.native
+  object editForm extends TopLevel[editForm with Double]
+  
+  /* 8 */ @js.native
+  object editFormDialog extends TopLevel[editFormDialog with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 9 */ @js.native
+  object newForm extends TopLevel[newForm with Double]
+  
+  /* 10 */ @js.native
+  object newFormDialog extends TopLevel[newFormDialog with Double]
+  
+  /* 2 */ @js.native
+  object normalView extends TopLevel[normalView with Double]
+  
+  /* 12 */ @js.native
+  object pAGE_MAXITEMS extends TopLevel[pAGE_MAXITEMS with Double]
+  
+  /* 11 */ @js.native
+  object solutionForm extends TopLevel[solutionForm with Double]
+  
+  /* 4 */ @js.native
+  object view extends TopLevel[view with Double]
+  
 }
 

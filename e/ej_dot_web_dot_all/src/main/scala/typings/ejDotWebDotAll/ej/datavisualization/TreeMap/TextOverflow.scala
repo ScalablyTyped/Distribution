@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Hide
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.None
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Wrap
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.WrapByWord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TextOverflow extends js.Object {
   @js.native
   sealed trait WrapByWord extends TextOverflow
   
-  /* 1 */ val Hide: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Hide with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.None with Double = js.native
-  /* 2 */ val Wrap: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.Wrap with Double = js.native
-  /* 3 */ val WrapByWord: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.TextOverflow.WrapByWord with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextOverflow with Double] = js.native
+  /* 1 */ @js.native
+  object Hide extends TopLevel[Hide with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Wrap extends TopLevel[Wrap with Double]
+  
+  /* 3 */ @js.native
+  object WrapByWord extends TopLevel[WrapByWord with Double]
+  
 }
 

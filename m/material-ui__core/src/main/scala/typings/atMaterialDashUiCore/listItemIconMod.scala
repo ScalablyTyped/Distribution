@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.listItemIconListItemIconMod.ListItemIconProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object listItemIconMod extends js.Object {
     def this(props: ListItemIconProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ListItemIconProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ListItemIconProps]]
+  
 }
 

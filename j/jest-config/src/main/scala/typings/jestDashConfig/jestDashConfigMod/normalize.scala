@@ -1,9 +1,9 @@
 package typings.jestDashConfig.jestDashConfigMod
 
-import typings.atJestTypes.buildConfigMod.Argv
 import typings.atJestTypes.buildConfigMod.InitialOptions
 import typings.atJestTypes.buildConfigMod.Path
 import typings.jestDashConfig.Anon_HasDeprecationWarnings
+import typings.jestDashConfig.Argv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

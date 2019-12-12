@@ -1,6 +1,10 @@
 package typings.wonderDashFrp
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState
+import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.ENTER
+import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.LEAVE
+import typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.TRIGGER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +26,17 @@ object distEs2015EnumFilterStateMod extends js.Object {
     @js.native
     sealed trait TRIGGER extends FilterState
     
-    /* 1 */ val ENTER: typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.ENTER with Double = js.native
-    /* 2 */ val LEAVE: typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.LEAVE with Double = js.native
-    /* 0 */ val TRIGGER: typings.wonderDashFrp.distEs2015EnumFilterStateMod.FilterState.TRIGGER with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[FilterState with Double] = js.native
+    /* 1 */ @js.native
+    object ENTER extends TopLevel[ENTER with Double]
+    
+    /* 2 */ @js.native
+    object LEAVE extends TopLevel[LEAVE with Double]
+    
+    /* 0 */ @js.native
+    object TRIGGER extends TopLevel[TRIGGER with Double]
+    
   }
   
 }

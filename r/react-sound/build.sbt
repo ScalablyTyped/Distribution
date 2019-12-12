@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sound"
-version := "1.2-dt-20181012Z-7fc3ac"
+version := "1.2-dt-20181012Z-c25cfb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

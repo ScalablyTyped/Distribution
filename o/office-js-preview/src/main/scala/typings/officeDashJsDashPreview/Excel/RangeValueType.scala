@@ -1,5 +1,14 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.RangeValueType.boolean
+import typings.officeDashJsDashPreview.Excel.RangeValueType.double
+import typings.officeDashJsDashPreview.Excel.RangeValueType.empty
+import typings.officeDashJsDashPreview.Excel.RangeValueType.error
+import typings.officeDashJsDashPreview.Excel.RangeValueType.integer
+import typings.officeDashJsDashPreview.Excel.RangeValueType.richValue
+import typings.officeDashJsDashPreview.Excel.RangeValueType.string
+import typings.officeDashJsDashPreview.Excel.RangeValueType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object RangeValueType extends js.Object {
   @js.native
   sealed trait unknown extends RangeValueType
   
-  /* "Boolean" */ val boolean: typings.officeDashJsDashPreview.Excel.RangeValueType.boolean with String = js.native
-  /* "Double" */ val double: typings.officeDashJsDashPreview.Excel.RangeValueType.double with String = js.native
-  /* "Empty" */ val empty: typings.officeDashJsDashPreview.Excel.RangeValueType.empty with String = js.native
-  /* "Error" */ val error: typings.officeDashJsDashPreview.Excel.RangeValueType.error with String = js.native
-  /* "Integer" */ val integer: typings.officeDashJsDashPreview.Excel.RangeValueType.integer with String = js.native
-  /* "RichValue" */ val richValue: typings.officeDashJsDashPreview.Excel.RangeValueType.richValue with String = js.native
-  /* "String" */ val string: typings.officeDashJsDashPreview.Excel.RangeValueType.string with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJsDashPreview.Excel.RangeValueType.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RangeValueType with String] = js.native
+  /* "Boolean" */ @js.native
+  object boolean extends TopLevel[boolean with String]
+  
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "Empty" */ @js.native
+  object empty extends TopLevel[empty with String]
+  
+  /* "Error" */ @js.native
+  object error extends TopLevel[error with String]
+  
+  /* "Integer" */ @js.native
+  object integer extends TopLevel[integer with String]
+  
+  /* "RichValue" */ @js.native
+  object richValue extends TopLevel[richValue with String]
+  
+  /* "String" */ @js.native
+  object string extends TopLevel[string with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

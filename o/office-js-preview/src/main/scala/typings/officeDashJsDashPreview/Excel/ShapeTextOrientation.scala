@@ -1,5 +1,13 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.eastAsianVertical
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.horizontal
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.mongolianVertical
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.vertical
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.vertical270
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.wordArtVertical
+import typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.wordArtVerticalRTL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object ShapeTextOrientation extends js.Object {
   @js.native
   sealed trait wordArtVerticalRTL extends ShapeTextOrientation
   
-  /* "EastAsianVertical" */ val eastAsianVertical: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.eastAsianVertical with String = js.native
-  /* "Horizontal" */ val horizontal: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.horizontal with String = js.native
-  /* "MongolianVertical" */ val mongolianVertical: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.mongolianVertical with String = js.native
-  /* "Vertical" */ val vertical: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.vertical with String = js.native
-  /* "Vertical270" */ val vertical270: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.vertical270 with String = js.native
-  /* "WordArtVertical" */ val wordArtVertical: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.wordArtVertical with String = js.native
-  /* "WordArtVerticalRTL" */ val wordArtVerticalRTL: typings.officeDashJsDashPreview.Excel.ShapeTextOrientation.wordArtVerticalRTL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeTextOrientation with String] = js.native
+  /* "EastAsianVertical" */ @js.native
+  object eastAsianVertical extends TopLevel[eastAsianVertical with String]
+  
+  /* "Horizontal" */ @js.native
+  object horizontal extends TopLevel[horizontal with String]
+  
+  /* "MongolianVertical" */ @js.native
+  object mongolianVertical extends TopLevel[mongolianVertical with String]
+  
+  /* "Vertical" */ @js.native
+  object vertical extends TopLevel[vertical with String]
+  
+  /* "Vertical270" */ @js.native
+  object vertical270 extends TopLevel[vertical270 with String]
+  
+  /* "WordArtVertical" */ @js.native
+  object wordArtVertical extends TopLevel[wordArtVertical with String]
+  
+  /* "WordArtVerticalRTL" */ @js.native
+  object wordArtVerticalRTL extends TopLevel[wordArtVerticalRTL with String]
+  
 }
 

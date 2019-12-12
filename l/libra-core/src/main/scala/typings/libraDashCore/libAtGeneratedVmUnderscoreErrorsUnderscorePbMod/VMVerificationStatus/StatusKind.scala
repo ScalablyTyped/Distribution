@@ -1,5 +1,9 @@
 package typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.DEPENDENCY
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.MODULE
+import typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.SCRIPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object StatusKind extends js.Object {
   @js.native
   sealed trait SCRIPT extends StatusKind
   
-  /* 2 */ val DEPENDENCY: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.DEPENDENCY with Double = js.native
-  /* 1 */ val MODULE: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.MODULE with Double = js.native
-  /* 0 */ val SCRIPT: typings.libraDashCore.libAtGeneratedVmUnderscoreErrorsUnderscorePbMod.VMVerificationStatus.StatusKind.SCRIPT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StatusKind with Double] = js.native
+  /* 2 */ @js.native
+  object DEPENDENCY extends TopLevel[DEPENDENCY with Double]
+  
+  /* 1 */ @js.native
+  object MODULE extends TopLevel[MODULE with Double]
+  
+  /* 0 */ @js.native
+  object SCRIPT extends TopLevel[SCRIPT with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.SubProcess
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.Task
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object BPMNActivity extends js.Object {
   @js.native
   sealed trait Task extends BPMNActivity
   
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.None with Double = js.native
-  /* 2 */ val SubProcess: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.SubProcess with Double = js.native
-  /* 1 */ val Task: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNActivity.Task with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BPMNActivity with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object SubProcess extends TopLevel[SubProcess with Double]
+  
+  /* 1 */ @js.native
+  object Task extends TopLevel[Task with Double]
+  
 }
 

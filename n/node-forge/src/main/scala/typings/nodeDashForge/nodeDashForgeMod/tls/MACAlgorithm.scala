@@ -1,5 +1,10 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_md5
+import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha256
+import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha384
+import typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,23 @@ object MACAlgorithm extends js.Object {
   @js.native
   sealed trait hmac_sha512 extends MACAlgorithm
   
-  /* 0 */ val hmac_md5: typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_md5 with Double = js.native
-  /* 1 */ val hmac_sha1: typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha1 with Double = js.native
-  /* 2 */ val hmac_sha256: typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha256 with Double = js.native
-  /* 3 */ val hmac_sha384: typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha384 with Double = js.native
-  /* 4 */ val hmac_sha512: typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha512 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MACAlgorithm with Double] = js.native
+  /* 0 */ @js.native
+  object hmac_md5 extends TopLevel[hmac_md5 with Double]
+  
+  /* 1 */ @js.native
+  object hmac_sha1
+    extends TopLevel[typings.nodeDashForge.nodeDashForgeMod.tls.MACAlgorithm.hmac_sha1 with Double]
+  
+  /* 2 */ @js.native
+  object hmac_sha256 extends TopLevel[hmac_sha256 with Double]
+  
+  /* 3 */ @js.native
+  object hmac_sha384 extends TopLevel[hmac_sha384 with Double]
+  
+  /* 4 */ @js.native
+  object hmac_sha512 extends TopLevel[hmac_sha512 with Double]
+  
 }
 

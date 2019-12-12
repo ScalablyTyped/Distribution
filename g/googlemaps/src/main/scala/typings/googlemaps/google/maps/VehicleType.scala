@@ -1,5 +1,23 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.VehicleType.BUS
+import typings.googlemaps.google.maps.VehicleType.CABLE_CAR
+import typings.googlemaps.google.maps.VehicleType.COMMUTER_TRAIN
+import typings.googlemaps.google.maps.VehicleType.FERRY
+import typings.googlemaps.google.maps.VehicleType.FUNICULAR
+import typings.googlemaps.google.maps.VehicleType.GONDOLA_LIFT
+import typings.googlemaps.google.maps.VehicleType.HEAVY_RAIL
+import typings.googlemaps.google.maps.VehicleType.HIGH_SPEED_TRAIN
+import typings.googlemaps.google.maps.VehicleType.INTERCITY_BUS
+import typings.googlemaps.google.maps.VehicleType.METRO_RAIL
+import typings.googlemaps.google.maps.VehicleType.MONORAIL
+import typings.googlemaps.google.maps.VehicleType.OTHER
+import typings.googlemaps.google.maps.VehicleType.RAIL
+import typings.googlemaps.google.maps.VehicleType.SHARE_TAXI
+import typings.googlemaps.google.maps.VehicleType.SUBWAY
+import typings.googlemaps.google.maps.VehicleType.TRAM
+import typings.googlemaps.google.maps.VehicleType.TROLLEYBUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,24 +79,58 @@ object VehicleType extends js.Object {
   @js.native
   sealed trait TROLLEYBUS extends VehicleType
   
-  /* 0 */ val BUS: typings.googlemaps.google.maps.VehicleType.BUS with Double = js.native
-  /* 1 */ val CABLE_CAR: typings.googlemaps.google.maps.VehicleType.CABLE_CAR with Double = js.native
-  /* 2 */ val COMMUTER_TRAIN: typings.googlemaps.google.maps.VehicleType.COMMUTER_TRAIN with Double = js.native
-  /* 3 */ val FERRY: typings.googlemaps.google.maps.VehicleType.FERRY with Double = js.native
-  /* 4 */ val FUNICULAR: typings.googlemaps.google.maps.VehicleType.FUNICULAR with Double = js.native
-  /* 5 */ val GONDOLA_LIFT: typings.googlemaps.google.maps.VehicleType.GONDOLA_LIFT with Double = js.native
-  /* 6 */ val HEAVY_RAIL: typings.googlemaps.google.maps.VehicleType.HEAVY_RAIL with Double = js.native
-  /* 7 */ val HIGH_SPEED_TRAIN: typings.googlemaps.google.maps.VehicleType.HIGH_SPEED_TRAIN with Double = js.native
-  /* 8 */ val INTERCITY_BUS: typings.googlemaps.google.maps.VehicleType.INTERCITY_BUS with Double = js.native
-  /* 9 */ val METRO_RAIL: typings.googlemaps.google.maps.VehicleType.METRO_RAIL with Double = js.native
-  /* 10 */ val MONORAIL: typings.googlemaps.google.maps.VehicleType.MONORAIL with Double = js.native
-  /* 11 */ val OTHER: typings.googlemaps.google.maps.VehicleType.OTHER with Double = js.native
-  /* 12 */ val RAIL: typings.googlemaps.google.maps.VehicleType.RAIL with Double = js.native
-  /* 13 */ val SHARE_TAXI: typings.googlemaps.google.maps.VehicleType.SHARE_TAXI with Double = js.native
-  /* 14 */ val SUBWAY: typings.googlemaps.google.maps.VehicleType.SUBWAY with Double = js.native
-  /* 15 */ val TRAM: typings.googlemaps.google.maps.VehicleType.TRAM with Double = js.native
-  /* 16 */ val TROLLEYBUS: typings.googlemaps.google.maps.VehicleType.TROLLEYBUS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VehicleType with Double] = js.native
+  /* 0 */ @js.native
+  object BUS extends TopLevel[BUS with Double]
+  
+  /* 1 */ @js.native
+  object CABLE_CAR extends TopLevel[CABLE_CAR with Double]
+  
+  /* 2 */ @js.native
+  object COMMUTER_TRAIN extends TopLevel[COMMUTER_TRAIN with Double]
+  
+  /* 3 */ @js.native
+  object FERRY extends TopLevel[FERRY with Double]
+  
+  /* 4 */ @js.native
+  object FUNICULAR extends TopLevel[FUNICULAR with Double]
+  
+  /* 5 */ @js.native
+  object GONDOLA_LIFT extends TopLevel[GONDOLA_LIFT with Double]
+  
+  /* 6 */ @js.native
+  object HEAVY_RAIL extends TopLevel[HEAVY_RAIL with Double]
+  
+  /* 7 */ @js.native
+  object HIGH_SPEED_TRAIN extends TopLevel[HIGH_SPEED_TRAIN with Double]
+  
+  /* 8 */ @js.native
+  object INTERCITY_BUS extends TopLevel[INTERCITY_BUS with Double]
+  
+  /* 9 */ @js.native
+  object METRO_RAIL extends TopLevel[METRO_RAIL with Double]
+  
+  /* 10 */ @js.native
+  object MONORAIL extends TopLevel[MONORAIL with Double]
+  
+  /* 11 */ @js.native
+  object OTHER extends TopLevel[OTHER with Double]
+  
+  /* 12 */ @js.native
+  object RAIL extends TopLevel[RAIL with Double]
+  
+  /* 13 */ @js.native
+  object SHARE_TAXI extends TopLevel[SHARE_TAXI with Double]
+  
+  /* 14 */ @js.native
+  object SUBWAY extends TopLevel[SUBWAY with Double]
+  
+  /* 15 */ @js.native
+  object TRAM extends TopLevel[TRAM with Double]
+  
+  /* 16 */ @js.native
+  object TROLLEYBUS extends TopLevel[TROLLEYBUS with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.ts3DashNodejsDashLibrary.libTypesContextMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.NONE
+import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.PORT
+import typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.SID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SelectType extends js.Object {
   @js.native
   sealed trait SID extends SelectType
   
-  /* 0 */ val NONE: typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.NONE with Double = js.native
-  /* 2 */ val PORT: typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.PORT with Double = js.native
-  /* 1 */ val SID: typings.ts3DashNodejsDashLibrary.libTypesContextMod.SelectType.SID with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectType with Double] = js.native
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 2 */ @js.native
+  object PORT extends TopLevel[PORT with Double]
+  
+  /* 1 */ @js.native
+  object SID extends TopLevel[SID with Double]
+  
 }
 

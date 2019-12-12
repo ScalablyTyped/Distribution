@@ -1,10 +1,16 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest
 import typings.sipDotJs.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
 import typings.sipDotJs.libCoreMessagesOutgoingDashRequestMod.RequestOptions
 import typings.sipDotJs.libCoreSubscriptionSubscriptionDashDelegateMod.SubscriptionDelegate
 import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState
+import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Active
+import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Initial
+import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.NotifyWait
+import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Pending
+import typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,13 +76,23 @@ object libCoreSubscriptionSubscriptionMod extends js.Object {
     @js.native
     sealed trait Terminated extends SubscriptionState
     
-    /* "Active" */ val Active: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Active with String = js.native
-    /* "Initial" */ val Initial: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Initial with String = js.native
-    /* "NotifyWait" */ val NotifyWait: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.NotifyWait with String = js.native
-    /* "Pending" */ val Pending: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Pending with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libCoreSubscriptionSubscriptionMod.SubscriptionState.Terminated with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SubscriptionState with String] = js.native
+    /* "Active" */ @js.native
+    object Active extends TopLevel[Active with String]
+    
+    /* "Initial" */ @js.native
+    object Initial extends TopLevel[Initial with String]
+    
+    /* "NotifyWait" */ @js.native
+    object NotifyWait extends TopLevel[NotifyWait with String]
+    
+    /* "Pending" */ @js.native
+    object Pending extends TopLevel[Pending with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
   }
   
 }

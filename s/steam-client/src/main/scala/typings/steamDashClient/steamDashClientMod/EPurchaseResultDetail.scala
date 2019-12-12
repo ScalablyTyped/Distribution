@@ -1,5 +1,74 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AVSFailure
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AccountLocked
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AcctIsBlocked
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AcctNotVerified
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AlreadyPurchased
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BadActivationCode
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BillingAgreementAlreadyExists
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BillingAgreementCancelled
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BundleTypeCannotBeGifted
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CanceledByNewTransaction
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CancelledByUser
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotGiftShippedGoods
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotRedeemCodeFromClient
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipInternationally
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipToCountry
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipToPOBox
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CartValueTooHigh
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ContactSupport
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CreditCardBinMismatchesType
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DelayedCompletion
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DoesNotOwnRequiredApp
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DuplicateActivationCode
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.EmailNotValidated
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExceededSteamLimit
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExpiredCard
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExpiredCoupon
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FailCurrencyTransProvider
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FailedCyberCafe
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ForceCanceledPending
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FraudCheckFailed
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.HungTransactionCancelled
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InsufficientFunds
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InsufficientInventory
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidAccount
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidCoupon
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidData
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidPackage
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidPaymentMethod
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidShippingAddress
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidTaxAddress
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.MustLoginPS3AppForPurchase
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NeedsPreApproval
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoCachedPaymentMethod
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoDetail
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoWallet
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OtherAbortableInProgress
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OthersInProgress
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OverlappingPackagesInCart
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OverlappingPackagesInPendingTransaction
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OwnsExcludedApp
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.POSACodeNotActivated
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PaypalInternalError
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PhysicalProductLimitExceeded
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PreApprovalDenied
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PurchaseAmountNoSupportedByProvider
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PurchaseCannotBeReplayed
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RateLimited
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RegionNotSupported
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RestrictedCountry
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.StoreBillingCountryMismatch
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.Timeout
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.TransactionExpired
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UnknownGlobalCollectError
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UseOtherFunctionSource
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UseOtherPaymentMethod
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WalletCurrencyMismatch
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WouldExceedMaxWallet
+import typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WrongPrice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -214,75 +283,211 @@ object EPurchaseResultDetail extends js.Object {
   @js.native
   sealed trait WrongPrice extends EPurchaseResultDetail
   
-  /* 1 */ val AVSFailure: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AVSFailure with Double = js.native
-  /* 44 */ val AccountLocked: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AccountLocked with Double = js.native
-  /* 20 */ val AcctIsBlocked: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AcctIsBlocked with Double = js.native
-  /* 21 */ val AcctNotVerified: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AcctNotVerified with Double = js.native
-  /* 9 */ val AlreadyPurchased: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.AlreadyPurchased with Double = js.native
-  /* 14 */ val BadActivationCode: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BadActivationCode with Double = js.native
-  /* 57 */ val BillingAgreementAlreadyExists: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BillingAgreementAlreadyExists with Double = js.native
-  /* 41 */ val BillingAgreementCancelled: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BillingAgreementCancelled with Double = js.native
-  /* 67 */ val BundleTypeCannotBeGifted: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.BundleTypeCannotBeGifted with Double = js.native
-  /* 25 */ val CanceledByNewTransaction: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CanceledByNewTransaction with Double = js.native
-  /* 12 */ val CancelledByUser: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CancelledByUser with Double = js.native
-  /* 39 */ val CannotGiftShippedGoods: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotGiftShippedGoods with Double = js.native
-  /* 50 */ val CannotRedeemCodeFromClient: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotRedeemCodeFromClient with Double = js.native
-  /* 40 */ val CannotShipInternationally: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipInternationally with Double = js.native
-  /* 59 */ val CannotShipToCountry: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipToCountry with Double = js.native
-  /* 37 */ val CannotShipToPOBox: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CannotShipToPOBox with Double = js.native
-  /* 56 */ val CartValueTooHigh: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CartValueTooHigh with Double = js.native
-  /* 3 */ val ContactSupport: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ContactSupport with Double = js.native
-  /* 55 */ val CreditCardBinMismatchesType: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.CreditCardBinMismatchesType with Double = js.native
-  /* 66 */ val DelayedCompletion: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DelayedCompletion with Double = js.native
-  /* 24 */ val DoesNotOwnRequiredApp: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DoesNotOwnRequiredApp with Double = js.native
-  /* 15 */ val DuplicateActivationCode: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.DuplicateActivationCode with Double = js.native
-  /* 32 */ val EmailNotValidated: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.EmailNotValidated with Double = js.native
-  /* 46 */ val ExceededSteamLimit: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExceededSteamLimit with Double = js.native
-  /* 33 */ val ExpiredCard: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExpiredCard with Double = js.native
-  /* 43 */ val ExpiredCoupon: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ExpiredCoupon with Double = js.native
-  /* 27 */ val FailCurrencyTransProvider: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FailCurrencyTransProvider with Double = js.native
-  /* 28 */ val FailedCyberCafe: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FailedCyberCafe with Double = js.native
-  /* 26 */ val ForceCanceledPending: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.ForceCanceledPending with Double = js.native
-  /* 11 */ val FraudCheckFailed: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.FraudCheckFailed with Double = js.native
-  /* 60 */ val HungTransactionCancelled: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.HungTransactionCancelled with Double = js.native
-  /* 2 */ val InsufficientFunds: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InsufficientFunds with Double = js.native
-  /* 38 */ val InsufficientInventory: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InsufficientInventory with Double = js.native
-  /* 22 */ val InvalidAccount: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidAccount with Double = js.native
-  /* 42 */ val InvalidCoupon: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidCoupon with Double = js.native
-  /* 7 */ val InvalidData: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidData with Double = js.native
-  /* 5 */ val InvalidPackage: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidPackage with Double = js.native
-  /* 6 */ val InvalidPaymentMethod: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidPaymentMethod with Double = js.native
-  /* 18 */ val InvalidShippingAddress: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidShippingAddress with Double = js.native
-  /* 63 */ val InvalidTaxAddress: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.InvalidTaxAddress with Double = js.native
-  /* 36 */ val MustLoginPS3AppForPurchase: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.MustLoginPS3AppForPurchase with Double = js.native
-  /* 29 */ val NeedsPreApproval: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NeedsPreApproval with Double = js.native
-  /* 49 */ val NoCachedPaymentMethod: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoCachedPaymentMethod with Double = js.native
-  /* 0 */ val NoDetail: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoDetail with Double = js.native
-  /* 48 */ val NoWallet: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.NoWallet with Double = js.native
-  /* 45 */ val OtherAbortableInProgress: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OtherAbortableInProgress with Double = js.native
-  /* 8 */ val OthersInProgress: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OthersInProgress with Double = js.native
-  /* 47 */ val OverlappingPackagesInCart: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OverlappingPackagesInCart with Double = js.native
-  /* 52 */ val OverlappingPackagesInPendingTransaction: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OverlappingPackagesInPendingTransaction with Double = js.native
-  /* 54 */ val OwnsExcludedApp: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.OwnsExcludedApp with Double = js.native
-  /* 58 */ val POSACodeNotActivated: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.POSACodeNotActivated with Double = js.native
-  /* 61 */ val PaypalInternalError: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PaypalInternalError with Double = js.native
-  /* 64 */ val PhysicalProductLimitExceeded: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PhysicalProductLimitExceeded with Double = js.native
-  /* 30 */ val PreApprovalDenied: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PreApprovalDenied with Double = js.native
-  /* 51 */ val PurchaseAmountNoSupportedByProvider: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PurchaseAmountNoSupportedByProvider with Double = js.native
-  /* 65 */ val PurchaseCannotBeReplayed: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.PurchaseCannotBeReplayed with Double = js.native
-  /* 53 */ val RateLimited: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RateLimited with Double = js.native
-  /* 19 */ val RegionNotSupported: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RegionNotSupported with Double = js.native
-  /* 13 */ val RestrictedCountry: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.RestrictedCountry with Double = js.native
-  /* 23 */ val StoreBillingCountryMismatch: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.StoreBillingCountryMismatch with Double = js.native
-  /* 4 */ val Timeout: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.Timeout with Double = js.native
-  /* 34 */ val TransactionExpired: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.TransactionExpired with Double = js.native
-  /* 62 */ val UnknownGlobalCollectError: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UnknownGlobalCollectError with Double = js.native
-  /* 17 */ val UseOtherFunctionSource: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UseOtherFunctionSource with Double = js.native
-  /* 16 */ val UseOtherPaymentMethod: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.UseOtherPaymentMethod with Double = js.native
-  /* 31 */ val WalletCurrencyMismatch: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WalletCurrencyMismatch with Double = js.native
-  /* 35 */ val WouldExceedMaxWallet: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WouldExceedMaxWallet with Double = js.native
-  /* 10 */ val WrongPrice: typings.steamDashClient.steamDashClientMod.EPurchaseResultDetail.WrongPrice with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EPurchaseResultDetail with Double] = js.native
+  /* 1 */ @js.native
+  object AVSFailure extends TopLevel[AVSFailure with Double]
+  
+  /* 44 */ @js.native
+  object AccountLocked extends TopLevel[AccountLocked with Double]
+  
+  /* 20 */ @js.native
+  object AcctIsBlocked extends TopLevel[AcctIsBlocked with Double]
+  
+  /* 21 */ @js.native
+  object AcctNotVerified extends TopLevel[AcctNotVerified with Double]
+  
+  /* 9 */ @js.native
+  object AlreadyPurchased extends TopLevel[AlreadyPurchased with Double]
+  
+  /* 14 */ @js.native
+  object BadActivationCode extends TopLevel[BadActivationCode with Double]
+  
+  /* 57 */ @js.native
+  object BillingAgreementAlreadyExists extends TopLevel[BillingAgreementAlreadyExists with Double]
+  
+  /* 41 */ @js.native
+  object BillingAgreementCancelled extends TopLevel[BillingAgreementCancelled with Double]
+  
+  /* 67 */ @js.native
+  object BundleTypeCannotBeGifted extends TopLevel[BundleTypeCannotBeGifted with Double]
+  
+  /* 25 */ @js.native
+  object CanceledByNewTransaction extends TopLevel[CanceledByNewTransaction with Double]
+  
+  /* 12 */ @js.native
+  object CancelledByUser extends TopLevel[CancelledByUser with Double]
+  
+  /* 39 */ @js.native
+  object CannotGiftShippedGoods extends TopLevel[CannotGiftShippedGoods with Double]
+  
+  /* 50 */ @js.native
+  object CannotRedeemCodeFromClient extends TopLevel[CannotRedeemCodeFromClient with Double]
+  
+  /* 40 */ @js.native
+  object CannotShipInternationally extends TopLevel[CannotShipInternationally with Double]
+  
+  /* 59 */ @js.native
+  object CannotShipToCountry extends TopLevel[CannotShipToCountry with Double]
+  
+  /* 37 */ @js.native
+  object CannotShipToPOBox extends TopLevel[CannotShipToPOBox with Double]
+  
+  /* 56 */ @js.native
+  object CartValueTooHigh extends TopLevel[CartValueTooHigh with Double]
+  
+  /* 3 */ @js.native
+  object ContactSupport extends TopLevel[ContactSupport with Double]
+  
+  /* 55 */ @js.native
+  object CreditCardBinMismatchesType extends TopLevel[CreditCardBinMismatchesType with Double]
+  
+  /* 66 */ @js.native
+  object DelayedCompletion extends TopLevel[DelayedCompletion with Double]
+  
+  /* 24 */ @js.native
+  object DoesNotOwnRequiredApp extends TopLevel[DoesNotOwnRequiredApp with Double]
+  
+  /* 15 */ @js.native
+  object DuplicateActivationCode extends TopLevel[DuplicateActivationCode with Double]
+  
+  /* 32 */ @js.native
+  object EmailNotValidated extends TopLevel[EmailNotValidated with Double]
+  
+  /* 46 */ @js.native
+  object ExceededSteamLimit extends TopLevel[ExceededSteamLimit with Double]
+  
+  /* 33 */ @js.native
+  object ExpiredCard extends TopLevel[ExpiredCard with Double]
+  
+  /* 43 */ @js.native
+  object ExpiredCoupon extends TopLevel[ExpiredCoupon with Double]
+  
+  /* 27 */ @js.native
+  object FailCurrencyTransProvider extends TopLevel[FailCurrencyTransProvider with Double]
+  
+  /* 28 */ @js.native
+  object FailedCyberCafe extends TopLevel[FailedCyberCafe with Double]
+  
+  /* 26 */ @js.native
+  object ForceCanceledPending extends TopLevel[ForceCanceledPending with Double]
+  
+  /* 11 */ @js.native
+  object FraudCheckFailed extends TopLevel[FraudCheckFailed with Double]
+  
+  /* 60 */ @js.native
+  object HungTransactionCancelled extends TopLevel[HungTransactionCancelled with Double]
+  
+  /* 2 */ @js.native
+  object InsufficientFunds extends TopLevel[InsufficientFunds with Double]
+  
+  /* 38 */ @js.native
+  object InsufficientInventory extends TopLevel[InsufficientInventory with Double]
+  
+  /* 22 */ @js.native
+  object InvalidAccount extends TopLevel[InvalidAccount with Double]
+  
+  /* 42 */ @js.native
+  object InvalidCoupon extends TopLevel[InvalidCoupon with Double]
+  
+  /* 7 */ @js.native
+  object InvalidData extends TopLevel[InvalidData with Double]
+  
+  /* 5 */ @js.native
+  object InvalidPackage extends TopLevel[InvalidPackage with Double]
+  
+  /* 6 */ @js.native
+  object InvalidPaymentMethod extends TopLevel[InvalidPaymentMethod with Double]
+  
+  /* 18 */ @js.native
+  object InvalidShippingAddress extends TopLevel[InvalidShippingAddress with Double]
+  
+  /* 63 */ @js.native
+  object InvalidTaxAddress extends TopLevel[InvalidTaxAddress with Double]
+  
+  /* 36 */ @js.native
+  object MustLoginPS3AppForPurchase extends TopLevel[MustLoginPS3AppForPurchase with Double]
+  
+  /* 29 */ @js.native
+  object NeedsPreApproval extends TopLevel[NeedsPreApproval with Double]
+  
+  /* 49 */ @js.native
+  object NoCachedPaymentMethod extends TopLevel[NoCachedPaymentMethod with Double]
+  
+  /* 0 */ @js.native
+  object NoDetail extends TopLevel[NoDetail with Double]
+  
+  /* 48 */ @js.native
+  object NoWallet extends TopLevel[NoWallet with Double]
+  
+  /* 45 */ @js.native
+  object OtherAbortableInProgress extends TopLevel[OtherAbortableInProgress with Double]
+  
+  /* 8 */ @js.native
+  object OthersInProgress extends TopLevel[OthersInProgress with Double]
+  
+  /* 47 */ @js.native
+  object OverlappingPackagesInCart extends TopLevel[OverlappingPackagesInCart with Double]
+  
+  /* 52 */ @js.native
+  object OverlappingPackagesInPendingTransaction extends TopLevel[OverlappingPackagesInPendingTransaction with Double]
+  
+  /* 54 */ @js.native
+  object OwnsExcludedApp extends TopLevel[OwnsExcludedApp with Double]
+  
+  /* 58 */ @js.native
+  object POSACodeNotActivated extends TopLevel[POSACodeNotActivated with Double]
+  
+  /* 61 */ @js.native
+  object PaypalInternalError extends TopLevel[PaypalInternalError with Double]
+  
+  /* 64 */ @js.native
+  object PhysicalProductLimitExceeded extends TopLevel[PhysicalProductLimitExceeded with Double]
+  
+  /* 30 */ @js.native
+  object PreApprovalDenied extends TopLevel[PreApprovalDenied with Double]
+  
+  /* 51 */ @js.native
+  object PurchaseAmountNoSupportedByProvider extends TopLevel[PurchaseAmountNoSupportedByProvider with Double]
+  
+  /* 65 */ @js.native
+  object PurchaseCannotBeReplayed extends TopLevel[PurchaseCannotBeReplayed with Double]
+  
+  /* 53 */ @js.native
+  object RateLimited extends TopLevel[RateLimited with Double]
+  
+  /* 19 */ @js.native
+  object RegionNotSupported extends TopLevel[RegionNotSupported with Double]
+  
+  /* 13 */ @js.native
+  object RestrictedCountry extends TopLevel[RestrictedCountry with Double]
+  
+  /* 23 */ @js.native
+  object StoreBillingCountryMismatch extends TopLevel[StoreBillingCountryMismatch with Double]
+  
+  /* 4 */ @js.native
+  object Timeout extends TopLevel[Timeout with Double]
+  
+  /* 34 */ @js.native
+  object TransactionExpired extends TopLevel[TransactionExpired with Double]
+  
+  /* 62 */ @js.native
+  object UnknownGlobalCollectError extends TopLevel[UnknownGlobalCollectError with Double]
+  
+  /* 17 */ @js.native
+  object UseOtherFunctionSource extends TopLevel[UseOtherFunctionSource with Double]
+  
+  /* 16 */ @js.native
+  object UseOtherPaymentMethod extends TopLevel[UseOtherPaymentMethod with Double]
+  
+  /* 31 */ @js.native
+  object WalletCurrencyMismatch extends TopLevel[WalletCurrencyMismatch with Double]
+  
+  /* 35 */ @js.native
+  object WouldExceedMaxWallet extends TopLevel[WouldExceedMaxWallet with Double]
+  
+  /* 10 */ @js.native
+  object WrongPrice extends TopLevel[WrongPrice with Double]
+  
 }
 

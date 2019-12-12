@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextScrollMode.popon
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextScrollMode.rollup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object TimedTextScrollMode extends js.Object {
   @js.native
   sealed trait rollup extends TimedTextScrollMode
   
-  /* 0 */ val popon: typings.winrtDashUwp.Windows.Media.Core.TimedTextScrollMode.popon with Double = js.native
-  /* 1 */ val rollup: typings.winrtDashUwp.Windows.Media.Core.TimedTextScrollMode.rollup with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimedTextScrollMode with Double] = js.native
+  /* 0 */ @js.native
+  object popon extends TopLevel[popon with Double]
+  
+  /* 1 */ @js.native
+  object rollup extends TopLevel[rollup with Double]
+  
 }
 

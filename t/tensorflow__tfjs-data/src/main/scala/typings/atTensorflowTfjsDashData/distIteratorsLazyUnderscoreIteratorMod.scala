@@ -1,10 +1,14 @@
 package typings.atTensorflowTfjsDashData
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.IteratorContainer
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.LazyIterator
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.PrefetchIterator
 import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode
+import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.FAIL
+import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.LONGEST
+import typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.SHORTEST
 import typings.atTensorflowTfjsDashData.distTypesMod.Container
 import typings.atTensorflowTfjsDashData.distTypesMod.DataElement
 import typings.atTensorflowTfjsDashData.distUtilDeepUnderscoreMapMod.DeepMapResult
@@ -339,11 +343,17 @@ object distIteratorsLazyUnderscoreIteratorMod extends js.Object {
     @js.native
     sealed trait SHORTEST extends ZipMismatchMode
     
-    /* 0 */ val FAIL: typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.FAIL with Double = js.native
-    /* 2 */ val LONGEST: typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.LONGEST with Double = js.native
-    /* 1 */ val SHORTEST: typings.atTensorflowTfjsDashData.distIteratorsLazyUnderscoreIteratorMod.ZipMismatchMode.SHORTEST with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ZipMismatchMode with Double] = js.native
+    /* 0 */ @js.native
+    object FAIL extends TopLevel[FAIL with Double]
+    
+    /* 2 */ @js.native
+    object LONGEST extends TopLevel[LONGEST with Double]
+    
+    /* 1 */ @js.native
+    object SHORTEST extends TopLevel[SHORTEST with Double]
+    
   }
   
   type IteratorContainer = Container[LazyIterator[DataElement]]

@@ -1,5 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.DOES_NOT_RETURN
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.NOT_AVAILABLE
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.RETURNS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +24,16 @@ object DigressIn extends js.Object {
   @js.native
   sealed trait RETURNS extends DigressIn
   
-  /* "does_not_return" */ val DOES_NOT_RETURN: typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.DOES_NOT_RETURN with String = js.native
-  /* "not_available" */ val NOT_AVAILABLE: typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.NOT_AVAILABLE with String = js.native
-  /* "returns" */ val RETURNS: typings.watsonDashDeveloperDashCloud.assistantV1Mod.UpdateDialogNodeConstants.DigressIn.RETURNS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DigressIn with String] = js.native
+  /* "does_not_return" */ @js.native
+  object DOES_NOT_RETURN extends TopLevel[DOES_NOT_RETURN with String]
+  
+  /* "not_available" */ @js.native
+  object NOT_AVAILABLE extends TopLevel[NOT_AVAILABLE with String]
+  
+  /* "returns" */ @js.native
+  object RETURNS extends TopLevel[RETURNS with String]
+  
 }
 

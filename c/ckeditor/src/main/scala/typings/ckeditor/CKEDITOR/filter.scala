@@ -1,6 +1,7 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.ckeditor.CKEDITOR.filter.allowedContentRule
 import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.filter.contentRule
@@ -82,7 +83,9 @@ object filter extends js.Object {
   }
   
   var instances: StringDictionary[filter] = js.native
-  var transformationTools: transformationTools = js.native
+  @js.native
+  object transformationTools extends TopLevel[transformationTools]
+  
   type allowedContentRule = String | style | StringDictionary[js.Any]
   type allowedContentRules = allowedContentRule | js.Array[allowedContentRule]
   type contentRule = String | style

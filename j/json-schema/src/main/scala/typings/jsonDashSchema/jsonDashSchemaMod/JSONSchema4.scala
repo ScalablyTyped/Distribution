@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JSONSchema4
   extends /**
   * @see https://tools.ietf.org/html/draft-zyp-json-schema-04#section-5.6
   */
 /* k */ StringDictionary[js.Any] {
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.undefined
+  var $ref: js.UndefOr[String] = js.native
   @JSName("$schema")
-  var $schema: js.UndefOr[JSONSchema4Version] = js.undefined
+  var $schema: js.UndefOr[JSONSchema4Version] = js.native
   /**
     * May only be defined when "items" is defined, and is a tuple of JSONSchemas.
     *
@@ -25,7 +26,7 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.6
     */
-  var additionalItems: js.UndefOr[Boolean | JSONSchema4] = js.undefined
+  var additionalItems: js.UndefOr[Boolean | JSONSchema4] = js.native
   /**
     * This attribute defines a schema for all properties that are not
     * explicitly defined in an object type definition. If specified, the
@@ -36,19 +37,19 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.4
     */
-  var additionalProperties: js.UndefOr[Boolean | JSONSchema4] = js.undefined
-  var allOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
-  var anyOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
-  var default: js.UndefOr[JSONSchema4Type] = js.undefined
-  var definitions: js.UndefOr[StringDictionary[JSONSchema4]] = js.undefined
-  var dependencies: js.UndefOr[StringDictionary[JSONSchema4 | js.Array[String]]] = js.undefined
+  var additionalProperties: js.UndefOr[Boolean | JSONSchema4] = js.native
+  var allOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+  var anyOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+  var default: js.UndefOr[JSONSchema4Type] = js.native
+  var definitions: js.UndefOr[StringDictionary[JSONSchema4]] = js.native
+  var dependencies: js.UndefOr[StringDictionary[JSONSchema4 | js.Array[String]]] = js.native
   /**
     * This attribute is a string that provides a full description of the of
     * purpose the instance property.
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.22
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * This provides an enumeration of all possible values that are valid
     * for the instance property. This MUST be an array, and each item in
@@ -58,9 +59,9 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.19
     */
-  var enum: js.UndefOr[js.Array[JSONSchema4Type]] = js.undefined
-  var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
-  var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
+  var enum: js.UndefOr[js.Array[JSONSchema4Type]] = js.native
+  var exclusiveMaximum: js.UndefOr[Boolean] = js.native
+  var exclusiveMinimum: js.UndefOr[Boolean] = js.native
   /**
     * The value of this property MUST be another schema which will provide
     * a base schema which the current schema will inherit from.  The
@@ -77,9 +78,9 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.26
     */
-  var `extends`: js.UndefOr[String | js.Array[String]] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
+  var `extends`: js.UndefOr[String | js.Array[String]] = js.native
+  var format: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
   /**
     * This attribute defines the allowed items in an instance array, and
     * MUST be a schema or an array of schemas.  The default value is an
@@ -99,19 +100,19 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.5
     */
-  var items: js.UndefOr[JSONSchema4 | js.Array[JSONSchema4]] = js.undefined
-  var maxItems: js.UndefOr[Double] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var maxProperties: js.UndefOr[Double] = js.undefined
-  var maximum: js.UndefOr[Double] = js.undefined
-  var minItems: js.UndefOr[Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var minProperties: js.UndefOr[Double] = js.undefined
-  var minimum: js.UndefOr[Double] = js.undefined
-  var multipleOf: js.UndefOr[Double] = js.undefined
-  var not: js.UndefOr[JSONSchema4] = js.undefined
-  var oneOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
-  var pattern: js.UndefOr[String] = js.undefined
+  var items: js.UndefOr[JSONSchema4 | js.Array[JSONSchema4]] = js.native
+  var maxItems: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.native
+  var maxProperties: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.native
+  var minItems: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var minProperties: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.native
+  var multipleOf: js.UndefOr[Double] = js.native
+  var not: js.UndefOr[JSONSchema4] = js.native
+  var oneOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+  var pattern: js.UndefOr[String] = js.native
   /**
     * This attribute is an object that defines the schema for a set of
     * property names of an object instance. The name of each property of
@@ -123,7 +124,7 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.3
     */
-  var patternProperties: js.UndefOr[StringDictionary[JSONSchema4]] = js.undefined
+  var patternProperties: js.UndefOr[StringDictionary[JSONSchema4]] = js.native
   /**
     * This attribute is an object with property definitions that define the
     * valid values of instance object property values. When the instance
@@ -137,7 +138,7 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.2
     */
-  var properties: js.UndefOr[StringDictionary[JSONSchema4]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[JSONSchema4]] = js.native
   /**
     * This attribute indicates if the instance must have a value, and not
     * be undefined. This is false by default, making the instance
@@ -145,102 +146,18 @@ trait JSONSchema4
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.7
     */
-  var required: js.UndefOr[`false` | js.Array[String]] = js.undefined
+  var required: js.UndefOr[`false` | js.Array[String]] = js.native
   /**
     * This attribute is a string that provides a short description of the
     * instance property.
     *
     * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.21
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * A single type, or a union of simple types
     */
-  var `type`: js.UndefOr[JSONSchema4TypeName | js.Array[JSONSchema4TypeName]] = js.undefined
-  var uniqueItems: js.UndefOr[Boolean] = js.undefined
-}
-
-object JSONSchema4 {
-  @scala.inline
-  def apply(
-    $ref: String = null,
-    $schema: JSONSchema4Version = null,
-    StringDictionary: /**
-    * @see https://tools.ietf.org/html/draft-zyp-json-schema-04#section-5.6
-    */
-  /* k */ StringDictionary[js.Any] = null,
-    additionalItems: Boolean | JSONSchema4 = null,
-    additionalProperties: Boolean | JSONSchema4 = null,
-    allOf: js.Array[JSONSchema4] = null,
-    anyOf: js.Array[JSONSchema4] = null,
-    default: JSONSchema4Type = null,
-    definitions: StringDictionary[JSONSchema4] = null,
-    dependencies: StringDictionary[JSONSchema4 | js.Array[String]] = null,
-    description: String = null,
-    enum: js.Array[JSONSchema4Type] = null,
-    exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
-    exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
-    `extends`: String | js.Array[String] = null,
-    format: String = null,
-    id: String = null,
-    items: JSONSchema4 | js.Array[JSONSchema4] = null,
-    maxItems: Int | Double = null,
-    maxLength: Int | Double = null,
-    maxProperties: Int | Double = null,
-    maximum: Int | Double = null,
-    minItems: Int | Double = null,
-    minLength: Int | Double = null,
-    minProperties: Int | Double = null,
-    minimum: Int | Double = null,
-    multipleOf: Int | Double = null,
-    not: JSONSchema4 = null,
-    oneOf: js.Array[JSONSchema4] = null,
-    pattern: String = null,
-    patternProperties: StringDictionary[JSONSchema4] = null,
-    properties: StringDictionary[JSONSchema4] = null,
-    required: `false` | js.Array[String] = null,
-    title: String = null,
-    `type`: JSONSchema4TypeName | js.Array[JSONSchema4TypeName] = null,
-    uniqueItems: js.UndefOr[Boolean] = js.undefined
-  ): JSONSchema4 = {
-    val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
-    if ($schema != null) __obj.updateDynamic("$schema")($schema.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (allOf != null) __obj.updateDynamic("allOf")(allOf.asInstanceOf[js.Any])
-    if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxProperties != null) __obj.updateDynamic("maxProperties")(maxProperties.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minProperties != null) __obj.updateDynamic("minProperties")(minProperties.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (multipleOf != null) __obj.updateDynamic("multipleOf")(multipleOf.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JSONSchema4]
-  }
+  var `type`: js.UndefOr[JSONSchema4TypeName | js.Array[JSONSchema4TypeName]] = js.native
+  var uniqueItems: js.UndefOr[Boolean] = js.native
 }
 

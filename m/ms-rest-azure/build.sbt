@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ms-rest-azure"
-version := "2.6.0-81007f"
+version := "2.6.0-8a3d29"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ms-rest" % "2.5.3-7685ec",
+  "org.scalablytyped" %%% "ms-rest" % "2.5.3-c10b5f",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

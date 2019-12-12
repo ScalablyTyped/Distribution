@@ -1,5 +1,14 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Bool
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Dynamic
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Function
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Inferred
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Int
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.None
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Number
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object BuiltinTypeName extends js.Object {
   @js.native
   sealed trait String extends BuiltinTypeName
   
-  /* 1 */ val Bool: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Bool with Double = js.native
-  /* 0 */ val Dynamic: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Dynamic with Double = js.native
-  /* 5 */ val Function: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Function with Double = js.native
-  /* 6 */ val Inferred: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Inferred with Double = js.native
-  /* 3 */ val Int: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Int with Double = js.native
-  /* 7 */ val None: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.None with Double = js.native
-  /* 4 */ val Number: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.Number with Double = js.native
-  /* 2 */ val String: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinTypeName.String with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuiltinTypeName with Double] = js.native
+  /* 1 */ @js.native
+  object Bool extends TopLevel[Bool with Double]
+  
+  /* 0 */ @js.native
+  object Dynamic extends TopLevel[Dynamic with Double]
+  
+  /* 5 */ @js.native
+  object Function extends TopLevel[Function with Double]
+  
+  /* 6 */ @js.native
+  object Inferred extends TopLevel[Inferred with Double]
+  
+  /* 3 */ @js.native
+  object Int extends TopLevel[Int with Double]
+  
+  /* 7 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 4 */ @js.native
+  object Number extends TopLevel[Number with Double]
+  
+  /* 2 */ @js.native
+  object String extends TopLevel[String with Double]
+  
 }
 

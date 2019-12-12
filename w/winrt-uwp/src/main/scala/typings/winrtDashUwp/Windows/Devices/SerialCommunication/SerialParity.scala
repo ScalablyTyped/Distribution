@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.even
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.mark
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.none
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.odd
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.space
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object SerialParity extends js.Object {
   @js.native
   sealed trait space extends SerialParity
   
-  /* 2 */ val even: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.even with Double = js.native
-  /* 3 */ val mark: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.mark with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.none with Double = js.native
-  /* 1 */ val odd: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.odd with Double = js.native
-  /* 4 */ val space: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialParity.space with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SerialParity with Double] = js.native
+  /* 2 */ @js.native
+  object even extends TopLevel[even with Double]
+  
+  /* 3 */ @js.native
+  object mark extends TopLevel[mark with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object odd extends TopLevel[odd with Double]
+  
+  /* 4 */ @js.native
+  object space extends TopLevel[space with Double]
+  
 }
 

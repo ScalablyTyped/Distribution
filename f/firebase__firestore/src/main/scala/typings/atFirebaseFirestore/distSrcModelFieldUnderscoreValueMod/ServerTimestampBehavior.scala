@@ -1,5 +1,9 @@
 package typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Default
+import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Estimate
+import typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Previous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ServerTimestampBehavior extends js.Object {
   @js.native
   sealed trait Previous extends ServerTimestampBehavior
   
-  /* 0 */ val Default: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Default with Double = js.native
-  /* 1 */ val Estimate: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Estimate with Double = js.native
-  /* 2 */ val Previous: typings.atFirebaseFirestore.distSrcModelFieldUnderscoreValueMod.ServerTimestampBehavior.Previous with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ServerTimestampBehavior with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object Estimate extends TopLevel[Estimate with Double]
+  
+  /* 2 */ @js.native
+  object Previous extends TopLevel[Previous with Double]
+  
 }
 

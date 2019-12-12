@@ -1,5 +1,18 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BIG_NUMBER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BLANK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.CAPTION_ONLY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.MAIN_POINT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.ONE_COLUMN_TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_HEADER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_TITLE_AND_DESCRIPTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_BODY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_TWO_COLUMNS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_ONLY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,19 +64,43 @@ object PredefinedLayout extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends PredefinedLayout
   
-  /* 11 */ val BIG_NUMBER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BIG_NUMBER with Double = js.native
-  /* 1 */ val BLANK: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.BLANK with Double = js.native
-  /* 2 */ val CAPTION_ONLY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.CAPTION_ONLY with Double = js.native
-  /* 10 */ val MAIN_POINT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.MAIN_POINT with Double = js.native
-  /* 9 */ val ONE_COLUMN_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.ONE_COLUMN_TEXT with Double = js.native
-  /* 7 */ val SECTION_HEADER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_HEADER with Double = js.native
-  /* 8 */ val SECTION_TITLE_AND_DESCRIPTION: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.SECTION_TITLE_AND_DESCRIPTION with Double = js.native
-  /* 3 */ val TITLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE with Double = js.native
-  /* 4 */ val TITLE_AND_BODY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_BODY with Double = js.native
-  /* 5 */ val TITLE_AND_TWO_COLUMNS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_AND_TWO_COLUMNS with Double = js.native
-  /* 6 */ val TITLE_ONLY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.TITLE_ONLY with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PredefinedLayout.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PredefinedLayout with Double] = js.native
+  /* 11 */ @js.native
+  object BIG_NUMBER extends TopLevel[BIG_NUMBER with Double]
+  
+  /* 1 */ @js.native
+  object BLANK extends TopLevel[BLANK with Double]
+  
+  /* 2 */ @js.native
+  object CAPTION_ONLY extends TopLevel[CAPTION_ONLY with Double]
+  
+  /* 10 */ @js.native
+  object MAIN_POINT extends TopLevel[MAIN_POINT with Double]
+  
+  /* 9 */ @js.native
+  object ONE_COLUMN_TEXT extends TopLevel[ONE_COLUMN_TEXT with Double]
+  
+  /* 7 */ @js.native
+  object SECTION_HEADER extends TopLevel[SECTION_HEADER with Double]
+  
+  /* 8 */ @js.native
+  object SECTION_TITLE_AND_DESCRIPTION extends TopLevel[SECTION_TITLE_AND_DESCRIPTION with Double]
+  
+  /* 3 */ @js.native
+  object TITLE extends TopLevel[TITLE with Double]
+  
+  /* 4 */ @js.native
+  object TITLE_AND_BODY extends TopLevel[TITLE_AND_BODY with Double]
+  
+  /* 5 */ @js.native
+  object TITLE_AND_TWO_COLUMNS extends TopLevel[TITLE_AND_TWO_COLUMNS with Double]
+  
+  /* 6 */ @js.native
+  object TITLE_ONLY extends TopLevel[TITLE_ONLY with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

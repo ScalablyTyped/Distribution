@@ -1,5 +1,8 @@
 package typings.winrt.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Notifications.BadgeTemplateType.badgeGlyph
+import typings.winrt.Windows.UI.Notifications.BadgeTemplateType.badgeNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object BadgeTemplateType extends js.Object {
   @js.native
   sealed trait badgeNumber extends BadgeTemplateType
   
-  /* 0 */ val badgeGlyph: typings.winrt.Windows.UI.Notifications.BadgeTemplateType.badgeGlyph with Double = js.native
-  /* 1 */ val badgeNumber: typings.winrt.Windows.UI.Notifications.BadgeTemplateType.badgeNumber with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BadgeTemplateType with Double] = js.native
+  /* 0 */ @js.native
+  object badgeGlyph extends TopLevel[badgeGlyph with Double]
+  
+  /* 1 */ @js.native
+  object badgeNumber extends TopLevel[badgeNumber with Double]
+  
 }
 

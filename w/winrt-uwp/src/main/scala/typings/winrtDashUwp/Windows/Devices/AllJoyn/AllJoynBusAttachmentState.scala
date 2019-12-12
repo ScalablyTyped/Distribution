@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connected
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connecting
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnected
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object AllJoynBusAttachmentState extends js.Object {
   @js.native
   sealed trait disconnecting extends AllJoynBusAttachmentState
   
-  /* 2 */ val connected: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connected with Double = js.native
-  /* 1 */ val connecting: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.connecting with Double = js.native
-  /* 0 */ val disconnected: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnected with Double = js.native
-  /* 3 */ val disconnecting: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState.disconnecting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AllJoynBusAttachmentState with Double] = js.native
+  /* 2 */ @js.native
+  object connected extends TopLevel[connected with Double]
+  
+  /* 1 */ @js.native
+  object connecting extends TopLevel[connecting with Double]
+  
+  /* 0 */ @js.native
+  object disconnected extends TopLevel[disconnected with Double]
+  
+  /* 3 */ @js.native
+  object disconnecting extends TopLevel[disconnecting with Double]
+  
 }
 

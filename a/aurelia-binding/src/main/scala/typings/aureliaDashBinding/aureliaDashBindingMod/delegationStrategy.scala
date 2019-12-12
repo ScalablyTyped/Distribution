@@ -1,5 +1,9 @@
 package typings.aureliaDashBinding.aureliaDashBindingMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.bubbling
+import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.capturing
+import typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object delegationStrategy extends js.Object {
   @js.native
   sealed trait none extends delegationStrategy
   
-  /* 2 */ val bubbling: typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.bubbling with Double = js.native
-  /* 1 */ val capturing: typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.capturing with Double = js.native
-  /* 0 */ val none: typings.aureliaDashBinding.aureliaDashBindingMod.delegationStrategy.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[delegationStrategy with Double] = js.native
+  /* 2 */ @js.native
+  object bubbling extends TopLevel[bubbling with Double]
+  
+  /* 1 */ @js.native
+  object capturing extends TopLevel[capturing with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

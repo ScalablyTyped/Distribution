@@ -1,5 +1,9 @@
 package typings.lyricist.lyricistMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.lyricist.lyricistMod.LyricistTextFormat.DOM
+import typings.lyricist.lyricistMod.LyricistTextFormat.HTML
+import typings.lyricist.lyricistMod.LyricistTextFormat.PLAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object LyricistTextFormat extends js.Object {
   @js.native
   sealed trait PLAIN extends LyricistTextFormat
   
-  /* "dom" */ val DOM: typings.lyricist.lyricistMod.LyricistTextFormat.DOM with String = js.native
-  /* "html" */ val HTML: typings.lyricist.lyricistMod.LyricistTextFormat.HTML with String = js.native
-  /* "plain" */ val PLAIN: typings.lyricist.lyricistMod.LyricistTextFormat.PLAIN with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[LyricistTextFormat with String] = js.native
+  /* "dom" */ @js.native
+  object DOM extends TopLevel[DOM with String]
+  
+  /* "html" */ @js.native
+  object HTML extends TopLevel[HTML with String]
+  
+  /* "plain" */ @js.native
+  object PLAIN extends TopLevel[PLAIN with String]
+  
 }
 

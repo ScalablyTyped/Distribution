@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.SlicerSortType.ascending
+import typings.officeDashJs.Excel.SlicerSortType.dataSourceOrder
+import typings.officeDashJs.Excel.SlicerSortType.descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object SlicerSortType extends js.Object {
   @js.native
   sealed trait descending extends SlicerSortType
   
-  /* "Ascending" */ val ascending: typings.officeDashJs.Excel.SlicerSortType.ascending with String = js.native
-  /* "DataSourceOrder" */ val dataSourceOrder: typings.officeDashJs.Excel.SlicerSortType.dataSourceOrder with String = js.native
-  /* "Descending" */ val descending: typings.officeDashJs.Excel.SlicerSortType.descending with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SlicerSortType with String] = js.native
+  /* "Ascending" */ @js.native
+  object ascending extends TopLevel[ascending with String]
+  
+  /* "DataSourceOrder" */ @js.native
+  object dataSourceOrder extends TopLevel[dataSourceOrder with String]
+  
+  /* "Descending" */ @js.native
+  object descending extends TopLevel[descending with String]
+  
 }
 

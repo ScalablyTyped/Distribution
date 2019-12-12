@@ -1,5 +1,10 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Constructor
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Event
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Fallback
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object AbiType extends js.Object {
   @js.native
   sealed trait Function extends AbiType
   
-  /* "constructor" */ val Constructor: typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Constructor with String = js.native
-  /* "event" */ val Event: typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Event with String = js.native
-  /* "fallback" */ val Fallback: typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Fallback with String = js.native
-  /* "function" */ val Function: typings.ethereumDashProtocol.ethereumDashProtocolMod.AbiType.Function with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AbiType with String] = js.native
+  /* "constructor" */ @js.native
+  object Constructor extends TopLevel[Constructor with String]
+  
+  /* "event" */ @js.native
+  object Event extends TopLevel[Event with String]
+  
+  /* "fallback" */ @js.native
+  object Fallback extends TopLevel[Fallback with String]
+  
+  /* "function" */ @js.native
+  object Function extends TopLevel[Function with String]
+  
 }
 

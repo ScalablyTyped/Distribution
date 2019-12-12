@@ -1,5 +1,11 @@
 package typings.atNivoBar.atNivoBarMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atNivoBar.atNivoBarMod.BarLayerType.Axes
+import typings.atNivoBar.atNivoBarMod.BarLayerType.Bars
+import typings.atNivoBar.atNivoBarMod.BarLayerType.Grid
+import typings.atNivoBar.atNivoBarMod.BarLayerType.Legends
+import typings.atNivoBar.atNivoBarMod.BarLayerType.Markers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object BarLayerType extends js.Object {
   @js.native
   sealed trait Markers extends BarLayerType
   
-  /* "axes" */ val Axes: typings.atNivoBar.atNivoBarMod.BarLayerType.Axes with String = js.native
-  /* "bars" */ val Bars: typings.atNivoBar.atNivoBarMod.BarLayerType.Bars with String = js.native
-  /* "grid" */ val Grid: typings.atNivoBar.atNivoBarMod.BarLayerType.Grid with String = js.native
-  /* "legends" */ val Legends: typings.atNivoBar.atNivoBarMod.BarLayerType.Legends with String = js.native
-  /* "markers" */ val Markers: typings.atNivoBar.atNivoBarMod.BarLayerType.Markers with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BarLayerType with String] = js.native
+  /* "axes" */ @js.native
+  object Axes extends TopLevel[Axes with String]
+  
+  /* "bars" */ @js.native
+  object Bars extends TopLevel[Bars with String]
+  
+  /* "grid" */ @js.native
+  object Grid extends TopLevel[Grid with String]
+  
+  /* "legends" */ @js.native
+  object Legends extends TopLevel[Legends with String]
+  
+  /* "markers" */ @js.native
+  object Markers extends TopLevel[Markers with String]
+  
 }
 

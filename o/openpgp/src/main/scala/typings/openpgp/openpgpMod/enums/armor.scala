@@ -1,5 +1,11 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.armor.multipart_last
+import typings.openpgp.openpgpMod.enums.armor.multipart_section
+import typings.openpgp.openpgpMod.enums.armor.private_key
+import typings.openpgp.openpgpMod.enums.armor.public_key
+import typings.openpgp.openpgpMod.enums.armor.signed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +40,30 @@ object armor extends js.Object {
   @js.native
   sealed trait signed extends armor
   
-  /* 3 */ val message: typings.openpgp.openpgpMod.enums.armor.message with Double = js.native
-  /* 1 */ val multipart_last: typings.openpgp.openpgpMod.enums.armor.multipart_last with Double = js.native
-  /* 0 */ val multipart_section: typings.openpgp.openpgpMod.enums.armor.multipart_section with Double = js.native
-  /* 5 */ val private_key: typings.openpgp.openpgpMod.enums.armor.private_key with Double = js.native
-  /* 4 */ val public_key: typings.openpgp.openpgpMod.enums.armor.public_key with Double = js.native
-  /* 6 */ val signature: typings.openpgp.openpgpMod.enums.armor.signature with Double = js.native
-  /* 2 */ val signed: typings.openpgp.openpgpMod.enums.armor.signed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[armor with Double] = js.native
+  /* 3 */ @js.native
+  object message
+    extends TopLevel[typings.openpgp.openpgpMod.enums.armor.message with Double]
+  
+  /* 1 */ @js.native
+  object multipart_last extends TopLevel[multipart_last with Double]
+  
+  /* 0 */ @js.native
+  object multipart_section extends TopLevel[multipart_section with Double]
+  
+  /* 5 */ @js.native
+  object private_key extends TopLevel[private_key with Double]
+  
+  /* 4 */ @js.native
+  object public_key extends TopLevel[public_key with Double]
+  
+  /* 6 */ @js.native
+  object signature
+    extends TopLevel[typings.openpgp.openpgpMod.enums.armor.signature with Double]
+  
+  /* 2 */ @js.native
+  object signed extends TopLevel[signed with Double]
+  
 }
 

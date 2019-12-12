@@ -1,5 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.TopLevel
+import typings.zui.STATUS.DONE
+import typings.zui.STATUS.FAILED
+import typings.zui.STATUS.QUEUED
+import typings.zui.STATUS.STARTED
+import typings.zui.STATUS.STOPPED
+import typings.zui.STATUS.UPLOADING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object STATUS extends js.Object {
   @js.native
   sealed trait UPLOADING extends STATUS
   
-  /* 4 */ val DONE: typings.zui.STATUS.DONE with Double = js.native
-  /* 3 */ val FAILED: typings.zui.STATUS.FAILED with Double = js.native
-  /* 1 */ val QUEUED: typings.zui.STATUS.QUEUED with Double = js.native
-  /* 2 */ val STARTED: typings.zui.STATUS.STARTED with Double = js.native
-  /* 1 */ val STOPPED: typings.zui.STATUS.STOPPED with Double = js.native
-  /* 2 */ val UPLOADING: typings.zui.STATUS.UPLOADING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[STATUS with Double] = js.native
+  /* 4 */ @js.native
+  object DONE extends TopLevel[DONE with Double]
+  
+  /* 3 */ @js.native
+  object FAILED extends TopLevel[FAILED with Double]
+  
+  /* 1 */ @js.native
+  object QUEUED extends TopLevel[QUEUED with Double]
+  
+  /* 2 */ @js.native
+  object STARTED extends TopLevel[STARTED with Double]
+  
+  /* 1 */ @js.native
+  object STOPPED extends TopLevel[STOPPED with Double]
+  
+  /* 2 */ @js.native
+  object UPLOADING extends TopLevel[UPLOADING with Double]
+  
 }
 

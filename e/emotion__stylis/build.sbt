@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__stylis"
-version := "0.8.4-72ebbb"
+version := "0.8.4-fe4cf1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

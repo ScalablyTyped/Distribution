@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Cancelling
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Completed
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TaskAgentPoolMaintenanceJobStatus extends js.Object {
   @js.native
   sealed trait Queued extends TaskAgentPoolMaintenanceJobStatus
   
-  /* 4 */ val Cancelling: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Cancelling with Double = js.native
-  /* 2 */ val Completed: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Completed with Double = js.native
-  /* 1 */ val InProgress: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.InProgress with Double = js.native
-  /* 8 */ val Queued: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceJobStatus.Queued with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskAgentPoolMaintenanceJobStatus with Double] = js.native
+  /* 4 */ @js.native
+  object Cancelling extends TopLevel[Cancelling with Double]
+  
+  /* 2 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 1 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 8 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
 }
 

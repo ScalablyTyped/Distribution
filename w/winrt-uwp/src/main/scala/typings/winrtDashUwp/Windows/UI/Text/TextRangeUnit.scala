@@ -1,5 +1,38 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.`object`
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.allCaps
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.bold
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.character
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.characterFormat
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.cluster
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.disabled
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.fontBound
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.hardParagraph
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.hidden
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.imprint
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.italic
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.line
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.link
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.linkProtected
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.outline
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.paragraph
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.paragraphFormat
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.protectedText
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.revised
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.screen
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.section
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.sentence
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.shadow
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.smallCaps
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.story
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.strikethrough
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.subscript
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.superscript
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.underline
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.window
+import typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.word
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,39 +172,103 @@ object TextRangeUnit extends js.Object {
   @js.native
   sealed trait word extends TextRangeUnit
   
-  /* 21 */ val allCaps: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.allCaps with Double = js.native
-  /* 14 */ val bold: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.bold with Double = js.native
-  /* 0 */ val character: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.character with Double = js.native
-  /* 9 */ val characterFormat: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.characterFormat with Double = js.native
-  /* 13 */ val cluster: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.cluster with Double = js.native
-  /* 26 */ val disabled: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.disabled with Double = js.native
-  /* 30 */ val fontBound: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.fontBound with Double = js.native
-  /* 12 */ val hardParagraph: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.hardParagraph with Double = js.native
-  /* 22 */ val hidden: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.hidden with Double = js.native
-  /* 25 */ val imprint: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.imprint with Double = js.native
-  /* 15 */ val italic: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.italic with Double = js.native
-  /* 4 */ val line: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.line with Double = js.native
-  /* 19 */ val link: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.link with Double = js.native
-  /* 31 */ val linkProtected: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.linkProtected with Double = js.native
-  /* 11 */ val `object`: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.`object` with Double = js.native
-  /* 23 */ val outline: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.outline with Double = js.native
-  /* 3 */ val paragraph: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.paragraph with Double = js.native
-  /* 10 */ val paragraphFormat: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.paragraphFormat with Double = js.native
-  /* 18 */ val protectedText: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.protectedText with Double = js.native
-  /* 27 */ val revised: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.revised with Double = js.native
-  /* 6 */ val screen: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.screen with Double = js.native
-  /* 7 */ val section: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.section with Double = js.native
-  /* 2 */ val sentence: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.sentence with Double = js.native
-  /* 24 */ val shadow: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.shadow with Double = js.native
-  /* 20 */ val smallCaps: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.smallCaps with Double = js.native
-  /* 5 */ val story: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.story with Double = js.native
-  /* 17 */ val strikethrough: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.strikethrough with Double = js.native
-  /* 28 */ val subscript: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.subscript with Double = js.native
-  /* 29 */ val superscript: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.superscript with Double = js.native
-  /* 16 */ val underline: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.underline with Double = js.native
-  /* 8 */ val window: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.window with Double = js.native
-  /* 1 */ val word: typings.winrtDashUwp.Windows.UI.Text.TextRangeUnit.word with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextRangeUnit with Double] = js.native
+  /* 21 */ @js.native
+  object allCaps extends TopLevel[allCaps with Double]
+  
+  /* 14 */ @js.native
+  object bold extends TopLevel[bold with Double]
+  
+  /* 0 */ @js.native
+  object character extends TopLevel[character with Double]
+  
+  /* 9 */ @js.native
+  object characterFormat extends TopLevel[characterFormat with Double]
+  
+  /* 13 */ @js.native
+  object cluster extends TopLevel[cluster with Double]
+  
+  /* 26 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 30 */ @js.native
+  object fontBound extends TopLevel[fontBound with Double]
+  
+  /* 12 */ @js.native
+  object hardParagraph extends TopLevel[hardParagraph with Double]
+  
+  /* 22 */ @js.native
+  object hidden extends TopLevel[hidden with Double]
+  
+  /* 25 */ @js.native
+  object imprint extends TopLevel[imprint with Double]
+  
+  /* 15 */ @js.native
+  object italic extends TopLevel[italic with Double]
+  
+  /* 4 */ @js.native
+  object line extends TopLevel[line with Double]
+  
+  /* 19 */ @js.native
+  object link extends TopLevel[link with Double]
+  
+  /* 31 */ @js.native
+  object linkProtected extends TopLevel[linkProtected with Double]
+  
+  /* 11 */ @js.native
+  object `object` extends TopLevel[`object` with Double]
+  
+  /* 23 */ @js.native
+  object outline extends TopLevel[outline with Double]
+  
+  /* 3 */ @js.native
+  object paragraph extends TopLevel[paragraph with Double]
+  
+  /* 10 */ @js.native
+  object paragraphFormat extends TopLevel[paragraphFormat with Double]
+  
+  /* 18 */ @js.native
+  object protectedText extends TopLevel[protectedText with Double]
+  
+  /* 27 */ @js.native
+  object revised extends TopLevel[revised with Double]
+  
+  /* 6 */ @js.native
+  object screen extends TopLevel[screen with Double]
+  
+  /* 7 */ @js.native
+  object section extends TopLevel[section with Double]
+  
+  /* 2 */ @js.native
+  object sentence extends TopLevel[sentence with Double]
+  
+  /* 24 */ @js.native
+  object shadow extends TopLevel[shadow with Double]
+  
+  /* 20 */ @js.native
+  object smallCaps extends TopLevel[smallCaps with Double]
+  
+  /* 5 */ @js.native
+  object story extends TopLevel[story with Double]
+  
+  /* 17 */ @js.native
+  object strikethrough extends TopLevel[strikethrough with Double]
+  
+  /* 28 */ @js.native
+  object subscript extends TopLevel[subscript with Double]
+  
+  /* 29 */ @js.native
+  object superscript extends TopLevel[superscript with Double]
+  
+  /* 16 */ @js.native
+  object underline extends TopLevel[underline with Double]
+  
+  /* 8 */ @js.native
+  object window extends TopLevel[window with Double]
+  
+  /* 1 */ @js.native
+  object word extends TopLevel[word with Double]
+  
 }
 

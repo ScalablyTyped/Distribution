@@ -1,5 +1,9 @@
 package typings.seleniumDashWebdriver.libInputMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.seleniumDashWebdriver.libInputMod.Button.LEFT
+import typings.seleniumDashWebdriver.libInputMod.Button.MIDDLE
+import typings.seleniumDashWebdriver.libInputMod.Button.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Button extends js.Object {
   @js.native
   sealed trait RIGHT extends Button
   
-  /* 0 */ val LEFT: typings.seleniumDashWebdriver.libInputMod.Button.LEFT with Double = js.native
-  /* 1 */ val MIDDLE: typings.seleniumDashWebdriver.libInputMod.Button.MIDDLE with Double = js.native
-  /* 2 */ val RIGHT: typings.seleniumDashWebdriver.libInputMod.Button.RIGHT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Button with Double] = js.native
+  /* 0 */ @js.native
+  object LEFT extends TopLevel[LEFT with Double]
+  
+  /* 1 */ @js.native
+  object MIDDLE extends TopLevel[MIDDLE with Double]
+  
+  /* 2 */ @js.native
+  object RIGHT extends TopLevel[RIGHT with Double]
+  
 }
 

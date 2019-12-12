@@ -1,5 +1,17 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.billions
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.custom
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredMillions
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredThousands
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundreds
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.millions
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.none
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenMillions
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenThousands
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.thousands
+import typings.officeDashJs.Excel.ChartAxisDisplayUnit.trillions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -101,18 +113,40 @@ object ChartAxisDisplayUnit extends js.Object {
   @js.native
   sealed trait trillions extends ChartAxisDisplayUnit
   
-  /* "Billions" */ val billions: typings.officeDashJs.Excel.ChartAxisDisplayUnit.billions with String = js.native
-  /* "Custom" */ val custom: typings.officeDashJs.Excel.ChartAxisDisplayUnit.custom with String = js.native
-  /* "HundredMillions" */ val hundredMillions: typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredMillions with String = js.native
-  /* "HundredThousands" */ val hundredThousands: typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundredThousands with String = js.native
-  /* "Hundreds" */ val hundreds: typings.officeDashJs.Excel.ChartAxisDisplayUnit.hundreds with String = js.native
-  /* "Millions" */ val millions: typings.officeDashJs.Excel.ChartAxisDisplayUnit.millions with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.ChartAxisDisplayUnit.none with String = js.native
-  /* "TenMillions" */ val tenMillions: typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenMillions with String = js.native
-  /* "TenThousands" */ val tenThousands: typings.officeDashJs.Excel.ChartAxisDisplayUnit.tenThousands with String = js.native
-  /* "Thousands" */ val thousands: typings.officeDashJs.Excel.ChartAxisDisplayUnit.thousands with String = js.native
-  /* "Trillions" */ val trillions: typings.officeDashJs.Excel.ChartAxisDisplayUnit.trillions with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisDisplayUnit with String] = js.native
+  /* "Billions" */ @js.native
+  object billions extends TopLevel[billions with String]
+  
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "HundredMillions" */ @js.native
+  object hundredMillions extends TopLevel[hundredMillions with String]
+  
+  /* "HundredThousands" */ @js.native
+  object hundredThousands extends TopLevel[hundredThousands with String]
+  
+  /* "Hundreds" */ @js.native
+  object hundreds extends TopLevel[hundreds with String]
+  
+  /* "Millions" */ @js.native
+  object millions extends TopLevel[millions with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "TenMillions" */ @js.native
+  object tenMillions extends TopLevel[tenMillions with String]
+  
+  /* "TenThousands" */ @js.native
+  object tenThousands extends TopLevel[tenThousands with String]
+  
+  /* "Thousands" */ @js.native
+  object thousands extends TopLevel[thousands with String]
+  
+  /* "Trillions" */ @js.native
+  object trillions extends TopLevel[trillions with String]
+  
 }
 

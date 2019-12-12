@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.contactId
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.conversationId
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.custom
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.participants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ChatConversationThreadingKind extends js.Object {
   @js.native
   sealed trait participants extends ChatConversationThreadingKind
   
-  /* 1 */ val contactId: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.contactId with Double = js.native
-  /* 2 */ val conversationId: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.conversationId with Double = js.native
-  /* 3 */ val custom: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.custom with Double = js.native
-  /* 0 */ val participants: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatConversationThreadingKind.participants with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatConversationThreadingKind with Double] = js.native
+  /* 1 */ @js.native
+  object contactId extends TopLevel[contactId with Double]
+  
+  /* 2 */ @js.native
+  object conversationId extends TopLevel[conversationId with Double]
+  
+  /* 3 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 0 */ @js.native
+  object participants extends TopLevel[participants with Double]
+  
 }
 

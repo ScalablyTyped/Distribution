@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.couldNotDeleteEverything
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.networkError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.permissionsError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.serverError
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.success
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object EmailMailboxEmptyFolderStatus extends js.Object {
   @js.native
   sealed trait unknownFailure extends EmailMailboxEmptyFolderStatus
   
-  /* 5 */ val couldNotDeleteEverything: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.couldNotDeleteEverything with Double = js.native
-  /* 1 */ val networkError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.networkError with Double = js.native
-  /* 2 */ val permissionsError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.permissionsError with Double = js.native
-  /* 3 */ val serverError: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.serverError with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.success with Double = js.native
-  /* 4 */ val unknownFailure: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus.unknownFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxEmptyFolderStatus with Double] = js.native
+  /* 5 */ @js.native
+  object couldNotDeleteEverything extends TopLevel[couldNotDeleteEverything with Double]
+  
+  /* 1 */ @js.native
+  object networkError extends TopLevel[networkError with Double]
+  
+  /* 2 */ @js.native
+  object permissionsError extends TopLevel[permissionsError with Double]
+  
+  /* 3 */ @js.native
+  object serverError extends TopLevel[serverError with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 4 */ @js.native
+  object unknownFailure extends TopLevel[unknownFailure with Double]
+  
 }
 

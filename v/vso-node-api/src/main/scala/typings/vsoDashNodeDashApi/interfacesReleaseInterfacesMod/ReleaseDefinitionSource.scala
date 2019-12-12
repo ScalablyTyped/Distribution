@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Ibiza
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.PortalExtensionApi
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.RestApi
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Undefined
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.UserInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ReleaseDefinitionSource extends js.Object {
   @js.native
   sealed trait UserInterface extends ReleaseDefinitionSource
   
-  /* 4 */ val Ibiza: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Ibiza with Double = js.native
-  /* 8 */ val PortalExtensionApi: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.PortalExtensionApi with Double = js.native
-  /* 1 */ val RestApi: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.RestApi with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.Undefined with Double = js.native
-  /* 2 */ val UserInterface: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseDefinitionSource.UserInterface with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReleaseDefinitionSource with Double] = js.native
+  /* 4 */ @js.native
+  object Ibiza extends TopLevel[Ibiza with Double]
+  
+  /* 8 */ @js.native
+  object PortalExtensionApi extends TopLevel[PortalExtensionApi with Double]
+  
+  /* 1 */ @js.native
+  object RestApi extends TopLevel[RestApi with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
+  /* 2 */ @js.native
+  object UserInterface extends TopLevel[UserInterface with Double]
+  
 }
 

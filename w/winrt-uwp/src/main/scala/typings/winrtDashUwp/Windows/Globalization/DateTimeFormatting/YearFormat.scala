@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.default
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.full
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object YearFormat extends js.Object {
   @js.native
   sealed trait none extends YearFormat
   
-  /* 2 */ val abbreviated: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated with Double = js.native
-  /* 1 */ val default: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.default with Double = js.native
-  /* 3 */ val full: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.full with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.YearFormat.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[YearFormat with Double] = js.native
+  /* 2 */ @js.native
+  object abbreviated extends TopLevel[abbreviated with Double]
+  
+  /* 1 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 3 */ @js.native
+  object full extends TopLevel[full with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

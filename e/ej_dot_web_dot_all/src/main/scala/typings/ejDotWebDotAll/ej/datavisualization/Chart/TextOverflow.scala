@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.None
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Trim
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Wrap
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.WrapAndTrim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TextOverflow extends js.Object {
   @js.native
   sealed trait WrapAndTrim extends TextOverflow
   
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.None with Double = js.native
-  /* 1 */ val Trim: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Trim with Double = js.native
-  /* 2 */ val Wrap: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.Wrap with Double = js.native
-  /* 3 */ val WrapAndTrim: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextOverflow.WrapAndTrim with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextOverflow with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Trim extends TopLevel[Trim with Double]
+  
+  /* 2 */ @js.native
+  object Wrap extends TopLevel[Wrap with Double]
+  
+  /* 3 */ @js.native
+  object WrapAndTrim extends TopLevel[WrapAndTrim with Double]
+  
 }
 

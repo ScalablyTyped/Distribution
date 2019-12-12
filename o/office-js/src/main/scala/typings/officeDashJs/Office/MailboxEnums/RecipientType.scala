@@ -1,5 +1,10 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.RecipientType.DistributionList
+import typings.officeDashJs.Office.MailboxEnums.RecipientType.ExternalUser
+import typings.officeDashJs.Office.MailboxEnums.RecipientType.Other
+import typings.officeDashJs.Office.MailboxEnums.RecipientType.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,11 +48,19 @@ object RecipientType extends js.Object {
   @js.native
   sealed trait User extends RecipientType
   
-  /* "distributionList" */ val DistributionList: typings.officeDashJs.Office.MailboxEnums.RecipientType.DistributionList with String = js.native
-  /* "externalUser" */ val ExternalUser: typings.officeDashJs.Office.MailboxEnums.RecipientType.ExternalUser with String = js.native
-  /* "other" */ val Other: typings.officeDashJs.Office.MailboxEnums.RecipientType.Other with String = js.native
-  /* "user" */ val User: typings.officeDashJs.Office.MailboxEnums.RecipientType.User with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RecipientType with String] = js.native
+  /* "distributionList" */ @js.native
+  object DistributionList extends TopLevel[DistributionList with String]
+  
+  /* "externalUser" */ @js.native
+  object ExternalUser extends TopLevel[ExternalUser with String]
+  
+  /* "other" */ @js.native
+  object Other extends TopLevel[Other with String]
+  
+  /* "user" */ @js.native
+  object User extends TopLevel[User with String]
+  
 }
 

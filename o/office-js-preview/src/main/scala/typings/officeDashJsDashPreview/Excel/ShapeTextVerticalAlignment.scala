@@ -1,5 +1,11 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.bottom
+import typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.distributed
+import typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.justified
+import typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.middle
+import typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ShapeTextVerticalAlignment extends js.Object {
   @js.native
   sealed trait top extends ShapeTextVerticalAlignment
   
-  /* "Bottom" */ val bottom: typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.bottom with String = js.native
-  /* "Distributed" */ val distributed: typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.distributed with String = js.native
-  /* "Justified" */ val justified: typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.justified with String = js.native
-  /* "Middle" */ val middle: typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.middle with String = js.native
-  /* "Top" */ val top: typings.officeDashJsDashPreview.Excel.ShapeTextVerticalAlignment.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeTextVerticalAlignment with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Distributed" */ @js.native
+  object distributed extends TopLevel[distributed with String]
+  
+  /* "Justified" */ @js.native
+  object justified extends TopLevel[justified with String]
+  
+  /* "Middle" */ @js.native
+  object middle extends TopLevel[middle with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

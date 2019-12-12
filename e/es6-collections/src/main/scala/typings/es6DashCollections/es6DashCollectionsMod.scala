@@ -1,5 +1,6 @@
 package typings.es6DashCollections
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,9 +40,17 @@ object es6DashCollectionsMod extends js.Object {
     override def has(value: T): Boolean = js.native
   }
   
-  var Map: MapConstructor = js.native
-  var Set: SetConstructor = js.native
-  var WeakMap: WeakMapConstructor = js.native
-  var WeakSet: WeakSetConstructor = js.native
+  @js.native
+  object Map extends TopLevel[MapConstructor]
+  
+  @js.native
+  object Set extends TopLevel[SetConstructor]
+  
+  @js.native
+  object WeakMap extends TopLevel[WeakMapConstructor]
+  
+  @js.native
+  object WeakSet extends TopLevel[WeakSetConstructor]
+  
 }
 

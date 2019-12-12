@@ -1,5 +1,8 @@
 package typings.bip174.srcLibTypeFieldsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bip174.srcLibTypeFieldsMod.GlobalTypes.GLOBAL_XPUB
+import typings.bip174.srcLibTypeFieldsMod.GlobalTypes.UNSIGNED_TX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object GlobalTypes extends js.Object {
   @js.native
   sealed trait UNSIGNED_TX extends GlobalTypes
   
-  /* 1 */ val GLOBAL_XPUB: typings.bip174.srcLibTypeFieldsMod.GlobalTypes.GLOBAL_XPUB with Double = js.native
-  /* 0 */ val UNSIGNED_TX: typings.bip174.srcLibTypeFieldsMod.GlobalTypes.UNSIGNED_TX with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GlobalTypes with Double] = js.native
+  /* 1 */ @js.native
+  object GLOBAL_XPUB extends TopLevel[GLOBAL_XPUB with Double]
+  
+  /* 0 */ @js.native
+  object UNSIGNED_TX extends TopLevel[UNSIGNED_TX with Double]
+  
 }
 

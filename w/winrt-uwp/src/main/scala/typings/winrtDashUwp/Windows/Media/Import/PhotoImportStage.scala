@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.deletingImportedItemsFromSource
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.findingItems
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.importingItems
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.notStarted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PhotoImportStage extends js.Object {
   @js.native
   sealed trait notStarted extends PhotoImportStage
   
-  /* 3 */ val deletingImportedItemsFromSource: typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.deletingImportedItemsFromSource with Double = js.native
-  /* 1 */ val findingItems: typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.findingItems with Double = js.native
-  /* 2 */ val importingItems: typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.importingItems with Double = js.native
-  /* 0 */ val notStarted: typings.winrtDashUwp.Windows.Media.Import.PhotoImportStage.notStarted with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhotoImportStage with Double] = js.native
+  /* 3 */ @js.native
+  object deletingImportedItemsFromSource extends TopLevel[deletingImportedItemsFromSource with Double]
+  
+  /* 1 */ @js.native
+  object findingItems extends TopLevel[findingItems with Double]
+  
+  /* 2 */ @js.native
+  object importingItems extends TopLevel[importingItems with Double]
+  
+  /* 0 */ @js.native
+  object notStarted extends TopLevel[notStarted with Double]
+  
 }
 

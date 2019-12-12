@@ -1,5 +1,19 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.BuiltIn
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Disabled
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Locked
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.MultiVersion
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Paid
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Preview
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Public
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.System
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Trial
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Trusted
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Unpublished
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Validated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,20 +102,46 @@ object PublishedExtensionFlags extends js.Object {
   @js.native
   sealed trait Validated extends PublishedExtensionFlags
   
-  /* 2 */ val BuiltIn: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.BuiltIn with Double = js.native
-  /* 1 */ val Disabled: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Disabled with Double = js.native
-  /* 16384 */ val Locked: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Locked with Double = js.native
-  /* 512 */ val MultiVersion: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.MultiVersion with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.None with Double = js.native
-  /* 16 */ val Paid: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Paid with Double = js.native
-  /* 2048 */ val Preview: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Preview with Double = js.native
-  /* 256 */ val Public: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Public with Double = js.native
-  /* 1024 */ val System: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.System with Double = js.native
-  /* 8192 */ val Trial: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Trial with Double = js.native
-  /* 8 */ val Trusted: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Trusted with Double = js.native
-  /* 4096 */ val Unpublished: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Unpublished with Double = js.native
-  /* 4 */ val Validated: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublishedExtensionFlags.Validated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PublishedExtensionFlags with Double] = js.native
+  /* 2 */ @js.native
+  object BuiltIn extends TopLevel[BuiltIn with Double]
+  
+  /* 1 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 16384 */ @js.native
+  object Locked extends TopLevel[Locked with Double]
+  
+  /* 512 */ @js.native
+  object MultiVersion extends TopLevel[MultiVersion with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 16 */ @js.native
+  object Paid extends TopLevel[Paid with Double]
+  
+  /* 2048 */ @js.native
+  object Preview extends TopLevel[Preview with Double]
+  
+  /* 256 */ @js.native
+  object Public extends TopLevel[Public with Double]
+  
+  /* 1024 */ @js.native
+  object System extends TopLevel[System with Double]
+  
+  /* 8192 */ @js.native
+  object Trial extends TopLevel[Trial with Double]
+  
+  /* 8 */ @js.native
+  object Trusted extends TopLevel[Trusted with Double]
+  
+  /* 4096 */ @js.native
+  object Unpublished extends TopLevel[Unpublished with Double]
+  
+  /* 4 */ @js.native
+  object Validated extends TopLevel[Validated with Double]
+  
 }
 

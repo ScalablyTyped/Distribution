@@ -1,6 +1,9 @@
 package typings.smoothDashScrollbar
 
+import org.scalablytyped.runtime.TopLevel
 import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection
+import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.X
+import typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.Y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +22,14 @@ object trackDirectionMod extends js.Object {
     @js.native
     sealed trait Y extends TrackDirection
     
-    /* "x" */ val X: typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.X with String = js.native
-    /* "y" */ val Y: typings.smoothDashScrollbar.trackDirectionMod.TrackDirection.Y with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TrackDirection with String] = js.native
+    /* "x" */ @js.native
+    object X extends TopLevel[X with String]
+    
+    /* "y" */ @js.native
+    object Y extends TopLevel[Y with String]
+    
   }
   
 }

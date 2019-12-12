@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentProgressState.processing
+import typings.winrtDashUwp.Windows.Management.Deployment.DeploymentProgressState.queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object DeploymentProgressState extends js.Object {
   @js.native
   sealed trait queued extends DeploymentProgressState
   
-  /* 1 */ val processing: typings.winrtDashUwp.Windows.Management.Deployment.DeploymentProgressState.processing with Double = js.native
-  /* 0 */ val queued: typings.winrtDashUwp.Windows.Management.Deployment.DeploymentProgressState.queued with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentProgressState with Double] = js.native
+  /* 1 */ @js.native
+  object processing extends TopLevel[processing with Double]
+  
+  /* 0 */ @js.native
+  object queued extends TopLevel[queued with Double]
+  
 }
 

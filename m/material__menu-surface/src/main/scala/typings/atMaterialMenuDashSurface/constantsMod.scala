@@ -1,7 +1,20 @@
 package typings.atMaterialMenuDashSurface
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialMenuDashSurface.constantsMod.Corner
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_END
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_LEFT
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_RIGHT
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_START
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_END
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_LEFT
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_RIGHT
+import typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_START
 import typings.atMaterialMenuDashSurface.constantsMod.CornerBit
+import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.BOTTOM
+import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.CENTER
+import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.FLIP_RTL
+import typings.atMaterialMenuDashSurface.constantsMod.CornerBit.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,16 +61,32 @@ object constantsMod extends js.Object {
     @js.native
     sealed trait TOP_START extends Corner
     
-    /* 13 */ val BOTTOM_END: typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_END with Double = js.native
-    /* 1 */ val BOTTOM_LEFT: typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_LEFT with Double = js.native
-    /* 5 */ val BOTTOM_RIGHT: typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_RIGHT with Double = js.native
-    /* 9 */ val BOTTOM_START: typings.atMaterialMenuDashSurface.constantsMod.Corner.BOTTOM_START with Double = js.native
-    /* 12 */ val TOP_END: typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_END with Double = js.native
-    /* 0 */ val TOP_LEFT: typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_LEFT with Double = js.native
-    /* 4 */ val TOP_RIGHT: typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_RIGHT with Double = js.native
-    /* 8 */ val TOP_START: typings.atMaterialMenuDashSurface.constantsMod.Corner.TOP_START with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Corner with Double] = js.native
+    /* 13 */ @js.native
+    object BOTTOM_END extends TopLevel[BOTTOM_END with Double]
+    
+    /* 1 */ @js.native
+    object BOTTOM_LEFT extends TopLevel[BOTTOM_LEFT with Double]
+    
+    /* 5 */ @js.native
+    object BOTTOM_RIGHT extends TopLevel[BOTTOM_RIGHT with Double]
+    
+    /* 9 */ @js.native
+    object BOTTOM_START extends TopLevel[BOTTOM_START with Double]
+    
+    /* 12 */ @js.native
+    object TOP_END extends TopLevel[TOP_END with Double]
+    
+    /* 0 */ @js.native
+    object TOP_LEFT extends TopLevel[TOP_LEFT with Double]
+    
+    /* 4 */ @js.native
+    object TOP_RIGHT extends TopLevel[TOP_RIGHT with Double]
+    
+    /* 8 */ @js.native
+    object TOP_START extends TopLevel[TOP_START with Double]
+    
   }
   
   /**
@@ -77,12 +106,20 @@ object constantsMod extends js.Object {
     @js.native
     sealed trait RIGHT extends CornerBit
     
-    /* 1 */ val BOTTOM: typings.atMaterialMenuDashSurface.constantsMod.CornerBit.BOTTOM with Double = js.native
-    /* 2 */ val CENTER: typings.atMaterialMenuDashSurface.constantsMod.CornerBit.CENTER with Double = js.native
-    /* 8 */ val FLIP_RTL: typings.atMaterialMenuDashSurface.constantsMod.CornerBit.FLIP_RTL with Double = js.native
-    /* 4 */ val RIGHT: typings.atMaterialMenuDashSurface.constantsMod.CornerBit.RIGHT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CornerBit with Double] = js.native
+    /* 1 */ @js.native
+    object BOTTOM extends TopLevel[BOTTOM with Double]
+    
+    /* 2 */ @js.native
+    object CENTER extends TopLevel[CENTER with Double]
+    
+    /* 8 */ @js.native
+    object FLIP_RTL extends TopLevel[FLIP_RTL with Double]
+    
+    /* 4 */ @js.native
+    object RIGHT extends TopLevel[RIGHT with Double]
+    
   }
   
   /**

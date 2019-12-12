@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.AppService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.failure
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.resourceLimitsExceeded
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.success
+import typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object AppServiceResponseStatus extends js.Object {
   @js.native
   sealed trait unknown extends AppServiceResponseStatus
   
-  /* 1 */ val failure: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.failure with Double = js.native
-  /* 2 */ val resourceLimitsExceeded: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.resourceLimitsExceeded with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.success with Double = js.native
-  /* 3 */ val unknown: typings.winrtDashUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppServiceResponseStatus with Double] = js.native
+  /* 1 */ @js.native
+  object failure extends TopLevel[failure with Double]
+  
+  /* 2 */ @js.native
+  object resourceLimitsExceeded extends TopLevel[resourceLimitsExceeded with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 3 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

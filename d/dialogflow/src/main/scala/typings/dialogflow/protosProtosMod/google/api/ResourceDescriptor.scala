@@ -1,7 +1,11 @@
 package typings.dialogflow.protosProtosMod.google.api
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History
+import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN
+import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -121,11 +125,17 @@ object ResourceDescriptor extends js.Object {
     @js.native
     sealed trait ORIGINALLY_SINGLE_PATTERN extends History
     
-    /* 2 */ val FUTURE_MULTI_PATTERN: typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN with Double = js.native
-    /* 0 */ val HISTORY_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED with Double = js.native
-    /* 1 */ val ORIGINALLY_SINGLE_PATTERN: typings.dialogflow.protosProtosMod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[History with Double] = js.native
+    /* 2 */ @js.native
+    object FUTURE_MULTI_PATTERN extends TopLevel[FUTURE_MULTI_PATTERN with Double]
+    
+    /* 0 */ @js.native
+    object HISTORY_UNSPECIFIED extends TopLevel[HISTORY_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object ORIGINALLY_SINGLE_PATTERN extends TopLevel[ORIGINALLY_SINGLE_PATTERN with Double]
+    
   }
   
 }

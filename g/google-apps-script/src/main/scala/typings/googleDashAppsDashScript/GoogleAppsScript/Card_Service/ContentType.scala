@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.IMMUTABLE_HTML
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.MUTABLE_HTML
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ContentType extends js.Object {
   @js.native
   sealed trait TEXT extends ContentType
   
-  /* 2 */ val IMMUTABLE_HTML: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.IMMUTABLE_HTML with Double = js.native
-  /* 1 */ val MUTABLE_HTML: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.MUTABLE_HTML with Double = js.native
-  /* 0 */ val TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.ContentType.TEXT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
+  /* 2 */ @js.native
+  object IMMUTABLE_HTML extends TopLevel[IMMUTABLE_HTML with Double]
+  
+  /* 1 */ @js.native
+  object MUTABLE_HTML extends TopLevel[MUTABLE_HTML with Double]
+  
+  /* 0 */ @js.native
+  object TEXT extends TopLevel[TEXT with Double]
+  
 }
 

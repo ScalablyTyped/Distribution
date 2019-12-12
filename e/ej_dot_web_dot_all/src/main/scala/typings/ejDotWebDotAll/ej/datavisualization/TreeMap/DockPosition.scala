@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Bottom
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Left
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Right
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object DockPosition extends js.Object {
   @js.native
   sealed trait Top extends DockPosition
   
-  /* 1 */ val Bottom: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Bottom with Double = js.native
-  /* 3 */ val Left: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Left with Double = js.native
-  /* 2 */ val Right: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Right with Double = js.native
-  /* 0 */ val Top: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.DockPosition.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DockPosition with Double] = js.native
+  /* 1 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 3 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 2 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
+  /* 0 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

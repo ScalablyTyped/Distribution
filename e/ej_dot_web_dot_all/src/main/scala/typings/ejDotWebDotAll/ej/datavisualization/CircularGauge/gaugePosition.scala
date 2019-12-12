@@ -1,5 +1,15 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomCenter
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomLeft
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomRight
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.Center
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleLeft
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleRight
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopCenter
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopLeft
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,16 +56,34 @@ object gaugePosition extends js.Object {
   @js.native
   sealed trait TopRight extends gaugePosition
   
-  /* 8 */ val BottomCenter: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomCenter with Double = js.native
-  /* 6 */ val BottomLeft: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomLeft with Double = js.native
-  /* 7 */ val BottomRight: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.BottomRight with Double = js.native
-  /* 5 */ val Center: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.Center with Double = js.native
-  /* 3 */ val MiddleLeft: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleLeft with Double = js.native
-  /* 4 */ val MiddleRight: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.MiddleRight with Double = js.native
-  /* 2 */ val TopCenter: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopCenter with Double = js.native
-  /* 0 */ val TopLeft: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopLeft with Double = js.native
-  /* 1 */ val TopRight: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.gaugePosition.TopRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[gaugePosition with Double] = js.native
+  /* 8 */ @js.native
+  object BottomCenter extends TopLevel[BottomCenter with Double]
+  
+  /* 6 */ @js.native
+  object BottomLeft extends TopLevel[BottomLeft with Double]
+  
+  /* 7 */ @js.native
+  object BottomRight extends TopLevel[BottomRight with Double]
+  
+  /* 5 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 3 */ @js.native
+  object MiddleLeft extends TopLevel[MiddleLeft with Double]
+  
+  /* 4 */ @js.native
+  object MiddleRight extends TopLevel[MiddleRight with Double]
+  
+  /* 2 */ @js.native
+  object TopCenter extends TopLevel[TopCenter with Double]
+  
+  /* 0 */ @js.native
+  object TopLeft extends TopLevel[TopLeft with Double]
+  
+  /* 1 */ @js.native
+  object TopRight extends TopLevel[TopRight with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Networking
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.DomainNameType.fullyQualified
+import typings.winrtDashUwp.Windows.Networking.DomainNameType.suffix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object DomainNameType extends js.Object {
   @js.native
   sealed trait suffix extends DomainNameType
   
-  /* 1 */ val fullyQualified: typings.winrtDashUwp.Windows.Networking.DomainNameType.fullyQualified with Double = js.native
-  /* 0 */ val suffix: typings.winrtDashUwp.Windows.Networking.DomainNameType.suffix with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DomainNameType with Double] = js.native
+  /* 1 */ @js.native
+  object fullyQualified extends TopLevel[fullyQualified with Double]
+  
+  /* 0 */ @js.native
+  object suffix extends TopLevel[suffix with Double]
+  
 }
 

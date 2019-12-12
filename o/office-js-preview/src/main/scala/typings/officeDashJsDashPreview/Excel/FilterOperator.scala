@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.FilterOperator.and
+import typings.officeDashJsDashPreview.Excel.FilterOperator.or
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object FilterOperator extends js.Object {
   @js.native
   sealed trait or extends FilterOperator
   
-  /* "And" */ val and: typings.officeDashJsDashPreview.Excel.FilterOperator.and with String = js.native
-  /* "Or" */ val or: typings.officeDashJsDashPreview.Excel.FilterOperator.or with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FilterOperator with String] = js.native
+  /* "And" */ @js.native
+  object and extends TopLevel[and with String]
+  
+  /* "Or" */ @js.native
+  object or extends TopLevel[or with String]
+  
 }
 

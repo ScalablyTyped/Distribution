@@ -1,5 +1,36 @@
 package typings.winrtDashUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.closePunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.connectorPunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.control
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.currencySymbol
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.dashPunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.decimalDigitNumber
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.enclosingMark
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.finalQuotePunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.format
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.initialQuotePunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.letterNumber
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.lineSeparator
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.lowercaseLetter
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.mathSymbol
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.modifierLetter
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.modifierSymbol
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.nonspacingMark
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.notAssigned
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.openPunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherLetter
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherNumber
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherPunctuation
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherSymbol
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.paragraphSeparator
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.privateUse
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.spaceSeparator
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.spacingCombiningMark
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.surrogate
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.titlecaseLetter
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.uppercaseLetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,37 +162,97 @@ object UnicodeGeneralCategory extends js.Object {
   @js.native
   sealed trait uppercaseLetter extends UnicodeGeneralCategory
   
-  /* 21 */ val closePunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.closePunctuation with Double = js.native
-  /* 18 */ val connectorPunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.connectorPunctuation with Double = js.native
-  /* 14 */ val control: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.control with Double = js.native
-  /* 26 */ val currencySymbol: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.currencySymbol with Double = js.native
-  /* 19 */ val dashPunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.dashPunctuation with Double = js.native
-  /* 8 */ val decimalDigitNumber: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.decimalDigitNumber with Double = js.native
-  /* 7 */ val enclosingMark: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.enclosingMark with Double = js.native
-  /* 23 */ val finalQuotePunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.finalQuotePunctuation with Double = js.native
-  /* 15 */ val format: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.format with Double = js.native
-  /* 22 */ val initialQuotePunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.initialQuotePunctuation with Double = js.native
-  /* 9 */ val letterNumber: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.letterNumber with Double = js.native
-  /* 12 */ val lineSeparator: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.lineSeparator with Double = js.native
-  /* 1 */ val lowercaseLetter: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.lowercaseLetter with Double = js.native
-  /* 25 */ val mathSymbol: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.mathSymbol with Double = js.native
-  /* 3 */ val modifierLetter: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.modifierLetter with Double = js.native
-  /* 27 */ val modifierSymbol: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.modifierSymbol with Double = js.native
-  /* 5 */ val nonspacingMark: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.nonspacingMark with Double = js.native
-  /* 29 */ val notAssigned: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.notAssigned with Double = js.native
-  /* 20 */ val openPunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.openPunctuation with Double = js.native
-  /* 4 */ val otherLetter: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherLetter with Double = js.native
-  /* 10 */ val otherNumber: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherNumber with Double = js.native
-  /* 24 */ val otherPunctuation: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherPunctuation with Double = js.native
-  /* 28 */ val otherSymbol: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.otherSymbol with Double = js.native
-  /* 13 */ val paragraphSeparator: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.paragraphSeparator with Double = js.native
-  /* 17 */ val privateUse: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.privateUse with Double = js.native
-  /* 11 */ val spaceSeparator: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.spaceSeparator with Double = js.native
-  /* 6 */ val spacingCombiningMark: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.spacingCombiningMark with Double = js.native
-  /* 16 */ val surrogate: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.surrogate with Double = js.native
-  /* 2 */ val titlecaseLetter: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.titlecaseLetter with Double = js.native
-  /* 0 */ val uppercaseLetter: typings.winrtDashUwp.Windows.Data.Text.UnicodeGeneralCategory.uppercaseLetter with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnicodeGeneralCategory with Double] = js.native
+  /* 21 */ @js.native
+  object closePunctuation extends TopLevel[closePunctuation with Double]
+  
+  /* 18 */ @js.native
+  object connectorPunctuation extends TopLevel[connectorPunctuation with Double]
+  
+  /* 14 */ @js.native
+  object control extends TopLevel[control with Double]
+  
+  /* 26 */ @js.native
+  object currencySymbol extends TopLevel[currencySymbol with Double]
+  
+  /* 19 */ @js.native
+  object dashPunctuation extends TopLevel[dashPunctuation with Double]
+  
+  /* 8 */ @js.native
+  object decimalDigitNumber extends TopLevel[decimalDigitNumber with Double]
+  
+  /* 7 */ @js.native
+  object enclosingMark extends TopLevel[enclosingMark with Double]
+  
+  /* 23 */ @js.native
+  object finalQuotePunctuation extends TopLevel[finalQuotePunctuation with Double]
+  
+  /* 15 */ @js.native
+  object format extends TopLevel[format with Double]
+  
+  /* 22 */ @js.native
+  object initialQuotePunctuation extends TopLevel[initialQuotePunctuation with Double]
+  
+  /* 9 */ @js.native
+  object letterNumber extends TopLevel[letterNumber with Double]
+  
+  /* 12 */ @js.native
+  object lineSeparator extends TopLevel[lineSeparator with Double]
+  
+  /* 1 */ @js.native
+  object lowercaseLetter extends TopLevel[lowercaseLetter with Double]
+  
+  /* 25 */ @js.native
+  object mathSymbol extends TopLevel[mathSymbol with Double]
+  
+  /* 3 */ @js.native
+  object modifierLetter extends TopLevel[modifierLetter with Double]
+  
+  /* 27 */ @js.native
+  object modifierSymbol extends TopLevel[modifierSymbol with Double]
+  
+  /* 5 */ @js.native
+  object nonspacingMark extends TopLevel[nonspacingMark with Double]
+  
+  /* 29 */ @js.native
+  object notAssigned extends TopLevel[notAssigned with Double]
+  
+  /* 20 */ @js.native
+  object openPunctuation extends TopLevel[openPunctuation with Double]
+  
+  /* 4 */ @js.native
+  object otherLetter extends TopLevel[otherLetter with Double]
+  
+  /* 10 */ @js.native
+  object otherNumber extends TopLevel[otherNumber with Double]
+  
+  /* 24 */ @js.native
+  object otherPunctuation extends TopLevel[otherPunctuation with Double]
+  
+  /* 28 */ @js.native
+  object otherSymbol extends TopLevel[otherSymbol with Double]
+  
+  /* 13 */ @js.native
+  object paragraphSeparator extends TopLevel[paragraphSeparator with Double]
+  
+  /* 17 */ @js.native
+  object privateUse extends TopLevel[privateUse with Double]
+  
+  /* 11 */ @js.native
+  object spaceSeparator extends TopLevel[spaceSeparator with Double]
+  
+  /* 6 */ @js.native
+  object spacingCombiningMark extends TopLevel[spacingCombiningMark with Double]
+  
+  /* 16 */ @js.native
+  object surrogate extends TopLevel[surrogate with Double]
+  
+  /* 2 */ @js.native
+  object titlecaseLetter extends TopLevel[titlecaseLetter with Double]
+  
+  /* 0 */ @js.native
+  object uppercaseLetter extends TopLevel[uppercaseLetter with Double]
+  
 }
 

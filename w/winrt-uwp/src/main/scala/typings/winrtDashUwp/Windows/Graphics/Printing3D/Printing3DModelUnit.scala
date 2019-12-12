@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.centimeter
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.foot
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.inch
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.meter
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.micron
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.millimeter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object Printing3DModelUnit extends js.Object {
   @js.native
   sealed trait millimeter extends Printing3DModelUnit
   
-  /* 3 */ val centimeter: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.centimeter with Double = js.native
-  /* 5 */ val foot: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.foot with Double = js.native
-  /* 4 */ val inch: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.inch with Double = js.native
-  /* 0 */ val meter: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.meter with Double = js.native
-  /* 1 */ val micron: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.micron with Double = js.native
-  /* 2 */ val millimeter: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DModelUnit.millimeter with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Printing3DModelUnit with Double] = js.native
+  /* 3 */ @js.native
+  object centimeter extends TopLevel[centimeter with Double]
+  
+  /* 5 */ @js.native
+  object foot extends TopLevel[foot with Double]
+  
+  /* 4 */ @js.native
+  object inch extends TopLevel[inch with Double]
+  
+  /* 0 */ @js.native
+  object meter extends TopLevel[meter with Double]
+  
+  /* 1 */ @js.native
+  object micron extends TopLevel[micron with Double]
+  
+  /* 2 */ @js.native
+  object millimeter extends TopLevel[millimeter with Double]
+  
 }
 

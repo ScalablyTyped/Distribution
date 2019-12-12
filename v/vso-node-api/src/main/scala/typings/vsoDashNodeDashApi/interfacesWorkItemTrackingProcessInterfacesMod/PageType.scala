@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Attachments
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Custom
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.History
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Links
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PageType extends js.Object {
   @js.native
   sealed trait Links extends PageType
   
-  /* 4 */ val Attachments: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Attachments with Double = js.native
-  /* 1 */ val Custom: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Custom with Double = js.native
-  /* 2 */ val History: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.History with Double = js.native
-  /* 3 */ val Links: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.PageType.Links with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PageType with Double] = js.native
+  /* 4 */ @js.native
+  object Attachments extends TopLevel[Attachments with Double]
+  
+  /* 1 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 2 */ @js.native
+  object History extends TopLevel[History with Double]
+  
+  /* 3 */ @js.native
+  object Links extends TopLevel[Links with Double]
+  
 }
 

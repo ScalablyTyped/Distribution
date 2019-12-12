@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.none
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.retrying
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.useForSingleSignIn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object VpnChannelRequestCredentialsOptions extends js.Object {
   @js.native
   sealed trait useForSingleSignIn extends VpnChannelRequestCredentialsOptions
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.none with Double = js.native
-  /* 1 */ val retrying: typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.retrying with Double = js.native
-  /* 2 */ val useForSingleSignIn: typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions.useForSingleSignIn with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnChannelRequestCredentialsOptions with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object retrying extends TopLevel[retrying with Double]
+  
+  /* 2 */ @js.native
+  object useForSingleSignIn extends TopLevel[useForSingleSignIn with Double]
+  
 }
 

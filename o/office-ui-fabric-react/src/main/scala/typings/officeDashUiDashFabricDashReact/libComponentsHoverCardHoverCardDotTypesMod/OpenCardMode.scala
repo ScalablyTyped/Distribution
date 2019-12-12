@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode.hotKey
+import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode.hover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object OpenCardMode extends js.Object {
   @js.native
   sealed trait hover extends OpenCardMode
   
-  /* 1 */ val hotKey: typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode.hotKey with Double = js.native
-  /* 0 */ val hover: typings.officeDashUiDashFabricDashReact.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode.hover with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OpenCardMode with Double] = js.native
+  /* 1 */ @js.native
+  object hotKey extends TopLevel[hotKey with Double]
+  
+  /* 0 */ @js.native
+  object hover extends TopLevel[hover with Double]
+  
 }
 

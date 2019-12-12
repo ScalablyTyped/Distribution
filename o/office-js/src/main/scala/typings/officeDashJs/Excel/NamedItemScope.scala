@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.NamedItemScope.workbook
+import typings.officeDashJs.Excel.NamedItemScope.worksheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object NamedItemScope extends js.Object {
   @js.native
   sealed trait worksheet extends NamedItemScope
   
-  /* "Workbook" */ val workbook: typings.officeDashJs.Excel.NamedItemScope.workbook with String = js.native
-  /* "Worksheet" */ val worksheet: typings.officeDashJs.Excel.NamedItemScope.worksheet with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NamedItemScope with String] = js.native
+  /* "Workbook" */ @js.native
+  object workbook extends TopLevel[workbook with String]
+  
+  /* "Worksheet" */ @js.native
+  object worksheet extends TopLevel[worksheet with String]
+  
 }
 

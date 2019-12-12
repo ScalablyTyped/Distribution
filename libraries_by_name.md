@@ -2109,6 +2109,7 @@
 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F | - |
 | [firebase__remote-config](./f/firebase__remote-config) | The Remote Config package of the Firebase JS SDK | - |
 | [firebase__remote-config-t](./f/firebase__remote-config-types) | @firebase/remote-config Types | - |
+| [firebase__storage](./f/firebase__storage) | This is the Cloud Storage component of the Firebas | - |
 | [firebase__storage-types](./f/firebase__storage-types) | @firebase/storage Types | - |
 | [firebase__util](./f/firebase__util) | _NOTE: This is specifically tailored for Firebase  | - |
 | [firebird](./f/firebird) | Firebird binding to node, uses libfbclient. | - |
@@ -3228,6 +3229,7 @@
 | [jest-axe](./j/jest-axe) | Custom Jest matcher for aXe for testing accessibil | jest, matcher, axe, accessibility, a11y |
 | [jest-changed-files](./j/jest-changed-files) | A module used internally by Jest to check which fi | - |
 | [jest-cli](./j/jest-cli) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
+| [jest-config](./j/jest-config) | - | - |
 | [jest-dev-server](./j/jest-dev-server) | Starts a server before your Jest tests and tears i | jest, jest-environment, server |
 | [jest-diff](./j/jest-diff) | - | - |
 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and pa | - |
@@ -7533,7 +7535,6 @@
 | [typescript-event-handler](./t/typescript-event-handler) | Event handler written in Typescript. | Typescript, Events |
 | [typescript-logic](./t/typescript-logic) | TypeScript generics to work with boolean types | logic, generic, typescript, boolean, true, false |
 | [typescript-optional](./t/typescript-optional) | Optional (like Java) implementation in TypeScript | java, optional, typescript |
-| [typescript-services](./t/typescript-services) | Open up TypeScript language services for nodejs co | typescript, api, compiler, language, microsoft |
 | [typescript-tuple](./t/typescript-tuple) | Generics to work with tuples in TypeScript | generic, tuple, typescript |
 | [typesettable](./t/typesettable) | A typesetting library for SVG and Canvas | canvas, svg, text, wrap |
 | [typestub-ipfs](./t/typestub-ipfs) | The type definition for IPFS package | ipfs, types, typestub |
@@ -8012,7 +8013,6 @@
 | [workbox-routing](./w/workbox-routing) | A service worker helper library to route request U | workbox, workboxjs, service worker, sw, router, routing |
 | [workbox-strategies](./w/workbox-strategies) | A service worker helper library implementing commo | workbox, workboxjs, service worker, sw, router, routing |
 | [workbox-streams](./w/workbox-streams) | A library that makes it easier to work with Stream | workbox, workboxjs, service worker, sw, streams, readablestream |
-| [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the  | workbox, workboxjs, service worker, sw |
 | [workbox-webpack-plugin](./w/workbox-webpack-plugin) | A plugin for your Webpack build process, helping y | workbox, workboxjs, webpack, service worker, caching, fetch requests, offline, file manifest |
 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru | workbox, workboxjs, service worker, sw, window, message, postMessage |
 | [worker-farm](./w/worker-farm) | Distribute processing tasks to child processes wit | worker, child, processing, farm |

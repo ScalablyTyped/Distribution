@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots-puppeteer"
-version := "5.1-dt-20191122Z-466b8b"
+version := "5.1-dt-20191122Z-971d33"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,11 +20,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20191009Z-c8962f",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "storybook__addon-storyshots" % "5.1-dt-20191122Z-8dfc80",
-  "org.scalablytyped" %%% "storybook__addons" % "5.2.6-6ed97a",
-  "org.scalablytyped" %%% "storybook__api" % "5.2.6-def4ec",
+  "org.scalablytyped" %%% "storybook__addon-storyshots" % "5.1-dt-20191122Z-3aa1de",
+  "org.scalablytyped" %%% "storybook__addons" % "5.2.6-60a914",
+  "org.scalablytyped" %%% "storybook__api" % "5.2.6-1da756",
   "org.scalablytyped" %%% "storybook__channels" % "5.2.6-06fa66",
-  "org.scalablytyped" %%% "storybook__react" % "5.2.6-1f6699",
+  "org.scalablytyped" %%% "storybook__react" % "5.2.6-1c5eb0",
   "org.scalablytyped" %%% "storybook__theming" % "5.2.6-9ccce3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

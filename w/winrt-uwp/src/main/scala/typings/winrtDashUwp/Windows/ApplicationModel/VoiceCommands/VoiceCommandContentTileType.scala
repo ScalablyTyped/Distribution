@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleOnly
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140Icon
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140IconAndText
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68Icon
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68IconAndText
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92Icon
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92IconAndText
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWithText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object VoiceCommandContentTileType extends js.Object {
   @js.native
   sealed trait titleWithText extends VoiceCommandContentTileType
   
-  /* 0 */ val titleOnly: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleOnly with Double = js.native
-  /* 6 */ val titleWith280x140Icon: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140Icon with Double = js.native
-  /* 7 */ val titleWith280x140IconAndText: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith280x140IconAndText with Double = js.native
-  /* 2 */ val titleWith68x68Icon: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68Icon with Double = js.native
-  /* 3 */ val titleWith68x68IconAndText: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x68IconAndText with Double = js.native
-  /* 4 */ val titleWith68x92Icon: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92Icon with Double = js.native
-  /* 5 */ val titleWith68x92IconAndText: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWith68x92IconAndText with Double = js.native
-  /* 1 */ val titleWithText: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType.titleWithText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VoiceCommandContentTileType with Double] = js.native
+  /* 0 */ @js.native
+  object titleOnly extends TopLevel[titleOnly with Double]
+  
+  /* 6 */ @js.native
+  object titleWith280x140Icon extends TopLevel[titleWith280x140Icon with Double]
+  
+  /* 7 */ @js.native
+  object titleWith280x140IconAndText extends TopLevel[titleWith280x140IconAndText with Double]
+  
+  /* 2 */ @js.native
+  object titleWith68x68Icon extends TopLevel[titleWith68x68Icon with Double]
+  
+  /* 3 */ @js.native
+  object titleWith68x68IconAndText extends TopLevel[titleWith68x68IconAndText with Double]
+  
+  /* 4 */ @js.native
+  object titleWith68x92Icon extends TopLevel[titleWith68x92Icon with Double]
+  
+  /* 5 */ @js.native
+  object titleWith68x92IconAndText extends TopLevel[titleWith68x92IconAndText with Double]
+  
+  /* 1 */ @js.native
+  object titleWithText extends TopLevel[titleWithText with Double]
+  
 }
 

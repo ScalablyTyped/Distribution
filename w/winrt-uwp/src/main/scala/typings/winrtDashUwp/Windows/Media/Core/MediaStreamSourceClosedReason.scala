@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.appReportedError
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.done
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.missingSampleRequestedEventHandler
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.protectionSystemFailure
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unknownError
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedEncodingFormat
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedProtectionSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object MediaStreamSourceClosedReason extends js.Object {
   @js.native
   sealed trait unsupportedProtectionSystem extends MediaStreamSourceClosedReason
   
-  /* 2 */ val appReportedError: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.appReportedError with Double = js.native
-  /* 0 */ val done: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.done with Double = js.native
-  /* 6 */ val missingSampleRequestedEventHandler: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.missingSampleRequestedEventHandler with Double = js.native
-  /* 4 */ val protectionSystemFailure: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.protectionSystemFailure with Double = js.native
-  /* 1 */ val unknownError: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unknownError with Double = js.native
-  /* 5 */ val unsupportedEncodingFormat: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedEncodingFormat with Double = js.native
-  /* 3 */ val unsupportedProtectionSystem: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceClosedReason.unsupportedProtectionSystem with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaStreamSourceClosedReason with Double] = js.native
+  /* 2 */ @js.native
+  object appReportedError extends TopLevel[appReportedError with Double]
+  
+  /* 0 */ @js.native
+  object done extends TopLevel[done with Double]
+  
+  /* 6 */ @js.native
+  object missingSampleRequestedEventHandler extends TopLevel[missingSampleRequestedEventHandler with Double]
+  
+  /* 4 */ @js.native
+  object protectionSystemFailure extends TopLevel[protectionSystemFailure with Double]
+  
+  /* 1 */ @js.native
+  object unknownError extends TopLevel[unknownError with Double]
+  
+  /* 5 */ @js.native
+  object unsupportedEncodingFormat extends TopLevel[unsupportedEncodingFormat with Double]
+  
+  /* 3 */ @js.native
+  object unsupportedProtectionSystem extends TopLevel[unsupportedProtectionSystem with Double]
+  
 }
 

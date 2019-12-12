@@ -1,5 +1,11 @@
 package typings.camljs.camljsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.camljs.camljsMod.DateRangesOverlapType.Day
+import typings.camljs.camljsMod.DateRangesOverlapType.Month
+import typings.camljs.camljsMod.DateRangesOverlapType.Now
+import typings.camljs.camljsMod.DateRangesOverlapType.Week
+import typings.camljs.camljsMod.DateRangesOverlapType.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object DateRangesOverlapType extends js.Object {
   @js.native
   sealed trait Year extends DateRangesOverlapType
   
-  /* 1 */ val Day: typings.camljs.camljsMod.DateRangesOverlapType.Day with Double = js.native
-  /* 3 */ val Month: typings.camljs.camljsMod.DateRangesOverlapType.Month with Double = js.native
-  /* 0 */ val Now: typings.camljs.camljsMod.DateRangesOverlapType.Now with Double = js.native
-  /* 2 */ val Week: typings.camljs.camljsMod.DateRangesOverlapType.Week with Double = js.native
-  /* 4 */ val Year: typings.camljs.camljsMod.DateRangesOverlapType.Year with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateRangesOverlapType with Double] = js.native
+  /* 1 */ @js.native
+  object Day extends TopLevel[Day with Double]
+  
+  /* 3 */ @js.native
+  object Month extends TopLevel[Month with Double]
+  
+  /* 0 */ @js.native
+  object Now extends TopLevel[Now with Double]
+  
+  /* 2 */ @js.native
+  object Week extends TopLevel[Week with Double]
+  
+  /* 4 */ @js.native
+  object Year extends TopLevel[Year with Double]
+  
 }
 

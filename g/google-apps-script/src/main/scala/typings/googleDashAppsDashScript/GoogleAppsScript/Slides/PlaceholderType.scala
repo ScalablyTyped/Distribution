@@ -1,5 +1,24 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.BODY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CENTERED_TITLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CHART
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CLIP_ART
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DATE_AND_TIME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DIAGRAM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.FOOTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.HEADER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.MEDIA
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.OBJECT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.PICTURE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_IMAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_NUMBER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SUBTITLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TABLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TITLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,25 +90,61 @@ object PlaceholderType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends PlaceholderType
   
-  /* 2 */ val BODY: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.BODY with Double = js.native
-  /* 5 */ val CENTERED_TITLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CENTERED_TITLE with Double = js.native
-  /* 3 */ val CHART: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CHART with Double = js.native
-  /* 4 */ val CLIP_ART: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.CLIP_ART with Double = js.native
-  /* 7 */ val DATE_AND_TIME: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DATE_AND_TIME with Double = js.native
-  /* 6 */ val DIAGRAM: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.DIAGRAM with Double = js.native
-  /* 8 */ val FOOTER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.FOOTER with Double = js.native
-  /* 9 */ val HEADER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.HEADER with Double = js.native
-  /* 10 */ val MEDIA: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.MEDIA with Double = js.native
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.NONE with Double = js.native
-  /* 11 */ val OBJECT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.OBJECT with Double = js.native
-  /* 12 */ val PICTURE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.PICTURE with Double = js.native
-  /* 17 */ val SLIDE_IMAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_IMAGE with Double = js.native
-  /* 13 */ val SLIDE_NUMBER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SLIDE_NUMBER with Double = js.native
-  /* 14 */ val SUBTITLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.SUBTITLE with Double = js.native
-  /* 15 */ val TABLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TABLE with Double = js.native
-  /* 16 */ val TITLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.TITLE with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PlaceholderType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlaceholderType with Double] = js.native
+  /* 2 */ @js.native
+  object BODY extends TopLevel[BODY with Double]
+  
+  /* 5 */ @js.native
+  object CENTERED_TITLE extends TopLevel[CENTERED_TITLE with Double]
+  
+  /* 3 */ @js.native
+  object CHART extends TopLevel[CHART with Double]
+  
+  /* 4 */ @js.native
+  object CLIP_ART extends TopLevel[CLIP_ART with Double]
+  
+  /* 7 */ @js.native
+  object DATE_AND_TIME extends TopLevel[DATE_AND_TIME with Double]
+  
+  /* 6 */ @js.native
+  object DIAGRAM extends TopLevel[DIAGRAM with Double]
+  
+  /* 8 */ @js.native
+  object FOOTER extends TopLevel[FOOTER with Double]
+  
+  /* 9 */ @js.native
+  object HEADER extends TopLevel[HEADER with Double]
+  
+  /* 10 */ @js.native
+  object MEDIA extends TopLevel[MEDIA with Double]
+  
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 11 */ @js.native
+  object OBJECT extends TopLevel[OBJECT with Double]
+  
+  /* 12 */ @js.native
+  object PICTURE extends TopLevel[PICTURE with Double]
+  
+  /* 17 */ @js.native
+  object SLIDE_IMAGE extends TopLevel[SLIDE_IMAGE with Double]
+  
+  /* 13 */ @js.native
+  object SLIDE_NUMBER extends TopLevel[SLIDE_NUMBER with Double]
+  
+  /* 14 */ @js.native
+  object SUBTITLE extends TopLevel[SUBTITLE with Double]
+  
+  /* 15 */ @js.native
+  object TABLE extends TopLevel[TABLE with Double]
+  
+  /* 16 */ @js.native
+  object TITLE extends TopLevel[TITLE with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

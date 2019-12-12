@@ -1,5 +1,15 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.canceled
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.completed
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.deploying
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.downloading
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorLowBattery
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRecommended
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRequired
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.otherError
+import typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +57,34 @@ object StorePackageUpdateState extends js.Object {
   @js.native
   sealed trait pending extends StorePackageUpdateState
   
-  /* 4 */ val canceled: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.canceled with Double = js.native
-  /* 3 */ val completed: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.completed with Double = js.native
-  /* 2 */ val deploying: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.deploying with Double = js.native
-  /* 1 */ val downloading: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.downloading with Double = js.native
-  /* 6 */ val errorLowBattery: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorLowBattery with Double = js.native
-  /* 7 */ val errorWiFiRecommended: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRecommended with Double = js.native
-  /* 8 */ val errorWiFiRequired: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.errorWiFiRequired with Double = js.native
-  /* 5 */ val otherError: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.otherError with Double = js.native
-  /* 0 */ val pending: typings.winrtDashUwp.Windows.Services.Store.StorePackageUpdateState.pending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StorePackageUpdateState with Double] = js.native
+  /* 4 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 3 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 2 */ @js.native
+  object deploying extends TopLevel[deploying with Double]
+  
+  /* 1 */ @js.native
+  object downloading extends TopLevel[downloading with Double]
+  
+  /* 6 */ @js.native
+  object errorLowBattery extends TopLevel[errorLowBattery with Double]
+  
+  /* 7 */ @js.native
+  object errorWiFiRecommended extends TopLevel[errorWiFiRecommended with Double]
+  
+  /* 8 */ @js.native
+  object errorWiFiRequired extends TopLevel[errorWiFiRequired with Double]
+  
+  /* 5 */ @js.native
+  object otherError extends TopLevel[otherError with Double]
+  
+  /* 0 */ @js.native
+  object pending extends TopLevel[pending with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.reactDashNavigation.reactDashNavigationMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -31,8 +32,14 @@ object Themed extends js.Object {
     def this(props: ThemedTextInputProps, context: js.Any) = this()
   }
   
-  val StatusBar: ComponentType[ThemedStatusBarProps] = js.native
-  val Text: ComponentType[ThemedTextProps] = js.native
-  val TextInput: ComponentType[ThemedTextInputProps] = js.native
+  @js.native
+  object StatusBar extends TopLevel[ComponentType[ThemedStatusBarProps]]
+  
+  @js.native
+  object Text extends TopLevel[ComponentType[ThemedTextProps]]
+  
+  @js.native
+  object TextInput extends TopLevel[ComponentType[ThemedTextInputProps]]
+  
 }
 

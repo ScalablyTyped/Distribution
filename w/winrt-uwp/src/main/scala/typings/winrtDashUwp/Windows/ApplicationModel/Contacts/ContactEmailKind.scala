@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.other
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.personal
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ContactEmailKind extends js.Object {
   @js.native
   sealed trait work extends ContactEmailKind
   
-  /* 2 */ val other: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.other with Double = js.native
-  /* 0 */ val personal: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.personal with Double = js.native
-  /* 1 */ val work: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactEmailKind.work with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactEmailKind with Double] = js.native
+  /* 2 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 0 */ @js.native
+  object personal extends TopLevel[personal with Double]
+  
+  /* 1 */ @js.native
+  object work extends TopLevel[work with Double]
+  
 }
 

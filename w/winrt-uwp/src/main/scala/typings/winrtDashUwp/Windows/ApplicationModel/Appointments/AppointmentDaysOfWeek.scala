@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.friday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.monday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.saturday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.sunday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.thursday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.tuesday
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object AppointmentDaysOfWeek extends js.Object {
   @js.native
   sealed trait wednesday extends AppointmentDaysOfWeek
   
-  /* 6 */ val friday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.friday with Double = js.native
-  /* 2 */ val monday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.monday with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.none with Double = js.native
-  /* 7 */ val saturday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.saturday with Double = js.native
-  /* 1 */ val sunday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.sunday with Double = js.native
-  /* 5 */ val thursday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.thursday with Double = js.native
-  /* 3 */ val tuesday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.tuesday with Double = js.native
-  /* 4 */ val wednesday: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentDaysOfWeek.wednesday with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentDaysOfWeek with Double] = js.native
+  /* 6 */ @js.native
+  object friday extends TopLevel[friday with Double]
+  
+  /* 2 */ @js.native
+  object monday extends TopLevel[monday with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 7 */ @js.native
+  object saturday extends TopLevel[saturday with Double]
+  
+  /* 1 */ @js.native
+  object sunday extends TopLevel[sunday with Double]
+  
+  /* 5 */ @js.native
+  object thursday extends TopLevel[thursday with Double]
+  
+  /* 3 */ @js.native
+  object tuesday extends TopLevel[tuesday with Double]
+  
+  /* 4 */ @js.native
+  object wednesday extends TopLevel[wednesday with Double]
+  
 }
 

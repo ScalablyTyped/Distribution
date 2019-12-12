@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Input.HoldingState.canceled
+import typings.winrtDashUwp.Windows.UI.Input.HoldingState.completed
+import typings.winrtDashUwp.Windows.UI.Input.HoldingState.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object HoldingState extends js.Object {
   @js.native
   sealed trait started extends HoldingState
   
-  /* 2 */ val canceled: typings.winrtDashUwp.Windows.UI.Input.HoldingState.canceled with Double = js.native
-  /* 1 */ val completed: typings.winrtDashUwp.Windows.UI.Input.HoldingState.completed with Double = js.native
-  /* 0 */ val started: typings.winrtDashUwp.Windows.UI.Input.HoldingState.started with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HoldingState with Double] = js.native
+  /* 2 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 1 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 0 */ @js.native
+  object started extends TopLevel[started with Double]
+  
 }
 

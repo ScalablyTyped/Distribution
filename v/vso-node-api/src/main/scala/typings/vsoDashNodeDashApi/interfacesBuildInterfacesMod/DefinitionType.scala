@@ -1,5 +1,7 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionType.Xaml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +18,16 @@ object DefinitionType extends js.Object {
   @js.native
   sealed trait Xaml extends DefinitionType
   
-  /* 2 */ val Build: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionType.Build with Double = js.native
-  /* 1 */ val Xaml: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionType.Xaml with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DefinitionType with Double] = js.native
+  /* 2 */ @js.native
+  object Build
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionType.Build with Double
+        ]
+  
+  /* 1 */ @js.native
+  object Xaml extends TopLevel[Xaml with Double]
+  
 }
 

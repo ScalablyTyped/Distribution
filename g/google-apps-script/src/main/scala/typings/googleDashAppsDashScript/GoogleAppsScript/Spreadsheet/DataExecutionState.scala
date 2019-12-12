@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.DATA_EXECUTION_STATE_UNSUPPORTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.ERROR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.NOT_STARTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.RUNNING
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.SUCCESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object DataExecutionState extends js.Object {
   @js.native
   sealed trait SUCCESS extends DataExecutionState
   
-  /* 0 */ val DATA_EXECUTION_STATE_UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.DATA_EXECUTION_STATE_UNSUPPORTED with Double = js.native
-  /* 3 */ val ERROR: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.ERROR with Double = js.native
-  /* 4 */ val NOT_STARTED: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.NOT_STARTED with Double = js.native
-  /* 1 */ val RUNNING: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.RUNNING with Double = js.native
-  /* 2 */ val SUCCESS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DataExecutionState.SUCCESS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataExecutionState with Double] = js.native
+  /* 0 */ @js.native
+  object DATA_EXECUTION_STATE_UNSUPPORTED extends TopLevel[DATA_EXECUTION_STATE_UNSUPPORTED with Double]
+  
+  /* 3 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 4 */ @js.native
+  object NOT_STARTED extends TopLevel[NOT_STARTED with Double]
+  
+  /* 1 */ @js.native
+  object RUNNING extends TopLevel[RUNNING with Double]
+  
+  /* 2 */ @js.native
+  object SUCCESS extends TopLevel[SUCCESS with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleBottom
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleCenter
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object TextAlignment extends js.Object {
   @js.native
   sealed trait MiddleTop extends TextAlignment
   
-  /* 2 */ val MiddleBottom: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleBottom with Double = js.native
-  /* 1 */ val MiddleCenter: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleCenter with Double = js.native
-  /* 0 */ val MiddleTop: typings.ejDotWebDotAll.ej.datavisualization.Chart.TextAlignment.MiddleTop with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
+  /* 2 */ @js.native
+  object MiddleBottom extends TopLevel[MiddleBottom with Double]
+  
+  /* 1 */ @js.native
+  object MiddleCenter extends TopLevel[MiddleCenter with Double]
+  
+  /* 0 */ @js.native
+  object MiddleTop extends TopLevel[MiddleTop with Double]
+  
 }
 

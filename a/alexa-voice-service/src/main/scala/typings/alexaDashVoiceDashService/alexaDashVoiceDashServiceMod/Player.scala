@@ -1,5 +1,14 @@
 package typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.DEQUE
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ENQUEUE
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ERROR
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.LOG
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PAUSE
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PLAY
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.REPLAY
+import typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.STOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,18 +63,34 @@ object Player extends js.Object {
     sealed trait STOP
       extends typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes
     
-    /* 7 */ val DEQUE: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.DEQUE with Double = js.native
-    /* 6 */ val ENQUEUE: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ENQUEUE with Double = js.native
-    /* 1 */ val ERROR: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.ERROR with Double = js.native
-    /* 0 */ val LOG: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.LOG with Double = js.native
-    /* 4 */ val PAUSE: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PAUSE with Double = js.native
-    /* 2 */ val PLAY: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.PLAY with Double = js.native
-    /* 3 */ val REPLAY: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.REPLAY with Double = js.native
-    /* 5 */ val STOP: typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes.STOP with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.alexaDashVoiceDashService.alexaDashVoiceDashServiceMod.Player.EventTypes with Double
       ] = js.native
+    /* 7 */ @js.native
+    object DEQUE extends TopLevel[DEQUE with Double]
+    
+    /* 6 */ @js.native
+    object ENQUEUE extends TopLevel[ENQUEUE with Double]
+    
+    /* 1 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 0 */ @js.native
+    object LOG extends TopLevel[LOG with Double]
+    
+    /* 4 */ @js.native
+    object PAUSE extends TopLevel[PAUSE with Double]
+    
+    /* 2 */ @js.native
+    object PLAY extends TopLevel[PLAY with Double]
+    
+    /* 3 */ @js.native
+    object REPLAY extends TopLevel[REPLAY with Double]
+    
+    /* 5 */ @js.native
+    object STOP extends TopLevel[STOP with Double]
+    
   }
   
 }

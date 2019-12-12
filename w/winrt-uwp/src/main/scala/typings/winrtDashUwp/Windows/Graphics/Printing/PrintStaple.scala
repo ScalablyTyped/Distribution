@@ -1,5 +1,19 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.default
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.none
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.notAvailable
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.printerCustom
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.saddleStitch
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleBottomLeft
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleBottomRight
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualBottom
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualLeft
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualRight
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualTop
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleTopLeft
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleTopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,20 +77,46 @@ object PrintStaple extends js.Object {
   @js.native
   sealed trait stapleTopRight extends PrintStaple
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.default with Double = js.native
-  /* 3 */ val none: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.none with Double = js.native
-  /* 1 */ val notAvailable: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.notAvailable with Double = js.native
-  /* 2 */ val printerCustom: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.printerCustom with Double = js.native
-  /* 12 */ val saddleStitch: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.saddleStitch with Double = js.native
-  /* 6 */ val stapleBottomLeft: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleBottomLeft with Double = js.native
-  /* 7 */ val stapleBottomRight: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleBottomRight with Double = js.native
-  /* 11 */ val stapleDualBottom: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualBottom with Double = js.native
-  /* 8 */ val stapleDualLeft: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualLeft with Double = js.native
-  /* 9 */ val stapleDualRight: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualRight with Double = js.native
-  /* 10 */ val stapleDualTop: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleDualTop with Double = js.native
-  /* 4 */ val stapleTopLeft: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleTopLeft with Double = js.native
-  /* 5 */ val stapleTopRight: typings.winrtDashUwp.Windows.Graphics.Printing.PrintStaple.stapleTopRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintStaple with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 3 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 12 */ @js.native
+  object saddleStitch extends TopLevel[saddleStitch with Double]
+  
+  /* 6 */ @js.native
+  object stapleBottomLeft extends TopLevel[stapleBottomLeft with Double]
+  
+  /* 7 */ @js.native
+  object stapleBottomRight extends TopLevel[stapleBottomRight with Double]
+  
+  /* 11 */ @js.native
+  object stapleDualBottom extends TopLevel[stapleDualBottom with Double]
+  
+  /* 8 */ @js.native
+  object stapleDualLeft extends TopLevel[stapleDualLeft with Double]
+  
+  /* 9 */ @js.native
+  object stapleDualRight extends TopLevel[stapleDualRight with Double]
+  
+  /* 10 */ @js.native
+  object stapleDualTop extends TopLevel[stapleDualTop with Double]
+  
+  /* 4 */ @js.native
+  object stapleTopLeft extends TopLevel[stapleTopLeft with Double]
+  
+  /* 5 */ @js.native
+  object stapleTopRight extends TopLevel[stapleTopRight with Double]
+  
 }
 

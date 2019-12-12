@@ -1,5 +1,10 @@
 package typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.DOWNLOAD
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.PIXELS
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.RENDER
+import typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.UPLOAD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TextureUsage extends js.Object {
   @js.native
   sealed trait UPLOAD extends TextureUsage
   
-  /* 3 */ val DOWNLOAD: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.DOWNLOAD with Double = js.native
-  /* 2 */ val PIXELS: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.PIXELS with Double = js.native
-  /* 0 */ val RENDER: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.RENDER with Double = js.native
-  /* 1 */ val UPLOAD: typings.atTensorflowTfjsDashCore.distBackendsWebglTexUnderscoreUtilMod.TextureUsage.UPLOAD with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextureUsage with Double] = js.native
+  /* 3 */ @js.native
+  object DOWNLOAD extends TopLevel[DOWNLOAD with Double]
+  
+  /* 2 */ @js.native
+  object PIXELS extends TopLevel[PIXELS with Double]
+  
+  /* 0 */ @js.native
+  object RENDER extends TopLevel[RENDER with Double]
+  
+  /* 1 */ @js.native
+  object UPLOAD extends TopLevel[UPLOAD with Double]
+  
 }
 

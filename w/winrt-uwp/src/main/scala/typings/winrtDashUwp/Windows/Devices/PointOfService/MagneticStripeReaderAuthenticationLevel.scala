@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.notSupported
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.optional
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MagneticStripeReaderAuthenticationLevel extends js.Object {
   @js.native
   sealed trait required extends MagneticStripeReaderAuthenticationLevel
   
-  /* 0 */ val notSupported: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.notSupported with Double = js.native
-  /* 1 */ val optional: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.optional with Double = js.native
-  /* 2 */ val required: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationLevel.required with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MagneticStripeReaderAuthenticationLevel with Double] = js.native
+  /* 0 */ @js.native
+  object notSupported extends TopLevel[notSupported with Double]
+  
+  /* 1 */ @js.native
+  object optional extends TopLevel[optional with Double]
+  
+  /* 2 */ @js.native
+  object required extends TopLevel[required with Double]
+  
 }
 

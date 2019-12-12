@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "png-async"
-version := "0.9.4-34700d"
+version := "0.9.4-110141"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

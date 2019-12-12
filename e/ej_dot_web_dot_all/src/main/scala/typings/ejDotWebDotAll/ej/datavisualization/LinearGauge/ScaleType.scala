@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ScaleType.Major
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ScaleType.Minor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ScaleType extends js.Object {
   @js.native
   sealed trait Minor extends ScaleType
   
-  /* 0 */ val Major: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ScaleType.Major with Double = js.native
-  /* 1 */ val Minor: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.ScaleType.Minor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScaleType with Double] = js.native
+  /* 0 */ @js.native
+  object Major extends TopLevel[Major with Double]
+  
+  /* 1 */ @js.native
+  object Minor extends TopLevel[Minor with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepSourceDeleteTarget
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepSourceRenameTarget
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepTargetDeleteSource
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepTargetRenameSource
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.Undecided
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object GitResolutionPathConflictAction extends js.Object {
   @js.native
   sealed trait Undecided extends GitResolutionPathConflictAction
   
-  /* 2 */ val KeepSourceDeleteTarget: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepSourceDeleteTarget with Double = js.native
-  /* 1 */ val KeepSourceRenameTarget: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepSourceRenameTarget with Double = js.native
-  /* 4 */ val KeepTargetDeleteSource: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepTargetDeleteSource with Double = js.native
-  /* 3 */ val KeepTargetRenameSource: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.KeepTargetRenameSource with Double = js.native
-  /* 0 */ val Undecided: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitResolutionPathConflictAction.Undecided with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitResolutionPathConflictAction with Double] = js.native
+  /* 2 */ @js.native
+  object KeepSourceDeleteTarget extends TopLevel[KeepSourceDeleteTarget with Double]
+  
+  /* 1 */ @js.native
+  object KeepSourceRenameTarget extends TopLevel[KeepSourceRenameTarget with Double]
+  
+  /* 4 */ @js.native
+  object KeepTargetDeleteSource extends TopLevel[KeepTargetDeleteSource with Double]
+  
+  /* 3 */ @js.native
+  object KeepTargetRenameSource extends TopLevel[KeepTargetRenameSource with Double]
+  
+  /* 0 */ @js.native
+  object Undecided extends TopLevel[Undecided with Double]
+  
 }
 

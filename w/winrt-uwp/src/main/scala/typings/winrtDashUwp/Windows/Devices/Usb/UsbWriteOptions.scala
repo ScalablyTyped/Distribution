@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.autoClearStall
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.none
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.shortPacketTerminate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object UsbWriteOptions extends js.Object {
   @js.native
   sealed trait shortPacketTerminate extends UsbWriteOptions
   
-  /* 1 */ val autoClearStall: typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.autoClearStall with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.none with Double = js.native
-  /* 2 */ val shortPacketTerminate: typings.winrtDashUwp.Windows.Devices.Usb.UsbWriteOptions.shortPacketTerminate with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UsbWriteOptions with Double] = js.native
+  /* 1 */ @js.native
+  object autoClearStall extends TopLevel[autoClearStall with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object shortPacketTerminate extends TopLevel[shortPacketTerminate with Double]
+  
 }
 

@@ -8,11 +8,11 @@ import typings.atAwsDashSdkClientDashDynamodbDashNode.typesUpdateGlobalTableSett
 import typings.atAwsDashSdkClientDashDynamodbDashNode.typesUpdateTableExceptionsUnionMod.UpdateTableExceptionsUnion
 import typings.atAwsDashSdkClientDashDynamodbDashNode.typesUpdateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceInUseException
   extends ServiceException[_ResourceInUseExceptionDetails]
      with CreateTableExceptionsUnion
@@ -23,21 +23,6 @@ trait ResourceInUseException
      with UpdateTableExceptionsUnion
      with UpdateTimeToLiveExceptionsUnion {
   @JSName("name")
-  var name_ResourceInUseException: typings.atAwsDashSdkClientDashDynamodbDashNode.atAwsDashSdkClientDashDynamodbDashNodeStrings.ResourceInUseException
-}
-
-object ResourceInUseException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ResourceInUseExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashDynamodbDashNode.atAwsDashSdkClientDashDynamodbDashNodeStrings.ResourceInUseException,
-    stack: String = null
-  ): ResourceInUseException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceInUseException]
-  }
+  var name_ResourceInUseException: typings.atAwsDashSdkClientDashDynamodbDashNode.atAwsDashSdkClientDashDynamodbDashNodeStrings.ResourceInUseException = js.native
 }
 

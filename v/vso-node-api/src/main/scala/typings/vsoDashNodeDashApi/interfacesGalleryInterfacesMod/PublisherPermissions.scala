@@ -1,5 +1,18 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.Admin
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.CreatePublisher
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.DeleteExtension
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.DeletePublisher
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.EditSettings
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.ManagePermissions
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.PrivateRead
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.PublishExtension
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.Read
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.TrustedPartner
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.UpdateExtension
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.ViewPermissions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,19 +95,43 @@ object PublisherPermissions extends js.Object {
   @js.native
   sealed trait ViewPermissions extends PublisherPermissions
   
-  /* 16 */ val Admin: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.Admin with Double = js.native
-  /* 4 */ val CreatePublisher: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.CreatePublisher with Double = js.native
-  /* 128 */ val DeleteExtension: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.DeleteExtension with Double = js.native
-  /* 2048 */ val DeletePublisher: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.DeletePublisher with Double = js.native
-  /* 256 */ val EditSettings: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.EditSettings with Double = js.native
-  /* 1024 */ val ManagePermissions: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.ManagePermissions with Double = js.native
-  /* 64 */ val PrivateRead: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.PrivateRead with Double = js.native
-  /* 8 */ val PublishExtension: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.PublishExtension with Double = js.native
-  /* 1 */ val Read: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.Read with Double = js.native
-  /* 32 */ val TrustedPartner: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.TrustedPartner with Double = js.native
-  /* 2 */ val UpdateExtension: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.UpdateExtension with Double = js.native
-  /* 512 */ val ViewPermissions: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherPermissions.ViewPermissions with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PublisherPermissions with Double] = js.native
+  /* 16 */ @js.native
+  object Admin extends TopLevel[Admin with Double]
+  
+  /* 4 */ @js.native
+  object CreatePublisher extends TopLevel[CreatePublisher with Double]
+  
+  /* 128 */ @js.native
+  object DeleteExtension extends TopLevel[DeleteExtension with Double]
+  
+  /* 2048 */ @js.native
+  object DeletePublisher extends TopLevel[DeletePublisher with Double]
+  
+  /* 256 */ @js.native
+  object EditSettings extends TopLevel[EditSettings with Double]
+  
+  /* 1024 */ @js.native
+  object ManagePermissions extends TopLevel[ManagePermissions with Double]
+  
+  /* 64 */ @js.native
+  object PrivateRead extends TopLevel[PrivateRead with Double]
+  
+  /* 8 */ @js.native
+  object PublishExtension extends TopLevel[PublishExtension with Double]
+  
+  /* 1 */ @js.native
+  object Read extends TopLevel[Read with Double]
+  
+  /* 32 */ @js.native
+  object TrustedPartner extends TopLevel[TrustedPartner with Double]
+  
+  /* 2 */ @js.native
+  object UpdateExtension extends TopLevel[UpdateExtension with Double]
+  
+  /* 512 */ @js.native
+  object ViewPermissions extends TopLevel[ViewPermissions with Double]
+  
 }
 

@@ -1,5 +1,20 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.signature.binary
+import typings.openpgp.openpgpMod.enums.signature.cert_casual
+import typings.openpgp.openpgpMod.enums.signature.cert_generic
+import typings.openpgp.openpgpMod.enums.signature.cert_persona
+import typings.openpgp.openpgpMod.enums.signature.cert_positive
+import typings.openpgp.openpgpMod.enums.signature.cert_revocation
+import typings.openpgp.openpgpMod.enums.signature.key_binding
+import typings.openpgp.openpgpMod.enums.signature.key_revocation
+import typings.openpgp.openpgpMod.enums.signature.standalone
+import typings.openpgp.openpgpMod.enums.signature.subkey_binding
+import typings.openpgp.openpgpMod.enums.signature.subkey_revocation
+import typings.openpgp.openpgpMod.enums.signature.text
+import typings.openpgp.openpgpMod.enums.signature.third_party
+import typings.openpgp.openpgpMod.enums.signature.timestamp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -187,22 +202,53 @@ object signature extends js.Object {
   sealed trait timestamp
     extends typings.openpgp.openpgpMod.enums.signature
   
-  /* 0 */ val binary: typings.openpgp.openpgpMod.enums.signature.binary with Double = js.native
-  /* 18 */ val cert_casual: typings.openpgp.openpgpMod.enums.signature.cert_casual with Double = js.native
-  /* 16 */ val cert_generic: typings.openpgp.openpgpMod.enums.signature.cert_generic with Double = js.native
-  /* 17 */ val cert_persona: typings.openpgp.openpgpMod.enums.signature.cert_persona with Double = js.native
-  /* 19 */ val cert_positive: typings.openpgp.openpgpMod.enums.signature.cert_positive with Double = js.native
-  /* 48 */ val cert_revocation: typings.openpgp.openpgpMod.enums.signature.cert_revocation with Double = js.native
-  /* 31 */ val key: typings.openpgp.openpgpMod.enums.signature.key with Double = js.native
-  /* 25 */ val key_binding: typings.openpgp.openpgpMod.enums.signature.key_binding with Double = js.native
-  /* 32 */ val key_revocation: typings.openpgp.openpgpMod.enums.signature.key_revocation with Double = js.native
-  /* 2 */ val standalone: typings.openpgp.openpgpMod.enums.signature.standalone with Double = js.native
-  /* 24 */ val subkey_binding: typings.openpgp.openpgpMod.enums.signature.subkey_binding with Double = js.native
-  /* 40 */ val subkey_revocation: typings.openpgp.openpgpMod.enums.signature.subkey_revocation with Double = js.native
-  /* 1 */ val text: typings.openpgp.openpgpMod.enums.signature.text with Double = js.native
-  /* 80 */ val third_party: typings.openpgp.openpgpMod.enums.signature.third_party with Double = js.native
-  /* 64 */ val timestamp: typings.openpgp.openpgpMod.enums.signature.timestamp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.openpgp.openpgpMod.enums.signature with Double] = js.native
+  /* 0 */ @js.native
+  object binary extends TopLevel[binary with Double]
+  
+  /* 18 */ @js.native
+  object cert_casual extends TopLevel[cert_casual with Double]
+  
+  /* 16 */ @js.native
+  object cert_generic extends TopLevel[cert_generic with Double]
+  
+  /* 17 */ @js.native
+  object cert_persona extends TopLevel[cert_persona with Double]
+  
+  /* 19 */ @js.native
+  object cert_positive extends TopLevel[cert_positive with Double]
+  
+  /* 48 */ @js.native
+  object cert_revocation extends TopLevel[cert_revocation with Double]
+  
+  /* 31 */ @js.native
+  object key
+    extends TopLevel[typings.openpgp.openpgpMod.enums.signature.key with Double]
+  
+  /* 25 */ @js.native
+  object key_binding extends TopLevel[key_binding with Double]
+  
+  /* 32 */ @js.native
+  object key_revocation extends TopLevel[key_revocation with Double]
+  
+  /* 2 */ @js.native
+  object standalone extends TopLevel[standalone with Double]
+  
+  /* 24 */ @js.native
+  object subkey_binding extends TopLevel[subkey_binding with Double]
+  
+  /* 40 */ @js.native
+  object subkey_revocation extends TopLevel[subkey_revocation with Double]
+  
+  /* 1 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 80 */ @js.native
+  object third_party extends TopLevel[third_party with Double]
+  
+  /* 64 */ @js.native
+  object timestamp extends TopLevel[timestamp with Double]
+  
 }
 

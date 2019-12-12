@@ -1,6 +1,11 @@
 package typings.atBlueprintjsTable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction
+import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.DOWN
+import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.LEFT
+import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.RIGHT
+import typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,20 @@ object libEsmCommonDirectionMod extends js.Object {
     @js.native
     sealed trait UP extends Direction
     
-    /* "down" */ val DOWN: typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.DOWN with String = js.native
-    /* "left" */ val LEFT: typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.LEFT with String = js.native
-    /* "right" */ val RIGHT: typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.RIGHT with String = js.native
-    /* "up" */ val UP: typings.atBlueprintjsTable.libEsmCommonDirectionMod.Direction.UP with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Direction with String] = js.native
+    /* "down" */ @js.native
+    object DOWN extends TopLevel[DOWN with String]
+    
+    /* "left" */ @js.native
+    object LEFT extends TopLevel[LEFT with String]
+    
+    /* "right" */ @js.native
+    object RIGHT extends TopLevel[RIGHT with String]
+    
+    /* "up" */ @js.native
+    object UP extends TopLevel[UP with String]
+    
   }
   
 }

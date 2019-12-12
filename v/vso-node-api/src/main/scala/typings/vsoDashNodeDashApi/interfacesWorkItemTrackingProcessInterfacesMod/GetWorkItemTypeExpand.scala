@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.Behaviors
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.Layout
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.None
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.States
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object GetWorkItemTypeExpand extends js.Object {
   @js.native
   sealed trait States extends GetWorkItemTypeExpand
   
-  /* 2 */ val Behaviors: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.Behaviors with Double = js.native
-  /* 4 */ val Layout: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.Layout with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.None with Double = js.native
-  /* 1 */ val States: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingProcessInterfacesMod.GetWorkItemTypeExpand.States with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GetWorkItemTypeExpand with Double] = js.native
+  /* 2 */ @js.native
+  object Behaviors extends TopLevel[Behaviors with Double]
+  
+  /* 4 */ @js.native
+  object Layout extends TopLevel[Layout with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object States extends TopLevel[States with Double]
+  
 }
 

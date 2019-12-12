@@ -1,5 +1,11 @@
 package typings.strophe.stropheMod.Strophe
 
+import org.scalablytyped.runtime.TopLevel
+import typings.strophe.stropheMod.Strophe.LogLevel.DEBUG
+import typings.strophe.stropheMod.Strophe.LogLevel.ERROR
+import typings.strophe.stropheMod.Strophe.LogLevel.FATAL
+import typings.strophe.stropheMod.Strophe.LogLevel.INFO
+import typings.strophe.stropheMod.Strophe.LogLevel.WARN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,12 +40,22 @@ object LogLevel extends js.Object {
   @js.native
   sealed trait WARN extends LogLevel
   
-  /* 0 */ val DEBUG: typings.strophe.stropheMod.Strophe.LogLevel.DEBUG with Double = js.native
-  /* 3 */ val ERROR: typings.strophe.stropheMod.Strophe.LogLevel.ERROR with Double = js.native
-  /* 4 */ val FATAL: typings.strophe.stropheMod.Strophe.LogLevel.FATAL with Double = js.native
-  /* 1 */ val INFO: typings.strophe.stropheMod.Strophe.LogLevel.INFO with Double = js.native
-  /* 2 */ val WARN: typings.strophe.stropheMod.Strophe.LogLevel.WARN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+  /* 0 */ @js.native
+  object DEBUG extends TopLevel[DEBUG with Double]
+  
+  /* 3 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 4 */ @js.native
+  object FATAL extends TopLevel[FATAL with Double]
+  
+  /* 1 */ @js.native
+  object INFO extends TopLevel[INFO with Double]
+  
+  /* 2 */ @js.native
+  object WARN extends TopLevel[WARN with Double]
+  
 }
 

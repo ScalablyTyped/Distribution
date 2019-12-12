@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LabelSize.Default
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LabelSize.Fixed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object LabelSize extends js.Object {
   @js.native
   sealed trait Fixed extends LabelSize
   
-  /* 1 */ val Default: typings.ejDotWebDotAll.ej.datavisualization.Map.LabelSize.Default with Double = js.native
-  /* 0 */ val Fixed: typings.ejDotWebDotAll.ej.datavisualization.Map.LabelSize.Fixed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LabelSize with Double] = js.native
+  /* 1 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 0 */ @js.native
+  object Fixed extends TopLevel[Fixed with Double]
+  
 }
 

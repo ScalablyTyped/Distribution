@@ -1,5 +1,9 @@
 package typings.synaptic.synapticMod.Layer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.synaptic.synapticMod.Layer.gateType.INPUT
+import typings.synaptic.synapticMod.Layer.gateType.ONE_TO_ONE
+import typings.synaptic.synapticMod.Layer.gateType.OUTPUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object gateType extends js.Object {
   @js.native
   sealed trait OUTPUT extends gateType
   
-  /* 0 */ val INPUT: typings.synaptic.synapticMod.Layer.gateType.INPUT with Double = js.native
-  /* 2 */ val ONE_TO_ONE: typings.synaptic.synapticMod.Layer.gateType.ONE_TO_ONE with Double = js.native
-  /* 1 */ val OUTPUT: typings.synaptic.synapticMod.Layer.gateType.OUTPUT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[gateType with Double] = js.native
+  /* 0 */ @js.native
+  object INPUT extends TopLevel[INPUT with Double]
+  
+  /* 2 */ @js.native
+  object ONE_TO_ONE extends TopLevel[ONE_TO_ONE with Double]
+  
+  /* 1 */ @js.native
+  object OUTPUT extends TopLevel[OUTPUT with Double]
+  
 }
 

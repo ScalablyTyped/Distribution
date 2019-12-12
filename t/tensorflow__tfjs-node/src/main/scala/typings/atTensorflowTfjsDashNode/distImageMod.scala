@@ -1,5 +1,6 @@
 package typings.atTensorflowTfjsDashNode
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor4D
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.Empty
@@ -8,6 +9,10 @@ import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.grayscal
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.in
 import typings.atTensorflowTfjsDashNode.atTensorflowTfjsDashNodeStrings.rgb
 import typings.atTensorflowTfjsDashNode.distImageMod.ImageType
+import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.BMP
+import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.GIF
+import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.JPEG
+import typings.atTensorflowTfjsDashNode.distImageMod.ImageType.PNG
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -93,12 +98,20 @@ object distImageMod extends js.Object {
     @js.native
     sealed trait PNG extends ImageType
     
-    /* "BMP" */ val BMP: typings.atTensorflowTfjsDashNode.distImageMod.ImageType.BMP with String = js.native
-    /* "gif" */ val GIF: typings.atTensorflowTfjsDashNode.distImageMod.ImageType.GIF with String = js.native
-    /* "jpeg" */ val JPEG: typings.atTensorflowTfjsDashNode.distImageMod.ImageType.JPEG with String = js.native
-    /* "png" */ val PNG: typings.atTensorflowTfjsDashNode.distImageMod.ImageType.PNG with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ImageType with String] = js.native
+    /* "BMP" */ @js.native
+    object BMP extends TopLevel[BMP with String]
+    
+    /* "gif" */ @js.native
+    object GIF extends TopLevel[GIF with String]
+    
+    /* "jpeg" */ @js.native
+    object JPEG extends TopLevel[JPEG with String]
+    
+    /* "png" */ @js.native
+    object PNG extends TopLevel[PNG with String]
+    
   }
   
 }

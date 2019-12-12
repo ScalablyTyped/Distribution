@@ -1,5 +1,27 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BLUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BROWN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHARCOAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHESTNUT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GRAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GREEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.INDIGO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.LIME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.MUSTARD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.OLIVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.ORANGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PLUM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PURPLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED_ORANGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SEA_BLUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SLATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TEAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TURQOISE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,28 +98,70 @@ object Color extends js.Object {
   @js.native
   sealed trait YELLOW extends Color
   
-  /* 0 */ val BLUE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BLUE with Double = js.native
-  /* 1 */ val BROWN: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.BROWN with Double = js.native
-  /* 2 */ val CHARCOAL: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHARCOAL with Double = js.native
-  /* 3 */ val CHESTNUT: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.CHESTNUT with Double = js.native
-  /* 4 */ val GRAY: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GRAY with Double = js.native
-  /* 5 */ val GREEN: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.GREEN with Double = js.native
-  /* 6 */ val INDIGO: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.INDIGO with Double = js.native
-  /* 7 */ val LIME: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.LIME with Double = js.native
-  /* 8 */ val MUSTARD: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.MUSTARD with Double = js.native
-  /* 9 */ val OLIVE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.OLIVE with Double = js.native
-  /* 10 */ val ORANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.ORANGE with Double = js.native
-  /* 11 */ val PINK: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PINK with Double = js.native
-  /* 12 */ val PLUM: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PLUM with Double = js.native
-  /* 13 */ val PURPLE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.PURPLE with Double = js.native
-  /* 14 */ val RED: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED with Double = js.native
-  /* 15 */ val RED_ORANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.RED_ORANGE with Double = js.native
-  /* 16 */ val SEA_BLUE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SEA_BLUE with Double = js.native
-  /* 17 */ val SLATE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.SLATE with Double = js.native
-  /* 18 */ val TEAL: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TEAL with Double = js.native
-  /* 19 */ val TURQOISE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.TURQOISE with Double = js.native
-  /* 20 */ val YELLOW: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Color.YELLOW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Color with Double] = js.native
+  /* 0 */ @js.native
+  object BLUE extends TopLevel[BLUE with Double]
+  
+  /* 1 */ @js.native
+  object BROWN extends TopLevel[BROWN with Double]
+  
+  /* 2 */ @js.native
+  object CHARCOAL extends TopLevel[CHARCOAL with Double]
+  
+  /* 3 */ @js.native
+  object CHESTNUT extends TopLevel[CHESTNUT with Double]
+  
+  /* 4 */ @js.native
+  object GRAY extends TopLevel[GRAY with Double]
+  
+  /* 5 */ @js.native
+  object GREEN extends TopLevel[GREEN with Double]
+  
+  /* 6 */ @js.native
+  object INDIGO extends TopLevel[INDIGO with Double]
+  
+  /* 7 */ @js.native
+  object LIME extends TopLevel[LIME with Double]
+  
+  /* 8 */ @js.native
+  object MUSTARD extends TopLevel[MUSTARD with Double]
+  
+  /* 9 */ @js.native
+  object OLIVE extends TopLevel[OLIVE with Double]
+  
+  /* 10 */ @js.native
+  object ORANGE extends TopLevel[ORANGE with Double]
+  
+  /* 11 */ @js.native
+  object PINK extends TopLevel[PINK with Double]
+  
+  /* 12 */ @js.native
+  object PLUM extends TopLevel[PLUM with Double]
+  
+  /* 13 */ @js.native
+  object PURPLE extends TopLevel[PURPLE with Double]
+  
+  /* 14 */ @js.native
+  object RED extends TopLevel[RED with Double]
+  
+  /* 15 */ @js.native
+  object RED_ORANGE extends TopLevel[RED_ORANGE with Double]
+  
+  /* 16 */ @js.native
+  object SEA_BLUE extends TopLevel[SEA_BLUE with Double]
+  
+  /* 17 */ @js.native
+  object SLATE extends TopLevel[SLATE with Double]
+  
+  /* 18 */ @js.native
+  object TEAL extends TopLevel[TEAL with Double]
+  
+  /* 19 */ @js.native
+  object TURQOISE extends TopLevel[TURQOISE with Double]
+  
+  /* 20 */ @js.native
+  object YELLOW extends TopLevel[YELLOW with Double]
+  
 }
 

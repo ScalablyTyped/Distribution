@@ -1,8 +1,15 @@
 package typings.dialogflow.protosProtosMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.CORD
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING_PIECE
 import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NORMAL
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NUMBER
+import typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_STRING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -134,11 +141,17 @@ object FieldOptions extends js.Object {
     @js.native
     sealed trait STRING_PIECE extends CType
     
-    /* 1 */ val CORD: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.CORD with Double = js.native
-    /* 0 */ val STRING: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING with Double = js.native
-    /* 2 */ val STRING_PIECE: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.CType.STRING_PIECE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CType with Double] = js.native
+    /* 1 */ @js.native
+    object CORD extends TopLevel[CORD with Double]
+    
+    /* 0 */ @js.native
+    object STRING extends TopLevel[STRING with Double]
+    
+    /* 2 */ @js.native
+    object STRING_PIECE extends TopLevel[STRING_PIECE with Double]
+    
   }
   
   /** JSType enum. */
@@ -153,11 +166,17 @@ object FieldOptions extends js.Object {
     @js.native
     sealed trait JS_STRING extends JSType
     
-    /* 0 */ val JS_NORMAL: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NORMAL with Double = js.native
-    /* 2 */ val JS_NUMBER: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_NUMBER with Double = js.native
-    /* 1 */ val JS_STRING: typings.dialogflow.protosProtosMod.google.protobuf.FieldOptions.JSType.JS_STRING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[JSType with Double] = js.native
+    /* 0 */ @js.native
+    object JS_NORMAL extends TopLevel[JS_NORMAL with Double]
+    
+    /* 2 */ @js.native
+    object JS_NUMBER extends TopLevel[JS_NUMBER with Double]
+    
+    /* 1 */ @js.native
+    object JS_STRING extends TopLevel[JS_STRING with Double]
+    
   }
   
 }

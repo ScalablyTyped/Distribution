@@ -1,5 +1,8 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.colorTheme.dark
+import typings.instabugDashReactnative.instabugDashReactnativeMod.colorTheme.light
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object colorTheme extends js.Object {
   @js.native
   sealed trait light extends colorTheme
   
-  /* 1 */ val dark: typings.instabugDashReactnative.instabugDashReactnativeMod.colorTheme.dark with Double = js.native
-  /* 0 */ val light: typings.instabugDashReactnative.instabugDashReactnativeMod.colorTheme.light with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[colorTheme with Double] = js.native
+  /* 1 */ @js.native
+  object dark extends TopLevel[dark with Double]
+  
+  /* 0 */ @js.native
+  object light extends TopLevel[light with Double]
+  
 }
 

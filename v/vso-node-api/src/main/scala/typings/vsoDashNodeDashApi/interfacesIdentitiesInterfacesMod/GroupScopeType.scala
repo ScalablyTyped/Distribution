@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.Generic
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.ServiceHost
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.TeamProject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object GroupScopeType extends js.Object {
   @js.native
   sealed trait TeamProject extends GroupScopeType
   
-  /* 0 */ val Generic: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.Generic with Double = js.native
-  /* 1 */ val ServiceHost: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.ServiceHost with Double = js.native
-  /* 2 */ val TeamProject: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.GroupScopeType.TeamProject with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GroupScopeType with Double] = js.native
+  /* 0 */ @js.native
+  object Generic extends TopLevel[Generic with Double]
+  
+  /* 1 */ @js.native
+  object ServiceHost extends TopLevel[ServiceHost with Double]
+  
+  /* 2 */ @js.native
+  object TeamProject extends TopLevel[TeamProject with Double]
+  
 }
 

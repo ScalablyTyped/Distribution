@@ -1,5 +1,11 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Printing.PrintCollation.collated
+import typings.winrt.Windows.Graphics.Printing.PrintCollation.default
+import typings.winrt.Windows.Graphics.Printing.PrintCollation.notAvailable
+import typings.winrt.Windows.Graphics.Printing.PrintCollation.printerCustom
+import typings.winrt.Windows.Graphics.Printing.PrintCollation.uncollated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object PrintCollation extends js.Object {
   @js.native
   sealed trait uncollated extends PrintCollation
   
-  /* 3 */ val collated: typings.winrt.Windows.Graphics.Printing.PrintCollation.collated with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.Graphics.Printing.PrintCollation.default with Double = js.native
-  /* 1 */ val notAvailable: typings.winrt.Windows.Graphics.Printing.PrintCollation.notAvailable with Double = js.native
-  /* 2 */ val printerCustom: typings.winrt.Windows.Graphics.Printing.PrintCollation.printerCustom with Double = js.native
-  /* 4 */ val uncollated: typings.winrt.Windows.Graphics.Printing.PrintCollation.uncollated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintCollation with Double] = js.native
+  /* 3 */ @js.native
+  object collated extends TopLevel[collated with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 4 */ @js.native
+  object uncollated extends TopLevel[uncollated with Double]
+  
 }
 

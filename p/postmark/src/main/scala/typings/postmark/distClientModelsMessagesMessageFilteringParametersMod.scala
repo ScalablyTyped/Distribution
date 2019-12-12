@@ -1,7 +1,14 @@
 package typings.postmark
 
+import org.scalablytyped.runtime.TopLevel
 import typings.postmark.distClientModelsClientFilteringParametersMod.FilteringParameters
 import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Blocked
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Failed
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Processed
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Queued
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Scheduled
+import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Sent
 import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus
 import typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageTrackingFilteringParameters
 import scala.scalajs.js
@@ -125,14 +132,26 @@ object distClientModelsMessagesMessageFilteringParametersMod extends js.Object {
     @js.native
     sealed trait Sent extends InboundMessageStatus
     
-    /* "blocked" */ val Blocked: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Blocked with String = js.native
-    /* "failed" */ val Failed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Failed with String = js.native
-    /* "processed" */ val Processed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Processed with String = js.native
-    /* "queued" */ val Queued: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Queued with String = js.native
-    /* "scheduled" */ val Scheduled: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Scheduled with String = js.native
-    /* "sent" */ val Sent: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.InboundMessageStatus.Sent with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[InboundMessageStatus with String] = js.native
+    /* "blocked" */ @js.native
+    object Blocked extends TopLevel[Blocked with String]
+    
+    /* "failed" */ @js.native
+    object Failed extends TopLevel[Failed with String]
+    
+    /* "processed" */ @js.native
+    object Processed extends TopLevel[Processed with String]
+    
+    /* "queued" */ @js.native
+    object Queued extends TopLevel[Queued with String]
+    
+    /* "scheduled" */ @js.native
+    object Scheduled extends TopLevel[Scheduled with String]
+    
+    /* "sent" */ @js.native
+    object Sent extends TopLevel[Sent with String]
+    
   }
   
   @js.native
@@ -146,11 +165,26 @@ object distClientModelsMessagesMessageFilteringParametersMod extends js.Object {
     @js.native
     sealed trait Sent extends OutboundMessageStatus
     
-    /* "processed" */ val Processed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Processed with String = js.native
-    /* "queued" */ val Queued: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Queued with String = js.native
-    /* "sent" */ val Sent: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Sent with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[OutboundMessageStatus with String] = js.native
+    /* "processed" */ @js.native
+    object Processed
+      extends TopLevel[
+              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Processed with String
+            ]
+    
+    /* "queued" */ @js.native
+    object Queued
+      extends TopLevel[
+              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Queued with String
+            ]
+    
+    /* "sent" */ @js.native
+    object Sent
+      extends TopLevel[
+              typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Sent with String
+            ]
+    
   }
   
 }

@@ -1,5 +1,10 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.s2k.gnu
+import typings.openpgp.openpgpMod.enums.s2k.iterated
+import typings.openpgp.openpgpMod.enums.s2k.salted
+import typings.openpgp.openpgpMod.enums.s2k.simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object s2k extends js.Object {
   @js.native
   sealed trait simple extends s2k
   
-  /* 101 */ val gnu: typings.openpgp.openpgpMod.enums.s2k.gnu with Double = js.native
-  /* 3 */ val iterated: typings.openpgp.openpgpMod.enums.s2k.iterated with Double = js.native
-  /* 1 */ val salted: typings.openpgp.openpgpMod.enums.s2k.salted with Double = js.native
-  /* 0 */ val simple: typings.openpgp.openpgpMod.enums.s2k.simple with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[s2k with Double] = js.native
+  /* 101 */ @js.native
+  object gnu extends TopLevel[gnu with Double]
+  
+  /* 3 */ @js.native
+  object iterated extends TopLevel[iterated with Double]
+  
+  /* 1 */ @js.native
+  object salted extends TopLevel[salted with Double]
+  
+  /* 0 */ @js.native
+  object simple extends TopLevel[simple with Double]
+  
 }
 

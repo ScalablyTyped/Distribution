@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.typographyTypographyMod.TypographyProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object typographyMod extends js.Object {
     def this(props: TypographyProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TypographyProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TypographyProps]]
+  
 }
 

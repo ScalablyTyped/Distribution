@@ -1,5 +1,20 @@
 package typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.SmsRecipientResponseMissed
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskArrival
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskAssigned
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCloned
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCompleted
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCreated
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskDelayed
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskDeleted
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskEta
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskFailed
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskStarted
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskUnassigned
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskUpdated
+import typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.WorkerDuty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,21 +67,49 @@ object WebhookTriggerName extends js.Object {
   @js.native
   sealed trait WorkerDuty extends WebhookTriggerName
   
-  /* "smsRecipientResponseMissed" */ val SmsRecipientResponseMissed: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.SmsRecipientResponseMissed with String = js.native
-  /* "taskArrival" */ val TaskArrival: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskArrival with String = js.native
-  /* "taskAssigned" */ val TaskAssigned: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskAssigned with String = js.native
-  /* "taskCloned" */ val TaskCloned: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCloned with String = js.native
-  /* "taskCompleted" */ val TaskCompleted: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCompleted with String = js.native
-  /* "taskCreated" */ val TaskCreated: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskCreated with String = js.native
-  /* "taskDelayed" */ val TaskDelayed: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskDelayed with String = js.native
-  /* "taskDeleted" */ val TaskDeleted: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskDeleted with String = js.native
-  /* "taskEta" */ val TaskEta: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskEta with String = js.native
-  /* "taskFailed" */ val TaskFailed: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskFailed with String = js.native
-  /* "taskStarted" */ val TaskStarted: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskStarted with String = js.native
-  /* "taskUnassigned" */ val TaskUnassigned: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskUnassigned with String = js.native
-  /* "taskUpdated" */ val TaskUpdated: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.TaskUpdated with String = js.native
-  /* "workerDuty" */ val WorkerDuty: typings.atOnfleetNodeDashOnfleet.resourcesWebhooksMod.WebhookTriggerName.WorkerDuty with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WebhookTriggerName with String] = js.native
+  /* "smsRecipientResponseMissed" */ @js.native
+  object SmsRecipientResponseMissed extends TopLevel[SmsRecipientResponseMissed with String]
+  
+  /* "taskArrival" */ @js.native
+  object TaskArrival extends TopLevel[TaskArrival with String]
+  
+  /* "taskAssigned" */ @js.native
+  object TaskAssigned extends TopLevel[TaskAssigned with String]
+  
+  /* "taskCloned" */ @js.native
+  object TaskCloned extends TopLevel[TaskCloned with String]
+  
+  /* "taskCompleted" */ @js.native
+  object TaskCompleted extends TopLevel[TaskCompleted with String]
+  
+  /* "taskCreated" */ @js.native
+  object TaskCreated extends TopLevel[TaskCreated with String]
+  
+  /* "taskDelayed" */ @js.native
+  object TaskDelayed extends TopLevel[TaskDelayed with String]
+  
+  /* "taskDeleted" */ @js.native
+  object TaskDeleted extends TopLevel[TaskDeleted with String]
+  
+  /* "taskEta" */ @js.native
+  object TaskEta extends TopLevel[TaskEta with String]
+  
+  /* "taskFailed" */ @js.native
+  object TaskFailed extends TopLevel[TaskFailed with String]
+  
+  /* "taskStarted" */ @js.native
+  object TaskStarted extends TopLevel[TaskStarted with String]
+  
+  /* "taskUnassigned" */ @js.native
+  object TaskUnassigned extends TopLevel[TaskUnassigned with String]
+  
+  /* "taskUpdated" */ @js.native
+  object TaskUpdated extends TopLevel[TaskUpdated with String]
+  
+  /* "workerDuty" */ @js.native
+  object WorkerDuty extends TopLevel[WorkerDuty with String]
+  
 }
 

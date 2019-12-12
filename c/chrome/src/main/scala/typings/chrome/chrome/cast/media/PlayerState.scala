@@ -1,5 +1,10 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.PlayerState.BUFFERING
+import typings.chrome.chrome.cast.media.PlayerState.IDLE
+import typings.chrome.chrome.cast.media.PlayerState.PAUSED
+import typings.chrome.chrome.cast.media.PlayerState.PLAYING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PlayerState extends js.Object {
   @js.native
   sealed trait PLAYING extends PlayerState
   
-  /* "BUFFERING" */ val BUFFERING: typings.chrome.chrome.cast.media.PlayerState.BUFFERING with String = js.native
-  /* "IDLE" */ val IDLE: typings.chrome.chrome.cast.media.PlayerState.IDLE with String = js.native
-  /* "PAUSED" */ val PAUSED: typings.chrome.chrome.cast.media.PlayerState.PAUSED with String = js.native
-  /* "PLAYING" */ val PLAYING: typings.chrome.chrome.cast.media.PlayerState.PLAYING with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PlayerState with String] = js.native
+  /* "BUFFERING" */ @js.native
+  object BUFFERING extends TopLevel[BUFFERING with String]
+  
+  /* "IDLE" */ @js.native
+  object IDLE extends TopLevel[IDLE with String]
+  
+  /* "PAUSED" */ @js.native
+  object PAUSED extends TopLevel[PAUSED with String]
+  
+  /* "PLAYING" */ @js.native
+  object PLAYING extends TopLevel[PLAYING with String]
+  
 }
 

@@ -1,5 +1,15 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.All
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Friday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Monday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.None
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Saturday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Sunday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Thursday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Tuesday
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object ScheduleDays extends js.Object {
   @js.native
   sealed trait Wednesday extends ScheduleDays
   
-  /* 127 */ val All: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.All with Double = js.native
-  /* 16 */ val Friday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Friday with Double = js.native
-  /* 1 */ val Monday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Monday with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.None with Double = js.native
-  /* 32 */ val Saturday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Saturday with Double = js.native
-  /* 64 */ val Sunday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Sunday with Double = js.native
-  /* 8 */ val Thursday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Thursday with Double = js.native
-  /* 2 */ val Tuesday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Tuesday with Double = js.native
-  /* 4 */ val Wednesday: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ScheduleDays.Wednesday with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScheduleDays with Double] = js.native
+  /* 127 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 16 */ @js.native
+  object Friday extends TopLevel[Friday with Double]
+  
+  /* 1 */ @js.native
+  object Monday extends TopLevel[Monday with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 32 */ @js.native
+  object Saturday extends TopLevel[Saturday with Double]
+  
+  /* 64 */ @js.native
+  object Sunday extends TopLevel[Sunday with Double]
+  
+  /* 8 */ @js.native
+  object Thursday extends TopLevel[Thursday with Double]
+  
+  /* 2 */ @js.native
+  object Tuesday extends TopLevel[Tuesday with Double]
+  
+  /* 4 */ @js.native
+  object Wednesday extends TopLevel[Wednesday with Double]
+  
 }
 

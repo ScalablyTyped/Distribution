@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.brandingOptions
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.canDial
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.cellularDetails
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayColor
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayName
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkName
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkState
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.transport
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.voicemail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object PhoneLineProperties extends js.Object {
   @js.native
   sealed trait voicemail extends PhoneLineProperties
   
-  /* 1 */ val brandingOptions: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.brandingOptions with Double = js.native
-  /* 2 */ val canDial: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.canDial with Double = js.native
-  /* 3 */ val cellularDetails: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.cellularDetails with Double = js.native
-  /* 4 */ val displayColor: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayColor with Double = js.native
-  /* 5 */ val displayName: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.displayName with Double = js.native
-  /* 6 */ val networkName: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkName with Double = js.native
-  /* 7 */ val networkState: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.networkState with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.none with Double = js.native
-  /* 8 */ val transport: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.transport with Double = js.native
-  /* 9 */ val voicemail: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties.voicemail with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhoneLineProperties with Double] = js.native
+  /* 1 */ @js.native
+  object brandingOptions extends TopLevel[brandingOptions with Double]
+  
+  /* 2 */ @js.native
+  object canDial extends TopLevel[canDial with Double]
+  
+  /* 3 */ @js.native
+  object cellularDetails extends TopLevel[cellularDetails with Double]
+  
+  /* 4 */ @js.native
+  object displayColor extends TopLevel[displayColor with Double]
+  
+  /* 5 */ @js.native
+  object displayName extends TopLevel[displayName with Double]
+  
+  /* 6 */ @js.native
+  object networkName extends TopLevel[networkName with Double]
+  
+  /* 7 */ @js.native
+  object networkState extends TopLevel[networkState with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 8 */ @js.native
+  object transport extends TopLevel[transport with Double]
+  
+  /* 9 */ @js.native
+  object voicemail extends TopLevel[voicemail with Double]
+  
 }
 

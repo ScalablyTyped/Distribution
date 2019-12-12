@@ -1,5 +1,9 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.NullOption.ALL_VALUES
+import typings.tableau.tableau.NullOption.NON_NULL_VALUES
+import typings.tableau.tableau.NullOption.NULL_VALUES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object NullOption extends js.Object {
   @js.native
   sealed trait NULL_VALUES extends NullOption
   
-  /* "allValues" */ val ALL_VALUES: typings.tableau.tableau.NullOption.ALL_VALUES with String = js.native
-  /* "nonNullValues" */ val NON_NULL_VALUES: typings.tableau.tableau.NullOption.NON_NULL_VALUES with String = js.native
-  /* "nullValues" */ val NULL_VALUES: typings.tableau.tableau.NullOption.NULL_VALUES with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NullOption with String] = js.native
+  /* "allValues" */ @js.native
+  object ALL_VALUES extends TopLevel[ALL_VALUES with String]
+  
+  /* "nonNullValues" */ @js.native
+  object NON_NULL_VALUES extends TopLevel[NON_NULL_VALUES with String]
+  
+  /* "nullValues" */ @js.native
+  object NULL_VALUES extends TopLevel[NULL_VALUES with String]
+  
 }
 

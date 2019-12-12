@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupComponent
@@ -18,6 +19,8 @@ object distCommonjsModulesPopupMod extends js.Object {
     def this(props: PopupProps, context: js.Any) = this()
   }
   
-  val default: PopupComponent = js.native
+  @js.native
+  object default extends TopLevel[PopupComponent]
+  
 }
 

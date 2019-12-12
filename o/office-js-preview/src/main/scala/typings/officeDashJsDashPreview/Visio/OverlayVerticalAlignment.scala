@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Visio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.bottom
+import typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.middle
+import typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object OverlayVerticalAlignment extends js.Object {
   @js.native
   sealed trait top extends OverlayVerticalAlignment
   
-  /* "Bottom" */ val bottom: typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.bottom with String = js.native
-  /* "Middle" */ val middle: typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.middle with String = js.native
-  /* "Top" */ val top: typings.officeDashJsDashPreview.Visio.OverlayVerticalAlignment.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OverlayVerticalAlignment with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Middle" */ @js.native
+  object middle extends TopLevel[middle with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

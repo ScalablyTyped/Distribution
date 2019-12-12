@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.cardActionsCardActionsMod.CardActionsProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object cardActionsMod extends js.Object {
     def this(props: CardActionsProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[CardActionsProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[CardActionsProps]]
+  
 }
 

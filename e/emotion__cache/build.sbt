@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "emotion__cache"
-version := "10.0.19-d07243"
+version := "10.0.19-522066"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "emotion__stylis" % "0.8.4-72ebbb",
+  "org.scalablytyped" %%% "emotion__stylis" % "0.8.4-fe4cf1",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-602d68",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

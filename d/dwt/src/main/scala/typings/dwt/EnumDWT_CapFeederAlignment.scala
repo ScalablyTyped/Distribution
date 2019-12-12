@@ -1,5 +1,10 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_CENTER
+import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_LEFT
+import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_NONE
+import typings.dwt.EnumDWT_CapFeederAlignment.TWFA_RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,11 +34,19 @@ object EnumDWT_CapFeederAlignment extends js.Object {
   @js.native
   sealed trait TWFA_RIGHT extends EnumDWT_CapFeederAlignment
   
-  /* 2 */ val TWFA_CENTER: typings.dwt.EnumDWT_CapFeederAlignment.TWFA_CENTER with Double = js.native
-  /* 1 */ val TWFA_LEFT: typings.dwt.EnumDWT_CapFeederAlignment.TWFA_LEFT with Double = js.native
-  /* 0 */ val TWFA_NONE: typings.dwt.EnumDWT_CapFeederAlignment.TWFA_NONE with Double = js.native
-  /* 3 */ val TWFA_RIGHT: typings.dwt.EnumDWT_CapFeederAlignment.TWFA_RIGHT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapFeederAlignment with Double] = js.native
+  /* 2 */ @js.native
+  object TWFA_CENTER extends TopLevel[TWFA_CENTER with Double]
+  
+  /* 1 */ @js.native
+  object TWFA_LEFT extends TopLevel[TWFA_LEFT with Double]
+  
+  /* 0 */ @js.native
+  object TWFA_NONE extends TopLevel[TWFA_NONE with Double]
+  
+  /* 3 */ @js.native
+  object TWFA_RIGHT extends TopLevel[TWFA_RIGHT with Double]
+  
 }
 

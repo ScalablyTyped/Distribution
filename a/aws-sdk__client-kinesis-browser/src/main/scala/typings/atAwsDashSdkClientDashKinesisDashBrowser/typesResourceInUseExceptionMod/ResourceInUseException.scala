@@ -17,11 +17,11 @@ import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStartStreamEncrypti
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesStopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
 import typings.atAwsDashSdkClientDashKinesisDashBrowser.typesUpdateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceInUseException
   extends ServiceException[_ResourceInUseExceptionDetails]
      with AddTagsToStreamExceptionsUnion
@@ -41,21 +41,6 @@ trait ResourceInUseException
      with StopStreamEncryptionExceptionsUnion
      with UpdateShardCountExceptionsUnion {
   @JSName("name")
-  var name_ResourceInUseException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceInUseException
-}
-
-object ResourceInUseException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ResourceInUseExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceInUseException,
-    stack: String = null
-  ): ResourceInUseException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceInUseException]
-  }
+  var name_ResourceInUseException: typings.atAwsDashSdkClientDashKinesisDashBrowser.atAwsDashSdkClientDashKinesisDashBrowserStrings.ResourceInUseException = js.native
 }
 

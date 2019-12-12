@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sparkline
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Area
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Column
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Line
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Pie
+import typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.WinLoss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,12 +41,22 @@ object Type extends js.Object {
   sealed trait WinLoss
     extends typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type
   
-  /* 0 */ val Area: typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Area with Double = js.native
-  /* 2 */ val Column: typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Column with Double = js.native
-  /* 1 */ val Line: typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Line with Double = js.native
-  /* 3 */ val Pie: typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.Pie with Double = js.native
-  /* 4 */ val WinLoss: typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type.WinLoss with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Sparkline.Type with Double] = js.native
+  /* 0 */ @js.native
+  object Area extends TopLevel[Area with Double]
+  
+  /* 2 */ @js.native
+  object Column extends TopLevel[Column with Double]
+  
+  /* 1 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 3 */ @js.native
+  object Pie extends TopLevel[Pie with Double]
+  
+  /* 4 */ @js.native
+  object WinLoss extends TopLevel[WinLoss with Double]
+  
 }
 

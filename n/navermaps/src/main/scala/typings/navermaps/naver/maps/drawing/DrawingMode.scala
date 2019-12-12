@@ -1,5 +1,13 @@
 package typings.navermaps.naver.maps.drawing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.drawing.DrawingMode.ARROWLINE
+import typings.navermaps.naver.maps.drawing.DrawingMode.ELLIPSE
+import typings.navermaps.naver.maps.drawing.DrawingMode.HAND
+import typings.navermaps.naver.maps.drawing.DrawingMode.MARKER
+import typings.navermaps.naver.maps.drawing.DrawingMode.POLYGON
+import typings.navermaps.naver.maps.drawing.DrawingMode.POLYLINE
+import typings.navermaps.naver.maps.drawing.DrawingMode.RECTANGLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object DrawingMode extends js.Object {
   @js.native
   sealed trait RECTANGLE extends DrawingMode
   
-  /* 3 */ val ARROWLINE: typings.navermaps.naver.maps.drawing.DrawingMode.ARROWLINE with Double = js.native
-  /* 1 */ val ELLIPSE: typings.navermaps.naver.maps.drawing.DrawingMode.ELLIPSE with Double = js.native
-  /* 0 */ val HAND: typings.navermaps.naver.maps.drawing.DrawingMode.HAND with Double = js.native
-  /* 5 */ val MARKER: typings.navermaps.naver.maps.drawing.DrawingMode.MARKER with Double = js.native
-  /* 4 */ val POLYGON: typings.navermaps.naver.maps.drawing.DrawingMode.POLYGON with Double = js.native
-  /* 2 */ val POLYLINE: typings.navermaps.naver.maps.drawing.DrawingMode.POLYLINE with Double = js.native
-  /* 0 */ val RECTANGLE: typings.navermaps.naver.maps.drawing.DrawingMode.RECTANGLE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawingMode with Double] = js.native
+  /* 3 */ @js.native
+  object ARROWLINE extends TopLevel[ARROWLINE with Double]
+  
+  /* 1 */ @js.native
+  object ELLIPSE extends TopLevel[ELLIPSE with Double]
+  
+  /* 0 */ @js.native
+  object HAND extends TopLevel[HAND with Double]
+  
+  /* 5 */ @js.native
+  object MARKER extends TopLevel[MARKER with Double]
+  
+  /* 4 */ @js.native
+  object POLYGON extends TopLevel[POLYGON with Double]
+  
+  /* 2 */ @js.native
+  object POLYLINE extends TopLevel[POLYLINE with Double]
+  
+  /* 0 */ @js.native
+  object RECTANGLE extends TopLevel[RECTANGLE with Double]
+  
 }
 

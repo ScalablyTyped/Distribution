@@ -1,6 +1,14 @@
 package typings.apolloDashClient
 
+import org.scalablytyped.runtime.TopLevel
 import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.error
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.fetchMore
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.loading
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.poll
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.ready
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.refetch
+import typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.setVariables
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,15 +43,29 @@ object coreNetworkStatusMod extends js.Object {
     @js.native
     sealed trait setVariables extends NetworkStatus
     
-    /* 8 */ val error: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.error with Double = js.native
-    /* 3 */ val fetchMore: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.fetchMore with Double = js.native
-    /* 1 */ val loading: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.loading with Double = js.native
-    /* 6 */ val poll: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.poll with Double = js.native
-    /* 7 */ val ready: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.ready with Double = js.native
-    /* 4 */ val refetch: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.refetch with Double = js.native
-    /* 2 */ val setVariables: typings.apolloDashClient.coreNetworkStatusMod.NetworkStatus.setVariables with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NetworkStatus with Double] = js.native
+    /* 8 */ @js.native
+    object error extends TopLevel[error with Double]
+    
+    /* 3 */ @js.native
+    object fetchMore extends TopLevel[fetchMore with Double]
+    
+    /* 1 */ @js.native
+    object loading extends TopLevel[loading with Double]
+    
+    /* 6 */ @js.native
+    object poll extends TopLevel[poll with Double]
+    
+    /* 7 */ @js.native
+    object ready extends TopLevel[ready with Double]
+    
+    /* 4 */ @js.native
+    object refetch extends TopLevel[refetch with Double]
+    
+    /* 2 */ @js.native
+    object setVariables extends TopLevel[setVariables with Double]
+    
   }
   
 }

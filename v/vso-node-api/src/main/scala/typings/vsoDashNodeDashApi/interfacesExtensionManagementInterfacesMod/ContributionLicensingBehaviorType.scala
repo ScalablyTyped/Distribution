@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.AlwaysInclude
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfLicensed
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfUnlicensed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ContributionLicensingBehaviorType extends js.Object {
   @js.native
   sealed trait OnlyIfUnlicensed extends ContributionLicensingBehaviorType
   
-  /* 2 */ val AlwaysInclude: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.AlwaysInclude with Double = js.native
-  /* 0 */ val OnlyIfLicensed: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfLicensed with Double = js.native
-  /* 1 */ val OnlyIfUnlicensed: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType.OnlyIfUnlicensed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContributionLicensingBehaviorType with Double] = js.native
+  /* 2 */ @js.native
+  object AlwaysInclude extends TopLevel[AlwaysInclude with Double]
+  
+  /* 0 */ @js.native
+  object OnlyIfLicensed extends TopLevel[OnlyIfLicensed with Double]
+  
+  /* 1 */ @js.native
+  object OnlyIfUnlicensed extends TopLevel[OnlyIfUnlicensed with Double]
+  
 }
 

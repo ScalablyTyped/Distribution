@@ -1,5 +1,24 @@
 package typings.sharepoint.SP.UserProfiles
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.created
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.deleted
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.enqueued
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorGeneralFailure
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorLanguageNotInstalled
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorManagedPathDoesNotExist
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorPartialCreate
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorPersonalSiteAlreadyExists
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorRootSiteNotPresent
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorSelfServiceSiteCreateCallFailed
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsEmptyHostUrl
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsGeneralFailure
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsHostFailedToInitializePersonalSiteContext
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsNoMySitesInPeopleLight
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsSelfServiceSiteCreationDisabled
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsUPANotGranted
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsUserNotLicensed
+import typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.uninitialized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -65,25 +84,61 @@ object PersonalSiteInstantiationState extends js.Object {
   @js.native
   sealed trait uninitialized extends PersonalSiteInstantiationState
   
-  /* 2 */ val created: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.created with Double = js.native
-  /* 3 */ val deleted: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.deleted with Double = js.native
-  /* 1 */ val enqueued: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.enqueued with Double = js.native
-  /* 11 */ val errorGeneralFailure: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorGeneralFailure with Double = js.native
-  /* 13 */ val errorLanguageNotInstalled: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorLanguageNotInstalled with Double = js.native
-  /* 12 */ val errorManagedPathDoesNotExist: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorManagedPathDoesNotExist with Double = js.native
-  /* 14 */ val errorPartialCreate: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorPartialCreate with Double = js.native
-  /* 15 */ val errorPersonalSiteAlreadyExists: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorPersonalSiteAlreadyExists with Double = js.native
-  /* 16 */ val errorRootSiteNotPresent: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorRootSiteNotPresent with Double = js.native
-  /* 17 */ val errorSelfServiceSiteCreateCallFailed: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.errorSelfServiceSiteCreateCallFailed with Double = js.native
-  /* 9 */ val permissionsEmptyHostUrl: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsEmptyHostUrl with Double = js.native
-  /* 4 */ val permissionsGeneralFailure: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsGeneralFailure with Double = js.native
-  /* 10 */ val permissionsHostFailedToInitializePersonalSiteContext: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsHostFailedToInitializePersonalSiteContext with Double = js.native
-  /* 8 */ val permissionsNoMySitesInPeopleLight: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsNoMySitesInPeopleLight with Double = js.native
-  /* 7 */ val permissionsSelfServiceSiteCreationDisabled: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsSelfServiceSiteCreationDisabled with Double = js.native
-  /* 5 */ val permissionsUPANotGranted: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsUPANotGranted with Double = js.native
-  /* 6 */ val permissionsUserNotLicensed: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.permissionsUserNotLicensed with Double = js.native
-  /* 0 */ val uninitialized: typings.sharepoint.SP.UserProfiles.PersonalSiteInstantiationState.uninitialized with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PersonalSiteInstantiationState with Double] = js.native
+  /* 2 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 3 */ @js.native
+  object deleted extends TopLevel[deleted with Double]
+  
+  /* 1 */ @js.native
+  object enqueued extends TopLevel[enqueued with Double]
+  
+  /* 11 */ @js.native
+  object errorGeneralFailure extends TopLevel[errorGeneralFailure with Double]
+  
+  /* 13 */ @js.native
+  object errorLanguageNotInstalled extends TopLevel[errorLanguageNotInstalled with Double]
+  
+  /* 12 */ @js.native
+  object errorManagedPathDoesNotExist extends TopLevel[errorManagedPathDoesNotExist with Double]
+  
+  /* 14 */ @js.native
+  object errorPartialCreate extends TopLevel[errorPartialCreate with Double]
+  
+  /* 15 */ @js.native
+  object errorPersonalSiteAlreadyExists extends TopLevel[errorPersonalSiteAlreadyExists with Double]
+  
+  /* 16 */ @js.native
+  object errorRootSiteNotPresent extends TopLevel[errorRootSiteNotPresent with Double]
+  
+  /* 17 */ @js.native
+  object errorSelfServiceSiteCreateCallFailed extends TopLevel[errorSelfServiceSiteCreateCallFailed with Double]
+  
+  /* 9 */ @js.native
+  object permissionsEmptyHostUrl extends TopLevel[permissionsEmptyHostUrl with Double]
+  
+  /* 4 */ @js.native
+  object permissionsGeneralFailure extends TopLevel[permissionsGeneralFailure with Double]
+  
+  /* 10 */ @js.native
+  object permissionsHostFailedToInitializePersonalSiteContext extends TopLevel[permissionsHostFailedToInitializePersonalSiteContext with Double]
+  
+  /* 8 */ @js.native
+  object permissionsNoMySitesInPeopleLight extends TopLevel[permissionsNoMySitesInPeopleLight with Double]
+  
+  /* 7 */ @js.native
+  object permissionsSelfServiceSiteCreationDisabled extends TopLevel[permissionsSelfServiceSiteCreationDisabled with Double]
+  
+  /* 5 */ @js.native
+  object permissionsUPANotGranted extends TopLevel[permissionsUPANotGranted with Double]
+  
+  /* 6 */ @js.native
+  object permissionsUserNotLicensed extends TopLevel[permissionsUserNotLicensed with Double]
+  
+  /* 0 */ @js.native
+  object uninitialized extends TopLevel[uninitialized with Double]
+  
 }
 

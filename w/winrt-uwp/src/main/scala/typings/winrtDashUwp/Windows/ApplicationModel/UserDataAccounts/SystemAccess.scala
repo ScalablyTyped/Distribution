@@ -1,7 +1,11 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration
 import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType
+import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.exchange
+import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.imap
+import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.pop
 import typings.winrtDashUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -73,11 +77,17 @@ object SystemAccess extends js.Object {
     @js.native
     sealed trait pop extends DeviceAccountServerType
     
-    /* 0 */ val exchange: typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.exchange with Double = js.native
-    /* 2 */ val imap: typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.imap with Double = js.native
-    /* 1 */ val pop: typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountServerType.pop with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DeviceAccountServerType with Double] = js.native
+    /* 0 */ @js.native
+    object exchange extends TopLevel[exchange with Double]
+    
+    /* 2 */ @js.native
+    object imap extends TopLevel[imap with Double]
+    
+    /* 1 */ @js.native
+    object pop extends TopLevel[pop with Double]
+    
   }
   
   /* static members */

@@ -1,8 +1,13 @@
 package typings.heremaps.H.mapevents
 
+import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.Map
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.mapevents.Pointer.Button
+import typings.heremaps.H.mapevents.Pointer.Button.LEFT
+import typings.heremaps.H.mapevents.Pointer.Button.MIDDLE
+import typings.heremaps.H.mapevents.Pointer.Button.NONE
+import typings.heremaps.H.mapevents.Pointer.Button.RIGHT
 import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -76,12 +81,20 @@ object Pointer extends js.Object {
     @js.native
     sealed trait RIGHT extends Button
     
-    /* 1 */ val LEFT: typings.heremaps.H.mapevents.Pointer.Button.LEFT with Double = js.native
-    /* 2 */ val MIDDLE: typings.heremaps.H.mapevents.Pointer.Button.MIDDLE with Double = js.native
-    /* 0 */ val NONE: typings.heremaps.H.mapevents.Pointer.Button.NONE with Double = js.native
-    /* 3 */ val RIGHT: typings.heremaps.H.mapevents.Pointer.Button.RIGHT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Button with Double] = js.native
+    /* 1 */ @js.native
+    object LEFT extends TopLevel[LEFT with Double]
+    
+    /* 2 */ @js.native
+    object MIDDLE extends TopLevel[MIDDLE with Double]
+    
+    /* 0 */ @js.native
+    object NONE extends TopLevel[NONE with Double]
+    
+    /* 3 */ @js.native
+    object RIGHT extends TopLevel[RIGHT with Double]
+    
   }
   
   /**

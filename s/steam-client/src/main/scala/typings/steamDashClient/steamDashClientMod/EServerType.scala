@@ -1,5 +1,111 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EServerType.ACS
+import typings.steamDashClient.steamDashClientMod.EServerType.AM
+import typings.steamDashClient.steamDashClientMod.EServerType.ASBOBSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.ATS
+import typings.steamDashClient.steamDashClientMod.EServerType.AccountScore
+import typings.steamDashClient.steamDashClientMod.EServerType.AppInformation
+import typings.steamDashClient.steamDashClientMod.EServerType.Auth
+import typings.steamDashClient.steamDashClientMod.EServerType.BRP
+import typings.steamDashClient.steamDashClientMod.EServerType.BS
+import typings.steamDashClient.steamDashClientMod.EServerType.BUM
+import typings.steamDashClient.steamDashClientMod.EServerType.BUMOBOSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.Backpack
+import typings.steamDashClient.steamDashClientMod.EServerType.BootstrapOBSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.BoxMonitor
+import typings.steamDashClient.steamDashClientMod.EServerType.BroadcastChat
+import typings.steamDashClient.steamDashClientMod.EServerType.BroadcastDirectory
+import typings.steamDashClient.steamDashClientMod.EServerType.BroadcastRelay
+import typings.steamDashClient.steamDashClientMod.EServerType.CCS
+import typings.steamDashClient.steamDashClientMod.EServerType.CM
+import typings.steamDashClient.steamDashClientMod.EServerType.CRE
+import typings.steamDashClient.steamDashClientMod.EServerType.CS
+import typings.steamDashClient.steamDashClientMod.EServerType.Client
+import typings.steamDashClient.steamDashClientMod.EServerType.Community
+import typings.steamDashClient.steamDashClientMod.EServerType.Console
+import typings.steamDashClient.steamDashClientMod.EServerType.DFS
+import typings.steamDashClient.steamDashClientMod.EServerType.DP
+import typings.steamDashClient.steamDashClientMod.EServerType.DRMS
+import typings.steamDashClient.steamDashClientMod.EServerType.DSS
+import typings.steamDashClient.steamDashClientMod.EServerType.DepotWebContent
+import typings.steamDashClient.steamDashClientMod.EServerType.EPM
+import typings.steamDashClient.steamDashClientMod.EServerType.EPMOBSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.ES
+import typings.steamDashClient.steamDashClientMod.EServerType.Econ
+import typings.steamDashClient.steamDashClientMod.EServerType.EmailDelivery
+import typings.steamDashClient.steamDashClientMod.EServerType.ExternalConfig
+import typings.steamDashClient.steamDashClientMod.EServerType.ExternalMonitor
+import typings.steamDashClient.steamDashClientMod.EServerType.FBS
+import typings.steamDashClient.steamDashClientMod.EServerType.FG
+import typings.steamDashClient.steamDashClientMod.EServerType.FS
+import typings.steamDashClient.steamDashClientMod.EServerType.FTS
+import typings.steamDashClient.steamDashClientMod.EServerType.First
+import typings.steamDashClient.steamDashClientMod.EServerType.GC
+import typings.steamDashClient.steamDashClientMod.EServerType.GCH
+import typings.steamDashClient.steamDashClientMod.EServerType.GM
+import typings.steamDashClient.steamDashClientMod.EServerType.GMS
+import typings.steamDashClient.steamDashClientMod.EServerType.GameNotifications
+import typings.steamDashClient.steamDashClientMod.EServerType.HLTVRelay
+import typings.steamDashClient.steamDashClientMod.EServerType.HubOBSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.IS
+import typings.steamDashClient.steamDashClientMod.EServerType.Invalid
+import typings.steamDashClient.steamDashClientMod.EServerType.InventoryManagement
+import typings.steamDashClient.steamDashClientMod.EServerType.KGS
+import typings.steamDashClient.steamDashClientMod.EServerType.LBS
+import typings.steamDashClient.steamDashClientMod.EServerType.Localization
+import typings.steamDashClient.steamDashClientMod.EServerType.LogRequest
+import typings.steamDashClient.steamDashClientMod.EServerType.LogWorker
+import typings.steamDashClient.steamDashClientMod.EServerType.Logsink
+import typings.steamDashClient.steamDashClientMod.EServerType.MDS
+import typings.steamDashClient.steamDashClientMod.EServerType.MMS
+import typings.steamDashClient.steamDashClientMod.EServerType.MPAS
+import typings.steamDashClient.steamDashClientMod.EServerType.Market
+import typings.steamDashClient.steamDashClientMod.EServerType.MarketRepl
+import typings.steamDashClient.steamDashClientMod.EServerType.MarketSearch
+import typings.steamDashClient.steamDashClientMod.EServerType.Max
+import typings.steamDashClient.steamDashClientMod.EServerType.MoneyStats
+import typings.steamDashClient.steamDashClientMod.EServerType.NS
+import typings.steamDashClient.steamDashClientMod.EServerType.OGS
+import typings.steamDashClient.steamDashClientMod.EServerType.P2PRelayOBSOLETE
+import typings.steamDashClient.steamDashClientMod.EServerType.PICS
+import typings.steamDashClient.steamDashClientMod.EServerType.PNP
+import typings.steamDashClient.steamDashClientMod.EServerType.PS
+import typings.steamDashClient.steamDashClientMod.EServerType.Parental
+import typings.steamDashClient.steamDashClientMod.EServerType.Partner
+import typings.steamDashClient.steamDashClientMod.EServerType.PartnerUpload
+import typings.steamDashClient.steamDashClientMod.EServerType.Phone
+import typings.steamDashClient.steamDashClientMod.EServerType.PublicTest
+import typings.steamDashClient.steamDashClientMod.EServerType.Quest
+import typings.steamDashClient.steamDashClientMod.EServerType.RM
+import typings.steamDashClient.steamDashClientMod.EServerType.SLC
+import typings.steamDashClient.steamDashClientMod.EServerType.SM
+import typings.steamDashClient.steamDashClientMod.EServerType.SS
+import typings.steamDashClient.steamDashClientMod.EServerType.Secrets
+import typings.steamDashClient.steamDashClientMod.EServerType.Shell
+import typings.steamDashClient.steamDashClientMod.EServerType.SolrMgr
+import typings.steamDashClient.steamDashClientMod.EServerType.Spare
+import typings.steamDashClient.steamDashClientMod.EServerType.Steam2Emulator
+import typings.steamDashClient.steamDashClientMod.EServerType.Store
+import typings.steamDashClient.steamDashClientMod.EServerType.StoreCatalog
+import typings.steamDashClient.steamDashClientMod.EServerType.StoreFeature
+import typings.steamDashClient.steamDashClientMod.EServerType.Support
+import typings.steamDashClient.steamDashClientMod.EServerType.TaxForm
+import typings.steamDashClient.steamDashClientMod.EServerType.Trade
+import typings.steamDashClient.steamDashClientMod.EServerType.TradeOffer
+import typings.steamDashClient.steamDashClientMod.EServerType.UCM
+import typings.steamDashClient.steamDashClientMod.EServerType.UDS
+import typings.steamDashClient.steamDashClientMod.EServerType.UFS
+import typings.steamDashClient.steamDashClientMod.EServerType.UGS
+import typings.steamDashClient.steamDashClientMod.EServerType.UMQ
+import typings.steamDashClient.steamDashClientMod.EServerType.Util
+import typings.steamDashClient.steamDashClientMod.EServerType.VS
+import typings.steamDashClient.steamDashClientMod.EServerType.VideoManager
+import typings.steamDashClient.steamDashClientMod.EServerType.WDS
+import typings.steamDashClient.steamDashClientMod.EServerType.WG
+import typings.steamDashClient.steamDashClientMod.EServerType.WebAPI
+import typings.steamDashClient.steamDashClientMod.EServerType.Workshop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -336,112 +442,322 @@ object EServerType extends js.Object {
   @js.native
   sealed trait Workshop extends EServerType
   
-  /* 65 */ val ACS: typings.steamDashClient.steamDashClientMod.EServerType.ACS with Double = js.native
-  /* 3 */ val AM: typings.steamDashClient.steamDashClientMod.EServerType.AM with Double = js.native
-  /* 14 */ val ASBOBSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.ASBOBSOLETE with Double = js.native
-  /* 6 */ val ATS: typings.steamDashClient.steamDashClientMod.EServerType.ATS with Double = js.native
-  /* 88 */ val AccountScore: typings.steamDashClient.steamDashClientMod.EServerType.AccountScore with Double = js.native
-  /* 26 */ val AppInformation: typings.steamDashClient.steamDashClientMod.EServerType.AppInformation with Double = js.native
-  /* 94 */ val Auth: typings.steamDashClient.steamDashClientMod.EServerType.Auth with Double = js.native
-  /* 56 */ val BRP: typings.steamDashClient.steamDashClientMod.EServerType.BRP with Double = js.native
-  /* 4 */ val BS: typings.steamDashClient.steamDashClientMod.EServerType.BS with Double = js.native
-  /* 2 */ val BUM: typings.steamDashClient.steamDashClientMod.EServerType.BUM with Double = js.native
-  /* 2 */ val BUMOBOSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.BUMOBOSOLETE with Double = js.native
-  /* 49 */ val Backpack: typings.steamDashClient.steamDashClientMod.EServerType.Backpack with Double = js.native
-  /* 16 */ val BootstrapOBSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.BootstrapOBSOLETE with Double = js.native
-  /* 9 */ val BoxMonitor: typings.steamDashClient.steamDashClientMod.EServerType.BoxMonitor with Double = js.native
-  /* 86 */ val BroadcastChat: typings.steamDashClient.steamDashClientMod.EServerType.BroadcastChat with Double = js.native
-  /* 83 */ val BroadcastDirectory: typings.steamDashClient.steamDashClientMod.EServerType.BroadcastDirectory with Double = js.native
-  /* 82 */ val BroadcastRelay: typings.steamDashClient.steamDashClientMod.EServerType.BroadcastRelay with Double = js.native
-  /* 32 */ val CCS: typings.steamDashClient.steamDashClientMod.EServerType.CCS with Double = js.native
-  /* 7 */ val CM: typings.steamDashClient.steamDashClientMod.EServerType.CM with Double = js.native
-  /* 53 */ val CRE: typings.steamDashClient.steamDashClientMod.EServerType.CRE with Double = js.native
-  /* 36 */ val CS: typings.steamDashClient.steamDashClientMod.EServerType.CS with Double = js.native
-  /* 15 */ val Client: typings.steamDashClient.steamDashClientMod.EServerType.Client with Double = js.native
-  /* 24 */ val Community: typings.steamDashClient.steamDashClientMod.EServerType.Community with Double = js.native
-  /* 13 */ val Console: typings.steamDashClient.steamDashClientMod.EServerType.Console with Double = js.native
-  /* 33 */ val DFS: typings.steamDashClient.steamDashClientMod.EServerType.DFS with Double = js.native
-  /* 17 */ val DP: typings.steamDashClient.steamDashClientMod.EServerType.DP with Double = js.native
-  /* 11 */ val DRMS: typings.steamDashClient.steamDashClientMod.EServerType.DRMS with Double = js.native
-  /* 24 */ val DSS: typings.steamDashClient.steamDashClientMod.EServerType.DSS with Double = js.native
-  /* 73 */ val DepotWebContent: typings.steamDashClient.steamDashClientMod.EServerType.DepotWebContent with Double = js.native
-  /* 29 */ val EPM: typings.steamDashClient.steamDashClientMod.EServerType.EPM with Double = js.native
-  /* 29 */ val EPMOBSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.EPMOBSOLETE with Double = js.native
-  /* 72 */ val ES: typings.steamDashClient.steamDashClientMod.EServerType.ES with Double = js.native
-  /* 48 */ val Econ: typings.steamDashClient.steamDashClientMod.EServerType.Econ with Double = js.native
-  /* 92 */ val EmailDelivery: typings.steamDashClient.steamDashClientMod.EServerType.EmailDelivery with Double = js.native
-  /* 74 */ val ExternalConfig: typings.steamDashClient.steamDashClientMod.EServerType.ExternalConfig with Double = js.native
-  /* 68 */ val ExternalMonitor: typings.steamDashClient.steamDashClientMod.EServerType.ExternalMonitor with Double = js.native
-  /* 8 */ val FBS: typings.steamDashClient.steamDashClientMod.EServerType.FBS with Double = js.native
-  /* 9 */ val FG: typings.steamDashClient.steamDashClientMod.EServerType.FG with Double = js.native
-  /* 47 */ val FS: typings.steamDashClient.steamDashClientMod.EServerType.FS with Double = js.native
-  /* 28 */ val FTS: typings.steamDashClient.steamDashClientMod.EServerType.FTS with Double = js.native
-  /* 0 */ val First: typings.steamDashClient.steamDashClientMod.EServerType.First with Double = js.native
-  /* 37 */ val GC: typings.steamDashClient.steamDashClientMod.EServerType.GC with Double = js.native
-  /* 57 */ val GCH: typings.steamDashClient.steamDashClientMod.EServerType.GCH with Double = js.native
-  /* 1 */ val GM: typings.steamDashClient.steamDashClientMod.EServerType.GM with Double = js.native
-  /* 43 */ val GMS: typings.steamDashClient.steamDashClientMod.EServerType.GMS with Double = js.native
-  /* 75 */ val GameNotifications: typings.steamDashClient.steamDashClientMod.EServerType.GameNotifications with Double = js.native
-  /* 96 */ val HLTVRelay: typings.steamDashClient.steamDashClientMod.EServerType.HLTVRelay with Double = js.native
-  /* 12 */ val HubOBSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.HubOBSOLETE with Double = js.native
-  /* 31 */ val IS: typings.steamDashClient.steamDashClientMod.EServerType.IS with Double = js.native
-  /* -1 */ val Invalid: typings.steamDashClient.steamDashClientMod.EServerType.Invalid with Double = js.native
-  /* 93 */ val InventoryManagement: typings.steamDashClient.steamDashClientMod.EServerType.InventoryManagement with Double = js.native
-  /* 44 */ val KGS: typings.steamDashClient.steamDashClientMod.EServerType.KGS with Double = js.native
-  /* 34 */ val LBS: typings.steamDashClient.steamDashClientMod.EServerType.LBS with Double = js.native
-  /* 78 */ val Localization: typings.steamDashClient.steamDashClientMod.EServerType.Localization with Double = js.native
-  /* 90 */ val LogRequest: typings.steamDashClient.steamDashClientMod.EServerType.LogRequest with Double = js.native
-  /* 91 */ val LogWorker: typings.steamDashClient.steamDashClientMod.EServerType.LogWorker with Double = js.native
-  /* 61 */ val Logsink: typings.steamDashClient.steamDashClientMod.EServerType.Logsink with Double = js.native
-  /* 35 */ val MDS: typings.steamDashClient.steamDashClientMod.EServerType.MDS with Double = js.native
-  /* 42 */ val MMS: typings.steamDashClient.steamDashClientMod.EServerType.MMS with Double = js.native
-  /* 58 */ val MPAS: typings.steamDashClient.steamDashClientMod.EServerType.MPAS with Double = js.native
-  /* 62 */ val Market: typings.steamDashClient.steamDashClientMod.EServerType.Market with Double = js.native
-  /* 76 */ val MarketRepl: typings.steamDashClient.steamDashClientMod.EServerType.MarketRepl with Double = js.native
-  /* 77 */ val MarketSearch: typings.steamDashClient.steamDashClientMod.EServerType.MarketSearch with Double = js.native
-  /* 97 */ val Max: typings.steamDashClient.steamDashClientMod.EServerType.Max with Double = js.native
-  /* 52 */ val MoneyStats: typings.steamDashClient.steamDashClientMod.EServerType.MoneyStats with Double = js.native
-  /* 38 */ val NS: typings.steamDashClient.steamDashClientMod.EServerType.NS with Double = js.native
-  /* 39 */ val OGS: typings.steamDashClient.steamDashClientMod.EServerType.OGS with Double = js.native
-  /* 25 */ val P2PRelayOBSOLETE: typings.steamDashClient.steamDashClientMod.EServerType.P2PRelayOBSOLETE with Double = js.native
-  /* 14 */ val PICS: typings.steamDashClient.steamDashClientMod.EServerType.PICS with Double = js.native
-  /* 66 */ val PNP: typings.steamDashClient.steamDashClientMod.EServerType.PNP with Double = js.native
-  /* 30 */ val PS: typings.steamDashClient.steamDashClientMod.EServerType.PS with Double = js.native
-  /* 69 */ val Parental: typings.steamDashClient.steamDashClientMod.EServerType.Parental with Double = js.native
-  /* 71 */ val Partner: typings.steamDashClient.steamDashClientMod.EServerType.Partner with Double = js.native
-  /* 70 */ val PartnerUpload: typings.steamDashClient.steamDashClientMod.EServerType.PartnerUpload with Double = js.native
-  /* 87 */ val Phone: typings.steamDashClient.steamDashClientMod.EServerType.Phone with Double = js.native
-  /* 80 */ val PublicTest: typings.steamDashClient.steamDashClientMod.EServerType.PublicTest with Double = js.native
-  /* 63 */ val Quest: typings.steamDashClient.steamDashClientMod.EServerType.Quest with Double = js.native
-  /* 46 */ val RM: typings.steamDashClient.steamDashClientMod.EServerType.RM with Double = js.native
-  /* 20 */ val SLC: typings.steamDashClient.steamDashClientMod.EServerType.SLC with Double = js.native
-  /* 19 */ val SM: typings.steamDashClient.steamDashClientMod.EServerType.SM with Double = js.native
-  /* 10 */ val SS: typings.steamDashClient.steamDashClientMod.EServerType.SS with Double = js.native
-  /* 60 */ val Secrets: typings.steamDashClient.steamDashClientMod.EServerType.Secrets with Double = js.native
-  /* 0 */ val Shell: typings.steamDashClient.steamDashClientMod.EServerType.Shell with Double = js.native
-  /* 81 */ val SolrMgr: typings.steamDashClient.steamDashClientMod.EServerType.SolrMgr with Double = js.native
-  /* 27 */ val Spare: typings.steamDashClient.steamDashClientMod.EServerType.Spare with Double = js.native
-  /* 79 */ val Steam2Emulator: typings.steamDashClient.steamDashClientMod.EServerType.Steam2Emulator with Double = js.native
-  /* 51 */ val Store: typings.steamDashClient.steamDashClientMod.EServerType.Store with Double = js.native
-  /* 95 */ val StoreCatalog: typings.steamDashClient.steamDashClientMod.EServerType.StoreCatalog with Double = js.native
-  /* 51 */ val StoreFeature: typings.steamDashClient.steamDashClientMod.EServerType.StoreFeature with Double = js.native
-  /* 89 */ val Support: typings.steamDashClient.steamDashClientMod.EServerType.Support with Double = js.native
-  /* 67 */ val TaxForm: typings.steamDashClient.steamDashClientMod.EServerType.TaxForm with Double = js.native
-  /* 59 */ val Trade: typings.steamDashClient.steamDashClientMod.EServerType.Trade with Double = js.native
-  /* 85 */ val TradeOffer: typings.steamDashClient.steamDashClientMod.EServerType.TradeOffer with Double = js.native
-  /* 45 */ val UCM: typings.steamDashClient.steamDashClientMod.EServerType.UCM with Double = js.native
-  /* 41 */ val UDS: typings.steamDashClient.steamDashClientMod.EServerType.UDS with Double = js.native
-  /* 21 */ val UFS: typings.steamDashClient.steamDashClientMod.EServerType.UFS with Double = js.native
-  /* 50 */ val UGS: typings.steamDashClient.steamDashClientMod.EServerType.UGS with Double = js.native
-  /* 54 */ val UMQ: typings.steamDashClient.steamDashClientMod.EServerType.UMQ with Double = js.native
-  /* 23 */ val Util: typings.steamDashClient.steamDashClientMod.EServerType.Util with Double = js.native
-  /* 5 */ val VS: typings.steamDashClient.steamDashClientMod.EServerType.VS with Double = js.native
-  /* 84 */ val VideoManager: typings.steamDashClient.steamDashClientMod.EServerType.VideoManager with Double = js.native
-  /* 64 */ val WDS: typings.steamDashClient.steamDashClientMod.EServerType.WDS with Double = js.native
-  /* 18 */ val WG: typings.steamDashClient.steamDashClientMod.EServerType.WG with Double = js.native
-  /* 40 */ val WebAPI: typings.steamDashClient.steamDashClientMod.EServerType.WebAPI with Double = js.native
-  /* 55 */ val Workshop: typings.steamDashClient.steamDashClientMod.EServerType.Workshop with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EServerType with Double] = js.native
+  /* 65 */ @js.native
+  object ACS extends TopLevel[ACS with Double]
+  
+  /* 3 */ @js.native
+  object AM extends TopLevel[AM with Double]
+  
+  /* 14 */ @js.native
+  object ASBOBSOLETE extends TopLevel[ASBOBSOLETE with Double]
+  
+  /* 6 */ @js.native
+  object ATS extends TopLevel[ATS with Double]
+  
+  /* 88 */ @js.native
+  object AccountScore extends TopLevel[AccountScore with Double]
+  
+  /* 26 */ @js.native
+  object AppInformation extends TopLevel[AppInformation with Double]
+  
+  /* 94 */ @js.native
+  object Auth extends TopLevel[Auth with Double]
+  
+  /* 56 */ @js.native
+  object BRP extends TopLevel[BRP with Double]
+  
+  /* 4 */ @js.native
+  object BS extends TopLevel[BS with Double]
+  
+  /* 2 */ @js.native
+  object BUM extends TopLevel[BUM with Double]
+  
+  /* 2 */ @js.native
+  object BUMOBOSOLETE extends TopLevel[BUMOBOSOLETE with Double]
+  
+  /* 49 */ @js.native
+  object Backpack extends TopLevel[Backpack with Double]
+  
+  /* 16 */ @js.native
+  object BootstrapOBSOLETE extends TopLevel[BootstrapOBSOLETE with Double]
+  
+  /* 9 */ @js.native
+  object BoxMonitor extends TopLevel[BoxMonitor with Double]
+  
+  /* 86 */ @js.native
+  object BroadcastChat extends TopLevel[BroadcastChat with Double]
+  
+  /* 83 */ @js.native
+  object BroadcastDirectory extends TopLevel[BroadcastDirectory with Double]
+  
+  /* 82 */ @js.native
+  object BroadcastRelay extends TopLevel[BroadcastRelay with Double]
+  
+  /* 32 */ @js.native
+  object CCS extends TopLevel[CCS with Double]
+  
+  /* 7 */ @js.native
+  object CM extends TopLevel[CM with Double]
+  
+  /* 53 */ @js.native
+  object CRE extends TopLevel[CRE with Double]
+  
+  /* 36 */ @js.native
+  object CS extends TopLevel[CS with Double]
+  
+  /* 15 */ @js.native
+  object Client extends TopLevel[Client with Double]
+  
+  /* 24 */ @js.native
+  object Community extends TopLevel[Community with Double]
+  
+  /* 13 */ @js.native
+  object Console extends TopLevel[Console with Double]
+  
+  /* 33 */ @js.native
+  object DFS extends TopLevel[DFS with Double]
+  
+  /* 17 */ @js.native
+  object DP extends TopLevel[DP with Double]
+  
+  /* 11 */ @js.native
+  object DRMS extends TopLevel[DRMS with Double]
+  
+  /* 24 */ @js.native
+  object DSS extends TopLevel[DSS with Double]
+  
+  /* 73 */ @js.native
+  object DepotWebContent extends TopLevel[DepotWebContent with Double]
+  
+  /* 29 */ @js.native
+  object EPM extends TopLevel[EPM with Double]
+  
+  /* 29 */ @js.native
+  object EPMOBSOLETE extends TopLevel[EPMOBSOLETE with Double]
+  
+  /* 72 */ @js.native
+  object ES extends TopLevel[ES with Double]
+  
+  /* 48 */ @js.native
+  object Econ extends TopLevel[Econ with Double]
+  
+  /* 92 */ @js.native
+  object EmailDelivery extends TopLevel[EmailDelivery with Double]
+  
+  /* 74 */ @js.native
+  object ExternalConfig extends TopLevel[ExternalConfig with Double]
+  
+  /* 68 */ @js.native
+  object ExternalMonitor extends TopLevel[ExternalMonitor with Double]
+  
+  /* 8 */ @js.native
+  object FBS extends TopLevel[FBS with Double]
+  
+  /* 9 */ @js.native
+  object FG extends TopLevel[FG with Double]
+  
+  /* 47 */ @js.native
+  object FS extends TopLevel[FS with Double]
+  
+  /* 28 */ @js.native
+  object FTS extends TopLevel[FTS with Double]
+  
+  /* 0 */ @js.native
+  object First extends TopLevel[First with Double]
+  
+  /* 37 */ @js.native
+  object GC extends TopLevel[GC with Double]
+  
+  /* 57 */ @js.native
+  object GCH extends TopLevel[GCH with Double]
+  
+  /* 1 */ @js.native
+  object GM extends TopLevel[GM with Double]
+  
+  /* 43 */ @js.native
+  object GMS extends TopLevel[GMS with Double]
+  
+  /* 75 */ @js.native
+  object GameNotifications extends TopLevel[GameNotifications with Double]
+  
+  /* 96 */ @js.native
+  object HLTVRelay extends TopLevel[HLTVRelay with Double]
+  
+  /* 12 */ @js.native
+  object HubOBSOLETE extends TopLevel[HubOBSOLETE with Double]
+  
+  /* 31 */ @js.native
+  object IS extends TopLevel[IS with Double]
+  
+  /* -1 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 93 */ @js.native
+  object InventoryManagement extends TopLevel[InventoryManagement with Double]
+  
+  /* 44 */ @js.native
+  object KGS extends TopLevel[KGS with Double]
+  
+  /* 34 */ @js.native
+  object LBS extends TopLevel[LBS with Double]
+  
+  /* 78 */ @js.native
+  object Localization extends TopLevel[Localization with Double]
+  
+  /* 90 */ @js.native
+  object LogRequest extends TopLevel[LogRequest with Double]
+  
+  /* 91 */ @js.native
+  object LogWorker extends TopLevel[LogWorker with Double]
+  
+  /* 61 */ @js.native
+  object Logsink extends TopLevel[Logsink with Double]
+  
+  /* 35 */ @js.native
+  object MDS extends TopLevel[MDS with Double]
+  
+  /* 42 */ @js.native
+  object MMS extends TopLevel[MMS with Double]
+  
+  /* 58 */ @js.native
+  object MPAS extends TopLevel[MPAS with Double]
+  
+  /* 62 */ @js.native
+  object Market extends TopLevel[Market with Double]
+  
+  /* 76 */ @js.native
+  object MarketRepl extends TopLevel[MarketRepl with Double]
+  
+  /* 77 */ @js.native
+  object MarketSearch extends TopLevel[MarketSearch with Double]
+  
+  /* 97 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 52 */ @js.native
+  object MoneyStats extends TopLevel[MoneyStats with Double]
+  
+  /* 38 */ @js.native
+  object NS extends TopLevel[NS with Double]
+  
+  /* 39 */ @js.native
+  object OGS extends TopLevel[OGS with Double]
+  
+  /* 25 */ @js.native
+  object P2PRelayOBSOLETE extends TopLevel[P2PRelayOBSOLETE with Double]
+  
+  /* 14 */ @js.native
+  object PICS extends TopLevel[PICS with Double]
+  
+  /* 66 */ @js.native
+  object PNP extends TopLevel[PNP with Double]
+  
+  /* 30 */ @js.native
+  object PS extends TopLevel[PS with Double]
+  
+  /* 69 */ @js.native
+  object Parental extends TopLevel[Parental with Double]
+  
+  /* 71 */ @js.native
+  object Partner extends TopLevel[Partner with Double]
+  
+  /* 70 */ @js.native
+  object PartnerUpload extends TopLevel[PartnerUpload with Double]
+  
+  /* 87 */ @js.native
+  object Phone extends TopLevel[Phone with Double]
+  
+  /* 80 */ @js.native
+  object PublicTest extends TopLevel[PublicTest with Double]
+  
+  /* 63 */ @js.native
+  object Quest extends TopLevel[Quest with Double]
+  
+  /* 46 */ @js.native
+  object RM extends TopLevel[RM with Double]
+  
+  /* 20 */ @js.native
+  object SLC extends TopLevel[SLC with Double]
+  
+  /* 19 */ @js.native
+  object SM extends TopLevel[SM with Double]
+  
+  /* 10 */ @js.native
+  object SS extends TopLevel[SS with Double]
+  
+  /* 60 */ @js.native
+  object Secrets extends TopLevel[Secrets with Double]
+  
+  /* 0 */ @js.native
+  object Shell extends TopLevel[Shell with Double]
+  
+  /* 81 */ @js.native
+  object SolrMgr extends TopLevel[SolrMgr with Double]
+  
+  /* 27 */ @js.native
+  object Spare extends TopLevel[Spare with Double]
+  
+  /* 79 */ @js.native
+  object Steam2Emulator extends TopLevel[Steam2Emulator with Double]
+  
+  /* 51 */ @js.native
+  object Store extends TopLevel[Store with Double]
+  
+  /* 95 */ @js.native
+  object StoreCatalog extends TopLevel[StoreCatalog with Double]
+  
+  /* 51 */ @js.native
+  object StoreFeature extends TopLevel[StoreFeature with Double]
+  
+  /* 89 */ @js.native
+  object Support extends TopLevel[Support with Double]
+  
+  /* 67 */ @js.native
+  object TaxForm extends TopLevel[TaxForm with Double]
+  
+  /* 59 */ @js.native
+  object Trade extends TopLevel[Trade with Double]
+  
+  /* 85 */ @js.native
+  object TradeOffer extends TopLevel[TradeOffer with Double]
+  
+  /* 45 */ @js.native
+  object UCM extends TopLevel[UCM with Double]
+  
+  /* 41 */ @js.native
+  object UDS extends TopLevel[UDS with Double]
+  
+  /* 21 */ @js.native
+  object UFS extends TopLevel[UFS with Double]
+  
+  /* 50 */ @js.native
+  object UGS extends TopLevel[UGS with Double]
+  
+  /* 54 */ @js.native
+  object UMQ extends TopLevel[UMQ with Double]
+  
+  /* 23 */ @js.native
+  object Util extends TopLevel[Util with Double]
+  
+  /* 5 */ @js.native
+  object VS extends TopLevel[VS with Double]
+  
+  /* 84 */ @js.native
+  object VideoManager extends TopLevel[VideoManager with Double]
+  
+  /* 64 */ @js.native
+  object WDS extends TopLevel[WDS with Double]
+  
+  /* 18 */ @js.native
+  object WG extends TopLevel[WG with Double]
+  
+  /* 40 */ @js.native
+  object WebAPI extends TopLevel[WebAPI with Double]
+  
+  /* 55 */ @js.native
+  object Workshop extends TopLevel[Workshop with Double]
+  
 }
 

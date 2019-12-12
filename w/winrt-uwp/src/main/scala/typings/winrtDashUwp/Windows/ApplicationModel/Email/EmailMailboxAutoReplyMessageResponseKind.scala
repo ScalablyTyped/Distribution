@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReplyMessageResponseKind.html
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReplyMessageResponseKind.plainText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EmailMailboxAutoReplyMessageResponseKind extends js.Object {
   @js.native
   sealed trait plainText extends EmailMailboxAutoReplyMessageResponseKind
   
-  /* 0 */ val html: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReplyMessageResponseKind.html with Double = js.native
-  /* 1 */ val plainText: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReplyMessageResponseKind.plainText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxAutoReplyMessageResponseKind with Double] = js.native
+  /* 0 */ @js.native
+  object html extends TopLevel[html with Double]
+  
+  /* 1 */ @js.native
+  object plainText extends TopLevel[plainText with Double]
+  
 }
 

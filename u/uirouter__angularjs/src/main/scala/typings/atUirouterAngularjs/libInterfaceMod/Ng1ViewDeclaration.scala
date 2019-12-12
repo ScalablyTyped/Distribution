@@ -3,11 +3,11 @@ package typings.atUirouterAngularjs.libInterfaceMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.atUirouterCore.libCommonCommonMod.IInjectable
 import typings.atUirouterCore.libStateInterfaceMod._ViewDeclaration
-import typings.atUirouterCore.libViewInterfaceMod.ViewContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Ng1ViewDeclaration extends _ViewDeclaration {
   /**
     * An object which maps `resolve`s to [[component]] `bindings`.
@@ -49,7 +49,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * ```
     *
     */
-  var bindings: js.UndefOr[StringDictionary[String]] = js.undefined
+  var bindings: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The name of the component to use for this view.
     *
@@ -102,7 +102,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     *
     * See also: Todd Motto's angular 1.3 and 1.4 [backport of .component()](https://github.com/toddmotto/angular-component)
     */
-  var component: js.UndefOr[String] = js.undefined
+  var component: js.UndefOr[String] = js.native
   /**
     * Dynamic component provider function.
     *
@@ -123,7 +123,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * }
     * ```
     */
-  var componentProvider: js.UndefOr[IInjectable] = js.undefined
+  var componentProvider: js.UndefOr[IInjectable] = js.native
   /**
     * The view's controller function or name
     *
@@ -137,7 +137,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     *
     * See: [[Ng1Controller]] for information about component-level router hooks.
     */
-  var controller: js.UndefOr[IInjectable | String] = js.undefined
+  var controller: js.UndefOr[IInjectable | String] = js.native
   /**
     * A controller alias name.
     *
@@ -146,7 +146,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * If present, the controller will be published to scope under the `controllerAs` name.
     * See: https://docs.angularjs.org/api/ng/directive/ngController
     */
-  var controllerAs: js.UndefOr[String] = js.undefined
+  var controllerAs: js.UndefOr[String] = js.native
   /**
     * Dynamic controller provider function.
     *
@@ -171,7 +171,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * }
     * ```
     */
-  var controllerProvider: js.UndefOr[IInjectable] = js.undefined
+  var controllerProvider: js.UndefOr[IInjectable] = js.native
   /**
     * The scope variable name to use for resolve data.
     *
@@ -182,7 +182,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     *
     * Defaults to `$resolve`.
     */
-  var resolveAs: js.UndefOr[String] = js.undefined
+  var resolveAs: js.UndefOr[String] = js.native
   /**
     * The HTML template for the view.
     *
@@ -207,7 +207,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * }
     * ```
     */
-  var template: js.UndefOr[js.Function | String] = js.undefined
+  var template: js.UndefOr[js.Function | String] = js.native
   /**
     * Injected function which returns the HTML template.
     *
@@ -223,7 +223,7 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * }
     * ```
     */
-  var templateProvider: js.UndefOr[IInjectable] = js.undefined
+  var templateProvider: js.UndefOr[IInjectable] = js.native
   /**
     * The URL for the HTML template for the view.
     *
@@ -246,45 +246,6 @@ trait Ng1ViewDeclaration extends _ViewDeclaration {
     * }
     * ```
     */
-  var templateUrl: js.UndefOr[String | js.Function] = js.undefined
-}
-
-object Ng1ViewDeclaration {
-  @scala.inline
-  def apply(
-    $context: ViewContext = null,
-    $name: String = null,
-    $type: String = null,
-    $uiViewContextAnchor: String = null,
-    $uiViewName: String = null,
-    bindings: StringDictionary[String] = null,
-    component: String = null,
-    componentProvider: IInjectable = null,
-    controller: IInjectable | String = null,
-    controllerAs: String = null,
-    controllerProvider: IInjectable = null,
-    resolveAs: String = null,
-    template: js.Function | String = null,
-    templateProvider: IInjectable = null,
-    templateUrl: String | js.Function = null
-  ): Ng1ViewDeclaration = {
-    val __obj = js.Dynamic.literal()
-    if ($context != null) __obj.updateDynamic("$context")($context.asInstanceOf[js.Any])
-    if ($name != null) __obj.updateDynamic("$name")($name.asInstanceOf[js.Any])
-    if ($type != null) __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
-    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor.asInstanceOf[js.Any])
-    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName.asInstanceOf[js.Any])
-    if (bindings != null) __obj.updateDynamic("bindings")(bindings.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
-    if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
-    if (resolveAs != null) __obj.updateDynamic("resolveAs")(resolveAs.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Ng1ViewDeclaration]
-  }
+  var templateUrl: js.UndefOr[String | js.Function] = js.native
 }
 

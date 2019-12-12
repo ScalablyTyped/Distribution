@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.facedown
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.faceup
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.notRotated
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated180DegreesCounterclockwise
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated270DegreesCounterclockwise
+import typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated90DegreesCounterclockwise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object SimpleOrientation extends js.Object {
   @js.native
   sealed trait rotated90DegreesCounterclockwise extends SimpleOrientation
   
-  /* 5 */ val facedown: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.facedown with Double = js.native
-  /* 4 */ val faceup: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.faceup with Double = js.native
-  /* 0 */ val notRotated: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.notRotated with Double = js.native
-  /* 2 */ val rotated180DegreesCounterclockwise: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated180DegreesCounterclockwise with Double = js.native
-  /* 3 */ val rotated270DegreesCounterclockwise: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated270DegreesCounterclockwise with Double = js.native
-  /* 1 */ val rotated90DegreesCounterclockwise: typings.winrtDashUwp.Windows.Devices.Sensors.SimpleOrientation.rotated90DegreesCounterclockwise with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SimpleOrientation with Double] = js.native
+  /* 5 */ @js.native
+  object facedown extends TopLevel[facedown with Double]
+  
+  /* 4 */ @js.native
+  object faceup extends TopLevel[faceup with Double]
+  
+  /* 0 */ @js.native
+  object notRotated extends TopLevel[notRotated with Double]
+  
+  /* 2 */ @js.native
+  object rotated180DegreesCounterclockwise extends TopLevel[rotated180DegreesCounterclockwise with Double]
+  
+  /* 3 */ @js.native
+  object rotated270DegreesCounterclockwise extends TopLevel[rotated270DegreesCounterclockwise with Double]
+  
+  /* 1 */ @js.native
+  object rotated90DegreesCounterclockwise extends TopLevel[rotated90DegreesCounterclockwise with Double]
+  
 }
 

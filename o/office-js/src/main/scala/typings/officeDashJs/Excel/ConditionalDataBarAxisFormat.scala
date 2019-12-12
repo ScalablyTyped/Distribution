@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.automatic
+import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.cellMidPoint
+import typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object ConditionalDataBarAxisFormat extends js.Object {
   @js.native
   sealed trait none extends ConditionalDataBarAxisFormat
   
-  /* "Automatic" */ val automatic: typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.automatic with String = js.native
-  /* "CellMidPoint" */ val cellMidPoint: typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.cellMidPoint with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.ConditionalDataBarAxisFormat.none with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalDataBarAxisFormat with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "CellMidPoint" */ @js.native
+  object cellMidPoint extends TopLevel[cellMidPoint with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
 }
 

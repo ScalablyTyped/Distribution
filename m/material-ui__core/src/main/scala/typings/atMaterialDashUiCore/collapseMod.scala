@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.collapseCollapseMod.CollapseProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object collapseMod extends js.Object {
     def this(props: CollapseProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[CollapseProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[CollapseProps]]
+  
 }
 

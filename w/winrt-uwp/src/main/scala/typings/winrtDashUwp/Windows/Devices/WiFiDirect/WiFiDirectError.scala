@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.radioNotAvailable
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.resourceInUse
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object WiFiDirectError extends js.Object {
   @js.native
   sealed trait success extends WiFiDirectError
   
-  /* 1 */ val radioNotAvailable: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.radioNotAvailable with Double = js.native
-  /* 2 */ val resourceInUse: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.resourceInUse with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectError.success with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectError with Double] = js.native
+  /* 1 */ @js.native
+  object radioNotAvailable extends TopLevel[radioNotAvailable with Double]
+  
+  /* 2 */ @js.native
+  object resourceInUse extends TopLevel[resourceInUse with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
 }
 

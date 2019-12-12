@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.auto
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.candlelight
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.cloudy
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.daylight
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.flash
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.fluorescent
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.manual
+import typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.tungsten
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object ColorTemperaturePreset extends js.Object {
   @js.native
   sealed trait tungsten extends ColorTemperaturePreset
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.auto with Double = js.native
-  /* 7 */ val candlelight: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.candlelight with Double = js.native
-  /* 2 */ val cloudy: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.cloudy with Double = js.native
-  /* 3 */ val daylight: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.daylight with Double = js.native
-  /* 4 */ val flash: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.flash with Double = js.native
-  /* 5 */ val fluorescent: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.fluorescent with Double = js.native
-  /* 1 */ val manual: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.manual with Double = js.native
-  /* 6 */ val tungsten: typings.winrtDashUwp.Windows.Media.Devices.ColorTemperaturePreset.tungsten with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ColorTemperaturePreset with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 7 */ @js.native
+  object candlelight extends TopLevel[candlelight with Double]
+  
+  /* 2 */ @js.native
+  object cloudy extends TopLevel[cloudy with Double]
+  
+  /* 3 */ @js.native
+  object daylight extends TopLevel[daylight with Double]
+  
+  /* 4 */ @js.native
+  object flash extends TopLevel[flash with Double]
+  
+  /* 5 */ @js.native
+  object fluorescent extends TopLevel[fluorescent with Double]
+  
+  /* 1 */ @js.native
+  object manual extends TopLevel[manual with Double]
+  
+  /* 6 */ @js.native
+  object tungsten extends TopLevel[tungsten with Double]
+  
 }
 

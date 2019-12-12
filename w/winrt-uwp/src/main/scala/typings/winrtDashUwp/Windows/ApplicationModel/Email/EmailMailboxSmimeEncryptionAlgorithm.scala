@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.any
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.des
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc2128Bit
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc240Bit
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc264Bit
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.tripleDes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object EmailMailboxSmimeEncryptionAlgorithm extends js.Object {
   @js.native
   sealed trait tripleDes extends EmailMailboxSmimeEncryptionAlgorithm
   
-  /* 0 */ val any: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.any with Double = js.native
-  /* 2 */ val des: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.des with Double = js.native
-  /* 3 */ val rc2128Bit: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc2128Bit with Double = js.native
-  /* 5 */ val rc240Bit: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc240Bit with Double = js.native
-  /* 4 */ val rc264Bit: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.rc264Bit with Double = js.native
-  /* 1 */ val tripleDes: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm.tripleDes with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxSmimeEncryptionAlgorithm with Double] = js.native
+  /* 0 */ @js.native
+  object any extends TopLevel[any with Double]
+  
+  /* 2 */ @js.native
+  object des extends TopLevel[des with Double]
+  
+  /* 3 */ @js.native
+  object rc2128Bit extends TopLevel[rc2128Bit with Double]
+  
+  /* 5 */ @js.native
+  object rc240Bit extends TopLevel[rc240Bit with Double]
+  
+  /* 4 */ @js.native
+  object rc264Bit extends TopLevel[rc264Bit with Double]
+  
+  /* 1 */ @js.native
+  object tripleDes extends TopLevel[tripleDes with Double]
+  
 }
 

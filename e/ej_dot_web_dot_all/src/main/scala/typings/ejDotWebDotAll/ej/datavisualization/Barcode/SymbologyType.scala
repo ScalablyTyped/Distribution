@@ -1,5 +1,18 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Barcode
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Codabar
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code11
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128A
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128B
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128C
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code32
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39Extended
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93Extended
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.DataMatrix
+import typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.QRBarcode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,19 +71,43 @@ object SymbologyType extends js.Object {
   @js.native
   sealed trait QRBarcode extends SymbologyType
   
-  /* 5 */ val Codabar: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Codabar with Double = js.native
-  /* 4 */ val Code11: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code11 with Double = js.native
-  /* 9 */ val Code128A: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128A with Double = js.native
-  /* 10 */ val Code128B: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128B with Double = js.native
-  /* 11 */ val Code128C: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code128C with Double = js.native
-  /* 6 */ val Code32: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code32 with Double = js.native
-  /* 2 */ val Code39: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39 with Double = js.native
-  /* 3 */ val Code39Extended: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code39Extended with Double = js.native
-  /* 7 */ val Code93: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93 with Double = js.native
-  /* 8 */ val Code93Extended: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.Code93Extended with Double = js.native
-  /* 1 */ val DataMatrix: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.DataMatrix with Double = js.native
-  /* 0 */ val QRBarcode: typings.ejDotWebDotAll.ej.datavisualization.Barcode.SymbologyType.QRBarcode with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SymbologyType with Double] = js.native
+  /* 5 */ @js.native
+  object Codabar extends TopLevel[Codabar with Double]
+  
+  /* 4 */ @js.native
+  object Code11 extends TopLevel[Code11 with Double]
+  
+  /* 9 */ @js.native
+  object Code128A extends TopLevel[Code128A with Double]
+  
+  /* 10 */ @js.native
+  object Code128B extends TopLevel[Code128B with Double]
+  
+  /* 11 */ @js.native
+  object Code128C extends TopLevel[Code128C with Double]
+  
+  /* 6 */ @js.native
+  object Code32 extends TopLevel[Code32 with Double]
+  
+  /* 2 */ @js.native
+  object Code39 extends TopLevel[Code39 with Double]
+  
+  /* 3 */ @js.native
+  object Code39Extended extends TopLevel[Code39Extended with Double]
+  
+  /* 7 */ @js.native
+  object Code93 extends TopLevel[Code93 with Double]
+  
+  /* 8 */ @js.native
+  object Code93Extended extends TopLevel[Code93Extended with Double]
+  
+  /* 1 */ @js.native
+  object DataMatrix extends TopLevel[DataMatrix with Double]
+  
+  /* 0 */ @js.native
+  object QRBarcode extends TopLevel[QRBarcode with Double]
+  
 }
 

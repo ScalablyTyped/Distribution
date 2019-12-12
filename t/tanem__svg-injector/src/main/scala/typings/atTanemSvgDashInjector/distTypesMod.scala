@@ -1,6 +1,10 @@
 package typings.atTanemSvgDashInjector
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts
+import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Always
+import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Never
+import typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Once
 import typings.std.Element
 import typings.std.Error
 import scala.scalajs.js
@@ -24,11 +28,17 @@ object distTypesMod extends js.Object {
     @js.native
     sealed trait Once extends EvalScripts
     
-    /* "always" */ val Always: typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Always with String = js.native
-    /* "never" */ val Never: typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Never with String = js.native
-    /* "once" */ val Once: typings.atTanemSvgDashInjector.distTypesMod.EvalScripts.Once with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[EvalScripts with String] = js.native
+    /* "always" */ @js.native
+    object Always extends TopLevel[Always with String]
+    
+    /* "never" */ @js.native
+    object Never extends TopLevel[Never with String]
+    
+    /* "once" */ @js.native
+    object Once extends TopLevel[Once with String]
+    
   }
   
   type AfterAll = js.Function1[/* elementsLoaded */ Double, Unit]

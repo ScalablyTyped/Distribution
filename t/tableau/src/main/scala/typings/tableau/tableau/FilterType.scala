@@ -1,5 +1,10 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.FilterType.CATEGORICAL
+import typings.tableau.tableau.FilterType.HIERARCHICAL
+import typings.tableau.tableau.FilterType.QUANTITATIVE
+import typings.tableau.tableau.FilterType.RELATIVE_DATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object FilterType extends js.Object {
   @js.native
   sealed trait RELATIVE_DATE extends FilterType
   
-  /* "categorical" */ val CATEGORICAL: typings.tableau.tableau.FilterType.CATEGORICAL with String = js.native
-  /* "hierarchical" */ val HIERARCHICAL: typings.tableau.tableau.FilterType.HIERARCHICAL with String = js.native
-  /* "quantitative" */ val QUANTITATIVE: typings.tableau.tableau.FilterType.QUANTITATIVE with String = js.native
-  /* "relativedate" */ val RELATIVE_DATE: typings.tableau.tableau.FilterType.RELATIVE_DATE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FilterType with String] = js.native
+  /* "categorical" */ @js.native
+  object CATEGORICAL extends TopLevel[CATEGORICAL with String]
+  
+  /* "hierarchical" */ @js.native
+  object HIERARCHICAL extends TopLevel[HIERARCHICAL with String]
+  
+  /* "quantitative" */ @js.native
+  object QUANTITATIVE extends TopLevel[QUANTITATIVE with String]
+  
+  /* "relativedate" */ @js.native
+  object RELATIVE_DATE extends TopLevel[RELATIVE_DATE with String]
+  
 }
 

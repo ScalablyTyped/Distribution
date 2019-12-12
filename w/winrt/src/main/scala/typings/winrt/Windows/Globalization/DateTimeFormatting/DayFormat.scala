@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.default
+import typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object DayFormat extends js.Object {
   @js.native
   sealed trait none extends DayFormat
   
-  /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.default with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DayFormat with Double] = js.native
+  /* 1 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

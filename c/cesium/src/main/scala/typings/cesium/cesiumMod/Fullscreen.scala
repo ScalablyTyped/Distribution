@@ -1,5 +1,11 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.Fullscreen.changeEventName
+import typings.cesium.cesiumMod.Fullscreen.element
+import typings.cesium.cesiumMod.Fullscreen.enabled
+import typings.cesium.cesiumMod.Fullscreen.errorEventName
+import typings.cesium.cesiumMod.Fullscreen.fullscreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,15 +31,25 @@ object Fullscreen extends js.Object {
   @js.native
   sealed trait fullscreen extends Fullscreen
   
-  /* 1 */ val changeEventName: typings.cesium.cesiumMod.Fullscreen.changeEventName with Double = js.native
-  /* 0 */ val element: typings.cesium.cesiumMod.Fullscreen.element with Double = js.native
-  /* 3 */ val enabled: typings.cesium.cesiumMod.Fullscreen.enabled with Double = js.native
-  /* 2 */ val errorEventName: typings.cesium.cesiumMod.Fullscreen.errorEventName with Double = js.native
-  /* 4 */ val fullscreen: typings.cesium.cesiumMod.Fullscreen.fullscreen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Fullscreen with Double] = js.native
   def exitFullscreen(): js.UndefOr[scala.Nothing] = js.native
   def requestFullscreen(element: js.Any): js.UndefOr[scala.Nothing] = js.native
   def supportsFullscreen(): Boolean = js.native
+  /* 1 */ @js.native
+  object changeEventName extends TopLevel[changeEventName with Double]
+  
+  /* 0 */ @js.native
+  object element extends TopLevel[element with Double]
+  
+  /* 3 */ @js.native
+  object enabled extends TopLevel[enabled with Double]
+  
+  /* 2 */ @js.native
+  object errorEventName extends TopLevel[errorEventName with Double]
+  
+  /* 4 */ @js.native
+  object fullscreen extends TopLevel[fullscreen with Double]
+  
 }
 

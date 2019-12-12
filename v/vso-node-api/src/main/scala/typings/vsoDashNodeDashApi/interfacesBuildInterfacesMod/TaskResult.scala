@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Abandoned
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Canceled
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Failed
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Skipped
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Succeeded
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.SucceededWithIssues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object TaskResult extends js.Object {
   @js.native
   sealed trait SucceededWithIssues extends TaskResult
   
-  /* 5 */ val Abandoned: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Abandoned with Double = js.native
-  /* 3 */ val Canceled: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Canceled with Double = js.native
-  /* 2 */ val Failed: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Failed with Double = js.native
-  /* 4 */ val Skipped: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Skipped with Double = js.native
-  /* 0 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.Succeeded with Double = js.native
-  /* 1 */ val SucceededWithIssues: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.TaskResult.SucceededWithIssues with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskResult with Double] = js.native
+  /* 5 */ @js.native
+  object Abandoned extends TopLevel[Abandoned with Double]
+  
+  /* 3 */ @js.native
+  object Canceled extends TopLevel[Canceled with Double]
+  
+  /* 2 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 4 */ @js.native
+  object Skipped extends TopLevel[Skipped with Double]
+  
+  /* 0 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 1 */ @js.native
+  object SucceededWithIssues extends TopLevel[SucceededWithIssues with Double]
+  
 }
 

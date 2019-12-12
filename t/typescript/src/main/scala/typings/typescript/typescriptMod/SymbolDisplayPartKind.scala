@@ -1,5 +1,28 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.aliasName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.className
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.enumMemberName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.enumName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.fieldName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.functionName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.interfaceName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.keyword
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.lineBreak
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.localName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.methodName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.moduleName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.numericLiteral
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.operator
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.parameterName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.propertyName
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.punctuation
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.regularExpressionLiteral
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.space
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.stringLiteral
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.text
+import typings.typescript.typescriptMod.SymbolDisplayPartKind.typeParameterName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,29 +99,73 @@ object SymbolDisplayPartKind extends js.Object {
   @js.native
   sealed trait typeParameterName extends SymbolDisplayPartKind
   
-  /* 0 */ val aliasName: typings.typescript.typescriptMod.SymbolDisplayPartKind.aliasName with Double = js.native
-  /* 1 */ val className: typings.typescript.typescriptMod.SymbolDisplayPartKind.className with Double = js.native
-  /* 19 */ val enumMemberName: typings.typescript.typescriptMod.SymbolDisplayPartKind.enumMemberName with Double = js.native
-  /* 2 */ val enumName: typings.typescript.typescriptMod.SymbolDisplayPartKind.enumName with Double = js.native
-  /* 3 */ val fieldName: typings.typescript.typescriptMod.SymbolDisplayPartKind.fieldName with Double = js.native
-  /* 20 */ val functionName: typings.typescript.typescriptMod.SymbolDisplayPartKind.functionName with Double = js.native
-  /* 4 */ val interfaceName: typings.typescript.typescriptMod.SymbolDisplayPartKind.interfaceName with Double = js.native
-  /* 5 */ val keyword: typings.typescript.typescriptMod.SymbolDisplayPartKind.keyword with Double = js.native
-  /* 6 */ val lineBreak: typings.typescript.typescriptMod.SymbolDisplayPartKind.lineBreak with Double = js.native
-  /* 9 */ val localName: typings.typescript.typescriptMod.SymbolDisplayPartKind.localName with Double = js.native
-  /* 10 */ val methodName: typings.typescript.typescriptMod.SymbolDisplayPartKind.methodName with Double = js.native
-  /* 11 */ val moduleName: typings.typescript.typescriptMod.SymbolDisplayPartKind.moduleName with Double = js.native
-  /* 7 */ val numericLiteral: typings.typescript.typescriptMod.SymbolDisplayPartKind.numericLiteral with Double = js.native
-  /* 12 */ val operator: typings.typescript.typescriptMod.SymbolDisplayPartKind.operator with Double = js.native
-  /* 13 */ val parameterName: typings.typescript.typescriptMod.SymbolDisplayPartKind.parameterName with Double = js.native
-  /* 14 */ val propertyName: typings.typescript.typescriptMod.SymbolDisplayPartKind.propertyName with Double = js.native
-  /* 15 */ val punctuation: typings.typescript.typescriptMod.SymbolDisplayPartKind.punctuation with Double = js.native
-  /* 21 */ val regularExpressionLiteral: typings.typescript.typescriptMod.SymbolDisplayPartKind.regularExpressionLiteral with Double = js.native
-  /* 16 */ val space: typings.typescript.typescriptMod.SymbolDisplayPartKind.space with Double = js.native
-  /* 8 */ val stringLiteral: typings.typescript.typescriptMod.SymbolDisplayPartKind.stringLiteral with Double = js.native
-  /* 17 */ val text: typings.typescript.typescriptMod.SymbolDisplayPartKind.text with Double = js.native
-  /* 18 */ val typeParameterName: typings.typescript.typescriptMod.SymbolDisplayPartKind.typeParameterName with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SymbolDisplayPartKind with Double] = js.native
+  /* 0 */ @js.native
+  object aliasName extends TopLevel[aliasName with Double]
+  
+  /* 1 */ @js.native
+  object className extends TopLevel[className with Double]
+  
+  /* 19 */ @js.native
+  object enumMemberName extends TopLevel[enumMemberName with Double]
+  
+  /* 2 */ @js.native
+  object enumName extends TopLevel[enumName with Double]
+  
+  /* 3 */ @js.native
+  object fieldName extends TopLevel[fieldName with Double]
+  
+  /* 20 */ @js.native
+  object functionName extends TopLevel[functionName with Double]
+  
+  /* 4 */ @js.native
+  object interfaceName extends TopLevel[interfaceName with Double]
+  
+  /* 5 */ @js.native
+  object keyword extends TopLevel[keyword with Double]
+  
+  /* 6 */ @js.native
+  object lineBreak extends TopLevel[lineBreak with Double]
+  
+  /* 9 */ @js.native
+  object localName extends TopLevel[localName with Double]
+  
+  /* 10 */ @js.native
+  object methodName extends TopLevel[methodName with Double]
+  
+  /* 11 */ @js.native
+  object moduleName extends TopLevel[moduleName with Double]
+  
+  /* 7 */ @js.native
+  object numericLiteral extends TopLevel[numericLiteral with Double]
+  
+  /* 12 */ @js.native
+  object operator extends TopLevel[operator with Double]
+  
+  /* 13 */ @js.native
+  object parameterName extends TopLevel[parameterName with Double]
+  
+  /* 14 */ @js.native
+  object propertyName extends TopLevel[propertyName with Double]
+  
+  /* 15 */ @js.native
+  object punctuation extends TopLevel[punctuation with Double]
+  
+  /* 21 */ @js.native
+  object regularExpressionLiteral extends TopLevel[regularExpressionLiteral with Double]
+  
+  /* 16 */ @js.native
+  object space extends TopLevel[space with Double]
+  
+  /* 8 */ @js.native
+  object stringLiteral extends TopLevel[stringLiteral with Double]
+  
+  /* 17 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 18 */ @js.native
+  object typeParameterName extends TopLevel[typeParameterName with Double]
+  
 }
 

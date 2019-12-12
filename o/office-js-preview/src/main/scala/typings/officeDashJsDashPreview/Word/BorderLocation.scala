@@ -1,5 +1,15 @@
 package typings.officeDashJsDashPreview.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Word.BorderLocation.all
+import typings.officeDashJsDashPreview.Word.BorderLocation.bottom
+import typings.officeDashJsDashPreview.Word.BorderLocation.inside
+import typings.officeDashJsDashPreview.Word.BorderLocation.insideHorizontal
+import typings.officeDashJsDashPreview.Word.BorderLocation.insideVertical
+import typings.officeDashJsDashPreview.Word.BorderLocation.left
+import typings.officeDashJsDashPreview.Word.BorderLocation.outside
+import typings.officeDashJsDashPreview.Word.BorderLocation.right
+import typings.officeDashJsDashPreview.Word.BorderLocation.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,16 +50,34 @@ object BorderLocation extends js.Object {
   @js.native
   sealed trait top extends BorderLocation
   
-  /* "All" */ val all: typings.officeDashJsDashPreview.Word.BorderLocation.all with String = js.native
-  /* "Bottom" */ val bottom: typings.officeDashJsDashPreview.Word.BorderLocation.bottom with String = js.native
-  /* "Inside" */ val inside: typings.officeDashJsDashPreview.Word.BorderLocation.inside with String = js.native
-  /* "InsideHorizontal" */ val insideHorizontal: typings.officeDashJsDashPreview.Word.BorderLocation.insideHorizontal with String = js.native
-  /* "InsideVertical" */ val insideVertical: typings.officeDashJsDashPreview.Word.BorderLocation.insideVertical with String = js.native
-  /* "Left" */ val left: typings.officeDashJsDashPreview.Word.BorderLocation.left with String = js.native
-  /* "Outside" */ val outside: typings.officeDashJsDashPreview.Word.BorderLocation.outside with String = js.native
-  /* "Right" */ val right: typings.officeDashJsDashPreview.Word.BorderLocation.right with String = js.native
-  /* "Top" */ val top: typings.officeDashJsDashPreview.Word.BorderLocation.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BorderLocation with String] = js.native
+  /* "All" */ @js.native
+  object all extends TopLevel[all with String]
+  
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Inside" */ @js.native
+  object inside extends TopLevel[inside with String]
+  
+  /* "InsideHorizontal" */ @js.native
+  object insideHorizontal extends TopLevel[insideHorizontal with String]
+  
+  /* "InsideVertical" */ @js.native
+  object insideVertical extends TopLevel[insideVertical with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Outside" */ @js.native
+  object outside extends TopLevel[outside with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

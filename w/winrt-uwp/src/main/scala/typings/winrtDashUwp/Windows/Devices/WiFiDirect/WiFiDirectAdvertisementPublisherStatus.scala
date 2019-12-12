@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.aborted
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.created
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.started
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object WiFiDirectAdvertisementPublisherStatus extends js.Object {
   @js.native
   sealed trait stopped extends WiFiDirectAdvertisementPublisherStatus
   
-  /* 3 */ val aborted: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.aborted with Double = js.native
-  /* 0 */ val created: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.created with Double = js.native
-  /* 1 */ val started: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.started with Double = js.native
-  /* 2 */ val stopped: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatus.stopped with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectAdvertisementPublisherStatus with Double] = js.native
+  /* 3 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 0 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 1 */ @js.native
+  object started extends TopLevel[started with Double]
+  
+  /* 2 */ @js.native
+  object stopped extends TopLevel[stopped with Double]
+  
 }
 

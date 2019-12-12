@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.CommentSortOrder.Asc
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.CommentSortOrder.Desc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CommentSortOrder extends js.Object {
   @js.native
   sealed trait Desc extends CommentSortOrder
   
-  /* 1 */ val Asc: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.CommentSortOrder.Asc with Double = js.native
-  /* 2 */ val Desc: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.CommentSortOrder.Desc with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommentSortOrder with Double] = js.native
+  /* 1 */ @js.native
+  object Asc extends TopLevel[Asc with Double]
+  
+  /* 2 */ @js.native
+  object Desc extends TopLevel[Desc with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.footer
+import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.header
+import typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.suggestion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SuggestionItemType extends js.Object {
   @js.native
   sealed trait suggestion extends SuggestionItemType
   
-  /* 2 */ val footer: typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.footer with Double = js.native
-  /* 0 */ val header: typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.header with Double = js.native
-  /* 1 */ val suggestion: typings.officeDashUiDashFabricDashReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.suggestion with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SuggestionItemType with Double] = js.native
+  /* 2 */ @js.native
+  object footer extends TopLevel[footer with Double]
+  
+  /* 0 */ @js.native
+  object header extends TopLevel[header with Double]
+  
+  /* 1 */ @js.native
+  object suggestion extends TopLevel[suggestion with Double]
+  
 }
 

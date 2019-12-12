@@ -1,5 +1,13 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.keyFlags.authentication
+import typings.openpgp.openpgpMod.enums.keyFlags.certify_keys
+import typings.openpgp.openpgpMod.enums.keyFlags.encrypt_communication
+import typings.openpgp.openpgpMod.enums.keyFlags.encrypt_storage
+import typings.openpgp.openpgpMod.enums.keyFlags.shared_private_key
+import typings.openpgp.openpgpMod.enums.keyFlags.sign_data
+import typings.openpgp.openpgpMod.enums.keyFlags.split_private_key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,14 +65,28 @@ object keyFlags extends js.Object {
   @js.native
   sealed trait split_private_key extends keyFlags
   
-  /* 32 */ val authentication: typings.openpgp.openpgpMod.enums.keyFlags.authentication with Double = js.native
-  /* 1 */ val certify_keys: typings.openpgp.openpgpMod.enums.keyFlags.certify_keys with Double = js.native
-  /* 4 */ val encrypt_communication: typings.openpgp.openpgpMod.enums.keyFlags.encrypt_communication with Double = js.native
-  /* 8 */ val encrypt_storage: typings.openpgp.openpgpMod.enums.keyFlags.encrypt_storage with Double = js.native
-  /* 128 */ val shared_private_key: typings.openpgp.openpgpMod.enums.keyFlags.shared_private_key with Double = js.native
-  /* 2 */ val sign_data: typings.openpgp.openpgpMod.enums.keyFlags.sign_data with Double = js.native
-  /* 16 */ val split_private_key: typings.openpgp.openpgpMod.enums.keyFlags.split_private_key with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[keyFlags with Double] = js.native
+  /* 32 */ @js.native
+  object authentication extends TopLevel[authentication with Double]
+  
+  /* 1 */ @js.native
+  object certify_keys extends TopLevel[certify_keys with Double]
+  
+  /* 4 */ @js.native
+  object encrypt_communication extends TopLevel[encrypt_communication with Double]
+  
+  /* 8 */ @js.native
+  object encrypt_storage extends TopLevel[encrypt_storage with Double]
+  
+  /* 128 */ @js.native
+  object shared_private_key extends TopLevel[shared_private_key with Double]
+  
+  /* 2 */ @js.native
+  object sign_data extends TopLevel[sign_data with Double]
+  
+  /* 16 */ @js.native
+  object split_private_key extends TopLevel[split_private_key with Double]
+  
 }
 

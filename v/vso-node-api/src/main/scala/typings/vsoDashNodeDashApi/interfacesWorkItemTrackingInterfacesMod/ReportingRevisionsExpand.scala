@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.ReportingRevisionsExpand.Fields
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.ReportingRevisionsExpand.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ReportingRevisionsExpand extends js.Object {
   @js.native
   sealed trait None extends ReportingRevisionsExpand
   
-  /* 1 */ val Fields: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.ReportingRevisionsExpand.Fields with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.ReportingRevisionsExpand.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReportingRevisionsExpand with Double] = js.native
+  /* 1 */ @js.native
+  object Fields extends TopLevel[Fields with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

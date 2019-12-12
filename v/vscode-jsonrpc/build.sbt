@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vscode-jsonrpc"
-version := "4.0.0-2820d1"
+version := "4.0.0-e30e01"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

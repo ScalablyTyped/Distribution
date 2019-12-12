@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.local
+import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.localCache
+import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.roaming
+import typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.temporary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ApplicationDataLocality extends js.Object {
   @js.native
   sealed trait temporary extends ApplicationDataLocality
   
-  /* 0 */ val local: typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.local with Double = js.native
-  /* 3 */ val localCache: typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.localCache with Double = js.native
-  /* 1 */ val roaming: typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.roaming with Double = js.native
-  /* 2 */ val temporary: typings.winrtDashUwp.Windows.Storage.ApplicationDataLocality.temporary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApplicationDataLocality with Double] = js.native
+  /* 0 */ @js.native
+  object local extends TopLevel[local with Double]
+  
+  /* 3 */ @js.native
+  object localCache extends TopLevel[localCache with Double]
+  
+  /* 1 */ @js.native
+  object roaming extends TopLevel[roaming with Double]
+  
+  /* 2 */ @js.native
+  object temporary extends TopLevel[temporary with Double]
+  
 }
 

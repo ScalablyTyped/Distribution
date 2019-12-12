@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.tcp
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.transportAgnostic
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object NDProximityDetectionType extends js.Object {
   @js.native
   sealed trait udp extends NDProximityDetectionType
   
-  /* 1 */ val tcp: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.tcp with Double = js.native
-  /* 2 */ val transportAgnostic: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.transportAgnostic with Double = js.native
-  /* 0 */ val udp: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDProximityDetectionType.udp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NDProximityDetectionType with Double] = js.native
+  /* 1 */ @js.native
+  object tcp extends TopLevel[tcp with Double]
+  
+  /* 2 */ @js.native
+  object transportAgnostic extends TopLevel[transportAgnostic with Double]
+  
+  /* 0 */ @js.native
+  object udp extends TopLevel[udp with Double]
+  
 }
 

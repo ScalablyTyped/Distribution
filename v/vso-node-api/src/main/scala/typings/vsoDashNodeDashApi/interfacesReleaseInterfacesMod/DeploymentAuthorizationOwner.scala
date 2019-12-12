@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.Automatic
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.DeploymentSubmitter
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.FirstPreDeploymentApprover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object DeploymentAuthorizationOwner extends js.Object {
   @js.native
   sealed trait FirstPreDeploymentApprover extends DeploymentAuthorizationOwner
   
-  /* 0 */ val Automatic: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.Automatic with Double = js.native
-  /* 1 */ val DeploymentSubmitter: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.DeploymentSubmitter with Double = js.native
-  /* 2 */ val FirstPreDeploymentApprover: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentAuthorizationOwner.FirstPreDeploymentApprover with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentAuthorizationOwner with Double] = js.native
+  /* 0 */ @js.native
+  object Automatic extends TopLevel[Automatic with Double]
+  
+  /* 1 */ @js.native
+  object DeploymentSubmitter extends TopLevel[DeploymentSubmitter with Double]
+  
+  /* 2 */ @js.native
+  object FirstPreDeploymentApprover extends TopLevel[FirstPreDeploymentApprover with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.EventSource.local
+import typings.officeDashJsDashPreview.Excel.EventSource.remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +32,13 @@ object EventSource extends js.Object {
   @js.native
   sealed trait remote extends EventSource
   
-  /* "Local" */ val local: typings.officeDashJsDashPreview.Excel.EventSource.local with String = js.native
-  /* "Remote" */ val remote: typings.officeDashJsDashPreview.Excel.EventSource.remote with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EventSource with String] = js.native
+  /* "Local" */ @js.native
+  object local extends TopLevel[local with String]
+  
+  /* "Remote" */ @js.native
+  object remote extends TopLevel[remote with String]
+  
 }
 

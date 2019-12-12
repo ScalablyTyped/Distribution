@@ -1,5 +1,8 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.Animation.BOUNCE
+import typings.navermaps.naver.maps.Animation.DROP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Animation extends js.Object {
   @js.native
   sealed trait DROP extends Animation
   
-  /* 1 */ val BOUNCE: typings.navermaps.naver.maps.Animation.BOUNCE with Double = js.native
-  /* 0 */ val DROP: typings.navermaps.naver.maps.Animation.DROP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Animation with Double] = js.native
+  /* 1 */ @js.native
+  object BOUNCE extends TopLevel[BOUNCE with Double]
+  
+  /* 0 */ @js.native
+  object DROP extends TopLevel[DROP with Double]
+  
 }
 

@@ -1,6 +1,11 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libCoreLogLevelsMod.Levels
+import typings.sipDotJs.libCoreLogLevelsMod.Levels.debug
+import typings.sipDotJs.libCoreLogLevelsMod.Levels.error
+import typings.sipDotJs.libCoreLogLevelsMod.Levels.log
+import typings.sipDotJs.libCoreLogLevelsMod.Levels.warn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,20 @@ object libCoreLogLevelsMod extends js.Object {
     @js.native
     sealed trait warn extends Levels
     
-    /* 3 */ val debug: typings.sipDotJs.libCoreLogLevelsMod.Levels.debug with Double = js.native
-    /* 0 */ val error: typings.sipDotJs.libCoreLogLevelsMod.Levels.error with Double = js.native
-    /* 2 */ val log: typings.sipDotJs.libCoreLogLevelsMod.Levels.log with Double = js.native
-    /* 1 */ val warn: typings.sipDotJs.libCoreLogLevelsMod.Levels.warn with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Levels with Double] = js.native
+    /* 3 */ @js.native
+    object debug extends TopLevel[debug with Double]
+    
+    /* 0 */ @js.native
+    object error extends TopLevel[error with Double]
+    
+    /* 2 */ @js.native
+    object log extends TopLevel[log with Double]
+    
+    /* 1 */ @js.native
+    object warn extends TopLevel[warn with Double]
+    
   }
   
 }

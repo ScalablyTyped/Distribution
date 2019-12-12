@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyBackground
+import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyText
+import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledBackground
+import typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object SemanticColorSlots extends js.Object {
   @js.native
   sealed trait disabledText extends SemanticColorSlots
   
-  /* 0 */ val bodyBackground: typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyBackground with Double = js.native
-  /* 1 */ val bodyText: typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyText with Double = js.native
-  /* 2 */ val disabledBackground: typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledBackground with Double = js.native
-  /* 3 */ val disabledText: typings.officeDashUiDashFabricDashReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SemanticColorSlots with Double] = js.native
+  /* 0 */ @js.native
+  object bodyBackground extends TopLevel[bodyBackground with Double]
+  
+  /* 1 */ @js.native
+  object bodyText extends TopLevel[bodyText with Double]
+  
+  /* 2 */ @js.native
+  object disabledBackground extends TopLevel[disabledBackground with Double]
+  
+  /* 3 */ @js.native
+  object disabledText extends TopLevel[disabledText with Double]
+  
 }
 

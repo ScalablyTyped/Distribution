@@ -1,5 +1,13 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages.typescript
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.AMD
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.CommonJS
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ES2015
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ESNext
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.None
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.System
+import typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.UMD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object ModuleKind extends js.Object {
   @js.native
   sealed trait UMD extends ModuleKind
   
-  /* 2 */ val AMD: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.AMD with Double = js.native
-  /* 1 */ val CommonJS: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.CommonJS with Double = js.native
-  /* 5 */ val ES2015: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ES2015 with Double = js.native
-  /* 99 */ val ESNext: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.ESNext with Double = js.native
-  /* 0 */ val None: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.None with Double = js.native
-  /* 4 */ val System: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.System with Double = js.native
-  /* 3 */ val UMD: typings.monacoDashEditor.monacoDashEditorMod.languages.typescript.ModuleKind.UMD with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ModuleKind with Double] = js.native
+  /* 2 */ @js.native
+  object AMD extends TopLevel[AMD with Double]
+  
+  /* 1 */ @js.native
+  object CommonJS extends TopLevel[CommonJS with Double]
+  
+  /* 5 */ @js.native
+  object ES2015 extends TopLevel[ES2015 with Double]
+  
+  /* 99 */ @js.native
+  object ESNext extends TopLevel[ESNext with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 4 */ @js.native
+  object System extends TopLevel[System with Double]
+  
+  /* 3 */ @js.native
+  object UMD extends TopLevel[UMD with Double]
+  
 }
 

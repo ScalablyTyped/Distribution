@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.allowed
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.currentlyRunning
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.disabledByPolicy
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.unknownError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ApplicationTriggerResult extends js.Object {
   @js.native
   sealed trait unknownError extends ApplicationTriggerResult
   
-  /* 0 */ val allowed: typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.allowed with Double = js.native
-  /* 1 */ val currentlyRunning: typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.currentlyRunning with Double = js.native
-  /* 2 */ val disabledByPolicy: typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.disabledByPolicy with Double = js.native
-  /* 3 */ val unknownError: typings.winrtDashUwp.Windows.ApplicationModel.Background.ApplicationTriggerResult.unknownError with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApplicationTriggerResult with Double] = js.native
+  /* 0 */ @js.native
+  object allowed extends TopLevel[allowed with Double]
+  
+  /* 1 */ @js.native
+  object currentlyRunning extends TopLevel[currentlyRunning with Double]
+  
+  /* 2 */ @js.native
+  object disabledByPolicy extends TopLevel[disabledByPolicy with Double]
+  
+  /* 3 */ @js.native
+  object unknownError extends TopLevel[unknownError with Double]
+  
 }
 

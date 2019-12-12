@@ -1,5 +1,14 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Utilities.DateTimeFormat.dateOnly
+import typings.sharepoint.SP.Utilities.DateTimeFormat.dateTime
+import typings.sharepoint.SP.Utilities.DateTimeFormat.iSO8601
+import typings.sharepoint.SP.Utilities.DateTimeFormat.longDate
+import typings.sharepoint.SP.Utilities.DateTimeFormat.monthDayOnly
+import typings.sharepoint.SP.Utilities.DateTimeFormat.monthYearOnly
+import typings.sharepoint.SP.Utilities.DateTimeFormat.timeOnly
+import typings.sharepoint.SP.Utilities.DateTimeFormat.unknownFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object DateTimeFormat extends js.Object {
   @js.native
   sealed trait unknownFormat extends DateTimeFormat
   
-  /* 1 */ val dateOnly: typings.sharepoint.SP.Utilities.DateTimeFormat.dateOnly with Double = js.native
-  /* 0 */ val dateTime: typings.sharepoint.SP.Utilities.DateTimeFormat.dateTime with Double = js.native
-  /* 3 */ val iSO8601: typings.sharepoint.SP.Utilities.DateTimeFormat.iSO8601 with Double = js.native
-  /* 6 */ val longDate: typings.sharepoint.SP.Utilities.DateTimeFormat.longDate with Double = js.native
-  /* 4 */ val monthDayOnly: typings.sharepoint.SP.Utilities.DateTimeFormat.monthDayOnly with Double = js.native
-  /* 5 */ val monthYearOnly: typings.sharepoint.SP.Utilities.DateTimeFormat.monthYearOnly with Double = js.native
-  /* 2 */ val timeOnly: typings.sharepoint.SP.Utilities.DateTimeFormat.timeOnly with Double = js.native
-  /* 7 */ val unknownFormat: typings.sharepoint.SP.Utilities.DateTimeFormat.unknownFormat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateTimeFormat with Double] = js.native
+  /* 1 */ @js.native
+  object dateOnly extends TopLevel[dateOnly with Double]
+  
+  /* 0 */ @js.native
+  object dateTime extends TopLevel[dateTime with Double]
+  
+  /* 3 */ @js.native
+  object iSO8601 extends TopLevel[iSO8601 with Double]
+  
+  /* 6 */ @js.native
+  object longDate extends TopLevel[longDate with Double]
+  
+  /* 4 */ @js.native
+  object monthDayOnly extends TopLevel[monthDayOnly with Double]
+  
+  /* 5 */ @js.native
+  object monthYearOnly extends TopLevel[monthYearOnly with Double]
+  
+  /* 2 */ @js.native
+  object timeOnly extends TopLevel[timeOnly with Double]
+  
+  /* 7 */ @js.native
+  object unknownFormat extends TopLevel[unknownFormat with Double]
+  
 }
 

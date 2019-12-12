@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.public
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.random
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object BluetoothAddressType extends js.Object {
   @js.native
   sealed trait random extends BluetoothAddressType
   
-  /* 0 */ val public: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.public with Double = js.native
-  /* 1 */ val random: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothAddressType.random with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothAddressType with Double] = js.native
+  /* 0 */ @js.native
+  object public extends TopLevel[public with Double]
+  
+  /* 1 */ @js.native
+  object random extends TopLevel[random with Double]
+  
 }
 

@@ -1,5 +1,59 @@
 package typings.winrtDashUwp.Windows.Web
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.badGateway
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.badRequest
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.cannotConnect
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateCommonNameIsIncorrect
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateContainsErrors
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateExpired
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateIsInvalid
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateRevoked
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.conflict
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.connectionAborted
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.connectionReset
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.disconnected
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.errorHttpInvalidServerResponse
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.expectationFailed
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.forbidden
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.found
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.gatewayTimeout
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.gone
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.hostNameNotResolved
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpToHttpsOnRedirection
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpVersionNotSupported
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpsToHttpOnRedirection
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.internalServerError
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.lengthRequired
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.methodNotAllowed
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.movedPermanently
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.multipleChoices
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.notAcceptable
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.notFound
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.notImplemented
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.notModified
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.operationCanceled
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.paymentRequired
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.preconditionFailed
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.proxyAuthenticationRequired
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.redirectFailed
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestEntityTooLarge
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestTimeout
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestUriTooLong
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestedRangeNotSatisfiable
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.seeOther
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.serverUnreachable
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.serviceUnavailable
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.temporaryRedirect
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.timeout
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unauthorized
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedClientError
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedRedirection
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedServerError
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedStatusCode
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unknown
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.unsupportedMediaType
+import typings.winrtDashUwp.Windows.Web.WebErrorStatus.useProxy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -223,60 +277,166 @@ object WebErrorStatus extends js.Object {
   @js.native
   sealed trait useProxy extends WebErrorStatus
   
-  /* 49 */ val badGateway: typings.winrtDashUwp.Windows.Web.WebErrorStatus.badGateway with Double = js.native
-  /* 29 */ val badRequest: typings.winrtDashUwp.Windows.Web.WebErrorStatus.badRequest with Double = js.native
-  /* 14 */ val cannotConnect: typings.winrtDashUwp.Windows.Web.WebErrorStatus.cannotConnect with Double = js.native
-  /* 1 */ val certificateCommonNameIsIncorrect: typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateCommonNameIsIncorrect with Double = js.native
-  /* 3 */ val certificateContainsErrors: typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateContainsErrors with Double = js.native
-  /* 2 */ val certificateExpired: typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateExpired with Double = js.native
-  /* 5 */ val certificateIsInvalid: typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateIsInvalid with Double = js.native
-  /* 4 */ val certificateRevoked: typings.winrtDashUwp.Windows.Web.WebErrorStatus.certificateRevoked with Double = js.native
-  /* 38 */ val conflict: typings.winrtDashUwp.Windows.Web.WebErrorStatus.conflict with Double = js.native
-  /* 9 */ val connectionAborted: typings.winrtDashUwp.Windows.Web.WebErrorStatus.connectionAborted with Double = js.native
-  /* 10 */ val connectionReset: typings.winrtDashUwp.Windows.Web.WebErrorStatus.connectionReset with Double = js.native
-  /* 11 */ val disconnected: typings.winrtDashUwp.Windows.Web.WebErrorStatus.disconnected with Double = js.native
-  /* 8 */ val errorHttpInvalidServerResponse: typings.winrtDashUwp.Windows.Web.WebErrorStatus.errorHttpInvalidServerResponse with Double = js.native
-  /* 46 */ val expectationFailed: typings.winrtDashUwp.Windows.Web.WebErrorStatus.expectationFailed with Double = js.native
-  /* 32 */ val forbidden: typings.winrtDashUwp.Windows.Web.WebErrorStatus.forbidden with Double = js.native
-  /* 24 */ val found: typings.winrtDashUwp.Windows.Web.WebErrorStatus.found with Double = js.native
-  /* 51 */ val gatewayTimeout: typings.winrtDashUwp.Windows.Web.WebErrorStatus.gatewayTimeout with Double = js.native
-  /* 39 */ val gone: typings.winrtDashUwp.Windows.Web.WebErrorStatus.gone with Double = js.native
-  /* 15 */ val hostNameNotResolved: typings.winrtDashUwp.Windows.Web.WebErrorStatus.hostNameNotResolved with Double = js.native
-  /* 12 */ val httpToHttpsOnRedirection: typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpToHttpsOnRedirection with Double = js.native
-  /* 52 */ val httpVersionNotSupported: typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpVersionNotSupported with Double = js.native
-  /* 13 */ val httpsToHttpOnRedirection: typings.winrtDashUwp.Windows.Web.WebErrorStatus.httpsToHttpOnRedirection with Double = js.native
-  /* 47 */ val internalServerError: typings.winrtDashUwp.Windows.Web.WebErrorStatus.internalServerError with Double = js.native
-  /* 40 */ val lengthRequired: typings.winrtDashUwp.Windows.Web.WebErrorStatus.lengthRequired with Double = js.native
-  /* 34 */ val methodNotAllowed: typings.winrtDashUwp.Windows.Web.WebErrorStatus.methodNotAllowed with Double = js.native
-  /* 23 */ val movedPermanently: typings.winrtDashUwp.Windows.Web.WebErrorStatus.movedPermanently with Double = js.native
-  /* 22 */ val multipleChoices: typings.winrtDashUwp.Windows.Web.WebErrorStatus.multipleChoices with Double = js.native
-  /* 35 */ val notAcceptable: typings.winrtDashUwp.Windows.Web.WebErrorStatus.notAcceptable with Double = js.native
-  /* 33 */ val notFound: typings.winrtDashUwp.Windows.Web.WebErrorStatus.notFound with Double = js.native
-  /* 48 */ val notImplemented: typings.winrtDashUwp.Windows.Web.WebErrorStatus.notImplemented with Double = js.native
-  /* 26 */ val notModified: typings.winrtDashUwp.Windows.Web.WebErrorStatus.notModified with Double = js.native
-  /* 16 */ val operationCanceled: typings.winrtDashUwp.Windows.Web.WebErrorStatus.operationCanceled with Double = js.native
-  /* 31 */ val paymentRequired: typings.winrtDashUwp.Windows.Web.WebErrorStatus.paymentRequired with Double = js.native
-  /* 41 */ val preconditionFailed: typings.winrtDashUwp.Windows.Web.WebErrorStatus.preconditionFailed with Double = js.native
-  /* 36 */ val proxyAuthenticationRequired: typings.winrtDashUwp.Windows.Web.WebErrorStatus.proxyAuthenticationRequired with Double = js.native
-  /* 17 */ val redirectFailed: typings.winrtDashUwp.Windows.Web.WebErrorStatus.redirectFailed with Double = js.native
-  /* 42 */ val requestEntityTooLarge: typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestEntityTooLarge with Double = js.native
-  /* 37 */ val requestTimeout: typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestTimeout with Double = js.native
-  /* 43 */ val requestUriTooLong: typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestUriTooLong with Double = js.native
-  /* 45 */ val requestedRangeNotSatisfiable: typings.winrtDashUwp.Windows.Web.WebErrorStatus.requestedRangeNotSatisfiable with Double = js.native
-  /* 25 */ val seeOther: typings.winrtDashUwp.Windows.Web.WebErrorStatus.seeOther with Double = js.native
-  /* 6 */ val serverUnreachable: typings.winrtDashUwp.Windows.Web.WebErrorStatus.serverUnreachable with Double = js.native
-  /* 50 */ val serviceUnavailable: typings.winrtDashUwp.Windows.Web.WebErrorStatus.serviceUnavailable with Double = js.native
-  /* 28 */ val temporaryRedirect: typings.winrtDashUwp.Windows.Web.WebErrorStatus.temporaryRedirect with Double = js.native
-  /* 7 */ val timeout: typings.winrtDashUwp.Windows.Web.WebErrorStatus.timeout with Double = js.native
-  /* 30 */ val unauthorized: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unauthorized with Double = js.native
-  /* 20 */ val unexpectedClientError: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedClientError with Double = js.native
-  /* 19 */ val unexpectedRedirection: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedRedirection with Double = js.native
-  /* 21 */ val unexpectedServerError: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedServerError with Double = js.native
-  /* 18 */ val unexpectedStatusCode: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unexpectedStatusCode with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unknown with Double = js.native
-  /* 44 */ val unsupportedMediaType: typings.winrtDashUwp.Windows.Web.WebErrorStatus.unsupportedMediaType with Double = js.native
-  /* 27 */ val useProxy: typings.winrtDashUwp.Windows.Web.WebErrorStatus.useProxy with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebErrorStatus with Double] = js.native
+  /* 49 */ @js.native
+  object badGateway extends TopLevel[badGateway with Double]
+  
+  /* 29 */ @js.native
+  object badRequest extends TopLevel[badRequest with Double]
+  
+  /* 14 */ @js.native
+  object cannotConnect extends TopLevel[cannotConnect with Double]
+  
+  /* 1 */ @js.native
+  object certificateCommonNameIsIncorrect extends TopLevel[certificateCommonNameIsIncorrect with Double]
+  
+  /* 3 */ @js.native
+  object certificateContainsErrors extends TopLevel[certificateContainsErrors with Double]
+  
+  /* 2 */ @js.native
+  object certificateExpired extends TopLevel[certificateExpired with Double]
+  
+  /* 5 */ @js.native
+  object certificateIsInvalid extends TopLevel[certificateIsInvalid with Double]
+  
+  /* 4 */ @js.native
+  object certificateRevoked extends TopLevel[certificateRevoked with Double]
+  
+  /* 38 */ @js.native
+  object conflict extends TopLevel[conflict with Double]
+  
+  /* 9 */ @js.native
+  object connectionAborted extends TopLevel[connectionAborted with Double]
+  
+  /* 10 */ @js.native
+  object connectionReset extends TopLevel[connectionReset with Double]
+  
+  /* 11 */ @js.native
+  object disconnected extends TopLevel[disconnected with Double]
+  
+  /* 8 */ @js.native
+  object errorHttpInvalidServerResponse extends TopLevel[errorHttpInvalidServerResponse with Double]
+  
+  /* 46 */ @js.native
+  object expectationFailed extends TopLevel[expectationFailed with Double]
+  
+  /* 32 */ @js.native
+  object forbidden extends TopLevel[forbidden with Double]
+  
+  /* 24 */ @js.native
+  object found extends TopLevel[found with Double]
+  
+  /* 51 */ @js.native
+  object gatewayTimeout extends TopLevel[gatewayTimeout with Double]
+  
+  /* 39 */ @js.native
+  object gone extends TopLevel[gone with Double]
+  
+  /* 15 */ @js.native
+  object hostNameNotResolved extends TopLevel[hostNameNotResolved with Double]
+  
+  /* 12 */ @js.native
+  object httpToHttpsOnRedirection extends TopLevel[httpToHttpsOnRedirection with Double]
+  
+  /* 52 */ @js.native
+  object httpVersionNotSupported extends TopLevel[httpVersionNotSupported with Double]
+  
+  /* 13 */ @js.native
+  object httpsToHttpOnRedirection extends TopLevel[httpsToHttpOnRedirection with Double]
+  
+  /* 47 */ @js.native
+  object internalServerError extends TopLevel[internalServerError with Double]
+  
+  /* 40 */ @js.native
+  object lengthRequired extends TopLevel[lengthRequired with Double]
+  
+  /* 34 */ @js.native
+  object methodNotAllowed extends TopLevel[methodNotAllowed with Double]
+  
+  /* 23 */ @js.native
+  object movedPermanently extends TopLevel[movedPermanently with Double]
+  
+  /* 22 */ @js.native
+  object multipleChoices extends TopLevel[multipleChoices with Double]
+  
+  /* 35 */ @js.native
+  object notAcceptable extends TopLevel[notAcceptable with Double]
+  
+  /* 33 */ @js.native
+  object notFound extends TopLevel[notFound with Double]
+  
+  /* 48 */ @js.native
+  object notImplemented extends TopLevel[notImplemented with Double]
+  
+  /* 26 */ @js.native
+  object notModified extends TopLevel[notModified with Double]
+  
+  /* 16 */ @js.native
+  object operationCanceled extends TopLevel[operationCanceled with Double]
+  
+  /* 31 */ @js.native
+  object paymentRequired extends TopLevel[paymentRequired with Double]
+  
+  /* 41 */ @js.native
+  object preconditionFailed extends TopLevel[preconditionFailed with Double]
+  
+  /* 36 */ @js.native
+  object proxyAuthenticationRequired extends TopLevel[proxyAuthenticationRequired with Double]
+  
+  /* 17 */ @js.native
+  object redirectFailed extends TopLevel[redirectFailed with Double]
+  
+  /* 42 */ @js.native
+  object requestEntityTooLarge extends TopLevel[requestEntityTooLarge with Double]
+  
+  /* 37 */ @js.native
+  object requestTimeout extends TopLevel[requestTimeout with Double]
+  
+  /* 43 */ @js.native
+  object requestUriTooLong extends TopLevel[requestUriTooLong with Double]
+  
+  /* 45 */ @js.native
+  object requestedRangeNotSatisfiable extends TopLevel[requestedRangeNotSatisfiable with Double]
+  
+  /* 25 */ @js.native
+  object seeOther extends TopLevel[seeOther with Double]
+  
+  /* 6 */ @js.native
+  object serverUnreachable extends TopLevel[serverUnreachable with Double]
+  
+  /* 50 */ @js.native
+  object serviceUnavailable extends TopLevel[serviceUnavailable with Double]
+  
+  /* 28 */ @js.native
+  object temporaryRedirect extends TopLevel[temporaryRedirect with Double]
+  
+  /* 7 */ @js.native
+  object timeout extends TopLevel[timeout with Double]
+  
+  /* 30 */ @js.native
+  object unauthorized extends TopLevel[unauthorized with Double]
+  
+  /* 20 */ @js.native
+  object unexpectedClientError extends TopLevel[unexpectedClientError with Double]
+  
+  /* 19 */ @js.native
+  object unexpectedRedirection extends TopLevel[unexpectedRedirection with Double]
+  
+  /* 21 */ @js.native
+  object unexpectedServerError extends TopLevel[unexpectedServerError with Double]
+  
+  /* 18 */ @js.native
+  object unexpectedStatusCode extends TopLevel[unexpectedStatusCode with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 44 */ @js.native
+  object unsupportedMediaType extends TopLevel[unsupportedMediaType with Double]
+  
+  /* 27 */ @js.native
+  object useProxy extends TopLevel[useProxy with Double]
+  
 }
 

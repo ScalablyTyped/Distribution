@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason.expired
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason.used
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object GeofenceRemovalReason extends js.Object {
   @js.native
   sealed trait used extends GeofenceRemovalReason
   
-  /* 1 */ val expired: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason.expired with Double = js.native
-  /* 0 */ val used: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceRemovalReason.used with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GeofenceRemovalReason with Double] = js.native
+  /* 1 */ @js.native
+  object expired extends TopLevel[expired with Double]
+  
+  /* 0 */ @js.native
+  object used extends TopLevel[used with Double]
+  
 }
 

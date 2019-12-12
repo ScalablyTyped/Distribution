@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Default
+import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Image
+import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.default
+import typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,11 +43,19 @@ object IconType extends js.Object {
   @js.native
   sealed trait image extends IconType
   
-  /* 100000 */ val Default: typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Default with Double = js.native
-  /* 100001 */ val Image: typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.Image with Double = js.native
-  /* 0 */ val default: typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.default with Double = js.native
-  /* 1 */ val image: typings.officeDashUiDashFabricDashReact.libComponentsIconIconDotTypesMod.IconType.image with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IconType with Double] = js.native
+  /* 100000 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 100001 */ @js.native
+  object Image extends TopLevel[Image with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object image extends TopLevel[image with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Visio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Visio.OverlayType.html
+import typings.officeDashJsDashPreview.Visio.OverlayType.image
+import typings.officeDashJsDashPreview.Visio.OverlayType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object OverlayType extends js.Object {
   @js.native
   sealed trait text extends OverlayType
   
-  /* "Html" */ val html: typings.officeDashJsDashPreview.Visio.OverlayType.html with String = js.native
-  /* "Image" */ val image: typings.officeDashJsDashPreview.Visio.OverlayType.image with String = js.native
-  /* "Text" */ val text: typings.officeDashJsDashPreview.Visio.OverlayType.text with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OverlayType with String] = js.native
+  /* "Html" */ @js.native
+  object html extends TopLevel[html with String]
+  
+  /* "Image" */ @js.native
+  object image extends TopLevel[image with String]
+  
+  /* "Text" */ @js.native
+  object text extends TopLevel[text with String]
+  
 }
 

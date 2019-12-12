@@ -1,5 +1,10 @@
 package typings.unlDashCore.unlDashCoreMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.unlDashCore.unlDashCoreMod.Direction.East
+import typings.unlDashCore.unlDashCoreMod.Direction.North
+import typings.unlDashCore.unlDashCoreMod.Direction.South
+import typings.unlDashCore.unlDashCoreMod.Direction.West
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Direction extends js.Object {
   @js.native
   sealed trait West extends Direction
   
-  /* "E" */ val East: typings.unlDashCore.unlDashCoreMod.Direction.East with String = js.native
-  /* "N" */ val North: typings.unlDashCore.unlDashCoreMod.Direction.North with String = js.native
-  /* "S" */ val South: typings.unlDashCore.unlDashCoreMod.Direction.South with String = js.native
-  /* "W" */ val West: typings.unlDashCore.unlDashCoreMod.Direction.West with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Direction with String] = js.native
+  /* "E" */ @js.native
+  object East extends TopLevel[East with String]
+  
+  /* "N" */ @js.native
+  object North extends TopLevel[North with String]
+  
+  /* "S" */ @js.native
+  object South extends TopLevel[South with String]
+  
+  /* "W" */ @js.native
+  object West extends TopLevel[West with String]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionConverted
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetConverted
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetUnconverted
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionUnconverted
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object CoreTextFormatUpdatingReason extends js.Object {
   @js.native
   sealed trait none extends CoreTextFormatUpdatingReason
   
-  /* 2 */ val compositionConverted: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionConverted with Double = js.native
-  /* 4 */ val compositionTargetConverted: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetConverted with Double = js.native
-  /* 3 */ val compositionTargetUnconverted: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionTargetUnconverted with Double = js.native
-  /* 1 */ val compositionUnconverted: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.compositionUnconverted with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextFormatUpdatingReason.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreTextFormatUpdatingReason with Double] = js.native
+  /* 2 */ @js.native
+  object compositionConverted extends TopLevel[compositionConverted with Double]
+  
+  /* 4 */ @js.native
+  object compositionTargetConverted extends TopLevel[compositionTargetConverted with Double]
+  
+  /* 3 */ @js.native
+  object compositionTargetUnconverted extends TopLevel[compositionTargetUnconverted with Double]
+  
+  /* 1 */ @js.native
+  object compositionUnconverted extends TopLevel[compositionUnconverted with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

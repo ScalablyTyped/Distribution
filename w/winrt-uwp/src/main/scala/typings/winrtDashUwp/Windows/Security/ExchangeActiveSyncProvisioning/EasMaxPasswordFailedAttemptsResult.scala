@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.canBeCompliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.compliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.invalidParameter
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.notEvaluated
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.requestedPolicyIsStricter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object EasMaxPasswordFailedAttemptsResult extends js.Object {
   @js.native
   sealed trait requestedPolicyIsStricter extends EasMaxPasswordFailedAttemptsResult
   
-  /* 2 */ val canBeCompliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.canBeCompliant with Double = js.native
-  /* 1 */ val compliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.compliant with Double = js.native
-  /* 4 */ val invalidParameter: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.invalidParameter with Double = js.native
-  /* 0 */ val notEvaluated: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.notEvaluated with Double = js.native
-  /* 3 */ val requestedPolicyIsStricter: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult.requestedPolicyIsStricter with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EasMaxPasswordFailedAttemptsResult with Double] = js.native
+  /* 2 */ @js.native
+  object canBeCompliant extends TopLevel[canBeCompliant with Double]
+  
+  /* 1 */ @js.native
+  object compliant extends TopLevel[compliant with Double]
+  
+  /* 4 */ @js.native
+  object invalidParameter extends TopLevel[invalidParameter with Double]
+  
+  /* 0 */ @js.native
+  object notEvaluated extends TopLevel[notEvaluated with Double]
+  
+  /* 3 */ @js.native
+  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
+  
 }
 

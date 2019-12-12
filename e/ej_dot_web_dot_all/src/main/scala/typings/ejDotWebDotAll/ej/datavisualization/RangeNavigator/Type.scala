@@ -1,5 +1,12 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Area
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Line
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Spline
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.SplineArea
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepArea
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,13 +47,25 @@ object Type extends js.Object {
   sealed trait StepLine
     extends typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type
   
-  /* 0 */ val Area: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Area with Double = js.native
-  /* 1 */ val Line: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Line with Double = js.native
-  /* 2 */ val Spline: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.Spline with Double = js.native
-  /* 4 */ val SplineArea: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.SplineArea with Double = js.native
-  /* 3 */ val StepArea: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepArea with Double = js.native
-  /* 5 */ val StepLine: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type.StepLine with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.Type with Double] = js.native
+  /* 0 */ @js.native
+  object Area extends TopLevel[Area with Double]
+  
+  /* 1 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 2 */ @js.native
+  object Spline extends TopLevel[Spline with Double]
+  
+  /* 4 */ @js.native
+  object SplineArea extends TopLevel[SplineArea with Double]
+  
+  /* 3 */ @js.native
+  object StepArea extends TopLevel[StepArea with Double]
+  
+  /* 5 */ @js.native
+  object StepLine extends TopLevel[StepLine with Double]
+  
 }
 

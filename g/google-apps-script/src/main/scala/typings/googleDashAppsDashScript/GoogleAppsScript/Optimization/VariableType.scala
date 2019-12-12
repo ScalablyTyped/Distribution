@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Optimization
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.CONTINUOUS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.INTEGER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object VariableType extends js.Object {
   @js.native
   sealed trait INTEGER extends VariableType
   
-  /* 1 */ val CONTINUOUS: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.CONTINUOUS with Double = js.native
-  /* 0 */ val INTEGER: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.VariableType.INTEGER with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VariableType with Double] = js.native
+  /* 1 */ @js.native
+  object CONTINUOUS extends TopLevel[CONTINUOUS with Double]
+  
+  /* 0 */ @js.native
+  object INTEGER extends TopLevel[INTEGER with Double]
+  
 }
 

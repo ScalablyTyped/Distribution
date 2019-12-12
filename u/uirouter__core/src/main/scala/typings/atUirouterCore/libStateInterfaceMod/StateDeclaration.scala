@@ -5,13 +5,13 @@ import typings.atUirouterCore.libCommonCommonMod.IInjectable
 import typings.atUirouterCore.libParamsInterfaceMod.ParamDeclaration
 import typings.atUirouterCore.libResolveInterfaceMod.ResolvePolicy
 import typings.atUirouterCore.libStateStateObjectMod.StateObject
-import typings.atUirouterCore.libTransitionInterfaceMod.HookResult
 import typings.atUirouterCore.libTransitionInterfaceMod.TransitionStateHookFn
 import typings.atUirouterCore.libTransitionTransitionMod.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StateDeclaration
   extends _StateDeclaration
      with _StateOrName {
@@ -23,14 +23,14 @@ trait StateDeclaration
     * Note: the internal [[StateObject]] API is subject to change without notice
     */
   @JSName("$$state")
-  var $$state: js.UndefOr[js.Function0[StateObject]] = js.undefined
+  var $$state: js.UndefOr[js.Function0[StateObject]] = js.native
   /**
     * Abstract state indicator
     *
     * An abstract state can never be directly activated.
     * Use an abstract state to provide inherited properties (url, resolve, data, etc) to children states.
     */
-  var `abstract`: js.UndefOr[Boolean] = js.undefined
+  var `abstract`: js.UndefOr[Boolean] = js.native
   /**
     * An inherited property to store state data
     *
@@ -43,7 +43,7 @@ trait StateDeclaration
     * Care should be taken if you are using `hasOwnProperty` on the `data` object.
     * Properties from parent objects will return false for `hasOwnProperty`.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /**
     * Marks all the state's parameters as `dynamic`.
     *
@@ -52,7 +52,7 @@ trait StateDeclaration
     *
     * Note: this value overrides the `dynamic` value on a custom parameter type ([[ParamTypeDefinition.dynamic]]).
     */
-  var dynamic: js.UndefOr[Boolean] = js.undefined
+  var dynamic: js.UndefOr[Boolean] = js.native
   /**
     * A function used to lazy load code
     *
@@ -181,7 +181,7 @@ trait StateDeclaration
       /* state */ StateDeclaration, 
       js.Promise[LazyLoadResult]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The state name (required)
     *
@@ -191,7 +191,7 @@ trait StateDeclaration
     * Note: [State] objects require unique names.
     * The name is used like an id.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * A Transition Hook called with the state is being entered.  See: [[IHookRegistry.onEnter]]
     *
@@ -213,7 +213,7 @@ trait StateDeclaration
     * });
     * ```
     */
-  var onEnter: js.UndefOr[TransitionStateHookFn] = js.undefined
+  var onEnter: js.UndefOr[TransitionStateHookFn] = js.native
   /**
     * A Transition Hook called with the state is being exited. See: [[IHookRegistry.onExit]]
     *
@@ -235,7 +235,7 @@ trait StateDeclaration
     * });
     * ```
     */
-  var onExit: js.UndefOr[TransitionStateHookFn] = js.undefined
+  var onExit: js.UndefOr[TransitionStateHookFn] = js.native
   /**
     * A [[TransitionStateHookFn]] called with the state is being retained/kept. See: [[IHookRegistry.onRetain]]
     *
@@ -257,7 +257,7 @@ trait StateDeclaration
     * });
     * ```
     */
-  var onRetain: js.UndefOr[TransitionStateHookFn] = js.undefined
+  var onRetain: js.UndefOr[TransitionStateHookFn] = js.native
   /**
     * Params configuration
     *
@@ -278,7 +278,7 @@ trait StateDeclaration
     * }
     * ```
     */
-  var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.undefined
+  var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.native
   /**
     * The parent state
     *
@@ -303,7 +303,7 @@ trait StateDeclaration
     * }
     * ```
     */
-  var parent: js.UndefOr[String | StateDeclaration] = js.undefined
+  var parent: js.UndefOr[String | StateDeclaration] = js.native
   /**
     * Synchronously or asynchronously redirects Transitions to a different state/params
     *
@@ -371,13 +371,13 @@ trait StateDeclaration
     */
   var redirectTo: js.UndefOr[
     RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult])
-  ] = js.undefined
+  ] = js.native
   /**
     * Marks all query parameters as [[ParamDeclaration.dynamic]]
     *
     * @deprecated use either [[dynamic]] or [[ParamDeclaration.dynamic]]
     */
-  var reloadOnSearch: js.UndefOr[Boolean] = js.undefined
+  var reloadOnSearch: js.UndefOr[Boolean] = js.native
   /**
     * Resolve - a mechanism to asynchronously fetch data, participating in the Transition lifecycle
     *
@@ -498,7 +498,7 @@ trait StateDeclaration
     * }
     * ```
     */
-  var resolve: js.UndefOr[js.Array[ResolveTypes] | StringDictionary[IInjectable]] = js.undefined
+  var resolve: js.UndefOr[js.Array[ResolveTypes] | StringDictionary[IInjectable]] = js.native
   /**
     * Sets the resolve policy defaults for all resolves on this state
     *
@@ -511,7 +511,7 @@ trait StateDeclaration
     *
     * See [[ResolvePolicy]] for more details.
     */
-  var resolvePolicy: js.UndefOr[ResolvePolicy] = js.undefined
+  var resolvePolicy: js.UndefOr[ResolvePolicy] = js.native
   /**
     * The url fragment for the state
     *
@@ -540,7 +540,7 @@ trait StateDeclaration
     * url: "/messages/:mailboxid?{before:date}&{after:date}"
     * ```
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
   /**
     * Named views
     *
@@ -586,49 +586,6 @@ trait StateDeclaration
     * }
     * ```
     */
-  var views: js.UndefOr[StringDictionary[_ViewDeclaration]] = js.undefined
-}
-
-object StateDeclaration {
-  @scala.inline
-  def apply(
-    $$state: () => StateObject = null,
-    `abstract`: js.UndefOr[Boolean] = js.undefined,
-    data: js.Any = null,
-    dynamic: js.UndefOr[Boolean] = js.undefined,
-    lazyLoad: (/* transition */ Transition, /* state */ StateDeclaration) => js.Promise[LazyLoadResult] = null,
-    name: String = null,
-    onEnter: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
-    onExit: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
-    onRetain: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult = null,
-    params: StringDictionary[ParamDeclaration | js.Any] = null,
-    parent: String | StateDeclaration = null,
-    redirectTo: RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult]) = null,
-    reloadOnSearch: js.UndefOr[Boolean] = js.undefined,
-    resolve: js.Array[ResolveTypes] | StringDictionary[IInjectable] = null,
-    resolvePolicy: ResolvePolicy = null,
-    url: String = null,
-    views: StringDictionary[_ViewDeclaration] = null
-  ): StateDeclaration = {
-    val __obj = js.Dynamic.literal()
-    if ($$state != null) __obj.updateDynamic("$$state")(js.Any.fromFunction0($$state))
-    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.asInstanceOf[js.Any])
-    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(js.Any.fromFunction2(lazyLoad))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction2(onExit))
-    if (onRetain != null) __obj.updateDynamic("onRetain")(js.Any.fromFunction2(onRetain))
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
-    if (resolvePolicy != null) __obj.updateDynamic("resolvePolicy")(resolvePolicy.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StateDeclaration]
-  }
+  var views: js.UndefOr[StringDictionary[_ViewDeclaration]] = js.native
 }
 

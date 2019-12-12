@@ -1,5 +1,57 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addExtraScreenshot
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addImageFromGallery
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addVideoMessage
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addVoiceMessage
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audio
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audioRecordingPermissionDeniedMessage
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audioRecordingPermissionDeniedTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.cancelButtonText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.chatsHeaderTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.chatsNoConversationsHeadlineText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.collectingDataText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForBugReport
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForFeedback
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForQuestion
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.conversationTextFieldHint
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.conversationsHeaderTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.doneButtonText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.edgeSwipeStartHint
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.emailFieldHint
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.image
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidCommentMessage
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidCommentTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidEmailMessage
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidEmailTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invocationHeader
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.messagesNotification
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.messagesNotificationAndOthers
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.microphonePermissionAlertSettingsButtonText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.okButtonText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.recordingMessageToHoldText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.recordingMessageToReleaseText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportBug
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportFeedback
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportQuestion
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.screenshotHeaderTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.shakeHint
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.startAlertText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.swipeHint
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.talkToUs
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.team
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.thankYouAlertText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.thankYouText
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.video
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaFinishStepContent
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaFinishStepTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaHowToReportStepContent
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaHowToReportStepTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaWelcomeStepContent
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaWelcomeStepTitle
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageLiveWelcomeStepContent
+import typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageLiveWelcomeStepTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -163,58 +215,160 @@ object strings extends js.Object {
   @js.native
   sealed trait welcomeMessageLiveWelcomeStepTitle extends strings
   
-  /* 20 */ val addExtraScreenshot: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addExtraScreenshot with Double = js.native
-  /* 19 */ val addImageFromGallery: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addImageFromGallery with Double = js.native
-  /* 17 */ val addVideoMessage: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addVideoMessage with Double = js.native
-  /* 18 */ val addVoiceMessage: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.addVoiceMessage with Double = js.native
-  /* 33 */ val audio: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audio with Double = js.native
-  /* 22 */ val audioRecordingPermissionDeniedMessage: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audioRecordingPermissionDeniedMessage with Double = js.native
-  /* 21 */ val audioRecordingPermissionDeniedTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.audioRecordingPermissionDeniedTitle with Double = js.native
-  /* 31 */ val cancelButtonText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.cancelButtonText with Double = js.native
-  /* 36 */ val chatsHeaderTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.chatsHeaderTitle with Double = js.native
-  /* 28 */ val chatsNoConversationsHeadlineText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.chatsNoConversationsHeadlineText with Double = js.native
-  /* 41 */ val collectingDataText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.collectingDataText with Double = js.native
-  /* 14 */ val commentFieldHintForBugReport: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForBugReport with Double = js.native
-  /* 15 */ val commentFieldHintForFeedback: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForFeedback with Double = js.native
-  /* 16 */ val commentFieldHintForQuestion: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.commentFieldHintForQuestion with Double = js.native
-  /* 40 */ val conversationTextFieldHint: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.conversationTextFieldHint with Double = js.native
-  /* 26 */ val conversationsHeaderTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.conversationsHeaderTitle with Double = js.native
-  /* 29 */ val doneButtonText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.doneButtonText with Double = js.native
-  /* 2 */ val edgeSwipeStartHint: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.edgeSwipeStartHint with Double = js.native
-  /* 13 */ val emailFieldHint: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.emailFieldHint with Double = js.native
-  /* 35 */ val image: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.image with Double = js.native
-  /* 6 */ val invalidCommentMessage: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidCommentMessage with Double = js.native
-  /* 7 */ val invalidCommentTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidCommentTitle with Double = js.native
-  /* 4 */ val invalidEmailMessage: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidEmailMessage with Double = js.native
-  /* 5 */ val invalidEmailTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invalidEmailTitle with Double = js.native
-  /* 8 */ val invocationHeader: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.invocationHeader with Double = js.native
-  /* 38 */ val messagesNotification: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.messagesNotification with Double = js.native
-  /* 39 */ val messagesNotificationAndOthers: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.messagesNotificationAndOthers with Double = js.native
-  /* 23 */ val microphonePermissionAlertSettingsButtonText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.microphonePermissionAlertSettingsButtonText with Double = js.native
-  /* 30 */ val okButtonText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.okButtonText with Double = js.native
-  /* 24 */ val recordingMessageToHoldText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.recordingMessageToHoldText with Double = js.native
-  /* 25 */ val recordingMessageToReleaseText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.recordingMessageToReleaseText with Double = js.native
-  /* 11 */ val reportBug: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportBug with Double = js.native
-  /* 12 */ val reportFeedback: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportFeedback with Double = js.native
-  /* 10 */ val reportQuestion: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.reportQuestion with Double = js.native
-  /* 27 */ val screenshotHeaderTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.screenshotHeaderTitle with Double = js.native
-  /* 0 */ val shakeHint: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.shakeHint with Double = js.native
-  /* 3 */ val startAlertText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.startAlertText with Double = js.native
-  /* 1 */ val swipeHint: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.swipeHint with Double = js.native
-  /* 9 */ val talkToUs: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.talkToUs with Double = js.native
-  /* 37 */ val team: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.team with Double = js.native
-  /* 42 */ val thankYouAlertText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.thankYouAlertText with Double = js.native
-  /* 32 */ val thankYouText: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.thankYouText with Double = js.native
-  /* 34 */ val video: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.video with Double = js.native
-  /* 48 */ val welcomeMessageBetaFinishStepContent: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaFinishStepContent with Double = js.native
-  /* 47 */ val welcomeMessageBetaFinishStepTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaFinishStepTitle with Double = js.native
-  /* 46 */ val welcomeMessageBetaHowToReportStepContent: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaHowToReportStepContent with Double = js.native
-  /* 45 */ val welcomeMessageBetaHowToReportStepTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaHowToReportStepTitle with Double = js.native
-  /* 44 */ val welcomeMessageBetaWelcomeStepContent: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaWelcomeStepContent with Double = js.native
-  /* 43 */ val welcomeMessageBetaWelcomeStepTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageBetaWelcomeStepTitle with Double = js.native
-  /* 50 */ val welcomeMessageLiveWelcomeStepContent: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageLiveWelcomeStepContent with Double = js.native
-  /* 49 */ val welcomeMessageLiveWelcomeStepTitle: typings.instabugDashReactnative.instabugDashReactnativeMod.strings.welcomeMessageLiveWelcomeStepTitle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[strings with Double] = js.native
+  /* 20 */ @js.native
+  object addExtraScreenshot extends TopLevel[addExtraScreenshot with Double]
+  
+  /* 19 */ @js.native
+  object addImageFromGallery extends TopLevel[addImageFromGallery with Double]
+  
+  /* 17 */ @js.native
+  object addVideoMessage extends TopLevel[addVideoMessage with Double]
+  
+  /* 18 */ @js.native
+  object addVoiceMessage extends TopLevel[addVoiceMessage with Double]
+  
+  /* 33 */ @js.native
+  object audio extends TopLevel[audio with Double]
+  
+  /* 22 */ @js.native
+  object audioRecordingPermissionDeniedMessage extends TopLevel[audioRecordingPermissionDeniedMessage with Double]
+  
+  /* 21 */ @js.native
+  object audioRecordingPermissionDeniedTitle extends TopLevel[audioRecordingPermissionDeniedTitle with Double]
+  
+  /* 31 */ @js.native
+  object cancelButtonText extends TopLevel[cancelButtonText with Double]
+  
+  /* 36 */ @js.native
+  object chatsHeaderTitle extends TopLevel[chatsHeaderTitle with Double]
+  
+  /* 28 */ @js.native
+  object chatsNoConversationsHeadlineText extends TopLevel[chatsNoConversationsHeadlineText with Double]
+  
+  /* 41 */ @js.native
+  object collectingDataText extends TopLevel[collectingDataText with Double]
+  
+  /* 14 */ @js.native
+  object commentFieldHintForBugReport extends TopLevel[commentFieldHintForBugReport with Double]
+  
+  /* 15 */ @js.native
+  object commentFieldHintForFeedback extends TopLevel[commentFieldHintForFeedback with Double]
+  
+  /* 16 */ @js.native
+  object commentFieldHintForQuestion extends TopLevel[commentFieldHintForQuestion with Double]
+  
+  /* 40 */ @js.native
+  object conversationTextFieldHint extends TopLevel[conversationTextFieldHint with Double]
+  
+  /* 26 */ @js.native
+  object conversationsHeaderTitle extends TopLevel[conversationsHeaderTitle with Double]
+  
+  /* 29 */ @js.native
+  object doneButtonText extends TopLevel[doneButtonText with Double]
+  
+  /* 2 */ @js.native
+  object edgeSwipeStartHint extends TopLevel[edgeSwipeStartHint with Double]
+  
+  /* 13 */ @js.native
+  object emailFieldHint extends TopLevel[emailFieldHint with Double]
+  
+  /* 35 */ @js.native
+  object image extends TopLevel[image with Double]
+  
+  /* 6 */ @js.native
+  object invalidCommentMessage extends TopLevel[invalidCommentMessage with Double]
+  
+  /* 7 */ @js.native
+  object invalidCommentTitle extends TopLevel[invalidCommentTitle with Double]
+  
+  /* 4 */ @js.native
+  object invalidEmailMessage extends TopLevel[invalidEmailMessage with Double]
+  
+  /* 5 */ @js.native
+  object invalidEmailTitle extends TopLevel[invalidEmailTitle with Double]
+  
+  /* 8 */ @js.native
+  object invocationHeader extends TopLevel[invocationHeader with Double]
+  
+  /* 38 */ @js.native
+  object messagesNotification extends TopLevel[messagesNotification with Double]
+  
+  /* 39 */ @js.native
+  object messagesNotificationAndOthers extends TopLevel[messagesNotificationAndOthers with Double]
+  
+  /* 23 */ @js.native
+  object microphonePermissionAlertSettingsButtonText extends TopLevel[microphonePermissionAlertSettingsButtonText with Double]
+  
+  /* 30 */ @js.native
+  object okButtonText extends TopLevel[okButtonText with Double]
+  
+  /* 24 */ @js.native
+  object recordingMessageToHoldText extends TopLevel[recordingMessageToHoldText with Double]
+  
+  /* 25 */ @js.native
+  object recordingMessageToReleaseText extends TopLevel[recordingMessageToReleaseText with Double]
+  
+  /* 11 */ @js.native
+  object reportBug extends TopLevel[reportBug with Double]
+  
+  /* 12 */ @js.native
+  object reportFeedback extends TopLevel[reportFeedback with Double]
+  
+  /* 10 */ @js.native
+  object reportQuestion extends TopLevel[reportQuestion with Double]
+  
+  /* 27 */ @js.native
+  object screenshotHeaderTitle extends TopLevel[screenshotHeaderTitle with Double]
+  
+  /* 0 */ @js.native
+  object shakeHint extends TopLevel[shakeHint with Double]
+  
+  /* 3 */ @js.native
+  object startAlertText extends TopLevel[startAlertText with Double]
+  
+  /* 1 */ @js.native
+  object swipeHint extends TopLevel[swipeHint with Double]
+  
+  /* 9 */ @js.native
+  object talkToUs extends TopLevel[talkToUs with Double]
+  
+  /* 37 */ @js.native
+  object team extends TopLevel[team with Double]
+  
+  /* 42 */ @js.native
+  object thankYouAlertText extends TopLevel[thankYouAlertText with Double]
+  
+  /* 32 */ @js.native
+  object thankYouText extends TopLevel[thankYouText with Double]
+  
+  /* 34 */ @js.native
+  object video extends TopLevel[video with Double]
+  
+  /* 48 */ @js.native
+  object welcomeMessageBetaFinishStepContent extends TopLevel[welcomeMessageBetaFinishStepContent with Double]
+  
+  /* 47 */ @js.native
+  object welcomeMessageBetaFinishStepTitle extends TopLevel[welcomeMessageBetaFinishStepTitle with Double]
+  
+  /* 46 */ @js.native
+  object welcomeMessageBetaHowToReportStepContent extends TopLevel[welcomeMessageBetaHowToReportStepContent with Double]
+  
+  /* 45 */ @js.native
+  object welcomeMessageBetaHowToReportStepTitle extends TopLevel[welcomeMessageBetaHowToReportStepTitle with Double]
+  
+  /* 44 */ @js.native
+  object welcomeMessageBetaWelcomeStepContent extends TopLevel[welcomeMessageBetaWelcomeStepContent with Double]
+  
+  /* 43 */ @js.native
+  object welcomeMessageBetaWelcomeStepTitle extends TopLevel[welcomeMessageBetaWelcomeStepTitle with Double]
+  
+  /* 50 */ @js.native
+  object welcomeMessageLiveWelcomeStepContent extends TopLevel[welcomeMessageLiveWelcomeStepContent with Double]
+  
+  /* 49 */ @js.native
+  object welcomeMessageLiveWelcomeStepTitle extends TopLevel[welcomeMessageLiveWelcomeStepTitle with Double]
+  
 }
 

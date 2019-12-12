@@ -1,5 +1,33 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_ARA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_BEN
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_CHI_SIM
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_CHI_TRA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_DEU
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_ENG
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_FAS
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_FRA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_HIN
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_IND
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_ITA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_JAV
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_JPN
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_KOR
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_MAR
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_MSA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_PAN
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_POR
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_RUS
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_SPA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_SWA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_TAM
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_TEL
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_THA
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_TUR
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_URD
+import typings.dwt.EnumDWT_OCRLanguage.OCRL_VIE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,34 +119,88 @@ object EnumDWT_OCRLanguage extends js.Object {
   @js.native
   sealed trait OCRL_VIE extends EnumDWT_OCRLanguage
   
-  /* "ara" */ val OCRL_ARA: typings.dwt.EnumDWT_OCRLanguage.OCRL_ARA with String = js.native
-  /* "ben" */ val OCRL_BEN: typings.dwt.EnumDWT_OCRLanguage.OCRL_BEN with String = js.native
-  /* "chi_sim" */ val OCRL_CHI_SIM: typings.dwt.EnumDWT_OCRLanguage.OCRL_CHI_SIM with String = js.native
-  /* "chi_tra" */ val OCRL_CHI_TRA: typings.dwt.EnumDWT_OCRLanguage.OCRL_CHI_TRA with String = js.native
-  /* "deu" */ val OCRL_DEU: typings.dwt.EnumDWT_OCRLanguage.OCRL_DEU with String = js.native
-  /* "eng" */ val OCRL_ENG: typings.dwt.EnumDWT_OCRLanguage.OCRL_ENG with String = js.native
-  /* "fas" */ val OCRL_FAS: typings.dwt.EnumDWT_OCRLanguage.OCRL_FAS with String = js.native
-  /* "fra" */ val OCRL_FRA: typings.dwt.EnumDWT_OCRLanguage.OCRL_FRA with String = js.native
-  /* "hin" */ val OCRL_HIN: typings.dwt.EnumDWT_OCRLanguage.OCRL_HIN with String = js.native
-  /* "ind" */ val OCRL_IND: typings.dwt.EnumDWT_OCRLanguage.OCRL_IND with String = js.native
-  /* "ita" */ val OCRL_ITA: typings.dwt.EnumDWT_OCRLanguage.OCRL_ITA with String = js.native
-  /* "jav" */ val OCRL_JAV: typings.dwt.EnumDWT_OCRLanguage.OCRL_JAV with String = js.native
-  /* "jpn" */ val OCRL_JPN: typings.dwt.EnumDWT_OCRLanguage.OCRL_JPN with String = js.native
-  /* "kor" */ val OCRL_KOR: typings.dwt.EnumDWT_OCRLanguage.OCRL_KOR with String = js.native
-  /* "mar" */ val OCRL_MAR: typings.dwt.EnumDWT_OCRLanguage.OCRL_MAR with String = js.native
-  /* "msa" */ val OCRL_MSA: typings.dwt.EnumDWT_OCRLanguage.OCRL_MSA with String = js.native
-  /* "pan" */ val OCRL_PAN: typings.dwt.EnumDWT_OCRLanguage.OCRL_PAN with String = js.native
-  /* "por" */ val OCRL_POR: typings.dwt.EnumDWT_OCRLanguage.OCRL_POR with String = js.native
-  /* "rus" */ val OCRL_RUS: typings.dwt.EnumDWT_OCRLanguage.OCRL_RUS with String = js.native
-  /* "spa" */ val OCRL_SPA: typings.dwt.EnumDWT_OCRLanguage.OCRL_SPA with String = js.native
-  /* "swa" */ val OCRL_SWA: typings.dwt.EnumDWT_OCRLanguage.OCRL_SWA with String = js.native
-  /* "tam" */ val OCRL_TAM: typings.dwt.EnumDWT_OCRLanguage.OCRL_TAM with String = js.native
-  /* "tel" */ val OCRL_TEL: typings.dwt.EnumDWT_OCRLanguage.OCRL_TEL with String = js.native
-  /* "tha" */ val OCRL_THA: typings.dwt.EnumDWT_OCRLanguage.OCRL_THA with String = js.native
-  /* "tur" */ val OCRL_TUR: typings.dwt.EnumDWT_OCRLanguage.OCRL_TUR with String = js.native
-  /* "urd" */ val OCRL_URD: typings.dwt.EnumDWT_OCRLanguage.OCRL_URD with String = js.native
-  /* "vie" */ val OCRL_VIE: typings.dwt.EnumDWT_OCRLanguage.OCRL_VIE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EnumDWT_OCRLanguage with String] = js.native
+  /* "ara" */ @js.native
+  object OCRL_ARA extends TopLevel[OCRL_ARA with String]
+  
+  /* "ben" */ @js.native
+  object OCRL_BEN extends TopLevel[OCRL_BEN with String]
+  
+  /* "chi_sim" */ @js.native
+  object OCRL_CHI_SIM extends TopLevel[OCRL_CHI_SIM with String]
+  
+  /* "chi_tra" */ @js.native
+  object OCRL_CHI_TRA extends TopLevel[OCRL_CHI_TRA with String]
+  
+  /* "deu" */ @js.native
+  object OCRL_DEU extends TopLevel[OCRL_DEU with String]
+  
+  /* "eng" */ @js.native
+  object OCRL_ENG extends TopLevel[OCRL_ENG with String]
+  
+  /* "fas" */ @js.native
+  object OCRL_FAS extends TopLevel[OCRL_FAS with String]
+  
+  /* "fra" */ @js.native
+  object OCRL_FRA extends TopLevel[OCRL_FRA with String]
+  
+  /* "hin" */ @js.native
+  object OCRL_HIN extends TopLevel[OCRL_HIN with String]
+  
+  /* "ind" */ @js.native
+  object OCRL_IND extends TopLevel[OCRL_IND with String]
+  
+  /* "ita" */ @js.native
+  object OCRL_ITA extends TopLevel[OCRL_ITA with String]
+  
+  /* "jav" */ @js.native
+  object OCRL_JAV extends TopLevel[OCRL_JAV with String]
+  
+  /* "jpn" */ @js.native
+  object OCRL_JPN extends TopLevel[OCRL_JPN with String]
+  
+  /* "kor" */ @js.native
+  object OCRL_KOR extends TopLevel[OCRL_KOR with String]
+  
+  /* "mar" */ @js.native
+  object OCRL_MAR extends TopLevel[OCRL_MAR with String]
+  
+  /* "msa" */ @js.native
+  object OCRL_MSA extends TopLevel[OCRL_MSA with String]
+  
+  /* "pan" */ @js.native
+  object OCRL_PAN extends TopLevel[OCRL_PAN with String]
+  
+  /* "por" */ @js.native
+  object OCRL_POR extends TopLevel[OCRL_POR with String]
+  
+  /* "rus" */ @js.native
+  object OCRL_RUS extends TopLevel[OCRL_RUS with String]
+  
+  /* "spa" */ @js.native
+  object OCRL_SPA extends TopLevel[OCRL_SPA with String]
+  
+  /* "swa" */ @js.native
+  object OCRL_SWA extends TopLevel[OCRL_SWA with String]
+  
+  /* "tam" */ @js.native
+  object OCRL_TAM extends TopLevel[OCRL_TAM with String]
+  
+  /* "tel" */ @js.native
+  object OCRL_TEL extends TopLevel[OCRL_TEL with String]
+  
+  /* "tha" */ @js.native
+  object OCRL_THA extends TopLevel[OCRL_THA with String]
+  
+  /* "tur" */ @js.native
+  object OCRL_TUR extends TopLevel[OCRL_TUR with String]
+  
+  /* "urd" */ @js.native
+  object OCRL_URD extends TopLevel[OCRL_URD with String]
+  
+  /* "vie" */ @js.native
+  object OCRL_VIE extends TopLevel[OCRL_VIE with String]
+  
 }
 

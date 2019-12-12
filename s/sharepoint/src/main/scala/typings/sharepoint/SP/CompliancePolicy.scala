@@ -1,7 +1,11 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.SP.CompliancePolicy.SPContainerId
 import typings.sharepoint.SP.CompliancePolicy.SPContainerType
+import typings.sharepoint.SP.CompliancePolicy.SPContainerType.list
+import typings.sharepoint.SP.CompliancePolicy.SPContainerType.site
+import typings.sharepoint.SP.CompliancePolicy.SPContainerType.web
 import typings.sharepoint.SP.CompliancePolicy.SPPolicyAssociation
 import typings.sharepoint.SP.CompliancePolicy.SPPolicyBinding
 import typings.sharepoint.SP.CompliancePolicy.SPPolicyDefinition
@@ -218,11 +222,17 @@ object CompliancePolicy extends js.Object {
     @js.native
     sealed trait web extends SPContainerType
     
-    /* 2 */ val list: typings.sharepoint.SP.CompliancePolicy.SPContainerType.list with Double = js.native
-    /* 0 */ val site: typings.sharepoint.SP.CompliancePolicy.SPContainerType.site with Double = js.native
-    /* 1 */ val web: typings.sharepoint.SP.CompliancePolicy.SPContainerType.web with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SPContainerType with Double] = js.native
+    /* 2 */ @js.native
+    object list extends TopLevel[list with Double]
+    
+    /* 0 */ @js.native
+    object site extends TopLevel[site with Double]
+    
+    /* 1 */ @js.native
+    object web extends TopLevel[web with Double]
+    
   }
   
   /* static members */

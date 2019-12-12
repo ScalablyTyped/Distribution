@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-html-parser"
-version := "1.0-dt-20190907Z-4575d7"
+version := "1.0-dt-20190907Z-1ba30a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

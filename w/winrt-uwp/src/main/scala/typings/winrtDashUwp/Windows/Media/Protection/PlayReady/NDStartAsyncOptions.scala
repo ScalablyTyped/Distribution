@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDStartAsyncOptions.mutualAuthentication
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDStartAsyncOptions.waitForLicenseDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object NDStartAsyncOptions extends js.Object {
   @js.native
   sealed trait waitForLicenseDescriptor extends NDStartAsyncOptions
   
-  /* 0 */ val mutualAuthentication: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDStartAsyncOptions.mutualAuthentication with Double = js.native
-  /* 1 */ val waitForLicenseDescriptor: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDStartAsyncOptions.waitForLicenseDescriptor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NDStartAsyncOptions with Double] = js.native
+  /* 0 */ @js.native
+  object mutualAuthentication extends TopLevel[mutualAuthentication with Double]
+  
+  /* 1 */ @js.native
+  object waitForLicenseDescriptor extends TopLevel[waitForLicenseDescriptor with Double]
+  
 }
 

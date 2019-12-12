@@ -1,5 +1,8 @@
 package typings.applicationinsights.applicationinsightsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI
+import typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI_AND_W3C
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object DistributedTracingModes extends js.Object {
   @js.native
   sealed trait AI_AND_W3C extends DistributedTracingModes
   
-  /* 0 */ val AI: typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI with Double = js.native
-  /* 1 */ val AI_AND_W3C: typings.applicationinsights.applicationinsightsMod.DistributedTracingModes.AI_AND_W3C with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DistributedTracingModes with Double] = js.native
+  /* 0 */ @js.native
+  object AI extends TopLevel[AI with Double]
+  
+  /* 1 */ @js.native
+  object AI_AND_W3C extends TopLevel[AI_AND_W3C with Double]
+  
 }
 

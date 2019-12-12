@@ -1,5 +1,16 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.BusinessRule
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.InstantiatingReceive
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Manual
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Parallel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Receive
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Script
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Send
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Service
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,17 +61,37 @@ object BPMNTasks extends js.Object {
   @js.native
   sealed trait User extends BPMNTasks
   
-  /* 6 */ val BusinessRule: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.BusinessRule with Double = js.native
-  /* 4 */ val InstantiatingReceive: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.InstantiatingReceive with Double = js.native
-  /* 5 */ val Manual: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Manual with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.None with Double = js.native
-  /* 9 */ val Parallel: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Parallel with Double = js.native
-  /* 2 */ val Receive: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Receive with Double = js.native
-  /* 8 */ val Script: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Script with Double = js.native
-  /* 3 */ val Send: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Send with Double = js.native
-  /* 1 */ val Service: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.Service with Double = js.native
-  /* 7 */ val User: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNTasks.User with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BPMNTasks with Double] = js.native
+  /* 6 */ @js.native
+  object BusinessRule extends TopLevel[BusinessRule with Double]
+  
+  /* 4 */ @js.native
+  object InstantiatingReceive extends TopLevel[InstantiatingReceive with Double]
+  
+  /* 5 */ @js.native
+  object Manual extends TopLevel[Manual with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 9 */ @js.native
+  object Parallel extends TopLevel[Parallel with Double]
+  
+  /* 2 */ @js.native
+  object Receive extends TopLevel[Receive with Double]
+  
+  /* 8 */ @js.native
+  object Script extends TopLevel[Script with Double]
+  
+  /* 3 */ @js.native
+  object Send extends TopLevel[Send with Double]
+  
+  /* 1 */ @js.native
+  object Service extends TopLevel[Service with Double]
+  
+  /* 7 */ @js.native
+  object User extends TopLevel[User with Double]
+  
 }
 

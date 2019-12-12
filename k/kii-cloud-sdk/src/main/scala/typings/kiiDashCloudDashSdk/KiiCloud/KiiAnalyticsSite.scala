@@ -1,5 +1,12 @@
 package typings.kiiDashCloudDashSdk.KiiCloud
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.CN
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.CN3
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.EU
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.JP
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.SG
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.US
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object KiiAnalyticsSite extends js.Object {
   @js.native
   sealed trait US extends KiiAnalyticsSite
   
-  /* 2 */ val CN: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.CN with Double = js.native
-  /* 4 */ val CN3: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.CN3 with Double = js.native
-  /* 5 */ val EU: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.EU with Double = js.native
-  /* 1 */ val JP: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.JP with Double = js.native
-  /* 3 */ val SG: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.SG with Double = js.native
-  /* 0 */ val US: typings.kiiDashCloudDashSdk.KiiCloud.KiiAnalyticsSite.US with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KiiAnalyticsSite with Double] = js.native
+  /* 2 */ @js.native
+  object CN extends TopLevel[CN with Double]
+  
+  /* 4 */ @js.native
+  object CN3 extends TopLevel[CN3 with Double]
+  
+  /* 5 */ @js.native
+  object EU extends TopLevel[EU with Double]
+  
+  /* 1 */ @js.native
+  object JP extends TopLevel[JP with Double]
+  
+  /* 3 */ @js.native
+  object SG extends TopLevel[SG with Double]
+  
+  /* 0 */ @js.native
+  object US extends TopLevel[US with Double]
+  
 }
 

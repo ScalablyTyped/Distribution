@@ -1,5 +1,7 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanType.DeliveryTimelineView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object PlanType extends js.Object {
   @js.native
   sealed trait DeliveryTimelineView extends PlanType
   
-  /* 0 */ val DeliveryTimelineView: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.PlanType.DeliveryTimelineView with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlanType with Double] = js.native
+  /* 0 */ @js.native
+  object DeliveryTimelineView extends TopLevel[DeliveryTimelineView with Double]
+  
 }
 

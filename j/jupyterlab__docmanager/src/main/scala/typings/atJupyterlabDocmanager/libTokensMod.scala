@@ -1,5 +1,7 @@
 package typings.atJupyterlabDocmanager
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager
 import typings.atJupyterlabDocregistry.atJupyterlabDocregistryMod.DocumentRegistry
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.Context
 import typings.atJupyterlabDocregistry.libRegistryMod.DocumentRegistry.IModel
@@ -222,6 +224,8 @@ object libTokensMod extends js.Object {
     def rename(oldPath: String, newPath: String): js.Promise[typings.atJupyterlabServices.libContentsMod.Contents.IModel] = js.native
   }
   
-  val IDocumentManager: Token[typings.atJupyterlabDocmanager.libTokensMod.IDocumentManager] = js.native
+  @js.native
+  object IDocumentManager extends TopLevel[Token[IDocumentManager]]
+  
 }
 

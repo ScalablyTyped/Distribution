@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bgra8
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bmp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object MediaThumbnailFormat extends js.Object {
   @js.native
   sealed trait bmp extends MediaThumbnailFormat
   
-  /* 1 */ val bgra8: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bgra8 with Double = js.native
-  /* 0 */ val bmp: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bmp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaThumbnailFormat with Double] = js.native
+  /* 1 */ @js.native
+  object bgra8 extends TopLevel[bgra8 with Double]
+  
+  /* 0 */ @js.native
+  object bmp extends TopLevel[bmp with Double]
+  
 }
 

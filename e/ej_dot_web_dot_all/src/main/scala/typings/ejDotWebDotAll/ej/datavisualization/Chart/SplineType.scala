@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Cardinal
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Clamped
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Monotonic
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Natural
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object SplineType extends js.Object {
   @js.native
   sealed trait Natural extends SplineType
   
-  /* 2 */ val Cardinal: typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Cardinal with Double = js.native
-  /* 3 */ val Clamped: typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Clamped with Double = js.native
-  /* 1 */ val Monotonic: typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Monotonic with Double = js.native
-  /* 0 */ val Natural: typings.ejDotWebDotAll.ej.datavisualization.Chart.SplineType.Natural with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SplineType with Double] = js.native
+  /* 2 */ @js.native
+  object Cardinal extends TopLevel[Cardinal with Double]
+  
+  /* 3 */ @js.native
+  object Clamped extends TopLevel[Clamped with Double]
+  
+  /* 1 */ @js.native
+  object Monotonic extends TopLevel[Monotonic with Double]
+  
+  /* 0 */ @js.native
+  object Natural extends TopLevel[Natural with Double]
+  
 }
 

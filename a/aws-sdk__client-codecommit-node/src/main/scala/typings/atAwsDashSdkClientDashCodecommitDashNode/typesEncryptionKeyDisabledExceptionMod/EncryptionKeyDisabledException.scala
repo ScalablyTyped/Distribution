@@ -32,11 +32,11 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateDefaultBranch
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptionKeyDisabledException
   extends ServiceException[_EncryptionKeyDisabledExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -71,21 +71,6 @@ trait EncryptionKeyDisabledException
      with UpdatePullRequestStatusExceptionsUnion
      with UpdateRepositoryDescriptionExceptionsUnion {
   @JSName("name")
-  var name_EncryptionKeyDisabledException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.EncryptionKeyDisabledException
-}
-
-object EncryptionKeyDisabledException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _EncryptionKeyDisabledExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.EncryptionKeyDisabledException,
-    stack: String = null
-  ): EncryptionKeyDisabledException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EncryptionKeyDisabledException]
-  }
+  var name_EncryptionKeyDisabledException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.EncryptionKeyDisabledException = js.native
 }
 

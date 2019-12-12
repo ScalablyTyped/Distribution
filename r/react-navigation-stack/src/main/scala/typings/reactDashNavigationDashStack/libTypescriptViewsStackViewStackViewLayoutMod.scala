@@ -1,5 +1,6 @@
 package typings.reactDashNavigationDashStack
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -60,6 +61,8 @@ object libTypescriptViewsStackViewStackViewLayoutMod extends js.Object {
     def this(props: PickPropsmodeheaderModeheaderLayoutPresetheaderTra, context: js.Any) = this()
   }
   
-  val default: ComponentType[PickPropsmodeheaderModeheaderLayoutPresetheaderTra] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[PickPropsmodeheaderModeheaderLayoutPresetheaderTra]]
+  
 }
 

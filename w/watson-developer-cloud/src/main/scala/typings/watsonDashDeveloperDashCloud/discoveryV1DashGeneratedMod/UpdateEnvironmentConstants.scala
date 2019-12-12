@@ -1,6 +1,15 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.L
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.M
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.ML
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.MS
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.S
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XL
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XXL
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XXXL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,16 +48,32 @@ object UpdateEnvironmentConstants extends js.Object {
     @js.native
     sealed trait XXXL extends Size
     
-    /* "L" */ val L: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.L with String = js.native
-    /* "M" */ val M: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.M with String = js.native
-    /* "ML" */ val ML: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.ML with String = js.native
-    /* "MS" */ val MS: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.MS with String = js.native
-    /* "S" */ val S: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.S with String = js.native
-    /* "XL" */ val XL: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XL with String = js.native
-    /* "XXL" */ val XXL: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XXL with String = js.native
-    /* "XXXL" */ val XXXL: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.UpdateEnvironmentConstants.Size.XXXL with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Size with String] = js.native
+    /* "L" */ @js.native
+    object L extends TopLevel[L with String]
+    
+    /* "M" */ @js.native
+    object M extends TopLevel[M with String]
+    
+    /* "ML" */ @js.native
+    object ML extends TopLevel[ML with String]
+    
+    /* "MS" */ @js.native
+    object MS extends TopLevel[MS with String]
+    
+    /* "S" */ @js.native
+    object S extends TopLevel[S with String]
+    
+    /* "XL" */ @js.native
+    object XL extends TopLevel[XL with String]
+    
+    /* "XXL" */ @js.native
+    object XXL extends TopLevel[XXL with String]
+    
+    /* "XXXL" */ @js.native
+    object XXXL extends TopLevel[XXXL with String]
+    
   }
   
 }

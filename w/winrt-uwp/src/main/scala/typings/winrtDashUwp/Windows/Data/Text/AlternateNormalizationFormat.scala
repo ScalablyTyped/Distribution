@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.currency
+import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.date
+import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.notNormalized
+import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.number
+import typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AlternateNormalizationFormat extends js.Object {
   @js.native
   sealed trait time extends AlternateNormalizationFormat
   
-  /* 2 */ val currency: typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.currency with Double = js.native
-  /* 3 */ val date: typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.date with Double = js.native
-  /* 0 */ val notNormalized: typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.notNormalized with Double = js.native
-  /* 1 */ val number: typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.number with Double = js.native
-  /* 4 */ val time: typings.winrtDashUwp.Windows.Data.Text.AlternateNormalizationFormat.time with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AlternateNormalizationFormat with Double] = js.native
+  /* 2 */ @js.native
+  object currency extends TopLevel[currency with Double]
+  
+  /* 3 */ @js.native
+  object date extends TopLevel[date with Double]
+  
+  /* 0 */ @js.native
+  object notNormalized extends TopLevel[notNormalized with Double]
+  
+  /* 1 */ @js.native
+  object number extends TopLevel[number with Double]
+  
+  /* 4 */ @js.native
+  object time extends TopLevel[time with Double]
+  
 }
 

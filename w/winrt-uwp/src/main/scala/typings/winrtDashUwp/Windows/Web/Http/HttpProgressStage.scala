@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.connectingToServer
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.detectingProxy
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.negotiatingSsl
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.none
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingContent
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingHeaders
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.resolvingName
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingContent
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingHeaders
+import typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.waitingForResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object HttpProgressStage extends js.Object {
   @js.native
   sealed trait waitingForResponse extends HttpProgressStage
   
-  /* 3 */ val connectingToServer: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.connectingToServer with Double = js.native
-  /* 1 */ val detectingProxy: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.detectingProxy with Double = js.native
-  /* 4 */ val negotiatingSsl: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.negotiatingSsl with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.none with Double = js.native
-  /* 9 */ val receivingContent: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingContent with Double = js.native
-  /* 8 */ val receivingHeaders: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.receivingHeaders with Double = js.native
-  /* 2 */ val resolvingName: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.resolvingName with Double = js.native
-  /* 6 */ val sendingContent: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingContent with Double = js.native
-  /* 5 */ val sendingHeaders: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.sendingHeaders with Double = js.native
-  /* 7 */ val waitingForResponse: typings.winrtDashUwp.Windows.Web.Http.HttpProgressStage.waitingForResponse with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpProgressStage with Double] = js.native
+  /* 3 */ @js.native
+  object connectingToServer extends TopLevel[connectingToServer with Double]
+  
+  /* 1 */ @js.native
+  object detectingProxy extends TopLevel[detectingProxy with Double]
+  
+  /* 4 */ @js.native
+  object negotiatingSsl extends TopLevel[negotiatingSsl with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 9 */ @js.native
+  object receivingContent extends TopLevel[receivingContent with Double]
+  
+  /* 8 */ @js.native
+  object receivingHeaders extends TopLevel[receivingHeaders with Double]
+  
+  /* 2 */ @js.native
+  object resolvingName extends TopLevel[resolvingName with Double]
+  
+  /* 6 */ @js.native
+  object sendingContent extends TopLevel[sendingContent with Double]
+  
+  /* 5 */ @js.native
+  object sendingHeaders extends TopLevel[sendingHeaders with Double]
+  
+  /* 7 */ @js.native
+  object waitingForResponse extends TopLevel[waitingForResponse with Double]
+  
 }
 

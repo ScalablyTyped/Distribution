@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.ListBox
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ListBox.SortOrder.Ascending
+import typings.ejDotWebDotAll.ej.ListBox.SortOrder.Descending
+import typings.ejDotWebDotAll.ej.ListBox.SortOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object SortOrder extends js.Object {
   sealed trait None
     extends typings.ejDotWebDotAll.ej.ListBox.SortOrder
   
-  /* 1 */ val Ascending: typings.ejDotWebDotAll.ej.ListBox.SortOrder.Ascending with Double = js.native
-  /* 2 */ val Descending: typings.ejDotWebDotAll.ej.ListBox.SortOrder.Descending with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.ListBox.SortOrder.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.ListBox.SortOrder with Double] = js.native
+  /* 1 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 2 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

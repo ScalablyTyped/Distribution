@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.landscape
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ImageCoverStyle extends js.Object {
   @js.native
   sealed trait portrait extends ImageCoverStyle
   
-  /* 0 */ val landscape: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.landscape with Double = js.native
-  /* 1 */ val portrait: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageCoverStyle.portrait with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageCoverStyle with Double] = js.native
+  /* 0 */ @js.native
+  object landscape extends TopLevel[landscape with Double]
+  
+  /* 1 */ @js.native
+  object portrait extends TopLevel[portrait with Double]
+  
 }
 

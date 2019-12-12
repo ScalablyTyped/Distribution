@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.WrapMode.Both
+import typings.ejDotWebDotAll.ej.Grid.WrapMode.Content
+import typings.ejDotWebDotAll.ej.Grid.WrapMode.Header
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object WrapMode extends js.Object {
   @js.native
   sealed trait Header extends WrapMode
   
-  /* 0 */ val Both: typings.ejDotWebDotAll.ej.Grid.WrapMode.Both with Double = js.native
-  /* 1 */ val Content: typings.ejDotWebDotAll.ej.Grid.WrapMode.Content with Double = js.native
-  /* 2 */ val Header: typings.ejDotWebDotAll.ej.Grid.WrapMode.Header with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WrapMode with Double] = js.native
+  /* 0 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 1 */ @js.native
+  object Content extends TopLevel[Content with Double]
+  
+  /* 2 */ @js.native
+  object Header extends TopLevel[Header with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "syslog-client"
-version := "1.1-dt-20191114Z-e0aeb4"
+version := "1.1-dt-20191114Z-6bbb30"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

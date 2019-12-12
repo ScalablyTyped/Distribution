@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "styletron-react"
-version := "5.0-dt-20190925Z-f80fe9"
+version := "5.0-dt-20190925Z-a40656"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

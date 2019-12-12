@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.SearchDirection.backwards
+import typings.officeDashJs.Excel.SearchDirection.forward
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,9 +35,13 @@ object SearchDirection extends js.Object {
   @js.native
   sealed trait forward extends SearchDirection
   
-  /* "Backwards" */ val backwards: typings.officeDashJs.Excel.SearchDirection.backwards with String = js.native
-  /* "Forward" */ val forward: typings.officeDashJs.Excel.SearchDirection.forward with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SearchDirection with String] = js.native
+  /* "Backwards" */ @js.native
+  object backwards extends TopLevel[backwards with String]
+  
+  /* "Forward" */ @js.native
+  object forward extends TopLevel[forward with String]
+  
 }
 

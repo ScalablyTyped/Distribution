@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.eightBit
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.gsmSevenBit
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.ia5
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.korean
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latin
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latinHebrew
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.optimal
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.sevenBitAscii
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.shiftJis
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unicode
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object SmsEncoding extends js.Object {
   @js.native
   sealed trait unknown extends SmsEncoding
   
-  /* 5 */ val eightBit: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.eightBit with Double = js.native
-  /* 4 */ val gsmSevenBit: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.gsmSevenBit with Double = js.native
-  /* 8 */ val ia5: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.ia5 with Double = js.native
-  /* 7 */ val korean: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.korean with Double = js.native
-  /* 6 */ val latin: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latin with Double = js.native
-  /* 10 */ val latinHebrew: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.latinHebrew with Double = js.native
-  /* 1 */ val optimal: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.optimal with Double = js.native
-  /* 2 */ val sevenBitAscii: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.sevenBitAscii with Double = js.native
-  /* 9 */ val shiftJis: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.shiftJis with Double = js.native
-  /* 3 */ val unicode: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unicode with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Sms.SmsEncoding.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmsEncoding with Double] = js.native
+  /* 5 */ @js.native
+  object eightBit extends TopLevel[eightBit with Double]
+  
+  /* 4 */ @js.native
+  object gsmSevenBit extends TopLevel[gsmSevenBit with Double]
+  
+  /* 8 */ @js.native
+  object ia5 extends TopLevel[ia5 with Double]
+  
+  /* 7 */ @js.native
+  object korean extends TopLevel[korean with Double]
+  
+  /* 6 */ @js.native
+  object latin extends TopLevel[latin with Double]
+  
+  /* 10 */ @js.native
+  object latinHebrew extends TopLevel[latinHebrew with Double]
+  
+  /* 1 */ @js.native
+  object optimal extends TopLevel[optimal with Double]
+  
+  /* 2 */ @js.native
+  object sevenBitAscii extends TopLevel[sevenBitAscii with Double]
+  
+  /* 9 */ @js.native
+  object shiftJis extends TopLevel[shiftJis with Double]
+  
+  /* 3 */ @js.native
+  object unicode extends TopLevel[unicode with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

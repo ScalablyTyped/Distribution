@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.horizontal
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.none
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PosPrinterRuledLineCapabilities extends js.Object {
   @js.native
   sealed trait vertical extends PosPrinterRuledLineCapabilities
   
-  /* 1 */ val horizontal: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.horizontal with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.none with Double = js.native
-  /* 2 */ val vertical: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRuledLineCapabilities.vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterRuledLineCapabilities with Double] = js.native
+  /* 1 */ @js.native
+  object horizontal extends TopLevel[horizontal with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object vertical extends TopLevel[vertical with Double]
+  
 }
 

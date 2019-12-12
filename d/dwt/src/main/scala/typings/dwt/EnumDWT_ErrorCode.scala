@@ -1,5 +1,21 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ADDFILTER
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_BUILDGRAPH
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_FILTERGRAPH
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ICREATEDEVENUM
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_IENUMMONIKER
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_REGFILTERGRAPH
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_SAMPLEGRABBER
+import typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_VIDEOWINDOW
+import typings.dwt.EnumDWT_ErrorCode.WCERR_GRAB_TIMEOUT
+import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_AUTOPROPERTY
+import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMCAMERACONTROL
+import typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMVIDEOPROPERTY
+import typings.dwt.EnumDWT_ErrorCode.WCERR_NO_DEVICE
+import typings.dwt.EnumDWT_ErrorCode.WCERR_NULLRENDER
+import typings.dwt.EnumDWT_ErrorCode.WCERR_SYSTEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,22 +86,52 @@ object EnumDWT_ErrorCode extends js.Object {
   @js.native
   sealed trait WCERR_SYSTEM extends EnumDWT_ErrorCode
   
-  /* -2411 */ val WCERR_FAIL_ADDFILTER: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ADDFILTER with Double = js.native
-  /* -2412 */ val WCERR_FAIL_BUILDGRAPH: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_BUILDGRAPH with Double = js.native
-  /* -2408 */ val WCERR_FAIL_FILTERGRAPH: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_FILTERGRAPH with Double = js.native
-  /* -2401 */ val WCERR_FAIL_ICREATEDEVENUM: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_ICREATEDEVENUM with Double = js.native
-  /* -2402 */ val WCERR_FAIL_IENUMMONIKER: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_IENUMMONIKER with Double = js.native
-  /* -2413 */ val WCERR_FAIL_REGFILTERGRAPH: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_REGFILTERGRAPH with Double = js.native
-  /* -2409 */ val WCERR_FAIL_SAMPLEGRABBER: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_SAMPLEGRABBER with Double = js.native
-  /* -2407 */ val WCERR_FAIL_VIDEOWINDOW: typings.dwt.EnumDWT_ErrorCode.WCERR_FAIL_VIDEOWINDOW with Double = js.native
-  /* -2414 */ val WCERR_GRAB_TIMEOUT: typings.dwt.EnumDWT_ErrorCode.WCERR_GRAB_TIMEOUT with Double = js.native
-  /* -2405 */ val WCERR_NOT_AUTOPROPERTY: typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_AUTOPROPERTY with Double = js.native
-  /* -2404 */ val WCERR_NOT_IAMCAMERACONTROL: typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMCAMERACONTROL with Double = js.native
-  /* -2403 */ val WCERR_NOT_IAMVIDEOPROPERTY: typings.dwt.EnumDWT_ErrorCode.WCERR_NOT_IAMVIDEOPROPERTY with Double = js.native
-  /* -2406 */ val WCERR_NO_DEVICE: typings.dwt.EnumDWT_ErrorCode.WCERR_NO_DEVICE with Double = js.native
-  /* -2410 */ val WCERR_NULLRENDER: typings.dwt.EnumDWT_ErrorCode.WCERR_NULLRENDER with Double = js.native
-  /* -2400 */ val WCERR_SYSTEM: typings.dwt.EnumDWT_ErrorCode.WCERR_SYSTEM with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_ErrorCode with Double] = js.native
+  /* -2411 */ @js.native
+  object WCERR_FAIL_ADDFILTER extends TopLevel[WCERR_FAIL_ADDFILTER with Double]
+  
+  /* -2412 */ @js.native
+  object WCERR_FAIL_BUILDGRAPH extends TopLevel[WCERR_FAIL_BUILDGRAPH with Double]
+  
+  /* -2408 */ @js.native
+  object WCERR_FAIL_FILTERGRAPH extends TopLevel[WCERR_FAIL_FILTERGRAPH with Double]
+  
+  /* -2401 */ @js.native
+  object WCERR_FAIL_ICREATEDEVENUM extends TopLevel[WCERR_FAIL_ICREATEDEVENUM with Double]
+  
+  /* -2402 */ @js.native
+  object WCERR_FAIL_IENUMMONIKER extends TopLevel[WCERR_FAIL_IENUMMONIKER with Double]
+  
+  /* -2413 */ @js.native
+  object WCERR_FAIL_REGFILTERGRAPH extends TopLevel[WCERR_FAIL_REGFILTERGRAPH with Double]
+  
+  /* -2409 */ @js.native
+  object WCERR_FAIL_SAMPLEGRABBER extends TopLevel[WCERR_FAIL_SAMPLEGRABBER with Double]
+  
+  /* -2407 */ @js.native
+  object WCERR_FAIL_VIDEOWINDOW extends TopLevel[WCERR_FAIL_VIDEOWINDOW with Double]
+  
+  /* -2414 */ @js.native
+  object WCERR_GRAB_TIMEOUT extends TopLevel[WCERR_GRAB_TIMEOUT with Double]
+  
+  /* -2405 */ @js.native
+  object WCERR_NOT_AUTOPROPERTY extends TopLevel[WCERR_NOT_AUTOPROPERTY with Double]
+  
+  /* -2404 */ @js.native
+  object WCERR_NOT_IAMCAMERACONTROL extends TopLevel[WCERR_NOT_IAMCAMERACONTROL with Double]
+  
+  /* -2403 */ @js.native
+  object WCERR_NOT_IAMVIDEOPROPERTY extends TopLevel[WCERR_NOT_IAMVIDEOPROPERTY with Double]
+  
+  /* -2406 */ @js.native
+  object WCERR_NO_DEVICE extends TopLevel[WCERR_NO_DEVICE with Double]
+  
+  /* -2410 */ @js.native
+  object WCERR_NULLRENDER extends TopLevel[WCERR_NULLRENDER with Double]
+  
+  /* -2400 */ @js.native
+  object WCERR_SYSTEM extends TopLevel[WCERR_SYSTEM with Double]
+  
 }
 

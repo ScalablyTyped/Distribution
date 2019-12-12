@@ -1,5 +1,13 @@
 package typings.winrt.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Devices.Enumeration.Panel.back
+import typings.winrt.Windows.Devices.Enumeration.Panel.bottom
+import typings.winrt.Windows.Devices.Enumeration.Panel.front
+import typings.winrt.Windows.Devices.Enumeration.Panel.left
+import typings.winrt.Windows.Devices.Enumeration.Panel.right
+import typings.winrt.Windows.Devices.Enumeration.Panel.top
+import typings.winrt.Windows.Devices.Enumeration.Panel.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Panel extends js.Object {
   @js.native
   sealed trait unknown extends Panel
   
-  /* 2 */ val back: typings.winrt.Windows.Devices.Enumeration.Panel.back with Double = js.native
-  /* 4 */ val bottom: typings.winrt.Windows.Devices.Enumeration.Panel.bottom with Double = js.native
-  /* 1 */ val front: typings.winrt.Windows.Devices.Enumeration.Panel.front with Double = js.native
-  /* 5 */ val left: typings.winrt.Windows.Devices.Enumeration.Panel.left with Double = js.native
-  /* 6 */ val right: typings.winrt.Windows.Devices.Enumeration.Panel.right with Double = js.native
-  /* 3 */ val top: typings.winrt.Windows.Devices.Enumeration.Panel.top with Double = js.native
-  /* 0 */ val unknown: typings.winrt.Windows.Devices.Enumeration.Panel.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Panel with Double] = js.native
+  /* 2 */ @js.native
+  object back extends TopLevel[back with Double]
+  
+  /* 4 */ @js.native
+  object bottom extends TopLevel[bottom with Double]
+  
+  /* 1 */ @js.native
+  object front extends TopLevel[front with Double]
+  
+  /* 5 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* 6 */ @js.native
+  object right extends TopLevel[right with Double]
+  
+  /* 3 */ @js.native
+  object top extends TopLevel[top with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

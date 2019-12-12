@@ -1,5 +1,14 @@
 package typings.typedoc.distLibModelsReflectionsAbstractMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Children
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.GetSignature
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.IndexSignature
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Parameters
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.SetSignature
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Signatures
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeLiteral
+import typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object TraverseProperty extends js.Object {
   @js.native
   sealed trait TypeParameter extends TraverseProperty
   
-  /* 0 */ val Children: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Children with Double = js.native
-  /* 6 */ val GetSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.GetSignature with Double = js.native
-  /* 5 */ val IndexSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.IndexSignature with Double = js.native
-  /* 1 */ val Parameters: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Parameters with Double = js.native
-  /* 7 */ val SetSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.SetSignature with Double = js.native
-  /* 4 */ val Signatures: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.Signatures with Double = js.native
-  /* 2 */ val TypeLiteral: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeLiteral with Double = js.native
-  /* 3 */ val TypeParameter: typings.typedoc.distLibModelsReflectionsAbstractMod.TraverseProperty.TypeParameter with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TraverseProperty with Double] = js.native
+  /* 0 */ @js.native
+  object Children extends TopLevel[Children with Double]
+  
+  /* 6 */ @js.native
+  object GetSignature extends TopLevel[GetSignature with Double]
+  
+  /* 5 */ @js.native
+  object IndexSignature extends TopLevel[IndexSignature with Double]
+  
+  /* 1 */ @js.native
+  object Parameters extends TopLevel[Parameters with Double]
+  
+  /* 7 */ @js.native
+  object SetSignature extends TopLevel[SetSignature with Double]
+  
+  /* 4 */ @js.native
+  object Signatures extends TopLevel[Signatures with Double]
+  
+  /* 2 */ @js.native
+  object TypeLiteral extends TopLevel[TypeLiteral with Double]
+  
+  /* 3 */ @js.native
+  object TypeParameter extends TopLevel[TypeParameter with Double]
+  
 }
 

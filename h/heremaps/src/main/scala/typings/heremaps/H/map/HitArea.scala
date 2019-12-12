@@ -1,6 +1,11 @@
 package typings.heremaps.H.map
 
+import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.map.HitArea.ShapeType
+import typings.heremaps.H.map.HitArea.ShapeType.CIRCLE
+import typings.heremaps.H.map.HitArea.ShapeType.NONE
+import typings.heremaps.H.map.HitArea.ShapeType.POLYGON
+import typings.heremaps.H.map.HitArea.ShapeType.RECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,12 +48,20 @@ object HitArea extends js.Object {
     @js.native
     sealed trait RECT extends ShapeType
     
-    /* 2 */ val CIRCLE: typings.heremaps.H.map.HitArea.ShapeType.CIRCLE with Double = js.native
-    /* 0 */ val NONE: typings.heremaps.H.map.HitArea.ShapeType.NONE with Double = js.native
-    /* 3 */ val POLYGON: typings.heremaps.H.map.HitArea.ShapeType.POLYGON with Double = js.native
-    /* 1 */ val RECT: typings.heremaps.H.map.HitArea.ShapeType.RECT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ShapeType with Double] = js.native
+    /* 2 */ @js.native
+    object CIRCLE extends TopLevel[CIRCLE with Double]
+    
+    /* 0 */ @js.native
+    object NONE extends TopLevel[NONE with Double]
+    
+    /* 3 */ @js.native
+    object POLYGON extends TopLevel[POLYGON with Double]
+    
+    /* 1 */ @js.native
+    object RECT extends TopLevel[RECT with Double]
+    
   }
   
 }

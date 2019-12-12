@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "login-with-amazon-sdk-browser"
-version := "1.0-dt-20191101Z-cd7fc1"
+version := "1.0-dt-20191101Z-ab4fe9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

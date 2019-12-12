@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Inner
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Outer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object CustomLabelPositionType extends js.Object {
   @js.native
   sealed trait Outer extends CustomLabelPositionType
   
-  /* 0 */ val Inner: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Inner with Double = js.native
-  /* 1 */ val Outer: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.CustomLabelPositionType.Outer with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomLabelPositionType with Double] = js.native
+  /* 0 */ @js.native
+  object Inner extends TopLevel[Inner with Double]
+  
+  /* 1 */ @js.native
+  object Outer extends TopLevel[Outer with Double]
+  
 }
 

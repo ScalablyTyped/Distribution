@@ -1,5 +1,9 @@
 package typings.mendixmodelsdk.distSdkInternalVersionChecksMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.Element
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.ModelUnit
+import typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.StructuralUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object StructureType extends js.Object {
   @js.native
   sealed trait StructuralUnit extends StructureType
   
-  /* 2 */ val Element: typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.Element with Double = js.native
-  /* 1 */ val ModelUnit: typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.ModelUnit with Double = js.native
-  /* 0 */ val StructuralUnit: typings.mendixmodelsdk.distSdkInternalVersionChecksMod.StructureType.StructuralUnit with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StructureType with Double] = js.native
+  /* 2 */ @js.native
+  object Element extends TopLevel[Element with Double]
+  
+  /* 1 */ @js.native
+  object ModelUnit extends TopLevel[ModelUnit with Double]
+  
+  /* 0 */ @js.native
+  object StructuralUnit extends TopLevel[StructuralUnit with Double]
+  
 }
 

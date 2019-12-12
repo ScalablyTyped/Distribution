@@ -1,7 +1,14 @@
 package typings.postmark
 
+import org.scalablytyped.runtime.TopLevel
 import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.HTML
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.Text
 import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlAndText
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlOnly
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.None
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.TextOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +47,14 @@ object distClientModelsMessageSupportingTypesMod extends js.Object {
     @js.native
     sealed trait Text extends LinkClickLocation
     
-    /* "HTML" */ val HTML: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.HTML with String = js.native
-    /* "Text" */ val Text: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkClickLocation.Text with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LinkClickLocation with String] = js.native
+    /* "HTML" */ @js.native
+    object HTML extends TopLevel[HTML with String]
+    
+    /* "Text" */ @js.native
+    object Text extends TopLevel[Text with String]
+    
   }
   
   @js.native
@@ -60,12 +71,20 @@ object distClientModelsMessageSupportingTypesMod extends js.Object {
     @js.native
     sealed trait TextOnly extends LinkTrackingOptions
     
-    /* "HtmlAndText" */ val HtmlAndText: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlAndText with String = js.native
-    /* "HtmlOnly" */ val HtmlOnly: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.HtmlOnly with String = js.native
-    /* "None" */ val None: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.None with String = js.native
-    /* "TextOnly" */ val TextOnly: typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions.TextOnly with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LinkTrackingOptions with String] = js.native
+    /* "HtmlAndText" */ @js.native
+    object HtmlAndText extends TopLevel[HtmlAndText with String]
+    
+    /* "HtmlOnly" */ @js.native
+    object HtmlOnly extends TopLevel[HtmlOnly with String]
+    
+    /* "None" */ @js.native
+    object None extends TopLevel[None with String]
+    
+    /* "TextOnly" */ @js.native
+    object TextOnly extends TopLevel[TextOnly with String]
+    
   }
   
 }

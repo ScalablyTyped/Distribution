@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.left90
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.normal
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.right90
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.rotate180
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PosPrinterRotation extends js.Object {
   @js.native
   sealed trait rotate180 extends PosPrinterRotation
   
-  /* 2 */ val left90: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.left90 with Double = js.native
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.normal with Double = js.native
-  /* 1 */ val right90: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.right90 with Double = js.native
-  /* 3 */ val rotate180: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterRotation.rotate180 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterRotation with Double] = js.native
+  /* 2 */ @js.native
+  object left90 extends TopLevel[left90 with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 1 */ @js.native
+  object right90 extends TopLevel[right90 with Double]
+  
+  /* 3 */ @js.native
+  object rotate180 extends TopLevel[rotate180 with Double]
+  
 }
 

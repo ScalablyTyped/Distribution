@@ -1,6 +1,12 @@
 package typings.googleDashAuthDashLibrary
 
+import org.scalablytyped.runtime.TopLevel
 import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv
+import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.APP_ENGINE
+import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.CLOUD_FUNCTIONS
+import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.COMPUTE_ENGINE
+import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.KUBERNETES_ENGINE
+import typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +36,23 @@ object buildSrcAuthEnvDetectMod extends js.Object {
     @js.native
     sealed trait NONE extends GCPEnv
     
-    /* "APP_ENGINE" */ val APP_ENGINE: typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.APP_ENGINE with String = js.native
-    /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.CLOUD_FUNCTIONS with String = js.native
-    /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.COMPUTE_ENGINE with String = js.native
-    /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.KUBERNETES_ENGINE with String = js.native
-    /* "NONE" */ val NONE: typings.googleDashAuthDashLibrary.buildSrcAuthEnvDetectMod.GCPEnv.NONE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[GCPEnv with String] = js.native
+    /* "APP_ENGINE" */ @js.native
+    object APP_ENGINE extends TopLevel[APP_ENGINE with String]
+    
+    /* "CLOUD_FUNCTIONS" */ @js.native
+    object CLOUD_FUNCTIONS extends TopLevel[CLOUD_FUNCTIONS with String]
+    
+    /* "COMPUTE_ENGINE" */ @js.native
+    object COMPUTE_ENGINE extends TopLevel[COMPUTE_ENGINE with String]
+    
+    /* "KUBERNETES_ENGINE" */ @js.native
+    object KUBERNETES_ENGINE extends TopLevel[KUBERNETES_ENGINE with String]
+    
+    /* "NONE" */ @js.native
+    object NONE extends TopLevel[NONE with String]
+    
   }
   
 }

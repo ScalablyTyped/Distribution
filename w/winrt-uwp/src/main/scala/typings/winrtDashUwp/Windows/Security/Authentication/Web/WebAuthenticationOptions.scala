@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.none
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.silentMode
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useCorporateNetwork
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useHttpPost
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object WebAuthenticationOptions extends js.Object {
   @js.native
   sealed trait useTitle extends WebAuthenticationOptions
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.none with Double = js.native
-  /* 1 */ val silentMode: typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.silentMode with Double = js.native
-  /* 4 */ val useCorporateNetwork: typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useCorporateNetwork with Double = js.native
-  /* 3 */ val useHttpPost: typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useHttpPost with Double = js.native
-  /* 2 */ val useTitle: typings.winrtDashUwp.Windows.Security.Authentication.Web.WebAuthenticationOptions.useTitle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAuthenticationOptions with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object silentMode extends TopLevel[silentMode with Double]
+  
+  /* 4 */ @js.native
+  object useCorporateNetwork extends TopLevel[useCorporateNetwork with Double]
+  
+  /* 3 */ @js.native
+  object useHttpPost extends TopLevel[useHttpPost with Double]
+  
+  /* 2 */ @js.native
+  object useTitle extends TopLevel[useTitle with Double]
+  
 }
 

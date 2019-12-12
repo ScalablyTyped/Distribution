@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Accepted
+import typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Declined
+import typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.None
+import typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Tentative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,12 +54,25 @@ object ResponseType extends js.Object {
   @js.native
   sealed trait Tentative extends ResponseType
   
-  /* "accepted" */ val Accepted: typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Accepted with String = js.native
-  /* "declined" */ val Declined: typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Declined with String = js.native
-  /* "none" */ val None: typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.None with String = js.native
-  /* "organizer" */ val Organizer: typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Organizer with String = js.native
-  /* "tentative" */ val Tentative: typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Tentative with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ResponseType with String] = js.native
+  /* "accepted" */ @js.native
+  object Accepted extends TopLevel[Accepted with String]
+  
+  /* "declined" */ @js.native
+  object Declined extends TopLevel[Declined with String]
+  
+  /* "none" */ @js.native
+  object None extends TopLevel[None with String]
+  
+  /* "organizer" */ @js.native
+  object Organizer
+    extends TopLevel[
+          typings.officeDashJsDashPreview.Office.MailboxEnums.ResponseType.Organizer with String
+        ]
+  
+  /* "tentative" */ @js.native
+  object Tentative extends TopLevel[Tentative with String]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.decimal
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.digit
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.none
+import typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.numeric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object UnicodeNumericType extends js.Object {
   @js.native
   sealed trait numeric extends UnicodeNumericType
   
-  /* 1 */ val decimal: typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.decimal with Double = js.native
-  /* 2 */ val digit: typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.digit with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.none with Double = js.native
-  /* 3 */ val numeric: typings.winrtDashUwp.Windows.Data.Text.UnicodeNumericType.numeric with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnicodeNumericType with Double] = js.native
+  /* 1 */ @js.native
+  object decimal extends TopLevel[decimal with Double]
+  
+  /* 2 */ @js.native
+  object digit extends TopLevel[digit with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object numeric extends TopLevel[numeric with Double]
+  
 }
 

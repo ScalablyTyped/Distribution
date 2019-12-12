@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.LeftOrTop
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.RightOrBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object TickAlignment extends js.Object {
   @js.native
   sealed trait RightOrBottom extends TickAlignment
   
-  /* 0 */ val LeftOrTop: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.LeftOrTop with Double = js.native
-  /* 1 */ val RightOrBottom: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TickAlignment.RightOrBottom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TickAlignment with Double] = js.native
+  /* 0 */ @js.native
+  object LeftOrTop extends TopLevel[LeftOrTop with Double]
+  
+  /* 1 */ @js.native
+  object RightOrBottom extends TopLevel[RightOrBottom with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeScaleType.currentSize
+import typings.officeDashJs.Excel.ShapeScaleType.originalSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ShapeScaleType extends js.Object {
   @js.native
   sealed trait originalSize extends ShapeScaleType
   
-  /* "CurrentSize" */ val currentSize: typings.officeDashJs.Excel.ShapeScaleType.currentSize with String = js.native
-  /* "OriginalSize" */ val originalSize: typings.officeDashJs.Excel.ShapeScaleType.originalSize with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeScaleType with String] = js.native
+  /* "CurrentSize" */ @js.native
+  object currentSize extends TopLevel[currentSize with String]
+  
+  /* "OriginalSize" */ @js.native
+  object originalSize extends TopLevel[originalSize with String]
+  
 }
 

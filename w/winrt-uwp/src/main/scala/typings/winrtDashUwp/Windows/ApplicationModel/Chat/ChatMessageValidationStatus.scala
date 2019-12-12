@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidBody
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidData
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidOther
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidRecipients
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.messageTooLarge
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.noRecipients
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyAttachments
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyRecipients
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportInactive
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportNotFound
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object ChatMessageValidationStatus extends js.Object {
   @js.native
   sealed trait valid extends ChatMessageValidationStatus
   
-  /* 9 */ val invalidBody: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidBody with Double = js.native
-  /* 2 */ val invalidData: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidData with Double = js.native
-  /* 10 */ val invalidOther: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidOther with Double = js.native
-  /* 8 */ val invalidRecipients: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.invalidRecipients with Double = js.native
-  /* 3 */ val messageTooLarge: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.messageTooLarge with Double = js.native
-  /* 1 */ val noRecipients: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.noRecipients with Double = js.native
-  /* 7 */ val tooManyAttachments: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyAttachments with Double = js.native
-  /* 4 */ val tooManyRecipients: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.tooManyRecipients with Double = js.native
-  /* 5 */ val transportInactive: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportInactive with Double = js.native
-  /* 6 */ val transportNotFound: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.transportNotFound with Double = js.native
-  /* 0 */ val valid: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageValidationStatus.valid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatMessageValidationStatus with Double] = js.native
+  /* 9 */ @js.native
+  object invalidBody extends TopLevel[invalidBody with Double]
+  
+  /* 2 */ @js.native
+  object invalidData extends TopLevel[invalidData with Double]
+  
+  /* 10 */ @js.native
+  object invalidOther extends TopLevel[invalidOther with Double]
+  
+  /* 8 */ @js.native
+  object invalidRecipients extends TopLevel[invalidRecipients with Double]
+  
+  /* 3 */ @js.native
+  object messageTooLarge extends TopLevel[messageTooLarge with Double]
+  
+  /* 1 */ @js.native
+  object noRecipients extends TopLevel[noRecipients with Double]
+  
+  /* 7 */ @js.native
+  object tooManyAttachments extends TopLevel[tooManyAttachments with Double]
+  
+  /* 4 */ @js.native
+  object tooManyRecipients extends TopLevel[tooManyRecipients with Double]
+  
+  /* 5 */ @js.native
+  object transportInactive extends TopLevel[transportInactive with Double]
+  
+  /* 6 */ @js.native
+  object transportNotFound extends TopLevel[transportNotFound with Double]
+  
+  /* 0 */ @js.native
+  object valid extends TopLevel[valid with Double]
+  
 }
 

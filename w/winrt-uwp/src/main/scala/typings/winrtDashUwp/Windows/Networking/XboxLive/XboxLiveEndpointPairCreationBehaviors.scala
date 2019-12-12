@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.none
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.reevaluatePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object XboxLiveEndpointPairCreationBehaviors extends js.Object {
   @js.native
   sealed trait reevaluatePath extends XboxLiveEndpointPairCreationBehaviors
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.none with Double = js.native
-  /* 1 */ val reevaluatePath: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveEndpointPairCreationBehaviors.reevaluatePath with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[XboxLiveEndpointPairCreationBehaviors with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object reevaluatePath extends TopLevel[reevaluatePath with Double]
+  
 }
 

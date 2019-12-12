@@ -1,5 +1,26 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_BIRGITV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_BIRGITVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_DIETERV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_DIETERVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_GB_KATEVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_ALLISONV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_ALLISONVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_LISAV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_LISAVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_MICHAELV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_MICHAELVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_ES_ENRIQUEVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_ES_LAURAVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_LA_SOFIAVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_US_SOFIAVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.FR_FR_RENEEVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.IT_IT_FRANCESCAV2VOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.IT_IT_FRANCESCAVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.JA_JP_EMIVOICE
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.PT_BR_ISABELAVOICE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,29 +112,69 @@ object Voice extends js.Object {
   sealed trait PT_BR_ISABELAVOICE
     extends typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice
   
-  /* "de-DE_BirgitV2Voice" */ val DE_DE_BIRGITV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_BIRGITV2VOICE with String = js.native
-  /* "de-DE_BirgitVoice" */ val DE_DE_BIRGITVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_BIRGITVOICE with String = js.native
-  /* "de-DE_DieterV2Voice" */ val DE_DE_DIETERV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_DIETERV2VOICE with String = js.native
-  /* "de-DE_DieterVoice" */ val DE_DE_DIETERVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.DE_DE_DIETERVOICE with String = js.native
-  /* "en-GB_KateVoice" */ val EN_GB_KATEVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_GB_KATEVOICE with String = js.native
-  /* "en-US_AllisonV2Voice" */ val EN_US_ALLISONV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_ALLISONV2VOICE with String = js.native
-  /* "en-US_AllisonVoice" */ val EN_US_ALLISONVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_ALLISONVOICE with String = js.native
-  /* "en-US_LisaV2Voice" */ val EN_US_LISAV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_LISAV2VOICE with String = js.native
-  /* "en-US_LisaVoice" */ val EN_US_LISAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_LISAVOICE with String = js.native
-  /* "en-US_MichaelV2Voice" */ val EN_US_MICHAELV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_MICHAELV2VOICE with String = js.native
-  /* "en-US_MichaelVoice" */ val EN_US_MICHAELVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.EN_US_MICHAELVOICE with String = js.native
-  /* "es-ES_EnriqueVoice" */ val ES_ES_ENRIQUEVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_ES_ENRIQUEVOICE with String = js.native
-  /* "es-ES_LauraVoice" */ val ES_ES_LAURAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_ES_LAURAVOICE with String = js.native
-  /* "es-LA_SofiaVoice" */ val ES_LA_SOFIAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_LA_SOFIAVOICE with String = js.native
-  /* "es-US_SofiaVoice" */ val ES_US_SOFIAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.ES_US_SOFIAVOICE with String = js.native
-  /* "fr-FR_ReneeVoice" */ val FR_FR_RENEEVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.FR_FR_RENEEVOICE with String = js.native
-  /* "it-IT_FrancescaV2Voice" */ val IT_IT_FRANCESCAV2VOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.IT_IT_FRANCESCAV2VOICE with String = js.native
-  /* "it-IT_FrancescaVoice" */ val IT_IT_FRANCESCAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.IT_IT_FRANCESCAVOICE with String = js.native
-  /* "ja-JP_EmiVoice" */ val JA_JP_EMIVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.JA_JP_EMIVOICE with String = js.native
-  /* "pt-BR_IsabelaVoice" */ val PT_BR_ISABELAVOICE: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice.PT_BR_ISABELAVOICE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[
     typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Voice with String
   ] = js.native
+  /* "de-DE_BirgitV2Voice" */ @js.native
+  object DE_DE_BIRGITV2VOICE extends TopLevel[DE_DE_BIRGITV2VOICE with String]
+  
+  /* "de-DE_BirgitVoice" */ @js.native
+  object DE_DE_BIRGITVOICE extends TopLevel[DE_DE_BIRGITVOICE with String]
+  
+  /* "de-DE_DieterV2Voice" */ @js.native
+  object DE_DE_DIETERV2VOICE extends TopLevel[DE_DE_DIETERV2VOICE with String]
+  
+  /* "de-DE_DieterVoice" */ @js.native
+  object DE_DE_DIETERVOICE extends TopLevel[DE_DE_DIETERVOICE with String]
+  
+  /* "en-GB_KateVoice" */ @js.native
+  object EN_GB_KATEVOICE extends TopLevel[EN_GB_KATEVOICE with String]
+  
+  /* "en-US_AllisonV2Voice" */ @js.native
+  object EN_US_ALLISONV2VOICE extends TopLevel[EN_US_ALLISONV2VOICE with String]
+  
+  /* "en-US_AllisonVoice" */ @js.native
+  object EN_US_ALLISONVOICE extends TopLevel[EN_US_ALLISONVOICE with String]
+  
+  /* "en-US_LisaV2Voice" */ @js.native
+  object EN_US_LISAV2VOICE extends TopLevel[EN_US_LISAV2VOICE with String]
+  
+  /* "en-US_LisaVoice" */ @js.native
+  object EN_US_LISAVOICE extends TopLevel[EN_US_LISAVOICE with String]
+  
+  /* "en-US_MichaelV2Voice" */ @js.native
+  object EN_US_MICHAELV2VOICE extends TopLevel[EN_US_MICHAELV2VOICE with String]
+  
+  /* "en-US_MichaelVoice" */ @js.native
+  object EN_US_MICHAELVOICE extends TopLevel[EN_US_MICHAELVOICE with String]
+  
+  /* "es-ES_EnriqueVoice" */ @js.native
+  object ES_ES_ENRIQUEVOICE extends TopLevel[ES_ES_ENRIQUEVOICE with String]
+  
+  /* "es-ES_LauraVoice" */ @js.native
+  object ES_ES_LAURAVOICE extends TopLevel[ES_ES_LAURAVOICE with String]
+  
+  /* "es-LA_SofiaVoice" */ @js.native
+  object ES_LA_SOFIAVOICE extends TopLevel[ES_LA_SOFIAVOICE with String]
+  
+  /* "es-US_SofiaVoice" */ @js.native
+  object ES_US_SOFIAVOICE extends TopLevel[ES_US_SOFIAVOICE with String]
+  
+  /* "fr-FR_ReneeVoice" */ @js.native
+  object FR_FR_RENEEVOICE extends TopLevel[FR_FR_RENEEVOICE with String]
+  
+  /* "it-IT_FrancescaV2Voice" */ @js.native
+  object IT_IT_FRANCESCAV2VOICE extends TopLevel[IT_IT_FRANCESCAV2VOICE with String]
+  
+  /* "it-IT_FrancescaVoice" */ @js.native
+  object IT_IT_FRANCESCAVOICE extends TopLevel[IT_IT_FRANCESCAVOICE with String]
+  
+  /* "ja-JP_EmiVoice" */ @js.native
+  object JA_JP_EMIVOICE extends TopLevel[JA_JP_EMIVOICE with String]
+  
+  /* "pt-BR_IsabelaVoice" */ @js.native
+  object PT_BR_ISABELAVOICE extends TopLevel[PT_BR_ISABELAVOICE with String]
+  
 }
 

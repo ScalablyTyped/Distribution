@@ -1,5 +1,11 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.DEBUG
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.ERROR
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.INFO
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.NONE
+import typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object LoggerLevel extends js.Object {
   @js.native
   sealed trait WARNING extends LoggerLevel
   
-  /* 0 */ val DEBUG: typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.DEBUG with Double = js.native
-  /* 3 */ val ERROR: typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.ERROR with Double = js.native
-  /* 1 */ val INFO: typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.INFO with Double = js.native
-  /* 4 */ val NONE: typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.NONE with Double = js.native
-  /* 2 */ val WARNING: typings.chromecastDashCafDashSender.cast.framework.LoggerLevel.WARNING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LoggerLevel with Double] = js.native
+  /* 0 */ @js.native
+  object DEBUG extends TopLevel[DEBUG with Double]
+  
+  /* 3 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 1 */ @js.native
+  object INFO extends TopLevel[INFO with Double]
+  
+  /* 4 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 2 */ @js.native
+  object WARNING extends TopLevel[WARNING with Double]
+  
 }
 

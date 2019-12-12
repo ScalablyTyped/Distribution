@@ -1,5 +1,22 @@
 package typings.xmlbuilder.xmlbuilderMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Attribute
+import typings.xmlbuilder.xmlbuilderMod.NodeType.AttributeDeclaration
+import typings.xmlbuilder.xmlbuilderMod.NodeType.CData
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Comment
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Declaration
+import typings.xmlbuilder.xmlbuilderMod.NodeType.DocType
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Document
+import typings.xmlbuilder.xmlbuilderMod.NodeType.DocumentFragment
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Element
+import typings.xmlbuilder.xmlbuilderMod.NodeType.ElementDeclaration
+import typings.xmlbuilder.xmlbuilderMod.NodeType.EntityDeclaration
+import typings.xmlbuilder.xmlbuilderMod.NodeType.EntityReference
+import typings.xmlbuilder.xmlbuilderMod.NodeType.NotationDeclaration
+import typings.xmlbuilder.xmlbuilderMod.NodeType.ProcessingInstruction
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Raw
+import typings.xmlbuilder.xmlbuilderMod.NodeType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,24 +126,56 @@ object NodeType extends js.Object {
   @js.native
   sealed trait Text extends NodeType
   
-  /* 2 */ val Attribute: typings.xmlbuilder.xmlbuilderMod.NodeType.Attribute with Double = js.native
-  /* 203 */ val AttributeDeclaration: typings.xmlbuilder.xmlbuilderMod.NodeType.AttributeDeclaration with Double = js.native
-  /* 4 */ val CData: typings.xmlbuilder.xmlbuilderMod.NodeType.CData with Double = js.native
-  /* 8 */ val Comment: typings.xmlbuilder.xmlbuilderMod.NodeType.Comment with Double = js.native
-  /* 201 */ val Declaration: typings.xmlbuilder.xmlbuilderMod.NodeType.Declaration with Double = js.native
-  /* 10 */ val DocType: typings.xmlbuilder.xmlbuilderMod.NodeType.DocType with Double = js.native
-  /* 9 */ val Document: typings.xmlbuilder.xmlbuilderMod.NodeType.Document with Double = js.native
-  /* 11 */ val DocumentFragment: typings.xmlbuilder.xmlbuilderMod.NodeType.DocumentFragment with Double = js.native
-  /* 1 */ val Element: typings.xmlbuilder.xmlbuilderMod.NodeType.Element with Double = js.native
-  /* 204 */ val ElementDeclaration: typings.xmlbuilder.xmlbuilderMod.NodeType.ElementDeclaration with Double = js.native
-  /* 6 */ val EntityDeclaration: typings.xmlbuilder.xmlbuilderMod.NodeType.EntityDeclaration with Double = js.native
-  /* 5 */ val EntityReference: typings.xmlbuilder.xmlbuilderMod.NodeType.EntityReference with Double = js.native
-  /* 12 */ val NotationDeclaration: typings.xmlbuilder.xmlbuilderMod.NodeType.NotationDeclaration with Double = js.native
-  /* 7 */ val ProcessingInstruction: typings.xmlbuilder.xmlbuilderMod.NodeType.ProcessingInstruction with Double = js.native
-  /* 202 */ val Raw: typings.xmlbuilder.xmlbuilderMod.NodeType.Raw with Double = js.native
-  /* 3 */ val Text: typings.xmlbuilder.xmlbuilderMod.NodeType.Text with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NodeType with Double] = js.native
+  /* 2 */ @js.native
+  object Attribute extends TopLevel[Attribute with Double]
+  
+  /* 203 */ @js.native
+  object AttributeDeclaration extends TopLevel[AttributeDeclaration with Double]
+  
+  /* 4 */ @js.native
+  object CData extends TopLevel[CData with Double]
+  
+  /* 8 */ @js.native
+  object Comment extends TopLevel[Comment with Double]
+  
+  /* 201 */ @js.native
+  object Declaration extends TopLevel[Declaration with Double]
+  
+  /* 10 */ @js.native
+  object DocType extends TopLevel[DocType with Double]
+  
+  /* 9 */ @js.native
+  object Document extends TopLevel[Document with Double]
+  
+  /* 11 */ @js.native
+  object DocumentFragment extends TopLevel[DocumentFragment with Double]
+  
+  /* 1 */ @js.native
+  object Element extends TopLevel[Element with Double]
+  
+  /* 204 */ @js.native
+  object ElementDeclaration extends TopLevel[ElementDeclaration with Double]
+  
+  /* 6 */ @js.native
+  object EntityDeclaration extends TopLevel[EntityDeclaration with Double]
+  
+  /* 5 */ @js.native
+  object EntityReference extends TopLevel[EntityReference with Double]
+  
+  /* 12 */ @js.native
+  object NotationDeclaration extends TopLevel[NotationDeclaration with Double]
+  
+  /* 7 */ @js.native
+  object ProcessingInstruction extends TopLevel[ProcessingInstruction with Double]
+  
+  /* 202 */ @js.native
+  object Raw extends TopLevel[Raw with Double]
+  
+  /* 3 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
 }
 
 /**

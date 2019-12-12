@@ -1,5 +1,8 @@
 package typings.monacoDashEditor.monacoDashEditorMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.LTR
+import typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.RTL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object SelectionDirection extends js.Object {
   @js.native
   sealed trait RTL extends SelectionDirection
   
-  /* 0 */ val LTR: typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.LTR with Double = js.native
-  /* 1 */ val RTL: typings.monacoDashEditor.monacoDashEditorMod.SelectionDirection.RTL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionDirection with Double] = js.native
+  /* 0 */ @js.native
+  object LTR extends TopLevel[LTR with Double]
+  
+  /* 1 */ @js.native
+  object RTL extends TopLevel[RTL with Double]
+  
 }
 

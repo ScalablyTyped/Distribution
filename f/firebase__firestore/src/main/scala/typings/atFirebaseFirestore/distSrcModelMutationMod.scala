@@ -1,5 +1,6 @@
 package typings.atFirebaseFirestore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcApiTimestampMod.Timestamp
 import typings.atFirebaseFirestore.distSrcCoreSnapshotUnderscoreVersionMod.SnapshotVersion
 import typings.atFirebaseFirestore.distSrcModelDocumentMod.MaybeDocument
@@ -11,6 +12,10 @@ import typings.atFirebaseFirestore.distSrcModelMutationMod.FieldTransform
 import typings.atFirebaseFirestore.distSrcModelMutationMod.Mutation
 import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationResult
 import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType
+import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Delete
+import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Patch
+import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Set
+import typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Transform
 import typings.atFirebaseFirestore.distSrcModelMutationMod.Precondition
 import typings.atFirebaseFirestore.distSrcModelPathMod.FieldPath
 import typings.atFirebaseFirestore.distSrcModelTransformUnderscoreOperationMod.TransformOperation
@@ -275,12 +280,20 @@ object distSrcModelMutationMod extends js.Object {
     @js.native
     sealed trait Transform extends MutationType
     
-    /* 3 */ val Delete: typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Delete with Double = js.native
-    /* 1 */ val Patch: typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Patch with Double = js.native
-    /* 0 */ val Set: typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Set with Double = js.native
-    /* 2 */ val Transform: typings.atFirebaseFirestore.distSrcModelMutationMod.MutationType.Transform with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MutationType with Double] = js.native
+    /* 3 */ @js.native
+    object Delete extends TopLevel[Delete with Double]
+    
+    /* 1 */ @js.native
+    object Patch extends TopLevel[Patch with Double]
+    
+    /* 0 */ @js.native
+    object Set extends TopLevel[Set with Double]
+    
+    /* 2 */ @js.native
+    object Transform extends TopLevel[Transform with Double]
+    
   }
   
   /* static members */

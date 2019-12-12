@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.CONFIDENTIAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.DEFAULT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PRIVATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PUBLIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object Visibility extends js.Object {
   @js.native
   sealed trait PUBLIC extends Visibility
   
-  /* 0 */ val CONFIDENTIAL: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.CONFIDENTIAL with Double = js.native
-  /* 1 */ val DEFAULT: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.DEFAULT with Double = js.native
-  /* 2 */ val PRIVATE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PRIVATE with Double = js.native
-  /* 3 */ val PUBLIC: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.Visibility.PUBLIC with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Visibility with Double] = js.native
+  /* 0 */ @js.native
+  object CONFIDENTIAL extends TopLevel[CONFIDENTIAL with Double]
+  
+  /* 1 */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with Double]
+  
+  /* 2 */ @js.native
+  object PRIVATE extends TopLevel[PRIVATE with Double]
+  
+  /* 3 */ @js.native
+  object PUBLIC extends TopLevel[PUBLIC with Double]
+  
 }
 

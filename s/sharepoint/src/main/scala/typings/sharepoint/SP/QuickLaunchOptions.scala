@@ -1,5 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.QuickLaunchOptions.defaultValue
+import typings.sharepoint.SP.QuickLaunchOptions.off
+import typings.sharepoint.SP.QuickLaunchOptions.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object QuickLaunchOptions extends js.Object {
   @js.native
   sealed trait on extends QuickLaunchOptions
   
-  /* 2 */ val defaultValue: typings.sharepoint.SP.QuickLaunchOptions.defaultValue with Double = js.native
-  /* 0 */ val off: typings.sharepoint.SP.QuickLaunchOptions.off with Double = js.native
-  /* 1 */ val on: typings.sharepoint.SP.QuickLaunchOptions.on with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QuickLaunchOptions with Double] = js.native
+  /* 2 */ @js.native
+  object defaultValue extends TopLevel[defaultValue with Double]
+  
+  /* 0 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
 }
 

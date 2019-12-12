@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-zss-rich-text-editor"
-version := "1.x-dt-20190930Z-2ef664"
+version := "1.x-dt-20190930Z-a34cb4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

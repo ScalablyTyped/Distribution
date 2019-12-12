@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.bCryptPrivateKey
+import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.capi1PrivateKey
+import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs1RsaPrivateKey
+import typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs8RawPrivateKeyInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object CryptographicPrivateKeyBlobType extends js.Object {
   @js.native
   sealed trait pkcs8RawPrivateKeyInfo extends CryptographicPrivateKeyBlobType
   
-  /* 2 */ val bCryptPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.bCryptPrivateKey with Double = js.native
-  /* 3 */ val capi1PrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.capi1PrivateKey with Double = js.native
-  /* 1 */ val pkcs1RsaPrivateKey: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs1RsaPrivateKey with Double = js.native
-  /* 0 */ val pkcs8RawPrivateKeyInfo: typings.winrt.Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType.pkcs8RawPrivateKeyInfo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptographicPrivateKeyBlobType with Double] = js.native
+  /* 2 */ @js.native
+  object bCryptPrivateKey extends TopLevel[bCryptPrivateKey with Double]
+  
+  /* 3 */ @js.native
+  object capi1PrivateKey extends TopLevel[capi1PrivateKey with Double]
+  
+  /* 1 */ @js.native
+  object pkcs1RsaPrivateKey extends TopLevel[pkcs1RsaPrivateKey with Double]
+  
+  /* 0 */ @js.native
+  object pkcs8RawPrivateKeyInfo extends TopLevel[pkcs8RawPrivateKeyInfo with Double]
+  
 }
 

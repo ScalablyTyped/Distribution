@@ -1,5 +1,8 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.Directory
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ParameterHint extends js.Object {
   @js.native
   sealed trait File extends ParameterHint
   
-  /* 1 */ val Directory: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.Directory with Double = js.native
-  /* 0 */ val File: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterHint.File with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParameterHint with Double] = js.native
+  /* 1 */ @js.native
+  object Directory extends TopLevel[Directory with Double]
+  
+  /* 0 */ @js.native
+  object File extends TopLevel[File with Double]
+  
 }
 

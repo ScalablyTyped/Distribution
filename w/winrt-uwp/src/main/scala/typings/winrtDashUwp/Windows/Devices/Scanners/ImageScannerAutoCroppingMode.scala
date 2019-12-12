@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.Scanners
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.disabled
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.multipleRegion
+import typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.singleRegion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ImageScannerAutoCroppingMode extends js.Object {
   @js.native
   sealed trait singleRegion extends ImageScannerAutoCroppingMode
   
-  /* 0 */ val disabled: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.disabled with Double = js.native
-  /* 2 */ val multipleRegion: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.multipleRegion with Double = js.native
-  /* 1 */ val singleRegion: typings.winrtDashUwp.Windows.Devices.Scanners.ImageScannerAutoCroppingMode.singleRegion with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageScannerAutoCroppingMode with Double] = js.native
+  /* 0 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 2 */ @js.native
+  object multipleRegion extends TopLevel[multipleRegion with Double]
+  
+  /* 1 */ @js.native
+  object singleRegion extends TopLevel[singleRegion with Double]
+  
 }
 

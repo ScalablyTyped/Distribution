@@ -1,5 +1,8 @@
 package typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentType.AG_GRID
+import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentType.FRAMEWORK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ComponentType extends js.Object {
   @js.native
   sealed trait FRAMEWORK extends ComponentType
   
-  /* 0 */ val AG_GRID: typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentType.AG_GRID with Double = js.native
-  /* 1 */ val FRAMEWORK: typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentType.FRAMEWORK with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ComponentType with Double] = js.native
+  /* 0 */ @js.native
+  object AG_GRID extends TopLevel[AG_GRID with Double]
+  
+  /* 1 */ @js.native
+  object FRAMEWORK extends TopLevel[FRAMEWORK with Double]
+  
 }
 

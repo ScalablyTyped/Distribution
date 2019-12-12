@@ -1,5 +1,154 @@
 package typings.officeDashJs.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Word.Style.bibliography
+import typings.officeDashJs.Word.Style.bookTitle
+import typings.officeDashJs.Word.Style.caption
+import typings.officeDashJs.Word.Style.emphasis
+import typings.officeDashJs.Word.Style.endnoteReference
+import typings.officeDashJs.Word.Style.endnoteText
+import typings.officeDashJs.Word.Style.footer
+import typings.officeDashJs.Word.Style.footnoteReference
+import typings.officeDashJs.Word.Style.footnoteText
+import typings.officeDashJs.Word.Style.gridTable1Light
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent1
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent2
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent3
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent4
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent5
+import typings.officeDashJs.Word.Style.gridTable1Light_Accent6
+import typings.officeDashJs.Word.Style.gridTable2
+import typings.officeDashJs.Word.Style.gridTable2_Accent1
+import typings.officeDashJs.Word.Style.gridTable2_Accent2
+import typings.officeDashJs.Word.Style.gridTable2_Accent3
+import typings.officeDashJs.Word.Style.gridTable2_Accent4
+import typings.officeDashJs.Word.Style.gridTable2_Accent5
+import typings.officeDashJs.Word.Style.gridTable2_Accent6
+import typings.officeDashJs.Word.Style.gridTable3
+import typings.officeDashJs.Word.Style.gridTable3_Accent1
+import typings.officeDashJs.Word.Style.gridTable3_Accent2
+import typings.officeDashJs.Word.Style.gridTable3_Accent3
+import typings.officeDashJs.Word.Style.gridTable3_Accent4
+import typings.officeDashJs.Word.Style.gridTable3_Accent5
+import typings.officeDashJs.Word.Style.gridTable3_Accent6
+import typings.officeDashJs.Word.Style.gridTable4
+import typings.officeDashJs.Word.Style.gridTable4_Accent1
+import typings.officeDashJs.Word.Style.gridTable4_Accent2
+import typings.officeDashJs.Word.Style.gridTable4_Accent3
+import typings.officeDashJs.Word.Style.gridTable4_Accent4
+import typings.officeDashJs.Word.Style.gridTable4_Accent5
+import typings.officeDashJs.Word.Style.gridTable4_Accent6
+import typings.officeDashJs.Word.Style.gridTable5Dark
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent1
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent2
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent3
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent4
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent5
+import typings.officeDashJs.Word.Style.gridTable5Dark_Accent6
+import typings.officeDashJs.Word.Style.gridTable6Colorful
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent1
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent2
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent3
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent4
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent5
+import typings.officeDashJs.Word.Style.gridTable6Colorful_Accent6
+import typings.officeDashJs.Word.Style.gridTable7Colorful
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent1
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent2
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent3
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent4
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent5
+import typings.officeDashJs.Word.Style.gridTable7Colorful_Accent6
+import typings.officeDashJs.Word.Style.header
+import typings.officeDashJs.Word.Style.heading1
+import typings.officeDashJs.Word.Style.heading2
+import typings.officeDashJs.Word.Style.heading3
+import typings.officeDashJs.Word.Style.heading4
+import typings.officeDashJs.Word.Style.heading5
+import typings.officeDashJs.Word.Style.heading6
+import typings.officeDashJs.Word.Style.heading7
+import typings.officeDashJs.Word.Style.heading8
+import typings.officeDashJs.Word.Style.heading9
+import typings.officeDashJs.Word.Style.hyperlink
+import typings.officeDashJs.Word.Style.intenseEmphasis
+import typings.officeDashJs.Word.Style.intenseQuote
+import typings.officeDashJs.Word.Style.intenseReference
+import typings.officeDashJs.Word.Style.listParagraph
+import typings.officeDashJs.Word.Style.listTable1Light
+import typings.officeDashJs.Word.Style.listTable1Light_Accent1
+import typings.officeDashJs.Word.Style.listTable1Light_Accent2
+import typings.officeDashJs.Word.Style.listTable1Light_Accent3
+import typings.officeDashJs.Word.Style.listTable1Light_Accent4
+import typings.officeDashJs.Word.Style.listTable1Light_Accent5
+import typings.officeDashJs.Word.Style.listTable1Light_Accent6
+import typings.officeDashJs.Word.Style.listTable2
+import typings.officeDashJs.Word.Style.listTable2_Accent1
+import typings.officeDashJs.Word.Style.listTable2_Accent2
+import typings.officeDashJs.Word.Style.listTable2_Accent3
+import typings.officeDashJs.Word.Style.listTable2_Accent4
+import typings.officeDashJs.Word.Style.listTable2_Accent5
+import typings.officeDashJs.Word.Style.listTable2_Accent6
+import typings.officeDashJs.Word.Style.listTable3
+import typings.officeDashJs.Word.Style.listTable3_Accent1
+import typings.officeDashJs.Word.Style.listTable3_Accent2
+import typings.officeDashJs.Word.Style.listTable3_Accent3
+import typings.officeDashJs.Word.Style.listTable3_Accent4
+import typings.officeDashJs.Word.Style.listTable3_Accent5
+import typings.officeDashJs.Word.Style.listTable3_Accent6
+import typings.officeDashJs.Word.Style.listTable4
+import typings.officeDashJs.Word.Style.listTable4_Accent1
+import typings.officeDashJs.Word.Style.listTable4_Accent2
+import typings.officeDashJs.Word.Style.listTable4_Accent3
+import typings.officeDashJs.Word.Style.listTable4_Accent4
+import typings.officeDashJs.Word.Style.listTable4_Accent5
+import typings.officeDashJs.Word.Style.listTable4_Accent6
+import typings.officeDashJs.Word.Style.listTable5Dark
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent1
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent2
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent3
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent4
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent5
+import typings.officeDashJs.Word.Style.listTable5Dark_Accent6
+import typings.officeDashJs.Word.Style.listTable6Colorful
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent1
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent2
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent3
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent4
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent5
+import typings.officeDashJs.Word.Style.listTable6Colorful_Accent6
+import typings.officeDashJs.Word.Style.listTable7Colorful
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent1
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent2
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent3
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent4
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent5
+import typings.officeDashJs.Word.Style.listTable7Colorful_Accent6
+import typings.officeDashJs.Word.Style.noSpacing
+import typings.officeDashJs.Word.Style.normal
+import typings.officeDashJs.Word.Style.other
+import typings.officeDashJs.Word.Style.plainTable1
+import typings.officeDashJs.Word.Style.plainTable2
+import typings.officeDashJs.Word.Style.plainTable3
+import typings.officeDashJs.Word.Style.plainTable4
+import typings.officeDashJs.Word.Style.plainTable5
+import typings.officeDashJs.Word.Style.quote
+import typings.officeDashJs.Word.Style.strong
+import typings.officeDashJs.Word.Style.subtitle
+import typings.officeDashJs.Word.Style.subtleEmphasis
+import typings.officeDashJs.Word.Style.subtleReference
+import typings.officeDashJs.Word.Style.tableGrid
+import typings.officeDashJs.Word.Style.tableGridLight
+import typings.officeDashJs.Word.Style.title
+import typings.officeDashJs.Word.Style.toc1
+import typings.officeDashJs.Word.Style.toc2
+import typings.officeDashJs.Word.Style.toc3
+import typings.officeDashJs.Word.Style.toc4
+import typings.officeDashJs.Word.Style.toc5
+import typings.officeDashJs.Word.Style.toc6
+import typings.officeDashJs.Word.Style.toc7
+import typings.officeDashJs.Word.Style.toc8
+import typings.officeDashJs.Word.Style.toc9
+import typings.officeDashJs.Word.Style.tocHeading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -517,155 +666,451 @@ object Style extends js.Object {
   @js.native
   sealed trait tocHeading extends Style
   
-  /* "Bibliography" */ val bibliography: typings.officeDashJs.Word.Style.bibliography with String = js.native
-  /* "BookTitle" */ val bookTitle: typings.officeDashJs.Word.Style.bookTitle with String = js.native
-  /* "Caption" */ val caption: typings.officeDashJs.Word.Style.caption with String = js.native
-  /* "Emphasis" */ val emphasis: typings.officeDashJs.Word.Style.emphasis with String = js.native
-  /* "EndnoteReference" */ val endnoteReference: typings.officeDashJs.Word.Style.endnoteReference with String = js.native
-  /* "EndnoteText" */ val endnoteText: typings.officeDashJs.Word.Style.endnoteText with String = js.native
-  /* "Footer" */ val footer: typings.officeDashJs.Word.Style.footer with String = js.native
-  /* "FootnoteReference" */ val footnoteReference: typings.officeDashJs.Word.Style.footnoteReference with String = js.native
-  /* "FootnoteText" */ val footnoteText: typings.officeDashJs.Word.Style.footnoteText with String = js.native
-  /* "GridTable1Light" */ val gridTable1Light: typings.officeDashJs.Word.Style.gridTable1Light with String = js.native
-  /* "GridTable1Light_Accent1" */ val gridTable1Light_Accent1: typings.officeDashJs.Word.Style.gridTable1Light_Accent1 with String = js.native
-  /* "GridTable1Light_Accent2" */ val gridTable1Light_Accent2: typings.officeDashJs.Word.Style.gridTable1Light_Accent2 with String = js.native
-  /* "GridTable1Light_Accent3" */ val gridTable1Light_Accent3: typings.officeDashJs.Word.Style.gridTable1Light_Accent3 with String = js.native
-  /* "GridTable1Light_Accent4" */ val gridTable1Light_Accent4: typings.officeDashJs.Word.Style.gridTable1Light_Accent4 with String = js.native
-  /* "GridTable1Light_Accent5" */ val gridTable1Light_Accent5: typings.officeDashJs.Word.Style.gridTable1Light_Accent5 with String = js.native
-  /* "GridTable1Light_Accent6" */ val gridTable1Light_Accent6: typings.officeDashJs.Word.Style.gridTable1Light_Accent6 with String = js.native
-  /* "GridTable2" */ val gridTable2: typings.officeDashJs.Word.Style.gridTable2 with String = js.native
-  /* "GridTable2_Accent1" */ val gridTable2_Accent1: typings.officeDashJs.Word.Style.gridTable2_Accent1 with String = js.native
-  /* "GridTable2_Accent2" */ val gridTable2_Accent2: typings.officeDashJs.Word.Style.gridTable2_Accent2 with String = js.native
-  /* "GridTable2_Accent3" */ val gridTable2_Accent3: typings.officeDashJs.Word.Style.gridTable2_Accent3 with String = js.native
-  /* "GridTable2_Accent4" */ val gridTable2_Accent4: typings.officeDashJs.Word.Style.gridTable2_Accent4 with String = js.native
-  /* "GridTable2_Accent5" */ val gridTable2_Accent5: typings.officeDashJs.Word.Style.gridTable2_Accent5 with String = js.native
-  /* "GridTable2_Accent6" */ val gridTable2_Accent6: typings.officeDashJs.Word.Style.gridTable2_Accent6 with String = js.native
-  /* "GridTable3" */ val gridTable3: typings.officeDashJs.Word.Style.gridTable3 with String = js.native
-  /* "GridTable3_Accent1" */ val gridTable3_Accent1: typings.officeDashJs.Word.Style.gridTable3_Accent1 with String = js.native
-  /* "GridTable3_Accent2" */ val gridTable3_Accent2: typings.officeDashJs.Word.Style.gridTable3_Accent2 with String = js.native
-  /* "GridTable3_Accent3" */ val gridTable3_Accent3: typings.officeDashJs.Word.Style.gridTable3_Accent3 with String = js.native
-  /* "GridTable3_Accent4" */ val gridTable3_Accent4: typings.officeDashJs.Word.Style.gridTable3_Accent4 with String = js.native
-  /* "GridTable3_Accent5" */ val gridTable3_Accent5: typings.officeDashJs.Word.Style.gridTable3_Accent5 with String = js.native
-  /* "GridTable3_Accent6" */ val gridTable3_Accent6: typings.officeDashJs.Word.Style.gridTable3_Accent6 with String = js.native
-  /* "GridTable4" */ val gridTable4: typings.officeDashJs.Word.Style.gridTable4 with String = js.native
-  /* "GridTable4_Accent1" */ val gridTable4_Accent1: typings.officeDashJs.Word.Style.gridTable4_Accent1 with String = js.native
-  /* "GridTable4_Accent2" */ val gridTable4_Accent2: typings.officeDashJs.Word.Style.gridTable4_Accent2 with String = js.native
-  /* "GridTable4_Accent3" */ val gridTable4_Accent3: typings.officeDashJs.Word.Style.gridTable4_Accent3 with String = js.native
-  /* "GridTable4_Accent4" */ val gridTable4_Accent4: typings.officeDashJs.Word.Style.gridTable4_Accent4 with String = js.native
-  /* "GridTable4_Accent5" */ val gridTable4_Accent5: typings.officeDashJs.Word.Style.gridTable4_Accent5 with String = js.native
-  /* "GridTable4_Accent6" */ val gridTable4_Accent6: typings.officeDashJs.Word.Style.gridTable4_Accent6 with String = js.native
-  /* "GridTable5Dark" */ val gridTable5Dark: typings.officeDashJs.Word.Style.gridTable5Dark with String = js.native
-  /* "GridTable5Dark_Accent1" */ val gridTable5Dark_Accent1: typings.officeDashJs.Word.Style.gridTable5Dark_Accent1 with String = js.native
-  /* "GridTable5Dark_Accent2" */ val gridTable5Dark_Accent2: typings.officeDashJs.Word.Style.gridTable5Dark_Accent2 with String = js.native
-  /* "GridTable5Dark_Accent3" */ val gridTable5Dark_Accent3: typings.officeDashJs.Word.Style.gridTable5Dark_Accent3 with String = js.native
-  /* "GridTable5Dark_Accent4" */ val gridTable5Dark_Accent4: typings.officeDashJs.Word.Style.gridTable5Dark_Accent4 with String = js.native
-  /* "GridTable5Dark_Accent5" */ val gridTable5Dark_Accent5: typings.officeDashJs.Word.Style.gridTable5Dark_Accent5 with String = js.native
-  /* "GridTable5Dark_Accent6" */ val gridTable5Dark_Accent6: typings.officeDashJs.Word.Style.gridTable5Dark_Accent6 with String = js.native
-  /* "GridTable6Colorful" */ val gridTable6Colorful: typings.officeDashJs.Word.Style.gridTable6Colorful with String = js.native
-  /* "GridTable6Colorful_Accent1" */ val gridTable6Colorful_Accent1: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent1 with String = js.native
-  /* "GridTable6Colorful_Accent2" */ val gridTable6Colorful_Accent2: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent2 with String = js.native
-  /* "GridTable6Colorful_Accent3" */ val gridTable6Colorful_Accent3: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent3 with String = js.native
-  /* "GridTable6Colorful_Accent4" */ val gridTable6Colorful_Accent4: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent4 with String = js.native
-  /* "GridTable6Colorful_Accent5" */ val gridTable6Colorful_Accent5: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent5 with String = js.native
-  /* "GridTable6Colorful_Accent6" */ val gridTable6Colorful_Accent6: typings.officeDashJs.Word.Style.gridTable6Colorful_Accent6 with String = js.native
-  /* "GridTable7Colorful" */ val gridTable7Colorful: typings.officeDashJs.Word.Style.gridTable7Colorful with String = js.native
-  /* "GridTable7Colorful_Accent1" */ val gridTable7Colorful_Accent1: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent1 with String = js.native
-  /* "GridTable7Colorful_Accent2" */ val gridTable7Colorful_Accent2: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent2 with String = js.native
-  /* "GridTable7Colorful_Accent3" */ val gridTable7Colorful_Accent3: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent3 with String = js.native
-  /* "GridTable7Colorful_Accent4" */ val gridTable7Colorful_Accent4: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent4 with String = js.native
-  /* "GridTable7Colorful_Accent5" */ val gridTable7Colorful_Accent5: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent5 with String = js.native
-  /* "GridTable7Colorful_Accent6" */ val gridTable7Colorful_Accent6: typings.officeDashJs.Word.Style.gridTable7Colorful_Accent6 with String = js.native
-  /* "Header" */ val header: typings.officeDashJs.Word.Style.header with String = js.native
-  /* "Heading1" */ val heading1: typings.officeDashJs.Word.Style.heading1 with String = js.native
-  /* "Heading2" */ val heading2: typings.officeDashJs.Word.Style.heading2 with String = js.native
-  /* "Heading3" */ val heading3: typings.officeDashJs.Word.Style.heading3 with String = js.native
-  /* "Heading4" */ val heading4: typings.officeDashJs.Word.Style.heading4 with String = js.native
-  /* "Heading5" */ val heading5: typings.officeDashJs.Word.Style.heading5 with String = js.native
-  /* "Heading6" */ val heading6: typings.officeDashJs.Word.Style.heading6 with String = js.native
-  /* "Heading7" */ val heading7: typings.officeDashJs.Word.Style.heading7 with String = js.native
-  /* "Heading8" */ val heading8: typings.officeDashJs.Word.Style.heading8 with String = js.native
-  /* "Heading9" */ val heading9: typings.officeDashJs.Word.Style.heading9 with String = js.native
-  /* "Hyperlink" */ val hyperlink: typings.officeDashJs.Word.Style.hyperlink with String = js.native
-  /* "IntenseEmphasis" */ val intenseEmphasis: typings.officeDashJs.Word.Style.intenseEmphasis with String = js.native
-  /* "IntenseQuote" */ val intenseQuote: typings.officeDashJs.Word.Style.intenseQuote with String = js.native
-  /* "IntenseReference" */ val intenseReference: typings.officeDashJs.Word.Style.intenseReference with String = js.native
-  /* "ListParagraph" */ val listParagraph: typings.officeDashJs.Word.Style.listParagraph with String = js.native
-  /* "ListTable1Light" */ val listTable1Light: typings.officeDashJs.Word.Style.listTable1Light with String = js.native
-  /* "ListTable1Light_Accent1" */ val listTable1Light_Accent1: typings.officeDashJs.Word.Style.listTable1Light_Accent1 with String = js.native
-  /* "ListTable1Light_Accent2" */ val listTable1Light_Accent2: typings.officeDashJs.Word.Style.listTable1Light_Accent2 with String = js.native
-  /* "ListTable1Light_Accent3" */ val listTable1Light_Accent3: typings.officeDashJs.Word.Style.listTable1Light_Accent3 with String = js.native
-  /* "ListTable1Light_Accent4" */ val listTable1Light_Accent4: typings.officeDashJs.Word.Style.listTable1Light_Accent4 with String = js.native
-  /* "ListTable1Light_Accent5" */ val listTable1Light_Accent5: typings.officeDashJs.Word.Style.listTable1Light_Accent5 with String = js.native
-  /* "ListTable1Light_Accent6" */ val listTable1Light_Accent6: typings.officeDashJs.Word.Style.listTable1Light_Accent6 with String = js.native
-  /* "ListTable2" */ val listTable2: typings.officeDashJs.Word.Style.listTable2 with String = js.native
-  /* "ListTable2_Accent1" */ val listTable2_Accent1: typings.officeDashJs.Word.Style.listTable2_Accent1 with String = js.native
-  /* "ListTable2_Accent2" */ val listTable2_Accent2: typings.officeDashJs.Word.Style.listTable2_Accent2 with String = js.native
-  /* "ListTable2_Accent3" */ val listTable2_Accent3: typings.officeDashJs.Word.Style.listTable2_Accent3 with String = js.native
-  /* "ListTable2_Accent4" */ val listTable2_Accent4: typings.officeDashJs.Word.Style.listTable2_Accent4 with String = js.native
-  /* "ListTable2_Accent5" */ val listTable2_Accent5: typings.officeDashJs.Word.Style.listTable2_Accent5 with String = js.native
-  /* "ListTable2_Accent6" */ val listTable2_Accent6: typings.officeDashJs.Word.Style.listTable2_Accent6 with String = js.native
-  /* "ListTable3" */ val listTable3: typings.officeDashJs.Word.Style.listTable3 with String = js.native
-  /* "ListTable3_Accent1" */ val listTable3_Accent1: typings.officeDashJs.Word.Style.listTable3_Accent1 with String = js.native
-  /* "ListTable3_Accent2" */ val listTable3_Accent2: typings.officeDashJs.Word.Style.listTable3_Accent2 with String = js.native
-  /* "ListTable3_Accent3" */ val listTable3_Accent3: typings.officeDashJs.Word.Style.listTable3_Accent3 with String = js.native
-  /* "ListTable3_Accent4" */ val listTable3_Accent4: typings.officeDashJs.Word.Style.listTable3_Accent4 with String = js.native
-  /* "ListTable3_Accent5" */ val listTable3_Accent5: typings.officeDashJs.Word.Style.listTable3_Accent5 with String = js.native
-  /* "ListTable3_Accent6" */ val listTable3_Accent6: typings.officeDashJs.Word.Style.listTable3_Accent6 with String = js.native
-  /* "ListTable4" */ val listTable4: typings.officeDashJs.Word.Style.listTable4 with String = js.native
-  /* "ListTable4_Accent1" */ val listTable4_Accent1: typings.officeDashJs.Word.Style.listTable4_Accent1 with String = js.native
-  /* "ListTable4_Accent2" */ val listTable4_Accent2: typings.officeDashJs.Word.Style.listTable4_Accent2 with String = js.native
-  /* "ListTable4_Accent3" */ val listTable4_Accent3: typings.officeDashJs.Word.Style.listTable4_Accent3 with String = js.native
-  /* "ListTable4_Accent4" */ val listTable4_Accent4: typings.officeDashJs.Word.Style.listTable4_Accent4 with String = js.native
-  /* "ListTable4_Accent5" */ val listTable4_Accent5: typings.officeDashJs.Word.Style.listTable4_Accent5 with String = js.native
-  /* "ListTable4_Accent6" */ val listTable4_Accent6: typings.officeDashJs.Word.Style.listTable4_Accent6 with String = js.native
-  /* "ListTable5Dark" */ val listTable5Dark: typings.officeDashJs.Word.Style.listTable5Dark with String = js.native
-  /* "ListTable5Dark_Accent1" */ val listTable5Dark_Accent1: typings.officeDashJs.Word.Style.listTable5Dark_Accent1 with String = js.native
-  /* "ListTable5Dark_Accent2" */ val listTable5Dark_Accent2: typings.officeDashJs.Word.Style.listTable5Dark_Accent2 with String = js.native
-  /* "ListTable5Dark_Accent3" */ val listTable5Dark_Accent3: typings.officeDashJs.Word.Style.listTable5Dark_Accent3 with String = js.native
-  /* "ListTable5Dark_Accent4" */ val listTable5Dark_Accent4: typings.officeDashJs.Word.Style.listTable5Dark_Accent4 with String = js.native
-  /* "ListTable5Dark_Accent5" */ val listTable5Dark_Accent5: typings.officeDashJs.Word.Style.listTable5Dark_Accent5 with String = js.native
-  /* "ListTable5Dark_Accent6" */ val listTable5Dark_Accent6: typings.officeDashJs.Word.Style.listTable5Dark_Accent6 with String = js.native
-  /* "ListTable6Colorful" */ val listTable6Colorful: typings.officeDashJs.Word.Style.listTable6Colorful with String = js.native
-  /* "ListTable6Colorful_Accent1" */ val listTable6Colorful_Accent1: typings.officeDashJs.Word.Style.listTable6Colorful_Accent1 with String = js.native
-  /* "ListTable6Colorful_Accent2" */ val listTable6Colorful_Accent2: typings.officeDashJs.Word.Style.listTable6Colorful_Accent2 with String = js.native
-  /* "ListTable6Colorful_Accent3" */ val listTable6Colorful_Accent3: typings.officeDashJs.Word.Style.listTable6Colorful_Accent3 with String = js.native
-  /* "ListTable6Colorful_Accent4" */ val listTable6Colorful_Accent4: typings.officeDashJs.Word.Style.listTable6Colorful_Accent4 with String = js.native
-  /* "ListTable6Colorful_Accent5" */ val listTable6Colorful_Accent5: typings.officeDashJs.Word.Style.listTable6Colorful_Accent5 with String = js.native
-  /* "ListTable6Colorful_Accent6" */ val listTable6Colorful_Accent6: typings.officeDashJs.Word.Style.listTable6Colorful_Accent6 with String = js.native
-  /* "ListTable7Colorful" */ val listTable7Colorful: typings.officeDashJs.Word.Style.listTable7Colorful with String = js.native
-  /* "ListTable7Colorful_Accent1" */ val listTable7Colorful_Accent1: typings.officeDashJs.Word.Style.listTable7Colorful_Accent1 with String = js.native
-  /* "ListTable7Colorful_Accent2" */ val listTable7Colorful_Accent2: typings.officeDashJs.Word.Style.listTable7Colorful_Accent2 with String = js.native
-  /* "ListTable7Colorful_Accent3" */ val listTable7Colorful_Accent3: typings.officeDashJs.Word.Style.listTable7Colorful_Accent3 with String = js.native
-  /* "ListTable7Colorful_Accent4" */ val listTable7Colorful_Accent4: typings.officeDashJs.Word.Style.listTable7Colorful_Accent4 with String = js.native
-  /* "ListTable7Colorful_Accent5" */ val listTable7Colorful_Accent5: typings.officeDashJs.Word.Style.listTable7Colorful_Accent5 with String = js.native
-  /* "ListTable7Colorful_Accent6" */ val listTable7Colorful_Accent6: typings.officeDashJs.Word.Style.listTable7Colorful_Accent6 with String = js.native
-  /* "NoSpacing" */ val noSpacing: typings.officeDashJs.Word.Style.noSpacing with String = js.native
-  /* "Normal" */ val normal: typings.officeDashJs.Word.Style.normal with String = js.native
-  /* "Other" */ val other: typings.officeDashJs.Word.Style.other with String = js.native
-  /* "PlainTable1" */ val plainTable1: typings.officeDashJs.Word.Style.plainTable1 with String = js.native
-  /* "PlainTable2" */ val plainTable2: typings.officeDashJs.Word.Style.plainTable2 with String = js.native
-  /* "PlainTable3" */ val plainTable3: typings.officeDashJs.Word.Style.plainTable3 with String = js.native
-  /* "PlainTable4" */ val plainTable4: typings.officeDashJs.Word.Style.plainTable4 with String = js.native
-  /* "PlainTable5" */ val plainTable5: typings.officeDashJs.Word.Style.plainTable5 with String = js.native
-  /* "Quote" */ val quote: typings.officeDashJs.Word.Style.quote with String = js.native
-  /* "Strong" */ val strong: typings.officeDashJs.Word.Style.strong with String = js.native
-  /* "Subtitle" */ val subtitle: typings.officeDashJs.Word.Style.subtitle with String = js.native
-  /* "SubtleEmphasis" */ val subtleEmphasis: typings.officeDashJs.Word.Style.subtleEmphasis with String = js.native
-  /* "SubtleReference" */ val subtleReference: typings.officeDashJs.Word.Style.subtleReference with String = js.native
-  /* "TableGrid" */ val tableGrid: typings.officeDashJs.Word.Style.tableGrid with String = js.native
-  /* "TableGridLight" */ val tableGridLight: typings.officeDashJs.Word.Style.tableGridLight with String = js.native
-  /* "Title" */ val title: typings.officeDashJs.Word.Style.title with String = js.native
-  /* "Toc1" */ val toc1: typings.officeDashJs.Word.Style.toc1 with String = js.native
-  /* "Toc2" */ val toc2: typings.officeDashJs.Word.Style.toc2 with String = js.native
-  /* "Toc3" */ val toc3: typings.officeDashJs.Word.Style.toc3 with String = js.native
-  /* "Toc4" */ val toc4: typings.officeDashJs.Word.Style.toc4 with String = js.native
-  /* "Toc5" */ val toc5: typings.officeDashJs.Word.Style.toc5 with String = js.native
-  /* "Toc6" */ val toc6: typings.officeDashJs.Word.Style.toc6 with String = js.native
-  /* "Toc7" */ val toc7: typings.officeDashJs.Word.Style.toc7 with String = js.native
-  /* "Toc8" */ val toc8: typings.officeDashJs.Word.Style.toc8 with String = js.native
-  /* "Toc9" */ val toc9: typings.officeDashJs.Word.Style.toc9 with String = js.native
-  /* "TocHeading" */ val tocHeading: typings.officeDashJs.Word.Style.tocHeading with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Style with String] = js.native
+  /* "Bibliography" */ @js.native
+  object bibliography extends TopLevel[bibliography with String]
+  
+  /* "BookTitle" */ @js.native
+  object bookTitle extends TopLevel[bookTitle with String]
+  
+  /* "Caption" */ @js.native
+  object caption extends TopLevel[caption with String]
+  
+  /* "Emphasis" */ @js.native
+  object emphasis extends TopLevel[emphasis with String]
+  
+  /* "EndnoteReference" */ @js.native
+  object endnoteReference extends TopLevel[endnoteReference with String]
+  
+  /* "EndnoteText" */ @js.native
+  object endnoteText extends TopLevel[endnoteText with String]
+  
+  /* "Footer" */ @js.native
+  object footer extends TopLevel[footer with String]
+  
+  /* "FootnoteReference" */ @js.native
+  object footnoteReference extends TopLevel[footnoteReference with String]
+  
+  /* "FootnoteText" */ @js.native
+  object footnoteText extends TopLevel[footnoteText with String]
+  
+  /* "GridTable1Light" */ @js.native
+  object gridTable1Light extends TopLevel[gridTable1Light with String]
+  
+  /* "GridTable1Light_Accent1" */ @js.native
+  object gridTable1Light_Accent1 extends TopLevel[gridTable1Light_Accent1 with String]
+  
+  /* "GridTable1Light_Accent2" */ @js.native
+  object gridTable1Light_Accent2 extends TopLevel[gridTable1Light_Accent2 with String]
+  
+  /* "GridTable1Light_Accent3" */ @js.native
+  object gridTable1Light_Accent3 extends TopLevel[gridTable1Light_Accent3 with String]
+  
+  /* "GridTable1Light_Accent4" */ @js.native
+  object gridTable1Light_Accent4 extends TopLevel[gridTable1Light_Accent4 with String]
+  
+  /* "GridTable1Light_Accent5" */ @js.native
+  object gridTable1Light_Accent5 extends TopLevel[gridTable1Light_Accent5 with String]
+  
+  /* "GridTable1Light_Accent6" */ @js.native
+  object gridTable1Light_Accent6 extends TopLevel[gridTable1Light_Accent6 with String]
+  
+  /* "GridTable2" */ @js.native
+  object gridTable2 extends TopLevel[gridTable2 with String]
+  
+  /* "GridTable2_Accent1" */ @js.native
+  object gridTable2_Accent1 extends TopLevel[gridTable2_Accent1 with String]
+  
+  /* "GridTable2_Accent2" */ @js.native
+  object gridTable2_Accent2 extends TopLevel[gridTable2_Accent2 with String]
+  
+  /* "GridTable2_Accent3" */ @js.native
+  object gridTable2_Accent3 extends TopLevel[gridTable2_Accent3 with String]
+  
+  /* "GridTable2_Accent4" */ @js.native
+  object gridTable2_Accent4 extends TopLevel[gridTable2_Accent4 with String]
+  
+  /* "GridTable2_Accent5" */ @js.native
+  object gridTable2_Accent5 extends TopLevel[gridTable2_Accent5 with String]
+  
+  /* "GridTable2_Accent6" */ @js.native
+  object gridTable2_Accent6 extends TopLevel[gridTable2_Accent6 with String]
+  
+  /* "GridTable3" */ @js.native
+  object gridTable3 extends TopLevel[gridTable3 with String]
+  
+  /* "GridTable3_Accent1" */ @js.native
+  object gridTable3_Accent1 extends TopLevel[gridTable3_Accent1 with String]
+  
+  /* "GridTable3_Accent2" */ @js.native
+  object gridTable3_Accent2 extends TopLevel[gridTable3_Accent2 with String]
+  
+  /* "GridTable3_Accent3" */ @js.native
+  object gridTable3_Accent3 extends TopLevel[gridTable3_Accent3 with String]
+  
+  /* "GridTable3_Accent4" */ @js.native
+  object gridTable3_Accent4 extends TopLevel[gridTable3_Accent4 with String]
+  
+  /* "GridTable3_Accent5" */ @js.native
+  object gridTable3_Accent5 extends TopLevel[gridTable3_Accent5 with String]
+  
+  /* "GridTable3_Accent6" */ @js.native
+  object gridTable3_Accent6 extends TopLevel[gridTable3_Accent6 with String]
+  
+  /* "GridTable4" */ @js.native
+  object gridTable4 extends TopLevel[gridTable4 with String]
+  
+  /* "GridTable4_Accent1" */ @js.native
+  object gridTable4_Accent1 extends TopLevel[gridTable4_Accent1 with String]
+  
+  /* "GridTable4_Accent2" */ @js.native
+  object gridTable4_Accent2 extends TopLevel[gridTable4_Accent2 with String]
+  
+  /* "GridTable4_Accent3" */ @js.native
+  object gridTable4_Accent3 extends TopLevel[gridTable4_Accent3 with String]
+  
+  /* "GridTable4_Accent4" */ @js.native
+  object gridTable4_Accent4 extends TopLevel[gridTable4_Accent4 with String]
+  
+  /* "GridTable4_Accent5" */ @js.native
+  object gridTable4_Accent5 extends TopLevel[gridTable4_Accent5 with String]
+  
+  /* "GridTable4_Accent6" */ @js.native
+  object gridTable4_Accent6 extends TopLevel[gridTable4_Accent6 with String]
+  
+  /* "GridTable5Dark" */ @js.native
+  object gridTable5Dark extends TopLevel[gridTable5Dark with String]
+  
+  /* "GridTable5Dark_Accent1" */ @js.native
+  object gridTable5Dark_Accent1 extends TopLevel[gridTable5Dark_Accent1 with String]
+  
+  /* "GridTable5Dark_Accent2" */ @js.native
+  object gridTable5Dark_Accent2 extends TopLevel[gridTable5Dark_Accent2 with String]
+  
+  /* "GridTable5Dark_Accent3" */ @js.native
+  object gridTable5Dark_Accent3 extends TopLevel[gridTable5Dark_Accent3 with String]
+  
+  /* "GridTable5Dark_Accent4" */ @js.native
+  object gridTable5Dark_Accent4 extends TopLevel[gridTable5Dark_Accent4 with String]
+  
+  /* "GridTable5Dark_Accent5" */ @js.native
+  object gridTable5Dark_Accent5 extends TopLevel[gridTable5Dark_Accent5 with String]
+  
+  /* "GridTable5Dark_Accent6" */ @js.native
+  object gridTable5Dark_Accent6 extends TopLevel[gridTable5Dark_Accent6 with String]
+  
+  /* "GridTable6Colorful" */ @js.native
+  object gridTable6Colorful extends TopLevel[gridTable6Colorful with String]
+  
+  /* "GridTable6Colorful_Accent1" */ @js.native
+  object gridTable6Colorful_Accent1 extends TopLevel[gridTable6Colorful_Accent1 with String]
+  
+  /* "GridTable6Colorful_Accent2" */ @js.native
+  object gridTable6Colorful_Accent2 extends TopLevel[gridTable6Colorful_Accent2 with String]
+  
+  /* "GridTable6Colorful_Accent3" */ @js.native
+  object gridTable6Colorful_Accent3 extends TopLevel[gridTable6Colorful_Accent3 with String]
+  
+  /* "GridTable6Colorful_Accent4" */ @js.native
+  object gridTable6Colorful_Accent4 extends TopLevel[gridTable6Colorful_Accent4 with String]
+  
+  /* "GridTable6Colorful_Accent5" */ @js.native
+  object gridTable6Colorful_Accent5 extends TopLevel[gridTable6Colorful_Accent5 with String]
+  
+  /* "GridTable6Colorful_Accent6" */ @js.native
+  object gridTable6Colorful_Accent6 extends TopLevel[gridTable6Colorful_Accent6 with String]
+  
+  /* "GridTable7Colorful" */ @js.native
+  object gridTable7Colorful extends TopLevel[gridTable7Colorful with String]
+  
+  /* "GridTable7Colorful_Accent1" */ @js.native
+  object gridTable7Colorful_Accent1 extends TopLevel[gridTable7Colorful_Accent1 with String]
+  
+  /* "GridTable7Colorful_Accent2" */ @js.native
+  object gridTable7Colorful_Accent2 extends TopLevel[gridTable7Colorful_Accent2 with String]
+  
+  /* "GridTable7Colorful_Accent3" */ @js.native
+  object gridTable7Colorful_Accent3 extends TopLevel[gridTable7Colorful_Accent3 with String]
+  
+  /* "GridTable7Colorful_Accent4" */ @js.native
+  object gridTable7Colorful_Accent4 extends TopLevel[gridTable7Colorful_Accent4 with String]
+  
+  /* "GridTable7Colorful_Accent5" */ @js.native
+  object gridTable7Colorful_Accent5 extends TopLevel[gridTable7Colorful_Accent5 with String]
+  
+  /* "GridTable7Colorful_Accent6" */ @js.native
+  object gridTable7Colorful_Accent6 extends TopLevel[gridTable7Colorful_Accent6 with String]
+  
+  /* "Header" */ @js.native
+  object header extends TopLevel[header with String]
+  
+  /* "Heading1" */ @js.native
+  object heading1 extends TopLevel[heading1 with String]
+  
+  /* "Heading2" */ @js.native
+  object heading2 extends TopLevel[heading2 with String]
+  
+  /* "Heading3" */ @js.native
+  object heading3 extends TopLevel[heading3 with String]
+  
+  /* "Heading4" */ @js.native
+  object heading4 extends TopLevel[heading4 with String]
+  
+  /* "Heading5" */ @js.native
+  object heading5 extends TopLevel[heading5 with String]
+  
+  /* "Heading6" */ @js.native
+  object heading6 extends TopLevel[heading6 with String]
+  
+  /* "Heading7" */ @js.native
+  object heading7 extends TopLevel[heading7 with String]
+  
+  /* "Heading8" */ @js.native
+  object heading8 extends TopLevel[heading8 with String]
+  
+  /* "Heading9" */ @js.native
+  object heading9 extends TopLevel[heading9 with String]
+  
+  /* "Hyperlink" */ @js.native
+  object hyperlink extends TopLevel[hyperlink with String]
+  
+  /* "IntenseEmphasis" */ @js.native
+  object intenseEmphasis extends TopLevel[intenseEmphasis with String]
+  
+  /* "IntenseQuote" */ @js.native
+  object intenseQuote extends TopLevel[intenseQuote with String]
+  
+  /* "IntenseReference" */ @js.native
+  object intenseReference extends TopLevel[intenseReference with String]
+  
+  /* "ListParagraph" */ @js.native
+  object listParagraph extends TopLevel[listParagraph with String]
+  
+  /* "ListTable1Light" */ @js.native
+  object listTable1Light extends TopLevel[listTable1Light with String]
+  
+  /* "ListTable1Light_Accent1" */ @js.native
+  object listTable1Light_Accent1 extends TopLevel[listTable1Light_Accent1 with String]
+  
+  /* "ListTable1Light_Accent2" */ @js.native
+  object listTable1Light_Accent2 extends TopLevel[listTable1Light_Accent2 with String]
+  
+  /* "ListTable1Light_Accent3" */ @js.native
+  object listTable1Light_Accent3 extends TopLevel[listTable1Light_Accent3 with String]
+  
+  /* "ListTable1Light_Accent4" */ @js.native
+  object listTable1Light_Accent4 extends TopLevel[listTable1Light_Accent4 with String]
+  
+  /* "ListTable1Light_Accent5" */ @js.native
+  object listTable1Light_Accent5 extends TopLevel[listTable1Light_Accent5 with String]
+  
+  /* "ListTable1Light_Accent6" */ @js.native
+  object listTable1Light_Accent6 extends TopLevel[listTable1Light_Accent6 with String]
+  
+  /* "ListTable2" */ @js.native
+  object listTable2 extends TopLevel[listTable2 with String]
+  
+  /* "ListTable2_Accent1" */ @js.native
+  object listTable2_Accent1 extends TopLevel[listTable2_Accent1 with String]
+  
+  /* "ListTable2_Accent2" */ @js.native
+  object listTable2_Accent2 extends TopLevel[listTable2_Accent2 with String]
+  
+  /* "ListTable2_Accent3" */ @js.native
+  object listTable2_Accent3 extends TopLevel[listTable2_Accent3 with String]
+  
+  /* "ListTable2_Accent4" */ @js.native
+  object listTable2_Accent4 extends TopLevel[listTable2_Accent4 with String]
+  
+  /* "ListTable2_Accent5" */ @js.native
+  object listTable2_Accent5 extends TopLevel[listTable2_Accent5 with String]
+  
+  /* "ListTable2_Accent6" */ @js.native
+  object listTable2_Accent6 extends TopLevel[listTable2_Accent6 with String]
+  
+  /* "ListTable3" */ @js.native
+  object listTable3 extends TopLevel[listTable3 with String]
+  
+  /* "ListTable3_Accent1" */ @js.native
+  object listTable3_Accent1 extends TopLevel[listTable3_Accent1 with String]
+  
+  /* "ListTable3_Accent2" */ @js.native
+  object listTable3_Accent2 extends TopLevel[listTable3_Accent2 with String]
+  
+  /* "ListTable3_Accent3" */ @js.native
+  object listTable3_Accent3 extends TopLevel[listTable3_Accent3 with String]
+  
+  /* "ListTable3_Accent4" */ @js.native
+  object listTable3_Accent4 extends TopLevel[listTable3_Accent4 with String]
+  
+  /* "ListTable3_Accent5" */ @js.native
+  object listTable3_Accent5 extends TopLevel[listTable3_Accent5 with String]
+  
+  /* "ListTable3_Accent6" */ @js.native
+  object listTable3_Accent6 extends TopLevel[listTable3_Accent6 with String]
+  
+  /* "ListTable4" */ @js.native
+  object listTable4 extends TopLevel[listTable4 with String]
+  
+  /* "ListTable4_Accent1" */ @js.native
+  object listTable4_Accent1 extends TopLevel[listTable4_Accent1 with String]
+  
+  /* "ListTable4_Accent2" */ @js.native
+  object listTable4_Accent2 extends TopLevel[listTable4_Accent2 with String]
+  
+  /* "ListTable4_Accent3" */ @js.native
+  object listTable4_Accent3 extends TopLevel[listTable4_Accent3 with String]
+  
+  /* "ListTable4_Accent4" */ @js.native
+  object listTable4_Accent4 extends TopLevel[listTable4_Accent4 with String]
+  
+  /* "ListTable4_Accent5" */ @js.native
+  object listTable4_Accent5 extends TopLevel[listTable4_Accent5 with String]
+  
+  /* "ListTable4_Accent6" */ @js.native
+  object listTable4_Accent6 extends TopLevel[listTable4_Accent6 with String]
+  
+  /* "ListTable5Dark" */ @js.native
+  object listTable5Dark extends TopLevel[listTable5Dark with String]
+  
+  /* "ListTable5Dark_Accent1" */ @js.native
+  object listTable5Dark_Accent1 extends TopLevel[listTable5Dark_Accent1 with String]
+  
+  /* "ListTable5Dark_Accent2" */ @js.native
+  object listTable5Dark_Accent2 extends TopLevel[listTable5Dark_Accent2 with String]
+  
+  /* "ListTable5Dark_Accent3" */ @js.native
+  object listTable5Dark_Accent3 extends TopLevel[listTable5Dark_Accent3 with String]
+  
+  /* "ListTable5Dark_Accent4" */ @js.native
+  object listTable5Dark_Accent4 extends TopLevel[listTable5Dark_Accent4 with String]
+  
+  /* "ListTable5Dark_Accent5" */ @js.native
+  object listTable5Dark_Accent5 extends TopLevel[listTable5Dark_Accent5 with String]
+  
+  /* "ListTable5Dark_Accent6" */ @js.native
+  object listTable5Dark_Accent6 extends TopLevel[listTable5Dark_Accent6 with String]
+  
+  /* "ListTable6Colorful" */ @js.native
+  object listTable6Colorful extends TopLevel[listTable6Colorful with String]
+  
+  /* "ListTable6Colorful_Accent1" */ @js.native
+  object listTable6Colorful_Accent1 extends TopLevel[listTable6Colorful_Accent1 with String]
+  
+  /* "ListTable6Colorful_Accent2" */ @js.native
+  object listTable6Colorful_Accent2 extends TopLevel[listTable6Colorful_Accent2 with String]
+  
+  /* "ListTable6Colorful_Accent3" */ @js.native
+  object listTable6Colorful_Accent3 extends TopLevel[listTable6Colorful_Accent3 with String]
+  
+  /* "ListTable6Colorful_Accent4" */ @js.native
+  object listTable6Colorful_Accent4 extends TopLevel[listTable6Colorful_Accent4 with String]
+  
+  /* "ListTable6Colorful_Accent5" */ @js.native
+  object listTable6Colorful_Accent5 extends TopLevel[listTable6Colorful_Accent5 with String]
+  
+  /* "ListTable6Colorful_Accent6" */ @js.native
+  object listTable6Colorful_Accent6 extends TopLevel[listTable6Colorful_Accent6 with String]
+  
+  /* "ListTable7Colorful" */ @js.native
+  object listTable7Colorful extends TopLevel[listTable7Colorful with String]
+  
+  /* "ListTable7Colorful_Accent1" */ @js.native
+  object listTable7Colorful_Accent1 extends TopLevel[listTable7Colorful_Accent1 with String]
+  
+  /* "ListTable7Colorful_Accent2" */ @js.native
+  object listTable7Colorful_Accent2 extends TopLevel[listTable7Colorful_Accent2 with String]
+  
+  /* "ListTable7Colorful_Accent3" */ @js.native
+  object listTable7Colorful_Accent3 extends TopLevel[listTable7Colorful_Accent3 with String]
+  
+  /* "ListTable7Colorful_Accent4" */ @js.native
+  object listTable7Colorful_Accent4 extends TopLevel[listTable7Colorful_Accent4 with String]
+  
+  /* "ListTable7Colorful_Accent5" */ @js.native
+  object listTable7Colorful_Accent5 extends TopLevel[listTable7Colorful_Accent5 with String]
+  
+  /* "ListTable7Colorful_Accent6" */ @js.native
+  object listTable7Colorful_Accent6 extends TopLevel[listTable7Colorful_Accent6 with String]
+  
+  /* "NoSpacing" */ @js.native
+  object noSpacing extends TopLevel[noSpacing with String]
+  
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "Other" */ @js.native
+  object other extends TopLevel[other with String]
+  
+  /* "PlainTable1" */ @js.native
+  object plainTable1 extends TopLevel[plainTable1 with String]
+  
+  /* "PlainTable2" */ @js.native
+  object plainTable2 extends TopLevel[plainTable2 with String]
+  
+  /* "PlainTable3" */ @js.native
+  object plainTable3 extends TopLevel[plainTable3 with String]
+  
+  /* "PlainTable4" */ @js.native
+  object plainTable4 extends TopLevel[plainTable4 with String]
+  
+  /* "PlainTable5" */ @js.native
+  object plainTable5 extends TopLevel[plainTable5 with String]
+  
+  /* "Quote" */ @js.native
+  object quote extends TopLevel[quote with String]
+  
+  /* "Strong" */ @js.native
+  object strong extends TopLevel[strong with String]
+  
+  /* "Subtitle" */ @js.native
+  object subtitle extends TopLevel[subtitle with String]
+  
+  /* "SubtleEmphasis" */ @js.native
+  object subtleEmphasis extends TopLevel[subtleEmphasis with String]
+  
+  /* "SubtleReference" */ @js.native
+  object subtleReference extends TopLevel[subtleReference with String]
+  
+  /* "TableGrid" */ @js.native
+  object tableGrid extends TopLevel[tableGrid with String]
+  
+  /* "TableGridLight" */ @js.native
+  object tableGridLight extends TopLevel[tableGridLight with String]
+  
+  /* "Title" */ @js.native
+  object title extends TopLevel[title with String]
+  
+  /* "Toc1" */ @js.native
+  object toc1 extends TopLevel[toc1 with String]
+  
+  /* "Toc2" */ @js.native
+  object toc2 extends TopLevel[toc2 with String]
+  
+  /* "Toc3" */ @js.native
+  object toc3 extends TopLevel[toc3 with String]
+  
+  /* "Toc4" */ @js.native
+  object toc4 extends TopLevel[toc4 with String]
+  
+  /* "Toc5" */ @js.native
+  object toc5 extends TopLevel[toc5 with String]
+  
+  /* "Toc6" */ @js.native
+  object toc6 extends TopLevel[toc6 with String]
+  
+  /* "Toc7" */ @js.native
+  object toc7 extends TopLevel[toc7 with String]
+  
+  /* "Toc8" */ @js.native
+  object toc8 extends TopLevel[toc8 with String]
+  
+  /* "Toc9" */ @js.native
+  object toc9 extends TopLevel[toc9 with String]
+  
+  /* "TocHeading" */ @js.native
+  object tocHeading extends TopLevel[tocHeading with String]
+  
 }
 

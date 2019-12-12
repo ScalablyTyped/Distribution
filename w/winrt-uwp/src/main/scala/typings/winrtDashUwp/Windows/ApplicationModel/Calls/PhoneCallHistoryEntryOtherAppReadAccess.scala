@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess.full
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PhoneCallHistoryEntryOtherAppReadAccess extends js.Object {
   @js.native
   sealed trait systemOnly extends PhoneCallHistoryEntryOtherAppReadAccess
   
-  /* 0 */ val full: typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess.full with Double = js.native
-  /* 1 */ val systemOnly: typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess.systemOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhoneCallHistoryEntryOtherAppReadAccess with Double] = js.native
+  /* 0 */ @js.native
+  object full extends TopLevel[full with Double]
+  
+  /* 1 */ @js.native
+  object systemOnly extends TopLevel[systemOnly with Double]
+  
 }
 

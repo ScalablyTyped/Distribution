@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-touch"
-version := "1.8-dt-20190717Z-450a6d"
+version := "1.8-dt-20190717Z-16bcdb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

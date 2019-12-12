@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCapturePauseBehavior.releaseHardwareResources
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCapturePauseBehavior.retainHardwareResources
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object MediaCapturePauseBehavior extends js.Object {
   @js.native
   sealed trait retainHardwareResources extends MediaCapturePauseBehavior
   
-  /* 1 */ val releaseHardwareResources: typings.winrtDashUwp.Windows.Media.Devices.MediaCapturePauseBehavior.releaseHardwareResources with Double = js.native
-  /* 0 */ val retainHardwareResources: typings.winrtDashUwp.Windows.Media.Devices.MediaCapturePauseBehavior.retainHardwareResources with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaCapturePauseBehavior with Double] = js.native
+  /* 1 */ @js.native
+  object releaseHardwareResources extends TopLevel[releaseHardwareResources with Double]
+  
+  /* 0 */ @js.native
+  object retainHardwareResources extends TopLevel[retainHardwareResources with Double]
+  
 }
 

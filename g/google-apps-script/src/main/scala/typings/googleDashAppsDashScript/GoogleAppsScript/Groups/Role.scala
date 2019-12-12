@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Groups
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.INVITED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MANAGER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MEMBER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.OWNER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,12 +38,22 @@ object Role extends js.Object {
   @js.native
   sealed trait PENDING extends Role
   
-  /* 3 */ val INVITED: typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.INVITED with Double = js.native
-  /* 1 */ val MANAGER: typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MANAGER with Double = js.native
-  /* 2 */ val MEMBER: typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.MEMBER with Double = js.native
-  /* 0 */ val OWNER: typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.OWNER with Double = js.native
-  /* 4 */ val PENDING: typings.googleDashAppsDashScript.GoogleAppsScript.Groups.Role.PENDING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Role with Double] = js.native
+  /* 3 */ @js.native
+  object INVITED extends TopLevel[INVITED with Double]
+  
+  /* 1 */ @js.native
+  object MANAGER extends TopLevel[MANAGER with Double]
+  
+  /* 2 */ @js.native
+  object MEMBER extends TopLevel[MEMBER with Double]
+  
+  /* 0 */ @js.native
+  object OWNER extends TopLevel[OWNER with Double]
+  
+  /* 4 */ @js.native
+  object PENDING extends TopLevel[PENDING with Double]
+  
 }
 

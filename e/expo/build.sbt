@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "35.0.1-e2bf23"
+version := "35.0.1-abb990"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "expo-asset" % "7.0.0-8658bf",
-  "org.scalablytyped" %%% "expo-constants" % "7.0.1-451a47",
+  "org.scalablytyped" %%% "expo-constants" % "7.0.1-5c8016",
   "org.scalablytyped" %%% "expo-font" % "7.0.0-092e56",
   "org.scalablytyped" %%% "expo-linear-gradient" % "7.0.1-2158cd",
   "org.scalablytyped" %%% "expo-sqlite" % "7.0.0-1f9cfe",

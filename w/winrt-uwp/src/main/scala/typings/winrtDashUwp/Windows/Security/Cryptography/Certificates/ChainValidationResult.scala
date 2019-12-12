@@ -1,5 +1,20 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.basicConstraintsError
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.expired
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.incompleteChain
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidCertificateAuthorityPolicy
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidName
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidSignature
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.otherErrors
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationFailure
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationInformationMissing
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revoked
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.success
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.unknownCriticalExtension
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.untrusted
+import typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.wrongUsage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,21 +82,49 @@ object ChainValidationResult extends js.Object {
   @js.native
   sealed trait wrongUsage extends ChainValidationResult
   
-  /* 9 */ val basicConstraintsError: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.basicConstraintsError with Double = js.native
-  /* 3 */ val expired: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.expired with Double = js.native
-  /* 4 */ val incompleteChain: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.incompleteChain with Double = js.native
-  /* 8 */ val invalidCertificateAuthorityPolicy: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidCertificateAuthorityPolicy with Double = js.native
-  /* 7 */ val invalidName: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidName with Double = js.native
-  /* 5 */ val invalidSignature: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.invalidSignature with Double = js.native
-  /* 13 */ val otherErrors: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.otherErrors with Double = js.native
-  /* 12 */ val revocationFailure: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationFailure with Double = js.native
-  /* 11 */ val revocationInformationMissing: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revocationInformationMissing with Double = js.native
-  /* 2 */ val revoked: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.revoked with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.success with Double = js.native
-  /* 10 */ val unknownCriticalExtension: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.unknownCriticalExtension with Double = js.native
-  /* 1 */ val untrusted: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.untrusted with Double = js.native
-  /* 6 */ val wrongUsage: typings.winrtDashUwp.Windows.Security.Cryptography.Certificates.ChainValidationResult.wrongUsage with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChainValidationResult with Double] = js.native
+  /* 9 */ @js.native
+  object basicConstraintsError extends TopLevel[basicConstraintsError with Double]
+  
+  /* 3 */ @js.native
+  object expired extends TopLevel[expired with Double]
+  
+  /* 4 */ @js.native
+  object incompleteChain extends TopLevel[incompleteChain with Double]
+  
+  /* 8 */ @js.native
+  object invalidCertificateAuthorityPolicy extends TopLevel[invalidCertificateAuthorityPolicy with Double]
+  
+  /* 7 */ @js.native
+  object invalidName extends TopLevel[invalidName with Double]
+  
+  /* 5 */ @js.native
+  object invalidSignature extends TopLevel[invalidSignature with Double]
+  
+  /* 13 */ @js.native
+  object otherErrors extends TopLevel[otherErrors with Double]
+  
+  /* 12 */ @js.native
+  object revocationFailure extends TopLevel[revocationFailure with Double]
+  
+  /* 11 */ @js.native
+  object revocationInformationMissing extends TopLevel[revocationInformationMissing with Double]
+  
+  /* 2 */ @js.native
+  object revoked extends TopLevel[revoked with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 10 */ @js.native
+  object unknownCriticalExtension extends TopLevel[unknownCriticalExtension with Double]
+  
+  /* 1 */ @js.native
+  object untrusted extends TopLevel[untrusted with Double]
+  
+  /* 6 */ @js.native
+  object wrongUsage extends TopLevel[wrongUsage with Double]
+  
 }
 

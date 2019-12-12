@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hyperloris__tyson"
-version := "1.4.0-883206"
+version := "1.4.0-2e3cd1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

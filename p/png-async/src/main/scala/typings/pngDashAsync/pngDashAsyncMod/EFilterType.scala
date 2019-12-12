@@ -1,5 +1,12 @@
 package typings.pngDashAsync.pngDashAsyncMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Auto
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Average
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.None
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Paeth
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Sub
+import typings.pngDashAsync.pngDashAsyncMod.EFilterType.Up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object EFilterType extends js.Object {
   @js.native
   sealed trait Up extends EFilterType
   
-  /* -1 */ val Auto: typings.pngDashAsync.pngDashAsyncMod.EFilterType.Auto with Double = js.native
-  /* 3 */ val Average: typings.pngDashAsync.pngDashAsyncMod.EFilterType.Average with Double = js.native
-  /* 0 */ val None: typings.pngDashAsync.pngDashAsyncMod.EFilterType.None with Double = js.native
-  /* 4 */ val Paeth: typings.pngDashAsync.pngDashAsyncMod.EFilterType.Paeth with Double = js.native
-  /* 1 */ val Sub: typings.pngDashAsync.pngDashAsyncMod.EFilterType.Sub with Double = js.native
-  /* 2 */ val Up: typings.pngDashAsync.pngDashAsyncMod.EFilterType.Up with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EFilterType with Double] = js.native
+  /* -1 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 3 */ @js.native
+  object Average extends TopLevel[Average with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 4 */ @js.native
+  object Paeth extends TopLevel[Paeth with Double]
+  
+  /* 1 */ @js.native
+  object Sub extends TopLevel[Sub with Double]
+  
+  /* 2 */ @js.native
+  object Up extends TopLevel[Up with Double]
+  
 }
 

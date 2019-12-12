@@ -1,5 +1,10 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.TextTrackDisplayMode.all
+import typings.playerframework.PlayerFramework.TextTrackDisplayMode.custom
+import typings.playerframework.PlayerFramework.TextTrackDisplayMode.native
+import typings.playerframework.PlayerFramework.TextTrackDisplayMode.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object TextTrackDisplayMode extends js.Object {
   @js.native
   sealed trait none extends TextTrackDisplayMode
   
-  /* 3 */ val all: typings.playerframework.PlayerFramework.TextTrackDisplayMode.all with Double = js.native
-  /* 1 */ val custom: typings.playerframework.PlayerFramework.TextTrackDisplayMode.custom with Double = js.native
-  /* 2 */ val native: typings.playerframework.PlayerFramework.TextTrackDisplayMode.native with Double = js.native
-  /* 0 */ val none: typings.playerframework.PlayerFramework.TextTrackDisplayMode.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextTrackDisplayMode with Double] = js.native
+  /* 3 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 1 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 2 */ @js.native
+  object native extends TopLevel[native with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.Index.First
+import typings.officeDashJsDashPreview.Office.Index.Last
+import typings.officeDashJsDashPreview.Office.Index.Next
+import typings.officeDashJsDashPreview.Office.Index.Previous
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object Index extends js.Object {
   @js.native
   sealed trait Previous extends Index
   
-  /* 0 */ val First: typings.officeDashJsDashPreview.Office.Index.First with Double = js.native
-  /* 1 */ val Last: typings.officeDashJsDashPreview.Office.Index.Last with Double = js.native
-  /* 2 */ val Next: typings.officeDashJsDashPreview.Office.Index.Next with Double = js.native
-  /* 3 */ val Previous: typings.officeDashJsDashPreview.Office.Index.Previous with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Index with Double] = js.native
+  /* 0 */ @js.native
+  object First extends TopLevel[First with Double]
+  
+  /* 1 */ @js.native
+  object Last extends TopLevel[Last with Double]
+  
+  /* 2 */ @js.native
+  object Next extends TopLevel[Next with Double]
+  
+  /* 3 */ @js.native
+  object Previous extends TopLevel[Previous with Double]
+  
 }
 

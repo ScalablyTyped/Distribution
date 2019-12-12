@@ -8,11 +8,11 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListBranchesExcepti
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListPullRequestsExceptionsUnionMod.ListPullRequestsExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesListRepositoriesExceptionsUnionMod.ListRepositoriesExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidContinuationTokenException
   extends ServiceException[_InvalidContinuationTokenExceptionDetails]
      with DescribePullRequestEventsExceptionsUnion
@@ -23,21 +23,6 @@ trait InvalidContinuationTokenException
      with ListPullRequestsExceptionsUnion
      with ListRepositoriesExceptionsUnion {
   @JSName("name")
-  var name_InvalidContinuationTokenException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidContinuationTokenException
-}
-
-object InvalidContinuationTokenException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InvalidContinuationTokenExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidContinuationTokenException,
-    stack: String = null
-  ): InvalidContinuationTokenException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvalidContinuationTokenException]
-  }
+  var name_InvalidContinuationTokenException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidContinuationTokenException = js.native
 }
 

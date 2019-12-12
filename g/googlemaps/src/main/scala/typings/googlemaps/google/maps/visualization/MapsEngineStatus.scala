@@ -1,5 +1,9 @@
 package typings.googlemaps.google.maps.visualization
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.visualization.MapsEngineStatus.INVALID_LAYER
+import typings.googlemaps.google.maps.visualization.MapsEngineStatus.OK
+import typings.googlemaps.google.maps.visualization.MapsEngineStatus.UNKNOWN_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object MapsEngineStatus extends js.Object {
   @js.native
   sealed trait UNKNOWN_ERROR extends MapsEngineStatus
   
-  /* "INVALID_LAYER" */ val INVALID_LAYER: typings.googlemaps.google.maps.visualization.MapsEngineStatus.INVALID_LAYER with String = js.native
-  /* "OK" */ val OK: typings.googlemaps.google.maps.visualization.MapsEngineStatus.OK with String = js.native
-  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.visualization.MapsEngineStatus.UNKNOWN_ERROR with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[MapsEngineStatus with String] = js.native
+  /* "INVALID_LAYER" */ @js.native
+  object INVALID_LAYER extends TopLevel[INVALID_LAYER with String]
+  
+  /* "OK" */ @js.native
+  object OK extends TopLevel[OK with String]
+  
+  /* "UNKNOWN_ERROR" */ @js.native
+  object UNKNOWN_ERROR extends TopLevel[UNKNOWN_ERROR with String]
+  
 }
 

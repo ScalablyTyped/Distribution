@@ -1,5 +1,8 @@
 package typings.chromeDashApps.chrome.system.powerSource
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.mains
+import typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +31,17 @@ object PowerSourceType extends js.Object {
   @js.native
   sealed trait usb extends PowerSourceType
   
-  /* "mains" */ val mains: typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.mains with String = js.native
-  /* "unknown" */ val unknown: typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.unknown with String = js.native
-  /* "usb" */ val usb: typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.usb with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PowerSourceType with String] = js.native
+  /* "mains" */ @js.native
+  object mains extends TopLevel[mains with String]
+  
+  /* "unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
+  /* "usb" */ @js.native
+  object usb
+    extends TopLevel[typings.chromeDashApps.chrome.system.powerSource.PowerSourceType.usb with String]
+  
 }
 

@@ -1,8 +1,16 @@
 package typings.couchbase.couchbaseMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode
+import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.CONTINUE
+import typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.STOP
 import typings.couchbase.couchbaseMod.ViewQuery.Order
+import typings.couchbase.couchbaseMod.ViewQuery.Order.ASCENDING
+import typings.couchbase.couchbaseMod.ViewQuery.Order.DESCENDING
 import typings.couchbase.couchbaseMod.ViewQuery.Update
+import typings.couchbase.couchbaseMod.ViewQuery.Update.AFTER
+import typings.couchbase.couchbaseMod.ViewQuery.Update.BEFORE
+import typings.couchbase.couchbaseMod.ViewQuery.Update.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,10 +150,14 @@ object ViewQuery extends js.Object {
     @js.native
     sealed trait STOP extends ErrorMode
     
-    /* 0 */ val CONTINUE: typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.CONTINUE with Double = js.native
-    /* 1 */ val STOP: typings.couchbase.couchbaseMod.ViewQuery.ErrorMode.STOP with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ErrorMode with Double] = js.native
+    /* 0 */ @js.native
+    object CONTINUE extends TopLevel[CONTINUE with Double]
+    
+    /* 1 */ @js.native
+    object STOP extends TopLevel[STOP with Double]
+    
   }
   
   /**
@@ -165,10 +177,14 @@ object ViewQuery extends js.Object {
     @js.native
     sealed trait DESCENDING extends Order
     
-    /* 0 */ val ASCENDING: typings.couchbase.couchbaseMod.ViewQuery.Order.ASCENDING with Double = js.native
-    /* 1 */ val DESCENDING: typings.couchbase.couchbaseMod.ViewQuery.Order.DESCENDING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Order with Double] = js.native
+    /* 0 */ @js.native
+    object ASCENDING extends TopLevel[ASCENDING with Double]
+    
+    /* 1 */ @js.native
+    object DESCENDING extends TopLevel[DESCENDING with Double]
+    
   }
   
   /**
@@ -194,11 +210,17 @@ object ViewQuery extends js.Object {
     @js.native
     sealed trait NONE extends Update
     
-    /* 2 */ val AFTER: typings.couchbase.couchbaseMod.ViewQuery.Update.AFTER with Double = js.native
-    /* 0 */ val BEFORE: typings.couchbase.couchbaseMod.ViewQuery.Update.BEFORE with Double = js.native
-    /* 1 */ val NONE: typings.couchbase.couchbaseMod.ViewQuery.Update.NONE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Update with Double] = js.native
+    /* 2 */ @js.native
+    object AFTER extends TopLevel[AFTER with Double]
+    
+    /* 0 */ @js.native
+    object BEFORE extends TopLevel[BEFORE with Double]
+    
+    /* 1 */ @js.native
+    object NONE extends TopLevel[NONE with Double]
+    
   }
   
 }

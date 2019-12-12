@@ -9,11 +9,11 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesMergePullRequestByF
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForComparedCommitExceptionsUnionMod.PostCommentForComparedCommitExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidCommitIdException
   extends ServiceException[_InvalidCommitIdExceptionDetails]
      with CreateBranchExceptionsUnion
@@ -25,21 +25,6 @@ trait InvalidCommitIdException
      with PostCommentForComparedCommitExceptionsUnion
      with PostCommentForPullRequestExceptionsUnion {
   @JSName("name")
-  var name_InvalidCommitIdException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidCommitIdException
-}
-
-object InvalidCommitIdException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InvalidCommitIdExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidCommitIdException,
-    stack: String = null
-  ): InvalidCommitIdException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvalidCommitIdException]
-  }
+  var name_InvalidCommitIdException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.InvalidCommitIdException = js.native
 }
 

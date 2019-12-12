@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToMany
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToOne
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToMany
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object Multiplicity extends js.Object {
   @js.native
   sealed trait OneToOne extends Multiplicity
   
-  /* 3 */ val ManyToMany: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToMany with Double = js.native
-  /* 2 */ val ManyToOne: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.ManyToOne with Double = js.native
-  /* 1 */ val OneToMany: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToMany with Double = js.native
-  /* 0 */ val OneToOne: typings.ejDotWebDotAll.ej.datavisualization.Diagram.Multiplicity.OneToOne with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Multiplicity with Double] = js.native
+  /* 3 */ @js.native
+  object ManyToMany extends TopLevel[ManyToMany with Double]
+  
+  /* 2 */ @js.native
+  object ManyToOne extends TopLevel[ManyToOne with Double]
+  
+  /* 1 */ @js.native
+  object OneToMany extends TopLevel[OneToMany with Double]
+  
+  /* 0 */ @js.native
+  object OneToOne extends TopLevel[OneToOne with Double]
+  
 }
 

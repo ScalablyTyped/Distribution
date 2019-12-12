@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Devices.Printers.Extensions
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidMaterialSelection
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidModel
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidPrintTicket
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelExceedsPrintBed
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelNotManifold
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.unknown
+import typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.uploadFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object Print3DWorkflowDetail extends js.Object {
   @js.native
   sealed trait uploadFailed extends Print3DWorkflowDetail
   
-  /* 3 */ val invalidMaterialSelection: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidMaterialSelection with Double = js.native
-  /* 4 */ val invalidModel: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidModel with Double = js.native
-  /* 6 */ val invalidPrintTicket: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.invalidPrintTicket with Double = js.native
-  /* 1 */ val modelExceedsPrintBed: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelExceedsPrintBed with Double = js.native
-  /* 5 */ val modelNotManifold: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.modelNotManifold with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.unknown with Double = js.native
-  /* 2 */ val uploadFailed: typings.winrtDashUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail.uploadFailed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Print3DWorkflowDetail with Double] = js.native
+  /* 3 */ @js.native
+  object invalidMaterialSelection extends TopLevel[invalidMaterialSelection with Double]
+  
+  /* 4 */ @js.native
+  object invalidModel extends TopLevel[invalidModel with Double]
+  
+  /* 6 */ @js.native
+  object invalidPrintTicket extends TopLevel[invalidPrintTicket with Double]
+  
+  /* 1 */ @js.native
+  object modelExceedsPrintBed extends TopLevel[modelExceedsPrintBed with Double]
+  
+  /* 5 */ @js.native
+  object modelNotManifold extends TopLevel[modelNotManifold with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object uploadFailed extends TopLevel[uploadFailed with Double]
+  
 }
 

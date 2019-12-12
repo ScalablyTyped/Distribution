@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.EachMember
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.NoDelivery
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.None
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.NotSet
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.PreferredEmailAddress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object NotificationSubscriberDeliveryPreference extends js.Object {
   @js.native
   sealed trait PreferredEmailAddress extends NotificationSubscriberDeliveryPreference
   
-  /* 2 */ val EachMember: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.EachMember with Double = js.native
-  /* -1 */ val NoDelivery: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.NoDelivery with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.None with Double = js.native
-  /* -2147483648 */ val NotSet: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.NotSet with Double = js.native
-  /* 1 */ val PreferredEmailAddress: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.NotificationSubscriberDeliveryPreference.PreferredEmailAddress with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NotificationSubscriberDeliveryPreference with Double] = js.native
+  /* 2 */ @js.native
+  object EachMember extends TopLevel[EachMember with Double]
+  
+  /* -1 */ @js.native
+  object NoDelivery extends TopLevel[NoDelivery with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* -2147483648 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 1 */ @js.native
+  object PreferredEmailAddress extends TopLevel[PreferredEmailAddress with Double]
+  
 }
 

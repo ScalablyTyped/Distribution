@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Calendar
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.INVITED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.MAYBE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.NO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.OWNER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.YES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object GuestStatus extends js.Object {
   @js.native
   sealed trait YES extends GuestStatus
   
-  /* 0 */ val INVITED: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.INVITED with Double = js.native
-  /* 1 */ val MAYBE: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.MAYBE with Double = js.native
-  /* 2 */ val NO: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.NO with Double = js.native
-  /* 3 */ val OWNER: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.OWNER with Double = js.native
-  /* 4 */ val YES: typings.googleDashAppsDashScript.GoogleAppsScript.Calendar.GuestStatus.YES with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GuestStatus with Double] = js.native
+  /* 0 */ @js.native
+  object INVITED extends TopLevel[INVITED with Double]
+  
+  /* 1 */ @js.native
+  object MAYBE extends TopLevel[MAYBE with Double]
+  
+  /* 2 */ @js.native
+  object NO extends TopLevel[NO with Double]
+  
+  /* 3 */ @js.native
+  object OWNER extends TopLevel[OWNER with Double]
+  
+  /* 4 */ @js.native
+  object YES extends TopLevel[YES with Double]
+  
 }
 

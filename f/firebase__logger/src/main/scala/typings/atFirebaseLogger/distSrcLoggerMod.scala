@@ -1,7 +1,14 @@
 package typings.atFirebaseLogger
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseLogger.distSrcLoggerMod.LogHandler
 import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.DEBUG
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.ERROR
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.INFO
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.SILENT
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.VERBOSE
+import typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.WARN
 import typings.atFirebaseLogger.distSrcLoggerMod.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,14 +73,26 @@ object distSrcLoggerMod extends js.Object {
     @js.native
     sealed trait WARN extends LogLevel
     
-    /* 0 */ val DEBUG: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.DEBUG with Double = js.native
-    /* 4 */ val ERROR: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.ERROR with Double = js.native
-    /* 2 */ val INFO: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.INFO with Double = js.native
-    /* 5 */ val SILENT: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.SILENT with Double = js.native
-    /* 1 */ val VERBOSE: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.VERBOSE with Double = js.native
-    /* 3 */ val WARN: typings.atFirebaseLogger.distSrcLoggerMod.LogLevel.WARN with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    /* 0 */ @js.native
+    object DEBUG extends TopLevel[DEBUG with Double]
+    
+    /* 4 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 2 */ @js.native
+    object INFO extends TopLevel[INFO with Double]
+    
+    /* 5 */ @js.native
+    object SILENT extends TopLevel[SILENT with Double]
+    
+    /* 1 */ @js.native
+    object VERBOSE extends TopLevel[VERBOSE with Double]
+    
+    /* 3 */ @js.native
+    object WARN extends TopLevel[WARN with Double]
+    
   }
   
   type LogHandler = js.Function3[/* loggerInstance */ Logger, /* logType */ LogLevel, /* repeated */ js.Any, Unit]

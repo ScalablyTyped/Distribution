@@ -7,11 +7,11 @@ import typings.atAwsDashSdkClientDashKmsDashNode.typesEnableKeyExceptionsUnionMo
 import typings.atAwsDashSdkClientDashKmsDashNode.typesPutKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
 import typings.atAwsDashSdkClientDashKmsDashNode.typesTagResourceExceptionsUnionMod.TagResourceExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LimitExceededException
   extends ServiceException[_LimitExceededExceptionDetails]
      with CreateAliasExceptionsUnion
@@ -21,21 +21,6 @@ trait LimitExceededException
      with PutKeyPolicyExceptionsUnion
      with TagResourceExceptionsUnion {
   @JSName("name")
-  var name_LimitExceededException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.LimitExceededException
-}
-
-object LimitExceededException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _LimitExceededExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.LimitExceededException,
-    stack: String = null
-  ): LimitExceededException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LimitExceededException]
-  }
+  var name_LimitExceededException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.LimitExceededException = js.native
 }
 

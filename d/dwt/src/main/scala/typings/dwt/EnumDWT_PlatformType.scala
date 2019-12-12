@@ -1,5 +1,9 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_PlatformType.enumLinux
+import typings.dwt.EnumDWT_PlatformType.enumMac
+import typings.dwt.EnumDWT_PlatformType.enumWindow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object EnumDWT_PlatformType extends js.Object {
   @js.native
   sealed trait enumWindow extends EnumDWT_PlatformType
   
-  /* 2 */ val enumLinux: typings.dwt.EnumDWT_PlatformType.enumLinux with Double = js.native
-  /* 1 */ val enumMac: typings.dwt.EnumDWT_PlatformType.enumMac with Double = js.native
-  /* 0 */ val enumWindow: typings.dwt.EnumDWT_PlatformType.enumWindow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_PlatformType with Double] = js.native
+  /* 2 */ @js.native
+  object enumLinux extends TopLevel[enumLinux with Double]
+  
+  /* 1 */ @js.native
+  object enumMac extends TopLevel[enumMac with Double]
+  
+  /* 0 */ @js.native
+  object enumWindow extends TopLevel[enumWindow with Double]
+  
 }
 

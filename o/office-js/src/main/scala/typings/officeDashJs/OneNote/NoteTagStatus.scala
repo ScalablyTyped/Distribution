@@ -1,5 +1,13 @@
 package typings.officeDashJs.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.OneNote.NoteTagStatus.completed
+import typings.officeDashJs.OneNote.NoteTagStatus.disabled
+import typings.officeDashJs.OneNote.NoteTagStatus.normal
+import typings.officeDashJs.OneNote.NoteTagStatus.outlookTask
+import typings.officeDashJs.OneNote.NoteTagStatus.taskNotSyncedYet
+import typings.officeDashJs.OneNote.NoteTagStatus.taskRemoved
+import typings.officeDashJs.OneNote.NoteTagStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object NoteTagStatus extends js.Object {
   @js.native
   sealed trait unknown extends NoteTagStatus
   
-  /* "Completed" */ val completed: typings.officeDashJs.OneNote.NoteTagStatus.completed with String = js.native
-  /* "Disabled" */ val disabled: typings.officeDashJs.OneNote.NoteTagStatus.disabled with String = js.native
-  /* "Normal" */ val normal: typings.officeDashJs.OneNote.NoteTagStatus.normal with String = js.native
-  /* "OutlookTask" */ val outlookTask: typings.officeDashJs.OneNote.NoteTagStatus.outlookTask with String = js.native
-  /* "TaskNotSyncedYet" */ val taskNotSyncedYet: typings.officeDashJs.OneNote.NoteTagStatus.taskNotSyncedYet with String = js.native
-  /* "TaskRemoved" */ val taskRemoved: typings.officeDashJs.OneNote.NoteTagStatus.taskRemoved with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJs.OneNote.NoteTagStatus.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NoteTagStatus with String] = js.native
+  /* "Completed" */ @js.native
+  object completed extends TopLevel[completed with String]
+  
+  /* "Disabled" */ @js.native
+  object disabled extends TopLevel[disabled with String]
+  
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "OutlookTask" */ @js.native
+  object outlookTask extends TopLevel[outlookTask with String]
+  
+  /* "TaskNotSyncedYet" */ @js.native
+  object taskNotSyncedYet extends TopLevel[taskNotSyncedYet with String]
+  
+  /* "TaskRemoved" */ @js.native
+  object taskRemoved extends TopLevel[taskRemoved with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

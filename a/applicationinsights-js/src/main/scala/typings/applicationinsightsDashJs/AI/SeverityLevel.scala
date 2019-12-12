@@ -1,5 +1,11 @@
 package typings.applicationinsightsDashJs.AI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.applicationinsightsDashJs.AI.SeverityLevel.Critical
+import typings.applicationinsightsDashJs.AI.SeverityLevel.Error
+import typings.applicationinsightsDashJs.AI.SeverityLevel.Information
+import typings.applicationinsightsDashJs.AI.SeverityLevel.Verbose
+import typings.applicationinsightsDashJs.AI.SeverityLevel.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object SeverityLevel extends js.Object {
   @js.native
   sealed trait Warning extends SeverityLevel
   
-  /* 4 */ val Critical: typings.applicationinsightsDashJs.AI.SeverityLevel.Critical with Double = js.native
-  /* 3 */ val Error: typings.applicationinsightsDashJs.AI.SeverityLevel.Error with Double = js.native
-  /* 1 */ val Information: typings.applicationinsightsDashJs.AI.SeverityLevel.Information with Double = js.native
-  /* 0 */ val Verbose: typings.applicationinsightsDashJs.AI.SeverityLevel.Verbose with Double = js.native
-  /* 2 */ val Warning: typings.applicationinsightsDashJs.AI.SeverityLevel.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SeverityLevel with Double] = js.native
+  /* 4 */ @js.native
+  object Critical extends TopLevel[Critical with Double]
+  
+  /* 3 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 1 */ @js.native
+  object Information extends TopLevel[Information with Double]
+  
+  /* 0 */ @js.native
+  object Verbose extends TopLevel[Verbose with Double]
+  
+  /* 2 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

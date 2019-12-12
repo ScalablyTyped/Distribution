@@ -1,5 +1,12 @@
 package typings.sharepoint.Srch
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.Srch.UserActionType.filterLanguage
+import typings.sharepoint.Srch.UserActionType.pageNext
+import typings.sharepoint.Srch.UserActionType.pagePrev
+import typings.sharepoint.Srch.UserActionType.refine
+import typings.sharepoint.Srch.UserActionType.search
+import typings.sharepoint.Srch.UserActionType.sort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object UserActionType extends js.Object {
   @js.native
   sealed trait sort extends UserActionType
   
-  /* 5 */ val filterLanguage: typings.sharepoint.Srch.UserActionType.filterLanguage with Double = js.native
-  /* 1 */ val pageNext: typings.sharepoint.Srch.UserActionType.pageNext with Double = js.native
-  /* 2 */ val pagePrev: typings.sharepoint.Srch.UserActionType.pagePrev with Double = js.native
-  /* 3 */ val refine: typings.sharepoint.Srch.UserActionType.refine with Double = js.native
-  /* 0 */ val search: typings.sharepoint.Srch.UserActionType.search with Double = js.native
-  /* 4 */ val sort: typings.sharepoint.Srch.UserActionType.sort with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserActionType with Double] = js.native
+  /* 5 */ @js.native
+  object filterLanguage extends TopLevel[filterLanguage with Double]
+  
+  /* 1 */ @js.native
+  object pageNext extends TopLevel[pageNext with Double]
+  
+  /* 2 */ @js.native
+  object pagePrev extends TopLevel[pagePrev with Double]
+  
+  /* 3 */ @js.native
+  object refine extends TopLevel[refine with Double]
+  
+  /* 0 */ @js.native
+  object search extends TopLevel[search with Double]
+  
+  /* 4 */ @js.native
+  object sort extends TopLevel[sort with Double]
+  
 }
 

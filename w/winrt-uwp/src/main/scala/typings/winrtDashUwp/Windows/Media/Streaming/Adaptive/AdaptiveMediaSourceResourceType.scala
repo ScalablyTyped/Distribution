@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Streaming.Adaptive
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationSegment
+import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationVector
+import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.key
+import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.manifest
+import typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.mediaSegment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AdaptiveMediaSourceResourceType extends js.Object {
   @js.native
   sealed trait mediaSegment extends AdaptiveMediaSourceResourceType
   
-  /* 1 */ val initializationSegment: typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationSegment with Double = js.native
-  /* 4 */ val initializationVector: typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.initializationVector with Double = js.native
-  /* 3 */ val key: typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.key with Double = js.native
-  /* 0 */ val manifest: typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.manifest with Double = js.native
-  /* 2 */ val mediaSegment: typings.winrtDashUwp.Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceResourceType.mediaSegment with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AdaptiveMediaSourceResourceType with Double] = js.native
+  /* 1 */ @js.native
+  object initializationSegment extends TopLevel[initializationSegment with Double]
+  
+  /* 4 */ @js.native
+  object initializationVector extends TopLevel[initializationVector with Double]
+  
+  /* 3 */ @js.native
+  object key extends TopLevel[key with Double]
+  
+  /* 0 */ @js.native
+  object manifest extends TopLevel[manifest with Double]
+  
+  /* 2 */ @js.native
+  object mediaSegment extends TopLevel[mediaSegment with Double]
+  
 }
 

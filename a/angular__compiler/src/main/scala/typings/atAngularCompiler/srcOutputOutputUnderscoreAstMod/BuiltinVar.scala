@@ -1,5 +1,10 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchError
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchStack
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.Super
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object BuiltinVar extends js.Object {
   @js.native
   sealed trait This extends BuiltinVar
   
-  /* 2 */ val CatchError: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchError with Double = js.native
-  /* 3 */ val CatchStack: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.CatchStack with Double = js.native
-  /* 1 */ val Super: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.Super with Double = js.native
-  /* 0 */ val This: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinVar.This with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuiltinVar with Double] = js.native
+  /* 2 */ @js.native
+  object CatchError extends TopLevel[CatchError with Double]
+  
+  /* 3 */ @js.native
+  object CatchStack extends TopLevel[CatchStack with Double]
+  
+  /* 1 */ @js.native
+  object Super extends TopLevel[Super with Double]
+  
+  /* 0 */ @js.native
+  object This extends TopLevel[This with Double]
+  
 }
 

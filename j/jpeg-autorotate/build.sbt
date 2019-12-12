@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jpeg-autorotate"
-version := "5.0-dt-20190415Z-77a2fb"
+version := "5.0-dt-20190415Z-f8f5b1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

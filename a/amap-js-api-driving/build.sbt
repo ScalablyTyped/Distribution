@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amap-js-api-driving"
-version := "1.4-dt-20190528Z-c693fd"
+version := "1.4-dt-20190528Z-f2b369"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

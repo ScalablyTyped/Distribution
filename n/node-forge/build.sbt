@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-forge"
-version := "0.9.1-dt-20191118Z-f7c17c"
+version := "0.9.1-dt-20191118Z-dd205d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

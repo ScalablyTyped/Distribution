@@ -1,5 +1,11 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UserCustomActionRegistrationType.contentType
+import typings.sharepoint.SP.UserCustomActionRegistrationType.fileType
+import typings.sharepoint.SP.UserCustomActionRegistrationType.list
+import typings.sharepoint.SP.UserCustomActionRegistrationType.none
+import typings.sharepoint.SP.UserCustomActionRegistrationType.progId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object UserCustomActionRegistrationType extends js.Object {
   @js.native
   sealed trait progId extends UserCustomActionRegistrationType
   
-  /* 2 */ val contentType: typings.sharepoint.SP.UserCustomActionRegistrationType.contentType with Double = js.native
-  /* 4 */ val fileType: typings.sharepoint.SP.UserCustomActionRegistrationType.fileType with Double = js.native
-  /* 1 */ val list: typings.sharepoint.SP.UserCustomActionRegistrationType.list with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.UserCustomActionRegistrationType.none with Double = js.native
-  /* 3 */ val progId: typings.sharepoint.SP.UserCustomActionRegistrationType.progId with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserCustomActionRegistrationType with Double] = js.native
+  /* 2 */ @js.native
+  object contentType extends TopLevel[contentType with Double]
+  
+  /* 4 */ @js.native
+  object fileType extends TopLevel[fileType with Double]
+  
+  /* 1 */ @js.native
+  object list extends TopLevel[list with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object progId extends TopLevel[progId with Double]
+  
 }
 

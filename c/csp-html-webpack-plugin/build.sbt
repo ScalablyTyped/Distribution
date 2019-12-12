@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "csp-html-webpack-plugin"
-version := "3.0-dt-20190926Z-073de1"
+version := "3.0-dt-20190926Z-1f92fe"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-84e0a0",
   "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-4958cd",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-643b5b",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-e116da",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-1d74f8",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-dc61a3",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-83f9dd",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-67a687",
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-bfd05e",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-f7ef3e",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-05c57b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

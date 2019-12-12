@@ -1,5 +1,25 @@
 package typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Date
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.DateTime
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Email
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Hostname
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IDNEmail
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IDNHostname
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IPv4
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IPv6
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IRI
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IRIReference
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.JSONPointer
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.JSONPointerURIFragment
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.RegEx
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.RelativeJSONPointer
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Time
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URI
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URIReference
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URITemplate
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.UUID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -198,26 +218,64 @@ object JSONSchemaFormat extends js.Object {
   @js.native
   sealed trait UUID extends JSONSchemaFormat
   
-  /* "date" */ val Date: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Date with String = js.native
-  /* "date-time" */ val DateTime: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.DateTime with String = js.native
-  /* "email" */ val Email: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Email with String = js.native
-  /* "hostname" */ val Hostname: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Hostname with String = js.native
-  /* "idn-email" */ val IDNEmail: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IDNEmail with String = js.native
-  /* "idn-hostname" */ val IDNHostname: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IDNHostname with String = js.native
-  /* "ipv4" */ val IPv4: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IPv4 with String = js.native
-  /* "ipv6" */ val IPv6: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IPv6 with String = js.native
-  /* "iri" */ val IRI: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IRI with String = js.native
-  /* "iri-reference" */ val IRIReference: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.IRIReference with String = js.native
-  /* "json-pointer" */ val JSONPointer: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.JSONPointer with String = js.native
-  /* "json-pointer-uri-fragment" */ val JSONPointerURIFragment: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.JSONPointerURIFragment with String = js.native
-  /* "regex" */ val RegEx: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.RegEx with String = js.native
-  /* "relative-json-pointer" */ val RelativeJSONPointer: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.RelativeJSONPointer with String = js.native
-  /* "time" */ val Time: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.Time with String = js.native
-  /* "uri" */ val URI: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URI with String = js.native
-  /* "uri-reference" */ val URIReference: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URIReference with String = js.native
-  /* "uri-template" */ val URITemplate: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.URITemplate with String = js.native
-  /* "uuid" */ val UUID: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaFormat.UUID with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[JSONSchemaFormat with String] = js.native
+  /* "date" */ @js.native
+  object Date extends TopLevel[Date with String]
+  
+  /* "date-time" */ @js.native
+  object DateTime extends TopLevel[DateTime with String]
+  
+  /* "email" */ @js.native
+  object Email extends TopLevel[Email with String]
+  
+  /* "hostname" */ @js.native
+  object Hostname extends TopLevel[Hostname with String]
+  
+  /* "idn-email" */ @js.native
+  object IDNEmail extends TopLevel[IDNEmail with String]
+  
+  /* "idn-hostname" */ @js.native
+  object IDNHostname extends TopLevel[IDNHostname with String]
+  
+  /* "ipv4" */ @js.native
+  object IPv4 extends TopLevel[IPv4 with String]
+  
+  /* "ipv6" */ @js.native
+  object IPv6 extends TopLevel[IPv6 with String]
+  
+  /* "iri" */ @js.native
+  object IRI extends TopLevel[IRI with String]
+  
+  /* "iri-reference" */ @js.native
+  object IRIReference extends TopLevel[IRIReference with String]
+  
+  /* "json-pointer" */ @js.native
+  object JSONPointer extends TopLevel[JSONPointer with String]
+  
+  /* "json-pointer-uri-fragment" */ @js.native
+  object JSONPointerURIFragment extends TopLevel[JSONPointerURIFragment with String]
+  
+  /* "regex" */ @js.native
+  object RegEx extends TopLevel[RegEx with String]
+  
+  /* "relative-json-pointer" */ @js.native
+  object RelativeJSONPointer extends TopLevel[RelativeJSONPointer with String]
+  
+  /* "time" */ @js.native
+  object Time extends TopLevel[Time with String]
+  
+  /* "uri" */ @js.native
+  object URI extends TopLevel[URI with String]
+  
+  /* "uri-reference" */ @js.native
+  object URIReference extends TopLevel[URIReference with String]
+  
+  /* "uri-template" */ @js.native
+  object URITemplate extends TopLevel[URITemplate with String]
+  
+  /* "uuid" */ @js.native
+  object UUID extends TopLevel[UUID with String]
+  
 }
 

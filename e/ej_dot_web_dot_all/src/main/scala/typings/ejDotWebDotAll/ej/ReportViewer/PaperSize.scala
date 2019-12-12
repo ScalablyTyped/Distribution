@@ -1,5 +1,17 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.A3
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B4_JIS
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B5_JIS
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Custom
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_10
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_Monarch
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Executive
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Legal
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Letter
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Portrait
+import typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Tabloid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,18 +66,40 @@ object PaperSize extends js.Object {
   @js.native
   sealed trait Tabloid extends PaperSize
   
-  /* 0 */ val A3: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.A3 with Double = js.native
-  /* 2 */ val B4_JIS: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B4_JIS with Double = js.native
-  /* 3 */ val B5_JIS: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.B5_JIS with Double = js.native
-  /* 10 */ val Custom: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Custom with Double = js.native
-  /* 4 */ val Envelope_10: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_10 with Double = js.native
-  /* 5 */ val Envelope_Monarch: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Envelope_Monarch with Double = js.native
-  /* 6 */ val Executive: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Executive with Double = js.native
-  /* 7 */ val Legal: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Legal with Double = js.native
-  /* 8 */ val Letter: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Letter with Double = js.native
-  /* 1 */ val Portrait: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Portrait with Double = js.native
-  /* 9 */ val Tabloid: typings.ejDotWebDotAll.ej.ReportViewer.PaperSize.Tabloid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PaperSize with Double] = js.native
+  /* 0 */ @js.native
+  object A3 extends TopLevel[A3 with Double]
+  
+  /* 2 */ @js.native
+  object B4_JIS extends TopLevel[B4_JIS with Double]
+  
+  /* 3 */ @js.native
+  object B5_JIS extends TopLevel[B5_JIS with Double]
+  
+  /* 10 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 4 */ @js.native
+  object Envelope_10 extends TopLevel[Envelope_10 with Double]
+  
+  /* 5 */ @js.native
+  object Envelope_Monarch extends TopLevel[Envelope_Monarch with Double]
+  
+  /* 6 */ @js.native
+  object Executive extends TopLevel[Executive with Double]
+  
+  /* 7 */ @js.native
+  object Legal extends TopLevel[Legal with Double]
+  
+  /* 8 */ @js.native
+  object Letter extends TopLevel[Letter with Double]
+  
+  /* 1 */ @js.native
+  object Portrait extends TopLevel[Portrait with Double]
+  
+  /* 9 */ @js.native
+  object Tabloid extends TopLevel[Tabloid with Double]
+  
 }
 

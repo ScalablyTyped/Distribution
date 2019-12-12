@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backlog-js"
-version := "0.9.0-dt-20190322Z-fb938f"
+version := "0.9.0-dt-20190322Z-b4e9cb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

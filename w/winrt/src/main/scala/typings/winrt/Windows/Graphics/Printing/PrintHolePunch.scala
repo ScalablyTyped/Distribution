@@ -1,5 +1,14 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.bottomEdge
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.default
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.leftEdge
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.none
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.notAvailable
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.printerCustom
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.rightEdge
+import typings.winrt.Windows.Graphics.Printing.PrintHolePunch.topEdge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object PrintHolePunch extends js.Object {
   @js.native
   sealed trait topEdge extends PrintHolePunch
   
-  /* 7 */ val bottomEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.bottomEdge with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.default with Double = js.native
-  /* 4 */ val leftEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.leftEdge with Double = js.native
-  /* 3 */ val none: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.none with Double = js.native
-  /* 1 */ val notAvailable: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.notAvailable with Double = js.native
-  /* 2 */ val printerCustom: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.printerCustom with Double = js.native
-  /* 5 */ val rightEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.rightEdge with Double = js.native
-  /* 6 */ val topEdge: typings.winrt.Windows.Graphics.Printing.PrintHolePunch.topEdge with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintHolePunch with Double] = js.native
+  /* 7 */ @js.native
+  object bottomEdge extends TopLevel[bottomEdge with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 4 */ @js.native
+  object leftEdge extends TopLevel[leftEdge with Double]
+  
+  /* 3 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 5 */ @js.native
+  object rightEdge extends TopLevel[rightEdge with Double]
+  
+  /* 6 */ @js.native
+  object topEdge extends TopLevel[topEdge with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ms-rest"
-version := "2.5.3-7685ec"
+version := "2.5.3-c10b5f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

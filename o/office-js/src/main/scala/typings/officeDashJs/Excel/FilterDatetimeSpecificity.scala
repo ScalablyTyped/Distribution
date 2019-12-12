@@ -1,5 +1,12 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.day
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.hour
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.minute
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.month
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.second
+import typings.officeDashJs.Excel.FilterDatetimeSpecificity.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object FilterDatetimeSpecificity extends js.Object {
   @js.native
   sealed trait year extends FilterDatetimeSpecificity
   
-  /* "Day" */ val day: typings.officeDashJs.Excel.FilterDatetimeSpecificity.day with String = js.native
-  /* "Hour" */ val hour: typings.officeDashJs.Excel.FilterDatetimeSpecificity.hour with String = js.native
-  /* "Minute" */ val minute: typings.officeDashJs.Excel.FilterDatetimeSpecificity.minute with String = js.native
-  /* "Month" */ val month: typings.officeDashJs.Excel.FilterDatetimeSpecificity.month with String = js.native
-  /* "Second" */ val second: typings.officeDashJs.Excel.FilterDatetimeSpecificity.second with String = js.native
-  /* "Year" */ val year: typings.officeDashJs.Excel.FilterDatetimeSpecificity.year with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FilterDatetimeSpecificity with String] = js.native
+  /* "Day" */ @js.native
+  object day extends TopLevel[day with String]
+  
+  /* "Hour" */ @js.native
+  object hour extends TopLevel[hour with String]
+  
+  /* "Minute" */ @js.native
+  object minute extends TopLevel[minute with String]
+  
+  /* "Month" */ @js.native
+  object month extends TopLevel[month with String]
+  
+  /* "Second" */ @js.native
+  object second extends TopLevel[second with String]
+  
+  /* "Year" */ @js.native
+  object year extends TopLevel[year with String]
+  
 }
 

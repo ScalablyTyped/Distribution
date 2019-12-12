@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Approved
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Created
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Deleted
+import typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ExtensionRequestUpdateType extends js.Object {
   @js.native
   sealed trait Rejected extends ExtensionRequestUpdateType
   
-  /* 2 */ val Approved: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Approved with Double = js.native
-  /* 1 */ val Created: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Created with Double = js.native
-  /* 4 */ val Deleted: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Deleted with Double = js.native
-  /* 3 */ val Rejected: typings.vsoDashNodeDashApi.interfacesExtensionManagementInterfacesMod.ExtensionRequestUpdateType.Rejected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionRequestUpdateType with Double] = js.native
+  /* 2 */ @js.native
+  object Approved extends TopLevel[Approved with Double]
+  
+  /* 1 */ @js.native
+  object Created extends TopLevel[Created with Double]
+  
+  /* 4 */ @js.native
+  object Deleted extends TopLevel[Deleted with Double]
+  
+  /* 3 */ @js.native
+  object Rejected extends TopLevel[Rejected with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Error
+import typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Ignore
+import typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object MissingTranslationStrategy extends js.Object {
   @js.native
   sealed trait Warning extends MissingTranslationStrategy
   
-  /* 0 */ val Error: typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Error with Double = js.native
-  /* 2 */ val Ignore: typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Ignore with Double = js.native
-  /* 1 */ val Warning: typings.atAngularCore.atAngularCoreMod.MissingTranslationStrategy.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MissingTranslationStrategy with Double] = js.native
+  /* 0 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 2 */ @js.native
+  object Ignore extends TopLevel[Ignore with Double]
+  
+  /* 1 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

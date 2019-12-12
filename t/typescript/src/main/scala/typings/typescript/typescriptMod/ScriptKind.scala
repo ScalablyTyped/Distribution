@@ -1,5 +1,14 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ScriptKind.Deferred
+import typings.typescript.typescriptMod.ScriptKind.External
+import typings.typescript.typescriptMod.ScriptKind.JS
+import typings.typescript.typescriptMod.ScriptKind.JSON
+import typings.typescript.typescriptMod.ScriptKind.JSX
+import typings.typescript.typescriptMod.ScriptKind.TS
+import typings.typescript.typescriptMod.ScriptKind.TSX
+import typings.typescript.typescriptMod.ScriptKind.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,15 +47,31 @@ object ScriptKind extends js.Object {
   @js.native
   sealed trait Unknown extends ScriptKind
   
-  /* 7 */ val Deferred: typings.typescript.typescriptMod.ScriptKind.Deferred with Double = js.native
-  /* 5 */ val External: typings.typescript.typescriptMod.ScriptKind.External with Double = js.native
-  /* 1 */ val JS: typings.typescript.typescriptMod.ScriptKind.JS with Double = js.native
-  /* 6 */ val JSON: typings.typescript.typescriptMod.ScriptKind.JSON with Double = js.native
-  /* 2 */ val JSX: typings.typescript.typescriptMod.ScriptKind.JSX with Double = js.native
-  /* 3 */ val TS: typings.typescript.typescriptMod.ScriptKind.TS with Double = js.native
-  /* 4 */ val TSX: typings.typescript.typescriptMod.ScriptKind.TSX with Double = js.native
-  /* 0 */ val Unknown: typings.typescript.typescriptMod.ScriptKind.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScriptKind with Double] = js.native
+  /* 7 */ @js.native
+  object Deferred extends TopLevel[Deferred with Double]
+  
+  /* 5 */ @js.native
+  object External extends TopLevel[External with Double]
+  
+  /* 1 */ @js.native
+  object JS extends TopLevel[JS with Double]
+  
+  /* 6 */ @js.native
+  object JSON extends TopLevel[JSON with Double]
+  
+  /* 2 */ @js.native
+  object JSX extends TopLevel[JSX with Double]
+  
+  /* 3 */ @js.native
+  object TS extends TopLevel[TS with Double]
+  
+  /* 4 */ @js.native
+  object TSX extends TopLevel[TSX with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 

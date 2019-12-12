@@ -1,6 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.SP.WebParts.PersonalizationScope
+import typings.sharepoint.SP.WebParts.PersonalizationScope.shared
+import typings.sharepoint.SP.WebParts.PersonalizationScope.user
 import typings.sharepoint.SP.WebParts.WebPart
 import typings.sharepoint.SP.WebParts.WebPartDefinition
 import typings.sharepoint.SP.WebParts.WebPartDefinitionCollection
@@ -81,10 +84,14 @@ object WebParts extends js.Object {
     @js.native
     sealed trait user extends PersonalizationScope
     
-    /* 1 */ val shared: typings.sharepoint.SP.WebParts.PersonalizationScope.shared with Double = js.native
-    /* 0 */ val user: typings.sharepoint.SP.WebParts.PersonalizationScope.user with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PersonalizationScope with Double] = js.native
+    /* 1 */ @js.native
+    object shared extends TopLevel[shared with Double]
+    
+    /* 0 */ @js.native
+    object user extends TopLevel[user with Double]
+    
   }
   
 }

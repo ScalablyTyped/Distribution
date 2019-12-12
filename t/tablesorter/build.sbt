@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tablesorter"
-version := "2.31-dt-20190521Z-80c28c"
+version := "2.31-dt-20190521Z-ac38d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
   "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20191104Z-3f50b3",
   "org.scalablytyped" %%% "requirejs" % "2.1.20-dt-20190322Z-71e656",
-  "org.scalablytyped" %%% "select2" % "4.0-dt-20190227Z-7b6925",
+  "org.scalablytyped" %%% "select2" % "4.0-dt-20190227Z-ed3694",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

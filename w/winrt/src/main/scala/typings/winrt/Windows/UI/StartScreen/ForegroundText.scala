@@ -1,5 +1,8 @@
 package typings.winrt.Windows.UI.StartScreen
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.StartScreen.ForegroundText.dark
+import typings.winrt.Windows.UI.StartScreen.ForegroundText.light
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ForegroundText extends js.Object {
   @js.native
   sealed trait light extends ForegroundText
   
-  /* 0 */ val dark: typings.winrt.Windows.UI.StartScreen.ForegroundText.dark with Double = js.native
-  /* 1 */ val light: typings.winrt.Windows.UI.StartScreen.ForegroundText.light with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ForegroundText with Double] = js.native
+  /* 0 */ @js.native
+  object dark extends TopLevel[dark with Double]
+  
+  /* 1 */ @js.native
+  object light extends TopLevel[light with Double]
+  
 }
 

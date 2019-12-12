@@ -1,5 +1,25 @@
 package typings.evernote.evernoteMod.Evernote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.AUTH_EXPIRED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.BAD_DATA_FORMAT
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_CONFLICT
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_REQUIRED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.ENML_VALIDATION
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INTERNAL_ERROR
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INVALID_AUTH
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_LONG
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_SHORT
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LIMIT_REACHED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.PERMISSION_DENIED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.QUOTA_REACHED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.RATE_LIMIT_REACHED
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.SHARD_UNAVAILABLE
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TAKEN_DOWN
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_FEW
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_MANY
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNKNOWN
+import typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNSUPPORTED_OPERATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -117,26 +137,64 @@ object EDAMErrorCode extends js.Object {
   @js.native
   sealed trait UNSUPPORTED_OPERATION extends EDAMErrorCode
   
-  /* 9 */ val AUTH_EXPIRED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.AUTH_EXPIRED with Double = js.native
-  /* 2 */ val BAD_DATA_FORMAT: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.BAD_DATA_FORMAT with Double = js.native
-  /* 10 */ val DATA_CONFLICT: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_CONFLICT with Double = js.native
-  /* 5 */ val DATA_REQUIRED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.DATA_REQUIRED with Double = js.native
-  /* 11 */ val ENML_VALIDATION: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.ENML_VALIDATION with Double = js.native
-  /* 4 */ val INTERNAL_ERROR: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INTERNAL_ERROR with Double = js.native
-  /* 8 */ val INVALID_AUTH: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.INVALID_AUTH with Double = js.native
-  /* 14 */ val LEN_TOO_LONG: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_LONG with Double = js.native
-  /* 13 */ val LEN_TOO_SHORT: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LEN_TOO_SHORT with Double = js.native
-  /* 6 */ val LIMIT_REACHED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.LIMIT_REACHED with Double = js.native
-  /* 3 */ val PERMISSION_DENIED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.PERMISSION_DENIED with Double = js.native
-  /* 7 */ val QUOTA_REACHED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.QUOTA_REACHED with Double = js.native
-  /* 19 */ val RATE_LIMIT_REACHED: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.RATE_LIMIT_REACHED with Double = js.native
-  /* 12 */ val SHARD_UNAVAILABLE: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.SHARD_UNAVAILABLE with Double = js.native
-  /* 18 */ val TAKEN_DOWN: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TAKEN_DOWN with Double = js.native
-  /* 15 */ val TOO_FEW: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_FEW with Double = js.native
-  /* 16 */ val TOO_MANY: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.TOO_MANY with Double = js.native
-  /* 1 */ val UNKNOWN: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNKNOWN with Double = js.native
-  /* 17 */ val UNSUPPORTED_OPERATION: typings.evernote.evernoteMod.Evernote.EDAMErrorCode.UNSUPPORTED_OPERATION with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EDAMErrorCode with Double] = js.native
+  /* 9 */ @js.native
+  object AUTH_EXPIRED extends TopLevel[AUTH_EXPIRED with Double]
+  
+  /* 2 */ @js.native
+  object BAD_DATA_FORMAT extends TopLevel[BAD_DATA_FORMAT with Double]
+  
+  /* 10 */ @js.native
+  object DATA_CONFLICT extends TopLevel[DATA_CONFLICT with Double]
+  
+  /* 5 */ @js.native
+  object DATA_REQUIRED extends TopLevel[DATA_REQUIRED with Double]
+  
+  /* 11 */ @js.native
+  object ENML_VALIDATION extends TopLevel[ENML_VALIDATION with Double]
+  
+  /* 4 */ @js.native
+  object INTERNAL_ERROR extends TopLevel[INTERNAL_ERROR with Double]
+  
+  /* 8 */ @js.native
+  object INVALID_AUTH extends TopLevel[INVALID_AUTH with Double]
+  
+  /* 14 */ @js.native
+  object LEN_TOO_LONG extends TopLevel[LEN_TOO_LONG with Double]
+  
+  /* 13 */ @js.native
+  object LEN_TOO_SHORT extends TopLevel[LEN_TOO_SHORT with Double]
+  
+  /* 6 */ @js.native
+  object LIMIT_REACHED extends TopLevel[LIMIT_REACHED with Double]
+  
+  /* 3 */ @js.native
+  object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+  
+  /* 7 */ @js.native
+  object QUOTA_REACHED extends TopLevel[QUOTA_REACHED with Double]
+  
+  /* 19 */ @js.native
+  object RATE_LIMIT_REACHED extends TopLevel[RATE_LIMIT_REACHED with Double]
+  
+  /* 12 */ @js.native
+  object SHARD_UNAVAILABLE extends TopLevel[SHARD_UNAVAILABLE with Double]
+  
+  /* 18 */ @js.native
+  object TAKEN_DOWN extends TopLevel[TAKEN_DOWN with Double]
+  
+  /* 15 */ @js.native
+  object TOO_FEW extends TopLevel[TOO_FEW with Double]
+  
+  /* 16 */ @js.native
+  object TOO_MANY extends TopLevel[TOO_MANY with Double]
+  
+  /* 1 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
+  /* 17 */ @js.native
+  object UNSUPPORTED_OPERATION extends TopLevel[UNSUPPORTED_OPERATION with Double]
+  
 }
 

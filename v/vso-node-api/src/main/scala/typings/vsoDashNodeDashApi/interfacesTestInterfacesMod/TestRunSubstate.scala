@@ -1,5 +1,15 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.AbortedBySystem
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.Analyzed
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CanceledByUser
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CancellationInProgress
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CreatingEnvironment
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.None
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.PendingAnalysis
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.RunningTests
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.TimedOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object TestRunSubstate extends js.Object {
   @js.native
   sealed trait TimedOut extends TestRunSubstate
   
-  /* 4 */ val AbortedBySystem: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.AbortedBySystem with Double = js.native
-  /* 7 */ val Analyzed: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.Analyzed with Double = js.native
-  /* 3 */ val CanceledByUser: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CanceledByUser with Double = js.native
-  /* 8 */ val CancellationInProgress: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CancellationInProgress with Double = js.native
-  /* 1 */ val CreatingEnvironment: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.CreatingEnvironment with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.None with Double = js.native
-  /* 6 */ val PendingAnalysis: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.PendingAnalysis with Double = js.native
-  /* 2 */ val RunningTests: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.RunningTests with Double = js.native
-  /* 5 */ val TimedOut: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestRunSubstate.TimedOut with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TestRunSubstate with Double] = js.native
+  /* 4 */ @js.native
+  object AbortedBySystem extends TopLevel[AbortedBySystem with Double]
+  
+  /* 7 */ @js.native
+  object Analyzed extends TopLevel[Analyzed with Double]
+  
+  /* 3 */ @js.native
+  object CanceledByUser extends TopLevel[CanceledByUser with Double]
+  
+  /* 8 */ @js.native
+  object CancellationInProgress extends TopLevel[CancellationInProgress with Double]
+  
+  /* 1 */ @js.native
+  object CreatingEnvironment extends TopLevel[CreatingEnvironment with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 6 */ @js.native
+  object PendingAnalysis extends TopLevel[PendingAnalysis with Double]
+  
+  /* 2 */ @js.native
+  object RunningTests extends TopLevel[RunningTests with Double]
+  
+  /* 5 */ @js.native
+  object TimedOut extends TopLevel[TimedOut with Double]
+  
 }
 

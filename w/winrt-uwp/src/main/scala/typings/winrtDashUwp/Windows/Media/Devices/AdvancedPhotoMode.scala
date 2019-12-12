@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.auto
+import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.hdr
+import typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AdvancedPhotoMode extends js.Object {
   @js.native
   sealed trait standard extends AdvancedPhotoMode
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.auto with Double = js.native
-  /* 2 */ val hdr: typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.hdr with Double = js.native
-  /* 1 */ val standard: typings.winrtDashUwp.Windows.Media.Devices.AdvancedPhotoMode.standard with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AdvancedPhotoMode with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 2 */ @js.native
+  object hdr extends TopLevel[hdr with Double]
+  
+  /* 1 */ @js.native
+  object standard extends TopLevel[standard with Double]
+  
 }
 

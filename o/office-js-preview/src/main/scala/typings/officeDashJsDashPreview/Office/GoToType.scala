@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.GoToType.NamedItem
+import typings.officeDashJsDashPreview.Office.GoToType.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,11 +49,21 @@ object GoToType extends js.Object {
   @js.native
   sealed trait Slide extends GoToType
   
-  /* 0 */ val Binding: typings.officeDashJsDashPreview.Office.GoToType.Binding with Double = js.native
-  /* 3 */ val Index: typings.officeDashJsDashPreview.Office.GoToType.Index with Double = js.native
-  /* 1 */ val NamedItem: typings.officeDashJsDashPreview.Office.GoToType.NamedItem with Double = js.native
-  /* 2 */ val Slide: typings.officeDashJsDashPreview.Office.GoToType.Slide with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GoToType with Double] = js.native
+  /* 0 */ @js.native
+  object Binding
+    extends TopLevel[typings.officeDashJsDashPreview.Office.GoToType.Binding with Double]
+  
+  /* 3 */ @js.native
+  object Index
+    extends TopLevel[typings.officeDashJsDashPreview.Office.GoToType.Index with Double]
+  
+  /* 1 */ @js.native
+  object NamedItem extends TopLevel[NamedItem with Double]
+  
+  /* 2 */ @js.native
+  object Slide extends TopLevel[Slide with Double]
+  
 }
 

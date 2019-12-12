@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.center
+import typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.left
+import typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ChartTickLabelAlignment extends js.Object {
   @js.native
   sealed trait right extends ChartTickLabelAlignment
   
-  /* "Center" */ val center: typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.center with String = js.native
-  /* "Left" */ val left: typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJsDashPreview.Excel.ChartTickLabelAlignment.right with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartTickLabelAlignment with String] = js.native
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
 }
 

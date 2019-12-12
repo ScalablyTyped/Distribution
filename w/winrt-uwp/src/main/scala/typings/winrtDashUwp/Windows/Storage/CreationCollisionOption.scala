@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.failIfExists
+import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.generateUniqueName
+import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.openIfExists
+import typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.replaceExisting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object CreationCollisionOption extends js.Object {
   @js.native
   sealed trait replaceExisting extends CreationCollisionOption
   
-  /* 2 */ val failIfExists: typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.failIfExists with Double = js.native
-  /* 0 */ val generateUniqueName: typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.generateUniqueName with Double = js.native
-  /* 3 */ val openIfExists: typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.openIfExists with Double = js.native
-  /* 1 */ val replaceExisting: typings.winrtDashUwp.Windows.Storage.CreationCollisionOption.replaceExisting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CreationCollisionOption with Double] = js.native
+  /* 2 */ @js.native
+  object failIfExists extends TopLevel[failIfExists with Double]
+  
+  /* 0 */ @js.native
+  object generateUniqueName extends TopLevel[generateUniqueName with Double]
+  
+  /* 3 */ @js.native
+  object openIfExists extends TopLevel[openIfExists with Double]
+  
+  /* 1 */ @js.native
+  object replaceExisting extends TopLevel[replaceExisting with Double]
+  
 }
 

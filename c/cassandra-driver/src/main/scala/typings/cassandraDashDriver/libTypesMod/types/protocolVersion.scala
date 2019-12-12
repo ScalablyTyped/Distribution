@@ -1,5 +1,13 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.maxSupported
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.minSupported
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v1
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v2
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v3
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v4
+import typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,15 +39,29 @@ object protocolVersion extends js.Object {
   @js.native
   sealed trait v5 extends protocolVersion
   
-  /* 0x05 */ val maxSupported: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.maxSupported with Double = js.native
-  /* 0x01 */ val minSupported: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.minSupported with Double = js.native
-  /* 0x01 */ val v1: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v1 with Double = js.native
-  /* 0x02 */ val v2: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v2 with Double = js.native
-  /* 0x03 */ val v3: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v3 with Double = js.native
-  /* 0x04 */ val v4: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v4 with Double = js.native
-  /* 0x05 */ val v5: typings.cassandraDashDriver.libTypesMod.types.protocolVersion.v5 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[protocolVersion with Double] = js.native
   def isSupported(version: protocolVersion): Boolean = js.native
+  /* 0x05 */ @js.native
+  object maxSupported extends TopLevel[maxSupported with Double]
+  
+  /* 0x01 */ @js.native
+  object minSupported extends TopLevel[minSupported with Double]
+  
+  /* 0x01 */ @js.native
+  object v1 extends TopLevel[v1 with Double]
+  
+  /* 0x02 */ @js.native
+  object v2 extends TopLevel[v2 with Double]
+  
+  /* 0x03 */ @js.native
+  object v3 extends TopLevel[v3 with Double]
+  
+  /* 0x04 */ @js.native
+  object v4 extends TopLevel[v4 with Double]
+  
+  /* 0x05 */ @js.native
+  object v5 extends TopLevel[v5 with Double]
+  
 }
 

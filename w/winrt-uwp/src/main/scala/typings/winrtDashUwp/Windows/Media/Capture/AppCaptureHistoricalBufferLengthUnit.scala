@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.megabytes
+import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.seconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object AppCaptureHistoricalBufferLengthUnit extends js.Object {
   @js.native
   sealed trait seconds extends AppCaptureHistoricalBufferLengthUnit
   
-  /* 0 */ val megabytes: typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.megabytes with Double = js.native
-  /* 1 */ val seconds: typings.winrtDashUwp.Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit.seconds with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppCaptureHistoricalBufferLengthUnit with Double] = js.native
+  /* 0 */ @js.native
+  object megabytes extends TopLevel[megabytes with Double]
+  
+  /* 1 */ @js.native
+  object seconds extends TopLevel[seconds with Double]
+  
 }
 

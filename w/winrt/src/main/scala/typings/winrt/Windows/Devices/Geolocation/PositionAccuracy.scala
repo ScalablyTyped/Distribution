@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Devices.Geolocation.PositionAccuracy.default
+import typings.winrt.Windows.Devices.Geolocation.PositionAccuracy.high
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object PositionAccuracy extends js.Object {
   @js.native
   sealed trait high extends PositionAccuracy
   
-  /* 0 */ val default: typings.winrt.Windows.Devices.Geolocation.PositionAccuracy.default with Double = js.native
-  /* 1 */ val high: typings.winrt.Windows.Devices.Geolocation.PositionAccuracy.high with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PositionAccuracy with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object high extends TopLevel[high with Double]
+  
 }
 

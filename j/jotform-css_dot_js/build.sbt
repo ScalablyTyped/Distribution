@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jotform-css_dot_js"
-version := "1.0-dt-20180625Z-0e3832"
+version := "1.0-dt-20180625Z-0c96ff"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

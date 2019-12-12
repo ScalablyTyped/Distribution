@@ -1,5 +1,19 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.CRYPTO_KEY_VERSION_ALGORITHM_UNSPECIFIED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.EC_SIGN_P256_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.EC_SIGN_P384_SHA384
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.GOOGLE_SYMMETRIC_ENCRYPTION
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_2048_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_3072_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_4096_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_2048_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_3072_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_4096_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_2048_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_3072_SHA256
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_4096_SHA256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,20 +76,46 @@ object CryptoKeyVersionAlgorithm extends js.Object {
   @js.native
   sealed trait RSA_SIGN_PSS_4096_SHA256 extends CryptoKeyVersionAlgorithm
   
-  /* 0 */ val CRYPTO_KEY_VERSION_ALGORITHM_UNSPECIFIED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.CRYPTO_KEY_VERSION_ALGORITHM_UNSPECIFIED with Double = js.native
-  /* 12 */ val EC_SIGN_P256_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.EC_SIGN_P256_SHA256 with Double = js.native
-  /* 13 */ val EC_SIGN_P384_SHA384: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.EC_SIGN_P384_SHA384 with Double = js.native
-  /* 1 */ val GOOGLE_SYMMETRIC_ENCRYPTION: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.GOOGLE_SYMMETRIC_ENCRYPTION with Double = js.native
-  /* 8 */ val RSA_DECRYPT_OAEP_2048_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_2048_SHA256 with Double = js.native
-  /* 9 */ val RSA_DECRYPT_OAEP_3072_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_3072_SHA256 with Double = js.native
-  /* 10 */ val RSA_DECRYPT_OAEP_4096_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_DECRYPT_OAEP_4096_SHA256 with Double = js.native
-  /* 5 */ val RSA_SIGN_PKCS1_2048_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_2048_SHA256 with Double = js.native
-  /* 6 */ val RSA_SIGN_PKCS1_3072_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_3072_SHA256 with Double = js.native
-  /* 7 */ val RSA_SIGN_PKCS1_4096_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PKCS1_4096_SHA256 with Double = js.native
-  /* 2 */ val RSA_SIGN_PSS_2048_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_2048_SHA256 with Double = js.native
-  /* 3 */ val RSA_SIGN_PSS_3072_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_3072_SHA256 with Double = js.native
-  /* 4 */ val RSA_SIGN_PSS_4096_SHA256: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionAlgorithm.RSA_SIGN_PSS_4096_SHA256 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptoKeyVersionAlgorithm with Double] = js.native
+  /* 0 */ @js.native
+  object CRYPTO_KEY_VERSION_ALGORITHM_UNSPECIFIED extends TopLevel[CRYPTO_KEY_VERSION_ALGORITHM_UNSPECIFIED with Double]
+  
+  /* 12 */ @js.native
+  object EC_SIGN_P256_SHA256 extends TopLevel[EC_SIGN_P256_SHA256 with Double]
+  
+  /* 13 */ @js.native
+  object EC_SIGN_P384_SHA384 extends TopLevel[EC_SIGN_P384_SHA384 with Double]
+  
+  /* 1 */ @js.native
+  object GOOGLE_SYMMETRIC_ENCRYPTION extends TopLevel[GOOGLE_SYMMETRIC_ENCRYPTION with Double]
+  
+  /* 8 */ @js.native
+  object RSA_DECRYPT_OAEP_2048_SHA256 extends TopLevel[RSA_DECRYPT_OAEP_2048_SHA256 with Double]
+  
+  /* 9 */ @js.native
+  object RSA_DECRYPT_OAEP_3072_SHA256 extends TopLevel[RSA_DECRYPT_OAEP_3072_SHA256 with Double]
+  
+  /* 10 */ @js.native
+  object RSA_DECRYPT_OAEP_4096_SHA256 extends TopLevel[RSA_DECRYPT_OAEP_4096_SHA256 with Double]
+  
+  /* 5 */ @js.native
+  object RSA_SIGN_PKCS1_2048_SHA256 extends TopLevel[RSA_SIGN_PKCS1_2048_SHA256 with Double]
+  
+  /* 6 */ @js.native
+  object RSA_SIGN_PKCS1_3072_SHA256 extends TopLevel[RSA_SIGN_PKCS1_3072_SHA256 with Double]
+  
+  /* 7 */ @js.native
+  object RSA_SIGN_PKCS1_4096_SHA256 extends TopLevel[RSA_SIGN_PKCS1_4096_SHA256 with Double]
+  
+  /* 2 */ @js.native
+  object RSA_SIGN_PSS_2048_SHA256 extends TopLevel[RSA_SIGN_PSS_2048_SHA256 with Double]
+  
+  /* 3 */ @js.native
+  object RSA_SIGN_PSS_3072_SHA256 extends TopLevel[RSA_SIGN_PSS_3072_SHA256 with Double]
+  
+  /* 4 */ @js.native
+  object RSA_SIGN_PSS_4096_SHA256 extends TopLevel[RSA_SIGN_PSS_4096_SHA256 with Double]
+  
 }
 

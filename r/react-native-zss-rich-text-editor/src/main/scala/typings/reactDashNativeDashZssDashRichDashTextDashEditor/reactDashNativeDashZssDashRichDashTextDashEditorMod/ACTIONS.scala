@@ -1,5 +1,59 @@
 package typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignCenter
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignFull
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignLeft
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignRight
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.blurContentEditor
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.blurTitleEditor
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.enableOnChange
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.focusContent
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.focusTitle
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getContentHtml
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getSelectedText
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getTitleHtml
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getTitleText
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading1
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading2
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading3
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading4
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading5
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading6
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.hideTitle
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.init
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertBulletsList
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertImage
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertLink
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertOrderedList
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.prepareInsert
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.removeFormat
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.restoreSelection
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setBackgroundColor
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setBold
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentFocusHandler
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentHtml
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentPlaceholder
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setCustomCSS
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setEditorHeight
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setFooterHeight
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setHR
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setIndent
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setItalic
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setOutdent
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setParagraph
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setPlatform
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setStrikethrough
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setSubscript
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setSuperscript
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTextColor
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitleFocusHandler
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitleHtml
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitlePlaceholder
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setUnderline
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.showTitle
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.toggleTitle
+import typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.updateLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -169,60 +223,166 @@ object ACTIONS extends js.Object {
   @js.native
   sealed trait updateLink extends ACTIONS
   
-  /* "justifyCenter" */ val alignCenter: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignCenter with String = js.native
-  /* "justifyFull" */ val alignFull: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignFull with String = js.native
-  /* "justifyLeft" */ val alignLeft: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignLeft with String = js.native
-  /* "justifyRight" */ val alignRight: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.alignRight with String = js.native
-  /* "BLUR_CONTENT_EDITOR" */ val blurContentEditor: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.blurContentEditor with String = js.native
-  /* "BLUR_TITLE_EDITOR" */ val blurTitleEditor: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.blurTitleEditor with String = js.native
-  /* "ENABLE_ON_CHANGE" */ val enableOnChange: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.enableOnChange with String = js.native
-  /* "FOCUS_CONTENT" */ val focusContent: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.focusContent with String = js.native
-  /* "FOCUS_TITLE" */ val focusTitle: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.focusTitle with String = js.native
-  /* "GET_CONTENT_HTML" */ val getContentHtml: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getContentHtml with String = js.native
-  /* "GET_SELECTED_TEXT" */ val getSelectedText: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getSelectedText with String = js.native
-  /* "GET_TITLE_HTML" */ val getTitleHtml: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getTitleHtml with String = js.native
-  /* "GET_TITLE_TEXT" */ val getTitleText: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.getTitleText with String = js.native
-  /* "h1" */ val heading1: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading1 with String = js.native
-  /* "h2" */ val heading2: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading2 with String = js.native
-  /* "h3" */ val heading3: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading3 with String = js.native
-  /* "h4" */ val heading4: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading4 with String = js.native
-  /* "h5" */ val heading5: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading5 with String = js.native
-  /* "h6" */ val heading6: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.heading6 with String = js.native
-  /* "HIDE_TITLE" */ val hideTitle: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.hideTitle with String = js.native
-  /* "ZSSS_INIT" */ val init: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.init with String = js.native
-  /* "unorderedList" */ val insertBulletsList: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertBulletsList with String = js.native
-  /* "INST_IMAGE" */ val insertImage: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertImage with String = js.native
-  /* "INST_LINK" */ val insertLink: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertLink with String = js.native
-  /* "orderedList" */ val insertOrderedList: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.insertOrderedList with String = js.native
-  /* "PREPARE_INSERT" */ val prepareInsert: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.prepareInsert with String = js.native
-  /* "REMOVE_FORMAT" */ val removeFormat: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.removeFormat with String = js.native
-  /* "RESTORE_SELECTION" */ val restoreSelection: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.restoreSelection with String = js.native
-  /* "SET_BACKGROUND_COLOR" */ val setBackgroundColor: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setBackgroundColor with String = js.native
-  /* "bold" */ val setBold: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setBold with String = js.native
-  /* "SET_CONTENT_FOCUS_HANDLER" */ val setContentFocusHandler: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentFocusHandler with String = js.native
-  /* "SET_CONTENT_HTML" */ val setContentHtml: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentHtml with String = js.native
-  /* "SET_CONTENT_PLACEHOLDER" */ val setContentPlaceholder: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setContentPlaceholder with String = js.native
-  /* "SET_CUSTOM_CSS" */ val setCustomCSS: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setCustomCSS with String = js.native
-  /* "SET_EDITOR_HEIGHT" */ val setEditorHeight: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setEditorHeight with String = js.native
-  /* "SET_FOOTER_HEIGHT" */ val setFooterHeight: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setFooterHeight with String = js.native
-  /* "horizontalRule" */ val setHR: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setHR with String = js.native
-  /* "indent" */ val setIndent: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setIndent with String = js.native
-  /* "italic" */ val setItalic: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setItalic with String = js.native
-  /* "outdent" */ val setOutdent: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setOutdent with String = js.native
-  /* "SET_PARAGRAPH" */ val setParagraph: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setParagraph with String = js.native
-  /* "SET_PLATFORM" */ val setPlatform: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setPlatform with String = js.native
-  /* "strikeThrough" */ val setStrikethrough: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setStrikethrough with String = js.native
-  /* "subscript" */ val setSubscript: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setSubscript with String = js.native
-  /* "superscript" */ val setSuperscript: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setSuperscript with String = js.native
-  /* "SET_TEXT_COLOR" */ val setTextColor: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTextColor with String = js.native
-  /* "SET_TITLE_FOCUS_HANDLER" */ val setTitleFocusHandler: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitleFocusHandler with String = js.native
-  /* "SET_TITLE_HTML" */ val setTitleHtml: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitleHtml with String = js.native
-  /* "SET_TITLE_PLACEHOLDER" */ val setTitlePlaceholder: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setTitlePlaceholder with String = js.native
-  /* "underline" */ val setUnderline: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.setUnderline with String = js.native
-  /* "SHOW_TITLE" */ val showTitle: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.showTitle with String = js.native
-  /* "TOGGLE_TITLE" */ val toggleTitle: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.toggleTitle with String = js.native
-  /* "UPDATE_LINK" */ val updateLink: typings.reactDashNativeDashZssDashRichDashTextDashEditor.reactDashNativeDashZssDashRichDashTextDashEditorMod.ACTIONS.updateLink with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ACTIONS with String] = js.native
+  /* "justifyCenter" */ @js.native
+  object alignCenter extends TopLevel[alignCenter with String]
+  
+  /* "justifyFull" */ @js.native
+  object alignFull extends TopLevel[alignFull with String]
+  
+  /* "justifyLeft" */ @js.native
+  object alignLeft extends TopLevel[alignLeft with String]
+  
+  /* "justifyRight" */ @js.native
+  object alignRight extends TopLevel[alignRight with String]
+  
+  /* "BLUR_CONTENT_EDITOR" */ @js.native
+  object blurContentEditor extends TopLevel[blurContentEditor with String]
+  
+  /* "BLUR_TITLE_EDITOR" */ @js.native
+  object blurTitleEditor extends TopLevel[blurTitleEditor with String]
+  
+  /* "ENABLE_ON_CHANGE" */ @js.native
+  object enableOnChange extends TopLevel[enableOnChange with String]
+  
+  /* "FOCUS_CONTENT" */ @js.native
+  object focusContent extends TopLevel[focusContent with String]
+  
+  /* "FOCUS_TITLE" */ @js.native
+  object focusTitle extends TopLevel[focusTitle with String]
+  
+  /* "GET_CONTENT_HTML" */ @js.native
+  object getContentHtml extends TopLevel[getContentHtml with String]
+  
+  /* "GET_SELECTED_TEXT" */ @js.native
+  object getSelectedText extends TopLevel[getSelectedText with String]
+  
+  /* "GET_TITLE_HTML" */ @js.native
+  object getTitleHtml extends TopLevel[getTitleHtml with String]
+  
+  /* "GET_TITLE_TEXT" */ @js.native
+  object getTitleText extends TopLevel[getTitleText with String]
+  
+  /* "h1" */ @js.native
+  object heading1 extends TopLevel[heading1 with String]
+  
+  /* "h2" */ @js.native
+  object heading2 extends TopLevel[heading2 with String]
+  
+  /* "h3" */ @js.native
+  object heading3 extends TopLevel[heading3 with String]
+  
+  /* "h4" */ @js.native
+  object heading4 extends TopLevel[heading4 with String]
+  
+  /* "h5" */ @js.native
+  object heading5 extends TopLevel[heading5 with String]
+  
+  /* "h6" */ @js.native
+  object heading6 extends TopLevel[heading6 with String]
+  
+  /* "HIDE_TITLE" */ @js.native
+  object hideTitle extends TopLevel[hideTitle with String]
+  
+  /* "ZSSS_INIT" */ @js.native
+  object init extends TopLevel[init with String]
+  
+  /* "unorderedList" */ @js.native
+  object insertBulletsList extends TopLevel[insertBulletsList with String]
+  
+  /* "INST_IMAGE" */ @js.native
+  object insertImage extends TopLevel[insertImage with String]
+  
+  /* "INST_LINK" */ @js.native
+  object insertLink extends TopLevel[insertLink with String]
+  
+  /* "orderedList" */ @js.native
+  object insertOrderedList extends TopLevel[insertOrderedList with String]
+  
+  /* "PREPARE_INSERT" */ @js.native
+  object prepareInsert extends TopLevel[prepareInsert with String]
+  
+  /* "REMOVE_FORMAT" */ @js.native
+  object removeFormat extends TopLevel[removeFormat with String]
+  
+  /* "RESTORE_SELECTION" */ @js.native
+  object restoreSelection extends TopLevel[restoreSelection with String]
+  
+  /* "SET_BACKGROUND_COLOR" */ @js.native
+  object setBackgroundColor extends TopLevel[setBackgroundColor with String]
+  
+  /* "bold" */ @js.native
+  object setBold extends TopLevel[setBold with String]
+  
+  /* "SET_CONTENT_FOCUS_HANDLER" */ @js.native
+  object setContentFocusHandler extends TopLevel[setContentFocusHandler with String]
+  
+  /* "SET_CONTENT_HTML" */ @js.native
+  object setContentHtml extends TopLevel[setContentHtml with String]
+  
+  /* "SET_CONTENT_PLACEHOLDER" */ @js.native
+  object setContentPlaceholder extends TopLevel[setContentPlaceholder with String]
+  
+  /* "SET_CUSTOM_CSS" */ @js.native
+  object setCustomCSS extends TopLevel[setCustomCSS with String]
+  
+  /* "SET_EDITOR_HEIGHT" */ @js.native
+  object setEditorHeight extends TopLevel[setEditorHeight with String]
+  
+  /* "SET_FOOTER_HEIGHT" */ @js.native
+  object setFooterHeight extends TopLevel[setFooterHeight with String]
+  
+  /* "horizontalRule" */ @js.native
+  object setHR extends TopLevel[setHR with String]
+  
+  /* "indent" */ @js.native
+  object setIndent extends TopLevel[setIndent with String]
+  
+  /* "italic" */ @js.native
+  object setItalic extends TopLevel[setItalic with String]
+  
+  /* "outdent" */ @js.native
+  object setOutdent extends TopLevel[setOutdent with String]
+  
+  /* "SET_PARAGRAPH" */ @js.native
+  object setParagraph extends TopLevel[setParagraph with String]
+  
+  /* "SET_PLATFORM" */ @js.native
+  object setPlatform extends TopLevel[setPlatform with String]
+  
+  /* "strikeThrough" */ @js.native
+  object setStrikethrough extends TopLevel[setStrikethrough with String]
+  
+  /* "subscript" */ @js.native
+  object setSubscript extends TopLevel[setSubscript with String]
+  
+  /* "superscript" */ @js.native
+  object setSuperscript extends TopLevel[setSuperscript with String]
+  
+  /* "SET_TEXT_COLOR" */ @js.native
+  object setTextColor extends TopLevel[setTextColor with String]
+  
+  /* "SET_TITLE_FOCUS_HANDLER" */ @js.native
+  object setTitleFocusHandler extends TopLevel[setTitleFocusHandler with String]
+  
+  /* "SET_TITLE_HTML" */ @js.native
+  object setTitleHtml extends TopLevel[setTitleHtml with String]
+  
+  /* "SET_TITLE_PLACEHOLDER" */ @js.native
+  object setTitlePlaceholder extends TopLevel[setTitlePlaceholder with String]
+  
+  /* "underline" */ @js.native
+  object setUnderline extends TopLevel[setUnderline with String]
+  
+  /* "SHOW_TITLE" */ @js.native
+  object showTitle extends TopLevel[showTitle with String]
+  
+  /* "TOGGLE_TITLE" */ @js.native
+  object toggleTitle extends TopLevel[toggleTitle with String]
+  
+  /* "UPDATE_LINK" */ @js.native
+  object updateLink extends TopLevel[updateLink with String]
+  
 }
 

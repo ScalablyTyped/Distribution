@@ -1,5 +1,10 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.ADDRESS
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.BYTEARRAY
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.STRING
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.U64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ArgType extends js.Object {
   @js.native
   sealed trait U64 extends ArgType
   
-  /* 1 */ val ADDRESS: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.ADDRESS with Double = js.native
-  /* 3 */ val BYTEARRAY: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.BYTEARRAY with Double = js.native
-  /* 2 */ val STRING: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.STRING with Double = js.native
-  /* 0 */ val U64: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.TransactionArgument.ArgType.U64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ArgType with Double] = js.native
+  /* 1 */ @js.native
+  object ADDRESS extends TopLevel[ADDRESS with Double]
+  
+  /* 3 */ @js.native
+  object BYTEARRAY extends TopLevel[BYTEARRAY with Double]
+  
+  /* 2 */ @js.native
+  object STRING extends TopLevel[STRING with Double]
+  
+  /* 0 */ @js.native
+  object U64 extends TopLevel[U64 with Double]
+  
 }
 

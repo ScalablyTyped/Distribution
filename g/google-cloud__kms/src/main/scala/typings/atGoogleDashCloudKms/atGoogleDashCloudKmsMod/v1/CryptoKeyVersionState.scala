@@ -1,5 +1,12 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.CRYPTO_KEY_VERSION_STATE_UNSPECIFIED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROYED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROY_SCHEDULED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DISABLED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.ENABLED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.PENDING_GENERATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,13 +48,25 @@ object CryptoKeyVersionState extends js.Object {
   @js.native
   sealed trait PENDING_GENERATION extends CryptoKeyVersionState
   
-  /* 0 */ val CRYPTO_KEY_VERSION_STATE_UNSPECIFIED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.CRYPTO_KEY_VERSION_STATE_UNSPECIFIED with Double = js.native
-  /* 3 */ val DESTROYED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROYED with Double = js.native
-  /* 4 */ val DESTROY_SCHEDULED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DESTROY_SCHEDULED with Double = js.native
-  /* 2 */ val DISABLED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.DISABLED with Double = js.native
-  /* 1 */ val ENABLED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.ENABLED with Double = js.native
-  /* 5 */ val PENDING_GENERATION: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionState.PENDING_GENERATION with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptoKeyVersionState with Double] = js.native
+  /* 0 */ @js.native
+  object CRYPTO_KEY_VERSION_STATE_UNSPECIFIED extends TopLevel[CRYPTO_KEY_VERSION_STATE_UNSPECIFIED with Double]
+  
+  /* 3 */ @js.native
+  object DESTROYED extends TopLevel[DESTROYED with Double]
+  
+  /* 4 */ @js.native
+  object DESTROY_SCHEDULED extends TopLevel[DESTROY_SCHEDULED with Double]
+  
+  /* 2 */ @js.native
+  object DISABLED extends TopLevel[DISABLED with Double]
+  
+  /* 1 */ @js.native
+  object ENABLED extends TopLevel[ENABLED with Double]
+  
+  /* 5 */ @js.native
+  object PENDING_GENERATION extends TopLevel[PENDING_GENERATION with Double]
+  
 }
 

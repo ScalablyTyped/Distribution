@@ -1,5 +1,20 @@
 package typings.inboxsdk.inboxsdkMod.Router
 
+import org.scalablytyped.runtime.TopLevel
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.ALL_MAIL
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.ANY_LIST
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.DONE
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.DRAFTS
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.IMPORTANT
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.INBOX
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.LABEL
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.REMINDERS
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SEARCH
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SENT
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SNOOZED
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SPAM
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.STARRED
+import typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.TRASH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,21 +67,49 @@ object NativeListRouteIDs extends js.Object {
   @js.native
   sealed trait TRASH extends NativeListRouteIDs
   
-  /* 1 */ val ALL_MAIL: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.ALL_MAIL with Double = js.native
-  /* 13 */ val ANY_LIST: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.ANY_LIST with Double = js.native
-  /* 6 */ val DONE: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.DONE with Double = js.native
-  /* 4 */ val DRAFTS: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.DRAFTS with Double = js.native
-  /* 11 */ val IMPORTANT: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.IMPORTANT with Double = js.native
-  /* 0 */ val INBOX: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.INBOX with Double = js.native
-  /* 8 */ val LABEL: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.LABEL with Double = js.native
-  /* 7 */ val REMINDERS: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.REMINDERS with Double = js.native
-  /* 12 */ val SEARCH: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SEARCH with Double = js.native
-  /* 2 */ val SENT: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SENT with Double = js.native
-  /* 5 */ val SNOOZED: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SNOOZED with Double = js.native
-  /* 10 */ val SPAM: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.SPAM with Double = js.native
-  /* 3 */ val STARRED: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.STARRED with Double = js.native
-  /* 9 */ val TRASH: typings.inboxsdk.inboxsdkMod.Router.NativeListRouteIDs.TRASH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NativeListRouteIDs with Double] = js.native
+  /* 1 */ @js.native
+  object ALL_MAIL extends TopLevel[ALL_MAIL with Double]
+  
+  /* 13 */ @js.native
+  object ANY_LIST extends TopLevel[ANY_LIST with Double]
+  
+  /* 6 */ @js.native
+  object DONE extends TopLevel[DONE with Double]
+  
+  /* 4 */ @js.native
+  object DRAFTS extends TopLevel[DRAFTS with Double]
+  
+  /* 11 */ @js.native
+  object IMPORTANT extends TopLevel[IMPORTANT with Double]
+  
+  /* 0 */ @js.native
+  object INBOX extends TopLevel[INBOX with Double]
+  
+  /* 8 */ @js.native
+  object LABEL extends TopLevel[LABEL with Double]
+  
+  /* 7 */ @js.native
+  object REMINDERS extends TopLevel[REMINDERS with Double]
+  
+  /* 12 */ @js.native
+  object SEARCH extends TopLevel[SEARCH with Double]
+  
+  /* 2 */ @js.native
+  object SENT extends TopLevel[SENT with Double]
+  
+  /* 5 */ @js.native
+  object SNOOZED extends TopLevel[SNOOZED with Double]
+  
+  /* 10 */ @js.native
+  object SPAM extends TopLevel[SPAM with Double]
+  
+  /* 3 */ @js.native
+  object STARRED extends TopLevel[STARRED with Double]
+  
+  /* 9 */ @js.native
+  object TRASH extends TopLevel[TRASH with Double]
+  
 }
 

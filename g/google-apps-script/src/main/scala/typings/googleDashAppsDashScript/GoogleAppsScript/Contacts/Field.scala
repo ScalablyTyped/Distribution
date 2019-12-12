@@ -1,5 +1,49 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.AIM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ANNIVERSARY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ASSISTANT_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.BIRTHDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.BLOG
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.CALLBACK_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.COMPANY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FAMILY_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FTP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FULL_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GIVEN_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GOOGLE_TALK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GOOGLE_VOICE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_ADDRESS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_EMAIL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_FAX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_PAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_WEBSITE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ICQ
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.INITIALS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.JABBER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.JOB_TITLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MAIDEN_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MAIN_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MIDDLE_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MOBILE_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MSN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.NICKNAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.NOTES
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PAGER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PREFIX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PROFILE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.QQ
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SHORT_NAME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SKYPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SUFFIX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_ADDRESS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_EMAIL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_FAX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_PHONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_WEBSITE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.YAHOO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,50 +186,136 @@ object Field extends js.Object {
   @js.native
   sealed trait YAHOO extends Field
   
-  /* 28 */ val AIM: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.AIM with Double = js.native
-  /* 13 */ val ANNIVERSARY: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ANNIVERSARY with Double = js.native
-  /* 16 */ val ASSISTANT_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ASSISTANT_PHONE with Double = js.native
-  /* 12 */ val BIRTHDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.BIRTHDAY with Double = js.native
-  /* 35 */ val BLOG: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.BLOG with Double = js.native
-  /* 17 */ val CALLBACK_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.CALLBACK_PHONE with Double = js.native
-  /* 42 */ val COMPANY: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.COMPANY with Double = js.native
-  /* 3 */ val FAMILY_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FAMILY_NAME with Double = js.native
-  /* 36 */ val FTP: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FTP with Double = js.native
-  /* 0 */ val FULL_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.FULL_NAME with Double = js.native
-  /* 1 */ val GIVEN_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GIVEN_NAME with Double = js.native
-  /* 27 */ val GOOGLE_TALK: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GOOGLE_TALK with Double = js.native
-  /* 25 */ val GOOGLE_VOICE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.GOOGLE_VOICE with Double = js.native
-  /* 14 */ val HOME_ADDRESS: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_ADDRESS with Double = js.native
-  /* 10 */ val HOME_EMAIL: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_EMAIL with Double = js.native
-  /* 20 */ val HOME_FAX: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_FAX with Double = js.native
-  /* 38 */ val HOME_PAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_PAGE with Double = js.native
-  /* 22 */ val HOME_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_PHONE with Double = js.native
-  /* 40 */ val HOME_WEBSITE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.HOME_WEBSITE with Double = js.native
-  /* 33 */ val ICQ: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.ICQ with Double = js.native
-  /* 7 */ val INITIALS: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.INITIALS with Double = js.native
-  /* 34 */ val JABBER: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.JABBER with Double = js.native
-  /* 41 */ val JOB_TITLE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.JOB_TITLE with Double = js.native
-  /* 4 */ val MAIDEN_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MAIDEN_NAME with Double = js.native
-  /* 18 */ val MAIN_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MAIN_PHONE with Double = js.native
-  /* 2 */ val MIDDLE_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MIDDLE_NAME with Double = js.native
-  /* 24 */ val MOBILE_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MOBILE_PHONE with Double = js.native
-  /* 32 */ val MSN: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.MSN with Double = js.native
-  /* 5 */ val NICKNAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.NICKNAME with Double = js.native
-  /* 26 */ val NOTES: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.NOTES with Double = js.native
-  /* 19 */ val PAGER: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PAGER with Double = js.native
-  /* 8 */ val PREFIX: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PREFIX with Double = js.native
-  /* 37 */ val PROFILE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.PROFILE with Double = js.native
-  /* 31 */ val QQ: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.QQ with Double = js.native
-  /* 6 */ val SHORT_NAME: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SHORT_NAME with Double = js.native
-  /* 30 */ val SKYPE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SKYPE with Double = js.native
-  /* 9 */ val SUFFIX: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.SUFFIX with Double = js.native
-  /* 15 */ val WORK_ADDRESS: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_ADDRESS with Double = js.native
-  /* 11 */ val WORK_EMAIL: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_EMAIL with Double = js.native
-  /* 21 */ val WORK_FAX: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_FAX with Double = js.native
-  /* 23 */ val WORK_PHONE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_PHONE with Double = js.native
-  /* 39 */ val WORK_WEBSITE: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.WORK_WEBSITE with Double = js.native
-  /* 29 */ val YAHOO: typings.googleDashAppsDashScript.GoogleAppsScript.Contacts.Field.YAHOO with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Field with Double] = js.native
+  /* 28 */ @js.native
+  object AIM extends TopLevel[AIM with Double]
+  
+  /* 13 */ @js.native
+  object ANNIVERSARY extends TopLevel[ANNIVERSARY with Double]
+  
+  /* 16 */ @js.native
+  object ASSISTANT_PHONE extends TopLevel[ASSISTANT_PHONE with Double]
+  
+  /* 12 */ @js.native
+  object BIRTHDAY extends TopLevel[BIRTHDAY with Double]
+  
+  /* 35 */ @js.native
+  object BLOG extends TopLevel[BLOG with Double]
+  
+  /* 17 */ @js.native
+  object CALLBACK_PHONE extends TopLevel[CALLBACK_PHONE with Double]
+  
+  /* 42 */ @js.native
+  object COMPANY extends TopLevel[COMPANY with Double]
+  
+  /* 3 */ @js.native
+  object FAMILY_NAME extends TopLevel[FAMILY_NAME with Double]
+  
+  /* 36 */ @js.native
+  object FTP extends TopLevel[FTP with Double]
+  
+  /* 0 */ @js.native
+  object FULL_NAME extends TopLevel[FULL_NAME with Double]
+  
+  /* 1 */ @js.native
+  object GIVEN_NAME extends TopLevel[GIVEN_NAME with Double]
+  
+  /* 27 */ @js.native
+  object GOOGLE_TALK extends TopLevel[GOOGLE_TALK with Double]
+  
+  /* 25 */ @js.native
+  object GOOGLE_VOICE extends TopLevel[GOOGLE_VOICE with Double]
+  
+  /* 14 */ @js.native
+  object HOME_ADDRESS extends TopLevel[HOME_ADDRESS with Double]
+  
+  /* 10 */ @js.native
+  object HOME_EMAIL extends TopLevel[HOME_EMAIL with Double]
+  
+  /* 20 */ @js.native
+  object HOME_FAX extends TopLevel[HOME_FAX with Double]
+  
+  /* 38 */ @js.native
+  object HOME_PAGE extends TopLevel[HOME_PAGE with Double]
+  
+  /* 22 */ @js.native
+  object HOME_PHONE extends TopLevel[HOME_PHONE with Double]
+  
+  /* 40 */ @js.native
+  object HOME_WEBSITE extends TopLevel[HOME_WEBSITE with Double]
+  
+  /* 33 */ @js.native
+  object ICQ extends TopLevel[ICQ with Double]
+  
+  /* 7 */ @js.native
+  object INITIALS extends TopLevel[INITIALS with Double]
+  
+  /* 34 */ @js.native
+  object JABBER extends TopLevel[JABBER with Double]
+  
+  /* 41 */ @js.native
+  object JOB_TITLE extends TopLevel[JOB_TITLE with Double]
+  
+  /* 4 */ @js.native
+  object MAIDEN_NAME extends TopLevel[MAIDEN_NAME with Double]
+  
+  /* 18 */ @js.native
+  object MAIN_PHONE extends TopLevel[MAIN_PHONE with Double]
+  
+  /* 2 */ @js.native
+  object MIDDLE_NAME extends TopLevel[MIDDLE_NAME with Double]
+  
+  /* 24 */ @js.native
+  object MOBILE_PHONE extends TopLevel[MOBILE_PHONE with Double]
+  
+  /* 32 */ @js.native
+  object MSN extends TopLevel[MSN with Double]
+  
+  /* 5 */ @js.native
+  object NICKNAME extends TopLevel[NICKNAME with Double]
+  
+  /* 26 */ @js.native
+  object NOTES extends TopLevel[NOTES with Double]
+  
+  /* 19 */ @js.native
+  object PAGER extends TopLevel[PAGER with Double]
+  
+  /* 8 */ @js.native
+  object PREFIX extends TopLevel[PREFIX with Double]
+  
+  /* 37 */ @js.native
+  object PROFILE extends TopLevel[PROFILE with Double]
+  
+  /* 31 */ @js.native
+  object QQ extends TopLevel[QQ with Double]
+  
+  /* 6 */ @js.native
+  object SHORT_NAME extends TopLevel[SHORT_NAME with Double]
+  
+  /* 30 */ @js.native
+  object SKYPE extends TopLevel[SKYPE with Double]
+  
+  /* 9 */ @js.native
+  object SUFFIX extends TopLevel[SUFFIX with Double]
+  
+  /* 15 */ @js.native
+  object WORK_ADDRESS extends TopLevel[WORK_ADDRESS with Double]
+  
+  /* 11 */ @js.native
+  object WORK_EMAIL extends TopLevel[WORK_EMAIL with Double]
+  
+  /* 21 */ @js.native
+  object WORK_FAX extends TopLevel[WORK_FAX with Double]
+  
+  /* 23 */ @js.native
+  object WORK_PHONE extends TopLevel[WORK_PHONE with Double]
+  
+  /* 39 */ @js.native
+  object WORK_WEBSITE extends TopLevel[WORK_WEBSITE with Double]
+  
+  /* 29 */ @js.native
+  object YAHOO extends TopLevel[YAHOO with Double]
+  
 }
 

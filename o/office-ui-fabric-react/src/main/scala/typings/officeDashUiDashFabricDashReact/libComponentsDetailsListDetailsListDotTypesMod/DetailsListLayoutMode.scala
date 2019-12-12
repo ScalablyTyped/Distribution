@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode.fixedColumns
+import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode.justified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +26,13 @@ object DetailsListLayoutMode extends js.Object {
   @js.native
   sealed trait justified extends DetailsListLayoutMode
   
-  /* 0 */ val fixedColumns: typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode.fixedColumns with Double = js.native
-  /* 1 */ val justified: typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode.justified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DetailsListLayoutMode with Double] = js.native
+  /* 0 */ @js.native
+  object fixedColumns extends TopLevel[fixedColumns with Double]
+  
+  /* 1 */ @js.native
+  object justified extends TopLevel[justified with Double]
+  
 }
 

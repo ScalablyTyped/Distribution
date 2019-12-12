@@ -11,6 +11,8 @@ object atMaterialDashUiLabComponents extends atMaterialDashUiLabProps {
   @scala.inline
   def Rating: ComponentType[RatingProps] = js.constructorOf[typings.atMaterialDashUiLab.ratingMod.default].asInstanceOf[typings.react.reactMod.ComponentType[RatingProps]]
   @scala.inline
+  def RatingDefault: ComponentType[RatingDefaultProps] = typings.atMaterialDashUiLab.ratingMod.default.asInstanceOf[typings.react.reactMod.ComponentType[RatingDefaultProps]]
+  @scala.inline
   def SpeedDial: ComponentType[SpeedDialProps] = typings.atMaterialDashUiLab.speedDialSpeedDialMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialProps]]
   @scala.inline
   def SpeedDialAction: ComponentType[SpeedDialActionProps] = typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SpeedDialActionProps]]

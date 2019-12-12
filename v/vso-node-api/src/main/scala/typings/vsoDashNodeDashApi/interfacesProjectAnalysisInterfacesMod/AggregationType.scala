@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Daily
+import typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Hourly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object AggregationType extends js.Object {
   @js.native
   sealed trait Hourly extends AggregationType
   
-  /* 1 */ val Daily: typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Daily with Double = js.native
-  /* 0 */ val Hourly: typings.vsoDashNodeDashApi.interfacesProjectAnalysisInterfacesMod.AggregationType.Hourly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AggregationType with Double] = js.native
+  /* 1 */ @js.native
+  object Daily extends TopLevel[Daily with Double]
+  
+  /* 0 */ @js.native
+  object Hourly extends TopLevel[Hourly with Double]
+  
 }
 

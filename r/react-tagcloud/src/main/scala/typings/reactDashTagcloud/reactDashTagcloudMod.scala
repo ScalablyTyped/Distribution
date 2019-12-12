@@ -1,5 +1,6 @@
 package typings.reactDashTagcloud
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.reactDashTagcloud.ReactTagCloud.DefaultRendererFactory
@@ -20,6 +21,8 @@ object reactDashTagcloudMod extends js.Object {
   }
   
   val DefaultRenderer: DefaultRendererFactory = js.native
-  val TagCloud: TagCloudClass = js.native
+  @js.native
+  object TagCloud extends TopLevel[TagCloudClass]
+  
 }
 

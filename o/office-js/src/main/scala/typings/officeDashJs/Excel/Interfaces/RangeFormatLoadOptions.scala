@@ -10,89 +10,90 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
+@js.native
 trait RangeFormatLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Indicates if text is automatically indented when text alignment is set to equal distribution.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.undefined
+  var autoIndent: js.UndefOr[Boolean] = js.native
   /**
     *
     * Collection of border objects that apply to the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.undefined
+  var borders: js.UndefOr[RangeBorderCollectionLoadOptions] = js.native
   /**
     *
     * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnWidth: js.UndefOr[Boolean] = js.undefined
+  var columnWidth: js.UndefOr[Boolean] = js.native
   /**
     *
     * Returns the fill object defined on the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var fill: js.UndefOr[RangeFillLoadOptions] = js.undefined
+  var fill: js.UndefOr[RangeFillLoadOptions] = js.native
   /**
     *
     * Returns the font object defined on the overall range.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[RangeFontLoadOptions] = js.undefined
+  var font: js.UndefOr[RangeFontLoadOptions] = js.native
   /**
     *
     * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
+  var horizontalAlignment: js.UndefOr[Boolean] = js.native
   /**
     *
     * An integer from 0 to 250 that indicates the indent level.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var indentLevel: js.UndefOr[Boolean] = js.undefined
+  var indentLevel: js.UndefOr[Boolean] = js.native
   /**
     *
     * Returns the format protection object for a range.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[FormatProtectionLoadOptions] = js.undefined
+  var protection: js.UndefOr[FormatProtectionLoadOptions] = js.native
   /**
     *
     * The reading order for the range.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[Boolean] = js.undefined
+  var readingOrder: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowHeight: js.UndefOr[Boolean] = js.undefined
+  var rowHeight: js.UndefOr[Boolean] = js.native
   /**
     *
     * Indicates if text automatically shrinks to fit in the available column width.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
+  var shrinkToFit: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets or sets the text orientation of all the cells within the range.
@@ -101,7 +102,7 @@ trait RangeFormatLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textOrientation: js.UndefOr[Boolean] = js.undefined
+  var textOrientation: js.UndefOr[Boolean] = js.native
   /**
     *
     * Determines if the row height of the Range object equals the standard height of the sheet.
@@ -111,7 +112,7 @@ trait RangeFormatLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardHeight: js.UndefOr[Boolean] = js.undefined
+  var useStandardHeight: js.UndefOr[Boolean] = js.native
   /**
     *
     * Indicates whether the column width of the Range object equals the standard width of the sheet.
@@ -121,63 +122,20 @@ trait RangeFormatLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var useStandardWidth: js.UndefOr[Boolean] = js.undefined
+  var useStandardWidth: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
+  var verticalAlignment: js.UndefOr[Boolean] = js.native
   /**
     *
     * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
     *
     * [Api set: ExcelApi 1.1]
     */
-  var wrapText: js.UndefOr[Boolean] = js.undefined
-}
-
-object RangeFormatLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    autoIndent: js.UndefOr[Boolean] = js.undefined,
-    borders: RangeBorderCollectionLoadOptions = null,
-    columnWidth: js.UndefOr[Boolean] = js.undefined,
-    fill: RangeFillLoadOptions = null,
-    font: RangeFontLoadOptions = null,
-    horizontalAlignment: js.UndefOr[Boolean] = js.undefined,
-    indentLevel: js.UndefOr[Boolean] = js.undefined,
-    protection: FormatProtectionLoadOptions = null,
-    readingOrder: js.UndefOr[Boolean] = js.undefined,
-    rowHeight: js.UndefOr[Boolean] = js.undefined,
-    shrinkToFit: js.UndefOr[Boolean] = js.undefined,
-    textOrientation: js.UndefOr[Boolean] = js.undefined,
-    useStandardHeight: js.UndefOr[Boolean] = js.undefined,
-    useStandardWidth: js.UndefOr[Boolean] = js.undefined,
-    verticalAlignment: js.UndefOr[Boolean] = js.undefined,
-    wrapText: js.UndefOr[Boolean] = js.undefined
-  ): RangeFormatLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentLevel)) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
-    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RangeFormatLoadOptions]
-  }
+  var wrapText: js.UndefOr[Boolean] = js.native
 }
 

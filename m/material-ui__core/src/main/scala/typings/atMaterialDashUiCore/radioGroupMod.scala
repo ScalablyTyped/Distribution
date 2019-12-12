@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.radioGroupRadioGroupMod.RadioGroupProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object radioGroupMod extends js.Object {
     def this(props: RadioGroupProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[RadioGroupProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[RadioGroupProps]]
+  
 }
 

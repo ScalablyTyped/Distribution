@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailType.icon
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailType.image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ThumbnailType extends js.Object {
   @js.native
   sealed trait image extends ThumbnailType
   
-  /* 1 */ val icon: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailType.icon with Double = js.native
-  /* 0 */ val image: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailType.image with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ThumbnailType with Double] = js.native
+  /* 1 */ @js.native
+  object icon extends TopLevel[icon with Double]
+  
+  /* 0 */ @js.native
+  object image extends TopLevel[image with Double]
+  
 }
 

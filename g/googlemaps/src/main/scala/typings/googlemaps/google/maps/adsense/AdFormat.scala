@@ -1,5 +1,24 @@
 package typings.googlemaps.google.maps.adsense
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.adsense.AdFormat.BANNER
+import typings.googlemaps.google.maps.adsense.AdFormat.BUTTON
+import typings.googlemaps.google.maps.adsense.AdFormat.HALF_BANNER
+import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_HORIZONTAL_LINK_UNIT
+import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_RECTANGLE
+import typings.googlemaps.google.maps.adsense.AdFormat.LARGE_VERTICAL_LINK_UNIT
+import typings.googlemaps.google.maps.adsense.AdFormat.LEADERBOARD
+import typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_RECTANGLE
+import typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_VERTICAL_LINK_UNIT
+import typings.googlemaps.google.maps.adsense.AdFormat.SKYSCRAPER
+import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_HORIZONTAL_LINK_UNIT
+import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_RECTANGLE
+import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_SQUARE
+import typings.googlemaps.google.maps.adsense.AdFormat.SMALL_VERTICAL_LINK_UNIT
+import typings.googlemaps.google.maps.adsense.AdFormat.SQUARE
+import typings.googlemaps.google.maps.adsense.AdFormat.VERTICAL_BANNER
+import typings.googlemaps.google.maps.adsense.AdFormat.WIDE_SKYSCRAPER
+import typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,25 +83,61 @@ object AdFormat extends js.Object {
   @js.native
   sealed trait X_LARGE_VERTICAL_LINK_UNIT extends AdFormat
   
-  /* "468x60_as" */ val BANNER: typings.googlemaps.google.maps.adsense.AdFormat.BANNER with String = js.native
-  /* "125x125_as" */ val BUTTON: typings.googlemaps.google.maps.adsense.AdFormat.BUTTON with String = js.native
-  /* "234x60_as" */ val HALF_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.HALF_BANNER with String = js.native
-  /* "728x15_0ads_al" */ val LARGE_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_HORIZONTAL_LINK_UNIT with String = js.native
-  /* "336x280_as" */ val LARGE_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_RECTANGLE with String = js.native
-  /* "180x90_0ads_al" */ val LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.LARGE_VERTICAL_LINK_UNIT with String = js.native
-  /* "728x90_as" */ val LEADERBOARD: typings.googlemaps.google.maps.adsense.AdFormat.LEADERBOARD with String = js.native
-  /* "300x250_as" */ val MEDIUM_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_RECTANGLE with String = js.native
-  /* "160x90_0ads_al" */ val MEDIUM_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.MEDIUM_VERTICAL_LINK_UNIT with String = js.native
-  /* "120x600_as" */ val SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.SKYSCRAPER with String = js.native
-  /* "468x15_0ads_al" */ val SMALL_HORIZONTAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_HORIZONTAL_LINK_UNIT with String = js.native
-  /* "180x150_as" */ val SMALL_RECTANGLE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_RECTANGLE with String = js.native
-  /* "200x200_as" */ val SMALL_SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_SQUARE with String = js.native
-  /* "120x90_0ads_al" */ val SMALL_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.SMALL_VERTICAL_LINK_UNIT with String = js.native
-  /* "250x250_as" */ val SQUARE: typings.googlemaps.google.maps.adsense.AdFormat.SQUARE with String = js.native
-  /* "120x240_as" */ val VERTICAL_BANNER: typings.googlemaps.google.maps.adsense.AdFormat.VERTICAL_BANNER with String = js.native
-  /* "160x600_as" */ val WIDE_SKYSCRAPER: typings.googlemaps.google.maps.adsense.AdFormat.WIDE_SKYSCRAPER with String = js.native
-  /* "200x90_0ads_al" */ val X_LARGE_VERTICAL_LINK_UNIT: typings.googlemaps.google.maps.adsense.AdFormat.X_LARGE_VERTICAL_LINK_UNIT with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AdFormat with String] = js.native
+  /* "468x60_as" */ @js.native
+  object BANNER extends TopLevel[BANNER with String]
+  
+  /* "125x125_as" */ @js.native
+  object BUTTON extends TopLevel[BUTTON with String]
+  
+  /* "234x60_as" */ @js.native
+  object HALF_BANNER extends TopLevel[HALF_BANNER with String]
+  
+  /* "728x15_0ads_al" */ @js.native
+  object LARGE_HORIZONTAL_LINK_UNIT extends TopLevel[LARGE_HORIZONTAL_LINK_UNIT with String]
+  
+  /* "336x280_as" */ @js.native
+  object LARGE_RECTANGLE extends TopLevel[LARGE_RECTANGLE with String]
+  
+  /* "180x90_0ads_al" */ @js.native
+  object LARGE_VERTICAL_LINK_UNIT extends TopLevel[LARGE_VERTICAL_LINK_UNIT with String]
+  
+  /* "728x90_as" */ @js.native
+  object LEADERBOARD extends TopLevel[LEADERBOARD with String]
+  
+  /* "300x250_as" */ @js.native
+  object MEDIUM_RECTANGLE extends TopLevel[MEDIUM_RECTANGLE with String]
+  
+  /* "160x90_0ads_al" */ @js.native
+  object MEDIUM_VERTICAL_LINK_UNIT extends TopLevel[MEDIUM_VERTICAL_LINK_UNIT with String]
+  
+  /* "120x600_as" */ @js.native
+  object SKYSCRAPER extends TopLevel[SKYSCRAPER with String]
+  
+  /* "468x15_0ads_al" */ @js.native
+  object SMALL_HORIZONTAL_LINK_UNIT extends TopLevel[SMALL_HORIZONTAL_LINK_UNIT with String]
+  
+  /* "180x150_as" */ @js.native
+  object SMALL_RECTANGLE extends TopLevel[SMALL_RECTANGLE with String]
+  
+  /* "200x200_as" */ @js.native
+  object SMALL_SQUARE extends TopLevel[SMALL_SQUARE with String]
+  
+  /* "120x90_0ads_al" */ @js.native
+  object SMALL_VERTICAL_LINK_UNIT extends TopLevel[SMALL_VERTICAL_LINK_UNIT with String]
+  
+  /* "250x250_as" */ @js.native
+  object SQUARE extends TopLevel[SQUARE with String]
+  
+  /* "120x240_as" */ @js.native
+  object VERTICAL_BANNER extends TopLevel[VERTICAL_BANNER with String]
+  
+  /* "160x600_as" */ @js.native
+  object WIDE_SKYSCRAPER extends TopLevel[WIDE_SKYSCRAPER with String]
+  
+  /* "200x90_0ads_al" */ @js.native
+  object X_LARGE_VERTICAL_LINK_UNIT extends TopLevel[X_LARGE_VERTICAL_LINK_UNIT with String]
+  
 }
 

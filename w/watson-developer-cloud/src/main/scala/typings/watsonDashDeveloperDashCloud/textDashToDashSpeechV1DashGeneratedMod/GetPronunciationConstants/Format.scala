@@ -1,5 +1,8 @@
 package typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IBM
+import typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IPA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +20,13 @@ object Format extends js.Object {
   @js.native
   sealed trait IPA extends Format
   
-  /* "ibm" */ val IBM: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IBM with String = js.native
-  /* "ipa" */ val IPA: typings.watsonDashDeveloperDashCloud.textDashToDashSpeechV1DashGeneratedMod.GetPronunciationConstants.Format.IPA with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Format with String] = js.native
+  /* "ibm" */ @js.native
+  object IBM extends TopLevel[IBM with String]
+  
+  /* "ipa" */ @js.native
+  object IPA extends TopLevel[IPA with String]
+  
 }
 

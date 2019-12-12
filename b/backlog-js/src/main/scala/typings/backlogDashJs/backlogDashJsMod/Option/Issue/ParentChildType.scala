@@ -1,5 +1,11 @@
 package typings.backlogDashJs.backlogDashJsMod.Option.Issue
 
+import org.scalablytyped.runtime.TopLevel
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.All
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Child
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChild
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChildNotParent
+import typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ParentChildType extends js.Object {
   @js.native
   sealed trait Parent extends ParentChildType
   
-  /* 0 */ val All: typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.All with Double = js.native
-  /* 2 */ val Child: typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Child with Double = js.native
-  /* 1 */ val NotChild: typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChild with Double = js.native
-  /* 3 */ val NotChildNotParent: typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.NotChildNotParent with Double = js.native
-  /* 4 */ val Parent: typings.backlogDashJs.backlogDashJsMod.Option.Issue.ParentChildType.Parent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParentChildType with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 2 */ @js.native
+  object Child extends TopLevel[Child with Double]
+  
+  /* 1 */ @js.native
+  object NotChild extends TopLevel[NotChild with Double]
+  
+  /* 3 */ @js.native
+  object NotChildNotParent extends TopLevel[NotChildNotParent with Double]
+  
+  /* 4 */ @js.native
+  object Parent extends TopLevel[Parent with Double]
+  
 }
 

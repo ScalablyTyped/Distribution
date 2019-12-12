@@ -1,5 +1,11 @@
 package typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Added
+import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Current
+import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.NoChange
+import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Removed
+import typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Reset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object WatchTargetChangeState extends js.Object {
   @js.native
   sealed trait Reset extends WatchTargetChangeState
   
-  /* 1 */ val Added: typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Added with Double = js.native
-  /* 3 */ val Current: typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Current with Double = js.native
-  /* 0 */ val NoChange: typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.NoChange with Double = js.native
-  /* 2 */ val Removed: typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Removed with Double = js.native
-  /* 4 */ val Reset: typings.atFirebaseFirestore.distSrcRemoteWatchUnderscoreChangeMod.WatchTargetChangeState.Reset with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WatchTargetChangeState with Double] = js.native
+  /* 1 */ @js.native
+  object Added extends TopLevel[Added with Double]
+  
+  /* 3 */ @js.native
+  object Current extends TopLevel[Current with Double]
+  
+  /* 0 */ @js.native
+  object NoChange extends TopLevel[NoChange with Double]
+  
+  /* 2 */ @js.native
+  object Removed extends TopLevel[Removed with Double]
+  
+  /* 4 */ @js.native
+  object Reset extends TopLevel[Reset with Double]
+  
 }
 

@@ -8,11 +8,11 @@ import typings.atAwsDashSdkClientDashLambdaDashNode.typesDeleteFunctionException
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateEventSourceMappingExceptionsUnionMod.UpdateEventSourceMappingExceptionsUnion
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceConflictException
   extends ServiceException[_ResourceConflictExceptionDetails]
      with AddPermissionExceptionsUnion
@@ -23,21 +23,6 @@ trait ResourceConflictException
      with UpdateEventSourceMappingExceptionsUnion
      with UpdateFunctionConfigurationExceptionsUnion {
   @JSName("name")
-  var name_ResourceConflictException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.ResourceConflictException
-}
-
-object ResourceConflictException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ResourceConflictExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.ResourceConflictException,
-    stack: String = null
-  ): ResourceConflictException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceConflictException]
-  }
+  var name_ResourceConflictException: typings.atAwsDashSdkClientDashLambdaDashNode.atAwsDashSdkClientDashLambdaDashNodeStrings.ResourceConflictException = js.native
 }
 

@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.SYNONYM
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object ListSynonymsConstants extends js.Object {
     @js.native
     sealed trait UPDATED extends Sort
     
-    /* "synonym" */ val SYNONYM: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.SYNONYM with String = js.native
-    /* "updated" */ val UPDATED: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListSynonymsConstants.Sort.UPDATED with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
+    /* "synonym" */ @js.native
+    object SYNONYM extends TopLevel[SYNONYM with String]
+    
+    /* "updated" */ @js.native
+    object UPDATED extends TopLevel[UPDATED with String]
+    
   }
   
 }

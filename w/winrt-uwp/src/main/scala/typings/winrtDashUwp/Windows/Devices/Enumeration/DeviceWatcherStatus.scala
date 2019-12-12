@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.aborted
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.created
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.enumerationCompleted
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.started
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.stopped
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object DeviceWatcherStatus extends js.Object {
   @js.native
   sealed trait stopping extends DeviceWatcherStatus
   
-  /* 5 */ val aborted: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.aborted with Double = js.native
-  /* 0 */ val created: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.created with Double = js.native
-  /* 2 */ val enumerationCompleted: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.enumerationCompleted with Double = js.native
-  /* 1 */ val started: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.started with Double = js.native
-  /* 4 */ val stopped: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.stopped with Double = js.native
-  /* 3 */ val stopping: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceWatcherStatus.stopping with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeviceWatcherStatus with Double] = js.native
+  /* 5 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 0 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 2 */ @js.native
+  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
+  
+  /* 1 */ @js.native
+  object started extends TopLevel[started with Double]
+  
+  /* 4 */ @js.native
+  object stopped extends TopLevel[stopped with Double]
+  
+  /* 3 */ @js.native
+  object stopping extends TopLevel[stopping with Double]
+  
 }
 

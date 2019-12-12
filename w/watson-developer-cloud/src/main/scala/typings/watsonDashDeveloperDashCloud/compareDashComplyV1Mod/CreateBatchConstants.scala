@@ -1,7 +1,12 @@
 package typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.ELEMENT_CLASSIFICATION
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.HTML_CONVERSION
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.TABLES
 import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.CONTRACTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +33,17 @@ object CreateBatchConstants extends js.Object {
     @js.native
     sealed trait TABLES extends Function
     
-    /* "element_classification" */ val ELEMENT_CLASSIFICATION: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.ELEMENT_CLASSIFICATION with String = js.native
-    /* "html_conversion" */ val HTML_CONVERSION: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.HTML_CONVERSION with String = js.native
-    /* "tables" */ val TABLES: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Function.TABLES with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Function with String] = js.native
+    /* "element_classification" */ @js.native
+    object ELEMENT_CLASSIFICATION extends TopLevel[ELEMENT_CLASSIFICATION with String]
+    
+    /* "html_conversion" */ @js.native
+    object HTML_CONVERSION extends TopLevel[HTML_CONVERSION with String]
+    
+    /* "tables" */ @js.native
+    object TABLES extends TopLevel[TABLES with String]
+    
   }
   
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
@@ -44,10 +55,17 @@ object CreateBatchConstants extends js.Object {
     @js.native
     sealed trait TABLES extends Model
     
-    /* "contracts" */ val CONTRACTS: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.CONTRACTS with String = js.native
-    /* "tables" */ val TABLES: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.TABLES with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Model with String] = js.native
+    /* "contracts" */ @js.native
+    object CONTRACTS extends TopLevel[CONTRACTS with String]
+    
+    /* "tables" */ @js.native
+    object TABLES
+      extends TopLevel[
+              typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.CreateBatchConstants.Model.TABLES with String
+            ]
+    
   }
   
 }

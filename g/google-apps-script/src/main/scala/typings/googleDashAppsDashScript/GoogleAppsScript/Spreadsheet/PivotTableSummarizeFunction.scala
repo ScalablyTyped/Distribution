@@ -1,5 +1,20 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.AVERAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNTA
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNTUNIQUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.CUSTOM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MAX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MEDIAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MIN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.PRODUCT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.STDEV
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.STDEVP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.SUM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.VAR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.VARP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,21 +70,49 @@ object PivotTableSummarizeFunction extends js.Object {
   @js.native
   sealed trait VARP extends PivotTableSummarizeFunction
   
-  /* 5 */ val AVERAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.AVERAGE with Double = js.native
-  /* 3 */ val COUNT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNT with Double = js.native
-  /* 2 */ val COUNTA: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNTA with Double = js.native
-  /* 4 */ val COUNTUNIQUE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.COUNTUNIQUE with Double = js.native
-  /* 0 */ val CUSTOM: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.CUSTOM with Double = js.native
-  /* 6 */ val MAX: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MAX with Double = js.native
-  /* 8 */ val MEDIAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MEDIAN with Double = js.native
-  /* 7 */ val MIN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.MIN with Double = js.native
-  /* 9 */ val PRODUCT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.PRODUCT with Double = js.native
-  /* 10 */ val STDEV: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.STDEV with Double = js.native
-  /* 11 */ val STDEVP: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.STDEVP with Double = js.native
-  /* 1 */ val SUM: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.SUM with Double = js.native
-  /* 12 */ val VAR: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.VAR with Double = js.native
-  /* 13 */ val VARP: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction.VARP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PivotTableSummarizeFunction with Double] = js.native
+  /* 5 */ @js.native
+  object AVERAGE extends TopLevel[AVERAGE with Double]
+  
+  /* 3 */ @js.native
+  object COUNT extends TopLevel[COUNT with Double]
+  
+  /* 2 */ @js.native
+  object COUNTA extends TopLevel[COUNTA with Double]
+  
+  /* 4 */ @js.native
+  object COUNTUNIQUE extends TopLevel[COUNTUNIQUE with Double]
+  
+  /* 0 */ @js.native
+  object CUSTOM extends TopLevel[CUSTOM with Double]
+  
+  /* 6 */ @js.native
+  object MAX extends TopLevel[MAX with Double]
+  
+  /* 8 */ @js.native
+  object MEDIAN extends TopLevel[MEDIAN with Double]
+  
+  /* 7 */ @js.native
+  object MIN extends TopLevel[MIN with Double]
+  
+  /* 9 */ @js.native
+  object PRODUCT extends TopLevel[PRODUCT with Double]
+  
+  /* 10 */ @js.native
+  object STDEV extends TopLevel[STDEV with Double]
+  
+  /* 11 */ @js.native
+  object STDEVP extends TopLevel[STDEVP with Double]
+  
+  /* 1 */ @js.native
+  object SUM extends TopLevel[SUM with Double]
+  
+  /* 12 */ @js.native
+  object VAR extends TopLevel[VAR with Double]
+  
+  /* 13 */ @js.native
+  object VARP extends TopLevel[VARP with Double]
+  
 }
 

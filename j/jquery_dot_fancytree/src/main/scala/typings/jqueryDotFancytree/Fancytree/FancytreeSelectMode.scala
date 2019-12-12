@@ -1,5 +1,9 @@
 package typings.jqueryDotFancytree.Fancytree
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.multi
+import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.mutlti_hier
+import typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object FancytreeSelectMode extends js.Object {
   @js.native
   sealed trait single extends FancytreeSelectMode
   
-  /* 2 */ val multi: typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.multi with Double = js.native
-  /* 3 */ val mutlti_hier: typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.mutlti_hier with Double = js.native
-  /* 1 */ val single: typings.jqueryDotFancytree.Fancytree.FancytreeSelectMode.single with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FancytreeSelectMode with Double] = js.native
+  /* 2 */ @js.native
+  object multi extends TopLevel[multi with Double]
+  
+  /* 3 */ @js.native
+  object mutlti_hier extends TopLevel[mutlti_hier with Double]
+  
+  /* 1 */ @js.native
+  object single extends TopLevel[single with Double]
+  
 }
 

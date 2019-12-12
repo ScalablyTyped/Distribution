@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Create
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Delete
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ReviewEventOperation extends js.Object {
   @js.native
   sealed trait Update extends ReviewEventOperation
   
-  /* 1 */ val Create: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Create with Double = js.native
-  /* 3 */ val Delete: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Delete with Double = js.native
-  /* 2 */ val Update: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewEventOperation.Update with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReviewEventOperation with Double] = js.native
+  /* 1 */ @js.native
+  object Create extends TopLevel[Create with Double]
+  
+  /* 3 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 2 */ @js.native
+  object Update extends TopLevel[Update with Double]
+  
 }
 

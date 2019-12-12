@@ -1,5 +1,10 @@
 package typings.atAngularCommon.atAngularCommonMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Currency
+import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Decimal
+import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Percent
+import typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Scientific
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object NumberFormatStyle extends js.Object {
   @js.native
   sealed trait Scientific extends NumberFormatStyle
   
-  /* 2 */ val Currency: typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Currency with Double = js.native
-  /* 0 */ val Decimal: typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Decimal with Double = js.native
-  /* 1 */ val Percent: typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Percent with Double = js.native
-  /* 3 */ val Scientific: typings.atAngularCommon.atAngularCommonMod.NumberFormatStyle.Scientific with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NumberFormatStyle with Double] = js.native
+  /* 2 */ @js.native
+  object Currency extends TopLevel[Currency with Double]
+  
+  /* 0 */ @js.native
+  object Decimal extends TopLevel[Decimal with Double]
+  
+  /* 1 */ @js.native
+  object Percent extends TopLevel[Percent with Double]
+  
+  /* 3 */ @js.native
+  object Scientific extends TopLevel[Scientific with Double]
+  
 }
 

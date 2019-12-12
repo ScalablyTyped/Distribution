@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.accepted
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.declined
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.tentative
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AppointmentParticipantResponse extends js.Object {
   @js.native
   sealed trait unknown extends AppointmentParticipantResponse
   
-  /* 2 */ val accepted: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.accepted with Double = js.native
-  /* 3 */ val declined: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.declined with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.none with Double = js.native
-  /* 1 */ val tentative: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.tentative with Double = js.native
-  /* 4 */ val unknown: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentParticipantResponse.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentParticipantResponse with Double] = js.native
+  /* 2 */ @js.native
+  object accepted extends TopLevel[accepted with Double]
+  
+  /* 3 */ @js.native
+  object declined extends TopLevel[declined with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object tentative extends TopLevel[tentative with Double]
+  
+  /* 4 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

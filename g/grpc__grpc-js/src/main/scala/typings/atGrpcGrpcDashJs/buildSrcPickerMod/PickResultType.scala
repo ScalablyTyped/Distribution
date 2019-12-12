@@ -1,5 +1,9 @@
 package typings.atGrpcGrpcDashJs.buildSrcPickerMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.COMPLETE
+import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.QUEUE
+import typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.TRANSIENT_FAILURE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PickResultType extends js.Object {
   @js.native
   sealed trait TRANSIENT_FAILURE extends PickResultType
   
-  /* 0 */ val COMPLETE: typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.COMPLETE with Double = js.native
-  /* 1 */ val QUEUE: typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.QUEUE with Double = js.native
-  /* 2 */ val TRANSIENT_FAILURE: typings.atGrpcGrpcDashJs.buildSrcPickerMod.PickResultType.TRANSIENT_FAILURE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PickResultType with Double] = js.native
+  /* 0 */ @js.native
+  object COMPLETE extends TopLevel[COMPLETE with Double]
+  
+  /* 1 */ @js.native
+  object QUEUE extends TopLevel[QUEUE with Double]
+  
+  /* 2 */ @js.native
+  object TRANSIENT_FAILURE extends TopLevel[TRANSIENT_FAILURE with Double]
+  
 }
 

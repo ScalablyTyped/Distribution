@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.UserPictureSize.size1080x1080
+import typings.winrtDashUwp.Windows.System.UserPictureSize.size208x208
+import typings.winrtDashUwp.Windows.System.UserPictureSize.size424x424
+import typings.winrtDashUwp.Windows.System.UserPictureSize.size64x64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object UserPictureSize extends js.Object {
   @js.native
   sealed trait size64x64 extends UserPictureSize
   
-  /* 3 */ val size1080x1080: typings.winrtDashUwp.Windows.System.UserPictureSize.size1080x1080 with Double = js.native
-  /* 1 */ val size208x208: typings.winrtDashUwp.Windows.System.UserPictureSize.size208x208 with Double = js.native
-  /* 2 */ val size424x424: typings.winrtDashUwp.Windows.System.UserPictureSize.size424x424 with Double = js.native
-  /* 0 */ val size64x64: typings.winrtDashUwp.Windows.System.UserPictureSize.size64x64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserPictureSize with Double] = js.native
+  /* 3 */ @js.native
+  object size1080x1080 extends TopLevel[size1080x1080 with Double]
+  
+  /* 1 */ @js.native
+  object size208x208 extends TopLevel[size208x208 with Double]
+  
+  /* 2 */ @js.native
+  object size424x424 extends TopLevel[size424x424 with Double]
+  
+  /* 0 */ @js.native
+  object size64x64 extends TopLevel[size64x64 with Double]
+  
 }
 

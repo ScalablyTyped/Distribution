@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bold
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bolder
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Lighter
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object FontWeight extends js.Object {
   @js.native
   sealed trait Normal extends FontWeight
   
-  /* 1 */ val Bold: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bold with Double = js.native
-  /* 2 */ val Bolder: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Bolder with Double = js.native
-  /* 3 */ val Lighter: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Lighter with Double = js.native
-  /* 0 */ val Normal: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.FontWeight.Normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FontWeight with Double] = js.native
+  /* 1 */ @js.native
+  object Bold extends TopLevel[Bold with Double]
+  
+  /* 2 */ @js.native
+  object Bolder extends TopLevel[Bolder with Double]
+  
+  /* 3 */ @js.native
+  object Lighter extends TopLevel[Lighter with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
 }
 

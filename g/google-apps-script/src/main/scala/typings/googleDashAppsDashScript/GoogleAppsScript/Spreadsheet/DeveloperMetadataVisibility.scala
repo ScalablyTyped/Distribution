@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.DOCUMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.PROJECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object DeveloperMetadataVisibility extends js.Object {
   @js.native
   sealed trait PROJECT extends DeveloperMetadataVisibility
   
-  /* 0 */ val DOCUMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.DOCUMENT with Double = js.native
-  /* 1 */ val PROJECT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.DeveloperMetadataVisibility.PROJECT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeveloperMetadataVisibility with Double] = js.native
+  /* 0 */ @js.native
+  object DOCUMENT extends TopLevel[DOCUMENT with Double]
+  
+  /* 1 */ @js.native
+  object PROJECT extends TopLevel[PROJECT with Double]
+  
 }
 

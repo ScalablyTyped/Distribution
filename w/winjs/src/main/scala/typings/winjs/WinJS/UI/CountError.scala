@@ -1,5 +1,7 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.UI.CountError.noResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +21,10 @@ object CountError extends js.Object {
   @js.native
   sealed trait noResponse extends CountError
   
-  /* 0 */ val noResponse: typings.winjs.WinJS.UI.CountError.noResponse with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CountError with Double] = js.native
+  /* 0 */ @js.native
+  object noResponse extends TopLevel[noResponse with Double]
+  
 }
 

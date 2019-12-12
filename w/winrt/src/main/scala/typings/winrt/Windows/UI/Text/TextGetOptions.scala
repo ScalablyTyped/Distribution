@@ -1,5 +1,14 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.TextGetOptions.adjustCrlf
+import typings.winrt.Windows.UI.Text.TextGetOptions.allowFinalEop
+import typings.winrt.Windows.UI.Text.TextGetOptions.formatRtf
+import typings.winrt.Windows.UI.Text.TextGetOptions.includeNumbering
+import typings.winrt.Windows.UI.Text.TextGetOptions.noHidden
+import typings.winrt.Windows.UI.Text.TextGetOptions.none
+import typings.winrt.Windows.UI.Text.TextGetOptions.useCrlf
+import typings.winrt.Windows.UI.Text.TextGetOptions.useObjectText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object TextGetOptions extends js.Object {
   @js.native
   sealed trait useObjectText extends TextGetOptions
   
-  /* 1 */ val adjustCrlf: typings.winrt.Windows.UI.Text.TextGetOptions.adjustCrlf with Double = js.native
-  /* 4 */ val allowFinalEop: typings.winrt.Windows.UI.Text.TextGetOptions.allowFinalEop with Double = js.native
-  /* 7 */ val formatRtf: typings.winrt.Windows.UI.Text.TextGetOptions.formatRtf with Double = js.native
-  /* 6 */ val includeNumbering: typings.winrt.Windows.UI.Text.TextGetOptions.includeNumbering with Double = js.native
-  /* 5 */ val noHidden: typings.winrt.Windows.UI.Text.TextGetOptions.noHidden with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.UI.Text.TextGetOptions.none with Double = js.native
-  /* 2 */ val useCrlf: typings.winrt.Windows.UI.Text.TextGetOptions.useCrlf with Double = js.native
-  /* 3 */ val useObjectText: typings.winrt.Windows.UI.Text.TextGetOptions.useObjectText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextGetOptions with Double] = js.native
+  /* 1 */ @js.native
+  object adjustCrlf extends TopLevel[adjustCrlf with Double]
+  
+  /* 4 */ @js.native
+  object allowFinalEop extends TopLevel[allowFinalEop with Double]
+  
+  /* 7 */ @js.native
+  object formatRtf extends TopLevel[formatRtf with Double]
+  
+  /* 6 */ @js.native
+  object includeNumbering extends TopLevel[includeNumbering with Double]
+  
+  /* 5 */ @js.native
+  object noHidden extends TopLevel[noHidden with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object useCrlf extends TopLevel[useCrlf with Double]
+  
+  /* 3 */ @js.native
+  object useObjectText extends TopLevel[useObjectText with Double]
+  
 }
 

@@ -1,6 +1,21 @@
 package typings.wonderDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.CLICK
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYDOWN
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYPRESS
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYUP
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEDOWN
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEDRAG
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEMOVE
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEOUT
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEOVER
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEUP
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEWHEEL
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHDOWN
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHMOVE
+import typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHUP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,22 +73,50 @@ object distEs2015EventObjectEventNameHandlerMod extends js.Object {
     @js.native
     sealed trait TOUCHUP extends EEventName
     
-    /* 0 */ val CLICK: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.CLICK with Double = js.native
-    /* 11 */ val KEYDOWN: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYDOWN with Double = js.native
-    /* 13 */ val KEYPRESS: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYPRESS with Double = js.native
-    /* 12 */ val KEYUP: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.KEYUP with Double = js.native
-    /* 5 */ val MOUSEDOWN: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEDOWN with Double = js.native
-    /* 7 */ val MOUSEDRAG: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEDRAG with Double = js.native
-    /* 4 */ val MOUSEMOVE: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEMOVE with Double = js.native
-    /* 3 */ val MOUSEOUT: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEOUT with Double = js.native
-    /* 1 */ val MOUSEOVER: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEOVER with Double = js.native
-    /* 2 */ val MOUSEUP: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEUP with Double = js.native
-    /* 6 */ val MOUSEWHEEL: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.MOUSEWHEEL with Double = js.native
-    /* 10 */ val TOUCHDOWN: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHDOWN with Double = js.native
-    /* 9 */ val TOUCHMOVE: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHMOVE with Double = js.native
-    /* 8 */ val TOUCHUP: typings.wonderDotJs.distEs2015EventObjectEventNameHandlerMod.EEventName.TOUCHUP with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EEventName with Double] = js.native
+    /* 0 */ @js.native
+    object CLICK extends TopLevel[CLICK with Double]
+    
+    /* 11 */ @js.native
+    object KEYDOWN extends TopLevel[KEYDOWN with Double]
+    
+    /* 13 */ @js.native
+    object KEYPRESS extends TopLevel[KEYPRESS with Double]
+    
+    /* 12 */ @js.native
+    object KEYUP extends TopLevel[KEYUP with Double]
+    
+    /* 5 */ @js.native
+    object MOUSEDOWN extends TopLevel[MOUSEDOWN with Double]
+    
+    /* 7 */ @js.native
+    object MOUSEDRAG extends TopLevel[MOUSEDRAG with Double]
+    
+    /* 4 */ @js.native
+    object MOUSEMOVE extends TopLevel[MOUSEMOVE with Double]
+    
+    /* 3 */ @js.native
+    object MOUSEOUT extends TopLevel[MOUSEOUT with Double]
+    
+    /* 1 */ @js.native
+    object MOUSEOVER extends TopLevel[MOUSEOVER with Double]
+    
+    /* 2 */ @js.native
+    object MOUSEUP extends TopLevel[MOUSEUP with Double]
+    
+    /* 6 */ @js.native
+    object MOUSEWHEEL extends TopLevel[MOUSEWHEEL with Double]
+    
+    /* 10 */ @js.native
+    object TOUCHDOWN extends TopLevel[TOUCHDOWN with Double]
+    
+    /* 9 */ @js.native
+    object TOUCHMOVE extends TopLevel[TOUCHMOVE with Double]
+    
+    /* 8 */ @js.native
+    object TOUCHUP extends TopLevel[TOUCHUP with Double]
+    
   }
   
   /* static members */

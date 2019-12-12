@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.forceExceptions
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.none
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressExceptions
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressSetErrorInfo
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.useSetErrorInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ErrorOptions extends js.Object {
   @js.native
   sealed trait useSetErrorInfo extends ErrorOptions
   
-  /* 2 */ val forceExceptions: typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.forceExceptions with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.none with Double = js.native
-  /* 1 */ val suppressExceptions: typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressExceptions with Double = js.native
-  /* 4 */ val suppressSetErrorInfo: typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.suppressSetErrorInfo with Double = js.native
-  /* 3 */ val useSetErrorInfo: typings.winrtDashUwp.Windows.Foundation.Diagnostics.ErrorOptions.useSetErrorInfo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ErrorOptions with Double] = js.native
+  /* 2 */ @js.native
+  object forceExceptions extends TopLevel[forceExceptions with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object suppressExceptions extends TopLevel[suppressExceptions with Double]
+  
+  /* 4 */ @js.native
+  object suppressSetErrorInfo extends TopLevel[suppressSetErrorInfo with Double]
+  
+  /* 3 */ @js.native
+  object useSetErrorInfo extends TopLevel[useSetErrorInfo with Double]
+  
 }
 

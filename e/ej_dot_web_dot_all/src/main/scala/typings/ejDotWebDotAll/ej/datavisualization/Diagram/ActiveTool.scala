@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.Drag
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.Draw
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ActiveTool extends js.Object {
   @js.native
   sealed trait None extends ActiveTool
   
-  /* 1 */ val Drag: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.Drag with Double = js.native
-  /* 2 */ val Draw: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.Draw with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ActiveTool.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ActiveTool with Double] = js.native
+  /* 1 */ @js.native
+  object Drag extends TopLevel[Drag with Double]
+  
+  /* 2 */ @js.native
+  object Draw extends TopLevel[Draw with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.BlendOption.OPAQUE
+import typings.cesium.cesiumMod.BlendOption.OPAQUE_AND_TRANSLUCENT
+import typings.cesium.cesiumMod.BlendOption.TRANSLUCENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BlendOption extends js.Object {
   @js.native
   sealed trait TRANSLUCENT extends BlendOption
   
-  /* 0 */ val OPAQUE: typings.cesium.cesiumMod.BlendOption.OPAQUE with Double = js.native
-  /* 1 */ val OPAQUE_AND_TRANSLUCENT: typings.cesium.cesiumMod.BlendOption.OPAQUE_AND_TRANSLUCENT with Double = js.native
-  /* 2 */ val TRANSLUCENT: typings.cesium.cesiumMod.BlendOption.TRANSLUCENT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlendOption with Double] = js.native
+  /* 0 */ @js.native
+  object OPAQUE extends TopLevel[OPAQUE with Double]
+  
+  /* 1 */ @js.native
+  object OPAQUE_AND_TRANSLUCENT extends TopLevel[OPAQUE_AND_TRANSLUCENT with Double]
+  
+  /* 2 */ @js.native
+  object TRANSLUCENT extends TopLevel[TRANSLUCENT with Double]
+  
 }
 

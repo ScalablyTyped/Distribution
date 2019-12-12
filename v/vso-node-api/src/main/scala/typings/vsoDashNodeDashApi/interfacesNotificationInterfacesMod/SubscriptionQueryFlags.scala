@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.AlwaysReturnBasicInformation
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeDeletedSubscriptions
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeFilterDetails
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeInvalidSubscriptions
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,12 +43,22 @@ object SubscriptionQueryFlags extends js.Object {
   @js.native
   sealed trait None extends SubscriptionQueryFlags
   
-  /* 16 */ val AlwaysReturnBasicInformation: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.AlwaysReturnBasicInformation with Double = js.native
-  /* 4 */ val IncludeDeletedSubscriptions: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeDeletedSubscriptions with Double = js.native
-  /* 8 */ val IncludeFilterDetails: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeFilterDetails with Double = js.native
-  /* 2 */ val IncludeInvalidSubscriptions: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.IncludeInvalidSubscriptions with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionQueryFlags.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionQueryFlags with Double] = js.native
+  /* 16 */ @js.native
+  object AlwaysReturnBasicInformation extends TopLevel[AlwaysReturnBasicInformation with Double]
+  
+  /* 4 */ @js.native
+  object IncludeDeletedSubscriptions extends TopLevel[IncludeDeletedSubscriptions with Double]
+  
+  /* 8 */ @js.native
+  object IncludeFilterDetails extends TopLevel[IncludeFilterDetails with Double]
+  
+  /* 2 */ @js.native
+  object IncludeInvalidSubscriptions extends TopLevel[IncludeInvalidSubscriptions with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

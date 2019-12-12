@@ -1,5 +1,15 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapORientation.TWOR_AUTO
+import typings.dwt.EnumDWT_CapORientation.TWOR_AUTOPICTURE
+import typings.dwt.EnumDWT_CapORientation.TWOR_AUTOTEXT
+import typings.dwt.EnumDWT_CapORientation.TWOR_LANDSCAPE
+import typings.dwt.EnumDWT_CapORientation.TWOR_PORTRAIT
+import typings.dwt.EnumDWT_CapORientation.TWOR_ROT0
+import typings.dwt.EnumDWT_CapORientation.TWOR_ROT180
+import typings.dwt.EnumDWT_CapORientation.TWOR_ROT270
+import typings.dwt.EnumDWT_CapORientation.TWOR_ROT90
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,16 +51,34 @@ object EnumDWT_CapORientation extends js.Object {
   @js.native
   sealed trait TWOR_ROT90 extends EnumDWT_CapORientation
   
-  /* 4 */ val TWOR_AUTO: typings.dwt.EnumDWT_CapORientation.TWOR_AUTO with Double = js.native
-  /* 6 */ val TWOR_AUTOPICTURE: typings.dwt.EnumDWT_CapORientation.TWOR_AUTOPICTURE with Double = js.native
-  /* 5 */ val TWOR_AUTOTEXT: typings.dwt.EnumDWT_CapORientation.TWOR_AUTOTEXT with Double = js.native
-  /* 3 */ val TWOR_LANDSCAPE: typings.dwt.EnumDWT_CapORientation.TWOR_LANDSCAPE with Double = js.native
-  /* 0 */ val TWOR_PORTRAIT: typings.dwt.EnumDWT_CapORientation.TWOR_PORTRAIT with Double = js.native
-  /* 0 */ val TWOR_ROT0: typings.dwt.EnumDWT_CapORientation.TWOR_ROT0 with Double = js.native
-  /* 2 */ val TWOR_ROT180: typings.dwt.EnumDWT_CapORientation.TWOR_ROT180 with Double = js.native
-  /* 3 */ val TWOR_ROT270: typings.dwt.EnumDWT_CapORientation.TWOR_ROT270 with Double = js.native
-  /* 1 */ val TWOR_ROT90: typings.dwt.EnumDWT_CapORientation.TWOR_ROT90 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapORientation with Double] = js.native
+  /* 4 */ @js.native
+  object TWOR_AUTO extends TopLevel[TWOR_AUTO with Double]
+  
+  /* 6 */ @js.native
+  object TWOR_AUTOPICTURE extends TopLevel[TWOR_AUTOPICTURE with Double]
+  
+  /* 5 */ @js.native
+  object TWOR_AUTOTEXT extends TopLevel[TWOR_AUTOTEXT with Double]
+  
+  /* 3 */ @js.native
+  object TWOR_LANDSCAPE extends TopLevel[TWOR_LANDSCAPE with Double]
+  
+  /* 0 */ @js.native
+  object TWOR_PORTRAIT extends TopLevel[TWOR_PORTRAIT with Double]
+  
+  /* 0 */ @js.native
+  object TWOR_ROT0 extends TopLevel[TWOR_ROT0 with Double]
+  
+  /* 2 */ @js.native
+  object TWOR_ROT180 extends TopLevel[TWOR_ROT180 with Double]
+  
+  /* 3 */ @js.native
+  object TWOR_ROT270 extends TopLevel[TWOR_ROT270 with Double]
+  
+  /* 1 */ @js.native
+  object TWOR_ROT90 extends TopLevel[TWOR_ROT90 with Double]
+  
 }
 

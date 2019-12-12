@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomCenter
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomLeft
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomRight
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleLeft
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleRight
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopCenter
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopLeft
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object UserHandlePositions extends js.Object {
   @js.native
   sealed trait TopRight extends UserHandlePositions
   
-  /* 6 */ val BottomCenter: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomCenter with Double = js.native
-  /* 5 */ val BottomLeft: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomLeft with Double = js.native
-  /* 7 */ val BottomRight: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.BottomRight with Double = js.native
-  /* 3 */ val MiddleLeft: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleLeft with Double = js.native
-  /* 4 */ val MiddleRight: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.MiddleRight with Double = js.native
-  /* 1 */ val TopCenter: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopCenter with Double = js.native
-  /* 0 */ val TopLeft: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopLeft with Double = js.native
-  /* 2 */ val TopRight: typings.ejDotWebDotAll.ej.datavisualization.Diagram.UserHandlePositions.TopRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserHandlePositions with Double] = js.native
+  /* 6 */ @js.native
+  object BottomCenter extends TopLevel[BottomCenter with Double]
+  
+  /* 5 */ @js.native
+  object BottomLeft extends TopLevel[BottomLeft with Double]
+  
+  /* 7 */ @js.native
+  object BottomRight extends TopLevel[BottomRight with Double]
+  
+  /* 3 */ @js.native
+  object MiddleLeft extends TopLevel[MiddleLeft with Double]
+  
+  /* 4 */ @js.native
+  object MiddleRight extends TopLevel[MiddleRight with Double]
+  
+  /* 1 */ @js.native
+  object TopCenter extends TopLevel[TopCenter with Double]
+  
+  /* 0 */ @js.native
+  object TopLeft extends TopLevel[TopLeft with Double]
+  
+  /* 2 */ @js.native
+  object TopRight extends TopLevel[TopRight with Double]
+  
 }
 

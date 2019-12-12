@@ -1,5 +1,29 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.BODY_SECTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.COMMENT_SECTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.DOCUMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTNOTE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.LIST_ITEM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.PARAGRAPH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_CELL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_ROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,30 +114,76 @@ object ElementType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends ElementType
   
-  /* 0 */ val BODY_SECTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.BODY_SECTION with Double = js.native
-  /* 1 */ val COMMENT_SECTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.COMMENT_SECTION with Double = js.native
-  /* 2 */ val DOCUMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.DOCUMENT with Double = js.native
-  /* 3 */ val EQUATION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION with Double = js.native
-  /* 4 */ val EQUATION_FUNCTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION with Double = js.native
-  /* 5 */ val EQUATION_FUNCTION_ARGUMENT_SEPARATOR: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_FUNCTION_ARGUMENT_SEPARATOR with Double = js.native
-  /* 6 */ val EQUATION_SYMBOL: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.EQUATION_SYMBOL with Double = js.native
-  /* 7 */ val FOOTER_SECTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTER_SECTION with Double = js.native
-  /* 8 */ val FOOTNOTE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTNOTE with Double = js.native
-  /* 9 */ val FOOTNOTE_SECTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.FOOTNOTE_SECTION with Double = js.native
-  /* 10 */ val HEADER_SECTION: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.HEADER_SECTION with Double = js.native
-  /* 11 */ val HORIZONTAL_RULE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.HORIZONTAL_RULE with Double = js.native
-  /* 12 */ val INLINE_DRAWING: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.INLINE_DRAWING with Double = js.native
-  /* 13 */ val INLINE_IMAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.INLINE_IMAGE with Double = js.native
-  /* 14 */ val LIST_ITEM: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.LIST_ITEM with Double = js.native
-  /* 15 */ val PAGE_BREAK: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.PAGE_BREAK with Double = js.native
-  /* 16 */ val PARAGRAPH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.PARAGRAPH with Double = js.native
-  /* 17 */ val TABLE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE with Double = js.native
-  /* 18 */ val TABLE_CELL: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_CELL with Double = js.native
-  /* 19 */ val TABLE_OF_CONTENTS: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_OF_CONTENTS with Double = js.native
-  /* 20 */ val TABLE_ROW: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TABLE_ROW with Double = js.native
-  /* 21 */ val TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.TEXT with Double = js.native
-  /* 22 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Document.ElementType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ElementType with Double] = js.native
+  /* 0 */ @js.native
+  object BODY_SECTION extends TopLevel[BODY_SECTION with Double]
+  
+  /* 1 */ @js.native
+  object COMMENT_SECTION extends TopLevel[COMMENT_SECTION with Double]
+  
+  /* 2 */ @js.native
+  object DOCUMENT extends TopLevel[DOCUMENT with Double]
+  
+  /* 3 */ @js.native
+  object EQUATION extends TopLevel[EQUATION with Double]
+  
+  /* 4 */ @js.native
+  object EQUATION_FUNCTION extends TopLevel[EQUATION_FUNCTION with Double]
+  
+  /* 5 */ @js.native
+  object EQUATION_FUNCTION_ARGUMENT_SEPARATOR extends TopLevel[EQUATION_FUNCTION_ARGUMENT_SEPARATOR with Double]
+  
+  /* 6 */ @js.native
+  object EQUATION_SYMBOL extends TopLevel[EQUATION_SYMBOL with Double]
+  
+  /* 7 */ @js.native
+  object FOOTER_SECTION extends TopLevel[FOOTER_SECTION with Double]
+  
+  /* 8 */ @js.native
+  object FOOTNOTE extends TopLevel[FOOTNOTE with Double]
+  
+  /* 9 */ @js.native
+  object FOOTNOTE_SECTION extends TopLevel[FOOTNOTE_SECTION with Double]
+  
+  /* 10 */ @js.native
+  object HEADER_SECTION extends TopLevel[HEADER_SECTION with Double]
+  
+  /* 11 */ @js.native
+  object HORIZONTAL_RULE extends TopLevel[HORIZONTAL_RULE with Double]
+  
+  /* 12 */ @js.native
+  object INLINE_DRAWING extends TopLevel[INLINE_DRAWING with Double]
+  
+  /* 13 */ @js.native
+  object INLINE_IMAGE extends TopLevel[INLINE_IMAGE with Double]
+  
+  /* 14 */ @js.native
+  object LIST_ITEM extends TopLevel[LIST_ITEM with Double]
+  
+  /* 15 */ @js.native
+  object PAGE_BREAK extends TopLevel[PAGE_BREAK with Double]
+  
+  /* 16 */ @js.native
+  object PARAGRAPH extends TopLevel[PARAGRAPH with Double]
+  
+  /* 17 */ @js.native
+  object TABLE extends TopLevel[TABLE with Double]
+  
+  /* 18 */ @js.native
+  object TABLE_CELL extends TopLevel[TABLE_CELL with Double]
+  
+  /* 19 */ @js.native
+  object TABLE_OF_CONTENTS extends TopLevel[TABLE_OF_CONTENTS with Double]
+  
+  /* 20 */ @js.native
+  object TABLE_ROW extends TopLevel[TABLE_ROW with Double]
+  
+  /* 21 */ @js.native
+  object TEXT extends TopLevel[TEXT with Double]
+  
+  /* 22 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

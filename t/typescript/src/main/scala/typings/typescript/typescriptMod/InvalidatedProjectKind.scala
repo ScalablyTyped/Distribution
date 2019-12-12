@@ -1,5 +1,9 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.InvalidatedProjectKind.Build
+import typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateBundle
+import typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateOutputFileStamps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object InvalidatedProjectKind extends js.Object {
   @js.native
   sealed trait UpdateOutputFileStamps extends InvalidatedProjectKind
   
-  /* 0 */ val Build: typings.typescript.typescriptMod.InvalidatedProjectKind.Build with Double = js.native
-  /* 1 */ val UpdateBundle: typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateBundle with Double = js.native
-  /* 2 */ val UpdateOutputFileStamps: typings.typescript.typescriptMod.InvalidatedProjectKind.UpdateOutputFileStamps with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InvalidatedProjectKind with Double] = js.native
+  /* 0 */ @js.native
+  object Build extends TopLevel[Build with Double]
+  
+  /* 1 */ @js.native
+  object UpdateBundle extends TopLevel[UpdateBundle with Double]
+  
+  /* 2 */ @js.native
+  object UpdateOutputFileStamps extends TopLevel[UpdateOutputFileStamps with Double]
+  
 }
 

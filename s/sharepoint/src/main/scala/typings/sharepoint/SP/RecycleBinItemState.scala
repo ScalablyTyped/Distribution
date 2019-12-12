@@ -1,5 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.RecycleBinItemState.firstStageRecycleBin
+import typings.sharepoint.SP.RecycleBinItemState.none
+import typings.sharepoint.SP.RecycleBinItemState.secondStageRecycleBin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RecycleBinItemState extends js.Object {
   @js.native
   sealed trait secondStageRecycleBin extends RecycleBinItemState
   
-  /* 1 */ val firstStageRecycleBin: typings.sharepoint.SP.RecycleBinItemState.firstStageRecycleBin with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.RecycleBinItemState.none with Double = js.native
-  /* 2 */ val secondStageRecycleBin: typings.sharepoint.SP.RecycleBinItemState.secondStageRecycleBin with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RecycleBinItemState with Double] = js.native
+  /* 1 */ @js.native
+  object firstStageRecycleBin extends TopLevel[firstStageRecycleBin with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object secondStageRecycleBin extends TopLevel[secondStageRecycleBin with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.SOLID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object LineFillType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends LineFillType
   
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.NONE with Double = js.native
-  /* 2 */ val SOLID: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.SOLID with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineFillType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LineFillType with Double] = js.native
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 2 */ @js.native
+  object SOLID extends TopLevel[SOLID with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

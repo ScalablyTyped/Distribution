@@ -1,6 +1,17 @@
 package typings.mendixmodelsdk
 
+import org.scalablytyped.runtime.TopLevel
 import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Blob
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Boolean
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Color
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.DateTime
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Double
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Guid
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Integer
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Point
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Size
+import typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +54,48 @@ object distSdkInternalPropertiesPrimitiveTypeEnumMod extends js.Object {
     @js.native
     sealed trait String extends PrimitiveTypeEnum
     
-    /* 9 */ val Blob: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Blob with scala.Double = js.native
-    /* 2 */ val Boolean: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Boolean with scala.Double = js.native
-    /* 8 */ val Color: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Color with scala.Double = js.native
-    /* 4 */ val DateTime: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.DateTime with scala.Double = js.native
-    /* 3 */ val Double: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Double with scala.Double = js.native
-    /* 5 */ val Guid: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Guid with scala.Double = js.native
-    /* 0 */ val Integer: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Integer with scala.Double = js.native
-    /* 6 */ val Point: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Point with scala.Double = js.native
-    /* 7 */ val Size: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.Size with scala.Double = js.native
-    /* 1 */ val String: typings.mendixmodelsdk.distSdkInternalPropertiesPrimitiveTypeEnumMod.PrimitiveTypeEnum.String with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[PrimitiveTypeEnum with scala.Double] = js.native
+    /* 9 */ @js.native
+    object Blob
+      extends TopLevel[Blob with scala.Double]
+    
+    /* 2 */ @js.native
+    object Boolean
+      extends TopLevel[Boolean with scala.Double]
+    
+    /* 8 */ @js.native
+    object Color
+      extends TopLevel[Color with scala.Double]
+    
+    /* 4 */ @js.native
+    object DateTime
+      extends TopLevel[DateTime with scala.Double]
+    
+    /* 3 */ @js.native
+    object Double
+      extends TopLevel[Double with scala.Double]
+    
+    /* 5 */ @js.native
+    object Guid
+      extends TopLevel[Guid with scala.Double]
+    
+    /* 0 */ @js.native
+    object Integer
+      extends TopLevel[Integer with scala.Double]
+    
+    /* 6 */ @js.native
+    object Point
+      extends TopLevel[Point with scala.Double]
+    
+    /* 7 */ @js.native
+    object Size
+      extends TopLevel[Size with scala.Double]
+    
+    /* 1 */ @js.native
+    object String
+      extends TopLevel[String with scala.Double]
+    
   }
   
 }

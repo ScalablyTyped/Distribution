@@ -1,5 +1,10 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.LOG
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODAL
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODALQUIT
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object HostMessageMode extends js.Object {
   @js.native
   sealed trait NONE extends HostMessageMode
   
-  /* 1 */ val LOG: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.LOG with Double = js.native
-  /* 2 */ val MODAL: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODAL with Double = js.native
-  /* 3 */ val MODALQUIT: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.MODALQUIT with Double = js.native
-  /* 0 */ val NONE: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.HostMessageMode.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HostMessageMode with Double] = js.native
+  /* 1 */ @js.native
+  object LOG extends TopLevel[LOG with Double]
+  
+  /* 2 */ @js.native
+  object MODAL extends TopLevel[MODAL with Double]
+  
+  /* 3 */ @js.native
+  object MODALQUIT extends TopLevel[MODALQUIT with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
 }
 

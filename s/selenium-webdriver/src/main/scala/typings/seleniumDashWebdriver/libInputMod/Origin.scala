@@ -1,5 +1,8 @@
 package typings.seleniumDashWebdriver.libInputMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.seleniumDashWebdriver.libInputMod.Origin.POINTER
+import typings.seleniumDashWebdriver.libInputMod.Origin.VIEWPORT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object Origin extends js.Object {
   @js.native
   sealed trait VIEWPORT extends Origin
   
-  /* "pointer" */ val POINTER: typings.seleniumDashWebdriver.libInputMod.Origin.POINTER with String = js.native
-  /* "viewport" */ val VIEWPORT: typings.seleniumDashWebdriver.libInputMod.Origin.VIEWPORT with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Origin with String] = js.native
+  /* "pointer" */ @js.native
+  object POINTER extends TopLevel[POINTER with String]
+  
+  /* "viewport" */ @js.native
+  object VIEWPORT extends TopLevel[VIEWPORT with String]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarComponent
@@ -18,6 +19,8 @@ object distCommonjsModulesSidebarMod extends js.Object {
     def this(props: SidebarProps, context: js.Any) = this()
   }
   
-  val default: SidebarComponent = js.native
+  @js.native
+  object default extends TopLevel[SidebarComponent]
+  
 }
 

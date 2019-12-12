@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Create
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Delete
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Edit
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.ManagePermissions
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.None
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Read
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object TeamDashboardPermission extends js.Object {
   @js.native
   sealed trait Read extends TeamDashboardPermission
   
-  /* 2 */ val Create: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Create with Double = js.native
-  /* 8 */ val Delete: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Delete with Double = js.native
-  /* 4 */ val Edit: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Edit with Double = js.native
-  /* 16 */ val ManagePermissions: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.ManagePermissions with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.None with Double = js.native
-  /* 1 */ val Read: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.TeamDashboardPermission.Read with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TeamDashboardPermission with Double] = js.native
+  /* 2 */ @js.native
+  object Create extends TopLevel[Create with Double]
+  
+  /* 8 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 4 */ @js.native
+  object Edit extends TopLevel[Edit with Double]
+  
+  /* 16 */ @js.native
+  object ManagePermissions extends TopLevel[ManagePermissions with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Read extends TopLevel[Read with Double]
+  
 }
 

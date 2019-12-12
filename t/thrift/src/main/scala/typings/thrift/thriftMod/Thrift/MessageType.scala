@@ -1,5 +1,10 @@
 package typings.thrift.thriftMod.Thrift
 
+import org.scalablytyped.runtime.TopLevel
+import typings.thrift.thriftMod.Thrift.MessageType.CALL
+import typings.thrift.thriftMod.Thrift.MessageType.EXCEPTION
+import typings.thrift.thriftMod.Thrift.MessageType.ONEWAY
+import typings.thrift.thriftMod.Thrift.MessageType.REPLY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object MessageType extends js.Object {
   @js.native
   sealed trait REPLY extends MessageType
   
-  /* 1 */ val CALL: typings.thrift.thriftMod.Thrift.MessageType.CALL with Double = js.native
-  /* 3 */ val EXCEPTION: typings.thrift.thriftMod.Thrift.MessageType.EXCEPTION with Double = js.native
-  /* 4 */ val ONEWAY: typings.thrift.thriftMod.Thrift.MessageType.ONEWAY with Double = js.native
-  /* 2 */ val REPLY: typings.thrift.thriftMod.Thrift.MessageType.REPLY with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
+  /* 1 */ @js.native
+  object CALL extends TopLevel[CALL with Double]
+  
+  /* 3 */ @js.native
+  object EXCEPTION extends TopLevel[EXCEPTION with Double]
+  
+  /* 4 */ @js.native
+  object ONEWAY extends TopLevel[ONEWAY with Double]
+  
+  /* 2 */ @js.native
+  object REPLY extends TopLevel[REPLY with Double]
+  
 }
 

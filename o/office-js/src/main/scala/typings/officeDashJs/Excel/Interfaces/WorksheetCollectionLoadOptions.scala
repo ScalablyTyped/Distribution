@@ -10,26 +10,27 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.1]
   */
+@js.native
 trait WorksheetCollectionLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
+  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var charts: js.UndefOr[ChartCollectionLoadOptions] = js.undefined
+  var charts: js.UndefOr[ChartCollectionLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet.
@@ -37,42 +38,42 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableCalculation: js.UndefOr[Boolean] = js.undefined
+  var enableCalculation: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: The display name of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets the PageLayout object of the worksheet.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.undefined
+  var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var position: js.UndefOr[Boolean] = js.undefined
+  var position: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
     *
     * [Api set: ExcelApi 1.2]
     */
-  var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.undefined
+  var protection: js.UndefOr[WorksheetProtectionLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets or sets the worksheet's gridlines flag.
@@ -80,7 +81,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showGridlines: js.UndefOr[Boolean] = js.undefined
+  var showGridlines: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets or sets the worksheet's headings flag.
@@ -88,14 +89,14 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showHeadings: js.UndefOr[Boolean] = js.undefined
+  var showHeadings: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardHeight: js.UndefOr[Boolean] = js.undefined
+  var standardHeight: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the standard (default) width of all the columns in the worksheet.
@@ -103,7 +104,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var standardWidth: js.UndefOr[Boolean] = js.undefined
+  var standardWidth: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets or sets the worksheet tab color.
@@ -112,61 +113,20 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tabColor: js.UndefOr[Boolean] = js.undefined
+  var tabColor: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var tables: js.UndefOr[TableCollectionLoadOptions] = js.undefined
+  var tables: js.UndefOr[TableCollectionLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: The Visibility of the worksheet.
     *
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
     */
-  var visibility: js.UndefOr[Boolean] = js.undefined
-}
-
-object WorksheetCollectionLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    autoFilter: AutoFilterLoadOptions = null,
-    charts: ChartCollectionLoadOptions = null,
-    enableCalculation: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined,
-    name: js.UndefOr[Boolean] = js.undefined,
-    pageLayout: PageLayoutLoadOptions = null,
-    position: js.UndefOr[Boolean] = js.undefined,
-    protection: WorksheetProtectionLoadOptions = null,
-    showGridlines: js.UndefOr[Boolean] = js.undefined,
-    showHeadings: js.UndefOr[Boolean] = js.undefined,
-    standardHeight: js.UndefOr[Boolean] = js.undefined,
-    standardWidth: js.UndefOr[Boolean] = js.undefined,
-    tabColor: js.UndefOr[Boolean] = js.undefined,
-    tables: TableCollectionLoadOptions = null,
-    visibility: js.UndefOr[Boolean] = js.undefined
-  ): WorksheetCollectionLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
-    if (charts != null) __obj.updateDynamic("charts")(charts.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardHeight)) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardWidth)) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabColor)) __obj.updateDynamic("tabColor")(tabColor.asInstanceOf[js.Any])
-    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WorksheetCollectionLoadOptions]
-  }
+  var visibility: js.UndefOr[Boolean] = js.native
 }
 

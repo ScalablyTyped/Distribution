@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithWakeupCapability
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithoutWakeupCapability
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.denied
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object AlarmAccessStatus extends js.Object {
   @js.native
   sealed trait unspecified extends AlarmAccessStatus
   
-  /* 1 */ val allowedWithWakeupCapability: typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithWakeupCapability with Double = js.native
-  /* 2 */ val allowedWithoutWakeupCapability: typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.allowedWithoutWakeupCapability with Double = js.native
-  /* 3 */ val denied: typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.denied with Double = js.native
-  /* 0 */ val unspecified: typings.winrtDashUwp.Windows.ApplicationModel.Background.AlarmAccessStatus.unspecified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AlarmAccessStatus with Double] = js.native
+  /* 1 */ @js.native
+  object allowedWithWakeupCapability extends TopLevel[allowedWithWakeupCapability with Double]
+  
+  /* 2 */ @js.native
+  object allowedWithoutWakeupCapability extends TopLevel[allowedWithoutWakeupCapability with Double]
+  
+  /* 3 */ @js.native
+  object denied extends TopLevel[denied with Double]
+  
+  /* 0 */ @js.native
+  object unspecified extends TopLevel[unspecified with Double]
+  
 }
 

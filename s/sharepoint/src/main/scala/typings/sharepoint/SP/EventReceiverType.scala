@@ -1,5 +1,82 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.EventReceiverType.appInstalled
+import typings.sharepoint.SP.EventReceiverType.appUninstalling
+import typings.sharepoint.SP.EventReceiverType.appUpgraded
+import typings.sharepoint.SP.EventReceiverType.contextEvent
+import typings.sharepoint.SP.EventReceiverType.emailReceived
+import typings.sharepoint.SP.EventReceiverType.entityInstanceAdded
+import typings.sharepoint.SP.EventReceiverType.entityInstanceDeleted
+import typings.sharepoint.SP.EventReceiverType.entityInstanceUpdated
+import typings.sharepoint.SP.EventReceiverType.fieldAdded
+import typings.sharepoint.SP.EventReceiverType.fieldAdding
+import typings.sharepoint.SP.EventReceiverType.fieldDeleted
+import typings.sharepoint.SP.EventReceiverType.fieldDeleting
+import typings.sharepoint.SP.EventReceiverType.fieldUpdated
+import typings.sharepoint.SP.EventReceiverType.fieldUpdating
+import typings.sharepoint.SP.EventReceiverType.groupAdded
+import typings.sharepoint.SP.EventReceiverType.groupAdding
+import typings.sharepoint.SP.EventReceiverType.groupDeleted
+import typings.sharepoint.SP.EventReceiverType.groupDeleting
+import typings.sharepoint.SP.EventReceiverType.groupUpdated
+import typings.sharepoint.SP.EventReceiverType.groupUpdating
+import typings.sharepoint.SP.EventReceiverType.groupUserAdded
+import typings.sharepoint.SP.EventReceiverType.groupUserAdding
+import typings.sharepoint.SP.EventReceiverType.groupUserDeleted
+import typings.sharepoint.SP.EventReceiverType.groupUserDeleting
+import typings.sharepoint.SP.EventReceiverType.inheritanceBreaking
+import typings.sharepoint.SP.EventReceiverType.inheritanceBroken
+import typings.sharepoint.SP.EventReceiverType.inheritanceReset
+import typings.sharepoint.SP.EventReceiverType.inheritanceResetting
+import typings.sharepoint.SP.EventReceiverType.invalidReceiver
+import typings.sharepoint.SP.EventReceiverType.itemAdded
+import typings.sharepoint.SP.EventReceiverType.itemAdding
+import typings.sharepoint.SP.EventReceiverType.itemAttachmentAdded
+import typings.sharepoint.SP.EventReceiverType.itemAttachmentAdding
+import typings.sharepoint.SP.EventReceiverType.itemAttachmentDeleted
+import typings.sharepoint.SP.EventReceiverType.itemAttachmentDeleting
+import typings.sharepoint.SP.EventReceiverType.itemCheckedIn
+import typings.sharepoint.SP.EventReceiverType.itemCheckedOut
+import typings.sharepoint.SP.EventReceiverType.itemCheckingIn
+import typings.sharepoint.SP.EventReceiverType.itemCheckingOut
+import typings.sharepoint.SP.EventReceiverType.itemDeleted
+import typings.sharepoint.SP.EventReceiverType.itemDeleting
+import typings.sharepoint.SP.EventReceiverType.itemFileConverted
+import typings.sharepoint.SP.EventReceiverType.itemFileMoved
+import typings.sharepoint.SP.EventReceiverType.itemFileMoving
+import typings.sharepoint.SP.EventReceiverType.itemUncheckedOut
+import typings.sharepoint.SP.EventReceiverType.itemUncheckingOut
+import typings.sharepoint.SP.EventReceiverType.itemUpdated
+import typings.sharepoint.SP.EventReceiverType.itemUpdating
+import typings.sharepoint.SP.EventReceiverType.itemVersionDeleted
+import typings.sharepoint.SP.EventReceiverType.itemVersionDeleting
+import typings.sharepoint.SP.EventReceiverType.listAdded
+import typings.sharepoint.SP.EventReceiverType.listAdding
+import typings.sharepoint.SP.EventReceiverType.listDeleted
+import typings.sharepoint.SP.EventReceiverType.listDeleting
+import typings.sharepoint.SP.EventReceiverType.roleAssignmentAdded
+import typings.sharepoint.SP.EventReceiverType.roleAssignmentAdding
+import typings.sharepoint.SP.EventReceiverType.roleAssignmentDeleted
+import typings.sharepoint.SP.EventReceiverType.roleAssignmentDeleting
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionAdded
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionAdding
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionDeleted
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionDeleting
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionUpdated
+import typings.sharepoint.SP.EventReceiverType.roleDefinitionUpdating
+import typings.sharepoint.SP.EventReceiverType.siteDeleted
+import typings.sharepoint.SP.EventReceiverType.siteDeleting
+import typings.sharepoint.SP.EventReceiverType.webAdding
+import typings.sharepoint.SP.EventReceiverType.webDeleted
+import typings.sharepoint.SP.EventReceiverType.webDeleting
+import typings.sharepoint.SP.EventReceiverType.webMoved
+import typings.sharepoint.SP.EventReceiverType.webMoving
+import typings.sharepoint.SP.EventReceiverType.webProvisioned
+import typings.sharepoint.SP.EventReceiverType.workflowCompleted
+import typings.sharepoint.SP.EventReceiverType.workflowPostponed
+import typings.sharepoint.SP.EventReceiverType.workflowStarted
+import typings.sharepoint.SP.EventReceiverType.workflowStarting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -238,83 +315,235 @@ object EventReceiverType extends js.Object {
   @js.native
   sealed trait workflowStarting extends EventReceiverType
   
-  /* 71 */ val appInstalled: typings.sharepoint.SP.EventReceiverType.appInstalled with Double = js.native
-  /* 73 */ val appUninstalling: typings.sharepoint.SP.EventReceiverType.appUninstalling with Double = js.native
-  /* 72 */ val appUpgraded: typings.sharepoint.SP.EventReceiverType.appUpgraded with Double = js.native
-  /* 75 */ val contextEvent: typings.sharepoint.SP.EventReceiverType.contextEvent with Double = js.native
-  /* 74 */ val emailReceived: typings.sharepoint.SP.EventReceiverType.emailReceived with Double = js.native
-  /* 68 */ val entityInstanceAdded: typings.sharepoint.SP.EventReceiverType.entityInstanceAdded with Double = js.native
-  /* 70 */ val entityInstanceDeleted: typings.sharepoint.SP.EventReceiverType.entityInstanceDeleted with Double = js.native
-  /* 69 */ val entityInstanceUpdated: typings.sharepoint.SP.EventReceiverType.entityInstanceUpdated with Double = js.native
-  /* 44 */ val fieldAdded: typings.sharepoint.SP.EventReceiverType.fieldAdded with Double = js.native
-  /* 11 */ val fieldAdding: typings.sharepoint.SP.EventReceiverType.fieldAdding with Double = js.native
-  /* 46 */ val fieldDeleted: typings.sharepoint.SP.EventReceiverType.fieldDeleted with Double = js.native
-  /* 13 */ val fieldDeleting: typings.sharepoint.SP.EventReceiverType.fieldDeleting with Double = js.native
-  /* 45 */ val fieldUpdated: typings.sharepoint.SP.EventReceiverType.fieldUpdated with Double = js.native
-  /* 12 */ val fieldUpdating: typings.sharepoint.SP.EventReceiverType.fieldUpdating with Double = js.native
-  /* 53 */ val groupAdded: typings.sharepoint.SP.EventReceiverType.groupAdded with Double = js.native
-  /* 20 */ val groupAdding: typings.sharepoint.SP.EventReceiverType.groupAdding with Double = js.native
-  /* 55 */ val groupDeleted: typings.sharepoint.SP.EventReceiverType.groupDeleted with Double = js.native
-  /* 22 */ val groupDeleting: typings.sharepoint.SP.EventReceiverType.groupDeleting with Double = js.native
-  /* 54 */ val groupUpdated: typings.sharepoint.SP.EventReceiverType.groupUpdated with Double = js.native
-  /* 21 */ val groupUpdating: typings.sharepoint.SP.EventReceiverType.groupUpdating with Double = js.native
-  /* 56 */ val groupUserAdded: typings.sharepoint.SP.EventReceiverType.groupUserAdded with Double = js.native
-  /* 23 */ val groupUserAdding: typings.sharepoint.SP.EventReceiverType.groupUserAdding with Double = js.native
-  /* 57 */ val groupUserDeleted: typings.sharepoint.SP.EventReceiverType.groupUserDeleted with Double = js.native
-  /* 24 */ val groupUserDeleting: typings.sharepoint.SP.EventReceiverType.groupUserDeleting with Double = js.native
-  /* 30 */ val inheritanceBreaking: typings.sharepoint.SP.EventReceiverType.inheritanceBreaking with Double = js.native
-  /* 63 */ val inheritanceBroken: typings.sharepoint.SP.EventReceiverType.inheritanceBroken with Double = js.native
-  /* 64 */ val inheritanceReset: typings.sharepoint.SP.EventReceiverType.inheritanceReset with Double = js.native
-  /* 31 */ val inheritanceResetting: typings.sharepoint.SP.EventReceiverType.inheritanceResetting with Double = js.native
-  /* 0 */ val invalidReceiver: typings.sharepoint.SP.EventReceiverType.invalidReceiver with Double = js.native
-  /* 33 */ val itemAdded: typings.sharepoint.SP.EventReceiverType.itemAdded with Double = js.native
-  /* 1 */ val itemAdding: typings.sharepoint.SP.EventReceiverType.itemAdding with Double = js.native
-  /* 39 */ val itemAttachmentAdded: typings.sharepoint.SP.EventReceiverType.itemAttachmentAdded with Double = js.native
-  /* 7 */ val itemAttachmentAdding: typings.sharepoint.SP.EventReceiverType.itemAttachmentAdding with Double = js.native
-  /* 40 */ val itemAttachmentDeleted: typings.sharepoint.SP.EventReceiverType.itemAttachmentDeleted with Double = js.native
-  /* 8 */ val itemAttachmentDeleting: typings.sharepoint.SP.EventReceiverType.itemAttachmentDeleting with Double = js.native
-  /* 36 */ val itemCheckedIn: typings.sharepoint.SP.EventReceiverType.itemCheckedIn with Double = js.native
-  /* 37 */ val itemCheckedOut: typings.sharepoint.SP.EventReceiverType.itemCheckedOut with Double = js.native
-  /* 4 */ val itemCheckingIn: typings.sharepoint.SP.EventReceiverType.itemCheckingIn with Double = js.native
-  /* 5 */ val itemCheckingOut: typings.sharepoint.SP.EventReceiverType.itemCheckingOut with Double = js.native
-  /* 35 */ val itemDeleted: typings.sharepoint.SP.EventReceiverType.itemDeleted with Double = js.native
-  /* 3 */ val itemDeleting: typings.sharepoint.SP.EventReceiverType.itemDeleting with Double = js.native
-  /* 42 */ val itemFileConverted: typings.sharepoint.SP.EventReceiverType.itemFileConverted with Double = js.native
-  /* 41 */ val itemFileMoved: typings.sharepoint.SP.EventReceiverType.itemFileMoved with Double = js.native
-  /* 9 */ val itemFileMoving: typings.sharepoint.SP.EventReceiverType.itemFileMoving with Double = js.native
-  /* 38 */ val itemUncheckedOut: typings.sharepoint.SP.EventReceiverType.itemUncheckedOut with Double = js.native
-  /* 6 */ val itemUncheckingOut: typings.sharepoint.SP.EventReceiverType.itemUncheckingOut with Double = js.native
-  /* 34 */ val itemUpdated: typings.sharepoint.SP.EventReceiverType.itemUpdated with Double = js.native
-  /* 2 */ val itemUpdating: typings.sharepoint.SP.EventReceiverType.itemUpdating with Double = js.native
-  /* 43 */ val itemVersionDeleted: typings.sharepoint.SP.EventReceiverType.itemVersionDeleted with Double = js.native
-  /* 10 */ val itemVersionDeleting: typings.sharepoint.SP.EventReceiverType.itemVersionDeleting with Double = js.native
-  /* 47 */ val listAdded: typings.sharepoint.SP.EventReceiverType.listAdded with Double = js.native
-  /* 14 */ val listAdding: typings.sharepoint.SP.EventReceiverType.listAdding with Double = js.native
-  /* 48 */ val listDeleted: typings.sharepoint.SP.EventReceiverType.listDeleted with Double = js.native
-  /* 15 */ val listDeleting: typings.sharepoint.SP.EventReceiverType.listDeleting with Double = js.native
-  /* 61 */ val roleAssignmentAdded: typings.sharepoint.SP.EventReceiverType.roleAssignmentAdded with Double = js.native
-  /* 28 */ val roleAssignmentAdding: typings.sharepoint.SP.EventReceiverType.roleAssignmentAdding with Double = js.native
-  /* 62 */ val roleAssignmentDeleted: typings.sharepoint.SP.EventReceiverType.roleAssignmentDeleted with Double = js.native
-  /* 29 */ val roleAssignmentDeleting: typings.sharepoint.SP.EventReceiverType.roleAssignmentDeleting with Double = js.native
-  /* 58 */ val roleDefinitionAdded: typings.sharepoint.SP.EventReceiverType.roleDefinitionAdded with Double = js.native
-  /* 25 */ val roleDefinitionAdding: typings.sharepoint.SP.EventReceiverType.roleDefinitionAdding with Double = js.native
-  /* 60 */ val roleDefinitionDeleted: typings.sharepoint.SP.EventReceiverType.roleDefinitionDeleted with Double = js.native
-  /* 27 */ val roleDefinitionDeleting: typings.sharepoint.SP.EventReceiverType.roleDefinitionDeleting with Double = js.native
-  /* 59 */ val roleDefinitionUpdated: typings.sharepoint.SP.EventReceiverType.roleDefinitionUpdated with Double = js.native
-  /* 26 */ val roleDefinitionUpdating: typings.sharepoint.SP.EventReceiverType.roleDefinitionUpdating with Double = js.native
-  /* 49 */ val siteDeleted: typings.sharepoint.SP.EventReceiverType.siteDeleted with Double = js.native
-  /* 16 */ val siteDeleting: typings.sharepoint.SP.EventReceiverType.siteDeleting with Double = js.native
-  /* 19 */ val webAdding: typings.sharepoint.SP.EventReceiverType.webAdding with Double = js.native
-  /* 50 */ val webDeleted: typings.sharepoint.SP.EventReceiverType.webDeleted with Double = js.native
-  /* 17 */ val webDeleting: typings.sharepoint.SP.EventReceiverType.webDeleting with Double = js.native
-  /* 51 */ val webMoved: typings.sharepoint.SP.EventReceiverType.webMoved with Double = js.native
-  /* 18 */ val webMoving: typings.sharepoint.SP.EventReceiverType.webMoving with Double = js.native
-  /* 52 */ val webProvisioned: typings.sharepoint.SP.EventReceiverType.webProvisioned with Double = js.native
-  /* 67 */ val workflowCompleted: typings.sharepoint.SP.EventReceiverType.workflowCompleted with Double = js.native
-  /* 66 */ val workflowPostponed: typings.sharepoint.SP.EventReceiverType.workflowPostponed with Double = js.native
-  /* 65 */ val workflowStarted: typings.sharepoint.SP.EventReceiverType.workflowStarted with Double = js.native
-  /* 32 */ val workflowStarting: typings.sharepoint.SP.EventReceiverType.workflowStarting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventReceiverType with Double] = js.native
+  /* 71 */ @js.native
+  object appInstalled extends TopLevel[appInstalled with Double]
+  
+  /* 73 */ @js.native
+  object appUninstalling extends TopLevel[appUninstalling with Double]
+  
+  /* 72 */ @js.native
+  object appUpgraded extends TopLevel[appUpgraded with Double]
+  
+  /* 75 */ @js.native
+  object contextEvent extends TopLevel[contextEvent with Double]
+  
+  /* 74 */ @js.native
+  object emailReceived extends TopLevel[emailReceived with Double]
+  
+  /* 68 */ @js.native
+  object entityInstanceAdded extends TopLevel[entityInstanceAdded with Double]
+  
+  /* 70 */ @js.native
+  object entityInstanceDeleted extends TopLevel[entityInstanceDeleted with Double]
+  
+  /* 69 */ @js.native
+  object entityInstanceUpdated extends TopLevel[entityInstanceUpdated with Double]
+  
+  /* 44 */ @js.native
+  object fieldAdded extends TopLevel[fieldAdded with Double]
+  
+  /* 11 */ @js.native
+  object fieldAdding extends TopLevel[fieldAdding with Double]
+  
+  /* 46 */ @js.native
+  object fieldDeleted extends TopLevel[fieldDeleted with Double]
+  
+  /* 13 */ @js.native
+  object fieldDeleting extends TopLevel[fieldDeleting with Double]
+  
+  /* 45 */ @js.native
+  object fieldUpdated extends TopLevel[fieldUpdated with Double]
+  
+  /* 12 */ @js.native
+  object fieldUpdating extends TopLevel[fieldUpdating with Double]
+  
+  /* 53 */ @js.native
+  object groupAdded extends TopLevel[groupAdded with Double]
+  
+  /* 20 */ @js.native
+  object groupAdding extends TopLevel[groupAdding with Double]
+  
+  /* 55 */ @js.native
+  object groupDeleted extends TopLevel[groupDeleted with Double]
+  
+  /* 22 */ @js.native
+  object groupDeleting extends TopLevel[groupDeleting with Double]
+  
+  /* 54 */ @js.native
+  object groupUpdated extends TopLevel[groupUpdated with Double]
+  
+  /* 21 */ @js.native
+  object groupUpdating extends TopLevel[groupUpdating with Double]
+  
+  /* 56 */ @js.native
+  object groupUserAdded extends TopLevel[groupUserAdded with Double]
+  
+  /* 23 */ @js.native
+  object groupUserAdding extends TopLevel[groupUserAdding with Double]
+  
+  /* 57 */ @js.native
+  object groupUserDeleted extends TopLevel[groupUserDeleted with Double]
+  
+  /* 24 */ @js.native
+  object groupUserDeleting extends TopLevel[groupUserDeleting with Double]
+  
+  /* 30 */ @js.native
+  object inheritanceBreaking extends TopLevel[inheritanceBreaking with Double]
+  
+  /* 63 */ @js.native
+  object inheritanceBroken extends TopLevel[inheritanceBroken with Double]
+  
+  /* 64 */ @js.native
+  object inheritanceReset extends TopLevel[inheritanceReset with Double]
+  
+  /* 31 */ @js.native
+  object inheritanceResetting extends TopLevel[inheritanceResetting with Double]
+  
+  /* 0 */ @js.native
+  object invalidReceiver extends TopLevel[invalidReceiver with Double]
+  
+  /* 33 */ @js.native
+  object itemAdded extends TopLevel[itemAdded with Double]
+  
+  /* 1 */ @js.native
+  object itemAdding extends TopLevel[itemAdding with Double]
+  
+  /* 39 */ @js.native
+  object itemAttachmentAdded extends TopLevel[itemAttachmentAdded with Double]
+  
+  /* 7 */ @js.native
+  object itemAttachmentAdding extends TopLevel[itemAttachmentAdding with Double]
+  
+  /* 40 */ @js.native
+  object itemAttachmentDeleted extends TopLevel[itemAttachmentDeleted with Double]
+  
+  /* 8 */ @js.native
+  object itemAttachmentDeleting extends TopLevel[itemAttachmentDeleting with Double]
+  
+  /* 36 */ @js.native
+  object itemCheckedIn extends TopLevel[itemCheckedIn with Double]
+  
+  /* 37 */ @js.native
+  object itemCheckedOut extends TopLevel[itemCheckedOut with Double]
+  
+  /* 4 */ @js.native
+  object itemCheckingIn extends TopLevel[itemCheckingIn with Double]
+  
+  /* 5 */ @js.native
+  object itemCheckingOut extends TopLevel[itemCheckingOut with Double]
+  
+  /* 35 */ @js.native
+  object itemDeleted extends TopLevel[itemDeleted with Double]
+  
+  /* 3 */ @js.native
+  object itemDeleting extends TopLevel[itemDeleting with Double]
+  
+  /* 42 */ @js.native
+  object itemFileConverted extends TopLevel[itemFileConverted with Double]
+  
+  /* 41 */ @js.native
+  object itemFileMoved extends TopLevel[itemFileMoved with Double]
+  
+  /* 9 */ @js.native
+  object itemFileMoving extends TopLevel[itemFileMoving with Double]
+  
+  /* 38 */ @js.native
+  object itemUncheckedOut extends TopLevel[itemUncheckedOut with Double]
+  
+  /* 6 */ @js.native
+  object itemUncheckingOut extends TopLevel[itemUncheckingOut with Double]
+  
+  /* 34 */ @js.native
+  object itemUpdated extends TopLevel[itemUpdated with Double]
+  
+  /* 2 */ @js.native
+  object itemUpdating extends TopLevel[itemUpdating with Double]
+  
+  /* 43 */ @js.native
+  object itemVersionDeleted extends TopLevel[itemVersionDeleted with Double]
+  
+  /* 10 */ @js.native
+  object itemVersionDeleting extends TopLevel[itemVersionDeleting with Double]
+  
+  /* 47 */ @js.native
+  object listAdded extends TopLevel[listAdded with Double]
+  
+  /* 14 */ @js.native
+  object listAdding extends TopLevel[listAdding with Double]
+  
+  /* 48 */ @js.native
+  object listDeleted extends TopLevel[listDeleted with Double]
+  
+  /* 15 */ @js.native
+  object listDeleting extends TopLevel[listDeleting with Double]
+  
+  /* 61 */ @js.native
+  object roleAssignmentAdded extends TopLevel[roleAssignmentAdded with Double]
+  
+  /* 28 */ @js.native
+  object roleAssignmentAdding extends TopLevel[roleAssignmentAdding with Double]
+  
+  /* 62 */ @js.native
+  object roleAssignmentDeleted extends TopLevel[roleAssignmentDeleted with Double]
+  
+  /* 29 */ @js.native
+  object roleAssignmentDeleting extends TopLevel[roleAssignmentDeleting with Double]
+  
+  /* 58 */ @js.native
+  object roleDefinitionAdded extends TopLevel[roleDefinitionAdded with Double]
+  
+  /* 25 */ @js.native
+  object roleDefinitionAdding extends TopLevel[roleDefinitionAdding with Double]
+  
+  /* 60 */ @js.native
+  object roleDefinitionDeleted extends TopLevel[roleDefinitionDeleted with Double]
+  
+  /* 27 */ @js.native
+  object roleDefinitionDeleting extends TopLevel[roleDefinitionDeleting with Double]
+  
+  /* 59 */ @js.native
+  object roleDefinitionUpdated extends TopLevel[roleDefinitionUpdated with Double]
+  
+  /* 26 */ @js.native
+  object roleDefinitionUpdating extends TopLevel[roleDefinitionUpdating with Double]
+  
+  /* 49 */ @js.native
+  object siteDeleted extends TopLevel[siteDeleted with Double]
+  
+  /* 16 */ @js.native
+  object siteDeleting extends TopLevel[siteDeleting with Double]
+  
+  /* 19 */ @js.native
+  object webAdding extends TopLevel[webAdding with Double]
+  
+  /* 50 */ @js.native
+  object webDeleted extends TopLevel[webDeleted with Double]
+  
+  /* 17 */ @js.native
+  object webDeleting extends TopLevel[webDeleting with Double]
+  
+  /* 51 */ @js.native
+  object webMoved extends TopLevel[webMoved with Double]
+  
+  /* 18 */ @js.native
+  object webMoving extends TopLevel[webMoving with Double]
+  
+  /* 52 */ @js.native
+  object webProvisioned extends TopLevel[webProvisioned with Double]
+  
+  /* 67 */ @js.native
+  object workflowCompleted extends TopLevel[workflowCompleted with Double]
+  
+  /* 66 */ @js.native
+  object workflowPostponed extends TopLevel[workflowPostponed with Double]
+  
+  /* 65 */ @js.native
+  object workflowStarted extends TopLevel[workflowStarted with Double]
+  
+  /* 32 */ @js.native
+  object workflowStarting extends TopLevel[workflowStarting with Double]
+  
 }
 

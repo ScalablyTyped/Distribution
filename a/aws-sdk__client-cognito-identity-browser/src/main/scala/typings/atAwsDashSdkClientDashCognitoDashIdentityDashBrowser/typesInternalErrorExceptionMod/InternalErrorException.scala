@@ -19,11 +19,11 @@ import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkD
 import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
 import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUpdateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InternalErrorException
   extends ServiceException[_InternalErrorExceptionDetails]
      with CreateIdentityPoolExceptionsUnion
@@ -45,21 +45,6 @@ trait InternalErrorException
      with UnlinkIdentityExceptionsUnion
      with UpdateIdentityPoolExceptionsUnion {
   @JSName("name")
-  var name_InternalErrorException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.InternalErrorException
-}
-
-object InternalErrorException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InternalErrorExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.InternalErrorException,
-    stack: String = null
-  ): InternalErrorException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InternalErrorException]
-  }
+  var name_InternalErrorException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.InternalErrorException = js.native
 }
 

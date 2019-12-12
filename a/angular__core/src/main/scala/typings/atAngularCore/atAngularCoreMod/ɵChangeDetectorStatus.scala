@@ -1,5 +1,12 @@
 package typings.atAngularCore.atAngularCoreMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckAlways
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckOnce
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Checked
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Destroyed
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Detached
+import typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Errored
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,13 +59,25 @@ object ɵChangeDetectorStatus extends js.Object {
   @js.native
   sealed trait Errored extends ɵChangeDetectorStatus
   
-  /* 2 */ val CheckAlways: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckAlways with Double = js.native
-  /* 0 */ val CheckOnce: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.CheckOnce with Double = js.native
-  /* 1 */ val Checked: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Checked with Double = js.native
-  /* 5 */ val Destroyed: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Destroyed with Double = js.native
-  /* 3 */ val Detached: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Detached with Double = js.native
-  /* 4 */ val Errored: typings.atAngularCore.atAngularCoreMod.ɵChangeDetectorStatus.Errored with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ɵChangeDetectorStatus with Double] = js.native
+  /* 2 */ @js.native
+  object CheckAlways extends TopLevel[CheckAlways with Double]
+  
+  /* 0 */ @js.native
+  object CheckOnce extends TopLevel[CheckOnce with Double]
+  
+  /* 1 */ @js.native
+  object Checked extends TopLevel[Checked with Double]
+  
+  /* 5 */ @js.native
+  object Destroyed extends TopLevel[Destroyed with Double]
+  
+  /* 3 */ @js.native
+  object Detached extends TopLevel[Detached with Double]
+  
+  /* 4 */ @js.native
+  object Errored extends TopLevel[Errored with Double]
+  
 }
 

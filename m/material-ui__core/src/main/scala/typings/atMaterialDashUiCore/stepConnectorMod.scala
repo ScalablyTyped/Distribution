@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.stepConnectorStepConnectorMod.StepConnectorProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object stepConnectorMod extends js.Object {
     def this(props: StepConnectorProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[StepConnectorProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[StepConnectorProps]]
+  
 }
 

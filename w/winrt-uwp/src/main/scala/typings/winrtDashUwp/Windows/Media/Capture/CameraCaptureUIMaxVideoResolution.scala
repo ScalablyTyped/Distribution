@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highDefinition
+import typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highestAvailable
+import typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.lowDefinition
+import typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.standardDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object CameraCaptureUIMaxVideoResolution extends js.Object {
   @js.native
   sealed trait standardDefinition extends CameraCaptureUIMaxVideoResolution
   
-  /* 3 */ val highDefinition: typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highDefinition with Double = js.native
-  /* 0 */ val highestAvailable: typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.highestAvailable with Double = js.native
-  /* 1 */ val lowDefinition: typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.lowDefinition with Double = js.native
-  /* 2 */ val standardDefinition: typings.winrtDashUwp.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.standardDefinition with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CameraCaptureUIMaxVideoResolution with Double] = js.native
+  /* 3 */ @js.native
+  object highDefinition extends TopLevel[highDefinition with Double]
+  
+  /* 0 */ @js.native
+  object highestAvailable extends TopLevel[highestAvailable with Double]
+  
+  /* 1 */ @js.native
+  object lowDefinition extends TopLevel[lowDefinition with Double]
+  
+  /* 2 */ @js.native
+  object standardDefinition extends TopLevel[standardDefinition with Double]
+  
 }
 

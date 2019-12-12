@@ -1,5 +1,18 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.androidOnARM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.iOSOnARM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.osx
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windows
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsMobile7
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsOnARM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnARM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnX86
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnARM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnX86
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOnPPC
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,19 +72,43 @@ object NDCertificatePlatformID extends js.Object {
   @js.native
   sealed trait xboxOne extends NDCertificatePlatformID
   
-  /* 9 */ val androidOnARM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.androidOnARM with Double = js.native
-  /* 4 */ val iOSOnARM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.iOSOnARM with Double = js.native
-  /* 1 */ val osx: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.osx with Double = js.native
-  /* 0 */ val windows: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windows with Double = js.native
-  /* 3 */ val windowsMobile7: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsMobile7 with Double = js.native
-  /* 2 */ val windowsOnARM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsOnARM with Double = js.native
-  /* 10 */ val windowsPhone81OnARM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnARM with Double = js.native
-  /* 11 */ val windowsPhone81OnX86: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone81OnX86 with Double = js.native
-  /* 6 */ val windowsPhone8OnARM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnARM with Double = js.native
-  /* 7 */ val windowsPhone8OnX86: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.windowsPhone8OnX86 with Double = js.native
-  /* 5 */ val xboxOnPPC: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOnPPC with Double = js.native
-  /* 8 */ val xboxOne: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDCertificatePlatformID.xboxOne with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NDCertificatePlatformID with Double] = js.native
+  /* 9 */ @js.native
+  object androidOnARM extends TopLevel[androidOnARM with Double]
+  
+  /* 4 */ @js.native
+  object iOSOnARM extends TopLevel[iOSOnARM with Double]
+  
+  /* 1 */ @js.native
+  object osx extends TopLevel[osx with Double]
+  
+  /* 0 */ @js.native
+  object windows extends TopLevel[windows with Double]
+  
+  /* 3 */ @js.native
+  object windowsMobile7 extends TopLevel[windowsMobile7 with Double]
+  
+  /* 2 */ @js.native
+  object windowsOnARM extends TopLevel[windowsOnARM with Double]
+  
+  /* 10 */ @js.native
+  object windowsPhone81OnARM extends TopLevel[windowsPhone81OnARM with Double]
+  
+  /* 11 */ @js.native
+  object windowsPhone81OnX86 extends TopLevel[windowsPhone81OnX86 with Double]
+  
+  /* 6 */ @js.native
+  object windowsPhone8OnARM extends TopLevel[windowsPhone8OnARM with Double]
+  
+  /* 7 */ @js.native
+  object windowsPhone8OnX86 extends TopLevel[windowsPhone8OnX86 with Double]
+  
+  /* 5 */ @js.native
+  object xboxOnPPC extends TopLevel[xboxOnPPC with Double]
+  
+  /* 8 */ @js.native
+  object xboxOne extends TopLevel[xboxOne with Double]
+  
 }
 

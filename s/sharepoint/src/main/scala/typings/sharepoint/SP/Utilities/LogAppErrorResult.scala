@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Utilities.LogAppErrorResult.accessDenied
+import typings.sharepoint.SP.Utilities.LogAppErrorResult.errorsThrottled
+import typings.sharepoint.SP.Utilities.LogAppErrorResult.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object LogAppErrorResult extends js.Object {
   @js.native
   sealed trait success extends LogAppErrorResult
   
-  /* 2 */ val accessDenied: typings.sharepoint.SP.Utilities.LogAppErrorResult.accessDenied with Double = js.native
-  /* 1 */ val errorsThrottled: typings.sharepoint.SP.Utilities.LogAppErrorResult.errorsThrottled with Double = js.native
-  /* 0 */ val success: typings.sharepoint.SP.Utilities.LogAppErrorResult.success with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LogAppErrorResult with Double] = js.native
+  /* 2 */ @js.native
+  object accessDenied extends TopLevel[accessDenied with Double]
+  
+  /* 1 */ @js.native
+  object errorsThrottled extends TopLevel[errorsThrottled with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
 }
 

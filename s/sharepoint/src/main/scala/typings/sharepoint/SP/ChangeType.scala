@@ -1,5 +1,27 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.ChangeType.add
+import typings.sharepoint.SP.ChangeType.assignmentAdd
+import typings.sharepoint.SP.ChangeType.assignmentDelete
+import typings.sharepoint.SP.ChangeType.deleteObject
+import typings.sharepoint.SP.ChangeType.listContentTypeAdd
+import typings.sharepoint.SP.ChangeType.listContentTypeDelete
+import typings.sharepoint.SP.ChangeType.memberAdd
+import typings.sharepoint.SP.ChangeType.memberDelete
+import typings.sharepoint.SP.ChangeType.moveAway
+import typings.sharepoint.SP.ChangeType.moveInto
+import typings.sharepoint.SP.ChangeType.navigation
+import typings.sharepoint.SP.ChangeType.noChange
+import typings.sharepoint.SP.ChangeType.rename
+import typings.sharepoint.SP.ChangeType.restore
+import typings.sharepoint.SP.ChangeType.roleAdd
+import typings.sharepoint.SP.ChangeType.roleDelete
+import typings.sharepoint.SP.ChangeType.roleUpdate
+import typings.sharepoint.SP.ChangeType.scopeAdd
+import typings.sharepoint.SP.ChangeType.scopeDelete
+import typings.sharepoint.SP.ChangeType.systemUpdate
+import typings.sharepoint.SP.ChangeType.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,28 +95,70 @@ object ChangeType extends js.Object {
   @js.native
   sealed trait update extends ChangeType
   
-  /* 1 */ val add: typings.sharepoint.SP.ChangeType.add with Double = js.native
-  /* 11 */ val assignmentAdd: typings.sharepoint.SP.ChangeType.assignmentAdd with Double = js.native
-  /* 12 */ val assignmentDelete: typings.sharepoint.SP.ChangeType.assignmentDelete with Double = js.native
-  /* 3 */ val deleteObject: typings.sharepoint.SP.ChangeType.deleteObject with Double = js.native
-  /* 19 */ val listContentTypeAdd: typings.sharepoint.SP.ChangeType.listContentTypeAdd with Double = js.native
-  /* 20 */ val listContentTypeDelete: typings.sharepoint.SP.ChangeType.listContentTypeDelete with Double = js.native
-  /* 13 */ val memberAdd: typings.sharepoint.SP.ChangeType.memberAdd with Double = js.native
-  /* 14 */ val memberDelete: typings.sharepoint.SP.ChangeType.memberDelete with Double = js.native
-  /* 5 */ val moveAway: typings.sharepoint.SP.ChangeType.moveAway with Double = js.native
-  /* 6 */ val moveInto: typings.sharepoint.SP.ChangeType.moveInto with Double = js.native
-  /* 16 */ val navigation: typings.sharepoint.SP.ChangeType.navigation with Double = js.native
-  /* 0 */ val noChange: typings.sharepoint.SP.ChangeType.noChange with Double = js.native
-  /* 4 */ val rename: typings.sharepoint.SP.ChangeType.rename with Double = js.native
-  /* 7 */ val restore: typings.sharepoint.SP.ChangeType.restore with Double = js.native
-  /* 8 */ val roleAdd: typings.sharepoint.SP.ChangeType.roleAdd with Double = js.native
-  /* 9 */ val roleDelete: typings.sharepoint.SP.ChangeType.roleDelete with Double = js.native
-  /* 10 */ val roleUpdate: typings.sharepoint.SP.ChangeType.roleUpdate with Double = js.native
-  /* 17 */ val scopeAdd: typings.sharepoint.SP.ChangeType.scopeAdd with Double = js.native
-  /* 18 */ val scopeDelete: typings.sharepoint.SP.ChangeType.scopeDelete with Double = js.native
-  /* 15 */ val systemUpdate: typings.sharepoint.SP.ChangeType.systemUpdate with Double = js.native
-  /* 2 */ val update: typings.sharepoint.SP.ChangeType.update with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChangeType with Double] = js.native
+  /* 1 */ @js.native
+  object add extends TopLevel[add with Double]
+  
+  /* 11 */ @js.native
+  object assignmentAdd extends TopLevel[assignmentAdd with Double]
+  
+  /* 12 */ @js.native
+  object assignmentDelete extends TopLevel[assignmentDelete with Double]
+  
+  /* 3 */ @js.native
+  object deleteObject extends TopLevel[deleteObject with Double]
+  
+  /* 19 */ @js.native
+  object listContentTypeAdd extends TopLevel[listContentTypeAdd with Double]
+  
+  /* 20 */ @js.native
+  object listContentTypeDelete extends TopLevel[listContentTypeDelete with Double]
+  
+  /* 13 */ @js.native
+  object memberAdd extends TopLevel[memberAdd with Double]
+  
+  /* 14 */ @js.native
+  object memberDelete extends TopLevel[memberDelete with Double]
+  
+  /* 5 */ @js.native
+  object moveAway extends TopLevel[moveAway with Double]
+  
+  /* 6 */ @js.native
+  object moveInto extends TopLevel[moveInto with Double]
+  
+  /* 16 */ @js.native
+  object navigation extends TopLevel[navigation with Double]
+  
+  /* 0 */ @js.native
+  object noChange extends TopLevel[noChange with Double]
+  
+  /* 4 */ @js.native
+  object rename extends TopLevel[rename with Double]
+  
+  /* 7 */ @js.native
+  object restore extends TopLevel[restore with Double]
+  
+  /* 8 */ @js.native
+  object roleAdd extends TopLevel[roleAdd with Double]
+  
+  /* 9 */ @js.native
+  object roleDelete extends TopLevel[roleDelete with Double]
+  
+  /* 10 */ @js.native
+  object roleUpdate extends TopLevel[roleUpdate with Double]
+  
+  /* 17 */ @js.native
+  object scopeAdd extends TopLevel[scopeAdd with Double]
+  
+  /* 18 */ @js.native
+  object scopeDelete extends TopLevel[scopeDelete with Double]
+  
+  /* 15 */ @js.native
+  object systemUpdate extends TopLevel[systemUpdate with Double]
+  
+  /* 2 */ @js.native
+  object update extends TopLevel[update with Double]
+  
 }
 

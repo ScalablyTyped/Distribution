@@ -1,5 +1,9 @@
 package typings.ol.formatIGCMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ol.formatIGCMod.IGCZ.BAROMETRIC
+import typings.ol.formatIGCMod.IGCZ.GPS
+import typings.ol.formatIGCMod.IGCZ.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object IGCZ extends js.Object {
   @js.native
   sealed trait NONE extends IGCZ
   
-  /* "barometric" */ val BAROMETRIC: typings.ol.formatIGCMod.IGCZ.BAROMETRIC with String = js.native
-  /* "gps" */ val GPS: typings.ol.formatIGCMod.IGCZ.GPS with String = js.native
-  /* "none" */ val NONE: typings.ol.formatIGCMod.IGCZ.NONE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[IGCZ with String] = js.native
+  /* "barometric" */ @js.native
+  object BAROMETRIC extends TopLevel[BAROMETRIC with String]
+  
+  /* "gps" */ @js.native
+  object GPS extends TopLevel[GPS with String]
+  
+  /* "none" */ @js.native
+  object NONE extends TopLevel[NONE with String]
+  
 }
 

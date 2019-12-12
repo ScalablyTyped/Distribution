@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dock-spawn"
-version := "0.0-unknown-dt-20190322Z-0033c4"
+version := "0.0-unknown-dt-20190322Z-3a8826"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

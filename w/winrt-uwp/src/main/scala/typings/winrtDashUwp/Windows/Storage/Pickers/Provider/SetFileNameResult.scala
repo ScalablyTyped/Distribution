@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Storage.Pickers.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.notAllowed
+import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.succeeded
+import typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object SetFileNameResult extends js.Object {
   @js.native
   sealed trait unavailable extends SetFileNameResult
   
-  /* 1 */ val notAllowed: typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.notAllowed with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.succeeded with Double = js.native
-  /* 2 */ val unavailable: typings.winrtDashUwp.Windows.Storage.Pickers.Provider.SetFileNameResult.unavailable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SetFileNameResult with Double] = js.native
+  /* 1 */ @js.native
+  object notAllowed extends TopLevel[notAllowed with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
+  /* 2 */ @js.native
+  object unavailable extends TopLevel[unavailable with Double]
+  
 }
 

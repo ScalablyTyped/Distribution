@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.applyRtfDocumentDefaults
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.checkTextLimit
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.formatRtf
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.none
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unhide
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unicodeBidi
+import typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unlink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object TextSetOptions extends js.Object {
   @js.native
   sealed trait unlink extends TextSetOptions
   
-  /* 6 */ val applyRtfDocumentDefaults: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.applyRtfDocumentDefaults with Double = js.native
-  /* 4 */ val checkTextLimit: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.checkTextLimit with Double = js.native
-  /* 5 */ val formatRtf: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.formatRtf with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.none with Double = js.native
-  /* 3 */ val unhide: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unhide with Double = js.native
-  /* 1 */ val unicodeBidi: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unicodeBidi with Double = js.native
-  /* 2 */ val unlink: typings.winrtDashUwp.Windows.UI.Text.TextSetOptions.unlink with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextSetOptions with Double] = js.native
+  /* 6 */ @js.native
+  object applyRtfDocumentDefaults extends TopLevel[applyRtfDocumentDefaults with Double]
+  
+  /* 4 */ @js.native
+  object checkTextLimit extends TopLevel[checkTextLimit with Double]
+  
+  /* 5 */ @js.native
+  object formatRtf extends TopLevel[formatRtf with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object unhide extends TopLevel[unhide with Double]
+  
+  /* 1 */ @js.native
+  object unicodeBidi extends TopLevel[unicodeBidi with Double]
+  
+  /* 2 */ @js.native
+  object unlink extends TopLevel[unlink with Double]
+  
 }
 

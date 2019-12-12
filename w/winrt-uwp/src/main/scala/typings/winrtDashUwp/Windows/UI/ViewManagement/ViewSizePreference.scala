@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.default
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useHalf
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useLess
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useMinimum
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useMore
+import typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useNone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object ViewSizePreference extends js.Object {
   @js.native
   sealed trait useNone extends ViewSizePreference
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.default with Double = js.native
-  /* 2 */ val useHalf: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useHalf with Double = js.native
-  /* 1 */ val useLess: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useLess with Double = js.native
-  /* 4 */ val useMinimum: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useMinimum with Double = js.native
-  /* 3 */ val useMore: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useMore with Double = js.native
-  /* 5 */ val useNone: typings.winrtDashUwp.Windows.UI.ViewManagement.ViewSizePreference.useNone with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ViewSizePreference with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object useHalf extends TopLevel[useHalf with Double]
+  
+  /* 1 */ @js.native
+  object useLess extends TopLevel[useLess with Double]
+  
+  /* 4 */ @js.native
+  object useMinimum extends TopLevel[useMinimum with Double]
+  
+  /* 3 */ @js.native
+  object useMore extends TopLevel[useMore with Double]
+  
+  /* 5 */ @js.native
+  object useNone extends TopLevel[useNone with Double]
+  
 }
 

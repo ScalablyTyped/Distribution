@@ -1,7 +1,11 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_ACTION
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_CONTENT
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.URL_TYPE_HINT_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -115,11 +119,17 @@ object OpenUrlAction extends js.Object {
     @js.native
     sealed trait URL_TYPE_HINT_UNSPECIFIED extends UrlTypeHint
     
-    /* 1 */ val AMP_ACTION: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_ACTION with Double = js.native
-    /* 2 */ val AMP_CONTENT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.AMP_CONTENT with Double = js.native
-    /* 0 */ val URL_TYPE_HINT_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.BrowseCarouselCardItem.OpenUrlAction.UrlTypeHint.URL_TYPE_HINT_UNSPECIFIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[UrlTypeHint with Double] = js.native
+    /* 1 */ @js.native
+    object AMP_ACTION extends TopLevel[AMP_ACTION with Double]
+    
+    /* 2 */ @js.native
+    object AMP_CONTENT extends TopLevel[AMP_CONTENT with Double]
+    
+    /* 0 */ @js.native
+    object URL_TYPE_HINT_UNSPECIFIED extends TopLevel[URL_TYPE_HINT_UNSPECIFIED with Double]
+    
   }
   
 }

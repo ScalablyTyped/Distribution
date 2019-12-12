@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.DeleteShiftDirection.left
+import typings.officeDashJs.Excel.DeleteShiftDirection.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object DeleteShiftDirection extends js.Object {
   @js.native
   sealed trait up extends DeleteShiftDirection
   
-  /* "Left" */ val left: typings.officeDashJs.Excel.DeleteShiftDirection.left with String = js.native
-  /* "Up" */ val up: typings.officeDashJs.Excel.DeleteShiftDirection.up with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DeleteShiftDirection with String] = js.native
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Up" */ @js.native
+  object up extends TopLevel[up with String]
+  
 }
 

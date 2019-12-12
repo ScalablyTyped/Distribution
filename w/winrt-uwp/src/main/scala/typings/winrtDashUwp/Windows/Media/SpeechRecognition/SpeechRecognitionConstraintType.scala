@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.grammar
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.list
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.topic
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.voiceCommandDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object SpeechRecognitionConstraintType extends js.Object {
   @js.native
   sealed trait voiceCommandDefinition extends SpeechRecognitionConstraintType
   
-  /* 2 */ val grammar: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.grammar with Double = js.native
-  /* 1 */ val list: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.list with Double = js.native
-  /* 0 */ val topic: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.topic with Double = js.native
-  /* 3 */ val voiceCommandDefinition: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType.voiceCommandDefinition with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpeechRecognitionConstraintType with Double] = js.native
+  /* 2 */ @js.native
+  object grammar extends TopLevel[grammar with Double]
+  
+  /* 1 */ @js.native
+  object list extends TopLevel[list with Double]
+  
+  /* 0 */ @js.native
+  object topic extends TopLevel[topic with Double]
+  
+  /* 3 */ @js.native
+  object voiceCommandDefinition extends TopLevel[voiceCommandDefinition with Double]
+  
 }
 

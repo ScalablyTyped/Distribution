@@ -1,5 +1,8 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.FoldingRangeKind.Imports
+import typings.vscode.vscodeMod.FoldingRangeKind.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +31,17 @@ object FoldingRangeKind extends js.Object {
   @js.native
   sealed trait Region extends FoldingRangeKind
   
-  /* 1 */ val Comment: typings.vscode.vscodeMod.FoldingRangeKind.Comment with Double = js.native
-  /* 2 */ val Imports: typings.vscode.vscodeMod.FoldingRangeKind.Imports with Double = js.native
-  /* 3 */ val Region: typings.vscode.vscodeMod.FoldingRangeKind.Region with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FoldingRangeKind with Double] = js.native
+  /* 1 */ @js.native
+  object Comment
+    extends TopLevel[typings.vscode.vscodeMod.FoldingRangeKind.Comment with Double]
+  
+  /* 2 */ @js.native
+  object Imports extends TopLevel[Imports with Double]
+  
+  /* 3 */ @js.native
+  object Region extends TopLevel[Region with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.any
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.generic
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.nfc
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.tpm
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.uicc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object SmartCardReaderKind extends js.Object {
   @js.native
   sealed trait uicc extends SmartCardReaderKind
   
-  /* 0 */ val any: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.any with Double = js.native
-  /* 1 */ val generic: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.generic with Double = js.native
-  /* 3 */ val nfc: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.nfc with Double = js.native
-  /* 2 */ val tpm: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.tpm with Double = js.native
-  /* 4 */ val uicc: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderKind.uicc with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmartCardReaderKind with Double] = js.native
+  /* 0 */ @js.native
+  object any extends TopLevel[any with Double]
+  
+  /* 1 */ @js.native
+  object generic extends TopLevel[generic with Double]
+  
+  /* 3 */ @js.native
+  object nfc extends TopLevel[nfc with Double]
+  
+  /* 2 */ @js.native
+  object tpm extends TopLevel[tpm with Double]
+  
+  /* 4 */ @js.native
+  object uicc extends TopLevel[uicc with Double]
+  
 }
 

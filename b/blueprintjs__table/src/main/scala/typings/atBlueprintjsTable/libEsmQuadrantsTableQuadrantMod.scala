@@ -1,10 +1,15 @@
 package typings.atBlueprintjsTable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atBlueprintjsCore.atBlueprintjsCoreMod.AbstractComponent2
 import typings.atBlueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.atBlueprintjsTable.libEsmCommonGridMod.Grid
 import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.ITableQuadrantProps
 import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.LEFT
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.MAIN
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP
+import typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP_LEFT
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.EventHandler
 import typings.react.reactMod.UIEvent
@@ -123,12 +128,20 @@ object libEsmQuadrantsTableQuadrantMod extends js.Object {
     @js.native
     sealed trait TOP_LEFT extends QuadrantType
     
-    /* "left" */ val LEFT: typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.LEFT with String = js.native
-    /* "main" */ val MAIN: typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.MAIN with String = js.native
-    /* "top" */ val TOP: typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP with String = js.native
-    /* "top-left" */ val TOP_LEFT: typings.atBlueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType.TOP_LEFT with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[QuadrantType with String] = js.native
+    /* "left" */ @js.native
+    object LEFT extends TopLevel[LEFT with String]
+    
+    /* "main" */ @js.native
+    object MAIN extends TopLevel[MAIN with String]
+    
+    /* "top" */ @js.native
+    object TOP extends TopLevel[TOP with String]
+    
+    /* "top-left" */ @js.native
+    object TOP_LEFT extends TopLevel[TOP_LEFT with String]
+    
   }
   
   /* static members */

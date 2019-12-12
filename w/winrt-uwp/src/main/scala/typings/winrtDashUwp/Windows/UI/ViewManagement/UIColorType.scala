@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accent
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark1
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark2
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark3
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight1
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight2
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight3
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.background
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.complement
+import typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.foreground
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object UIColorType extends js.Object {
   @js.native
   sealed trait foreground extends UIColorType
   
-  /* 5 */ val accent: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accent with Double = js.native
-  /* 4 */ val accentDark1: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark1 with Double = js.native
-  /* 3 */ val accentDark2: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark2 with Double = js.native
-  /* 2 */ val accentDark3: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentDark3 with Double = js.native
-  /* 6 */ val accentLight1: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight1 with Double = js.native
-  /* 7 */ val accentLight2: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight2 with Double = js.native
-  /* 8 */ val accentLight3: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.accentLight3 with Double = js.native
-  /* 0 */ val background: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.background with Double = js.native
-  /* 9 */ val complement: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.complement with Double = js.native
-  /* 1 */ val foreground: typings.winrtDashUwp.Windows.UI.ViewManagement.UIColorType.foreground with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UIColorType with Double] = js.native
+  /* 5 */ @js.native
+  object accent extends TopLevel[accent with Double]
+  
+  /* 4 */ @js.native
+  object accentDark1 extends TopLevel[accentDark1 with Double]
+  
+  /* 3 */ @js.native
+  object accentDark2 extends TopLevel[accentDark2 with Double]
+  
+  /* 2 */ @js.native
+  object accentDark3 extends TopLevel[accentDark3 with Double]
+  
+  /* 6 */ @js.native
+  object accentLight1 extends TopLevel[accentLight1 with Double]
+  
+  /* 7 */ @js.native
+  object accentLight2 extends TopLevel[accentLight2 with Double]
+  
+  /* 8 */ @js.native
+  object accentLight3 extends TopLevel[accentLight3 with Double]
+  
+  /* 0 */ @js.native
+  object background extends TopLevel[background with Double]
+  
+  /* 9 */ @js.native
+  object complement extends TopLevel[complement with Double]
+  
+  /* 1 */ @js.native
+  object foreground extends TopLevel[foreground with Double]
+  
 }
 

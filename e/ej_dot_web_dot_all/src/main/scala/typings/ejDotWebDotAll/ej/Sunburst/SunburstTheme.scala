@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Sunburst
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Sunburst.SunburstTheme.FlatDark
+import typings.ejDotWebDotAll.ej.Sunburst.SunburstTheme.FlatLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object SunburstTheme extends js.Object {
   @js.native
   sealed trait FlatLight extends SunburstTheme
   
-  /* 1 */ val FlatDark: typings.ejDotWebDotAll.ej.Sunburst.SunburstTheme.FlatDark with Double = js.native
-  /* 0 */ val FlatLight: typings.ejDotWebDotAll.ej.Sunburst.SunburstTheme.FlatLight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SunburstTheme with Double] = js.native
+  /* 1 */ @js.native
+  object FlatDark extends TopLevel[FlatDark with Double]
+  
+  /* 0 */ @js.native
+  object FlatLight extends TopLevel[FlatLight with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsCommentFieldRequired
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsDisablePostSendingDialog
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldHidden
+import typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object invocationOptions extends js.Object {
   @js.native
   sealed trait invocationOptionsEmailFieldOptional extends invocationOptions
   
-  /* 2 */ val invocationOptionsCommentFieldRequired: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsCommentFieldRequired with Double = js.native
-  /* 3 */ val invocationOptionsDisablePostSendingDialog: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsDisablePostSendingDialog with Double = js.native
-  /* 0 */ val invocationOptionsEmailFieldHidden: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldHidden with Double = js.native
-  /* 1 */ val invocationOptionsEmailFieldOptional: typings.instabugDashReactnative.instabugDashReactnativeMod.invocationOptions.invocationOptionsEmailFieldOptional with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[invocationOptions with Double] = js.native
+  /* 2 */ @js.native
+  object invocationOptionsCommentFieldRequired extends TopLevel[invocationOptionsCommentFieldRequired with Double]
+  
+  /* 3 */ @js.native
+  object invocationOptionsDisablePostSendingDialog extends TopLevel[invocationOptionsDisablePostSendingDialog with Double]
+  
+  /* 0 */ @js.native
+  object invocationOptionsEmailFieldHidden extends TopLevel[invocationOptionsEmailFieldHidden with Double]
+  
+  /* 1 */ @js.native
+  object invocationOptionsEmailFieldOptional extends TopLevel[invocationOptionsEmailFieldOptional with Double]
+  
 }
 

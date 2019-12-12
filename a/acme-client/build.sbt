@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "acme-client"
-version := "3.0-dt-20190715Z-aceb72"
+version := "3.0-dt-20190715Z-5f6756"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

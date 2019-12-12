@@ -1,5 +1,10 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.MediaCommand.PAUSE
+import typings.chrome.chrome.cast.media.MediaCommand.SEEK
+import typings.chrome.chrome.cast.media.MediaCommand.STREAM_MUTE
+import typings.chrome.chrome.cast.media.MediaCommand.STREAM_VOLUME
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object MediaCommand extends js.Object {
   @js.native
   sealed trait STREAM_VOLUME extends MediaCommand
   
-  /* "pause" */ val PAUSE: typings.chrome.chrome.cast.media.MediaCommand.PAUSE with String = js.native
-  /* "seek" */ val SEEK: typings.chrome.chrome.cast.media.MediaCommand.SEEK with String = js.native
-  /* "stream_mute" */ val STREAM_MUTE: typings.chrome.chrome.cast.media.MediaCommand.STREAM_MUTE with String = js.native
-  /* "stream_volume" */ val STREAM_VOLUME: typings.chrome.chrome.cast.media.MediaCommand.STREAM_VOLUME with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[MediaCommand with String] = js.native
+  /* "pause" */ @js.native
+  object PAUSE extends TopLevel[PAUSE with String]
+  
+  /* "seek" */ @js.native
+  object SEEK extends TopLevel[SEEK with String]
+  
+  /* "stream_mute" */ @js.native
+  object STREAM_MUTE extends TopLevel[STREAM_MUTE with String]
+  
+  /* "stream_volume" */ @js.native
+  object STREAM_VOLUME extends TopLevel[STREAM_VOLUME with String]
+  
 }
 

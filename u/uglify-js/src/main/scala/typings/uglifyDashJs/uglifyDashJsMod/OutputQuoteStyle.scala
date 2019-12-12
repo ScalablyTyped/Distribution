@@ -1,5 +1,10 @@
 package typings.uglifyDashJs.uglifyDashJsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysDouble
+import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysOriginal
+import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysSingle
+import typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.PreferDouble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object OutputQuoteStyle extends js.Object {
   @js.native
   sealed trait PreferDouble extends OutputQuoteStyle
   
-  /* 2 */ val AlwaysDouble: typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysDouble with Double = js.native
-  /* 3 */ val AlwaysOriginal: typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysOriginal with Double = js.native
-  /* 1 */ val AlwaysSingle: typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.AlwaysSingle with Double = js.native
-  /* 0 */ val PreferDouble: typings.uglifyDashJs.uglifyDashJsMod.OutputQuoteStyle.PreferDouble with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OutputQuoteStyle with Double] = js.native
+  /* 2 */ @js.native
+  object AlwaysDouble extends TopLevel[AlwaysDouble with Double]
+  
+  /* 3 */ @js.native
+  object AlwaysOriginal extends TopLevel[AlwaysOriginal with Double]
+  
+  /* 1 */ @js.native
+  object AlwaysSingle extends TopLevel[AlwaysSingle with Double]
+  
+  /* 0 */ @js.native
+  object PreferDouble extends TopLevel[PreferDouble with Double]
+  
 }
 

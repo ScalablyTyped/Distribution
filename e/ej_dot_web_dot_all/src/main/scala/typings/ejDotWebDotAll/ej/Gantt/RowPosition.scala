@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.RowPosition.AboveSelectedRow
+import typings.ejDotWebDotAll.ej.Gantt.RowPosition.BelowSelectedRow
+import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Bottom
+import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Child
+import typings.ejDotWebDotAll.ej.Gantt.RowPosition.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object RowPosition extends js.Object {
   @js.native
   sealed trait Top extends RowPosition
   
-  /* 2 */ val AboveSelectedRow: typings.ejDotWebDotAll.ej.Gantt.RowPosition.AboveSelectedRow with Double = js.native
-  /* 3 */ val BelowSelectedRow: typings.ejDotWebDotAll.ej.Gantt.RowPosition.BelowSelectedRow with Double = js.native
-  /* 1 */ val Bottom: typings.ejDotWebDotAll.ej.Gantt.RowPosition.Bottom with Double = js.native
-  /* 4 */ val Child: typings.ejDotWebDotAll.ej.Gantt.RowPosition.Child with Double = js.native
-  /* 0 */ val Top: typings.ejDotWebDotAll.ej.Gantt.RowPosition.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RowPosition with Double] = js.native
+  /* 2 */ @js.native
+  object AboveSelectedRow extends TopLevel[AboveSelectedRow with Double]
+  
+  /* 3 */ @js.native
+  object BelowSelectedRow extends TopLevel[BelowSelectedRow with Double]
+  
+  /* 1 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 4 */ @js.native
+  object Child extends TopLevel[Child with Double]
+  
+  /* 0 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

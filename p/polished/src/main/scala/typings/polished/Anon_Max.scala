@@ -13,7 +13,8 @@ trait Anon_Max extends TopLevel[Anon_Infix] {
   var `*`: Anon_InfixRegSymbol = js.native
   var `+`: Anon_InfixPrefix = js.native
   var `,`: Anon_InfixRegSymbolSymbolAnon012 = js.native
-  var `-`: Anon_InfixPrefixRegSymbol = js.native
+  @JSName("-")
+  var `-_`: Anon_InfixPrefixRegSymbol = js.native
   var `/`: Anon_InfixRegSymbolSymbol = js.native
   var max: Anon_FuncMax = js.native
   var min: Anon_Func = js.native

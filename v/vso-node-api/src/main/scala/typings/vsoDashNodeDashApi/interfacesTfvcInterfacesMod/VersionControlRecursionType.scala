@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.Full
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.None
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevel
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevelPlusNestedEmptyFolders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object VersionControlRecursionType extends js.Object {
   @js.native
   sealed trait OneLevelPlusNestedEmptyFolders extends VersionControlRecursionType
   
-  /* 120 */ val Full: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.Full with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.None with Double = js.native
-  /* 1 */ val OneLevel: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevel with Double = js.native
-  /* 4 */ val OneLevelPlusNestedEmptyFolders: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.VersionControlRecursionType.OneLevelPlusNestedEmptyFolders with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VersionControlRecursionType with Double] = js.native
+  /* 120 */ @js.native
+  object Full extends TopLevel[Full with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object OneLevel extends TopLevel[OneLevel with Double]
+  
+  /* 4 */ @js.native
+  object OneLevelPlusNestedEmptyFolders extends TopLevel[OneLevelPlusNestedEmptyFolders with Double]
+  
 }
 

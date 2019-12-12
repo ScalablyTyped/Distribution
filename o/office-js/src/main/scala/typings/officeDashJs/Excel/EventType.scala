@@ -1,5 +1,36 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.EventType.agaveVisualUpdate
+import typings.officeDashJs.Excel.EventType.chartActivated
+import typings.officeDashJs.Excel.EventType.chartAdded
+import typings.officeDashJs.Excel.EventType.chartDeactivated
+import typings.officeDashJs.Excel.EventType.chartDeleted
+import typings.officeDashJs.Excel.EventType.ribbonCommandExecuted
+import typings.officeDashJs.Excel.EventType.shapeActivated
+import typings.officeDashJs.Excel.EventType.shapeDeactivated
+import typings.officeDashJs.Excel.EventType.tableAdded
+import typings.officeDashJs.Excel.EventType.tableChanged
+import typings.officeDashJs.Excel.EventType.tableDeleted
+import typings.officeDashJs.Excel.EventType.tableFiltered
+import typings.officeDashJs.Excel.EventType.tableSelectionChanged
+import typings.officeDashJs.Excel.EventType.visualChange
+import typings.officeDashJs.Excel.EventType.visualSelectionChanged
+import typings.officeDashJs.Excel.EventType.wacoperationEvent
+import typings.officeDashJs.Excel.EventType.workbookAutoSaveSettingChanged
+import typings.officeDashJs.Excel.EventType.worksheetActivated
+import typings.officeDashJs.Excel.EventType.worksheetAdded
+import typings.officeDashJs.Excel.EventType.worksheetCalculated
+import typings.officeDashJs.Excel.EventType.worksheetChanged
+import typings.officeDashJs.Excel.EventType.worksheetColumnSorted
+import typings.officeDashJs.Excel.EventType.worksheetDeactivated
+import typings.officeDashJs.Excel.EventType.worksheetDeleted
+import typings.officeDashJs.Excel.EventType.worksheetFiltered
+import typings.officeDashJs.Excel.EventType.worksheetFormatChanged
+import typings.officeDashJs.Excel.EventType.worksheetRowHiddenChanged
+import typings.officeDashJs.Excel.EventType.worksheetRowSorted
+import typings.officeDashJs.Excel.EventType.worksheetSelectionChanged
+import typings.officeDashJs.Excel.EventType.worksheetSingleClicked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -248,37 +279,97 @@ object EventType extends js.Object {
   @js.native
   sealed trait worksheetSingleClicked extends EventType
   
-  /* "AgaveVisualUpdate" */ val agaveVisualUpdate: typings.officeDashJs.Excel.EventType.agaveVisualUpdate with String = js.native
-  /* "ChartActivated" */ val chartActivated: typings.officeDashJs.Excel.EventType.chartActivated with String = js.native
-  /* "ChartAdded" */ val chartAdded: typings.officeDashJs.Excel.EventType.chartAdded with String = js.native
-  /* "ChartDeactivated" */ val chartDeactivated: typings.officeDashJs.Excel.EventType.chartDeactivated with String = js.native
-  /* "ChartDeleted" */ val chartDeleted: typings.officeDashJs.Excel.EventType.chartDeleted with String = js.native
-  /* "RibbonCommandExecuted" */ val ribbonCommandExecuted: typings.officeDashJs.Excel.EventType.ribbonCommandExecuted with String = js.native
-  /* "ShapeActivated" */ val shapeActivated: typings.officeDashJs.Excel.EventType.shapeActivated with String = js.native
-  /* "ShapeDeactivated" */ val shapeDeactivated: typings.officeDashJs.Excel.EventType.shapeDeactivated with String = js.native
-  /* "TableAdded" */ val tableAdded: typings.officeDashJs.Excel.EventType.tableAdded with String = js.native
-  /* "TableChanged" */ val tableChanged: typings.officeDashJs.Excel.EventType.tableChanged with String = js.native
-  /* "TableDeleted" */ val tableDeleted: typings.officeDashJs.Excel.EventType.tableDeleted with String = js.native
-  /* "TableFiltered" */ val tableFiltered: typings.officeDashJs.Excel.EventType.tableFiltered with String = js.native
-  /* "TableSelectionChanged" */ val tableSelectionChanged: typings.officeDashJs.Excel.EventType.tableSelectionChanged with String = js.native
-  /* "VisualChange" */ val visualChange: typings.officeDashJs.Excel.EventType.visualChange with String = js.native
-  /* "VisualSelectionChanged" */ val visualSelectionChanged: typings.officeDashJs.Excel.EventType.visualSelectionChanged with String = js.native
-  /* "WACOperationEvent" */ val wacoperationEvent: typings.officeDashJs.Excel.EventType.wacoperationEvent with String = js.native
-  /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: typings.officeDashJs.Excel.EventType.workbookAutoSaveSettingChanged with String = js.native
-  /* "WorksheetActivated" */ val worksheetActivated: typings.officeDashJs.Excel.EventType.worksheetActivated with String = js.native
-  /* "WorksheetAdded" */ val worksheetAdded: typings.officeDashJs.Excel.EventType.worksheetAdded with String = js.native
-  /* "WorksheetCalculated" */ val worksheetCalculated: typings.officeDashJs.Excel.EventType.worksheetCalculated with String = js.native
-  /* "WorksheetChanged" */ val worksheetChanged: typings.officeDashJs.Excel.EventType.worksheetChanged with String = js.native
-  /* "WorksheetColumnSorted" */ val worksheetColumnSorted: typings.officeDashJs.Excel.EventType.worksheetColumnSorted with String = js.native
-  /* "WorksheetDeactivated" */ val worksheetDeactivated: typings.officeDashJs.Excel.EventType.worksheetDeactivated with String = js.native
-  /* "WorksheetDeleted" */ val worksheetDeleted: typings.officeDashJs.Excel.EventType.worksheetDeleted with String = js.native
-  /* "WorksheetFiltered" */ val worksheetFiltered: typings.officeDashJs.Excel.EventType.worksheetFiltered with String = js.native
-  /* "WorksheetFormatChanged" */ val worksheetFormatChanged: typings.officeDashJs.Excel.EventType.worksheetFormatChanged with String = js.native
-  /* "WorksheetRowHiddenChanged" */ val worksheetRowHiddenChanged: typings.officeDashJs.Excel.EventType.worksheetRowHiddenChanged with String = js.native
-  /* "WorksheetRowSorted" */ val worksheetRowSorted: typings.officeDashJs.Excel.EventType.worksheetRowSorted with String = js.native
-  /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: typings.officeDashJs.Excel.EventType.worksheetSelectionChanged with String = js.native
-  /* "WorksheetSingleClicked" */ val worksheetSingleClicked: typings.officeDashJs.Excel.EventType.worksheetSingleClicked with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EventType with String] = js.native
+  /* "AgaveVisualUpdate" */ @js.native
+  object agaveVisualUpdate extends TopLevel[agaveVisualUpdate with String]
+  
+  /* "ChartActivated" */ @js.native
+  object chartActivated extends TopLevel[chartActivated with String]
+  
+  /* "ChartAdded" */ @js.native
+  object chartAdded extends TopLevel[chartAdded with String]
+  
+  /* "ChartDeactivated" */ @js.native
+  object chartDeactivated extends TopLevel[chartDeactivated with String]
+  
+  /* "ChartDeleted" */ @js.native
+  object chartDeleted extends TopLevel[chartDeleted with String]
+  
+  /* "RibbonCommandExecuted" */ @js.native
+  object ribbonCommandExecuted extends TopLevel[ribbonCommandExecuted with String]
+  
+  /* "ShapeActivated" */ @js.native
+  object shapeActivated extends TopLevel[shapeActivated with String]
+  
+  /* "ShapeDeactivated" */ @js.native
+  object shapeDeactivated extends TopLevel[shapeDeactivated with String]
+  
+  /* "TableAdded" */ @js.native
+  object tableAdded extends TopLevel[tableAdded with String]
+  
+  /* "TableChanged" */ @js.native
+  object tableChanged extends TopLevel[tableChanged with String]
+  
+  /* "TableDeleted" */ @js.native
+  object tableDeleted extends TopLevel[tableDeleted with String]
+  
+  /* "TableFiltered" */ @js.native
+  object tableFiltered extends TopLevel[tableFiltered with String]
+  
+  /* "TableSelectionChanged" */ @js.native
+  object tableSelectionChanged extends TopLevel[tableSelectionChanged with String]
+  
+  /* "VisualChange" */ @js.native
+  object visualChange extends TopLevel[visualChange with String]
+  
+  /* "VisualSelectionChanged" */ @js.native
+  object visualSelectionChanged extends TopLevel[visualSelectionChanged with String]
+  
+  /* "WACOperationEvent" */ @js.native
+  object wacoperationEvent extends TopLevel[wacoperationEvent with String]
+  
+  /* "WorkbookAutoSaveSettingChanged" */ @js.native
+  object workbookAutoSaveSettingChanged extends TopLevel[workbookAutoSaveSettingChanged with String]
+  
+  /* "WorksheetActivated" */ @js.native
+  object worksheetActivated extends TopLevel[worksheetActivated with String]
+  
+  /* "WorksheetAdded" */ @js.native
+  object worksheetAdded extends TopLevel[worksheetAdded with String]
+  
+  /* "WorksheetCalculated" */ @js.native
+  object worksheetCalculated extends TopLevel[worksheetCalculated with String]
+  
+  /* "WorksheetChanged" */ @js.native
+  object worksheetChanged extends TopLevel[worksheetChanged with String]
+  
+  /* "WorksheetColumnSorted" */ @js.native
+  object worksheetColumnSorted extends TopLevel[worksheetColumnSorted with String]
+  
+  /* "WorksheetDeactivated" */ @js.native
+  object worksheetDeactivated extends TopLevel[worksheetDeactivated with String]
+  
+  /* "WorksheetDeleted" */ @js.native
+  object worksheetDeleted extends TopLevel[worksheetDeleted with String]
+  
+  /* "WorksheetFiltered" */ @js.native
+  object worksheetFiltered extends TopLevel[worksheetFiltered with String]
+  
+  /* "WorksheetFormatChanged" */ @js.native
+  object worksheetFormatChanged extends TopLevel[worksheetFormatChanged with String]
+  
+  /* "WorksheetRowHiddenChanged" */ @js.native
+  object worksheetRowHiddenChanged extends TopLevel[worksheetRowHiddenChanged with String]
+  
+  /* "WorksheetRowSorted" */ @js.native
+  object worksheetRowSorted extends TopLevel[worksheetRowSorted with String]
+  
+  /* "WorksheetSelectionChanged" */ @js.native
+  object worksheetSelectionChanged extends TopLevel[worksheetSelectionChanged with String]
+  
+  /* "WorksheetSingleClicked" */ @js.native
+  object worksheetSingleClicked extends TopLevel[worksheetSingleClicked with String]
+  
 }
 

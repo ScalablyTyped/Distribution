@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd-native-slinky-facade"
-version := "201912040132-947f8a"
+version := "201912121214-b66b6e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

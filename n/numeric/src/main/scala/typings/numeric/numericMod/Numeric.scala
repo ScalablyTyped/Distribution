@@ -721,7 +721,8 @@ trait Numeric extends js.Object {
   def `+_Vector`(x: Vector, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
   @JSName("+")
   def `+_Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
-  def `-`(
+  @JSName("-")
+  def `-_`(
     x: js.Array[
       js.Array[
         (js.Array[
@@ -798,7 +799,8 @@ trait Numeric extends js.Object {
       ]
     ]) | Scalar)*
   ): js.Array[js.Array[Double]] = js.native
-  def `-`(
+  @JSName("-")
+  def `-_`(
     x: js.Array[
       js.Array[
         (js.Array[
@@ -851,14 +853,16 @@ trait Numeric extends js.Object {
       ]
     ]) | Scalar)*
   ): js.Array[js.Array[Double]] = js.native
-  def `-`(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
-  def `-`(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   @JSName("-")
-  def `-_Scalar`(x: Scalar, y: Scalar, args: Scalar*): Scalar = js.native
+  def `-_`(x: Scalar, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
   @JSName("-")
-  def `-_Vector`(x: Vector, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
+  def `-_`(x: Scalar, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   @JSName("-")
-  def `-_Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
+  def `-__Scalar`(x: Scalar, y: Scalar, args: Scalar*): Scalar = js.native
+  @JSName("-")
+  def `-__Vector`(x: Vector, y: Scalar, args: (Scalar | Vector)*): Vector = js.native
+  @JSName("-")
+  def `-__Vector`(x: Vector, y: Vector, args: (Scalar | Vector)*): Vector = js.native
   def `/`(
     x: js.Array[
       js.Array[

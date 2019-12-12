@@ -1,5 +1,30 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureArm
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX64
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX86
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraFront
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraRear
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL11
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL12
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX10
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX11
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX9
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.gyroscope
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.hover
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.magnetometer
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory1GB
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory2GB
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory300MB
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory750MB
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.nfc
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolution720P
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvga
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOr720P
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOrWxga
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxga
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxgaOr720P
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,31 +132,79 @@ object StoreSystemFeature extends js.Object {
   @js.native
   sealed trait resolutionWxgaOr720P extends StoreSystemFeature
   
-  /* 2 */ val architectureArm: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureArm with Double = js.native
-  /* 1 */ val architectureX64: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX64 with Double = js.native
-  /* 0 */ val architectureX86: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.architectureX86 with Double = js.native
-  /* 12 */ val cameraFront: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraFront with Double = js.native
-  /* 13 */ val cameraRear: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.cameraRear with Double = js.native
-  /* 6 */ val d3D12HardwareFL11: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL11 with Double = js.native
-  /* 7 */ val d3D12HardwareFL12: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.d3D12HardwareFL12 with Double = js.native
-  /* 4 */ val directX10: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX10 with Double = js.native
-  /* 5 */ val directX11: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX11 with Double = js.native
-  /* 3 */ val directX9: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.directX9 with Double = js.native
-  /* 14 */ val gyroscope: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.gyroscope with Double = js.native
-  /* 15 */ val hover: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.hover with Double = js.native
-  /* 16 */ val magnetometer: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.magnetometer with Double = js.native
-  /* 10 */ val memory1GB: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory1GB with Double = js.native
-  /* 11 */ val memory2GB: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory2GB with Double = js.native
-  /* 8 */ val memory300MB: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory300MB with Double = js.native
-  /* 9 */ val memory750MB: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.memory750MB with Double = js.native
-  /* 17 */ val nfc: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.nfc with Double = js.native
-  /* 18 */ val resolution720P: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolution720P with Double = js.native
-  /* 19 */ val resolutionWvga: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvga with Double = js.native
-  /* 20 */ val resolutionWvgaOr720P: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOr720P with Double = js.native
-  /* 22 */ val resolutionWvgaOrWxga: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWvgaOrWxga with Double = js.native
-  /* 21 */ val resolutionWxga: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxga with Double = js.native
-  /* 23 */ val resolutionWxgaOr720P: typings.winrtDashUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature.resolutionWxgaOr720P with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StoreSystemFeature with Double] = js.native
+  /* 2 */ @js.native
+  object architectureArm extends TopLevel[architectureArm with Double]
+  
+  /* 1 */ @js.native
+  object architectureX64 extends TopLevel[architectureX64 with Double]
+  
+  /* 0 */ @js.native
+  object architectureX86 extends TopLevel[architectureX86 with Double]
+  
+  /* 12 */ @js.native
+  object cameraFront extends TopLevel[cameraFront with Double]
+  
+  /* 13 */ @js.native
+  object cameraRear extends TopLevel[cameraRear with Double]
+  
+  /* 6 */ @js.native
+  object d3D12HardwareFL11 extends TopLevel[d3D12HardwareFL11 with Double]
+  
+  /* 7 */ @js.native
+  object d3D12HardwareFL12 extends TopLevel[d3D12HardwareFL12 with Double]
+  
+  /* 4 */ @js.native
+  object directX10 extends TopLevel[directX10 with Double]
+  
+  /* 5 */ @js.native
+  object directX11 extends TopLevel[directX11 with Double]
+  
+  /* 3 */ @js.native
+  object directX9 extends TopLevel[directX9 with Double]
+  
+  /* 14 */ @js.native
+  object gyroscope extends TopLevel[gyroscope with Double]
+  
+  /* 15 */ @js.native
+  object hover extends TopLevel[hover with Double]
+  
+  /* 16 */ @js.native
+  object magnetometer extends TopLevel[magnetometer with Double]
+  
+  /* 10 */ @js.native
+  object memory1GB extends TopLevel[memory1GB with Double]
+  
+  /* 11 */ @js.native
+  object memory2GB extends TopLevel[memory2GB with Double]
+  
+  /* 8 */ @js.native
+  object memory300MB extends TopLevel[memory300MB with Double]
+  
+  /* 9 */ @js.native
+  object memory750MB extends TopLevel[memory750MB with Double]
+  
+  /* 17 */ @js.native
+  object nfc extends TopLevel[nfc with Double]
+  
+  /* 18 */ @js.native
+  object resolution720P extends TopLevel[resolution720P with Double]
+  
+  /* 19 */ @js.native
+  object resolutionWvga extends TopLevel[resolutionWvga with Double]
+  
+  /* 20 */ @js.native
+  object resolutionWvgaOr720P extends TopLevel[resolutionWvgaOr720P with Double]
+  
+  /* 22 */ @js.native
+  object resolutionWvgaOrWxga extends TopLevel[resolutionWvgaOrWxga with Double]
+  
+  /* 21 */ @js.native
+  object resolutionWxga extends TopLevel[resolutionWxga with Double]
+  
+  /* 23 */ @js.native
+  object resolutionWxgaOr720P extends TopLevel[resolutionWxgaOr720P with Double]
+  
 }
 

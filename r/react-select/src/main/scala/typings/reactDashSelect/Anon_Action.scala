@@ -16,7 +16,7 @@ trait Anon_Action[OptionType /* <: OptionTypeBase */] extends js.Object {
   var isMulti: Boolean = js.native
   var isRtl: Boolean = js.native
   var options: OptionsType[_] = js.native
-  var selectProps: Anon_Children with Props[OptionType] = js.native
+  var selectProps: ReadonlychildrenReactNode with Props[OptionType] = js.native
   def clearValue(): Unit = js.native
   def getStyles(key: String, props: js.Object): js.Object = js.native
   def getValue(): js.Array[OptionType] = js.native

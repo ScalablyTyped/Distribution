@@ -1,5 +1,13 @@
 package typings.expo.buildScreenOrientationScreenOrientationDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_LEFT
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_RIGHT
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_DOWN
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_UP
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Orientation extends js.Object {
   @js.native
   sealed trait UNKNOWN extends Orientation
   
-  /* "LANDSCAPE" */ val LANDSCAPE: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE with String = js.native
-  /* "LANDSCAPE_LEFT" */ val LANDSCAPE_LEFT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_LEFT with String = js.native
-  /* "LANDSCAPE_RIGHT" */ val LANDSCAPE_RIGHT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.LANDSCAPE_RIGHT with String = js.native
-  /* "PORTRAIT" */ val PORTRAIT: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT with String = js.native
-  /* "PORTRAIT_DOWN" */ val PORTRAIT_DOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_DOWN with String = js.native
-  /* "PORTRAIT_UP" */ val PORTRAIT_UP: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.PORTRAIT_UP with String = js.native
-  /* "UNKNOWN" */ val UNKNOWN: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.Orientation.UNKNOWN with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Orientation with String] = js.native
+  /* "LANDSCAPE" */ @js.native
+  object LANDSCAPE extends TopLevel[LANDSCAPE with String]
+  
+  /* "LANDSCAPE_LEFT" */ @js.native
+  object LANDSCAPE_LEFT extends TopLevel[LANDSCAPE_LEFT with String]
+  
+  /* "LANDSCAPE_RIGHT" */ @js.native
+  object LANDSCAPE_RIGHT extends TopLevel[LANDSCAPE_RIGHT with String]
+  
+  /* "PORTRAIT" */ @js.native
+  object PORTRAIT extends TopLevel[PORTRAIT with String]
+  
+  /* "PORTRAIT_DOWN" */ @js.native
+  object PORTRAIT_DOWN extends TopLevel[PORTRAIT_DOWN with String]
+  
+  /* "PORTRAIT_UP" */ @js.native
+  object PORTRAIT_UP extends TopLevel[PORTRAIT_UP with String]
+  
+  /* "UNKNOWN" */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with String]
+  
 }
 

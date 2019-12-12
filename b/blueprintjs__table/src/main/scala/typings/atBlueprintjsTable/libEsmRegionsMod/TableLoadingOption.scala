@@ -1,5 +1,9 @@
 package typings.atBlueprintjsTable.libEsmRegionsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.CELLS
+import typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.COLUMN_HEADERS
+import typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.ROW_HEADERS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TableLoadingOption extends js.Object {
   @js.native
   sealed trait ROW_HEADERS extends TableLoadingOption
   
-  /* "cells" */ val CELLS: typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.CELLS with String = js.native
-  /* "column-header" */ val COLUMN_HEADERS: typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.COLUMN_HEADERS with String = js.native
-  /* "row-header" */ val ROW_HEADERS: typings.atBlueprintjsTable.libEsmRegionsMod.TableLoadingOption.ROW_HEADERS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TableLoadingOption with String] = js.native
+  /* "cells" */ @js.native
+  object CELLS extends TopLevel[CELLS with String]
+  
+  /* "column-header" */ @js.native
+  object COLUMN_HEADERS extends TopLevel[COLUMN_HEADERS with String]
+  
+  /* "row-header" */ @js.native
+  object ROW_HEADERS extends TopLevel[ROW_HEADERS with String]
+  
 }
 

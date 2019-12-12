@@ -10,49 +10,33 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.7]
   */
+@js.native
 trait ChartBorderLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * HTML color code representing the color of borders in the chart.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the line style of the border. See Excel.ChartLineStyle for details.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var lineStyle: js.UndefOr[Boolean] = js.undefined
+  var lineStyle: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents weight of the border, in points.
     *
     * [Api set: ExcelApi 1.7]
     */
-  var weight: js.UndefOr[Boolean] = js.undefined
-}
-
-object ChartBorderLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: js.UndefOr[Boolean] = js.undefined,
-    weight: js.UndefOr[Boolean] = js.undefined
-  ): ChartBorderLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineStyle)) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChartBorderLoadOptions]
-  }
+  var weight: js.UndefOr[Boolean] = js.native
 }
 

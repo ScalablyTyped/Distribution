@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rox-browser"
-version := "4.8-dt-20191105Z-5b9ea3"
+version := "4.8-dt-20191105Z-556f9c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

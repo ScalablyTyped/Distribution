@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Delete
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Edit
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.None
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object SubscriptionPermissions extends js.Object {
   @js.native
   sealed trait View extends SubscriptionPermissions
   
-  /* 4 */ val Delete: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Delete with Double = js.native
-  /* 2 */ val Edit: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.Edit with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.None with Double = js.native
-  /* 1 */ val View: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionPermissions.View with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionPermissions with Double] = js.native
+  /* 4 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 2 */ @js.native
+  object Edit extends TopLevel[Edit with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object View extends TopLevel[View with Double]
+  
 }
 

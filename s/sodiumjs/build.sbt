@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sodiumjs"
-version := "3.0.7-d57031"
+version := "3.0.7-6e2770"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

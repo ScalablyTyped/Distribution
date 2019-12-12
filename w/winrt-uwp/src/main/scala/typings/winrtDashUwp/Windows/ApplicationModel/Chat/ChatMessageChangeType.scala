@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.changeTrackingLost
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageCreated
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageDeleted
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageModified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ChatMessageChangeType extends js.Object {
   @js.native
   sealed trait messageModified extends ChatMessageChangeType
   
-  /* 3 */ val changeTrackingLost: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.changeTrackingLost with Double = js.native
-  /* 0 */ val messageCreated: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageCreated with Double = js.native
-  /* 2 */ val messageDeleted: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageDeleted with Double = js.native
-  /* 1 */ val messageModified: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageChangeType.messageModified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatMessageChangeType with Double] = js.native
+  /* 3 */ @js.native
+  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
+  
+  /* 0 */ @js.native
+  object messageCreated extends TopLevel[messageCreated with Double]
+  
+  /* 2 */ @js.native
+  object messageDeleted extends TopLevel[messageDeleted with Double]
+  
+  /* 1 */ @js.native
+  object messageModified extends TopLevel[messageModified with Double]
+  
 }
 

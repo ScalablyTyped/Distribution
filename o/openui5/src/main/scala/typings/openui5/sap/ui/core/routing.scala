@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.core.mvc.View
@@ -9,6 +10,10 @@ import typings.openui5.sap.ui.core.routing.Target
 import typings.openui5.sap.ui.core.routing.Targets
 import typings.openui5.sap.ui.core.routing.Views
 import typings.openui5.sap.ui.core.routing.routing.HistoryDirection
+import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Backwards
+import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Forwards
+import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.NewEntry
+import typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -629,12 +634,20 @@ object routing extends js.Object {
       @js.native
       sealed trait Unknown extends HistoryDirection
       
-      /* 0 */ val Backwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Backwards with Double = js.native
-      /* 1 */ val Forwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Forwards with Double = js.native
-      /* 2 */ val NewEntry: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.NewEntry with Double = js.native
-      /* 3 */ val Unknown: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Unknown with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[HistoryDirection with Double] = js.native
+      /* 0 */ @js.native
+      object Backwards extends TopLevel[Backwards with Double]
+      
+      /* 1 */ @js.native
+      object Forwards extends TopLevel[Forwards with Double]
+      
+      /* 2 */ @js.native
+      object NewEntry extends TopLevel[NewEntry with Double]
+      
+      /* 3 */ @js.native
+      object Unknown extends TopLevel[Unknown with Double]
+      
     }
     
   }

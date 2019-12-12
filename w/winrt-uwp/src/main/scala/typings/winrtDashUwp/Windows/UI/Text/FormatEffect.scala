@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.off
+import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.on
+import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.toggle
+import typings.winrtDashUwp.Windows.UI.Text.FormatEffect.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object FormatEffect extends js.Object {
   @js.native
   sealed trait undefined extends FormatEffect
   
-  /* 0 */ val off: typings.winrtDashUwp.Windows.UI.Text.FormatEffect.off with Double = js.native
-  /* 1 */ val on: typings.winrtDashUwp.Windows.UI.Text.FormatEffect.on with Double = js.native
-  /* 2 */ val toggle: typings.winrtDashUwp.Windows.UI.Text.FormatEffect.toggle with Double = js.native
-  /* 3 */ val undefined: typings.winrtDashUwp.Windows.UI.Text.FormatEffect.undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormatEffect with Double] = js.native
+  /* 0 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
+  /* 2 */ @js.native
+  object toggle extends TopLevel[toggle with Double]
+  
+  /* 3 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
 }
 

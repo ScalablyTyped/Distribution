@@ -1,5 +1,12 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.Blocked
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.Invited
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.KickAcknowledged
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.Kicked
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.Member
+import typings.steamDashClient.steamDashClientMod.EClanRelationship.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object EClanRelationship extends js.Object {
   @js.native
   sealed trait None extends EClanRelationship
   
-  /* 1 */ val Blocked: typings.steamDashClient.steamDashClientMod.EClanRelationship.Blocked with Double = js.native
-  /* 2 */ val Invited: typings.steamDashClient.steamDashClientMod.EClanRelationship.Invited with Double = js.native
-  /* 5 */ val KickAcknowledged: typings.steamDashClient.steamDashClientMod.EClanRelationship.KickAcknowledged with Double = js.native
-  /* 4 */ val Kicked: typings.steamDashClient.steamDashClientMod.EClanRelationship.Kicked with Double = js.native
-  /* 3 */ val Member: typings.steamDashClient.steamDashClientMod.EClanRelationship.Member with Double = js.native
-  /* 0 */ val None: typings.steamDashClient.steamDashClientMod.EClanRelationship.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EClanRelationship with Double] = js.native
+  /* 1 */ @js.native
+  object Blocked extends TopLevel[Blocked with Double]
+  
+  /* 2 */ @js.native
+  object Invited extends TopLevel[Invited with Double]
+  
+  /* 5 */ @js.native
+  object KickAcknowledged extends TopLevel[KickAcknowledged with Double]
+  
+  /* 4 */ @js.native
+  object Kicked extends TopLevel[Kicked with Double]
+  
+  /* 3 */ @js.native
+  object Member extends TopLevel[Member with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

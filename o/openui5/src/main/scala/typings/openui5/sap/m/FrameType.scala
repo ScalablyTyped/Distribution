@@ -1,5 +1,10 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.FrameType.Auto
+import typings.openui5.sap.m.FrameType.OneByOne
+import typings.openui5.sap.m.FrameType.TwoByOne
+import typings.openui5.sap.m.FrameType.TwoThirds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object FrameType extends js.Object {
   @js.native
   sealed trait TwoThirds extends FrameType
   
-  /* 0 */ val Auto: typings.openui5.sap.m.FrameType.Auto with Double = js.native
-  /* 1 */ val OneByOne: typings.openui5.sap.m.FrameType.OneByOne with Double = js.native
-  /* 2 */ val TwoByOne: typings.openui5.sap.m.FrameType.TwoByOne with Double = js.native
-  /* 3 */ val TwoThirds: typings.openui5.sap.m.FrameType.TwoThirds with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FrameType with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object OneByOne extends TopLevel[OneByOne with Double]
+  
+  /* 2 */ @js.native
+  object TwoByOne extends TopLevel[TwoByOne with Double]
+  
+  /* 3 */ @js.native
+  object TwoThirds extends TopLevel[TwoThirds with Double]
+  
 }
 

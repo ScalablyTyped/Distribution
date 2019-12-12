@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UI.DialogResult.OK
+import typings.sharepoint.SP.UI.DialogResult.cancel
+import typings.sharepoint.SP.UI.DialogResult.invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object DialogResult extends js.Object {
   @js.native
   sealed trait invalid extends DialogResult
   
-  /* 2 */ val OK: typings.sharepoint.SP.UI.DialogResult.OK with Double = js.native
-  /* 1 */ val cancel: typings.sharepoint.SP.UI.DialogResult.cancel with Double = js.native
-  /* 0 */ val invalid: typings.sharepoint.SP.UI.DialogResult.invalid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DialogResult with Double] = js.native
+  /* 2 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 1 */ @js.native
+  object cancel extends TopLevel[cancel with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
 }
 

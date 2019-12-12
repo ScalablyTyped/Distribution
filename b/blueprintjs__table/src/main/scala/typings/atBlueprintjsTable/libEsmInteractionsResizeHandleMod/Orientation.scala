@@ -1,5 +1,8 @@
 package typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.HORIZONTAL
+import typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.VERTICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object Orientation extends js.Object {
   @js.native
   sealed trait VERTICAL extends Orientation
   
-  /* 1 */ val HORIZONTAL: typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.HORIZONTAL with Double = js.native
-  /* 0 */ val VERTICAL: typings.atBlueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation.VERTICAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
+  /* 1 */ @js.native
+  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
+  
+  /* 0 */ @js.native
+  object VERTICAL extends TopLevel[VERTICAL with Double]
+  
 }
 

@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Ng1Controller extends js.Object {
   /** @hidden */
   @JSName("$onInit")
-  def $onInit(): Unit
+  def $onInit(): Unit = js.native
   /**
     * This callback is called when the view's state is about to be exited.
     *
@@ -56,7 +57,7 @@ trait Ng1Controller extends js.Object {
     * @param transition the new Transition that is about to exit the component's state
     * @return a HookResult, or a promise for a HookResult
     */
-  def uiCanExit(transition: Transition): HookResult
+  def uiCanExit(transition: Transition): HookResult = js.native
   /**
     * This callback is called when parameter values have changed.
     *
@@ -82,19 +83,6 @@ trait Ng1Controller extends js.Object {
     * });
     * ```
     */
-  def uiOnParamsChanged(newValues: js.Any, $transition$: Transition): Unit
-}
-
-object Ng1Controller {
-  @scala.inline
-  def apply(
-    $onInit: () => Unit,
-    uiCanExit: Transition => HookResult,
-    uiOnParamsChanged: (js.Any, Transition) => Unit
-  ): Ng1Controller = {
-    val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit), uiCanExit = js.Any.fromFunction1(uiCanExit), uiOnParamsChanged = js.Any.fromFunction2(uiOnParamsChanged))
-  
-    __obj.asInstanceOf[Ng1Controller]
-  }
+  def uiOnParamsChanged(newValues: js.Any, $transition$: Transition): Unit = js.native
 }
 

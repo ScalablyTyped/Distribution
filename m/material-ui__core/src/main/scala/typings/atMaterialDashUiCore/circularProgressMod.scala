@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.circularProgressCircularProgressMod.CircularProgressProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object circularProgressMod extends js.Object {
     def this(props: CircularProgressProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[CircularProgressProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[CircularProgressProps]]
+  
 }
 

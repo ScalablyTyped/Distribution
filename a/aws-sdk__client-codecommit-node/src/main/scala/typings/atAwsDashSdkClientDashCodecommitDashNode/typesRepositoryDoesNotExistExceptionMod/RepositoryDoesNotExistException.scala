@@ -27,11 +27,11 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateDefaultBranch
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesUpdateRepositoryNameExceptionsUnionMod.UpdateRepositoryNameExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RepositoryDoesNotExistException
   extends ServiceException[_RepositoryDoesNotExistExceptionDetails]
      with CreateBranchExceptionsUnion
@@ -61,21 +61,6 @@ trait RepositoryDoesNotExistException
      with UpdateRepositoryDescriptionExceptionsUnion
      with UpdateRepositoryNameExceptionsUnion {
   @JSName("name")
-  var name_RepositoryDoesNotExistException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.RepositoryDoesNotExistException
-}
-
-object RepositoryDoesNotExistException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _RepositoryDoesNotExistExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.RepositoryDoesNotExistException,
-    stack: String = null
-  ): RepositoryDoesNotExistException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RepositoryDoesNotExistException]
-  }
+  var name_RepositoryDoesNotExistException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.RepositoryDoesNotExistException = js.native
 }
 

@@ -1,5 +1,15 @@
 package typings.iobroker.iobrokerMod._Global_.ioBroker
 
+import org.scalablytyped.runtime.TopLevel
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.bad
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_not_connected
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_reports_error
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_device_problem
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_problem
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_sensor_problem
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.good
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_not_connected
+import typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_reports_error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,16 +48,34 @@ object StateQuality extends js.Object {
   @js.native
   sealed trait sensor_reports_error extends StateQuality
   
-  /* 0x01 */ val bad: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.bad with Double = js.native
-  /* 0x42 */ val device_not_connected: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_not_connected with Double = js.native
-  /* 0x44 */ val device_reports_error: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.device_reports_error with Double = js.native
-  /* 0x41 */ val general_device_problem: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_device_problem with Double = js.native
-  /* 0x01 */ val general_problem: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_problem with Double = js.native
-  /* 0x81 */ val general_sensor_problem: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.general_sensor_problem with Double = js.native
-  /* 0x00 */ val good: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.good with Double = js.native
-  /* 0x82 */ val sensor_not_connected: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_not_connected with Double = js.native
-  /* 0x84 */ val sensor_reports_error: typings.iobroker.iobrokerMod._Global_.ioBroker.StateQuality.sensor_reports_error with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StateQuality with Double] = js.native
+  /* 0x01 */ @js.native
+  object bad extends TopLevel[bad with Double]
+  
+  /* 0x42 */ @js.native
+  object device_not_connected extends TopLevel[device_not_connected with Double]
+  
+  /* 0x44 */ @js.native
+  object device_reports_error extends TopLevel[device_reports_error with Double]
+  
+  /* 0x41 */ @js.native
+  object general_device_problem extends TopLevel[general_device_problem with Double]
+  
+  /* 0x01 */ @js.native
+  object general_problem extends TopLevel[general_problem with Double]
+  
+  /* 0x81 */ @js.native
+  object general_sensor_problem extends TopLevel[general_sensor_problem with Double]
+  
+  /* 0x00 */ @js.native
+  object good extends TopLevel[good with Double]
+  
+  /* 0x82 */ @js.native
+  object sensor_not_connected extends TopLevel[sensor_not_connected with Double]
+  
+  /* 0x84 */ @js.native
+  object sensor_reports_error extends TopLevel[sensor_reports_error with Double]
+  
 }
 

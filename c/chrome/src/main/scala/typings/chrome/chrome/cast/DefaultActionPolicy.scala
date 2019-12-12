@@ -1,5 +1,8 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.DefaultActionPolicy.CAST_THIS_TAB
+import typings.chrome.chrome.cast.DefaultActionPolicy.CREATE_SESSION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object DefaultActionPolicy extends js.Object {
   @js.native
   sealed trait CREATE_SESSION extends DefaultActionPolicy
   
-  /* "cast_this_tab" */ val CAST_THIS_TAB: typings.chrome.chrome.cast.DefaultActionPolicy.CAST_THIS_TAB with String = js.native
-  /* "create_session" */ val CREATE_SESSION: typings.chrome.chrome.cast.DefaultActionPolicy.CREATE_SESSION with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DefaultActionPolicy with String] = js.native
+  /* "cast_this_tab" */ @js.native
+  object CAST_THIS_TAB extends TopLevel[CAST_THIS_TAB with String]
+  
+  /* "create_session" */ @js.native
+  object CREATE_SESSION extends TopLevel[CREATE_SESSION with String]
+  
 }
 

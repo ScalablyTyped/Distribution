@@ -1,5 +1,6 @@
 package typings.dockDashSpawn
 
+import org.scalablytyped.runtime.TopLevel
 import typings.dockDashSpawn.dockspawn.Dialog
 import typings.dockDashSpawn.dockspawn.DockManager
 import typings.dockDashSpawn.dockspawn.DockManagerContext
@@ -11,6 +12,10 @@ import typings.dockDashSpawn.dockspawn.PanelContainer
 import typings.dockDashSpawn.dockspawn.TabHost
 import typings.dockDashSpawn.dockspawn.TabPage
 import typings.dockDashSpawn.dockspawn.TabStripDirection
+import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_BOTTOM
+import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_LEFT
+import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_RIGHT
+import typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_TOP
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -178,12 +183,20 @@ object dockspawn extends js.Object {
     @js.native
     sealed trait DIRECTION_TOP extends TabStripDirection
     
-    /* 1 */ val DIRECTION_BOTTOM: typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_BOTTOM with Double = js.native
-    /* 2 */ val DIRECTION_LEFT: typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_LEFT with Double = js.native
-    /* 3 */ val DIRECTION_RIGHT: typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_RIGHT with Double = js.native
-    /* 0 */ val DIRECTION_TOP: typings.dockDashSpawn.dockspawn.TabStripDirection.DIRECTION_TOP with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TabStripDirection with Double] = js.native
+    /* 1 */ @js.native
+    object DIRECTION_BOTTOM extends TopLevel[DIRECTION_BOTTOM with Double]
+    
+    /* 2 */ @js.native
+    object DIRECTION_LEFT extends TopLevel[DIRECTION_LEFT with Double]
+    
+    /* 3 */ @js.native
+    object DIRECTION_RIGHT extends TopLevel[DIRECTION_RIGHT with Double]
+    
+    /* 0 */ @js.native
+    object DIRECTION_TOP extends TopLevel[DIRECTION_TOP with Double]
+    
   }
   
 }

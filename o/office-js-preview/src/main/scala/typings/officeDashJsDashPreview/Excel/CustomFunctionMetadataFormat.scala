@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.CustomFunctionMetadataFormat.invalid
+import typings.officeDashJsDashPreview.Excel.CustomFunctionMetadataFormat.openApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object CustomFunctionMetadataFormat extends js.Object {
   @js.native
   sealed trait openApi extends CustomFunctionMetadataFormat
   
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.CustomFunctionMetadataFormat.invalid with String = js.native
-  /* "OpenApi" */ val openApi: typings.officeDashJsDashPreview.Excel.CustomFunctionMetadataFormat.openApi with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CustomFunctionMetadataFormat with String] = js.native
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "OpenApi" */ @js.native
+  object openApi extends TopLevel[openApi with String]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.astring.astringMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.astring.Anon_Output
 import typings.astring.Fn_Node
 import typings.estree.estreeMod.Node
@@ -23,6 +24,9 @@ object _Global_ extends js.Object {
     def generate_String(node: Node, options: Options): String = js.native
   }
   
-  val astring: typings.astring.astringMod._Global_.astring = js.native
+  @js.native
+  object astring
+    extends TopLevel[typings.astring.astringMod._Global_.astring]
+  
 }
 

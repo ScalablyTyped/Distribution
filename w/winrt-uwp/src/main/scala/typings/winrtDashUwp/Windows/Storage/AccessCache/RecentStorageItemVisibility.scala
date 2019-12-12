@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Storage.AccessCache
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appAndSystem
+import typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object RecentStorageItemVisibility extends js.Object {
   @js.native
   sealed trait appOnly extends RecentStorageItemVisibility
   
-  /* 1 */ val appAndSystem: typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appAndSystem with Double = js.native
-  /* 0 */ val appOnly: typings.winrtDashUwp.Windows.Storage.AccessCache.RecentStorageItemVisibility.appOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RecentStorageItemVisibility with Double] = js.native
+  /* 1 */ @js.native
+  object appAndSystem extends TopLevel[appAndSystem with Double]
+  
+  /* 0 */ @js.native
+  object appOnly extends TopLevel[appOnly with Double]
+  
 }
 

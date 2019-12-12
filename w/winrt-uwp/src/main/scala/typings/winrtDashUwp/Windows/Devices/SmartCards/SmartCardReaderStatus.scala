@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.disconnected
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.exclusive
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object SmartCardReaderStatus extends js.Object {
   @js.native
   sealed trait ready extends SmartCardReaderStatus
   
-  /* 0 */ val disconnected: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.disconnected with Double = js.native
-  /* 2 */ val exclusive: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.exclusive with Double = js.native
-  /* 1 */ val ready: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardReaderStatus.ready with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmartCardReaderStatus with Double] = js.native
+  /* 0 */ @js.native
+  object disconnected extends TopLevel[disconnected with Double]
+  
+  /* 2 */ @js.native
+  object exclusive extends TopLevel[exclusive with Double]
+  
+  /* 1 */ @js.native
+  object ready extends TopLevel[ready with Double]
+  
 }
 

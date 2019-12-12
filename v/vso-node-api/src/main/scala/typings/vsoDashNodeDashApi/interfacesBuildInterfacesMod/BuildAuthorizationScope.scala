@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildAuthorizationScope.Project
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildAuthorizationScope.ProjectCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object BuildAuthorizationScope extends js.Object {
   @js.native
   sealed trait ProjectCollection extends BuildAuthorizationScope
   
-  /* 2 */ val Project: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildAuthorizationScope.Project with Double = js.native
-  /* 1 */ val ProjectCollection: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildAuthorizationScope.ProjectCollection with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildAuthorizationScope with Double] = js.native
+  /* 2 */ @js.native
+  object Project extends TopLevel[Project with Double]
+  
+  /* 1 */ @js.native
+  object ProjectCollection extends TopLevel[ProjectCollection with Double]
+  
 }
 

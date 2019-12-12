@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.SelectListKeyboardNavigationMode.Delimited
+import typings.openui5.sap.m.SelectListKeyboardNavigationMode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SelectListKeyboardNavigationMode extends js.Object {
   @js.native
   sealed trait None extends SelectListKeyboardNavigationMode
   
-  /* 0 */ val Delimited: typings.openui5.sap.m.SelectListKeyboardNavigationMode.Delimited with Double = js.native
-  /* 1 */ val None: typings.openui5.sap.m.SelectListKeyboardNavigationMode.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectListKeyboardNavigationMode with Double] = js.native
+  /* 0 */ @js.native
+  object Delimited extends TopLevel[Delimited with Double]
+  
+  /* 1 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

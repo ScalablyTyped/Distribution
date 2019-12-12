@@ -1,11 +1,25 @@
 package typings.ssh2DashStreams.ssh2DashStreamsMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.streamMod.Writable
 import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.APPEND
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.CREAT
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.EXCL
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.TRUNC
 import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.BAD_MESSAGE
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.CONNECTION_LOST
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.EOF
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.FAILURE
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.NO_CONNECTION
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.NO_SUCH_FILE
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.OK
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.OP_UNSUPPORTED
+import typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.PERMISSION_DENIED
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.CLOSE
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.FSETSTAT
 import typings.ssh2DashStreams.ssh2DashStreamsStrings.FSTAT
@@ -685,14 +699,30 @@ object SFTPStream extends js.Object {
     @js.native
     sealed trait WRITE extends OPEN_MODE
     
-    /* 0x00000004 */ val APPEND: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.APPEND with Double = js.native
-    /* 0x00000008 */ val CREAT: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.CREAT with Double = js.native
-    /* 0x00000020 */ val EXCL: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.EXCL with Double = js.native
-    /* 0x00000001 */ val READ: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.READ with Double = js.native
-    /* 0x00000010 */ val TRUNC: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.TRUNC with Double = js.native
-    /* 0x00000002 */ val WRITE: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.WRITE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native
+    /* 0x00000004 */ @js.native
+    object APPEND extends TopLevel[APPEND with Double]
+    
+    /* 0x00000008 */ @js.native
+    object CREAT extends TopLevel[CREAT with Double]
+    
+    /* 0x00000020 */ @js.native
+    object EXCL extends TopLevel[EXCL with Double]
+    
+    /* 0x00000001 */ @js.native
+    object READ
+      extends TopLevel[typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.READ with Double]
+    
+    /* 0x00000010 */ @js.native
+    object TRUNC extends TopLevel[TRUNC with Double]
+    
+    /* 0x00000002 */ @js.native
+    object WRITE
+      extends TopLevel[
+              typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.OPEN_MODE.WRITE with Double
+            ]
+    
   }
   
   @js.native
@@ -724,17 +754,35 @@ object SFTPStream extends js.Object {
     @js.native
     sealed trait PERMISSION_DENIED extends STATUS_CODE
     
-    /* 5 */ val BAD_MESSAGE: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.BAD_MESSAGE with Double = js.native
-    /* 7 */ val CONNECTION_LOST: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.CONNECTION_LOST with Double = js.native
-    /* 1 */ val EOF: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.EOF with Double = js.native
-    /* 4 */ val FAILURE: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.FAILURE with Double = js.native
-    /* 6 */ val NO_CONNECTION: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.NO_CONNECTION with Double = js.native
-    /* 2 */ val NO_SUCH_FILE: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.NO_SUCH_FILE with Double = js.native
-    /* 0 */ val OK: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.OK with Double = js.native
-    /* 8 */ val OP_UNSUPPORTED: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.OP_UNSUPPORTED with Double = js.native
-    /* 3 */ val PERMISSION_DENIED: typings.ssh2DashStreams.ssh2DashStreamsMod.SFTPStream.STATUS_CODE.PERMISSION_DENIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native
+    /* 5 */ @js.native
+    object BAD_MESSAGE extends TopLevel[BAD_MESSAGE with Double]
+    
+    /* 7 */ @js.native
+    object CONNECTION_LOST extends TopLevel[CONNECTION_LOST with Double]
+    
+    /* 1 */ @js.native
+    object EOF extends TopLevel[EOF with Double]
+    
+    /* 4 */ @js.native
+    object FAILURE extends TopLevel[FAILURE with Double]
+    
+    /* 6 */ @js.native
+    object NO_CONNECTION extends TopLevel[NO_CONNECTION with Double]
+    
+    /* 2 */ @js.native
+    object NO_SUCH_FILE extends TopLevel[NO_SUCH_FILE with Double]
+    
+    /* 0 */ @js.native
+    object OK extends TopLevel[OK with Double]
+    
+    /* 8 */ @js.native
+    object OP_UNSUPPORTED extends TopLevel[OP_UNSUPPORTED with Double]
+    
+    /* 3 */ @js.native
+    object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+    
   }
   
 }

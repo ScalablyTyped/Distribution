@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-google-signin"
-version := "1.0-dt-20190212Z-003040"
+version := "1.0-dt-20190212Z-a157a2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,10 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.DayNum
+import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.GreqX
+import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LastX
+import typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LeqX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object OnType extends js.Object {
   @js.native
   sealed trait LeqX extends OnType
   
-  /* 0 */ val DayNum: typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.DayNum with Double = js.native
-  /* 2 */ val GreqX: typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.GreqX with Double = js.native
-  /* 1 */ val LastX: typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LastX with Double = js.native
-  /* 3 */ val LeqX: typings.timezonecomplete.distLibTzDashDatabaseMod.OnType.LeqX with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OnType with Double] = js.native
+  /* 0 */ @js.native
+  object DayNum extends TopLevel[DayNum with Double]
+  
+  /* 2 */ @js.native
+  object GreqX extends TopLevel[GreqX with Double]
+  
+  /* 1 */ @js.native
+  object LastX extends TopLevel[LastX with Double]
+  
+  /* 3 */ @js.native
+  object LeqX extends TopLevel[LeqX with Double]
+  
 }
 

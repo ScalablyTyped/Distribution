@@ -1,5 +1,24 @@
 package typings.mongorito.mongoritoMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.mongorito.mongoritoMod.ActionTypes.CALL
+import typings.mongorito.mongoritoMod.ActionTypes.CREATE
+import typings.mongorito.mongoritoMod.ActionTypes.CREATED
+import typings.mongorito.mongoritoMod.ActionTypes.CREATE_INDEX
+import typings.mongorito.mongoritoMod.ActionTypes.DROP_INDEX
+import typings.mongorito.mongoritoMod.ActionTypes.GET
+import typings.mongorito.mongoritoMod.ActionTypes.INCREMENT
+import typings.mongorito.mongoritoMod.ActionTypes.LIST_INDEXES
+import typings.mongorito.mongoritoMod.ActionTypes.QUERY
+import typings.mongorito.mongoritoMod.ActionTypes.REFRESH
+import typings.mongorito.mongoritoMod.ActionTypes.REFRESHED
+import typings.mongorito.mongoritoMod.ActionTypes.REMOVE
+import typings.mongorito.mongoritoMod.ActionTypes.REMOVED
+import typings.mongorito.mongoritoMod.ActionTypes.SAVE
+import typings.mongorito.mongoritoMod.ActionTypes.SET
+import typings.mongorito.mongoritoMod.ActionTypes.UNSET
+import typings.mongorito.mongoritoMod.ActionTypes.UPDATE
+import typings.mongorito.mongoritoMod.ActionTypes.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,25 +83,61 @@ object ActionTypes extends js.Object {
   @js.native
   sealed trait UPDATED extends ActionTypes
   
-  /* "@@mongorito/CALL" */ val CALL: typings.mongorito.mongoritoMod.ActionTypes.CALL with String = js.native
-  /* "@@mongorito/CREATE" */ val CREATE: typings.mongorito.mongoritoMod.ActionTypes.CREATE with String = js.native
-  /* "@@mongorito/CREATED" */ val CREATED: typings.mongorito.mongoritoMod.ActionTypes.CREATED with String = js.native
-  /* "@@mongorito/CREATE_INDEX" */ val CREATE_INDEX: typings.mongorito.mongoritoMod.ActionTypes.CREATE_INDEX with String = js.native
-  /* "@@mongorito/DROP_INDEX" */ val DROP_INDEX: typings.mongorito.mongoritoMod.ActionTypes.DROP_INDEX with String = js.native
-  /* "@@mongorito/GET" */ val GET: typings.mongorito.mongoritoMod.ActionTypes.GET with String = js.native
-  /* "@@mongorito/INCREMENT" */ val INCREMENT: typings.mongorito.mongoritoMod.ActionTypes.INCREMENT with String = js.native
-  /* "@@mongorito/LIST_INDEXES" */ val LIST_INDEXES: typings.mongorito.mongoritoMod.ActionTypes.LIST_INDEXES with String = js.native
-  /* "@@mongorito/QUERY" */ val QUERY: typings.mongorito.mongoritoMod.ActionTypes.QUERY with String = js.native
-  /* "@@mongorito/REFRESH" */ val REFRESH: typings.mongorito.mongoritoMod.ActionTypes.REFRESH with String = js.native
-  /* "@@mongorito/REFRESHED" */ val REFRESHED: typings.mongorito.mongoritoMod.ActionTypes.REFRESHED with String = js.native
-  /* "@@mongorito/REMOVE" */ val REMOVE: typings.mongorito.mongoritoMod.ActionTypes.REMOVE with String = js.native
-  /* "@@mongorito/REMOVED" */ val REMOVED: typings.mongorito.mongoritoMod.ActionTypes.REMOVED with String = js.native
-  /* "@@mongorito/SAVE" */ val SAVE: typings.mongorito.mongoritoMod.ActionTypes.SAVE with String = js.native
-  /* "@@mongorito/SET" */ val SET: typings.mongorito.mongoritoMod.ActionTypes.SET with String = js.native
-  /* "@@mongorito/UNSET" */ val UNSET: typings.mongorito.mongoritoMod.ActionTypes.UNSET with String = js.native
-  /* "@@mongorito/UPDATE" */ val UPDATE: typings.mongorito.mongoritoMod.ActionTypes.UPDATE with String = js.native
-  /* "@@mongorito/UPDATED" */ val UPDATED: typings.mongorito.mongoritoMod.ActionTypes.UPDATED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ActionTypes with String] = js.native
+  /* "@@mongorito/CALL" */ @js.native
+  object CALL extends TopLevel[CALL with String]
+  
+  /* "@@mongorito/CREATE" */ @js.native
+  object CREATE extends TopLevel[CREATE with String]
+  
+  /* "@@mongorito/CREATED" */ @js.native
+  object CREATED extends TopLevel[CREATED with String]
+  
+  /* "@@mongorito/CREATE_INDEX" */ @js.native
+  object CREATE_INDEX extends TopLevel[CREATE_INDEX with String]
+  
+  /* "@@mongorito/DROP_INDEX" */ @js.native
+  object DROP_INDEX extends TopLevel[DROP_INDEX with String]
+  
+  /* "@@mongorito/GET" */ @js.native
+  object GET extends TopLevel[GET with String]
+  
+  /* "@@mongorito/INCREMENT" */ @js.native
+  object INCREMENT extends TopLevel[INCREMENT with String]
+  
+  /* "@@mongorito/LIST_INDEXES" */ @js.native
+  object LIST_INDEXES extends TopLevel[LIST_INDEXES with String]
+  
+  /* "@@mongorito/QUERY" */ @js.native
+  object QUERY extends TopLevel[QUERY with String]
+  
+  /* "@@mongorito/REFRESH" */ @js.native
+  object REFRESH extends TopLevel[REFRESH with String]
+  
+  /* "@@mongorito/REFRESHED" */ @js.native
+  object REFRESHED extends TopLevel[REFRESHED with String]
+  
+  /* "@@mongorito/REMOVE" */ @js.native
+  object REMOVE extends TopLevel[REMOVE with String]
+  
+  /* "@@mongorito/REMOVED" */ @js.native
+  object REMOVED extends TopLevel[REMOVED with String]
+  
+  /* "@@mongorito/SAVE" */ @js.native
+  object SAVE extends TopLevel[SAVE with String]
+  
+  /* "@@mongorito/SET" */ @js.native
+  object SET extends TopLevel[SET with String]
+  
+  /* "@@mongorito/UNSET" */ @js.native
+  object UNSET extends TopLevel[UNSET with String]
+  
+  /* "@@mongorito/UPDATE" */ @js.native
+  object UPDATE extends TopLevel[UPDATE with String]
+  
+  /* "@@mongorito/UPDATED" */ @js.native
+  object UPDATED extends TopLevel[UPDATED with String]
+  
 }
 

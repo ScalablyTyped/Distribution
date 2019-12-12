@@ -1,6 +1,7 @@
 package typings.protobufjs.protobufjsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.protobufjsMod.util.LongBits
 import typings.std.Error
 import typings.std.RegExp
@@ -135,12 +136,6 @@ object util extends js.Object {
     override var name: String = js.native
   }
   
-  /** Array implementation used in the browser. `Uint8Array` if supported, otherwise `Array`. */
-  var Array: Constructor[Uint8Array] = js.native
-  /** Node's Buffer class if available. */
-  var Buffer: Constructor[typings.protobufjs.protobufjsMod.Buffer] = js.native
-  /** Long.js's Long class if available. */
-  var Long: Constructor[typings.protobufjs.protobufjsMod.Long] = js.native
   /** Decorator root (TypeScript). */
   var decorateRoot: Root = js.native
   /** An immuable empty array. */
@@ -361,6 +356,20 @@ object util extends js.Object {
     * @returns Converted string
     */
   def ucFirst(str: String): String = js.native
+  /** Array implementation used in the browser. `Uint8Array` if supported, otherwise `Array`. */
+  @js.native
+  object Array extends TopLevel[Constructor[Uint8Array]]
+  
+  /** Node's Buffer class if available. */
+  @js.native
+  object Buffer
+    extends TopLevel[Constructor[typings.protobufjs.protobufjsMod.Buffer]]
+  
+  /** Long.js's Long class if available. */
+  @js.native
+  object Long
+    extends TopLevel[Constructor[typings.protobufjs.protobufjsMod.Long]]
+  
   /* static members */
   @js.native
   object LongBits extends js.Object {

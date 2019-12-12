@@ -1,5 +1,11 @@
 package typings.winrt.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaDeliver
+import typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaSubmit
+import typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmDeliver
+import typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmSubmit
+import typings.winrt.Windows.Devices.Sms.SmsDataFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object SmsDataFormat extends js.Object {
   @js.native
   sealed trait unknown extends SmsDataFormat
   
-  /* 3 */ val cdmaDeliver: typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaDeliver with Double = js.native
-  /* 1 */ val cdmaSubmit: typings.winrt.Windows.Devices.Sms.SmsDataFormat.cdmaSubmit with Double = js.native
-  /* 4 */ val gsmDeliver: typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmDeliver with Double = js.native
-  /* 2 */ val gsmSubmit: typings.winrt.Windows.Devices.Sms.SmsDataFormat.gsmSubmit with Double = js.native
-  /* 0 */ val unknown: typings.winrt.Windows.Devices.Sms.SmsDataFormat.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmsDataFormat with Double] = js.native
+  /* 3 */ @js.native
+  object cdmaDeliver extends TopLevel[cdmaDeliver with Double]
+  
+  /* 1 */ @js.native
+  object cdmaSubmit extends TopLevel[cdmaSubmit with Double]
+  
+  /* 4 */ @js.native
+  object gsmDeliver extends TopLevel[gsmDeliver with Double]
+  
+  /* 2 */ @js.native
+  object gsmSubmit extends TopLevel[gsmSubmit with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

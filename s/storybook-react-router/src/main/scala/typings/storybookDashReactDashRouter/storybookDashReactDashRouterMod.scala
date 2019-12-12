@@ -1,5 +1,6 @@
 package typings.storybookDashReactDashRouter
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atStorybookAddons.distTypesMod.DecoratorFunction
 import typings.atStorybookReact.distClientPreviewTypesMod.StoryFnReactReturnType
 import typings.react.reactMod.Component
@@ -20,9 +21,11 @@ object storybookDashReactDashRouterMod extends js.Object {
     def this(props: Anon_Links, context: js.Any) = this()
   }
   
-  val StoryRouter: ComponentType[Anon_Links] = js.native
   def default(): DecoratorFunction[StoryFnReactReturnType] = js.native
   def default(links: js.Object): DecoratorFunction[StoryFnReactReturnType] = js.native
   def default(links: js.Object, routerProps: MemoryRouterProps): DecoratorFunction[StoryFnReactReturnType] = js.native
+  @js.native
+  object StoryRouter extends TopLevel[ComponentType[Anon_Links]]
+  
 }
 

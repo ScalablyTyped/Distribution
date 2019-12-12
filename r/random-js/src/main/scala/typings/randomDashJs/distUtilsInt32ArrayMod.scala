@@ -1,5 +1,6 @@
 package typings.randomDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
 import typings.std.Int32ArrayConstructor
@@ -22,6 +23,8 @@ object distUtilsInt32ArrayMod extends js.Object {
     def this(buffer: ArrayBufferLike, byteOffset: Double, length: Double) = this()
   }
   
-  val Int32Array: Int32ArrayConstructor = js.native
+  @js.native
+  object Int32Array extends TopLevel[Int32ArrayConstructor]
+  
 }
 

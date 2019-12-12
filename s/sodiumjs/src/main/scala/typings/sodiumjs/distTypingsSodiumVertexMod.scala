@@ -1,6 +1,11 @@
 package typings.sodiumjs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sodiumjs.distTypingsSodiumVertexMod.Color
+import typings.sodiumjs.distTypingsSodiumVertexMod.Color.black
+import typings.sodiumjs.distTypingsSodiumVertexMod.Color.gray
+import typings.sodiumjs.distTypingsSodiumVertexMod.Color.purple
+import typings.sodiumjs.distTypingsSodiumVertexMod.Color.white
 import typings.sodiumjs.distTypingsSodiumVertexMod.Source
 import typings.sodiumjs.distTypingsSodiumVertexMod.Vertex
 import typings.typescriptDashCollections.typescriptDashCollectionsMod.Set
@@ -75,12 +80,20 @@ object distTypingsSodiumVertexMod extends js.Object {
     @js.native
     sealed trait white extends Color
     
-    /* 0 */ val black: typings.sodiumjs.distTypingsSodiumVertexMod.Color.black with Double = js.native
-    /* 1 */ val gray: typings.sodiumjs.distTypingsSodiumVertexMod.Color.gray with Double = js.native
-    /* 3 */ val purple: typings.sodiumjs.distTypingsSodiumVertexMod.Color.purple with Double = js.native
-    /* 2 */ val white: typings.sodiumjs.distTypingsSodiumVertexMod.Color.white with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Color with Double] = js.native
+    /* 0 */ @js.native
+    object black extends TopLevel[black with Double]
+    
+    /* 1 */ @js.native
+    object gray extends TopLevel[gray with Double]
+    
+    /* 3 */ @js.native
+    object purple extends TopLevel[purple with Double]
+    
+    /* 2 */ @js.native
+    object white extends TopLevel[white with Double]
+    
   }
   
   /* static members */

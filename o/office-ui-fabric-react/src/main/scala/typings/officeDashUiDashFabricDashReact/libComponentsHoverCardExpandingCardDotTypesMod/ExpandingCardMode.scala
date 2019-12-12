@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.compact
+import typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.expanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ExpandingCardMode extends js.Object {
   @js.native
   sealed trait expanded extends ExpandingCardMode
   
-  /* 0 */ val compact: typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.compact with Double = js.native
-  /* 1 */ val expanded: typings.officeDashUiDashFabricDashReact.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode.expanded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExpandingCardMode with Double] = js.native
+  /* 0 */ @js.native
+  object compact extends TopLevel[compact with Double]
+  
+  /* 1 */ @js.native
+  object expanded extends TopLevel[expanded with Double]
+  
 }
 

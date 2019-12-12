@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.busy
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.free
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.outOfOffice
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.tentative
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.workingElsewhere
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AppointmentBusyStatus extends js.Object {
   @js.native
   sealed trait workingElsewhere extends AppointmentBusyStatus
   
-  /* 0 */ val busy: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.busy with Double = js.native
-  /* 2 */ val free: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.free with Double = js.native
-  /* 3 */ val outOfOffice: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.outOfOffice with Double = js.native
-  /* 1 */ val tentative: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.tentative with Double = js.native
-  /* 4 */ val workingElsewhere: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentBusyStatus.workingElsewhere with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentBusyStatus with Double] = js.native
+  /* 0 */ @js.native
+  object busy extends TopLevel[busy with Double]
+  
+  /* 2 */ @js.native
+  object free extends TopLevel[free with Double]
+  
+  /* 3 */ @js.native
+  object outOfOffice extends TopLevel[outOfOffice with Double]
+  
+  /* 1 */ @js.native
+  object tentative extends TopLevel[tentative with Double]
+  
+  /* 4 */ @js.native
+  object workingElsewhere extends TopLevel[workingElsewhere with Double]
+  
 }
 

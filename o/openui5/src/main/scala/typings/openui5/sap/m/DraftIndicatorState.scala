@@ -1,5 +1,9 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.DraftIndicatorState.Clear
+import typings.openui5.sap.m.DraftIndicatorState.Saved
+import typings.openui5.sap.m.DraftIndicatorState.Saving
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object DraftIndicatorState extends js.Object {
   @js.native
   sealed trait Saving extends DraftIndicatorState
   
-  /* 0 */ val Clear: typings.openui5.sap.m.DraftIndicatorState.Clear with Double = js.native
-  /* 1 */ val Saved: typings.openui5.sap.m.DraftIndicatorState.Saved with Double = js.native
-  /* 2 */ val Saving: typings.openui5.sap.m.DraftIndicatorState.Saving with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DraftIndicatorState with Double] = js.native
+  /* 0 */ @js.native
+  object Clear extends TopLevel[Clear with Double]
+  
+  /* 1 */ @js.native
+  object Saved extends TopLevel[Saved with Double]
+  
+  /* 2 */ @js.native
+  object Saving extends TopLevel[Saving with Double]
+  
 }
 

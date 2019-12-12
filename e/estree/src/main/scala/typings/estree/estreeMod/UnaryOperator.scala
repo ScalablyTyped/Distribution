@@ -1,5 +1,6 @@
 package typings.estree.estreeMod
 
+import typings.estree.estreeStrings.`-`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,8 +21,9 @@ object UnaryOperator {
   def `!`: typings.estree.estreeStrings.`!` = this.cast("!")
   @scala.inline
   def `+`: typings.estree.estreeStrings.`+` = this.cast("+")
+  @JSName("-")
   @scala.inline
-  def `-`: typings.estree.estreeStrings.`-` = this.cast("-")
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

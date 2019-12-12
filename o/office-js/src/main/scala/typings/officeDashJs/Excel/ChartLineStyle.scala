@@ -1,5 +1,17 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartLineStyle.automatic
+import typings.officeDashJs.Excel.ChartLineStyle.continuous
+import typings.officeDashJs.Excel.ChartLineStyle.dash
+import typings.officeDashJs.Excel.ChartLineStyle.dashDot
+import typings.officeDashJs.Excel.ChartLineStyle.dashDotDot
+import typings.officeDashJs.Excel.ChartLineStyle.dot
+import typings.officeDashJs.Excel.ChartLineStyle.grey25
+import typings.officeDashJs.Excel.ChartLineStyle.grey50
+import typings.officeDashJs.Excel.ChartLineStyle.grey75
+import typings.officeDashJs.Excel.ChartLineStyle.none
+import typings.officeDashJs.Excel.ChartLineStyle.roundDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,18 +58,40 @@ object ChartLineStyle extends js.Object {
   @js.native
   sealed trait roundDot extends ChartLineStyle
   
-  /* "Automatic" */ val automatic: typings.officeDashJs.Excel.ChartLineStyle.automatic with String = js.native
-  /* "Continuous" */ val continuous: typings.officeDashJs.Excel.ChartLineStyle.continuous with String = js.native
-  /* "Dash" */ val dash: typings.officeDashJs.Excel.ChartLineStyle.dash with String = js.native
-  /* "DashDot" */ val dashDot: typings.officeDashJs.Excel.ChartLineStyle.dashDot with String = js.native
-  /* "DashDotDot" */ val dashDotDot: typings.officeDashJs.Excel.ChartLineStyle.dashDotDot with String = js.native
-  /* "Dot" */ val dot: typings.officeDashJs.Excel.ChartLineStyle.dot with String = js.native
-  /* "Grey25" */ val grey25: typings.officeDashJs.Excel.ChartLineStyle.grey25 with String = js.native
-  /* "Grey50" */ val grey50: typings.officeDashJs.Excel.ChartLineStyle.grey50 with String = js.native
-  /* "Grey75" */ val grey75: typings.officeDashJs.Excel.ChartLineStyle.grey75 with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.ChartLineStyle.none with String = js.native
-  /* "RoundDot" */ val roundDot: typings.officeDashJs.Excel.ChartLineStyle.roundDot with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartLineStyle with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "Continuous" */ @js.native
+  object continuous extends TopLevel[continuous with String]
+  
+  /* "Dash" */ @js.native
+  object dash extends TopLevel[dash with String]
+  
+  /* "DashDot" */ @js.native
+  object dashDot extends TopLevel[dashDot with String]
+  
+  /* "DashDotDot" */ @js.native
+  object dashDotDot extends TopLevel[dashDotDot with String]
+  
+  /* "Dot" */ @js.native
+  object dot extends TopLevel[dot with String]
+  
+  /* "Grey25" */ @js.native
+  object grey25 extends TopLevel[grey25 with String]
+  
+  /* "Grey50" */ @js.native
+  object grey50 extends TopLevel[grey50 with String]
+  
+  /* "Grey75" */ @js.native
+  object grey75 extends TopLevel[grey75 with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "RoundDot" */ @js.native
+  object roundDot extends TopLevel[roundDot with String]
+  
 }
 

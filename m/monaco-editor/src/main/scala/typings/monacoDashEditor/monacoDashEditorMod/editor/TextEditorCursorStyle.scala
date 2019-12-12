@@ -1,5 +1,12 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Block
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.BlockOutline
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Line
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.LineThin
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Underline
+import typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.UnderlineThin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object TextEditorCursorStyle extends js.Object {
   @js.native
   sealed trait UnderlineThin extends TextEditorCursorStyle
   
-  /* 2 */ val Block: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Block with Double = js.native
-  /* 5 */ val BlockOutline: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.BlockOutline with Double = js.native
-  /* 1 */ val Line: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Line with Double = js.native
-  /* 4 */ val LineThin: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.LineThin with Double = js.native
-  /* 3 */ val Underline: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.Underline with Double = js.native
-  /* 6 */ val UnderlineThin: typings.monacoDashEditor.monacoDashEditorMod.editor.TextEditorCursorStyle.UnderlineThin with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextEditorCursorStyle with Double] = js.native
+  /* 2 */ @js.native
+  object Block extends TopLevel[Block with Double]
+  
+  /* 5 */ @js.native
+  object BlockOutline extends TopLevel[BlockOutline with Double]
+  
+  /* 1 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 4 */ @js.native
+  object LineThin extends TopLevel[LineThin with Double]
+  
+  /* 3 */ @js.native
+  object Underline extends TopLevel[Underline with Double]
+  
+  /* 6 */ @js.native
+  object UnderlineThin extends TopLevel[UnderlineThin with Double]
+  
 }
 

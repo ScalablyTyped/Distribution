@@ -1,5 +1,15 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.AutoFilter
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Cell
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Chart
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.ColumnHeading
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Picture
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTable
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTableAutoFilter
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.RowHeading
+import typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.SheetTab
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,16 +77,34 @@ object ASPxClientSpreadsheetPopupMenuType extends js.Object {
   @js.native
   sealed trait SheetTab extends ASPxClientSpreadsheetPopupMenuType
   
-  /* 8 */ val AutoFilter: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.AutoFilter with Double = js.native
-  /* 7 */ val Cell: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Cell with Double = js.native
-  /* 5 */ val Chart: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Chart with Double = js.native
-  /* 0 */ val ColumnHeading: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.ColumnHeading with Double = js.native
-  /* 4 */ val Picture: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.Picture with Double = js.native
-  /* 9 */ val PivotTable: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTable with Double = js.native
-  /* 10 */ val PivotTableAutoFilter: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.PivotTableAutoFilter with Double = js.native
-  /* 1 */ val RowHeading: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.RowHeading with Double = js.native
-  /* 3 */ val SheetTab: typings.devexpressDashWeb.ASPxClientSpreadsheetPopupMenuType.SheetTab with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ASPxClientSpreadsheetPopupMenuType with Double] = js.native
+  /* 8 */ @js.native
+  object AutoFilter extends TopLevel[AutoFilter with Double]
+  
+  /* 7 */ @js.native
+  object Cell extends TopLevel[Cell with Double]
+  
+  /* 5 */ @js.native
+  object Chart extends TopLevel[Chart with Double]
+  
+  /* 0 */ @js.native
+  object ColumnHeading extends TopLevel[ColumnHeading with Double]
+  
+  /* 4 */ @js.native
+  object Picture extends TopLevel[Picture with Double]
+  
+  /* 9 */ @js.native
+  object PivotTable extends TopLevel[PivotTable with Double]
+  
+  /* 10 */ @js.native
+  object PivotTableAutoFilter extends TopLevel[PivotTableAutoFilter with Double]
+  
+  /* 1 */ @js.native
+  object RowHeading extends TopLevel[RowHeading with Double]
+  
+  /* 3 */ @js.native
+  object SheetTab extends TopLevel[SheetTab with Double]
+  
 }
 

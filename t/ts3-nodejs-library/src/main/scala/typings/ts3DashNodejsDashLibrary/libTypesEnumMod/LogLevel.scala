@@ -1,5 +1,10 @@
 package typings.ts3DashNodejsDashLibrary.libTypesEnumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.DEBUG
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.ERROR
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.INFO
+import typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object LogLevel extends js.Object {
   @js.native
   sealed trait WARNING extends LogLevel
   
-  /* 3 */ val DEBUG: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.DEBUG with Double = js.native
-  /* 1 */ val ERROR: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.ERROR with Double = js.native
-  /* 4 */ val INFO: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.INFO with Double = js.native
-  /* 2 */ val WARNING: typings.ts3DashNodejsDashLibrary.libTypesEnumMod.LogLevel.WARNING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+  /* 3 */ @js.native
+  object DEBUG extends TopLevel[DEBUG with Double]
+  
+  /* 1 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 4 */ @js.native
+  object INFO extends TopLevel[INFO with Double]
+  
+  /* 2 */ @js.native
+  object WARNING extends TopLevel[WARNING with Double]
+  
 }
 

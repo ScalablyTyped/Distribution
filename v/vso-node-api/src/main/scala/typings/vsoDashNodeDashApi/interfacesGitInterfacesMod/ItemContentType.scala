@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.ItemContentType.Base64Encoded
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.ItemContentType.RawText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ItemContentType extends js.Object {
   @js.native
   sealed trait RawText extends ItemContentType
   
-  /* 1 */ val Base64Encoded: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.ItemContentType.Base64Encoded with Double = js.native
-  /* 0 */ val RawText: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.ItemContentType.RawText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ItemContentType with Double] = js.native
+  /* 1 */ @js.native
+  object Base64Encoded extends TopLevel[Base64Encoded with Double]
+  
+  /* 0 */ @js.native
+  object RawText extends TopLevel[RawText with Double]
+  
 }
 

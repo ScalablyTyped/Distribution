@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListIntentsConstants.Sort
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListIntentsConstants.Sort.INTENT
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListIntentsConstants.Sort.UPDATED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object ListIntentsConstants extends js.Object {
     @js.native
     sealed trait UPDATED extends Sort
     
-    /* "intent" */ val INTENT: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListIntentsConstants.Sort.INTENT with String = js.native
-    /* "updated" */ val UPDATED: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListIntentsConstants.Sort.UPDATED with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
+    /* "intent" */ @js.native
+    object INTENT extends TopLevel[INTENT with String]
+    
+    /* "updated" */ @js.native
+    object UPDATED extends TopLevel[UPDATED with String]
+    
   }
   
 }

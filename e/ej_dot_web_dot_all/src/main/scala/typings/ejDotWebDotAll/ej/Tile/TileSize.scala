@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.Tile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Tile.TileSize.Large
+import typings.ejDotWebDotAll.ej.Tile.TileSize.Medium
+import typings.ejDotWebDotAll.ej.Tile.TileSize.Small
+import typings.ejDotWebDotAll.ej.Tile.TileSize.Wide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TileSize extends js.Object {
   @js.native
   sealed trait Wide extends TileSize
   
-  /* 2 */ val Large: typings.ejDotWebDotAll.ej.Tile.TileSize.Large with Double = js.native
-  /* 0 */ val Medium: typings.ejDotWebDotAll.ej.Tile.TileSize.Medium with Double = js.native
-  /* 1 */ val Small: typings.ejDotWebDotAll.ej.Tile.TileSize.Small with Double = js.native
-  /* 3 */ val Wide: typings.ejDotWebDotAll.ej.Tile.TileSize.Wide with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TileSize with Double] = js.native
+  /* 2 */ @js.native
+  object Large extends TopLevel[Large with Double]
+  
+  /* 0 */ @js.native
+  object Medium extends TopLevel[Medium with Double]
+  
+  /* 1 */ @js.native
+  object Small extends TopLevel[Small with Double]
+  
+  /* 3 */ @js.native
+  object Wide extends TopLevel[Wide with Double]
+  
 }
 

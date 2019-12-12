@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resource-loader"
-version := "3.0.1-90093a"
+version := "3.0.1-2cdb86"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

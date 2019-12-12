@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Word.HeaderFooterType.evenPages
+import typings.officeDashJsDashPreview.Word.HeaderFooterType.firstPage
+import typings.officeDashJsDashPreview.Word.HeaderFooterType.primary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object HeaderFooterType extends js.Object {
   @js.native
   sealed trait primary extends HeaderFooterType
   
-  /* "EvenPages" */ val evenPages: typings.officeDashJsDashPreview.Word.HeaderFooterType.evenPages with String = js.native
-  /* "FirstPage" */ val firstPage: typings.officeDashJsDashPreview.Word.HeaderFooterType.firstPage with String = js.native
-  /* "Primary" */ val primary: typings.officeDashJsDashPreview.Word.HeaderFooterType.primary with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HeaderFooterType with String] = js.native
+  /* "EvenPages" */ @js.native
+  object evenPages extends TopLevel[evenPages with String]
+  
+  /* "FirstPage" */ @js.native
+  object firstPage extends TopLevel[firstPage with String]
+  
+  /* "Primary" */ @js.native
+  object primary extends TopLevel[primary with String]
+  
 }
 

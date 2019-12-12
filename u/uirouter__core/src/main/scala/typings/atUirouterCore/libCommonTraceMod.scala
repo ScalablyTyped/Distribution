@@ -1,6 +1,12 @@
 package typings.atUirouterCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atUirouterCore.libCommonTraceMod.Category
+import typings.atUirouterCore.libCommonTraceMod.Category.HOOK
+import typings.atUirouterCore.libCommonTraceMod.Category.RESOLVE
+import typings.atUirouterCore.libCommonTraceMod.Category.TRANSITION
+import typings.atUirouterCore.libCommonTraceMod.Category.UIVIEW
+import typings.atUirouterCore.libCommonTraceMod.Category.VIEWCONFIG
 import typings.atUirouterCore.libCommonTraceMod.Trace
 import typings.atUirouterCore.libPathPathNodeMod.PathNode
 import typings.atUirouterCore.libResolveInterfaceMod.PolicyWhen
@@ -139,13 +145,23 @@ object libCommonTraceMod extends js.Object {
     @js.native
     sealed trait VIEWCONFIG extends Category
     
-    /* 2 */ val HOOK: typings.atUirouterCore.libCommonTraceMod.Category.HOOK with Double = js.native
-    /* 0 */ val RESOLVE: typings.atUirouterCore.libCommonTraceMod.Category.RESOLVE with Double = js.native
-    /* 1 */ val TRANSITION: typings.atUirouterCore.libCommonTraceMod.Category.TRANSITION with Double = js.native
-    /* 3 */ val UIVIEW: typings.atUirouterCore.libCommonTraceMod.Category.UIVIEW with Double = js.native
-    /* 4 */ val VIEWCONFIG: typings.atUirouterCore.libCommonTraceMod.Category.VIEWCONFIG with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Category with Double] = js.native
+    /* 2 */ @js.native
+    object HOOK extends TopLevel[HOOK with Double]
+    
+    /* 0 */ @js.native
+    object RESOLVE extends TopLevel[RESOLVE with Double]
+    
+    /* 1 */ @js.native
+    object TRANSITION extends TopLevel[TRANSITION with Double]
+    
+    /* 3 */ @js.native
+    object UIVIEW extends TopLevel[UIVIEW with Double]
+    
+    /* 4 */ @js.native
+    object VIEWCONFIG extends TopLevel[VIEWCONFIG with Double]
+    
   }
   
 }

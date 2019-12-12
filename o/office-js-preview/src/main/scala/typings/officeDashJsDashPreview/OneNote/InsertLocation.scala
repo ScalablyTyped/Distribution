@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.OneNote.InsertLocation.after
+import typings.officeDashJsDashPreview.OneNote.InsertLocation.before
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object InsertLocation extends js.Object {
   @js.native
   sealed trait before extends InsertLocation
   
-  /* "After" */ val after: typings.officeDashJsDashPreview.OneNote.InsertLocation.after with String = js.native
-  /* "Before" */ val before: typings.officeDashJsDashPreview.OneNote.InsertLocation.before with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[InsertLocation with String] = js.native
+  /* "After" */ @js.native
+  object after extends TopLevel[after with String]
+  
+  /* "Before" */ @js.native
+  object before extends TopLevel[before with String]
+  
 }
 

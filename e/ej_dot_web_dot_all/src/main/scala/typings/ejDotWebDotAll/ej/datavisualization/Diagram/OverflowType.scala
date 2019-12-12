@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.OverflowType.Clip
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.OverflowType.Ellipsis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object OverflowType extends js.Object {
   @js.native
   sealed trait Ellipsis extends OverflowType
   
-  /* 1 */ val Clip: typings.ejDotWebDotAll.ej.datavisualization.Diagram.OverflowType.Clip with Double = js.native
-  /* 0 */ val Ellipsis: typings.ejDotWebDotAll.ej.datavisualization.Diagram.OverflowType.Ellipsis with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverflowType with Double] = js.native
+  /* 1 */ @js.native
+  object Clip extends TopLevel[Clip with Double]
+  
+  /* 0 */ @js.native
+  object Ellipsis extends TopLevel[Ellipsis with Double]
+  
 }
 

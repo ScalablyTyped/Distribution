@@ -1,5 +1,21 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.packet.compressed
+import typings.openpgp.openpgpMod.enums.packet.marker
+import typings.openpgp.openpgpMod.enums.packet.modificationDetectionCode
+import typings.openpgp.openpgpMod.enums.packet.onePassSignature
+import typings.openpgp.openpgpMod.enums.packet.publicKeyEncryptedSessionKey
+import typings.openpgp.openpgpMod.enums.packet.publicSubkey
+import typings.openpgp.openpgpMod.enums.packet.secretKey
+import typings.openpgp.openpgpMod.enums.packet.secretSubkey
+import typings.openpgp.openpgpMod.enums.packet.symEncryptedAEADProtected
+import typings.openpgp.openpgpMod.enums.packet.symEncryptedIntegrityProtected
+import typings.openpgp.openpgpMod.enums.packet.symEncryptedSessionKey
+import typings.openpgp.openpgpMod.enums.packet.symmetricallyEncrypted
+import typings.openpgp.openpgpMod.enums.packet.trust
+import typings.openpgp.openpgpMod.enums.packet.userAttribute
+import typings.openpgp.openpgpMod.enums.packet.userid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,25 +101,64 @@ object packet extends js.Object {
   sealed trait userid
     extends typings.openpgp.openpgpMod.enums.packet
   
-  /* 8 */ val compressed: typings.openpgp.openpgpMod.enums.packet.compressed with Double = js.native
-  /* 11 */ val literal: typings.openpgp.openpgpMod.enums.packet.literal with Double = js.native
-  /* 10 */ val marker: typings.openpgp.openpgpMod.enums.packet.marker with Double = js.native
-  /* 19 */ val modificationDetectionCode: typings.openpgp.openpgpMod.enums.packet.modificationDetectionCode with Double = js.native
-  /* 4 */ val onePassSignature: typings.openpgp.openpgpMod.enums.packet.onePassSignature with Double = js.native
-  /* 6 */ val publicKey: typings.openpgp.openpgpMod.enums.packet.publicKey with Double = js.native
-  /* 1 */ val publicKeyEncryptedSessionKey: typings.openpgp.openpgpMod.enums.packet.publicKeyEncryptedSessionKey with Double = js.native
-  /* 14 */ val publicSubkey: typings.openpgp.openpgpMod.enums.packet.publicSubkey with Double = js.native
-  /* 5 */ val secretKey: typings.openpgp.openpgpMod.enums.packet.secretKey with Double = js.native
-  /* 7 */ val secretSubkey: typings.openpgp.openpgpMod.enums.packet.secretSubkey with Double = js.native
-  /* 2 */ val signature: typings.openpgp.openpgpMod.enums.packet.signature with Double = js.native
-  /* 20 */ val symEncryptedAEADProtected: typings.openpgp.openpgpMod.enums.packet.symEncryptedAEADProtected with Double = js.native
-  /* 18 */ val symEncryptedIntegrityProtected: typings.openpgp.openpgpMod.enums.packet.symEncryptedIntegrityProtected with Double = js.native
-  /* 3 */ val symEncryptedSessionKey: typings.openpgp.openpgpMod.enums.packet.symEncryptedSessionKey with Double = js.native
-  /* 9 */ val symmetricallyEncrypted: typings.openpgp.openpgpMod.enums.packet.symmetricallyEncrypted with Double = js.native
-  /* 12 */ val trust: typings.openpgp.openpgpMod.enums.packet.trust with Double = js.native
-  /* 17 */ val userAttribute: typings.openpgp.openpgpMod.enums.packet.userAttribute with Double = js.native
-  /* 13 */ val userid: typings.openpgp.openpgpMod.enums.packet.userid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.openpgp.openpgpMod.enums.packet with Double] = js.native
+  /* 8 */ @js.native
+  object compressed extends TopLevel[compressed with Double]
+  
+  /* 11 */ @js.native
+  object literal
+    extends TopLevel[typings.openpgp.openpgpMod.enums.packet.literal with Double]
+  
+  /* 10 */ @js.native
+  object marker extends TopLevel[marker with Double]
+  
+  /* 19 */ @js.native
+  object modificationDetectionCode extends TopLevel[modificationDetectionCode with Double]
+  
+  /* 4 */ @js.native
+  object onePassSignature extends TopLevel[onePassSignature with Double]
+  
+  /* 6 */ @js.native
+  object publicKey
+    extends TopLevel[typings.openpgp.openpgpMod.enums.packet.publicKey with Double]
+  
+  /* 1 */ @js.native
+  object publicKeyEncryptedSessionKey extends TopLevel[publicKeyEncryptedSessionKey with Double]
+  
+  /* 14 */ @js.native
+  object publicSubkey extends TopLevel[publicSubkey with Double]
+  
+  /* 5 */ @js.native
+  object secretKey extends TopLevel[secretKey with Double]
+  
+  /* 7 */ @js.native
+  object secretSubkey extends TopLevel[secretSubkey with Double]
+  
+  /* 2 */ @js.native
+  object signature
+    extends TopLevel[typings.openpgp.openpgpMod.enums.packet.signature with Double]
+  
+  /* 20 */ @js.native
+  object symEncryptedAEADProtected extends TopLevel[symEncryptedAEADProtected with Double]
+  
+  /* 18 */ @js.native
+  object symEncryptedIntegrityProtected extends TopLevel[symEncryptedIntegrityProtected with Double]
+  
+  /* 3 */ @js.native
+  object symEncryptedSessionKey extends TopLevel[symEncryptedSessionKey with Double]
+  
+  /* 9 */ @js.native
+  object symmetricallyEncrypted extends TopLevel[symmetricallyEncrypted with Double]
+  
+  /* 12 */ @js.native
+  object trust extends TopLevel[trust with Double]
+  
+  /* 17 */ @js.native
+  object userAttribute extends TopLevel[userAttribute with Double]
+  
+  /* 13 */ @js.native
+  object userid extends TopLevel[userid with Double]
+  
 }
 

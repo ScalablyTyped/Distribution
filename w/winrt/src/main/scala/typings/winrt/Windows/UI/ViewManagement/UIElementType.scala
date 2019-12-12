@@ -1,5 +1,19 @@
 package typings.winrt.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.activeCaption
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.background
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonFace
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonText
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.captionText
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.grayText
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.highlight
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.highlightText
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.hotlight
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaption
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaptionText
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.window
+import typings.winrt.Windows.UI.ViewManagement.UIElementType.windowText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +63,46 @@ object UIElementType extends js.Object {
   @js.native
   sealed trait windowText extends UIElementType
   
-  /* 0 */ val activeCaption: typings.winrt.Windows.UI.ViewManagement.UIElementType.activeCaption with Double = js.native
-  /* 1 */ val background: typings.winrt.Windows.UI.ViewManagement.UIElementType.background with Double = js.native
-  /* 2 */ val buttonFace: typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonFace with Double = js.native
-  /* 3 */ val buttonText: typings.winrt.Windows.UI.ViewManagement.UIElementType.buttonText with Double = js.native
-  /* 4 */ val captionText: typings.winrt.Windows.UI.ViewManagement.UIElementType.captionText with Double = js.native
-  /* 5 */ val grayText: typings.winrt.Windows.UI.ViewManagement.UIElementType.grayText with Double = js.native
-  /* 6 */ val highlight: typings.winrt.Windows.UI.ViewManagement.UIElementType.highlight with Double = js.native
-  /* 7 */ val highlightText: typings.winrt.Windows.UI.ViewManagement.UIElementType.highlightText with Double = js.native
-  /* 8 */ val hotlight: typings.winrt.Windows.UI.ViewManagement.UIElementType.hotlight with Double = js.native
-  /* 9 */ val inactiveCaption: typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaption with Double = js.native
-  /* 10 */ val inactiveCaptionText: typings.winrt.Windows.UI.ViewManagement.UIElementType.inactiveCaptionText with Double = js.native
-  /* 11 */ val window: typings.winrt.Windows.UI.ViewManagement.UIElementType.window with Double = js.native
-  /* 12 */ val windowText: typings.winrt.Windows.UI.ViewManagement.UIElementType.windowText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UIElementType with Double] = js.native
+  /* 0 */ @js.native
+  object activeCaption extends TopLevel[activeCaption with Double]
+  
+  /* 1 */ @js.native
+  object background extends TopLevel[background with Double]
+  
+  /* 2 */ @js.native
+  object buttonFace extends TopLevel[buttonFace with Double]
+  
+  /* 3 */ @js.native
+  object buttonText extends TopLevel[buttonText with Double]
+  
+  /* 4 */ @js.native
+  object captionText extends TopLevel[captionText with Double]
+  
+  /* 5 */ @js.native
+  object grayText extends TopLevel[grayText with Double]
+  
+  /* 6 */ @js.native
+  object highlight extends TopLevel[highlight with Double]
+  
+  /* 7 */ @js.native
+  object highlightText extends TopLevel[highlightText with Double]
+  
+  /* 8 */ @js.native
+  object hotlight extends TopLevel[hotlight with Double]
+  
+  /* 9 */ @js.native
+  object inactiveCaption extends TopLevel[inactiveCaption with Double]
+  
+  /* 10 */ @js.native
+  object inactiveCaptionText extends TopLevel[inactiveCaptionText with Double]
+  
+  /* 11 */ @js.native
+  object window extends TopLevel[window with Double]
+  
+  /* 12 */ @js.native
+  object windowText extends TopLevel[windowText with Double]
+  
 }
 

@@ -1,7 +1,15 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.SPNotifications.ContainerID
+import typings.sharepoint.SPNotifications.ContainerID.Basic
+import typings.sharepoint.SPNotifications.ContainerID.Status
 import typings.sharepoint.SPNotifications.EventID
+import typings.sharepoint.SPNotifications.EventID.OnDisplayNotification
+import typings.sharepoint.SPNotifications.EventID.OnHide
+import typings.sharepoint.SPNotifications.EventID.OnNotificationCountChanged
+import typings.sharepoint.SPNotifications.EventID.OnRemoveNotification
+import typings.sharepoint.SPNotifications.EventID.OnShow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +31,14 @@ object SPNotifications extends js.Object {
     @js.native
     sealed trait Status extends ContainerID
     
-    /* 0 */ val Basic: typings.sharepoint.SPNotifications.ContainerID.Basic with Double = js.native
-    /* 1 */ val Status: typings.sharepoint.SPNotifications.ContainerID.Status with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ContainerID with Double] = js.native
+    /* 0 */ @js.native
+    object Basic extends TopLevel[Basic with Double]
+    
+    /* 1 */ @js.native
+    object Status extends TopLevel[Status with Double]
+    
   }
   
   @js.native
@@ -46,13 +58,23 @@ object SPNotifications extends js.Object {
     @js.native
     sealed trait OnShow extends EventID
     
-    /* 2 */ val OnDisplayNotification: typings.sharepoint.SPNotifications.EventID.OnDisplayNotification with Double = js.native
-    /* 1 */ val OnHide: typings.sharepoint.SPNotifications.EventID.OnHide with Double = js.native
-    /* 4 */ val OnNotificationCountChanged: typings.sharepoint.SPNotifications.EventID.OnNotificationCountChanged with Double = js.native
-    /* 3 */ val OnRemoveNotification: typings.sharepoint.SPNotifications.EventID.OnRemoveNotification with Double = js.native
-    /* 0 */ val OnShow: typings.sharepoint.SPNotifications.EventID.OnShow with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EventID with Double] = js.native
+    /* 2 */ @js.native
+    object OnDisplayNotification extends TopLevel[OnDisplayNotification with Double]
+    
+    /* 1 */ @js.native
+    object OnHide extends TopLevel[OnHide with Double]
+    
+    /* 4 */ @js.native
+    object OnNotificationCountChanged extends TopLevel[OnNotificationCountChanged with Double]
+    
+    /* 3 */ @js.native
+    object OnRemoveNotification extends TopLevel[OnRemoveNotification with Double]
+    
+    /* 0 */ @js.native
+    object OnShow extends TopLevel[OnShow with Double]
+    
   }
   
 }

@@ -1,5 +1,11 @@
 package typings.qiniuDashJs.qiniuDashJsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.qiniuDashJs.qiniuDashJsMod.Region.as0
+import typings.qiniuDashJs.qiniuDashJsMod.Region.na0
+import typings.qiniuDashJs.qiniuDashJsMod.Region.z0
+import typings.qiniuDashJs.qiniuDashJsMod.Region.z1
+import typings.qiniuDashJs.qiniuDashJsMod.Region.z2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +35,23 @@ object Region extends js.Object {
   @js.native
   sealed trait z2 extends Region
   
-  /* 4 */ val as0: typings.qiniuDashJs.qiniuDashJsMod.Region.as0 with Double = js.native
-  /* 3 */ val na0: typings.qiniuDashJs.qiniuDashJsMod.Region.na0 with Double = js.native
-  /* 0 */ val z0: typings.qiniuDashJs.qiniuDashJsMod.Region.z0 with Double = js.native
-  /* 1 */ val z1: typings.qiniuDashJs.qiniuDashJsMod.Region.z1 with Double = js.native
-  /* 2 */ val z2: typings.qiniuDashJs.qiniuDashJsMod.Region.z2 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Region with Double] = js.native
+  /* 4 */ @js.native
+  object as0 extends TopLevel[as0 with Double]
+  
+  /* 3 */ @js.native
+  object na0 extends TopLevel[na0 with Double]
+  
+  /* 0 */ @js.native
+  object z0 extends TopLevel[z0 with Double]
+  
+  /* 1 */ @js.native
+  object z1 extends TopLevel[z1 with Double]
+  
+  /* 2 */ @js.native
+  object z2 extends TopLevel[z2 with Double]
+  
 }
 
 @JSImport("qiniu-js", "region")

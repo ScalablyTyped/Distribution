@@ -1,5 +1,8 @@
 package typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Private
+import typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CacheScope extends js.Object {
   @js.native
   sealed trait Public extends CacheScope
   
-  /* "PRIVATE" */ val Private: typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Private with String = js.native
-  /* "PUBLIC" */ val Public: typings.apolloDashCacheDashControl.apolloDashCacheDashControlMod.CacheScope.Public with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CacheScope with String] = js.native
+  /* "PRIVATE" */ @js.native
+  object Private extends TopLevel[Private with String]
+  
+  /* "PUBLIC" */ @js.native
+  object Public extends TopLevel[Public with String]
+  
 }
 

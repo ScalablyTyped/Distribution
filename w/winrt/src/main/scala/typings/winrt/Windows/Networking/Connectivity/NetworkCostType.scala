@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.fixed
+import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unknown
+import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unrestricted
+import typings.winrt.Windows.Networking.Connectivity.NetworkCostType.variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object NetworkCostType extends js.Object {
   @js.native
   sealed trait variable extends NetworkCostType
   
-  /* 2 */ val fixed: typings.winrt.Windows.Networking.Connectivity.NetworkCostType.fixed with Double = js.native
-  /* 0 */ val unknown: typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unknown with Double = js.native
-  /* 1 */ val unrestricted: typings.winrt.Windows.Networking.Connectivity.NetworkCostType.unrestricted with Double = js.native
-  /* 3 */ val variable: typings.winrt.Windows.Networking.Connectivity.NetworkCostType.variable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NetworkCostType with Double] = js.native
+  /* 2 */ @js.native
+  object fixed extends TopLevel[fixed with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 1 */ @js.native
+  object unrestricted extends TopLevel[unrestricted with Double]
+  
+  /* 3 */ @js.native
+  object variable extends TopLevel[variable with Double]
+  
 }
 

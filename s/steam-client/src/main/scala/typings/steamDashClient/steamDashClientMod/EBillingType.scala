@@ -1,5 +1,23 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EBillingType.AutoGrant
+import typings.steamDashClient.steamDashClientMod.EBillingType.BillMonthly
+import typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOnly
+import typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOrCDKey
+import typings.steamDashClient.steamDashClientMod.EBillingType.CommercialLicense
+import typings.steamDashClient.steamDashClientMod.EBillingType.FreeCommercialLicense
+import typings.steamDashClient.steamDashClientMod.EBillingType.FreeOnDemand
+import typings.steamDashClient.steamDashClientMod.EBillingType.Gift
+import typings.steamDashClient.steamDashClientMod.EBillingType.GuestPass
+import typings.steamDashClient.steamDashClientMod.EBillingType.HardwarePromo
+import typings.steamDashClient.steamDashClientMod.EBillingType.NoCost
+import typings.steamDashClient.steamDashClientMod.EBillingType.NumBillingTypes
+import typings.steamDashClient.steamDashClientMod.EBillingType.OEMTicket
+import typings.steamDashClient.steamDashClientMod.EBillingType.ProofOfPrepurchaseOnly
+import typings.steamDashClient.steamDashClientMod.EBillingType.RecurringOption
+import typings.steamDashClient.steamDashClientMod.EBillingType.Rental
+import typings.steamDashClient.steamDashClientMod.EBillingType.Repurchaseable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,24 +79,58 @@ object EBillingType extends js.Object {
   @js.native
   sealed trait Repurchaseable extends EBillingType
   
-  /* 7 */ val AutoGrant: typings.steamDashClient.steamDashClientMod.EBillingType.AutoGrant with Double = js.native
-  /* 2 */ val BillMonthly: typings.steamDashClient.steamDashClientMod.EBillingType.BillMonthly with Double = js.native
-  /* 1 */ val BillOnceOnly: typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOnly with Double = js.native
-  /* 10 */ val BillOnceOrCDKey: typings.steamDashClient.steamDashClientMod.EBillingType.BillOnceOrCDKey with Double = js.native
-  /* 14 */ val CommercialLicense: typings.steamDashClient.steamDashClientMod.EBillingType.CommercialLicense with Double = js.native
-  /* 15 */ val FreeCommercialLicense: typings.steamDashClient.steamDashClientMod.EBillingType.FreeCommercialLicense with Double = js.native
-  /* 12 */ val FreeOnDemand: typings.steamDashClient.steamDashClientMod.EBillingType.FreeOnDemand with Double = js.native
-  /* 6 */ val Gift: typings.steamDashClient.steamDashClientMod.EBillingType.Gift with Double = js.native
-  /* 4 */ val GuestPass: typings.steamDashClient.steamDashClientMod.EBillingType.GuestPass with Double = js.native
-  /* 5 */ val HardwarePromo: typings.steamDashClient.steamDashClientMod.EBillingType.HardwarePromo with Double = js.native
-  /* 0 */ val NoCost: typings.steamDashClient.steamDashClientMod.EBillingType.NoCost with Double = js.native
-  /* 16 */ val NumBillingTypes: typings.steamDashClient.steamDashClientMod.EBillingType.NumBillingTypes with Double = js.native
-  /* 8 */ val OEMTicket: typings.steamDashClient.steamDashClientMod.EBillingType.OEMTicket with Double = js.native
-  /* 3 */ val ProofOfPrepurchaseOnly: typings.steamDashClient.steamDashClientMod.EBillingType.ProofOfPrepurchaseOnly with Double = js.native
-  /* 9 */ val RecurringOption: typings.steamDashClient.steamDashClientMod.EBillingType.RecurringOption with Double = js.native
-  /* 13 */ val Rental: typings.steamDashClient.steamDashClientMod.EBillingType.Rental with Double = js.native
-  /* 11 */ val Repurchaseable: typings.steamDashClient.steamDashClientMod.EBillingType.Repurchaseable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EBillingType with Double] = js.native
+  /* 7 */ @js.native
+  object AutoGrant extends TopLevel[AutoGrant with Double]
+  
+  /* 2 */ @js.native
+  object BillMonthly extends TopLevel[BillMonthly with Double]
+  
+  /* 1 */ @js.native
+  object BillOnceOnly extends TopLevel[BillOnceOnly with Double]
+  
+  /* 10 */ @js.native
+  object BillOnceOrCDKey extends TopLevel[BillOnceOrCDKey with Double]
+  
+  /* 14 */ @js.native
+  object CommercialLicense extends TopLevel[CommercialLicense with Double]
+  
+  /* 15 */ @js.native
+  object FreeCommercialLicense extends TopLevel[FreeCommercialLicense with Double]
+  
+  /* 12 */ @js.native
+  object FreeOnDemand extends TopLevel[FreeOnDemand with Double]
+  
+  /* 6 */ @js.native
+  object Gift extends TopLevel[Gift with Double]
+  
+  /* 4 */ @js.native
+  object GuestPass extends TopLevel[GuestPass with Double]
+  
+  /* 5 */ @js.native
+  object HardwarePromo extends TopLevel[HardwarePromo with Double]
+  
+  /* 0 */ @js.native
+  object NoCost extends TopLevel[NoCost with Double]
+  
+  /* 16 */ @js.native
+  object NumBillingTypes extends TopLevel[NumBillingTypes with Double]
+  
+  /* 8 */ @js.native
+  object OEMTicket extends TopLevel[OEMTicket with Double]
+  
+  /* 3 */ @js.native
+  object ProofOfPrepurchaseOnly extends TopLevel[ProofOfPrepurchaseOnly with Double]
+  
+  /* 9 */ @js.native
+  object RecurringOption extends TopLevel[RecurringOption with Double]
+  
+  /* 13 */ @js.native
+  object Rental extends TopLevel[Rental with Double]
+  
+  /* 11 */ @js.native
+  object Repurchaseable extends TopLevel[Repurchaseable with Double]
+  
 }
 

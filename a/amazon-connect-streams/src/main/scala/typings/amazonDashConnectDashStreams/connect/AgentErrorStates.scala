@@ -1,5 +1,19 @@
 package typings.amazonDashConnectDashStreams.connect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.AGENT_HUNG_UP
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_AGENT
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_CUSTOMER
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.DEFAULT
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.ERROR
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_AGENT
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_CUSTOMER
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_AGENT
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_CUSTOMER
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_AGENT
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_CUSTOMER
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MULTIPLE_CCP_WINDOWS
+import typings.amazonDashConnectDashStreams.connect.AgentErrorStates.REALTIME_COMMUNICATION_ERROR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +63,46 @@ object AgentErrorStates extends js.Object {
   @js.native
   sealed trait REALTIME_COMMUNICATION_ERROR extends AgentErrorStates
   
-  /* "AgentHungUp" */ val AGENT_HUNG_UP: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.AGENT_HUNG_UP with String = js.native
-  /* "BadAddressAgent" */ val BAD_ADDRESS_AGENT: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_AGENT with String = js.native
-  /* "BadAddressCustomer" */ val BAD_ADDRESS_CUSTOMER: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.BAD_ADDRESS_CUSTOMER with String = js.native
-  /* "Default" */ val DEFAULT: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.DEFAULT with String = js.native
-  /* "Error" */ val ERROR: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.ERROR with String = js.native
-  /* "FailedConnectAgent" */ val FAILED_CONNECT_AGENT: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_AGENT with String = js.native
-  /* "FailedConnectCustomer" */ val FAILED_CONNECT_CUSTOMER: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.FAILED_CONNECT_CUSTOMER with String = js.native
-  /* "LineEngagedAgent" */ val LINE_ENGAGED_AGENT: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_AGENT with String = js.native
-  /* "LineEngagedCustomer" */ val LINE_ENGAGED_CUSTOMER: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.LINE_ENGAGED_CUSTOMER with String = js.native
-  /* "MissedCallAgent" */ val MISSED_CALL_AGENT: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_AGENT with String = js.native
-  /* "MissedCallCustomer" */ val MISSED_CALL_CUSTOMER: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MISSED_CALL_CUSTOMER with String = js.native
-  /* "MultipleCcpWindows" */ val MULTIPLE_CCP_WINDOWS: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.MULTIPLE_CCP_WINDOWS with String = js.native
-  /* "RealtimeCommunicationError" */ val REALTIME_COMMUNICATION_ERROR: typings.amazonDashConnectDashStreams.connect.AgentErrorStates.REALTIME_COMMUNICATION_ERROR with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AgentErrorStates with String] = js.native
+  /* "AgentHungUp" */ @js.native
+  object AGENT_HUNG_UP extends TopLevel[AGENT_HUNG_UP with String]
+  
+  /* "BadAddressAgent" */ @js.native
+  object BAD_ADDRESS_AGENT extends TopLevel[BAD_ADDRESS_AGENT with String]
+  
+  /* "BadAddressCustomer" */ @js.native
+  object BAD_ADDRESS_CUSTOMER extends TopLevel[BAD_ADDRESS_CUSTOMER with String]
+  
+  /* "Default" */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with String]
+  
+  /* "Error" */ @js.native
+  object ERROR extends TopLevel[ERROR with String]
+  
+  /* "FailedConnectAgent" */ @js.native
+  object FAILED_CONNECT_AGENT extends TopLevel[FAILED_CONNECT_AGENT with String]
+  
+  /* "FailedConnectCustomer" */ @js.native
+  object FAILED_CONNECT_CUSTOMER extends TopLevel[FAILED_CONNECT_CUSTOMER with String]
+  
+  /* "LineEngagedAgent" */ @js.native
+  object LINE_ENGAGED_AGENT extends TopLevel[LINE_ENGAGED_AGENT with String]
+  
+  /* "LineEngagedCustomer" */ @js.native
+  object LINE_ENGAGED_CUSTOMER extends TopLevel[LINE_ENGAGED_CUSTOMER with String]
+  
+  /* "MissedCallAgent" */ @js.native
+  object MISSED_CALL_AGENT extends TopLevel[MISSED_CALL_AGENT with String]
+  
+  /* "MissedCallCustomer" */ @js.native
+  object MISSED_CALL_CUSTOMER extends TopLevel[MISSED_CALL_CUSTOMER with String]
+  
+  /* "MultipleCcpWindows" */ @js.native
+  object MULTIPLE_CCP_WINDOWS extends TopLevel[MULTIPLE_CCP_WINDOWS with String]
+  
+  /* "RealtimeCommunicationError" */ @js.native
+  object REALTIME_COMMUNICATION_ERROR extends TopLevel[REALTIME_COMMUNICATION_ERROR with String]
+  
 }
 

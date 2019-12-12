@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Call
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Default
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object BPMNBoundary extends js.Object {
   @js.native
   sealed trait Event extends BPMNBoundary
   
-  /* 1 */ val Call: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Call with Double = js.native
-  /* 0 */ val Default: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Default with Double = js.native
-  /* 2 */ val Event: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNBoundary.Event with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BPMNBoundary with Double] = js.native
+  /* 1 */ @js.native
+  object Call extends TopLevel[Call with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 2 */ @js.native
+  object Event extends TopLevel[Event with Double]
+  
 }
 

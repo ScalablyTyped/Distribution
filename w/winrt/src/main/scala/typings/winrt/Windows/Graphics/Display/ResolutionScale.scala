@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Graphics.Display
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Display.ResolutionScale.invalid
+import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale100Percent
+import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale140Percent
+import typings.winrt.Windows.Graphics.Display.ResolutionScale.scale180Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ResolutionScale extends js.Object {
   @js.native
   sealed trait scale180Percent extends ResolutionScale
   
-  /* 0 */ val invalid: typings.winrt.Windows.Graphics.Display.ResolutionScale.invalid with Double = js.native
-  /* 1 */ val scale100Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale100Percent with Double = js.native
-  /* 2 */ val scale140Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale140Percent with Double = js.native
-  /* 3 */ val scale180Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale180Percent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResolutionScale with Double] = js.native
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 1 */ @js.native
+  object scale100Percent extends TopLevel[scale100Percent with Double]
+  
+  /* 2 */ @js.native
+  object scale140Percent extends TopLevel[scale140Percent with Double]
+  
+  /* 3 */ @js.native
+  object scale180Percent extends TopLevel[scale180Percent with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartGradientStyle.threePhaseColor
+import typings.officeDashJs.Excel.ChartGradientStyle.twoPhaseColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ChartGradientStyle extends js.Object {
   @js.native
   sealed trait twoPhaseColor extends ChartGradientStyle
   
-  /* "ThreePhaseColor" */ val threePhaseColor: typings.officeDashJs.Excel.ChartGradientStyle.threePhaseColor with String = js.native
-  /* "TwoPhaseColor" */ val twoPhaseColor: typings.officeDashJs.Excel.ChartGradientStyle.twoPhaseColor with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartGradientStyle with String] = js.native
+  /* "ThreePhaseColor" */ @js.native
+  object threePhaseColor extends TopLevel[threePhaseColor with String]
+  
+  /* "TwoPhaseColor" */ @js.native
+  object twoPhaseColor extends TopLevel[twoPhaseColor with String]
+  
 }
 

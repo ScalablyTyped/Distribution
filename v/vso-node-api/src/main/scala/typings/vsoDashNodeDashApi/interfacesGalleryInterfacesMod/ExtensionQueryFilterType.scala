@@ -1,5 +1,22 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Category
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.ContributionType
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.DisplayName
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.ExcludeWithFlags
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Featured
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.FeaturedInCategory
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Id
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.IncludeWithFlags
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTargetVersion
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTargetVersionRange
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Lcid
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Name
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Private
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.SearchText
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Tag
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.VsixMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,24 +129,61 @@ object ExtensionQueryFilterType extends js.Object {
   @js.native
   sealed trait VsixMetadata extends ExtensionQueryFilterType
   
-  /* 5 */ val Category: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Category with Double = js.native
-  /* 6 */ val ContributionType: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.ContributionType with Double = js.native
-  /* 2 */ val DisplayName: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.DisplayName with Double = js.native
-  /* 12 */ val ExcludeWithFlags: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.ExcludeWithFlags with Double = js.native
-  /* 9 */ val Featured: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Featured with Double = js.native
-  /* 11 */ val FeaturedInCategory: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.FeaturedInCategory with Double = js.native
-  /* 4 */ val Id: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Id with Double = js.native
-  /* 13 */ val IncludeWithFlags: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.IncludeWithFlags with Double = js.native
-  /* 8 */ val InstallationTarget: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTarget with Double = js.native
-  /* 15 */ val InstallationTargetVersion: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTargetVersion with Double = js.native
-  /* 16 */ val InstallationTargetVersionRange: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTargetVersionRange with Double = js.native
-  /* 14 */ val Lcid: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Lcid with Double = js.native
-  /* 7 */ val Name: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Name with Double = js.native
-  /* 3 */ val Private: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Private with Double = js.native
-  /* 10 */ val SearchText: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.SearchText with Double = js.native
-  /* 1 */ val Tag: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.Tag with Double = js.native
-  /* 17 */ val VsixMetadata: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.VsixMetadata with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionQueryFilterType with Double] = js.native
+  /* 5 */ @js.native
+  object Category extends TopLevel[Category with Double]
+  
+  /* 6 */ @js.native
+  object ContributionType extends TopLevel[ContributionType with Double]
+  
+  /* 2 */ @js.native
+  object DisplayName extends TopLevel[DisplayName with Double]
+  
+  /* 12 */ @js.native
+  object ExcludeWithFlags extends TopLevel[ExcludeWithFlags with Double]
+  
+  /* 9 */ @js.native
+  object Featured extends TopLevel[Featured with Double]
+  
+  /* 11 */ @js.native
+  object FeaturedInCategory extends TopLevel[FeaturedInCategory with Double]
+  
+  /* 4 */ @js.native
+  object Id extends TopLevel[Id with Double]
+  
+  /* 13 */ @js.native
+  object IncludeWithFlags extends TopLevel[IncludeWithFlags with Double]
+  
+  /* 8 */ @js.native
+  object InstallationTarget
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFilterType.InstallationTarget with Double
+        ]
+  
+  /* 15 */ @js.native
+  object InstallationTargetVersion extends TopLevel[InstallationTargetVersion with Double]
+  
+  /* 16 */ @js.native
+  object InstallationTargetVersionRange extends TopLevel[InstallationTargetVersionRange with Double]
+  
+  /* 14 */ @js.native
+  object Lcid extends TopLevel[Lcid with Double]
+  
+  /* 7 */ @js.native
+  object Name extends TopLevel[Name with Double]
+  
+  /* 3 */ @js.native
+  object Private extends TopLevel[Private with Double]
+  
+  /* 10 */ @js.native
+  object SearchText extends TopLevel[SearchText with Double]
+  
+  /* 1 */ @js.native
+  object Tag extends TopLevel[Tag with Double]
+  
+  /* 17 */ @js.native
+  object VsixMetadata extends TopLevel[VsixMetadata with Double]
+  
 }
 

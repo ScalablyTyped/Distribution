@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.UI.Input.Inking
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.erasing
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.inking
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.selecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object InkManipulationMode extends js.Object {
   @js.native
   sealed trait selecting extends InkManipulationMode
   
-  /* 1 */ val erasing: typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.erasing with Double = js.native
-  /* 0 */ val inking: typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.inking with Double = js.native
-  /* 2 */ val selecting: typings.winrtDashUwp.Windows.UI.Input.Inking.InkManipulationMode.selecting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InkManipulationMode with Double] = js.native
+  /* 1 */ @js.native
+  object erasing extends TopLevel[erasing with Double]
+  
+  /* 0 */ @js.native
+  object inking extends TopLevel[inking with Double]
+  
+  /* 2 */ @js.native
+  object selecting extends TopLevel[selecting with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.away
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.blocked
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.busy
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.dnd
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.none
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.offline
+import typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.online
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object PersonaPresence extends js.Object {
   @js.native
   sealed trait online extends PersonaPresence
   
-  /* 3 */ val away: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.away with Double = js.native
-  /* 5 */ val blocked: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.blocked with Double = js.native
-  /* 6 */ val busy: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.busy with Double = js.native
-  /* 4 */ val dnd: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.dnd with Double = js.native
-  /* 0 */ val none: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.none with Double = js.native
-  /* 1 */ val offline: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.offline with Double = js.native
-  /* 2 */ val online: typings.officeDashUiDashFabricDashReact.libComponentsPersonaPersonaDotTypesMod.PersonaPresence.online with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PersonaPresence with Double] = js.native
+  /* 3 */ @js.native
+  object away extends TopLevel[away with Double]
+  
+  /* 5 */ @js.native
+  object blocked extends TopLevel[blocked with Double]
+  
+  /* 6 */ @js.native
+  object busy extends TopLevel[busy with Double]
+  
+  /* 4 */ @js.native
+  object dnd extends TopLevel[dnd with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object offline extends TopLevel[offline with Double]
+  
+  /* 2 */ @js.native
+  object online extends TopLevel[online with Double]
+  
 }
 

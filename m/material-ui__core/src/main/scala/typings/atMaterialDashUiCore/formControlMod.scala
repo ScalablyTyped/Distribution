@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.formControlFormControlMod.FormControlProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object formControlMod extends js.Object {
     def this(props: FormControlProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[FormControlProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[FormControlProps]]
+  
 }
 

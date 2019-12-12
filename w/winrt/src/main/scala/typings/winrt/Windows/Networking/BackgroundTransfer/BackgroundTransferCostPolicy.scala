@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.always
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.default
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.unrestrictedOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BackgroundTransferCostPolicy extends js.Object {
   @js.native
   sealed trait unrestrictedOnly extends BackgroundTransferCostPolicy
   
-  /* 2 */ val always: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.always with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.default with Double = js.native
-  /* 1 */ val unrestrictedOnly: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferCostPolicy.unrestrictedOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BackgroundTransferCostPolicy with Double] = js.native
+  /* 2 */ @js.native
+  object always extends TopLevel[always with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object unrestrictedOnly extends TopLevel[unrestrictedOnly with Double]
+  
 }
 

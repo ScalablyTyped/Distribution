@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.appLaunched
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.canceled
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.communicationFailed
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.completed
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.resourceLimitsExceeded
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.timeoutExceeded
+import typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object VoiceCommandCompletionReason extends js.Object {
   @js.native
   sealed trait unknown extends VoiceCommandCompletionReason
   
-  /* 5 */ val appLaunched: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.appLaunched with Double = js.native
-  /* 3 */ val canceled: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.canceled with Double = js.native
-  /* 1 */ val communicationFailed: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.communicationFailed with Double = js.native
-  /* 6 */ val completed: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.completed with Double = js.native
-  /* 2 */ val resourceLimitsExceeded: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.resourceLimitsExceeded with Double = js.native
-  /* 4 */ val timeoutExceeded: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.timeoutExceeded with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VoiceCommandCompletionReason with Double] = js.native
+  /* 5 */ @js.native
+  object appLaunched extends TopLevel[appLaunched with Double]
+  
+  /* 3 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 1 */ @js.native
+  object communicationFailed extends TopLevel[communicationFailed with Double]
+  
+  /* 6 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 2 */ @js.native
+  object resourceLimitsExceeded extends TopLevel[resourceLimitsExceeded with Double]
+  
+  /* 4 */ @js.native
+  object timeoutExceeded extends TopLevel[timeoutExceeded with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

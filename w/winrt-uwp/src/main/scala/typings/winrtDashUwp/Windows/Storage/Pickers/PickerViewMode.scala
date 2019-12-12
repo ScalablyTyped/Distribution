@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Storage.Pickers
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Pickers.PickerViewMode.list
+import typings.winrtDashUwp.Windows.Storage.Pickers.PickerViewMode.thumbnail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PickerViewMode extends js.Object {
   @js.native
   sealed trait thumbnail extends PickerViewMode
   
-  /* 0 */ val list: typings.winrtDashUwp.Windows.Storage.Pickers.PickerViewMode.list with Double = js.native
-  /* 1 */ val thumbnail: typings.winrtDashUwp.Windows.Storage.Pickers.PickerViewMode.thumbnail with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PickerViewMode with Double] = js.native
+  /* 0 */ @js.native
+  object list extends TopLevel[list with Double]
+  
+  /* 1 */ @js.native
+  object thumbnail extends TopLevel[thumbnail with Double]
+  
 }
 

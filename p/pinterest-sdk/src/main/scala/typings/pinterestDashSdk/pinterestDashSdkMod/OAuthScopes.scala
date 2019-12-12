@@ -1,5 +1,10 @@
 package typings.pinterestDashSdk.pinterestDashSdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_public
+import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_relationships
+import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_public
+import typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_relationships
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object OAuthScopes extends js.Object {
   @js.native
   sealed trait write_relationships extends OAuthScopes
   
-  /* 0 */ val read_public: typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_public with Double = js.native
-  /* 2 */ val read_relationships: typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.read_relationships with Double = js.native
-  /* 1 */ val write_public: typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_public with Double = js.native
-  /* 3 */ val write_relationships: typings.pinterestDashSdk.pinterestDashSdkMod.OAuthScopes.write_relationships with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OAuthScopes with Double] = js.native
+  /* 0 */ @js.native
+  object read_public extends TopLevel[read_public with Double]
+  
+  /* 2 */ @js.native
+  object read_relationships extends TopLevel[read_relationships with Double]
+  
+  /* 1 */ @js.native
+  object write_public extends TopLevel[write_public with Double]
+  
+  /* 3 */ @js.native
+  object write_relationships extends TopLevel[write_relationships with Double]
+  
 }
 

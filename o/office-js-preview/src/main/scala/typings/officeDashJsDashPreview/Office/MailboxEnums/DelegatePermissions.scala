@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteAll
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditAll
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditOwn
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Read
+import typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,13 +62,25 @@ object DelegatePermissions extends js.Object {
   @js.native
   sealed trait Write extends DelegatePermissions
   
-  /* 8 */ val DeleteAll: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteAll with Double = js.native
-  /* 4 */ val DeleteOwn: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.DeleteOwn with Double = js.native
-  /* 32 */ val EditAll: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditAll with Double = js.native
-  /* 16 */ val EditOwn: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.EditOwn with Double = js.native
-  /* 1 */ val Read: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Read with Double = js.native
-  /* 2 */ val Write: typings.officeDashJsDashPreview.Office.MailboxEnums.DelegatePermissions.Write with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DelegatePermissions with Double] = js.native
+  /* 8 */ @js.native
+  object DeleteAll extends TopLevel[DeleteAll with Double]
+  
+  /* 4 */ @js.native
+  object DeleteOwn extends TopLevel[DeleteOwn with Double]
+  
+  /* 32 */ @js.native
+  object EditAll extends TopLevel[EditAll with Double]
+  
+  /* 16 */ @js.native
+  object EditOwn extends TopLevel[EditOwn with Double]
+  
+  /* 1 */ @js.native
+  object Read extends TopLevel[Read with Double]
+  
+  /* 2 */ @js.native
+  object Write extends TopLevel[Write with Double]
+  
 }
 

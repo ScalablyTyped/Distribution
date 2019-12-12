@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Boolean
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.BranchFilter
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.MultiLine
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.PickList
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Radio
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.String
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.StringList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object BuildOptionInputType extends js.Object {
   @js.native
   sealed trait StringList extends BuildOptionInputType
   
-  /* 1 */ val Boolean: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Boolean with Double = js.native
-  /* 6 */ val BranchFilter: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.BranchFilter with Double = js.native
-  /* 5 */ val MultiLine: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.MultiLine with Double = js.native
-  /* 4 */ val PickList: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.PickList with Double = js.native
-  /* 3 */ val Radio: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.Radio with Double = js.native
-  /* 0 */ val String: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.String with Double = js.native
-  /* 2 */ val StringList: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildOptionInputType.StringList with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildOptionInputType with Double] = js.native
+  /* 1 */ @js.native
+  object Boolean extends TopLevel[Boolean with Double]
+  
+  /* 6 */ @js.native
+  object BranchFilter extends TopLevel[BranchFilter with Double]
+  
+  /* 5 */ @js.native
+  object MultiLine extends TopLevel[MultiLine with Double]
+  
+  /* 4 */ @js.native
+  object PickList extends TopLevel[PickList with Double]
+  
+  /* 3 */ @js.native
+  object Radio extends TopLevel[Radio with Double]
+  
+  /* 0 */ @js.native
+  object String extends TopLevel[String with Double]
+  
+  /* 2 */ @js.native
+  object StringList extends TopLevel[StringList with Double]
+  
 }
 

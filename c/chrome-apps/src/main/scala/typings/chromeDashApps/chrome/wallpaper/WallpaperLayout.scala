@@ -1,5 +1,9 @@
 package typings.chromeDashApps.chrome.wallpaper
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER
+import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER_CROPPED
+import typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.STRETCH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object WallpaperLayout extends js.Object {
   @js.native
   sealed trait STRETCH extends WallpaperLayout
   
-  /* "CENTER" */ val CENTER: typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER with String = js.native
-  /* "CENTER_CROPPED" */ val CENTER_CROPPED: typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.CENTER_CROPPED with String = js.native
-  /* "STRETCH" */ val STRETCH: typings.chromeDashApps.chrome.wallpaper.WallpaperLayout.STRETCH with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WallpaperLayout with String] = js.native
+  /* "CENTER" */ @js.native
+  object CENTER extends TopLevel[CENTER with String]
+  
+  /* "CENTER_CROPPED" */ @js.native
+  object CENTER_CROPPED extends TopLevel[CENTER_CROPPED with String]
+  
+  /* "STRETCH" */ @js.native
+  object STRETCH extends TopLevel[STRETCH with String]
+  
 }
 

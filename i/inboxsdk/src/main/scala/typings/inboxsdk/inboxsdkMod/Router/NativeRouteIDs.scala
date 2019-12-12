@@ -1,5 +1,26 @@
 package typings.inboxsdk.inboxsdkMod.Router
 
+import org.scalablytyped.runtime.TopLevel
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ALL_MAIL
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ANY_LIST
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHAT
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHATS
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACT
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACTS
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DONE
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DRAFTS
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.IMPORTANT
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.INBOX
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.LABEL
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.REMINDERS
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SEARCH
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SENT
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SETTINGS
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SNOOZED
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SPAM
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.STARRED
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.THREAD
+import typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.TRASH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,27 +91,67 @@ object NativeRouteIDs extends js.Object {
   @js.native
   sealed trait TRASH extends NativeRouteIDs
   
-  /* 1 */ val ALL_MAIL: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ALL_MAIL with Double = js.native
-  /* 19 */ val ANY_LIST: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.ANY_LIST with Double = js.native
-  /* 15 */ val CHAT: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHAT with Double = js.native
-  /* 14 */ val CHATS: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CHATS with Double = js.native
-  /* 17 */ val CONTACT: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACT with Double = js.native
-  /* 16 */ val CONTACTS: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.CONTACTS with Double = js.native
-  /* 6 */ val DONE: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DONE with Double = js.native
-  /* 4 */ val DRAFTS: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.DRAFTS with Double = js.native
-  /* 11 */ val IMPORTANT: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.IMPORTANT with Double = js.native
-  /* 0 */ val INBOX: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.INBOX with Double = js.native
-  /* 8 */ val LABEL: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.LABEL with Double = js.native
-  /* 7 */ val REMINDERS: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.REMINDERS with Double = js.native
-  /* 12 */ val SEARCH: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SEARCH with Double = js.native
-  /* 2 */ val SENT: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SENT with Double = js.native
-  /* 18 */ val SETTINGS: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SETTINGS with Double = js.native
-  /* 5 */ val SNOOZED: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SNOOZED with Double = js.native
-  /* 10 */ val SPAM: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.SPAM with Double = js.native
-  /* 3 */ val STARRED: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.STARRED with Double = js.native
-  /* 13 */ val THREAD: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.THREAD with Double = js.native
-  /* 9 */ val TRASH: typings.inboxsdk.inboxsdkMod.Router.NativeRouteIDs.TRASH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NativeRouteIDs with Double] = js.native
+  /* 1 */ @js.native
+  object ALL_MAIL extends TopLevel[ALL_MAIL with Double]
+  
+  /* 19 */ @js.native
+  object ANY_LIST extends TopLevel[ANY_LIST with Double]
+  
+  /* 15 */ @js.native
+  object CHAT extends TopLevel[CHAT with Double]
+  
+  /* 14 */ @js.native
+  object CHATS extends TopLevel[CHATS with Double]
+  
+  /* 17 */ @js.native
+  object CONTACT extends TopLevel[CONTACT with Double]
+  
+  /* 16 */ @js.native
+  object CONTACTS extends TopLevel[CONTACTS with Double]
+  
+  /* 6 */ @js.native
+  object DONE extends TopLevel[DONE with Double]
+  
+  /* 4 */ @js.native
+  object DRAFTS extends TopLevel[DRAFTS with Double]
+  
+  /* 11 */ @js.native
+  object IMPORTANT extends TopLevel[IMPORTANT with Double]
+  
+  /* 0 */ @js.native
+  object INBOX extends TopLevel[INBOX with Double]
+  
+  /* 8 */ @js.native
+  object LABEL extends TopLevel[LABEL with Double]
+  
+  /* 7 */ @js.native
+  object REMINDERS extends TopLevel[REMINDERS with Double]
+  
+  /* 12 */ @js.native
+  object SEARCH extends TopLevel[SEARCH with Double]
+  
+  /* 2 */ @js.native
+  object SENT extends TopLevel[SENT with Double]
+  
+  /* 18 */ @js.native
+  object SETTINGS extends TopLevel[SETTINGS with Double]
+  
+  /* 5 */ @js.native
+  object SNOOZED extends TopLevel[SNOOZED with Double]
+  
+  /* 10 */ @js.native
+  object SPAM extends TopLevel[SPAM with Double]
+  
+  /* 3 */ @js.native
+  object STARRED extends TopLevel[STARRED with Double]
+  
+  /* 13 */ @js.native
+  object THREAD extends TopLevel[THREAD with Double]
+  
+  /* 9 */ @js.native
+  object TRASH extends TopLevel[TRASH with Double]
+  
 }
 

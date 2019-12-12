@@ -1,5 +1,13 @@
 package typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.BOOL_VALUE
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.KIND_NOT_SET
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.LIST_VALUE
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NULL_VALUE
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NUMBER_VALUE
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRING_VALUE
+import typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRUCT_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object KindCase extends js.Object {
   @js.native
   sealed trait STRUCT_VALUE extends KindCase
   
-  /* 4 */ val BOOL_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.BOOL_VALUE with Double = js.native
-  /* 0 */ val KIND_NOT_SET: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.KIND_NOT_SET with Double = js.native
-  /* 6 */ val LIST_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.LIST_VALUE with Double = js.native
-  /* 1 */ val NULL_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NULL_VALUE with Double = js.native
-  /* 2 */ val NUMBER_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.NUMBER_VALUE with Double = js.native
-  /* 3 */ val STRING_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRING_VALUE with Double = js.native
-  /* 5 */ val STRUCT_VALUE: typings.googleDashProtobuf.googleProtobufStructUnderscorePbMod.Value.KindCase.STRUCT_VALUE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KindCase with Double] = js.native
+  /* 4 */ @js.native
+  object BOOL_VALUE extends TopLevel[BOOL_VALUE with Double]
+  
+  /* 0 */ @js.native
+  object KIND_NOT_SET extends TopLevel[KIND_NOT_SET with Double]
+  
+  /* 6 */ @js.native
+  object LIST_VALUE extends TopLevel[LIST_VALUE with Double]
+  
+  /* 1 */ @js.native
+  object NULL_VALUE extends TopLevel[NULL_VALUE with Double]
+  
+  /* 2 */ @js.native
+  object NUMBER_VALUE extends TopLevel[NUMBER_VALUE with Double]
+  
+  /* 3 */ @js.native
+  object STRING_VALUE extends TopLevel[STRING_VALUE with Double]
+  
+  /* 5 */ @js.native
+  object STRUCT_VALUE extends TopLevel[STRUCT_VALUE with Double]
+  
 }
 

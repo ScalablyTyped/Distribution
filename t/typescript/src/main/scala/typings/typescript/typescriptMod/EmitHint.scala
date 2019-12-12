@@ -1,5 +1,10 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.EmitHint.EmbeddedStatement
+import typings.typescript.typescriptMod.EmitHint.IdentifierName
+import typings.typescript.typescriptMod.EmitHint.MappedTypeParameter
+import typings.typescript.typescriptMod.EmitHint.Unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +33,27 @@ object EmitHint extends js.Object {
   @js.native
   sealed trait Unspecified extends EmitHint
   
-  /* 5 */ val EmbeddedStatement: typings.typescript.typescriptMod.EmitHint.EmbeddedStatement with Double = js.native
-  /* 1 */ val Expression: typings.typescript.typescriptMod.EmitHint.Expression with Double = js.native
-  /* 2 */ val IdentifierName: typings.typescript.typescriptMod.EmitHint.IdentifierName with Double = js.native
-  /* 3 */ val MappedTypeParameter: typings.typescript.typescriptMod.EmitHint.MappedTypeParameter with Double = js.native
-  /* 0 */ val SourceFile: typings.typescript.typescriptMod.EmitHint.SourceFile with Double = js.native
-  /* 4 */ val Unspecified: typings.typescript.typescriptMod.EmitHint.Unspecified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitHint with Double] = js.native
+  /* 5 */ @js.native
+  object EmbeddedStatement extends TopLevel[EmbeddedStatement with Double]
+  
+  /* 1 */ @js.native
+  object Expression
+    extends TopLevel[typings.typescript.typescriptMod.EmitHint.Expression with Double]
+  
+  /* 2 */ @js.native
+  object IdentifierName extends TopLevel[IdentifierName with Double]
+  
+  /* 3 */ @js.native
+  object MappedTypeParameter extends TopLevel[MappedTypeParameter with Double]
+  
+  /* 0 */ @js.native
+  object SourceFile
+    extends TopLevel[typings.typescript.typescriptMod.EmitHint.SourceFile with Double]
+  
+  /* 4 */ @js.native
+  object Unspecified extends TopLevel[Unspecified with Double]
+  
 }
 

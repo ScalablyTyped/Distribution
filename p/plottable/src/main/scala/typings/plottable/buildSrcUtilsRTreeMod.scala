@@ -1,10 +1,14 @@
 package typings.plottable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.IEntityBounds
 import typings.plottable.buildSrcCoreInterfacesMod.Point
 import typings.plottable.buildSrcUtilsRTreeMod.IDistanceFunction
 import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult
+import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.FAIL
+import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS
+import typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE
 import typings.plottable.buildSrcUtilsRTreeMod.RTreeBounds
 import typings.plottable.buildSrcUtilsRTreeMod.RTreeNode
 import typings.plottable.buildSrcUtilsRTreeSplitStrategiesMod.IRTreeSplitStrategy
@@ -141,11 +145,17 @@ object buildSrcUtilsRTreeMod extends js.Object {
     @js.native
     sealed trait PASS_AND_OVERWRITE extends QueryPredicateResult
     
-    /* 1 */ val FAIL: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.FAIL with Double = js.native
-    /* 0 */ val PASS: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS with Double = js.native
-    /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.buildSrcUtilsRTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[QueryPredicateResult with Double] = js.native
+    /* 1 */ @js.native
+    object FAIL extends TopLevel[FAIL with Double]
+    
+    /* 0 */ @js.native
+    object PASS extends TopLevel[PASS with Double]
+    
+    /* 2 */ @js.native
+    object PASS_AND_OVERWRITE extends TopLevel[PASS_AND_OVERWRITE with Double]
+    
   }
   
   /* static members */

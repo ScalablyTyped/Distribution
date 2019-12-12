@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.imagesAndVideos
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.onlyImages
+import typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.onlyVideos
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PhotoImportContentTypeFilter extends js.Object {
   @js.native
   sealed trait onlyVideos extends PhotoImportContentTypeFilter
   
-  /* 2 */ val imagesAndVideos: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.imagesAndVideos with Double = js.native
-  /* 0 */ val onlyImages: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.onlyImages with Double = js.native
-  /* 1 */ val onlyVideos: typings.winrtDashUwp.Windows.Media.Import.PhotoImportContentTypeFilter.onlyVideos with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhotoImportContentTypeFilter with Double] = js.native
+  /* 2 */ @js.native
+  object imagesAndVideos extends TopLevel[imagesAndVideos with Double]
+  
+  /* 0 */ @js.native
+  object onlyImages extends TopLevel[onlyImages with Double]
+  
+  /* 1 */ @js.native
+  object onlyVideos extends TopLevel[onlyVideos with Double]
+  
 }
 

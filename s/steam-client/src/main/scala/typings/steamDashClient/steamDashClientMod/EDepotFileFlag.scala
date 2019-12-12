@@ -1,5 +1,16 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.CustomExecutable
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Directory
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Encrypted
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Executable
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Hidden
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.InstallScript
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.ReadOnly
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Symlink
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.UserConfig
+import typings.steamDashClient.steamDashClientMod.EDepotFileFlag.VersionedUserConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object EDepotFileFlag extends js.Object {
   @js.native
   sealed trait VersionedUserConfig extends EDepotFileFlag
   
-  /* 128 */ val CustomExecutable: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.CustomExecutable with Double = js.native
-  /* 64 */ val Directory: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Directory with Double = js.native
-  /* 4 */ val Encrypted: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Encrypted with Double = js.native
-  /* 32 */ val Executable: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Executable with Double = js.native
-  /* 16 */ val Hidden: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Hidden with Double = js.native
-  /* 256 */ val InstallScript: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.InstallScript with Double = js.native
-  /* 8 */ val ReadOnly: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.ReadOnly with Double = js.native
-  /* 512 */ val Symlink: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.Symlink with Double = js.native
-  /* 1 */ val UserConfig: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.UserConfig with Double = js.native
-  /* 2 */ val VersionedUserConfig: typings.steamDashClient.steamDashClientMod.EDepotFileFlag.VersionedUserConfig with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EDepotFileFlag with Double] = js.native
+  /* 128 */ @js.native
+  object CustomExecutable extends TopLevel[CustomExecutable with Double]
+  
+  /* 64 */ @js.native
+  object Directory extends TopLevel[Directory with Double]
+  
+  /* 4 */ @js.native
+  object Encrypted extends TopLevel[Encrypted with Double]
+  
+  /* 32 */ @js.native
+  object Executable extends TopLevel[Executable with Double]
+  
+  /* 16 */ @js.native
+  object Hidden extends TopLevel[Hidden with Double]
+  
+  /* 256 */ @js.native
+  object InstallScript extends TopLevel[InstallScript with Double]
+  
+  /* 8 */ @js.native
+  object ReadOnly extends TopLevel[ReadOnly with Double]
+  
+  /* 512 */ @js.native
+  object Symlink extends TopLevel[Symlink with Double]
+  
+  /* 1 */ @js.native
+  object UserConfig extends TopLevel[UserConfig with Double]
+  
+  /* 2 */ @js.native
+  object VersionedUserConfig extends TopLevel[VersionedUserConfig with Double]
+  
 }
 

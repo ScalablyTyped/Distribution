@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.bar
+import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.center
+import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.decimal
+import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.left
+import typings.winrtDashUwp.Windows.UI.Text.TabAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object TabAlignment extends js.Object {
   @js.native
   sealed trait right extends TabAlignment
   
-  /* 4 */ val bar: typings.winrtDashUwp.Windows.UI.Text.TabAlignment.bar with Double = js.native
-  /* 1 */ val center: typings.winrtDashUwp.Windows.UI.Text.TabAlignment.center with Double = js.native
-  /* 3 */ val decimal: typings.winrtDashUwp.Windows.UI.Text.TabAlignment.decimal with Double = js.native
-  /* 0 */ val left: typings.winrtDashUwp.Windows.UI.Text.TabAlignment.left with Double = js.native
-  /* 2 */ val right: typings.winrtDashUwp.Windows.UI.Text.TabAlignment.right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TabAlignment with Double] = js.native
+  /* 4 */ @js.native
+  object bar extends TopLevel[bar with Double]
+  
+  /* 1 */ @js.native
+  object center extends TopLevel[center with Double]
+  
+  /* 3 */ @js.native
+  object decimal extends TopLevel[decimal with Double]
+  
+  /* 0 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* 2 */ @js.native
+  object right extends TopLevel[right with Double]
+  
 }
 

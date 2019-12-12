@@ -1,5 +1,9 @@
 package typings.reactDashDndDashTouchDashBackend.libInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.keyboard
+import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.mouse
+import typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ListenerType extends js.Object {
   @js.native
   sealed trait touch extends ListenerType
   
-  /* "keyboard" */ val keyboard: typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.keyboard with String = js.native
-  /* "mouse" */ val mouse: typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.mouse with String = js.native
-  /* "touch" */ val touch: typings.reactDashDndDashTouchDashBackend.libInterfacesMod.ListenerType.touch with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ListenerType with String] = js.native
+  /* "keyboard" */ @js.native
+  object keyboard extends TopLevel[keyboard with String]
+  
+  /* "mouse" */ @js.native
+  object mouse extends TopLevel[mouse with String]
+  
+  /* "touch" */ @js.native
+  object touch extends TopLevel[touch with String]
+  
 }
 

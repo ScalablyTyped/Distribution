@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.fadeFadeMod.FadeProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object fadeMod extends js.Object {
     def this(props: FadeProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[FadeProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[FadeProps]]
+  
 }
 

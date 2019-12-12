@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "poi"
-version := "12.5-dt-20190414Z-40b7b8"
+version := "12.5-dt-20190414Z-5c50d3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190819Z-939227",
   "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-643b5b",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-e116da",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-1d74f8",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20190712Z-dc61a3",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20191115Z-05d5d3",
   "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190819Z-e3ba49",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
@@ -25,10 +25,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-bfd05e",
-  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-5d27d4",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.9-dt-20191127Z-27b5d0",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-f7ef3e",
+  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-c62f13",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.9-dt-20191127Z-7338f5",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-05c57b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,6 +1,12 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.BOX
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.SALESFORCE
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.SHAREPOINT
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.WEB_CRAWL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +36,23 @@ object CreateCredentialsConstants extends js.Object {
     @js.native
     sealed trait WEB_CRAWL extends SourceType
     
-    /* "box" */ val BOX: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.BOX with String = js.native
-    /* "cloud_object_storage" */ val CLOUD_OBJECT_STORAGE: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.CLOUD_OBJECT_STORAGE with String = js.native
-    /* "salesforce" */ val SALESFORCE: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.SALESFORCE with String = js.native
-    /* "sharepoint" */ val SHAREPOINT: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.SHAREPOINT with String = js.native
-    /* "web_crawl" */ val WEB_CRAWL: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateCredentialsConstants.SourceType.WEB_CRAWL with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SourceType with String] = js.native
+    /* "box" */ @js.native
+    object BOX extends TopLevel[BOX with String]
+    
+    /* "cloud_object_storage" */ @js.native
+    object CLOUD_OBJECT_STORAGE extends TopLevel[CLOUD_OBJECT_STORAGE with String]
+    
+    /* "salesforce" */ @js.native
+    object SALESFORCE extends TopLevel[SALESFORCE with String]
+    
+    /* "sharepoint" */ @js.native
+    object SHAREPOINT extends TopLevel[SHAREPOINT with String]
+    
+    /* "web_crawl" */ @js.native
+    object WEB_CRAWL extends TopLevel[WEB_CRAWL with String]
+    
   }
   
 }

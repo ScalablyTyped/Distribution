@@ -1,5 +1,9 @@
 package typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.CommandLine
+import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.Memory
+import typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ProcessDataFlag extends js.Object {
   @js.native
   sealed trait None extends ProcessDataFlag
   
-  /* 2 */ val CommandLine: typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.CommandLine with Double = js.native
-  /* 1 */ val Memory: typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.Memory with Double = js.native
-  /* 0 */ val None: typings.windowsDashProcessDashTree.windowsDashProcessDashTreeMod.ProcessDataFlag.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessDataFlag with Double] = js.native
+  /* 2 */ @js.native
+  object CommandLine extends TopLevel[CommandLine with Double]
+  
+  /* 1 */ @js.native
+  object Memory extends TopLevel[Memory with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

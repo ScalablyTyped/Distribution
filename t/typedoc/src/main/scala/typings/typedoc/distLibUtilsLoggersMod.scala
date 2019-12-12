@@ -1,6 +1,12 @@
 package typings.typedoc
 
+import org.scalablytyped.runtime.TopLevel
 import typings.typedoc.distLibUtilsLoggersMod.LogLevel
+import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Error
+import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Info
+import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Success
+import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Verbose
+import typings.typedoc.distLibUtilsLoggersMod.LogLevel.Warn
 import typings.typedoc.distLibUtilsLoggersMod.Logger
 import typings.typescript.typescriptMod.Diagnostic
 import scala.scalajs.js
@@ -57,13 +63,23 @@ object distLibUtilsLoggersMod extends js.Object {
     @js.native
     sealed trait Warn extends LogLevel
     
-    /* 3 */ val Error: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Error with Double = js.native
-    /* 1 */ val Info: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Info with Double = js.native
-    /* 4 */ val Success: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Success with Double = js.native
-    /* 0 */ val Verbose: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Verbose with Double = js.native
-    /* 2 */ val Warn: typings.typedoc.distLibUtilsLoggersMod.LogLevel.Warn with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    /* 3 */ @js.native
+    object Error extends TopLevel[Error with Double]
+    
+    /* 1 */ @js.native
+    object Info extends TopLevel[Info with Double]
+    
+    /* 4 */ @js.native
+    object Success extends TopLevel[Success with Double]
+    
+    /* 0 */ @js.native
+    object Verbose extends TopLevel[Verbose with Double]
+    
+    /* 2 */ @js.native
+    object Warn extends TopLevel[Warn with Double]
+    
   }
   
 }

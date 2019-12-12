@@ -1,5 +1,12 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.HitTestResultTypes.ExistingPlane
+import typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingExtent
+import typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingGeometry
+import typings.expo.buildARMod.HitTestResultTypes.FeaturePoint
+import typings.expo.buildARMod.HitTestResultTypes.HorizontalPlane
+import typings.expo.buildARMod.HitTestResultTypes.VerticalPlane
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,13 +55,25 @@ object HitTestResultTypes extends js.Object {
   @js.native
   sealed trait VerticalPlane extends HitTestResultTypes
   
-  /* "existingPlane" */ val ExistingPlane: typings.expo.buildARMod.HitTestResultTypes.ExistingPlane with String = js.native
-  /* "existingPlaneUsingExtent" */ val ExistingPlaneUsingExtent: typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingExtent with String = js.native
-  /* "existingPlaneUsingGeometry" */ val ExistingPlaneUsingGeometry: typings.expo.buildARMod.HitTestResultTypes.ExistingPlaneUsingGeometry with String = js.native
-  /* "featurePoint" */ val FeaturePoint: typings.expo.buildARMod.HitTestResultTypes.FeaturePoint with String = js.native
-  /* "horizontalPlane" */ val HorizontalPlane: typings.expo.buildARMod.HitTestResultTypes.HorizontalPlane with String = js.native
-  /* "verticalPlane" */ val VerticalPlane: typings.expo.buildARMod.HitTestResultTypes.VerticalPlane with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HitTestResultTypes with String] = js.native
+  /* "existingPlane" */ @js.native
+  object ExistingPlane extends TopLevel[ExistingPlane with String]
+  
+  /* "existingPlaneUsingExtent" */ @js.native
+  object ExistingPlaneUsingExtent extends TopLevel[ExistingPlaneUsingExtent with String]
+  
+  /* "existingPlaneUsingGeometry" */ @js.native
+  object ExistingPlaneUsingGeometry extends TopLevel[ExistingPlaneUsingGeometry with String]
+  
+  /* "featurePoint" */ @js.native
+  object FeaturePoint extends TopLevel[FeaturePoint with String]
+  
+  /* "horizontalPlane" */ @js.native
+  object HorizontalPlane extends TopLevel[HorizontalPlane with String]
+  
+  /* "verticalPlane" */ @js.native
+  object VerticalPlane extends TopLevel[VerticalPlane with String]
+  
 }
 

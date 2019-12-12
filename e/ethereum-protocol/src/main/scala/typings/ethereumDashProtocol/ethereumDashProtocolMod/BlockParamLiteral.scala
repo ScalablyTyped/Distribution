@@ -1,5 +1,9 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Earliest
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Latest
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BlockParamLiteral extends js.Object {
   @js.native
   sealed trait Pending extends BlockParamLiteral
   
-  /* "earliest" */ val Earliest: typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Earliest with String = js.native
-  /* "latest" */ val Latest: typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Latest with String = js.native
-  /* "pending" */ val Pending: typings.ethereumDashProtocol.ethereumDashProtocolMod.BlockParamLiteral.Pending with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BlockParamLiteral with String] = js.native
+  /* "earliest" */ @js.native
+  object Earliest extends TopLevel[Earliest with String]
+  
+  /* "latest" */ @js.native
+  object Latest extends TopLevel[Latest with String]
+  
+  /* "pending" */ @js.native
+  object Pending extends TopLevel[Pending with String]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.Spi
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Spi.SpiSharingMode.exclusive
+import typings.winrtDashUwp.Windows.Devices.Spi.SpiSharingMode.shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SpiSharingMode extends js.Object {
   @js.native
   sealed trait shared extends SpiSharingMode
   
-  /* 0 */ val exclusive: typings.winrtDashUwp.Windows.Devices.Spi.SpiSharingMode.exclusive with Double = js.native
-  /* 1 */ val shared: typings.winrtDashUwp.Windows.Devices.Spi.SpiSharingMode.shared with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpiSharingMode with Double] = js.native
+  /* 0 */ @js.native
+  object exclusive extends TopLevel[exclusive with Double]
+  
+  /* 1 */ @js.native
+  object shared extends TopLevel[shared with Double]
+  
 }
 

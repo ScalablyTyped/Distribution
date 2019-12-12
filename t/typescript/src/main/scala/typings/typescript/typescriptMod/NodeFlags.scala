@@ -1,5 +1,32 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.NodeFlags.AwaitContext
+import typings.typescript.typescriptMod.NodeFlags.BlockScoped
+import typings.typescript.typescriptMod.NodeFlags.Const
+import typings.typescript.typescriptMod.NodeFlags.ContainsThis
+import typings.typescript.typescriptMod.NodeFlags.ContextFlags
+import typings.typescript.typescriptMod.NodeFlags.DecoratorContext
+import typings.typescript.typescriptMod.NodeFlags.DisallowInContext
+import typings.typescript.typescriptMod.NodeFlags.ExportContext
+import typings.typescript.typescriptMod.NodeFlags.GlobalAugmentation
+import typings.typescript.typescriptMod.NodeFlags.HasAggregatedChildData
+import typings.typescript.typescriptMod.NodeFlags.HasAsyncFunctions
+import typings.typescript.typescriptMod.NodeFlags.HasExplicitReturn
+import typings.typescript.typescriptMod.NodeFlags.HasImplicitReturn
+import typings.typescript.typescriptMod.NodeFlags.JavaScriptFile
+import typings.typescript.typescriptMod.NodeFlags.JsonFile
+import typings.typescript.typescriptMod.NodeFlags.Let
+import typings.typescript.typescriptMod.NodeFlags.Namespace
+import typings.typescript.typescriptMod.NodeFlags.NestedNamespace
+import typings.typescript.typescriptMod.NodeFlags.None
+import typings.typescript.typescriptMod.NodeFlags.ReachabilityAndEmitFlags
+import typings.typescript.typescriptMod.NodeFlags.ReachabilityCheckFlags
+import typings.typescript.typescriptMod.NodeFlags.Synthesized
+import typings.typescript.typescriptMod.NodeFlags.ThisNodeHasError
+import typings.typescript.typescriptMod.NodeFlags.ThisNodeOrAnySubNodesHasError
+import typings.typescript.typescriptMod.NodeFlags.TypeExcludesFlags
+import typings.typescript.typescriptMod.NodeFlags.YieldContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,35 +121,93 @@ object NodeFlags extends js.Object {
   @js.native
   sealed trait YieldContext extends NodeFlags
   
-  /* 32768 */ val AwaitContext: typings.typescript.typescriptMod.NodeFlags.AwaitContext with Double = js.native
-  /* 3 */ val BlockScoped: typings.typescript.typescriptMod.NodeFlags.BlockScoped with Double = js.native
-  /* 2 */ val Const: typings.typescript.typescriptMod.NodeFlags.Const with Double = js.native
-  /* 128 */ val ContainsThis: typings.typescript.typescriptMod.NodeFlags.ContainsThis with Double = js.native
-  /* 25358336 */ val ContextFlags: typings.typescript.typescriptMod.NodeFlags.ContextFlags with Double = js.native
-  /* 16384 */ val DecoratorContext: typings.typescript.typescriptMod.NodeFlags.DecoratorContext with Double = js.native
-  /* 4096 */ val DisallowInContext: typings.typescript.typescriptMod.NodeFlags.DisallowInContext with Double = js.native
-  /* 64 */ val ExportContext: typings.typescript.typescriptMod.NodeFlags.ExportContext with Double = js.native
-  /* 1024 */ val GlobalAugmentation: typings.typescript.typescriptMod.NodeFlags.GlobalAugmentation with Double = js.native
-  /* 524288 */ val HasAggregatedChildData: typings.typescript.typescriptMod.NodeFlags.HasAggregatedChildData with Double = js.native
-  /* 2048 */ val HasAsyncFunctions: typings.typescript.typescriptMod.NodeFlags.HasAsyncFunctions with Double = js.native
-  /* 512 */ val HasExplicitReturn: typings.typescript.typescriptMod.NodeFlags.HasExplicitReturn with Double = js.native
-  /* 256 */ val HasImplicitReturn: typings.typescript.typescriptMod.NodeFlags.HasImplicitReturn with Double = js.native
-  /* 4194304 */ val JSDoc: typings.typescript.typescriptMod.NodeFlags.JSDoc with Double = js.native
-  /* 131072 */ val JavaScriptFile: typings.typescript.typescriptMod.NodeFlags.JavaScriptFile with Double = js.native
-  /* 33554432 */ val JsonFile: typings.typescript.typescriptMod.NodeFlags.JsonFile with Double = js.native
-  /* 1 */ val Let: typings.typescript.typescriptMod.NodeFlags.Let with Double = js.native
-  /* 16 */ val Namespace: typings.typescript.typescriptMod.NodeFlags.Namespace with Double = js.native
-  /* 4 */ val NestedNamespace: typings.typescript.typescriptMod.NodeFlags.NestedNamespace with Double = js.native
-  /* 0 */ val None: typings.typescript.typescriptMod.NodeFlags.None with Double = js.native
-  /* 32 */ val OptionalChain: typings.typescript.typescriptMod.NodeFlags.OptionalChain with Double = js.native
-  /* 2816 */ val ReachabilityAndEmitFlags: typings.typescript.typescriptMod.NodeFlags.ReachabilityAndEmitFlags with Double = js.native
-  /* 768 */ val ReachabilityCheckFlags: typings.typescript.typescriptMod.NodeFlags.ReachabilityCheckFlags with Double = js.native
-  /* 8 */ val Synthesized: typings.typescript.typescriptMod.NodeFlags.Synthesized with Double = js.native
-  /* 65536 */ val ThisNodeHasError: typings.typescript.typescriptMod.NodeFlags.ThisNodeHasError with Double = js.native
-  /* 262144 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.typescriptMod.NodeFlags.ThisNodeOrAnySubNodesHasError with Double = js.native
-  /* 40960 */ val TypeExcludesFlags: typings.typescript.typescriptMod.NodeFlags.TypeExcludesFlags with Double = js.native
-  /* 8192 */ val YieldContext: typings.typescript.typescriptMod.NodeFlags.YieldContext with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NodeFlags with Double] = js.native
+  /* 32768 */ @js.native
+  object AwaitContext extends TopLevel[AwaitContext with Double]
+  
+  /* 3 */ @js.native
+  object BlockScoped extends TopLevel[BlockScoped with Double]
+  
+  /* 2 */ @js.native
+  object Const extends TopLevel[Const with Double]
+  
+  /* 128 */ @js.native
+  object ContainsThis extends TopLevel[ContainsThis with Double]
+  
+  /* 25358336 */ @js.native
+  object ContextFlags extends TopLevel[ContextFlags with Double]
+  
+  /* 16384 */ @js.native
+  object DecoratorContext extends TopLevel[DecoratorContext with Double]
+  
+  /* 4096 */ @js.native
+  object DisallowInContext extends TopLevel[DisallowInContext with Double]
+  
+  /* 64 */ @js.native
+  object ExportContext extends TopLevel[ExportContext with Double]
+  
+  /* 1024 */ @js.native
+  object GlobalAugmentation extends TopLevel[GlobalAugmentation with Double]
+  
+  /* 524288 */ @js.native
+  object HasAggregatedChildData extends TopLevel[HasAggregatedChildData with Double]
+  
+  /* 2048 */ @js.native
+  object HasAsyncFunctions extends TopLevel[HasAsyncFunctions with Double]
+  
+  /* 512 */ @js.native
+  object HasExplicitReturn extends TopLevel[HasExplicitReturn with Double]
+  
+  /* 256 */ @js.native
+  object HasImplicitReturn extends TopLevel[HasImplicitReturn with Double]
+  
+  /* 4194304 */ @js.native
+  object JSDoc
+    extends TopLevel[typings.typescript.typescriptMod.NodeFlags.JSDoc with Double]
+  
+  /* 131072 */ @js.native
+  object JavaScriptFile extends TopLevel[JavaScriptFile with Double]
+  
+  /* 33554432 */ @js.native
+  object JsonFile extends TopLevel[JsonFile with Double]
+  
+  /* 1 */ @js.native
+  object Let extends TopLevel[Let with Double]
+  
+  /* 16 */ @js.native
+  object Namespace extends TopLevel[Namespace with Double]
+  
+  /* 4 */ @js.native
+  object NestedNamespace extends TopLevel[NestedNamespace with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 32 */ @js.native
+  object OptionalChain
+    extends TopLevel[typings.typescript.typescriptMod.NodeFlags.OptionalChain with Double]
+  
+  /* 2816 */ @js.native
+  object ReachabilityAndEmitFlags extends TopLevel[ReachabilityAndEmitFlags with Double]
+  
+  /* 768 */ @js.native
+  object ReachabilityCheckFlags extends TopLevel[ReachabilityCheckFlags with Double]
+  
+  /* 8 */ @js.native
+  object Synthesized extends TopLevel[Synthesized with Double]
+  
+  /* 65536 */ @js.native
+  object ThisNodeHasError extends TopLevel[ThisNodeHasError with Double]
+  
+  /* 262144 */ @js.native
+  object ThisNodeOrAnySubNodesHasError extends TopLevel[ThisNodeOrAnySubNodesHasError with Double]
+  
+  /* 40960 */ @js.native
+  object TypeExcludesFlags extends TopLevel[TypeExcludesFlags with Double]
+  
+  /* 8192 */ @js.native
+  object YieldContext extends TopLevel[YieldContext with Double]
+  
 }
 

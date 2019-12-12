@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightSquareMatrix
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.FourteenSegment
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SevenSegment
+import typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SixteenSegment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object CharacterType extends js.Object {
   @js.native
   sealed trait SixteenSegment extends CharacterType
   
-  /* 3 */ val EightCrossEightDotMatrix: typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix with Double = js.native
-  /* 4 */ val EightCrossEightSquareMatrix: typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightSquareMatrix with Double = js.native
-  /* 1 */ val FourteenSegment: typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.FourteenSegment with Double = js.native
-  /* 0 */ val SevenSegment: typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SevenSegment with Double = js.native
-  /* 2 */ val SixteenSegment: typings.ejDotWebDotAll.ej.datavisualization.DigitalGauge.CharacterType.SixteenSegment with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CharacterType with Double] = js.native
+  /* 3 */ @js.native
+  object EightCrossEightDotMatrix extends TopLevel[EightCrossEightDotMatrix with Double]
+  
+  /* 4 */ @js.native
+  object EightCrossEightSquareMatrix extends TopLevel[EightCrossEightSquareMatrix with Double]
+  
+  /* 1 */ @js.native
+  object FourteenSegment extends TopLevel[FourteenSegment with Double]
+  
+  /* 0 */ @js.native
+  object SevenSegment extends TopLevel[SevenSegment with Double]
+  
+  /* 2 */ @js.native
+  object SixteenSegment extends TopLevel[SixteenSegment with Double]
+  
 }
 

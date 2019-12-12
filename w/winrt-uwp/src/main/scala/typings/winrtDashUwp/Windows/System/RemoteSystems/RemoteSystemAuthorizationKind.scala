@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.anonymous
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.sameUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object RemoteSystemAuthorizationKind extends js.Object {
   @js.native
   sealed trait sameUser extends RemoteSystemAuthorizationKind
   
-  /* 1 */ val anonymous: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.anonymous with Double = js.native
-  /* 0 */ val sameUser: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemAuthorizationKind.sameUser with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RemoteSystemAuthorizationKind with Double] = js.native
+  /* 1 */ @js.native
+  object anonymous extends TopLevel[anonymous with Double]
+  
+  /* 0 */ @js.native
+  object sameUser extends TopLevel[sameUser with Double]
+  
 }
 

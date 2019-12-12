@@ -1,5 +1,64 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.accepted
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.alreadyReported
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.badGateway
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.badRequest
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.conflict
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.continue
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.created
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.expectationFailed
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.failedDependency
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.forbidden
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.found
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.gatewayTimeout
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.gone
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.httpVersionNotSupported
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.imUsed
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.insufficientStorage
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.internalServerError
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.lengthRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.locked
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.loopDetected
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.methodNotAllowed
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.movedPermanently
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.multiStatus
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.multipleChoices
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.networkAuthenticationRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.noContent
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.nonAuthoritativeInformation
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.none
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notAcceptable
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notExtended
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notFound
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notImplemented
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notModified
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.ok
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.partialContent
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.paymentRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.permanentRedirect
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.preconditionFailed
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.preconditionRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.processing
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.proxyAuthenticationRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestEntityTooLarge
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestHeaderFieldsTooLarge
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestTimeout
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestUriTooLong
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestedRangeNotSatisfiable
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.resetContent
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.seeOther
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.serviceUnavailable
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.switchingProtocols
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.temporaryRedirect
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.tooManyRequests
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unauthorized
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unprocessableEntity
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unsupportedMediaType
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.upgradeRequired
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.useProxy
+import typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.variantAlsoNegotiates
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -243,65 +302,181 @@ object HttpStatusCode extends js.Object {
   @js.native
   sealed trait variantAlsoNegotiates extends HttpStatusCode
   
-  /* 6 */ val accepted: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.accepted with Double = js.native
-  /* 12 */ val alreadyReported: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.alreadyReported with Double = js.native
-  /* 49 */ val badGateway: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.badGateway with Double = js.native
-  /* 22 */ val badRequest: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.badRequest with Double = js.native
-  /* 31 */ val conflict: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.conflict with Double = js.native
-  /* 1 */ val continue: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.continue with Double = js.native
-  /* 5 */ val created: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.created with Double = js.native
-  /* 39 */ val expectationFailed: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.expectationFailed with Double = js.native
-  /* 42 */ val failedDependency: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.failedDependency with Double = js.native
-  /* 25 */ val forbidden: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.forbidden with Double = js.native
-  /* 16 */ val found: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.found with Double = js.native
-  /* 51 */ val gatewayTimeout: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.gatewayTimeout with Double = js.native
-  /* 32 */ val gone: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.gone with Double = js.native
-  /* 52 */ val httpVersionNotSupported: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.httpVersionNotSupported with Double = js.native
-  /* 13 */ val imUsed: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.imUsed with Double = js.native
-  /* 54 */ val insufficientStorage: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.insufficientStorage with Double = js.native
-  /* 47 */ val internalServerError: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.internalServerError with Double = js.native
-  /* 33 */ val lengthRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.lengthRequired with Double = js.native
-  /* 41 */ val locked: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.locked with Double = js.native
-  /* 55 */ val loopDetected: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.loopDetected with Double = js.native
-  /* 27 */ val methodNotAllowed: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.methodNotAllowed with Double = js.native
-  /* 15 */ val movedPermanently: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.movedPermanently with Double = js.native
-  /* 11 */ val multiStatus: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.multiStatus with Double = js.native
-  /* 14 */ val multipleChoices: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.multipleChoices with Double = js.native
-  /* 57 */ val networkAuthenticationRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.networkAuthenticationRequired with Double = js.native
-  /* 8 */ val noContent: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.noContent with Double = js.native
-  /* 7 */ val nonAuthoritativeInformation: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.nonAuthoritativeInformation with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.none with Double = js.native
-  /* 28 */ val notAcceptable: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notAcceptable with Double = js.native
-  /* 56 */ val notExtended: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notExtended with Double = js.native
-  /* 26 */ val notFound: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notFound with Double = js.native
-  /* 48 */ val notImplemented: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notImplemented with Double = js.native
-  /* 18 */ val notModified: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.notModified with Double = js.native
-  /* 4 */ val ok: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.ok with Double = js.native
-  /* 10 */ val partialContent: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.partialContent with Double = js.native
-  /* 24 */ val paymentRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.paymentRequired with Double = js.native
-  /* 21 */ val permanentRedirect: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.permanentRedirect with Double = js.native
-  /* 34 */ val preconditionFailed: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.preconditionFailed with Double = js.native
-  /* 44 */ val preconditionRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.preconditionRequired with Double = js.native
-  /* 3 */ val processing: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.processing with Double = js.native
-  /* 29 */ val proxyAuthenticationRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.proxyAuthenticationRequired with Double = js.native
-  /* 35 */ val requestEntityTooLarge: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestEntityTooLarge with Double = js.native
-  /* 46 */ val requestHeaderFieldsTooLarge: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestHeaderFieldsTooLarge with Double = js.native
-  /* 30 */ val requestTimeout: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestTimeout with Double = js.native
-  /* 36 */ val requestUriTooLong: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestUriTooLong with Double = js.native
-  /* 38 */ val requestedRangeNotSatisfiable: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.requestedRangeNotSatisfiable with Double = js.native
-  /* 9 */ val resetContent: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.resetContent with Double = js.native
-  /* 17 */ val seeOther: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.seeOther with Double = js.native
-  /* 50 */ val serviceUnavailable: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.serviceUnavailable with Double = js.native
-  /* 2 */ val switchingProtocols: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.switchingProtocols with Double = js.native
-  /* 20 */ val temporaryRedirect: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.temporaryRedirect with Double = js.native
-  /* 45 */ val tooManyRequests: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.tooManyRequests with Double = js.native
-  /* 23 */ val unauthorized: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unauthorized with Double = js.native
-  /* 40 */ val unprocessableEntity: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unprocessableEntity with Double = js.native
-  /* 37 */ val unsupportedMediaType: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.unsupportedMediaType with Double = js.native
-  /* 43 */ val upgradeRequired: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.upgradeRequired with Double = js.native
-  /* 19 */ val useProxy: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.useProxy with Double = js.native
-  /* 53 */ val variantAlsoNegotiates: typings.winrtDashUwp.Windows.Web.Http.HttpStatusCode.variantAlsoNegotiates with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpStatusCode with Double] = js.native
+  /* 6 */ @js.native
+  object accepted extends TopLevel[accepted with Double]
+  
+  /* 12 */ @js.native
+  object alreadyReported extends TopLevel[alreadyReported with Double]
+  
+  /* 49 */ @js.native
+  object badGateway extends TopLevel[badGateway with Double]
+  
+  /* 22 */ @js.native
+  object badRequest extends TopLevel[badRequest with Double]
+  
+  /* 31 */ @js.native
+  object conflict extends TopLevel[conflict with Double]
+  
+  /* 1 */ @js.native
+  object continue extends TopLevel[continue with Double]
+  
+  /* 5 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 39 */ @js.native
+  object expectationFailed extends TopLevel[expectationFailed with Double]
+  
+  /* 42 */ @js.native
+  object failedDependency extends TopLevel[failedDependency with Double]
+  
+  /* 25 */ @js.native
+  object forbidden extends TopLevel[forbidden with Double]
+  
+  /* 16 */ @js.native
+  object found extends TopLevel[found with Double]
+  
+  /* 51 */ @js.native
+  object gatewayTimeout extends TopLevel[gatewayTimeout with Double]
+  
+  /* 32 */ @js.native
+  object gone extends TopLevel[gone with Double]
+  
+  /* 52 */ @js.native
+  object httpVersionNotSupported extends TopLevel[httpVersionNotSupported with Double]
+  
+  /* 13 */ @js.native
+  object imUsed extends TopLevel[imUsed with Double]
+  
+  /* 54 */ @js.native
+  object insufficientStorage extends TopLevel[insufficientStorage with Double]
+  
+  /* 47 */ @js.native
+  object internalServerError extends TopLevel[internalServerError with Double]
+  
+  /* 33 */ @js.native
+  object lengthRequired extends TopLevel[lengthRequired with Double]
+  
+  /* 41 */ @js.native
+  object locked extends TopLevel[locked with Double]
+  
+  /* 55 */ @js.native
+  object loopDetected extends TopLevel[loopDetected with Double]
+  
+  /* 27 */ @js.native
+  object methodNotAllowed extends TopLevel[methodNotAllowed with Double]
+  
+  /* 15 */ @js.native
+  object movedPermanently extends TopLevel[movedPermanently with Double]
+  
+  /* 11 */ @js.native
+  object multiStatus extends TopLevel[multiStatus with Double]
+  
+  /* 14 */ @js.native
+  object multipleChoices extends TopLevel[multipleChoices with Double]
+  
+  /* 57 */ @js.native
+  object networkAuthenticationRequired extends TopLevel[networkAuthenticationRequired with Double]
+  
+  /* 8 */ @js.native
+  object noContent extends TopLevel[noContent with Double]
+  
+  /* 7 */ @js.native
+  object nonAuthoritativeInformation extends TopLevel[nonAuthoritativeInformation with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 28 */ @js.native
+  object notAcceptable extends TopLevel[notAcceptable with Double]
+  
+  /* 56 */ @js.native
+  object notExtended extends TopLevel[notExtended with Double]
+  
+  /* 26 */ @js.native
+  object notFound extends TopLevel[notFound with Double]
+  
+  /* 48 */ @js.native
+  object notImplemented extends TopLevel[notImplemented with Double]
+  
+  /* 18 */ @js.native
+  object notModified extends TopLevel[notModified with Double]
+  
+  /* 4 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 10 */ @js.native
+  object partialContent extends TopLevel[partialContent with Double]
+  
+  /* 24 */ @js.native
+  object paymentRequired extends TopLevel[paymentRequired with Double]
+  
+  /* 21 */ @js.native
+  object permanentRedirect extends TopLevel[permanentRedirect with Double]
+  
+  /* 34 */ @js.native
+  object preconditionFailed extends TopLevel[preconditionFailed with Double]
+  
+  /* 44 */ @js.native
+  object preconditionRequired extends TopLevel[preconditionRequired with Double]
+  
+  /* 3 */ @js.native
+  object processing extends TopLevel[processing with Double]
+  
+  /* 29 */ @js.native
+  object proxyAuthenticationRequired extends TopLevel[proxyAuthenticationRequired with Double]
+  
+  /* 35 */ @js.native
+  object requestEntityTooLarge extends TopLevel[requestEntityTooLarge with Double]
+  
+  /* 46 */ @js.native
+  object requestHeaderFieldsTooLarge extends TopLevel[requestHeaderFieldsTooLarge with Double]
+  
+  /* 30 */ @js.native
+  object requestTimeout extends TopLevel[requestTimeout with Double]
+  
+  /* 36 */ @js.native
+  object requestUriTooLong extends TopLevel[requestUriTooLong with Double]
+  
+  /* 38 */ @js.native
+  object requestedRangeNotSatisfiable extends TopLevel[requestedRangeNotSatisfiable with Double]
+  
+  /* 9 */ @js.native
+  object resetContent extends TopLevel[resetContent with Double]
+  
+  /* 17 */ @js.native
+  object seeOther extends TopLevel[seeOther with Double]
+  
+  /* 50 */ @js.native
+  object serviceUnavailable extends TopLevel[serviceUnavailable with Double]
+  
+  /* 2 */ @js.native
+  object switchingProtocols extends TopLevel[switchingProtocols with Double]
+  
+  /* 20 */ @js.native
+  object temporaryRedirect extends TopLevel[temporaryRedirect with Double]
+  
+  /* 45 */ @js.native
+  object tooManyRequests extends TopLevel[tooManyRequests with Double]
+  
+  /* 23 */ @js.native
+  object unauthorized extends TopLevel[unauthorized with Double]
+  
+  /* 40 */ @js.native
+  object unprocessableEntity extends TopLevel[unprocessableEntity with Double]
+  
+  /* 37 */ @js.native
+  object unsupportedMediaType extends TopLevel[unsupportedMediaType with Double]
+  
+  /* 43 */ @js.native
+  object upgradeRequired extends TopLevel[upgradeRequired with Double]
+  
+  /* 19 */ @js.native
+  object useProxy extends TopLevel[useProxy with Double]
+  
+  /* 53 */ @js.native
+  object variantAlsoNegotiates extends TopLevel[variantAlsoNegotiates with Double]
+  
 }
 

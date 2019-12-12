@@ -1,5 +1,21 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ARROW3D_CIRCLE_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ARROW_DIAMOND_DISC
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.CHECKBOX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_ARROW3D_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_HOLLOWDIAMOND_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMOND_CIRCLE_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN_PARENS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_NESTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DISC_CIRCLE_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.LEFTTRIANGLE_DIAMOND_DISC
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.STAR_CIRCLE_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.UPPERALPHA_ALPHA_ROMAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.UPPERROMAN_UPPERALPHA_DIGIT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ZERODIGIT_ALPHA_ROMAN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,22 +112,52 @@ object ListPreset extends js.Object {
   @js.native
   sealed trait ZERODIGIT_ALPHA_ROMAN extends ListPreset
   
-  /* 5 */ val ARROW3D_CIRCLE_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ARROW3D_CIRCLE_SQUARE with Double = js.native
-  /* 3 */ val ARROW_DIAMOND_DISC: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ARROW_DIAMOND_DISC with Double = js.native
-  /* 2 */ val CHECKBOX: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.CHECKBOX with Double = js.native
-  /* 1 */ val DIAMONDX_ARROW3D_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_ARROW3D_SQUARE with Double = js.native
-  /* 7 */ val DIAMONDX_HOLLOWDIAMOND_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMONDX_HOLLOWDIAMOND_SQUARE with Double = js.native
-  /* 8 */ val DIAMOND_CIRCLE_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIAMOND_CIRCLE_SQUARE with Double = js.native
-  /* 9 */ val DIGIT_ALPHA_ROMAN: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN with Double = js.native
-  /* 10 */ val DIGIT_ALPHA_ROMAN_PARENS: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_ALPHA_ROMAN_PARENS with Double = js.native
-  /* 11 */ val DIGIT_NESTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DIGIT_NESTED with Double = js.native
-  /* 0 */ val DISC_CIRCLE_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.DISC_CIRCLE_SQUARE with Double = js.native
-  /* 6 */ val LEFTTRIANGLE_DIAMOND_DISC: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.LEFTTRIANGLE_DIAMOND_DISC with Double = js.native
-  /* 4 */ val STAR_CIRCLE_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.STAR_CIRCLE_SQUARE with Double = js.native
-  /* 12 */ val UPPERALPHA_ALPHA_ROMAN: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.UPPERALPHA_ALPHA_ROMAN with Double = js.native
-  /* 13 */ val UPPERROMAN_UPPERALPHA_DIGIT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.UPPERROMAN_UPPERALPHA_DIGIT with Double = js.native
-  /* 14 */ val ZERODIGIT_ALPHA_ROMAN: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ListPreset.ZERODIGIT_ALPHA_ROMAN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListPreset with Double] = js.native
+  /* 5 */ @js.native
+  object ARROW3D_CIRCLE_SQUARE extends TopLevel[ARROW3D_CIRCLE_SQUARE with Double]
+  
+  /* 3 */ @js.native
+  object ARROW_DIAMOND_DISC extends TopLevel[ARROW_DIAMOND_DISC with Double]
+  
+  /* 2 */ @js.native
+  object CHECKBOX extends TopLevel[CHECKBOX with Double]
+  
+  /* 1 */ @js.native
+  object DIAMONDX_ARROW3D_SQUARE extends TopLevel[DIAMONDX_ARROW3D_SQUARE with Double]
+  
+  /* 7 */ @js.native
+  object DIAMONDX_HOLLOWDIAMOND_SQUARE extends TopLevel[DIAMONDX_HOLLOWDIAMOND_SQUARE with Double]
+  
+  /* 8 */ @js.native
+  object DIAMOND_CIRCLE_SQUARE extends TopLevel[DIAMOND_CIRCLE_SQUARE with Double]
+  
+  /* 9 */ @js.native
+  object DIGIT_ALPHA_ROMAN extends TopLevel[DIGIT_ALPHA_ROMAN with Double]
+  
+  /* 10 */ @js.native
+  object DIGIT_ALPHA_ROMAN_PARENS extends TopLevel[DIGIT_ALPHA_ROMAN_PARENS with Double]
+  
+  /* 11 */ @js.native
+  object DIGIT_NESTED extends TopLevel[DIGIT_NESTED with Double]
+  
+  /* 0 */ @js.native
+  object DISC_CIRCLE_SQUARE extends TopLevel[DISC_CIRCLE_SQUARE with Double]
+  
+  /* 6 */ @js.native
+  object LEFTTRIANGLE_DIAMOND_DISC extends TopLevel[LEFTTRIANGLE_DIAMOND_DISC with Double]
+  
+  /* 4 */ @js.native
+  object STAR_CIRCLE_SQUARE extends TopLevel[STAR_CIRCLE_SQUARE with Double]
+  
+  /* 12 */ @js.native
+  object UPPERALPHA_ALPHA_ROMAN extends TopLevel[UPPERALPHA_ALPHA_ROMAN with Double]
+  
+  /* 13 */ @js.native
+  object UPPERROMAN_UPPERALPHA_DIGIT extends TopLevel[UPPERROMAN_UPPERALPHA_DIGIT with Double]
+  
+  /* 14 */ @js.native
+  object ZERODIGIT_ALPHA_ROMAN extends TopLevel[ZERODIGIT_ALPHA_ROMAN with Double]
+  
 }
 

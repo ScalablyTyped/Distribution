@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestHardwareSlot
+import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestSoftwareSlot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ControlChannelTriggerResourceType extends js.Object {
   @js.native
   sealed trait requestSoftwareSlot extends ControlChannelTriggerResourceType
   
-  /* 1 */ val requestHardwareSlot: typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestHardwareSlot with Double = js.native
-  /* 0 */ val requestSoftwareSlot: typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResourceType.requestSoftwareSlot with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControlChannelTriggerResourceType with Double] = js.native
+  /* 1 */ @js.native
+  object requestHardwareSlot extends TopLevel[requestHardwareSlot with Double]
+  
+  /* 0 */ @js.native
+  object requestSoftwareSlot extends TopLevel[requestSoftwareSlot with Double]
+  
 }
 

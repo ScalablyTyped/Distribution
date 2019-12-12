@@ -1,5 +1,8 @@
 package typings.bingmaps.Microsoft.Maps.DrawingTools
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polygon
+import typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polyline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ShapeType extends js.Object {
   @js.native
   sealed trait polyline extends ShapeType
   
-  /* 0 */ val polygon: typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polygon with Double = js.native
-  /* 1 */ val polyline: typings.bingmaps.Microsoft.Maps.DrawingTools.ShapeType.polyline with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShapeType with Double] = js.native
+  /* 0 */ @js.native
+  object polygon extends TopLevel[polygon with Double]
+  
+  /* 1 */ @js.native
+  object polyline extends TopLevel[polyline with Double]
+  
 }
 

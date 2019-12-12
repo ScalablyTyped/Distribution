@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.communications
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.console
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.multimedia
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MediaPlayerAudioDeviceType extends js.Object {
   @js.native
   sealed trait multimedia extends MediaPlayerAudioDeviceType
   
-  /* 2 */ val communications: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.communications with Double = js.native
-  /* 0 */ val console: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.console with Double = js.native
-  /* 1 */ val multimedia: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioDeviceType.multimedia with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaPlayerAudioDeviceType with Double] = js.native
+  /* 2 */ @js.native
+  object communications extends TopLevel[communications with Double]
+  
+  /* 0 */ @js.native
+  object console extends TopLevel[console with Double]
+  
+  /* 1 */ @js.native
+  object multimedia extends TopLevel[multimedia with Double]
+  
 }
 

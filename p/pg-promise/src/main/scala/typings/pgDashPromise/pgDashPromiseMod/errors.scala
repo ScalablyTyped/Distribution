@@ -1,8 +1,12 @@
 package typings.pgDashPromise.pgDashPromiseMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.pgDashMinify.pgDashMinifyMod.SQLParsingError
 import typings.pgDashPromise.pgDashPromiseMod.errors.QueryFileError
 import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode
+import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.multiple
+import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.noData
+import typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.notEmpty
 import typings.pgDashPromise.typescriptPgDashSubsetMod.IResult
 import typings.std.Error
 import scala.scalajs.js
@@ -95,11 +99,17 @@ object errors extends js.Object {
     @js.native
     sealed trait notEmpty extends queryResultErrorCode
     
-    /* 2 */ val multiple: typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.multiple with Double = js.native
-    /* 0 */ val noData: typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.noData with Double = js.native
-    /* 1 */ val notEmpty: typings.pgDashPromise.pgDashPromiseMod.errors.queryResultErrorCode.notEmpty with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[queryResultErrorCode with Double] = js.native
+    /* 2 */ @js.native
+    object multiple extends TopLevel[multiple with Double]
+    
+    /* 0 */ @js.native
+    object noData extends TopLevel[noData with Double]
+    
+    /* 1 */ @js.native
+    object notEmpty extends TopLevel[notEmpty with Double]
+    
   }
   
 }

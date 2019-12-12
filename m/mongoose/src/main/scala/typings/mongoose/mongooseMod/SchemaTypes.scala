@@ -2,6 +2,7 @@ package typings.mongoose.mongooseMod
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.TopLevel
 import typings.mongoose.TypeofClassArray
 import typings.mongoose.TypeofClassBoolean
 import typings.mongoose.TypeofClassBuffer
@@ -72,25 +73,6 @@ object SchemaTypes extends js.Object {
     */
   var DocumentArray: TypeofClassDocumentArray = js.native
   /*
-    * section schema/embedded.js
-    * http://mongoosejs.com/docs/api.html#schema-embedded-js
-    */
-  var Embedded: Instantiable3[
-    /* schema */ Schema[js.Any], 
-    /* key */ String, 
-    js.UndefOr[/* options */ js.Any], 
-    typings.mongoose.mongooseMod.Schema.Types.Embedded
-  ] = js.native
-  /**
-    * section schema/map.js
-    * https://mongoosejs.com/docs/schematypes.html#maps
-    */
-  var Map: Instantiable2[
-    /* key */ String, 
-    js.UndefOr[/* options */ js.Any], 
-    typings.mongoose.mongooseMod.Schema.Types.Map
-  ] = js.native
-  /*
     * section schema/mixed.js
     * http://mongoosejs.com/docs/api.html#schema-mixed-js
     */
@@ -110,5 +92,34 @@ object SchemaTypes extends js.Object {
     * http://mongoosejs.com/docs/api.html#schema-string-js
     */
   var String: TypeofClassString = js.native
+  /*
+    * section schema/embedded.js
+    * http://mongoosejs.com/docs/api.html#schema-embedded-js
+    */
+  @js.native
+  object Embedded
+    extends TopLevel[
+          Instantiable3[
+            /* schema */ Schema[js.Any], 
+            /* key */ String, 
+            js.UndefOr[/* options */ js.Any], 
+            typings.mongoose.mongooseMod.Schema.Types.Embedded
+          ]
+        ]
+  
+  /**
+    * section schema/map.js
+    * https://mongoosejs.com/docs/schematypes.html#maps
+    */
+  @js.native
+  object Map
+    extends TopLevel[
+          Instantiable2[
+            /* key */ String, 
+            js.UndefOr[/* options */ js.Any], 
+            typings.mongoose.mongooseMod.Schema.Types.Map
+          ]
+        ]
+  
 }
 

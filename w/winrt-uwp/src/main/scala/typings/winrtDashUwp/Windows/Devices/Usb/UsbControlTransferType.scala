@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.`class`
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.standard
+import typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.vendor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object UsbControlTransferType extends js.Object {
   @js.native
   sealed trait vendor extends UsbControlTransferType
   
-  /* 1 */ val `class`: typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.`class` with Double = js.native
-  /* 0 */ val standard: typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.standard with Double = js.native
-  /* 2 */ val vendor: typings.winrtDashUwp.Windows.Devices.Usb.UsbControlTransferType.vendor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UsbControlTransferType with Double] = js.native
+  /* 1 */ @js.native
+  object `class` extends TopLevel[`class` with Double]
+  
+  /* 0 */ @js.native
+  object standard extends TopLevel[standard with Double]
+  
+  /* 2 */ @js.native
+  object vendor extends TopLevel[vendor with Double]
+  
 }
 

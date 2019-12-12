@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inversify-express-utils"
-version := "6.3.2-b950b0"
+version := "6.3.2-c69315"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

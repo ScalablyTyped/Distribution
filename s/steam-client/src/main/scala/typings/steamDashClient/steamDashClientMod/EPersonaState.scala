@@ -1,5 +1,14 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Away
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Busy
+import typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToPlay
+import typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToTrade
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Max
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Offline
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Online
+import typings.steamDashClient.steamDashClientMod.EPersonaState.Snooze
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object EPersonaState extends js.Object {
   @js.native
   sealed trait Snooze extends EPersonaState
   
-  /* 3 */ val Away: typings.steamDashClient.steamDashClientMod.EPersonaState.Away with Double = js.native
-  /* 2 */ val Busy: typings.steamDashClient.steamDashClientMod.EPersonaState.Busy with Double = js.native
-  /* 6 */ val LookingToPlay: typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToPlay with Double = js.native
-  /* 5 */ val LookingToTrade: typings.steamDashClient.steamDashClientMod.EPersonaState.LookingToTrade with Double = js.native
-  /* 7 */ val Max: typings.steamDashClient.steamDashClientMod.EPersonaState.Max with Double = js.native
-  /* 0 */ val Offline: typings.steamDashClient.steamDashClientMod.EPersonaState.Offline with Double = js.native
-  /* 1 */ val Online: typings.steamDashClient.steamDashClientMod.EPersonaState.Online with Double = js.native
-  /* 4 */ val Snooze: typings.steamDashClient.steamDashClientMod.EPersonaState.Snooze with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EPersonaState with Double] = js.native
+  /* 3 */ @js.native
+  object Away extends TopLevel[Away with Double]
+  
+  /* 2 */ @js.native
+  object Busy extends TopLevel[Busy with Double]
+  
+  /* 6 */ @js.native
+  object LookingToPlay extends TopLevel[LookingToPlay with Double]
+  
+  /* 5 */ @js.native
+  object LookingToTrade extends TopLevel[LookingToTrade with Double]
+  
+  /* 7 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 0 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
+  /* 1 */ @js.native
+  object Online extends TopLevel[Online with Double]
+  
+  /* 4 */ @js.native
+  object Snooze extends TopLevel[Snooze with Double]
+  
 }
 

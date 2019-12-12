@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "couchbase"
-version := "2.4.5-dt-20190322Z-80fcc8"
+version := "2.4.5-dt-20190322Z-f6f974"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

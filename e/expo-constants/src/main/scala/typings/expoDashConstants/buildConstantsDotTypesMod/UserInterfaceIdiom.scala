@@ -1,5 +1,9 @@
 package typings.expoDashConstants.buildConstantsDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Handset
+import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Tablet
+import typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object UserInterfaceIdiom extends js.Object {
   @js.native
   sealed trait Unsupported extends UserInterfaceIdiom
   
-  /* "handset" */ val Handset: typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Handset with String = js.native
-  /* "tablet" */ val Tablet: typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Tablet with String = js.native
-  /* "unsupported" */ val Unsupported: typings.expoDashConstants.buildConstantsDotTypesMod.UserInterfaceIdiom.Unsupported with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[UserInterfaceIdiom with String] = js.native
+  /* "handset" */ @js.native
+  object Handset extends TopLevel[Handset with String]
+  
+  /* "tablet" */ @js.native
+  object Tablet extends TopLevel[Tablet with String]
+  
+  /* "unsupported" */ @js.native
+  object Unsupported extends TopLevel[Unsupported with String]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.AnchorType.Face
+import typings.expo.buildARMod.AnchorType.Image
+import typings.expo.buildARMod.AnchorType.Plane
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +26,20 @@ object AnchorType extends js.Object {
   @js.native
   sealed trait Plane extends AnchorType
   
-  /* "ARAnchor" */ val Anchor: typings.expo.buildARMod.AnchorType.Anchor with String = js.native
-  /* "ARFaceAnchor" */ val Face: typings.expo.buildARMod.AnchorType.Face with String = js.native
-  /* "ARImageAnchor" */ val Image: typings.expo.buildARMod.AnchorType.Image with String = js.native
-  /* "ARPlaneAnchor" */ val Plane: typings.expo.buildARMod.AnchorType.Plane with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AnchorType with String] = js.native
+  /* "ARAnchor" */ @js.native
+  object Anchor
+    extends TopLevel[typings.expo.buildARMod.AnchorType.Anchor with String]
+  
+  /* "ARFaceAnchor" */ @js.native
+  object Face extends TopLevel[Face with String]
+  
+  /* "ARImageAnchor" */ @js.native
+  object Image extends TopLevel[Image with String]
+  
+  /* "ARPlaneAnchor" */ @js.native
+  object Plane extends TopLevel[Plane with String]
+  
 }
 

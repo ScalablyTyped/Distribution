@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Textmode.FullPath
+import typings.ejDotWebDotAll.ej.Textmode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object Textmode extends js.Object {
   @js.native
   sealed trait None extends Textmode
   
-  /* 1 */ val FullPath: typings.ejDotWebDotAll.ej.Textmode.FullPath with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.Textmode.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Textmode with Double] = js.native
+  /* 1 */ @js.native
+  object FullPath extends TopLevel[FullPath with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

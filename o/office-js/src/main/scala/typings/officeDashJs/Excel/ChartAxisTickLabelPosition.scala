@@ -1,5 +1,10 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartAxisTickLabelPosition.high
+import typings.officeDashJs.Excel.ChartAxisTickLabelPosition.low
+import typings.officeDashJs.Excel.ChartAxisTickLabelPosition.nextToAxis
+import typings.officeDashJs.Excel.ChartAxisTickLabelPosition.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ChartAxisTickLabelPosition extends js.Object {
   @js.native
   sealed trait none extends ChartAxisTickLabelPosition
   
-  /* "High" */ val high: typings.officeDashJs.Excel.ChartAxisTickLabelPosition.high with String = js.native
-  /* "Low" */ val low: typings.officeDashJs.Excel.ChartAxisTickLabelPosition.low with String = js.native
-  /* "NextToAxis" */ val nextToAxis: typings.officeDashJs.Excel.ChartAxisTickLabelPosition.nextToAxis with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.ChartAxisTickLabelPosition.none with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisTickLabelPosition with String] = js.native
+  /* "High" */ @js.native
+  object high extends TopLevel[high with String]
+  
+  /* "Low" */ @js.native
+  object low extends TopLevel[low with String]
+  
+  /* "NextToAxis" */ @js.native
+  object nextToAxis extends TopLevel[nextToAxis with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
 }
 

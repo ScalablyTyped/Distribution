@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS_XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object AddGrammarConstants extends js.Object {
     @js.native
     sealed trait APPLICATION_SRGS_XML extends ContentType
     
-    /* "application/srgs" */ val APPLICATION_SRGS: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS with String = js.native
-    /* "application/srgs+xml" */ val APPLICATION_SRGS_XML: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.AddGrammarConstants.ContentType.APPLICATION_SRGS_XML with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ContentType with String] = js.native
+    /* "application/srgs" */ @js.native
+    object APPLICATION_SRGS extends TopLevel[APPLICATION_SRGS with String]
+    
+    /* "application/srgs+xml" */ @js.native
+    object APPLICATION_SRGS_XML extends TopLevel[APPLICATION_SRGS_XML with String]
+    
   }
   
 }

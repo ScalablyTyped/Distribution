@@ -1,5 +1,14 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.RangeValueType.boolean
+import typings.officeDashJs.Excel.RangeValueType.double
+import typings.officeDashJs.Excel.RangeValueType.empty
+import typings.officeDashJs.Excel.RangeValueType.error
+import typings.officeDashJs.Excel.RangeValueType.integer
+import typings.officeDashJs.Excel.RangeValueType.richValue
+import typings.officeDashJs.Excel.RangeValueType.string
+import typings.officeDashJs.Excel.RangeValueType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object RangeValueType extends js.Object {
   @js.native
   sealed trait unknown extends RangeValueType
   
-  /* "Boolean" */ val boolean: typings.officeDashJs.Excel.RangeValueType.boolean with String = js.native
-  /* "Double" */ val double: typings.officeDashJs.Excel.RangeValueType.double with String = js.native
-  /* "Empty" */ val empty: typings.officeDashJs.Excel.RangeValueType.empty with String = js.native
-  /* "Error" */ val error: typings.officeDashJs.Excel.RangeValueType.error with String = js.native
-  /* "Integer" */ val integer: typings.officeDashJs.Excel.RangeValueType.integer with String = js.native
-  /* "RichValue" */ val richValue: typings.officeDashJs.Excel.RangeValueType.richValue with String = js.native
-  /* "String" */ val string: typings.officeDashJs.Excel.RangeValueType.string with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJs.Excel.RangeValueType.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RangeValueType with String] = js.native
+  /* "Boolean" */ @js.native
+  object boolean extends TopLevel[boolean with String]
+  
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "Empty" */ @js.native
+  object empty extends TopLevel[empty with String]
+  
+  /* "Error" */ @js.native
+  object error extends TopLevel[error with String]
+  
+  /* "Integer" */ @js.native
+  object integer extends TopLevel[integer with String]
+  
+  /* "RichValue" */ @js.native
+  object richValue extends TopLevel[richValue with String]
+  
+  /* "String" */ @js.native
+  object string extends TopLevel[string with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

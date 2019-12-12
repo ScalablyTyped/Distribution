@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppWriteAccess.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppWriteAccess.systemOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object AppointmentCalendarOtherAppWriteAccess extends js.Object {
   @js.native
   sealed trait systemOnly extends AppointmentCalendarOtherAppWriteAccess
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppWriteAccess.none with Double = js.native
-  /* 1 */ val systemOnly: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentCalendarOtherAppWriteAccess.systemOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentCalendarOtherAppWriteAccess with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object systemOnly extends TopLevel[systemOnly with Double]
+  
 }
 

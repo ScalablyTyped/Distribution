@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageState.licenseInvalid
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageState.modified
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageState.normal
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageState.tampered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PackageState extends js.Object {
   @js.native
   sealed trait tampered extends PackageState
   
-  /* 1 */ val licenseInvalid: typings.winrtDashUwp.Windows.Management.Deployment.PackageState.licenseInvalid with Double = js.native
-  /* 2 */ val modified: typings.winrtDashUwp.Windows.Management.Deployment.PackageState.modified with Double = js.native
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.Management.Deployment.PackageState.normal with Double = js.native
-  /* 3 */ val tampered: typings.winrtDashUwp.Windows.Management.Deployment.PackageState.tampered with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PackageState with Double] = js.native
+  /* 1 */ @js.native
+  object licenseInvalid extends TopLevel[licenseInvalid with Double]
+  
+  /* 2 */ @js.native
+  object modified extends TopLevel[modified with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 3 */ @js.native
+  object tampered extends TopLevel[tampered with Double]
+  
 }
 

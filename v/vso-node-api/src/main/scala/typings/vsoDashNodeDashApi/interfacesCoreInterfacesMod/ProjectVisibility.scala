@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Organization
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Private
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Public
+import typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Unchanged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ProjectVisibility extends js.Object {
   @js.native
   sealed trait Unchanged extends ProjectVisibility
   
-  /* 1 */ val Organization: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Organization with Double = js.native
-  /* 0 */ val Private: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Private with Double = js.native
-  /* 2 */ val Public: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Public with Double = js.native
-  /* -1 */ val Unchanged: typings.vsoDashNodeDashApi.interfacesCoreInterfacesMod.ProjectVisibility.Unchanged with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProjectVisibility with Double] = js.native
+  /* 1 */ @js.native
+  object Organization extends TopLevel[Organization with Double]
+  
+  /* 0 */ @js.native
+  object Private extends TopLevel[Private with Double]
+  
+  /* 2 */ @js.native
+  object Public extends TopLevel[Public with Double]
+  
+  /* -1 */ @js.native
+  object Unchanged extends TopLevel[Unchanged with Double]
+  
 }
 

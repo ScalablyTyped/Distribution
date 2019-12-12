@@ -1,5 +1,9 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NORMAL
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NUMBER
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object JSType extends js.Object {
   @js.native
   sealed trait JS_STRING extends JSType
   
-  /* 0 */ val JS_NORMAL: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NORMAL with Double = js.native
-  /* 2 */ val JS_NUMBER: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_NUMBER with Double = js.native
-  /* 1 */ val JS_STRING: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldOptions.JSType.JS_STRING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[JSType with Double] = js.native
+  /* 0 */ @js.native
+  object JS_NORMAL extends TopLevel[JS_NORMAL with Double]
+  
+  /* 2 */ @js.native
+  object JS_NUMBER extends TopLevel[JS_NUMBER with Double]
+  
+  /* 1 */ @js.native
+  object JS_STRING extends TopLevel[JS_STRING with Double]
+  
 }
 

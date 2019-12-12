@@ -1,5 +1,11 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ShapeType.geometricShape
+import typings.officeDashJsDashPreview.Excel.ShapeType.group
+import typings.officeDashJsDashPreview.Excel.ShapeType.image
+import typings.officeDashJsDashPreview.Excel.ShapeType.line
+import typings.officeDashJsDashPreview.Excel.ShapeType.unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ShapeType extends js.Object {
   @js.native
   sealed trait unsupported extends ShapeType
   
-  /* "GeometricShape" */ val geometricShape: typings.officeDashJsDashPreview.Excel.ShapeType.geometricShape with String = js.native
-  /* "Group" */ val group: typings.officeDashJsDashPreview.Excel.ShapeType.group with String = js.native
-  /* "Image" */ val image: typings.officeDashJsDashPreview.Excel.ShapeType.image with String = js.native
-  /* "Line" */ val line: typings.officeDashJsDashPreview.Excel.ShapeType.line with String = js.native
-  /* "Unsupported" */ val unsupported: typings.officeDashJsDashPreview.Excel.ShapeType.unsupported with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeType with String] = js.native
+  /* "GeometricShape" */ @js.native
+  object geometricShape extends TopLevel[geometricShape with String]
+  
+  /* "Group" */ @js.native
+  object group extends TopLevel[group with String]
+  
+  /* "Image" */ @js.native
+  object image extends TopLevel[image with String]
+  
+  /* "Line" */ @js.native
+  object line extends TopLevel[line with String]
+  
+  /* "Unsupported" */ @js.native
+  object unsupported extends TopLevel[unsupported with String]
+  
 }
 

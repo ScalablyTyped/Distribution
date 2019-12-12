@@ -1,5 +1,7 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestReviewFileType.ChangeEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +18,16 @@ object GitPullRequestReviewFileType extends js.Object {
   @js.native
   sealed trait ChangeEntry extends GitPullRequestReviewFileType
   
-  /* 1 */ val Attachment: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestReviewFileType.Attachment with Double = js.native
-  /* 0 */ val ChangeEntry: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestReviewFileType.ChangeEntry with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitPullRequestReviewFileType with Double] = js.native
+  /* 1 */ @js.native
+  object Attachment
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitPullRequestReviewFileType.Attachment with Double
+        ]
+  
+  /* 0 */ @js.native
+  object ChangeEntry extends TopLevel[ChangeEntry with Double]
+  
 }
 

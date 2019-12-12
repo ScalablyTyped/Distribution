@@ -1,5 +1,7 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_Error.ModuleNotExists
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object EnumDWT_Error extends js.Object {
   @js.native
   sealed trait ModuleNotExists extends EnumDWT_Error
   
-  /* -2371 */ val ModuleNotExists: typings.dwt.EnumDWT_Error.ModuleNotExists with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_Error with Double] = js.native
+  /* -2371 */ @js.native
+  object ModuleNotExists extends TopLevel[ModuleNotExists with Double]
+  
 }
 

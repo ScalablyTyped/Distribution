@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "orientjs"
-version := "3.0-dt-20191108Z-493aa1"
+version := "3.0-dt-20191108Z-e32e19"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

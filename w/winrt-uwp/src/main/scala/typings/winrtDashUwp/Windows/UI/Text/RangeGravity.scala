@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.backward
+import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.forward
+import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.inward
+import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.outward
+import typings.winrtDashUwp.Windows.UI.Text.RangeGravity.uiBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object RangeGravity extends js.Object {
   @js.native
   sealed trait uiBehavior extends RangeGravity
   
-  /* 1 */ val backward: typings.winrtDashUwp.Windows.UI.Text.RangeGravity.backward with Double = js.native
-  /* 2 */ val forward: typings.winrtDashUwp.Windows.UI.Text.RangeGravity.forward with Double = js.native
-  /* 3 */ val inward: typings.winrtDashUwp.Windows.UI.Text.RangeGravity.inward with Double = js.native
-  /* 4 */ val outward: typings.winrtDashUwp.Windows.UI.Text.RangeGravity.outward with Double = js.native
-  /* 0 */ val uiBehavior: typings.winrtDashUwp.Windows.UI.Text.RangeGravity.uiBehavior with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RangeGravity with Double] = js.native
+  /* 1 */ @js.native
+  object backward extends TopLevel[backward with Double]
+  
+  /* 2 */ @js.native
+  object forward extends TopLevel[forward with Double]
+  
+  /* 3 */ @js.native
+  object inward extends TopLevel[inward with Double]
+  
+  /* 4 */ @js.native
+  object outward extends TopLevel[outward with Double]
+  
+  /* 0 */ @js.native
+  object uiBehavior extends TopLevel[uiBehavior with Double]
+  
 }
 

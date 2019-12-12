@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.bottom
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.end
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.start
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Position extends js.Object {
   @js.native
   sealed trait top extends Position
   
-  /* 1 */ val bottom: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.bottom with Double = js.native
-  /* 3 */ val end: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.end with Double = js.native
-  /* 2 */ val start: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.start with Double = js.native
-  /* 0 */ val top: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.Position.top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Position with Double] = js.native
+  /* 1 */ @js.native
+  object bottom extends TopLevel[bottom with Double]
+  
+  /* 3 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 2 */ @js.native
+  object start extends TopLevel[start with Double]
+  
+  /* 0 */ @js.native
+  object top extends TopLevel[top with Double]
+  
 }
 

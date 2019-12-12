@@ -1,5 +1,16 @@
 package typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.CONNECT
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.DELETE
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.GET
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.HEAD
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.OPTIONS
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PATCH
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.POST
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PUT
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.TRACE
+import typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,17 +52,37 @@ object Method extends js.Object {
   @js.native
   sealed trait UNKNOWN extends Method
   
-  /* 8 */ val CONNECT: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.CONNECT with Double = js.native
-  /* 6 */ val DELETE: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.DELETE with Double = js.native
-  /* 2 */ val GET: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.GET with Double = js.native
-  /* 3 */ val HEAD: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.HEAD with Double = js.native
-  /* 1 */ val OPTIONS: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.OPTIONS with Double = js.native
-  /* 9 */ val PATCH: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PATCH with Double = js.native
-  /* 4 */ val POST: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.POST with Double = js.native
-  /* 5 */ val PUT: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.PUT with Double = js.native
-  /* 7 */ val TRACE: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.TRACE with Double = js.native
-  /* 0 */ val UNKNOWN: typings.apolloDashEngineDashReportingDashProtobuf.distProtobufMod.Trace.HTTP.Method.UNKNOWN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Method with Double] = js.native
+  /* 8 */ @js.native
+  object CONNECT extends TopLevel[CONNECT with Double]
+  
+  /* 6 */ @js.native
+  object DELETE extends TopLevel[DELETE with Double]
+  
+  /* 2 */ @js.native
+  object GET extends TopLevel[GET with Double]
+  
+  /* 3 */ @js.native
+  object HEAD extends TopLevel[HEAD with Double]
+  
+  /* 1 */ @js.native
+  object OPTIONS extends TopLevel[OPTIONS with Double]
+  
+  /* 9 */ @js.native
+  object PATCH extends TopLevel[PATCH with Double]
+  
+  /* 4 */ @js.native
+  object POST extends TopLevel[POST with Double]
+  
+  /* 5 */ @js.native
+  object PUT extends TopLevel[PUT with Double]
+  
+  /* 7 */ @js.native
+  object TRACE extends TopLevel[TRACE with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
 }
 

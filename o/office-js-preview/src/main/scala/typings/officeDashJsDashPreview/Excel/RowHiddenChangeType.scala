@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.hidden
+import typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.unhidden
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,9 +33,13 @@ object RowHiddenChangeType extends js.Object {
   @js.native
   sealed trait unhidden extends RowHiddenChangeType
   
-  /* "Hidden" */ val hidden: typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.hidden with String = js.native
-  /* "Unhidden" */ val unhidden: typings.officeDashJsDashPreview.Excel.RowHiddenChangeType.unhidden with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RowHiddenChangeType with String] = js.native
+  /* "Hidden" */ @js.native
+  object hidden extends TopLevel[hidden with String]
+  
+  /* "Unhidden" */ @js.native
+  object unhidden extends TopLevel[unhidden with String]
+  
 }
 

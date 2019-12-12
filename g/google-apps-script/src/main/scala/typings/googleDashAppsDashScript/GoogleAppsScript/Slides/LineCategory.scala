@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.BENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.CURVED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.STRAIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,11 +33,19 @@ object LineCategory extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends LineCategory
   
-  /* 2 */ val BENT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.BENT with Double = js.native
-  /* 3 */ val CURVED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.CURVED with Double = js.native
-  /* 1 */ val STRAIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.STRAIGHT with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineCategory.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LineCategory with Double] = js.native
+  /* 2 */ @js.native
+  object BENT extends TopLevel[BENT with Double]
+  
+  /* 3 */ @js.native
+  object CURVED extends TopLevel[CURVED with Double]
+  
+  /* 1 */ @js.native
+  object STRAIGHT extends TopLevel[STRAIGHT with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

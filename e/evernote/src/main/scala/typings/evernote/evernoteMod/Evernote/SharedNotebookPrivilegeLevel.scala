@@ -1,5 +1,12 @@
 package typings.evernote.evernoteMod.Evernote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.BUSINESS_FULL_ACCESS
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.FULL_ACCESS
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.GROUP
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.MODIFY_NOTEBOOK_PLUS_ACTIVITY
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK
+import typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK_PLUS_ACTIVITY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,13 +64,25 @@ object SharedNotebookPrivilegeLevel extends js.Object {
   @js.native
   sealed trait READ_NOTEBOOK_PLUS_ACTIVITY extends SharedNotebookPrivilegeLevel
   
-  /* 5 */ val BUSINESS_FULL_ACCESS: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.BUSINESS_FULL_ACCESS with Double = js.native
-  /* 4 */ val FULL_ACCESS: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.FULL_ACCESS with Double = js.native
-  /* 3 */ val GROUP: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.GROUP with Double = js.native
-  /* 1 */ val MODIFY_NOTEBOOK_PLUS_ACTIVITY: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.MODIFY_NOTEBOOK_PLUS_ACTIVITY with Double = js.native
-  /* 0 */ val READ_NOTEBOOK: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK with Double = js.native
-  /* 2 */ val READ_NOTEBOOK_PLUS_ACTIVITY: typings.evernote.evernoteMod.Evernote.SharedNotebookPrivilegeLevel.READ_NOTEBOOK_PLUS_ACTIVITY with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SharedNotebookPrivilegeLevel with Double] = js.native
+  /* 5 */ @js.native
+  object BUSINESS_FULL_ACCESS extends TopLevel[BUSINESS_FULL_ACCESS with Double]
+  
+  /* 4 */ @js.native
+  object FULL_ACCESS extends TopLevel[FULL_ACCESS with Double]
+  
+  /* 3 */ @js.native
+  object GROUP extends TopLevel[GROUP with Double]
+  
+  /* 1 */ @js.native
+  object MODIFY_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[MODIFY_NOTEBOOK_PLUS_ACTIVITY with Double]
+  
+  /* 0 */ @js.native
+  object READ_NOTEBOOK extends TopLevel[READ_NOTEBOOK with Double]
+  
+  /* 2 */ @js.native
+  object READ_NOTEBOOK_PLUS_ACTIVITY extends TopLevel[READ_NOTEBOOK_PLUS_ACTIVITY with Double]
+  
 }
 

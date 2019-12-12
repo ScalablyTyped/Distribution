@@ -1,5 +1,9 @@
 package typings.amazonDashConnectDashStreams.connect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.amazonDashConnectDashStreams.connect.EndpointType.AGENT
+import typings.amazonDashConnectDashStreams.connect.EndpointType.PHONE_NUMBER
+import typings.amazonDashConnectDashStreams.connect.EndpointType.QUEUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EndpointType extends js.Object {
   @js.native
   sealed trait QUEUE extends EndpointType
   
-  /* "agent" */ val AGENT: typings.amazonDashConnectDashStreams.connect.EndpointType.AGENT with String = js.native
-  /* "phone_number" */ val PHONE_NUMBER: typings.amazonDashConnectDashStreams.connect.EndpointType.PHONE_NUMBER with String = js.native
-  /* "queue" */ val QUEUE: typings.amazonDashConnectDashStreams.connect.EndpointType.QUEUE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EndpointType with String] = js.native
+  /* "agent" */ @js.native
+  object AGENT extends TopLevel[AGENT with String]
+  
+  /* "phone_number" */ @js.native
+  object PHONE_NUMBER extends TopLevel[PHONE_NUMBER with String]
+  
+  /* "queue" */ @js.native
+  object QUEUE extends TopLevel[QUEUE with String]
+  
 }
 

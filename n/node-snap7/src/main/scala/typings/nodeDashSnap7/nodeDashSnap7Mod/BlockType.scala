@@ -1,5 +1,13 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_DB
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_FB
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_FC
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_OB
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SDB
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SFB
+import typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SFC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object BlockType extends js.Object {
   @js.native
   sealed trait Block_SFC extends BlockType
   
-  /* 0x41 */ val Block_DB: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_DB with Double = js.native
-  /* 0x45 */ val Block_FB: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_FB with Double = js.native
-  /* 0x43 */ val Block_FC: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_FC with Double = js.native
-  /* 0x38 */ val Block_OB: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_OB with Double = js.native
-  /* 0x42 */ val Block_SDB: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SDB with Double = js.native
-  /* 0x46 */ val Block_SFB: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SFB with Double = js.native
-  /* 0x44 */ val Block_SFC: typings.nodeDashSnap7.nodeDashSnap7Mod.BlockType.Block_SFC with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlockType with Double] = js.native
+  /* 0x41 */ @js.native
+  object Block_DB extends TopLevel[Block_DB with Double]
+  
+  /* 0x45 */ @js.native
+  object Block_FB extends TopLevel[Block_FB with Double]
+  
+  /* 0x43 */ @js.native
+  object Block_FC extends TopLevel[Block_FC with Double]
+  
+  /* 0x38 */ @js.native
+  object Block_OB extends TopLevel[Block_OB with Double]
+  
+  /* 0x42 */ @js.native
+  object Block_SDB extends TopLevel[Block_SDB with Double]
+  
+  /* 0x46 */ @js.native
+  object Block_SFB extends TopLevel[Block_SFB with Double]
+  
+  /* 0x44 */ @js.native
+  object Block_SFC extends TopLevel[Block_SFC with Double]
+  
 }
 

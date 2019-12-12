@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xmlbuilder"
-version := "13.0.2-db57c2"
+version := "13.0.2-d2c432"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

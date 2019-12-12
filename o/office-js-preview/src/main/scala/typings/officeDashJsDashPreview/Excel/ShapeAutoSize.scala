@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeMixed
+import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeNone
+import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeShapeToFitText
+import typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeTextToFitShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,11 +53,19 @@ object ShapeAutoSize extends js.Object {
   @js.native
   sealed trait autoSizeTextToFitShape extends ShapeAutoSize
   
-  /* "AutoSizeMixed" */ val autoSizeMixed: typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeMixed with String = js.native
-  /* "AutoSizeNone" */ val autoSizeNone: typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeNone with String = js.native
-  /* "AutoSizeShapeToFitText" */ val autoSizeShapeToFitText: typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeShapeToFitText with String = js.native
-  /* "AutoSizeTextToFitShape" */ val autoSizeTextToFitShape: typings.officeDashJsDashPreview.Excel.ShapeAutoSize.autoSizeTextToFitShape with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeAutoSize with String] = js.native
+  /* "AutoSizeMixed" */ @js.native
+  object autoSizeMixed extends TopLevel[autoSizeMixed with String]
+  
+  /* "AutoSizeNone" */ @js.native
+  object autoSizeNone extends TopLevel[autoSizeNone with String]
+  
+  /* "AutoSizeShapeToFitText" */ @js.native
+  object autoSizeShapeToFitText extends TopLevel[autoSizeShapeToFitText with String]
+  
+  /* "AutoSizeTextToFitShape" */ @js.native
+  object autoSizeTextToFitShape extends TopLevel[autoSizeTextToFitShape with String]
+  
 }
 

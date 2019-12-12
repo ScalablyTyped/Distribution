@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapFlipRotation.TWFR_BOOK
+import typings.dwt.EnumDWT_CapFlipRotation.TWFR_FANFOLD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EnumDWT_CapFlipRotation extends js.Object {
   @js.native
   sealed trait TWFR_FANFOLD extends EnumDWT_CapFlipRotation
   
-  /* 0 */ val TWFR_BOOK: typings.dwt.EnumDWT_CapFlipRotation.TWFR_BOOK with Double = js.native
-  /* 1 */ val TWFR_FANFOLD: typings.dwt.EnumDWT_CapFlipRotation.TWFR_FANFOLD with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapFlipRotation with Double] = js.native
+  /* 0 */ @js.native
+  object TWFR_BOOK extends TopLevel[TWFR_BOOK with Double]
+  
+  /* 1 */ @js.native
+  object TWFR_FANFOLD extends TopLevel[TWFR_FANFOLD with Double]
+  
 }
 

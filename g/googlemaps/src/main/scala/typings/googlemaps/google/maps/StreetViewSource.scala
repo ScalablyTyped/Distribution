@@ -1,5 +1,8 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.StreetViewSource.DEFAULT
+import typings.googlemaps.google.maps.StreetViewSource.OUTDOOR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object StreetViewSource extends js.Object {
   @js.native
   sealed trait OUTDOOR extends StreetViewSource
   
-  /* "default" */ val DEFAULT: typings.googlemaps.google.maps.StreetViewSource.DEFAULT with String = js.native
-  /* "outdoor" */ val OUTDOOR: typings.googlemaps.google.maps.StreetViewSource.OUTDOOR with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[StreetViewSource with String] = js.native
+  /* "default" */ @js.native
+  object DEFAULT extends TopLevel[DEFAULT with String]
+  
+  /* "outdoor" */ @js.native
+  object OUTDOOR extends TopLevel[OUTDOOR with String]
+  
 }
 

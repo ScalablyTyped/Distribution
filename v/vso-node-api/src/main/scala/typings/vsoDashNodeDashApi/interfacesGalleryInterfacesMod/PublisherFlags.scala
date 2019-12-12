@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.Disabled
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.ServiceFlags
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.UnChanged
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.Verified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object PublisherFlags extends js.Object {
   @js.native
   sealed trait Verified extends PublisherFlags
   
-  /* 1 */ val Disabled: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.Disabled with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.None with Double = js.native
-  /* 3 */ val ServiceFlags: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.ServiceFlags with Double = js.native
-  /* 1073741824 */ val UnChanged: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.UnChanged with Double = js.native
-  /* 2 */ val Verified: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PublisherFlags.Verified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PublisherFlags with Double] = js.native
+  /* 1 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object ServiceFlags extends TopLevel[ServiceFlags with Double]
+  
+  /* 1073741824 */ @js.native
+  object UnChanged extends TopLevel[UnChanged with Double]
+  
+  /* 2 */ @js.native
+  object Verified extends TopLevel[Verified with Double]
+  
 }
 

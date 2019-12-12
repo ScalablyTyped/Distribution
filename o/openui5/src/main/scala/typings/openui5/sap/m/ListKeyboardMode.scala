@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.ListKeyboardMode.Edit
+import typings.openui5.sap.m.ListKeyboardMode.Navigation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ListKeyboardMode extends js.Object {
   @js.native
   sealed trait Navigation extends ListKeyboardMode
   
-  /* 0 */ val Edit: typings.openui5.sap.m.ListKeyboardMode.Edit with Double = js.native
-  /* 1 */ val Navigation: typings.openui5.sap.m.ListKeyboardMode.Navigation with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListKeyboardMode with Double] = js.native
+  /* 0 */ @js.native
+  object Edit extends TopLevel[Edit with Double]
+  
+  /* 1 */ @js.native
+  object Navigation extends TopLevel[Navigation with Double]
+  
 }
 

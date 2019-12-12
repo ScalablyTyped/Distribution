@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Rectangle
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.RoundedRectangle
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object IndicatorTypes extends js.Object {
   @js.native
   sealed trait Text extends IndicatorTypes
   
-  /* 1 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Circle with Double = js.native
-  /* 0 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Rectangle with Double = js.native
-  /* 2 */ val RoundedRectangle: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.RoundedRectangle with Double = js.native
-  /* 3 */ val Text: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.IndicatorTypes.Text with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IndicatorTypes with Double] = js.native
+  /* 1 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 0 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
+  /* 2 */ @js.native
+  object RoundedRectangle extends TopLevel[RoundedRectangle with Double]
+  
+  /* 3 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
 }
 

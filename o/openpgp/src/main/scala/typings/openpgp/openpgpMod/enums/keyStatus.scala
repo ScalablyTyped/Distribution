@@ -1,5 +1,11 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.keyStatus.expired
+import typings.openpgp.openpgpMod.enums.keyStatus.invalid
+import typings.openpgp.openpgpMod.enums.keyStatus.no_self_cert
+import typings.openpgp.openpgpMod.enums.keyStatus.revoked
+import typings.openpgp.openpgpMod.enums.keyStatus.valid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object keyStatus extends js.Object {
   @js.native
   sealed trait valid extends keyStatus
   
-  /* 1 */ val expired: typings.openpgp.openpgpMod.enums.keyStatus.expired with Double = js.native
-  /* 0 */ val invalid: typings.openpgp.openpgpMod.enums.keyStatus.invalid with Double = js.native
-  /* 4 */ val no_self_cert: typings.openpgp.openpgpMod.enums.keyStatus.no_self_cert with Double = js.native
-  /* 2 */ val revoked: typings.openpgp.openpgpMod.enums.keyStatus.revoked with Double = js.native
-  /* 3 */ val valid: typings.openpgp.openpgpMod.enums.keyStatus.valid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[keyStatus with Double] = js.native
+  /* 1 */ @js.native
+  object expired extends TopLevel[expired with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 4 */ @js.native
+  object no_self_cert extends TopLevel[no_self_cert with Double]
+  
+  /* 2 */ @js.native
+  object revoked extends TopLevel[revoked with Double]
+  
+  /* 3 */ @js.native
+  object valid extends TopLevel[valid with Double]
+  
 }
 

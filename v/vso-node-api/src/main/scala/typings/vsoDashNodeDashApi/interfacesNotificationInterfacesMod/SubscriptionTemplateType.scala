@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Both
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.None
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Team
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object SubscriptionTemplateType extends js.Object {
   @js.native
   sealed trait User extends SubscriptionTemplateType
   
-  /* 2 */ val Both: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Both with Double = js.native
-  /* 3 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.None with Double = js.native
-  /* 1 */ val Team: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.Team with Double = js.native
-  /* 0 */ val User: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionTemplateType.User with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionTemplateType with Double] = js.native
+  /* 2 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 3 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Team extends TopLevel[Team with Double]
+  
+  /* 0 */ @js.native
+  object User extends TopLevel[User with Double]
+  
 }
 

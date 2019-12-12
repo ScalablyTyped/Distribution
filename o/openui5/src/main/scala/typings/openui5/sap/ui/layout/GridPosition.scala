@@ -1,5 +1,9 @@
 package typings.openui5.sap.ui.layout
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.layout.GridPosition.Center
+import typings.openui5.sap.ui.layout.GridPosition.Left
+import typings.openui5.sap.ui.layout.GridPosition.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object GridPosition extends js.Object {
   @js.native
   sealed trait Right extends GridPosition
   
-  /* 0 */ val Center: typings.openui5.sap.ui.layout.GridPosition.Center with Double = js.native
-  /* 1 */ val Left: typings.openui5.sap.ui.layout.GridPosition.Left with Double = js.native
-  /* 2 */ val Right: typings.openui5.sap.ui.layout.GridPosition.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GridPosition with Double] = js.native
+  /* 0 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 1 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 2 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.UI.TapBehavior.directSelect
+import typings.winjs.WinJS.UI.TapBehavior.invokeOnly
+import typings.winjs.WinJS.UI.TapBehavior.none
+import typings.winjs.WinJS.UI.TapBehavior.toggleSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object TapBehavior extends js.Object {
   @js.native
   sealed trait toggleSelect extends TapBehavior
   
-  /* 0 */ val directSelect: typings.winjs.WinJS.UI.TapBehavior.directSelect with Double = js.native
-  /* 2 */ val invokeOnly: typings.winjs.WinJS.UI.TapBehavior.invokeOnly with Double = js.native
-  /* 3 */ val none: typings.winjs.WinJS.UI.TapBehavior.none with Double = js.native
-  /* 1 */ val toggleSelect: typings.winjs.WinJS.UI.TapBehavior.toggleSelect with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TapBehavior with Double] = js.native
+  /* 0 */ @js.native
+  object directSelect extends TopLevel[directSelect with Double]
+  
+  /* 2 */ @js.native
+  object invokeOnly extends TopLevel[invokeOnly with Double]
+  
+  /* 3 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object toggleSelect extends TopLevel[toggleSelect with Double]
+  
 }
 

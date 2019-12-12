@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.default
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.notAvailable
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.oneSided
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.printerCustom
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedLongEdge
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedShortEdge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object PrintDuplex extends js.Object {
   @js.native
   sealed trait twoSidedShortEdge extends PrintDuplex
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.default with Double = js.native
-  /* 1 */ val notAvailable: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.notAvailable with Double = js.native
-  /* 3 */ val oneSided: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.oneSided with Double = js.native
-  /* 2 */ val printerCustom: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.printerCustom with Double = js.native
-  /* 5 */ val twoSidedLongEdge: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedLongEdge with Double = js.native
-  /* 4 */ val twoSidedShortEdge: typings.winrtDashUwp.Windows.Graphics.Printing.PrintDuplex.twoSidedShortEdge with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintDuplex with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 3 */ @js.native
+  object oneSided extends TopLevel[oneSided with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 5 */ @js.native
+  object twoSidedLongEdge extends TopLevel[twoSidedLongEdge with Double]
+  
+  /* 4 */ @js.native
+  object twoSidedShortEdge extends TopLevel[twoSidedShortEdge with Double]
+  
 }
 

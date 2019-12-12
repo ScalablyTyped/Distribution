@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapPixelFlavor.TWPF_CHOCOLATE
+import typings.dwt.EnumDWT_CapPixelFlavor.TWPF_VANILLA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EnumDWT_CapPixelFlavor extends js.Object {
   @js.native
   sealed trait TWPF_VANILLA extends EnumDWT_CapPixelFlavor
   
-  /* 0 */ val TWPF_CHOCOLATE: typings.dwt.EnumDWT_CapPixelFlavor.TWPF_CHOCOLATE with Double = js.native
-  /* 1 */ val TWPF_VANILLA: typings.dwt.EnumDWT_CapPixelFlavor.TWPF_VANILLA with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapPixelFlavor with Double] = js.native
+  /* 0 */ @js.native
+  object TWPF_CHOCOLATE extends TopLevel[TWPF_CHOCOLATE with Double]
+  
+  /* 1 */ @js.native
+  object TWPF_VANILLA extends TopLevel[TWPF_VANILLA with Double]
+  
 }
 

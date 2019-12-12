@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-addons-update"
-version := "0.14-dt-20190322Z-6e5dbe"
+version := "0.14-dt-20190322Z-7548f5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

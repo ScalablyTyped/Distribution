@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_256
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,14 +39,24 @@ object MacAlgorithm extends js.Object {
   sealed trait HMAC_SHA_512
     extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm
   
-  /* 0 */ val HMAC_MD5: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_MD5 with Double = js.native
-  /* 1 */ val HMAC_SHA_1: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_1 with Double = js.native
-  /* 2 */ val HMAC_SHA_256: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_256 with Double = js.native
-  /* 3 */ val HMAC_SHA_384: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_384 with Double = js.native
-  /* 4 */ val HMAC_SHA_512: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm.HMAC_SHA_512 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
     typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.MacAlgorithm with Double
   ] = js.native
+  /* 0 */ @js.native
+  object HMAC_MD5 extends TopLevel[HMAC_MD5 with Double]
+  
+  /* 1 */ @js.native
+  object HMAC_SHA_1 extends TopLevel[HMAC_SHA_1 with Double]
+  
+  /* 2 */ @js.native
+  object HMAC_SHA_256 extends TopLevel[HMAC_SHA_256 with Double]
+  
+  /* 3 */ @js.native
+  object HMAC_SHA_384 extends TopLevel[HMAC_SHA_384 with Double]
+  
+  /* 4 */ @js.native
+  object HMAC_SHA_512 extends TopLevel[HMAC_SHA_512 with Double]
+  
 }
 

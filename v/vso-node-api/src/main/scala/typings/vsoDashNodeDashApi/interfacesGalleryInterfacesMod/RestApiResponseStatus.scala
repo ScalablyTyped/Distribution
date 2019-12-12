@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Completed
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Failed
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Inprogress
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Skipped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object RestApiResponseStatus extends js.Object {
   @js.native
   sealed trait Skipped extends RestApiResponseStatus
   
-  /* 0 */ val Completed: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Completed with Double = js.native
-  /* 1 */ val Failed: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Failed with Double = js.native
-  /* 2 */ val Inprogress: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Inprogress with Double = js.native
-  /* 3 */ val Skipped: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.RestApiResponseStatus.Skipped with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RestApiResponseStatus with Double] = js.native
+  /* 0 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 1 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 2 */ @js.native
+  object Inprogress extends TopLevel[Inprogress with Double]
+  
+  /* 3 */ @js.native
+  object Skipped extends TopLevel[Skipped with Double]
+  
 }
 

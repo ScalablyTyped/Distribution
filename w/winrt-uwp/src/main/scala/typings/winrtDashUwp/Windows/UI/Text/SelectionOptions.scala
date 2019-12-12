@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.active
+import typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.atEndOfLine
+import typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.overtype
+import typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.replace
+import typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.startActive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object SelectionOptions extends js.Object {
   @js.native
   sealed trait startActive extends SelectionOptions
   
-  /* 3 */ val active: typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.active with Double = js.native
-  /* 1 */ val atEndOfLine: typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.atEndOfLine with Double = js.native
-  /* 2 */ val overtype: typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.overtype with Double = js.native
-  /* 4 */ val replace: typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.replace with Double = js.native
-  /* 0 */ val startActive: typings.winrtDashUwp.Windows.UI.Text.SelectionOptions.startActive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionOptions with Double] = js.native
+  /* 3 */ @js.native
+  object active extends TopLevel[active with Double]
+  
+  /* 1 */ @js.native
+  object atEndOfLine extends TopLevel[atEndOfLine with Double]
+  
+  /* 2 */ @js.native
+  object overtype extends TopLevel[overtype with Double]
+  
+  /* 4 */ @js.native
+  object replace extends TopLevel[replace with Double]
+  
+  /* 0 */ @js.native
+  object startActive extends TopLevel[startActive with Double]
+  
 }
 

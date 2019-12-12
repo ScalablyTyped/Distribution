@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.application
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.library
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.system
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object CausalitySource extends js.Object {
   @js.native
   sealed trait system extends CausalitySource
   
-  /* 0 */ val application: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.application with Double = js.native
-  /* 1 */ val library: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.library with Double = js.native
-  /* 2 */ val system: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalitySource.system with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CausalitySource with Double] = js.native
+  /* 0 */ @js.native
+  object application extends TopLevel[application with Double]
+  
+  /* 1 */ @js.native
+  object library extends TopLevel[library with Double]
+  
+  /* 2 */ @js.native
+  object system extends TopLevel[system with Double]
+  
 }
 

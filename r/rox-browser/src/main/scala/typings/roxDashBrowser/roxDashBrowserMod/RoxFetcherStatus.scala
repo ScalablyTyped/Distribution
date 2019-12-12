@@ -1,5 +1,10 @@
 package typings.roxDashBrowser.roxDashBrowserMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromCache
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromEmbedded
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromNetwork
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.ErrorFetchFailed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object RoxFetcherStatus extends js.Object {
   @js.native
   sealed trait ErrorFetchFailed extends RoxFetcherStatus
   
-  /* "APPLIED_FROM_CACHE" */ val AppliedFromCache: typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromCache with String = js.native
-  /* "APPLIED_FROM_EMBEDDED" */ val AppliedFromEmbedded: typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromEmbedded with String = js.native
-  /* "APPLIED_FROM_NETWORK" */ val AppliedFromNetwork: typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.AppliedFromNetwork with String = js.native
-  /* "ERROR_FETCH_FAILED" */ val ErrorFetchFailed: typings.roxDashBrowser.roxDashBrowserMod.RoxFetcherStatus.ErrorFetchFailed with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RoxFetcherStatus with String] = js.native
+  /* "APPLIED_FROM_CACHE" */ @js.native
+  object AppliedFromCache extends TopLevel[AppliedFromCache with String]
+  
+  /* "APPLIED_FROM_EMBEDDED" */ @js.native
+  object AppliedFromEmbedded extends TopLevel[AppliedFromEmbedded with String]
+  
+  /* "APPLIED_FROM_NETWORK" */ @js.native
+  object AppliedFromNetwork extends TopLevel[AppliedFromNetwork with String]
+  
+  /* "ERROR_FETCH_FAILED" */ @js.native
+  object ErrorFetchFailed extends TopLevel[ErrorFetchFailed with String]
+  
 }
 

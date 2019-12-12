@@ -1,5 +1,6 @@
 package typings.openui5.sap.ui.layout
 
+import org.scalablytyped.runtime.TopLevel
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.LayoutData
@@ -1597,11 +1598,22 @@ object form extends js.Object {
     @js.native
     sealed trait ResponsiveLayout extends SimpleFormLayout
     
-    /* 0 */ val GridLayout: typings.openui5.sap.ui.layout.form.SimpleFormLayout.GridLayout with Double = js.native
-    /* 1 */ val ResponsiveGridLayout: typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveGridLayout with Double = js.native
-    /* 2 */ val ResponsiveLayout: typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveLayout with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SimpleFormLayout with Double] = js.native
+    /* 0 */ @js.native
+    object GridLayout
+      extends TopLevel[typings.openui5.sap.ui.layout.form.SimpleFormLayout.GridLayout with Double]
+    
+    /* 1 */ @js.native
+    object ResponsiveGridLayout
+      extends TopLevel[
+              typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveGridLayout with Double
+            ]
+    
+    /* 2 */ @js.native
+    object ResponsiveLayout
+      extends TopLevel[typings.openui5.sap.ui.layout.form.SimpleFormLayout.ResponsiveLayout with Double]
+    
   }
   
 }

@@ -1,5 +1,8 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.LogicalOperator.And
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.LogicalOperator.Or
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,15 @@ object LogicalOperator extends js.Object {
   @js.native
   sealed trait Or extends LogicalOperator
   
-  /* 0 */ val And: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.LogicalOperator.And with scala.Double = js.native
-  /* 1 */ val Or: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.LogicalOperator.Or with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[LogicalOperator with scala.Double] = js.native
+  /* 0 */ @js.native
+  object And
+    extends TopLevel[And with scala.Double]
+  
+  /* 1 */ @js.native
+  object Or
+    extends TopLevel[Or with scala.Double]
+  
 }
 

@@ -1,5 +1,14 @@
 package typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Add
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Checkout
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.CheckoutOption
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Click
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Detail
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Purchase
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Refund
+import typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object ProductActionEnum extends js.Object {
   @js.native
   sealed trait Remove extends ProductActionEnum
   
-  /* 3 */ val Add: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Add with Double = js.native
-  /* 5 */ val Checkout: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Checkout with Double = js.native
-  /* 6 */ val CheckoutOption: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.CheckoutOption with Double = js.native
-  /* 2 */ val Click: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Click with Double = js.native
-  /* 1 */ val Detail: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Detail with Double = js.native
-  /* 7 */ val Purchase: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Purchase with Double = js.native
-  /* 8 */ val Refund: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Refund with Double = js.native
-  /* 4 */ val Remove: typings.reactDashNativeDashGoogleDashAnalyticsDashBridge.distModelsProductMod.ProductActionEnum.Remove with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProductActionEnum with Double] = js.native
+  /* 3 */ @js.native
+  object Add extends TopLevel[Add with Double]
+  
+  /* 5 */ @js.native
+  object Checkout extends TopLevel[Checkout with Double]
+  
+  /* 6 */ @js.native
+  object CheckoutOption extends TopLevel[CheckoutOption with Double]
+  
+  /* 2 */ @js.native
+  object Click extends TopLevel[Click with Double]
+  
+  /* 1 */ @js.native
+  object Detail extends TopLevel[Detail with Double]
+  
+  /* 7 */ @js.native
+  object Purchase extends TopLevel[Purchase with Double]
+  
+  /* 8 */ @js.native
+  object Refund extends TopLevel[Refund with Double]
+  
+  /* 4 */ @js.native
+  object Remove extends TopLevel[Remove with Double]
+  
 }
 

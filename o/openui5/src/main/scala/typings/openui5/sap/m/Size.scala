@@ -1,5 +1,11 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.Size.Auto
+import typings.openui5.sap.m.Size.L
+import typings.openui5.sap.m.Size.M
+import typings.openui5.sap.m.Size.S
+import typings.openui5.sap.m.Size.XS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object Size extends js.Object {
   @js.native
   sealed trait XS extends Size
   
-  /* 0 */ val Auto: typings.openui5.sap.m.Size.Auto with Double = js.native
-  /* 1 */ val L: typings.openui5.sap.m.Size.L with Double = js.native
-  /* 2 */ val M: typings.openui5.sap.m.Size.M with Double = js.native
-  /* 3 */ val S: typings.openui5.sap.m.Size.S with Double = js.native
-  /* 4 */ val XS: typings.openui5.sap.m.Size.XS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Size with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object L extends TopLevel[L with Double]
+  
+  /* 2 */ @js.native
+  object M extends TopLevel[M with Double]
+  
+  /* 3 */ @js.native
+  object S extends TopLevel[S with Double]
+  
+  /* 4 */ @js.native
+  object XS extends TopLevel[XS with Double]
+  
 }
 

@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom1
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom2
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom3
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom4
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom5
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom6
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.cyan
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.magenta
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.primary
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.unknown
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object PosPrinterColorCartridge extends js.Object {
   @js.native
   sealed trait yellow extends PosPrinterColorCartridge
   
-  /* 2 */ val custom1: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom1 with Double = js.native
-  /* 3 */ val custom2: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom2 with Double = js.native
-  /* 4 */ val custom3: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom3 with Double = js.native
-  /* 5 */ val custom4: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom4 with Double = js.native
-  /* 6 */ val custom5: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom5 with Double = js.native
-  /* 7 */ val custom6: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.custom6 with Double = js.native
-  /* 8 */ val cyan: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.cyan with Double = js.native
-  /* 9 */ val magenta: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.magenta with Double = js.native
-  /* 1 */ val primary: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.primary with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.unknown with Double = js.native
-  /* 10 */ val yellow: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterColorCartridge.yellow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterColorCartridge with Double] = js.native
+  /* 2 */ @js.native
+  object custom1 extends TopLevel[custom1 with Double]
+  
+  /* 3 */ @js.native
+  object custom2 extends TopLevel[custom2 with Double]
+  
+  /* 4 */ @js.native
+  object custom3 extends TopLevel[custom3 with Double]
+  
+  /* 5 */ @js.native
+  object custom4 extends TopLevel[custom4 with Double]
+  
+  /* 6 */ @js.native
+  object custom5 extends TopLevel[custom5 with Double]
+  
+  /* 7 */ @js.native
+  object custom6 extends TopLevel[custom6 with Double]
+  
+  /* 8 */ @js.native
+  object cyan extends TopLevel[cyan with Double]
+  
+  /* 9 */ @js.native
+  object magenta extends TopLevel[magenta with Double]
+  
+  /* 1 */ @js.native
+  object primary extends TopLevel[primary with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 10 */ @js.native
+  object yellow extends TopLevel[yellow with Double]
+  
 }
 

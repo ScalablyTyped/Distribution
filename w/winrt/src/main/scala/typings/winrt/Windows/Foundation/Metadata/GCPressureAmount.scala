@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.high
+import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.low
+import typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object GCPressureAmount extends js.Object {
   @js.native
   sealed trait medium extends GCPressureAmount
   
-  /* 2 */ val high: typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.high with Double = js.native
-  /* 0 */ val low: typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.low with Double = js.native
-  /* 1 */ val medium: typings.winrt.Windows.Foundation.Metadata.GCPressureAmount.medium with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GCPressureAmount with Double] = js.native
+  /* 2 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 0 */ @js.native
+  object low extends TopLevel[low with Double]
+  
+  /* 1 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
 }
 

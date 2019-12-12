@@ -1,5 +1,8 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.MapMode2D.INFINITE_SCROLL
+import typings.cesium.cesiumMod.MapMode2D.ROTATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object MapMode2D extends js.Object {
   @js.native
   sealed trait ROTATE extends MapMode2D
   
-  /* 0 */ val INFINITE_SCROLL: typings.cesium.cesiumMod.MapMode2D.INFINITE_SCROLL with Double = js.native
-  /* 1 */ val ROTATE: typings.cesium.cesiumMod.MapMode2D.ROTATE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MapMode2D with Double] = js.native
+  /* 0 */ @js.native
+  object INFINITE_SCROLL extends TopLevel[INFINITE_SCROLL with Double]
+  
+  /* 1 */ @js.native
+  object ROTATE extends TopLevel[ROTATE with Double]
+  
 }
 

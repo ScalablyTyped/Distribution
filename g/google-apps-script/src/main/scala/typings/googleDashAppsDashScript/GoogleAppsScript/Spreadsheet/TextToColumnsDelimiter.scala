@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.COMMA
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.PERIOD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SEMICOLON
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SPACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TextToColumnsDelimiter extends js.Object {
   @js.native
   sealed trait SPACE extends TextToColumnsDelimiter
   
-  /* 0 */ val COMMA: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.COMMA with Double = js.native
-  /* 2 */ val PERIOD: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.PERIOD with Double = js.native
-  /* 1 */ val SEMICOLON: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SEMICOLON with Double = js.native
-  /* 3 */ val SPACE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextToColumnsDelimiter.SPACE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextToColumnsDelimiter with Double] = js.native
+  /* 0 */ @js.native
+  object COMMA extends TopLevel[COMMA with Double]
+  
+  /* 2 */ @js.native
+  object PERIOD extends TopLevel[PERIOD with Double]
+  
+  /* 1 */ @js.native
+  object SEMICOLON extends TopLevel[SEMICOLON with Double]
+  
+  /* 3 */ @js.native
+  object SPACE extends TopLevel[SPACE with Double]
+  
 }
 

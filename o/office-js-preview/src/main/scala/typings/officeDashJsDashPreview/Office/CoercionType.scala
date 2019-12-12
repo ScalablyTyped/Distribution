@@ -1,5 +1,13 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.CoercionType.Html
+import typings.officeDashJsDashPreview.Office.CoercionType.Image
+import typings.officeDashJsDashPreview.Office.CoercionType.Matrix
+import typings.officeDashJsDashPreview.Office.CoercionType.Ooxml
+import typings.officeDashJsDashPreview.Office.CoercionType.SlideRange
+import typings.officeDashJsDashPreview.Office.CoercionType.Text
+import typings.officeDashJsDashPreview.Office.CoercionType.XmlSvg
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,15 +90,32 @@ object CoercionType extends js.Object {
   @js.native
   sealed trait XmlSvg extends CoercionType
   
-  /* 3 */ val Html: typings.officeDashJsDashPreview.Office.CoercionType.Html with Double = js.native
-  /* 6 */ val Image: typings.officeDashJsDashPreview.Office.CoercionType.Image with Double = js.native
-  /* 1 */ val Matrix: typings.officeDashJsDashPreview.Office.CoercionType.Matrix with Double = js.native
-  /* 4 */ val Ooxml: typings.officeDashJsDashPreview.Office.CoercionType.Ooxml with Double = js.native
-  /* 5 */ val SlideRange: typings.officeDashJsDashPreview.Office.CoercionType.SlideRange with Double = js.native
-  /* 2 */ val Table: typings.officeDashJsDashPreview.Office.CoercionType.Table with Double = js.native
-  /* 0 */ val Text: typings.officeDashJsDashPreview.Office.CoercionType.Text with Double = js.native
-  /* 7 */ val XmlSvg: typings.officeDashJsDashPreview.Office.CoercionType.XmlSvg with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoercionType with Double] = js.native
+  /* 3 */ @js.native
+  object Html extends TopLevel[Html with Double]
+  
+  /* 6 */ @js.native
+  object Image extends TopLevel[Image with Double]
+  
+  /* 1 */ @js.native
+  object Matrix extends TopLevel[Matrix with Double]
+  
+  /* 4 */ @js.native
+  object Ooxml extends TopLevel[Ooxml with Double]
+  
+  /* 5 */ @js.native
+  object SlideRange extends TopLevel[SlideRange with Double]
+  
+  /* 2 */ @js.native
+  object Table
+    extends TopLevel[typings.officeDashJsDashPreview.Office.CoercionType.Table with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 7 */ @js.native
+  object XmlSvg extends TopLevel[XmlSvg with Double]
+  
 }
 

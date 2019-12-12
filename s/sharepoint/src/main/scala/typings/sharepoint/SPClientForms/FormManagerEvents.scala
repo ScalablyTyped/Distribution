@@ -1,5 +1,13 @@
 package typings.sharepoint.SPClientForms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetControlValueCallback
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetHasValueChangedCallback
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlFocusSetCallback
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlInitializedCallback
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValidationError
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValueChanged
+import typings.sharepoint.SPClientForms.FormManagerEvents.Event_RegisterControlValidator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object FormManagerEvents extends js.Object {
   @js.native
   sealed trait Event_RegisterControlValidator extends FormManagerEvents
   
-  /* 3 */ val Event_GetControlValueCallback: typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetControlValueCallback with Double = js.native
-  /* 6 */ val Event_GetHasValueChangedCallback: typings.sharepoint.SPClientForms.FormManagerEvents.Event_GetHasValueChangedCallback with Double = js.native
-  /* 2 */ val Event_OnControlFocusSetCallback: typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlFocusSetCallback with Double = js.native
-  /* 1 */ val Event_OnControlInitializedCallback: typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlInitializedCallback with Double = js.native
-  /* 4 */ val Event_OnControlValidationError: typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValidationError with Double = js.native
-  /* 0 */ val Event_OnControlValueChanged: typings.sharepoint.SPClientForms.FormManagerEvents.Event_OnControlValueChanged with Double = js.native
-  /* 5 */ val Event_RegisterControlValidator: typings.sharepoint.SPClientForms.FormManagerEvents.Event_RegisterControlValidator with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormManagerEvents with Double] = js.native
+  /* 3 */ @js.native
+  object Event_GetControlValueCallback extends TopLevel[Event_GetControlValueCallback with Double]
+  
+  /* 6 */ @js.native
+  object Event_GetHasValueChangedCallback extends TopLevel[Event_GetHasValueChangedCallback with Double]
+  
+  /* 2 */ @js.native
+  object Event_OnControlFocusSetCallback extends TopLevel[Event_OnControlFocusSetCallback with Double]
+  
+  /* 1 */ @js.native
+  object Event_OnControlInitializedCallback extends TopLevel[Event_OnControlInitializedCallback with Double]
+  
+  /* 4 */ @js.native
+  object Event_OnControlValidationError extends TopLevel[Event_OnControlValidationError with Double]
+  
+  /* 0 */ @js.native
+  object Event_OnControlValueChanged extends TopLevel[Event_OnControlValueChanged with Double]
+  
+  /* 5 */ @js.native
+  object Event_RegisterControlValidator extends TopLevel[Event_RegisterControlValidator with Double]
+  
 }
 

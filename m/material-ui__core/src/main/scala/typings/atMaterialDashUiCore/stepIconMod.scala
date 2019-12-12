@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.stepIconStepIconMod.StepIconProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object stepIconMod extends js.Object {
     def this(props: StepIconProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[StepIconProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[StepIconProps]]
+  
 }
 

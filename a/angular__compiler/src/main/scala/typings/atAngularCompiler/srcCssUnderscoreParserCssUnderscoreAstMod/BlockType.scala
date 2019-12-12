@@ -1,5 +1,18 @@
 package typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Charset
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Document
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.FontFace
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Import
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Keyframes
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.MediaQuery
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Namespace
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Page
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Selector
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Supports
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Unsupported
+import typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Viewport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object BlockType extends js.Object {
   @js.native
   sealed trait Viewport extends BlockType
   
-  /* 1 */ val Charset: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Charset with Double = js.native
-  /* 9 */ val Document: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Document with Double = js.native
-  /* 7 */ val FontFace: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.FontFace with Double = js.native
-  /* 0 */ val Import: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Import with Double = js.native
-  /* 4 */ val Keyframes: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Keyframes with Double = js.native
-  /* 5 */ val MediaQuery: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.MediaQuery with Double = js.native
-  /* 2 */ val Namespace: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Namespace with Double = js.native
-  /* 8 */ val Page: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Page with Double = js.native
-  /* 6 */ val Selector: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Selector with Double = js.native
-  /* 3 */ val Supports: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Supports with Double = js.native
-  /* 11 */ val Unsupported: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Unsupported with Double = js.native
-  /* 10 */ val Viewport: typings.atAngularCompiler.srcCssUnderscoreParserCssUnderscoreAstMod.BlockType.Viewport with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlockType with Double] = js.native
+  /* 1 */ @js.native
+  object Charset extends TopLevel[Charset with Double]
+  
+  /* 9 */ @js.native
+  object Document extends TopLevel[Document with Double]
+  
+  /* 7 */ @js.native
+  object FontFace extends TopLevel[FontFace with Double]
+  
+  /* 0 */ @js.native
+  object Import extends TopLevel[Import with Double]
+  
+  /* 4 */ @js.native
+  object Keyframes extends TopLevel[Keyframes with Double]
+  
+  /* 5 */ @js.native
+  object MediaQuery extends TopLevel[MediaQuery with Double]
+  
+  /* 2 */ @js.native
+  object Namespace extends TopLevel[Namespace with Double]
+  
+  /* 8 */ @js.native
+  object Page extends TopLevel[Page with Double]
+  
+  /* 6 */ @js.native
+  object Selector extends TopLevel[Selector with Double]
+  
+  /* 3 */ @js.native
+  object Supports extends TopLevel[Supports with Double]
+  
+  /* 11 */ @js.native
+  object Unsupported extends TopLevel[Unsupported with Double]
+  
+  /* 10 */ @js.native
+  object Viewport extends TopLevel[Viewport with Double]
+  
 }
 

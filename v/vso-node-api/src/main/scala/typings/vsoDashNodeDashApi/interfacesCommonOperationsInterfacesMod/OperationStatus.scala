@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Cancelled
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Failed
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.NotSet
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Queued
+import typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object OperationStatus extends js.Object {
   @js.native
   sealed trait Succeeded extends OperationStatus
   
-  /* 3 */ val Cancelled: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Cancelled with Double = js.native
-  /* 5 */ val Failed: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Failed with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.InProgress with Double = js.native
-  /* 0 */ val NotSet: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.NotSet with Double = js.native
-  /* 1 */ val Queued: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Queued with Double = js.native
-  /* 4 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesCommonOperationsInterfacesMod.OperationStatus.Succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OperationStatus with Double] = js.native
+  /* 3 */ @js.native
+  object Cancelled extends TopLevel[Cancelled with Double]
+  
+  /* 5 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 0 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 1 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 4 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
 }
 

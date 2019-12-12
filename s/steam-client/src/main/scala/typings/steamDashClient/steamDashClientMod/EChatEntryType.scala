@@ -1,5 +1,21 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.ChatMsg
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Disconnected
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Emote
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Entered
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.HistoricalChat
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Invalid
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.InviteGame
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.LeftConversation
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.LinkBlocked
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.LobbyGameStart
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved1
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved2
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.Typing
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.WasBanned
+import typings.steamDashClient.steamDashClientMod.EChatEntryType.WasKicked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,22 +73,52 @@ object EChatEntryType extends js.Object {
   @js.native
   sealed trait WasKicked extends EChatEntryType
   
-  /* 1 */ val ChatMsg: typings.steamDashClient.steamDashClientMod.EChatEntryType.ChatMsg with Double = js.native
-  /* 10 */ val Disconnected: typings.steamDashClient.steamDashClientMod.EChatEntryType.Disconnected with Double = js.native
-  /* 4 */ val Emote: typings.steamDashClient.steamDashClientMod.EChatEntryType.Emote with Double = js.native
-  /* 7 */ val Entered: typings.steamDashClient.steamDashClientMod.EChatEntryType.Entered with Double = js.native
-  /* 11 */ val HistoricalChat: typings.steamDashClient.steamDashClientMod.EChatEntryType.HistoricalChat with Double = js.native
-  /* 0 */ val Invalid: typings.steamDashClient.steamDashClientMod.EChatEntryType.Invalid with Double = js.native
-  /* 3 */ val InviteGame: typings.steamDashClient.steamDashClientMod.EChatEntryType.InviteGame with Double = js.native
-  /* 6 */ val LeftConversation: typings.steamDashClient.steamDashClientMod.EChatEntryType.LeftConversation with Double = js.native
-  /* 14 */ val LinkBlocked: typings.steamDashClient.steamDashClientMod.EChatEntryType.LinkBlocked with Double = js.native
-  /* 5 */ val LobbyGameStart: typings.steamDashClient.steamDashClientMod.EChatEntryType.LobbyGameStart with Double = js.native
-  /* 12 */ val Reserved1: typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved1 with Double = js.native
-  /* 13 */ val Reserved2: typings.steamDashClient.steamDashClientMod.EChatEntryType.Reserved2 with Double = js.native
-  /* 2 */ val Typing: typings.steamDashClient.steamDashClientMod.EChatEntryType.Typing with Double = js.native
-  /* 9 */ val WasBanned: typings.steamDashClient.steamDashClientMod.EChatEntryType.WasBanned with Double = js.native
-  /* 8 */ val WasKicked: typings.steamDashClient.steamDashClientMod.EChatEntryType.WasKicked with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatEntryType with Double] = js.native
+  /* 1 */ @js.native
+  object ChatMsg extends TopLevel[ChatMsg with Double]
+  
+  /* 10 */ @js.native
+  object Disconnected extends TopLevel[Disconnected with Double]
+  
+  /* 4 */ @js.native
+  object Emote extends TopLevel[Emote with Double]
+  
+  /* 7 */ @js.native
+  object Entered extends TopLevel[Entered with Double]
+  
+  /* 11 */ @js.native
+  object HistoricalChat extends TopLevel[HistoricalChat with Double]
+  
+  /* 0 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 3 */ @js.native
+  object InviteGame extends TopLevel[InviteGame with Double]
+  
+  /* 6 */ @js.native
+  object LeftConversation extends TopLevel[LeftConversation with Double]
+  
+  /* 14 */ @js.native
+  object LinkBlocked extends TopLevel[LinkBlocked with Double]
+  
+  /* 5 */ @js.native
+  object LobbyGameStart extends TopLevel[LobbyGameStart with Double]
+  
+  /* 12 */ @js.native
+  object Reserved1 extends TopLevel[Reserved1 with Double]
+  
+  /* 13 */ @js.native
+  object Reserved2 extends TopLevel[Reserved2 with Double]
+  
+  /* 2 */ @js.native
+  object Typing extends TopLevel[Typing with Double]
+  
+  /* 9 */ @js.native
+  object WasBanned extends TopLevel[WasBanned with Double]
+  
+  /* 8 */ @js.native
+  object WasKicked extends TopLevel[WasKicked with Double]
+  
 }
 

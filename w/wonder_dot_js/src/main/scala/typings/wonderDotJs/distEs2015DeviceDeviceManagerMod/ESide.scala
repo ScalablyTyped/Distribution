@@ -1,5 +1,10 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BACK
+import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BOTH
+import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.FRONT
+import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ESide extends js.Object {
   @js.native
   sealed trait NONE extends ESide
   
-  /* 2 */ val BACK: typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BACK with Double = js.native
-  /* 1 */ val BOTH: typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.BOTH with Double = js.native
-  /* 3 */ val FRONT: typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.FRONT with Double = js.native
-  /* 0 */ val NONE: typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ESide.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ESide with Double] = js.native
+  /* 2 */ @js.native
+  object BACK extends TopLevel[BACK with Double]
+  
+  /* 1 */ @js.native
+  object BOTH extends TopLevel[BOTH with Double]
+  
+  /* 3 */ @js.native
+  object FRONT extends TopLevel[FRONT with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
 }
 

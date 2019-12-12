@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Center
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Far
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object VerticalTextAlignment extends js.Object {
   @js.native
   sealed trait Near extends VerticalTextAlignment
   
-  /* 0 */ val Center: typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Center with Double = js.native
-  /* 2 */ val Far: typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Far with Double = js.native
-  /* 1 */ val Near: typings.ejDotWebDotAll.ej.datavisualization.Chart.VerticalTextAlignment.Near with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VerticalTextAlignment with Double] = js.native
+  /* 0 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 2 */ @js.native
+  object Far extends TopLevel[Far with Double]
+  
+  /* 1 */ @js.native
+  object Near extends TopLevel[Near with Double]
+  
 }
 

@@ -93,6 +93,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def DateDashPicker: ComponentType[DateDashPickerProps] = js.constructorOf[typings.antd.libDateDashPickerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DateDashPickerProps]]
   @scala.inline
+  def `DateDashPickerDate-picker`: ComponentType[`DateDashPickerDate-pickerProps`] = typings.antd.libDateDashPickerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[`DateDashPickerDate-pickerProps`]]
+  @scala.inline
   def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.antd.antdMod.DatePicker].asInstanceOf[typings.react.reactMod.ComponentType[DatePickerProps]]
   @scala.inline
   def Descriptions: ComponentType[DescriptionsProps] = js.constructorOf[typings.antd.libDescriptionsMod.default].asInstanceOf[typings.react.reactMod.ComponentType[DescriptionsProps]]

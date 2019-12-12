@@ -1,5 +1,17 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.ListLevelPermissionMask.approveItems
+import typings.sharepoint.SP.ListLevelPermissionMask.breakCheckout
+import typings.sharepoint.SP.ListLevelPermissionMask.deleteListItems
+import typings.sharepoint.SP.ListLevelPermissionMask.deleteVersions
+import typings.sharepoint.SP.ListLevelPermissionMask.editListItems
+import typings.sharepoint.SP.ListLevelPermissionMask.insertListItems
+import typings.sharepoint.SP.ListLevelPermissionMask.manageLists
+import typings.sharepoint.SP.ListLevelPermissionMask.managePersonalViews
+import typings.sharepoint.SP.ListLevelPermissionMask.openItems
+import typings.sharepoint.SP.ListLevelPermissionMask.viewListItems
+import typings.sharepoint.SP.ListLevelPermissionMask.viewVersions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,18 +65,40 @@ object ListLevelPermissionMask extends js.Object {
   @js.native
   sealed trait viewVersions extends ListLevelPermissionMask
   
-  /* 4 */ val approveItems: typings.sharepoint.SP.ListLevelPermissionMask.approveItems with Double = js.native
-  /* 8 */ val breakCheckout: typings.sharepoint.SP.ListLevelPermissionMask.breakCheckout with Double = js.native
-  /* 3 */ val deleteListItems: typings.sharepoint.SP.ListLevelPermissionMask.deleteListItems with Double = js.native
-  /* 7 */ val deleteVersions: typings.sharepoint.SP.ListLevelPermissionMask.deleteVersions with Double = js.native
-  /* 2 */ val editListItems: typings.sharepoint.SP.ListLevelPermissionMask.editListItems with Double = js.native
-  /* 1 */ val insertListItems: typings.sharepoint.SP.ListLevelPermissionMask.insertListItems with Double = js.native
-  /* 10 */ val manageLists: typings.sharepoint.SP.ListLevelPermissionMask.manageLists with Double = js.native
-  /* 9 */ val managePersonalViews: typings.sharepoint.SP.ListLevelPermissionMask.managePersonalViews with Double = js.native
-  /* 5 */ val openItems: typings.sharepoint.SP.ListLevelPermissionMask.openItems with Double = js.native
-  /* 0 */ val viewListItems: typings.sharepoint.SP.ListLevelPermissionMask.viewListItems with Double = js.native
-  /* 6 */ val viewVersions: typings.sharepoint.SP.ListLevelPermissionMask.viewVersions with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListLevelPermissionMask with Double] = js.native
+  /* 4 */ @js.native
+  object approveItems extends TopLevel[approveItems with Double]
+  
+  /* 8 */ @js.native
+  object breakCheckout extends TopLevel[breakCheckout with Double]
+  
+  /* 3 */ @js.native
+  object deleteListItems extends TopLevel[deleteListItems with Double]
+  
+  /* 7 */ @js.native
+  object deleteVersions extends TopLevel[deleteVersions with Double]
+  
+  /* 2 */ @js.native
+  object editListItems extends TopLevel[editListItems with Double]
+  
+  /* 1 */ @js.native
+  object insertListItems extends TopLevel[insertListItems with Double]
+  
+  /* 10 */ @js.native
+  object manageLists extends TopLevel[manageLists with Double]
+  
+  /* 9 */ @js.native
+  object managePersonalViews extends TopLevel[managePersonalViews with Double]
+  
+  /* 5 */ @js.native
+  object openItems extends TopLevel[openItems with Double]
+  
+  /* 0 */ @js.native
+  object viewListItems extends TopLevel[viewListItems with Double]
+  
+  /* 6 */ @js.native
+  object viewVersions extends TopLevel[viewVersions with Double]
+  
 }
 

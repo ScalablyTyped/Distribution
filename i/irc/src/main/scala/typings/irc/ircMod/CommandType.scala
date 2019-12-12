@@ -1,5 +1,9 @@
 package typings.irc.ircMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.irc.ircMod.CommandType.error
+import typings.irc.ircMod.CommandType.normal
+import typings.irc.ircMod.CommandType.reply
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object CommandType extends js.Object {
   @js.native
   sealed trait reply extends CommandType
   
-  /* 2 */ val error: typings.irc.ircMod.CommandType.error with Double = js.native
-  /* 0 */ val normal: typings.irc.ircMod.CommandType.normal with Double = js.native
-  /* 1 */ val reply: typings.irc.ircMod.CommandType.reply with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommandType with Double] = js.native
+  /* 2 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 1 */ @js.native
+  object reply extends TopLevel[reply with Double]
+  
 }
 

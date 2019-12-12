@@ -1,5 +1,17 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_CIRCLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_DIAMOND
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_CIRCLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_DIAMOND
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_SQUARE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.STEALTH_ARROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,18 +62,40 @@ object ArrowStyle extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends ArrowStyle
   
-  /* 3 */ val FILL_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_ARROW with Double = js.native
-  /* 4 */ val FILL_CIRCLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_CIRCLE with Double = js.native
-  /* 6 */ val FILL_DIAMOND: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_DIAMOND with Double = js.native
-  /* 5 */ val FILL_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.FILL_SQUARE with Double = js.native
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.NONE with Double = js.native
-  /* 7 */ val OPEN_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_ARROW with Double = js.native
-  /* 8 */ val OPEN_CIRCLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_CIRCLE with Double = js.native
-  /* 10 */ val OPEN_DIAMOND: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_DIAMOND with Double = js.native
-  /* 9 */ val OPEN_SQUARE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.OPEN_SQUARE with Double = js.native
-  /* 2 */ val STEALTH_ARROW: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.STEALTH_ARROW with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ArrowStyle.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ArrowStyle with Double] = js.native
+  /* 3 */ @js.native
+  object FILL_ARROW extends TopLevel[FILL_ARROW with Double]
+  
+  /* 4 */ @js.native
+  object FILL_CIRCLE extends TopLevel[FILL_CIRCLE with Double]
+  
+  /* 6 */ @js.native
+  object FILL_DIAMOND extends TopLevel[FILL_DIAMOND with Double]
+  
+  /* 5 */ @js.native
+  object FILL_SQUARE extends TopLevel[FILL_SQUARE with Double]
+  
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 7 */ @js.native
+  object OPEN_ARROW extends TopLevel[OPEN_ARROW with Double]
+  
+  /* 8 */ @js.native
+  object OPEN_CIRCLE extends TopLevel[OPEN_CIRCLE with Double]
+  
+  /* 10 */ @js.native
+  object OPEN_DIAMOND extends TopLevel[OPEN_DIAMOND with Double]
+  
+  /* 9 */ @js.native
+  object OPEN_SQUARE extends TopLevel[OPEN_SQUARE with Double]
+  
+  /* 2 */ @js.native
+  object STEALTH_ARROW extends TopLevel[STEALTH_ARROW with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

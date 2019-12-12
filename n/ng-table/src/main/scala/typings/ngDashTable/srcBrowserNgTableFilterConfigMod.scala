@@ -40,9 +40,6 @@ object srcBrowserNgTableFilterConfigMod extends js.Object {
   @js.native
   class NgTableFilterConfigProvider protected () extends IServiceProvider {
     def this($injector: IInjectorService) = this()
-    /* CompleteClass */
-    @JSName("$get")
-    override var $get: js.Any = js.native
     var config: js.Any = js.native
     var defaultConfig: js.Any = js.native
     @JSName("$get")

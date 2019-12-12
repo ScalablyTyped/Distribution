@@ -1,6 +1,14 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Accepted
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Calling
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Completed
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Confirmed
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Proceeding
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Terminated
+import typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Trying
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +42,29 @@ object libCoreTransactionsTransactionDashStateMod extends js.Object {
     @js.native
     sealed trait Trying extends TransactionState
     
-    /* "Accepted" */ val Accepted: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Accepted with String = js.native
-    /* "Calling" */ val Calling: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Calling with String = js.native
-    /* "Completed" */ val Completed: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Completed with String = js.native
-    /* "Confirmed" */ val Confirmed: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Confirmed with String = js.native
-    /* "Proceeding" */ val Proceeding: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Proceeding with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Terminated with String = js.native
-    /* "Trying" */ val Trying: typings.sipDotJs.libCoreTransactionsTransactionDashStateMod.TransactionState.Trying with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TransactionState with String] = js.native
+    /* "Accepted" */ @js.native
+    object Accepted extends TopLevel[Accepted with String]
+    
+    /* "Calling" */ @js.native
+    object Calling extends TopLevel[Calling with String]
+    
+    /* "Completed" */ @js.native
+    object Completed extends TopLevel[Completed with String]
+    
+    /* "Confirmed" */ @js.native
+    object Confirmed extends TopLevel[Confirmed with String]
+    
+    /* "Proceeding" */ @js.native
+    object Proceeding extends TopLevel[Proceeding with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
+    /* "Trying" */ @js.native
+    object Trying extends TopLevel[Trying with String]
+    
   }
   
 }

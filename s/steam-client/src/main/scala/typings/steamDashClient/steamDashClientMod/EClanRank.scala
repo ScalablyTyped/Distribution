@@ -1,5 +1,11 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EClanRank.Member
+import typings.steamDashClient.steamDashClientMod.EClanRank.Moderator
+import typings.steamDashClient.steamDashClientMod.EClanRank.None
+import typings.steamDashClient.steamDashClientMod.EClanRank.Officer
+import typings.steamDashClient.steamDashClientMod.EClanRank.Owner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object EClanRank extends js.Object {
   @js.native
   sealed trait Owner extends EClanRank
   
-  /* 3 */ val Member: typings.steamDashClient.steamDashClientMod.EClanRank.Member with Double = js.native
-  /* 4 */ val Moderator: typings.steamDashClient.steamDashClientMod.EClanRank.Moderator with Double = js.native
-  /* 0 */ val None: typings.steamDashClient.steamDashClientMod.EClanRank.None with Double = js.native
-  /* 2 */ val Officer: typings.steamDashClient.steamDashClientMod.EClanRank.Officer with Double = js.native
-  /* 1 */ val Owner: typings.steamDashClient.steamDashClientMod.EClanRank.Owner with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EClanRank with Double] = js.native
+  /* 3 */ @js.native
+  object Member extends TopLevel[Member with Double]
+  
+  /* 4 */ @js.native
+  object Moderator extends TopLevel[Moderator with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Officer extends TopLevel[Officer with Double]
+  
+  /* 1 */ @js.native
+  object Owner extends TopLevel[Owner with Double]
+  
 }
 

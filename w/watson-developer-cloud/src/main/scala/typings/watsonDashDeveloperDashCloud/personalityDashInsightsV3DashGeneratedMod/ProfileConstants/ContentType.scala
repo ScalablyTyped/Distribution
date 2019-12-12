@@ -1,5 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.TEXT_HTML
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +24,16 @@ object ContentType extends js.Object {
   @js.native
   sealed trait TEXT_PLAIN extends ContentType
   
-  /* "application/json" */ val APPLICATION_JSON: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.APPLICATION_JSON with String = js.native
-  /* "text/html" */ val TEXT_HTML: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.TEXT_HTML with String = js.native
-  /* "text/plain" */ val TEXT_PLAIN: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ContentType with String] = js.native
+  /* "application/json" */ @js.native
+  object APPLICATION_JSON extends TopLevel[APPLICATION_JSON with String]
+  
+  /* "text/html" */ @js.native
+  object TEXT_HTML extends TopLevel[TEXT_HTML with String]
+  
+  /* "text/plain" */ @js.native
+  object TEXT_PLAIN extends TopLevel[TEXT_PLAIN with String]
+  
 }
 

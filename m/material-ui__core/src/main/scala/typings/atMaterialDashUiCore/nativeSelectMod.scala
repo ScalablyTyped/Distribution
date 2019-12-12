@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.nativeSelectNativeSelectMod.NativeSelectProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object nativeSelectMod extends js.Object {
     def this(props: NativeSelectProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[NativeSelectProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[NativeSelectProps]]
+  
 }
 

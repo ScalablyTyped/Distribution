@@ -1,5 +1,11 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.ChangedOccurrence
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.DeletedOccurrence
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Normal
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Occurrence
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Pattern
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object BootstrapSchedulerAppointmentType extends js.Object {
   @js.native
   sealed trait Pattern extends BootstrapSchedulerAppointmentType
   
-  /* "ChangedOccurrence" */ val ChangedOccurrence: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.ChangedOccurrence with String = js.native
-  /* "DeletedOccurrence" */ val DeletedOccurrence: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.DeletedOccurrence with String = js.native
-  /* "Normal" */ val Normal: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Normal with String = js.native
-  /* "Occurrence" */ val Occurrence: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Occurrence with String = js.native
-  /* "Pattern" */ val Pattern: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentType.Pattern with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BootstrapSchedulerAppointmentType with String] = js.native
+  /* "ChangedOccurrence" */ @js.native
+  object ChangedOccurrence extends TopLevel[ChangedOccurrence with String]
+  
+  /* "DeletedOccurrence" */ @js.native
+  object DeletedOccurrence extends TopLevel[DeletedOccurrence with String]
+  
+  /* "Normal" */ @js.native
+  object Normal extends TopLevel[Normal with String]
+  
+  /* "Occurrence" */ @js.native
+  object Occurrence extends TopLevel[Occurrence with String]
+  
+  /* "Pattern" */ @js.native
+  object Pattern extends TopLevel[Pattern with String]
+  
 }
 

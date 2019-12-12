@@ -1,5 +1,12 @@
 package typings.atAngularCommon.atAngularCommonMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCommon.atAngularCommonMod.Plural.Few
+import typings.atAngularCommon.atAngularCommonMod.Plural.Many
+import typings.atAngularCommon.atAngularCommonMod.Plural.One
+import typings.atAngularCommon.atAngularCommonMod.Plural.Other
+import typings.atAngularCommon.atAngularCommonMod.Plural.Two
+import typings.atAngularCommon.atAngularCommonMod.Plural.Zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object Plural extends js.Object {
   @js.native
   sealed trait Zero extends Plural
   
-  /* 3 */ val Few: typings.atAngularCommon.atAngularCommonMod.Plural.Few with Double = js.native
-  /* 4 */ val Many: typings.atAngularCommon.atAngularCommonMod.Plural.Many with Double = js.native
-  /* 1 */ val One: typings.atAngularCommon.atAngularCommonMod.Plural.One with Double = js.native
-  /* 5 */ val Other: typings.atAngularCommon.atAngularCommonMod.Plural.Other with Double = js.native
-  /* 2 */ val Two: typings.atAngularCommon.atAngularCommonMod.Plural.Two with Double = js.native
-  /* 0 */ val Zero: typings.atAngularCommon.atAngularCommonMod.Plural.Zero with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Plural with Double] = js.native
+  /* 3 */ @js.native
+  object Few extends TopLevel[Few with Double]
+  
+  /* 4 */ @js.native
+  object Many extends TopLevel[Many with Double]
+  
+  /* 1 */ @js.native
+  object One extends TopLevel[One with Double]
+  
+  /* 5 */ @js.native
+  object Other extends TopLevel[Other with Double]
+  
+  /* 2 */ @js.native
+  object Two extends TopLevel[Two with Double]
+  
+  /* 0 */ @js.native
+  object Zero extends TopLevel[Zero with Double]
+  
 }
 

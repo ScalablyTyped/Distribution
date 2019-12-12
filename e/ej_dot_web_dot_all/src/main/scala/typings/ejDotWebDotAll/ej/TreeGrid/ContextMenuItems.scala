@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Add
+import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Delete
+import typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Edit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ContextMenuItems extends js.Object {
   @js.native
   sealed trait Edit extends ContextMenuItems
   
-  /* 0 */ val Add: typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Add with Double = js.native
-  /* 2 */ val Delete: typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Delete with Double = js.native
-  /* 1 */ val Edit: typings.ejDotWebDotAll.ej.TreeGrid.ContextMenuItems.Edit with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContextMenuItems with Double] = js.native
+  /* 0 */ @js.native
+  object Add extends TopLevel[Add with Double]
+  
+  /* 2 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 1 */ @js.native
+  object Edit extends TopLevel[Edit with Double]
+  
 }
 

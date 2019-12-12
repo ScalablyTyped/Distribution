@@ -1,5 +1,8 @@
 package typings.monacoDashEditor.monacoDashEditorMod.languages
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.InsertAsSnippet
+import typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.KeepWhitespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +26,13 @@ object CompletionItemInsertTextRule extends js.Object {
   @js.native
   sealed trait KeepWhitespace extends CompletionItemInsertTextRule
   
-  /* 4 */ val InsertAsSnippet: typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.InsertAsSnippet with Double = js.native
-  /* 1 */ val KeepWhitespace: typings.monacoDashEditor.monacoDashEditorMod.languages.CompletionItemInsertTextRule.KeepWhitespace with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompletionItemInsertTextRule with Double] = js.native
+  /* 4 */ @js.native
+  object InsertAsSnippet extends TopLevel[InsertAsSnippet with Double]
+  
+  /* 1 */ @js.native
+  object KeepWhitespace extends TopLevel[KeepWhitespace with Double]
+  
 }
 

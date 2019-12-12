@@ -1,5 +1,8 @@
 package typings.jsDashClipper.ClipperLib
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsDashClipper.ClipperLib.EdgeSide.esLeft
+import typings.jsDashClipper.ClipperLib.EdgeSide.esRight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EdgeSide extends js.Object {
   @js.native
   sealed trait esRight extends EdgeSide
   
-  /* 0 */ val esLeft: typings.jsDashClipper.ClipperLib.EdgeSide.esLeft with Double = js.native
-  /* 1 */ val esRight: typings.jsDashClipper.ClipperLib.EdgeSide.esRight with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EdgeSide with Double] = js.native
+  /* 0 */ @js.native
+  object esLeft extends TopLevel[esLeft with Double]
+  
+  /* 1 */ @js.native
+  object esRight extends TopLevel[esRight with Double]
+  
 }
 

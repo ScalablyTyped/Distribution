@@ -1,5 +1,11 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Daily
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Hourly
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Monthly
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Weekly
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Yearly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object BootstrapSchedulerRecurrenceType extends js.Object {
   @js.native
   sealed trait Yearly extends BootstrapSchedulerRecurrenceType
   
-  /* "Daily" */ val Daily: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Daily with String = js.native
-  /* "Hourly" */ val Hourly: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Hourly with String = js.native
-  /* "Monthly" */ val Monthly: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Monthly with String = js.native
-  /* "Weekly" */ val Weekly: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Weekly with String = js.native
-  /* "Yearly" */ val Yearly: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceType.Yearly with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BootstrapSchedulerRecurrenceType with String] = js.native
+  /* "Daily" */ @js.native
+  object Daily extends TopLevel[Daily with String]
+  
+  /* "Hourly" */ @js.native
+  object Hourly extends TopLevel[Hourly with String]
+  
+  /* "Monthly" */ @js.native
+  object Monthly extends TopLevel[Monthly with String]
+  
+  /* "Weekly" */ @js.native
+  object Weekly extends TopLevel[Weekly with String]
+  
+  /* "Yearly" */ @js.native
+  object Yearly extends TopLevel[Yearly with String]
+  
 }
 

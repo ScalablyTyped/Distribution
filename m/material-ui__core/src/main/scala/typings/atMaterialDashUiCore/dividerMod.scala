@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.dividerDividerMod.DividerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object dividerMod extends js.Object {
     def this(props: DividerProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[DividerProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[DividerProps]]
+  
 }
 

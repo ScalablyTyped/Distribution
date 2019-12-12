@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.CellError
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Conflict
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Dirty
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.NewRow
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.RowError
+import typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Transfer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,13 +40,25 @@ object RowHeaderStatePriorities extends js.Object {
   @js.native
   sealed trait Transfer extends RowHeaderStatePriorities
   
-  /* 2 */ val CellError: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.CellError with Double = js.native
-  /* 3 */ val Conflict: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Conflict with Double = js.native
-  /* 0 */ val Dirty: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Dirty with Double = js.native
-  /* 5 */ val NewRow: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.NewRow with Double = js.native
-  /* 4 */ val RowError: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.RowError with Double = js.native
-  /* 1 */ val Transfer: typings.sharepoint.SP.JsGrid.RowHeaderStatePriorities.Transfer with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RowHeaderStatePriorities with Double] = js.native
+  /* 2 */ @js.native
+  object CellError extends TopLevel[CellError with Double]
+  
+  /* 3 */ @js.native
+  object Conflict extends TopLevel[Conflict with Double]
+  
+  /* 0 */ @js.native
+  object Dirty extends TopLevel[Dirty with Double]
+  
+  /* 5 */ @js.native
+  object NewRow extends TopLevel[NewRow with Double]
+  
+  /* 4 */ @js.native
+  object RowError extends TopLevel[RowError with Double]
+  
+  /* 1 */ @js.native
+  object Transfer extends TopLevel[Transfer with Double]
+  
 }
 

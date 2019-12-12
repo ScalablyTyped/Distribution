@@ -1,5 +1,21 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.APIUpdate
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Bridging
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.CrispEdges
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Default
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.FloatElements
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PageEditable
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Pannable
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableX
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableY
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Routing
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Undoable
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.UserInteraction
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.ZoomTextEditor
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Zoomable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,23 +90,58 @@ object DiagramConstraints extends js.Object {
   @js.native
   sealed trait Zoomable extends DiagramConstraints
   
-  /* 1 */ val APIUpdate: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.APIUpdate with Double = js.native
-  /* 4 */ val Bridging: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Bridging with Double = js.native
-  /* 10 */ val CrispEdges: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.CrispEdges with Double = js.native
-  /* 15 */ val Default: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Default with Double = js.native
-  /* 13 */ val FloatElements: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.FloatElements with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.None with Double = js.native
-  /* 3 */ val PageEditable: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PageEditable with Double = js.native
-  /* 8 */ val Pannable: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Pannable with Double = js.native
-  /* 6 */ val PannableX: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableX with Double = js.native
-  /* 7 */ val PannableY: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.PannableY with Double = js.native
-  /* 11 */ val Resizable: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Resizable with Double = js.native
-  /* 14 */ val Routing: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Routing with Double = js.native
-  /* 9 */ val Undoable: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Undoable with Double = js.native
-  /* 2 */ val UserInteraction: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.UserInteraction with Double = js.native
-  /* 12 */ val ZoomTextEditor: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.ZoomTextEditor with Double = js.native
-  /* 5 */ val Zoomable: typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Zoomable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagramConstraints with Double] = js.native
+  /* 1 */ @js.native
+  object APIUpdate extends TopLevel[APIUpdate with Double]
+  
+  /* 4 */ @js.native
+  object Bridging extends TopLevel[Bridging with Double]
+  
+  /* 10 */ @js.native
+  object CrispEdges extends TopLevel[CrispEdges with Double]
+  
+  /* 15 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 13 */ @js.native
+  object FloatElements extends TopLevel[FloatElements with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object PageEditable extends TopLevel[PageEditable with Double]
+  
+  /* 8 */ @js.native
+  object Pannable extends TopLevel[Pannable with Double]
+  
+  /* 6 */ @js.native
+  object PannableX extends TopLevel[PannableX with Double]
+  
+  /* 7 */ @js.native
+  object PannableY extends TopLevel[PannableY with Double]
+  
+  /* 11 */ @js.native
+  object Resizable
+    extends TopLevel[
+          typings.ejDotWebDotAll.ej.datavisualization.Diagram.DiagramConstraints.Resizable with Double
+        ]
+  
+  /* 14 */ @js.native
+  object Routing extends TopLevel[Routing with Double]
+  
+  /* 9 */ @js.native
+  object Undoable extends TopLevel[Undoable with Double]
+  
+  /* 2 */ @js.native
+  object UserInteraction extends TopLevel[UserInteraction with Double]
+  
+  /* 12 */ @js.native
+  object ZoomTextEditor extends TopLevel[ZoomTextEditor with Double]
+  
+  /* 5 */ @js.native
+  object Zoomable extends TopLevel[Zoomable with Double]
+  
 }
 

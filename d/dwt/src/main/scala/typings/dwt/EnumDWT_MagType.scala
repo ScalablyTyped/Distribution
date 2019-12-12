@@ -1,5 +1,9 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_MagType.TWMD_INVALID
+import typings.dwt.EnumDWT_MagType.TWMD_MICR
+import typings.dwt.EnumDWT_MagType.TWMD_RAW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EnumDWT_MagType extends js.Object {
   @js.native
   sealed trait TWMD_RAW extends EnumDWT_MagType
   
-  /* 2 */ val TWMD_INVALID: typings.dwt.EnumDWT_MagType.TWMD_INVALID with Double = js.native
-  /* 0 */ val TWMD_MICR: typings.dwt.EnumDWT_MagType.TWMD_MICR with Double = js.native
-  /* 1 */ val TWMD_RAW: typings.dwt.EnumDWT_MagType.TWMD_RAW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_MagType with Double] = js.native
+  /* 2 */ @js.native
+  object TWMD_INVALID extends TopLevel[TWMD_INVALID with Double]
+  
+  /* 0 */ @js.native
+  object TWMD_MICR extends TopLevel[TWMD_MICR with Double]
+  
+  /* 1 */ @js.native
+  object TWMD_RAW extends TopLevel[TWMD_RAW with Double]
+  
 }
 

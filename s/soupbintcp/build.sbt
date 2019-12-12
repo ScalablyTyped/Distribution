@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soupbintcp"
-version := "0.2-dt-20180227Z-c00ee9"
+version := "0.2-dt-20180227Z-b8ddc9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

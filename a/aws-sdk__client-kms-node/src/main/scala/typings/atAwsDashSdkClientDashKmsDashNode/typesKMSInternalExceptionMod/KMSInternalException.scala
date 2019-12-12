@@ -36,11 +36,11 @@ import typings.atAwsDashSdkClientDashKmsDashNode.typesUntagResourceExceptionsUni
 import typings.atAwsDashSdkClientDashKmsDashNode.typesUpdateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
 import typings.atAwsDashSdkClientDashKmsDashNode.typesUpdateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KMSInternalException
   extends ServiceException[_KMSInternalExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -79,21 +79,6 @@ trait KMSInternalException
      with UpdateAliasExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_KMSInternalException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.KMSInternalException
-}
-
-object KMSInternalException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _KMSInternalExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.KMSInternalException,
-    stack: String = null
-  ): KMSInternalException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[KMSInternalException]
-  }
+  var name_KMSInternalException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.KMSInternalException = js.native
 }
 

@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.changeMessageFlagState
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseForwardMessage
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyAllMessage
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyMessage
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markFolderForSyncEnabled
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageAsSeen
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageRead
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveFolder
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveMessage
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.saveDraft
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.sendMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object EmailMailboxActionKind extends js.Object {
   @js.native
   sealed trait sendMessage extends EmailMailboxActionKind
   
-  /* 2 */ val changeMessageFlagState: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.changeMessageFlagState with Double = js.native
-  /* 8 */ val createResponseForwardMessage: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseForwardMessage with Double = js.native
-  /* 7 */ val createResponseReplyAllMessage: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyAllMessage with Double = js.native
-  /* 6 */ val createResponseReplyMessage: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.createResponseReplyMessage with Double = js.native
-  /* 10 */ val markFolderForSyncEnabled: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markFolderForSyncEnabled with Double = js.native
-  /* 0 */ val markMessageAsSeen: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageAsSeen with Double = js.native
-  /* 1 */ val markMessageRead: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.markMessageRead with Double = js.native
-  /* 9 */ val moveFolder: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveFolder with Double = js.native
-  /* 3 */ val moveMessage: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.moveMessage with Double = js.native
-  /* 4 */ val saveDraft: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.saveDraft with Double = js.native
-  /* 5 */ val sendMessage: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMailboxActionKind.sendMessage with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMailboxActionKind with Double] = js.native
+  /* 2 */ @js.native
+  object changeMessageFlagState extends TopLevel[changeMessageFlagState with Double]
+  
+  /* 8 */ @js.native
+  object createResponseForwardMessage extends TopLevel[createResponseForwardMessage with Double]
+  
+  /* 7 */ @js.native
+  object createResponseReplyAllMessage extends TopLevel[createResponseReplyAllMessage with Double]
+  
+  /* 6 */ @js.native
+  object createResponseReplyMessage extends TopLevel[createResponseReplyMessage with Double]
+  
+  /* 10 */ @js.native
+  object markFolderForSyncEnabled extends TopLevel[markFolderForSyncEnabled with Double]
+  
+  /* 0 */ @js.native
+  object markMessageAsSeen extends TopLevel[markMessageAsSeen with Double]
+  
+  /* 1 */ @js.native
+  object markMessageRead extends TopLevel[markMessageRead with Double]
+  
+  /* 9 */ @js.native
+  object moveFolder extends TopLevel[moveFolder with Double]
+  
+  /* 3 */ @js.native
+  object moveMessage extends TopLevel[moveMessage with Double]
+  
+  /* 4 */ @js.native
+  object saveDraft extends TopLevel[saveDraft with Double]
+  
+  /* 5 */ @js.native
+  object sendMessage extends TopLevel[sendMessage with Double]
+  
 }
 

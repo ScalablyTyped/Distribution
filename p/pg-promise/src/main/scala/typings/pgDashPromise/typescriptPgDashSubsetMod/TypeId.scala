@@ -1,5 +1,66 @@
 package typings.pgDashPromise.typescriptPgDashSubsetMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.ABSTIME
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.ACLITEM
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BIT
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BOOL
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BPCHAR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BYTEA
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CHAR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CID
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CIDR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CIRCLE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.DATE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.FLOAT4
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.FLOAT8
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.GTSVECTOR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INET
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT2
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT4
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT8
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INTERVAL
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.JSON
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.JSONB
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MACADDR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MACADDR8
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MONEY
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.NUMERIC
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.OID
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PATH
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_DEPENDENCIES
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_LSN
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_NDISTINCT
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_NODE_TREE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.POLYGON
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REFCURSOR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGCLASS
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGCONFIG
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGDICTIONARY
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGNAMESPACE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGOPER
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGOPERATOR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGPROC
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGPROCEDURE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGROLE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGTYPE
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.RELTIME
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.SMGR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TEXT
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TID
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIME
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMESTAMP
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMESTAMPTZ
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMETZ
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TINTERVAL
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TSQUERY
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TSVECTOR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TXID_SNAPSHOT
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.UUID
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.VARBIT
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.VARCHAR
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.XID
+import typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -192,67 +253,187 @@ object TypeId extends js.Object {
   @js.native
   sealed trait XML extends TypeId
   
-  /* 702 */ val ABSTIME: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.ABSTIME with Double = js.native
-  /* 1033 */ val ACLITEM: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.ACLITEM with Double = js.native
-  /* 1560 */ val BIT: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BIT with Double = js.native
-  /* 16 */ val BOOL: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BOOL with Double = js.native
-  /* 1042 */ val BPCHAR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BPCHAR with Double = js.native
-  /* 17 */ val BYTEA: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.BYTEA with Double = js.native
-  /* 18 */ val CHAR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CHAR with Double = js.native
-  /* 29 */ val CID: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CID with Double = js.native
-  /* 650 */ val CIDR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CIDR with Double = js.native
-  /* 718 */ val CIRCLE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.CIRCLE with Double = js.native
-  /* 1082 */ val DATE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.DATE with Double = js.native
-  /* 700 */ val FLOAT4: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.FLOAT4 with Double = js.native
-  /* 701 */ val FLOAT8: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.FLOAT8 with Double = js.native
-  /* 3642 */ val GTSVECTOR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.GTSVECTOR with Double = js.native
-  /* 869 */ val INET: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INET with Double = js.native
-  /* 21 */ val INT2: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT2 with Double = js.native
-  /* 23 */ val INT4: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT4 with Double = js.native
-  /* 20 */ val INT8: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INT8 with Double = js.native
-  /* 1186 */ val INTERVAL: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.INTERVAL with Double = js.native
-  /* 114 */ val JSON: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.JSON with Double = js.native
-  /* 3802 */ val JSONB: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.JSONB with Double = js.native
-  /* 829 */ val MACADDR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MACADDR with Double = js.native
-  /* 774 */ val MACADDR8: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MACADDR8 with Double = js.native
-  /* 790 */ val MONEY: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.MONEY with Double = js.native
-  /* 1700 */ val NUMERIC: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.NUMERIC with Double = js.native
-  /* 26 */ val OID: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.OID with Double = js.native
-  /* 602 */ val PATH: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PATH with Double = js.native
-  /* 3402 */ val PG_DEPENDENCIES: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_DEPENDENCIES with Double = js.native
-  /* 3220 */ val PG_LSN: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_LSN with Double = js.native
-  /* 3361 */ val PG_NDISTINCT: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_NDISTINCT with Double = js.native
-  /* 194 */ val PG_NODE_TREE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.PG_NODE_TREE with Double = js.native
-  /* 604 */ val POLYGON: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.POLYGON with Double = js.native
-  /* 1790 */ val REFCURSOR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REFCURSOR with Double = js.native
-  /* 2205 */ val REGCLASS: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGCLASS with Double = js.native
-  /* 3734 */ val REGCONFIG: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGCONFIG with Double = js.native
-  /* 3769 */ val REGDICTIONARY: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGDICTIONARY with Double = js.native
-  /* 4089 */ val REGNAMESPACE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGNAMESPACE with Double = js.native
-  /* 2203 */ val REGOPER: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGOPER with Double = js.native
-  /* 2204 */ val REGOPERATOR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGOPERATOR with Double = js.native
-  /* 24 */ val REGPROC: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGPROC with Double = js.native
-  /* 2202 */ val REGPROCEDURE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGPROCEDURE with Double = js.native
-  /* 4096 */ val REGROLE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGROLE with Double = js.native
-  /* 2206 */ val REGTYPE: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.REGTYPE with Double = js.native
-  /* 703 */ val RELTIME: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.RELTIME with Double = js.native
-  /* 210 */ val SMGR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.SMGR with Double = js.native
-  /* 25 */ val TEXT: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TEXT with Double = js.native
-  /* 27 */ val TID: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TID with Double = js.native
-  /* 1083 */ val TIME: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIME with Double = js.native
-  /* 1114 */ val TIMESTAMP: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMESTAMP with Double = js.native
-  /* 1184 */ val TIMESTAMPTZ: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMESTAMPTZ with Double = js.native
-  /* 1266 */ val TIMETZ: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TIMETZ with Double = js.native
-  /* 704 */ val TINTERVAL: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TINTERVAL with Double = js.native
-  /* 3615 */ val TSQUERY: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TSQUERY with Double = js.native
-  /* 3614 */ val TSVECTOR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TSVECTOR with Double = js.native
-  /* 2970 */ val TXID_SNAPSHOT: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.TXID_SNAPSHOT with Double = js.native
-  /* 2950 */ val UUID: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.UUID with Double = js.native
-  /* 1562 */ val VARBIT: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.VARBIT with Double = js.native
-  /* 1043 */ val VARCHAR: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.VARCHAR with Double = js.native
-  /* 28 */ val XID: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.XID with Double = js.native
-  /* 142 */ val XML: typings.pgDashPromise.typescriptPgDashSubsetMod.TypeId.XML with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeId with Double] = js.native
+  /* 702 */ @js.native
+  object ABSTIME extends TopLevel[ABSTIME with Double]
+  
+  /* 1033 */ @js.native
+  object ACLITEM extends TopLevel[ACLITEM with Double]
+  
+  /* 1560 */ @js.native
+  object BIT extends TopLevel[BIT with Double]
+  
+  /* 16 */ @js.native
+  object BOOL extends TopLevel[BOOL with Double]
+  
+  /* 1042 */ @js.native
+  object BPCHAR extends TopLevel[BPCHAR with Double]
+  
+  /* 17 */ @js.native
+  object BYTEA extends TopLevel[BYTEA with Double]
+  
+  /* 18 */ @js.native
+  object CHAR extends TopLevel[CHAR with Double]
+  
+  /* 29 */ @js.native
+  object CID extends TopLevel[CID with Double]
+  
+  /* 650 */ @js.native
+  object CIDR extends TopLevel[CIDR with Double]
+  
+  /* 718 */ @js.native
+  object CIRCLE extends TopLevel[CIRCLE with Double]
+  
+  /* 1082 */ @js.native
+  object DATE extends TopLevel[DATE with Double]
+  
+  /* 700 */ @js.native
+  object FLOAT4 extends TopLevel[FLOAT4 with Double]
+  
+  /* 701 */ @js.native
+  object FLOAT8 extends TopLevel[FLOAT8 with Double]
+  
+  /* 3642 */ @js.native
+  object GTSVECTOR extends TopLevel[GTSVECTOR with Double]
+  
+  /* 869 */ @js.native
+  object INET extends TopLevel[INET with Double]
+  
+  /* 21 */ @js.native
+  object INT2 extends TopLevel[INT2 with Double]
+  
+  /* 23 */ @js.native
+  object INT4 extends TopLevel[INT4 with Double]
+  
+  /* 20 */ @js.native
+  object INT8 extends TopLevel[INT8 with Double]
+  
+  /* 1186 */ @js.native
+  object INTERVAL extends TopLevel[INTERVAL with Double]
+  
+  /* 114 */ @js.native
+  object JSON extends TopLevel[JSON with Double]
+  
+  /* 3802 */ @js.native
+  object JSONB extends TopLevel[JSONB with Double]
+  
+  /* 829 */ @js.native
+  object MACADDR extends TopLevel[MACADDR with Double]
+  
+  /* 774 */ @js.native
+  object MACADDR8 extends TopLevel[MACADDR8 with Double]
+  
+  /* 790 */ @js.native
+  object MONEY extends TopLevel[MONEY with Double]
+  
+  /* 1700 */ @js.native
+  object NUMERIC extends TopLevel[NUMERIC with Double]
+  
+  /* 26 */ @js.native
+  object OID extends TopLevel[OID with Double]
+  
+  /* 602 */ @js.native
+  object PATH extends TopLevel[PATH with Double]
+  
+  /* 3402 */ @js.native
+  object PG_DEPENDENCIES extends TopLevel[PG_DEPENDENCIES with Double]
+  
+  /* 3220 */ @js.native
+  object PG_LSN extends TopLevel[PG_LSN with Double]
+  
+  /* 3361 */ @js.native
+  object PG_NDISTINCT extends TopLevel[PG_NDISTINCT with Double]
+  
+  /* 194 */ @js.native
+  object PG_NODE_TREE extends TopLevel[PG_NODE_TREE with Double]
+  
+  /* 604 */ @js.native
+  object POLYGON extends TopLevel[POLYGON with Double]
+  
+  /* 1790 */ @js.native
+  object REFCURSOR extends TopLevel[REFCURSOR with Double]
+  
+  /* 2205 */ @js.native
+  object REGCLASS extends TopLevel[REGCLASS with Double]
+  
+  /* 3734 */ @js.native
+  object REGCONFIG extends TopLevel[REGCONFIG with Double]
+  
+  /* 3769 */ @js.native
+  object REGDICTIONARY extends TopLevel[REGDICTIONARY with Double]
+  
+  /* 4089 */ @js.native
+  object REGNAMESPACE extends TopLevel[REGNAMESPACE with Double]
+  
+  /* 2203 */ @js.native
+  object REGOPER extends TopLevel[REGOPER with Double]
+  
+  /* 2204 */ @js.native
+  object REGOPERATOR extends TopLevel[REGOPERATOR with Double]
+  
+  /* 24 */ @js.native
+  object REGPROC extends TopLevel[REGPROC with Double]
+  
+  /* 2202 */ @js.native
+  object REGPROCEDURE extends TopLevel[REGPROCEDURE with Double]
+  
+  /* 4096 */ @js.native
+  object REGROLE extends TopLevel[REGROLE with Double]
+  
+  /* 2206 */ @js.native
+  object REGTYPE extends TopLevel[REGTYPE with Double]
+  
+  /* 703 */ @js.native
+  object RELTIME extends TopLevel[RELTIME with Double]
+  
+  /* 210 */ @js.native
+  object SMGR extends TopLevel[SMGR with Double]
+  
+  /* 25 */ @js.native
+  object TEXT extends TopLevel[TEXT with Double]
+  
+  /* 27 */ @js.native
+  object TID extends TopLevel[TID with Double]
+  
+  /* 1083 */ @js.native
+  object TIME extends TopLevel[TIME with Double]
+  
+  /* 1114 */ @js.native
+  object TIMESTAMP extends TopLevel[TIMESTAMP with Double]
+  
+  /* 1184 */ @js.native
+  object TIMESTAMPTZ extends TopLevel[TIMESTAMPTZ with Double]
+  
+  /* 1266 */ @js.native
+  object TIMETZ extends TopLevel[TIMETZ with Double]
+  
+  /* 704 */ @js.native
+  object TINTERVAL extends TopLevel[TINTERVAL with Double]
+  
+  /* 3615 */ @js.native
+  object TSQUERY extends TopLevel[TSQUERY with Double]
+  
+  /* 3614 */ @js.native
+  object TSVECTOR extends TopLevel[TSVECTOR with Double]
+  
+  /* 2970 */ @js.native
+  object TXID_SNAPSHOT extends TopLevel[TXID_SNAPSHOT with Double]
+  
+  /* 2950 */ @js.native
+  object UUID extends TopLevel[UUID with Double]
+  
+  /* 1562 */ @js.native
+  object VARBIT extends TopLevel[VARBIT with Double]
+  
+  /* 1043 */ @js.native
+  object VARCHAR extends TopLevel[VARCHAR with Double]
+  
+  /* 28 */ @js.native
+  object XID extends TopLevel[XID with Double]
+  
+  /* 142 */ @js.native
+  object XML extends TopLevel[XML with Double]
+  
 }
 

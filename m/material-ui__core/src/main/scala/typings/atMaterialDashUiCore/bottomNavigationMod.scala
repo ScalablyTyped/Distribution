@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.bottomNavigationBottomNavigationMod.BottomNavigationProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object bottomNavigationMod extends js.Object {
     def this(props: BottomNavigationProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[BottomNavigationProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[BottomNavigationProps]]
+  
 }
 

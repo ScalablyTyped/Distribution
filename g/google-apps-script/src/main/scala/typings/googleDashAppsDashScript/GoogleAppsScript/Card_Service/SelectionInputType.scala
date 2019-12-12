@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.CHECK_BOX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.DROPDOWN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.RADIO_BUTTON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SelectionInputType extends js.Object {
   @js.native
   sealed trait RADIO_BUTTON extends SelectionInputType
   
-  /* 0 */ val CHECK_BOX: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.CHECK_BOX with Double = js.native
-  /* 2 */ val DROPDOWN: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.DROPDOWN with Double = js.native
-  /* 1 */ val RADIO_BUTTON: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.SelectionInputType.RADIO_BUTTON with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionInputType with Double] = js.native
+  /* 0 */ @js.native
+  object CHECK_BOX extends TopLevel[CHECK_BOX with Double]
+  
+  /* 2 */ @js.native
+  object DROPDOWN extends TopLevel[DROPDOWN with Double]
+  
+  /* 1 */ @js.native
+  object RADIO_BUTTON extends TopLevel[RADIO_BUTTON with Double]
+  
 }
 

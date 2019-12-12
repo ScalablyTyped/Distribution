@@ -1,5 +1,26 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.UnderlineType.dash
+import typings.winrt.Windows.UI.Text.UnderlineType.dashDot
+import typings.winrt.Windows.UI.Text.UnderlineType.dashDotDot
+import typings.winrt.Windows.UI.Text.UnderlineType.dotted
+import typings.winrt.Windows.UI.Text.UnderlineType.double
+import typings.winrt.Windows.UI.Text.UnderlineType.doubleWave
+import typings.winrt.Windows.UI.Text.UnderlineType.heavyWave
+import typings.winrt.Windows.UI.Text.UnderlineType.longDash
+import typings.winrt.Windows.UI.Text.UnderlineType.none
+import typings.winrt.Windows.UI.Text.UnderlineType.single
+import typings.winrt.Windows.UI.Text.UnderlineType.thick
+import typings.winrt.Windows.UI.Text.UnderlineType.thickDash
+import typings.winrt.Windows.UI.Text.UnderlineType.thickDashDot
+import typings.winrt.Windows.UI.Text.UnderlineType.thickDashDotDot
+import typings.winrt.Windows.UI.Text.UnderlineType.thickDotted
+import typings.winrt.Windows.UI.Text.UnderlineType.thickLongDash
+import typings.winrt.Windows.UI.Text.UnderlineType.thin
+import typings.winrt.Windows.UI.Text.UnderlineType.undefined
+import typings.winrt.Windows.UI.Text.UnderlineType.wave
+import typings.winrt.Windows.UI.Text.UnderlineType.words
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,27 +91,67 @@ object UnderlineType extends js.Object {
   @js.native
   sealed trait words extends UnderlineType
   
-  /* 6 */ val dash: typings.winrt.Windows.UI.Text.UnderlineType.dash with Double = js.native
-  /* 7 */ val dashDot: typings.winrt.Windows.UI.Text.UnderlineType.dashDot with Double = js.native
-  /* 8 */ val dashDotDot: typings.winrt.Windows.UI.Text.UnderlineType.dashDotDot with Double = js.native
-  /* 5 */ val dotted: typings.winrt.Windows.UI.Text.UnderlineType.dotted with Double = js.native
-  /* 4 */ val double: typings.winrt.Windows.UI.Text.UnderlineType.double with Double = js.native
-  /* 12 */ val doubleWave: typings.winrt.Windows.UI.Text.UnderlineType.doubleWave with Double = js.native
-  /* 13 */ val heavyWave: typings.winrt.Windows.UI.Text.UnderlineType.heavyWave with Double = js.native
-  /* 14 */ val longDash: typings.winrt.Windows.UI.Text.UnderlineType.longDash with Double = js.native
-  /* 1 */ val none: typings.winrt.Windows.UI.Text.UnderlineType.none with Double = js.native
-  /* 2 */ val single: typings.winrt.Windows.UI.Text.UnderlineType.single with Double = js.native
-  /* 10 */ val thick: typings.winrt.Windows.UI.Text.UnderlineType.thick with Double = js.native
-  /* 15 */ val thickDash: typings.winrt.Windows.UI.Text.UnderlineType.thickDash with Double = js.native
-  /* 16 */ val thickDashDot: typings.winrt.Windows.UI.Text.UnderlineType.thickDashDot with Double = js.native
-  /* 17 */ val thickDashDotDot: typings.winrt.Windows.UI.Text.UnderlineType.thickDashDotDot with Double = js.native
-  /* 18 */ val thickDotted: typings.winrt.Windows.UI.Text.UnderlineType.thickDotted with Double = js.native
-  /* 19 */ val thickLongDash: typings.winrt.Windows.UI.Text.UnderlineType.thickLongDash with Double = js.native
-  /* 11 */ val thin: typings.winrt.Windows.UI.Text.UnderlineType.thin with Double = js.native
-  /* 0 */ val undefined: typings.winrt.Windows.UI.Text.UnderlineType.undefined with Double = js.native
-  /* 9 */ val wave: typings.winrt.Windows.UI.Text.UnderlineType.wave with Double = js.native
-  /* 3 */ val words: typings.winrt.Windows.UI.Text.UnderlineType.words with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnderlineType with Double] = js.native
+  /* 6 */ @js.native
+  object dash extends TopLevel[dash with Double]
+  
+  /* 7 */ @js.native
+  object dashDot extends TopLevel[dashDot with Double]
+  
+  /* 8 */ @js.native
+  object dashDotDot extends TopLevel[dashDotDot with Double]
+  
+  /* 5 */ @js.native
+  object dotted extends TopLevel[dotted with Double]
+  
+  /* 4 */ @js.native
+  object double extends TopLevel[double with Double]
+  
+  /* 12 */ @js.native
+  object doubleWave extends TopLevel[doubleWave with Double]
+  
+  /* 13 */ @js.native
+  object heavyWave extends TopLevel[heavyWave with Double]
+  
+  /* 14 */ @js.native
+  object longDash extends TopLevel[longDash with Double]
+  
+  /* 1 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object single extends TopLevel[single with Double]
+  
+  /* 10 */ @js.native
+  object thick extends TopLevel[thick with Double]
+  
+  /* 15 */ @js.native
+  object thickDash extends TopLevel[thickDash with Double]
+  
+  /* 16 */ @js.native
+  object thickDashDot extends TopLevel[thickDashDot with Double]
+  
+  /* 17 */ @js.native
+  object thickDashDotDot extends TopLevel[thickDashDotDot with Double]
+  
+  /* 18 */ @js.native
+  object thickDotted extends TopLevel[thickDotted with Double]
+  
+  /* 19 */ @js.native
+  object thickLongDash extends TopLevel[thickLongDash with Double]
+  
+  /* 11 */ @js.native
+  object thin extends TopLevel[thin with Double]
+  
+  /* 0 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
+  /* 9 */ @js.native
+  object wave extends TopLevel[wave with Double]
+  
+  /* 3 */ @js.native
+  object words extends TopLevel[words with Double]
+  
 }
 

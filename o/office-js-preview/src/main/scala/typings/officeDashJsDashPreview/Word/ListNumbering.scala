@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Word.ListNumbering.arabic
+import typings.officeDashJsDashPreview.Word.ListNumbering.lowerLetter
+import typings.officeDashJsDashPreview.Word.ListNumbering.lowerRoman
+import typings.officeDashJsDashPreview.Word.ListNumbering.none
+import typings.officeDashJsDashPreview.Word.ListNumbering.upperLetter
+import typings.officeDashJsDashPreview.Word.ListNumbering.upperRoman
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object ListNumbering extends js.Object {
   @js.native
   sealed trait upperRoman extends ListNumbering
   
-  /* "Arabic" */ val arabic: typings.officeDashJsDashPreview.Word.ListNumbering.arabic with String = js.native
-  /* "LowerLetter" */ val lowerLetter: typings.officeDashJsDashPreview.Word.ListNumbering.lowerLetter with String = js.native
-  /* "LowerRoman" */ val lowerRoman: typings.officeDashJsDashPreview.Word.ListNumbering.lowerRoman with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.Word.ListNumbering.none with String = js.native
-  /* "UpperLetter" */ val upperLetter: typings.officeDashJsDashPreview.Word.ListNumbering.upperLetter with String = js.native
-  /* "UpperRoman" */ val upperRoman: typings.officeDashJsDashPreview.Word.ListNumbering.upperRoman with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ListNumbering with String] = js.native
+  /* "Arabic" */ @js.native
+  object arabic extends TopLevel[arabic with String]
+  
+  /* "LowerLetter" */ @js.native
+  object lowerLetter extends TopLevel[lowerLetter with String]
+  
+  /* "LowerRoman" */ @js.native
+  object lowerRoman extends TopLevel[lowerRoman with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "UpperLetter" */ @js.native
+  object upperLetter extends TopLevel[upperLetter with String]
+  
+  /* "UpperRoman" */ @js.native
+  object upperRoman extends TopLevel[upperRoman with String]
+  
 }
 

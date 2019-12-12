@@ -1,5 +1,10 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.OutliningSpanKind.Code
+import typings.typescript.typescriptMod.OutliningSpanKind.Comment
+import typings.typescript.typescriptMod.OutliningSpanKind.Imports
+import typings.typescript.typescriptMod.OutliningSpanKind.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object OutliningSpanKind extends js.Object {
   @js.native
   sealed trait Region extends OutliningSpanKind
   
-  /* "code" */ val Code: typings.typescript.typescriptMod.OutliningSpanKind.Code with String = js.native
-  /* "comment" */ val Comment: typings.typescript.typescriptMod.OutliningSpanKind.Comment with String = js.native
-  /* "imports" */ val Imports: typings.typescript.typescriptMod.OutliningSpanKind.Imports with String = js.native
-  /* "region" */ val Region: typings.typescript.typescriptMod.OutliningSpanKind.Region with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OutliningSpanKind with String] = js.native
+  /* "code" */ @js.native
+  object Code extends TopLevel[Code with String]
+  
+  /* "comment" */ @js.native
+  object Comment extends TopLevel[Comment with String]
+  
+  /* "imports" */ @js.native
+  object Imports extends TopLevel[Imports with String]
+  
+  /* "region" */ @js.native
+  object Region extends TopLevel[Region with String]
+  
 }
 

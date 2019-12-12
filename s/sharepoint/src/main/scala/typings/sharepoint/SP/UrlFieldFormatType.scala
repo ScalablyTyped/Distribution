@@ -1,5 +1,8 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UrlFieldFormatType.hyperlink
+import typings.sharepoint.SP.UrlFieldFormatType.image
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object UrlFieldFormatType extends js.Object {
   @js.native
   sealed trait image extends UrlFieldFormatType
   
-  /* 0 */ val hyperlink: typings.sharepoint.SP.UrlFieldFormatType.hyperlink with Double = js.native
-  /* 1 */ val image: typings.sharepoint.SP.UrlFieldFormatType.image with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UrlFieldFormatType with Double] = js.native
+  /* 0 */ @js.native
+  object hyperlink extends TopLevel[hyperlink with Double]
+  
+  /* 1 */ @js.native
+  object image extends TopLevel[image with Double]
+  
 }
 

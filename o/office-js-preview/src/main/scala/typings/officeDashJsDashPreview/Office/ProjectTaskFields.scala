@@ -1,5 +1,289 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Active
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualDuration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualFinish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualOvertimeCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualOvertimeWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualStart
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Work
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineBudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineBudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineDuration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFinish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineStart
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetFixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetFixedWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ConstraintDate
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ConstraintType
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Critical
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Deadline
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.EarnedValueMethod
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.FinishSlack
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.FixedCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.FixedCostAccrual
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag11
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag12
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag13
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag14
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag15
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag16
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag17
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag18
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag19
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag20
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.FreeSlack
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.HasRollupSubTasks
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ID
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.IsRollup
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Milestone
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Name
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Notes
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number11
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number12
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number13
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number14
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number15
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number16
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number17
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number18
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number19
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number20
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.OutlineLevel
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Overallocated
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.OvertimeCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.OvertimeWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.PercentComplete
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.PercentWorkComplete
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Predecessors
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.PreleveledFinish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.PreleveledStart
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Priority
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.RegularWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingDuration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingOvertimeCost
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingWork
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ResourceNames
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledDuration
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledFinish
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledStart
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.StartSlack
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Status
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.StatusManager
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Successors
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Summary
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.TaskCalendarGUID
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.TaskGUID
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text1
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text10
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text11
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text12
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text13
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text14
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text15
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text16
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text17
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text18
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text19
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text2
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text20
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text21
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text22
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text23
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text24
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text25
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text26
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text27
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text28
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text29
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text3
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text30
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text4
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text5
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text6
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text7
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text8
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text9
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.TotalSlack
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Type
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBS
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBSPREDECESSORS
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBSSUCCESSORS
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.WSSID
+import typings.officeDashJsDashPreview.Office.ProjectTaskFields.Work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1726,290 +2010,856 @@ object ProjectTaskFields extends js.Object {
   @js.native
   sealed trait Work extends ProjectTaskFields
   
-  /* 256 */ val Active: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Active with Double = js.native
-  /* 0 */ val ActualCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualCost with Double = js.native
-  /* 1 */ val ActualDuration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualDuration with Double = js.native
-  /* 2 */ val ActualFinish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualFinish with Double = js.native
-  /* 3 */ val ActualOvertimeCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualOvertimeCost with Double = js.native
-  /* 4 */ val ActualOvertimeWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualOvertimeWork with Double = js.native
-  /* 5 */ val ActualStart: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualStart with Double = js.native
-  /* 6 */ val ActualWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ActualWork with Double = js.native
-  /* 57 */ val Baseline10BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10BudgetCost with Double = js.native
-  /* 58 */ val Baseline10BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10BudgetWork with Double = js.native
-  /* 59 */ val Baseline10Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Cost with Double = js.native
-  /* 60 */ val Baseline10Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Duration with Double = js.native
-  /* 61 */ val Baseline10Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Finish with Double = js.native
-  /* 62 */ val Baseline10FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10FixedCost with Double = js.native
-  /* 63 */ val Baseline10FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10FixedCostAccrual with Double = js.native
-  /* 64 */ val Baseline10Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Start with Double = js.native
-  /* 65 */ val Baseline10Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline10Work with Double = js.native
-  /* 66 */ val Baseline1BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1BudgetCost with Double = js.native
-  /* 67 */ val Baseline1BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1BudgetWork with Double = js.native
-  /* 68 */ val Baseline1Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Cost with Double = js.native
-  /* 69 */ val Baseline1Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Duration with Double = js.native
-  /* 70 */ val Baseline1Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Finish with Double = js.native
-  /* 71 */ val Baseline1FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1FixedCost with Double = js.native
-  /* 72 */ val Baseline1FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1FixedCostAccrual with Double = js.native
-  /* 73 */ val Baseline1Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Start with Double = js.native
-  /* 74 */ val Baseline1Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline1Work with Double = js.native
-  /* 75 */ val Baseline2BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2BudgetCost with Double = js.native
-  /* 76 */ val Baseline2BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2BudgetWork with Double = js.native
-  /* 77 */ val Baseline2Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Cost with Double = js.native
-  /* 78 */ val Baseline2Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Duration with Double = js.native
-  /* 79 */ val Baseline2Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Finish with Double = js.native
-  /* 80 */ val Baseline2FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2FixedCost with Double = js.native
-  /* 81 */ val Baseline2FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2FixedCostAccrual with Double = js.native
-  /* 82 */ val Baseline2Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Start with Double = js.native
-  /* 83 */ val Baseline2Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline2Work with Double = js.native
-  /* 84 */ val Baseline3BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3BudgetCost with Double = js.native
-  /* 85 */ val Baseline3BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3BudgetWork with Double = js.native
-  /* 86 */ val Baseline3Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Cost with Double = js.native
-  /* 87 */ val Baseline3Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Duration with Double = js.native
-  /* 88 */ val Baseline3Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Finish with Double = js.native
-  /* 89 */ val Baseline3FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3FixedCost with Double = js.native
-  /* 90 */ val Baseline3FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3FixedCostAccrual with Double = js.native
-  /* 91 */ val Baseline3Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Start with Double = js.native
-  /* 92 */ val Baseline3Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline3Work with Double = js.native
-  /* 93 */ val Baseline4BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4BudgetCost with Double = js.native
-  /* 94 */ val Baseline4BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4BudgetWork with Double = js.native
-  /* 95 */ val Baseline4Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Cost with Double = js.native
-  /* 96 */ val Baseline4Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Duration with Double = js.native
-  /* 97 */ val Baseline4Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Finish with Double = js.native
-  /* 98 */ val Baseline4FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4FixedCost with Double = js.native
-  /* 99 */ val Baseline4FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4FixedCostAccrual with Double = js.native
-  /* 100 */ val Baseline4Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Start with Double = js.native
-  /* 101 */ val Baseline4Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline4Work with Double = js.native
-  /* 102 */ val Baseline5BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5BudgetCost with Double = js.native
-  /* 103 */ val Baseline5BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5BudgetWork with Double = js.native
-  /* 104 */ val Baseline5Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Cost with Double = js.native
-  /* 105 */ val Baseline5Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Duration with Double = js.native
-  /* 106 */ val Baseline5Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Finish with Double = js.native
-  /* 107 */ val Baseline5FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5FixedCost with Double = js.native
-  /* 108 */ val Baseline5FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5FixedCostAccrual with Double = js.native
-  /* 109 */ val Baseline5Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Start with Double = js.native
-  /* 110 */ val Baseline5Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline5Work with Double = js.native
-  /* 111 */ val Baseline6BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6BudgetCost with Double = js.native
-  /* 112 */ val Baseline6BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6BudgetWork with Double = js.native
-  /* 113 */ val Baseline6Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Cost with Double = js.native
-  /* 114 */ val Baseline6Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Duration with Double = js.native
-  /* 115 */ val Baseline6Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Finish with Double = js.native
-  /* 116 */ val Baseline6FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6FixedCost with Double = js.native
-  /* 117 */ val Baseline6FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6FixedCostAccrual with Double = js.native
-  /* 118 */ val Baseline6Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Start with Double = js.native
-  /* 119 */ val Baseline6Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline6Work with Double = js.native
-  /* 120 */ val Baseline7BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7BudgetCost with Double = js.native
-  /* 121 */ val Baseline7BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7BudgetWork with Double = js.native
-  /* 122 */ val Baseline7Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Cost with Double = js.native
-  /* 123 */ val Baseline7Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Duration with Double = js.native
-  /* 124 */ val Baseline7Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Finish with Double = js.native
-  /* 125 */ val Baseline7FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7FixedCost with Double = js.native
-  /* 126 */ val Baseline7FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7FixedCostAccrual with Double = js.native
-  /* 127 */ val Baseline7Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Start with Double = js.native
-  /* 128 */ val Baseline7Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline7Work with Double = js.native
-  /* 129 */ val Baseline8BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8BudgetCost with Double = js.native
-  /* 130 */ val Baseline8BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8BudgetWork with Double = js.native
-  /* 131 */ val Baseline8Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Cost with Double = js.native
-  /* 132 */ val Baseline8Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Duration with Double = js.native
-  /* 133 */ val Baseline8Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Finish with Double = js.native
-  /* 134 */ val Baseline8FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8FixedCost with Double = js.native
-  /* 135 */ val Baseline8FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8FixedCostAccrual with Double = js.native
-  /* 136 */ val Baseline8Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Start with Double = js.native
-  /* 137 */ val Baseline8Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline8Work with Double = js.native
-  /* 138 */ val Baseline9BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9BudgetCost with Double = js.native
-  /* 139 */ val Baseline9BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9BudgetWork with Double = js.native
-  /* 140 */ val Baseline9Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Cost with Double = js.native
-  /* 141 */ val Baseline9Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Duration with Double = js.native
-  /* 142 */ val Baseline9Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Finish with Double = js.native
-  /* 143 */ val Baseline9FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9FixedCost with Double = js.native
-  /* 144 */ val Baseline9FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9FixedCostAccrual with Double = js.native
-  /* 145 */ val Baseline9Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Start with Double = js.native
-  /* 146 */ val Baseline9Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Baseline9Work with Double = js.native
-  /* 147 */ val BaselineBudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineBudgetCost with Double = js.native
-  /* 148 */ val BaselineBudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineBudgetWork with Double = js.native
-  /* 149 */ val BaselineCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineCost with Double = js.native
-  /* 150 */ val BaselineDuration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineDuration with Double = js.native
-  /* 151 */ val BaselineFinish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFinish with Double = js.native
-  /* 152 */ val BaselineFixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFixedCost with Double = js.native
-  /* 153 */ val BaselineFixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineFixedCostAccrual with Double = js.native
-  /* 154 */ val BaselineStart: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineStart with Double = js.native
-  /* 155 */ val BaselineWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BaselineWork with Double = js.native
-  /* 156 */ val BudgetCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetCost with Double = js.native
-  /* 157 */ val BudgetFixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetFixedCost with Double = js.native
-  /* 158 */ val BudgetFixedWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetFixedWork with Double = js.native
-  /* 159 */ val BudgetWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.BudgetWork with Double = js.native
-  /* 161 */ val ConstraintDate: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ConstraintDate with Double = js.native
-  /* 162 */ val ConstraintType: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ConstraintType with Double = js.native
-  /* 268 */ val Cost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost with Double = js.native
-  /* 163 */ val Cost1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost1 with Double = js.native
-  /* 164 */ val Cost10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost10 with Double = js.native
-  /* 165 */ val Cost2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost2 with Double = js.native
-  /* 166 */ val Cost3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost3 with Double = js.native
-  /* 167 */ val Cost4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost4 with Double = js.native
-  /* 168 */ val Cost5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost5 with Double = js.native
-  /* 169 */ val Cost6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost6 with Double = js.native
-  /* 170 */ val Cost7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost7 with Double = js.native
-  /* 171 */ val Cost8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost8 with Double = js.native
-  /* 172 */ val Cost9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Cost9 with Double = js.native
-  /* 257 */ val Critical: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Critical with Double = js.native
-  /* 173 */ val Date1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date1 with Double = js.native
-  /* 174 */ val Date10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date10 with Double = js.native
-  /* 175 */ val Date2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date2 with Double = js.native
-  /* 176 */ val Date3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date3 with Double = js.native
-  /* 177 */ val Date4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date4 with Double = js.native
-  /* 178 */ val Date5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date5 with Double = js.native
-  /* 179 */ val Date6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date6 with Double = js.native
-  /* 180 */ val Date7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date7 with Double = js.native
-  /* 181 */ val Date8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date8 with Double = js.native
-  /* 182 */ val Date9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Date9 with Double = js.native
-  /* 183 */ val Deadline: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Deadline with Double = js.native
-  /* 194 */ val Duration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration with Double = js.native
-  /* 184 */ val Duration1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration1 with Double = js.native
-  /* 185 */ val Duration10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration10 with Double = js.native
-  /* 186 */ val Duration2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration2 with Double = js.native
-  /* 187 */ val Duration3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration3 with Double = js.native
-  /* 188 */ val Duration4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration4 with Double = js.native
-  /* 189 */ val Duration5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration5 with Double = js.native
-  /* 190 */ val Duration6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration6 with Double = js.native
-  /* 191 */ val Duration7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration7 with Double = js.native
-  /* 192 */ val Duration8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration8 with Double = js.native
-  /* 193 */ val Duration9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Duration9 with Double = js.native
-  /* 195 */ val EarnedValueMethod: typings.officeDashJsDashPreview.Office.ProjectTaskFields.EarnedValueMethod with Double = js.native
-  /* 269 */ val Finish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish with Double = js.native
-  /* 20 */ val Finish1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish1 with Double = js.native
-  /* 9 */ val Finish10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish10 with Double = js.native
-  /* 33 */ val Finish2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish2 with Double = js.native
-  /* 37 */ val Finish3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish3 with Double = js.native
-  /* 40 */ val Finish4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish4 with Double = js.native
-  /* 43 */ val Finish5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish5 with Double = js.native
-  /* 46 */ val Finish6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish6 with Double = js.native
-  /* 49 */ val Finish7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish7 with Double = js.native
-  /* 52 */ val Finish8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish8 with Double = js.native
-  /* 55 */ val Finish9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Finish9 with Double = js.native
-  /* 196 */ val FinishSlack: typings.officeDashJsDashPreview.Office.ProjectTaskFields.FinishSlack with Double = js.native
-  /* 197 */ val FixedCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.FixedCost with Double = js.native
-  /* 198 */ val FixedCostAccrual: typings.officeDashJsDashPreview.Office.ProjectTaskFields.FixedCostAccrual with Double = js.native
-  /* 200 */ val Flag1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag1 with Double = js.native
-  /* 199 */ val Flag10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag10 with Double = js.native
-  /* 201 */ val Flag11: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag11 with Double = js.native
-  /* 202 */ val Flag12: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag12 with Double = js.native
-  /* 203 */ val Flag13: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag13 with Double = js.native
-  /* 204 */ val Flag14: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag14 with Double = js.native
-  /* 205 */ val Flag15: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag15 with Double = js.native
-  /* 206 */ val Flag16: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag16 with Double = js.native
-  /* 207 */ val Flag17: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag17 with Double = js.native
-  /* 208 */ val Flag18: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag18 with Double = js.native
-  /* 209 */ val Flag19: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag19 with Double = js.native
-  /* 210 */ val Flag2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag2 with Double = js.native
-  /* 211 */ val Flag20: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag20 with Double = js.native
-  /* 212 */ val Flag3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag3 with Double = js.native
-  /* 213 */ val Flag4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag4 with Double = js.native
-  /* 214 */ val Flag5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag5 with Double = js.native
-  /* 215 */ val Flag6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag6 with Double = js.native
-  /* 216 */ val Flag7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag7 with Double = js.native
-  /* 217 */ val Flag8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag8 with Double = js.native
-  /* 218 */ val Flag9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Flag9 with Double = js.native
-  /* 219 */ val FreeSlack: typings.officeDashJsDashPreview.Office.ProjectTaskFields.FreeSlack with Double = js.native
-  /* 220 */ val HasRollupSubTasks: typings.officeDashJsDashPreview.Office.ProjectTaskFields.HasRollupSubTasks with Double = js.native
-  /* 221 */ val ID: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ID with Double = js.native
-  /* 260 */ val IsRollup: typings.officeDashJsDashPreview.Office.ProjectTaskFields.IsRollup with Double = js.native
-  /* 258 */ val Milestone: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Milestone with Double = js.native
-  /* 222 */ val Name: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Name with Double = js.native
-  /* 223 */ val Notes: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Notes with Double = js.native
-  /* 224 */ val Number1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number1 with Double = js.native
-  /* 225 */ val Number10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number10 with Double = js.native
-  /* 226 */ val Number11: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number11 with Double = js.native
-  /* 227 */ val Number12: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number12 with Double = js.native
-  /* 228 */ val Number13: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number13 with Double = js.native
-  /* 229 */ val Number14: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number14 with Double = js.native
-  /* 230 */ val Number15: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number15 with Double = js.native
-  /* 231 */ val Number16: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number16 with Double = js.native
-  /* 232 */ val Number17: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number17 with Double = js.native
-  /* 233 */ val Number18: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number18 with Double = js.native
-  /* 234 */ val Number19: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number19 with Double = js.native
-  /* 235 */ val Number2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number2 with Double = js.native
-  /* 236 */ val Number20: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number20 with Double = js.native
-  /* 237 */ val Number3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number3 with Double = js.native
-  /* 238 */ val Number4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number4 with Double = js.native
-  /* 239 */ val Number5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number5 with Double = js.native
-  /* 240 */ val Number6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number6 with Double = js.native
-  /* 241 */ val Number7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number7 with Double = js.native
-  /* 242 */ val Number8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number8 with Double = js.native
-  /* 243 */ val Number9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Number9 with Double = js.native
-  /* 247 */ val OutlineLevel: typings.officeDashJsDashPreview.Office.ProjectTaskFields.OutlineLevel with Double = js.native
-  /* 259 */ val Overallocated: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Overallocated with Double = js.native
-  /* 248 */ val OvertimeCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.OvertimeCost with Double = js.native
-  /* 249 */ val OvertimeWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.OvertimeWork with Double = js.native
-  /* 250 */ val PercentComplete: typings.officeDashJsDashPreview.Office.ProjectTaskFields.PercentComplete with Double = js.native
-  /* 251 */ val PercentWorkComplete: typings.officeDashJsDashPreview.Office.ProjectTaskFields.PercentWorkComplete with Double = js.native
-  /* 252 */ val Predecessors: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Predecessors with Double = js.native
-  /* 253 */ val PreleveledFinish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.PreleveledFinish with Double = js.native
-  /* 254 */ val PreleveledStart: typings.officeDashJsDashPreview.Office.ProjectTaskFields.PreleveledStart with Double = js.native
-  /* 255 */ val Priority: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Priority with Double = js.native
-  /* 262 */ val RegularWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.RegularWork with Double = js.native
-  /* 263 */ val RemainingCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingCost with Double = js.native
-  /* 264 */ val RemainingDuration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingDuration with Double = js.native
-  /* 265 */ val RemainingOvertimeCost: typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingOvertimeCost with Double = js.native
-  /* 266 */ val RemainingWork: typings.officeDashJsDashPreview.Office.ProjectTaskFields.RemainingWork with Double = js.native
-  /* 267 */ val ResourceNames: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ResourceNames with Double = js.native
-  /* 244 */ val ScheduledDuration: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledDuration with Double = js.native
-  /* 245 */ val ScheduledFinish: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledFinish with Double = js.native
-  /* 246 */ val ScheduledStart: typings.officeDashJsDashPreview.Office.ProjectTaskFields.ScheduledStart with Double = js.native
-  /* 270 */ val Start: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start with Double = js.native
-  /* 21 */ val Start1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start1 with Double = js.native
-  /* 10 */ val Start10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start10 with Double = js.native
-  /* 34 */ val Start2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start2 with Double = js.native
-  /* 38 */ val Start3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start3 with Double = js.native
-  /* 41 */ val Start4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start4 with Double = js.native
-  /* 44 */ val Start5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start5 with Double = js.native
-  /* 47 */ val Start6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start6 with Double = js.native
-  /* 50 */ val Start7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start7 with Double = js.native
-  /* 53 */ val Start8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start8 with Double = js.native
-  /* 56 */ val Start9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Start9 with Double = js.native
-  /* 272 */ val StartSlack: typings.officeDashJsDashPreview.Office.ProjectTaskFields.StartSlack with Double = js.native
-  /* 273 */ val Status: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Status with Double = js.native
-  /* 275 */ val StatusManager: typings.officeDashJsDashPreview.Office.ProjectTaskFields.StatusManager with Double = js.native
-  /* 274 */ val Successors: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Successors with Double = js.native
-  /* 261 */ val Summary: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Summary with Double = js.native
-  /* 160 */ val TaskCalendarGUID: typings.officeDashJsDashPreview.Office.ProjectTaskFields.TaskCalendarGUID with Double = js.native
-  /* 277 */ val TaskGUID: typings.officeDashJsDashPreview.Office.ProjectTaskFields.TaskGUID with Double = js.native
-  /* 7 */ val Text1: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text1 with Double = js.native
-  /* 8 */ val Text10: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text10 with Double = js.native
-  /* 11 */ val Text11: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text11 with Double = js.native
-  /* 12 */ val Text12: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text12 with Double = js.native
-  /* 13 */ val Text13: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text13 with Double = js.native
-  /* 14 */ val Text14: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text14 with Double = js.native
-  /* 15 */ val Text15: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text15 with Double = js.native
-  /* 16 */ val Text16: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text16 with Double = js.native
-  /* 17 */ val Text17: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text17 with Double = js.native
-  /* 18 */ val Text18: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text18 with Double = js.native
-  /* 19 */ val Text19: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text19 with Double = js.native
-  /* 22 */ val Text2: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text2 with Double = js.native
-  /* 23 */ val Text20: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text20 with Double = js.native
-  /* 24 */ val Text21: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text21 with Double = js.native
-  /* 25 */ val Text22: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text22 with Double = js.native
-  /* 26 */ val Text23: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text23 with Double = js.native
-  /* 27 */ val Text24: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text24 with Double = js.native
-  /* 28 */ val Text25: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text25 with Double = js.native
-  /* 29 */ val Text26: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text26 with Double = js.native
-  /* 30 */ val Text27: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text27 with Double = js.native
-  /* 31 */ val Text28: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text28 with Double = js.native
-  /* 32 */ val Text29: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text29 with Double = js.native
-  /* 35 */ val Text3: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text3 with Double = js.native
-  /* 36 */ val Text30: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text30 with Double = js.native
-  /* 39 */ val Text4: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text4 with Double = js.native
-  /* 42 */ val Text5: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text5 with Double = js.native
-  /* 45 */ val Text6: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text6 with Double = js.native
-  /* 48 */ val Text7: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text7 with Double = js.native
-  /* 51 */ val Text8: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text8 with Double = js.native
-  /* 54 */ val Text9: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Text9 with Double = js.native
-  /* 276 */ val TotalSlack: typings.officeDashJsDashPreview.Office.ProjectTaskFields.TotalSlack with Double = js.native
-  /* 278 */ val Type: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Type with Double = js.native
-  /* 279 */ val WBS: typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBS with Double = js.native
-  /* 280 */ val WBSPREDECESSORS: typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBSPREDECESSORS with Double = js.native
-  /* 281 */ val WBSSUCCESSORS: typings.officeDashJsDashPreview.Office.ProjectTaskFields.WBSSUCCESSORS with Double = js.native
-  /* 282 */ val WSSID: typings.officeDashJsDashPreview.Office.ProjectTaskFields.WSSID with Double = js.native
-  /* 271 */ val Work: typings.officeDashJsDashPreview.Office.ProjectTaskFields.Work with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProjectTaskFields with Double] = js.native
+  /* 256 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 0 */ @js.native
+  object ActualCost extends TopLevel[ActualCost with Double]
+  
+  /* 1 */ @js.native
+  object ActualDuration extends TopLevel[ActualDuration with Double]
+  
+  /* 2 */ @js.native
+  object ActualFinish extends TopLevel[ActualFinish with Double]
+  
+  /* 3 */ @js.native
+  object ActualOvertimeCost extends TopLevel[ActualOvertimeCost with Double]
+  
+  /* 4 */ @js.native
+  object ActualOvertimeWork extends TopLevel[ActualOvertimeWork with Double]
+  
+  /* 5 */ @js.native
+  object ActualStart extends TopLevel[ActualStart with Double]
+  
+  /* 6 */ @js.native
+  object ActualWork extends TopLevel[ActualWork with Double]
+  
+  /* 57 */ @js.native
+  object Baseline10BudgetCost extends TopLevel[Baseline10BudgetCost with Double]
+  
+  /* 58 */ @js.native
+  object Baseline10BudgetWork extends TopLevel[Baseline10BudgetWork with Double]
+  
+  /* 59 */ @js.native
+  object Baseline10Cost extends TopLevel[Baseline10Cost with Double]
+  
+  /* 60 */ @js.native
+  object Baseline10Duration extends TopLevel[Baseline10Duration with Double]
+  
+  /* 61 */ @js.native
+  object Baseline10Finish extends TopLevel[Baseline10Finish with Double]
+  
+  /* 62 */ @js.native
+  object Baseline10FixedCost extends TopLevel[Baseline10FixedCost with Double]
+  
+  /* 63 */ @js.native
+  object Baseline10FixedCostAccrual extends TopLevel[Baseline10FixedCostAccrual with Double]
+  
+  /* 64 */ @js.native
+  object Baseline10Start extends TopLevel[Baseline10Start with Double]
+  
+  /* 65 */ @js.native
+  object Baseline10Work extends TopLevel[Baseline10Work with Double]
+  
+  /* 66 */ @js.native
+  object Baseline1BudgetCost extends TopLevel[Baseline1BudgetCost with Double]
+  
+  /* 67 */ @js.native
+  object Baseline1BudgetWork extends TopLevel[Baseline1BudgetWork with Double]
+  
+  /* 68 */ @js.native
+  object Baseline1Cost extends TopLevel[Baseline1Cost with Double]
+  
+  /* 69 */ @js.native
+  object Baseline1Duration extends TopLevel[Baseline1Duration with Double]
+  
+  /* 70 */ @js.native
+  object Baseline1Finish extends TopLevel[Baseline1Finish with Double]
+  
+  /* 71 */ @js.native
+  object Baseline1FixedCost extends TopLevel[Baseline1FixedCost with Double]
+  
+  /* 72 */ @js.native
+  object Baseline1FixedCostAccrual extends TopLevel[Baseline1FixedCostAccrual with Double]
+  
+  /* 73 */ @js.native
+  object Baseline1Start extends TopLevel[Baseline1Start with Double]
+  
+  /* 74 */ @js.native
+  object Baseline1Work extends TopLevel[Baseline1Work with Double]
+  
+  /* 75 */ @js.native
+  object Baseline2BudgetCost extends TopLevel[Baseline2BudgetCost with Double]
+  
+  /* 76 */ @js.native
+  object Baseline2BudgetWork extends TopLevel[Baseline2BudgetWork with Double]
+  
+  /* 77 */ @js.native
+  object Baseline2Cost extends TopLevel[Baseline2Cost with Double]
+  
+  /* 78 */ @js.native
+  object Baseline2Duration extends TopLevel[Baseline2Duration with Double]
+  
+  /* 79 */ @js.native
+  object Baseline2Finish extends TopLevel[Baseline2Finish with Double]
+  
+  /* 80 */ @js.native
+  object Baseline2FixedCost extends TopLevel[Baseline2FixedCost with Double]
+  
+  /* 81 */ @js.native
+  object Baseline2FixedCostAccrual extends TopLevel[Baseline2FixedCostAccrual with Double]
+  
+  /* 82 */ @js.native
+  object Baseline2Start extends TopLevel[Baseline2Start with Double]
+  
+  /* 83 */ @js.native
+  object Baseline2Work extends TopLevel[Baseline2Work with Double]
+  
+  /* 84 */ @js.native
+  object Baseline3BudgetCost extends TopLevel[Baseline3BudgetCost with Double]
+  
+  /* 85 */ @js.native
+  object Baseline3BudgetWork extends TopLevel[Baseline3BudgetWork with Double]
+  
+  /* 86 */ @js.native
+  object Baseline3Cost extends TopLevel[Baseline3Cost with Double]
+  
+  /* 87 */ @js.native
+  object Baseline3Duration extends TopLevel[Baseline3Duration with Double]
+  
+  /* 88 */ @js.native
+  object Baseline3Finish extends TopLevel[Baseline3Finish with Double]
+  
+  /* 89 */ @js.native
+  object Baseline3FixedCost extends TopLevel[Baseline3FixedCost with Double]
+  
+  /* 90 */ @js.native
+  object Baseline3FixedCostAccrual extends TopLevel[Baseline3FixedCostAccrual with Double]
+  
+  /* 91 */ @js.native
+  object Baseline3Start extends TopLevel[Baseline3Start with Double]
+  
+  /* 92 */ @js.native
+  object Baseline3Work extends TopLevel[Baseline3Work with Double]
+  
+  /* 93 */ @js.native
+  object Baseline4BudgetCost extends TopLevel[Baseline4BudgetCost with Double]
+  
+  /* 94 */ @js.native
+  object Baseline4BudgetWork extends TopLevel[Baseline4BudgetWork with Double]
+  
+  /* 95 */ @js.native
+  object Baseline4Cost extends TopLevel[Baseline4Cost with Double]
+  
+  /* 96 */ @js.native
+  object Baseline4Duration extends TopLevel[Baseline4Duration with Double]
+  
+  /* 97 */ @js.native
+  object Baseline4Finish extends TopLevel[Baseline4Finish with Double]
+  
+  /* 98 */ @js.native
+  object Baseline4FixedCost extends TopLevel[Baseline4FixedCost with Double]
+  
+  /* 99 */ @js.native
+  object Baseline4FixedCostAccrual extends TopLevel[Baseline4FixedCostAccrual with Double]
+  
+  /* 100 */ @js.native
+  object Baseline4Start extends TopLevel[Baseline4Start with Double]
+  
+  /* 101 */ @js.native
+  object Baseline4Work extends TopLevel[Baseline4Work with Double]
+  
+  /* 102 */ @js.native
+  object Baseline5BudgetCost extends TopLevel[Baseline5BudgetCost with Double]
+  
+  /* 103 */ @js.native
+  object Baseline5BudgetWork extends TopLevel[Baseline5BudgetWork with Double]
+  
+  /* 104 */ @js.native
+  object Baseline5Cost extends TopLevel[Baseline5Cost with Double]
+  
+  /* 105 */ @js.native
+  object Baseline5Duration extends TopLevel[Baseline5Duration with Double]
+  
+  /* 106 */ @js.native
+  object Baseline5Finish extends TopLevel[Baseline5Finish with Double]
+  
+  /* 107 */ @js.native
+  object Baseline5FixedCost extends TopLevel[Baseline5FixedCost with Double]
+  
+  /* 108 */ @js.native
+  object Baseline5FixedCostAccrual extends TopLevel[Baseline5FixedCostAccrual with Double]
+  
+  /* 109 */ @js.native
+  object Baseline5Start extends TopLevel[Baseline5Start with Double]
+  
+  /* 110 */ @js.native
+  object Baseline5Work extends TopLevel[Baseline5Work with Double]
+  
+  /* 111 */ @js.native
+  object Baseline6BudgetCost extends TopLevel[Baseline6BudgetCost with Double]
+  
+  /* 112 */ @js.native
+  object Baseline6BudgetWork extends TopLevel[Baseline6BudgetWork with Double]
+  
+  /* 113 */ @js.native
+  object Baseline6Cost extends TopLevel[Baseline6Cost with Double]
+  
+  /* 114 */ @js.native
+  object Baseline6Duration extends TopLevel[Baseline6Duration with Double]
+  
+  /* 115 */ @js.native
+  object Baseline6Finish extends TopLevel[Baseline6Finish with Double]
+  
+  /* 116 */ @js.native
+  object Baseline6FixedCost extends TopLevel[Baseline6FixedCost with Double]
+  
+  /* 117 */ @js.native
+  object Baseline6FixedCostAccrual extends TopLevel[Baseline6FixedCostAccrual with Double]
+  
+  /* 118 */ @js.native
+  object Baseline6Start extends TopLevel[Baseline6Start with Double]
+  
+  /* 119 */ @js.native
+  object Baseline6Work extends TopLevel[Baseline6Work with Double]
+  
+  /* 120 */ @js.native
+  object Baseline7BudgetCost extends TopLevel[Baseline7BudgetCost with Double]
+  
+  /* 121 */ @js.native
+  object Baseline7BudgetWork extends TopLevel[Baseline7BudgetWork with Double]
+  
+  /* 122 */ @js.native
+  object Baseline7Cost extends TopLevel[Baseline7Cost with Double]
+  
+  /* 123 */ @js.native
+  object Baseline7Duration extends TopLevel[Baseline7Duration with Double]
+  
+  /* 124 */ @js.native
+  object Baseline7Finish extends TopLevel[Baseline7Finish with Double]
+  
+  /* 125 */ @js.native
+  object Baseline7FixedCost extends TopLevel[Baseline7FixedCost with Double]
+  
+  /* 126 */ @js.native
+  object Baseline7FixedCostAccrual extends TopLevel[Baseline7FixedCostAccrual with Double]
+  
+  /* 127 */ @js.native
+  object Baseline7Start extends TopLevel[Baseline7Start with Double]
+  
+  /* 128 */ @js.native
+  object Baseline7Work extends TopLevel[Baseline7Work with Double]
+  
+  /* 129 */ @js.native
+  object Baseline8BudgetCost extends TopLevel[Baseline8BudgetCost with Double]
+  
+  /* 130 */ @js.native
+  object Baseline8BudgetWork extends TopLevel[Baseline8BudgetWork with Double]
+  
+  /* 131 */ @js.native
+  object Baseline8Cost extends TopLevel[Baseline8Cost with Double]
+  
+  /* 132 */ @js.native
+  object Baseline8Duration extends TopLevel[Baseline8Duration with Double]
+  
+  /* 133 */ @js.native
+  object Baseline8Finish extends TopLevel[Baseline8Finish with Double]
+  
+  /* 134 */ @js.native
+  object Baseline8FixedCost extends TopLevel[Baseline8FixedCost with Double]
+  
+  /* 135 */ @js.native
+  object Baseline8FixedCostAccrual extends TopLevel[Baseline8FixedCostAccrual with Double]
+  
+  /* 136 */ @js.native
+  object Baseline8Start extends TopLevel[Baseline8Start with Double]
+  
+  /* 137 */ @js.native
+  object Baseline8Work extends TopLevel[Baseline8Work with Double]
+  
+  /* 138 */ @js.native
+  object Baseline9BudgetCost extends TopLevel[Baseline9BudgetCost with Double]
+  
+  /* 139 */ @js.native
+  object Baseline9BudgetWork extends TopLevel[Baseline9BudgetWork with Double]
+  
+  /* 140 */ @js.native
+  object Baseline9Cost extends TopLevel[Baseline9Cost with Double]
+  
+  /* 141 */ @js.native
+  object Baseline9Duration extends TopLevel[Baseline9Duration with Double]
+  
+  /* 142 */ @js.native
+  object Baseline9Finish extends TopLevel[Baseline9Finish with Double]
+  
+  /* 143 */ @js.native
+  object Baseline9FixedCost extends TopLevel[Baseline9FixedCost with Double]
+  
+  /* 144 */ @js.native
+  object Baseline9FixedCostAccrual extends TopLevel[Baseline9FixedCostAccrual with Double]
+  
+  /* 145 */ @js.native
+  object Baseline9Start extends TopLevel[Baseline9Start with Double]
+  
+  /* 146 */ @js.native
+  object Baseline9Work extends TopLevel[Baseline9Work with Double]
+  
+  /* 147 */ @js.native
+  object BaselineBudgetCost extends TopLevel[BaselineBudgetCost with Double]
+  
+  /* 148 */ @js.native
+  object BaselineBudgetWork extends TopLevel[BaselineBudgetWork with Double]
+  
+  /* 149 */ @js.native
+  object BaselineCost extends TopLevel[BaselineCost with Double]
+  
+  /* 150 */ @js.native
+  object BaselineDuration extends TopLevel[BaselineDuration with Double]
+  
+  /* 151 */ @js.native
+  object BaselineFinish extends TopLevel[BaselineFinish with Double]
+  
+  /* 152 */ @js.native
+  object BaselineFixedCost extends TopLevel[BaselineFixedCost with Double]
+  
+  /* 153 */ @js.native
+  object BaselineFixedCostAccrual extends TopLevel[BaselineFixedCostAccrual with Double]
+  
+  /* 154 */ @js.native
+  object BaselineStart extends TopLevel[BaselineStart with Double]
+  
+  /* 155 */ @js.native
+  object BaselineWork extends TopLevel[BaselineWork with Double]
+  
+  /* 156 */ @js.native
+  object BudgetCost extends TopLevel[BudgetCost with Double]
+  
+  /* 157 */ @js.native
+  object BudgetFixedCost extends TopLevel[BudgetFixedCost with Double]
+  
+  /* 158 */ @js.native
+  object BudgetFixedWork extends TopLevel[BudgetFixedWork with Double]
+  
+  /* 159 */ @js.native
+  object BudgetWork extends TopLevel[BudgetWork with Double]
+  
+  /* 161 */ @js.native
+  object ConstraintDate extends TopLevel[ConstraintDate with Double]
+  
+  /* 162 */ @js.native
+  object ConstraintType extends TopLevel[ConstraintType with Double]
+  
+  /* 268 */ @js.native
+  object Cost extends TopLevel[Cost with Double]
+  
+  /* 163 */ @js.native
+  object Cost1 extends TopLevel[Cost1 with Double]
+  
+  /* 164 */ @js.native
+  object Cost10 extends TopLevel[Cost10 with Double]
+  
+  /* 165 */ @js.native
+  object Cost2 extends TopLevel[Cost2 with Double]
+  
+  /* 166 */ @js.native
+  object Cost3 extends TopLevel[Cost3 with Double]
+  
+  /* 167 */ @js.native
+  object Cost4 extends TopLevel[Cost4 with Double]
+  
+  /* 168 */ @js.native
+  object Cost5 extends TopLevel[Cost5 with Double]
+  
+  /* 169 */ @js.native
+  object Cost6 extends TopLevel[Cost6 with Double]
+  
+  /* 170 */ @js.native
+  object Cost7 extends TopLevel[Cost7 with Double]
+  
+  /* 171 */ @js.native
+  object Cost8 extends TopLevel[Cost8 with Double]
+  
+  /* 172 */ @js.native
+  object Cost9 extends TopLevel[Cost9 with Double]
+  
+  /* 257 */ @js.native
+  object Critical extends TopLevel[Critical with Double]
+  
+  /* 173 */ @js.native
+  object Date1 extends TopLevel[Date1 with Double]
+  
+  /* 174 */ @js.native
+  object Date10 extends TopLevel[Date10 with Double]
+  
+  /* 175 */ @js.native
+  object Date2 extends TopLevel[Date2 with Double]
+  
+  /* 176 */ @js.native
+  object Date3 extends TopLevel[Date3 with Double]
+  
+  /* 177 */ @js.native
+  object Date4 extends TopLevel[Date4 with Double]
+  
+  /* 178 */ @js.native
+  object Date5 extends TopLevel[Date5 with Double]
+  
+  /* 179 */ @js.native
+  object Date6 extends TopLevel[Date6 with Double]
+  
+  /* 180 */ @js.native
+  object Date7 extends TopLevel[Date7 with Double]
+  
+  /* 181 */ @js.native
+  object Date8 extends TopLevel[Date8 with Double]
+  
+  /* 182 */ @js.native
+  object Date9 extends TopLevel[Date9 with Double]
+  
+  /* 183 */ @js.native
+  object Deadline extends TopLevel[Deadline with Double]
+  
+  /* 194 */ @js.native
+  object Duration extends TopLevel[Duration with Double]
+  
+  /* 184 */ @js.native
+  object Duration1 extends TopLevel[Duration1 with Double]
+  
+  /* 185 */ @js.native
+  object Duration10 extends TopLevel[Duration10 with Double]
+  
+  /* 186 */ @js.native
+  object Duration2 extends TopLevel[Duration2 with Double]
+  
+  /* 187 */ @js.native
+  object Duration3 extends TopLevel[Duration3 with Double]
+  
+  /* 188 */ @js.native
+  object Duration4 extends TopLevel[Duration4 with Double]
+  
+  /* 189 */ @js.native
+  object Duration5 extends TopLevel[Duration5 with Double]
+  
+  /* 190 */ @js.native
+  object Duration6 extends TopLevel[Duration6 with Double]
+  
+  /* 191 */ @js.native
+  object Duration7 extends TopLevel[Duration7 with Double]
+  
+  /* 192 */ @js.native
+  object Duration8 extends TopLevel[Duration8 with Double]
+  
+  /* 193 */ @js.native
+  object Duration9 extends TopLevel[Duration9 with Double]
+  
+  /* 195 */ @js.native
+  object EarnedValueMethod extends TopLevel[EarnedValueMethod with Double]
+  
+  /* 269 */ @js.native
+  object Finish extends TopLevel[Finish with Double]
+  
+  /* 20 */ @js.native
+  object Finish1 extends TopLevel[Finish1 with Double]
+  
+  /* 9 */ @js.native
+  object Finish10 extends TopLevel[Finish10 with Double]
+  
+  /* 33 */ @js.native
+  object Finish2 extends TopLevel[Finish2 with Double]
+  
+  /* 37 */ @js.native
+  object Finish3 extends TopLevel[Finish3 with Double]
+  
+  /* 40 */ @js.native
+  object Finish4 extends TopLevel[Finish4 with Double]
+  
+  /* 43 */ @js.native
+  object Finish5 extends TopLevel[Finish5 with Double]
+  
+  /* 46 */ @js.native
+  object Finish6 extends TopLevel[Finish6 with Double]
+  
+  /* 49 */ @js.native
+  object Finish7 extends TopLevel[Finish7 with Double]
+  
+  /* 52 */ @js.native
+  object Finish8 extends TopLevel[Finish8 with Double]
+  
+  /* 55 */ @js.native
+  object Finish9 extends TopLevel[Finish9 with Double]
+  
+  /* 196 */ @js.native
+  object FinishSlack extends TopLevel[FinishSlack with Double]
+  
+  /* 197 */ @js.native
+  object FixedCost extends TopLevel[FixedCost with Double]
+  
+  /* 198 */ @js.native
+  object FixedCostAccrual extends TopLevel[FixedCostAccrual with Double]
+  
+  /* 200 */ @js.native
+  object Flag1 extends TopLevel[Flag1 with Double]
+  
+  /* 199 */ @js.native
+  object Flag10 extends TopLevel[Flag10 with Double]
+  
+  /* 201 */ @js.native
+  object Flag11 extends TopLevel[Flag11 with Double]
+  
+  /* 202 */ @js.native
+  object Flag12 extends TopLevel[Flag12 with Double]
+  
+  /* 203 */ @js.native
+  object Flag13 extends TopLevel[Flag13 with Double]
+  
+  /* 204 */ @js.native
+  object Flag14 extends TopLevel[Flag14 with Double]
+  
+  /* 205 */ @js.native
+  object Flag15 extends TopLevel[Flag15 with Double]
+  
+  /* 206 */ @js.native
+  object Flag16 extends TopLevel[Flag16 with Double]
+  
+  /* 207 */ @js.native
+  object Flag17 extends TopLevel[Flag17 with Double]
+  
+  /* 208 */ @js.native
+  object Flag18 extends TopLevel[Flag18 with Double]
+  
+  /* 209 */ @js.native
+  object Flag19 extends TopLevel[Flag19 with Double]
+  
+  /* 210 */ @js.native
+  object Flag2 extends TopLevel[Flag2 with Double]
+  
+  /* 211 */ @js.native
+  object Flag20 extends TopLevel[Flag20 with Double]
+  
+  /* 212 */ @js.native
+  object Flag3 extends TopLevel[Flag3 with Double]
+  
+  /* 213 */ @js.native
+  object Flag4 extends TopLevel[Flag4 with Double]
+  
+  /* 214 */ @js.native
+  object Flag5 extends TopLevel[Flag5 with Double]
+  
+  /* 215 */ @js.native
+  object Flag6 extends TopLevel[Flag6 with Double]
+  
+  /* 216 */ @js.native
+  object Flag7 extends TopLevel[Flag7 with Double]
+  
+  /* 217 */ @js.native
+  object Flag8 extends TopLevel[Flag8 with Double]
+  
+  /* 218 */ @js.native
+  object Flag9 extends TopLevel[Flag9 with Double]
+  
+  /* 219 */ @js.native
+  object FreeSlack extends TopLevel[FreeSlack with Double]
+  
+  /* 220 */ @js.native
+  object HasRollupSubTasks extends TopLevel[HasRollupSubTasks with Double]
+  
+  /* 221 */ @js.native
+  object ID extends TopLevel[ID with Double]
+  
+  /* 260 */ @js.native
+  object IsRollup extends TopLevel[IsRollup with Double]
+  
+  /* 258 */ @js.native
+  object Milestone extends TopLevel[Milestone with Double]
+  
+  /* 222 */ @js.native
+  object Name extends TopLevel[Name with Double]
+  
+  /* 223 */ @js.native
+  object Notes extends TopLevel[Notes with Double]
+  
+  /* 224 */ @js.native
+  object Number1 extends TopLevel[Number1 with Double]
+  
+  /* 225 */ @js.native
+  object Number10 extends TopLevel[Number10 with Double]
+  
+  /* 226 */ @js.native
+  object Number11 extends TopLevel[Number11 with Double]
+  
+  /* 227 */ @js.native
+  object Number12 extends TopLevel[Number12 with Double]
+  
+  /* 228 */ @js.native
+  object Number13 extends TopLevel[Number13 with Double]
+  
+  /* 229 */ @js.native
+  object Number14 extends TopLevel[Number14 with Double]
+  
+  /* 230 */ @js.native
+  object Number15 extends TopLevel[Number15 with Double]
+  
+  /* 231 */ @js.native
+  object Number16 extends TopLevel[Number16 with Double]
+  
+  /* 232 */ @js.native
+  object Number17 extends TopLevel[Number17 with Double]
+  
+  /* 233 */ @js.native
+  object Number18 extends TopLevel[Number18 with Double]
+  
+  /* 234 */ @js.native
+  object Number19 extends TopLevel[Number19 with Double]
+  
+  /* 235 */ @js.native
+  object Number2 extends TopLevel[Number2 with Double]
+  
+  /* 236 */ @js.native
+  object Number20 extends TopLevel[Number20 with Double]
+  
+  /* 237 */ @js.native
+  object Number3 extends TopLevel[Number3 with Double]
+  
+  /* 238 */ @js.native
+  object Number4 extends TopLevel[Number4 with Double]
+  
+  /* 239 */ @js.native
+  object Number5 extends TopLevel[Number5 with Double]
+  
+  /* 240 */ @js.native
+  object Number6 extends TopLevel[Number6 with Double]
+  
+  /* 241 */ @js.native
+  object Number7 extends TopLevel[Number7 with Double]
+  
+  /* 242 */ @js.native
+  object Number8 extends TopLevel[Number8 with Double]
+  
+  /* 243 */ @js.native
+  object Number9 extends TopLevel[Number9 with Double]
+  
+  /* 247 */ @js.native
+  object OutlineLevel extends TopLevel[OutlineLevel with Double]
+  
+  /* 259 */ @js.native
+  object Overallocated extends TopLevel[Overallocated with Double]
+  
+  /* 248 */ @js.native
+  object OvertimeCost extends TopLevel[OvertimeCost with Double]
+  
+  /* 249 */ @js.native
+  object OvertimeWork extends TopLevel[OvertimeWork with Double]
+  
+  /* 250 */ @js.native
+  object PercentComplete extends TopLevel[PercentComplete with Double]
+  
+  /* 251 */ @js.native
+  object PercentWorkComplete extends TopLevel[PercentWorkComplete with Double]
+  
+  /* 252 */ @js.native
+  object Predecessors extends TopLevel[Predecessors with Double]
+  
+  /* 253 */ @js.native
+  object PreleveledFinish extends TopLevel[PreleveledFinish with Double]
+  
+  /* 254 */ @js.native
+  object PreleveledStart extends TopLevel[PreleveledStart with Double]
+  
+  /* 255 */ @js.native
+  object Priority extends TopLevel[Priority with Double]
+  
+  /* 262 */ @js.native
+  object RegularWork extends TopLevel[RegularWork with Double]
+  
+  /* 263 */ @js.native
+  object RemainingCost extends TopLevel[RemainingCost with Double]
+  
+  /* 264 */ @js.native
+  object RemainingDuration extends TopLevel[RemainingDuration with Double]
+  
+  /* 265 */ @js.native
+  object RemainingOvertimeCost extends TopLevel[RemainingOvertimeCost with Double]
+  
+  /* 266 */ @js.native
+  object RemainingWork extends TopLevel[RemainingWork with Double]
+  
+  /* 267 */ @js.native
+  object ResourceNames extends TopLevel[ResourceNames with Double]
+  
+  /* 244 */ @js.native
+  object ScheduledDuration extends TopLevel[ScheduledDuration with Double]
+  
+  /* 245 */ @js.native
+  object ScheduledFinish extends TopLevel[ScheduledFinish with Double]
+  
+  /* 246 */ @js.native
+  object ScheduledStart extends TopLevel[ScheduledStart with Double]
+  
+  /* 270 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
+  /* 21 */ @js.native
+  object Start1 extends TopLevel[Start1 with Double]
+  
+  /* 10 */ @js.native
+  object Start10 extends TopLevel[Start10 with Double]
+  
+  /* 34 */ @js.native
+  object Start2 extends TopLevel[Start2 with Double]
+  
+  /* 38 */ @js.native
+  object Start3 extends TopLevel[Start3 with Double]
+  
+  /* 41 */ @js.native
+  object Start4 extends TopLevel[Start4 with Double]
+  
+  /* 44 */ @js.native
+  object Start5 extends TopLevel[Start5 with Double]
+  
+  /* 47 */ @js.native
+  object Start6 extends TopLevel[Start6 with Double]
+  
+  /* 50 */ @js.native
+  object Start7 extends TopLevel[Start7 with Double]
+  
+  /* 53 */ @js.native
+  object Start8 extends TopLevel[Start8 with Double]
+  
+  /* 56 */ @js.native
+  object Start9 extends TopLevel[Start9 with Double]
+  
+  /* 272 */ @js.native
+  object StartSlack extends TopLevel[StartSlack with Double]
+  
+  /* 273 */ @js.native
+  object Status extends TopLevel[Status with Double]
+  
+  /* 275 */ @js.native
+  object StatusManager extends TopLevel[StatusManager with Double]
+  
+  /* 274 */ @js.native
+  object Successors extends TopLevel[Successors with Double]
+  
+  /* 261 */ @js.native
+  object Summary extends TopLevel[Summary with Double]
+  
+  /* 160 */ @js.native
+  object TaskCalendarGUID extends TopLevel[TaskCalendarGUID with Double]
+  
+  /* 277 */ @js.native
+  object TaskGUID extends TopLevel[TaskGUID with Double]
+  
+  /* 7 */ @js.native
+  object Text1 extends TopLevel[Text1 with Double]
+  
+  /* 8 */ @js.native
+  object Text10 extends TopLevel[Text10 with Double]
+  
+  /* 11 */ @js.native
+  object Text11 extends TopLevel[Text11 with Double]
+  
+  /* 12 */ @js.native
+  object Text12 extends TopLevel[Text12 with Double]
+  
+  /* 13 */ @js.native
+  object Text13 extends TopLevel[Text13 with Double]
+  
+  /* 14 */ @js.native
+  object Text14 extends TopLevel[Text14 with Double]
+  
+  /* 15 */ @js.native
+  object Text15 extends TopLevel[Text15 with Double]
+  
+  /* 16 */ @js.native
+  object Text16 extends TopLevel[Text16 with Double]
+  
+  /* 17 */ @js.native
+  object Text17 extends TopLevel[Text17 with Double]
+  
+  /* 18 */ @js.native
+  object Text18 extends TopLevel[Text18 with Double]
+  
+  /* 19 */ @js.native
+  object Text19 extends TopLevel[Text19 with Double]
+  
+  /* 22 */ @js.native
+  object Text2 extends TopLevel[Text2 with Double]
+  
+  /* 23 */ @js.native
+  object Text20 extends TopLevel[Text20 with Double]
+  
+  /* 24 */ @js.native
+  object Text21 extends TopLevel[Text21 with Double]
+  
+  /* 25 */ @js.native
+  object Text22 extends TopLevel[Text22 with Double]
+  
+  /* 26 */ @js.native
+  object Text23 extends TopLevel[Text23 with Double]
+  
+  /* 27 */ @js.native
+  object Text24 extends TopLevel[Text24 with Double]
+  
+  /* 28 */ @js.native
+  object Text25 extends TopLevel[Text25 with Double]
+  
+  /* 29 */ @js.native
+  object Text26 extends TopLevel[Text26 with Double]
+  
+  /* 30 */ @js.native
+  object Text27 extends TopLevel[Text27 with Double]
+  
+  /* 31 */ @js.native
+  object Text28 extends TopLevel[Text28 with Double]
+  
+  /* 32 */ @js.native
+  object Text29 extends TopLevel[Text29 with Double]
+  
+  /* 35 */ @js.native
+  object Text3 extends TopLevel[Text3 with Double]
+  
+  /* 36 */ @js.native
+  object Text30 extends TopLevel[Text30 with Double]
+  
+  /* 39 */ @js.native
+  object Text4 extends TopLevel[Text4 with Double]
+  
+  /* 42 */ @js.native
+  object Text5 extends TopLevel[Text5 with Double]
+  
+  /* 45 */ @js.native
+  object Text6 extends TopLevel[Text6 with Double]
+  
+  /* 48 */ @js.native
+  object Text7 extends TopLevel[Text7 with Double]
+  
+  /* 51 */ @js.native
+  object Text8 extends TopLevel[Text8 with Double]
+  
+  /* 54 */ @js.native
+  object Text9 extends TopLevel[Text9 with Double]
+  
+  /* 276 */ @js.native
+  object TotalSlack extends TopLevel[TotalSlack with Double]
+  
+  /* 278 */ @js.native
+  object Type extends TopLevel[Type with Double]
+  
+  /* 279 */ @js.native
+  object WBS extends TopLevel[WBS with Double]
+  
+  /* 280 */ @js.native
+  object WBSPREDECESSORS extends TopLevel[WBSPREDECESSORS with Double]
+  
+  /* 281 */ @js.native
+  object WBSSUCCESSORS extends TopLevel[WBSSUCCESSORS with Double]
+  
+  /* 282 */ @js.native
+  object WSSID extends TopLevel[WSSID with Double]
+  
+  /* 271 */ @js.native
+  object Work extends TopLevel[Work with Double]
+  
 }
 

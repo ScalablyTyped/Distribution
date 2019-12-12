@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheEcdsa
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheNull
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdhePsk
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.none
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpAnonymous
+import typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpLogon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object AllJoynAuthenticationMechanism extends js.Object {
   @js.native
   sealed trait srpLogon extends AllJoynAuthenticationMechanism
   
-  /* 5 */ val ecdheEcdsa: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheEcdsa with Double = js.native
-  /* 3 */ val ecdheNull: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdheNull with Double = js.native
-  /* 4 */ val ecdhePsk: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.ecdhePsk with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.none with Double = js.native
-  /* 1 */ val srpAnonymous: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpAnonymous with Double = js.native
-  /* 2 */ val srpLogon: typings.winrtDashUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism.srpLogon with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AllJoynAuthenticationMechanism with Double] = js.native
+  /* 5 */ @js.native
+  object ecdheEcdsa extends TopLevel[ecdheEcdsa with Double]
+  
+  /* 3 */ @js.native
+  object ecdheNull extends TopLevel[ecdheNull with Double]
+  
+  /* 4 */ @js.native
+  object ecdhePsk extends TopLevel[ecdhePsk with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object srpAnonymous extends TopLevel[srpAnonymous with Double]
+  
+  /* 2 */ @js.native
+  object srpLogon extends TopLevel[srpLogon with Double]
+  
 }
 

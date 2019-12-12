@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.FREQUENCY
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.SCORE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object QueryRelationsConstants extends js.Object {
     @js.native
     sealed trait SCORE extends Sort
     
-    /* "frequency" */ val FREQUENCY: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.FREQUENCY with String = js.native
-    /* "score" */ val SCORE: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.QueryRelationsConstants.Sort.SCORE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
+    /* "frequency" */ @js.native
+    object FREQUENCY extends TopLevel[FREQUENCY with String]
+    
+    /* "score" */ @js.native
+    object SCORE extends TopLevel[SCORE with String]
+    
   }
   
 }

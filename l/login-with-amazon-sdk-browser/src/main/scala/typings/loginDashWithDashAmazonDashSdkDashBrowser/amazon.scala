@@ -1,6 +1,10 @@
 package typings.loginDashWithDashAmazonDashSdkDashBrowser
 
+import org.scalablytyped.runtime.TopLevel
 import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region
+import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.AsiaPacific
+import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.Europe
+import typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.NorthAmerica
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,11 +101,17 @@ object amazon extends js.Object {
       @js.native
       sealed trait NorthAmerica extends Region
       
-      /* 2 */ val AsiaPacific: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.AsiaPacific with Double = js.native
-      /* 1 */ val Europe: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.Europe with Double = js.native
-      /* 0 */ val NorthAmerica: typings.loginDashWithDashAmazonDashSdkDashBrowser.amazon.Login.Region.NorthAmerica with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[Region with Double] = js.native
+      /* 2 */ @js.native
+      object AsiaPacific extends TopLevel[AsiaPacific with Double]
+      
+      /* 1 */ @js.native
+      object Europe extends TopLevel[Europe with Double]
+      
+      /* 0 */ @js.native
+      object NorthAmerica extends TopLevel[NorthAmerica with Double]
+      
     }
     
   }

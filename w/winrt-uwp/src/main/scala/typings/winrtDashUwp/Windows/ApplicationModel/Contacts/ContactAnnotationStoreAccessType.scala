@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType.allAnnotationsReadWrite
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType.appAnnotationsReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ContactAnnotationStoreAccessType extends js.Object {
   @js.native
   sealed trait appAnnotationsReadWrite extends ContactAnnotationStoreAccessType
   
-  /* 1 */ val allAnnotationsReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType.allAnnotationsReadWrite with Double = js.native
-  /* 0 */ val appAnnotationsReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType.appAnnotationsReadWrite with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactAnnotationStoreAccessType with Double] = js.native
+  /* 1 */ @js.native
+  object allAnnotationsReadWrite extends TopLevel[allAnnotationsReadWrite with Double]
+  
+  /* 0 */ @js.native
+  object appAnnotationsReadWrite extends TopLevel[appAnnotationsReadWrite with Double]
+  
 }
 

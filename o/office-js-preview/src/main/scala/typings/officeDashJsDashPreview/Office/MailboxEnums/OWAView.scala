@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.OneColumn
+import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.ThreeColumns
+import typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.TwoColumns
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +36,16 @@ object OWAView extends js.Object {
   @js.native
   sealed trait TwoColumns extends OWAView
   
-  /* "OneColumn" */ val OneColumn: typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.OneColumn with String = js.native
-  /* "ThreeColumns" */ val ThreeColumns: typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.ThreeColumns with String = js.native
-  /* "TwoColumns" */ val TwoColumns: typings.officeDashJsDashPreview.Office.MailboxEnums.OWAView.TwoColumns with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OWAView with String] = js.native
+  /* "OneColumn" */ @js.native
+  object OneColumn extends TopLevel[OneColumn with String]
+  
+  /* "ThreeColumns" */ @js.native
+  object ThreeColumns extends TopLevel[ThreeColumns with String]
+  
+  /* "TwoColumns" */ @js.native
+  object TwoColumns extends TopLevel[TwoColumns with String]
+  
 }
 

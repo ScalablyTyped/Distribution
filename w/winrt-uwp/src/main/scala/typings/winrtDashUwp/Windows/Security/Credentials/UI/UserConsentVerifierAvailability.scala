@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Security.Credentials.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.available
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceBusy
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceNotPresent
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.disabledByPolicy
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.notConfiguredForUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object UserConsentVerifierAvailability extends js.Object {
   @js.native
   sealed trait notConfiguredForUser extends UserConsentVerifierAvailability
   
-  /* 0 */ val available: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.available with Double = js.native
-  /* 4 */ val deviceBusy: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceBusy with Double = js.native
-  /* 1 */ val deviceNotPresent: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.deviceNotPresent with Double = js.native
-  /* 3 */ val disabledByPolicy: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.disabledByPolicy with Double = js.native
-  /* 2 */ val notConfiguredForUser: typings.winrtDashUwp.Windows.Security.Credentials.UI.UserConsentVerifierAvailability.notConfiguredForUser with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserConsentVerifierAvailability with Double] = js.native
+  /* 0 */ @js.native
+  object available extends TopLevel[available with Double]
+  
+  /* 4 */ @js.native
+  object deviceBusy extends TopLevel[deviceBusy with Double]
+  
+  /* 1 */ @js.native
+  object deviceNotPresent extends TopLevel[deviceNotPresent with Double]
+  
+  /* 3 */ @js.native
+  object disabledByPolicy extends TopLevel[disabledByPolicy with Double]
+  
+  /* 2 */ @js.native
+  object notConfiguredForUser extends TopLevel[notConfiguredForUser with Double]
+  
 }
 

@@ -4,34 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StyleProps extends js.Object {
   @JSName("$afterFileDrop")
-  var $afterFileDrop: Boolean
+  var $afterFileDrop: Boolean = js.native
   @JSName("$isDisabled")
-  var $isDisabled: Boolean
+  var $isDisabled: Boolean = js.native
   @JSName("$isDragAccept")
-  var $isDragAccept: Boolean
+  var $isDragAccept: Boolean = js.native
   @JSName("$isDragActive")
-  var $isDragActive: Boolean
+  var $isDragActive: Boolean = js.native
   @JSName("$isDragReject")
-  var $isDragReject: Boolean
+  var $isDragReject: Boolean = js.native
   @JSName("$isFocused")
-  var $isFocused: Boolean
-}
-
-object StyleProps {
-  @scala.inline
-  def apply(
-    $afterFileDrop: Boolean,
-    $isDisabled: Boolean,
-    $isDragAccept: Boolean,
-    $isDragActive: Boolean,
-    $isDragReject: Boolean,
-    $isFocused: Boolean
-  ): StyleProps = {
-    val __obj = js.Dynamic.literal($afterFileDrop = $afterFileDrop.asInstanceOf[js.Any], $isDisabled = $isDisabled.asInstanceOf[js.Any], $isDragAccept = $isDragAccept.asInstanceOf[js.Any], $isDragActive = $isDragActive.asInstanceOf[js.Any], $isDragReject = $isDragReject.asInstanceOf[js.Any], $isFocused = $isFocused.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[StyleProps]
-  }
+  var $isFocused: Boolean = js.native
 }
 

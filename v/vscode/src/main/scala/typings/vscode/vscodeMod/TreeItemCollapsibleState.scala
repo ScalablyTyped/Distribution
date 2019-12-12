@@ -1,5 +1,9 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.TreeItemCollapsibleState.Collapsed
+import typings.vscode.vscodeMod.TreeItemCollapsibleState.Expanded
+import typings.vscode.vscodeMod.TreeItemCollapsibleState.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object TreeItemCollapsibleState extends js.Object {
   @js.native
   sealed trait None extends TreeItemCollapsibleState
   
-  /* 1 */ val Collapsed: typings.vscode.vscodeMod.TreeItemCollapsibleState.Collapsed with Double = js.native
-  /* 2 */ val Expanded: typings.vscode.vscodeMod.TreeItemCollapsibleState.Expanded with Double = js.native
-  /* 0 */ val None: typings.vscode.vscodeMod.TreeItemCollapsibleState.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TreeItemCollapsibleState with Double] = js.native
+  /* 1 */ @js.native
+  object Collapsed extends TopLevel[Collapsed with Double]
+  
+  /* 2 */ @js.native
+  object Expanded extends TopLevel[Expanded with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

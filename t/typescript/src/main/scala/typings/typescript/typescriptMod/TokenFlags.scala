@@ -1,5 +1,12 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.TokenFlags.BinarySpecifier
+import typings.typescript.typescriptMod.TokenFlags.HexSpecifier
+import typings.typescript.typescriptMod.TokenFlags.None
+import typings.typescript.typescriptMod.TokenFlags.Octal
+import typings.typescript.typescriptMod.TokenFlags.OctalSpecifier
+import typings.typescript.typescriptMod.TokenFlags.Scientific
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object TokenFlags extends js.Object {
   @js.native
   sealed trait Scientific extends TokenFlags
   
-  /* 128 */ val BinarySpecifier: typings.typescript.typescriptMod.TokenFlags.BinarySpecifier with Double = js.native
-  /* 64 */ val HexSpecifier: typings.typescript.typescriptMod.TokenFlags.HexSpecifier with Double = js.native
-  /* 0 */ val None: typings.typescript.typescriptMod.TokenFlags.None with Double = js.native
-  /* 32 */ val Octal: typings.typescript.typescriptMod.TokenFlags.Octal with Double = js.native
-  /* 256 */ val OctalSpecifier: typings.typescript.typescriptMod.TokenFlags.OctalSpecifier with Double = js.native
-  /* 16 */ val Scientific: typings.typescript.typescriptMod.TokenFlags.Scientific with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TokenFlags with Double] = js.native
+  /* 128 */ @js.native
+  object BinarySpecifier extends TopLevel[BinarySpecifier with Double]
+  
+  /* 64 */ @js.native
+  object HexSpecifier extends TopLevel[HexSpecifier with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 32 */ @js.native
+  object Octal extends TopLevel[Octal with Double]
+  
+  /* 256 */ @js.native
+  object OctalSpecifier extends TopLevel[OctalSpecifier with Double]
+  
+  /* 16 */ @js.native
+  object Scientific extends TopLevel[Scientific with Double]
+  
 }
 

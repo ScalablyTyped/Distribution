@@ -1,5 +1,9 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.DateTimeInputType.Date
+import typings.openui5.sap.m.DateTimeInputType.DateTime
+import typings.openui5.sap.m.DateTimeInputType.Time
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object DateTimeInputType extends js.Object {
   @js.native
   sealed trait Time extends DateTimeInputType
   
-  /* 0 */ val Date: typings.openui5.sap.m.DateTimeInputType.Date with Double = js.native
-  /* 1 */ val DateTime: typings.openui5.sap.m.DateTimeInputType.DateTime with Double = js.native
-  /* 2 */ val Time: typings.openui5.sap.m.DateTimeInputType.Time with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateTimeInputType with Double] = js.native
+  /* 0 */ @js.native
+  object Date extends TopLevel[Date with Double]
+  
+  /* 1 */ @js.native
+  object DateTime extends TopLevel[DateTime with Double]
+  
+  /* 2 */ @js.native
+  object Time extends TopLevel[Time with Double]
+  
 }
 

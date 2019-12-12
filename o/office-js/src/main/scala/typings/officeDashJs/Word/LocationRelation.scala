@@ -1,5 +1,20 @@
 package typings.officeDashJs.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Word.LocationRelation.adjacentAfter
+import typings.officeDashJs.Word.LocationRelation.adjacentBefore
+import typings.officeDashJs.Word.LocationRelation.after
+import typings.officeDashJs.Word.LocationRelation.before
+import typings.officeDashJs.Word.LocationRelation.contains
+import typings.officeDashJs.Word.LocationRelation.containsEnd
+import typings.officeDashJs.Word.LocationRelation.containsStart
+import typings.officeDashJs.Word.LocationRelation.equal
+import typings.officeDashJs.Word.LocationRelation.inside
+import typings.officeDashJs.Word.LocationRelation.insideEnd
+import typings.officeDashJs.Word.LocationRelation.insideStart
+import typings.officeDashJs.Word.LocationRelation.overlapsAfter
+import typings.officeDashJs.Word.LocationRelation.overlapsBefore
+import typings.officeDashJs.Word.LocationRelation.unrelated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -125,21 +140,49 @@ object LocationRelation extends js.Object {
   @js.native
   sealed trait unrelated extends LocationRelation
   
-  /* "AdjacentAfter" */ val adjacentAfter: typings.officeDashJs.Word.LocationRelation.adjacentAfter with String = js.native
-  /* "AdjacentBefore" */ val adjacentBefore: typings.officeDashJs.Word.LocationRelation.adjacentBefore with String = js.native
-  /* "After" */ val after: typings.officeDashJs.Word.LocationRelation.after with String = js.native
-  /* "Before" */ val before: typings.officeDashJs.Word.LocationRelation.before with String = js.native
-  /* "Contains" */ val contains: typings.officeDashJs.Word.LocationRelation.contains with String = js.native
-  /* "ContainsEnd" */ val containsEnd: typings.officeDashJs.Word.LocationRelation.containsEnd with String = js.native
-  /* "ContainsStart" */ val containsStart: typings.officeDashJs.Word.LocationRelation.containsStart with String = js.native
-  /* "Equal" */ val equal: typings.officeDashJs.Word.LocationRelation.equal with String = js.native
-  /* "Inside" */ val inside: typings.officeDashJs.Word.LocationRelation.inside with String = js.native
-  /* "InsideEnd" */ val insideEnd: typings.officeDashJs.Word.LocationRelation.insideEnd with String = js.native
-  /* "InsideStart" */ val insideStart: typings.officeDashJs.Word.LocationRelation.insideStart with String = js.native
-  /* "OverlapsAfter" */ val overlapsAfter: typings.officeDashJs.Word.LocationRelation.overlapsAfter with String = js.native
-  /* "OverlapsBefore" */ val overlapsBefore: typings.officeDashJs.Word.LocationRelation.overlapsBefore with String = js.native
-  /* "Unrelated" */ val unrelated: typings.officeDashJs.Word.LocationRelation.unrelated with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[LocationRelation with String] = js.native
+  /* "AdjacentAfter" */ @js.native
+  object adjacentAfter extends TopLevel[adjacentAfter with String]
+  
+  /* "AdjacentBefore" */ @js.native
+  object adjacentBefore extends TopLevel[adjacentBefore with String]
+  
+  /* "After" */ @js.native
+  object after extends TopLevel[after with String]
+  
+  /* "Before" */ @js.native
+  object before extends TopLevel[before with String]
+  
+  /* "Contains" */ @js.native
+  object contains extends TopLevel[contains with String]
+  
+  /* "ContainsEnd" */ @js.native
+  object containsEnd extends TopLevel[containsEnd with String]
+  
+  /* "ContainsStart" */ @js.native
+  object containsStart extends TopLevel[containsStart with String]
+  
+  /* "Equal" */ @js.native
+  object equal extends TopLevel[equal with String]
+  
+  /* "Inside" */ @js.native
+  object inside extends TopLevel[inside with String]
+  
+  /* "InsideEnd" */ @js.native
+  object insideEnd extends TopLevel[insideEnd with String]
+  
+  /* "InsideStart" */ @js.native
+  object insideStart extends TopLevel[insideStart with String]
+  
+  /* "OverlapsAfter" */ @js.native
+  object overlapsAfter extends TopLevel[overlapsAfter with String]
+  
+  /* "OverlapsBefore" */ @js.native
+  object overlapsBefore extends TopLevel[overlapsBefore with String]
+  
+  /* "Unrelated" */ @js.native
+  object unrelated extends TopLevel[unrelated with String]
+  
 }
 

@@ -1,9 +1,15 @@
 package typings.milkcocoa.milkcocoa
 
+import org.scalablytyped.runtime.TopLevel
 import typings.milkcocoa.Anon_Id
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount
+import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.AlreadyExist
+import typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.FormatError
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser
+import typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser.NotLoggedIn
 import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login
+import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.EmailNotVerificated
+import typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.LoginError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,10 +57,14 @@ object MilkCocoa extends js.Object {
       @js.native
       sealed trait FormatError extends AddAccount
       
-      /* 1 */ val AlreadyExist: typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.AlreadyExist with Double = js.native
-      /* 0 */ val FormatError: typings.milkcocoa.milkcocoa.MilkCocoa.Error.AddAccount.FormatError with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[AddAccount with Double] = js.native
+      /* 1 */ @js.native
+      object AlreadyExist extends TopLevel[AlreadyExist with Double]
+      
+      /* 0 */ @js.native
+      object FormatError extends TopLevel[FormatError with Double]
+      
     }
     
     @js.native
@@ -63,9 +73,11 @@ object MilkCocoa extends js.Object {
       @js.native
       sealed trait NotLoggedIn extends GetCurrentUser
       
-      /* 0 */ val NotLoggedIn: typings.milkcocoa.milkcocoa.MilkCocoa.Error.GetCurrentUser.NotLoggedIn with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[GetCurrentUser with Double] = js.native
+      /* 0 */ @js.native
+      object NotLoggedIn extends TopLevel[NotLoggedIn with Double]
+      
     }
     
     @js.native
@@ -80,11 +92,18 @@ object MilkCocoa extends js.Object {
       @js.native
       sealed trait LoginError extends Login
       
-      /* 2 */ val EmailNotVerificated: typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.EmailNotVerificated with Double = js.native
-      /* 0 */ val FormatError: typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.FormatError with Double = js.native
-      /* 1 */ val LoginError: typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.LoginError with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[Login with Double] = js.native
+      /* 2 */ @js.native
+      object EmailNotVerificated extends TopLevel[EmailNotVerificated with Double]
+      
+      /* 0 */ @js.native
+      object FormatError
+        extends TopLevel[typings.milkcocoa.milkcocoa.MilkCocoa.Error.Login.FormatError with Double]
+      
+      /* 1 */ @js.native
+      object LoginError extends TopLevel[LoginError with Double]
+      
     }
     
   }

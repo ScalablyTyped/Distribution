@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-downloader-helper"
-version := "1.0-dt-20190329Z-816ee0"
+version := "1.0-dt-20190329Z-935854"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,10 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.JsxFlags.IntrinsicElement
+import typings.typescript.typescriptMod.JsxFlags.IntrinsicIndexedElement
+import typings.typescript.typescriptMod.JsxFlags.IntrinsicNamedElement
+import typings.typescript.typescriptMod.JsxFlags.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,11 +29,19 @@ object JsxFlags extends js.Object {
   @js.native
   sealed trait None extends JsxFlags
   
-  /* 3 */ val IntrinsicElement: typings.typescript.typescriptMod.JsxFlags.IntrinsicElement with Double = js.native
-  /* 2 */ val IntrinsicIndexedElement: typings.typescript.typescriptMod.JsxFlags.IntrinsicIndexedElement with Double = js.native
-  /* 1 */ val IntrinsicNamedElement: typings.typescript.typescriptMod.JsxFlags.IntrinsicNamedElement with Double = js.native
-  /* 0 */ val None: typings.typescript.typescriptMod.JsxFlags.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[JsxFlags with Double] = js.native
+  /* 3 */ @js.native
+  object IntrinsicElement extends TopLevel[IntrinsicElement with Double]
+  
+  /* 2 */ @js.native
+  object IntrinsicIndexedElement extends TopLevel[IntrinsicIndexedElement with Double]
+  
+  /* 1 */ @js.native
+  object IntrinsicNamedElement extends TopLevel[IntrinsicNamedElement with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

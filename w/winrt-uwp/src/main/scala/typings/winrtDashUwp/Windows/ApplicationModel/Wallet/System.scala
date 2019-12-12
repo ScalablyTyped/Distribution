@@ -1,6 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appInstalled
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appNotInstalled
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.none
 import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemSystemStore
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
@@ -85,11 +89,17 @@ object System extends js.Object {
     @js.native
     sealed trait none extends WalletItemAppAssociation
     
-    /* 1 */ val appInstalled: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appInstalled with Double = js.native
-    /* 2 */ val appNotInstalled: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.appNotInstalled with Double = js.native
-    /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.System.WalletItemAppAssociation.none with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[WalletItemAppAssociation with Double] = js.native
+    /* 1 */ @js.native
+    object appInstalled extends TopLevel[appInstalled with Double]
+    
+    /* 2 */ @js.native
+    object appNotInstalled extends TopLevel[appNotInstalled with Double]
+    
+    /* 0 */ @js.native
+    object none extends TopLevel[none with Double]
+    
   }
   
   /* static members */

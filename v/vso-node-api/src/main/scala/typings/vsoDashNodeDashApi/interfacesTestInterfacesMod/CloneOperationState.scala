@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Failed
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.InProgress
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Queued
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object CloneOperationState extends js.Object {
   @js.native
   sealed trait Succeeded extends CloneOperationState
   
-  /* 2 */ val Failed: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Failed with Double = js.native
-  /* 1 */ val InProgress: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.InProgress with Double = js.native
-  /* 0 */ val Queued: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Queued with Double = js.native
-  /* 3 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CloneOperationState.Succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CloneOperationState with Double] = js.native
+  /* 2 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 1 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 0 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 3 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
 }
 

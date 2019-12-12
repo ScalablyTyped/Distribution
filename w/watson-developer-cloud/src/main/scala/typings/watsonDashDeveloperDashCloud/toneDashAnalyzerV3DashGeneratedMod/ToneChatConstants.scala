@@ -1,6 +1,18 @@
 package typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.AR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.DE
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.EN
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ES
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.FR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.IT
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.JA
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.KO
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW
 import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,19 +64,41 @@ object ToneChatConstants extends js.Object {
     @js.native
     sealed trait ZH_TW extends AcceptLanguage
     
-    /* "ar" */ val AR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.AR with String = js.native
-    /* "de" */ val DE: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.DE with String = js.native
-    /* "en" */ val EN: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.EN with String = js.native
-    /* "es" */ val ES: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ES with String = js.native
-    /* "fr" */ val FR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.FR with String = js.native
-    /* "it" */ val IT: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.IT with String = js.native
-    /* "ja" */ val JA: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.JA with String = js.native
-    /* "ko" */ val KO: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.KO with String = js.native
-    /* "pt-br" */ val PT_BR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR with String = js.native
-    /* "zh-cn" */ val ZH_CN: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN with String = js.native
-    /* "zh-tw" */ val ZH_TW: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[AcceptLanguage with String] = js.native
+    /* "ar" */ @js.native
+    object AR extends TopLevel[AR with String]
+    
+    /* "de" */ @js.native
+    object DE extends TopLevel[DE with String]
+    
+    /* "en" */ @js.native
+    object EN extends TopLevel[EN with String]
+    
+    /* "es" */ @js.native
+    object ES extends TopLevel[ES with String]
+    
+    /* "fr" */ @js.native
+    object FR extends TopLevel[FR with String]
+    
+    /* "it" */ @js.native
+    object IT extends TopLevel[IT with String]
+    
+    /* "ja" */ @js.native
+    object JA extends TopLevel[JA with String]
+    
+    /* "ko" */ @js.native
+    object KO extends TopLevel[KO with String]
+    
+    /* "pt-br" */ @js.native
+    object PT_BR extends TopLevel[PT_BR with String]
+    
+    /* "zh-cn" */ @js.native
+    object ZH_CN extends TopLevel[ZH_CN with String]
+    
+    /* "zh-tw" */ @js.native
+    object ZH_TW extends TopLevel[ZH_TW with String]
+    
   }
   
   /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
@@ -76,10 +110,20 @@ object ToneChatConstants extends js.Object {
     @js.native
     sealed trait FR extends ContentLanguage
     
-    /* "en" */ val EN: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.EN with String = js.native
-    /* "fr" */ val FR: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.FR with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ContentLanguage with String] = js.native
+    /* "en" */ @js.native
+    object EN
+      extends TopLevel[
+              typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.EN with String
+            ]
+    
+    /* "fr" */ @js.native
+    object FR
+      extends TopLevel[
+              typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneChatConstants.ContentLanguage.FR with String
+            ]
+    
   }
   
 }

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.bufferOverrun
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.frame
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveFull
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveParity
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.transmitFull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object SerialError extends js.Object {
   @js.native
   sealed trait transmitFull extends SerialError
   
-  /* 1 */ val bufferOverrun: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.bufferOverrun with Double = js.native
-  /* 0 */ val frame: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.frame with Double = js.native
-  /* 2 */ val receiveFull: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveFull with Double = js.native
-  /* 3 */ val receiveParity: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.receiveParity with Double = js.native
-  /* 4 */ val transmitFull: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialError.transmitFull with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SerialError with Double] = js.native
+  /* 1 */ @js.native
+  object bufferOverrun extends TopLevel[bufferOverrun with Double]
+  
+  /* 0 */ @js.native
+  object frame extends TopLevel[frame with Double]
+  
+  /* 2 */ @js.native
+  object receiveFull extends TopLevel[receiveFull with Double]
+  
+  /* 3 */ @js.native
+  object receiveParity extends TopLevel[receiveParity with Double]
+  
+  /* 4 */ @js.native
+  object transmitFull extends TopLevel[transmitFull with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.default
+import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr0
+import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr2
+import typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb4Cr4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object JpegSubsamplingMode extends js.Object {
   @js.native
   sealed trait y4Cb4Cr4 extends JpegSubsamplingMode
   
-  /* 0 */ val default: typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.default with Double = js.native
-  /* 1 */ val y4Cb2Cr0: typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr0 with Double = js.native
-  /* 2 */ val y4Cb2Cr2: typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb2Cr2 with Double = js.native
-  /* 3 */ val y4Cb4Cr4: typings.winrt.Windows.Graphics.Imaging.JpegSubsamplingMode.y4Cb4Cr4 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[JpegSubsamplingMode with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object y4Cb2Cr0 extends TopLevel[y4Cb2Cr0 with Double]
+  
+  /* 2 */ @js.native
+  object y4Cb2Cr2 extends TopLevel[y4Cb2Cr2 with Double]
+  
+  /* 3 */ @js.native
+  object y4Cb4Cr4 extends TopLevel[y4Cb4Cr4 with Double]
+  
 }
 

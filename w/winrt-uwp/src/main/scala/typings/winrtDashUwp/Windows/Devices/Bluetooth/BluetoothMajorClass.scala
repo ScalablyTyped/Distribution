@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.audioVideo
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.computer
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.health
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.imaging
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.miscellaneous
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.networkAccessPoint
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.peripheral
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.phone
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.toy
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.wearable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object BluetoothMajorClass extends js.Object {
   @js.native
   sealed trait wearable extends BluetoothMajorClass
   
-  /* 4 */ val audioVideo: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.audioVideo with Double = js.native
-  /* 1 */ val computer: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.computer with Double = js.native
-  /* 9 */ val health: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.health with Double = js.native
-  /* 6 */ val imaging: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.imaging with Double = js.native
-  /* 0 */ val miscellaneous: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.miscellaneous with Double = js.native
-  /* 3 */ val networkAccessPoint: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.networkAccessPoint with Double = js.native
-  /* 5 */ val peripheral: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.peripheral with Double = js.native
-  /* 2 */ val phone: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.phone with Double = js.native
-  /* 8 */ val toy: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.toy with Double = js.native
-  /* 7 */ val wearable: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMajorClass.wearable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothMajorClass with Double] = js.native
+  /* 4 */ @js.native
+  object audioVideo extends TopLevel[audioVideo with Double]
+  
+  /* 1 */ @js.native
+  object computer extends TopLevel[computer with Double]
+  
+  /* 9 */ @js.native
+  object health extends TopLevel[health with Double]
+  
+  /* 6 */ @js.native
+  object imaging extends TopLevel[imaging with Double]
+  
+  /* 0 */ @js.native
+  object miscellaneous extends TopLevel[miscellaneous with Double]
+  
+  /* 3 */ @js.native
+  object networkAccessPoint extends TopLevel[networkAccessPoint with Double]
+  
+  /* 5 */ @js.native
+  object peripheral extends TopLevel[peripheral with Double]
+  
+  /* 2 */ @js.native
+  object phone extends TopLevel[phone with Double]
+  
+  /* 8 */ @js.native
+  object toy extends TopLevel[toy with Double]
+  
+  /* 7 */ @js.native
+  object wearable extends TopLevel[wearable with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.daily
+import typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.halfHour
+import typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.hour
+import typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.sixHours
+import typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.twelveHours
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object PeriodicUpdateRecurrence extends js.Object {
   @js.native
   sealed trait twelveHours extends PeriodicUpdateRecurrence
   
-  /* 4 */ val daily: typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.daily with Double = js.native
-  /* 0 */ val halfHour: typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.halfHour with Double = js.native
-  /* 1 */ val hour: typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.hour with Double = js.native
-  /* 2 */ val sixHours: typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.sixHours with Double = js.native
-  /* 3 */ val twelveHours: typings.winrtDashUwp.Windows.UI.Notifications.PeriodicUpdateRecurrence.twelveHours with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PeriodicUpdateRecurrence with Double] = js.native
+  /* 4 */ @js.native
+  object daily extends TopLevel[daily with Double]
+  
+  /* 0 */ @js.native
+  object halfHour extends TopLevel[halfHour with Double]
+  
+  /* 1 */ @js.native
+  object hour extends TopLevel[hour with Double]
+  
+  /* 2 */ @js.native
+  object sixHours extends TopLevel[sixHours with Double]
+  
+  /* 3 */ @js.native
+  object twelveHours extends TopLevel[twelveHours with Double]
+  
 }
 

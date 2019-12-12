@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.copy
+import typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.link
+import typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.move
+import typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object DataPackageOperation extends js.Object {
   @js.native
   sealed trait none extends DataPackageOperation
   
-  /* 1 */ val copy: typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.copy with Double = js.native
-  /* 3 */ val link: typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.link with Double = js.native
-  /* 2 */ val move: typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.move with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.DataTransfer.DataPackageOperation.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataPackageOperation with Double] = js.native
+  /* 1 */ @js.native
+  object copy extends TopLevel[copy with Double]
+  
+  /* 3 */ @js.native
+  object link extends TopLevel[link with Double]
+  
+  /* 2 */ @js.native
+  object move extends TopLevel[move with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

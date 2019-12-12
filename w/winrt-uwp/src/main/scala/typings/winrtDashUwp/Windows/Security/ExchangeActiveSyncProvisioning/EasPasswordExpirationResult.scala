@@ -1,5 +1,15 @@
 package typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.adminsCannotChangePassword
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.canBeCompliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.compliant
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.invalidParameter
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.localControlledUsersCannotChangePassword
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.notEvaluated
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.requestedExpirationIncompatible
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.requestedPolicyIsStricter
+import typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.userCannotChangePassword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +57,34 @@ object EasPasswordExpirationResult extends js.Object {
   @js.native
   sealed trait userCannotChangePassword extends EasPasswordExpirationResult
   
-  /* 7 */ val adminsCannotChangePassword: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.adminsCannotChangePassword with Double = js.native
-  /* 2 */ val canBeCompliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.canBeCompliant with Double = js.native
-  /* 1 */ val compliant: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.compliant with Double = js.native
-  /* 5 */ val invalidParameter: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.invalidParameter with Double = js.native
-  /* 8 */ val localControlledUsersCannotChangePassword: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.localControlledUsersCannotChangePassword with Double = js.native
-  /* 0 */ val notEvaluated: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.notEvaluated with Double = js.native
-  /* 4 */ val requestedExpirationIncompatible: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.requestedExpirationIncompatible with Double = js.native
-  /* 3 */ val requestedPolicyIsStricter: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.requestedPolicyIsStricter with Double = js.native
-  /* 6 */ val userCannotChangePassword: typings.winrtDashUwp.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult.userCannotChangePassword with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EasPasswordExpirationResult with Double] = js.native
+  /* 7 */ @js.native
+  object adminsCannotChangePassword extends TopLevel[adminsCannotChangePassword with Double]
+  
+  /* 2 */ @js.native
+  object canBeCompliant extends TopLevel[canBeCompliant with Double]
+  
+  /* 1 */ @js.native
+  object compliant extends TopLevel[compliant with Double]
+  
+  /* 5 */ @js.native
+  object invalidParameter extends TopLevel[invalidParameter with Double]
+  
+  /* 8 */ @js.native
+  object localControlledUsersCannotChangePassword extends TopLevel[localControlledUsersCannotChangePassword with Double]
+  
+  /* 0 */ @js.native
+  object notEvaluated extends TopLevel[notEvaluated with Double]
+  
+  /* 4 */ @js.native
+  object requestedExpirationIncompatible extends TopLevel[requestedExpirationIncompatible with Double]
+  
+  /* 3 */ @js.native
+  object requestedPolicyIsStricter extends TopLevel[requestedPolicyIsStricter with Double]
+  
+  /* 6 */ @js.native
+  object userCannotChangePassword extends TopLevel[userCannotChangePassword with Double]
+  
 }
 

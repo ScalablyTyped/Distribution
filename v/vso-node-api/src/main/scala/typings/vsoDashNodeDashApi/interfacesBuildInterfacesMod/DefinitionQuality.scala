@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQuality.Definition
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQuality.Draft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object DefinitionQuality extends js.Object {
   @js.native
   sealed trait Draft extends DefinitionQuality
   
-  /* 1 */ val Definition: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQuality.Definition with Double = js.native
-  /* 2 */ val Draft: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQuality.Draft with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DefinitionQuality with Double] = js.native
+  /* 1 */ @js.native
+  object Definition extends TopLevel[Definition with Double]
+  
+  /* 2 */ @js.native
+  object Draft extends TopLevel[Draft with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Parent
+import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Self
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object TooltipOverflowMode extends js.Object {
   @js.native
   sealed trait Self extends TooltipOverflowMode
   
-  /* 0 */ val Parent: typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Parent with Double = js.native
-  /* 1 */ val Self: typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipHostDotTypesMod.TooltipOverflowMode.Self with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TooltipOverflowMode with Double] = js.native
+  /* 0 */ @js.native
+  object Parent extends TopLevel[Parent with Double]
+  
+  /* 1 */ @js.native
+  object Self extends TopLevel[Self with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.bingmaps.Microsoft.Maps.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.Search.MatchCode.ambiguous
+import typings.bingmaps.Microsoft.Maps.Search.MatchCode.good
+import typings.bingmaps.Microsoft.Maps.Search.MatchCode.modified
+import typings.bingmaps.Microsoft.Maps.Search.MatchCode.none
+import typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object MatchCode extends js.Object {
   @js.native
   sealed trait upHierarchy extends MatchCode
   
-  /* 2 */ val ambiguous: typings.bingmaps.Microsoft.Maps.Search.MatchCode.ambiguous with Double = js.native
-  /* 1 */ val good: typings.bingmaps.Microsoft.Maps.Search.MatchCode.good with Double = js.native
-  /* 4 */ val modified: typings.bingmaps.Microsoft.Maps.Search.MatchCode.modified with Double = js.native
-  /* 0 */ val none: typings.bingmaps.Microsoft.Maps.Search.MatchCode.none with Double = js.native
-  /* 3 */ val upHierarchy: typings.bingmaps.Microsoft.Maps.Search.MatchCode.upHierarchy with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MatchCode with Double] = js.native
+  /* 2 */ @js.native
+  object ambiguous extends TopLevel[ambiguous with Double]
+  
+  /* 1 */ @js.native
+  object good extends TopLevel[good with Double]
+  
+  /* 4 */ @js.native
+  object modified extends TopLevel[modified with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object upHierarchy extends TopLevel[upHierarchy with Double]
+  
 }
 

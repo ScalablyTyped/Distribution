@@ -1,5 +1,13 @@
 package typings.atTensorflowTfjsDashCore.distTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R0
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R1
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5
+import typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Rank extends js.Object {
   @js.native
   sealed trait R6 extends Rank
   
-  /* "R0" */ val R0: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R0 with String = js.native
-  /* "R1" */ val R1: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R1 with String = js.native
-  /* "R2" */ val R2: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R2 with String = js.native
-  /* "R3" */ val R3: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R3 with String = js.native
-  /* "R4" */ val R4: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R4 with String = js.native
-  /* "R5" */ val R5: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R5 with String = js.native
-  /* "R6" */ val R6: typings.atTensorflowTfjsDashCore.distTypesMod.Rank.R6 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Rank with String] = js.native
+  /* "R0" */ @js.native
+  object R0 extends TopLevel[R0 with String]
+  
+  /* "R1" */ @js.native
+  object R1 extends TopLevel[R1 with String]
+  
+  /* "R2" */ @js.native
+  object R2 extends TopLevel[R2 with String]
+  
+  /* "R3" */ @js.native
+  object R3 extends TopLevel[R3 with String]
+  
+  /* "R4" */ @js.native
+  object R4 extends TopLevel[R4 with String]
+  
+  /* "R5" */ @js.native
+  object R5 extends TopLevel[R5 with String]
+  
+  /* "R6" */ @js.native
+  object R6 extends TopLevel[R6 with String]
+  
 }
 

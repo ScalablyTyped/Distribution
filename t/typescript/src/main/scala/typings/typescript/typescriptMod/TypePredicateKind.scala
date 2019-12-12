@@ -1,5 +1,9 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.TypePredicateKind.AssertsIdentifier
+import typings.typescript.typescriptMod.TypePredicateKind.AssertsThis
+import typings.typescript.typescriptMod.TypePredicateKind.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +26,20 @@ object TypePredicateKind extends js.Object {
   @js.native
   sealed trait This extends TypePredicateKind
   
-  /* 3 */ val AssertsIdentifier: typings.typescript.typescriptMod.TypePredicateKind.AssertsIdentifier with Double = js.native
-  /* 2 */ val AssertsThis: typings.typescript.typescriptMod.TypePredicateKind.AssertsThis with Double = js.native
-  /* 1 */ val Identifier: typings.typescript.typescriptMod.TypePredicateKind.Identifier with Double = js.native
-  /* 0 */ val This: typings.typescript.typescriptMod.TypePredicateKind.This with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypePredicateKind with Double] = js.native
+  /* 3 */ @js.native
+  object AssertsIdentifier extends TopLevel[AssertsIdentifier with Double]
+  
+  /* 2 */ @js.native
+  object AssertsThis extends TopLevel[AssertsThis with Double]
+  
+  /* 1 */ @js.native
+  object Identifier
+    extends TopLevel[typings.typescript.typescriptMod.TypePredicateKind.Identifier with Double]
+  
+  /* 0 */ @js.native
+  object This extends TopLevel[This with Double]
+  
 }
 

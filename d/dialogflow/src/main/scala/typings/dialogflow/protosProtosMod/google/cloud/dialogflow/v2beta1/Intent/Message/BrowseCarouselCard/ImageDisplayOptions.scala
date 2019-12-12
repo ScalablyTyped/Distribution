@@ -1,5 +1,11 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.BLURRED_BACKGROUND
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.CROPPED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.GRAY
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.IMAGE_DISPLAY_OPTIONS_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.WHITE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,12 +32,22 @@ object ImageDisplayOptions extends js.Object {
   @js.native
   sealed trait WHITE extends ImageDisplayOptions
   
-  /* 4 */ val BLURRED_BACKGROUND: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.BLURRED_BACKGROUND with Double = js.native
-  /* 3 */ val CROPPED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.CROPPED with Double = js.native
-  /* 1 */ val GRAY: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.GRAY with Double = js.native
-  /* 0 */ val IMAGE_DISPLAY_OPTIONS_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.IMAGE_DISPLAY_OPTIONS_UNSPECIFIED with Double = js.native
-  /* 2 */ val WHITE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.BrowseCarouselCard.ImageDisplayOptions.WHITE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageDisplayOptions with Double] = js.native
+  /* 4 */ @js.native
+  object BLURRED_BACKGROUND extends TopLevel[BLURRED_BACKGROUND with Double]
+  
+  /* 3 */ @js.native
+  object CROPPED extends TopLevel[CROPPED with Double]
+  
+  /* 1 */ @js.native
+  object GRAY extends TopLevel[GRAY with Double]
+  
+  /* 0 */ @js.native
+  object IMAGE_DISPLAY_OPTIONS_UNSPECIFIED extends TopLevel[IMAGE_DISPLAY_OPTIONS_UNSPECIFIED with Double]
+  
+  /* 2 */ @js.native
+  object WHITE extends TopLevel[WHITE with Double]
+  
 }
 

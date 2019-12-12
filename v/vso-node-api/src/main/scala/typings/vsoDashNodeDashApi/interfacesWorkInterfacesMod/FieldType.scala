@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Boolean
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.DateTime
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Double
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Integer
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.PlainText
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.String
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.TreePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,35 @@ object FieldType extends js.Object {
   @js.native
   sealed trait TreePath extends FieldType
   
-  /* 5 */ val Boolean: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Boolean with scala.Double = js.native
-  /* 3 */ val DateTime: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.DateTime with scala.Double = js.native
-  /* 6 */ val Double: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Double with scala.Double = js.native
-  /* 2 */ val Integer: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.Integer with scala.Double = js.native
-  /* 1 */ val PlainText: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.PlainText with scala.Double = js.native
-  /* 0 */ val String: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.String with scala.Double = js.native
-  /* 4 */ val TreePath: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.FieldType.TreePath with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[FieldType with scala.Double] = js.native
+  /* 5 */ @js.native
+  object Boolean
+    extends TopLevel[Boolean with scala.Double]
+  
+  /* 3 */ @js.native
+  object DateTime
+    extends TopLevel[DateTime with scala.Double]
+  
+  /* 6 */ @js.native
+  object Double
+    extends TopLevel[Double with scala.Double]
+  
+  /* 2 */ @js.native
+  object Integer
+    extends TopLevel[Integer with scala.Double]
+  
+  /* 1 */ @js.native
+  object PlainText
+    extends TopLevel[PlainText with scala.Double]
+  
+  /* 0 */ @js.native
+  object String
+    extends TopLevel[String with scala.Double]
+  
+  /* 4 */ @js.native
+  object TreePath
+    extends TopLevel[TreePath with scala.Double]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Cross
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Diamond
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Pentagon
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Rectangle
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Triangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object SunburstLegendShape extends js.Object {
   @js.native
   sealed trait Triangle extends SunburstLegendShape
   
-  /* 3 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Circle with Double = js.native
-  /* 4 */ val Cross: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Cross with Double = js.native
-  /* 0 */ val Diamond: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Diamond with Double = js.native
-  /* 1 */ val Pentagon: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Pentagon with Double = js.native
-  /* 2 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Rectangle with Double = js.native
-  /* 5 */ val Triangle: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLegendShape.Triangle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SunburstLegendShape with Double] = js.native
+  /* 3 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 4 */ @js.native
+  object Cross extends TopLevel[Cross with Double]
+  
+  /* 0 */ @js.native
+  object Diamond extends TopLevel[Diamond with Double]
+  
+  /* 1 */ @js.native
+  object Pentagon extends TopLevel[Pentagon with Double]
+  
+  /* 2 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
+  /* 5 */ @js.native
+  object Triangle extends TopLevel[Triangle with Double]
+  
 }
 

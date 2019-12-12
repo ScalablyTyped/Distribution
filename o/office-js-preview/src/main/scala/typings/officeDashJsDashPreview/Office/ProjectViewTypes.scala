@@ -1,5 +1,22 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.Calendar
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.Gantt
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.NetworkDiagram
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceForm
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceGraph
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceNames
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceSheet
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceUsage
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskDetails
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskDiagram
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskForm
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskNameForm
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskSheet
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskUsage
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.TeamPlanner
+import typings.officeDashJsDashPreview.Office.ProjectViewTypes.Timeline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,23 +131,55 @@ object ProjectViewTypes extends js.Object {
   @js.native
   sealed trait Timeline extends ProjectViewTypes
   
-  /* 12 */ val Calendar: typings.officeDashJsDashPreview.Office.ProjectViewTypes.Calendar with Double = js.native
-  /* 0 */ val Gantt: typings.officeDashJsDashPreview.Office.ProjectViewTypes.Gantt with Double = js.native
-  /* 1 */ val NetworkDiagram: typings.officeDashJsDashPreview.Office.ProjectViewTypes.NetworkDiagram with Double = js.native
-  /* 5 */ val ResourceForm: typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceForm with Double = js.native
-  /* 7 */ val ResourceGraph: typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceGraph with Double = js.native
-  /* 11 */ val ResourceNames: typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceNames with Double = js.native
-  /* 6 */ val ResourceSheet: typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceSheet with Double = js.native
-  /* 14 */ val ResourceUsage: typings.officeDashJsDashPreview.Office.ProjectViewTypes.ResourceUsage with Double = js.native
-  /* 9 */ val TaskDetails: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskDetails with Double = js.native
-  /* 2 */ val TaskDiagram: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskDiagram with Double = js.native
-  /* 3 */ val TaskForm: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskForm with Double = js.native
-  /* 10 */ val TaskNameForm: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskNameForm with Double = js.native
-  /* 4 */ val TaskSheet: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskSheet with Double = js.native
-  /* 13 */ val TaskUsage: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TaskUsage with Double = js.native
-  /* 8 */ val TeamPlanner: typings.officeDashJsDashPreview.Office.ProjectViewTypes.TeamPlanner with Double = js.native
-  /* 15 */ val Timeline: typings.officeDashJsDashPreview.Office.ProjectViewTypes.Timeline with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProjectViewTypes with Double] = js.native
+  /* 12 */ @js.native
+  object Calendar extends TopLevel[Calendar with Double]
+  
+  /* 0 */ @js.native
+  object Gantt extends TopLevel[Gantt with Double]
+  
+  /* 1 */ @js.native
+  object NetworkDiagram extends TopLevel[NetworkDiagram with Double]
+  
+  /* 5 */ @js.native
+  object ResourceForm extends TopLevel[ResourceForm with Double]
+  
+  /* 7 */ @js.native
+  object ResourceGraph extends TopLevel[ResourceGraph with Double]
+  
+  /* 11 */ @js.native
+  object ResourceNames extends TopLevel[ResourceNames with Double]
+  
+  /* 6 */ @js.native
+  object ResourceSheet extends TopLevel[ResourceSheet with Double]
+  
+  /* 14 */ @js.native
+  object ResourceUsage extends TopLevel[ResourceUsage with Double]
+  
+  /* 9 */ @js.native
+  object TaskDetails extends TopLevel[TaskDetails with Double]
+  
+  /* 2 */ @js.native
+  object TaskDiagram extends TopLevel[TaskDiagram with Double]
+  
+  /* 3 */ @js.native
+  object TaskForm extends TopLevel[TaskForm with Double]
+  
+  /* 10 */ @js.native
+  object TaskNameForm extends TopLevel[TaskNameForm with Double]
+  
+  /* 4 */ @js.native
+  object TaskSheet extends TopLevel[TaskSheet with Double]
+  
+  /* 13 */ @js.native
+  object TaskUsage extends TopLevel[TaskUsage with Double]
+  
+  /* 8 */ @js.native
+  object TeamPlanner extends TopLevel[TeamPlanner with Double]
+  
+  /* 15 */ @js.native
+  object Timeline extends TopLevel[Timeline with Double]
+  
 }
 

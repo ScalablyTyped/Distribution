@@ -1,5 +1,25 @@
 package typings.ejDotWebDotAll.ej.datavisualization.CircularGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Circle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Cross
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Diamond
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Downarrow
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.HorizontalLine
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Image
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.InvertedTriangle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Leftarrow
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Pentagon
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rectangle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rightarrow
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.RoundedRectangle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Star
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Text
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Trapezoid
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Triangle
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Uparrow
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Verticalline
+import typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Wedge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,26 +106,64 @@ object IndicatorTypes extends js.Object {
   @js.native
   sealed trait Wedge extends IndicatorTypes
   
-  /* 1 */ val Circle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Circle with Double = js.native
-  /* 13 */ val Cross: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Cross with Double = js.native
-  /* 6 */ val Diamond: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Diamond with Double = js.native
-  /* 15 */ val Downarrow: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Downarrow with Double = js.native
-  /* 11 */ val HorizontalLine: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.HorizontalLine with Double = js.native
-  /* 4 */ val Image: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Image with Double = js.native
-  /* 18 */ val InvertedTriangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.InvertedTriangle with Double = js.native
-  /* 16 */ val Leftarrow: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Leftarrow with Double = js.native
-  /* 8 */ val Pentagon: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Pentagon with Double = js.native
-  /* 0 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rectangle with Double = js.native
-  /* 17 */ val Rightarrow: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Rightarrow with Double = js.native
-  /* 3 */ val RoundedRectangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.RoundedRectangle with Double = js.native
-  /* 10 */ val Star: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Star with Double = js.native
-  /* 2 */ val Text: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Text with Double = js.native
-  /* 7 */ val Trapezoid: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Trapezoid with Double = js.native
-  /* 5 */ val Triangle: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Triangle with Double = js.native
-  /* 14 */ val Uparrow: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Uparrow with Double = js.native
-  /* 12 */ val Verticalline: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Verticalline with Double = js.native
-  /* 9 */ val Wedge: typings.ejDotWebDotAll.ej.datavisualization.CircularGauge.IndicatorTypes.Wedge with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IndicatorTypes with Double] = js.native
+  /* 1 */ @js.native
+  object Circle extends TopLevel[Circle with Double]
+  
+  /* 13 */ @js.native
+  object Cross extends TopLevel[Cross with Double]
+  
+  /* 6 */ @js.native
+  object Diamond extends TopLevel[Diamond with Double]
+  
+  /* 15 */ @js.native
+  object Downarrow extends TopLevel[Downarrow with Double]
+  
+  /* 11 */ @js.native
+  object HorizontalLine extends TopLevel[HorizontalLine with Double]
+  
+  /* 4 */ @js.native
+  object Image extends TopLevel[Image with Double]
+  
+  /* 18 */ @js.native
+  object InvertedTriangle extends TopLevel[InvertedTriangle with Double]
+  
+  /* 16 */ @js.native
+  object Leftarrow extends TopLevel[Leftarrow with Double]
+  
+  /* 8 */ @js.native
+  object Pentagon extends TopLevel[Pentagon with Double]
+  
+  /* 0 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
+  /* 17 */ @js.native
+  object Rightarrow extends TopLevel[Rightarrow with Double]
+  
+  /* 3 */ @js.native
+  object RoundedRectangle extends TopLevel[RoundedRectangle with Double]
+  
+  /* 10 */ @js.native
+  object Star extends TopLevel[Star with Double]
+  
+  /* 2 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 7 */ @js.native
+  object Trapezoid extends TopLevel[Trapezoid with Double]
+  
+  /* 5 */ @js.native
+  object Triangle extends TopLevel[Triangle with Double]
+  
+  /* 14 */ @js.native
+  object Uparrow extends TopLevel[Uparrow with Double]
+  
+  /* 12 */ @js.native
+  object Verticalline extends TopLevel[Verticalline with Double]
+  
+  /* 9 */ @js.native
+  object Wedge extends TopLevel[Wedge with Double]
+  
 }
 

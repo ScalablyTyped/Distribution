@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.SheetVisibility.hidden
+import typings.officeDashJsDashPreview.Excel.SheetVisibility.veryHidden
+import typings.officeDashJsDashPreview.Excel.SheetVisibility.visible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SheetVisibility extends js.Object {
   @js.native
   sealed trait visible extends SheetVisibility
   
-  /* "Hidden" */ val hidden: typings.officeDashJsDashPreview.Excel.SheetVisibility.hidden with String = js.native
-  /* "VeryHidden" */ val veryHidden: typings.officeDashJsDashPreview.Excel.SheetVisibility.veryHidden with String = js.native
-  /* "Visible" */ val visible: typings.officeDashJsDashPreview.Excel.SheetVisibility.visible with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SheetVisibility with String] = js.native
+  /* "Hidden" */ @js.native
+  object hidden extends TopLevel[hidden with String]
+  
+  /* "VeryHidden" */ @js.native
+  object veryHidden extends TopLevel[veryHidden with String]
+  
+  /* "Visible" */ @js.native
+  object visible extends TopLevel[visible with String]
+  
 }
 

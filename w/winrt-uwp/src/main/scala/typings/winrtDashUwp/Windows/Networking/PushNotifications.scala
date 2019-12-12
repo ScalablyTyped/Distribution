@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -7,6 +8,11 @@ import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationChannel
 import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs
 import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType
+import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.badge
+import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.raw
+import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tile
+import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tileFlyout
+import typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.toast
 import typings.winrtDashUwp.Windows.UI.Notifications.BadgeNotification
 import typings.winrtDashUwp.Windows.UI.Notifications.TileNotification
 import typings.winrtDashUwp.Windows.UI.Notifications.ToastNotification
@@ -123,13 +129,23 @@ object PushNotifications extends js.Object {
     @js.native
     sealed trait toast extends PushNotificationType
     
-    /* 2 */ val badge: typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.badge with Double = js.native
-    /* 3 */ val raw: typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.raw with Double = js.native
-    /* 1 */ val tile: typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tile with Double = js.native
-    /* 4 */ val tileFlyout: typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.tileFlyout with Double = js.native
-    /* 0 */ val toast: typings.winrtDashUwp.Windows.Networking.PushNotifications.PushNotificationType.toast with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PushNotificationType with Double] = js.native
+    /* 2 */ @js.native
+    object badge extends TopLevel[badge with Double]
+    
+    /* 3 */ @js.native
+    object raw extends TopLevel[raw with Double]
+    
+    /* 1 */ @js.native
+    object tile extends TopLevel[tile with Double]
+    
+    /* 4 */ @js.native
+    object tileFlyout extends TopLevel[tileFlyout with Double]
+    
+    /* 0 */ @js.native
+    object toast extends TopLevel[toast with Double]
+    
   }
   
 }

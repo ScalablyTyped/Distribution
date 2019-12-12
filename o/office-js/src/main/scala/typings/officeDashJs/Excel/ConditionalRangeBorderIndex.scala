@@ -1,5 +1,10 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeBottom
+import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeLeft
+import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeRight
+import typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ConditionalRangeBorderIndex extends js.Object {
   @js.native
   sealed trait edgeTop extends ConditionalRangeBorderIndex
   
-  /* "EdgeBottom" */ val edgeBottom: typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeBottom with String = js.native
-  /* "EdgeLeft" */ val edgeLeft: typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeLeft with String = js.native
-  /* "EdgeRight" */ val edgeRight: typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeRight with String = js.native
-  /* "EdgeTop" */ val edgeTop: typings.officeDashJs.Excel.ConditionalRangeBorderIndex.edgeTop with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalRangeBorderIndex with String] = js.native
+  /* "EdgeBottom" */ @js.native
+  object edgeBottom extends TopLevel[edgeBottom with String]
+  
+  /* "EdgeLeft" */ @js.native
+  object edgeLeft extends TopLevel[edgeLeft with String]
+  
+  /* "EdgeRight" */ @js.native
+  object edgeRight extends TopLevel[edgeRight with String]
+  
+  /* "EdgeTop" */ @js.native
+  object edgeTop extends TopLevel[edgeTop with String]
+  
 }
 

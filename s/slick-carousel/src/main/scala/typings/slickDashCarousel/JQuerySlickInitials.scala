@@ -5,183 +5,137 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQuerySlickInitials extends js.Object {
   /**
     * jQuery instance that contains the "dots".
     * Default: null
     */
   @JSName("$dots")
-  var $dots: JQuery | Null
+  var $dots: JQuery | Null = js.native
   /**
     * jQuery instance that contains the "list".
     * Default: null
     */
   @JSName("$list")
-  var $list: Null
+  var $list: Null = js.native
   /**
     * jQuery instance that contains the "next arrow".
     * Default: null
     */
   @JSName("$nextArrow")
-  var $nextArrow: JQuery | Null
+  var $nextArrow: JQuery | Null = js.native
   /**
     * jQuery instance that contains the "prev arrow".
     * Default: null
     */
   @JSName("$prevArrow")
-  var $prevArrow: JQuery | Null
+  var $prevArrow: JQuery | Null = js.native
   /**
     * jQuery instance that contains the "slide track".
     * Default: null
     */
   @JSName("$slideTrack")
-  var $slideTrack: JQuery | Null
+  var $slideTrack: JQuery | Null = js.native
   /**
     * jQuery instance that contains the "slides".
     * Default: null
     */
   @JSName("$slides")
-  var $slides: JQuery | Null
+  var $slides: JQuery | Null = js.native
   /**
     * When there is an animation running.
     * Default: false
     */
-  var animating: Boolean
+  var animating: Boolean = js.native
   /**
     * Internal `setInterval` identifier.
     * Default: null
     */
-  var autoPlayTimer: Double | Null
+  var autoPlayTimer: Double | Null = js.native
   /**
     * The current direction (`0` for left and down, `1` for right and up).
     * Default: 0
     */
-  var currentDirection: Double
+  var currentDirection: Double = js.native
   /**
     * Default: null
     */
-  var currentLeft: Double | Null
+  var currentLeft: Double | Null = js.native
   /**
     * The index of the current slide.
     * Default: 0
     */
-  var currentSlide: Double
+  var currentSlide: Double = js.native
   /**
     * The direction (`0` for left and down, `1` for right and up).
     * Default: null
     */
-  var direction: Double
+  var direction: Double = js.native
   /**
     * When they user is dragging a slide.
     * Default: false
     */
-  var dragging: Boolean
+  var dragging: Boolean = js.native
   /**
     * The list's height in pixels.
     * Default: null
     */
-  var listHeight: Double | Null
+  var listHeight: Double | Null = js.native
   /**
     * The list's width in pixels.
     * Default: null
     */
-  var listWidth: Double | Null
+  var listWidth: Double | Null = js.native
   /**
     * (actually it's not used in Slick, so I don't know what it is...)
     * Default: 0
     */
-  var loadIndex: Double
+  var loadIndex: Double = js.native
   /**
     * When they user is scrolling a slide.
     * Default: false
     */
-  var scrolling: Boolean
+  var scrolling: Boolean = js.native
   /**
     * The number of slides.
     * Default: null
     */
-  var slideCount: Double | Null
+  var slideCount: Double | Null = js.native
   /**
     * Slide offset in pixels.
     * Default: 0
     */
-  var slideOffset: Double
+  var slideOffset: Double = js.native
   /**
     * The slide's width in pixels.
     * Default: null
     */
-  var slideWidth: Number | Null
+  var slideWidth: Number | Null = js.native
   /**
     * When the slider is sliding.
     * Default: false
     */
-  var sliding: Boolean
+  var sliding: Boolean = js.native
   /**
     * Default: null
     */
-  var swipeLeft: Double | Null
+  var swipeLeft: Double | Null = js.native
   /**
     * Default: false
     */
-  var swiping: Boolean
+  var swiping: Boolean = js.native
   /**
     * Object that contains properties relative to "touch" behavior.
     */
-  var touchObject: Anon_CurX
+  var touchObject: Anon_CurX = js.native
   /**
     * Default: false
     */
-  var transformsEnabled: Boolean
+  var transformsEnabled: Boolean = js.native
   /**
     * Default: false
     */
-  var unslicked: Boolean
-}
-
-object JQuerySlickInitials {
-  @scala.inline
-  def apply(
-    $list: Null,
-    animating: Boolean,
-    currentDirection: Double,
-    currentSlide: Double,
-    direction: Double,
-    dragging: Boolean,
-    loadIndex: Double,
-    scrolling: Boolean,
-    slideOffset: Double,
-    sliding: Boolean,
-    swiping: Boolean,
-    touchObject: Anon_CurX,
-    transformsEnabled: Boolean,
-    unslicked: Boolean,
-    $dots: JQuery = null,
-    $nextArrow: JQuery = null,
-    $prevArrow: JQuery = null,
-    $slideTrack: JQuery = null,
-    $slides: JQuery = null,
-    autoPlayTimer: Int | Double = null,
-    currentLeft: Int | Double = null,
-    listHeight: Int | Double = null,
-    listWidth: Int | Double = null,
-    slideCount: Int | Double = null,
-    slideWidth: Number = null,
-    swipeLeft: Int | Double = null
-  ): JQuerySlickInitials = {
-    val __obj = js.Dynamic.literal($list = $list.asInstanceOf[js.Any], animating = animating.asInstanceOf[js.Any], currentDirection = currentDirection.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], loadIndex = loadIndex.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], slideOffset = slideOffset.asInstanceOf[js.Any], sliding = sliding.asInstanceOf[js.Any], swiping = swiping.asInstanceOf[js.Any], touchObject = touchObject.asInstanceOf[js.Any], transformsEnabled = transformsEnabled.asInstanceOf[js.Any], unslicked = unslicked.asInstanceOf[js.Any])
-    if ($dots != null) __obj.updateDynamic("$dots")($dots.asInstanceOf[js.Any])
-    if ($nextArrow != null) __obj.updateDynamic("$nextArrow")($nextArrow.asInstanceOf[js.Any])
-    if ($prevArrow != null) __obj.updateDynamic("$prevArrow")($prevArrow.asInstanceOf[js.Any])
-    if ($slideTrack != null) __obj.updateDynamic("$slideTrack")($slideTrack.asInstanceOf[js.Any])
-    if ($slides != null) __obj.updateDynamic("$slides")($slides.asInstanceOf[js.Any])
-    if (autoPlayTimer != null) __obj.updateDynamic("autoPlayTimer")(autoPlayTimer.asInstanceOf[js.Any])
-    if (currentLeft != null) __obj.updateDynamic("currentLeft")(currentLeft.asInstanceOf[js.Any])
-    if (listHeight != null) __obj.updateDynamic("listHeight")(listHeight.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (slideCount != null) __obj.updateDynamic("slideCount")(slideCount.asInstanceOf[js.Any])
-    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    if (swipeLeft != null) __obj.updateDynamic("swipeLeft")(swipeLeft.asInstanceOf[js.Any])
-    __obj.asInstanceOf[JQuerySlickInitials]
-  }
+  var unslicked: Boolean = js.native
 }
 

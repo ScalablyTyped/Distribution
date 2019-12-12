@@ -1,9 +1,14 @@
 package typings.openui5.sap.ui.core.mvc
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType
+import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JS
+import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JSON
+import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.Template
+import typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.XML
 import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -416,13 +421,24 @@ object View extends js.Object {
       @js.native
       sealed trait XML extends ViewType
       
-      /* 0 */ val HTML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.HTML with Double = js.native
-      /* 1 */ val JS: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JS with Double = js.native
-      /* 2 */ val JSON: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.JSON with Double = js.native
-      /* 3 */ val Template: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.Template with Double = js.native
-      /* 4 */ val XML: typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.XML with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[ViewType with Double] = js.native
+      /* 0 */ @js.native
+      object HTML
+        extends TopLevel[typings.openui5.sap.ui.core.mvc.View.mvc.ViewType.HTML with Double]
+      
+      /* 1 */ @js.native
+      object JS extends TopLevel[JS with Double]
+      
+      /* 2 */ @js.native
+      object JSON extends TopLevel[JSON with Double]
+      
+      /* 3 */ @js.native
+      object Template extends TopLevel[Template with Double]
+      
+      /* 4 */ @js.native
+      object XML extends TopLevel[XML with Double]
+      
     }
     
   }

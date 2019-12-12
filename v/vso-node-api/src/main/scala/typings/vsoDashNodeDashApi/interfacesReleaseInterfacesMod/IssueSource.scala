@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.None
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.System
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object IssueSource extends js.Object {
   @js.native
   sealed trait User extends IssueSource
   
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.None with Double = js.native
-  /* 2 */ val System: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.System with Double = js.native
-  /* 1 */ val User: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.IssueSource.User with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IssueSource with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object System extends TopLevel[System with Double]
+  
+  /* 1 */ @js.native
+  object User extends TopLevel[User with Double]
+  
 }
 

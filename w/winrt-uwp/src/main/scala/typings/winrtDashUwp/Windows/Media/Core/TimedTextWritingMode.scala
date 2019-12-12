@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.leftRight
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.leftRightTopBottom
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.rightLeft
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.rightLeftTopBottom
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottom
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottomLeftRight
+import typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottomRightLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object TimedTextWritingMode extends js.Object {
   @js.native
   sealed trait topBottomRightLeft extends TimedTextWritingMode
   
-  /* 4 */ val leftRight: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.leftRight with Double = js.native
-  /* 0 */ val leftRightTopBottom: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.leftRightTopBottom with Double = js.native
-  /* 5 */ val rightLeft: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.rightLeft with Double = js.native
-  /* 1 */ val rightLeftTopBottom: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.rightLeftTopBottom with Double = js.native
-  /* 6 */ val topBottom: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottom with Double = js.native
-  /* 3 */ val topBottomLeftRight: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottomLeftRight with Double = js.native
-  /* 2 */ val topBottomRightLeft: typings.winrtDashUwp.Windows.Media.Core.TimedTextWritingMode.topBottomRightLeft with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimedTextWritingMode with Double] = js.native
+  /* 4 */ @js.native
+  object leftRight extends TopLevel[leftRight with Double]
+  
+  /* 0 */ @js.native
+  object leftRightTopBottom extends TopLevel[leftRightTopBottom with Double]
+  
+  /* 5 */ @js.native
+  object rightLeft extends TopLevel[rightLeft with Double]
+  
+  /* 1 */ @js.native
+  object rightLeftTopBottom extends TopLevel[rightLeftTopBottom with Double]
+  
+  /* 6 */ @js.native
+  object topBottom extends TopLevel[topBottom with Double]
+  
+  /* 3 */ @js.native
+  object topBottomLeftRight extends TopLevel[topBottomLeftRight with Double]
+  
+  /* 2 */ @js.native
+  object topBottomRightLeft extends TopLevel[topBottomRightLeft with Double]
+  
 }
 

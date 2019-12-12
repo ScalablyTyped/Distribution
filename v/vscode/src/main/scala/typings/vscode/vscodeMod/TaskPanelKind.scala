@@ -1,5 +1,9 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.TaskPanelKind.Dedicated
+import typings.vscode.vscodeMod.TaskPanelKind.New
+import typings.vscode.vscodeMod.TaskPanelKind.Shared
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +33,16 @@ object TaskPanelKind extends js.Object {
   @js.native
   sealed trait Shared extends TaskPanelKind
   
-  /* 2 */ val Dedicated: typings.vscode.vscodeMod.TaskPanelKind.Dedicated with Double = js.native
-  /* 3 */ val New: typings.vscode.vscodeMod.TaskPanelKind.New with Double = js.native
-  /* 1 */ val Shared: typings.vscode.vscodeMod.TaskPanelKind.Shared with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskPanelKind with Double] = js.native
+  /* 2 */ @js.native
+  object Dedicated extends TopLevel[Dedicated with Double]
+  
+  /* 3 */ @js.native
+  object New extends TopLevel[New with Double]
+  
+  /* 1 */ @js.native
+  object Shared extends TopLevel[Shared with Double]
+  
 }
 

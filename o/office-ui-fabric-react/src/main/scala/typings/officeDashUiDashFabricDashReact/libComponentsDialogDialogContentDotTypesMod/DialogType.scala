@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.close
+import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.largeHeader
+import typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object DialogType extends js.Object {
   @js.native
   sealed trait normal extends DialogType
   
-  /* 2 */ val close: typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.close with Double = js.native
-  /* 1 */ val largeHeader: typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.largeHeader with Double = js.native
-  /* 0 */ val normal: typings.officeDashUiDashFabricDashReact.libComponentsDialogDialogContentDotTypesMod.DialogType.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DialogType with Double] = js.native
+  /* 2 */ @js.native
+  object close extends TopLevel[close with Double]
+  
+  /* 1 */ @js.native
+  object largeHeader extends TopLevel[largeHeader with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

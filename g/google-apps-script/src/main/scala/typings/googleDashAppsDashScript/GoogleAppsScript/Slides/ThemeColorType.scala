@@ -1,5 +1,19 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT3
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT4
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT6
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.FOLLOWED_HYPERLINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.HYPERLINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,20 +66,46 @@ object ThemeColorType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends ThemeColorType
   
-  /* 5 */ val ACCENT1: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT1 with Double = js.native
-  /* 6 */ val ACCENT2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT2 with Double = js.native
-  /* 7 */ val ACCENT3: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT3 with Double = js.native
-  /* 8 */ val ACCENT4: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT4 with Double = js.native
-  /* 9 */ val ACCENT5: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT5 with Double = js.native
-  /* 10 */ val ACCENT6: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.ACCENT6 with Double = js.native
-  /* 1 */ val DARK1: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK1 with Double = js.native
-  /* 3 */ val DARK2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.DARK2 with Double = js.native
-  /* 12 */ val FOLLOWED_HYPERLINK: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.FOLLOWED_HYPERLINK with Double = js.native
-  /* 11 */ val HYPERLINK: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.HYPERLINK with Double = js.native
-  /* 2 */ val LIGHT1: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT1 with Double = js.native
-  /* 4 */ val LIGHT2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.LIGHT2 with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.ThemeColorType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ThemeColorType with Double] = js.native
+  /* 5 */ @js.native
+  object ACCENT1 extends TopLevel[ACCENT1 with Double]
+  
+  /* 6 */ @js.native
+  object ACCENT2 extends TopLevel[ACCENT2 with Double]
+  
+  /* 7 */ @js.native
+  object ACCENT3 extends TopLevel[ACCENT3 with Double]
+  
+  /* 8 */ @js.native
+  object ACCENT4 extends TopLevel[ACCENT4 with Double]
+  
+  /* 9 */ @js.native
+  object ACCENT5 extends TopLevel[ACCENT5 with Double]
+  
+  /* 10 */ @js.native
+  object ACCENT6 extends TopLevel[ACCENT6 with Double]
+  
+  /* 1 */ @js.native
+  object DARK1 extends TopLevel[DARK1 with Double]
+  
+  /* 3 */ @js.native
+  object DARK2 extends TopLevel[DARK2 with Double]
+  
+  /* 12 */ @js.native
+  object FOLLOWED_HYPERLINK extends TopLevel[FOLLOWED_HYPERLINK with Double]
+  
+  /* 11 */ @js.native
+  object HYPERLINK extends TopLevel[HYPERLINK with Double]
+  
+  /* 2 */ @js.native
+  object LIGHT1 extends TopLevel[LIGHT1 with Double]
+  
+  /* 4 */ @js.native
+  object LIGHT2 extends TopLevel[LIGHT2 with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

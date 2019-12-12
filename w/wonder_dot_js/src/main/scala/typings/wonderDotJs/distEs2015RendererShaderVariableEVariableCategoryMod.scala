@@ -1,6 +1,9 @@
 package typings.wonderDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.CUSTOM
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.ENGINE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +22,14 @@ object distEs2015RendererShaderVariableEVariableCategoryMod extends js.Object {
     @js.native
     sealed trait ENGINE extends EVariableCategory
     
-    /* 1 */ val CUSTOM: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.CUSTOM with Double = js.native
-    /* 0 */ val ENGINE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableCategoryMod.EVariableCategory.ENGINE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EVariableCategory with Double] = js.native
+    /* 1 */ @js.native
+    object CUSTOM extends TopLevel[CUSTOM with Double]
+    
+    /* 0 */ @js.native
+    object ENGINE extends TopLevel[ENGINE with Double]
+    
   }
   
 }

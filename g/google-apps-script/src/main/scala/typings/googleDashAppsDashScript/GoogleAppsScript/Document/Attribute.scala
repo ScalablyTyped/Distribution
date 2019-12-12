@@ -1,5 +1,44 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Document
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BACKGROUND_COLOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BOLD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BORDER_COLOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BORDER_WIDTH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.CODE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FONT_FAMILY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FONT_SIZE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FOREGROUND_COLOR
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.GLYPH_TYPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HEADING
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HEIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HORIZONTAL_ALIGNMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_END
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_FIRST_LINE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_START
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.ITALIC
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LEFT_TO_RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LINE_SPACING
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LINK_URL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LIST_ID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_BOTTOM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_LEFT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_TOP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MINIMUM_HEIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.NESTING_LEVEL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_BOTTOM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_LEFT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_TOP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PAGE_HEIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PAGE_WIDTH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.SPACING_AFTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.SPACING_BEFORE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.STRIKETHROUGH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.UNDERLINE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.VERTICAL_ALIGNMENT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.WIDTH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,45 +178,121 @@ object Attribute extends js.Object {
   @js.native
   sealed trait WIDTH extends Attribute
   
-  /* 0 */ val BACKGROUND_COLOR: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BACKGROUND_COLOR with Double = js.native
-  /* 1 */ val BOLD: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BOLD with Double = js.native
-  /* 2 */ val BORDER_COLOR: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BORDER_COLOR with Double = js.native
-  /* 3 */ val BORDER_WIDTH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.BORDER_WIDTH with Double = js.native
-  /* 4 */ val CODE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.CODE with Double = js.native
-  /* 5 */ val FONT_FAMILY: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FONT_FAMILY with Double = js.native
-  /* 6 */ val FONT_SIZE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FONT_SIZE with Double = js.native
-  /* 7 */ val FOREGROUND_COLOR: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.FOREGROUND_COLOR with Double = js.native
-  /* 15 */ val GLYPH_TYPE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.GLYPH_TYPE with Double = js.native
-  /* 8 */ val HEADING: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HEADING with Double = js.native
-  /* 9 */ val HEIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HEIGHT with Double = js.native
-  /* 10 */ val HORIZONTAL_ALIGNMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.HORIZONTAL_ALIGNMENT with Double = js.native
-  /* 11 */ val INDENT_END: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_END with Double = js.native
-  /* 12 */ val INDENT_FIRST_LINE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_FIRST_LINE with Double = js.native
-  /* 13 */ val INDENT_START: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.INDENT_START with Double = js.native
-  /* 14 */ val ITALIC: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.ITALIC with Double = js.native
-  /* 16 */ val LEFT_TO_RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LEFT_TO_RIGHT with Double = js.native
-  /* 17 */ val LINE_SPACING: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LINE_SPACING with Double = js.native
-  /* 18 */ val LINK_URL: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LINK_URL with Double = js.native
-  /* 19 */ val LIST_ID: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.LIST_ID with Double = js.native
-  /* 20 */ val MARGIN_BOTTOM: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_BOTTOM with Double = js.native
-  /* 21 */ val MARGIN_LEFT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_LEFT with Double = js.native
-  /* 22 */ val MARGIN_RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_RIGHT with Double = js.native
-  /* 23 */ val MARGIN_TOP: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MARGIN_TOP with Double = js.native
-  /* 25 */ val MINIMUM_HEIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.MINIMUM_HEIGHT with Double = js.native
-  /* 24 */ val NESTING_LEVEL: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.NESTING_LEVEL with Double = js.native
-  /* 26 */ val PADDING_BOTTOM: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_BOTTOM with Double = js.native
-  /* 27 */ val PADDING_LEFT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_LEFT with Double = js.native
-  /* 28 */ val PADDING_RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_RIGHT with Double = js.native
-  /* 29 */ val PADDING_TOP: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PADDING_TOP with Double = js.native
-  /* 30 */ val PAGE_HEIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PAGE_HEIGHT with Double = js.native
-  /* 31 */ val PAGE_WIDTH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.PAGE_WIDTH with Double = js.native
-  /* 32 */ val SPACING_AFTER: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.SPACING_AFTER with Double = js.native
-  /* 33 */ val SPACING_BEFORE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.SPACING_BEFORE with Double = js.native
-  /* 34 */ val STRIKETHROUGH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.STRIKETHROUGH with Double = js.native
-  /* 35 */ val UNDERLINE: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.UNDERLINE with Double = js.native
-  /* 36 */ val VERTICAL_ALIGNMENT: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.VERTICAL_ALIGNMENT with Double = js.native
-  /* 37 */ val WIDTH: typings.googleDashAppsDashScript.GoogleAppsScript.Document.Attribute.WIDTH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Attribute with Double] = js.native
+  /* 0 */ @js.native
+  object BACKGROUND_COLOR extends TopLevel[BACKGROUND_COLOR with Double]
+  
+  /* 1 */ @js.native
+  object BOLD extends TopLevel[BOLD with Double]
+  
+  /* 2 */ @js.native
+  object BORDER_COLOR extends TopLevel[BORDER_COLOR with Double]
+  
+  /* 3 */ @js.native
+  object BORDER_WIDTH extends TopLevel[BORDER_WIDTH with Double]
+  
+  /* 4 */ @js.native
+  object CODE extends TopLevel[CODE with Double]
+  
+  /* 5 */ @js.native
+  object FONT_FAMILY extends TopLevel[FONT_FAMILY with Double]
+  
+  /* 6 */ @js.native
+  object FONT_SIZE extends TopLevel[FONT_SIZE with Double]
+  
+  /* 7 */ @js.native
+  object FOREGROUND_COLOR extends TopLevel[FOREGROUND_COLOR with Double]
+  
+  /* 15 */ @js.native
+  object GLYPH_TYPE extends TopLevel[GLYPH_TYPE with Double]
+  
+  /* 8 */ @js.native
+  object HEADING extends TopLevel[HEADING with Double]
+  
+  /* 9 */ @js.native
+  object HEIGHT extends TopLevel[HEIGHT with Double]
+  
+  /* 10 */ @js.native
+  object HORIZONTAL_ALIGNMENT extends TopLevel[HORIZONTAL_ALIGNMENT with Double]
+  
+  /* 11 */ @js.native
+  object INDENT_END extends TopLevel[INDENT_END with Double]
+  
+  /* 12 */ @js.native
+  object INDENT_FIRST_LINE extends TopLevel[INDENT_FIRST_LINE with Double]
+  
+  /* 13 */ @js.native
+  object INDENT_START extends TopLevel[INDENT_START with Double]
+  
+  /* 14 */ @js.native
+  object ITALIC extends TopLevel[ITALIC with Double]
+  
+  /* 16 */ @js.native
+  object LEFT_TO_RIGHT extends TopLevel[LEFT_TO_RIGHT with Double]
+  
+  /* 17 */ @js.native
+  object LINE_SPACING extends TopLevel[LINE_SPACING with Double]
+  
+  /* 18 */ @js.native
+  object LINK_URL extends TopLevel[LINK_URL with Double]
+  
+  /* 19 */ @js.native
+  object LIST_ID extends TopLevel[LIST_ID with Double]
+  
+  /* 20 */ @js.native
+  object MARGIN_BOTTOM extends TopLevel[MARGIN_BOTTOM with Double]
+  
+  /* 21 */ @js.native
+  object MARGIN_LEFT extends TopLevel[MARGIN_LEFT with Double]
+  
+  /* 22 */ @js.native
+  object MARGIN_RIGHT extends TopLevel[MARGIN_RIGHT with Double]
+  
+  /* 23 */ @js.native
+  object MARGIN_TOP extends TopLevel[MARGIN_TOP with Double]
+  
+  /* 25 */ @js.native
+  object MINIMUM_HEIGHT extends TopLevel[MINIMUM_HEIGHT with Double]
+  
+  /* 24 */ @js.native
+  object NESTING_LEVEL extends TopLevel[NESTING_LEVEL with Double]
+  
+  /* 26 */ @js.native
+  object PADDING_BOTTOM extends TopLevel[PADDING_BOTTOM with Double]
+  
+  /* 27 */ @js.native
+  object PADDING_LEFT extends TopLevel[PADDING_LEFT with Double]
+  
+  /* 28 */ @js.native
+  object PADDING_RIGHT extends TopLevel[PADDING_RIGHT with Double]
+  
+  /* 29 */ @js.native
+  object PADDING_TOP extends TopLevel[PADDING_TOP with Double]
+  
+  /* 30 */ @js.native
+  object PAGE_HEIGHT extends TopLevel[PAGE_HEIGHT with Double]
+  
+  /* 31 */ @js.native
+  object PAGE_WIDTH extends TopLevel[PAGE_WIDTH with Double]
+  
+  /* 32 */ @js.native
+  object SPACING_AFTER extends TopLevel[SPACING_AFTER with Double]
+  
+  /* 33 */ @js.native
+  object SPACING_BEFORE extends TopLevel[SPACING_BEFORE with Double]
+  
+  /* 34 */ @js.native
+  object STRIKETHROUGH extends TopLevel[STRIKETHROUGH with Double]
+  
+  /* 35 */ @js.native
+  object UNDERLINE extends TopLevel[UNDERLINE with Double]
+  
+  /* 36 */ @js.native
+  object VERTICAL_ALIGNMENT extends TopLevel[VERTICAL_ALIGNMENT with Double]
+  
+  /* 37 */ @js.native
+  object WIDTH extends TopLevel[WIDTH with Double]
+  
 }
 

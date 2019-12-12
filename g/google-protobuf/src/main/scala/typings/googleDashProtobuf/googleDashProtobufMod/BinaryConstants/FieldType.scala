@@ -1,5 +1,27 @@
 package typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BOOL
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BYTES
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.DOUBLE
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.ENUM
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FHASH64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED32
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FLOAT
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.GROUP
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT32
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INVALID
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.MESSAGE
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED32
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT32
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.STRING
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT32
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT64
+import typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.VHASH64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,28 +95,70 @@ object FieldType extends js.Object {
   @js.native
   sealed trait VHASH64 extends FieldType
   
-  /* 8 */ val BOOL: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BOOL with Double = js.native
-  /* 12 */ val BYTES: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.BYTES with Double = js.native
-  /* 1 */ val DOUBLE: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.DOUBLE with Double = js.native
-  /* 14 */ val ENUM: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.ENUM with Double = js.native
-  /* 30 */ val FHASH64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FHASH64 with Double = js.native
-  /* 7 */ val FIXED32: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED32 with Double = js.native
-  /* 6 */ val FIXED64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FIXED64 with Double = js.native
-  /* 2 */ val FLOAT: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.FLOAT with Double = js.native
-  /* 10 */ val GROUP: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.GROUP with Double = js.native
-  /* 5 */ val INT32: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT32 with Double = js.native
-  /* 3 */ val INT64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INT64 with Double = js.native
-  /* -1 */ val INVALID: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.INVALID with Double = js.native
-  /* 11 */ val MESSAGE: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.MESSAGE with Double = js.native
-  /* 15 */ val SFIXED32: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED32 with Double = js.native
-  /* 16 */ val SFIXED64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SFIXED64 with Double = js.native
-  /* 17 */ val SINT32: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT32 with Double = js.native
-  /* 18 */ val SINT64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.SINT64 with Double = js.native
-  /* 9 */ val STRING: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.STRING with Double = js.native
-  /* 13 */ val UINT32: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT32 with Double = js.native
-  /* 4 */ val UINT64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.UINT64 with Double = js.native
-  /* 31 */ val VHASH64: typings.googleDashProtobuf.googleDashProtobufMod.BinaryConstants.FieldType.VHASH64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldType with Double] = js.native
+  /* 8 */ @js.native
+  object BOOL extends TopLevel[BOOL with Double]
+  
+  /* 12 */ @js.native
+  object BYTES extends TopLevel[BYTES with Double]
+  
+  /* 1 */ @js.native
+  object DOUBLE extends TopLevel[DOUBLE with Double]
+  
+  /* 14 */ @js.native
+  object ENUM extends TopLevel[ENUM with Double]
+  
+  /* 30 */ @js.native
+  object FHASH64 extends TopLevel[FHASH64 with Double]
+  
+  /* 7 */ @js.native
+  object FIXED32 extends TopLevel[FIXED32 with Double]
+  
+  /* 6 */ @js.native
+  object FIXED64 extends TopLevel[FIXED64 with Double]
+  
+  /* 2 */ @js.native
+  object FLOAT extends TopLevel[FLOAT with Double]
+  
+  /* 10 */ @js.native
+  object GROUP extends TopLevel[GROUP with Double]
+  
+  /* 5 */ @js.native
+  object INT32 extends TopLevel[INT32 with Double]
+  
+  /* 3 */ @js.native
+  object INT64 extends TopLevel[INT64 with Double]
+  
+  /* -1 */ @js.native
+  object INVALID extends TopLevel[INVALID with Double]
+  
+  /* 11 */ @js.native
+  object MESSAGE extends TopLevel[MESSAGE with Double]
+  
+  /* 15 */ @js.native
+  object SFIXED32 extends TopLevel[SFIXED32 with Double]
+  
+  /* 16 */ @js.native
+  object SFIXED64 extends TopLevel[SFIXED64 with Double]
+  
+  /* 17 */ @js.native
+  object SINT32 extends TopLevel[SINT32 with Double]
+  
+  /* 18 */ @js.native
+  object SINT64 extends TopLevel[SINT64 with Double]
+  
+  /* 9 */ @js.native
+  object STRING extends TopLevel[STRING with Double]
+  
+  /* 13 */ @js.native
+  object UINT32 extends TopLevel[UINT32 with Double]
+  
+  /* 4 */ @js.native
+  object UINT64 extends TopLevel[UINT64 with Double]
+  
+  /* 31 */ @js.native
+  object VHASH64 extends TopLevel[VHASH64 with Double]
+  
 }
 

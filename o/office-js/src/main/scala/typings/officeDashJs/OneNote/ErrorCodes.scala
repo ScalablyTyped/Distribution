@@ -1,5 +1,7 @@
 package typings.officeDashJs.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.OneNote.ErrorCodes.generalException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object ErrorCodes extends js.Object {
   @js.native
   sealed trait generalException extends ErrorCodes
   
-  /* "GeneralException" */ val generalException: typings.officeDashJs.OneNote.ErrorCodes.generalException with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ErrorCodes with String] = js.native
+  /* "GeneralException" */ @js.native
+  object generalException extends TopLevel[generalException with String]
+  
 }
 

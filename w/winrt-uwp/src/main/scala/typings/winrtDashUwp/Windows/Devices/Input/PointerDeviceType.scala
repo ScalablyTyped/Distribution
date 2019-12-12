@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.Input
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.mouse
+import typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.pen
+import typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.touch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PointerDeviceType extends js.Object {
   @js.native
   sealed trait touch extends PointerDeviceType
   
-  /* 2 */ val mouse: typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.mouse with Double = js.native
-  /* 1 */ val pen: typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.pen with Double = js.native
-  /* 0 */ val touch: typings.winrtDashUwp.Windows.Devices.Input.PointerDeviceType.touch with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointerDeviceType with Double] = js.native
+  /* 2 */ @js.native
+  object mouse extends TopLevel[mouse with Double]
+  
+  /* 1 */ @js.native
+  object pen extends TopLevel[pen with Double]
+  
+  /* 0 */ @js.native
+  object touch extends TopLevel[touch with Double]
+  
 }
 

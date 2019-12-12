@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "linq4js"
-version := "2.2.3-a615c3"
+version := "2.2.3-4a171e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,13 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.TabLeaderType.Dots
+import typings.devexpressDashWeb.TabLeaderType.EqualSign
+import typings.devexpressDashWeb.TabLeaderType.Hyphens
+import typings.devexpressDashWeb.TabLeaderType.MiddleDots
+import typings.devexpressDashWeb.TabLeaderType.None
+import typings.devexpressDashWeb.TabLeaderType.ThickLine
+import typings.devexpressDashWeb.TabLeaderType.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,14 +63,28 @@ object TabLeaderType extends js.Object {
   @js.native
   sealed trait Underline extends TabLeaderType
   
-  /* 1 */ val Dots: typings.devexpressDashWeb.TabLeaderType.Dots with Double = js.native
-  /* 6 */ val EqualSign: typings.devexpressDashWeb.TabLeaderType.EqualSign with Double = js.native
-  /* 3 */ val Hyphens: typings.devexpressDashWeb.TabLeaderType.Hyphens with Double = js.native
-  /* 2 */ val MiddleDots: typings.devexpressDashWeb.TabLeaderType.MiddleDots with Double = js.native
-  /* 0 */ val None: typings.devexpressDashWeb.TabLeaderType.None with Double = js.native
-  /* 5 */ val ThickLine: typings.devexpressDashWeb.TabLeaderType.ThickLine with Double = js.native
-  /* 4 */ val Underline: typings.devexpressDashWeb.TabLeaderType.Underline with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TabLeaderType with Double] = js.native
+  /* 1 */ @js.native
+  object Dots extends TopLevel[Dots with Double]
+  
+  /* 6 */ @js.native
+  object EqualSign extends TopLevel[EqualSign with Double]
+  
+  /* 3 */ @js.native
+  object Hyphens extends TopLevel[Hyphens with Double]
+  
+  /* 2 */ @js.native
+  object MiddleDots extends TopLevel[MiddleDots with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 5 */ @js.native
+  object ThickLine extends TopLevel[ThickLine with Double]
+  
+  /* 4 */ @js.native
+  object Underline extends TopLevel[Underline with Double]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Word.BodyType.footer
+import typings.officeDashJsDashPreview.Word.BodyType.header
+import typings.officeDashJsDashPreview.Word.BodyType.mainDoc
+import typings.officeDashJsDashPreview.Word.BodyType.section
+import typings.officeDashJsDashPreview.Word.BodyType.tableCell
+import typings.officeDashJsDashPreview.Word.BodyType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object BodyType extends js.Object {
   @js.native
   sealed trait unknown extends BodyType
   
-  /* "Footer" */ val footer: typings.officeDashJsDashPreview.Word.BodyType.footer with String = js.native
-  /* "Header" */ val header: typings.officeDashJsDashPreview.Word.BodyType.header with String = js.native
-  /* "MainDoc" */ val mainDoc: typings.officeDashJsDashPreview.Word.BodyType.mainDoc with String = js.native
-  /* "Section" */ val section: typings.officeDashJsDashPreview.Word.BodyType.section with String = js.native
-  /* "TableCell" */ val tableCell: typings.officeDashJsDashPreview.Word.BodyType.tableCell with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJsDashPreview.Word.BodyType.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BodyType with String] = js.native
+  /* "Footer" */ @js.native
+  object footer extends TopLevel[footer with String]
+  
+  /* "Header" */ @js.native
+  object header extends TopLevel[header with String]
+  
+  /* "MainDoc" */ @js.native
+  object mainDoc extends TopLevel[mainDoc with String]
+  
+  /* "Section" */ @js.native
+  object section extends TopLevel[section with String]
+  
+  /* "TableCell" */ @js.native
+  object tableCell extends TopLevel[tableCell with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

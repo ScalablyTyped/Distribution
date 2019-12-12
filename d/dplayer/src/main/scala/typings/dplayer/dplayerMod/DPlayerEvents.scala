@@ -1,5 +1,51 @@
 package typings.dplayer.dplayerMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dplayer.dplayerMod.DPlayerEvents.abort
+import typings.dplayer.dplayerMod.DPlayerEvents.canplay
+import typings.dplayer.dplayerMod.DPlayerEvents.canplaythrough
+import typings.dplayer.dplayerMod.DPlayerEvents.contextmenu_hide
+import typings.dplayer.dplayerMod.DPlayerEvents.contextmenu_show
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_clear
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_hide
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_loaded
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_opacity
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_send
+import typings.dplayer.dplayerMod.DPlayerEvents.danmaku_show
+import typings.dplayer.dplayerMod.DPlayerEvents.destroy
+import typings.dplayer.dplayerMod.DPlayerEvents.durationchange
+import typings.dplayer.dplayerMod.DPlayerEvents.emptied
+import typings.dplayer.dplayerMod.DPlayerEvents.ended
+import typings.dplayer.dplayerMod.DPlayerEvents.error
+import typings.dplayer.dplayerMod.DPlayerEvents.fullscreen
+import typings.dplayer.dplayerMod.DPlayerEvents.fullscreen_cancel
+import typings.dplayer.dplayerMod.DPlayerEvents.loadeddata
+import typings.dplayer.dplayerMod.DPlayerEvents.loadedmetadata
+import typings.dplayer.dplayerMod.DPlayerEvents.loadstart
+import typings.dplayer.dplayerMod.DPlayerEvents.mozaudioavailable
+import typings.dplayer.dplayerMod.DPlayerEvents.notice_hide
+import typings.dplayer.dplayerMod.DPlayerEvents.notice_show
+import typings.dplayer.dplayerMod.DPlayerEvents.pause
+import typings.dplayer.dplayerMod.DPlayerEvents.play
+import typings.dplayer.dplayerMod.DPlayerEvents.playing
+import typings.dplayer.dplayerMod.DPlayerEvents.progress
+import typings.dplayer.dplayerMod.DPlayerEvents.quality_end
+import typings.dplayer.dplayerMod.DPlayerEvents.quality_start
+import typings.dplayer.dplayerMod.DPlayerEvents.ratechange
+import typings.dplayer.dplayerMod.DPlayerEvents.resize
+import typings.dplayer.dplayerMod.DPlayerEvents.screenshot
+import typings.dplayer.dplayerMod.DPlayerEvents.seeked
+import typings.dplayer.dplayerMod.DPlayerEvents.seeking
+import typings.dplayer.dplayerMod.DPlayerEvents.stalled
+import typings.dplayer.dplayerMod.DPlayerEvents.subtitle_change
+import typings.dplayer.dplayerMod.DPlayerEvents.subtitle_hide
+import typings.dplayer.dplayerMod.DPlayerEvents.subtitle_show
+import typings.dplayer.dplayerMod.DPlayerEvents.suspend
+import typings.dplayer.dplayerMod.DPlayerEvents.thumbnails_hide
+import typings.dplayer.dplayerMod.DPlayerEvents.thumbnails_show
+import typings.dplayer.dplayerMod.DPlayerEvents.timeupdate
+import typings.dplayer.dplayerMod.DPlayerEvents.volumechange
+import typings.dplayer.dplayerMod.DPlayerEvents.waiting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -145,52 +191,142 @@ object DPlayerEvents extends js.Object {
   @js.native
   sealed trait waiting extends DPlayerEvents
   
-  /* "abort" */ val abort: typings.dplayer.dplayerMod.DPlayerEvents.abort with String = js.native
-  /* "canplay" */ val canplay: typings.dplayer.dplayerMod.DPlayerEvents.canplay with String = js.native
-  /* "canplaythrough" */ val canplaythrough: typings.dplayer.dplayerMod.DPlayerEvents.canplaythrough with String = js.native
-  /* "contextmenu_hide" */ val contextmenu_hide: typings.dplayer.dplayerMod.DPlayerEvents.contextmenu_hide with String = js.native
-  /* "contextmenu_show" */ val contextmenu_show: typings.dplayer.dplayerMod.DPlayerEvents.contextmenu_show with String = js.native
-  /* "danmaku_clear" */ val danmaku_clear: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_clear with String = js.native
-  /* "danmaku_hide" */ val danmaku_hide: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_hide with String = js.native
-  /* "danmaku_loaded" */ val danmaku_loaded: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_loaded with String = js.native
-  /* "danmaku_opacity" */ val danmaku_opacity: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_opacity with String = js.native
-  /* "danmaku_send" */ val danmaku_send: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_send with String = js.native
-  /* "danmaku_show" */ val danmaku_show: typings.dplayer.dplayerMod.DPlayerEvents.danmaku_show with String = js.native
-  /* "destroy" */ val destroy: typings.dplayer.dplayerMod.DPlayerEvents.destroy with String = js.native
-  /* "durationchange" */ val durationchange: typings.dplayer.dplayerMod.DPlayerEvents.durationchange with String = js.native
-  /* "emptied" */ val emptied: typings.dplayer.dplayerMod.DPlayerEvents.emptied with String = js.native
-  /* "ended" */ val ended: typings.dplayer.dplayerMod.DPlayerEvents.ended with String = js.native
-  /* "error" */ val error: typings.dplayer.dplayerMod.DPlayerEvents.error with String = js.native
-  /* "fullscreen" */ val fullscreen: typings.dplayer.dplayerMod.DPlayerEvents.fullscreen with String = js.native
-  /* "fullscreen_cancel" */ val fullscreen_cancel: typings.dplayer.dplayerMod.DPlayerEvents.fullscreen_cancel with String = js.native
-  /* "loadeddata" */ val loadeddata: typings.dplayer.dplayerMod.DPlayerEvents.loadeddata with String = js.native
-  /* "loadedmetadata" */ val loadedmetadata: typings.dplayer.dplayerMod.DPlayerEvents.loadedmetadata with String = js.native
-  /* "loadstart" */ val loadstart: typings.dplayer.dplayerMod.DPlayerEvents.loadstart with String = js.native
-  /* "mozaudioavailable" */ val mozaudioavailable: typings.dplayer.dplayerMod.DPlayerEvents.mozaudioavailable with String = js.native
-  /* "notice_hide" */ val notice_hide: typings.dplayer.dplayerMod.DPlayerEvents.notice_hide with String = js.native
-  /* "notice_show" */ val notice_show: typings.dplayer.dplayerMod.DPlayerEvents.notice_show with String = js.native
-  /* "pause" */ val pause: typings.dplayer.dplayerMod.DPlayerEvents.pause with String = js.native
-  /* "play" */ val play: typings.dplayer.dplayerMod.DPlayerEvents.play with String = js.native
-  /* "playing" */ val playing: typings.dplayer.dplayerMod.DPlayerEvents.playing with String = js.native
-  /* "progress" */ val progress: typings.dplayer.dplayerMod.DPlayerEvents.progress with String = js.native
-  /* "quality_end" */ val quality_end: typings.dplayer.dplayerMod.DPlayerEvents.quality_end with String = js.native
-  /* "quality_start" */ val quality_start: typings.dplayer.dplayerMod.DPlayerEvents.quality_start with String = js.native
-  /* "ratechange" */ val ratechange: typings.dplayer.dplayerMod.DPlayerEvents.ratechange with String = js.native
-  /* "resize" */ val resize: typings.dplayer.dplayerMod.DPlayerEvents.resize with String = js.native
-  /* "screenshot" */ val screenshot: typings.dplayer.dplayerMod.DPlayerEvents.screenshot with String = js.native
-  /* "seeked" */ val seeked: typings.dplayer.dplayerMod.DPlayerEvents.seeked with String = js.native
-  /* "seeking" */ val seeking: typings.dplayer.dplayerMod.DPlayerEvents.seeking with String = js.native
-  /* "stalled" */ val stalled: typings.dplayer.dplayerMod.DPlayerEvents.stalled with String = js.native
-  /* "subtitle_change" */ val subtitle_change: typings.dplayer.dplayerMod.DPlayerEvents.subtitle_change with String = js.native
-  /* "subtitle_hide" */ val subtitle_hide: typings.dplayer.dplayerMod.DPlayerEvents.subtitle_hide with String = js.native
-  /* "subtitle_show" */ val subtitle_show: typings.dplayer.dplayerMod.DPlayerEvents.subtitle_show with String = js.native
-  /* "suspend" */ val suspend: typings.dplayer.dplayerMod.DPlayerEvents.suspend with String = js.native
-  /* "thumbnails_hide" */ val thumbnails_hide: typings.dplayer.dplayerMod.DPlayerEvents.thumbnails_hide with String = js.native
-  /* "thumbnails_show" */ val thumbnails_show: typings.dplayer.dplayerMod.DPlayerEvents.thumbnails_show with String = js.native
-  /* "timeupdate" */ val timeupdate: typings.dplayer.dplayerMod.DPlayerEvents.timeupdate with String = js.native
-  /* "volumechange" */ val volumechange: typings.dplayer.dplayerMod.DPlayerEvents.volumechange with String = js.native
-  /* "waiting" */ val waiting: typings.dplayer.dplayerMod.DPlayerEvents.waiting with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DPlayerEvents with String] = js.native
+  /* "abort" */ @js.native
+  object abort extends TopLevel[abort with String]
+  
+  /* "canplay" */ @js.native
+  object canplay extends TopLevel[canplay with String]
+  
+  /* "canplaythrough" */ @js.native
+  object canplaythrough extends TopLevel[canplaythrough with String]
+  
+  /* "contextmenu_hide" */ @js.native
+  object contextmenu_hide extends TopLevel[contextmenu_hide with String]
+  
+  /* "contextmenu_show" */ @js.native
+  object contextmenu_show extends TopLevel[contextmenu_show with String]
+  
+  /* "danmaku_clear" */ @js.native
+  object danmaku_clear extends TopLevel[danmaku_clear with String]
+  
+  /* "danmaku_hide" */ @js.native
+  object danmaku_hide extends TopLevel[danmaku_hide with String]
+  
+  /* "danmaku_loaded" */ @js.native
+  object danmaku_loaded extends TopLevel[danmaku_loaded with String]
+  
+  /* "danmaku_opacity" */ @js.native
+  object danmaku_opacity extends TopLevel[danmaku_opacity with String]
+  
+  /* "danmaku_send" */ @js.native
+  object danmaku_send extends TopLevel[danmaku_send with String]
+  
+  /* "danmaku_show" */ @js.native
+  object danmaku_show extends TopLevel[danmaku_show with String]
+  
+  /* "destroy" */ @js.native
+  object destroy extends TopLevel[destroy with String]
+  
+  /* "durationchange" */ @js.native
+  object durationchange extends TopLevel[durationchange with String]
+  
+  /* "emptied" */ @js.native
+  object emptied extends TopLevel[emptied with String]
+  
+  /* "ended" */ @js.native
+  object ended extends TopLevel[ended with String]
+  
+  /* "error" */ @js.native
+  object error extends TopLevel[error with String]
+  
+  /* "fullscreen" */ @js.native
+  object fullscreen extends TopLevel[fullscreen with String]
+  
+  /* "fullscreen_cancel" */ @js.native
+  object fullscreen_cancel extends TopLevel[fullscreen_cancel with String]
+  
+  /* "loadeddata" */ @js.native
+  object loadeddata extends TopLevel[loadeddata with String]
+  
+  /* "loadedmetadata" */ @js.native
+  object loadedmetadata extends TopLevel[loadedmetadata with String]
+  
+  /* "loadstart" */ @js.native
+  object loadstart extends TopLevel[loadstart with String]
+  
+  /* "mozaudioavailable" */ @js.native
+  object mozaudioavailable extends TopLevel[mozaudioavailable with String]
+  
+  /* "notice_hide" */ @js.native
+  object notice_hide extends TopLevel[notice_hide with String]
+  
+  /* "notice_show" */ @js.native
+  object notice_show extends TopLevel[notice_show with String]
+  
+  /* "pause" */ @js.native
+  object pause extends TopLevel[pause with String]
+  
+  /* "play" */ @js.native
+  object play extends TopLevel[play with String]
+  
+  /* "playing" */ @js.native
+  object playing extends TopLevel[playing with String]
+  
+  /* "progress" */ @js.native
+  object progress extends TopLevel[progress with String]
+  
+  /* "quality_end" */ @js.native
+  object quality_end extends TopLevel[quality_end with String]
+  
+  /* "quality_start" */ @js.native
+  object quality_start extends TopLevel[quality_start with String]
+  
+  /* "ratechange" */ @js.native
+  object ratechange extends TopLevel[ratechange with String]
+  
+  /* "resize" */ @js.native
+  object resize extends TopLevel[resize with String]
+  
+  /* "screenshot" */ @js.native
+  object screenshot extends TopLevel[screenshot with String]
+  
+  /* "seeked" */ @js.native
+  object seeked extends TopLevel[seeked with String]
+  
+  /* "seeking" */ @js.native
+  object seeking extends TopLevel[seeking with String]
+  
+  /* "stalled" */ @js.native
+  object stalled extends TopLevel[stalled with String]
+  
+  /* "subtitle_change" */ @js.native
+  object subtitle_change extends TopLevel[subtitle_change with String]
+  
+  /* "subtitle_hide" */ @js.native
+  object subtitle_hide extends TopLevel[subtitle_hide with String]
+  
+  /* "subtitle_show" */ @js.native
+  object subtitle_show extends TopLevel[subtitle_show with String]
+  
+  /* "suspend" */ @js.native
+  object suspend extends TopLevel[suspend with String]
+  
+  /* "thumbnails_hide" */ @js.native
+  object thumbnails_hide extends TopLevel[thumbnails_hide with String]
+  
+  /* "thumbnails_show" */ @js.native
+  object thumbnails_show extends TopLevel[thumbnails_show with String]
+  
+  /* "timeupdate" */ @js.native
+  object timeupdate extends TopLevel[timeupdate with String]
+  
+  /* "volumechange" */ @js.native
+  object volumechange extends TopLevel[volumechange with String]
+  
+  /* "waiting" */ @js.native
+  object waiting extends TopLevel[waiting with String]
+  
 }
 

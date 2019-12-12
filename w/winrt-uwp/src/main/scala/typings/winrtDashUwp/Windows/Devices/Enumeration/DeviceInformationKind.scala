@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpoint
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointContainer
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointService
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.device
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceContainer
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterface
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterfaceClass
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object DeviceInformationKind extends js.Object {
   @js.native
   sealed trait unknown extends DeviceInformationKind
   
-  /* 5 */ val associationEndpoint: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpoint with Double = js.native
-  /* 6 */ val associationEndpointContainer: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointContainer with Double = js.native
-  /* 7 */ val associationEndpointService: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.associationEndpointService with Double = js.native
-  /* 3 */ val device: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.device with Double = js.native
-  /* 2 */ val deviceContainer: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceContainer with Double = js.native
-  /* 1 */ val deviceInterface: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterface with Double = js.native
-  /* 4 */ val deviceInterfaceClass: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.deviceInterfaceClass with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Enumeration.DeviceInformationKind.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeviceInformationKind with Double] = js.native
+  /* 5 */ @js.native
+  object associationEndpoint extends TopLevel[associationEndpoint with Double]
+  
+  /* 6 */ @js.native
+  object associationEndpointContainer extends TopLevel[associationEndpointContainer with Double]
+  
+  /* 7 */ @js.native
+  object associationEndpointService extends TopLevel[associationEndpointService with Double]
+  
+  /* 3 */ @js.native
+  object device extends TopLevel[device with Double]
+  
+  /* 2 */ @js.native
+  object deviceContainer extends TopLevel[deviceContainer with Double]
+  
+  /* 1 */ @js.native
+  object deviceInterface extends TopLevel[deviceInterface with Double]
+  
+  /* 4 */ @js.native
+  object deviceInterfaceClass extends TopLevel[deviceInterfaceClass with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

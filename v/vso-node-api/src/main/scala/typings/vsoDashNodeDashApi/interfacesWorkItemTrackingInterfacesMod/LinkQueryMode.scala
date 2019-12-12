@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopDoesNotContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopMayContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopMustContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveDoesNotContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveMayContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveMustContain
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.WorkItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,14 +51,28 @@ object LinkQueryMode extends js.Object {
   @js.native
   sealed trait WorkItems extends LinkQueryMode
   
-  /* 3 */ val LinksOneHopDoesNotContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopDoesNotContain with Double = js.native
-  /* 2 */ val LinksOneHopMayContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopMayContain with Double = js.native
-  /* 1 */ val LinksOneHopMustContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksOneHopMustContain with Double = js.native
-  /* 6 */ val LinksRecursiveDoesNotContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveDoesNotContain with Double = js.native
-  /* 5 */ val LinksRecursiveMayContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveMayContain with Double = js.native
-  /* 4 */ val LinksRecursiveMustContain: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.LinksRecursiveMustContain with Double = js.native
-  /* 0 */ val WorkItems: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode.WorkItems with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LinkQueryMode with Double] = js.native
+  /* 3 */ @js.native
+  object LinksOneHopDoesNotContain extends TopLevel[LinksOneHopDoesNotContain with Double]
+  
+  /* 2 */ @js.native
+  object LinksOneHopMayContain extends TopLevel[LinksOneHopMayContain with Double]
+  
+  /* 1 */ @js.native
+  object LinksOneHopMustContain extends TopLevel[LinksOneHopMustContain with Double]
+  
+  /* 6 */ @js.native
+  object LinksRecursiveDoesNotContain extends TopLevel[LinksRecursiveDoesNotContain with Double]
+  
+  /* 5 */ @js.native
+  object LinksRecursiveMayContain extends TopLevel[LinksRecursiveMayContain with Double]
+  
+  /* 4 */ @js.native
+  object LinksRecursiveMustContain extends TopLevel[LinksRecursiveMustContain with Double]
+  
+  /* 0 */ @js.native
+  object WorkItems extends TopLevel[WorkItems with Double]
+  
 }
 

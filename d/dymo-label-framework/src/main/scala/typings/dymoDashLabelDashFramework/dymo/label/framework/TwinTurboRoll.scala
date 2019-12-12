@@ -1,5 +1,9 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Auto
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Left
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object TwinTurboRoll extends js.Object {
   @js.native
   sealed trait Right extends TwinTurboRoll
   
-  /* 2 */ val Auto: typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Auto with Double = js.native
-  /* 0 */ val Left: typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Left with Double = js.native
-  /* 1 */ val Right: typings.dymoDashLabelDashFramework.dymo.label.framework.TwinTurboRoll.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TwinTurboRoll with Double] = js.native
+  /* 2 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 1 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior.parallel
+import typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior.serialized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object BackgroundTransferBehavior extends js.Object {
   @js.native
   sealed trait serialized extends BackgroundTransferBehavior
   
-  /* 0 */ val parallel: typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior.parallel with Double = js.native
-  /* 1 */ val serialized: typings.winrtDashUwp.Windows.Networking.BackgroundTransfer.BackgroundTransferBehavior.serialized with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BackgroundTransferBehavior with Double] = js.native
+  /* 0 */ @js.native
+  object parallel extends TopLevel[parallel with Double]
+  
+  /* 1 */ @js.native
+  object serialized extends TopLevel[serialized with Double]
+  
 }
 

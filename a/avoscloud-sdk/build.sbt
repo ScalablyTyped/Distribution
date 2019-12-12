@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "avoscloud-sdk"
-version := "0.6.10-dt-20190322Z-dda427"
+version := "0.6.10-dt-20190322Z-bb4673"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

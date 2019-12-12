@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.moderate
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.open
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.strict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object XboxLiveNetworkAccessKind extends js.Object {
   @js.native
   sealed trait strict extends XboxLiveNetworkAccessKind
   
-  /* 1 */ val moderate: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.moderate with Double = js.native
-  /* 0 */ val open: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.open with Double = js.native
-  /* 2 */ val strict: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveNetworkAccessKind.strict with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[XboxLiveNetworkAccessKind with Double] = js.native
+  /* 1 */ @js.native
+  object moderate extends TopLevel[moderate with Double]
+  
+  /* 0 */ @js.native
+  object open extends TopLevel[open with Double]
+  
+  /* 2 */ @js.native
+  object strict extends TopLevel[strict with Double]
+  
 }
 

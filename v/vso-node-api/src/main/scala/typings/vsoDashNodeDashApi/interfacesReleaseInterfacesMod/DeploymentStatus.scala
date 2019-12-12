@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.All
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Failed
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.NotDeployed
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.PartiallySucceeded
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Succeeded
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object DeploymentStatus extends js.Object {
   @js.native
   sealed trait Undefined extends DeploymentStatus
   
-  /* 31 */ val All: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.All with Double = js.native
-  /* 16 */ val Failed: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Failed with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.InProgress with Double = js.native
-  /* 1 */ val NotDeployed: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.NotDeployed with Double = js.native
-  /* 8 */ val PartiallySucceeded: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.PartiallySucceeded with Double = js.native
-  /* 4 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Succeeded with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentStatus.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentStatus with Double] = js.native
+  /* 31 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 16 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 1 */ @js.native
+  object NotDeployed extends TopLevel[NotDeployed with Double]
+  
+  /* 8 */ @js.native
+  object PartiallySucceeded extends TopLevel[PartiallySucceeded with Double]
+  
+  /* 4 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

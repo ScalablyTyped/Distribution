@@ -1,5 +1,8 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.AutoCut
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.ChainMarks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object TapeCutMode extends js.Object {
   @js.native
   sealed trait ChainMarks extends TapeCutMode
   
-  /* 0 */ val AutoCut: typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.AutoCut with Double = js.native
-  /* 1 */ val ChainMarks: typings.dymoDashLabelDashFramework.dymo.label.framework.TapeCutMode.ChainMarks with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TapeCutMode with Double] = js.native
+  /* 0 */ @js.native
+  object AutoCut extends TopLevel[AutoCut with Double]
+  
+  /* 1 */ @js.native
+  object ChainMarks extends TopLevel[ChainMarks with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.PageOrientation.landscape
+import typings.officeDashJs.Excel.PageOrientation.portrait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PageOrientation extends js.Object {
   @js.native
   sealed trait portrait extends PageOrientation
   
-  /* "Landscape" */ val landscape: typings.officeDashJs.Excel.PageOrientation.landscape with String = js.native
-  /* "Portrait" */ val portrait: typings.officeDashJs.Excel.PageOrientation.portrait with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PageOrientation with String] = js.native
+  /* "Landscape" */ @js.native
+  object landscape extends TopLevel[landscape with String]
+  
+  /* "Portrait" */ @js.native
+  object portrait extends TopLevel[portrait with String]
+  
 }
 

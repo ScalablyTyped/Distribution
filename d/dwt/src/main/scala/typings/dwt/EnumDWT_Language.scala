@@ -1,5 +1,15 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_Language.Arabic
+import typings.dwt.EnumDWT_Language.Chinese
+import typings.dwt.EnumDWT_Language.English
+import typings.dwt.EnumDWT_Language.French
+import typings.dwt.EnumDWT_Language.German
+import typings.dwt.EnumDWT_Language.Italian
+import typings.dwt.EnumDWT_Language.Portuguese
+import typings.dwt.EnumDWT_Language.Russian
+import typings.dwt.EnumDWT_Language.Spanish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object EnumDWT_Language extends js.Object {
   @js.native
   sealed trait Spanish extends EnumDWT_Language
   
-  /* 2 */ val Arabic: typings.dwt.EnumDWT_Language.Arabic with Double = js.native
-  /* 8 */ val Chinese: typings.dwt.EnumDWT_Language.Chinese with Double = js.native
-  /* 0 */ val English: typings.dwt.EnumDWT_Language.English with Double = js.native
-  /* 1 */ val French: typings.dwt.EnumDWT_Language.French with Double = js.native
-  /* 5 */ val German: typings.dwt.EnumDWT_Language.German with Double = js.native
-  /* 6 */ val Italian: typings.dwt.EnumDWT_Language.Italian with Double = js.native
-  /* 4 */ val Portuguese: typings.dwt.EnumDWT_Language.Portuguese with Double = js.native
-  /* 7 */ val Russian: typings.dwt.EnumDWT_Language.Russian with Double = js.native
-  /* 3 */ val Spanish: typings.dwt.EnumDWT_Language.Spanish with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_Language with Double] = js.native
+  /* 2 */ @js.native
+  object Arabic extends TopLevel[Arabic with Double]
+  
+  /* 8 */ @js.native
+  object Chinese extends TopLevel[Chinese with Double]
+  
+  /* 0 */ @js.native
+  object English extends TopLevel[English with Double]
+  
+  /* 1 */ @js.native
+  object French extends TopLevel[French with Double]
+  
+  /* 5 */ @js.native
+  object German extends TopLevel[German with Double]
+  
+  /* 6 */ @js.native
+  object Italian extends TopLevel[Italian with Double]
+  
+  /* 4 */ @js.native
+  object Portuguese extends TopLevel[Portuguese with Double]
+  
+  /* 7 */ @js.native
+  object Russian extends TopLevel[Russian with Double]
+  
+  /* 3 */ @js.native
+  object Spanish extends TopLevel[Spanish with Double]
+  
 }
 

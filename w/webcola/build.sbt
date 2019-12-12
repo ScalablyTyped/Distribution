@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webcola"
-version := "3.4.0-c936a2"
+version := "3.4.0-8ab4c6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

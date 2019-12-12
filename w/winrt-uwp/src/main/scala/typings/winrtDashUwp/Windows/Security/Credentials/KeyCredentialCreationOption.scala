@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialCreationOption.failIfExists
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialCreationOption.replaceExisting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object KeyCredentialCreationOption extends js.Object {
   @js.native
   sealed trait replaceExisting extends KeyCredentialCreationOption
   
-  /* 1 */ val failIfExists: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialCreationOption.failIfExists with Double = js.native
-  /* 0 */ val replaceExisting: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialCreationOption.replaceExisting with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyCredentialCreationOption with Double] = js.native
+  /* 1 */ @js.native
+  object failIfExists extends TopLevel[failIfExists with Double]
+  
+  /* 0 */ @js.native
+  object replaceExisting extends TopLevel[replaceExisting with Double]
+  
 }
 

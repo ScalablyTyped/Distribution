@@ -1,5 +1,11 @@
 package typings.kiiDashCloudDashSdk.KiiCloud
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.FACEBOOK
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.GOOGLEPLUS
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.QQ
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.RENREN
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.TWITTER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object KiiSocialNetworkName extends js.Object {
   @js.native
   sealed trait TWITTER extends KiiSocialNetworkName
   
-  /* 1 */ val FACEBOOK: typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.FACEBOOK with Double = js.native
-  /* 4 */ val GOOGLEPLUS: typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.GOOGLEPLUS with Double = js.native
-  /* 3 */ val QQ: typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.QQ with Double = js.native
-  /* 5 */ val RENREN: typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.RENREN with Double = js.native
-  /* 2 */ val TWITTER: typings.kiiDashCloudDashSdk.KiiCloud.KiiSocialNetworkName.TWITTER with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KiiSocialNetworkName with Double] = js.native
+  /* 1 */ @js.native
+  object FACEBOOK extends TopLevel[FACEBOOK with Double]
+  
+  /* 4 */ @js.native
+  object GOOGLEPLUS extends TopLevel[GOOGLEPLUS with Double]
+  
+  /* 3 */ @js.native
+  object QQ extends TopLevel[QQ with Double]
+  
+  /* 5 */ @js.native
+  object RENREN extends TopLevel[RENREN with Double]
+  
+  /* 2 */ @js.native
+  object TWITTER extends TopLevel[TWITTER with Double]
+  
 }
 

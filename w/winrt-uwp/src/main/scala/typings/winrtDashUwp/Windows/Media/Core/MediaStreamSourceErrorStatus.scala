@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.connectionToServerLost
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.decodeError
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToConnectToServer
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToOpenFile
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.other
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.outOfMemory
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unspecifiedNetworkError
+import typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unsupportedMediaFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object MediaStreamSourceErrorStatus extends js.Object {
   @js.native
   sealed trait unsupportedMediaFormat extends MediaStreamSourceErrorStatus
   
-  /* 4 */ val connectionToServerLost: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.connectionToServerLost with Double = js.native
-  /* 6 */ val decodeError: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.decodeError with Double = js.native
-  /* 3 */ val failedToConnectToServer: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToConnectToServer with Double = js.native
-  /* 2 */ val failedToOpenFile: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.failedToOpenFile with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.other with Double = js.native
-  /* 1 */ val outOfMemory: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.outOfMemory with Double = js.native
-  /* 5 */ val unspecifiedNetworkError: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unspecifiedNetworkError with Double = js.native
-  /* 7 */ val unsupportedMediaFormat: typings.winrtDashUwp.Windows.Media.Core.MediaStreamSourceErrorStatus.unsupportedMediaFormat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaStreamSourceErrorStatus with Double] = js.native
+  /* 4 */ @js.native
+  object connectionToServerLost extends TopLevel[connectionToServerLost with Double]
+  
+  /* 6 */ @js.native
+  object decodeError extends TopLevel[decodeError with Double]
+  
+  /* 3 */ @js.native
+  object failedToConnectToServer extends TopLevel[failedToConnectToServer with Double]
+  
+  /* 2 */ @js.native
+  object failedToOpenFile extends TopLevel[failedToOpenFile with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 1 */ @js.native
+  object outOfMemory extends TopLevel[outOfMemory with Double]
+  
+  /* 5 */ @js.native
+  object unspecifiedNetworkError extends TopLevel[unspecifiedNetworkError with Double]
+  
+  /* 7 */ @js.native
+  object unsupportedMediaFormat extends TopLevel[unsupportedMediaFormat with Double]
+  
 }
 

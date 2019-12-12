@@ -5,58 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SharedStylePropsT extends js.Object {
   @JSName("$date")
-  var $date: Date
+  var $date: Date = js.native
   @JSName("$disabled")
-  var $disabled: Boolean
+  var $disabled: Boolean = js.native
   @JSName("$hasRangeHighlighted")
-  var $hasRangeHighlighted: Boolean
+  var $hasRangeHighlighted: Boolean = js.native
   @JSName("$hasRangeOnRight")
-  var $hasRangeOnRight: Boolean
+  var $hasRangeOnRight: Boolean = js.native
   @JSName("$hasRangeSelected")
-  var $hasRangeSelected: Boolean
+  var $hasRangeSelected: Boolean = js.native
   @JSName("$isHeader")
-  var $isHeader: Boolean
+  var $isHeader: Boolean = js.native
   @JSName("$isHighlighted")
-  var $isHighlighted: Boolean
+  var $isHighlighted: Boolean = js.native
   @JSName("$isHovered")
-  var $isHovered: Boolean
+  var $isHovered: Boolean = js.native
   @JSName("$outsideMonth")
-  var $outsideMonth: Boolean
+  var $outsideMonth: Boolean = js.native
   @JSName("$pseudoHighlighted")
-  var $pseudoHighlighted: Boolean
+  var $pseudoHighlighted: Boolean = js.native
   @JSName("$pseudoSelected")
-  var $pseudoSelected: Boolean
+  var $pseudoSelected: Boolean = js.native
   @JSName("$range")
-  var $range: Boolean
+  var $range: Boolean = js.native
   @JSName("$selected")
-  var $selected: Boolean
+  var $selected: Boolean = js.native
   @JSName("$startDate")
-  var $startDate: Boolean
-}
-
-object SharedStylePropsT {
-  @scala.inline
-  def apply(
-    $date: Date,
-    $disabled: Boolean,
-    $hasRangeHighlighted: Boolean,
-    $hasRangeOnRight: Boolean,
-    $hasRangeSelected: Boolean,
-    $isHeader: Boolean,
-    $isHighlighted: Boolean,
-    $isHovered: Boolean,
-    $outsideMonth: Boolean,
-    $pseudoHighlighted: Boolean,
-    $pseudoSelected: Boolean,
-    $range: Boolean,
-    $selected: Boolean,
-    $startDate: Boolean
-  ): SharedStylePropsT = {
-    val __obj = js.Dynamic.literal($date = $date.asInstanceOf[js.Any], $disabled = $disabled.asInstanceOf[js.Any], $hasRangeHighlighted = $hasRangeHighlighted.asInstanceOf[js.Any], $hasRangeOnRight = $hasRangeOnRight.asInstanceOf[js.Any], $hasRangeSelected = $hasRangeSelected.asInstanceOf[js.Any], $isHeader = $isHeader.asInstanceOf[js.Any], $isHighlighted = $isHighlighted.asInstanceOf[js.Any], $isHovered = $isHovered.asInstanceOf[js.Any], $outsideMonth = $outsideMonth.asInstanceOf[js.Any], $pseudoHighlighted = $pseudoHighlighted.asInstanceOf[js.Any], $pseudoSelected = $pseudoSelected.asInstanceOf[js.Any], $range = $range.asInstanceOf[js.Any], $selected = $selected.asInstanceOf[js.Any], $startDate = $startDate.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[SharedStylePropsT]
-  }
+  var $startDate: Boolean = js.native
 }
 

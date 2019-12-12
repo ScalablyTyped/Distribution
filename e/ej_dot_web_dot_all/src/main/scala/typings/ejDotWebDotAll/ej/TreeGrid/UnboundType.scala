@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Cancel
+import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Delete
+import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Edit
+import typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Save
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object UnboundType extends js.Object {
   @js.native
   sealed trait Save extends UnboundType
   
-  /* 3 */ val Cancel: typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Cancel with Double = js.native
-  /* 2 */ val Delete: typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Delete with Double = js.native
-  /* 0 */ val Edit: typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Edit with Double = js.native
-  /* 1 */ val Save: typings.ejDotWebDotAll.ej.TreeGrid.UnboundType.Save with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnboundType with Double] = js.native
+  /* 3 */ @js.native
+  object Cancel extends TopLevel[Cancel with Double]
+  
+  /* 2 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 0 */ @js.native
+  object Edit extends TopLevel[Edit with Double]
+  
+  /* 1 */ @js.native
+  object Save extends TopLevel[Save with Double]
+  
 }
 

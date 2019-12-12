@@ -1,6 +1,7 @@
 package typings.rollupDashPluginDashTypescript2
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.rollupDashPluginDashTypescript2.rollupDashPluginDashTypescript2Numbers.`false`
 import typings.rollupDashPluginDashTypescript2.rollupDashPluginDashTypescript2Strings.JS
 import typings.rollupDashPluginDashTypescript2.rollupDashPluginDashTypescript2Strings.`0DOT8`
@@ -358,7 +359,6 @@ object distTsproxyMod extends js.Object {
     class OperationCanceledException ()
       extends typings.typescript.typescriptMod.OperationCanceledException
     
-    var OperationCanceledException: Instantiable0[typings.typescript.typescriptMod.OperationCanceledException] = js.native
     val ScriptSnapshot: TypeofScriptSnapshot = js.native
     var disableIncrementalParsing: Boolean = js.native
     val server: js.Any = js.native
@@ -7153,6 +7153,10 @@ object distTsproxyMod extends js.Object {
       nodesVisitor: Fn_Count
     ): NodeArray[ParameterDeclaration] = js.native
     def walkUpBindingElementsAndPatterns(binding: BindingElement): VariableDeclaration | ParameterDeclaration = js.native
+    @js.native
+    object OperationCanceledException
+      extends TopLevel[Instantiable0[typings.typescript.typescriptMod.OperationCanceledException]]
+    
   }
   
 }

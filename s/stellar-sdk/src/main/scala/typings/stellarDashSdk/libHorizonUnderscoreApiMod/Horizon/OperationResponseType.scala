@@ -1,5 +1,18 @@
 package typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.accountMerge
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.allowTrust
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.bumpSequence
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.changeTrust
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createAccount
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createPassiveOffer
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.inflation
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageData
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageOffer
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.pathPayment
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.payment
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.setOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object OperationResponseType extends js.Object {
   @js.native
   sealed trait setOptions extends OperationResponseType
   
-  /* "account_merge" */ val accountMerge: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.accountMerge with String = js.native
-  /* "allow_trust" */ val allowTrust: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.allowTrust with String = js.native
-  /* "bump_sequence" */ val bumpSequence: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.bumpSequence with String = js.native
-  /* "change_trust" */ val changeTrust: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.changeTrust with String = js.native
-  /* "create_account" */ val createAccount: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createAccount with String = js.native
-  /* "create_passive_offer" */ val createPassiveOffer: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.createPassiveOffer with String = js.native
-  /* "inflation" */ val inflation: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.inflation with String = js.native
-  /* "manage_data" */ val manageData: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageData with String = js.native
-  /* "manage_offer" */ val manageOffer: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.manageOffer with String = js.native
-  /* "path_payment" */ val pathPayment: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.pathPayment with String = js.native
-  /* "payment" */ val payment: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.payment with String = js.native
-  /* "set_options" */ val setOptions: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.OperationResponseType.setOptions with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OperationResponseType with String] = js.native
+  /* "account_merge" */ @js.native
+  object accountMerge extends TopLevel[accountMerge with String]
+  
+  /* "allow_trust" */ @js.native
+  object allowTrust extends TopLevel[allowTrust with String]
+  
+  /* "bump_sequence" */ @js.native
+  object bumpSequence extends TopLevel[bumpSequence with String]
+  
+  /* "change_trust" */ @js.native
+  object changeTrust extends TopLevel[changeTrust with String]
+  
+  /* "create_account" */ @js.native
+  object createAccount extends TopLevel[createAccount with String]
+  
+  /* "create_passive_offer" */ @js.native
+  object createPassiveOffer extends TopLevel[createPassiveOffer with String]
+  
+  /* "inflation" */ @js.native
+  object inflation extends TopLevel[inflation with String]
+  
+  /* "manage_data" */ @js.native
+  object manageData extends TopLevel[manageData with String]
+  
+  /* "manage_offer" */ @js.native
+  object manageOffer extends TopLevel[manageOffer with String]
+  
+  /* "path_payment" */ @js.native
+  object pathPayment extends TopLevel[pathPayment with String]
+  
+  /* "payment" */ @js.native
+  object payment extends TopLevel[payment with String]
+  
+  /* "set_options" */ @js.native
+  object setOptions extends TopLevel[setOptions with String]
+  
 }
 

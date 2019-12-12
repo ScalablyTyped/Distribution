@@ -1,5 +1,6 @@
 package typings.mapboxDashGl.mapboxDashGlMod
 
+import typings.mapboxDashGl.mapboxDashGlStrings.`-`
 import typings.mapboxDashGl.mapboxDashGlStrings.get_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -94,8 +95,9 @@ object ExpressionName {
   def `*`: typings.mapboxDashGl.mapboxDashGlStrings.`*` = this.cast("*")
   @scala.inline
   def `+`: typings.mapboxDashGl.mapboxDashGlStrings.`+` = this.cast("+")
+  @JSName("-")
   @scala.inline
-  def `-`: typings.mapboxDashGl.mapboxDashGlStrings.`-` = this.cast("-")
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   def `/`: typings.mapboxDashGl.mapboxDashGlStrings.`/` = this.cast("/")
   @scala.inline

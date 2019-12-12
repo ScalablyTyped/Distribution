@@ -1,5 +1,11 @@
 package typings.framesync.libTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.framesync.libTypesMod.StepId.FixedUpdate
+import typings.framesync.libTypesMod.StepId.PostRender
+import typings.framesync.libTypesMod.StepId.Read
+import typings.framesync.libTypesMod.StepId.Render
+import typings.framesync.libTypesMod.StepId.Update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object StepId extends js.Object {
   @js.native
   sealed trait Update extends StepId
   
-  /* "fixedUpdate" */ val FixedUpdate: typings.framesync.libTypesMod.StepId.FixedUpdate with String = js.native
-  /* "postRender" */ val PostRender: typings.framesync.libTypesMod.StepId.PostRender with String = js.native
-  /* "read" */ val Read: typings.framesync.libTypesMod.StepId.Read with String = js.native
-  /* "render" */ val Render: typings.framesync.libTypesMod.StepId.Render with String = js.native
-  /* "update" */ val Update: typings.framesync.libTypesMod.StepId.Update with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[StepId with String] = js.native
+  /* "fixedUpdate" */ @js.native
+  object FixedUpdate extends TopLevel[FixedUpdate with String]
+  
+  /* "postRender" */ @js.native
+  object PostRender extends TopLevel[PostRender with String]
+  
+  /* "read" */ @js.native
+  object Read extends TopLevel[Read with String]
+  
+  /* "render" */ @js.native
+  object Render extends TopLevel[Render with String]
+  
+  /* "update" */ @js.native
+  object Update extends TopLevel[Update with String]
+  
 }
 

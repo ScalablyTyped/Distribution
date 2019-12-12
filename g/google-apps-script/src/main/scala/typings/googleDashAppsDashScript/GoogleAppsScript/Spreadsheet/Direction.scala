@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.DOWN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.NEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.PREVIOUS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.UP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object Direction extends js.Object {
   @js.native
   sealed trait UP extends Direction
   
-  /* 1 */ val DOWN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.DOWN with Double = js.native
-  /* 3 */ val NEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.NEXT with Double = js.native
-  /* 2 */ val PREVIOUS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.PREVIOUS with Double = js.native
-  /* 0 */ val UP: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Direction.UP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Direction with Double] = js.native
+  /* 1 */ @js.native
+  object DOWN extends TopLevel[DOWN with Double]
+  
+  /* 3 */ @js.native
+  object NEXT extends TopLevel[NEXT with Double]
+  
+  /* 2 */ @js.native
+  object PREVIOUS extends TopLevel[PREVIOUS with Double]
+  
+  /* 0 */ @js.native
+  object UP extends TopLevel[UP with Double]
+  
 }
 

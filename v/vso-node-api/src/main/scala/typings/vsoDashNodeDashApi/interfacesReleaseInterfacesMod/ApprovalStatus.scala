@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Approved
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Canceled
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Pending
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Reassigned
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Rejected
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Skipped
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object ApprovalStatus extends js.Object {
   @js.native
   sealed trait Undefined extends ApprovalStatus
   
-  /* 2 */ val Approved: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Approved with Double = js.native
-  /* 7 */ val Canceled: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Canceled with Double = js.native
-  /* 1 */ val Pending: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Pending with Double = js.native
-  /* 6 */ val Reassigned: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Reassigned with Double = js.native
-  /* 4 */ val Rejected: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Rejected with Double = js.native
-  /* 8 */ val Skipped: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Skipped with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ApprovalStatus.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApprovalStatus with Double] = js.native
+  /* 2 */ @js.native
+  object Approved extends TopLevel[Approved with Double]
+  
+  /* 7 */ @js.native
+  object Canceled extends TopLevel[Canceled with Double]
+  
+  /* 1 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
+  /* 6 */ @js.native
+  object Reassigned extends TopLevel[Reassigned with Double]
+  
+  /* 4 */ @js.native
+  object Rejected extends TopLevel[Rejected with Double]
+  
+  /* 8 */ @js.native
+  object Skipped extends TopLevel[Skipped with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

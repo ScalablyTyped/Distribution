@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.none
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showDisconnectButton
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showProgress
+import typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showRetryButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object DevicePickerDisplayStatusOptions extends js.Object {
   @js.native
   sealed trait showRetryButton extends DevicePickerDisplayStatusOptions
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.none with Double = js.native
-  /* 2 */ val showDisconnectButton: typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showDisconnectButton with Double = js.native
-  /* 1 */ val showProgress: typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showProgress with Double = js.native
-  /* 3 */ val showRetryButton: typings.winrtDashUwp.Windows.Devices.Enumeration.DevicePickerDisplayStatusOptions.showRetryButton with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DevicePickerDisplayStatusOptions with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object showDisconnectButton extends TopLevel[showDisconnectButton with Double]
+  
+  /* 1 */ @js.native
+  object showProgress extends TopLevel[showProgress with Double]
+  
+  /* 3 */ @js.native
+  object showRetryButton extends TopLevel[showRetryButton with Double]
+  
 }
 

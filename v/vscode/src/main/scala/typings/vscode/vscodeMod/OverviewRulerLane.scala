@@ -1,5 +1,10 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.OverviewRulerLane.Center
+import typings.vscode.vscodeMod.OverviewRulerLane.Full
+import typings.vscode.vscodeMod.OverviewRulerLane.Left
+import typings.vscode.vscodeMod.OverviewRulerLane.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object OverviewRulerLane extends js.Object {
   @js.native
   sealed trait Right extends OverviewRulerLane
   
-  /* 2 */ val Center: typings.vscode.vscodeMod.OverviewRulerLane.Center with Double = js.native
-  /* 7 */ val Full: typings.vscode.vscodeMod.OverviewRulerLane.Full with Double = js.native
-  /* 1 */ val Left: typings.vscode.vscodeMod.OverviewRulerLane.Left with Double = js.native
-  /* 4 */ val Right: typings.vscode.vscodeMod.OverviewRulerLane.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OverviewRulerLane with Double] = js.native
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 7 */ @js.native
+  object Full extends TopLevel[Full with Double]
+  
+  /* 1 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 4 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,7 +1,14 @@
 package typings.atAngularCompiler
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.Token
 import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Character
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Error
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Identifier
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Keyword
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Number
+import typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Operator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,15 +74,32 @@ object srcExpressionUnderscoreParserLexerMod extends js.Object {
     @js.native
     sealed trait String extends TokenType
     
-    /* 0 */ val Character: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Character with Double = js.native
-    /* 6 */ val Error: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Error with Double = js.native
-    /* 1 */ val Identifier: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Identifier with Double = js.native
-    /* 2 */ val Keyword: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Keyword with Double = js.native
-    /* 5 */ val Number: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Number with Double = js.native
-    /* 4 */ val Operator: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.Operator with Double = js.native
-    /* 3 */ val String: typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.String with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TokenType with Double] = js.native
+    /* 0 */ @js.native
+    object Character extends TopLevel[Character with Double]
+    
+    /* 6 */ @js.native
+    object Error extends TopLevel[Error with Double]
+    
+    /* 1 */ @js.native
+    object Identifier extends TopLevel[Identifier with Double]
+    
+    /* 2 */ @js.native
+    object Keyword extends TopLevel[Keyword with Double]
+    
+    /* 5 */ @js.native
+    object Number extends TopLevel[Number with Double]
+    
+    /* 4 */ @js.native
+    object Operator extends TopLevel[Operator with Double]
+    
+    /* 3 */ @js.native
+    object String
+      extends TopLevel[
+              typings.atAngularCompiler.srcExpressionUnderscoreParserLexerMod.TokenType.String with Double
+            ]
+    
   }
   
 }

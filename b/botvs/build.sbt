@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "botvs"
-version := "1.0.5-fe889b"
+version := "1.0.5-a2ac75"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "highcharts" % "7.2.1-1f5ca4",
+  "org.scalablytyped" %%% "highcharts" % "7.2.1-11cd81",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20191126Z-536bad",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

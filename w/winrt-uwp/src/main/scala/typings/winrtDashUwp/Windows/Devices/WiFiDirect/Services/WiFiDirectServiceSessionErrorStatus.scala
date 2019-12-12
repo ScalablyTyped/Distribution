@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.disassociated
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.localClose
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.noResponseFromRemote
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.ok
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.remoteClose
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.systemFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object WiFiDirectServiceSessionErrorStatus extends js.Object {
   @js.native
   sealed trait systemFailure extends WiFiDirectServiceSessionErrorStatus
   
-  /* 1 */ val disassociated: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.disassociated with Double = js.native
-  /* 2 */ val localClose: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.localClose with Double = js.native
-  /* 5 */ val noResponseFromRemote: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.noResponseFromRemote with Double = js.native
-  /* 0 */ val ok: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.ok with Double = js.native
-  /* 3 */ val remoteClose: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.remoteClose with Double = js.native
-  /* 4 */ val systemFailure: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionErrorStatus.systemFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectServiceSessionErrorStatus with Double] = js.native
+  /* 1 */ @js.native
+  object disassociated extends TopLevel[disassociated with Double]
+  
+  /* 2 */ @js.native
+  object localClose extends TopLevel[localClose with Double]
+  
+  /* 5 */ @js.native
+  object noResponseFromRemote extends TopLevel[noResponseFromRemote with Double]
+  
+  /* 0 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 3 */ @js.native
+  object remoteClose extends TopLevel[remoteClose with Double]
+  
+  /* 4 */ @js.native
+  object systemFailure extends TopLevel[systemFailure with Double]
+  
 }
 

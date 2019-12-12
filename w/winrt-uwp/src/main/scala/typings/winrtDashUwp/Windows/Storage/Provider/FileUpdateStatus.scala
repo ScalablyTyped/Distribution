@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.complete
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.completeAndRenamed
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.currentlyUnavailable
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.failed
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.incomplete
+import typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.userInputNeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object FileUpdateStatus extends js.Object {
   @js.native
   sealed trait userInputNeeded extends FileUpdateStatus
   
-  /* 1 */ val complete: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.complete with Double = js.native
-  /* 5 */ val completeAndRenamed: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.completeAndRenamed with Double = js.native
-  /* 3 */ val currentlyUnavailable: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.currentlyUnavailable with Double = js.native
-  /* 4 */ val failed: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.failed with Double = js.native
-  /* 0 */ val incomplete: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.incomplete with Double = js.native
-  /* 2 */ val userInputNeeded: typings.winrtDashUwp.Windows.Storage.Provider.FileUpdateStatus.userInputNeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FileUpdateStatus with Double] = js.native
+  /* 1 */ @js.native
+  object complete extends TopLevel[complete with Double]
+  
+  /* 5 */ @js.native
+  object completeAndRenamed extends TopLevel[completeAndRenamed with Double]
+  
+  /* 3 */ @js.native
+  object currentlyUnavailable extends TopLevel[currentlyUnavailable with Double]
+  
+  /* 4 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 0 */ @js.native
+  object incomplete extends TopLevel[incomplete with Double]
+  
+  /* 2 */ @js.native
+  object userInputNeeded extends TopLevel[userInputNeeded with Double]
+  
 }
 

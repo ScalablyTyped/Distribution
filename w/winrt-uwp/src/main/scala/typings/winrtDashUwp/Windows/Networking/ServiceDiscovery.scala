@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Networking
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Array
 import typings.winrtDashUwp.Anon_Index
 import typings.winrtDashUwp.Anon_ItemsReturnValueDnssdServiceInstance
@@ -11,9 +12,18 @@ import typings.winrtDashUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtDashUwp.Windows.Networking.Connectivity.NetworkAdapter
 import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult
 import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.invalidServiceName
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.securityError
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.serverError
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.success
 import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance
 import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher
 import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.aborted
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.created
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.enumerationCompleted
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.started
+import typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.stopping
 import typings.winrtDashUwp.Windows.Networking.Sockets.DatagramSocket
 import typings.winrtDashUwp.Windows.Networking.Sockets.StreamSocketListener
 import typings.winrtDashUwp.Windows.WinRTEvent
@@ -187,12 +197,20 @@ object ServiceDiscovery extends js.Object {
       @js.native
       sealed trait success extends DnssdRegistrationStatus
       
-      /* 1 */ val invalidServiceName: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.invalidServiceName with Double = js.native
-      /* 3 */ val securityError: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.securityError with Double = js.native
-      /* 2 */ val serverError: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.serverError with Double = js.native
-      /* 0 */ val success: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationStatus.success with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[DnssdRegistrationStatus with Double] = js.native
+      /* 1 */ @js.native
+      object invalidServiceName extends TopLevel[invalidServiceName with Double]
+      
+      /* 3 */ @js.native
+      object securityError extends TopLevel[securityError with Double]
+      
+      /* 2 */ @js.native
+      object serverError extends TopLevel[serverError with Double]
+      
+      /* 0 */ @js.native
+      object success extends TopLevel[success with Double]
+      
     }
     
     /** Values representing the status of a DnssdServiceWatcher. */
@@ -222,14 +240,29 @@ object ServiceDiscovery extends js.Object {
       @js.native
       sealed trait stopping extends DnssdServiceWatcherStatus
       
-      /* 5 */ val aborted: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.aborted with Double = js.native
-      /* 0 */ val created: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.created with Double = js.native
-      /* 2 */ val enumerationCompleted: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.enumerationCompleted with Double = js.native
-      /* 1 */ val started: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.started with Double = js.native
-      /* 4 */ val stopped: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.stopped with Double = js.native
-      /* 3 */ val stopping: typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.stopping with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[DnssdServiceWatcherStatus with Double] = js.native
+      /* 5 */ @js.native
+      object aborted extends TopLevel[aborted with Double]
+      
+      /* 0 */ @js.native
+      object created extends TopLevel[created with Double]
+      
+      /* 2 */ @js.native
+      object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
+      
+      /* 1 */ @js.native
+      object started extends TopLevel[started with Double]
+      
+      /* 4 */ @js.native
+      object stopped
+        extends TopLevel[
+                  typings.winrtDashUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcherStatus.stopped with Double
+                ]
+      
+      /* 3 */ @js.native
+      object stopping extends TopLevel[stopping with Double]
+      
     }
     
   }

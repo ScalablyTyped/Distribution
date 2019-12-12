@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-calendar"
-version := "1.1.4-8bb5e8"
+version := "1.1.4-a3c826"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

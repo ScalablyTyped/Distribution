@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.HIGHWAYS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.TOLLS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Avoid extends js.Object {
   @js.native
   sealed trait TOLLS extends Avoid
   
-  /* 1 */ val HIGHWAYS: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.HIGHWAYS with Double = js.native
-  /* 0 */ val TOLLS: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Avoid.TOLLS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Avoid with Double] = js.native
+  /* 1 */ @js.native
+  object HIGHWAYS extends TopLevel[HIGHWAYS with Double]
+  
+  /* 0 */ @js.native
+  object TOLLS extends TopLevel[TOLLS with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.face
+import typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object RegionOfInterestType extends js.Object {
   @js.native
   sealed trait unknown extends RegionOfInterestType
   
-  /* 1 */ val face: typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.face with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Media.Devices.RegionOfInterestType.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RegionOfInterestType with Double] = js.native
+  /* 1 */ @js.native
+  object face extends TopLevel[face with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.chap
+import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.mschapv2
+import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.none
+import typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.pap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object CellularApnAuthenticationType extends js.Object {
   @js.native
   sealed trait pap extends CellularApnAuthenticationType
   
-  /* 2 */ val chap: typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.chap with Double = js.native
-  /* 3 */ val mschapv2: typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.mschapv2 with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.none with Double = js.native
-  /* 1 */ val pap: typings.winrtDashUwp.Windows.Networking.Connectivity.CellularApnAuthenticationType.pap with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CellularApnAuthenticationType with Double] = js.native
+  /* 2 */ @js.native
+  object chap extends TopLevel[chap with Double]
+  
+  /* 3 */ @js.native
+  object mschapv2 extends TopLevel[mschapv2 with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object pap extends TopLevel[pap with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.estree.estreeMod
 
+import typings.estree.estreeStrings.`-`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +46,9 @@ object BinaryOperator {
   def `**`: typings.estree.estreeStrings.`**` = this.cast("**")
   @scala.inline
   def `+`: typings.estree.estreeStrings.`+` = this.cast("+")
+  @JSName("-")
   @scala.inline
-  def `-`: typings.estree.estreeStrings.`-` = this.cast("-")
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   def `/`: typings.estree.estreeStrings.`/` = this.cast("/")
   @scala.inline

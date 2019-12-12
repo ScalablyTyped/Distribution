@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineDirection.horizontal
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineDirection.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PosPrinterLineDirection extends js.Object {
   @js.native
   sealed trait vertical extends PosPrinterLineDirection
   
-  /* 0 */ val horizontal: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineDirection.horizontal with Double = js.native
-  /* 1 */ val vertical: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterLineDirection.vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterLineDirection with Double] = js.native
+  /* 0 */ @js.native
+  object horizontal extends TopLevel[horizontal with Double]
+  
+  /* 1 */ @js.native
+  object vertical extends TopLevel[vertical with Double]
+  
 }
 

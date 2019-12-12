@@ -1,5 +1,7 @@
 package typings.dialogflow.protosProtosMod.google.protobuf
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.protobuf.NullValue.NULL_VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +16,10 @@ object NullValue extends js.Object {
   @js.native
   sealed trait NULL_VALUE extends NullValue
   
-  /* 0 */ val NULL_VALUE: typings.dialogflow.protosProtosMod.google.protobuf.NullValue.NULL_VALUE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NullValue with Double] = js.native
+  /* 0 */ @js.native
+  object NULL_VALUE extends TopLevel[NULL_VALUE with Double]
+  
 }
 

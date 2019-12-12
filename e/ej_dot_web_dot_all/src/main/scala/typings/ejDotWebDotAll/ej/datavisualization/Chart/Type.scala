@@ -1,5 +1,35 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Area
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bar
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bubble
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Candle
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Column
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Doughnut
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Funnel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLo
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLoOpenClose
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Line
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pie
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Polar
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pyramid
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Radar
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeArea
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeColumn
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Scatter
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Spline
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.SplineArea
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea100
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar100
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn100
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea100
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepArea
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -155,36 +185,94 @@ object Type extends js.Object {
   sealed trait StepLine
     extends typings.ejDotWebDotAll.ej.datavisualization.Chart.Type
   
-  /* 0 */ val Area: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Area with Double = js.native
-  /* 13 */ val Bar: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bar with Double = js.native
-  /* 5 */ val Bubble: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Bubble with Double = js.native
-  /* 12 */ val Candle: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Candle with Double = js.native
-  /* 3 */ val Column: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Column with Double = js.native
-  /* 25 */ val Doughnut: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Doughnut with Double = js.native
-  /* 24 */ val Funnel: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Funnel with Double = js.native
-  /* 10 */ val HiLo: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLo with Double = js.native
-  /* 11 */ val HiLoOpenClose: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.HiLoOpenClose with Double = js.native
-  /* 1 */ val Line: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Line with Double = js.native
-  /* 9 */ val Pie: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pie with Double = js.native
-  /* 26 */ val Polar: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Polar with Double = js.native
-  /* 23 */ val Pyramid: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Pyramid with Double = js.native
-  /* 27 */ val Radar: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Radar with Double = js.native
-  /* 28 */ val RangeArea: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeArea with Double = js.native
-  /* 16 */ val RangeColumn: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.RangeColumn with Double = js.native
-  /* 4 */ val Scatter: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Scatter with Double = js.native
-  /* 2 */ val Spline: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.Spline with Double = js.native
-  /* 6 */ val SplineArea: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.SplineArea with Double = js.native
-  /* 14 */ val StackingArea: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea with Double = js.native
-  /* 15 */ val StackingArea100: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingArea100 with Double = js.native
-  /* 19 */ val StackingBar: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar with Double = js.native
-  /* 20 */ val StackingBar100: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingBar100 with Double = js.native
-  /* 17 */ val StackingColumn: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn with Double = js.native
-  /* 18 */ val StackingColumn100: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingColumn100 with Double = js.native
-  /* 21 */ val StackingSplineArea: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea with Double = js.native
-  /* 22 */ val StackingSplineArea100: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StackingSplineArea100 with Double = js.native
-  /* 7 */ val StepArea: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepArea with Double = js.native
-  /* 8 */ val StepLine: typings.ejDotWebDotAll.ej.datavisualization.Chart.Type.StepLine with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.datavisualization.Chart.Type with Double] = js.native
+  /* 0 */ @js.native
+  object Area extends TopLevel[Area with Double]
+  
+  /* 13 */ @js.native
+  object Bar extends TopLevel[Bar with Double]
+  
+  /* 5 */ @js.native
+  object Bubble extends TopLevel[Bubble with Double]
+  
+  /* 12 */ @js.native
+  object Candle extends TopLevel[Candle with Double]
+  
+  /* 3 */ @js.native
+  object Column extends TopLevel[Column with Double]
+  
+  /* 25 */ @js.native
+  object Doughnut extends TopLevel[Doughnut with Double]
+  
+  /* 24 */ @js.native
+  object Funnel extends TopLevel[Funnel with Double]
+  
+  /* 10 */ @js.native
+  object HiLo extends TopLevel[HiLo with Double]
+  
+  /* 11 */ @js.native
+  object HiLoOpenClose extends TopLevel[HiLoOpenClose with Double]
+  
+  /* 1 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 9 */ @js.native
+  object Pie extends TopLevel[Pie with Double]
+  
+  /* 26 */ @js.native
+  object Polar extends TopLevel[Polar with Double]
+  
+  /* 23 */ @js.native
+  object Pyramid extends TopLevel[Pyramid with Double]
+  
+  /* 27 */ @js.native
+  object Radar extends TopLevel[Radar with Double]
+  
+  /* 28 */ @js.native
+  object RangeArea extends TopLevel[RangeArea with Double]
+  
+  /* 16 */ @js.native
+  object RangeColumn extends TopLevel[RangeColumn with Double]
+  
+  /* 4 */ @js.native
+  object Scatter extends TopLevel[Scatter with Double]
+  
+  /* 2 */ @js.native
+  object Spline extends TopLevel[Spline with Double]
+  
+  /* 6 */ @js.native
+  object SplineArea extends TopLevel[SplineArea with Double]
+  
+  /* 14 */ @js.native
+  object StackingArea extends TopLevel[StackingArea with Double]
+  
+  /* 15 */ @js.native
+  object StackingArea100 extends TopLevel[StackingArea100 with Double]
+  
+  /* 19 */ @js.native
+  object StackingBar extends TopLevel[StackingBar with Double]
+  
+  /* 20 */ @js.native
+  object StackingBar100 extends TopLevel[StackingBar100 with Double]
+  
+  /* 17 */ @js.native
+  object StackingColumn extends TopLevel[StackingColumn with Double]
+  
+  /* 18 */ @js.native
+  object StackingColumn100 extends TopLevel[StackingColumn100 with Double]
+  
+  /* 21 */ @js.native
+  object StackingSplineArea extends TopLevel[StackingSplineArea with Double]
+  
+  /* 22 */ @js.native
+  object StackingSplineArea100 extends TopLevel[StackingSplineArea100 with Double]
+  
+  /* 7 */ @js.native
+  object StepArea extends TopLevel[StepArea with Double]
+  
+  /* 8 */ @js.native
+  object StepLine extends TopLevel[StepLine with Double]
+  
 }
 

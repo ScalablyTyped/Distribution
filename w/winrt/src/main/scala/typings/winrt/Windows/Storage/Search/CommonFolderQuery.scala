@@ -1,5 +1,19 @@
 package typings.winrt.Windows.Storage.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.defaultQuery
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbum
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbumArtist
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByArtist
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAuthor
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByComposer
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByGenre
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByMonth
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByPublishedYear
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByRating
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByTag
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByType
+import typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByYear
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +63,46 @@ object CommonFolderQuery extends js.Object {
   @js.native
   sealed trait groupByYear extends CommonFolderQuery
   
-  /* 0 */ val defaultQuery: typings.winrt.Windows.Storage.Search.CommonFolderQuery.defaultQuery with Double = js.native
-  /* 4 */ val groupByAlbum: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbum with Double = js.native
-  /* 5 */ val groupByAlbumArtist: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAlbumArtist with Double = js.native
-  /* 3 */ val groupByArtist: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByArtist with Double = js.native
-  /* 11 */ val groupByAuthor: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByAuthor with Double = js.native
-  /* 6 */ val groupByComposer: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByComposer with Double = js.native
-  /* 7 */ val groupByGenre: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByGenre with Double = js.native
-  /* 2 */ val groupByMonth: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByMonth with Double = js.native
-  /* 8 */ val groupByPublishedYear: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByPublishedYear with Double = js.native
-  /* 9 */ val groupByRating: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByRating with Double = js.native
-  /* 10 */ val groupByTag: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByTag with Double = js.native
-  /* 12 */ val groupByType: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByType with Double = js.native
-  /* 1 */ val groupByYear: typings.winrt.Windows.Storage.Search.CommonFolderQuery.groupByYear with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommonFolderQuery with Double] = js.native
+  /* 0 */ @js.native
+  object defaultQuery extends TopLevel[defaultQuery with Double]
+  
+  /* 4 */ @js.native
+  object groupByAlbum extends TopLevel[groupByAlbum with Double]
+  
+  /* 5 */ @js.native
+  object groupByAlbumArtist extends TopLevel[groupByAlbumArtist with Double]
+  
+  /* 3 */ @js.native
+  object groupByArtist extends TopLevel[groupByArtist with Double]
+  
+  /* 11 */ @js.native
+  object groupByAuthor extends TopLevel[groupByAuthor with Double]
+  
+  /* 6 */ @js.native
+  object groupByComposer extends TopLevel[groupByComposer with Double]
+  
+  /* 7 */ @js.native
+  object groupByGenre extends TopLevel[groupByGenre with Double]
+  
+  /* 2 */ @js.native
+  object groupByMonth extends TopLevel[groupByMonth with Double]
+  
+  /* 8 */ @js.native
+  object groupByPublishedYear extends TopLevel[groupByPublishedYear with Double]
+  
+  /* 9 */ @js.native
+  object groupByRating extends TopLevel[groupByRating with Double]
+  
+  /* 10 */ @js.native
+  object groupByTag extends TopLevel[groupByTag with Double]
+  
+  /* 12 */ @js.native
+  object groupByType extends TopLevel[groupByType with Double]
+  
+  /* 1 */ @js.native
+  object groupByYear extends TopLevel[groupByYear with Double]
+  
 }
 

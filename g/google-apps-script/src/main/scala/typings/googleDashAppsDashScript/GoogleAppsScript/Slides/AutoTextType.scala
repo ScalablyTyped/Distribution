@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AutoTextType.SLIDE_NUMBER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AutoTextType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object AutoTextType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends AutoTextType
   
-  /* 1 */ val SLIDE_NUMBER: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AutoTextType.SLIDE_NUMBER with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.AutoTextType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AutoTextType with Double] = js.native
+  /* 1 */ @js.native
+  object SLIDE_NUMBER extends TopLevel[SLIDE_NUMBER with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

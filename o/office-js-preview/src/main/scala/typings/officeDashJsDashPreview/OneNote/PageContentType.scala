@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.OneNote.PageContentType.image
+import typings.officeDashJsDashPreview.OneNote.PageContentType.ink
+import typings.officeDashJsDashPreview.OneNote.PageContentType.other
+import typings.officeDashJsDashPreview.OneNote.PageContentType.outline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object PageContentType extends js.Object {
   @js.native
   sealed trait outline extends PageContentType
   
-  /* "Image" */ val image: typings.officeDashJsDashPreview.OneNote.PageContentType.image with String = js.native
-  /* "Ink" */ val ink: typings.officeDashJsDashPreview.OneNote.PageContentType.ink with String = js.native
-  /* "Other" */ val other: typings.officeDashJsDashPreview.OneNote.PageContentType.other with String = js.native
-  /* "Outline" */ val outline: typings.officeDashJsDashPreview.OneNote.PageContentType.outline with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PageContentType with String] = js.native
+  /* "Image" */ @js.native
+  object image extends TopLevel[image with String]
+  
+  /* "Ink" */ @js.native
+  object ink extends TopLevel[ink with String]
+  
+  /* "Other" */ @js.native
+  object other extends TopLevel[other with String]
+  
+  /* "Outline" */ @js.native
+  object outline extends TopLevel[outline with String]
+  
 }
 

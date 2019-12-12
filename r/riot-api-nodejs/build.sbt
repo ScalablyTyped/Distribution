@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "riot-api-nodejs"
-version := "0.0-unknown-dt-20190322Z-aa5b0a"
+version := "0.0-unknown-dt-20190322Z-03e48c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

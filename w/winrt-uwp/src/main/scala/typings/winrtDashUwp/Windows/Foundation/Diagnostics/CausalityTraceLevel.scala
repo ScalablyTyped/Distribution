@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.important
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.required
+import typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.verbose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object CausalityTraceLevel extends js.Object {
   @js.native
   sealed trait verbose extends CausalityTraceLevel
   
-  /* 1 */ val important: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.important with Double = js.native
-  /* 0 */ val required: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.required with Double = js.native
-  /* 2 */ val verbose: typings.winrtDashUwp.Windows.Foundation.Diagnostics.CausalityTraceLevel.verbose with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CausalityTraceLevel with Double] = js.native
+  /* 1 */ @js.native
+  object important extends TopLevel[important with Double]
+  
+  /* 0 */ @js.native
+  object required extends TopLevel[required with Double]
+  
+  /* 2 */ @js.native
+  object verbose extends TopLevel[verbose with Double]
+  
 }
 

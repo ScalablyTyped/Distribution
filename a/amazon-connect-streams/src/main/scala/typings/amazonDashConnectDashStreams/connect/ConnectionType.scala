@@ -1,5 +1,10 @@
 package typings.amazonDashConnectDashStreams.connect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.amazonDashConnectDashStreams.connect.ConnectionType.AGENT
+import typings.amazonDashConnectDashStreams.connect.ConnectionType.INBOUND
+import typings.amazonDashConnectDashStreams.connect.ConnectionType.MONITORING
+import typings.amazonDashConnectDashStreams.connect.ConnectionType.OUTBOUND
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ConnectionType extends js.Object {
   @js.native
   sealed trait OUTBOUND extends ConnectionType
   
-  /* "agent" */ val AGENT: typings.amazonDashConnectDashStreams.connect.ConnectionType.AGENT with String = js.native
-  /* "inbound" */ val INBOUND: typings.amazonDashConnectDashStreams.connect.ConnectionType.INBOUND with String = js.native
-  /* "monitoring" */ val MONITORING: typings.amazonDashConnectDashStreams.connect.ConnectionType.MONITORING with String = js.native
-  /* "outbound" */ val OUTBOUND: typings.amazonDashConnectDashStreams.connect.ConnectionType.OUTBOUND with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConnectionType with String] = js.native
+  /* "agent" */ @js.native
+  object AGENT extends TopLevel[AGENT with String]
+  
+  /* "inbound" */ @js.native
+  object INBOUND extends TopLevel[INBOUND with String]
+  
+  /* "monitoring" */ @js.native
+  object MONITORING extends TopLevel[MONITORING with String]
+  
+  /* "outbound" */ @js.native
+  object OUTBOUND extends TopLevel[OUTBOUND with String]
+  
 }
 

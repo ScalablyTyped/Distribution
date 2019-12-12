@@ -1,5 +1,9 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.TextDocumentSaveReason.AfterDelay
+import typings.vscode.vscodeMod.TextDocumentSaveReason.FocusOut
+import typings.vscode.vscodeMod.TextDocumentSaveReason.Manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,10 +33,16 @@ object TextDocumentSaveReason extends js.Object {
   @js.native
   sealed trait Manual extends TextDocumentSaveReason
   
-  /* 2 */ val AfterDelay: typings.vscode.vscodeMod.TextDocumentSaveReason.AfterDelay with Double = js.native
-  /* 3 */ val FocusOut: typings.vscode.vscodeMod.TextDocumentSaveReason.FocusOut with Double = js.native
-  /* 1 */ val Manual: typings.vscode.vscodeMod.TextDocumentSaveReason.Manual with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextDocumentSaveReason with Double] = js.native
+  /* 2 */ @js.native
+  object AfterDelay extends TopLevel[AfterDelay with Double]
+  
+  /* 3 */ @js.native
+  object FocusOut extends TopLevel[FocusOut with Double]
+  
+  /* 1 */ @js.native
+  object Manual extends TopLevel[Manual with Double]
+  
 }
 

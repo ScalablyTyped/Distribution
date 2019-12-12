@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Aggregation
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Association
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Class
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Composition
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Dependency
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Enumeration
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Inheritance
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object ClassifierShapes extends js.Object {
   @js.native
   sealed trait Interface extends ClassifierShapes
   
-  /* 4 */ val Aggregation: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Aggregation with Double = js.native
-  /* 3 */ val Association: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Association with Double = js.native
-  /* 0 */ val Class: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Class with Double = js.native
-  /* 5 */ val Composition: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Composition with Double = js.native
-  /* 6 */ val Dependency: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Dependency with Double = js.native
-  /* 2 */ val Enumeration: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Enumeration with Double = js.native
-  /* 7 */ val Inheritance: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Inheritance with Double = js.native
-  /* 1 */ val Interface: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ClassifierShapes.Interface with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClassifierShapes with Double] = js.native
+  /* 4 */ @js.native
+  object Aggregation extends TopLevel[Aggregation with Double]
+  
+  /* 3 */ @js.native
+  object Association extends TopLevel[Association with Double]
+  
+  /* 0 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 5 */ @js.native
+  object Composition extends TopLevel[Composition with Double]
+  
+  /* 6 */ @js.native
+  object Dependency extends TopLevel[Dependency with Double]
+  
+  /* 2 */ @js.native
+  object Enumeration extends TopLevel[Enumeration with Double]
+  
+  /* 7 */ @js.native
+  object Inheritance extends TopLevel[Inheritance with Double]
+  
+  /* 1 */ @js.native
+  object Interface extends TopLevel[Interface with Double]
+  
 }
 

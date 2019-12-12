@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Exe
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Msi
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.ReferralLink
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Vsix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ExtensionDeploymentTechnology extends js.Object {
   @js.native
   sealed trait Vsix extends ExtensionDeploymentTechnology
   
-  /* 1 */ val Exe: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Exe with Double = js.native
-  /* 2 */ val Msi: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Msi with Double = js.native
-  /* 4 */ val ReferralLink: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.ReferralLink with Double = js.native
-  /* 3 */ val Vsix: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionDeploymentTechnology.Vsix with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionDeploymentTechnology with Double] = js.native
+  /* 1 */ @js.native
+  object Exe extends TopLevel[Exe with Double]
+  
+  /* 2 */ @js.native
+  object Msi extends TopLevel[Msi with Double]
+  
+  /* 4 */ @js.native
+  object ReferralLink extends TopLevel[ReferralLink with Double]
+  
+  /* 3 */ @js.native
+  object Vsix extends TopLevel[Vsix with Double]
+  
 }
 

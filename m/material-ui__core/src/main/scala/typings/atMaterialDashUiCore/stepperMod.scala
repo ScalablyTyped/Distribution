@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.stepperStepperMod.StepperProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object stepperMod extends js.Object {
     def this(props: StepperProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[StepperProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[StepperProps]]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.gridListTileGridListTileMod.GridListTileProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object gridListTileMod extends js.Object {
     def this(props: GridListTileProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[GridListTileProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[GridListTileProps]]
+  
 }
 

@@ -1,6 +1,7 @@
 package typings.atBandagedbdBdapi.atBandagedbdBdapiMod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.atBandagedbdBdapi.TypeofClassComponent
 import typings.atBandagedbdBdapi.atBandagedbdBdapiStrings.input
 import typings.react.Anon_Children
@@ -185,7 +186,6 @@ object BdApiModule extends js.Object {
     var Component: TypeofClassComponent = js.native
     val Fragment: ExoticComponent[Anon_Children] = js.native
     val Profiler: ExoticComponent[ProfilerProps] = js.native
-    var PureComponent: Instantiable0[typings.react.reactMod.PureComponent[js.Object, js.Object, js.Object]] = js.native
     val StrictMode: ExoticComponent[Anon_Children] = js.native
     /**
       * This feature is not yet available for server-side rendering.
@@ -520,6 +520,12 @@ object BdApiModule extends js.Object {
     def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
     def useTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
     def useTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+    @js.native
+    object PureComponent
+      extends TopLevel[
+              Instantiable0[typings.react.reactMod.PureComponent[js.Object, js.Object, js.Object]]
+            ]
+    
   }
   
   /**

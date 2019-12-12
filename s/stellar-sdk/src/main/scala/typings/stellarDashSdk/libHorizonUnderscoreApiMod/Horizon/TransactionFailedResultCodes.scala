@@ -1,5 +1,10 @@
 package typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon
 
+import org.scalablytyped.runtime.TopLevel
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH_EXTRA
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_SEQ
+import typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_FAILED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TransactionFailedResultCodes extends js.Object {
   @js.native
   sealed trait TX_FAILED extends TransactionFailedResultCodes
   
-  /* "tx_bad_auth" */ val TX_BAD_AUTH: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH with String = js.native
-  /* "tx_bad_auth_extra" */ val TX_BAD_AUTH_EXTRA: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH_EXTRA with String = js.native
-  /* "tx_bad_seq" */ val TX_BAD_SEQ: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_SEQ with String = js.native
-  /* "tx_failed" */ val TX_FAILED: typings.stellarDashSdk.libHorizonUnderscoreApiMod.Horizon.TransactionFailedResultCodes.TX_FAILED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TransactionFailedResultCodes with String] = js.native
+  /* "tx_bad_auth" */ @js.native
+  object TX_BAD_AUTH extends TopLevel[TX_BAD_AUTH with String]
+  
+  /* "tx_bad_auth_extra" */ @js.native
+  object TX_BAD_AUTH_EXTRA extends TopLevel[TX_BAD_AUTH_EXTRA with String]
+  
+  /* "tx_bad_seq" */ @js.native
+  object TX_BAD_SEQ extends TopLevel[TX_BAD_SEQ with String]
+  
+  /* "tx_failed" */ @js.native
+  object TX_FAILED extends TopLevel[TX_FAILED with String]
+  
 }
 

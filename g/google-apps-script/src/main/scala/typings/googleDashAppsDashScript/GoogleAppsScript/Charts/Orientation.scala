@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.HORIZONTAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.VERTICAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Orientation extends js.Object {
   @js.native
   sealed trait VERTICAL extends Orientation
   
-  /* 0 */ val HORIZONTAL: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.HORIZONTAL with Double = js.native
-  /* 1 */ val VERTICAL: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.Orientation.VERTICAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
+  /* 0 */ @js.native
+  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
+  
+  /* 1 */ @js.native
+  object VERTICAL extends TopLevel[VERTICAL with Double]
+  
 }
 

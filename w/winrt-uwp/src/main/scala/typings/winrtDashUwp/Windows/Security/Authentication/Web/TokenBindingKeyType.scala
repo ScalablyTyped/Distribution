@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.ecdsaP256
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.rsa2048
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object TokenBindingKeyType extends js.Object {
   @js.native
   sealed trait rsa2048 extends TokenBindingKeyType
   
-  /* 1 */ val ecdsaP256: typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.ecdsaP256 with Double = js.native
-  /* 0 */ val rsa2048: typings.winrtDashUwp.Windows.Security.Authentication.Web.TokenBindingKeyType.rsa2048 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TokenBindingKeyType with Double] = js.native
+  /* 1 */ @js.native
+  object ecdsaP256 extends TopLevel[ecdsaP256 with Double]
+  
+  /* 0 */ @js.native
+  object rsa2048 extends TopLevel[rsa2048 with Double]
+  
 }
 

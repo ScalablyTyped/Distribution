@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -34,6 +35,8 @@ object tablePaginationTablePaginationActionsMod extends js.Object {
     def this(props: TablePaginationActionsProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TablePaginationActionsProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TablePaginationActionsProps]]
+  
 }
 

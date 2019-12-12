@@ -1,6 +1,12 @@
 package typings.atUirouterCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType
+import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ABORTED
+import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ERROR
+import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.IGNORED
+import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.INVALID
+import typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.SUPERSEDED
 import typings.atUirouterCore.libTransitionRejectFactoryMod.Rejection
 import typings.std.Error
 import scala.scalajs.js
@@ -104,13 +110,23 @@ object libTransitionRejectFactoryMod extends js.Object {
     @js.native
     sealed trait SUPERSEDED extends RejectType
     
-    /* 3 */ val ABORTED: typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ABORTED with Double = js.native
-    /* 6 */ val ERROR: typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.ERROR with Double = js.native
-    /* 5 */ val IGNORED: typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.IGNORED with Double = js.native
-    /* 4 */ val INVALID: typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.INVALID with Double = js.native
-    /* 2 */ val SUPERSEDED: typings.atUirouterCore.libTransitionRejectFactoryMod.RejectType.SUPERSEDED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[RejectType with Double] = js.native
+    /* 3 */ @js.native
+    object ABORTED extends TopLevel[ABORTED with Double]
+    
+    /* 6 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 5 */ @js.native
+    object IGNORED extends TopLevel[IGNORED with Double]
+    
+    /* 4 */ @js.native
+    object INVALID extends TopLevel[INVALID with Double]
+    
+    /* 2 */ @js.native
+    object SUPERSEDED extends TopLevel[SUPERSEDED with Double]
+    
   }
   
   /* static members */

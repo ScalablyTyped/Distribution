@@ -1,5 +1,8 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.DateTimeFieldFormatType.dateOnly
+import typings.sharepoint.SP.DateTimeFieldFormatType.dateTime
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object DateTimeFieldFormatType extends js.Object {
   @js.native
   sealed trait dateTime extends DateTimeFieldFormatType
   
-  /* 0 */ val dateOnly: typings.sharepoint.SP.DateTimeFieldFormatType.dateOnly with Double = js.native
-  /* 1 */ val dateTime: typings.sharepoint.SP.DateTimeFieldFormatType.dateTime with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateTimeFieldFormatType with Double] = js.native
+  /* 0 */ @js.native
+  object dateOnly extends TopLevel[dateOnly with Double]
+  
+  /* 1 */ @js.native
+  object dateTime extends TopLevel[dateTime with Double]
+  
 }
 

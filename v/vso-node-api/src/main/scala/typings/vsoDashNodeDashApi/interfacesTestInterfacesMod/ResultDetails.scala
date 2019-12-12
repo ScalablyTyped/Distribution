@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.Iterations
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.None
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.WorkItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ResultDetails extends js.Object {
   @js.native
   sealed trait WorkItems extends ResultDetails
   
-  /* 1 */ val Iterations: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.Iterations with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.None with Double = js.native
-  /* 2 */ val WorkItems: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.ResultDetails.WorkItems with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResultDetails with Double] = js.native
+  /* 1 */ @js.native
+  object Iterations extends TopLevel[Iterations with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object WorkItems extends TopLevel[WorkItems with Double]
+  
 }
 

@@ -1,6 +1,7 @@
 package typings.rotDashJs
 
 import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.TopLevel
 import typings.rotDashJs.libPathPathMod.Options
 import typings.rotDashJs.libPathPathMod.PassableCallback
 import typings.std.Partial
@@ -26,20 +27,30 @@ object libPathMod extends js.Object {
       def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: Partial[Options]) = this()
     }
     
-    var AStar: Instantiable4[
-        /* toX */ Double, 
-        /* toY */ Double, 
-        /* passableCallback */ PassableCallback, 
-        js.UndefOr[/* options */ Partial[Options]], 
-        typings.rotDashJs.libPathAstarMod.default
-      ] = js.native
-    var Dijkstra: Instantiable4[
-        /* toX */ Double, 
-        /* toY */ Double, 
-        /* passableCallback */ PassableCallback, 
-        /* options */ Partial[Options], 
-        typings.rotDashJs.libPathDijkstraMod.default
-      ] = js.native
+    @js.native
+    object AStar
+      extends TopLevel[
+              Instantiable4[
+                /* toX */ Double, 
+                /* toY */ Double, 
+                /* passableCallback */ PassableCallback, 
+                js.UndefOr[/* options */ Partial[Options]], 
+                typings.rotDashJs.libPathAstarMod.default
+              ]
+            ]
+    
+    @js.native
+    object Dijkstra
+      extends TopLevel[
+              Instantiable4[
+                /* toX */ Double, 
+                /* toY */ Double, 
+                /* passableCallback */ PassableCallback, 
+                /* options */ Partial[Options], 
+                typings.rotDashJs.libPathDijkstraMod.default
+              ]
+            ]
+    
   }
   
 }

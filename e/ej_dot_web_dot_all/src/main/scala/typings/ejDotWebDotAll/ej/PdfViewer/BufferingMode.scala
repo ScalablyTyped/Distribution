@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.PdfViewer.BufferingMode.Complete
+import typings.ejDotWebDotAll.ej.PdfViewer.BufferingMode.Default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object BufferingMode extends js.Object {
   @js.native
   sealed trait Default extends BufferingMode
   
-  /* 1 */ val Complete: typings.ejDotWebDotAll.ej.PdfViewer.BufferingMode.Complete with Double = js.native
-  /* 0 */ val Default: typings.ejDotWebDotAll.ej.PdfViewer.BufferingMode.Default with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BufferingMode with Double] = js.native
+  /* 1 */ @js.native
+  object Complete extends TopLevel[Complete with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
 }
 

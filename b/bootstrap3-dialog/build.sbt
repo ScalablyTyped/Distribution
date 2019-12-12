@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap3-dialog"
-version := "1.35-dt-20181015Z-89d60d"
+version := "1.35-dt-20181015Z-882338"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

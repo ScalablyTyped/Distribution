@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.none
+import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.photo
+import typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object CaptureUse extends js.Object {
   @js.native
   sealed trait video extends CaptureUse
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.none with Double = js.native
-  /* 1 */ val photo: typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.photo with Double = js.native
-  /* 2 */ val video: typings.winrtDashUwp.Windows.Media.Devices.CaptureUse.video with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CaptureUse with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object photo extends TopLevel[photo with Double]
+  
+  /* 2 */ @js.native
+  object video extends TopLevel[video with Double]
+  
 }
 

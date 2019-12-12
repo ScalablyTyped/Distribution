@@ -1,5 +1,10 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.DiagnosticCategory.Error
+import typings.typescript.typescriptMod.DiagnosticCategory.Message
+import typings.typescript.typescriptMod.DiagnosticCategory.Suggestion
+import typings.typescript.typescriptMod.DiagnosticCategory.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object DiagnosticCategory extends js.Object {
   @js.native
   sealed trait Warning extends DiagnosticCategory
   
-  /* 1 */ val Error: typings.typescript.typescriptMod.DiagnosticCategory.Error with Double = js.native
-  /* 3 */ val Message: typings.typescript.typescriptMod.DiagnosticCategory.Message with Double = js.native
-  /* 2 */ val Suggestion: typings.typescript.typescriptMod.DiagnosticCategory.Suggestion with Double = js.native
-  /* 0 */ val Warning: typings.typescript.typescriptMod.DiagnosticCategory.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagnosticCategory with Double] = js.native
+  /* 1 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 3 */ @js.native
+  object Message extends TopLevel[Message with Double]
+  
+  /* 2 */ @js.native
+  object Suggestion extends TopLevel[Suggestion with Double]
+  
+  /* 0 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

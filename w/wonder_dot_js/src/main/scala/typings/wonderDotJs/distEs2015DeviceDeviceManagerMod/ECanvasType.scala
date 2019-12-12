@@ -1,5 +1,7 @@
 package typings.wonderDotJs.distEs2015DeviceDeviceManagerMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ECanvasType.TwoDUI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object ECanvasType extends js.Object {
   @js.native
   sealed trait TwoDUI extends ECanvasType
   
-  /* 0 */ val TwoDUI: typings.wonderDotJs.distEs2015DeviceDeviceManagerMod.ECanvasType.TwoDUI with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ECanvasType with Double] = js.native
+  /* 0 */ @js.native
+  object TwoDUI extends TopLevel[TwoDUI with Double]
+  
 }
 

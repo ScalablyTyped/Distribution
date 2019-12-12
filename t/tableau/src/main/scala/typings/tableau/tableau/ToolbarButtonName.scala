@@ -1,5 +1,8 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.ToolbarButtonName.REDO
+import typings.tableau.tableau.ToolbarButtonName.UNDO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ToolbarButtonName extends js.Object {
   @js.native
   sealed trait UNDO extends ToolbarButtonName
   
-  /* "redo" */ val REDO: typings.tableau.tableau.ToolbarButtonName.REDO with String = js.native
-  /* "undo" */ val UNDO: typings.tableau.tableau.ToolbarButtonName.UNDO with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ToolbarButtonName with String] = js.native
+  /* "redo" */ @js.native
+  object REDO extends TopLevel[REDO with String]
+  
+  /* "undo" */ @js.native
+  object UNDO extends TopLevel[UNDO with String]
+  
 }
 

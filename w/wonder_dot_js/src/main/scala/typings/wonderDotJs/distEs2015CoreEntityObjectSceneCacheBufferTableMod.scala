@@ -1,6 +1,9 @@
 package typings.wonderDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey
+import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_INDEX
+import typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_VERTEX
 import typings.wonderDotJs.distEs2015RendererBufferBufferMod.Buffer
 import typings.wonderDotJs.distEs2015RendererBufferElementBufferMod.ElementBuffer
 import scala.scalajs.js
@@ -39,10 +42,14 @@ object distEs2015CoreEntityObjectSceneCacheBufferTableMod extends js.Object {
     @js.native
     sealed trait PROCEDURAL_VERTEX extends BufferTableKey
     
-    /* 1 */ val PROCEDURAL_INDEX: typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_INDEX with Double = js.native
-    /* 0 */ val PROCEDURAL_VERTEX: typings.wonderDotJs.distEs2015CoreEntityObjectSceneCacheBufferTableMod.BufferTableKey.PROCEDURAL_VERTEX with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[BufferTableKey with Double] = js.native
+    /* 1 */ @js.native
+    object PROCEDURAL_INDEX extends TopLevel[PROCEDURAL_INDEX with Double]
+    
+    /* 0 */ @js.native
+    object PROCEDURAL_VERTEX extends TopLevel[PROCEDURAL_VERTEX with Double]
+    
   }
   
 }

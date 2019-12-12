@@ -1,5 +1,17 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRPageSetMode.OCRPSM_OSD_ONLY
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_ONLY
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_OSD
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_CIRCLE_WORD
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK_VERT_TEXT
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_CHAR
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_COLUMN
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_LINE
+import typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_WORD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object EnumDWT_OCRPageSetMode extends js.Object {
   @js.native
   sealed trait PSM_SINGLE_WORD extends EnumDWT_OCRPageSetMode
   
-  /* 0 */ val OCRPSM_OSD_ONLY: typings.dwt.EnumDWT_OCRPageSetMode.OCRPSM_OSD_ONLY with Double = js.native
-  /* 3 */ val PSM_AUTO: typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO with Double = js.native
-  /* 2 */ val PSM_AUTO_ONLY: typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_ONLY with Double = js.native
-  /* 1 */ val PSM_AUTO_OSD: typings.dwt.EnumDWT_OCRPageSetMode.PSM_AUTO_OSD with Double = js.native
-  /* 9 */ val PSM_CIRCLE_WORD: typings.dwt.EnumDWT_OCRPageSetMode.PSM_CIRCLE_WORD with Double = js.native
-  /* 6 */ val PSM_SINGLE_BLOCK: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK with Double = js.native
-  /* 5 */ val PSM_SINGLE_BLOCK_VERT_TEXT: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_BLOCK_VERT_TEXT with Double = js.native
-  /* 10 */ val PSM_SINGLE_CHAR: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_CHAR with Double = js.native
-  /* 4 */ val PSM_SINGLE_COLUMN: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_COLUMN with Double = js.native
-  /* 7 */ val PSM_SINGLE_LINE: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_LINE with Double = js.native
-  /* 8 */ val PSM_SINGLE_WORD: typings.dwt.EnumDWT_OCRPageSetMode.PSM_SINGLE_WORD with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_OCRPageSetMode with Double] = js.native
+  /* 0 */ @js.native
+  object OCRPSM_OSD_ONLY extends TopLevel[OCRPSM_OSD_ONLY with Double]
+  
+  /* 3 */ @js.native
+  object PSM_AUTO extends TopLevel[PSM_AUTO with Double]
+  
+  /* 2 */ @js.native
+  object PSM_AUTO_ONLY extends TopLevel[PSM_AUTO_ONLY with Double]
+  
+  /* 1 */ @js.native
+  object PSM_AUTO_OSD extends TopLevel[PSM_AUTO_OSD with Double]
+  
+  /* 9 */ @js.native
+  object PSM_CIRCLE_WORD extends TopLevel[PSM_CIRCLE_WORD with Double]
+  
+  /* 6 */ @js.native
+  object PSM_SINGLE_BLOCK extends TopLevel[PSM_SINGLE_BLOCK with Double]
+  
+  /* 5 */ @js.native
+  object PSM_SINGLE_BLOCK_VERT_TEXT extends TopLevel[PSM_SINGLE_BLOCK_VERT_TEXT with Double]
+  
+  /* 10 */ @js.native
+  object PSM_SINGLE_CHAR extends TopLevel[PSM_SINGLE_CHAR with Double]
+  
+  /* 4 */ @js.native
+  object PSM_SINGLE_COLUMN extends TopLevel[PSM_SINGLE_COLUMN with Double]
+  
+  /* 7 */ @js.native
+  object PSM_SINGLE_LINE extends TopLevel[PSM_SINGLE_LINE with Double]
+  
+  /* 8 */ @js.native
+  object PSM_SINGLE_WORD extends TopLevel[PSM_SINGLE_WORD with Double]
+  
 }
 

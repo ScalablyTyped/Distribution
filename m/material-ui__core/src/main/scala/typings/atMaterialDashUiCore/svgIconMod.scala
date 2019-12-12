@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object svgIconMod extends js.Object {
     def this(props: SvgIconProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[SvgIconProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[SvgIconProps]]
+  
 }
 

@@ -1,6 +1,12 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libApiSessionDashStateMod.SessionState
+import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Established
+import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Establishing
+import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Initial
+import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminated
+import typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,13 +55,23 @@ object libApiSessionDashStateMod extends js.Object {
     @js.native
     sealed trait Terminating extends SessionState
     
-    /* "Established" */ val Established: typings.sipDotJs.libApiSessionDashStateMod.SessionState.Established with String = js.native
-    /* "Establishing" */ val Establishing: typings.sipDotJs.libApiSessionDashStateMod.SessionState.Establishing with String = js.native
-    /* "Initial" */ val Initial: typings.sipDotJs.libApiSessionDashStateMod.SessionState.Initial with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminated with String = js.native
-    /* "Terminating" */ val Terminating: typings.sipDotJs.libApiSessionDashStateMod.SessionState.Terminating with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SessionState with String] = js.native
+    /* "Established" */ @js.native
+    object Established extends TopLevel[Established with String]
+    
+    /* "Establishing" */ @js.native
+    object Establishing extends TopLevel[Establishing with String]
+    
+    /* "Initial" */ @js.native
+    object Initial extends TopLevel[Initial with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
+    /* "Terminating" */ @js.native
+    object Terminating extends TopLevel[Terminating with String]
+    
   }
   
 }

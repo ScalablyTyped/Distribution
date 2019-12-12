@@ -1,5 +1,11 @@
 package typings.pngDashAsync.pngDashAsyncMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.DEFAULT_STRATEGY
+import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FILTERED
+import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FIXED
+import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.HUFFMAN_ONLY
+import typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.RLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object EDeflateStrategy extends js.Object {
   @js.native
   sealed trait RLE extends EDeflateStrategy
   
-  /* 0 */ val DEFAULT_STRATEGY: typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.DEFAULT_STRATEGY with Double = js.native
-  /* 1 */ val FILTERED: typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FILTERED with Double = js.native
-  /* 4 */ val FIXED: typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.FIXED with Double = js.native
-  /* 2 */ val HUFFMAN_ONLY: typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.HUFFMAN_ONLY with Double = js.native
-  /* 3 */ val RLE: typings.pngDashAsync.pngDashAsyncMod.EDeflateStrategy.RLE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EDeflateStrategy with Double] = js.native
+  /* 0 */ @js.native
+  object DEFAULT_STRATEGY extends TopLevel[DEFAULT_STRATEGY with Double]
+  
+  /* 1 */ @js.native
+  object FILTERED extends TopLevel[FILTERED with Double]
+  
+  /* 4 */ @js.native
+  object FIXED extends TopLevel[FIXED with Double]
+  
+  /* 2 */ @js.native
+  object HUFFMAN_ONLY extends TopLevel[HUFFMAN_ONLY with Double]
+  
+  /* 3 */ @js.native
+  object RLE extends TopLevel[RLE with Double]
+  
 }
 

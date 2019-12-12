@@ -1,6 +1,10 @@
 package typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion
+import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.LEGACY
+import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V1
+import typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +27,17 @@ object SaverDef extends js.Object {
     @js.native
     sealed trait V2 extends CheckpointFormatVersion
     
-    /* 0 */ val LEGACY: typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.LEGACY with Double = js.native
-    /* 1 */ val V1: typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V1 with Double = js.native
-    /* 2 */ val V2: typings.atTensorflowTfjsDashConverter.distSrcDataCompiledUnderscoreApiMod.SaverDef.CheckpointFormatVersion.V2 with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CheckpointFormatVersion with Double] = js.native
+    /* 0 */ @js.native
+    object LEGACY extends TopLevel[LEGACY with Double]
+    
+    /* 1 */ @js.native
+    object V1 extends TopLevel[V1 with Double]
+    
+    /* 2 */ @js.native
+    object V2 extends TopLevel[V2 with Double]
+    
   }
   
 }

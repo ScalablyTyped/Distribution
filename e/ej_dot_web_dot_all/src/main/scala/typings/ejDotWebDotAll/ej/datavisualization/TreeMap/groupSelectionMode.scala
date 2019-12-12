@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.groupSelectionMode.Default
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.groupSelectionMode.Multiple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object groupSelectionMode extends js.Object {
   @js.native
   sealed trait Multiple extends groupSelectionMode
   
-  /* 0 */ val Default: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.groupSelectionMode.Default with Double = js.native
-  /* 1 */ val Multiple: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.groupSelectionMode.Multiple with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[groupSelectionMode with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object Multiple extends TopLevel[Multiple with Double]
+  
 }
 

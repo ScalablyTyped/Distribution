@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.installed
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.notInstalled
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.paused
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.staged
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PackageInstallState extends js.Object {
   @js.native
   sealed trait staged extends PackageInstallState
   
-  /* 2 */ val installed: typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.installed with Double = js.native
-  /* 0 */ val notInstalled: typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.notInstalled with Double = js.native
-  /* 3 */ val paused: typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.paused with Double = js.native
-  /* 1 */ val staged: typings.winrtDashUwp.Windows.Management.Deployment.PackageInstallState.staged with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PackageInstallState with Double] = js.native
+  /* 2 */ @js.native
+  object installed extends TopLevel[installed with Double]
+  
+  /* 0 */ @js.native
+  object notInstalled extends TopLevel[notInstalled with Double]
+  
+  /* 3 */ @js.native
+  object paused extends TopLevel[paused with Double]
+  
+  /* 1 */ @js.native
+  object staged extends TopLevel[staged with Double]
+  
 }
 

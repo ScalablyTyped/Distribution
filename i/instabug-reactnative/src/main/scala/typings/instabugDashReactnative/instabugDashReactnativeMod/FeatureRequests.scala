@@ -1,5 +1,10 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.addCommentToFeature
+import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.allActions
+import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.reportBug
+import typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.requestNewFeature
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,14 +41,22 @@ object FeatureRequests extends js.Object {
     sealed trait requestNewFeature
       extends typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes
     
-    /* 3 */ val addCommentToFeature: typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.addCommentToFeature with Double = js.native
-    /* 0 */ val allActions: typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.allActions with Double = js.native
-    /* 1 */ val reportBug: typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.reportBug with Double = js.native
-    /* 2 */ val requestNewFeature: typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes.requestNewFeature with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
         typings.instabugDashReactnative.instabugDashReactnativeMod.FeatureRequests.actionTypes with Double
       ] = js.native
+    /* 3 */ @js.native
+    object addCommentToFeature extends TopLevel[addCommentToFeature with Double]
+    
+    /* 0 */ @js.native
+    object allActions extends TopLevel[allActions with Double]
+    
+    /* 1 */ @js.native
+    object reportBug extends TopLevel[reportBug with Double]
+    
+    /* 2 */ @js.native
+    object requestNewFeature extends TopLevel[requestNewFeature with Double]
+    
   }
   
 }

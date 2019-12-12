@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ArrowheadWidth.medium
+import typings.officeDashJsDashPreview.Excel.ArrowheadWidth.narrow
+import typings.officeDashJsDashPreview.Excel.ArrowheadWidth.wide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ArrowheadWidth extends js.Object {
   @js.native
   sealed trait wide extends ArrowheadWidth
   
-  /* "Medium" */ val medium: typings.officeDashJsDashPreview.Excel.ArrowheadWidth.medium with String = js.native
-  /* "Narrow" */ val narrow: typings.officeDashJsDashPreview.Excel.ArrowheadWidth.narrow with String = js.native
-  /* "Wide" */ val wide: typings.officeDashJsDashPreview.Excel.ArrowheadWidth.wide with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ArrowheadWidth with String] = js.native
+  /* "Medium" */ @js.native
+  object medium extends TopLevel[medium with String]
+  
+  /* "Narrow" */ @js.native
+  object narrow extends TopLevel[narrow with String]
+  
+  /* "Wide" */ @js.native
+  object wide extends TopLevel[wide with String]
+  
 }
 

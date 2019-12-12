@@ -4,35 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StyledGridProps extends js.Object {
   @JSName("$align")
-  var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
+  var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
   @JSName("$behavior")
-  var $behavior: js.UndefOr[BEHAVIOR] = js.undefined
+  var $behavior: js.UndefOr[BEHAVIOR] = js.native
   @JSName("$gridGutters")
-  var $gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
+  var $gridGutters: js.UndefOr[Responsive[Double]] = js.native
   @JSName("$gridMargins")
-  var $gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
+  var $gridMargins: js.UndefOr[Responsive[Double]] = js.native
   @JSName("$gridMaxWidth")
-  var $gridMaxWidth: js.UndefOr[Double] = js.undefined
-}
-
-object StyledGridProps {
-  @scala.inline
-  def apply(
-    $align: Responsive[ALIGNMENT] = null,
-    $behavior: BEHAVIOR = null,
-    $gridGutters: Responsive[Double] = null,
-    $gridMargins: Responsive[Double] = null,
-    $gridMaxWidth: Int | Double = null
-  ): StyledGridProps = {
-    val __obj = js.Dynamic.literal()
-    if ($align != null) __obj.updateDynamic("$align")($align.asInstanceOf[js.Any])
-    if ($behavior != null) __obj.updateDynamic("$behavior")($behavior.asInstanceOf[js.Any])
-    if ($gridGutters != null) __obj.updateDynamic("$gridGutters")($gridGutters.asInstanceOf[js.Any])
-    if ($gridMargins != null) __obj.updateDynamic("$gridMargins")($gridMargins.asInstanceOf[js.Any])
-    if ($gridMaxWidth != null) __obj.updateDynamic("$gridMaxWidth")($gridMaxWidth.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StyledGridProps]
-  }
+  var $gridMaxWidth: js.UndefOr[Double] = js.native
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.compact
+import typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object DocumentCardType extends js.Object {
   @js.native
   sealed trait normal extends DocumentCardType
   
-  /* 1 */ val compact: typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.compact with Double = js.native
-  /* 0 */ val normal: typings.officeDashUiDashFabricDashReact.libComponentsDocumentCardDocumentCardDotTypesMod.DocumentCardType.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentCardType with Double] = js.native
+  /* 1 */ @js.native
+  object compact extends TopLevel[compact with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

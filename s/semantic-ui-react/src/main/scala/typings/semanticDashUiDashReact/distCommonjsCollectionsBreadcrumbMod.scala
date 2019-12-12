@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbComponent
@@ -18,6 +19,8 @@ object distCommonjsCollectionsBreadcrumbMod extends js.Object {
     def this(props: BreadcrumbProps, context: js.Any) = this()
   }
   
-  val default: BreadcrumbComponent = js.native
+  @js.native
+  object default extends TopLevel[BreadcrumbComponent]
+  
 }
 

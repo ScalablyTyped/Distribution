@@ -1,5 +1,13 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.ContentByFriends
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.FavoriteOfFriends
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RankedByVote
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Recent
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RecentFromFollowedUsers
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Trending
+import typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.VotedByFriends
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object EWorkshopEnumerationType extends js.Object {
   @js.native
   sealed trait VotedByFriends extends EWorkshopEnumerationType
   
-  /* 5 */ val ContentByFriends: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.ContentByFriends with Double = js.native
-  /* 3 */ val FavoriteOfFriends: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.FavoriteOfFriends with Double = js.native
-  /* 0 */ val RankedByVote: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RankedByVote with Double = js.native
-  /* 1 */ val Recent: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Recent with Double = js.native
-  /* 6 */ val RecentFromFollowedUsers: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.RecentFromFollowedUsers with Double = js.native
-  /* 2 */ val Trending: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.Trending with Double = js.native
-  /* 4 */ val VotedByFriends: typings.steamDashClient.steamDashClientMod.EWorkshopEnumerationType.VotedByFriends with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EWorkshopEnumerationType with Double] = js.native
+  /* 5 */ @js.native
+  object ContentByFriends extends TopLevel[ContentByFriends with Double]
+  
+  /* 3 */ @js.native
+  object FavoriteOfFriends extends TopLevel[FavoriteOfFriends with Double]
+  
+  /* 0 */ @js.native
+  object RankedByVote extends TopLevel[RankedByVote with Double]
+  
+  /* 1 */ @js.native
+  object Recent extends TopLevel[Recent with Double]
+  
+  /* 6 */ @js.native
+  object RecentFromFollowedUsers extends TopLevel[RecentFromFollowedUsers with Double]
+  
+  /* 2 */ @js.native
+  object Trending extends TopLevel[Trending with Double]
+  
+  /* 4 */ @js.native
+  object VotedByFriends extends TopLevel[VotedByFriends with Double]
+  
 }
 

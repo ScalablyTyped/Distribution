@@ -1,10 +1,19 @@
 package typings.androiduix.android.widget
 
+import org.scalablytyped.runtime.TopLevel
 import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.Matrix
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.ImageView.ScaleType
+import typings.androiduix.android.widget.ImageView.ScaleType.CENTER
+import typings.androiduix.android.widget.ImageView.ScaleType.CENTER_CROP
+import typings.androiduix.android.widget.ImageView.ScaleType.CENTER_INSIDE
+import typings.androiduix.android.widget.ImageView.ScaleType.FIT_CENTER
+import typings.androiduix.android.widget.ImageView.ScaleType.FIT_END
+import typings.androiduix.android.widget.ImageView.ScaleType.FIT_START
+import typings.androiduix.android.widget.ImageView.ScaleType.FIT_XY
+import typings.androiduix.android.widget.ImageView.ScaleType.MATRIX
 import typings.std.HTMLElement
 import typings.std.Map
 import scala.scalajs.js
@@ -109,16 +118,32 @@ object ImageView extends js.Object {
     @js.native
     sealed trait MATRIX extends ScaleType
     
-    /* 5 */ val CENTER: typings.androiduix.android.widget.ImageView.ScaleType.CENTER with Double = js.native
-    /* 6 */ val CENTER_CROP: typings.androiduix.android.widget.ImageView.ScaleType.CENTER_CROP with Double = js.native
-    /* 7 */ val CENTER_INSIDE: typings.androiduix.android.widget.ImageView.ScaleType.CENTER_INSIDE with Double = js.native
-    /* 3 */ val FIT_CENTER: typings.androiduix.android.widget.ImageView.ScaleType.FIT_CENTER with Double = js.native
-    /* 4 */ val FIT_END: typings.androiduix.android.widget.ImageView.ScaleType.FIT_END with Double = js.native
-    /* 2 */ val FIT_START: typings.androiduix.android.widget.ImageView.ScaleType.FIT_START with Double = js.native
-    /* 1 */ val FIT_XY: typings.androiduix.android.widget.ImageView.ScaleType.FIT_XY with Double = js.native
-    /* 0 */ val MATRIX: typings.androiduix.android.widget.ImageView.ScaleType.MATRIX with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ScaleType with Double] = js.native
+    /* 5 */ @js.native
+    object CENTER extends TopLevel[CENTER with Double]
+    
+    /* 6 */ @js.native
+    object CENTER_CROP extends TopLevel[CENTER_CROP with Double]
+    
+    /* 7 */ @js.native
+    object CENTER_INSIDE extends TopLevel[CENTER_INSIDE with Double]
+    
+    /* 3 */ @js.native
+    object FIT_CENTER extends TopLevel[FIT_CENTER with Double]
+    
+    /* 4 */ @js.native
+    object FIT_END extends TopLevel[FIT_END with Double]
+    
+    /* 2 */ @js.native
+    object FIT_START extends TopLevel[FIT_START with Double]
+    
+    /* 1 */ @js.native
+    object FIT_XY extends TopLevel[FIT_XY with Double]
+    
+    /* 0 */ @js.native
+    object MATRIX extends TopLevel[MATRIX with Double]
+    
   }
   
 }

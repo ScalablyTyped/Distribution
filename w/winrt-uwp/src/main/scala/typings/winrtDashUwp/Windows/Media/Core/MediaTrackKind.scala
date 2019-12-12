@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.audio
+import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.timedMetadata
+import typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MediaTrackKind extends js.Object {
   @js.native
   sealed trait video extends MediaTrackKind
   
-  /* 0 */ val audio: typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.audio with Double = js.native
-  /* 2 */ val timedMetadata: typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.timedMetadata with Double = js.native
-  /* 1 */ val video: typings.winrtDashUwp.Windows.Media.Core.MediaTrackKind.video with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaTrackKind with Double] = js.native
+  /* 0 */ @js.native
+  object audio extends TopLevel[audio with Double]
+  
+  /* 2 */ @js.native
+  object timedMetadata extends TopLevel[timedMetadata with Double]
+  
+  /* 1 */ @js.native
+  object video extends TopLevel[video with Double]
+  
 }
 

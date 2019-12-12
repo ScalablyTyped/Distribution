@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Networking.PushNotifications
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.badge
+import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.raw
+import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.tile
+import typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.toast
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PushNotificationType extends js.Object {
   @js.native
   sealed trait toast extends PushNotificationType
   
-  /* 2 */ val badge: typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.badge with Double = js.native
-  /* 3 */ val raw: typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.raw with Double = js.native
-  /* 1 */ val tile: typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.tile with Double = js.native
-  /* 0 */ val toast: typings.winrt.Windows.Networking.PushNotifications.PushNotificationType.toast with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PushNotificationType with Double] = js.native
+  /* 2 */ @js.native
+  object badge extends TopLevel[badge with Double]
+  
+  /* 3 */ @js.native
+  object raw extends TopLevel[raw with Double]
+  
+  /* 1 */ @js.native
+  object tile extends TopLevel[tile with Double]
+  
+  /* 0 */ @js.native
+  object toast extends TopLevel[toast with Double]
+  
 }
 

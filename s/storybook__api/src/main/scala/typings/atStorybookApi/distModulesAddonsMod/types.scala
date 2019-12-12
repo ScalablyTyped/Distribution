@@ -1,5 +1,11 @@
 package typings.atStorybookApi.distModulesAddonsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookApi.distModulesAddonsMod.types.NOTES_ELEMENT
+import typings.atStorybookApi.distModulesAddonsMod.types.PANEL
+import typings.atStorybookApi.distModulesAddonsMod.types.PREVIEW
+import typings.atStorybookApi.distModulesAddonsMod.types.TAB
+import typings.atStorybookApi.distModulesAddonsMod.types.TOOL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object types extends js.Object {
   @js.native
   sealed trait TOOL extends types
   
-  /* "notes-element" */ val NOTES_ELEMENT: typings.atStorybookApi.distModulesAddonsMod.types.NOTES_ELEMENT with String = js.native
-  /* "panel" */ val PANEL: typings.atStorybookApi.distModulesAddonsMod.types.PANEL with String = js.native
-  /* "preview" */ val PREVIEW: typings.atStorybookApi.distModulesAddonsMod.types.PREVIEW with String = js.native
-  /* "tab" */ val TAB: typings.atStorybookApi.distModulesAddonsMod.types.TAB with String = js.native
-  /* "tool" */ val TOOL: typings.atStorybookApi.distModulesAddonsMod.types.TOOL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[types with String] = js.native
+  /* "notes-element" */ @js.native
+  object NOTES_ELEMENT extends TopLevel[NOTES_ELEMENT with String]
+  
+  /* "panel" */ @js.native
+  object PANEL extends TopLevel[PANEL with String]
+  
+  /* "preview" */ @js.native
+  object PREVIEW extends TopLevel[PREVIEW with String]
+  
+  /* "tab" */ @js.native
+  object TAB extends TopLevel[TAB with String]
+  
+  /* "tool" */ @js.native
+  object TOOL extends TopLevel[TOOL with String]
+  
 }
 

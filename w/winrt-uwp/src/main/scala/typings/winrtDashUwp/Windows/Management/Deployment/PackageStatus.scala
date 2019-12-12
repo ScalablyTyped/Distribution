@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.disabled
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.licenseIssue
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.modified
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.ok
+import typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.tampered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object PackageStatus extends js.Object {
   @js.native
   sealed trait tampered extends PackageStatus
   
-  /* 4 */ val disabled: typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.disabled with Double = js.native
-  /* 1 */ val licenseIssue: typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.licenseIssue with Double = js.native
-  /* 2 */ val modified: typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.modified with Double = js.native
-  /* 0 */ val ok: typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.ok with Double = js.native
-  /* 3 */ val tampered: typings.winrtDashUwp.Windows.Management.Deployment.PackageStatus.tampered with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PackageStatus with Double] = js.native
+  /* 4 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 1 */ @js.native
+  object licenseIssue extends TopLevel[licenseIssue with Double]
+  
+  /* 2 */ @js.native
+  object modified extends TopLevel[modified with Double]
+  
+  /* 0 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 3 */ @js.native
+  object tampered extends TopLevel[tampered with Double]
+  
 }
 

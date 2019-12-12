@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "java-applet"
-version := "0.0-unknown-dt-20190322Z-0adf43"
+version := "0.0-unknown-dt-20190322Z-b8f345"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

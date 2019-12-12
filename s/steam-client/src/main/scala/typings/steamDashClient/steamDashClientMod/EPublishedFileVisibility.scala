@@ -1,5 +1,9 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.FriendsOnly
+import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Private
+import typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EPublishedFileVisibility extends js.Object {
   @js.native
   sealed trait Public extends EPublishedFileVisibility
   
-  /* 1 */ val FriendsOnly: typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.FriendsOnly with Double = js.native
-  /* 2 */ val Private: typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Private with Double = js.native
-  /* 0 */ val Public: typings.steamDashClient.steamDashClientMod.EPublishedFileVisibility.Public with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EPublishedFileVisibility with Double] = js.native
+  /* 1 */ @js.native
+  object FriendsOnly extends TopLevel[FriendsOnly with Double]
+  
+  /* 2 */ @js.native
+  object Private extends TopLevel[Private with Double]
+  
+  /* 0 */ @js.native
+  object Public extends TopLevel[Public with Double]
+  
 }
 

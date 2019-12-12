@@ -1,5 +1,9 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.DraftVisibilityType.approver
+import typings.sharepoint.SP.DraftVisibilityType.author
+import typings.sharepoint.SP.DraftVisibilityType.reader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object DraftVisibilityType extends js.Object {
   @js.native
   sealed trait reader extends DraftVisibilityType
   
-  /* 2 */ val approver: typings.sharepoint.SP.DraftVisibilityType.approver with Double = js.native
-  /* 1 */ val author: typings.sharepoint.SP.DraftVisibilityType.author with Double = js.native
-  /* 0 */ val reader: typings.sharepoint.SP.DraftVisibilityType.reader with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DraftVisibilityType with Double] = js.native
+  /* 2 */ @js.native
+  object approver extends TopLevel[approver with Double]
+  
+  /* 1 */ @js.native
+  object author extends TopLevel[author with Double]
+  
+  /* 0 */ @js.native
+  object reader extends TopLevel[reader with Double]
+  
 }
 

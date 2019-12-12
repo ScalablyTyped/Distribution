@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-binding"
-version := "2.5.2-5bf164"
+version := "2.5.2-298cba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-link" % "1.2.13-3e9d24",
   "org.scalablytyped" %%% "ava" % "2.4.0-58ea10",
   "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.6-8ba053",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.6-addc65",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-760cc5")
 publishArtifact in packageDoc := false

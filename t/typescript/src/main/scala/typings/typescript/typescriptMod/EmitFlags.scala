@@ -1,5 +1,34 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.EmitFlags.AdviseOnEmitNode
+import typings.typescript.typescriptMod.EmitFlags.AsyncFunctionBody
+import typings.typescript.typescriptMod.EmitFlags.CapturesThis
+import typings.typescript.typescriptMod.EmitFlags.CustomPrologue
+import typings.typescript.typescriptMod.EmitFlags.ExportName
+import typings.typescript.typescriptMod.EmitFlags.HasEndOfDeclarationMarker
+import typings.typescript.typescriptMod.EmitFlags.HelperName
+import typings.typescript.typescriptMod.EmitFlags.Indented
+import typings.typescript.typescriptMod.EmitFlags.InternalName
+import typings.typescript.typescriptMod.EmitFlags.LocalName
+import typings.typescript.typescriptMod.EmitFlags.NoAsciiEscaping
+import typings.typescript.typescriptMod.EmitFlags.NoComments
+import typings.typescript.typescriptMod.EmitFlags.NoHoisting
+import typings.typescript.typescriptMod.EmitFlags.NoIndentation
+import typings.typescript.typescriptMod.EmitFlags.NoLeadingComments
+import typings.typescript.typescriptMod.EmitFlags.NoLeadingSourceMap
+import typings.typescript.typescriptMod.EmitFlags.NoNestedComments
+import typings.typescript.typescriptMod.EmitFlags.NoNestedSourceMaps
+import typings.typescript.typescriptMod.EmitFlags.NoSourceMap
+import typings.typescript.typescriptMod.EmitFlags.NoSubstitution
+import typings.typescript.typescriptMod.EmitFlags.NoTokenLeadingSourceMaps
+import typings.typescript.typescriptMod.EmitFlags.NoTokenSourceMaps
+import typings.typescript.typescriptMod.EmitFlags.NoTokenTrailingSourceMaps
+import typings.typescript.typescriptMod.EmitFlags.NoTrailingComments
+import typings.typescript.typescriptMod.EmitFlags.NoTrailingSourceMap
+import typings.typescript.typescriptMod.EmitFlags.None
+import typings.typescript.typescriptMod.EmitFlags.ReuseTempVariableScope
+import typings.typescript.typescriptMod.EmitFlags.SingleLine
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,36 +126,95 @@ object EmitFlags extends js.Object {
   @js.native
   sealed trait SingleLine extends EmitFlags
   
-  /* 2 */ val AdviseOnEmitNode: typings.typescript.typescriptMod.EmitFlags.AdviseOnEmitNode with Double = js.native
-  /* 262144 */ val AsyncFunctionBody: typings.typescript.typescriptMod.EmitFlags.AsyncFunctionBody with Double = js.native
-  /* 8 */ val CapturesThis: typings.typescript.typescriptMod.EmitFlags.CapturesThis with Double = js.native
-  /* 1048576 */ val CustomPrologue: typings.typescript.typescriptMod.EmitFlags.CustomPrologue with Double = js.native
-  /* 8192 */ val ExportName: typings.typescript.typescriptMod.EmitFlags.ExportName with Double = js.native
-  /* 4194304 */ val HasEndOfDeclarationMarker: typings.typescript.typescriptMod.EmitFlags.HasEndOfDeclarationMarker with Double = js.native
-  /* 4096 */ val HelperName: typings.typescript.typescriptMod.EmitFlags.HelperName with Double = js.native
-  /* 65536 */ val Indented: typings.typescript.typescriptMod.EmitFlags.Indented with Double = js.native
-  /* 32768 */ val InternalName: typings.typescript.typescriptMod.EmitFlags.InternalName with Double = js.native
-  /* 8388608 */ val Iterator: typings.typescript.typescriptMod.EmitFlags.Iterator with Double = js.native
-  /* 16384 */ val LocalName: typings.typescript.typescriptMod.EmitFlags.LocalName with Double = js.native
-  /* 16777216 */ val NoAsciiEscaping: typings.typescript.typescriptMod.EmitFlags.NoAsciiEscaping with Double = js.native
-  /* 1536 */ val NoComments: typings.typescript.typescriptMod.EmitFlags.NoComments with Double = js.native
-  /* 2097152 */ val NoHoisting: typings.typescript.typescriptMod.EmitFlags.NoHoisting with Double = js.native
-  /* 131072 */ val NoIndentation: typings.typescript.typescriptMod.EmitFlags.NoIndentation with Double = js.native
-  /* 512 */ val NoLeadingComments: typings.typescript.typescriptMod.EmitFlags.NoLeadingComments with Double = js.native
-  /* 16 */ val NoLeadingSourceMap: typings.typescript.typescriptMod.EmitFlags.NoLeadingSourceMap with Double = js.native
-  /* 2048 */ val NoNestedComments: typings.typescript.typescriptMod.EmitFlags.NoNestedComments with Double = js.native
-  /* 64 */ val NoNestedSourceMaps: typings.typescript.typescriptMod.EmitFlags.NoNestedSourceMaps with Double = js.native
-  /* 48 */ val NoSourceMap: typings.typescript.typescriptMod.EmitFlags.NoSourceMap with Double = js.native
-  /* 4 */ val NoSubstitution: typings.typescript.typescriptMod.EmitFlags.NoSubstitution with Double = js.native
-  /* 128 */ val NoTokenLeadingSourceMaps: typings.typescript.typescriptMod.EmitFlags.NoTokenLeadingSourceMaps with Double = js.native
-  /* 384 */ val NoTokenSourceMaps: typings.typescript.typescriptMod.EmitFlags.NoTokenSourceMaps with Double = js.native
-  /* 256 */ val NoTokenTrailingSourceMaps: typings.typescript.typescriptMod.EmitFlags.NoTokenTrailingSourceMaps with Double = js.native
-  /* 1024 */ val NoTrailingComments: typings.typescript.typescriptMod.EmitFlags.NoTrailingComments with Double = js.native
-  /* 32 */ val NoTrailingSourceMap: typings.typescript.typescriptMod.EmitFlags.NoTrailingSourceMap with Double = js.native
-  /* 0 */ val None: typings.typescript.typescriptMod.EmitFlags.None with Double = js.native
-  /* 524288 */ val ReuseTempVariableScope: typings.typescript.typescriptMod.EmitFlags.ReuseTempVariableScope with Double = js.native
-  /* 1 */ val SingleLine: typings.typescript.typescriptMod.EmitFlags.SingleLine with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitFlags with Double] = js.native
+  /* 2 */ @js.native
+  object AdviseOnEmitNode extends TopLevel[AdviseOnEmitNode with Double]
+  
+  /* 262144 */ @js.native
+  object AsyncFunctionBody extends TopLevel[AsyncFunctionBody with Double]
+  
+  /* 8 */ @js.native
+  object CapturesThis extends TopLevel[CapturesThis with Double]
+  
+  /* 1048576 */ @js.native
+  object CustomPrologue extends TopLevel[CustomPrologue with Double]
+  
+  /* 8192 */ @js.native
+  object ExportName extends TopLevel[ExportName with Double]
+  
+  /* 4194304 */ @js.native
+  object HasEndOfDeclarationMarker extends TopLevel[HasEndOfDeclarationMarker with Double]
+  
+  /* 4096 */ @js.native
+  object HelperName extends TopLevel[HelperName with Double]
+  
+  /* 65536 */ @js.native
+  object Indented extends TopLevel[Indented with Double]
+  
+  /* 32768 */ @js.native
+  object InternalName extends TopLevel[InternalName with Double]
+  
+  /* 8388608 */ @js.native
+  object Iterator
+    extends TopLevel[typings.typescript.typescriptMod.EmitFlags.Iterator with Double]
+  
+  /* 16384 */ @js.native
+  object LocalName extends TopLevel[LocalName with Double]
+  
+  /* 16777216 */ @js.native
+  object NoAsciiEscaping extends TopLevel[NoAsciiEscaping with Double]
+  
+  /* 1536 */ @js.native
+  object NoComments extends TopLevel[NoComments with Double]
+  
+  /* 2097152 */ @js.native
+  object NoHoisting extends TopLevel[NoHoisting with Double]
+  
+  /* 131072 */ @js.native
+  object NoIndentation extends TopLevel[NoIndentation with Double]
+  
+  /* 512 */ @js.native
+  object NoLeadingComments extends TopLevel[NoLeadingComments with Double]
+  
+  /* 16 */ @js.native
+  object NoLeadingSourceMap extends TopLevel[NoLeadingSourceMap with Double]
+  
+  /* 2048 */ @js.native
+  object NoNestedComments extends TopLevel[NoNestedComments with Double]
+  
+  /* 64 */ @js.native
+  object NoNestedSourceMaps extends TopLevel[NoNestedSourceMaps with Double]
+  
+  /* 48 */ @js.native
+  object NoSourceMap extends TopLevel[NoSourceMap with Double]
+  
+  /* 4 */ @js.native
+  object NoSubstitution extends TopLevel[NoSubstitution with Double]
+  
+  /* 128 */ @js.native
+  object NoTokenLeadingSourceMaps extends TopLevel[NoTokenLeadingSourceMaps with Double]
+  
+  /* 384 */ @js.native
+  object NoTokenSourceMaps extends TopLevel[NoTokenSourceMaps with Double]
+  
+  /* 256 */ @js.native
+  object NoTokenTrailingSourceMaps extends TopLevel[NoTokenTrailingSourceMaps with Double]
+  
+  /* 1024 */ @js.native
+  object NoTrailingComments extends TopLevel[NoTrailingComments with Double]
+  
+  /* 32 */ @js.native
+  object NoTrailingSourceMap extends TopLevel[NoTrailingSourceMap with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 524288 */ @js.native
+  object ReuseTempVariableScope extends TopLevel[ReuseTempVariableScope with Double]
+  
+  /* 1 */ @js.native
+  object SingleLine extends TopLevel[SingleLine with Double]
+  
 }
 

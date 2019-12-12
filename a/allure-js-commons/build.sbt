@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "allure-js-commons"
-version := "0.0-dt-20190717Z-c56e68"
+version := "0.0-dt-20190717Z-45d67c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

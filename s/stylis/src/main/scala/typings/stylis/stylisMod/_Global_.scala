@@ -1,5 +1,6 @@
 package typings.stylis.stylisMod
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,8 @@ object _Global_ extends js.Object {
     def this(options: Options) = this()
   }
   
-  val stylis: Stylis = js.native
+  @js.native
+  object stylis extends TopLevel[Stylis]
+  
 }
 

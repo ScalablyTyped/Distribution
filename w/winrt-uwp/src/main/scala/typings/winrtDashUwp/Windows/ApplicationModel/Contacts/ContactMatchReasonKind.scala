@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.emailAddress
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.jobInfo
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.name
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.other
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.phoneNumber
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.yomiName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object ContactMatchReasonKind extends js.Object {
   @js.native
   sealed trait yomiName extends ContactMatchReasonKind
   
-  /* 1 */ val emailAddress: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.emailAddress with Double = js.native
-  /* 3 */ val jobInfo: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.jobInfo with Double = js.native
-  /* 0 */ val name: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.name with Double = js.native
-  /* 5 */ val other: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.other with Double = js.native
-  /* 2 */ val phoneNumber: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.phoneNumber with Double = js.native
-  /* 4 */ val yomiName: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactMatchReasonKind.yomiName with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactMatchReasonKind with Double] = js.native
+  /* 1 */ @js.native
+  object emailAddress extends TopLevel[emailAddress with Double]
+  
+  /* 3 */ @js.native
+  object jobInfo extends TopLevel[jobInfo with Double]
+  
+  /* 0 */ @js.native
+  object name extends TopLevel[name with Double]
+  
+  /* 5 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 2 */ @js.native
+  object phoneNumber extends TopLevel[phoneNumber with Double]
+  
+  /* 4 */ @js.native
+  object yomiName extends TopLevel[yomiName with Double]
+  
 }
 

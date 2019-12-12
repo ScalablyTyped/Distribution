@@ -1,5 +1,6 @@
 package typings.coreDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.coreDashJs.core.Locale
 import typings.std.ArrayLike
 import typings.std.Iterable
@@ -64,11 +65,6 @@ object libraryCoreMod extends js.Object {
   }
   
   val Dict: DictConstructor = js.native
-  val Map: MapConstructor = js.native
-  val Promise: PromiseConstructor = js.native
-  val Set: SetConstructor = js.native
-  val WeakMap: WeakMapConstructor = js.native
-  val WeakSet: WeakSetConstructor = js.native
   val `_`: Boolean = js.native
   val global: js.Any = js.native
   val version: java.lang.String = js.native
@@ -309,6 +305,9 @@ object libraryCoreMod extends js.Object {
   }
   
   @js.native
+  object Map extends TopLevel[MapConstructor]
+  
+  @js.native
   object Math extends js.Object {
     def acosh(x: Double): Double = js.native
     def asinh(x: Double): Double = js.native
@@ -391,6 +390,9 @@ object libraryCoreMod extends js.Object {
     def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
     def values(`object`: js.Any): Array[_] = js.native
   }
+  
+  @js.native
+  object Promise extends TopLevel[PromiseConstructor]
   
   @js.native
   object Reflect extends js.Object {
@@ -628,6 +630,9 @@ object libraryCoreMod extends js.Object {
   }
   
   @js.native
+  object Set extends TopLevel[SetConstructor]
+  
+  @js.native
   object String extends js.Object {
     def at(text: java.lang.String, index: Double): java.lang.String = js.native
     def codePointAt(text: java.lang.String, pos: Double): Double = js.native
@@ -661,6 +666,12 @@ object libraryCoreMod extends js.Object {
     /* CompleteClass */
     override def userSetter(): Unit = js.native
   }
+  
+  @js.native
+  object WeakMap extends TopLevel[WeakMapConstructor]
+  
+  @js.native
+  object WeakSet extends TopLevel[WeakSetConstructor]
   
 }
 

@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThan
+import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual
+import typings.officeDashJs.Excel.ConditionalIconCriterionOperator.invalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object ConditionalIconCriterionOperator extends js.Object {
   @js.native
   sealed trait invalid extends ConditionalIconCriterionOperator
   
-  /* "GreaterThan" */ val greaterThan: typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThan with String = js.native
-  /* "GreaterThanOrEqual" */ val greaterThanOrEqual: typings.officeDashJs.Excel.ConditionalIconCriterionOperator.greaterThanOrEqual with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJs.Excel.ConditionalIconCriterionOperator.invalid with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalIconCriterionOperator with String] = js.native
+  /* "GreaterThan" */ @js.native
+  object greaterThan extends TopLevel[greaterThan with String]
+  
+  /* "GreaterThanOrEqual" */ @js.native
+  object greaterThanOrEqual extends TopLevel[greaterThanOrEqual with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
 }
 

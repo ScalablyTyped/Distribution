@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Details
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Environments
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Issues
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.ReleaseInfo
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.TestResults
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.WorkItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object MailSectionType extends js.Object {
   @js.native
   sealed trait WorkItems extends MailSectionType
   
-  /* 0 */ val Details: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Details with Double = js.native
-  /* 1 */ val Environments: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Environments with Double = js.native
-  /* 2 */ val Issues: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.Issues with Double = js.native
-  /* 5 */ val ReleaseInfo: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.ReleaseInfo with Double = js.native
-  /* 3 */ val TestResults: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.TestResults with Double = js.native
-  /* 4 */ val WorkItems: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.MailSectionType.WorkItems with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MailSectionType with Double] = js.native
+  /* 0 */ @js.native
+  object Details extends TopLevel[Details with Double]
+  
+  /* 1 */ @js.native
+  object Environments extends TopLevel[Environments with Double]
+  
+  /* 2 */ @js.native
+  object Issues extends TopLevel[Issues with Double]
+  
+  /* 5 */ @js.native
+  object ReleaseInfo extends TopLevel[ReleaseInfo with Double]
+  
+  /* 3 */ @js.native
+  object TestResults extends TopLevel[TestResults with Double]
+  
+  /* 4 */ @js.native
+  object WorkItems extends TopLevel[WorkItems with Double]
+  
 }
 

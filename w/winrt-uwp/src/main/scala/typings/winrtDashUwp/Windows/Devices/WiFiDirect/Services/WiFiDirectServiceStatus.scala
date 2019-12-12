@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.available
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.busy
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.custom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object WiFiDirectServiceStatus extends js.Object {
   @js.native
   sealed trait custom extends WiFiDirectServiceStatus
   
-  /* 0 */ val available: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.available with Double = js.native
-  /* 1 */ val busy: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.busy with Double = js.native
-  /* 2 */ val custom: typings.winrtDashUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectServiceStatus.custom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectServiceStatus with Double] = js.native
+  /* 0 */ @js.native
+  object available extends TopLevel[available with Double]
+  
+  /* 1 */ @js.native
+  object busy extends TopLevel[busy with Double]
+  
+  /* 2 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
 }
 

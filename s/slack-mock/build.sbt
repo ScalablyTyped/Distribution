@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slack-mock"
-version := "1.1-dt-20190911Z-e9e676"
+version := "1.1-dt-20190911Z-9e2031"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

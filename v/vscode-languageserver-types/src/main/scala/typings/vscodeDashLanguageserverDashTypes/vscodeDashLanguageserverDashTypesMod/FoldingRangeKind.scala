@@ -1,5 +1,9 @@
 package typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Comment
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Imports
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object FoldingRangeKind extends js.Object {
   @js.native
   sealed trait Region extends FoldingRangeKind
   
-  /* "comment" */ val Comment: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Comment with String = js.native
-  /* "imports" */ val Imports: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Imports with String = js.native
-  /* "region" */ val Region: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind.Region with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FoldingRangeKind with String] = js.native
+  /* "comment" */ @js.native
+  object Comment extends TopLevel[Comment with String]
+  
+  /* "imports" */ @js.native
+  object Imports extends TopLevel[Imports with String]
+  
+  /* "region" */ @js.native
+  object Region extends TopLevel[Region with String]
+  
 }
 

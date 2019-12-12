@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuMod.MenuComponent
@@ -18,6 +19,8 @@ object distCommonjsCollectionsMenuMod extends js.Object {
     def this(props: MenuProps, context: js.Any) = this()
   }
   
-  val default: MenuComponent = js.native
+  @js.native
+  object default extends TopLevel[MenuComponent]
+  
 }
 

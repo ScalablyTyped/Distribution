@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.SerialCommunication
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.breakSignal
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.carrierDetect
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.clearToSend
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.dataSetReady
+import typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.ringIndicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object SerialPinChange extends js.Object {
   @js.native
   sealed trait ringIndicator extends SerialPinChange
   
-  /* 0 */ val breakSignal: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.breakSignal with Double = js.native
-  /* 1 */ val carrierDetect: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.carrierDetect with Double = js.native
-  /* 2 */ val clearToSend: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.clearToSend with Double = js.native
-  /* 3 */ val dataSetReady: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.dataSetReady with Double = js.native
-  /* 4 */ val ringIndicator: typings.winrtDashUwp.Windows.Devices.SerialCommunication.SerialPinChange.ringIndicator with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SerialPinChange with Double] = js.native
+  /* 0 */ @js.native
+  object breakSignal extends TopLevel[breakSignal with Double]
+  
+  /* 1 */ @js.native
+  object carrierDetect extends TopLevel[carrierDetect with Double]
+  
+  /* 2 */ @js.native
+  object clearToSend extends TopLevel[clearToSend with Double]
+  
+  /* 3 */ @js.native
+  object dataSetReady extends TopLevel[dataSetReady with Double]
+  
+  /* 4 */ @js.native
+  object ringIndicator extends TopLevel[ringIndicator with Double]
+  
 }
 

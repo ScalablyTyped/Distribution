@@ -12,6 +12,9 @@ trait atMaterialDashUiLabProps {
   def RatingProps: typings.atMaterialDashUiLab.ratingRatingMod.RatingProps.type = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
   type RatingProps = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
   @scala.inline
+  def RatingDefaultProps: typings.atMaterialDashUiLab.ratingRatingMod.RatingProps.type = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
+  type RatingDefaultProps = typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
+  @scala.inline
   def SpeedDialProps: typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps.type = typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps
   type SpeedDialProps = typings.atMaterialDashUiLab.speedDialSpeedDialMod.SpeedDialProps
   @scala.inline

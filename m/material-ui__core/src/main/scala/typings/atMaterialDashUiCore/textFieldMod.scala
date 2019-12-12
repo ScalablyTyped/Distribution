@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object textFieldMod extends js.Object {
     def this(props: TextFieldProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TextFieldProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TextFieldProps]]
+  
 }
 

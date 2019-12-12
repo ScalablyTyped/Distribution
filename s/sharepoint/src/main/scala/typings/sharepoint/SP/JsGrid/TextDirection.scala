@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.TextDirection.Default
+import typings.sharepoint.SP.JsGrid.TextDirection.LeftToRight
+import typings.sharepoint.SP.JsGrid.TextDirection.RightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +25,16 @@ object TextDirection extends js.Object {
   @js.native
   sealed trait RightToLeft extends TextDirection
   
-  /* 0 */ val Default: typings.sharepoint.SP.JsGrid.TextDirection.Default with Double = js.native
-  /* 2 */ val LeftToRight: typings.sharepoint.SP.JsGrid.TextDirection.LeftToRight with Double = js.native
-  /* 1 */ val RightToLeft: typings.sharepoint.SP.JsGrid.TextDirection.RightToLeft with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextDirection with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 2 */ @js.native
+  object LeftToRight extends TopLevel[LeftToRight with Double]
+  
+  /* 1 */ @js.native
+  object RightToLeft extends TopLevel[RightToLeft with Double]
+  
 }
 

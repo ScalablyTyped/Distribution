@@ -1,5 +1,16 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.DocumentFormat.Doc
+import typings.devexpressDashWeb.DocumentFormat.Html
+import typings.devexpressDashWeb.DocumentFormat.Mht
+import typings.devexpressDashWeb.DocumentFormat.OpenDocument
+import typings.devexpressDashWeb.DocumentFormat.OpenXml
+import typings.devexpressDashWeb.DocumentFormat.PlainText
+import typings.devexpressDashWeb.DocumentFormat.Rtf
+import typings.devexpressDashWeb.DocumentFormat.Undefined
+import typings.devexpressDashWeb.DocumentFormat.WordML
+import typings.devexpressDashWeb.DocumentFormat.ePub
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,17 +84,37 @@ object DocumentFormat extends js.Object {
   @js.native
   sealed trait ePub extends DocumentFormat
   
-  /* 10 */ val Doc: typings.devexpressDashWeb.DocumentFormat.Doc with Double = js.native
-  /* 3 */ val Html: typings.devexpressDashWeb.DocumentFormat.Html with Double = js.native
-  /* 5 */ val Mht: typings.devexpressDashWeb.DocumentFormat.Mht with Double = js.native
-  /* 7 */ val OpenDocument: typings.devexpressDashWeb.DocumentFormat.OpenDocument with Double = js.native
-  /* 4 */ val OpenXml: typings.devexpressDashWeb.DocumentFormat.OpenXml with Double = js.native
-  /* 1 */ val PlainText: typings.devexpressDashWeb.DocumentFormat.PlainText with Double = js.native
-  /* 2 */ val Rtf: typings.devexpressDashWeb.DocumentFormat.Rtf with Double = js.native
-  /* 0 */ val Undefined: typings.devexpressDashWeb.DocumentFormat.Undefined with Double = js.native
-  /* 6 */ val WordML: typings.devexpressDashWeb.DocumentFormat.WordML with Double = js.native
-  /* 9 */ val ePub: typings.devexpressDashWeb.DocumentFormat.ePub with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentFormat with Double] = js.native
+  /* 10 */ @js.native
+  object Doc extends TopLevel[Doc with Double]
+  
+  /* 3 */ @js.native
+  object Html extends TopLevel[Html with Double]
+  
+  /* 5 */ @js.native
+  object Mht extends TopLevel[Mht with Double]
+  
+  /* 7 */ @js.native
+  object OpenDocument extends TopLevel[OpenDocument with Double]
+  
+  /* 4 */ @js.native
+  object OpenXml extends TopLevel[OpenXml with Double]
+  
+  /* 1 */ @js.native
+  object PlainText extends TopLevel[PlainText with Double]
+  
+  /* 2 */ @js.native
+  object Rtf extends TopLevel[Rtf with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
+  /* 6 */ @js.native
+  object WordML extends TopLevel[WordML with Double]
+  
+  /* 9 */ @js.native
+  object ePub extends TopLevel[ePub with Double]
+  
 }
 

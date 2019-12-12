@@ -1,5 +1,8 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.ImageErrorCode.aborted
+import typings.playerframework.PlayerFramework.ImageErrorCode.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ImageErrorCode extends js.Object {
   @js.native
   sealed trait unknown extends ImageErrorCode
   
-  /* 1 */ val aborted: typings.playerframework.PlayerFramework.ImageErrorCode.aborted with Double = js.native
-  /* 0 */ val unknown: typings.playerframework.PlayerFramework.ImageErrorCode.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageErrorCode with Double] = js.native
+  /* 1 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

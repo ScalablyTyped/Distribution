@@ -1,5 +1,8 @@
 package typings.umbraco.umbraco.resources
 
+import org.scalablytyped.runtime.TopLevel
+import typings.umbraco.umbraco.resources.Direction.Ascending
+import typings.umbraco.umbraco.resources.Direction.Descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Direction extends js.Object {
   @js.native
   sealed trait Descending extends Direction
   
-  /* 0 */ val Ascending: typings.umbraco.umbraco.resources.Direction.Ascending with Double = js.native
-  /* 1 */ val Descending: typings.umbraco.umbraco.resources.Direction.Descending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Direction with Double] = js.native
+  /* 0 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 1 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
 }
 

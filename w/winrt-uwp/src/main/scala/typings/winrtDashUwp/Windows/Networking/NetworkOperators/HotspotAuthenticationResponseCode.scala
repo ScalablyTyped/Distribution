@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.accessGatewayInternalError
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginAborted
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginFailed
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginSucceeded
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.networkAdministratorError
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.noError
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.radiusServerError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object HotspotAuthenticationResponseCode extends js.Object {
   @js.native
   sealed trait radiusServerError extends HotspotAuthenticationResponseCode
   
-  /* 6 */ val accessGatewayInternalError: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.accessGatewayInternalError with Double = js.native
-  /* 5 */ val loginAborted: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginAborted with Double = js.native
-  /* 2 */ val loginFailed: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginFailed with Double = js.native
-  /* 1 */ val loginSucceeded: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.loginSucceeded with Double = js.native
-  /* 4 */ val networkAdministratorError: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.networkAdministratorError with Double = js.native
-  /* 0 */ val noError: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.noError with Double = js.native
-  /* 3 */ val radiusServerError: typings.winrtDashUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode.radiusServerError with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HotspotAuthenticationResponseCode with Double] = js.native
+  /* 6 */ @js.native
+  object accessGatewayInternalError extends TopLevel[accessGatewayInternalError with Double]
+  
+  /* 5 */ @js.native
+  object loginAborted extends TopLevel[loginAborted with Double]
+  
+  /* 2 */ @js.native
+  object loginFailed extends TopLevel[loginFailed with Double]
+  
+  /* 1 */ @js.native
+  object loginSucceeded extends TopLevel[loginSucceeded with Double]
+  
+  /* 4 */ @js.native
+  object networkAdministratorError extends TopLevel[networkAdministratorError with Double]
+  
+  /* 0 */ @js.native
+  object noError extends TopLevel[noError with Double]
+  
+  /* 3 */ @js.native
+  object radiusServerError extends TopLevel[radiusServerError with Double]
+  
 }
 

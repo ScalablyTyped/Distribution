@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.color
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.default
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.grayscale
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.monochrome
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.notAvailable
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.printerCustom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object PrintColorMode extends js.Object {
   @js.native
   sealed trait printerCustom extends PrintColorMode
   
-  /* 3 */ val color: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.color with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.default with Double = js.native
-  /* 4 */ val grayscale: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.grayscale with Double = js.native
-  /* 5 */ val monochrome: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.monochrome with Double = js.native
-  /* 1 */ val notAvailable: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.notAvailable with Double = js.native
-  /* 2 */ val printerCustom: typings.winrtDashUwp.Windows.Graphics.Printing.PrintColorMode.printerCustom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintColorMode with Double] = js.native
+  /* 3 */ @js.native
+  object color extends TopLevel[color with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 4 */ @js.native
+  object grayscale extends TopLevel[grayscale with Double]
+  
+  /* 5 */ @js.native
+  object monochrome extends TopLevel[monochrome with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
 }
 

@@ -1,5 +1,23 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialStatusCode.OK
+import typings.sharepoint.SP.Social.SocialStatusCode.accessDenied
+import typings.sharepoint.SP.Social.SocialStatusCode.attachmentError
+import typings.sharepoint.SP.Social.SocialStatusCode.cacheReadError
+import typings.sharepoint.SP.Social.SocialStatusCode.cacheUpdateError
+import typings.sharepoint.SP.Social.SocialStatusCode.cannotCreatePersonalSite
+import typings.sharepoint.SP.Social.SocialStatusCode.failedToCreatePersonalSite
+import typings.sharepoint.SP.Social.SocialStatusCode.featureDisabled
+import typings.sharepoint.SP.Social.SocialStatusCode.internalError
+import typings.sharepoint.SP.Social.SocialStatusCode.invalidOperation
+import typings.sharepoint.SP.Social.SocialStatusCode.invalidRequest
+import typings.sharepoint.SP.Social.SocialStatusCode.itemNotFound
+import typings.sharepoint.SP.Social.SocialStatusCode.itemNotModified
+import typings.sharepoint.SP.Social.SocialStatusCode.limitReached
+import typings.sharepoint.SP.Social.SocialStatusCode.notAuthorizedToCreatePersonalSite
+import typings.sharepoint.SP.Social.SocialStatusCode.partialData
+import typings.sharepoint.SP.Social.SocialStatusCode.personalSiteNotFound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -72,24 +90,58 @@ object SocialStatusCode extends js.Object {
   @js.native
   sealed trait personalSiteNotFound extends SocialStatusCode
   
-  /* 0 */ val OK: typings.sharepoint.SP.Social.SocialStatusCode.OK with Double = js.native
-  /* 2 */ val accessDenied: typings.sharepoint.SP.Social.SocialStatusCode.accessDenied with Double = js.native
-  /* 14 */ val attachmentError: typings.sharepoint.SP.Social.SocialStatusCode.attachmentError with Double = js.native
-  /* 7 */ val cacheReadError: typings.sharepoint.SP.Social.SocialStatusCode.cacheReadError with Double = js.native
-  /* 8 */ val cacheUpdateError: typings.sharepoint.SP.Social.SocialStatusCode.cacheUpdateError with Double = js.native
-  /* 12 */ val cannotCreatePersonalSite: typings.sharepoint.SP.Social.SocialStatusCode.cannotCreatePersonalSite with Double = js.native
-  /* 10 */ val failedToCreatePersonalSite: typings.sharepoint.SP.Social.SocialStatusCode.failedToCreatePersonalSite with Double = js.native
-  /* 16 */ val featureDisabled: typings.sharepoint.SP.Social.SocialStatusCode.featureDisabled with Double = js.native
-  /* 6 */ val internalError: typings.sharepoint.SP.Social.SocialStatusCode.internalError with Double = js.native
-  /* 4 */ val invalidOperation: typings.sharepoint.SP.Social.SocialStatusCode.invalidOperation with Double = js.native
-  /* 1 */ val invalidRequest: typings.sharepoint.SP.Social.SocialStatusCode.invalidRequest with Double = js.native
-  /* 3 */ val itemNotFound: typings.sharepoint.SP.Social.SocialStatusCode.itemNotFound with Double = js.native
-  /* 5 */ val itemNotModified: typings.sharepoint.SP.Social.SocialStatusCode.itemNotModified with Double = js.native
-  /* 13 */ val limitReached: typings.sharepoint.SP.Social.SocialStatusCode.limitReached with Double = js.native
-  /* 11 */ val notAuthorizedToCreatePersonalSite: typings.sharepoint.SP.Social.SocialStatusCode.notAuthorizedToCreatePersonalSite with Double = js.native
-  /* 15 */ val partialData: typings.sharepoint.SP.Social.SocialStatusCode.partialData with Double = js.native
-  /* 9 */ val personalSiteNotFound: typings.sharepoint.SP.Social.SocialStatusCode.personalSiteNotFound with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialStatusCode with Double] = js.native
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 2 */ @js.native
+  object accessDenied extends TopLevel[accessDenied with Double]
+  
+  /* 14 */ @js.native
+  object attachmentError extends TopLevel[attachmentError with Double]
+  
+  /* 7 */ @js.native
+  object cacheReadError extends TopLevel[cacheReadError with Double]
+  
+  /* 8 */ @js.native
+  object cacheUpdateError extends TopLevel[cacheUpdateError with Double]
+  
+  /* 12 */ @js.native
+  object cannotCreatePersonalSite extends TopLevel[cannotCreatePersonalSite with Double]
+  
+  /* 10 */ @js.native
+  object failedToCreatePersonalSite extends TopLevel[failedToCreatePersonalSite with Double]
+  
+  /* 16 */ @js.native
+  object featureDisabled extends TopLevel[featureDisabled with Double]
+  
+  /* 6 */ @js.native
+  object internalError extends TopLevel[internalError with Double]
+  
+  /* 4 */ @js.native
+  object invalidOperation extends TopLevel[invalidOperation with Double]
+  
+  /* 1 */ @js.native
+  object invalidRequest extends TopLevel[invalidRequest with Double]
+  
+  /* 3 */ @js.native
+  object itemNotFound extends TopLevel[itemNotFound with Double]
+  
+  /* 5 */ @js.native
+  object itemNotModified extends TopLevel[itemNotModified with Double]
+  
+  /* 13 */ @js.native
+  object limitReached extends TopLevel[limitReached with Double]
+  
+  /* 11 */ @js.native
+  object notAuthorizedToCreatePersonalSite extends TopLevel[notAuthorizedToCreatePersonalSite with Double]
+  
+  /* 15 */ @js.native
+  object partialData extends TopLevel[partialData with Double]
+  
+  /* 9 */ @js.native
+  object personalSiteNotFound extends TopLevel[personalSiteNotFound with Double]
+  
 }
 

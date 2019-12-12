@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.Mode.Default
+import typings.ejDotWebDotAll.ej.datavisualization.Map.Mode.Interactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object Mode extends js.Object {
   @js.native
   sealed trait Interactive extends Mode
   
-  /* 0 */ val Default: typings.ejDotWebDotAll.ej.datavisualization.Map.Mode.Default with Double = js.native
-  /* 1 */ val Interactive: typings.ejDotWebDotAll.ej.datavisualization.Map.Mode.Interactive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Mode with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object Interactive extends TopLevel[Interactive with Double]
+  
 }
 

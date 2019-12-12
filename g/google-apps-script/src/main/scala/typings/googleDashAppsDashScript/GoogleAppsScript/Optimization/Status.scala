@@ -1,5 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Optimization
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.ABNORMAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.FEASIBLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.INFEASIBLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.MODEL_INVALID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.NOT_SOLVED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.OPTIMAL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.UNBOUNDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,14 +44,28 @@ object Status extends js.Object {
   @js.native
   sealed trait UNBOUNDED extends Status
   
-  /* 4 */ val ABNORMAL: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.ABNORMAL with Double = js.native
-  /* 1 */ val FEASIBLE: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.FEASIBLE with Double = js.native
-  /* 2 */ val INFEASIBLE: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.INFEASIBLE with Double = js.native
-  /* 5 */ val MODEL_INVALID: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.MODEL_INVALID with Double = js.native
-  /* 6 */ val NOT_SOLVED: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.NOT_SOLVED with Double = js.native
-  /* 0 */ val OPTIMAL: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.OPTIMAL with Double = js.native
-  /* 3 */ val UNBOUNDED: typings.googleDashAppsDashScript.GoogleAppsScript.Optimization.Status.UNBOUNDED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Status with Double] = js.native
+  /* 4 */ @js.native
+  object ABNORMAL extends TopLevel[ABNORMAL with Double]
+  
+  /* 1 */ @js.native
+  object FEASIBLE extends TopLevel[FEASIBLE with Double]
+  
+  /* 2 */ @js.native
+  object INFEASIBLE extends TopLevel[INFEASIBLE with Double]
+  
+  /* 5 */ @js.native
+  object MODEL_INVALID extends TopLevel[MODEL_INVALID with Double]
+  
+  /* 6 */ @js.native
+  object NOT_SOLVED extends TopLevel[NOT_SOLVED with Double]
+  
+  /* 0 */ @js.native
+  object OPTIMAL extends TopLevel[OPTIMAL with Double]
+  
+  /* 3 */ @js.native
+  object UNBOUNDED extends TopLevel[UNBOUNDED with Double]
+  
 }
 

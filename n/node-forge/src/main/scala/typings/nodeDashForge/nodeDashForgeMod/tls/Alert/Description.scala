@@ -1,5 +1,29 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls.Alert
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.access_denied
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.bad_certificate
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.bad_record_mac
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_expired
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_revoked
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_unknown
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.close_notify
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decode_error
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decompression_failure
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decrypt_error
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decryption_failed
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.export_restriction
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.handshake_failure
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.illegal_parameter
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.insufficient_security
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.internal_error
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.no_renegotiation
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.protocol_version
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.record_overflow
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unexpected_message
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unknown_ca
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unsupported_certificate
+import typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.user_canceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,30 +103,76 @@ object Description extends js.Object {
   @js.native
   sealed trait user_canceled extends Description
   
-  /* 49 */ val access_denied: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.access_denied with Double = js.native
-  /* 42 */ val bad_certificate: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.bad_certificate with Double = js.native
-  /* 20 */ val bad_record_mac: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.bad_record_mac with Double = js.native
-  /* 45 */ val certificate_expired: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_expired with Double = js.native
-  /* 44 */ val certificate_revoked: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_revoked with Double = js.native
-  /* 46 */ val certificate_unknown: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.certificate_unknown with Double = js.native
-  /* 0 */ val close_notify: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.close_notify with Double = js.native
-  /* 50 */ val decode_error: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decode_error with Double = js.native
-  /* 30 */ val decompression_failure: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decompression_failure with Double = js.native
-  /* 51 */ val decrypt_error: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decrypt_error with Double = js.native
-  /* 21 */ val decryption_failed: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.decryption_failed with Double = js.native
-  /* 60 */ val export_restriction: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.export_restriction with Double = js.native
-  /* 40 */ val handshake_failure: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.handshake_failure with Double = js.native
-  /* 47 */ val illegal_parameter: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.illegal_parameter with Double = js.native
-  /* 71 */ val insufficient_security: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.insufficient_security with Double = js.native
-  /* 80 */ val internal_error: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.internal_error with Double = js.native
-  /* 100 */ val no_renegotiation: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.no_renegotiation with Double = js.native
-  /* 70 */ val protocol_version: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.protocol_version with Double = js.native
-  /* 22 */ val record_overflow: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.record_overflow with Double = js.native
-  /* 10 */ val unexpected_message: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unexpected_message with Double = js.native
-  /* 48 */ val unknown_ca: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unknown_ca with Double = js.native
-  /* 43 */ val unsupported_certificate: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.unsupported_certificate with Double = js.native
-  /* 90 */ val user_canceled: typings.nodeDashForge.nodeDashForgeMod.tls.Alert.Description.user_canceled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Description with Double] = js.native
+  /* 49 */ @js.native
+  object access_denied extends TopLevel[access_denied with Double]
+  
+  /* 42 */ @js.native
+  object bad_certificate extends TopLevel[bad_certificate with Double]
+  
+  /* 20 */ @js.native
+  object bad_record_mac extends TopLevel[bad_record_mac with Double]
+  
+  /* 45 */ @js.native
+  object certificate_expired extends TopLevel[certificate_expired with Double]
+  
+  /* 44 */ @js.native
+  object certificate_revoked extends TopLevel[certificate_revoked with Double]
+  
+  /* 46 */ @js.native
+  object certificate_unknown extends TopLevel[certificate_unknown with Double]
+  
+  /* 0 */ @js.native
+  object close_notify extends TopLevel[close_notify with Double]
+  
+  /* 50 */ @js.native
+  object decode_error extends TopLevel[decode_error with Double]
+  
+  /* 30 */ @js.native
+  object decompression_failure extends TopLevel[decompression_failure with Double]
+  
+  /* 51 */ @js.native
+  object decrypt_error extends TopLevel[decrypt_error with Double]
+  
+  /* 21 */ @js.native
+  object decryption_failed extends TopLevel[decryption_failed with Double]
+  
+  /* 60 */ @js.native
+  object export_restriction extends TopLevel[export_restriction with Double]
+  
+  /* 40 */ @js.native
+  object handshake_failure extends TopLevel[handshake_failure with Double]
+  
+  /* 47 */ @js.native
+  object illegal_parameter extends TopLevel[illegal_parameter with Double]
+  
+  /* 71 */ @js.native
+  object insufficient_security extends TopLevel[insufficient_security with Double]
+  
+  /* 80 */ @js.native
+  object internal_error extends TopLevel[internal_error with Double]
+  
+  /* 100 */ @js.native
+  object no_renegotiation extends TopLevel[no_renegotiation with Double]
+  
+  /* 70 */ @js.native
+  object protocol_version extends TopLevel[protocol_version with Double]
+  
+  /* 22 */ @js.native
+  object record_overflow extends TopLevel[record_overflow with Double]
+  
+  /* 10 */ @js.native
+  object unexpected_message extends TopLevel[unexpected_message with Double]
+  
+  /* 48 */ @js.native
+  object unknown_ca extends TopLevel[unknown_ca with Double]
+  
+  /* 43 */ @js.native
+  object unsupported_certificate extends TopLevel[unsupported_certificate with Double]
+  
+  /* 90 */ @js.native
+  object user_canceled extends TopLevel[user_canceled with Double]
+  
 }
 

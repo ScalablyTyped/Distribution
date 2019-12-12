@@ -1,7 +1,11 @@
 package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -118,11 +122,17 @@ object MethodOptions extends js.Object {
     @js.native
     sealed trait NO_SIDE_EFFECTS extends IdempotencyLevel
     
-    /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN with Double = js.native
-    /* 2 */ val IDEMPOTENT: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.IDEMPOTENT with Double = js.native
-    /* 1 */ val NO_SIDE_EFFECTS: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.protobuf.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[IdempotencyLevel with Double] = js.native
+    /* 0 */ @js.native
+    object IDEMPOTENCY_UNKNOWN extends TopLevel[IDEMPOTENCY_UNKNOWN with Double]
+    
+    /* 2 */ @js.native
+    object IDEMPOTENT extends TopLevel[IDEMPOTENT with Double]
+    
+    /* 1 */ @js.native
+    object NO_SIDE_EFFECTS extends TopLevel[NO_SIDE_EFFECTS with Double]
+    
   }
   
 }

@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.days
+import typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.months
+import typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.years
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object ChartAxisTimeUnit extends js.Object {
   @js.native
   sealed trait years extends ChartAxisTimeUnit
   
-  /* "Days" */ val days: typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.days with String = js.native
-  /* "Months" */ val months: typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.months with String = js.native
-  /* "Years" */ val years: typings.officeDashJsDashPreview.Excel.ChartAxisTimeUnit.years with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisTimeUnit with String] = js.native
+  /* "Days" */ @js.native
+  object days extends TopLevel[days with String]
+  
+  /* "Months" */ @js.native
+  object months extends TopLevel[months with String]
+  
+  /* "Years" */ @js.native
+  object years extends TopLevel[years with String]
+  
 }
 

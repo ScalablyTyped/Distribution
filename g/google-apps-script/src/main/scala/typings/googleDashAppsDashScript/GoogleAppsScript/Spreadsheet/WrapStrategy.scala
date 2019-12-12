@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.CLIP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.OVERFLOW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.WRAP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object WrapStrategy extends js.Object {
   @js.native
   sealed trait WRAP extends WrapStrategy
   
-  /* 2 */ val CLIP: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.CLIP with Double = js.native
-  /* 1 */ val OVERFLOW: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.OVERFLOW with Double = js.native
-  /* 0 */ val WRAP: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.WrapStrategy.WRAP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WrapStrategy with Double] = js.native
+  /* 2 */ @js.native
+  object CLIP extends TopLevel[CLIP with Double]
+  
+  /* 1 */ @js.native
+  object OVERFLOW extends TopLevel[OVERFLOW with Double]
+  
+  /* 0 */ @js.native
+  object WRAP extends TopLevel[WRAP with Double]
+  
 }
 

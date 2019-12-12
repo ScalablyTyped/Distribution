@@ -1,5 +1,16 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.DataValidationType.custom
+import typings.officeDashJs.Excel.DataValidationType.date
+import typings.officeDashJs.Excel.DataValidationType.decimal
+import typings.officeDashJs.Excel.DataValidationType.inconsistent
+import typings.officeDashJs.Excel.DataValidationType.list
+import typings.officeDashJs.Excel.DataValidationType.mixedCriteria
+import typings.officeDashJs.Excel.DataValidationType.none
+import typings.officeDashJs.Excel.DataValidationType.textLength
+import typings.officeDashJs.Excel.DataValidationType.time
+import typings.officeDashJs.Excel.DataValidationType.wholeNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -96,17 +107,37 @@ object DataValidationType extends js.Object {
   @js.native
   sealed trait wholeNumber extends DataValidationType
   
-  /* "Custom" */ val custom: typings.officeDashJs.Excel.DataValidationType.custom with String = js.native
-  /* "Date" */ val date: typings.officeDashJs.Excel.DataValidationType.date with String = js.native
-  /* "Decimal" */ val decimal: typings.officeDashJs.Excel.DataValidationType.decimal with String = js.native
-  /* "Inconsistent" */ val inconsistent: typings.officeDashJs.Excel.DataValidationType.inconsistent with String = js.native
-  /* "List" */ val list: typings.officeDashJs.Excel.DataValidationType.list with String = js.native
-  /* "MixedCriteria" */ val mixedCriteria: typings.officeDashJs.Excel.DataValidationType.mixedCriteria with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.DataValidationType.none with String = js.native
-  /* "TextLength" */ val textLength: typings.officeDashJs.Excel.DataValidationType.textLength with String = js.native
-  /* "Time" */ val time: typings.officeDashJs.Excel.DataValidationType.time with String = js.native
-  /* "WholeNumber" */ val wholeNumber: typings.officeDashJs.Excel.DataValidationType.wholeNumber with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DataValidationType with String] = js.native
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "Date" */ @js.native
+  object date extends TopLevel[date with String]
+  
+  /* "Decimal" */ @js.native
+  object decimal extends TopLevel[decimal with String]
+  
+  /* "Inconsistent" */ @js.native
+  object inconsistent extends TopLevel[inconsistent with String]
+  
+  /* "List" */ @js.native
+  object list extends TopLevel[list with String]
+  
+  /* "MixedCriteria" */ @js.native
+  object mixedCriteria extends TopLevel[mixedCriteria with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "TextLength" */ @js.native
+  object textLength extends TopLevel[textLength with String]
+  
+  /* "Time" */ @js.native
+  object time extends TopLevel[time with String]
+  
+  /* "WholeNumber" */ @js.native
+  object wholeNumber extends TopLevel[wholeNumber with String]
+  
 }
 

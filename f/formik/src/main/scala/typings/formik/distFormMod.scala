@@ -1,5 +1,6 @@
 package typings.formik
 
+import org.scalablytyped.runtime.TopLevel
 import typings.formik.formikStrings.onReset
 import typings.formik.formikStrings.onSubmit
 import typings.react.reactMod.Component
@@ -39,12 +40,17 @@ object distFormMod extends js.Object {
     ) = this()
   }
   
-  val Form: ComponentType[
-    Pick[
-      FormHTMLAttributes[HTMLFormElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
-    ]
-  ] = js.native
+  @js.native
+  object Form
+    extends TopLevel[
+          ComponentType[
+            Pick[
+              FormHTMLAttributes[HTMLFormElement], 
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
+            ]
+          ]
+        ]
+  
   type FormikFormProps = Pick[FormHTMLAttributes[HTMLFormElement], Exclude[String, onReset | onSubmit]]
 }
 

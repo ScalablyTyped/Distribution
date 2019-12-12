@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineIterationStatusCode.IsOverlapping
+import typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineIterationStatusCode.OK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object TimelineIterationStatusCode extends js.Object {
   @js.native
   sealed trait OK extends TimelineIterationStatusCode
   
-  /* 1 */ val IsOverlapping: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineIterationStatusCode.IsOverlapping with Double = js.native
-  /* 0 */ val OK: typings.vsoDashNodeDashApi.interfacesWorkInterfacesMod.TimelineIterationStatusCode.OK with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimelineIterationStatusCode with Double] = js.native
+  /* 1 */ @js.native
+  object IsOverlapping extends TopLevel[IsOverlapping with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
 }
 

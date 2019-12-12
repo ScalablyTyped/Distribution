@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.circle
+import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.gap
+import typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ShimmerElementsDefaultHeights extends js.Object {
   @js.native
   sealed trait line extends ShimmerElementsDefaultHeights
   
-  /* 24 */ val circle: typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.circle with Double = js.native
-  /* 16 */ val gap: typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.gap with Double = js.native
-  /* 16 */ val line: typings.officeDashUiDashFabricDashReact.libComponentsShimmerShimmerDotTypesMod.ShimmerElementsDefaultHeights.line with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ShimmerElementsDefaultHeights with Double] = js.native
+  /* 24 */ @js.native
+  object circle extends TopLevel[circle with Double]
+  
+  /* 16 */ @js.native
+  object gap extends TopLevel[gap with Double]
+  
+  /* 16 */ @js.native
+  object line extends TopLevel[line with Double]
+  
 }
 

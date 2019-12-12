@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.WiFiDirect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType.associationEndpoint
+import typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType.deviceInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object WiFiDirectDeviceSelectorType extends js.Object {
   @js.native
   sealed trait deviceInterface extends WiFiDirectDeviceSelectorType
   
-  /* 1 */ val associationEndpoint: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType.associationEndpoint with Double = js.native
-  /* 0 */ val deviceInterface: typings.winrtDashUwp.Windows.Devices.WiFiDirect.WiFiDirectDeviceSelectorType.deviceInterface with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiDirectDeviceSelectorType with Double] = js.native
+  /* 1 */ @js.native
+  object associationEndpoint extends TopLevel[associationEndpoint with Double]
+  
+  /* 0 */ @js.native
+  object deviceInterface extends TopLevel[deviceInterface with Double]
+  
 }
 

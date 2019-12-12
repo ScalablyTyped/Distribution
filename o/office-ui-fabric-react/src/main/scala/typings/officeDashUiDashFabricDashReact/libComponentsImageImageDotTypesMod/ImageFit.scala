@@ -1,5 +1,12 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.center
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerContain
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerCover
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.contain
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.cover
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,13 +61,25 @@ object ImageFit extends js.Object {
   @js.native
   sealed trait none extends ImageFit
   
-  /* 0 */ val center: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.center with Double = js.native
-  /* 5 */ val centerContain: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerContain with Double = js.native
-  /* 4 */ val centerCover: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.centerCover with Double = js.native
-  /* 1 */ val contain: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.contain with Double = js.native
-  /* 2 */ val cover: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.cover with Double = js.native
-  /* 3 */ val none: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageFit.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageFit with Double] = js.native
+  /* 0 */ @js.native
+  object center extends TopLevel[center with Double]
+  
+  /* 5 */ @js.native
+  object centerContain extends TopLevel[centerContain with Double]
+  
+  /* 4 */ @js.native
+  object centerCover extends TopLevel[centerCover with Double]
+  
+  /* 1 */ @js.native
+  object contain extends TopLevel[contain with Double]
+  
+  /* 2 */ @js.native
+  object cover extends TopLevel[cover with Double]
+  
+  /* 3 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

@@ -72,11 +72,11 @@ import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateGcmChannelEx
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSegmentExceptionsUnionMod.UpdateSegmentExceptionsUnion
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MethodNotAllowedException
   extends ServiceException[_MethodNotAllowedExceptionDetails]
      with CreateAppExceptionsUnion
@@ -151,21 +151,6 @@ trait MethodNotAllowedException
      with UpdateSegmentExceptionsUnion
      with UpdateSmsChannelExceptionsUnion {
   @JSName("name")
-  var name_MethodNotAllowedException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.MethodNotAllowedException
-}
-
-object MethodNotAllowedException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _MethodNotAllowedExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.MethodNotAllowedException,
-    stack: String = null
-  ): MethodNotAllowedException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MethodNotAllowedException]
-  }
+  var name_MethodNotAllowedException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.MethodNotAllowedException = js.native
 }
 

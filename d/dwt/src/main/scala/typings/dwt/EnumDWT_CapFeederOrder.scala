@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapFeederOrder.TWFO_FIRSTPAGEFIRST
+import typings.dwt.EnumDWT_CapFeederOrder.TWFO_LASTPAGEFIRST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EnumDWT_CapFeederOrder extends js.Object {
   @js.native
   sealed trait TWFO_LASTPAGEFIRST extends EnumDWT_CapFeederOrder
   
-  /* 0 */ val TWFO_FIRSTPAGEFIRST: typings.dwt.EnumDWT_CapFeederOrder.TWFO_FIRSTPAGEFIRST with Double = js.native
-  /* 1 */ val TWFO_LASTPAGEFIRST: typings.dwt.EnumDWT_CapFeederOrder.TWFO_LASTPAGEFIRST with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapFeederOrder with Double] = js.native
+  /* 0 */ @js.native
+  object TWFO_FIRSTPAGEFIRST extends TopLevel[TWFO_FIRSTPAGEFIRST with Double]
+  
+  /* 1 */ @js.native
+  object TWFO_LASTPAGEFIRST extends TopLevel[TWFO_LASTPAGEFIRST with Double]
+  
 }
 

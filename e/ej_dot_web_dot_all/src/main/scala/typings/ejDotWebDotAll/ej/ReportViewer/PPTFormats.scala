@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.ReportViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2007
+import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2010
+import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2013
+import typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint97to2003
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object PPTFormats extends js.Object {
   @js.native
   sealed trait PowerPoint97to2003 extends PPTFormats
   
-  /* 1 */ val PowerPoint2007: typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2007 with Double = js.native
-  /* 2 */ val PowerPoint2010: typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2010 with Double = js.native
-  /* 3 */ val PowerPoint2013: typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint2013 with Double = js.native
-  /* 0 */ val PowerPoint97to2003: typings.ejDotWebDotAll.ej.ReportViewer.PPTFormats.PowerPoint97to2003 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PPTFormats with Double] = js.native
+  /* 1 */ @js.native
+  object PowerPoint2007 extends TopLevel[PowerPoint2007 with Double]
+  
+  /* 2 */ @js.native
+  object PowerPoint2010 extends TopLevel[PowerPoint2010 with Double]
+  
+  /* 3 */ @js.native
+  object PowerPoint2013 extends TopLevel[PowerPoint2013 with Double]
+  
+  /* 0 */ @js.native
+  object PowerPoint97to2003 extends TopLevel[PowerPoint97to2003 with Double]
+  
 }
 

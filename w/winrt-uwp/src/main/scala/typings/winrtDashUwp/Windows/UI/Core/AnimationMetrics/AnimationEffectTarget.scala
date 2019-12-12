@@ -1,5 +1,26 @@
 package typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.added
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.affected
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.background
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.content
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deleted
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deselected
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.dragSource
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.hidden
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.incoming
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outgoing
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outline
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.primary
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.remaining
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.revealed
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowIn
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowOut
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selected
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selection
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.shown
+import typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.tapped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,27 +112,67 @@ object AnimationEffectTarget extends js.Object {
   @js.native
   sealed trait tapped extends AnimationEffectTarget
   
-  /* 1 */ val added: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.added with Double = js.native
-  /* 2 */ val affected: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.affected with Double = js.native
-  /* 3 */ val background: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.background with Double = js.native
-  /* 4 */ val content: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.content with Double = js.native
-  /* 5 */ val deleted: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deleted with Double = js.native
-  /* 6 */ val deselected: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.deselected with Double = js.native
-  /* 7 */ val dragSource: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.dragSource with Double = js.native
-  /* 8 */ val hidden: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.hidden with Double = js.native
-  /* 9 */ val incoming: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.incoming with Double = js.native
-  /* 10 */ val outgoing: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outgoing with Double = js.native
-  /* 11 */ val outline: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.outline with Double = js.native
-  /* 0 */ val primary: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.primary with Double = js.native
-  /* 12 */ val remaining: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.remaining with Double = js.native
-  /* 13 */ val revealed: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.revealed with Double = js.native
-  /* 14 */ val rowIn: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowIn with Double = js.native
-  /* 15 */ val rowOut: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.rowOut with Double = js.native
-  /* 16 */ val selected: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selected with Double = js.native
-  /* 17 */ val selection: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.selection with Double = js.native
-  /* 18 */ val shown: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.shown with Double = js.native
-  /* 19 */ val tapped: typings.winrtDashUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget.tapped with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AnimationEffectTarget with Double] = js.native
+  /* 1 */ @js.native
+  object added extends TopLevel[added with Double]
+  
+  /* 2 */ @js.native
+  object affected extends TopLevel[affected with Double]
+  
+  /* 3 */ @js.native
+  object background extends TopLevel[background with Double]
+  
+  /* 4 */ @js.native
+  object content extends TopLevel[content with Double]
+  
+  /* 5 */ @js.native
+  object deleted extends TopLevel[deleted with Double]
+  
+  /* 6 */ @js.native
+  object deselected extends TopLevel[deselected with Double]
+  
+  /* 7 */ @js.native
+  object dragSource extends TopLevel[dragSource with Double]
+  
+  /* 8 */ @js.native
+  object hidden extends TopLevel[hidden with Double]
+  
+  /* 9 */ @js.native
+  object incoming extends TopLevel[incoming with Double]
+  
+  /* 10 */ @js.native
+  object outgoing extends TopLevel[outgoing with Double]
+  
+  /* 11 */ @js.native
+  object outline extends TopLevel[outline with Double]
+  
+  /* 0 */ @js.native
+  object primary extends TopLevel[primary with Double]
+  
+  /* 12 */ @js.native
+  object remaining extends TopLevel[remaining with Double]
+  
+  /* 13 */ @js.native
+  object revealed extends TopLevel[revealed with Double]
+  
+  /* 14 */ @js.native
+  object rowIn extends TopLevel[rowIn with Double]
+  
+  /* 15 */ @js.native
+  object rowOut extends TopLevel[rowOut with Double]
+  
+  /* 16 */ @js.native
+  object selected extends TopLevel[selected with Double]
+  
+  /* 17 */ @js.native
+  object selection extends TopLevel[selection with Double]
+  
+  /* 18 */ @js.native
+  object shown extends TopLevel[shown with Double]
+  
+  /* 19 */ @js.native
+  object tapped extends TopLevel[tapped with Double]
+  
 }
 

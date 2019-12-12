@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Custom
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.any
+import typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.read
+import typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.readWrite
+import typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object IOControlAccessMode extends js.Object {
   @js.native
   sealed trait write extends IOControlAccessMode
   
-  /* 0 */ val any: typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.any with Double = js.native
-  /* 1 */ val read: typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.read with Double = js.native
-  /* 3 */ val readWrite: typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.readWrite with Double = js.native
-  /* 2 */ val write: typings.winrtDashUwp.Windows.Devices.Custom.IOControlAccessMode.write with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IOControlAccessMode with Double] = js.native
+  /* 0 */ @js.native
+  object any extends TopLevel[any with Double]
+  
+  /* 1 */ @js.native
+  object read extends TopLevel[read with Double]
+  
+  /* 3 */ @js.native
+  object readWrite extends TopLevel[readWrite with Double]
+  
+  /* 2 */ @js.native
+  object write extends TopLevel[write with Double]
+  
 }
 

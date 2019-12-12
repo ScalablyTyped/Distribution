@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.defaultQuery
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByDate
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByMusicProperties
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByName
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderBySearchRank
+import typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByTitle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object CommonFileQuery extends js.Object {
   @js.native
   sealed trait orderByTitle extends CommonFileQuery
   
-  /* 0 */ val defaultQuery: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.defaultQuery with Double = js.native
-  /* 5 */ val orderByDate: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByDate with Double = js.native
-  /* 3 */ val orderByMusicProperties: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByMusicProperties with Double = js.native
-  /* 1 */ val orderByName: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByName with Double = js.native
-  /* 4 */ val orderBySearchRank: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderBySearchRank with Double = js.native
-  /* 2 */ val orderByTitle: typings.winrtDashUwp.Windows.Storage.Search.CommonFileQuery.orderByTitle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommonFileQuery with Double] = js.native
+  /* 0 */ @js.native
+  object defaultQuery extends TopLevel[defaultQuery with Double]
+  
+  /* 5 */ @js.native
+  object orderByDate extends TopLevel[orderByDate with Double]
+  
+  /* 3 */ @js.native
+  object orderByMusicProperties extends TopLevel[orderByMusicProperties with Double]
+  
+  /* 1 */ @js.native
+  object orderByName extends TopLevel[orderByName with Double]
+  
+  /* 4 */ @js.native
+  object orderBySearchRank extends TopLevel[orderBySearchRank with Double]
+  
+  /* 2 */ @js.native
+  object orderByTitle extends TopLevel[orderByTitle with Double]
+  
 }
 

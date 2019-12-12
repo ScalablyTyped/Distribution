@@ -1,5 +1,9 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ListLevelNumberAlignment.Center
+import typings.devexpressDashWeb.ListLevelNumberAlignment.Left
+import typings.devexpressDashWeb.ListLevelNumberAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object ListLevelNumberAlignment extends js.Object {
   @js.native
   sealed trait Right extends ListLevelNumberAlignment
   
-  /* 1 */ val Center: typings.devexpressDashWeb.ListLevelNumberAlignment.Center with Double = js.native
-  /* 0 */ val Left: typings.devexpressDashWeb.ListLevelNumberAlignment.Left with Double = js.native
-  /* 2 */ val Right: typings.devexpressDashWeb.ListLevelNumberAlignment.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListLevelNumberAlignment with Double] = js.native
+  /* 1 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 2 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

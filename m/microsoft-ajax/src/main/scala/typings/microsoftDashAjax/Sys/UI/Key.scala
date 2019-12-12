@@ -1,5 +1,20 @@
 package typings.microsoftDashAjax.Sys.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashAjax.Sys.UI.Key.backspace
+import typings.microsoftDashAjax.Sys.UI.Key.del
+import typings.microsoftDashAjax.Sys.UI.Key.down
+import typings.microsoftDashAjax.Sys.UI.Key.end
+import typings.microsoftDashAjax.Sys.UI.Key.enter
+import typings.microsoftDashAjax.Sys.UI.Key.esc
+import typings.microsoftDashAjax.Sys.UI.Key.home
+import typings.microsoftDashAjax.Sys.UI.Key.left
+import typings.microsoftDashAjax.Sys.UI.Key.pageDown
+import typings.microsoftDashAjax.Sys.UI.Key.pageUp
+import typings.microsoftDashAjax.Sys.UI.Key.right
+import typings.microsoftDashAjax.Sys.UI.Key.space
+import typings.microsoftDashAjax.Sys.UI.Key.tab
+import typings.microsoftDashAjax.Sys.UI.Key.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,21 +113,49 @@ object Key extends js.Object {
   @js.native
   sealed trait up extends Key
   
-  /* 0 */ val backspace: typings.microsoftDashAjax.Sys.UI.Key.backspace with Double = js.native
-  /* 13 */ val del: typings.microsoftDashAjax.Sys.UI.Key.del with Double = js.native
-  /* 12 */ val down: typings.microsoftDashAjax.Sys.UI.Key.down with Double = js.native
-  /* 7 */ val end: typings.microsoftDashAjax.Sys.UI.Key.end with Double = js.native
-  /* 2 */ val enter: typings.microsoftDashAjax.Sys.UI.Key.enter with Double = js.native
-  /* 3 */ val esc: typings.microsoftDashAjax.Sys.UI.Key.esc with Double = js.native
-  /* 8 */ val home: typings.microsoftDashAjax.Sys.UI.Key.home with Double = js.native
-  /* 9 */ val left: typings.microsoftDashAjax.Sys.UI.Key.left with Double = js.native
-  /* 6 */ val pageDown: typings.microsoftDashAjax.Sys.UI.Key.pageDown with Double = js.native
-  /* 5 */ val pageUp: typings.microsoftDashAjax.Sys.UI.Key.pageUp with Double = js.native
-  /* 11 */ val right: typings.microsoftDashAjax.Sys.UI.Key.right with Double = js.native
-  /* 4 */ val space: typings.microsoftDashAjax.Sys.UI.Key.space with Double = js.native
-  /* 1 */ val tab: typings.microsoftDashAjax.Sys.UI.Key.tab with Double = js.native
-  /* 10 */ val up: typings.microsoftDashAjax.Sys.UI.Key.up with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Key with Double] = js.native
+  /* 0 */ @js.native
+  object backspace extends TopLevel[backspace with Double]
+  
+  /* 13 */ @js.native
+  object del extends TopLevel[del with Double]
+  
+  /* 12 */ @js.native
+  object down extends TopLevel[down with Double]
+  
+  /* 7 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 2 */ @js.native
+  object enter extends TopLevel[enter with Double]
+  
+  /* 3 */ @js.native
+  object esc extends TopLevel[esc with Double]
+  
+  /* 8 */ @js.native
+  object home extends TopLevel[home with Double]
+  
+  /* 9 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* 6 */ @js.native
+  object pageDown extends TopLevel[pageDown with Double]
+  
+  /* 5 */ @js.native
+  object pageUp extends TopLevel[pageUp with Double]
+  
+  /* 11 */ @js.native
+  object right extends TopLevel[right with Double]
+  
+  /* 4 */ @js.native
+  object space extends TopLevel[space with Double]
+  
+  /* 1 */ @js.native
+  object tab extends TopLevel[tab with Double]
+  
+  /* 10 */ @js.native
+  object up extends TopLevel[up with Double]
+  
 }
 

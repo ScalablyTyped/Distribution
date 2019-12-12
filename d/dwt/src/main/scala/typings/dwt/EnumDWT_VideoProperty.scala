@@ -1,5 +1,16 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_VideoProperty.VP_BACKLIGHTCOMPENSATION
+import typings.dwt.EnumDWT_VideoProperty.VP_BRIGHTNESS
+import typings.dwt.EnumDWT_VideoProperty.VP_COLORENABLE
+import typings.dwt.EnumDWT_VideoProperty.VP_CONTRAST
+import typings.dwt.EnumDWT_VideoProperty.VP_GAIN
+import typings.dwt.EnumDWT_VideoProperty.VP_GAMMA
+import typings.dwt.EnumDWT_VideoProperty.VP_HUE
+import typings.dwt.EnumDWT_VideoProperty.VP_SATURATION
+import typings.dwt.EnumDWT_VideoProperty.VP_SHARPNESS
+import typings.dwt.EnumDWT_VideoProperty.VP_WHITEBALANCE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,17 +67,37 @@ object EnumDWT_VideoProperty extends js.Object {
   @js.native
   sealed trait VP_WHITEBALANCE extends EnumDWT_VideoProperty
   
-  /* 8 */ val VP_BACKLIGHTCOMPENSATION: typings.dwt.EnumDWT_VideoProperty.VP_BACKLIGHTCOMPENSATION with Double = js.native
-  /* 0 */ val VP_BRIGHTNESS: typings.dwt.EnumDWT_VideoProperty.VP_BRIGHTNESS with Double = js.native
-  /* 6 */ val VP_COLORENABLE: typings.dwt.EnumDWT_VideoProperty.VP_COLORENABLE with Double = js.native
-  /* 1 */ val VP_CONTRAST: typings.dwt.EnumDWT_VideoProperty.VP_CONTRAST with Double = js.native
-  /* 9 */ val VP_GAIN: typings.dwt.EnumDWT_VideoProperty.VP_GAIN with Double = js.native
-  /* 5 */ val VP_GAMMA: typings.dwt.EnumDWT_VideoProperty.VP_GAMMA with Double = js.native
-  /* 2 */ val VP_HUE: typings.dwt.EnumDWT_VideoProperty.VP_HUE with Double = js.native
-  /* 3 */ val VP_SATURATION: typings.dwt.EnumDWT_VideoProperty.VP_SATURATION with Double = js.native
-  /* 4 */ val VP_SHARPNESS: typings.dwt.EnumDWT_VideoProperty.VP_SHARPNESS with Double = js.native
-  /* 7 */ val VP_WHITEBALANCE: typings.dwt.EnumDWT_VideoProperty.VP_WHITEBALANCE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_VideoProperty with Double] = js.native
+  /* 8 */ @js.native
+  object VP_BACKLIGHTCOMPENSATION extends TopLevel[VP_BACKLIGHTCOMPENSATION with Double]
+  
+  /* 0 */ @js.native
+  object VP_BRIGHTNESS extends TopLevel[VP_BRIGHTNESS with Double]
+  
+  /* 6 */ @js.native
+  object VP_COLORENABLE extends TopLevel[VP_COLORENABLE with Double]
+  
+  /* 1 */ @js.native
+  object VP_CONTRAST extends TopLevel[VP_CONTRAST with Double]
+  
+  /* 9 */ @js.native
+  object VP_GAIN extends TopLevel[VP_GAIN with Double]
+  
+  /* 5 */ @js.native
+  object VP_GAMMA extends TopLevel[VP_GAMMA with Double]
+  
+  /* 2 */ @js.native
+  object VP_HUE extends TopLevel[VP_HUE with Double]
+  
+  /* 3 */ @js.native
+  object VP_SATURATION extends TopLevel[VP_SATURATION with Double]
+  
+  /* 4 */ @js.native
+  object VP_SHARPNESS extends TopLevel[VP_SHARPNESS with Double]
+  
+  /* 7 */ @js.native
+  object VP_WHITEBALANCE extends TopLevel[VP_WHITEBALANCE with Double]
+  
 }
 

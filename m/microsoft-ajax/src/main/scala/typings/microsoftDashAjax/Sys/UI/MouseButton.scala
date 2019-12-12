@@ -1,5 +1,9 @@
 package typings.microsoftDashAjax.Sys.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashAjax.Sys.UI.MouseButton.leftButton
+import typings.microsoftDashAjax.Sys.UI.MouseButton.middleButton
+import typings.microsoftDashAjax.Sys.UI.MouseButton.rightButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object MouseButton extends js.Object {
   @js.native
   sealed trait rightButton extends MouseButton
   
-  /* 0 */ val leftButton: typings.microsoftDashAjax.Sys.UI.MouseButton.leftButton with Double = js.native
-  /* 1 */ val middleButton: typings.microsoftDashAjax.Sys.UI.MouseButton.middleButton with Double = js.native
-  /* 2 */ val rightButton: typings.microsoftDashAjax.Sys.UI.MouseButton.rightButton with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MouseButton with Double] = js.native
+  /* 0 */ @js.native
+  object leftButton extends TopLevel[leftButton with Double]
+  
+  /* 1 */ @js.native
+  object middleButton extends TopLevel[middleButton with Double]
+  
+  /* 2 */ @js.native
+  object rightButton extends TopLevel[rightButton with Double]
+  
 }
 

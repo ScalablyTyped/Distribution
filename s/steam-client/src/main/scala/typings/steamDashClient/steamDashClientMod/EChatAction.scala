@@ -1,5 +1,22 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatAction.Ban
+import typings.steamDashClient.steamDashClientMod.EChatAction.CloseChat
+import typings.steamDashClient.steamDashClientMod.EChatAction.EndVoiceSpeak
+import typings.steamDashClient.steamDashClientMod.EChatAction.InviteChat
+import typings.steamDashClient.steamDashClientMod.EChatAction.Kick
+import typings.steamDashClient.steamDashClientMod.EChatAction.LockChat
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetInvisibleToFriends
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetJoinable
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetModerated
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetOwner
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetUnjoinable
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetUnmoderated
+import typings.steamDashClient.steamDashClientMod.EChatAction.SetVisibleToFriends
+import typings.steamDashClient.steamDashClientMod.EChatAction.StartVoiceSpeak
+import typings.steamDashClient.steamDashClientMod.EChatAction.UnBan
+import typings.steamDashClient.steamDashClientMod.EChatAction.UnlockChat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,23 +75,55 @@ object EChatAction extends js.Object {
   @js.native
   sealed trait UnlockChat extends EChatAction
   
-  /* 3 */ val Ban: typings.steamDashClient.steamDashClientMod.EChatAction.Ban with Double = js.native
-  /* 9 */ val CloseChat: typings.steamDashClient.steamDashClientMod.EChatAction.CloseChat with Double = js.native
-  /* 6 */ val EndVoiceSpeak: typings.steamDashClient.steamDashClientMod.EChatAction.EndVoiceSpeak with Double = js.native
-  /* 1 */ val InviteChat: typings.steamDashClient.steamDashClientMod.EChatAction.InviteChat with Double = js.native
-  /* 2 */ val Kick: typings.steamDashClient.steamDashClientMod.EChatAction.Kick with Double = js.native
-  /* 7 */ val LockChat: typings.steamDashClient.steamDashClientMod.EChatAction.LockChat with Double = js.native
-  /* 13 */ val SetInvisibleToFriends: typings.steamDashClient.steamDashClientMod.EChatAction.SetInvisibleToFriends with Double = js.native
-  /* 10 */ val SetJoinable: typings.steamDashClient.steamDashClientMod.EChatAction.SetJoinable with Double = js.native
-  /* 15 */ val SetModerated: typings.steamDashClient.steamDashClientMod.EChatAction.SetModerated with Double = js.native
-  /* 12 */ val SetOwner: typings.steamDashClient.steamDashClientMod.EChatAction.SetOwner with Double = js.native
-  /* 11 */ val SetUnjoinable: typings.steamDashClient.steamDashClientMod.EChatAction.SetUnjoinable with Double = js.native
-  /* 16 */ val SetUnmoderated: typings.steamDashClient.steamDashClientMod.EChatAction.SetUnmoderated with Double = js.native
-  /* 14 */ val SetVisibleToFriends: typings.steamDashClient.steamDashClientMod.EChatAction.SetVisibleToFriends with Double = js.native
-  /* 5 */ val StartVoiceSpeak: typings.steamDashClient.steamDashClientMod.EChatAction.StartVoiceSpeak with Double = js.native
-  /* 4 */ val UnBan: typings.steamDashClient.steamDashClientMod.EChatAction.UnBan with Double = js.native
-  /* 8 */ val UnlockChat: typings.steamDashClient.steamDashClientMod.EChatAction.UnlockChat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatAction with Double] = js.native
+  /* 3 */ @js.native
+  object Ban extends TopLevel[Ban with Double]
+  
+  /* 9 */ @js.native
+  object CloseChat extends TopLevel[CloseChat with Double]
+  
+  /* 6 */ @js.native
+  object EndVoiceSpeak extends TopLevel[EndVoiceSpeak with Double]
+  
+  /* 1 */ @js.native
+  object InviteChat extends TopLevel[InviteChat with Double]
+  
+  /* 2 */ @js.native
+  object Kick extends TopLevel[Kick with Double]
+  
+  /* 7 */ @js.native
+  object LockChat extends TopLevel[LockChat with Double]
+  
+  /* 13 */ @js.native
+  object SetInvisibleToFriends extends TopLevel[SetInvisibleToFriends with Double]
+  
+  /* 10 */ @js.native
+  object SetJoinable extends TopLevel[SetJoinable with Double]
+  
+  /* 15 */ @js.native
+  object SetModerated extends TopLevel[SetModerated with Double]
+  
+  /* 12 */ @js.native
+  object SetOwner extends TopLevel[SetOwner with Double]
+  
+  /* 11 */ @js.native
+  object SetUnjoinable extends TopLevel[SetUnjoinable with Double]
+  
+  /* 16 */ @js.native
+  object SetUnmoderated extends TopLevel[SetUnmoderated with Double]
+  
+  /* 14 */ @js.native
+  object SetVisibleToFriends extends TopLevel[SetVisibleToFriends with Double]
+  
+  /* 5 */ @js.native
+  object StartVoiceSpeak extends TopLevel[StartVoiceSpeak with Double]
+  
+  /* 4 */ @js.native
+  object UnBan extends TopLevel[UnBan with Double]
+  
+  /* 8 */ @js.native
+  object UnlockChat extends TopLevel[UnlockChat with Double]
+  
 }
 

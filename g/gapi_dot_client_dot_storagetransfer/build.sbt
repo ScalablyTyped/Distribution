@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_storagetransfer"
-version := "1.0-dt-20190213Z-40d3f3"
+version := "1.0-dt-20190213Z-0d7047"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

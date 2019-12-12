@@ -1,5 +1,38 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.DelegateType.AddColumnMenuItems
+import typings.sharepoint.SP.JsGrid.DelegateType.AddNewColumn
+import typings.sharepoint.SP.JsGrid.DelegateType.AddNewColumnMenuItems
+import typings.sharepoint.SP.JsGrid.DelegateType.AllowSelectionChange
+import typings.sharepoint.SP.JsGrid.DelegateType.AutoFilter
+import typings.sharepoint.SP.JsGrid.DelegateType.CanReorderRecords
+import typings.sharepoint.SP.JsGrid.DelegateType.CreateEntryRecord
+import typings.sharepoint.SP.JsGrid.DelegateType.DeleteRecords
+import typings.sharepoint.SP.JsGrid.DelegateType.ExpandColumnMenu
+import typings.sharepoint.SP.JsGrid.DelegateType.ExpandConflictResolution
+import typings.sharepoint.SP.JsGrid.DelegateType.ExpandDelayLoadedHierarchyNode
+import typings.sharepoint.SP.JsGrid.DelegateType.Filter
+import typings.sharepoint.SP.JsGrid.DelegateType.GetAutoFilterEntries
+import typings.sharepoint.SP.JsGrid.DelegateType.GetFieldEditMode
+import typings.sharepoint.SP.JsGrid.DelegateType.GetFieldReadOnlyActiveState
+import typings.sharepoint.SP.JsGrid.DelegateType.GetGridRowStyleId
+import typings.sharepoint.SP.JsGrid.DelegateType.GetRecordEditMode
+import typings.sharepoint.SP.JsGrid.DelegateType.IndentRecords
+import typings.sharepoint.SP.JsGrid.DelegateType.InsertRecord
+import typings.sharepoint.SP.JsGrid.DelegateType.IsRecordInsertInView
+import typings.sharepoint.SP.JsGrid.DelegateType.LaunchFilterDialog
+import typings.sharepoint.SP.JsGrid.DelegateType.NextPage
+import typings.sharepoint.SP.JsGrid.DelegateType.OnBeforeRecordReordered
+import typings.sharepoint.SP.JsGrid.DelegateType.OutdentRecords
+import typings.sharepoint.SP.JsGrid.DelegateType.RemoveColumnFromView
+import typings.sharepoint.SP.JsGrid.DelegateType.ReorderColumnPositionInView
+import typings.sharepoint.SP.JsGrid.DelegateType.ShowColumnConfigurationDialog
+import typings.sharepoint.SP.JsGrid.DelegateType.Sort
+import typings.sharepoint.SP.JsGrid.DelegateType.TryBeginPaste
+import typings.sharepoint.SP.JsGrid.DelegateType.TryCreateProvisionalRecord
+import typings.sharepoint.SP.JsGrid.DelegateType.TryInsertEntryRecord
+import typings.sharepoint.SP.JsGrid.DelegateType.WillAddColumnMenuItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,39 +139,103 @@ object DelegateType extends js.Object {
   @js.native
   sealed trait WillAddColumnMenuItems extends DelegateType
   
-  /* 1 */ val AddColumnMenuItems: typings.sharepoint.SP.JsGrid.DelegateType.AddColumnMenuItems with Double = js.native
-  /* 21 */ val AddNewColumn: typings.sharepoint.SP.JsGrid.DelegateType.AddNewColumn with Double = js.native
-  /* 26 */ val AddNewColumnMenuItems: typings.sharepoint.SP.JsGrid.DelegateType.AddNewColumnMenuItems with Double = js.native
-  /* 28 */ val AllowSelectionChange: typings.sharepoint.SP.JsGrid.DelegateType.AllowSelectionChange with Double = js.native
-  /* 10 */ val AutoFilter: typings.sharepoint.SP.JsGrid.DelegateType.AutoFilter with Double = js.native
-  /* 25 */ val CanReorderRecords: typings.sharepoint.SP.JsGrid.DelegateType.CanReorderRecords with Double = js.native
-  /* 17 */ val CreateEntryRecord: typings.sharepoint.SP.JsGrid.DelegateType.CreateEntryRecord with Double = js.native
-  /* 5 */ val DeleteRecords: typings.sharepoint.SP.JsGrid.DelegateType.DeleteRecords with Double = js.native
-  /* 0 */ val ExpandColumnMenu: typings.sharepoint.SP.JsGrid.DelegateType.ExpandColumnMenu with Double = js.native
-  /* 11 */ val ExpandConflictResolution: typings.sharepoint.SP.JsGrid.DelegateType.ExpandConflictResolution with Double = js.native
-  /* 9 */ val ExpandDelayLoadedHierarchyNode: typings.sharepoint.SP.JsGrid.DelegateType.ExpandDelayLoadedHierarchyNode with Double = js.native
-  /* 3 */ val Filter: typings.sharepoint.SP.JsGrid.DelegateType.Filter with Double = js.native
-  /* 12 */ val GetAutoFilterEntries: typings.sharepoint.SP.JsGrid.DelegateType.GetAutoFilterEntries with Double = js.native
-  /* 29 */ val GetFieldEditMode: typings.sharepoint.SP.JsGrid.DelegateType.GetFieldEditMode with Double = js.native
-  /* 30 */ val GetFieldReadOnlyActiveState: typings.sharepoint.SP.JsGrid.DelegateType.GetFieldReadOnlyActiveState with Double = js.native
-  /* 16 */ val GetGridRowStyleId: typings.sharepoint.SP.JsGrid.DelegateType.GetGridRowStyleId with Double = js.native
-  /* 15 */ val GetRecordEditMode: typings.sharepoint.SP.JsGrid.DelegateType.GetRecordEditMode with Double = js.native
-  /* 6 */ val IndentRecords: typings.sharepoint.SP.JsGrid.DelegateType.IndentRecords with Double = js.native
-  /* 4 */ val InsertRecord: typings.sharepoint.SP.JsGrid.DelegateType.InsertRecord with Double = js.native
-  /* 8 */ val IsRecordInsertInView: typings.sharepoint.SP.JsGrid.DelegateType.IsRecordInsertInView with Double = js.native
-  /* 13 */ val LaunchFilterDialog: typings.sharepoint.SP.JsGrid.DelegateType.LaunchFilterDialog with Double = js.native
-  /* 20 */ val NextPage: typings.sharepoint.SP.JsGrid.DelegateType.NextPage with Double = js.native
-  /* 31 */ val OnBeforeRecordReordered: typings.sharepoint.SP.JsGrid.DelegateType.OnBeforeRecordReordered with Double = js.native
-  /* 7 */ val OutdentRecords: typings.sharepoint.SP.JsGrid.DelegateType.OutdentRecords with Double = js.native
-  /* 22 */ val RemoveColumnFromView: typings.sharepoint.SP.JsGrid.DelegateType.RemoveColumnFromView with Double = js.native
-  /* 23 */ val ReorderColumnPositionInView: typings.sharepoint.SP.JsGrid.DelegateType.ReorderColumnPositionInView with Double = js.native
-  /* 14 */ val ShowColumnConfigurationDialog: typings.sharepoint.SP.JsGrid.DelegateType.ShowColumnConfigurationDialog with Double = js.native
-  /* 2 */ val Sort: typings.sharepoint.SP.JsGrid.DelegateType.Sort with Double = js.native
-  /* 27 */ val TryBeginPaste: typings.sharepoint.SP.JsGrid.DelegateType.TryBeginPaste with Double = js.native
-  /* 24 */ val TryCreateProvisionalRecord: typings.sharepoint.SP.JsGrid.DelegateType.TryCreateProvisionalRecord with Double = js.native
-  /* 18 */ val TryInsertEntryRecord: typings.sharepoint.SP.JsGrid.DelegateType.TryInsertEntryRecord with Double = js.native
-  /* 19 */ val WillAddColumnMenuItems: typings.sharepoint.SP.JsGrid.DelegateType.WillAddColumnMenuItems with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DelegateType with Double] = js.native
+  /* 1 */ @js.native
+  object AddColumnMenuItems extends TopLevel[AddColumnMenuItems with Double]
+  
+  /* 21 */ @js.native
+  object AddNewColumn extends TopLevel[AddNewColumn with Double]
+  
+  /* 26 */ @js.native
+  object AddNewColumnMenuItems extends TopLevel[AddNewColumnMenuItems with Double]
+  
+  /* 28 */ @js.native
+  object AllowSelectionChange extends TopLevel[AllowSelectionChange with Double]
+  
+  /* 10 */ @js.native
+  object AutoFilter extends TopLevel[AutoFilter with Double]
+  
+  /* 25 */ @js.native
+  object CanReorderRecords extends TopLevel[CanReorderRecords with Double]
+  
+  /* 17 */ @js.native
+  object CreateEntryRecord extends TopLevel[CreateEntryRecord with Double]
+  
+  /* 5 */ @js.native
+  object DeleteRecords extends TopLevel[DeleteRecords with Double]
+  
+  /* 0 */ @js.native
+  object ExpandColumnMenu extends TopLevel[ExpandColumnMenu with Double]
+  
+  /* 11 */ @js.native
+  object ExpandConflictResolution extends TopLevel[ExpandConflictResolution with Double]
+  
+  /* 9 */ @js.native
+  object ExpandDelayLoadedHierarchyNode extends TopLevel[ExpandDelayLoadedHierarchyNode with Double]
+  
+  /* 3 */ @js.native
+  object Filter extends TopLevel[Filter with Double]
+  
+  /* 12 */ @js.native
+  object GetAutoFilterEntries extends TopLevel[GetAutoFilterEntries with Double]
+  
+  /* 29 */ @js.native
+  object GetFieldEditMode extends TopLevel[GetFieldEditMode with Double]
+  
+  /* 30 */ @js.native
+  object GetFieldReadOnlyActiveState extends TopLevel[GetFieldReadOnlyActiveState with Double]
+  
+  /* 16 */ @js.native
+  object GetGridRowStyleId extends TopLevel[GetGridRowStyleId with Double]
+  
+  /* 15 */ @js.native
+  object GetRecordEditMode extends TopLevel[GetRecordEditMode with Double]
+  
+  /* 6 */ @js.native
+  object IndentRecords extends TopLevel[IndentRecords with Double]
+  
+  /* 4 */ @js.native
+  object InsertRecord extends TopLevel[InsertRecord with Double]
+  
+  /* 8 */ @js.native
+  object IsRecordInsertInView extends TopLevel[IsRecordInsertInView with Double]
+  
+  /* 13 */ @js.native
+  object LaunchFilterDialog extends TopLevel[LaunchFilterDialog with Double]
+  
+  /* 20 */ @js.native
+  object NextPage extends TopLevel[NextPage with Double]
+  
+  /* 31 */ @js.native
+  object OnBeforeRecordReordered extends TopLevel[OnBeforeRecordReordered with Double]
+  
+  /* 7 */ @js.native
+  object OutdentRecords extends TopLevel[OutdentRecords with Double]
+  
+  /* 22 */ @js.native
+  object RemoveColumnFromView extends TopLevel[RemoveColumnFromView with Double]
+  
+  /* 23 */ @js.native
+  object ReorderColumnPositionInView extends TopLevel[ReorderColumnPositionInView with Double]
+  
+  /* 14 */ @js.native
+  object ShowColumnConfigurationDialog extends TopLevel[ShowColumnConfigurationDialog with Double]
+  
+  /* 2 */ @js.native
+  object Sort extends TopLevel[Sort with Double]
+  
+  /* 27 */ @js.native
+  object TryBeginPaste extends TopLevel[TryBeginPaste with Double]
+  
+  /* 24 */ @js.native
+  object TryCreateProvisionalRecord extends TopLevel[TryCreateProvisionalRecord with Double]
+  
+  /* 18 */ @js.native
+  object TryInsertEntryRecord extends TopLevel[TryInsertEntryRecord with Double]
+  
+  /* 19 */ @js.native
+  object WillAddColumnMenuItems extends TopLevel[WillAddColumnMenuItems with Double]
+  
 }
 

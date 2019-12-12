@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Bold
+import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Lighter
+import typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Regular
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object FontWeight extends js.Object {
   @js.native
   sealed trait Regular extends FontWeight
   
-  /* 1 */ val Bold: typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Bold with Double = js.native
-  /* 2 */ val Lighter: typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Lighter with Double = js.native
-  /* 0 */ val Regular: typings.ejDotWebDotAll.ej.datavisualization.Map.FontWeight.Regular with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FontWeight with Double] = js.native
+  /* 1 */ @js.native
+  object Bold extends TopLevel[Bold with Double]
+  
+  /* 2 */ @js.native
+  object Lighter extends TopLevel[Lighter with Double]
+  
+  /* 0 */ @js.native
+  object Regular extends TopLevel[Regular with Double]
+  
 }
 

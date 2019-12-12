@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__timezone"
-version := "3.6.0-b154f8"
+version := "3.6.0-9f6902"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blueprintjs__core" % "3.21.0-483d10",
+  "org.scalablytyped" %%% "blueprintjs__core" % "3.21.0-cf286b",
   "org.scalablytyped" %%% "blueprintjs__icons" % "3.12.0-b1d7b6",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-a9bf73",

@@ -1,5 +1,8 @@
 package typings.googlemaps.google.maps.places
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.places.RankBy.DISTANCE
+import typings.googlemaps.google.maps.places.RankBy.PROMINENCE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object RankBy extends js.Object {
   @js.native
   sealed trait PROMINENCE extends RankBy
   
-  /* 1 */ val DISTANCE: typings.googlemaps.google.maps.places.RankBy.DISTANCE with Double = js.native
-  /* 0 */ val PROMINENCE: typings.googlemaps.google.maps.places.RankBy.PROMINENCE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RankBy with Double] = js.native
+  /* 1 */ @js.native
+  object DISTANCE extends TopLevel[DISTANCE with Double]
+  
+  /* 0 */ @js.native
+  object PROMINENCE extends TopLevel[PROMINENCE with Double]
+  
 }
 

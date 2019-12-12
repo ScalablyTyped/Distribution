@@ -1,5 +1,9 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.AboveAddress
+import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.BelowAddress
+import typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.Suppress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AddressBarcodePosition extends js.Object {
   @js.native
   sealed trait Suppress extends AddressBarcodePosition
   
-  /* 0 */ val AboveAddress: typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.AboveAddress with Double = js.native
-  /* 1 */ val BelowAddress: typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.BelowAddress with Double = js.native
-  /* 2 */ val Suppress: typings.dymoDashLabelDashFramework.dymo.label.framework.AddressBarcodePosition.Suppress with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AddressBarcodePosition with Double] = js.native
+  /* 0 */ @js.native
+  object AboveAddress extends TopLevel[AboveAddress with Double]
+  
+  /* 1 */ @js.native
+  object BelowAddress extends TopLevel[BelowAddress with Double]
+  
+  /* 2 */ @js.native
+  object Suppress extends TopLevel[Suppress with Double]
+  
 }
 

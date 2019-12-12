@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.ViewType.HistogramView
+import typings.ejDotWebDotAll.ej.Gantt.ViewType.ProjectView
+import typings.ejDotWebDotAll.ej.Gantt.ViewType.ResourceView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ViewType extends js.Object {
   @js.native
   sealed trait ResourceView extends ViewType
   
-  /* 2 */ val HistogramView: typings.ejDotWebDotAll.ej.Gantt.ViewType.HistogramView with Double = js.native
-  /* 0 */ val ProjectView: typings.ejDotWebDotAll.ej.Gantt.ViewType.ProjectView with Double = js.native
-  /* 1 */ val ResourceView: typings.ejDotWebDotAll.ej.Gantt.ViewType.ResourceView with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ViewType with Double] = js.native
+  /* 2 */ @js.native
+  object HistogramView extends TopLevel[HistogramView with Double]
+  
+  /* 0 */ @js.native
+  object ProjectView extends TopLevel[ProjectView with Double]
+  
+  /* 1 */ @js.native
+  object ResourceView extends TopLevel[ResourceView with Double]
+  
 }
 

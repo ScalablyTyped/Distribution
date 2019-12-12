@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Height
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Page
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object FitMode extends js.Object {
   @js.native
   sealed trait Width extends FitMode
   
-  /* 2 */ val Height: typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Height with Double = js.native
-  /* 0 */ val Page: typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Page with Double = js.native
-  /* 1 */ val Width: typings.ejDotWebDotAll.ej.datavisualization.Diagram.FitMode.Width with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FitMode with Double] = js.native
+  /* 2 */ @js.native
+  object Height extends TopLevel[Height with Double]
+  
+  /* 0 */ @js.native
+  object Page extends TopLevel[Page with Double]
+  
+  /* 1 */ @js.native
+  object Width extends TopLevel[Width with Double]
+  
 }
 

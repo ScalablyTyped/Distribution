@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Association
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Message
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Sequence
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object BPMNFlows extends js.Object {
   @js.native
   sealed trait Sequence extends BPMNFlows
   
-  /* 1 */ val Association: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Association with Double = js.native
-  /* 2 */ val Message: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Message with Double = js.native
-  /* 0 */ val Sequence: typings.ejDotWebDotAll.ej.datavisualization.Diagram.BPMNFlows.Sequence with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BPMNFlows with Double] = js.native
+  /* 1 */ @js.native
+  object Association extends TopLevel[Association with Double]
+  
+  /* 2 */ @js.native
+  object Message extends TopLevel[Message with Double]
+  
+  /* 0 */ @js.native
+  object Sequence extends TopLevel[Sequence with Double]
+  
 }
 

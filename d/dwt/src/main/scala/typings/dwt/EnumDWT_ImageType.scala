@@ -1,5 +1,12 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_ImageType.IT_ALL
+import typings.dwt.EnumDWT_ImageType.IT_BMP
+import typings.dwt.EnumDWT_ImageType.IT_JPG
+import typings.dwt.EnumDWT_ImageType.IT_PDF
+import typings.dwt.EnumDWT_ImageType.IT_PNG
+import typings.dwt.EnumDWT_ImageType.IT_TIF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object EnumDWT_ImageType extends js.Object {
   @js.native
   sealed trait IT_TIF extends EnumDWT_ImageType
   
-  /* 5 */ val IT_ALL: typings.dwt.EnumDWT_ImageType.IT_ALL with Double = js.native
-  /* 0 */ val IT_BMP: typings.dwt.EnumDWT_ImageType.IT_BMP with Double = js.native
-  /* 1 */ val IT_JPG: typings.dwt.EnumDWT_ImageType.IT_JPG with Double = js.native
-  /* 4 */ val IT_PDF: typings.dwt.EnumDWT_ImageType.IT_PDF with Double = js.native
-  /* 3 */ val IT_PNG: typings.dwt.EnumDWT_ImageType.IT_PNG with Double = js.native
-  /* 2 */ val IT_TIF: typings.dwt.EnumDWT_ImageType.IT_TIF with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_ImageType with Double] = js.native
+  /* 5 */ @js.native
+  object IT_ALL extends TopLevel[IT_ALL with Double]
+  
+  /* 0 */ @js.native
+  object IT_BMP extends TopLevel[IT_BMP with Double]
+  
+  /* 1 */ @js.native
+  object IT_JPG extends TopLevel[IT_JPG with Double]
+  
+  /* 4 */ @js.native
+  object IT_PDF extends TopLevel[IT_PDF with Double]
+  
+  /* 3 */ @js.native
+  object IT_PNG extends TopLevel[IT_PNG with Double]
+  
+  /* 2 */ @js.native
+  object IT_TIF extends TopLevel[IT_TIF with Double]
+  
 }
 

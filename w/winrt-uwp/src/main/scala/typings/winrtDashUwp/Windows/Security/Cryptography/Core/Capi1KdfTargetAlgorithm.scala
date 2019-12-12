@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.aes
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.notAes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object Capi1KdfTargetAlgorithm extends js.Object {
   @js.native
   sealed trait notAes extends Capi1KdfTargetAlgorithm
   
-  /* 1 */ val aes: typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.aes with Double = js.native
-  /* 0 */ val notAes: typings.winrtDashUwp.Windows.Security.Cryptography.Core.Capi1KdfTargetAlgorithm.notAes with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Capi1KdfTargetAlgorithm with Double] = js.native
+  /* 1 */ @js.native
+  object aes extends TopLevel[aes with Double]
+  
+  /* 0 */ @js.native
+  object notAes extends TopLevel[notAes with Double]
+  
 }
 

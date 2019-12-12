@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.authenticationRequired
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionAndAuthenticationRequired
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionRequired
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object GattProtectionLevel extends js.Object {
   @js.native
   sealed trait plain extends GattProtectionLevel
   
-  /* 1 */ val authenticationRequired: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.authenticationRequired with Double = js.native
-  /* 3 */ val encryptionAndAuthenticationRequired: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionAndAuthenticationRequired with Double = js.native
-  /* 2 */ val encryptionRequired: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.encryptionRequired with Double = js.native
-  /* 0 */ val plain: typings.winrtDashUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattProtectionLevel.plain with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GattProtectionLevel with Double] = js.native
+  /* 1 */ @js.native
+  object authenticationRequired extends TopLevel[authenticationRequired with Double]
+  
+  /* 3 */ @js.native
+  object encryptionAndAuthenticationRequired extends TopLevel[encryptionAndAuthenticationRequired with Double]
+  
+  /* 2 */ @js.native
+  object encryptionRequired extends TopLevel[encryptionRequired with Double]
+  
+  /* 0 */ @js.native
+  object plain extends TopLevel[plain with Double]
+  
 }
 

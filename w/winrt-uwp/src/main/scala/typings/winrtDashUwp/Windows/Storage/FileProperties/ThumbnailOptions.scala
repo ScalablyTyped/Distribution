@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.none
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.resizeThumbnail
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.returnOnlyIfCached
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.useCurrentScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ThumbnailOptions extends js.Object {
   @js.native
   sealed trait useCurrentScale extends ThumbnailOptions
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.none with Double = js.native
-  /* 2 */ val resizeThumbnail: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.resizeThumbnail with Double = js.native
-  /* 1 */ val returnOnlyIfCached: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.returnOnlyIfCached with Double = js.native
-  /* 3 */ val useCurrentScale: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailOptions.useCurrentScale with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ThumbnailOptions with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object resizeThumbnail extends TopLevel[resizeThumbnail with Double]
+  
+  /* 1 */ @js.native
+  object returnOnlyIfCached extends TopLevel[returnOnlyIfCached with Double]
+  
+  /* 3 */ @js.native
+  object useCurrentScale extends TopLevel[useCurrentScale with Double]
+  
 }
 

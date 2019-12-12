@@ -1,5 +1,16 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketCanceled
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalid
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalidAlreadyUsed
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.LoggedInElseWhere
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.NoLicenseOrExpired
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.OK
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.PublisherIssuedBan
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.UserNotConnectedToSteam
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACBanned
+import typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACCheckTimedOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object EAuthSessionResponse extends js.Object {
   @js.native
   sealed trait VACCheckTimedOut extends EAuthSessionResponse
   
-  /* 6 */ val AuthTicketCanceled: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketCanceled with Double = js.native
-  /* 8 */ val AuthTicketInvalid: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalid with Double = js.native
-  /* 7 */ val AuthTicketInvalidAlreadyUsed: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.AuthTicketInvalidAlreadyUsed with Double = js.native
-  /* 4 */ val LoggedInElseWhere: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.LoggedInElseWhere with Double = js.native
-  /* 2 */ val NoLicenseOrExpired: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.NoLicenseOrExpired with Double = js.native
-  /* 0 */ val OK: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.OK with Double = js.native
-  /* 9 */ val PublisherIssuedBan: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.PublisherIssuedBan with Double = js.native
-  /* 1 */ val UserNotConnectedToSteam: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.UserNotConnectedToSteam with Double = js.native
-  /* 3 */ val VACBanned: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACBanned with Double = js.native
-  /* 5 */ val VACCheckTimedOut: typings.steamDashClient.steamDashClientMod.EAuthSessionResponse.VACCheckTimedOut with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EAuthSessionResponse with Double] = js.native
+  /* 6 */ @js.native
+  object AuthTicketCanceled extends TopLevel[AuthTicketCanceled with Double]
+  
+  /* 8 */ @js.native
+  object AuthTicketInvalid extends TopLevel[AuthTicketInvalid with Double]
+  
+  /* 7 */ @js.native
+  object AuthTicketInvalidAlreadyUsed extends TopLevel[AuthTicketInvalidAlreadyUsed with Double]
+  
+  /* 4 */ @js.native
+  object LoggedInElseWhere extends TopLevel[LoggedInElseWhere with Double]
+  
+  /* 2 */ @js.native
+  object NoLicenseOrExpired extends TopLevel[NoLicenseOrExpired with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 9 */ @js.native
+  object PublisherIssuedBan extends TopLevel[PublisherIssuedBan with Double]
+  
+  /* 1 */ @js.native
+  object UserNotConnectedToSteam extends TopLevel[UserNotConnectedToSteam with Double]
+  
+  /* 3 */ @js.native
+  object VACBanned extends TopLevel[VACBanned with Double]
+  
+  /* 5 */ @js.native
+  object VACCheckTimedOut extends TopLevel[VACCheckTimedOut with Double]
+  
 }
 

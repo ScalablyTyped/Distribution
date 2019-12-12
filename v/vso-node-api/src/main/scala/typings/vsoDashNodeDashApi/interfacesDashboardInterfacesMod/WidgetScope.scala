@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Collection_User
+import typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Project_Team
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object WidgetScope extends js.Object {
   @js.native
   sealed trait Project_Team extends WidgetScope
   
-  /* 0 */ val Collection_User: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Collection_User with Double = js.native
-  /* 1 */ val Project_Team: typings.vsoDashNodeDashApi.interfacesDashboardInterfacesMod.WidgetScope.Project_Team with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WidgetScope with Double] = js.native
+  /* 0 */ @js.native
+  object Collection_User extends TopLevel[Collection_User with Double]
+  
+  /* 1 */ @js.native
+  object Project_Team extends TopLevel[Project_Team with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.cellular
+import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.ipAddress
+import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.satellite
+import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.unknown
+import typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.wiFi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object PositionSource extends js.Object {
   @js.native
   sealed trait wiFi extends PositionSource
   
-  /* 0 */ val cellular: typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.cellular with Double = js.native
-  /* 3 */ val ipAddress: typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.ipAddress with Double = js.native
-  /* 1 */ val satellite: typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.satellite with Double = js.native
-  /* 4 */ val unknown: typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.unknown with Double = js.native
-  /* 2 */ val wiFi: typings.winrtDashUwp.Windows.Devices.Geolocation.PositionSource.wiFi with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PositionSource with Double] = js.native
+  /* 0 */ @js.native
+  object cellular extends TopLevel[cellular with Double]
+  
+  /* 3 */ @js.native
+  object ipAddress extends TopLevel[ipAddress with Double]
+  
+  /* 1 */ @js.native
+  object satellite extends TopLevel[satellite with Double]
+  
+  /* 4 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object wiFi extends TopLevel[wiFi with Double]
+  
 }
 

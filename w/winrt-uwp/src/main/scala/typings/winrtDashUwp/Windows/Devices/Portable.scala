@@ -1,6 +1,14 @@
 package typings.winrtDashUwp.Windows.Devices
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.calendarService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.contactsService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.deviceStatusService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.notesService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.ringtonesService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.smsService
+import typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.tasksService
 import typings.winrtDashUwp.Windows.Storage.StorageFolder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,15 +77,29 @@ object Portable extends js.Object {
     @js.native
     sealed trait tasksService extends ServiceDeviceType
     
-    /* 0 */ val calendarService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.calendarService with Double = js.native
-    /* 1 */ val contactsService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.contactsService with Double = js.native
-    /* 2 */ val deviceStatusService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.deviceStatusService with Double = js.native
-    /* 3 */ val notesService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.notesService with Double = js.native
-    /* 4 */ val ringtonesService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.ringtonesService with Double = js.native
-    /* 5 */ val smsService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.smsService with Double = js.native
-    /* 6 */ val tasksService: typings.winrtDashUwp.Windows.Devices.Portable.ServiceDeviceType.tasksService with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ServiceDeviceType with Double] = js.native
+    /* 0 */ @js.native
+    object calendarService extends TopLevel[calendarService with Double]
+    
+    /* 1 */ @js.native
+    object contactsService extends TopLevel[contactsService with Double]
+    
+    /* 2 */ @js.native
+    object deviceStatusService extends TopLevel[deviceStatusService with Double]
+    
+    /* 3 */ @js.native
+    object notesService extends TopLevel[notesService with Double]
+    
+    /* 4 */ @js.native
+    object ringtonesService extends TopLevel[ringtonesService with Double]
+    
+    /* 5 */ @js.native
+    object smsService extends TopLevel[smsService with Double]
+    
+    /* 6 */ @js.native
+    object tasksService extends TopLevel[tasksService with Double]
+    
   }
   
   /* static members */

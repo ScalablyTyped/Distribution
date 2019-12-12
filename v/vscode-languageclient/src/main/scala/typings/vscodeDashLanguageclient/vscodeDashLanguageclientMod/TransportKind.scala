@@ -1,5 +1,10 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.ipc
+import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.pipe
+import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.socket
+import typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.stdio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TransportKind extends js.Object {
   @js.native
   sealed trait stdio extends TransportKind
   
-  /* 1 */ val ipc: typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.ipc with Double = js.native
-  /* 2 */ val pipe: typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.pipe with Double = js.native
-  /* 3 */ val socket: typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.socket with Double = js.native
-  /* 0 */ val stdio: typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod.TransportKind.stdio with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TransportKind with Double] = js.native
+  /* 1 */ @js.native
+  object ipc extends TopLevel[ipc with Double]
+  
+  /* 2 */ @js.native
+  object pipe extends TopLevel[pipe with Double]
+  
+  /* 3 */ @js.native
+  object socket extends TopLevel[socket with Double]
+  
+  /* 0 */ @js.native
+  object stdio extends TopLevel[stdio with Double]
+  
 }
 

@@ -1,5 +1,15 @@
 package typings.winrtDashUwp.Windows.Networking.XboxLive
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageInboundBitsPerSecond
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageLatencyInMilliseconds
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageOutboundBitsPerSecond
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxInboundBitsPerSecond
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxLatencyInMilliseconds
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxOutboundBitsPerSecond
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minInboundBitsPerSecond
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minLatencyInMilliseconds
+import typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minOutboundBitsPerSecond
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,16 +57,34 @@ object XboxLiveQualityOfServiceMetric extends js.Object {
   @js.native
   sealed trait minOutboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
   
-  /* 6 */ val averageInboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageInboundBitsPerSecond with Double = js.native
-  /* 0 */ val averageLatencyInMilliseconds: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageLatencyInMilliseconds with Double = js.native
-  /* 3 */ val averageOutboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.averageOutboundBitsPerSecond with Double = js.native
-  /* 8 */ val maxInboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxInboundBitsPerSecond with Double = js.native
-  /* 2 */ val maxLatencyInMilliseconds: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxLatencyInMilliseconds with Double = js.native
-  /* 5 */ val maxOutboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.maxOutboundBitsPerSecond with Double = js.native
-  /* 7 */ val minInboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minInboundBitsPerSecond with Double = js.native
-  /* 1 */ val minLatencyInMilliseconds: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minLatencyInMilliseconds with Double = js.native
-  /* 4 */ val minOutboundBitsPerSecond: typings.winrtDashUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric.minOutboundBitsPerSecond with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[XboxLiveQualityOfServiceMetric with Double] = js.native
+  /* 6 */ @js.native
+  object averageInboundBitsPerSecond extends TopLevel[averageInboundBitsPerSecond with Double]
+  
+  /* 0 */ @js.native
+  object averageLatencyInMilliseconds extends TopLevel[averageLatencyInMilliseconds with Double]
+  
+  /* 3 */ @js.native
+  object averageOutboundBitsPerSecond extends TopLevel[averageOutboundBitsPerSecond with Double]
+  
+  /* 8 */ @js.native
+  object maxInboundBitsPerSecond extends TopLevel[maxInboundBitsPerSecond with Double]
+  
+  /* 2 */ @js.native
+  object maxLatencyInMilliseconds extends TopLevel[maxLatencyInMilliseconds with Double]
+  
+  /* 5 */ @js.native
+  object maxOutboundBitsPerSecond extends TopLevel[maxOutboundBitsPerSecond with Double]
+  
+  /* 7 */ @js.native
+  object minInboundBitsPerSecond extends TopLevel[minInboundBitsPerSecond with Double]
+  
+  /* 1 */ @js.native
+  object minLatencyInMilliseconds extends TopLevel[minLatencyInMilliseconds with Double]
+  
+  /* 4 */ @js.native
+  object minOutboundBitsPerSecond extends TopLevel[minOutboundBitsPerSecond with Double]
+  
 }
 

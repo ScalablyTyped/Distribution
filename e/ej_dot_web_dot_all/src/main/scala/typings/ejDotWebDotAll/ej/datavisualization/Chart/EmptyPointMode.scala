@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Average
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Gap
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object EmptyPointMode extends js.Object {
   @js.native
   sealed trait Zero extends EmptyPointMode
   
-  /* 2 */ val Average: typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Average with Double = js.native
-  /* 0 */ val Gap: typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Gap with Double = js.native
-  /* 1 */ val Zero: typings.ejDotWebDotAll.ej.datavisualization.Chart.EmptyPointMode.Zero with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmptyPointMode with Double] = js.native
+  /* 2 */ @js.native
+  object Average extends TopLevel[Average with Double]
+  
+  /* 0 */ @js.native
+  object Gap extends TopLevel[Gap with Double]
+  
+  /* 1 */ @js.native
+  object Zero extends TopLevel[Zero with Double]
+  
 }
 

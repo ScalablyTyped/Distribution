@@ -1,5 +1,19 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.AggregationFunction.automatic
+import typings.officeDashJs.Excel.AggregationFunction.average
+import typings.officeDashJs.Excel.AggregationFunction.count
+import typings.officeDashJs.Excel.AggregationFunction.countNumbers
+import typings.officeDashJs.Excel.AggregationFunction.max
+import typings.officeDashJs.Excel.AggregationFunction.min
+import typings.officeDashJs.Excel.AggregationFunction.product
+import typings.officeDashJs.Excel.AggregationFunction.standardDeviation
+import typings.officeDashJs.Excel.AggregationFunction.standardDeviationP
+import typings.officeDashJs.Excel.AggregationFunction.sum
+import typings.officeDashJs.Excel.AggregationFunction.unknown
+import typings.officeDashJs.Excel.AggregationFunction.variance
+import typings.officeDashJs.Excel.AggregationFunction.varianceP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -120,20 +134,46 @@ object AggregationFunction extends js.Object {
   @js.native
   sealed trait varianceP extends AggregationFunction
   
-  /* "Automatic" */ val automatic: typings.officeDashJs.Excel.AggregationFunction.automatic with String = js.native
-  /* "Average" */ val average: typings.officeDashJs.Excel.AggregationFunction.average with String = js.native
-  /* "Count" */ val count: typings.officeDashJs.Excel.AggregationFunction.count with String = js.native
-  /* "CountNumbers" */ val countNumbers: typings.officeDashJs.Excel.AggregationFunction.countNumbers with String = js.native
-  /* "Max" */ val max: typings.officeDashJs.Excel.AggregationFunction.max with String = js.native
-  /* "Min" */ val min: typings.officeDashJs.Excel.AggregationFunction.min with String = js.native
-  /* "Product" */ val product: typings.officeDashJs.Excel.AggregationFunction.product with String = js.native
-  /* "StandardDeviation" */ val standardDeviation: typings.officeDashJs.Excel.AggregationFunction.standardDeviation with String = js.native
-  /* "StandardDeviationP" */ val standardDeviationP: typings.officeDashJs.Excel.AggregationFunction.standardDeviationP with String = js.native
-  /* "Sum" */ val sum: typings.officeDashJs.Excel.AggregationFunction.sum with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJs.Excel.AggregationFunction.unknown with String = js.native
-  /* "Variance" */ val variance: typings.officeDashJs.Excel.AggregationFunction.variance with String = js.native
-  /* "VarianceP" */ val varianceP: typings.officeDashJs.Excel.AggregationFunction.varianceP with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AggregationFunction with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "Average" */ @js.native
+  object average extends TopLevel[average with String]
+  
+  /* "Count" */ @js.native
+  object count extends TopLevel[count with String]
+  
+  /* "CountNumbers" */ @js.native
+  object countNumbers extends TopLevel[countNumbers with String]
+  
+  /* "Max" */ @js.native
+  object max extends TopLevel[max with String]
+  
+  /* "Min" */ @js.native
+  object min extends TopLevel[min with String]
+  
+  /* "Product" */ @js.native
+  object product extends TopLevel[product with String]
+  
+  /* "StandardDeviation" */ @js.native
+  object standardDeviation extends TopLevel[standardDeviation with String]
+  
+  /* "StandardDeviationP" */ @js.native
+  object standardDeviationP extends TopLevel[standardDeviationP with String]
+  
+  /* "Sum" */ @js.native
+  object sum extends TopLevel[sum with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
+  /* "Variance" */ @js.native
+  object variance extends TopLevel[variance with String]
+  
+  /* "VarianceP" */ @js.native
+  object varianceP extends TopLevel[varianceP with String]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.evernote.evernoteMod.Evernote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.NO_SHARED_NOTEBOOKS
+import typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.ONLY_JOINED_OR_PREVIEW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +32,13 @@ object SharedNotebookInstanceRestrictions extends js.Object {
   @js.native
   sealed trait ONLY_JOINED_OR_PREVIEW extends SharedNotebookInstanceRestrictions
   
-  /* 2 */ val NO_SHARED_NOTEBOOKS: typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.NO_SHARED_NOTEBOOKS with Double = js.native
-  /* 1 */ val ONLY_JOINED_OR_PREVIEW: typings.evernote.evernoteMod.Evernote.SharedNotebookInstanceRestrictions.ONLY_JOINED_OR_PREVIEW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SharedNotebookInstanceRestrictions with Double] = js.native
+  /* 2 */ @js.native
+  object NO_SHARED_NOTEBOOKS extends TopLevel[NO_SHARED_NOTEBOOKS with Double]
+  
+  /* 1 */ @js.native
+  object ONLY_JOINED_OR_PREVIEW extends TopLevel[ONLY_JOINED_OR_PREVIEW with Double]
+  
 }
 

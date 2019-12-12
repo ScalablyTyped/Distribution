@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-binding"
-version := "2.5.0-71a6a6"
+version := "2.5.0-6b3e58"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

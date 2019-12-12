@@ -1,5 +1,11 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.MediaErrorCode.aborted
+import typings.playerframework.PlayerFramework.MediaErrorCode.decode
+import typings.playerframework.PlayerFramework.MediaErrorCode.network
+import typings.playerframework.PlayerFramework.MediaErrorCode.notSupported
+import typings.playerframework.PlayerFramework.MediaErrorCode.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object MediaErrorCode extends js.Object {
   @js.native
   sealed trait unknown extends MediaErrorCode
   
-  /* 1 */ val aborted: typings.playerframework.PlayerFramework.MediaErrorCode.aborted with Double = js.native
-  /* 3 */ val decode: typings.playerframework.PlayerFramework.MediaErrorCode.decode with Double = js.native
-  /* 2 */ val network: typings.playerframework.PlayerFramework.MediaErrorCode.network with Double = js.native
-  /* 4 */ val notSupported: typings.playerframework.PlayerFramework.MediaErrorCode.notSupported with Double = js.native
-  /* 0 */ val unknown: typings.playerframework.PlayerFramework.MediaErrorCode.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaErrorCode with Double] = js.native
+  /* 1 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 3 */ @js.native
+  object decode extends TopLevel[decode with Double]
+  
+  /* 2 */ @js.native
+  object network extends TopLevel[network with Double]
+  
+  /* 4 */ @js.native
+  object notSupported extends TopLevel[notSupported with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

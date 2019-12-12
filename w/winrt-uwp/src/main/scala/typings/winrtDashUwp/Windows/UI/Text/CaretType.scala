@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.CaretType.`null`
+import typings.winrtDashUwp.Windows.UI.Text.CaretType.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object CaretType extends js.Object {
   @js.native
   sealed trait `null` extends CaretType
   
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.UI.Text.CaretType.normal with Double = js.native
-  /* 1 */ val `null`: typings.winrtDashUwp.Windows.UI.Text.CaretType.`null` with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CaretType with Double] = js.native
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 1 */ @js.native
+  object `null` extends TopLevel[`null` with Double]
+  
 }
 

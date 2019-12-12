@@ -25,11 +25,11 @@ import typings.atAwsDashSdkClientDashKmsDashNode.typesTagResourceExceptionsUnion
 import typings.atAwsDashSdkClientDashKmsDashNode.typesUntagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
 import typings.atAwsDashSdkClientDashKmsDashNode.typesUpdateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidArnException
   extends ServiceException[_InvalidArnExceptionDetails]
      with CancelKeyDeletionExceptionsUnion
@@ -57,21 +57,6 @@ trait InvalidArnException
      with UntagResourceExceptionsUnion
      with UpdateKeyDescriptionExceptionsUnion {
   @JSName("name")
-  var name_InvalidArnException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.InvalidArnException
-}
-
-object InvalidArnException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _InvalidArnExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.InvalidArnException,
-    stack: String = null
-  ): InvalidArnException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InvalidArnException]
-  }
+  var name_InvalidArnException: typings.atAwsDashSdkClientDashKmsDashNode.atAwsDashSdkClientDashKmsDashNodeStrings.InvalidArnException = js.native
 }
 

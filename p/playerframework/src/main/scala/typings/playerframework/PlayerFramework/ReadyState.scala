@@ -1,5 +1,11 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.ReadyState.currentData
+import typings.playerframework.PlayerFramework.ReadyState.enoughData
+import typings.playerframework.PlayerFramework.ReadyState.futureData
+import typings.playerframework.PlayerFramework.ReadyState.metadata
+import typings.playerframework.PlayerFramework.ReadyState.nothing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object ReadyState extends js.Object {
   @js.native
   sealed trait nothing extends ReadyState
   
-  /* 2 */ val currentData: typings.playerframework.PlayerFramework.ReadyState.currentData with Double = js.native
-  /* 4 */ val enoughData: typings.playerframework.PlayerFramework.ReadyState.enoughData with Double = js.native
-  /* 3 */ val futureData: typings.playerframework.PlayerFramework.ReadyState.futureData with Double = js.native
-  /* 1 */ val metadata: typings.playerframework.PlayerFramework.ReadyState.metadata with Double = js.native
-  /* 0 */ val nothing: typings.playerframework.PlayerFramework.ReadyState.nothing with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
+  /* 2 */ @js.native
+  object currentData extends TopLevel[currentData with Double]
+  
+  /* 4 */ @js.native
+  object enoughData extends TopLevel[enoughData with Double]
+  
+  /* 3 */ @js.native
+  object futureData extends TopLevel[futureData with Double]
+  
+  /* 1 */ @js.native
+  object metadata extends TopLevel[metadata with Double]
+  
+  /* 0 */ @js.native
+  object nothing extends TopLevel[nothing with Double]
+  
 }
 

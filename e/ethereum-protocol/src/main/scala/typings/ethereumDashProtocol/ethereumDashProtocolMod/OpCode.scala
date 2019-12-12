@@ -1,5 +1,16 @@
 package typings.ethereumDashProtocol.ethereumDashProtocolMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Call
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.CallCode
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Create
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.DelegateCall
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Invalid
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Return
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Revert
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.SelfDestruct
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.StaticCall
+import typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Stop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object OpCode extends js.Object {
   @js.native
   sealed trait Stop extends OpCode
   
-  /* "CALL" */ val Call: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Call with String = js.native
-  /* "CALLCODE" */ val CallCode: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.CallCode with String = js.native
-  /* "CREATE" */ val Create: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Create with String = js.native
-  /* "DELEGATECALL" */ val DelegateCall: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.DelegateCall with String = js.native
-  /* "INVALID" */ val Invalid: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Invalid with String = js.native
-  /* "RETURN" */ val Return: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Return with String = js.native
-  /* "REVERT" */ val Revert: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Revert with String = js.native
-  /* "SELFDESTRUCT" */ val SelfDestruct: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.SelfDestruct with String = js.native
-  /* "STATICCALL" */ val StaticCall: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.StaticCall with String = js.native
-  /* "STOP" */ val Stop: typings.ethereumDashProtocol.ethereumDashProtocolMod.OpCode.Stop with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OpCode with String] = js.native
+  /* "CALL" */ @js.native
+  object Call extends TopLevel[Call with String]
+  
+  /* "CALLCODE" */ @js.native
+  object CallCode extends TopLevel[CallCode with String]
+  
+  /* "CREATE" */ @js.native
+  object Create extends TopLevel[Create with String]
+  
+  /* "DELEGATECALL" */ @js.native
+  object DelegateCall extends TopLevel[DelegateCall with String]
+  
+  /* "INVALID" */ @js.native
+  object Invalid extends TopLevel[Invalid with String]
+  
+  /* "RETURN" */ @js.native
+  object Return extends TopLevel[Return with String]
+  
+  /* "REVERT" */ @js.native
+  object Revert extends TopLevel[Revert with String]
+  
+  /* "SELFDESTRUCT" */ @js.native
+  object SelfDestruct extends TopLevel[SelfDestruct with String]
+  
+  /* "STATICCALL" */ @js.native
+  object StaticCall extends TopLevel[StaticCall with String]
+  
+  /* "STOP" */ @js.native
+  object Stop extends TopLevel[Stop with String]
+  
 }
 

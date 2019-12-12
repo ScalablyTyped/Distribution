@@ -1,9 +1,21 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V1
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V2
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V2_BETA_1
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_HYBRID
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_ML_ONLY
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_UNSPECIFIED
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_ENTERPRISE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_ENTERPRISE_PLUS
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_STANDARD
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -156,12 +168,20 @@ object Agent extends js.Object {
     @js.native
     sealed trait API_VERSION_V2_BETA_1 extends ApiVersion
     
-    /* 0 */ val API_VERSION_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_UNSPECIFIED with Double = js.native
-    /* 1 */ val API_VERSION_V1: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V1 with Double = js.native
-    /* 2 */ val API_VERSION_V2: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V2 with Double = js.native
-    /* 3 */ val API_VERSION_V2_BETA_1: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.ApiVersion.API_VERSION_V2_BETA_1 with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ApiVersion with Double] = js.native
+    /* 0 */ @js.native
+    object API_VERSION_UNSPECIFIED extends TopLevel[API_VERSION_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object API_VERSION_V1 extends TopLevel[API_VERSION_V1 with Double]
+    
+    /* 2 */ @js.native
+    object API_VERSION_V2 extends TopLevel[API_VERSION_V2 with Double]
+    
+    /* 3 */ @js.native
+    object API_VERSION_V2_BETA_1 extends TopLevel[API_VERSION_V2_BETA_1 with Double]
+    
   }
   
   /** MatchMode enum. */
@@ -176,11 +196,17 @@ object Agent extends js.Object {
     @js.native
     sealed trait MATCH_MODE_UNSPECIFIED extends MatchMode
     
-    /* 1 */ val MATCH_MODE_HYBRID: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_HYBRID with Double = js.native
-    /* 2 */ val MATCH_MODE_ML_ONLY: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_ML_ONLY with Double = js.native
-    /* 0 */ val MATCH_MODE_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.MatchMode.MATCH_MODE_UNSPECIFIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MatchMode with Double] = js.native
+    /* 1 */ @js.native
+    object MATCH_MODE_HYBRID extends TopLevel[MATCH_MODE_HYBRID with Double]
+    
+    /* 2 */ @js.native
+    object MATCH_MODE_ML_ONLY extends TopLevel[MATCH_MODE_ML_ONLY with Double]
+    
+    /* 0 */ @js.native
+    object MATCH_MODE_UNSPECIFIED extends TopLevel[MATCH_MODE_UNSPECIFIED with Double]
+    
   }
   
   /** Tier enum. */
@@ -198,12 +224,20 @@ object Agent extends js.Object {
     @js.native
     sealed trait TIER_UNSPECIFIED extends Tier
     
-    /* 2 */ val TIER_ENTERPRISE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_ENTERPRISE with Double = js.native
-    /* 3 */ val TIER_ENTERPRISE_PLUS: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_ENTERPRISE_PLUS with Double = js.native
-    /* 1 */ val TIER_STANDARD: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_STANDARD with Double = js.native
-    /* 0 */ val TIER_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.Agent.Tier.TIER_UNSPECIFIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Tier with Double] = js.native
+    /* 2 */ @js.native
+    object TIER_ENTERPRISE extends TopLevel[TIER_ENTERPRISE with Double]
+    
+    /* 3 */ @js.native
+    object TIER_ENTERPRISE_PLUS extends TopLevel[TIER_ENTERPRISE_PLUS with Double]
+    
+    /* 1 */ @js.native
+    object TIER_STANDARD extends TopLevel[TIER_STANDARD with Double]
+    
+    /* 0 */ @js.native
+    object TIER_UNSPECIFIED extends TopLevel[TIER_UNSPECIFIED with Double]
+    
   }
   
 }

@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.RangeUnderlineStyle.double
+import typings.officeDashJs.Excel.RangeUnderlineStyle.doubleAccountant
+import typings.officeDashJs.Excel.RangeUnderlineStyle.none
+import typings.officeDashJs.Excel.RangeUnderlineStyle.single
+import typings.officeDashJs.Excel.RangeUnderlineStyle.singleAccountant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object RangeUnderlineStyle extends js.Object {
   @js.native
   sealed trait singleAccountant extends RangeUnderlineStyle
   
-  /* "Double" */ val double: typings.officeDashJs.Excel.RangeUnderlineStyle.double with String = js.native
-  /* "DoubleAccountant" */ val doubleAccountant: typings.officeDashJs.Excel.RangeUnderlineStyle.doubleAccountant with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.RangeUnderlineStyle.none with String = js.native
-  /* "Single" */ val single: typings.officeDashJs.Excel.RangeUnderlineStyle.single with String = js.native
-  /* "SingleAccountant" */ val singleAccountant: typings.officeDashJs.Excel.RangeUnderlineStyle.singleAccountant with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RangeUnderlineStyle with String] = js.native
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "DoubleAccountant" */ @js.native
+  object doubleAccountant extends TopLevel[doubleAccountant with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Single" */ @js.native
+  object single extends TopLevel[single with String]
+  
+  /* "SingleAccountant" */ @js.native
+  object singleAccountant extends TopLevel[singleAccountant with String]
+  
 }
 

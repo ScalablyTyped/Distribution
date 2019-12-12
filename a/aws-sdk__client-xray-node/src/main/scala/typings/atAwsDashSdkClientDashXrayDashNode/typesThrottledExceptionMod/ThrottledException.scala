@@ -15,11 +15,11 @@ import typings.atAwsDashSdkClientDashXrayDashNode.typesPutTelemetryRecordsExcept
 import typings.atAwsDashSdkClientDashXrayDashNode.typesPutTraceSegmentsExceptionsUnionMod.PutTraceSegmentsExceptionsUnion
 import typings.atAwsDashSdkClientDashXrayDashNode.typesUpdateSamplingRuleExceptionsUnionMod.UpdateSamplingRuleExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThrottledException
   extends ServiceException[_ThrottledExceptionDetails]
      with BatchGetTracesExceptionsUnion
@@ -37,21 +37,6 @@ trait ThrottledException
      with PutTraceSegmentsExceptionsUnion
      with UpdateSamplingRuleExceptionsUnion {
   @JSName("name")
-  var name_ThrottledException: typings.atAwsDashSdkClientDashXrayDashNode.atAwsDashSdkClientDashXrayDashNodeStrings.ThrottledException
-}
-
-object ThrottledException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ThrottledExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashXrayDashNode.atAwsDashSdkClientDashXrayDashNodeStrings.ThrottledException,
-    stack: String = null
-  ): ThrottledException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ThrottledException]
-  }
+  var name_ThrottledException: typings.atAwsDashSdkClientDashXrayDashNode.atAwsDashSdkClientDashXrayDashNodeStrings.ThrottledException = js.native
 }
 

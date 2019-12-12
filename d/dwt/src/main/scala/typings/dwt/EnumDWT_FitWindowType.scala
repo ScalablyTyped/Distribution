@@ -1,5 +1,9 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_FitWindowType.enumFitWindow
+import typings.dwt.EnumDWT_FitWindowType.enumFitWindowHeight
+import typings.dwt.EnumDWT_FitWindowType.enumFitWindowWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EnumDWT_FitWindowType extends js.Object {
   @js.native
   sealed trait enumFitWindowWidth extends EnumDWT_FitWindowType
   
-  /* 0 */ val enumFitWindow: typings.dwt.EnumDWT_FitWindowType.enumFitWindow with Double = js.native
-  /* 1 */ val enumFitWindowHeight: typings.dwt.EnumDWT_FitWindowType.enumFitWindowHeight with Double = js.native
-  /* 2 */ val enumFitWindowWidth: typings.dwt.EnumDWT_FitWindowType.enumFitWindowWidth with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_FitWindowType with Double] = js.native
+  /* 0 */ @js.native
+  object enumFitWindow extends TopLevel[enumFitWindow with Double]
+  
+  /* 1 */ @js.native
+  object enumFitWindowHeight extends TopLevel[enumFitWindowHeight with Double]
+  
+  /* 2 */ @js.native
+  object enumFitWindowWidth extends TopLevel[enumFitWindowWidth with Double]
+  
 }
 

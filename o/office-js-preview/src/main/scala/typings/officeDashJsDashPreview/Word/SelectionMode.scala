@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Word.SelectionMode.end
+import typings.officeDashJsDashPreview.Word.SelectionMode.select
+import typings.officeDashJsDashPreview.Word.SelectionMode.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SelectionMode extends js.Object {
   @js.native
   sealed trait start extends SelectionMode
   
-  /* "End" */ val end: typings.officeDashJsDashPreview.Word.SelectionMode.end with String = js.native
-  /* "Select" */ val select: typings.officeDashJsDashPreview.Word.SelectionMode.select with String = js.native
-  /* "Start" */ val start: typings.officeDashJsDashPreview.Word.SelectionMode.start with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SelectionMode with String] = js.native
+  /* "End" */ @js.native
+  object end extends TopLevel[end with String]
+  
+  /* "Select" */ @js.native
+  object select extends TopLevel[select with String]
+  
+  /* "Start" */ @js.native
+  object start extends TopLevel[start with String]
+  
 }
 

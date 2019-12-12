@@ -1,5 +1,9 @@
 package typings.roxDashBrowser.roxDashBrowserMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.None
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilForeground
+import typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilLaunch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RoxFlagFreezeLevel extends js.Object {
   @js.native
   sealed trait UntilLaunch extends RoxFlagFreezeLevel
   
-  /* "none" */ val None: typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.None with String = js.native
-  /* "untilForeground" */ val UntilForeground: typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilForeground with String = js.native
-  /* "untilLaunch" */ val UntilLaunch: typings.roxDashBrowser.roxDashBrowserMod.RoxFlagFreezeLevel.UntilLaunch with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RoxFlagFreezeLevel with String] = js.native
+  /* "none" */ @js.native
+  object None extends TopLevel[None with String]
+  
+  /* "untilForeground" */ @js.native
+  object UntilForeground extends TopLevel[UntilForeground with String]
+  
+  /* "untilLaunch" */ @js.native
+  object UntilLaunch extends TopLevel[UntilLaunch with String]
+  
 }
 

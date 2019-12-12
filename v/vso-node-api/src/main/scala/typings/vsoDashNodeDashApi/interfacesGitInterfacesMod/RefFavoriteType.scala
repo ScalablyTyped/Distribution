@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Folder
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Invalid
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RefFavoriteType extends js.Object {
   @js.native
   sealed trait Ref extends RefFavoriteType
   
-  /* 1 */ val Folder: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Folder with Double = js.native
-  /* 0 */ val Invalid: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Invalid with Double = js.native
-  /* 2 */ val Ref: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.RefFavoriteType.Ref with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RefFavoriteType with Double] = js.native
+  /* 1 */ @js.native
+  object Folder extends TopLevel[Folder with Double]
+  
+  /* 0 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 2 */ @js.native
+  object Ref extends TopLevel[Ref with Double]
+  
 }
 

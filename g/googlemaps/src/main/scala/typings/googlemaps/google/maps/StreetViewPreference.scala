@@ -1,5 +1,8 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.StreetViewPreference.BEST
+import typings.googlemaps.google.maps.StreetViewPreference.NEAREST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object StreetViewPreference extends js.Object {
   @js.native
   sealed trait NEAREST extends StreetViewPreference
   
-  /* "best" */ val BEST: typings.googlemaps.google.maps.StreetViewPreference.BEST with String = js.native
-  /* "nearest" */ val NEAREST: typings.googlemaps.google.maps.StreetViewPreference.NEAREST with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[StreetViewPreference with String] = js.native
+  /* "best" */ @js.native
+  object BEST extends TopLevel[BEST with String]
+  
+  /* "nearest" */ @js.native
+  object NEAREST extends TopLevel[NEAREST with String]
+  
 }
 

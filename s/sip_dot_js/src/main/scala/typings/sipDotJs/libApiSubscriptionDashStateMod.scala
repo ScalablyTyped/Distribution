@@ -1,6 +1,11 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState
+import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Initial
+import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.NotifyWait
+import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Subscribed
+import typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +30,20 @@ object libApiSubscriptionDashStateMod extends js.Object {
     @js.native
     sealed trait Terminated extends SubscriptionState
     
-    /* "Initial" */ val Initial: typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Initial with String = js.native
-    /* "NotifyWait" */ val NotifyWait: typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.NotifyWait with String = js.native
-    /* "Subscribed" */ val Subscribed: typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Subscribed with String = js.native
-    /* "Terminated" */ val Terminated: typings.sipDotJs.libApiSubscriptionDashStateMod.SubscriptionState.Terminated with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SubscriptionState with String] = js.native
+    /* "Initial" */ @js.native
+    object Initial extends TopLevel[Initial with String]
+    
+    /* "NotifyWait" */ @js.native
+    object NotifyWait extends TopLevel[NotifyWait with String]
+    
+    /* "Subscribed" */ @js.native
+    object Subscribed extends TopLevel[Subscribed with String]
+    
+    /* "Terminated" */ @js.native
+    object Terminated extends TopLevel[Terminated with String]
+    
   }
   
 }

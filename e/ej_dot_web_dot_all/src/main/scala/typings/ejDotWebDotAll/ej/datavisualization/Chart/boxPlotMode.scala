@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Exclusive
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Inclusive
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object boxPlotMode extends js.Object {
   @js.native
   sealed trait Normal extends boxPlotMode
   
-  /* 0 */ val Exclusive: typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Exclusive with Double = js.native
-  /* 1 */ val Inclusive: typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Inclusive with Double = js.native
-  /* 2 */ val Normal: typings.ejDotWebDotAll.ej.datavisualization.Chart.boxPlotMode.Normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[boxPlotMode with Double] = js.native
+  /* 0 */ @js.native
+  object Exclusive extends TopLevel[Exclusive with Double]
+  
+  /* 1 */ @js.native
+  object Inclusive extends TopLevel[Inclusive with Double]
+  
+  /* 2 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
 }
 

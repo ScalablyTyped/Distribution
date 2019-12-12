@@ -1,5 +1,18 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeMobile
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeTenfoot
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeVR
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeWeb
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.Golden
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.HasRichPresence
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.InJoinableGame
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.LaunchTypeGamepad
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingBigPicture
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingMobile
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingVR
+import typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingWeb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,19 +64,43 @@ object EPersonaStateFlag extends js.Object {
   @js.native
   sealed trait OnlineUsingWeb extends EPersonaStateFlag
   
-  /* 512 */ val ClientTypeMobile: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeMobile with Double = js.native
-  /* 1024 */ val ClientTypeTenfoot: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeTenfoot with Double = js.native
-  /* 2048 */ val ClientTypeVR: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeVR with Double = js.native
-  /* 256 */ val ClientTypeWeb: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.ClientTypeWeb with Double = js.native
-  /* 4 */ val Golden: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.Golden with Double = js.native
-  /* 1 */ val HasRichPresence: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.HasRichPresence with Double = js.native
-  /* 2 */ val InJoinableGame: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.InJoinableGame with Double = js.native
-  /* 4096 */ val LaunchTypeGamepad: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.LaunchTypeGamepad with Double = js.native
-  /* 1024 */ val OnlineUsingBigPicture: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingBigPicture with Double = js.native
-  /* 512 */ val OnlineUsingMobile: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingMobile with Double = js.native
-  /* 2048 */ val OnlineUsingVR: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingVR with Double = js.native
-  /* 256 */ val OnlineUsingWeb: typings.steamDashClient.steamDashClientMod.EPersonaStateFlag.OnlineUsingWeb with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EPersonaStateFlag with Double] = js.native
+  /* 512 */ @js.native
+  object ClientTypeMobile extends TopLevel[ClientTypeMobile with Double]
+  
+  /* 1024 */ @js.native
+  object ClientTypeTenfoot extends TopLevel[ClientTypeTenfoot with Double]
+  
+  /* 2048 */ @js.native
+  object ClientTypeVR extends TopLevel[ClientTypeVR with Double]
+  
+  /* 256 */ @js.native
+  object ClientTypeWeb extends TopLevel[ClientTypeWeb with Double]
+  
+  /* 4 */ @js.native
+  object Golden extends TopLevel[Golden with Double]
+  
+  /* 1 */ @js.native
+  object HasRichPresence extends TopLevel[HasRichPresence with Double]
+  
+  /* 2 */ @js.native
+  object InJoinableGame extends TopLevel[InJoinableGame with Double]
+  
+  /* 4096 */ @js.native
+  object LaunchTypeGamepad extends TopLevel[LaunchTypeGamepad with Double]
+  
+  /* 1024 */ @js.native
+  object OnlineUsingBigPicture extends TopLevel[OnlineUsingBigPicture with Double]
+  
+  /* 512 */ @js.native
+  object OnlineUsingMobile extends TopLevel[OnlineUsingMobile with Double]
+  
+  /* 2048 */ @js.native
+  object OnlineUsingVR extends TopLevel[OnlineUsingVR with Double]
+  
+  /* 256 */ @js.native
+  object OnlineUsingWeb extends TopLevel[OnlineUsingWeb with Double]
+  
 }
 

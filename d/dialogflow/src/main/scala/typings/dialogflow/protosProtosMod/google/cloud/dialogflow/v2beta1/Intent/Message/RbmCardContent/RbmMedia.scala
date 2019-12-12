@@ -1,7 +1,12 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.HEIGHT_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.MEDIUM
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.SHORT
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.TALL
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -121,12 +126,20 @@ object RbmMedia extends js.Object {
     @js.native
     sealed trait TALL extends Height
     
-    /* 0 */ val HEIGHT_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.HEIGHT_UNSPECIFIED with Double = js.native
-    /* 2 */ val MEDIUM: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.MEDIUM with Double = js.native
-    /* 1 */ val SHORT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.SHORT with Double = js.native
-    /* 3 */ val TALL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmCardContent.RbmMedia.Height.TALL with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Height with Double] = js.native
+    /* 0 */ @js.native
+    object HEIGHT_UNSPECIFIED extends TopLevel[HEIGHT_UNSPECIFIED with Double]
+    
+    /* 2 */ @js.native
+    object MEDIUM extends TopLevel[MEDIUM with Double]
+    
+    /* 1 */ @js.native
+    object SHORT extends TopLevel[SHORT with Double]
+    
+    /* 3 */ @js.native
+    object TALL extends TopLevel[TALL with Double]
+    
   }
   
 }

@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Flat
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.OneHop
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object QueryType extends js.Object {
   @js.native
   sealed trait Tree extends QueryType
   
-  /* 1 */ val Flat: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Flat with Double = js.native
-  /* 3 */ val OneHop: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.OneHop with Double = js.native
-  /* 2 */ val Tree: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.QueryType.Tree with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QueryType with Double] = js.native
+  /* 1 */ @js.native
+  object Flat extends TopLevel[Flat with Double]
+  
+  /* 3 */ @js.native
+  object OneHop extends TopLevel[OneHop with Double]
+  
+  /* 2 */ @js.native
+  object Tree extends TopLevel[Tree with Double]
+  
 }
 

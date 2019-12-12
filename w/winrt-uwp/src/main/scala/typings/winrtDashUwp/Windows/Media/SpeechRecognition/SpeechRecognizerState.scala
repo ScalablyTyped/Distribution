@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.capturing
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.idle
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.paused
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.processing
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundEnded
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundStarted
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.speechDetected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object SpeechRecognizerState extends js.Object {
   @js.native
   sealed trait speechDetected extends SpeechRecognizerState
   
-  /* 1 */ val capturing: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.capturing with Double = js.native
-  /* 0 */ val idle: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.idle with Double = js.native
-  /* 6 */ val paused: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.paused with Double = js.native
-  /* 2 */ val processing: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.processing with Double = js.native
-  /* 4 */ val soundEnded: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundEnded with Double = js.native
-  /* 3 */ val soundStarted: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.soundStarted with Double = js.native
-  /* 5 */ val speechDetected: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognizerState.speechDetected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpeechRecognizerState with Double] = js.native
+  /* 1 */ @js.native
+  object capturing extends TopLevel[capturing with Double]
+  
+  /* 0 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
+  /* 6 */ @js.native
+  object paused extends TopLevel[paused with Double]
+  
+  /* 2 */ @js.native
+  object processing extends TopLevel[processing with Double]
+  
+  /* 4 */ @js.native
+  object soundEnded extends TopLevel[soundEnded with Double]
+  
+  /* 3 */ @js.native
+  object soundStarted extends TopLevel[soundStarted with Double]
+  
+  /* 5 */ @js.native
+  object speechDetected extends TopLevel[speechDetected with Double]
+  
 }
 

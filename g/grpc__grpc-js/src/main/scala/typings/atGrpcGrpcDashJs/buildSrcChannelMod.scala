@@ -1,5 +1,6 @@
 package typings.atGrpcGrpcDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Call
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Deadline
 import typings.atGrpcGrpcDashJs.buildSrcCallDashStreamMod.Http2CallStream
@@ -7,6 +8,11 @@ import typings.atGrpcGrpcDashJs.buildSrcChannelDashCredentialsMod.ChannelCredent
 import typings.atGrpcGrpcDashJs.buildSrcChannelDashOptionsMod.ChannelOptions
 import typings.atGrpcGrpcDashJs.buildSrcChannelMod.Channel
 import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState
+import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.CONNECTING
+import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.IDLE
+import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.READY
+import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.SHUTDOWN
+import typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.TRANSIENT_FAILURE
 import typings.atGrpcGrpcDashJs.buildSrcMetadataMod.Metadata
 import typings.std.Date
 import typings.std.Error
@@ -124,13 +130,23 @@ object buildSrcChannelMod extends js.Object {
     @js.native
     sealed trait TRANSIENT_FAILURE extends ConnectivityState
     
-    /* 0 */ val CONNECTING: typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.CONNECTING with Double = js.native
-    /* 3 */ val IDLE: typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.IDLE with Double = js.native
-    /* 1 */ val READY: typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.READY with Double = js.native
-    /* 4 */ val SHUTDOWN: typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.SHUTDOWN with Double = js.native
-    /* 2 */ val TRANSIENT_FAILURE: typings.atGrpcGrpcDashJs.buildSrcChannelMod.ConnectivityState.TRANSIENT_FAILURE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ConnectivityState with Double] = js.native
+    /* 0 */ @js.native
+    object CONNECTING extends TopLevel[CONNECTING with Double]
+    
+    /* 3 */ @js.native
+    object IDLE extends TopLevel[IDLE with Double]
+    
+    /* 1 */ @js.native
+    object READY extends TopLevel[READY with Double]
+    
+    /* 4 */ @js.native
+    object SHUTDOWN extends TopLevel[SHUTDOWN with Double]
+    
+    /* 2 */ @js.native
+    object TRANSIENT_FAILURE extends TopLevel[TRANSIENT_FAILURE with Double]
+    
   }
   
 }

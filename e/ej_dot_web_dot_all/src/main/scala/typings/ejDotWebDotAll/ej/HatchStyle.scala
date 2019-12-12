@@ -1,5 +1,43 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.HatchStyle.BackwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.Cross
+import typings.ejDotWebDotAll.ej.HatchStyle.DarkDownwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.DarkHorizontal
+import typings.ejDotWebDotAll.ej.HatchStyle.DarkUpwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.DarkVertical
+import typings.ejDotWebDotAll.ej.HatchStyle.DashedDownwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.DashedHorizontal
+import typings.ejDotWebDotAll.ej.HatchStyle.DashedUpwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.DashedVertical
+import typings.ejDotWebDotAll.ej.HatchStyle.DiagonalBrick
+import typings.ejDotWebDotAll.ej.HatchStyle.DiagonalCross
+import typings.ejDotWebDotAll.ej.HatchStyle.Divot
+import typings.ejDotWebDotAll.ej.HatchStyle.DottedDiamond
+import typings.ejDotWebDotAll.ej.HatchStyle.DottedGrid
+import typings.ejDotWebDotAll.ej.HatchStyle.ForwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.Horizontal
+import typings.ejDotWebDotAll.ej.HatchStyle.HorizontalBrick
+import typings.ejDotWebDotAll.ej.HatchStyle.LargeCheckerBoard
+import typings.ejDotWebDotAll.ej.HatchStyle.LargeConfetti
+import typings.ejDotWebDotAll.ej.HatchStyle.LargeGrid
+import typings.ejDotWebDotAll.ej.HatchStyle.LightDownwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.LightHorizontal
+import typings.ejDotWebDotAll.ej.HatchStyle.LightUpwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.LightVertical
+import typings.ejDotWebDotAll.ej.HatchStyle.Max
+import typings.ejDotWebDotAll.ej.HatchStyle.Min
+import typings.ejDotWebDotAll.ej.HatchStyle.NarrowHorizontal
+import typings.ejDotWebDotAll.ej.HatchStyle.NarrowVertical
+import typings.ejDotWebDotAll.ej.HatchStyle.None
+import typings.ejDotWebDotAll.ej.HatchStyle.OutlinedDiamond
+import typings.ejDotWebDotAll.ej.HatchStyle.Percent90
+import typings.ejDotWebDotAll.ej.HatchStyle.Wave
+import typings.ejDotWebDotAll.ej.HatchStyle.Weave
+import typings.ejDotWebDotAll.ej.HatchStyle.WideDownwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.WideUpwardDiagonal
+import typings.ejDotWebDotAll.ej.HatchStyle.ZigZag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -158,44 +196,118 @@ object HatchStyle extends js.Object {
   @js.native
   sealed trait ZigZag extends HatchStyle
   
-  /* 1 */ val BackwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.BackwardDiagonal with Double = js.native
-  /* 2 */ val Cross: typings.ejDotWebDotAll.ej.HatchStyle.Cross with Double = js.native
-  /* 3 */ val DarkDownwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.DarkDownwardDiagonal with Double = js.native
-  /* 4 */ val DarkHorizontal: typings.ejDotWebDotAll.ej.HatchStyle.DarkHorizontal with Double = js.native
-  /* 5 */ val DarkUpwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.DarkUpwardDiagonal with Double = js.native
-  /* 6 */ val DarkVertical: typings.ejDotWebDotAll.ej.HatchStyle.DarkVertical with Double = js.native
-  /* 7 */ val DashedDownwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.DashedDownwardDiagonal with Double = js.native
-  /* 8 */ val DashedHorizontal: typings.ejDotWebDotAll.ej.HatchStyle.DashedHorizontal with Double = js.native
-  /* 9 */ val DashedUpwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.DashedUpwardDiagonal with Double = js.native
-  /* 10 */ val DashedVertical: typings.ejDotWebDotAll.ej.HatchStyle.DashedVertical with Double = js.native
-  /* 11 */ val DiagonalBrick: typings.ejDotWebDotAll.ej.HatchStyle.DiagonalBrick with Double = js.native
-  /* 12 */ val DiagonalCross: typings.ejDotWebDotAll.ej.HatchStyle.DiagonalCross with Double = js.native
-  /* 13 */ val Divot: typings.ejDotWebDotAll.ej.HatchStyle.Divot with Double = js.native
-  /* 14 */ val DottedDiamond: typings.ejDotWebDotAll.ej.HatchStyle.DottedDiamond with Double = js.native
-  /* 15 */ val DottedGrid: typings.ejDotWebDotAll.ej.HatchStyle.DottedGrid with Double = js.native
-  /* 16 */ val ForwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.ForwardDiagonal with Double = js.native
-  /* 17 */ val Horizontal: typings.ejDotWebDotAll.ej.HatchStyle.Horizontal with Double = js.native
-  /* 18 */ val HorizontalBrick: typings.ejDotWebDotAll.ej.HatchStyle.HorizontalBrick with Double = js.native
-  /* 19 */ val LargeCheckerBoard: typings.ejDotWebDotAll.ej.HatchStyle.LargeCheckerBoard with Double = js.native
-  /* 20 */ val LargeConfetti: typings.ejDotWebDotAll.ej.HatchStyle.LargeConfetti with Double = js.native
-  /* 21 */ val LargeGrid: typings.ejDotWebDotAll.ej.HatchStyle.LargeGrid with Double = js.native
-  /* 22 */ val LightDownwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.LightDownwardDiagonal with Double = js.native
-  /* 23 */ val LightHorizontal: typings.ejDotWebDotAll.ej.HatchStyle.LightHorizontal with Double = js.native
-  /* 24 */ val LightUpwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.LightUpwardDiagonal with Double = js.native
-  /* 25 */ val LightVertical: typings.ejDotWebDotAll.ej.HatchStyle.LightVertical with Double = js.native
-  /* 26 */ val Max: typings.ejDotWebDotAll.ej.HatchStyle.Max with Double = js.native
-  /* 27 */ val Min: typings.ejDotWebDotAll.ej.HatchStyle.Min with Double = js.native
-  /* 28 */ val NarrowHorizontal: typings.ejDotWebDotAll.ej.HatchStyle.NarrowHorizontal with Double = js.native
-  /* 29 */ val NarrowVertical: typings.ejDotWebDotAll.ej.HatchStyle.NarrowVertical with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.HatchStyle.None with Double = js.native
-  /* 30 */ val OutlinedDiamond: typings.ejDotWebDotAll.ej.HatchStyle.OutlinedDiamond with Double = js.native
-  /* 31 */ val Percent90: typings.ejDotWebDotAll.ej.HatchStyle.Percent90 with Double = js.native
-  /* 32 */ val Wave: typings.ejDotWebDotAll.ej.HatchStyle.Wave with Double = js.native
-  /* 33 */ val Weave: typings.ejDotWebDotAll.ej.HatchStyle.Weave with Double = js.native
-  /* 34 */ val WideDownwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.WideDownwardDiagonal with Double = js.native
-  /* 35 */ val WideUpwardDiagonal: typings.ejDotWebDotAll.ej.HatchStyle.WideUpwardDiagonal with Double = js.native
-  /* 36 */ val ZigZag: typings.ejDotWebDotAll.ej.HatchStyle.ZigZag with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HatchStyle with Double] = js.native
+  /* 1 */ @js.native
+  object BackwardDiagonal extends TopLevel[BackwardDiagonal with Double]
+  
+  /* 2 */ @js.native
+  object Cross extends TopLevel[Cross with Double]
+  
+  /* 3 */ @js.native
+  object DarkDownwardDiagonal extends TopLevel[DarkDownwardDiagonal with Double]
+  
+  /* 4 */ @js.native
+  object DarkHorizontal extends TopLevel[DarkHorizontal with Double]
+  
+  /* 5 */ @js.native
+  object DarkUpwardDiagonal extends TopLevel[DarkUpwardDiagonal with Double]
+  
+  /* 6 */ @js.native
+  object DarkVertical extends TopLevel[DarkVertical with Double]
+  
+  /* 7 */ @js.native
+  object DashedDownwardDiagonal extends TopLevel[DashedDownwardDiagonal with Double]
+  
+  /* 8 */ @js.native
+  object DashedHorizontal extends TopLevel[DashedHorizontal with Double]
+  
+  /* 9 */ @js.native
+  object DashedUpwardDiagonal extends TopLevel[DashedUpwardDiagonal with Double]
+  
+  /* 10 */ @js.native
+  object DashedVertical extends TopLevel[DashedVertical with Double]
+  
+  /* 11 */ @js.native
+  object DiagonalBrick extends TopLevel[DiagonalBrick with Double]
+  
+  /* 12 */ @js.native
+  object DiagonalCross extends TopLevel[DiagonalCross with Double]
+  
+  /* 13 */ @js.native
+  object Divot extends TopLevel[Divot with Double]
+  
+  /* 14 */ @js.native
+  object DottedDiamond extends TopLevel[DottedDiamond with Double]
+  
+  /* 15 */ @js.native
+  object DottedGrid extends TopLevel[DottedGrid with Double]
+  
+  /* 16 */ @js.native
+  object ForwardDiagonal extends TopLevel[ForwardDiagonal with Double]
+  
+  /* 17 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 18 */ @js.native
+  object HorizontalBrick extends TopLevel[HorizontalBrick with Double]
+  
+  /* 19 */ @js.native
+  object LargeCheckerBoard extends TopLevel[LargeCheckerBoard with Double]
+  
+  /* 20 */ @js.native
+  object LargeConfetti extends TopLevel[LargeConfetti with Double]
+  
+  /* 21 */ @js.native
+  object LargeGrid extends TopLevel[LargeGrid with Double]
+  
+  /* 22 */ @js.native
+  object LightDownwardDiagonal extends TopLevel[LightDownwardDiagonal with Double]
+  
+  /* 23 */ @js.native
+  object LightHorizontal extends TopLevel[LightHorizontal with Double]
+  
+  /* 24 */ @js.native
+  object LightUpwardDiagonal extends TopLevel[LightUpwardDiagonal with Double]
+  
+  /* 25 */ @js.native
+  object LightVertical extends TopLevel[LightVertical with Double]
+  
+  /* 26 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 27 */ @js.native
+  object Min extends TopLevel[Min with Double]
+  
+  /* 28 */ @js.native
+  object NarrowHorizontal extends TopLevel[NarrowHorizontal with Double]
+  
+  /* 29 */ @js.native
+  object NarrowVertical extends TopLevel[NarrowVertical with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 30 */ @js.native
+  object OutlinedDiamond extends TopLevel[OutlinedDiamond with Double]
+  
+  /* 31 */ @js.native
+  object Percent90 extends TopLevel[Percent90 with Double]
+  
+  /* 32 */ @js.native
+  object Wave extends TopLevel[Wave with Double]
+  
+  /* 33 */ @js.native
+  object Weave extends TopLevel[Weave with Double]
+  
+  /* 34 */ @js.native
+  object WideDownwardDiagonal extends TopLevel[WideDownwardDiagonal with Double]
+  
+  /* 35 */ @js.native
+  object WideUpwardDiagonal extends TopLevel[WideUpwardDiagonal with Double]
+  
+  /* 36 */ @js.native
+  object ZigZag extends TopLevel[ZigZag with Double]
+  
 }
 

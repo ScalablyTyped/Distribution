@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.SmartCards
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.allow
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.disallow
+import typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.requireAtLeastOne
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object SmartCardPinCharacterPolicyOption extends js.Object {
   @js.native
   sealed trait requireAtLeastOne extends SmartCardPinCharacterPolicyOption
   
-  /* 0 */ val allow: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.allow with Double = js.native
-  /* 2 */ val disallow: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.disallow with Double = js.native
-  /* 1 */ val requireAtLeastOne: typings.winrtDashUwp.Windows.Devices.SmartCards.SmartCardPinCharacterPolicyOption.requireAtLeastOne with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmartCardPinCharacterPolicyOption with Double] = js.native
+  /* 0 */ @js.native
+  object allow extends TopLevel[allow with Double]
+  
+  /* 2 */ @js.native
+  object disallow extends TopLevel[disallow with Double]
+  
+  /* 1 */ @js.native
+  object requireAtLeastOne extends TopLevel[requireAtLeastOne with Double]
+  
 }
 

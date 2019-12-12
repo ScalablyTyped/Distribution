@@ -1,5 +1,8 @@
 package typings.chromecastDashCafDashSender.cast.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.CAST_STATE_CHANGED
+import typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.SESSION_STATE_CHANGED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CastContextEventType extends js.Object {
   @js.native
   sealed trait SESSION_STATE_CHANGED extends CastContextEventType
   
-  /* "caststatechanged" */ val CAST_STATE_CHANGED: typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.CAST_STATE_CHANGED with String = js.native
-  /* "sessionstatechanged" */ val SESSION_STATE_CHANGED: typings.chromecastDashCafDashSender.cast.framework.CastContextEventType.SESSION_STATE_CHANGED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CastContextEventType with String] = js.native
+  /* "caststatechanged" */ @js.native
+  object CAST_STATE_CHANGED extends TopLevel[CAST_STATE_CHANGED with String]
+  
+  /* "sessionstatechanged" */ @js.native
+  object SESSION_STATE_CHANGED extends TopLevel[SESSION_STATE_CHANGED with String]
+  
 }
 

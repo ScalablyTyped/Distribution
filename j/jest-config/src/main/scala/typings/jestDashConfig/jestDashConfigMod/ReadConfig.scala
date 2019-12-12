@@ -1,10 +1,10 @@
 package typings.jestDashConfig.jestDashConfigMod
 
-import typings.atJestTypes.buildConfigMod.Argv
 import typings.atJestTypes.buildConfigMod.GlobalConfig
 import typings.atJestTypes.buildConfigMod.InitialOptions
 import typings.atJestTypes.buildConfigMod.Path
 import typings.atJestTypes.buildConfigMod.ProjectConfig
+import typings.jestDashConfig.Argv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

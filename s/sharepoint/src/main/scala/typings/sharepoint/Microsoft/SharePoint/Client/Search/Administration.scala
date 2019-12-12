@@ -1,7 +1,12 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.Anon_High
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSite
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSiteSubscription
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spWeb
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.ssa
 import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult
@@ -52,12 +57,20 @@ object Administration extends js.Object {
     @js.native
     sealed trait ssa extends SearchObjectLevel
     
-    /* 1 */ val spSite: typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSite with Double = js.native
-    /* 2 */ val spSiteSubscription: typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spSiteSubscription with Double = js.native
-    /* 0 */ val spWeb: typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.spWeb with Double = js.native
-    /* 3 */ val ssa: typings.sharepoint.Microsoft.SharePoint.Client.Search.Administration.SearchObjectLevel.ssa with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SearchObjectLevel with Double] = js.native
+    /* 1 */ @js.native
+    object spSite extends TopLevel[spSite with Double]
+    
+    /* 2 */ @js.native
+    object spSiteSubscription extends TopLevel[spSiteSubscription with Double]
+    
+    /* 0 */ @js.native
+    object spWeb extends TopLevel[spWeb with Double]
+    
+    /* 3 */ @js.native
+    object ssa extends TopLevel[ssa with Double]
+    
   }
   
 }

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Protection
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.appComponentsMayNeedUpdating
+import typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.noComponentsFound
+import typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.notStarted
+import typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.updatesInProgress
+import typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.userCancelled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object RenewalStatus extends js.Object {
   @js.native
   sealed trait userCancelled extends RenewalStatus
   
-  /* 3 */ val appComponentsMayNeedUpdating: typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.appComponentsMayNeedUpdating with Double = js.native
-  /* 4 */ val noComponentsFound: typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.noComponentsFound with Double = js.native
-  /* 0 */ val notStarted: typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.notStarted with Double = js.native
-  /* 1 */ val updatesInProgress: typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.updatesInProgress with Double = js.native
-  /* 2 */ val userCancelled: typings.winrtDashUwp.Windows.Media.Protection.RenewalStatus.userCancelled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RenewalStatus with Double] = js.native
+  /* 3 */ @js.native
+  object appComponentsMayNeedUpdating extends TopLevel[appComponentsMayNeedUpdating with Double]
+  
+  /* 4 */ @js.native
+  object noComponentsFound extends TopLevel[noComponentsFound with Double]
+  
+  /* 0 */ @js.native
+  object notStarted extends TopLevel[notStarted with Double]
+  
+  /* 1 */ @js.native
+  object updatesInProgress extends TopLevel[updatesInProgress with Double]
+  
+  /* 2 */ @js.native
+  object userCancelled extends TopLevel[userCancelled with Double]
+  
 }
 

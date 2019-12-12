@@ -1,5 +1,8 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Editing
+import typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Reading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +28,13 @@ object ASPxClientSpreadsheetViewMode extends js.Object {
   @js.native
   sealed trait Reading extends ASPxClientSpreadsheetViewMode
   
-  /* 0 */ val Editing: typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Editing with Double = js.native
-  /* 1 */ val Reading: typings.devexpressDashWeb.ASPxClientSpreadsheetViewMode.Reading with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ASPxClientSpreadsheetViewMode with Double] = js.native
+  /* 0 */ @js.native
+  object Editing extends TopLevel[Editing with Double]
+  
+  /* 1 */ @js.native
+  object Reading extends TopLevel[Reading with Double]
+  
 }
 

@@ -1,5 +1,14 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.PointOptions.allowOffClient
+import typings.winrt.Windows.UI.Text.PointOptions.clientCoordinates
+import typings.winrt.Windows.UI.Text.PointOptions.includeInset
+import typings.winrt.Windows.UI.Text.PointOptions.noHorizontalScroll
+import typings.winrt.Windows.UI.Text.PointOptions.noVerticalScroll
+import typings.winrt.Windows.UI.Text.PointOptions.none
+import typings.winrt.Windows.UI.Text.PointOptions.start
+import typings.winrt.Windows.UI.Text.PointOptions.transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object PointOptions extends js.Object {
   @js.native
   sealed trait transform extends PointOptions
   
-  /* 4 */ val allowOffClient: typings.winrt.Windows.UI.Text.PointOptions.allowOffClient with Double = js.native
-  /* 3 */ val clientCoordinates: typings.winrt.Windows.UI.Text.PointOptions.clientCoordinates with Double = js.native
-  /* 1 */ val includeInset: typings.winrt.Windows.UI.Text.PointOptions.includeInset with Double = js.native
-  /* 6 */ val noHorizontalScroll: typings.winrt.Windows.UI.Text.PointOptions.noHorizontalScroll with Double = js.native
-  /* 7 */ val noVerticalScroll: typings.winrt.Windows.UI.Text.PointOptions.noVerticalScroll with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.UI.Text.PointOptions.none with Double = js.native
-  /* 2 */ val start: typings.winrt.Windows.UI.Text.PointOptions.start with Double = js.native
-  /* 5 */ val transform: typings.winrt.Windows.UI.Text.PointOptions.transform with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointOptions with Double] = js.native
+  /* 4 */ @js.native
+  object allowOffClient extends TopLevel[allowOffClient with Double]
+  
+  /* 3 */ @js.native
+  object clientCoordinates extends TopLevel[clientCoordinates with Double]
+  
+  /* 1 */ @js.native
+  object includeInset extends TopLevel[includeInset with Double]
+  
+  /* 6 */ @js.native
+  object noHorizontalScroll extends TopLevel[noHorizontalScroll with Double]
+  
+  /* 7 */ @js.native
+  object noVerticalScroll extends TopLevel[noVerticalScroll with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object start extends TopLevel[start with Double]
+  
+  /* 5 */ @js.native
+  object transform extends TopLevel[transform with Double]
+  
 }
 

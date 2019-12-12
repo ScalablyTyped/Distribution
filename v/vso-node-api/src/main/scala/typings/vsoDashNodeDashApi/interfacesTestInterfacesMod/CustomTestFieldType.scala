@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Bit
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.DateTime
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Float
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Guid
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Int
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object CustomTestFieldType extends js.Object {
   @js.native
   sealed trait String extends CustomTestFieldType
   
-  /* 2 */ val Bit: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Bit with Double = js.native
-  /* 4 */ val DateTime: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.DateTime with Double = js.native
-  /* 6 */ val Float: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Float with Double = js.native
-  /* 14 */ val Guid: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Guid with Double = js.native
-  /* 8 */ val Int: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.Int with Double = js.native
-  /* 12 */ val String: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.CustomTestFieldType.String with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomTestFieldType with Double] = js.native
+  /* 2 */ @js.native
+  object Bit extends TopLevel[Bit with Double]
+  
+  /* 4 */ @js.native
+  object DateTime extends TopLevel[DateTime with Double]
+  
+  /* 6 */ @js.native
+  object Float extends TopLevel[Float with Double]
+  
+  /* 14 */ @js.native
+  object Guid extends TopLevel[Guid with Double]
+  
+  /* 8 */ @js.native
+  object Int extends TopLevel[Int with Double]
+  
+  /* 12 */ @js.native
+  object String extends TopLevel[String with Double]
+  
 }
 

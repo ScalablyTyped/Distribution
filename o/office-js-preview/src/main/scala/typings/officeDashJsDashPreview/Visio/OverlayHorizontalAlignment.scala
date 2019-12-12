@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Visio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.center
+import typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.left
+import typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object OverlayHorizontalAlignment extends js.Object {
   @js.native
   sealed trait right extends OverlayHorizontalAlignment
   
-  /* "Center" */ val center: typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.center with String = js.native
-  /* "Left" */ val left: typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJsDashPreview.Visio.OverlayHorizontalAlignment.right with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[OverlayHorizontalAlignment with String] = js.native
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
 }
 

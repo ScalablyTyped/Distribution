@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lingui__macro"
-version := "2.7-dt-20190320Z-adb0c5"
+version := "2.7-dt-20190320Z-3ab2b5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

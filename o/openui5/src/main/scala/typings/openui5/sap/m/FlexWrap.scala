@@ -1,5 +1,9 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.FlexWrap.NoWrap
+import typings.openui5.sap.m.FlexWrap.Wrap
+import typings.openui5.sap.m.FlexWrap.WrapReverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object FlexWrap extends js.Object {
   @js.native
   sealed trait WrapReverse extends FlexWrap
   
-  /* 0 */ val NoWrap: typings.openui5.sap.m.FlexWrap.NoWrap with Double = js.native
-  /* 1 */ val Wrap: typings.openui5.sap.m.FlexWrap.Wrap with Double = js.native
-  /* 2 */ val WrapReverse: typings.openui5.sap.m.FlexWrap.WrapReverse with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlexWrap with Double] = js.native
+  /* 0 */ @js.native
+  object NoWrap extends TopLevel[NoWrap with Double]
+  
+  /* 1 */ @js.native
+  object Wrap extends TopLevel[Wrap with Double]
+  
+  /* 2 */ @js.native
+  object WrapReverse extends TopLevel[WrapReverse with Double]
+  
 }
 

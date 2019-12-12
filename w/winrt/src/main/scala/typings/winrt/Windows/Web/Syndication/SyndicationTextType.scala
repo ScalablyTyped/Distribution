@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Web.Syndication.SyndicationTextType.html
+import typings.winrt.Windows.Web.Syndication.SyndicationTextType.text
+import typings.winrt.Windows.Web.Syndication.SyndicationTextType.xhtml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SyndicationTextType extends js.Object {
   @js.native
   sealed trait xhtml extends SyndicationTextType
   
-  /* 1 */ val html: typings.winrt.Windows.Web.Syndication.SyndicationTextType.html with Double = js.native
-  /* 0 */ val text: typings.winrt.Windows.Web.Syndication.SyndicationTextType.text with Double = js.native
-  /* 2 */ val xhtml: typings.winrt.Windows.Web.Syndication.SyndicationTextType.xhtml with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SyndicationTextType with Double] = js.native
+  /* 1 */ @js.native
+  object html extends TopLevel[html with Double]
+  
+  /* 0 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 2 */ @js.native
+  object xhtml extends TopLevel[xhtml with Double]
+  
 }
 

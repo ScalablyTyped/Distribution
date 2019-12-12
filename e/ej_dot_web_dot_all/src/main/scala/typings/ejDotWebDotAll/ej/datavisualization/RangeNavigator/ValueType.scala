@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.DateTime
+import typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.Numeric
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ValueType extends js.Object {
   @js.native
   sealed trait Numeric extends ValueType
   
-  /* 1 */ val DateTime: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.DateTime with Double = js.native
-  /* 0 */ val Numeric: typings.ejDotWebDotAll.ej.datavisualization.RangeNavigator.ValueType.Numeric with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ValueType with Double] = js.native
+  /* 1 */ @js.native
+  object DateTime extends TopLevel[DateTime with Double]
+  
+  /* 0 */ @js.native
+  object Numeric extends TopLevel[Numeric with Double]
+  
 }
 

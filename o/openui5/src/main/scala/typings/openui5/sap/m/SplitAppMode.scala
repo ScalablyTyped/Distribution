@@ -1,5 +1,10 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.SplitAppMode.HideMode
+import typings.openui5.sap.m.SplitAppMode.PopoverMode
+import typings.openui5.sap.m.SplitAppMode.ShowHideMode
+import typings.openui5.sap.m.SplitAppMode.StretchCompressMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object SplitAppMode extends js.Object {
   @js.native
   sealed trait StretchCompressMode extends SplitAppMode
   
-  /* 0 */ val HideMode: typings.openui5.sap.m.SplitAppMode.HideMode with Double = js.native
-  /* 1 */ val PopoverMode: typings.openui5.sap.m.SplitAppMode.PopoverMode with Double = js.native
-  /* 2 */ val ShowHideMode: typings.openui5.sap.m.SplitAppMode.ShowHideMode with Double = js.native
-  /* 3 */ val StretchCompressMode: typings.openui5.sap.m.SplitAppMode.StretchCompressMode with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SplitAppMode with Double] = js.native
+  /* 0 */ @js.native
+  object HideMode extends TopLevel[HideMode with Double]
+  
+  /* 1 */ @js.native
+  object PopoverMode extends TopLevel[PopoverMode with Double]
+  
+  /* 2 */ @js.native
+  object ShowHideMode extends TopLevel[ShowHideMode with Double]
+  
+  /* 3 */ @js.native
+  object StretchCompressMode extends TopLevel[StretchCompressMode with Double]
+  
 }
 

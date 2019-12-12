@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "class-transformer"
-version := "0.2.3-1327b4"
+version := "0.2.3-b67245"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

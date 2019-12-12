@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.menuItemMenuItemMod.MenuItemProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object menuItemMod extends js.Object {
     def this(props: MenuItemProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[MenuItemProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[MenuItemProps]]
+  
 }
 

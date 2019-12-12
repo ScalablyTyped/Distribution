@@ -1,5 +1,10 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.RangeCopyType.all
+import typings.officeDashJsDashPreview.Excel.RangeCopyType.formats
+import typings.officeDashJsDashPreview.Excel.RangeCopyType.formulas
+import typings.officeDashJsDashPreview.Excel.RangeCopyType.values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object RangeCopyType extends js.Object {
   @js.native
   sealed trait values extends RangeCopyType
   
-  /* "All" */ val all: typings.officeDashJsDashPreview.Excel.RangeCopyType.all with String = js.native
-  /* "Formats" */ val formats: typings.officeDashJsDashPreview.Excel.RangeCopyType.formats with String = js.native
-  /* "Formulas" */ val formulas: typings.officeDashJsDashPreview.Excel.RangeCopyType.formulas with String = js.native
-  /* "Values" */ val values: typings.officeDashJsDashPreview.Excel.RangeCopyType.values with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RangeCopyType with String] = js.native
+  /* "All" */ @js.native
+  object all extends TopLevel[all with String]
+  
+  /* "Formats" */ @js.native
+  object formats extends TopLevel[formats with String]
+  
+  /* "Formulas" */ @js.native
+  object formulas extends TopLevel[formulas with String]
+  
+  /* "Values" */ @js.native
+  object values extends TopLevel[values with String]
+  
 }
 

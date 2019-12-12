@@ -4,42 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VNode extends js.Object {
   @JSName("$attrs$")
-  var $attrs$: js.UndefOr[js.Any] = js.undefined
+  var $attrs$: js.UndefOr[js.Any] = js.native
   @JSName("$children$")
-  var $children$: js.Array[VNode]
+  var $children$: js.Array[VNode] = js.native
   @JSName("$elm$")
-  var $elm$: js.Any
+  var $elm$: js.Any = js.native
   @JSName("$flags$")
-  var $flags$: Double
+  var $flags$: Double = js.native
   @JSName("$key$")
-  var $key$: js.UndefOr[String | Double] = js.undefined
+  var $key$: js.UndefOr[String | Double] = js.native
   @JSName("$name$")
-  var $name$: js.UndefOr[String] = js.undefined
+  var $name$: js.UndefOr[String] = js.native
   @JSName("$tag$")
-  var $tag$: String | Double | js.Function
+  var $tag$: String | Double | js.Function = js.native
   @JSName("$text$")
-  var $text$: String
-}
-
-object VNode {
-  @scala.inline
-  def apply(
-    $children$: js.Array[VNode],
-    $elm$: js.Any,
-    $flags$: Double,
-    $tag$: String | Double | js.Function,
-    $text$: String,
-    $attrs$: js.Any = null,
-    $key$: String | Double = null,
-    $name$: String = null
-  ): VNode = {
-    val __obj = js.Dynamic.literal($children$ = $children$.asInstanceOf[js.Any], $elm$ = $elm$.asInstanceOf[js.Any], $flags$ = $flags$.asInstanceOf[js.Any], $tag$ = $tag$.asInstanceOf[js.Any], $text$ = $text$.asInstanceOf[js.Any])
-    if ($attrs$ != null) __obj.updateDynamic("$attrs$")($attrs$.asInstanceOf[js.Any])
-    if ($key$ != null) __obj.updateDynamic("$key$")($key$.asInstanceOf[js.Any])
-    if ($name$ != null) __obj.updateDynamic("$name$")($name$.asInstanceOf[js.Any])
-    __obj.asInstanceOf[VNode]
-  }
+  var $text$: String = js.native
 }
 

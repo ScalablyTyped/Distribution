@@ -1,5 +1,6 @@
 package typings.auth0DashLock
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,8 @@ object auth0DashLockMod extends js.Object {
     def this(clientId: String, domain: String, options: Auth0LockConstructorOptions) = this()
   }
   
-  var default: Auth0LockStatic = js.native
+  @js.native
+  object default extends TopLevel[Auth0LockStatic]
+  
 }
 

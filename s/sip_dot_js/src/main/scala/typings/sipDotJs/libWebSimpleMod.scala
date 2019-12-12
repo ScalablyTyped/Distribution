@@ -1,11 +1,17 @@
 package typings.sipDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.events.eventsMod.EventEmitter
 import typings.sipDotJs.libCoreMod.Logger
 import typings.sipDotJs.libSessionMod.InviteClientContext
 import typings.sipDotJs.libSessionMod.InviteServerContext
 import typings.sipDotJs.libUAMod.UA
 import typings.sipDotJs.libWebSimpleMod.SimpleStatus
+import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_COMPLETED
+import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTED
+import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTING
+import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NEW
+import typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NULL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,13 +79,23 @@ object libWebSimpleMod extends js.Object {
     @js.native
     sealed trait STATUS_NULL extends SimpleStatus
     
-    /* 4 */ val STATUS_COMPLETED: typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_COMPLETED with Double = js.native
-    /* 3 */ val STATUS_CONNECTED: typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTED with Double = js.native
-    /* 2 */ val STATUS_CONNECTING: typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_CONNECTING with Double = js.native
-    /* 1 */ val STATUS_NEW: typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NEW with Double = js.native
-    /* 0 */ val STATUS_NULL: typings.sipDotJs.libWebSimpleMod.SimpleStatus.STATUS_NULL with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SimpleStatus with Double] = js.native
+    /* 4 */ @js.native
+    object STATUS_COMPLETED extends TopLevel[STATUS_COMPLETED with Double]
+    
+    /* 3 */ @js.native
+    object STATUS_CONNECTED extends TopLevel[STATUS_CONNECTED with Double]
+    
+    /* 2 */ @js.native
+    object STATUS_CONNECTING extends TopLevel[STATUS_CONNECTING with Double]
+    
+    /* 1 */ @js.native
+    object STATUS_NEW extends TopLevel[STATUS_NEW with Double]
+    
+    /* 0 */ @js.native
+    object STATUS_NULL extends TopLevel[STATUS_NULL with Double]
+    
   }
   
 }

@@ -1,6 +1,8 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateEventConstants.Type
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateEventConstants.Type.CLICK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +20,11 @@ object CreateEventConstants extends js.Object {
     @js.native
     sealed trait CLICK extends Type
     
-    /* "click" */ val CLICK: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.CreateEventConstants.Type.CLICK with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Type with String] = js.native
+    /* "click" */ @js.native
+    object CLICK extends TopLevel[CLICK with String]
+    
   }
   
 }

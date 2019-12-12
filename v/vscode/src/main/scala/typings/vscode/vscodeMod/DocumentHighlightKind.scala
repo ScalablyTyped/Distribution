@@ -1,5 +1,9 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.DocumentHighlightKind.Read
+import typings.vscode.vscodeMod.DocumentHighlightKind.Text
+import typings.vscode.vscodeMod.DocumentHighlightKind.Write
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object DocumentHighlightKind extends js.Object {
   @js.native
   sealed trait Write extends DocumentHighlightKind
   
-  /* 1 */ val Read: typings.vscode.vscodeMod.DocumentHighlightKind.Read with Double = js.native
-  /* 0 */ val Text: typings.vscode.vscodeMod.DocumentHighlightKind.Text with Double = js.native
-  /* 2 */ val Write: typings.vscode.vscodeMod.DocumentHighlightKind.Write with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentHighlightKind with Double] = js.native
+  /* 1 */ @js.native
+  object Read extends TopLevel[Read with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 2 */ @js.native
+  object Write extends TopLevel[Write with Double]
+  
 }
 

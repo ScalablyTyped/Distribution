@@ -1,5 +1,6 @@
 package typings.reactDashLive
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
@@ -59,12 +60,22 @@ object reactDashLiveMod extends js.Object {
     def this(props: LiveProviderProps, context: js.Any) = this()
   }
   
-  val Editor: ComponentClass[EditorProps, ComponentState] = js.native
-  val LiveEditor: ComponentClass[LiveEditorProps, ComponentState] = js.native
-  val LiveError: ComponentClass[DivProps, ComponentState] = js.native
-  val LivePreview: ComponentClass[DivProps, ComponentState] = js.native
-  val LiveProvider: ComponentClass[LiveProviderProps, ComponentState] = js.native
   def withLive[P](wrappedComponent: ComponentType[P]): ComponentClass[P, ComponentState] = js.native
+  @js.native
+  object Editor extends TopLevel[ComponentClass[EditorProps, ComponentState]]
+  
+  @js.native
+  object LiveEditor extends TopLevel[ComponentClass[LiveEditorProps, ComponentState]]
+  
+  @js.native
+  object LiveError extends TopLevel[ComponentClass[DivProps, ComponentState]]
+  
+  @js.native
+  object LivePreview extends TopLevel[ComponentClass[DivProps, ComponentState]]
+  
+  @js.native
+  object LiveProvider extends TopLevel[ComponentClass[LiveProviderProps, ComponentState]]
+  
   // React Element Props
   type DivProps = HTMLProps[HTMLDivElement]
   type EditorProps = (Omit[PreProps, onChange]) with Anon_CodeDisabled

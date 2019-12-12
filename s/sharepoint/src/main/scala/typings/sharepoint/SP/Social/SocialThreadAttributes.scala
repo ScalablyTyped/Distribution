@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialThreadAttributes.canLock
+import typings.sharepoint.SP.Social.SocialThreadAttributes.canReply
+import typings.sharepoint.SP.Social.SocialThreadAttributes.isDigest
+import typings.sharepoint.SP.Social.SocialThreadAttributes.isLocked
+import typings.sharepoint.SP.Social.SocialThreadAttributes.none
+import typings.sharepoint.SP.Social.SocialThreadAttributes.replyLimitReached
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +36,25 @@ object SocialThreadAttributes extends js.Object {
   @js.native
   sealed trait replyLimitReached extends SocialThreadAttributes
   
-  /* 3 */ val canLock: typings.sharepoint.SP.Social.SocialThreadAttributes.canLock with Double = js.native
-  /* 2 */ val canReply: typings.sharepoint.SP.Social.SocialThreadAttributes.canReply with Double = js.native
-  /* 1 */ val isDigest: typings.sharepoint.SP.Social.SocialThreadAttributes.isDigest with Double = js.native
-  /* 4 */ val isLocked: typings.sharepoint.SP.Social.SocialThreadAttributes.isLocked with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.Social.SocialThreadAttributes.none with Double = js.native
-  /* 5 */ val replyLimitReached: typings.sharepoint.SP.Social.SocialThreadAttributes.replyLimitReached with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialThreadAttributes with Double] = js.native
+  /* 3 */ @js.native
+  object canLock extends TopLevel[canLock with Double]
+  
+  /* 2 */ @js.native
+  object canReply extends TopLevel[canReply with Double]
+  
+  /* 1 */ @js.native
+  object isDigest extends TopLevel[isDigest with Double]
+  
+  /* 4 */ @js.native
+  object isLocked extends TopLevel[isLocked with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object replyLimitReached extends TopLevel[replyLimitReached with Double]
+  
 }
 

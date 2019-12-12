@@ -1,5 +1,23 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ObjectFlags.Anonymous
+import typings.typescript.typescriptMod.ObjectFlags.ArrayLiteral
+import typings.typescript.typescriptMod.ObjectFlags.Class
+import typings.typescript.typescriptMod.ObjectFlags.ClassOrInterface
+import typings.typescript.typescriptMod.ObjectFlags.ContainsSpread
+import typings.typescript.typescriptMod.ObjectFlags.EvolvingArray
+import typings.typescript.typescriptMod.ObjectFlags.FreshLiteral
+import typings.typescript.typescriptMod.ObjectFlags.Instantiated
+import typings.typescript.typescriptMod.ObjectFlags.Interface
+import typings.typescript.typescriptMod.ObjectFlags.JSLiteral
+import typings.typescript.typescriptMod.ObjectFlags.Mapped
+import typings.typescript.typescriptMod.ObjectFlags.MarkerType
+import typings.typescript.typescriptMod.ObjectFlags.ObjectLiteral
+import typings.typescript.typescriptMod.ObjectFlags.ObjectLiteralPatternWithComputedProperties
+import typings.typescript.typescriptMod.ObjectFlags.Reference
+import typings.typescript.typescriptMod.ObjectFlags.ReverseMapped
+import typings.typescript.typescriptMod.ObjectFlags.Tuple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,25 +82,62 @@ object ObjectFlags extends js.Object {
   @js.native
   sealed trait Tuple extends ObjectFlags
   
-  /* 16 */ val Anonymous: typings.typescript.typescriptMod.ObjectFlags.Anonymous with Double = js.native
-  /* 65536 */ val ArrayLiteral: typings.typescript.typescriptMod.ObjectFlags.ArrayLiteral with Double = js.native
-  /* 1 */ val Class: typings.typescript.typescriptMod.ObjectFlags.Class with Double = js.native
-  /* 3 */ val ClassOrInterface: typings.typescript.typescriptMod.ObjectFlags.ClassOrInterface with Double = js.native
-  /* 1024 */ val ContainsSpread: typings.typescript.typescriptMod.ObjectFlags.ContainsSpread with Double = js.native
-  /* 256 */ val EvolvingArray: typings.typescript.typescriptMod.ObjectFlags.EvolvingArray with Double = js.native
-  /* 32768 */ val FreshLiteral: typings.typescript.typescriptMod.ObjectFlags.FreshLiteral with Double = js.native
-  /* 64 */ val Instantiated: typings.typescript.typescriptMod.ObjectFlags.Instantiated with Double = js.native
-  /* 2 */ val Interface: typings.typescript.typescriptMod.ObjectFlags.Interface with Double = js.native
-  /* 16384 */ val JSLiteral: typings.typescript.typescriptMod.ObjectFlags.JSLiteral with Double = js.native
-  /* 4096 */ val JsxAttributes: typings.typescript.typescriptMod.ObjectFlags.JsxAttributes with Double = js.native
-  /* 32 */ val Mapped: typings.typescript.typescriptMod.ObjectFlags.Mapped with Double = js.native
-  /* 8192 */ val MarkerType: typings.typescript.typescriptMod.ObjectFlags.MarkerType with Double = js.native
-  /* 128 */ val ObjectLiteral: typings.typescript.typescriptMod.ObjectFlags.ObjectLiteral with Double = js.native
-  /* 512 */ val ObjectLiteralPatternWithComputedProperties: typings.typescript.typescriptMod.ObjectFlags.ObjectLiteralPatternWithComputedProperties with Double = js.native
-  /* 4 */ val Reference: typings.typescript.typescriptMod.ObjectFlags.Reference with Double = js.native
-  /* 2048 */ val ReverseMapped: typings.typescript.typescriptMod.ObjectFlags.ReverseMapped with Double = js.native
-  /* 8 */ val Tuple: typings.typescript.typescriptMod.ObjectFlags.Tuple with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ObjectFlags with Double] = js.native
+  /* 16 */ @js.native
+  object Anonymous extends TopLevel[Anonymous with Double]
+  
+  /* 65536 */ @js.native
+  object ArrayLiteral extends TopLevel[ArrayLiteral with Double]
+  
+  /* 1 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 3 */ @js.native
+  object ClassOrInterface extends TopLevel[ClassOrInterface with Double]
+  
+  /* 1024 */ @js.native
+  object ContainsSpread extends TopLevel[ContainsSpread with Double]
+  
+  /* 256 */ @js.native
+  object EvolvingArray extends TopLevel[EvolvingArray with Double]
+  
+  /* 32768 */ @js.native
+  object FreshLiteral extends TopLevel[FreshLiteral with Double]
+  
+  /* 64 */ @js.native
+  object Instantiated extends TopLevel[Instantiated with Double]
+  
+  /* 2 */ @js.native
+  object Interface extends TopLevel[Interface with Double]
+  
+  /* 16384 */ @js.native
+  object JSLiteral extends TopLevel[JSLiteral with Double]
+  
+  /* 4096 */ @js.native
+  object JsxAttributes
+    extends TopLevel[typings.typescript.typescriptMod.ObjectFlags.JsxAttributes with Double]
+  
+  /* 32 */ @js.native
+  object Mapped extends TopLevel[Mapped with Double]
+  
+  /* 8192 */ @js.native
+  object MarkerType extends TopLevel[MarkerType with Double]
+  
+  /* 128 */ @js.native
+  object ObjectLiteral extends TopLevel[ObjectLiteral with Double]
+  
+  /* 512 */ @js.native
+  object ObjectLiteralPatternWithComputedProperties extends TopLevel[ObjectLiteralPatternWithComputedProperties with Double]
+  
+  /* 4 */ @js.native
+  object Reference extends TopLevel[Reference with Double]
+  
+  /* 2048 */ @js.native
+  object ReverseMapped extends TopLevel[ReverseMapped with Double]
+  
+  /* 8 */ @js.native
+  object Tuple extends TopLevel[Tuple with Double]
+  
 }
 

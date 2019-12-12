@@ -1,5 +1,22 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Aborted
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Blocked
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Error
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Failed
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.InProgress
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Inconclusive
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.MaxValue
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.None
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotApplicable
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotExecuted
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotImpacted
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Passed
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Paused
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Timeout
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Unspecified
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -103,23 +120,55 @@ object TestOutcome extends js.Object {
   @js.native
   sealed trait Warning extends TestOutcome
   
-  /* 6 */ val Aborted: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Aborted with Double = js.native
-  /* 7 */ val Blocked: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Blocked with Double = js.native
-  /* 10 */ val Error: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Error with Double = js.native
-  /* 3 */ val Failed: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Failed with Double = js.native
-  /* 13 */ val InProgress: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.InProgress with Double = js.native
-  /* 4 */ val Inconclusive: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Inconclusive with Double = js.native
-  /* 14 */ val MaxValue: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.MaxValue with Double = js.native
-  /* 1 */ val None: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.None with Double = js.native
-  /* 11 */ val NotApplicable: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotApplicable with Double = js.native
-  /* 8 */ val NotExecuted: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotExecuted with Double = js.native
-  /* 14 */ val NotImpacted: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.NotImpacted with Double = js.native
-  /* 2 */ val Passed: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Passed with Double = js.native
-  /* 12 */ val Paused: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Paused with Double = js.native
-  /* 5 */ val Timeout: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Timeout with Double = js.native
-  /* 0 */ val Unspecified: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Unspecified with Double = js.native
-  /* 9 */ val Warning: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestOutcome.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TestOutcome with Double] = js.native
+  /* 6 */ @js.native
+  object Aborted extends TopLevel[Aborted with Double]
+  
+  /* 7 */ @js.native
+  object Blocked extends TopLevel[Blocked with Double]
+  
+  /* 10 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 3 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 13 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 4 */ @js.native
+  object Inconclusive extends TopLevel[Inconclusive with Double]
+  
+  /* 14 */ @js.native
+  object MaxValue extends TopLevel[MaxValue with Double]
+  
+  /* 1 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 11 */ @js.native
+  object NotApplicable extends TopLevel[NotApplicable with Double]
+  
+  /* 8 */ @js.native
+  object NotExecuted extends TopLevel[NotExecuted with Double]
+  
+  /* 14 */ @js.native
+  object NotImpacted extends TopLevel[NotImpacted with Double]
+  
+  /* 2 */ @js.native
+  object Passed extends TopLevel[Passed with Double]
+  
+  /* 12 */ @js.native
+  object Paused extends TopLevel[Paused with Double]
+  
+  /* 5 */ @js.native
+  object Timeout extends TopLevel[Timeout with Double]
+  
+  /* 0 */ @js.native
+  object Unspecified extends TopLevel[Unspecified with Double]
+  
+  /* 9 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

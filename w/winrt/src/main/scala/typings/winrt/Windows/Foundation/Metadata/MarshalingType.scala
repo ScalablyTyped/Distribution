@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Foundation.Metadata.MarshalingType.agile
+import typings.winrt.Windows.Foundation.Metadata.MarshalingType.invalidMarshaling
+import typings.winrt.Windows.Foundation.Metadata.MarshalingType.none
+import typings.winrt.Windows.Foundation.Metadata.MarshalingType.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object MarshalingType extends js.Object {
   @js.native
   sealed trait standard extends MarshalingType
   
-  /* 1 */ val agile: typings.winrt.Windows.Foundation.Metadata.MarshalingType.agile with Double = js.native
-  /* 3 */ val invalidMarshaling: typings.winrt.Windows.Foundation.Metadata.MarshalingType.invalidMarshaling with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Foundation.Metadata.MarshalingType.none with Double = js.native
-  /* 2 */ val standard: typings.winrt.Windows.Foundation.Metadata.MarshalingType.standard with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MarshalingType with Double] = js.native
+  /* 1 */ @js.native
+  object agile extends TopLevel[agile with Double]
+  
+  /* 3 */ @js.native
+  object invalidMarshaling extends TopLevel[invalidMarshaling with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object standard extends TopLevel[standard with Double]
+  
 }
 

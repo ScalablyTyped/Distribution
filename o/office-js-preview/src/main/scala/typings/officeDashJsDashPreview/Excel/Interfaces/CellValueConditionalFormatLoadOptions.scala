@@ -10,40 +10,26 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.6]
   */
+@js.native
 trait CellValueConditionalFormatLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
     * [Api set: ExcelApi 1.6]
     */
-  var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.undefined
+  var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.native
   /**
     *
     * Represents the Rule object on this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rule: js.UndefOr[Boolean] = js.undefined
-}
-
-object CellValueConditionalFormatLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    format: ConditionalRangeFormatLoadOptions = null,
-    rule: js.UndefOr[Boolean] = js.undefined
-  ): CellValueConditionalFormatLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CellValueConditionalFormatLoadOptions]
-  }
+  var rule: js.UndefOr[Boolean] = js.native
 }
 

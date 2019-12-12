@@ -1,5 +1,13 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CASUAL
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CURSIVE
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SANS_SERIF
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SERIF
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SANS_SERIF
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SERIF
+import typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SMALL_CAPITALS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object TextTrackFontGenericFamily extends js.Object {
   @js.native
   sealed trait SMALL_CAPITALS extends TextTrackFontGenericFamily
   
-  /* "CASUAL" */ val CASUAL: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CASUAL with String = js.native
-  /* "CURSIVE" */ val CURSIVE: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.CURSIVE with String = js.native
-  /* "MONOSPACED_SANS_SERIF" */ val MONOSPACED_SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SANS_SERIF with String = js.native
-  /* "MONOSPACED_SERIF" */ val MONOSPACED_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.MONOSPACED_SERIF with String = js.native
-  /* "SANS_SERIF" */ val SANS_SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SANS_SERIF with String = js.native
-  /* "SERIF" */ val SERIF: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SERIF with String = js.native
-  /* "SMALL_CAPITALS" */ val SMALL_CAPITALS: typings.chrome.chrome.cast.media.TextTrackFontGenericFamily.SMALL_CAPITALS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TextTrackFontGenericFamily with String] = js.native
+  /* "CASUAL" */ @js.native
+  object CASUAL extends TopLevel[CASUAL with String]
+  
+  /* "CURSIVE" */ @js.native
+  object CURSIVE extends TopLevel[CURSIVE with String]
+  
+  /* "MONOSPACED_SANS_SERIF" */ @js.native
+  object MONOSPACED_SANS_SERIF extends TopLevel[MONOSPACED_SANS_SERIF with String]
+  
+  /* "MONOSPACED_SERIF" */ @js.native
+  object MONOSPACED_SERIF extends TopLevel[MONOSPACED_SERIF with String]
+  
+  /* "SANS_SERIF" */ @js.native
+  object SANS_SERIF extends TopLevel[SANS_SERIF with String]
+  
+  /* "SERIF" */ @js.native
+  object SERIF extends TopLevel[SERIF with String]
+  
+  /* "SMALL_CAPITALS" */ @js.native
+  object SMALL_CAPITALS extends TopLevel[SMALL_CAPITALS with String]
+  
 }
 

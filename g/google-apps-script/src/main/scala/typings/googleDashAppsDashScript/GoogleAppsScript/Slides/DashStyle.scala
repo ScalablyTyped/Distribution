@@ -1,5 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH_DOT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DOT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH_DOT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.SOLID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object DashStyle extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends DashStyle
   
-  /* 3 */ val DASH: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH with Double = js.native
-  /* 4 */ val DASH_DOT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DASH_DOT with Double = js.native
-  /* 2 */ val DOT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.DOT with Double = js.native
-  /* 5 */ val LONG_DASH: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH with Double = js.native
-  /* 6 */ val LONG_DASH_DOT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.LONG_DASH_DOT with Double = js.native
-  /* 1 */ val SOLID: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.SOLID with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.DashStyle.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DashStyle with Double] = js.native
+  /* 3 */ @js.native
+  object DASH extends TopLevel[DASH with Double]
+  
+  /* 4 */ @js.native
+  object DASH_DOT extends TopLevel[DASH_DOT with Double]
+  
+  /* 2 */ @js.native
+  object DOT extends TopLevel[DOT with Double]
+  
+  /* 5 */ @js.native
+  object LONG_DASH extends TopLevel[LONG_DASH with Double]
+  
+  /* 6 */ @js.native
+  object LONG_DASH_DOT extends TopLevel[LONG_DASH_DOT with Double]
+  
+  /* 1 */ @js.native
+  object SOLID extends TopLevel[SOLID with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

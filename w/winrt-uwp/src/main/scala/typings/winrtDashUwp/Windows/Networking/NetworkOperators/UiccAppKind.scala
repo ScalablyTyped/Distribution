@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.csim
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.isim
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mf
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mfRuim
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mfSim
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.unknown
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.usim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object UiccAppKind extends js.Object {
   @js.native
   sealed trait usim extends UiccAppKind
   
-  /* 5 */ val csim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.csim with Double = js.native
-  /* 6 */ val isim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.isim with Double = js.native
-  /* 1 */ val mf: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mf with Double = js.native
-  /* 3 */ val mfRuim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mfRuim with Double = js.native
-  /* 2 */ val mfSim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.mfSim with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.unknown with Double = js.native
-  /* 4 */ val usim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.UiccAppKind.usim with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UiccAppKind with Double] = js.native
+  /* 5 */ @js.native
+  object csim extends TopLevel[csim with Double]
+  
+  /* 6 */ @js.native
+  object isim extends TopLevel[isim with Double]
+  
+  /* 1 */ @js.native
+  object mf extends TopLevel[mf with Double]
+  
+  /* 3 */ @js.native
+  object mfRuim extends TopLevel[mfRuim with Double]
+  
+  /* 2 */ @js.native
+  object mfSim extends TopLevel[mfSim with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 4 */ @js.native
+  object usim extends TopLevel[usim with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.NamedItemType.array
+import typings.officeDashJs.Excel.NamedItemType.boolean
+import typings.officeDashJs.Excel.NamedItemType.double
+import typings.officeDashJs.Excel.NamedItemType.error
+import typings.officeDashJs.Excel.NamedItemType.integer
+import typings.officeDashJs.Excel.NamedItemType.range
+import typings.officeDashJs.Excel.NamedItemType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object NamedItemType extends js.Object {
   @js.native
   sealed trait string extends NamedItemType
   
-  /* "Array" */ val array: typings.officeDashJs.Excel.NamedItemType.array with String = js.native
-  /* "Boolean" */ val boolean: typings.officeDashJs.Excel.NamedItemType.boolean with String = js.native
-  /* "Double" */ val double: typings.officeDashJs.Excel.NamedItemType.double with String = js.native
-  /* "Error" */ val error: typings.officeDashJs.Excel.NamedItemType.error with String = js.native
-  /* "Integer" */ val integer: typings.officeDashJs.Excel.NamedItemType.integer with String = js.native
-  /* "Range" */ val range: typings.officeDashJs.Excel.NamedItemType.range with String = js.native
-  /* "String" */ val string: typings.officeDashJs.Excel.NamedItemType.string with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NamedItemType with String] = js.native
+  /* "Array" */ @js.native
+  object array extends TopLevel[array with String]
+  
+  /* "Boolean" */ @js.native
+  object boolean extends TopLevel[boolean with String]
+  
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "Error" */ @js.native
+  object error extends TopLevel[error with String]
+  
+  /* "Integer" */ @js.native
+  object integer extends TopLevel[integer with String]
+  
+  /* "Range" */ @js.native
+  object range extends TopLevel[range with String]
+  
+  /* "String" */ @js.native
+  object string extends TopLevel[string with String]
+  
 }
 

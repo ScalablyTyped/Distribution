@@ -1,5 +1,16 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.PlayerState.ended
+import typings.playerframework.PlayerFramework.PlayerState.ending
+import typings.playerframework.PlayerFramework.PlayerState.failed
+import typings.playerframework.PlayerFramework.PlayerState.loaded
+import typings.playerframework.PlayerFramework.PlayerState.loading
+import typings.playerframework.PlayerFramework.PlayerState.opened
+import typings.playerframework.PlayerFramework.PlayerState.pending
+import typings.playerframework.PlayerFramework.PlayerState.started
+import typings.playerframework.PlayerFramework.PlayerState.starting
+import typings.playerframework.PlayerFramework.PlayerState.unloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,17 +81,37 @@ object PlayerState extends js.Object {
   @js.native
   sealed trait unloaded extends PlayerState
   
-  /* 8 */ val ended: typings.playerframework.PlayerFramework.PlayerState.ended with Double = js.native
-  /* 7 */ val ending: typings.playerframework.PlayerFramework.PlayerState.ending with Double = js.native
-  /* 9 */ val failed: typings.playerframework.PlayerFramework.PlayerState.failed with Double = js.native
-  /* 3 */ val loaded: typings.playerframework.PlayerFramework.PlayerState.loaded with Double = js.native
-  /* 2 */ val loading: typings.playerframework.PlayerFramework.PlayerState.loading with Double = js.native
-  /* 4 */ val opened: typings.playerframework.PlayerFramework.PlayerState.opened with Double = js.native
-  /* 1 */ val pending: typings.playerframework.PlayerFramework.PlayerState.pending with Double = js.native
-  /* 6 */ val started: typings.playerframework.PlayerFramework.PlayerState.started with Double = js.native
-  /* 5 */ val starting: typings.playerframework.PlayerFramework.PlayerState.starting with Double = js.native
-  /* 0 */ val unloaded: typings.playerframework.PlayerFramework.PlayerState.unloaded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlayerState with Double] = js.native
+  /* 8 */ @js.native
+  object ended extends TopLevel[ended with Double]
+  
+  /* 7 */ @js.native
+  object ending extends TopLevel[ending with Double]
+  
+  /* 9 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 3 */ @js.native
+  object loaded extends TopLevel[loaded with Double]
+  
+  /* 2 */ @js.native
+  object loading extends TopLevel[loading with Double]
+  
+  /* 4 */ @js.native
+  object opened extends TopLevel[opened with Double]
+  
+  /* 1 */ @js.native
+  object pending extends TopLevel[pending with Double]
+  
+  /* 6 */ @js.native
+  object started extends TopLevel[started with Double]
+  
+  /* 5 */ @js.native
+  object starting extends TopLevel[starting with Double]
+  
+  /* 0 */ @js.native
+  object unloaded extends TopLevel[unloaded with Double]
+  
 }
 

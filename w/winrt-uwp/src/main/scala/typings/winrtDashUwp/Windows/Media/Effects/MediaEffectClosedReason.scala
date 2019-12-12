@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Effects
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.done
+import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.effectCurrentlyUnloaded
+import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unknownError
+import typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unsupportedEncodingFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MediaEffectClosedReason extends js.Object {
   @js.native
   sealed trait unsupportedEncodingFormat extends MediaEffectClosedReason
   
-  /* 0 */ val done: typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.done with Double = js.native
-  /* 3 */ val effectCurrentlyUnloaded: typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.effectCurrentlyUnloaded with Double = js.native
-  /* 1 */ val unknownError: typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unknownError with Double = js.native
-  /* 2 */ val unsupportedEncodingFormat: typings.winrtDashUwp.Windows.Media.Effects.MediaEffectClosedReason.unsupportedEncodingFormat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaEffectClosedReason with Double] = js.native
+  /* 0 */ @js.native
+  object done extends TopLevel[done with Double]
+  
+  /* 3 */ @js.native
+  object effectCurrentlyUnloaded extends TopLevel[effectCurrentlyUnloaded with Double]
+  
+  /* 1 */ @js.native
+  object unknownError extends TopLevel[unknownError with Double]
+  
+  /* 2 */ @js.native
+  object unsupportedEncodingFormat extends TopLevel[unsupportedEncodingFormat with Double]
+  
 }
 

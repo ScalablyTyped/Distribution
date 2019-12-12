@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.empty
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.headCleaning
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.nearEnd
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.none
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object PosPrinterCartridgeSensors extends js.Object {
   @js.native
   sealed trait removed extends PosPrinterCartridgeSensors
   
-  /* 2 */ val empty: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.empty with Double = js.native
-  /* 3 */ val headCleaning: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.headCleaning with Double = js.native
-  /* 4 */ val nearEnd: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.nearEnd with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.none with Double = js.native
-  /* 1 */ val removed: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterCartridgeSensors.removed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterCartridgeSensors with Double] = js.native
+  /* 2 */ @js.native
+  object empty extends TopLevel[empty with Double]
+  
+  /* 3 */ @js.native
+  object headCleaning extends TopLevel[headCleaning with Double]
+  
+  /* 4 */ @js.native
+  object nearEnd extends TopLevel[nearEnd with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object removed extends TopLevel[removed with Double]
+  
 }
 

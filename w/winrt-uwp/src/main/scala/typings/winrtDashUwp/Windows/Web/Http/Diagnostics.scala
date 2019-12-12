@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Date
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.EventHandler
@@ -12,6 +13,16 @@ import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderR
 import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderRequestSentEventArgs
 import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticProviderResponseReceivedEventArgs
 import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.htmlDownload
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.image
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.link
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.media
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.other
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.parsedElement
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.prefetch
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.script
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.style
+import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.xmlHttpRequest
 import typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticSourceLocation
 import typings.winrtDashUwp.Windows.WinRTEvent
 import typings.winrtDashUwp.winrtDashUwpStrings.requestresponsecompleted
@@ -220,18 +231,38 @@ object Diagnostics extends js.Object {
     @js.native
     sealed trait xmlHttpRequest extends HttpDiagnosticRequestInitiator
     
-    /* 7 */ val htmlDownload: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.htmlDownload with Double = js.native
-    /* 2 */ val image: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.image with Double = js.native
-    /* 3 */ val link: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.link with Double = js.native
-    /* 6 */ val media: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.media with Double = js.native
-    /* 9 */ val other: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.other with Double = js.native
-    /* 0 */ val parsedElement: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.parsedElement with Double = js.native
-    /* 8 */ val prefetch: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.prefetch with Double = js.native
-    /* 1 */ val script: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.script with Double = js.native
-    /* 4 */ val style: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.style with Double = js.native
-    /* 5 */ val xmlHttpRequest: typings.winrtDashUwp.Windows.Web.Http.Diagnostics.HttpDiagnosticRequestInitiator.xmlHttpRequest with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[HttpDiagnosticRequestInitiator with Double] = js.native
+    /* 7 */ @js.native
+    object htmlDownload extends TopLevel[htmlDownload with Double]
+    
+    /* 2 */ @js.native
+    object image extends TopLevel[image with Double]
+    
+    /* 3 */ @js.native
+    object link extends TopLevel[link with Double]
+    
+    /* 6 */ @js.native
+    object media extends TopLevel[media with Double]
+    
+    /* 9 */ @js.native
+    object other extends TopLevel[other with Double]
+    
+    /* 0 */ @js.native
+    object parsedElement extends TopLevel[parsedElement with Double]
+    
+    /* 8 */ @js.native
+    object prefetch extends TopLevel[prefetch with Double]
+    
+    /* 1 */ @js.native
+    object script extends TopLevel[script with Double]
+    
+    /* 4 */ @js.native
+    object style extends TopLevel[style with Double]
+    
+    /* 5 */ @js.native
+    object xmlHttpRequest extends TopLevel[xmlHttpRequest with Double]
+    
   }
   
 }

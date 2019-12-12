@@ -1,5 +1,8 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ModuleResolutionKind.Classic
+import typings.typescript.typescriptMod.ModuleResolutionKind.NodeJs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ModuleResolutionKind extends js.Object {
   @js.native
   sealed trait NodeJs extends ModuleResolutionKind
   
-  /* 1 */ val Classic: typings.typescript.typescriptMod.ModuleResolutionKind.Classic with Double = js.native
-  /* 2 */ val NodeJs: typings.typescript.typescriptMod.ModuleResolutionKind.NodeJs with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ModuleResolutionKind with Double] = js.native
+  /* 1 */ @js.native
+  object Classic extends TopLevel[Classic with Double]
+  
+  /* 2 */ @js.native
+  object NodeJs extends TopLevel[NodeJs with Double]
+  
 }
 

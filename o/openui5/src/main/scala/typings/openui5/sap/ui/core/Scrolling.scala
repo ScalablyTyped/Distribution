@@ -1,5 +1,10 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.Scrolling.Auto
+import typings.openui5.sap.ui.core.Scrolling.Hidden
+import typings.openui5.sap.ui.core.Scrolling.None
+import typings.openui5.sap.ui.core.Scrolling.Scroll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object Scrolling extends js.Object {
   @js.native
   sealed trait Scroll extends Scrolling
   
-  /* 0 */ val Auto: typings.openui5.sap.ui.core.Scrolling.Auto with Double = js.native
-  /* 1 */ val Hidden: typings.openui5.sap.ui.core.Scrolling.Hidden with Double = js.native
-  /* 2 */ val None: typings.openui5.sap.ui.core.Scrolling.None with Double = js.native
-  /* 3 */ val Scroll: typings.openui5.sap.ui.core.Scrolling.Scroll with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Scrolling with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object Hidden extends TopLevel[Hidden with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Scroll extends TopLevel[Scroll with Double]
+  
 }
 

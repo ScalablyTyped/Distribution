@@ -1,5 +1,7 @@
 package typings.ejDotWebDotAll.ej.FileExplorer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.FileExplorer.layoutType.LargeIcons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +24,18 @@ object layoutType extends js.Object {
   @js.native
   sealed trait Tile extends layoutType
   
-  /* 1 */ val Grid: typings.ejDotWebDotAll.ej.FileExplorer.layoutType.Grid with Double = js.native
-  /* 2 */ val LargeIcons: typings.ejDotWebDotAll.ej.FileExplorer.layoutType.LargeIcons with Double = js.native
-  /* 0 */ val Tile: typings.ejDotWebDotAll.ej.FileExplorer.layoutType.Tile with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[layoutType with Double] = js.native
+  /* 1 */ @js.native
+  object Grid
+    extends TopLevel[typings.ejDotWebDotAll.ej.FileExplorer.layoutType.Grid with Double]
+  
+  /* 2 */ @js.native
+  object LargeIcons extends TopLevel[LargeIcons with Double]
+  
+  /* 0 */ @js.native
+  object Tile
+    extends TopLevel[typings.ejDotWebDotAll.ej.FileExplorer.layoutType.Tile with Double]
+  
 }
 

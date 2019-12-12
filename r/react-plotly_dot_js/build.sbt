@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-plotly_dot_js"
-version := "2.2-dt-20191126Z-8ca8b2"
+version := "2.2-dt-20191126Z-8bfc56"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -35,7 +35,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20190212Z-6f69df",
   "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20190212Z-74daf3",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-f488cd",
-  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20191126Z-837070",
+  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20191126Z-b2e676",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

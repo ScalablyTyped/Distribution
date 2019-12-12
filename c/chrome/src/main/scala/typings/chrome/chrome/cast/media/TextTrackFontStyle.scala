@@ -1,5 +1,10 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD
+import typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD_ITALIC
+import typings.chrome.chrome.cast.media.TextTrackFontStyle.ITALIC
+import typings.chrome.chrome.cast.media.TextTrackFontStyle.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TextTrackFontStyle extends js.Object {
   @js.native
   sealed trait NORMAL extends TextTrackFontStyle
   
-  /* "BOLD" */ val BOLD: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD with String = js.native
-  /* "BOLD_ITALIC" */ val BOLD_ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.BOLD_ITALIC with String = js.native
-  /* "ITALIC" */ val ITALIC: typings.chrome.chrome.cast.media.TextTrackFontStyle.ITALIC with String = js.native
-  /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackFontStyle.NORMAL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TextTrackFontStyle with String] = js.native
+  /* "BOLD" */ @js.native
+  object BOLD extends TopLevel[BOLD with String]
+  
+  /* "BOLD_ITALIC" */ @js.native
+  object BOLD_ITALIC extends TopLevel[BOLD_ITALIC with String]
+  
+  /* "ITALIC" */ @js.native
+  object ITALIC extends TopLevel[ITALIC with String]
+  
+  /* "NORMAL" */ @js.native
+  object NORMAL extends TopLevel[NORMAL with String]
+  
 }
 

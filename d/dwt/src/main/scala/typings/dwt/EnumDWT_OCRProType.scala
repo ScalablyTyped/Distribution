@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRProType.OCRDT_File
+import typings.dwt.EnumDWT_OCRProType.OCRDT_Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EnumDWT_OCRProType extends js.Object {
   @js.native
   sealed trait OCRDT_Index extends EnumDWT_OCRProType
   
-  /* 0 */ val OCRDT_File: typings.dwt.EnumDWT_OCRProType.OCRDT_File with Double = js.native
-  /* 1 */ val OCRDT_Index: typings.dwt.EnumDWT_OCRProType.OCRDT_Index with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_OCRProType with Double] = js.native
+  /* 0 */ @js.native
+  object OCRDT_File extends TopLevel[OCRDT_File with Double]
+  
+  /* 1 */ @js.native
+  object OCRDT_Index extends TopLevel[OCRDT_Index with Double]
+  
 }
 

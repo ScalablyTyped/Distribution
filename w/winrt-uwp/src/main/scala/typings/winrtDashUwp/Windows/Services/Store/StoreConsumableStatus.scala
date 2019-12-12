@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.insufficentQuantity
+import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.networkError
+import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.serverError
+import typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object StoreConsumableStatus extends js.Object {
   @js.native
   sealed trait succeeded extends StoreConsumableStatus
   
-  /* 1 */ val insufficentQuantity: typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.insufficentQuantity with Double = js.native
-  /* 2 */ val networkError: typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.networkError with Double = js.native
-  /* 3 */ val serverError: typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.serverError with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.Services.Store.StoreConsumableStatus.succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StoreConsumableStatus with Double] = js.native
+  /* 1 */ @js.native
+  object insufficentQuantity extends TopLevel[insufficentQuantity with Double]
+  
+  /* 2 */ @js.native
+  object networkError extends TopLevel[networkError with Double]
+  
+  /* 3 */ @js.native
+  object serverError extends TopLevel[serverError with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
 }
 

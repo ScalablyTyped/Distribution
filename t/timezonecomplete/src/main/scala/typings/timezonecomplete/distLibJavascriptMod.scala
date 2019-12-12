@@ -1,6 +1,9 @@
 package typings.timezonecomplete
 
+import org.scalablytyped.runtime.TopLevel
 import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
+import typings.timezonecomplete.distLibJavascriptMod.DateFunctions.Get
+import typings.timezonecomplete.distLibJavascriptMod.DateFunctions.GetUTC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +28,14 @@ object distLibJavascriptMod extends js.Object {
     @js.native
     sealed trait GetUTC extends DateFunctions
     
-    /* 0 */ val Get: typings.timezonecomplete.distLibJavascriptMod.DateFunctions.Get with Double = js.native
-    /* 1 */ val GetUTC: typings.timezonecomplete.distLibJavascriptMod.DateFunctions.GetUTC with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DateFunctions with Double] = js.native
+    /* 0 */ @js.native
+    object Get extends TopLevel[Get with Double]
+    
+    /* 1 */ @js.native
+    object GetUTC extends TopLevel[GetUTC with Double]
+    
   }
   
 }

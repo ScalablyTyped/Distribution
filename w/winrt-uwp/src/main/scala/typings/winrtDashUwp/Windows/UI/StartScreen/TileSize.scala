@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.default
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square150x150
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square30x30
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square310x310
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square44x44
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square70x70
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square71x71
+import typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.wide310x150
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object TileSize extends js.Object {
   @js.native
   sealed trait wide310x150 extends TileSize
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.default with Double = js.native
-  /* 3 */ val square150x150: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square150x150 with Double = js.native
-  /* 1 */ val square30x30: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square30x30 with Double = js.native
-  /* 5 */ val square310x310: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square310x310 with Double = js.native
-  /* 7 */ val square44x44: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square44x44 with Double = js.native
-  /* 2 */ val square70x70: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square70x70 with Double = js.native
-  /* 6 */ val square71x71: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.square71x71 with Double = js.native
-  /* 4 */ val wide310x150: typings.winrtDashUwp.Windows.UI.StartScreen.TileSize.wide310x150 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TileSize with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 3 */ @js.native
+  object square150x150 extends TopLevel[square150x150 with Double]
+  
+  /* 1 */ @js.native
+  object square30x30 extends TopLevel[square30x30 with Double]
+  
+  /* 5 */ @js.native
+  object square310x310 extends TopLevel[square310x310 with Double]
+  
+  /* 7 */ @js.native
+  object square44x44 extends TopLevel[square44x44 with Double]
+  
+  /* 2 */ @js.native
+  object square70x70 extends TopLevel[square70x70 with Double]
+  
+  /* 6 */ @js.native
+  object square71x71 extends TopLevel[square71x71 with Double]
+  
+  /* 4 */ @js.native
+  object wide310x150 extends TopLevel[wide310x150 with Double]
+  
 }
 

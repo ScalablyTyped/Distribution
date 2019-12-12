@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.PdfViewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Local
+import typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object PdfService extends js.Object {
   @js.native
   sealed trait Remote extends PdfService
   
-  /* 0 */ val Local: typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Local with Double = js.native
-  /* 1 */ val Remote: typings.ejDotWebDotAll.ej.PdfViewer.PdfService.Remote with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PdfService with Double] = js.native
+  /* 0 */ @js.native
+  object Local extends TopLevel[Local with Double]
+  
+  /* 1 */ @js.native
+  object Remote extends TopLevel[Remote with Double]
+  
 }
 

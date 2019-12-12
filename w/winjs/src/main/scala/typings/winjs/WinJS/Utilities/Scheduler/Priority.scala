@@ -1,5 +1,13 @@
 package typings.winjs.WinJS.Utilities.Scheduler
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.aboveNormal
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.belowNormal
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.high
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.idle
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.max
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.min
+import typings.winjs.WinJS.Utilities.Scheduler.Priority.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,14 +64,28 @@ object Priority extends js.Object {
   @js.native
   sealed trait normal extends Priority
   
-  /* 0 */ val aboveNormal: typings.winjs.WinJS.Utilities.Scheduler.Priority.aboveNormal with Double = js.native
-  /* 1 */ val belowNormal: typings.winjs.WinJS.Utilities.Scheduler.Priority.belowNormal with Double = js.native
-  /* 2 */ val high: typings.winjs.WinJS.Utilities.Scheduler.Priority.high with Double = js.native
-  /* 3 */ val idle: typings.winjs.WinJS.Utilities.Scheduler.Priority.idle with Double = js.native
-  /* 4 */ val max: typings.winjs.WinJS.Utilities.Scheduler.Priority.max with Double = js.native
-  /* 5 */ val min: typings.winjs.WinJS.Utilities.Scheduler.Priority.min with Double = js.native
-  /* 6 */ val normal: typings.winjs.WinJS.Utilities.Scheduler.Priority.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Priority with Double] = js.native
+  /* 0 */ @js.native
+  object aboveNormal extends TopLevel[aboveNormal with Double]
+  
+  /* 1 */ @js.native
+  object belowNormal extends TopLevel[belowNormal with Double]
+  
+  /* 2 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 3 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
+  /* 4 */ @js.native
+  object max extends TopLevel[max with Double]
+  
+  /* 5 */ @js.native
+  object min extends TopLevel[min with Double]
+  
+  /* 6 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

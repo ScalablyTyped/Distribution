@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-mongo"
-version := "3.0-dt-20191028Z-fc8cb8"
+version := "3.0-dt-20191028Z-9f4f81"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
   "org.scalablytyped" %%% "express-session" % "1.15-dt-20191118Z-35c384",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
-  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-55522b",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191115Z-1ba4a0",
+  "org.scalablytyped" %%% "mongodb" % "3.3-dt-20191118Z-f1f7bb",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20191115Z-7f290c",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",

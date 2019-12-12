@@ -1,5 +1,6 @@
 package typings.es6DashPromisify
 
+import org.scalablytyped.runtime.TopLevel
 import typings.es6DashPromisify.es6DashPromisifyMod.Callback
 import typings.es6DashPromisify.es6DashPromisifyMod.CallbackFunction
 import typings.es6DashPromisify.es6DashPromisifyMod.PromiseFunction
@@ -30,11 +31,6 @@ object es6DashPromisifyMod extends js.Object {
     }
     
     /**
-      * The user can supply their own Promise implementation by setting it
-      * here. Otherwise, the global Promise object will be used.
-      */
-    var Promise: PromiseConstructor = js.native
-    /**
       * This symbol can be placed on the function to be promisified to
       * provide names as an array of strings for the values in a success
       * callback.
@@ -44,6 +40,13 @@ object es6DashPromisifyMod extends js.Object {
     def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], _]): js.Function1[/* param1 */ U, js.Promise[T]] = js.native
     def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], _]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = js.native
     def apply[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], _]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = js.native
+    /**
+      * The user can supply their own Promise implementation by setting it
+      * here. Otherwise, the global Promise object will be used.
+      */
+    @js.native
+    object Promise extends TopLevel[PromiseConstructor]
+    
   }
   
   type Callback[T] = js.Function2[/* err */ js.Any, /* arg */ js.UndefOr[T], js.Any]

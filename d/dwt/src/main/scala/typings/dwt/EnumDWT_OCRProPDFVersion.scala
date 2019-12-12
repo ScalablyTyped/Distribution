@@ -1,5 +1,14 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_0
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_1
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_2
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_3
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_4
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_5
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_6
+import typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_7
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object EnumDWT_OCRProPDFVersion extends js.Object {
   @js.native
   sealed trait OCRPPDFV_7 extends EnumDWT_OCRProPDFVersion
   
-  /* "1.0" */ val OCRPPDFV_0: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_0 with String = js.native
-  /* "1.1" */ val OCRPPDFV_1: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_1 with String = js.native
-  /* "1.2" */ val OCRPPDFV_2: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_2 with String = js.native
-  /* "1.3" */ val OCRPPDFV_3: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_3 with String = js.native
-  /* "1.4" */ val OCRPPDFV_4: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_4 with String = js.native
-  /* "1.5" */ val OCRPPDFV_5: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_5 with String = js.native
-  /* "1.6" */ val OCRPPDFV_6: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_6 with String = js.native
-  /* "1.7" */ val OCRPPDFV_7: typings.dwt.EnumDWT_OCRProPDFVersion.OCRPPDFV_7 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EnumDWT_OCRProPDFVersion with String] = js.native
+  /* "1.0" */ @js.native
+  object OCRPPDFV_0 extends TopLevel[OCRPPDFV_0 with String]
+  
+  /* "1.1" */ @js.native
+  object OCRPPDFV_1 extends TopLevel[OCRPPDFV_1 with String]
+  
+  /* "1.2" */ @js.native
+  object OCRPPDFV_2 extends TopLevel[OCRPPDFV_2 with String]
+  
+  /* "1.3" */ @js.native
+  object OCRPPDFV_3 extends TopLevel[OCRPPDFV_3 with String]
+  
+  /* "1.4" */ @js.native
+  object OCRPPDFV_4 extends TopLevel[OCRPPDFV_4 with String]
+  
+  /* "1.5" */ @js.native
+  object OCRPPDFV_5 extends TopLevel[OCRPPDFV_5 with String]
+  
+  /* "1.6" */ @js.native
+  object OCRPPDFV_6 extends TopLevel[OCRPPDFV_6 with String]
+  
+  /* "1.7" */ @js.native
+  object OCRPPDFV_7 extends TopLevel[OCRPPDFV_7 with String]
+  
 }
 

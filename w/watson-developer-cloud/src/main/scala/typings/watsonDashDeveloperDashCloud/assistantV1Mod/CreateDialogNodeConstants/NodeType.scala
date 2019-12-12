@@ -1,5 +1,12 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.EVENT_HANDLER
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FOLDER
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FRAME
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.RESPONSE_CONDITION
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.SLOT
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.STANDARD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +36,25 @@ object NodeType extends js.Object {
   @js.native
   sealed trait STANDARD extends NodeType
   
-  /* "event_handler" */ val EVENT_HANDLER: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.EVENT_HANDLER with String = js.native
-  /* "folder" */ val FOLDER: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FOLDER with String = js.native
-  /* "frame" */ val FRAME: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.FRAME with String = js.native
-  /* "response_condition" */ val RESPONSE_CONDITION: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.RESPONSE_CONDITION with String = js.native
-  /* "slot" */ val SLOT: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.SLOT with String = js.native
-  /* "standard" */ val STANDARD: typings.watsonDashDeveloperDashCloud.assistantV1Mod.CreateDialogNodeConstants.NodeType.STANDARD with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NodeType with String] = js.native
+  /* "event_handler" */ @js.native
+  object EVENT_HANDLER extends TopLevel[EVENT_HANDLER with String]
+  
+  /* "folder" */ @js.native
+  object FOLDER extends TopLevel[FOLDER with String]
+  
+  /* "frame" */ @js.native
+  object FRAME extends TopLevel[FRAME with String]
+  
+  /* "response_condition" */ @js.native
+  object RESPONSE_CONDITION extends TopLevel[RESPONSE_CONDITION with String]
+  
+  /* "slot" */ @js.native
+  object SLOT extends TopLevel[SLOT with String]
+  
+  /* "standard" */ @js.native
+  object STANDARD extends TopLevel[STANDARD with String]
+  
 }
 

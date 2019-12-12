@@ -1,7 +1,11 @@
 package typings.atUirouterCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atUirouterCore.libParamsInterfaceMod.RawParams
 import typings.atUirouterCore.libParamsParamMod.DefType
+import typings.atUirouterCore.libParamsParamMod.DefType.CONFIG
+import typings.atUirouterCore.libParamsParamMod.DefType.PATH
+import typings.atUirouterCore.libParamsParamMod.DefType.SEARCH
 import typings.atUirouterCore.libParamsParamMod.Param
 import typings.atUirouterCore.libParamsParamTypeMod.ParamType
 import typings.atUirouterCore.libStateInterfaceMod.StateDeclaration
@@ -55,11 +59,17 @@ object libParamsParamMod extends js.Object {
     @js.native
     sealed trait SEARCH extends DefType
     
-    /* 2 */ val CONFIG: typings.atUirouterCore.libParamsParamMod.DefType.CONFIG with Double = js.native
-    /* 0 */ val PATH: typings.atUirouterCore.libParamsParamMod.DefType.PATH with Double = js.native
-    /* 1 */ val SEARCH: typings.atUirouterCore.libParamsParamMod.DefType.SEARCH with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[DefType with Double] = js.native
+    /* 2 */ @js.native
+    object CONFIG extends TopLevel[CONFIG with Double]
+    
+    /* 0 */ @js.native
+    object PATH extends TopLevel[PATH with Double]
+    
+    /* 1 */ @js.native
+    object SEARCH extends TopLevel[SEARCH with Double]
+    
   }
   
   /* static members */

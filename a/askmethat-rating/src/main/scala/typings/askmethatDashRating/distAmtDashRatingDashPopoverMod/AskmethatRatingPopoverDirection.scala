@@ -1,5 +1,8 @@
 package typings.askmethatDashRating.distAmtDashRatingDashPopoverMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.bottom
+import typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object AskmethatRatingPopoverDirection extends js.Object {
   @js.native
   sealed trait top extends AskmethatRatingPopoverDirection
   
-  /* 1 */ val bottom: typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.bottom with Double = js.native
-  /* 0 */ val top: typings.askmethatDashRating.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverDirection.top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AskmethatRatingPopoverDirection with Double] = js.native
+  /* 1 */ @js.native
+  object bottom extends TopLevel[bottom with Double]
+  
+  /* 0 */ @js.native
+  object top extends TopLevel[top with Double]
+  
 }
 

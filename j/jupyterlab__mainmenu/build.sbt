@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__mainmenu"
-version := "1.2.1-3d6396"
+version := "1.2.1-dcb419"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-41da8a",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-9071b4",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-e7a73f",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-57570a",
   "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-852fa2",
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-815e08",
   "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-9147b0",
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-075c8c",
-  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-ca1d2a",
+  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-6381db",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")

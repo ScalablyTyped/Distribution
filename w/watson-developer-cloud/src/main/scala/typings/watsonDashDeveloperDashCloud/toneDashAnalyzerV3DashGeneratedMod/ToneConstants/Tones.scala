@@ -1,5 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.EMOTION
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.LANGUAGE
+import typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.SOCIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,10 +24,16 @@ object Tones extends js.Object {
   @js.native
   sealed trait SOCIAL extends Tones
   
-  /* "emotion" */ val EMOTION: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.EMOTION with String = js.native
-  /* "language" */ val LANGUAGE: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.LANGUAGE with String = js.native
-  /* "social" */ val SOCIAL: typings.watsonDashDeveloperDashCloud.toneDashAnalyzerV3DashGeneratedMod.ToneConstants.Tones.SOCIAL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Tones with String] = js.native
+  /* "emotion" */ @js.native
+  object EMOTION extends TopLevel[EMOTION with String]
+  
+  /* "language" */ @js.native
+  object LANGUAGE extends TopLevel[LANGUAGE with String]
+  
+  /* "social" */ @js.native
+  object SOCIAL extends TopLevel[SOCIAL with String]
+  
 }
 

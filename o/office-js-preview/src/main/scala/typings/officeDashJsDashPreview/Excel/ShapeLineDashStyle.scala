@@ -1,5 +1,18 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dash
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDotDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDash
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDotDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.roundDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.solid
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.squareDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDash
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDashDot
+import typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,19 +65,43 @@ object ShapeLineDashStyle extends js.Object {
   @js.native
   sealed trait systemDot extends ShapeLineDashStyle
   
-  /* "Dash" */ val dash: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dash with String = js.native
-  /* "DashDot" */ val dashDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDot with String = js.native
-  /* "DashDotDot" */ val dashDotDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.dashDotDot with String = js.native
-  /* "LongDash" */ val longDash: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDash with String = js.native
-  /* "LongDashDot" */ val longDashDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDot with String = js.native
-  /* "LongDashDotDot" */ val longDashDotDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.longDashDotDot with String = js.native
-  /* "RoundDot" */ val roundDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.roundDot with String = js.native
-  /* "Solid" */ val solid: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.solid with String = js.native
-  /* "SquareDot" */ val squareDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.squareDot with String = js.native
-  /* "SystemDash" */ val systemDash: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDash with String = js.native
-  /* "SystemDashDot" */ val systemDashDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDashDot with String = js.native
-  /* "SystemDot" */ val systemDot: typings.officeDashJsDashPreview.Excel.ShapeLineDashStyle.systemDot with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeLineDashStyle with String] = js.native
+  /* "Dash" */ @js.native
+  object dash extends TopLevel[dash with String]
+  
+  /* "DashDot" */ @js.native
+  object dashDot extends TopLevel[dashDot with String]
+  
+  /* "DashDotDot" */ @js.native
+  object dashDotDot extends TopLevel[dashDotDot with String]
+  
+  /* "LongDash" */ @js.native
+  object longDash extends TopLevel[longDash with String]
+  
+  /* "LongDashDot" */ @js.native
+  object longDashDot extends TopLevel[longDashDot with String]
+  
+  /* "LongDashDotDot" */ @js.native
+  object longDashDotDot extends TopLevel[longDashDotDot with String]
+  
+  /* "RoundDot" */ @js.native
+  object roundDot extends TopLevel[roundDot with String]
+  
+  /* "Solid" */ @js.native
+  object solid extends TopLevel[solid with String]
+  
+  /* "SquareDot" */ @js.native
+  object squareDot extends TopLevel[squareDot with String]
+  
+  /* "SystemDash" */ @js.native
+  object systemDash extends TopLevel[systemDash with String]
+  
+  /* "SystemDashDot" */ @js.native
+  object systemDashDot extends TopLevel[systemDashDot with String]
+  
+  /* "SystemDot" */ @js.native
+  object systemDot extends TopLevel[systemDot with String]
+  
 }
 

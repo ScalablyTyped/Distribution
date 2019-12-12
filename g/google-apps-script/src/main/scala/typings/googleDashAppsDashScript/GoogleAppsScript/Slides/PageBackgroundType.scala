@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.PICTURE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.SOLID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object PageBackgroundType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends PageBackgroundType
   
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.NONE with Double = js.native
-  /* 3 */ val PICTURE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.PICTURE with Double = js.native
-  /* 2 */ val SOLID: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.SOLID with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageBackgroundType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PageBackgroundType with Double] = js.native
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 3 */ @js.native
+  object PICTURE extends TopLevel[PICTURE with Double]
+  
+  /* 2 */ @js.native
+  object SOLID extends TopLevel[SOLID with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

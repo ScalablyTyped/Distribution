@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ChartTextHorizontalAlignment.center
+import typings.officeDashJs.Excel.ChartTextHorizontalAlignment.distributed
+import typings.officeDashJs.Excel.ChartTextHorizontalAlignment.justify
+import typings.officeDashJs.Excel.ChartTextHorizontalAlignment.left
+import typings.officeDashJs.Excel.ChartTextHorizontalAlignment.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ChartTextHorizontalAlignment extends js.Object {
   @js.native
   sealed trait right extends ChartTextHorizontalAlignment
   
-  /* "Center" */ val center: typings.officeDashJs.Excel.ChartTextHorizontalAlignment.center with String = js.native
-  /* "Distributed" */ val distributed: typings.officeDashJs.Excel.ChartTextHorizontalAlignment.distributed with String = js.native
-  /* "Justify" */ val justify: typings.officeDashJs.Excel.ChartTextHorizontalAlignment.justify with String = js.native
-  /* "Left" */ val left: typings.officeDashJs.Excel.ChartTextHorizontalAlignment.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJs.Excel.ChartTextHorizontalAlignment.right with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartTextHorizontalAlignment with String] = js.native
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "Distributed" */ @js.native
+  object distributed extends TopLevel[distributed with String]
+  
+  /* "Justify" */ @js.native
+  object justify extends TopLevel[justify with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.none
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCurrentTopOfForm
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCutter
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toNextTopOfForm
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toTakeUp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object PosPrinterMarkFeedCapabilities extends js.Object {
   @js.native
   sealed trait toTakeUp extends PosPrinterMarkFeedCapabilities
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.none with Double = js.native
-  /* 3 */ val toCurrentTopOfForm: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCurrentTopOfForm with Double = js.native
-  /* 2 */ val toCutter: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toCutter with Double = js.native
-  /* 4 */ val toNextTopOfForm: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toNextTopOfForm with Double = js.native
-  /* 1 */ val toTakeUp: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterMarkFeedCapabilities.toTakeUp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterMarkFeedCapabilities with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object toCurrentTopOfForm extends TopLevel[toCurrentTopOfForm with Double]
+  
+  /* 2 */ @js.native
+  object toCutter extends TopLevel[toCutter with Double]
+  
+  /* 4 */ @js.native
+  object toNextTopOfForm extends TopLevel[toNextTopOfForm with Double]
+  
+  /* 1 */ @js.native
+  object toTakeUp extends TopLevel[toTakeUp with Double]
+  
 }
 

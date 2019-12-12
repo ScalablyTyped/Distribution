@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.applicationHidden
+import typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.timedOut
+import typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ToastDismissalReason extends js.Object {
   @js.native
   sealed trait userCanceled extends ToastDismissalReason
   
-  /* 1 */ val applicationHidden: typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.applicationHidden with Double = js.native
-  /* 2 */ val timedOut: typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.timedOut with Double = js.native
-  /* 0 */ val userCanceled: typings.winrtDashUwp.Windows.UI.Notifications.ToastDismissalReason.userCanceled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ToastDismissalReason with Double] = js.native
+  /* 1 */ @js.native
+  object applicationHidden extends TopLevel[applicationHidden with Double]
+  
+  /* 2 */ @js.native
+  object timedOut extends TopLevel[timedOut with Double]
+  
+  /* 0 */ @js.native
+  object userCanceled extends TopLevel[userCanceled with Double]
+  
 }
 

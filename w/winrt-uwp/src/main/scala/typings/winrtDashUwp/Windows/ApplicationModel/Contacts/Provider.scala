@@ -1,6 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.added
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.alreadyAdded
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.unavailable
 import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
 import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
@@ -88,11 +92,17 @@ object Provider extends js.Object {
     @js.native
     sealed trait unavailable extends AddContactResult
     
-    /* 0 */ val added: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.added with Double = js.native
-    /* 1 */ val alreadyAdded: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.alreadyAdded with Double = js.native
-    /* 2 */ val unavailable: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.Provider.AddContactResult.unavailable with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[AddContactResult with Double] = js.native
+    /* 0 */ @js.native
+    object added extends TopLevel[added with Double]
+    
+    /* 1 */ @js.native
+    object alreadyAdded extends TopLevel[alreadyAdded with Double]
+    
+    /* 2 */ @js.native
+    object unavailable extends TopLevel[unavailable with Double]
+    
   }
   
 }

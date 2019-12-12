@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Disabled
+import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Enabled
+import typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ContributedFeatureEnabledValue extends js.Object {
   @js.native
   sealed trait Undefined extends ContributedFeatureEnabledValue
   
-  /* 0 */ val Disabled: typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Disabled with Double = js.native
-  /* 1 */ val Enabled: typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Enabled with Double = js.native
-  /* -1 */ val Undefined: typings.vsoDashNodeDashApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContributedFeatureEnabledValue with Double] = js.native
+  /* 0 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 1 */ @js.native
+  object Enabled extends TopLevel[Enabled with Double]
+  
+  /* -1 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

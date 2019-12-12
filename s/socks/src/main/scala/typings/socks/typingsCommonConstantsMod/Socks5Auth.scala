@@ -1,5 +1,9 @@
 package typings.socks.typingsCommonConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.socks.typingsCommonConstantsMod.Socks5Auth.GSSApi
+import typings.socks.typingsCommonConstantsMod.Socks5Auth.NoAuth
+import typings.socks.typingsCommonConstantsMod.Socks5Auth.UserPass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Socks5Auth extends js.Object {
   @js.native
   sealed trait UserPass extends Socks5Auth
   
-  /* 1 */ val GSSApi: typings.socks.typingsCommonConstantsMod.Socks5Auth.GSSApi with Double = js.native
-  /* 0 */ val NoAuth: typings.socks.typingsCommonConstantsMod.Socks5Auth.NoAuth with Double = js.native
-  /* 2 */ val UserPass: typings.socks.typingsCommonConstantsMod.Socks5Auth.UserPass with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Socks5Auth with Double] = js.native
+  /* 1 */ @js.native
+  object GSSApi extends TopLevel[GSSApi with Double]
+  
+  /* 0 */ @js.native
+  object NoAuth extends TopLevel[NoAuth with Double]
+  
+  /* 2 */ @js.native
+  object UserPass extends TopLevel[UserPass with Double]
+  
 }
 

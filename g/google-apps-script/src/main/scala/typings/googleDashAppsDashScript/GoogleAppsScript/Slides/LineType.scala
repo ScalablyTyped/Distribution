@@ -1,5 +1,17 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_3
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_4
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_3
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_4
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_CONNECTOR_1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_LINE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,18 +62,40 @@ object LineType extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends LineType
   
-  /* 2 */ val BENT_CONNECTOR_2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_2 with Double = js.native
-  /* 3 */ val BENT_CONNECTOR_3: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_3 with Double = js.native
-  /* 4 */ val BENT_CONNECTOR_4: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_4 with Double = js.native
-  /* 5 */ val BENT_CONNECTOR_5: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.BENT_CONNECTOR_5 with Double = js.native
-  /* 6 */ val CURVED_CONNECTOR_2: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_2 with Double = js.native
-  /* 7 */ val CURVED_CONNECTOR_3: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_3 with Double = js.native
-  /* 8 */ val CURVED_CONNECTOR_4: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_4 with Double = js.native
-  /* 9 */ val CURVED_CONNECTOR_5: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.CURVED_CONNECTOR_5 with Double = js.native
-  /* 1 */ val STRAIGHT_CONNECTOR_1: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_CONNECTOR_1 with Double = js.native
-  /* 10 */ val STRAIGHT_LINE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.STRAIGHT_LINE with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.LineType.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LineType with Double] = js.native
+  /* 2 */ @js.native
+  object BENT_CONNECTOR_2 extends TopLevel[BENT_CONNECTOR_2 with Double]
+  
+  /* 3 */ @js.native
+  object BENT_CONNECTOR_3 extends TopLevel[BENT_CONNECTOR_3 with Double]
+  
+  /* 4 */ @js.native
+  object BENT_CONNECTOR_4 extends TopLevel[BENT_CONNECTOR_4 with Double]
+  
+  /* 5 */ @js.native
+  object BENT_CONNECTOR_5 extends TopLevel[BENT_CONNECTOR_5 with Double]
+  
+  /* 6 */ @js.native
+  object CURVED_CONNECTOR_2 extends TopLevel[CURVED_CONNECTOR_2 with Double]
+  
+  /* 7 */ @js.native
+  object CURVED_CONNECTOR_3 extends TopLevel[CURVED_CONNECTOR_3 with Double]
+  
+  /* 8 */ @js.native
+  object CURVED_CONNECTOR_4 extends TopLevel[CURVED_CONNECTOR_4 with Double]
+  
+  /* 9 */ @js.native
+  object CURVED_CONNECTOR_5 extends TopLevel[CURVED_CONNECTOR_5 with Double]
+  
+  /* 1 */ @js.native
+  object STRAIGHT_CONNECTOR_1 extends TopLevel[STRAIGHT_CONNECTOR_1 with Double]
+  
+  /* 10 */ @js.native
+  object STRAIGHT_LINE extends TopLevel[STRAIGHT_LINE with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

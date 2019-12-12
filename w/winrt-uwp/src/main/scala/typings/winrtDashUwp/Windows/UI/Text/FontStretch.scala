@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.condensed
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.expanded
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraCondensed
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraExpanded
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.normal
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiCondensed
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiExpanded
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraCondensed
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraExpanded
+import typings.winrtDashUwp.Windows.UI.Text.FontStretch.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object FontStretch extends js.Object {
   @js.native
   sealed trait undefined extends FontStretch
   
-  /* 3 */ val condensed: typings.winrtDashUwp.Windows.UI.Text.FontStretch.condensed with Double = js.native
-  /* 7 */ val expanded: typings.winrtDashUwp.Windows.UI.Text.FontStretch.expanded with Double = js.native
-  /* 2 */ val extraCondensed: typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraCondensed with Double = js.native
-  /* 8 */ val extraExpanded: typings.winrtDashUwp.Windows.UI.Text.FontStretch.extraExpanded with Double = js.native
-  /* 5 */ val normal: typings.winrtDashUwp.Windows.UI.Text.FontStretch.normal with Double = js.native
-  /* 4 */ val semiCondensed: typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiCondensed with Double = js.native
-  /* 6 */ val semiExpanded: typings.winrtDashUwp.Windows.UI.Text.FontStretch.semiExpanded with Double = js.native
-  /* 1 */ val ultraCondensed: typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraCondensed with Double = js.native
-  /* 9 */ val ultraExpanded: typings.winrtDashUwp.Windows.UI.Text.FontStretch.ultraExpanded with Double = js.native
-  /* 0 */ val undefined: typings.winrtDashUwp.Windows.UI.Text.FontStretch.undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FontStretch with Double] = js.native
+  /* 3 */ @js.native
+  object condensed extends TopLevel[condensed with Double]
+  
+  /* 7 */ @js.native
+  object expanded extends TopLevel[expanded with Double]
+  
+  /* 2 */ @js.native
+  object extraCondensed extends TopLevel[extraCondensed with Double]
+  
+  /* 8 */ @js.native
+  object extraExpanded extends TopLevel[extraExpanded with Double]
+  
+  /* 5 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 4 */ @js.native
+  object semiCondensed extends TopLevel[semiCondensed with Double]
+  
+  /* 6 */ @js.native
+  object semiExpanded extends TopLevel[semiExpanded with Double]
+  
+  /* 1 */ @js.native
+  object ultraCondensed extends TopLevel[ultraCondensed with Double]
+  
+  /* 9 */ @js.native
+  object ultraExpanded extends TopLevel[ultraExpanded with Double]
+  
+  /* 0 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.FrameAttribute.Anchors
+import typings.expo.buildARMod.FrameAttribute.RawFeaturePoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +25,21 @@ object FrameAttribute extends js.Object {
   @js.native
   sealed trait RawFeaturePoints extends FrameAttribute
   
-  /* "anchors" */ val Anchors: typings.expo.buildARMod.FrameAttribute.Anchors with String = js.native
-  /* "capturedDepthData" */ val CapturedDepthData: typings.expo.buildARMod.FrameAttribute.CapturedDepthData with String = js.native
-  /* "lightEstimation" */ val LightEstimation: typings.expo.buildARMod.FrameAttribute.LightEstimation with String = js.native
-  /* "rawFeaturePoints" */ val RawFeaturePoints: typings.expo.buildARMod.FrameAttribute.RawFeaturePoints with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FrameAttribute with String] = js.native
+  /* "anchors" */ @js.native
+  object Anchors extends TopLevel[Anchors with String]
+  
+  /* "capturedDepthData" */ @js.native
+  object CapturedDepthData
+    extends TopLevel[typings.expo.buildARMod.FrameAttribute.CapturedDepthData with String]
+  
+  /* "lightEstimation" */ @js.native
+  object LightEstimation
+    extends TopLevel[typings.expo.buildARMod.FrameAttribute.LightEstimation with String]
+  
+  /* "rawFeaturePoints" */ @js.native
+  object RawFeaturePoints extends TopLevel[RawFeaturePoints with String]
+  
 }
 

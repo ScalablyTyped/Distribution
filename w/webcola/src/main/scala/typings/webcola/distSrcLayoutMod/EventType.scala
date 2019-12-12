@@ -1,5 +1,9 @@
 package typings.webcola.distSrcLayoutMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.webcola.distSrcLayoutMod.EventType.end
+import typings.webcola.distSrcLayoutMod.EventType.start
+import typings.webcola.distSrcLayoutMod.EventType.tick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EventType extends js.Object {
   @js.native
   sealed trait tick extends EventType
   
-  /* 2 */ val end: typings.webcola.distSrcLayoutMod.EventType.end with Double = js.native
-  /* 0 */ val start: typings.webcola.distSrcLayoutMod.EventType.start with Double = js.native
-  /* 1 */ val tick: typings.webcola.distSrcLayoutMod.EventType.tick with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+  /* 2 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 0 */ @js.native
+  object start extends TopLevel[start with Double]
+  
+  /* 1 */ @js.native
+  object tick extends TopLevel[tick with Double]
+  
 }
 

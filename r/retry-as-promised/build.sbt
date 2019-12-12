@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "retry-as-promised"
-version := "2.3-dt-20190524Z-4ad941"
+version := "2.3-dt-20190524Z-8bb741"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

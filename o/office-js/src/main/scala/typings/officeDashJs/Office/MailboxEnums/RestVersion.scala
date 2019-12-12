@@ -1,5 +1,9 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.RestVersion.Beta
+import typings.officeDashJs.Office.MailboxEnums.RestVersion.v1_0
+import typings.officeDashJs.Office.MailboxEnums.RestVersion.v2_0
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object RestVersion extends js.Object {
   @js.native
   sealed trait v2_0 extends RestVersion
   
-  /* "beta" */ val Beta: typings.officeDashJs.Office.MailboxEnums.RestVersion.Beta with String = js.native
-  /* "v1.0" */ val v1_0: typings.officeDashJs.Office.MailboxEnums.RestVersion.v1_0 with String = js.native
-  /* "v2.0" */ val v2_0: typings.officeDashJs.Office.MailboxEnums.RestVersion.v2_0 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RestVersion with String] = js.native
+  /* "beta" */ @js.native
+  object Beta extends TopLevel[Beta with String]
+  
+  /* "v1.0" */ @js.native
+  object v1_0 extends TopLevel[v1_0 with String]
+  
+  /* "v2.0" */ @js.native
+  object v2_0 extends TopLevel[v2_0 with String]
+  
 }
 

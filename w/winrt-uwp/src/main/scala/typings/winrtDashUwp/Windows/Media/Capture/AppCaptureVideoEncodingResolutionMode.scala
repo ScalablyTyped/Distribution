@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.custom
+import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.high
+import typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AppCaptureVideoEncodingResolutionMode extends js.Object {
   @js.native
   sealed trait standard extends AppCaptureVideoEncodingResolutionMode
   
-  /* 0 */ val custom: typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.custom with Double = js.native
-  /* 1 */ val high: typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.high with Double = js.native
-  /* 2 */ val standard: typings.winrtDashUwp.Windows.Media.Capture.AppCaptureVideoEncodingResolutionMode.standard with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppCaptureVideoEncodingResolutionMode with Double] = js.native
+  /* 0 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 1 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 2 */ @js.native
+  object standard extends TopLevel[standard with Double]
+  
 }
 

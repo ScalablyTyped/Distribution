@@ -1,5 +1,13 @@
 package typings.officeDashJsDashPreview.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.completed
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.disabled
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.normal
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.outlookTask
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.taskNotSyncedYet
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.taskRemoved
+import typings.officeDashJsDashPreview.OneNote.NoteTagStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object NoteTagStatus extends js.Object {
   @js.native
   sealed trait unknown extends NoteTagStatus
   
-  /* "Completed" */ val completed: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.completed with String = js.native
-  /* "Disabled" */ val disabled: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.disabled with String = js.native
-  /* "Normal" */ val normal: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.normal with String = js.native
-  /* "OutlookTask" */ val outlookTask: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.outlookTask with String = js.native
-  /* "TaskNotSyncedYet" */ val taskNotSyncedYet: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.taskNotSyncedYet with String = js.native
-  /* "TaskRemoved" */ val taskRemoved: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.taskRemoved with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJsDashPreview.OneNote.NoteTagStatus.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NoteTagStatus with String] = js.native
+  /* "Completed" */ @js.native
+  object completed extends TopLevel[completed with String]
+  
+  /* "Disabled" */ @js.native
+  object disabled extends TopLevel[disabled with String]
+  
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "OutlookTask" */ @js.native
+  object outlookTask extends TopLevel[outlookTask with String]
+  
+  /* "TaskNotSyncedYet" */ @js.native
+  object taskNotSyncedYet extends TopLevel[taskNotSyncedYet with String]
+  
+  /* "TaskRemoved" */ @js.native
+  object taskRemoved extends TopLevel[taskRemoved with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

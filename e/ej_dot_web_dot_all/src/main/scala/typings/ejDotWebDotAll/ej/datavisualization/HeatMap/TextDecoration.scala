@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.LineThrough
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.None
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Overline
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Underline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TextDecoration extends js.Object {
   @js.native
   sealed trait Underline extends TextDecoration
   
-  /* 2 */ val LineThrough: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.LineThrough with Double = js.native
-  /* 3 */ val None: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.None with Double = js.native
-  /* 1 */ val Overline: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Overline with Double = js.native
-  /* 0 */ val Underline: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.TextDecoration.Underline with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextDecoration with Double] = js.native
+  /* 2 */ @js.native
+  object LineThrough extends TopLevel[LineThrough with Double]
+  
+  /* 3 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Overline extends TopLevel[Overline with Double]
+  
+  /* 0 */ @js.native
+  object Underline extends TopLevel[Underline with Double]
+  
 }
 

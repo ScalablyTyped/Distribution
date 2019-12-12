@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pouchdb-browser"
-version := "6.1-dt-20190212Z-97b5b8"
+version := "6.1-dt-20190212Z-ecfe45"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-ca3bb7",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20191111Z-9309b1",
-  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-a694c1",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20191111Z-dda166",
+  "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-8b6ba8",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

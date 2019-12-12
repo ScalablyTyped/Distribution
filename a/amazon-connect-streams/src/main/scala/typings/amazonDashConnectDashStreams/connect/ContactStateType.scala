@@ -1,5 +1,14 @@
 package typings.amazonDashConnectDashStreams.connect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTED
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTING
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.ENDED
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.ERROR
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.INCOMING
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.INIT
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.MISSED
+import typings.amazonDashConnectDashStreams.connect.ContactStateType.PENDING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object ContactStateType extends js.Object {
   @js.native
   sealed trait PENDING extends ContactStateType
   
-  /* "connected" */ val CONNECTED: typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTED with String = js.native
-  /* "connecting" */ val CONNECTING: typings.amazonDashConnectDashStreams.connect.ContactStateType.CONNECTING with String = js.native
-  /* "ended" */ val ENDED: typings.amazonDashConnectDashStreams.connect.ContactStateType.ENDED with String = js.native
-  /* "error" */ val ERROR: typings.amazonDashConnectDashStreams.connect.ContactStateType.ERROR with String = js.native
-  /* "incoming" */ val INCOMING: typings.amazonDashConnectDashStreams.connect.ContactStateType.INCOMING with String = js.native
-  /* "init" */ val INIT: typings.amazonDashConnectDashStreams.connect.ContactStateType.INIT with String = js.native
-  /* "missed" */ val MISSED: typings.amazonDashConnectDashStreams.connect.ContactStateType.MISSED with String = js.native
-  /* "pending" */ val PENDING: typings.amazonDashConnectDashStreams.connect.ContactStateType.PENDING with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ContactStateType with String] = js.native
+  /* "connected" */ @js.native
+  object CONNECTED extends TopLevel[CONNECTED with String]
+  
+  /* "connecting" */ @js.native
+  object CONNECTING extends TopLevel[CONNECTING with String]
+  
+  /* "ended" */ @js.native
+  object ENDED extends TopLevel[ENDED with String]
+  
+  /* "error" */ @js.native
+  object ERROR extends TopLevel[ERROR with String]
+  
+  /* "incoming" */ @js.native
+  object INCOMING extends TopLevel[INCOMING with String]
+  
+  /* "init" */ @js.native
+  object INIT extends TopLevel[INIT with String]
+  
+  /* "missed" */ @js.native
+  object MISSED extends TopLevel[MISSED with String]
+  
+  /* "pending" */ @js.native
+  object PENDING extends TopLevel[PENDING with String]
+  
 }
 

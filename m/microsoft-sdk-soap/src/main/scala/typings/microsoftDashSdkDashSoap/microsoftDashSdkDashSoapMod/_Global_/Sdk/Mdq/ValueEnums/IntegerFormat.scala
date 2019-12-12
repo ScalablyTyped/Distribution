@@ -1,5 +1,11 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Duration
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Language
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Locale
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.None
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.TimeZone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,27 @@ object IntegerFormat extends js.Object {
   @js.native
   sealed trait TimeZone extends IntegerFormat
   
-  /* 0 */ val Duration: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Duration with scala.Double = js.native
-  /* 1 */ val Language: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Language with scala.Double = js.native
-  /* 2 */ val Locale: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.Locale with scala.Double = js.native
-  /* 3 */ val None: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.None with scala.Double = js.native
-  /* 4 */ val TimeZone: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.IntegerFormat.TimeZone with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[IntegerFormat with scala.Double] = js.native
+  /* 0 */ @js.native
+  object Duration
+    extends TopLevel[Duration with scala.Double]
+  
+  /* 1 */ @js.native
+  object Language
+    extends TopLevel[Language with scala.Double]
+  
+  /* 2 */ @js.native
+  object Locale
+    extends TopLevel[Locale with scala.Double]
+  
+  /* 3 */ @js.native
+  object None
+    extends TopLevel[None with scala.Double]
+  
+  /* 4 */ @js.native
+  object TimeZone
+    extends TopLevel[TimeZone with scala.Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Csv
+import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Excel
+import typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Pdf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ExportType extends js.Object {
   @js.native
   sealed trait Pdf extends ExportType
   
-  /* 1 */ val Csv: typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Csv with Double = js.native
-  /* 0 */ val Excel: typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Excel with Double = js.native
-  /* 2 */ val Pdf: typings.ejDotWebDotAll.ej.Spreadsheet.ExportType.Pdf with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExportType with Double] = js.native
+  /* 1 */ @js.native
+  object Csv extends TopLevel[Csv with Double]
+  
+  /* 0 */ @js.native
+  object Excel extends TopLevel[Excel with Double]
+  
+  /* 2 */ @js.native
+  object Pdf extends TopLevel[Pdf with Double]
+  
 }
 

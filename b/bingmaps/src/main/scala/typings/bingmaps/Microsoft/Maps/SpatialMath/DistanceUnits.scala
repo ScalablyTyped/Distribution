@@ -1,5 +1,12 @@
 package typings.bingmaps.Microsoft.Maps.SpatialMath
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Feet
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Kilometers
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Meters
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Miles
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.NauticalMiles
+import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Yards
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object DistanceUnits extends js.Object {
   @js.native
   sealed trait Yards extends DistanceUnits
   
-  /* 3 */ val Feet: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Feet with Double = js.native
-  /* 1 */ val Kilometers: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Kilometers with Double = js.native
-  /* 0 */ val Meters: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Meters with Double = js.native
-  /* 2 */ val Miles: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Miles with Double = js.native
-  /* 5 */ val NauticalMiles: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.NauticalMiles with Double = js.native
-  /* 4 */ val Yards: typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits.Yards with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DistanceUnits with Double] = js.native
+  /* 3 */ @js.native
+  object Feet extends TopLevel[Feet with Double]
+  
+  /* 1 */ @js.native
+  object Kilometers extends TopLevel[Kilometers with Double]
+  
+  /* 0 */ @js.native
+  object Meters extends TopLevel[Meters with Double]
+  
+  /* 2 */ @js.native
+  object Miles extends TopLevel[Miles with Double]
+  
+  /* 5 */ @js.native
+  object NauticalMiles extends TopLevel[NauticalMiles with Double]
+  
+  /* 4 */ @js.native
+  object Yards extends TopLevel[Yards with Double]
+  
 }
 

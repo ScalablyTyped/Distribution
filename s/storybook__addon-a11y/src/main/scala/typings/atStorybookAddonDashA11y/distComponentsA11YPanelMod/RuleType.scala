@@ -1,5 +1,9 @@
 package typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.INCOMPLETION
+import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.PASS
+import typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.VIOLATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RuleType extends js.Object {
   @js.native
   sealed trait VIOLATION extends RuleType
   
-  /* 2 */ val INCOMPLETION: typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.INCOMPLETION with Double = js.native
-  /* 1 */ val PASS: typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.PASS with Double = js.native
-  /* 0 */ val VIOLATION: typings.atStorybookAddonDashA11y.distComponentsA11YPanelMod.RuleType.VIOLATION with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RuleType with Double] = js.native
+  /* 2 */ @js.native
+  object INCOMPLETION extends TopLevel[INCOMPLETION with Double]
+  
+  /* 1 */ @js.native
+  object PASS extends TopLevel[PASS with Double]
+  
+  /* 0 */ @js.native
+  object VIOLATION extends TopLevel[VIOLATION with Double]
+  
 }
 

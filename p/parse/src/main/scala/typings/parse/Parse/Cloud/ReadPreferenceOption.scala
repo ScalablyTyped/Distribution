@@ -1,5 +1,11 @@
 package typings.parse.Parse.Cloud
 
+import org.scalablytyped.runtime.TopLevel
+import typings.parse.Parse.Cloud.ReadPreferenceOption.Nearest
+import typings.parse.Parse.Cloud.ReadPreferenceOption.Primary
+import typings.parse.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred
+import typings.parse.Parse.Cloud.ReadPreferenceOption.Secondary
+import typings.parse.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,12 +32,22 @@ object ReadPreferenceOption extends js.Object {
   @js.native
   sealed trait SecondaryPreferred extends ReadPreferenceOption
   
-  /* "NEAREST" */ val Nearest: typings.parse.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
-  /* "PRIMARY" */ val Primary: typings.parse.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
-  /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typings.parse.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
-  /* "SECONDARY" */ val Secondary: typings.parse.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
-  /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typings.parse.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ReadPreferenceOption with String] = js.native
+  /* "NEAREST" */ @js.native
+  object Nearest extends TopLevel[Nearest with String]
+  
+  /* "PRIMARY" */ @js.native
+  object Primary extends TopLevel[Primary with String]
+  
+  /* "PRIMARY_PREFERRED" */ @js.native
+  object PrimaryPreferred extends TopLevel[PrimaryPreferred with String]
+  
+  /* "SECONDARY" */ @js.native
+  object Secondary extends TopLevel[Secondary with String]
+  
+  /* "SECONDARY_PREFERRED" */ @js.native
+  object SecondaryPreferred extends TopLevel[SecondaryPreferred with String]
+  
 }
 

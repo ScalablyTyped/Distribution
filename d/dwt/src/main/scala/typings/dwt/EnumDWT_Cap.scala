@@ -1,5 +1,147 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_Cap.CAP_ALARMS
+import typings.dwt.EnumDWT_Cap.CAP_ALARMVOLUME
+import typings.dwt.EnumDWT_Cap.CAP_AUTHOR
+import typings.dwt.EnumDWT_Cap.CAP_AUTOFEED
+import typings.dwt.EnumDWT_Cap.CAP_AUTOMATICCAPTURE
+import typings.dwt.EnumDWT_Cap.CAP_AUTOMATICSENSEMEDIUM
+import typings.dwt.EnumDWT_Cap.CAP_AUTOSCAN
+import typings.dwt.EnumDWT_Cap.CAP_BATTERYMINUTES
+import typings.dwt.EnumDWT_Cap.CAP_BATTERYPERCENTAGE
+import typings.dwt.EnumDWT_Cap.CAP_CAMERAENABLED
+import typings.dwt.EnumDWT_Cap.CAP_CAMERAORDER
+import typings.dwt.EnumDWT_Cap.CAP_CAMERAPREVIEWUI
+import typings.dwt.EnumDWT_Cap.CAP_CAMERASIDE
+import typings.dwt.EnumDWT_Cap.CAP_CAPTION
+import typings.dwt.EnumDWT_Cap.CAP_CLEARBUFFERS
+import typings.dwt.EnumDWT_Cap.CAP_CLEARPAGE
+import typings.dwt.EnumDWT_Cap.CAP_CUSTOMDSDATA
+import typings.dwt.EnumDWT_Cap.CAP_CUSTOMINTERFACEGUID
+import typings.dwt.EnumDWT_Cap.CAP_DEVICEONLINE
+import typings.dwt.EnumDWT_Cap.CAP_DEVICETIMEDATE
+import typings.dwt.EnumDWT_Cap.CAP_DUPLEX
+import typings.dwt.EnumDWT_Cap.CAP_DUPLEXENABLED
+import typings.dwt.EnumDWT_Cap.CAP_ENABLEDSUIONLY
+import typings.dwt.EnumDWT_Cap.CAP_ENDORSER
+import typings.dwt.EnumDWT_Cap.CAP_EXTENDEDCAPS
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERALIGNMENT
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERENABLED
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERLOADED
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERORDER
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERPOCKET
+import typings.dwt.EnumDWT_Cap.CAP_FEEDERPREP
+import typings.dwt.EnumDWT_Cap.CAP_FEEDPAGE
+import typings.dwt.EnumDWT_Cap.CAP_INDICATORS
+import typings.dwt.EnumDWT_Cap.CAP_LANGUAGE
+import typings.dwt.EnumDWT_Cap.CAP_MAXBATCHBUFFERS
+import typings.dwt.EnumDWT_Cap.CAP_MICRENABLED
+import typings.dwt.EnumDWT_Cap.CAP_NONE
+import typings.dwt.EnumDWT_Cap.CAP_PAPERDETECTABLE
+import typings.dwt.EnumDWT_Cap.CAP_POWERSUPPLY
+import typings.dwt.EnumDWT_Cap.CAP_PRINTER
+import typings.dwt.EnumDWT_Cap.CAP_PRINTERENABLED
+import typings.dwt.EnumDWT_Cap.CAP_PRINTERINDEX
+import typings.dwt.EnumDWT_Cap.CAP_PRINTERMODE
+import typings.dwt.EnumDWT_Cap.CAP_PRINTERSTRING
+import typings.dwt.EnumDWT_Cap.CAP_PRINTERSUFFIX
+import typings.dwt.EnumDWT_Cap.CAP_REACQUIREALLOWED
+import typings.dwt.EnumDWT_Cap.CAP_REWINDPAGE
+import typings.dwt.EnumDWT_Cap.CAP_SEGMENTED
+import typings.dwt.EnumDWT_Cap.CAP_SERIALNUMBER
+import typings.dwt.EnumDWT_Cap.CAP_SUPPORTEDCAPS
+import typings.dwt.EnumDWT_Cap.CAP_SUPPORTEDCAPSEXT
+import typings.dwt.EnumDWT_Cap.CAP_THUMBNAILSENABLED
+import typings.dwt.EnumDWT_Cap.CAP_TIMEBEFOREFIRSTCAPTURE
+import typings.dwt.EnumDWT_Cap.CAP_TIMEBETWEENCAPTURES
+import typings.dwt.EnumDWT_Cap.CAP_TIMEDATE
+import typings.dwt.EnumDWT_Cap.CAP_UICONTROLLABLE
+import typings.dwt.EnumDWT_Cap.CAP_XFERCOUNT
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOBRIGHT
+import typings.dwt.EnumDWT_Cap.ICAP_AUTODISCARDBLANKPAGES
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICBORDERDETECTION
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCOLORENABLED
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCROPUSESFRAME
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICDESKEW
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICLENGTHDETECTION
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICROTATE
+import typings.dwt.EnumDWT_Cap.ICAP_AUTOSIZE
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODEDETECTIONENABLED
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODEMAXRETRIES
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODEMAXSEARCHPRIORITIES
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODESEARCHMODE
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODESEARCHPRIORITIES
+import typings.dwt.EnumDWT_Cap.ICAP_BARCODETIMEOUT
+import typings.dwt.EnumDWT_Cap.ICAP_BITDEPTH
+import typings.dwt.EnumDWT_Cap.ICAP_BITDEPTHREDUCTION
+import typings.dwt.EnumDWT_Cap.ICAP_BITORDER
+import typings.dwt.EnumDWT_Cap.ICAP_BITORDERCODES
+import typings.dwt.EnumDWT_Cap.ICAP_BRIGHTNESS
+import typings.dwt.EnumDWT_Cap.ICAP_CCITTKFACTOR
+import typings.dwt.EnumDWT_Cap.ICAP_COLORMANAGEMENTENABLED
+import typings.dwt.EnumDWT_Cap.ICAP_COMPRESSION
+import typings.dwt.EnumDWT_Cap.ICAP_CONTRAST
+import typings.dwt.EnumDWT_Cap.ICAP_CUSTHALFTONE
+import typings.dwt.EnumDWT_Cap.ICAP_EXPOSURETIME
+import typings.dwt.EnumDWT_Cap.ICAP_EXTIMAGEINFO
+import typings.dwt.EnumDWT_Cap.ICAP_FEEDERTYPE
+import typings.dwt.EnumDWT_Cap.ICAP_FILTER
+import typings.dwt.EnumDWT_Cap.ICAP_FLASHUSED
+import typings.dwt.EnumDWT_Cap.ICAP_FLASHUSED2
+import typings.dwt.EnumDWT_Cap.ICAP_FLIPROTATION
+import typings.dwt.EnumDWT_Cap.ICAP_FRAMES
+import typings.dwt.EnumDWT_Cap.ICAP_GAMMA
+import typings.dwt.EnumDWT_Cap.ICAP_HALFTONES
+import typings.dwt.EnumDWT_Cap.ICAP_HIGHLIGHT
+import typings.dwt.EnumDWT_Cap.ICAP_ICCPROFILE
+import typings.dwt.EnumDWT_Cap.ICAP_IMAGEFILEFORMAT
+import typings.dwt.EnumDWT_Cap.ICAP_IMAGEFILTER
+import typings.dwt.EnumDWT_Cap.ICAP_IMAGEMERGE
+import typings.dwt.EnumDWT_Cap.ICAP_IMAGEMERGEHEIGHTTHRESHOLD
+import typings.dwt.EnumDWT_Cap.ICAP_JPEGPIXELTYPE
+import typings.dwt.EnumDWT_Cap.ICAP_JPEGQUALITY
+import typings.dwt.EnumDWT_Cap.ICAP_LAMPSTATE
+import typings.dwt.EnumDWT_Cap.ICAP_LIGHTPATH
+import typings.dwt.EnumDWT_Cap.ICAP_LIGHTSOURCE
+import typings.dwt.EnumDWT_Cap.ICAP_MAXFRAMES
+import typings.dwt.EnumDWT_Cap.ICAP_MINIMUMHEIGHT
+import typings.dwt.EnumDWT_Cap.ICAP_MINIMUMWIDTH
+import typings.dwt.EnumDWT_Cap.ICAP_NOISEFILTER
+import typings.dwt.EnumDWT_Cap.ICAP_ORIENTATION
+import typings.dwt.EnumDWT_Cap.ICAP_OVERSCAN
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEDETECTIONENABLED
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEMAXRETRIES
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEMAXSEARCHPRIORITIES
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODESEARCHMODE
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODESEARCHPRIORITIES
+import typings.dwt.EnumDWT_Cap.ICAP_PATCHCODETIMEOUT
+import typings.dwt.EnumDWT_Cap.ICAP_PHYSICALHEIGHT
+import typings.dwt.EnumDWT_Cap.ICAP_PHYSICALWIDTH
+import typings.dwt.EnumDWT_Cap.ICAP_PIXELFLAVOR
+import typings.dwt.EnumDWT_Cap.ICAP_PIXELFLAVORCODES
+import typings.dwt.EnumDWT_Cap.ICAP_PIXELTYPE
+import typings.dwt.EnumDWT_Cap.ICAP_PLANARCHUNKY
+import typings.dwt.EnumDWT_Cap.ICAP_ROTATION
+import typings.dwt.EnumDWT_Cap.ICAP_SHADOW
+import typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDBARCODETYPES
+import typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDEXTIMAGEINFO
+import typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDPATCHCODETYPES
+import typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDSIZES
+import typings.dwt.EnumDWT_Cap.ICAP_THRESHOLD
+import typings.dwt.EnumDWT_Cap.ICAP_TILES
+import typings.dwt.EnumDWT_Cap.ICAP_TIMEFILL
+import typings.dwt.EnumDWT_Cap.ICAP_UNDEFINEDIMAGESIZE
+import typings.dwt.EnumDWT_Cap.ICAP_UNITS
+import typings.dwt.EnumDWT_Cap.ICAP_XFERMECH
+import typings.dwt.EnumDWT_Cap.ICAP_XNATIVERESOLUTION
+import typings.dwt.EnumDWT_Cap.ICAP_XRESOLUTION
+import typings.dwt.EnumDWT_Cap.ICAP_XSCALING
+import typings.dwt.EnumDWT_Cap.ICAP_YNATIVERESOLUTION
+import typings.dwt.EnumDWT_Cap.ICAP_YRESOLUTION
+import typings.dwt.EnumDWT_Cap.ICAP_YSCALING
+import typings.dwt.EnumDWT_Cap.ICAP_ZOOMFACTOR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -789,148 +931,430 @@ object EnumDWT_Cap extends js.Object {
   @js.native
   sealed trait ICAP_ZOOMFACTOR extends EnumDWT_Cap
   
-  /* 4120 */ val CAP_ALARMS: typings.dwt.EnumDWT_Cap.CAP_ALARMS with Double = js.native
-  /* 4121 */ val CAP_ALARMVOLUME: typings.dwt.EnumDWT_Cap.CAP_ALARMVOLUME with Double = js.native
-  /* 4096 */ val CAP_AUTHOR: typings.dwt.EnumDWT_Cap.CAP_AUTHOR with Double = js.native
-  /* 4103 */ val CAP_AUTOFEED: typings.dwt.EnumDWT_Cap.CAP_AUTOFEED with Double = js.native
-  /* 4122 */ val CAP_AUTOMATICCAPTURE: typings.dwt.EnumDWT_Cap.CAP_AUTOMATICCAPTURE with Double = js.native
-  /* 4155 */ val CAP_AUTOMATICSENSEMEDIUM: typings.dwt.EnumDWT_Cap.CAP_AUTOMATICSENSEMEDIUM with Double = js.native
-  /* 4112 */ val CAP_AUTOSCAN: typings.dwt.EnumDWT_Cap.CAP_AUTOSCAN with Double = js.native
-  /* 4146 */ val CAP_BATTERYMINUTES: typings.dwt.EnumDWT_Cap.CAP_BATTERYMINUTES with Double = js.native
-  /* 4147 */ val CAP_BATTERYPERCENTAGE: typings.dwt.EnumDWT_Cap.CAP_BATTERYPERCENTAGE with Double = js.native
-  /* 4150 */ val CAP_CAMERAENABLED: typings.dwt.EnumDWT_Cap.CAP_CAMERAENABLED with Double = js.native
-  /* 4151 */ val CAP_CAMERAORDER: typings.dwt.EnumDWT_Cap.CAP_CAMERAORDER with Double = js.native
-  /* 4129 */ val CAP_CAMERAPREVIEWUI: typings.dwt.EnumDWT_Cap.CAP_CAMERAPREVIEWUI with Double = js.native
-  /* 4148 */ val CAP_CAMERASIDE: typings.dwt.EnumDWT_Cap.CAP_CAMERASIDE with Double = js.native
-  /* 4097 */ val CAP_CAPTION: typings.dwt.EnumDWT_Cap.CAP_CAPTION with Double = js.native
-  /* 4125 */ val CAP_CLEARBUFFERS: typings.dwt.EnumDWT_Cap.CAP_CLEARBUFFERS with Double = js.native
-  /* 4104 */ val CAP_CLEARPAGE: typings.dwt.EnumDWT_Cap.CAP_CLEARPAGE with Double = js.native
-  /* 4117 */ val CAP_CUSTOMDSDATA: typings.dwt.EnumDWT_Cap.CAP_CUSTOMDSDATA with Double = js.native
-  /* 4156 */ val CAP_CUSTOMINTERFACEGUID: typings.dwt.EnumDWT_Cap.CAP_CUSTOMINTERFACEGUID with Double = js.native
-  /* 4111 */ val CAP_DEVICEONLINE: typings.dwt.EnumDWT_Cap.CAP_DEVICEONLINE with Double = js.native
-  /* 4127 */ val CAP_DEVICETIMEDATE: typings.dwt.EnumDWT_Cap.CAP_DEVICETIMEDATE with Double = js.native
-  /* 4114 */ val CAP_DUPLEX: typings.dwt.EnumDWT_Cap.CAP_DUPLEX with Double = js.native
-  /* 4115 */ val CAP_DUPLEXENABLED: typings.dwt.EnumDWT_Cap.CAP_DUPLEXENABLED with Double = js.native
-  /* 4116 */ val CAP_ENABLEDSUIONLY: typings.dwt.EnumDWT_Cap.CAP_ENABLEDSUIONLY with Double = js.native
-  /* 4118 */ val CAP_ENDORSER: typings.dwt.EnumDWT_Cap.CAP_ENDORSER with Double = js.native
-  /* 4102 */ val CAP_EXTENDEDCAPS: typings.dwt.EnumDWT_Cap.CAP_EXTENDEDCAPS with Double = js.native
-  /* 4141 */ val CAP_FEEDERALIGNMENT: typings.dwt.EnumDWT_Cap.CAP_FEEDERALIGNMENT with Double = js.native
-  /* 4098 */ val CAP_FEEDERENABLED: typings.dwt.EnumDWT_Cap.CAP_FEEDERENABLED with Double = js.native
-  /* 4099 */ val CAP_FEEDERLOADED: typings.dwt.EnumDWT_Cap.CAP_FEEDERLOADED with Double = js.native
-  /* 4142 */ val CAP_FEEDERORDER: typings.dwt.EnumDWT_Cap.CAP_FEEDERORDER with Double = js.native
-  /* 4154 */ val CAP_FEEDERPOCKET: typings.dwt.EnumDWT_Cap.CAP_FEEDERPOCKET with Double = js.native
-  /* 4153 */ val CAP_FEEDERPREP: typings.dwt.EnumDWT_Cap.CAP_FEEDERPREP with Double = js.native
-  /* 4105 */ val CAP_FEEDPAGE: typings.dwt.EnumDWT_Cap.CAP_FEEDPAGE with Double = js.native
-  /* 4107 */ val CAP_INDICATORS: typings.dwt.EnumDWT_Cap.CAP_INDICATORS with Double = js.native
-  /* 4140 */ val CAP_LANGUAGE: typings.dwt.EnumDWT_Cap.CAP_LANGUAGE with Double = js.native
-  /* 4126 */ val CAP_MAXBATCHBUFFERS: typings.dwt.EnumDWT_Cap.CAP_MAXBATCHBUFFERS with Double = js.native
-  /* 4152 */ val CAP_MICRENABLED: typings.dwt.EnumDWT_Cap.CAP_MICRENABLED with Double = js.native
-  /* 0 */ val CAP_NONE: typings.dwt.EnumDWT_Cap.CAP_NONE with Double = js.native
-  /* 4109 */ val CAP_PAPERDETECTABLE: typings.dwt.EnumDWT_Cap.CAP_PAPERDETECTABLE with Double = js.native
-  /* 4128 */ val CAP_POWERSUPPLY: typings.dwt.EnumDWT_Cap.CAP_POWERSUPPLY with Double = js.native
-  /* 4134 */ val CAP_PRINTER: typings.dwt.EnumDWT_Cap.CAP_PRINTER with Double = js.native
-  /* 4135 */ val CAP_PRINTERENABLED: typings.dwt.EnumDWT_Cap.CAP_PRINTERENABLED with Double = js.native
-  /* 4136 */ val CAP_PRINTERINDEX: typings.dwt.EnumDWT_Cap.CAP_PRINTERINDEX with Double = js.native
-  /* 4137 */ val CAP_PRINTERMODE: typings.dwt.EnumDWT_Cap.CAP_PRINTERMODE with Double = js.native
-  /* 4138 */ val CAP_PRINTERSTRING: typings.dwt.EnumDWT_Cap.CAP_PRINTERSTRING with Double = js.native
-  /* 4139 */ val CAP_PRINTERSUFFIX: typings.dwt.EnumDWT_Cap.CAP_PRINTERSUFFIX with Double = js.native
-  /* 4144 */ val CAP_REACQUIREALLOWED: typings.dwt.EnumDWT_Cap.CAP_REACQUIREALLOWED with Double = js.native
-  /* 4106 */ val CAP_REWINDPAGE: typings.dwt.EnumDWT_Cap.CAP_REWINDPAGE with Double = js.native
-  /* 4149 */ val CAP_SEGMENTED: typings.dwt.EnumDWT_Cap.CAP_SEGMENTED with Double = js.native
-  /* 4132 */ val CAP_SERIALNUMBER: typings.dwt.EnumDWT_Cap.CAP_SERIALNUMBER with Double = js.native
-  /* 4101 */ val CAP_SUPPORTEDCAPS: typings.dwt.EnumDWT_Cap.CAP_SUPPORTEDCAPS with Double = js.native
-  /* 4108 */ val CAP_SUPPORTEDCAPSEXT: typings.dwt.EnumDWT_Cap.CAP_SUPPORTEDCAPSEXT with Double = js.native
-  /* 4113 */ val CAP_THUMBNAILSENABLED: typings.dwt.EnumDWT_Cap.CAP_THUMBNAILSENABLED with Double = js.native
-  /* 4123 */ val CAP_TIMEBEFOREFIRSTCAPTURE: typings.dwt.EnumDWT_Cap.CAP_TIMEBEFOREFIRSTCAPTURE with Double = js.native
-  /* 4124 */ val CAP_TIMEBETWEENCAPTURES: typings.dwt.EnumDWT_Cap.CAP_TIMEBETWEENCAPTURES with Double = js.native
-  /* 4100 */ val CAP_TIMEDATE: typings.dwt.EnumDWT_Cap.CAP_TIMEDATE with Double = js.native
-  /* 4110 */ val CAP_UICONTROLLABLE: typings.dwt.EnumDWT_Cap.CAP_UICONTROLLABLE with Double = js.native
-  /* 1 */ val CAP_XFERCOUNT: typings.dwt.EnumDWT_Cap.CAP_XFERCOUNT with Double = js.native
-  /* 4352 */ val ICAP_AUTOBRIGHT: typings.dwt.EnumDWT_Cap.ICAP_AUTOBRIGHT with Double = js.native
-  /* 4404 */ val ICAP_AUTODISCARDBLANKPAGES: typings.dwt.EnumDWT_Cap.ICAP_AUTODISCARDBLANKPAGES with Double = js.native
-  /* 4432 */ val ICAP_AUTOMATICBORDERDETECTION: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICBORDERDETECTION with Double = js.native
-  /* 4441 */ val ICAP_AUTOMATICCOLORENABLED: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCOLORENABLED with Double = js.native
-  /* 4442 */ val ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE with Double = js.native
-  /* 4439 */ val ICAP_AUTOMATICCROPUSESFRAME: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICCROPUSESFRAME with Double = js.native
-  /* 4433 */ val ICAP_AUTOMATICDESKEW: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICDESKEW with Double = js.native
-  /* 4440 */ val ICAP_AUTOMATICLENGTHDETECTION: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICLENGTHDETECTION with Double = js.native
-  /* 4434 */ val ICAP_AUTOMATICROTATE: typings.dwt.EnumDWT_Cap.ICAP_AUTOMATICROTATE with Double = js.native
-  /* 4438 */ val ICAP_AUTOSIZE: typings.dwt.EnumDWT_Cap.ICAP_AUTOSIZE with Double = js.native
-  /* 4407 */ val ICAP_BARCODEDETECTIONENABLED: typings.dwt.EnumDWT_Cap.ICAP_BARCODEDETECTIONENABLED with Double = js.native
-  /* 4412 */ val ICAP_BARCODEMAXRETRIES: typings.dwt.EnumDWT_Cap.ICAP_BARCODEMAXRETRIES with Double = js.native
-  /* 4409 */ val ICAP_BARCODEMAXSEARCHPRIORITIES: typings.dwt.EnumDWT_Cap.ICAP_BARCODEMAXSEARCHPRIORITIES with Double = js.native
-  /* 4411 */ val ICAP_BARCODESEARCHMODE: typings.dwt.EnumDWT_Cap.ICAP_BARCODESEARCHMODE with Double = js.native
-  /* 4410 */ val ICAP_BARCODESEARCHPRIORITIES: typings.dwt.EnumDWT_Cap.ICAP_BARCODESEARCHPRIORITIES with Double = js.native
-  /* 4413 */ val ICAP_BARCODETIMEOUT: typings.dwt.EnumDWT_Cap.ICAP_BARCODETIMEOUT with Double = js.native
-  /* 4395 */ val ICAP_BITDEPTH: typings.dwt.EnumDWT_Cap.ICAP_BITDEPTH with Double = js.native
-  /* 4396 */ val ICAP_BITDEPTHREDUCTION: typings.dwt.EnumDWT_Cap.ICAP_BITDEPTHREDUCTION with Double = js.native
-  /* 4380 */ val ICAP_BITORDER: typings.dwt.EnumDWT_Cap.ICAP_BITORDER with Double = js.native
-  /* 4390 */ val ICAP_BITORDERCODES: typings.dwt.EnumDWT_Cap.ICAP_BITORDERCODES with Double = js.native
-  /* 4353 */ val ICAP_BRIGHTNESS: typings.dwt.EnumDWT_Cap.ICAP_BRIGHTNESS with Double = js.native
-  /* 4381 */ val ICAP_CCITTKFACTOR: typings.dwt.EnumDWT_Cap.ICAP_CCITTKFACTOR with Double = js.native
-  /* 4443 */ val ICAP_COLORMANAGEMENTENABLED: typings.dwt.EnumDWT_Cap.ICAP_COLORMANAGEMENTENABLED with Double = js.native
-  /* 256 */ val ICAP_COMPRESSION: typings.dwt.EnumDWT_Cap.ICAP_COMPRESSION with Double = js.native
-  /* 4355 */ val ICAP_CONTRAST: typings.dwt.EnumDWT_Cap.ICAP_CONTRAST with Double = js.native
-  /* 4356 */ val ICAP_CUSTHALFTONE: typings.dwt.EnumDWT_Cap.ICAP_CUSTHALFTONE with Double = js.native
-  /* 4357 */ val ICAP_EXPOSURETIME: typings.dwt.EnumDWT_Cap.ICAP_EXPOSURETIME with Double = js.native
-  /* 4399 */ val ICAP_EXTIMAGEINFO: typings.dwt.EnumDWT_Cap.ICAP_EXTIMAGEINFO with Double = js.native
-  /* 4436 */ val ICAP_FEEDERTYPE: typings.dwt.EnumDWT_Cap.ICAP_FEEDERTYPE with Double = js.native
-  /* 4358 */ val ICAP_FILTER: typings.dwt.EnumDWT_Cap.ICAP_FILTER with Double = js.native
-  /* 4359 */ val ICAP_FLASHUSED: typings.dwt.EnumDWT_Cap.ICAP_FLASHUSED with Double = js.native
-  /* 4422 */ val ICAP_FLASHUSED2: typings.dwt.EnumDWT_Cap.ICAP_FLASHUSED2 with Double = js.native
-  /* 4406 */ val ICAP_FLIPROTATION: typings.dwt.EnumDWT_Cap.ICAP_FLIPROTATION with Double = js.native
-  /* 4372 */ val ICAP_FRAMES: typings.dwt.EnumDWT_Cap.ICAP_FRAMES with Double = js.native
-  /* 4360 */ val ICAP_GAMMA: typings.dwt.EnumDWT_Cap.ICAP_GAMMA with Double = js.native
-  /* 4361 */ val ICAP_HALFTONES: typings.dwt.EnumDWT_Cap.ICAP_HALFTONES with Double = js.native
-  /* 4362 */ val ICAP_HIGHLIGHT: typings.dwt.EnumDWT_Cap.ICAP_HIGHLIGHT with Double = js.native
-  /* 4437 */ val ICAP_ICCPROFILE: typings.dwt.EnumDWT_Cap.ICAP_ICCPROFILE with Double = js.native
-  /* 4364 */ val ICAP_IMAGEFILEFORMAT: typings.dwt.EnumDWT_Cap.ICAP_IMAGEFILEFORMAT with Double = js.native
-  /* 4423 */ val ICAP_IMAGEFILTER: typings.dwt.EnumDWT_Cap.ICAP_IMAGEFILTER with Double = js.native
-  /* 4444 */ val ICAP_IMAGEMERGE: typings.dwt.EnumDWT_Cap.ICAP_IMAGEMERGE with Double = js.native
-  /* 4445 */ val ICAP_IMAGEMERGEHEIGHTTHRESHOLD: typings.dwt.EnumDWT_Cap.ICAP_IMAGEMERGEHEIGHTTHRESHOLD with Double = js.native
-  /* 4392 */ val ICAP_JPEGPIXELTYPE: typings.dwt.EnumDWT_Cap.ICAP_JPEGPIXELTYPE with Double = js.native
-  /* 4435 */ val ICAP_JPEGQUALITY: typings.dwt.EnumDWT_Cap.ICAP_JPEGQUALITY with Double = js.native
-  /* 4365 */ val ICAP_LAMPSTATE: typings.dwt.EnumDWT_Cap.ICAP_LAMPSTATE with Double = js.native
-  /* 4382 */ val ICAP_LIGHTPATH: typings.dwt.EnumDWT_Cap.ICAP_LIGHTPATH with Double = js.native
-  /* 4366 */ val ICAP_LIGHTSOURCE: typings.dwt.EnumDWT_Cap.ICAP_LIGHTSOURCE with Double = js.native
-  /* 4378 */ val ICAP_MAXFRAMES: typings.dwt.EnumDWT_Cap.ICAP_MAXFRAMES with Double = js.native
-  /* 4400 */ val ICAP_MINIMUMHEIGHT: typings.dwt.EnumDWT_Cap.ICAP_MINIMUMHEIGHT with Double = js.native
-  /* 4401 */ val ICAP_MINIMUMWIDTH: typings.dwt.EnumDWT_Cap.ICAP_MINIMUMWIDTH with Double = js.native
-  /* 4424 */ val ICAP_NOISEFILTER: typings.dwt.EnumDWT_Cap.ICAP_NOISEFILTER with Double = js.native
-  /* 4368 */ val ICAP_ORIENTATION: typings.dwt.EnumDWT_Cap.ICAP_ORIENTATION with Double = js.native
-  /* 4425 */ val ICAP_OVERSCAN: typings.dwt.EnumDWT_Cap.ICAP_OVERSCAN with Double = js.native
-  /* 4415 */ val ICAP_PATCHCODEDETECTIONENABLED: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEDETECTIONENABLED with Double = js.native
-  /* 4420 */ val ICAP_PATCHCODEMAXRETRIES: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEMAXRETRIES with Double = js.native
-  /* 4417 */ val ICAP_PATCHCODEMAXSEARCHPRIORITIES: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODEMAXSEARCHPRIORITIES with Double = js.native
-  /* 4419 */ val ICAP_PATCHCODESEARCHMODE: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODESEARCHMODE with Double = js.native
-  /* 4418 */ val ICAP_PATCHCODESEARCHPRIORITIES: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODESEARCHPRIORITIES with Double = js.native
-  /* 4421 */ val ICAP_PATCHCODETIMEOUT: typings.dwt.EnumDWT_Cap.ICAP_PATCHCODETIMEOUT with Double = js.native
-  /* 4370 */ val ICAP_PHYSICALHEIGHT: typings.dwt.EnumDWT_Cap.ICAP_PHYSICALHEIGHT with Double = js.native
-  /* 4369 */ val ICAP_PHYSICALWIDTH: typings.dwt.EnumDWT_Cap.ICAP_PHYSICALWIDTH with Double = js.native
-  /* 4383 */ val ICAP_PIXELFLAVOR: typings.dwt.EnumDWT_Cap.ICAP_PIXELFLAVOR with Double = js.native
-  /* 4391 */ val ICAP_PIXELFLAVORCODES: typings.dwt.EnumDWT_Cap.ICAP_PIXELFLAVORCODES with Double = js.native
-  /* 257 */ val ICAP_PIXELTYPE: typings.dwt.EnumDWT_Cap.ICAP_PIXELTYPE with Double = js.native
-  /* 4384 */ val ICAP_PLANARCHUNKY: typings.dwt.EnumDWT_Cap.ICAP_PLANARCHUNKY with Double = js.native
-  /* 4385 */ val ICAP_ROTATION: typings.dwt.EnumDWT_Cap.ICAP_ROTATION with Double = js.native
-  /* 4371 */ val ICAP_SHADOW: typings.dwt.EnumDWT_Cap.ICAP_SHADOW with Double = js.native
-  /* 4408 */ val ICAP_SUPPORTEDBARCODETYPES: typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDBARCODETYPES with Double = js.native
-  /* 4446 */ val ICAP_SUPPORTEDEXTIMAGEINFO: typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDEXTIMAGEINFO with Double = js.native
-  /* 4416 */ val ICAP_SUPPORTEDPATCHCODETYPES: typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDPATCHCODETYPES with Double = js.native
-  /* 4386 */ val ICAP_SUPPORTEDSIZES: typings.dwt.EnumDWT_Cap.ICAP_SUPPORTEDSIZES with Double = js.native
-  /* 4387 */ val ICAP_THRESHOLD: typings.dwt.EnumDWT_Cap.ICAP_THRESHOLD with Double = js.native
-  /* 4379 */ val ICAP_TILES: typings.dwt.EnumDWT_Cap.ICAP_TILES with Double = js.native
-  /* 4394 */ val ICAP_TIMEFILL: typings.dwt.EnumDWT_Cap.ICAP_TIMEFILL with Double = js.native
-  /* 4397 */ val ICAP_UNDEFINEDIMAGESIZE: typings.dwt.EnumDWT_Cap.ICAP_UNDEFINEDIMAGESIZE with Double = js.native
-  /* 258 */ val ICAP_UNITS: typings.dwt.EnumDWT_Cap.ICAP_UNITS with Double = js.native
-  /* 259 */ val ICAP_XFERMECH: typings.dwt.EnumDWT_Cap.ICAP_XFERMECH with Double = js.native
-  /* 4374 */ val ICAP_XNATIVERESOLUTION: typings.dwt.EnumDWT_Cap.ICAP_XNATIVERESOLUTION with Double = js.native
-  /* 4376 */ val ICAP_XRESOLUTION: typings.dwt.EnumDWT_Cap.ICAP_XRESOLUTION with Double = js.native
-  /* 4388 */ val ICAP_XSCALING: typings.dwt.EnumDWT_Cap.ICAP_XSCALING with Double = js.native
-  /* 4375 */ val ICAP_YNATIVERESOLUTION: typings.dwt.EnumDWT_Cap.ICAP_YNATIVERESOLUTION with Double = js.native
-  /* 4377 */ val ICAP_YRESOLUTION: typings.dwt.EnumDWT_Cap.ICAP_YRESOLUTION with Double = js.native
-  /* 4389 */ val ICAP_YSCALING: typings.dwt.EnumDWT_Cap.ICAP_YSCALING with Double = js.native
-  /* 4414 */ val ICAP_ZOOMFACTOR: typings.dwt.EnumDWT_Cap.ICAP_ZOOMFACTOR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_Cap with Double] = js.native
+  /* 4120 */ @js.native
+  object CAP_ALARMS extends TopLevel[CAP_ALARMS with Double]
+  
+  /* 4121 */ @js.native
+  object CAP_ALARMVOLUME extends TopLevel[CAP_ALARMVOLUME with Double]
+  
+  /* 4096 */ @js.native
+  object CAP_AUTHOR extends TopLevel[CAP_AUTHOR with Double]
+  
+  /* 4103 */ @js.native
+  object CAP_AUTOFEED extends TopLevel[CAP_AUTOFEED with Double]
+  
+  /* 4122 */ @js.native
+  object CAP_AUTOMATICCAPTURE extends TopLevel[CAP_AUTOMATICCAPTURE with Double]
+  
+  /* 4155 */ @js.native
+  object CAP_AUTOMATICSENSEMEDIUM extends TopLevel[CAP_AUTOMATICSENSEMEDIUM with Double]
+  
+  /* 4112 */ @js.native
+  object CAP_AUTOSCAN extends TopLevel[CAP_AUTOSCAN with Double]
+  
+  /* 4146 */ @js.native
+  object CAP_BATTERYMINUTES extends TopLevel[CAP_BATTERYMINUTES with Double]
+  
+  /* 4147 */ @js.native
+  object CAP_BATTERYPERCENTAGE extends TopLevel[CAP_BATTERYPERCENTAGE with Double]
+  
+  /* 4150 */ @js.native
+  object CAP_CAMERAENABLED extends TopLevel[CAP_CAMERAENABLED with Double]
+  
+  /* 4151 */ @js.native
+  object CAP_CAMERAORDER extends TopLevel[CAP_CAMERAORDER with Double]
+  
+  /* 4129 */ @js.native
+  object CAP_CAMERAPREVIEWUI extends TopLevel[CAP_CAMERAPREVIEWUI with Double]
+  
+  /* 4148 */ @js.native
+  object CAP_CAMERASIDE extends TopLevel[CAP_CAMERASIDE with Double]
+  
+  /* 4097 */ @js.native
+  object CAP_CAPTION extends TopLevel[CAP_CAPTION with Double]
+  
+  /* 4125 */ @js.native
+  object CAP_CLEARBUFFERS extends TopLevel[CAP_CLEARBUFFERS with Double]
+  
+  /* 4104 */ @js.native
+  object CAP_CLEARPAGE extends TopLevel[CAP_CLEARPAGE with Double]
+  
+  /* 4117 */ @js.native
+  object CAP_CUSTOMDSDATA extends TopLevel[CAP_CUSTOMDSDATA with Double]
+  
+  /* 4156 */ @js.native
+  object CAP_CUSTOMINTERFACEGUID extends TopLevel[CAP_CUSTOMINTERFACEGUID with Double]
+  
+  /* 4111 */ @js.native
+  object CAP_DEVICEONLINE extends TopLevel[CAP_DEVICEONLINE with Double]
+  
+  /* 4127 */ @js.native
+  object CAP_DEVICETIMEDATE extends TopLevel[CAP_DEVICETIMEDATE with Double]
+  
+  /* 4114 */ @js.native
+  object CAP_DUPLEX extends TopLevel[CAP_DUPLEX with Double]
+  
+  /* 4115 */ @js.native
+  object CAP_DUPLEXENABLED extends TopLevel[CAP_DUPLEXENABLED with Double]
+  
+  /* 4116 */ @js.native
+  object CAP_ENABLEDSUIONLY extends TopLevel[CAP_ENABLEDSUIONLY with Double]
+  
+  /* 4118 */ @js.native
+  object CAP_ENDORSER extends TopLevel[CAP_ENDORSER with Double]
+  
+  /* 4102 */ @js.native
+  object CAP_EXTENDEDCAPS extends TopLevel[CAP_EXTENDEDCAPS with Double]
+  
+  /* 4141 */ @js.native
+  object CAP_FEEDERALIGNMENT extends TopLevel[CAP_FEEDERALIGNMENT with Double]
+  
+  /* 4098 */ @js.native
+  object CAP_FEEDERENABLED extends TopLevel[CAP_FEEDERENABLED with Double]
+  
+  /* 4099 */ @js.native
+  object CAP_FEEDERLOADED extends TopLevel[CAP_FEEDERLOADED with Double]
+  
+  /* 4142 */ @js.native
+  object CAP_FEEDERORDER extends TopLevel[CAP_FEEDERORDER with Double]
+  
+  /* 4154 */ @js.native
+  object CAP_FEEDERPOCKET extends TopLevel[CAP_FEEDERPOCKET with Double]
+  
+  /* 4153 */ @js.native
+  object CAP_FEEDERPREP extends TopLevel[CAP_FEEDERPREP with Double]
+  
+  /* 4105 */ @js.native
+  object CAP_FEEDPAGE extends TopLevel[CAP_FEEDPAGE with Double]
+  
+  /* 4107 */ @js.native
+  object CAP_INDICATORS extends TopLevel[CAP_INDICATORS with Double]
+  
+  /* 4140 */ @js.native
+  object CAP_LANGUAGE extends TopLevel[CAP_LANGUAGE with Double]
+  
+  /* 4126 */ @js.native
+  object CAP_MAXBATCHBUFFERS extends TopLevel[CAP_MAXBATCHBUFFERS with Double]
+  
+  /* 4152 */ @js.native
+  object CAP_MICRENABLED extends TopLevel[CAP_MICRENABLED with Double]
+  
+  /* 0 */ @js.native
+  object CAP_NONE extends TopLevel[CAP_NONE with Double]
+  
+  /* 4109 */ @js.native
+  object CAP_PAPERDETECTABLE extends TopLevel[CAP_PAPERDETECTABLE with Double]
+  
+  /* 4128 */ @js.native
+  object CAP_POWERSUPPLY extends TopLevel[CAP_POWERSUPPLY with Double]
+  
+  /* 4134 */ @js.native
+  object CAP_PRINTER extends TopLevel[CAP_PRINTER with Double]
+  
+  /* 4135 */ @js.native
+  object CAP_PRINTERENABLED extends TopLevel[CAP_PRINTERENABLED with Double]
+  
+  /* 4136 */ @js.native
+  object CAP_PRINTERINDEX extends TopLevel[CAP_PRINTERINDEX with Double]
+  
+  /* 4137 */ @js.native
+  object CAP_PRINTERMODE extends TopLevel[CAP_PRINTERMODE with Double]
+  
+  /* 4138 */ @js.native
+  object CAP_PRINTERSTRING extends TopLevel[CAP_PRINTERSTRING with Double]
+  
+  /* 4139 */ @js.native
+  object CAP_PRINTERSUFFIX extends TopLevel[CAP_PRINTERSUFFIX with Double]
+  
+  /* 4144 */ @js.native
+  object CAP_REACQUIREALLOWED extends TopLevel[CAP_REACQUIREALLOWED with Double]
+  
+  /* 4106 */ @js.native
+  object CAP_REWINDPAGE extends TopLevel[CAP_REWINDPAGE with Double]
+  
+  /* 4149 */ @js.native
+  object CAP_SEGMENTED extends TopLevel[CAP_SEGMENTED with Double]
+  
+  /* 4132 */ @js.native
+  object CAP_SERIALNUMBER extends TopLevel[CAP_SERIALNUMBER with Double]
+  
+  /* 4101 */ @js.native
+  object CAP_SUPPORTEDCAPS extends TopLevel[CAP_SUPPORTEDCAPS with Double]
+  
+  /* 4108 */ @js.native
+  object CAP_SUPPORTEDCAPSEXT extends TopLevel[CAP_SUPPORTEDCAPSEXT with Double]
+  
+  /* 4113 */ @js.native
+  object CAP_THUMBNAILSENABLED extends TopLevel[CAP_THUMBNAILSENABLED with Double]
+  
+  /* 4123 */ @js.native
+  object CAP_TIMEBEFOREFIRSTCAPTURE extends TopLevel[CAP_TIMEBEFOREFIRSTCAPTURE with Double]
+  
+  /* 4124 */ @js.native
+  object CAP_TIMEBETWEENCAPTURES extends TopLevel[CAP_TIMEBETWEENCAPTURES with Double]
+  
+  /* 4100 */ @js.native
+  object CAP_TIMEDATE extends TopLevel[CAP_TIMEDATE with Double]
+  
+  /* 4110 */ @js.native
+  object CAP_UICONTROLLABLE extends TopLevel[CAP_UICONTROLLABLE with Double]
+  
+  /* 1 */ @js.native
+  object CAP_XFERCOUNT extends TopLevel[CAP_XFERCOUNT with Double]
+  
+  /* 4352 */ @js.native
+  object ICAP_AUTOBRIGHT extends TopLevel[ICAP_AUTOBRIGHT with Double]
+  
+  /* 4404 */ @js.native
+  object ICAP_AUTODISCARDBLANKPAGES extends TopLevel[ICAP_AUTODISCARDBLANKPAGES with Double]
+  
+  /* 4432 */ @js.native
+  object ICAP_AUTOMATICBORDERDETECTION extends TopLevel[ICAP_AUTOMATICBORDERDETECTION with Double]
+  
+  /* 4441 */ @js.native
+  object ICAP_AUTOMATICCOLORENABLED extends TopLevel[ICAP_AUTOMATICCOLORENABLED with Double]
+  
+  /* 4442 */ @js.native
+  object ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE extends TopLevel[ICAP_AUTOMATICCOLORNONCOLORPIXELTYPE with Double]
+  
+  /* 4439 */ @js.native
+  object ICAP_AUTOMATICCROPUSESFRAME extends TopLevel[ICAP_AUTOMATICCROPUSESFRAME with Double]
+  
+  /* 4433 */ @js.native
+  object ICAP_AUTOMATICDESKEW extends TopLevel[ICAP_AUTOMATICDESKEW with Double]
+  
+  /* 4440 */ @js.native
+  object ICAP_AUTOMATICLENGTHDETECTION extends TopLevel[ICAP_AUTOMATICLENGTHDETECTION with Double]
+  
+  /* 4434 */ @js.native
+  object ICAP_AUTOMATICROTATE extends TopLevel[ICAP_AUTOMATICROTATE with Double]
+  
+  /* 4438 */ @js.native
+  object ICAP_AUTOSIZE extends TopLevel[ICAP_AUTOSIZE with Double]
+  
+  /* 4407 */ @js.native
+  object ICAP_BARCODEDETECTIONENABLED extends TopLevel[ICAP_BARCODEDETECTIONENABLED with Double]
+  
+  /* 4412 */ @js.native
+  object ICAP_BARCODEMAXRETRIES extends TopLevel[ICAP_BARCODEMAXRETRIES with Double]
+  
+  /* 4409 */ @js.native
+  object ICAP_BARCODEMAXSEARCHPRIORITIES extends TopLevel[ICAP_BARCODEMAXSEARCHPRIORITIES with Double]
+  
+  /* 4411 */ @js.native
+  object ICAP_BARCODESEARCHMODE extends TopLevel[ICAP_BARCODESEARCHMODE with Double]
+  
+  /* 4410 */ @js.native
+  object ICAP_BARCODESEARCHPRIORITIES extends TopLevel[ICAP_BARCODESEARCHPRIORITIES with Double]
+  
+  /* 4413 */ @js.native
+  object ICAP_BARCODETIMEOUT extends TopLevel[ICAP_BARCODETIMEOUT with Double]
+  
+  /* 4395 */ @js.native
+  object ICAP_BITDEPTH extends TopLevel[ICAP_BITDEPTH with Double]
+  
+  /* 4396 */ @js.native
+  object ICAP_BITDEPTHREDUCTION extends TopLevel[ICAP_BITDEPTHREDUCTION with Double]
+  
+  /* 4380 */ @js.native
+  object ICAP_BITORDER extends TopLevel[ICAP_BITORDER with Double]
+  
+  /* 4390 */ @js.native
+  object ICAP_BITORDERCODES extends TopLevel[ICAP_BITORDERCODES with Double]
+  
+  /* 4353 */ @js.native
+  object ICAP_BRIGHTNESS extends TopLevel[ICAP_BRIGHTNESS with Double]
+  
+  /* 4381 */ @js.native
+  object ICAP_CCITTKFACTOR extends TopLevel[ICAP_CCITTKFACTOR with Double]
+  
+  /* 4443 */ @js.native
+  object ICAP_COLORMANAGEMENTENABLED extends TopLevel[ICAP_COLORMANAGEMENTENABLED with Double]
+  
+  /* 256 */ @js.native
+  object ICAP_COMPRESSION extends TopLevel[ICAP_COMPRESSION with Double]
+  
+  /* 4355 */ @js.native
+  object ICAP_CONTRAST extends TopLevel[ICAP_CONTRAST with Double]
+  
+  /* 4356 */ @js.native
+  object ICAP_CUSTHALFTONE extends TopLevel[ICAP_CUSTHALFTONE with Double]
+  
+  /* 4357 */ @js.native
+  object ICAP_EXPOSURETIME extends TopLevel[ICAP_EXPOSURETIME with Double]
+  
+  /* 4399 */ @js.native
+  object ICAP_EXTIMAGEINFO extends TopLevel[ICAP_EXTIMAGEINFO with Double]
+  
+  /* 4436 */ @js.native
+  object ICAP_FEEDERTYPE extends TopLevel[ICAP_FEEDERTYPE with Double]
+  
+  /* 4358 */ @js.native
+  object ICAP_FILTER extends TopLevel[ICAP_FILTER with Double]
+  
+  /* 4359 */ @js.native
+  object ICAP_FLASHUSED extends TopLevel[ICAP_FLASHUSED with Double]
+  
+  /* 4422 */ @js.native
+  object ICAP_FLASHUSED2 extends TopLevel[ICAP_FLASHUSED2 with Double]
+  
+  /* 4406 */ @js.native
+  object ICAP_FLIPROTATION extends TopLevel[ICAP_FLIPROTATION with Double]
+  
+  /* 4372 */ @js.native
+  object ICAP_FRAMES extends TopLevel[ICAP_FRAMES with Double]
+  
+  /* 4360 */ @js.native
+  object ICAP_GAMMA extends TopLevel[ICAP_GAMMA with Double]
+  
+  /* 4361 */ @js.native
+  object ICAP_HALFTONES extends TopLevel[ICAP_HALFTONES with Double]
+  
+  /* 4362 */ @js.native
+  object ICAP_HIGHLIGHT extends TopLevel[ICAP_HIGHLIGHT with Double]
+  
+  /* 4437 */ @js.native
+  object ICAP_ICCPROFILE extends TopLevel[ICAP_ICCPROFILE with Double]
+  
+  /* 4364 */ @js.native
+  object ICAP_IMAGEFILEFORMAT extends TopLevel[ICAP_IMAGEFILEFORMAT with Double]
+  
+  /* 4423 */ @js.native
+  object ICAP_IMAGEFILTER extends TopLevel[ICAP_IMAGEFILTER with Double]
+  
+  /* 4444 */ @js.native
+  object ICAP_IMAGEMERGE extends TopLevel[ICAP_IMAGEMERGE with Double]
+  
+  /* 4445 */ @js.native
+  object ICAP_IMAGEMERGEHEIGHTTHRESHOLD extends TopLevel[ICAP_IMAGEMERGEHEIGHTTHRESHOLD with Double]
+  
+  /* 4392 */ @js.native
+  object ICAP_JPEGPIXELTYPE extends TopLevel[ICAP_JPEGPIXELTYPE with Double]
+  
+  /* 4435 */ @js.native
+  object ICAP_JPEGQUALITY extends TopLevel[ICAP_JPEGQUALITY with Double]
+  
+  /* 4365 */ @js.native
+  object ICAP_LAMPSTATE extends TopLevel[ICAP_LAMPSTATE with Double]
+  
+  /* 4382 */ @js.native
+  object ICAP_LIGHTPATH extends TopLevel[ICAP_LIGHTPATH with Double]
+  
+  /* 4366 */ @js.native
+  object ICAP_LIGHTSOURCE extends TopLevel[ICAP_LIGHTSOURCE with Double]
+  
+  /* 4378 */ @js.native
+  object ICAP_MAXFRAMES extends TopLevel[ICAP_MAXFRAMES with Double]
+  
+  /* 4400 */ @js.native
+  object ICAP_MINIMUMHEIGHT extends TopLevel[ICAP_MINIMUMHEIGHT with Double]
+  
+  /* 4401 */ @js.native
+  object ICAP_MINIMUMWIDTH extends TopLevel[ICAP_MINIMUMWIDTH with Double]
+  
+  /* 4424 */ @js.native
+  object ICAP_NOISEFILTER extends TopLevel[ICAP_NOISEFILTER with Double]
+  
+  /* 4368 */ @js.native
+  object ICAP_ORIENTATION extends TopLevel[ICAP_ORIENTATION with Double]
+  
+  /* 4425 */ @js.native
+  object ICAP_OVERSCAN extends TopLevel[ICAP_OVERSCAN with Double]
+  
+  /* 4415 */ @js.native
+  object ICAP_PATCHCODEDETECTIONENABLED extends TopLevel[ICAP_PATCHCODEDETECTIONENABLED with Double]
+  
+  /* 4420 */ @js.native
+  object ICAP_PATCHCODEMAXRETRIES extends TopLevel[ICAP_PATCHCODEMAXRETRIES with Double]
+  
+  /* 4417 */ @js.native
+  object ICAP_PATCHCODEMAXSEARCHPRIORITIES extends TopLevel[ICAP_PATCHCODEMAXSEARCHPRIORITIES with Double]
+  
+  /* 4419 */ @js.native
+  object ICAP_PATCHCODESEARCHMODE extends TopLevel[ICAP_PATCHCODESEARCHMODE with Double]
+  
+  /* 4418 */ @js.native
+  object ICAP_PATCHCODESEARCHPRIORITIES extends TopLevel[ICAP_PATCHCODESEARCHPRIORITIES with Double]
+  
+  /* 4421 */ @js.native
+  object ICAP_PATCHCODETIMEOUT extends TopLevel[ICAP_PATCHCODETIMEOUT with Double]
+  
+  /* 4370 */ @js.native
+  object ICAP_PHYSICALHEIGHT extends TopLevel[ICAP_PHYSICALHEIGHT with Double]
+  
+  /* 4369 */ @js.native
+  object ICAP_PHYSICALWIDTH extends TopLevel[ICAP_PHYSICALWIDTH with Double]
+  
+  /* 4383 */ @js.native
+  object ICAP_PIXELFLAVOR extends TopLevel[ICAP_PIXELFLAVOR with Double]
+  
+  /* 4391 */ @js.native
+  object ICAP_PIXELFLAVORCODES extends TopLevel[ICAP_PIXELFLAVORCODES with Double]
+  
+  /* 257 */ @js.native
+  object ICAP_PIXELTYPE extends TopLevel[ICAP_PIXELTYPE with Double]
+  
+  /* 4384 */ @js.native
+  object ICAP_PLANARCHUNKY extends TopLevel[ICAP_PLANARCHUNKY with Double]
+  
+  /* 4385 */ @js.native
+  object ICAP_ROTATION extends TopLevel[ICAP_ROTATION with Double]
+  
+  /* 4371 */ @js.native
+  object ICAP_SHADOW extends TopLevel[ICAP_SHADOW with Double]
+  
+  /* 4408 */ @js.native
+  object ICAP_SUPPORTEDBARCODETYPES extends TopLevel[ICAP_SUPPORTEDBARCODETYPES with Double]
+  
+  /* 4446 */ @js.native
+  object ICAP_SUPPORTEDEXTIMAGEINFO extends TopLevel[ICAP_SUPPORTEDEXTIMAGEINFO with Double]
+  
+  /* 4416 */ @js.native
+  object ICAP_SUPPORTEDPATCHCODETYPES extends TopLevel[ICAP_SUPPORTEDPATCHCODETYPES with Double]
+  
+  /* 4386 */ @js.native
+  object ICAP_SUPPORTEDSIZES extends TopLevel[ICAP_SUPPORTEDSIZES with Double]
+  
+  /* 4387 */ @js.native
+  object ICAP_THRESHOLD extends TopLevel[ICAP_THRESHOLD with Double]
+  
+  /* 4379 */ @js.native
+  object ICAP_TILES extends TopLevel[ICAP_TILES with Double]
+  
+  /* 4394 */ @js.native
+  object ICAP_TIMEFILL extends TopLevel[ICAP_TIMEFILL with Double]
+  
+  /* 4397 */ @js.native
+  object ICAP_UNDEFINEDIMAGESIZE extends TopLevel[ICAP_UNDEFINEDIMAGESIZE with Double]
+  
+  /* 258 */ @js.native
+  object ICAP_UNITS extends TopLevel[ICAP_UNITS with Double]
+  
+  /* 259 */ @js.native
+  object ICAP_XFERMECH extends TopLevel[ICAP_XFERMECH with Double]
+  
+  /* 4374 */ @js.native
+  object ICAP_XNATIVERESOLUTION extends TopLevel[ICAP_XNATIVERESOLUTION with Double]
+  
+  /* 4376 */ @js.native
+  object ICAP_XRESOLUTION extends TopLevel[ICAP_XRESOLUTION with Double]
+  
+  /* 4388 */ @js.native
+  object ICAP_XSCALING extends TopLevel[ICAP_XSCALING with Double]
+  
+  /* 4375 */ @js.native
+  object ICAP_YNATIVERESOLUTION extends TopLevel[ICAP_YNATIVERESOLUTION with Double]
+  
+  /* 4377 */ @js.native
+  object ICAP_YRESOLUTION extends TopLevel[ICAP_YRESOLUTION with Double]
+  
+  /* 4389 */ @js.native
+  object ICAP_YSCALING extends TopLevel[ICAP_YSCALING with Double]
+  
+  /* 4414 */ @js.native
+  object ICAP_ZOOMFACTOR extends TopLevel[ICAP_ZOOMFACTOR with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.jpeg
+import typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.jpegXR
+import typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object CameraCaptureUIPhotoFormat extends js.Object {
   @js.native
   sealed trait png extends CameraCaptureUIPhotoFormat
   
-  /* 0 */ val jpeg: typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.jpeg with Double = js.native
-  /* 2 */ val jpegXR: typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.jpegXR with Double = js.native
-  /* 1 */ val png: typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.png with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CameraCaptureUIPhotoFormat with Double] = js.native
+  /* 0 */ @js.native
+  object jpeg extends TopLevel[jpeg with Double]
+  
+  /* 2 */ @js.native
+  object jpegXR extends TopLevel[jpegXR with Double]
+  
+  /* 1 */ @js.native
+  object png extends TopLevel[png with Double]
+  
 }
 

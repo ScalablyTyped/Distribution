@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.rootRefRootRefMod.RootRefProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,9 @@ object rootRefMod extends js.Object {
     def this(props: RootRefProps[_], context: js.Any) = this()
   }
   
-  val default: ComponentType[RootRefProps[js.Any]] = js.native
+  @js.native
+  object default
+    extends TopLevel[ComponentType[RootRefProps[js.Any]]]
+  
 }
 

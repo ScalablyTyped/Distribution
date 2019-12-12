@@ -1,5 +1,8 @@
 package typings.tensorflow.tensorflowMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tensorflow.tensorflowMod.Types.float
+import typings.tensorflow.tensorflowMod.Types.int32
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +20,13 @@ object Types extends js.Object {
   @js.native
   sealed trait int32 extends Types
   
-  /* 1 */ val float: typings.tensorflow.tensorflowMod.Types.float with Double = js.native
-  /* 3 */ val int32: typings.tensorflow.tensorflowMod.Types.int32 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Types with Double] = js.native
+  /* 1 */ @js.native
+  object float extends TopLevel[float with Double]
+  
+  /* 3 */ @js.native
+  object int32 extends TopLevel[int32 with Double]
+  
 }
 

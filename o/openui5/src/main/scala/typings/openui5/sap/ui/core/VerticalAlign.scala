@@ -1,5 +1,10 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.VerticalAlign.Bottom
+import typings.openui5.sap.ui.core.VerticalAlign.Inherit
+import typings.openui5.sap.ui.core.VerticalAlign.Middle
+import typings.openui5.sap.ui.core.VerticalAlign.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object VerticalAlign extends js.Object {
   @js.native
   sealed trait Top extends VerticalAlign
   
-  /* 0 */ val Bottom: typings.openui5.sap.ui.core.VerticalAlign.Bottom with Double = js.native
-  /* 1 */ val Inherit: typings.openui5.sap.ui.core.VerticalAlign.Inherit with Double = js.native
-  /* 2 */ val Middle: typings.openui5.sap.ui.core.VerticalAlign.Middle with Double = js.native
-  /* 3 */ val Top: typings.openui5.sap.ui.core.VerticalAlign.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VerticalAlign with Double] = js.native
+  /* 0 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 1 */ @js.native
+  object Inherit extends TopLevel[Inherit with Double]
+  
+  /* 2 */ @js.native
+  object Middle extends TopLevel[Middle with Double]
+  
+  /* 3 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

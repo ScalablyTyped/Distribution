@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.GetFeedbackConstants.Model
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.GetFeedbackConstants.Model.CONTRACTS
+import typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.GetFeedbackConstants.Model.TABLES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object GetFeedbackConstants extends js.Object {
     @js.native
     sealed trait TABLES extends Model
     
-    /* "contracts" */ val CONTRACTS: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.GetFeedbackConstants.Model.CONTRACTS with String = js.native
-    /* "tables" */ val TABLES: typings.watsonDashDeveloperDashCloud.compareDashComplyV1Mod.GetFeedbackConstants.Model.TABLES with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Model with String] = js.native
+    /* "contracts" */ @js.native
+    object CONTRACTS extends TopLevel[CONTRACTS with String]
+    
+    /* "tables" */ @js.native
+    object TABLES extends TopLevel[TABLES with String]
+    
   }
   
 }

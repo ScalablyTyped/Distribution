@@ -1,5 +1,14 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.PeriodType.DAYS
+import typings.tableau.tableau.PeriodType.HOURS
+import typings.tableau.tableau.PeriodType.MINUTES
+import typings.tableau.tableau.PeriodType.MONTHS
+import typings.tableau.tableau.PeriodType.QUARTERS
+import typings.tableau.tableau.PeriodType.SECONDS
+import typings.tableau.tableau.PeriodType.WEEKS
+import typings.tableau.tableau.PeriodType.YEARS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object PeriodType extends js.Object {
   @js.native
   sealed trait YEARS extends PeriodType
   
-  /* "days" */ val DAYS: typings.tableau.tableau.PeriodType.DAYS with String = js.native
-  /* "hours" */ val HOURS: typings.tableau.tableau.PeriodType.HOURS with String = js.native
-  /* "minutes" */ val MINUTES: typings.tableau.tableau.PeriodType.MINUTES with String = js.native
-  /* "months" */ val MONTHS: typings.tableau.tableau.PeriodType.MONTHS with String = js.native
-  /* "quarters" */ val QUARTERS: typings.tableau.tableau.PeriodType.QUARTERS with String = js.native
-  /* "seconds" */ val SECONDS: typings.tableau.tableau.PeriodType.SECONDS with String = js.native
-  /* "weeks" */ val WEEKS: typings.tableau.tableau.PeriodType.WEEKS with String = js.native
-  /* "years" */ val YEARS: typings.tableau.tableau.PeriodType.YEARS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PeriodType with String] = js.native
+  /* "days" */ @js.native
+  object DAYS extends TopLevel[DAYS with String]
+  
+  /* "hours" */ @js.native
+  object HOURS extends TopLevel[HOURS with String]
+  
+  /* "minutes" */ @js.native
+  object MINUTES extends TopLevel[MINUTES with String]
+  
+  /* "months" */ @js.native
+  object MONTHS extends TopLevel[MONTHS with String]
+  
+  /* "quarters" */ @js.native
+  object QUARTERS extends TopLevel[QUARTERS with String]
+  
+  /* "seconds" */ @js.native
+  object SECONDS extends TopLevel[SECONDS with String]
+  
+  /* "weeks" */ @js.native
+  object WEEKS extends TopLevel[WEEKS with String]
+  
+  /* "years" */ @js.native
+  object YEARS extends TopLevel[YEARS with String]
+  
 }
 

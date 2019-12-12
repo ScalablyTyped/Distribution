@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IMap
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -7,8 +8,16 @@ import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequest
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType.default
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType.forceAuthentication
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestResult
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.accountProviderNotAvailable
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.accountSwitch
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.providerError
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.success
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.userCancel
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.userInteractionRequired
 import typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenResponse
 import typings.winrtDashUwp.Windows.Security.Credentials.WebAccount
 import typings.winrtDashUwp.Windows.Security.Credentials.WebAccountProvider
@@ -213,10 +222,14 @@ object Core extends js.Object {
     @js.native
     sealed trait forceAuthentication extends WebTokenRequestPromptType
     
-    /* 0 */ val default: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType.default with Double = js.native
-    /* 1 */ val forceAuthentication: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestPromptType.forceAuthentication with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[WebTokenRequestPromptType with Double] = js.native
+    /* 0 */ @js.native
+    object default extends TopLevel[default with Double]
+    
+    /* 1 */ @js.native
+    object forceAuthentication extends TopLevel[forceAuthentication with Double]
+    
   }
   
   /** Represents the status of a web token request. */
@@ -246,14 +259,26 @@ object Core extends js.Object {
     @js.native
     sealed trait userInteractionRequired extends WebTokenRequestStatus
     
-    /* 4 */ val accountProviderNotAvailable: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.accountProviderNotAvailable with Double = js.native
-    /* 2 */ val accountSwitch: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.accountSwitch with Double = js.native
-    /* 5 */ val providerError: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.providerError with Double = js.native
-    /* 0 */ val success: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.success with Double = js.native
-    /* 1 */ val userCancel: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.userCancel with Double = js.native
-    /* 3 */ val userInteractionRequired: typings.winrtDashUwp.Windows.Security.Authentication.Web.Core.WebTokenRequestStatus.userInteractionRequired with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[WebTokenRequestStatus with Double] = js.native
+    /* 4 */ @js.native
+    object accountProviderNotAvailable extends TopLevel[accountProviderNotAvailable with Double]
+    
+    /* 2 */ @js.native
+    object accountSwitch extends TopLevel[accountSwitch with Double]
+    
+    /* 5 */ @js.native
+    object providerError extends TopLevel[providerError with Double]
+    
+    /* 0 */ @js.native
+    object success extends TopLevel[success with Double]
+    
+    /* 1 */ @js.native
+    object userCancel extends TopLevel[userCancel with Double]
+    
+    /* 3 */ @js.native
+    object userInteractionRequired extends TopLevel[userInteractionRequired with Double]
+    
   }
   
 }

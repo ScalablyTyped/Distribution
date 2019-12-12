@@ -1,5 +1,16 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.Days.Day
+import typings.officeDashJs.Office.MailboxEnums.Days.Fri
+import typings.officeDashJs.Office.MailboxEnums.Days.Mon
+import typings.officeDashJs.Office.MailboxEnums.Days.Sat
+import typings.officeDashJs.Office.MailboxEnums.Days.Sun
+import typings.officeDashJs.Office.MailboxEnums.Days.Thu
+import typings.officeDashJs.Office.MailboxEnums.Days.Tue
+import typings.officeDashJs.Office.MailboxEnums.Days.Wed
+import typings.officeDashJs.Office.MailboxEnums.Days.Weekday
+import typings.officeDashJs.Office.MailboxEnums.Days.WeekendDay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,17 +90,37 @@ object Days extends js.Object {
   @js.native
   sealed trait WeekendDay extends Days
   
-  /* "day" */ val Day: typings.officeDashJs.Office.MailboxEnums.Days.Day with String = js.native
-  /* "fri" */ val Fri: typings.officeDashJs.Office.MailboxEnums.Days.Fri with String = js.native
-  /* "mon" */ val Mon: typings.officeDashJs.Office.MailboxEnums.Days.Mon with String = js.native
-  /* "sat" */ val Sat: typings.officeDashJs.Office.MailboxEnums.Days.Sat with String = js.native
-  /* "sun" */ val Sun: typings.officeDashJs.Office.MailboxEnums.Days.Sun with String = js.native
-  /* "thu" */ val Thu: typings.officeDashJs.Office.MailboxEnums.Days.Thu with String = js.native
-  /* "tue" */ val Tue: typings.officeDashJs.Office.MailboxEnums.Days.Tue with String = js.native
-  /* "wed" */ val Wed: typings.officeDashJs.Office.MailboxEnums.Days.Wed with String = js.native
-  /* "weekday" */ val Weekday: typings.officeDashJs.Office.MailboxEnums.Days.Weekday with String = js.native
-  /* "weekendDay" */ val WeekendDay: typings.officeDashJs.Office.MailboxEnums.Days.WeekendDay with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Days with String] = js.native
+  /* "day" */ @js.native
+  object Day extends TopLevel[Day with String]
+  
+  /* "fri" */ @js.native
+  object Fri extends TopLevel[Fri with String]
+  
+  /* "mon" */ @js.native
+  object Mon extends TopLevel[Mon with String]
+  
+  /* "sat" */ @js.native
+  object Sat extends TopLevel[Sat with String]
+  
+  /* "sun" */ @js.native
+  object Sun extends TopLevel[Sun with String]
+  
+  /* "thu" */ @js.native
+  object Thu extends TopLevel[Thu with String]
+  
+  /* "tue" */ @js.native
+  object Tue extends TopLevel[Tue with String]
+  
+  /* "wed" */ @js.native
+  object Wed extends TopLevel[Wed with String]
+  
+  /* "weekday" */ @js.native
+  object Weekday extends TopLevel[Weekday with String]
+  
+  /* "weekendDay" */ @js.native
+  object WeekendDay extends TopLevel[WeekendDay with String]
+  
 }
 

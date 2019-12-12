@@ -1,5 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.DateRangeType.CURRENT
+import typings.tableau.tableau.DateRangeType.LAST
+import typings.tableau.tableau.DateRangeType.LASTN
+import typings.tableau.tableau.DateRangeType.NEXT
+import typings.tableau.tableau.DateRangeType.NEXTN
+import typings.tableau.tableau.DateRangeType.TODATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object DateRangeType extends js.Object {
    /** Refers to everything up to and including the current day, week, month, etc. of the date period. */ @js.native
   sealed trait TODATE extends DateRangeType
   
-  /* "current" */ val CURRENT: typings.tableau.tableau.DateRangeType.CURRENT with String = js.native
-  /* "last" */ val LAST: typings.tableau.tableau.DateRangeType.LAST with String = js.native
-  /* "lastn" */ val LASTN: typings.tableau.tableau.DateRangeType.LASTN with String = js.native
-  /* "next" */ val NEXT: typings.tableau.tableau.DateRangeType.NEXT with String = js.native
-  /* "nextn" */ val NEXTN: typings.tableau.tableau.DateRangeType.NEXTN with String = js.native
-  /* "todate" */ val TODATE: typings.tableau.tableau.DateRangeType.TODATE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DateRangeType with String] = js.native
+  /* "current" */ @js.native
+  object CURRENT extends TopLevel[CURRENT with String]
+  
+  /* "last" */ @js.native
+  object LAST extends TopLevel[LAST with String]
+  
+  /* "lastn" */ @js.native
+  object LASTN extends TopLevel[LASTN with String]
+  
+  /* "next" */ @js.native
+  object NEXT extends TopLevel[NEXT with String]
+  
+  /* "nextn" */ @js.native
+  object NEXTN extends TopLevel[NEXTN with String]
+  
+  /* "todate" */ @js.native
+  object TODATE extends TopLevel[TODATE with String]
+  
 }
 

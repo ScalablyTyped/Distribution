@@ -1,5 +1,20 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Banned
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.ClanDisabled
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.CommunityBan
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.DoesntExist
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Error
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Full
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Limited
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.MemberBlockedYou
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataLobby
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataUser
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NotAllowed
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.RankOutOfRange
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Success
+import typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.YouBlockedMember
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,21 +71,49 @@ object EChatRoomEnterResponse extends js.Object {
   @js.native
   sealed trait YouBlockedMember extends EChatRoomEnterResponse
   
-  /* 6 */ val Banned: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Banned with Double = js.native
-  /* 8 */ val ClanDisabled: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.ClanDisabled with Double = js.native
-  /* 9 */ val CommunityBan: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.CommunityBan with Double = js.native
-  /* 2 */ val DoesntExist: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.DoesntExist with Double = js.native
-  /* 5 */ val Error: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Error with Double = js.native
-  /* 4 */ val Full: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Full with Double = js.native
-  /* 7 */ val Limited: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Limited with Double = js.native
-  /* 10 */ val MemberBlockedYou: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.MemberBlockedYou with Double = js.native
-  /* 12 */ val NoRankingDataLobby: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataLobby with Double = js.native
-  /* 13 */ val NoRankingDataUser: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NoRankingDataUser with Double = js.native
-  /* 3 */ val NotAllowed: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.NotAllowed with Double = js.native
-  /* 14 */ val RankOutOfRange: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.RankOutOfRange with Double = js.native
-  /* 1 */ val Success: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.Success with Double = js.native
-  /* 11 */ val YouBlockedMember: typings.steamDashClient.steamDashClientMod.EChatRoomEnterResponse.YouBlockedMember with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatRoomEnterResponse with Double] = js.native
+  /* 6 */ @js.native
+  object Banned extends TopLevel[Banned with Double]
+  
+  /* 8 */ @js.native
+  object ClanDisabled extends TopLevel[ClanDisabled with Double]
+  
+  /* 9 */ @js.native
+  object CommunityBan extends TopLevel[CommunityBan with Double]
+  
+  /* 2 */ @js.native
+  object DoesntExist extends TopLevel[DoesntExist with Double]
+  
+  /* 5 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 4 */ @js.native
+  object Full extends TopLevel[Full with Double]
+  
+  /* 7 */ @js.native
+  object Limited extends TopLevel[Limited with Double]
+  
+  /* 10 */ @js.native
+  object MemberBlockedYou extends TopLevel[MemberBlockedYou with Double]
+  
+  /* 12 */ @js.native
+  object NoRankingDataLobby extends TopLevel[NoRankingDataLobby with Double]
+  
+  /* 13 */ @js.native
+  object NoRankingDataUser extends TopLevel[NoRankingDataUser with Double]
+  
+  /* 3 */ @js.native
+  object NotAllowed extends TopLevel[NotAllowed with Double]
+  
+  /* 14 */ @js.native
+  object RankOutOfRange extends TopLevel[RankOutOfRange with Double]
+  
+  /* 1 */ @js.native
+  object Success extends TopLevel[Success with Double]
+  
+  /* 11 */ @js.native
+  object YouBlockedMember extends TopLevel[YouBlockedMember with Double]
+  
 }
 

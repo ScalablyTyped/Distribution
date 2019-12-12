@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es6-promisify"
-version := "6.0-dt-20180226Z-0860a9"
+version := "6.0-dt-20180226Z-647b82"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,49 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeOf
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeType
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeTypeName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CalculationOf
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForCreate
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForRead
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForUpdate
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanModifyAdditionalSettings
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.ColumnNumber
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DefaultFormValue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DefaultValue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DeprecatedVersion
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Description
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DisplayName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.EntityLogicalName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Format
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.FormatName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.ImeMode
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IntroducedVersion
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsAuditEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsCustomAttribute
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsCustomizable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsManaged
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryId
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsRenameable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsSecured
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForAdvancedFind
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForCreate
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForRead
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForUpdate
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.LinkedAttributeId
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.LogicalName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MaxLength
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MaxValue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MetadataId
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MinValue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Precision
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.PrecisionSource
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.RequiredLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.SchemaName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Targets
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.YomiOf
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -142,51 +186,185 @@ object AttributeMetadataProperties extends js.Object {
   @js.native
   sealed trait YomiOf extends AttributeMetadataProperties
   
-  /* 0 */ val AttributeOf: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeOf with scala.Double = js.native
-  /* 1 */ val AttributeType: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeType with scala.Double = js.native
-  /* 2 */ val AttributeTypeName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.AttributeTypeName with scala.Double = js.native
-  /* 3 */ val CalculationOf: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CalculationOf with scala.Double = js.native
-  /* 4 */ val CanBeSecuredForCreate: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForCreate with scala.Double = js.native
-  /* 5 */ val CanBeSecuredForRead: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForRead with scala.Double = js.native
-  /* 6 */ val CanBeSecuredForUpdate: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanBeSecuredForUpdate with scala.Double = js.native
-  /* 7 */ val CanModifyAdditionalSettings: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.CanModifyAdditionalSettings with scala.Double = js.native
-  /* 8 */ val ColumnNumber: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.ColumnNumber with scala.Double = js.native
-  /* 9 */ val DefaultFormValue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DefaultFormValue with scala.Double = js.native
-  /* 10 */ val DefaultValue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DefaultValue with scala.Double = js.native
-  /* 11 */ val DeprecatedVersion: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DeprecatedVersion with scala.Double = js.native
-  /* 12 */ val Description: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Description with scala.Double = js.native
-  /* 13 */ val DisplayName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.DisplayName with scala.Double = js.native
-  /* 14 */ val EntityLogicalName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.EntityLogicalName with scala.Double = js.native
-  /* 15 */ val Format: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Format with scala.Double = js.native
-  /* 16 */ val FormatName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.FormatName with scala.Double = js.native
-  /* 17 */ val ImeMode: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.ImeMode with scala.Double = js.native
-  /* 18 */ val IntroducedVersion: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IntroducedVersion with scala.Double = js.native
-  /* 19 */ val IsAuditEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsAuditEnabled with scala.Double = js.native
-  /* 20 */ val IsCustomAttribute: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsCustomAttribute with scala.Double = js.native
-  /* 21 */ val IsCustomizable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsCustomizable with scala.Double = js.native
-  /* 22 */ val IsManaged: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsManaged with scala.Double = js.native
-  /* 23 */ val IsPrimaryId: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryId with scala.Double = js.native
-  /* 24 */ val IsPrimaryName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsPrimaryName with scala.Double = js.native
-  /* 25 */ val IsRenameable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsRenameable with scala.Double = js.native
-  /* 26 */ val IsSecured: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsSecured with scala.Double = js.native
-  /* 27 */ val IsValidForAdvancedFind: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForAdvancedFind with scala.Double = js.native
-  /* 28 */ val IsValidForCreate: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForCreate with scala.Double = js.native
-  /* 29 */ val IsValidForRead: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForRead with scala.Double = js.native
-  /* 30 */ val IsValidForUpdate: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.IsValidForUpdate with scala.Double = js.native
-  /* 31 */ val LinkedAttributeId: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.LinkedAttributeId with scala.Double = js.native
-  /* 32 */ val LogicalName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.LogicalName with scala.Double = js.native
-  /* 33 */ val MaxLength: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MaxLength with scala.Double = js.native
-  /* 34 */ val MaxValue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MaxValue with scala.Double = js.native
-  /* 35 */ val MetadataId: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MetadataId with scala.Double = js.native
-  /* 36 */ val MinValue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.MinValue with scala.Double = js.native
-  /* 37 */ val OptionSet: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.OptionSet with scala.Double = js.native
-  /* 38 */ val Precision: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Precision with scala.Double = js.native
-  /* 39 */ val PrecisionSource: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.PrecisionSource with scala.Double = js.native
-  /* 40 */ val RequiredLevel: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.RequiredLevel with scala.Double = js.native
-  /* 41 */ val SchemaName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.SchemaName with scala.Double = js.native
-  /* 42 */ val Targets: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.Targets with scala.Double = js.native
-  /* 43 */ val YomiOf: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.YomiOf with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[AttributeMetadataProperties with scala.Double] = js.native
+  /* 0 */ @js.native
+  object AttributeOf
+    extends TopLevel[AttributeOf with scala.Double]
+  
+  /* 1 */ @js.native
+  object AttributeType
+    extends TopLevel[AttributeType with scala.Double]
+  
+  /* 2 */ @js.native
+  object AttributeTypeName
+    extends TopLevel[AttributeTypeName with scala.Double]
+  
+  /* 3 */ @js.native
+  object CalculationOf
+    extends TopLevel[CalculationOf with scala.Double]
+  
+  /* 4 */ @js.native
+  object CanBeSecuredForCreate
+    extends TopLevel[CanBeSecuredForCreate with scala.Double]
+  
+  /* 5 */ @js.native
+  object CanBeSecuredForRead
+    extends TopLevel[CanBeSecuredForRead with scala.Double]
+  
+  /* 6 */ @js.native
+  object CanBeSecuredForUpdate
+    extends TopLevel[CanBeSecuredForUpdate with scala.Double]
+  
+  /* 7 */ @js.native
+  object CanModifyAdditionalSettings
+    extends TopLevel[CanModifyAdditionalSettings with scala.Double]
+  
+  /* 8 */ @js.native
+  object ColumnNumber
+    extends TopLevel[ColumnNumber with scala.Double]
+  
+  /* 9 */ @js.native
+  object DefaultFormValue
+    extends TopLevel[DefaultFormValue with scala.Double]
+  
+  /* 10 */ @js.native
+  object DefaultValue
+    extends TopLevel[DefaultValue with scala.Double]
+  
+  /* 11 */ @js.native
+  object DeprecatedVersion
+    extends TopLevel[DeprecatedVersion with scala.Double]
+  
+  /* 12 */ @js.native
+  object Description
+    extends TopLevel[Description with scala.Double]
+  
+  /* 13 */ @js.native
+  object DisplayName
+    extends TopLevel[DisplayName with scala.Double]
+  
+  /* 14 */ @js.native
+  object EntityLogicalName
+    extends TopLevel[EntityLogicalName with scala.Double]
+  
+  /* 15 */ @js.native
+  object Format
+    extends TopLevel[Format with scala.Double]
+  
+  /* 16 */ @js.native
+  object FormatName
+    extends TopLevel[FormatName with scala.Double]
+  
+  /* 17 */ @js.native
+  object ImeMode
+    extends TopLevel[ImeMode with scala.Double]
+  
+  /* 18 */ @js.native
+  object IntroducedVersion
+    extends TopLevel[IntroducedVersion with scala.Double]
+  
+  /* 19 */ @js.native
+  object IsAuditEnabled
+    extends TopLevel[IsAuditEnabled with scala.Double]
+  
+  /* 20 */ @js.native
+  object IsCustomAttribute
+    extends TopLevel[IsCustomAttribute with scala.Double]
+  
+  /* 21 */ @js.native
+  object IsCustomizable
+    extends TopLevel[IsCustomizable with scala.Double]
+  
+  /* 22 */ @js.native
+  object IsManaged
+    extends TopLevel[IsManaged with scala.Double]
+  
+  /* 23 */ @js.native
+  object IsPrimaryId
+    extends TopLevel[IsPrimaryId with scala.Double]
+  
+  /* 24 */ @js.native
+  object IsPrimaryName
+    extends TopLevel[IsPrimaryName with scala.Double]
+  
+  /* 25 */ @js.native
+  object IsRenameable
+    extends TopLevel[IsRenameable with scala.Double]
+  
+  /* 26 */ @js.native
+  object IsSecured
+    extends TopLevel[IsSecured with scala.Double]
+  
+  /* 27 */ @js.native
+  object IsValidForAdvancedFind
+    extends TopLevel[IsValidForAdvancedFind with scala.Double]
+  
+  /* 28 */ @js.native
+  object IsValidForCreate
+    extends TopLevel[IsValidForCreate with scala.Double]
+  
+  /* 29 */ @js.native
+  object IsValidForRead
+    extends TopLevel[IsValidForRead with scala.Double]
+  
+  /* 30 */ @js.native
+  object IsValidForUpdate
+    extends TopLevel[IsValidForUpdate with scala.Double]
+  
+  /* 31 */ @js.native
+  object LinkedAttributeId
+    extends TopLevel[LinkedAttributeId with scala.Double]
+  
+  /* 32 */ @js.native
+  object LogicalName
+    extends TopLevel[LogicalName with scala.Double]
+  
+  /* 33 */ @js.native
+  object MaxLength
+    extends TopLevel[MaxLength with scala.Double]
+  
+  /* 34 */ @js.native
+  object MaxValue
+    extends TopLevel[MaxValue with scala.Double]
+  
+  /* 35 */ @js.native
+  object MetadataId
+    extends TopLevel[MetadataId with scala.Double]
+  
+  /* 36 */ @js.native
+  object MinValue
+    extends TopLevel[MinValue with scala.Double]
+  
+  /* 37 */ @js.native
+  object OptionSet
+    extends TopLevel[
+          typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.AttributeMetadataProperties.OptionSet with scala.Double
+        ]
+  
+  /* 38 */ @js.native
+  object Precision
+    extends TopLevel[Precision with scala.Double]
+  
+  /* 39 */ @js.native
+  object PrecisionSource
+    extends TopLevel[PrecisionSource with scala.Double]
+  
+  /* 40 */ @js.native
+  object RequiredLevel
+    extends TopLevel[RequiredLevel with scala.Double]
+  
+  /* 41 */ @js.native
+  object SchemaName
+    extends TopLevel[SchemaName with scala.Double]
+  
+  /* 42 */ @js.native
+  object Targets
+    extends TopLevel[Targets with scala.Double]
+  
+  /* 43 */ @js.native
+  object YomiOf
+    extends TopLevel[YomiOf with scala.Double]
+  
 }
 

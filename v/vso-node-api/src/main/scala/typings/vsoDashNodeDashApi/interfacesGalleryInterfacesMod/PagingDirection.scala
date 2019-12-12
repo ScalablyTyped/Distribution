@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Backward
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Forward
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object PagingDirection extends js.Object {
   @js.native
   sealed trait Forward extends PagingDirection
   
-  /* 1 */ val Backward: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Backward with Double = js.native
-  /* 2 */ val Forward: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.PagingDirection.Forward with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PagingDirection with Double] = js.native
+  /* 1 */ @js.native
+  object Backward extends TopLevel[Backward with Double]
+  
+  /* 2 */ @js.native
+  object Forward extends TopLevel[Forward with Double]
+  
 }
 

@@ -1,5 +1,20 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.cancelled
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.declined
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.deleted
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.draft
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.recalled
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadFailed
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadNeeded
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloading
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveRetryNeeded
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.received
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendFailed
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendRetryNeeded
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sending
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,21 +82,49 @@ object ChatMessageStatus extends js.Object {
   @js.native
   sealed trait sent extends ChatMessageStatus
   
-  /* 11 */ val cancelled: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.cancelled with Double = js.native
-  /* 10 */ val declined: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.declined with Double = js.native
-  /* 9 */ val deleted: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.deleted with Double = js.native
-  /* 0 */ val draft: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.draft with Double = js.native
-  /* 12 */ val recalled: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.recalled with Double = js.native
-  /* 7 */ val receiveDownloadFailed: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadFailed with Double = js.native
-  /* 6 */ val receiveDownloadNeeded: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloadNeeded with Double = js.native
-  /* 8 */ val receiveDownloading: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveDownloading with Double = js.native
-  /* 13 */ val receiveRetryNeeded: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.receiveRetryNeeded with Double = js.native
-  /* 5 */ val received: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.received with Double = js.native
-  /* 4 */ val sendFailed: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendFailed with Double = js.native
-  /* 3 */ val sendRetryNeeded: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sendRetryNeeded with Double = js.native
-  /* 1 */ val sending: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sending with Double = js.native
-  /* 2 */ val sent: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatMessageStatus.sent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatMessageStatus with Double] = js.native
+  /* 11 */ @js.native
+  object cancelled extends TopLevel[cancelled with Double]
+  
+  /* 10 */ @js.native
+  object declined extends TopLevel[declined with Double]
+  
+  /* 9 */ @js.native
+  object deleted extends TopLevel[deleted with Double]
+  
+  /* 0 */ @js.native
+  object draft extends TopLevel[draft with Double]
+  
+  /* 12 */ @js.native
+  object recalled extends TopLevel[recalled with Double]
+  
+  /* 7 */ @js.native
+  object receiveDownloadFailed extends TopLevel[receiveDownloadFailed with Double]
+  
+  /* 6 */ @js.native
+  object receiveDownloadNeeded extends TopLevel[receiveDownloadNeeded with Double]
+  
+  /* 8 */ @js.native
+  object receiveDownloading extends TopLevel[receiveDownloading with Double]
+  
+  /* 13 */ @js.native
+  object receiveRetryNeeded extends TopLevel[receiveRetryNeeded with Double]
+  
+  /* 5 */ @js.native
+  object received extends TopLevel[received with Double]
+  
+  /* 4 */ @js.native
+  object sendFailed extends TopLevel[sendFailed with Double]
+  
+  /* 3 */ @js.native
+  object sendRetryNeeded extends TopLevel[sendRetryNeeded with Double]
+  
+  /* 1 */ @js.native
+  object sending extends TopLevel[sending with Double]
+  
+  /* 2 */ @js.native
+  object sent extends TopLevel[sent with Double]
+  
 }
 

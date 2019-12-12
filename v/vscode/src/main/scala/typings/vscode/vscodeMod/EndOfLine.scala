@@ -1,5 +1,8 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.EndOfLine.CRLF
+import typings.vscode.vscodeMod.EndOfLine.LF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object EndOfLine extends js.Object {
   @js.native
   sealed trait LF extends EndOfLine
   
-  /* 2 */ val CRLF: typings.vscode.vscodeMod.EndOfLine.CRLF with Double = js.native
-  /* 1 */ val LF: typings.vscode.vscodeMod.EndOfLine.LF with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EndOfLine with Double] = js.native
+  /* 2 */ @js.native
+  object CRLF extends TopLevel[CRLF with Double]
+  
+  /* 1 */ @js.native
+  object LF extends TopLevel[LF with Double]
+  
 }
 

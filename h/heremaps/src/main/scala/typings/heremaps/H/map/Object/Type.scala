@@ -1,5 +1,12 @@
 package typings.heremaps.H.map.Object
 
+import org.scalablytyped.runtime.TopLevel
+import typings.heremaps.H.map.Object.Type.ANY
+import typings.heremaps.H.map.Object.Type.DOM_MARKER
+import typings.heremaps.H.map.Object.Type.GROUP
+import typings.heremaps.H.map.Object.Type.MARKER
+import typings.heremaps.H.map.Object.Type.OVERLAY
+import typings.heremaps.H.map.Object.Type.SPATIAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,13 +44,25 @@ object Type extends js.Object {
   @js.native
   sealed trait SPATIAL extends Type
   
-  /* 0 */ val ANY: typings.heremaps.H.map.Object.Type.ANY with Double = js.native
-  /* 4 */ val DOM_MARKER: typings.heremaps.H.map.Object.Type.DOM_MARKER with Double = js.native
-  /* 5 */ val GROUP: typings.heremaps.H.map.Object.Type.GROUP with Double = js.native
-  /* 3 */ val MARKER: typings.heremaps.H.map.Object.Type.MARKER with Double = js.native
-  /* 1 */ val OVERLAY: typings.heremaps.H.map.Object.Type.OVERLAY with Double = js.native
-  /* 2 */ val SPATIAL: typings.heremaps.H.map.Object.Type.SPATIAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Type with Double] = js.native
+  /* 0 */ @js.native
+  object ANY extends TopLevel[ANY with Double]
+  
+  /* 4 */ @js.native
+  object DOM_MARKER extends TopLevel[DOM_MARKER with Double]
+  
+  /* 5 */ @js.native
+  object GROUP extends TopLevel[GROUP with Double]
+  
+  /* 3 */ @js.native
+  object MARKER extends TopLevel[MARKER with Double]
+  
+  /* 1 */ @js.native
+  object OVERLAY extends TopLevel[OVERLAY with Double]
+  
+  /* 2 */ @js.native
+  object SPATIAL extends TopLevel[SPATIAL with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.AppLicenseType.perpetualAllUsers
+import typings.sharepoint.SP.AppLicenseType.perpetualMultiUser
+import typings.sharepoint.SP.AppLicenseType.trialAllUsers
+import typings.sharepoint.SP.AppLicenseType.trialMultiUser
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object AppLicenseType extends js.Object {
   @js.native
   sealed trait trialMultiUser extends AppLicenseType
   
-  /* 1 */ val perpetualAllUsers: typings.sharepoint.SP.AppLicenseType.perpetualAllUsers with Double = js.native
-  /* 0 */ val perpetualMultiUser: typings.sharepoint.SP.AppLicenseType.perpetualMultiUser with Double = js.native
-  /* 3 */ val trialAllUsers: typings.sharepoint.SP.AppLicenseType.trialAllUsers with Double = js.native
-  /* 2 */ val trialMultiUser: typings.sharepoint.SP.AppLicenseType.trialMultiUser with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppLicenseType with Double] = js.native
+  /* 1 */ @js.native
+  object perpetualAllUsers extends TopLevel[perpetualAllUsers with Double]
+  
+  /* 0 */ @js.native
+  object perpetualMultiUser extends TopLevel[perpetualMultiUser with Double]
+  
+  /* 3 */ @js.native
+  object trialAllUsers extends TopLevel[trialAllUsers with Double]
+  
+  /* 2 */ @js.native
+  object trialMultiUser extends TopLevel[trialMultiUser with Double]
+  
 }
 

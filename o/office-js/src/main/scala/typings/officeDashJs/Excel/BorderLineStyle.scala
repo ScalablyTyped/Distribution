@@ -1,5 +1,14 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.BorderLineStyle.continuous
+import typings.officeDashJs.Excel.BorderLineStyle.dash
+import typings.officeDashJs.Excel.BorderLineStyle.dashDot
+import typings.officeDashJs.Excel.BorderLineStyle.dashDotDot
+import typings.officeDashJs.Excel.BorderLineStyle.dot
+import typings.officeDashJs.Excel.BorderLineStyle.double
+import typings.officeDashJs.Excel.BorderLineStyle.none
+import typings.officeDashJs.Excel.BorderLineStyle.slantDashDot
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +46,31 @@ object BorderLineStyle extends js.Object {
   @js.native
   sealed trait slantDashDot extends BorderLineStyle
   
-  /* "Continuous" */ val continuous: typings.officeDashJs.Excel.BorderLineStyle.continuous with String = js.native
-  /* "Dash" */ val dash: typings.officeDashJs.Excel.BorderLineStyle.dash with String = js.native
-  /* "DashDot" */ val dashDot: typings.officeDashJs.Excel.BorderLineStyle.dashDot with String = js.native
-  /* "DashDotDot" */ val dashDotDot: typings.officeDashJs.Excel.BorderLineStyle.dashDotDot with String = js.native
-  /* "Dot" */ val dot: typings.officeDashJs.Excel.BorderLineStyle.dot with String = js.native
-  /* "Double" */ val double: typings.officeDashJs.Excel.BorderLineStyle.double with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.BorderLineStyle.none with String = js.native
-  /* "SlantDashDot" */ val slantDashDot: typings.officeDashJs.Excel.BorderLineStyle.slantDashDot with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BorderLineStyle with String] = js.native
+  /* "Continuous" */ @js.native
+  object continuous extends TopLevel[continuous with String]
+  
+  /* "Dash" */ @js.native
+  object dash extends TopLevel[dash with String]
+  
+  /* "DashDot" */ @js.native
+  object dashDot extends TopLevel[dashDot with String]
+  
+  /* "DashDotDot" */ @js.native
+  object dashDotDot extends TopLevel[dashDotDot with String]
+  
+  /* "Dot" */ @js.native
+  object dot extends TopLevel[dot with String]
+  
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "SlantDashDot" */ @js.native
+  object slantDashDot extends TopLevel[slantDashDot with String]
+  
 }
 

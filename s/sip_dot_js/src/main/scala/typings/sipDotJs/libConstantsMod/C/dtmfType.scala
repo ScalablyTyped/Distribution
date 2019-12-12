@@ -1,5 +1,7 @@
 package typings.sipDotJs.libConstantsMod.C
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sipDotJs.libConstantsMod.C.dtmfType.RTP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +18,14 @@ object dtmfType extends js.Object {
   @js.native
   sealed trait RTP extends dtmfType
   
-  /* "info" */ val INFO: typings.sipDotJs.libConstantsMod.C.dtmfType.INFO with String = js.native
-  /* "rtp" */ val RTP: typings.sipDotJs.libConstantsMod.C.dtmfType.RTP with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[dtmfType with String] = js.native
+  /* "info" */ @js.native
+  object INFO
+    extends TopLevel[typings.sipDotJs.libConstantsMod.C.dtmfType.INFO with String]
+  
+  /* "rtp" */ @js.native
+  object RTP extends TopLevel[RTP with String]
+  
 }
 

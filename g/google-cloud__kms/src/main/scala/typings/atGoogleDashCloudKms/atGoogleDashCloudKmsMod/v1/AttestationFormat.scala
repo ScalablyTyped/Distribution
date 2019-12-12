@@ -1,5 +1,8 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.ATTESTATION_FORMAT_UNSPECIFIED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.CAVIUM_V1_COMPRESSED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object AttestationFormat extends js.Object {
   @js.native
   sealed trait CAVIUM_V1_COMPRESSED extends AttestationFormat
   
-  /* 0 */ val ATTESTATION_FORMAT_UNSPECIFIED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.ATTESTATION_FORMAT_UNSPECIFIED with Double = js.native
-  /* 3 */ val CAVIUM_V1_COMPRESSED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.AttestationFormat.CAVIUM_V1_COMPRESSED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AttestationFormat with Double] = js.native
+  /* 0 */ @js.native
+  object ATTESTATION_FORMAT_UNSPECIFIED extends TopLevel[ATTESTATION_FORMAT_UNSPECIFIED with Double]
+  
+  /* 3 */ @js.native
+  object CAVIUM_V1_COMPRESSED extends TopLevel[CAVIUM_V1_COMPRESSED with Double]
+  
 }
 

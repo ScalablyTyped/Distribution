@@ -1,6 +1,12 @@
 package typings.heremaps.H.util
 
+import org.scalablytyped.runtime.TopLevel
 import typings.heremaps.H.util.Request.State
+import typings.heremaps.H.util.Request.State.CANCELLED
+import typings.heremaps.H.util.Request.State.COMPLETE
+import typings.heremaps.H.util.Request.State.ERROR
+import typings.heremaps.H.util.Request.State.PENDING
+import typings.heremaps.H.util.Request.State.PROCESSING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,13 +72,23 @@ object Request extends js.Object {
     @js.native
     sealed trait PROCESSING extends State
     
-    /* 3 */ val CANCELLED: typings.heremaps.H.util.Request.State.CANCELLED with Double = js.native
-    /* 2 */ val COMPLETE: typings.heremaps.H.util.Request.State.COMPLETE with Double = js.native
-    /* 4 */ val ERROR: typings.heremaps.H.util.Request.State.ERROR with Double = js.native
-    /* 0 */ val PENDING: typings.heremaps.H.util.Request.State.PENDING with Double = js.native
-    /* 1 */ val PROCESSING: typings.heremaps.H.util.Request.State.PROCESSING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[State with Double] = js.native
+    /* 3 */ @js.native
+    object CANCELLED extends TopLevel[CANCELLED with Double]
+    
+    /* 2 */ @js.native
+    object COMPLETE extends TopLevel[COMPLETE with Double]
+    
+    /* 4 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 0 */ @js.native
+    object PENDING extends TopLevel[PENDING with Double]
+    
+    /* 1 */ @js.native
+    object PROCESSING extends TopLevel[PROCESSING with Double]
+    
   }
   
 }

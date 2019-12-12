@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.PlatformType.Android
+import typings.officeDashJsDashPreview.Office.PlatformType.Mac
+import typings.officeDashJsDashPreview.Office.PlatformType.OfficeOnline
+import typings.officeDashJsDashPreview.Office.PlatformType.PC
+import typings.officeDashJsDashPreview.Office.PlatformType.Universal
+import typings.officeDashJsDashPreview.Office.PlatformType.iOS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,13 +56,25 @@ object PlatformType extends js.Object {
   @js.native
   sealed trait iOS extends PlatformType
   
-  /* 4 */ val Android: typings.officeDashJsDashPreview.Office.PlatformType.Android with Double = js.native
-  /* 2 */ val Mac: typings.officeDashJsDashPreview.Office.PlatformType.Mac with Double = js.native
-  /* 1 */ val OfficeOnline: typings.officeDashJsDashPreview.Office.PlatformType.OfficeOnline with Double = js.native
-  /* 0 */ val PC: typings.officeDashJsDashPreview.Office.PlatformType.PC with Double = js.native
-  /* 5 */ val Universal: typings.officeDashJsDashPreview.Office.PlatformType.Universal with Double = js.native
-  /* 3 */ val iOS: typings.officeDashJsDashPreview.Office.PlatformType.iOS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlatformType with Double] = js.native
+  /* 4 */ @js.native
+  object Android extends TopLevel[Android with Double]
+  
+  /* 2 */ @js.native
+  object Mac extends TopLevel[Mac with Double]
+  
+  /* 1 */ @js.native
+  object OfficeOnline extends TopLevel[OfficeOnline with Double]
+  
+  /* 0 */ @js.native
+  object PC extends TopLevel[PC with Double]
+  
+  /* 5 */ @js.native
+  object Universal extends TopLevel[Universal with Double]
+  
+  /* 3 */ @js.native
+  object iOS extends TopLevel[iOS with Double]
+  
 }
 

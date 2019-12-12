@@ -1,5 +1,10 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.TextEditorRevealType.AtTop
+import typings.vscode.vscodeMod.TextEditorRevealType.Default
+import typings.vscode.vscodeMod.TextEditorRevealType.InCenter
+import typings.vscode.vscodeMod.TextEditorRevealType.InCenterIfOutsideViewport
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,11 +40,19 @@ object TextEditorRevealType extends js.Object {
   @js.native
   sealed trait InCenterIfOutsideViewport extends TextEditorRevealType
   
-  /* 3 */ val AtTop: typings.vscode.vscodeMod.TextEditorRevealType.AtTop with Double = js.native
-  /* 0 */ val Default: typings.vscode.vscodeMod.TextEditorRevealType.Default with Double = js.native
-  /* 1 */ val InCenter: typings.vscode.vscodeMod.TextEditorRevealType.InCenter with Double = js.native
-  /* 2 */ val InCenterIfOutsideViewport: typings.vscode.vscodeMod.TextEditorRevealType.InCenterIfOutsideViewport with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextEditorRevealType with Double] = js.native
+  /* 3 */ @js.native
+  object AtTop extends TopLevel[AtTop with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object InCenter extends TopLevel[InCenter with Double]
+  
+  /* 2 */ @js.native
+  object InCenterIfOutsideViewport extends TopLevel[InCenterIfOutsideViewport with Double]
+  
 }
 

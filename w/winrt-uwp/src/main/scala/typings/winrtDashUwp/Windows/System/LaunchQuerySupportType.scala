@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uri
+import typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uriForResults
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object LaunchQuerySupportType extends js.Object {
   @js.native
   sealed trait uriForResults extends LaunchQuerySupportType
   
-  /* 0 */ val uri: typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uri with Double = js.native
-  /* 1 */ val uriForResults: typings.winrtDashUwp.Windows.System.LaunchQuerySupportType.uriForResults with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LaunchQuerySupportType with Double] = js.native
+  /* 0 */ @js.native
+  object uri extends TopLevel[uri with Double]
+  
+  /* 1 */ @js.native
+  object uriForResults extends TopLevel[uriForResults with Double]
+  
 }
 

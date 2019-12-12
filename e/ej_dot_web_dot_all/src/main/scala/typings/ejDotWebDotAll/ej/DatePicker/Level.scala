@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.DatePicker.Level.Century
+import typings.ejDotWebDotAll.ej.DatePicker.Level.Decade
+import typings.ejDotWebDotAll.ej.DatePicker.Level.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object Level extends js.Object {
   @js.native
   sealed trait Year extends Level
   
-  /* 2 */ val Century: typings.ejDotWebDotAll.ej.DatePicker.Level.Century with Double = js.native
-  /* 1 */ val Decade: typings.ejDotWebDotAll.ej.DatePicker.Level.Decade with Double = js.native
-  /* 0 */ val Year: typings.ejDotWebDotAll.ej.DatePicker.Level.Year with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Level with Double] = js.native
+  /* 2 */ @js.native
+  object Century extends TopLevel[Century with Double]
+  
+  /* 1 */ @js.native
+  object Decade extends TopLevel[Decade with Double]
+  
+  /* 0 */ @js.native
+  object Year extends TopLevel[Year with Double]
+  
 }
 

@@ -1,5 +1,25 @@
 package typings.winrtDashUwp.Windows.Devices.Midi
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.activeSensing
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.channelPressure
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.continue
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.controlChange
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.midiTimeCode
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.none
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOff
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOn
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.pitchBendChange
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.polyphonicKeyPressure
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.programChange
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songPositionPointer
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songSelect
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.start
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.stop
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemExclusive
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemReset
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.timingClock
+import typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.tuneRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -87,26 +107,64 @@ object MidiMessageType extends js.Object {
   @js.native
   sealed trait tuneRequest extends MidiMessageType
   
-  /* 17 */ val activeSensing: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.activeSensing with Double = js.native
-  /* 6 */ val channelPressure: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.channelPressure with Double = js.native
-  /* 15 */ val continue: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.continue with Double = js.native
-  /* 4 */ val controlChange: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.controlChange with Double = js.native
-  /* 9 */ val midiTimeCode: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.midiTimeCode with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.none with Double = js.native
-  /* 1 */ val noteOff: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOff with Double = js.native
-  /* 2 */ val noteOn: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.noteOn with Double = js.native
-  /* 7 */ val pitchBendChange: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.pitchBendChange with Double = js.native
-  /* 3 */ val polyphonicKeyPressure: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.polyphonicKeyPressure with Double = js.native
-  /* 5 */ val programChange: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.programChange with Double = js.native
-  /* 10 */ val songPositionPointer: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songPositionPointer with Double = js.native
-  /* 11 */ val songSelect: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.songSelect with Double = js.native
-  /* 14 */ val start: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.start with Double = js.native
-  /* 16 */ val stop: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.stop with Double = js.native
-  /* 8 */ val systemExclusive: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemExclusive with Double = js.native
-  /* 18 */ val systemReset: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.systemReset with Double = js.native
-  /* 13 */ val timingClock: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.timingClock with Double = js.native
-  /* 12 */ val tuneRequest: typings.winrtDashUwp.Windows.Devices.Midi.MidiMessageType.tuneRequest with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MidiMessageType with Double] = js.native
+  /* 17 */ @js.native
+  object activeSensing extends TopLevel[activeSensing with Double]
+  
+  /* 6 */ @js.native
+  object channelPressure extends TopLevel[channelPressure with Double]
+  
+  /* 15 */ @js.native
+  object continue extends TopLevel[continue with Double]
+  
+  /* 4 */ @js.native
+  object controlChange extends TopLevel[controlChange with Double]
+  
+  /* 9 */ @js.native
+  object midiTimeCode extends TopLevel[midiTimeCode with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object noteOff extends TopLevel[noteOff with Double]
+  
+  /* 2 */ @js.native
+  object noteOn extends TopLevel[noteOn with Double]
+  
+  /* 7 */ @js.native
+  object pitchBendChange extends TopLevel[pitchBendChange with Double]
+  
+  /* 3 */ @js.native
+  object polyphonicKeyPressure extends TopLevel[polyphonicKeyPressure with Double]
+  
+  /* 5 */ @js.native
+  object programChange extends TopLevel[programChange with Double]
+  
+  /* 10 */ @js.native
+  object songPositionPointer extends TopLevel[songPositionPointer with Double]
+  
+  /* 11 */ @js.native
+  object songSelect extends TopLevel[songSelect with Double]
+  
+  /* 14 */ @js.native
+  object start extends TopLevel[start with Double]
+  
+  /* 16 */ @js.native
+  object stop extends TopLevel[stop with Double]
+  
+  /* 8 */ @js.native
+  object systemExclusive extends TopLevel[systemExclusive with Double]
+  
+  /* 18 */ @js.native
+  object systemReset extends TopLevel[systemReset with Double]
+  
+  /* 13 */ @js.native
+  object timingClock extends TopLevel[timingClock with Double]
+  
+  /* 12 */ @js.native
+  object tuneRequest extends TopLevel[tuneRequest with Double]
+  
 }
 

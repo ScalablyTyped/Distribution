@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Both
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Horizontal
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ErrorBarMode extends js.Object {
   @js.native
   sealed trait Vertical extends ErrorBarMode
   
-  /* 0 */ val Both: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Both with Double = js.native
-  /* 2 */ val Horizontal: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Horizontal with Double = js.native
-  /* 1 */ val Vertical: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarMode.Vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ErrorBarMode with Double] = js.native
+  /* 0 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 2 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 1 */ @js.native
+  object Vertical extends TopLevel[Vertical with Double]
+  
 }
 

@@ -1,5 +1,18 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.address
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.connectedServiceAccount
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.custom
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.email
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.importantDate
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.instantMessage
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.jobInfo
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.location
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.notes
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.significantOther
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.website
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,19 +72,43 @@ object ContactFieldType extends js.Object {
   @js.native
   sealed trait website extends ContactFieldType
   
-  /* 7 */ val address: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.address with Double = js.native
-  /* 5 */ val connectedServiceAccount: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.connectedServiceAccount with Double = js.native
-  /* 4 */ val custom: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.custom with Double = js.native
-  /* 0 */ val email: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.email with Double = js.native
-  /* 6 */ val importantDate: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.importantDate with Double = js.native
-  /* 3 */ val instantMessage: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.instantMessage with Double = js.native
-  /* 11 */ val jobInfo: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.jobInfo with Double = js.native
-  /* 2 */ val location: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.location with Double = js.native
-  /* 9 */ val notes: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.notes with Double = js.native
-  /* 1 */ val phoneNumber: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber with Double = js.native
-  /* 8 */ val significantOther: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.significantOther with Double = js.native
-  /* 10 */ val website: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactFieldType.website with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactFieldType with Double] = js.native
+  /* 7 */ @js.native
+  object address extends TopLevel[address with Double]
+  
+  /* 5 */ @js.native
+  object connectedServiceAccount extends TopLevel[connectedServiceAccount with Double]
+  
+  /* 4 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 0 */ @js.native
+  object email extends TopLevel[email with Double]
+  
+  /* 6 */ @js.native
+  object importantDate extends TopLevel[importantDate with Double]
+  
+  /* 3 */ @js.native
+  object instantMessage extends TopLevel[instantMessage with Double]
+  
+  /* 11 */ @js.native
+  object jobInfo extends TopLevel[jobInfo with Double]
+  
+  /* 2 */ @js.native
+  object location extends TopLevel[location with Double]
+  
+  /* 9 */ @js.native
+  object notes extends TopLevel[notes with Double]
+  
+  /* 1 */ @js.native
+  object phoneNumber extends TopLevel[phoneNumber with Double]
+  
+  /* 8 */ @js.native
+  object significantOther extends TopLevel[significantOther with Double]
+  
+  /* 10 */ @js.native
+  object website extends TopLevel[website with Double]
+  
 }
 

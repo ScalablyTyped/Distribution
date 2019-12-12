@@ -1,5 +1,12 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.FlexJustifyContent.Center
+import typings.openui5.sap.m.FlexJustifyContent.End
+import typings.openui5.sap.m.FlexJustifyContent.Inherit
+import typings.openui5.sap.m.FlexJustifyContent.SpaceAround
+import typings.openui5.sap.m.FlexJustifyContent.SpaceBetween
+import typings.openui5.sap.m.FlexJustifyContent.Start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object FlexJustifyContent extends js.Object {
   @js.native
   sealed trait Start extends FlexJustifyContent
   
-  /* 0 */ val Center: typings.openui5.sap.m.FlexJustifyContent.Center with Double = js.native
-  /* 1 */ val End: typings.openui5.sap.m.FlexJustifyContent.End with Double = js.native
-  /* 2 */ val Inherit: typings.openui5.sap.m.FlexJustifyContent.Inherit with Double = js.native
-  /* 3 */ val SpaceAround: typings.openui5.sap.m.FlexJustifyContent.SpaceAround with Double = js.native
-  /* 4 */ val SpaceBetween: typings.openui5.sap.m.FlexJustifyContent.SpaceBetween with Double = js.native
-  /* 5 */ val Start: typings.openui5.sap.m.FlexJustifyContent.Start with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlexJustifyContent with Double] = js.native
+  /* 0 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 1 */ @js.native
+  object End extends TopLevel[End with Double]
+  
+  /* 2 */ @js.native
+  object Inherit extends TopLevel[Inherit with Double]
+  
+  /* 3 */ @js.native
+  object SpaceAround extends TopLevel[SpaceAround with Double]
+  
+  /* 4 */ @js.native
+  object SpaceBetween extends TopLevel[SpaceBetween with Double]
+  
+  /* 5 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
 }
 

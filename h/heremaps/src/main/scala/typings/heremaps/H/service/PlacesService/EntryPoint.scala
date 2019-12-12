@@ -1,5 +1,12 @@
 package typings.heremaps.H.service.PlacesService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.heremaps.H.service.PlacesService.EntryPoint.AROUND
+import typings.heremaps.H.service.PlacesService.EntryPoint.CATEGORIES
+import typings.heremaps.H.service.PlacesService.EntryPoint.EXPLORE
+import typings.heremaps.H.service.PlacesService.EntryPoint.HERE
+import typings.heremaps.H.service.PlacesService.EntryPoint.SEARCH
+import typings.heremaps.H.service.PlacesService.EntryPoint.SUGGEST
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object EntryPoint extends js.Object {
   @js.native
   sealed trait SUGGEST extends EntryPoint
   
-  /* 3 */ val AROUND: typings.heremaps.H.service.PlacesService.EntryPoint.AROUND with Double = js.native
-  /* 5 */ val CATEGORIES: typings.heremaps.H.service.PlacesService.EntryPoint.CATEGORIES with Double = js.native
-  /* 2 */ val EXPLORE: typings.heremaps.H.service.PlacesService.EntryPoint.EXPLORE with Double = js.native
-  /* 4 */ val HERE: typings.heremaps.H.service.PlacesService.EntryPoint.HERE with Double = js.native
-  /* 0 */ val SEARCH: typings.heremaps.H.service.PlacesService.EntryPoint.SEARCH with Double = js.native
-  /* 1 */ val SUGGEST: typings.heremaps.H.service.PlacesService.EntryPoint.SUGGEST with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EntryPoint with Double] = js.native
+  /* 3 */ @js.native
+  object AROUND extends TopLevel[AROUND with Double]
+  
+  /* 5 */ @js.native
+  object CATEGORIES extends TopLevel[CATEGORIES with Double]
+  
+  /* 2 */ @js.native
+  object EXPLORE extends TopLevel[EXPLORE with Double]
+  
+  /* 4 */ @js.native
+  object HERE extends TopLevel[HERE with Double]
+  
+  /* 0 */ @js.native
+  object SEARCH extends TopLevel[SEARCH with Double]
+  
+  /* 1 */ @js.native
+  object SUGGEST extends TopLevel[SUGGEST with Double]
+  
 }
 

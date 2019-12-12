@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.SortDataOption.normal
+import typings.officeDashJsDashPreview.Excel.SortDataOption.textAsNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SortDataOption extends js.Object {
   @js.native
   sealed trait textAsNumber extends SortDataOption
   
-  /* "Normal" */ val normal: typings.officeDashJsDashPreview.Excel.SortDataOption.normal with String = js.native
-  /* "TextAsNumber" */ val textAsNumber: typings.officeDashJsDashPreview.Excel.SortDataOption.textAsNumber with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SortDataOption with String] = js.native
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "TextAsNumber" */ @js.native
+  object textAsNumber extends TopLevel[textAsNumber with String]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.nodeDashForge.nodeDashForgeMod.tls
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_request
+import typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object HeartbeatMessageType extends js.Object {
   @js.native
   sealed trait heartbeat_response extends HeartbeatMessageType
   
-  /* 1 */ val heartbeat_request: typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_request with Double = js.native
-  /* 2 */ val heartbeat_response: typings.nodeDashForge.nodeDashForgeMod.tls.HeartbeatMessageType.heartbeat_response with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HeartbeatMessageType with Double] = js.native
+  /* 1 */ @js.native
+  object heartbeat_request extends TopLevel[heartbeat_request with Double]
+  
+  /* 2 */ @js.native
+  object heartbeat_response extends TopLevel[heartbeat_response with Double]
+  
 }
 

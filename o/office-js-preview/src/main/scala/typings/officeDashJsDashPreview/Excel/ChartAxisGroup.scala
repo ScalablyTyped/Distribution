@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartAxisGroup.primary
+import typings.officeDashJsDashPreview.Excel.ChartAxisGroup.secondary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ChartAxisGroup extends js.Object {
   @js.native
   sealed trait secondary extends ChartAxisGroup
   
-  /* "Primary" */ val primary: typings.officeDashJsDashPreview.Excel.ChartAxisGroup.primary with String = js.native
-  /* "Secondary" */ val secondary: typings.officeDashJsDashPreview.Excel.ChartAxisGroup.secondary with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisGroup with String] = js.native
+  /* "Primary" */ @js.native
+  object primary extends TopLevel[primary with String]
+  
+  /* "Secondary" */ @js.native
+  object secondary extends TopLevel[secondary with String]
+  
 }
 

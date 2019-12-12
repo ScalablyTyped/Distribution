@@ -1,5 +1,18 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Author
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.AverageRating
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.InstallCount
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.LastUpdatedDate
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.PublishedDate
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.ReleaseDate
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Relevance
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Title
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingDaily
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingMonthly
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingWeekly
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.WeightedRating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,20 +101,49 @@ object SortByType extends js.Object {
   @js.native
   sealed trait WeightedRating extends SortByType
   
-  /* 11 */ val Author: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Author with Double = js.native
-  /* 6 */ val AverageRating: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.AverageRating with Double = js.native
-  /* 4 */ val InstallCount: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.InstallCount with Double = js.native
-  /* 1 */ val LastUpdatedDate: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.LastUpdatedDate with Double = js.native
-  /* 5 */ val PublishedDate: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.PublishedDate with Double = js.native
-  /* 3 */ val Publisher: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Publisher with Double = js.native
-  /* 10 */ val ReleaseDate: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.ReleaseDate with Double = js.native
-  /* 0 */ val Relevance: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Relevance with Double = js.native
-  /* 2 */ val Title: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Title with Double = js.native
-  /* 7 */ val TrendingDaily: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingDaily with Double = js.native
-  /* 9 */ val TrendingMonthly: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingMonthly with Double = js.native
-  /* 8 */ val TrendingWeekly: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.TrendingWeekly with Double = js.native
-  /* 12 */ val WeightedRating: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.WeightedRating with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SortByType with Double] = js.native
+  /* 11 */ @js.native
+  object Author extends TopLevel[Author with Double]
+  
+  /* 6 */ @js.native
+  object AverageRating extends TopLevel[AverageRating with Double]
+  
+  /* 4 */ @js.native
+  object InstallCount extends TopLevel[InstallCount with Double]
+  
+  /* 1 */ @js.native
+  object LastUpdatedDate extends TopLevel[LastUpdatedDate with Double]
+  
+  /* 5 */ @js.native
+  object PublishedDate extends TopLevel[PublishedDate with Double]
+  
+  /* 3 */ @js.native
+  object Publisher
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.SortByType.Publisher with Double
+        ]
+  
+  /* 10 */ @js.native
+  object ReleaseDate extends TopLevel[ReleaseDate with Double]
+  
+  /* 0 */ @js.native
+  object Relevance extends TopLevel[Relevance with Double]
+  
+  /* 2 */ @js.native
+  object Title extends TopLevel[Title with Double]
+  
+  /* 7 */ @js.native
+  object TrendingDaily extends TopLevel[TrendingDaily with Double]
+  
+  /* 9 */ @js.native
+  object TrendingMonthly extends TopLevel[TrendingMonthly with Double]
+  
+  /* 8 */ @js.native
+  object TrendingWeekly extends TopLevel[TrendingWeekly with Double]
+  
+  /* 12 */ @js.native
+  object WeightedRating extends TopLevel[WeightedRating with Double]
+  
 }
 

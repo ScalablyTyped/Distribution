@@ -1,5 +1,32 @@
 package typings.swig.swigMod.lexer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.swig.swigMod.lexer.TYPES.ARRAYOPEN
+import typings.swig.swigMod.lexer.TYPES.ASSIGNMENT
+import typings.swig.swigMod.lexer.TYPES.BOOL
+import typings.swig.swigMod.lexer.TYPES.BRACKETCLOSE
+import typings.swig.swigMod.lexer.TYPES.BRACKETOPEN
+import typings.swig.swigMod.lexer.TYPES.COLON
+import typings.swig.swigMod.lexer.TYPES.COMMA
+import typings.swig.swigMod.lexer.TYPES.COMPARATOR
+import typings.swig.swigMod.lexer.TYPES.CURLYCLOSE
+import typings.swig.swigMod.lexer.TYPES.CURLYOPEN
+import typings.swig.swigMod.lexer.TYPES.DOTKEY
+import typings.swig.swigMod.lexer.TYPES.FILTER
+import typings.swig.swigMod.lexer.TYPES.FILTEREMPTY
+import typings.swig.swigMod.lexer.TYPES.FUNCTION
+import typings.swig.swigMod.lexer.TYPES.FUNCTIONEMPTY
+import typings.swig.swigMod.lexer.TYPES.LOGIC
+import typings.swig.swigMod.lexer.TYPES.METHODOPEN
+import typings.swig.swigMod.lexer.TYPES.NOT
+import typings.swig.swigMod.lexer.TYPES.NUMBER
+import typings.swig.swigMod.lexer.TYPES.OPERATOR
+import typings.swig.swigMod.lexer.TYPES.PARENCLOSE
+import typings.swig.swigMod.lexer.TYPES.PARENOPEN
+import typings.swig.swigMod.lexer.TYPES.STRING
+import typings.swig.swigMod.lexer.TYPES.UNKNOWN
+import typings.swig.swigMod.lexer.TYPES.VAR
+import typings.swig.swigMod.lexer.TYPES.WHITESPACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -120,33 +147,85 @@ object TYPES extends js.Object {
   @js.native
   sealed trait WHITESPACE extends TYPES
   
-  /* 15 */ val ARRAYOPEN: typings.swig.swigMod.lexer.TYPES.ARRAYOPEN with Double = js.native
-  /* 24 */ val ASSIGNMENT: typings.swig.swigMod.lexer.TYPES.ASSIGNMENT with Double = js.native
-  /* 23 */ val BOOL: typings.swig.swigMod.lexer.TYPES.BOOL with Double = js.native
-  /* 13 */ val BRACKETCLOSE: typings.swig.swigMod.lexer.TYPES.BRACKETCLOSE with Double = js.native
-  /* 12 */ val BRACKETOPEN: typings.swig.swigMod.lexer.TYPES.BRACKETOPEN with Double = js.native
-  /* 19 */ val COLON: typings.swig.swigMod.lexer.TYPES.COLON with Double = js.native
-  /* 8 */ val COMMA: typings.swig.swigMod.lexer.TYPES.COMMA with Double = js.native
-  /* 20 */ val COMPARATOR: typings.swig.swigMod.lexer.TYPES.COMPARATOR with Double = js.native
-  /* 18 */ val CURLYCLOSE: typings.swig.swigMod.lexer.TYPES.CURLYCLOSE with Double = js.native
-  /* 17 */ val CURLYOPEN: typings.swig.swigMod.lexer.TYPES.CURLYOPEN with Double = js.native
-  /* 14 */ val DOTKEY: typings.swig.swigMod.lexer.TYPES.DOTKEY with Double = js.native
-  /* 2 */ val FILTER: typings.swig.swigMod.lexer.TYPES.FILTER with Double = js.native
-  /* 3 */ val FILTEREMPTY: typings.swig.swigMod.lexer.TYPES.FILTEREMPTY with Double = js.native
-  /* 4 */ val FUNCTION: typings.swig.swigMod.lexer.TYPES.FUNCTION with Double = js.native
-  /* 5 */ val FUNCTIONEMPTY: typings.swig.swigMod.lexer.TYPES.FUNCTIONEMPTY with Double = js.native
-  /* 21 */ val LOGIC: typings.swig.swigMod.lexer.TYPES.LOGIC with Double = js.native
-  /* 25 */ val METHODOPEN: typings.swig.swigMod.lexer.TYPES.METHODOPEN with Double = js.native
-  /* 22 */ val NOT: typings.swig.swigMod.lexer.TYPES.NOT with Double = js.native
-  /* 10 */ val NUMBER: typings.swig.swigMod.lexer.TYPES.NUMBER with Double = js.native
-  /* 11 */ val OPERATOR: typings.swig.swigMod.lexer.TYPES.OPERATOR with Double = js.native
-  /* 7 */ val PARENCLOSE: typings.swig.swigMod.lexer.TYPES.PARENCLOSE with Double = js.native
-  /* 6 */ val PARENOPEN: typings.swig.swigMod.lexer.TYPES.PARENOPEN with Double = js.native
-  /* 1 */ val STRING: typings.swig.swigMod.lexer.TYPES.STRING with Double = js.native
-  /* 100 */ val UNKNOWN: typings.swig.swigMod.lexer.TYPES.UNKNOWN with Double = js.native
-  /* 9 */ val VAR: typings.swig.swigMod.lexer.TYPES.VAR with Double = js.native
-  /* 0 */ val WHITESPACE: typings.swig.swigMod.lexer.TYPES.WHITESPACE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TYPES with Double] = js.native
+  /* 15 */ @js.native
+  object ARRAYOPEN extends TopLevel[ARRAYOPEN with Double]
+  
+  /* 24 */ @js.native
+  object ASSIGNMENT extends TopLevel[ASSIGNMENT with Double]
+  
+  /* 23 */ @js.native
+  object BOOL extends TopLevel[BOOL with Double]
+  
+  /* 13 */ @js.native
+  object BRACKETCLOSE extends TopLevel[BRACKETCLOSE with Double]
+  
+  /* 12 */ @js.native
+  object BRACKETOPEN extends TopLevel[BRACKETOPEN with Double]
+  
+  /* 19 */ @js.native
+  object COLON extends TopLevel[COLON with Double]
+  
+  /* 8 */ @js.native
+  object COMMA extends TopLevel[COMMA with Double]
+  
+  /* 20 */ @js.native
+  object COMPARATOR extends TopLevel[COMPARATOR with Double]
+  
+  /* 18 */ @js.native
+  object CURLYCLOSE extends TopLevel[CURLYCLOSE with Double]
+  
+  /* 17 */ @js.native
+  object CURLYOPEN extends TopLevel[CURLYOPEN with Double]
+  
+  /* 14 */ @js.native
+  object DOTKEY extends TopLevel[DOTKEY with Double]
+  
+  /* 2 */ @js.native
+  object FILTER extends TopLevel[FILTER with Double]
+  
+  /* 3 */ @js.native
+  object FILTEREMPTY extends TopLevel[FILTEREMPTY with Double]
+  
+  /* 4 */ @js.native
+  object FUNCTION extends TopLevel[FUNCTION with Double]
+  
+  /* 5 */ @js.native
+  object FUNCTIONEMPTY extends TopLevel[FUNCTIONEMPTY with Double]
+  
+  /* 21 */ @js.native
+  object LOGIC extends TopLevel[LOGIC with Double]
+  
+  /* 25 */ @js.native
+  object METHODOPEN extends TopLevel[METHODOPEN with Double]
+  
+  /* 22 */ @js.native
+  object NOT extends TopLevel[NOT with Double]
+  
+  /* 10 */ @js.native
+  object NUMBER extends TopLevel[NUMBER with Double]
+  
+  /* 11 */ @js.native
+  object OPERATOR extends TopLevel[OPERATOR with Double]
+  
+  /* 7 */ @js.native
+  object PARENCLOSE extends TopLevel[PARENCLOSE with Double]
+  
+  /* 6 */ @js.native
+  object PARENOPEN extends TopLevel[PARENOPEN with Double]
+  
+  /* 1 */ @js.native
+  object STRING extends TopLevel[STRING with Double]
+  
+  /* 100 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
+  /* 9 */ @js.native
+  object VAR extends TopLevel[VAR with Double]
+  
+  /* 0 */ @js.native
+  object WHITESPACE extends TopLevel[WHITESPACE with Double]
+  
 }
 

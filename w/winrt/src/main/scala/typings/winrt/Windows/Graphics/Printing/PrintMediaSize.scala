@@ -1,5 +1,179 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.businessCard
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.creditCard
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.default
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA0
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA1
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA10
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA2
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3Extra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4Extra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5Extra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA6
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA6Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA7
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA8
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA9
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB0
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB1
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB10
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB2
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB3
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB4
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB4Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB5Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB5Extra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB7
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB8
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB9
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC0
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC1
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC10
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC2
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC3
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC3Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC4
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC4Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC5
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC5Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6C5Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC7
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC8
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC9
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoDLEnvelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoDLEnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoSRA3
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japan2LPhoto
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou3Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou3EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou4Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou4EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanDoubleHagakiPostcard
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanDoubleHagakiPostcardRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanHagakiPostcard
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanHagakiPostcardRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku2Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku2EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku3Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku3EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanLPhoto
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanQuadrupleHagakiPostcard
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou1Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou2Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou3Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou4Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou4EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou6Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou6EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB0
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB1
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB10
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB2
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB3
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB4
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB4Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB5
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB5Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB6
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB6Rotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB7
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB8
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB9
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x11
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x12
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x14
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica11x17
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica14x17
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica4x6
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica4x8
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica5x7
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica8x10
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica9x11
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureASheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureBSheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureCSheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureDSheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureESheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaCSheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaDSheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaESheet
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaExecutive
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaGermanLegalFanfold
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaGermanStandardFanfold
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLegal
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLegalExtra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetter
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterExtra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterPlus
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaMonarchEnvelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNote
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber10Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber10EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber11Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber12Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber14Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber9Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaPersonalEnvelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaQuarto
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaStatement
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaSuperA
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaSuperB
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaTabloid
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaTabloidExtra
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.notAvailable
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricA3Plus
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricA4Plus
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricFolio
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricInviteEnvelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricItalianEnvelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc10Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc10EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc16K
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc16KRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc1Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc1EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc2Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc2EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32K
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32KBig
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32KRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc3Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc3EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc4Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc4EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc5Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc5EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc6Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc6EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc7Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc7EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc8Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc8EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc9Envelope
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc9EnvelopeRotated
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.printerCustom
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll04Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll06Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll08Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll12Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll15Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll18Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll22Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll24Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll30Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll36Inch
+import typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll54Inch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -529,180 +703,526 @@ object PrintMediaSize extends js.Object {
   @js.native
   sealed trait roll54Inch extends PrintMediaSize
   
-  /* 3 */ val businessCard: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.businessCard with Double = js.native
-  /* 4 */ val creditCard: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.creditCard with Double = js.native
-  /* 0 */ val default: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.default with Double = js.native
-  /* 5 */ val isoA0: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA0 with Double = js.native
-  /* 6 */ val isoA1: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA1 with Double = js.native
-  /* 7 */ val isoA10: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA10 with Double = js.native
-  /* 8 */ val isoA2: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA2 with Double = js.native
-  /* 9 */ val isoA3: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3 with Double = js.native
-  /* 10 */ val isoA3Extra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3Extra with Double = js.native
-  /* 11 */ val isoA3Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA3Rotated with Double = js.native
-  /* 12 */ val isoA4: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4 with Double = js.native
-  /* 13 */ val isoA4Extra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4Extra with Double = js.native
-  /* 14 */ val isoA4Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA4Rotated with Double = js.native
-  /* 15 */ val isoA5: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5 with Double = js.native
-  /* 16 */ val isoA5Extra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5Extra with Double = js.native
-  /* 17 */ val isoA5Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA5Rotated with Double = js.native
-  /* 18 */ val isoA6: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA6 with Double = js.native
-  /* 19 */ val isoA6Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA6Rotated with Double = js.native
-  /* 20 */ val isoA7: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA7 with Double = js.native
-  /* 21 */ val isoA8: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA8 with Double = js.native
-  /* 22 */ val isoA9: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoA9 with Double = js.native
-  /* 23 */ val isoB0: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB0 with Double = js.native
-  /* 24 */ val isoB1: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB1 with Double = js.native
-  /* 25 */ val isoB10: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB10 with Double = js.native
-  /* 26 */ val isoB2: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB2 with Double = js.native
-  /* 27 */ val isoB3: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB3 with Double = js.native
-  /* 28 */ val isoB4: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB4 with Double = js.native
-  /* 29 */ val isoB4Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB4Envelope with Double = js.native
-  /* 30 */ val isoB5Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB5Envelope with Double = js.native
-  /* 31 */ val isoB5Extra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB5Extra with Double = js.native
-  /* 32 */ val isoB7: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB7 with Double = js.native
-  /* 33 */ val isoB8: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB8 with Double = js.native
-  /* 34 */ val isoB9: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoB9 with Double = js.native
-  /* 35 */ val isoC0: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC0 with Double = js.native
-  /* 36 */ val isoC1: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC1 with Double = js.native
-  /* 37 */ val isoC10: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC10 with Double = js.native
-  /* 38 */ val isoC2: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC2 with Double = js.native
-  /* 39 */ val isoC3: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC3 with Double = js.native
-  /* 40 */ val isoC3Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC3Envelope with Double = js.native
-  /* 41 */ val isoC4: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC4 with Double = js.native
-  /* 42 */ val isoC4Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC4Envelope with Double = js.native
-  /* 43 */ val isoC5: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC5 with Double = js.native
-  /* 44 */ val isoC5Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC5Envelope with Double = js.native
-  /* 45 */ val isoC6: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6 with Double = js.native
-  /* 46 */ val isoC6C5Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6C5Envelope with Double = js.native
-  /* 47 */ val isoC6Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC6Envelope with Double = js.native
-  /* 48 */ val isoC7: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC7 with Double = js.native
-  /* 49 */ val isoC8: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC8 with Double = js.native
-  /* 50 */ val isoC9: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoC9 with Double = js.native
-  /* 51 */ val isoDLEnvelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoDLEnvelope with Double = js.native
-  /* 52 */ val isoDLEnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoDLEnvelopeRotated with Double = js.native
-  /* 53 */ val isoSRA3: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.isoSRA3 with Double = js.native
-  /* 54 */ val japan2LPhoto: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japan2LPhoto with Double = js.native
-  /* 55 */ val japanChou3Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou3Envelope with Double = js.native
-  /* 56 */ val japanChou3EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou3EnvelopeRotated with Double = js.native
-  /* 57 */ val japanChou4Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou4Envelope with Double = js.native
-  /* 58 */ val japanChou4EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanChou4EnvelopeRotated with Double = js.native
-  /* 59 */ val japanDoubleHagakiPostcard: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanDoubleHagakiPostcard with Double = js.native
-  /* 60 */ val japanDoubleHagakiPostcardRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanDoubleHagakiPostcardRotated with Double = js.native
-  /* 61 */ val japanHagakiPostcard: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanHagakiPostcard with Double = js.native
-  /* 62 */ val japanHagakiPostcardRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanHagakiPostcardRotated with Double = js.native
-  /* 63 */ val japanKaku2Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku2Envelope with Double = js.native
-  /* 64 */ val japanKaku2EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku2EnvelopeRotated with Double = js.native
-  /* 65 */ val japanKaku3Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku3Envelope with Double = js.native
-  /* 66 */ val japanKaku3EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanKaku3EnvelopeRotated with Double = js.native
-  /* 67 */ val japanLPhoto: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanLPhoto with Double = js.native
-  /* 68 */ val japanQuadrupleHagakiPostcard: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanQuadrupleHagakiPostcard with Double = js.native
-  /* 69 */ val japanYou1Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou1Envelope with Double = js.native
-  /* 70 */ val japanYou2Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou2Envelope with Double = js.native
-  /* 71 */ val japanYou3Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou3Envelope with Double = js.native
-  /* 72 */ val japanYou4Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou4Envelope with Double = js.native
-  /* 73 */ val japanYou4EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou4EnvelopeRotated with Double = js.native
-  /* 74 */ val japanYou6Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou6Envelope with Double = js.native
-  /* 75 */ val japanYou6EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.japanYou6EnvelopeRotated with Double = js.native
-  /* 76 */ val jisB0: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB0 with Double = js.native
-  /* 77 */ val jisB1: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB1 with Double = js.native
-  /* 78 */ val jisB10: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB10 with Double = js.native
-  /* 79 */ val jisB2: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB2 with Double = js.native
-  /* 80 */ val jisB3: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB3 with Double = js.native
-  /* 81 */ val jisB4: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB4 with Double = js.native
-  /* 82 */ val jisB4Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB4Rotated with Double = js.native
-  /* 83 */ val jisB5: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB5 with Double = js.native
-  /* 84 */ val jisB5Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB5Rotated with Double = js.native
-  /* 85 */ val jisB6: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB6 with Double = js.native
-  /* 86 */ val jisB6Rotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB6Rotated with Double = js.native
-  /* 87 */ val jisB7: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB7 with Double = js.native
-  /* 88 */ val jisB8: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB8 with Double = js.native
-  /* 89 */ val jisB9: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.jisB9 with Double = js.native
-  /* 90 */ val northAmerica10x11: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x11 with Double = js.native
-  /* 91 */ val northAmerica10x12: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x12 with Double = js.native
-  /* 92 */ val northAmerica10x14: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica10x14 with Double = js.native
-  /* 93 */ val northAmerica11x17: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica11x17 with Double = js.native
-  /* 94 */ val northAmerica14x17: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica14x17 with Double = js.native
-  /* 95 */ val northAmerica4x6: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica4x6 with Double = js.native
-  /* 96 */ val northAmerica4x8: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica4x8 with Double = js.native
-  /* 97 */ val northAmerica5x7: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica5x7 with Double = js.native
-  /* 98 */ val northAmerica8x10: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica8x10 with Double = js.native
-  /* 99 */ val northAmerica9x11: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmerica9x11 with Double = js.native
-  /* 100 */ val northAmericaArchitectureASheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureASheet with Double = js.native
-  /* 101 */ val northAmericaArchitectureBSheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureBSheet with Double = js.native
-  /* 102 */ val northAmericaArchitectureCSheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureCSheet with Double = js.native
-  /* 103 */ val northAmericaArchitectureDSheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureDSheet with Double = js.native
-  /* 104 */ val northAmericaArchitectureESheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaArchitectureESheet with Double = js.native
-  /* 105 */ val northAmericaCSheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaCSheet with Double = js.native
-  /* 106 */ val northAmericaDSheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaDSheet with Double = js.native
-  /* 107 */ val northAmericaESheet: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaESheet with Double = js.native
-  /* 108 */ val northAmericaExecutive: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaExecutive with Double = js.native
-  /* 109 */ val northAmericaGermanLegalFanfold: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaGermanLegalFanfold with Double = js.native
-  /* 110 */ val northAmericaGermanStandardFanfold: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaGermanStandardFanfold with Double = js.native
-  /* 111 */ val northAmericaLegal: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLegal with Double = js.native
-  /* 112 */ val northAmericaLegalExtra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLegalExtra with Double = js.native
-  /* 113 */ val northAmericaLetter: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetter with Double = js.native
-  /* 114 */ val northAmericaLetterExtra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterExtra with Double = js.native
-  /* 115 */ val northAmericaLetterPlus: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterPlus with Double = js.native
-  /* 116 */ val northAmericaLetterRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaLetterRotated with Double = js.native
-  /* 117 */ val northAmericaMonarchEnvelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaMonarchEnvelope with Double = js.native
-  /* 118 */ val northAmericaNote: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNote with Double = js.native
-  /* 119 */ val northAmericaNumber10Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber10Envelope with Double = js.native
-  /* 120 */ val northAmericaNumber10EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber10EnvelopeRotated with Double = js.native
-  /* 121 */ val northAmericaNumber11Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber11Envelope with Double = js.native
-  /* 122 */ val northAmericaNumber12Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber12Envelope with Double = js.native
-  /* 123 */ val northAmericaNumber14Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber14Envelope with Double = js.native
-  /* 124 */ val northAmericaNumber9Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaNumber9Envelope with Double = js.native
-  /* 125 */ val northAmericaPersonalEnvelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaPersonalEnvelope with Double = js.native
-  /* 126 */ val northAmericaQuarto: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaQuarto with Double = js.native
-  /* 127 */ val northAmericaStatement: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaStatement with Double = js.native
-  /* 128 */ val northAmericaSuperA: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaSuperA with Double = js.native
-  /* 129 */ val northAmericaSuperB: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaSuperB with Double = js.native
-  /* 130 */ val northAmericaTabloid: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaTabloid with Double = js.native
-  /* 131 */ val northAmericaTabloidExtra: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.northAmericaTabloidExtra with Double = js.native
-  /* 1 */ val notAvailable: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.notAvailable with Double = js.native
-  /* 132 */ val otherMetricA3Plus: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricA3Plus with Double = js.native
-  /* 133 */ val otherMetricA4Plus: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricA4Plus with Double = js.native
-  /* 134 */ val otherMetricFolio: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricFolio with Double = js.native
-  /* 135 */ val otherMetricInviteEnvelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricInviteEnvelope with Double = js.native
-  /* 136 */ val otherMetricItalianEnvelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.otherMetricItalianEnvelope with Double = js.native
-  /* 137 */ val prc10Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc10Envelope with Double = js.native
-  /* 138 */ val prc10EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc10EnvelopeRotated with Double = js.native
-  /* 139 */ val prc16K: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc16K with Double = js.native
-  /* 140 */ val prc16KRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc16KRotated with Double = js.native
-  /* 141 */ val prc1Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc1Envelope with Double = js.native
-  /* 142 */ val prc1EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc1EnvelopeRotated with Double = js.native
-  /* 143 */ val prc2Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc2Envelope with Double = js.native
-  /* 144 */ val prc2EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc2EnvelopeRotated with Double = js.native
-  /* 145 */ val prc32K: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32K with Double = js.native
-  /* 146 */ val prc32KBig: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32KBig with Double = js.native
-  /* 147 */ val prc32KRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc32KRotated with Double = js.native
-  /* 148 */ val prc3Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc3Envelope with Double = js.native
-  /* 149 */ val prc3EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc3EnvelopeRotated with Double = js.native
-  /* 150 */ val prc4Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc4Envelope with Double = js.native
-  /* 151 */ val prc4EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc4EnvelopeRotated with Double = js.native
-  /* 152 */ val prc5Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc5Envelope with Double = js.native
-  /* 153 */ val prc5EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc5EnvelopeRotated with Double = js.native
-  /* 154 */ val prc6Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc6Envelope with Double = js.native
-  /* 155 */ val prc6EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc6EnvelopeRotated with Double = js.native
-  /* 156 */ val prc7Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc7Envelope with Double = js.native
-  /* 157 */ val prc7EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc7EnvelopeRotated with Double = js.native
-  /* 158 */ val prc8Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc8Envelope with Double = js.native
-  /* 159 */ val prc8EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc8EnvelopeRotated with Double = js.native
-  /* 160 */ val prc9Envelope: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc9Envelope with Double = js.native
-  /* 161 */ val prc9EnvelopeRotated: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.prc9EnvelopeRotated with Double = js.native
-  /* 2 */ val printerCustom: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.printerCustom with Double = js.native
-  /* 162 */ val roll04Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll04Inch with Double = js.native
-  /* 163 */ val roll06Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll06Inch with Double = js.native
-  /* 164 */ val roll08Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll08Inch with Double = js.native
-  /* 165 */ val roll12Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll12Inch with Double = js.native
-  /* 166 */ val roll15Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll15Inch with Double = js.native
-  /* 167 */ val roll18Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll18Inch with Double = js.native
-  /* 168 */ val roll22Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll22Inch with Double = js.native
-  /* 169 */ val roll24Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll24Inch with Double = js.native
-  /* 170 */ val roll30Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll30Inch with Double = js.native
-  /* 171 */ val roll36Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll36Inch with Double = js.native
-  /* 172 */ val roll54Inch: typings.winrt.Windows.Graphics.Printing.PrintMediaSize.roll54Inch with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintMediaSize with Double] = js.native
+  /* 3 */ @js.native
+  object businessCard extends TopLevel[businessCard with Double]
+  
+  /* 4 */ @js.native
+  object creditCard extends TopLevel[creditCard with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 5 */ @js.native
+  object isoA0 extends TopLevel[isoA0 with Double]
+  
+  /* 6 */ @js.native
+  object isoA1 extends TopLevel[isoA1 with Double]
+  
+  /* 7 */ @js.native
+  object isoA10 extends TopLevel[isoA10 with Double]
+  
+  /* 8 */ @js.native
+  object isoA2 extends TopLevel[isoA2 with Double]
+  
+  /* 9 */ @js.native
+  object isoA3 extends TopLevel[isoA3 with Double]
+  
+  /* 10 */ @js.native
+  object isoA3Extra extends TopLevel[isoA3Extra with Double]
+  
+  /* 11 */ @js.native
+  object isoA3Rotated extends TopLevel[isoA3Rotated with Double]
+  
+  /* 12 */ @js.native
+  object isoA4 extends TopLevel[isoA4 with Double]
+  
+  /* 13 */ @js.native
+  object isoA4Extra extends TopLevel[isoA4Extra with Double]
+  
+  /* 14 */ @js.native
+  object isoA4Rotated extends TopLevel[isoA4Rotated with Double]
+  
+  /* 15 */ @js.native
+  object isoA5 extends TopLevel[isoA5 with Double]
+  
+  /* 16 */ @js.native
+  object isoA5Extra extends TopLevel[isoA5Extra with Double]
+  
+  /* 17 */ @js.native
+  object isoA5Rotated extends TopLevel[isoA5Rotated with Double]
+  
+  /* 18 */ @js.native
+  object isoA6 extends TopLevel[isoA6 with Double]
+  
+  /* 19 */ @js.native
+  object isoA6Rotated extends TopLevel[isoA6Rotated with Double]
+  
+  /* 20 */ @js.native
+  object isoA7 extends TopLevel[isoA7 with Double]
+  
+  /* 21 */ @js.native
+  object isoA8 extends TopLevel[isoA8 with Double]
+  
+  /* 22 */ @js.native
+  object isoA9 extends TopLevel[isoA9 with Double]
+  
+  /* 23 */ @js.native
+  object isoB0 extends TopLevel[isoB0 with Double]
+  
+  /* 24 */ @js.native
+  object isoB1 extends TopLevel[isoB1 with Double]
+  
+  /* 25 */ @js.native
+  object isoB10 extends TopLevel[isoB10 with Double]
+  
+  /* 26 */ @js.native
+  object isoB2 extends TopLevel[isoB2 with Double]
+  
+  /* 27 */ @js.native
+  object isoB3 extends TopLevel[isoB3 with Double]
+  
+  /* 28 */ @js.native
+  object isoB4 extends TopLevel[isoB4 with Double]
+  
+  /* 29 */ @js.native
+  object isoB4Envelope extends TopLevel[isoB4Envelope with Double]
+  
+  /* 30 */ @js.native
+  object isoB5Envelope extends TopLevel[isoB5Envelope with Double]
+  
+  /* 31 */ @js.native
+  object isoB5Extra extends TopLevel[isoB5Extra with Double]
+  
+  /* 32 */ @js.native
+  object isoB7 extends TopLevel[isoB7 with Double]
+  
+  /* 33 */ @js.native
+  object isoB8 extends TopLevel[isoB8 with Double]
+  
+  /* 34 */ @js.native
+  object isoB9 extends TopLevel[isoB9 with Double]
+  
+  /* 35 */ @js.native
+  object isoC0 extends TopLevel[isoC0 with Double]
+  
+  /* 36 */ @js.native
+  object isoC1 extends TopLevel[isoC1 with Double]
+  
+  /* 37 */ @js.native
+  object isoC10 extends TopLevel[isoC10 with Double]
+  
+  /* 38 */ @js.native
+  object isoC2 extends TopLevel[isoC2 with Double]
+  
+  /* 39 */ @js.native
+  object isoC3 extends TopLevel[isoC3 with Double]
+  
+  /* 40 */ @js.native
+  object isoC3Envelope extends TopLevel[isoC3Envelope with Double]
+  
+  /* 41 */ @js.native
+  object isoC4 extends TopLevel[isoC4 with Double]
+  
+  /* 42 */ @js.native
+  object isoC4Envelope extends TopLevel[isoC4Envelope with Double]
+  
+  /* 43 */ @js.native
+  object isoC5 extends TopLevel[isoC5 with Double]
+  
+  /* 44 */ @js.native
+  object isoC5Envelope extends TopLevel[isoC5Envelope with Double]
+  
+  /* 45 */ @js.native
+  object isoC6 extends TopLevel[isoC6 with Double]
+  
+  /* 46 */ @js.native
+  object isoC6C5Envelope extends TopLevel[isoC6C5Envelope with Double]
+  
+  /* 47 */ @js.native
+  object isoC6Envelope extends TopLevel[isoC6Envelope with Double]
+  
+  /* 48 */ @js.native
+  object isoC7 extends TopLevel[isoC7 with Double]
+  
+  /* 49 */ @js.native
+  object isoC8 extends TopLevel[isoC8 with Double]
+  
+  /* 50 */ @js.native
+  object isoC9 extends TopLevel[isoC9 with Double]
+  
+  /* 51 */ @js.native
+  object isoDLEnvelope extends TopLevel[isoDLEnvelope with Double]
+  
+  /* 52 */ @js.native
+  object isoDLEnvelopeRotated extends TopLevel[isoDLEnvelopeRotated with Double]
+  
+  /* 53 */ @js.native
+  object isoSRA3 extends TopLevel[isoSRA3 with Double]
+  
+  /* 54 */ @js.native
+  object japan2LPhoto extends TopLevel[japan2LPhoto with Double]
+  
+  /* 55 */ @js.native
+  object japanChou3Envelope extends TopLevel[japanChou3Envelope with Double]
+  
+  /* 56 */ @js.native
+  object japanChou3EnvelopeRotated extends TopLevel[japanChou3EnvelopeRotated with Double]
+  
+  /* 57 */ @js.native
+  object japanChou4Envelope extends TopLevel[japanChou4Envelope with Double]
+  
+  /* 58 */ @js.native
+  object japanChou4EnvelopeRotated extends TopLevel[japanChou4EnvelopeRotated with Double]
+  
+  /* 59 */ @js.native
+  object japanDoubleHagakiPostcard extends TopLevel[japanDoubleHagakiPostcard with Double]
+  
+  /* 60 */ @js.native
+  object japanDoubleHagakiPostcardRotated extends TopLevel[japanDoubleHagakiPostcardRotated with Double]
+  
+  /* 61 */ @js.native
+  object japanHagakiPostcard extends TopLevel[japanHagakiPostcard with Double]
+  
+  /* 62 */ @js.native
+  object japanHagakiPostcardRotated extends TopLevel[japanHagakiPostcardRotated with Double]
+  
+  /* 63 */ @js.native
+  object japanKaku2Envelope extends TopLevel[japanKaku2Envelope with Double]
+  
+  /* 64 */ @js.native
+  object japanKaku2EnvelopeRotated extends TopLevel[japanKaku2EnvelopeRotated with Double]
+  
+  /* 65 */ @js.native
+  object japanKaku3Envelope extends TopLevel[japanKaku3Envelope with Double]
+  
+  /* 66 */ @js.native
+  object japanKaku3EnvelopeRotated extends TopLevel[japanKaku3EnvelopeRotated with Double]
+  
+  /* 67 */ @js.native
+  object japanLPhoto extends TopLevel[japanLPhoto with Double]
+  
+  /* 68 */ @js.native
+  object japanQuadrupleHagakiPostcard extends TopLevel[japanQuadrupleHagakiPostcard with Double]
+  
+  /* 69 */ @js.native
+  object japanYou1Envelope extends TopLevel[japanYou1Envelope with Double]
+  
+  /* 70 */ @js.native
+  object japanYou2Envelope extends TopLevel[japanYou2Envelope with Double]
+  
+  /* 71 */ @js.native
+  object japanYou3Envelope extends TopLevel[japanYou3Envelope with Double]
+  
+  /* 72 */ @js.native
+  object japanYou4Envelope extends TopLevel[japanYou4Envelope with Double]
+  
+  /* 73 */ @js.native
+  object japanYou4EnvelopeRotated extends TopLevel[japanYou4EnvelopeRotated with Double]
+  
+  /* 74 */ @js.native
+  object japanYou6Envelope extends TopLevel[japanYou6Envelope with Double]
+  
+  /* 75 */ @js.native
+  object japanYou6EnvelopeRotated extends TopLevel[japanYou6EnvelopeRotated with Double]
+  
+  /* 76 */ @js.native
+  object jisB0 extends TopLevel[jisB0 with Double]
+  
+  /* 77 */ @js.native
+  object jisB1 extends TopLevel[jisB1 with Double]
+  
+  /* 78 */ @js.native
+  object jisB10 extends TopLevel[jisB10 with Double]
+  
+  /* 79 */ @js.native
+  object jisB2 extends TopLevel[jisB2 with Double]
+  
+  /* 80 */ @js.native
+  object jisB3 extends TopLevel[jisB3 with Double]
+  
+  /* 81 */ @js.native
+  object jisB4 extends TopLevel[jisB4 with Double]
+  
+  /* 82 */ @js.native
+  object jisB4Rotated extends TopLevel[jisB4Rotated with Double]
+  
+  /* 83 */ @js.native
+  object jisB5 extends TopLevel[jisB5 with Double]
+  
+  /* 84 */ @js.native
+  object jisB5Rotated extends TopLevel[jisB5Rotated with Double]
+  
+  /* 85 */ @js.native
+  object jisB6 extends TopLevel[jisB6 with Double]
+  
+  /* 86 */ @js.native
+  object jisB6Rotated extends TopLevel[jisB6Rotated with Double]
+  
+  /* 87 */ @js.native
+  object jisB7 extends TopLevel[jisB7 with Double]
+  
+  /* 88 */ @js.native
+  object jisB8 extends TopLevel[jisB8 with Double]
+  
+  /* 89 */ @js.native
+  object jisB9 extends TopLevel[jisB9 with Double]
+  
+  /* 90 */ @js.native
+  object northAmerica10x11 extends TopLevel[northAmerica10x11 with Double]
+  
+  /* 91 */ @js.native
+  object northAmerica10x12 extends TopLevel[northAmerica10x12 with Double]
+  
+  /* 92 */ @js.native
+  object northAmerica10x14 extends TopLevel[northAmerica10x14 with Double]
+  
+  /* 93 */ @js.native
+  object northAmerica11x17 extends TopLevel[northAmerica11x17 with Double]
+  
+  /* 94 */ @js.native
+  object northAmerica14x17 extends TopLevel[northAmerica14x17 with Double]
+  
+  /* 95 */ @js.native
+  object northAmerica4x6 extends TopLevel[northAmerica4x6 with Double]
+  
+  /* 96 */ @js.native
+  object northAmerica4x8 extends TopLevel[northAmerica4x8 with Double]
+  
+  /* 97 */ @js.native
+  object northAmerica5x7 extends TopLevel[northAmerica5x7 with Double]
+  
+  /* 98 */ @js.native
+  object northAmerica8x10 extends TopLevel[northAmerica8x10 with Double]
+  
+  /* 99 */ @js.native
+  object northAmerica9x11 extends TopLevel[northAmerica9x11 with Double]
+  
+  /* 100 */ @js.native
+  object northAmericaArchitectureASheet extends TopLevel[northAmericaArchitectureASheet with Double]
+  
+  /* 101 */ @js.native
+  object northAmericaArchitectureBSheet extends TopLevel[northAmericaArchitectureBSheet with Double]
+  
+  /* 102 */ @js.native
+  object northAmericaArchitectureCSheet extends TopLevel[northAmericaArchitectureCSheet with Double]
+  
+  /* 103 */ @js.native
+  object northAmericaArchitectureDSheet extends TopLevel[northAmericaArchitectureDSheet with Double]
+  
+  /* 104 */ @js.native
+  object northAmericaArchitectureESheet extends TopLevel[northAmericaArchitectureESheet with Double]
+  
+  /* 105 */ @js.native
+  object northAmericaCSheet extends TopLevel[northAmericaCSheet with Double]
+  
+  /* 106 */ @js.native
+  object northAmericaDSheet extends TopLevel[northAmericaDSheet with Double]
+  
+  /* 107 */ @js.native
+  object northAmericaESheet extends TopLevel[northAmericaESheet with Double]
+  
+  /* 108 */ @js.native
+  object northAmericaExecutive extends TopLevel[northAmericaExecutive with Double]
+  
+  /* 109 */ @js.native
+  object northAmericaGermanLegalFanfold extends TopLevel[northAmericaGermanLegalFanfold with Double]
+  
+  /* 110 */ @js.native
+  object northAmericaGermanStandardFanfold extends TopLevel[northAmericaGermanStandardFanfold with Double]
+  
+  /* 111 */ @js.native
+  object northAmericaLegal extends TopLevel[northAmericaLegal with Double]
+  
+  /* 112 */ @js.native
+  object northAmericaLegalExtra extends TopLevel[northAmericaLegalExtra with Double]
+  
+  /* 113 */ @js.native
+  object northAmericaLetter extends TopLevel[northAmericaLetter with Double]
+  
+  /* 114 */ @js.native
+  object northAmericaLetterExtra extends TopLevel[northAmericaLetterExtra with Double]
+  
+  /* 115 */ @js.native
+  object northAmericaLetterPlus extends TopLevel[northAmericaLetterPlus with Double]
+  
+  /* 116 */ @js.native
+  object northAmericaLetterRotated extends TopLevel[northAmericaLetterRotated with Double]
+  
+  /* 117 */ @js.native
+  object northAmericaMonarchEnvelope extends TopLevel[northAmericaMonarchEnvelope with Double]
+  
+  /* 118 */ @js.native
+  object northAmericaNote extends TopLevel[northAmericaNote with Double]
+  
+  /* 119 */ @js.native
+  object northAmericaNumber10Envelope extends TopLevel[northAmericaNumber10Envelope with Double]
+  
+  /* 120 */ @js.native
+  object northAmericaNumber10EnvelopeRotated extends TopLevel[northAmericaNumber10EnvelopeRotated with Double]
+  
+  /* 121 */ @js.native
+  object northAmericaNumber11Envelope extends TopLevel[northAmericaNumber11Envelope with Double]
+  
+  /* 122 */ @js.native
+  object northAmericaNumber12Envelope extends TopLevel[northAmericaNumber12Envelope with Double]
+  
+  /* 123 */ @js.native
+  object northAmericaNumber14Envelope extends TopLevel[northAmericaNumber14Envelope with Double]
+  
+  /* 124 */ @js.native
+  object northAmericaNumber9Envelope extends TopLevel[northAmericaNumber9Envelope with Double]
+  
+  /* 125 */ @js.native
+  object northAmericaPersonalEnvelope extends TopLevel[northAmericaPersonalEnvelope with Double]
+  
+  /* 126 */ @js.native
+  object northAmericaQuarto extends TopLevel[northAmericaQuarto with Double]
+  
+  /* 127 */ @js.native
+  object northAmericaStatement extends TopLevel[northAmericaStatement with Double]
+  
+  /* 128 */ @js.native
+  object northAmericaSuperA extends TopLevel[northAmericaSuperA with Double]
+  
+  /* 129 */ @js.native
+  object northAmericaSuperB extends TopLevel[northAmericaSuperB with Double]
+  
+  /* 130 */ @js.native
+  object northAmericaTabloid extends TopLevel[northAmericaTabloid with Double]
+  
+  /* 131 */ @js.native
+  object northAmericaTabloidExtra extends TopLevel[northAmericaTabloidExtra with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 132 */ @js.native
+  object otherMetricA3Plus extends TopLevel[otherMetricA3Plus with Double]
+  
+  /* 133 */ @js.native
+  object otherMetricA4Plus extends TopLevel[otherMetricA4Plus with Double]
+  
+  /* 134 */ @js.native
+  object otherMetricFolio extends TopLevel[otherMetricFolio with Double]
+  
+  /* 135 */ @js.native
+  object otherMetricInviteEnvelope extends TopLevel[otherMetricInviteEnvelope with Double]
+  
+  /* 136 */ @js.native
+  object otherMetricItalianEnvelope extends TopLevel[otherMetricItalianEnvelope with Double]
+  
+  /* 137 */ @js.native
+  object prc10Envelope extends TopLevel[prc10Envelope with Double]
+  
+  /* 138 */ @js.native
+  object prc10EnvelopeRotated extends TopLevel[prc10EnvelopeRotated with Double]
+  
+  /* 139 */ @js.native
+  object prc16K extends TopLevel[prc16K with Double]
+  
+  /* 140 */ @js.native
+  object prc16KRotated extends TopLevel[prc16KRotated with Double]
+  
+  /* 141 */ @js.native
+  object prc1Envelope extends TopLevel[prc1Envelope with Double]
+  
+  /* 142 */ @js.native
+  object prc1EnvelopeRotated extends TopLevel[prc1EnvelopeRotated with Double]
+  
+  /* 143 */ @js.native
+  object prc2Envelope extends TopLevel[prc2Envelope with Double]
+  
+  /* 144 */ @js.native
+  object prc2EnvelopeRotated extends TopLevel[prc2EnvelopeRotated with Double]
+  
+  /* 145 */ @js.native
+  object prc32K extends TopLevel[prc32K with Double]
+  
+  /* 146 */ @js.native
+  object prc32KBig extends TopLevel[prc32KBig with Double]
+  
+  /* 147 */ @js.native
+  object prc32KRotated extends TopLevel[prc32KRotated with Double]
+  
+  /* 148 */ @js.native
+  object prc3Envelope extends TopLevel[prc3Envelope with Double]
+  
+  /* 149 */ @js.native
+  object prc3EnvelopeRotated extends TopLevel[prc3EnvelopeRotated with Double]
+  
+  /* 150 */ @js.native
+  object prc4Envelope extends TopLevel[prc4Envelope with Double]
+  
+  /* 151 */ @js.native
+  object prc4EnvelopeRotated extends TopLevel[prc4EnvelopeRotated with Double]
+  
+  /* 152 */ @js.native
+  object prc5Envelope extends TopLevel[prc5Envelope with Double]
+  
+  /* 153 */ @js.native
+  object prc5EnvelopeRotated extends TopLevel[prc5EnvelopeRotated with Double]
+  
+  /* 154 */ @js.native
+  object prc6Envelope extends TopLevel[prc6Envelope with Double]
+  
+  /* 155 */ @js.native
+  object prc6EnvelopeRotated extends TopLevel[prc6EnvelopeRotated with Double]
+  
+  /* 156 */ @js.native
+  object prc7Envelope extends TopLevel[prc7Envelope with Double]
+  
+  /* 157 */ @js.native
+  object prc7EnvelopeRotated extends TopLevel[prc7EnvelopeRotated with Double]
+  
+  /* 158 */ @js.native
+  object prc8Envelope extends TopLevel[prc8Envelope with Double]
+  
+  /* 159 */ @js.native
+  object prc8EnvelopeRotated extends TopLevel[prc8EnvelopeRotated with Double]
+  
+  /* 160 */ @js.native
+  object prc9Envelope extends TopLevel[prc9Envelope with Double]
+  
+  /* 161 */ @js.native
+  object prc9EnvelopeRotated extends TopLevel[prc9EnvelopeRotated with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 162 */ @js.native
+  object roll04Inch extends TopLevel[roll04Inch with Double]
+  
+  /* 163 */ @js.native
+  object roll06Inch extends TopLevel[roll06Inch with Double]
+  
+  /* 164 */ @js.native
+  object roll08Inch extends TopLevel[roll08Inch with Double]
+  
+  /* 165 */ @js.native
+  object roll12Inch extends TopLevel[roll12Inch with Double]
+  
+  /* 166 */ @js.native
+  object roll15Inch extends TopLevel[roll15Inch with Double]
+  
+  /* 167 */ @js.native
+  object roll18Inch extends TopLevel[roll18Inch with Double]
+  
+  /* 168 */ @js.native
+  object roll22Inch extends TopLevel[roll22Inch with Double]
+  
+  /* 169 */ @js.native
+  object roll24Inch extends TopLevel[roll24Inch with Double]
+  
+  /* 170 */ @js.native
+  object roll30Inch extends TopLevel[roll30Inch with Double]
+  
+  /* 171 */ @js.native
+  object roll36Inch extends TopLevel[roll36Inch with Double]
+  
+  /* 172 */ @js.native
+  object roll54Inch extends TopLevel[roll54Inch with Double]
+  
 }
 

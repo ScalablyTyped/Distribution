@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.closestToDesired
+import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.lowestLatency
+import typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.systemDefault
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object QuantumSizeSelectionMode extends js.Object {
   @js.native
   sealed trait systemDefault extends QuantumSizeSelectionMode
   
-  /* 2 */ val closestToDesired: typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.closestToDesired with Double = js.native
-  /* 1 */ val lowestLatency: typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.lowestLatency with Double = js.native
-  /* 0 */ val systemDefault: typings.winrtDashUwp.Windows.Media.Audio.QuantumSizeSelectionMode.systemDefault with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QuantumSizeSelectionMode with Double] = js.native
+  /* 2 */ @js.native
+  object closestToDesired extends TopLevel[closestToDesired with Double]
+  
+  /* 1 */ @js.native
+  object lowestLatency extends TopLevel[lowestLatency with Double]
+  
+  /* 0 */ @js.native
+  object systemDefault extends TopLevel[systemDefault with Double]
+  
 }
 

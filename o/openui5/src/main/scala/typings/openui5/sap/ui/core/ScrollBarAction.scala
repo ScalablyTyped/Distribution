@@ -1,5 +1,10 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.ScrollBarAction.Drag
+import typings.openui5.sap.ui.core.ScrollBarAction.MouseWheel
+import typings.openui5.sap.ui.core.ScrollBarAction.Page
+import typings.openui5.sap.ui.core.ScrollBarAction.Step
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ScrollBarAction extends js.Object {
   @js.native
   sealed trait Step extends ScrollBarAction
   
-  /* 0 */ val Drag: typings.openui5.sap.ui.core.ScrollBarAction.Drag with Double = js.native
-  /* 1 */ val MouseWheel: typings.openui5.sap.ui.core.ScrollBarAction.MouseWheel with Double = js.native
-  /* 2 */ val Page: typings.openui5.sap.ui.core.ScrollBarAction.Page with Double = js.native
-  /* 3 */ val Step: typings.openui5.sap.ui.core.ScrollBarAction.Step with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScrollBarAction with Double] = js.native
+  /* 0 */ @js.native
+  object Drag extends TopLevel[Drag with Double]
+  
+  /* 1 */ @js.native
+  object MouseWheel extends TopLevel[MouseWheel with Double]
+  
+  /* 2 */ @js.native
+  object Page extends TopLevel[Page with Double]
+  
+  /* 3 */ @js.native
+  object Step extends TopLevel[Step with Double]
+  
 }
 

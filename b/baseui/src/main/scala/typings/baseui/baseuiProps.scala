@@ -36,14 +36,8 @@ trait baseuiProps {
   @scala.inline
   def ArrowUpProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type ArrowUpProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def AspectRatioBoxProps: typings.baseui.aspectDashRatioDashBoxMod.AspectRatioBoxProps.type = typings.baseui.aspectDashRatioDashBoxMod.AspectRatioBoxProps
   type AspectRatioBoxProps = typings.baseui.aspectDashRatioDashBoxMod.AspectRatioBoxProps
-  @scala.inline
-  def AspectRatioBoxBodyProps: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type AspectRatioBoxBodyProps = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def AutosizeInputProps: typings.baseui.selectMod.AutosizeInputProps.type = typings.baseui.selectMod.AutosizeInputProps
   type AutosizeInputProps = typings.baseui.selectMod.AutosizeInputProps
   @scala.inline
   def AvatarProps: typings.baseui.avatarMod.AvatarProps.type = typings.baseui.avatarMod.AvatarProps
@@ -57,14 +51,10 @@ trait baseuiProps {
   @scala.inline
   def BlankProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type BlankProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def BlockProps: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type BlockProps = typings.baseui.blockMod.BlockProps
   @scala.inline
   def BreadcrumbsProps: typings.baseui.breadcrumbsMod.BreadcrumbsProps.type = typings.baseui.breadcrumbsMod.BreadcrumbsProps
   type BreadcrumbsProps = typings.baseui.breadcrumbsMod.BreadcrumbsProps
-  @scala.inline
-  def ButtonProps: typings.baseui.buttonMod.ButtonProps.type = typings.baseui.buttonMod.ButtonProps
   type ButtonProps = typings.baseui.buttonMod.ButtonProps
   @scala.inline
   def ButtonGroupProps: typings.baseui.buttonDashGroupMod.ButtonGroupProps.type = typings.baseui.buttonDashGroupMod.ButtonGroupProps
@@ -72,11 +62,7 @@ trait baseuiProps {
   @scala.inline
   def CalendarProps: typings.baseui.datepickerMod.CalendarProps.type = typings.baseui.datepickerMod.CalendarProps
   type CalendarProps = typings.baseui.datepickerMod.CalendarProps
-  @scala.inline
-  def Caption1Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Caption1Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Caption2Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Caption2Props = typings.baseui.blockMod.BlockProps
   @scala.inline
   def CardProps: typings.baseui.cardMod.CardProps.type = typings.baseui.cardMod.CardProps
@@ -115,20 +101,10 @@ trait baseuiProps {
   @scala.inline
   def DeleteAltProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type DeleteAltProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def DisplayProps: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type DisplayProps = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Display1Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Display1Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Display2Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Display2Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Display3Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Display3Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Display4Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Display4Props = typings.baseui.blockMod.BlockProps
   @scala.inline
   def DrawerProps: typings.baseui.drawerMod.DrawerProps.type = typings.baseui.drawerMod.DrawerProps
@@ -145,11 +121,7 @@ trait baseuiProps {
   @scala.inline
   def FlagProps: typings.baseui.phoneDashInputMod.FlagProps.type = typings.baseui.phoneDashInputMod.FlagProps
   type FlagProps = typings.baseui.phoneDashInputMod.FlagProps
-  @scala.inline
-  def FlexGridProps: typings.baseui.flexDashGridMod.FlexGridProps.type = typings.baseui.flexDashGridMod.FlexGridProps
   type FlexGridProps = typings.baseui.flexDashGridMod.FlexGridProps
-  @scala.inline
-  def FlexGridItemProps: typings.baseui.flexDashGridMod.FlexGridProps.type = typings.baseui.flexDashGridMod.FlexGridProps
   type FlexGridItemProps = typings.baseui.flexDashGridMod.FlexGridProps
   @scala.inline
   def FocusOnceProps: Anon_Children.type = typings.baseui.Anon_Children
@@ -160,23 +132,11 @@ trait baseuiProps {
   @scala.inline
   def GrabProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type GrabProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def H1Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H1Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def H2Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H2Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def H3Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H3Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def H4Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H4Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def H5Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H5Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def H6Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type H6Props = typings.baseui.blockMod.BlockProps
   @scala.inline
   def HeaderNavigationProps: typings.baseui.headerDashNavigationMod.HeaderNavigationProps.type = typings.baseui.headerDashNavigationMod.HeaderNavigationProps
@@ -194,17 +154,9 @@ trait baseuiProps {
   @scala.inline
   def InputProps: typings.baseui.inputMod.InputProps.type = typings.baseui.inputMod.InputProps
   type InputProps = typings.baseui.inputMod.InputProps
-  @scala.inline
-  def Label1Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Label1Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Label2Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Label2Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Label3Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Label3Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Label4Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Label4Props = typings.baseui.blockMod.BlockProps
   @scala.inline
   def LayerProps: typings.baseui.layerMod.LayerProps.type = typings.baseui.layerMod.LayerProps
@@ -230,14 +182,10 @@ trait baseuiProps {
   @scala.inline
   def MenuProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type MenuProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def MenuAdapterProps: MenuAdapterPropsT.type = typings.baseui.listMod.MenuAdapterPropsT
   type MenuAdapterProps = MenuAdapterPropsT
   @scala.inline
   def ModalProps: typings.baseui.modalMod.ModalProps.type = typings.baseui.modalMod.ModalProps
   type ModalProps = typings.baseui.modalMod.ModalProps
-  @scala.inline
-  def NavItemProps: typings.baseui.sideDashNavigationMod.NavItemProps.type = typings.baseui.sideDashNavigationMod.NavItemProps
   type NavItemProps = typings.baseui.sideDashNavigationMod.NavItemProps
   @scala.inline
   def NavigationProps: typings.baseui.sideDashNavigationMod.NavigationProps.type = typings.baseui.sideDashNavigationMod.NavigationProps
@@ -251,11 +199,7 @@ trait baseuiProps {
   @scala.inline
   def NumberedStepProps: typings.baseui.progressDashStepsMod.NumberedStepProps.type = typings.baseui.progressDashStepsMod.NumberedStepProps
   type NumberedStepProps = typings.baseui.progressDashStepsMod.NumberedStepProps
-  @scala.inline
-  def OptionListProps: typings.baseui.menuMod.OptionListProps.type = typings.baseui.menuMod.OptionListProps
   type OptionListProps = typings.baseui.menuMod.OptionListProps
-  @scala.inline
-  def OptionProfileProps: typings.baseui.menuMod.OptionProfileProps.type = typings.baseui.menuMod.OptionProfileProps
   type OptionProfileProps = typings.baseui.menuMod.OptionProfileProps
   @scala.inline
   def OverflowProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
@@ -264,17 +208,9 @@ trait baseuiProps {
   def PaginationProps: typings.baseui.paginationMod.PaginationProps.type = typings.baseui.paginationMod.PaginationProps
   type PaginationProps = typings.baseui.paginationMod.PaginationProps
   type PanelProps = typings.baseui.accordionMod.PanelProps
-  @scala.inline
-  def Paragraph1Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Paragraph1Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Paragraph2Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Paragraph2Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Paragraph3Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Paragraph3Props = typings.baseui.blockMod.BlockProps
-  @scala.inline
-  def Paragraph4Props: typings.baseui.blockMod.BlockProps.type = typings.baseui.blockMod.BlockProps
   type Paragraph4Props = typings.baseui.blockMod.BlockProps
   type PaymentCardProps = typings.baseui.paymentDashCardMod.PaymentCardProps
   @scala.inline
@@ -371,8 +307,6 @@ trait baseuiProps {
   @scala.inline
   def StepProps: typings.baseui.progressDashStepsMod.StepProps.type = typings.baseui.progressDashStepsMod.StepProps
   type StepProps = typings.baseui.progressDashStepsMod.StepProps
-  @scala.inline
-  def TabProps: typings.baseui.tabsMod.TabProps.type = typings.baseui.tabsMod.TabProps
   type TabProps = typings.baseui.tabsMod.TabProps
   @scala.inline
   def TableProps: typings.baseui.tableMod.TableProps.type = typings.baseui.tableMod.TableProps

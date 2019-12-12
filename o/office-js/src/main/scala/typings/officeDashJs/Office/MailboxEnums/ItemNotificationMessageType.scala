@@ -1,5 +1,9 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
+import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
+import typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object ItemNotificationMessageType extends js.Object {
   @js.native
   sealed trait ProgressIndicator extends ItemNotificationMessageType
   
-  /* "errorMessage" */ val ErrorMessage: typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage with String = js.native
-  /* "informationalMessage" */ val InformationalMessage: typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage with String = js.native
-  /* "progressIndicator" */ val ProgressIndicator: typings.officeDashJs.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ItemNotificationMessageType with String] = js.native
+  /* "errorMessage" */ @js.native
+  object ErrorMessage extends TopLevel[ErrorMessage with String]
+  
+  /* "informationalMessage" */ @js.native
+  object InformationalMessage extends TopLevel[InformationalMessage with String]
+  
+  /* "progressIndicator" */ @js.native
+  object ProgressIndicator extends TopLevel[ProgressIndicator with String]
+  
 }
 

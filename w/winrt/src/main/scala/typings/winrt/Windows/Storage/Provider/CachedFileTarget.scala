@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.Provider.CachedFileTarget.local
+import typings.winrt.Windows.Storage.Provider.CachedFileTarget.remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CachedFileTarget extends js.Object {
   @js.native
   sealed trait remote extends CachedFileTarget
   
-  /* 0 */ val local: typings.winrt.Windows.Storage.Provider.CachedFileTarget.local with Double = js.native
-  /* 1 */ val remote: typings.winrt.Windows.Storage.Provider.CachedFileTarget.remote with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CachedFileTarget with Double] = js.native
+  /* 0 */ @js.native
+  object local extends TopLevel[local with Double]
+  
+  /* 1 */ @js.native
+  object remote extends TopLevel[remote with Double]
+  
 }
 

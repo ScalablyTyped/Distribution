@@ -1,5 +1,9 @@
 package typings.socks.typingsCommonConstantsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.socks.typingsCommonConstantsMod.SocksCommand.associate
+import typings.socks.typingsCommonConstantsMod.SocksCommand.bind
+import typings.socks.typingsCommonConstantsMod.SocksCommand.connect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SocksCommand extends js.Object {
   @js.native
   sealed trait connect extends SocksCommand
   
-  /* 3 */ val associate: typings.socks.typingsCommonConstantsMod.SocksCommand.associate with Double = js.native
-  /* 2 */ val bind: typings.socks.typingsCommonConstantsMod.SocksCommand.bind with Double = js.native
-  /* 1 */ val connect: typings.socks.typingsCommonConstantsMod.SocksCommand.connect with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocksCommand with Double] = js.native
+  /* 3 */ @js.native
+  object associate extends TopLevel[associate with Double]
+  
+  /* 2 */ @js.native
+  object bind extends TopLevel[bind with Double]
+  
+  /* 1 */ @js.native
+  object connect extends TopLevel[connect with Double]
+  
 }
 

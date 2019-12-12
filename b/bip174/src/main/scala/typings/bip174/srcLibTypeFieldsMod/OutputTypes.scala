@@ -1,5 +1,9 @@
 package typings.bip174.srcLibTypeFieldsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bip174.srcLibTypeFieldsMod.OutputTypes.BIP32_DERIVATION
+import typings.bip174.srcLibTypeFieldsMod.OutputTypes.REDEEM_SCRIPT
+import typings.bip174.srcLibTypeFieldsMod.OutputTypes.WITNESS_SCRIPT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object OutputTypes extends js.Object {
   @js.native
   sealed trait WITNESS_SCRIPT extends OutputTypes
   
-  /* 2 */ val BIP32_DERIVATION: typings.bip174.srcLibTypeFieldsMod.OutputTypes.BIP32_DERIVATION with Double = js.native
-  /* 0 */ val REDEEM_SCRIPT: typings.bip174.srcLibTypeFieldsMod.OutputTypes.REDEEM_SCRIPT with Double = js.native
-  /* 1 */ val WITNESS_SCRIPT: typings.bip174.srcLibTypeFieldsMod.OutputTypes.WITNESS_SCRIPT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OutputTypes with Double] = js.native
+  /* 2 */ @js.native
+  object BIP32_DERIVATION extends TopLevel[BIP32_DERIVATION with Double]
+  
+  /* 0 */ @js.native
+  object REDEEM_SCRIPT extends TopLevel[REDEEM_SCRIPT with Double]
+  
+  /* 1 */ @js.native
+  object WITNESS_SCRIPT extends TopLevel[WITNESS_SCRIPT with Double]
+  
 }
 

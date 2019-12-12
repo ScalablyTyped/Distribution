@@ -4,98 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GitQueryCommitsCriteria extends js.Object {
   /**
     * Number of entries to skip
     */
   @JSName("$skip")
-  var $skip: Double
+  var $skip: Double = js.native
   /**
     * Maximum number of entries to retrieve
     */
   @JSName("$top")
-  var $top: Double
+  var $top: Double = js.native
   /**
     * Alias or display name of the author
     */
-  var author: String
+  var author: String = js.native
   /**
     * If provided, the earliest commit in the graph to search
     */
-  var compareVersion: GitVersionDescriptor
+  var compareVersion: GitVersionDescriptor = js.native
   /**
     * If true, don't include delete history entries
     */
-  var excludeDeletes: Boolean
+  var excludeDeletes: Boolean = js.native
   /**
     * If provided, a lower bound for filtering commits alphabetically
     */
-  var fromCommitId: String
+  var fromCommitId: String = js.native
   /**
     * If provided, only include history entries created after this date (string)
     */
-  var fromDate: String
+  var fromDate: String = js.native
   /**
     * What Git history mode should be used. This only applies to the search criteria when Ids = null.
     */
-  var historyMode: GitHistoryMode
+  var historyMode: GitHistoryMode = js.native
   /**
     * If provided, specifies the exact commit ids of the commits to fetch. May not be combined with other parameters.
     */
-  var ids: js.Array[String]
+  var ids: js.Array[String] = js.native
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean
+  var includeLinks: Boolean = js.native
   /**
     * Whether to include linked work items
     */
-  var includeWorkItems: Boolean
+  var includeWorkItems: Boolean = js.native
   /**
     * Path of item to search under
     */
-  var itemPath: String
+  var itemPath: String = js.native
   /**
     * If provided, identifies the commit or branch to search
     */
-  var itemVersion: GitVersionDescriptor
+  var itemVersion: GitVersionDescriptor = js.native
   /**
     * If provided, an upper bound for filtering commits alphabetically
     */
-  var toCommitId: String
+  var toCommitId: String = js.native
   /**
     * If provided, only include history entries created before this date (string)
     */
-  var toDate: String
+  var toDate: String = js.native
   /**
     * Alias or display name of the committer
     */
-  var user: String
-}
-
-object GitQueryCommitsCriteria {
-  @scala.inline
-  def apply(
-    $skip: Double,
-    $top: Double,
-    author: String,
-    compareVersion: GitVersionDescriptor,
-    excludeDeletes: Boolean,
-    fromCommitId: String,
-    fromDate: String,
-    historyMode: GitHistoryMode,
-    ids: js.Array[String],
-    includeLinks: Boolean,
-    includeWorkItems: Boolean,
-    itemPath: String,
-    itemVersion: GitVersionDescriptor,
-    toCommitId: String,
-    toDate: String,
-    user: String
-  ): GitQueryCommitsCriteria = {
-    val __obj = js.Dynamic.literal($skip = $skip.asInstanceOf[js.Any], $top = $top.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], compareVersion = compareVersion.asInstanceOf[js.Any], excludeDeletes = excludeDeletes.asInstanceOf[js.Any], fromCommitId = fromCommitId.asInstanceOf[js.Any], fromDate = fromDate.asInstanceOf[js.Any], historyMode = historyMode.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], includeLinks = includeLinks.asInstanceOf[js.Any], includeWorkItems = includeWorkItems.asInstanceOf[js.Any], itemPath = itemPath.asInstanceOf[js.Any], itemVersion = itemVersion.asInstanceOf[js.Any], toCommitId = toCommitId.asInstanceOf[js.Any], toDate = toDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[GitQueryCommitsCriteria]
-  }
+  var user: String = js.native
 }
 

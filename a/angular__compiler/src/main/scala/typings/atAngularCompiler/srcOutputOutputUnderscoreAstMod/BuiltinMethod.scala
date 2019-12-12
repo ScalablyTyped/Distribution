@@ -1,5 +1,9 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.Bind
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.ConcatArray
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.SubscribeObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BuiltinMethod extends js.Object {
   @js.native
   sealed trait SubscribeObservable extends BuiltinMethod
   
-  /* 2 */ val Bind: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.Bind with Double = js.native
-  /* 0 */ val ConcatArray: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.ConcatArray with Double = js.native
-  /* 1 */ val SubscribeObservable: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.BuiltinMethod.SubscribeObservable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuiltinMethod with Double] = js.native
+  /* 2 */ @js.native
+  object Bind extends TopLevel[Bind with Double]
+  
+  /* 0 */ @js.native
+  object ConcatArray extends TopLevel[ConcatArray with Double]
+  
+  /* 1 */ @js.native
+  object SubscribeObservable extends TopLevel[SubscribeObservable with Double]
+  
 }
 

@@ -1,5 +1,22 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.a
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.b
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.c
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d0
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d1
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d2
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d3
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d4
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d5
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d6
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d7
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d8
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d9
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.pound
+import typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.star
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -75,23 +92,55 @@ object TelephonyKey extends js.Object {
   @js.native
   sealed trait star extends TelephonyKey
   
-  /* 12 */ val a: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.a with Double = js.native
-  /* 13 */ val b: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.b with Double = js.native
-  /* 14 */ val c: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.c with Double = js.native
-  /* 15 */ val d: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d with Double = js.native
-  /* 0 */ val d0: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d0 with Double = js.native
-  /* 1 */ val d1: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d1 with Double = js.native
-  /* 2 */ val d2: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d2 with Double = js.native
-  /* 3 */ val d3: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d3 with Double = js.native
-  /* 4 */ val d4: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d4 with Double = js.native
-  /* 5 */ val d5: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d5 with Double = js.native
-  /* 6 */ val d6: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d6 with Double = js.native
-  /* 7 */ val d7: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d7 with Double = js.native
-  /* 8 */ val d8: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d8 with Double = js.native
-  /* 9 */ val d9: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.d9 with Double = js.native
-  /* 11 */ val pound: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.pound with Double = js.native
-  /* 10 */ val star: typings.winrtDashUwp.Windows.Media.Devices.TelephonyKey.star with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TelephonyKey with Double] = js.native
+  /* 12 */ @js.native
+  object a extends TopLevel[a with Double]
+  
+  /* 13 */ @js.native
+  object b extends TopLevel[b with Double]
+  
+  /* 14 */ @js.native
+  object c extends TopLevel[c with Double]
+  
+  /* 15 */ @js.native
+  object d extends TopLevel[d with Double]
+  
+  /* 0 */ @js.native
+  object d0 extends TopLevel[d0 with Double]
+  
+  /* 1 */ @js.native
+  object d1 extends TopLevel[d1 with Double]
+  
+  /* 2 */ @js.native
+  object d2 extends TopLevel[d2 with Double]
+  
+  /* 3 */ @js.native
+  object d3 extends TopLevel[d3 with Double]
+  
+  /* 4 */ @js.native
+  object d4 extends TopLevel[d4 with Double]
+  
+  /* 5 */ @js.native
+  object d5 extends TopLevel[d5 with Double]
+  
+  /* 6 */ @js.native
+  object d6 extends TopLevel[d6 with Double]
+  
+  /* 7 */ @js.native
+  object d7 extends TopLevel[d7 with Double]
+  
+  /* 8 */ @js.native
+  object d8 extends TopLevel[d8 with Double]
+  
+  /* 9 */ @js.native
+  object d9 extends TopLevel[d9 with Double]
+  
+  /* 11 */ @js.native
+  object pound extends TopLevel[pound with Double]
+  
+  /* 10 */ @js.native
+  object star extends TopLevel[star with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "askmethat-rating"
-version := "0.4.2-80c16b"
+version := "0.4.2-133431"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

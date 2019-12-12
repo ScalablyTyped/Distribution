@@ -1,5 +1,12 @@
 package typings.tedious.tediousMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tedious.tediousMod.ISOLATION_LEVEL.NO_CHANGE
+import typings.tedious.tediousMod.ISOLATION_LEVEL.READ_COMMITTED
+import typings.tedious.tediousMod.ISOLATION_LEVEL.READ_UNCOMMITTED
+import typings.tedious.tediousMod.ISOLATION_LEVEL.REPEATABLE_READ
+import typings.tedious.tediousMod.ISOLATION_LEVEL.SERIALIZABLE
+import typings.tedious.tediousMod.ISOLATION_LEVEL.SNAPSHOT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object ISOLATION_LEVEL extends js.Object {
   @js.native
   sealed trait SNAPSHOT extends ISOLATION_LEVEL
   
-  /* 0x00 */ val NO_CHANGE: typings.tedious.tediousMod.ISOLATION_LEVEL.NO_CHANGE with Double = js.native
-  /* 0x02 */ val READ_COMMITTED: typings.tedious.tediousMod.ISOLATION_LEVEL.READ_COMMITTED with Double = js.native
-  /* 0x01 */ val READ_UNCOMMITTED: typings.tedious.tediousMod.ISOLATION_LEVEL.READ_UNCOMMITTED with Double = js.native
-  /* 0x03 */ val REPEATABLE_READ: typings.tedious.tediousMod.ISOLATION_LEVEL.REPEATABLE_READ with Double = js.native
-  /* 0x04 */ val SERIALIZABLE: typings.tedious.tediousMod.ISOLATION_LEVEL.SERIALIZABLE with Double = js.native
-  /* 0x05 */ val SNAPSHOT: typings.tedious.tediousMod.ISOLATION_LEVEL.SNAPSHOT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ISOLATION_LEVEL with Double] = js.native
+  /* 0x00 */ @js.native
+  object NO_CHANGE extends TopLevel[NO_CHANGE with Double]
+  
+  /* 0x02 */ @js.native
+  object READ_COMMITTED extends TopLevel[READ_COMMITTED with Double]
+  
+  /* 0x01 */ @js.native
+  object READ_UNCOMMITTED extends TopLevel[READ_UNCOMMITTED with Double]
+  
+  /* 0x03 */ @js.native
+  object REPEATABLE_READ extends TopLevel[REPEATABLE_READ with Double]
+  
+  /* 0x04 */ @js.native
+  object SERIALIZABLE extends TopLevel[SERIALIZABLE with Double]
+  
+  /* 0x05 */ @js.native
+  object SNAPSHOT extends TopLevel[SNAPSHOT with Double]
+  
 }
 

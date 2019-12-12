@@ -1,8 +1,20 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
+import org.scalablytyped.runtime.TopLevel
 import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.None
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSend
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSendXOnXOff
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.XOnXOff
 import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Even
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Mark
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Odd
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Space
 import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.One
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.OnePointFive
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.Two
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +45,20 @@ object Serial extends js.Object {
     @js.native
     sealed trait XOnXOff extends Handshake
     
-    /* 0 */ val None: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.None with Double = js.native
-    /* 1 */ val RequestToSend: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSend with Double = js.native
-    /* 2 */ val RequestToSendXOnXOff: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.RequestToSendXOnXOff with Double = js.native
-    /* 3 */ val XOnXOff: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Handshake.XOnXOff with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Handshake with Double] = js.native
+    /* 0 */ @js.native
+    object None extends TopLevel[None with Double]
+    
+    /* 1 */ @js.native
+    object RequestToSend extends TopLevel[RequestToSend with Double]
+    
+    /* 2 */ @js.native
+    object RequestToSendXOnXOff extends TopLevel[RequestToSendXOnXOff with Double]
+    
+    /* 3 */ @js.native
+    object XOnXOff extends TopLevel[XOnXOff with Double]
+    
   }
   
   @js.native
@@ -58,13 +78,24 @@ object Serial extends js.Object {
     @js.native
     sealed trait Space extends Parity
     
-    /* 2 */ val Even: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Even with Double = js.native
-    /* 3 */ val Mark: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Mark with Double = js.native
-    /* 0 */ val None: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.None with Double = js.native
-    /* 1 */ val Odd: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Odd with Double = js.native
-    /* 4 */ val Space: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.Space with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Parity with Double] = js.native
+    /* 2 */ @js.native
+    object Even extends TopLevel[Even with Double]
+    
+    /* 3 */ @js.native
+    object Mark extends TopLevel[Mark with Double]
+    
+    /* 0 */ @js.native
+    object None
+      extends TopLevel[typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.Parity.None with Double]
+    
+    /* 1 */ @js.native
+    object Odd extends TopLevel[Odd with Double]
+    
+    /* 4 */ @js.native
+    object Space extends TopLevel[Space with Double]
+    
   }
   
   @js.native
@@ -81,12 +112,21 @@ object Serial extends js.Object {
     @js.native
     sealed trait Two extends StopBits
     
-    /* 0 */ val None: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.None with Double = js.native
-    /* 1 */ val One: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.One with Double = js.native
-    /* 3 */ val OnePointFive: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.OnePointFive with Double = js.native
-    /* 2 */ val Two: typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.Two with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[StopBits with Double] = js.native
+    /* 0 */ @js.native
+    object None
+      extends TopLevel[typings.jsprintmanager.jsprintmanagerMod.JSPM.Serial.StopBits.None with Double]
+    
+    /* 1 */ @js.native
+    object One extends TopLevel[One with Double]
+    
+    /* 3 */ @js.native
+    object OnePointFive extends TopLevel[OnePointFive with Double]
+    
+    /* 2 */ @js.native
+    object Two extends TopLevel[Two with Double]
+    
   }
   
 }

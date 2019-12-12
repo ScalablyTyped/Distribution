@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "grasp"
-version := "0.6-dt-20180913Z-4952ed"
+version := "0.6-dt-20180913Z-1e2063"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "cli-color" % "0.3.2-dt-20191126Z-0e2827",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-f37823",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-069b07",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

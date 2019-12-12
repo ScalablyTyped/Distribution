@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.PaneId.Gantt
+import typings.sharepoint.SP.JsGrid.PaneId.MainGrid
+import typings.sharepoint.SP.JsGrid.PaneId.PivotedGrid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +25,16 @@ object PaneId extends js.Object {
   @js.native
   sealed trait PivotedGrid extends PaneId
   
-  /* 2 */ val Gantt: typings.sharepoint.SP.JsGrid.PaneId.Gantt with Double = js.native
-  /* 0 */ val MainGrid: typings.sharepoint.SP.JsGrid.PaneId.MainGrid with Double = js.native
-  /* 1 */ val PivotedGrid: typings.sharepoint.SP.JsGrid.PaneId.PivotedGrid with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PaneId with Double] = js.native
+  /* 2 */ @js.native
+  object Gantt extends TopLevel[Gantt with Double]
+  
+  /* 0 */ @js.native
+  object MainGrid extends TopLevel[MainGrid with Double]
+  
+  /* 1 */ @js.native
+  object PivotedGrid extends TopLevel[PivotedGrid with Double]
+  
 }
 

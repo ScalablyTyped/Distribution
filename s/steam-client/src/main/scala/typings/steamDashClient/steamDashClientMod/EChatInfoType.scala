@@ -1,5 +1,9 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatInfoType.InfoUpdate
+import typings.steamDashClient.steamDashClientMod.EChatInfoType.MemberLimitChange
+import typings.steamDashClient.steamDashClientMod.EChatInfoType.StateChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EChatInfoType extends js.Object {
   @js.native
   sealed trait StateChange extends EChatInfoType
   
-  /* 2 */ val InfoUpdate: typings.steamDashClient.steamDashClientMod.EChatInfoType.InfoUpdate with Double = js.native
-  /* 3 */ val MemberLimitChange: typings.steamDashClient.steamDashClientMod.EChatInfoType.MemberLimitChange with Double = js.native
-  /* 1 */ val StateChange: typings.steamDashClient.steamDashClientMod.EChatInfoType.StateChange with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatInfoType with Double] = js.native
+  /* 2 */ @js.native
+  object InfoUpdate extends TopLevel[InfoUpdate with Double]
+  
+  /* 3 */ @js.native
+  object MemberLimitChange extends TopLevel[MemberLimitChange with Double]
+  
+  /* 1 */ @js.native
+  object StateChange extends TopLevel[StateChange with Double]
+  
 }
 

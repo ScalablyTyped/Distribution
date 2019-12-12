@@ -1,5 +1,15 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.AlreadyUpToDate
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.InlineUpdateReceived
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Installed
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Preinstalled
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.ReceivedInstallOrUpdate
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.ReceivedUninstall
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.RequestedUpdate
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Uninstalled
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Updated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object TaskDefinitionStatus extends js.Object {
   @js.native
   sealed trait Updated extends TaskDefinitionStatus
   
-  /* 8 */ val AlreadyUpToDate: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.AlreadyUpToDate with Double = js.native
-  /* 9 */ val InlineUpdateReceived: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.InlineUpdateReceived with Double = js.native
-  /* 3 */ val Installed: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Installed with Double = js.native
-  /* 1 */ val Preinstalled: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Preinstalled with Double = js.native
-  /* 2 */ val ReceivedInstallOrUpdate: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.ReceivedInstallOrUpdate with Double = js.native
-  /* 4 */ val ReceivedUninstall: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.ReceivedUninstall with Double = js.native
-  /* 6 */ val RequestedUpdate: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.RequestedUpdate with Double = js.native
-  /* 5 */ val Uninstalled: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Uninstalled with Double = js.native
-  /* 7 */ val Updated: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.TaskDefinitionStatus.Updated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskDefinitionStatus with Double] = js.native
+  /* 8 */ @js.native
+  object AlreadyUpToDate extends TopLevel[AlreadyUpToDate with Double]
+  
+  /* 9 */ @js.native
+  object InlineUpdateReceived extends TopLevel[InlineUpdateReceived with Double]
+  
+  /* 3 */ @js.native
+  object Installed extends TopLevel[Installed with Double]
+  
+  /* 1 */ @js.native
+  object Preinstalled extends TopLevel[Preinstalled with Double]
+  
+  /* 2 */ @js.native
+  object ReceivedInstallOrUpdate extends TopLevel[ReceivedInstallOrUpdate with Double]
+  
+  /* 4 */ @js.native
+  object ReceivedUninstall extends TopLevel[ReceivedUninstall with Double]
+  
+  /* 6 */ @js.native
+  object RequestedUpdate extends TopLevel[RequestedUpdate with Double]
+  
+  /* 5 */ @js.native
+  object Uninstalled extends TopLevel[Uninstalled with Double]
+  
+  /* 7 */ @js.native
+  object Updated extends TopLevel[Updated with Double]
+  
 }
 

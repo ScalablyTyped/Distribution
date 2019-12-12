@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.assistanceRequired
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.fatal
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.recoverable
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unknownErrorSeverity
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unrecoverable
+import typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object UnifiedPosErrorSeverity extends js.Object {
   @js.native
   sealed trait warning extends UnifiedPosErrorSeverity
   
-  /* 4 */ val assistanceRequired: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.assistanceRequired with Double = js.native
-  /* 5 */ val fatal: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.fatal with Double = js.native
-  /* 2 */ val recoverable: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.recoverable with Double = js.native
-  /* 0 */ val unknownErrorSeverity: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unknownErrorSeverity with Double = js.native
-  /* 3 */ val unrecoverable: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.unrecoverable with Double = js.native
-  /* 1 */ val warning: typings.winrtDashUwp.Windows.Devices.PointOfService.UnifiedPosErrorSeverity.warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnifiedPosErrorSeverity with Double] = js.native
+  /* 4 */ @js.native
+  object assistanceRequired extends TopLevel[assistanceRequired with Double]
+  
+  /* 5 */ @js.native
+  object fatal extends TopLevel[fatal with Double]
+  
+  /* 2 */ @js.native
+  object recoverable extends TopLevel[recoverable with Double]
+  
+  /* 0 */ @js.native
+  object unknownErrorSeverity extends TopLevel[unknownErrorSeverity with Double]
+  
+  /* 3 */ @js.native
+  object unrecoverable extends TopLevel[unrecoverable with Double]
+  
+  /* 1 */ @js.native
+  object warning extends TopLevel[warning with Double]
+  
 }
 

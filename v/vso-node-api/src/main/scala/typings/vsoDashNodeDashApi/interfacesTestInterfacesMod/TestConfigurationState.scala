@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestConfigurationState.Active
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestConfigurationState.Inactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object TestConfigurationState extends js.Object {
   @js.native
   sealed trait Inactive extends TestConfigurationState
   
-  /* 1 */ val Active: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestConfigurationState.Active with Double = js.native
-  /* 2 */ val Inactive: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestConfigurationState.Inactive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TestConfigurationState with Double] = js.native
+  /* 1 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 2 */ @js.native
+  object Inactive extends TopLevel[Inactive with Double]
+  
 }
 

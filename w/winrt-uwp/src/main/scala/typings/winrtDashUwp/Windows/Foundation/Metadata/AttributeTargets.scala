@@ -1,5 +1,19 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.all
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.apiContract
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.delegate
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.enum
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.event
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.field
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interface
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interfaceImpl
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.method
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.parameter
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.property
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.runtimeClass
+import typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.struct
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,20 +77,46 @@ object AttributeTargets extends js.Object {
   @js.native
   sealed trait struct extends AttributeTargets
   
-  /* 0 */ val all: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.all with Double = js.native
-  /* 12 */ val apiContract: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.apiContract with Double = js.native
-  /* 1 */ val delegate: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.delegate with Double = js.native
-  /* 2 */ val enum: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.enum with Double = js.native
-  /* 3 */ val event: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.event with Double = js.native
-  /* 4 */ val field: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.field with Double = js.native
-  /* 5 */ val interface: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interface with Double = js.native
-  /* 11 */ val interfaceImpl: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.interfaceImpl with Double = js.native
-  /* 6 */ val method: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.method with Double = js.native
-  /* 7 */ val parameter: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.parameter with Double = js.native
-  /* 8 */ val property: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.property with Double = js.native
-  /* 9 */ val runtimeClass: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.runtimeClass with Double = js.native
-  /* 10 */ val struct: typings.winrtDashUwp.Windows.Foundation.Metadata.AttributeTargets.struct with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AttributeTargets with Double] = js.native
+  /* 0 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 12 */ @js.native
+  object apiContract extends TopLevel[apiContract with Double]
+  
+  /* 1 */ @js.native
+  object delegate extends TopLevel[delegate with Double]
+  
+  /* 2 */ @js.native
+  object enum extends TopLevel[enum with Double]
+  
+  /* 3 */ @js.native
+  object event extends TopLevel[event with Double]
+  
+  /* 4 */ @js.native
+  object field extends TopLevel[field with Double]
+  
+  /* 5 */ @js.native
+  object interface extends TopLevel[interface with Double]
+  
+  /* 11 */ @js.native
+  object interfaceImpl extends TopLevel[interfaceImpl with Double]
+  
+  /* 6 */ @js.native
+  object method extends TopLevel[method with Double]
+  
+  /* 7 */ @js.native
+  object parameter extends TopLevel[parameter with Double]
+  
+  /* 8 */ @js.native
+  object property extends TopLevel[property with Double]
+  
+  /* 9 */ @js.native
+  object runtimeClass extends TopLevel[runtimeClass with Double]
+  
+  /* 10 */ @js.native
+  object struct extends TopLevel[struct with Double]
+  
 }
 

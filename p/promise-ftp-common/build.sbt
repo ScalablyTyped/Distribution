@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promise-ftp-common"
-version := "1.1-dt-20180709Z-e3ad5a"
+version := "1.1-dt-20180709Z-f860f2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

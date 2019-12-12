@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.arm
+import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.neutral
+import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.unknown
+import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x64
+import typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x86
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ProcessorArchitecture extends js.Object {
   @js.native
   sealed trait x86 extends ProcessorArchitecture
   
-  /* 1 */ val arm: typings.winrtDashUwp.Windows.System.ProcessorArchitecture.arm with Double = js.native
-  /* 3 */ val neutral: typings.winrtDashUwp.Windows.System.ProcessorArchitecture.neutral with Double = js.native
-  /* 4 */ val unknown: typings.winrtDashUwp.Windows.System.ProcessorArchitecture.unknown with Double = js.native
-  /* 2 */ val x64: typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x64 with Double = js.native
-  /* 0 */ val x86: typings.winrtDashUwp.Windows.System.ProcessorArchitecture.x86 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessorArchitecture with Double] = js.native
+  /* 1 */ @js.native
+  object arm extends TopLevel[arm with Double]
+  
+  /* 3 */ @js.native
+  object neutral extends TopLevel[neutral with Double]
+  
+  /* 4 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object x64 extends TopLevel[x64 with Double]
+  
+  /* 0 */ @js.native
+  object x86 extends TopLevel[x86 with Double]
+  
 }
 

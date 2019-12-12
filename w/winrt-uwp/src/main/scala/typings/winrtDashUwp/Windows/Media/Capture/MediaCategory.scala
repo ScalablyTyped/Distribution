@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.communications
+import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.gameChat
+import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.media
+import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.other
+import typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object MediaCategory extends js.Object {
   @js.native
   sealed trait speech extends MediaCategory
   
-  /* 1 */ val communications: typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.communications with Double = js.native
-  /* 3 */ val gameChat: typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.gameChat with Double = js.native
-  /* 2 */ val media: typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.media with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.other with Double = js.native
-  /* 4 */ val speech: typings.winrtDashUwp.Windows.Media.Capture.MediaCategory.speech with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaCategory with Double] = js.native
+  /* 1 */ @js.native
+  object communications extends TopLevel[communications with Double]
+  
+  /* 3 */ @js.native
+  object gameChat extends TopLevel[gameChat with Double]
+  
+  /* 2 */ @js.native
+  object media extends TopLevel[media with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 4 */ @js.native
+  object speech extends TopLevel[speech with Double]
+  
 }
 

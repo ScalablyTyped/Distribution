@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Web.Http.Filters
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.default
+import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.noCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object HttpCacheWriteBehavior extends js.Object {
   @js.native
   sealed trait noCache extends HttpCacheWriteBehavior
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.default with Double = js.native
-  /* 1 */ val noCache: typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheWriteBehavior.noCache with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpCacheWriteBehavior with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object noCache extends TopLevel[noCache with Double]
+  
 }
 

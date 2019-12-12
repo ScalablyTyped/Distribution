@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Security.Credentials.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.hidden
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.selected
+import typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.unselected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object CredentialSaveOption extends js.Object {
   @js.native
   sealed trait unselected extends CredentialSaveOption
   
-  /* 2 */ val hidden: typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.hidden with Double = js.native
-  /* 1 */ val selected: typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.selected with Double = js.native
-  /* 0 */ val unselected: typings.winrtDashUwp.Windows.Security.Credentials.UI.CredentialSaveOption.unselected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CredentialSaveOption with Double] = js.native
+  /* 2 */ @js.native
+  object hidden extends TopLevel[hidden with Double]
+  
+  /* 1 */ @js.native
+  object selected extends TopLevel[selected with Double]
+  
+  /* 0 */ @js.native
+  object unselected extends TopLevel[unselected with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sift"
-version := "5.1.0-4732b6"
+version := "5.1.0-eb5323"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

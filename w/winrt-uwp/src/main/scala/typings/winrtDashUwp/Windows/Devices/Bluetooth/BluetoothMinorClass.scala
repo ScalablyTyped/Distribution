@@ -1,5 +1,77 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoCamcorder
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoCarAudio
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoGamingOrToy
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHandsFree
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHeadphones
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHifiAudioDevice
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoLoudspeaker
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoMicrophone
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoPortableAudio
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoSetTopBox
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVcr
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoCamera
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoConferencing
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoDisplayAndLoudspeaker
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoMonitor
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoWearableHeadset
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerDesktop
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerHandheld
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerLaptop
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerPalmSize
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerServer
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerTablet
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerWearable
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthAnkleProsthesis
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthBloodPressureMonitor
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthBodyCompositionAnalyzer
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthGenericHealthManager
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthGlucoseMeter
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthHealthDataDisplay
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthHeartRateMonitor
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthKneeProsthesis
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthMedicationMonitor
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPeakFlowMonitor
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPersonalMobilityDevice
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPulseOximeter
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthStepCounter
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthThermometer
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthWeighingScale
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkFullyAvailable
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkNoServiceAvailable
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed01To17Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed17To33Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed33To50Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed50To67Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed67To83Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed83To99Percent
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralCardReader
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralDigitalPen
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralDigitizerTablet
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralGamepad
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralHandheldGesture
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralHandheldScanner
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralJoystick
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralRemoteControl
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralSensing
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneCellular
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneCordless
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneIsdn
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneSmartPhone
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneWired
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyController
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyDoll
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyGame
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyRobot
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyVehicle
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.uncategorized
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableGlasses
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableHelmet
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableJacket
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearablePager
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableWristwatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -295,78 +367,220 @@ object BluetoothMinorClass extends js.Object {
   @js.native
   sealed trait wearableWristwatch extends BluetoothMinorClass
   
-  /* 32 */ val audioVideoCamcorder: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoCamcorder with Double = js.native
-  /* 27 */ val audioVideoCarAudio: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoCarAudio with Double = js.native
-  /* 36 */ val audioVideoGamingOrToy: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoGamingOrToy with Double = js.native
-  /* 22 */ val audioVideoHandsFree: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHandsFree with Double = js.native
-  /* 25 */ val audioVideoHeadphones: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHeadphones with Double = js.native
-  /* 29 */ val audioVideoHifiAudioDevice: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoHifiAudioDevice with Double = js.native
-  /* 24 */ val audioVideoLoudspeaker: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoLoudspeaker with Double = js.native
-  /* 23 */ val audioVideoMicrophone: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoMicrophone with Double = js.native
-  /* 26 */ val audioVideoPortableAudio: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoPortableAudio with Double = js.native
-  /* 28 */ val audioVideoSetTopBox: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoSetTopBox with Double = js.native
-  /* 30 */ val audioVideoVcr: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVcr with Double = js.native
-  /* 31 */ val audioVideoVideoCamera: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoCamera with Double = js.native
-  /* 35 */ val audioVideoVideoConferencing: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoConferencing with Double = js.native
-  /* 34 */ val audioVideoVideoDisplayAndLoudspeaker: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoDisplayAndLoudspeaker with Double = js.native
-  /* 33 */ val audioVideoVideoMonitor: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoVideoMonitor with Double = js.native
-  /* 21 */ val audioVideoWearableHeadset: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.audioVideoWearableHeadset with Double = js.native
-  /* 1 */ val computerDesktop: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerDesktop with Double = js.native
-  /* 4 */ val computerHandheld: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerHandheld with Double = js.native
-  /* 3 */ val computerLaptop: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerLaptop with Double = js.native
-  /* 5 */ val computerPalmSize: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerPalmSize with Double = js.native
-  /* 2 */ val computerServer: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerServer with Double = js.native
-  /* 7 */ val computerTablet: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerTablet with Double = js.native
-  /* 6 */ val computerWearable: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.computerWearable with Double = js.native
-  /* 68 */ val healthAnkleProsthesis: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthAnkleProsthesis with Double = js.native
-  /* 56 */ val healthBloodPressureMonitor: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthBloodPressureMonitor with Double = js.native
-  /* 64 */ val healthBodyCompositionAnalyzer: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthBodyCompositionAnalyzer with Double = js.native
-  /* 69 */ val healthGenericHealthManager: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthGenericHealthManager with Double = js.native
-  /* 59 */ val healthGlucoseMeter: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthGlucoseMeter with Double = js.native
-  /* 62 */ val healthHealthDataDisplay: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthHealthDataDisplay with Double = js.native
-  /* 61 */ val healthHeartRateMonitor: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthHeartRateMonitor with Double = js.native
-  /* 67 */ val healthKneeProsthesis: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthKneeProsthesis with Double = js.native
-  /* 66 */ val healthMedicationMonitor: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthMedicationMonitor with Double = js.native
-  /* 65 */ val healthPeakFlowMonitor: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPeakFlowMonitor with Double = js.native
-  /* 70 */ val healthPersonalMobilityDevice: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPersonalMobilityDevice with Double = js.native
-  /* 60 */ val healthPulseOximeter: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthPulseOximeter with Double = js.native
-  /* 63 */ val healthStepCounter: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthStepCounter with Double = js.native
-  /* 57 */ val healthThermometer: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthThermometer with Double = js.native
-  /* 58 */ val healthWeighingScale: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.healthWeighingScale with Double = js.native
-  /* 13 */ val networkFullyAvailable: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkFullyAvailable with Double = js.native
-  /* 20 */ val networkNoServiceAvailable: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkNoServiceAvailable with Double = js.native
-  /* 14 */ val networkUsed01To17Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed01To17Percent with Double = js.native
-  /* 15 */ val networkUsed17To33Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed17To33Percent with Double = js.native
-  /* 16 */ val networkUsed33To50Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed33To50Percent with Double = js.native
-  /* 17 */ val networkUsed50To67Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed50To67Percent with Double = js.native
-  /* 18 */ val networkUsed67To83Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed67To83Percent with Double = js.native
-  /* 19 */ val networkUsed83To99Percent: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.networkUsed83To99Percent with Double = js.native
-  /* 42 */ val peripheralCardReader: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralCardReader with Double = js.native
-  /* 43 */ val peripheralDigitalPen: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralDigitalPen with Double = js.native
-  /* 41 */ val peripheralDigitizerTablet: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralDigitizerTablet with Double = js.native
-  /* 38 */ val peripheralGamepad: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralGamepad with Double = js.native
-  /* 45 */ val peripheralHandheldGesture: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralHandheldGesture with Double = js.native
-  /* 44 */ val peripheralHandheldScanner: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralHandheldScanner with Double = js.native
-  /* 37 */ val peripheralJoystick: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralJoystick with Double = js.native
-  /* 39 */ val peripheralRemoteControl: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralRemoteControl with Double = js.native
-  /* 40 */ val peripheralSensing: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.peripheralSensing with Double = js.native
-  /* 8 */ val phoneCellular: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneCellular with Double = js.native
-  /* 9 */ val phoneCordless: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneCordless with Double = js.native
-  /* 12 */ val phoneIsdn: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneIsdn with Double = js.native
-  /* 10 */ val phoneSmartPhone: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneSmartPhone with Double = js.native
-  /* 11 */ val phoneWired: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.phoneWired with Double = js.native
-  /* 54 */ val toyController: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyController with Double = js.native
-  /* 53 */ val toyDoll: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyDoll with Double = js.native
-  /* 55 */ val toyGame: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyGame with Double = js.native
-  /* 51 */ val toyRobot: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyRobot with Double = js.native
-  /* 52 */ val toyVehicle: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.toyVehicle with Double = js.native
-  /* 0 */ val uncategorized: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.uncategorized with Double = js.native
-  /* 50 */ val wearableGlasses: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableGlasses with Double = js.native
-  /* 49 */ val wearableHelmet: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableHelmet with Double = js.native
-  /* 48 */ val wearableJacket: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableJacket with Double = js.native
-  /* 47 */ val wearablePager: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearablePager with Double = js.native
-  /* 46 */ val wearableWristwatch: typings.winrtDashUwp.Windows.Devices.Bluetooth.BluetoothMinorClass.wearableWristwatch with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothMinorClass with Double] = js.native
+  /* 32 */ @js.native
+  object audioVideoCamcorder extends TopLevel[audioVideoCamcorder with Double]
+  
+  /* 27 */ @js.native
+  object audioVideoCarAudio extends TopLevel[audioVideoCarAudio with Double]
+  
+  /* 36 */ @js.native
+  object audioVideoGamingOrToy extends TopLevel[audioVideoGamingOrToy with Double]
+  
+  /* 22 */ @js.native
+  object audioVideoHandsFree extends TopLevel[audioVideoHandsFree with Double]
+  
+  /* 25 */ @js.native
+  object audioVideoHeadphones extends TopLevel[audioVideoHeadphones with Double]
+  
+  /* 29 */ @js.native
+  object audioVideoHifiAudioDevice extends TopLevel[audioVideoHifiAudioDevice with Double]
+  
+  /* 24 */ @js.native
+  object audioVideoLoudspeaker extends TopLevel[audioVideoLoudspeaker with Double]
+  
+  /* 23 */ @js.native
+  object audioVideoMicrophone extends TopLevel[audioVideoMicrophone with Double]
+  
+  /* 26 */ @js.native
+  object audioVideoPortableAudio extends TopLevel[audioVideoPortableAudio with Double]
+  
+  /* 28 */ @js.native
+  object audioVideoSetTopBox extends TopLevel[audioVideoSetTopBox with Double]
+  
+  /* 30 */ @js.native
+  object audioVideoVcr extends TopLevel[audioVideoVcr with Double]
+  
+  /* 31 */ @js.native
+  object audioVideoVideoCamera extends TopLevel[audioVideoVideoCamera with Double]
+  
+  /* 35 */ @js.native
+  object audioVideoVideoConferencing extends TopLevel[audioVideoVideoConferencing with Double]
+  
+  /* 34 */ @js.native
+  object audioVideoVideoDisplayAndLoudspeaker extends TopLevel[audioVideoVideoDisplayAndLoudspeaker with Double]
+  
+  /* 33 */ @js.native
+  object audioVideoVideoMonitor extends TopLevel[audioVideoVideoMonitor with Double]
+  
+  /* 21 */ @js.native
+  object audioVideoWearableHeadset extends TopLevel[audioVideoWearableHeadset with Double]
+  
+  /* 1 */ @js.native
+  object computerDesktop extends TopLevel[computerDesktop with Double]
+  
+  /* 4 */ @js.native
+  object computerHandheld extends TopLevel[computerHandheld with Double]
+  
+  /* 3 */ @js.native
+  object computerLaptop extends TopLevel[computerLaptop with Double]
+  
+  /* 5 */ @js.native
+  object computerPalmSize extends TopLevel[computerPalmSize with Double]
+  
+  /* 2 */ @js.native
+  object computerServer extends TopLevel[computerServer with Double]
+  
+  /* 7 */ @js.native
+  object computerTablet extends TopLevel[computerTablet with Double]
+  
+  /* 6 */ @js.native
+  object computerWearable extends TopLevel[computerWearable with Double]
+  
+  /* 68 */ @js.native
+  object healthAnkleProsthesis extends TopLevel[healthAnkleProsthesis with Double]
+  
+  /* 56 */ @js.native
+  object healthBloodPressureMonitor extends TopLevel[healthBloodPressureMonitor with Double]
+  
+  /* 64 */ @js.native
+  object healthBodyCompositionAnalyzer extends TopLevel[healthBodyCompositionAnalyzer with Double]
+  
+  /* 69 */ @js.native
+  object healthGenericHealthManager extends TopLevel[healthGenericHealthManager with Double]
+  
+  /* 59 */ @js.native
+  object healthGlucoseMeter extends TopLevel[healthGlucoseMeter with Double]
+  
+  /* 62 */ @js.native
+  object healthHealthDataDisplay extends TopLevel[healthHealthDataDisplay with Double]
+  
+  /* 61 */ @js.native
+  object healthHeartRateMonitor extends TopLevel[healthHeartRateMonitor with Double]
+  
+  /* 67 */ @js.native
+  object healthKneeProsthesis extends TopLevel[healthKneeProsthesis with Double]
+  
+  /* 66 */ @js.native
+  object healthMedicationMonitor extends TopLevel[healthMedicationMonitor with Double]
+  
+  /* 65 */ @js.native
+  object healthPeakFlowMonitor extends TopLevel[healthPeakFlowMonitor with Double]
+  
+  /* 70 */ @js.native
+  object healthPersonalMobilityDevice extends TopLevel[healthPersonalMobilityDevice with Double]
+  
+  /* 60 */ @js.native
+  object healthPulseOximeter extends TopLevel[healthPulseOximeter with Double]
+  
+  /* 63 */ @js.native
+  object healthStepCounter extends TopLevel[healthStepCounter with Double]
+  
+  /* 57 */ @js.native
+  object healthThermometer extends TopLevel[healthThermometer with Double]
+  
+  /* 58 */ @js.native
+  object healthWeighingScale extends TopLevel[healthWeighingScale with Double]
+  
+  /* 13 */ @js.native
+  object networkFullyAvailable extends TopLevel[networkFullyAvailable with Double]
+  
+  /* 20 */ @js.native
+  object networkNoServiceAvailable extends TopLevel[networkNoServiceAvailable with Double]
+  
+  /* 14 */ @js.native
+  object networkUsed01To17Percent extends TopLevel[networkUsed01To17Percent with Double]
+  
+  /* 15 */ @js.native
+  object networkUsed17To33Percent extends TopLevel[networkUsed17To33Percent with Double]
+  
+  /* 16 */ @js.native
+  object networkUsed33To50Percent extends TopLevel[networkUsed33To50Percent with Double]
+  
+  /* 17 */ @js.native
+  object networkUsed50To67Percent extends TopLevel[networkUsed50To67Percent with Double]
+  
+  /* 18 */ @js.native
+  object networkUsed67To83Percent extends TopLevel[networkUsed67To83Percent with Double]
+  
+  /* 19 */ @js.native
+  object networkUsed83To99Percent extends TopLevel[networkUsed83To99Percent with Double]
+  
+  /* 42 */ @js.native
+  object peripheralCardReader extends TopLevel[peripheralCardReader with Double]
+  
+  /* 43 */ @js.native
+  object peripheralDigitalPen extends TopLevel[peripheralDigitalPen with Double]
+  
+  /* 41 */ @js.native
+  object peripheralDigitizerTablet extends TopLevel[peripheralDigitizerTablet with Double]
+  
+  /* 38 */ @js.native
+  object peripheralGamepad extends TopLevel[peripheralGamepad with Double]
+  
+  /* 45 */ @js.native
+  object peripheralHandheldGesture extends TopLevel[peripheralHandheldGesture with Double]
+  
+  /* 44 */ @js.native
+  object peripheralHandheldScanner extends TopLevel[peripheralHandheldScanner with Double]
+  
+  /* 37 */ @js.native
+  object peripheralJoystick extends TopLevel[peripheralJoystick with Double]
+  
+  /* 39 */ @js.native
+  object peripheralRemoteControl extends TopLevel[peripheralRemoteControl with Double]
+  
+  /* 40 */ @js.native
+  object peripheralSensing extends TopLevel[peripheralSensing with Double]
+  
+  /* 8 */ @js.native
+  object phoneCellular extends TopLevel[phoneCellular with Double]
+  
+  /* 9 */ @js.native
+  object phoneCordless extends TopLevel[phoneCordless with Double]
+  
+  /* 12 */ @js.native
+  object phoneIsdn extends TopLevel[phoneIsdn with Double]
+  
+  /* 10 */ @js.native
+  object phoneSmartPhone extends TopLevel[phoneSmartPhone with Double]
+  
+  /* 11 */ @js.native
+  object phoneWired extends TopLevel[phoneWired with Double]
+  
+  /* 54 */ @js.native
+  object toyController extends TopLevel[toyController with Double]
+  
+  /* 53 */ @js.native
+  object toyDoll extends TopLevel[toyDoll with Double]
+  
+  /* 55 */ @js.native
+  object toyGame extends TopLevel[toyGame with Double]
+  
+  /* 51 */ @js.native
+  object toyRobot extends TopLevel[toyRobot with Double]
+  
+  /* 52 */ @js.native
+  object toyVehicle extends TopLevel[toyVehicle with Double]
+  
+  /* 0 */ @js.native
+  object uncategorized extends TopLevel[uncategorized with Double]
+  
+  /* 50 */ @js.native
+  object wearableGlasses extends TopLevel[wearableGlasses with Double]
+  
+  /* 49 */ @js.native
+  object wearableHelmet extends TopLevel[wearableHelmet with Double]
+  
+  /* 48 */ @js.native
+  object wearableJacket extends TopLevel[wearableJacket with Double]
+  
+  /* 47 */ @js.native
+  object wearablePager extends TopLevel[wearablePager with Double]
+  
+  /* 46 */ @js.native
+  object wearableWristwatch extends TopLevel[wearableWristwatch with Double]
+  
 }
 

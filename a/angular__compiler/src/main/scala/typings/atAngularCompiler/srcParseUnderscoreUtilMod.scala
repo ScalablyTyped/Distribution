@@ -1,7 +1,10 @@
 package typings.atAngularCompiler
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCompiler.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel
+import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.ERROR
+import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.WARNING
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseLocation
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceFile
 import typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseSourceSpan
@@ -64,10 +67,14 @@ object srcParseUnderscoreUtilMod extends js.Object {
     @js.native
     sealed trait WARNING extends ParseErrorLevel
     
-    /* 1 */ val ERROR: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.ERROR with Double = js.native
-    /* 0 */ val WARNING: typings.atAngularCompiler.srcParseUnderscoreUtilMod.ParseErrorLevel.WARNING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ParseErrorLevel with Double] = js.native
+    /* 1 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 0 */ @js.native
+    object WARNING extends TopLevel[WARNING with Double]
+    
   }
   
 }

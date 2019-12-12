@@ -1,7 +1,12 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.CENTER
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.LEADING
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.TRAILING
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -118,12 +123,20 @@ object ColumnProperties extends js.Object {
     @js.native
     sealed trait TRAILING extends HorizontalAlignment
     
-    /* 2 */ val CENTER: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.CENTER with Double = js.native
-    /* 0 */ val HORIZONTAL_ALIGNMENT_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.HORIZONTAL_ALIGNMENT_UNSPECIFIED with Double = js.native
-    /* 1 */ val LEADING: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.LEADING with Double = js.native
-    /* 3 */ val TRAILING: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.ColumnProperties.HorizontalAlignment.TRAILING with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[HorizontalAlignment with Double] = js.native
+    /* 2 */ @js.native
+    object CENTER extends TopLevel[CENTER with Double]
+    
+    /* 0 */ @js.native
+    object HORIZONTAL_ALIGNMENT_UNSPECIFIED extends TopLevel[HORIZONTAL_ALIGNMENT_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object LEADING extends TopLevel[LEADING with Double]
+    
+    /* 3 */ @js.native
+    object TRAILING extends TopLevel[TRAILING with Double]
+    
   }
   
 }

@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyReviews
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyUserNames
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ReviewFilterOptions extends js.Object {
   @js.native
   sealed trait None extends ReviewFilterOptions
   
-  /* 1 */ val FilterEmptyReviews: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyReviews with Double = js.native
-  /* 2 */ val FilterEmptyUserNames: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.FilterEmptyUserNames with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewFilterOptions.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReviewFilterOptions with Double] = js.native
+  /* 1 */ @js.native
+  object FilterEmptyReviews extends TopLevel[FilterEmptyReviews with Double]
+  
+  /* 2 */ @js.native
+  object FilterEmptyUserNames extends TopLevel[FilterEmptyUserNames with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

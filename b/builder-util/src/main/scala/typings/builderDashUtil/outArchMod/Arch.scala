@@ -1,5 +1,10 @@
 package typings.builderDashUtil.outArchMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.builderDashUtil.outArchMod.Arch.arm64
+import typings.builderDashUtil.outArchMod.Arch.armv7l
+import typings.builderDashUtil.outArchMod.Arch.ia32
+import typings.builderDashUtil.outArchMod.Arch.x64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Arch extends js.Object {
   @js.native
   sealed trait x64 extends Arch
   
-  /* 3 */ val arm64: typings.builderDashUtil.outArchMod.Arch.arm64 with Double = js.native
-  /* 2 */ val armv7l: typings.builderDashUtil.outArchMod.Arch.armv7l with Double = js.native
-  /* 0 */ val ia32: typings.builderDashUtil.outArchMod.Arch.ia32 with Double = js.native
-  /* 1 */ val x64: typings.builderDashUtil.outArchMod.Arch.x64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Arch with Double] = js.native
+  /* 3 */ @js.native
+  object arm64 extends TopLevel[arm64 with Double]
+  
+  /* 2 */ @js.native
+  object armv7l extends TopLevel[armv7l with Double]
+  
+  /* 0 */ @js.native
+  object ia32 extends TopLevel[ia32 with Double]
+  
+  /* 1 */ @js.native
+  object x64 extends TopLevel[x64 with Double]
+  
 }
 

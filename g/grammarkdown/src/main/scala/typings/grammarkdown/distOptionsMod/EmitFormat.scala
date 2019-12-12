@@ -1,5 +1,9 @@
 package typings.grammarkdown.distOptionsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.grammarkdown.distOptionsMod.EmitFormat.ecmarkup
+import typings.grammarkdown.distOptionsMod.EmitFormat.html
+import typings.grammarkdown.distOptionsMod.EmitFormat.markdown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object EmitFormat extends js.Object {
   @js.native
   sealed trait markdown extends EmitFormat
   
-  /* 2 */ val ecmarkup: typings.grammarkdown.distOptionsMod.EmitFormat.ecmarkup with Double = js.native
-  /* 1 */ val html: typings.grammarkdown.distOptionsMod.EmitFormat.html with Double = js.native
-  /* 0 */ val markdown: typings.grammarkdown.distOptionsMod.EmitFormat.markdown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmitFormat with Double] = js.native
+  /* 2 */ @js.native
+  object ecmarkup extends TopLevel[ecmarkup with Double]
+  
+  /* 1 */ @js.native
+  object html extends TopLevel[html with Double]
+  
+  /* 0 */ @js.native
+  object markdown extends TopLevel[markdown with Double]
+  
 }
 

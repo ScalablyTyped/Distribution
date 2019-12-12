@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.abandoned
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.canceled
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.failed
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.slicing
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.submitted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object Print3DTaskCompletion extends js.Object {
   @js.native
   sealed trait submitted extends Print3DTaskCompletion
   
-  /* 0 */ val abandoned: typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.abandoned with Double = js.native
-  /* 1 */ val canceled: typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.canceled with Double = js.native
-  /* 2 */ val failed: typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.failed with Double = js.native
-  /* 3 */ val slicing: typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.slicing with Double = js.native
-  /* 4 */ val submitted: typings.winrtDashUwp.Windows.Graphics.Printing3D.Print3DTaskCompletion.submitted with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Print3DTaskCompletion with Double] = js.native
+  /* 0 */ @js.native
+  object abandoned extends TopLevel[abandoned with Double]
+  
+  /* 1 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 2 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 3 */ @js.native
+  object slicing extends TopLevel[slicing with Double]
+  
+  /* 4 */ @js.native
+  object submitted extends TopLevel[submitted with Double]
+  
 }
 

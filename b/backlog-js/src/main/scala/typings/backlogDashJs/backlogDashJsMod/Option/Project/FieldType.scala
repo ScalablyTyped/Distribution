@@ -1,5 +1,14 @@
 package typings.backlogDashJs.backlogDashJsMod.Option.Project
 
+import org.scalablytyped.runtime.TopLevel
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.CheckBox
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Date
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.MultipleList
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Numeric
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Radio
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.SingleList
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Text
+import typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.TextArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object FieldType extends js.Object {
   @js.native
   sealed trait TextArea extends FieldType
   
-  /* 7 */ val CheckBox: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.CheckBox with Double = js.native
-  /* 4 */ val Date: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Date with Double = js.native
-  /* 6 */ val MultipleList: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.MultipleList with Double = js.native
-  /* 3 */ val Numeric: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Numeric with Double = js.native
-  /* 8 */ val Radio: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Radio with Double = js.native
-  /* 5 */ val SingleList: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.SingleList with Double = js.native
-  /* 1 */ val Text: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.Text with Double = js.native
-  /* 2 */ val TextArea: typings.backlogDashJs.backlogDashJsMod.Option.Project.FieldType.TextArea with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldType with Double] = js.native
+  /* 7 */ @js.native
+  object CheckBox extends TopLevel[CheckBox with Double]
+  
+  /* 4 */ @js.native
+  object Date extends TopLevel[Date with Double]
+  
+  /* 6 */ @js.native
+  object MultipleList extends TopLevel[MultipleList with Double]
+  
+  /* 3 */ @js.native
+  object Numeric extends TopLevel[Numeric with Double]
+  
+  /* 8 */ @js.native
+  object Radio extends TopLevel[Radio with Double]
+  
+  /* 5 */ @js.native
+  object SingleList extends TopLevel[SingleList with Double]
+  
+  /* 1 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 2 */ @js.native
+  object TextArea extends TopLevel[TextArea with Double]
+  
 }
 

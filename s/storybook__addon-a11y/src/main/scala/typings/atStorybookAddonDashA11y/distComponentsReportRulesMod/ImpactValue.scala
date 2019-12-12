@@ -1,5 +1,10 @@
 package typings.atStorybookAddonDashA11y.distComponentsReportRulesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.CRITICAL
+import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MINOR
+import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MODERATE
+import typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.SERIOUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ImpactValue extends js.Object {
   @js.native
   sealed trait SERIOUS extends ImpactValue
   
-  /* "critical" */ val CRITICAL: typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.CRITICAL with String = js.native
-  /* "minor" */ val MINOR: typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MINOR with String = js.native
-  /* "moderate" */ val MODERATE: typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.MODERATE with String = js.native
-  /* "serious" */ val SERIOUS: typings.atStorybookAddonDashA11y.distComponentsReportRulesMod.ImpactValue.SERIOUS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ImpactValue with String] = js.native
+  /* "critical" */ @js.native
+  object CRITICAL extends TopLevel[CRITICAL with String]
+  
+  /* "minor" */ @js.native
+  object MINOR extends TopLevel[MINOR with String]
+  
+  /* "moderate" */ @js.native
+  object MODERATE extends TopLevel[MODERATE with String]
+  
+  /* "serious" */ @js.native
+  object SERIOUS extends TopLevel[SERIOUS with String]
+  
 }
 

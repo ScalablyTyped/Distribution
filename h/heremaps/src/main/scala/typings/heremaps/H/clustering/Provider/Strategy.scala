@@ -1,5 +1,9 @@
 package typings.heremaps.H.clustering.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.heremaps.H.clustering.Provider.Strategy.DYNAMICGRID
+import typings.heremaps.H.clustering.Provider.Strategy.FASTGRID
+import typings.heremaps.H.clustering.Provider.Strategy.GRID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object Strategy extends js.Object {
   @js.native
   sealed trait GRID extends Strategy
   
-  /* 2 */ val DYNAMICGRID: typings.heremaps.H.clustering.Provider.Strategy.DYNAMICGRID with Double = js.native
-  /* 0 */ val FASTGRID: typings.heremaps.H.clustering.Provider.Strategy.FASTGRID with Double = js.native
-  /* 1 */ val GRID: typings.heremaps.H.clustering.Provider.Strategy.GRID with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Strategy with Double] = js.native
+  /* 2 */ @js.native
+  object DYNAMICGRID extends TopLevel[DYNAMICGRID with Double]
+  
+  /* 0 */ @js.native
+  object FASTGRID extends TopLevel[FASTGRID with Double]
+  
+  /* 1 */ @js.native
+  object GRID extends TopLevel[GRID with Double]
+  
 }
 

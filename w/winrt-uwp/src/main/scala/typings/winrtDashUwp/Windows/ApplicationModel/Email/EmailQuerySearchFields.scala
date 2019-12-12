@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.all
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.preview
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.recipients
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.sender
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object EmailQuerySearchFields extends js.Object {
   @js.native
   sealed trait subject extends EmailQuerySearchFields
   
-  /* 5 */ val all: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.all with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.none with Double = js.native
-  /* 3 */ val preview: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.preview with Double = js.native
-  /* 4 */ val recipients: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.recipients with Double = js.native
-  /* 2 */ val sender: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.sender with Double = js.native
-  /* 1 */ val subject: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySearchFields.subject with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailQuerySearchFields with Double] = js.native
+  /* 5 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object preview extends TopLevel[preview with Double]
+  
+  /* 4 */ @js.native
+  object recipients extends TopLevel[recipients with Double]
+  
+  /* 2 */ @js.native
+  object sender extends TopLevel[sender with Double]
+  
+  /* 1 */ @js.native
+  object subject extends TopLevel[subject with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.cassandraDashDriver.libTypesMod.types
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cassandraDashDriver.libTypesMod.types.distance.ignored
+import typings.cassandraDashDriver.libTypesMod.types.distance.local
+import typings.cassandraDashDriver.libTypesMod.types.distance.remote
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object distance extends js.Object {
   @js.native
   sealed trait remote extends distance
   
-  /* 1 */ val ignored: typings.cassandraDashDriver.libTypesMod.types.distance.ignored with Double = js.native
-  /* 0 */ val local: typings.cassandraDashDriver.libTypesMod.types.distance.local with Double = js.native
-  /* 0 */ val remote: typings.cassandraDashDriver.libTypesMod.types.distance.remote with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[distance with Double] = js.native
+  /* 1 */ @js.native
+  object ignored extends TopLevel[ignored with Double]
+  
+  /* 0 */ @js.native
+  object local extends TopLevel[local with Double]
+  
+  /* 0 */ @js.native
+  object remote extends TopLevel[remote with Double]
+  
 }
 

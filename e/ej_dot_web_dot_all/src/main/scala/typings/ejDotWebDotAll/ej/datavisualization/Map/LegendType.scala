@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LegendType.Bubbles
+import typings.ejDotWebDotAll.ej.datavisualization.Map.LegendType.Layers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object LegendType extends js.Object {
   @js.native
   sealed trait Layers extends LegendType
   
-  /* 1 */ val Bubbles: typings.ejDotWebDotAll.ej.datavisualization.Map.LegendType.Bubbles with Double = js.native
-  /* 0 */ val Layers: typings.ejDotWebDotAll.ej.datavisualization.Map.LegendType.Layers with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LegendType with Double] = js.native
+  /* 1 */ @js.native
+  object Bubbles extends TopLevel[Bubbles with Double]
+  
+  /* 0 */ @js.native
+  object Layers extends TopLevel[Layers with Double]
+  
 }
 

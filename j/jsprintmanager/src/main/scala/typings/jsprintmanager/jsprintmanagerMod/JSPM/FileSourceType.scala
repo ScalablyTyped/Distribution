@@ -1,5 +1,10 @@
 package typings.jsprintmanager.jsprintmanagerMod.JSPM
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.BLOB
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Base64
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Text
+import typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object FileSourceType extends js.Object {
   @js.native
   sealed trait URL extends FileSourceType
   
-  /* 2 */ val BLOB: typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.BLOB with Double = js.native
-  /* 0 */ val Base64: typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Base64 with Double = js.native
-  /* 1 */ val Text: typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.Text with Double = js.native
-  /* 3 */ val URL: typings.jsprintmanager.jsprintmanagerMod.JSPM.FileSourceType.URL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FileSourceType with Double] = js.native
+  /* 2 */ @js.native
+  object BLOB extends TopLevel[BLOB with Double]
+  
+  /* 0 */ @js.native
+  object Base64 extends TopLevel[Base64 with Double]
+  
+  /* 1 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 3 */ @js.native
+  object URL extends TopLevel[URL with Double]
+  
 }
 

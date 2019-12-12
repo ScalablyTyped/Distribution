@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Changeset
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Date
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Latest
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.MergeSource
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.None
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Shelveset
+import typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Tip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +42,34 @@ object TfvcVersionType extends js.Object {
   @js.native
   sealed trait Tip extends TfvcVersionType
   
-  /* 3 */ val Change: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Change with Double = js.native
-  /* 1 */ val Changeset: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Changeset with Double = js.native
-  /* 4 */ val Date: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Date with Double = js.native
-  /* 5 */ val Latest: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Latest with Double = js.native
-  /* 7 */ val MergeSource: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.MergeSource with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.None with Double = js.native
-  /* 2 */ val Shelveset: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Shelveset with Double = js.native
-  /* 6 */ val Tip: typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Tip with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TfvcVersionType with Double] = js.native
+  /* 3 */ @js.native
+  object Change
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesTfvcInterfacesMod.TfvcVersionType.Change with Double
+        ]
+  
+  /* 1 */ @js.native
+  object Changeset extends TopLevel[Changeset with Double]
+  
+  /* 4 */ @js.native
+  object Date extends TopLevel[Date with Double]
+  
+  /* 5 */ @js.native
+  object Latest extends TopLevel[Latest with Double]
+  
+  /* 7 */ @js.native
+  object MergeSource extends TopLevel[MergeSource with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Shelveset extends TopLevel[Shelveset with Double]
+  
+  /* 6 */ @js.native
+  object Tip extends TopLevel[Tip with Double]
+  
 }
 

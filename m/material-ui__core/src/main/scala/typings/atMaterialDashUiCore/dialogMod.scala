@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.dialogDialogMod.DialogProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object dialogMod extends js.Object {
     def this(props: DialogProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[DialogProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[DialogProps]]
+  
 }
 

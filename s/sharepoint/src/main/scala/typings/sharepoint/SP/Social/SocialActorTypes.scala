@@ -1,5 +1,13 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialActorTypes.all
+import typings.sharepoint.SP.Social.SocialActorTypes.documents
+import typings.sharepoint.SP.Social.SocialActorTypes.excludeContentWithoutFeeds
+import typings.sharepoint.SP.Social.SocialActorTypes.none
+import typings.sharepoint.SP.Social.SocialActorTypes.sites
+import typings.sharepoint.SP.Social.SocialActorTypes.tags
+import typings.sharepoint.SP.Social.SocialActorTypes.users
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,14 +41,28 @@ object SocialActorTypes extends js.Object {
   @js.native
   sealed trait users extends SocialActorTypes
   
-  /* 6 */ val all: typings.sharepoint.SP.Social.SocialActorTypes.all with Double = js.native
-  /* 2 */ val documents: typings.sharepoint.SP.Social.SocialActorTypes.documents with Double = js.native
-  /* 5 */ val excludeContentWithoutFeeds: typings.sharepoint.SP.Social.SocialActorTypes.excludeContentWithoutFeeds with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.Social.SocialActorTypes.none with Double = js.native
-  /* 3 */ val sites: typings.sharepoint.SP.Social.SocialActorTypes.sites with Double = js.native
-  /* 4 */ val tags: typings.sharepoint.SP.Social.SocialActorTypes.tags with Double = js.native
-  /* 1 */ val users: typings.sharepoint.SP.Social.SocialActorTypes.users with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialActorTypes with Double] = js.native
+  /* 6 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 2 */ @js.native
+  object documents extends TopLevel[documents with Double]
+  
+  /* 5 */ @js.native
+  object excludeContentWithoutFeeds extends TopLevel[excludeContentWithoutFeeds with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object sites extends TopLevel[sites with Double]
+  
+  /* 4 */ @js.native
+  object tags extends TopLevel[tags with Double]
+  
+  /* 1 */ @js.native
+  object users extends TopLevel[users with Double]
+  
 }
 

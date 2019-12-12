@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstDay
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstFourDayWeek
+import typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstFullWeek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object FirstWeekOfYear extends js.Object {
   @js.native
   sealed trait FirstFullWeek extends FirstWeekOfYear
   
-  /* 0 */ val FirstDay: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstDay with Double = js.native
-  /* 2 */ val FirstFourDayWeek: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstFourDayWeek with Double = js.native
-  /* 1 */ val FirstFullWeek: typings.officeDashUiDashFabricDashReact.libUtilitiesDateValuesDateValuesMod.FirstWeekOfYear.FirstFullWeek with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FirstWeekOfYear with Double] = js.native
+  /* 0 */ @js.native
+  object FirstDay extends TopLevel[FirstDay with Double]
+  
+  /* 2 */ @js.native
+  object FirstFourDayWeek extends TopLevel[FirstFourDayWeek with Double]
+  
+  /* 1 */ @js.native
+  object FirstFullWeek extends TopLevel[FirstFullWeek with Double]
+  
 }
 

@@ -1,7 +1,10 @@
 package typings.plottable
 
+import org.scalablytyped.runtime.TopLevel
 import typings.plottable.buildSrcComponentsComponentMod.Component
 import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode
+import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.PIXEL
+import typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.VALUE
 import typings.plottable.buildSrcCoreInterfacesMod.Bounds
 import typings.plottable.buildSrcCoreInterfacesMod.SimpleSelection
 import typings.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale
@@ -102,10 +105,14 @@ object buildSrcComponentsSelectionBoxLayerMod extends js.Object {
     @js.native
     sealed trait VALUE extends PropertyMode
     
-    /* 1 */ val PIXEL: typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.PIXEL with Double = js.native
-    /* 0 */ val VALUE: typings.plottable.buildSrcComponentsSelectionBoxLayerMod.PropertyMode.VALUE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PropertyMode with Double] = js.native
+    /* 1 */ @js.native
+    object PIXEL extends TopLevel[PIXEL with Double]
+    
+    /* 0 */ @js.native
+    object VALUE extends TopLevel[VALUE with Double]
+    
   }
   
 }

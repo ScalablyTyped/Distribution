@@ -1,5 +1,206 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.ProjectResourceFields.Accrual
+import typings.officeDashJs.Office.ProjectResourceFields.ActualCost
+import typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeCost
+import typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeWork
+import typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+import typings.officeDashJs.Office.ProjectResourceFields.ActualWork
+import typings.officeDashJs.Office.ProjectResourceFields.ActualWorkProtected
+import typings.officeDashJs.Office.ProjectResourceFields.BaseCalendar
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline10BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline10BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline10Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline10Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline1BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline1BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline1Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline1Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline2BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline2BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline2Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline2Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline3BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline3BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline3Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline3Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline4BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline4BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline4Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline4Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline5BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline5BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline5Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline5Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline6BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline6BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline6Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline6Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline7BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline7BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline7Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline7Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline8BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline8BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline8Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline8Work
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline9BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline9BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline9Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Baseline9Work
+import typings.officeDashJs.Office.ProjectResourceFields.BaselineBudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.BaselineBudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.BaselineCost
+import typings.officeDashJs.Office.ProjectResourceFields.BaselineWork
+import typings.officeDashJs.Office.ProjectResourceFields.BudgetCost
+import typings.officeDashJs.Office.ProjectResourceFields.BudgetWork
+import typings.officeDashJs.Office.ProjectResourceFields.Code
+import typings.officeDashJs.Office.ProjectResourceFields.Cost
+import typings.officeDashJs.Office.ProjectResourceFields.Cost1
+import typings.officeDashJs.Office.ProjectResourceFields.Cost10
+import typings.officeDashJs.Office.ProjectResourceFields.Cost2
+import typings.officeDashJs.Office.ProjectResourceFields.Cost3
+import typings.officeDashJs.Office.ProjectResourceFields.Cost4
+import typings.officeDashJs.Office.ProjectResourceFields.Cost5
+import typings.officeDashJs.Office.ProjectResourceFields.Cost6
+import typings.officeDashJs.Office.ProjectResourceFields.Cost7
+import typings.officeDashJs.Office.ProjectResourceFields.Cost8
+import typings.officeDashJs.Office.ProjectResourceFields.Cost9
+import typings.officeDashJs.Office.ProjectResourceFields.CostPerUse
+import typings.officeDashJs.Office.ProjectResourceFields.Date1
+import typings.officeDashJs.Office.ProjectResourceFields.Date10
+import typings.officeDashJs.Office.ProjectResourceFields.Date2
+import typings.officeDashJs.Office.ProjectResourceFields.Date3
+import typings.officeDashJs.Office.ProjectResourceFields.Date4
+import typings.officeDashJs.Office.ProjectResourceFields.Date5
+import typings.officeDashJs.Office.ProjectResourceFields.Date6
+import typings.officeDashJs.Office.ProjectResourceFields.Date7
+import typings.officeDashJs.Office.ProjectResourceFields.Date8
+import typings.officeDashJs.Office.ProjectResourceFields.Date9
+import typings.officeDashJs.Office.ProjectResourceFields.Duration1
+import typings.officeDashJs.Office.ProjectResourceFields.Duration10
+import typings.officeDashJs.Office.ProjectResourceFields.Duration2
+import typings.officeDashJs.Office.ProjectResourceFields.Duration3
+import typings.officeDashJs.Office.ProjectResourceFields.Duration4
+import typings.officeDashJs.Office.ProjectResourceFields.Duration5
+import typings.officeDashJs.Office.ProjectResourceFields.Duration6
+import typings.officeDashJs.Office.ProjectResourceFields.Duration7
+import typings.officeDashJs.Office.ProjectResourceFields.Duration8
+import typings.officeDashJs.Office.ProjectResourceFields.Duration9
+import typings.officeDashJs.Office.ProjectResourceFields.Email
+import typings.officeDashJs.Office.ProjectResourceFields.End
+import typings.officeDashJs.Office.ProjectResourceFields.Finish1
+import typings.officeDashJs.Office.ProjectResourceFields.Finish10
+import typings.officeDashJs.Office.ProjectResourceFields.Finish2
+import typings.officeDashJs.Office.ProjectResourceFields.Finish3
+import typings.officeDashJs.Office.ProjectResourceFields.Finish4
+import typings.officeDashJs.Office.ProjectResourceFields.Finish5
+import typings.officeDashJs.Office.ProjectResourceFields.Finish6
+import typings.officeDashJs.Office.ProjectResourceFields.Finish7
+import typings.officeDashJs.Office.ProjectResourceFields.Finish8
+import typings.officeDashJs.Office.ProjectResourceFields.Finish9
+import typings.officeDashJs.Office.ProjectResourceFields.Flag1
+import typings.officeDashJs.Office.ProjectResourceFields.Flag10
+import typings.officeDashJs.Office.ProjectResourceFields.Flag11
+import typings.officeDashJs.Office.ProjectResourceFields.Flag12
+import typings.officeDashJs.Office.ProjectResourceFields.Flag13
+import typings.officeDashJs.Office.ProjectResourceFields.Flag14
+import typings.officeDashJs.Office.ProjectResourceFields.Flag15
+import typings.officeDashJs.Office.ProjectResourceFields.Flag16
+import typings.officeDashJs.Office.ProjectResourceFields.Flag17
+import typings.officeDashJs.Office.ProjectResourceFields.Flag18
+import typings.officeDashJs.Office.ProjectResourceFields.Flag19
+import typings.officeDashJs.Office.ProjectResourceFields.Flag2
+import typings.officeDashJs.Office.ProjectResourceFields.Flag20
+import typings.officeDashJs.Office.ProjectResourceFields.Flag3
+import typings.officeDashJs.Office.ProjectResourceFields.Flag4
+import typings.officeDashJs.Office.ProjectResourceFields.Flag5
+import typings.officeDashJs.Office.ProjectResourceFields.Flag6
+import typings.officeDashJs.Office.ProjectResourceFields.Flag7
+import typings.officeDashJs.Office.ProjectResourceFields.Flag8
+import typings.officeDashJs.Office.ProjectResourceFields.Flag9
+import typings.officeDashJs.Office.ProjectResourceFields.Generic
+import typings.officeDashJs.Office.ProjectResourceFields.Group
+import typings.officeDashJs.Office.ProjectResourceFields.Name
+import typings.officeDashJs.Office.ProjectResourceFields.Notes
+import typings.officeDashJs.Office.ProjectResourceFields.Number1
+import typings.officeDashJs.Office.ProjectResourceFields.Number10
+import typings.officeDashJs.Office.ProjectResourceFields.Number11
+import typings.officeDashJs.Office.ProjectResourceFields.Number12
+import typings.officeDashJs.Office.ProjectResourceFields.Number13
+import typings.officeDashJs.Office.ProjectResourceFields.Number14
+import typings.officeDashJs.Office.ProjectResourceFields.Number15
+import typings.officeDashJs.Office.ProjectResourceFields.Number16
+import typings.officeDashJs.Office.ProjectResourceFields.Number17
+import typings.officeDashJs.Office.ProjectResourceFields.Number18
+import typings.officeDashJs.Office.ProjectResourceFields.Number19
+import typings.officeDashJs.Office.ProjectResourceFields.Number2
+import typings.officeDashJs.Office.ProjectResourceFields.Number20
+import typings.officeDashJs.Office.ProjectResourceFields.Number3
+import typings.officeDashJs.Office.ProjectResourceFields.Number4
+import typings.officeDashJs.Office.ProjectResourceFields.Number5
+import typings.officeDashJs.Office.ProjectResourceFields.Number6
+import typings.officeDashJs.Office.ProjectResourceFields.Number7
+import typings.officeDashJs.Office.ProjectResourceFields.Number8
+import typings.officeDashJs.Office.ProjectResourceFields.Number9
+import typings.officeDashJs.Office.ProjectResourceFields.OverAllocated
+import typings.officeDashJs.Office.ProjectResourceFields.OvertimeCost
+import typings.officeDashJs.Office.ProjectResourceFields.OvertimeRate
+import typings.officeDashJs.Office.ProjectResourceFields.OvertimeWork
+import typings.officeDashJs.Office.ProjectResourceFields.PercentWorkComplete
+import typings.officeDashJs.Office.ProjectResourceFields.RegularWork
+import typings.officeDashJs.Office.ProjectResourceFields.RemainingCost
+import typings.officeDashJs.Office.ProjectResourceFields.RemainingOvertimeCost
+import typings.officeDashJs.Office.ProjectResourceFields.RemainingOvertimeWork
+import typings.officeDashJs.Office.ProjectResourceFields.RemainingWork
+import typings.officeDashJs.Office.ProjectResourceFields.ResourceCalendarGUID
+import typings.officeDashJs.Office.ProjectResourceFields.ResourceCreationDate
+import typings.officeDashJs.Office.ProjectResourceFields.ResourceGUID
+import typings.officeDashJs.Office.ProjectResourceFields.StandardRate
+import typings.officeDashJs.Office.ProjectResourceFields.Start
+import typings.officeDashJs.Office.ProjectResourceFields.Start1
+import typings.officeDashJs.Office.ProjectResourceFields.Start10
+import typings.officeDashJs.Office.ProjectResourceFields.Start2
+import typings.officeDashJs.Office.ProjectResourceFields.Start3
+import typings.officeDashJs.Office.ProjectResourceFields.Start4
+import typings.officeDashJs.Office.ProjectResourceFields.Start5
+import typings.officeDashJs.Office.ProjectResourceFields.Start6
+import typings.officeDashJs.Office.ProjectResourceFields.Start7
+import typings.officeDashJs.Office.ProjectResourceFields.Start8
+import typings.officeDashJs.Office.ProjectResourceFields.Start9
+import typings.officeDashJs.Office.ProjectResourceFields.Text1
+import typings.officeDashJs.Office.ProjectResourceFields.Text10
+import typings.officeDashJs.Office.ProjectResourceFields.Text11
+import typings.officeDashJs.Office.ProjectResourceFields.Text12
+import typings.officeDashJs.Office.ProjectResourceFields.Text13
+import typings.officeDashJs.Office.ProjectResourceFields.Text14
+import typings.officeDashJs.Office.ProjectResourceFields.Text15
+import typings.officeDashJs.Office.ProjectResourceFields.Text16
+import typings.officeDashJs.Office.ProjectResourceFields.Text17
+import typings.officeDashJs.Office.ProjectResourceFields.Text18
+import typings.officeDashJs.Office.ProjectResourceFields.Text19
+import typings.officeDashJs.Office.ProjectResourceFields.Text2
+import typings.officeDashJs.Office.ProjectResourceFields.Text20
+import typings.officeDashJs.Office.ProjectResourceFields.Text21
+import typings.officeDashJs.Office.ProjectResourceFields.Text22
+import typings.officeDashJs.Office.ProjectResourceFields.Text23
+import typings.officeDashJs.Office.ProjectResourceFields.Text24
+import typings.officeDashJs.Office.ProjectResourceFields.Text25
+import typings.officeDashJs.Office.ProjectResourceFields.Text26
+import typings.officeDashJs.Office.ProjectResourceFields.Text27
+import typings.officeDashJs.Office.ProjectResourceFields.Text28
+import typings.officeDashJs.Office.ProjectResourceFields.Text29
+import typings.officeDashJs.Office.ProjectResourceFields.Text3
+import typings.officeDashJs.Office.ProjectResourceFields.Text30
+import typings.officeDashJs.Office.ProjectResourceFields.Text4
+import typings.officeDashJs.Office.ProjectResourceFields.Text5
+import typings.officeDashJs.Office.ProjectResourceFields.Text6
+import typings.officeDashJs.Office.ProjectResourceFields.Text7
+import typings.officeDashJs.Office.ProjectResourceFields.Text8
+import typings.officeDashJs.Office.ProjectResourceFields.Text9
+import typings.officeDashJs.Office.ProjectResourceFields.Units
+import typings.officeDashJs.Office.ProjectResourceFields.Work
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1222,207 +1423,607 @@ object ProjectResourceFields extends js.Object {
   @js.native
   sealed trait Work extends ProjectResourceFields
   
-  /* 0 */ val Accrual: typings.officeDashJs.Office.ProjectResourceFields.Accrual with Double = js.native
-  /* 1 */ val ActualCost: typings.officeDashJs.Office.ProjectResourceFields.ActualCost with Double = js.native
-  /* 2 */ val ActualOvertimeCost: typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeCost with Double = js.native
-  /* 3 */ val ActualOvertimeWork: typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeWork with Double = js.native
-  /* 4 */ val ActualOvertimeWorkProtected: typings.officeDashJs.Office.ProjectResourceFields.ActualOvertimeWorkProtected with Double = js.native
-  /* 5 */ val ActualWork: typings.officeDashJs.Office.ProjectResourceFields.ActualWork with Double = js.native
-  /* 6 */ val ActualWorkProtected: typings.officeDashJs.Office.ProjectResourceFields.ActualWorkProtected with Double = js.native
-  /* 7 */ val BaseCalendar: typings.officeDashJs.Office.ProjectResourceFields.BaseCalendar with Double = js.native
-  /* 8 */ val Baseline10BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline10BudgetCost with Double = js.native
-  /* 9 */ val Baseline10BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline10BudgetWork with Double = js.native
-  /* 10 */ val Baseline10Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline10Cost with Double = js.native
-  /* 11 */ val Baseline10Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline10Work with Double = js.native
-  /* 12 */ val Baseline1BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline1BudgetCost with Double = js.native
-  /* 13 */ val Baseline1BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline1BudgetWork with Double = js.native
-  /* 14 */ val Baseline1Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline1Cost with Double = js.native
-  /* 15 */ val Baseline1Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline1Work with Double = js.native
-  /* 16 */ val Baseline2BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline2BudgetCost with Double = js.native
-  /* 17 */ val Baseline2BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline2BudgetWork with Double = js.native
-  /* 18 */ val Baseline2Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline2Cost with Double = js.native
-  /* 19 */ val Baseline2Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline2Work with Double = js.native
-  /* 20 */ val Baseline3BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline3BudgetCost with Double = js.native
-  /* 21 */ val Baseline3BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline3BudgetWork with Double = js.native
-  /* 22 */ val Baseline3Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline3Cost with Double = js.native
-  /* 23 */ val Baseline3Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline3Work with Double = js.native
-  /* 24 */ val Baseline4BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline4BudgetCost with Double = js.native
-  /* 25 */ val Baseline4BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline4BudgetWork with Double = js.native
-  /* 26 */ val Baseline4Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline4Cost with Double = js.native
-  /* 27 */ val Baseline4Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline4Work with Double = js.native
-  /* 28 */ val Baseline5BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline5BudgetCost with Double = js.native
-  /* 29 */ val Baseline5BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline5BudgetWork with Double = js.native
-  /* 30 */ val Baseline5Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline5Cost with Double = js.native
-  /* 31 */ val Baseline5Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline5Work with Double = js.native
-  /* 32 */ val Baseline6BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline6BudgetCost with Double = js.native
-  /* 33 */ val Baseline6BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline6BudgetWork with Double = js.native
-  /* 34 */ val Baseline6Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline6Cost with Double = js.native
-  /* 35 */ val Baseline6Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline6Work with Double = js.native
-  /* 36 */ val Baseline7BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline7BudgetCost with Double = js.native
-  /* 37 */ val Baseline7BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline7BudgetWork with Double = js.native
-  /* 38 */ val Baseline7Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline7Cost with Double = js.native
-  /* 39 */ val Baseline7Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline7Work with Double = js.native
-  /* 40 */ val Baseline8BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline8BudgetCost with Double = js.native
-  /* 41 */ val Baseline8BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline8BudgetWork with Double = js.native
-  /* 42 */ val Baseline8Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline8Cost with Double = js.native
-  /* 43 */ val Baseline8Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline8Work with Double = js.native
-  /* 44 */ val Baseline9BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.Baseline9BudgetCost with Double = js.native
-  /* 45 */ val Baseline9BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.Baseline9BudgetWork with Double = js.native
-  /* 46 */ val Baseline9Cost: typings.officeDashJs.Office.ProjectResourceFields.Baseline9Cost with Double = js.native
-  /* 47 */ val Baseline9Work: typings.officeDashJs.Office.ProjectResourceFields.Baseline9Work with Double = js.native
-  /* 48 */ val BaselineBudgetCost: typings.officeDashJs.Office.ProjectResourceFields.BaselineBudgetCost with Double = js.native
-  /* 49 */ val BaselineBudgetWork: typings.officeDashJs.Office.ProjectResourceFields.BaselineBudgetWork with Double = js.native
-  /* 50 */ val BaselineCost: typings.officeDashJs.Office.ProjectResourceFields.BaselineCost with Double = js.native
-  /* 51 */ val BaselineWork: typings.officeDashJs.Office.ProjectResourceFields.BaselineWork with Double = js.native
-  /* 52 */ val BudgetCost: typings.officeDashJs.Office.ProjectResourceFields.BudgetCost with Double = js.native
-  /* 53 */ val BudgetWork: typings.officeDashJs.Office.ProjectResourceFields.BudgetWork with Double = js.native
-  /* 55 */ val Code: typings.officeDashJs.Office.ProjectResourceFields.Code with Double = js.native
-  /* 156 */ val Cost: typings.officeDashJs.Office.ProjectResourceFields.Cost with Double = js.native
-  /* 56 */ val Cost1: typings.officeDashJs.Office.ProjectResourceFields.Cost1 with Double = js.native
-  /* 57 */ val Cost10: typings.officeDashJs.Office.ProjectResourceFields.Cost10 with Double = js.native
-  /* 58 */ val Cost2: typings.officeDashJs.Office.ProjectResourceFields.Cost2 with Double = js.native
-  /* 59 */ val Cost3: typings.officeDashJs.Office.ProjectResourceFields.Cost3 with Double = js.native
-  /* 60 */ val Cost4: typings.officeDashJs.Office.ProjectResourceFields.Cost4 with Double = js.native
-  /* 61 */ val Cost5: typings.officeDashJs.Office.ProjectResourceFields.Cost5 with Double = js.native
-  /* 62 */ val Cost6: typings.officeDashJs.Office.ProjectResourceFields.Cost6 with Double = js.native
-  /* 63 */ val Cost7: typings.officeDashJs.Office.ProjectResourceFields.Cost7 with Double = js.native
-  /* 64 */ val Cost8: typings.officeDashJs.Office.ProjectResourceFields.Cost8 with Double = js.native
-  /* 65 */ val Cost9: typings.officeDashJs.Office.ProjectResourceFields.Cost9 with Double = js.native
-  /* 147 */ val CostPerUse: typings.officeDashJs.Office.ProjectResourceFields.CostPerUse with Double = js.native
-  /* 67 */ val Date1: typings.officeDashJs.Office.ProjectResourceFields.Date1 with Double = js.native
-  /* 68 */ val Date10: typings.officeDashJs.Office.ProjectResourceFields.Date10 with Double = js.native
-  /* 69 */ val Date2: typings.officeDashJs.Office.ProjectResourceFields.Date2 with Double = js.native
-  /* 70 */ val Date3: typings.officeDashJs.Office.ProjectResourceFields.Date3 with Double = js.native
-  /* 71 */ val Date4: typings.officeDashJs.Office.ProjectResourceFields.Date4 with Double = js.native
-  /* 72 */ val Date5: typings.officeDashJs.Office.ProjectResourceFields.Date5 with Double = js.native
-  /* 73 */ val Date6: typings.officeDashJs.Office.ProjectResourceFields.Date6 with Double = js.native
-  /* 74 */ val Date7: typings.officeDashJs.Office.ProjectResourceFields.Date7 with Double = js.native
-  /* 75 */ val Date8: typings.officeDashJs.Office.ProjectResourceFields.Date8 with Double = js.native
-  /* 76 */ val Date9: typings.officeDashJs.Office.ProjectResourceFields.Date9 with Double = js.native
-  /* 77 */ val Duration1: typings.officeDashJs.Office.ProjectResourceFields.Duration1 with Double = js.native
-  /* 78 */ val Duration10: typings.officeDashJs.Office.ProjectResourceFields.Duration10 with Double = js.native
-  /* 79 */ val Duration2: typings.officeDashJs.Office.ProjectResourceFields.Duration2 with Double = js.native
-  /* 80 */ val Duration3: typings.officeDashJs.Office.ProjectResourceFields.Duration3 with Double = js.native
-  /* 81 */ val Duration4: typings.officeDashJs.Office.ProjectResourceFields.Duration4 with Double = js.native
-  /* 82 */ val Duration5: typings.officeDashJs.Office.ProjectResourceFields.Duration5 with Double = js.native
-  /* 83 */ val Duration6: typings.officeDashJs.Office.ProjectResourceFields.Duration6 with Double = js.native
-  /* 84 */ val Duration7: typings.officeDashJs.Office.ProjectResourceFields.Duration7 with Double = js.native
-  /* 85 */ val Duration8: typings.officeDashJs.Office.ProjectResourceFields.Duration8 with Double = js.native
-  /* 86 */ val Duration9: typings.officeDashJs.Office.ProjectResourceFields.Duration9 with Double = js.native
-  /* 87 */ val Email: typings.officeDashJs.Office.ProjectResourceFields.Email with Double = js.native
-  /* 88 */ val End: typings.officeDashJs.Office.ProjectResourceFields.End with Double = js.native
-  /* 89 */ val Finish1: typings.officeDashJs.Office.ProjectResourceFields.Finish1 with Double = js.native
-  /* 90 */ val Finish10: typings.officeDashJs.Office.ProjectResourceFields.Finish10 with Double = js.native
-  /* 91 */ val Finish2: typings.officeDashJs.Office.ProjectResourceFields.Finish2 with Double = js.native
-  /* 92 */ val Finish3: typings.officeDashJs.Office.ProjectResourceFields.Finish3 with Double = js.native
-  /* 93 */ val Finish4: typings.officeDashJs.Office.ProjectResourceFields.Finish4 with Double = js.native
-  /* 94 */ val Finish5: typings.officeDashJs.Office.ProjectResourceFields.Finish5 with Double = js.native
-  /* 95 */ val Finish6: typings.officeDashJs.Office.ProjectResourceFields.Finish6 with Double = js.native
-  /* 96 */ val Finish7: typings.officeDashJs.Office.ProjectResourceFields.Finish7 with Double = js.native
-  /* 97 */ val Finish8: typings.officeDashJs.Office.ProjectResourceFields.Finish8 with Double = js.native
-  /* 98 */ val Finish9: typings.officeDashJs.Office.ProjectResourceFields.Finish9 with Double = js.native
-  /* 100 */ val Flag1: typings.officeDashJs.Office.ProjectResourceFields.Flag1 with Double = js.native
-  /* 99 */ val Flag10: typings.officeDashJs.Office.ProjectResourceFields.Flag10 with Double = js.native
-  /* 101 */ val Flag11: typings.officeDashJs.Office.ProjectResourceFields.Flag11 with Double = js.native
-  /* 102 */ val Flag12: typings.officeDashJs.Office.ProjectResourceFields.Flag12 with Double = js.native
-  /* 103 */ val Flag13: typings.officeDashJs.Office.ProjectResourceFields.Flag13 with Double = js.native
-  /* 104 */ val Flag14: typings.officeDashJs.Office.ProjectResourceFields.Flag14 with Double = js.native
-  /* 105 */ val Flag15: typings.officeDashJs.Office.ProjectResourceFields.Flag15 with Double = js.native
-  /* 106 */ val Flag16: typings.officeDashJs.Office.ProjectResourceFields.Flag16 with Double = js.native
-  /* 107 */ val Flag17: typings.officeDashJs.Office.ProjectResourceFields.Flag17 with Double = js.native
-  /* 108 */ val Flag18: typings.officeDashJs.Office.ProjectResourceFields.Flag18 with Double = js.native
-  /* 109 */ val Flag19: typings.officeDashJs.Office.ProjectResourceFields.Flag19 with Double = js.native
-  /* 110 */ val Flag2: typings.officeDashJs.Office.ProjectResourceFields.Flag2 with Double = js.native
-  /* 111 */ val Flag20: typings.officeDashJs.Office.ProjectResourceFields.Flag20 with Double = js.native
-  /* 112 */ val Flag3: typings.officeDashJs.Office.ProjectResourceFields.Flag3 with Double = js.native
-  /* 113 */ val Flag4: typings.officeDashJs.Office.ProjectResourceFields.Flag4 with Double = js.native
-  /* 114 */ val Flag5: typings.officeDashJs.Office.ProjectResourceFields.Flag5 with Double = js.native
-  /* 115 */ val Flag6: typings.officeDashJs.Office.ProjectResourceFields.Flag6 with Double = js.native
-  /* 116 */ val Flag7: typings.officeDashJs.Office.ProjectResourceFields.Flag7 with Double = js.native
-  /* 117 */ val Flag8: typings.officeDashJs.Office.ProjectResourceFields.Flag8 with Double = js.native
-  /* 118 */ val Flag9: typings.officeDashJs.Office.ProjectResourceFields.Flag9 with Double = js.native
-  /* 148 */ val Generic: typings.officeDashJs.Office.ProjectResourceFields.Generic with Double = js.native
-  /* 119 */ val Group: typings.officeDashJs.Office.ProjectResourceFields.Group with Double = js.native
-  /* 121 */ val Name: typings.officeDashJs.Office.ProjectResourceFields.Name with Double = js.native
-  /* 122 */ val Notes: typings.officeDashJs.Office.ProjectResourceFields.Notes with Double = js.native
-  /* 123 */ val Number1: typings.officeDashJs.Office.ProjectResourceFields.Number1 with Double = js.native
-  /* 124 */ val Number10: typings.officeDashJs.Office.ProjectResourceFields.Number10 with Double = js.native
-  /* 125 */ val Number11: typings.officeDashJs.Office.ProjectResourceFields.Number11 with Double = js.native
-  /* 126 */ val Number12: typings.officeDashJs.Office.ProjectResourceFields.Number12 with Double = js.native
-  /* 127 */ val Number13: typings.officeDashJs.Office.ProjectResourceFields.Number13 with Double = js.native
-  /* 128 */ val Number14: typings.officeDashJs.Office.ProjectResourceFields.Number14 with Double = js.native
-  /* 129 */ val Number15: typings.officeDashJs.Office.ProjectResourceFields.Number15 with Double = js.native
-  /* 130 */ val Number16: typings.officeDashJs.Office.ProjectResourceFields.Number16 with Double = js.native
-  /* 131 */ val Number17: typings.officeDashJs.Office.ProjectResourceFields.Number17 with Double = js.native
-  /* 132 */ val Number18: typings.officeDashJs.Office.ProjectResourceFields.Number18 with Double = js.native
-  /* 133 */ val Number19: typings.officeDashJs.Office.ProjectResourceFields.Number19 with Double = js.native
-  /* 134 */ val Number2: typings.officeDashJs.Office.ProjectResourceFields.Number2 with Double = js.native
-  /* 135 */ val Number20: typings.officeDashJs.Office.ProjectResourceFields.Number20 with Double = js.native
-  /* 136 */ val Number3: typings.officeDashJs.Office.ProjectResourceFields.Number3 with Double = js.native
-  /* 137 */ val Number4: typings.officeDashJs.Office.ProjectResourceFields.Number4 with Double = js.native
-  /* 138 */ val Number5: typings.officeDashJs.Office.ProjectResourceFields.Number5 with Double = js.native
-  /* 139 */ val Number6: typings.officeDashJs.Office.ProjectResourceFields.Number6 with Double = js.native
-  /* 140 */ val Number7: typings.officeDashJs.Office.ProjectResourceFields.Number7 with Double = js.native
-  /* 141 */ val Number8: typings.officeDashJs.Office.ProjectResourceFields.Number8 with Double = js.native
-  /* 142 */ val Number9: typings.officeDashJs.Office.ProjectResourceFields.Number9 with Double = js.native
-  /* 149 */ val OverAllocated: typings.officeDashJs.Office.ProjectResourceFields.OverAllocated with Double = js.native
-  /* 143 */ val OvertimeCost: typings.officeDashJs.Office.ProjectResourceFields.OvertimeCost with Double = js.native
-  /* 144 */ val OvertimeRate: typings.officeDashJs.Office.ProjectResourceFields.OvertimeRate with Double = js.native
-  /* 145 */ val OvertimeWork: typings.officeDashJs.Office.ProjectResourceFields.OvertimeWork with Double = js.native
-  /* 146 */ val PercentWorkComplete: typings.officeDashJs.Office.ProjectResourceFields.PercentWorkComplete with Double = js.native
-  /* 150 */ val RegularWork: typings.officeDashJs.Office.ProjectResourceFields.RegularWork with Double = js.native
-  /* 151 */ val RemainingCost: typings.officeDashJs.Office.ProjectResourceFields.RemainingCost with Double = js.native
-  /* 152 */ val RemainingOvertimeCost: typings.officeDashJs.Office.ProjectResourceFields.RemainingOvertimeCost with Double = js.native
-  /* 153 */ val RemainingOvertimeWork: typings.officeDashJs.Office.ProjectResourceFields.RemainingOvertimeWork with Double = js.native
-  /* 154 */ val RemainingWork: typings.officeDashJs.Office.ProjectResourceFields.RemainingWork with Double = js.native
-  /* 54 */ val ResourceCalendarGUID: typings.officeDashJs.Office.ProjectResourceFields.ResourceCalendarGUID with Double = js.native
-  /* 66 */ val ResourceCreationDate: typings.officeDashJs.Office.ProjectResourceFields.ResourceCreationDate with Double = js.native
-  /* 155 */ val ResourceGUID: typings.officeDashJs.Office.ProjectResourceFields.ResourceGUID with Double = js.native
-  /* 169 */ val StandardRate: typings.officeDashJs.Office.ProjectResourceFields.StandardRate with Double = js.native
-  /* 158 */ val Start: typings.officeDashJs.Office.ProjectResourceFields.Start with Double = js.native
-  /* 159 */ val Start1: typings.officeDashJs.Office.ProjectResourceFields.Start1 with Double = js.native
-  /* 160 */ val Start10: typings.officeDashJs.Office.ProjectResourceFields.Start10 with Double = js.native
-  /* 161 */ val Start2: typings.officeDashJs.Office.ProjectResourceFields.Start2 with Double = js.native
-  /* 162 */ val Start3: typings.officeDashJs.Office.ProjectResourceFields.Start3 with Double = js.native
-  /* 163 */ val Start4: typings.officeDashJs.Office.ProjectResourceFields.Start4 with Double = js.native
-  /* 164 */ val Start5: typings.officeDashJs.Office.ProjectResourceFields.Start5 with Double = js.native
-  /* 165 */ val Start6: typings.officeDashJs.Office.ProjectResourceFields.Start6 with Double = js.native
-  /* 166 */ val Start7: typings.officeDashJs.Office.ProjectResourceFields.Start7 with Double = js.native
-  /* 167 */ val Start8: typings.officeDashJs.Office.ProjectResourceFields.Start8 with Double = js.native
-  /* 168 */ val Start9: typings.officeDashJs.Office.ProjectResourceFields.Start9 with Double = js.native
-  /* 170 */ val Text1: typings.officeDashJs.Office.ProjectResourceFields.Text1 with Double = js.native
-  /* 171 */ val Text10: typings.officeDashJs.Office.ProjectResourceFields.Text10 with Double = js.native
-  /* 172 */ val Text11: typings.officeDashJs.Office.ProjectResourceFields.Text11 with Double = js.native
-  /* 173 */ val Text12: typings.officeDashJs.Office.ProjectResourceFields.Text12 with Double = js.native
-  /* 174 */ val Text13: typings.officeDashJs.Office.ProjectResourceFields.Text13 with Double = js.native
-  /* 175 */ val Text14: typings.officeDashJs.Office.ProjectResourceFields.Text14 with Double = js.native
-  /* 176 */ val Text15: typings.officeDashJs.Office.ProjectResourceFields.Text15 with Double = js.native
-  /* 177 */ val Text16: typings.officeDashJs.Office.ProjectResourceFields.Text16 with Double = js.native
-  /* 178 */ val Text17: typings.officeDashJs.Office.ProjectResourceFields.Text17 with Double = js.native
-  /* 179 */ val Text18: typings.officeDashJs.Office.ProjectResourceFields.Text18 with Double = js.native
-  /* 180 */ val Text19: typings.officeDashJs.Office.ProjectResourceFields.Text19 with Double = js.native
-  /* 181 */ val Text2: typings.officeDashJs.Office.ProjectResourceFields.Text2 with Double = js.native
-  /* 182 */ val Text20: typings.officeDashJs.Office.ProjectResourceFields.Text20 with Double = js.native
-  /* 183 */ val Text21: typings.officeDashJs.Office.ProjectResourceFields.Text21 with Double = js.native
-  /* 184 */ val Text22: typings.officeDashJs.Office.ProjectResourceFields.Text22 with Double = js.native
-  /* 185 */ val Text23: typings.officeDashJs.Office.ProjectResourceFields.Text23 with Double = js.native
-  /* 186 */ val Text24: typings.officeDashJs.Office.ProjectResourceFields.Text24 with Double = js.native
-  /* 187 */ val Text25: typings.officeDashJs.Office.ProjectResourceFields.Text25 with Double = js.native
-  /* 188 */ val Text26: typings.officeDashJs.Office.ProjectResourceFields.Text26 with Double = js.native
-  /* 189 */ val Text27: typings.officeDashJs.Office.ProjectResourceFields.Text27 with Double = js.native
-  /* 190 */ val Text28: typings.officeDashJs.Office.ProjectResourceFields.Text28 with Double = js.native
-  /* 191 */ val Text29: typings.officeDashJs.Office.ProjectResourceFields.Text29 with Double = js.native
-  /* 192 */ val Text3: typings.officeDashJs.Office.ProjectResourceFields.Text3 with Double = js.native
-  /* 193 */ val Text30: typings.officeDashJs.Office.ProjectResourceFields.Text30 with Double = js.native
-  /* 194 */ val Text4: typings.officeDashJs.Office.ProjectResourceFields.Text4 with Double = js.native
-  /* 195 */ val Text5: typings.officeDashJs.Office.ProjectResourceFields.Text5 with Double = js.native
-  /* 196 */ val Text6: typings.officeDashJs.Office.ProjectResourceFields.Text6 with Double = js.native
-  /* 197 */ val Text7: typings.officeDashJs.Office.ProjectResourceFields.Text7 with Double = js.native
-  /* 198 */ val Text8: typings.officeDashJs.Office.ProjectResourceFields.Text8 with Double = js.native
-  /* 199 */ val Text9: typings.officeDashJs.Office.ProjectResourceFields.Text9 with Double = js.native
-  /* 120 */ val Units: typings.officeDashJs.Office.ProjectResourceFields.Units with Double = js.native
-  /* 157 */ val Work: typings.officeDashJs.Office.ProjectResourceFields.Work with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProjectResourceFields with Double] = js.native
+  /* 0 */ @js.native
+  object Accrual extends TopLevel[Accrual with Double]
+  
+  /* 1 */ @js.native
+  object ActualCost extends TopLevel[ActualCost with Double]
+  
+  /* 2 */ @js.native
+  object ActualOvertimeCost extends TopLevel[ActualOvertimeCost with Double]
+  
+  /* 3 */ @js.native
+  object ActualOvertimeWork extends TopLevel[ActualOvertimeWork with Double]
+  
+  /* 4 */ @js.native
+  object ActualOvertimeWorkProtected extends TopLevel[ActualOvertimeWorkProtected with Double]
+  
+  /* 5 */ @js.native
+  object ActualWork extends TopLevel[ActualWork with Double]
+  
+  /* 6 */ @js.native
+  object ActualWorkProtected extends TopLevel[ActualWorkProtected with Double]
+  
+  /* 7 */ @js.native
+  object BaseCalendar extends TopLevel[BaseCalendar with Double]
+  
+  /* 8 */ @js.native
+  object Baseline10BudgetCost extends TopLevel[Baseline10BudgetCost with Double]
+  
+  /* 9 */ @js.native
+  object Baseline10BudgetWork extends TopLevel[Baseline10BudgetWork with Double]
+  
+  /* 10 */ @js.native
+  object Baseline10Cost extends TopLevel[Baseline10Cost with Double]
+  
+  /* 11 */ @js.native
+  object Baseline10Work extends TopLevel[Baseline10Work with Double]
+  
+  /* 12 */ @js.native
+  object Baseline1BudgetCost extends TopLevel[Baseline1BudgetCost with Double]
+  
+  /* 13 */ @js.native
+  object Baseline1BudgetWork extends TopLevel[Baseline1BudgetWork with Double]
+  
+  /* 14 */ @js.native
+  object Baseline1Cost extends TopLevel[Baseline1Cost with Double]
+  
+  /* 15 */ @js.native
+  object Baseline1Work extends TopLevel[Baseline1Work with Double]
+  
+  /* 16 */ @js.native
+  object Baseline2BudgetCost extends TopLevel[Baseline2BudgetCost with Double]
+  
+  /* 17 */ @js.native
+  object Baseline2BudgetWork extends TopLevel[Baseline2BudgetWork with Double]
+  
+  /* 18 */ @js.native
+  object Baseline2Cost extends TopLevel[Baseline2Cost with Double]
+  
+  /* 19 */ @js.native
+  object Baseline2Work extends TopLevel[Baseline2Work with Double]
+  
+  /* 20 */ @js.native
+  object Baseline3BudgetCost extends TopLevel[Baseline3BudgetCost with Double]
+  
+  /* 21 */ @js.native
+  object Baseline3BudgetWork extends TopLevel[Baseline3BudgetWork with Double]
+  
+  /* 22 */ @js.native
+  object Baseline3Cost extends TopLevel[Baseline3Cost with Double]
+  
+  /* 23 */ @js.native
+  object Baseline3Work extends TopLevel[Baseline3Work with Double]
+  
+  /* 24 */ @js.native
+  object Baseline4BudgetCost extends TopLevel[Baseline4BudgetCost with Double]
+  
+  /* 25 */ @js.native
+  object Baseline4BudgetWork extends TopLevel[Baseline4BudgetWork with Double]
+  
+  /* 26 */ @js.native
+  object Baseline4Cost extends TopLevel[Baseline4Cost with Double]
+  
+  /* 27 */ @js.native
+  object Baseline4Work extends TopLevel[Baseline4Work with Double]
+  
+  /* 28 */ @js.native
+  object Baseline5BudgetCost extends TopLevel[Baseline5BudgetCost with Double]
+  
+  /* 29 */ @js.native
+  object Baseline5BudgetWork extends TopLevel[Baseline5BudgetWork with Double]
+  
+  /* 30 */ @js.native
+  object Baseline5Cost extends TopLevel[Baseline5Cost with Double]
+  
+  /* 31 */ @js.native
+  object Baseline5Work extends TopLevel[Baseline5Work with Double]
+  
+  /* 32 */ @js.native
+  object Baseline6BudgetCost extends TopLevel[Baseline6BudgetCost with Double]
+  
+  /* 33 */ @js.native
+  object Baseline6BudgetWork extends TopLevel[Baseline6BudgetWork with Double]
+  
+  /* 34 */ @js.native
+  object Baseline6Cost extends TopLevel[Baseline6Cost with Double]
+  
+  /* 35 */ @js.native
+  object Baseline6Work extends TopLevel[Baseline6Work with Double]
+  
+  /* 36 */ @js.native
+  object Baseline7BudgetCost extends TopLevel[Baseline7BudgetCost with Double]
+  
+  /* 37 */ @js.native
+  object Baseline7BudgetWork extends TopLevel[Baseline7BudgetWork with Double]
+  
+  /* 38 */ @js.native
+  object Baseline7Cost extends TopLevel[Baseline7Cost with Double]
+  
+  /* 39 */ @js.native
+  object Baseline7Work extends TopLevel[Baseline7Work with Double]
+  
+  /* 40 */ @js.native
+  object Baseline8BudgetCost extends TopLevel[Baseline8BudgetCost with Double]
+  
+  /* 41 */ @js.native
+  object Baseline8BudgetWork extends TopLevel[Baseline8BudgetWork with Double]
+  
+  /* 42 */ @js.native
+  object Baseline8Cost extends TopLevel[Baseline8Cost with Double]
+  
+  /* 43 */ @js.native
+  object Baseline8Work extends TopLevel[Baseline8Work with Double]
+  
+  /* 44 */ @js.native
+  object Baseline9BudgetCost extends TopLevel[Baseline9BudgetCost with Double]
+  
+  /* 45 */ @js.native
+  object Baseline9BudgetWork extends TopLevel[Baseline9BudgetWork with Double]
+  
+  /* 46 */ @js.native
+  object Baseline9Cost extends TopLevel[Baseline9Cost with Double]
+  
+  /* 47 */ @js.native
+  object Baseline9Work extends TopLevel[Baseline9Work with Double]
+  
+  /* 48 */ @js.native
+  object BaselineBudgetCost extends TopLevel[BaselineBudgetCost with Double]
+  
+  /* 49 */ @js.native
+  object BaselineBudgetWork extends TopLevel[BaselineBudgetWork with Double]
+  
+  /* 50 */ @js.native
+  object BaselineCost extends TopLevel[BaselineCost with Double]
+  
+  /* 51 */ @js.native
+  object BaselineWork extends TopLevel[BaselineWork with Double]
+  
+  /* 52 */ @js.native
+  object BudgetCost extends TopLevel[BudgetCost with Double]
+  
+  /* 53 */ @js.native
+  object BudgetWork extends TopLevel[BudgetWork with Double]
+  
+  /* 55 */ @js.native
+  object Code extends TopLevel[Code with Double]
+  
+  /* 156 */ @js.native
+  object Cost extends TopLevel[Cost with Double]
+  
+  /* 56 */ @js.native
+  object Cost1 extends TopLevel[Cost1 with Double]
+  
+  /* 57 */ @js.native
+  object Cost10 extends TopLevel[Cost10 with Double]
+  
+  /* 58 */ @js.native
+  object Cost2 extends TopLevel[Cost2 with Double]
+  
+  /* 59 */ @js.native
+  object Cost3 extends TopLevel[Cost3 with Double]
+  
+  /* 60 */ @js.native
+  object Cost4 extends TopLevel[Cost4 with Double]
+  
+  /* 61 */ @js.native
+  object Cost5 extends TopLevel[Cost5 with Double]
+  
+  /* 62 */ @js.native
+  object Cost6 extends TopLevel[Cost6 with Double]
+  
+  /* 63 */ @js.native
+  object Cost7 extends TopLevel[Cost7 with Double]
+  
+  /* 64 */ @js.native
+  object Cost8 extends TopLevel[Cost8 with Double]
+  
+  /* 65 */ @js.native
+  object Cost9 extends TopLevel[Cost9 with Double]
+  
+  /* 147 */ @js.native
+  object CostPerUse extends TopLevel[CostPerUse with Double]
+  
+  /* 67 */ @js.native
+  object Date1 extends TopLevel[Date1 with Double]
+  
+  /* 68 */ @js.native
+  object Date10 extends TopLevel[Date10 with Double]
+  
+  /* 69 */ @js.native
+  object Date2 extends TopLevel[Date2 with Double]
+  
+  /* 70 */ @js.native
+  object Date3 extends TopLevel[Date3 with Double]
+  
+  /* 71 */ @js.native
+  object Date4 extends TopLevel[Date4 with Double]
+  
+  /* 72 */ @js.native
+  object Date5 extends TopLevel[Date5 with Double]
+  
+  /* 73 */ @js.native
+  object Date6 extends TopLevel[Date6 with Double]
+  
+  /* 74 */ @js.native
+  object Date7 extends TopLevel[Date7 with Double]
+  
+  /* 75 */ @js.native
+  object Date8 extends TopLevel[Date8 with Double]
+  
+  /* 76 */ @js.native
+  object Date9 extends TopLevel[Date9 with Double]
+  
+  /* 77 */ @js.native
+  object Duration1 extends TopLevel[Duration1 with Double]
+  
+  /* 78 */ @js.native
+  object Duration10 extends TopLevel[Duration10 with Double]
+  
+  /* 79 */ @js.native
+  object Duration2 extends TopLevel[Duration2 with Double]
+  
+  /* 80 */ @js.native
+  object Duration3 extends TopLevel[Duration3 with Double]
+  
+  /* 81 */ @js.native
+  object Duration4 extends TopLevel[Duration4 with Double]
+  
+  /* 82 */ @js.native
+  object Duration5 extends TopLevel[Duration5 with Double]
+  
+  /* 83 */ @js.native
+  object Duration6 extends TopLevel[Duration6 with Double]
+  
+  /* 84 */ @js.native
+  object Duration7 extends TopLevel[Duration7 with Double]
+  
+  /* 85 */ @js.native
+  object Duration8 extends TopLevel[Duration8 with Double]
+  
+  /* 86 */ @js.native
+  object Duration9 extends TopLevel[Duration9 with Double]
+  
+  /* 87 */ @js.native
+  object Email extends TopLevel[Email with Double]
+  
+  /* 88 */ @js.native
+  object End extends TopLevel[End with Double]
+  
+  /* 89 */ @js.native
+  object Finish1 extends TopLevel[Finish1 with Double]
+  
+  /* 90 */ @js.native
+  object Finish10 extends TopLevel[Finish10 with Double]
+  
+  /* 91 */ @js.native
+  object Finish2 extends TopLevel[Finish2 with Double]
+  
+  /* 92 */ @js.native
+  object Finish3 extends TopLevel[Finish3 with Double]
+  
+  /* 93 */ @js.native
+  object Finish4 extends TopLevel[Finish4 with Double]
+  
+  /* 94 */ @js.native
+  object Finish5 extends TopLevel[Finish5 with Double]
+  
+  /* 95 */ @js.native
+  object Finish6 extends TopLevel[Finish6 with Double]
+  
+  /* 96 */ @js.native
+  object Finish7 extends TopLevel[Finish7 with Double]
+  
+  /* 97 */ @js.native
+  object Finish8 extends TopLevel[Finish8 with Double]
+  
+  /* 98 */ @js.native
+  object Finish9 extends TopLevel[Finish9 with Double]
+  
+  /* 100 */ @js.native
+  object Flag1 extends TopLevel[Flag1 with Double]
+  
+  /* 99 */ @js.native
+  object Flag10 extends TopLevel[Flag10 with Double]
+  
+  /* 101 */ @js.native
+  object Flag11 extends TopLevel[Flag11 with Double]
+  
+  /* 102 */ @js.native
+  object Flag12 extends TopLevel[Flag12 with Double]
+  
+  /* 103 */ @js.native
+  object Flag13 extends TopLevel[Flag13 with Double]
+  
+  /* 104 */ @js.native
+  object Flag14 extends TopLevel[Flag14 with Double]
+  
+  /* 105 */ @js.native
+  object Flag15 extends TopLevel[Flag15 with Double]
+  
+  /* 106 */ @js.native
+  object Flag16 extends TopLevel[Flag16 with Double]
+  
+  /* 107 */ @js.native
+  object Flag17 extends TopLevel[Flag17 with Double]
+  
+  /* 108 */ @js.native
+  object Flag18 extends TopLevel[Flag18 with Double]
+  
+  /* 109 */ @js.native
+  object Flag19 extends TopLevel[Flag19 with Double]
+  
+  /* 110 */ @js.native
+  object Flag2 extends TopLevel[Flag2 with Double]
+  
+  /* 111 */ @js.native
+  object Flag20 extends TopLevel[Flag20 with Double]
+  
+  /* 112 */ @js.native
+  object Flag3 extends TopLevel[Flag3 with Double]
+  
+  /* 113 */ @js.native
+  object Flag4 extends TopLevel[Flag4 with Double]
+  
+  /* 114 */ @js.native
+  object Flag5 extends TopLevel[Flag5 with Double]
+  
+  /* 115 */ @js.native
+  object Flag6 extends TopLevel[Flag6 with Double]
+  
+  /* 116 */ @js.native
+  object Flag7 extends TopLevel[Flag7 with Double]
+  
+  /* 117 */ @js.native
+  object Flag8 extends TopLevel[Flag8 with Double]
+  
+  /* 118 */ @js.native
+  object Flag9 extends TopLevel[Flag9 with Double]
+  
+  /* 148 */ @js.native
+  object Generic extends TopLevel[Generic with Double]
+  
+  /* 119 */ @js.native
+  object Group extends TopLevel[Group with Double]
+  
+  /* 121 */ @js.native
+  object Name extends TopLevel[Name with Double]
+  
+  /* 122 */ @js.native
+  object Notes extends TopLevel[Notes with Double]
+  
+  /* 123 */ @js.native
+  object Number1 extends TopLevel[Number1 with Double]
+  
+  /* 124 */ @js.native
+  object Number10 extends TopLevel[Number10 with Double]
+  
+  /* 125 */ @js.native
+  object Number11 extends TopLevel[Number11 with Double]
+  
+  /* 126 */ @js.native
+  object Number12 extends TopLevel[Number12 with Double]
+  
+  /* 127 */ @js.native
+  object Number13 extends TopLevel[Number13 with Double]
+  
+  /* 128 */ @js.native
+  object Number14 extends TopLevel[Number14 with Double]
+  
+  /* 129 */ @js.native
+  object Number15 extends TopLevel[Number15 with Double]
+  
+  /* 130 */ @js.native
+  object Number16 extends TopLevel[Number16 with Double]
+  
+  /* 131 */ @js.native
+  object Number17 extends TopLevel[Number17 with Double]
+  
+  /* 132 */ @js.native
+  object Number18 extends TopLevel[Number18 with Double]
+  
+  /* 133 */ @js.native
+  object Number19 extends TopLevel[Number19 with Double]
+  
+  /* 134 */ @js.native
+  object Number2 extends TopLevel[Number2 with Double]
+  
+  /* 135 */ @js.native
+  object Number20 extends TopLevel[Number20 with Double]
+  
+  /* 136 */ @js.native
+  object Number3 extends TopLevel[Number3 with Double]
+  
+  /* 137 */ @js.native
+  object Number4 extends TopLevel[Number4 with Double]
+  
+  /* 138 */ @js.native
+  object Number5 extends TopLevel[Number5 with Double]
+  
+  /* 139 */ @js.native
+  object Number6 extends TopLevel[Number6 with Double]
+  
+  /* 140 */ @js.native
+  object Number7 extends TopLevel[Number7 with Double]
+  
+  /* 141 */ @js.native
+  object Number8 extends TopLevel[Number8 with Double]
+  
+  /* 142 */ @js.native
+  object Number9 extends TopLevel[Number9 with Double]
+  
+  /* 149 */ @js.native
+  object OverAllocated extends TopLevel[OverAllocated with Double]
+  
+  /* 143 */ @js.native
+  object OvertimeCost extends TopLevel[OvertimeCost with Double]
+  
+  /* 144 */ @js.native
+  object OvertimeRate extends TopLevel[OvertimeRate with Double]
+  
+  /* 145 */ @js.native
+  object OvertimeWork extends TopLevel[OvertimeWork with Double]
+  
+  /* 146 */ @js.native
+  object PercentWorkComplete extends TopLevel[PercentWorkComplete with Double]
+  
+  /* 150 */ @js.native
+  object RegularWork extends TopLevel[RegularWork with Double]
+  
+  /* 151 */ @js.native
+  object RemainingCost extends TopLevel[RemainingCost with Double]
+  
+  /* 152 */ @js.native
+  object RemainingOvertimeCost extends TopLevel[RemainingOvertimeCost with Double]
+  
+  /* 153 */ @js.native
+  object RemainingOvertimeWork extends TopLevel[RemainingOvertimeWork with Double]
+  
+  /* 154 */ @js.native
+  object RemainingWork extends TopLevel[RemainingWork with Double]
+  
+  /* 54 */ @js.native
+  object ResourceCalendarGUID extends TopLevel[ResourceCalendarGUID with Double]
+  
+  /* 66 */ @js.native
+  object ResourceCreationDate extends TopLevel[ResourceCreationDate with Double]
+  
+  /* 155 */ @js.native
+  object ResourceGUID extends TopLevel[ResourceGUID with Double]
+  
+  /* 169 */ @js.native
+  object StandardRate extends TopLevel[StandardRate with Double]
+  
+  /* 158 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
+  /* 159 */ @js.native
+  object Start1 extends TopLevel[Start1 with Double]
+  
+  /* 160 */ @js.native
+  object Start10 extends TopLevel[Start10 with Double]
+  
+  /* 161 */ @js.native
+  object Start2 extends TopLevel[Start2 with Double]
+  
+  /* 162 */ @js.native
+  object Start3 extends TopLevel[Start3 with Double]
+  
+  /* 163 */ @js.native
+  object Start4 extends TopLevel[Start4 with Double]
+  
+  /* 164 */ @js.native
+  object Start5 extends TopLevel[Start5 with Double]
+  
+  /* 165 */ @js.native
+  object Start6 extends TopLevel[Start6 with Double]
+  
+  /* 166 */ @js.native
+  object Start7 extends TopLevel[Start7 with Double]
+  
+  /* 167 */ @js.native
+  object Start8 extends TopLevel[Start8 with Double]
+  
+  /* 168 */ @js.native
+  object Start9 extends TopLevel[Start9 with Double]
+  
+  /* 170 */ @js.native
+  object Text1 extends TopLevel[Text1 with Double]
+  
+  /* 171 */ @js.native
+  object Text10 extends TopLevel[Text10 with Double]
+  
+  /* 172 */ @js.native
+  object Text11 extends TopLevel[Text11 with Double]
+  
+  /* 173 */ @js.native
+  object Text12 extends TopLevel[Text12 with Double]
+  
+  /* 174 */ @js.native
+  object Text13 extends TopLevel[Text13 with Double]
+  
+  /* 175 */ @js.native
+  object Text14 extends TopLevel[Text14 with Double]
+  
+  /* 176 */ @js.native
+  object Text15 extends TopLevel[Text15 with Double]
+  
+  /* 177 */ @js.native
+  object Text16 extends TopLevel[Text16 with Double]
+  
+  /* 178 */ @js.native
+  object Text17 extends TopLevel[Text17 with Double]
+  
+  /* 179 */ @js.native
+  object Text18 extends TopLevel[Text18 with Double]
+  
+  /* 180 */ @js.native
+  object Text19 extends TopLevel[Text19 with Double]
+  
+  /* 181 */ @js.native
+  object Text2 extends TopLevel[Text2 with Double]
+  
+  /* 182 */ @js.native
+  object Text20 extends TopLevel[Text20 with Double]
+  
+  /* 183 */ @js.native
+  object Text21 extends TopLevel[Text21 with Double]
+  
+  /* 184 */ @js.native
+  object Text22 extends TopLevel[Text22 with Double]
+  
+  /* 185 */ @js.native
+  object Text23 extends TopLevel[Text23 with Double]
+  
+  /* 186 */ @js.native
+  object Text24 extends TopLevel[Text24 with Double]
+  
+  /* 187 */ @js.native
+  object Text25 extends TopLevel[Text25 with Double]
+  
+  /* 188 */ @js.native
+  object Text26 extends TopLevel[Text26 with Double]
+  
+  /* 189 */ @js.native
+  object Text27 extends TopLevel[Text27 with Double]
+  
+  /* 190 */ @js.native
+  object Text28 extends TopLevel[Text28 with Double]
+  
+  /* 191 */ @js.native
+  object Text29 extends TopLevel[Text29 with Double]
+  
+  /* 192 */ @js.native
+  object Text3 extends TopLevel[Text3 with Double]
+  
+  /* 193 */ @js.native
+  object Text30 extends TopLevel[Text30 with Double]
+  
+  /* 194 */ @js.native
+  object Text4 extends TopLevel[Text4 with Double]
+  
+  /* 195 */ @js.native
+  object Text5 extends TopLevel[Text5 with Double]
+  
+  /* 196 */ @js.native
+  object Text6 extends TopLevel[Text6 with Double]
+  
+  /* 197 */ @js.native
+  object Text7 extends TopLevel[Text7 with Double]
+  
+  /* 198 */ @js.native
+  object Text8 extends TopLevel[Text8 with Double]
+  
+  /* 199 */ @js.native
+  object Text9 extends TopLevel[Text9 with Double]
+  
+  /* 120 */ @js.native
+  object Units extends TopLevel[Units with Double]
+  
+  /* 157 */ @js.native
+  object Work extends TopLevel[Work with Double]
+  
 }
 

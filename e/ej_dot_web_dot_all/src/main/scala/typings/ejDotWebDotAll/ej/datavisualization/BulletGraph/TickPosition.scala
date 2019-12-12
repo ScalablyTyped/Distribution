@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.BulletGraph
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Above
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Below
+import typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Cross
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object TickPosition extends js.Object {
   @js.native
   sealed trait Cross extends TickPosition
   
-  /* 1 */ val Above: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Above with Double = js.native
-  /* 0 */ val Below: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Below with Double = js.native
-  /* 2 */ val Cross: typings.ejDotWebDotAll.ej.datavisualization.BulletGraph.TickPosition.Cross with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TickPosition with Double] = js.native
+  /* 1 */ @js.native
+  object Above extends TopLevel[Above with Double]
+  
+  /* 0 */ @js.native
+  object Below extends TopLevel[Below with Double]
+  
+  /* 2 */ @js.native
+  object Cross extends TopLevel[Cross with Double]
+  
 }
 

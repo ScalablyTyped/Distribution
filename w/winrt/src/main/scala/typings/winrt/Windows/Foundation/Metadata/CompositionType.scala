@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Foundation.Metadata.CompositionType.`protected`
+import typings.winrt.Windows.Foundation.Metadata.CompositionType.public
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CompositionType extends js.Object {
   @js.native
   sealed trait public extends CompositionType
   
-  /* 0 */ val `protected`: typings.winrt.Windows.Foundation.Metadata.CompositionType.`protected` with Double = js.native
-  /* 1 */ val public: typings.winrt.Windows.Foundation.Metadata.CompositionType.public with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompositionType with Double] = js.native
+  /* 0 */ @js.native
+  object `protected` extends TopLevel[`protected` with Double]
+  
+  /* 1 */ @js.native
+  object public extends TopLevel[public with Double]
+  
 }
 

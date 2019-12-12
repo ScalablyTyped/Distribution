@@ -1,5 +1,183 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout1
+import typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout2
+import typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout3
+import typings.officeDashJs.Excel.GeometricShapeType.accentCallout1
+import typings.officeDashJs.Excel.GeometricShapeType.accentCallout2
+import typings.officeDashJs.Excel.GeometricShapeType.accentCallout3
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonBackPrevious
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonBeginning
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonBlank
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonDocument
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonEnd
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonForwardNext
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonHelp
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonHome
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonInformation
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonMovie
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonReturn
+import typings.officeDashJs.Excel.GeometricShapeType.actionButtonSound
+import typings.officeDashJs.Excel.GeometricShapeType.arc
+import typings.officeDashJs.Excel.GeometricShapeType.bentArrow
+import typings.officeDashJs.Excel.GeometricShapeType.bentUpArrow
+import typings.officeDashJs.Excel.GeometricShapeType.bevel
+import typings.officeDashJs.Excel.GeometricShapeType.blockArc
+import typings.officeDashJs.Excel.GeometricShapeType.borderCallout1
+import typings.officeDashJs.Excel.GeometricShapeType.borderCallout2
+import typings.officeDashJs.Excel.GeometricShapeType.borderCallout3
+import typings.officeDashJs.Excel.GeometricShapeType.bracePair
+import typings.officeDashJs.Excel.GeometricShapeType.bracketPair
+import typings.officeDashJs.Excel.GeometricShapeType.callout1
+import typings.officeDashJs.Excel.GeometricShapeType.callout2
+import typings.officeDashJs.Excel.GeometricShapeType.callout3
+import typings.officeDashJs.Excel.GeometricShapeType.can
+import typings.officeDashJs.Excel.GeometricShapeType.chartPlus
+import typings.officeDashJs.Excel.GeometricShapeType.chartStar
+import typings.officeDashJs.Excel.GeometricShapeType.chartX
+import typings.officeDashJs.Excel.GeometricShapeType.chevron
+import typings.officeDashJs.Excel.GeometricShapeType.chord
+import typings.officeDashJs.Excel.GeometricShapeType.circularArrow
+import typings.officeDashJs.Excel.GeometricShapeType.cloud
+import typings.officeDashJs.Excel.GeometricShapeType.cloudCallout
+import typings.officeDashJs.Excel.GeometricShapeType.corner
+import typings.officeDashJs.Excel.GeometricShapeType.cornerTabs
+import typings.officeDashJs.Excel.GeometricShapeType.cube
+import typings.officeDashJs.Excel.GeometricShapeType.curvedDownArrow
+import typings.officeDashJs.Excel.GeometricShapeType.curvedLeftArrow
+import typings.officeDashJs.Excel.GeometricShapeType.curvedRightArrow
+import typings.officeDashJs.Excel.GeometricShapeType.curvedUpArrow
+import typings.officeDashJs.Excel.GeometricShapeType.decagon
+import typings.officeDashJs.Excel.GeometricShapeType.diagonalStripe
+import typings.officeDashJs.Excel.GeometricShapeType.diamond
+import typings.officeDashJs.Excel.GeometricShapeType.dodecagon
+import typings.officeDashJs.Excel.GeometricShapeType.donut
+import typings.officeDashJs.Excel.GeometricShapeType.doubleWave
+import typings.officeDashJs.Excel.GeometricShapeType.downArrow
+import typings.officeDashJs.Excel.GeometricShapeType.downArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.ellipse
+import typings.officeDashJs.Excel.GeometricShapeType.ellipseRibbon
+import typings.officeDashJs.Excel.GeometricShapeType.ellipseRibbon2
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartAlternateProcess
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartCollate
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartConnector
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartDecision
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartDelay
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartDisplay
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartDocument
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartExtract
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartInputOutput
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartInternalStorage
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticDisk
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticDrum
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticTape
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartManualInput
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartManualOperation
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartMerge
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartMultidocument
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartOfflineStorage
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartOffpageConnector
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartOnlineStorage
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartOr
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartPredefinedProcess
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartPreparation
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartProcess
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartPunchedCard
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartPunchedTape
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartSort
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartSummingJunction
+import typings.officeDashJs.Excel.GeometricShapeType.flowChartTerminator
+import typings.officeDashJs.Excel.GeometricShapeType.foldedCorner
+import typings.officeDashJs.Excel.GeometricShapeType.frame
+import typings.officeDashJs.Excel.GeometricShapeType.funnel
+import typings.officeDashJs.Excel.GeometricShapeType.gear6
+import typings.officeDashJs.Excel.GeometricShapeType.gear9
+import typings.officeDashJs.Excel.GeometricShapeType.halfFrame
+import typings.officeDashJs.Excel.GeometricShapeType.heart
+import typings.officeDashJs.Excel.GeometricShapeType.heptagon
+import typings.officeDashJs.Excel.GeometricShapeType.hexagon
+import typings.officeDashJs.Excel.GeometricShapeType.homePlate
+import typings.officeDashJs.Excel.GeometricShapeType.horizontalScroll
+import typings.officeDashJs.Excel.GeometricShapeType.irregularSeal1
+import typings.officeDashJs.Excel.GeometricShapeType.irregularSeal2
+import typings.officeDashJs.Excel.GeometricShapeType.leftArrow
+import typings.officeDashJs.Excel.GeometricShapeType.leftArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.leftBrace
+import typings.officeDashJs.Excel.GeometricShapeType.leftBracket
+import typings.officeDashJs.Excel.GeometricShapeType.leftCircularArrow
+import typings.officeDashJs.Excel.GeometricShapeType.leftRightArrow
+import typings.officeDashJs.Excel.GeometricShapeType.leftRightArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.leftRightCircularArrow
+import typings.officeDashJs.Excel.GeometricShapeType.leftRightRibbon
+import typings.officeDashJs.Excel.GeometricShapeType.leftRightUpArrow
+import typings.officeDashJs.Excel.GeometricShapeType.leftUpArrow
+import typings.officeDashJs.Excel.GeometricShapeType.lightningBolt
+import typings.officeDashJs.Excel.GeometricShapeType.lineInverse
+import typings.officeDashJs.Excel.GeometricShapeType.mathDivide
+import typings.officeDashJs.Excel.GeometricShapeType.mathEqual
+import typings.officeDashJs.Excel.GeometricShapeType.mathMinus
+import typings.officeDashJs.Excel.GeometricShapeType.mathMultiply
+import typings.officeDashJs.Excel.GeometricShapeType.mathNotEqual
+import typings.officeDashJs.Excel.GeometricShapeType.mathPlus
+import typings.officeDashJs.Excel.GeometricShapeType.moon
+import typings.officeDashJs.Excel.GeometricShapeType.noSmoking
+import typings.officeDashJs.Excel.GeometricShapeType.nonIsoscelesTrapezoid
+import typings.officeDashJs.Excel.GeometricShapeType.notchedRightArrow
+import typings.officeDashJs.Excel.GeometricShapeType.octagon
+import typings.officeDashJs.Excel.GeometricShapeType.parallelogram
+import typings.officeDashJs.Excel.GeometricShapeType.pentagon
+import typings.officeDashJs.Excel.GeometricShapeType.pie
+import typings.officeDashJs.Excel.GeometricShapeType.pieWedge
+import typings.officeDashJs.Excel.GeometricShapeType.plaque
+import typings.officeDashJs.Excel.GeometricShapeType.plaqueTabs
+import typings.officeDashJs.Excel.GeometricShapeType.plus
+import typings.officeDashJs.Excel.GeometricShapeType.quadArrow
+import typings.officeDashJs.Excel.GeometricShapeType.quadArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.rectangle
+import typings.officeDashJs.Excel.GeometricShapeType.ribbon
+import typings.officeDashJs.Excel.GeometricShapeType.ribbon2
+import typings.officeDashJs.Excel.GeometricShapeType.rightArrow
+import typings.officeDashJs.Excel.GeometricShapeType.rightArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.rightBrace
+import typings.officeDashJs.Excel.GeometricShapeType.rightBracket
+import typings.officeDashJs.Excel.GeometricShapeType.rightTriangle
+import typings.officeDashJs.Excel.GeometricShapeType.round1Rectangle
+import typings.officeDashJs.Excel.GeometricShapeType.round2DiagonalRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.round2SameRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.roundRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.smileyFace
+import typings.officeDashJs.Excel.GeometricShapeType.snip1Rectangle
+import typings.officeDashJs.Excel.GeometricShapeType.snip2DiagonalRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.snip2SameRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.snipRoundRectangle
+import typings.officeDashJs.Excel.GeometricShapeType.squareTabs
+import typings.officeDashJs.Excel.GeometricShapeType.star10
+import typings.officeDashJs.Excel.GeometricShapeType.star12
+import typings.officeDashJs.Excel.GeometricShapeType.star16
+import typings.officeDashJs.Excel.GeometricShapeType.star24
+import typings.officeDashJs.Excel.GeometricShapeType.star32
+import typings.officeDashJs.Excel.GeometricShapeType.star4
+import typings.officeDashJs.Excel.GeometricShapeType.star5
+import typings.officeDashJs.Excel.GeometricShapeType.star6
+import typings.officeDashJs.Excel.GeometricShapeType.star7
+import typings.officeDashJs.Excel.GeometricShapeType.star8
+import typings.officeDashJs.Excel.GeometricShapeType.stripedRightArrow
+import typings.officeDashJs.Excel.GeometricShapeType.sun
+import typings.officeDashJs.Excel.GeometricShapeType.swooshArrow
+import typings.officeDashJs.Excel.GeometricShapeType.teardrop
+import typings.officeDashJs.Excel.GeometricShapeType.trapezoid
+import typings.officeDashJs.Excel.GeometricShapeType.triangle
+import typings.officeDashJs.Excel.GeometricShapeType.upArrow
+import typings.officeDashJs.Excel.GeometricShapeType.upArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.upDownArrow
+import typings.officeDashJs.Excel.GeometricShapeType.upDownArrowCallout
+import typings.officeDashJs.Excel.GeometricShapeType.uturnArrow
+import typings.officeDashJs.Excel.GeometricShapeType.verticalScroll
+import typings.officeDashJs.Excel.GeometricShapeType.wave
+import typings.officeDashJs.Excel.GeometricShapeType.wedgeEllipseCallout
+import typings.officeDashJs.Excel.GeometricShapeType.wedgeRRectCallout
+import typings.officeDashJs.Excel.GeometricShapeType.wedgeRectCallout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -547,184 +725,538 @@ object GeometricShapeType extends js.Object {
   @js.native
   sealed trait wedgeRectCallout extends GeometricShapeType
   
-  /* "AccentBorderCallout1" */ val accentBorderCallout1: typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout1 with String = js.native
-  /* "AccentBorderCallout2" */ val accentBorderCallout2: typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout2 with String = js.native
-  /* "AccentBorderCallout3" */ val accentBorderCallout3: typings.officeDashJs.Excel.GeometricShapeType.accentBorderCallout3 with String = js.native
-  /* "AccentCallout1" */ val accentCallout1: typings.officeDashJs.Excel.GeometricShapeType.accentCallout1 with String = js.native
-  /* "AccentCallout2" */ val accentCallout2: typings.officeDashJs.Excel.GeometricShapeType.accentCallout2 with String = js.native
-  /* "AccentCallout3" */ val accentCallout3: typings.officeDashJs.Excel.GeometricShapeType.accentCallout3 with String = js.native
-  /* "ActionButtonBackPrevious" */ val actionButtonBackPrevious: typings.officeDashJs.Excel.GeometricShapeType.actionButtonBackPrevious with String = js.native
-  /* "ActionButtonBeginning" */ val actionButtonBeginning: typings.officeDashJs.Excel.GeometricShapeType.actionButtonBeginning with String = js.native
-  /* "ActionButtonBlank" */ val actionButtonBlank: typings.officeDashJs.Excel.GeometricShapeType.actionButtonBlank with String = js.native
-  /* "ActionButtonDocument" */ val actionButtonDocument: typings.officeDashJs.Excel.GeometricShapeType.actionButtonDocument with String = js.native
-  /* "ActionButtonEnd" */ val actionButtonEnd: typings.officeDashJs.Excel.GeometricShapeType.actionButtonEnd with String = js.native
-  /* "ActionButtonForwardNext" */ val actionButtonForwardNext: typings.officeDashJs.Excel.GeometricShapeType.actionButtonForwardNext with String = js.native
-  /* "ActionButtonHelp" */ val actionButtonHelp: typings.officeDashJs.Excel.GeometricShapeType.actionButtonHelp with String = js.native
-  /* "ActionButtonHome" */ val actionButtonHome: typings.officeDashJs.Excel.GeometricShapeType.actionButtonHome with String = js.native
-  /* "ActionButtonInformation" */ val actionButtonInformation: typings.officeDashJs.Excel.GeometricShapeType.actionButtonInformation with String = js.native
-  /* "ActionButtonMovie" */ val actionButtonMovie: typings.officeDashJs.Excel.GeometricShapeType.actionButtonMovie with String = js.native
-  /* "ActionButtonReturn" */ val actionButtonReturn: typings.officeDashJs.Excel.GeometricShapeType.actionButtonReturn with String = js.native
-  /* "ActionButtonSound" */ val actionButtonSound: typings.officeDashJs.Excel.GeometricShapeType.actionButtonSound with String = js.native
-  /* "Arc" */ val arc: typings.officeDashJs.Excel.GeometricShapeType.arc with String = js.native
-  /* "BentArrow" */ val bentArrow: typings.officeDashJs.Excel.GeometricShapeType.bentArrow with String = js.native
-  /* "BentUpArrow" */ val bentUpArrow: typings.officeDashJs.Excel.GeometricShapeType.bentUpArrow with String = js.native
-  /* "Bevel" */ val bevel: typings.officeDashJs.Excel.GeometricShapeType.bevel with String = js.native
-  /* "BlockArc" */ val blockArc: typings.officeDashJs.Excel.GeometricShapeType.blockArc with String = js.native
-  /* "BorderCallout1" */ val borderCallout1: typings.officeDashJs.Excel.GeometricShapeType.borderCallout1 with String = js.native
-  /* "BorderCallout2" */ val borderCallout2: typings.officeDashJs.Excel.GeometricShapeType.borderCallout2 with String = js.native
-  /* "BorderCallout3" */ val borderCallout3: typings.officeDashJs.Excel.GeometricShapeType.borderCallout3 with String = js.native
-  /* "BracePair" */ val bracePair: typings.officeDashJs.Excel.GeometricShapeType.bracePair with String = js.native
-  /* "BracketPair" */ val bracketPair: typings.officeDashJs.Excel.GeometricShapeType.bracketPair with String = js.native
-  /* "Callout1" */ val callout1: typings.officeDashJs.Excel.GeometricShapeType.callout1 with String = js.native
-  /* "Callout2" */ val callout2: typings.officeDashJs.Excel.GeometricShapeType.callout2 with String = js.native
-  /* "Callout3" */ val callout3: typings.officeDashJs.Excel.GeometricShapeType.callout3 with String = js.native
-  /* "Can" */ val can: typings.officeDashJs.Excel.GeometricShapeType.can with String = js.native
-  /* "ChartPlus" */ val chartPlus: typings.officeDashJs.Excel.GeometricShapeType.chartPlus with String = js.native
-  /* "ChartStar" */ val chartStar: typings.officeDashJs.Excel.GeometricShapeType.chartStar with String = js.native
-  /* "ChartX" */ val chartX: typings.officeDashJs.Excel.GeometricShapeType.chartX with String = js.native
-  /* "Chevron" */ val chevron: typings.officeDashJs.Excel.GeometricShapeType.chevron with String = js.native
-  /* "Chord" */ val chord: typings.officeDashJs.Excel.GeometricShapeType.chord with String = js.native
-  /* "CircularArrow" */ val circularArrow: typings.officeDashJs.Excel.GeometricShapeType.circularArrow with String = js.native
-  /* "Cloud" */ val cloud: typings.officeDashJs.Excel.GeometricShapeType.cloud with String = js.native
-  /* "CloudCallout" */ val cloudCallout: typings.officeDashJs.Excel.GeometricShapeType.cloudCallout with String = js.native
-  /* "Corner" */ val corner: typings.officeDashJs.Excel.GeometricShapeType.corner with String = js.native
-  /* "CornerTabs" */ val cornerTabs: typings.officeDashJs.Excel.GeometricShapeType.cornerTabs with String = js.native
-  /* "Cube" */ val cube: typings.officeDashJs.Excel.GeometricShapeType.cube with String = js.native
-  /* "CurvedDownArrow" */ val curvedDownArrow: typings.officeDashJs.Excel.GeometricShapeType.curvedDownArrow with String = js.native
-  /* "CurvedLeftArrow" */ val curvedLeftArrow: typings.officeDashJs.Excel.GeometricShapeType.curvedLeftArrow with String = js.native
-  /* "CurvedRightArrow" */ val curvedRightArrow: typings.officeDashJs.Excel.GeometricShapeType.curvedRightArrow with String = js.native
-  /* "CurvedUpArrow" */ val curvedUpArrow: typings.officeDashJs.Excel.GeometricShapeType.curvedUpArrow with String = js.native
-  /* "Decagon" */ val decagon: typings.officeDashJs.Excel.GeometricShapeType.decagon with String = js.native
-  /* "DiagonalStripe" */ val diagonalStripe: typings.officeDashJs.Excel.GeometricShapeType.diagonalStripe with String = js.native
-  /* "Diamond" */ val diamond: typings.officeDashJs.Excel.GeometricShapeType.diamond with String = js.native
-  /* "Dodecagon" */ val dodecagon: typings.officeDashJs.Excel.GeometricShapeType.dodecagon with String = js.native
-  /* "Donut" */ val donut: typings.officeDashJs.Excel.GeometricShapeType.donut with String = js.native
-  /* "DoubleWave" */ val doubleWave: typings.officeDashJs.Excel.GeometricShapeType.doubleWave with String = js.native
-  /* "DownArrow" */ val downArrow: typings.officeDashJs.Excel.GeometricShapeType.downArrow with String = js.native
-  /* "DownArrowCallout" */ val downArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.downArrowCallout with String = js.native
-  /* "Ellipse" */ val ellipse: typings.officeDashJs.Excel.GeometricShapeType.ellipse with String = js.native
-  /* "EllipseRibbon" */ val ellipseRibbon: typings.officeDashJs.Excel.GeometricShapeType.ellipseRibbon with String = js.native
-  /* "EllipseRibbon2" */ val ellipseRibbon2: typings.officeDashJs.Excel.GeometricShapeType.ellipseRibbon2 with String = js.native
-  /* "FlowChartAlternateProcess" */ val flowChartAlternateProcess: typings.officeDashJs.Excel.GeometricShapeType.flowChartAlternateProcess with String = js.native
-  /* "FlowChartCollate" */ val flowChartCollate: typings.officeDashJs.Excel.GeometricShapeType.flowChartCollate with String = js.native
-  /* "FlowChartConnector" */ val flowChartConnector: typings.officeDashJs.Excel.GeometricShapeType.flowChartConnector with String = js.native
-  /* "FlowChartDecision" */ val flowChartDecision: typings.officeDashJs.Excel.GeometricShapeType.flowChartDecision with String = js.native
-  /* "FlowChartDelay" */ val flowChartDelay: typings.officeDashJs.Excel.GeometricShapeType.flowChartDelay with String = js.native
-  /* "FlowChartDisplay" */ val flowChartDisplay: typings.officeDashJs.Excel.GeometricShapeType.flowChartDisplay with String = js.native
-  /* "FlowChartDocument" */ val flowChartDocument: typings.officeDashJs.Excel.GeometricShapeType.flowChartDocument with String = js.native
-  /* "FlowChartExtract" */ val flowChartExtract: typings.officeDashJs.Excel.GeometricShapeType.flowChartExtract with String = js.native
-  /* "FlowChartInputOutput" */ val flowChartInputOutput: typings.officeDashJs.Excel.GeometricShapeType.flowChartInputOutput with String = js.native
-  /* "FlowChartInternalStorage" */ val flowChartInternalStorage: typings.officeDashJs.Excel.GeometricShapeType.flowChartInternalStorage with String = js.native
-  /* "FlowChartMagneticDisk" */ val flowChartMagneticDisk: typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticDisk with String = js.native
-  /* "FlowChartMagneticDrum" */ val flowChartMagneticDrum: typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticDrum with String = js.native
-  /* "FlowChartMagneticTape" */ val flowChartMagneticTape: typings.officeDashJs.Excel.GeometricShapeType.flowChartMagneticTape with String = js.native
-  /* "FlowChartManualInput" */ val flowChartManualInput: typings.officeDashJs.Excel.GeometricShapeType.flowChartManualInput with String = js.native
-  /* "FlowChartManualOperation" */ val flowChartManualOperation: typings.officeDashJs.Excel.GeometricShapeType.flowChartManualOperation with String = js.native
-  /* "FlowChartMerge" */ val flowChartMerge: typings.officeDashJs.Excel.GeometricShapeType.flowChartMerge with String = js.native
-  /* "FlowChartMultidocument" */ val flowChartMultidocument: typings.officeDashJs.Excel.GeometricShapeType.flowChartMultidocument with String = js.native
-  /* "FlowChartOfflineStorage" */ val flowChartOfflineStorage: typings.officeDashJs.Excel.GeometricShapeType.flowChartOfflineStorage with String = js.native
-  /* "FlowChartOffpageConnector" */ val flowChartOffpageConnector: typings.officeDashJs.Excel.GeometricShapeType.flowChartOffpageConnector with String = js.native
-  /* "FlowChartOnlineStorage" */ val flowChartOnlineStorage: typings.officeDashJs.Excel.GeometricShapeType.flowChartOnlineStorage with String = js.native
-  /* "FlowChartOr" */ val flowChartOr: typings.officeDashJs.Excel.GeometricShapeType.flowChartOr with String = js.native
-  /* "FlowChartPredefinedProcess" */ val flowChartPredefinedProcess: typings.officeDashJs.Excel.GeometricShapeType.flowChartPredefinedProcess with String = js.native
-  /* "FlowChartPreparation" */ val flowChartPreparation: typings.officeDashJs.Excel.GeometricShapeType.flowChartPreparation with String = js.native
-  /* "FlowChartProcess" */ val flowChartProcess: typings.officeDashJs.Excel.GeometricShapeType.flowChartProcess with String = js.native
-  /* "FlowChartPunchedCard" */ val flowChartPunchedCard: typings.officeDashJs.Excel.GeometricShapeType.flowChartPunchedCard with String = js.native
-  /* "FlowChartPunchedTape" */ val flowChartPunchedTape: typings.officeDashJs.Excel.GeometricShapeType.flowChartPunchedTape with String = js.native
-  /* "FlowChartSort" */ val flowChartSort: typings.officeDashJs.Excel.GeometricShapeType.flowChartSort with String = js.native
-  /* "FlowChartSummingJunction" */ val flowChartSummingJunction: typings.officeDashJs.Excel.GeometricShapeType.flowChartSummingJunction with String = js.native
-  /* "FlowChartTerminator" */ val flowChartTerminator: typings.officeDashJs.Excel.GeometricShapeType.flowChartTerminator with String = js.native
-  /* "FoldedCorner" */ val foldedCorner: typings.officeDashJs.Excel.GeometricShapeType.foldedCorner with String = js.native
-  /* "Frame" */ val frame: typings.officeDashJs.Excel.GeometricShapeType.frame with String = js.native
-  /* "Funnel" */ val funnel: typings.officeDashJs.Excel.GeometricShapeType.funnel with String = js.native
-  /* "Gear6" */ val gear6: typings.officeDashJs.Excel.GeometricShapeType.gear6 with String = js.native
-  /* "Gear9" */ val gear9: typings.officeDashJs.Excel.GeometricShapeType.gear9 with String = js.native
-  /* "HalfFrame" */ val halfFrame: typings.officeDashJs.Excel.GeometricShapeType.halfFrame with String = js.native
-  /* "Heart" */ val heart: typings.officeDashJs.Excel.GeometricShapeType.heart with String = js.native
-  /* "Heptagon" */ val heptagon: typings.officeDashJs.Excel.GeometricShapeType.heptagon with String = js.native
-  /* "Hexagon" */ val hexagon: typings.officeDashJs.Excel.GeometricShapeType.hexagon with String = js.native
-  /* "HomePlate" */ val homePlate: typings.officeDashJs.Excel.GeometricShapeType.homePlate with String = js.native
-  /* "HorizontalScroll" */ val horizontalScroll: typings.officeDashJs.Excel.GeometricShapeType.horizontalScroll with String = js.native
-  /* "IrregularSeal1" */ val irregularSeal1: typings.officeDashJs.Excel.GeometricShapeType.irregularSeal1 with String = js.native
-  /* "IrregularSeal2" */ val irregularSeal2: typings.officeDashJs.Excel.GeometricShapeType.irregularSeal2 with String = js.native
-  /* "LeftArrow" */ val leftArrow: typings.officeDashJs.Excel.GeometricShapeType.leftArrow with String = js.native
-  /* "LeftArrowCallout" */ val leftArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.leftArrowCallout with String = js.native
-  /* "LeftBrace" */ val leftBrace: typings.officeDashJs.Excel.GeometricShapeType.leftBrace with String = js.native
-  /* "LeftBracket" */ val leftBracket: typings.officeDashJs.Excel.GeometricShapeType.leftBracket with String = js.native
-  /* "LeftCircularArrow" */ val leftCircularArrow: typings.officeDashJs.Excel.GeometricShapeType.leftCircularArrow with String = js.native
-  /* "LeftRightArrow" */ val leftRightArrow: typings.officeDashJs.Excel.GeometricShapeType.leftRightArrow with String = js.native
-  /* "LeftRightArrowCallout" */ val leftRightArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.leftRightArrowCallout with String = js.native
-  /* "LeftRightCircularArrow" */ val leftRightCircularArrow: typings.officeDashJs.Excel.GeometricShapeType.leftRightCircularArrow with String = js.native
-  /* "LeftRightRibbon" */ val leftRightRibbon: typings.officeDashJs.Excel.GeometricShapeType.leftRightRibbon with String = js.native
-  /* "LeftRightUpArrow" */ val leftRightUpArrow: typings.officeDashJs.Excel.GeometricShapeType.leftRightUpArrow with String = js.native
-  /* "LeftUpArrow" */ val leftUpArrow: typings.officeDashJs.Excel.GeometricShapeType.leftUpArrow with String = js.native
-  /* "LightningBolt" */ val lightningBolt: typings.officeDashJs.Excel.GeometricShapeType.lightningBolt with String = js.native
-  /* "LineInverse" */ val lineInverse: typings.officeDashJs.Excel.GeometricShapeType.lineInverse with String = js.native
-  /* "MathDivide" */ val mathDivide: typings.officeDashJs.Excel.GeometricShapeType.mathDivide with String = js.native
-  /* "MathEqual" */ val mathEqual: typings.officeDashJs.Excel.GeometricShapeType.mathEqual with String = js.native
-  /* "MathMinus" */ val mathMinus: typings.officeDashJs.Excel.GeometricShapeType.mathMinus with String = js.native
-  /* "MathMultiply" */ val mathMultiply: typings.officeDashJs.Excel.GeometricShapeType.mathMultiply with String = js.native
-  /* "MathNotEqual" */ val mathNotEqual: typings.officeDashJs.Excel.GeometricShapeType.mathNotEqual with String = js.native
-  /* "MathPlus" */ val mathPlus: typings.officeDashJs.Excel.GeometricShapeType.mathPlus with String = js.native
-  /* "Moon" */ val moon: typings.officeDashJs.Excel.GeometricShapeType.moon with String = js.native
-  /* "NoSmoking" */ val noSmoking: typings.officeDashJs.Excel.GeometricShapeType.noSmoking with String = js.native
-  /* "NonIsoscelesTrapezoid" */ val nonIsoscelesTrapezoid: typings.officeDashJs.Excel.GeometricShapeType.nonIsoscelesTrapezoid with String = js.native
-  /* "NotchedRightArrow" */ val notchedRightArrow: typings.officeDashJs.Excel.GeometricShapeType.notchedRightArrow with String = js.native
-  /* "Octagon" */ val octagon: typings.officeDashJs.Excel.GeometricShapeType.octagon with String = js.native
-  /* "Parallelogram" */ val parallelogram: typings.officeDashJs.Excel.GeometricShapeType.parallelogram with String = js.native
-  /* "Pentagon" */ val pentagon: typings.officeDashJs.Excel.GeometricShapeType.pentagon with String = js.native
-  /* "Pie" */ val pie: typings.officeDashJs.Excel.GeometricShapeType.pie with String = js.native
-  /* "PieWedge" */ val pieWedge: typings.officeDashJs.Excel.GeometricShapeType.pieWedge with String = js.native
-  /* "Plaque" */ val plaque: typings.officeDashJs.Excel.GeometricShapeType.plaque with String = js.native
-  /* "PlaqueTabs" */ val plaqueTabs: typings.officeDashJs.Excel.GeometricShapeType.plaqueTabs with String = js.native
-  /* "Plus" */ val plus: typings.officeDashJs.Excel.GeometricShapeType.plus with String = js.native
-  /* "QuadArrow" */ val quadArrow: typings.officeDashJs.Excel.GeometricShapeType.quadArrow with String = js.native
-  /* "QuadArrowCallout" */ val quadArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.quadArrowCallout with String = js.native
-  /* "Rectangle" */ val rectangle: typings.officeDashJs.Excel.GeometricShapeType.rectangle with String = js.native
-  /* "Ribbon" */ val ribbon: typings.officeDashJs.Excel.GeometricShapeType.ribbon with String = js.native
-  /* "Ribbon2" */ val ribbon2: typings.officeDashJs.Excel.GeometricShapeType.ribbon2 with String = js.native
-  /* "RightArrow" */ val rightArrow: typings.officeDashJs.Excel.GeometricShapeType.rightArrow with String = js.native
-  /* "RightArrowCallout" */ val rightArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.rightArrowCallout with String = js.native
-  /* "RightBrace" */ val rightBrace: typings.officeDashJs.Excel.GeometricShapeType.rightBrace with String = js.native
-  /* "RightBracket" */ val rightBracket: typings.officeDashJs.Excel.GeometricShapeType.rightBracket with String = js.native
-  /* "RightTriangle" */ val rightTriangle: typings.officeDashJs.Excel.GeometricShapeType.rightTriangle with String = js.native
-  /* "Round1Rectangle" */ val round1Rectangle: typings.officeDashJs.Excel.GeometricShapeType.round1Rectangle with String = js.native
-  /* "Round2DiagonalRectangle" */ val round2DiagonalRectangle: typings.officeDashJs.Excel.GeometricShapeType.round2DiagonalRectangle with String = js.native
-  /* "Round2SameRectangle" */ val round2SameRectangle: typings.officeDashJs.Excel.GeometricShapeType.round2SameRectangle with String = js.native
-  /* "RoundRectangle" */ val roundRectangle: typings.officeDashJs.Excel.GeometricShapeType.roundRectangle with String = js.native
-  /* "SmileyFace" */ val smileyFace: typings.officeDashJs.Excel.GeometricShapeType.smileyFace with String = js.native
-  /* "Snip1Rectangle" */ val snip1Rectangle: typings.officeDashJs.Excel.GeometricShapeType.snip1Rectangle with String = js.native
-  /* "Snip2DiagonalRectangle" */ val snip2DiagonalRectangle: typings.officeDashJs.Excel.GeometricShapeType.snip2DiagonalRectangle with String = js.native
-  /* "Snip2SameRectangle" */ val snip2SameRectangle: typings.officeDashJs.Excel.GeometricShapeType.snip2SameRectangle with String = js.native
-  /* "SnipRoundRectangle" */ val snipRoundRectangle: typings.officeDashJs.Excel.GeometricShapeType.snipRoundRectangle with String = js.native
-  /* "SquareTabs" */ val squareTabs: typings.officeDashJs.Excel.GeometricShapeType.squareTabs with String = js.native
-  /* "Star10" */ val star10: typings.officeDashJs.Excel.GeometricShapeType.star10 with String = js.native
-  /* "Star12" */ val star12: typings.officeDashJs.Excel.GeometricShapeType.star12 with String = js.native
-  /* "Star16" */ val star16: typings.officeDashJs.Excel.GeometricShapeType.star16 with String = js.native
-  /* "Star24" */ val star24: typings.officeDashJs.Excel.GeometricShapeType.star24 with String = js.native
-  /* "Star32" */ val star32: typings.officeDashJs.Excel.GeometricShapeType.star32 with String = js.native
-  /* "Star4" */ val star4: typings.officeDashJs.Excel.GeometricShapeType.star4 with String = js.native
-  /* "Star5" */ val star5: typings.officeDashJs.Excel.GeometricShapeType.star5 with String = js.native
-  /* "Star6" */ val star6: typings.officeDashJs.Excel.GeometricShapeType.star6 with String = js.native
-  /* "Star7" */ val star7: typings.officeDashJs.Excel.GeometricShapeType.star7 with String = js.native
-  /* "Star8" */ val star8: typings.officeDashJs.Excel.GeometricShapeType.star8 with String = js.native
-  /* "StripedRightArrow" */ val stripedRightArrow: typings.officeDashJs.Excel.GeometricShapeType.stripedRightArrow with String = js.native
-  /* "Sun" */ val sun: typings.officeDashJs.Excel.GeometricShapeType.sun with String = js.native
-  /* "SwooshArrow" */ val swooshArrow: typings.officeDashJs.Excel.GeometricShapeType.swooshArrow with String = js.native
-  /* "Teardrop" */ val teardrop: typings.officeDashJs.Excel.GeometricShapeType.teardrop with String = js.native
-  /* "Trapezoid" */ val trapezoid: typings.officeDashJs.Excel.GeometricShapeType.trapezoid with String = js.native
-  /* "Triangle" */ val triangle: typings.officeDashJs.Excel.GeometricShapeType.triangle with String = js.native
-  /* "UpArrow" */ val upArrow: typings.officeDashJs.Excel.GeometricShapeType.upArrow with String = js.native
-  /* "UpArrowCallout" */ val upArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.upArrowCallout with String = js.native
-  /* "UpDownArrow" */ val upDownArrow: typings.officeDashJs.Excel.GeometricShapeType.upDownArrow with String = js.native
-  /* "UpDownArrowCallout" */ val upDownArrowCallout: typings.officeDashJs.Excel.GeometricShapeType.upDownArrowCallout with String = js.native
-  /* "UturnArrow" */ val uturnArrow: typings.officeDashJs.Excel.GeometricShapeType.uturnArrow with String = js.native
-  /* "VerticalScroll" */ val verticalScroll: typings.officeDashJs.Excel.GeometricShapeType.verticalScroll with String = js.native
-  /* "Wave" */ val wave: typings.officeDashJs.Excel.GeometricShapeType.wave with String = js.native
-  /* "WedgeEllipseCallout" */ val wedgeEllipseCallout: typings.officeDashJs.Excel.GeometricShapeType.wedgeEllipseCallout with String = js.native
-  /* "WedgeRRectCallout" */ val wedgeRRectCallout: typings.officeDashJs.Excel.GeometricShapeType.wedgeRRectCallout with String = js.native
-  /* "WedgeRectCallout" */ val wedgeRectCallout: typings.officeDashJs.Excel.GeometricShapeType.wedgeRectCallout with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[GeometricShapeType with String] = js.native
+  /* "AccentBorderCallout1" */ @js.native
+  object accentBorderCallout1 extends TopLevel[accentBorderCallout1 with String]
+  
+  /* "AccentBorderCallout2" */ @js.native
+  object accentBorderCallout2 extends TopLevel[accentBorderCallout2 with String]
+  
+  /* "AccentBorderCallout3" */ @js.native
+  object accentBorderCallout3 extends TopLevel[accentBorderCallout3 with String]
+  
+  /* "AccentCallout1" */ @js.native
+  object accentCallout1 extends TopLevel[accentCallout1 with String]
+  
+  /* "AccentCallout2" */ @js.native
+  object accentCallout2 extends TopLevel[accentCallout2 with String]
+  
+  /* "AccentCallout3" */ @js.native
+  object accentCallout3 extends TopLevel[accentCallout3 with String]
+  
+  /* "ActionButtonBackPrevious" */ @js.native
+  object actionButtonBackPrevious extends TopLevel[actionButtonBackPrevious with String]
+  
+  /* "ActionButtonBeginning" */ @js.native
+  object actionButtonBeginning extends TopLevel[actionButtonBeginning with String]
+  
+  /* "ActionButtonBlank" */ @js.native
+  object actionButtonBlank extends TopLevel[actionButtonBlank with String]
+  
+  /* "ActionButtonDocument" */ @js.native
+  object actionButtonDocument extends TopLevel[actionButtonDocument with String]
+  
+  /* "ActionButtonEnd" */ @js.native
+  object actionButtonEnd extends TopLevel[actionButtonEnd with String]
+  
+  /* "ActionButtonForwardNext" */ @js.native
+  object actionButtonForwardNext extends TopLevel[actionButtonForwardNext with String]
+  
+  /* "ActionButtonHelp" */ @js.native
+  object actionButtonHelp extends TopLevel[actionButtonHelp with String]
+  
+  /* "ActionButtonHome" */ @js.native
+  object actionButtonHome extends TopLevel[actionButtonHome with String]
+  
+  /* "ActionButtonInformation" */ @js.native
+  object actionButtonInformation extends TopLevel[actionButtonInformation with String]
+  
+  /* "ActionButtonMovie" */ @js.native
+  object actionButtonMovie extends TopLevel[actionButtonMovie with String]
+  
+  /* "ActionButtonReturn" */ @js.native
+  object actionButtonReturn extends TopLevel[actionButtonReturn with String]
+  
+  /* "ActionButtonSound" */ @js.native
+  object actionButtonSound extends TopLevel[actionButtonSound with String]
+  
+  /* "Arc" */ @js.native
+  object arc extends TopLevel[arc with String]
+  
+  /* "BentArrow" */ @js.native
+  object bentArrow extends TopLevel[bentArrow with String]
+  
+  /* "BentUpArrow" */ @js.native
+  object bentUpArrow extends TopLevel[bentUpArrow with String]
+  
+  /* "Bevel" */ @js.native
+  object bevel extends TopLevel[bevel with String]
+  
+  /* "BlockArc" */ @js.native
+  object blockArc extends TopLevel[blockArc with String]
+  
+  /* "BorderCallout1" */ @js.native
+  object borderCallout1 extends TopLevel[borderCallout1 with String]
+  
+  /* "BorderCallout2" */ @js.native
+  object borderCallout2 extends TopLevel[borderCallout2 with String]
+  
+  /* "BorderCallout3" */ @js.native
+  object borderCallout3 extends TopLevel[borderCallout3 with String]
+  
+  /* "BracePair" */ @js.native
+  object bracePair extends TopLevel[bracePair with String]
+  
+  /* "BracketPair" */ @js.native
+  object bracketPair extends TopLevel[bracketPair with String]
+  
+  /* "Callout1" */ @js.native
+  object callout1 extends TopLevel[callout1 with String]
+  
+  /* "Callout2" */ @js.native
+  object callout2 extends TopLevel[callout2 with String]
+  
+  /* "Callout3" */ @js.native
+  object callout3 extends TopLevel[callout3 with String]
+  
+  /* "Can" */ @js.native
+  object can extends TopLevel[can with String]
+  
+  /* "ChartPlus" */ @js.native
+  object chartPlus extends TopLevel[chartPlus with String]
+  
+  /* "ChartStar" */ @js.native
+  object chartStar extends TopLevel[chartStar with String]
+  
+  /* "ChartX" */ @js.native
+  object chartX extends TopLevel[chartX with String]
+  
+  /* "Chevron" */ @js.native
+  object chevron extends TopLevel[chevron with String]
+  
+  /* "Chord" */ @js.native
+  object chord extends TopLevel[chord with String]
+  
+  /* "CircularArrow" */ @js.native
+  object circularArrow extends TopLevel[circularArrow with String]
+  
+  /* "Cloud" */ @js.native
+  object cloud extends TopLevel[cloud with String]
+  
+  /* "CloudCallout" */ @js.native
+  object cloudCallout extends TopLevel[cloudCallout with String]
+  
+  /* "Corner" */ @js.native
+  object corner extends TopLevel[corner with String]
+  
+  /* "CornerTabs" */ @js.native
+  object cornerTabs extends TopLevel[cornerTabs with String]
+  
+  /* "Cube" */ @js.native
+  object cube extends TopLevel[cube with String]
+  
+  /* "CurvedDownArrow" */ @js.native
+  object curvedDownArrow extends TopLevel[curvedDownArrow with String]
+  
+  /* "CurvedLeftArrow" */ @js.native
+  object curvedLeftArrow extends TopLevel[curvedLeftArrow with String]
+  
+  /* "CurvedRightArrow" */ @js.native
+  object curvedRightArrow extends TopLevel[curvedRightArrow with String]
+  
+  /* "CurvedUpArrow" */ @js.native
+  object curvedUpArrow extends TopLevel[curvedUpArrow with String]
+  
+  /* "Decagon" */ @js.native
+  object decagon extends TopLevel[decagon with String]
+  
+  /* "DiagonalStripe" */ @js.native
+  object diagonalStripe extends TopLevel[diagonalStripe with String]
+  
+  /* "Diamond" */ @js.native
+  object diamond extends TopLevel[diamond with String]
+  
+  /* "Dodecagon" */ @js.native
+  object dodecagon extends TopLevel[dodecagon with String]
+  
+  /* "Donut" */ @js.native
+  object donut extends TopLevel[donut with String]
+  
+  /* "DoubleWave" */ @js.native
+  object doubleWave extends TopLevel[doubleWave with String]
+  
+  /* "DownArrow" */ @js.native
+  object downArrow extends TopLevel[downArrow with String]
+  
+  /* "DownArrowCallout" */ @js.native
+  object downArrowCallout extends TopLevel[downArrowCallout with String]
+  
+  /* "Ellipse" */ @js.native
+  object ellipse extends TopLevel[ellipse with String]
+  
+  /* "EllipseRibbon" */ @js.native
+  object ellipseRibbon extends TopLevel[ellipseRibbon with String]
+  
+  /* "EllipseRibbon2" */ @js.native
+  object ellipseRibbon2 extends TopLevel[ellipseRibbon2 with String]
+  
+  /* "FlowChartAlternateProcess" */ @js.native
+  object flowChartAlternateProcess extends TopLevel[flowChartAlternateProcess with String]
+  
+  /* "FlowChartCollate" */ @js.native
+  object flowChartCollate extends TopLevel[flowChartCollate with String]
+  
+  /* "FlowChartConnector" */ @js.native
+  object flowChartConnector extends TopLevel[flowChartConnector with String]
+  
+  /* "FlowChartDecision" */ @js.native
+  object flowChartDecision extends TopLevel[flowChartDecision with String]
+  
+  /* "FlowChartDelay" */ @js.native
+  object flowChartDelay extends TopLevel[flowChartDelay with String]
+  
+  /* "FlowChartDisplay" */ @js.native
+  object flowChartDisplay extends TopLevel[flowChartDisplay with String]
+  
+  /* "FlowChartDocument" */ @js.native
+  object flowChartDocument extends TopLevel[flowChartDocument with String]
+  
+  /* "FlowChartExtract" */ @js.native
+  object flowChartExtract extends TopLevel[flowChartExtract with String]
+  
+  /* "FlowChartInputOutput" */ @js.native
+  object flowChartInputOutput extends TopLevel[flowChartInputOutput with String]
+  
+  /* "FlowChartInternalStorage" */ @js.native
+  object flowChartInternalStorage extends TopLevel[flowChartInternalStorage with String]
+  
+  /* "FlowChartMagneticDisk" */ @js.native
+  object flowChartMagneticDisk extends TopLevel[flowChartMagneticDisk with String]
+  
+  /* "FlowChartMagneticDrum" */ @js.native
+  object flowChartMagneticDrum extends TopLevel[flowChartMagneticDrum with String]
+  
+  /* "FlowChartMagneticTape" */ @js.native
+  object flowChartMagneticTape extends TopLevel[flowChartMagneticTape with String]
+  
+  /* "FlowChartManualInput" */ @js.native
+  object flowChartManualInput extends TopLevel[flowChartManualInput with String]
+  
+  /* "FlowChartManualOperation" */ @js.native
+  object flowChartManualOperation extends TopLevel[flowChartManualOperation with String]
+  
+  /* "FlowChartMerge" */ @js.native
+  object flowChartMerge extends TopLevel[flowChartMerge with String]
+  
+  /* "FlowChartMultidocument" */ @js.native
+  object flowChartMultidocument extends TopLevel[flowChartMultidocument with String]
+  
+  /* "FlowChartOfflineStorage" */ @js.native
+  object flowChartOfflineStorage extends TopLevel[flowChartOfflineStorage with String]
+  
+  /* "FlowChartOffpageConnector" */ @js.native
+  object flowChartOffpageConnector extends TopLevel[flowChartOffpageConnector with String]
+  
+  /* "FlowChartOnlineStorage" */ @js.native
+  object flowChartOnlineStorage extends TopLevel[flowChartOnlineStorage with String]
+  
+  /* "FlowChartOr" */ @js.native
+  object flowChartOr extends TopLevel[flowChartOr with String]
+  
+  /* "FlowChartPredefinedProcess" */ @js.native
+  object flowChartPredefinedProcess extends TopLevel[flowChartPredefinedProcess with String]
+  
+  /* "FlowChartPreparation" */ @js.native
+  object flowChartPreparation extends TopLevel[flowChartPreparation with String]
+  
+  /* "FlowChartProcess" */ @js.native
+  object flowChartProcess extends TopLevel[flowChartProcess with String]
+  
+  /* "FlowChartPunchedCard" */ @js.native
+  object flowChartPunchedCard extends TopLevel[flowChartPunchedCard with String]
+  
+  /* "FlowChartPunchedTape" */ @js.native
+  object flowChartPunchedTape extends TopLevel[flowChartPunchedTape with String]
+  
+  /* "FlowChartSort" */ @js.native
+  object flowChartSort extends TopLevel[flowChartSort with String]
+  
+  /* "FlowChartSummingJunction" */ @js.native
+  object flowChartSummingJunction extends TopLevel[flowChartSummingJunction with String]
+  
+  /* "FlowChartTerminator" */ @js.native
+  object flowChartTerminator extends TopLevel[flowChartTerminator with String]
+  
+  /* "FoldedCorner" */ @js.native
+  object foldedCorner extends TopLevel[foldedCorner with String]
+  
+  /* "Frame" */ @js.native
+  object frame extends TopLevel[frame with String]
+  
+  /* "Funnel" */ @js.native
+  object funnel extends TopLevel[funnel with String]
+  
+  /* "Gear6" */ @js.native
+  object gear6 extends TopLevel[gear6 with String]
+  
+  /* "Gear9" */ @js.native
+  object gear9 extends TopLevel[gear9 with String]
+  
+  /* "HalfFrame" */ @js.native
+  object halfFrame extends TopLevel[halfFrame with String]
+  
+  /* "Heart" */ @js.native
+  object heart extends TopLevel[heart with String]
+  
+  /* "Heptagon" */ @js.native
+  object heptagon extends TopLevel[heptagon with String]
+  
+  /* "Hexagon" */ @js.native
+  object hexagon extends TopLevel[hexagon with String]
+  
+  /* "HomePlate" */ @js.native
+  object homePlate extends TopLevel[homePlate with String]
+  
+  /* "HorizontalScroll" */ @js.native
+  object horizontalScroll extends TopLevel[horizontalScroll with String]
+  
+  /* "IrregularSeal1" */ @js.native
+  object irregularSeal1 extends TopLevel[irregularSeal1 with String]
+  
+  /* "IrregularSeal2" */ @js.native
+  object irregularSeal2 extends TopLevel[irregularSeal2 with String]
+  
+  /* "LeftArrow" */ @js.native
+  object leftArrow extends TopLevel[leftArrow with String]
+  
+  /* "LeftArrowCallout" */ @js.native
+  object leftArrowCallout extends TopLevel[leftArrowCallout with String]
+  
+  /* "LeftBrace" */ @js.native
+  object leftBrace extends TopLevel[leftBrace with String]
+  
+  /* "LeftBracket" */ @js.native
+  object leftBracket extends TopLevel[leftBracket with String]
+  
+  /* "LeftCircularArrow" */ @js.native
+  object leftCircularArrow extends TopLevel[leftCircularArrow with String]
+  
+  /* "LeftRightArrow" */ @js.native
+  object leftRightArrow extends TopLevel[leftRightArrow with String]
+  
+  /* "LeftRightArrowCallout" */ @js.native
+  object leftRightArrowCallout extends TopLevel[leftRightArrowCallout with String]
+  
+  /* "LeftRightCircularArrow" */ @js.native
+  object leftRightCircularArrow extends TopLevel[leftRightCircularArrow with String]
+  
+  /* "LeftRightRibbon" */ @js.native
+  object leftRightRibbon extends TopLevel[leftRightRibbon with String]
+  
+  /* "LeftRightUpArrow" */ @js.native
+  object leftRightUpArrow extends TopLevel[leftRightUpArrow with String]
+  
+  /* "LeftUpArrow" */ @js.native
+  object leftUpArrow extends TopLevel[leftUpArrow with String]
+  
+  /* "LightningBolt" */ @js.native
+  object lightningBolt extends TopLevel[lightningBolt with String]
+  
+  /* "LineInverse" */ @js.native
+  object lineInverse extends TopLevel[lineInverse with String]
+  
+  /* "MathDivide" */ @js.native
+  object mathDivide extends TopLevel[mathDivide with String]
+  
+  /* "MathEqual" */ @js.native
+  object mathEqual extends TopLevel[mathEqual with String]
+  
+  /* "MathMinus" */ @js.native
+  object mathMinus extends TopLevel[mathMinus with String]
+  
+  /* "MathMultiply" */ @js.native
+  object mathMultiply extends TopLevel[mathMultiply with String]
+  
+  /* "MathNotEqual" */ @js.native
+  object mathNotEqual extends TopLevel[mathNotEqual with String]
+  
+  /* "MathPlus" */ @js.native
+  object mathPlus extends TopLevel[mathPlus with String]
+  
+  /* "Moon" */ @js.native
+  object moon extends TopLevel[moon with String]
+  
+  /* "NoSmoking" */ @js.native
+  object noSmoking extends TopLevel[noSmoking with String]
+  
+  /* "NonIsoscelesTrapezoid" */ @js.native
+  object nonIsoscelesTrapezoid extends TopLevel[nonIsoscelesTrapezoid with String]
+  
+  /* "NotchedRightArrow" */ @js.native
+  object notchedRightArrow extends TopLevel[notchedRightArrow with String]
+  
+  /* "Octagon" */ @js.native
+  object octagon extends TopLevel[octagon with String]
+  
+  /* "Parallelogram" */ @js.native
+  object parallelogram extends TopLevel[parallelogram with String]
+  
+  /* "Pentagon" */ @js.native
+  object pentagon extends TopLevel[pentagon with String]
+  
+  /* "Pie" */ @js.native
+  object pie extends TopLevel[pie with String]
+  
+  /* "PieWedge" */ @js.native
+  object pieWedge extends TopLevel[pieWedge with String]
+  
+  /* "Plaque" */ @js.native
+  object plaque extends TopLevel[plaque with String]
+  
+  /* "PlaqueTabs" */ @js.native
+  object plaqueTabs extends TopLevel[plaqueTabs with String]
+  
+  /* "Plus" */ @js.native
+  object plus extends TopLevel[plus with String]
+  
+  /* "QuadArrow" */ @js.native
+  object quadArrow extends TopLevel[quadArrow with String]
+  
+  /* "QuadArrowCallout" */ @js.native
+  object quadArrowCallout extends TopLevel[quadArrowCallout with String]
+  
+  /* "Rectangle" */ @js.native
+  object rectangle extends TopLevel[rectangle with String]
+  
+  /* "Ribbon" */ @js.native
+  object ribbon extends TopLevel[ribbon with String]
+  
+  /* "Ribbon2" */ @js.native
+  object ribbon2 extends TopLevel[ribbon2 with String]
+  
+  /* "RightArrow" */ @js.native
+  object rightArrow extends TopLevel[rightArrow with String]
+  
+  /* "RightArrowCallout" */ @js.native
+  object rightArrowCallout extends TopLevel[rightArrowCallout with String]
+  
+  /* "RightBrace" */ @js.native
+  object rightBrace extends TopLevel[rightBrace with String]
+  
+  /* "RightBracket" */ @js.native
+  object rightBracket extends TopLevel[rightBracket with String]
+  
+  /* "RightTriangle" */ @js.native
+  object rightTriangle extends TopLevel[rightTriangle with String]
+  
+  /* "Round1Rectangle" */ @js.native
+  object round1Rectangle extends TopLevel[round1Rectangle with String]
+  
+  /* "Round2DiagonalRectangle" */ @js.native
+  object round2DiagonalRectangle extends TopLevel[round2DiagonalRectangle with String]
+  
+  /* "Round2SameRectangle" */ @js.native
+  object round2SameRectangle extends TopLevel[round2SameRectangle with String]
+  
+  /* "RoundRectangle" */ @js.native
+  object roundRectangle extends TopLevel[roundRectangle with String]
+  
+  /* "SmileyFace" */ @js.native
+  object smileyFace extends TopLevel[smileyFace with String]
+  
+  /* "Snip1Rectangle" */ @js.native
+  object snip1Rectangle extends TopLevel[snip1Rectangle with String]
+  
+  /* "Snip2DiagonalRectangle" */ @js.native
+  object snip2DiagonalRectangle extends TopLevel[snip2DiagonalRectangle with String]
+  
+  /* "Snip2SameRectangle" */ @js.native
+  object snip2SameRectangle extends TopLevel[snip2SameRectangle with String]
+  
+  /* "SnipRoundRectangle" */ @js.native
+  object snipRoundRectangle extends TopLevel[snipRoundRectangle with String]
+  
+  /* "SquareTabs" */ @js.native
+  object squareTabs extends TopLevel[squareTabs with String]
+  
+  /* "Star10" */ @js.native
+  object star10 extends TopLevel[star10 with String]
+  
+  /* "Star12" */ @js.native
+  object star12 extends TopLevel[star12 with String]
+  
+  /* "Star16" */ @js.native
+  object star16 extends TopLevel[star16 with String]
+  
+  /* "Star24" */ @js.native
+  object star24 extends TopLevel[star24 with String]
+  
+  /* "Star32" */ @js.native
+  object star32 extends TopLevel[star32 with String]
+  
+  /* "Star4" */ @js.native
+  object star4 extends TopLevel[star4 with String]
+  
+  /* "Star5" */ @js.native
+  object star5 extends TopLevel[star5 with String]
+  
+  /* "Star6" */ @js.native
+  object star6 extends TopLevel[star6 with String]
+  
+  /* "Star7" */ @js.native
+  object star7 extends TopLevel[star7 with String]
+  
+  /* "Star8" */ @js.native
+  object star8 extends TopLevel[star8 with String]
+  
+  /* "StripedRightArrow" */ @js.native
+  object stripedRightArrow extends TopLevel[stripedRightArrow with String]
+  
+  /* "Sun" */ @js.native
+  object sun extends TopLevel[sun with String]
+  
+  /* "SwooshArrow" */ @js.native
+  object swooshArrow extends TopLevel[swooshArrow with String]
+  
+  /* "Teardrop" */ @js.native
+  object teardrop extends TopLevel[teardrop with String]
+  
+  /* "Trapezoid" */ @js.native
+  object trapezoid extends TopLevel[trapezoid with String]
+  
+  /* "Triangle" */ @js.native
+  object triangle extends TopLevel[triangle with String]
+  
+  /* "UpArrow" */ @js.native
+  object upArrow extends TopLevel[upArrow with String]
+  
+  /* "UpArrowCallout" */ @js.native
+  object upArrowCallout extends TopLevel[upArrowCallout with String]
+  
+  /* "UpDownArrow" */ @js.native
+  object upDownArrow extends TopLevel[upDownArrow with String]
+  
+  /* "UpDownArrowCallout" */ @js.native
+  object upDownArrowCallout extends TopLevel[upDownArrowCallout with String]
+  
+  /* "UturnArrow" */ @js.native
+  object uturnArrow extends TopLevel[uturnArrow with String]
+  
+  /* "VerticalScroll" */ @js.native
+  object verticalScroll extends TopLevel[verticalScroll with String]
+  
+  /* "Wave" */ @js.native
+  object wave extends TopLevel[wave with String]
+  
+  /* "WedgeEllipseCallout" */ @js.native
+  object wedgeEllipseCallout extends TopLevel[wedgeEllipseCallout with String]
+  
+  /* "WedgeRRectCallout" */ @js.native
+  object wedgeRRectCallout extends TopLevel[wedgeRRectCallout with String]
+  
+  /* "WedgeRectCallout" */ @js.native
+  object wedgeRectCallout extends TopLevel[wedgeRectCallout with String]
+  
 }
 

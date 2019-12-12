@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.CheckboxSize.Medium
+import typings.ejDotWebDotAll.ej.CheckboxSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object CheckboxSize extends js.Object {
   @js.native
   sealed trait Small extends CheckboxSize
   
-  /* 0 */ val Medium: typings.ejDotWebDotAll.ej.CheckboxSize.Medium with Double = js.native
-  /* 1 */ val Small: typings.ejDotWebDotAll.ej.CheckboxSize.Small with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CheckboxSize with Double] = js.native
+  /* 0 */ @js.native
+  object Medium extends TopLevel[Medium with Double]
+  
+  /* 1 */ @js.native
+  object Small extends TopLevel[Small with Double]
+  
 }
 

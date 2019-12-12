@@ -1,5 +1,10 @@
 package typings.playerframework.PlayerFramework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.playerframework.PlayerFramework.ViewModelState.loading
+import typings.playerframework.PlayerFramework.ViewModelState.paused
+import typings.playerframework.PlayerFramework.ViewModelState.playing
+import typings.playerframework.PlayerFramework.ViewModelState.unloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object ViewModelState extends js.Object {
   @js.native
   sealed trait unloaded extends ViewModelState
   
-  /* 1 */ val loading: typings.playerframework.PlayerFramework.ViewModelState.loading with Double = js.native
-  /* 2 */ val paused: typings.playerframework.PlayerFramework.ViewModelState.paused with Double = js.native
-  /* 3 */ val playing: typings.playerframework.PlayerFramework.ViewModelState.playing with Double = js.native
-  /* 0 */ val unloaded: typings.playerframework.PlayerFramework.ViewModelState.unloaded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ViewModelState with Double] = js.native
+  /* 1 */ @js.native
+  object loading extends TopLevel[loading with Double]
+  
+  /* 2 */ @js.native
+  object paused extends TopLevel[paused with Double]
+  
+  /* 3 */ @js.native
+  object playing extends TopLevel[playing with Double]
+  
+  /* 0 */ @js.native
+  object unloaded extends TopLevel[unloaded with Double]
+  
 }
 

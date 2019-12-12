@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise180Degrees
+import typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise270Degrees
+import typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise90Degrees
+import typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object VideoRotation extends js.Object {
   @js.native
   sealed trait none extends VideoRotation
   
-  /* 2 */ val clockwise180Degrees: typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise180Degrees with Double = js.native
-  /* 3 */ val clockwise270Degrees: typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise270Degrees with Double = js.native
-  /* 1 */ val clockwise90Degrees: typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.clockwise90Degrees with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Media.Capture.VideoRotation.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VideoRotation with Double] = js.native
+  /* 2 */ @js.native
+  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
+  
+  /* 3 */ @js.native
+  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
+  
+  /* 1 */ @js.native
+  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

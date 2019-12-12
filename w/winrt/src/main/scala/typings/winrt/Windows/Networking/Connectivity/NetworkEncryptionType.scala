@@ -1,5 +1,16 @@
 package typings.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ccmp
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ihv
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.none
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.rsnUseGroup
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.tkip
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.unknown
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep104
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep40
+import typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wpaUseGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object NetworkEncryptionType extends js.Object {
   @js.native
   sealed trait wpaUseGroup extends NetworkEncryptionType
   
-  /* 6 */ val ccmp: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ccmp with Double = js.native
-  /* 9 */ val ihv: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.ihv with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.none with Double = js.native
-  /* 8 */ val rsnUseGroup: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.rsnUseGroup with Double = js.native
-  /* 5 */ val tkip: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.tkip with Double = js.native
-  /* 1 */ val unknown: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.unknown with Double = js.native
-  /* 2 */ val wep: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep with Double = js.native
-  /* 4 */ val wep104: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep104 with Double = js.native
-  /* 3 */ val wep40: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wep40 with Double = js.native
-  /* 7 */ val wpaUseGroup: typings.winrt.Windows.Networking.Connectivity.NetworkEncryptionType.wpaUseGroup with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NetworkEncryptionType with Double] = js.native
+  /* 6 */ @js.native
+  object ccmp extends TopLevel[ccmp with Double]
+  
+  /* 9 */ @js.native
+  object ihv extends TopLevel[ihv with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 8 */ @js.native
+  object rsnUseGroup extends TopLevel[rsnUseGroup with Double]
+  
+  /* 5 */ @js.native
+  object tkip extends TopLevel[tkip with Double]
+  
+  /* 1 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object wep extends TopLevel[wep with Double]
+  
+  /* 4 */ @js.native
+  object wep104 extends TopLevel[wep104 with Double]
+  
+  /* 3 */ @js.native
+  object wep40 extends TopLevel[wep40 with Double]
+  
+  /* 7 */ @js.native
+  object wpaUseGroup extends TopLevel[wpaUseGroup with Double]
+  
 }
 

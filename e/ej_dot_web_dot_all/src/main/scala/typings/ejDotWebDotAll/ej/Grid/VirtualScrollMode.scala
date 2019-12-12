@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode.Continuous
+import typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object VirtualScrollMode extends js.Object {
   sealed trait Normal
     extends typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode
   
-  /* 1 */ val Continuous: typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode.Continuous with Double = js.native
-  /* 0 */ val Normal: typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode.Normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Grid.VirtualScrollMode with Double] = js.native
+  /* 1 */ @js.native
+  object Continuous extends TopLevel[Continuous with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
 }
 

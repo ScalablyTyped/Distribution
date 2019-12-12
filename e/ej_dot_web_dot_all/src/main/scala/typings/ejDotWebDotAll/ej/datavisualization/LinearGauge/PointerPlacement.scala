@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.LinearGauge
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Center
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Far
+import typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Near
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object PointerPlacement extends js.Object {
   @js.native
   sealed trait Near extends PointerPlacement
   
-  /* 2 */ val Center: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Center with Double = js.native
-  /* 1 */ val Far: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Far with Double = js.native
-  /* 0 */ val Near: typings.ejDotWebDotAll.ej.datavisualization.LinearGauge.PointerPlacement.Near with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointerPlacement with Double] = js.native
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 1 */ @js.native
+  object Far extends TopLevel[Far with Double]
+  
+  /* 0 */ @js.native
+  object Near extends TopLevel[Near with Double]
+  
 }
 

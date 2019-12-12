@@ -1,5 +1,14 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Cancelled
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Failed
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.NotFound
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.NotSet
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Queued
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Succeeded
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.TimedOut
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,15 +67,31 @@ object EvaluationOperationStatus extends js.Object {
   @js.native
   sealed trait TimedOut extends EvaluationOperationStatus
   
-  /* 3 */ val Cancelled: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Cancelled with Double = js.native
-  /* 5 */ val Failed: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Failed with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.InProgress with Double = js.native
-  /* 7 */ val NotFound: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.NotFound with Double = js.native
-  /* 0 */ val NotSet: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.NotSet with Double = js.native
-  /* 1 */ val Queued: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Queued with Double = js.native
-  /* 4 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.Succeeded with Double = js.native
-  /* 6 */ val TimedOut: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.EvaluationOperationStatus.TimedOut with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EvaluationOperationStatus with Double] = js.native
+  /* 3 */ @js.native
+  object Cancelled extends TopLevel[Cancelled with Double]
+  
+  /* 5 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 7 */ @js.native
+  object NotFound extends TopLevel[NotFound with Double]
+  
+  /* 0 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 1 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 4 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 6 */ @js.native
+  object TimedOut extends TopLevel[TimedOut with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.popperPopperMod.PopperProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object popperMod extends js.Object {
     def this(props: PopperProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[PopperProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[PopperProps]]
+  
 }
 

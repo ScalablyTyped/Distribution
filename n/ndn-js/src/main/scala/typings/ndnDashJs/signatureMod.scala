@@ -1,5 +1,6 @@
 package typings.ndnDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.ndnDashJs.blobMod.Blob
 import typings.ndnDashJs.nameMod.Name
 import typings.ndnDashJs.signatureMod.DigestSha256Signature
@@ -7,6 +8,8 @@ import typings.ndnDashJs.signatureMod.GenericSignature
 import typings.ndnDashJs.signatureMod.HmacWithSha25Signature
 import typings.ndnDashJs.signatureMod.KeyLocator
 import typings.ndnDashJs.signatureMod.KeyLocatorType
+import typings.ndnDashJs.signatureMod.KeyLocatorType.KEYNAME
+import typings.ndnDashJs.signatureMod.KeyLocatorType.KEY_LOCATOR_DIGEST
 import typings.ndnDashJs.signatureMod.Sha256WithEcdsaSignature
 import typings.ndnDashJs.signatureMod.Sha256WithRsaSignature
 import typings.ndnDashJs.signatureMod.Signature
@@ -100,10 +103,14 @@ object signatureMod extends js.Object {
     @js.native
     sealed trait KEY_LOCATOR_DIGEST extends KeyLocatorType
     
-    /* 1 */ val KEYNAME: typings.ndnDashJs.signatureMod.KeyLocatorType.KEYNAME with Double = js.native
-    /* 2 */ val KEY_LOCATOR_DIGEST: typings.ndnDashJs.signatureMod.KeyLocatorType.KEY_LOCATOR_DIGEST with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[KeyLocatorType with Double] = js.native
+    /* 1 */ @js.native
+    object KEYNAME extends TopLevel[KEYNAME with Double]
+    
+    /* 2 */ @js.native
+    object KEY_LOCATOR_DIGEST extends TopLevel[KEY_LOCATOR_DIGEST with Double]
+    
   }
   
 }

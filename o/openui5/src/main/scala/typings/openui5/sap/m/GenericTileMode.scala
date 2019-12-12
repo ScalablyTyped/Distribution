@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.GenericTileMode.ContentMode
+import typings.openui5.sap.m.GenericTileMode.HeaderMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object GenericTileMode extends js.Object {
   @js.native
   sealed trait HeaderMode extends GenericTileMode
   
-  /* 0 */ val ContentMode: typings.openui5.sap.m.GenericTileMode.ContentMode with Double = js.native
-  /* 1 */ val HeaderMode: typings.openui5.sap.m.GenericTileMode.HeaderMode with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GenericTileMode with Double] = js.native
+  /* 0 */ @js.native
+  object ContentMode extends TopLevel[ContentMode with Double]
+  
+  /* 1 */ @js.native
+  object HeaderMode extends TopLevel[HeaderMode with Double]
+  
 }
 

@@ -1,5 +1,14 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidAirline
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidBulletTrain
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidExpressTrain
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidHighways
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidToll
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeHighways
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeToll
+import typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object RouteAvoidance extends js.Object {
   @js.native
   sealed trait none extends RouteAvoidance
   
-  /* 32 */ val avoidAirline: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidAirline with Double = js.native
-  /* 64 */ val avoidBulletTrain: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidBulletTrain with Double = js.native
-  /* 16 */ val avoidExpressTrain: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidExpressTrain with Double = js.native
-  /* 4 */ val avoidHighways: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidHighways with Double = js.native
-  /* 8 */ val avoidToll: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.avoidToll with Double = js.native
-  /* 1 */ val minimizeHighways: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeHighways with Double = js.native
-  /* 2 */ val minimizeToll: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.minimizeToll with Double = js.native
-  /* 0 */ val none: typings.bingmaps.Microsoft.Maps.Directions.RouteAvoidance.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RouteAvoidance with Double] = js.native
+  /* 32 */ @js.native
+  object avoidAirline extends TopLevel[avoidAirline with Double]
+  
+  /* 64 */ @js.native
+  object avoidBulletTrain extends TopLevel[avoidBulletTrain with Double]
+  
+  /* 16 */ @js.native
+  object avoidExpressTrain extends TopLevel[avoidExpressTrain with Double]
+  
+  /* 4 */ @js.native
+  object avoidHighways extends TopLevel[avoidHighways with Double]
+  
+  /* 8 */ @js.native
+  object avoidToll extends TopLevel[avoidToll with Double]
+  
+  /* 1 */ @js.native
+  object minimizeHighways extends TopLevel[minimizeHighways with Double]
+  
+  /* 2 */ @js.native
+  object minimizeToll extends TopLevel[minimizeToll with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

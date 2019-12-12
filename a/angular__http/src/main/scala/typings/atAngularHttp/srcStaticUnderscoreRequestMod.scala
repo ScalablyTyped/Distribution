@@ -1,5 +1,6 @@
 package typings.atAngularHttp
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularHttp.srcBodyMod.Body
 import typings.atAngularHttp.srcEnumsMod.ContentType
 import typings.atAngularHttp.srcEnumsMod.RequestMethod
@@ -54,6 +55,8 @@ object srcStaticUnderscoreRequestMod extends js.Object {
     def getBody(): js.Any = js.native
   }
   
-  val ArrayBuffer: ArrayBufferConstructor = js.native
+  @js.native
+  object ArrayBuffer extends TopLevel[ArrayBufferConstructor]
+  
 }
 

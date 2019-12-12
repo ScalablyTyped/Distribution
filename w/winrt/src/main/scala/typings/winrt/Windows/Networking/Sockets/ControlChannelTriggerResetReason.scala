@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.fastUserSwitched
+import typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.lowPowerExit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ControlChannelTriggerResetReason extends js.Object {
   @js.native
   sealed trait lowPowerExit extends ControlChannelTriggerResetReason
   
-  /* 0 */ val fastUserSwitched: typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.fastUserSwitched with Double = js.native
-  /* 1 */ val lowPowerExit: typings.winrt.Windows.Networking.Sockets.ControlChannelTriggerResetReason.lowPowerExit with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControlChannelTriggerResetReason with Double] = js.native
+  /* 0 */ @js.native
+  object fastUserSwitched extends TopLevel[fastUserSwitched with Double]
+  
+  /* 1 */ @js.native
+  object lowPowerExit extends TopLevel[lowPowerExit with Double]
+  
 }
 

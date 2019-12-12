@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.PrintMarginUnit.centimeters
+import typings.officeDashJs.Excel.PrintMarginUnit.inches
+import typings.officeDashJs.Excel.PrintMarginUnit.points
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object PrintMarginUnit extends js.Object {
   @js.native
   sealed trait points extends PrintMarginUnit
   
-  /* "Centimeters" */ val centimeters: typings.officeDashJs.Excel.PrintMarginUnit.centimeters with String = js.native
-  /* "Inches" */ val inches: typings.officeDashJs.Excel.PrintMarginUnit.inches with String = js.native
-  /* "Points" */ val points: typings.officeDashJs.Excel.PrintMarginUnit.points with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PrintMarginUnit with String] = js.native
+  /* "Centimeters" */ @js.native
+  object centimeters extends TopLevel[centimeters with String]
+  
+  /* "Inches" */ @js.native
+  object inches extends TopLevel[inches with String]
+  
+  /* "Points" */ @js.native
+  object points extends TopLevel[points with String]
+  
 }
 

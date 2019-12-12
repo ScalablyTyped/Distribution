@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Networking.Proximity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.browse
+import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.none
+import typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.triggered
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PeerDiscoveryTypes extends js.Object {
   @js.native
   sealed trait triggered extends PeerDiscoveryTypes
   
-  /* 1 */ val browse: typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.browse with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.none with Double = js.native
-  /* 2 */ val triggered: typings.winrt.Windows.Networking.Proximity.PeerDiscoveryTypes.triggered with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PeerDiscoveryTypes with Double] = js.native
+  /* 1 */ @js.native
+  object browse extends TopLevel[browse with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object triggered extends TopLevel[triggered with Double]
+  
 }
 

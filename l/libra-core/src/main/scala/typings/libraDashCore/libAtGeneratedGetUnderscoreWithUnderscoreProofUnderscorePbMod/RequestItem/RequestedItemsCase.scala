@@ -1,5 +1,11 @@
 package typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_ACCOUNT_STATE_REQUEST
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_REQUEST
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_REQUEST
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_TRANSACTIONS_REQUEST
+import typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.REQUESTEDITEMS_NOT_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object RequestedItemsCase extends js.Object {
   @js.native
   sealed trait REQUESTEDITEMS_NOT_SET extends RequestedItemsCase
   
-  /* 1 */ val GET_ACCOUNT_STATE_REQUEST: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_ACCOUNT_STATE_REQUEST with Double = js.native
-  /* 2 */ val GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_REQUEST: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_REQUEST with Double = js.native
-  /* 3 */ val GET_EVENTS_BY_EVENT_ACCESS_PATH_REQUEST: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_EVENTS_BY_EVENT_ACCESS_PATH_REQUEST with Double = js.native
-  /* 4 */ val GET_TRANSACTIONS_REQUEST: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.GET_TRANSACTIONS_REQUEST with Double = js.native
-  /* 0 */ val REQUESTEDITEMS_NOT_SET: typings.libraDashCore.libAtGeneratedGetUnderscoreWithUnderscoreProofUnderscorePbMod.RequestItem.RequestedItemsCase.REQUESTEDITEMS_NOT_SET with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RequestedItemsCase with Double] = js.native
+  /* 1 */ @js.native
+  object GET_ACCOUNT_STATE_REQUEST extends TopLevel[GET_ACCOUNT_STATE_REQUEST with Double]
+  
+  /* 2 */ @js.native
+  object GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_REQUEST extends TopLevel[GET_ACCOUNT_TRANSACTION_BY_SEQUENCE_NUMBER_REQUEST with Double]
+  
+  /* 3 */ @js.native
+  object GET_EVENTS_BY_EVENT_ACCESS_PATH_REQUEST extends TopLevel[GET_EVENTS_BY_EVENT_ACCESS_PATH_REQUEST with Double]
+  
+  /* 4 */ @js.native
+  object GET_TRANSACTIONS_REQUEST extends TopLevel[GET_TRANSACTIONS_REQUEST with Double]
+  
+  /* 0 */ @js.native
+  object REQUESTEDITEMS_NOT_SET extends TopLevel[REQUESTEDITEMS_NOT_SET with Double]
+  
 }
 

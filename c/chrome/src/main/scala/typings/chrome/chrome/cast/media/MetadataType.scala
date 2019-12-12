@@ -1,5 +1,11 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.MetadataType.GENERIC
+import typings.chrome.chrome.cast.media.MetadataType.MOVIE
+import typings.chrome.chrome.cast.media.MetadataType.MUSIC_TRACK
+import typings.chrome.chrome.cast.media.MetadataType.PHOTO
+import typings.chrome.chrome.cast.media.MetadataType.TV_SHOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object MetadataType extends js.Object {
   @js.native
   sealed trait TV_SHOW extends MetadataType
   
-  /* 0 */ val GENERIC: typings.chrome.chrome.cast.media.MetadataType.GENERIC with Double = js.native
-  /* 2 */ val MOVIE: typings.chrome.chrome.cast.media.MetadataType.MOVIE with Double = js.native
-  /* 3 */ val MUSIC_TRACK: typings.chrome.chrome.cast.media.MetadataType.MUSIC_TRACK with Double = js.native
-  /* 4 */ val PHOTO: typings.chrome.chrome.cast.media.MetadataType.PHOTO with Double = js.native
-  /* 1 */ val TV_SHOW: typings.chrome.chrome.cast.media.MetadataType.TV_SHOW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MetadataType with Double] = js.native
+  /* 0 */ @js.native
+  object GENERIC extends TopLevel[GENERIC with Double]
+  
+  /* 2 */ @js.native
+  object MOVIE extends TopLevel[MOVIE with Double]
+  
+  /* 3 */ @js.native
+  object MUSIC_TRACK extends TopLevel[MUSIC_TRACK with Double]
+  
+  /* 4 */ @js.native
+  object PHOTO extends TopLevel[PHOTO with Double]
+  
+  /* 1 */ @js.native
+  object TV_SHOW extends TopLevel[TV_SHOW with Double]
+  
 }
 

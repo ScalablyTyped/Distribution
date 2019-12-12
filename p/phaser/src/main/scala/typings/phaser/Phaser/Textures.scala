@@ -1,5 +1,6 @@
 package typings.phaser.Phaser
 
+import org.scalablytyped.runtime.TopLevel
 import typings.phaser.EachTextureCallback
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.Events.EventEmitter
@@ -1293,10 +1294,16 @@ object Textures extends js.Object {
     @js.native
     sealed trait NEAREST extends FilterMode
     
-    /* 0 */ val LINEAR: typings.phaser.Phaser.Textures.FilterMode.LINEAR with Double = js.native
-    /* 1 */ val NEAREST: typings.phaser.Phaser.Textures.FilterMode.NEAREST with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[FilterMode with Double] = js.native
+    /* 0 */ @js.native
+    object LINEAR
+      extends TopLevel[typings.phaser.Phaser.Textures.FilterMode.LINEAR with Double]
+    
+    /* 1 */ @js.native
+    object NEAREST
+      extends TopLevel[typings.phaser.Phaser.Textures.FilterMode.NEAREST with Double]
+    
   }
   
 }

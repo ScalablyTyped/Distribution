@@ -1,9 +1,12 @@
 package typings.cassandraDashDriver.libPoliciesMod.policies
 
+import org.scalablytyped.runtime.TopLevel
 import typings.cassandraDashDriver.cassandraDashDriverMod.ExecutionOptions
 import typings.cassandraDashDriver.libPoliciesMod.policies.retry.DecisionInfo
 import typings.cassandraDashDriver.libPoliciesMod.policies.retry.OperationInfo
 import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision
+import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.ignore
+import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.rethrow
 import typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryPolicy
 import typings.cassandraDashDriver.libTypesMod.types.consistencies
 import typings.std.Error
@@ -71,11 +74,20 @@ object retry extends js.Object {
       @js.native
       sealed trait retry extends retryDecision
       
-      /* 0 */ val ignore: typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.ignore with Double = js.native
-      /* 1 */ val rethrow: typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.rethrow with Double = js.native
-      /* 2 */ val retry: typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.retry with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[retryDecision with Double] = js.native
+      /* 0 */ @js.native
+      object ignore extends TopLevel[ignore with Double]
+      
+      /* 1 */ @js.native
+      object rethrow extends TopLevel[rethrow with Double]
+      
+      /* 2 */ @js.native
+      object retry
+        extends TopLevel[
+                  typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryDecision.retryDecision.retry with Double
+                ]
+      
     }
     
   }

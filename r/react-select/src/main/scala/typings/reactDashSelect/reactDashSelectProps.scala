@@ -28,9 +28,26 @@ trait reactDashSelectProps {
   @scala.inline
   def CollapseProps: typings.reactDashSelect.srcAnimatedTransitionsMod.CollapseProps.type = typings.reactDashSelect.srcAnimatedTransitionsMod.CollapseProps
   type CollapseProps = typings.reactDashSelect.srcAnimatedTransitionsMod.CollapseProps
+  type ComponentsControlProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsControlMod.ControlProps[OptionType]
+  type ComponentsGroupProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsGroupMod.GroupProps[OptionType]
+  type ComponentsIndicatorsContainerProps[OptionType /* <: OptionTypeBase */] = IndicatorContainerProps[OptionType]
+  type ComponentsInputProps = typings.reactDashSelect.srcComponentsInputMod.InputProps
+  type ComponentsLoadingMessageProps[OptionType /* <: OptionTypeBase */] = NoticeProps[OptionType]
+  type ComponentsMenuProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsMenuMod.MenuProps[OptionType]
+  type ComponentsMenuListProps[OptionType /* <: OptionTypeBase */] = MenuListComponentProps[OptionType]
+  type ComponentsMenuPortalProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsMenuMod.MenuPortalProps[OptionType]
+  type ComponentsMultiValueProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueProps[OptionType]
+  type ComponentsNoOptionsMessageProps[OptionType /* <: OptionTypeBase */] = NoticeProps[OptionType]
+  type ComponentsOptionProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsOptionMod.OptionProps[OptionType]
+  type ComponentsPlaceholderProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps[OptionType]
+  type ComponentsSelectContainerProps[OptionType /* <: OptionTypeBase */] = ContainerProps[OptionType]
+  type ComponentsSingleValueProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsSingleValueMod.SingleValueProps[OptionType]
+  type ComponentsValueContainerProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsContainersMod.ValueContainerProps[OptionType]
   type ControlProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsControlMod.ControlProps[OptionType]
   type CreatableProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcCreatableMod.Props[OptionType]
   type DropdownIndicatorProps[OptionType /* <: OptionTypeBase */] = IndicatorProps[OptionType]
+  @scala.inline
+  def FadeProps: typings.reactDashSelect.srcAnimatedTransitionsMod.FadeProps.type = typings.reactDashSelect.srcAnimatedTransitionsMod.FadeProps
   type FadeProps = typings.reactDashSelect.srcAnimatedTransitionsMod.FadeProps
   type GroupProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsGroupMod.GroupProps[OptionType]
   type IndicatorSeparatorProps[OptionType /* <: OptionTypeBase */] = IndicatorProps[OptionType]

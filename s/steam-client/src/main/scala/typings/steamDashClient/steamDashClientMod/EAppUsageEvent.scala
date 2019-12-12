@@ -1,5 +1,14 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunch
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchFreeWeekend
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchTrial
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.InGameAdViewed
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.MarketingMessageView
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.Media
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadFinish
+import typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadStart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object EAppUsageEvent extends js.Object {
   @js.native
   sealed trait PreloadStart extends EAppUsageEvent
   
-  /* 1 */ val GameLaunch: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunch with Double = js.native
-  /* 8 */ val GameLaunchFreeWeekend: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchFreeWeekend with Double = js.native
-  /* 2 */ val GameLaunchTrial: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.GameLaunchTrial with Double = js.native
-  /* 7 */ val InGameAdViewed: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.InGameAdViewed with Double = js.native
-  /* 6 */ val MarketingMessageView: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.MarketingMessageView with Double = js.native
-  /* 3 */ val Media: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.Media with Double = js.native
-  /* 5 */ val PreloadFinish: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadFinish with Double = js.native
-  /* 4 */ val PreloadStart: typings.steamDashClient.steamDashClientMod.EAppUsageEvent.PreloadStart with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EAppUsageEvent with Double] = js.native
+  /* 1 */ @js.native
+  object GameLaunch extends TopLevel[GameLaunch with Double]
+  
+  /* 8 */ @js.native
+  object GameLaunchFreeWeekend extends TopLevel[GameLaunchFreeWeekend with Double]
+  
+  /* 2 */ @js.native
+  object GameLaunchTrial extends TopLevel[GameLaunchTrial with Double]
+  
+  /* 7 */ @js.native
+  object InGameAdViewed extends TopLevel[InGameAdViewed with Double]
+  
+  /* 6 */ @js.native
+  object MarketingMessageView extends TopLevel[MarketingMessageView with Double]
+  
+  /* 3 */ @js.native
+  object Media extends TopLevel[Media with Double]
+  
+  /* 5 */ @js.native
+  object PreloadFinish extends TopLevel[PreloadFinish with Double]
+  
+  /* 4 */ @js.native
+  object PreloadStart extends TopLevel[PreloadStart with Double]
+  
 }
 

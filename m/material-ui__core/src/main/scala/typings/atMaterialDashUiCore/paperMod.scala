@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.paperPaperMod.PaperProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object paperMod extends js.Object {
     def this(props: PaperProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[PaperProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[PaperProps]]
+  
 }
 

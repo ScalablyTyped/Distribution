@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.inTransition
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.off
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.on
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object TetheringOperationalState extends js.Object {
   @js.native
   sealed trait unknown extends TetheringOperationalState
   
-  /* 3 */ val inTransition: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.inTransition with Double = js.native
-  /* 2 */ val off: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.off with Double = js.native
-  /* 1 */ val on: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.on with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationalState.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TetheringOperationalState with Double] = js.native
+  /* 3 */ @js.native
+  object inTransition extends TopLevel[inTransition with Double]
+  
+  /* 2 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.constantinople.libBinaryOperationMod
 
+import typings.constantinople.constantinopleStrings.`-`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +46,9 @@ object Operator {
   def `**`: typings.constantinople.constantinopleStrings.`**` = this.cast("**")
   @scala.inline
   def `+`: typings.constantinople.constantinopleStrings.`+` = this.cast("+")
+  @JSName("-")
   @scala.inline
-  def `-`: typings.constantinople.constantinopleStrings.`-` = this.cast("-")
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   def `/`: typings.constantinople.constantinopleStrings.`/` = this.cast("/")
   @scala.inline

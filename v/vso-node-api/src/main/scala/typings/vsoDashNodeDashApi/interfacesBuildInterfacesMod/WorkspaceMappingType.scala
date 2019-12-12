@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Cloak
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object WorkspaceMappingType extends js.Object {
   @js.native
   sealed trait Map extends WorkspaceMappingType
   
-  /* 1 */ val Cloak: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Cloak with Double = js.native
-  /* 0 */ val Map: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.WorkspaceMappingType.Map with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WorkspaceMappingType with Double] = js.native
+  /* 1 */ @js.native
+  object Cloak extends TopLevel[Cloak with Double]
+  
+  /* 0 */ @js.native
+  object Map extends TopLevel[Map with Double]
+  
 }
 

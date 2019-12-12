@@ -1,12 +1,20 @@
 package typings.winrtDashUwp.Windows.UI
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtDashUwp.Windows.Foundation.Point
 import typings.winrtDashUwp.Windows.Foundation.Rect
 import typings.winrtDashUwp.Windows.UI.Popups.IUICommand
 import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions
+import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay
+import typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.none
 import typings.winrtDashUwp.Windows.UI.Popups.Placement
+import typings.winrtDashUwp.Windows.UI.Popups.Placement.above
+import typings.winrtDashUwp.Windows.UI.Popups.Placement.below
+import typings.winrtDashUwp.Windows.UI.Popups.Placement.default
+import typings.winrtDashUwp.Windows.UI.Popups.Placement.left
+import typings.winrtDashUwp.Windows.UI.Popups.Placement.right
 import typings.winrtDashUwp.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -155,10 +163,14 @@ object Popups extends js.Object {
     @js.native
     sealed trait none extends MessageDialogOptions
     
-    /* 1 */ val acceptUserInputAfterDelay: typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay with Double = js.native
-    /* 0 */ val none: typings.winrtDashUwp.Windows.UI.Popups.MessageDialogOptions.none with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MessageDialogOptions with Double] = js.native
+    /* 1 */ @js.native
+    object acceptUserInputAfterDelay extends TopLevel[acceptUserInputAfterDelay with Double]
+    
+    /* 0 */ @js.native
+    object none extends TopLevel[none with Double]
+    
   }
   
   /** Specifies where the context menu should be positioned relative to the selection rectangle. */
@@ -184,13 +196,23 @@ object Popups extends js.Object {
     @js.native
     sealed trait right extends Placement
     
-    /* 1 */ val above: typings.winrtDashUwp.Windows.UI.Popups.Placement.above with Double = js.native
-    /* 2 */ val below: typings.winrtDashUwp.Windows.UI.Popups.Placement.below with Double = js.native
-    /* 0 */ val default: typings.winrtDashUwp.Windows.UI.Popups.Placement.default with Double = js.native
-    /* 3 */ val left: typings.winrtDashUwp.Windows.UI.Popups.Placement.left with Double = js.native
-    /* 4 */ val right: typings.winrtDashUwp.Windows.UI.Popups.Placement.right with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Placement with Double] = js.native
+    /* 1 */ @js.native
+    object above extends TopLevel[above with Double]
+    
+    /* 2 */ @js.native
+    object below extends TopLevel[below with Double]
+    
+    /* 0 */ @js.native
+    object default extends TopLevel[default with Double]
+    
+    /* 3 */ @js.native
+    object left extends TopLevel[left with Double]
+    
+    /* 4 */ @js.native
+    object right extends TopLevel[right with Double]
+    
   }
   
   /** Represents a callback function that handles the event that is fired when the user invokes a context menu command. */

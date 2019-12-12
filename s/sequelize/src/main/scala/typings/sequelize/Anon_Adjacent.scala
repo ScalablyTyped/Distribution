@@ -5,123 +5,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Adjacent
   extends /* key */ StringDictionary[js.Symbol] {
   @JSName("$adjacent")
-  var $adjacent: js.Symbol
+  var $adjacent: js.Symbol = js.native
   @JSName("$all")
-  var $all: js.Symbol
+  var $all: js.Symbol = js.native
   @JSName("$and")
-  var $and: js.Symbol
+  var $and: js.Symbol = js.native
   @JSName("$any")
-  var $any: js.Symbol
+  var $any: js.Symbol = js.native
   @JSName("$between")
-  var $between: js.Symbol
+  var $between: js.Symbol = js.native
   @JSName("$col")
-  var $col: js.Symbol
+  var $col: js.Symbol = js.native
   @JSName("$contained")
-  var $contained: js.Symbol
+  var $contained: js.Symbol = js.native
   @JSName("$contains")
-  var $contains: js.Symbol
+  var $contains: js.Symbol = js.native
   @JSName("$eq")
-  var $eq: js.Symbol
+  var $eq: js.Symbol = js.native
   @JSName("$gt")
-  var $gt: js.Symbol
+  var $gt: js.Symbol = js.native
   @JSName("$gte")
-  var $gte: js.Symbol
+  var $gte: js.Symbol = js.native
   @JSName("$iLike")
-  var $iLike: js.Symbol
+  var $iLike: js.Symbol = js.native
   @JSName("$iRegexp")
-  var $iRegexp: js.Symbol
+  var $iRegexp: js.Symbol = js.native
   @JSName("$in")
-  var $in: js.Symbol
+  var $in: js.Symbol = js.native
   @JSName("$is")
-  var $is: js.Symbol
+  var $is: js.Symbol = js.native
   @JSName("$like")
-  var $like: js.Symbol
+  var $like: js.Symbol = js.native
   @JSName("$lt")
-  var $lt: js.Symbol
+  var $lt: js.Symbol = js.native
   @JSName("$lte")
-  var $lte: js.Symbol
+  var $lte: js.Symbol = js.native
   @JSName("$ne")
-  var $ne: js.Symbol
+  var $ne: js.Symbol = js.native
   @JSName("$noExtendLeft")
-  var $noExtendLeft: js.Symbol
+  var $noExtendLeft: js.Symbol = js.native
   @JSName("$noExtendRight")
-  var $noExtendRight: js.Symbol
+  var $noExtendRight: js.Symbol = js.native
   @JSName("$not")
-  var $not: js.Symbol
+  var $not: js.Symbol = js.native
   @JSName("$notBetween")
-  var $notBetween: js.Symbol
+  var $notBetween: js.Symbol = js.native
   @JSName("$notILike")
-  var $notILike: js.Symbol
+  var $notILike: js.Symbol = js.native
   @JSName("$notIRegexp")
-  var $notIRegexp: js.Symbol
+  var $notIRegexp: js.Symbol = js.native
   @JSName("$notIn")
-  var $notIn: js.Symbol
+  var $notIn: js.Symbol = js.native
   @JSName("$notLike")
-  var $notLike: js.Symbol
+  var $notLike: js.Symbol = js.native
   @JSName("$notRegexp")
-  var $notRegexp: js.Symbol
+  var $notRegexp: js.Symbol = js.native
   @JSName("$or")
-  var $or: js.Symbol
+  var $or: js.Symbol = js.native
   @JSName("$overlap")
-  var $overlap: js.Symbol
+  var $overlap: js.Symbol = js.native
   @JSName("$raw")
-  var $raw: js.Symbol
+  var $raw: js.Symbol = js.native
   @JSName("$regexp")
-  var $regexp: js.Symbol
+  var $regexp: js.Symbol = js.native
   @JSName("$strictLeft")
-  var $strictLeft: js.Symbol
+  var $strictLeft: js.Symbol = js.native
   @JSName("$strictRight")
-  var $strictRight: js.Symbol
+  var $strictRight: js.Symbol = js.native
   @JSName("$values")
-  var $values: js.Symbol
-}
-
-object Anon_Adjacent {
-  @scala.inline
-  def apply(
-    $adjacent: js.Symbol,
-    $all: js.Symbol,
-    $and: js.Symbol,
-    $any: js.Symbol,
-    $between: js.Symbol,
-    $col: js.Symbol,
-    $contained: js.Symbol,
-    $contains: js.Symbol,
-    $eq: js.Symbol,
-    $gt: js.Symbol,
-    $gte: js.Symbol,
-    $iLike: js.Symbol,
-    $iRegexp: js.Symbol,
-    $in: js.Symbol,
-    $is: js.Symbol,
-    $like: js.Symbol,
-    $lt: js.Symbol,
-    $lte: js.Symbol,
-    $ne: js.Symbol,
-    $noExtendLeft: js.Symbol,
-    $noExtendRight: js.Symbol,
-    $not: js.Symbol,
-    $notBetween: js.Symbol,
-    $notILike: js.Symbol,
-    $notIRegexp: js.Symbol,
-    $notIn: js.Symbol,
-    $notLike: js.Symbol,
-    $notRegexp: js.Symbol,
-    $or: js.Symbol,
-    $overlap: js.Symbol,
-    $raw: js.Symbol,
-    $regexp: js.Symbol,
-    $strictLeft: js.Symbol,
-    $strictRight: js.Symbol,
-    $values: js.Symbol,
-    StringDictionary: /* key */ StringDictionary[js.Symbol] = null
-  ): Anon_Adjacent = {
-    val __obj = js.Dynamic.literal($adjacent = $adjacent.asInstanceOf[js.Any], $all = $all.asInstanceOf[js.Any], $and = $and.asInstanceOf[js.Any], $any = $any.asInstanceOf[js.Any], $between = $between.asInstanceOf[js.Any], $col = $col.asInstanceOf[js.Any], $contained = $contained.asInstanceOf[js.Any], $contains = $contains.asInstanceOf[js.Any], $eq = $eq.asInstanceOf[js.Any], $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $iRegexp = $iRegexp.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $is = $is.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $noExtendLeft = $noExtendLeft.asInstanceOf[js.Any], $noExtendRight = $noExtendRight.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween.asInstanceOf[js.Any], $notILike = $notILike.asInstanceOf[js.Any], $notIRegexp = $notIRegexp.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $notRegexp = $notRegexp.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any], $overlap = $overlap.asInstanceOf[js.Any], $raw = $raw.asInstanceOf[js.Any], $regexp = $regexp.asInstanceOf[js.Any], $strictLeft = $strictLeft.asInstanceOf[js.Any], $strictRight = $strictRight.asInstanceOf[js.Any], $values = $values.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[Anon_Adjacent]
-  }
+  var $values: js.Symbol = js.native
 }
 

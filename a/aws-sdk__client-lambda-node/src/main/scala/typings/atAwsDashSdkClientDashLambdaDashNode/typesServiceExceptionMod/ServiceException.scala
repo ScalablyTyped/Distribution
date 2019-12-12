@@ -30,11 +30,11 @@ import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateAliasExceptionsUn
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateEventSourceMappingExceptionsUnionMod.UpdateEventSourceMappingExceptionsUnion
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateFunctionCodeExceptionsUnionMod.UpdateFunctionCodeExceptionsUnion
 import typings.atAwsDashSdkClientDashLambdaDashNode.typesUpdateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceException
   extends typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException[_ServiceExceptionDetails]
      with AddPermissionExceptionsUnion
@@ -67,19 +67,4 @@ trait ServiceException
      with UpdateEventSourceMappingExceptionsUnion
      with UpdateFunctionCodeExceptionsUnion
      with UpdateFunctionConfigurationExceptionsUnion
-
-object ServiceException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ServiceExceptionDetails,
-    message: String,
-    name: String,
-    stack: String = null
-  ): ServiceException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ServiceException]
-  }
-}
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.horizontal
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.none
+import typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MediaMirroringOptions extends js.Object {
   @js.native
   sealed trait vertical extends MediaMirroringOptions
   
-  /* 1 */ val horizontal: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.horizontal with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.none with Double = js.native
-  /* 2 */ val vertical: typings.winrtDashUwp.Windows.Media.MediaProperties.MediaMirroringOptions.vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaMirroringOptions with Double] = js.native
+  /* 1 */ @js.native
+  object horizontal extends TopLevel[horizontal with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object vertical extends TopLevel[vertical with Double]
+  
 }
 

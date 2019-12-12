@@ -1,6 +1,10 @@
 package typings.wonderDashFrp
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType
+import typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.COMPLETED
+import typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.ERROR
+import typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.NEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +26,17 @@ object distEs2015TestingActionTypeMod extends js.Object {
     @js.native
     sealed trait NEXT extends ActionType
     
-    /* 2 */ val COMPLETED: typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.COMPLETED with Double = js.native
-    /* 1 */ val ERROR: typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.ERROR with Double = js.native
-    /* 0 */ val NEXT: typings.wonderDashFrp.distEs2015TestingActionTypeMod.ActionType.NEXT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ActionType with Double] = js.native
+    /* 2 */ @js.native
+    object COMPLETED extends TopLevel[COMPLETED with Double]
+    
+    /* 1 */ @js.native
+    object ERROR extends TopLevel[ERROR with Double]
+    
+    /* 0 */ @js.native
+    object NEXT extends TopLevel[NEXT with Double]
+    
   }
   
 }

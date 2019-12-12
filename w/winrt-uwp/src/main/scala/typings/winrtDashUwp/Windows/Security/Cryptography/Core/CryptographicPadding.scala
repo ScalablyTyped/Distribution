@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.none
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaOaep
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPkcs1V15
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPss
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object CryptographicPadding extends js.Object {
   @js.native
   sealed trait rsaPss extends CryptographicPadding
   
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.none with Double = js.native
-  /* 1 */ val rsaOaep: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaOaep with Double = js.native
-  /* 2 */ val rsaPkcs1V15: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPkcs1V15 with Double = js.native
-  /* 3 */ val rsaPss: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPadding.rsaPss with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptographicPadding with Double] = js.native
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object rsaOaep extends TopLevel[rsaOaep with Double]
+  
+  /* 2 */ @js.native
+  object rsaPkcs1V15 extends TopLevel[rsaPkcs1V15 with Double]
+  
+  /* 3 */ @js.native
+  object rsaPss extends TopLevel[rsaPss with Double]
+  
 }
 

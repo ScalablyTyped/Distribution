@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.authenticated
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.extended
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.unauthenticated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MagneticStripeReaderStatus extends js.Object {
   @js.native
   sealed trait unauthenticated extends MagneticStripeReaderStatus
   
-  /* 1 */ val authenticated: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.authenticated with Double = js.native
-  /* 2 */ val extended: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.extended with Double = js.native
-  /* 0 */ val unauthenticated: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderStatus.unauthenticated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MagneticStripeReaderStatus with Double] = js.native
+  /* 1 */ @js.native
+  object authenticated extends TopLevel[authenticated with Double]
+  
+  /* 2 */ @js.native
+  object extended extends TopLevel[extended with Double]
+  
+  /* 0 */ @js.native
+  object unauthenticated extends TopLevel[unauthenticated with Double]
+  
 }
 

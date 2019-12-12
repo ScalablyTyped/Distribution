@@ -1,5 +1,8 @@
 package typings.baseui.layoutDashGridMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.baseui.layoutDashGridMod.BEHAVIOR.fixed
+import typings.baseui.layoutDashGridMod.BEHAVIOR.fluid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object BEHAVIOR extends js.Object {
   @js.native
   sealed trait fluid extends BEHAVIOR
   
-  /* "fixed" */ val fixed: typings.baseui.layoutDashGridMod.BEHAVIOR.fixed with String = js.native
-  /* "fluid" */ val fluid: typings.baseui.layoutDashGridMod.BEHAVIOR.fluid with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BEHAVIOR with String] = js.native
+  /* "fixed" */ @js.native
+  object fixed extends TopLevel[fixed with String]
+  
+  /* "fluid" */ @js.native
+  object fluid extends TopLevel[fluid with String]
+  
 }
 

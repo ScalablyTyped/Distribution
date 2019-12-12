@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_256
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +24,15 @@ object RsaAlgorithm extends js.Object {
   sealed trait RSA_SHA_256
     extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm
   
-  /* 0 */ val RSA_SHA_1: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_1 with Double = js.native
-  /* 1 */ val RSA_SHA_256: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm.RSA_SHA_256 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
     typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.RsaAlgorithm with Double
   ] = js.native
+  /* 0 */ @js.native
+  object RSA_SHA_1 extends TopLevel[RSA_SHA_1 with Double]
+  
+  /* 1 */ @js.native
+  object RSA_SHA_256 extends TopLevel[RSA_SHA_256 with Double]
+  
 }
 

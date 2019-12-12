@@ -1,5 +1,10 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Base64
+import typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Eml
+import typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.ICalendar
+import typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,11 +48,19 @@ object AttachmentContentFormat extends js.Object {
   @js.native
   sealed trait Url extends AttachmentContentFormat
   
-  /* "base64" */ val Base64: typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Base64 with String = js.native
-  /* "eml" */ val Eml: typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Eml with String = js.native
-  /* "iCalendar" */ val ICalendar: typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.ICalendar with String = js.native
-  /* "url" */ val Url: typings.officeDashJs.Office.MailboxEnums.AttachmentContentFormat.Url with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AttachmentContentFormat with String] = js.native
+  /* "base64" */ @js.native
+  object Base64 extends TopLevel[Base64 with String]
+  
+  /* "eml" */ @js.native
+  object Eml extends TopLevel[Eml with String]
+  
+  /* "iCalendar" */ @js.native
+  object ICalendar extends TopLevel[ICalendar with String]
+  
+  /* "url" */ @js.native
+  object Url extends TopLevel[Url with String]
+  
 }
 

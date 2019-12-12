@@ -1,5 +1,10 @@
 package typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_OPTIONAL
+import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REPEATED
+import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REQUIRED
+import typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Cardinality extends js.Object {
   @js.native
   sealed trait CARDINALITY_UNKNOWN extends Cardinality
   
-  /* 1 */ val CARDINALITY_OPTIONAL: typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_OPTIONAL with Double = js.native
-  /* 3 */ val CARDINALITY_REPEATED: typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REPEATED with Double = js.native
-  /* 2 */ val CARDINALITY_REQUIRED: typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_REQUIRED with Double = js.native
-  /* 0 */ val CARDINALITY_UNKNOWN: typings.googleDashProtobuf.googleProtobufTypeUnderscorePbMod.Field.Cardinality.CARDINALITY_UNKNOWN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Cardinality with Double] = js.native
+  /* 1 */ @js.native
+  object CARDINALITY_OPTIONAL extends TopLevel[CARDINALITY_OPTIONAL with Double]
+  
+  /* 3 */ @js.native
+  object CARDINALITY_REPEATED extends TopLevel[CARDINALITY_REPEATED with Double]
+  
+  /* 2 */ @js.native
+  object CARDINALITY_REQUIRED extends TopLevel[CARDINALITY_REQUIRED with Double]
+  
+  /* 0 */ @js.native
+  object CARDINALITY_UNKNOWN extends TopLevel[CARDINALITY_UNKNOWN with Double]
+  
 }
 

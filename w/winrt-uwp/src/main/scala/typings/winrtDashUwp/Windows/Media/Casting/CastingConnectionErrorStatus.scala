@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Media.Casting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceDidNotRespond
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceError
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceLocked
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.invalidCastingSource
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.protectedPlaybackFailed
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.succeeded
+import typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object CastingConnectionErrorStatus extends js.Object {
   @js.native
   sealed trait unknown extends CastingConnectionErrorStatus
   
-  /* 1 */ val deviceDidNotRespond: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceDidNotRespond with Double = js.native
-  /* 2 */ val deviceError: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceError with Double = js.native
-  /* 3 */ val deviceLocked: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.deviceLocked with Double = js.native
-  /* 5 */ val invalidCastingSource: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.invalidCastingSource with Double = js.native
-  /* 4 */ val protectedPlaybackFailed: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.protectedPlaybackFailed with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.succeeded with Double = js.native
-  /* 6 */ val unknown: typings.winrtDashUwp.Windows.Media.Casting.CastingConnectionErrorStatus.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CastingConnectionErrorStatus with Double] = js.native
+  /* 1 */ @js.native
+  object deviceDidNotRespond extends TopLevel[deviceDidNotRespond with Double]
+  
+  /* 2 */ @js.native
+  object deviceError extends TopLevel[deviceError with Double]
+  
+  /* 3 */ @js.native
+  object deviceLocked extends TopLevel[deviceLocked with Double]
+  
+  /* 5 */ @js.native
+  object invalidCastingSource extends TopLevel[invalidCastingSource with Double]
+  
+  /* 4 */ @js.native
+  object protectedPlaybackFailed extends TopLevel[protectedPlaybackFailed with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
+  /* 6 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

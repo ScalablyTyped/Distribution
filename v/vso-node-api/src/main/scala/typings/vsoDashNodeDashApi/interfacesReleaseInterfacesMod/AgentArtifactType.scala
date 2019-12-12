@@ -1,5 +1,17 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Build
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Custom
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.ExternalTfsBuild
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.FileShare
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.GitHub
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Jenkins
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Nuget
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.TFGit
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.TfsOnPrem
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Tfvc
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.XamlBuild
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object AgentArtifactType extends js.Object {
   @js.native
   sealed trait XamlBuild extends AgentArtifactType
   
-  /* 1 */ val Build: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Build with Double = js.native
-  /* 9 */ val Custom: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Custom with Double = js.native
-  /* 8 */ val ExternalTfsBuild: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.ExternalTfsBuild with Double = js.native
-  /* 3 */ val FileShare: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.FileShare with Double = js.native
-  /* 6 */ val GitHub: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.GitHub with Double = js.native
-  /* 2 */ val Jenkins: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Jenkins with Double = js.native
-  /* 4 */ val Nuget: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Nuget with Double = js.native
-  /* 7 */ val TFGit: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.TFGit with Double = js.native
-  /* 5 */ val TfsOnPrem: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.TfsOnPrem with Double = js.native
-  /* 10 */ val Tfvc: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.Tfvc with Double = js.native
-  /* 0 */ val XamlBuild: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.AgentArtifactType.XamlBuild with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AgentArtifactType with Double] = js.native
+  /* 1 */ @js.native
+  object Build extends TopLevel[Build with Double]
+  
+  /* 9 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 8 */ @js.native
+  object ExternalTfsBuild extends TopLevel[ExternalTfsBuild with Double]
+  
+  /* 3 */ @js.native
+  object FileShare extends TopLevel[FileShare with Double]
+  
+  /* 6 */ @js.native
+  object GitHub extends TopLevel[GitHub with Double]
+  
+  /* 2 */ @js.native
+  object Jenkins extends TopLevel[Jenkins with Double]
+  
+  /* 4 */ @js.native
+  object Nuget extends TopLevel[Nuget with Double]
+  
+  /* 7 */ @js.native
+  object TFGit extends TopLevel[TFGit with Double]
+  
+  /* 5 */ @js.native
+  object TfsOnPrem extends TopLevel[TfsOnPrem with Double]
+  
+  /* 10 */ @js.native
+  object Tfvc extends TopLevel[Tfvc with Double]
+  
+  /* 0 */ @js.native
+  object XamlBuild extends TopLevel[XamlBuild with Double]
+  
 }
 

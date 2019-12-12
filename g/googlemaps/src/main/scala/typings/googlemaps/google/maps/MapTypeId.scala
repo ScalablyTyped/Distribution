@@ -1,5 +1,10 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.MapTypeId.HYBRID
+import typings.googlemaps.google.maps.MapTypeId.ROADMAP
+import typings.googlemaps.google.maps.MapTypeId.SATELLITE
+import typings.googlemaps.google.maps.MapTypeId.TERRAIN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,11 +36,19 @@ object MapTypeId extends js.Object {
   @js.native
   sealed trait TERRAIN extends MapTypeId
   
-  /* "hybrid" */ val HYBRID: typings.googlemaps.google.maps.MapTypeId.HYBRID with String = js.native
-  /* "roadmap" */ val ROADMAP: typings.googlemaps.google.maps.MapTypeId.ROADMAP with String = js.native
-  /* "satellite" */ val SATELLITE: typings.googlemaps.google.maps.MapTypeId.SATELLITE with String = js.native
-  /* "terrain" */ val TERRAIN: typings.googlemaps.google.maps.MapTypeId.TERRAIN with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[MapTypeId with String] = js.native
+  /* "hybrid" */ @js.native
+  object HYBRID extends TopLevel[HYBRID with String]
+  
+  /* "roadmap" */ @js.native
+  object ROADMAP extends TopLevel[ROADMAP with String]
+  
+  /* "satellite" */ @js.native
+  object SATELLITE extends TopLevel[SATELLITE with String]
+  
+  /* "terrain" */ @js.native
+  object TERRAIN extends TopLevel[TERRAIN with String]
+  
 }
 

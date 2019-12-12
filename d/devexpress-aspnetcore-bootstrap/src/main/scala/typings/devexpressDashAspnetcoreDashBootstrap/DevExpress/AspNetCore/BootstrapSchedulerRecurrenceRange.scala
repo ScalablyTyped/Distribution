@@ -1,5 +1,9 @@
 package typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.EndByDate
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.NoEndDate
+import typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.OccurrenceCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object BootstrapSchedulerRecurrenceRange extends js.Object {
   @js.native
   sealed trait OccurrenceCount extends BootstrapSchedulerRecurrenceRange
   
-  /* "EndByDate" */ val EndByDate: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.EndByDate with String = js.native
-  /* "NoEndDate" */ val NoEndDate: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.NoEndDate with String = js.native
-  /* "OccurrenceCount" */ val OccurrenceCount: typings.devexpressDashAspnetcoreDashBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceRange.OccurrenceCount with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BootstrapSchedulerRecurrenceRange with String] = js.native
+  /* "EndByDate" */ @js.native
+  object EndByDate extends TopLevel[EndByDate with String]
+  
+  /* "NoEndDate" */ @js.native
+  object NoEndDate extends TopLevel[NoEndDate with String]
+  
+  /* "OccurrenceCount" */ @js.native
+  object OccurrenceCount extends TopLevel[OccurrenceCount with String]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.fabFabMod.FabProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object fabMod extends js.Object {
     def this(props: FabProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[FabProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[FabProps]]
+  
 }
 

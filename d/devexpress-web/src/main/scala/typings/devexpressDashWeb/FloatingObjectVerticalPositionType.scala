@@ -1,5 +1,13 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.BottomMargin
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.InsideMargin
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Line
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Margin
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.OutsideMargin
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Page
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionType.TopMargin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,15 +69,34 @@ object FloatingObjectVerticalPositionType extends js.Object {
   @js.native
   sealed trait TopMargin extends FloatingObjectVerticalPositionType
   
-  /* 5 */ val BottomMargin: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.BottomMargin with Double = js.native
-  /* 6 */ val InsideMargin: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.InsideMargin with Double = js.native
-  /* 1 */ val Line: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Line with Double = js.native
-  /* 3 */ val Margin: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Margin with Double = js.native
-  /* 7 */ val OutsideMargin: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.OutsideMargin with Double = js.native
-  /* 0 */ val Page: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Page with Double = js.native
-  /* 2 */ val Paragraph: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Paragraph with Double = js.native
-  /* 4 */ val TopMargin: typings.devexpressDashWeb.FloatingObjectVerticalPositionType.TopMargin with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FloatingObjectVerticalPositionType with Double] = js.native
+  /* 5 */ @js.native
+  object BottomMargin extends TopLevel[BottomMargin with Double]
+  
+  /* 6 */ @js.native
+  object InsideMargin extends TopLevel[InsideMargin with Double]
+  
+  /* 1 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
+  /* 3 */ @js.native
+  object Margin extends TopLevel[Margin with Double]
+  
+  /* 7 */ @js.native
+  object OutsideMargin extends TopLevel[OutsideMargin with Double]
+  
+  /* 0 */ @js.native
+  object Page extends TopLevel[Page with Double]
+  
+  /* 2 */ @js.native
+  object Paragraph
+    extends TopLevel[
+          typings.devexpressDashWeb.FloatingObjectVerticalPositionType.Paragraph with Double
+        ]
+  
+  /* 4 */ @js.native
+  object TopMargin extends TopLevel[TopMargin with Double]
+  
 }
 

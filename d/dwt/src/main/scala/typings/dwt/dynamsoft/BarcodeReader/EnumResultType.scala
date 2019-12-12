@@ -1,5 +1,10 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_CandidateText
+import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_PartialText
+import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_RawText
+import typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_StandardText
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object EnumResultType extends js.Object {
   @js.native
   sealed trait EDT_StandardText extends EnumResultType
   
-  /* 2 */ val EDT_CandidateText: typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_CandidateText with Double = js.native
-  /* 3 */ val EDT_PartialText: typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_PartialText with Double = js.native
-  /* 1 */ val EDT_RawText: typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_RawText with Double = js.native
-  /* 0 */ val EDT_StandardText: typings.dwt.dynamsoft.BarcodeReader.EnumResultType.EDT_StandardText with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumResultType with Double] = js.native
+  /* 2 */ @js.native
+  object EDT_CandidateText extends TopLevel[EDT_CandidateText with Double]
+  
+  /* 3 */ @js.native
+  object EDT_PartialText extends TopLevel[EDT_PartialText with Double]
+  
+  /* 1 */ @js.native
+  object EDT_RawText extends TopLevel[EDT_RawText with Double]
+  
+  /* 0 */ @js.native
+  object EDT_StandardText extends TopLevel[EDT_StandardText with Double]
+  
 }
 

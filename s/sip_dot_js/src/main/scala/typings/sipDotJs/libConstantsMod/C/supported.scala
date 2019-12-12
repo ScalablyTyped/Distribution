@@ -1,5 +1,9 @@
 package typings.sipDotJs.libConstantsMod.C
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sipDotJs.libConstantsMod.C.supported.REQUIRED
+import typings.sipDotJs.libConstantsMod.C.supported.SUPPORTED
+import typings.sipDotJs.libConstantsMod.C.supported.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object supported extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends supported
   
-  /* "required" */ val REQUIRED: typings.sipDotJs.libConstantsMod.C.supported.REQUIRED with String = js.native
-  /* "supported" */ val SUPPORTED: typings.sipDotJs.libConstantsMod.C.supported.SUPPORTED with String = js.native
-  /* "none" */ val UNSUPPORTED: typings.sipDotJs.libConstantsMod.C.supported.UNSUPPORTED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[supported with String] = js.native
+  /* "required" */ @js.native
+  object REQUIRED extends TopLevel[REQUIRED with String]
+  
+  /* "supported" */ @js.native
+  object SUPPORTED extends TopLevel[SUPPORTED with String]
+  
+  /* "none" */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with String]
+  
 }
 

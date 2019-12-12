@@ -11,9 +11,10 @@ import scala.scalajs.js.annotation._
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
+@js.native
 trait CustomXmlPartCollectionLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
@@ -21,7 +22,7 @@ trait CustomXmlPartCollectionLoadOptions extends js.Object {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
@@ -29,21 +30,6 @@ trait CustomXmlPartCollectionLoadOptions extends js.Object {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var namespaceUri: js.UndefOr[Boolean] = js.undefined
-}
-
-object CustomXmlPartCollectionLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    id: js.UndefOr[Boolean] = js.undefined,
-    namespaceUri: js.UndefOr[Boolean] = js.undefined
-  ): CustomXmlPartCollectionLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(namespaceUri)) __obj.updateDynamic("namespaceUri")(namespaceUri.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomXmlPartCollectionLoadOptions]
-  }
+  var namespaceUri: js.UndefOr[Boolean] = js.native
 }
 

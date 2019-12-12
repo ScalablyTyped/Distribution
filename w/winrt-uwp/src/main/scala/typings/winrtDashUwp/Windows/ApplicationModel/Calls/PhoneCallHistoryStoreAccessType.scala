@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesLimitedReadWrite
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesReadWrite
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.appEntriesReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PhoneCallHistoryStoreAccessType extends js.Object {
   @js.native
   sealed trait appEntriesReadWrite extends PhoneCallHistoryStoreAccessType
   
-  /* 1 */ val allEntriesLimitedReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesLimitedReadWrite with Double = js.native
-  /* 2 */ val allEntriesReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.allEntriesReadWrite with Double = js.native
-  /* 0 */ val appEntriesReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryStoreAccessType.appEntriesReadWrite with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhoneCallHistoryStoreAccessType with Double] = js.native
+  /* 1 */ @js.native
+  object allEntriesLimitedReadWrite extends TopLevel[allEntriesLimitedReadWrite with Double]
+  
+  /* 2 */ @js.native
+  object allEntriesReadWrite extends TopLevel[allEntriesReadWrite with Double]
+  
+  /* 0 */ @js.native
+  object appEntriesReadWrite extends TopLevel[appEntriesReadWrite with Double]
+  
 }
 

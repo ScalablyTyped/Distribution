@@ -1,5 +1,13 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Active
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Dedicated
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Linux
+import typings.steamDashClient.steamDashClientMod.EServerFlags.None
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Passworded
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Private
+import typings.steamDashClient.steamDashClientMod.EServerFlags.Secure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object EServerFlags extends js.Object {
   @js.native
   sealed trait Secure extends EServerFlags
   
-  /* 1 */ val Active: typings.steamDashClient.steamDashClientMod.EServerFlags.Active with Double = js.native
-  /* 4 */ val Dedicated: typings.steamDashClient.steamDashClientMod.EServerFlags.Dedicated with Double = js.native
-  /* 8 */ val Linux: typings.steamDashClient.steamDashClientMod.EServerFlags.Linux with Double = js.native
-  /* 0 */ val None: typings.steamDashClient.steamDashClientMod.EServerFlags.None with Double = js.native
-  /* 16 */ val Passworded: typings.steamDashClient.steamDashClientMod.EServerFlags.Passworded with Double = js.native
-  /* 32 */ val Private: typings.steamDashClient.steamDashClientMod.EServerFlags.Private with Double = js.native
-  /* 2 */ val Secure: typings.steamDashClient.steamDashClientMod.EServerFlags.Secure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EServerFlags with Double] = js.native
+  /* 1 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 4 */ @js.native
+  object Dedicated extends TopLevel[Dedicated with Double]
+  
+  /* 8 */ @js.native
+  object Linux extends TopLevel[Linux with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 16 */ @js.native
+  object Passworded extends TopLevel[Passworded with Double]
+  
+  /* 32 */ @js.native
+  object Private extends TopLevel[Private with Double]
+  
+  /* 2 */ @js.native
+  object Secure extends TopLevel[Secure with Double]
+  
 }
 

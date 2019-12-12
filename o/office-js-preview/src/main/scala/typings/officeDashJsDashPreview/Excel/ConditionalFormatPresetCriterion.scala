@@ -1,5 +1,33 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.aboveAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.belowAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.blanks
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.duplicateValues
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.errors
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.invalid
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastMonth
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastSevenDays
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastWeek
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nextMonth
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nextWeek
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nonBlanks
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nonErrors
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.thisMonth
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.thisWeek
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.today
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.tomorrow
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.uniqueValues
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.yesterday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,34 +125,88 @@ object ConditionalFormatPresetCriterion extends js.Object {
   @js.native
   sealed trait yesterday extends ConditionalFormatPresetCriterion
   
-  /* "AboveAverage" */ val aboveAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.aboveAverage with String = js.native
-  /* "BelowAverage" */ val belowAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.belowAverage with String = js.native
-  /* "Blanks" */ val blanks: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.blanks with String = js.native
-  /* "DuplicateValues" */ val duplicateValues: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.duplicateValues with String = js.native
-  /* "EqualOrAboveAverage" */ val equalOrAboveAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage with String = js.native
-  /* "EqualOrBelowAverage" */ val equalOrBelowAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage with String = js.native
-  /* "Errors" */ val errors: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.errors with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.invalid with String = js.native
-  /* "LastMonth" */ val lastMonth: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastMonth with String = js.native
-  /* "LastSevenDays" */ val lastSevenDays: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastSevenDays with String = js.native
-  /* "LastWeek" */ val lastWeek: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.lastWeek with String = js.native
-  /* "NextMonth" */ val nextMonth: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nextMonth with String = js.native
-  /* "NextWeek" */ val nextWeek: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nextWeek with String = js.native
-  /* "NonBlanks" */ val nonBlanks: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nonBlanks with String = js.native
-  /* "NonErrors" */ val nonErrors: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.nonErrors with String = js.native
-  /* "OneStdDevAboveAverage" */ val oneStdDevAboveAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage with String = js.native
-  /* "OneStdDevBelowAverage" */ val oneStdDevBelowAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage with String = js.native
-  /* "ThisMonth" */ val thisMonth: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.thisMonth with String = js.native
-  /* "ThisWeek" */ val thisWeek: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.thisWeek with String = js.native
-  /* "ThreeStdDevAboveAverage" */ val threeStdDevAboveAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage with String = js.native
-  /* "ThreeStdDevBelowAverage" */ val threeStdDevBelowAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage with String = js.native
-  /* "Today" */ val today: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.today with String = js.native
-  /* "Tomorrow" */ val tomorrow: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.tomorrow with String = js.native
-  /* "TwoStdDevAboveAverage" */ val twoStdDevAboveAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage with String = js.native
-  /* "TwoStdDevBelowAverage" */ val twoStdDevBelowAverage: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage with String = js.native
-  /* "UniqueValues" */ val uniqueValues: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.uniqueValues with String = js.native
-  /* "Yesterday" */ val yesterday: typings.officeDashJsDashPreview.Excel.ConditionalFormatPresetCriterion.yesterday with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalFormatPresetCriterion with String] = js.native
+  /* "AboveAverage" */ @js.native
+  object aboveAverage extends TopLevel[aboveAverage with String]
+  
+  /* "BelowAverage" */ @js.native
+  object belowAverage extends TopLevel[belowAverage with String]
+  
+  /* "Blanks" */ @js.native
+  object blanks extends TopLevel[blanks with String]
+  
+  /* "DuplicateValues" */ @js.native
+  object duplicateValues extends TopLevel[duplicateValues with String]
+  
+  /* "EqualOrAboveAverage" */ @js.native
+  object equalOrAboveAverage extends TopLevel[equalOrAboveAverage with String]
+  
+  /* "EqualOrBelowAverage" */ @js.native
+  object equalOrBelowAverage extends TopLevel[equalOrBelowAverage with String]
+  
+  /* "Errors" */ @js.native
+  object errors extends TopLevel[errors with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "LastMonth" */ @js.native
+  object lastMonth extends TopLevel[lastMonth with String]
+  
+  /* "LastSevenDays" */ @js.native
+  object lastSevenDays extends TopLevel[lastSevenDays with String]
+  
+  /* "LastWeek" */ @js.native
+  object lastWeek extends TopLevel[lastWeek with String]
+  
+  /* "NextMonth" */ @js.native
+  object nextMonth extends TopLevel[nextMonth with String]
+  
+  /* "NextWeek" */ @js.native
+  object nextWeek extends TopLevel[nextWeek with String]
+  
+  /* "NonBlanks" */ @js.native
+  object nonBlanks extends TopLevel[nonBlanks with String]
+  
+  /* "NonErrors" */ @js.native
+  object nonErrors extends TopLevel[nonErrors with String]
+  
+  /* "OneStdDevAboveAverage" */ @js.native
+  object oneStdDevAboveAverage extends TopLevel[oneStdDevAboveAverage with String]
+  
+  /* "OneStdDevBelowAverage" */ @js.native
+  object oneStdDevBelowAverage extends TopLevel[oneStdDevBelowAverage with String]
+  
+  /* "ThisMonth" */ @js.native
+  object thisMonth extends TopLevel[thisMonth with String]
+  
+  /* "ThisWeek" */ @js.native
+  object thisWeek extends TopLevel[thisWeek with String]
+  
+  /* "ThreeStdDevAboveAverage" */ @js.native
+  object threeStdDevAboveAverage extends TopLevel[threeStdDevAboveAverage with String]
+  
+  /* "ThreeStdDevBelowAverage" */ @js.native
+  object threeStdDevBelowAverage extends TopLevel[threeStdDevBelowAverage with String]
+  
+  /* "Today" */ @js.native
+  object today extends TopLevel[today with String]
+  
+  /* "Tomorrow" */ @js.native
+  object tomorrow extends TopLevel[tomorrow with String]
+  
+  /* "TwoStdDevAboveAverage" */ @js.native
+  object twoStdDevAboveAverage extends TopLevel[twoStdDevAboveAverage with String]
+  
+  /* "TwoStdDevBelowAverage" */ @js.native
+  object twoStdDevBelowAverage extends TopLevel[twoStdDevBelowAverage with String]
+  
+  /* "UniqueValues" */ @js.native
+  object uniqueValues extends TopLevel[uniqueValues with String]
+  
+  /* "Yesterday" */ @js.native
+  object yesterday extends TopLevel[yesterday with String]
+  
 }
 

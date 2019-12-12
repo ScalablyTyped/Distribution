@@ -1,5 +1,176 @@
 package typings.winrtDashUwp.Windows.System
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.VirtualKey.`final`
+import typings.winrtDashUwp.Windows.System.VirtualKey.a
+import typings.winrtDashUwp.Windows.System.VirtualKey.accept
+import typings.winrtDashUwp.Windows.System.VirtualKey.add
+import typings.winrtDashUwp.Windows.System.VirtualKey.application
+import typings.winrtDashUwp.Windows.System.VirtualKey.b
+import typings.winrtDashUwp.Windows.System.VirtualKey.back
+import typings.winrtDashUwp.Windows.System.VirtualKey.c
+import typings.winrtDashUwp.Windows.System.VirtualKey.cancel
+import typings.winrtDashUwp.Windows.System.VirtualKey.capitalLock
+import typings.winrtDashUwp.Windows.System.VirtualKey.clear
+import typings.winrtDashUwp.Windows.System.VirtualKey.control
+import typings.winrtDashUwp.Windows.System.VirtualKey.convert
+import typings.winrtDashUwp.Windows.System.VirtualKey.d
+import typings.winrtDashUwp.Windows.System.VirtualKey.decimal
+import typings.winrtDashUwp.Windows.System.VirtualKey.delete
+import typings.winrtDashUwp.Windows.System.VirtualKey.divide
+import typings.winrtDashUwp.Windows.System.VirtualKey.down
+import typings.winrtDashUwp.Windows.System.VirtualKey.e
+import typings.winrtDashUwp.Windows.System.VirtualKey.end
+import typings.winrtDashUwp.Windows.System.VirtualKey.enter
+import typings.winrtDashUwp.Windows.System.VirtualKey.escape
+import typings.winrtDashUwp.Windows.System.VirtualKey.execute
+import typings.winrtDashUwp.Windows.System.VirtualKey.f
+import typings.winrtDashUwp.Windows.System.VirtualKey.f1
+import typings.winrtDashUwp.Windows.System.VirtualKey.f10
+import typings.winrtDashUwp.Windows.System.VirtualKey.f11
+import typings.winrtDashUwp.Windows.System.VirtualKey.f12
+import typings.winrtDashUwp.Windows.System.VirtualKey.f13
+import typings.winrtDashUwp.Windows.System.VirtualKey.f14
+import typings.winrtDashUwp.Windows.System.VirtualKey.f15
+import typings.winrtDashUwp.Windows.System.VirtualKey.f16
+import typings.winrtDashUwp.Windows.System.VirtualKey.f17
+import typings.winrtDashUwp.Windows.System.VirtualKey.f18
+import typings.winrtDashUwp.Windows.System.VirtualKey.f19
+import typings.winrtDashUwp.Windows.System.VirtualKey.f2
+import typings.winrtDashUwp.Windows.System.VirtualKey.f20
+import typings.winrtDashUwp.Windows.System.VirtualKey.f21
+import typings.winrtDashUwp.Windows.System.VirtualKey.f22
+import typings.winrtDashUwp.Windows.System.VirtualKey.f23
+import typings.winrtDashUwp.Windows.System.VirtualKey.f24
+import typings.winrtDashUwp.Windows.System.VirtualKey.f3
+import typings.winrtDashUwp.Windows.System.VirtualKey.f4
+import typings.winrtDashUwp.Windows.System.VirtualKey.f5
+import typings.winrtDashUwp.Windows.System.VirtualKey.f6
+import typings.winrtDashUwp.Windows.System.VirtualKey.f7
+import typings.winrtDashUwp.Windows.System.VirtualKey.f8
+import typings.winrtDashUwp.Windows.System.VirtualKey.f9
+import typings.winrtDashUwp.Windows.System.VirtualKey.favorites
+import typings.winrtDashUwp.Windows.System.VirtualKey.g
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadA
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadB
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadDown
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadLeft
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadRight
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadUp
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftShoulder
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickButton
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickDown
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickLeft
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickRight
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickUp
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftTrigger
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadMenu
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightShoulder
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickButton
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickDown
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickLeft
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickRight
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickUp
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightTrigger
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadView
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadX
+import typings.winrtDashUwp.Windows.System.VirtualKey.gamepadY
+import typings.winrtDashUwp.Windows.System.VirtualKey.goBack
+import typings.winrtDashUwp.Windows.System.VirtualKey.goForward
+import typings.winrtDashUwp.Windows.System.VirtualKey.goHome
+import typings.winrtDashUwp.Windows.System.VirtualKey.h
+import typings.winrtDashUwp.Windows.System.VirtualKey.hangul
+import typings.winrtDashUwp.Windows.System.VirtualKey.hanja
+import typings.winrtDashUwp.Windows.System.VirtualKey.help
+import typings.winrtDashUwp.Windows.System.VirtualKey.home
+import typings.winrtDashUwp.Windows.System.VirtualKey.i
+import typings.winrtDashUwp.Windows.System.VirtualKey.insert
+import typings.winrtDashUwp.Windows.System.VirtualKey.j
+import typings.winrtDashUwp.Windows.System.VirtualKey.junja
+import typings.winrtDashUwp.Windows.System.VirtualKey.k
+import typings.winrtDashUwp.Windows.System.VirtualKey.kana
+import typings.winrtDashUwp.Windows.System.VirtualKey.kanji
+import typings.winrtDashUwp.Windows.System.VirtualKey.l
+import typings.winrtDashUwp.Windows.System.VirtualKey.left
+import typings.winrtDashUwp.Windows.System.VirtualKey.leftButton
+import typings.winrtDashUwp.Windows.System.VirtualKey.leftControl
+import typings.winrtDashUwp.Windows.System.VirtualKey.leftMenu
+import typings.winrtDashUwp.Windows.System.VirtualKey.leftShift
+import typings.winrtDashUwp.Windows.System.VirtualKey.leftWindows
+import typings.winrtDashUwp.Windows.System.VirtualKey.m
+import typings.winrtDashUwp.Windows.System.VirtualKey.menu
+import typings.winrtDashUwp.Windows.System.VirtualKey.middleButton
+import typings.winrtDashUwp.Windows.System.VirtualKey.modeChange
+import typings.winrtDashUwp.Windows.System.VirtualKey.multiply
+import typings.winrtDashUwp.Windows.System.VirtualKey.n
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationAccept
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationCancel
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationDown
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationLeft
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationMenu
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationRight
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationUp
+import typings.winrtDashUwp.Windows.System.VirtualKey.navigationView
+import typings.winrtDashUwp.Windows.System.VirtualKey.nonConvert
+import typings.winrtDashUwp.Windows.System.VirtualKey.none
+import typings.winrtDashUwp.Windows.System.VirtualKey.number0
+import typings.winrtDashUwp.Windows.System.VirtualKey.number1
+import typings.winrtDashUwp.Windows.System.VirtualKey.number2
+import typings.winrtDashUwp.Windows.System.VirtualKey.number3
+import typings.winrtDashUwp.Windows.System.VirtualKey.number4
+import typings.winrtDashUwp.Windows.System.VirtualKey.number5
+import typings.winrtDashUwp.Windows.System.VirtualKey.number6
+import typings.winrtDashUwp.Windows.System.VirtualKey.number7
+import typings.winrtDashUwp.Windows.System.VirtualKey.number8
+import typings.winrtDashUwp.Windows.System.VirtualKey.number9
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberKeyLock
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad0
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad1
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad2
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad3
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad4
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad5
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad6
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad7
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad8
+import typings.winrtDashUwp.Windows.System.VirtualKey.numberPad9
+import typings.winrtDashUwp.Windows.System.VirtualKey.o
+import typings.winrtDashUwp.Windows.System.VirtualKey.p
+import typings.winrtDashUwp.Windows.System.VirtualKey.pageDown
+import typings.winrtDashUwp.Windows.System.VirtualKey.pageUp
+import typings.winrtDashUwp.Windows.System.VirtualKey.pause
+import typings.winrtDashUwp.Windows.System.VirtualKey.print
+import typings.winrtDashUwp.Windows.System.VirtualKey.q
+import typings.winrtDashUwp.Windows.System.VirtualKey.r
+import typings.winrtDashUwp.Windows.System.VirtualKey.refresh
+import typings.winrtDashUwp.Windows.System.VirtualKey.right
+import typings.winrtDashUwp.Windows.System.VirtualKey.rightButton
+import typings.winrtDashUwp.Windows.System.VirtualKey.rightControl
+import typings.winrtDashUwp.Windows.System.VirtualKey.rightMenu
+import typings.winrtDashUwp.Windows.System.VirtualKey.rightShift
+import typings.winrtDashUwp.Windows.System.VirtualKey.rightWindows
+import typings.winrtDashUwp.Windows.System.VirtualKey.s
+import typings.winrtDashUwp.Windows.System.VirtualKey.scroll
+import typings.winrtDashUwp.Windows.System.VirtualKey.search
+import typings.winrtDashUwp.Windows.System.VirtualKey.select
+import typings.winrtDashUwp.Windows.System.VirtualKey.separator
+import typings.winrtDashUwp.Windows.System.VirtualKey.shift
+import typings.winrtDashUwp.Windows.System.VirtualKey.sleep
+import typings.winrtDashUwp.Windows.System.VirtualKey.snapshot
+import typings.winrtDashUwp.Windows.System.VirtualKey.space
+import typings.winrtDashUwp.Windows.System.VirtualKey.stop
+import typings.winrtDashUwp.Windows.System.VirtualKey.subtract
+import typings.winrtDashUwp.Windows.System.VirtualKey.t
+import typings.winrtDashUwp.Windows.System.VirtualKey.tab
+import typings.winrtDashUwp.Windows.System.VirtualKey.u
+import typings.winrtDashUwp.Windows.System.VirtualKey.up
+import typings.winrtDashUwp.Windows.System.VirtualKey.v
+import typings.winrtDashUwp.Windows.System.VirtualKey.w
+import typings.winrtDashUwp.Windows.System.VirtualKey.x
+import typings.winrtDashUwp.Windows.System.VirtualKey.xbutton1
+import typings.winrtDashUwp.Windows.System.VirtualKey.xbutton2
+import typings.winrtDashUwp.Windows.System.VirtualKey.y
+import typings.winrtDashUwp.Windows.System.VirtualKey.z
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -691,177 +862,517 @@ object VirtualKey extends js.Object {
   @js.native
   sealed trait z extends VirtualKey
   
-  /* 53 */ val a: typings.winrtDashUwp.Windows.System.VirtualKey.a with Double = js.native
-  /* 25 */ val accept: typings.winrtDashUwp.Windows.System.VirtualKey.accept with Double = js.native
-  /* 94 */ val add: typings.winrtDashUwp.Windows.System.VirtualKey.add with Double = js.native
-  /* 81 */ val application: typings.winrtDashUwp.Windows.System.VirtualKey.application with Double = js.native
-  /* 54 */ val b: typings.winrtDashUwp.Windows.System.VirtualKey.b with Double = js.native
-  /* 7 */ val back: typings.winrtDashUwp.Windows.System.VirtualKey.back with Double = js.native
-  /* 55 */ val c: typings.winrtDashUwp.Windows.System.VirtualKey.c with Double = js.native
-  /* 3 */ val cancel: typings.winrtDashUwp.Windows.System.VirtualKey.cancel with Double = js.native
-  /* 15 */ val capitalLock: typings.winrtDashUwp.Windows.System.VirtualKey.capitalLock with Double = js.native
-  /* 9 */ val clear: typings.winrtDashUwp.Windows.System.VirtualKey.clear with Double = js.native
-  /* 12 */ val control: typings.winrtDashUwp.Windows.System.VirtualKey.control with Double = js.native
-  /* 23 */ val convert: typings.winrtDashUwp.Windows.System.VirtualKey.convert with Double = js.native
-  /* 56 */ val d: typings.winrtDashUwp.Windows.System.VirtualKey.d with Double = js.native
-  /* 97 */ val decimal: typings.winrtDashUwp.Windows.System.VirtualKey.decimal with Double = js.native
-  /* 41 */ val delete: typings.winrtDashUwp.Windows.System.VirtualKey.delete with Double = js.native
-  /* 98 */ val divide: typings.winrtDashUwp.Windows.System.VirtualKey.divide with Double = js.native
-  /* 35 */ val down: typings.winrtDashUwp.Windows.System.VirtualKey.down with Double = js.native
-  /* 57 */ val e: typings.winrtDashUwp.Windows.System.VirtualKey.e with Double = js.native
-  /* 30 */ val end: typings.winrtDashUwp.Windows.System.VirtualKey.end with Double = js.native
-  /* 10 */ val enter: typings.winrtDashUwp.Windows.System.VirtualKey.enter with Double = js.native
-  /* 22 */ val escape: typings.winrtDashUwp.Windows.System.VirtualKey.escape with Double = js.native
-  /* 38 */ val execute: typings.winrtDashUwp.Windows.System.VirtualKey.execute with Double = js.native
-  /* 58 */ val f: typings.winrtDashUwp.Windows.System.VirtualKey.f with Double = js.native
-  /* 99 */ val f1: typings.winrtDashUwp.Windows.System.VirtualKey.f1 with Double = js.native
-  /* 108 */ val f10: typings.winrtDashUwp.Windows.System.VirtualKey.f10 with Double = js.native
-  /* 109 */ val f11: typings.winrtDashUwp.Windows.System.VirtualKey.f11 with Double = js.native
-  /* 110 */ val f12: typings.winrtDashUwp.Windows.System.VirtualKey.f12 with Double = js.native
-  /* 111 */ val f13: typings.winrtDashUwp.Windows.System.VirtualKey.f13 with Double = js.native
-  /* 112 */ val f14: typings.winrtDashUwp.Windows.System.VirtualKey.f14 with Double = js.native
-  /* 113 */ val f15: typings.winrtDashUwp.Windows.System.VirtualKey.f15 with Double = js.native
-  /* 114 */ val f16: typings.winrtDashUwp.Windows.System.VirtualKey.f16 with Double = js.native
-  /* 115 */ val f17: typings.winrtDashUwp.Windows.System.VirtualKey.f17 with Double = js.native
-  /* 116 */ val f18: typings.winrtDashUwp.Windows.System.VirtualKey.f18 with Double = js.native
-  /* 117 */ val f19: typings.winrtDashUwp.Windows.System.VirtualKey.f19 with Double = js.native
-  /* 100 */ val f2: typings.winrtDashUwp.Windows.System.VirtualKey.f2 with Double = js.native
-  /* 118 */ val f20: typings.winrtDashUwp.Windows.System.VirtualKey.f20 with Double = js.native
-  /* 119 */ val f21: typings.winrtDashUwp.Windows.System.VirtualKey.f21 with Double = js.native
-  /* 120 */ val f22: typings.winrtDashUwp.Windows.System.VirtualKey.f22 with Double = js.native
-  /* 121 */ val f23: typings.winrtDashUwp.Windows.System.VirtualKey.f23 with Double = js.native
-  /* 122 */ val f24: typings.winrtDashUwp.Windows.System.VirtualKey.f24 with Double = js.native
-  /* 101 */ val f3: typings.winrtDashUwp.Windows.System.VirtualKey.f3 with Double = js.native
-  /* 102 */ val f4: typings.winrtDashUwp.Windows.System.VirtualKey.f4 with Double = js.native
-  /* 103 */ val f5: typings.winrtDashUwp.Windows.System.VirtualKey.f5 with Double = js.native
-  /* 104 */ val f6: typings.winrtDashUwp.Windows.System.VirtualKey.f6 with Double = js.native
-  /* 105 */ val f7: typings.winrtDashUwp.Windows.System.VirtualKey.f7 with Double = js.native
-  /* 106 */ val f8: typings.winrtDashUwp.Windows.System.VirtualKey.f8 with Double = js.native
-  /* 107 */ val f9: typings.winrtDashUwp.Windows.System.VirtualKey.f9 with Double = js.native
-  /* 144 */ val favorites: typings.winrtDashUwp.Windows.System.VirtualKey.favorites with Double = js.native
-  /* 19 */ val `final`: typings.winrtDashUwp.Windows.System.VirtualKey.`final` with Double = js.native
-  /* 59 */ val g: typings.winrtDashUwp.Windows.System.VirtualKey.g with Double = js.native
-  /* 146 */ val gamepadA: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadA with Double = js.native
-  /* 147 */ val gamepadB: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadB with Double = js.native
-  /* 155 */ val gamepadDPadDown: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadDown with Double = js.native
-  /* 156 */ val gamepadDPadLeft: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadLeft with Double = js.native
-  /* 157 */ val gamepadDPadRight: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadRight with Double = js.native
-  /* 154 */ val gamepadDPadUp: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadDPadUp with Double = js.native
-  /* 151 */ val gamepadLeftShoulder: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftShoulder with Double = js.native
-  /* 160 */ val gamepadLeftThumbstickButton: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickButton with Double = js.native
-  /* 163 */ val gamepadLeftThumbstickDown: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickDown with Double = js.native
-  /* 165 */ val gamepadLeftThumbstickLeft: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickLeft with Double = js.native
-  /* 164 */ val gamepadLeftThumbstickRight: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickRight with Double = js.native
-  /* 162 */ val gamepadLeftThumbstickUp: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftThumbstickUp with Double = js.native
-  /* 152 */ val gamepadLeftTrigger: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadLeftTrigger with Double = js.native
-  /* 158 */ val gamepadMenu: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadMenu with Double = js.native
-  /* 150 */ val gamepadRightShoulder: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightShoulder with Double = js.native
-  /* 161 */ val gamepadRightThumbstickButton: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickButton with Double = js.native
-  /* 167 */ val gamepadRightThumbstickDown: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickDown with Double = js.native
-  /* 169 */ val gamepadRightThumbstickLeft: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickLeft with Double = js.native
-  /* 168 */ val gamepadRightThumbstickRight: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickRight with Double = js.native
-  /* 166 */ val gamepadRightThumbstickUp: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightThumbstickUp with Double = js.native
-  /* 153 */ val gamepadRightTrigger: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadRightTrigger with Double = js.native
-  /* 159 */ val gamepadView: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadView with Double = js.native
-  /* 148 */ val gamepadX: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadX with Double = js.native
-  /* 149 */ val gamepadY: typings.winrtDashUwp.Windows.System.VirtualKey.gamepadY with Double = js.native
-  /* 139 */ val goBack: typings.winrtDashUwp.Windows.System.VirtualKey.goBack with Double = js.native
-  /* 140 */ val goForward: typings.winrtDashUwp.Windows.System.VirtualKey.goForward with Double = js.native
-  /* 145 */ val goHome: typings.winrtDashUwp.Windows.System.VirtualKey.goHome with Double = js.native
-  /* 60 */ val h: typings.winrtDashUwp.Windows.System.VirtualKey.h with Double = js.native
-  /* 17 */ val hangul: typings.winrtDashUwp.Windows.System.VirtualKey.hangul with Double = js.native
-  /* 20 */ val hanja: typings.winrtDashUwp.Windows.System.VirtualKey.hanja with Double = js.native
-  /* 42 */ val help: typings.winrtDashUwp.Windows.System.VirtualKey.help with Double = js.native
-  /* 31 */ val home: typings.winrtDashUwp.Windows.System.VirtualKey.home with Double = js.native
-  /* 61 */ val i: typings.winrtDashUwp.Windows.System.VirtualKey.i with Double = js.native
-  /* 40 */ val insert: typings.winrtDashUwp.Windows.System.VirtualKey.insert with Double = js.native
-  /* 62 */ val j: typings.winrtDashUwp.Windows.System.VirtualKey.j with Double = js.native
-  /* 18 */ val junja: typings.winrtDashUwp.Windows.System.VirtualKey.junja with Double = js.native
-  /* 63 */ val k: typings.winrtDashUwp.Windows.System.VirtualKey.k with Double = js.native
-  /* 16 */ val kana: typings.winrtDashUwp.Windows.System.VirtualKey.kana with Double = js.native
-  /* 21 */ val kanji: typings.winrtDashUwp.Windows.System.VirtualKey.kanji with Double = js.native
-  /* 64 */ val l: typings.winrtDashUwp.Windows.System.VirtualKey.l with Double = js.native
-  /* 32 */ val left: typings.winrtDashUwp.Windows.System.VirtualKey.left with Double = js.native
-  /* 1 */ val leftButton: typings.winrtDashUwp.Windows.System.VirtualKey.leftButton with Double = js.native
-  /* 135 */ val leftControl: typings.winrtDashUwp.Windows.System.VirtualKey.leftControl with Double = js.native
-  /* 137 */ val leftMenu: typings.winrtDashUwp.Windows.System.VirtualKey.leftMenu with Double = js.native
-  /* 133 */ val leftShift: typings.winrtDashUwp.Windows.System.VirtualKey.leftShift with Double = js.native
-  /* 79 */ val leftWindows: typings.winrtDashUwp.Windows.System.VirtualKey.leftWindows with Double = js.native
-  /* 65 */ val m: typings.winrtDashUwp.Windows.System.VirtualKey.m with Double = js.native
-  /* 13 */ val menu: typings.winrtDashUwp.Windows.System.VirtualKey.menu with Double = js.native
-  /* 4 */ val middleButton: typings.winrtDashUwp.Windows.System.VirtualKey.middleButton with Double = js.native
-  /* 26 */ val modeChange: typings.winrtDashUwp.Windows.System.VirtualKey.modeChange with Double = js.native
-  /* 93 */ val multiply: typings.winrtDashUwp.Windows.System.VirtualKey.multiply with Double = js.native
-  /* 66 */ val n: typings.winrtDashUwp.Windows.System.VirtualKey.n with Double = js.native
-  /* 129 */ val navigationAccept: typings.winrtDashUwp.Windows.System.VirtualKey.navigationAccept with Double = js.native
-  /* 130 */ val navigationCancel: typings.winrtDashUwp.Windows.System.VirtualKey.navigationCancel with Double = js.native
-  /* 126 */ val navigationDown: typings.winrtDashUwp.Windows.System.VirtualKey.navigationDown with Double = js.native
-  /* 127 */ val navigationLeft: typings.winrtDashUwp.Windows.System.VirtualKey.navigationLeft with Double = js.native
-  /* 124 */ val navigationMenu: typings.winrtDashUwp.Windows.System.VirtualKey.navigationMenu with Double = js.native
-  /* 128 */ val navigationRight: typings.winrtDashUwp.Windows.System.VirtualKey.navigationRight with Double = js.native
-  /* 125 */ val navigationUp: typings.winrtDashUwp.Windows.System.VirtualKey.navigationUp with Double = js.native
-  /* 123 */ val navigationView: typings.winrtDashUwp.Windows.System.VirtualKey.navigationView with Double = js.native
-  /* 24 */ val nonConvert: typings.winrtDashUwp.Windows.System.VirtualKey.nonConvert with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.System.VirtualKey.none with Double = js.native
-  /* 43 */ val number0: typings.winrtDashUwp.Windows.System.VirtualKey.number0 with Double = js.native
-  /* 44 */ val number1: typings.winrtDashUwp.Windows.System.VirtualKey.number1 with Double = js.native
-  /* 45 */ val number2: typings.winrtDashUwp.Windows.System.VirtualKey.number2 with Double = js.native
-  /* 46 */ val number3: typings.winrtDashUwp.Windows.System.VirtualKey.number3 with Double = js.native
-  /* 47 */ val number4: typings.winrtDashUwp.Windows.System.VirtualKey.number4 with Double = js.native
-  /* 48 */ val number5: typings.winrtDashUwp.Windows.System.VirtualKey.number5 with Double = js.native
-  /* 49 */ val number6: typings.winrtDashUwp.Windows.System.VirtualKey.number6 with Double = js.native
-  /* 50 */ val number7: typings.winrtDashUwp.Windows.System.VirtualKey.number7 with Double = js.native
-  /* 51 */ val number8: typings.winrtDashUwp.Windows.System.VirtualKey.number8 with Double = js.native
-  /* 52 */ val number9: typings.winrtDashUwp.Windows.System.VirtualKey.number9 with Double = js.native
-  /* 131 */ val numberKeyLock: typings.winrtDashUwp.Windows.System.VirtualKey.numberKeyLock with Double = js.native
-  /* 83 */ val numberPad0: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad0 with Double = js.native
-  /* 84 */ val numberPad1: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad1 with Double = js.native
-  /* 85 */ val numberPad2: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad2 with Double = js.native
-  /* 86 */ val numberPad3: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad3 with Double = js.native
-  /* 87 */ val numberPad4: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad4 with Double = js.native
-  /* 88 */ val numberPad5: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad5 with Double = js.native
-  /* 89 */ val numberPad6: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad6 with Double = js.native
-  /* 90 */ val numberPad7: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad7 with Double = js.native
-  /* 91 */ val numberPad8: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad8 with Double = js.native
-  /* 92 */ val numberPad9: typings.winrtDashUwp.Windows.System.VirtualKey.numberPad9 with Double = js.native
-  /* 67 */ val o: typings.winrtDashUwp.Windows.System.VirtualKey.o with Double = js.native
-  /* 68 */ val p: typings.winrtDashUwp.Windows.System.VirtualKey.p with Double = js.native
-  /* 29 */ val pageDown: typings.winrtDashUwp.Windows.System.VirtualKey.pageDown with Double = js.native
-  /* 28 */ val pageUp: typings.winrtDashUwp.Windows.System.VirtualKey.pageUp with Double = js.native
-  /* 14 */ val pause: typings.winrtDashUwp.Windows.System.VirtualKey.pause with Double = js.native
-  /* 37 */ val print: typings.winrtDashUwp.Windows.System.VirtualKey.print with Double = js.native
-  /* 69 */ val q: typings.winrtDashUwp.Windows.System.VirtualKey.q with Double = js.native
-  /* 70 */ val r: typings.winrtDashUwp.Windows.System.VirtualKey.r with Double = js.native
-  /* 141 */ val refresh: typings.winrtDashUwp.Windows.System.VirtualKey.refresh with Double = js.native
-  /* 34 */ val right: typings.winrtDashUwp.Windows.System.VirtualKey.right with Double = js.native
-  /* 2 */ val rightButton: typings.winrtDashUwp.Windows.System.VirtualKey.rightButton with Double = js.native
-  /* 136 */ val rightControl: typings.winrtDashUwp.Windows.System.VirtualKey.rightControl with Double = js.native
-  /* 138 */ val rightMenu: typings.winrtDashUwp.Windows.System.VirtualKey.rightMenu with Double = js.native
-  /* 134 */ val rightShift: typings.winrtDashUwp.Windows.System.VirtualKey.rightShift with Double = js.native
-  /* 80 */ val rightWindows: typings.winrtDashUwp.Windows.System.VirtualKey.rightWindows with Double = js.native
-  /* 71 */ val s: typings.winrtDashUwp.Windows.System.VirtualKey.s with Double = js.native
-  /* 132 */ val scroll: typings.winrtDashUwp.Windows.System.VirtualKey.scroll with Double = js.native
-  /* 143 */ val search: typings.winrtDashUwp.Windows.System.VirtualKey.search with Double = js.native
-  /* 36 */ val select: typings.winrtDashUwp.Windows.System.VirtualKey.select with Double = js.native
-  /* 95 */ val separator: typings.winrtDashUwp.Windows.System.VirtualKey.separator with Double = js.native
-  /* 11 */ val shift: typings.winrtDashUwp.Windows.System.VirtualKey.shift with Double = js.native
-  /* 82 */ val sleep: typings.winrtDashUwp.Windows.System.VirtualKey.sleep with Double = js.native
-  /* 39 */ val snapshot: typings.winrtDashUwp.Windows.System.VirtualKey.snapshot with Double = js.native
-  /* 27 */ val space: typings.winrtDashUwp.Windows.System.VirtualKey.space with Double = js.native
-  /* 142 */ val stop: typings.winrtDashUwp.Windows.System.VirtualKey.stop with Double = js.native
-  /* 96 */ val subtract: typings.winrtDashUwp.Windows.System.VirtualKey.subtract with Double = js.native
-  /* 72 */ val t: typings.winrtDashUwp.Windows.System.VirtualKey.t with Double = js.native
-  /* 8 */ val tab: typings.winrtDashUwp.Windows.System.VirtualKey.tab with Double = js.native
-  /* 73 */ val u: typings.winrtDashUwp.Windows.System.VirtualKey.u with Double = js.native
-  /* 33 */ val up: typings.winrtDashUwp.Windows.System.VirtualKey.up with Double = js.native
-  /* 74 */ val v: typings.winrtDashUwp.Windows.System.VirtualKey.v with Double = js.native
-  /* 75 */ val w: typings.winrtDashUwp.Windows.System.VirtualKey.w with Double = js.native
-  /* 76 */ val x: typings.winrtDashUwp.Windows.System.VirtualKey.x with Double = js.native
-  /* 5 */ val xbutton1: typings.winrtDashUwp.Windows.System.VirtualKey.xbutton1 with Double = js.native
-  /* 6 */ val xbutton2: typings.winrtDashUwp.Windows.System.VirtualKey.xbutton2 with Double = js.native
-  /* 77 */ val y: typings.winrtDashUwp.Windows.System.VirtualKey.y with Double = js.native
-  /* 78 */ val z: typings.winrtDashUwp.Windows.System.VirtualKey.z with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VirtualKey with Double] = js.native
+  /* 53 */ @js.native
+  object a extends TopLevel[a with Double]
+  
+  /* 25 */ @js.native
+  object accept extends TopLevel[accept with Double]
+  
+  /* 94 */ @js.native
+  object add extends TopLevel[add with Double]
+  
+  /* 81 */ @js.native
+  object application extends TopLevel[application with Double]
+  
+  /* 54 */ @js.native
+  object b extends TopLevel[b with Double]
+  
+  /* 7 */ @js.native
+  object back extends TopLevel[back with Double]
+  
+  /* 55 */ @js.native
+  object c extends TopLevel[c with Double]
+  
+  /* 3 */ @js.native
+  object cancel extends TopLevel[cancel with Double]
+  
+  /* 15 */ @js.native
+  object capitalLock extends TopLevel[capitalLock with Double]
+  
+  /* 9 */ @js.native
+  object clear extends TopLevel[clear with Double]
+  
+  /* 12 */ @js.native
+  object control extends TopLevel[control with Double]
+  
+  /* 23 */ @js.native
+  object convert extends TopLevel[convert with Double]
+  
+  /* 56 */ @js.native
+  object d extends TopLevel[d with Double]
+  
+  /* 97 */ @js.native
+  object decimal extends TopLevel[decimal with Double]
+  
+  /* 41 */ @js.native
+  object delete extends TopLevel[delete with Double]
+  
+  /* 98 */ @js.native
+  object divide extends TopLevel[divide with Double]
+  
+  /* 35 */ @js.native
+  object down extends TopLevel[down with Double]
+  
+  /* 57 */ @js.native
+  object e extends TopLevel[e with Double]
+  
+  /* 30 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 10 */ @js.native
+  object enter extends TopLevel[enter with Double]
+  
+  /* 22 */ @js.native
+  object escape extends TopLevel[escape with Double]
+  
+  /* 38 */ @js.native
+  object execute extends TopLevel[execute with Double]
+  
+  /* 58 */ @js.native
+  object f extends TopLevel[f with Double]
+  
+  /* 99 */ @js.native
+  object f1 extends TopLevel[f1 with Double]
+  
+  /* 108 */ @js.native
+  object f10 extends TopLevel[f10 with Double]
+  
+  /* 109 */ @js.native
+  object f11 extends TopLevel[f11 with Double]
+  
+  /* 110 */ @js.native
+  object f12 extends TopLevel[f12 with Double]
+  
+  /* 111 */ @js.native
+  object f13 extends TopLevel[f13 with Double]
+  
+  /* 112 */ @js.native
+  object f14 extends TopLevel[f14 with Double]
+  
+  /* 113 */ @js.native
+  object f15 extends TopLevel[f15 with Double]
+  
+  /* 114 */ @js.native
+  object f16 extends TopLevel[f16 with Double]
+  
+  /* 115 */ @js.native
+  object f17 extends TopLevel[f17 with Double]
+  
+  /* 116 */ @js.native
+  object f18 extends TopLevel[f18 with Double]
+  
+  /* 117 */ @js.native
+  object f19 extends TopLevel[f19 with Double]
+  
+  /* 100 */ @js.native
+  object f2 extends TopLevel[f2 with Double]
+  
+  /* 118 */ @js.native
+  object f20 extends TopLevel[f20 with Double]
+  
+  /* 119 */ @js.native
+  object f21 extends TopLevel[f21 with Double]
+  
+  /* 120 */ @js.native
+  object f22 extends TopLevel[f22 with Double]
+  
+  /* 121 */ @js.native
+  object f23 extends TopLevel[f23 with Double]
+  
+  /* 122 */ @js.native
+  object f24 extends TopLevel[f24 with Double]
+  
+  /* 101 */ @js.native
+  object f3 extends TopLevel[f3 with Double]
+  
+  /* 102 */ @js.native
+  object f4 extends TopLevel[f4 with Double]
+  
+  /* 103 */ @js.native
+  object f5 extends TopLevel[f5 with Double]
+  
+  /* 104 */ @js.native
+  object f6 extends TopLevel[f6 with Double]
+  
+  /* 105 */ @js.native
+  object f7 extends TopLevel[f7 with Double]
+  
+  /* 106 */ @js.native
+  object f8 extends TopLevel[f8 with Double]
+  
+  /* 107 */ @js.native
+  object f9 extends TopLevel[f9 with Double]
+  
+  /* 144 */ @js.native
+  object favorites extends TopLevel[favorites with Double]
+  
+  /* 19 */ @js.native
+  object `final` extends TopLevel[`final` with Double]
+  
+  /* 59 */ @js.native
+  object g extends TopLevel[g with Double]
+  
+  /* 146 */ @js.native
+  object gamepadA extends TopLevel[gamepadA with Double]
+  
+  /* 147 */ @js.native
+  object gamepadB extends TopLevel[gamepadB with Double]
+  
+  /* 155 */ @js.native
+  object gamepadDPadDown extends TopLevel[gamepadDPadDown with Double]
+  
+  /* 156 */ @js.native
+  object gamepadDPadLeft extends TopLevel[gamepadDPadLeft with Double]
+  
+  /* 157 */ @js.native
+  object gamepadDPadRight extends TopLevel[gamepadDPadRight with Double]
+  
+  /* 154 */ @js.native
+  object gamepadDPadUp extends TopLevel[gamepadDPadUp with Double]
+  
+  /* 151 */ @js.native
+  object gamepadLeftShoulder extends TopLevel[gamepadLeftShoulder with Double]
+  
+  /* 160 */ @js.native
+  object gamepadLeftThumbstickButton extends TopLevel[gamepadLeftThumbstickButton with Double]
+  
+  /* 163 */ @js.native
+  object gamepadLeftThumbstickDown extends TopLevel[gamepadLeftThumbstickDown with Double]
+  
+  /* 165 */ @js.native
+  object gamepadLeftThumbstickLeft extends TopLevel[gamepadLeftThumbstickLeft with Double]
+  
+  /* 164 */ @js.native
+  object gamepadLeftThumbstickRight extends TopLevel[gamepadLeftThumbstickRight with Double]
+  
+  /* 162 */ @js.native
+  object gamepadLeftThumbstickUp extends TopLevel[gamepadLeftThumbstickUp with Double]
+  
+  /* 152 */ @js.native
+  object gamepadLeftTrigger extends TopLevel[gamepadLeftTrigger with Double]
+  
+  /* 158 */ @js.native
+  object gamepadMenu extends TopLevel[gamepadMenu with Double]
+  
+  /* 150 */ @js.native
+  object gamepadRightShoulder extends TopLevel[gamepadRightShoulder with Double]
+  
+  /* 161 */ @js.native
+  object gamepadRightThumbstickButton extends TopLevel[gamepadRightThumbstickButton with Double]
+  
+  /* 167 */ @js.native
+  object gamepadRightThumbstickDown extends TopLevel[gamepadRightThumbstickDown with Double]
+  
+  /* 169 */ @js.native
+  object gamepadRightThumbstickLeft extends TopLevel[gamepadRightThumbstickLeft with Double]
+  
+  /* 168 */ @js.native
+  object gamepadRightThumbstickRight extends TopLevel[gamepadRightThumbstickRight with Double]
+  
+  /* 166 */ @js.native
+  object gamepadRightThumbstickUp extends TopLevel[gamepadRightThumbstickUp with Double]
+  
+  /* 153 */ @js.native
+  object gamepadRightTrigger extends TopLevel[gamepadRightTrigger with Double]
+  
+  /* 159 */ @js.native
+  object gamepadView extends TopLevel[gamepadView with Double]
+  
+  /* 148 */ @js.native
+  object gamepadX extends TopLevel[gamepadX with Double]
+  
+  /* 149 */ @js.native
+  object gamepadY extends TopLevel[gamepadY with Double]
+  
+  /* 139 */ @js.native
+  object goBack extends TopLevel[goBack with Double]
+  
+  /* 140 */ @js.native
+  object goForward extends TopLevel[goForward with Double]
+  
+  /* 145 */ @js.native
+  object goHome extends TopLevel[goHome with Double]
+  
+  /* 60 */ @js.native
+  object h extends TopLevel[h with Double]
+  
+  /* 17 */ @js.native
+  object hangul extends TopLevel[hangul with Double]
+  
+  /* 20 */ @js.native
+  object hanja extends TopLevel[hanja with Double]
+  
+  /* 42 */ @js.native
+  object help extends TopLevel[help with Double]
+  
+  /* 31 */ @js.native
+  object home extends TopLevel[home with Double]
+  
+  /* 61 */ @js.native
+  object i extends TopLevel[i with Double]
+  
+  /* 40 */ @js.native
+  object insert extends TopLevel[insert with Double]
+  
+  /* 62 */ @js.native
+  object j extends TopLevel[j with Double]
+  
+  /* 18 */ @js.native
+  object junja extends TopLevel[junja with Double]
+  
+  /* 63 */ @js.native
+  object k extends TopLevel[k with Double]
+  
+  /* 16 */ @js.native
+  object kana extends TopLevel[kana with Double]
+  
+  /* 21 */ @js.native
+  object kanji extends TopLevel[kanji with Double]
+  
+  /* 64 */ @js.native
+  object l extends TopLevel[l with Double]
+  
+  /* 32 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* 1 */ @js.native
+  object leftButton extends TopLevel[leftButton with Double]
+  
+  /* 135 */ @js.native
+  object leftControl extends TopLevel[leftControl with Double]
+  
+  /* 137 */ @js.native
+  object leftMenu extends TopLevel[leftMenu with Double]
+  
+  /* 133 */ @js.native
+  object leftShift extends TopLevel[leftShift with Double]
+  
+  /* 79 */ @js.native
+  object leftWindows extends TopLevel[leftWindows with Double]
+  
+  /* 65 */ @js.native
+  object m extends TopLevel[m with Double]
+  
+  /* 13 */ @js.native
+  object menu extends TopLevel[menu with Double]
+  
+  /* 4 */ @js.native
+  object middleButton extends TopLevel[middleButton with Double]
+  
+  /* 26 */ @js.native
+  object modeChange extends TopLevel[modeChange with Double]
+  
+  /* 93 */ @js.native
+  object multiply extends TopLevel[multiply with Double]
+  
+  /* 66 */ @js.native
+  object n extends TopLevel[n with Double]
+  
+  /* 129 */ @js.native
+  object navigationAccept extends TopLevel[navigationAccept with Double]
+  
+  /* 130 */ @js.native
+  object navigationCancel extends TopLevel[navigationCancel with Double]
+  
+  /* 126 */ @js.native
+  object navigationDown extends TopLevel[navigationDown with Double]
+  
+  /* 127 */ @js.native
+  object navigationLeft extends TopLevel[navigationLeft with Double]
+  
+  /* 124 */ @js.native
+  object navigationMenu extends TopLevel[navigationMenu with Double]
+  
+  /* 128 */ @js.native
+  object navigationRight extends TopLevel[navigationRight with Double]
+  
+  /* 125 */ @js.native
+  object navigationUp extends TopLevel[navigationUp with Double]
+  
+  /* 123 */ @js.native
+  object navigationView extends TopLevel[navigationView with Double]
+  
+  /* 24 */ @js.native
+  object nonConvert extends TopLevel[nonConvert with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 43 */ @js.native
+  object number0 extends TopLevel[number0 with Double]
+  
+  /* 44 */ @js.native
+  object number1 extends TopLevel[number1 with Double]
+  
+  /* 45 */ @js.native
+  object number2 extends TopLevel[number2 with Double]
+  
+  /* 46 */ @js.native
+  object number3 extends TopLevel[number3 with Double]
+  
+  /* 47 */ @js.native
+  object number4 extends TopLevel[number4 with Double]
+  
+  /* 48 */ @js.native
+  object number5 extends TopLevel[number5 with Double]
+  
+  /* 49 */ @js.native
+  object number6 extends TopLevel[number6 with Double]
+  
+  /* 50 */ @js.native
+  object number7 extends TopLevel[number7 with Double]
+  
+  /* 51 */ @js.native
+  object number8 extends TopLevel[number8 with Double]
+  
+  /* 52 */ @js.native
+  object number9 extends TopLevel[number9 with Double]
+  
+  /* 131 */ @js.native
+  object numberKeyLock extends TopLevel[numberKeyLock with Double]
+  
+  /* 83 */ @js.native
+  object numberPad0 extends TopLevel[numberPad0 with Double]
+  
+  /* 84 */ @js.native
+  object numberPad1 extends TopLevel[numberPad1 with Double]
+  
+  /* 85 */ @js.native
+  object numberPad2 extends TopLevel[numberPad2 with Double]
+  
+  /* 86 */ @js.native
+  object numberPad3 extends TopLevel[numberPad3 with Double]
+  
+  /* 87 */ @js.native
+  object numberPad4 extends TopLevel[numberPad4 with Double]
+  
+  /* 88 */ @js.native
+  object numberPad5 extends TopLevel[numberPad5 with Double]
+  
+  /* 89 */ @js.native
+  object numberPad6 extends TopLevel[numberPad6 with Double]
+  
+  /* 90 */ @js.native
+  object numberPad7 extends TopLevel[numberPad7 with Double]
+  
+  /* 91 */ @js.native
+  object numberPad8 extends TopLevel[numberPad8 with Double]
+  
+  /* 92 */ @js.native
+  object numberPad9 extends TopLevel[numberPad9 with Double]
+  
+  /* 67 */ @js.native
+  object o extends TopLevel[o with Double]
+  
+  /* 68 */ @js.native
+  object p extends TopLevel[p with Double]
+  
+  /* 29 */ @js.native
+  object pageDown extends TopLevel[pageDown with Double]
+  
+  /* 28 */ @js.native
+  object pageUp extends TopLevel[pageUp with Double]
+  
+  /* 14 */ @js.native
+  object pause extends TopLevel[pause with Double]
+  
+  /* 37 */ @js.native
+  object print extends TopLevel[print with Double]
+  
+  /* 69 */ @js.native
+  object q extends TopLevel[q with Double]
+  
+  /* 70 */ @js.native
+  object r extends TopLevel[r with Double]
+  
+  /* 141 */ @js.native
+  object refresh extends TopLevel[refresh with Double]
+  
+  /* 34 */ @js.native
+  object right extends TopLevel[right with Double]
+  
+  /* 2 */ @js.native
+  object rightButton extends TopLevel[rightButton with Double]
+  
+  /* 136 */ @js.native
+  object rightControl extends TopLevel[rightControl with Double]
+  
+  /* 138 */ @js.native
+  object rightMenu extends TopLevel[rightMenu with Double]
+  
+  /* 134 */ @js.native
+  object rightShift extends TopLevel[rightShift with Double]
+  
+  /* 80 */ @js.native
+  object rightWindows extends TopLevel[rightWindows with Double]
+  
+  /* 71 */ @js.native
+  object s extends TopLevel[s with Double]
+  
+  /* 132 */ @js.native
+  object scroll extends TopLevel[scroll with Double]
+  
+  /* 143 */ @js.native
+  object search extends TopLevel[search with Double]
+  
+  /* 36 */ @js.native
+  object select extends TopLevel[select with Double]
+  
+  /* 95 */ @js.native
+  object separator extends TopLevel[separator with Double]
+  
+  /* 11 */ @js.native
+  object shift extends TopLevel[shift with Double]
+  
+  /* 82 */ @js.native
+  object sleep extends TopLevel[sleep with Double]
+  
+  /* 39 */ @js.native
+  object snapshot extends TopLevel[snapshot with Double]
+  
+  /* 27 */ @js.native
+  object space extends TopLevel[space with Double]
+  
+  /* 142 */ @js.native
+  object stop extends TopLevel[stop with Double]
+  
+  /* 96 */ @js.native
+  object subtract extends TopLevel[subtract with Double]
+  
+  /* 72 */ @js.native
+  object t extends TopLevel[t with Double]
+  
+  /* 8 */ @js.native
+  object tab extends TopLevel[tab with Double]
+  
+  /* 73 */ @js.native
+  object u extends TopLevel[u with Double]
+  
+  /* 33 */ @js.native
+  object up extends TopLevel[up with Double]
+  
+  /* 74 */ @js.native
+  object v extends TopLevel[v with Double]
+  
+  /* 75 */ @js.native
+  object w extends TopLevel[w with Double]
+  
+  /* 76 */ @js.native
+  object x extends TopLevel[x with Double]
+  
+  /* 5 */ @js.native
+  object xbutton1 extends TopLevel[xbutton1 with Double]
+  
+  /* 6 */ @js.native
+  object xbutton2 extends TopLevel[xbutton2 with Double]
+  
+  /* 77 */ @js.native
+  object y extends TopLevel[y with Double]
+  
+  /* 78 */ @js.native
+  object z extends TopLevel[z with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geoboundingBox
+import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geocircle
+import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopath
+import typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object GeoshapeType extends js.Object {
   @js.native
   sealed trait geopoint extends GeoshapeType
   
-  /* 3 */ val geoboundingBox: typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geoboundingBox with Double = js.native
-  /* 1 */ val geocircle: typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geocircle with Double = js.native
-  /* 2 */ val geopath: typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopath with Double = js.native
-  /* 0 */ val geopoint: typings.winrtDashUwp.Windows.Devices.Geolocation.GeoshapeType.geopoint with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GeoshapeType with Double] = js.native
+  /* 3 */ @js.native
+  object geoboundingBox extends TopLevel[geoboundingBox with Double]
+  
+  /* 1 */ @js.native
+  object geocircle extends TopLevel[geocircle with Double]
+  
+  /* 2 */ @js.native
+  object geopath extends TopLevel[geopath with Double]
+  
+  /* 0 */ @js.native
+  object geopoint extends TopLevel[geopoint with Double]
+  
 }
 

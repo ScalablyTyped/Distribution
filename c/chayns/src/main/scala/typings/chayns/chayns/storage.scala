@@ -1,6 +1,10 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.TopLevel
 import typings.chayns.chayns.storage.accessMode
+import typings.chayns.chayns.storage.accessMode.PRIVATE
+import typings.chayns.chayns.storage.accessMode.PROTECTED
+import typings.chayns.chayns.storage.accessMode.PUBLIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,11 +36,17 @@ object storage extends js.Object {
     @js.native
     sealed trait PUBLIC extends accessMode
     
-    /* 2 */ val PRIVATE: typings.chayns.chayns.storage.accessMode.PRIVATE with Double = js.native
-    /* 1 */ val PROTECTED: typings.chayns.chayns.storage.accessMode.PROTECTED with Double = js.native
-    /* 0 */ val PUBLIC: typings.chayns.chayns.storage.accessMode.PUBLIC with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[accessMode with Double] = js.native
+    /* 2 */ @js.native
+    object PRIVATE extends TopLevel[PRIVATE with Double]
+    
+    /* 1 */ @js.native
+    object PROTECTED extends TopLevel[PROTECTED with Double]
+    
+    /* 0 */ @js.native
+    object PUBLIC extends TopLevel[PUBLIC with Double]
+    
   }
   
 }

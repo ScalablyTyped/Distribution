@@ -1,5 +1,58 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.BuiltInStyle.accent1
+import typings.officeDashJs.Excel.BuiltInStyle.accent1_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent1_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent1_60
+import typings.officeDashJs.Excel.BuiltInStyle.accent2
+import typings.officeDashJs.Excel.BuiltInStyle.accent2_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent2_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent2_60
+import typings.officeDashJs.Excel.BuiltInStyle.accent3
+import typings.officeDashJs.Excel.BuiltInStyle.accent3_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent3_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent3_60
+import typings.officeDashJs.Excel.BuiltInStyle.accent4
+import typings.officeDashJs.Excel.BuiltInStyle.accent4_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent4_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent4_60
+import typings.officeDashJs.Excel.BuiltInStyle.accent5
+import typings.officeDashJs.Excel.BuiltInStyle.accent5_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent5_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent5_60
+import typings.officeDashJs.Excel.BuiltInStyle.accent6
+import typings.officeDashJs.Excel.BuiltInStyle.accent6_20
+import typings.officeDashJs.Excel.BuiltInStyle.accent6_40
+import typings.officeDashJs.Excel.BuiltInStyle.accent6_60
+import typings.officeDashJs.Excel.BuiltInStyle.bad
+import typings.officeDashJs.Excel.BuiltInStyle.calculation
+import typings.officeDashJs.Excel.BuiltInStyle.checkCell
+import typings.officeDashJs.Excel.BuiltInStyle.comma
+import typings.officeDashJs.Excel.BuiltInStyle.currency
+import typings.officeDashJs.Excel.BuiltInStyle.emphasis1
+import typings.officeDashJs.Excel.BuiltInStyle.emphasis2
+import typings.officeDashJs.Excel.BuiltInStyle.emphasis3
+import typings.officeDashJs.Excel.BuiltInStyle.explanatoryText
+import typings.officeDashJs.Excel.BuiltInStyle.good
+import typings.officeDashJs.Excel.BuiltInStyle.heading1
+import typings.officeDashJs.Excel.BuiltInStyle.heading2
+import typings.officeDashJs.Excel.BuiltInStyle.heading3
+import typings.officeDashJs.Excel.BuiltInStyle.heading4
+import typings.officeDashJs.Excel.BuiltInStyle.hlink
+import typings.officeDashJs.Excel.BuiltInStyle.hlinkTrav
+import typings.officeDashJs.Excel.BuiltInStyle.input
+import typings.officeDashJs.Excel.BuiltInStyle.linkedCell
+import typings.officeDashJs.Excel.BuiltInStyle.neutral
+import typings.officeDashJs.Excel.BuiltInStyle.normal
+import typings.officeDashJs.Excel.BuiltInStyle.note
+import typings.officeDashJs.Excel.BuiltInStyle.output
+import typings.officeDashJs.Excel.BuiltInStyle.percent
+import typings.officeDashJs.Excel.BuiltInStyle.sheetTitle
+import typings.officeDashJs.Excel.BuiltInStyle.total
+import typings.officeDashJs.Excel.BuiltInStyle.warningText
+import typings.officeDashJs.Excel.BuiltInStyle.wholeComma
+import typings.officeDashJs.Excel.BuiltInStyle.wholeDollar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -169,59 +222,163 @@ object BuiltInStyle extends js.Object {
   @js.native
   sealed trait wholeDollar extends BuiltInStyle
   
-  /* "Accent1" */ val accent1: typings.officeDashJs.Excel.BuiltInStyle.accent1 with String = js.native
-  /* "Accent1_20" */ val accent1_20: typings.officeDashJs.Excel.BuiltInStyle.accent1_20 with String = js.native
-  /* "Accent1_40" */ val accent1_40: typings.officeDashJs.Excel.BuiltInStyle.accent1_40 with String = js.native
-  /* "Accent1_60" */ val accent1_60: typings.officeDashJs.Excel.BuiltInStyle.accent1_60 with String = js.native
-  /* "Accent2" */ val accent2: typings.officeDashJs.Excel.BuiltInStyle.accent2 with String = js.native
-  /* "Accent2_20" */ val accent2_20: typings.officeDashJs.Excel.BuiltInStyle.accent2_20 with String = js.native
-  /* "Accent2_40" */ val accent2_40: typings.officeDashJs.Excel.BuiltInStyle.accent2_40 with String = js.native
-  /* "Accent2_60" */ val accent2_60: typings.officeDashJs.Excel.BuiltInStyle.accent2_60 with String = js.native
-  /* "Accent3" */ val accent3: typings.officeDashJs.Excel.BuiltInStyle.accent3 with String = js.native
-  /* "Accent3_20" */ val accent3_20: typings.officeDashJs.Excel.BuiltInStyle.accent3_20 with String = js.native
-  /* "Accent3_40" */ val accent3_40: typings.officeDashJs.Excel.BuiltInStyle.accent3_40 with String = js.native
-  /* "Accent3_60" */ val accent3_60: typings.officeDashJs.Excel.BuiltInStyle.accent3_60 with String = js.native
-  /* "Accent4" */ val accent4: typings.officeDashJs.Excel.BuiltInStyle.accent4 with String = js.native
-  /* "Accent4_20" */ val accent4_20: typings.officeDashJs.Excel.BuiltInStyle.accent4_20 with String = js.native
-  /* "Accent4_40" */ val accent4_40: typings.officeDashJs.Excel.BuiltInStyle.accent4_40 with String = js.native
-  /* "Accent4_60" */ val accent4_60: typings.officeDashJs.Excel.BuiltInStyle.accent4_60 with String = js.native
-  /* "Accent5" */ val accent5: typings.officeDashJs.Excel.BuiltInStyle.accent5 with String = js.native
-  /* "Accent5_20" */ val accent5_20: typings.officeDashJs.Excel.BuiltInStyle.accent5_20 with String = js.native
-  /* "Accent5_40" */ val accent5_40: typings.officeDashJs.Excel.BuiltInStyle.accent5_40 with String = js.native
-  /* "Accent5_60" */ val accent5_60: typings.officeDashJs.Excel.BuiltInStyle.accent5_60 with String = js.native
-  /* "Accent6" */ val accent6: typings.officeDashJs.Excel.BuiltInStyle.accent6 with String = js.native
-  /* "Accent6_20" */ val accent6_20: typings.officeDashJs.Excel.BuiltInStyle.accent6_20 with String = js.native
-  /* "Accent6_40" */ val accent6_40: typings.officeDashJs.Excel.BuiltInStyle.accent6_40 with String = js.native
-  /* "Accent6_60" */ val accent6_60: typings.officeDashJs.Excel.BuiltInStyle.accent6_60 with String = js.native
-  /* "Bad" */ val bad: typings.officeDashJs.Excel.BuiltInStyle.bad with String = js.native
-  /* "Calculation" */ val calculation: typings.officeDashJs.Excel.BuiltInStyle.calculation with String = js.native
-  /* "CheckCell" */ val checkCell: typings.officeDashJs.Excel.BuiltInStyle.checkCell with String = js.native
-  /* "Comma" */ val comma: typings.officeDashJs.Excel.BuiltInStyle.comma with String = js.native
-  /* "Currency" */ val currency: typings.officeDashJs.Excel.BuiltInStyle.currency with String = js.native
-  /* "Emphasis1" */ val emphasis1: typings.officeDashJs.Excel.BuiltInStyle.emphasis1 with String = js.native
-  /* "Emphasis2" */ val emphasis2: typings.officeDashJs.Excel.BuiltInStyle.emphasis2 with String = js.native
-  /* "Emphasis3" */ val emphasis3: typings.officeDashJs.Excel.BuiltInStyle.emphasis3 with String = js.native
-  /* "ExplanatoryText" */ val explanatoryText: typings.officeDashJs.Excel.BuiltInStyle.explanatoryText with String = js.native
-  /* "Good" */ val good: typings.officeDashJs.Excel.BuiltInStyle.good with String = js.native
-  /* "Heading1" */ val heading1: typings.officeDashJs.Excel.BuiltInStyle.heading1 with String = js.native
-  /* "Heading2" */ val heading2: typings.officeDashJs.Excel.BuiltInStyle.heading2 with String = js.native
-  /* "Heading3" */ val heading3: typings.officeDashJs.Excel.BuiltInStyle.heading3 with String = js.native
-  /* "Heading4" */ val heading4: typings.officeDashJs.Excel.BuiltInStyle.heading4 with String = js.native
-  /* "Hlink" */ val hlink: typings.officeDashJs.Excel.BuiltInStyle.hlink with String = js.native
-  /* "HlinkTrav" */ val hlinkTrav: typings.officeDashJs.Excel.BuiltInStyle.hlinkTrav with String = js.native
-  /* "Input" */ val input: typings.officeDashJs.Excel.BuiltInStyle.input with String = js.native
-  /* "LinkedCell" */ val linkedCell: typings.officeDashJs.Excel.BuiltInStyle.linkedCell with String = js.native
-  /* "Neutral" */ val neutral: typings.officeDashJs.Excel.BuiltInStyle.neutral with String = js.native
-  /* "Normal" */ val normal: typings.officeDashJs.Excel.BuiltInStyle.normal with String = js.native
-  /* "Note" */ val note: typings.officeDashJs.Excel.BuiltInStyle.note with String = js.native
-  /* "Output" */ val output: typings.officeDashJs.Excel.BuiltInStyle.output with String = js.native
-  /* "Percent" */ val percent: typings.officeDashJs.Excel.BuiltInStyle.percent with String = js.native
-  /* "SheetTitle" */ val sheetTitle: typings.officeDashJs.Excel.BuiltInStyle.sheetTitle with String = js.native
-  /* "Total" */ val total: typings.officeDashJs.Excel.BuiltInStyle.total with String = js.native
-  /* "WarningText" */ val warningText: typings.officeDashJs.Excel.BuiltInStyle.warningText with String = js.native
-  /* "WholeComma" */ val wholeComma: typings.officeDashJs.Excel.BuiltInStyle.wholeComma with String = js.native
-  /* "WholeDollar" */ val wholeDollar: typings.officeDashJs.Excel.BuiltInStyle.wholeDollar with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BuiltInStyle with String] = js.native
+  /* "Accent1" */ @js.native
+  object accent1 extends TopLevel[accent1 with String]
+  
+  /* "Accent1_20" */ @js.native
+  object accent1_20 extends TopLevel[accent1_20 with String]
+  
+  /* "Accent1_40" */ @js.native
+  object accent1_40 extends TopLevel[accent1_40 with String]
+  
+  /* "Accent1_60" */ @js.native
+  object accent1_60 extends TopLevel[accent1_60 with String]
+  
+  /* "Accent2" */ @js.native
+  object accent2 extends TopLevel[accent2 with String]
+  
+  /* "Accent2_20" */ @js.native
+  object accent2_20 extends TopLevel[accent2_20 with String]
+  
+  /* "Accent2_40" */ @js.native
+  object accent2_40 extends TopLevel[accent2_40 with String]
+  
+  /* "Accent2_60" */ @js.native
+  object accent2_60 extends TopLevel[accent2_60 with String]
+  
+  /* "Accent3" */ @js.native
+  object accent3 extends TopLevel[accent3 with String]
+  
+  /* "Accent3_20" */ @js.native
+  object accent3_20 extends TopLevel[accent3_20 with String]
+  
+  /* "Accent3_40" */ @js.native
+  object accent3_40 extends TopLevel[accent3_40 with String]
+  
+  /* "Accent3_60" */ @js.native
+  object accent3_60 extends TopLevel[accent3_60 with String]
+  
+  /* "Accent4" */ @js.native
+  object accent4 extends TopLevel[accent4 with String]
+  
+  /* "Accent4_20" */ @js.native
+  object accent4_20 extends TopLevel[accent4_20 with String]
+  
+  /* "Accent4_40" */ @js.native
+  object accent4_40 extends TopLevel[accent4_40 with String]
+  
+  /* "Accent4_60" */ @js.native
+  object accent4_60 extends TopLevel[accent4_60 with String]
+  
+  /* "Accent5" */ @js.native
+  object accent5 extends TopLevel[accent5 with String]
+  
+  /* "Accent5_20" */ @js.native
+  object accent5_20 extends TopLevel[accent5_20 with String]
+  
+  /* "Accent5_40" */ @js.native
+  object accent5_40 extends TopLevel[accent5_40 with String]
+  
+  /* "Accent5_60" */ @js.native
+  object accent5_60 extends TopLevel[accent5_60 with String]
+  
+  /* "Accent6" */ @js.native
+  object accent6 extends TopLevel[accent6 with String]
+  
+  /* "Accent6_20" */ @js.native
+  object accent6_20 extends TopLevel[accent6_20 with String]
+  
+  /* "Accent6_40" */ @js.native
+  object accent6_40 extends TopLevel[accent6_40 with String]
+  
+  /* "Accent6_60" */ @js.native
+  object accent6_60 extends TopLevel[accent6_60 with String]
+  
+  /* "Bad" */ @js.native
+  object bad extends TopLevel[bad with String]
+  
+  /* "Calculation" */ @js.native
+  object calculation extends TopLevel[calculation with String]
+  
+  /* "CheckCell" */ @js.native
+  object checkCell extends TopLevel[checkCell with String]
+  
+  /* "Comma" */ @js.native
+  object comma extends TopLevel[comma with String]
+  
+  /* "Currency" */ @js.native
+  object currency extends TopLevel[currency with String]
+  
+  /* "Emphasis1" */ @js.native
+  object emphasis1 extends TopLevel[emphasis1 with String]
+  
+  /* "Emphasis2" */ @js.native
+  object emphasis2 extends TopLevel[emphasis2 with String]
+  
+  /* "Emphasis3" */ @js.native
+  object emphasis3 extends TopLevel[emphasis3 with String]
+  
+  /* "ExplanatoryText" */ @js.native
+  object explanatoryText extends TopLevel[explanatoryText with String]
+  
+  /* "Good" */ @js.native
+  object good extends TopLevel[good with String]
+  
+  /* "Heading1" */ @js.native
+  object heading1 extends TopLevel[heading1 with String]
+  
+  /* "Heading2" */ @js.native
+  object heading2 extends TopLevel[heading2 with String]
+  
+  /* "Heading3" */ @js.native
+  object heading3 extends TopLevel[heading3 with String]
+  
+  /* "Heading4" */ @js.native
+  object heading4 extends TopLevel[heading4 with String]
+  
+  /* "Hlink" */ @js.native
+  object hlink extends TopLevel[hlink with String]
+  
+  /* "HlinkTrav" */ @js.native
+  object hlinkTrav extends TopLevel[hlinkTrav with String]
+  
+  /* "Input" */ @js.native
+  object input extends TopLevel[input with String]
+  
+  /* "LinkedCell" */ @js.native
+  object linkedCell extends TopLevel[linkedCell with String]
+  
+  /* "Neutral" */ @js.native
+  object neutral extends TopLevel[neutral with String]
+  
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "Note" */ @js.native
+  object note extends TopLevel[note with String]
+  
+  /* "Output" */ @js.native
+  object output extends TopLevel[output with String]
+  
+  /* "Percent" */ @js.native
+  object percent extends TopLevel[percent with String]
+  
+  /* "SheetTitle" */ @js.native
+  object sheetTitle extends TopLevel[sheetTitle with String]
+  
+  /* "Total" */ @js.native
+  object total extends TopLevel[total with String]
+  
+  /* "WarningText" */ @js.native
+  object warningText extends TopLevel[warningText with String]
+  
+  /* "WholeComma" */ @js.native
+  object wholeComma extends TopLevel[wholeComma with String]
+  
+  /* "WholeDollar" */ @js.native
+  object wholeDollar extends TopLevel[wholeDollar with String]
+  
 }
 

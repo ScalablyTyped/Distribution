@@ -1,5 +1,9 @@
 package typings.jqueryDotAjaxfile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jqueryDotAjaxfile.DataType.Json
+import typings.jqueryDotAjaxfile.DataType.Text
+import typings.jqueryDotAjaxfile.DataType.Xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object DataType extends js.Object {
   @js.native
   sealed trait Xml extends DataType
   
-  /* 0 */ val Json: typings.jqueryDotAjaxfile.DataType.Json with Double = js.native
-  /* 2 */ val Text: typings.jqueryDotAjaxfile.DataType.Text with Double = js.native
-  /* 1 */ val Xml: typings.jqueryDotAjaxfile.DataType.Xml with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataType with Double] = js.native
+  /* 0 */ @js.native
+  object Json extends TopLevel[Json with Double]
+  
+  /* 2 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 1 */ @js.native
+  object Xml extends TopLevel[Xml with Double]
+  
 }
 

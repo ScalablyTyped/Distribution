@@ -1,5 +1,21 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Ban
+import typings.steamDashClient.steamDashClientMod.EChatPermission.ChangeAccess
+import typings.steamDashClient.steamDashClientMod.EChatPermission.ChangePermissions
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Close
+import typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneDefault
+import typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneNotInClanDefault
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Invite
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Kick
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Mask
+import typings.steamDashClient.steamDashClientMod.EChatPermission.MemberDefault
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Mute
+import typings.steamDashClient.steamDashClientMod.EChatPermission.OfficerDefault
+import typings.steamDashClient.steamDashClientMod.EChatPermission.OwnerDefault
+import typings.steamDashClient.steamDashClientMod.EChatPermission.SetMetadata
+import typings.steamDashClient.steamDashClientMod.EChatPermission.Talk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,22 +77,52 @@ object EChatPermission extends js.Object {
   @js.native
   sealed trait Talk extends EChatPermission
   
-  /* 256 */ val Ban: typings.steamDashClient.steamDashClientMod.EChatPermission.Ban with Double = js.native
-  /* 512 */ val ChangeAccess: typings.steamDashClient.steamDashClientMod.EChatPermission.ChangeAccess with Double = js.native
-  /* 128 */ val ChangePermissions: typings.steamDashClient.steamDashClientMod.EChatPermission.ChangePermissions with Double = js.native
-  /* 1 */ val Close: typings.steamDashClient.steamDashClientMod.EChatPermission.Close with Double = js.native
-  /* 8 | 2 */ val EveryoneDefault: typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneDefault with Double = js.native
-  /* 8 */ val EveryoneNotInClanDefault: typings.steamDashClient.steamDashClientMod.EChatPermission.EveryoneNotInClanDefault with Double = js.native
-  /* 2 */ val Invite: typings.steamDashClient.steamDashClientMod.EChatPermission.Invite with Double = js.native
-  /* 16 */ val Kick: typings.steamDashClient.steamDashClientMod.EChatPermission.Kick with Double = js.native
-  /* 1019 */ val Mask: typings.steamDashClient.steamDashClientMod.EChatPermission.Mask with Double = js.native
-  /* 256 | 16 | 8 | 2 */ val MemberDefault: typings.steamDashClient.steamDashClientMod.EChatPermission.MemberDefault with Double = js.native
-  /* 32 */ val Mute: typings.steamDashClient.steamDashClientMod.EChatPermission.Mute with Double = js.native
-  /* 256 | 16 | 8 | 2 */ val OfficerDefault: typings.steamDashClient.steamDashClientMod.EChatPermission.OfficerDefault with Double = js.native
-  /* 512 | 256 | 64 | 32 | 16 | 8 | 2 | 1 */ val OwnerDefault: typings.steamDashClient.steamDashClientMod.EChatPermission.OwnerDefault with Double = js.native
-  /* 64 */ val SetMetadata: typings.steamDashClient.steamDashClientMod.EChatPermission.SetMetadata with Double = js.native
-  /* 8 */ val Talk: typings.steamDashClient.steamDashClientMod.EChatPermission.Talk with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatPermission with Double] = js.native
+  /* 256 */ @js.native
+  object Ban extends TopLevel[Ban with Double]
+  
+  /* 512 */ @js.native
+  object ChangeAccess extends TopLevel[ChangeAccess with Double]
+  
+  /* 128 */ @js.native
+  object ChangePermissions extends TopLevel[ChangePermissions with Double]
+  
+  /* 1 */ @js.native
+  object Close extends TopLevel[Close with Double]
+  
+  /* 8 | 2 */ @js.native
+  object EveryoneDefault extends TopLevel[EveryoneDefault with Double]
+  
+  /* 8 */ @js.native
+  object EveryoneNotInClanDefault extends TopLevel[EveryoneNotInClanDefault with Double]
+  
+  /* 2 */ @js.native
+  object Invite extends TopLevel[Invite with Double]
+  
+  /* 16 */ @js.native
+  object Kick extends TopLevel[Kick with Double]
+  
+  /* 1019 */ @js.native
+  object Mask extends TopLevel[Mask with Double]
+  
+  /* 256 | 16 | 8 | 2 */ @js.native
+  object MemberDefault extends TopLevel[MemberDefault with Double]
+  
+  /* 32 */ @js.native
+  object Mute extends TopLevel[Mute with Double]
+  
+  /* 256 | 16 | 8 | 2 */ @js.native
+  object OfficerDefault extends TopLevel[OfficerDefault with Double]
+  
+  /* 512 | 256 | 64 | 32 | 16 | 8 | 2 | 1 */ @js.native
+  object OwnerDefault extends TopLevel[OwnerDefault with Double]
+  
+  /* 64 */ @js.native
+  object SetMetadata extends TopLevel[SetMetadata with Double]
+  
+  /* 8 */ @js.native
+  object Talk extends TopLevel[Talk with Double]
+  
 }
 

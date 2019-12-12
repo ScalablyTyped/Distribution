@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.`new`
+import typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object WebAccountSelectionOptions extends js.Object {
   @js.native
   sealed trait `new` extends WebAccountSelectionOptions
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.default with Double = js.native
-  /* 1 */ val `new`: typings.winrtDashUwp.Windows.Security.Authentication.Web.Provider.WebAccountSelectionOptions.`new` with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAccountSelectionOptions with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object `new` extends TopLevel[`new` with Double]
+  
 }
 

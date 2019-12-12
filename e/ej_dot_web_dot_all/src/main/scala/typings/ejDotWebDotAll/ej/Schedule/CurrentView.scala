@@ -1,5 +1,12 @@
 package typings.ejDotWebDotAll.ej.Schedule
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Agenda
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.CustomView
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Day
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Month
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Week
+import typings.ejDotWebDotAll.ej.Schedule.CurrentView.Workweek
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object CurrentView extends js.Object {
   @js.native
   sealed trait Workweek extends CurrentView
   
-  /* 4 */ val Agenda: typings.ejDotWebDotAll.ej.Schedule.CurrentView.Agenda with Double = js.native
-  /* 5 */ val CustomView: typings.ejDotWebDotAll.ej.Schedule.CurrentView.CustomView with Double = js.native
-  /* 0 */ val Day: typings.ejDotWebDotAll.ej.Schedule.CurrentView.Day with Double = js.native
-  /* 3 */ val Month: typings.ejDotWebDotAll.ej.Schedule.CurrentView.Month with Double = js.native
-  /* 1 */ val Week: typings.ejDotWebDotAll.ej.Schedule.CurrentView.Week with Double = js.native
-  /* 2 */ val Workweek: typings.ejDotWebDotAll.ej.Schedule.CurrentView.Workweek with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CurrentView with Double] = js.native
+  /* 4 */ @js.native
+  object Agenda extends TopLevel[Agenda with Double]
+  
+  /* 5 */ @js.native
+  object CustomView extends TopLevel[CustomView with Double]
+  
+  /* 0 */ @js.native
+  object Day extends TopLevel[Day with Double]
+  
+  /* 3 */ @js.native
+  object Month extends TopLevel[Month with Double]
+  
+  /* 1 */ @js.native
+  object Week extends TopLevel[Week with Double]
+  
+  /* 2 */ @js.native
+  object Workweek extends TopLevel[Workweek with Double]
+  
 }
 

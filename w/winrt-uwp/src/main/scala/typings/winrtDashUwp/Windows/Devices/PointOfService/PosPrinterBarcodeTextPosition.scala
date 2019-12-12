@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.above
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.below
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PosPrinterBarcodeTextPosition extends js.Object {
   @js.native
   sealed trait none extends PosPrinterBarcodeTextPosition
   
-  /* 1 */ val above: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.above with Double = js.native
-  /* 2 */ val below: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.below with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterBarcodeTextPosition.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterBarcodeTextPosition with Double] = js.native
+  /* 1 */ @js.native
+  object above extends TopLevel[above with Double]
+  
+  /* 2 */ @js.native
+  object below extends TopLevel[below with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

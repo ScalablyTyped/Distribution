@@ -1,5 +1,10 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.ToolbarDesign.Auto
+import typings.openui5.sap.m.ToolbarDesign.Info
+import typings.openui5.sap.m.ToolbarDesign.Solid
+import typings.openui5.sap.m.ToolbarDesign.Transparent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object ToolbarDesign extends js.Object {
   @js.native
   sealed trait Transparent extends ToolbarDesign
   
-  /* 0 */ val Auto: typings.openui5.sap.m.ToolbarDesign.Auto with Double = js.native
-  /* 1 */ val Info: typings.openui5.sap.m.ToolbarDesign.Info with Double = js.native
-  /* 2 */ val Solid: typings.openui5.sap.m.ToolbarDesign.Solid with Double = js.native
-  /* 3 */ val Transparent: typings.openui5.sap.m.ToolbarDesign.Transparent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ToolbarDesign with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object Info extends TopLevel[Info with Double]
+  
+  /* 2 */ @js.native
+  object Solid extends TopLevel[Solid with Double]
+  
+  /* 3 */ @js.native
+  object Transparent extends TopLevel[Transparent with Double]
+  
 }
 

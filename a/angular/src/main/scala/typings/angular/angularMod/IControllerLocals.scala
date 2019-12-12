@@ -13,19 +13,11 @@ import scala.scalajs.js.annotation._
 /**
   * The minimal local definitions required by $controller(ctrl, locals) calls.
   */
+@js.native
 trait IControllerLocals extends js.Object {
   @JSName("$element")
-  var $element: JQuery
+  var $element: JQuery = js.native
   @JSName("$scope")
-  var $scope: IScope
-}
-
-object IControllerLocals {
-  @scala.inline
-  def apply($element: JQuery, $scope: IScope): IControllerLocals = {
-    val __obj = js.Dynamic.literal($element = $element.asInstanceOf[js.Any], $scope = $scope.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[IControllerLocals]
-  }
+  var $scope: IScope = js.native
 }
 

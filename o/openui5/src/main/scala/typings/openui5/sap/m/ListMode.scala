@@ -1,5 +1,12 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.ListMode.Delete
+import typings.openui5.sap.m.ListMode.MultiSelect
+import typings.openui5.sap.m.ListMode.None
+import typings.openui5.sap.m.ListMode.SingleSelect
+import typings.openui5.sap.m.ListMode.SingleSelectLeft
+import typings.openui5.sap.m.ListMode.SingleSelectMaster
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object ListMode extends js.Object {
   @js.native
   sealed trait SingleSelectMaster extends ListMode
   
-  /* 0 */ val Delete: typings.openui5.sap.m.ListMode.Delete with Double = js.native
-  /* 1 */ val MultiSelect: typings.openui5.sap.m.ListMode.MultiSelect with Double = js.native
-  /* 2 */ val None: typings.openui5.sap.m.ListMode.None with Double = js.native
-  /* 3 */ val SingleSelect: typings.openui5.sap.m.ListMode.SingleSelect with Double = js.native
-  /* 4 */ val SingleSelectLeft: typings.openui5.sap.m.ListMode.SingleSelectLeft with Double = js.native
-  /* 5 */ val SingleSelectMaster: typings.openui5.sap.m.ListMode.SingleSelectMaster with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListMode with Double] = js.native
+  /* 0 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 1 */ @js.native
+  object MultiSelect extends TopLevel[MultiSelect with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object SingleSelect extends TopLevel[SingleSelect with Double]
+  
+  /* 4 */ @js.native
+  object SingleSelectLeft extends TopLevel[SingleSelectLeft with Double]
+  
+  /* 5 */ @js.native
+  object SingleSelectMaster extends TopLevel[SingleSelectMaster with Double]
+  
 }
 

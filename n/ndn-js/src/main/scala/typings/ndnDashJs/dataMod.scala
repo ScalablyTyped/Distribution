@@ -1,7 +1,13 @@
 package typings.ndnDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.ndnDashJs.blobMod.Blob
 import typings.ndnDashJs.dataMod.ContentType
+import typings.ndnDashJs.dataMod.ContentType.BLOB
+import typings.ndnDashJs.dataMod.ContentType.KEY
+import typings.ndnDashJs.dataMod.ContentType.LINK
+import typings.ndnDashJs.dataMod.ContentType.NACK
+import typings.ndnDashJs.dataMod.ContentType.OTHER_CODE
 import typings.ndnDashJs.dataMod.Data
 import typings.ndnDashJs.dataMod.MetaInfo
 import typings.ndnDashJs.nameMod.Name
@@ -70,13 +76,23 @@ object dataMod extends js.Object {
     @js.native
     sealed trait OTHER_CODE extends ContentType
     
-    /* 0 */ val BLOB: typings.ndnDashJs.dataMod.ContentType.BLOB with Double = js.native
-    /* 2 */ val KEY: typings.ndnDashJs.dataMod.ContentType.KEY with Double = js.native
-    /* 1 */ val LINK: typings.ndnDashJs.dataMod.ContentType.LINK with Double = js.native
-    /* 3 */ val NACK: typings.ndnDashJs.dataMod.ContentType.NACK with Double = js.native
-    /* 0x7fff */ val OTHER_CODE: typings.ndnDashJs.dataMod.ContentType.OTHER_CODE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
+    /* 0 */ @js.native
+    object BLOB extends TopLevel[BLOB with Double]
+    
+    /* 2 */ @js.native
+    object KEY extends TopLevel[KEY with Double]
+    
+    /* 1 */ @js.native
+    object LINK extends TopLevel[LINK with Double]
+    
+    /* 3 */ @js.native
+    object NACK extends TopLevel[NACK with Double]
+    
+    /* 0x7fff */ @js.native
+    object OTHER_CODE extends TopLevel[OTHER_CODE with Double]
+    
   }
   
 }

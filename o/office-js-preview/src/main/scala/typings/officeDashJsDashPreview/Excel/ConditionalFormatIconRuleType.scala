@@ -1,5 +1,11 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.formula
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.invalid
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.number
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percent
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ConditionalFormatIconRuleType extends js.Object {
   @js.native
   sealed trait percentile extends ConditionalFormatIconRuleType
   
-  /* "Formula" */ val formula: typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.formula with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.invalid with String = js.native
-  /* "Number" */ val number: typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.number with String = js.native
-  /* "Percent" */ val percent: typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percent with String = js.native
-  /* "Percentile" */ val percentile: typings.officeDashJsDashPreview.Excel.ConditionalFormatIconRuleType.percentile with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalFormatIconRuleType with String] = js.native
+  /* "Formula" */ @js.native
+  object formula extends TopLevel[formula with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "Number" */ @js.native
+  object number extends TopLevel[number with String]
+  
+  /* "Percent" */ @js.native
+  object percent extends TopLevel[percent with String]
+  
+  /* "Percentile" */ @js.native
+  object percentile extends TopLevel[percentile with String]
+  
 }
 

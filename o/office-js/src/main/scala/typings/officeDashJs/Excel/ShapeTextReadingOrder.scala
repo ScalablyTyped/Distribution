@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeTextReadingOrder.leftToRight
+import typings.officeDashJs.Excel.ShapeTextReadingOrder.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ShapeTextReadingOrder extends js.Object {
   @js.native
   sealed trait rightToLeft extends ShapeTextReadingOrder
   
-  /* "LeftToRight" */ val leftToRight: typings.officeDashJs.Excel.ShapeTextReadingOrder.leftToRight with String = js.native
-  /* "RightToLeft" */ val rightToLeft: typings.officeDashJs.Excel.ShapeTextReadingOrder.rightToLeft with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeTextReadingOrder with String] = js.native
+  /* "LeftToRight" */ @js.native
+  object leftToRight extends TopLevel[leftToRight with String]
+  
+  /* "RightToLeft" */ @js.native
+  object rightToLeft extends TopLevel[rightToLeft with String]
+  
 }
 

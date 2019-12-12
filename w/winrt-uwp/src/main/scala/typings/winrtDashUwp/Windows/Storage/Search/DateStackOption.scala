@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.month
+import typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.none
+import typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object DateStackOption extends js.Object {
   @js.native
   sealed trait year extends DateStackOption
   
-  /* 2 */ val month: typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.month with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.none with Double = js.native
-  /* 1 */ val year: typings.winrtDashUwp.Windows.Storage.Search.DateStackOption.year with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateStackOption with Double] = js.native
+  /* 2 */ @js.native
+  object month extends TopLevel[month with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object year extends TopLevel[year with Double]
+  
 }
 

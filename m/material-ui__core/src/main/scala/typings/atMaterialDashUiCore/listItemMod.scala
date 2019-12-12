@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.listItemListItemMod.ListItemProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object listItemMod extends js.Object {
     def this(props: ListItemProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ListItemProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ListItemProps]]
+  
 }
 

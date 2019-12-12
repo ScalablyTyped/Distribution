@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.basic
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.default
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.enterprise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object ContactCardHeaderKind extends js.Object {
   @js.native
   sealed trait enterprise extends ContactCardHeaderKind
   
-  /* 1 */ val basic: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.basic with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.default with Double = js.native
-  /* 2 */ val enterprise: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactCardHeaderKind.enterprise with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactCardHeaderKind with Double] = js.native
+  /* 1 */ @js.native
+  object basic extends TopLevel[basic with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 2 */ @js.native
+  object enterprise extends TopLevel[enterprise with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.PivotAxis.column
+import typings.officeDashJsDashPreview.Excel.PivotAxis.data
+import typings.officeDashJsDashPreview.Excel.PivotAxis.filter
+import typings.officeDashJsDashPreview.Excel.PivotAxis.row
+import typings.officeDashJsDashPreview.Excel.PivotAxis.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,12 +62,22 @@ object PivotAxis extends js.Object {
   @js.native
   sealed trait unknown extends PivotAxis
   
-  /* "Column" */ val column: typings.officeDashJsDashPreview.Excel.PivotAxis.column with String = js.native
-  /* "Data" */ val data: typings.officeDashJsDashPreview.Excel.PivotAxis.data with String = js.native
-  /* "Filter" */ val filter: typings.officeDashJsDashPreview.Excel.PivotAxis.filter with String = js.native
-  /* "Row" */ val row: typings.officeDashJsDashPreview.Excel.PivotAxis.row with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJsDashPreview.Excel.PivotAxis.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PivotAxis with String] = js.native
+  /* "Column" */ @js.native
+  object column extends TopLevel[column with String]
+  
+  /* "Data" */ @js.native
+  object data extends TopLevel[data with String]
+  
+  /* "Filter" */ @js.native
+  object filter extends TopLevel[filter with String]
+  
+  /* "Row" */ @js.native
+  object row extends TopLevel[row with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

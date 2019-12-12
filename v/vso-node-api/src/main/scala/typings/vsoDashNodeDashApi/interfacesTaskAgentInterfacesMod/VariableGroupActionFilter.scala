@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Manage
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.None
+import typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object VariableGroupActionFilter extends js.Object {
   @js.native
   sealed trait Use extends VariableGroupActionFilter
   
-  /* 2 */ val Manage: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Manage with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.None with Double = js.native
-  /* 16 */ val Use: typings.vsoDashNodeDashApi.interfacesTaskAgentInterfacesMod.VariableGroupActionFilter.Use with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VariableGroupActionFilter with Double] = js.native
+  /* 2 */ @js.native
+  object Manage extends TopLevel[Manage with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 16 */ @js.native
+  object Use extends TopLevel[Use with Double]
+  
 }
 

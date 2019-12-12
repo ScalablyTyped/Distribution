@@ -1,5 +1,6 @@
 package typings.es6DashShim
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.ArrayLike
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
@@ -64,15 +65,16 @@ object es6DashShimMod extends js.Object {
   }
   
   var Array: ArrayConstructor = js.native
-  var Map: MapConstructor = js.native
   var Math: typings.es6DashShim.Math = js.native
   var Number: NumberConstructor = js.native
   var Object: ObjectConstructor = js.native
-  var Promise: PromiseConstructor = js.native
-  var Set: SetConstructor = js.native
   var String: StringConstructor = js.native
-  var WeakMap: WeakMapConstructor = js.native
-  var WeakSet: WeakSetConstructor = js.native
+  @js.native
+  object Map extends TopLevel[MapConstructor]
+  
+  @js.native
+  object Promise extends TopLevel[PromiseConstructor]
+  
   @js.native
   object Reflect extends js.Object {
     @JSName("apply")
@@ -93,6 +95,15 @@ object es6DashShimMod extends js.Object {
     def set(target: js.Any, propertyKey: KeyOfProperty, value: js.Any, receiver: js.Any): Boolean = js.native
     def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = js.native
   }
+  
+  @js.native
+  object Set extends TopLevel[SetConstructor]
+  
+  @js.native
+  object WeakMap extends TopLevel[WeakMapConstructor]
+  
+  @js.native
+  object WeakSet extends TopLevel[WeakSetConstructor]
   
 }
 

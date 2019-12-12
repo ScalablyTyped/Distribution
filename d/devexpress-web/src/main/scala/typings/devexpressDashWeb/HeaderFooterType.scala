@@ -1,5 +1,10 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.HeaderFooterType.Even
+import typings.devexpressDashWeb.HeaderFooterType.First
+import typings.devexpressDashWeb.HeaderFooterType.Odd
+import typings.devexpressDashWeb.HeaderFooterType.Primary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object HeaderFooterType extends js.Object {
   @js.native
   sealed trait Primary extends HeaderFooterType
   
-  /* 2 */ val Even: typings.devexpressDashWeb.HeaderFooterType.Even with Double = js.native
-  /* 0 */ val First: typings.devexpressDashWeb.HeaderFooterType.First with Double = js.native
-  /* 1 */ val Odd: typings.devexpressDashWeb.HeaderFooterType.Odd with Double = js.native
-  /* 1 */ val Primary: typings.devexpressDashWeb.HeaderFooterType.Primary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HeaderFooterType with Double] = js.native
+  /* 2 */ @js.native
+  object Even extends TopLevel[Even with Double]
+  
+  /* 0 */ @js.native
+  object First extends TopLevel[First with Double]
+  
+  /* 1 */ @js.native
+  object Odd extends TopLevel[Odd with Double]
+  
+  /* 1 */ @js.native
+  object Primary extends TopLevel[Primary with Double]
+  
 }
 

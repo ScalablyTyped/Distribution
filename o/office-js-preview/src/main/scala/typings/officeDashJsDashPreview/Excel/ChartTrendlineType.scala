@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.exponential
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.linear
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.logarithmic
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.movingAverage
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.polynomial
+import typings.officeDashJsDashPreview.Excel.ChartTrendlineType.power
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,13 +38,25 @@ object ChartTrendlineType extends js.Object {
   @js.native
   sealed trait power extends ChartTrendlineType
   
-  /* "Exponential" */ val exponential: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.exponential with String = js.native
-  /* "Linear" */ val linear: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.linear with String = js.native
-  /* "Logarithmic" */ val logarithmic: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.logarithmic with String = js.native
-  /* "MovingAverage" */ val movingAverage: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.movingAverage with String = js.native
-  /* "Polynomial" */ val polynomial: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.polynomial with String = js.native
-  /* "Power" */ val power: typings.officeDashJsDashPreview.Excel.ChartTrendlineType.power with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartTrendlineType with String] = js.native
+  /* "Exponential" */ @js.native
+  object exponential extends TopLevel[exponential with String]
+  
+  /* "Linear" */ @js.native
+  object linear extends TopLevel[linear with String]
+  
+  /* "Logarithmic" */ @js.native
+  object logarithmic extends TopLevel[logarithmic with String]
+  
+  /* "MovingAverage" */ @js.native
+  object movingAverage extends TopLevel[movingAverage with String]
+  
+  /* "Polynomial" */ @js.native
+  object polynomial extends TopLevel[polynomial with String]
+  
+  /* "Power" */ @js.native
+  object power extends TopLevel[power with String]
+  
 }
 

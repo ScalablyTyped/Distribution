@@ -1,5 +1,7 @@
 package typings.umbraco.umbraco.resources
 
+import org.scalablytyped.runtime.TopLevel
+import typings.umbraco.umbraco.resources.OrderItemsBy.SortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +18,10 @@ object OrderItemsBy extends js.Object {
   @js.native
   sealed trait SortOrder extends OrderItemsBy
   
-  /* 0 */ val SortOrder: typings.umbraco.umbraco.resources.OrderItemsBy.SortOrder with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OrderItemsBy with Double] = js.native
+  /* 0 */ @js.native
+  object SortOrder extends TopLevel[SortOrder with Double]
+  
 }
 

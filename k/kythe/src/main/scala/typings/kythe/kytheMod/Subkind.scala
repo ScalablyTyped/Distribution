@@ -1,5 +1,23 @@
 package typings.kythe.kytheMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kythe.kytheMod.Subkind.CATEGORY
+import typings.kythe.kytheMod.Subkind.CLASS
+import typings.kythe.kytheMod.Subkind.CONSTRUCTOR
+import typings.kythe.kytheMod.Subkind.DESTRUCTOR
+import typings.kythe.kytheMod.Subkind.ENUM
+import typings.kythe.kytheMod.Subkind.ENUM_CLASS
+import typings.kythe.kytheMod.Subkind.FIELD
+import typings.kythe.kytheMod.Subkind.IMPLICIT
+import typings.kythe.kytheMod.Subkind.IMPORT
+import typings.kythe.kytheMod.Subkind.INITIALIZER
+import typings.kythe.kytheMod.Subkind.LOCAL
+import typings.kythe.kytheMod.Subkind.LOCAL_PARAMETER
+import typings.kythe.kytheMod.Subkind.METHOD
+import typings.kythe.kytheMod.Subkind.NAMESPACE
+import typings.kythe.kytheMod.Subkind.STRUCT
+import typings.kythe.kytheMod.Subkind.TYPE
+import typings.kythe.kytheMod.Subkind.UNION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,24 +79,58 @@ object Subkind extends js.Object {
   @js.native
   sealed trait UNION extends Subkind
   
-  /* "category" */ val CATEGORY: typings.kythe.kytheMod.Subkind.CATEGORY with String = js.native
-  /* "class" */ val CLASS: typings.kythe.kytheMod.Subkind.CLASS with String = js.native
-  /* "constructor" */ val CONSTRUCTOR: typings.kythe.kytheMod.Subkind.CONSTRUCTOR with String = js.native
-  /* "destructor" */ val DESTRUCTOR: typings.kythe.kytheMod.Subkind.DESTRUCTOR with String = js.native
-  /* "enum" */ val ENUM: typings.kythe.kytheMod.Subkind.ENUM with String = js.native
-  /* "enumClass" */ val ENUM_CLASS: typings.kythe.kytheMod.Subkind.ENUM_CLASS with String = js.native
-  /* "field" */ val FIELD: typings.kythe.kytheMod.Subkind.FIELD with String = js.native
-  /* "implicit" */ val IMPLICIT: typings.kythe.kytheMod.Subkind.IMPLICIT with String = js.native
-  /* "import" */ val IMPORT: typings.kythe.kytheMod.Subkind.IMPORT with String = js.native
-  /* "initializer" */ val INITIALIZER: typings.kythe.kytheMod.Subkind.INITIALIZER with String = js.native
-  /* "local" */ val LOCAL: typings.kythe.kytheMod.Subkind.LOCAL with String = js.native
-  /* "local/parameter" */ val LOCAL_PARAMETER: typings.kythe.kytheMod.Subkind.LOCAL_PARAMETER with String = js.native
-  /* "method" */ val METHOD: typings.kythe.kytheMod.Subkind.METHOD with String = js.native
-  /* "namespace" */ val NAMESPACE: typings.kythe.kytheMod.Subkind.NAMESPACE with String = js.native
-  /* "struct" */ val STRUCT: typings.kythe.kytheMod.Subkind.STRUCT with String = js.native
-  /* "type" */ val TYPE: typings.kythe.kytheMod.Subkind.TYPE with String = js.native
-  /* "union" */ val UNION: typings.kythe.kytheMod.Subkind.UNION with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Subkind with String] = js.native
+  /* "category" */ @js.native
+  object CATEGORY extends TopLevel[CATEGORY with String]
+  
+  /* "class" */ @js.native
+  object CLASS extends TopLevel[CLASS with String]
+  
+  /* "constructor" */ @js.native
+  object CONSTRUCTOR extends TopLevel[CONSTRUCTOR with String]
+  
+  /* "destructor" */ @js.native
+  object DESTRUCTOR extends TopLevel[DESTRUCTOR with String]
+  
+  /* "enum" */ @js.native
+  object ENUM extends TopLevel[ENUM with String]
+  
+  /* "enumClass" */ @js.native
+  object ENUM_CLASS extends TopLevel[ENUM_CLASS with String]
+  
+  /* "field" */ @js.native
+  object FIELD extends TopLevel[FIELD with String]
+  
+  /* "implicit" */ @js.native
+  object IMPLICIT extends TopLevel[IMPLICIT with String]
+  
+  /* "import" */ @js.native
+  object IMPORT extends TopLevel[IMPORT with String]
+  
+  /* "initializer" */ @js.native
+  object INITIALIZER extends TopLevel[INITIALIZER with String]
+  
+  /* "local" */ @js.native
+  object LOCAL extends TopLevel[LOCAL with String]
+  
+  /* "local/parameter" */ @js.native
+  object LOCAL_PARAMETER extends TopLevel[LOCAL_PARAMETER with String]
+  
+  /* "method" */ @js.native
+  object METHOD extends TopLevel[METHOD with String]
+  
+  /* "namespace" */ @js.native
+  object NAMESPACE extends TopLevel[NAMESPACE with String]
+  
+  /* "struct" */ @js.native
+  object STRUCT extends TopLevel[STRUCT with String]
+  
+  /* "type" */ @js.native
+  object TYPE extends TopLevel[TYPE with String]
+  
+  /* "union" */ @js.native
+  object UNION extends TopLevel[UNION with String]
+  
 }
 

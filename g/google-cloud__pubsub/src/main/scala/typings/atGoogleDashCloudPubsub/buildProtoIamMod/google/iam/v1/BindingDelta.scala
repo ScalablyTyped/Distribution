@@ -1,7 +1,11 @@
 package typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.ADD
+import typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.REMOVE
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -118,11 +122,17 @@ object BindingDelta extends js.Object {
     @js.native
     sealed trait REMOVE extends Action
     
-    /* 0 */ val ACTION_UNSPECIFIED: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED with Double = js.native
-    /* 1 */ val ADD: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.ADD with Double = js.native
-    /* 2 */ val REMOVE: typings.atGoogleDashCloudPubsub.buildProtoIamMod.google.iam.v1.BindingDelta.Action.REMOVE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Action with Double] = js.native
+    /* 0 */ @js.native
+    object ACTION_UNSPECIFIED extends TopLevel[ACTION_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object ADD extends TopLevel[ADD with Double]
+    
+    /* 2 */ @js.native
+    object REMOVE extends TopLevel[REMOVE with Double]
+    
   }
   
 }

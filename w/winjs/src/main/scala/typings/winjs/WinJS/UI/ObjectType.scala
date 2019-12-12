@@ -1,5 +1,10 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.UI.ObjectType.footer
+import typings.winjs.WinJS.UI.ObjectType.groupHeader
+import typings.winjs.WinJS.UI.ObjectType.header
+import typings.winjs.WinJS.UI.ObjectType.item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object ObjectType extends js.Object {
   @js.native
   sealed trait item extends ObjectType
   
-  /* 3 */ val footer: typings.winjs.WinJS.UI.ObjectType.footer with Double = js.native
-  /* 0 */ val groupHeader: typings.winjs.WinJS.UI.ObjectType.groupHeader with Double = js.native
-  /* 2 */ val header: typings.winjs.WinJS.UI.ObjectType.header with Double = js.native
-  /* 1 */ val item: typings.winjs.WinJS.UI.ObjectType.item with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ObjectType with Double] = js.native
+  /* 3 */ @js.native
+  object footer extends TopLevel[footer with Double]
+  
+  /* 0 */ @js.native
+  object groupHeader extends TopLevel[groupHeader with Double]
+  
+  /* 2 */ @js.native
+  object header extends TopLevel[header with Double]
+  
+  /* 1 */ @js.native
+  object item extends TopLevel[item with Double]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeMoney
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeTransfers
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeWalking
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestDistance
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestTime
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeAvoidClosure
+import typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeWithTraffic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +46,28 @@ object RouteOptimization extends js.Object {
   @js.native
   sealed trait timeWithTraffic extends RouteOptimization
   
-  /* 4 */ val minimizeMoney: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeMoney with Double = js.native
-  /* 5 */ val minimizeTransfers: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeTransfers with Double = js.native
-  /* 6 */ val minimizeWalking: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.minimizeWalking with Double = js.native
-  /* 1 */ val shortestDistance: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestDistance with Double = js.native
-  /* 0 */ val shortestTime: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.shortestTime with Double = js.native
-  /* 3 */ val timeAvoidClosure: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeAvoidClosure with Double = js.native
-  /* 2 */ val timeWithTraffic: typings.bingmaps.Microsoft.Maps.Directions.RouteOptimization.timeWithTraffic with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RouteOptimization with Double] = js.native
+  /* 4 */ @js.native
+  object minimizeMoney extends TopLevel[minimizeMoney with Double]
+  
+  /* 5 */ @js.native
+  object minimizeTransfers extends TopLevel[minimizeTransfers with Double]
+  
+  /* 6 */ @js.native
+  object minimizeWalking extends TopLevel[minimizeWalking with Double]
+  
+  /* 1 */ @js.native
+  object shortestDistance extends TopLevel[shortestDistance with Double]
+  
+  /* 0 */ @js.native
+  object shortestTime extends TopLevel[shortestTime with Double]
+  
+  /* 3 */ @js.native
+  object timeAvoidClosure extends TopLevel[timeAvoidClosure with Double]
+  
+  /* 2 */ @js.native
+  object timeWithTraffic extends TopLevel[timeWithTraffic with Double]
+  
 }
 

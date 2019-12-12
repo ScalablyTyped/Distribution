@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libxslt"
-version := "0.7-dt-20191126Z-73ecb3"
+version := "0.7-dt-20191126Z-d9df7b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

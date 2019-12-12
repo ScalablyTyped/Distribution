@@ -1,5 +1,26 @@
 package typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.AR_AR_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.DE_DE_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.DE_DE_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_GB_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_GB_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_SHORTFORM_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ES_ES_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ES_ES_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.FR_FR_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.FR_FR_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.JA_JP_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.JA_JP_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.KO_KR_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.KO_KR_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.PT_BR_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.PT_BR_NARROWBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ZH_CN_BROADBANDMODEL
+import typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ZH_CN_NARROWBANDMODEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,27 +92,67 @@ object BaseModelName extends js.Object {
   @js.native
   sealed trait ZH_CN_NARROWBANDMODEL extends BaseModelName
   
-  /* "ar-AR_BroadbandModel" */ val AR_AR_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.AR_AR_BROADBANDMODEL with String = js.native
-  /* "de-DE_BroadbandModel" */ val DE_DE_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.DE_DE_BROADBANDMODEL with String = js.native
-  /* "de-DE_NarrowbandModel" */ val DE_DE_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.DE_DE_NARROWBANDMODEL with String = js.native
-  /* "en-GB_BroadbandModel" */ val EN_GB_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_GB_BROADBANDMODEL with String = js.native
-  /* "en-GB_NarrowbandModel" */ val EN_GB_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_GB_NARROWBANDMODEL with String = js.native
-  /* "en-US_BroadbandModel" */ val EN_US_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_BROADBANDMODEL with String = js.native
-  /* "en-US_NarrowbandModel" */ val EN_US_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_NARROWBANDMODEL with String = js.native
-  /* "en-US_ShortForm_NarrowbandModel" */ val EN_US_SHORTFORM_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.EN_US_SHORTFORM_NARROWBANDMODEL with String = js.native
-  /* "es-ES_BroadbandModel" */ val ES_ES_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ES_ES_BROADBANDMODEL with String = js.native
-  /* "es-ES_NarrowbandModel" */ val ES_ES_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ES_ES_NARROWBANDMODEL with String = js.native
-  /* "fr-FR_BroadbandModel" */ val FR_FR_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.FR_FR_BROADBANDMODEL with String = js.native
-  /* "fr-FR_NarrowbandModel" */ val FR_FR_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.FR_FR_NARROWBANDMODEL with String = js.native
-  /* "ja-JP_BroadbandModel" */ val JA_JP_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.JA_JP_BROADBANDMODEL with String = js.native
-  /* "ja-JP_NarrowbandModel" */ val JA_JP_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.JA_JP_NARROWBANDMODEL with String = js.native
-  /* "ko-KR_BroadbandModel" */ val KO_KR_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.KO_KR_BROADBANDMODEL with String = js.native
-  /* "ko-KR_NarrowbandModel" */ val KO_KR_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.KO_KR_NARROWBANDMODEL with String = js.native
-  /* "pt-BR_BroadbandModel" */ val PT_BR_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.PT_BR_BROADBANDMODEL with String = js.native
-  /* "pt-BR_NarrowbandModel" */ val PT_BR_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.PT_BR_NARROWBANDMODEL with String = js.native
-  /* "zh-CN_BroadbandModel" */ val ZH_CN_BROADBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ZH_CN_BROADBANDMODEL with String = js.native
-  /* "zh-CN_NarrowbandModel" */ val ZH_CN_NARROWBANDMODEL: typings.watsonDashDeveloperDashCloud.speechDashToDashTextV1DashGeneratedMod.CreateAcousticModelConstants.BaseModelName.ZH_CN_NARROWBANDMODEL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BaseModelName with String] = js.native
+  /* "ar-AR_BroadbandModel" */ @js.native
+  object AR_AR_BROADBANDMODEL extends TopLevel[AR_AR_BROADBANDMODEL with String]
+  
+  /* "de-DE_BroadbandModel" */ @js.native
+  object DE_DE_BROADBANDMODEL extends TopLevel[DE_DE_BROADBANDMODEL with String]
+  
+  /* "de-DE_NarrowbandModel" */ @js.native
+  object DE_DE_NARROWBANDMODEL extends TopLevel[DE_DE_NARROWBANDMODEL with String]
+  
+  /* "en-GB_BroadbandModel" */ @js.native
+  object EN_GB_BROADBANDMODEL extends TopLevel[EN_GB_BROADBANDMODEL with String]
+  
+  /* "en-GB_NarrowbandModel" */ @js.native
+  object EN_GB_NARROWBANDMODEL extends TopLevel[EN_GB_NARROWBANDMODEL with String]
+  
+  /* "en-US_BroadbandModel" */ @js.native
+  object EN_US_BROADBANDMODEL extends TopLevel[EN_US_BROADBANDMODEL with String]
+  
+  /* "en-US_NarrowbandModel" */ @js.native
+  object EN_US_NARROWBANDMODEL extends TopLevel[EN_US_NARROWBANDMODEL with String]
+  
+  /* "en-US_ShortForm_NarrowbandModel" */ @js.native
+  object EN_US_SHORTFORM_NARROWBANDMODEL extends TopLevel[EN_US_SHORTFORM_NARROWBANDMODEL with String]
+  
+  /* "es-ES_BroadbandModel" */ @js.native
+  object ES_ES_BROADBANDMODEL extends TopLevel[ES_ES_BROADBANDMODEL with String]
+  
+  /* "es-ES_NarrowbandModel" */ @js.native
+  object ES_ES_NARROWBANDMODEL extends TopLevel[ES_ES_NARROWBANDMODEL with String]
+  
+  /* "fr-FR_BroadbandModel" */ @js.native
+  object FR_FR_BROADBANDMODEL extends TopLevel[FR_FR_BROADBANDMODEL with String]
+  
+  /* "fr-FR_NarrowbandModel" */ @js.native
+  object FR_FR_NARROWBANDMODEL extends TopLevel[FR_FR_NARROWBANDMODEL with String]
+  
+  /* "ja-JP_BroadbandModel" */ @js.native
+  object JA_JP_BROADBANDMODEL extends TopLevel[JA_JP_BROADBANDMODEL with String]
+  
+  /* "ja-JP_NarrowbandModel" */ @js.native
+  object JA_JP_NARROWBANDMODEL extends TopLevel[JA_JP_NARROWBANDMODEL with String]
+  
+  /* "ko-KR_BroadbandModel" */ @js.native
+  object KO_KR_BROADBANDMODEL extends TopLevel[KO_KR_BROADBANDMODEL with String]
+  
+  /* "ko-KR_NarrowbandModel" */ @js.native
+  object KO_KR_NARROWBANDMODEL extends TopLevel[KO_KR_NARROWBANDMODEL with String]
+  
+  /* "pt-BR_BroadbandModel" */ @js.native
+  object PT_BR_BROADBANDMODEL extends TopLevel[PT_BR_BROADBANDMODEL with String]
+  
+  /* "pt-BR_NarrowbandModel" */ @js.native
+  object PT_BR_NARROWBANDMODEL extends TopLevel[PT_BR_NARROWBANDMODEL with String]
+  
+  /* "zh-CN_BroadbandModel" */ @js.native
+  object ZH_CN_BROADBANDMODEL extends TopLevel[ZH_CN_BROADBANDMODEL with String]
+  
+  /* "zh-CN_NarrowbandModel" */ @js.native
+  object ZH_CN_NARROWBANDMODEL extends TopLevel[ZH_CN_NARROWBANDMODEL with String]
+  
 }
 

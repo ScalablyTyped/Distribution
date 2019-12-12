@@ -8,7 +8,7 @@ package object reactDashAutosuggestMod {
   import typings.react.reactMod.CSSProperties
   import typings.react.reactMod.FormEvent
   import typings.react.reactMod.ReactNode
-  import typings.std.Partial
+  import typings.reactDashAutosuggest.PartialRecordThemeKeystringCSSProperties
   import typings.std.Pick
   import typings.std.Record
 
@@ -37,5 +37,5 @@ package object reactDashAutosuggestMod {
   type RenderSuggestionsContainer = js.Function1[/* params */ RenderSuggestionsContainerParams, ReactNode]
   type ShouldRenderSuggestions = js.Function1[/* value */ String, Boolean]
   type SuggestionsFetchRequested = js.Function1[/* request */ SuggestionsFetchRequestedParams, Unit]
-  type Theme = (Record[String, String | CSSProperties]) | (Partial[Record[ThemeKey, String | CSSProperties]])
+  type Theme = (Record[String, String | CSSProperties]) | PartialRecordThemeKeystringCSSProperties
 }

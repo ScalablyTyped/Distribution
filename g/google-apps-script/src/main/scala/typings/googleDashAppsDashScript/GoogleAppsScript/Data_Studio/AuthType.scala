@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.KEY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.OAUTH2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_PASS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_TOKEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object AuthType extends js.Object {
   @js.native
   sealed trait USER_TOKEN extends AuthType
   
-  /* 3 */ val KEY: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.KEY with Double = js.native
-  /* 0 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.NONE with Double = js.native
-  /* 1 */ val OAUTH2: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.OAUTH2 with Double = js.native
-  /* 2 */ val USER_PASS: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_PASS with Double = js.native
-  /* 4 */ val USER_TOKEN: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.AuthType.USER_TOKEN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AuthType with Double] = js.native
+  /* 3 */ @js.native
+  object KEY extends TopLevel[KEY with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 1 */ @js.native
+  object OAUTH2 extends TopLevel[OAUTH2 with Double]
+  
+  /* 2 */ @js.native
+  object USER_PASS extends TopLevel[USER_PASS with Double]
+  
+  /* 4 */ @js.native
+  object USER_TOKEN extends TopLevel[USER_TOKEN with Double]
+  
 }
 

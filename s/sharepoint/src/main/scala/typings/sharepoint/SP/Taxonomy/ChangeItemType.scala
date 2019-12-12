@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.Taxonomy
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.group
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.site
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.term
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.termSet
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.termStore
+import typings.sharepoint.SP.Taxonomy.ChangeItemType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object ChangeItemType extends js.Object {
   @js.native
   sealed trait unknown extends ChangeItemType
   
-  /* 3 */ val group: typings.sharepoint.SP.Taxonomy.ChangeItemType.group with Double = js.native
-  /* 5 */ val site: typings.sharepoint.SP.Taxonomy.ChangeItemType.site with Double = js.native
-  /* 1 */ val term: typings.sharepoint.SP.Taxonomy.ChangeItemType.term with Double = js.native
-  /* 2 */ val termSet: typings.sharepoint.SP.Taxonomy.ChangeItemType.termSet with Double = js.native
-  /* 4 */ val termStore: typings.sharepoint.SP.Taxonomy.ChangeItemType.termStore with Double = js.native
-  /* 0 */ val unknown: typings.sharepoint.SP.Taxonomy.ChangeItemType.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChangeItemType with Double] = js.native
+  /* 3 */ @js.native
+  object group extends TopLevel[group with Double]
+  
+  /* 5 */ @js.native
+  object site extends TopLevel[site with Double]
+  
+  /* 1 */ @js.native
+  object term extends TopLevel[term with Double]
+  
+  /* 2 */ @js.native
+  object termSet extends TopLevel[termSet with Double]
+  
+  /* 4 */ @js.native
+  object termStore extends TopLevel[termStore with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

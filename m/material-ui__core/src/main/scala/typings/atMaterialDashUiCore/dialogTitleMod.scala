@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.dialogTitleDialogTitleMod.DialogTitleProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object dialogTitleMod extends js.Object {
     def this(props: DialogTitleProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[DialogTitleProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[DialogTitleProps]]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Storage.Search
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Search.FolderDepth.deep
+import typings.winrtDashUwp.Windows.Storage.Search.FolderDepth.shallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object FolderDepth extends js.Object {
   @js.native
   sealed trait shallow extends FolderDepth
   
-  /* 1 */ val deep: typings.winrtDashUwp.Windows.Storage.Search.FolderDepth.deep with Double = js.native
-  /* 0 */ val shallow: typings.winrtDashUwp.Windows.Storage.Search.FolderDepth.shallow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FolderDepth with Double] = js.native
+  /* 1 */ @js.native
+  object deep extends TopLevel[deep with Double]
+  
+  /* 0 */ @js.native
+  object shallow extends TopLevel[shallow with Double]
+  
 }
 

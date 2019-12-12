@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "camljs"
-version := "2.12.0-ff784c"
+version := "2.12.0-9303ba"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

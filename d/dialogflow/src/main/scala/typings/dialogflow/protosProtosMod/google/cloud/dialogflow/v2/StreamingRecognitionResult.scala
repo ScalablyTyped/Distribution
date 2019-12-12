@@ -1,7 +1,11 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.END_OF_SINGLE_UTTERANCE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.MESSAGE_TYPE_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.TRANSCRIPT
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -121,11 +125,17 @@ object StreamingRecognitionResult extends js.Object {
     @js.native
     sealed trait TRANSCRIPT extends MessageType
     
-    /* 2 */ val END_OF_SINGLE_UTTERANCE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.END_OF_SINGLE_UTTERANCE with Double = js.native
-    /* 0 */ val MESSAGE_TYPE_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.MESSAGE_TYPE_UNSPECIFIED with Double = js.native
-    /* 1 */ val TRANSCRIPT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.StreamingRecognitionResult.MessageType.TRANSCRIPT with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
+    /* 2 */ @js.native
+    object END_OF_SINGLE_UTTERANCE extends TopLevel[END_OF_SINGLE_UTTERANCE with Double]
+    
+    /* 0 */ @js.native
+    object MESSAGE_TYPE_UNSPECIFIED extends TopLevel[MESSAGE_TYPE_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object TRANSCRIPT extends TopLevel[TRANSCRIPT with Double]
+    
   }
   
 }

@@ -1,8 +1,16 @@
 package typings.atPollyjsUtils
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS
+import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.INTERCEPT
+import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.PASSTHROUGH
+import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.RECORD
+import typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.REPLAY
 import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES
+import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.ERROR
+import typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.WARN
 import typings.atPollyjsUtils.atPollyjsUtilsMod.MODES
+import typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,12 +41,20 @@ object atPollyjsUtilsMod extends js.Object {
     @js.native
     sealed trait REPLAY extends ACTIONS
     
-    /* "intercept" */ val INTERCEPT: typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.INTERCEPT with String = js.native
-    /* "passthrough" */ val PASSTHROUGH: typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.PASSTHROUGH with String = js.native
-    /* "record" */ val RECORD: typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.RECORD with String = js.native
-    /* "replay" */ val REPLAY: typings.atPollyjsUtils.atPollyjsUtilsMod.ACTIONS.REPLAY with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[ACTIONS with String] = js.native
+    /* "intercept" */ @js.native
+    object INTERCEPT extends TopLevel[INTERCEPT with String]
+    
+    /* "passthrough" */ @js.native
+    object PASSTHROUGH extends TopLevel[PASSTHROUGH with String]
+    
+    /* "record" */ @js.native
+    object RECORD extends TopLevel[RECORD with String]
+    
+    /* "replay" */ @js.native
+    object REPLAY extends TopLevel[REPLAY with String]
+    
   }
   
   @js.native
@@ -52,11 +68,18 @@ object atPollyjsUtilsMod extends js.Object {
     @js.native
     sealed trait WARN extends EXPIRY_STRATEGIES
     
-    /* "error" */ val ERROR: typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.ERROR with String = js.native
-    /* "record" */ val RECORD: typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.RECORD with String = js.native
-    /* "warn" */ val WARN: typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.WARN with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[EXPIRY_STRATEGIES with String] = js.native
+    /* "error" */ @js.native
+    object ERROR extends TopLevel[ERROR with String]
+    
+    /* "record" */ @js.native
+    object RECORD
+      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.EXPIRY_STRATEGIES.RECORD with String]
+    
+    /* "warn" */ @js.native
+    object WARN extends TopLevel[WARN with String]
+    
   }
   
   @js.native
@@ -73,12 +96,23 @@ object atPollyjsUtilsMod extends js.Object {
     @js.native
     sealed trait STOPPED extends MODES
     
-    /* "passthrough" */ val PASSTHROUGH: typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.PASSTHROUGH with String = js.native
-    /* "record" */ val RECORD: typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.RECORD with String = js.native
-    /* "replay" */ val REPLAY: typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.REPLAY with String = js.native
-    /* "stopped" */ val STOPPED: typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.STOPPED with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[MODES with String] = js.native
+    /* "passthrough" */ @js.native
+    object PASSTHROUGH
+      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.PASSTHROUGH with String]
+    
+    /* "record" */ @js.native
+    object RECORD
+      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.RECORD with String]
+    
+    /* "replay" */ @js.native
+    object REPLAY
+      extends TopLevel[typings.atPollyjsUtils.atPollyjsUtilsMod.MODES.REPLAY with String]
+    
+    /* "stopped" */ @js.native
+    object STOPPED extends TopLevel[STOPPED with String]
+    
   }
   
 }

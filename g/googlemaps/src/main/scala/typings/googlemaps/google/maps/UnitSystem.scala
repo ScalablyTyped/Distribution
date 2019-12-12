@@ -1,5 +1,8 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.UnitSystem.IMPERIAL
+import typings.googlemaps.google.maps.UnitSystem.METRIC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object UnitSystem extends js.Object {
   @js.native
   sealed trait METRIC extends UnitSystem
   
-  /* 1 */ val IMPERIAL: typings.googlemaps.google.maps.UnitSystem.IMPERIAL with Double = js.native
-  /* 0 */ val METRIC: typings.googlemaps.google.maps.UnitSystem.METRIC with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UnitSystem with Double] = js.native
+  /* 1 */ @js.native
+  object IMPERIAL extends TopLevel[IMPERIAL with Double]
+  
+  /* 0 */ @js.native
+  object METRIC extends TopLevel[METRIC with Double]
+  
 }
 

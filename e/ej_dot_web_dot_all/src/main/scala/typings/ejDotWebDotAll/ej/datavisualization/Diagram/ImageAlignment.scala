@@ -1,5 +1,16 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMax
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMid
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMin
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMax
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMid
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMin
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMax
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMid
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,17 +61,37 @@ object ImageAlignment extends js.Object {
   @js.native
   sealed trait XMinYMin extends ImageAlignment
   
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.None with Double = js.native
-  /* 9 */ val XMaxYMax: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMax with Double = js.native
-  /* 8 */ val XMaxYMid: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMid with Double = js.native
-  /* 7 */ val XMaxYMin: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMaxYMin with Double = js.native
-  /* 6 */ val XMidYMax: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMax with Double = js.native
-  /* 5 */ val XMidYMid: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMid with Double = js.native
-  /* 4 */ val XMidYMin: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMidYMin with Double = js.native
-  /* 3 */ val XMinYMax: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMax with Double = js.native
-  /* 2 */ val XMinYMid: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMid with Double = js.native
-  /* 1 */ val XMinYMin: typings.ejDotWebDotAll.ej.datavisualization.Diagram.ImageAlignment.XMinYMin with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageAlignment with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 9 */ @js.native
+  object XMaxYMax extends TopLevel[XMaxYMax with Double]
+  
+  /* 8 */ @js.native
+  object XMaxYMid extends TopLevel[XMaxYMid with Double]
+  
+  /* 7 */ @js.native
+  object XMaxYMin extends TopLevel[XMaxYMin with Double]
+  
+  /* 6 */ @js.native
+  object XMidYMax extends TopLevel[XMidYMax with Double]
+  
+  /* 5 */ @js.native
+  object XMidYMid extends TopLevel[XMidYMid with Double]
+  
+  /* 4 */ @js.native
+  object XMidYMin extends TopLevel[XMidYMin with Double]
+  
+  /* 3 */ @js.native
+  object XMinYMax extends TopLevel[XMinYMax with Double]
+  
+  /* 2 */ @js.native
+  object XMinYMid extends TopLevel[XMinYMid with Double]
+  
+  /* 1 */ @js.native
+  object XMinYMin extends TopLevel[XMinYMin with Double]
+  
 }
 

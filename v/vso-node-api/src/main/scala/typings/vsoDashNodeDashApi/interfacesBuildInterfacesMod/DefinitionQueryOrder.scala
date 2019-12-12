@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameAscending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameDescending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedAscending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedDescending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object DefinitionQueryOrder extends js.Object {
   @js.native
   sealed trait None extends DefinitionQueryOrder
   
-  /* 3 */ val DefinitionNameAscending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameAscending with Double = js.native
-  /* 4 */ val DefinitionNameDescending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.DefinitionNameDescending with Double = js.native
-  /* 1 */ val LastModifiedAscending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedAscending with Double = js.native
-  /* 2 */ val LastModifiedDescending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.LastModifiedDescending with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.DefinitionQueryOrder.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DefinitionQueryOrder with Double] = js.native
+  /* 3 */ @js.native
+  object DefinitionNameAscending extends TopLevel[DefinitionNameAscending with Double]
+  
+  /* 4 */ @js.native
+  object DefinitionNameDescending extends TopLevel[DefinitionNameDescending with Double]
+  
+  /* 1 */ @js.native
+  object LastModifiedAscending extends TopLevel[LastModifiedAscending with Double]
+  
+  /* 2 */ @js.native
+  object LastModifiedDescending extends TopLevel[LastModifiedDescending with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

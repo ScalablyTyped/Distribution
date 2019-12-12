@@ -1,5 +1,10 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.None
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.OrganizationOwned
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.TeamOwned
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.UserOwned
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,23 @@ object OwnershipType extends js.Object {
   @js.native
   sealed trait UserOwned extends OwnershipType
   
-  /* 0 */ val None: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.None with scala.Double = js.native
-  /* 1 */ val OrganizationOwned: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.OrganizationOwned with scala.Double = js.native
-  /* 2 */ val TeamOwned: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.TeamOwned with scala.Double = js.native
-  /* 3 */ val UserOwned: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.OwnershipType.UserOwned with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[OwnershipType with scala.Double] = js.native
+  /* 0 */ @js.native
+  object None
+    extends TopLevel[None with scala.Double]
+  
+  /* 1 */ @js.native
+  object OrganizationOwned
+    extends TopLevel[OrganizationOwned with scala.Double]
+  
+  /* 2 */ @js.native
+  object TeamOwned
+    extends TopLevel[TeamOwned with scala.Double]
+  
+  /* 3 */ @js.native
+  object UserOwned
+    extends TopLevel[UserOwned with scala.Double]
+  
 }
 

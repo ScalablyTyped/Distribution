@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.`protected`
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.accessSuspended
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.licenseExpired
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.protectedToOtherIdentity
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.revoked
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object DataProtectionStatus extends js.Object {
   @js.native
   sealed trait unprotected extends DataProtectionStatus
   
-  /* 5 */ val accessSuspended: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.accessSuspended with Double = js.native
-  /* 4 */ val licenseExpired: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.licenseExpired with Double = js.native
-  /* 1 */ val `protected`: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.`protected` with Double = js.native
-  /* 0 */ val protectedToOtherIdentity: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.protectedToOtherIdentity with Double = js.native
-  /* 2 */ val revoked: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.revoked with Double = js.native
-  /* 3 */ val unprotected: typings.winrtDashUwp.Windows.Security.EnterpriseData.DataProtectionStatus.unprotected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DataProtectionStatus with Double] = js.native
+  /* 5 */ @js.native
+  object accessSuspended extends TopLevel[accessSuspended with Double]
+  
+  /* 4 */ @js.native
+  object licenseExpired extends TopLevel[licenseExpired with Double]
+  
+  /* 1 */ @js.native
+  object `protected` extends TopLevel[`protected` with Double]
+  
+  /* 0 */ @js.native
+  object protectedToOtherIdentity extends TopLevel[protectedToOtherIdentity with Double]
+  
+  /* 2 */ @js.native
+  object revoked extends TopLevel[revoked with Double]
+  
+  /* 3 */ @js.native
+  object unprotected extends TopLevel[unprotected with Double]
+  
 }
 

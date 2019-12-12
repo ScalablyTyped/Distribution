@@ -1,5 +1,22 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.ChineseLunar
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Gregorian
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianArabic
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianMEFrench
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITEnglish
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITFrench
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hebrew
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hijri
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Japan
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Korea
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.KoreaJapanLunar
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.None
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.SakaEra
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Taiwan
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Thai
+import typings.sharepoint.SPClientTemplates.DateTimeCalendarType.UmAlQura
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,23 +75,55 @@ object DateTimeCalendarType extends js.Object {
   @js.native
   sealed trait UmAlQura extends DateTimeCalendarType
   
-  /* 13 */ val ChineseLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.ChineseLunar with Double = js.native
-  /* 1 */ val Gregorian: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Gregorian with Double = js.native
-  /* 9 */ val GregorianArabic: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianArabic with Double = js.native
-  /* 8 */ val GregorianMEFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianMEFrench with Double = js.native
-  /* 10 */ val GregorianXLITEnglish: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITEnglish with Double = js.native
-  /* 11 */ val GregorianXLITFrench: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.GregorianXLITFrench with Double = js.native
-  /* 7 */ val Hebrew: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hebrew with Double = js.native
-  /* 5 */ val Hijri: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Hijri with Double = js.native
-  /* 2 */ val Japan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Japan with Double = js.native
-  /* 4 */ val Korea: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Korea with Double = js.native
-  /* 12 */ val KoreaJapanLunar: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.KoreaJapanLunar with Double = js.native
-  /* 0 */ val None: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.None with Double = js.native
-  /* 14 */ val SakaEra: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.SakaEra with Double = js.native
-  /* 3 */ val Taiwan: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Taiwan with Double = js.native
-  /* 6 */ val Thai: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.Thai with Double = js.native
-  /* 15 */ val UmAlQura: typings.sharepoint.SPClientTemplates.DateTimeCalendarType.UmAlQura with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DateTimeCalendarType with Double] = js.native
+  /* 13 */ @js.native
+  object ChineseLunar extends TopLevel[ChineseLunar with Double]
+  
+  /* 1 */ @js.native
+  object Gregorian extends TopLevel[Gregorian with Double]
+  
+  /* 9 */ @js.native
+  object GregorianArabic extends TopLevel[GregorianArabic with Double]
+  
+  /* 8 */ @js.native
+  object GregorianMEFrench extends TopLevel[GregorianMEFrench with Double]
+  
+  /* 10 */ @js.native
+  object GregorianXLITEnglish extends TopLevel[GregorianXLITEnglish with Double]
+  
+  /* 11 */ @js.native
+  object GregorianXLITFrench extends TopLevel[GregorianXLITFrench with Double]
+  
+  /* 7 */ @js.native
+  object Hebrew extends TopLevel[Hebrew with Double]
+  
+  /* 5 */ @js.native
+  object Hijri extends TopLevel[Hijri with Double]
+  
+  /* 2 */ @js.native
+  object Japan extends TopLevel[Japan with Double]
+  
+  /* 4 */ @js.native
+  object Korea extends TopLevel[Korea with Double]
+  
+  /* 12 */ @js.native
+  object KoreaJapanLunar extends TopLevel[KoreaJapanLunar with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 14 */ @js.native
+  object SakaEra extends TopLevel[SakaEra with Double]
+  
+  /* 3 */ @js.native
+  object Taiwan extends TopLevel[Taiwan with Double]
+  
+  /* 6 */ @js.native
+  object Thai extends TopLevel[Thai with Double]
+  
+  /* 15 */ @js.native
+  object UmAlQura extends TopLevel[UmAlQura with Double]
+  
 }
 

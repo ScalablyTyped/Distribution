@@ -1,5 +1,49 @@
 package typings.kythe.kytheMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kythe.kytheMod.EdgeKind.ALIASES
+import typings.kythe.kytheMod.EdgeKind.ALIASES_ROOT
+import typings.kythe.kytheMod.EdgeKind.ANNOTATED_BY
+import typings.kythe.kytheMod.EdgeKind.BOUNDED_LOWER
+import typings.kythe.kytheMod.EdgeKind.BOUNDED_UPPER
+import typings.kythe.kytheMod.EdgeKind.CHILD_OF
+import typings.kythe.kytheMod.EdgeKind.CHILD_OF_CONTEXT
+import typings.kythe.kytheMod.EdgeKind.COMPLETES
+import typings.kythe.kytheMod.EdgeKind.COMPLETES_UNIQUELY
+import typings.kythe.kytheMod.EdgeKind.DEFINES
+import typings.kythe.kytheMod.EdgeKind.DEFINES_BINDING
+import typings.kythe.kytheMod.EdgeKind.DEPENDS
+import typings.kythe.kytheMod.EdgeKind.DOCUMENTS
+import typings.kythe.kytheMod.EdgeKind.EXPORTS
+import typings.kythe.kytheMod.EdgeKind.EXTENDS
+import typings.kythe.kytheMod.EdgeKind.GENERATES
+import typings.kythe.kytheMod.EdgeKind.IMPUTES
+import typings.kythe.kytheMod.EdgeKind.INSTANTIATES
+import typings.kythe.kytheMod.EdgeKind.INSTANTIATES_SPECULATIVE
+import typings.kythe.kytheMod.EdgeKind.NAMED
+import typings.kythe.kytheMod.EdgeKind.OVERRIDES
+import typings.kythe.kytheMod.EdgeKind.OVERRIDES_ROOT
+import typings.kythe.kytheMod.EdgeKind.OVERRIDES_TRANSITIVE
+import typings.kythe.kytheMod.EdgeKind.PARAM
+import typings.kythe.kytheMod.EdgeKind.REF
+import typings.kythe.kytheMod.EdgeKind.REF_CALL
+import typings.kythe.kytheMod.EdgeKind.REF_CALL_IMPLICIT
+import typings.kythe.kytheMod.EdgeKind.REF_DOC
+import typings.kythe.kytheMod.EdgeKind.REF_EXPANDS
+import typings.kythe.kytheMod.EdgeKind.REF_EXPANDS_TRANSITIVE
+import typings.kythe.kytheMod.EdgeKind.REF_FILE
+import typings.kythe.kytheMod.EdgeKind.REF_IMPLICIT
+import typings.kythe.kytheMod.EdgeKind.REF_IMPORTS
+import typings.kythe.kytheMod.EdgeKind.REF_INCLUDES
+import typings.kythe.kytheMod.EdgeKind.REF_INIT
+import typings.kythe.kytheMod.EdgeKind.REF_INIT_IMPLICIT
+import typings.kythe.kytheMod.EdgeKind.REF_QUERIES
+import typings.kythe.kytheMod.EdgeKind.SATISFIES
+import typings.kythe.kytheMod.EdgeKind.SPECIALIZES
+import typings.kythe.kytheMod.EdgeKind.SPECIALIZES_SPECULATIVE
+import typings.kythe.kytheMod.EdgeKind.TAGGED
+import typings.kythe.kytheMod.EdgeKind.TYPED
+import typings.kythe.kytheMod.EdgeKind.UNDEFINES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,50 +183,136 @@ object EdgeKind extends js.Object {
   @js.native
   sealed trait UNDEFINES extends EdgeKind
   
-  /* "/kythe/edge/aliases" */ val ALIASES: typings.kythe.kytheMod.EdgeKind.ALIASES with String = js.native
-  /* "/kythe/edge/aliases/root" */ val ALIASES_ROOT: typings.kythe.kytheMod.EdgeKind.ALIASES_ROOT with String = js.native
-  /* "/kythe/edge/annotatedby" */ val ANNOTATED_BY: typings.kythe.kytheMod.EdgeKind.ANNOTATED_BY with String = js.native
-  /* "/kythe/edge/bounded/lower" */ val BOUNDED_LOWER: typings.kythe.kytheMod.EdgeKind.BOUNDED_LOWER with String = js.native
-  /* "/kythe/edge/bounded/upper" */ val BOUNDED_UPPER: typings.kythe.kytheMod.EdgeKind.BOUNDED_UPPER with String = js.native
-  /* "/kythe/edge/childof" */ val CHILD_OF: typings.kythe.kytheMod.EdgeKind.CHILD_OF with String = js.native
-  /* "/kythe/edge/childof/context" */ val CHILD_OF_CONTEXT: typings.kythe.kytheMod.EdgeKind.CHILD_OF_CONTEXT with String = js.native
-  /* "/kythe/edge/completes" */ val COMPLETES: typings.kythe.kytheMod.EdgeKind.COMPLETES with String = js.native
-  /* "/kythe/edge/completes/uniquely" */ val COMPLETES_UNIQUELY: typings.kythe.kytheMod.EdgeKind.COMPLETES_UNIQUELY with String = js.native
-  /* "/kythe/edge/defines" */ val DEFINES: typings.kythe.kytheMod.EdgeKind.DEFINES with String = js.native
-  /* "/kythe/edge/defines/binding" */ val DEFINES_BINDING: typings.kythe.kytheMod.EdgeKind.DEFINES_BINDING with String = js.native
-  /* "/kythe/edge/depends" */ val DEPENDS: typings.kythe.kytheMod.EdgeKind.DEPENDS with String = js.native
-  /* "/kythe/edge/documents" */ val DOCUMENTS: typings.kythe.kytheMod.EdgeKind.DOCUMENTS with String = js.native
-  /* "/kythe/edge/exports" */ val EXPORTS: typings.kythe.kytheMod.EdgeKind.EXPORTS with String = js.native
-  /* "/kythe/edge/extends" */ val EXTENDS: typings.kythe.kytheMod.EdgeKind.EXTENDS with String = js.native
-  /* "/kythe/edge/generates" */ val GENERATES: typings.kythe.kytheMod.EdgeKind.GENERATES with String = js.native
-  /* "/kythe/edge/imputes" */ val IMPUTES: typings.kythe.kytheMod.EdgeKind.IMPUTES with String = js.native
-  /* "/kythe/edge/instantiates" */ val INSTANTIATES: typings.kythe.kytheMod.EdgeKind.INSTANTIATES with String = js.native
-  /* "/kythe/edge/instantiates/speculative" */ val INSTANTIATES_SPECULATIVE: typings.kythe.kytheMod.EdgeKind.INSTANTIATES_SPECULATIVE with String = js.native
-  /* "/kythe/edge/named" */ val NAMED: typings.kythe.kytheMod.EdgeKind.NAMED with String = js.native
-  /* "/kythe/edge/overrides" */ val OVERRIDES: typings.kythe.kytheMod.EdgeKind.OVERRIDES with String = js.native
-  /* "/kythe/edge/overrides/root" */ val OVERRIDES_ROOT: typings.kythe.kytheMod.EdgeKind.OVERRIDES_ROOT with String = js.native
-  /* "/kythe/edge/overrides/transitive" */ val OVERRIDES_TRANSITIVE: typings.kythe.kytheMod.EdgeKind.OVERRIDES_TRANSITIVE with String = js.native
-  /* "/kythe/edge/param" */ val PARAM: typings.kythe.kytheMod.EdgeKind.PARAM with String = js.native
-  /* "/kythe/edge/ref" */ val REF: typings.kythe.kytheMod.EdgeKind.REF with String = js.native
-  /* "/kythe/edge/ref/call" */ val REF_CALL: typings.kythe.kytheMod.EdgeKind.REF_CALL with String = js.native
-  /* "/kythe/edge/ref/call/implicit" */ val REF_CALL_IMPLICIT: typings.kythe.kytheMod.EdgeKind.REF_CALL_IMPLICIT with String = js.native
-  /* "/kythe/edge/ref/doc" */ val REF_DOC: typings.kythe.kytheMod.EdgeKind.REF_DOC with String = js.native
-  /* "/kythe/edge/ref/expands" */ val REF_EXPANDS: typings.kythe.kytheMod.EdgeKind.REF_EXPANDS with String = js.native
-  /* "/kythe/edge/ref/expands/transitive" */ val REF_EXPANDS_TRANSITIVE: typings.kythe.kytheMod.EdgeKind.REF_EXPANDS_TRANSITIVE with String = js.native
-  /* "/kythe/edge/ref/file" */ val REF_FILE: typings.kythe.kytheMod.EdgeKind.REF_FILE with String = js.native
-  /* "/kythe/edge/ref/implicit" */ val REF_IMPLICIT: typings.kythe.kytheMod.EdgeKind.REF_IMPLICIT with String = js.native
-  /* "/kythe/edge/ref/imports" */ val REF_IMPORTS: typings.kythe.kytheMod.EdgeKind.REF_IMPORTS with String = js.native
-  /* "/kythe/edge/ref/includes" */ val REF_INCLUDES: typings.kythe.kytheMod.EdgeKind.REF_INCLUDES with String = js.native
-  /* "/kythe/edge/ref/init" */ val REF_INIT: typings.kythe.kytheMod.EdgeKind.REF_INIT with String = js.native
-  /* "/kythe/edge/ref/init/implicit" */ val REF_INIT_IMPLICIT: typings.kythe.kytheMod.EdgeKind.REF_INIT_IMPLICIT with String = js.native
-  /* "/kythe/edge/ref/queries" */ val REF_QUERIES: typings.kythe.kytheMod.EdgeKind.REF_QUERIES with String = js.native
-  /* "/kythe/edge/satisfies" */ val SATISFIES: typings.kythe.kytheMod.EdgeKind.SATISFIES with String = js.native
-  /* "/kythe/edge/specializes" */ val SPECIALIZES: typings.kythe.kytheMod.EdgeKind.SPECIALIZES with String = js.native
-  /* "/kythe/edge/specializes/speculative" */ val SPECIALIZES_SPECULATIVE: typings.kythe.kytheMod.EdgeKind.SPECIALIZES_SPECULATIVE with String = js.native
-  /* "/kythe/edge/tagged" */ val TAGGED: typings.kythe.kytheMod.EdgeKind.TAGGED with String = js.native
-  /* "/kythe/edge/typed" */ val TYPED: typings.kythe.kytheMod.EdgeKind.TYPED with String = js.native
-  /* "/kythe/edge/undefines" */ val UNDEFINES: typings.kythe.kytheMod.EdgeKind.UNDEFINES with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EdgeKind with String] = js.native
+  /* "/kythe/edge/aliases" */ @js.native
+  object ALIASES extends TopLevel[ALIASES with String]
+  
+  /* "/kythe/edge/aliases/root" */ @js.native
+  object ALIASES_ROOT extends TopLevel[ALIASES_ROOT with String]
+  
+  /* "/kythe/edge/annotatedby" */ @js.native
+  object ANNOTATED_BY extends TopLevel[ANNOTATED_BY with String]
+  
+  /* "/kythe/edge/bounded/lower" */ @js.native
+  object BOUNDED_LOWER extends TopLevel[BOUNDED_LOWER with String]
+  
+  /* "/kythe/edge/bounded/upper" */ @js.native
+  object BOUNDED_UPPER extends TopLevel[BOUNDED_UPPER with String]
+  
+  /* "/kythe/edge/childof" */ @js.native
+  object CHILD_OF extends TopLevel[CHILD_OF with String]
+  
+  /* "/kythe/edge/childof/context" */ @js.native
+  object CHILD_OF_CONTEXT extends TopLevel[CHILD_OF_CONTEXT with String]
+  
+  /* "/kythe/edge/completes" */ @js.native
+  object COMPLETES extends TopLevel[COMPLETES with String]
+  
+  /* "/kythe/edge/completes/uniquely" */ @js.native
+  object COMPLETES_UNIQUELY extends TopLevel[COMPLETES_UNIQUELY with String]
+  
+  /* "/kythe/edge/defines" */ @js.native
+  object DEFINES extends TopLevel[DEFINES with String]
+  
+  /* "/kythe/edge/defines/binding" */ @js.native
+  object DEFINES_BINDING extends TopLevel[DEFINES_BINDING with String]
+  
+  /* "/kythe/edge/depends" */ @js.native
+  object DEPENDS extends TopLevel[DEPENDS with String]
+  
+  /* "/kythe/edge/documents" */ @js.native
+  object DOCUMENTS extends TopLevel[DOCUMENTS with String]
+  
+  /* "/kythe/edge/exports" */ @js.native
+  object EXPORTS extends TopLevel[EXPORTS with String]
+  
+  /* "/kythe/edge/extends" */ @js.native
+  object EXTENDS extends TopLevel[EXTENDS with String]
+  
+  /* "/kythe/edge/generates" */ @js.native
+  object GENERATES extends TopLevel[GENERATES with String]
+  
+  /* "/kythe/edge/imputes" */ @js.native
+  object IMPUTES extends TopLevel[IMPUTES with String]
+  
+  /* "/kythe/edge/instantiates" */ @js.native
+  object INSTANTIATES extends TopLevel[INSTANTIATES with String]
+  
+  /* "/kythe/edge/instantiates/speculative" */ @js.native
+  object INSTANTIATES_SPECULATIVE extends TopLevel[INSTANTIATES_SPECULATIVE with String]
+  
+  /* "/kythe/edge/named" */ @js.native
+  object NAMED extends TopLevel[NAMED with String]
+  
+  /* "/kythe/edge/overrides" */ @js.native
+  object OVERRIDES extends TopLevel[OVERRIDES with String]
+  
+  /* "/kythe/edge/overrides/root" */ @js.native
+  object OVERRIDES_ROOT extends TopLevel[OVERRIDES_ROOT with String]
+  
+  /* "/kythe/edge/overrides/transitive" */ @js.native
+  object OVERRIDES_TRANSITIVE extends TopLevel[OVERRIDES_TRANSITIVE with String]
+  
+  /* "/kythe/edge/param" */ @js.native
+  object PARAM extends TopLevel[PARAM with String]
+  
+  /* "/kythe/edge/ref" */ @js.native
+  object REF extends TopLevel[REF with String]
+  
+  /* "/kythe/edge/ref/call" */ @js.native
+  object REF_CALL extends TopLevel[REF_CALL with String]
+  
+  /* "/kythe/edge/ref/call/implicit" */ @js.native
+  object REF_CALL_IMPLICIT extends TopLevel[REF_CALL_IMPLICIT with String]
+  
+  /* "/kythe/edge/ref/doc" */ @js.native
+  object REF_DOC extends TopLevel[REF_DOC with String]
+  
+  /* "/kythe/edge/ref/expands" */ @js.native
+  object REF_EXPANDS extends TopLevel[REF_EXPANDS with String]
+  
+  /* "/kythe/edge/ref/expands/transitive" */ @js.native
+  object REF_EXPANDS_TRANSITIVE extends TopLevel[REF_EXPANDS_TRANSITIVE with String]
+  
+  /* "/kythe/edge/ref/file" */ @js.native
+  object REF_FILE extends TopLevel[REF_FILE with String]
+  
+  /* "/kythe/edge/ref/implicit" */ @js.native
+  object REF_IMPLICIT extends TopLevel[REF_IMPLICIT with String]
+  
+  /* "/kythe/edge/ref/imports" */ @js.native
+  object REF_IMPORTS extends TopLevel[REF_IMPORTS with String]
+  
+  /* "/kythe/edge/ref/includes" */ @js.native
+  object REF_INCLUDES extends TopLevel[REF_INCLUDES with String]
+  
+  /* "/kythe/edge/ref/init" */ @js.native
+  object REF_INIT extends TopLevel[REF_INIT with String]
+  
+  /* "/kythe/edge/ref/init/implicit" */ @js.native
+  object REF_INIT_IMPLICIT extends TopLevel[REF_INIT_IMPLICIT with String]
+  
+  /* "/kythe/edge/ref/queries" */ @js.native
+  object REF_QUERIES extends TopLevel[REF_QUERIES with String]
+  
+  /* "/kythe/edge/satisfies" */ @js.native
+  object SATISFIES extends TopLevel[SATISFIES with String]
+  
+  /* "/kythe/edge/specializes" */ @js.native
+  object SPECIALIZES extends TopLevel[SPECIALIZES with String]
+  
+  /* "/kythe/edge/specializes/speculative" */ @js.native
+  object SPECIALIZES_SPECULATIVE extends TopLevel[SPECIALIZES_SPECULATIVE with String]
+  
+  /* "/kythe/edge/tagged" */ @js.native
+  object TAGGED extends TopLevel[TAGGED with String]
+  
+  /* "/kythe/edge/typed" */ @js.native
+  object TYPED extends TopLevel[TYPED with String]
+  
+  /* "/kythe/edge/undefines" */ @js.native
+  object UNDEFINES extends TopLevel[UNDEFINES with String]
+  
 }
 

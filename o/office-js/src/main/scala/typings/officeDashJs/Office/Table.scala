@@ -1,5 +1,9 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.Table.All
+import typings.officeDashJs.Office.Table.Data
+import typings.officeDashJs.Office.Table.Headers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +36,16 @@ object Table extends js.Object {
   @js.native
   sealed trait Headers extends Table
   
-  /* 0 */ val All: typings.officeDashJs.Office.Table.All with Double = js.native
-  /* 1 */ val Data: typings.officeDashJs.Office.Table.Data with Double = js.native
-  /* 2 */ val Headers: typings.officeDashJs.Office.Table.Headers with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Table with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 1 */ @js.native
+  object Data extends TopLevel[Data with Double]
+  
+  /* 2 */ @js.native
+  object Headers extends TopLevel[Headers with Double]
+  
 }
 

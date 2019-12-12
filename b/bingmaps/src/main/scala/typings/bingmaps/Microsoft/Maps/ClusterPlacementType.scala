@@ -1,5 +1,8 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.ClusterPlacementType.FirstLocation
+import typings.bingmaps.Microsoft.Maps.ClusterPlacementType.MeanAverage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,9 +27,13 @@ object ClusterPlacementType extends js.Object {
   @js.native
   sealed trait MeanAverage extends ClusterPlacementType
   
-  /* 1 */ val FirstLocation: typings.bingmaps.Microsoft.Maps.ClusterPlacementType.FirstLocation with Double = js.native
-  /* 0 */ val MeanAverage: typings.bingmaps.Microsoft.Maps.ClusterPlacementType.MeanAverage with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClusterPlacementType with Double] = js.native
+  /* 1 */ @js.native
+  object FirstLocation extends TopLevel[FirstLocation with Double]
+  
+  /* 0 */ @js.native
+  object MeanAverage extends TopLevel[MeanAverage with Double]
+  
 }
 

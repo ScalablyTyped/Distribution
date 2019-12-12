@@ -1,5 +1,70 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.TextScript.aboriginal
+import typings.winrt.Windows.UI.Text.TextScript.ansi
+import typings.winrt.Windows.UI.Text.TextScript.arabic
+import typings.winrt.Windows.UI.Text.TextScript.armenian
+import typings.winrt.Windows.UI.Text.TextScript.baltic
+import typings.winrt.Windows.UI.Text.TextScript.bengali
+import typings.winrt.Windows.UI.Text.TextScript.big5
+import typings.winrt.Windows.UI.Text.TextScript.braille
+import typings.winrt.Windows.UI.Text.TextScript.cherokee
+import typings.winrt.Windows.UI.Text.TextScript.cyrillic
+import typings.winrt.Windows.UI.Text.TextScript.default
+import typings.winrt.Windows.UI.Text.TextScript.deseret
+import typings.winrt.Windows.UI.Text.TextScript.devanagari
+import typings.winrt.Windows.UI.Text.TextScript.eastEurope
+import typings.winrt.Windows.UI.Text.TextScript.emoji
+import typings.winrt.Windows.UI.Text.TextScript.ethiopic
+import typings.winrt.Windows.UI.Text.TextScript.gB2312
+import typings.winrt.Windows.UI.Text.TextScript.georgian
+import typings.winrt.Windows.UI.Text.TextScript.glagolitic
+import typings.winrt.Windows.UI.Text.TextScript.gothic
+import typings.winrt.Windows.UI.Text.TextScript.greek
+import typings.winrt.Windows.UI.Text.TextScript.gujarati
+import typings.winrt.Windows.UI.Text.TextScript.gurmukhi
+import typings.winrt.Windows.UI.Text.TextScript.hangul
+import typings.winrt.Windows.UI.Text.TextScript.hebrew
+import typings.winrt.Windows.UI.Text.TextScript.jamo
+import typings.winrt.Windows.UI.Text.TextScript.kannada
+import typings.winrt.Windows.UI.Text.TextScript.kayahli
+import typings.winrt.Windows.UI.Text.TextScript.kharoshthi
+import typings.winrt.Windows.UI.Text.TextScript.khmer
+import typings.winrt.Windows.UI.Text.TextScript.lao
+import typings.winrt.Windows.UI.Text.TextScript.limbu
+import typings.winrt.Windows.UI.Text.TextScript.lisu
+import typings.winrt.Windows.UI.Text.TextScript.mac
+import typings.winrt.Windows.UI.Text.TextScript.malayalam
+import typings.winrt.Windows.UI.Text.TextScript.mongolian
+import typings.winrt.Windows.UI.Text.TextScript.myanmar
+import typings.winrt.Windows.UI.Text.TextScript.nKo
+import typings.winrt.Windows.UI.Text.TextScript.newTaiLue
+import typings.winrt.Windows.UI.Text.TextScript.oem
+import typings.winrt.Windows.UI.Text.TextScript.ogham
+import typings.winrt.Windows.UI.Text.TextScript.oriya
+import typings.winrt.Windows.UI.Text.TextScript.osmanya
+import typings.winrt.Windows.UI.Text.TextScript.pC437
+import typings.winrt.Windows.UI.Text.TextScript.phagsPa
+import typings.winrt.Windows.UI.Text.TextScript.runic
+import typings.winrt.Windows.UI.Text.TextScript.shiftJis
+import typings.winrt.Windows.UI.Text.TextScript.sinhala
+import typings.winrt.Windows.UI.Text.TextScript.sylotiNagri
+import typings.winrt.Windows.UI.Text.TextScript.symbol
+import typings.winrt.Windows.UI.Text.TextScript.syriac
+import typings.winrt.Windows.UI.Text.TextScript.taiLe
+import typings.winrt.Windows.UI.Text.TextScript.tamil
+import typings.winrt.Windows.UI.Text.TextScript.telugu
+import typings.winrt.Windows.UI.Text.TextScript.thaana
+import typings.winrt.Windows.UI.Text.TextScript.thai
+import typings.winrt.Windows.UI.Text.TextScript.tibetan
+import typings.winrt.Windows.UI.Text.TextScript.tifinagh
+import typings.winrt.Windows.UI.Text.TextScript.turkish
+import typings.winrt.Windows.UI.Text.TextScript.undefined
+import typings.winrt.Windows.UI.Text.TextScript.unicodeSymbol
+import typings.winrt.Windows.UI.Text.TextScript.vai
+import typings.winrt.Windows.UI.Text.TextScript.vietnamese
+import typings.winrt.Windows.UI.Text.TextScript.yi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -202,71 +267,199 @@ object TextScript extends js.Object {
   @js.native
   sealed trait yi extends TextScript
   
-  /* 40 */ val aboriginal: typings.winrt.Windows.UI.Text.TextScript.aboriginal with Double = js.native
-  /* 1 */ val ansi: typings.winrt.Windows.UI.Text.TextScript.ansi with Double = js.native
-  /* 7 */ val arabic: typings.winrt.Windows.UI.Text.TextScript.arabic with Double = js.native
-  /* 20 */ val armenian: typings.winrt.Windows.UI.Text.TextScript.armenian with Double = js.native
-  /* 8 */ val baltic: typings.winrt.Windows.UI.Text.TextScript.baltic with Double = js.native
-  /* 24 */ val bengali: typings.winrt.Windows.UI.Text.TextScript.bengali with Double = js.native
-  /* 16 */ val big5: typings.winrt.Windows.UI.Text.TextScript.big5 with Double = js.native
-  /* 45 */ val braille: typings.winrt.Windows.UI.Text.TextScript.braille with Double = js.native
-  /* 39 */ val cherokee: typings.winrt.Windows.UI.Text.TextScript.cherokee with Double = js.native
-  /* 3 */ val cyrillic: typings.winrt.Windows.UI.Text.TextScript.cyrillic with Double = js.native
-  /* 10 */ val default: typings.winrt.Windows.UI.Text.TextScript.default with Double = js.native
-  /* 62 */ val deseret: typings.winrt.Windows.UI.Text.TextScript.deseret with Double = js.native
-  /* 23 */ val devanagari: typings.winrt.Windows.UI.Text.TextScript.devanagari with Double = js.native
-  /* 2 */ val eastEurope: typings.winrt.Windows.UI.Text.TextScript.eastEurope with Double = js.native
-  /* 54 */ val emoji: typings.winrt.Windows.UI.Text.TextScript.emoji with Double = js.native
-  /* 38 */ val ethiopic: typings.winrt.Windows.UI.Text.TextScript.ethiopic with Double = js.native
-  /* 14 */ val gB2312: typings.winrt.Windows.UI.Text.TextScript.gB2312 with Double = js.native
-  /* 36 */ val georgian: typings.winrt.Windows.UI.Text.TextScript.georgian with Double = js.native
-  /* 55 */ val glagolitic: typings.winrt.Windows.UI.Text.TextScript.glagolitic with Double = js.native
-  /* 61 */ val gothic: typings.winrt.Windows.UI.Text.TextScript.gothic with Double = js.native
-  /* 4 */ val greek: typings.winrt.Windows.UI.Text.TextScript.greek with Double = js.native
-  /* 26 */ val gujarati: typings.winrt.Windows.UI.Text.TextScript.gujarati with Double = js.native
-  /* 25 */ val gurmukhi: typings.winrt.Windows.UI.Text.TextScript.gurmukhi with Double = js.native
-  /* 15 */ val hangul: typings.winrt.Windows.UI.Text.TextScript.hangul with Double = js.native
-  /* 6 */ val hebrew: typings.winrt.Windows.UI.Text.TextScript.hebrew with Double = js.native
-  /* 37 */ val jamo: typings.winrt.Windows.UI.Text.TextScript.jamo with Double = js.native
-  /* 30 */ val kannada: typings.winrt.Windows.UI.Text.TextScript.kannada with Double = js.native
-  /* 52 */ val kayahli: typings.winrt.Windows.UI.Text.TextScript.kayahli with Double = js.native
-  /* 51 */ val kharoshthi: typings.winrt.Windows.UI.Text.TextScript.kharoshthi with Double = js.native
-  /* 43 */ val khmer: typings.winrt.Windows.UI.Text.TextScript.khmer with Double = js.native
-  /* 33 */ val lao: typings.winrt.Windows.UI.Text.TextScript.lao with Double = js.native
-  /* 47 */ val limbu: typings.winrt.Windows.UI.Text.TextScript.limbu with Double = js.native
-  /* 56 */ val lisu: typings.winrt.Windows.UI.Text.TextScript.lisu with Double = js.native
-  /* 19 */ val mac: typings.winrt.Windows.UI.Text.TextScript.mac with Double = js.native
-  /* 31 */ val malayalam: typings.winrt.Windows.UI.Text.TextScript.malayalam with Double = js.native
-  /* 44 */ val mongolian: typings.winrt.Windows.UI.Text.TextScript.mongolian with Double = js.native
-  /* 35 */ val myanmar: typings.winrt.Windows.UI.Text.TextScript.myanmar with Double = js.native
-  /* 58 */ val nKo: typings.winrt.Windows.UI.Text.TextScript.nKo with Double = js.native
-  /* 49 */ val newTaiLue: typings.winrt.Windows.UI.Text.TextScript.newTaiLue with Double = js.native
-  /* 18 */ val oem: typings.winrt.Windows.UI.Text.TextScript.oem with Double = js.native
-  /* 41 */ val ogham: typings.winrt.Windows.UI.Text.TextScript.ogham with Double = js.native
-  /* 27 */ val oriya: typings.winrt.Windows.UI.Text.TextScript.oriya with Double = js.native
-  /* 59 */ val osmanya: typings.winrt.Windows.UI.Text.TextScript.osmanya with Double = js.native
-  /* 17 */ val pC437: typings.winrt.Windows.UI.Text.TextScript.pC437 with Double = js.native
-  /* 60 */ val phagsPa: typings.winrt.Windows.UI.Text.TextScript.phagsPa with Double = js.native
-  /* 42 */ val runic: typings.winrt.Windows.UI.Text.TextScript.runic with Double = js.native
-  /* 13 */ val shiftJis: typings.winrt.Windows.UI.Text.TextScript.shiftJis with Double = js.native
-  /* 32 */ val sinhala: typings.winrt.Windows.UI.Text.TextScript.sinhala with Double = js.native
-  /* 50 */ val sylotiNagri: typings.winrt.Windows.UI.Text.TextScript.sylotiNagri with Double = js.native
-  /* 11 */ val symbol: typings.winrt.Windows.UI.Text.TextScript.symbol with Double = js.native
-  /* 21 */ val syriac: typings.winrt.Windows.UI.Text.TextScript.syriac with Double = js.native
-  /* 48 */ val taiLe: typings.winrt.Windows.UI.Text.TextScript.taiLe with Double = js.native
-  /* 28 */ val tamil: typings.winrt.Windows.UI.Text.TextScript.tamil with Double = js.native
-  /* 29 */ val telugu: typings.winrt.Windows.UI.Text.TextScript.telugu with Double = js.native
-  /* 22 */ val thaana: typings.winrt.Windows.UI.Text.TextScript.thaana with Double = js.native
-  /* 12 */ val thai: typings.winrt.Windows.UI.Text.TextScript.thai with Double = js.native
-  /* 34 */ val tibetan: typings.winrt.Windows.UI.Text.TextScript.tibetan with Double = js.native
-  /* 63 */ val tifinagh: typings.winrt.Windows.UI.Text.TextScript.tifinagh with Double = js.native
-  /* 5 */ val turkish: typings.winrt.Windows.UI.Text.TextScript.turkish with Double = js.native
-  /* 0 */ val undefined: typings.winrt.Windows.UI.Text.TextScript.undefined with Double = js.native
-  /* 53 */ val unicodeSymbol: typings.winrt.Windows.UI.Text.TextScript.unicodeSymbol with Double = js.native
-  /* 57 */ val vai: typings.winrt.Windows.UI.Text.TextScript.vai with Double = js.native
-  /* 9 */ val vietnamese: typings.winrt.Windows.UI.Text.TextScript.vietnamese with Double = js.native
-  /* 46 */ val yi: typings.winrt.Windows.UI.Text.TextScript.yi with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextScript with Double] = js.native
+  /* 40 */ @js.native
+  object aboriginal extends TopLevel[aboriginal with Double]
+  
+  /* 1 */ @js.native
+  object ansi extends TopLevel[ansi with Double]
+  
+  /* 7 */ @js.native
+  object arabic extends TopLevel[arabic with Double]
+  
+  /* 20 */ @js.native
+  object armenian extends TopLevel[armenian with Double]
+  
+  /* 8 */ @js.native
+  object baltic extends TopLevel[baltic with Double]
+  
+  /* 24 */ @js.native
+  object bengali extends TopLevel[bengali with Double]
+  
+  /* 16 */ @js.native
+  object big5 extends TopLevel[big5 with Double]
+  
+  /* 45 */ @js.native
+  object braille extends TopLevel[braille with Double]
+  
+  /* 39 */ @js.native
+  object cherokee extends TopLevel[cherokee with Double]
+  
+  /* 3 */ @js.native
+  object cyrillic extends TopLevel[cyrillic with Double]
+  
+  /* 10 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 62 */ @js.native
+  object deseret extends TopLevel[deseret with Double]
+  
+  /* 23 */ @js.native
+  object devanagari extends TopLevel[devanagari with Double]
+  
+  /* 2 */ @js.native
+  object eastEurope extends TopLevel[eastEurope with Double]
+  
+  /* 54 */ @js.native
+  object emoji extends TopLevel[emoji with Double]
+  
+  /* 38 */ @js.native
+  object ethiopic extends TopLevel[ethiopic with Double]
+  
+  /* 14 */ @js.native
+  object gB2312 extends TopLevel[gB2312 with Double]
+  
+  /* 36 */ @js.native
+  object georgian extends TopLevel[georgian with Double]
+  
+  /* 55 */ @js.native
+  object glagolitic extends TopLevel[glagolitic with Double]
+  
+  /* 61 */ @js.native
+  object gothic extends TopLevel[gothic with Double]
+  
+  /* 4 */ @js.native
+  object greek extends TopLevel[greek with Double]
+  
+  /* 26 */ @js.native
+  object gujarati extends TopLevel[gujarati with Double]
+  
+  /* 25 */ @js.native
+  object gurmukhi extends TopLevel[gurmukhi with Double]
+  
+  /* 15 */ @js.native
+  object hangul extends TopLevel[hangul with Double]
+  
+  /* 6 */ @js.native
+  object hebrew extends TopLevel[hebrew with Double]
+  
+  /* 37 */ @js.native
+  object jamo extends TopLevel[jamo with Double]
+  
+  /* 30 */ @js.native
+  object kannada extends TopLevel[kannada with Double]
+  
+  /* 52 */ @js.native
+  object kayahli extends TopLevel[kayahli with Double]
+  
+  /* 51 */ @js.native
+  object kharoshthi extends TopLevel[kharoshthi with Double]
+  
+  /* 43 */ @js.native
+  object khmer extends TopLevel[khmer with Double]
+  
+  /* 33 */ @js.native
+  object lao extends TopLevel[lao with Double]
+  
+  /* 47 */ @js.native
+  object limbu extends TopLevel[limbu with Double]
+  
+  /* 56 */ @js.native
+  object lisu extends TopLevel[lisu with Double]
+  
+  /* 19 */ @js.native
+  object mac extends TopLevel[mac with Double]
+  
+  /* 31 */ @js.native
+  object malayalam extends TopLevel[malayalam with Double]
+  
+  /* 44 */ @js.native
+  object mongolian extends TopLevel[mongolian with Double]
+  
+  /* 35 */ @js.native
+  object myanmar extends TopLevel[myanmar with Double]
+  
+  /* 58 */ @js.native
+  object nKo extends TopLevel[nKo with Double]
+  
+  /* 49 */ @js.native
+  object newTaiLue extends TopLevel[newTaiLue with Double]
+  
+  /* 18 */ @js.native
+  object oem extends TopLevel[oem with Double]
+  
+  /* 41 */ @js.native
+  object ogham extends TopLevel[ogham with Double]
+  
+  /* 27 */ @js.native
+  object oriya extends TopLevel[oriya with Double]
+  
+  /* 59 */ @js.native
+  object osmanya extends TopLevel[osmanya with Double]
+  
+  /* 17 */ @js.native
+  object pC437 extends TopLevel[pC437 with Double]
+  
+  /* 60 */ @js.native
+  object phagsPa extends TopLevel[phagsPa with Double]
+  
+  /* 42 */ @js.native
+  object runic extends TopLevel[runic with Double]
+  
+  /* 13 */ @js.native
+  object shiftJis extends TopLevel[shiftJis with Double]
+  
+  /* 32 */ @js.native
+  object sinhala extends TopLevel[sinhala with Double]
+  
+  /* 50 */ @js.native
+  object sylotiNagri extends TopLevel[sylotiNagri with Double]
+  
+  /* 11 */ @js.native
+  object symbol extends TopLevel[symbol with Double]
+  
+  /* 21 */ @js.native
+  object syriac extends TopLevel[syriac with Double]
+  
+  /* 48 */ @js.native
+  object taiLe extends TopLevel[taiLe with Double]
+  
+  /* 28 */ @js.native
+  object tamil extends TopLevel[tamil with Double]
+  
+  /* 29 */ @js.native
+  object telugu extends TopLevel[telugu with Double]
+  
+  /* 22 */ @js.native
+  object thaana extends TopLevel[thaana with Double]
+  
+  /* 12 */ @js.native
+  object thai extends TopLevel[thai with Double]
+  
+  /* 34 */ @js.native
+  object tibetan extends TopLevel[tibetan with Double]
+  
+  /* 63 */ @js.native
+  object tifinagh extends TopLevel[tifinagh with Double]
+  
+  /* 5 */ @js.native
+  object turkish extends TopLevel[turkish with Double]
+  
+  /* 0 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
+  /* 53 */ @js.native
+  object unicodeSymbol extends TopLevel[unicodeSymbol with Double]
+  
+  /* 57 */ @js.native
+  object vai extends TopLevel[vai with Double]
+  
+  /* 9 */ @js.native
+  object vietnamese extends TopLevel[vietnamese with Double]
+  
+  /* 46 */ @js.native
+  object yi extends TopLevel[yi with Double]
+  
 }
 

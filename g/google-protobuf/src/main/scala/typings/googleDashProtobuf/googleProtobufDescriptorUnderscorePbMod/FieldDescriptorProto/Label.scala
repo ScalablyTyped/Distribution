@@ -1,5 +1,9 @@
 package typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_OPTIONAL
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REPEATED
+import typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REQUIRED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Label extends js.Object {
   @js.native
   sealed trait LABEL_REQUIRED extends Label
   
-  /* 1 */ val LABEL_OPTIONAL: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_OPTIONAL with Double = js.native
-  /* 3 */ val LABEL_REPEATED: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REPEATED with Double = js.native
-  /* 2 */ val LABEL_REQUIRED: typings.googleDashProtobuf.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProto.Label.LABEL_REQUIRED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Label with Double] = js.native
+  /* 1 */ @js.native
+  object LABEL_OPTIONAL extends TopLevel[LABEL_OPTIONAL with Double]
+  
+  /* 3 */ @js.native
+  object LABEL_REPEATED extends TopLevel[LABEL_REPEATED with Double]
+  
+  /* 2 */ @js.native
+  object LABEL_REQUIRED extends TopLevel[LABEL_REQUIRED with Double]
+  
 }
 

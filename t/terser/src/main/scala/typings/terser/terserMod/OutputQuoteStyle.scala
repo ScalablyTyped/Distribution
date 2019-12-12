@@ -1,5 +1,10 @@
 package typings.terser.terserMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.terser.terserMod.OutputQuoteStyle.AlwaysDouble
+import typings.terser.terserMod.OutputQuoteStyle.AlwaysOriginal
+import typings.terser.terserMod.OutputQuoteStyle.AlwaysSingle
+import typings.terser.terserMod.OutputQuoteStyle.PreferDouble
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object OutputQuoteStyle extends js.Object {
   @js.native
   sealed trait PreferDouble extends OutputQuoteStyle
   
-  /* 2 */ val AlwaysDouble: typings.terser.terserMod.OutputQuoteStyle.AlwaysDouble with Double = js.native
-  /* 3 */ val AlwaysOriginal: typings.terser.terserMod.OutputQuoteStyle.AlwaysOriginal with Double = js.native
-  /* 1 */ val AlwaysSingle: typings.terser.terserMod.OutputQuoteStyle.AlwaysSingle with Double = js.native
-  /* 0 */ val PreferDouble: typings.terser.terserMod.OutputQuoteStyle.PreferDouble with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OutputQuoteStyle with Double] = js.native
+  /* 2 */ @js.native
+  object AlwaysDouble extends TopLevel[AlwaysDouble with Double]
+  
+  /* 3 */ @js.native
+  object AlwaysOriginal extends TopLevel[AlwaysOriginal with Double]
+  
+  /* 1 */ @js.native
+  object AlwaysSingle extends TopLevel[AlwaysSingle with Double]
+  
+  /* 0 */ @js.native
+  object PreferDouble extends TopLevel[PreferDouble with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Cell
+import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.ColumnHeader
+import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Footer
+import typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.RowHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object ContextMenuType extends js.Object {
   @js.native
   sealed trait RowHeader extends ContextMenuType
   
-  /* 0 */ val Cell: typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Cell with Double = js.native
-  /* 2 */ val ColumnHeader: typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.ColumnHeader with Double = js.native
-  /* 3 */ val Footer: typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.Footer with Double = js.native
-  /* 1 */ val RowHeader: typings.ejDotWebDotAll.ej.Spreadsheet.ContextMenuType.RowHeader with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContextMenuType with Double] = js.native
+  /* 0 */ @js.native
+  object Cell extends TopLevel[Cell with Double]
+  
+  /* 2 */ @js.native
+  object ColumnHeader extends TopLevel[ColumnHeader with Double]
+  
+  /* 3 */ @js.native
+  object Footer extends TopLevel[Footer with Double]
+  
+  /* 1 */ @js.native
+  object RowHeader extends TopLevel[RowHeader with Double]
+  
 }
 

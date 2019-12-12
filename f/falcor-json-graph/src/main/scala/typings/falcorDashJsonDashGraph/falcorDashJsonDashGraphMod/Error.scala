@@ -4,23 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Error extends Sentinel {
   @JSName("$type")
-  var $type: typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.error
-  var value: js.Any
-}
-
-object Error {
-  @scala.inline
-  def apply(
-    $type: typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.error,
-    value: js.Any,
-    $expires: Int | Double = null
-  ): Error = {
-    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Error]
-  }
+  var $type: typings.falcorDashJsonDashGraph.falcorDashJsonDashGraphStrings.error = js.native
+  var value: js.Any = js.native
 }
 
 @JSImport("falcor-json-graph", "error")

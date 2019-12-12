@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.aes128Ctr
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.cocktail
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.uninitialized
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object PlayReadyEncryptionAlgorithm extends js.Object {
   @js.native
   sealed trait unprotected extends PlayReadyEncryptionAlgorithm
   
-  /* 1 */ val aes128Ctr: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.aes128Ctr with Double = js.native
-  /* 2 */ val cocktail: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.cocktail with Double = js.native
-  /* 3 */ val uninitialized: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.uninitialized with Double = js.native
-  /* 0 */ val unprotected: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyEncryptionAlgorithm.unprotected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlayReadyEncryptionAlgorithm with Double] = js.native
+  /* 1 */ @js.native
+  object aes128Ctr extends TopLevel[aes128Ctr with Double]
+  
+  /* 2 */ @js.native
+  object cocktail extends TopLevel[cocktail with Double]
+  
+  /* 3 */ @js.native
+  object uninitialized extends TopLevel[uninitialized with Double]
+  
+  /* 0 */ @js.native
+  object unprotected extends TopLevel[unprotected with Double]
+  
 }
 

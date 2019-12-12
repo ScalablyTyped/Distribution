@@ -1,5 +1,9 @@
 package typings.twoDotJs.twoDotJsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.twoDotJs.twoDotJsMod.Types.canvas
+import typings.twoDotJs.twoDotJsMod.Types.svg
+import typings.twoDotJs.twoDotJsMod.Types.webgl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Types extends js.Object {
   @js.native
   sealed trait webgl extends Types
   
-  /* 2 */ val canvas: typings.twoDotJs.twoDotJsMod.Types.canvas with Double = js.native
-  /* 0 */ val svg: typings.twoDotJs.twoDotJsMod.Types.svg with Double = js.native
-  /* 1 */ val webgl: typings.twoDotJs.twoDotJsMod.Types.webgl with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Types with Double] = js.native
+  /* 2 */ @js.native
+  object canvas extends TopLevel[canvas with Double]
+  
+  /* 0 */ @js.native
+  object svg extends TopLevel[svg with Double]
+  
+  /* 1 */ @js.native
+  object webgl extends TopLevel[webgl with Double]
+  
 }
 

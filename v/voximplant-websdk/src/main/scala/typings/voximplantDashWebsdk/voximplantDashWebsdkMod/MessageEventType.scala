@@ -1,5 +1,12 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Cancel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Composing
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Delivered
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Displayed
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Invalid
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Offline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object MessageEventType extends js.Object {
   @js.native
   sealed trait Offline extends MessageEventType
   
-  /* 0 */ val Cancel: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Cancel with Double = js.native
-  /* 1 */ val Composing: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Composing with Double = js.native
-  /* 2 */ val Delivered: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Delivered with Double = js.native
-  /* 3 */ val Displayed: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Displayed with Double = js.native
-  /* 4 */ val Invalid: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Invalid with Double = js.native
-  /* 5 */ val Offline: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.MessageEventType.Offline with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MessageEventType with Double] = js.native
+  /* 0 */ @js.native
+  object Cancel extends TopLevel[Cancel with Double]
+  
+  /* 1 */ @js.native
+  object Composing extends TopLevel[Composing with Double]
+  
+  /* 2 */ @js.native
+  object Delivered extends TopLevel[Delivered with Double]
+  
+  /* 3 */ @js.native
+  object Displayed extends TopLevel[Displayed with Double]
+  
+  /* 4 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 5 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
 }
 

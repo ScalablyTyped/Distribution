@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.audio
+import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.photo
+import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoPreview
+import typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoRecord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MediaStreamType extends js.Object {
   @js.native
   sealed trait videoRecord extends MediaStreamType
   
-  /* 2 */ val audio: typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.audio with Double = js.native
-  /* 3 */ val photo: typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.photo with Double = js.native
-  /* 0 */ val videoPreview: typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoPreview with Double = js.native
-  /* 1 */ val videoRecord: typings.winrtDashUwp.Windows.Media.Capture.MediaStreamType.videoRecord with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaStreamType with Double] = js.native
+  /* 2 */ @js.native
+  object audio extends TopLevel[audio with Double]
+  
+  /* 3 */ @js.native
+  object photo extends TopLevel[photo with Double]
+  
+  /* 0 */ @js.native
+  object videoPreview extends TopLevel[videoPreview with Double]
+  
+  /* 1 */ @js.native
+  object videoRecord extends TopLevel[videoRecord with Double]
+  
 }
 

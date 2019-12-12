@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.VerticalAlignment.bottom
+import typings.officeDashJs.Excel.VerticalAlignment.center
+import typings.officeDashJs.Excel.VerticalAlignment.distributed
+import typings.officeDashJs.Excel.VerticalAlignment.justify
+import typings.officeDashJs.Excel.VerticalAlignment.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object VerticalAlignment extends js.Object {
   @js.native
   sealed trait top extends VerticalAlignment
   
-  /* "Bottom" */ val bottom: typings.officeDashJs.Excel.VerticalAlignment.bottom with String = js.native
-  /* "Center" */ val center: typings.officeDashJs.Excel.VerticalAlignment.center with String = js.native
-  /* "Distributed" */ val distributed: typings.officeDashJs.Excel.VerticalAlignment.distributed with String = js.native
-  /* "Justify" */ val justify: typings.officeDashJs.Excel.VerticalAlignment.justify with String = js.native
-  /* "Top" */ val top: typings.officeDashJs.Excel.VerticalAlignment.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[VerticalAlignment with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "Distributed" */ @js.native
+  object distributed extends TopLevel[distributed with String]
+  
+  /* "Justify" */ @js.native
+  object justify extends TopLevel[justify with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

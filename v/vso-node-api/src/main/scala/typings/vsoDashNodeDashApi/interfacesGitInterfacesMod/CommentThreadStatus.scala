@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Active
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.ByDesign
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Closed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Fixed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Pending
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Unknown
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.WontFix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object CommentThreadStatus extends js.Object {
   @js.native
   sealed trait WontFix extends CommentThreadStatus
   
-  /* 1 */ val Active: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Active with Double = js.native
-  /* 5 */ val ByDesign: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.ByDesign with Double = js.native
-  /* 4 */ val Closed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Closed with Double = js.native
-  /* 2 */ val Fixed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Fixed with Double = js.native
-  /* 6 */ val Pending: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Pending with Double = js.native
-  /* 0 */ val Unknown: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.Unknown with Double = js.native
-  /* 3 */ val WontFix: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.CommentThreadStatus.WontFix with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommentThreadStatus with Double] = js.native
+  /* 1 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 5 */ @js.native
+  object ByDesign extends TopLevel[ByDesign with Double]
+  
+  /* 4 */ @js.native
+  object Closed extends TopLevel[Closed with Double]
+  
+  /* 2 */ @js.native
+  object Fixed extends TopLevel[Fixed with Double]
+  
+  /* 6 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 3 */ @js.native
+  object WontFix extends TopLevel[WontFix with Double]
+  
 }
 

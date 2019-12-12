@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.cubic
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.fant
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.linear
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.nearestNeighbor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object BitmapInterpolationMode extends js.Object {
   @js.native
   sealed trait nearestNeighbor extends BitmapInterpolationMode
   
-  /* 2 */ val cubic: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.cubic with Double = js.native
-  /* 3 */ val fant: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.fant with Double = js.native
-  /* 1 */ val linear: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.linear with Double = js.native
-  /* 0 */ val nearestNeighbor: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapInterpolationMode.nearestNeighbor with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BitmapInterpolationMode with Double] = js.native
+  /* 2 */ @js.native
+  object cubic extends TopLevel[cubic with Double]
+  
+  /* 3 */ @js.native
+  object fant extends TopLevel[fant with Double]
+  
+  /* 1 */ @js.native
+  object linear extends TopLevel[linear with Double]
+  
+  /* 0 */ @js.native
+  object nearestNeighbor extends TopLevel[nearestNeighbor with Double]
+  
 }
 

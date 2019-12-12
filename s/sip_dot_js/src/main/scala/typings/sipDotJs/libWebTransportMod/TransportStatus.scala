@@ -1,5 +1,10 @@
 package typings.sipDotJs.libWebTransportMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSED
+import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSING
+import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CONNECTING
+import typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TransportStatus extends js.Object {
   @js.native
   sealed trait STATUS_OPEN extends TransportStatus
   
-  /* 3 */ val STATUS_CLOSED: typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSED with Double = js.native
-  /* 2 */ val STATUS_CLOSING: typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CLOSING with Double = js.native
-  /* 0 */ val STATUS_CONNECTING: typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_CONNECTING with Double = js.native
-  /* 1 */ val STATUS_OPEN: typings.sipDotJs.libWebTransportMod.TransportStatus.STATUS_OPEN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TransportStatus with Double] = js.native
+  /* 3 */ @js.native
+  object STATUS_CLOSED extends TopLevel[STATUS_CLOSED with Double]
+  
+  /* 2 */ @js.native
+  object STATUS_CLOSING extends TopLevel[STATUS_CLOSING with Double]
+  
+  /* 0 */ @js.native
+  object STATUS_CONNECTING extends TopLevel[STATUS_CONNECTING with Double]
+  
+  /* 1 */ @js.native
+  object STATUS_OPEN extends TopLevel[STATUS_OPEN with Double]
+  
 }
 

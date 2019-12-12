@@ -1,5 +1,12 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Bottom
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Center
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Inside
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.None
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Outside
+import typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,13 +56,25 @@ object FloatingObjectVerticalPositionAlignment extends js.Object {
   @js.native
   sealed trait Top extends FloatingObjectVerticalPositionAlignment
   
-  /* 3 */ val Bottom: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Bottom with Double = js.native
-  /* 2 */ val Center: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Center with Double = js.native
-  /* 4 */ val Inside: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Inside with Double = js.native
-  /* 0 */ val None: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.None with Double = js.native
-  /* 5 */ val Outside: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Outside with Double = js.native
-  /* 1 */ val Top: typings.devexpressDashWeb.FloatingObjectVerticalPositionAlignment.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FloatingObjectVerticalPositionAlignment with Double] = js.native
+  /* 3 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 4 */ @js.native
+  object Inside extends TopLevel[Inside with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 5 */ @js.native
+  object Outside extends TopLevel[Outside with Double]
+  
+  /* 1 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

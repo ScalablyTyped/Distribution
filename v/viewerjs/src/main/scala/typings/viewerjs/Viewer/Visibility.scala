@@ -1,5 +1,11 @@
 package typings.viewerjs.Viewer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.viewerjs.Viewer.Visibility.Hidden
+import typings.viewerjs.Viewer.Visibility.Visible
+import typings.viewerjs.Viewer.Visibility.VisibleOnExtraLargeOrWiderScreen
+import typings.viewerjs.Viewer.Visibility.VisibleOnLargeOrWiderScreen
+import typings.viewerjs.Viewer.Visibility.VisibleOnMediumOrWiderScreen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Visibility extends js.Object {
   @js.native
   sealed trait VisibleOnMediumOrWiderScreen extends Visibility
   
-  /* 0 */ val Hidden: typings.viewerjs.Viewer.Visibility.Hidden with Double = js.native
-  /* 1 */ val Visible: typings.viewerjs.Viewer.Visibility.Visible with Double = js.native
-  /* 4 */ val VisibleOnExtraLargeOrWiderScreen: typings.viewerjs.Viewer.Visibility.VisibleOnExtraLargeOrWiderScreen with Double = js.native
-  /* 3 */ val VisibleOnLargeOrWiderScreen: typings.viewerjs.Viewer.Visibility.VisibleOnLargeOrWiderScreen with Double = js.native
-  /* 2 */ val VisibleOnMediumOrWiderScreen: typings.viewerjs.Viewer.Visibility.VisibleOnMediumOrWiderScreen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Visibility with Double] = js.native
+  /* 0 */ @js.native
+  object Hidden extends TopLevel[Hidden with Double]
+  
+  /* 1 */ @js.native
+  object Visible extends TopLevel[Visible with Double]
+  
+  /* 4 */ @js.native
+  object VisibleOnExtraLargeOrWiderScreen extends TopLevel[VisibleOnExtraLargeOrWiderScreen with Double]
+  
+  /* 3 */ @js.native
+  object VisibleOnLargeOrWiderScreen extends TopLevel[VisibleOnLargeOrWiderScreen with Double]
+  
+  /* 2 */ @js.native
+  object VisibleOnMediumOrWiderScreen extends TopLevel[VisibleOnMediumOrWiderScreen with Double]
+  
 }
 

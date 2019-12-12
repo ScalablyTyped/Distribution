@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckFailure
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckTimeout
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.mobileBroadbandDeviceOff
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.operationInProgress
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.success
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.unknown
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.wiFiDeviceOff
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object TetheringOperationStatus extends js.Object {
   @js.native
   sealed trait wiFiDeviceOff extends TetheringOperationStatus
   
-  /* 5 */ val entitlementCheckFailure: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckFailure with Double = js.native
-  /* 4 */ val entitlementCheckTimeout: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.entitlementCheckTimeout with Double = js.native
-  /* 2 */ val mobileBroadbandDeviceOff: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.mobileBroadbandDeviceOff with Double = js.native
-  /* 6 */ val operationInProgress: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.operationInProgress with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.success with Double = js.native
-  /* 1 */ val unknown: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.unknown with Double = js.native
-  /* 3 */ val wiFiDeviceOff: typings.winrtDashUwp.Windows.Networking.NetworkOperators.TetheringOperationStatus.wiFiDeviceOff with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TetheringOperationStatus with Double] = js.native
+  /* 5 */ @js.native
+  object entitlementCheckFailure extends TopLevel[entitlementCheckFailure with Double]
+  
+  /* 4 */ @js.native
+  object entitlementCheckTimeout extends TopLevel[entitlementCheckTimeout with Double]
+  
+  /* 2 */ @js.native
+  object mobileBroadbandDeviceOff extends TopLevel[mobileBroadbandDeviceOff with Double]
+  
+  /* 6 */ @js.native
+  object operationInProgress extends TopLevel[operationInProgress with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 1 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 3 */ @js.native
+  object wiFiDeviceOff extends TopLevel[wiFiDeviceOff with Double]
+  
 }
 

@@ -1,5 +1,40 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.FieldType.URL
+import typings.sharepoint.SP.FieldType.allDayEvent
+import typings.sharepoint.SP.FieldType.attachments
+import typings.sharepoint.SP.FieldType.boolean
+import typings.sharepoint.SP.FieldType.calculated
+import typings.sharepoint.SP.FieldType.choice
+import typings.sharepoint.SP.FieldType.computed
+import typings.sharepoint.SP.FieldType.contentTypeId
+import typings.sharepoint.SP.FieldType.counter
+import typings.sharepoint.SP.FieldType.crossProjectLink
+import typings.sharepoint.SP.FieldType.currency
+import typings.sharepoint.SP.FieldType.dateTime
+import typings.sharepoint.SP.FieldType.error
+import typings.sharepoint.SP.FieldType.file
+import typings.sharepoint.SP.FieldType.geolocation
+import typings.sharepoint.SP.FieldType.gridChoice
+import typings.sharepoint.SP.FieldType.guid
+import typings.sharepoint.SP.FieldType.integer
+import typings.sharepoint.SP.FieldType.invalid
+import typings.sharepoint.SP.FieldType.lookup
+import typings.sharepoint.SP.FieldType.maxItems
+import typings.sharepoint.SP.FieldType.modStat
+import typings.sharepoint.SP.FieldType.multiChoice
+import typings.sharepoint.SP.FieldType.note
+import typings.sharepoint.SP.FieldType.number
+import typings.sharepoint.SP.FieldType.outcomeChoice
+import typings.sharepoint.SP.FieldType.pageSeparator
+import typings.sharepoint.SP.FieldType.recurrence
+import typings.sharepoint.SP.FieldType.text
+import typings.sharepoint.SP.FieldType.threadIndex
+import typings.sharepoint.SP.FieldType.threading
+import typings.sharepoint.SP.FieldType.user
+import typings.sharepoint.SP.FieldType.workflowEventType
+import typings.sharepoint.SP.FieldType.workflowStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -112,41 +147,109 @@ object FieldType extends js.Object {
   @js.native
   sealed trait workflowStatus extends FieldType
   
-  /* 11 */ val URL: typings.sharepoint.SP.FieldType.URL with Double = js.native
-  /* 29 */ val allDayEvent: typings.sharepoint.SP.FieldType.allDayEvent with Double = js.native
-  /* 19 */ val attachments: typings.sharepoint.SP.FieldType.attachments with Double = js.native
-  /* 8 */ val boolean: typings.sharepoint.SP.FieldType.boolean with Double = js.native
-  /* 17 */ val calculated: typings.sharepoint.SP.FieldType.calculated with Double = js.native
-  /* 6 */ val choice: typings.sharepoint.SP.FieldType.choice with Double = js.native
-  /* 12 */ val computed: typings.sharepoint.SP.FieldType.computed with Double = js.native
-  /* 25 */ val contentTypeId: typings.sharepoint.SP.FieldType.contentTypeId with Double = js.native
-  /* 5 */ val counter: typings.sharepoint.SP.FieldType.counter with Double = js.native
-  /* 22 */ val crossProjectLink: typings.sharepoint.SP.FieldType.crossProjectLink with Double = js.native
-  /* 10 */ val currency: typings.sharepoint.SP.FieldType.currency with Double = js.native
-  /* 4 */ val dateTime: typings.sharepoint.SP.FieldType.dateTime with Double = js.native
-  /* 24 */ val error: typings.sharepoint.SP.FieldType.error with Double = js.native
-  /* 18 */ val file: typings.sharepoint.SP.FieldType.file with Double = js.native
-  /* 31 */ val geolocation: typings.sharepoint.SP.FieldType.geolocation with Double = js.native
-  /* 16 */ val gridChoice: typings.sharepoint.SP.FieldType.gridChoice with Double = js.native
-  /* 14 */ val guid: typings.sharepoint.SP.FieldType.guid with Double = js.native
-  /* 1 */ val integer: typings.sharepoint.SP.FieldType.integer with Double = js.native
-  /* 0 */ val invalid: typings.sharepoint.SP.FieldType.invalid with Double = js.native
-  /* 7 */ val lookup: typings.sharepoint.SP.FieldType.lookup with Double = js.native
-  /* 33 */ val maxItems: typings.sharepoint.SP.FieldType.maxItems with Double = js.native
-  /* 23 */ val modStat: typings.sharepoint.SP.FieldType.modStat with Double = js.native
-  /* 15 */ val multiChoice: typings.sharepoint.SP.FieldType.multiChoice with Double = js.native
-  /* 3 */ val note: typings.sharepoint.SP.FieldType.note with Double = js.native
-  /* 9 */ val number: typings.sharepoint.SP.FieldType.number with Double = js.native
-  /* 32 */ val outcomeChoice: typings.sharepoint.SP.FieldType.outcomeChoice with Double = js.native
-  /* 26 */ val pageSeparator: typings.sharepoint.SP.FieldType.pageSeparator with Double = js.native
-  /* 21 */ val recurrence: typings.sharepoint.SP.FieldType.recurrence with Double = js.native
-  /* 2 */ val text: typings.sharepoint.SP.FieldType.text with Double = js.native
-  /* 27 */ val threadIndex: typings.sharepoint.SP.FieldType.threadIndex with Double = js.native
-  /* 13 */ val threading: typings.sharepoint.SP.FieldType.threading with Double = js.native
-  /* 20 */ val user: typings.sharepoint.SP.FieldType.user with Double = js.native
-  /* 30 */ val workflowEventType: typings.sharepoint.SP.FieldType.workflowEventType with Double = js.native
-  /* 28 */ val workflowStatus: typings.sharepoint.SP.FieldType.workflowStatus with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldType with Double] = js.native
+  /* 11 */ @js.native
+  object URL extends TopLevel[URL with Double]
+  
+  /* 29 */ @js.native
+  object allDayEvent extends TopLevel[allDayEvent with Double]
+  
+  /* 19 */ @js.native
+  object attachments extends TopLevel[attachments with Double]
+  
+  /* 8 */ @js.native
+  object boolean extends TopLevel[boolean with Double]
+  
+  /* 17 */ @js.native
+  object calculated extends TopLevel[calculated with Double]
+  
+  /* 6 */ @js.native
+  object choice extends TopLevel[choice with Double]
+  
+  /* 12 */ @js.native
+  object computed extends TopLevel[computed with Double]
+  
+  /* 25 */ @js.native
+  object contentTypeId extends TopLevel[contentTypeId with Double]
+  
+  /* 5 */ @js.native
+  object counter extends TopLevel[counter with Double]
+  
+  /* 22 */ @js.native
+  object crossProjectLink extends TopLevel[crossProjectLink with Double]
+  
+  /* 10 */ @js.native
+  object currency extends TopLevel[currency with Double]
+  
+  /* 4 */ @js.native
+  object dateTime extends TopLevel[dateTime with Double]
+  
+  /* 24 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 18 */ @js.native
+  object file extends TopLevel[file with Double]
+  
+  /* 31 */ @js.native
+  object geolocation extends TopLevel[geolocation with Double]
+  
+  /* 16 */ @js.native
+  object gridChoice extends TopLevel[gridChoice with Double]
+  
+  /* 14 */ @js.native
+  object guid extends TopLevel[guid with Double]
+  
+  /* 1 */ @js.native
+  object integer extends TopLevel[integer with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 7 */ @js.native
+  object lookup extends TopLevel[lookup with Double]
+  
+  /* 33 */ @js.native
+  object maxItems extends TopLevel[maxItems with Double]
+  
+  /* 23 */ @js.native
+  object modStat extends TopLevel[modStat with Double]
+  
+  /* 15 */ @js.native
+  object multiChoice extends TopLevel[multiChoice with Double]
+  
+  /* 3 */ @js.native
+  object note extends TopLevel[note with Double]
+  
+  /* 9 */ @js.native
+  object number extends TopLevel[number with Double]
+  
+  /* 32 */ @js.native
+  object outcomeChoice extends TopLevel[outcomeChoice with Double]
+  
+  /* 26 */ @js.native
+  object pageSeparator extends TopLevel[pageSeparator with Double]
+  
+  /* 21 */ @js.native
+  object recurrence extends TopLevel[recurrence with Double]
+  
+  /* 2 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 27 */ @js.native
+  object threadIndex extends TopLevel[threadIndex with Double]
+  
+  /* 13 */ @js.native
+  object threading extends TopLevel[threading with Double]
+  
+  /* 20 */ @js.native
+  object user extends TopLevel[user with Double]
+  
+  /* 30 */ @js.native
+  object workflowEventType extends TopLevel[workflowEventType with Double]
+  
+  /* 28 */ @js.native
+  object workflowStatus extends TopLevel[workflowStatus with Double]
+  
 }
 

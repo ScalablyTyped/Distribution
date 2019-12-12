@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Foundation.Collections
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Foundation.Collections.CollectionChange.itemChanged
+import typings.winrt.Windows.Foundation.Collections.CollectionChange.itemInserted
+import typings.winrt.Windows.Foundation.Collections.CollectionChange.itemRemoved
+import typings.winrt.Windows.Foundation.Collections.CollectionChange.reset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object CollectionChange extends js.Object {
   @js.native
   sealed trait reset extends CollectionChange
   
-  /* 3 */ val itemChanged: typings.winrt.Windows.Foundation.Collections.CollectionChange.itemChanged with Double = js.native
-  /* 1 */ val itemInserted: typings.winrt.Windows.Foundation.Collections.CollectionChange.itemInserted with Double = js.native
-  /* 2 */ val itemRemoved: typings.winrt.Windows.Foundation.Collections.CollectionChange.itemRemoved with Double = js.native
-  /* 0 */ val reset: typings.winrt.Windows.Foundation.Collections.CollectionChange.reset with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CollectionChange with Double] = js.native
+  /* 3 */ @js.native
+  object itemChanged extends TopLevel[itemChanged with Double]
+  
+  /* 1 */ @js.native
+  object itemInserted extends TopLevel[itemInserted with Double]
+  
+  /* 2 */ @js.native
+  object itemRemoved extends TopLevel[itemRemoved with Double]
+  
+  /* 0 */ @js.native
+  object reset extends TopLevel[reset with Double]
+  
 }
 

@@ -1,6 +1,7 @@
 package typings.jestDashSnapshot
 
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
 import typings.atJestTypes.buildConfigMod.Path
 import typings.atJestTypes.buildConfigMod.ProjectConfig
 import typings.atJestTypes.buildConfigMod.SnapshotUpdateState
@@ -22,7 +23,6 @@ object jestDashSnapshotMod extends js.Object {
   }
   
   var EXTENSION: String = js.native
-  var SnapshotState: Instantiable2[/* snapshotPath */ Path, /* options */ SnapshotStateOptions, default] = js.native
   var utils: Typeofutils = js.native
   def addSerializer(plugin: Plugin): Unit = js.native
   def buildSnapshotResolver(config: ProjectConfig): typings.jestDashSnapshot.buildSnapshotUnderscoreResolverMod.SnapshotResolver = js.native
@@ -56,6 +56,11 @@ object jestDashSnapshotMod extends js.Object {
   def toThrowErrorMatchingInlineSnapshot(`this`: Context, received: js.Any, inlineSnapshot: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
   def toThrowErrorMatchingSnapshot(`this`: Context, received: js.Any, hint: js.UndefOr[scala.Nothing], fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
   def toThrowErrorMatchingSnapshot(`this`: Context, received: js.Any, hint: String, fromPromise: Boolean): Anon_ActualExpected | Anon_ActualExpectedMessage | Anon_ActualExpectedMessageName = js.native
+  @js.native
+  object SnapshotState extends TopLevel[
+          Instantiable2[/* snapshotPath */ Path, /* options */ SnapshotStateOptions, default]
+        ]
+  
   type Context = MatcherState with Anon_SnapshotState
   type SnapshotResolver = typings.jestDashSnapshot.buildSnapshotUnderscoreResolverMod.SnapshotResolver
   type SnapshotStateType = default

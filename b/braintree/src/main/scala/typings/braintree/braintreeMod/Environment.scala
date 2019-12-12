@@ -1,5 +1,10 @@
 package typings.braintree.braintreeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.braintree.braintreeMod.Environment.Development
+import typings.braintree.braintreeMod.Environment.Production
+import typings.braintree.braintreeMod.Environment.Qa
+import typings.braintree.braintreeMod.Environment.Sandbox
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object Environment extends js.Object {
   @js.native
   sealed trait Sandbox extends Environment
   
-  /* "Development" */ val Development: typings.braintree.braintreeMod.Environment.Development with String = js.native
-  /* "Production" */ val Production: typings.braintree.braintreeMod.Environment.Production with String = js.native
-  /* "Qa" */ val Qa: typings.braintree.braintreeMod.Environment.Qa with String = js.native
-  /* "Sandbox" */ val Sandbox: typings.braintree.braintreeMod.Environment.Sandbox with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Environment with String] = js.native
+  /* "Development" */ @js.native
+  object Development extends TopLevel[Development with String]
+  
+  /* "Production" */ @js.native
+  object Production extends TopLevel[Production with String]
+  
+  /* "Qa" */ @js.native
+  object Qa extends TopLevel[Qa with String]
+  
+  /* "Sandbox" */ @js.native
+  object Sandbox extends TopLevel[Sandbox with String]
+  
 }
 

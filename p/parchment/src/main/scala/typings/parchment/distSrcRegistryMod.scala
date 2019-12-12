@@ -2,10 +2,22 @@ package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
 import typings.parchment.distSrcAttributorAttributorMod.default
 import typings.parchment.distSrcBlotAbstractBlotMod.Blot
 import typings.parchment.distSrcRegistryMod.BlotConstructor
 import typings.parchment.distSrcRegistryMod.Scope
+import typings.parchment.distSrcRegistryMod.Scope.ANY
+import typings.parchment.distSrcRegistryMod.Scope.ATTRIBUTE
+import typings.parchment.distSrcRegistryMod.Scope.BLOCK
+import typings.parchment.distSrcRegistryMod.Scope.BLOCK_ATTRIBUTE
+import typings.parchment.distSrcRegistryMod.Scope.BLOCK_BLOT
+import typings.parchment.distSrcRegistryMod.Scope.BLOT
+import typings.parchment.distSrcRegistryMod.Scope.INLINE
+import typings.parchment.distSrcRegistryMod.Scope.INLINE_ATTRIBUTE
+import typings.parchment.distSrcRegistryMod.Scope.INLINE_BLOT
+import typings.parchment.distSrcRegistryMod.Scope.LEVEL
+import typings.parchment.distSrcRegistryMod.Scope.TYPE
 import typings.parchment.parchmentStrings.__blot
 import typings.std.Error
 import typings.std.Node
@@ -92,19 +104,41 @@ object distSrcRegistryMod extends js.Object {
     @js.native
     sealed trait TYPE extends Scope
     
-    /* 15 */ val ANY: typings.parchment.distSrcRegistryMod.Scope.ANY with Double = js.native
-    /* 13 */ val ATTRIBUTE: typings.parchment.distSrcRegistryMod.Scope.ATTRIBUTE with Double = js.native
-    /* 11 */ val BLOCK: typings.parchment.distSrcRegistryMod.Scope.BLOCK with Double = js.native
-    /* 9 */ val BLOCK_ATTRIBUTE: typings.parchment.distSrcRegistryMod.Scope.BLOCK_ATTRIBUTE with Double = js.native
-    /* 10 */ val BLOCK_BLOT: typings.parchment.distSrcRegistryMod.Scope.BLOCK_BLOT with Double = js.native
-    /* 14 */ val BLOT: typings.parchment.distSrcRegistryMod.Scope.BLOT with Double = js.native
-    /* 7 */ val INLINE: typings.parchment.distSrcRegistryMod.Scope.INLINE with Double = js.native
-    /* 5 */ val INLINE_ATTRIBUTE: typings.parchment.distSrcRegistryMod.Scope.INLINE_ATTRIBUTE with Double = js.native
-    /* 6 */ val INLINE_BLOT: typings.parchment.distSrcRegistryMod.Scope.INLINE_BLOT with Double = js.native
-    /* 12 */ val LEVEL: typings.parchment.distSrcRegistryMod.Scope.LEVEL with Double = js.native
-    /* 3 */ val TYPE: typings.parchment.distSrcRegistryMod.Scope.TYPE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Scope with Double] = js.native
+    /* 15 */ @js.native
+    object ANY extends TopLevel[ANY with Double]
+    
+    /* 13 */ @js.native
+    object ATTRIBUTE extends TopLevel[ATTRIBUTE with Double]
+    
+    /* 11 */ @js.native
+    object BLOCK extends TopLevel[BLOCK with Double]
+    
+    /* 9 */ @js.native
+    object BLOCK_ATTRIBUTE extends TopLevel[BLOCK_ATTRIBUTE with Double]
+    
+    /* 10 */ @js.native
+    object BLOCK_BLOT extends TopLevel[BLOCK_BLOT with Double]
+    
+    /* 14 */ @js.native
+    object BLOT extends TopLevel[BLOT with Double]
+    
+    /* 7 */ @js.native
+    object INLINE extends TopLevel[INLINE with Double]
+    
+    /* 5 */ @js.native
+    object INLINE_ATTRIBUTE extends TopLevel[INLINE_ATTRIBUTE with Double]
+    
+    /* 6 */ @js.native
+    object INLINE_BLOT extends TopLevel[INLINE_BLOT with Double]
+    
+    /* 12 */ @js.native
+    object LEVEL extends TopLevel[LEVEL with Double]
+    
+    /* 3 */ @js.native
+    object TYPE extends TopLevel[TYPE with Double]
+    
   }
   
 }

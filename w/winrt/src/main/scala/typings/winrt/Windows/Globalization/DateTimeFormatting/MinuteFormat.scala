@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.default
+import typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object MinuteFormat extends js.Object {
   @js.native
   sealed trait none extends MinuteFormat
   
-  /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.default with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MinuteFormat with Double] = js.native
+  /* 1 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

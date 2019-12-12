@@ -1,5 +1,6 @@
 package typings.atFirebaseFirestore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcCoreSnapshotUnderscoreVersionMod.SnapshotVersion
 import typings.atFirebaseFirestore.distSrcCoreTargetMod.Target
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.ListenSequenceNumber
@@ -7,6 +8,9 @@ import typings.atFirebaseFirestore.distSrcCoreTypesMod.ProtoByteString
 import typings.atFirebaseFirestore.distSrcCoreTypesMod.TargetId
 import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetData
 import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose
+import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.ExistenceFilterMismatch
+import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.LimboResolution
+import typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.Listen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -165,11 +169,17 @@ object distSrcLocalTargetUnderscoreDataMod extends js.Object {
     @js.native
     sealed trait Listen extends TargetPurpose
     
-    /* 1 */ val ExistenceFilterMismatch: typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.ExistenceFilterMismatch with Double = js.native
-    /* 2 */ val LimboResolution: typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.LimboResolution with Double = js.native
-    /* 0 */ val Listen: typings.atFirebaseFirestore.distSrcLocalTargetUnderscoreDataMod.TargetPurpose.Listen with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TargetPurpose with Double] = js.native
+    /* 1 */ @js.native
+    object ExistenceFilterMismatch extends TopLevel[ExistenceFilterMismatch with Double]
+    
+    /* 2 */ @js.native
+    object LimboResolution extends TopLevel[LimboResolution with Double]
+    
+    /* 0 */ @js.native
+    object Listen extends TopLevel[Listen with Double]
+    
   }
   
 }

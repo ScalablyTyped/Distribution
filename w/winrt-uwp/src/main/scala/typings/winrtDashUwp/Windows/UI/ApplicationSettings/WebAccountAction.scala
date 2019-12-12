@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.UI.ApplicationSettings
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.manage
+import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.more
+import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.reconnect
+import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.remove
+import typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.viewDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object WebAccountAction extends js.Object {
   @js.native
   sealed trait viewDetails extends WebAccountAction
   
-  /* 3 */ val manage: typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.manage with Double = js.native
-  /* 4 */ val more: typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.more with Double = js.native
-  /* 0 */ val reconnect: typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.reconnect with Double = js.native
-  /* 1 */ val remove: typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.remove with Double = js.native
-  /* 2 */ val viewDetails: typings.winrtDashUwp.Windows.UI.ApplicationSettings.WebAccountAction.viewDetails with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAccountAction with Double] = js.native
+  /* 3 */ @js.native
+  object manage extends TopLevel[manage with Double]
+  
+  /* 4 */ @js.native
+  object more extends TopLevel[more with Double]
+  
+  /* 0 */ @js.native
+  object reconnect extends TopLevel[reconnect with Double]
+  
+  /* 1 */ @js.native
+  object remove extends TopLevel[remove with Double]
+  
+  /* 2 */ @js.native
+  object viewDetails extends TopLevel[viewDetails with Double]
+  
 }
 

@@ -1,6 +1,14 @@
 package typings.wonderDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINES
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_LOOP
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_STRIP
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.POINTS
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRANGLE_FAN
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLES
+import typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLE_STRIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +42,29 @@ object distEs2015RendererEDrawModeMod extends js.Object {
     @js.native
     sealed trait TRIANGLE_STRIP extends EDrawMode
     
-    /* 1 */ val LINES: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINES with Double = js.native
-    /* 2 */ val LINE_LOOP: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_LOOP with Double = js.native
-    /* 3 */ val LINE_STRIP: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.LINE_STRIP with Double = js.native
-    /* 0 */ val POINTS: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.POINTS with Double = js.native
-    /* 6 */ val TRANGLE_FAN: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRANGLE_FAN with Double = js.native
-    /* 4 */ val TRIANGLES: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLES with Double = js.native
-    /* 5 */ val TRIANGLE_STRIP: typings.wonderDotJs.distEs2015RendererEDrawModeMod.EDrawMode.TRIANGLE_STRIP with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EDrawMode with Double] = js.native
+    /* 1 */ @js.native
+    object LINES extends TopLevel[LINES with Double]
+    
+    /* 2 */ @js.native
+    object LINE_LOOP extends TopLevel[LINE_LOOP with Double]
+    
+    /* 3 */ @js.native
+    object LINE_STRIP extends TopLevel[LINE_STRIP with Double]
+    
+    /* 0 */ @js.native
+    object POINTS extends TopLevel[POINTS with Double]
+    
+    /* 6 */ @js.native
+    object TRANGLE_FAN extends TopLevel[TRANGLE_FAN with Double]
+    
+    /* 4 */ @js.native
+    object TRIANGLES extends TopLevel[TRIANGLES with Double]
+    
+    /* 5 */ @js.native
+    object TRIANGLE_STRIP extends TopLevel[TRIANGLE_STRIP with Double]
+    
   }
   
 }

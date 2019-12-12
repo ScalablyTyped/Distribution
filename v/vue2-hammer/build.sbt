@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue2-hammer"
-version := "2.1-dt-20190925Z-2ff35e"
+version := "2.1-dt-20190925Z-81c8ab"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

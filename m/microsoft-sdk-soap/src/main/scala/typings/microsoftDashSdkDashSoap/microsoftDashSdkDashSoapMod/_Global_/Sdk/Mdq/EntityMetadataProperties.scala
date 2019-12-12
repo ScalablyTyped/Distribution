@@ -1,5 +1,65 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ActivityTypeMask
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Attributes
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoCreateAccessTeams
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoRouteToOwnerQueue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeInManyToMany
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBePrimaryEntityInRelationship
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeRelatedEntityInRelationship
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateAttributes
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateCharts
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateForms
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateViews
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanModifyAdditionalSettings
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanTriggerWorkflow
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Description
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayCollectionName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconLargeName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconMediumName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconSmallName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IntroducedVersion
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAIRUpdated
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivity
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivityParty
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAuditEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAvailableOffline
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsBusinessProcessEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsChildEntity
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsConnectionsEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomEntity
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomizable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDocumentManagementEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDuplicateDetectionEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsEnabledForCharts
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsImportable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsIntersect
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMailMergeEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsManaged
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMappable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsQuickCreateEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsReadingPaneEnabled
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsRenameable
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForAdvancedFind
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForQueue
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobile
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobileClient
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.LogicalName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToManyRelationships
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToOneRelationships
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.MetadataId
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ObjectTypeCode
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OneToManyRelationships
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OwnershipType
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryIdAttribute
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryImageAttribute
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryNameAttribute
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Privileges
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.RecurrenceBaseEntityLogicalName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ReportViewName
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.SchemaName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -187,66 +247,243 @@ object EntityMetadataProperties extends js.Object {
   @js.native
   sealed trait SchemaName extends EntityMetadataProperties
   
-  /* 0 */ val ActivityTypeMask: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ActivityTypeMask with scala.Double = js.native
-  /* 1 */ val Attributes: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Attributes with scala.Double = js.native
-  /* 2 */ val AutoCreateAccessTeams: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoCreateAccessTeams with scala.Double = js.native
-  /* 3 */ val AutoRouteToOwnerQueue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.AutoRouteToOwnerQueue with scala.Double = js.native
-  /* 4 */ val CanBeInManyToMany: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeInManyToMany with scala.Double = js.native
-  /* 5 */ val CanBePrimaryEntityInRelationship: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBePrimaryEntityInRelationship with scala.Double = js.native
-  /* 6 */ val CanBeRelatedEntityInRelationship: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanBeRelatedEntityInRelationship with scala.Double = js.native
-  /* 7 */ val CanCreateAttributes: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateAttributes with scala.Double = js.native
-  /* 8 */ val CanCreateCharts: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateCharts with scala.Double = js.native
-  /* 9 */ val CanCreateForms: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateForms with scala.Double = js.native
-  /* 10 */ val CanCreateViews: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanCreateViews with scala.Double = js.native
-  /* 11 */ val CanModifyAdditionalSettings: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanModifyAdditionalSettings with scala.Double = js.native
-  /* 12 */ val CanTriggerWorkflow: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.CanTriggerWorkflow with scala.Double = js.native
-  /* 13 */ val Description: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Description with scala.Double = js.native
-  /* 14 */ val DisplayCollectionName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayCollectionName with scala.Double = js.native
-  /* 15 */ val DisplayName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.DisplayName with scala.Double = js.native
-  /* 16 */ val IconLargeName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconLargeName with scala.Double = js.native
-  /* 17 */ val IconMediumName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconMediumName with scala.Double = js.native
-  /* 18 */ val IconSmallName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IconSmallName with scala.Double = js.native
-  /* 19 */ val IntroducedVersion: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IntroducedVersion with scala.Double = js.native
-  /* 22 */ val IsAIRUpdated: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAIRUpdated with scala.Double = js.native
-  /* 20 */ val IsActivity: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivity with scala.Double = js.native
-  /* 21 */ val IsActivityParty: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsActivityParty with scala.Double = js.native
-  /* 23 */ val IsAuditEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAuditEnabled with scala.Double = js.native
-  /* 24 */ val IsAvailableOffline: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsAvailableOffline with scala.Double = js.native
-  /* 25 */ val IsBusinessProcessEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsBusinessProcessEnabled with scala.Double = js.native
-  /* 26 */ val IsChildEntity: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsChildEntity with scala.Double = js.native
-  /* 27 */ val IsConnectionsEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsConnectionsEnabled with scala.Double = js.native
-  /* 28 */ val IsCustomEntity: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomEntity with scala.Double = js.native
-  /* 29 */ val IsCustomizable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsCustomizable with scala.Double = js.native
-  /* 30 */ val IsDocumentManagementEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDocumentManagementEnabled with scala.Double = js.native
-  /* 31 */ val IsDuplicateDetectionEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsDuplicateDetectionEnabled with scala.Double = js.native
-  /* 32 */ val IsEnabledForCharts: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsEnabledForCharts with scala.Double = js.native
-  /* 33 */ val IsImportable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsImportable with scala.Double = js.native
-  /* 34 */ val IsIntersect: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsIntersect with scala.Double = js.native
-  /* 35 */ val IsMailMergeEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMailMergeEnabled with scala.Double = js.native
-  /* 36 */ val IsManaged: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsManaged with scala.Double = js.native
-  /* 37 */ val IsMappable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsMappable with scala.Double = js.native
-  /* 38 */ val IsQuickCreateEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsQuickCreateEnabled with scala.Double = js.native
-  /* 39 */ val IsReadingPaneEnabled: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsReadingPaneEnabled with scala.Double = js.native
-  /* 40 */ val IsRenameable: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsRenameable with scala.Double = js.native
-  /* 41 */ val IsValidForAdvancedFind: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForAdvancedFind with scala.Double = js.native
-  /* 42 */ val IsValidForQueue: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsValidForQueue with scala.Double = js.native
-  /* 43 */ val IsVisibleInMobile: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobile with scala.Double = js.native
-  /* 44 */ val IsVisibleInMobileClient: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.IsVisibleInMobileClient with scala.Double = js.native
-  /* 45 */ val LogicalName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.LogicalName with scala.Double = js.native
-  /* 46 */ val ManyToManyRelationships: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToManyRelationships with scala.Double = js.native
-  /* 47 */ val ManyToOneRelationships: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ManyToOneRelationships with scala.Double = js.native
-  /* 48 */ val MetadataId: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.MetadataId with scala.Double = js.native
-  /* 49 */ val ObjectTypeCode: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ObjectTypeCode with scala.Double = js.native
-  /* 50 */ val OneToManyRelationships: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OneToManyRelationships with scala.Double = js.native
-  /* 51 */ val OwnershipType: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.OwnershipType with scala.Double = js.native
-  /* 52 */ val PrimaryIdAttribute: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryIdAttribute with scala.Double = js.native
-  /* 53 */ val PrimaryImageAttribute: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryImageAttribute with scala.Double = js.native
-  /* 54 */ val PrimaryNameAttribute: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.PrimaryNameAttribute with scala.Double = js.native
-  /* 55 */ val Privileges: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.Privileges with scala.Double = js.native
-  /* 56 */ val RecurrenceBaseEntityLogicalName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.RecurrenceBaseEntityLogicalName with scala.Double = js.native
-  /* 57 */ val ReportViewName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.ReportViewName with scala.Double = js.native
-  /* 58 */ val SchemaName: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.EntityMetadataProperties.SchemaName with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[EntityMetadataProperties with scala.Double] = js.native
+  /* 0 */ @js.native
+  object ActivityTypeMask
+    extends TopLevel[ActivityTypeMask with scala.Double]
+  
+  /* 1 */ @js.native
+  object Attributes
+    extends TopLevel[Attributes with scala.Double]
+  
+  /* 2 */ @js.native
+  object AutoCreateAccessTeams
+    extends TopLevel[AutoCreateAccessTeams with scala.Double]
+  
+  /* 3 */ @js.native
+  object AutoRouteToOwnerQueue
+    extends TopLevel[AutoRouteToOwnerQueue with scala.Double]
+  
+  /* 4 */ @js.native
+  object CanBeInManyToMany
+    extends TopLevel[CanBeInManyToMany with scala.Double]
+  
+  /* 5 */ @js.native
+  object CanBePrimaryEntityInRelationship
+    extends TopLevel[CanBePrimaryEntityInRelationship with scala.Double]
+  
+  /* 6 */ @js.native
+  object CanBeRelatedEntityInRelationship
+    extends TopLevel[CanBeRelatedEntityInRelationship with scala.Double]
+  
+  /* 7 */ @js.native
+  object CanCreateAttributes
+    extends TopLevel[CanCreateAttributes with scala.Double]
+  
+  /* 8 */ @js.native
+  object CanCreateCharts
+    extends TopLevel[CanCreateCharts with scala.Double]
+  
+  /* 9 */ @js.native
+  object CanCreateForms
+    extends TopLevel[CanCreateForms with scala.Double]
+  
+  /* 10 */ @js.native
+  object CanCreateViews
+    extends TopLevel[CanCreateViews with scala.Double]
+  
+  /* 11 */ @js.native
+  object CanModifyAdditionalSettings
+    extends TopLevel[CanModifyAdditionalSettings with scala.Double]
+  
+  /* 12 */ @js.native
+  object CanTriggerWorkflow
+    extends TopLevel[CanTriggerWorkflow with scala.Double]
+  
+  /* 13 */ @js.native
+  object Description
+    extends TopLevel[Description with scala.Double]
+  
+  /* 14 */ @js.native
+  object DisplayCollectionName
+    extends TopLevel[DisplayCollectionName with scala.Double]
+  
+  /* 15 */ @js.native
+  object DisplayName
+    extends TopLevel[DisplayName with scala.Double]
+  
+  /* 16 */ @js.native
+  object IconLargeName
+    extends TopLevel[IconLargeName with scala.Double]
+  
+  /* 17 */ @js.native
+  object IconMediumName
+    extends TopLevel[IconMediumName with scala.Double]
+  
+  /* 18 */ @js.native
+  object IconSmallName
+    extends TopLevel[IconSmallName with scala.Double]
+  
+  /* 19 */ @js.native
+  object IntroducedVersion
+    extends TopLevel[IntroducedVersion with scala.Double]
+  
+  /* 22 */ @js.native
+  object IsAIRUpdated
+    extends TopLevel[IsAIRUpdated with scala.Double]
+  
+  /* 20 */ @js.native
+  object IsActivity
+    extends TopLevel[IsActivity with scala.Double]
+  
+  /* 21 */ @js.native
+  object IsActivityParty
+    extends TopLevel[IsActivityParty with scala.Double]
+  
+  /* 23 */ @js.native
+  object IsAuditEnabled
+    extends TopLevel[IsAuditEnabled with scala.Double]
+  
+  /* 24 */ @js.native
+  object IsAvailableOffline
+    extends TopLevel[IsAvailableOffline with scala.Double]
+  
+  /* 25 */ @js.native
+  object IsBusinessProcessEnabled
+    extends TopLevel[IsBusinessProcessEnabled with scala.Double]
+  
+  /* 26 */ @js.native
+  object IsChildEntity
+    extends TopLevel[IsChildEntity with scala.Double]
+  
+  /* 27 */ @js.native
+  object IsConnectionsEnabled
+    extends TopLevel[IsConnectionsEnabled with scala.Double]
+  
+  /* 28 */ @js.native
+  object IsCustomEntity
+    extends TopLevel[IsCustomEntity with scala.Double]
+  
+  /* 29 */ @js.native
+  object IsCustomizable
+    extends TopLevel[IsCustomizable with scala.Double]
+  
+  /* 30 */ @js.native
+  object IsDocumentManagementEnabled
+    extends TopLevel[IsDocumentManagementEnabled with scala.Double]
+  
+  /* 31 */ @js.native
+  object IsDuplicateDetectionEnabled
+    extends TopLevel[IsDuplicateDetectionEnabled with scala.Double]
+  
+  /* 32 */ @js.native
+  object IsEnabledForCharts
+    extends TopLevel[IsEnabledForCharts with scala.Double]
+  
+  /* 33 */ @js.native
+  object IsImportable
+    extends TopLevel[IsImportable with scala.Double]
+  
+  /* 34 */ @js.native
+  object IsIntersect
+    extends TopLevel[IsIntersect with scala.Double]
+  
+  /* 35 */ @js.native
+  object IsMailMergeEnabled
+    extends TopLevel[IsMailMergeEnabled with scala.Double]
+  
+  /* 36 */ @js.native
+  object IsManaged
+    extends TopLevel[IsManaged with scala.Double]
+  
+  /* 37 */ @js.native
+  object IsMappable
+    extends TopLevel[IsMappable with scala.Double]
+  
+  /* 38 */ @js.native
+  object IsQuickCreateEnabled
+    extends TopLevel[IsQuickCreateEnabled with scala.Double]
+  
+  /* 39 */ @js.native
+  object IsReadingPaneEnabled
+    extends TopLevel[IsReadingPaneEnabled with scala.Double]
+  
+  /* 40 */ @js.native
+  object IsRenameable
+    extends TopLevel[IsRenameable with scala.Double]
+  
+  /* 41 */ @js.native
+  object IsValidForAdvancedFind
+    extends TopLevel[IsValidForAdvancedFind with scala.Double]
+  
+  /* 42 */ @js.native
+  object IsValidForQueue
+    extends TopLevel[IsValidForQueue with scala.Double]
+  
+  /* 43 */ @js.native
+  object IsVisibleInMobile
+    extends TopLevel[IsVisibleInMobile with scala.Double]
+  
+  /* 44 */ @js.native
+  object IsVisibleInMobileClient
+    extends TopLevel[IsVisibleInMobileClient with scala.Double]
+  
+  /* 45 */ @js.native
+  object LogicalName
+    extends TopLevel[LogicalName with scala.Double]
+  
+  /* 46 */ @js.native
+  object ManyToManyRelationships
+    extends TopLevel[ManyToManyRelationships with scala.Double]
+  
+  /* 47 */ @js.native
+  object ManyToOneRelationships
+    extends TopLevel[ManyToOneRelationships with scala.Double]
+  
+  /* 48 */ @js.native
+  object MetadataId
+    extends TopLevel[MetadataId with scala.Double]
+  
+  /* 49 */ @js.native
+  object ObjectTypeCode
+    extends TopLevel[ObjectTypeCode with scala.Double]
+  
+  /* 50 */ @js.native
+  object OneToManyRelationships
+    extends TopLevel[OneToManyRelationships with scala.Double]
+  
+  /* 51 */ @js.native
+  object OwnershipType
+    extends TopLevel[OwnershipType with scala.Double]
+  
+  /* 52 */ @js.native
+  object PrimaryIdAttribute
+    extends TopLevel[PrimaryIdAttribute with scala.Double]
+  
+  /* 53 */ @js.native
+  object PrimaryImageAttribute
+    extends TopLevel[PrimaryImageAttribute with scala.Double]
+  
+  /* 54 */ @js.native
+  object PrimaryNameAttribute
+    extends TopLevel[PrimaryNameAttribute with scala.Double]
+  
+  /* 55 */ @js.native
+  object Privileges
+    extends TopLevel[Privileges with scala.Double]
+  
+  /* 56 */ @js.native
+  object RecurrenceBaseEntityLogicalName
+    extends TopLevel[RecurrenceBaseEntityLogicalName with scala.Double]
+  
+  /* 57 */ @js.native
+  object ReportViewName
+    extends TopLevel[ReportViewName with scala.Double]
+  
+  /* 58 */ @js.native
+  object SchemaName
+    extends TopLevel[SchemaName with scala.Double]
+  
 }
 

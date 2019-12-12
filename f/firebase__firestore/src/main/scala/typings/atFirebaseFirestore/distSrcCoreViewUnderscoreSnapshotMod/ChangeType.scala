@@ -1,5 +1,10 @@
 package typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Added
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Metadata
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Modified
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ChangeType extends js.Object {
   @js.native
   sealed trait Removed extends ChangeType
   
-  /* 0 */ val Added: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Added with Double = js.native
-  /* 3 */ val Metadata: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Metadata with Double = js.native
-  /* 2 */ val Modified: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Modified with Double = js.native
-  /* 1 */ val Removed: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.ChangeType.Removed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChangeType with Double] = js.native
+  /* 0 */ @js.native
+  object Added extends TopLevel[Added with Double]
+  
+  /* 3 */ @js.native
+  object Metadata extends TopLevel[Metadata with Double]
+  
+  /* 2 */ @js.native
+  object Modified extends TopLevel[Modified with Double]
+  
+  /* 1 */ @js.native
+  object Removed extends TopLevel[Removed with Double]
+  
 }
 

@@ -1,5 +1,21 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdo
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdoRevA
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdoRevB
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdv
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xRtt
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma3xRtt
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdmaUmb
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.custom
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.edge
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.gprs
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.hsdpa
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.hsupa
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.lteAdvanced
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.none
+import typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.umts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,22 +87,52 @@ object WwanDataClass extends js.Object {
   @js.native
   sealed trait umts extends WwanDataClass
   
-  /* 8 */ val cdma1xEvdo: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdo with Double = js.native
-  /* 9 */ val cdma1xEvdoRevA: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdoRevA with Double = js.native
-  /* 12 */ val cdma1xEvdoRevB: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdoRevB with Double = js.native
-  /* 10 */ val cdma1xEvdv: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xEvdv with Double = js.native
-  /* 7 */ val cdma1xRtt: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma1xRtt with Double = js.native
-  /* 11 */ val cdma3xRtt: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdma3xRtt with Double = js.native
-  /* 13 */ val cdmaUmb: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.cdmaUmb with Double = js.native
-  /* 14 */ val custom: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.custom with Double = js.native
-  /* 2 */ val edge: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.edge with Double = js.native
-  /* 1 */ val gprs: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.gprs with Double = js.native
-  /* 4 */ val hsdpa: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.hsdpa with Double = js.native
-  /* 5 */ val hsupa: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.hsupa with Double = js.native
-  /* 6 */ val lteAdvanced: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.lteAdvanced with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.none with Double = js.native
-  /* 3 */ val umts: typings.winrtDashUwp.Windows.Networking.Connectivity.WwanDataClass.umts with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WwanDataClass with Double] = js.native
+  /* 8 */ @js.native
+  object cdma1xEvdo extends TopLevel[cdma1xEvdo with Double]
+  
+  /* 9 */ @js.native
+  object cdma1xEvdoRevA extends TopLevel[cdma1xEvdoRevA with Double]
+  
+  /* 12 */ @js.native
+  object cdma1xEvdoRevB extends TopLevel[cdma1xEvdoRevB with Double]
+  
+  /* 10 */ @js.native
+  object cdma1xEvdv extends TopLevel[cdma1xEvdv with Double]
+  
+  /* 7 */ @js.native
+  object cdma1xRtt extends TopLevel[cdma1xRtt with Double]
+  
+  /* 11 */ @js.native
+  object cdma3xRtt extends TopLevel[cdma3xRtt with Double]
+  
+  /* 13 */ @js.native
+  object cdmaUmb extends TopLevel[cdmaUmb with Double]
+  
+  /* 14 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 2 */ @js.native
+  object edge extends TopLevel[edge with Double]
+  
+  /* 1 */ @js.native
+  object gprs extends TopLevel[gprs with Double]
+  
+  /* 4 */ @js.native
+  object hsdpa extends TopLevel[hsdpa with Double]
+  
+  /* 5 */ @js.native
+  object hsupa extends TopLevel[hsupa with Double]
+  
+  /* 6 */ @js.native
+  object lteAdvanced extends TopLevel[lteAdvanced with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object umts extends TopLevel[umts with Double]
+  
 }
 

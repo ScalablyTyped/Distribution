@@ -1,5 +1,6 @@
 package typings.styledDashComponents
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.Consumer
@@ -52,7 +53,6 @@ object macroMod extends js.Object {
   
   val ThemeConsumer: Consumer[AnyIfEmpty[DefaultTheme]] = js.native
   val ThemeContext: Context[AnyIfEmpty[DefaultTheme]] = js.native
-  val ThemeProvider: ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]] = js.native
   val css: ThemedCssFunction[DefaultTheme] = js.native
   val default: StyledInterface = js.native
   val withTheme: WithThemeFnInterface[DefaultTheme] = js.native
@@ -65,5 +65,8 @@ object macroMod extends js.Object {
   def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
   def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes = js.native
   def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes = js.native
+  @js.native
+  object ThemeProvider extends TopLevel[ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]]]
+  
 }
 

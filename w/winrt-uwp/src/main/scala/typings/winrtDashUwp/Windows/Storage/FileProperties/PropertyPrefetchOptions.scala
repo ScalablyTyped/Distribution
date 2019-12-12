@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.basicProperties
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.documentProperties
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.imageProperties
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.musicProperties
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.none
+import typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.videoProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object PropertyPrefetchOptions extends js.Object {
   @js.native
   sealed trait videoProperties extends PropertyPrefetchOptions
   
-  /* 5 */ val basicProperties: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.basicProperties with Double = js.native
-  /* 4 */ val documentProperties: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.documentProperties with Double = js.native
-  /* 3 */ val imageProperties: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.imageProperties with Double = js.native
-  /* 1 */ val musicProperties: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.musicProperties with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.none with Double = js.native
-  /* 2 */ val videoProperties: typings.winrtDashUwp.Windows.Storage.FileProperties.PropertyPrefetchOptions.videoProperties with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PropertyPrefetchOptions with Double] = js.native
+  /* 5 */ @js.native
+  object basicProperties extends TopLevel[basicProperties with Double]
+  
+  /* 4 */ @js.native
+  object documentProperties extends TopLevel[documentProperties with Double]
+  
+  /* 3 */ @js.native
+  object imageProperties extends TopLevel[imageProperties with Double]
+  
+  /* 1 */ @js.native
+  object musicProperties extends TopLevel[musicProperties with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object videoProperties extends TopLevel[videoProperties with Double]
+  
 }
 

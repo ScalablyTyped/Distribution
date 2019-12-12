@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.PyramidMode.Linear
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.PyramidMode.Surface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object PyramidMode extends js.Object {
   @js.native
   sealed trait Surface extends PyramidMode
   
-  /* 0 */ val Linear: typings.ejDotWebDotAll.ej.datavisualization.Chart.PyramidMode.Linear with Double = js.native
-  /* 1 */ val Surface: typings.ejDotWebDotAll.ej.datavisualization.Chart.PyramidMode.Surface with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PyramidMode with Double] = js.native
+  /* 0 */ @js.native
+  object Linear extends TopLevel[Linear with Double]
+  
+  /* 1 */ @js.native
+  object Surface extends TopLevel[Surface with Double]
+  
 }
 

@@ -72,11 +72,11 @@ import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateGcmChannelEx
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSegmentExceptionsUnionMod.UpdateSegmentExceptionsUnion
 import typings.atAwsDashSdkClientDashPinpointDashBrowser.typesUpdateSmsChannelExceptionsUnionMod.UpdateSmsChannelExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotFoundException
   extends ServiceException[_NotFoundExceptionDetails]
      with CreateAppExceptionsUnion
@@ -151,21 +151,6 @@ trait NotFoundException
      with UpdateSegmentExceptionsUnion
      with UpdateSmsChannelExceptionsUnion {
   @JSName("name")
-  var name_NotFoundException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.NotFoundException
-}
-
-object NotFoundException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _NotFoundExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.NotFoundException,
-    stack: String = null
-  ): NotFoundException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NotFoundException]
-  }
+  var name_NotFoundException: typings.atAwsDashSdkClientDashPinpointDashBrowser.atAwsDashSdkClientDashPinpointDashBrowserStrings.NotFoundException = js.native
 }
 

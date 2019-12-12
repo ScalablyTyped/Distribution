@@ -1,5 +1,16 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.symmetric.`3des`
+import typings.openpgp.openpgpMod.enums.symmetric.aes128
+import typings.openpgp.openpgpMod.enums.symmetric.aes192
+import typings.openpgp.openpgpMod.enums.symmetric.aes256
+import typings.openpgp.openpgpMod.enums.symmetric.blowfish
+import typings.openpgp.openpgpMod.enums.symmetric.cast5
+import typings.openpgp.openpgpMod.enums.symmetric.idea
+import typings.openpgp.openpgpMod.enums.symmetric.plaintext
+import typings.openpgp.openpgpMod.enums.symmetric.tripledes
+import typings.openpgp.openpgpMod.enums.symmetric.twofish
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,17 +57,37 @@ object symmetric extends js.Object {
   @js.native
   sealed trait twofish extends symmetric
   
-  /* 2 */ val `3des`: typings.openpgp.openpgpMod.enums.symmetric.`3des` with Double = js.native
-  /* 7 */ val aes128: typings.openpgp.openpgpMod.enums.symmetric.aes128 with Double = js.native
-  /* 8 */ val aes192: typings.openpgp.openpgpMod.enums.symmetric.aes192 with Double = js.native
-  /* 9 */ val aes256: typings.openpgp.openpgpMod.enums.symmetric.aes256 with Double = js.native
-  /* 4 */ val blowfish: typings.openpgp.openpgpMod.enums.symmetric.blowfish with Double = js.native
-  /* 3 */ val cast5: typings.openpgp.openpgpMod.enums.symmetric.cast5 with Double = js.native
-  /* 1 */ val idea: typings.openpgp.openpgpMod.enums.symmetric.idea with Double = js.native
-  /* 0 */ val plaintext: typings.openpgp.openpgpMod.enums.symmetric.plaintext with Double = js.native
-  /* 2 */ val tripledes: typings.openpgp.openpgpMod.enums.symmetric.tripledes with Double = js.native
-  /* 10 */ val twofish: typings.openpgp.openpgpMod.enums.symmetric.twofish with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[symmetric with Double] = js.native
+  /* 2 */ @js.native
+  object `3des` extends TopLevel[`3des` with Double]
+  
+  /* 7 */ @js.native
+  object aes128 extends TopLevel[aes128 with Double]
+  
+  /* 8 */ @js.native
+  object aes192 extends TopLevel[aes192 with Double]
+  
+  /* 9 */ @js.native
+  object aes256 extends TopLevel[aes256 with Double]
+  
+  /* 4 */ @js.native
+  object blowfish extends TopLevel[blowfish with Double]
+  
+  /* 3 */ @js.native
+  object cast5 extends TopLevel[cast5 with Double]
+  
+  /* 1 */ @js.native
+  object idea extends TopLevel[idea with Double]
+  
+  /* 0 */ @js.native
+  object plaintext extends TopLevel[plaintext with Double]
+  
+  /* 2 */ @js.native
+  object tripledes extends TopLevel[tripledes with Double]
+  
+  /* 10 */ @js.native
+  object twofish extends TopLevel[twofish with Double]
+  
 }
 

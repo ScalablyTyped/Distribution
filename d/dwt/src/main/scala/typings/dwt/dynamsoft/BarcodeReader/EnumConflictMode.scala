@@ -1,5 +1,8 @@
 package typings.dwt.dynamsoft.BarcodeReader
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Ignore
+import typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Overwrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object EnumConflictMode extends js.Object {
   @js.native
   sealed trait ECM_Overwrite extends EnumConflictMode
   
-  /* 1 */ val ECM_Ignore: typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Ignore with Double = js.native
-  /* 2 */ val ECM_Overwrite: typings.dwt.dynamsoft.BarcodeReader.EnumConflictMode.ECM_Overwrite with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumConflictMode with Double] = js.native
+  /* 1 */ @js.native
+  object ECM_Ignore extends TopLevel[ECM_Ignore with Double]
+  
+  /* 2 */ @js.native
+  object ECM_Overwrite extends TopLevel[ECM_Overwrite with Double]
+  
 }
 

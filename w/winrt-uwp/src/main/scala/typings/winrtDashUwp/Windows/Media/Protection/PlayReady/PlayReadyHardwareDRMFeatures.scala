@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures.hardwareDRM
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures.hevc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object PlayReadyHardwareDRMFeatures extends js.Object {
   @js.native
   sealed trait hevc extends PlayReadyHardwareDRMFeatures
   
-  /* 0 */ val hardwareDRM: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures.hardwareDRM with Double = js.native
-  /* 1 */ val hevc: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures.hevc with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlayReadyHardwareDRMFeatures with Double] = js.native
+  /* 0 */ @js.native
+  object hardwareDRM extends TopLevel[hardwareDRM with Double]
+  
+  /* 1 */ @js.native
+  object hevc extends TopLevel[hevc with Double]
+  
 }
 

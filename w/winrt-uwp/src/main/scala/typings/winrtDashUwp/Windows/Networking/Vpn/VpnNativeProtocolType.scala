@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.ipsecIkev2
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.l2tp
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.pptp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object VpnNativeProtocolType extends js.Object {
   @js.native
   sealed trait pptp extends VpnNativeProtocolType
   
-  /* 2 */ val ipsecIkev2: typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.ipsecIkev2 with Double = js.native
-  /* 1 */ val l2tp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.l2tp with Double = js.native
-  /* 0 */ val pptp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnNativeProtocolType.pptp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnNativeProtocolType with Double] = js.native
+  /* 2 */ @js.native
+  object ipsecIkev2 extends TopLevel[ipsecIkev2 with Double]
+  
+  /* 1 */ @js.native
+  object l2tp extends TopLevel[l2tp with Double]
+  
+  /* 0 */ @js.native
+  object pptp extends TopLevel[pptp with Double]
+  
 }
 

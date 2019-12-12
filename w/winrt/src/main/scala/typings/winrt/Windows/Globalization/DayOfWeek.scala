@@ -1,5 +1,13 @@
 package typings.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Globalization.DayOfWeek.friday
+import typings.winrt.Windows.Globalization.DayOfWeek.monday
+import typings.winrt.Windows.Globalization.DayOfWeek.saturday
+import typings.winrt.Windows.Globalization.DayOfWeek.sunday
+import typings.winrt.Windows.Globalization.DayOfWeek.thursday
+import typings.winrt.Windows.Globalization.DayOfWeek.tuesday
+import typings.winrt.Windows.Globalization.DayOfWeek.wednesday
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object DayOfWeek extends js.Object {
   @js.native
   sealed trait wednesday extends DayOfWeek
   
-  /* 5 */ val friday: typings.winrt.Windows.Globalization.DayOfWeek.friday with Double = js.native
-  /* 1 */ val monday: typings.winrt.Windows.Globalization.DayOfWeek.monday with Double = js.native
-  /* 6 */ val saturday: typings.winrt.Windows.Globalization.DayOfWeek.saturday with Double = js.native
-  /* 0 */ val sunday: typings.winrt.Windows.Globalization.DayOfWeek.sunday with Double = js.native
-  /* 4 */ val thursday: typings.winrt.Windows.Globalization.DayOfWeek.thursday with Double = js.native
-  /* 2 */ val tuesday: typings.winrt.Windows.Globalization.DayOfWeek.tuesday with Double = js.native
-  /* 3 */ val wednesday: typings.winrt.Windows.Globalization.DayOfWeek.wednesday with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DayOfWeek with Double] = js.native
+  /* 5 */ @js.native
+  object friday extends TopLevel[friday with Double]
+  
+  /* 1 */ @js.native
+  object monday extends TopLevel[monday with Double]
+  
+  /* 6 */ @js.native
+  object saturday extends TopLevel[saturday with Double]
+  
+  /* 0 */ @js.native
+  object sunday extends TopLevel[sunday with Double]
+  
+  /* 4 */ @js.native
+  object thursday extends TopLevel[thursday with Double]
+  
+  /* 2 */ @js.native
+  object tuesday extends TopLevel[tuesday with Double]
+  
+  /* 3 */ @js.native
+  object wednesday extends TopLevel[wednesday with Double]
+  
 }
 

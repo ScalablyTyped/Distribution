@@ -1,5 +1,8 @@
 package typings.grpc.grpcMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.grpc.grpcMod.writeFlags.BUFFER_HINT
+import typings.grpc.grpcMod.writeFlags.NO_COMPRESS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,9 +27,13 @@ object writeFlags extends js.Object {
   @js.native
   sealed trait NO_COMPRESS extends writeFlags
   
-  /* 1 */ val BUFFER_HINT: typings.grpc.grpcMod.writeFlags.BUFFER_HINT with Double = js.native
-  /* 0 */ val NO_COMPRESS: typings.grpc.grpcMod.writeFlags.NO_COMPRESS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[writeFlags with Double] = js.native
+  /* 1 */ @js.native
+  object BUFFER_HINT extends TopLevel[BUFFER_HINT with Double]
+  
+  /* 0 */ @js.native
+  object NO_COMPRESS extends TopLevel[NO_COMPRESS with Double]
+  
 }
 

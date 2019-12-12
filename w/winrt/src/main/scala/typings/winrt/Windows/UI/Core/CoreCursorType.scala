@@ -1,5 +1,19 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Core.CoreCursorType.arrow
+import typings.winrt.Windows.UI.Core.CoreCursorType.cross
+import typings.winrt.Windows.UI.Core.CoreCursorType.custom
+import typings.winrt.Windows.UI.Core.CoreCursorType.hand
+import typings.winrt.Windows.UI.Core.CoreCursorType.help
+import typings.winrt.Windows.UI.Core.CoreCursorType.iBeam
+import typings.winrt.Windows.UI.Core.CoreCursorType.sizeAll
+import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthSouth
+import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNortheastSouthwest
+import typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthwestSoutheast
+import typings.winrt.Windows.UI.Core.CoreCursorType.sizeWestEast
+import typings.winrt.Windows.UI.Core.CoreCursorType.universalNo
+import typings.winrt.Windows.UI.Core.CoreCursorType.upArrow
 import typings.winrt.Windows.UI.Core.CoreCursorType.wait
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -53,22 +67,48 @@ object CoreCursorType extends js.Object {
   @js.native
   sealed trait wait extends CoreCursorType
   
-  /* 0 */ val arrow: typings.winrt.Windows.UI.Core.CoreCursorType.arrow with Double = js.native
-  /* 1 */ val cross: typings.winrt.Windows.UI.Core.CoreCursorType.cross with Double = js.native
-  /* 2 */ val custom: typings.winrt.Windows.UI.Core.CoreCursorType.custom with Double = js.native
-  /* 3 */ val hand: typings.winrt.Windows.UI.Core.CoreCursorType.hand with Double = js.native
-  /* 4 */ val help: typings.winrt.Windows.UI.Core.CoreCursorType.help with Double = js.native
-  /* 5 */ val iBeam: typings.winrt.Windows.UI.Core.CoreCursorType.iBeam with Double = js.native
-  /* 6 */ val sizeAll: typings.winrt.Windows.UI.Core.CoreCursorType.sizeAll with Double = js.native
-  /* 8 */ val sizeNorthSouth: typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthSouth with Double = js.native
-  /* 7 */ val sizeNortheastSouthwest: typings.winrt.Windows.UI.Core.CoreCursorType.sizeNortheastSouthwest with Double = js.native
-  /* 9 */ val sizeNorthwestSoutheast: typings.winrt.Windows.UI.Core.CoreCursorType.sizeNorthwestSoutheast with Double = js.native
-  /* 10 */ val sizeWestEast: typings.winrt.Windows.UI.Core.CoreCursorType.sizeWestEast with Double = js.native
-  /* 11 */ val universalNo: typings.winrt.Windows.UI.Core.CoreCursorType.universalNo with Double = js.native
-  /* 12 */ val upArrow: typings.winrt.Windows.UI.Core.CoreCursorType.upArrow with Double = js.native
   /* 13 */ @JSName("wait")
-  val wait_FCoreCursorType: wait with Double = js.native
+  val wait_ : wait with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreCursorType with Double] = js.native
+  /* 0 */ @js.native
+  object arrow extends TopLevel[arrow with Double]
+  
+  /* 1 */ @js.native
+  object cross extends TopLevel[cross with Double]
+  
+  /* 2 */ @js.native
+  object custom extends TopLevel[custom with Double]
+  
+  /* 3 */ @js.native
+  object hand extends TopLevel[hand with Double]
+  
+  /* 4 */ @js.native
+  object help extends TopLevel[help with Double]
+  
+  /* 5 */ @js.native
+  object iBeam extends TopLevel[iBeam with Double]
+  
+  /* 6 */ @js.native
+  object sizeAll extends TopLevel[sizeAll with Double]
+  
+  /* 8 */ @js.native
+  object sizeNorthSouth extends TopLevel[sizeNorthSouth with Double]
+  
+  /* 7 */ @js.native
+  object sizeNortheastSouthwest extends TopLevel[sizeNortheastSouthwest with Double]
+  
+  /* 9 */ @js.native
+  object sizeNorthwestSoutheast extends TopLevel[sizeNorthwestSoutheast with Double]
+  
+  /* 10 */ @js.native
+  object sizeWestEast extends TopLevel[sizeWestEast with Double]
+  
+  /* 11 */ @js.native
+  object universalNo extends TopLevel[universalNo with Double]
+  
+  /* 12 */ @js.native
+  object upArrow extends TopLevel[upArrow with Double]
+  
 }
 

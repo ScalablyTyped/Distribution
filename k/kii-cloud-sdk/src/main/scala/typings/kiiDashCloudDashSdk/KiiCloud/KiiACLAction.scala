@@ -1,5 +1,14 @@
 package typings.kiiDashCloudDashSdk.KiiCloud
 
+import org.scalablytyped.runtime.TopLevel
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionCreateObjects
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionDropBucket
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionQueryObjects
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionReadObjects
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLObjectActionRead
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLObjectActionWrite
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLSendMessageToTopic
+import typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLSubscribeToTopic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object KiiACLAction extends js.Object {
   @js.native
   sealed trait KiiACLSubscribeToTopic extends KiiACLAction
   
-  /* 0 */ val KiiACLBucketActionCreateObjects: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionCreateObjects with Double = js.native
-  /* 2 */ val KiiACLBucketActionDropBucket: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionDropBucket with Double = js.native
-  /* 1 */ val KiiACLBucketActionQueryObjects: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionQueryObjects with Double = js.native
-  /* 5 */ val KiiACLBucketActionReadObjects: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLBucketActionReadObjects with Double = js.native
-  /* 3 */ val KiiACLObjectActionRead: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLObjectActionRead with Double = js.native
-  /* 4 */ val KiiACLObjectActionWrite: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLObjectActionWrite with Double = js.native
-  /* 7 */ val KiiACLSendMessageToTopic: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLSendMessageToTopic with Double = js.native
-  /* 6 */ val KiiACLSubscribeToTopic: typings.kiiDashCloudDashSdk.KiiCloud.KiiACLAction.KiiACLSubscribeToTopic with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KiiACLAction with Double] = js.native
+  /* 0 */ @js.native
+  object KiiACLBucketActionCreateObjects extends TopLevel[KiiACLBucketActionCreateObjects with Double]
+  
+  /* 2 */ @js.native
+  object KiiACLBucketActionDropBucket extends TopLevel[KiiACLBucketActionDropBucket with Double]
+  
+  /* 1 */ @js.native
+  object KiiACLBucketActionQueryObjects extends TopLevel[KiiACLBucketActionQueryObjects with Double]
+  
+  /* 5 */ @js.native
+  object KiiACLBucketActionReadObjects extends TopLevel[KiiACLBucketActionReadObjects with Double]
+  
+  /* 3 */ @js.native
+  object KiiACLObjectActionRead extends TopLevel[KiiACLObjectActionRead with Double]
+  
+  /* 4 */ @js.native
+  object KiiACLObjectActionWrite extends TopLevel[KiiACLObjectActionWrite with Double]
+  
+  /* 7 */ @js.native
+  object KiiACLSendMessageToTopic extends TopLevel[KiiACLSendMessageToTopic with Double]
+  
+  /* 6 */ @js.native
+  object KiiACLSubscribeToTopic extends TopLevel[KiiACLSubscribeToTopic with Double]
+  
 }
 

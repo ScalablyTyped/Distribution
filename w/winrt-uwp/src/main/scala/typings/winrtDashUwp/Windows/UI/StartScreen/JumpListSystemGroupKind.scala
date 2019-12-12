@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.frequent
+import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.none
+import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.recent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object JumpListSystemGroupKind extends js.Object {
   @js.native
   sealed trait recent extends JumpListSystemGroupKind
   
-  /* 1 */ val frequent: typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.frequent with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.none with Double = js.native
-  /* 2 */ val recent: typings.winrtDashUwp.Windows.UI.StartScreen.JumpListSystemGroupKind.recent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[JumpListSystemGroupKind with Double] = js.native
+  /* 1 */ @js.native
+  object frequent extends TopLevel[frequent with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object recent extends TopLevel[recent with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.HEAD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.MERGED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.NORMAL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object CellMergeState extends js.Object {
   @js.native
   sealed trait NORMAL extends CellMergeState
   
-  /* 1 */ val HEAD: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.HEAD with Double = js.native
-  /* 2 */ val MERGED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.MERGED with Double = js.native
-  /* 0 */ val NORMAL: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.CellMergeState.NORMAL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CellMergeState with Double] = js.native
+  /* 1 */ @js.native
+  object HEAD extends TopLevel[HEAD with Double]
+  
+  /* 2 */ @js.native
+  object MERGED extends TopLevel[MERGED with Double]
+  
+  /* 0 */ @js.native
+  object NORMAL extends TopLevel[NORMAL with Double]
+  
 }
 

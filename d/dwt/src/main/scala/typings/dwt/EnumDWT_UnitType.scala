@@ -1,5 +1,13 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_UnitType.TWUN_CENTIMETERS
+import typings.dwt.EnumDWT_UnitType.TWUN_INCHES
+import typings.dwt.EnumDWT_UnitType.TWUN_MILLIMETERS
+import typings.dwt.EnumDWT_UnitType.TWUN_PICAS
+import typings.dwt.EnumDWT_UnitType.TWUN_PIXELS
+import typings.dwt.EnumDWT_UnitType.TWUN_POINTS
+import typings.dwt.EnumDWT_UnitType.TWUN_TWIPS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,14 +40,28 @@ object EnumDWT_UnitType extends js.Object {
   @js.native
   sealed trait TWUN_TWIPS extends EnumDWT_UnitType
   
-  /* 1 */ val TWUN_CENTIMETERS: typings.dwt.EnumDWT_UnitType.TWUN_CENTIMETERS with Double = js.native
-  /* 0 */ val TWUN_INCHES: typings.dwt.EnumDWT_UnitType.TWUN_INCHES with Double = js.native
-  /* 6 */ val TWUN_MILLIMETERS: typings.dwt.EnumDWT_UnitType.TWUN_MILLIMETERS with Double = js.native
-  /* 2 */ val TWUN_PICAS: typings.dwt.EnumDWT_UnitType.TWUN_PICAS with Double = js.native
-  /* 5 */ val TWUN_PIXELS: typings.dwt.EnumDWT_UnitType.TWUN_PIXELS with Double = js.native
-  /* 3 */ val TWUN_POINTS: typings.dwt.EnumDWT_UnitType.TWUN_POINTS with Double = js.native
-  /* 4 */ val TWUN_TWIPS: typings.dwt.EnumDWT_UnitType.TWUN_TWIPS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_UnitType with Double] = js.native
+  /* 1 */ @js.native
+  object TWUN_CENTIMETERS extends TopLevel[TWUN_CENTIMETERS with Double]
+  
+  /* 0 */ @js.native
+  object TWUN_INCHES extends TopLevel[TWUN_INCHES with Double]
+  
+  /* 6 */ @js.native
+  object TWUN_MILLIMETERS extends TopLevel[TWUN_MILLIMETERS with Double]
+  
+  /* 2 */ @js.native
+  object TWUN_PICAS extends TopLevel[TWUN_PICAS with Double]
+  
+  /* 5 */ @js.native
+  object TWUN_PIXELS extends TopLevel[TWUN_PIXELS with Double]
+  
+  /* 3 */ @js.native
+  object TWUN_POINTS extends TopLevel[TWUN_POINTS with Double]
+  
+  /* 4 */ @js.native
+  object TWUN_TWIPS extends TopLevel[TWUN_TWIPS with Double]
+  
 }
 

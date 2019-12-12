@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Accordion
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Auto
+import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Content
+import typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Fill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object HeightAdjustMode extends js.Object {
   @js.native
   sealed trait Fill extends HeightAdjustMode
   
-  /* 1 */ val Auto: typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Auto with Double = js.native
-  /* 0 */ val Content: typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Content with Double = js.native
-  /* 2 */ val Fill: typings.ejDotWebDotAll.ej.Accordion.HeightAdjustMode.Fill with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HeightAdjustMode with Double] = js.native
+  /* 1 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 0 */ @js.native
+  object Content extends TopLevel[Content with Double]
+  
+  /* 2 */ @js.native
+  object Fill extends TopLevel[Fill with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ClearApplyTo.all
+import typings.officeDashJs.Excel.ClearApplyTo.contents
+import typings.officeDashJs.Excel.ClearApplyTo.formats
+import typings.officeDashJs.Excel.ClearApplyTo.hyperlinks
+import typings.officeDashJs.Excel.ClearApplyTo.removeHyperlinks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,12 +54,22 @@ object ClearApplyTo extends js.Object {
   @js.native
   sealed trait removeHyperlinks extends ClearApplyTo
   
-  /* "All" */ val all: typings.officeDashJs.Excel.ClearApplyTo.all with String = js.native
-  /* "Contents" */ val contents: typings.officeDashJs.Excel.ClearApplyTo.contents with String = js.native
-  /* "Formats" */ val formats: typings.officeDashJs.Excel.ClearApplyTo.formats with String = js.native
-  /* "Hyperlinks" */ val hyperlinks: typings.officeDashJs.Excel.ClearApplyTo.hyperlinks with String = js.native
-  /* "RemoveHyperlinks" */ val removeHyperlinks: typings.officeDashJs.Excel.ClearApplyTo.removeHyperlinks with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ClearApplyTo with String] = js.native
+  /* "All" */ @js.native
+  object all extends TopLevel[all with String]
+  
+  /* "Contents" */ @js.native
+  object contents extends TopLevel[contents with String]
+  
+  /* "Formats" */ @js.native
+  object formats extends TopLevel[formats with String]
+  
+  /* "Hyperlinks" */ @js.native
+  object hyperlinks extends TopLevel[hyperlinks with String]
+  
+  /* "RemoveHyperlinks" */ @js.native
+  object removeHyperlinks extends TopLevel[removeHyperlinks with String]
+  
 }
 

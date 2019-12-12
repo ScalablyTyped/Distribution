@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptEccFullPublicKey
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptPublicKey
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.capi1PublicKey
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.pkcs1RsaPublicKey
+import typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.x509SubjectPublicKeyInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object CryptographicPublicKeyBlobType extends js.Object {
   @js.native
   sealed trait x509SubjectPublicKeyInfo extends CryptographicPublicKeyBlobType
   
-  /* 4 */ val bcryptEccFullPublicKey: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptEccFullPublicKey with Double = js.native
-  /* 2 */ val bcryptPublicKey: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.bcryptPublicKey with Double = js.native
-  /* 3 */ val capi1PublicKey: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.capi1PublicKey with Double = js.native
-  /* 1 */ val pkcs1RsaPublicKey: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.pkcs1RsaPublicKey with Double = js.native
-  /* 0 */ val x509SubjectPublicKeyInfo: typings.winrtDashUwp.Windows.Security.Cryptography.Core.CryptographicPublicKeyBlobType.x509SubjectPublicKeyInfo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptographicPublicKeyBlobType with Double] = js.native
+  /* 4 */ @js.native
+  object bcryptEccFullPublicKey extends TopLevel[bcryptEccFullPublicKey with Double]
+  
+  /* 2 */ @js.native
+  object bcryptPublicKey extends TopLevel[bcryptPublicKey with Double]
+  
+  /* 3 */ @js.native
+  object capi1PublicKey extends TopLevel[capi1PublicKey with Double]
+  
+  /* 1 */ @js.native
+  object pkcs1RsaPublicKey extends TopLevel[pkcs1RsaPublicKey with Double]
+  
+  /* 0 */ @js.native
+  object x509SubjectPublicKeyInfo extends TopLevel[x509SubjectPublicKeyInfo with Double]
+  
 }
 

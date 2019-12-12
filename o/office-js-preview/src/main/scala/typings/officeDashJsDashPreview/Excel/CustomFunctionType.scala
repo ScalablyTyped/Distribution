@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.CustomFunctionType.invalid
+import typings.officeDashJsDashPreview.Excel.CustomFunctionType.script
+import typings.officeDashJsDashPreview.Excel.CustomFunctionType.webService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object CustomFunctionType extends js.Object {
   @js.native
   sealed trait webService extends CustomFunctionType
   
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.CustomFunctionType.invalid with String = js.native
-  /* "Script" */ val script: typings.officeDashJsDashPreview.Excel.CustomFunctionType.script with String = js.native
-  /* "WebService" */ val webService: typings.officeDashJsDashPreview.Excel.CustomFunctionType.webService with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CustomFunctionType with String] = js.native
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "Script" */ @js.native
+  object script extends TopLevel[script with String]
+  
+  /* "WebService" */ @js.native
+  object webService extends TopLevel[webService with String]
+  
 }
 

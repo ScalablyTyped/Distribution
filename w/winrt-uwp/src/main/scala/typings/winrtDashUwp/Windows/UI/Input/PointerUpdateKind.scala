@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.UI.Input
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonPressed
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonReleased
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonPressed
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonReleased
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.other
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonPressed
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonReleased
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Pressed
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Released
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Pressed
+import typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Released
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object PointerUpdateKind extends js.Object {
   @js.native
   sealed trait xbutton2Released extends PointerUpdateKind
   
-  /* 1 */ val leftButtonPressed: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonPressed with Double = js.native
-  /* 2 */ val leftButtonReleased: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.leftButtonReleased with Double = js.native
-  /* 5 */ val middleButtonPressed: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonPressed with Double = js.native
-  /* 6 */ val middleButtonReleased: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.middleButtonReleased with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.other with Double = js.native
-  /* 3 */ val rightButtonPressed: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonPressed with Double = js.native
-  /* 4 */ val rightButtonReleased: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.rightButtonReleased with Double = js.native
-  /* 7 */ val xbutton1Pressed: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Pressed with Double = js.native
-  /* 8 */ val xbutton1Released: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton1Released with Double = js.native
-  /* 9 */ val xbutton2Pressed: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Pressed with Double = js.native
-  /* 10 */ val xbutton2Released: typings.winrtDashUwp.Windows.UI.Input.PointerUpdateKind.xbutton2Released with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointerUpdateKind with Double] = js.native
+  /* 1 */ @js.native
+  object leftButtonPressed extends TopLevel[leftButtonPressed with Double]
+  
+  /* 2 */ @js.native
+  object leftButtonReleased extends TopLevel[leftButtonReleased with Double]
+  
+  /* 5 */ @js.native
+  object middleButtonPressed extends TopLevel[middleButtonPressed with Double]
+  
+  /* 6 */ @js.native
+  object middleButtonReleased extends TopLevel[middleButtonReleased with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 3 */ @js.native
+  object rightButtonPressed extends TopLevel[rightButtonPressed with Double]
+  
+  /* 4 */ @js.native
+  object rightButtonReleased extends TopLevel[rightButtonReleased with Double]
+  
+  /* 7 */ @js.native
+  object xbutton1Pressed extends TopLevel[xbutton1Pressed with Double]
+  
+  /* 8 */ @js.native
+  object xbutton1Released extends TopLevel[xbutton1Released with Double]
+  
+  /* 9 */ @js.native
+  object xbutton2Pressed extends TopLevel[xbutton2Pressed with Double]
+  
+  /* 10 */ @js.native
+  object xbutton2Released extends TopLevel[xbutton2Released with Double]
+  
 }
 

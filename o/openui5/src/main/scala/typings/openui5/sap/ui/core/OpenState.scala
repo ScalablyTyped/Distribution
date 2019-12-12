@@ -1,5 +1,10 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.OpenState.CLOSED
+import typings.openui5.sap.ui.core.OpenState.CLOSING
+import typings.openui5.sap.ui.core.OpenState.OPEN
+import typings.openui5.sap.ui.core.OpenState.OPENING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object OpenState extends js.Object {
   @js.native
   sealed trait OPENING extends OpenState
   
-  /* 0 */ val CLOSED: typings.openui5.sap.ui.core.OpenState.CLOSED with Double = js.native
-  /* 1 */ val CLOSING: typings.openui5.sap.ui.core.OpenState.CLOSING with Double = js.native
-  /* 2 */ val OPEN: typings.openui5.sap.ui.core.OpenState.OPEN with Double = js.native
-  /* 3 */ val OPENING: typings.openui5.sap.ui.core.OpenState.OPENING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OpenState with Double] = js.native
+  /* 0 */ @js.native
+  object CLOSED extends TopLevel[CLOSED with Double]
+  
+  /* 1 */ @js.native
+  object CLOSING extends TopLevel[CLOSING with Double]
+  
+  /* 2 */ @js.native
+  object OPEN extends TopLevel[OPEN with Double]
+  
+  /* 3 */ @js.native
+  object OPENING extends TopLevel[OPENING with Double]
+  
 }
 

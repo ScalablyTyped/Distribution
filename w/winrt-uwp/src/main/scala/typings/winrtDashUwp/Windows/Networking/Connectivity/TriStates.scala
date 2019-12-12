@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.doNotCare
+import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.no
+import typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object TriStates extends js.Object {
   @js.native
   sealed trait yes extends TriStates
   
-  /* 0 */ val doNotCare: typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.doNotCare with Double = js.native
-  /* 1 */ val no: typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.no with Double = js.native
-  /* 2 */ val yes: typings.winrtDashUwp.Windows.Networking.Connectivity.TriStates.yes with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TriStates with Double] = js.native
+  /* 0 */ @js.native
+  object doNotCare extends TopLevel[doNotCare with Double]
+  
+  /* 1 */ @js.native
+  object no extends TopLevel[no with Double]
+  
+  /* 2 */ @js.native
+  object yes extends TopLevel[yes with Double]
+  
 }
 

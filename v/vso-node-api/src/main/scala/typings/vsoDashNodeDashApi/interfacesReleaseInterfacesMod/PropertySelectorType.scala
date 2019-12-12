@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.PropertySelectorType.Exclusion
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.PropertySelectorType.Inclusion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object PropertySelectorType extends js.Object {
   @js.native
   sealed trait Inclusion extends PropertySelectorType
   
-  /* 1 */ val Exclusion: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.PropertySelectorType.Exclusion with Double = js.native
-  /* 0 */ val Inclusion: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.PropertySelectorType.Inclusion with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PropertySelectorType with Double] = js.native
+  /* 1 */ @js.native
+  object Exclusion extends TopLevel[Exclusion with Double]
+  
+  /* 0 */ @js.native
+  object Inclusion extends TopLevel[Inclusion with Double]
+  
 }
 

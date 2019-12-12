@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.toolbarToolbarMod.ToolbarProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object toolbarMod extends js.Object {
     def this(props: ToolbarProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ToolbarProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ToolbarProps]]
+  
 }
 

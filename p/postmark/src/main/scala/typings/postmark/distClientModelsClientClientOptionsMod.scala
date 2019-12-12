@@ -1,7 +1,16 @@
 package typings.postmark
 
+import org.scalablytyped.runtime.TopLevel
 import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN
 import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.DELETE
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.GET
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.HEAD
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.OPTIONS
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.POST
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.PUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +42,14 @@ object distClientModelsClientClientOptionsMod extends js.Object {
       @js.native
       sealed trait SERVER_TOKEN extends DefaultHeaderNames
       
-      /* "X-Postmark-Account-Token" */ val ACCOUNT_TOKEN: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.ACCOUNT_TOKEN with String = js.native
-      /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN with String = js.native
       @JSBracketAccess
       def apply(value: String): js.UndefOr[DefaultHeaderNames with String] = js.native
+      /* "X-Postmark-Account-Token" */ @js.native
+      object ACCOUNT_TOKEN extends TopLevel[ACCOUNT_TOKEN with String]
+      
+      /* "X-Postmark-Server-Token" */ @js.native
+      object SERVER_TOKEN extends TopLevel[SERVER_TOKEN with String]
+      
     }
     
     @js.native
@@ -59,14 +72,26 @@ object distClientModelsClientClientOptionsMod extends js.Object {
       @js.native
       sealed trait PUT extends HttpMethod
       
-      /* "DELETE" */ val DELETE: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.DELETE with String = js.native
-      /* "GET" */ val GET: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.GET with String = js.native
-      /* "HEAD" */ val HEAD: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.HEAD with String = js.native
-      /* "OPTIONS" */ val OPTIONS: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.OPTIONS with String = js.native
-      /* "POST" */ val POST: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.POST with String = js.native
-      /* "PUT" */ val PUT: typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.HttpMethod.PUT with String = js.native
       @JSBracketAccess
       def apply(value: String): js.UndefOr[HttpMethod with String] = js.native
+      /* "DELETE" */ @js.native
+      object DELETE extends TopLevel[DELETE with String]
+      
+      /* "GET" */ @js.native
+      object GET extends TopLevel[GET with String]
+      
+      /* "HEAD" */ @js.native
+      object HEAD extends TopLevel[HEAD with String]
+      
+      /* "OPTIONS" */ @js.native
+      object OPTIONS extends TopLevel[OPTIONS with String]
+      
+      /* "POST" */ @js.native
+      object POST extends TopLevel[POST with String]
+      
+      /* "PUT" */ @js.native
+      object PUT extends TopLevel[PUT with String]
+      
     }
     
   }

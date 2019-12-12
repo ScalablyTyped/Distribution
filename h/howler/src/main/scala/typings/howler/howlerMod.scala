@@ -1,5 +1,6 @@
 package typings.howler
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,9 @@ object howlerMod extends js.Object {
     def this(properties: IHowlProperties) = this()
   }
   
-  var Howl: HowlStatic = js.native
   var Howler: HowlerGlobal = js.native
+  @js.native
+  object Howl extends TopLevel[HowlStatic]
+  
 }
 

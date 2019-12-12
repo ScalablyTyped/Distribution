@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-blocks__core"
-version := "2.0-dt-20191016Z-f2800f"
+version := "2.0-dt-20191016Z-b732ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-bfd05e",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-f7ef3e",
   "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-05c57b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

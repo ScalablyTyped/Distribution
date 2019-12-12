@@ -1,5 +1,22 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX_GRID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATETIME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DURATION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.GRID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.IMAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.LIST
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.MULTIPLE_CHOICE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PAGE_BREAK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PARAGRAPH_TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SCALE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SECTION_HEADER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TIME
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.VIDEO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,23 +88,55 @@ object ItemType extends js.Object {
   @js.native
   sealed trait VIDEO extends ItemType
   
-  /* 0 */ val CHECKBOX: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX with Double = js.native
-  /* 1 */ val CHECKBOX_GRID: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.CHECKBOX_GRID with Double = js.native
-  /* 2 */ val DATE: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATE with Double = js.native
-  /* 3 */ val DATETIME: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DATETIME with Double = js.native
-  /* 4 */ val DURATION: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.DURATION with Double = js.native
-  /* 5 */ val GRID: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.GRID with Double = js.native
-  /* 6 */ val IMAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.IMAGE with Double = js.native
-  /* 7 */ val LIST: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.LIST with Double = js.native
-  /* 8 */ val MULTIPLE_CHOICE: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.MULTIPLE_CHOICE with Double = js.native
-  /* 9 */ val PAGE_BREAK: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PAGE_BREAK with Double = js.native
-  /* 10 */ val PARAGRAPH_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.PARAGRAPH_TEXT with Double = js.native
-  /* 11 */ val SCALE: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SCALE with Double = js.native
-  /* 12 */ val SECTION_HEADER: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.SECTION_HEADER with Double = js.native
-  /* 13 */ val TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TEXT with Double = js.native
-  /* 14 */ val TIME: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.TIME with Double = js.native
-  /* 15 */ val VIDEO: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.ItemType.VIDEO with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ItemType with Double] = js.native
+  /* 0 */ @js.native
+  object CHECKBOX extends TopLevel[CHECKBOX with Double]
+  
+  /* 1 */ @js.native
+  object CHECKBOX_GRID extends TopLevel[CHECKBOX_GRID with Double]
+  
+  /* 2 */ @js.native
+  object DATE extends TopLevel[DATE with Double]
+  
+  /* 3 */ @js.native
+  object DATETIME extends TopLevel[DATETIME with Double]
+  
+  /* 4 */ @js.native
+  object DURATION extends TopLevel[DURATION with Double]
+  
+  /* 5 */ @js.native
+  object GRID extends TopLevel[GRID with Double]
+  
+  /* 6 */ @js.native
+  object IMAGE extends TopLevel[IMAGE with Double]
+  
+  /* 7 */ @js.native
+  object LIST extends TopLevel[LIST with Double]
+  
+  /* 8 */ @js.native
+  object MULTIPLE_CHOICE extends TopLevel[MULTIPLE_CHOICE with Double]
+  
+  /* 9 */ @js.native
+  object PAGE_BREAK extends TopLevel[PAGE_BREAK with Double]
+  
+  /* 10 */ @js.native
+  object PARAGRAPH_TEXT extends TopLevel[PARAGRAPH_TEXT with Double]
+  
+  /* 11 */ @js.native
+  object SCALE extends TopLevel[SCALE with Double]
+  
+  /* 12 */ @js.native
+  object SECTION_HEADER extends TopLevel[SECTION_HEADER with Double]
+  
+  /* 13 */ @js.native
+  object TEXT extends TopLevel[TEXT with Double]
+  
+  /* 14 */ @js.native
+  object TIME extends TopLevel[TIME with Double]
+  
+  /* 15 */ @js.native
+  object VIDEO extends TopLevel[VIDEO with Double]
+  
 }
 

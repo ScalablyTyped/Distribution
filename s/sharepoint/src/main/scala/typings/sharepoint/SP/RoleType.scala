@@ -1,5 +1,13 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.RoleType.administrator
+import typings.sharepoint.SP.RoleType.contributor
+import typings.sharepoint.SP.RoleType.editor
+import typings.sharepoint.SP.RoleType.guest
+import typings.sharepoint.SP.RoleType.none
+import typings.sharepoint.SP.RoleType.reader
+import typings.sharepoint.SP.RoleType.webDesigner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object RoleType extends js.Object {
   @js.native
   sealed trait webDesigner extends RoleType
   
-  /* 5 */ val administrator: typings.sharepoint.SP.RoleType.administrator with Double = js.native
-  /* 3 */ val contributor: typings.sharepoint.SP.RoleType.contributor with Double = js.native
-  /* 6 */ val editor: typings.sharepoint.SP.RoleType.editor with Double = js.native
-  /* 1 */ val guest: typings.sharepoint.SP.RoleType.guest with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.RoleType.none with Double = js.native
-  /* 2 */ val reader: typings.sharepoint.SP.RoleType.reader with Double = js.native
-  /* 4 */ val webDesigner: typings.sharepoint.SP.RoleType.webDesigner with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RoleType with Double] = js.native
+  /* 5 */ @js.native
+  object administrator extends TopLevel[administrator with Double]
+  
+  /* 3 */ @js.native
+  object contributor extends TopLevel[contributor with Double]
+  
+  /* 6 */ @js.native
+  object editor extends TopLevel[editor with Double]
+  
+  /* 1 */ @js.native
+  object guest extends TopLevel[guest with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object reader extends TopLevel[reader with Double]
+  
+  /* 4 */ @js.native
+  object webDesigner extends TopLevel[webDesigner with Double]
+  
 }
 

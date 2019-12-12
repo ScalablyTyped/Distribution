@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.auto
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoHyperfocal
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoInfinity
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoMacro
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoNormal
+import typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object FocusPreset extends js.Object {
   @js.native
   sealed trait manual extends FocusPreset
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.auto with Double = js.native
-  /* 5 */ val autoHyperfocal: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoHyperfocal with Double = js.native
-  /* 4 */ val autoInfinity: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoInfinity with Double = js.native
-  /* 2 */ val autoMacro: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoMacro with Double = js.native
-  /* 3 */ val autoNormal: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.autoNormal with Double = js.native
-  /* 1 */ val manual: typings.winrtDashUwp.Windows.Media.Devices.FocusPreset.manual with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FocusPreset with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 5 */ @js.native
+  object autoHyperfocal extends TopLevel[autoHyperfocal with Double]
+  
+  /* 4 */ @js.native
+  object autoInfinity extends TopLevel[autoInfinity with Double]
+  
+  /* 2 */ @js.native
+  object autoMacro extends TopLevel[autoMacro with Double]
+  
+  /* 3 */ @js.native
+  object autoNormal extends TopLevel[autoNormal with Double]
+  
+  /* 1 */ @js.native
+  object manual extends TopLevel[manual with Double]
+  
 }
 

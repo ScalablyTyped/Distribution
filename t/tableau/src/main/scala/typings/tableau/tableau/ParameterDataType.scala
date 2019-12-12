@@ -1,5 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.ParameterDataType.BOOLEAN
+import typings.tableau.tableau.ParameterDataType.DATE
+import typings.tableau.tableau.ParameterDataType.DATETIME
+import typings.tableau.tableau.ParameterDataType.FLOAT
+import typings.tableau.tableau.ParameterDataType.INTEGER
+import typings.tableau.tableau.ParameterDataType.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object ParameterDataType extends js.Object {
   @js.native
   sealed trait STRING extends ParameterDataType
   
-  /* "boolean" */ val BOOLEAN: typings.tableau.tableau.ParameterDataType.BOOLEAN with String = js.native
-  /* "date" */ val DATE: typings.tableau.tableau.ParameterDataType.DATE with String = js.native
-  /* "datetime" */ val DATETIME: typings.tableau.tableau.ParameterDataType.DATETIME with String = js.native
-  /* "float" */ val FLOAT: typings.tableau.tableau.ParameterDataType.FLOAT with String = js.native
-  /* "integer" */ val INTEGER: typings.tableau.tableau.ParameterDataType.INTEGER with String = js.native
-  /* "string" */ val STRING: typings.tableau.tableau.ParameterDataType.STRING with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ParameterDataType with String] = js.native
+  /* "boolean" */ @js.native
+  object BOOLEAN extends TopLevel[BOOLEAN with String]
+  
+  /* "date" */ @js.native
+  object DATE extends TopLevel[DATE with String]
+  
+  /* "datetime" */ @js.native
+  object DATETIME extends TopLevel[DATETIME with String]
+  
+  /* "float" */ @js.native
+  object FLOAT extends TopLevel[FLOAT with String]
+  
+  /* "integer" */ @js.native
+  object INTEGER extends TopLevel[INTEGER with String]
+  
+  /* "string" */ @js.native
+  object STRING extends TopLevel[STRING with String]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.document
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.link
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.site
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.tag
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.text
+import typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +37,25 @@ object SocialPostDefinitionDataItemType extends js.Object {
   @js.native
   sealed trait user extends SocialPostDefinitionDataItemType
   
-  /* 2 */ val document: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.document with Double = js.native
-  /* 5 */ val link: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.link with Double = js.native
-  /* 3 */ val site: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.site with Double = js.native
-  /* 4 */ val tag: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.tag with Double = js.native
-  /* 0 */ val text: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.text with Double = js.native
-  /* 1 */ val user: typings.sharepoint.SP.Social.SocialPostDefinitionDataItemType.user with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialPostDefinitionDataItemType with Double] = js.native
+  /* 2 */ @js.native
+  object document extends TopLevel[document with Double]
+  
+  /* 5 */ @js.native
+  object link extends TopLevel[link with Double]
+  
+  /* 3 */ @js.native
+  object site extends TopLevel[site with Double]
+  
+  /* 4 */ @js.native
+  object tag extends TopLevel[tag with Double]
+  
+  /* 0 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 1 */ @js.native
+  object user extends TopLevel[user with Double]
+  
 }
 

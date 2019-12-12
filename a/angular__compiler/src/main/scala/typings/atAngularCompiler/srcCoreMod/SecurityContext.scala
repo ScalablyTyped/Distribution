@@ -1,5 +1,12 @@
 package typings.atAngularCompiler.srcCoreMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.HTML
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.NONE
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.RESOURCE_URL
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.SCRIPT
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.STYLE
+import typings.atAngularCompiler.srcCoreMod.SecurityContext.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object SecurityContext extends js.Object {
   @js.native
   sealed trait URL extends SecurityContext
   
-  /* 1 */ val HTML: typings.atAngularCompiler.srcCoreMod.SecurityContext.HTML with Double = js.native
-  /* 0 */ val NONE: typings.atAngularCompiler.srcCoreMod.SecurityContext.NONE with Double = js.native
-  /* 5 */ val RESOURCE_URL: typings.atAngularCompiler.srcCoreMod.SecurityContext.RESOURCE_URL with Double = js.native
-  /* 3 */ val SCRIPT: typings.atAngularCompiler.srcCoreMod.SecurityContext.SCRIPT with Double = js.native
-  /* 2 */ val STYLE: typings.atAngularCompiler.srcCoreMod.SecurityContext.STYLE with Double = js.native
-  /* 4 */ val URL: typings.atAngularCompiler.srcCoreMod.SecurityContext.URL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SecurityContext with Double] = js.native
+  /* 1 */ @js.native
+  object HTML extends TopLevel[HTML with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 5 */ @js.native
+  object RESOURCE_URL extends TopLevel[RESOURCE_URL with Double]
+  
+  /* 3 */ @js.native
+  object SCRIPT extends TopLevel[SCRIPT with Double]
+  
+  /* 2 */ @js.native
+  object STYLE extends TopLevel[STYLE with Double]
+  
+  /* 4 */ @js.native
+  object URL extends TopLevel[URL with Double]
+  
 }
 

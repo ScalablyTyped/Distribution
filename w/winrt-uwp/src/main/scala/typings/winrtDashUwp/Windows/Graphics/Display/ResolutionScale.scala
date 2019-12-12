@@ -1,5 +1,23 @@
 package typings.winrtDashUwp.Windows.Graphics.Display
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.invalid
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale100Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale120Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale125Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale140Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale150Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale160Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale175Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale180Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale200Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale225Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale250Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale300Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale350Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale400Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale450Percent
+import typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale500Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,24 +97,58 @@ object ResolutionScale extends js.Object {
   @js.native
   sealed trait scale500Percent extends ResolutionScale
   
-  /* 0 */ val invalid: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.invalid with Double = js.native
-  /* 1 */ val scale100Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale100Percent with Double = js.native
-  /* 2 */ val scale120Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale120Percent with Double = js.native
-  /* 3 */ val scale125Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale125Percent with Double = js.native
-  /* 4 */ val scale140Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale140Percent with Double = js.native
-  /* 5 */ val scale150Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale150Percent with Double = js.native
-  /* 6 */ val scale160Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale160Percent with Double = js.native
-  /* 7 */ val scale175Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale175Percent with Double = js.native
-  /* 8 */ val scale180Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale180Percent with Double = js.native
-  /* 9 */ val scale200Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale200Percent with Double = js.native
-  /* 10 */ val scale225Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale225Percent with Double = js.native
-  /* 11 */ val scale250Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale250Percent with Double = js.native
-  /* 12 */ val scale300Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale300Percent with Double = js.native
-  /* 13 */ val scale350Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale350Percent with Double = js.native
-  /* 14 */ val scale400Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale400Percent with Double = js.native
-  /* 15 */ val scale450Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale450Percent with Double = js.native
-  /* 16 */ val scale500Percent: typings.winrtDashUwp.Windows.Graphics.Display.ResolutionScale.scale500Percent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResolutionScale with Double] = js.native
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 1 */ @js.native
+  object scale100Percent extends TopLevel[scale100Percent with Double]
+  
+  /* 2 */ @js.native
+  object scale120Percent extends TopLevel[scale120Percent with Double]
+  
+  /* 3 */ @js.native
+  object scale125Percent extends TopLevel[scale125Percent with Double]
+  
+  /* 4 */ @js.native
+  object scale140Percent extends TopLevel[scale140Percent with Double]
+  
+  /* 5 */ @js.native
+  object scale150Percent extends TopLevel[scale150Percent with Double]
+  
+  /* 6 */ @js.native
+  object scale160Percent extends TopLevel[scale160Percent with Double]
+  
+  /* 7 */ @js.native
+  object scale175Percent extends TopLevel[scale175Percent with Double]
+  
+  /* 8 */ @js.native
+  object scale180Percent extends TopLevel[scale180Percent with Double]
+  
+  /* 9 */ @js.native
+  object scale200Percent extends TopLevel[scale200Percent with Double]
+  
+  /* 10 */ @js.native
+  object scale225Percent extends TopLevel[scale225Percent with Double]
+  
+  /* 11 */ @js.native
+  object scale250Percent extends TopLevel[scale250Percent with Double]
+  
+  /* 12 */ @js.native
+  object scale300Percent extends TopLevel[scale300Percent with Double]
+  
+  /* 13 */ @js.native
+  object scale350Percent extends TopLevel[scale350Percent with Double]
+  
+  /* 14 */ @js.native
+  object scale400Percent extends TopLevel[scale400Percent with Double]
+  
+  /* 15 */ @js.native
+  object scale450Percent extends TopLevel[scale450Percent with Double]
+  
+  /* 16 */ @js.native
+  object scale500Percent extends TopLevel[scale500Percent with Double]
+  
 }
 

@@ -1,5 +1,45 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.TopLevel
+import typings.tableau.tableau.FieldAggregationType.ATTR
+import typings.tableau.tableau.FieldAggregationType.AVG
+import typings.tableau.tableau.FieldAggregationType.COUNT
+import typings.tableau.tableau.FieldAggregationType.COUNTD
+import typings.tableau.tableau.FieldAggregationType.DAY
+import typings.tableau.tableau.FieldAggregationType.END
+import typings.tableau.tableau.FieldAggregationType.HOUR
+import typings.tableau.tableau.FieldAggregationType.INOUT
+import typings.tableau.tableau.FieldAggregationType.KURTOSIS
+import typings.tableau.tableau.FieldAggregationType.MAX
+import typings.tableau.tableau.FieldAggregationType.MDY
+import typings.tableau.tableau.FieldAggregationType.MEDIAN
+import typings.tableau.tableau.FieldAggregationType.MIN
+import typings.tableau.tableau.FieldAggregationType.MINUTE
+import typings.tableau.tableau.FieldAggregationType.MONTH
+import typings.tableau.tableau.FieldAggregationType.MONTHYEAR
+import typings.tableau.tableau.FieldAggregationType.NONE
+import typings.tableau.tableau.FieldAggregationType.QTR
+import typings.tableau.tableau.FieldAggregationType.QUART1
+import typings.tableau.tableau.FieldAggregationType.QUART3
+import typings.tableau.tableau.FieldAggregationType.SECOND
+import typings.tableau.tableau.FieldAggregationType.SKEWNESS
+import typings.tableau.tableau.FieldAggregationType.STDEV
+import typings.tableau.tableau.FieldAggregationType.STDEVP
+import typings.tableau.tableau.FieldAggregationType.SUM
+import typings.tableau.tableau.FieldAggregationType.TRUNC_DAY
+import typings.tableau.tableau.FieldAggregationType.TRUNC_HOUR
+import typings.tableau.tableau.FieldAggregationType.TRUNC_MINUTE
+import typings.tableau.tableau.FieldAggregationType.TRUNC_MONTH
+import typings.tableau.tableau.FieldAggregationType.TRUNC_QTR
+import typings.tableau.tableau.FieldAggregationType.TRUNC_SECOND
+import typings.tableau.tableau.FieldAggregationType.TRUNC_WEEK
+import typings.tableau.tableau.FieldAggregationType.TRUNC_YEAR
+import typings.tableau.tableau.FieldAggregationType.USER
+import typings.tableau.tableau.FieldAggregationType.VAR
+import typings.tableau.tableau.FieldAggregationType.VARP
+import typings.tableau.tableau.FieldAggregationType.WEEK
+import typings.tableau.tableau.FieldAggregationType.WEEKDAY
+import typings.tableau.tableau.FieldAggregationType.YEAR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -127,46 +167,124 @@ object FieldAggregationType extends js.Object {
   @js.native
   sealed trait YEAR extends FieldAggregationType
   
-  /* 11 */ val ATTR: typings.tableau.tableau.FieldAggregationType.ATTR with Double = js.native
-  /* 1 */ val AVG: typings.tableau.tableau.FieldAggregationType.AVG with Double = js.native
-  /* 8 */ val COUNT: typings.tableau.tableau.FieldAggregationType.COUNT with Double = js.native
-  /* 9 */ val COUNTD: typings.tableau.tableau.FieldAggregationType.COUNTD with Double = js.native
-  /* 16 */ val DAY: typings.tableau.tableau.FieldAggregationType.DAY with Double = js.native
-  /* 24 */ val END: typings.tableau.tableau.FieldAggregationType.END with Double = js.native
-  /* 17 */ val HOUR: typings.tableau.tableau.FieldAggregationType.HOUR with Double = js.native
-  /* 37 */ val INOUT: typings.tableau.tableau.FieldAggregationType.INOUT with Double = js.native
-  /* 36 */ val KURTOSIS: typings.tableau.tableau.FieldAggregationType.KURTOSIS with Double = js.native
-  /* 3 */ val MAX: typings.tableau.tableau.FieldAggregationType.MAX with Double = js.native
-  /* 23 */ val MDY: typings.tableau.tableau.FieldAggregationType.MDY with Double = js.native
-  /* 10 */ val MEDIAN: typings.tableau.tableau.FieldAggregationType.MEDIAN with Double = js.native
-  /* 2 */ val MIN: typings.tableau.tableau.FieldAggregationType.MIN with Double = js.native
-  /* 18 */ val MINUTE: typings.tableau.tableau.FieldAggregationType.MINUTE with Double = js.native
-  /* 15 */ val MONTH: typings.tableau.tableau.FieldAggregationType.MONTH with Double = js.native
-  /* 22 */ val MONTHYEAR: typings.tableau.tableau.FieldAggregationType.MONTHYEAR with Double = js.native
-  /* 12 */ val NONE: typings.tableau.tableau.FieldAggregationType.NONE with Double = js.native
-  /* 14 */ val QTR: typings.tableau.tableau.FieldAggregationType.QTR with Double = js.native
-  /* 33 */ val QUART1: typings.tableau.tableau.FieldAggregationType.QUART1 with Double = js.native
-  /* 34 */ val QUART3: typings.tableau.tableau.FieldAggregationType.QUART3 with Double = js.native
-  /* 19 */ val SECOND: typings.tableau.tableau.FieldAggregationType.SECOND with Double = js.native
-  /* 35 */ val SKEWNESS: typings.tableau.tableau.FieldAggregationType.SKEWNESS with Double = js.native
-  /* 4 */ val STDEV: typings.tableau.tableau.FieldAggregationType.STDEV with Double = js.native
-  /* 5 */ val STDEVP: typings.tableau.tableau.FieldAggregationType.STDEVP with Double = js.native
-  /* 0 */ val SUM: typings.tableau.tableau.FieldAggregationType.SUM with Double = js.native
-  /* 29 */ val TRUNC_DAY: typings.tableau.tableau.FieldAggregationType.TRUNC_DAY with Double = js.native
-  /* 30 */ val TRUNC_HOUR: typings.tableau.tableau.FieldAggregationType.TRUNC_HOUR with Double = js.native
-  /* 31 */ val TRUNC_MINUTE: typings.tableau.tableau.FieldAggregationType.TRUNC_MINUTE with Double = js.native
-  /* 27 */ val TRUNC_MONTH: typings.tableau.tableau.FieldAggregationType.TRUNC_MONTH with Double = js.native
-  /* 26 */ val TRUNC_QTR: typings.tableau.tableau.FieldAggregationType.TRUNC_QTR with Double = js.native
-  /* 32 */ val TRUNC_SECOND: typings.tableau.tableau.FieldAggregationType.TRUNC_SECOND with Double = js.native
-  /* 28 */ val TRUNC_WEEK: typings.tableau.tableau.FieldAggregationType.TRUNC_WEEK with Double = js.native
-  /* 25 */ val TRUNC_YEAR: typings.tableau.tableau.FieldAggregationType.TRUNC_YEAR with Double = js.native
-  /* 38 */ val USER: typings.tableau.tableau.FieldAggregationType.USER with Double = js.native
-  /* 6 */ val VAR: typings.tableau.tableau.FieldAggregationType.VAR with Double = js.native
-  /* 7 */ val VARP: typings.tableau.tableau.FieldAggregationType.VARP with Double = js.native
-  /* 20 */ val WEEK: typings.tableau.tableau.FieldAggregationType.WEEK with Double = js.native
-  /* 21 */ val WEEKDAY: typings.tableau.tableau.FieldAggregationType.WEEKDAY with Double = js.native
-  /* 13 */ val YEAR: typings.tableau.tableau.FieldAggregationType.YEAR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldAggregationType with Double] = js.native
+  /* 11 */ @js.native
+  object ATTR extends TopLevel[ATTR with Double]
+  
+  /* 1 */ @js.native
+  object AVG extends TopLevel[AVG with Double]
+  
+  /* 8 */ @js.native
+  object COUNT extends TopLevel[COUNT with Double]
+  
+  /* 9 */ @js.native
+  object COUNTD extends TopLevel[COUNTD with Double]
+  
+  /* 16 */ @js.native
+  object DAY extends TopLevel[DAY with Double]
+  
+  /* 24 */ @js.native
+  object END extends TopLevel[END with Double]
+  
+  /* 17 */ @js.native
+  object HOUR extends TopLevel[HOUR with Double]
+  
+  /* 37 */ @js.native
+  object INOUT extends TopLevel[INOUT with Double]
+  
+  /* 36 */ @js.native
+  object KURTOSIS extends TopLevel[KURTOSIS with Double]
+  
+  /* 3 */ @js.native
+  object MAX extends TopLevel[MAX with Double]
+  
+  /* 23 */ @js.native
+  object MDY extends TopLevel[MDY with Double]
+  
+  /* 10 */ @js.native
+  object MEDIAN extends TopLevel[MEDIAN with Double]
+  
+  /* 2 */ @js.native
+  object MIN extends TopLevel[MIN with Double]
+  
+  /* 18 */ @js.native
+  object MINUTE extends TopLevel[MINUTE with Double]
+  
+  /* 15 */ @js.native
+  object MONTH extends TopLevel[MONTH with Double]
+  
+  /* 22 */ @js.native
+  object MONTHYEAR extends TopLevel[MONTHYEAR with Double]
+  
+  /* 12 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 14 */ @js.native
+  object QTR extends TopLevel[QTR with Double]
+  
+  /* 33 */ @js.native
+  object QUART1 extends TopLevel[QUART1 with Double]
+  
+  /* 34 */ @js.native
+  object QUART3 extends TopLevel[QUART3 with Double]
+  
+  /* 19 */ @js.native
+  object SECOND extends TopLevel[SECOND with Double]
+  
+  /* 35 */ @js.native
+  object SKEWNESS extends TopLevel[SKEWNESS with Double]
+  
+  /* 4 */ @js.native
+  object STDEV extends TopLevel[STDEV with Double]
+  
+  /* 5 */ @js.native
+  object STDEVP extends TopLevel[STDEVP with Double]
+  
+  /* 0 */ @js.native
+  object SUM extends TopLevel[SUM with Double]
+  
+  /* 29 */ @js.native
+  object TRUNC_DAY extends TopLevel[TRUNC_DAY with Double]
+  
+  /* 30 */ @js.native
+  object TRUNC_HOUR extends TopLevel[TRUNC_HOUR with Double]
+  
+  /* 31 */ @js.native
+  object TRUNC_MINUTE extends TopLevel[TRUNC_MINUTE with Double]
+  
+  /* 27 */ @js.native
+  object TRUNC_MONTH extends TopLevel[TRUNC_MONTH with Double]
+  
+  /* 26 */ @js.native
+  object TRUNC_QTR extends TopLevel[TRUNC_QTR with Double]
+  
+  /* 32 */ @js.native
+  object TRUNC_SECOND extends TopLevel[TRUNC_SECOND with Double]
+  
+  /* 28 */ @js.native
+  object TRUNC_WEEK extends TopLevel[TRUNC_WEEK with Double]
+  
+  /* 25 */ @js.native
+  object TRUNC_YEAR extends TopLevel[TRUNC_YEAR with Double]
+  
+  /* 38 */ @js.native
+  object USER extends TopLevel[USER with Double]
+  
+  /* 6 */ @js.native
+  object VAR extends TopLevel[VAR with Double]
+  
+  /* 7 */ @js.native
+  object VARP extends TopLevel[VARP with Double]
+  
+  /* 20 */ @js.native
+  object WEEK extends TopLevel[WEEK with Double]
+  
+  /* 21 */ @js.native
+  object WEEKDAY extends TopLevel[WEEKDAY with Double]
+  
+  /* 13 */ @js.native
+  object YEAR extends TopLevel[YEAR with Double]
+  
 }
 

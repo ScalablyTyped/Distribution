@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.model
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.others
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.support
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object Printing3DObjectType extends js.Object {
   @js.native
   sealed trait support extends Printing3DObjectType
   
-  /* 0 */ val model: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.model with Double = js.native
-  /* 2 */ val others: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.others with Double = js.native
-  /* 1 */ val support: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DObjectType.support with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Printing3DObjectType with Double] = js.native
+  /* 0 */ @js.native
+  object model extends TopLevel[model with Double]
+  
+  /* 2 */ @js.native
+  object others extends TopLevel[others with Double]
+  
+  /* 1 */ @js.native
+  object support extends TopLevel[support with Double]
+  
 }
 

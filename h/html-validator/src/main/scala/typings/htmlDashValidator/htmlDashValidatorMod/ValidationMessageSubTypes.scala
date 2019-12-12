@@ -1,5 +1,11 @@
 package typings.htmlDashValidator.htmlDashValidatorMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.fatal
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.internal
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.io
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.schema
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,12 +32,22 @@ object ValidationMessageSubTypes extends js.Object {
   @js.native
   sealed trait warning extends ValidationMessageSubTypes
   
-  /* "fatal" */ val fatal: typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.fatal with String = js.native
-  /* "internal" */ val internal: typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.internal with String = js.native
-  /* "io" */ val io: typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.io with String = js.native
-  /* "schema" */ val schema: typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.schema with String = js.native
-  /* "warning" */ val warning: typings.htmlDashValidator.htmlDashValidatorMod.ValidationMessageSubTypes.warning with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ValidationMessageSubTypes with String] = js.native
+  /* "fatal" */ @js.native
+  object fatal extends TopLevel[fatal with String]
+  
+  /* "internal" */ @js.native
+  object internal extends TopLevel[internal with String]
+  
+  /* "io" */ @js.native
+  object io extends TopLevel[io with String]
+  
+  /* "schema" */ @js.native
+  object schema extends TopLevel[schema with String]
+  
+  /* "warning" */ @js.native
+  object warning extends TopLevel[warning with String]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.ContinuousIntegration
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.Manual
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.None
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.Schedule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ReleaseReason extends js.Object {
   @js.native
   sealed trait Schedule extends ReleaseReason
   
-  /* 2 */ val ContinuousIntegration: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.ContinuousIntegration with Double = js.native
-  /* 1 */ val Manual: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.Manual with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.None with Double = js.native
-  /* 3 */ val Schedule: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseReason.Schedule with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReleaseReason with Double] = js.native
+  /* 2 */ @js.native
+  object ContinuousIntegration extends TopLevel[ContinuousIntegration with Double]
+  
+  /* 1 */ @js.native
+  object Manual extends TopLevel[Manual with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Schedule extends TopLevel[Schedule with Double]
+  
 }
 

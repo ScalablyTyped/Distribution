@@ -1,5 +1,10 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.ImeMode.Active
+import typings.openui5.sap.ui.core.ImeMode.Auto
+import typings.openui5.sap.ui.core.ImeMode.Disabled
+import typings.openui5.sap.ui.core.ImeMode.Inactive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object ImeMode extends js.Object {
   @js.native
   sealed trait Inactive extends ImeMode
   
-  /* 0 */ val Active: typings.openui5.sap.ui.core.ImeMode.Active with Double = js.native
-  /* 1 */ val Auto: typings.openui5.sap.ui.core.ImeMode.Auto with Double = js.native
-  /* 2 */ val Disabled: typings.openui5.sap.ui.core.ImeMode.Disabled with Double = js.native
-  /* 3 */ val Inactive: typings.openui5.sap.ui.core.ImeMode.Inactive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImeMode with Double] = js.native
+  /* 0 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 1 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 2 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* 3 */ @js.native
+  object Inactive extends TopLevel[Inactive with Double]
+  
 }
 

@@ -1,5 +1,17 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.CardWillExpire
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.GiftRevoked
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassGranted
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassReceived
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.InvalidCard
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.Max
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.RawText
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.RecurringPurchaseFailed
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.SubscriptionExpired
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessage
+import typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessageClearAlert
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object ESystemIMType extends js.Object {
   @js.native
   sealed trait SupportMessageClearAlert extends ESystemIMType
   
-  /* 3 */ val CardWillExpire: typings.steamDashClient.steamDashClientMod.ESystemIMType.CardWillExpire with Double = js.native
-  /* 7 */ val GiftRevoked: typings.steamDashClient.steamDashClientMod.ESystemIMType.GiftRevoked with Double = js.native
-  /* 6 */ val GuestPassGranted: typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassGranted with Double = js.native
-  /* 5 */ val GuestPassReceived: typings.steamDashClient.steamDashClientMod.ESystemIMType.GuestPassReceived with Double = js.native
-  /* 1 */ val InvalidCard: typings.steamDashClient.steamDashClientMod.ESystemIMType.InvalidCard with Double = js.native
-  /* 10 */ val Max: typings.steamDashClient.steamDashClientMod.ESystemIMType.Max with Double = js.native
-  /* 0 */ val RawText: typings.steamDashClient.steamDashClientMod.ESystemIMType.RawText with Double = js.native
-  /* 2 */ val RecurringPurchaseFailed: typings.steamDashClient.steamDashClientMod.ESystemIMType.RecurringPurchaseFailed with Double = js.native
-  /* 4 */ val SubscriptionExpired: typings.steamDashClient.steamDashClientMod.ESystemIMType.SubscriptionExpired with Double = js.native
-  /* 8 */ val SupportMessage: typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessage with Double = js.native
-  /* 9 */ val SupportMessageClearAlert: typings.steamDashClient.steamDashClientMod.ESystemIMType.SupportMessageClearAlert with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ESystemIMType with Double] = js.native
+  /* 3 */ @js.native
+  object CardWillExpire extends TopLevel[CardWillExpire with Double]
+  
+  /* 7 */ @js.native
+  object GiftRevoked extends TopLevel[GiftRevoked with Double]
+  
+  /* 6 */ @js.native
+  object GuestPassGranted extends TopLevel[GuestPassGranted with Double]
+  
+  /* 5 */ @js.native
+  object GuestPassReceived extends TopLevel[GuestPassReceived with Double]
+  
+  /* 1 */ @js.native
+  object InvalidCard extends TopLevel[InvalidCard with Double]
+  
+  /* 10 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 0 */ @js.native
+  object RawText extends TopLevel[RawText with Double]
+  
+  /* 2 */ @js.native
+  object RecurringPurchaseFailed extends TopLevel[RecurringPurchaseFailed with Double]
+  
+  /* 4 */ @js.native
+  object SubscriptionExpired extends TopLevel[SubscriptionExpired with Double]
+  
+  /* 8 */ @js.native
+  object SupportMessage extends TopLevel[SupportMessage with Double]
+  
+  /* 9 */ @js.native
+  object SupportMessageClearAlert extends TopLevel[SupportMessageClearAlert with Double]
+  
 }
 

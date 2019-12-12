@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.FinishTimeAscending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.FinishTimeDescending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.QueueTimeAscending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.QueueTimeDescending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.StartTimeAscending
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.StartTimeDescending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object BuildQueryOrder extends js.Object {
   @js.native
   sealed trait StartTimeDescending extends BuildQueryOrder
   
-  /* 2 */ val FinishTimeAscending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.FinishTimeAscending with Double = js.native
-  /* 3 */ val FinishTimeDescending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.FinishTimeDescending with Double = js.native
-  /* 5 */ val QueueTimeAscending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.QueueTimeAscending with Double = js.native
-  /* 4 */ val QueueTimeDescending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.QueueTimeDescending with Double = js.native
-  /* 7 */ val StartTimeAscending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.StartTimeAscending with Double = js.native
-  /* 6 */ val StartTimeDescending: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildQueryOrder.StartTimeDescending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildQueryOrder with Double] = js.native
+  /* 2 */ @js.native
+  object FinishTimeAscending extends TopLevel[FinishTimeAscending with Double]
+  
+  /* 3 */ @js.native
+  object FinishTimeDescending extends TopLevel[FinishTimeDescending with Double]
+  
+  /* 5 */ @js.native
+  object QueueTimeAscending extends TopLevel[QueueTimeAscending with Double]
+  
+  /* 4 */ @js.native
+  object QueueTimeDescending extends TopLevel[QueueTimeDescending with Double]
+  
+  /* 7 */ @js.native
+  object StartTimeAscending extends TopLevel[StartTimeAscending with Double]
+  
+  /* 6 */ @js.native
+  object StartTimeDescending extends TopLevel[StartTimeDescending with Double]
+  
 }
 

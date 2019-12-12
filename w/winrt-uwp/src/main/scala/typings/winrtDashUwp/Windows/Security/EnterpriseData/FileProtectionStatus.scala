@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.`protected`
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.accessSuspended
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.licenseExpired
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.notProtectable
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedByOtherUser
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherEnterprise
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherIdentity
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.revoked
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.undetermined
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unknown
+import typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unprotected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object FileProtectionStatus extends js.Object {
   @js.native
   sealed trait unprotected extends FileProtectionStatus
   
-  /* 10 */ val accessSuspended: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.accessSuspended with Double = js.native
-  /* 9 */ val licenseExpired: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.licenseExpired with Double = js.native
-  /* 7 */ val notProtectable: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.notProtectable with Double = js.native
-  /* 4 */ val `protected`: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.`protected` with Double = js.native
-  /* 5 */ val protectedByOtherUser: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedByOtherUser with Double = js.native
-  /* 6 */ val protectedToOtherEnterprise: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherEnterprise with Double = js.native
-  /* 8 */ val protectedToOtherIdentity: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.protectedToOtherIdentity with Double = js.native
-  /* 3 */ val revoked: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.revoked with Double = js.native
-  /* 0 */ val undetermined: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.undetermined with Double = js.native
-  /* 1 */ val unknown: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unknown with Double = js.native
-  /* 2 */ val unprotected: typings.winrtDashUwp.Windows.Security.EnterpriseData.FileProtectionStatus.unprotected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FileProtectionStatus with Double] = js.native
+  /* 10 */ @js.native
+  object accessSuspended extends TopLevel[accessSuspended with Double]
+  
+  /* 9 */ @js.native
+  object licenseExpired extends TopLevel[licenseExpired with Double]
+  
+  /* 7 */ @js.native
+  object notProtectable extends TopLevel[notProtectable with Double]
+  
+  /* 4 */ @js.native
+  object `protected` extends TopLevel[`protected` with Double]
+  
+  /* 5 */ @js.native
+  object protectedByOtherUser extends TopLevel[protectedByOtherUser with Double]
+  
+  /* 6 */ @js.native
+  object protectedToOtherEnterprise extends TopLevel[protectedToOtherEnterprise with Double]
+  
+  /* 8 */ @js.native
+  object protectedToOtherIdentity extends TopLevel[protectedToOtherIdentity with Double]
+  
+  /* 3 */ @js.native
+  object revoked extends TopLevel[revoked with Double]
+  
+  /* 0 */ @js.native
+  object undetermined extends TopLevel[undetermined with Double]
+  
+  /* 1 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 2 */ @js.native
+  object unprotected extends TopLevel[unprotected with Double]
+  
 }
 

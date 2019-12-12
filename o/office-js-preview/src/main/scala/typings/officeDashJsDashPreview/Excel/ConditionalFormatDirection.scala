@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatDirection.bottom
+import typings.officeDashJsDashPreview.Excel.ConditionalFormatDirection.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ConditionalFormatDirection extends js.Object {
   @js.native
   sealed trait top extends ConditionalFormatDirection
   
-  /* "Bottom" */ val bottom: typings.officeDashJsDashPreview.Excel.ConditionalFormatDirection.bottom with String = js.native
-  /* "Top" */ val top: typings.officeDashJsDashPreview.Excel.ConditionalFormatDirection.top with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalFormatDirection with String] = js.native
+  /* "Bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "Top" */ @js.native
+  object top extends TopLevel[top with String]
+  
 }
 

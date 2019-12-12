@@ -1,5 +1,12 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ParagraphLineSpacingType.AtLeast
+import typings.devexpressDashWeb.ParagraphLineSpacingType.Double
+import typings.devexpressDashWeb.ParagraphLineSpacingType.Exactly
+import typings.devexpressDashWeb.ParagraphLineSpacingType.Multiple
+import typings.devexpressDashWeb.ParagraphLineSpacingType.Sesquialteral
+import typings.devexpressDashWeb.ParagraphLineSpacingType.Single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,13 +56,31 @@ object ParagraphLineSpacingType extends js.Object {
   @js.native
   sealed trait Single extends ParagraphLineSpacingType
   
-  /* 5 */ val AtLeast: typings.devexpressDashWeb.ParagraphLineSpacingType.AtLeast with scala.Double = js.native
-  /* 2 */ val Double: typings.devexpressDashWeb.ParagraphLineSpacingType.Double with scala.Double = js.native
-  /* 4 */ val Exactly: typings.devexpressDashWeb.ParagraphLineSpacingType.Exactly with scala.Double = js.native
-  /* 3 */ val Multiple: typings.devexpressDashWeb.ParagraphLineSpacingType.Multiple with scala.Double = js.native
-  /* 1 */ val Sesquialteral: typings.devexpressDashWeb.ParagraphLineSpacingType.Sesquialteral with scala.Double = js.native
-  /* 0 */ val Single: typings.devexpressDashWeb.ParagraphLineSpacingType.Single with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[ParagraphLineSpacingType with scala.Double] = js.native
+  /* 5 */ @js.native
+  object AtLeast
+    extends TopLevel[AtLeast with scala.Double]
+  
+  /* 2 */ @js.native
+  object Double
+    extends TopLevel[Double with scala.Double]
+  
+  /* 4 */ @js.native
+  object Exactly
+    extends TopLevel[Exactly with scala.Double]
+  
+  /* 3 */ @js.native
+  object Multiple
+    extends TopLevel[Multiple with scala.Double]
+  
+  /* 1 */ @js.native
+  object Sesquialteral
+    extends TopLevel[Sesquialteral with scala.Double]
+  
+  /* 0 */ @js.native
+  object Single
+    extends TopLevel[Single with scala.Double]
+  
 }
 

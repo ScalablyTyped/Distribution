@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Auto
+import typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Custom
+import typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object TaskSchedulingMode extends js.Object {
   @js.native
   sealed trait Manual extends TaskSchedulingMode
   
-  /* 0 */ val Auto: typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Auto with Double = js.native
-  /* 2 */ val Custom: typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Custom with Double = js.native
-  /* 1 */ val Manual: typings.ejDotWebDotAll.ej.Gantt.TaskSchedulingMode.Manual with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskSchedulingMode with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 2 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 1 */ @js.native
+  object Manual extends TopLevel[Manual with Double]
+  
 }
 

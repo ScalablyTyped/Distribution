@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lingui__react"
-version := "2.8-dt-20190930Z-7a2574"
+version := "2.8-dt-20190930Z-e28408"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

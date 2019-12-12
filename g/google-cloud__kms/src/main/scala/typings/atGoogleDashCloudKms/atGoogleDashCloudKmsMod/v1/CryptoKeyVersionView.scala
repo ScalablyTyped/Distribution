@@ -1,5 +1,8 @@
 package typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED
+import typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.FULL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object CryptoKeyVersionView extends js.Object {
   @js.native
   sealed trait FULL extends CryptoKeyVersionView
   
-  /* 0 */ val CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED with Double = js.native
-  /* 1 */ val FULL: typings.atGoogleDashCloudKms.atGoogleDashCloudKmsMod.v1.CryptoKeyVersionView.FULL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CryptoKeyVersionView with Double] = js.native
+  /* 0 */ @js.native
+  object CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED extends TopLevel[CRYPTO_KEY_VERSION_VIEW_UNSPECIFIED with Double]
+  
+  /* 1 */ @js.native
+  object FULL extends TopLevel[FULL with Double]
+  
 }
 

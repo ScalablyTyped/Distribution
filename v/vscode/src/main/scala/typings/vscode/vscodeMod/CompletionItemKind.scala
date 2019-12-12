@@ -1,5 +1,29 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.CompletionItemKind.Class
+import typings.vscode.vscodeMod.CompletionItemKind.Constant
+import typings.vscode.vscodeMod.CompletionItemKind.Constructor
+import typings.vscode.vscodeMod.CompletionItemKind.Enum
+import typings.vscode.vscodeMod.CompletionItemKind.EnumMember
+import typings.vscode.vscodeMod.CompletionItemKind.Field
+import typings.vscode.vscodeMod.CompletionItemKind.File
+import typings.vscode.vscodeMod.CompletionItemKind.Folder
+import typings.vscode.vscodeMod.CompletionItemKind.Function
+import typings.vscode.vscodeMod.CompletionItemKind.Interface
+import typings.vscode.vscodeMod.CompletionItemKind.Keyword
+import typings.vscode.vscodeMod.CompletionItemKind.Method
+import typings.vscode.vscodeMod.CompletionItemKind.Module
+import typings.vscode.vscodeMod.CompletionItemKind.Operator
+import typings.vscode.vscodeMod.CompletionItemKind.Property
+import typings.vscode.vscodeMod.CompletionItemKind.Reference
+import typings.vscode.vscodeMod.CompletionItemKind.Snippet
+import typings.vscode.vscodeMod.CompletionItemKind.Struct
+import typings.vscode.vscodeMod.CompletionItemKind.Text
+import typings.vscode.vscodeMod.CompletionItemKind.TypeParameter
+import typings.vscode.vscodeMod.CompletionItemKind.Unit
+import typings.vscode.vscodeMod.CompletionItemKind.Value
+import typings.vscode.vscodeMod.CompletionItemKind.Variable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,32 +109,84 @@ object CompletionItemKind extends js.Object {
   @js.native
   sealed trait Variable extends CompletionItemKind
   
-  /* 6 */ val Class: typings.vscode.vscodeMod.CompletionItemKind.Class with Double = js.native
-  /* 15 */ val Color: typings.vscode.vscodeMod.CompletionItemKind.Color with Double = js.native
-  /* 20 */ val Constant: typings.vscode.vscodeMod.CompletionItemKind.Constant with Double = js.native
-  /* 3 */ val Constructor: typings.vscode.vscodeMod.CompletionItemKind.Constructor with Double = js.native
-  /* 12 */ val Enum: typings.vscode.vscodeMod.CompletionItemKind.Enum with Double = js.native
-  /* 19 */ val EnumMember: typings.vscode.vscodeMod.CompletionItemKind.EnumMember with Double = js.native
-  /* 22 */ val Event: typings.vscode.vscodeMod.CompletionItemKind.Event with Double = js.native
-  /* 4 */ val Field: typings.vscode.vscodeMod.CompletionItemKind.Field with Double = js.native
-  /* 16 */ val File: typings.vscode.vscodeMod.CompletionItemKind.File with Double = js.native
-  /* 18 */ val Folder: typings.vscode.vscodeMod.CompletionItemKind.Folder with Double = js.native
-  /* 2 */ val Function: typings.vscode.vscodeMod.CompletionItemKind.Function with Double = js.native
-  /* 7 */ val Interface: typings.vscode.vscodeMod.CompletionItemKind.Interface with Double = js.native
-  /* 13 */ val Keyword: typings.vscode.vscodeMod.CompletionItemKind.Keyword with Double = js.native
-  /* 1 */ val Method: typings.vscode.vscodeMod.CompletionItemKind.Method with Double = js.native
-  /* 8 */ val Module: typings.vscode.vscodeMod.CompletionItemKind.Module with Double = js.native
-  /* 23 */ val Operator: typings.vscode.vscodeMod.CompletionItemKind.Operator with Double = js.native
-  /* 9 */ val Property: typings.vscode.vscodeMod.CompletionItemKind.Property with Double = js.native
-  /* 17 */ val Reference: typings.vscode.vscodeMod.CompletionItemKind.Reference with Double = js.native
-  /* 14 */ val Snippet: typings.vscode.vscodeMod.CompletionItemKind.Snippet with Double = js.native
-  /* 21 */ val Struct: typings.vscode.vscodeMod.CompletionItemKind.Struct with Double = js.native
-  /* 0 */ val Text: typings.vscode.vscodeMod.CompletionItemKind.Text with Double = js.native
-  /* 24 */ val TypeParameter: typings.vscode.vscodeMod.CompletionItemKind.TypeParameter with Double = js.native
-  /* 10 */ val Unit: typings.vscode.vscodeMod.CompletionItemKind.Unit with Double = js.native
-  /* 11 */ val Value: typings.vscode.vscodeMod.CompletionItemKind.Value with Double = js.native
-  /* 5 */ val Variable: typings.vscode.vscodeMod.CompletionItemKind.Variable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompletionItemKind with Double] = js.native
+  /* 6 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 15 */ @js.native
+  object Color
+    extends TopLevel[typings.vscode.vscodeMod.CompletionItemKind.Color with Double]
+  
+  /* 20 */ @js.native
+  object Constant extends TopLevel[Constant with Double]
+  
+  /* 3 */ @js.native
+  object Constructor extends TopLevel[Constructor with Double]
+  
+  /* 12 */ @js.native
+  object Enum extends TopLevel[Enum with Double]
+  
+  /* 19 */ @js.native
+  object EnumMember extends TopLevel[EnumMember with Double]
+  
+  /* 22 */ @js.native
+  object Event
+    extends TopLevel[typings.vscode.vscodeMod.CompletionItemKind.Event with Double]
+  
+  /* 4 */ @js.native
+  object Field extends TopLevel[Field with Double]
+  
+  /* 16 */ @js.native
+  object File extends TopLevel[File with Double]
+  
+  /* 18 */ @js.native
+  object Folder extends TopLevel[Folder with Double]
+  
+  /* 2 */ @js.native
+  object Function extends TopLevel[Function with Double]
+  
+  /* 7 */ @js.native
+  object Interface extends TopLevel[Interface with Double]
+  
+  /* 13 */ @js.native
+  object Keyword extends TopLevel[Keyword with Double]
+  
+  /* 1 */ @js.native
+  object Method extends TopLevel[Method with Double]
+  
+  /* 8 */ @js.native
+  object Module extends TopLevel[Module with Double]
+  
+  /* 23 */ @js.native
+  object Operator extends TopLevel[Operator with Double]
+  
+  /* 9 */ @js.native
+  object Property extends TopLevel[Property with Double]
+  
+  /* 17 */ @js.native
+  object Reference extends TopLevel[Reference with Double]
+  
+  /* 14 */ @js.native
+  object Snippet extends TopLevel[Snippet with Double]
+  
+  /* 21 */ @js.native
+  object Struct extends TopLevel[Struct with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
+  /* 24 */ @js.native
+  object TypeParameter extends TopLevel[TypeParameter with Double]
+  
+  /* 10 */ @js.native
+  object Unit extends TopLevel[Unit with Double]
+  
+  /* 11 */ @js.native
+  object Value extends TopLevel[Value with Double]
+  
+  /* 5 */ @js.native
+  object Variable extends TopLevel[Variable with Double]
+  
 }
 

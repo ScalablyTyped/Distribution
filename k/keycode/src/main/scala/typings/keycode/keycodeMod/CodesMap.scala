@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 trait CodesMap extends js.Object {
   var _quote: Double
   var `,`: Double
-  var `-`: Double
+  @JSName("-")
+  var `-_`: Double
   var `.`: Double
   var `/`: Double
   var `0`: Double
@@ -113,7 +114,7 @@ object CodesMap {
   def apply(
     _quote: Double,
     `,`: Double,
-    `-`: Double,
+    `-_`: Double,
     `.`: Double,
     `/`: Double,
     `0`: Double,
@@ -216,7 +217,7 @@ object CodesMap {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], alt = alt.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], backspace = backspace.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], ctrl = ctrl.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], esc = esc.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], f1 = f1.asInstanceOf[js.Any], f10 = f10.asInstanceOf[js.Any], f11 = f11.asInstanceOf[js.Any], f12 = f12.asInstanceOf[js.Any], f2 = f2.asInstanceOf[js.Any], f3 = f3.asInstanceOf[js.Any], f4 = f4.asInstanceOf[js.Any], f5 = f5.asInstanceOf[js.Any], f6 = f6.asInstanceOf[js.Any], f7 = f7.asInstanceOf[js.Any], f8 = f8.asInstanceOf[js.Any], f9 = f9.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], insert = insert.asInstanceOf[js.Any], j = j.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.updateDynamic("'")(_quote.asInstanceOf[js.Any])
     __obj.updateDynamic(",")(`,`.asInstanceOf[js.Any])
-    __obj.updateDynamic("-")(`-`.asInstanceOf[js.Any])
+    __obj.updateDynamic("-")(`-_`.asInstanceOf[js.Any])
     __obj.updateDynamic(".")(`.`.asInstanceOf[js.Any])
     __obj.updateDynamic("/")(`/`.asInstanceOf[js.Any])
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])

@@ -1,5 +1,9 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.SelectionMode.Default
+import typings.officeDashJs.Office.SelectionMode.None
+import typings.officeDashJs.Office.SelectionMode.Selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object SelectionMode extends js.Object {
   @js.native
   sealed trait Selected extends SelectionMode
   
-  /* 0 */ val Default: typings.officeDashJs.Office.SelectionMode.Default with Double = js.native
-  /* 2 */ val None: typings.officeDashJs.Office.SelectionMode.None with Double = js.native
-  /* 1 */ val Selected: typings.officeDashJs.Office.SelectionMode.Selected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionMode with Double] = js.native
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Selected extends TopLevel[Selected with Double]
+  
 }
 

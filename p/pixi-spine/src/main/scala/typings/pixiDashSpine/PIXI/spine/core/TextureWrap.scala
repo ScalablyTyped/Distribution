@@ -1,5 +1,9 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.ClampToEdge
+import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.MirroredRepeat
+import typings.pixiDashSpine.PIXI.spine.core.TextureWrap.Repeat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TextureWrap extends js.Object {
   @js.native
   sealed trait Repeat extends TextureWrap
   
-  /* 33071 */ val ClampToEdge: typings.pixiDashSpine.PIXI.spine.core.TextureWrap.ClampToEdge with Double = js.native
-  /* 33648 */ val MirroredRepeat: typings.pixiDashSpine.PIXI.spine.core.TextureWrap.MirroredRepeat with Double = js.native
-  /* 10497 */ val Repeat: typings.pixiDashSpine.PIXI.spine.core.TextureWrap.Repeat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextureWrap with Double] = js.native
+  /* 33071 */ @js.native
+  object ClampToEdge extends TopLevel[ClampToEdge with Double]
+  
+  /* 33648 */ @js.native
+  object MirroredRepeat extends TopLevel[MirroredRepeat with Double]
+  
+  /* 10497 */ @js.native
+  object Repeat extends TopLevel[Repeat with Double]
+  
 }
 

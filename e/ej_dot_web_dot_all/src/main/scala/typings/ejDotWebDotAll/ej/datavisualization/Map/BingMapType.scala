@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Map
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerial
+import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerialwithlabel
+import typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Road
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object BingMapType extends js.Object {
   @js.native
   sealed trait Road extends BingMapType
   
-  /* 0 */ val Aerial: typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerial with Double = js.native
-  /* 1 */ val Aerialwithlabel: typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Aerialwithlabel with Double = js.native
-  /* 2 */ val Road: typings.ejDotWebDotAll.ej.datavisualization.Map.BingMapType.Road with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BingMapType with Double] = js.native
+  /* 0 */ @js.native
+  object Aerial extends TopLevel[Aerial with Double]
+  
+  /* 1 */ @js.native
+  object Aerialwithlabel extends TopLevel[Aerialwithlabel with Double]
+  
+  /* 2 */ @js.native
+  object Road extends TopLevel[Road with Double]
+  
 }
 

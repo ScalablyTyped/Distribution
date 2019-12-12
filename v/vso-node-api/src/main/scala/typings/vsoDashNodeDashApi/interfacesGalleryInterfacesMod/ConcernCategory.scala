@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Abusive
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.General
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Spam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ConcernCategory extends js.Object {
   @js.native
   sealed trait Spam extends ConcernCategory
   
-  /* 2 */ val Abusive: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Abusive with Double = js.native
-  /* 1 */ val General: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.General with Double = js.native
-  /* 4 */ val Spam: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ConcernCategory.Spam with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConcernCategory with Double] = js.native
+  /* 2 */ @js.native
+  object Abusive extends TopLevel[Abusive with Double]
+  
+  /* 1 */ @js.native
+  object General extends TopLevel[General with Double]
+  
+  /* 4 */ @js.native
+  object Spam extends TopLevel[Spam with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.FaceAnchorProp.BlendShapes
+import typings.expo.buildARMod.FaceAnchorProp.Geometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object FaceAnchorProp extends js.Object {
   @js.native
   sealed trait Geometry extends FaceAnchorProp
   
-  /* "blendShapes" */ val BlendShapes: typings.expo.buildARMod.FaceAnchorProp.BlendShapes with String = js.native
-  /* "geometry" */ val Geometry: typings.expo.buildARMod.FaceAnchorProp.Geometry with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FaceAnchorProp with String] = js.native
+  /* "blendShapes" */ @js.native
+  object BlendShapes extends TopLevel[BlendShapes with String]
+  
+  /* "geometry" */ @js.native
+  object Geometry extends TopLevel[Geometry with String]
+  
 }
 

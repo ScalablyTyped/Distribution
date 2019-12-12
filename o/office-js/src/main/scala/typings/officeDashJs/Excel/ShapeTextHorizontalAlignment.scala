@@ -1,5 +1,13 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.center
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.distributed
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.justify
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.justifyLow
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.left
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.right
+import typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.thaiDistributed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object ShapeTextHorizontalAlignment extends js.Object {
   @js.native
   sealed trait thaiDistributed extends ShapeTextHorizontalAlignment
   
-  /* "Center" */ val center: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.center with String = js.native
-  /* "Distributed" */ val distributed: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.distributed with String = js.native
-  /* "Justify" */ val justify: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.justify with String = js.native
-  /* "JustifyLow" */ val justifyLow: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.justifyLow with String = js.native
-  /* "Left" */ val left: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.left with String = js.native
-  /* "Right" */ val right: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.right with String = js.native
-  /* "ThaiDistributed" */ val thaiDistributed: typings.officeDashJs.Excel.ShapeTextHorizontalAlignment.thaiDistributed with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeTextHorizontalAlignment with String] = js.native
+  /* "Center" */ @js.native
+  object center extends TopLevel[center with String]
+  
+  /* "Distributed" */ @js.native
+  object distributed extends TopLevel[distributed with String]
+  
+  /* "Justify" */ @js.native
+  object justify extends TopLevel[justify with String]
+  
+  /* "JustifyLow" */ @js.native
+  object justifyLow extends TopLevel[justifyLow with String]
+  
+  /* "Left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "Right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "ThaiDistributed" */ @js.native
+  object thaiDistributed extends TopLevel[thaiDistributed with String]
+  
 }
 

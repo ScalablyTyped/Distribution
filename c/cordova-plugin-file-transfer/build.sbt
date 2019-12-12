@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-file-transfer"
-version := "1.7.1-624d48"
+version := "1.7.1-ec1cb0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-10d0b8",
+  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-22d3f2",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Brace
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.CurlyBrace
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.None
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Rectangle
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.WithoutTopAndBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object MultiLevelLabelsBorderType extends js.Object {
   @js.native
   sealed trait WithoutTopAndBottom extends MultiLevelLabelsBorderType
   
-  /* 3 */ val Brace: typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Brace with Double = js.native
-  /* 4 */ val CurlyBrace: typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.CurlyBrace with Double = js.native
-  /* 1 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.None with Double = js.native
-  /* 0 */ val Rectangle: typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.Rectangle with Double = js.native
-  /* 2 */ val WithoutTopAndBottom: typings.ejDotWebDotAll.ej.datavisualization.Chart.MultiLevelLabelsBorderType.WithoutTopAndBottom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MultiLevelLabelsBorderType with Double] = js.native
+  /* 3 */ @js.native
+  object Brace extends TopLevel[Brace with Double]
+  
+  /* 4 */ @js.native
+  object CurlyBrace extends TopLevel[CurlyBrace with Double]
+  
+  /* 1 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 0 */ @js.native
+  object Rectangle extends TopLevel[Rectangle with Double]
+  
+  /* 2 */ @js.native
+  object WithoutTopAndBottom extends TopLevel[WithoutTopAndBottom with Double]
+  
 }
 

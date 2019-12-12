@@ -1,6 +1,16 @@
 package typings.atFirebaseFirestore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.All
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ClientMetadataRefresh
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ListenStreamConnectionBackoff
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ListenStreamIdle
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.LruGarbageCollection
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.OnlineStateTimeout
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.RetryTransaction
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.WriteStreamConnectionBackoff
+import typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.WriteStreamIdle
 import typings.atFirebaseFirestore.distSrcUtilPromiseMod.CancelablePromise
 import typings.std.Error
 import scala.scalajs.js
@@ -142,17 +152,35 @@ object distSrcUtilAsyncUnderscoreQueueMod extends js.Object {
     @js.native
     sealed trait WriteStreamIdle extends TimerId
     
-    /* "all" */ val All: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.All with String = js.native
-    /* "client_metadata_refresh" */ val ClientMetadataRefresh: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ClientMetadataRefresh with String = js.native
-    /* "listen_stream_connection_backoff" */ val ListenStreamConnectionBackoff: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ListenStreamConnectionBackoff with String = js.native
-    /* "listen_stream_idle" */ val ListenStreamIdle: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.ListenStreamIdle with String = js.native
-    /* "lru_garbage_collection" */ val LruGarbageCollection: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.LruGarbageCollection with String = js.native
-    /* "online_state_timeout" */ val OnlineStateTimeout: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.OnlineStateTimeout with String = js.native
-    /* "retry_transaction" */ val RetryTransaction: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.RetryTransaction with String = js.native
-    /* "write_stream_connection_backoff" */ val WriteStreamConnectionBackoff: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.WriteStreamConnectionBackoff with String = js.native
-    /* "write_stream_idle" */ val WriteStreamIdle: typings.atFirebaseFirestore.distSrcUtilAsyncUnderscoreQueueMod.TimerId.WriteStreamIdle with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TimerId with String] = js.native
+    /* "all" */ @js.native
+    object All extends TopLevel[All with String]
+    
+    /* "client_metadata_refresh" */ @js.native
+    object ClientMetadataRefresh extends TopLevel[ClientMetadataRefresh with String]
+    
+    /* "listen_stream_connection_backoff" */ @js.native
+    object ListenStreamConnectionBackoff extends TopLevel[ListenStreamConnectionBackoff with String]
+    
+    /* "listen_stream_idle" */ @js.native
+    object ListenStreamIdle extends TopLevel[ListenStreamIdle with String]
+    
+    /* "lru_garbage_collection" */ @js.native
+    object LruGarbageCollection extends TopLevel[LruGarbageCollection with String]
+    
+    /* "online_state_timeout" */ @js.native
+    object OnlineStateTimeout extends TopLevel[OnlineStateTimeout with String]
+    
+    /* "retry_transaction" */ @js.native
+    object RetryTransaction extends TopLevel[RetryTransaction with String]
+    
+    /* "write_stream_connection_backoff" */ @js.native
+    object WriteStreamConnectionBackoff extends TopLevel[WriteStreamConnectionBackoff with String]
+    
+    /* "write_stream_idle" */ @js.native
+    object WriteStreamIdle extends TopLevel[WriteStreamIdle with String]
+    
   }
   
 }

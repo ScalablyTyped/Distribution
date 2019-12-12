@@ -1,5 +1,9 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_BorderStyle.TWBS_NONE
+import typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLE3D
+import typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLEFLAT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object EnumDWT_BorderStyle extends js.Object {
   @js.native
   sealed trait TWBS_SINGLEFLAT extends EnumDWT_BorderStyle
   
-  /* 0 */ val TWBS_NONE: typings.dwt.EnumDWT_BorderStyle.TWBS_NONE with Double = js.native
-  /* 2 */ val TWBS_SINGLE3D: typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLE3D with Double = js.native
-  /* 1 */ val TWBS_SINGLEFLAT: typings.dwt.EnumDWT_BorderStyle.TWBS_SINGLEFLAT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_BorderStyle with Double] = js.native
+  /* 0 */ @js.native
+  object TWBS_NONE extends TopLevel[TWBS_NONE with Double]
+  
+  /* 2 */ @js.native
+  object TWBS_SINGLE3D extends TopLevel[TWBS_SINGLE3D with Double]
+  
+  /* 1 */ @js.native
+  object TWBS_SINGLEFLAT extends TopLevel[TWBS_SINGLEFLAT with Double]
+  
 }
 

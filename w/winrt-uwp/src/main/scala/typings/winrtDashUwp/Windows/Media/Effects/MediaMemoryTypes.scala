@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Effects
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.cpu
+import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpu
+import typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpuAndCpu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object MediaMemoryTypes extends js.Object {
   @js.native
   sealed trait gpuAndCpu extends MediaMemoryTypes
   
-  /* 1 */ val cpu: typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.cpu with Double = js.native
-  /* 0 */ val gpu: typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpu with Double = js.native
-  /* 2 */ val gpuAndCpu: typings.winrtDashUwp.Windows.Media.Effects.MediaMemoryTypes.gpuAndCpu with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaMemoryTypes with Double] = js.native
+  /* 1 */ @js.native
+  object cpu extends TopLevel[cpu with Double]
+  
+  /* 0 */ @js.native
+  object gpu extends TopLevel[gpu with Double]
+  
+  /* 2 */ @js.native
+  object gpuAndCpu extends TopLevel[gpuAndCpu with Double]
+  
 }
 

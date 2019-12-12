@@ -1,6 +1,7 @@
 package typings.rotDashJs
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +23,18 @@ object libFovMod extends js.Object {
     class RecursiveShadowcasting ()
       extends typings.rotDashJs.libFovRecursiveDashShadowcastingMod.default
     
-    var DiscreteShadowcasting: Instantiable0[typings.rotDashJs.libFovDiscreteDashShadowcastingMod.default] = js.native
-    var PreciseShadowcasting: Instantiable0[typings.rotDashJs.libFovPreciseDashShadowcastingMod.default] = js.native
-    var RecursiveShadowcasting: Instantiable0[typings.rotDashJs.libFovRecursiveDashShadowcastingMod.default] = js.native
+    @js.native
+    object DiscreteShadowcasting
+      extends TopLevel[Instantiable0[typings.rotDashJs.libFovDiscreteDashShadowcastingMod.default]]
+    
+    @js.native
+    object PreciseShadowcasting
+      extends TopLevel[Instantiable0[typings.rotDashJs.libFovPreciseDashShadowcastingMod.default]]
+    
+    @js.native
+    object RecursiveShadowcasting
+      extends TopLevel[Instantiable0[typings.rotDashJs.libFovRecursiveDashShadowcastingMod.default]]
+    
   }
   
 }

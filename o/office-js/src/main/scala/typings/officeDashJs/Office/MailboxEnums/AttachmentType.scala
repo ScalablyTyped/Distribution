@@ -1,5 +1,7 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.AttachmentType.Cloud
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +39,18 @@ object AttachmentType extends js.Object {
   @js.native
   sealed trait Item extends AttachmentType
   
-  /* "cloud" */ val Cloud: typings.officeDashJs.Office.MailboxEnums.AttachmentType.Cloud with String = js.native
-  /* "file" */ val File: typings.officeDashJs.Office.MailboxEnums.AttachmentType.File with String = js.native
-  /* "item" */ val Item: typings.officeDashJs.Office.MailboxEnums.AttachmentType.Item with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AttachmentType with String] = js.native
+  /* "cloud" */ @js.native
+  object Cloud extends TopLevel[Cloud with String]
+  
+  /* "file" */ @js.native
+  object File
+    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.AttachmentType.File with String]
+  
+  /* "item" */ @js.native
+  object Item
+    extends TopLevel[typings.officeDashJs.Office.MailboxEnums.AttachmentType.Item with String]
+  
 }
 

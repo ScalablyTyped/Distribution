@@ -1,5 +1,14 @@
 package typings.winrt.Windows.Storage.Pickers
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.computerFolder
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.desktop
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.documentsLibrary
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.downloads
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.homeGroup
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.musicLibrary
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.picturesLibrary
+import typings.winrt.Windows.Storage.Pickers.PickerLocationId.videosLibrary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object PickerLocationId extends js.Object {
   @js.native
   sealed trait videosLibrary extends PickerLocationId
   
-  /* 1 */ val computerFolder: typings.winrt.Windows.Storage.Pickers.PickerLocationId.computerFolder with Double = js.native
-  /* 2 */ val desktop: typings.winrt.Windows.Storage.Pickers.PickerLocationId.desktop with Double = js.native
-  /* 0 */ val documentsLibrary: typings.winrt.Windows.Storage.Pickers.PickerLocationId.documentsLibrary with Double = js.native
-  /* 3 */ val downloads: typings.winrt.Windows.Storage.Pickers.PickerLocationId.downloads with Double = js.native
-  /* 4 */ val homeGroup: typings.winrt.Windows.Storage.Pickers.PickerLocationId.homeGroup with Double = js.native
-  /* 5 */ val musicLibrary: typings.winrt.Windows.Storage.Pickers.PickerLocationId.musicLibrary with Double = js.native
-  /* 6 */ val picturesLibrary: typings.winrt.Windows.Storage.Pickers.PickerLocationId.picturesLibrary with Double = js.native
-  /* 7 */ val videosLibrary: typings.winrt.Windows.Storage.Pickers.PickerLocationId.videosLibrary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PickerLocationId with Double] = js.native
+  /* 1 */ @js.native
+  object computerFolder extends TopLevel[computerFolder with Double]
+  
+  /* 2 */ @js.native
+  object desktop extends TopLevel[desktop with Double]
+  
+  /* 0 */ @js.native
+  object documentsLibrary extends TopLevel[documentsLibrary with Double]
+  
+  /* 3 */ @js.native
+  object downloads extends TopLevel[downloads with Double]
+  
+  /* 4 */ @js.native
+  object homeGroup extends TopLevel[homeGroup with Double]
+  
+  /* 5 */ @js.native
+  object musicLibrary extends TopLevel[musicLibrary with Double]
+  
+  /* 6 */ @js.native
+  object picturesLibrary extends TopLevel[picturesLibrary with Double]
+  
+  /* 7 */ @js.native
+  object videosLibrary extends TopLevel[videosLibrary with Double]
+  
 }
 

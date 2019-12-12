@@ -1,5 +1,16 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Day
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Fri
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Mon
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Sat
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Sun
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Thu
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Tue
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Wed
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Weekday
+import typings.officeDashJsDashPreview.Office.MailboxEnums.Days.WeekendDay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,17 +90,37 @@ object Days extends js.Object {
   @js.native
   sealed trait WeekendDay extends Days
   
-  /* "day" */ val Day: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Day with String = js.native
-  /* "fri" */ val Fri: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Fri with String = js.native
-  /* "mon" */ val Mon: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Mon with String = js.native
-  /* "sat" */ val Sat: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Sat with String = js.native
-  /* "sun" */ val Sun: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Sun with String = js.native
-  /* "thu" */ val Thu: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Thu with String = js.native
-  /* "tue" */ val Tue: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Tue with String = js.native
-  /* "wed" */ val Wed: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Wed with String = js.native
-  /* "weekday" */ val Weekday: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.Weekday with String = js.native
-  /* "weekendDay" */ val WeekendDay: typings.officeDashJsDashPreview.Office.MailboxEnums.Days.WeekendDay with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Days with String] = js.native
+  /* "day" */ @js.native
+  object Day extends TopLevel[Day with String]
+  
+  /* "fri" */ @js.native
+  object Fri extends TopLevel[Fri with String]
+  
+  /* "mon" */ @js.native
+  object Mon extends TopLevel[Mon with String]
+  
+  /* "sat" */ @js.native
+  object Sat extends TopLevel[Sat with String]
+  
+  /* "sun" */ @js.native
+  object Sun extends TopLevel[Sun with String]
+  
+  /* "thu" */ @js.native
+  object Thu extends TopLevel[Thu with String]
+  
+  /* "tue" */ @js.native
+  object Tue extends TopLevel[Tue with String]
+  
+  /* "wed" */ @js.native
+  object Wed extends TopLevel[Wed with String]
+  
+  /* "weekday" */ @js.native
+  object Weekday extends TopLevel[Weekday with String]
+  
+  /* "weekendDay" */ @js.native
+  object WeekendDay extends TopLevel[WeekendDay with String]
+  
 }
 

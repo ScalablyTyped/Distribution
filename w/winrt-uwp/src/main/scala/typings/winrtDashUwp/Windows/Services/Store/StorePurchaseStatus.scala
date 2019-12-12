@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.alreadyPurchased
+import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.networkError
+import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.notPurchased
+import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.serverError
+import typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object StorePurchaseStatus extends js.Object {
   @js.native
   sealed trait succeeded extends StorePurchaseStatus
   
-  /* 1 */ val alreadyPurchased: typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.alreadyPurchased with Double = js.native
-  /* 3 */ val networkError: typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.networkError with Double = js.native
-  /* 2 */ val notPurchased: typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.notPurchased with Double = js.native
-  /* 4 */ val serverError: typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.serverError with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.Services.Store.StorePurchaseStatus.succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StorePurchaseStatus with Double] = js.native
+  /* 1 */ @js.native
+  object alreadyPurchased extends TopLevel[alreadyPurchased with Double]
+  
+  /* 3 */ @js.native
+  object networkError extends TopLevel[networkError with Double]
+  
+  /* 2 */ @js.native
+  object notPurchased extends TopLevel[notPurchased with Double]
+  
+  /* 4 */ @js.native
+  object serverError extends TopLevel[serverError with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
 }
 

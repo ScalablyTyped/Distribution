@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.allowed
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.deniedBySystem
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.deniedByUser
+import typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.lowBattery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object DeviceTriggerResult extends js.Object {
   @js.native
   sealed trait lowBattery extends DeviceTriggerResult
   
-  /* 0 */ val allowed: typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.allowed with Double = js.native
-  /* 2 */ val deniedBySystem: typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.deniedBySystem with Double = js.native
-  /* 1 */ val deniedByUser: typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.deniedByUser with Double = js.native
-  /* 3 */ val lowBattery: typings.winrtDashUwp.Windows.ApplicationModel.Background.DeviceTriggerResult.lowBattery with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeviceTriggerResult with Double] = js.native
+  /* 0 */ @js.native
+  object allowed extends TopLevel[allowed with Double]
+  
+  /* 2 */ @js.native
+  object deniedBySystem extends TopLevel[deniedBySystem with Double]
+  
+  /* 1 */ @js.native
+  object deniedByUser extends TopLevel[deniedByUser with Double]
+  
+  /* 3 */ @js.native
+  object lowBattery extends TopLevel[lowBattery with Double]
+  
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "popmotion-pose"
-version := "3.4.11-8e22f1"
+version := "3.4.11-4c631d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "framesync" % "4.0.4-8951fe",
-  "org.scalablytyped" %%% "popmotion" % "8.7.1-6ea7ca",
+  "org.scalablytyped" %%% "framesync" % "4.0.4-7950c8",
+  "org.scalablytyped" %%% "popmotion" % "8.7.1-86645d",
   "org.scalablytyped" %%% "popmotion__easing" % "1.0.2-613c41",
   "org.scalablytyped" %%% "popmotion__popcorn" % "0.4.4-036b73",
   "org.scalablytyped" %%% "pose-core" % "2.1.1-d9f4cc",

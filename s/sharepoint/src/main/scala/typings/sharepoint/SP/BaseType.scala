@@ -1,5 +1,13 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.BaseType.discussionBoard
+import typings.sharepoint.SP.BaseType.documentLibrary
+import typings.sharepoint.SP.BaseType.genericList
+import typings.sharepoint.SP.BaseType.issue
+import typings.sharepoint.SP.BaseType.none
+import typings.sharepoint.SP.BaseType.survey
+import typings.sharepoint.SP.BaseType.unused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,14 +40,28 @@ object BaseType extends js.Object {
   @js.native
   sealed trait unused extends BaseType
   
-  /* 4 */ val discussionBoard: typings.sharepoint.SP.BaseType.discussionBoard with Double = js.native
-  /* 2 */ val documentLibrary: typings.sharepoint.SP.BaseType.documentLibrary with Double = js.native
-  /* 1 */ val genericList: typings.sharepoint.SP.BaseType.genericList with Double = js.native
-  /* 6 */ val issue: typings.sharepoint.SP.BaseType.issue with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.BaseType.none with Double = js.native
-  /* 5 */ val survey: typings.sharepoint.SP.BaseType.survey with Double = js.native
-  /* 3 */ val unused: typings.sharepoint.SP.BaseType.unused with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BaseType with Double] = js.native
+  /* 4 */ @js.native
+  object discussionBoard extends TopLevel[discussionBoard with Double]
+  
+  /* 2 */ @js.native
+  object documentLibrary extends TopLevel[documentLibrary with Double]
+  
+  /* 1 */ @js.native
+  object genericList extends TopLevel[genericList with Double]
+  
+  /* 6 */ @js.native
+  object issue extends TopLevel[issue with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 5 */ @js.native
+  object survey extends TopLevel[survey with Double]
+  
+  /* 3 */ @js.native
+  object unused extends TopLevel[unused with Double]
+  
 }
 

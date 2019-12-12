@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.RadioButtonSize.Medium
+import typings.ejDotWebDotAll.ej.RadioButtonSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object RadioButtonSize extends js.Object {
   @js.native
   sealed trait Small extends RadioButtonSize
   
-  /* 1 */ val Medium: typings.ejDotWebDotAll.ej.RadioButtonSize.Medium with Double = js.native
-  /* 0 */ val Small: typings.ejDotWebDotAll.ej.RadioButtonSize.Small with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RadioButtonSize with Double] = js.native
+  /* 1 */ @js.native
+  object Medium extends TopLevel[Medium with Double]
+  
+  /* 0 */ @js.native
+  object Small extends TopLevel[Small with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googlemaps.google.maps.StreetViewStatus.OK
+import typings.googlemaps.google.maps.StreetViewStatus.UNKNOWN_ERROR
+import typings.googlemaps.google.maps.StreetViewStatus.ZERO_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object StreetViewStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends StreetViewStatus
   
-  /* "OK" */ val OK: typings.googlemaps.google.maps.StreetViewStatus.OK with String = js.native
-  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typings.googlemaps.google.maps.StreetViewStatus.UNKNOWN_ERROR with String = js.native
-  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.StreetViewStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[StreetViewStatus with String] = js.native
+  /* "OK" */ @js.native
+  object OK extends TopLevel[OK with String]
+  
+  /* "UNKNOWN_ERROR" */ @js.native
+  object UNKNOWN_ERROR extends TopLevel[UNKNOWN_ERROR with String]
+  
+  /* "ZERO_RESULTS" */ @js.native
+  object ZERO_RESULTS extends TopLevel[ZERO_RESULTS with String]
+  
 }
 

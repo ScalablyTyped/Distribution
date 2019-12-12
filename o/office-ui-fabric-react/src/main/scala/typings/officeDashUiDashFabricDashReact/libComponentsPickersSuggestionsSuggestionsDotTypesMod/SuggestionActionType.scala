@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.forceResolve
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.none
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.searchMore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SuggestionActionType extends js.Object {
   @js.native
   sealed trait searchMore extends SuggestionActionType
   
-  /* 1 */ val forceResolve: typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.forceResolve with Double = js.native
-  /* 0 */ val none: typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.none with Double = js.native
-  /* 2 */ val searchMore: typings.officeDashUiDashFabricDashReact.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType.searchMore with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SuggestionActionType with Double] = js.native
+  /* 1 */ @js.native
+  object forceResolve extends TopLevel[forceResolve with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object searchMore extends TopLevel[searchMore with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapLightPath.TWLP_REFLECTIVE
+import typings.dwt.EnumDWT_CapLightPath.TWLP_TRANSMISSIVE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +20,13 @@ object EnumDWT_CapLightPath extends js.Object {
   @js.native
   sealed trait TWLP_TRANSMISSIVE extends EnumDWT_CapLightPath
   
-  /* 0 */ val TWLP_REFLECTIVE: typings.dwt.EnumDWT_CapLightPath.TWLP_REFLECTIVE with Double = js.native
-  /* 1 */ val TWLP_TRANSMISSIVE: typings.dwt.EnumDWT_CapLightPath.TWLP_TRANSMISSIVE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapLightPath with Double] = js.native
+  /* 0 */ @js.native
+  object TWLP_REFLECTIVE extends TopLevel[TWLP_REFLECTIVE with Double]
+  
+  /* 1 */ @js.native
+  object TWLP_TRANSMISSIVE extends TopLevel[TWLP_TRANSMISSIVE with Double]
+  
 }
 

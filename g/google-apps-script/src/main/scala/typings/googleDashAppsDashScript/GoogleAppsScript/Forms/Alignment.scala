@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.CENTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.LEFT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.RIGHT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,10 +34,16 @@ object Alignment extends js.Object {
   @js.native
   sealed trait RIGHT extends Alignment
   
-  /* 1 */ val CENTER: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.CENTER with Double = js.native
-  /* 0 */ val LEFT: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.LEFT with Double = js.native
-  /* 2 */ val RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Forms.Alignment.RIGHT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Alignment with Double] = js.native
+  /* 1 */ @js.native
+  object CENTER extends TopLevel[CENTER with Double]
+  
+  /* 0 */ @js.native
+  object LEFT extends TopLevel[LEFT with Double]
+  
+  /* 2 */ @js.native
+  object RIGHT extends TopLevel[RIGHT with Double]
+  
 }
 

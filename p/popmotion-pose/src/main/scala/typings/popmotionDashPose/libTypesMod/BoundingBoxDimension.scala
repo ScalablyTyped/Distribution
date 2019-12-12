@@ -1,5 +1,12 @@
 package typings.popmotionDashPose.libTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.bottom
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.height
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.left
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.right
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.top
+import typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object BoundingBoxDimension extends js.Object {
   @js.native
   sealed trait width extends BoundingBoxDimension
   
-  /* "bottom" */ val bottom: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.bottom with String = js.native
-  /* "height" */ val height: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.height with String = js.native
-  /* "left" */ val left: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.left with String = js.native
-  /* "right" */ val right: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.right with String = js.native
-  /* "top" */ val top: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.top with String = js.native
-  /* "width" */ val width: typings.popmotionDashPose.libTypesMod.BoundingBoxDimension.width with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BoundingBoxDimension with String] = js.native
+  /* "bottom" */ @js.native
+  object bottom extends TopLevel[bottom with String]
+  
+  /* "height" */ @js.native
+  object height extends TopLevel[height with String]
+  
+  /* "left" */ @js.native
+  object left extends TopLevel[left with String]
+  
+  /* "right" */ @js.native
+  object right extends TopLevel[right with String]
+  
+  /* "top" */ @js.native
+  object top extends TopLevel[top with String]
+  
+  /* "width" */ @js.native
+  object width extends TopLevel[width with String]
+  
 }
 

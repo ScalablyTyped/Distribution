@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.TreeMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.VisibilityMode.Hideonexceededlength
+import typings.ejDotWebDotAll.ej.datavisualization.TreeMap.VisibilityMode.Top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object VisibilityMode extends js.Object {
   @js.native
   sealed trait Top extends VisibilityMode
   
-  /* 1 */ val Hideonexceededlength: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.VisibilityMode.Hideonexceededlength with Double = js.native
-  /* 0 */ val Top: typings.ejDotWebDotAll.ej.datavisualization.TreeMap.VisibilityMode.Top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VisibilityMode with Double] = js.native
+  /* 1 */ @js.native
+  object Hideonexceededlength extends TopLevel[Hideonexceededlength with Double]
+  
+  /* 0 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
 }
 

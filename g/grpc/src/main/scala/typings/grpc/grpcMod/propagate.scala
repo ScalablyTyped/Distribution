@@ -1,5 +1,11 @@
 package typings.grpc.grpcMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.grpc.grpcMod.propagate.CANCELLATION
+import typings.grpc.grpcMod.propagate.CENSUS_STATS_CONTEXT
+import typings.grpc.grpcMod.propagate.CENSUS_TRACING_CONTEXT
+import typings.grpc.grpcMod.propagate.DEADLINE
+import typings.grpc.grpcMod.propagate.DEFAULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object propagate extends js.Object {
   @js.native
   sealed trait DEFAULTS extends propagate
   
-  /* 3 */ val CANCELLATION: typings.grpc.grpcMod.propagate.CANCELLATION with Double = js.native
-  /* 1 */ val CENSUS_STATS_CONTEXT: typings.grpc.grpcMod.propagate.CENSUS_STATS_CONTEXT with Double = js.native
-  /* 2 */ val CENSUS_TRACING_CONTEXT: typings.grpc.grpcMod.propagate.CENSUS_TRACING_CONTEXT with Double = js.native
-  /* 0 */ val DEADLINE: typings.grpc.grpcMod.propagate.DEADLINE with Double = js.native
-  /* 4 */ val DEFAULTS: typings.grpc.grpcMod.propagate.DEFAULTS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[propagate with Double] = js.native
+  /* 3 */ @js.native
+  object CANCELLATION extends TopLevel[CANCELLATION with Double]
+  
+  /* 1 */ @js.native
+  object CENSUS_STATS_CONTEXT extends TopLevel[CENSUS_STATS_CONTEXT with Double]
+  
+  /* 2 */ @js.native
+  object CENSUS_TRACING_CONTEXT extends TopLevel[CENSUS_TRACING_CONTEXT with Double]
+  
+  /* 0 */ @js.native
+  object DEADLINE extends TopLevel[DEADLINE with Double]
+  
+  /* 4 */ @js.native
+  object DEFAULTS extends TopLevel[DEFAULTS with Double]
+  
 }
 

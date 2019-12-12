@@ -1,5 +1,10 @@
 package typings.resourceDashLoader.resourceDashLoaderMod.Resource
 
+import org.scalablytyped.runtime.TopLevel
+import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.COMPLETE
+import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.DATA_URL
+import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.LOADING
+import typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.NONE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,11 +34,19 @@ object STATUS_FLAGS extends js.Object {
   @js.native
   sealed trait NONE extends STATUS_FLAGS
   
-  /* 2 */ val COMPLETE: typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.COMPLETE with Double = js.native
-  /* 1 */ val DATA_URL: typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.DATA_URL with Double = js.native
-  /* 3 */ val LOADING: typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.LOADING with Double = js.native
-  /* 0 */ val NONE: typings.resourceDashLoader.resourceDashLoaderMod.Resource.STATUS_FLAGS.NONE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[STATUS_FLAGS with Double] = js.native
+  /* 2 */ @js.native
+  object COMPLETE extends TopLevel[COMPLETE with Double]
+  
+  /* 1 */ @js.native
+  object DATA_URL extends TopLevel[DATA_URL with Double]
+  
+  /* 3 */ @js.native
+  object LOADING extends TopLevel[LOADING with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
 }
 

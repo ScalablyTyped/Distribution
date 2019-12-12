@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.All
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.Approvals
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.Artifacts
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.DeploymentOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object DeploymentExpands extends js.Object {
   @js.native
   sealed trait DeploymentOnly extends DeploymentExpands
   
-  /* 0 */ val All: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.All with Double = js.native
-  /* 2 */ val Approvals: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.Approvals with Double = js.native
-  /* 4 */ val Artifacts: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.Artifacts with Double = js.native
-  /* 1 */ val DeploymentOnly: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentExpands.DeploymentOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentExpands with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 2 */ @js.native
+  object Approvals extends TopLevel[Approvals with Double]
+  
+  /* 4 */ @js.native
+  object Artifacts extends TopLevel[Artifacts with Double]
+  
+  /* 1 */ @js.native
+  object DeploymentOnly extends TopLevel[DeploymentOnly with Double]
+  
 }
 

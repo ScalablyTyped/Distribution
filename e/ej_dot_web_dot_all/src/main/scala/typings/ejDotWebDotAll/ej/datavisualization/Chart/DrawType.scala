@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Area
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Column
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Line
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object DrawType extends js.Object {
   @js.native
   sealed trait Line extends DrawType
   
-  /* 1 */ val Area: typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Area with Double = js.native
-  /* 2 */ val Column: typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Column with Double = js.native
-  /* 0 */ val Line: typings.ejDotWebDotAll.ej.datavisualization.Chart.DrawType.Line with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawType with Double] = js.native
+  /* 1 */ @js.native
+  object Area extends TopLevel[Area with Double]
+  
+  /* 2 */ @js.native
+  object Column extends TopLevel[Column with Double]
+  
+  /* 0 */ @js.native
+  object Line extends TopLevel[Line with Double]
+  
 }
 

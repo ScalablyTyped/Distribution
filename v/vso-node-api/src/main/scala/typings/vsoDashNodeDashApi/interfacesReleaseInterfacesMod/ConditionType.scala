@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.EnvironmentState
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Event
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +38,22 @@ object ConditionType extends js.Object {
   @js.native
   sealed trait Undefined extends ConditionType
   
-  /* 4 */ val Artifact: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Artifact with Double = js.native
-  /* 2 */ val EnvironmentState: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.EnvironmentState with Double = js.native
-  /* 1 */ val Event: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Event with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConditionType with Double] = js.native
+  /* 4 */ @js.native
+  object Artifact
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ConditionType.Artifact with Double
+        ]
+  
+  /* 2 */ @js.native
+  object EnvironmentState extends TopLevel[EnvironmentState with Double]
+  
+  /* 1 */ @js.native
+  object Event extends TopLevel[Event with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

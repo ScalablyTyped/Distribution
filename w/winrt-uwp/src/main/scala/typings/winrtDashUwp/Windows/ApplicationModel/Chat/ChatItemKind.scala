@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatItemKind.conversation
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatItemKind.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ChatItemKind extends js.Object {
   @js.native
   sealed trait message extends ChatItemKind
   
-  /* 1 */ val conversation: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatItemKind.conversation with Double = js.native
-  /* 0 */ val message: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatItemKind.message with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatItemKind with Double] = js.native
+  /* 1 */ @js.native
+  object conversation extends TopLevel[conversation with Double]
+  
+  /* 0 */ @js.native
+  object message extends TopLevel[message with Double]
+  
 }
 

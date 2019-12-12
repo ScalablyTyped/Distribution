@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.Publishing.Navigation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.friendlyUrl
+import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.root
+import typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.simpleLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object NavigationLinkType extends js.Object {
   @js.native
   sealed trait simpleLink extends NavigationLinkType
   
-  /* 1 */ val friendlyUrl: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.friendlyUrl with Double = js.native
-  /* 0 */ val root: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.root with Double = js.native
-  /* 2 */ val simpleLink: typings.sharepoint.SP.Publishing.Navigation.NavigationLinkType.simpleLink with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NavigationLinkType with Double] = js.native
+  /* 1 */ @js.native
+  object friendlyUrl extends TopLevel[friendlyUrl with Double]
+  
+  /* 0 */ @js.native
+  object root extends TopLevel[root with Double]
+  
+  /* 2 */ @js.native
+  object simpleLink extends TopLevel[simpleLink with Double]
+  
 }
 

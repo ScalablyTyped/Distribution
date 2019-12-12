@@ -1,7 +1,11 @@
 package typings.atAngularCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.FunctionContext
 import typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage
+import typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.AMBIGUOUS
+import typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.ASYNCHRONOUS
+import typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.SYNCHRONOUS
 import typings.std.Map
 import typings.typescript.typescriptMod.Node
 import typings.typescript.typescriptMod.TypeChecker
@@ -90,11 +94,17 @@ object schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDec
     @js.native
     sealed trait SYNCHRONOUS extends ResolvedUsage
     
-    /* 2 */ val AMBIGUOUS: typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.AMBIGUOUS with Double = js.native
-    /* 1 */ val ASYNCHRONOUS: typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.ASYNCHRONOUS with Double = js.native
-    /* 0 */ val SYNCHRONOUS: typings.atAngularCore.schematicsMigrationsStaticDashQueriesStrategiesUsageUnderscoreStrategyDeclarationUnderscoreUsageUnderscoreVisitorMod.ResolvedUsage.SYNCHRONOUS with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ResolvedUsage with Double] = js.native
+    /* 2 */ @js.native
+    object AMBIGUOUS extends TopLevel[AMBIGUOUS with Double]
+    
+    /* 1 */ @js.native
+    object ASYNCHRONOUS extends TopLevel[ASYNCHRONOUS with Double]
+    
+    /* 0 */ @js.native
+    object SYNCHRONOUS extends TopLevel[SYNCHRONOUS with Double]
+    
   }
   
   type FunctionContext = Map[Node, Node]

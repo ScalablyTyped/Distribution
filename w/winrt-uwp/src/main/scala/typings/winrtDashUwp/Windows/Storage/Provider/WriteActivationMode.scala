@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.afterWrite
+import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.notNeeded
+import typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.readOnly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object WriteActivationMode extends js.Object {
   @js.native
   sealed trait readOnly extends WriteActivationMode
   
-  /* 2 */ val afterWrite: typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.afterWrite with Double = js.native
-  /* 1 */ val notNeeded: typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.notNeeded with Double = js.native
-  /* 0 */ val readOnly: typings.winrtDashUwp.Windows.Storage.Provider.WriteActivationMode.readOnly with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WriteActivationMode with Double] = js.native
+  /* 2 */ @js.native
+  object afterWrite extends TopLevel[afterWrite with Double]
+  
+  /* 1 */ @js.native
+  object notNeeded extends TopLevel[notNeeded with Double]
+  
+  /* 0 */ @js.native
+  object readOnly extends TopLevel[readOnly with Double]
+  
 }
 

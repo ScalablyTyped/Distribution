@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_youtubereporting"
-version := "1.0-dt-20191014Z-f21b82"
+version := "1.0-dt-20191014Z-cc3024"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

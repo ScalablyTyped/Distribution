@@ -11,7 +11,6 @@ package object srcTypesMod {
   import typings.react.reactMod.MouseEvent
   import typings.react.reactMod.NativeMouseEvent
   import typings.react.reactMod.Ref
-  import typings.reactDashSelect.Anon_Data
   import typings.std.HTMLElement
 
   type ClassNameList = js.Array[String]
@@ -21,7 +20,6 @@ package object srcTypesMod {
   type InnerRef = Ref[js.Any]
   type KeyboardEventHandler = js.Function1[/* event */ KeyboardEvent[HTMLElement], Unit]
   type MouseEventHandler = js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-  type OptionProps = PropsWithInnerRef with Anon_Data
   type OptionTypeBase = StringDictionary[js.Any]
   type OptionsType[OptionType /* <: OptionTypeBase */] = js.Array[OptionType]
   type ValueType[OptionType /* <: OptionTypeBase */] = js.UndefOr[OptionType | OptionsType[OptionType] | Null]

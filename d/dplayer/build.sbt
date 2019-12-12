@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dplayer"
-version := "1.25-dt-20181119Z-d93618"
+version := "1.25-dt-20181119Z-97c6f1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

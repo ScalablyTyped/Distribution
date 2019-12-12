@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.inCallBlockingList
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.privateNumber
+import typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.unknownNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PhoneCallBlockedReason extends js.Object {
   @js.native
   sealed trait unknownNumber extends PhoneCallBlockedReason
   
-  /* 0 */ val inCallBlockingList: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.inCallBlockingList with Double = js.native
-  /* 1 */ val privateNumber: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.privateNumber with Double = js.native
-  /* 2 */ val unknownNumber: typings.winrtDashUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason.unknownNumber with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PhoneCallBlockedReason with Double] = js.native
+  /* 0 */ @js.native
+  object inCallBlockingList extends TopLevel[inCallBlockingList with Double]
+  
+  /* 1 */ @js.native
+  object privateNumber extends TopLevel[privateNumber with Double]
+  
+  /* 2 */ @js.native
+  object unknownNumber extends TopLevel[unknownNumber with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Additive
+import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Multiply
+import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Normal
+import typings.pixiDashSpine.PIXI.spine.core.BlendMode.Screen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object BlendMode extends js.Object {
   @js.native
   sealed trait Screen extends BlendMode
   
-  /* 1 */ val Additive: typings.pixiDashSpine.PIXI.spine.core.BlendMode.Additive with Double = js.native
-  /* 2 */ val Multiply: typings.pixiDashSpine.PIXI.spine.core.BlendMode.Multiply with Double = js.native
-  /* 0 */ val Normal: typings.pixiDashSpine.PIXI.spine.core.BlendMode.Normal with Double = js.native
-  /* 3 */ val Screen: typings.pixiDashSpine.PIXI.spine.core.BlendMode.Screen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BlendMode with Double] = js.native
+  /* 1 */ @js.native
+  object Additive extends TopLevel[Additive with Double]
+  
+  /* 2 */ @js.native
+  object Multiply extends TopLevel[Multiply with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
+  /* 3 */ @js.native
+  object Screen extends TopLevel[Screen with Double]
+  
 }
 

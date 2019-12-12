@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.bgra8
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray16
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray8
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.nv12
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba16
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba8
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.unknown
+import typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.yuy2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object BitmapPixelFormat extends js.Object {
   @js.native
   sealed trait yuy2 extends BitmapPixelFormat
   
-  /* 5 */ val bgra8: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.bgra8 with Double = js.native
-  /* 3 */ val gray16: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray16 with Double = js.native
-  /* 4 */ val gray8: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.gray8 with Double = js.native
-  /* 6 */ val nv12: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.nv12 with Double = js.native
-  /* 1 */ val rgba16: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba16 with Double = js.native
-  /* 2 */ val rgba8: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.rgba8 with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.unknown with Double = js.native
-  /* 7 */ val yuy2: typings.winrtDashUwp.Windows.Graphics.Imaging.BitmapPixelFormat.yuy2 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BitmapPixelFormat with Double] = js.native
+  /* 5 */ @js.native
+  object bgra8 extends TopLevel[bgra8 with Double]
+  
+  /* 3 */ @js.native
+  object gray16 extends TopLevel[gray16 with Double]
+  
+  /* 4 */ @js.native
+  object gray8 extends TopLevel[gray8 with Double]
+  
+  /* 6 */ @js.native
+  object nv12 extends TopLevel[nv12 with Double]
+  
+  /* 1 */ @js.native
+  object rgba16 extends TopLevel[rgba16 with Double]
+  
+  /* 2 */ @js.native
+  object rgba8 extends TopLevel[rgba8 with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 7 */ @js.native
+  object yuy2 extends TopLevel[yuy2 with Double]
+  
 }
 

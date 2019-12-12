@@ -1,5 +1,13 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomItems
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomPercent
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomSum
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.invalid
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topItems
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topPercent
+import typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topSum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object PivotFilterTopBottomCriterion extends js.Object {
   @js.native
   sealed trait topSum extends PivotFilterTopBottomCriterion
   
-  /* "BottomItems" */ val bottomItems: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomItems with String = js.native
-  /* "BottomPercent" */ val bottomPercent: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomPercent with String = js.native
-  /* "BottomSum" */ val bottomSum: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.bottomSum with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.invalid with String = js.native
-  /* "TopItems" */ val topItems: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topItems with String = js.native
-  /* "TopPercent" */ val topPercent: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topPercent with String = js.native
-  /* "TopSum" */ val topSum: typings.officeDashJs.Excel.PivotFilterTopBottomCriterion.topSum with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PivotFilterTopBottomCriterion with String] = js.native
+  /* "BottomItems" */ @js.native
+  object bottomItems extends TopLevel[bottomItems with String]
+  
+  /* "BottomPercent" */ @js.native
+  object bottomPercent extends TopLevel[bottomPercent with String]
+  
+  /* "BottomSum" */ @js.native
+  object bottomSum extends TopLevel[bottomSum with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "TopItems" */ @js.native
+  object topItems extends TopLevel[topItems with String]
+  
+  /* "TopPercent" */ @js.native
+  object topPercent extends TopLevel[topPercent with String]
+  
+  /* "TopSum" */ @js.native
+  object topSum extends TopLevel[topSum with String]
+  
 }
 

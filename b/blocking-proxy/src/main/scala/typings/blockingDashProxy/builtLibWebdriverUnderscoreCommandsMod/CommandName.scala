@@ -1,5 +1,39 @@
 package typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.AcceptAlert
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Back
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.DeleteSession
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.DismissAlert
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementClear
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementClick
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementSendKeys
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElement
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElementFromElement
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElements
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElementsFromElement
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Forward
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetAlertText
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetCurrentURL
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementAttribute
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementCSSValue
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementProperty
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementRect
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementTagName
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementText
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetTimeouts
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetTitle
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Go
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.IsElementEnabled
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.IsElementSelected
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.NewSession
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Refresh
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.SetTimeouts
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Status
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.UNKNOWN
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireButtonDown
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireButtonUp
+import typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireMoveTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,40 +143,106 @@ object CommandName extends js.Object {
   @js.native
   sealed trait WireMoveTo extends CommandName
   
-  /* 30 */ val AcceptAlert: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.AcceptAlert with Double = js.native
-  /* 7 */ val Back: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Back with Double = js.native
-  /* 1 */ val DeleteSession: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.DeleteSession with Double = js.native
-  /* 31 */ val DismissAlert: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.DismissAlert with Double = js.native
-  /* 24 */ val ElementClear: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementClear with Double = js.native
-  /* 23 */ val ElementClick: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementClick with Double = js.native
-  /* 25 */ val ElementSendKeys: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.ElementSendKeys with Double = js.native
-  /* 11 */ val FindElement: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElement with Double = js.native
-  /* 13 */ val FindElementFromElement: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElementFromElement with Double = js.native
-  /* 12 */ val FindElements: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElements with Double = js.native
-  /* 14 */ val FindElementsFromElement: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.FindElementsFromElement with Double = js.native
-  /* 8 */ val Forward: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Forward with Double = js.native
-  /* 29 */ val GetAlertText: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetAlertText with Double = js.native
-  /* 6 */ val GetCurrentURL: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetCurrentURL with Double = js.native
-  /* 16 */ val GetElementAttribute: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementAttribute with Double = js.native
-  /* 18 */ val GetElementCSSValue: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementCSSValue with Double = js.native
-  /* 17 */ val GetElementProperty: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementProperty with Double = js.native
-  /* 21 */ val GetElementRect: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementRect with Double = js.native
-  /* 20 */ val GetElementTagName: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementTagName with Double = js.native
-  /* 19 */ val GetElementText: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetElementText with Double = js.native
-  /* 3 */ val GetTimeouts: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetTimeouts with Double = js.native
-  /* 10 */ val GetTitle: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.GetTitle with Double = js.native
-  /* 5 */ val Go: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Go with Double = js.native
-  /* 22 */ val IsElementEnabled: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.IsElementEnabled with Double = js.native
-  /* 15 */ val IsElementSelected: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.IsElementSelected with Double = js.native
-  /* 0 */ val NewSession: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.NewSession with Double = js.native
-  /* 9 */ val Refresh: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Refresh with Double = js.native
-  /* 4 */ val SetTimeouts: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.SetTimeouts with Double = js.native
-  /* 2 */ val Status: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.Status with Double = js.native
-  /* 32 */ val UNKNOWN: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.UNKNOWN with Double = js.native
-  /* 27 */ val WireButtonDown: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireButtonDown with Double = js.native
-  /* 28 */ val WireButtonUp: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireButtonUp with Double = js.native
-  /* 26 */ val WireMoveTo: typings.blockingDashProxy.builtLibWebdriverUnderscoreCommandsMod.CommandName.WireMoveTo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CommandName with Double] = js.native
+  /* 30 */ @js.native
+  object AcceptAlert extends TopLevel[AcceptAlert with Double]
+  
+  /* 7 */ @js.native
+  object Back extends TopLevel[Back with Double]
+  
+  /* 1 */ @js.native
+  object DeleteSession extends TopLevel[DeleteSession with Double]
+  
+  /* 31 */ @js.native
+  object DismissAlert extends TopLevel[DismissAlert with Double]
+  
+  /* 24 */ @js.native
+  object ElementClear extends TopLevel[ElementClear with Double]
+  
+  /* 23 */ @js.native
+  object ElementClick extends TopLevel[ElementClick with Double]
+  
+  /* 25 */ @js.native
+  object ElementSendKeys extends TopLevel[ElementSendKeys with Double]
+  
+  /* 11 */ @js.native
+  object FindElement extends TopLevel[FindElement with Double]
+  
+  /* 13 */ @js.native
+  object FindElementFromElement extends TopLevel[FindElementFromElement with Double]
+  
+  /* 12 */ @js.native
+  object FindElements extends TopLevel[FindElements with Double]
+  
+  /* 14 */ @js.native
+  object FindElementsFromElement extends TopLevel[FindElementsFromElement with Double]
+  
+  /* 8 */ @js.native
+  object Forward extends TopLevel[Forward with Double]
+  
+  /* 29 */ @js.native
+  object GetAlertText extends TopLevel[GetAlertText with Double]
+  
+  /* 6 */ @js.native
+  object GetCurrentURL extends TopLevel[GetCurrentURL with Double]
+  
+  /* 16 */ @js.native
+  object GetElementAttribute extends TopLevel[GetElementAttribute with Double]
+  
+  /* 18 */ @js.native
+  object GetElementCSSValue extends TopLevel[GetElementCSSValue with Double]
+  
+  /* 17 */ @js.native
+  object GetElementProperty extends TopLevel[GetElementProperty with Double]
+  
+  /* 21 */ @js.native
+  object GetElementRect extends TopLevel[GetElementRect with Double]
+  
+  /* 20 */ @js.native
+  object GetElementTagName extends TopLevel[GetElementTagName with Double]
+  
+  /* 19 */ @js.native
+  object GetElementText extends TopLevel[GetElementText with Double]
+  
+  /* 3 */ @js.native
+  object GetTimeouts extends TopLevel[GetTimeouts with Double]
+  
+  /* 10 */ @js.native
+  object GetTitle extends TopLevel[GetTitle with Double]
+  
+  /* 5 */ @js.native
+  object Go extends TopLevel[Go with Double]
+  
+  /* 22 */ @js.native
+  object IsElementEnabled extends TopLevel[IsElementEnabled with Double]
+  
+  /* 15 */ @js.native
+  object IsElementSelected extends TopLevel[IsElementSelected with Double]
+  
+  /* 0 */ @js.native
+  object NewSession extends TopLevel[NewSession with Double]
+  
+  /* 9 */ @js.native
+  object Refresh extends TopLevel[Refresh with Double]
+  
+  /* 4 */ @js.native
+  object SetTimeouts extends TopLevel[SetTimeouts with Double]
+  
+  /* 2 */ @js.native
+  object Status extends TopLevel[Status with Double]
+  
+  /* 32 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
+  /* 27 */ @js.native
+  object WireButtonDown extends TopLevel[WireButtonDown with Double]
+  
+  /* 28 */ @js.native
+  object WireButtonUp extends TopLevel[WireButtonUp with Double]
+  
+  /* 26 */ @js.native
+  object WireMoveTo extends TopLevel[WireMoveTo with Double]
+  
 }
 

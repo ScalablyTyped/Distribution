@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.slideSlideMod.SlideProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object slideMod extends js.Object {
     def this(props: SlideProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[SlideProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[SlideProps]]
+  
 }
 

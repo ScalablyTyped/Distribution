@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.PublisherCreated
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.UserEditable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object QnAItemStatus extends js.Object {
   @js.native
   sealed trait UserEditable extends QnAItemStatus
   
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.None with Double = js.native
-  /* 2 */ val PublisherCreated: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.PublisherCreated with Double = js.native
-  /* 1 */ val UserEditable: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.QnAItemStatus.UserEditable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QnAItemStatus with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object PublisherCreated extends TopLevel[PublisherCreated with Double]
+  
+  /* 1 */ @js.native
+  object UserEditable extends TopLevel[UserEditable with Double]
+  
 }
 

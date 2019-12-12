@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.OneNote.ListType.bullet
+import typings.officeDashJsDashPreview.OneNote.ListType.none
+import typings.officeDashJsDashPreview.OneNote.ListType.number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ListType extends js.Object {
   @js.native
   sealed trait number extends ListType
   
-  /* "Bullet" */ val bullet: typings.officeDashJsDashPreview.OneNote.ListType.bullet with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.OneNote.ListType.none with String = js.native
-  /* "Number" */ val number: typings.officeDashJsDashPreview.OneNote.ListType.number with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ListType with String] = js.native
+  /* "Bullet" */ @js.native
+  object bullet extends TopLevel[bullet with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Number" */ @js.native
+  object number extends TopLevel[number with String]
+  
 }
 

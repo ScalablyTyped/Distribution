@@ -1,5 +1,23 @@
 package typings.grpc.grpcMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.grpc.grpcMod.status.ABORTED
+import typings.grpc.grpcMod.status.ALREADY_EXISTS
+import typings.grpc.grpcMod.status.CANCELLED
+import typings.grpc.grpcMod.status.DATA_LOSS
+import typings.grpc.grpcMod.status.DEADLINE_EXCEEDED
+import typings.grpc.grpcMod.status.FAILED_PRECONDITION
+import typings.grpc.grpcMod.status.INTERNAL
+import typings.grpc.grpcMod.status.INVALID_ARGUMENT
+import typings.grpc.grpcMod.status.NOT_FOUND
+import typings.grpc.grpcMod.status.OK
+import typings.grpc.grpcMod.status.OUT_OF_RANGE
+import typings.grpc.grpcMod.status.PERMISSION_DENIED
+import typings.grpc.grpcMod.status.RESOURCE_EXHAUSTED
+import typings.grpc.grpcMod.status.UNAUTHENTICATED
+import typings.grpc.grpcMod.status.UNAVAILABLE
+import typings.grpc.grpcMod.status.UNIMPLEMENTED
+import typings.grpc.grpcMod.status.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -175,24 +193,58 @@ object status extends js.Object {
   @js.native
   sealed trait UNKNOWN extends status
   
-  /* 10 */ val ABORTED: typings.grpc.grpcMod.status.ABORTED with Double = js.native
-  /* 6 */ val ALREADY_EXISTS: typings.grpc.grpcMod.status.ALREADY_EXISTS with Double = js.native
-  /* 1 */ val CANCELLED: typings.grpc.grpcMod.status.CANCELLED with Double = js.native
-  /* 15 */ val DATA_LOSS: typings.grpc.grpcMod.status.DATA_LOSS with Double = js.native
-  /* 4 */ val DEADLINE_EXCEEDED: typings.grpc.grpcMod.status.DEADLINE_EXCEEDED with Double = js.native
-  /* 9 */ val FAILED_PRECONDITION: typings.grpc.grpcMod.status.FAILED_PRECONDITION with Double = js.native
-  /* 13 */ val INTERNAL: typings.grpc.grpcMod.status.INTERNAL with Double = js.native
-  /* 3 */ val INVALID_ARGUMENT: typings.grpc.grpcMod.status.INVALID_ARGUMENT with Double = js.native
-  /* 5 */ val NOT_FOUND: typings.grpc.grpcMod.status.NOT_FOUND with Double = js.native
-  /* 0 */ val OK: typings.grpc.grpcMod.status.OK with Double = js.native
-  /* 11 */ val OUT_OF_RANGE: typings.grpc.grpcMod.status.OUT_OF_RANGE with Double = js.native
-  /* 7 */ val PERMISSION_DENIED: typings.grpc.grpcMod.status.PERMISSION_DENIED with Double = js.native
-  /* 8 */ val RESOURCE_EXHAUSTED: typings.grpc.grpcMod.status.RESOURCE_EXHAUSTED with Double = js.native
-  /* 16 */ val UNAUTHENTICATED: typings.grpc.grpcMod.status.UNAUTHENTICATED with Double = js.native
-  /* 14 */ val UNAVAILABLE: typings.grpc.grpcMod.status.UNAVAILABLE with Double = js.native
-  /* 12 */ val UNIMPLEMENTED: typings.grpc.grpcMod.status.UNIMPLEMENTED with Double = js.native
-  /* 2 */ val UNKNOWN: typings.grpc.grpcMod.status.UNKNOWN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[status with Double] = js.native
+  /* 10 */ @js.native
+  object ABORTED extends TopLevel[ABORTED with Double]
+  
+  /* 6 */ @js.native
+  object ALREADY_EXISTS extends TopLevel[ALREADY_EXISTS with Double]
+  
+  /* 1 */ @js.native
+  object CANCELLED extends TopLevel[CANCELLED with Double]
+  
+  /* 15 */ @js.native
+  object DATA_LOSS extends TopLevel[DATA_LOSS with Double]
+  
+  /* 4 */ @js.native
+  object DEADLINE_EXCEEDED extends TopLevel[DEADLINE_EXCEEDED with Double]
+  
+  /* 9 */ @js.native
+  object FAILED_PRECONDITION extends TopLevel[FAILED_PRECONDITION with Double]
+  
+  /* 13 */ @js.native
+  object INTERNAL extends TopLevel[INTERNAL with Double]
+  
+  /* 3 */ @js.native
+  object INVALID_ARGUMENT extends TopLevel[INVALID_ARGUMENT with Double]
+  
+  /* 5 */ @js.native
+  object NOT_FOUND extends TopLevel[NOT_FOUND with Double]
+  
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 11 */ @js.native
+  object OUT_OF_RANGE extends TopLevel[OUT_OF_RANGE with Double]
+  
+  /* 7 */ @js.native
+  object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+  
+  /* 8 */ @js.native
+  object RESOURCE_EXHAUSTED extends TopLevel[RESOURCE_EXHAUSTED with Double]
+  
+  /* 16 */ @js.native
+  object UNAUTHENTICATED extends TopLevel[UNAUTHENTICATED with Double]
+  
+  /* 14 */ @js.native
+  object UNAVAILABLE extends TopLevel[UNAVAILABLE with Double]
+  
+  /* 12 */ @js.native
+  object UNIMPLEMENTED extends TopLevel[UNIMPLEMENTED with Double]
+  
+  /* 2 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
 }
 

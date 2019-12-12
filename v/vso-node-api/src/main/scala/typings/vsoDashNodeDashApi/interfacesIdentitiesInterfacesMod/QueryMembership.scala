@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Direct
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Expanded
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedDown
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedUp
+import typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object QueryMembership extends js.Object {
   @js.native
   sealed trait None extends QueryMembership
   
-  /* 1 */ val Direct: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Direct with Double = js.native
-  /* 2 */ val Expanded: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.Expanded with Double = js.native
-  /* 4 */ val ExpandedDown: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedDown with Double = js.native
-  /* 3 */ val ExpandedUp: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.ExpandedUp with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesIdentitiesInterfacesMod.QueryMembership.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QueryMembership with Double] = js.native
+  /* 1 */ @js.native
+  object Direct extends TopLevel[Direct with Double]
+  
+  /* 2 */ @js.native
+  object Expanded extends TopLevel[Expanded with Double]
+  
+  /* 4 */ @js.native
+  object ExpandedDown extends TopLevel[ExpandedDown with Double]
+  
+  /* 3 */ @js.native
+  object ExpandedUp extends TopLevel[ExpandedUp with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

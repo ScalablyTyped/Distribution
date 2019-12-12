@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.WiFi
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.automatic
+import typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object WiFiReconnectionKind extends js.Object {
   @js.native
   sealed trait manual extends WiFiReconnectionKind
   
-  /* 0 */ val automatic: typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.automatic with Double = js.native
-  /* 1 */ val manual: typings.winrtDashUwp.Windows.Devices.WiFi.WiFiReconnectionKind.manual with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WiFiReconnectionKind with Double] = js.native
+  /* 0 */ @js.native
+  object automatic extends TopLevel[automatic with Double]
+  
+  /* 1 */ @js.native
+  object manual extends TopLevel[manual with Double]
+  
 }
 

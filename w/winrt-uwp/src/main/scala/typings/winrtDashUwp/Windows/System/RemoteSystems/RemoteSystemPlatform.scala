@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.android
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.ios
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.linux
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.unknown
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.windows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object RemoteSystemPlatform extends js.Object {
   @js.native
   sealed trait windows extends RemoteSystemPlatform
   
-  /* 2 */ val android: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.android with Double = js.native
-  /* 3 */ val ios: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.ios with Double = js.native
-  /* 4 */ val linux: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.linux with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.unknown with Double = js.native
-  /* 1 */ val windows: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemPlatform.windows with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RemoteSystemPlatform with Double] = js.native
+  /* 2 */ @js.native
+  object android extends TopLevel[android with Double]
+  
+  /* 3 */ @js.native
+  object ios extends TopLevel[ios with Double]
+  
+  /* 4 */ @js.native
+  object linux extends TopLevel[linux with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 1 */ @js.native
+  object windows extends TopLevel[windows with Double]
+  
 }
 

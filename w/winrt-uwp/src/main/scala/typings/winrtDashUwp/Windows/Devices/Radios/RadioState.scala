@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.disabled
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.off
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.on
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioState.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object RadioState extends js.Object {
   @js.native
   sealed trait unknown extends RadioState
   
-  /* 3 */ val disabled: typings.winrtDashUwp.Windows.Devices.Radios.RadioState.disabled with Double = js.native
-  /* 2 */ val off: typings.winrtDashUwp.Windows.Devices.Radios.RadioState.off with Double = js.native
-  /* 1 */ val on: typings.winrtDashUwp.Windows.Devices.Radios.RadioState.on with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Radios.RadioState.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RadioState with Double] = js.native
+  /* 3 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 2 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelComponent
@@ -18,6 +19,8 @@ object distCommonjsElementsLabelMod extends js.Object {
     def this(props: LabelProps, context: js.Any) = this()
   }
   
-  val default: LabelComponent = js.native
+  @js.native
+  object default extends TopLevel[LabelComponent]
+  
 }
 

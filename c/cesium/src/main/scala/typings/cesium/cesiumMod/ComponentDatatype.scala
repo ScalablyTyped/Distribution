@@ -1,5 +1,12 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.ComponentDatatype.BYTE
+import typings.cesium.cesiumMod.ComponentDatatype.DOUBLE
+import typings.cesium.cesiumMod.ComponentDatatype.FLOAT
+import typings.cesium.cesiumMod.ComponentDatatype.SHORT
+import typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_BYTE
+import typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_SHORT
 import typings.std.ArrayBuffer
 import typings.std.Float32Array
 import typings.std.Float64Array
@@ -35,12 +42,6 @@ object ComponentDatatype extends js.Object {
   @js.native
   sealed trait UNSIGNED_SHORT extends ComponentDatatype
   
-  /* 0 */ val BYTE: typings.cesium.cesiumMod.ComponentDatatype.BYTE with Double = js.native
-  /* 5 */ val DOUBLE: typings.cesium.cesiumMod.ComponentDatatype.DOUBLE with Double = js.native
-  /* 4 */ val FLOAT: typings.cesium.cesiumMod.ComponentDatatype.FLOAT with Double = js.native
-  /* 2 */ val SHORT: typings.cesium.cesiumMod.ComponentDatatype.SHORT with Double = js.native
-  /* 1 */ val UNSIGNED_BYTE: typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_BYTE with Double = js.native
-  /* 3 */ val UNSIGNED_SHORT: typings.cesium.cesiumMod.ComponentDatatype.UNSIGNED_SHORT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ComponentDatatype with Double] = js.native
   def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
@@ -56,5 +57,23 @@ object ComponentDatatype extends js.Object {
   def fromTypedArray(array: Uint8Array): ComponentDatatype = js.native
   def getSizeInBytes(componentDatatype: ComponentDatatype): Double = js.native
   def validate(componentDatatype: ComponentDatatype): Boolean = js.native
+  /* 0 */ @js.native
+  object BYTE extends TopLevel[BYTE with Double]
+  
+  /* 5 */ @js.native
+  object DOUBLE extends TopLevel[DOUBLE with Double]
+  
+  /* 4 */ @js.native
+  object FLOAT extends TopLevel[FLOAT with Double]
+  
+  /* 2 */ @js.native
+  object SHORT extends TopLevel[SHORT with Double]
+  
+  /* 1 */ @js.native
+  object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
+  
+  /* 3 */ @js.native
+  object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
+  
 }
 

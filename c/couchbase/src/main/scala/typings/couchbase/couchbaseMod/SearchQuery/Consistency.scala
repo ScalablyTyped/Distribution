@@ -1,5 +1,7 @@
 package typings.couchbase.couchbaseMod.SearchQuery
 
+import org.scalablytyped.runtime.TopLevel
+import typings.couchbase.couchbaseMod.SearchQuery.Consistency.NOT_BOUNDED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +21,10 @@ object Consistency extends js.Object {
   @js.native
   sealed trait NOT_BOUNDED extends Consistency
   
-  /* 0 */ val NOT_BOUNDED: typings.couchbase.couchbaseMod.SearchQuery.Consistency.NOT_BOUNDED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Consistency with Double] = js.native
+  /* 0 */ @js.native
+  object NOT_BOUNDED extends TopLevel[NOT_BOUNDED with Double]
+  
 }
 

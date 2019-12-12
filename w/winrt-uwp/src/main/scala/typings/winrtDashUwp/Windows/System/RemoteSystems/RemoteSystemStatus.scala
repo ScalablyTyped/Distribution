@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.System.RemoteSystems
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.available
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.discoveringAvailability
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unavailable
+import typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object RemoteSystemStatus extends js.Object {
   @js.native
   sealed trait unknown extends RemoteSystemStatus
   
-  /* 2 */ val available: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.available with Double = js.native
-  /* 1 */ val discoveringAvailability: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.discoveringAvailability with Double = js.native
-  /* 0 */ val unavailable: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unavailable with Double = js.native
-  /* 3 */ val unknown: typings.winrtDashUwp.Windows.System.RemoteSystems.RemoteSystemStatus.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RemoteSystemStatus with Double] = js.native
+  /* 2 */ @js.native
+  object available extends TopLevel[available with Double]
+  
+  /* 1 */ @js.native
+  object discoveringAvailability extends TopLevel[discoveringAvailability with Double]
+  
+  /* 0 */ @js.native
+  object unavailable extends TopLevel[unavailable with Double]
+  
+  /* 3 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

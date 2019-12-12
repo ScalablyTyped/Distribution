@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.All
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowLines
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToLines
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToVerticalLines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object SnapConstraints extends js.Object {
   @js.native
   sealed trait SnapToVerticalLines extends SnapConstraints
   
-  /* 7 */ val All: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.All with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.None with Double = js.native
-  /* 4 */ val ShowHorizontalLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines with Double = js.native
-  /* 6 */ val ShowLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowLines with Double = js.native
-  /* 5 */ val ShowVerticalLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.ShowVerticalLines with Double = js.native
-  /* 1 */ val SnapToHorizontalLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToHorizontalLines with Double = js.native
-  /* 3 */ val SnapToLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToLines with Double = js.native
-  /* 2 */ val SnapToVerticalLines: typings.ejDotWebDotAll.ej.datavisualization.Diagram.SnapConstraints.SnapToVerticalLines with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SnapConstraints with Double] = js.native
+  /* 7 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 4 */ @js.native
+  object ShowHorizontalLines extends TopLevel[ShowHorizontalLines with Double]
+  
+  /* 6 */ @js.native
+  object ShowLines extends TopLevel[ShowLines with Double]
+  
+  /* 5 */ @js.native
+  object ShowVerticalLines extends TopLevel[ShowVerticalLines with Double]
+  
+  /* 1 */ @js.native
+  object SnapToHorizontalLines extends TopLevel[SnapToHorizontalLines with Double]
+  
+  /* 3 */ @js.native
+  object SnapToLines extends TopLevel[SnapToLines with Double]
+  
+  /* 2 */ @js.native
+  object SnapToVerticalLines extends TopLevel[SnapToVerticalLines with Double]
+  
 }
 

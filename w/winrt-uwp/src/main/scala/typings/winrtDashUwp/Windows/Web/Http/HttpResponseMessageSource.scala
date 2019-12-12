@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.cache
+import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.network
+import typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object HttpResponseMessageSource extends js.Object {
   @js.native
   sealed trait none extends HttpResponseMessageSource
   
-  /* 1 */ val cache: typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.cache with Double = js.native
-  /* 2 */ val network: typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.network with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Web.Http.HttpResponseMessageSource.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpResponseMessageSource with Double] = js.native
+  /* 1 */ @js.native
+  object cache extends TopLevel[cache with Double]
+  
+  /* 2 */ @js.native
+  object network extends TopLevel[network with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

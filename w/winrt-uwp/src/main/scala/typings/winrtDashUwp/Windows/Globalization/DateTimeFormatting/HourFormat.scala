@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.HourFormat.default
+import typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.HourFormat.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object HourFormat extends js.Object {
   @js.native
   sealed trait none extends HourFormat
   
-  /* 1 */ val default: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.HourFormat.default with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Globalization.DateTimeFormatting.HourFormat.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HourFormat with Double] = js.native
+  /* 1 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

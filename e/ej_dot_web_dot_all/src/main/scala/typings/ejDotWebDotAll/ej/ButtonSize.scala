@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ButtonSize.Large
+import typings.ejDotWebDotAll.ej.ButtonSize.Medium
+import typings.ejDotWebDotAll.ej.ButtonSize.Mini
+import typings.ejDotWebDotAll.ej.ButtonSize.Normal
+import typings.ejDotWebDotAll.ej.ButtonSize.Small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object ButtonSize extends js.Object {
   @js.native
   sealed trait Small extends ButtonSize
   
-  /* 4 */ val Large: typings.ejDotWebDotAll.ej.ButtonSize.Large with Double = js.native
-  /* 3 */ val Medium: typings.ejDotWebDotAll.ej.ButtonSize.Medium with Double = js.native
-  /* 1 */ val Mini: typings.ejDotWebDotAll.ej.ButtonSize.Mini with Double = js.native
-  /* 0 */ val Normal: typings.ejDotWebDotAll.ej.ButtonSize.Normal with Double = js.native
-  /* 2 */ val Small: typings.ejDotWebDotAll.ej.ButtonSize.Small with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ButtonSize with Double] = js.native
+  /* 4 */ @js.native
+  object Large extends TopLevel[Large with Double]
+  
+  /* 3 */ @js.native
+  object Medium extends TopLevel[Medium with Double]
+  
+  /* 1 */ @js.native
+  object Mini extends TopLevel[Mini with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
+  /* 2 */ @js.native
+  object Small extends TopLevel[Small with Double]
+  
 }
 

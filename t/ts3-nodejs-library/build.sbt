@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts3-nodejs-library"
-version := "2.3.0-c358d7"
+version := "2.3.0-a6201d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

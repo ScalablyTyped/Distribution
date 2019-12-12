@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-resolver"
-version := "3.1-dt-20180806Z-23d9e0"
+version := "3.1-dt-20180806Z-672dd7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

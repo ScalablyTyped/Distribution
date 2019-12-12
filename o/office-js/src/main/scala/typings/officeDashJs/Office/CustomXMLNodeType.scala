@@ -1,5 +1,13 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.CustomXMLNodeType.Attribute
+import typings.officeDashJs.Office.CustomXMLNodeType.CData
+import typings.officeDashJs.Office.CustomXMLNodeType.Element
+import typings.officeDashJs.Office.CustomXMLNodeType.NodeComment
+import typings.officeDashJs.Office.CustomXMLNodeType.NodeDocument
+import typings.officeDashJs.Office.CustomXMLNodeType.ProcessingInstruction
+import typings.officeDashJs.Office.CustomXMLNodeType.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,14 +63,28 @@ object CustomXMLNodeType extends js.Object {
   @js.native
   sealed trait Text extends CustomXMLNodeType
   
-  /* 0 */ val Attribute: typings.officeDashJs.Office.CustomXMLNodeType.Attribute with Double = js.native
-  /* 1 */ val CData: typings.officeDashJs.Office.CustomXMLNodeType.CData with Double = js.native
-  /* 3 */ val Element: typings.officeDashJs.Office.CustomXMLNodeType.Element with Double = js.native
-  /* 2 */ val NodeComment: typings.officeDashJs.Office.CustomXMLNodeType.NodeComment with Double = js.native
-  /* 4 */ val NodeDocument: typings.officeDashJs.Office.CustomXMLNodeType.NodeDocument with Double = js.native
-  /* 5 */ val ProcessingInstruction: typings.officeDashJs.Office.CustomXMLNodeType.ProcessingInstruction with Double = js.native
-  /* 6 */ val Text: typings.officeDashJs.Office.CustomXMLNodeType.Text with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CustomXMLNodeType with Double] = js.native
+  /* 0 */ @js.native
+  object Attribute extends TopLevel[Attribute with Double]
+  
+  /* 1 */ @js.native
+  object CData extends TopLevel[CData with Double]
+  
+  /* 3 */ @js.native
+  object Element extends TopLevel[Element with Double]
+  
+  /* 2 */ @js.native
+  object NodeComment extends TopLevel[NodeComment with Double]
+  
+  /* 4 */ @js.native
+  object NodeDocument extends TopLevel[NodeDocument with Double]
+  
+  /* 5 */ @js.native
+  object ProcessingInstruction extends TopLevel[ProcessingInstruction with Double]
+  
+  /* 6 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
 }
 

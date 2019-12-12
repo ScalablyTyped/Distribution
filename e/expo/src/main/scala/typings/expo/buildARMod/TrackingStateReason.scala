@@ -1,5 +1,11 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.TrackingStateReason.ExcessiveMotion
+import typings.expo.buildARMod.TrackingStateReason.Initializing
+import typings.expo.buildARMod.TrackingStateReason.InsufficientFeatures
+import typings.expo.buildARMod.TrackingStateReason.None
+import typings.expo.buildARMod.TrackingStateReason.Relocalizing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object TrackingStateReason extends js.Object {
   @js.native
   sealed trait Relocalizing extends TrackingStateReason
   
-  /* "ARTrackingStateReasonExcessiveMotion" */ val ExcessiveMotion: typings.expo.buildARMod.TrackingStateReason.ExcessiveMotion with String = js.native
-  /* "ARTrackingStateReasonInitializing" */ val Initializing: typings.expo.buildARMod.TrackingStateReason.Initializing with String = js.native
-  /* "ARTrackingStateReasonInsufficientFeatures" */ val InsufficientFeatures: typings.expo.buildARMod.TrackingStateReason.InsufficientFeatures with String = js.native
-  /* "ARTrackingStateReasonNone" */ val None: typings.expo.buildARMod.TrackingStateReason.None with String = js.native
-  /* "ARTrackingStateReasonRelocalizing" */ val Relocalizing: typings.expo.buildARMod.TrackingStateReason.Relocalizing with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TrackingStateReason with String] = js.native
+  /* "ARTrackingStateReasonExcessiveMotion" */ @js.native
+  object ExcessiveMotion extends TopLevel[ExcessiveMotion with String]
+  
+  /* "ARTrackingStateReasonInitializing" */ @js.native
+  object Initializing extends TopLevel[Initializing with String]
+  
+  /* "ARTrackingStateReasonInsufficientFeatures" */ @js.native
+  object InsufficientFeatures extends TopLevel[InsufficientFeatures with String]
+  
+  /* "ARTrackingStateReasonNone" */ @js.native
+  object None extends TopLevel[None with String]
+  
+  /* "ARTrackingStateReasonRelocalizing" */ @js.native
+  object Relocalizing extends TopLevel[Relocalizing with String]
+  
 }
 

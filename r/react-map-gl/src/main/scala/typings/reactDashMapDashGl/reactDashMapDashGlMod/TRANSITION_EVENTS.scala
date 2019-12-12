@@ -1,5 +1,10 @@
 package typings.reactDashMapDashGl.reactDashMapDashGlMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.BREAK
+import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.IGNORE
+import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.SNAP_TO_END
+import typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.UPDATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object TRANSITION_EVENTS extends js.Object {
   @js.native
   sealed trait UPDATE extends TRANSITION_EVENTS
   
-  /* 1 */ val BREAK: typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.BREAK with Double = js.native
-  /* 3 */ val IGNORE: typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.IGNORE with Double = js.native
-  /* 2 */ val SNAP_TO_END: typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.SNAP_TO_END with Double = js.native
-  /* 4 */ val UPDATE: typings.reactDashMapDashGl.reactDashMapDashGlMod.TRANSITION_EVENTS.UPDATE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TRANSITION_EVENTS with Double] = js.native
+  /* 1 */ @js.native
+  object BREAK extends TopLevel[BREAK with Double]
+  
+  /* 3 */ @js.native
+  object IGNORE extends TopLevel[IGNORE with Double]
+  
+  /* 2 */ @js.native
+  object SNAP_TO_END extends TopLevel[SNAP_TO_END with Double]
+  
+  /* 4 */ @js.native
+  object UPDATE extends TopLevel[UPDATE with Double]
+  
 }
 

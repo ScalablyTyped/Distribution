@@ -1,5 +1,28 @@
 package typings.sharepoint.SPAnimation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPAnimation.ID.Basic_Fade
+import typings.sharepoint.SPAnimation.ID.Basic_Move
+import typings.sharepoint.SPAnimation.ID.Basic_Opacity
+import typings.sharepoint.SPAnimation.ID.Basic_QuickFade
+import typings.sharepoint.SPAnimation.ID.Basic_QuickShow
+import typings.sharepoint.SPAnimation.ID.Basic_QuickSize
+import typings.sharepoint.SPAnimation.ID.Basic_Show
+import typings.sharepoint.SPAnimation.ID.Basic_Size
+import typings.sharepoint.SPAnimation.ID.Basic_SlowShow
+import typings.sharepoint.SPAnimation.ID.Basic_StrikeThrough
+import typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInGeneric
+import typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInLeft
+import typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInLeftInc
+import typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInRight
+import typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInRightInc
+import typings.sharepoint.SPAnimation.ID.Content_SlideOutFadeOutRight
+import typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInBottom
+import typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInLeft
+import typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInTop
+import typings.sharepoint.SPAnimation.ID.SmallObject_SlideOutFadeOutBottom
+import typings.sharepoint.SPAnimation.ID.Test_Hold
+import typings.sharepoint.SPAnimation.ID.Test_Instant
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -76,29 +99,73 @@ object ID extends js.Object {
   @js.native
   sealed trait Test_Instant extends ID
   
-  /* 2 */ val Basic_Fade: typings.sharepoint.SPAnimation.ID.Basic_Fade with Double = js.native
-  /* 3 */ val Basic_Move: typings.sharepoint.SPAnimation.ID.Basic_Move with Double = js.native
-  /* 14 */ val Basic_Opacity: typings.sharepoint.SPAnimation.ID.Basic_Opacity with Double = js.native
-  /* 16 */ val Basic_QuickFade: typings.sharepoint.SPAnimation.ID.Basic_QuickFade with Double = js.native
-  /* 15 */ val Basic_QuickShow: typings.sharepoint.SPAnimation.ID.Basic_QuickShow with Double = js.native
-  /* 21 */ val Basic_QuickSize: typings.sharepoint.SPAnimation.ID.Basic_QuickSize with Double = js.native
-  /* 0 */ val Basic_Show: typings.sharepoint.SPAnimation.ID.Basic_Show with Double = js.native
-  /* 4 */ val Basic_Size: typings.sharepoint.SPAnimation.ID.Basic_Size with Double = js.native
-  /* 1 */ val Basic_SlowShow: typings.sharepoint.SPAnimation.ID.Basic_SlowShow with Double = js.native
-  /* 18 */ val Basic_StrikeThrough: typings.sharepoint.SPAnimation.ID.Basic_StrikeThrough with Double = js.native
-  /* 17 */ val Content_SlideInFadeInGeneric: typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInGeneric with Double = js.native
-  /* 8 */ val Content_SlideInFadeInLeft: typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInLeft with Double = js.native
-  /* 9 */ val Content_SlideInFadeInLeftInc: typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInLeftInc with Double = js.native
-  /* 5 */ val Content_SlideInFadeInRight: typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInRight with Double = js.native
-  /* 6 */ val Content_SlideInFadeInRightInc: typings.sharepoint.SPAnimation.ID.Content_SlideInFadeInRightInc with Double = js.native
-  /* 7 */ val Content_SlideOutFadeOutRight: typings.sharepoint.SPAnimation.ID.Content_SlideOutFadeOutRight with Double = js.native
-  /* 19 */ val SmallObject_SlideInFadeInBottom: typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInBottom with Double = js.native
-  /* 11 */ val SmallObject_SlideInFadeInLeft: typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInLeft with Double = js.native
-  /* 10 */ val SmallObject_SlideInFadeInTop: typings.sharepoint.SPAnimation.ID.SmallObject_SlideInFadeInTop with Double = js.native
-  /* 20 */ val SmallObject_SlideOutFadeOutBottom: typings.sharepoint.SPAnimation.ID.SmallObject_SlideOutFadeOutBottom with Double = js.native
-  /* 13 */ val Test_Hold: typings.sharepoint.SPAnimation.ID.Test_Hold with Double = js.native
-  /* 12 */ val Test_Instant: typings.sharepoint.SPAnimation.ID.Test_Instant with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ID with Double] = js.native
+  /* 2 */ @js.native
+  object Basic_Fade extends TopLevel[Basic_Fade with Double]
+  
+  /* 3 */ @js.native
+  object Basic_Move extends TopLevel[Basic_Move with Double]
+  
+  /* 14 */ @js.native
+  object Basic_Opacity extends TopLevel[Basic_Opacity with Double]
+  
+  /* 16 */ @js.native
+  object Basic_QuickFade extends TopLevel[Basic_QuickFade with Double]
+  
+  /* 15 */ @js.native
+  object Basic_QuickShow extends TopLevel[Basic_QuickShow with Double]
+  
+  /* 21 */ @js.native
+  object Basic_QuickSize extends TopLevel[Basic_QuickSize with Double]
+  
+  /* 0 */ @js.native
+  object Basic_Show extends TopLevel[Basic_Show with Double]
+  
+  /* 4 */ @js.native
+  object Basic_Size extends TopLevel[Basic_Size with Double]
+  
+  /* 1 */ @js.native
+  object Basic_SlowShow extends TopLevel[Basic_SlowShow with Double]
+  
+  /* 18 */ @js.native
+  object Basic_StrikeThrough extends TopLevel[Basic_StrikeThrough with Double]
+  
+  /* 17 */ @js.native
+  object Content_SlideInFadeInGeneric extends TopLevel[Content_SlideInFadeInGeneric with Double]
+  
+  /* 8 */ @js.native
+  object Content_SlideInFadeInLeft extends TopLevel[Content_SlideInFadeInLeft with Double]
+  
+  /* 9 */ @js.native
+  object Content_SlideInFadeInLeftInc extends TopLevel[Content_SlideInFadeInLeftInc with Double]
+  
+  /* 5 */ @js.native
+  object Content_SlideInFadeInRight extends TopLevel[Content_SlideInFadeInRight with Double]
+  
+  /* 6 */ @js.native
+  object Content_SlideInFadeInRightInc extends TopLevel[Content_SlideInFadeInRightInc with Double]
+  
+  /* 7 */ @js.native
+  object Content_SlideOutFadeOutRight extends TopLevel[Content_SlideOutFadeOutRight with Double]
+  
+  /* 19 */ @js.native
+  object SmallObject_SlideInFadeInBottom extends TopLevel[SmallObject_SlideInFadeInBottom with Double]
+  
+  /* 11 */ @js.native
+  object SmallObject_SlideInFadeInLeft extends TopLevel[SmallObject_SlideInFadeInLeft with Double]
+  
+  /* 10 */ @js.native
+  object SmallObject_SlideInFadeInTop extends TopLevel[SmallObject_SlideInFadeInTop with Double]
+  
+  /* 20 */ @js.native
+  object SmallObject_SlideOutFadeOutBottom extends TopLevel[SmallObject_SlideOutFadeOutBottom with Double]
+  
+  /* 13 */ @js.native
+  object Test_Hold extends TopLevel[Test_Hold with Double]
+  
+  /* 12 */ @js.native
+  object Test_Instant extends TopLevel[Test_Instant with Double]
+  
 }
 

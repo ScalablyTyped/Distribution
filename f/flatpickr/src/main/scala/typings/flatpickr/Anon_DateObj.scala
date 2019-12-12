@@ -5,18 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_DateObj extends js.Object {
   @JSName("$i")
-  var $i: Double
-  var dateObj: Date
-}
-
-object Anon_DateObj {
-  @scala.inline
-  def apply($i: Double, dateObj: Date): Anon_DateObj = {
-    val __obj = js.Dynamic.literal($i = $i.asInstanceOf[js.Any], dateObj = dateObj.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_DateObj]
-  }
+  var $i: Double = js.native
+  var dateObj: Date = js.native
 }
 

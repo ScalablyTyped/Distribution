@@ -1,5 +1,13 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.ContentFlush
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Explicit
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.NotSet
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Paste
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.RecoverFromMarkers
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Redo
+import typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Undo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object CursorChangeReason extends js.Object {
   @js.native
   sealed trait Undo extends CursorChangeReason
   
-  /* 1 */ val ContentFlush: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.ContentFlush with Double = js.native
-  /* 3 */ val Explicit: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Explicit with Double = js.native
-  /* 0 */ val NotSet: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.NotSet with Double = js.native
-  /* 4 */ val Paste: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Paste with Double = js.native
-  /* 2 */ val RecoverFromMarkers: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.RecoverFromMarkers with Double = js.native
-  /* 6 */ val Redo: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Redo with Double = js.native
-  /* 5 */ val Undo: typings.monacoDashEditor.monacoDashEditorMod.editor.CursorChangeReason.Undo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CursorChangeReason with Double] = js.native
+  /* 1 */ @js.native
+  object ContentFlush extends TopLevel[ContentFlush with Double]
+  
+  /* 3 */ @js.native
+  object Explicit extends TopLevel[Explicit with Double]
+  
+  /* 0 */ @js.native
+  object NotSet extends TopLevel[NotSet with Double]
+  
+  /* 4 */ @js.native
+  object Paste extends TopLevel[Paste with Double]
+  
+  /* 2 */ @js.native
+  object RecoverFromMarkers extends TopLevel[RecoverFromMarkers with Double]
+  
+  /* 6 */ @js.native
+  object Redo extends TopLevel[Redo with Double]
+  
+  /* 5 */ @js.native
+  object Undo extends TopLevel[Undo with Double]
+  
 }
 

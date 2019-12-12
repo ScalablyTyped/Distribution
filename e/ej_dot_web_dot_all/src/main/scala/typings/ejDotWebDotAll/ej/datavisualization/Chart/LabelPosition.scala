@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Inside
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Outside
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.OutsideExtended
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object LabelPosition extends js.Object {
   @js.native
   sealed trait OutsideExtended extends LabelPosition
   
-  /* 0 */ val Inside: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Inside with Double = js.native
-  /* 1 */ val Outside: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.Outside with Double = js.native
-  /* 2 */ val OutsideExtended: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelPosition.OutsideExtended with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LabelPosition with Double] = js.native
+  /* 0 */ @js.native
+  object Inside extends TopLevel[Inside with Double]
+  
+  /* 1 */ @js.native
+  object Outside extends TopLevel[Outside with Double]
+  
+  /* 2 */ @js.native
+  object OutsideExtended extends TopLevel[OutsideExtended with Double]
+  
 }
 

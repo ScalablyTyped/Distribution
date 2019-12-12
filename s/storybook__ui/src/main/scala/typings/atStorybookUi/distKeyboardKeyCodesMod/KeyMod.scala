@@ -1,5 +1,10 @@
 package typings.atStorybookUi.distKeyboardKeyCodesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Alt
+import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.CtrlCmd
+import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Shift
+import typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.WinCtrl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object KeyMod extends js.Object {
   @js.native
   sealed trait WinCtrl extends KeyMod
   
-  /* 512 */ val Alt: typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Alt with Double = js.native
-  /* 2048 */ val CtrlCmd: typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.CtrlCmd with Double = js.native
-  /* 1024 */ val Shift: typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.Shift with Double = js.native
-  /* 256 */ val WinCtrl: typings.atStorybookUi.distKeyboardKeyCodesMod.KeyMod.WinCtrl with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyMod with Double] = js.native
+  /* 512 */ @js.native
+  object Alt extends TopLevel[Alt with Double]
+  
+  /* 2048 */ @js.native
+  object CtrlCmd extends TopLevel[CtrlCmd with Double]
+  
+  /* 1024 */ @js.native
+  object Shift extends TopLevel[Shift with Double]
+  
+  /* 256 */ @js.native
+  object WinCtrl extends TopLevel[WinCtrl with Double]
+  
 }
 

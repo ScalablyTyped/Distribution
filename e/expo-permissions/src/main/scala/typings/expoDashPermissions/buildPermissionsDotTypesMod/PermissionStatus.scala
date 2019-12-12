@@ -1,5 +1,9 @@
 package typings.expoDashPermissions.buildPermissionsDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.DENIED
+import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.GRANTED
+import typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.UNDETERMINED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PermissionStatus extends js.Object {
   @js.native
   sealed trait UNDETERMINED extends PermissionStatus
   
-  /* "denied" */ val DENIED: typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.DENIED with String = js.native
-  /* "granted" */ val GRANTED: typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.GRANTED with String = js.native
-  /* "undetermined" */ val UNDETERMINED: typings.expoDashPermissions.buildPermissionsDotTypesMod.PermissionStatus.UNDETERMINED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PermissionStatus with String] = js.native
+  /* "denied" */ @js.native
+  object DENIED extends TopLevel[DENIED with String]
+  
+  /* "granted" */ @js.native
+  object GRANTED extends TopLevel[GRANTED with String]
+  
+  /* "undetermined" */ @js.native
+  object UNDETERMINED extends TopLevel[UNDETERMINED with String]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ProtectionSelectionMode.none
+import typings.officeDashJs.Excel.ProtectionSelectionMode.normal
+import typings.officeDashJs.Excel.ProtectionSelectionMode.unlocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +41,16 @@ object ProtectionSelectionMode extends js.Object {
   @js.native
   sealed trait unlocked extends ProtectionSelectionMode
   
-  /* "None" */ val none: typings.officeDashJs.Excel.ProtectionSelectionMode.none with String = js.native
-  /* "Normal" */ val normal: typings.officeDashJs.Excel.ProtectionSelectionMode.normal with String = js.native
-  /* "Unlocked" */ val unlocked: typings.officeDashJs.Excel.ProtectionSelectionMode.unlocked with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ProtectionSelectionMode with String] = js.native
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Normal" */ @js.native
+  object normal extends TopLevel[normal with String]
+  
+  /* "Unlocked" */ @js.native
+  object unlocked extends TopLevel[unlocked with String]
+  
 }
 

@@ -1,5 +1,13 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.formula
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.highestValue
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.invalid
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.lowestValue
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.number
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percent
+import typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percentile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,14 +45,28 @@ object ConditionalFormatColorCriterionType extends js.Object {
   @js.native
   sealed trait percentile extends ConditionalFormatColorCriterionType
   
-  /* "Formula" */ val formula: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.formula with String = js.native
-  /* "HighestValue" */ val highestValue: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.highestValue with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.invalid with String = js.native
-  /* "LowestValue" */ val lowestValue: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.lowestValue with String = js.native
-  /* "Number" */ val number: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.number with String = js.native
-  /* "Percent" */ val percent: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percent with String = js.native
-  /* "Percentile" */ val percentile: typings.officeDashJs.Excel.ConditionalFormatColorCriterionType.percentile with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalFormatColorCriterionType with String] = js.native
+  /* "Formula" */ @js.native
+  object formula extends TopLevel[formula with String]
+  
+  /* "HighestValue" */ @js.native
+  object highestValue extends TopLevel[highestValue with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "LowestValue" */ @js.native
+  object lowestValue extends TopLevel[lowestValue with String]
+  
+  /* "Number" */ @js.native
+  object number extends TopLevel[number with String]
+  
+  /* "Percent" */ @js.native
+  object percent extends TopLevel[percent with String]
+  
+  /* "Percentile" */ @js.native
+  object percentile extends TopLevel[percentile with String]
+  
 }
 

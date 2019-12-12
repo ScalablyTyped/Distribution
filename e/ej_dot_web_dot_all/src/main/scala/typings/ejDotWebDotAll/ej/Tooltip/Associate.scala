@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.Tooltip
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Tooltip.Associate.Axis
+import typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseEnter
+import typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseFollow
+import typings.ejDotWebDotAll.ej.Tooltip.Associate.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +35,23 @@ object Associate extends js.Object {
   @js.native
   sealed trait Window extends Associate
   
-  /* 3 */ val Axis: typings.ejDotWebDotAll.ej.Tooltip.Associate.Axis with Double = js.native
-  /* 2 */ val MouseEnter: typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseEnter with Double = js.native
-  /* 1 */ val MouseFollow: typings.ejDotWebDotAll.ej.Tooltip.Associate.MouseFollow with Double = js.native
-  /* 0 */ val Target: typings.ejDotWebDotAll.ej.Tooltip.Associate.Target with Double = js.native
-  /* 4 */ val Window: typings.ejDotWebDotAll.ej.Tooltip.Associate.Window with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Associate with Double] = js.native
+  /* 3 */ @js.native
+  object Axis extends TopLevel[Axis with Double]
+  
+  /* 2 */ @js.native
+  object MouseEnter extends TopLevel[MouseEnter with Double]
+  
+  /* 1 */ @js.native
+  object MouseFollow extends TopLevel[MouseFollow with Double]
+  
+  /* 0 */ @js.native
+  object Target extends TopLevel[Target with Double]
+  
+  /* 4 */ @js.native
+  object Window
+    extends TopLevel[typings.ejDotWebDotAll.ej.Tooltip.Associate.Window with Double]
+  
 }
 

@@ -1,5 +1,18 @@
 package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.canBeCompliant
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.compliant
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deFixedDataNotSupported
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deHardwareNotCompliant
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deOsVolumeNotProtected
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionNotYetEnabled
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionSuspended
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deWinReNotConfigured
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.noFeatureLicense
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notEvaluated
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notProvisionedOnAllVolumes
+import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osNotProtected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object EasRequireEncryptionResult extends js.Object {
   @js.native
   sealed trait osNotProtected extends EasRequireEncryptionResult
   
-  /* 2 */ val canBeCompliant: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.canBeCompliant with Double = js.native
-  /* 1 */ val compliant: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.compliant with Double = js.native
-  /* 4 */ val deFixedDataNotSupported: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deFixedDataNotSupported with Double = js.native
-  /* 5 */ val deHardwareNotCompliant: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deHardwareNotCompliant with Double = js.native
-  /* 8 */ val deOsVolumeNotProtected: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deOsVolumeNotProtected with Double = js.native
-  /* 9 */ val deProtectionNotYetEnabled: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionNotYetEnabled with Double = js.native
-  /* 7 */ val deProtectionSuspended: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deProtectionSuspended with Double = js.native
-  /* 6 */ val deWinReNotConfigured: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.deWinReNotConfigured with Double = js.native
-  /* 10 */ val noFeatureLicense: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.noFeatureLicense with Double = js.native
-  /* 0 */ val notEvaluated: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notEvaluated with Double = js.native
-  /* 3 */ val notProvisionedOnAllVolumes: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.notProvisionedOnAllVolumes with Double = js.native
-  /* 11 */ val osNotProtected: typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult.osNotProtected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EasRequireEncryptionResult with Double] = js.native
+  /* 2 */ @js.native
+  object canBeCompliant extends TopLevel[canBeCompliant with Double]
+  
+  /* 1 */ @js.native
+  object compliant extends TopLevel[compliant with Double]
+  
+  /* 4 */ @js.native
+  object deFixedDataNotSupported extends TopLevel[deFixedDataNotSupported with Double]
+  
+  /* 5 */ @js.native
+  object deHardwareNotCompliant extends TopLevel[deHardwareNotCompliant with Double]
+  
+  /* 8 */ @js.native
+  object deOsVolumeNotProtected extends TopLevel[deOsVolumeNotProtected with Double]
+  
+  /* 9 */ @js.native
+  object deProtectionNotYetEnabled extends TopLevel[deProtectionNotYetEnabled with Double]
+  
+  /* 7 */ @js.native
+  object deProtectionSuspended extends TopLevel[deProtectionSuspended with Double]
+  
+  /* 6 */ @js.native
+  object deWinReNotConfigured extends TopLevel[deWinReNotConfigured with Double]
+  
+  /* 10 */ @js.native
+  object noFeatureLicense extends TopLevel[noFeatureLicense with Double]
+  
+  /* 0 */ @js.native
+  object notEvaluated extends TopLevel[notEvaluated with Double]
+  
+  /* 3 */ @js.native
+  object notProvisionedOnAllVolumes extends TopLevel[notProvisionedOnAllVolumes with Double]
+  
+  /* 11 */ @js.native
+  object osNotProtected extends TopLevel[osNotProtected with Double]
+  
 }
 

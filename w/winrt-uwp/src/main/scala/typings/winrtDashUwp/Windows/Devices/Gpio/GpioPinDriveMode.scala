@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.input
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullDown
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullUp
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.output
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrain
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrainPullUp
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSource
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSourcePullDown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object GpioPinDriveMode extends js.Object {
   @js.native
   sealed trait outputOpenSourcePullDown extends GpioPinDriveMode
   
-  /* 0 */ val input: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.input with Double = js.native
-  /* 3 */ val inputPullDown: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullDown with Double = js.native
-  /* 2 */ val inputPullUp: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.inputPullUp with Double = js.native
-  /* 1 */ val output: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.output with Double = js.native
-  /* 4 */ val outputOpenDrain: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrain with Double = js.native
-  /* 5 */ val outputOpenDrainPullUp: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenDrainPullUp with Double = js.native
-  /* 6 */ val outputOpenSource: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSource with Double = js.native
-  /* 7 */ val outputOpenSourcePullDown: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinDriveMode.outputOpenSourcePullDown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GpioPinDriveMode with Double] = js.native
+  /* 0 */ @js.native
+  object input extends TopLevel[input with Double]
+  
+  /* 3 */ @js.native
+  object inputPullDown extends TopLevel[inputPullDown with Double]
+  
+  /* 2 */ @js.native
+  object inputPullUp extends TopLevel[inputPullUp with Double]
+  
+  /* 1 */ @js.native
+  object output extends TopLevel[output with Double]
+  
+  /* 4 */ @js.native
+  object outputOpenDrain extends TopLevel[outputOpenDrain with Double]
+  
+  /* 5 */ @js.native
+  object outputOpenDrainPullUp extends TopLevel[outputOpenDrainPullUp with Double]
+  
+  /* 6 */ @js.native
+  object outputOpenSource extends TopLevel[outputOpenSource with Double]
+  
+  /* 7 */ @js.native
+  object outputOpenSourcePullDown extends TopLevel[outputOpenSourcePullDown with Double]
+  
 }
 

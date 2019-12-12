@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "web3-provider-engine"
-version := "14.0-dt-20180730Z-f260b3"
+version := "14.0-dt-20180730Z-cefcd8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bignumber_dot_js" % "9.0.0-749a58",
-  "org.scalablytyped" %%% "ethereum-protocol" % "1.0-dt-20180612Z-728291",
+  "org.scalablytyped" %%% "ethereum-protocol" % "1.0-dt-20180612Z-eb163f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

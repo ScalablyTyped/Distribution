@@ -1,5 +1,8 @@
 package typings.umbraco.umbraco.resources
 
+import org.scalablytyped.runtime.TopLevel
+import typings.umbraco.umbraco.resources.LogType.Debug
+import typings.umbraco.umbraco.resources.LogType.Info
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object LogType extends js.Object {
   @js.native
   sealed trait Info extends LogType
   
-  /* 0 */ val Debug: typings.umbraco.umbraco.resources.LogType.Debug with Double = js.native
-  /* 1 */ val Info: typings.umbraco.umbraco.resources.LogType.Info with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LogType with Double] = js.native
+  /* 0 */ @js.native
+  object Debug extends TopLevel[Debug with Double]
+  
+  /* 1 */ @js.native
+  object Info extends TopLevel[Info with Double]
+  
 }
 

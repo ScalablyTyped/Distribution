@@ -1,5 +1,11 @@
 package typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants
 
+import org.scalablytyped.runtime.TopLevel
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.AR
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.EN
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.ES
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.JA
+import typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.KO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,12 +32,22 @@ object ContentLanguage extends js.Object {
   @js.native
   sealed trait KO extends ContentLanguage
   
-  /* "ar" */ val AR: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.AR with String = js.native
-  /* "en" */ val EN: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.EN with String = js.native
-  /* "es" */ val ES: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.ES with String = js.native
-  /* "ja" */ val JA: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.JA with String = js.native
-  /* "ko" */ val KO: typings.watsonDashDeveloperDashCloud.personalityDashInsightsV3DashGeneratedMod.ProfileAsCsvConstants.ContentLanguage.KO with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ContentLanguage with String] = js.native
+  /* "ar" */ @js.native
+  object AR extends TopLevel[AR with String]
+  
+  /* "en" */ @js.native
+  object EN extends TopLevel[EN with String]
+  
+  /* "es" */ @js.native
+  object ES extends TopLevel[ES with String]
+  
+  /* "ja" */ @js.native
+  object JA extends TopLevel[JA with String]
+  
+  /* "ko" */ @js.native
+  object KO extends TopLevel[KO with String]
+  
 }
 

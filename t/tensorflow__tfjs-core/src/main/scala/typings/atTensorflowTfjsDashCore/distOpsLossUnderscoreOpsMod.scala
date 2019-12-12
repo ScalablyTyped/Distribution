@@ -1,6 +1,11 @@
 package typings.atTensorflowTfjsDashCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction
+import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.MEAN
+import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.NONE
+import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM
+import typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM_BY_NONZERO_WEIGHTS
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
 import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
@@ -28,12 +33,20 @@ object distOpsLossUnderscoreOpsMod extends js.Object {
     @js.native
     sealed trait SUM_BY_NONZERO_WEIGHTS extends Reduction
     
-    /* 1 */ val MEAN: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.MEAN with Double = js.native
-    /* 0 */ val NONE: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.NONE with Double = js.native
-    /* 2 */ val SUM: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM with Double = js.native
-    /* 3 */ val SUM_BY_NONZERO_WEIGHTS: typings.atTensorflowTfjsDashCore.distOpsLossUnderscoreOpsMod.Reduction.SUM_BY_NONZERO_WEIGHTS with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Reduction with Double] = js.native
+    /* 1 */ @js.native
+    object MEAN extends TopLevel[MEAN with Double]
+    
+    /* 0 */ @js.native
+    object NONE extends TopLevel[NONE with Double]
+    
+    /* 2 */ @js.native
+    object SUM extends TopLevel[SUM with Double]
+    
+    /* 3 */ @js.native
+    object SUM_BY_NONZERO_WEIGHTS extends TopLevel[SUM_BY_NONZERO_WEIGHTS with Double]
+    
   }
   
   @js.native

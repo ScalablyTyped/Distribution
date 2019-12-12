@@ -1,5 +1,29 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppIdMismatch
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppIdUnexpected
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppliedSignatureCorrupt
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyMergeGuid
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplySignature
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyStrips
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyValveSignatureHeader
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.DownloadFailed
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.NextBase
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.None
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.OpenZip
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.PathManipulationError
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ReadZipDirectory
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked_Base
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked_Max
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnexpectedZipEntry
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnknownBlobType
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipFullFile
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipMergeGuid
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipSignature
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipStrips
+import typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipValveSignatureHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,30 +103,76 @@ object EDRMBlobDownloadErrorDetail extends js.Object {
   @js.native
   sealed trait UnzipValveSignatureHeader extends EDRMBlobDownloadErrorDetail
   
-  /* 14 */ val AppIdMismatch: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppIdMismatch with Double = js.native
-  /* 15 */ val AppIdUnexpected: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppIdUnexpected with Double = js.native
-  /* 16 */ val AppliedSignatureCorrupt: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.AppliedSignatureCorrupt with Double = js.native
-  /* 12 */ val ApplyMergeGuid: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyMergeGuid with Double = js.native
-  /* 13 */ val ApplySignature: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplySignature with Double = js.native
-  /* 11 */ val ApplyStrips: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyStrips with Double = js.native
-  /* 17 */ val ApplyValveSignatureHeader: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ApplyValveSignatureHeader with Double = js.native
-  /* 1 */ val DownloadFailed: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.DownloadFailed with Double = js.native
-  /* 131072 */ val NextBase: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.NextBase with Double = js.native
-  /* 0 */ val None: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.None with Double = js.native
-  /* 3 */ val OpenZip: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.OpenZip with Double = js.native
-  /* 19 */ val PathManipulationError: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.PathManipulationError with Double = js.native
-  /* 4 */ val ReadZipDirectory: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.ReadZipDirectory with Double = js.native
-  /* 2 */ val TargetLocked: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked with Double = js.native
-  /* 65536 */ val TargetLocked_Base: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked_Base with Double = js.native
-  /* 131071 */ val TargetLocked_Max: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.TargetLocked_Max with Double = js.native
-  /* 5 */ val UnexpectedZipEntry: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnexpectedZipEntry with Double = js.native
-  /* 7 */ val UnknownBlobType: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnknownBlobType with Double = js.native
-  /* 6 */ val UnzipFullFile: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipFullFile with Double = js.native
-  /* 9 */ val UnzipMergeGuid: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipMergeGuid with Double = js.native
-  /* 10 */ val UnzipSignature: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipSignature with Double = js.native
-  /* 8 */ val UnzipStrips: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipStrips with Double = js.native
-  /* 18 */ val UnzipValveSignatureHeader: typings.steamDashClient.steamDashClientMod.EDRMBlobDownloadErrorDetail.UnzipValveSignatureHeader with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EDRMBlobDownloadErrorDetail with Double] = js.native
+  /* 14 */ @js.native
+  object AppIdMismatch extends TopLevel[AppIdMismatch with Double]
+  
+  /* 15 */ @js.native
+  object AppIdUnexpected extends TopLevel[AppIdUnexpected with Double]
+  
+  /* 16 */ @js.native
+  object AppliedSignatureCorrupt extends TopLevel[AppliedSignatureCorrupt with Double]
+  
+  /* 12 */ @js.native
+  object ApplyMergeGuid extends TopLevel[ApplyMergeGuid with Double]
+  
+  /* 13 */ @js.native
+  object ApplySignature extends TopLevel[ApplySignature with Double]
+  
+  /* 11 */ @js.native
+  object ApplyStrips extends TopLevel[ApplyStrips with Double]
+  
+  /* 17 */ @js.native
+  object ApplyValveSignatureHeader extends TopLevel[ApplyValveSignatureHeader with Double]
+  
+  /* 1 */ @js.native
+  object DownloadFailed extends TopLevel[DownloadFailed with Double]
+  
+  /* 131072 */ @js.native
+  object NextBase extends TopLevel[NextBase with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object OpenZip extends TopLevel[OpenZip with Double]
+  
+  /* 19 */ @js.native
+  object PathManipulationError extends TopLevel[PathManipulationError with Double]
+  
+  /* 4 */ @js.native
+  object ReadZipDirectory extends TopLevel[ReadZipDirectory with Double]
+  
+  /* 2 */ @js.native
+  object TargetLocked extends TopLevel[TargetLocked with Double]
+  
+  /* 65536 */ @js.native
+  object TargetLocked_Base extends TopLevel[TargetLocked_Base with Double]
+  
+  /* 131071 */ @js.native
+  object TargetLocked_Max extends TopLevel[TargetLocked_Max with Double]
+  
+  /* 5 */ @js.native
+  object UnexpectedZipEntry extends TopLevel[UnexpectedZipEntry with Double]
+  
+  /* 7 */ @js.native
+  object UnknownBlobType extends TopLevel[UnknownBlobType with Double]
+  
+  /* 6 */ @js.native
+  object UnzipFullFile extends TopLevel[UnzipFullFile with Double]
+  
+  /* 9 */ @js.native
+  object UnzipMergeGuid extends TopLevel[UnzipMergeGuid with Double]
+  
+  /* 10 */ @js.native
+  object UnzipSignature extends TopLevel[UnzipSignature with Double]
+  
+  /* 8 */ @js.native
+  object UnzipStrips extends TopLevel[UnzipStrips with Double]
+  
+  /* 18 */ @js.native
+  object UnzipValveSignatureHeader extends TopLevel[UnzipValveSignatureHeader with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.DiagnosticSeverity.Error
+import typings.vscode.vscodeMod.DiagnosticSeverity.Hint
+import typings.vscode.vscodeMod.DiagnosticSeverity.Information
+import typings.vscode.vscodeMod.DiagnosticSeverity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,11 +40,19 @@ object DiagnosticSeverity extends js.Object {
   @js.native
   sealed trait Warning extends DiagnosticSeverity
   
-  /* 0 */ val Error: typings.vscode.vscodeMod.DiagnosticSeverity.Error with Double = js.native
-  /* 3 */ val Hint: typings.vscode.vscodeMod.DiagnosticSeverity.Hint with Double = js.native
-  /* 2 */ val Information: typings.vscode.vscodeMod.DiagnosticSeverity.Information with Double = js.native
-  /* 1 */ val Warning: typings.vscode.vscodeMod.DiagnosticSeverity.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagnosticSeverity with Double] = js.native
+  /* 0 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 3 */ @js.native
+  object Hint extends TopLevel[Hint with Double]
+  
+  /* 2 */ @js.native
+  object Information extends TopLevel[Information with Double]
+  
+  /* 1 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

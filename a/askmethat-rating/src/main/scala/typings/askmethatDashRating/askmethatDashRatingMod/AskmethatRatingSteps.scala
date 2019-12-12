@@ -1,5 +1,9 @@
 package typings.askmethatDashRating.askmethatDashRatingMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.DecimalStep
+import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.HalfStep
+import typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.OnePerOneStep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object AskmethatRatingSteps extends js.Object {
   @js.native
   sealed trait OnePerOneStep extends AskmethatRatingSteps
   
-  /* 0 */ val DecimalStep: typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.DecimalStep with Double = js.native
-  /* 1 */ val HalfStep: typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.HalfStep with Double = js.native
-  /* 2 */ val OnePerOneStep: typings.askmethatDashRating.askmethatDashRatingMod.AskmethatRatingSteps.OnePerOneStep with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AskmethatRatingSteps with Double] = js.native
+  /* 0 */ @js.native
+  object DecimalStep extends TopLevel[DecimalStep with Double]
+  
+  /* 1 */ @js.native
+  object HalfStep extends TopLevel[HalfStep with Double]
+  
+  /* 2 */ @js.native
+  object OnePerOneStep extends TopLevel[OnePerOneStep with Double]
+  
 }
 

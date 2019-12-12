@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartPlotBy.columns
+import typings.officeDashJsDashPreview.Excel.ChartPlotBy.rows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ChartPlotBy extends js.Object {
   @js.native
   sealed trait rows extends ChartPlotBy
   
-  /* "Columns" */ val columns: typings.officeDashJsDashPreview.Excel.ChartPlotBy.columns with String = js.native
-  /* "Rows" */ val rows: typings.officeDashJsDashPreview.Excel.ChartPlotBy.rows with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartPlotBy with String] = js.native
+  /* "Columns" */ @js.native
+  object columns extends TopLevel[columns with String]
+  
+  /* "Rows" */ @js.native
+  object rows extends TopLevel[rows with String]
+  
 }
 

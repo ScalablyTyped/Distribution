@@ -1,5 +1,29 @@
 package typings.firebase.firebaseMod.analytics
 
+import org.scalablytyped.runtime.TopLevel
+import typings.firebase.firebaseMod.analytics.EventName.ADD_PAYMENT_INFO
+import typings.firebase.firebaseMod.analytics.EventName.ADD_TO_CART
+import typings.firebase.firebaseMod.analytics.EventName.ADD_TO_WISHLIST
+import typings.firebase.firebaseMod.analytics.EventName.BEGIN_CHECKOUT
+import typings.firebase.firebaseMod.analytics.EventName.CHECKOUT_PROGRESS
+import typings.firebase.firebaseMod.analytics.EventName.EXCEPTION
+import typings.firebase.firebaseMod.analytics.EventName.GENERATE_LEAD
+import typings.firebase.firebaseMod.analytics.EventName.LOGIN
+import typings.firebase.firebaseMod.analytics.EventName.PAGE_VIEW
+import typings.firebase.firebaseMod.analytics.EventName.PURCHASE
+import typings.firebase.firebaseMod.analytics.EventName.REFUND
+import typings.firebase.firebaseMod.analytics.EventName.REMOVE_FROM_CART
+import typings.firebase.firebaseMod.analytics.EventName.SCREEN_VIEW
+import typings.firebase.firebaseMod.analytics.EventName.SEARCH
+import typings.firebase.firebaseMod.analytics.EventName.SELECT_CONTENT
+import typings.firebase.firebaseMod.analytics.EventName.SET_CHECKOUT_OPTION
+import typings.firebase.firebaseMod.analytics.EventName.SHARE
+import typings.firebase.firebaseMod.analytics.EventName.SIGN_UP
+import typings.firebase.firebaseMod.analytics.EventName.TIMING_COMPLETE
+import typings.firebase.firebaseMod.analytics.EventName.VIEW_ITEM
+import typings.firebase.firebaseMod.analytics.EventName.VIEW_ITEM_LIST
+import typings.firebase.firebaseMod.analytics.EventName.VIEW_PROMOTION
+import typings.firebase.firebaseMod.analytics.EventName.VIEW_SEARCH_RESULTS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,30 +103,76 @@ object EventName extends js.Object {
   @js.native
   sealed trait VIEW_SEARCH_RESULTS extends EventName
   
-  /* "add_payment_info" */ val ADD_PAYMENT_INFO: typings.firebase.firebaseMod.analytics.EventName.ADD_PAYMENT_INFO with String = js.native
-  /* "add_to_cart" */ val ADD_TO_CART: typings.firebase.firebaseMod.analytics.EventName.ADD_TO_CART with String = js.native
-  /* "add_to_wishlist" */ val ADD_TO_WISHLIST: typings.firebase.firebaseMod.analytics.EventName.ADD_TO_WISHLIST with String = js.native
-  /* "begin_checkout" */ val BEGIN_CHECKOUT: typings.firebase.firebaseMod.analytics.EventName.BEGIN_CHECKOUT with String = js.native
-  /* "checkout_progress" */ val CHECKOUT_PROGRESS: typings.firebase.firebaseMod.analytics.EventName.CHECKOUT_PROGRESS with String = js.native
-  /* "exception" */ val EXCEPTION: typings.firebase.firebaseMod.analytics.EventName.EXCEPTION with String = js.native
-  /* "generate_lead" */ val GENERATE_LEAD: typings.firebase.firebaseMod.analytics.EventName.GENERATE_LEAD with String = js.native
-  /* "login" */ val LOGIN: typings.firebase.firebaseMod.analytics.EventName.LOGIN with String = js.native
-  /* "page_view" */ val PAGE_VIEW: typings.firebase.firebaseMod.analytics.EventName.PAGE_VIEW with String = js.native
-  /* "purchase" */ val PURCHASE: typings.firebase.firebaseMod.analytics.EventName.PURCHASE with String = js.native
-  /* "refund" */ val REFUND: typings.firebase.firebaseMod.analytics.EventName.REFUND with String = js.native
-  /* "remove_from_cart" */ val REMOVE_FROM_CART: typings.firebase.firebaseMod.analytics.EventName.REMOVE_FROM_CART with String = js.native
-  /* "screen_view" */ val SCREEN_VIEW: typings.firebase.firebaseMod.analytics.EventName.SCREEN_VIEW with String = js.native
-  /* "search" */ val SEARCH: typings.firebase.firebaseMod.analytics.EventName.SEARCH with String = js.native
-  /* "select_content" */ val SELECT_CONTENT: typings.firebase.firebaseMod.analytics.EventName.SELECT_CONTENT with String = js.native
-  /* "set_checkout_option" */ val SET_CHECKOUT_OPTION: typings.firebase.firebaseMod.analytics.EventName.SET_CHECKOUT_OPTION with String = js.native
-  /* "share" */ val SHARE: typings.firebase.firebaseMod.analytics.EventName.SHARE with String = js.native
-  /* "sign_up" */ val SIGN_UP: typings.firebase.firebaseMod.analytics.EventName.SIGN_UP with String = js.native
-  /* "timing_complete" */ val TIMING_COMPLETE: typings.firebase.firebaseMod.analytics.EventName.TIMING_COMPLETE with String = js.native
-  /* "view_item" */ val VIEW_ITEM: typings.firebase.firebaseMod.analytics.EventName.VIEW_ITEM with String = js.native
-  /* "view_item_list" */ val VIEW_ITEM_LIST: typings.firebase.firebaseMod.analytics.EventName.VIEW_ITEM_LIST with String = js.native
-  /* "view_promotion" */ val VIEW_PROMOTION: typings.firebase.firebaseMod.analytics.EventName.VIEW_PROMOTION with String = js.native
-  /* "view_search_results" */ val VIEW_SEARCH_RESULTS: typings.firebase.firebaseMod.analytics.EventName.VIEW_SEARCH_RESULTS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EventName with String] = js.native
+  /* "add_payment_info" */ @js.native
+  object ADD_PAYMENT_INFO extends TopLevel[ADD_PAYMENT_INFO with String]
+  
+  /* "add_to_cart" */ @js.native
+  object ADD_TO_CART extends TopLevel[ADD_TO_CART with String]
+  
+  /* "add_to_wishlist" */ @js.native
+  object ADD_TO_WISHLIST extends TopLevel[ADD_TO_WISHLIST with String]
+  
+  /* "begin_checkout" */ @js.native
+  object BEGIN_CHECKOUT extends TopLevel[BEGIN_CHECKOUT with String]
+  
+  /* "checkout_progress" */ @js.native
+  object CHECKOUT_PROGRESS extends TopLevel[CHECKOUT_PROGRESS with String]
+  
+  /* "exception" */ @js.native
+  object EXCEPTION extends TopLevel[EXCEPTION with String]
+  
+  /* "generate_lead" */ @js.native
+  object GENERATE_LEAD extends TopLevel[GENERATE_LEAD with String]
+  
+  /* "login" */ @js.native
+  object LOGIN extends TopLevel[LOGIN with String]
+  
+  /* "page_view" */ @js.native
+  object PAGE_VIEW extends TopLevel[PAGE_VIEW with String]
+  
+  /* "purchase" */ @js.native
+  object PURCHASE extends TopLevel[PURCHASE with String]
+  
+  /* "refund" */ @js.native
+  object REFUND extends TopLevel[REFUND with String]
+  
+  /* "remove_from_cart" */ @js.native
+  object REMOVE_FROM_CART extends TopLevel[REMOVE_FROM_CART with String]
+  
+  /* "screen_view" */ @js.native
+  object SCREEN_VIEW extends TopLevel[SCREEN_VIEW with String]
+  
+  /* "search" */ @js.native
+  object SEARCH extends TopLevel[SEARCH with String]
+  
+  /* "select_content" */ @js.native
+  object SELECT_CONTENT extends TopLevel[SELECT_CONTENT with String]
+  
+  /* "set_checkout_option" */ @js.native
+  object SET_CHECKOUT_OPTION extends TopLevel[SET_CHECKOUT_OPTION with String]
+  
+  /* "share" */ @js.native
+  object SHARE extends TopLevel[SHARE with String]
+  
+  /* "sign_up" */ @js.native
+  object SIGN_UP extends TopLevel[SIGN_UP with String]
+  
+  /* "timing_complete" */ @js.native
+  object TIMING_COMPLETE extends TopLevel[TIMING_COMPLETE with String]
+  
+  /* "view_item" */ @js.native
+  object VIEW_ITEM extends TopLevel[VIEW_ITEM with String]
+  
+  /* "view_item_list" */ @js.native
+  object VIEW_ITEM_LIST extends TopLevel[VIEW_ITEM_LIST with String]
+  
+  /* "view_promotion" */ @js.native
+  object VIEW_PROMOTION extends TopLevel[VIEW_PROMOTION with String]
+  
+  /* "view_search_results" */ @js.native
+  object VIEW_SEARCH_RESULTS extends TopLevel[VIEW_SEARCH_RESULTS with String]
+  
 }
 

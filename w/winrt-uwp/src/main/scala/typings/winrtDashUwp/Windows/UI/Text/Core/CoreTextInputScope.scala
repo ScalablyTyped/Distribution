@@ -1,5 +1,69 @@
 package typings.winrtDashUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.`private`
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.address
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCity
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCountryName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCountryShortName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressPostalCode
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressStateOrProvince
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressStreet
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.alphanumericFullWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.alphanumericHalfWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.bopomofo
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chat
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chineseFullWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chineseHalfWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyAmount
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyAmountAndSymbol
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyChinese
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.date
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateDay
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateDayName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateMonth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateMonthName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateYear
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.default
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailAddress
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailUserName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailUserNameOrAddress
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.fileName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.filePath
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.formula
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.formulaNumber
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hangulFullWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hangulHalfWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hanja
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hiragana
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.katakanaFullWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.katakanaHalfWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.maps
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.nameOrPhoneNumber
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.nativeScript
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.number
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.numberFullWidth
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.password
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.passwordNumeric
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalFullName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalGivenName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalMiddleName
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalNamePrefix
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalNameSuffix
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalSurname
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.search
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.searchIncremental
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.singleCharacter
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneAreaCode
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneCountryCode
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneLocalNumber
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneNumber
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.text
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.time
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.timeHour
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.timeMinuteOrSecond
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.url
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.userName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -263,70 +327,196 @@ object CoreTextInputScope extends js.Object {
   @js.native
   sealed trait userName extends CoreTextInputScope
   
-  /* 13 */ val address: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.address with Double = js.native
-  /* 17 */ val addressCity: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCity with Double = js.native
-  /* 18 */ val addressCountryName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCountryName with Double = js.native
-  /* 19 */ val addressCountryShortName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressCountryShortName with Double = js.native
-  /* 14 */ val addressPostalCode: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressPostalCode with Double = js.native
-  /* 16 */ val addressStateOrProvince: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressStateOrProvince with Double = js.native
-  /* 15 */ val addressStreet: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.addressStreet with Double = js.native
-  /* 40 */ val alphanumericFullWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.alphanumericFullWidth with Double = js.native
-  /* 39 */ val alphanumericHalfWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.alphanumericHalfWidth with Double = js.native
-  /* 42 */ val bopomofo: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.bopomofo with Double = js.native
-  /* 56 */ val chat: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chat with Double = js.native
-  /* 53 */ val chineseFullWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chineseFullWidth with Double = js.native
-  /* 52 */ val chineseHalfWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.chineseHalfWidth with Double = js.native
-  /* 21 */ val currencyAmount: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyAmount with Double = js.native
-  /* 20 */ val currencyAmountAndSymbol: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyAmountAndSymbol with Double = js.native
-  /* 41 */ val currencyChinese: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.currencyChinese with Double = js.native
-  /* 22 */ val date: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.date with Double = js.native
-  /* 24 */ val dateDay: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateDay with Double = js.native
-  /* 27 */ val dateDayName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateDayName with Double = js.native
-  /* 23 */ val dateMonth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateMonth with Double = js.native
-  /* 26 */ val dateMonthName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateMonthName with Double = js.native
-  /* 25 */ val dateYear: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.dateYear with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.default with Double = js.native
-  /* 5 */ val emailAddress: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailAddress with Double = js.native
-  /* 4 */ val emailUserName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailUserName with Double = js.native
-  /* 58 */ val emailUserNameOrAddress: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.emailUserNameOrAddress with Double = js.native
-  /* 3 */ val fileName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.fileName with Double = js.native
-  /* 2 */ val filePath: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.filePath with Double = js.native
-  /* 50 */ val formula: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.formula with Double = js.native
-  /* 62 */ val formulaNumber: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.formulaNumber with Double = js.native
-  /* 48 */ val hangulFullWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hangulFullWidth with Double = js.native
-  /* 47 */ val hangulHalfWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hangulHalfWidth with Double = js.native
-  /* 46 */ val hanja: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hanja with Double = js.native
-  /* 43 */ val hiragana: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.hiragana with Double = js.native
-  /* 45 */ val katakanaFullWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.katakanaFullWidth with Double = js.native
-  /* 44 */ val katakanaHalfWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.katakanaHalfWidth with Double = js.native
-  /* 60 */ val maps: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.maps with Double = js.native
-  /* 57 */ val nameOrPhoneNumber: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.nameOrPhoneNumber with Double = js.native
-  /* 54 */ val nativeScript: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.nativeScript with Double = js.native
-  /* 28 */ val number: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.number with Double = js.native
-  /* 38 */ val numberFullWidth: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.numberFullWidth with Double = js.native
-  /* 30 */ val password: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.password with Double = js.native
-  /* 61 */ val passwordNumeric: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.passwordNumeric with Double = js.native
-  /* 7 */ val personalFullName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalFullName with Double = js.native
-  /* 9 */ val personalGivenName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalGivenName with Double = js.native
-  /* 10 */ val personalMiddleName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalMiddleName with Double = js.native
-  /* 8 */ val personalNamePrefix: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalNamePrefix with Double = js.native
-  /* 12 */ val personalNameSuffix: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalNameSuffix with Double = js.native
-  /* 11 */ val personalSurname: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.personalSurname with Double = js.native
-  /* 59 */ val `private`: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.`private` with Double = js.native
-  /* 49 */ val search: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.search with Double = js.native
-  /* 51 */ val searchIncremental: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.searchIncremental with Double = js.native
-  /* 29 */ val singleCharacter: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.singleCharacter with Double = js.native
-  /* 33 */ val telephoneAreaCode: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneAreaCode with Double = js.native
-  /* 32 */ val telephoneCountryCode: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneCountryCode with Double = js.native
-  /* 34 */ val telephoneLocalNumber: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneLocalNumber with Double = js.native
-  /* 31 */ val telephoneNumber: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.telephoneNumber with Double = js.native
-  /* 55 */ val text: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.text with Double = js.native
-  /* 35 */ val time: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.time with Double = js.native
-  /* 36 */ val timeHour: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.timeHour with Double = js.native
-  /* 37 */ val timeMinuteOrSecond: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.timeMinuteOrSecond with Double = js.native
-  /* 1 */ val url: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.url with Double = js.native
-  /* 6 */ val userName: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextInputScope.userName with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreTextInputScope with Double] = js.native
+  /* 13 */ @js.native
+  object address extends TopLevel[address with Double]
+  
+  /* 17 */ @js.native
+  object addressCity extends TopLevel[addressCity with Double]
+  
+  /* 18 */ @js.native
+  object addressCountryName extends TopLevel[addressCountryName with Double]
+  
+  /* 19 */ @js.native
+  object addressCountryShortName extends TopLevel[addressCountryShortName with Double]
+  
+  /* 14 */ @js.native
+  object addressPostalCode extends TopLevel[addressPostalCode with Double]
+  
+  /* 16 */ @js.native
+  object addressStateOrProvince extends TopLevel[addressStateOrProvince with Double]
+  
+  /* 15 */ @js.native
+  object addressStreet extends TopLevel[addressStreet with Double]
+  
+  /* 40 */ @js.native
+  object alphanumericFullWidth extends TopLevel[alphanumericFullWidth with Double]
+  
+  /* 39 */ @js.native
+  object alphanumericHalfWidth extends TopLevel[alphanumericHalfWidth with Double]
+  
+  /* 42 */ @js.native
+  object bopomofo extends TopLevel[bopomofo with Double]
+  
+  /* 56 */ @js.native
+  object chat extends TopLevel[chat with Double]
+  
+  /* 53 */ @js.native
+  object chineseFullWidth extends TopLevel[chineseFullWidth with Double]
+  
+  /* 52 */ @js.native
+  object chineseHalfWidth extends TopLevel[chineseHalfWidth with Double]
+  
+  /* 21 */ @js.native
+  object currencyAmount extends TopLevel[currencyAmount with Double]
+  
+  /* 20 */ @js.native
+  object currencyAmountAndSymbol extends TopLevel[currencyAmountAndSymbol with Double]
+  
+  /* 41 */ @js.native
+  object currencyChinese extends TopLevel[currencyChinese with Double]
+  
+  /* 22 */ @js.native
+  object date extends TopLevel[date with Double]
+  
+  /* 24 */ @js.native
+  object dateDay extends TopLevel[dateDay with Double]
+  
+  /* 27 */ @js.native
+  object dateDayName extends TopLevel[dateDayName with Double]
+  
+  /* 23 */ @js.native
+  object dateMonth extends TopLevel[dateMonth with Double]
+  
+  /* 26 */ @js.native
+  object dateMonthName extends TopLevel[dateMonthName with Double]
+  
+  /* 25 */ @js.native
+  object dateYear extends TopLevel[dateYear with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 5 */ @js.native
+  object emailAddress extends TopLevel[emailAddress with Double]
+  
+  /* 4 */ @js.native
+  object emailUserName extends TopLevel[emailUserName with Double]
+  
+  /* 58 */ @js.native
+  object emailUserNameOrAddress extends TopLevel[emailUserNameOrAddress with Double]
+  
+  /* 3 */ @js.native
+  object fileName extends TopLevel[fileName with Double]
+  
+  /* 2 */ @js.native
+  object filePath extends TopLevel[filePath with Double]
+  
+  /* 50 */ @js.native
+  object formula extends TopLevel[formula with Double]
+  
+  /* 62 */ @js.native
+  object formulaNumber extends TopLevel[formulaNumber with Double]
+  
+  /* 48 */ @js.native
+  object hangulFullWidth extends TopLevel[hangulFullWidth with Double]
+  
+  /* 47 */ @js.native
+  object hangulHalfWidth extends TopLevel[hangulHalfWidth with Double]
+  
+  /* 46 */ @js.native
+  object hanja extends TopLevel[hanja with Double]
+  
+  /* 43 */ @js.native
+  object hiragana extends TopLevel[hiragana with Double]
+  
+  /* 45 */ @js.native
+  object katakanaFullWidth extends TopLevel[katakanaFullWidth with Double]
+  
+  /* 44 */ @js.native
+  object katakanaHalfWidth extends TopLevel[katakanaHalfWidth with Double]
+  
+  /* 60 */ @js.native
+  object maps extends TopLevel[maps with Double]
+  
+  /* 57 */ @js.native
+  object nameOrPhoneNumber extends TopLevel[nameOrPhoneNumber with Double]
+  
+  /* 54 */ @js.native
+  object nativeScript extends TopLevel[nativeScript with Double]
+  
+  /* 28 */ @js.native
+  object number extends TopLevel[number with Double]
+  
+  /* 38 */ @js.native
+  object numberFullWidth extends TopLevel[numberFullWidth with Double]
+  
+  /* 30 */ @js.native
+  object password extends TopLevel[password with Double]
+  
+  /* 61 */ @js.native
+  object passwordNumeric extends TopLevel[passwordNumeric with Double]
+  
+  /* 7 */ @js.native
+  object personalFullName extends TopLevel[personalFullName with Double]
+  
+  /* 9 */ @js.native
+  object personalGivenName extends TopLevel[personalGivenName with Double]
+  
+  /* 10 */ @js.native
+  object personalMiddleName extends TopLevel[personalMiddleName with Double]
+  
+  /* 8 */ @js.native
+  object personalNamePrefix extends TopLevel[personalNamePrefix with Double]
+  
+  /* 12 */ @js.native
+  object personalNameSuffix extends TopLevel[personalNameSuffix with Double]
+  
+  /* 11 */ @js.native
+  object personalSurname extends TopLevel[personalSurname with Double]
+  
+  /* 59 */ @js.native
+  object `private` extends TopLevel[`private` with Double]
+  
+  /* 49 */ @js.native
+  object search extends TopLevel[search with Double]
+  
+  /* 51 */ @js.native
+  object searchIncremental extends TopLevel[searchIncremental with Double]
+  
+  /* 29 */ @js.native
+  object singleCharacter extends TopLevel[singleCharacter with Double]
+  
+  /* 33 */ @js.native
+  object telephoneAreaCode extends TopLevel[telephoneAreaCode with Double]
+  
+  /* 32 */ @js.native
+  object telephoneCountryCode extends TopLevel[telephoneCountryCode with Double]
+  
+  /* 34 */ @js.native
+  object telephoneLocalNumber extends TopLevel[telephoneLocalNumber with Double]
+  
+  /* 31 */ @js.native
+  object telephoneNumber extends TopLevel[telephoneNumber with Double]
+  
+  /* 55 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 35 */ @js.native
+  object time extends TopLevel[time with Double]
+  
+  /* 36 */ @js.native
+  object timeHour extends TopLevel[timeHour with Double]
+  
+  /* 37 */ @js.native
+  object timeMinuteOrSecond extends TopLevel[timeMinuteOrSecond with Double]
+  
+  /* 1 */ @js.native
+  object url extends TopLevel[url with Double]
+  
+  /* 6 */ @js.native
+  object userName extends TopLevel[userName with Double]
+  
 }
 

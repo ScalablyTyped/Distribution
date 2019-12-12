@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType.allAccountsReadOnly
+import typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType.appAccountsReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object UserDataAccountStoreAccessType extends js.Object {
   @js.native
   sealed trait appAccountsReadWrite extends UserDataAccountStoreAccessType
   
-  /* 0 */ val allAccountsReadOnly: typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType.allAccountsReadOnly with Double = js.native
-  /* 1 */ val appAccountsReadWrite: typings.winrtDashUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreAccessType.appAccountsReadWrite with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserDataAccountStoreAccessType with Double] = js.native
+  /* 0 */ @js.native
+  object allAccountsReadOnly extends TopLevel[allAccountsReadOnly with Double]
+  
+  /* 1 */ @js.native
+  object appAccountsReadWrite extends TopLevel[appAccountsReadWrite with Double]
+  
 }
 

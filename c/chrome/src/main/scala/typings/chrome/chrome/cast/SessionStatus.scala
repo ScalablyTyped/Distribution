@@ -1,5 +1,9 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.SessionStatus.CONNECTED
+import typings.chrome.chrome.cast.SessionStatus.DISCONNECTED
+import typings.chrome.chrome.cast.SessionStatus.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SessionStatus extends js.Object {
   @js.native
   sealed trait STOPPED extends SessionStatus
   
-  /* "connected" */ val CONNECTED: typings.chrome.chrome.cast.SessionStatus.CONNECTED with String = js.native
-  /* "disconnected" */ val DISCONNECTED: typings.chrome.chrome.cast.SessionStatus.DISCONNECTED with String = js.native
-  /* "stopped" */ val STOPPED: typings.chrome.chrome.cast.SessionStatus.STOPPED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SessionStatus with String] = js.native
+  /* "connected" */ @js.native
+  object CONNECTED extends TopLevel[CONNECTED with String]
+  
+  /* "disconnected" */ @js.native
+  object DISCONNECTED extends TopLevel[DISCONNECTED with String]
+  
+  /* "stopped" */ @js.native
+  object STOPPED extends TopLevel[STOPPED with String]
+  
 }
 

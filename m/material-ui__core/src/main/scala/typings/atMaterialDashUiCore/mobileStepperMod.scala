@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object mobileStepperMod extends js.Object {
     def this(props: MobileStepperProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[MobileStepperProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[MobileStepperProps]]
+  
 }
 

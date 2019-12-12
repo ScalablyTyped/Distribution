@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.linearProgressLinearProgressMod.LinearProgressProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object linearProgressMod extends js.Object {
     def this(props: LinearProgressProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[LinearProgressProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[LinearProgressProps]]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK
+import typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK_MULTIPLIER
+import typings.cesium.cesiumMod.ClockStep.TICK_DEPENDENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ClockStep extends js.Object {
   @js.native
   sealed trait TICK_DEPENDENT extends ClockStep
   
-  /* 2 */ val SYSTEM_CLOCK: typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK with Double = js.native
-  /* 1 */ val SYSTEM_CLOCK_MULTIPLIER: typings.cesium.cesiumMod.ClockStep.SYSTEM_CLOCK_MULTIPLIER with Double = js.native
-  /* 0 */ val TICK_DEPENDENT: typings.cesium.cesiumMod.ClockStep.TICK_DEPENDENT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClockStep with Double] = js.native
+  /* 2 */ @js.native
+  object SYSTEM_CLOCK extends TopLevel[SYSTEM_CLOCK with Double]
+  
+  /* 1 */ @js.native
+  object SYSTEM_CLOCK_MULTIPLIER extends TopLevel[SYSTEM_CLOCK_MULTIPLIER with Double]
+  
+  /* 0 */ @js.native
+  object TICK_DEPENDENT extends TopLevel[TICK_DEPENDENT with Double]
+  
 }
 

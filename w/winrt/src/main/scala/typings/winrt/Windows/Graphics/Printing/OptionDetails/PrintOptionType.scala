@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.itemList
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.number
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.text
+import typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object PrintOptionType extends js.Object {
   @js.native
   sealed trait unknown extends PrintOptionType
   
-  /* 3 */ val itemList: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.itemList with Double = js.native
-  /* 1 */ val number: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.number with Double = js.native
-  /* 2 */ val text: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.text with Double = js.native
-  /* 0 */ val unknown: typings.winrt.Windows.Graphics.Printing.OptionDetails.PrintOptionType.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintOptionType with Double] = js.native
+  /* 3 */ @js.native
+  object itemList extends TopLevel[itemList with Double]
+  
+  /* 1 */ @js.native
+  object number extends TopLevel[number with Double]
+  
+  /* 2 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

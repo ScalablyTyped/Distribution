@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.VideoSourceType.UNSUPPORTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.VideoSourceType.YOUTUBE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object VideoSourceType extends js.Object {
   @js.native
   sealed trait YOUTUBE extends VideoSourceType
   
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.VideoSourceType.UNSUPPORTED with Double = js.native
-  /* 1 */ val YOUTUBE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.VideoSourceType.YOUTUBE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VideoSourceType with Double] = js.native
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
+  /* 1 */ @js.native
+  object YOUTUBE extends TopLevel[YOUTUBE with Double]
+  
 }
 

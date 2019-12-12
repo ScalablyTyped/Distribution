@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.CalculationState.calculating
+import typings.officeDashJsDashPreview.Excel.CalculationState.done
+import typings.officeDashJsDashPreview.Excel.CalculationState.pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object CalculationState extends js.Object {
   @js.native
   sealed trait pending extends CalculationState
   
-  /* "Calculating" */ val calculating: typings.officeDashJsDashPreview.Excel.CalculationState.calculating with String = js.native
-  /* "Done" */ val done: typings.officeDashJsDashPreview.Excel.CalculationState.done with String = js.native
-  /* "Pending" */ val pending: typings.officeDashJsDashPreview.Excel.CalculationState.pending with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CalculationState with String] = js.native
+  /* "Calculating" */ @js.native
+  object calculating extends TopLevel[calculating with String]
+  
+  /* "Done" */ @js.native
+  object done extends TopLevel[done with String]
+  
+  /* "Pending" */ @js.native
+  object pending extends TopLevel[pending with String]
+  
 }
 

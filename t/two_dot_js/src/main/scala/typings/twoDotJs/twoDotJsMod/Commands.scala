@@ -1,5 +1,11 @@
 package typings.twoDotJs.twoDotJsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.twoDotJs.twoDotJsMod.Commands.arc
+import typings.twoDotJs.twoDotJsMod.Commands.close
+import typings.twoDotJs.twoDotJsMod.Commands.curve
+import typings.twoDotJs.twoDotJsMod.Commands.line
+import typings.twoDotJs.twoDotJsMod.Commands.move
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Commands extends js.Object {
   @js.native
   sealed trait move extends Commands
   
-  /* 3 */ val arc: typings.twoDotJs.twoDotJsMod.Commands.arc with Double = js.native
-  /* 4 */ val close: typings.twoDotJs.twoDotJsMod.Commands.close with Double = js.native
-  /* 2 */ val curve: typings.twoDotJs.twoDotJsMod.Commands.curve with Double = js.native
-  /* 1 */ val line: typings.twoDotJs.twoDotJsMod.Commands.line with Double = js.native
-  /* 0 */ val move: typings.twoDotJs.twoDotJsMod.Commands.move with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Commands with Double] = js.native
+  /* 3 */ @js.native
+  object arc extends TopLevel[arc with Double]
+  
+  /* 4 */ @js.native
+  object close extends TopLevel[close with Double]
+  
+  /* 2 */ @js.native
+  object curve extends TopLevel[curve with Double]
+  
+  /* 1 */ @js.native
+  object line extends TopLevel[line with Double]
+  
+  /* 0 */ @js.native
+  object move extends TopLevel[move with Double]
+  
 }
 

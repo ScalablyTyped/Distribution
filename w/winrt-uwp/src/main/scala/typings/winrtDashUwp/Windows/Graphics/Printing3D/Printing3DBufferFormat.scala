@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DDouble
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DUInt
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32Float
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32UInt
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32Float
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32UInt
+import typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object Printing3DBufferFormat extends js.Object {
   @js.native
   sealed trait unknown extends Printing3DBufferFormat
   
-  /* 5 */ val printing3DDouble: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DDouble with Double = js.native
-  /* 6 */ val printing3DUInt: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.printing3DUInt with Double = js.native
-  /* 1 */ val r32G32B32A32Float: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32Float with Double = js.native
-  /* 2 */ val r32G32B32A32UInt: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32A32UInt with Double = js.native
-  /* 3 */ val r32G32B32Float: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32Float with Double = js.native
-  /* 4 */ val r32G32B32UInt: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.r32G32B32UInt with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Graphics.Printing3D.Printing3DBufferFormat.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Printing3DBufferFormat with Double] = js.native
+  /* 5 */ @js.native
+  object printing3DDouble extends TopLevel[printing3DDouble with Double]
+  
+  /* 6 */ @js.native
+  object printing3DUInt extends TopLevel[printing3DUInt with Double]
+  
+  /* 1 */ @js.native
+  object r32G32B32A32Float extends TopLevel[r32G32B32A32Float with Double]
+  
+  /* 2 */ @js.native
+  object r32G32B32A32UInt extends TopLevel[r32G32B32A32UInt with Double]
+  
+  /* 3 */ @js.native
+  object r32G32B32Float extends TopLevel[r32G32B32Float with Double]
+  
+  /* 4 */ @js.native
+  object r32G32B32UInt extends TopLevel[r32G32B32UInt with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

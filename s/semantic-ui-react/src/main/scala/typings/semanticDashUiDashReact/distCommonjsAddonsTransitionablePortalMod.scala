@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentClass
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object distCommonjsAddonsTransitionablePortalMod extends js.Object {
     def this(props: TransitionablePortalProps, context: js.Any) = this()
   }
   
-  val default: ComponentClass[TransitionablePortalProps, ComponentState] = js.native
+  @js.native
+  object default extends TopLevel[ComponentClass[TransitionablePortalProps, ComponentState]]
+  
 }
 

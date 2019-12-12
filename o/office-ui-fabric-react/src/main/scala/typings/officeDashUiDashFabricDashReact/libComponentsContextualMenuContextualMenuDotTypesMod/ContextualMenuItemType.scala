@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Divider
+import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Header
+import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Normal
+import typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Section
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object ContextualMenuItemType extends js.Object {
   @js.native
   sealed trait Section extends ContextualMenuItemType
   
-  /* 1 */ val Divider: typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Divider with Double = js.native
-  /* 2 */ val Header: typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Header with Double = js.native
-  /* 0 */ val Normal: typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Normal with Double = js.native
-  /* 3 */ val Section: typings.officeDashUiDashFabricDashReact.libComponentsContextualMenuContextualMenuDotTypesMod.ContextualMenuItemType.Section with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContextualMenuItemType with Double] = js.native
+  /* 1 */ @js.native
+  object Divider extends TopLevel[Divider with Double]
+  
+  /* 2 */ @js.native
+  object Header extends TopLevel[Header with Double]
+  
+  /* 0 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
+  /* 3 */ @js.native
+  object Section extends TopLevel[Section with Double]
+  
 }
 

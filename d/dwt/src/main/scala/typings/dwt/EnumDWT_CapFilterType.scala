@@ -1,5 +1,15 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapFilterType.TWFT_BLACK
+import typings.dwt.EnumDWT_CapFilterType.TWFT_BLUE
+import typings.dwt.EnumDWT_CapFilterType.TWFT_CYAN
+import typings.dwt.EnumDWT_CapFilterType.TWFT_GREEN
+import typings.dwt.EnumDWT_CapFilterType.TWFT_MAGENTA
+import typings.dwt.EnumDWT_CapFilterType.TWFT_NONE
+import typings.dwt.EnumDWT_CapFilterType.TWFT_RED
+import typings.dwt.EnumDWT_CapFilterType.TWFT_WHITE
+import typings.dwt.EnumDWT_CapFilterType.TWFT_YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,16 +48,34 @@ object EnumDWT_CapFilterType extends js.Object {
   @js.native
   sealed trait TWFT_YELLOW extends EnumDWT_CapFilterType
   
-  /* 8 */ val TWFT_BLACK: typings.dwt.EnumDWT_CapFilterType.TWFT_BLACK with Double = js.native
-  /* 2 */ val TWFT_BLUE: typings.dwt.EnumDWT_CapFilterType.TWFT_BLUE with Double = js.native
-  /* 5 */ val TWFT_CYAN: typings.dwt.EnumDWT_CapFilterType.TWFT_CYAN with Double = js.native
-  /* 1 */ val TWFT_GREEN: typings.dwt.EnumDWT_CapFilterType.TWFT_GREEN with Double = js.native
-  /* 6 */ val TWFT_MAGENTA: typings.dwt.EnumDWT_CapFilterType.TWFT_MAGENTA with Double = js.native
-  /* 3 */ val TWFT_NONE: typings.dwt.EnumDWT_CapFilterType.TWFT_NONE with Double = js.native
-  /* 0 */ val TWFT_RED: typings.dwt.EnumDWT_CapFilterType.TWFT_RED with Double = js.native
-  /* 4 */ val TWFT_WHITE: typings.dwt.EnumDWT_CapFilterType.TWFT_WHITE with Double = js.native
-  /* 7 */ val TWFT_YELLOW: typings.dwt.EnumDWT_CapFilterType.TWFT_YELLOW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapFilterType with Double] = js.native
+  /* 8 */ @js.native
+  object TWFT_BLACK extends TopLevel[TWFT_BLACK with Double]
+  
+  /* 2 */ @js.native
+  object TWFT_BLUE extends TopLevel[TWFT_BLUE with Double]
+  
+  /* 5 */ @js.native
+  object TWFT_CYAN extends TopLevel[TWFT_CYAN with Double]
+  
+  /* 1 */ @js.native
+  object TWFT_GREEN extends TopLevel[TWFT_GREEN with Double]
+  
+  /* 6 */ @js.native
+  object TWFT_MAGENTA extends TopLevel[TWFT_MAGENTA with Double]
+  
+  /* 3 */ @js.native
+  object TWFT_NONE extends TopLevel[TWFT_NONE with Double]
+  
+  /* 0 */ @js.native
+  object TWFT_RED extends TopLevel[TWFT_RED with Double]
+  
+  /* 4 */ @js.native
+  object TWFT_WHITE extends TopLevel[TWFT_WHITE with Double]
+  
+  /* 7 */ @js.native
+  object TWFT_YELLOW extends TopLevel[TWFT_YELLOW with Double]
+  
 }
 

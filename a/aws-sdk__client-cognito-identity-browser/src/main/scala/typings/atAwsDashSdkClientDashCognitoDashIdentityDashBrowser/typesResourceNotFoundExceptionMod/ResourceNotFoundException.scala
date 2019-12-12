@@ -16,11 +16,11 @@ import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkD
 import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUnlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
 import typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.typesUpdateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceNotFoundException
   extends ServiceException[_ResourceNotFoundExceptionDetails]
      with DeleteIdentityPoolExceptionsUnion
@@ -39,21 +39,6 @@ trait ResourceNotFoundException
      with UnlinkIdentityExceptionsUnion
      with UpdateIdentityPoolExceptionsUnion {
   @JSName("name")
-  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceNotFoundException
-}
-
-object ResourceNotFoundException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _ResourceNotFoundExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceNotFoundException,
-    stack: String = null
-  ): ResourceNotFoundException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceNotFoundException]
-  }
+  var name_ResourceNotFoundException: typings.atAwsDashSdkClientDashCognitoDashIdentityDashBrowser.atAwsDashSdkClientDashCognitoDashIdentityDashBrowserStrings.ResourceNotFoundException = js.native
 }
 

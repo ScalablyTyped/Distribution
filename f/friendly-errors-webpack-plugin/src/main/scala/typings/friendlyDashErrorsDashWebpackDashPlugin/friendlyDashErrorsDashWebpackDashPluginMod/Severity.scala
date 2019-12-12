@@ -1,5 +1,8 @@
 package typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Error
+import typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object Severity extends js.Object {
   @js.native
   sealed trait Warning extends Severity
   
-  /* "error" */ val Error: typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Error with String = js.native
-  /* "warning" */ val Warning: typings.friendlyDashErrorsDashWebpackDashPlugin.friendlyDashErrorsDashWebpackDashPluginMod.Severity.Warning with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Severity with String] = js.native
+  /* "error" */ @js.native
+  object Error extends TopLevel[Error with String]
+  
+  /* "warning" */ @js.native
+  object Warning extends TopLevel[Warning with String]
+  
 }
 

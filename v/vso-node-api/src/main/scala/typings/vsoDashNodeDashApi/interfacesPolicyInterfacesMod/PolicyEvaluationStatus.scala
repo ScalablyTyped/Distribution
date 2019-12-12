@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Approved
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Broken
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.NotApplicable
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Queued
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Rejected
+import typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Running
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object PolicyEvaluationStatus extends js.Object {
   @js.native
   sealed trait Running extends PolicyEvaluationStatus
   
-  /* 2 */ val Approved: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Approved with Double = js.native
-  /* 5 */ val Broken: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Broken with Double = js.native
-  /* 4 */ val NotApplicable: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.NotApplicable with Double = js.native
-  /* 0 */ val Queued: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Queued with Double = js.native
-  /* 3 */ val Rejected: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Rejected with Double = js.native
-  /* 1 */ val Running: typings.vsoDashNodeDashApi.interfacesPolicyInterfacesMod.PolicyEvaluationStatus.Running with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PolicyEvaluationStatus with Double] = js.native
+  /* 2 */ @js.native
+  object Approved extends TopLevel[Approved with Double]
+  
+  /* 5 */ @js.native
+  object Broken extends TopLevel[Broken with Double]
+  
+  /* 4 */ @js.native
+  object NotApplicable extends TopLevel[NotApplicable with Double]
+  
+  /* 0 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 3 */ @js.native
+  object Rejected extends TopLevel[Rejected with Double]
+  
+  /* 1 */ @js.native
+  object Running extends TopLevel[Running with Double]
+  
 }
 

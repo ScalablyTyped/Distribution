@@ -1,5 +1,22 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.CreateBranchPermissionRequired
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.CreateTagPermissionRequired
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.ForcePushRequired
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.InvalidRefName
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Locked
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.ManageNotePermissionRequired
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RefNameConflict
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RejectedByPlugin
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RejectedByPolicy
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.StaleOldObjectId
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Succeeded
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.SucceededCorruptRef
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.SucceededNonExistentRef
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Unprocessed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.UnresolvableToCommit
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.WritePermissionRequired
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,23 +123,55 @@ object GitRefUpdateStatus extends js.Object {
   @js.native
   sealed trait WritePermissionRequired extends GitRefUpdateStatus
   
-  /* 8 */ val CreateBranchPermissionRequired: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.CreateBranchPermissionRequired with Double = js.native
-  /* 9 */ val CreateTagPermissionRequired: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.CreateTagPermissionRequired with Double = js.native
-  /* 1 */ val ForcePushRequired: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.ForcePushRequired with Double = js.native
-  /* 3 */ val InvalidRefName: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.InvalidRefName with Double = js.native
-  /* 11 */ val Locked: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Locked with Double = js.native
-  /* 7 */ val ManageNotePermissionRequired: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.ManageNotePermissionRequired with Double = js.native
-  /* 12 */ val RefNameConflict: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RefNameConflict with Double = js.native
-  /* 10 */ val RejectedByPlugin: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RejectedByPlugin with Double = js.native
-  /* 13 */ val RejectedByPolicy: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.RejectedByPolicy with Double = js.native
-  /* 2 */ val StaleOldObjectId: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.StaleOldObjectId with Double = js.native
-  /* 0 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Succeeded with Double = js.native
-  /* 15 */ val SucceededCorruptRef: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.SucceededCorruptRef with Double = js.native
-  /* 14 */ val SucceededNonExistentRef: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.SucceededNonExistentRef with Double = js.native
-  /* 4 */ val Unprocessed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.Unprocessed with Double = js.native
-  /* 5 */ val UnresolvableToCommit: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.UnresolvableToCommit with Double = js.native
-  /* 6 */ val WritePermissionRequired: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitRefUpdateStatus.WritePermissionRequired with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitRefUpdateStatus with Double] = js.native
+  /* 8 */ @js.native
+  object CreateBranchPermissionRequired extends TopLevel[CreateBranchPermissionRequired with Double]
+  
+  /* 9 */ @js.native
+  object CreateTagPermissionRequired extends TopLevel[CreateTagPermissionRequired with Double]
+  
+  /* 1 */ @js.native
+  object ForcePushRequired extends TopLevel[ForcePushRequired with Double]
+  
+  /* 3 */ @js.native
+  object InvalidRefName extends TopLevel[InvalidRefName with Double]
+  
+  /* 11 */ @js.native
+  object Locked extends TopLevel[Locked with Double]
+  
+  /* 7 */ @js.native
+  object ManageNotePermissionRequired extends TopLevel[ManageNotePermissionRequired with Double]
+  
+  /* 12 */ @js.native
+  object RefNameConflict extends TopLevel[RefNameConflict with Double]
+  
+  /* 10 */ @js.native
+  object RejectedByPlugin extends TopLevel[RejectedByPlugin with Double]
+  
+  /* 13 */ @js.native
+  object RejectedByPolicy extends TopLevel[RejectedByPolicy with Double]
+  
+  /* 2 */ @js.native
+  object StaleOldObjectId extends TopLevel[StaleOldObjectId with Double]
+  
+  /* 0 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 15 */ @js.native
+  object SucceededCorruptRef extends TopLevel[SucceededCorruptRef with Double]
+  
+  /* 14 */ @js.native
+  object SucceededNonExistentRef extends TopLevel[SucceededNonExistentRef with Double]
+  
+  /* 4 */ @js.native
+  object Unprocessed extends TopLevel[Unprocessed with Double]
+  
+  /* 5 */ @js.native
+  object UnresolvableToCommit extends TopLevel[UnresolvableToCommit with Double]
+  
+  /* 6 */ @js.native
+  object WritePermissionRequired extends TopLevel[WritePermissionRequired with Double]
+  
 }
 

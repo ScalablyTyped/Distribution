@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Storage.FileProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.documentsView
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.listView
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.musicView
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.picturesView
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.singleItem
+import typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.videosView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object ThumbnailMode extends js.Object {
   @js.native
   sealed trait videosView extends ThumbnailMode
   
-  /* 3 */ val documentsView: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.documentsView with Double = js.native
-  /* 4 */ val listView: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.listView with Double = js.native
-  /* 2 */ val musicView: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.musicView with Double = js.native
-  /* 0 */ val picturesView: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.picturesView with Double = js.native
-  /* 5 */ val singleItem: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.singleItem with Double = js.native
-  /* 1 */ val videosView: typings.winrtDashUwp.Windows.Storage.FileProperties.ThumbnailMode.videosView with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ThumbnailMode with Double] = js.native
+  /* 3 */ @js.native
+  object documentsView extends TopLevel[documentsView with Double]
+  
+  /* 4 */ @js.native
+  object listView extends TopLevel[listView with Double]
+  
+  /* 2 */ @js.native
+  object musicView extends TopLevel[musicView with Double]
+  
+  /* 0 */ @js.native
+  object picturesView extends TopLevel[picturesView with Double]
+  
+  /* 5 */ @js.native
+  object singleItem extends TopLevel[singleItem with Double]
+  
+  /* 1 */ @js.native
+  object videosView extends TopLevel[videosView with Double]
+  
 }
 

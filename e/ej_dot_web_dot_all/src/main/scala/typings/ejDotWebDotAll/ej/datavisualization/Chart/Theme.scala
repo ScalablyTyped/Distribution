@@ -1,5 +1,16 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azure
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azuredark
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatDark
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatLight
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientDark
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientLight
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Lime
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.LimeDark
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Saffron
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.SaffronDark
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,17 +61,37 @@ object Theme extends js.Object {
   @js.native
   sealed trait SaffronDark extends Theme
   
-  /* 0 */ val Azure: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azure with Double = js.native
-  /* 3 */ val Azuredark: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Azuredark with Double = js.native
-  /* 2 */ val FlatDark: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatDark with Double = js.native
-  /* 1 */ val FlatLight: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.FlatLight with Double = js.native
-  /* 9 */ val GradientDark: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientDark with Double = js.native
-  /* 8 */ val GradientLight: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.GradientLight with Double = js.native
-  /* 4 */ val Lime: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Lime with Double = js.native
-  /* 5 */ val LimeDark: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.LimeDark with Double = js.native
-  /* 6 */ val Saffron: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.Saffron with Double = js.native
-  /* 7 */ val SaffronDark: typings.ejDotWebDotAll.ej.datavisualization.Chart.Theme.SaffronDark with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Theme with Double] = js.native
+  /* 0 */ @js.native
+  object Azure extends TopLevel[Azure with Double]
+  
+  /* 3 */ @js.native
+  object Azuredark extends TopLevel[Azuredark with Double]
+  
+  /* 2 */ @js.native
+  object FlatDark extends TopLevel[FlatDark with Double]
+  
+  /* 1 */ @js.native
+  object FlatLight extends TopLevel[FlatLight with Double]
+  
+  /* 9 */ @js.native
+  object GradientDark extends TopLevel[GradientDark with Double]
+  
+  /* 8 */ @js.native
+  object GradientLight extends TopLevel[GradientLight with Double]
+  
+  /* 4 */ @js.native
+  object Lime extends TopLevel[Lime with Double]
+  
+  /* 5 */ @js.native
+  object LimeDark extends TopLevel[LimeDark with Double]
+  
+  /* 6 */ @js.native
+  object Saffron extends TopLevel[Saffron with Double]
+  
+  /* 7 */ @js.native
+  object SaffronDark extends TopLevel[SaffronDark with Double]
+  
 }
 

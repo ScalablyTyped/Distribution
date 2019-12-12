@@ -1,5 +1,11 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapType.TWON_ARRAY
+import typings.dwt.EnumDWT_CapType.TWON_ENUMERATION
+import typings.dwt.EnumDWT_CapType.TWON_NONE
+import typings.dwt.EnumDWT_CapType.TWON_ONEVALUE
+import typings.dwt.EnumDWT_CapType.TWON_RANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,12 +51,22 @@ object EnumDWT_CapType extends js.Object {
   @js.native
   sealed trait TWON_RANGE extends EnumDWT_CapType
   
-  /* 3 */ val TWON_ARRAY: typings.dwt.EnumDWT_CapType.TWON_ARRAY with Double = js.native
-  /* 4 */ val TWON_ENUMERATION: typings.dwt.EnumDWT_CapType.TWON_ENUMERATION with Double = js.native
-  /* 0 */ val TWON_NONE: typings.dwt.EnumDWT_CapType.TWON_NONE with Double = js.native
-  /* 5 */ val TWON_ONEVALUE: typings.dwt.EnumDWT_CapType.TWON_ONEVALUE with Double = js.native
-  /* 6 */ val TWON_RANGE: typings.dwt.EnumDWT_CapType.TWON_RANGE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapType with Double] = js.native
+  /* 3 */ @js.native
+  object TWON_ARRAY extends TopLevel[TWON_ARRAY with Double]
+  
+  /* 4 */ @js.native
+  object TWON_ENUMERATION extends TopLevel[TWON_ENUMERATION with Double]
+  
+  /* 0 */ @js.native
+  object TWON_NONE extends TopLevel[TWON_NONE with Double]
+  
+  /* 5 */ @js.native
+  object TWON_ONEVALUE extends TopLevel[TWON_ONEVALUE with Double]
+  
+  /* 6 */ @js.native
+  object TWON_RANGE extends TopLevel[TWON_RANGE with Double]
+  
 }
 

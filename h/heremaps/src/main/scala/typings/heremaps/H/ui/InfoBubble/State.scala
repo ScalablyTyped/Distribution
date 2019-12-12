@@ -1,5 +1,8 @@
 package typings.heremaps.H.ui.InfoBubble
 
+import org.scalablytyped.runtime.TopLevel
+import typings.heremaps.H.ui.InfoBubble.State.CLOSED
+import typings.heremaps.H.ui.InfoBubble.State.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,9 +24,13 @@ object State extends js.Object {
   @js.native
   sealed trait OPEN extends State
   
-  /* 1 */ val CLOSED: typings.heremaps.H.ui.InfoBubble.State.CLOSED with Double = js.native
-  /* 0 */ val OPEN: typings.heremaps.H.ui.InfoBubble.State.OPEN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[State with Double] = js.native
+  /* 1 */ @js.native
+  object CLOSED extends TopLevel[CLOSED with Double]
+  
+  /* 0 */ @js.native
+  object OPEN extends TopLevel[OPEN with Double]
+  
 }
 

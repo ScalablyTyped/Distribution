@@ -1,5 +1,11 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Custom
+import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Interval
+import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Off
+import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.On
+import typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Relative
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object RenderLineNumbersType extends js.Object {
   @js.native
   sealed trait Relative extends RenderLineNumbersType
   
-  /* 4 */ val Custom: typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Custom with Double = js.native
-  /* 3 */ val Interval: typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Interval with Double = js.native
-  /* 0 */ val Off: typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Off with Double = js.native
-  /* 1 */ val On: typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.On with Double = js.native
-  /* 2 */ val Relative: typings.monacoDashEditor.monacoDashEditorMod.editor.RenderLineNumbersType.Relative with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RenderLineNumbersType with Double] = js.native
+  /* 4 */ @js.native
+  object Custom extends TopLevel[Custom with Double]
+  
+  /* 3 */ @js.native
+  object Interval extends TopLevel[Interval with Double]
+  
+  /* 0 */ @js.native
+  object Off extends TopLevel[Off with Double]
+  
+  /* 1 */ @js.native
+  object On extends TopLevel[On with Double]
+  
+  /* 2 */ @js.native
+  object Relative extends TopLevel[Relative with Double]
+  
 }
 

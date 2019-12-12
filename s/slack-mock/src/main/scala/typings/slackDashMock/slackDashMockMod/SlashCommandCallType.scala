@@ -1,5 +1,8 @@
 package typings.slackDashMock.slackDashMockMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response
+import typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response_url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SlashCommandCallType extends js.Object {
   @js.native
   sealed trait response_url extends SlashCommandCallType
   
-  /* "response" */ val response: typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response with String = js.native
-  /* "response_url" */ val response_url: typings.slackDashMock.slackDashMockMod.SlashCommandCallType.response_url with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SlashCommandCallType with String] = js.native
+  /* "response" */ @js.native
+  object response extends TopLevel[response with String]
+  
+  /* "response_url" */ @js.native
+  object response_url extends TopLevel[response_url with String]
+  
 }
 

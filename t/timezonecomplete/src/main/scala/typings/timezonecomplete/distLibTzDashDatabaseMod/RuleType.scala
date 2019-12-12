@@ -1,5 +1,9 @@
 package typings.timezonecomplete.distLibTzDashDatabaseMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.None
+import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.Offset
+import typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.RuleName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object RuleType extends js.Object {
   @js.native
   sealed trait RuleName extends RuleType
   
-  /* 0 */ val None: typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.None with Double = js.native
-  /* 1 */ val Offset: typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.Offset with Double = js.native
-  /* 2 */ val RuleName: typings.timezonecomplete.distLibTzDashDatabaseMod.RuleType.RuleName with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RuleType with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Offset extends TopLevel[Offset with Double]
+  
+  /* 2 */ @js.native
+  object RuleName extends TopLevel[RuleName with Double]
+  
 }
 

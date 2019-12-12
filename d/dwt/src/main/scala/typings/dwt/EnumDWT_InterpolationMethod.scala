@@ -1,5 +1,10 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_InterpolationMethod.IM_BESTQUALITY
+import typings.dwt.EnumDWT_InterpolationMethod.IM_BICUBIC
+import typings.dwt.EnumDWT_InterpolationMethod.IM_BILINEAR
+import typings.dwt.EnumDWT_InterpolationMethod.IM_NEARESTNEIGHBOUR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +28,19 @@ object EnumDWT_InterpolationMethod extends js.Object {
   @js.native
   sealed trait IM_NEARESTNEIGHBOUR extends EnumDWT_InterpolationMethod
   
-  /* 5 */ val IM_BESTQUALITY: typings.dwt.EnumDWT_InterpolationMethod.IM_BESTQUALITY with Double = js.native
-  /* 3 */ val IM_BICUBIC: typings.dwt.EnumDWT_InterpolationMethod.IM_BICUBIC with Double = js.native
-  /* 2 */ val IM_BILINEAR: typings.dwt.EnumDWT_InterpolationMethod.IM_BILINEAR with Double = js.native
-  /* 1 */ val IM_NEARESTNEIGHBOUR: typings.dwt.EnumDWT_InterpolationMethod.IM_NEARESTNEIGHBOUR with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_InterpolationMethod with Double] = js.native
+  /* 5 */ @js.native
+  object IM_BESTQUALITY extends TopLevel[IM_BESTQUALITY with Double]
+  
+  /* 3 */ @js.native
+  object IM_BICUBIC extends TopLevel[IM_BICUBIC with Double]
+  
+  /* 2 */ @js.native
+  object IM_BILINEAR extends TopLevel[IM_BILINEAR with Double]
+  
+  /* 1 */ @js.native
+  object IM_NEARESTNEIGHBOUR extends TopLevel[IM_NEARESTNEIGHBOUR with Double]
+  
 }
 

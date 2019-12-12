@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.capability
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.chat
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.fileTransfer
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.groupChat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object RcsServiceKind extends js.Object {
   @js.native
   sealed trait groupChat extends RcsServiceKind
   
-  /* 3 */ val capability: typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.capability with Double = js.native
-  /* 0 */ val chat: typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.chat with Double = js.native
-  /* 2 */ val fileTransfer: typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.fileTransfer with Double = js.native
-  /* 1 */ val groupChat: typings.winrtDashUwp.Windows.ApplicationModel.Chat.RcsServiceKind.groupChat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RcsServiceKind with Double] = js.native
+  /* 3 */ @js.native
+  object capability extends TopLevel[capability with Double]
+  
+  /* 0 */ @js.native
+  object chat extends TopLevel[chat with Double]
+  
+  /* 2 */ @js.native
+  object fileTransfer extends TopLevel[fileTransfer with Double]
+  
+  /* 1 */ @js.native
+  object groupChat extends TopLevel[groupChat with Double]
+  
 }
 

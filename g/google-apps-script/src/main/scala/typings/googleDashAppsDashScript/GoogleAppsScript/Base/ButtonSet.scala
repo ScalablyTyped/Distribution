@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK_CANCEL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO_CANCEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,11 +43,19 @@ object ButtonSet extends js.Object {
   @js.native
   sealed trait YES_NO_CANCEL extends ButtonSet
   
-  /* 0 */ val OK: typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK with Double = js.native
-  /* 1 */ val OK_CANCEL: typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.OK_CANCEL with Double = js.native
-  /* 2 */ val YES_NO: typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO with Double = js.native
-  /* 3 */ val YES_NO_CANCEL: typings.googleDashAppsDashScript.GoogleAppsScript.Base.ButtonSet.YES_NO_CANCEL with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ButtonSet with Double] = js.native
+  /* 0 */ @js.native
+  object OK extends TopLevel[OK with Double]
+  
+  /* 1 */ @js.native
+  object OK_CANCEL extends TopLevel[OK_CANCEL with Double]
+  
+  /* 2 */ @js.native
+  object YES_NO extends TopLevel[YES_NO with Double]
+  
+  /* 3 */ @js.native
+  object YES_NO_CANCEL extends TopLevel[YES_NO_CANCEL with Double]
+  
 }
 

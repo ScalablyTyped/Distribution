@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Grid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Grid.ClipMode.Clip
+import typings.ejDotWebDotAll.ej.Grid.ClipMode.Ellipsis
+import typings.ejDotWebDotAll.ej.Grid.ClipMode.EllipsisWithTooltip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ClipMode extends js.Object {
   @js.native
   sealed trait EllipsisWithTooltip extends ClipMode
   
-  /* 1 */ val Clip: typings.ejDotWebDotAll.ej.Grid.ClipMode.Clip with Double = js.native
-  /* 0 */ val Ellipsis: typings.ejDotWebDotAll.ej.Grid.ClipMode.Ellipsis with Double = js.native
-  /* 2 */ val EllipsisWithTooltip: typings.ejDotWebDotAll.ej.Grid.ClipMode.EllipsisWithTooltip with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClipMode with Double] = js.native
+  /* 1 */ @js.native
+  object Clip extends TopLevel[Clip with Double]
+  
+  /* 0 */ @js.native
+  object Ellipsis extends TopLevel[Ellipsis with Double]
+  
+  /* 2 */ @js.native
+  object EllipsisWithTooltip extends TopLevel[EllipsisWithTooltip with Double]
+  
 }
 

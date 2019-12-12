@@ -1,5 +1,8 @@
 package typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.Equals
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.NotEquals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object InputFilterOperator extends js.Object {
   @js.native
   sealed trait NotEquals extends InputFilterOperator
   
-  /* 0 */ val Equals: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.Equals with Double = js.native
-  /* 1 */ val NotEquals: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputFilterOperator.NotEquals with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InputFilterOperator with Double] = js.native
+  /* 0 */ @js.native
+  object Equals extends TopLevel[Equals with Double]
+  
+  /* 1 */ @js.native
+  object NotEquals extends TopLevel[NotEquals with Double]
+  
 }
 

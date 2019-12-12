@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleCellRanges
+import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleColRanges
+import typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleRowRanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SelectionTypeFlags extends js.Object {
   @js.native
   sealed trait MultipleRowRanges extends SelectionTypeFlags
   
-  /* 0 */ val MultipleCellRanges: typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleCellRanges with Double = js.native
-  /* 2 */ val MultipleColRanges: typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleColRanges with Double = js.native
-  /* 1 */ val MultipleRowRanges: typings.sharepoint.SP.JsGrid.SelectionTypeFlags.MultipleRowRanges with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionTypeFlags with Double] = js.native
+  /* 0 */ @js.native
+  object MultipleCellRanges extends TopLevel[MultipleCellRanges with Double]
+  
+  /* 2 */ @js.native
+  object MultipleColRanges extends TopLevel[MultipleColRanges with Double]
+  
+  /* 1 */ @js.native
+  object MultipleRowRanges extends TopLevel[MultipleRowRanges with Double]
+  
 }
 

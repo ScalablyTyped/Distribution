@@ -1,5 +1,7 @@
 package typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.TypeModifier.Const
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object TypeModifier extends js.Object {
   @js.native
   sealed trait Const extends TypeModifier
   
-  /* 0 */ val Const: typings.atAngularCompiler.srcOutputOutputUnderscoreAstMod.TypeModifier.Const with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeModifier with Double] = js.native
+  /* 0 */ @js.native
+  object Const extends TopLevel[Const with Double]
+  
 }
 

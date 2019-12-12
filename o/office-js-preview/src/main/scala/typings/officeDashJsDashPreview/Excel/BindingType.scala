@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.BindingType.range
+import typings.officeDashJsDashPreview.Excel.BindingType.table
+import typings.officeDashJsDashPreview.Excel.BindingType.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object BindingType extends js.Object {
   @js.native
   sealed trait text extends BindingType
   
-  /* "Range" */ val range: typings.officeDashJsDashPreview.Excel.BindingType.range with String = js.native
-  /* "Table" */ val table: typings.officeDashJsDashPreview.Excel.BindingType.table with String = js.native
-  /* "Text" */ val text: typings.officeDashJsDashPreview.Excel.BindingType.text with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[BindingType with String] = js.native
+  /* "Range" */ @js.native
+  object range extends TopLevel[range with String]
+  
+  /* "Table" */ @js.native
+  object table extends TopLevel[table with String]
+  
+  /* "Text" */ @js.native
+  object text extends TopLevel[text with String]
+  
 }
 

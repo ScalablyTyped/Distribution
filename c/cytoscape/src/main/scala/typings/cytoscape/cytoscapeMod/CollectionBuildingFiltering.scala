@@ -93,8 +93,10 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
   def `+`(eles: js.Array[CollectionArgument]): CollectionReturnValue = js.native
   def `+`(eles: CollectionArgument): CollectionReturnValue = js.native
   def `+`(eles: Selector): CollectionReturnValue = js.native
-  def `-`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `-`(eles: Selector): CollectionReturnValue = js.native
+  @JSName("-")
+  def `-_`(eles: CollectionArgument): CollectionReturnValue = js.native
+  @JSName("-")
+  def `-_`(eles: Selector): CollectionReturnValue = js.native
   def `.`(eles: CollectionArgument): CollectionReturnValue = js.native
   def `.`(eles: Selector): CollectionReturnValue = js.native
   def apply(eles: CollectionArgument): CollectionReturnValue = js.native

@@ -1,5 +1,14 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.DeliveryPreferencesEditable
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsGroup
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsTeam
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsUser
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.None
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsEachMemberDelivery
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsNoDelivery
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsPreferredEmailAddressDelivery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,15 +64,31 @@ object SubscriberFlags extends js.Object {
   @js.native
   sealed trait SupportsPreferredEmailAddressDelivery extends SubscriberFlags
   
-  /* 2 */ val DeliveryPreferencesEditable: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.DeliveryPreferencesEditable with Double = js.native
-  /* 64 */ val IsGroup: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsGroup with Double = js.native
-  /* 128 */ val IsTeam: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsTeam with Double = js.native
-  /* 32 */ val IsUser: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.IsUser with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.None with Double = js.native
-  /* 8 */ val SupportsEachMemberDelivery: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsEachMemberDelivery with Double = js.native
-  /* 16 */ val SupportsNoDelivery: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsNoDelivery with Double = js.native
-  /* 4 */ val SupportsPreferredEmailAddressDelivery: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriberFlags.SupportsPreferredEmailAddressDelivery with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriberFlags with Double] = js.native
+  /* 2 */ @js.native
+  object DeliveryPreferencesEditable extends TopLevel[DeliveryPreferencesEditable with Double]
+  
+  /* 64 */ @js.native
+  object IsGroup extends TopLevel[IsGroup with Double]
+  
+  /* 128 */ @js.native
+  object IsTeam extends TopLevel[IsTeam with Double]
+  
+  /* 32 */ @js.native
+  object IsUser extends TopLevel[IsUser with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 8 */ @js.native
+  object SupportsEachMemberDelivery extends TopLevel[SupportsEachMemberDelivery with Double]
+  
+  /* 16 */ @js.native
+  object SupportsNoDelivery extends TopLevel[SupportsNoDelivery with Double]
+  
+  /* 4 */ @js.native
+  object SupportsPreferredEmailAddressDelivery extends TopLevel[SupportsPreferredEmailAddressDelivery with Double]
+  
 }
 

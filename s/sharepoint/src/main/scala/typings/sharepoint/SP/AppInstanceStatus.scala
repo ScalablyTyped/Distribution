@@ -1,5 +1,16 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.AppInstanceStatus.canceling
+import typings.sharepoint.SP.AppInstanceStatus.disabled
+import typings.sharepoint.SP.AppInstanceStatus.disabling
+import typings.sharepoint.SP.AppInstanceStatus.initialized
+import typings.sharepoint.SP.AppInstanceStatus.installed
+import typings.sharepoint.SP.AppInstanceStatus.installing
+import typings.sharepoint.SP.AppInstanceStatus.invalidStatus
+import typings.sharepoint.SP.AppInstanceStatus.uninstalling
+import typings.sharepoint.SP.AppInstanceStatus.upgradeCanceling
+import typings.sharepoint.SP.AppInstanceStatus.upgrading
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,17 +51,37 @@ object AppInstanceStatus extends js.Object {
   @js.native
   sealed trait upgrading extends AppInstanceStatus
   
-  /* 2 */ val canceling: typings.sharepoint.SP.AppInstanceStatus.canceling with Double = js.native
-  /* 9 */ val disabled: typings.sharepoint.SP.AppInstanceStatus.disabled with Double = js.native
-  /* 8 */ val disabling: typings.sharepoint.SP.AppInstanceStatus.disabling with Double = js.native
-  /* 6 */ val initialized: typings.sharepoint.SP.AppInstanceStatus.initialized with Double = js.native
-  /* 4 */ val installed: typings.sharepoint.SP.AppInstanceStatus.installed with Double = js.native
-  /* 1 */ val installing: typings.sharepoint.SP.AppInstanceStatus.installing with Double = js.native
-  /* 0 */ val invalidStatus: typings.sharepoint.SP.AppInstanceStatus.invalidStatus with Double = js.native
-  /* 3 */ val uninstalling: typings.sharepoint.SP.AppInstanceStatus.uninstalling with Double = js.native
-  /* 7 */ val upgradeCanceling: typings.sharepoint.SP.AppInstanceStatus.upgradeCanceling with Double = js.native
-  /* 5 */ val upgrading: typings.sharepoint.SP.AppInstanceStatus.upgrading with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppInstanceStatus with Double] = js.native
+  /* 2 */ @js.native
+  object canceling extends TopLevel[canceling with Double]
+  
+  /* 9 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 8 */ @js.native
+  object disabling extends TopLevel[disabling with Double]
+  
+  /* 6 */ @js.native
+  object initialized extends TopLevel[initialized with Double]
+  
+  /* 4 */ @js.native
+  object installed extends TopLevel[installed with Double]
+  
+  /* 1 */ @js.native
+  object installing extends TopLevel[installing with Double]
+  
+  /* 0 */ @js.native
+  object invalidStatus extends TopLevel[invalidStatus with Double]
+  
+  /* 3 */ @js.native
+  object uninstalling extends TopLevel[uninstalling with Double]
+  
+  /* 7 */ @js.native
+  object upgradeCanceling extends TopLevel[upgradeCanceling with Double]
+  
+  /* 5 */ @js.native
+  object upgrading extends TopLevel[upgrading with Double]
+  
 }
 

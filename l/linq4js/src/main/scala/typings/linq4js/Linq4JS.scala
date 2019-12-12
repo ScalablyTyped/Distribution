@@ -1,8 +1,11 @@
 package typings.linq4js
 
+import org.scalablytyped.runtime.TopLevel
 import typings.linq4js.Linq4JS.EvaluateCommand
 import typings.linq4js.Linq4JS.EvaluateCommandResult
 import typings.linq4js.Linq4JS.OrderDirection
+import typings.linq4js.Linq4JS.OrderDirection.Ascending
+import typings.linq4js.Linq4JS.OrderDirection.Descending
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,10 +82,14 @@ object Linq4JS extends js.Object {
     @js.native
     sealed trait Descending extends OrderDirection
     
-    /* 0 */ val Ascending: typings.linq4js.Linq4JS.OrderDirection.Ascending with Double = js.native
-    /* 1 */ val Descending: typings.linq4js.Linq4JS.OrderDirection.Descending with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[OrderDirection with Double] = js.native
+    /* 0 */ @js.native
+    object Ascending extends TopLevel[Ascending with Double]
+    
+    /* 1 */ @js.native
+    object Descending extends TopLevel[Descending with Double]
+    
   }
   
 }

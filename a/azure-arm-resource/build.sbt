@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "azure-arm-resource"
-version := "7.3.0-5cd004"
+version := "7.3.0-0671de"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ms-rest" % "2.5.3-7685ec",
-  "org.scalablytyped" %%% "ms-rest-azure" % "2.6.0-81007f",
+  "org.scalablytyped" %%% "ms-rest" % "2.5.3-c10b5f",
+  "org.scalablytyped" %%% "ms-rest-azure" % "2.6.0-8a3d29",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

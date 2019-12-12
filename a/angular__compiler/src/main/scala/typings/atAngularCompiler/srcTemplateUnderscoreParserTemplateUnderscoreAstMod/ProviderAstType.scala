@@ -1,5 +1,11 @@
 package typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Builtin
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Component
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Directive
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.PrivateService
+import typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.PublicService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ProviderAstType extends js.Object {
   @js.native
   sealed trait PublicService extends ProviderAstType
   
-  /* 4 */ val Builtin: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Builtin with Double = js.native
-  /* 2 */ val Component: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Component with Double = js.native
-  /* 3 */ val Directive: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.Directive with Double = js.native
-  /* 1 */ val PrivateService: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.PrivateService with Double = js.native
-  /* 0 */ val PublicService: typings.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.ProviderAstType.PublicService with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProviderAstType with Double] = js.native
+  /* 4 */ @js.native
+  object Builtin extends TopLevel[Builtin with Double]
+  
+  /* 2 */ @js.native
+  object Component extends TopLevel[Component with Double]
+  
+  /* 3 */ @js.native
+  object Directive extends TopLevel[Directive with Double]
+  
+  /* 1 */ @js.native
+  object PrivateService extends TopLevel[PrivateService with Double]
+  
+  /* 0 */ @js.native
+  object PublicService extends TopLevel[PublicService with Double]
+  
 }
 

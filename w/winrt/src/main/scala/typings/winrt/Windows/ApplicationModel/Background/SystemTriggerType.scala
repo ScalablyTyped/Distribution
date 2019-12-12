@@ -1,5 +1,19 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.controlChannelReset
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.internetAvailable
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.invalid
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationAdded
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationRemoved
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.networkStateChange
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.onlineIdConnectedStateChange
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.servicingComplete
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.sessionConnected
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.smsReceived
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.timeZoneChange
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userAway
+import typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userPresent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,20 +63,46 @@ object SystemTriggerType extends js.Object {
   @js.native
   sealed trait userPresent extends SystemTriggerType
   
-  /* 5 */ val controlChannelReset: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.controlChannelReset with Double = js.native
-  /* 6 */ val internetAvailable: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.internetAvailable with Double = js.native
-  /* 0 */ val invalid: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.invalid with Double = js.native
-  /* 9 */ val lockScreenApplicationAdded: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationAdded with Double = js.native
-  /* 10 */ val lockScreenApplicationRemoved: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.lockScreenApplicationRemoved with Double = js.native
-  /* 4 */ val networkStateChange: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.networkStateChange with Double = js.native
-  /* 12 */ val onlineIdConnectedStateChange: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.onlineIdConnectedStateChange with Double = js.native
-  /* 8 */ val servicingComplete: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.servicingComplete with Double = js.native
-  /* 7 */ val sessionConnected: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.sessionConnected with Double = js.native
-  /* 1 */ val smsReceived: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.smsReceived with Double = js.native
-  /* 11 */ val timeZoneChange: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.timeZoneChange with Double = js.native
-  /* 3 */ val userAway: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userAway with Double = js.native
-  /* 2 */ val userPresent: typings.winrt.Windows.ApplicationModel.Background.SystemTriggerType.userPresent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SystemTriggerType with Double] = js.native
+  /* 5 */ @js.native
+  object controlChannelReset extends TopLevel[controlChannelReset with Double]
+  
+  /* 6 */ @js.native
+  object internetAvailable extends TopLevel[internetAvailable with Double]
+  
+  /* 0 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 9 */ @js.native
+  object lockScreenApplicationAdded extends TopLevel[lockScreenApplicationAdded with Double]
+  
+  /* 10 */ @js.native
+  object lockScreenApplicationRemoved extends TopLevel[lockScreenApplicationRemoved with Double]
+  
+  /* 4 */ @js.native
+  object networkStateChange extends TopLevel[networkStateChange with Double]
+  
+  /* 12 */ @js.native
+  object onlineIdConnectedStateChange extends TopLevel[onlineIdConnectedStateChange with Double]
+  
+  /* 8 */ @js.native
+  object servicingComplete extends TopLevel[servicingComplete with Double]
+  
+  /* 7 */ @js.native
+  object sessionConnected extends TopLevel[sessionConnected with Double]
+  
+  /* 1 */ @js.native
+  object smsReceived extends TopLevel[smsReceived with Double]
+  
+  /* 11 */ @js.native
+  object timeZoneChange extends TopLevel[timeZoneChange with Double]
+  
+  /* 3 */ @js.native
+  object userAway extends TopLevel[userAway with Double]
+  
+  /* 2 */ @js.native
+  object userPresent extends TopLevel[userPresent with Double]
+  
 }
 

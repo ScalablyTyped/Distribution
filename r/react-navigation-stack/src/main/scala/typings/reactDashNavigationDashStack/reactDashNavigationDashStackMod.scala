@@ -1,5 +1,6 @@
 package typings.reactDashNavigationDashStack
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -68,10 +69,7 @@ object reactDashNavigationDashStackMod extends js.Object {
   }
   
   val Assets: js.Array[js.Any] = js.native
-  val Header: ComponentClassPickPropsscenenavigationpositionlayo | FunctionComponentPickPropsscenenavigationpositionl = js.native
   val StackGestureContext: Context[Ref[PanGestureHandler]] = js.native
-  val StackViewCard: ComponentType[PickPropsstylechildrenscenenavigationrealPositiona] = js.native
-  val StackViewLayout: ComponentType[PickPropsmodeheaderModeheaderLayoutPresetheaderTra] = js.native
   def ScenesReducer(
     scenes: js.Array[Scene],
     nextState: NavigationStackState,
@@ -92,6 +90,11 @@ object reactDashNavigationDashStackMod extends js.Object {
     routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _]],
     stackConfig: CreateNavigatorConfigNavigationStackConfigNavigati
   ): js.Any = js.native
+  @js.native
+  object Header extends TopLevel[
+          ComponentClassPickPropsscenenavigationpositionlayo | FunctionComponentPickPropsscenenavigationpositionl
+        ]
+  
   /* static members */
   @js.native
   object HeaderBackButton extends js.Object {
@@ -146,6 +149,12 @@ object reactDashNavigationDashStackMod extends js.Object {
   object HeaderTitle extends js.Object {
     var contextType: Context[SupportedThemes] = js.native
   }
+  
+  @js.native
+  object StackViewCard extends TopLevel[ComponentType[PickPropsstylechildrenscenenavigationrealPositiona]]
+  
+  @js.native
+  object StackViewLayout extends TopLevel[ComponentType[PickPropsmodeheaderModeheaderLayoutPresetheaderTra]]
   
   @js.native
   object StackViewStyleInterpolator extends js.Object {

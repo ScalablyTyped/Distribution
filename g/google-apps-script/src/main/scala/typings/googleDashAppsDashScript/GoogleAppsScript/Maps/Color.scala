@@ -1,5 +1,16 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLACK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLUE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BROWN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GRAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GREEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.ORANGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.PURPLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.RED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.WHITE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.YELLOW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,17 +54,37 @@ object Color extends js.Object {
   @js.native
   sealed trait YELLOW extends Color
   
-  /* 0 */ val BLACK: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLACK with Double = js.native
-  /* 5 */ val BLUE: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BLUE with Double = js.native
-  /* 1 */ val BROWN: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.BROWN with Double = js.native
-  /* 6 */ val GRAY: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GRAY with Double = js.native
-  /* 2 */ val GREEN: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.GREEN with Double = js.native
-  /* 7 */ val ORANGE: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.ORANGE with Double = js.native
-  /* 3 */ val PURPLE: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.PURPLE with Double = js.native
-  /* 8 */ val RED: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.RED with Double = js.native
-  /* 9 */ val WHITE: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.WHITE with Double = js.native
-  /* 4 */ val YELLOW: typings.googleDashAppsDashScript.GoogleAppsScript.Maps.Color.YELLOW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Color with Double] = js.native
+  /* 0 */ @js.native
+  object BLACK extends TopLevel[BLACK with Double]
+  
+  /* 5 */ @js.native
+  object BLUE extends TopLevel[BLUE with Double]
+  
+  /* 1 */ @js.native
+  object BROWN extends TopLevel[BROWN with Double]
+  
+  /* 6 */ @js.native
+  object GRAY extends TopLevel[GRAY with Double]
+  
+  /* 2 */ @js.native
+  object GREEN extends TopLevel[GREEN with Double]
+  
+  /* 7 */ @js.native
+  object ORANGE extends TopLevel[ORANGE with Double]
+  
+  /* 3 */ @js.native
+  object PURPLE extends TopLevel[PURPLE with Double]
+  
+  /* 8 */ @js.native
+  object RED extends TopLevel[RED with Double]
+  
+  /* 9 */ @js.native
+  object WHITE extends TopLevel[WHITE with Double]
+  
+  /* 4 */ @js.native
+  object YELLOW extends TopLevel[YELLOW with Double]
+  
 }
 

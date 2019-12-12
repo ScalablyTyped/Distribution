@@ -1,5 +1,14 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Bad
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Blob
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Commit
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Ext2
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.OfsDelta
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.RefDelta
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tag
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object GitObjectType extends js.Object {
   @js.native
   sealed trait Tree extends GitObjectType
   
-  /* 0 */ val Bad: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Bad with Double = js.native
-  /* 3 */ val Blob: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Blob with Double = js.native
-  /* 1 */ val Commit: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Commit with Double = js.native
-  /* 5 */ val Ext2: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Ext2 with Double = js.native
-  /* 6 */ val OfsDelta: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.OfsDelta with Double = js.native
-  /* 7 */ val RefDelta: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.RefDelta with Double = js.native
-  /* 4 */ val Tag: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tag with Double = js.native
-  /* 2 */ val Tree: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitObjectType.Tree with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitObjectType with Double] = js.native
+  /* 0 */ @js.native
+  object Bad extends TopLevel[Bad with Double]
+  
+  /* 3 */ @js.native
+  object Blob extends TopLevel[Blob with Double]
+  
+  /* 1 */ @js.native
+  object Commit extends TopLevel[Commit with Double]
+  
+  /* 5 */ @js.native
+  object Ext2 extends TopLevel[Ext2 with Double]
+  
+  /* 6 */ @js.native
+  object OfsDelta extends TopLevel[OfsDelta with Double]
+  
+  /* 7 */ @js.native
+  object RefDelta extends TopLevel[RefDelta with Double]
+  
+  /* 4 */ @js.native
+  object Tag extends TopLevel[Tag with Double]
+  
+  /* 2 */ @js.native
+  object Tree extends TopLevel[Tree with Double]
+  
 }
 

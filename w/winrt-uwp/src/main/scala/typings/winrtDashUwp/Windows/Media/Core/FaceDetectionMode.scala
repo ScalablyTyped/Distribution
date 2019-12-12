@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.balanced
+import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highPerformance
+import typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highQuality
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object FaceDetectionMode extends js.Object {
   @js.native
   sealed trait highQuality extends FaceDetectionMode
   
-  /* 1 */ val balanced: typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.balanced with Double = js.native
-  /* 0 */ val highPerformance: typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highPerformance with Double = js.native
-  /* 2 */ val highQuality: typings.winrtDashUwp.Windows.Media.Core.FaceDetectionMode.highQuality with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FaceDetectionMode with Double] = js.native
+  /* 1 */ @js.native
+  object balanced extends TopLevel[balanced with Double]
+  
+  /* 0 */ @js.native
+  object highPerformance extends TopLevel[highPerformance with Double]
+  
+  /* 2 */ @js.native
+  object highQuality extends TopLevel[highQuality with Double]
+  
 }
 

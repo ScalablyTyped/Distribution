@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.app
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.binary
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.broadcast
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.status
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.text
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.voicemail
+import typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.wap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object SmsMessageType extends js.Object {
   @js.native
   sealed trait wap extends SmsMessageType
   
-  /* 3 */ val app: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.app with Double = js.native
-  /* 0 */ val binary: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.binary with Double = js.native
-  /* 4 */ val broadcast: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.broadcast with Double = js.native
-  /* 6 */ val status: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.status with Double = js.native
-  /* 1 */ val text: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.text with Double = js.native
-  /* 5 */ val voicemail: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.voicemail with Double = js.native
-  /* 2 */ val wap: typings.winrtDashUwp.Windows.Devices.Sms.SmsMessageType.wap with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SmsMessageType with Double] = js.native
+  /* 3 */ @js.native
+  object app extends TopLevel[app with Double]
+  
+  /* 0 */ @js.native
+  object binary extends TopLevel[binary with Double]
+  
+  /* 4 */ @js.native
+  object broadcast extends TopLevel[broadcast with Double]
+  
+  /* 6 */ @js.native
+  object status extends TopLevel[status with Double]
+  
+  /* 1 */ @js.native
+  object text extends TopLevel[text with Double]
+  
+  /* 5 */ @js.native
+  object voicemail extends TopLevel[voicemail with Double]
+  
+  /* 2 */ @js.native
+  object wap extends TopLevel[wap with Double]
+  
 }
 

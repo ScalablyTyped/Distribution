@@ -1,5 +1,10 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.commentFieldRequired
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.disablePostSendingDialog
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldHidden
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,13 +31,21 @@ object invocationOptions extends js.Object {
   sealed trait emailFieldOptional
     extends typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions
   
-  /* 2 */ val commentFieldRequired: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.commentFieldRequired with Double = js.native
-  /* 3 */ val disablePostSendingDialog: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.disablePostSendingDialog with Double = js.native
-  /* 0 */ val emailFieldHidden: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldHidden with Double = js.native
-  /* 1 */ val emailFieldOptional: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions.emailFieldOptional with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
     typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.invocationOptions with Double
   ] = js.native
+  /* 2 */ @js.native
+  object commentFieldRequired extends TopLevel[commentFieldRequired with Double]
+  
+  /* 3 */ @js.native
+  object disablePostSendingDialog extends TopLevel[disablePostSendingDialog with Double]
+  
+  /* 0 */ @js.native
+  object emailFieldHidden extends TopLevel[emailFieldHidden with Double]
+  
+  /* 1 */ @js.native
+  object emailFieldOptional extends TopLevel[emailFieldOptional with Double]
+  
 }
 

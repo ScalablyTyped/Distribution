@@ -1,5 +1,17 @@
 package typings.winrtDashUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.audioQualityFailure
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarCompilationFailure
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarLanguageMismatch
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.microphoneUnavailable
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.networkFailure
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.pauseLimitExceeded
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.success
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.timeoutExceeded
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.topicLanguageNotSupported
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.unknown
+import typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.userCanceled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,18 +67,40 @@ object SpeechRecognitionResultStatus extends js.Object {
   @js.native
   sealed trait userCanceled extends SpeechRecognitionResultStatus
   
-  /* 4 */ val audioQualityFailure: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.audioQualityFailure with Double = js.native
-  /* 3 */ val grammarCompilationFailure: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarCompilationFailure with Double = js.native
-  /* 2 */ val grammarLanguageMismatch: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.grammarLanguageMismatch with Double = js.native
-  /* 10 */ val microphoneUnavailable: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.microphoneUnavailable with Double = js.native
-  /* 9 */ val networkFailure: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.networkFailure with Double = js.native
-  /* 8 */ val pauseLimitExceeded: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.pauseLimitExceeded with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.success with Double = js.native
-  /* 7 */ val timeoutExceeded: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.timeoutExceeded with Double = js.native
-  /* 1 */ val topicLanguageNotSupported: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.topicLanguageNotSupported with Double = js.native
-  /* 6 */ val unknown: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.unknown with Double = js.native
-  /* 5 */ val userCanceled: typings.winrtDashUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus.userCanceled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpeechRecognitionResultStatus with Double] = js.native
+  /* 4 */ @js.native
+  object audioQualityFailure extends TopLevel[audioQualityFailure with Double]
+  
+  /* 3 */ @js.native
+  object grammarCompilationFailure extends TopLevel[grammarCompilationFailure with Double]
+  
+  /* 2 */ @js.native
+  object grammarLanguageMismatch extends TopLevel[grammarLanguageMismatch with Double]
+  
+  /* 10 */ @js.native
+  object microphoneUnavailable extends TopLevel[microphoneUnavailable with Double]
+  
+  /* 9 */ @js.native
+  object networkFailure extends TopLevel[networkFailure with Double]
+  
+  /* 8 */ @js.native
+  object pauseLimitExceeded extends TopLevel[pauseLimitExceeded with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 7 */ @js.native
+  object timeoutExceeded extends TopLevel[timeoutExceeded with Double]
+  
+  /* 1 */ @js.native
+  object topicLanguageNotSupported extends TopLevel[topicLanguageNotSupported with Double]
+  
+  /* 6 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 5 */ @js.native
+  object userCanceled extends TopLevel[userCanceled with Double]
+  
 }
 

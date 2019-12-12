@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.interplotted
+import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.notPlotted
+import typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ChartDisplayBlanksAs extends js.Object {
   @js.native
   sealed trait zero extends ChartDisplayBlanksAs
   
-  /* "Interplotted" */ val interplotted: typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.interplotted with String = js.native
-  /* "NotPlotted" */ val notPlotted: typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.notPlotted with String = js.native
-  /* "Zero" */ val zero: typings.officeDashJsDashPreview.Excel.ChartDisplayBlanksAs.zero with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartDisplayBlanksAs with String] = js.native
+  /* "Interplotted" */ @js.native
+  object interplotted extends TopLevel[interplotted with String]
+  
+  /* "NotPlotted" */ @js.native
+  object notPlotted extends TopLevel[notPlotted with String]
+  
+  /* "Zero" */ @js.native
+  object zero extends TopLevel[zero with String]
+  
 }
 

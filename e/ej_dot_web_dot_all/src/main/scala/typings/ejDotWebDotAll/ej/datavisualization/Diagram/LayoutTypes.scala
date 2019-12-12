@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.None
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.RadialTree
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object LayoutTypes extends js.Object {
   @js.native
   sealed trait SymmetricLayout extends LayoutTypes
   
-  /* 1 */ val HierarchicalTree: typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.None with Double = js.native
-  /* 2 */ val OrganizationalChart: typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart with Double = js.native
-  /* 3 */ val RadialTree: typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.RadialTree with Double = js.native
-  /* 4 */ val SymmetricLayout: typings.ejDotWebDotAll.ej.datavisualization.Diagram.LayoutTypes.SymmetricLayout with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LayoutTypes with Double] = js.native
+  /* 1 */ @js.native
+  object HierarchicalTree extends TopLevel[HierarchicalTree with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object OrganizationalChart extends TopLevel[OrganizationalChart with Double]
+  
+  /* 3 */ @js.native
+  object RadialTree extends TopLevel[RadialTree with Double]
+  
+  /* 4 */ @js.native
+  object SymmetricLayout extends TopLevel[SymmetricLayout with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_FEMALE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_MALE
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_NEUTRAL
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +28,19 @@ object SsmlVoiceGender extends js.Object {
   @js.native
   sealed trait SSML_VOICE_GENDER_UNSPECIFIED extends SsmlVoiceGender
   
-  /* 2 */ val SSML_VOICE_GENDER_FEMALE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_FEMALE with Double = js.native
-  /* 1 */ val SSML_VOICE_GENDER_MALE: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_MALE with Double = js.native
-  /* 3 */ val SSML_VOICE_GENDER_NEUTRAL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_NEUTRAL with Double = js.native
-  /* 0 */ val SSML_VOICE_GENDER_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SsmlVoiceGender with Double] = js.native
+  /* 2 */ @js.native
+  object SSML_VOICE_GENDER_FEMALE extends TopLevel[SSML_VOICE_GENDER_FEMALE with Double]
+  
+  /* 1 */ @js.native
+  object SSML_VOICE_GENDER_MALE extends TopLevel[SSML_VOICE_GENDER_MALE with Double]
+  
+  /* 3 */ @js.native
+  object SSML_VOICE_GENDER_NEUTRAL extends TopLevel[SSML_VOICE_GENDER_NEUTRAL with Double]
+  
+  /* 0 */ @js.native
+  object SSML_VOICE_GENDER_UNSPECIFIED extends TopLevel[SSML_VOICE_GENDER_UNSPECIFIED with Double]
+  
 }
 

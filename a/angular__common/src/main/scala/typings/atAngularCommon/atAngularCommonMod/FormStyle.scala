@@ -1,5 +1,8 @@
 package typings.atAngularCommon.atAngularCommonMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCommon.atAngularCommonMod.FormStyle.Format
+import typings.atAngularCommon.atAngularCommonMod.FormStyle.Standalone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object FormStyle extends js.Object {
   @js.native
   sealed trait Standalone extends FormStyle
   
-  /* 0 */ val Format: typings.atAngularCommon.atAngularCommonMod.FormStyle.Format with Double = js.native
-  /* 1 */ val Standalone: typings.atAngularCommon.atAngularCommonMod.FormStyle.Standalone with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FormStyle with Double] = js.native
+  /* 0 */ @js.native
+  object Format extends TopLevel[Format with Double]
+  
+  /* 1 */ @js.native
+  object Standalone extends TopLevel[Standalone with Double]
+  
 }
 

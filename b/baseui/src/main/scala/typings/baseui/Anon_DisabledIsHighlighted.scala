@@ -4,21 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_DisabledIsHighlighted extends js.Object {
   @JSName("$disabled")
-  var $disabled: Boolean
+  var $disabled: Boolean = js.native
   @JSName("$isHighlighted")
-  var $isHighlighted: Boolean
+  var $isHighlighted: Boolean = js.native
   @JSName("$selected")
-  var $selected: Boolean
-}
-
-object Anon_DisabledIsHighlighted {
-  @scala.inline
-  def apply($disabled: Boolean, $isHighlighted: Boolean, $selected: Boolean): Anon_DisabledIsHighlighted = {
-    val __obj = js.Dynamic.literal($disabled = $disabled.asInstanceOf[js.Any], $isHighlighted = $isHighlighted.asInstanceOf[js.Any], $selected = $selected.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_DisabledIsHighlighted]
-  }
+  var $selected: Boolean = js.native
 }
 

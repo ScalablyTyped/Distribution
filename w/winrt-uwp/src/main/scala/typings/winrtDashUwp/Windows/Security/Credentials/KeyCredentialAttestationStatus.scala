@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Security.Credentials
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.notSupported
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.success
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.temporaryFailure
+import typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.unknownError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object KeyCredentialAttestationStatus extends js.Object {
   @js.native
   sealed trait unknownError extends KeyCredentialAttestationStatus
   
-  /* 2 */ val notSupported: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.notSupported with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.success with Double = js.native
-  /* 3 */ val temporaryFailure: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.temporaryFailure with Double = js.native
-  /* 1 */ val unknownError: typings.winrtDashUwp.Windows.Security.Credentials.KeyCredentialAttestationStatus.unknownError with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[KeyCredentialAttestationStatus with Double] = js.native
+  /* 2 */ @js.native
+  object notSupported extends TopLevel[notSupported with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 3 */ @js.native
+  object temporaryFailure extends TopLevel[temporaryFailure with Double]
+  
+  /* 1 */ @js.native
+  object unknownError extends TopLevel[unknownError with Double]
+  
 }
 

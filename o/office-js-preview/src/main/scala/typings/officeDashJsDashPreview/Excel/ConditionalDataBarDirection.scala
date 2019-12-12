@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.context
+import typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.leftToRight
+import typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.rightToLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object ConditionalDataBarDirection extends js.Object {
   @js.native
   sealed trait rightToLeft extends ConditionalDataBarDirection
   
-  /* "Context" */ val context: typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.context with String = js.native
-  /* "LeftToRight" */ val leftToRight: typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.leftToRight with String = js.native
-  /* "RightToLeft" */ val rightToLeft: typings.officeDashJsDashPreview.Excel.ConditionalDataBarDirection.rightToLeft with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ConditionalDataBarDirection with String] = js.native
+  /* "Context" */ @js.native
+  object context extends TopLevel[context with String]
+  
+  /* "LeftToRight" */ @js.native
+  object leftToRight extends TopLevel[leftToRight with String]
+  
+  /* "RightToLeft" */ @js.native
+  object rightToLeft extends TopLevel[rightToLeft with String]
+  
 }
 

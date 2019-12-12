@@ -4,110 +4,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_AccesstokenAlt extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.undefined
+  var `$.xgafv`: js.UndefOr[String] = js.native
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.undefined
+  var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.undefined
+  var bearer_token: js.UndefOr[String] = js.native
   /** JSONP */
-  var callback: js.UndefOr[String] = js.undefined
+  var callback: js.UndefOr[String] = js.native
   /** The customization id for translate */
-  var cid: js.UndefOr[String] = js.undefined
+  var cid: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /**
     * The format of the source text, in either HTML (default) or plain-text. A
     * value of "html" indicates HTML and a value of "text" indicates plain-text.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /**
     * The `model` type requested for this translation. Valid values are
     * listed in public documentation.
     */
-  var model: js.UndefOr[String] = js.undefined
+  var model: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.undefined
+  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /**
     * The input text to translate. Repeat this parameter to perform translation
     * operations on multiple text inputs.
     */
-  var q: String
+  var q: String = js.native
   /**
     * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
     * Overrides userIp if both are provided.
     */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /**
     * The language of the source text, set to one of the language codes listed in
     * Language Support. If the source language is not specified, the API will
     * attempt to identify the source language automatically and return it within
     * the response.
     */
-  var source: js.UndefOr[String] = js.undefined
+  var source: js.UndefOr[String] = js.native
   /**
     * The language to use for translation of the input text, set to one of the
     * language codes listed in Language Support.
     */
-  var target: String
+  var target: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.undefined
+  var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.undefined
-}
-
-object Anon_AccesstokenAlt {
-  @scala.inline
-  def apply(
-    q: String,
-    target: String,
-    `$.xgafv`: String = null,
-    access_token: String = null,
-    alt: String = null,
-    bearer_token: String = null,
-    callback: String = null,
-    cid: String = null,
-    fields: String = null,
-    format: String = null,
-    key: String = null,
-    model: String = null,
-    oauth_token: String = null,
-    pp: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    source: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): Anon_AccesstokenAlt = {
-    val __obj = js.Dynamic.literal(q = q.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_AccesstokenAlt]
-  }
+  var upload_protocol: js.UndefOr[String] = js.native
 }
 

@@ -4,17 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FieldId extends js.Object {
   @JSName("$id")
-  var $id: String
-}
-
-object FieldId {
-  @scala.inline
-  def apply($id: String): FieldId = {
-    val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[FieldId]
-  }
+  var $id: String = js.native
 }
 

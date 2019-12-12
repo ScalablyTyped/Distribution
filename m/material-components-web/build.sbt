@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-components-web"
-version := "3.2.0-6df7af"
+version := "3.2.0-28591c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "material__linear-progress" % "0.35-dt-20191126Z-16f03b",
   "org.scalablytyped" %%% "material__list" % "0.43-dt-20191126Z-c90948",
   "org.scalablytyped" %%% "material__menu" % "0.35-dt-20191126Z-c39a7c",
-  "org.scalablytyped" %%% "material__menu-surface" % "3.2.0-97589c",
+  "org.scalablytyped" %%% "material__menu-surface" % "3.2.0-48d079",
   "org.scalablytyped" %%% "material__notched-outline" % "0.35-dt-20191126Z-58257d",
   "org.scalablytyped" %%% "material__radio" % "0.35-dt-20191126Z-e03760",
   "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20191126Z-6fb41d",

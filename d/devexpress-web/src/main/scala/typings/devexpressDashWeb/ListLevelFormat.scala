@@ -1,5 +1,66 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ListLevelFormat.AIUEOFullWidthHiragana
+import typings.devexpressDashWeb.ListLevelFormat.AIUEOHiragana
+import typings.devexpressDashWeb.ListLevelFormat.ArabicAbjad
+import typings.devexpressDashWeb.ListLevelFormat.ArabicAlpha
+import typings.devexpressDashWeb.ListLevelFormat.Bullet
+import typings.devexpressDashWeb.ListLevelFormat.CardinalText
+import typings.devexpressDashWeb.ListLevelFormat.Chicago
+import typings.devexpressDashWeb.ListLevelFormat.ChineseCounting
+import typings.devexpressDashWeb.ListLevelFormat.ChineseCountingThousand
+import typings.devexpressDashWeb.ListLevelFormat.ChineseLegalSimplified
+import typings.devexpressDashWeb.ListLevelFormat.Chosung
+import typings.devexpressDashWeb.ListLevelFormat.Decimal
+import typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedCircle
+import typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedCircleChinese
+import typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedFullstop
+import typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedParentheses
+import typings.devexpressDashWeb.ListLevelFormat.DecimalFullWidth
+import typings.devexpressDashWeb.ListLevelFormat.DecimalFullWidth2
+import typings.devexpressDashWeb.ListLevelFormat.DecimalHalfWidth
+import typings.devexpressDashWeb.ListLevelFormat.DecimalZero
+import typings.devexpressDashWeb.ListLevelFormat.Ganada
+import typings.devexpressDashWeb.ListLevelFormat.Hebrew1
+import typings.devexpressDashWeb.ListLevelFormat.Hebrew2
+import typings.devexpressDashWeb.ListLevelFormat.Hex
+import typings.devexpressDashWeb.ListLevelFormat.HindiConsonants
+import typings.devexpressDashWeb.ListLevelFormat.HindiDescriptive
+import typings.devexpressDashWeb.ListLevelFormat.HindiNumbers
+import typings.devexpressDashWeb.ListLevelFormat.HindiVowels
+import typings.devexpressDashWeb.ListLevelFormat.IdeographDigital
+import typings.devexpressDashWeb.ListLevelFormat.IdeographEnclosedCircle
+import typings.devexpressDashWeb.ListLevelFormat.IdeographLegalTraditional
+import typings.devexpressDashWeb.ListLevelFormat.IdeographTraditional
+import typings.devexpressDashWeb.ListLevelFormat.IdeographZodiac
+import typings.devexpressDashWeb.ListLevelFormat.IdeographZodiacTraditional
+import typings.devexpressDashWeb.ListLevelFormat.Iroha
+import typings.devexpressDashWeb.ListLevelFormat.IrohaFullWidth
+import typings.devexpressDashWeb.ListLevelFormat.JapaneseCounting
+import typings.devexpressDashWeb.ListLevelFormat.JapaneseDigitalTenThousand
+import typings.devexpressDashWeb.ListLevelFormat.JapaneseLegal
+import typings.devexpressDashWeb.ListLevelFormat.KoreanCounting
+import typings.devexpressDashWeb.ListLevelFormat.KoreanDigital
+import typings.devexpressDashWeb.ListLevelFormat.KoreanDigital2
+import typings.devexpressDashWeb.ListLevelFormat.KoreanLegal
+import typings.devexpressDashWeb.ListLevelFormat.LowerLetter
+import typings.devexpressDashWeb.ListLevelFormat.LowerRoman
+import typings.devexpressDashWeb.ListLevelFormat.None
+import typings.devexpressDashWeb.ListLevelFormat.NumberInDash
+import typings.devexpressDashWeb.ListLevelFormat.Ordinal
+import typings.devexpressDashWeb.ListLevelFormat.OrdinalText
+import typings.devexpressDashWeb.ListLevelFormat.RussianLower
+import typings.devexpressDashWeb.ListLevelFormat.RussianUpper
+import typings.devexpressDashWeb.ListLevelFormat.TaiwaneseCounting
+import typings.devexpressDashWeb.ListLevelFormat.TaiwaneseCountingThousand
+import typings.devexpressDashWeb.ListLevelFormat.TaiwaneseDigital
+import typings.devexpressDashWeb.ListLevelFormat.ThaiDescriptive
+import typings.devexpressDashWeb.ListLevelFormat.ThaiLetters
+import typings.devexpressDashWeb.ListLevelFormat.ThaiNumbers
+import typings.devexpressDashWeb.ListLevelFormat.UpperLetter
+import typings.devexpressDashWeb.ListLevelFormat.UpperRoman
+import typings.devexpressDashWeb.ListLevelFormat.VietnameseDescriptive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -373,67 +434,187 @@ object ListLevelFormat extends js.Object {
   @js.native
   sealed trait VietnameseDescriptive extends ListLevelFormat
   
-  /* 2 */ val AIUEOFullWidthHiragana: typings.devexpressDashWeb.ListLevelFormat.AIUEOFullWidthHiragana with Double = js.native
-  /* 1 */ val AIUEOHiragana: typings.devexpressDashWeb.ListLevelFormat.AIUEOHiragana with Double = js.native
-  /* 3 */ val ArabicAbjad: typings.devexpressDashWeb.ListLevelFormat.ArabicAbjad with Double = js.native
-  /* 4 */ val ArabicAlpha: typings.devexpressDashWeb.ListLevelFormat.ArabicAlpha with Double = js.native
-  /* 5 */ val Bullet: typings.devexpressDashWeb.ListLevelFormat.Bullet with Double = js.native
-  /* 6 */ val CardinalText: typings.devexpressDashWeb.ListLevelFormat.CardinalText with Double = js.native
-  /* 7 */ val Chicago: typings.devexpressDashWeb.ListLevelFormat.Chicago with Double = js.native
-  /* 8 */ val ChineseCounting: typings.devexpressDashWeb.ListLevelFormat.ChineseCounting with Double = js.native
-  /* 9 */ val ChineseCountingThousand: typings.devexpressDashWeb.ListLevelFormat.ChineseCountingThousand with Double = js.native
-  /* 10 */ val ChineseLegalSimplified: typings.devexpressDashWeb.ListLevelFormat.ChineseLegalSimplified with Double = js.native
-  /* 11 */ val Chosung: typings.devexpressDashWeb.ListLevelFormat.Chosung with Double = js.native
-  /* 0 */ val Decimal: typings.devexpressDashWeb.ListLevelFormat.Decimal with Double = js.native
-  /* 12 */ val DecimalEnclosedCircle: typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedCircle with Double = js.native
-  /* 13 */ val DecimalEnclosedCircleChinese: typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedCircleChinese with Double = js.native
-  /* 14 */ val DecimalEnclosedFullstop: typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedFullstop with Double = js.native
-  /* 15 */ val DecimalEnclosedParentheses: typings.devexpressDashWeb.ListLevelFormat.DecimalEnclosedParentheses with Double = js.native
-  /* 16 */ val DecimalFullWidth: typings.devexpressDashWeb.ListLevelFormat.DecimalFullWidth with Double = js.native
-  /* 17 */ val DecimalFullWidth2: typings.devexpressDashWeb.ListLevelFormat.DecimalFullWidth2 with Double = js.native
-  /* 18 */ val DecimalHalfWidth: typings.devexpressDashWeb.ListLevelFormat.DecimalHalfWidth with Double = js.native
-  /* 19 */ val DecimalZero: typings.devexpressDashWeb.ListLevelFormat.DecimalZero with Double = js.native
-  /* 20 */ val Ganada: typings.devexpressDashWeb.ListLevelFormat.Ganada with Double = js.native
-  /* 21 */ val Hebrew1: typings.devexpressDashWeb.ListLevelFormat.Hebrew1 with Double = js.native
-  /* 22 */ val Hebrew2: typings.devexpressDashWeb.ListLevelFormat.Hebrew2 with Double = js.native
-  /* 23 */ val Hex: typings.devexpressDashWeb.ListLevelFormat.Hex with Double = js.native
-  /* 24 */ val HindiConsonants: typings.devexpressDashWeb.ListLevelFormat.HindiConsonants with Double = js.native
-  /* 25 */ val HindiDescriptive: typings.devexpressDashWeb.ListLevelFormat.HindiDescriptive with Double = js.native
-  /* 26 */ val HindiNumbers: typings.devexpressDashWeb.ListLevelFormat.HindiNumbers with Double = js.native
-  /* 27 */ val HindiVowels: typings.devexpressDashWeb.ListLevelFormat.HindiVowels with Double = js.native
-  /* 28 */ val IdeographDigital: typings.devexpressDashWeb.ListLevelFormat.IdeographDigital with Double = js.native
-  /* 29 */ val IdeographEnclosedCircle: typings.devexpressDashWeb.ListLevelFormat.IdeographEnclosedCircle with Double = js.native
-  /* 30 */ val IdeographLegalTraditional: typings.devexpressDashWeb.ListLevelFormat.IdeographLegalTraditional with Double = js.native
-  /* 31 */ val IdeographTraditional: typings.devexpressDashWeb.ListLevelFormat.IdeographTraditional with Double = js.native
-  /* 32 */ val IdeographZodiac: typings.devexpressDashWeb.ListLevelFormat.IdeographZodiac with Double = js.native
-  /* 33 */ val IdeographZodiacTraditional: typings.devexpressDashWeb.ListLevelFormat.IdeographZodiacTraditional with Double = js.native
-  /* 34 */ val Iroha: typings.devexpressDashWeb.ListLevelFormat.Iroha with Double = js.native
-  /* 35 */ val IrohaFullWidth: typings.devexpressDashWeb.ListLevelFormat.IrohaFullWidth with Double = js.native
-  /* 36 */ val JapaneseCounting: typings.devexpressDashWeb.ListLevelFormat.JapaneseCounting with Double = js.native
-  /* 37 */ val JapaneseDigitalTenThousand: typings.devexpressDashWeb.ListLevelFormat.JapaneseDigitalTenThousand with Double = js.native
-  /* 38 */ val JapaneseLegal: typings.devexpressDashWeb.ListLevelFormat.JapaneseLegal with Double = js.native
-  /* 39 */ val KoreanCounting: typings.devexpressDashWeb.ListLevelFormat.KoreanCounting with Double = js.native
-  /* 40 */ val KoreanDigital: typings.devexpressDashWeb.ListLevelFormat.KoreanDigital with Double = js.native
-  /* 41 */ val KoreanDigital2: typings.devexpressDashWeb.ListLevelFormat.KoreanDigital2 with Double = js.native
-  /* 42 */ val KoreanLegal: typings.devexpressDashWeb.ListLevelFormat.KoreanLegal with Double = js.native
-  /* 43 */ val LowerLetter: typings.devexpressDashWeb.ListLevelFormat.LowerLetter with Double = js.native
-  /* 44 */ val LowerRoman: typings.devexpressDashWeb.ListLevelFormat.LowerRoman with Double = js.native
-  /* 45 */ val None: typings.devexpressDashWeb.ListLevelFormat.None with Double = js.native
-  /* 46 */ val NumberInDash: typings.devexpressDashWeb.ListLevelFormat.NumberInDash with Double = js.native
-  /* 47 */ val Ordinal: typings.devexpressDashWeb.ListLevelFormat.Ordinal with Double = js.native
-  /* 48 */ val OrdinalText: typings.devexpressDashWeb.ListLevelFormat.OrdinalText with Double = js.native
-  /* 49 */ val RussianLower: typings.devexpressDashWeb.ListLevelFormat.RussianLower with Double = js.native
-  /* 50 */ val RussianUpper: typings.devexpressDashWeb.ListLevelFormat.RussianUpper with Double = js.native
-  /* 51 */ val TaiwaneseCounting: typings.devexpressDashWeb.ListLevelFormat.TaiwaneseCounting with Double = js.native
-  /* 52 */ val TaiwaneseCountingThousand: typings.devexpressDashWeb.ListLevelFormat.TaiwaneseCountingThousand with Double = js.native
-  /* 53 */ val TaiwaneseDigital: typings.devexpressDashWeb.ListLevelFormat.TaiwaneseDigital with Double = js.native
-  /* 54 */ val ThaiDescriptive: typings.devexpressDashWeb.ListLevelFormat.ThaiDescriptive with Double = js.native
-  /* 55 */ val ThaiLetters: typings.devexpressDashWeb.ListLevelFormat.ThaiLetters with Double = js.native
-  /* 56 */ val ThaiNumbers: typings.devexpressDashWeb.ListLevelFormat.ThaiNumbers with Double = js.native
-  /* 57 */ val UpperLetter: typings.devexpressDashWeb.ListLevelFormat.UpperLetter with Double = js.native
-  /* 58 */ val UpperRoman: typings.devexpressDashWeb.ListLevelFormat.UpperRoman with Double = js.native
-  /* 59 */ val VietnameseDescriptive: typings.devexpressDashWeb.ListLevelFormat.VietnameseDescriptive with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListLevelFormat with Double] = js.native
+  /* 2 */ @js.native
+  object AIUEOFullWidthHiragana extends TopLevel[AIUEOFullWidthHiragana with Double]
+  
+  /* 1 */ @js.native
+  object AIUEOHiragana extends TopLevel[AIUEOHiragana with Double]
+  
+  /* 3 */ @js.native
+  object ArabicAbjad extends TopLevel[ArabicAbjad with Double]
+  
+  /* 4 */ @js.native
+  object ArabicAlpha extends TopLevel[ArabicAlpha with Double]
+  
+  /* 5 */ @js.native
+  object Bullet extends TopLevel[Bullet with Double]
+  
+  /* 6 */ @js.native
+  object CardinalText extends TopLevel[CardinalText with Double]
+  
+  /* 7 */ @js.native
+  object Chicago extends TopLevel[Chicago with Double]
+  
+  /* 8 */ @js.native
+  object ChineseCounting extends TopLevel[ChineseCounting with Double]
+  
+  /* 9 */ @js.native
+  object ChineseCountingThousand extends TopLevel[ChineseCountingThousand with Double]
+  
+  /* 10 */ @js.native
+  object ChineseLegalSimplified extends TopLevel[ChineseLegalSimplified with Double]
+  
+  /* 11 */ @js.native
+  object Chosung extends TopLevel[Chosung with Double]
+  
+  /* 0 */ @js.native
+  object Decimal extends TopLevel[Decimal with Double]
+  
+  /* 12 */ @js.native
+  object DecimalEnclosedCircle extends TopLevel[DecimalEnclosedCircle with Double]
+  
+  /* 13 */ @js.native
+  object DecimalEnclosedCircleChinese extends TopLevel[DecimalEnclosedCircleChinese with Double]
+  
+  /* 14 */ @js.native
+  object DecimalEnclosedFullstop extends TopLevel[DecimalEnclosedFullstop with Double]
+  
+  /* 15 */ @js.native
+  object DecimalEnclosedParentheses extends TopLevel[DecimalEnclosedParentheses with Double]
+  
+  /* 16 */ @js.native
+  object DecimalFullWidth extends TopLevel[DecimalFullWidth with Double]
+  
+  /* 17 */ @js.native
+  object DecimalFullWidth2 extends TopLevel[DecimalFullWidth2 with Double]
+  
+  /* 18 */ @js.native
+  object DecimalHalfWidth extends TopLevel[DecimalHalfWidth with Double]
+  
+  /* 19 */ @js.native
+  object DecimalZero extends TopLevel[DecimalZero with Double]
+  
+  /* 20 */ @js.native
+  object Ganada extends TopLevel[Ganada with Double]
+  
+  /* 21 */ @js.native
+  object Hebrew1 extends TopLevel[Hebrew1 with Double]
+  
+  /* 22 */ @js.native
+  object Hebrew2 extends TopLevel[Hebrew2 with Double]
+  
+  /* 23 */ @js.native
+  object Hex extends TopLevel[Hex with Double]
+  
+  /* 24 */ @js.native
+  object HindiConsonants extends TopLevel[HindiConsonants with Double]
+  
+  /* 25 */ @js.native
+  object HindiDescriptive extends TopLevel[HindiDescriptive with Double]
+  
+  /* 26 */ @js.native
+  object HindiNumbers extends TopLevel[HindiNumbers with Double]
+  
+  /* 27 */ @js.native
+  object HindiVowels extends TopLevel[HindiVowels with Double]
+  
+  /* 28 */ @js.native
+  object IdeographDigital extends TopLevel[IdeographDigital with Double]
+  
+  /* 29 */ @js.native
+  object IdeographEnclosedCircle extends TopLevel[IdeographEnclosedCircle with Double]
+  
+  /* 30 */ @js.native
+  object IdeographLegalTraditional extends TopLevel[IdeographLegalTraditional with Double]
+  
+  /* 31 */ @js.native
+  object IdeographTraditional extends TopLevel[IdeographTraditional with Double]
+  
+  /* 32 */ @js.native
+  object IdeographZodiac extends TopLevel[IdeographZodiac with Double]
+  
+  /* 33 */ @js.native
+  object IdeographZodiacTraditional extends TopLevel[IdeographZodiacTraditional with Double]
+  
+  /* 34 */ @js.native
+  object Iroha extends TopLevel[Iroha with Double]
+  
+  /* 35 */ @js.native
+  object IrohaFullWidth extends TopLevel[IrohaFullWidth with Double]
+  
+  /* 36 */ @js.native
+  object JapaneseCounting extends TopLevel[JapaneseCounting with Double]
+  
+  /* 37 */ @js.native
+  object JapaneseDigitalTenThousand extends TopLevel[JapaneseDigitalTenThousand with Double]
+  
+  /* 38 */ @js.native
+  object JapaneseLegal extends TopLevel[JapaneseLegal with Double]
+  
+  /* 39 */ @js.native
+  object KoreanCounting extends TopLevel[KoreanCounting with Double]
+  
+  /* 40 */ @js.native
+  object KoreanDigital extends TopLevel[KoreanDigital with Double]
+  
+  /* 41 */ @js.native
+  object KoreanDigital2 extends TopLevel[KoreanDigital2 with Double]
+  
+  /* 42 */ @js.native
+  object KoreanLegal extends TopLevel[KoreanLegal with Double]
+  
+  /* 43 */ @js.native
+  object LowerLetter extends TopLevel[LowerLetter with Double]
+  
+  /* 44 */ @js.native
+  object LowerRoman extends TopLevel[LowerRoman with Double]
+  
+  /* 45 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 46 */ @js.native
+  object NumberInDash extends TopLevel[NumberInDash with Double]
+  
+  /* 47 */ @js.native
+  object Ordinal extends TopLevel[Ordinal with Double]
+  
+  /* 48 */ @js.native
+  object OrdinalText extends TopLevel[OrdinalText with Double]
+  
+  /* 49 */ @js.native
+  object RussianLower extends TopLevel[RussianLower with Double]
+  
+  /* 50 */ @js.native
+  object RussianUpper extends TopLevel[RussianUpper with Double]
+  
+  /* 51 */ @js.native
+  object TaiwaneseCounting extends TopLevel[TaiwaneseCounting with Double]
+  
+  /* 52 */ @js.native
+  object TaiwaneseCountingThousand extends TopLevel[TaiwaneseCountingThousand with Double]
+  
+  /* 53 */ @js.native
+  object TaiwaneseDigital extends TopLevel[TaiwaneseDigital with Double]
+  
+  /* 54 */ @js.native
+  object ThaiDescriptive extends TopLevel[ThaiDescriptive with Double]
+  
+  /* 55 */ @js.native
+  object ThaiLetters extends TopLevel[ThaiLetters with Double]
+  
+  /* 56 */ @js.native
+  object ThaiNumbers extends TopLevel[ThaiNumbers with Double]
+  
+  /* 57 */ @js.native
+  object UpperLetter extends TopLevel[UpperLetter with Double]
+  
+  /* 58 */ @js.native
+  object UpperRoman extends TopLevel[UpperRoman with Double]
+  
+  /* 59 */ @js.native
+  object VietnameseDescriptive extends TopLevel[VietnameseDescriptive with Double]
+  
 }
 

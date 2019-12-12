@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Toolbar
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Inline
+import typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Popup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ResponsiveType extends js.Object {
   @js.native
   sealed trait Popup extends ResponsiveType
   
-  /* 1 */ val Inline: typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Inline with Double = js.native
-  /* 0 */ val Popup: typings.ejDotWebDotAll.ej.Toolbar.ResponsiveType.Popup with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResponsiveType with Double] = js.native
+  /* 1 */ @js.native
+  object Inline extends TopLevel[Inline with Double]
+  
+  /* 0 */ @js.native
+  object Popup extends TopLevel[Popup with Double]
+  
 }
 

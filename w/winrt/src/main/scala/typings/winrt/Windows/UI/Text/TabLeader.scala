@@ -1,6 +1,12 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.TabLeader.dashes
+import typings.winrt.Windows.UI.Text.TabLeader.dots
 import typings.winrt.Windows.UI.Text.TabLeader.equals
+import typings.winrt.Windows.UI.Text.TabLeader.lines
+import typings.winrt.Windows.UI.Text.TabLeader.spaces
+import typings.winrt.Windows.UI.Text.TabLeader.thickLines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,14 +35,24 @@ object TabLeader extends js.Object {
   @js.native
   sealed trait thickLines extends TabLeader
   
-  /* 2 */ val dashes: typings.winrt.Windows.UI.Text.TabLeader.dashes with Double = js.native
-  /* 1 */ val dots: typings.winrt.Windows.UI.Text.TabLeader.dots with Double = js.native
   /* 5 */ @JSName("equals")
-  val equals_FTabLeader: equals with Double = js.native
-  /* 3 */ val lines: typings.winrt.Windows.UI.Text.TabLeader.lines with Double = js.native
-  /* 0 */ val spaces: typings.winrt.Windows.UI.Text.TabLeader.spaces with Double = js.native
-  /* 4 */ val thickLines: typings.winrt.Windows.UI.Text.TabLeader.thickLines with Double = js.native
+  val equals_ : equals with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TabLeader with Double] = js.native
+  /* 2 */ @js.native
+  object dashes extends TopLevel[dashes with Double]
+  
+  /* 1 */ @js.native
+  object dots extends TopLevel[dots with Double]
+  
+  /* 3 */ @js.native
+  object lines extends TopLevel[lines with Double]
+  
+  /* 0 */ @js.native
+  object spaces extends TopLevel[spaces with Double]
+  
+  /* 4 */ @js.native
+  object thickLines extends TopLevel[thickLines with Double]
+  
 }
 

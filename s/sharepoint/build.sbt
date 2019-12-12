@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sharepoint"
-version := "2016.1-dt-20191014Z-fbcf19"
+version := "2016.1-dt-20191014Z-591498"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "microsoft-ajax" % "0.0-unknown-dt-20191015Z-f5f140",
+  "org.scalablytyped" %%% "microsoft-ajax" % "0.0-unknown-dt-20191015Z-ca3f09",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

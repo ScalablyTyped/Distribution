@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pi-spi"
-version := "0.0-unknown-dt-20191104Z-2e5c73"
+version := "0.0-unknown-dt-20191104Z-9d89c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

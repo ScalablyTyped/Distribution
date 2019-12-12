@@ -1,5 +1,11 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.EditMode.Defer
+import typings.sharepoint.SP.JsGrid.EditMode.ReadOnly
+import typings.sharepoint.SP.JsGrid.EditMode.ReadOnlyDefer
+import typings.sharepoint.SP.JsGrid.EditMode.ReadWrite
+import typings.sharepoint.SP.JsGrid.EditMode.ReadWriteDefer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,12 +35,22 @@ object EditMode extends js.Object {
   @js.native
   sealed trait ReadWriteDefer extends EditMode
   
-  /* 4 */ val Defer: typings.sharepoint.SP.JsGrid.EditMode.Defer with Double = js.native
-  /* 0 */ val ReadOnly: typings.sharepoint.SP.JsGrid.EditMode.ReadOnly with Double = js.native
-  /* 2 */ val ReadOnlyDefer: typings.sharepoint.SP.JsGrid.EditMode.ReadOnlyDefer with Double = js.native
-  /* 1 */ val ReadWrite: typings.sharepoint.SP.JsGrid.EditMode.ReadWrite with Double = js.native
-  /* 3 */ val ReadWriteDefer: typings.sharepoint.SP.JsGrid.EditMode.ReadWriteDefer with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditMode with Double] = js.native
+  /* 4 */ @js.native
+  object Defer extends TopLevel[Defer with Double]
+  
+  /* 0 */ @js.native
+  object ReadOnly extends TopLevel[ReadOnly with Double]
+  
+  /* 2 */ @js.native
+  object ReadOnlyDefer extends TopLevel[ReadOnlyDefer with Double]
+  
+  /* 1 */ @js.native
+  object ReadWrite extends TopLevel[ReadWrite with Double]
+  
+  /* 3 */ @js.native
+  object ReadWriteDefer extends TopLevel[ReadWriteDefer with Double]
+  
 }
 

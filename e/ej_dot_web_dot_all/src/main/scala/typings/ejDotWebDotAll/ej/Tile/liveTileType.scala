@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Tile
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Tile.liveTileType.Carousel
+import typings.ejDotWebDotAll.ej.Tile.liveTileType.Flip
+import typings.ejDotWebDotAll.ej.Tile.liveTileType.Slide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object liveTileType extends js.Object {
   @js.native
   sealed trait Slide extends liveTileType
   
-  /* 2 */ val Carousel: typings.ejDotWebDotAll.ej.Tile.liveTileType.Carousel with Double = js.native
-  /* 0 */ val Flip: typings.ejDotWebDotAll.ej.Tile.liveTileType.Flip with Double = js.native
-  /* 1 */ val Slide: typings.ejDotWebDotAll.ej.Tile.liveTileType.Slide with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[liveTileType with Double] = js.native
+  /* 2 */ @js.native
+  object Carousel extends TopLevel[Carousel with Double]
+  
+  /* 0 */ @js.native
+  object Flip extends TopLevel[Flip with Double]
+  
+  /* 1 */ @js.native
+  object Slide extends TopLevel[Slide with Double]
+  
 }
 

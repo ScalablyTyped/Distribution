@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ng-cordova"
-version := "0.0-unknown-dt-20190322Z-9c0222"
+version := "0.0-unknown-dt-20190322Z-aad864"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-157a0a",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-716d75",
   "org.scalablytyped" %%% "cordova-plugin-camera" % "4.1.0-030cb8",
-  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-10d0b8",
-  "org.scalablytyped" %%% "cordova-plugin-file-transfer" % "1.7.1-624d48",
+  "org.scalablytyped" %%% "cordova-plugin-file" % "6.0.2-22d3f2",
+  "org.scalablytyped" %%% "cordova-plugin-file-transfer" % "1.7.1-ec1cb0",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

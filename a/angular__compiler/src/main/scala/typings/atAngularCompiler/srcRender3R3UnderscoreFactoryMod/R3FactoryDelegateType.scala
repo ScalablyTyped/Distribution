@@ -1,5 +1,9 @@
 package typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Class
+import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Factory
+import typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object R3FactoryDelegateType extends js.Object {
   @js.native
   sealed trait Function extends R3FactoryDelegateType
   
-  /* 0 */ val Class: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Class with Double = js.native
-  /* 2 */ val Factory: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Factory with Double = js.native
-  /* 1 */ val Function: typings.atAngularCompiler.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Function with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[R3FactoryDelegateType with Double] = js.native
+  /* 0 */ @js.native
+  object Class extends TopLevel[Class with Double]
+  
+  /* 2 */ @js.native
+  object Factory extends TopLevel[Factory with Double]
+  
+  /* 1 */ @js.native
+  object Function extends TopLevel[Function with Double]
+  
 }
 

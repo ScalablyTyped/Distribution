@@ -1,5 +1,8 @@
 package typings.typedoc.distLibUtilsOptionsDeclarationMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeDoc
+import typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeScript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ParameterScope extends js.Object {
   @js.native
   sealed trait TypeScript extends ParameterScope
   
-  /* 0 */ val TypeDoc: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeDoc with Double = js.native
-  /* 1 */ val TypeScript: typings.typedoc.distLibUtilsOptionsDeclarationMod.ParameterScope.TypeScript with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParameterScope with Double] = js.native
+  /* 0 */ @js.native
+  object TypeDoc extends TopLevel[TypeDoc with Double]
+  
+  /* 1 */ @js.native
+  object TypeScript extends TopLevel[TypeScript with Double]
+  
 }
 

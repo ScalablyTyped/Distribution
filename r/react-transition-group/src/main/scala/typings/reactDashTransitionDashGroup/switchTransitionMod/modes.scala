@@ -1,5 +1,8 @@
 package typings.reactDashTransitionDashGroup.switchTransitionMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashTransitionDashGroup.switchTransitionMod.modes.in
+import typings.reactDashTransitionDashGroup.switchTransitionMod.modes.out
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object modes extends js.Object {
   @js.native
   sealed trait out extends modes
   
-  /* "in-out" */ val in: typings.reactDashTransitionDashGroup.switchTransitionMod.modes.in with String = js.native
-  /* "out-in" */ val out: typings.reactDashTransitionDashGroup.switchTransitionMod.modes.out with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[modes with String] = js.native
+  /* "in-out" */ @js.native
+  object in extends TopLevel[in with String]
+  
+  /* "out-in" */ @js.native
+  object out extends TopLevel[out with String]
+  
 }
 

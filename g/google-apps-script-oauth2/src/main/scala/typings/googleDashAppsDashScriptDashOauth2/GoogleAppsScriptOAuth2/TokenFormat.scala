@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.FORM_URL_ENCODED
+import typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object TokenFormat extends js.Object {
   @js.native
   sealed trait JSON extends TokenFormat
   
-  /* 1 */ val FORM_URL_ENCODED: typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.FORM_URL_ENCODED with Double = js.native
-  /* 0 */ val JSON: typings.googleDashAppsDashScriptDashOauth2.GoogleAppsScriptOAuth2.TokenFormat.JSON with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TokenFormat with Double] = js.native
+  /* 1 */ @js.native
+  object FORM_URL_ENCODED extends TopLevel[FORM_URL_ENCODED with Double]
+  
+  /* 0 */ @js.native
+  object JSON extends TopLevel[JSON with Double]
+  
 }
 

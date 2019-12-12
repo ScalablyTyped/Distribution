@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.All
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Cancelling
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Completed
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.None
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.NotStarted
+import typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Postponed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object BuildStatus extends js.Object {
   @js.native
   sealed trait Postponed extends BuildStatus
   
-  /* 47 */ val All: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.All with Double = js.native
-  /* 4 */ val Cancelling: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Cancelling with Double = js.native
-  /* 2 */ val Completed: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Completed with Double = js.native
-  /* 1 */ val InProgress: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.InProgress with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.None with Double = js.native
-  /* 32 */ val NotStarted: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.NotStarted with Double = js.native
-  /* 8 */ val Postponed: typings.vsoDashNodeDashApi.interfacesBuildInterfacesMod.BuildStatus.Postponed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildStatus with Double] = js.native
+  /* 47 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 4 */ @js.native
+  object Cancelling extends TopLevel[Cancelling with Double]
+  
+  /* 2 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 1 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 32 */ @js.native
+  object NotStarted extends TopLevel[NotStarted with Double]
+  
+  /* 8 */ @js.native
+  object Postponed extends TopLevel[Postponed with Double]
+  
 }
 

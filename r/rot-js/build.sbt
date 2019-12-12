@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rot-js"
-version := "2.1.1-fa2f24"
+version := "2.1.1-cc9e8b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

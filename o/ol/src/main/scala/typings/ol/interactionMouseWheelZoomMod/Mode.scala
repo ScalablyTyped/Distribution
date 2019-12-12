@@ -1,5 +1,8 @@
 package typings.ol.interactionMouseWheelZoomMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ol.interactionMouseWheelZoomMod.Mode.TRACKPAD
+import typings.ol.interactionMouseWheelZoomMod.Mode.WHEEL
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object Mode extends js.Object {
   @js.native
   sealed trait WHEEL extends Mode
   
-  /* "trackpad" */ val TRACKPAD: typings.ol.interactionMouseWheelZoomMod.Mode.TRACKPAD with String = js.native
-  /* "wheel" */ val WHEEL: typings.ol.interactionMouseWheelZoomMod.Mode.WHEEL with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Mode with String] = js.native
+  /* "trackpad" */ @js.native
+  object TRACKPAD extends TopLevel[TRACKPAD with String]
+  
+  /* "wheel" */ @js.native
+  object WHEEL extends TopLevel[WHEEL with String]
+  
 }
 

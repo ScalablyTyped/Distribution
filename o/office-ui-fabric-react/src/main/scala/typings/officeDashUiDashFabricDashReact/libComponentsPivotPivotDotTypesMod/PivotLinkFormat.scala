@@ -1,5 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkFormat.links
+import typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkFormat.tabs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object PivotLinkFormat extends js.Object {
   @js.native
   sealed trait tabs extends PivotLinkFormat
   
-  /* 0 */ val links: typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkFormat.links with Double = js.native
-  /* 1 */ val tabs: typings.officeDashUiDashFabricDashReact.libComponentsPivotPivotDotTypesMod.PivotLinkFormat.tabs with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PivotLinkFormat with Double] = js.native
+  /* 0 */ @js.native
+  object links extends TopLevel[links with Double]
+  
+  /* 1 */ @js.native
+  object tabs extends TopLevel[tabs with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tagcloud"
-version := "v1.1.0-dt-20190328Z-8c09fb"
+version := "v1.1.0-dt-20190328Z-bd93d7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

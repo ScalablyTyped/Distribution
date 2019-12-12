@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.FILLED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,9 +26,13 @@ object TextButtonStyle extends js.Object {
   @js.native
   sealed trait TEXT extends TextButtonStyle
   
-  /* 1 */ val FILLED: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.FILLED with Double = js.native
-  /* 0 */ val TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Card_Service.TextButtonStyle.TEXT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextButtonStyle with Double] = js.native
+  /* 1 */ @js.native
+  object FILLED extends TopLevel[FILLED with Double]
+  
+  /* 0 */ @js.native
+  object TEXT extends TopLevel[TEXT with Double]
+  
 }
 

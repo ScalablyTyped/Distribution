@@ -1,5 +1,54 @@
 package typings.pdfmake.buildPdfmakeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pdfmake.buildPdfmakeMod.PageSize.A0_x_2
+import typings.pdfmake.buildPdfmakeMod.PageSize.A0_x_4
+import typings.pdfmake.buildPdfmakeMod.PageSize.A1
+import typings.pdfmake.buildPdfmakeMod.PageSize.A1O
+import typings.pdfmake.buildPdfmakeMod.PageSize.A2
+import typings.pdfmake.buildPdfmakeMod.PageSize.A3
+import typings.pdfmake.buildPdfmakeMod.PageSize.A4
+import typings.pdfmake.buildPdfmakeMod.PageSize.A5
+import typings.pdfmake.buildPdfmakeMod.PageSize.A6
+import typings.pdfmake.buildPdfmakeMod.PageSize.A7
+import typings.pdfmake.buildPdfmakeMod.PageSize.A8
+import typings.pdfmake.buildPdfmakeMod.PageSize.A9
+import typings.pdfmake.buildPdfmakeMod.PageSize.AO
+import typings.pdfmake.buildPdfmakeMod.PageSize.B1
+import typings.pdfmake.buildPdfmakeMod.PageSize.B1O
+import typings.pdfmake.buildPdfmakeMod.PageSize.B2
+import typings.pdfmake.buildPdfmakeMod.PageSize.B3
+import typings.pdfmake.buildPdfmakeMod.PageSize.B4
+import typings.pdfmake.buildPdfmakeMod.PageSize.B5
+import typings.pdfmake.buildPdfmakeMod.PageSize.B6
+import typings.pdfmake.buildPdfmakeMod.PageSize.B7
+import typings.pdfmake.buildPdfmakeMod.PageSize.B8
+import typings.pdfmake.buildPdfmakeMod.PageSize.B9
+import typings.pdfmake.buildPdfmakeMod.PageSize.BO
+import typings.pdfmake.buildPdfmakeMod.PageSize.C1
+import typings.pdfmake.buildPdfmakeMod.PageSize.C1O
+import typings.pdfmake.buildPdfmakeMod.PageSize.C2
+import typings.pdfmake.buildPdfmakeMod.PageSize.C3
+import typings.pdfmake.buildPdfmakeMod.PageSize.C4
+import typings.pdfmake.buildPdfmakeMod.PageSize.C5
+import typings.pdfmake.buildPdfmakeMod.PageSize.C6
+import typings.pdfmake.buildPdfmakeMod.PageSize.C7
+import typings.pdfmake.buildPdfmakeMod.PageSize.C8
+import typings.pdfmake.buildPdfmakeMod.PageSize.C9
+import typings.pdfmake.buildPdfmakeMod.PageSize.CO
+import typings.pdfmake.buildPdfmakeMod.PageSize.EXECUTIVE
+import typings.pdfmake.buildPdfmakeMod.PageSize.FOLIO
+import typings.pdfmake.buildPdfmakeMod.PageSize.LEGAL
+import typings.pdfmake.buildPdfmakeMod.PageSize.LETTER
+import typings.pdfmake.buildPdfmakeMod.PageSize.RA1
+import typings.pdfmake.buildPdfmakeMod.PageSize.RA2
+import typings.pdfmake.buildPdfmakeMod.PageSize.RA3
+import typings.pdfmake.buildPdfmakeMod.PageSize.RA4
+import typings.pdfmake.buildPdfmakeMod.PageSize.SRA1
+import typings.pdfmake.buildPdfmakeMod.PageSize.SRA2
+import typings.pdfmake.buildPdfmakeMod.PageSize.SRA3
+import typings.pdfmake.buildPdfmakeMod.PageSize.SRA4
+import typings.pdfmake.buildPdfmakeMod.PageSize.TABLOID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -169,55 +218,151 @@ object PageSize extends js.Object {
   @js.native
   sealed trait TABLOID extends PageSize
   
-  /* "2A0" */ val A0_x_2: typings.pdfmake.buildPdfmakeMod.PageSize.A0_x_2 with String = js.native
-  /* "4A0" */ val A0_x_4: typings.pdfmake.buildPdfmakeMod.PageSize.A0_x_4 with String = js.native
-  /* "A1" */ val A1: typings.pdfmake.buildPdfmakeMod.PageSize.A1 with String = js.native
-  /* "A10" */ val A1O: typings.pdfmake.buildPdfmakeMod.PageSize.A1O with String = js.native
-  /* "A2" */ val A2: typings.pdfmake.buildPdfmakeMod.PageSize.A2 with String = js.native
-  /* "A3" */ val A3: typings.pdfmake.buildPdfmakeMod.PageSize.A3 with String = js.native
-  /* "A4" */ val A4: typings.pdfmake.buildPdfmakeMod.PageSize.A4 with String = js.native
-  /* "A5" */ val A5: typings.pdfmake.buildPdfmakeMod.PageSize.A5 with String = js.native
-  /* "A6" */ val A6: typings.pdfmake.buildPdfmakeMod.PageSize.A6 with String = js.native
-  /* "A7" */ val A7: typings.pdfmake.buildPdfmakeMod.PageSize.A7 with String = js.native
-  /* "A8" */ val A8: typings.pdfmake.buildPdfmakeMod.PageSize.A8 with String = js.native
-  /* "A9" */ val A9: typings.pdfmake.buildPdfmakeMod.PageSize.A9 with String = js.native
-  /* "A0" */ val AO: typings.pdfmake.buildPdfmakeMod.PageSize.AO with String = js.native
-  /* "B1" */ val B1: typings.pdfmake.buildPdfmakeMod.PageSize.B1 with String = js.native
-  /* "B10" */ val B1O: typings.pdfmake.buildPdfmakeMod.PageSize.B1O with String = js.native
-  /* "B2" */ val B2: typings.pdfmake.buildPdfmakeMod.PageSize.B2 with String = js.native
-  /* "B3" */ val B3: typings.pdfmake.buildPdfmakeMod.PageSize.B3 with String = js.native
-  /* "B4" */ val B4: typings.pdfmake.buildPdfmakeMod.PageSize.B4 with String = js.native
-  /* "B5" */ val B5: typings.pdfmake.buildPdfmakeMod.PageSize.B5 with String = js.native
-  /* "B6" */ val B6: typings.pdfmake.buildPdfmakeMod.PageSize.B6 with String = js.native
-  /* "B7" */ val B7: typings.pdfmake.buildPdfmakeMod.PageSize.B7 with String = js.native
-  /* "B8" */ val B8: typings.pdfmake.buildPdfmakeMod.PageSize.B8 with String = js.native
-  /* "B9" */ val B9: typings.pdfmake.buildPdfmakeMod.PageSize.B9 with String = js.native
-  /* "B0" */ val BO: typings.pdfmake.buildPdfmakeMod.PageSize.BO with String = js.native
-  /* "C1" */ val C1: typings.pdfmake.buildPdfmakeMod.PageSize.C1 with String = js.native
-  /* "C10" */ val C1O: typings.pdfmake.buildPdfmakeMod.PageSize.C1O with String = js.native
-  /* "C2" */ val C2: typings.pdfmake.buildPdfmakeMod.PageSize.C2 with String = js.native
-  /* "C3" */ val C3: typings.pdfmake.buildPdfmakeMod.PageSize.C3 with String = js.native
-  /* "C4" */ val C4: typings.pdfmake.buildPdfmakeMod.PageSize.C4 with String = js.native
-  /* "C5" */ val C5: typings.pdfmake.buildPdfmakeMod.PageSize.C5 with String = js.native
-  /* "C6" */ val C6: typings.pdfmake.buildPdfmakeMod.PageSize.C6 with String = js.native
-  /* "C7" */ val C7: typings.pdfmake.buildPdfmakeMod.PageSize.C7 with String = js.native
-  /* "C8" */ val C8: typings.pdfmake.buildPdfmakeMod.PageSize.C8 with String = js.native
-  /* "C9" */ val C9: typings.pdfmake.buildPdfmakeMod.PageSize.C9 with String = js.native
-  /* "C0" */ val CO: typings.pdfmake.buildPdfmakeMod.PageSize.CO with String = js.native
-  /* "EXECUTIVE" */ val EXECUTIVE: typings.pdfmake.buildPdfmakeMod.PageSize.EXECUTIVE with String = js.native
-  /* "FOLIO" */ val FOLIO: typings.pdfmake.buildPdfmakeMod.PageSize.FOLIO with String = js.native
-  /* "LEGAL" */ val LEGAL: typings.pdfmake.buildPdfmakeMod.PageSize.LEGAL with String = js.native
-  /* "LETTER" */ val LETTER: typings.pdfmake.buildPdfmakeMod.PageSize.LETTER with String = js.native
-  /* "RA1" */ val RA1: typings.pdfmake.buildPdfmakeMod.PageSize.RA1 with String = js.native
-  /* "RA2" */ val RA2: typings.pdfmake.buildPdfmakeMod.PageSize.RA2 with String = js.native
-  /* "RA3" */ val RA3: typings.pdfmake.buildPdfmakeMod.PageSize.RA3 with String = js.native
-  /* "RA4" */ val RA4: typings.pdfmake.buildPdfmakeMod.PageSize.RA4 with String = js.native
-  /* "SRA1" */ val SRA1: typings.pdfmake.buildPdfmakeMod.PageSize.SRA1 with String = js.native
-  /* "SRA2" */ val SRA2: typings.pdfmake.buildPdfmakeMod.PageSize.SRA2 with String = js.native
-  /* "SRA3" */ val SRA3: typings.pdfmake.buildPdfmakeMod.PageSize.SRA3 with String = js.native
-  /* "SRA4" */ val SRA4: typings.pdfmake.buildPdfmakeMod.PageSize.SRA4 with String = js.native
-  /* "TABLOID" */ val TABLOID: typings.pdfmake.buildPdfmakeMod.PageSize.TABLOID with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PageSize with String] = js.native
+  /* "2A0" */ @js.native
+  object A0_x_2 extends TopLevel[A0_x_2 with String]
+  
+  /* "4A0" */ @js.native
+  object A0_x_4 extends TopLevel[A0_x_4 with String]
+  
+  /* "A1" */ @js.native
+  object A1 extends TopLevel[A1 with String]
+  
+  /* "A10" */ @js.native
+  object A1O extends TopLevel[A1O with String]
+  
+  /* "A2" */ @js.native
+  object A2 extends TopLevel[A2 with String]
+  
+  /* "A3" */ @js.native
+  object A3 extends TopLevel[A3 with String]
+  
+  /* "A4" */ @js.native
+  object A4 extends TopLevel[A4 with String]
+  
+  /* "A5" */ @js.native
+  object A5 extends TopLevel[A5 with String]
+  
+  /* "A6" */ @js.native
+  object A6 extends TopLevel[A6 with String]
+  
+  /* "A7" */ @js.native
+  object A7 extends TopLevel[A7 with String]
+  
+  /* "A8" */ @js.native
+  object A8 extends TopLevel[A8 with String]
+  
+  /* "A9" */ @js.native
+  object A9 extends TopLevel[A9 with String]
+  
+  /* "A0" */ @js.native
+  object AO extends TopLevel[AO with String]
+  
+  /* "B1" */ @js.native
+  object B1 extends TopLevel[B1 with String]
+  
+  /* "B10" */ @js.native
+  object B1O extends TopLevel[B1O with String]
+  
+  /* "B2" */ @js.native
+  object B2 extends TopLevel[B2 with String]
+  
+  /* "B3" */ @js.native
+  object B3 extends TopLevel[B3 with String]
+  
+  /* "B4" */ @js.native
+  object B4 extends TopLevel[B4 with String]
+  
+  /* "B5" */ @js.native
+  object B5 extends TopLevel[B5 with String]
+  
+  /* "B6" */ @js.native
+  object B6 extends TopLevel[B6 with String]
+  
+  /* "B7" */ @js.native
+  object B7 extends TopLevel[B7 with String]
+  
+  /* "B8" */ @js.native
+  object B8 extends TopLevel[B8 with String]
+  
+  /* "B9" */ @js.native
+  object B9 extends TopLevel[B9 with String]
+  
+  /* "B0" */ @js.native
+  object BO extends TopLevel[BO with String]
+  
+  /* "C1" */ @js.native
+  object C1 extends TopLevel[C1 with String]
+  
+  /* "C10" */ @js.native
+  object C1O extends TopLevel[C1O with String]
+  
+  /* "C2" */ @js.native
+  object C2 extends TopLevel[C2 with String]
+  
+  /* "C3" */ @js.native
+  object C3 extends TopLevel[C3 with String]
+  
+  /* "C4" */ @js.native
+  object C4 extends TopLevel[C4 with String]
+  
+  /* "C5" */ @js.native
+  object C5 extends TopLevel[C5 with String]
+  
+  /* "C6" */ @js.native
+  object C6 extends TopLevel[C6 with String]
+  
+  /* "C7" */ @js.native
+  object C7 extends TopLevel[C7 with String]
+  
+  /* "C8" */ @js.native
+  object C8 extends TopLevel[C8 with String]
+  
+  /* "C9" */ @js.native
+  object C9 extends TopLevel[C9 with String]
+  
+  /* "C0" */ @js.native
+  object CO extends TopLevel[CO with String]
+  
+  /* "EXECUTIVE" */ @js.native
+  object EXECUTIVE extends TopLevel[EXECUTIVE with String]
+  
+  /* "FOLIO" */ @js.native
+  object FOLIO extends TopLevel[FOLIO with String]
+  
+  /* "LEGAL" */ @js.native
+  object LEGAL extends TopLevel[LEGAL with String]
+  
+  /* "LETTER" */ @js.native
+  object LETTER extends TopLevel[LETTER with String]
+  
+  /* "RA1" */ @js.native
+  object RA1 extends TopLevel[RA1 with String]
+  
+  /* "RA2" */ @js.native
+  object RA2 extends TopLevel[RA2 with String]
+  
+  /* "RA3" */ @js.native
+  object RA3 extends TopLevel[RA3 with String]
+  
+  /* "RA4" */ @js.native
+  object RA4 extends TopLevel[RA4 with String]
+  
+  /* "SRA1" */ @js.native
+  object SRA1 extends TopLevel[SRA1 with String]
+  
+  /* "SRA2" */ @js.native
+  object SRA2 extends TopLevel[SRA2 with String]
+  
+  /* "SRA3" */ @js.native
+  object SRA3 extends TopLevel[SRA3 with String]
+  
+  /* "SRA4" */ @js.native
+  object SRA4 extends TopLevel[SRA4 with String]
+  
+  /* "TABLOID" */ @js.native
+  object TABLOID extends TopLevel[TABLOID with String]
+  
 }
 

@@ -1,6 +1,14 @@
 package typings.promiseDashFtpDashCommon
 
+import org.scalablytyped.runtime.TopLevel
 import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTED
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTING
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTED
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTING
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.LOGGING_OUT
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.NOT_YET_CONNECTED
+import typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.RECONNECTING
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,15 +71,29 @@ object promiseDashFtpDashCommonMod extends js.Object {
     @js.native
     sealed trait RECONNECTING extends STATUSES
     
-    /* "connected" */ val CONNECTED: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTED with String = js.native
-    /* "connecting" */ val CONNECTING: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.CONNECTING with String = js.native
-    /* "disconnected" */ val DISCONNECTED: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTED with String = js.native
-    /* "disconnecting" */ val DISCONNECTING: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.DISCONNECTING with String = js.native
-    /* "logging out" */ val LOGGING_OUT: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.LOGGING_OUT with String = js.native
-    /* "not yet connected" */ val NOT_YET_CONNECTED: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.NOT_YET_CONNECTED with String = js.native
-    /* "reconnecting" */ val RECONNECTING: typings.promiseDashFtpDashCommon.promiseDashFtpDashCommonMod.STATUSES.RECONNECTING with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[STATUSES with String] = js.native
+    /* "connected" */ @js.native
+    object CONNECTED extends TopLevel[CONNECTED with String]
+    
+    /* "connecting" */ @js.native
+    object CONNECTING extends TopLevel[CONNECTING with String]
+    
+    /* "disconnected" */ @js.native
+    object DISCONNECTED extends TopLevel[DISCONNECTED with String]
+    
+    /* "disconnecting" */ @js.native
+    object DISCONNECTING extends TopLevel[DISCONNECTING with String]
+    
+    /* "logging out" */ @js.native
+    object LOGGING_OUT extends TopLevel[LOGGING_OUT with String]
+    
+    /* "not yet connected" */ @js.native
+    object NOT_YET_CONNECTED extends TopLevel[NOT_YET_CONNECTED with String]
+    
+    /* "reconnecting" */ @js.native
+    object RECONNECTING extends TopLevel[RECONNECTING with String]
+    
   }
   
 }

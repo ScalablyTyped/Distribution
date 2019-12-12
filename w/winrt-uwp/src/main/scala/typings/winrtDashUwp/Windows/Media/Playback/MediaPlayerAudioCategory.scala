@@ -1,5 +1,16 @@
 package typings.winrtDashUwp.Windows.Media.Playback
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.alerts
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.communications
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameChat
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameEffects
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameMedia
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.media
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.movie
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.other
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.soundEffects
+import typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.speech
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,17 +62,37 @@ object MediaPlayerAudioCategory extends js.Object {
   @js.native
   sealed trait speech extends MediaPlayerAudioCategory
   
-  /* 2 */ val alerts: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.alerts with Double = js.native
-  /* 1 */ val communications: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.communications with Double = js.native
-  /* 6 */ val gameChat: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameChat with Double = js.native
-  /* 4 */ val gameEffects: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameEffects with Double = js.native
-  /* 5 */ val gameMedia: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.gameMedia with Double = js.native
-  /* 9 */ val media: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.media with Double = js.native
-  /* 8 */ val movie: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.movie with Double = js.native
-  /* 0 */ val other: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.other with Double = js.native
-  /* 3 */ val soundEffects: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.soundEffects with Double = js.native
-  /* 7 */ val speech: typings.winrtDashUwp.Windows.Media.Playback.MediaPlayerAudioCategory.speech with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaPlayerAudioCategory with Double] = js.native
+  /* 2 */ @js.native
+  object alerts extends TopLevel[alerts with Double]
+  
+  /* 1 */ @js.native
+  object communications extends TopLevel[communications with Double]
+  
+  /* 6 */ @js.native
+  object gameChat extends TopLevel[gameChat with Double]
+  
+  /* 4 */ @js.native
+  object gameEffects extends TopLevel[gameEffects with Double]
+  
+  /* 5 */ @js.native
+  object gameMedia extends TopLevel[gameMedia with Double]
+  
+  /* 9 */ @js.native
+  object media extends TopLevel[media with Double]
+  
+  /* 8 */ @js.native
+  object movie extends TopLevel[movie with Double]
+  
+  /* 0 */ @js.native
+  object other extends TopLevel[other with Double]
+  
+  /* 3 */ @js.native
+  object soundEffects extends TopLevel[soundEffects with Double]
+  
+  /* 7 */ @js.native
+  object speech extends TopLevel[speech with Double]
+  
 }
 

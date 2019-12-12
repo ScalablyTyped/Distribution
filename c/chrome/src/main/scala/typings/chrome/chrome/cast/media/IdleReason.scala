@@ -1,5 +1,10 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.IdleReason.CANCELLED
+import typings.chrome.chrome.cast.media.IdleReason.ERROR
+import typings.chrome.chrome.cast.media.IdleReason.FINISHED
+import typings.chrome.chrome.cast.media.IdleReason.INTERRUPTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object IdleReason extends js.Object {
   @js.native
   sealed trait INTERRUPTED extends IdleReason
   
-  /* "CANCELLED" */ val CANCELLED: typings.chrome.chrome.cast.media.IdleReason.CANCELLED with String = js.native
-  /* "ERROR" */ val ERROR: typings.chrome.chrome.cast.media.IdleReason.ERROR with String = js.native
-  /* "FINISHED" */ val FINISHED: typings.chrome.chrome.cast.media.IdleReason.FINISHED with String = js.native
-  /* "INTERRUPTED" */ val INTERRUPTED: typings.chrome.chrome.cast.media.IdleReason.INTERRUPTED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[IdleReason with String] = js.native
+  /* "CANCELLED" */ @js.native
+  object CANCELLED extends TopLevel[CANCELLED with String]
+  
+  /* "ERROR" */ @js.native
+  object ERROR extends TopLevel[ERROR with String]
+  
+  /* "FINISHED" */ @js.native
+  object FINISHED extends TopLevel[FINISHED with String]
+  
+  /* "INTERRUPTED" */ @js.native
+  object INTERRUPTED extends TopLevel[INTERRUPTED with String]
+  
 }
 

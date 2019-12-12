@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qiniu-js"
-version := "2.5-dt-20190121Z-666ac5"
+version := "2.5-dt-20190121Z-92230c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Buy
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Get
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Install
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.PurchaseRequest
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Request
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Try
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object AcquisitionOperationType extends js.Object {
   @js.native
   sealed trait Try extends AcquisitionOperationType
   
-  /* 2 */ val Buy: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Buy with Double = js.native
-  /* 0 */ val Get: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Get with Double = js.native
-  /* 1 */ val Install: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Install with Double = js.native
-  /* 5 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.None with Double = js.native
-  /* 6 */ val PurchaseRequest: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.PurchaseRequest with Double = js.native
-  /* 4 */ val Request: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Request with Double = js.native
-  /* 3 */ val Try: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationType.Try with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AcquisitionOperationType with Double] = js.native
+  /* 2 */ @js.native
+  object Buy extends TopLevel[Buy with Double]
+  
+  /* 0 */ @js.native
+  object Get extends TopLevel[Get with Double]
+  
+  /* 1 */ @js.native
+  object Install extends TopLevel[Install with Double]
+  
+  /* 5 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 6 */ @js.native
+  object PurchaseRequest extends TopLevel[PurchaseRequest with Double]
+  
+  /* 4 */ @js.native
+  object Request extends TopLevel[Request with Double]
+  
+  /* 3 */ @js.native
+  object Try extends TopLevel[Try with Double]
+  
 }
 

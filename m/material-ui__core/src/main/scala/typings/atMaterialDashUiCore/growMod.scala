@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.growGrowMod.GrowProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object growMod extends js.Object {
     def this(props: GrowProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[GrowProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[GrowProps]]
+  
 }
 

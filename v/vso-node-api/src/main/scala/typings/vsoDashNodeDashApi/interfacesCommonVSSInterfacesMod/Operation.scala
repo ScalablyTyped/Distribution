@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Add
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Copy
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Move
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Remove
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Replace
+import typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object Operation extends js.Object {
   @js.native
   sealed trait Test extends Operation
   
-  /* 0 */ val Add: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Add with Double = js.native
-  /* 4 */ val Copy: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Copy with Double = js.native
-  /* 3 */ val Move: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Move with Double = js.native
-  /* 1 */ val Remove: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Remove with Double = js.native
-  /* 2 */ val Replace: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Replace with Double = js.native
-  /* 5 */ val Test: typings.vsoDashNodeDashApi.interfacesCommonVSSInterfacesMod.Operation.Test with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Operation with Double] = js.native
+  /* 0 */ @js.native
+  object Add extends TopLevel[Add with Double]
+  
+  /* 4 */ @js.native
+  object Copy extends TopLevel[Copy with Double]
+  
+  /* 3 */ @js.native
+  object Move extends TopLevel[Move with Double]
+  
+  /* 1 */ @js.native
+  object Remove extends TopLevel[Remove with Double]
+  
+  /* 2 */ @js.native
+  object Replace extends TopLevel[Replace with Double]
+  
+  /* 5 */ @js.native
+  object Test extends TopLevel[Test with Double]
+  
 }
 

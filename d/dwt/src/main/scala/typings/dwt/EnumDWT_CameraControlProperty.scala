@@ -1,5 +1,13 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_EXPOSURE
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_FOCUS
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_IRIS
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_PAN
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_ROLL
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_TILT
+import typings.dwt.EnumDWT_CameraControlProperty.CCP_ZOOM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,14 +65,28 @@ object EnumDWT_CameraControlProperty extends js.Object {
   @js.native
   sealed trait CCP_ZOOM extends EnumDWT_CameraControlProperty
   
-  /* 4 */ val CCP_EXPOSURE: typings.dwt.EnumDWT_CameraControlProperty.CCP_EXPOSURE with Double = js.native
-  /* 6 */ val CCP_FOCUS: typings.dwt.EnumDWT_CameraControlProperty.CCP_FOCUS with Double = js.native
-  /* 5 */ val CCP_IRIS: typings.dwt.EnumDWT_CameraControlProperty.CCP_IRIS with Double = js.native
-  /* 0 */ val CCP_PAN: typings.dwt.EnumDWT_CameraControlProperty.CCP_PAN with Double = js.native
-  /* 2 */ val CCP_ROLL: typings.dwt.EnumDWT_CameraControlProperty.CCP_ROLL with Double = js.native
-  /* 1 */ val CCP_TILT: typings.dwt.EnumDWT_CameraControlProperty.CCP_TILT with Double = js.native
-  /* 3 */ val CCP_ZOOM: typings.dwt.EnumDWT_CameraControlProperty.CCP_ZOOM with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CameraControlProperty with Double] = js.native
+  /* 4 */ @js.native
+  object CCP_EXPOSURE extends TopLevel[CCP_EXPOSURE with Double]
+  
+  /* 6 */ @js.native
+  object CCP_FOCUS extends TopLevel[CCP_FOCUS with Double]
+  
+  /* 5 */ @js.native
+  object CCP_IRIS extends TopLevel[CCP_IRIS with Double]
+  
+  /* 0 */ @js.native
+  object CCP_PAN extends TopLevel[CCP_PAN with Double]
+  
+  /* 2 */ @js.native
+  object CCP_ROLL extends TopLevel[CCP_ROLL with Double]
+  
+  /* 1 */ @js.native
+  object CCP_TILT extends TopLevel[CCP_TILT with Double]
+  
+  /* 3 */ @js.native
+  object CCP_ZOOM extends TopLevel[CCP_ZOOM with Double]
+  
 }
 

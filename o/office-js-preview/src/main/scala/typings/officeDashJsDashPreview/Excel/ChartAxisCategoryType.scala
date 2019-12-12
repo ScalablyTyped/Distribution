@@ -1,5 +1,9 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.automatic
+import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.dateAxis
+import typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.textAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +44,16 @@ object ChartAxisCategoryType extends js.Object {
   @js.native
   sealed trait textAxis extends ChartAxisCategoryType
   
-  /* "Automatic" */ val automatic: typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.automatic with String = js.native
-  /* "DateAxis" */ val dateAxis: typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.dateAxis with String = js.native
-  /* "TextAxis" */ val textAxis: typings.officeDashJsDashPreview.Excel.ChartAxisCategoryType.textAxis with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartAxisCategoryType with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "DateAxis" */ @js.native
+  object dateAxis extends TopLevel[dateAxis with String]
+  
+  /* "TextAxis" */ @js.native
+  object textAxis extends TopLevel[textAxis with String]
+  
 }
 

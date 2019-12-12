@@ -1,5 +1,17 @@
 package typings.strophe.stropheMod.Strophe
 
+import org.scalablytyped.runtime.TopLevel
+import typings.strophe.stropheMod.Strophe.Status.ATTACHED
+import typings.strophe.stropheMod.Strophe.Status.AUTHENTICATING
+import typings.strophe.stropheMod.Strophe.Status.AUTHFAIL
+import typings.strophe.stropheMod.Strophe.Status.CONNECTED
+import typings.strophe.stropheMod.Strophe.Status.CONNECTING
+import typings.strophe.stropheMod.Strophe.Status.CONNFAIL
+import typings.strophe.stropheMod.Strophe.Status.CONNTIMEOUT
+import typings.strophe.stropheMod.Strophe.Status.DISCONNECTED
+import typings.strophe.stropheMod.Strophe.Status.DISCONNECTING
+import typings.strophe.stropheMod.Strophe.Status.ERROR
+import typings.strophe.stropheMod.Strophe.Status.REDIRECT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,18 +69,40 @@ object Status extends js.Object {
   @js.native
   sealed trait REDIRECT extends Status
   
-  /* 8 */ val ATTACHED: typings.strophe.stropheMod.Strophe.Status.ATTACHED with Double = js.native
-  /* 3 */ val AUTHENTICATING: typings.strophe.stropheMod.Strophe.Status.AUTHENTICATING with Double = js.native
-  /* 4 */ val AUTHFAIL: typings.strophe.stropheMod.Strophe.Status.AUTHFAIL with Double = js.native
-  /* 5 */ val CONNECTED: typings.strophe.stropheMod.Strophe.Status.CONNECTED with Double = js.native
-  /* 1 */ val CONNECTING: typings.strophe.stropheMod.Strophe.Status.CONNECTING with Double = js.native
-  /* 2 */ val CONNFAIL: typings.strophe.stropheMod.Strophe.Status.CONNFAIL with Double = js.native
-  /* 10 */ val CONNTIMEOUT: typings.strophe.stropheMod.Strophe.Status.CONNTIMEOUT with Double = js.native
-  /* 6 */ val DISCONNECTED: typings.strophe.stropheMod.Strophe.Status.DISCONNECTED with Double = js.native
-  /* 7 */ val DISCONNECTING: typings.strophe.stropheMod.Strophe.Status.DISCONNECTING with Double = js.native
-  /* 0 */ val ERROR: typings.strophe.stropheMod.Strophe.Status.ERROR with Double = js.native
-  /* 9 */ val REDIRECT: typings.strophe.stropheMod.Strophe.Status.REDIRECT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Status with Double] = js.native
+  /* 8 */ @js.native
+  object ATTACHED extends TopLevel[ATTACHED with Double]
+  
+  /* 3 */ @js.native
+  object AUTHENTICATING extends TopLevel[AUTHENTICATING with Double]
+  
+  /* 4 */ @js.native
+  object AUTHFAIL extends TopLevel[AUTHFAIL with Double]
+  
+  /* 5 */ @js.native
+  object CONNECTED extends TopLevel[CONNECTED with Double]
+  
+  /* 1 */ @js.native
+  object CONNECTING extends TopLevel[CONNECTING with Double]
+  
+  /* 2 */ @js.native
+  object CONNFAIL extends TopLevel[CONNFAIL with Double]
+  
+  /* 10 */ @js.native
+  object CONNTIMEOUT extends TopLevel[CONNTIMEOUT with Double]
+  
+  /* 6 */ @js.native
+  object DISCONNECTED extends TopLevel[DISCONNECTED with Double]
+  
+  /* 7 */ @js.native
+  object DISCONNECTING extends TopLevel[DISCONNECTING with Double]
+  
+  /* 0 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 9 */ @js.native
+  object REDIRECT extends TopLevel[REDIRECT with Double]
+  
 }
 

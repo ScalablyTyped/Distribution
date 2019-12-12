@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wlan
+import typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wwan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ProfileMediaType extends js.Object {
   @js.native
   sealed trait wwan extends ProfileMediaType
   
-  /* 0 */ val wlan: typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wlan with Double = js.native
-  /* 1 */ val wwan: typings.winrt.Windows.Networking.NetworkOperators.ProfileMediaType.wwan with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProfileMediaType with Double] = js.native
+  /* 0 */ @js.native
+  object wlan extends TopLevel[wlan with Double]
+  
+  /* 1 */ @js.native
+  object wwan extends TopLevel[wwan with Double]
+  
 }
 

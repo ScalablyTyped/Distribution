@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.stepLabelStepLabelMod.StepLabelProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object stepLabelMod extends js.Object {
     def this(props: StepLabelProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[StepLabelProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[StepLabelProps]]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Active
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Composing
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Gone
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Inactive
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Invalid
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object ChatStateType extends js.Object {
   @js.native
   sealed trait Paused extends ChatStateType
   
-  /* 0 */ val Active: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Active with Double = js.native
-  /* 1 */ val Composing: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Composing with Double = js.native
-  /* 2 */ val Gone: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Gone with Double = js.native
-  /* 3 */ val Inactive: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Inactive with Double = js.native
-  /* 4 */ val Invalid: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Invalid with Double = js.native
-  /* 5 */ val Paused: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.ChatStateType.Paused with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatStateType with Double] = js.native
+  /* 0 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 1 */ @js.native
+  object Composing extends TopLevel[Composing with Double]
+  
+  /* 2 */ @js.native
+  object Gone extends TopLevel[Gone with Double]
+  
+  /* 3 */ @js.native
+  object Inactive extends TopLevel[Inactive with Double]
+  
+  /* 4 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 5 */ @js.native
+  object Paused extends TopLevel[Paused with Double]
+  
 }
 

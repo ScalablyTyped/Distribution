@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUBSCRIPT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUPERSCRIPT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object TextBaselineOffset extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends TextBaselineOffset
   
-  /* 1 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.NONE with Double = js.native
-  /* 3 */ val SUBSCRIPT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUBSCRIPT with Double = js.native
-  /* 2 */ val SUPERSCRIPT: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.SUPERSCRIPT with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.TextBaselineOffset.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextBaselineOffset with Double] = js.native
+  /* 1 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 3 */ @js.native
+  object SUBSCRIPT extends TopLevel[SUBSCRIPT with Double]
+  
+  /* 2 */ @js.native
+  object SUPERSCRIPT extends TopLevel[SUPERSCRIPT with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

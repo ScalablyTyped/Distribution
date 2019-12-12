@@ -1,5 +1,6 @@
 package typings.plotlyDotJs.plotlyDotJsMod
 
+import typings.plotlyDotJs.plotlyDotJsStrings.`-`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +15,9 @@ import scala.scalajs.js.annotation._
 trait AxisType extends js.Object
 
 object AxisType {
+  @JSName("-")
   @scala.inline
-  def `-`: typings.plotlyDotJs.plotlyDotJsStrings.`-` = this.cast("-")
+  def `-_`: `-` = this.cast("-")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

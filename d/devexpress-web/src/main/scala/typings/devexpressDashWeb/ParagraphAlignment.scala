@@ -1,5 +1,10 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.ParagraphAlignment.Center
+import typings.devexpressDashWeb.ParagraphAlignment.Justify
+import typings.devexpressDashWeb.ParagraphAlignment.Left
+import typings.devexpressDashWeb.ParagraphAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object ParagraphAlignment extends js.Object {
   @js.native
   sealed trait Right extends ParagraphAlignment
   
-  /* 2 */ val Center: typings.devexpressDashWeb.ParagraphAlignment.Center with Double = js.native
-  /* 3 */ val Justify: typings.devexpressDashWeb.ParagraphAlignment.Justify with Double = js.native
-  /* 0 */ val Left: typings.devexpressDashWeb.ParagraphAlignment.Left with Double = js.native
-  /* 1 */ val Right: typings.devexpressDashWeb.ParagraphAlignment.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParagraphAlignment with Double] = js.native
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 3 */ @js.native
+  object Justify extends TopLevel[Justify with Double]
+  
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 1 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

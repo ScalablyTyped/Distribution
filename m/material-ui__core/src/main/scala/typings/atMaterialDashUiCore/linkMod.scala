@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.linkLinkMod.LinkProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object linkMod extends js.Object {
     def this(props: LinkProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[LinkProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[LinkProps]]
+  
 }
 

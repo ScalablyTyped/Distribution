@@ -1,5 +1,11 @@
 package typings.ol.controlScaleLineMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ol.controlScaleLineMod.Units.DEGREES
+import typings.ol.controlScaleLineMod.Units.IMPERIAL
+import typings.ol.controlScaleLineMod.Units.METRIC
+import typings.ol.controlScaleLineMod.Units.NAUTICAL
+import typings.ol.controlScaleLineMod.Units.US
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Units extends js.Object {
   @js.native
   sealed trait US extends Units
   
-  /* "degrees" */ val DEGREES: typings.ol.controlScaleLineMod.Units.DEGREES with String = js.native
-  /* "imperial" */ val IMPERIAL: typings.ol.controlScaleLineMod.Units.IMPERIAL with String = js.native
-  /* "metric" */ val METRIC: typings.ol.controlScaleLineMod.Units.METRIC with String = js.native
-  /* "nautical" */ val NAUTICAL: typings.ol.controlScaleLineMod.Units.NAUTICAL with String = js.native
-  /* "us" */ val US: typings.ol.controlScaleLineMod.Units.US with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Units with String] = js.native
+  /* "degrees" */ @js.native
+  object DEGREES extends TopLevel[DEGREES with String]
+  
+  /* "imperial" */ @js.native
+  object IMPERIAL extends TopLevel[IMPERIAL with String]
+  
+  /* "metric" */ @js.native
+  object METRIC extends TopLevel[METRIC with String]
+  
+  /* "nautical" */ @js.native
+  object NAUTICAL extends TopLevel[NAUTICAL with String]
+  
+  /* "us" */ @js.native
+  object US extends TopLevel[US with String]
+  
 }
 

@@ -1,6 +1,24 @@
 package typings.googleDashGax
 
+import org.scalablytyped.runtime.TopLevel
 import typings.googleDashGax.buildSrcStatusMod.Status
+import typings.googleDashGax.buildSrcStatusMod.Status.ABORTED
+import typings.googleDashGax.buildSrcStatusMod.Status.ALREADY_EXISTS
+import typings.googleDashGax.buildSrcStatusMod.Status.CANCELLED
+import typings.googleDashGax.buildSrcStatusMod.Status.DATA_LOSS
+import typings.googleDashGax.buildSrcStatusMod.Status.DEADLINE_EXCEEDED
+import typings.googleDashGax.buildSrcStatusMod.Status.FAILED_PRECONDITION
+import typings.googleDashGax.buildSrcStatusMod.Status.INTERNAL
+import typings.googleDashGax.buildSrcStatusMod.Status.INVALID_ARGUMENT
+import typings.googleDashGax.buildSrcStatusMod.Status.NOT_FOUND
+import typings.googleDashGax.buildSrcStatusMod.Status.OK
+import typings.googleDashGax.buildSrcStatusMod.Status.OUT_OF_RANGE
+import typings.googleDashGax.buildSrcStatusMod.Status.PERMISSION_DENIED
+import typings.googleDashGax.buildSrcStatusMod.Status.RESOURCE_EXHAUSTED
+import typings.googleDashGax.buildSrcStatusMod.Status.UNAUTHENTICATED
+import typings.googleDashGax.buildSrcStatusMod.Status.UNAVAILABLE
+import typings.googleDashGax.buildSrcStatusMod.Status.UNIMPLEMENTED
+import typings.googleDashGax.buildSrcStatusMod.Status.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -64,25 +82,59 @@ object buildSrcStatusMod extends js.Object {
     @js.native
     sealed trait UNKNOWN extends Status
     
-    /* 10 */ val ABORTED: typings.googleDashGax.buildSrcStatusMod.Status.ABORTED with Double = js.native
-    /* 6 */ val ALREADY_EXISTS: typings.googleDashGax.buildSrcStatusMod.Status.ALREADY_EXISTS with Double = js.native
-    /* 1 */ val CANCELLED: typings.googleDashGax.buildSrcStatusMod.Status.CANCELLED with Double = js.native
-    /* 15 */ val DATA_LOSS: typings.googleDashGax.buildSrcStatusMod.Status.DATA_LOSS with Double = js.native
-    /* 4 */ val DEADLINE_EXCEEDED: typings.googleDashGax.buildSrcStatusMod.Status.DEADLINE_EXCEEDED with Double = js.native
-    /* 9 */ val FAILED_PRECONDITION: typings.googleDashGax.buildSrcStatusMod.Status.FAILED_PRECONDITION with Double = js.native
-    /* 13 */ val INTERNAL: typings.googleDashGax.buildSrcStatusMod.Status.INTERNAL with Double = js.native
-    /* 3 */ val INVALID_ARGUMENT: typings.googleDashGax.buildSrcStatusMod.Status.INVALID_ARGUMENT with Double = js.native
-    /* 5 */ val NOT_FOUND: typings.googleDashGax.buildSrcStatusMod.Status.NOT_FOUND with Double = js.native
-    /* 0 */ val OK: typings.googleDashGax.buildSrcStatusMod.Status.OK with Double = js.native
-    /* 11 */ val OUT_OF_RANGE: typings.googleDashGax.buildSrcStatusMod.Status.OUT_OF_RANGE with Double = js.native
-    /* 7 */ val PERMISSION_DENIED: typings.googleDashGax.buildSrcStatusMod.Status.PERMISSION_DENIED with Double = js.native
-    /* 8 */ val RESOURCE_EXHAUSTED: typings.googleDashGax.buildSrcStatusMod.Status.RESOURCE_EXHAUSTED with Double = js.native
-    /* 16 */ val UNAUTHENTICATED: typings.googleDashGax.buildSrcStatusMod.Status.UNAUTHENTICATED with Double = js.native
-    /* 14 */ val UNAVAILABLE: typings.googleDashGax.buildSrcStatusMod.Status.UNAVAILABLE with Double = js.native
-    /* 12 */ val UNIMPLEMENTED: typings.googleDashGax.buildSrcStatusMod.Status.UNIMPLEMENTED with Double = js.native
-    /* 2 */ val UNKNOWN: typings.googleDashGax.buildSrcStatusMod.Status.UNKNOWN with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    /* 10 */ @js.native
+    object ABORTED extends TopLevel[ABORTED with Double]
+    
+    /* 6 */ @js.native
+    object ALREADY_EXISTS extends TopLevel[ALREADY_EXISTS with Double]
+    
+    /* 1 */ @js.native
+    object CANCELLED extends TopLevel[CANCELLED with Double]
+    
+    /* 15 */ @js.native
+    object DATA_LOSS extends TopLevel[DATA_LOSS with Double]
+    
+    /* 4 */ @js.native
+    object DEADLINE_EXCEEDED extends TopLevel[DEADLINE_EXCEEDED with Double]
+    
+    /* 9 */ @js.native
+    object FAILED_PRECONDITION extends TopLevel[FAILED_PRECONDITION with Double]
+    
+    /* 13 */ @js.native
+    object INTERNAL extends TopLevel[INTERNAL with Double]
+    
+    /* 3 */ @js.native
+    object INVALID_ARGUMENT extends TopLevel[INVALID_ARGUMENT with Double]
+    
+    /* 5 */ @js.native
+    object NOT_FOUND extends TopLevel[NOT_FOUND with Double]
+    
+    /* 0 */ @js.native
+    object OK extends TopLevel[OK with Double]
+    
+    /* 11 */ @js.native
+    object OUT_OF_RANGE extends TopLevel[OUT_OF_RANGE with Double]
+    
+    /* 7 */ @js.native
+    object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
+    
+    /* 8 */ @js.native
+    object RESOURCE_EXHAUSTED extends TopLevel[RESOURCE_EXHAUSTED with Double]
+    
+    /* 16 */ @js.native
+    object UNAUTHENTICATED extends TopLevel[UNAUTHENTICATED with Double]
+    
+    /* 14 */ @js.native
+    object UNAVAILABLE extends TopLevel[UNAVAILABLE with Double]
+    
+    /* 12 */ @js.native
+    object UNIMPLEMENTED extends TopLevel[UNIMPLEMENTED with Double]
+    
+    /* 2 */ @js.native
+    object UNKNOWN extends TopLevel[UNKNOWN with Double]
+    
   }
   
 }

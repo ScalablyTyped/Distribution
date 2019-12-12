@@ -1,5 +1,10 @@
 package typings.winrt.Windows.Storage.Pickers.Provider
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.added
+import typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.alreadyAdded
+import typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.notAllowed
+import typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.unavailable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object AddFileResult extends js.Object {
   @js.native
   sealed trait unavailable extends AddFileResult
   
-  /* 0 */ val added: typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.added with Double = js.native
-  /* 1 */ val alreadyAdded: typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.alreadyAdded with Double = js.native
-  /* 2 */ val notAllowed: typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.notAllowed with Double = js.native
-  /* 3 */ val unavailable: typings.winrt.Windows.Storage.Pickers.Provider.AddFileResult.unavailable with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AddFileResult with Double] = js.native
+  /* 0 */ @js.native
+  object added extends TopLevel[added with Double]
+  
+  /* 1 */ @js.native
+  object alreadyAdded extends TopLevel[alreadyAdded with Double]
+  
+  /* 2 */ @js.native
+  object notAllowed extends TopLevel[notAllowed with Double]
+  
+  /* 3 */ @js.native
+  object unavailable extends TopLevel[unavailable with Double]
+  
 }
 

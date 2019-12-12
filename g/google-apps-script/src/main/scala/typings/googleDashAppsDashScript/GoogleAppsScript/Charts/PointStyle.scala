@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.HUGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.LARGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.MEDIUM
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.NONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.TINY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object PointStyle extends js.Object {
   @js.native
   sealed trait TINY extends PointStyle
   
-  /* 4 */ val HUGE: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.HUGE with Double = js.native
-  /* 3 */ val LARGE: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.LARGE with Double = js.native
-  /* 2 */ val MEDIUM: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.MEDIUM with Double = js.native
-  /* 0 */ val NONE: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.NONE with Double = js.native
-  /* 1 */ val TINY: typings.googleDashAppsDashScript.GoogleAppsScript.Charts.PointStyle.TINY with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PointStyle with Double] = js.native
+  /* 4 */ @js.native
+  object HUGE extends TopLevel[HUGE with Double]
+  
+  /* 3 */ @js.native
+  object LARGE extends TopLevel[LARGE with Double]
+  
+  /* 2 */ @js.native
+  object MEDIUM extends TopLevel[MEDIUM with Double]
+  
+  /* 0 */ @js.native
+  object NONE extends TopLevel[NONE with Double]
+  
+  /* 1 */ @js.native
+  object TINY extends TopLevel[TINY with Double]
+  
 }
 

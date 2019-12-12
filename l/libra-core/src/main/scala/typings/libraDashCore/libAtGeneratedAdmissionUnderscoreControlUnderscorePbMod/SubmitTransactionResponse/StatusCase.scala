@@ -1,5 +1,10 @@
 package typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.AC_STATUS
+import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.MEMPOOL_STATUS
+import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.STATUS_NOT_SET
+import typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.VM_STATUS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object StatusCase extends js.Object {
   @js.native
   sealed trait VM_STATUS extends StatusCase
   
-  /* 2 */ val AC_STATUS: typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.AC_STATUS with Double = js.native
-  /* 3 */ val MEMPOOL_STATUS: typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.MEMPOOL_STATUS with Double = js.native
-  /* 0 */ val STATUS_NOT_SET: typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.STATUS_NOT_SET with Double = js.native
-  /* 1 */ val VM_STATUS: typings.libraDashCore.libAtGeneratedAdmissionUnderscoreControlUnderscorePbMod.SubmitTransactionResponse.StatusCase.VM_STATUS with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StatusCase with Double] = js.native
+  /* 2 */ @js.native
+  object AC_STATUS extends TopLevel[AC_STATUS with Double]
+  
+  /* 3 */ @js.native
+  object MEMPOOL_STATUS extends TopLevel[MEMPOOL_STATUS with Double]
+  
+  /* 0 */ @js.native
+  object STATUS_NOT_SET extends TopLevel[STATUS_NOT_SET with Double]
+  
+  /* 1 */ @js.native
+  object VM_STATUS extends TopLevel[VM_STATUS with Double]
+  
 }
 

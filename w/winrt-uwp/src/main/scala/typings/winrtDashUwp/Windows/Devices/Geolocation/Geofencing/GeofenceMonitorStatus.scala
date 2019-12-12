@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.disabled
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.initializing
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.noData
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notAvailable
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notInitialized
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.ready
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object GeofenceMonitorStatus extends js.Object {
   @js.native
   sealed trait ready extends GeofenceMonitorStatus
   
-  /* 3 */ val disabled: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.disabled with Double = js.native
-  /* 1 */ val initializing: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.initializing with Double = js.native
-  /* 2 */ val noData: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.noData with Double = js.native
-  /* 5 */ val notAvailable: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notAvailable with Double = js.native
-  /* 4 */ val notInitialized: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.notInitialized with Double = js.native
-  /* 0 */ val ready: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitorStatus.ready with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GeofenceMonitorStatus with Double] = js.native
+  /* 3 */ @js.native
+  object disabled extends TopLevel[disabled with Double]
+  
+  /* 1 */ @js.native
+  object initializing extends TopLevel[initializing with Double]
+  
+  /* 2 */ @js.native
+  object noData extends TopLevel[noData with Double]
+  
+  /* 5 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 4 */ @js.native
+  object notInitialized extends TopLevel[notInitialized with Double]
+  
+  /* 0 */ @js.native
+  object ready extends TopLevel[ready with Double]
+  
 }
 

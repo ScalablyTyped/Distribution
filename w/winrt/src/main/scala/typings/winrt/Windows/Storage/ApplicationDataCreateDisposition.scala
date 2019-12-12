@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.always
+import typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.existing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object ApplicationDataCreateDisposition extends js.Object {
   @js.native
   sealed trait existing extends ApplicationDataCreateDisposition
   
-  /* 0 */ val always: typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.always with Double = js.native
-  /* 1 */ val existing: typings.winrt.Windows.Storage.ApplicationDataCreateDisposition.existing with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApplicationDataCreateDisposition with Double] = js.native
+  /* 0 */ @js.native
+  object always extends TopLevel[always with Double]
+  
+  /* 1 */ @js.native
+  object existing extends TopLevel[existing with Double]
+  
 }
 

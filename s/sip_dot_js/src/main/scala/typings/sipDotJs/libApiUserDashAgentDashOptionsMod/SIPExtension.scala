@@ -1,5 +1,9 @@
 package typings.sipDotJs.libApiUserDashAgentDashOptionsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Required
+import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Supported
+import typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Unsupported
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object SIPExtension extends js.Object {
   @js.native
   sealed trait Unsupported extends SIPExtension
   
-  /* "Required" */ val Required: typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Required with String = js.native
-  /* "Supported" */ val Supported: typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Supported with String = js.native
-  /* "Unsupported" */ val Unsupported: typings.sipDotJs.libApiUserDashAgentDashOptionsMod.SIPExtension.Unsupported with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SIPExtension with String] = js.native
+  /* "Required" */ @js.native
+  object Required extends TopLevel[Required with String]
+  
+  /* "Supported" */ @js.native
+  object Supported extends TopLevel[Supported with String]
+  
+  /* "Unsupported" */ @js.native
+  object Unsupported extends TopLevel[Unsupported with String]
+  
 }
 

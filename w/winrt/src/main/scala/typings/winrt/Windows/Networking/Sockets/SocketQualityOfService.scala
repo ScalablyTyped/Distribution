@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.lowLatency
+import typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SocketQualityOfService extends js.Object {
   @js.native
   sealed trait normal extends SocketQualityOfService
   
-  /* 1 */ val lowLatency: typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.lowLatency with Double = js.native
-  /* 0 */ val normal: typings.winrt.Windows.Networking.Sockets.SocketQualityOfService.normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocketQualityOfService with Double] = js.native
+  /* 1 */ @js.native
+  object lowLatency extends TopLevel[lowLatency with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
 }
 

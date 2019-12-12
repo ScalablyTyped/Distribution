@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.daily
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthly
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthlyOnDay
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.weekly
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearly
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearlyOnDay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object AppointmentRecurrenceUnit extends js.Object {
   @js.native
   sealed trait yearlyOnDay extends AppointmentRecurrenceUnit
   
-  /* 0 */ val daily: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.daily with Double = js.native
-  /* 2 */ val monthly: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthly with Double = js.native
-  /* 3 */ val monthlyOnDay: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.monthlyOnDay with Double = js.native
-  /* 1 */ val weekly: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.weekly with Double = js.native
-  /* 4 */ val yearly: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearly with Double = js.native
-  /* 5 */ val yearlyOnDay: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrenceUnit.yearlyOnDay with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentRecurrenceUnit with Double] = js.native
+  /* 0 */ @js.native
+  object daily extends TopLevel[daily with Double]
+  
+  /* 2 */ @js.native
+  object monthly extends TopLevel[monthly with Double]
+  
+  /* 3 */ @js.native
+  object monthlyOnDay extends TopLevel[monthlyOnDay with Double]
+  
+  /* 1 */ @js.native
+  object weekly extends TopLevel[weekly with Double]
+  
+  /* 4 */ @js.native
+  object yearly extends TopLevel[yearly with Double]
+  
+  /* 5 */ @js.native
+  object yearlyOnDay extends TopLevel[yearlyOnDay with Double]
+  
 }
 

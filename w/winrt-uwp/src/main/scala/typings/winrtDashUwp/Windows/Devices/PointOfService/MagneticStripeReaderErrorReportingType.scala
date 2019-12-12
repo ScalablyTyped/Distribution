@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderErrorReportingType.cardLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderErrorReportingType.trackLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object MagneticStripeReaderErrorReportingType extends js.Object {
   @js.native
   sealed trait trackLevel extends MagneticStripeReaderErrorReportingType
   
-  /* 0 */ val cardLevel: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderErrorReportingType.cardLevel with Double = js.native
-  /* 1 */ val trackLevel: typings.winrtDashUwp.Windows.Devices.PointOfService.MagneticStripeReaderErrorReportingType.trackLevel with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MagneticStripeReaderErrorReportingType with Double] = js.native
+  /* 0 */ @js.native
+  object cardLevel extends TopLevel[cardLevel with Double]
+  
+  /* 1 */ @js.native
+  object trackLevel extends TopLevel[trackLevel with Double]
+  
 }
 

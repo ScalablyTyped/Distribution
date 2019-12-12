@@ -1,5 +1,11 @@
 package typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Append
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Inheritance
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.None
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.ParentChild
+import typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Pointer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,27 @@ object SecurityTypes extends js.Object {
   @js.native
   sealed trait Pointer extends SecurityTypes
   
-  /* 0 */ val Append: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Append with scala.Double = js.native
-  /* 1 */ val Inheritance: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Inheritance with scala.Double = js.native
-  /* 2 */ val None: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.None with scala.Double = js.native
-  /* 3 */ val ParentChild: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.ParentChild with scala.Double = js.native
-  /* 4 */ val Pointer: typings.microsoftDashSdkDashSoap.microsoftDashSdkDashSoapMod._Global_.Sdk.Mdq.ValueEnums.SecurityTypes.Pointer with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[SecurityTypes with scala.Double] = js.native
+  /* 0 */ @js.native
+  object Append
+    extends TopLevel[Append with scala.Double]
+  
+  /* 1 */ @js.native
+  object Inheritance
+    extends TopLevel[Inheritance with scala.Double]
+  
+  /* 2 */ @js.native
+  object None
+    extends TopLevel[None with scala.Double]
+  
+  /* 3 */ @js.native
+  object ParentChild
+    extends TopLevel[ParentChild with scala.Double]
+  
+  /* 4 */ @js.native
+  object Pointer
+    extends TopLevel[Pointer with scala.Double]
+  
 }
 

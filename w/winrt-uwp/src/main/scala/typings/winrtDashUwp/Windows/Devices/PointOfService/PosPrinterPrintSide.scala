@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side1
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side2
+import typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object PosPrinterPrintSide extends js.Object {
   @js.native
   sealed trait unknown extends PosPrinterPrintSide
   
-  /* 1 */ val side1: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side1 with Double = js.native
-  /* 2 */ val side2: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.side2 with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.PointOfService.PosPrinterPrintSide.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PosPrinterPrintSide with Double] = js.native
+  /* 1 */ @js.native
+  object side1 extends TopLevel[side1 with Double]
+  
+  /* 2 */ @js.native
+  object side2 extends TopLevel[side2 with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

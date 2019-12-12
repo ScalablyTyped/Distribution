@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Networking.Proximity
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.aborted
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.created
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.enumerationCompleted
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.started
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopped
+import typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopping
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object PeerWatcherStatus extends js.Object {
   @js.native
   sealed trait stopping extends PeerWatcherStatus
   
-  /* 5 */ val aborted: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.aborted with Double = js.native
-  /* 0 */ val created: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.created with Double = js.native
-  /* 2 */ val enumerationCompleted: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.enumerationCompleted with Double = js.native
-  /* 1 */ val started: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.started with Double = js.native
-  /* 4 */ val stopped: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopped with Double = js.native
-  /* 3 */ val stopping: typings.winrtDashUwp.Windows.Networking.Proximity.PeerWatcherStatus.stopping with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PeerWatcherStatus with Double] = js.native
+  /* 5 */ @js.native
+  object aborted extends TopLevel[aborted with Double]
+  
+  /* 0 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 2 */ @js.native
+  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
+  
+  /* 1 */ @js.native
+  object started extends TopLevel[started with Double]
+  
+  /* 4 */ @js.native
+  object stopped extends TopLevel[stopped with Double]
+  
+  /* 3 */ @js.native
+  object stopping extends TopLevel[stopping with Double]
+  
 }
 

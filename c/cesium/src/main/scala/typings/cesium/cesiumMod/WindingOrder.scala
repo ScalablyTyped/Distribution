@@ -1,5 +1,8 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.WindingOrder.CLOCKWISE
+import typings.cesium.cesiumMod.WindingOrder.COUNTER_CLOCKWISE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object WindingOrder extends js.Object {
   @js.native
   sealed trait COUNTER_CLOCKWISE extends WindingOrder
   
-  /* 0 */ val CLOCKWISE: typings.cesium.cesiumMod.WindingOrder.CLOCKWISE with Double = js.native
-  /* 1 */ val COUNTER_CLOCKWISE: typings.cesium.cesiumMod.WindingOrder.COUNTER_CLOCKWISE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WindingOrder with Double] = js.native
+  /* 0 */ @js.native
+  object CLOCKWISE extends TopLevel[CLOCKWISE with Double]
+  
+  /* 1 */ @js.native
+  object COUNTER_CLOCKWISE extends TopLevel[COUNTER_CLOCKWISE with Double]
+  
 }
 

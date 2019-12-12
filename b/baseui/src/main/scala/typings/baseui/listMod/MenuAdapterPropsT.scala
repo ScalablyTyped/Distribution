@@ -2,49 +2,22 @@ package typings.baseui.listMod
 
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.ReactNode
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuAdapterPropsT extends PropsT {
   @JSName("$disabled")
-  var $disabled: Boolean
+  var $disabled: Boolean = js.native
   @JSName("$isHighlighted")
-  var $isHighlighted: Boolean
+  var $isHighlighted: Boolean = js.native
   @JSName("$size")
-  var $size: String
+  var $size: String = js.native
   // eslint-disable-next-line flowtype/no-weak-types
-  var item: js.Any
-  def onClick(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any
-  def onMouseEnter(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any
-}
-
-object MenuAdapterPropsT {
-  @scala.inline
-  def apply(
-    $disabled: Boolean,
-    $isHighlighted: Boolean,
-    $size: String,
-    item: js.Any,
-    onClick: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any,
-    onMouseEnter: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any,
-    artwork: ReactNode = null,
-    artworkSize: ArtworkSizesT = null,
-    children: ReactNode = null,
-    endEnhancer: ReactNode = null,
-    overrides: OverridesT = null,
-    sublist: js.UndefOr[Boolean] = js.undefined
-  ): MenuAdapterPropsT = {
-    val __obj = js.Dynamic.literal($disabled = $disabled.asInstanceOf[js.Any], $isHighlighted = $isHighlighted.asInstanceOf[js.Any], $size = $size.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), onMouseEnter = js.Any.fromFunction1(onMouseEnter))
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
-    if (artworkSize != null) __obj.updateDynamic("artworkSize")(artworkSize.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(sublist)) __obj.updateDynamic("sublist")(sublist.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MenuAdapterPropsT]
-  }
+  var item: js.Any = js.native
+  def onClick(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any = js.native
+  def onMouseEnter(event: MouseEvent[HTMLLIElement, NativeMouseEvent]): js.Any = js.native
 }
 

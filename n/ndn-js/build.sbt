@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ndn-js"
-version := "0.18-dt-20190322Z-356af4"
+version := "0.18-dt-20190322Z-13ae61"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

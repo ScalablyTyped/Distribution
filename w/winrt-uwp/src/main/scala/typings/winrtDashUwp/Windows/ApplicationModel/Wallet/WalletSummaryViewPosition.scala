@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Wallet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field1
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field2
+import typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.hidden
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object WalletSummaryViewPosition extends js.Object {
   @js.native
   sealed trait hidden extends WalletSummaryViewPosition
   
-  /* 1 */ val field1: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field1 with Double = js.native
-  /* 2 */ val field2: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.field2 with Double = js.native
-  /* 0 */ val hidden: typings.winrtDashUwp.Windows.ApplicationModel.Wallet.WalletSummaryViewPosition.hidden with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WalletSummaryViewPosition with Double] = js.native
+  /* 1 */ @js.native
+  object field1 extends TopLevel[field1 with Double]
+  
+  /* 2 */ @js.native
+  object field2 extends TopLevel[field2 with Double]
+  
+  /* 0 */ @js.native
+  object hidden extends TopLevel[hidden with Double]
+  
 }
 

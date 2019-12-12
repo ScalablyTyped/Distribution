@@ -1,5 +1,8 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.TaskScope.Global
+import typings.vscode.vscodeMod.TaskScope.Workspace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object TaskScope extends js.Object {
   @js.native
   sealed trait Workspace extends TaskScope
   
-  /* 1 */ val Global: typings.vscode.vscodeMod.TaskScope.Global with Double = js.native
-  /* 2 */ val Workspace: typings.vscode.vscodeMod.TaskScope.Workspace with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskScope with Double] = js.native
+  /* 1 */ @js.native
+  object Global extends TopLevel[Global with Double]
+  
+  /* 2 */ @js.native
+  object Workspace extends TopLevel[Workspace with Double]
+  
 }
 

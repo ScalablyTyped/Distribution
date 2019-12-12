@@ -1,5 +1,8 @@
 package typings.syslogDashClient.syslogDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.syslogDashClient.syslogDashClientMod.Transport.Tcp
+import typings.syslogDashClient.syslogDashClientMod.Transport.Udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object Transport extends js.Object {
   @js.native
   sealed trait Udp extends Transport
   
-  /* 1 */ val Tcp: typings.syslogDashClient.syslogDashClientMod.Transport.Tcp with Double = js.native
-  /* 2 */ val Udp: typings.syslogDashClient.syslogDashClientMod.Transport.Udp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Transport with Double] = js.native
+  /* 1 */ @js.native
+  object Tcp extends TopLevel[Tcp with Double]
+  
+  /* 2 */ @js.native
+  object Udp extends TopLevel[Udp with Double]
+  
 }
 

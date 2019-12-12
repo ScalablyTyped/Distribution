@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.clearSigned
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.encrypted
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.opaqueSigned
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object EmailMessageSmimeKind extends js.Object {
   @js.native
   sealed trait opaqueSigned extends EmailMessageSmimeKind
   
-  /* 1 */ val clearSigned: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.clearSigned with Double = js.native
-  /* 3 */ val encrypted: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.encrypted with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.none with Double = js.native
-  /* 2 */ val opaqueSigned: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailMessageSmimeKind.opaqueSigned with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailMessageSmimeKind with Double] = js.native
+  /* 1 */ @js.native
+  object clearSigned extends TopLevel[clearSigned with Double]
+  
+  /* 3 */ @js.native
+  object encrypted extends TopLevel[encrypted with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object opaqueSigned extends TopLevel[opaqueSigned with Double]
+  
 }
 

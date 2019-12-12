@@ -1,5 +1,8 @@
 package typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Local
+import typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Synced
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object SyncState extends js.Object {
   @js.native
   sealed trait Synced extends SyncState
   
-  /* 0 */ val Local: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Local with Double = js.native
-  /* 1 */ val Synced: typings.atFirebaseFirestore.distSrcCoreViewUnderscoreSnapshotMod.SyncState.Synced with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SyncState with Double] = js.native
+  /* 0 */ @js.native
+  object Local extends TopLevel[Local with Double]
+  
+  /* 1 */ @js.native
+  object Synced extends TopLevel[Synced with Double]
+  
 }
 

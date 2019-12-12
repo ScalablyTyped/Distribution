@@ -1,5 +1,7 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.FilterType.Excel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +22,14 @@ object FilterType extends js.Object {
   sealed trait Menu
     extends typings.ejDotWebDotAll.ej.TreeGrid.FilterType
   
-  /* 1 */ val Excel: typings.ejDotWebDotAll.ej.TreeGrid.FilterType.Excel with Double = js.native
-  /* 0 */ val Menu: typings.ejDotWebDotAll.ej.TreeGrid.FilterType.Menu with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.TreeGrid.FilterType with Double] = js.native
+  /* 1 */ @js.native
+  object Excel extends TopLevel[Excel with Double]
+  
+  /* 0 */ @js.native
+  object Menu
+    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.FilterType.Menu with Double]
+  
 }
 

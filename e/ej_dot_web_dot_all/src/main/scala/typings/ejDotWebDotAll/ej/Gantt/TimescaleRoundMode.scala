@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Auto
+import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Month
+import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Week
+import typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object TimescaleRoundMode extends js.Object {
   @js.native
   sealed trait Year extends TimescaleRoundMode
   
-  /* 0 */ val Auto: typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Auto with Double = js.native
-  /* 2 */ val Month: typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Month with Double = js.native
-  /* 1 */ val Week: typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Week with Double = js.native
-  /* 3 */ val Year: typings.ejDotWebDotAll.ej.Gantt.TimescaleRoundMode.Year with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TimescaleRoundMode with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 2 */ @js.native
+  object Month extends TopLevel[Month with Double]
+  
+  /* 1 */ @js.native
+  object Week extends TopLevel[Week with Double]
+  
+  /* 3 */ @js.native
+  object Year extends TopLevel[Year with Double]
+  
 }
 

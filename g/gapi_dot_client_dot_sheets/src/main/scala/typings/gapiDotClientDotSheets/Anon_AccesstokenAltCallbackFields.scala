@@ -5,105 +5,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_AccesstokenAltCallbackFields extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
-  var `$.xgafv`: js.UndefOr[String] = js.undefined
+  var `$.xgafv`: js.UndefOr[String] = js.native
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.undefined
+  var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** JSONP */
-  var callback: js.UndefOr[String] = js.undefined
+  var callback: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /**
     * Determines if the update response should include the values
     * of the cells that were appended. By default, responses
     * do not include the updated values.
     */
-  var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
+  var includeValuesInResponse: js.UndefOr[Boolean] = js.native
   /** How the input data should be inserted. */
-  var insertDataOption: js.UndefOr[String] = js.undefined
+  var insertDataOption: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /**
     * The A1 notation of a range to search for a logical table of data.
     * Values will be appended after the last row of the table.
     */
-  var range: String
+  var range: String = js.native
   /** Request body */
-  var resource: js.UndefOr[ValueRange] = js.undefined
+  var resource: js.UndefOr[ValueRange] = js.native
   /**
     * Determines how dates, times, and durations in the response should be
     * rendered. This is ignored if response_value_render_option is
     * FORMATTED_VALUE.
     * The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
     */
-  var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
+  var responseDateTimeRenderOption: js.UndefOr[String] = js.native
   /**
     * Determines how values in the response should be rendered.
     * The default render option is ValueRenderOption.FORMATTED_VALUE.
     */
-  var responseValueRenderOption: js.UndefOr[String] = js.undefined
+  var responseValueRenderOption: js.UndefOr[String] = js.native
   /** The ID of the spreadsheet to update. */
-  var spreadsheetId: String
+  var spreadsheetId: String = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.undefined
+  var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.undefined
+  var upload_protocol: js.UndefOr[String] = js.native
   /** How the input data should be interpreted. */
-  var valueInputOption: js.UndefOr[String] = js.undefined
-}
-
-object Anon_AccesstokenAltCallbackFields {
-  @scala.inline
-  def apply(
-    range: String,
-    spreadsheetId: String,
-    `$.xgafv`: String = null,
-    access_token: String = null,
-    alt: String = null,
-    callback: String = null,
-    fields: String = null,
-    includeValuesInResponse: js.UndefOr[Boolean] = js.undefined,
-    insertDataOption: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    resource: ValueRange = null,
-    responseDateTimeRenderOption: String = null,
-    responseValueRenderOption: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null,
-    valueInputOption: String = null
-  ): Anon_AccesstokenAltCallbackFields = {
-    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], spreadsheetId = spreadsheetId.asInstanceOf[js.Any])
-    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeValuesInResponse)) __obj.updateDynamic("includeValuesInResponse")(includeValuesInResponse.asInstanceOf[js.Any])
-    if (insertDataOption != null) __obj.updateDynamic("insertDataOption")(insertDataOption.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (responseDateTimeRenderOption != null) __obj.updateDynamic("responseDateTimeRenderOption")(responseDateTimeRenderOption.asInstanceOf[js.Any])
-    if (responseValueRenderOption != null) __obj.updateDynamic("responseValueRenderOption")(responseValueRenderOption.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
-    if (valueInputOption != null) __obj.updateDynamic("valueInputOption")(valueInputOption.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_AccesstokenAltCallbackFields]
-  }
+  var valueInputOption: js.UndefOr[String] = js.native
 }
 

@@ -1,9 +1,12 @@
 package typings.math3d
 
+import org.scalablytyped.runtime.TopLevel
 import typings.math3d.math3dMod.Matrix4x4
 import typings.math3d.math3dMod.Quaternion
 import typings.math3d.math3dMod.Transform
 import typings.math3d.math3dMod.Transform.Space
+import typings.math3d.math3dMod.Transform.Space.Self
+import typings.math3d.math3dMod.Transform.Space.World
 import typings.math3d.math3dMod.Vector3
 import typings.math3d.math3dMod.Vector4
 import scala.scalajs.js
@@ -185,10 +188,14 @@ object math3dMod extends js.Object {
       @js.native
       sealed trait World extends Space
       
-      /* 0 */ val Self: typings.math3d.math3dMod.Transform.Space.Self with Double = js.native
-      /* 1 */ val World: typings.math3d.math3dMod.Transform.Space.World with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[Space with Double] = js.native
+      /* 0 */ @js.native
+      object Self extends TopLevel[Self with Double]
+      
+      /* 1 */ @js.native
+      object World extends TopLevel[World with Double]
+      
     }
     
   }

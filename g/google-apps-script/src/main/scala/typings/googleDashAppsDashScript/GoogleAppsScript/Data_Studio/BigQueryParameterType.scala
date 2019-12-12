@@ -1,5 +1,10 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.BOOL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.FLOAT64
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.INT64
+import typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object BigQueryParameterType extends js.Object {
   @js.native
   sealed trait STRING extends BigQueryParameterType
   
-  /* 2 */ val BOOL: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.BOOL with Double = js.native
-  /* 3 */ val FLOAT64: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.FLOAT64 with Double = js.native
-  /* 1 */ val INT64: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.INT64 with Double = js.native
-  /* 0 */ val STRING: typings.googleDashAppsDashScript.GoogleAppsScript.Data_Studio.BigQueryParameterType.STRING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BigQueryParameterType with Double] = js.native
+  /* 2 */ @js.native
+  object BOOL extends TopLevel[BOOL with Double]
+  
+  /* 3 */ @js.native
+  object FLOAT64 extends TopLevel[FLOAT64 with Double]
+  
+  /* 1 */ @js.native
+  object INT64 extends TopLevel[INT64 with Double]
+  
+  /* 0 */ @js.native
+  object STRING extends TopLevel[STRING with Double]
+  
 }
 

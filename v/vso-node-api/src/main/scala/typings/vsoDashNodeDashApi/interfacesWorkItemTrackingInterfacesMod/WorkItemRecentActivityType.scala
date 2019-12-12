@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Deleted
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Edited
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Restored
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Visited
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object WorkItemRecentActivityType extends js.Object {
   @js.native
   sealed trait Visited extends WorkItemRecentActivityType
   
-  /* 2 */ val Deleted: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Deleted with Double = js.native
-  /* 1 */ val Edited: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Edited with Double = js.native
-  /* 3 */ val Restored: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Restored with Double = js.native
-  /* 0 */ val Visited: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemRecentActivityType.Visited with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WorkItemRecentActivityType with Double] = js.native
+  /* 2 */ @js.native
+  object Deleted extends TopLevel[Deleted with Double]
+  
+  /* 1 */ @js.native
+  object Edited extends TopLevel[Edited with Double]
+  
+  /* 3 */ @js.native
+  object Restored extends TopLevel[Restored with Double]
+  
+  /* 0 */ @js.native
+  object Visited extends TopLevel[Visited with Double]
+  
 }
 

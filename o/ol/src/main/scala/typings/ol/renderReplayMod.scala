@@ -1,6 +1,18 @@
 package typings.ol
 
+import org.scalablytyped.runtime.TopLevel
 import typings.ol.renderReplayMod.TEXT_ALIGN
+import typings.ol.renderReplayMod.TEXT_ALIGN.alphabetic
+import typings.ol.renderReplayMod.TEXT_ALIGN.bottom
+import typings.ol.renderReplayMod.TEXT_ALIGN.center
+import typings.ol.renderReplayMod.TEXT_ALIGN.end
+import typings.ol.renderReplayMod.TEXT_ALIGN.hanging
+import typings.ol.renderReplayMod.TEXT_ALIGN.ideographic
+import typings.ol.renderReplayMod.TEXT_ALIGN.left
+import typings.ol.renderReplayMod.TEXT_ALIGN.middle
+import typings.ol.renderReplayMod.TEXT_ALIGN.right
+import typings.ol.renderReplayMod.TEXT_ALIGN.start
+import typings.ol.renderReplayMod.TEXT_ALIGN.top
 import typings.ol.renderReplayTypeMod.ReplayType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,19 +60,41 @@ object renderReplayMod extends js.Object {
     @js.native
     sealed trait top extends TEXT_ALIGN
     
-    /* 0.8 */ val alphabetic: typings.ol.renderReplayMod.TEXT_ALIGN.alphabetic with Double = js.native
-    /* 1 */ val bottom: typings.ol.renderReplayMod.TEXT_ALIGN.bottom with Double = js.native
-    /* 0.5 */ val center: typings.ol.renderReplayMod.TEXT_ALIGN.center with Double = js.native
-    /* 0 */ val end: typings.ol.renderReplayMod.TEXT_ALIGN.end with Double = js.native
-    /* 0.2 */ val hanging: typings.ol.renderReplayMod.TEXT_ALIGN.hanging with Double = js.native
-    /* 0.8 */ val ideographic: typings.ol.renderReplayMod.TEXT_ALIGN.ideographic with Double = js.native
-    /* 0 */ val left: typings.ol.renderReplayMod.TEXT_ALIGN.left with Double = js.native
-    /* 0.5 */ val middle: typings.ol.renderReplayMod.TEXT_ALIGN.middle with Double = js.native
-    /* 1 */ val right: typings.ol.renderReplayMod.TEXT_ALIGN.right with Double = js.native
-    /* 1 */ val start: typings.ol.renderReplayMod.TEXT_ALIGN.start with Double = js.native
-    /* 0 */ val top: typings.ol.renderReplayMod.TEXT_ALIGN.top with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TEXT_ALIGN with Double] = js.native
+    /* 0.8 */ @js.native
+    object alphabetic extends TopLevel[alphabetic with Double]
+    
+    /* 1 */ @js.native
+    object bottom extends TopLevel[bottom with Double]
+    
+    /* 0.5 */ @js.native
+    object center extends TopLevel[center with Double]
+    
+    /* 0 */ @js.native
+    object end extends TopLevel[end with Double]
+    
+    /* 0.2 */ @js.native
+    object hanging extends TopLevel[hanging with Double]
+    
+    /* 0.8 */ @js.native
+    object ideographic extends TopLevel[ideographic with Double]
+    
+    /* 0 */ @js.native
+    object left extends TopLevel[left with Double]
+    
+    /* 0.5 */ @js.native
+    object middle extends TopLevel[middle with Double]
+    
+    /* 1 */ @js.native
+    object right extends TopLevel[right with Double]
+    
+    /* 1 */ @js.native
+    object start extends TopLevel[start with Double]
+    
+    /* 0 */ @js.native
+    object top extends TopLevel[top with Double]
+    
   }
   
 }

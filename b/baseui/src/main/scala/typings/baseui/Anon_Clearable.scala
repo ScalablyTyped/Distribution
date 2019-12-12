@@ -9,58 +9,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Clearable extends js.Object {
   @JSName("$clearable")
-  var $clearable: Boolean
+  var $clearable: Boolean = js.native
   @JSName("$creatable")
-  var $creatable: Boolean
+  var $creatable: Boolean = js.native
   @JSName("$disabled")
-  var $disabled: Boolean
+  var $disabled: Boolean = js.native
   @JSName("$error")
-  var $error: Boolean
+  var $error: Boolean = js.native
   @JSName("$isFocused")
-  var $isFocused: Boolean
+  var $isFocused: Boolean = js.native
   @JSName("$isLoading")
-  var $isLoading: Boolean
+  var $isLoading: Boolean = js.native
   @JSName("$isOpen")
-  var $isOpen: Boolean
+  var $isOpen: Boolean = js.native
   @JSName("$isPseudoFocused")
-  var $isPseudoFocused: Boolean
+  var $isPseudoFocused: Boolean = js.native
   @JSName("$multi")
-  var $multi: Boolean
+  var $multi: Boolean = js.native
   @JSName("$positive")
-  var $positive: Boolean
+  var $positive: Boolean = js.native
   @JSName("$required")
-  var $required: Boolean
+  var $required: Boolean = js.native
   @JSName("$searchable")
-  var $searchable: Boolean
+  var $searchable: Boolean = js.native
   @JSName("$size")
-  var $size: default_ | compact | large_
+  var $size: default_ | compact | large_ = js.native
   @JSName("$type")
-  var $type: select | search
-}
-
-object Anon_Clearable {
-  @scala.inline
-  def apply(
-    $clearable: Boolean,
-    $creatable: Boolean,
-    $disabled: Boolean,
-    $error: Boolean,
-    $isFocused: Boolean,
-    $isLoading: Boolean,
-    $isOpen: Boolean,
-    $isPseudoFocused: Boolean,
-    $multi: Boolean,
-    $positive: Boolean,
-    $required: Boolean,
-    $searchable: Boolean,
-    $size: default_ | compact | large_,
-    $type: select | search
-  ): Anon_Clearable = {
-    val __obj = js.Dynamic.literal($clearable = $clearable.asInstanceOf[js.Any], $creatable = $creatable.asInstanceOf[js.Any], $disabled = $disabled.asInstanceOf[js.Any], $error = $error.asInstanceOf[js.Any], $isFocused = $isFocused.asInstanceOf[js.Any], $isLoading = $isLoading.asInstanceOf[js.Any], $isOpen = $isOpen.asInstanceOf[js.Any], $isPseudoFocused = $isPseudoFocused.asInstanceOf[js.Any], $multi = $multi.asInstanceOf[js.Any], $positive = $positive.asInstanceOf[js.Any], $required = $required.asInstanceOf[js.Any], $searchable = $searchable.asInstanceOf[js.Any], $size = $size.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_Clearable]
-  }
+  var $type: select | search = js.native
 }
 

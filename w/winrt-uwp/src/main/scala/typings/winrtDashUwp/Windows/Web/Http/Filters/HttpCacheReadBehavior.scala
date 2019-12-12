@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Web.Http.Filters
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.default
+import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.mostRecent
+import typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.onlyFromCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object HttpCacheReadBehavior extends js.Object {
   @js.native
   sealed trait onlyFromCache extends HttpCacheReadBehavior
   
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.default with Double = js.native
-  /* 1 */ val mostRecent: typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.mostRecent with Double = js.native
-  /* 2 */ val onlyFromCache: typings.winrtDashUwp.Windows.Web.Http.Filters.HttpCacheReadBehavior.onlyFromCache with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpCacheReadBehavior with Double] = js.native
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 1 */ @js.native
+  object mostRecent extends TopLevel[mostRecent with Double]
+  
+  /* 2 */ @js.native
+  object onlyFromCache extends TopLevel[onlyFromCache with Double]
+  
 }
 

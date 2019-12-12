@@ -1,5 +1,28 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CELL_EMPTY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CELL_NOT_EMPTY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CUSTOM_FORMULA
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_AFTER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_AFTER_RELATIVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_BEFORE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_BEFORE_RELATIVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_EQUAL_TO_RELATIVE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_GREATER_THAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_GREATER_THAN_OR_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_LESS_THAN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_LESS_THAN_OR_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_NOT_BETWEEN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_NOT_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_CONTAINS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_DOES_NOT_CONTAIN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_ENDS_WITH
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_EQUAL_TO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_STARTS_WITH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,29 +103,73 @@ object BooleanCriteria extends js.Object {
   @js.native
   sealed trait TEXT_STARTS_WITH extends BooleanCriteria
   
-  /* 0 */ val CELL_EMPTY: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CELL_EMPTY with Double = js.native
-  /* 1 */ val CELL_NOT_EMPTY: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CELL_NOT_EMPTY with Double = js.native
-  /* 21 */ val CUSTOM_FORMULA: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.CUSTOM_FORMULA with Double = js.native
-  /* 2 */ val DATE_AFTER: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_AFTER with Double = js.native
-  /* 5 */ val DATE_AFTER_RELATIVE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_AFTER_RELATIVE with Double = js.native
-  /* 3 */ val DATE_BEFORE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_BEFORE with Double = js.native
-  /* 6 */ val DATE_BEFORE_RELATIVE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_BEFORE_RELATIVE with Double = js.native
-  /* 4 */ val DATE_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_EQUAL_TO with Double = js.native
-  /* 7 */ val DATE_EQUAL_TO_RELATIVE: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.DATE_EQUAL_TO_RELATIVE with Double = js.native
-  /* 8 */ val NUMBER_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_BETWEEN with Double = js.native
-  /* 9 */ val NUMBER_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_EQUAL_TO with Double = js.native
-  /* 10 */ val NUMBER_GREATER_THAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_GREATER_THAN with Double = js.native
-  /* 11 */ val NUMBER_GREATER_THAN_OR_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_GREATER_THAN_OR_EQUAL_TO with Double = js.native
-  /* 12 */ val NUMBER_LESS_THAN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_LESS_THAN with Double = js.native
-  /* 13 */ val NUMBER_LESS_THAN_OR_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_LESS_THAN_OR_EQUAL_TO with Double = js.native
-  /* 14 */ val NUMBER_NOT_BETWEEN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_NOT_BETWEEN with Double = js.native
-  /* 15 */ val NUMBER_NOT_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.NUMBER_NOT_EQUAL_TO with Double = js.native
-  /* 16 */ val TEXT_CONTAINS: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_CONTAINS with Double = js.native
-  /* 17 */ val TEXT_DOES_NOT_CONTAIN: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_DOES_NOT_CONTAIN with Double = js.native
-  /* 20 */ val TEXT_ENDS_WITH: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_ENDS_WITH with Double = js.native
-  /* 18 */ val TEXT_EQUAL_TO: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_EQUAL_TO with Double = js.native
-  /* 19 */ val TEXT_STARTS_WITH: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.BooleanCriteria.TEXT_STARTS_WITH with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BooleanCriteria with Double] = js.native
+  /* 0 */ @js.native
+  object CELL_EMPTY extends TopLevel[CELL_EMPTY with Double]
+  
+  /* 1 */ @js.native
+  object CELL_NOT_EMPTY extends TopLevel[CELL_NOT_EMPTY with Double]
+  
+  /* 21 */ @js.native
+  object CUSTOM_FORMULA extends TopLevel[CUSTOM_FORMULA with Double]
+  
+  /* 2 */ @js.native
+  object DATE_AFTER extends TopLevel[DATE_AFTER with Double]
+  
+  /* 5 */ @js.native
+  object DATE_AFTER_RELATIVE extends TopLevel[DATE_AFTER_RELATIVE with Double]
+  
+  /* 3 */ @js.native
+  object DATE_BEFORE extends TopLevel[DATE_BEFORE with Double]
+  
+  /* 6 */ @js.native
+  object DATE_BEFORE_RELATIVE extends TopLevel[DATE_BEFORE_RELATIVE with Double]
+  
+  /* 4 */ @js.native
+  object DATE_EQUAL_TO extends TopLevel[DATE_EQUAL_TO with Double]
+  
+  /* 7 */ @js.native
+  object DATE_EQUAL_TO_RELATIVE extends TopLevel[DATE_EQUAL_TO_RELATIVE with Double]
+  
+  /* 8 */ @js.native
+  object NUMBER_BETWEEN extends TopLevel[NUMBER_BETWEEN with Double]
+  
+  /* 9 */ @js.native
+  object NUMBER_EQUAL_TO extends TopLevel[NUMBER_EQUAL_TO with Double]
+  
+  /* 10 */ @js.native
+  object NUMBER_GREATER_THAN extends TopLevel[NUMBER_GREATER_THAN with Double]
+  
+  /* 11 */ @js.native
+  object NUMBER_GREATER_THAN_OR_EQUAL_TO extends TopLevel[NUMBER_GREATER_THAN_OR_EQUAL_TO with Double]
+  
+  /* 12 */ @js.native
+  object NUMBER_LESS_THAN extends TopLevel[NUMBER_LESS_THAN with Double]
+  
+  /* 13 */ @js.native
+  object NUMBER_LESS_THAN_OR_EQUAL_TO extends TopLevel[NUMBER_LESS_THAN_OR_EQUAL_TO with Double]
+  
+  /* 14 */ @js.native
+  object NUMBER_NOT_BETWEEN extends TopLevel[NUMBER_NOT_BETWEEN with Double]
+  
+  /* 15 */ @js.native
+  object NUMBER_NOT_EQUAL_TO extends TopLevel[NUMBER_NOT_EQUAL_TO with Double]
+  
+  /* 16 */ @js.native
+  object TEXT_CONTAINS extends TopLevel[TEXT_CONTAINS with Double]
+  
+  /* 17 */ @js.native
+  object TEXT_DOES_NOT_CONTAIN extends TopLevel[TEXT_DOES_NOT_CONTAIN with Double]
+  
+  /* 20 */ @js.native
+  object TEXT_ENDS_WITH extends TopLevel[TEXT_ENDS_WITH with Double]
+  
+  /* 18 */ @js.native
+  object TEXT_EQUAL_TO extends TopLevel[TEXT_EQUAL_TO with Double]
+  
+  /* 19 */ @js.native
+  object TEXT_STARTS_WITH extends TopLevel[TEXT_STARTS_WITH with Double]
+  
 }
 

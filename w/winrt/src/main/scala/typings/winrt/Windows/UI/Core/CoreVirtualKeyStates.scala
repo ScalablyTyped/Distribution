@@ -1,5 +1,9 @@
 package typings.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.down
+import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.locked
+import typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object CoreVirtualKeyStates extends js.Object {
   @js.native
   sealed trait none extends CoreVirtualKeyStates
   
-  /* 1 */ val down: typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.down with Double = js.native
-  /* 2 */ val locked: typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.locked with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.UI.Core.CoreVirtualKeyStates.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreVirtualKeyStates with Double] = js.native
+  /* 1 */ @js.native
+  object down extends TopLevel[down with Double]
+  
+  /* 2 */ @js.native
+  object locked extends TopLevel[locked with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

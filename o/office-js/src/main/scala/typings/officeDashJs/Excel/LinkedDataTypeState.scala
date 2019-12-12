@@ -1,5 +1,11 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.LinkedDataTypeState.brokenLinkedData
+import typings.officeDashJs.Excel.LinkedDataTypeState.disambiguationNeeded
+import typings.officeDashJs.Excel.LinkedDataTypeState.fetchingData
+import typings.officeDashJs.Excel.LinkedDataTypeState.none
+import typings.officeDashJs.Excel.LinkedDataTypeState.validLinkedData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object LinkedDataTypeState extends js.Object {
   @js.native
   sealed trait validLinkedData extends LinkedDataTypeState
   
-  /* "BrokenLinkedData" */ val brokenLinkedData: typings.officeDashJs.Excel.LinkedDataTypeState.brokenLinkedData with String = js.native
-  /* "DisambiguationNeeded" */ val disambiguationNeeded: typings.officeDashJs.Excel.LinkedDataTypeState.disambiguationNeeded with String = js.native
-  /* "FetchingData" */ val fetchingData: typings.officeDashJs.Excel.LinkedDataTypeState.fetchingData with String = js.native
-  /* "None" */ val none: typings.officeDashJs.Excel.LinkedDataTypeState.none with String = js.native
-  /* "ValidLinkedData" */ val validLinkedData: typings.officeDashJs.Excel.LinkedDataTypeState.validLinkedData with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[LinkedDataTypeState with String] = js.native
+  /* "BrokenLinkedData" */ @js.native
+  object brokenLinkedData extends TopLevel[brokenLinkedData with String]
+  
+  /* "DisambiguationNeeded" */ @js.native
+  object disambiguationNeeded extends TopLevel[disambiguationNeeded with String]
+  
+  /* "FetchingData" */ @js.native
+  object fetchingData extends TopLevel[fetchingData with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "ValidLinkedData" */ @js.native
+  object validLinkedData extends TopLevel[validLinkedData with String]
+  
 }
 

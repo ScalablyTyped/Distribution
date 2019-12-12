@@ -1,5 +1,13 @@
 package typings.atAngularHttp.srcEnumsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Delete
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Get
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Head
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Options
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Patch
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Post
+import typings.atAngularHttp.srcEnumsMod.RequestMethod.Put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object RequestMethod extends js.Object {
   @js.native
   sealed trait Put extends RequestMethod
   
-  /* 3 */ val Delete: typings.atAngularHttp.srcEnumsMod.RequestMethod.Delete with Double = js.native
-  /* 0 */ val Get: typings.atAngularHttp.srcEnumsMod.RequestMethod.Get with Double = js.native
-  /* 5 */ val Head: typings.atAngularHttp.srcEnumsMod.RequestMethod.Head with Double = js.native
-  /* 4 */ val Options: typings.atAngularHttp.srcEnumsMod.RequestMethod.Options with Double = js.native
-  /* 6 */ val Patch: typings.atAngularHttp.srcEnumsMod.RequestMethod.Patch with Double = js.native
-  /* 1 */ val Post: typings.atAngularHttp.srcEnumsMod.RequestMethod.Post with Double = js.native
-  /* 2 */ val Put: typings.atAngularHttp.srcEnumsMod.RequestMethod.Put with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RequestMethod with Double] = js.native
+  /* 3 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 0 */ @js.native
+  object Get extends TopLevel[Get with Double]
+  
+  /* 5 */ @js.native
+  object Head extends TopLevel[Head with Double]
+  
+  /* 4 */ @js.native
+  object Options extends TopLevel[Options with Double]
+  
+  /* 6 */ @js.native
+  object Patch extends TopLevel[Patch with Double]
+  
+  /* 1 */ @js.native
+  object Post extends TopLevel[Post with Double]
+  
+  /* 2 */ @js.native
+  object Put extends TopLevel[Put with Double]
+  
 }
 

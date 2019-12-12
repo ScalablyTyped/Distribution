@@ -10,40 +10,26 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.8]
   */
+@js.native
 trait ChartTrendlineLabelFormatLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the border format, which includes color, linestyle, and weight.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
+  var border: js.UndefOr[ChartBorderLoadOptions] = js.native
   /**
     *
     * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var font: js.UndefOr[ChartFontLoadOptions] = js.undefined
-}
-
-object ChartTrendlineLabelFormatLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    border: ChartBorderLoadOptions = null,
-    font: ChartFontLoadOptions = null
-  ): ChartTrendlineLabelFormatLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ChartTrendlineLabelFormatLoadOptions]
-  }
+  var font: js.UndefOr[ChartFontLoadOptions] = js.native
 }
 

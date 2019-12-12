@@ -1,5 +1,14 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.DstRef
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PDURequest
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PingTimeout
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RecvTimeout
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RemotePort
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SendTimeout
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcRef
+import typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcTSap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object ParamNumber extends js.Object {
   @js.native
   sealed trait SrcTSap extends ParamNumber
   
-  /* 8 */ val DstRef: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.DstRef with Double = js.native
-  /* 10 */ val PDURequest: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PDURequest with Double = js.native
-  /* 3 */ val PingTimeout: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.PingTimeout with Double = js.native
-  /* 5 */ val RecvTimeout: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RecvTimeout with Double = js.native
-  /* 2 */ val RemotePort: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.RemotePort with Double = js.native
-  /* 4 */ val SendTimeout: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SendTimeout with Double = js.native
-  /* 7 */ val SrcRef: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcRef with Double = js.native
-  /* 9 */ val SrcTSap: typings.nodeDashSnap7.nodeDashSnap7Mod.ParamNumber.SrcTSap with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParamNumber with Double] = js.native
+  /* 8 */ @js.native
+  object DstRef extends TopLevel[DstRef with Double]
+  
+  /* 10 */ @js.native
+  object PDURequest extends TopLevel[PDURequest with Double]
+  
+  /* 3 */ @js.native
+  object PingTimeout extends TopLevel[PingTimeout with Double]
+  
+  /* 5 */ @js.native
+  object RecvTimeout extends TopLevel[RecvTimeout with Double]
+  
+  /* 2 */ @js.native
+  object RemotePort extends TopLevel[RemotePort with Double]
+  
+  /* 4 */ @js.native
+  object SendTimeout extends TopLevel[SendTimeout with Double]
+  
+  /* 7 */ @js.native
+  object SrcRef extends TopLevel[SrcRef with Double]
+  
+  /* 9 */ @js.native
+  object SrcTSap extends TopLevel[SrcTSap with Double]
+  
 }
 

@@ -1,6 +1,7 @@
 package typings.jsdom.jsdomMod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.jsdom.TypeofClassCookie
 import typings.jsdom.TypeofClassCookieJar
 import typings.std.Date
@@ -22,8 +23,6 @@ object toughCookie extends js.Object {
   
   var Cookie: js.Any | TypeofClassCookie = js.native
   var CookieJar: js.Any | TypeofClassCookieJar = js.native
-  var MemoryCookieStore: Instantiable0[typings.toughDashCookie.toughDashCookieMod.MemoryCookieStore] = js.native
-  var Store: Instantiable0[typings.toughDashCookie.toughDashCookieMod.Store] = js.native
   def canonicalDomain(str: String): String = js.native
   def cookieCompare(a: Cookie, b: Cookie): Double = js.native
   def defaultPath(path: String): String = js.native
@@ -36,5 +35,13 @@ object toughCookie extends js.Object {
   def pathMatch(reqPath: String, cookiePath: String): Boolean = js.native
   def permuteDomain(domain: String): js.Array[String] = js.native
   def permutePath(path: String): js.Array[String] = js.native
+  @js.native
+  object MemoryCookieStore
+    extends TopLevel[Instantiable0[typings.toughDashCookie.toughDashCookieMod.MemoryCookieStore]]
+  
+  @js.native
+  object Store
+    extends TopLevel[Instantiable0[typings.toughDashCookie.toughDashCookieMod.Store]]
+  
 }
 

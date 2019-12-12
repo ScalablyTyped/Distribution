@@ -1,5 +1,9 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.UI.SelectionMode.multi
+import typings.winjs.WinJS.UI.SelectionMode.none
+import typings.winjs.WinJS.UI.SelectionMode.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object SelectionMode extends js.Object {
   @js.native
   sealed trait single extends SelectionMode
   
-  /* 2 */ val multi: typings.winjs.WinJS.UI.SelectionMode.multi with Double = js.native
-  /* 0 */ val none: typings.winjs.WinJS.UI.SelectionMode.none with Double = js.native
-  /* 1 */ val single: typings.winjs.WinJS.UI.SelectionMode.single with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionMode with Double] = js.native
+  /* 2 */ @js.native
+  object multi extends TopLevel[multi with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object single extends TopLevel[single with Double]
+  
 }
 

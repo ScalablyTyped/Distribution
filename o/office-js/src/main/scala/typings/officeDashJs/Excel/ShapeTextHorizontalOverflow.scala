@@ -1,5 +1,8 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.ShapeTextHorizontalOverflow.clip
+import typings.officeDashJs.Excel.ShapeTextHorizontalOverflow.overflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object ShapeTextHorizontalOverflow extends js.Object {
   @js.native
   sealed trait overflow extends ShapeTextHorizontalOverflow
   
-  /* "Clip" */ val clip: typings.officeDashJs.Excel.ShapeTextHorizontalOverflow.clip with String = js.native
-  /* "Overflow" */ val overflow: typings.officeDashJs.Excel.ShapeTextHorizontalOverflow.overflow with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ShapeTextHorizontalOverflow with String] = js.native
+  /* "Clip" */ @js.native
+  object clip extends TopLevel[clip with String]
+  
+  /* "Overflow" */ @js.native
+  object overflow extends TopLevel[overflow with String]
+  
 }
 

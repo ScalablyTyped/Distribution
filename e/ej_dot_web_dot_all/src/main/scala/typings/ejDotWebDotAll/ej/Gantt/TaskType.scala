@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Gantt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedDuration
+import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedUnit
+import typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedWork
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object TaskType extends js.Object {
   @js.native
   sealed trait FixedWork extends TaskType
   
-  /* 2 */ val FixedDuration: typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedDuration with Double = js.native
-  /* 0 */ val FixedUnit: typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedUnit with Double = js.native
-  /* 1 */ val FixedWork: typings.ejDotWebDotAll.ej.Gantt.TaskType.FixedWork with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskType with Double] = js.native
+  /* 2 */ @js.native
+  object FixedDuration extends TopLevel[FixedDuration with Double]
+  
+  /* 0 */ @js.native
+  object FixedUnit extends TopLevel[FixedUnit with Double]
+  
+  /* 1 */ @js.native
+  object FixedWork extends TopLevel[FixedWork with Double]
+  
 }
 

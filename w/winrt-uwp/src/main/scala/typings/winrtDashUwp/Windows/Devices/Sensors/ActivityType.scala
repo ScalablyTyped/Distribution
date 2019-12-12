@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.biking
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.fidgeting
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.idle
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.inVehicle
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.running
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.stationary
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.unknown
+import typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.walking
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object ActivityType extends js.Object {
   @js.native
   sealed trait walking extends ActivityType
   
-  /* 7 */ val biking: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.biking with Double = js.native
-  /* 3 */ val fidgeting: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.fidgeting with Double = js.native
-  /* 1 */ val idle: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.idle with Double = js.native
-  /* 6 */ val inVehicle: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.inVehicle with Double = js.native
-  /* 5 */ val running: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.running with Double = js.native
-  /* 2 */ val stationary: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.stationary with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.unknown with Double = js.native
-  /* 4 */ val walking: typings.winrtDashUwp.Windows.Devices.Sensors.ActivityType.walking with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ActivityType with Double] = js.native
+  /* 7 */ @js.native
+  object biking extends TopLevel[biking with Double]
+  
+  /* 3 */ @js.native
+  object fidgeting extends TopLevel[fidgeting with Double]
+  
+  /* 1 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
+  /* 6 */ @js.native
+  object inVehicle extends TopLevel[inVehicle with Double]
+  
+  /* 5 */ @js.native
+  object running extends TopLevel[running with Double]
+  
+  /* 2 */ @js.native
+  object stationary extends TopLevel[stationary with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 4 */ @js.native
+  object walking extends TopLevel[walking with Double]
+  
 }
 

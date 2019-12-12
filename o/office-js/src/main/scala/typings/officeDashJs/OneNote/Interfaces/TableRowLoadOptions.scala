@@ -10,64 +10,44 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
+@js.native
 trait TableRowLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the number of cells in the row. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cellCount: js.UndefOr[Boolean] = js.undefined
+  var cellCount: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the cells in the row.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cells: js.UndefOr[TableCellCollectionLoadOptions] = js.undefined
+  var cells: js.UndefOr[TableCellCollectionLoadOptions] = js.native
   /**
     *
     * Gets the ID of the row. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the parent table.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
+  var parentTable: js.UndefOr[TableLoadOptions] = js.native
   /**
     *
     * Gets the index of the row in its parent table. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.undefined
-}
-
-object TableRowLoadOptions {
-  @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    cellCount: js.UndefOr[Boolean] = js.undefined,
-    cells: TableCellCollectionLoadOptions = null,
-    id: js.UndefOr[Boolean] = js.undefined,
-    parentTable: TableLoadOptions = null,
-    rowIndex: js.UndefOr[Boolean] = js.undefined
-  ): TableRowLoadOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (cells != null) __obj.updateDynamic("cells")(cells.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TableRowLoadOptions]
-  }
+  var rowIndex: js.UndefOr[Boolean] = js.native
 }
 

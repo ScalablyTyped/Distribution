@@ -5,27 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AngularFireSimpleObject
   extends /* key */ StringDictionary[js.Any] {
   @JSName("$id")
-  var $id: String
+  var $id: String = js.native
   @JSName("$priority")
-  var $priority: Double
+  var $priority: Double = js.native
   @JSName("$value")
-  var $value: js.Any
-}
-
-object AngularFireSimpleObject {
-  @scala.inline
-  def apply(
-    $id: String,
-    $priority: Double,
-    $value: js.Any,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
-  ): AngularFireSimpleObject = {
-    val __obj = js.Dynamic.literal($id = $id.asInstanceOf[js.Any], $priority = $priority.asInstanceOf[js.Any], $value = $value.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[AngularFireSimpleObject]
-  }
+  var $value: js.Any = js.native
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.DocumentMode.ReadOnly
+import typings.officeDashJsDashPreview.Office.DocumentMode.ReadWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +32,13 @@ object DocumentMode extends js.Object {
   @js.native
   sealed trait ReadWrite extends DocumentMode
   
-  /* 0 */ val ReadOnly: typings.officeDashJsDashPreview.Office.DocumentMode.ReadOnly with Double = js.native
-  /* 1 */ val ReadWrite: typings.officeDashJsDashPreview.Office.DocumentMode.ReadWrite with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DocumentMode with Double] = js.native
+  /* 0 */ @js.native
+  object ReadOnly extends TopLevel[ReadOnly with Double]
+  
+  /* 1 */ @js.native
+  object ReadWrite extends TopLevel[ReadWrite with Double]
+  
 }
 

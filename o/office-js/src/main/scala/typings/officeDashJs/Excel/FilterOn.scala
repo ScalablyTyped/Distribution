@@ -1,5 +1,16 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.FilterOn.bottomItems
+import typings.officeDashJs.Excel.FilterOn.bottomPercent
+import typings.officeDashJs.Excel.FilterOn.cellColor
+import typings.officeDashJs.Excel.FilterOn.custom
+import typings.officeDashJs.Excel.FilterOn.dynamic
+import typings.officeDashJs.Excel.FilterOn.fontColor
+import typings.officeDashJs.Excel.FilterOn.icon
+import typings.officeDashJs.Excel.FilterOn.topItems
+import typings.officeDashJs.Excel.FilterOn.topPercent
+import typings.officeDashJs.Excel.FilterOn.values
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,17 +54,37 @@ object FilterOn extends js.Object {
   @js.native
   sealed trait values extends FilterOn
   
-  /* "BottomItems" */ val bottomItems: typings.officeDashJs.Excel.FilterOn.bottomItems with String = js.native
-  /* "BottomPercent" */ val bottomPercent: typings.officeDashJs.Excel.FilterOn.bottomPercent with String = js.native
-  /* "CellColor" */ val cellColor: typings.officeDashJs.Excel.FilterOn.cellColor with String = js.native
-  /* "Custom" */ val custom: typings.officeDashJs.Excel.FilterOn.custom with String = js.native
-  /* "Dynamic" */ val dynamic: typings.officeDashJs.Excel.FilterOn.dynamic with String = js.native
-  /* "FontColor" */ val fontColor: typings.officeDashJs.Excel.FilterOn.fontColor with String = js.native
-  /* "Icon" */ val icon: typings.officeDashJs.Excel.FilterOn.icon with String = js.native
-  /* "TopItems" */ val topItems: typings.officeDashJs.Excel.FilterOn.topItems with String = js.native
-  /* "TopPercent" */ val topPercent: typings.officeDashJs.Excel.FilterOn.topPercent with String = js.native
-  /* "Values" */ val values: typings.officeDashJs.Excel.FilterOn.values with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[FilterOn with String] = js.native
+  /* "BottomItems" */ @js.native
+  object bottomItems extends TopLevel[bottomItems with String]
+  
+  /* "BottomPercent" */ @js.native
+  object bottomPercent extends TopLevel[bottomPercent with String]
+  
+  /* "CellColor" */ @js.native
+  object cellColor extends TopLevel[cellColor with String]
+  
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "Dynamic" */ @js.native
+  object dynamic extends TopLevel[dynamic with String]
+  
+  /* "FontColor" */ @js.native
+  object fontColor extends TopLevel[fontColor with String]
+  
+  /* "Icon" */ @js.native
+  object icon extends TopLevel[icon with String]
+  
+  /* "TopItems" */ @js.native
+  object topItems extends TopLevel[topItems with String]
+  
+  /* "TopPercent" */ @js.native
+  object topPercent extends TopLevel[topPercent with String]
+  
+  /* "Values" */ @js.native
+  object values extends TopLevel[values with String]
+  
 }
 

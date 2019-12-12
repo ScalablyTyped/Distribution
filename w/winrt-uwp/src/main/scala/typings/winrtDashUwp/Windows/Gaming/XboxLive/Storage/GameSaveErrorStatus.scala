@@ -1,5 +1,21 @@
 package typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.abort
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.blobNotFound
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerNotInSync
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerSyncFailed
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.invalidContainerName
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noAccess
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noXboxLiveInfo
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.objectExpired
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ok
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.outOfLocalStorage
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.providedBufferTooSmall
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.quotaExceeded
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.updateTooBig
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userCanceled
+import typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userHasNoXboxLiveInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,22 +87,52 @@ object GameSaveErrorStatus extends js.Object {
   @js.native
   sealed trait userHasNoXboxLiveInfo extends GameSaveErrorStatus
   
-  /* 1 */ val abort: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.abort with Double = js.native
-  /* 9 */ val blobNotFound: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.blobNotFound with Double = js.native
-  /* 11 */ val containerNotInSync: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerNotInSync with Double = js.native
-  /* 12 */ val containerSyncFailed: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.containerSyncFailed with Double = js.native
-  /* 2 */ val invalidContainerName: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.invalidContainerName with Double = js.native
-  /* 3 */ val noAccess: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noAccess with Double = js.native
-  /* 10 */ val noXboxLiveInfo: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.noXboxLiveInfo with Double = js.native
-  /* 14 */ val objectExpired: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.objectExpired with Double = js.native
-  /* 0 */ val ok: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.ok with Double = js.native
-  /* 4 */ val outOfLocalStorage: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.outOfLocalStorage with Double = js.native
-  /* 8 */ val providedBufferTooSmall: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.providedBufferTooSmall with Double = js.native
-  /* 7 */ val quotaExceeded: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.quotaExceeded with Double = js.native
-  /* 6 */ val updateTooBig: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.updateTooBig with Double = js.native
-  /* 5 */ val userCanceled: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userCanceled with Double = js.native
-  /* 13 */ val userHasNoXboxLiveInfo: typings.winrtDashUwp.Windows.Gaming.XboxLive.Storage.GameSaveErrorStatus.userHasNoXboxLiveInfo with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GameSaveErrorStatus with Double] = js.native
+  /* 1 */ @js.native
+  object abort extends TopLevel[abort with Double]
+  
+  /* 9 */ @js.native
+  object blobNotFound extends TopLevel[blobNotFound with Double]
+  
+  /* 11 */ @js.native
+  object containerNotInSync extends TopLevel[containerNotInSync with Double]
+  
+  /* 12 */ @js.native
+  object containerSyncFailed extends TopLevel[containerSyncFailed with Double]
+  
+  /* 2 */ @js.native
+  object invalidContainerName extends TopLevel[invalidContainerName with Double]
+  
+  /* 3 */ @js.native
+  object noAccess extends TopLevel[noAccess with Double]
+  
+  /* 10 */ @js.native
+  object noXboxLiveInfo extends TopLevel[noXboxLiveInfo with Double]
+  
+  /* 14 */ @js.native
+  object objectExpired extends TopLevel[objectExpired with Double]
+  
+  /* 0 */ @js.native
+  object ok extends TopLevel[ok with Double]
+  
+  /* 4 */ @js.native
+  object outOfLocalStorage extends TopLevel[outOfLocalStorage with Double]
+  
+  /* 8 */ @js.native
+  object providedBufferTooSmall extends TopLevel[providedBufferTooSmall with Double]
+  
+  /* 7 */ @js.native
+  object quotaExceeded extends TopLevel[quotaExceeded with Double]
+  
+  /* 6 */ @js.native
+  object updateTooBig extends TopLevel[updateTooBig with Double]
+  
+  /* 5 */ @js.native
+  object userCanceled extends TopLevel[userCanceled with Double]
+  
+  /* 13 */ @js.native
+  object userHasNoXboxLiveInfo extends TopLevel[userHasNoXboxLiveInfo with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.StartScreen
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.arguments
+import typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.separator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object JumpListItemKind extends js.Object {
   @js.native
   sealed trait separator extends JumpListItemKind
   
-  /* 0 */ val arguments: typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.arguments with Double = js.native
-  /* 1 */ val separator: typings.winrtDashUwp.Windows.UI.StartScreen.JumpListItemKind.separator with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[JumpListItemKind with Double] = js.native
+  /* 0 */ @js.native
+  object arguments extends TopLevel[arguments with Double]
+  
+  /* 1 */ @js.native
+  object separator extends TopLevel[separator with Double]
+  
 }
 

@@ -1,5 +1,7 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winjs.WinJS.UI.CountResult.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +21,10 @@ object CountResult extends js.Object {
   @js.native
   sealed trait unknown extends CountResult
   
-  /* 0 */ val unknown: typings.winjs.WinJS.UI.CountResult.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CountResult with Double] = js.native
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

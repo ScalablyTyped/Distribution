@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.invalidXml
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredAttribute
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredElement
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unexpectedContent
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unknown
+import typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unsupportedFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object SyndicationErrorStatus extends js.Object {
   @js.native
   sealed trait unsupportedFormat extends SyndicationErrorStatus
   
-  /* 3 */ val invalidXml: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.invalidXml with Double = js.native
-  /* 2 */ val missingRequiredAttribute: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredAttribute with Double = js.native
-  /* 1 */ val missingRequiredElement: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.missingRequiredElement with Double = js.native
-  /* 4 */ val unexpectedContent: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unexpectedContent with Double = js.native
-  /* 0 */ val unknown: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unknown with Double = js.native
-  /* 5 */ val unsupportedFormat: typings.winrtDashUwp.Windows.Web.Syndication.SyndicationErrorStatus.unsupportedFormat with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SyndicationErrorStatus with Double] = js.native
+  /* 3 */ @js.native
+  object invalidXml extends TopLevel[invalidXml with Double]
+  
+  /* 2 */ @js.native
+  object missingRequiredAttribute extends TopLevel[missingRequiredAttribute with Double]
+  
+  /* 1 */ @js.native
+  object missingRequiredElement extends TopLevel[missingRequiredElement with Double]
+  
+  /* 4 */ @js.native
+  object unexpectedContent extends TopLevel[unexpectedContent with Double]
+  
+  /* 0 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
+  /* 5 */ @js.native
+  object unsupportedFormat extends TopLevel[unsupportedFormat with Double]
+  
 }
 

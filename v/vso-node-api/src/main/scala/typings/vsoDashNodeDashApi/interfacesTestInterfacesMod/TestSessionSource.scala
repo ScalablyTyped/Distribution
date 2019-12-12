@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesTestInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackDesktop
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackWeb
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.SessionInsightsForAll
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.Unknown
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop2
+import typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTWeb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,28 @@ object TestSessionSource extends js.Object {
   @js.native
   sealed trait XTWeb extends TestSessionSource
   
-  /* 2 */ val FeedbackDesktop: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackDesktop with Double = js.native
-  /* 4 */ val FeedbackWeb: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.FeedbackWeb with Double = js.native
-  /* 6 */ val SessionInsightsForAll: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.SessionInsightsForAll with Double = js.native
-  /* 0 */ val Unknown: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.Unknown with Double = js.native
-  /* 1 */ val XTDesktop: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop with Double = js.native
-  /* 5 */ val XTDesktop2: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTDesktop2 with Double = js.native
-  /* 3 */ val XTWeb: typings.vsoDashNodeDashApi.interfacesTestInterfacesMod.TestSessionSource.XTWeb with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TestSessionSource with Double] = js.native
+  /* 2 */ @js.native
+  object FeedbackDesktop extends TopLevel[FeedbackDesktop with Double]
+  
+  /* 4 */ @js.native
+  object FeedbackWeb extends TopLevel[FeedbackWeb with Double]
+  
+  /* 6 */ @js.native
+  object SessionInsightsForAll extends TopLevel[SessionInsightsForAll with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 1 */ @js.native
+  object XTDesktop extends TopLevel[XTDesktop with Double]
+  
+  /* 5 */ @js.native
+  object XTDesktop2 extends TopLevel[XTDesktop2 with Double]
+  
+  /* 3 */ @js.native
+  object XTWeb extends TopLevel[XTWeb with Double]
+  
 }
 

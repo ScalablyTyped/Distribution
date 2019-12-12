@@ -1,5 +1,12 @@
 package typings.officeDashJsDashPreview.Visio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.accessDenied
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.generalException
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.invalidArgument
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.itemNotFound
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.notImplemented
+import typings.officeDashJsDashPreview.Visio.ErrorCodes.unsupportedOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object ErrorCodes extends js.Object {
   @js.native
   sealed trait unsupportedOperation extends ErrorCodes
   
-  /* "AccessDenied" */ val accessDenied: typings.officeDashJsDashPreview.Visio.ErrorCodes.accessDenied with String = js.native
-  /* "GeneralException" */ val generalException: typings.officeDashJsDashPreview.Visio.ErrorCodes.generalException with String = js.native
-  /* "InvalidArgument" */ val invalidArgument: typings.officeDashJsDashPreview.Visio.ErrorCodes.invalidArgument with String = js.native
-  /* "ItemNotFound" */ val itemNotFound: typings.officeDashJsDashPreview.Visio.ErrorCodes.itemNotFound with String = js.native
-  /* "NotImplemented" */ val notImplemented: typings.officeDashJsDashPreview.Visio.ErrorCodes.notImplemented with String = js.native
-  /* "UnsupportedOperation" */ val unsupportedOperation: typings.officeDashJsDashPreview.Visio.ErrorCodes.unsupportedOperation with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ErrorCodes with String] = js.native
+  /* "AccessDenied" */ @js.native
+  object accessDenied extends TopLevel[accessDenied with String]
+  
+  /* "GeneralException" */ @js.native
+  object generalException extends TopLevel[generalException with String]
+  
+  /* "InvalidArgument" */ @js.native
+  object invalidArgument extends TopLevel[invalidArgument with String]
+  
+  /* "ItemNotFound" */ @js.native
+  object itemNotFound extends TopLevel[itemNotFound with String]
+  
+  /* "NotImplemented" */ @js.native
+  object notImplemented extends TopLevel[notImplemented with String]
+  
+  /* "UnsupportedOperation" */ @js.native
+  object unsupportedOperation extends TopLevel[unsupportedOperation with String]
+  
 }
 

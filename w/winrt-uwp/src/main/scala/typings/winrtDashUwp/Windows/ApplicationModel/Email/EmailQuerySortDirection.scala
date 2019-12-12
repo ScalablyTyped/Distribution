@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySortDirection.ascending
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySortDirection.descending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object EmailQuerySortDirection extends js.Object {
   @js.native
   sealed trait descending extends EmailQuerySortDirection
   
-  /* 1 */ val ascending: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySortDirection.ascending with Double = js.native
-  /* 0 */ val descending: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQuerySortDirection.descending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailQuerySortDirection with Double] = js.native
+  /* 1 */ @js.native
+  object ascending extends TopLevel[ascending with Double]
+  
+  /* 0 */ @js.native
+  object descending extends TopLevel[descending with Double]
+  
 }
 

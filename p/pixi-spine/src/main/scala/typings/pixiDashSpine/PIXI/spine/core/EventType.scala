@@ -1,5 +1,12 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.EventType.complete
+import typings.pixiDashSpine.PIXI.spine.core.EventType.dispose
+import typings.pixiDashSpine.PIXI.spine.core.EventType.end
+import typings.pixiDashSpine.PIXI.spine.core.EventType.event
+import typings.pixiDashSpine.PIXI.spine.core.EventType.interrupt
+import typings.pixiDashSpine.PIXI.spine.core.EventType.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object EventType extends js.Object {
   @js.native
   sealed trait start extends EventType
   
-  /* 4 */ val complete: typings.pixiDashSpine.PIXI.spine.core.EventType.complete with Double = js.native
-  /* 3 */ val dispose: typings.pixiDashSpine.PIXI.spine.core.EventType.dispose with Double = js.native
-  /* 2 */ val end: typings.pixiDashSpine.PIXI.spine.core.EventType.end with Double = js.native
-  /* 5 */ val event: typings.pixiDashSpine.PIXI.spine.core.EventType.event with Double = js.native
-  /* 1 */ val interrupt: typings.pixiDashSpine.PIXI.spine.core.EventType.interrupt with Double = js.native
-  /* 0 */ val start: typings.pixiDashSpine.PIXI.spine.core.EventType.start with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+  /* 4 */ @js.native
+  object complete extends TopLevel[complete with Double]
+  
+  /* 3 */ @js.native
+  object dispose extends TopLevel[dispose with Double]
+  
+  /* 2 */ @js.native
+  object end extends TopLevel[end with Double]
+  
+  /* 5 */ @js.native
+  object event extends TopLevel[event with Double]
+  
+  /* 1 */ @js.native
+  object interrupt extends TopLevel[interrupt with Double]
+  
+  /* 0 */ @js.native
+  object start extends TopLevel[start with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.checkboxCheckboxMod.CheckboxProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object checkboxMod extends js.Object {
     def this(props: CheckboxProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[CheckboxProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[CheckboxProps]]
+  
 }
 

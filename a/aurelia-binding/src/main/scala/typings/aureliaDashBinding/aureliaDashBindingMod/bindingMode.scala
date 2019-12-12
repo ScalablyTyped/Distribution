@@ -1,5 +1,11 @@
 package typings.aureliaDashBinding.aureliaDashBindingMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.fromView
+import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneTime
+import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneWay
+import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.toView
+import typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.twoWay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,12 +60,22 @@ object bindingMode extends js.Object {
   @js.native
   sealed trait twoWay extends bindingMode
   
-  /* 3 */ val fromView: typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.fromView with Double = js.native
-  /* 0 */ val oneTime: typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneTime with Double = js.native
-  /* 1 */ val oneWay: typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.oneWay with Double = js.native
-  /* 1 */ val toView: typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.toView with Double = js.native
-  /* 2 */ val twoWay: typings.aureliaDashBinding.aureliaDashBindingMod.bindingMode.twoWay with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[bindingMode with Double] = js.native
+  /* 3 */ @js.native
+  object fromView extends TopLevel[fromView with Double]
+  
+  /* 0 */ @js.native
+  object oneTime extends TopLevel[oneTime with Double]
+  
+  /* 1 */ @js.native
+  object oneWay extends TopLevel[oneWay with Double]
+  
+  /* 1 */ @js.native
+  object toView extends TopLevel[toView with Double]
+  
+  /* 2 */ @js.native
+  object twoWay extends TopLevel[twoWay with Double]
+  
 }
 

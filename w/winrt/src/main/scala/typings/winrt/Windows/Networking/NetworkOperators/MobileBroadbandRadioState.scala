@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.off
+import typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.on
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object MobileBroadbandRadioState extends js.Object {
   @js.native
   sealed trait on extends MobileBroadbandRadioState
   
-  /* 0 */ val off: typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.off with Double = js.native
-  /* 1 */ val on: typings.winrt.Windows.Networking.NetworkOperators.MobileBroadbandRadioState.on with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MobileBroadbandRadioState with Double] = js.native
+  /* 0 */ @js.native
+  object off extends TopLevel[off with Double]
+  
+  /* 1 */ @js.native
+  object on extends TopLevel[on with Double]
+  
 }
 

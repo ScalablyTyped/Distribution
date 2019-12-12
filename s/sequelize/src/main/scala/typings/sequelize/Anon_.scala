@@ -8,84 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ extends js.Object {
-  var `!..`: js.Tuple2[Double | String, Double | String]
+  var `!..`: js.Tuple2[Double | String, Double | String] = js.native
   @JSName("$between")
-  var $between: js.Tuple2[Date | Double, Date | Double]
+  var $between: js.Tuple2[Date | Double, Date | Double] = js.native
   @JSName("$contained")
-  var $contained: js.Any
+  var $contained: js.Any = js.native
   @JSName("$contains")
-  var $contains: js.Any
+  var $contains: js.Any = js.native
   @JSName("$gt")
-  var $gt: Double | String | Date
+  var $gt: Double | String | Date = js.native
   @JSName("$gte")
-  var $gte: Double | String | Date
+  var $gte: Double | String | Date = js.native
   @JSName("$iLike")
-  var $iLike: String | WherePGStatement
+  var $iLike: String | WherePGStatement = js.native
   @JSName("$ilike")
-  var $ilike: String | WherePGStatement
+  var $ilike: String | WherePGStatement = js.native
   @JSName("$in")
-  var $in: (js.Array[String | Double]) | literal
+  var $in: (js.Array[String | Double]) | literal = js.native
   @JSName("$like")
-  var $like: String | WherePGStatement
+  var $like: String | WherePGStatement = js.native
   @JSName("$lt")
-  var $lt: Double | String | Date
+  var $lt: Double | String | Date = js.native
   @JSName("$lte")
-  var $lte: Double | String | Date
+  var $lte: Double | String | Date = js.native
   @JSName("$ne")
-  var $ne: String | Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object)
+  var $ne: String | Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object) = js.native
   @JSName("$not")
-  var $not: Boolean | String | Double | AnyWhereOptions
+  var $not: Boolean | String | Double | AnyWhereOptions = js.native
   @JSName("$notBetween")
-  var $notBetween: js.Tuple2[Double, Double]
+  var $notBetween: js.Tuple2[Double, Double] = js.native
   @JSName("$notILike")
-  var $notILike: String | WherePGStatement
+  var $notILike: String | WherePGStatement = js.native
   @JSName("$notIn")
-  var $notIn: (js.Array[String | Double]) | literal
+  var $notIn: (js.Array[String | Double]) | literal = js.native
   @JSName("$notLike")
-  var $notLike: String | WherePGStatement
+  var $notLike: String | WherePGStatement = js.native
   @JSName("$overlap")
-  var $overlap: js.Tuple2[Double | String, Double | String]
-  var `&&`: js.Tuple2[Double, Double]
-  var `..`: js.Tuple2[Double | String, Double | String]
-  var `<@`: js.Any
-  var `@>`: js.Any
-}
-
-object Anon_ {
-  @scala.inline
-  def apply(
-    `!..`: js.Tuple2[Double | String, Double | String],
-    $between: js.Tuple2[Date | Double, Date | Double],
-    $contained: js.Any,
-    $contains: js.Any,
-    $gt: Double | String | Date,
-    $gte: Double | String | Date,
-    $iLike: String | WherePGStatement,
-    $ilike: String | WherePGStatement,
-    $in: (js.Array[String | Double]) | literal,
-    $like: String | WherePGStatement,
-    $lt: Double | String | Date,
-    $lte: Double | String | Date,
-    $ne: String | Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object),
-    $not: Boolean | String | Double | AnyWhereOptions,
-    $notBetween: js.Tuple2[Double, Double],
-    $notILike: String | WherePGStatement,
-    $notIn: (js.Array[String | Double]) | literal,
-    $notLike: String | WherePGStatement,
-    $overlap: js.Tuple2[Double | String, Double | String],
-    `&&`: js.Tuple2[Double, Double],
-    `..`: js.Tuple2[Double | String, Double | String],
-    `<@`: js.Any,
-    `@>`: js.Any
-  ): Anon_ = {
-    val __obj = js.Dynamic.literal($between = $between.asInstanceOf[js.Any], $contained = $contained.asInstanceOf[js.Any], $contains = $contains.asInstanceOf[js.Any], $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $ilike = $ilike.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween.asInstanceOf[js.Any], $notILike = $notILike.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $overlap = $overlap.asInstanceOf[js.Any])
-    __obj.updateDynamic("!..")(`!..`.asInstanceOf[js.Any])
-    __obj.updateDynamic("&&")(`&&`.asInstanceOf[js.Any])
-    __obj.updateDynamic("..")(`..`.asInstanceOf[js.Any])
-    __obj.updateDynamic("<@")(`<@`.asInstanceOf[js.Any])
-    __obj.updateDynamic("@>")(`@>`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_]
-  }
+  var $overlap: js.Tuple2[Double | String, Double | String] = js.native
+  var `&&`: js.Tuple2[Double, Double] = js.native
+  var `..`: js.Tuple2[Double | String, Double | String] = js.native
+  var `<@`: js.Any = js.native
+  var `@>`: js.Any = js.native
 }
 

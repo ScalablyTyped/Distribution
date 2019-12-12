@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.tabTabMod.TabProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object tabMod extends js.Object {
     def this(props: TabProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[TabProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[TabProps]]
+  
 }
 

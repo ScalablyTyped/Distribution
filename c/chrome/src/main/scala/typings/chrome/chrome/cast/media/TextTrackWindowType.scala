@@ -1,5 +1,9 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.media.TextTrackWindowType.NONE
+import typings.chrome.chrome.cast.media.TextTrackWindowType.NORMAL
+import typings.chrome.chrome.cast.media.TextTrackWindowType.ROUNDED_CORNERS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TextTrackWindowType extends js.Object {
   @js.native
   sealed trait ROUNDED_CORNERS extends TextTrackWindowType
   
-  /* "NONE" */ val NONE: typings.chrome.chrome.cast.media.TextTrackWindowType.NONE with String = js.native
-  /* "NORMAL" */ val NORMAL: typings.chrome.chrome.cast.media.TextTrackWindowType.NORMAL with String = js.native
-  /* "ROUNDED_CORNERS" */ val ROUNDED_CORNERS: typings.chrome.chrome.cast.media.TextTrackWindowType.ROUNDED_CORNERS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[TextTrackWindowType with String] = js.native
+  /* "NONE" */ @js.native
+  object NONE extends TopLevel[NONE with String]
+  
+  /* "NORMAL" */ @js.native
+  object NORMAL extends TopLevel[NORMAL with String]
+  
+  /* "ROUNDED_CORNERS" */ @js.native
+  object ROUNDED_CORNERS extends TopLevel[ROUNDED_CORNERS with String]
+  
 }
 

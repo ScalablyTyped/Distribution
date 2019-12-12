@@ -1,5 +1,8 @@
 package typings.officeDashJs.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.FilterType.All
+import typings.officeDashJs.Office.FilterType.OnlyVisible
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +28,13 @@ object FilterType extends js.Object {
   @js.native
   sealed trait OnlyVisible extends FilterType
   
-  /* 0 */ val All: typings.officeDashJs.Office.FilterType.All with Double = js.native
-  /* 1 */ val OnlyVisible: typings.officeDashJs.Office.FilterType.OnlyVisible with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FilterType with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 1 */ @js.native
+  object OnlyVisible extends TopLevel[OnlyVisible with Double]
+  
 }
 

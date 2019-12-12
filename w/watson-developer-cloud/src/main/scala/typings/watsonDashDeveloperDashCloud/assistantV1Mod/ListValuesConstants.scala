@@ -1,6 +1,9 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListValuesConstants.Sort
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListValuesConstants.Sort.UPDATED
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListValuesConstants.Sort.VALUE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +24,14 @@ object ListValuesConstants extends js.Object {
     @js.native
     sealed trait VALUE extends Sort
     
-    /* "updated" */ val UPDATED: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListValuesConstants.Sort.UPDATED with String = js.native
-    /* "value" */ val VALUE: typings.watsonDashDeveloperDashCloud.assistantV1Mod.ListValuesConstants.Sort.VALUE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
+    /* "updated" */ @js.native
+    object UPDATED extends TopLevel[UPDATED with String]
+    
+    /* "value" */ @js.native
+    object VALUE extends TopLevel[VALUE with String]
+    
   }
   
 }

@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.all
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.flagged
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.important
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.read
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unread
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unseen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object EmailQueryKind extends js.Object {
   @js.native
   sealed trait unseen extends EmailQueryKind
   
-  /* 0 */ val all: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.all with Double = js.native
-  /* 2 */ val flagged: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.flagged with Double = js.native
-  /* 1 */ val important: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.important with Double = js.native
-  /* 4 */ val read: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.read with Double = js.native
-  /* 3 */ val unread: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unread with Double = js.native
-  /* 5 */ val unseen: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailQueryKind.unseen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailQueryKind with Double] = js.native
+  /* 0 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 2 */ @js.native
+  object flagged extends TopLevel[flagged with Double]
+  
+  /* 1 */ @js.native
+  object important extends TopLevel[important with Double]
+  
+  /* 4 */ @js.native
+  object read extends TopLevel[read with Double]
+  
+  /* 3 */ @js.native
+  object unread extends TopLevel[unread with Double]
+  
+  /* 5 */ @js.native
+  object unseen extends TopLevel[unseen with Double]
+  
 }
 

@@ -1,5 +1,15 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.GROUP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.IMAGE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.LINE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHAPE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHEETS_CHART
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.TABLE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.UNSUPPORTED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.VIDEO
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.WORD_ART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,16 +50,34 @@ object PageElementType extends js.Object {
   @js.native
   sealed trait WORD_ART extends PageElementType
   
-  /* 5 */ val GROUP: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.GROUP with Double = js.native
-  /* 2 */ val IMAGE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.IMAGE with Double = js.native
-  /* 6 */ val LINE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.LINE with Double = js.native
-  /* 1 */ val SHAPE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHAPE with Double = js.native
-  /* 8 */ val SHEETS_CHART: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.SHEETS_CHART with Double = js.native
-  /* 4 */ val TABLE: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.TABLE with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.UNSUPPORTED with Double = js.native
-  /* 3 */ val VIDEO: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.VIDEO with Double = js.native
-  /* 7 */ val WORD_ART: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.PageElementType.WORD_ART with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PageElementType with Double] = js.native
+  /* 5 */ @js.native
+  object GROUP extends TopLevel[GROUP with Double]
+  
+  /* 2 */ @js.native
+  object IMAGE extends TopLevel[IMAGE with Double]
+  
+  /* 6 */ @js.native
+  object LINE extends TopLevel[LINE with Double]
+  
+  /* 1 */ @js.native
+  object SHAPE extends TopLevel[SHAPE with Double]
+  
+  /* 8 */ @js.native
+  object SHEETS_CHART extends TopLevel[SHEETS_CHART with Double]
+  
+  /* 4 */ @js.native
+  object TABLE extends TopLevel[TABLE with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
+  /* 3 */ @js.native
+  object VIDEO extends TopLevel[VIDEO with Double]
+  
+  /* 7 */ @js.native
+  object WORD_ART extends TopLevel[WORD_ART with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedClosed
+import typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedOpen
+import typings.vscode.vscodeMod.DecorationRangeBehavior.OpenClosed
+import typings.vscode.vscodeMod.DecorationRangeBehavior.OpenOpen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object DecorationRangeBehavior extends js.Object {
   @js.native
   sealed trait OpenOpen extends DecorationRangeBehavior
   
-  /* 1 */ val ClosedClosed: typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedClosed with Double = js.native
-  /* 3 */ val ClosedOpen: typings.vscode.vscodeMod.DecorationRangeBehavior.ClosedOpen with Double = js.native
-  /* 2 */ val OpenClosed: typings.vscode.vscodeMod.DecorationRangeBehavior.OpenClosed with Double = js.native
-  /* 0 */ val OpenOpen: typings.vscode.vscodeMod.DecorationRangeBehavior.OpenOpen with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DecorationRangeBehavior with Double] = js.native
+  /* 1 */ @js.native
+  object ClosedClosed extends TopLevel[ClosedClosed with Double]
+  
+  /* 3 */ @js.native
+  object ClosedOpen extends TopLevel[ClosedOpen with Double]
+  
+  /* 2 */ @js.native
+  object OpenClosed extends TopLevel[OpenClosed with Double]
+  
+  /* 0 */ @js.native
+  object OpenOpen extends TopLevel[OpenOpen with Double]
+  
 }
 

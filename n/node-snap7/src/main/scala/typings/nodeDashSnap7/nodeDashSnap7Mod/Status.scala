@@ -1,5 +1,9 @@
 package typings.nodeDashSnap7.nodeDashSnap7Mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusRun
+import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusStop
+import typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusUnknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object Status extends js.Object {
   @js.native
   sealed trait S7CpuStatusUnknown extends Status
   
-  /* 0x08 */ val S7CpuStatusRun: typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusRun with Double = js.native
-  /* 0x04 */ val S7CpuStatusStop: typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusStop with Double = js.native
-  /* 0x00 */ val S7CpuStatusUnknown: typings.nodeDashSnap7.nodeDashSnap7Mod.Status.S7CpuStatusUnknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Status with Double] = js.native
+  /* 0x08 */ @js.native
+  object S7CpuStatusRun extends TopLevel[S7CpuStatusRun with Double]
+  
+  /* 0x04 */ @js.native
+  object S7CpuStatusStop extends TopLevel[S7CpuStatusStop with Double]
+  
+  /* 0x00 */ @js.native
+  object S7CpuStatusUnknown extends TopLevel[S7CpuStatusUnknown with Double]
+  
 }
 

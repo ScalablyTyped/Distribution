@@ -1,5 +1,11 @@
 package typings.atAngularHttp.srcEnumsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atAngularHttp.srcEnumsMod.ResponseType.Basic
+import typings.atAngularHttp.srcEnumsMod.ResponseType.Cors
+import typings.atAngularHttp.srcEnumsMod.ResponseType.Default
+import typings.atAngularHttp.srcEnumsMod.ResponseType.Error
+import typings.atAngularHttp.srcEnumsMod.ResponseType.Opaque
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ResponseType extends js.Object {
   @js.native
   sealed trait Opaque extends ResponseType
   
-  /* 0 */ val Basic: typings.atAngularHttp.srcEnumsMod.ResponseType.Basic with Double = js.native
-  /* 1 */ val Cors: typings.atAngularHttp.srcEnumsMod.ResponseType.Cors with Double = js.native
-  /* 2 */ val Default: typings.atAngularHttp.srcEnumsMod.ResponseType.Default with Double = js.native
-  /* 3 */ val Error: typings.atAngularHttp.srcEnumsMod.ResponseType.Error with Double = js.native
-  /* 4 */ val Opaque: typings.atAngularHttp.srcEnumsMod.ResponseType.Opaque with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ResponseType with Double] = js.native
+  /* 0 */ @js.native
+  object Basic extends TopLevel[Basic with Double]
+  
+  /* 1 */ @js.native
+  object Cors extends TopLevel[Cors with Double]
+  
+  /* 2 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 3 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 4 */ @js.native
+  object Opaque extends TopLevel[Opaque with Double]
+  
 }
 

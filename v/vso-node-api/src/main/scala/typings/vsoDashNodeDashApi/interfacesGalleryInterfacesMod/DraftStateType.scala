@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Cancelled
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Error
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Published
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Unpublished
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object DraftStateType extends js.Object {
   @js.native
   sealed trait Unpublished extends DraftStateType
   
-  /* 3 */ val Cancelled: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Cancelled with Double = js.native
-  /* 4 */ val Error: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Error with Double = js.native
-  /* 2 */ val Published: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Published with Double = js.native
-  /* 1 */ val Unpublished: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.DraftStateType.Unpublished with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DraftStateType with Double] = js.native
+  /* 3 */ @js.native
+  object Cancelled extends TopLevel[Cancelled with Double]
+  
+  /* 4 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 2 */ @js.native
+  object Published extends TopLevel[Published with Double]
+  
+  /* 1 */ @js.native
+  object Unpublished extends TopLevel[Unpublished with Double]
+  
 }
 

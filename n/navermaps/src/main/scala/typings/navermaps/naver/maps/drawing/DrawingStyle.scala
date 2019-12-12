@@ -1,5 +1,10 @@
 package typings.navermaps.naver.maps.drawing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL
+import typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL_2
+import typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL
+import typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL_2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object DrawingStyle extends js.Object {
   @js.native
   sealed trait VERTICAL_2 extends DrawingStyle
   
-  /* 0 */ val HORIZONTAL: typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL with Double = js.native
-  /* 1 */ val HORIZONTAL_2: typings.navermaps.naver.maps.drawing.DrawingStyle.HORIZONTAL_2 with Double = js.native
-  /* 0 */ val VERTICAL: typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL with Double = js.native
-  /* 2 */ val VERTICAL_2: typings.navermaps.naver.maps.drawing.DrawingStyle.VERTICAL_2 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DrawingStyle with Double] = js.native
+  /* 0 */ @js.native
+  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
+  
+  /* 1 */ @js.native
+  object HORIZONTAL_2 extends TopLevel[HORIZONTAL_2 with Double]
+  
+  /* 0 */ @js.native
+  object VERTICAL extends TopLevel[VERTICAL with Double]
+  
+  /* 2 */ @js.native
+  object VERTICAL_2 extends TopLevel[VERTICAL_2 with Double]
+  
 }
 

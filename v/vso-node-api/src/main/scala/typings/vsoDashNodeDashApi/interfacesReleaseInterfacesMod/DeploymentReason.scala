@@ -1,5 +1,10 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Automated
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Manual
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.None
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Scheduled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object DeploymentReason extends js.Object {
   @js.native
   sealed trait Scheduled extends DeploymentReason
   
-  /* 2 */ val Automated: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Automated with Double = js.native
-  /* 1 */ val Manual: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Manual with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.None with Double = js.native
-  /* 4 */ val Scheduled: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.DeploymentReason.Scheduled with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeploymentReason with Double] = js.native
+  /* 2 */ @js.native
+  object Automated extends TopLevel[Automated with Double]
+  
+  /* 1 */ @js.native
+  object Manual extends TopLevel[Manual with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 4 */ @js.native
+  object Scheduled extends TopLevel[Scheduled with Double]
+  
 }
 

@@ -1,6 +1,11 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.SP.Sharing.Role
+import typings.sharepoint.SP.Sharing.Role.edit
+import typings.sharepoint.SP.Sharing.Role.none
+import typings.sharepoint.SP.Sharing.Role.owner
+import typings.sharepoint.SP.Sharing.Role.view
 import typings.sharepoint.SP.Sharing.UserRoleAssignment
 import typings.sharepoint.SP.Sharing.UserSharingResult
 import scala.scalajs.js
@@ -65,12 +70,20 @@ object Sharing extends js.Object {
     @js.native
     sealed trait view extends Role
     
-    /* 2 */ val edit: typings.sharepoint.SP.Sharing.Role.edit with Double = js.native
-    /* 0 */ val none: typings.sharepoint.SP.Sharing.Role.none with Double = js.native
-    /* 3 */ val owner: typings.sharepoint.SP.Sharing.Role.owner with Double = js.native
-    /* 1 */ val view: typings.sharepoint.SP.Sharing.Role.view with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Role with Double] = js.native
+    /* 2 */ @js.native
+    object edit extends TopLevel[edit with Double]
+    
+    /* 0 */ @js.native
+    object none extends TopLevel[none with Double]
+    
+    /* 3 */ @js.native
+    object owner extends TopLevel[owner with Double]
+    
+    /* 1 */ @js.native
+    object view extends TopLevel[view with Double]
+    
   }
   
 }

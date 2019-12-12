@@ -1,5 +1,13 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.FlexAlignSelf.Auto
+import typings.openui5.sap.m.FlexAlignSelf.Baseline
+import typings.openui5.sap.m.FlexAlignSelf.Center
+import typings.openui5.sap.m.FlexAlignSelf.End
+import typings.openui5.sap.m.FlexAlignSelf.Inherit
+import typings.openui5.sap.m.FlexAlignSelf.Start
+import typings.openui5.sap.m.FlexAlignSelf.Stretch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,14 +43,28 @@ object FlexAlignSelf extends js.Object {
   @js.native
   sealed trait Stretch extends FlexAlignSelf
   
-  /* 0 */ val Auto: typings.openui5.sap.m.FlexAlignSelf.Auto with Double = js.native
-  /* 1 */ val Baseline: typings.openui5.sap.m.FlexAlignSelf.Baseline with Double = js.native
-  /* 2 */ val Center: typings.openui5.sap.m.FlexAlignSelf.Center with Double = js.native
-  /* 3 */ val End: typings.openui5.sap.m.FlexAlignSelf.End with Double = js.native
-  /* 4 */ val Inherit: typings.openui5.sap.m.FlexAlignSelf.Inherit with Double = js.native
-  /* 5 */ val Start: typings.openui5.sap.m.FlexAlignSelf.Start with Double = js.native
-  /* 6 */ val Stretch: typings.openui5.sap.m.FlexAlignSelf.Stretch with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FlexAlignSelf with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object Baseline extends TopLevel[Baseline with Double]
+  
+  /* 2 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 3 */ @js.native
+  object End extends TopLevel[End with Double]
+  
+  /* 4 */ @js.native
+  object Inherit extends TopLevel[Inherit with Double]
+  
+  /* 5 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
+  /* 6 */ @js.native
+  object Stretch extends TopLevel[Stretch with Double]
+  
 }
 

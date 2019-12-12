@@ -1,5 +1,9 @@
 package typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.All
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.Children
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.Summary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object GroupAlert extends js.Object {
   @js.native
   sealed trait Summary extends GroupAlert
   
-  /* 0 */ val All: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.All with Double = js.native
-  /* 2 */ val Children: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.Children with Double = js.native
-  /* 1 */ val Summary: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.GroupAlert.Summary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GroupAlert with Double] = js.native
+  /* 0 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 2 */ @js.native
+  object Children extends TopLevel[Children with Double]
+  
+  /* 1 */ @js.native
+  object Summary extends TopLevel[Summary with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.officeDashJs.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Office.MailboxEnums.LocationType.Custom
+import typings.officeDashJs.Office.MailboxEnums.LocationType.Room
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,9 +34,13 @@ object LocationType extends js.Object {
   @js.native
   sealed trait Room extends LocationType
   
-  /* "custom" */ val Custom: typings.officeDashJs.Office.MailboxEnums.LocationType.Custom with String = js.native
-  /* "room" */ val Room: typings.officeDashJs.Office.MailboxEnums.LocationType.Room with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[LocationType with String] = js.native
+  /* "custom" */ @js.native
+  object Custom extends TopLevel[Custom with String]
+  
+  /* "room" */ @js.native
+  object Room extends TopLevel[Room with String]
+  
 }
 

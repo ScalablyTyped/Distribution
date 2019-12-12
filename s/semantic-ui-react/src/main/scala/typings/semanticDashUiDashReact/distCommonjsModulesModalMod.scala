@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalComponent
@@ -18,6 +19,8 @@ object distCommonjsModulesModalMod extends js.Object {
     def this(props: ModalProps, context: js.Any) = this()
   }
   
-  val default: ModalComponent = js.native
+  @js.native
+  object default extends TopLevel[ModalComponent]
+  
 }
 

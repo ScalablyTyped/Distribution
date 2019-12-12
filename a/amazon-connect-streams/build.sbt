@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amazon-connect-streams"
-version := "1.3-dt-20190611Z-4d1bf8"
+version := "1.3-dt-20190611Z-dfa20b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "xlsx"
-version := "0.15.3-c2b7d3"
+version := "0.15.3-7b4e32"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cfb" % "1.1.3-e122e2",
+  "org.scalablytyped" %%% "cfb" % "1.1.3-ded859",
   "org.scalablytyped" %%% "ssf" % "0.10.2-c777a4",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

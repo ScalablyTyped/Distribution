@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScEnvironmentsProvider extends js.Object {
   /**
     * Access to the public methods of the service
     */
   @JSName("$get")
-  def $get(): js.Any
+  def $get(): js.Any = js.native
   /**
     * Get current environment
     * If environment was not previously configured, use default environment
@@ -17,7 +18,7 @@ trait ScEnvironmentsProvider extends js.Object {
     * @public
     * @returns {Object} Current or default environment
     */
-  def getCurrentEnvironment(): Environment
+  def getCurrentEnvironment(): Environment = js.native
   /**
     * Get specific environment
     *
@@ -25,7 +26,7 @@ trait ScEnvironmentsProvider extends js.Object {
     * @param {string} name - Environment name
     * @returns {Object} Specific or default environment
     */
-  def getSpecificEnvironment(name: String): Environment
+  def getSpecificEnvironment(name: String): Environment = js.native
   /**
     * Set current environment
     *
@@ -33,20 +34,6 @@ trait ScEnvironmentsProvider extends js.Object {
     * @param {string|Object} env - Environment name or custom environment object
     * @returns {Object} Named or custom environment
     */
-  def setCurrentEnvironment(env: js.Any): Environment
-}
-
-object ScEnvironmentsProvider {
-  @scala.inline
-  def apply(
-    $get: () => js.Any,
-    getCurrentEnvironment: () => Environment,
-    getSpecificEnvironment: String => Environment,
-    setCurrentEnvironment: js.Any => Environment
-  ): ScEnvironmentsProvider = {
-    val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), getCurrentEnvironment = js.Any.fromFunction0(getCurrentEnvironment), getSpecificEnvironment = js.Any.fromFunction1(getSpecificEnvironment), setCurrentEnvironment = js.Any.fromFunction1(setCurrentEnvironment))
-  
-    __obj.asInstanceOf[ScEnvironmentsProvider]
-  }
+  def setCurrentEnvironment(env: js.Any): Environment = js.native
 }
 

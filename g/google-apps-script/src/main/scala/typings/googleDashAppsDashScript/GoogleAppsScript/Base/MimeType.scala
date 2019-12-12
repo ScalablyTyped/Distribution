@@ -1,5 +1,36 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.BMP
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSV
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.FOLDER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GIF
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_APPS_SCRIPT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DOCS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DRAWINGS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_FORMS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SHEETS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SITES
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SLIDES
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JAVASCRIPT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JPEG
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL_LEGACY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT_LEGACY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD_LEGACY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_GRAPHICS
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_PRESENTATION
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_SPREADSHEET
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PDF
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PLAIN_TEXT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PNG
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.RTF
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.SVG
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.ZIP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,38 +154,101 @@ object MimeType extends js.Object {
   @js.native
   sealed trait ZIP extends MimeType
   
-  /* 8 */ val BMP: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.BMP with Double = js.native
-  /* 14 */ val CSS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSS with Double = js.native
-  /* 15 */ val CSV: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.CSV with Double = js.native
-  /* 7 */ val FOLDER: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.FOLDER with Double = js.native
-  /* 9 */ val GIF: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GIF with Double = js.native
-  /* 0 */ val GOOGLE_APPS_SCRIPT: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_APPS_SCRIPT with Double = js.native
-  /* 2 */ val GOOGLE_DOCS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DOCS with Double = js.native
-  /* 1 */ val GOOGLE_DRAWINGS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_DRAWINGS with Double = js.native
-  /* 3 */ val GOOGLE_FORMS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_FORMS with Double = js.native
-  /* 4 */ val GOOGLE_SHEETS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SHEETS with Double = js.native
-  /* 5 */ val GOOGLE_SITES: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SITES with Double = js.native
-  /* 6 */ val GOOGLE_SLIDES: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.GOOGLE_SLIDES with Double = js.native
-  /* 16 */ val HTML: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.HTML with Double = js.native
-  /* 17 */ val JAVASCRIPT: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JAVASCRIPT with Double = js.native
-  /* 10 */ val JPEG: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.JPEG with Double = js.native
-  /* 24 */ val MICROSOFT_EXCEL: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL with Double = js.native
-  /* 25 */ val MICROSOFT_EXCEL_LEGACY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL_LEGACY with Double = js.native
-  /* 26 */ val MICROSOFT_POWERPOINT: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT with Double = js.native
-  /* 27 */ val MICROSOFT_POWERPOINT_LEGACY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT_LEGACY with Double = js.native
-  /* 28 */ val MICROSOFT_WORD: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD with Double = js.native
-  /* 29 */ val MICROSOFT_WORD_LEGACY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD_LEGACY with Double = js.native
-  /* 20 */ val OPENDOCUMENT_GRAPHICS: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_GRAPHICS with Double = js.native
-  /* 21 */ val OPENDOCUMENT_PRESENTATION: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_PRESENTATION with Double = js.native
-  /* 22 */ val OPENDOCUMENT_SPREADSHEET: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_SPREADSHEET with Double = js.native
-  /* 23 */ val OPENDOCUMENT_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_TEXT with Double = js.native
-  /* 13 */ val PDF: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PDF with Double = js.native
-  /* 18 */ val PLAIN_TEXT: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PLAIN_TEXT with Double = js.native
-  /* 11 */ val PNG: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.PNG with Double = js.native
-  /* 19 */ val RTF: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.RTF with Double = js.native
-  /* 12 */ val SVG: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.SVG with Double = js.native
-  /* 30 */ val ZIP: typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.ZIP with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MimeType with Double] = js.native
+  /* 8 */ @js.native
+  object BMP extends TopLevel[BMP with Double]
+  
+  /* 14 */ @js.native
+  object CSS extends TopLevel[CSS with Double]
+  
+  /* 15 */ @js.native
+  object CSV extends TopLevel[CSV with Double]
+  
+  /* 7 */ @js.native
+  object FOLDER extends TopLevel[FOLDER with Double]
+  
+  /* 9 */ @js.native
+  object GIF extends TopLevel[GIF with Double]
+  
+  /* 0 */ @js.native
+  object GOOGLE_APPS_SCRIPT extends TopLevel[GOOGLE_APPS_SCRIPT with Double]
+  
+  /* 2 */ @js.native
+  object GOOGLE_DOCS extends TopLevel[GOOGLE_DOCS with Double]
+  
+  /* 1 */ @js.native
+  object GOOGLE_DRAWINGS extends TopLevel[GOOGLE_DRAWINGS with Double]
+  
+  /* 3 */ @js.native
+  object GOOGLE_FORMS extends TopLevel[GOOGLE_FORMS with Double]
+  
+  /* 4 */ @js.native
+  object GOOGLE_SHEETS extends TopLevel[GOOGLE_SHEETS with Double]
+  
+  /* 5 */ @js.native
+  object GOOGLE_SITES extends TopLevel[GOOGLE_SITES with Double]
+  
+  /* 6 */ @js.native
+  object GOOGLE_SLIDES extends TopLevel[GOOGLE_SLIDES with Double]
+  
+  /* 16 */ @js.native
+  object HTML
+    extends TopLevel[typings.googleDashAppsDashScript.GoogleAppsScript.Base.MimeType.HTML with Double]
+  
+  /* 17 */ @js.native
+  object JAVASCRIPT extends TopLevel[JAVASCRIPT with Double]
+  
+  /* 10 */ @js.native
+  object JPEG extends TopLevel[JPEG with Double]
+  
+  /* 24 */ @js.native
+  object MICROSOFT_EXCEL extends TopLevel[MICROSOFT_EXCEL with Double]
+  
+  /* 25 */ @js.native
+  object MICROSOFT_EXCEL_LEGACY extends TopLevel[MICROSOFT_EXCEL_LEGACY with Double]
+  
+  /* 26 */ @js.native
+  object MICROSOFT_POWERPOINT extends TopLevel[MICROSOFT_POWERPOINT with Double]
+  
+  /* 27 */ @js.native
+  object MICROSOFT_POWERPOINT_LEGACY extends TopLevel[MICROSOFT_POWERPOINT_LEGACY with Double]
+  
+  /* 28 */ @js.native
+  object MICROSOFT_WORD extends TopLevel[MICROSOFT_WORD with Double]
+  
+  /* 29 */ @js.native
+  object MICROSOFT_WORD_LEGACY extends TopLevel[MICROSOFT_WORD_LEGACY with Double]
+  
+  /* 20 */ @js.native
+  object OPENDOCUMENT_GRAPHICS extends TopLevel[OPENDOCUMENT_GRAPHICS with Double]
+  
+  /* 21 */ @js.native
+  object OPENDOCUMENT_PRESENTATION extends TopLevel[OPENDOCUMENT_PRESENTATION with Double]
+  
+  /* 22 */ @js.native
+  object OPENDOCUMENT_SPREADSHEET extends TopLevel[OPENDOCUMENT_SPREADSHEET with Double]
+  
+  /* 23 */ @js.native
+  object OPENDOCUMENT_TEXT extends TopLevel[OPENDOCUMENT_TEXT with Double]
+  
+  /* 13 */ @js.native
+  object PDF extends TopLevel[PDF with Double]
+  
+  /* 18 */ @js.native
+  object PLAIN_TEXT extends TopLevel[PLAIN_TEXT with Double]
+  
+  /* 11 */ @js.native
+  object PNG extends TopLevel[PNG with Double]
+  
+  /* 19 */ @js.native
+  object RTF extends TopLevel[RTF with Double]
+  
+  /* 12 */ @js.native
+  object SVG extends TopLevel[SVG with Double]
+  
+  /* 30 */ @js.native
+  object ZIP extends TopLevel[ZIP with Double]
+  
 }
 

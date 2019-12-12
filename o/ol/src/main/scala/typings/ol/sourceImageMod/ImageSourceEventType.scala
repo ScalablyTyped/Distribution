@@ -1,5 +1,9 @@
 package typings.ol.sourceImageMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADEND
+import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADERROR
+import typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ImageSourceEventType extends js.Object {
   @js.native
   sealed trait IMAGELOADSTART extends ImageSourceEventType
   
-  /* "imageloadend" */ val IMAGELOADEND: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADEND with String = js.native
-  /* "imageloaderror" */ val IMAGELOADERROR: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADERROR with String = js.native
-  /* "imageloadstart" */ val IMAGELOADSTART: typings.ol.sourceImageMod.ImageSourceEventType.IMAGELOADSTART with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ImageSourceEventType with String] = js.native
+  /* "imageloadend" */ @js.native
+  object IMAGELOADEND extends TopLevel[IMAGELOADEND with String]
+  
+  /* "imageloaderror" */ @js.native
+  object IMAGELOADERROR extends TopLevel[IMAGELOADERROR with String]
+  
+  /* "imageloadstart" */ @js.native
+  object IMAGELOADSTART extends TopLevel[IMAGELOADSTART with String]
+  
 }
 

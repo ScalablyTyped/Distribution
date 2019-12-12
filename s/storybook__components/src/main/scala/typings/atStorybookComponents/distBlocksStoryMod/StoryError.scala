@@ -1,5 +1,7 @@
 package typings.atStorybookComponents.distBlocksStoryMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookComponents.distBlocksStoryMod.StoryError.NO_STORY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,8 +15,10 @@ object StoryError extends js.Object {
   @js.native
   sealed trait NO_STORY extends StoryError
   
-  /* "No component or story to display" */ val NO_STORY: typings.atStorybookComponents.distBlocksStoryMod.StoryError.NO_STORY with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[StoryError with String] = js.native
+  /* "No component or story to display" */ @js.native
+  object NO_STORY extends TopLevel[NO_STORY with String]
+  
 }
 

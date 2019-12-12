@@ -1,7 +1,12 @@
 package typings.rollupDashPluginDashTypescript2
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rollupDashPluginDashTypescript2.distContextMod.IContext
 import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel
+import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Debug
+import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Error
+import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Info
+import typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,12 +51,20 @@ object distContextMod extends js.Object {
     @js.native
     sealed trait Warning extends VerbosityLevel
     
-    /* 3 */ val Debug: typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Debug with Double = js.native
-    /* 0 */ val Error: typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Error with Double = js.native
-    /* 2 */ val Info: typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Info with Double = js.native
-    /* 1 */ val Warning: typings.rollupDashPluginDashTypescript2.distContextMod.VerbosityLevel.Warning with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[VerbosityLevel with Double] = js.native
+    /* 3 */ @js.native
+    object Debug extends TopLevel[Debug with Double]
+    
+    /* 0 */ @js.native
+    object Error extends TopLevel[Error with Double]
+    
+    /* 2 */ @js.native
+    object Info extends TopLevel[Info with Double]
+    
+    /* 1 */ @js.native
+    object Warning extends TopLevel[Warning with Double]
+    
   }
   
 }

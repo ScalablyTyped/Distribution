@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Boolean
+import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Dropdown
+import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Maskedit
+import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Numeric
+import typings.ejDotWebDotAll.ej.TreeGrid.EditingType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +44,30 @@ object EditingType extends js.Object {
   @js.native
   sealed trait String extends EditingType
   
-  /* 1 */ val Boolean: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Boolean with Double = js.native
-  /* 4 */ val DatePicker: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DatePicker with Double = js.native
-  /* 5 */ val DateTimePicker: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DateTimePicker with Double = js.native
-  /* 3 */ val Dropdown: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Dropdown with Double = js.native
-  /* 6 */ val Maskedit: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Maskedit with Double = js.native
-  /* 2 */ val Numeric: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.Numeric with Double = js.native
-  /* 0 */ val String: typings.ejDotWebDotAll.ej.TreeGrid.EditingType.String with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditingType with Double] = js.native
+  /* 1 */ @js.native
+  object Boolean extends TopLevel[Boolean with Double]
+  
+  /* 4 */ @js.native
+  object DatePicker
+    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DatePicker with Double]
+  
+  /* 5 */ @js.native
+  object DateTimePicker
+    extends TopLevel[typings.ejDotWebDotAll.ej.TreeGrid.EditingType.DateTimePicker with Double]
+  
+  /* 3 */ @js.native
+  object Dropdown extends TopLevel[Dropdown with Double]
+  
+  /* 6 */ @js.native
+  object Maskedit extends TopLevel[Maskedit with Double]
+  
+  /* 2 */ @js.native
+  object Numeric extends TopLevel[Numeric with Double]
+  
+  /* 0 */ @js.native
+  object String extends TopLevel[String with Double]
+  
 }
 

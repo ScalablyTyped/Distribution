@@ -1,5 +1,11 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.core.MessageType.Error
+import typings.openui5.sap.ui.core.MessageType.Information
+import typings.openui5.sap.ui.core.MessageType.None
+import typings.openui5.sap.ui.core.MessageType.Success
+import typings.openui5.sap.ui.core.MessageType.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,12 +34,22 @@ object MessageType extends js.Object {
   @js.native
   sealed trait Warning extends MessageType
   
-  /* 0 */ val Error: typings.openui5.sap.ui.core.MessageType.Error with Double = js.native
-  /* 1 */ val Information: typings.openui5.sap.ui.core.MessageType.Information with Double = js.native
-  /* 2 */ val None: typings.openui5.sap.ui.core.MessageType.None with Double = js.native
-  /* 3 */ val Success: typings.openui5.sap.ui.core.MessageType.Success with Double = js.native
-  /* 4 */ val Warning: typings.openui5.sap.ui.core.MessageType.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
+  /* 0 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 1 */ @js.native
+  object Information extends TopLevel[Information with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Success extends TopLevel[Success with Double]
+  
+  /* 4 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

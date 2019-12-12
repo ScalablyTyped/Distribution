@@ -1,5 +1,12 @@
 package typings.htmlDashValidator.htmlDashValidatorMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.gnu
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.html
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.json
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.text
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xhtml
+import typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xml
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +36,25 @@ object ValidationResultsOutputFormats extends js.Object {
   @js.native
   sealed trait xml extends ValidationResultsOutputFormats
   
-  /* "gnu" */ val gnu: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.gnu with String = js.native
-  /* "html" */ val html: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.html with String = js.native
-  /* "json" */ val json: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.json with String = js.native
-  /* "text" */ val text: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.text with String = js.native
-  /* "xhtml" */ val xhtml: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xhtml with String = js.native
-  /* "xml" */ val xml: typings.htmlDashValidator.htmlDashValidatorMod.ValidationResultsOutputFormats.xml with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ValidationResultsOutputFormats with String] = js.native
+  /* "gnu" */ @js.native
+  object gnu extends TopLevel[gnu with String]
+  
+  /* "html" */ @js.native
+  object html extends TopLevel[html with String]
+  
+  /* "json" */ @js.native
+  object json extends TopLevel[json with String]
+  
+  /* "text" */ @js.native
+  object text extends TopLevel[text with String]
+  
+  /* "xhtml" */ @js.native
+  object xhtml extends TopLevel[xhtml with String]
+  
+  /* "xml" */ @js.native
+  object xml extends TopLevel[xml with String]
+  
 }
 

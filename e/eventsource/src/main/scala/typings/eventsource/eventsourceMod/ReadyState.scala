@@ -1,5 +1,9 @@
 package typings.eventsource.eventsourceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.eventsource.eventsourceMod.ReadyState.CLOSED
+import typings.eventsource.eventsourceMod.ReadyState.CONNECTING
+import typings.eventsource.eventsourceMod.ReadyState.OPEN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ReadyState extends js.Object {
   @js.native
   sealed trait OPEN extends ReadyState
   
-  /* 2 */ val CLOSED: typings.eventsource.eventsourceMod.ReadyState.CLOSED with Double = js.native
-  /* 0 */ val CONNECTING: typings.eventsource.eventsourceMod.ReadyState.CONNECTING with Double = js.native
-  /* 1 */ val OPEN: typings.eventsource.eventsourceMod.ReadyState.OPEN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReadyState with Double] = js.native
+  /* 2 */ @js.native
+  object CLOSED extends TopLevel[CLOSED with Double]
+  
+  /* 0 */ @js.native
+  object CONNECTING extends TopLevel[CONNECTING with Double]
+  
+  /* 1 */ @js.native
+  object OPEN extends TopLevel[OPEN with Double]
+  
 }
 

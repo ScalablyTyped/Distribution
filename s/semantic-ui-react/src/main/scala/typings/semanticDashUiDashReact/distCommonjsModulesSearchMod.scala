@@ -1,5 +1,6 @@
 package typings.semanticDashUiDashReact
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchComponent
@@ -18,6 +19,8 @@ object distCommonjsModulesSearchMod extends js.Object {
     def this(props: SearchProps, context: js.Any) = this()
   }
   
-  val default: SearchComponent = js.native
+  @js.native
+  object default extends TopLevel[SearchComponent]
+  
 }
 

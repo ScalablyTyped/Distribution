@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Storage.AccessCache
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput
+import typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly
+import typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.none
+import typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate
+import typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AccessCacheOptions extends js.Object {
   @js.native
   sealed trait useReadOnlyCachedCopy extends AccessCacheOptions
   
-  /* 1 */ val disallowUserInput: typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.disallowUserInput with Double = js.native
-  /* 2 */ val fastLocationsOnly: typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.fastLocationsOnly with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.none with Double = js.native
-  /* 4 */ val suppressAccessTimeUpdate: typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.suppressAccessTimeUpdate with Double = js.native
-  /* 3 */ val useReadOnlyCachedCopy: typings.winrtDashUwp.Windows.Storage.AccessCache.AccessCacheOptions.useReadOnlyCachedCopy with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AccessCacheOptions with Double] = js.native
+  /* 1 */ @js.native
+  object disallowUserInput extends TopLevel[disallowUserInput with Double]
+  
+  /* 2 */ @js.native
+  object fastLocationsOnly extends TopLevel[fastLocationsOnly with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 4 */ @js.native
+  object suppressAccessTimeUpdate extends TopLevel[suppressAccessTimeUpdate with Double]
+  
+  /* 3 */ @js.native
+  object useReadOnlyCachedCopy extends TopLevel[useReadOnlyCachedCopy with Double]
+  
 }
 

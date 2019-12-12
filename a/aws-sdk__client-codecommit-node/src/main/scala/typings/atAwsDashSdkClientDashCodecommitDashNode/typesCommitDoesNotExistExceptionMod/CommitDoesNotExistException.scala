@@ -10,11 +10,11 @@ import typings.atAwsDashSdkClientDashCodecommitDashNode.typesGetMergeConflictsEx
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForComparedCommitExceptionsUnionMod.PostCommentForComparedCommitExceptionsUnion
 import typings.atAwsDashSdkClientDashCodecommitDashNode.typesPostCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import typings.atAwsDashSdkTypes.buildExceptionMod.ServiceException
-import typings.atAwsDashSdkTypes.buildResponseMod.ResponseMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommitDoesNotExistException
   extends ServiceException[_CommitDoesNotExistExceptionDetails]
      with CreateBranchExceptionsUnion
@@ -27,21 +27,6 @@ trait CommitDoesNotExistException
      with PostCommentForComparedCommitExceptionsUnion
      with PostCommentForPullRequestExceptionsUnion {
   @JSName("name")
-  var name_CommitDoesNotExistException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.CommitDoesNotExistException
-}
-
-object CommitDoesNotExistException {
-  @scala.inline
-  def apply(
-    $metadata: ResponseMetadata,
-    details: _CommitDoesNotExistExceptionDetails,
-    message: String,
-    name: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.CommitDoesNotExistException,
-    stack: String = null
-  ): CommitDoesNotExistException = {
-    val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CommitDoesNotExistException]
-  }
+  var name_CommitDoesNotExistException: typings.atAwsDashSdkClientDashCodecommitDashNode.atAwsDashSdkClientDashCodecommitDashNodeStrings.CommitDoesNotExistException = js.native
 }
 

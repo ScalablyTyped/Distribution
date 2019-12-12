@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.SortOrientation.columns
+import typings.officeDashJsDashPreview.Excel.SortOrientation.rows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SortOrientation extends js.Object {
   @js.native
   sealed trait rows extends SortOrientation
   
-  /* "Columns" */ val columns: typings.officeDashJsDashPreview.Excel.SortOrientation.columns with String = js.native
-  /* "Rows" */ val rows: typings.officeDashJsDashPreview.Excel.SortOrientation.rows with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[SortOrientation with String] = js.native
+  /* "Columns" */ @js.native
+  object columns extends TopLevel[columns with String]
+  
+  /* "Rows" */ @js.native
+  object rows extends TopLevel[rows with String]
+  
 }
 

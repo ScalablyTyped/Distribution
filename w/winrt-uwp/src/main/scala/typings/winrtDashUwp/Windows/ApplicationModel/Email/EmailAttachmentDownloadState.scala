@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.downloaded
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.downloading
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.failed
+import typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.notDownloaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object EmailAttachmentDownloadState extends js.Object {
   @js.native
   sealed trait notDownloaded extends EmailAttachmentDownloadState
   
-  /* 2 */ val downloaded: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.downloaded with Double = js.native
-  /* 1 */ val downloading: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.downloading with Double = js.native
-  /* 3 */ val failed: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.failed with Double = js.native
-  /* 0 */ val notDownloaded: typings.winrtDashUwp.Windows.ApplicationModel.Email.EmailAttachmentDownloadState.notDownloaded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EmailAttachmentDownloadState with Double] = js.native
+  /* 2 */ @js.native
+  object downloaded extends TopLevel[downloaded with Double]
+  
+  /* 1 */ @js.native
+  object downloading extends TopLevel[downloading with Double]
+  
+  /* 3 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 0 */ @js.native
+  object notDownloaded extends TopLevel[notDownloaded with Double]
+  
 }
 

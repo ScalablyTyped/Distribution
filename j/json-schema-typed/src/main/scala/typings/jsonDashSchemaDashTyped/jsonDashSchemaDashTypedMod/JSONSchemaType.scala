@@ -1,5 +1,13 @@
 package typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Array
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Boolean
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Integer
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Null
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Number
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Object
+import typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.String
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,14 +60,35 @@ object JSONSchemaType extends js.Object {
   @js.native
   sealed trait String extends JSONSchemaType
   
-  /* "array" */ val Array: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Array with java.lang.String = js.native
-  /* "boolean" */ val Boolean: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Boolean with java.lang.String = js.native
-  /* "integer" */ val Integer: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Integer with java.lang.String = js.native
-  /* "null" */ val Null: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Null with java.lang.String = js.native
-  /* "number" */ val Number: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Number with java.lang.String = js.native
-  /* "object" */ val Object: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.Object with java.lang.String = js.native
-  /* "string" */ val String: typings.jsonDashSchemaDashTyped.jsonDashSchemaDashTypedMod.JSONSchemaType.String with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[JSONSchemaType with java.lang.String] = js.native
+  /* "array" */ @js.native
+  object Array
+    extends TopLevel[Array with java.lang.String]
+  
+  /* "boolean" */ @js.native
+  object Boolean
+    extends TopLevel[Boolean with java.lang.String]
+  
+  /* "integer" */ @js.native
+  object Integer
+    extends TopLevel[Integer with java.lang.String]
+  
+  /* "null" */ @js.native
+  object Null
+    extends TopLevel[Null with java.lang.String]
+  
+  /* "number" */ @js.native
+  object Number
+    extends TopLevel[Number with java.lang.String]
+  
+  /* "object" */ @js.native
+  object Object
+    extends TopLevel[Object with java.lang.String]
+  
+  /* "string" */ @js.native
+  object String
+    extends TopLevel[String with java.lang.String]
+  
 }
 

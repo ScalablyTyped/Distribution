@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Scale
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,13 +61,31 @@ object ScaleModes extends js.Object {
   sealed trait WIDTH_CONTROLS_HEIGHT
     extends typings.phaser.Phaser.Scale.ScaleModes
   
-  /* 4 */ val ENVELOP: typings.phaser.Phaser.Scale.ScaleModes.ENVELOP with Double = js.native
-  /* 3 */ val FIT: typings.phaser.Phaser.Scale.ScaleModes.FIT with Double = js.native
-  /* 2 */ val HEIGHT_CONTROLS_WIDTH: typings.phaser.Phaser.Scale.ScaleModes.HEIGHT_CONTROLS_WIDTH with Double = js.native
-  /* 0 */ val NONE: typings.phaser.Phaser.Scale.ScaleModes.NONE with Double = js.native
-  /* 5 */ val RESIZE: typings.phaser.Phaser.Scale.ScaleModes.RESIZE with Double = js.native
-  /* 1 */ val WIDTH_CONTROLS_HEIGHT: typings.phaser.Phaser.Scale.ScaleModes.WIDTH_CONTROLS_HEIGHT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.ScaleModes with Double] = js.native
+  /* 4 */ @js.native
+  object ENVELOP
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.ENVELOP with Double]
+  
+  /* 3 */ @js.native
+  object FIT
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.FIT with Double]
+  
+  /* 2 */ @js.native
+  object HEIGHT_CONTROLS_WIDTH
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.HEIGHT_CONTROLS_WIDTH with Double]
+  
+  /* 0 */ @js.native
+  object NONE
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.NONE with Double]
+  
+  /* 5 */ @js.native
+  object RESIZE
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.RESIZE with Double]
+  
+  /* 1 */ @js.native
+  object WIDTH_CONTROLS_HEIGHT
+    extends TopLevel[typings.phaser.Phaser.Scale.ScaleModes.WIDTH_CONTROLS_HEIGHT with Double]
+  
 }
 

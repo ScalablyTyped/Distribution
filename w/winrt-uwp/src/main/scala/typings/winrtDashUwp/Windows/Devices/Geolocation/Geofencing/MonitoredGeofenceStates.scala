@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.entered
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.exited
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.none
+import typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.removed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object MonitoredGeofenceStates extends js.Object {
   @js.native
   sealed trait removed extends MonitoredGeofenceStates
   
-  /* 1 */ val entered: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.entered with Double = js.native
-  /* 2 */ val exited: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.exited with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.none with Double = js.native
-  /* 3 */ val removed: typings.winrtDashUwp.Windows.Devices.Geolocation.Geofencing.MonitoredGeofenceStates.removed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MonitoredGeofenceStates with Double] = js.native
+  /* 1 */ @js.native
+  object entered extends TopLevel[entered with Double]
+  
+  /* 2 */ @js.native
+  object exited extends TopLevel[exited with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object removed extends TopLevel[removed with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.atsc
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.scte20
+import typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object NDClosedCaptionFormat extends js.Object {
   @js.native
   sealed trait unknown extends NDClosedCaptionFormat
   
-  /* 0 */ val atsc: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.atsc with Double = js.native
-  /* 1 */ val scte20: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.scte20 with Double = js.native
-  /* 2 */ val unknown: typings.winrtDashUwp.Windows.Media.Protection.PlayReady.NDClosedCaptionFormat.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NDClosedCaptionFormat with Double] = js.native
+  /* 0 */ @js.native
+  object atsc extends TopLevel[atsc with Double]
+  
+  /* 1 */ @js.native
+  object scte20 extends TopLevel[scte20 with Double]
+  
+  /* 2 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

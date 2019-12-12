@@ -1,5 +1,12 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Utilities
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_1
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_256
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384
+import typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,15 +44,27 @@ object DigestAlgorithm extends js.Object {
   sealed trait SHA_512
     extends typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm
   
-  /* 0 */ val MD2: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD2 with Double = js.native
-  /* 1 */ val MD5: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.MD5 with Double = js.native
-  /* 2 */ val SHA_1: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_1 with Double = js.native
-  /* 3 */ val SHA_256: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_256 with Double = js.native
-  /* 4 */ val SHA_384: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_384 with Double = js.native
-  /* 5 */ val SHA_512: typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm.SHA_512 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
     typings.googleDashAppsDashScript.GoogleAppsScript.Utilities.DigestAlgorithm with Double
   ] = js.native
+  /* 0 */ @js.native
+  object MD2 extends TopLevel[MD2 with Double]
+  
+  /* 1 */ @js.native
+  object MD5 extends TopLevel[MD5 with Double]
+  
+  /* 2 */ @js.native
+  object SHA_1 extends TopLevel[SHA_1 with Double]
+  
+  /* 3 */ @js.native
+  object SHA_256 extends TopLevel[SHA_256 with Double]
+  
+  /* 4 */ @js.native
+  object SHA_384 extends TopLevel[SHA_384 with Double]
+  
+  /* 5 */ @js.native
+  object SHA_512 extends TopLevel[SHA_512 with Double]
+  
 }
 

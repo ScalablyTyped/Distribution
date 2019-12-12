@@ -1,5 +1,10 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.BarDesign.Auto
+import typings.openui5.sap.m.BarDesign.Footer
+import typings.openui5.sap.m.BarDesign.Header
+import typings.openui5.sap.m.BarDesign.SubHeader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,11 +30,19 @@ object BarDesign extends js.Object {
   @js.native
   sealed trait SubHeader extends BarDesign
   
-  /* 0 */ val Auto: typings.openui5.sap.m.BarDesign.Auto with Double = js.native
-  /* 1 */ val Footer: typings.openui5.sap.m.BarDesign.Footer with Double = js.native
-  /* 2 */ val Header: typings.openui5.sap.m.BarDesign.Header with Double = js.native
-  /* 3 */ val SubHeader: typings.openui5.sap.m.BarDesign.SubHeader with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BarDesign with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object Footer extends TopLevel[Footer with Double]
+  
+  /* 2 */ @js.native
+  object Header extends TopLevel[Header with Double]
+  
+  /* 3 */ @js.native
+  object SubHeader extends TopLevel[SubHeader with Double]
+  
 }
 

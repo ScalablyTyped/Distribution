@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.Any
+import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.File
+import typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.Folder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ContainerItemType extends js.Object {
   @js.native
   sealed trait Folder extends ContainerItemType
   
-  /* 0 */ val Any: typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.Any with Double = js.native
-  /* 2 */ val File: typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.File with Double = js.native
-  /* 1 */ val Folder: typings.vsoDashNodeDashApi.interfacesFileContainerInterfacesMod.ContainerItemType.Folder with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContainerItemType with Double] = js.native
+  /* 0 */ @js.native
+  object Any extends TopLevel[Any with Double]
+  
+  /* 2 */ @js.native
+  object File extends TopLevel[File with Double]
+  
+  /* 1 */ @js.native
+  object Folder extends TopLevel[Folder with Double]
+  
 }
 

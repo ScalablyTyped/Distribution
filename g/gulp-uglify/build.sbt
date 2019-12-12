@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-uglify"
-version := "3.0-dt-20191126Z-bc7e92"
+version := "3.0-dt-20191126Z-600ec2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c659dd")
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

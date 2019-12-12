@@ -1,7 +1,7 @@
 package typings.reactDashSelect.srcComponentsMultiValueMod
 
 import typings.react.reactMod.Component
-import typings.reactDashSelect.Anon_ChildrenReactNode
+import typings.reactDashSelect.Anon_Children
 import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ class MultiValueRemove[OptionType /* <: OptionTypeBase */] ()
 @JSImport("react-select/src/components/MultiValue", "MultiValueRemove")
 @js.native
 object MultiValueRemove extends js.Object {
-  var defaultProps: Anon_ChildrenReactNode = js.native
+  var defaultProps: Anon_Children = js.native
 }
 

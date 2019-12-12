@@ -1,5 +1,9 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.JsGrid.SortMode.Ascending
+import typings.sharepoint.SP.JsGrid.SortMode.Descending
+import typings.sharepoint.SP.JsGrid.SortMode.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,10 +25,16 @@ object SortMode extends js.Object {
   @js.native
   sealed trait None extends SortMode
   
-  /* 0 */ val Ascending: typings.sharepoint.SP.JsGrid.SortMode.Ascending with Double = js.native
-  /* 1 */ val Descending: typings.sharepoint.SP.JsGrid.SortMode.Descending with Double = js.native
-  /* 2 */ val None: typings.sharepoint.SP.JsGrid.SortMode.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SortMode with Double] = js.native
+  /* 0 */ @js.native
+  object Ascending extends TopLevel[Ascending with Double]
+  
+  /* 1 */ @js.native
+  object Descending extends TopLevel[Descending with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

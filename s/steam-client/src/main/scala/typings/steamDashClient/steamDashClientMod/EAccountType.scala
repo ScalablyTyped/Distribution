@@ -1,5 +1,18 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EAccountType.AnonGameServer
+import typings.steamDashClient.steamDashClientMod.EAccountType.AnonUser
+import typings.steamDashClient.steamDashClientMod.EAccountType.Chat
+import typings.steamDashClient.steamDashClientMod.EAccountType.Clan
+import typings.steamDashClient.steamDashClientMod.EAccountType.ConsoleUser
+import typings.steamDashClient.steamDashClientMod.EAccountType.ContentServer
+import typings.steamDashClient.steamDashClientMod.EAccountType.GameServer
+import typings.steamDashClient.steamDashClientMod.EAccountType.Individual
+import typings.steamDashClient.steamDashClientMod.EAccountType.Invalid
+import typings.steamDashClient.steamDashClientMod.EAccountType.Max
+import typings.steamDashClient.steamDashClientMod.EAccountType.Multiseat
+import typings.steamDashClient.steamDashClientMod.EAccountType.Pending
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object EAccountType extends js.Object {
   @js.native
   sealed trait Pending extends EAccountType
   
-  /* 4 */ val AnonGameServer: typings.steamDashClient.steamDashClientMod.EAccountType.AnonGameServer with Double = js.native
-  /* 10 */ val AnonUser: typings.steamDashClient.steamDashClientMod.EAccountType.AnonUser with Double = js.native
-  /* 8 */ val Chat: typings.steamDashClient.steamDashClientMod.EAccountType.Chat with Double = js.native
-  /* 7 */ val Clan: typings.steamDashClient.steamDashClientMod.EAccountType.Clan with Double = js.native
-  /* 9 */ val ConsoleUser: typings.steamDashClient.steamDashClientMod.EAccountType.ConsoleUser with Double = js.native
-  /* 6 */ val ContentServer: typings.steamDashClient.steamDashClientMod.EAccountType.ContentServer with Double = js.native
-  /* 3 */ val GameServer: typings.steamDashClient.steamDashClientMod.EAccountType.GameServer with Double = js.native
-  /* 1 */ val Individual: typings.steamDashClient.steamDashClientMod.EAccountType.Individual with Double = js.native
-  /* 0 */ val Invalid: typings.steamDashClient.steamDashClientMod.EAccountType.Invalid with Double = js.native
-  /* 11 */ val Max: typings.steamDashClient.steamDashClientMod.EAccountType.Max with Double = js.native
-  /* 2 */ val Multiseat: typings.steamDashClient.steamDashClientMod.EAccountType.Multiseat with Double = js.native
-  /* 5 */ val Pending: typings.steamDashClient.steamDashClientMod.EAccountType.Pending with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EAccountType with Double] = js.native
+  /* 4 */ @js.native
+  object AnonGameServer extends TopLevel[AnonGameServer with Double]
+  
+  /* 10 */ @js.native
+  object AnonUser extends TopLevel[AnonUser with Double]
+  
+  /* 8 */ @js.native
+  object Chat extends TopLevel[Chat with Double]
+  
+  /* 7 */ @js.native
+  object Clan extends TopLevel[Clan with Double]
+  
+  /* 9 */ @js.native
+  object ConsoleUser extends TopLevel[ConsoleUser with Double]
+  
+  /* 6 */ @js.native
+  object ContentServer extends TopLevel[ContentServer with Double]
+  
+  /* 3 */ @js.native
+  object GameServer extends TopLevel[GameServer with Double]
+  
+  /* 1 */ @js.native
+  object Individual extends TopLevel[Individual with Double]
+  
+  /* 0 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 11 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 2 */ @js.native
+  object Multiseat extends TopLevel[Multiseat with Double]
+  
+  /* 5 */ @js.native
+  object Pending extends TopLevel[Pending with Double]
+  
 }
 

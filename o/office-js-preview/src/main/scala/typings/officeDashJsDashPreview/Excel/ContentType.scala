@@ -1,5 +1,8 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ContentType.mention
+import typings.officeDashJsDashPreview.Excel.ContentType.plain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,9 +32,13 @@ object ContentType extends js.Object {
   @js.native
   sealed trait plain extends ContentType
   
-  /* "Mention" */ val mention: typings.officeDashJsDashPreview.Excel.ContentType.mention with String = js.native
-  /* "Plain" */ val plain: typings.officeDashJsDashPreview.Excel.ContentType.plain with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ContentType with String] = js.native
+  /* "Mention" */ @js.native
+  object mention extends TopLevel[mention with String]
+  
+  /* "Plain" */ @js.native
+  object plain extends TopLevel[plain with String]
+  
 }
 

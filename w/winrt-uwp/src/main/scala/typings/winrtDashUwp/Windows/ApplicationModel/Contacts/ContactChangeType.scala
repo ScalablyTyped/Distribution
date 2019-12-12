@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.changeTrackingLost
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.created
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.deleted
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.modified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ContactChangeType extends js.Object {
   @js.native
   sealed trait modified extends ContactChangeType
   
-  /* 3 */ val changeTrackingLost: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.changeTrackingLost with Double = js.native
-  /* 0 */ val created: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.created with Double = js.native
-  /* 2 */ val deleted: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.deleted with Double = js.native
-  /* 1 */ val modified: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactChangeType.modified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactChangeType with Double] = js.native
+  /* 3 */ @js.native
+  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
+  
+  /* 0 */ @js.native
+  object created extends TopLevel[created with Double]
+  
+  /* 2 */ @js.native
+  object deleted extends TopLevel[deleted with Double]
+  
+  /* 1 */ @js.native
+  object modified extends TopLevel[modified with Double]
+  
 }
 

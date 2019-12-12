@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.All
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Fields
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Links
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.None
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Relations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object WorkItemExpand extends js.Object {
   @js.native
   sealed trait Relations extends WorkItemExpand
   
-  /* 4 */ val All: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.All with Double = js.native
-  /* 2 */ val Fields: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Fields with Double = js.native
-  /* 3 */ val Links: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Links with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.None with Double = js.native
-  /* 1 */ val Relations: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.WorkItemExpand.Relations with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WorkItemExpand with Double] = js.native
+  /* 4 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 2 */ @js.native
+  object Fields extends TopLevel[Fields with Double]
+  
+  /* 3 */ @js.native
+  object Links extends TopLevel[Links with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Relations extends TopLevel[Relations with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Allow
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Completed
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Disallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object AcquisitionOperationState extends js.Object {
   @js.native
   sealed trait Disallow extends AcquisitionOperationState
   
-  /* 1 */ val Allow: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Allow with Double = js.native
-  /* 3 */ val Completed: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Completed with Double = js.native
-  /* 0 */ val Disallow: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.AcquisitionOperationState.Disallow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AcquisitionOperationState with Double] = js.native
+  /* 1 */ @js.native
+  object Allow extends TopLevel[Allow with Double]
+  
+  /* 3 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 0 */ @js.native
+  object Disallow extends TopLevel[Disallow with Double]
+  
 }
 

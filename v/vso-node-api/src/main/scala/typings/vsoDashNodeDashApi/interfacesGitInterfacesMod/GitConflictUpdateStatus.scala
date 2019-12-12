@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.BadRequest
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.InvalidResolution
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.NotFound
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.Succeeded
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.UnsupportedConflictType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object GitConflictUpdateStatus extends js.Object {
   @js.native
   sealed trait UnsupportedConflictType extends GitConflictUpdateStatus
   
-  /* 1 */ val BadRequest: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.BadRequest with Double = js.native
-  /* 2 */ val InvalidResolution: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.InvalidResolution with Double = js.native
-  /* 4 */ val NotFound: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.NotFound with Double = js.native
-  /* 0 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.Succeeded with Double = js.native
-  /* 3 */ val UnsupportedConflictType: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitConflictUpdateStatus.UnsupportedConflictType with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitConflictUpdateStatus with Double] = js.native
+  /* 1 */ @js.native
+  object BadRequest extends TopLevel[BadRequest with Double]
+  
+  /* 2 */ @js.native
+  object InvalidResolution extends TopLevel[InvalidResolution with Double]
+  
+  /* 4 */ @js.native
+  object NotFound extends TopLevel[NotFound with Double]
+  
+  /* 0 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 3 */ @js.native
+  object UnsupportedConflictType extends TopLevel[UnsupportedConflictType with Double]
+  
 }
 

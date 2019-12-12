@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.BeginEditAction.Click
+import typings.ejDotWebDotAll.ej.TreeGrid.BeginEditAction.DblClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object BeginEditAction extends js.Object {
   @js.native
   sealed trait DblClick extends BeginEditAction
   
-  /* 1 */ val Click: typings.ejDotWebDotAll.ej.TreeGrid.BeginEditAction.Click with Double = js.native
-  /* 0 */ val DblClick: typings.ejDotWebDotAll.ej.TreeGrid.BeginEditAction.DblClick with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BeginEditAction with Double] = js.native
+  /* 1 */ @js.native
+  object Click extends TopLevel[Click with Double]
+  
+  /* 0 */ @js.native
+  object DblClick extends TopLevel[DblClick with Double]
+  
 }
 

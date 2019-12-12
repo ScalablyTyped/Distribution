@@ -1,5 +1,9 @@
 package typings.expo.buildARMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildARMod.PlaneDetection.Horizontal
+import typings.expo.buildARMod.PlaneDetection.None
+import typings.expo.buildARMod.PlaneDetection.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object PlaneDetection extends js.Object {
   @js.native
   sealed trait Vertical extends PlaneDetection
   
-  /* "horizontal" */ val Horizontal: typings.expo.buildARMod.PlaneDetection.Horizontal with String = js.native
-  /* "none" */ val None: typings.expo.buildARMod.PlaneDetection.None with String = js.native
-  /* "vertical" */ val Vertical: typings.expo.buildARMod.PlaneDetection.Vertical with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PlaneDetection with String] = js.native
+  /* "horizontal" */ @js.native
+  object Horizontal extends TopLevel[Horizontal with String]
+  
+  /* "none" */ @js.native
+  object None extends TopLevel[None with String]
+  
+  /* "vertical" */ @js.native
+  object Vertical extends TopLevel[Vertical with String]
+  
 }
 

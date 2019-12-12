@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Store
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.alreadyPurchased
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notFulfilled
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notPurchased
+import typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object ProductPurchaseStatus extends js.Object {
   @js.native
   sealed trait succeeded extends ProductPurchaseStatus
   
-  /* 1 */ val alreadyPurchased: typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.alreadyPurchased with Double = js.native
-  /* 2 */ val notFulfilled: typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notFulfilled with Double = js.native
-  /* 3 */ val notPurchased: typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.notPurchased with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.ApplicationModel.Store.ProductPurchaseStatus.succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProductPurchaseStatus with Double] = js.native
+  /* 1 */ @js.native
+  object alreadyPurchased extends TopLevel[alreadyPurchased with Double]
+  
+  /* 2 */ @js.native
+  object notFulfilled extends TopLevel[notFulfilled with Double]
+  
+  /* 3 */ @js.native
+  object notPurchased extends TopLevel[notPurchased with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.deprecate
+import typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.remove
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object DeprecationType extends js.Object {
   @js.native
   sealed trait remove extends DeprecationType
   
-  /* 0 */ val deprecate: typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.deprecate with Double = js.native
-  /* 1 */ val remove: typings.winrtDashUwp.Windows.Foundation.Metadata.DeprecationType.remove with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeprecationType with Double] = js.native
+  /* 0 */ @js.native
+  object deprecate extends TopLevel[deprecate with Double]
+  
+  /* 1 */ @js.native
+  object remove extends TopLevel[remove with Double]
+  
 }
 

@@ -1,5 +1,15 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux32
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Linux64
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Max
+import typings.steamDashClient.steamDashClientMod.EPlatformType.OSX
+import typings.steamDashClient.steamDashClientMod.EPlatformType.PS3
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Unknown
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Win32
+import typings.steamDashClient.steamDashClientMod.EPlatformType.Win64
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,16 +48,34 @@ object EPlatformType extends js.Object {
   @js.native
   sealed trait Win64 extends EPlatformType
   
-  /* 3 */ val Linux: typings.steamDashClient.steamDashClientMod.EPlatformType.Linux with Double = js.native
-  /* 6 */ val Linux32: typings.steamDashClient.steamDashClientMod.EPlatformType.Linux32 with Double = js.native
-  /* 3 */ val Linux64: typings.steamDashClient.steamDashClientMod.EPlatformType.Linux64 with Double = js.native
-  /* 6 */ val Max: typings.steamDashClient.steamDashClientMod.EPlatformType.Max with Double = js.native
-  /* 4 */ val OSX: typings.steamDashClient.steamDashClientMod.EPlatformType.OSX with Double = js.native
-  /* 5 */ val PS3: typings.steamDashClient.steamDashClientMod.EPlatformType.PS3 with Double = js.native
-  /* 0 */ val Unknown: typings.steamDashClient.steamDashClientMod.EPlatformType.Unknown with Double = js.native
-  /* 1 */ val Win32: typings.steamDashClient.steamDashClientMod.EPlatformType.Win32 with Double = js.native
-  /* 2 */ val Win64: typings.steamDashClient.steamDashClientMod.EPlatformType.Win64 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EPlatformType with Double] = js.native
+  /* 3 */ @js.native
+  object Linux extends TopLevel[Linux with Double]
+  
+  /* 6 */ @js.native
+  object Linux32 extends TopLevel[Linux32 with Double]
+  
+  /* 3 */ @js.native
+  object Linux64 extends TopLevel[Linux64 with Double]
+  
+  /* 6 */ @js.native
+  object Max extends TopLevel[Max with Double]
+  
+  /* 4 */ @js.native
+  object OSX extends TopLevel[OSX with Double]
+  
+  /* 5 */ @js.native
+  object PS3 extends TopLevel[PS3 with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 1 */ @js.native
+  object Win32 extends TopLevel[Win32 with Double]
+  
+  /* 2 */ @js.native
+  object Win64 extends TopLevel[Win64 with Double]
+  
 }
 

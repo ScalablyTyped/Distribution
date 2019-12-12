@@ -1,5 +1,6 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
 import typings.winrtDashUwp.Windows.Foundation.Collections.IVector
 import typings.winrtDashUwp.Windows.Foundation.Numerics.Vector2
 import typings.winrtDashUwp.Windows.Foundation.Numerics.Vector3
@@ -13,6 +14,9 @@ import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameExposureControl
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashCapabilities
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashControl
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode
+import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.disable
+import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.enable
+import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.global
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFocusCapabilities
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFocusControl
 import typings.winrtDashUwp.Windows.Media.Devices.Core.FrameIsoSpeedCapabilities
@@ -272,11 +276,17 @@ object Core extends js.Object {
     @js.native
     sealed trait global extends FrameFlashMode
     
-    /* 0 */ val disable: typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.disable with Double = js.native
-    /* 1 */ val enable: typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.enable with Double = js.native
-    /* 2 */ val global: typings.winrtDashUwp.Windows.Media.Devices.Core.FrameFlashMode.global with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[FrameFlashMode with Double] = js.native
+    /* 0 */ @js.native
+    object disable extends TopLevel[disable with Double]
+    
+    /* 1 */ @js.native
+    object enable extends TopLevel[enable with Double]
+    
+    /* 2 */ @js.native
+    object global extends TopLevel[global with Double]
+    
   }
   
 }

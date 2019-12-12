@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Ribbon
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.None
+import typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.ToolBar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +25,17 @@ object QuickAccessMode extends js.Object {
   @js.native
   sealed trait ToolBar extends QuickAccessMode
   
-  /* 2 */ val Menu: typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.Menu with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.None with Double = js.native
-  /* 1 */ val ToolBar: typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.ToolBar with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[QuickAccessMode with Double] = js.native
+  /* 2 */ @js.native
+  object Menu
+    extends TopLevel[typings.ejDotWebDotAll.ej.Ribbon.QuickAccessMode.Menu with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object ToolBar extends TopLevel[ToolBar with Double]
+  
 }
 

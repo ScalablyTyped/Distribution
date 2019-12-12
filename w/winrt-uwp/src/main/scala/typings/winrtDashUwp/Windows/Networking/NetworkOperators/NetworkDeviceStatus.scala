@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.accountNotActivated
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.badSim
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceBlocked
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceHardwareFailure
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceLocked
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceNotReady
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceReady
+import typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.simNotInserted
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object NetworkDeviceStatus extends js.Object {
   @js.native
   sealed trait simNotInserted extends NetworkDeviceStatus
   
-  /* 5 */ val accountNotActivated: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.accountNotActivated with Double = js.native
-  /* 3 */ val badSim: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.badSim with Double = js.native
-  /* 7 */ val deviceBlocked: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceBlocked with Double = js.native
-  /* 4 */ val deviceHardwareFailure: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceHardwareFailure with Double = js.native
-  /* 6 */ val deviceLocked: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceLocked with Double = js.native
-  /* 0 */ val deviceNotReady: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceNotReady with Double = js.native
-  /* 1 */ val deviceReady: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.deviceReady with Double = js.native
-  /* 2 */ val simNotInserted: typings.winrtDashUwp.Windows.Networking.NetworkOperators.NetworkDeviceStatus.simNotInserted with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NetworkDeviceStatus with Double] = js.native
+  /* 5 */ @js.native
+  object accountNotActivated extends TopLevel[accountNotActivated with Double]
+  
+  /* 3 */ @js.native
+  object badSim extends TopLevel[badSim with Double]
+  
+  /* 7 */ @js.native
+  object deviceBlocked extends TopLevel[deviceBlocked with Double]
+  
+  /* 4 */ @js.native
+  object deviceHardwareFailure extends TopLevel[deviceHardwareFailure with Double]
+  
+  /* 6 */ @js.native
+  object deviceLocked extends TopLevel[deviceLocked with Double]
+  
+  /* 0 */ @js.native
+  object deviceNotReady extends TopLevel[deviceNotReady with Double]
+  
+  /* 1 */ @js.native
+  object deviceReady extends TopLevel[deviceReady with Double]
+  
+  /* 2 */ @js.native
+  object simNotInserted extends TopLevel[simNotInserted with Double]
+  
 }
 

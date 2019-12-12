@@ -1,5 +1,22 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.AllAttributes
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.ExcludeNonValidated
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeAssetUri
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeCategoryAndTags
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeFiles
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeInstallationTargets
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeLatestVersionOnly
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeLcids
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeMetadata
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeMinimalPayloadForVsIde
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeSharedAccounts
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeStatistics
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeVersionProperties
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeVersions
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.UseFallbackAssetUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -106,23 +123,55 @@ object ExtensionQueryFlags extends js.Object {
   @js.native
   sealed trait UseFallbackAssetUri extends ExtensionQueryFlags
   
-  /* 479 */ val AllAttributes: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.AllAttributes with Double = js.native
-  /* 32 */ val ExcludeNonValidated: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.ExcludeNonValidated with Double = js.native
-  /* 128 */ val IncludeAssetUri: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeAssetUri with Double = js.native
-  /* 4 */ val IncludeCategoryAndTags: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeCategoryAndTags with Double = js.native
-  /* 2 */ val IncludeFiles: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeFiles with Double = js.native
-  /* 64 */ val IncludeInstallationTargets: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeInstallationTargets with Double = js.native
-  /* 512 */ val IncludeLatestVersionOnly: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeLatestVersionOnly with Double = js.native
-  /* 8192 */ val IncludeLcids: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeLcids with Double = js.native
-  /* 2048 */ val IncludeMetadata: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeMetadata with Double = js.native
-  /* 4096 */ val IncludeMinimalPayloadForVsIde: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeMinimalPayloadForVsIde with Double = js.native
-  /* 8 */ val IncludeSharedAccounts: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeSharedAccounts with Double = js.native
-  /* 256 */ val IncludeStatistics: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeStatistics with Double = js.native
-  /* 16 */ val IncludeVersionProperties: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeVersionProperties with Double = js.native
-  /* 1 */ val IncludeVersions: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.IncludeVersions with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.None with Double = js.native
-  /* 1024 */ val UseFallbackAssetUri: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionQueryFlags.UseFallbackAssetUri with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionQueryFlags with Double] = js.native
+  /* 479 */ @js.native
+  object AllAttributes extends TopLevel[AllAttributes with Double]
+  
+  /* 32 */ @js.native
+  object ExcludeNonValidated extends TopLevel[ExcludeNonValidated with Double]
+  
+  /* 128 */ @js.native
+  object IncludeAssetUri extends TopLevel[IncludeAssetUri with Double]
+  
+  /* 4 */ @js.native
+  object IncludeCategoryAndTags extends TopLevel[IncludeCategoryAndTags with Double]
+  
+  /* 2 */ @js.native
+  object IncludeFiles extends TopLevel[IncludeFiles with Double]
+  
+  /* 64 */ @js.native
+  object IncludeInstallationTargets extends TopLevel[IncludeInstallationTargets with Double]
+  
+  /* 512 */ @js.native
+  object IncludeLatestVersionOnly extends TopLevel[IncludeLatestVersionOnly with Double]
+  
+  /* 8192 */ @js.native
+  object IncludeLcids extends TopLevel[IncludeLcids with Double]
+  
+  /* 2048 */ @js.native
+  object IncludeMetadata extends TopLevel[IncludeMetadata with Double]
+  
+  /* 4096 */ @js.native
+  object IncludeMinimalPayloadForVsIde extends TopLevel[IncludeMinimalPayloadForVsIde with Double]
+  
+  /* 8 */ @js.native
+  object IncludeSharedAccounts extends TopLevel[IncludeSharedAccounts with Double]
+  
+  /* 256 */ @js.native
+  object IncludeStatistics extends TopLevel[IncludeStatistics with Double]
+  
+  /* 16 */ @js.native
+  object IncludeVersionProperties extends TopLevel[IncludeVersionProperties with Double]
+  
+  /* 1 */ @js.native
+  object IncludeVersions extends TopLevel[IncludeVersions with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1024 */ @js.native
+  object UseFallbackAssetUri extends TopLevel[UseFallbackAssetUri with Double]
+  
 }
 

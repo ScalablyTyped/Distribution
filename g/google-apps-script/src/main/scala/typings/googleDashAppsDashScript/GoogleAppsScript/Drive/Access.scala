@@ -1,5 +1,11 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Drive
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE_WITH_LINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN_WITH_LINK
+import typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.PRIVATE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,12 +40,22 @@ object Access extends js.Object {
   @js.native
   sealed trait PRIVATE extends Access
   
-  /* 0 */ val ANYONE: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE with Double = js.native
-  /* 1 */ val ANYONE_WITH_LINK: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.ANYONE_WITH_LINK with Double = js.native
-  /* 2 */ val DOMAIN: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN with Double = js.native
-  /* 3 */ val DOMAIN_WITH_LINK: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.DOMAIN_WITH_LINK with Double = js.native
-  /* 4 */ val PRIVATE: typings.googleDashAppsDashScript.GoogleAppsScript.Drive.Access.PRIVATE with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Access with Double] = js.native
+  /* 0 */ @js.native
+  object ANYONE extends TopLevel[ANYONE with Double]
+  
+  /* 1 */ @js.native
+  object ANYONE_WITH_LINK extends TopLevel[ANYONE_WITH_LINK with Double]
+  
+  /* 2 */ @js.native
+  object DOMAIN extends TopLevel[DOMAIN with Double]
+  
+  /* 3 */ @js.native
+  object DOMAIN_WITH_LINK extends TopLevel[DOMAIN_WITH_LINK with Double]
+  
+  /* 4 */ @js.native
+  object PRIVATE extends TopLevel[PRIVATE with Double]
+  
 }
 

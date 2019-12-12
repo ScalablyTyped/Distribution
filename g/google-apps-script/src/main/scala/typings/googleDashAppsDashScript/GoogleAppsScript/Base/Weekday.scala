@@ -1,5 +1,13 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Base
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.FRIDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.MONDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SATURDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SUNDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.THURSDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.TUESDAY
+import typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.WEDNESDAY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object Weekday extends js.Object {
   @js.native
   sealed trait WEDNESDAY extends Weekday
   
-  /* 5 */ val FRIDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.FRIDAY with Double = js.native
-  /* 1 */ val MONDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.MONDAY with Double = js.native
-  /* 6 */ val SATURDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SATURDAY with Double = js.native
-  /* 0 */ val SUNDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.SUNDAY with Double = js.native
-  /* 4 */ val THURSDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.THURSDAY with Double = js.native
-  /* 2 */ val TUESDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.TUESDAY with Double = js.native
-  /* 3 */ val WEDNESDAY: typings.googleDashAppsDashScript.GoogleAppsScript.Base.Weekday.WEDNESDAY with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Weekday with Double] = js.native
+  /* 5 */ @js.native
+  object FRIDAY extends TopLevel[FRIDAY with Double]
+  
+  /* 1 */ @js.native
+  object MONDAY extends TopLevel[MONDAY with Double]
+  
+  /* 6 */ @js.native
+  object SATURDAY extends TopLevel[SATURDAY with Double]
+  
+  /* 0 */ @js.native
+  object SUNDAY extends TopLevel[SUNDAY with Double]
+  
+  /* 4 */ @js.native
+  object THURSDAY extends TopLevel[THURSDAY with Double]
+  
+  /* 2 */ @js.native
+  object TUESDAY extends TopLevel[TUESDAY with Double]
+  
+  /* 3 */ @js.native
+  object WEDNESDAY extends TopLevel[WEDNESDAY with Double]
+  
 }
 

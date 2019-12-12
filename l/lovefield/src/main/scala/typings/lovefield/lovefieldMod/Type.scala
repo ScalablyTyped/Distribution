@@ -1,5 +1,13 @@
 package typings.lovefield.lovefieldMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.lovefield.lovefieldMod.Type.ARRAY_BUFFER
+import typings.lovefield.lovefieldMod.Type.BOOLEAN
+import typings.lovefield.lovefieldMod.Type.DATE_TIME
+import typings.lovefield.lovefieldMod.Type.INTEGER
+import typings.lovefield.lovefieldMod.Type.NUMBER
+import typings.lovefield.lovefieldMod.Type.OBJECT
+import typings.lovefield.lovefieldMod.Type.STRING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object Type extends js.Object {
   @js.native
   sealed trait STRING extends Type
   
-  /* 0 */ val ARRAY_BUFFER: typings.lovefield.lovefieldMod.Type.ARRAY_BUFFER with Double = js.native
-  /* 1 */ val BOOLEAN: typings.lovefield.lovefieldMod.Type.BOOLEAN with Double = js.native
-  /* 2 */ val DATE_TIME: typings.lovefield.lovefieldMod.Type.DATE_TIME with Double = js.native
-  /* 3 */ val INTEGER: typings.lovefield.lovefieldMod.Type.INTEGER with Double = js.native
-  /* 4 */ val NUMBER: typings.lovefield.lovefieldMod.Type.NUMBER with Double = js.native
-  /* 5 */ val OBJECT: typings.lovefield.lovefieldMod.Type.OBJECT with Double = js.native
-  /* 6 */ val STRING: typings.lovefield.lovefieldMod.Type.STRING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Type with Double] = js.native
+  /* 0 */ @js.native
+  object ARRAY_BUFFER extends TopLevel[ARRAY_BUFFER with Double]
+  
+  /* 1 */ @js.native
+  object BOOLEAN extends TopLevel[BOOLEAN with Double]
+  
+  /* 2 */ @js.native
+  object DATE_TIME extends TopLevel[DATE_TIME with Double]
+  
+  /* 3 */ @js.native
+  object INTEGER extends TopLevel[INTEGER with Double]
+  
+  /* 4 */ @js.native
+  object NUMBER extends TopLevel[NUMBER with Double]
+  
+  /* 5 */ @js.native
+  object OBJECT extends TopLevel[OBJECT with Double]
+  
+  /* 6 */ @js.native
+  object STRING extends TopLevel[STRING with Double]
+  
 }
 

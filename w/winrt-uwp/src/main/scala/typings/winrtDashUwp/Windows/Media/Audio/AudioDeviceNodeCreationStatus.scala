@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.accessDenied
+import typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.deviceNotAvailable
+import typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.formatNotSupported
+import typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.success
+import typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.unknownFailure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object AudioDeviceNodeCreationStatus extends js.Object {
   @js.native
   sealed trait unknownFailure extends AudioDeviceNodeCreationStatus
   
-  /* 4 */ val accessDenied: typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.accessDenied with Double = js.native
-  /* 1 */ val deviceNotAvailable: typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.deviceNotAvailable with Double = js.native
-  /* 2 */ val formatNotSupported: typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.formatNotSupported with Double = js.native
-  /* 0 */ val success: typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.success with Double = js.native
-  /* 3 */ val unknownFailure: typings.winrtDashUwp.Windows.Media.Audio.AudioDeviceNodeCreationStatus.unknownFailure with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioDeviceNodeCreationStatus with Double] = js.native
+  /* 4 */ @js.native
+  object accessDenied extends TopLevel[accessDenied with Double]
+  
+  /* 1 */ @js.native
+  object deviceNotAvailable extends TopLevel[deviceNotAvailable with Double]
+  
+  /* 2 */ @js.native
+  object formatNotSupported extends TopLevel[formatNotSupported with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 3 */ @js.native
+  object unknownFailure extends TopLevel[unknownFailure with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.TreeGrid
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Both
+import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Child
+import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.None
+import typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Parent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object SearchHierarchyMode extends js.Object {
   @js.native
   sealed trait Parent extends SearchHierarchyMode
   
-  /* 2 */ val Both: typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Both with Double = js.native
-  /* 1 */ val Child: typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Child with Double = js.native
-  /* 3 */ val None: typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.None with Double = js.native
-  /* 0 */ val Parent: typings.ejDotWebDotAll.ej.TreeGrid.SearchHierarchyMode.Parent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SearchHierarchyMode with Double] = js.native
+  /* 2 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 1 */ @js.native
+  object Child extends TopLevel[Child with Double]
+  
+  /* 3 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 0 */ @js.native
+  object Parent extends TopLevel[Parent with Double]
+  
 }
 

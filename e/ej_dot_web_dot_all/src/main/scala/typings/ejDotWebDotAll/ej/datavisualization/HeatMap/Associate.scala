@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.HeatMap
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseEnter
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseFollow
+import typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.Target
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object Associate extends js.Object {
   @js.native
   sealed trait Target extends Associate
   
-  /* 2 */ val MouseEnter: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseEnter with Double = js.native
-  /* 1 */ val MouseFollow: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.MouseFollow with Double = js.native
-  /* 0 */ val Target: typings.ejDotWebDotAll.ej.datavisualization.HeatMap.Associate.Target with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Associate with Double] = js.native
+  /* 2 */ @js.native
+  object MouseEnter extends TopLevel[MouseEnter with Double]
+  
+  /* 1 */ @js.native
+  object MouseFollow extends TopLevel[MouseFollow with Double]
+  
+  /* 0 */ @js.native
+  object Target extends TopLevel[Target with Double]
+  
 }
 

@@ -1,5 +1,10 @@
 package typings.amazonDashConnectDashStreams.connect
 
+import org.scalablytyped.runtime.TopLevel
+import typings.amazonDashConnectDashStreams.connect.AgentStateType.INIT
+import typings.amazonDashConnectDashStreams.connect.AgentStateType.NOT_ROUTABLE
+import typings.amazonDashConnectDashStreams.connect.AgentStateType.OFFLINE
+import typings.amazonDashConnectDashStreams.connect.AgentStateType.ROUTABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object AgentStateType extends js.Object {
   @js.native
   sealed trait ROUTABLE extends AgentStateType
   
-  /* "init" */ val INIT: typings.amazonDashConnectDashStreams.connect.AgentStateType.INIT with String = js.native
-  /* "not_routable" */ val NOT_ROUTABLE: typings.amazonDashConnectDashStreams.connect.AgentStateType.NOT_ROUTABLE with String = js.native
-  /* "offline" */ val OFFLINE: typings.amazonDashConnectDashStreams.connect.AgentStateType.OFFLINE with String = js.native
-  /* "routable" */ val ROUTABLE: typings.amazonDashConnectDashStreams.connect.AgentStateType.ROUTABLE with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[AgentStateType with String] = js.native
+  /* "init" */ @js.native
+  object INIT extends TopLevel[INIT with String]
+  
+  /* "not_routable" */ @js.native
+  object NOT_ROUTABLE extends TopLevel[NOT_ROUTABLE with String]
+  
+  /* "offline" */ @js.native
+  object OFFLINE extends TopLevel[OFFLINE with String]
+  
+  /* "routable" */ @js.native
+  object ROUTABLE extends TopLevel[ROUTABLE with String]
+  
 }
 

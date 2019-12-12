@@ -1,5 +1,6 @@
 package typings.reactDashNavigationDashStack
 
+import org.scalablytyped.runtime.TopLevel
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
 import typings.react.reactMod.ComponentType
@@ -44,6 +45,8 @@ object libTypescriptViewsStackViewStackViewCardMod extends js.Object {
     def this(props: PickPropsstylechildrenscenenavigationrealPositiona, context: js.Any) = this()
   }
   
-  val default: ComponentType[PickPropsstylechildrenscenenavigationrealPositiona] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[PickPropsstylechildrenscenenavigationrealPositiona]]
+  
 }
 

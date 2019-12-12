@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Angle
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object SunburstLabelRotationMode extends js.Object {
   @js.native
   sealed trait Normal extends SunburstLabelRotationMode
   
-  /* 0 */ val Angle: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Angle with Double = js.native
-  /* 1 */ val Normal: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelRotationMode.Normal with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SunburstLabelRotationMode with Double] = js.native
+  /* 0 */ @js.native
+  object Angle extends TopLevel[Angle with Double]
+  
+  /* 1 */ @js.native
+  object Normal extends TopLevel[Normal with Double]
+  
 }
 

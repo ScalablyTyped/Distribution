@@ -1,5 +1,11 @@
 package typings.winrt.Windows.ApplicationModel.Activation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.closedByUser
+import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.notRunning
+import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.running
+import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.suspended
+import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.terminated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ApplicationExecutionState extends js.Object {
   @js.native
   sealed trait terminated extends ApplicationExecutionState
   
-  /* 4 */ val closedByUser: typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.closedByUser with Double = js.native
-  /* 0 */ val notRunning: typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.notRunning with Double = js.native
-  /* 1 */ val running: typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.running with Double = js.native
-  /* 2 */ val suspended: typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.suspended with Double = js.native
-  /* 3 */ val terminated: typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState.terminated with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ApplicationExecutionState with Double] = js.native
+  /* 4 */ @js.native
+  object closedByUser extends TopLevel[closedByUser with Double]
+  
+  /* 0 */ @js.native
+  object notRunning extends TopLevel[notRunning with Double]
+  
+  /* 1 */ @js.native
+  object running extends TopLevel[running with Double]
+  
+  /* 2 */ @js.native
+  object suspended extends TopLevel[suspended with Double]
+  
+  /* 3 */ @js.native
+  object terminated extends TopLevel[terminated with Double]
+  
 }
 

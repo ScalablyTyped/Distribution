@@ -1,5 +1,47 @@
 package typings.winrt.Windows.Foundation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Foundation.PropertyType.boolean
+import typings.winrt.Windows.Foundation.PropertyType.booleanArray
+import typings.winrt.Windows.Foundation.PropertyType.char16
+import typings.winrt.Windows.Foundation.PropertyType.char16Array
+import typings.winrt.Windows.Foundation.PropertyType.dateTime
+import typings.winrt.Windows.Foundation.PropertyType.dateTimeArray
+import typings.winrt.Windows.Foundation.PropertyType.double
+import typings.winrt.Windows.Foundation.PropertyType.doubleArray
+import typings.winrt.Windows.Foundation.PropertyType.empty
+import typings.winrt.Windows.Foundation.PropertyType.guid
+import typings.winrt.Windows.Foundation.PropertyType.guidArray
+import typings.winrt.Windows.Foundation.PropertyType.inspectable
+import typings.winrt.Windows.Foundation.PropertyType.inspectableArray
+import typings.winrt.Windows.Foundation.PropertyType.int16
+import typings.winrt.Windows.Foundation.PropertyType.int16Array
+import typings.winrt.Windows.Foundation.PropertyType.int32
+import typings.winrt.Windows.Foundation.PropertyType.int32Array
+import typings.winrt.Windows.Foundation.PropertyType.int64
+import typings.winrt.Windows.Foundation.PropertyType.int64Array
+import typings.winrt.Windows.Foundation.PropertyType.otherType
+import typings.winrt.Windows.Foundation.PropertyType.otherTypeArray
+import typings.winrt.Windows.Foundation.PropertyType.point
+import typings.winrt.Windows.Foundation.PropertyType.pointArray
+import typings.winrt.Windows.Foundation.PropertyType.rect
+import typings.winrt.Windows.Foundation.PropertyType.rectArray
+import typings.winrt.Windows.Foundation.PropertyType.single
+import typings.winrt.Windows.Foundation.PropertyType.singleArray
+import typings.winrt.Windows.Foundation.PropertyType.size
+import typings.winrt.Windows.Foundation.PropertyType.sizeArray
+import typings.winrt.Windows.Foundation.PropertyType.string
+import typings.winrt.Windows.Foundation.PropertyType.stringArray
+import typings.winrt.Windows.Foundation.PropertyType.timeSpan
+import typings.winrt.Windows.Foundation.PropertyType.timeSpanArray
+import typings.winrt.Windows.Foundation.PropertyType.uInt16
+import typings.winrt.Windows.Foundation.PropertyType.uInt16Array
+import typings.winrt.Windows.Foundation.PropertyType.uInt32
+import typings.winrt.Windows.Foundation.PropertyType.uInt32Array
+import typings.winrt.Windows.Foundation.PropertyType.uInt64
+import typings.winrt.Windows.Foundation.PropertyType.uInt64Array
+import typings.winrt.Windows.Foundation.PropertyType.uInt8
+import typings.winrt.Windows.Foundation.PropertyType.uInt8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -133,48 +175,130 @@ object PropertyType extends js.Object {
   @js.native
   sealed trait uInt8Array extends PropertyType
   
-  /* 11 */ val boolean: typings.winrt.Windows.Foundation.PropertyType.boolean with Double = js.native
-  /* 31 */ val booleanArray: typings.winrt.Windows.Foundation.PropertyType.booleanArray with Double = js.native
-  /* 10 */ val char16: typings.winrt.Windows.Foundation.PropertyType.char16 with Double = js.native
-  /* 30 */ val char16Array: typings.winrt.Windows.Foundation.PropertyType.char16Array with Double = js.native
-  /* 14 */ val dateTime: typings.winrt.Windows.Foundation.PropertyType.dateTime with Double = js.native
-  /* 34 */ val dateTimeArray: typings.winrt.Windows.Foundation.PropertyType.dateTimeArray with Double = js.native
-  /* 9 */ val double: typings.winrt.Windows.Foundation.PropertyType.double with Double = js.native
-  /* 29 */ val doubleArray: typings.winrt.Windows.Foundation.PropertyType.doubleArray with Double = js.native
-  /* 0 */ val empty: typings.winrt.Windows.Foundation.PropertyType.empty with Double = js.native
-  /* 16 */ val guid: typings.winrt.Windows.Foundation.PropertyType.guid with Double = js.native
-  /* 36 */ val guidArray: typings.winrt.Windows.Foundation.PropertyType.guidArray with Double = js.native
-  /* 13 */ val inspectable: typings.winrt.Windows.Foundation.PropertyType.inspectable with Double = js.native
-  /* 33 */ val inspectableArray: typings.winrt.Windows.Foundation.PropertyType.inspectableArray with Double = js.native
-  /* 2 */ val int16: typings.winrt.Windows.Foundation.PropertyType.int16 with Double = js.native
-  /* 22 */ val int16Array: typings.winrt.Windows.Foundation.PropertyType.int16Array with Double = js.native
-  /* 4 */ val int32: typings.winrt.Windows.Foundation.PropertyType.int32 with Double = js.native
-  /* 24 */ val int32Array: typings.winrt.Windows.Foundation.PropertyType.int32Array with Double = js.native
-  /* 6 */ val int64: typings.winrt.Windows.Foundation.PropertyType.int64 with Double = js.native
-  /* 26 */ val int64Array: typings.winrt.Windows.Foundation.PropertyType.int64Array with Double = js.native
-  /* 20 */ val otherType: typings.winrt.Windows.Foundation.PropertyType.otherType with Double = js.native
-  /* 40 */ val otherTypeArray: typings.winrt.Windows.Foundation.PropertyType.otherTypeArray with Double = js.native
-  /* 17 */ val point: typings.winrt.Windows.Foundation.PropertyType.point with Double = js.native
-  /* 37 */ val pointArray: typings.winrt.Windows.Foundation.PropertyType.pointArray with Double = js.native
-  /* 19 */ val rect: typings.winrt.Windows.Foundation.PropertyType.rect with Double = js.native
-  /* 39 */ val rectArray: typings.winrt.Windows.Foundation.PropertyType.rectArray with Double = js.native
-  /* 8 */ val single: typings.winrt.Windows.Foundation.PropertyType.single with Double = js.native
-  /* 28 */ val singleArray: typings.winrt.Windows.Foundation.PropertyType.singleArray with Double = js.native
-  /* 18 */ val size: typings.winrt.Windows.Foundation.PropertyType.size with Double = js.native
-  /* 38 */ val sizeArray: typings.winrt.Windows.Foundation.PropertyType.sizeArray with Double = js.native
-  /* 12 */ val string: typings.winrt.Windows.Foundation.PropertyType.string with Double = js.native
-  /* 32 */ val stringArray: typings.winrt.Windows.Foundation.PropertyType.stringArray with Double = js.native
-  /* 15 */ val timeSpan: typings.winrt.Windows.Foundation.PropertyType.timeSpan with Double = js.native
-  /* 35 */ val timeSpanArray: typings.winrt.Windows.Foundation.PropertyType.timeSpanArray with Double = js.native
-  /* 3 */ val uInt16: typings.winrt.Windows.Foundation.PropertyType.uInt16 with Double = js.native
-  /* 23 */ val uInt16Array: typings.winrt.Windows.Foundation.PropertyType.uInt16Array with Double = js.native
-  /* 5 */ val uInt32: typings.winrt.Windows.Foundation.PropertyType.uInt32 with Double = js.native
-  /* 25 */ val uInt32Array: typings.winrt.Windows.Foundation.PropertyType.uInt32Array with Double = js.native
-  /* 7 */ val uInt64: typings.winrt.Windows.Foundation.PropertyType.uInt64 with Double = js.native
-  /* 27 */ val uInt64Array: typings.winrt.Windows.Foundation.PropertyType.uInt64Array with Double = js.native
-  /* 1 */ val uInt8: typings.winrt.Windows.Foundation.PropertyType.uInt8 with Double = js.native
-  /* 21 */ val uInt8Array: typings.winrt.Windows.Foundation.PropertyType.uInt8Array with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PropertyType with Double] = js.native
+  /* 11 */ @js.native
+  object boolean extends TopLevel[boolean with Double]
+  
+  /* 31 */ @js.native
+  object booleanArray extends TopLevel[booleanArray with Double]
+  
+  /* 10 */ @js.native
+  object char16 extends TopLevel[char16 with Double]
+  
+  /* 30 */ @js.native
+  object char16Array extends TopLevel[char16Array with Double]
+  
+  /* 14 */ @js.native
+  object dateTime extends TopLevel[dateTime with Double]
+  
+  /* 34 */ @js.native
+  object dateTimeArray extends TopLevel[dateTimeArray with Double]
+  
+  /* 9 */ @js.native
+  object double extends TopLevel[double with Double]
+  
+  /* 29 */ @js.native
+  object doubleArray extends TopLevel[doubleArray with Double]
+  
+  /* 0 */ @js.native
+  object empty extends TopLevel[empty with Double]
+  
+  /* 16 */ @js.native
+  object guid extends TopLevel[guid with Double]
+  
+  /* 36 */ @js.native
+  object guidArray extends TopLevel[guidArray with Double]
+  
+  /* 13 */ @js.native
+  object inspectable extends TopLevel[inspectable with Double]
+  
+  /* 33 */ @js.native
+  object inspectableArray extends TopLevel[inspectableArray with Double]
+  
+  /* 2 */ @js.native
+  object int16 extends TopLevel[int16 with Double]
+  
+  /* 22 */ @js.native
+  object int16Array extends TopLevel[int16Array with Double]
+  
+  /* 4 */ @js.native
+  object int32 extends TopLevel[int32 with Double]
+  
+  /* 24 */ @js.native
+  object int32Array extends TopLevel[int32Array with Double]
+  
+  /* 6 */ @js.native
+  object int64 extends TopLevel[int64 with Double]
+  
+  /* 26 */ @js.native
+  object int64Array extends TopLevel[int64Array with Double]
+  
+  /* 20 */ @js.native
+  object otherType extends TopLevel[otherType with Double]
+  
+  /* 40 */ @js.native
+  object otherTypeArray extends TopLevel[otherTypeArray with Double]
+  
+  /* 17 */ @js.native
+  object point extends TopLevel[point with Double]
+  
+  /* 37 */ @js.native
+  object pointArray extends TopLevel[pointArray with Double]
+  
+  /* 19 */ @js.native
+  object rect extends TopLevel[rect with Double]
+  
+  /* 39 */ @js.native
+  object rectArray extends TopLevel[rectArray with Double]
+  
+  /* 8 */ @js.native
+  object single extends TopLevel[single with Double]
+  
+  /* 28 */ @js.native
+  object singleArray extends TopLevel[singleArray with Double]
+  
+  /* 18 */ @js.native
+  object size extends TopLevel[size with Double]
+  
+  /* 38 */ @js.native
+  object sizeArray extends TopLevel[sizeArray with Double]
+  
+  /* 12 */ @js.native
+  object string extends TopLevel[string with Double]
+  
+  /* 32 */ @js.native
+  object stringArray extends TopLevel[stringArray with Double]
+  
+  /* 15 */ @js.native
+  object timeSpan extends TopLevel[timeSpan with Double]
+  
+  /* 35 */ @js.native
+  object timeSpanArray extends TopLevel[timeSpanArray with Double]
+  
+  /* 3 */ @js.native
+  object uInt16 extends TopLevel[uInt16 with Double]
+  
+  /* 23 */ @js.native
+  object uInt16Array extends TopLevel[uInt16Array with Double]
+  
+  /* 5 */ @js.native
+  object uInt32 extends TopLevel[uInt32 with Double]
+  
+  /* 25 */ @js.native
+  object uInt32Array extends TopLevel[uInt32Array with Double]
+  
+  /* 7 */ @js.native
+  object uInt64 extends TopLevel[uInt64 with Double]
+  
+  /* 27 */ @js.native
+  object uInt64Array extends TopLevel[uInt64Array with Double]
+  
+  /* 1 */ @js.native
+  object uInt8 extends TopLevel[uInt8 with Double]
+  
+  /* 21 */ @js.native
+  object uInt8Array extends TopLevel[uInt8Array with Double]
+  
 }
 

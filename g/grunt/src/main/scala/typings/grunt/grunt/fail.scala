@@ -1,6 +1,14 @@
 package typings.grunt.grunt
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grunt.grunt.fail.ErrorCode
+import typings.grunt.grunt.fail.ErrorCode.Autocomplete
+import typings.grunt.grunt.fail.ErrorCode.Fatal
+import typings.grunt.grunt.fail.ErrorCode.MissingGruntfile
+import typings.grunt.grunt.fail.ErrorCode.NoError
+import typings.grunt.grunt.fail.ErrorCode.Task
+import typings.grunt.grunt.fail.ErrorCode.Template
+import typings.grunt.grunt.fail.ErrorCode.Warning
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,15 +62,29 @@ object fail extends js.Object {
     @js.native
     sealed trait Warning extends ErrorCode
     
-    /* 5 */ val Autocomplete: typings.grunt.grunt.fail.ErrorCode.Autocomplete with Double = js.native
-    /* 1 */ val Fatal: typings.grunt.grunt.fail.ErrorCode.Fatal with Double = js.native
-    /* 2 */ val MissingGruntfile: typings.grunt.grunt.fail.ErrorCode.MissingGruntfile with Double = js.native
-    /* 0 */ val NoError: typings.grunt.grunt.fail.ErrorCode.NoError with Double = js.native
-    /* 3 */ val Task: typings.grunt.grunt.fail.ErrorCode.Task with Double = js.native
-    /* 4 */ val Template: typings.grunt.grunt.fail.ErrorCode.Template with Double = js.native
-    /* 6 */ val Warning: typings.grunt.grunt.fail.ErrorCode.Warning with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
+    /* 5 */ @js.native
+    object Autocomplete extends TopLevel[Autocomplete with Double]
+    
+    /* 1 */ @js.native
+    object Fatal extends TopLevel[Fatal with Double]
+    
+    /* 2 */ @js.native
+    object MissingGruntfile extends TopLevel[MissingGruntfile with Double]
+    
+    /* 0 */ @js.native
+    object NoError extends TopLevel[NoError with Double]
+    
+    /* 3 */ @js.native
+    object Task extends TopLevel[Task with Double]
+    
+    /* 4 */ @js.native
+    object Template extends TopLevel[Template with Double]
+    
+    /* 6 */ @js.native
+    object Warning extends TopLevel[Warning with Double]
+    
   }
   
 }

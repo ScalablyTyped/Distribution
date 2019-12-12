@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bpmn-moddle"
-version := "5.1-dt-20190627Z-652210"
+version := "5.1-dt-20190627Z-3ac58a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

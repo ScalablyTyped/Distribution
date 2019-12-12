@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.None
+import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.Week
+import typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.WorkDays
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object HighlightSection extends js.Object {
   @js.native
   sealed trait WorkDays extends HighlightSection
   
-  /* 2 */ val None: typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.None with Double = js.native
-  /* 0 */ val Week: typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.Week with Double = js.native
-  /* 1 */ val WorkDays: typings.ejDotWebDotAll.ej.DatePicker.HighlightSection.WorkDays with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HighlightSection with Double] = js.native
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 0 */ @js.native
+  object Week extends TopLevel[Week with Double]
+  
+  /* 1 */ @js.native
+  object WorkDays extends TopLevel[WorkDays with Double]
+  
 }
 

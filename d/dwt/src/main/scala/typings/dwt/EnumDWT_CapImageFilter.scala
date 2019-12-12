@@ -1,5 +1,13 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_AUTO
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_BANDPASS
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_FINELINE
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_HIGHPASS
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_LOWPASS
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_NONE
+import typings.dwt.EnumDWT_CapImageFilter.TWIF_TEXT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,14 +43,28 @@ object EnumDWT_CapImageFilter extends js.Object {
   @js.native
   sealed trait TWIF_TEXT extends EnumDWT_CapImageFilter
   
-  /* 1 */ val TWIF_AUTO: typings.dwt.EnumDWT_CapImageFilter.TWIF_AUTO with Double = js.native
-  /* 3 */ val TWIF_BANDPASS: typings.dwt.EnumDWT_CapImageFilter.TWIF_BANDPASS with Double = js.native
-  /* 4 */ val TWIF_FINELINE: typings.dwt.EnumDWT_CapImageFilter.TWIF_FINELINE with Double = js.native
-  /* 4 */ val TWIF_HIGHPASS: typings.dwt.EnumDWT_CapImageFilter.TWIF_HIGHPASS with Double = js.native
-  /* 2 */ val TWIF_LOWPASS: typings.dwt.EnumDWT_CapImageFilter.TWIF_LOWPASS with Double = js.native
-  /* 0 */ val TWIF_NONE: typings.dwt.EnumDWT_CapImageFilter.TWIF_NONE with Double = js.native
-  /* 3 */ val TWIF_TEXT: typings.dwt.EnumDWT_CapImageFilter.TWIF_TEXT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_CapImageFilter with Double] = js.native
+  /* 1 */ @js.native
+  object TWIF_AUTO extends TopLevel[TWIF_AUTO with Double]
+  
+  /* 3 */ @js.native
+  object TWIF_BANDPASS extends TopLevel[TWIF_BANDPASS with Double]
+  
+  /* 4 */ @js.native
+  object TWIF_FINELINE extends TopLevel[TWIF_FINELINE with Double]
+  
+  /* 4 */ @js.native
+  object TWIF_HIGHPASS extends TopLevel[TWIF_HIGHPASS with Double]
+  
+  /* 2 */ @js.native
+  object TWIF_LOWPASS extends TopLevel[TWIF_LOWPASS with Double]
+  
+  /* 0 */ @js.native
+  object TWIF_NONE extends TopLevel[TWIF_NONE with Double]
+  
+  /* 3 */ @js.native
+  object TWIF_TEXT extends TopLevel[TWIF_TEXT with Double]
+  
 }
 

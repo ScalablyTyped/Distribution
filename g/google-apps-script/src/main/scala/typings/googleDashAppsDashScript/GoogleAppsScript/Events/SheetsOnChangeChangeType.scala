@@ -1,5 +1,15 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Events
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.EDIT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.FORMAT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_COLUMN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_GRID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_ROW
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.OTHER
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_COLUMN
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_GRID
+import typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_ROW
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object SheetsOnChangeChangeType extends js.Object {
   @js.native
   sealed trait REMOVE_ROW extends SheetsOnChangeChangeType
   
-  /* 0 */ val EDIT: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.EDIT with Double = js.native
-  /* 7 */ val FORMAT: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.FORMAT with Double = js.native
-  /* 2 */ val INSERT_COLUMN: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_COLUMN with Double = js.native
-  /* 5 */ val INSERT_GRID: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_GRID with Double = js.native
-  /* 1 */ val INSERT_ROW: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.INSERT_ROW with Double = js.native
-  /* 8 */ val OTHER: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.OTHER with Double = js.native
-  /* 4 */ val REMOVE_COLUMN: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_COLUMN with Double = js.native
-  /* 6 */ val REMOVE_GRID: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_GRID with Double = js.native
-  /* 3 */ val REMOVE_ROW: typings.googleDashAppsDashScript.GoogleAppsScript.Events.SheetsOnChangeChangeType.REMOVE_ROW with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SheetsOnChangeChangeType with Double] = js.native
+  /* 0 */ @js.native
+  object EDIT extends TopLevel[EDIT with Double]
+  
+  /* 7 */ @js.native
+  object FORMAT extends TopLevel[FORMAT with Double]
+  
+  /* 2 */ @js.native
+  object INSERT_COLUMN extends TopLevel[INSERT_COLUMN with Double]
+  
+  /* 5 */ @js.native
+  object INSERT_GRID extends TopLevel[INSERT_GRID with Double]
+  
+  /* 1 */ @js.native
+  object INSERT_ROW extends TopLevel[INSERT_ROW with Double]
+  
+  /* 8 */ @js.native
+  object OTHER extends TopLevel[OTHER with Double]
+  
+  /* 4 */ @js.native
+  object REMOVE_COLUMN extends TopLevel[REMOVE_COLUMN with Double]
+  
+  /* 6 */ @js.native
+  object REMOVE_GRID extends TopLevel[REMOVE_GRID with Double]
+  
+  /* 3 */ @js.native
+  object REMOVE_ROW extends TopLevel[REMOVE_ROW with Double]
+  
 }
 

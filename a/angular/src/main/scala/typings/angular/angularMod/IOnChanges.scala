@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * Interface for the $onChanges lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
+@js.native
 trait IOnChanges extends js.Object {
   /**
     * Called whenever one-way bindings are updated. The onChangesObj is a hash whose keys are the names of the bound
@@ -16,15 +17,6 @@ trait IOnChanges extends js.Object {
     * cloning the bound value to prevent accidental mutation of the outer value.
     */
   @JSName("$onChanges")
-  def $onChanges(onChangesObj: IOnChangesObject): Unit
-}
-
-object IOnChanges {
-  @scala.inline
-  def apply($onChanges: IOnChangesObject => Unit): IOnChanges = {
-    val __obj = js.Dynamic.literal($onChanges = js.Any.fromFunction1($onChanges))
-  
-    __obj.asInstanceOf[IOnChanges]
-  }
+  def $onChanges(onChangesObj: IOnChangesObject): Unit = js.native
 }
 

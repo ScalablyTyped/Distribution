@@ -1,5 +1,19 @@
 package typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.Disabled
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledAsDuplicateOfDefault
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledByAdmin
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledBySystem
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInactiveIdentity
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInvalidPathClause
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInvalidRoleExpression
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledMessageQueueNotSupported
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledMissingIdentity
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.Enabled
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.EnabledOnProbation
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.JailedByNotificationsVolume
+import typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.PendingDeletion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,20 +102,46 @@ object SubscriptionStatus extends js.Object {
   @js.native
   sealed trait PendingDeletion extends SubscriptionStatus
   
-  /* -1 */ val Disabled: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.Disabled with Double = js.native
-  /* -3 */ val DisabledAsDuplicateOfDefault: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledAsDuplicateOfDefault with Double = js.native
-  /* -2 */ val DisabledByAdmin: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledByAdmin with Double = js.native
-  /* -9 */ val DisabledBySystem: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledBySystem with Double = js.native
-  /* -8 */ val DisabledInactiveIdentity: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInactiveIdentity with Double = js.native
-  /* -4 */ val DisabledInvalidPathClause: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInvalidPathClause with Double = js.native
-  /* -5 */ val DisabledInvalidRoleExpression: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledInvalidRoleExpression with Double = js.native
-  /* -7 */ val DisabledMessageQueueNotSupported: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledMessageQueueNotSupported with Double = js.native
-  /* -6 */ val DisabledMissingIdentity: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.DisabledMissingIdentity with Double = js.native
-  /* 0 */ val Enabled: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.Enabled with Double = js.native
-  /* 1 */ val EnabledOnProbation: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.EnabledOnProbation with Double = js.native
-  /* -200 */ val JailedByNotificationsVolume: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.JailedByNotificationsVolume with Double = js.native
-  /* -100 */ val PendingDeletion: typings.vsoDashNodeDashApi.interfacesNotificationInterfacesMod.SubscriptionStatus.PendingDeletion with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SubscriptionStatus with Double] = js.native
+  /* -1 */ @js.native
+  object Disabled extends TopLevel[Disabled with Double]
+  
+  /* -3 */ @js.native
+  object DisabledAsDuplicateOfDefault extends TopLevel[DisabledAsDuplicateOfDefault with Double]
+  
+  /* -2 */ @js.native
+  object DisabledByAdmin extends TopLevel[DisabledByAdmin with Double]
+  
+  /* -9 */ @js.native
+  object DisabledBySystem extends TopLevel[DisabledBySystem with Double]
+  
+  /* -8 */ @js.native
+  object DisabledInactiveIdentity extends TopLevel[DisabledInactiveIdentity with Double]
+  
+  /* -4 */ @js.native
+  object DisabledInvalidPathClause extends TopLevel[DisabledInvalidPathClause with Double]
+  
+  /* -5 */ @js.native
+  object DisabledInvalidRoleExpression extends TopLevel[DisabledInvalidRoleExpression with Double]
+  
+  /* -7 */ @js.native
+  object DisabledMessageQueueNotSupported extends TopLevel[DisabledMessageQueueNotSupported with Double]
+  
+  /* -6 */ @js.native
+  object DisabledMissingIdentity extends TopLevel[DisabledMissingIdentity with Double]
+  
+  /* 0 */ @js.native
+  object Enabled extends TopLevel[Enabled with Double]
+  
+  /* 1 */ @js.native
+  object EnabledOnProbation extends TopLevel[EnabledOnProbation with Double]
+  
+  /* -200 */ @js.native
+  object JailedByNotificationsVolume extends TopLevel[JailedByNotificationsVolume with Double]
+  
+  /* -100 */ @js.native
+  object PendingDeletion extends TopLevel[PendingDeletion with Double]
+  
 }
 

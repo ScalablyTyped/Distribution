@@ -1,5 +1,10 @@
 package typings.sharepoint.SP.Social
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.Social.SocialActorType.document
+import typings.sharepoint.SP.Social.SocialActorType.site
+import typings.sharepoint.SP.Social.SocialActorType.tag
+import typings.sharepoint.SP.Social.SocialActorType.user
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,11 +28,19 @@ object SocialActorType extends js.Object {
   @js.native
   sealed trait user extends SocialActorType
   
-  /* 1 */ val document: typings.sharepoint.SP.Social.SocialActorType.document with Double = js.native
-  /* 2 */ val site: typings.sharepoint.SP.Social.SocialActorType.site with Double = js.native
-  /* 3 */ val tag: typings.sharepoint.SP.Social.SocialActorType.tag with Double = js.native
-  /* 0 */ val user: typings.sharepoint.SP.Social.SocialActorType.user with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SocialActorType with Double] = js.native
+  /* 1 */ @js.native
+  object document extends TopLevel[document with Double]
+  
+  /* 2 */ @js.native
+  object site extends TopLevel[site with Double]
+  
+  /* 3 */ @js.native
+  object tag extends TopLevel[tag with Double]
+  
+  /* 0 */ @js.native
+  object user extends TopLevel[user with Double]
+  
 }
 

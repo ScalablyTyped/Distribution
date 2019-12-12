@@ -1,5 +1,14 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Hide
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.MultipleRows
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.None
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate45
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate90
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Trim
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Wrap
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.WrapByword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,15 +51,31 @@ object LabelIntersectAction extends js.Object {
   @js.native
   sealed trait WrapByword extends LabelIntersectAction
   
-  /* 6 */ val Hide: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Hide with Double = js.native
-  /* 7 */ val MultipleRows: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.MultipleRows with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.None with Double = js.native
-  /* 2 */ val Rotate45: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate45 with Double = js.native
-  /* 1 */ val Rotate90: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Rotate90 with Double = js.native
-  /* 5 */ val Trim: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Trim with Double = js.native
-  /* 3 */ val Wrap: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.Wrap with Double = js.native
-  /* 4 */ val WrapByword: typings.ejDotWebDotAll.ej.datavisualization.Chart.LabelIntersectAction.WrapByword with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LabelIntersectAction with Double] = js.native
+  /* 6 */ @js.native
+  object Hide extends TopLevel[Hide with Double]
+  
+  /* 7 */ @js.native
+  object MultipleRows extends TopLevel[MultipleRows with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 2 */ @js.native
+  object Rotate45 extends TopLevel[Rotate45 with Double]
+  
+  /* 1 */ @js.native
+  object Rotate90 extends TopLevel[Rotate90 with Double]
+  
+  /* 5 */ @js.native
+  object Trim extends TopLevel[Trim with Double]
+  
+  /* 3 */ @js.native
+  object Wrap extends TopLevel[Wrap with Double]
+  
+  /* 4 */ @js.native
+  object WrapByword extends TopLevel[WrapByword with Double]
+  
 }
 

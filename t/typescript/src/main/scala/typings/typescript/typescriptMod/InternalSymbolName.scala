@@ -1,5 +1,22 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.InternalSymbolName.Call
+import typings.typescript.typescriptMod.InternalSymbolName.Class
+import typings.typescript.typescriptMod.InternalSymbolName.Computed
+import typings.typescript.typescriptMod.InternalSymbolName.Constructor
+import typings.typescript.typescriptMod.InternalSymbolName.Default
+import typings.typescript.typescriptMod.InternalSymbolName.ExportEquals
+import typings.typescript.typescriptMod.InternalSymbolName.ExportStar
+import typings.typescript.typescriptMod.InternalSymbolName.Function
+import typings.typescript.typescriptMod.InternalSymbolName.Global
+import typings.typescript.typescriptMod.InternalSymbolName.Index
+import typings.typescript.typescriptMod.InternalSymbolName.JSXAttributes
+import typings.typescript.typescriptMod.InternalSymbolName.Missing
+import typings.typescript.typescriptMod.InternalSymbolName.New
+import typings.typescript.typescriptMod.InternalSymbolName.Object
+import typings.typescript.typescriptMod.InternalSymbolName.Resolving
+import typings.typescript.typescriptMod.InternalSymbolName.This
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,24 +78,59 @@ object InternalSymbolName extends js.Object {
   @js.native
   sealed trait Type extends InternalSymbolName
   
-  /* "__call" */ val Call: typings.typescript.typescriptMod.InternalSymbolName.Call with String = js.native
-  /* "__class" */ val Class: typings.typescript.typescriptMod.InternalSymbolName.Class with String = js.native
-  /* "__computed" */ val Computed: typings.typescript.typescriptMod.InternalSymbolName.Computed with String = js.native
-  /* "__constructor" */ val Constructor: typings.typescript.typescriptMod.InternalSymbolName.Constructor with String = js.native
-  /* "default" */ val Default: typings.typescript.typescriptMod.InternalSymbolName.Default with String = js.native
-  /* "export=" */ val ExportEquals: typings.typescript.typescriptMod.InternalSymbolName.ExportEquals with String = js.native
-  /* "__export" */ val ExportStar: typings.typescript.typescriptMod.InternalSymbolName.ExportStar with String = js.native
-  /* "__function" */ val Function: typings.typescript.typescriptMod.InternalSymbolName.Function with String = js.native
-  /* "__global" */ val Global: typings.typescript.typescriptMod.InternalSymbolName.Global with String = js.native
-  /* "__index" */ val Index: typings.typescript.typescriptMod.InternalSymbolName.Index with String = js.native
-  /* "__jsxAttributes" */ val JSXAttributes: typings.typescript.typescriptMod.InternalSymbolName.JSXAttributes with String = js.native
-  /* "__missing" */ val Missing: typings.typescript.typescriptMod.InternalSymbolName.Missing with String = js.native
-  /* "__new" */ val New: typings.typescript.typescriptMod.InternalSymbolName.New with String = js.native
-  /* "__object" */ val Object: typings.typescript.typescriptMod.InternalSymbolName.Object with String = js.native
-  /* "__resolving__" */ val Resolving: typings.typescript.typescriptMod.InternalSymbolName.Resolving with String = js.native
-  /* "this" */ val This: typings.typescript.typescriptMod.InternalSymbolName.This with String = js.native
-  /* "__type" */ val Type: typings.typescript.typescriptMod.InternalSymbolName.Type with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[InternalSymbolName with String] = js.native
+  /* "__call" */ @js.native
+  object Call extends TopLevel[Call with String]
+  
+  /* "__class" */ @js.native
+  object Class extends TopLevel[Class with String]
+  
+  /* "__computed" */ @js.native
+  object Computed extends TopLevel[Computed with String]
+  
+  /* "__constructor" */ @js.native
+  object Constructor extends TopLevel[Constructor with String]
+  
+  /* "default" */ @js.native
+  object Default extends TopLevel[Default with String]
+  
+  /* "export=" */ @js.native
+  object ExportEquals extends TopLevel[ExportEquals with String]
+  
+  /* "__export" */ @js.native
+  object ExportStar extends TopLevel[ExportStar with String]
+  
+  /* "__function" */ @js.native
+  object Function extends TopLevel[Function with String]
+  
+  /* "__global" */ @js.native
+  object Global extends TopLevel[Global with String]
+  
+  /* "__index" */ @js.native
+  object Index extends TopLevel[Index with String]
+  
+  /* "__jsxAttributes" */ @js.native
+  object JSXAttributes extends TopLevel[JSXAttributes with String]
+  
+  /* "__missing" */ @js.native
+  object Missing extends TopLevel[Missing with String]
+  
+  /* "__new" */ @js.native
+  object New extends TopLevel[New with String]
+  
+  /* "__object" */ @js.native
+  object Object extends TopLevel[Object with String]
+  
+  /* "__resolving__" */ @js.native
+  object Resolving extends TopLevel[Resolving with String]
+  
+  /* "this" */ @js.native
+  object This extends TopLevel[This with String]
+  
+  /* "__type" */ @js.native
+  object Type
+    extends TopLevel[typings.typescript.typescriptMod.InternalSymbolName.Type with String]
+  
 }
 

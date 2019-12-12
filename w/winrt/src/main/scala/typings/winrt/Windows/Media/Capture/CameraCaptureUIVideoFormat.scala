@@ -1,5 +1,8 @@
 package typings.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.mp4
+import typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.wmv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object CameraCaptureUIVideoFormat extends js.Object {
   @js.native
   sealed trait wmv extends CameraCaptureUIVideoFormat
   
-  /* 0 */ val mp4: typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.mp4 with Double = js.native
-  /* 1 */ val wmv: typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.wmv with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CameraCaptureUIVideoFormat with Double] = js.native
+  /* 0 */ @js.native
+  object mp4 extends TopLevel[mp4 with Double]
+  
+  /* 1 */ @js.native
+  object wmv extends TopLevel[wmv with Double]
+  
 }
 

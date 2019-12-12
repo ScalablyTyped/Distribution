@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.radioRadioMod.RadioProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object radioMod extends js.Object {
     def this(props: RadioProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[RadioProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[RadioProps]]
+  
 }
 

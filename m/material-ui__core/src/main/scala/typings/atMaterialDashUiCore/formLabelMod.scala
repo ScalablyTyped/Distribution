@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.formLabelFormLabelMod.FormLabelProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object formLabelMod extends js.Object {
     def this(props: FormLabelProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[FormLabelProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[FormLabelProps]]
+  
 }
 

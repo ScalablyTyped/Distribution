@@ -1,5 +1,11 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.TopLevel
+import typings.chrome.chrome.cast.Capability.AUDIO_IN
+import typings.chrome.chrome.cast.Capability.AUDIO_OUT
+import typings.chrome.chrome.cast.Capability.MULTIZONE_GROUP
+import typings.chrome.chrome.cast.Capability.VIDEO_IN
+import typings.chrome.chrome.cast.Capability.VIDEO_OUT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Capability extends js.Object {
   @js.native
   sealed trait VIDEO_OUT extends Capability
   
-  /* "audio_in" */ val AUDIO_IN: typings.chrome.chrome.cast.Capability.AUDIO_IN with String = js.native
-  /* "audio_out" */ val AUDIO_OUT: typings.chrome.chrome.cast.Capability.AUDIO_OUT with String = js.native
-  /* "multizone_group" */ val MULTIZONE_GROUP: typings.chrome.chrome.cast.Capability.MULTIZONE_GROUP with String = js.native
-  /* "video_in" */ val VIDEO_IN: typings.chrome.chrome.cast.Capability.VIDEO_IN with String = js.native
-  /* "video_out" */ val VIDEO_OUT: typings.chrome.chrome.cast.Capability.VIDEO_OUT with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[Capability with String] = js.native
+  /* "audio_in" */ @js.native
+  object AUDIO_IN extends TopLevel[AUDIO_IN with String]
+  
+  /* "audio_out" */ @js.native
+  object AUDIO_OUT extends TopLevel[AUDIO_OUT with String]
+  
+  /* "multizone_group" */ @js.native
+  object MULTIZONE_GROUP extends TopLevel[MULTIZONE_GROUP with String]
+  
+  /* "video_in" */ @js.native
+  object VIDEO_IN extends TopLevel[VIDEO_IN with String]
+  
+  /* "video_out" */ @js.native
+  object VIDEO_OUT extends TopLevel[VIDEO_OUT with String]
+  
 }
 

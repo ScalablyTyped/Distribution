@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Chat
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.invalidRecipientAddress
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.networkConnectivity
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.serviceDenied
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.timeout
+import typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object ChatTransportInterpretedErrorCode extends js.Object {
   @js.native
   sealed trait unknown extends ChatTransportInterpretedErrorCode
   
-  /* 2 */ val invalidRecipientAddress: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.invalidRecipientAddress with Double = js.native
-  /* 3 */ val networkConnectivity: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.networkConnectivity with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.none with Double = js.native
-  /* 4 */ val serviceDenied: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.serviceDenied with Double = js.native
-  /* 5 */ val timeout: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.timeout with Double = js.native
-  /* 1 */ val unknown: typings.winrtDashUwp.Windows.ApplicationModel.Chat.ChatTransportInterpretedErrorCode.unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChatTransportInterpretedErrorCode with Double] = js.native
+  /* 2 */ @js.native
+  object invalidRecipientAddress extends TopLevel[invalidRecipientAddress with Double]
+  
+  /* 3 */ @js.native
+  object networkConnectivity extends TopLevel[networkConnectivity with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 4 */ @js.native
+  object serviceDenied extends TopLevel[serviceDenied with Double]
+  
+  /* 5 */ @js.native
+  object timeout extends TopLevel[timeout with Double]
+  
+  /* 1 */ @js.native
+  object unknown extends TopLevel[unknown with Double]
+  
 }
 

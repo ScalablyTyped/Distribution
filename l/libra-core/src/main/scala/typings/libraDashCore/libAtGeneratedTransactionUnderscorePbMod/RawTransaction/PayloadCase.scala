@@ -1,5 +1,9 @@
 package typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PAYLOAD_NOT_SET
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PROGRAM
+import typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.WRITE_SET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object PayloadCase extends js.Object {
   @js.native
   sealed trait WRITE_SET extends PayloadCase
   
-  /* 0 */ val PAYLOAD_NOT_SET: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PAYLOAD_NOT_SET with Double = js.native
-  /* 3 */ val PROGRAM: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.PROGRAM with Double = js.native
-  /* 4 */ val WRITE_SET: typings.libraDashCore.libAtGeneratedTransactionUnderscorePbMod.RawTransaction.PayloadCase.WRITE_SET with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PayloadCase with Double] = js.native
+  /* 0 */ @js.native
+  object PAYLOAD_NOT_SET extends TopLevel[PAYLOAD_NOT_SET with Double]
+  
+  /* 3 */ @js.native
+  object PROGRAM extends TopLevel[PROGRAM with Double]
+  
+  /* 4 */ @js.native
+  object WRITE_SET extends TopLevel[WRITE_SET with Double]
+  
 }
 

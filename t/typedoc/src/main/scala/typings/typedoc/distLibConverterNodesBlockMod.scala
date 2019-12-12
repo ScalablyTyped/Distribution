@@ -1,8 +1,11 @@
 package typings.typedoc
 
+import org.scalablytyped.runtime.TopLevel
 import typings.typedoc.distLibConverterComponentsMod.ConverterNodeComponent
 import typings.typedoc.distLibConverterContextMod.Context
 import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode
+import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.File
+import typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.Modules
 import typings.typedoc.distLibModelsMod.Reflection
 import typings.typescript.typescriptMod.Block
 import typings.typescript.typescriptMod.ModuleBlock
@@ -35,10 +38,14 @@ object distLibConverterNodesBlockMod extends js.Object {
     @js.native
     sealed trait Modules extends SourceFileMode
     
-    /* 0 */ val File: typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.File with Double = js.native
-    /* 1 */ val Modules: typings.typedoc.distLibConverterNodesBlockMod.SourceFileMode.Modules with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SourceFileMode with Double] = js.native
+    /* 0 */ @js.native
+    object File extends TopLevel[File with Double]
+    
+    /* 1 */ @js.native
+    object Modules extends TopLevel[Modules with Double]
+    
   }
   
 }

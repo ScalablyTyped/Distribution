@@ -1,5 +1,22 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.appName
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.author
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.category
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.comments
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.company
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.creation
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.format
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.keywords
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastAuth
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastPrint
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastSave
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.manager
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.revision
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.subject
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.template
+import typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,23 +78,55 @@ object DocumentPropertyItem extends js.Object {
   @js.native
   sealed trait title extends DocumentPropertyItem
   
-  /* "AppName" */ val appName: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.appName with String = js.native
-  /* "Author" */ val author: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.author with String = js.native
-  /* "Category" */ val category: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.category with String = js.native
-  /* "Comments" */ val comments: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.comments with String = js.native
-  /* "Company" */ val company: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.company with String = js.native
-  /* "Creation" */ val creation: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.creation with String = js.native
-  /* "Format" */ val format: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.format with String = js.native
-  /* "Keywords" */ val keywords: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.keywords with String = js.native
-  /* "LastAuth" */ val lastAuth: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastAuth with String = js.native
-  /* "LastPrint" */ val lastPrint: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastPrint with String = js.native
-  /* "LastSave" */ val lastSave: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.lastSave with String = js.native
-  /* "Manager" */ val manager: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.manager with String = js.native
-  /* "Revision" */ val revision: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.revision with String = js.native
-  /* "Subject" */ val subject: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.subject with String = js.native
-  /* "Template" */ val template: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.template with String = js.native
-  /* "Title" */ val title: typings.officeDashJsDashPreview.Excel.DocumentPropertyItem.title with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DocumentPropertyItem with String] = js.native
+  /* "AppName" */ @js.native
+  object appName extends TopLevel[appName with String]
+  
+  /* "Author" */ @js.native
+  object author extends TopLevel[author with String]
+  
+  /* "Category" */ @js.native
+  object category extends TopLevel[category with String]
+  
+  /* "Comments" */ @js.native
+  object comments extends TopLevel[comments with String]
+  
+  /* "Company" */ @js.native
+  object company extends TopLevel[company with String]
+  
+  /* "Creation" */ @js.native
+  object creation extends TopLevel[creation with String]
+  
+  /* "Format" */ @js.native
+  object format extends TopLevel[format with String]
+  
+  /* "Keywords" */ @js.native
+  object keywords extends TopLevel[keywords with String]
+  
+  /* "LastAuth" */ @js.native
+  object lastAuth extends TopLevel[lastAuth with String]
+  
+  /* "LastPrint" */ @js.native
+  object lastPrint extends TopLevel[lastPrint with String]
+  
+  /* "LastSave" */ @js.native
+  object lastSave extends TopLevel[lastSave with String]
+  
+  /* "Manager" */ @js.native
+  object manager extends TopLevel[manager with String]
+  
+  /* "Revision" */ @js.native
+  object revision extends TopLevel[revision with String]
+  
+  /* "Subject" */ @js.native
+  object subject extends TopLevel[subject with String]
+  
+  /* "Template" */ @js.native
+  object template extends TopLevel[template with String]
+  
+  /* "Title" */ @js.native
+  object title extends TopLevel[title with String]
+  
 }
 

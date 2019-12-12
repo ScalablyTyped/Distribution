@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.error
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.errorLoaded
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.loaded
+import typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.notLoaded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +42,19 @@ object ImageLoadState extends js.Object {
   @js.native
   sealed trait notLoaded extends ImageLoadState
   
-  /* 2 */ val error: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.error with Double = js.native
-  /* 3 */ val errorLoaded: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.errorLoaded with Double = js.native
-  /* 1 */ val loaded: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.loaded with Double = js.native
-  /* 0 */ val notLoaded: typings.officeDashUiDashFabricDashReact.libComponentsImageImageDotTypesMod.ImageLoadState.notLoaded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ImageLoadState with Double] = js.native
+  /* 2 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 3 */ @js.native
+  object errorLoaded extends TopLevel[errorLoaded with Double]
+  
+  /* 1 */ @js.native
+  object loaded extends TopLevel[loaded with Double]
+  
+  /* 0 */ @js.native
+  object notLoaded extends TopLevel[notLoaded with Double]
+  
 }
 

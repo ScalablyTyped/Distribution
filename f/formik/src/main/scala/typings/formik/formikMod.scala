@@ -1,5 +1,6 @@
 package typings.formik
 
+import org.scalablytyped.runtime.TopLevel
 import typings.formik.distErrorMessageMod.ErrorMessageProps
 import typings.formik.distFieldArrayMod.FieldArrayConfig
 import typings.formik.distTypesMod.FormikConfig
@@ -84,16 +85,6 @@ object formikMod extends js.Object {
     def this(props: FormikConfig[Values]) = this()
   }
   
-  val ErrorMessage: ComponentType[ErrorMessageProps] = js.native
-  val FastField: ComponentType[js.Any] = js.native
-  val Field: ComponentType[js.Any] = js.native
-  val FieldArray: ComponentType[FieldArrayConfig] = js.native
-  val Form: ComponentType[
-    Pick[
-      FormHTMLAttributes[HTMLFormElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
-    ]
-  ] = js.native
   /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: ProviderExoticComponent[ProviderProps[FormikContext[js.Any]]] = js.native
   def connect[OuterProps, Values](Comp: ComponentType[OuterProps with Anon_FormikFormikContext[Values]]): ComponentType[OuterProps] = js.native
   def getActiveElement(): Element | Null = js.native
@@ -126,6 +117,31 @@ object formikMod extends js.Object {
   def validateYupSchema[T /* <: FormikValues */](values: T, schema: js.Any, sync: Boolean, context: js.Any): js.Promise[Partial[T]] = js.native
   def withFormik[OuterProps, Values /* <: FormikValues */, Payload](hasMapPropsToValuesConfig: WithFormikConfig[OuterProps, Values, Payload]): ComponentDecorator[OuterProps, OuterProps with FormikProps[Values]] = js.native
   def yupToFormErrors[Values](yupError: js.Any): FormikErrors[Values] = js.native
+  @js.native
+  object ErrorMessage extends TopLevel[ComponentType[ErrorMessageProps]]
+  
+  @js.native
+  object FastField
+    extends TopLevel[ComponentType[js.Any]]
+  
+  @js.native
+  object Field
+    extends TopLevel[ComponentType[js.Any]]
+  
+  @js.native
+  object FieldArray extends TopLevel[ComponentType[FieldArrayConfig]]
+  
+  @js.native
+  object Form
+    extends TopLevel[
+          ComponentType[
+            Pick[
+              FormHTMLAttributes[HTMLFormElement], 
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 255 */ js.Any
+            ]
+          ]
+        ]
+  
   /* static members */
   @js.native
   object Formik extends js.Object {

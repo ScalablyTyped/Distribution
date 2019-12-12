@@ -1,5 +1,9 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Center
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Left
+import typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object TapeAlignment extends js.Object {
   @js.native
   sealed trait Right extends TapeAlignment
   
-  /* 0 */ val Center: typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Center with Double = js.native
-  /* 1 */ val Left: typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Left with Double = js.native
-  /* 2 */ val Right: typings.dymoDashLabelDashFramework.dymo.label.framework.TapeAlignment.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TapeAlignment with Double] = js.native
+  /* 0 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 1 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 2 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

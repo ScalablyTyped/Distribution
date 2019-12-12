@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsprintmanager"
-version := "2.0-dt-20190716Z-54adac"
+version := "2.0-dt-20190716Z-cac016"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

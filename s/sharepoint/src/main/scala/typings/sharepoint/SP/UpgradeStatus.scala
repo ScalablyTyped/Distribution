@@ -1,5 +1,10 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UpgradeStatus.completed
+import typings.sharepoint.SP.UpgradeStatus.failed
+import typings.sharepoint.SP.UpgradeStatus.inProgress
+import typings.sharepoint.SP.UpgradeStatus.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object UpgradeStatus extends js.Object {
   @js.native
   sealed trait none extends UpgradeStatus
   
-  /* 3 */ val completed: typings.sharepoint.SP.UpgradeStatus.completed with Double = js.native
-  /* 2 */ val failed: typings.sharepoint.SP.UpgradeStatus.failed with Double = js.native
-  /* 1 */ val inProgress: typings.sharepoint.SP.UpgradeStatus.inProgress with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.UpgradeStatus.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UpgradeStatus with Double] = js.native
+  /* 3 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 2 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 1 */ @js.native
+  object inProgress extends TopLevel[inProgress with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

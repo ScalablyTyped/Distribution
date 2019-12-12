@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Devices.Radios
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.allowed
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedBySystem
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedByUser
+import typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.unspecified
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object RadioAccessStatus extends js.Object {
   @js.native
   sealed trait unspecified extends RadioAccessStatus
   
-  /* 1 */ val allowed: typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.allowed with Double = js.native
-  /* 3 */ val deniedBySystem: typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedBySystem with Double = js.native
-  /* 2 */ val deniedByUser: typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.deniedByUser with Double = js.native
-  /* 0 */ val unspecified: typings.winrtDashUwp.Windows.Devices.Radios.RadioAccessStatus.unspecified with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RadioAccessStatus with Double] = js.native
+  /* 1 */ @js.native
+  object allowed extends TopLevel[allowed with Double]
+  
+  /* 3 */ @js.native
+  object deniedBySystem extends TopLevel[deniedBySystem with Double]
+  
+  /* 2 */ @js.native
+  object deniedByUser extends TopLevel[deniedByUser with Double]
+  
+  /* 0 */ @js.native
+  object unspecified extends TopLevel[unspecified with Double]
+  
 }
 

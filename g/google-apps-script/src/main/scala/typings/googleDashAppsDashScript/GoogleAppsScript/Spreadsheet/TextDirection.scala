@@ -1,5 +1,8 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.LEFT_TO_RIGHT
+import typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.RIGHT_TO_LEFT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object TextDirection extends js.Object {
   @js.native
   sealed trait RIGHT_TO_LEFT extends TextDirection
   
-  /* 0 */ val LEFT_TO_RIGHT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.LEFT_TO_RIGHT with Double = js.native
-  /* 1 */ val RIGHT_TO_LEFT: typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.TextDirection.RIGHT_TO_LEFT with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextDirection with Double] = js.native
+  /* 0 */ @js.native
+  object LEFT_TO_RIGHT extends TopLevel[LEFT_TO_RIGHT with Double]
+  
+  /* 1 */ @js.native
+  object RIGHT_TO_LEFT extends TopLevel[RIGHT_TO_LEFT with Double]
+  
 }
 

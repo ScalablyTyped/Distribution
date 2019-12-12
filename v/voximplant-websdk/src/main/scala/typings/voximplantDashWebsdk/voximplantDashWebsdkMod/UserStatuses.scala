@@ -1,5 +1,12 @@
 package typings.voximplantDashWebsdk.voximplantDashWebsdkMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Away
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Chat
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.DND
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Offline
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Online
+import typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.XA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object UserStatuses extends js.Object {
   @js.native
   sealed trait XA extends UserStatuses
   
-  /* 0 */ val Away: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Away with Double = js.native
-  /* 1 */ val Chat: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Chat with Double = js.native
-  /* 2 */ val DND: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.DND with Double = js.native
-  /* 3 */ val Offline: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Offline with Double = js.native
-  /* 4 */ val Online: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.Online with Double = js.native
-  /* 5 */ val XA: typings.voximplantDashWebsdk.voximplantDashWebsdkMod.UserStatuses.XA with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UserStatuses with Double] = js.native
+  /* 0 */ @js.native
+  object Away extends TopLevel[Away with Double]
+  
+  /* 1 */ @js.native
+  object Chat extends TopLevel[Chat with Double]
+  
+  /* 2 */ @js.native
+  object DND extends TopLevel[DND with Double]
+  
+  /* 3 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
+  /* 4 */ @js.native
+  object Online extends TopLevel[Online with Double]
+  
+  /* 5 */ @js.native
+  object XA extends TopLevel[XA with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.adjacent
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.overlap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object AppointmentConflictType extends js.Object {
   @js.native
   sealed trait overlap extends AppointmentConflictType
   
-  /* 1 */ val adjacent: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.adjacent with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.none with Double = js.native
-  /* 2 */ val overlap: typings.winrtDashUwp.Windows.ApplicationModel.Appointments.AppointmentConflictType.overlap with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AppointmentConflictType with Double] = js.native
+  /* 1 */ @js.native
+  object adjacent extends TopLevel[adjacent with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object overlap extends TopLevel[overlap with Double]
+  
 }
 

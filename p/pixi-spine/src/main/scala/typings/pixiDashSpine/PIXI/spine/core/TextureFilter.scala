@@ -1,5 +1,13 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Linear
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMap
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearLinear
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearNearest
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestLinear
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestNearest
+import typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Nearest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object TextureFilter extends js.Object {
   @js.native
   sealed trait Nearest extends TextureFilter
   
-  /* 9729 */ val Linear: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Linear with Double = js.native
-  /* 9987 */ val MipMap: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMap with Double = js.native
-  /* 9987 */ val MipMapLinearLinear: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearLinear with Double = js.native
-  /* 9985 */ val MipMapLinearNearest: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapLinearNearest with Double = js.native
-  /* 9986 */ val MipMapNearestLinear: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestLinear with Double = js.native
-  /* 9984 */ val MipMapNearestNearest: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.MipMapNearestNearest with Double = js.native
-  /* 9728 */ val Nearest: typings.pixiDashSpine.PIXI.spine.core.TextureFilter.Nearest with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextureFilter with Double] = js.native
+  /* 9729 */ @js.native
+  object Linear extends TopLevel[Linear with Double]
+  
+  /* 9987 */ @js.native
+  object MipMap extends TopLevel[MipMap with Double]
+  
+  /* 9987 */ @js.native
+  object MipMapLinearLinear extends TopLevel[MipMapLinearLinear with Double]
+  
+  /* 9985 */ @js.native
+  object MipMapLinearNearest extends TopLevel[MipMapLinearNearest with Double]
+  
+  /* 9986 */ @js.native
+  object MipMapNearestLinear extends TopLevel[MipMapNearestLinear with Double]
+  
+  /* 9984 */ @js.native
+  object MipMapNearestNearest extends TopLevel[MipMapNearestNearest with Double]
+  
+  /* 9728 */ @js.native
+  object Nearest extends TopLevel[Nearest with Double]
+  
 }
 

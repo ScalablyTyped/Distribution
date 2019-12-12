@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.RTE
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Inline
+import typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Popup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object ToolbarOverflowMode extends js.Object {
   @js.native
   sealed trait Popup extends ToolbarOverflowMode
   
-  /* 1 */ val Inline: typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Inline with Double = js.native
-  /* 0 */ val Popup: typings.ejDotWebDotAll.ej.RTE.ToolbarOverflowMode.Popup with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ToolbarOverflowMode with Double] = js.native
+  /* 1 */ @js.native
+  object Inline extends TopLevel[Inline with Double]
+  
+  /* 0 */ @js.native
+  object Popup extends TopLevel[Popup with Double]
+  
 }
 

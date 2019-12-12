@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.classicNotSupported
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.dualModeControllerCapable
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.dualModeHostCapable
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.generalDiscoverableMode
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.limitedDiscoverableMode
+import typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object BluetoothLEAdvertisementFlags extends js.Object {
   @js.native
   sealed trait none extends BluetoothLEAdvertisementFlags
   
-  /* 3 */ val classicNotSupported: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.classicNotSupported with Double = js.native
-  /* 4 */ val dualModeControllerCapable: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.dualModeControllerCapable with Double = js.native
-  /* 5 */ val dualModeHostCapable: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.dualModeHostCapable with Double = js.native
-  /* 2 */ val generalDiscoverableMode: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.generalDiscoverableMode with Double = js.native
-  /* 1 */ val limitedDiscoverableMode: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.limitedDiscoverableMode with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementFlags with Double] = js.native
+  /* 3 */ @js.native
+  object classicNotSupported extends TopLevel[classicNotSupported with Double]
+  
+  /* 4 */ @js.native
+  object dualModeControllerCapable extends TopLevel[dualModeControllerCapable with Double]
+  
+  /* 5 */ @js.native
+  object dualModeHostCapable extends TopLevel[dualModeHostCapable with Double]
+  
+  /* 2 */ @js.native
+  object generalDiscoverableMode extends TopLevel[generalDiscoverableMode with Double]
+  
+  /* 1 */ @js.native
+  object limitedDiscoverableMode extends TopLevel[limitedDiscoverableMode with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

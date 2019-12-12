@@ -1,5 +1,9 @@
 package typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.AlreadyListening
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Closed
+import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Disposed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +32,16 @@ object ConnectionErrors extends js.Object {
   @js.native
   sealed trait Disposed extends ConnectionErrors
   
-  /* 3 */ val AlreadyListening: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.AlreadyListening with Double = js.native
-  /* 1 */ val Closed: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Closed with Double = js.native
-  /* 2 */ val Disposed: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.ConnectionErrors.Disposed with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConnectionErrors with Double] = js.native
+  /* 3 */ @js.native
+  object AlreadyListening extends TopLevel[AlreadyListening with Double]
+  
+  /* 1 */ @js.native
+  object Closed extends TopLevel[Closed with Double]
+  
+  /* 2 */ @js.native
+  object Disposed extends TopLevel[Disposed with Double]
+  
 }
 

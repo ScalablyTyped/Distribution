@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Autocomplete
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode.Delimiter
+import typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode.VisualMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object MultiSelectMode extends js.Object {
   sealed trait VisualMode
     extends typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode
   
-  /* 0 */ val Delimiter: typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode.Delimiter with Double = js.native
-  /* 1 */ val VisualMode: typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode.VisualMode with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Autocomplete.MultiSelectMode with Double] = js.native
+  /* 0 */ @js.native
+  object Delimiter extends TopLevel[Delimiter with Double]
+  
+  /* 1 */ @js.native
+  object VisualMode extends TopLevel[VisualMode with Double]
+  
 }
 

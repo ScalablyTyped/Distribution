@@ -1,5 +1,19 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.automatic
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.circle
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dash
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.diamond
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dot
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.invalid
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.none
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.picture
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.plus
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.square
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.star
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.triangle
+import typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.x
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -52,20 +66,46 @@ object ChartMarkerStyle extends js.Object {
   @js.native
   sealed trait x extends ChartMarkerStyle
   
-  /* "Automatic" */ val automatic: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.automatic with String = js.native
-  /* "Circle" */ val circle: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.circle with String = js.native
-  /* "Dash" */ val dash: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dash with String = js.native
-  /* "Diamond" */ val diamond: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.diamond with String = js.native
-  /* "Dot" */ val dot: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.dot with String = js.native
-  /* "Invalid" */ val invalid: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.invalid with String = js.native
-  /* "None" */ val none: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.none with String = js.native
-  /* "Picture" */ val picture: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.picture with String = js.native
-  /* "Plus" */ val plus: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.plus with String = js.native
-  /* "Square" */ val square: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.square with String = js.native
-  /* "Star" */ val star: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.star with String = js.native
-  /* "Triangle" */ val triangle: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.triangle with String = js.native
-  /* "X" */ val x: typings.officeDashJsDashPreview.Excel.ChartMarkerStyle.x with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ChartMarkerStyle with String] = js.native
+  /* "Automatic" */ @js.native
+  object automatic extends TopLevel[automatic with String]
+  
+  /* "Circle" */ @js.native
+  object circle extends TopLevel[circle with String]
+  
+  /* "Dash" */ @js.native
+  object dash extends TopLevel[dash with String]
+  
+  /* "Diamond" */ @js.native
+  object diamond extends TopLevel[diamond with String]
+  
+  /* "Dot" */ @js.native
+  object dot extends TopLevel[dot with String]
+  
+  /* "Invalid" */ @js.native
+  object invalid extends TopLevel[invalid with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "Picture" */ @js.native
+  object picture extends TopLevel[picture with String]
+  
+  /* "Plus" */ @js.native
+  object plus extends TopLevel[plus with String]
+  
+  /* "Square" */ @js.native
+  object square extends TopLevel[square with String]
+  
+  /* "Star" */ @js.native
+  object star extends TopLevel[star with String]
+  
+  /* "Triangle" */ @js.native
+  object triangle extends TopLevel[triangle with String]
+  
+  /* "X" */ @js.native
+  object x extends TopLevel[x with String]
+  
 }
 

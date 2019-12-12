@@ -1,5 +1,12 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.TableRowAlignment.Both
+import typings.devexpressDashWeb.TableRowAlignment.Center
+import typings.devexpressDashWeb.TableRowAlignment.Distribute
+import typings.devexpressDashWeb.TableRowAlignment.Left
+import typings.devexpressDashWeb.TableRowAlignment.NumTab
+import typings.devexpressDashWeb.TableRowAlignment.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,13 +56,25 @@ object TableRowAlignment extends js.Object {
   @js.native
   sealed trait Right extends TableRowAlignment
   
-  /* 0 */ val Both: typings.devexpressDashWeb.TableRowAlignment.Both with Double = js.native
-  /* 1 */ val Center: typings.devexpressDashWeb.TableRowAlignment.Center with Double = js.native
-  /* 2 */ val Distribute: typings.devexpressDashWeb.TableRowAlignment.Distribute with Double = js.native
-  /* 3 */ val Left: typings.devexpressDashWeb.TableRowAlignment.Left with Double = js.native
-  /* 4 */ val NumTab: typings.devexpressDashWeb.TableRowAlignment.NumTab with Double = js.native
-  /* 5 */ val Right: typings.devexpressDashWeb.TableRowAlignment.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TableRowAlignment with Double] = js.native
+  /* 0 */ @js.native
+  object Both extends TopLevel[Both with Double]
+  
+  /* 1 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 2 */ @js.native
+  object Distribute extends TopLevel[Distribute with Double]
+  
+  /* 3 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 4 */ @js.native
+  object NumTab extends TopLevel[NumTab with Double]
+  
+  /* 5 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.dndDashCore.libInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dndDashCore.libInterfacesMod.HandlerRole.SOURCE
+import typings.dndDashCore.libInterfacesMod.HandlerRole.TARGET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object HandlerRole extends js.Object {
   @js.native
   sealed trait TARGET extends HandlerRole
   
-  /* "SOURCE" */ val SOURCE: typings.dndDashCore.libInterfacesMod.HandlerRole.SOURCE with String = js.native
-  /* "TARGET" */ val TARGET: typings.dndDashCore.libInterfacesMod.HandlerRole.TARGET with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HandlerRole with String] = js.native
+  /* "SOURCE" */ @js.native
+  object SOURCE extends TopLevel[SOURCE with String]
+  
+  /* "TARGET" */ @js.native
+  object TARGET extends TopLevel[TARGET with String]
+  
 }
 

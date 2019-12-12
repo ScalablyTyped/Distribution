@@ -1,6 +1,10 @@
 package typings.classDashTransformer
 
+import org.scalablytyped.runtime.TopLevel
 import typings.classDashTransformer.classDashTransformerMod.TransformationType
+import typings.classDashTransformer.classDashTransformerMod.TransformationType.CLASS_TO_CLASS
+import typings.classDashTransformer.classDashTransformerMod.TransformationType.CLASS_TO_PLAIN
+import typings.classDashTransformer.classDashTransformerMod.TransformationType.PLAIN_TO_CLASS
 import typings.classDashTransformer.classTransformOptionsMod.ClassTransformOptions
 import typings.classDashTransformer.classTransformerMod.ClassType
 import typings.classDashTransformer.metadataExposeExcludeOptionsMod.ExcludeOptions
@@ -98,11 +102,17 @@ object classDashTransformerMod extends js.Object {
     @js.native
     sealed trait PLAIN_TO_CLASS extends TransformationType
     
-    /* 2 */ val CLASS_TO_CLASS: typings.classDashTransformer.classDashTransformerMod.TransformationType.CLASS_TO_CLASS with Double = js.native
-    /* 1 */ val CLASS_TO_PLAIN: typings.classDashTransformer.classDashTransformerMod.TransformationType.CLASS_TO_PLAIN with Double = js.native
-    /* 0 */ val PLAIN_TO_CLASS: typings.classDashTransformer.classDashTransformerMod.TransformationType.PLAIN_TO_CLASS with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TransformationType with Double] = js.native
+    /* 2 */ @js.native
+    object CLASS_TO_CLASS extends TopLevel[CLASS_TO_CLASS with Double]
+    
+    /* 1 */ @js.native
+    object CLASS_TO_PLAIN extends TopLevel[CLASS_TO_PLAIN with Double]
+    
+    /* 0 */ @js.native
+    object PLAIN_TO_CLASS extends TopLevel[PLAIN_TO_CLASS with Double]
+    
   }
   
 }

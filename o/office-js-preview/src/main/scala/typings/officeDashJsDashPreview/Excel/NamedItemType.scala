@@ -1,5 +1,13 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.NamedItemType.array
+import typings.officeDashJsDashPreview.Excel.NamedItemType.boolean
+import typings.officeDashJsDashPreview.Excel.NamedItemType.double
+import typings.officeDashJsDashPreview.Excel.NamedItemType.error
+import typings.officeDashJsDashPreview.Excel.NamedItemType.integer
+import typings.officeDashJsDashPreview.Excel.NamedItemType.range
+import typings.officeDashJsDashPreview.Excel.NamedItemType.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +42,28 @@ object NamedItemType extends js.Object {
   @js.native
   sealed trait string extends NamedItemType
   
-  /* "Array" */ val array: typings.officeDashJsDashPreview.Excel.NamedItemType.array with String = js.native
-  /* "Boolean" */ val boolean: typings.officeDashJsDashPreview.Excel.NamedItemType.boolean with String = js.native
-  /* "Double" */ val double: typings.officeDashJsDashPreview.Excel.NamedItemType.double with String = js.native
-  /* "Error" */ val error: typings.officeDashJsDashPreview.Excel.NamedItemType.error with String = js.native
-  /* "Integer" */ val integer: typings.officeDashJsDashPreview.Excel.NamedItemType.integer with String = js.native
-  /* "Range" */ val range: typings.officeDashJsDashPreview.Excel.NamedItemType.range with String = js.native
-  /* "String" */ val string: typings.officeDashJsDashPreview.Excel.NamedItemType.string with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NamedItemType with String] = js.native
+  /* "Array" */ @js.native
+  object array extends TopLevel[array with String]
+  
+  /* "Boolean" */ @js.native
+  object boolean extends TopLevel[boolean with String]
+  
+  /* "Double" */ @js.native
+  object double extends TopLevel[double with String]
+  
+  /* "Error" */ @js.native
+  object error extends TopLevel[error with String]
+  
+  /* "Integer" */ @js.native
+  object integer extends TopLevel[integer with String]
+  
+  /* "Range" */ @js.native
+  object range extends TopLevel[range with String]
+  
+  /* "String" */ @js.native
+  object string extends TopLevel[string with String]
+  
 }
 

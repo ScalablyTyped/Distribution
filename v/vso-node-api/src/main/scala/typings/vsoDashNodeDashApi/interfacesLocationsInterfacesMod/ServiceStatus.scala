@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Active
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Assigned
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Moving
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object ServiceStatus extends js.Object {
   @js.native
   sealed trait Moving extends ServiceStatus
   
-  /* 1 */ val Active: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Active with Double = js.native
-  /* 0 */ val Assigned: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Assigned with Double = js.native
-  /* 2 */ val Moving: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.ServiceStatus.Moving with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ServiceStatus with Double] = js.native
+  /* 1 */ @js.native
+  object Active extends TopLevel[Active with Double]
+  
+  /* 0 */ @js.native
+  object Assigned extends TopLevel[Assigned with Double]
+  
+  /* 2 */ @js.native
+  object Moving extends TopLevel[Moving with Double]
+  
 }
 

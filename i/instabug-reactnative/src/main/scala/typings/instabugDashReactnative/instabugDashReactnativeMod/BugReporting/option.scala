@@ -1,5 +1,10 @@
 package typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting
 
+import org.scalablytyped.runtime.TopLevel
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.commentFieldRequired
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.disablePostSendingDialog
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldHidden
+import typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object option extends js.Object {
   @js.native
   sealed trait emailFieldOptional extends option
   
-  /* 2 */ val commentFieldRequired: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.commentFieldRequired with Double = js.native
-  /* 3 */ val disablePostSendingDialog: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.disablePostSendingDialog with Double = js.native
-  /* 0 */ val emailFieldHidden: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldHidden with Double = js.native
-  /* 1 */ val emailFieldOptional: typings.instabugDashReactnative.instabugDashReactnativeMod.BugReporting.option.emailFieldOptional with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[option with Double] = js.native
+  /* 2 */ @js.native
+  object commentFieldRequired extends TopLevel[commentFieldRequired with Double]
+  
+  /* 3 */ @js.native
+  object disablePostSendingDialog extends TopLevel[disablePostSendingDialog with Double]
+  
+  /* 0 */ @js.native
+  object emailFieldHidden extends TopLevel[emailFieldHidden with Double]
+  
+  /* 1 */ @js.native
+  object emailFieldOptional extends TopLevel[emailFieldOptional with Double]
+  
 }
 

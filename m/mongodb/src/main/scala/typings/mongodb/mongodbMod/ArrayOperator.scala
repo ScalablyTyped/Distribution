@@ -5,30 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrayOperator[Type] extends js.Object {
   @JSName("$each")
-  var $each: Type
+  var $each: Type = js.native
   @JSName("$position")
-  var $position: js.UndefOr[scala.Double] = js.undefined
+  var $position: js.UndefOr[scala.Double] = js.native
   @JSName("$slice")
-  var $slice: js.UndefOr[scala.Double] = js.undefined
+  var $slice: js.UndefOr[scala.Double] = js.native
   @JSName("$sort")
-  var $sort: js.UndefOr[SortValues | (Record[String, SortValues])] = js.undefined
-}
-
-object ArrayOperator {
-  @scala.inline
-  def apply[Type](
-    $each: Type,
-    $position: Int | scala.Double = null,
-    $slice: Int | scala.Double = null,
-    $sort: SortValues | (Record[String, SortValues]) = null
-  ): ArrayOperator[Type] = {
-    val __obj = js.Dynamic.literal($each = $each.asInstanceOf[js.Any])
-    if ($position != null) __obj.updateDynamic("$position")($position.asInstanceOf[js.Any])
-    if ($slice != null) __obj.updateDynamic("$slice")($slice.asInstanceOf[js.Any])
-    if ($sort != null) __obj.updateDynamic("$sort")($sort.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ArrayOperator[Type]]
-  }
+  var $sort: js.UndefOr[SortValues | (Record[String, SortValues])] = js.native
 }
 

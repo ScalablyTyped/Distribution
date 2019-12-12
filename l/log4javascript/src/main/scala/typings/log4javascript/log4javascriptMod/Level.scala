@@ -1,5 +1,14 @@
 package typings.log4javascript.log4javascriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.log4javascript.log4javascriptMod.Level.ALL
+import typings.log4javascript.log4javascriptMod.Level.DEBUG
+import typings.log4javascript.log4javascriptMod.Level.ERROR
+import typings.log4javascript.log4javascriptMod.Level.FATAL
+import typings.log4javascript.log4javascriptMod.Level.INFO
+import typings.log4javascript.log4javascriptMod.Level.OFF
+import typings.log4javascript.log4javascriptMod.Level.TRACE
+import typings.log4javascript.log4javascriptMod.Level.WARN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object Level extends js.Object {
   @js.native
   sealed trait WARN extends Level
   
-  /* 0 */ val ALL: typings.log4javascript.log4javascriptMod.Level.ALL with Double = js.native
-  /* 2 */ val DEBUG: typings.log4javascript.log4javascriptMod.Level.DEBUG with Double = js.native
-  /* 5 */ val ERROR: typings.log4javascript.log4javascriptMod.Level.ERROR with Double = js.native
-  /* 6 */ val FATAL: typings.log4javascript.log4javascriptMod.Level.FATAL with Double = js.native
-  /* 3 */ val INFO: typings.log4javascript.log4javascriptMod.Level.INFO with Double = js.native
-  /* 7 */ val OFF: typings.log4javascript.log4javascriptMod.Level.OFF with Double = js.native
-  /* 1 */ val TRACE: typings.log4javascript.log4javascriptMod.Level.TRACE with Double = js.native
-  /* 4 */ val WARN: typings.log4javascript.log4javascriptMod.Level.WARN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Level with Double] = js.native
+  /* 0 */ @js.native
+  object ALL extends TopLevel[ALL with Double]
+  
+  /* 2 */ @js.native
+  object DEBUG extends TopLevel[DEBUG with Double]
+  
+  /* 5 */ @js.native
+  object ERROR extends TopLevel[ERROR with Double]
+  
+  /* 6 */ @js.native
+  object FATAL extends TopLevel[FATAL with Double]
+  
+  /* 3 */ @js.native
+  object INFO extends TopLevel[INFO with Double]
+  
+  /* 7 */ @js.native
+  object OFF extends TopLevel[OFF with Double]
+  
+  /* 1 */ @js.native
+  object TRACE extends TopLevel[TRACE with Double]
+  
+  /* 4 */ @js.native
+  object WARN extends TopLevel[WARN with Double]
+  
 }
 

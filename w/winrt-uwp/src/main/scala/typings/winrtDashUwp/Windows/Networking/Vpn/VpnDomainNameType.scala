@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.fullyQualified
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.reserved
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.suffix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object VpnDomainNameType extends js.Object {
   @js.native
   sealed trait suffix extends VpnDomainNameType
   
-  /* 1 */ val fullyQualified: typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.fullyQualified with Double = js.native
-  /* 2 */ val reserved: typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.reserved with Double = js.native
-  /* 0 */ val suffix: typings.winrtDashUwp.Windows.Networking.Vpn.VpnDomainNameType.suffix with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnDomainNameType with Double] = js.native
+  /* 1 */ @js.native
+  object fullyQualified extends TopLevel[fullyQualified with Double]
+  
+  /* 2 */ @js.native
+  object reserved extends TopLevel[reserved with Double]
+  
+  /* 0 */ @js.native
+  object suffix extends TopLevel[suffix with Double]
+  
 }
 

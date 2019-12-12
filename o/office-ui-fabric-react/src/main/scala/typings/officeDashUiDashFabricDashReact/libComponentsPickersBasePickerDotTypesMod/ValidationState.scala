@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.invalid
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.valid
+import typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object ValidationState extends js.Object {
   @js.native
   sealed trait warning extends ValidationState
   
-  /* 2 */ val invalid: typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.invalid with Double = js.native
-  /* 0 */ val valid: typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.valid with Double = js.native
-  /* 1 */ val warning: typings.officeDashUiDashFabricDashReact.libComponentsPickersBasePickerDotTypesMod.ValidationState.warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ValidationState with Double] = js.native
+  /* 2 */ @js.native
+  object invalid extends TopLevel[invalid with Double]
+  
+  /* 0 */ @js.native
+  object valid extends TopLevel[valid with Double]
+  
+  /* 1 */ @js.native
+  object warning extends TopLevel[warning with Double]
+  
 }
 

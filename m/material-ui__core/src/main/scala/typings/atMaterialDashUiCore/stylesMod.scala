@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropInjector
 import typings.atMaterialDashUiCore.stylesCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
@@ -29,7 +30,6 @@ object stylesMod extends js.Object {
     def this(props: MuiThemeProviderProps, context: js.Any) = this()
   }
   
-  val MuiThemeProvider: ComponentType[MuiThemeProviderProps] = js.native
   def createGenerateClassName(): js.Any = js.native
   def createGenerateClassName(options: GenerateClassNameOptions): js.Any = js.native
   def createMuiTheme(): Theme = js.native
@@ -65,5 +65,8 @@ object stylesMod extends js.Object {
     StyledComponentProps[ClassKey]
   ] = js.native
   def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = js.native
+  @js.native
+  object MuiThemeProvider extends TopLevel[ComponentType[MuiThemeProviderProps]]
+  
 }
 

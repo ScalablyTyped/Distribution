@@ -1,6 +1,12 @@
 package typings.ndnDashJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason
+import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.CONGESTION
+import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.DUPLICATE
+import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NONE
+import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NO_ROUTE
+import typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.OTHER_CODE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,13 +42,23 @@ object networkDashNackMod extends js.Object {
       @js.native
       sealed trait OTHER_CODE extends Reason
       
-      /* 50 */ val CONGESTION: typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.CONGESTION with Double = js.native
-      /* 100 */ val DUPLICATE: typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.DUPLICATE with Double = js.native
-      /* 0 */ val NONE: typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NONE with Double = js.native
-      /* 150 */ val NO_ROUTE: typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.NO_ROUTE with Double = js.native
-      /* 0x7fff */ val OTHER_CODE: typings.ndnDashJs.networkDashNackMod.NetworkNack.Reason.OTHER_CODE with Double = js.native
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[Reason with Double] = js.native
+      /* 50 */ @js.native
+      object CONGESTION extends TopLevel[CONGESTION with Double]
+      
+      /* 100 */ @js.native
+      object DUPLICATE extends TopLevel[DUPLICATE with Double]
+      
+      /* 0 */ @js.native
+      object NONE extends TopLevel[NONE with Double]
+      
+      /* 150 */ @js.native
+      object NO_ROUTE extends TopLevel[NO_ROUTE with Double]
+      
+      /* 0x7fff */ @js.native
+      object OTHER_CODE extends TopLevel[OTHER_CODE with Double]
+      
     }
     
   }

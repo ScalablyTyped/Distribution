@@ -1,7 +1,11 @@
 package typings.grammarkdown
 
+import org.scalablytyped.runtime.TopLevel
 import typings.grammarkdown.distSymbolsMod.Symbol
 import typings.grammarkdown.distSymbolsMod.SymbolKind
+import typings.grammarkdown.distSymbolsMod.SymbolKind.Parameter
+import typings.grammarkdown.distSymbolsMod.SymbolKind.Production
+import typings.grammarkdown.distSymbolsMod.SymbolKind.SourceFile
 import typings.grammarkdown.distSymbolsMod.SymbolTable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,11 +46,17 @@ object distSymbolsMod extends js.Object {
     @js.native
     sealed trait SourceFile extends SymbolKind
     
-    /* 2 */ val Parameter: typings.grammarkdown.distSymbolsMod.SymbolKind.Parameter with Double = js.native
-    /* 1 */ val Production: typings.grammarkdown.distSymbolsMod.SymbolKind.Production with Double = js.native
-    /* 0 */ val SourceFile: typings.grammarkdown.distSymbolsMod.SymbolKind.SourceFile with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
+    /* 2 */ @js.native
+    object Parameter extends TopLevel[Parameter with Double]
+    
+    /* 1 */ @js.native
+    object Production extends TopLevel[Production with Double]
+    
+    /* 0 */ @js.native
+    object SourceFile extends TopLevel[SourceFile with Double]
+    
   }
   
 }

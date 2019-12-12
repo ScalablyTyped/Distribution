@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Boolean
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Guid
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.None
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Number
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.String
+import typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Uri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object InputDataType extends js.Object {
   @js.native
   sealed trait Uri extends InputDataType
   
-  /* 30 */ val Boolean: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Boolean with Double = js.native
-  /* 40 */ val Guid: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Guid with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.None with Double = js.native
-  /* 20 */ val Number: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Number with Double = js.native
-  /* 10 */ val String: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.String with Double = js.native
-  /* 50 */ val Uri: typings.vsoDashNodeDashApi.interfacesCommonFormInputInterfacesMod.InputDataType.Uri with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InputDataType with Double] = js.native
+  /* 30 */ @js.native
+  object Boolean extends TopLevel[Boolean with Double]
+  
+  /* 40 */ @js.native
+  object Guid extends TopLevel[Guid with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 20 */ @js.native
+  object Number extends TopLevel[Number with Double]
+  
+  /* 10 */ @js.native
+  object String extends TopLevel[String with Double]
+  
+  /* 50 */ @js.native
+  object Uri extends TopLevel[Uri with Double]
+  
 }
 

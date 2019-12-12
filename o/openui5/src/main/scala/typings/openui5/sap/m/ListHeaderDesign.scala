@@ -1,5 +1,8 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.ListHeaderDesign.Plain
+import typings.openui5.sap.m.ListHeaderDesign.Standard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object ListHeaderDesign extends js.Object {
   @js.native
   sealed trait Standard extends ListHeaderDesign
   
-  /* 0 */ val Plain: typings.openui5.sap.m.ListHeaderDesign.Plain with Double = js.native
-  /* 1 */ val Standard: typings.openui5.sap.m.ListHeaderDesign.Standard with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListHeaderDesign with Double] = js.native
+  /* 0 */ @js.native
+  object Plain extends TopLevel[Plain with Double]
+  
+  /* 1 */ @js.native
+  object Standard extends TopLevel[Standard with Double]
+  
 }
 

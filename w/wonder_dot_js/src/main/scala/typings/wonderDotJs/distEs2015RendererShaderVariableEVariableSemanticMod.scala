@@ -1,6 +1,25 @@
 package typings.wonderDotJs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.COLOR
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_INVERSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_INVERSE_TRANSPOSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE_TRANSPOSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION_INVERSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.NORMAL
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.POSITION
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.PROJECTION
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.PROJECTION_INVERSE
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.TANGENT
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.TEXCOORD
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEW
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEWPORT
+import typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEW_INVERSE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -67,26 +86,62 @@ object distEs2015RendererShaderVariableEVariableSemanticMod extends js.Object {
     @js.native
     sealed trait VIEW_INVERSE extends EVariableSemantic
     
-    /* 4 */ val COLOR: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.COLOR with Double = js.native
-    /* 5 */ val MODEL: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL with Double = js.native
-    /* 10 */ val MODEL_INVERSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_INVERSE with Double = js.native
-    /* 15 */ val MODEL_INVERSE_TRANSPOSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_INVERSE_TRANSPOSE with Double = js.native
-    /* 8 */ val MODEL_VIEW: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW with Double = js.native
-    /* 13 */ val MODEL_VIEW_INVERSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE with Double = js.native
-    /* 16 */ val MODEL_VIEW_INVERSE_TRANSPOSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE_TRANSPOSE with Double = js.native
-    /* 9 */ val MODEL_VIEW_PROJECTION: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION with Double = js.native
-    /* 14 */ val MODEL_VIEW_PROJECTION_INVERSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION_INVERSE with Double = js.native
-    /* 1 */ val NORMAL: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.NORMAL with Double = js.native
-    /* 0 */ val POSITION: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.POSITION with Double = js.native
-    /* 7 */ val PROJECTION: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.PROJECTION with Double = js.native
-    /* 12 */ val PROJECTION_INVERSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.PROJECTION_INVERSE with Double = js.native
-    /* 3 */ val TANGENT: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.TANGENT with Double = js.native
-    /* 2 */ val TEXCOORD: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.TEXCOORD with Double = js.native
-    /* 6 */ val VIEW: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEW with Double = js.native
-    /* 17 */ val VIEWPORT: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEWPORT with Double = js.native
-    /* 11 */ val VIEW_INVERSE: typings.wonderDotJs.distEs2015RendererShaderVariableEVariableSemanticMod.EVariableSemantic.VIEW_INVERSE with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[EVariableSemantic with Double] = js.native
+    /* 4 */ @js.native
+    object COLOR extends TopLevel[COLOR with Double]
+    
+    /* 5 */ @js.native
+    object MODEL extends TopLevel[MODEL with Double]
+    
+    /* 10 */ @js.native
+    object MODEL_INVERSE extends TopLevel[MODEL_INVERSE with Double]
+    
+    /* 15 */ @js.native
+    object MODEL_INVERSE_TRANSPOSE extends TopLevel[MODEL_INVERSE_TRANSPOSE with Double]
+    
+    /* 8 */ @js.native
+    object MODEL_VIEW extends TopLevel[MODEL_VIEW with Double]
+    
+    /* 13 */ @js.native
+    object MODEL_VIEW_INVERSE extends TopLevel[MODEL_VIEW_INVERSE with Double]
+    
+    /* 16 */ @js.native
+    object MODEL_VIEW_INVERSE_TRANSPOSE extends TopLevel[MODEL_VIEW_INVERSE_TRANSPOSE with Double]
+    
+    /* 9 */ @js.native
+    object MODEL_VIEW_PROJECTION extends TopLevel[MODEL_VIEW_PROJECTION with Double]
+    
+    /* 14 */ @js.native
+    object MODEL_VIEW_PROJECTION_INVERSE extends TopLevel[MODEL_VIEW_PROJECTION_INVERSE with Double]
+    
+    /* 1 */ @js.native
+    object NORMAL extends TopLevel[NORMAL with Double]
+    
+    /* 0 */ @js.native
+    object POSITION extends TopLevel[POSITION with Double]
+    
+    /* 7 */ @js.native
+    object PROJECTION extends TopLevel[PROJECTION with Double]
+    
+    /* 12 */ @js.native
+    object PROJECTION_INVERSE extends TopLevel[PROJECTION_INVERSE with Double]
+    
+    /* 3 */ @js.native
+    object TANGENT extends TopLevel[TANGENT with Double]
+    
+    /* 2 */ @js.native
+    object TEXCOORD extends TopLevel[TEXCOORD with Double]
+    
+    /* 6 */ @js.native
+    object VIEW extends TopLevel[VIEW with Double]
+    
+    /* 17 */ @js.native
+    object VIEWPORT extends TopLevel[VIEWPORT with Double]
+    
+    /* 11 */ @js.native
+    object VIEW_INVERSE extends TopLevel[VIEW_INVERSE with Double]
+    
   }
   
 }

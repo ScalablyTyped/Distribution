@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.failed
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.focused
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.lost
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.searching
+import typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.uninitialized
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object MediaCaptureFocusState extends js.Object {
   @js.native
   sealed trait uninitialized extends MediaCaptureFocusState
   
-  /* 4 */ val failed: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.failed with Double = js.native
-  /* 3 */ val focused: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.focused with Double = js.native
-  /* 1 */ val lost: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.lost with Double = js.native
-  /* 2 */ val searching: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.searching with Double = js.native
-  /* 0 */ val uninitialized: typings.winrtDashUwp.Windows.Media.Devices.MediaCaptureFocusState.uninitialized with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MediaCaptureFocusState with Double] = js.native
+  /* 4 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 3 */ @js.native
+  object focused extends TopLevel[focused with Double]
+  
+  /* 1 */ @js.native
+  object lost extends TopLevel[lost with Double]
+  
+  /* 2 */ @js.native
+  object searching extends TopLevel[searching with Double]
+  
+  /* 0 */ @js.native
+  object uninitialized extends TopLevel[uninitialized with Double]
+  
 }
 

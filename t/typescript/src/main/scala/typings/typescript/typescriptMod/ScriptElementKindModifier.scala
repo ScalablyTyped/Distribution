@@ -1,5 +1,21 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.ScriptElementKindModifier.abstractModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.ambientModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.dtsModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.exportedModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.jsModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.jsonModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.jsxModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.none
+import typings.typescript.typescriptMod.ScriptElementKindModifier.optionalModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.privateMemberModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.protectedMemberModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.publicMemberModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.staticModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.tsModifier
+import typings.typescript.typescriptMod.ScriptElementKindModifier.tsxModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -55,22 +71,52 @@ object ScriptElementKindModifier extends js.Object {
   @js.native
   sealed trait tsxModifier extends ScriptElementKindModifier
   
-  /* "abstract" */ val abstractModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.abstractModifier with String = js.native
-  /* "declare" */ val ambientModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.ambientModifier with String = js.native
-  /* ".d.ts" */ val dtsModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.dtsModifier with String = js.native
-  /* "export" */ val exportedModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.exportedModifier with String = js.native
-  /* ".js" */ val jsModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.jsModifier with String = js.native
-  /* ".json" */ val jsonModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.jsonModifier with String = js.native
-  /* ".jsx" */ val jsxModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.jsxModifier with String = js.native
-  /* "" */ val none: typings.typescript.typescriptMod.ScriptElementKindModifier.none with String = js.native
-  /* "optional" */ val optionalModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.optionalModifier with String = js.native
-  /* "private" */ val privateMemberModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.privateMemberModifier with String = js.native
-  /* "protected" */ val protectedMemberModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.protectedMemberModifier with String = js.native
-  /* "public" */ val publicMemberModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.publicMemberModifier with String = js.native
-  /* "static" */ val staticModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.staticModifier with String = js.native
-  /* ".ts" */ val tsModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.tsModifier with String = js.native
-  /* ".tsx" */ val tsxModifier: typings.typescript.typescriptMod.ScriptElementKindModifier.tsxModifier with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[ScriptElementKindModifier with String] = js.native
+  /* "abstract" */ @js.native
+  object abstractModifier extends TopLevel[abstractModifier with String]
+  
+  /* "declare" */ @js.native
+  object ambientModifier extends TopLevel[ambientModifier with String]
+  
+  /* ".d.ts" */ @js.native
+  object dtsModifier extends TopLevel[dtsModifier with String]
+  
+  /* "export" */ @js.native
+  object exportedModifier extends TopLevel[exportedModifier with String]
+  
+  /* ".js" */ @js.native
+  object jsModifier extends TopLevel[jsModifier with String]
+  
+  /* ".json" */ @js.native
+  object jsonModifier extends TopLevel[jsonModifier with String]
+  
+  /* ".jsx" */ @js.native
+  object jsxModifier extends TopLevel[jsxModifier with String]
+  
+  /* "" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "optional" */ @js.native
+  object optionalModifier extends TopLevel[optionalModifier with String]
+  
+  /* "private" */ @js.native
+  object privateMemberModifier extends TopLevel[privateMemberModifier with String]
+  
+  /* "protected" */ @js.native
+  object protectedMemberModifier extends TopLevel[protectedMemberModifier with String]
+  
+  /* "public" */ @js.native
+  object publicMemberModifier extends TopLevel[publicMemberModifier with String]
+  
+  /* "static" */ @js.native
+  object staticModifier extends TopLevel[staticModifier with String]
+  
+  /* ".ts" */ @js.native
+  object tsModifier extends TopLevel[tsModifier with String]
+  
+  /* ".tsx" */ @js.native
+  object tsxModifier extends TopLevel[tsxModifier with String]
+  
 }
 

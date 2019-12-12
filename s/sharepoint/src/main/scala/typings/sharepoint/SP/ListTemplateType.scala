@@ -1,5 +1,66 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.ListTemplateType.accessRequest
+import typings.sharepoint.SP.ListTemplateType.adminTasks
+import typings.sharepoint.SP.ListTemplateType.agenda
+import typings.sharepoint.SP.ListTemplateType.announcements
+import typings.sharepoint.SP.ListTemplateType.appDataCatalog
+import typings.sharepoint.SP.ListTemplateType.callTrack
+import typings.sharepoint.SP.ListTemplateType.categories
+import typings.sharepoint.SP.ListTemplateType.circulation
+import typings.sharepoint.SP.ListTemplateType.comments
+import typings.sharepoint.SP.ListTemplateType.contacts
+import typings.sharepoint.SP.ListTemplateType.customGrid
+import typings.sharepoint.SP.ListTemplateType.dataConnectionLibrary
+import typings.sharepoint.SP.ListTemplateType.dataSources
+import typings.sharepoint.SP.ListTemplateType.decision
+import typings.sharepoint.SP.ListTemplateType.designCatalog
+import typings.sharepoint.SP.ListTemplateType.developerSiteDraftApps
+import typings.sharepoint.SP.ListTemplateType.discussionBoard
+import typings.sharepoint.SP.ListTemplateType.documentLibrary
+import typings.sharepoint.SP.ListTemplateType.events
+import typings.sharepoint.SP.ListTemplateType.externalList
+import typings.sharepoint.SP.ListTemplateType.facility
+import typings.sharepoint.SP.ListTemplateType.ganttTasks
+import typings.sharepoint.SP.ListTemplateType.genericList
+import typings.sharepoint.SP.ListTemplateType.healthReports
+import typings.sharepoint.SP.ListTemplateType.healthRules
+import typings.sharepoint.SP.ListTemplateType.helpLibrary
+import typings.sharepoint.SP.ListTemplateType.holidays
+import typings.sharepoint.SP.ListTemplateType.homePageLibrary
+import typings.sharepoint.SP.ListTemplateType.iMEDic
+import typings.sharepoint.SP.ListTemplateType.invalidType
+import typings.sharepoint.SP.ListTemplateType.issueTracking
+import typings.sharepoint.SP.ListTemplateType.links
+import typings.sharepoint.SP.ListTemplateType.listTemplateCatalog
+import typings.sharepoint.SP.ListTemplateType.maintenanceLogs
+import typings.sharepoint.SP.ListTemplateType.masterPageCatalog
+import typings.sharepoint.SP.ListTemplateType.meetingObjective
+import typings.sharepoint.SP.ListTemplateType.meetingUser
+import typings.sharepoint.SP.ListTemplateType.meetings
+import typings.sharepoint.SP.ListTemplateType.mySiteDocumentLibrary
+import typings.sharepoint.SP.ListTemplateType.noCodePublic
+import typings.sharepoint.SP.ListTemplateType.noCodeWorkflows
+import typings.sharepoint.SP.ListTemplateType.noListTemplate
+import typings.sharepoint.SP.ListTemplateType.pictureLibrary
+import typings.sharepoint.SP.ListTemplateType.posts
+import typings.sharepoint.SP.ListTemplateType.solutionCatalog
+import typings.sharepoint.SP.ListTemplateType.survey
+import typings.sharepoint.SP.ListTemplateType.tasks
+import typings.sharepoint.SP.ListTemplateType.tasksWithTimelineAndHierarchy
+import typings.sharepoint.SP.ListTemplateType.textBox
+import typings.sharepoint.SP.ListTemplateType.themeCatalog
+import typings.sharepoint.SP.ListTemplateType.thingsToBring
+import typings.sharepoint.SP.ListTemplateType.timecard
+import typings.sharepoint.SP.ListTemplateType.userInformation
+import typings.sharepoint.SP.ListTemplateType.webPageLibrary
+import typings.sharepoint.SP.ListTemplateType.webPartCatalog
+import typings.sharepoint.SP.ListTemplateType.webTemplateCatalog
+import typings.sharepoint.SP.ListTemplateType.whereabouts
+import typings.sharepoint.SP.ListTemplateType.workflowHistory
+import typings.sharepoint.SP.ListTemplateType.workflowProcess
+import typings.sharepoint.SP.ListTemplateType.xMLForm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -190,67 +251,187 @@ object ListTemplateType extends js.Object {
   @js.native
   sealed trait xMLForm extends ListTemplateType
   
-  /* 32 */ val accessRequest: typings.sharepoint.SP.ListTemplateType.accessRequest with Double = js.native
-  /* 56 */ val adminTasks: typings.sharepoint.SP.ListTemplateType.adminTasks with Double = js.native
-  /* 36 */ val agenda: typings.sharepoint.SP.ListTemplateType.agenda with Double = js.native
-  /* 6 */ val announcements: typings.sharepoint.SP.ListTemplateType.announcements with Double = js.native
-  /* 27 */ val appDataCatalog: typings.sharepoint.SP.ListTemplateType.appDataCatalog with Double = js.native
-  /* 48 */ val callTrack: typings.sharepoint.SP.ListTemplateType.callTrack with Double = js.native
-  /* 45 */ val categories: typings.sharepoint.SP.ListTemplateType.categories with Double = js.native
-  /* 49 */ val circulation: typings.sharepoint.SP.ListTemplateType.circulation with Double = js.native
-  /* 44 */ val comments: typings.sharepoint.SP.ListTemplateType.comments with Double = js.native
-  /* 7 */ val contacts: typings.sharepoint.SP.ListTemplateType.contacts with Double = js.native
-  /* 22 */ val customGrid: typings.sharepoint.SP.ListTemplateType.customGrid with Double = js.native
-  /* 28 */ val dataConnectionLibrary: typings.sharepoint.SP.ListTemplateType.dataConnectionLibrary with Double = js.native
-  /* 12 */ val dataSources: typings.sharepoint.SP.ListTemplateType.dataSources with Double = js.native
-  /* 38 */ val decision: typings.sharepoint.SP.ListTemplateType.decision with Double = js.native
-  /* 26 */ val designCatalog: typings.sharepoint.SP.ListTemplateType.designCatalog with Double = js.native
-  /* 59 */ val developerSiteDraftApps: typings.sharepoint.SP.ListTemplateType.developerSiteDraftApps with Double = js.native
-  /* 10 */ val discussionBoard: typings.sharepoint.SP.ListTemplateType.discussionBoard with Double = js.native
-  /* 3 */ val documentLibrary: typings.sharepoint.SP.ListTemplateType.documentLibrary with Double = js.native
-  /* 8 */ val events: typings.sharepoint.SP.ListTemplateType.events with Double = js.native
-  /* 53 */ val externalList: typings.sharepoint.SP.ListTemplateType.externalList with Double = js.native
-  /* 46 */ val facility: typings.sharepoint.SP.ListTemplateType.facility with Double = js.native
-  /* 30 */ val ganttTasks: typings.sharepoint.SP.ListTemplateType.ganttTasks with Double = js.native
-  /* 2 */ val genericList: typings.sharepoint.SP.ListTemplateType.genericList with Double = js.native
-  /* 58 */ val healthReports: typings.sharepoint.SP.ListTemplateType.healthReports with Double = js.native
-  /* 57 */ val healthRules: typings.sharepoint.SP.ListTemplateType.healthRules with Double = js.native
-  /* 31 */ val helpLibrary: typings.sharepoint.SP.ListTemplateType.helpLibrary with Double = js.native
-  /* 51 */ val holidays: typings.sharepoint.SP.ListTemplateType.holidays with Double = js.native
-  /* 42 */ val homePageLibrary: typings.sharepoint.SP.ListTemplateType.homePageLibrary with Double = js.native
-  /* 52 */ val iMEDic: typings.sharepoint.SP.ListTemplateType.iMEDic with Double = js.native
-  /* 0 */ val invalidType: typings.sharepoint.SP.ListTemplateType.invalidType with Double = js.native
-  /* 55 */ val issueTracking: typings.sharepoint.SP.ListTemplateType.issueTracking with Double = js.native
-  /* 5 */ val links: typings.sharepoint.SP.ListTemplateType.links with Double = js.native
-  /* 16 */ val listTemplateCatalog: typings.sharepoint.SP.ListTemplateType.listTemplateCatalog with Double = js.native
-  /* 34 */ val maintenanceLogs: typings.sharepoint.SP.ListTemplateType.maintenanceLogs with Double = js.native
-  /* 18 */ val masterPageCatalog: typings.sharepoint.SP.ListTemplateType.masterPageCatalog with Double = js.native
-  /* 39 */ val meetingObjective: typings.sharepoint.SP.ListTemplateType.meetingObjective with Double = js.native
-  /* 37 */ val meetingUser: typings.sharepoint.SP.ListTemplateType.meetingUser with Double = js.native
-  /* 35 */ val meetings: typings.sharepoint.SP.ListTemplateType.meetings with Double = js.native
-  /* 54 */ val mySiteDocumentLibrary: typings.sharepoint.SP.ListTemplateType.mySiteDocumentLibrary with Double = js.native
-  /* 24 */ val noCodePublic: typings.sharepoint.SP.ListTemplateType.noCodePublic with Double = js.native
-  /* 19 */ val noCodeWorkflows: typings.sharepoint.SP.ListTemplateType.noCodeWorkflows with Double = js.native
-  /* 1 */ val noListTemplate: typings.sharepoint.SP.ListTemplateType.noListTemplate with Double = js.native
-  /* 11 */ val pictureLibrary: typings.sharepoint.SP.ListTemplateType.pictureLibrary with Double = js.native
-  /* 43 */ val posts: typings.sharepoint.SP.ListTemplateType.posts with Double = js.native
-  /* 23 */ val solutionCatalog: typings.sharepoint.SP.ListTemplateType.solutionCatalog with Double = js.native
-  /* 4 */ val survey: typings.sharepoint.SP.ListTemplateType.survey with Double = js.native
-  /* 9 */ val tasks: typings.sharepoint.SP.ListTemplateType.tasks with Double = js.native
-  /* 33 */ val tasksWithTimelineAndHierarchy: typings.sharepoint.SP.ListTemplateType.tasksWithTimelineAndHierarchy with Double = js.native
-  /* 40 */ val textBox: typings.sharepoint.SP.ListTemplateType.textBox with Double = js.native
-  /* 25 */ val themeCatalog: typings.sharepoint.SP.ListTemplateType.themeCatalog with Double = js.native
-  /* 41 */ val thingsToBring: typings.sharepoint.SP.ListTemplateType.thingsToBring with Double = js.native
-  /* 50 */ val timecard: typings.sharepoint.SP.ListTemplateType.timecard with Double = js.native
-  /* 14 */ val userInformation: typings.sharepoint.SP.ListTemplateType.userInformation with Double = js.native
-  /* 21 */ val webPageLibrary: typings.sharepoint.SP.ListTemplateType.webPageLibrary with Double = js.native
-  /* 15 */ val webPartCatalog: typings.sharepoint.SP.ListTemplateType.webPartCatalog with Double = js.native
-  /* 13 */ val webTemplateCatalog: typings.sharepoint.SP.ListTemplateType.webTemplateCatalog with Double = js.native
-  /* 47 */ val whereabouts: typings.sharepoint.SP.ListTemplateType.whereabouts with Double = js.native
-  /* 29 */ val workflowHistory: typings.sharepoint.SP.ListTemplateType.workflowHistory with Double = js.native
-  /* 20 */ val workflowProcess: typings.sharepoint.SP.ListTemplateType.workflowProcess with Double = js.native
-  /* 17 */ val xMLForm: typings.sharepoint.SP.ListTemplateType.xMLForm with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ListTemplateType with Double] = js.native
+  /* 32 */ @js.native
+  object accessRequest extends TopLevel[accessRequest with Double]
+  
+  /* 56 */ @js.native
+  object adminTasks extends TopLevel[adminTasks with Double]
+  
+  /* 36 */ @js.native
+  object agenda extends TopLevel[agenda with Double]
+  
+  /* 6 */ @js.native
+  object announcements extends TopLevel[announcements with Double]
+  
+  /* 27 */ @js.native
+  object appDataCatalog extends TopLevel[appDataCatalog with Double]
+  
+  /* 48 */ @js.native
+  object callTrack extends TopLevel[callTrack with Double]
+  
+  /* 45 */ @js.native
+  object categories extends TopLevel[categories with Double]
+  
+  /* 49 */ @js.native
+  object circulation extends TopLevel[circulation with Double]
+  
+  /* 44 */ @js.native
+  object comments extends TopLevel[comments with Double]
+  
+  /* 7 */ @js.native
+  object contacts extends TopLevel[contacts with Double]
+  
+  /* 22 */ @js.native
+  object customGrid extends TopLevel[customGrid with Double]
+  
+  /* 28 */ @js.native
+  object dataConnectionLibrary extends TopLevel[dataConnectionLibrary with Double]
+  
+  /* 12 */ @js.native
+  object dataSources extends TopLevel[dataSources with Double]
+  
+  /* 38 */ @js.native
+  object decision extends TopLevel[decision with Double]
+  
+  /* 26 */ @js.native
+  object designCatalog extends TopLevel[designCatalog with Double]
+  
+  /* 59 */ @js.native
+  object developerSiteDraftApps extends TopLevel[developerSiteDraftApps with Double]
+  
+  /* 10 */ @js.native
+  object discussionBoard extends TopLevel[discussionBoard with Double]
+  
+  /* 3 */ @js.native
+  object documentLibrary extends TopLevel[documentLibrary with Double]
+  
+  /* 8 */ @js.native
+  object events extends TopLevel[events with Double]
+  
+  /* 53 */ @js.native
+  object externalList extends TopLevel[externalList with Double]
+  
+  /* 46 */ @js.native
+  object facility extends TopLevel[facility with Double]
+  
+  /* 30 */ @js.native
+  object ganttTasks extends TopLevel[ganttTasks with Double]
+  
+  /* 2 */ @js.native
+  object genericList extends TopLevel[genericList with Double]
+  
+  /* 58 */ @js.native
+  object healthReports extends TopLevel[healthReports with Double]
+  
+  /* 57 */ @js.native
+  object healthRules extends TopLevel[healthRules with Double]
+  
+  /* 31 */ @js.native
+  object helpLibrary extends TopLevel[helpLibrary with Double]
+  
+  /* 51 */ @js.native
+  object holidays extends TopLevel[holidays with Double]
+  
+  /* 42 */ @js.native
+  object homePageLibrary extends TopLevel[homePageLibrary with Double]
+  
+  /* 52 */ @js.native
+  object iMEDic extends TopLevel[iMEDic with Double]
+  
+  /* 0 */ @js.native
+  object invalidType extends TopLevel[invalidType with Double]
+  
+  /* 55 */ @js.native
+  object issueTracking extends TopLevel[issueTracking with Double]
+  
+  /* 5 */ @js.native
+  object links extends TopLevel[links with Double]
+  
+  /* 16 */ @js.native
+  object listTemplateCatalog extends TopLevel[listTemplateCatalog with Double]
+  
+  /* 34 */ @js.native
+  object maintenanceLogs extends TopLevel[maintenanceLogs with Double]
+  
+  /* 18 */ @js.native
+  object masterPageCatalog extends TopLevel[masterPageCatalog with Double]
+  
+  /* 39 */ @js.native
+  object meetingObjective extends TopLevel[meetingObjective with Double]
+  
+  /* 37 */ @js.native
+  object meetingUser extends TopLevel[meetingUser with Double]
+  
+  /* 35 */ @js.native
+  object meetings extends TopLevel[meetings with Double]
+  
+  /* 54 */ @js.native
+  object mySiteDocumentLibrary extends TopLevel[mySiteDocumentLibrary with Double]
+  
+  /* 24 */ @js.native
+  object noCodePublic extends TopLevel[noCodePublic with Double]
+  
+  /* 19 */ @js.native
+  object noCodeWorkflows extends TopLevel[noCodeWorkflows with Double]
+  
+  /* 1 */ @js.native
+  object noListTemplate extends TopLevel[noListTemplate with Double]
+  
+  /* 11 */ @js.native
+  object pictureLibrary extends TopLevel[pictureLibrary with Double]
+  
+  /* 43 */ @js.native
+  object posts extends TopLevel[posts with Double]
+  
+  /* 23 */ @js.native
+  object solutionCatalog extends TopLevel[solutionCatalog with Double]
+  
+  /* 4 */ @js.native
+  object survey extends TopLevel[survey with Double]
+  
+  /* 9 */ @js.native
+  object tasks extends TopLevel[tasks with Double]
+  
+  /* 33 */ @js.native
+  object tasksWithTimelineAndHierarchy extends TopLevel[tasksWithTimelineAndHierarchy with Double]
+  
+  /* 40 */ @js.native
+  object textBox extends TopLevel[textBox with Double]
+  
+  /* 25 */ @js.native
+  object themeCatalog extends TopLevel[themeCatalog with Double]
+  
+  /* 41 */ @js.native
+  object thingsToBring extends TopLevel[thingsToBring with Double]
+  
+  /* 50 */ @js.native
+  object timecard extends TopLevel[timecard with Double]
+  
+  /* 14 */ @js.native
+  object userInformation extends TopLevel[userInformation with Double]
+  
+  /* 21 */ @js.native
+  object webPageLibrary extends TopLevel[webPageLibrary with Double]
+  
+  /* 15 */ @js.native
+  object webPartCatalog extends TopLevel[webPartCatalog with Double]
+  
+  /* 13 */ @js.native
+  object webTemplateCatalog extends TopLevel[webTemplateCatalog with Double]
+  
+  /* 47 */ @js.native
+  object whereabouts extends TopLevel[whereabouts with Double]
+  
+  /* 29 */ @js.native
+  object workflowHistory extends TopLevel[workflowHistory with Double]
+  
+  /* 20 */ @js.native
+  object workflowProcess extends TopLevel[workflowProcess with Double]
+  
+  /* 17 */ @js.native
+  object xMLForm extends TopLevel[xMLForm with Double]
+  
 }
 

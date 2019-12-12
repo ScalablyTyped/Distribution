@@ -1,6 +1,13 @@
 package typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_JSON
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_MSWORD
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_PDF
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_XHTML_XML
+import typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.TEXT_HTML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,14 +40,28 @@ object AddDocumentConstants extends js.Object {
     @js.native
     sealed trait TEXT_HTML extends FileContentType
     
-    /* "application/json" */ val APPLICATION_JSON: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_JSON with String = js.native
-    /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_MSWORD with String = js.native
-    /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_PDF with String = js.native
-    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
-    /* "application/xhtml+xml" */ val APPLICATION_XHTML_XML: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.APPLICATION_XHTML_XML with String = js.native
-    /* "text/html" */ val TEXT_HTML: typings.watsonDashDeveloperDashCloud.discoveryV1DashGeneratedMod.AddDocumentConstants.FileContentType.TEXT_HTML with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[FileContentType with String] = js.native
+    /* "application/json" */ @js.native
+    object APPLICATION_JSON extends TopLevel[APPLICATION_JSON with String]
+    
+    /* "application/msword" */ @js.native
+    object APPLICATION_MSWORD extends TopLevel[APPLICATION_MSWORD with String]
+    
+    /* "application/pdf" */ @js.native
+    object APPLICATION_PDF extends TopLevel[APPLICATION_PDF with String]
+    
+    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ @js.native
+    object APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT extends TopLevel[
+              APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String
+            ]
+    
+    /* "application/xhtml+xml" */ @js.native
+    object APPLICATION_XHTML_XML extends TopLevel[APPLICATION_XHTML_XML with String]
+    
+    /* "text/html" */ @js.native
+    object TEXT_HTML extends TopLevel[TEXT_HTML with String]
+    
   }
   
 }

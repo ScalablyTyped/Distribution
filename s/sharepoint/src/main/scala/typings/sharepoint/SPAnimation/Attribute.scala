@@ -1,5 +1,11 @@
 package typings.sharepoint.SPAnimation
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPAnimation.Attribute.Height
+import typings.sharepoint.SPAnimation.Attribute.Opacity
+import typings.sharepoint.SPAnimation.Attribute.PositionX
+import typings.sharepoint.SPAnimation.Attribute.PositionY
+import typings.sharepoint.SPAnimation.Attribute.Width
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object Attribute extends js.Object {
   @js.native
   sealed trait Width extends Attribute
   
-  /* 2 */ val Height: typings.sharepoint.SPAnimation.Attribute.Height with Double = js.native
-  /* 4 */ val Opacity: typings.sharepoint.SPAnimation.Attribute.Opacity with Double = js.native
-  /* 0 */ val PositionX: typings.sharepoint.SPAnimation.Attribute.PositionX with Double = js.native
-  /* 1 */ val PositionY: typings.sharepoint.SPAnimation.Attribute.PositionY with Double = js.native
-  /* 3 */ val Width: typings.sharepoint.SPAnimation.Attribute.Width with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Attribute with Double] = js.native
+  /* 2 */ @js.native
+  object Height extends TopLevel[Height with Double]
+  
+  /* 4 */ @js.native
+  object Opacity extends TopLevel[Opacity with Double]
+  
+  /* 0 */ @js.native
+  object PositionX extends TopLevel[PositionX with Double]
+  
+  /* 1 */ @js.native
+  object PositionY extends TopLevel[PositionY with Double]
+  
+  /* 3 */ @js.native
+  object Width extends TopLevel[Width with Double]
+  
 }
 

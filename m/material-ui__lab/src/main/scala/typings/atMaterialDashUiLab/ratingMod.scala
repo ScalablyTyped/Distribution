@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object ratingMod extends js.Object {
     def this(props: RatingProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[RatingProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[RatingProps]]
+  
 }
 

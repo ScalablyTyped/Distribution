@@ -1,8 +1,15 @@
 package typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.CARD_ORIENTATION_UNSPECIFIED
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.HORIZONTAL
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.VERTICAL
 import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.LEFT
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.RIGHT
+import typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED
 import typings.protobufjs.protobufjsMod.IConversionOptions
 import typings.protobufjs.protobufjsMod.Reader
 import typings.protobufjs.protobufjsMod.Writer
@@ -119,11 +126,17 @@ object RbmStandaloneCard extends js.Object {
     @js.native
     sealed trait VERTICAL extends CardOrientation
     
-    /* 0 */ val CARD_ORIENTATION_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.CARD_ORIENTATION_UNSPECIFIED with Double = js.native
-    /* 1 */ val HORIZONTAL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.HORIZONTAL with Double = js.native
-    /* 2 */ val VERTICAL: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.CardOrientation.VERTICAL with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[CardOrientation with Double] = js.native
+    /* 0 */ @js.native
+    object CARD_ORIENTATION_UNSPECIFIED extends TopLevel[CARD_ORIENTATION_UNSPECIFIED with Double]
+    
+    /* 1 */ @js.native
+    object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
+    
+    /* 2 */ @js.native
+    object VERTICAL extends TopLevel[VERTICAL with Double]
+    
   }
   
   /** ThumbnailImageAlignment enum. */
@@ -138,11 +151,17 @@ object RbmStandaloneCard extends js.Object {
     @js.native
     sealed trait THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED extends ThumbnailImageAlignment
     
-    /* 1 */ val LEFT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.LEFT with Double = js.native
-    /* 2 */ val RIGHT: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.RIGHT with Double = js.native
-    /* 0 */ val THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED: typings.dialogflow.protosProtosMod.google.cloud.dialogflow.v2beta1.Intent.Message.RbmStandaloneCard.ThumbnailImageAlignment.THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ThumbnailImageAlignment with Double] = js.native
+    /* 1 */ @js.native
+    object LEFT extends TopLevel[LEFT with Double]
+    
+    /* 2 */ @js.native
+    object RIGHT extends TopLevel[RIGHT with Double]
+    
+    /* 0 */ @js.native
+    object THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED extends TopLevel[THUMBNAIL_IMAGE_ALIGNMENT_UNSPECIFIED with Double]
+    
   }
   
 }

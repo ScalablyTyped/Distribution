@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Decrement
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Delete
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Increment
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.None
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ExtensionStatisticOperation extends js.Object {
   @js.native
   sealed trait Set extends ExtensionStatisticOperation
   
-  /* 3 */ val Decrement: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Decrement with Double = js.native
-  /* 4 */ val Delete: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Delete with Double = js.native
-  /* 2 */ val Increment: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Increment with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.None with Double = js.native
-  /* 1 */ val Set: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ExtensionStatisticOperation.Set with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExtensionStatisticOperation with Double] = js.native
+  /* 3 */ @js.native
+  object Decrement extends TopLevel[Decrement with Double]
+  
+  /* 4 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 2 */ @js.native
+  object Increment extends TopLevel[Increment with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Set extends TopLevel[Set with Double]
+  
 }
 

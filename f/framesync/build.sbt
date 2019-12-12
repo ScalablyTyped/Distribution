@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "framesync"
-version := "4.0.4-8951fe"
+version := "4.0.4-7950c8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

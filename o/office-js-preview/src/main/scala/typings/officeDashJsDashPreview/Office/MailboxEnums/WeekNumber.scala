@@ -1,5 +1,11 @@
 package typings.officeDashJsDashPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.First
+import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Fourth
+import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Last
+import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Second
+import typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Third
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,12 +55,22 @@ object WeekNumber extends js.Object {
   @js.native
   sealed trait Third extends WeekNumber
   
-  /* "first" */ val First: typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.First with String = js.native
-  /* "fourth" */ val Fourth: typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Fourth with String = js.native
-  /* "last" */ val Last: typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Last with String = js.native
-  /* "second" */ val Second: typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Second with String = js.native
-  /* "third" */ val Third: typings.officeDashJsDashPreview.Office.MailboxEnums.WeekNumber.Third with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WeekNumber with String] = js.native
+  /* "first" */ @js.native
+  object First extends TopLevel[First with String]
+  
+  /* "fourth" */ @js.native
+  object Fourth extends TopLevel[Fourth with String]
+  
+  /* "last" */ @js.native
+  object Last extends TopLevel[Last with String]
+  
+  /* "second" */ @js.native
+  object Second extends TopLevel[Second with String]
+  
+  /* "third" */ @js.native
+  object Third extends TopLevel[Third with String]
+  
 }
 

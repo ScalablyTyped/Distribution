@@ -1,5 +1,10 @@
 package typings.expo.buildScreenOrientationScreenOrientationDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_PRIMARY
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_SECONDARY
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_PRIMARY
+import typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_SECONDARY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object WebOrientation extends js.Object {
   @js.native
   sealed trait PORTRAIT_SECONDARY extends WebOrientation
   
-  /* "landscape-primary" */ val LANDSCAPE_PRIMARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_PRIMARY with String = js.native
-  /* "landscape-secondary" */ val LANDSCAPE_SECONDARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.LANDSCAPE_SECONDARY with String = js.native
-  /* "portrait-primary" */ val PORTRAIT_PRIMARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_PRIMARY with String = js.native
-  /* "portrait-secondary" */ val PORTRAIT_SECONDARY: typings.expo.buildScreenOrientationScreenOrientationDotTypesMod.WebOrientation.PORTRAIT_SECONDARY with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WebOrientation with String] = js.native
+  /* "landscape-primary" */ @js.native
+  object LANDSCAPE_PRIMARY extends TopLevel[LANDSCAPE_PRIMARY with String]
+  
+  /* "landscape-secondary" */ @js.native
+  object LANDSCAPE_SECONDARY extends TopLevel[LANDSCAPE_SECONDARY with String]
+  
+  /* "portrait-primary" */ @js.native
+  object PORTRAIT_PRIMARY extends TopLevel[PORTRAIT_PRIMARY with String]
+  
+  /* "portrait-secondary" */ @js.native
+  object PORTRAIT_SECONDARY extends TopLevel[PORTRAIT_SECONDARY with String]
+  
 }
 

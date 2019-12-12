@@ -1,5 +1,26 @@
 package typings.browserfs.distNodeBackendZipFSMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ACORN_RISC
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ALT_MVS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.AMIGA
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ATARI_ST
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.BEOS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.CP_M
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MAC
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MSDOS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MVS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.NTFS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OPENVMS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS2_HPFS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OSX
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS_400
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.TANDEM
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.UNIX
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VFAT
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VM_CMS
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VSE
+import typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.Z_SYSTEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,27 +91,67 @@ object ExternalFileAttributeType extends js.Object {
   @js.native
   sealed trait Z_SYSTEM extends ExternalFileAttributeType
   
-  /* 13 */ val ACORN_RISC: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ACORN_RISC with Double = js.native
-  /* 15 */ val ALT_MVS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ALT_MVS with Double = js.native
-  /* 1 */ val AMIGA: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.AMIGA with Double = js.native
-  /* 5 */ val ATARI_ST: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.ATARI_ST with Double = js.native
-  /* 16 */ val BEOS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.BEOS with Double = js.native
-  /* 9 */ val CP_M: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.CP_M with Double = js.native
-  /* 7 */ val MAC: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MAC with Double = js.native
-  /* 0 */ val MSDOS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MSDOS with Double = js.native
-  /* 11 */ val MVS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.MVS with Double = js.native
-  /* 10 */ val NTFS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.NTFS with Double = js.native
-  /* 2 */ val OPENVMS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OPENVMS with Double = js.native
-  /* 6 */ val OS2_HPFS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS2_HPFS with Double = js.native
-  /* 19 */ val OSX: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OSX with Double = js.native
-  /* 18 */ val OS_400: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.OS_400 with Double = js.native
-  /* 17 */ val TANDEM: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.TANDEM with Double = js.native
-  /* 3 */ val UNIX: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.UNIX with Double = js.native
-  /* 14 */ val VFAT: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VFAT with Double = js.native
-  /* 4 */ val VM_CMS: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VM_CMS with Double = js.native
-  /* 12 */ val VSE: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.VSE with Double = js.native
-  /* 8 */ val Z_SYSTEM: typings.browserfs.distNodeBackendZipFSMod.ExternalFileAttributeType.Z_SYSTEM with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExternalFileAttributeType with Double] = js.native
+  /* 13 */ @js.native
+  object ACORN_RISC extends TopLevel[ACORN_RISC with Double]
+  
+  /* 15 */ @js.native
+  object ALT_MVS extends TopLevel[ALT_MVS with Double]
+  
+  /* 1 */ @js.native
+  object AMIGA extends TopLevel[AMIGA with Double]
+  
+  /* 5 */ @js.native
+  object ATARI_ST extends TopLevel[ATARI_ST with Double]
+  
+  /* 16 */ @js.native
+  object BEOS extends TopLevel[BEOS with Double]
+  
+  /* 9 */ @js.native
+  object CP_M extends TopLevel[CP_M with Double]
+  
+  /* 7 */ @js.native
+  object MAC extends TopLevel[MAC with Double]
+  
+  /* 0 */ @js.native
+  object MSDOS extends TopLevel[MSDOS with Double]
+  
+  /* 11 */ @js.native
+  object MVS extends TopLevel[MVS with Double]
+  
+  /* 10 */ @js.native
+  object NTFS extends TopLevel[NTFS with Double]
+  
+  /* 2 */ @js.native
+  object OPENVMS extends TopLevel[OPENVMS with Double]
+  
+  /* 6 */ @js.native
+  object OS2_HPFS extends TopLevel[OS2_HPFS with Double]
+  
+  /* 19 */ @js.native
+  object OSX extends TopLevel[OSX with Double]
+  
+  /* 18 */ @js.native
+  object OS_400 extends TopLevel[OS_400 with Double]
+  
+  /* 17 */ @js.native
+  object TANDEM extends TopLevel[TANDEM with Double]
+  
+  /* 3 */ @js.native
+  object UNIX extends TopLevel[UNIX with Double]
+  
+  /* 14 */ @js.native
+  object VFAT extends TopLevel[VFAT with Double]
+  
+  /* 4 */ @js.native
+  object VM_CMS extends TopLevel[VM_CMS with Double]
+  
+  /* 12 */ @js.native
+  object VSE extends TopLevel[VSE with Double]
+  
+  /* 8 */ @js.native
+  object Z_SYSTEM extends TopLevel[Z_SYSTEM with Double]
+  
 }
 

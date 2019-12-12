@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-state-sync"
-version := "2.0-dt-20190131Z-a8a4d9"
+version := "2.0-dt-20190131Z-a3092e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

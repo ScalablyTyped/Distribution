@@ -1,5 +1,8 @@
 package typings.microsoftDashAjax.Sys.UI
 
+import org.scalablytyped.runtime.TopLevel
+import typings.microsoftDashAjax.Sys.UI.VisibilityMode.collapse
+import typings.microsoftDashAjax.Sys.UI.VisibilityMode.hide
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,9 +29,13 @@ object VisibilityMode extends js.Object {
   @js.native
   sealed trait hide extends VisibilityMode
   
-  /* 1 */ val collapse: typings.microsoftDashAjax.Sys.UI.VisibilityMode.collapse with Double = js.native
-  /* 0 */ val hide: typings.microsoftDashAjax.Sys.UI.VisibilityMode.hide with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VisibilityMode with Double] = js.native
+  /* 1 */ @js.native
+  object collapse extends TopLevel[collapse with Double]
+  
+  /* 0 */ @js.native
+  object hide extends TopLevel[hide with Double]
+  
 }
 

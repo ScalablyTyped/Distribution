@@ -1,5 +1,21 @@
 package typings.steamDashClient.steamDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.steamDashClient.steamDashClientMod.EClanPermission.AllMembers
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Anybody
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Member
+import typings.steamDashClient.steamDashClientMod.EClanPermission.MemberAllowed
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Moderator
+import typings.steamDashClient.steamDashClientMod.EClanPermission.ModeratorAllowed
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Nobody
+import typings.steamDashClient.steamDashClientMod.EClanPermission.NonMember
+import typings.steamDashClient.steamDashClientMod.EClanPermission.OGGGameOwner
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Officer
+import typings.steamDashClient.steamDashClientMod.EClanPermission.OfficerAllowed
+import typings.steamDashClient.steamDashClientMod.EClanPermission.Owner
+import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAllowed
+import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAndOfficer
+import typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerOfficerModerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,22 +78,52 @@ object EClanPermission extends js.Object {
   @js.native
   sealed trait OwnerOfficerModerator extends EClanPermission
   
-  /* 1 | 2 | 8 | 4 */ val AllMembers: typings.steamDashClient.steamDashClientMod.EClanPermission.AllMembers with Double = js.native
-  /* 128 | 4 | 8 | 2 | 1 */ val Anybody: typings.steamDashClient.steamDashClientMod.EClanPermission.Anybody with Double = js.native
-  /* 4 */ val Member: typings.steamDashClient.steamDashClientMod.EClanPermission.Member with Double = js.native
-  /* 128 | 4 */ val MemberAllowed: typings.steamDashClient.steamDashClientMod.EClanPermission.MemberAllowed with Double = js.native
-  /* 8 */ val Moderator: typings.steamDashClient.steamDashClientMod.EClanPermission.Moderator with Double = js.native
-  /* 128 | 4 | 8 */ val ModeratorAllowed: typings.steamDashClient.steamDashClientMod.EClanPermission.ModeratorAllowed with Double = js.native
-  /* 0 */ val Nobody: typings.steamDashClient.steamDashClientMod.EClanPermission.Nobody with Double = js.native
-  /* 128 */ val NonMember: typings.steamDashClient.steamDashClientMod.EClanPermission.NonMember with Double = js.native
-  /* 16 */ val OGGGameOwner: typings.steamDashClient.steamDashClientMod.EClanPermission.OGGGameOwner with Double = js.native
-  /* 2 */ val Officer: typings.steamDashClient.steamDashClientMod.EClanPermission.Officer with Double = js.native
-  /* 128 | 4 | 8 | 2 */ val OfficerAllowed: typings.steamDashClient.steamDashClientMod.EClanPermission.OfficerAllowed with Double = js.native
-  /* 1 */ val Owner: typings.steamDashClient.steamDashClientMod.EClanPermission.Owner with Double = js.native
-  /* 128 | 4 | 8 | 2 | 1 */ val OwnerAllowed: typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAllowed with Double = js.native
-  /* 3 */ val OwnerAndOfficer: typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerAndOfficer with Double = js.native
-  /* 1 | 2 | 8 */ val OwnerOfficerModerator: typings.steamDashClient.steamDashClientMod.EClanPermission.OwnerOfficerModerator with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EClanPermission with Double] = js.native
+  /* 1 | 2 | 8 | 4 */ @js.native
+  object AllMembers extends TopLevel[AllMembers with Double]
+  
+  /* 128 | 4 | 8 | 2 | 1 */ @js.native
+  object Anybody extends TopLevel[Anybody with Double]
+  
+  /* 4 */ @js.native
+  object Member extends TopLevel[Member with Double]
+  
+  /* 128 | 4 */ @js.native
+  object MemberAllowed extends TopLevel[MemberAllowed with Double]
+  
+  /* 8 */ @js.native
+  object Moderator extends TopLevel[Moderator with Double]
+  
+  /* 128 | 4 | 8 */ @js.native
+  object ModeratorAllowed extends TopLevel[ModeratorAllowed with Double]
+  
+  /* 0 */ @js.native
+  object Nobody extends TopLevel[Nobody with Double]
+  
+  /* 128 */ @js.native
+  object NonMember extends TopLevel[NonMember with Double]
+  
+  /* 16 */ @js.native
+  object OGGGameOwner extends TopLevel[OGGGameOwner with Double]
+  
+  /* 2 */ @js.native
+  object Officer extends TopLevel[Officer with Double]
+  
+  /* 128 | 4 | 8 | 2 */ @js.native
+  object OfficerAllowed extends TopLevel[OfficerAllowed with Double]
+  
+  /* 1 */ @js.native
+  object Owner extends TopLevel[Owner with Double]
+  
+  /* 128 | 4 | 8 | 2 | 1 */ @js.native
+  object OwnerAllowed extends TopLevel[OwnerAllowed with Double]
+  
+  /* 3 */ @js.native
+  object OwnerAndOfficer extends TopLevel[OwnerAndOfficer with Double]
+  
+  /* 1 | 2 | 8 */ @js.native
+  object OwnerOfficerModerator extends TopLevel[OwnerOfficerModerator with Double]
+  
 }
 

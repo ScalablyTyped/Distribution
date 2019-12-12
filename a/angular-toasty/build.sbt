@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-toasty"
-version := "v1.0.2-dt-20190322Z-56199e"
+version := "v1.0.2-dt-20190322Z-e90396"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

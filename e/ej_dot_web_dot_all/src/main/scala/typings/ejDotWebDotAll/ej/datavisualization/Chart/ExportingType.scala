@@ -1,5 +1,12 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.DOCX
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.JPG
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PDF
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PNG
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.SVG
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.XLSX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,13 +41,25 @@ object ExportingType extends js.Object {
   @js.native
   sealed trait XLSX extends ExportingType
   
-  /* 3 */ val DOCX: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.DOCX with Double = js.native
-  /* 1 */ val JPG: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.JPG with Double = js.native
-  /* 2 */ val PDF: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PDF with Double = js.native
-  /* 0 */ val PNG: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.PNG with Double = js.native
-  /* 5 */ val SVG: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.SVG with Double = js.native
-  /* 4 */ val XLSX: typings.ejDotWebDotAll.ej.datavisualization.Chart.ExportingType.XLSX with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ExportingType with Double] = js.native
+  /* 3 */ @js.native
+  object DOCX extends TopLevel[DOCX with Double]
+  
+  /* 1 */ @js.native
+  object JPG extends TopLevel[JPG with Double]
+  
+  /* 2 */ @js.native
+  object PDF extends TopLevel[PDF with Double]
+  
+  /* 0 */ @js.native
+  object PNG extends TopLevel[PNG with Double]
+  
+  /* 5 */ @js.native
+  object SVG extends TopLevel[SVG with Double]
+  
+  /* 4 */ @js.native
+  object XLSX extends TopLevel[XLSX with Double]
+  
 }
 

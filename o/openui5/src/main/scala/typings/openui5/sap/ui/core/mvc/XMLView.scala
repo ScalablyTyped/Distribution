@@ -1,6 +1,10 @@
 package typings.openui5.sap.ui.core.mvc
 
+import org.scalablytyped.runtime.TopLevel
 import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType
+import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.CONTROLS
+import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.VIEWXML
+import typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,11 +60,17 @@ object XMLView extends js.Object {
     @js.native
     sealed trait XML extends PreprocessorType
     
-    /* 0 */ val CONTROLS: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.CONTROLS with Double = js.native
-    /* 1 */ val VIEWXML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.VIEWXML with Double = js.native
-    /* 2 */ val XML: typings.openui5.sap.ui.core.mvc.XMLView.PreprocessorType.XML with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[PreprocessorType with Double] = js.native
+    /* 0 */ @js.native
+    object CONTROLS extends TopLevel[CONTROLS with Double]
+    
+    /* 1 */ @js.native
+    object VIEWXML extends TopLevel[VIEWXML with Double]
+    
+    /* 2 */ @js.native
+    object XML extends TopLevel[XML with Double]
+    
   }
   
 }

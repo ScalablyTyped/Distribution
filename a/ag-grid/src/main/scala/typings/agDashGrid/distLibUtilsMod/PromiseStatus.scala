@@ -1,5 +1,8 @@
 package typings.agDashGrid.distLibUtilsMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.agDashGrid.distLibUtilsMod.PromiseStatus.IN_PROGRESS
+import typings.agDashGrid.distLibUtilsMod.PromiseStatus.RESOLVED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object PromiseStatus extends js.Object {
   @js.native
   sealed trait RESOLVED extends PromiseStatus
   
-  /* 0 */ val IN_PROGRESS: typings.agDashGrid.distLibUtilsMod.PromiseStatus.IN_PROGRESS with Double = js.native
-  /* 1 */ val RESOLVED: typings.agDashGrid.distLibUtilsMod.PromiseStatus.RESOLVED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PromiseStatus with Double] = js.native
+  /* 0 */ @js.native
+  object IN_PROGRESS extends TopLevel[IN_PROGRESS with Double]
+  
+  /* 1 */ @js.native
+  object RESOLVED extends TopLevel[RESOLVED with Double]
+  
 }
 

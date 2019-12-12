@@ -1,5 +1,10 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.IndentAction.Indent
+import typings.vscode.vscodeMod.IndentAction.IndentOutdent
+import typings.vscode.vscodeMod.IndentAction.None
+import typings.vscode.vscodeMod.IndentAction.Outdent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,11 +41,19 @@ object IndentAction extends js.Object {
   @js.native
   sealed trait Outdent extends IndentAction
   
-  /* 1 */ val Indent: typings.vscode.vscodeMod.IndentAction.Indent with Double = js.native
-  /* 2 */ val IndentOutdent: typings.vscode.vscodeMod.IndentAction.IndentOutdent with Double = js.native
-  /* 0 */ val None: typings.vscode.vscodeMod.IndentAction.None with Double = js.native
-  /* 3 */ val Outdent: typings.vscode.vscodeMod.IndentAction.Outdent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IndentAction with Double] = js.native
+  /* 1 */ @js.native
+  object Indent extends TopLevel[Indent with Double]
+  
+  /* 2 */ @js.native
+  object IndentOutdent extends TopLevel[IndentOutdent with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Outdent extends TopLevel[Outdent with Double]
+  
 }
 

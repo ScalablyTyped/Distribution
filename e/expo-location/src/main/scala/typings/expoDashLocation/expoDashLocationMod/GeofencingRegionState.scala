@@ -1,5 +1,9 @@
 package typings.expoDashLocation.expoDashLocationMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Inside
+import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Outside
+import typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object GeofencingRegionState extends js.Object {
   @js.native
   sealed trait Unknown extends GeofencingRegionState
   
-  /* 1 */ val Inside: typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Inside with Double = js.native
-  /* 2 */ val Outside: typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Outside with Double = js.native
-  /* 0 */ val Unknown: typings.expoDashLocation.expoDashLocationMod.GeofencingRegionState.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GeofencingRegionState with Double] = js.native
+  /* 1 */ @js.native
+  object Inside extends TopLevel[Inside with Double]
+  
+  /* 2 */ @js.native
+  object Outside extends TopLevel[Outside with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 

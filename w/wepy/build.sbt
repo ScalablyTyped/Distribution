@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wepy"
-version := "1.7-dt-20191126Z-c06f0a"
+version := "1.7-dt-20191126Z-d7baf5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

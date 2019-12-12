@@ -1,5 +1,14 @@
 package typings.officeDashJs.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Excel.DataChangeType.cellDeleted
+import typings.officeDashJs.Excel.DataChangeType.cellInserted
+import typings.officeDashJs.Excel.DataChangeType.columnDeleted
+import typings.officeDashJs.Excel.DataChangeType.columnInserted
+import typings.officeDashJs.Excel.DataChangeType.rangeEdited
+import typings.officeDashJs.Excel.DataChangeType.rowDeleted
+import typings.officeDashJs.Excel.DataChangeType.rowInserted
+import typings.officeDashJs.Excel.DataChangeType.unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -77,15 +86,31 @@ object DataChangeType extends js.Object {
   @js.native
   sealed trait unknown extends DataChangeType
   
-  /* "CellDeleted" */ val cellDeleted: typings.officeDashJs.Excel.DataChangeType.cellDeleted with String = js.native
-  /* "CellInserted" */ val cellInserted: typings.officeDashJs.Excel.DataChangeType.cellInserted with String = js.native
-  /* "ColumnDeleted" */ val columnDeleted: typings.officeDashJs.Excel.DataChangeType.columnDeleted with String = js.native
-  /* "ColumnInserted" */ val columnInserted: typings.officeDashJs.Excel.DataChangeType.columnInserted with String = js.native
-  /* "RangeEdited" */ val rangeEdited: typings.officeDashJs.Excel.DataChangeType.rangeEdited with String = js.native
-  /* "RowDeleted" */ val rowDeleted: typings.officeDashJs.Excel.DataChangeType.rowDeleted with String = js.native
-  /* "RowInserted" */ val rowInserted: typings.officeDashJs.Excel.DataChangeType.rowInserted with String = js.native
-  /* "Unknown" */ val unknown: typings.officeDashJs.Excel.DataChangeType.unknown with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DataChangeType with String] = js.native
+  /* "CellDeleted" */ @js.native
+  object cellDeleted extends TopLevel[cellDeleted with String]
+  
+  /* "CellInserted" */ @js.native
+  object cellInserted extends TopLevel[cellInserted with String]
+  
+  /* "ColumnDeleted" */ @js.native
+  object columnDeleted extends TopLevel[columnDeleted with String]
+  
+  /* "ColumnInserted" */ @js.native
+  object columnInserted extends TopLevel[columnInserted with String]
+  
+  /* "RangeEdited" */ @js.native
+  object rangeEdited extends TopLevel[rangeEdited with String]
+  
+  /* "RowDeleted" */ @js.native
+  object rowDeleted extends TopLevel[rowDeleted with String]
+  
+  /* "RowInserted" */ @js.native
+  object rowInserted extends TopLevel[rowInserted with String]
+  
+  /* "Unknown" */ @js.native
+  object unknown extends TopLevel[unknown with String]
+  
 }
 

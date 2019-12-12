@@ -1,5 +1,13 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.icmp
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.igmp
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.ipv6Icmp
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.none
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.pgm
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.tcp
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.udp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,14 +47,28 @@ object VpnIPProtocol extends js.Object {
   @js.native
   sealed trait udp extends VpnIPProtocol
   
-  /* 3 */ val icmp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.icmp with Double = js.native
-  /* 5 */ val igmp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.igmp with Double = js.native
-  /* 4 */ val ipv6Icmp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.ipv6Icmp with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.none with Double = js.native
-  /* 6 */ val pgm: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.pgm with Double = js.native
-  /* 1 */ val tcp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.tcp with Double = js.native
-  /* 2 */ val udp: typings.winrtDashUwp.Windows.Networking.Vpn.VpnIPProtocol.udp with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnIPProtocol with Double] = js.native
+  /* 3 */ @js.native
+  object icmp extends TopLevel[icmp with Double]
+  
+  /* 5 */ @js.native
+  object igmp extends TopLevel[igmp with Double]
+  
+  /* 4 */ @js.native
+  object ipv6Icmp extends TopLevel[ipv6Icmp with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 6 */ @js.native
+  object pgm extends TopLevel[pgm with Double]
+  
+  /* 1 */ @js.native
+  object tcp extends TopLevel[tcp with Double]
+  
+  /* 2 */ @js.native
+  object udp extends TopLevel[udp with Double]
+  
 }
 

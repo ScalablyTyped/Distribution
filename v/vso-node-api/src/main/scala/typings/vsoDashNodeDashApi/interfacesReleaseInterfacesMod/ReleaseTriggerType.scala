@@ -1,5 +1,13 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.ArtifactSource
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.ContainerImage
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Package
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.PullRequest
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Schedule
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.SourceRepo
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +39,28 @@ object ReleaseTriggerType extends js.Object {
   @js.native
   sealed trait Undefined extends ReleaseTriggerType
   
-  /* 1 */ val ArtifactSource: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.ArtifactSource with Double = js.native
-  /* 4 */ val ContainerImage: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.ContainerImage with Double = js.native
-  /* 5 */ val Package: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Package with Double = js.native
-  /* 6 */ val PullRequest: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.PullRequest with Double = js.native
-  /* 2 */ val Schedule: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Schedule with Double = js.native
-  /* 3 */ val SourceRepo: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.SourceRepo with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.ReleaseTriggerType.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReleaseTriggerType with Double] = js.native
+  /* 1 */ @js.native
+  object ArtifactSource extends TopLevel[ArtifactSource with Double]
+  
+  /* 4 */ @js.native
+  object ContainerImage extends TopLevel[ContainerImage with Double]
+  
+  /* 5 */ @js.native
+  object Package extends TopLevel[Package with Double]
+  
+  /* 6 */ @js.native
+  object PullRequest extends TopLevel[PullRequest with Double]
+  
+  /* 2 */ @js.native
+  object Schedule extends TopLevel[Schedule with Double]
+  
+  /* 3 */ @js.native
+  object SourceRepo extends TopLevel[SourceRepo with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

@@ -1,5 +1,12 @@
 package typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.AdminResponseForReview
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeleteAdminReply
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeletePublisherReply
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.FlagReview
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.ReplyToReview
+import typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.UpdateReview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,13 +53,25 @@ object ReviewPatchOperation extends js.Object {
   @js.native
   sealed trait UpdateReview extends ReviewPatchOperation
   
-  /* 4 */ val AdminResponseForReview: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.AdminResponseForReview with Double = js.native
-  /* 5 */ val DeleteAdminReply: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeleteAdminReply with Double = js.native
-  /* 6 */ val DeletePublisherReply: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.DeletePublisherReply with Double = js.native
-  /* 1 */ val FlagReview: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.FlagReview with Double = js.native
-  /* 3 */ val ReplyToReview: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.ReplyToReview with Double = js.native
-  /* 2 */ val UpdateReview: typings.vsoDashNodeDashApi.interfacesGalleryInterfacesMod.ReviewPatchOperation.UpdateReview with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReviewPatchOperation with Double] = js.native
+  /* 4 */ @js.native
+  object AdminResponseForReview extends TopLevel[AdminResponseForReview with Double]
+  
+  /* 5 */ @js.native
+  object DeleteAdminReply extends TopLevel[DeleteAdminReply with Double]
+  
+  /* 6 */ @js.native
+  object DeletePublisherReply extends TopLevel[DeletePublisherReply with Double]
+  
+  /* 1 */ @js.native
+  object FlagReview extends TopLevel[FlagReview with Double]
+  
+  /* 3 */ @js.native
+  object ReplyToReview extends TopLevel[ReplyToReview with Double]
+  
+  /* 2 */ @js.native
+  object UpdateReview extends TopLevel[UpdateReview with Double]
+  
 }
 

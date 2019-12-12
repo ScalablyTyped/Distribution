@@ -1,5 +1,10 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Chart
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.FixedValue
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.Percentage
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardDeviation
+import typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,11 +31,19 @@ object ErrorBarType extends js.Object {
   @js.native
   sealed trait StandardError extends ErrorBarType
   
-  /* 0 */ val FixedValue: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.FixedValue with Double = js.native
-  /* 1 */ val Percentage: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.Percentage with Double = js.native
-  /* 2 */ val StandardDeviation: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardDeviation with Double = js.native
-  /* 3 */ val StandardError: typings.ejDotWebDotAll.ej.datavisualization.Chart.ErrorBarType.StandardError with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ErrorBarType with Double] = js.native
+  /* 0 */ @js.native
+  object FixedValue extends TopLevel[FixedValue with Double]
+  
+  /* 1 */ @js.native
+  object Percentage extends TopLevel[Percentage with Double]
+  
+  /* 2 */ @js.native
+  object StandardDeviation extends TopLevel[StandardDeviation with Double]
+  
+  /* 3 */ @js.native
+  object StandardError extends TopLevel[StandardError with Double]
+  
 }
 

@@ -1,5 +1,16 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_AUTO
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX3
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX4
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_JPEG
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_LZW
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_NONE
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_PACKBITS
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_RLE
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T4
+import typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,17 +60,37 @@ object EnumDWT_TIFFCompressionType extends js.Object {
   @js.native
   sealed trait TIFF_T6 extends EnumDWT_TIFFCompressionType
   
-  /* 0 */ val TIFF_AUTO: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_AUTO with Double = js.native
-  /* 3 */ val TIFF_FAX3: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX3 with Double = js.native
-  /* 4 */ val TIFF_FAX4: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_FAX4 with Double = js.native
-  /* 7 */ val TIFF_JPEG: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_JPEG with Double = js.native
-  /* 5 */ val TIFF_LZW: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_LZW with Double = js.native
-  /* 1 */ val TIFF_NONE: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_NONE with Double = js.native
-  /* 32773 */ val TIFF_PACKBITS: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_PACKBITS with Double = js.native
-  /* 2 */ val TIFF_RLE: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_RLE with Double = js.native
-  /* 3 */ val TIFF_T4: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T4 with Double = js.native
-  /* 4 */ val TIFF_T6: typings.dwt.EnumDWT_TIFFCompressionType.TIFF_T6 with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_TIFFCompressionType with Double] = js.native
+  /* 0 */ @js.native
+  object TIFF_AUTO extends TopLevel[TIFF_AUTO with Double]
+  
+  /* 3 */ @js.native
+  object TIFF_FAX3 extends TopLevel[TIFF_FAX3 with Double]
+  
+  /* 4 */ @js.native
+  object TIFF_FAX4 extends TopLevel[TIFF_FAX4 with Double]
+  
+  /* 7 */ @js.native
+  object TIFF_JPEG extends TopLevel[TIFF_JPEG with Double]
+  
+  /* 5 */ @js.native
+  object TIFF_LZW extends TopLevel[TIFF_LZW with Double]
+  
+  /* 1 */ @js.native
+  object TIFF_NONE extends TopLevel[TIFF_NONE with Double]
+  
+  /* 32773 */ @js.native
+  object TIFF_PACKBITS extends TopLevel[TIFF_PACKBITS with Double]
+  
+  /* 2 */ @js.native
+  object TIFF_RLE extends TopLevel[TIFF_RLE with Double]
+  
+  /* 3 */ @js.native
+  object TIFF_T4 extends TopLevel[TIFF_T4 with Double]
+  
+  /* 4 */ @js.native
+  object TIFF_T6 extends TopLevel[TIFF_T6 with Double]
+  
 }
 

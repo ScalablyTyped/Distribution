@@ -1,5 +1,17 @@
 package typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Archive
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Call
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Delete
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.MarkAsRead
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.MarkAsUnread
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Mute
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.None
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Reply
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.ThumbsDown
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.ThumbsUp
+import typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Unmute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,18 +55,40 @@ object SemanticAction extends js.Object {
   @js.native
   sealed trait Unmute extends SemanticAction
   
-  /* 5 */ val Archive: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Archive with Double = js.native
-  /* 10 */ val Call: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Call with Double = js.native
-  /* 4 */ val Delete: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Delete with Double = js.native
-  /* 2 */ val MarkAsRead: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.MarkAsRead with Double = js.native
-  /* 3 */ val MarkAsUnread: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.MarkAsUnread with Double = js.native
-  /* 6 */ val Mute: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Mute with Double = js.native
-  /* 0 */ val None: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.None with Double = js.native
-  /* 1 */ val Reply: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Reply with Double = js.native
-  /* 9 */ val ThumbsDown: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.ThumbsDown with Double = js.native
-  /* 8 */ val ThumbsUp: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.ThumbsUp with Double = js.native
-  /* 7 */ val Unmute: typings.reactDashNativeDashFirebase.reactDashNativeDashFirebaseMod.RNFirebase.notifications.Android.SemanticAction.Unmute with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SemanticAction with Double] = js.native
+  /* 5 */ @js.native
+  object Archive extends TopLevel[Archive with Double]
+  
+  /* 10 */ @js.native
+  object Call extends TopLevel[Call with Double]
+  
+  /* 4 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 2 */ @js.native
+  object MarkAsRead extends TopLevel[MarkAsRead with Double]
+  
+  /* 3 */ @js.native
+  object MarkAsUnread extends TopLevel[MarkAsUnread with Double]
+  
+  /* 6 */ @js.native
+  object Mute extends TopLevel[Mute with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Reply extends TopLevel[Reply with Double]
+  
+  /* 9 */ @js.native
+  object ThumbsDown extends TopLevel[ThumbsDown with Double]
+  
+  /* 8 */ @js.native
+  object ThumbsUp extends TopLevel[ThumbsUp with Double]
+  
+  /* 7 */ @js.native
+  object Unmute extends TopLevel[Unmute with Double]
+  
 }
 

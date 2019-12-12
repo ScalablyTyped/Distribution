@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jimp__plugin-contain"
-version := "0.8.5-71761d"
+version := "0.8.5-1b13e2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jimp__core" % "0.8.5-b7acfa",
+  "org.scalablytyped" %%% "jimp__core" % "0.8.5-bbe5c8",
   "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false

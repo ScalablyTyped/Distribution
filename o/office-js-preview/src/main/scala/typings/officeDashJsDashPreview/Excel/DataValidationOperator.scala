@@ -1,5 +1,14 @@
 package typings.officeDashJsDashPreview.Excel
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.between
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.equalTo
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.greaterThan
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.greaterThanOrEqualTo
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.lessThan
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.lessThanOrEqualTo
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.notBetween
+import typings.officeDashJsDashPreview.Excel.DataValidationOperator.notEqualTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,15 +49,31 @@ object DataValidationOperator extends js.Object {
   @js.native
   sealed trait notEqualTo extends DataValidationOperator
   
-  /* "Between" */ val between: typings.officeDashJsDashPreview.Excel.DataValidationOperator.between with String = js.native
-  /* "EqualTo" */ val equalTo: typings.officeDashJsDashPreview.Excel.DataValidationOperator.equalTo with String = js.native
-  /* "GreaterThan" */ val greaterThan: typings.officeDashJsDashPreview.Excel.DataValidationOperator.greaterThan with String = js.native
-  /* "GreaterThanOrEqualTo" */ val greaterThanOrEqualTo: typings.officeDashJsDashPreview.Excel.DataValidationOperator.greaterThanOrEqualTo with String = js.native
-  /* "LessThan" */ val lessThan: typings.officeDashJsDashPreview.Excel.DataValidationOperator.lessThan with String = js.native
-  /* "LessThanOrEqualTo" */ val lessThanOrEqualTo: typings.officeDashJsDashPreview.Excel.DataValidationOperator.lessThanOrEqualTo with String = js.native
-  /* "NotBetween" */ val notBetween: typings.officeDashJsDashPreview.Excel.DataValidationOperator.notBetween with String = js.native
-  /* "NotEqualTo" */ val notEqualTo: typings.officeDashJsDashPreview.Excel.DataValidationOperator.notEqualTo with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[DataValidationOperator with String] = js.native
+  /* "Between" */ @js.native
+  object between extends TopLevel[between with String]
+  
+  /* "EqualTo" */ @js.native
+  object equalTo extends TopLevel[equalTo with String]
+  
+  /* "GreaterThan" */ @js.native
+  object greaterThan extends TopLevel[greaterThan with String]
+  
+  /* "GreaterThanOrEqualTo" */ @js.native
+  object greaterThanOrEqualTo extends TopLevel[greaterThanOrEqualTo with String]
+  
+  /* "LessThan" */ @js.native
+  object lessThan extends TopLevel[lessThan with String]
+  
+  /* "LessThanOrEqualTo" */ @js.native
+  object lessThanOrEqualTo extends TopLevel[lessThanOrEqualTo with String]
+  
+  /* "NotBetween" */ @js.native
+  object notBetween extends TopLevel[notBetween with String]
+  
+  /* "NotEqualTo" */ @js.native
+  object notEqualTo extends TopLevel[notEqualTo with String]
+  
 }
 

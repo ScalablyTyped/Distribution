@@ -1,5 +1,25 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.PlacementType.Auto
+import typings.openui5.sap.m.PlacementType.Bottom
+import typings.openui5.sap.m.PlacementType.Horizontal
+import typings.openui5.sap.m.PlacementType.HorizontalPreferedLeft
+import typings.openui5.sap.m.PlacementType.HorizontalPreferedRight
+import typings.openui5.sap.m.PlacementType.HorizontalPreferredLeft
+import typings.openui5.sap.m.PlacementType.HorizontalPreferredRight
+import typings.openui5.sap.m.PlacementType.Left
+import typings.openui5.sap.m.PlacementType.PreferredBottomOrFlip
+import typings.openui5.sap.m.PlacementType.PreferredLeftOrFlip
+import typings.openui5.sap.m.PlacementType.PreferredRightOrFlip
+import typings.openui5.sap.m.PlacementType.PreferredTopOrFlip
+import typings.openui5.sap.m.PlacementType.Right
+import typings.openui5.sap.m.PlacementType.Top
+import typings.openui5.sap.m.PlacementType.Vertical
+import typings.openui5.sap.m.PlacementType.VerticalPreferedBottom
+import typings.openui5.sap.m.PlacementType.VerticalPreferedTop
+import typings.openui5.sap.m.PlacementType.VerticalPreferredBottom
+import typings.openui5.sap.m.PlacementType.VerticalPreferredTop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,26 +90,64 @@ object PlacementType extends js.Object {
   @js.native
   sealed trait VerticalPreferredTop extends PlacementType
   
-  /* 0 */ val Auto: typings.openui5.sap.m.PlacementType.Auto with Double = js.native
-  /* 1 */ val Bottom: typings.openui5.sap.m.PlacementType.Bottom with Double = js.native
-  /* 2 */ val Horizontal: typings.openui5.sap.m.PlacementType.Horizontal with Double = js.native
-  /* 3 */ val HorizontalPreferedLeft: typings.openui5.sap.m.PlacementType.HorizontalPreferedLeft with Double = js.native
-  /* 4 */ val HorizontalPreferedRight: typings.openui5.sap.m.PlacementType.HorizontalPreferedRight with Double = js.native
-  /* 5 */ val HorizontalPreferredLeft: typings.openui5.sap.m.PlacementType.HorizontalPreferredLeft with Double = js.native
-  /* 6 */ val HorizontalPreferredRight: typings.openui5.sap.m.PlacementType.HorizontalPreferredRight with Double = js.native
-  /* 7 */ val Left: typings.openui5.sap.m.PlacementType.Left with Double = js.native
-  /* 8 */ val PreferredBottomOrFlip: typings.openui5.sap.m.PlacementType.PreferredBottomOrFlip with Double = js.native
-  /* 9 */ val PreferredLeftOrFlip: typings.openui5.sap.m.PlacementType.PreferredLeftOrFlip with Double = js.native
-  /* 10 */ val PreferredRightOrFlip: typings.openui5.sap.m.PlacementType.PreferredRightOrFlip with Double = js.native
-  /* 11 */ val PreferredTopOrFlip: typings.openui5.sap.m.PlacementType.PreferredTopOrFlip with Double = js.native
-  /* 12 */ val Right: typings.openui5.sap.m.PlacementType.Right with Double = js.native
-  /* 13 */ val Top: typings.openui5.sap.m.PlacementType.Top with Double = js.native
-  /* 14 */ val Vertical: typings.openui5.sap.m.PlacementType.Vertical with Double = js.native
-  /* 15 */ val VerticalPreferedBottom: typings.openui5.sap.m.PlacementType.VerticalPreferedBottom with Double = js.native
-  /* 16 */ val VerticalPreferedTop: typings.openui5.sap.m.PlacementType.VerticalPreferedTop with Double = js.native
-  /* 17 */ val VerticalPreferredBottom: typings.openui5.sap.m.PlacementType.VerticalPreferredBottom with Double = js.native
-  /* 18 */ val VerticalPreferredTop: typings.openui5.sap.m.PlacementType.VerticalPreferredTop with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PlacementType with Double] = js.native
+  /* 0 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object Bottom extends TopLevel[Bottom with Double]
+  
+  /* 2 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 3 */ @js.native
+  object HorizontalPreferedLeft extends TopLevel[HorizontalPreferedLeft with Double]
+  
+  /* 4 */ @js.native
+  object HorizontalPreferedRight extends TopLevel[HorizontalPreferedRight with Double]
+  
+  /* 5 */ @js.native
+  object HorizontalPreferredLeft extends TopLevel[HorizontalPreferredLeft with Double]
+  
+  /* 6 */ @js.native
+  object HorizontalPreferredRight extends TopLevel[HorizontalPreferredRight with Double]
+  
+  /* 7 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 8 */ @js.native
+  object PreferredBottomOrFlip extends TopLevel[PreferredBottomOrFlip with Double]
+  
+  /* 9 */ @js.native
+  object PreferredLeftOrFlip extends TopLevel[PreferredLeftOrFlip with Double]
+  
+  /* 10 */ @js.native
+  object PreferredRightOrFlip extends TopLevel[PreferredRightOrFlip with Double]
+  
+  /* 11 */ @js.native
+  object PreferredTopOrFlip extends TopLevel[PreferredTopOrFlip with Double]
+  
+  /* 12 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
+  /* 13 */ @js.native
+  object Top extends TopLevel[Top with Double]
+  
+  /* 14 */ @js.native
+  object Vertical extends TopLevel[Vertical with Double]
+  
+  /* 15 */ @js.native
+  object VerticalPreferedBottom extends TopLevel[VerticalPreferedBottom with Double]
+  
+  /* 16 */ @js.native
+  object VerticalPreferedTop extends TopLevel[VerticalPreferedTop with Double]
+  
+  /* 17 */ @js.native
+  object VerticalPreferredBottom extends TopLevel[VerticalPreferredBottom with Double]
+  
+  /* 18 */ @js.native
+  object VerticalPreferredTop extends TopLevel[VerticalPreferredTop with Double]
+  
 }
 

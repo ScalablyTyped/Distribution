@@ -1,5 +1,11 @@
 package typings.sharepoint.SP.UI.ApplicationPages
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.event
+import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.none
+import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people
+import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people_And_Resource
+import typings.sharepoint.SP.UI.ApplicationPages.SelectorType.resource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object SelectorType extends js.Object {
   @js.native
   sealed trait resource extends SelectorType
   
-  /* 4 */ val event: typings.sharepoint.SP.UI.ApplicationPages.SelectorType.event with Double = js.native
-  /* 0 */ val none: typings.sharepoint.SP.UI.ApplicationPages.SelectorType.none with Double = js.native
-  /* 2 */ val people: typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people with Double = js.native
-  /* 3 */ val people_And_Resource: typings.sharepoint.SP.UI.ApplicationPages.SelectorType.people_And_Resource with Double = js.native
-  /* 1 */ val resource: typings.sharepoint.SP.UI.ApplicationPages.SelectorType.resource with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectorType with Double] = js.native
+  /* 4 */ @js.native
+  object event extends TopLevel[event with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object people extends TopLevel[people with Double]
+  
+  /* 3 */ @js.native
+  object people_And_Resource extends TopLevel[people_And_Resource with Double]
+  
+  /* 1 */ @js.native
+  object resource extends TopLevel[resource with Double]
+  
 }
 

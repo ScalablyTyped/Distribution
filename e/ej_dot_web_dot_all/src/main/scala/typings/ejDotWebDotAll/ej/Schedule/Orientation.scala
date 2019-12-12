@@ -1,5 +1,8 @@
 package typings.ejDotWebDotAll.ej.Schedule
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Schedule.Orientation.Horizontal
+import typings.ejDotWebDotAll.ej.Schedule.Orientation.Vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,9 +23,13 @@ object Orientation extends js.Object {
   sealed trait Vertical
     extends typings.ejDotWebDotAll.ej.Schedule.Orientation
   
-  /* 1 */ val Horizontal: typings.ejDotWebDotAll.ej.Schedule.Orientation.Horizontal with Double = js.native
-  /* 0 */ val Vertical: typings.ejDotWebDotAll.ej.Schedule.Orientation.Vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.ejDotWebDotAll.ej.Schedule.Orientation with Double] = js.native
+  /* 1 */ @js.native
+  object Horizontal extends TopLevel[Horizontal with Double]
+  
+  /* 0 */ @js.native
+  object Vertical extends TopLevel[Vertical with Double]
+  
 }
 

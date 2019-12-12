@@ -1,5 +1,12 @@
 package typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INSUFFICIENTBALANCE
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INVALIDSEQNUMBER
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INVALIDUPDATE
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.MEMPOOLISFULL
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.TOOMANYTRANSACTIONS
+import typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.VALID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object MempoolAddTransactionStatusCode extends js.Object {
   @js.native
   sealed trait VALID extends MempoolAddTransactionStatusCode
   
-  /* 1 */ val INSUFFICIENTBALANCE: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INSUFFICIENTBALANCE with Double = js.native
-  /* 2 */ val INVALIDSEQNUMBER: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INVALIDSEQNUMBER with Double = js.native
-  /* 5 */ val INVALIDUPDATE: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.INVALIDUPDATE with Double = js.native
-  /* 3 */ val MEMPOOLISFULL: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.MEMPOOLISFULL with Double = js.native
-  /* 4 */ val TOOMANYTRANSACTIONS: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.TOOMANYTRANSACTIONS with Double = js.native
-  /* 0 */ val VALID: typings.libraDashCore.libAtGeneratedMempoolUnderscoreStatusUnderscorePbMod.MempoolAddTransactionStatusCode.VALID with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MempoolAddTransactionStatusCode with Double] = js.native
+  /* 1 */ @js.native
+  object INSUFFICIENTBALANCE extends TopLevel[INSUFFICIENTBALANCE with Double]
+  
+  /* 2 */ @js.native
+  object INVALIDSEQNUMBER extends TopLevel[INVALIDSEQNUMBER with Double]
+  
+  /* 5 */ @js.native
+  object INVALIDUPDATE extends TopLevel[INVALIDUPDATE with Double]
+  
+  /* 3 */ @js.native
+  object MEMPOOLISFULL extends TopLevel[MEMPOOLISFULL with Double]
+  
+  /* 4 */ @js.native
+  object TOOMANYTRANSACTIONS extends TopLevel[TOOMANYTRANSACTIONS with Double]
+  
+  /* 0 */ @js.native
+  object VALID extends TopLevel[VALID with Double]
+  
 }
 

@@ -1,5 +1,14 @@
 package typings.cesium.cesiumMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.cesium.cesiumMod.StencilOperation.DECREMENT
+import typings.cesium.cesiumMod.StencilOperation.DECREMENT_WRAP
+import typings.cesium.cesiumMod.StencilOperation.INCREMENT
+import typings.cesium.cesiumMod.StencilOperation.INCREMENT_WRAP
+import typings.cesium.cesiumMod.StencilOperation.INVERT
+import typings.cesium.cesiumMod.StencilOperation.KEEP
+import typings.cesium.cesiumMod.StencilOperation.REPLACE
+import typings.cesium.cesiumMod.StencilOperation.ZERO
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object StencilOperation extends js.Object {
   @js.native
   sealed trait ZERO extends StencilOperation
   
-  /* 4 */ val DECREMENT: typings.cesium.cesiumMod.StencilOperation.DECREMENT with Double = js.native
-  /* 7 */ val DECREMENT_WRAP: typings.cesium.cesiumMod.StencilOperation.DECREMENT_WRAP with Double = js.native
-  /* 3 */ val INCREMENT: typings.cesium.cesiumMod.StencilOperation.INCREMENT with Double = js.native
-  /* 6 */ val INCREMENT_WRAP: typings.cesium.cesiumMod.StencilOperation.INCREMENT_WRAP with Double = js.native
-  /* 5 */ val INVERT: typings.cesium.cesiumMod.StencilOperation.INVERT with Double = js.native
-  /* 1 */ val KEEP: typings.cesium.cesiumMod.StencilOperation.KEEP with Double = js.native
-  /* 2 */ val REPLACE: typings.cesium.cesiumMod.StencilOperation.REPLACE with Double = js.native
-  /* 0 */ val ZERO: typings.cesium.cesiumMod.StencilOperation.ZERO with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StencilOperation with Double] = js.native
+  /* 4 */ @js.native
+  object DECREMENT extends TopLevel[DECREMENT with Double]
+  
+  /* 7 */ @js.native
+  object DECREMENT_WRAP extends TopLevel[DECREMENT_WRAP with Double]
+  
+  /* 3 */ @js.native
+  object INCREMENT extends TopLevel[INCREMENT with Double]
+  
+  /* 6 */ @js.native
+  object INCREMENT_WRAP extends TopLevel[INCREMENT_WRAP with Double]
+  
+  /* 5 */ @js.native
+  object INVERT extends TopLevel[INVERT with Double]
+  
+  /* 1 */ @js.native
+  object KEEP extends TopLevel[KEEP with Double]
+  
+  /* 2 */ @js.native
+  object REPLACE extends TopLevel[REPLACE with Double]
+  
+  /* 0 */ @js.native
+  object ZERO extends TopLevel[ZERO with Double]
+  
 }
 

@@ -1,5 +1,38 @@
 package typings.winrtDashUwp.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.archival
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.autoSelect
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.backPrintFilm
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.bond
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.cardStock
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.continuous
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.default
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.envelopePlain
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.envelopeWindow
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.fabric
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.highResolution
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.label
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.multiLayerForm
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.multiPartForm
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.none
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.notAvailable
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographic
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicFilm
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicGlossy
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicHighGloss
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicMatte
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicSatin
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicSemiGloss
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.plain
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.printerCustom
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.screen
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.screenPaged
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.stationery
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tabStockFull
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tabStockPreCut
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.transparency
+import typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tshirtTransfer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,39 +172,103 @@ object PrintMediaType extends js.Object {
   @js.native
   sealed trait tshirtTransfer extends PrintMediaType
   
-  /* 4 */ val archival: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.archival with Double = js.native
-  /* 3 */ val autoSelect: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.autoSelect with Double = js.native
-  /* 5 */ val backPrintFilm: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.backPrintFilm with Double = js.native
-  /* 6 */ val bond: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.bond with Double = js.native
-  /* 7 */ val cardStock: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.cardStock with Double = js.native
-  /* 8 */ val continuous: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.continuous with Double = js.native
-  /* 0 */ val default: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.default with Double = js.native
-  /* 9 */ val envelopePlain: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.envelopePlain with Double = js.native
-  /* 10 */ val envelopeWindow: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.envelopeWindow with Double = js.native
-  /* 11 */ val fabric: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.fabric with Double = js.native
-  /* 12 */ val highResolution: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.highResolution with Double = js.native
-  /* 13 */ val label: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.label with Double = js.native
-  /* 14 */ val multiLayerForm: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.multiLayerForm with Double = js.native
-  /* 15 */ val multiPartForm: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.multiPartForm with Double = js.native
-  /* 31 */ val none: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.none with Double = js.native
-  /* 1 */ val notAvailable: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.notAvailable with Double = js.native
-  /* 16 */ val photographic: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographic with Double = js.native
-  /* 17 */ val photographicFilm: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicFilm with Double = js.native
-  /* 18 */ val photographicGlossy: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicGlossy with Double = js.native
-  /* 19 */ val photographicHighGloss: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicHighGloss with Double = js.native
-  /* 20 */ val photographicMatte: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicMatte with Double = js.native
-  /* 21 */ val photographicSatin: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicSatin with Double = js.native
-  /* 22 */ val photographicSemiGloss: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.photographicSemiGloss with Double = js.native
-  /* 23 */ val plain: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.plain with Double = js.native
-  /* 2 */ val printerCustom: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.printerCustom with Double = js.native
-  /* 24 */ val screen: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.screen with Double = js.native
-  /* 25 */ val screenPaged: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.screenPaged with Double = js.native
-  /* 26 */ val stationery: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.stationery with Double = js.native
-  /* 27 */ val tabStockFull: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tabStockFull with Double = js.native
-  /* 28 */ val tabStockPreCut: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tabStockPreCut with Double = js.native
-  /* 29 */ val transparency: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.transparency with Double = js.native
-  /* 30 */ val tshirtTransfer: typings.winrtDashUwp.Windows.Graphics.Printing.PrintMediaType.tshirtTransfer with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PrintMediaType with Double] = js.native
+  /* 4 */ @js.native
+  object archival extends TopLevel[archival with Double]
+  
+  /* 3 */ @js.native
+  object autoSelect extends TopLevel[autoSelect with Double]
+  
+  /* 5 */ @js.native
+  object backPrintFilm extends TopLevel[backPrintFilm with Double]
+  
+  /* 6 */ @js.native
+  object bond extends TopLevel[bond with Double]
+  
+  /* 7 */ @js.native
+  object cardStock extends TopLevel[cardStock with Double]
+  
+  /* 8 */ @js.native
+  object continuous extends TopLevel[continuous with Double]
+  
+  /* 0 */ @js.native
+  object default extends TopLevel[default with Double]
+  
+  /* 9 */ @js.native
+  object envelopePlain extends TopLevel[envelopePlain with Double]
+  
+  /* 10 */ @js.native
+  object envelopeWindow extends TopLevel[envelopeWindow with Double]
+  
+  /* 11 */ @js.native
+  object fabric extends TopLevel[fabric with Double]
+  
+  /* 12 */ @js.native
+  object highResolution extends TopLevel[highResolution with Double]
+  
+  /* 13 */ @js.native
+  object label extends TopLevel[label with Double]
+  
+  /* 14 */ @js.native
+  object multiLayerForm extends TopLevel[multiLayerForm with Double]
+  
+  /* 15 */ @js.native
+  object multiPartForm extends TopLevel[multiPartForm with Double]
+  
+  /* 31 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 1 */ @js.native
+  object notAvailable extends TopLevel[notAvailable with Double]
+  
+  /* 16 */ @js.native
+  object photographic extends TopLevel[photographic with Double]
+  
+  /* 17 */ @js.native
+  object photographicFilm extends TopLevel[photographicFilm with Double]
+  
+  /* 18 */ @js.native
+  object photographicGlossy extends TopLevel[photographicGlossy with Double]
+  
+  /* 19 */ @js.native
+  object photographicHighGloss extends TopLevel[photographicHighGloss with Double]
+  
+  /* 20 */ @js.native
+  object photographicMatte extends TopLevel[photographicMatte with Double]
+  
+  /* 21 */ @js.native
+  object photographicSatin extends TopLevel[photographicSatin with Double]
+  
+  /* 22 */ @js.native
+  object photographicSemiGloss extends TopLevel[photographicSemiGloss with Double]
+  
+  /* 23 */ @js.native
+  object plain extends TopLevel[plain with Double]
+  
+  /* 2 */ @js.native
+  object printerCustom extends TopLevel[printerCustom with Double]
+  
+  /* 24 */ @js.native
+  object screen extends TopLevel[screen with Double]
+  
+  /* 25 */ @js.native
+  object screenPaged extends TopLevel[screenPaged with Double]
+  
+  /* 26 */ @js.native
+  object stationery extends TopLevel[stationery with Double]
+  
+  /* 27 */ @js.native
+  object tabStockFull extends TopLevel[tabStockFull with Double]
+  
+  /* 28 */ @js.native
+  object tabStockPreCut extends TopLevel[tabStockPreCut with Double]
+  
+  /* 29 */ @js.native
+  object transparency extends TopLevel[transparency with Double]
+  
+  /* 30 */ @js.native
+  object tshirtTransfer extends TopLevel[tshirtTransfer with Double]
+  
 }
 

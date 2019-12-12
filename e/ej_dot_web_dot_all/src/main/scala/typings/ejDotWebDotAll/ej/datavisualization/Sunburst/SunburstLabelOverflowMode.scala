@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Sunburst
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.Hide
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.None
+import typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.Trim
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SunburstLabelOverflowMode extends js.Object {
   @js.native
   sealed trait Trim extends SunburstLabelOverflowMode
   
-  /* 1 */ val Hide: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.Hide with Double = js.native
-  /* 2 */ val None: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.None with Double = js.native
-  /* 0 */ val Trim: typings.ejDotWebDotAll.ej.datavisualization.Sunburst.SunburstLabelOverflowMode.Trim with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SunburstLabelOverflowMode with Double] = js.native
+  /* 1 */ @js.native
+  object Hide extends TopLevel[Hide with Double]
+  
+  /* 2 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 0 */ @js.native
+  object Trim extends TopLevel[Trim with Double]
+  
 }
 

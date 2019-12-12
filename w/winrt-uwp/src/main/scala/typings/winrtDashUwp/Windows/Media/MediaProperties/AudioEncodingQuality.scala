@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.auto
+import typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.high
+import typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.low
+import typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.medium
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object AudioEncodingQuality extends js.Object {
   @js.native
   sealed trait medium extends AudioEncodingQuality
   
-  /* 0 */ val auto: typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.auto with Double = js.native
-  /* 1 */ val high: typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.high with Double = js.native
-  /* 3 */ val low: typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.low with Double = js.native
-  /* 2 */ val medium: typings.winrtDashUwp.Windows.Media.MediaProperties.AudioEncodingQuality.medium with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AudioEncodingQuality with Double] = js.native
+  /* 0 */ @js.native
+  object auto extends TopLevel[auto with Double]
+  
+  /* 1 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 3 */ @js.native
+  object low extends TopLevel[low with Double]
+  
+  /* 2 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
 }
 

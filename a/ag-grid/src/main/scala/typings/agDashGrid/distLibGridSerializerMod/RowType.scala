@@ -1,5 +1,9 @@
 package typings.agDashGrid.distLibGridSerializerMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.agDashGrid.distLibGridSerializerMod.RowType.BODY
+import typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER
+import typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER_GROUPING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RowType extends js.Object {
   @js.native
   sealed trait HEADER_GROUPING extends RowType
   
-  /* 2 */ val BODY: typings.agDashGrid.distLibGridSerializerMod.RowType.BODY with Double = js.native
-  /* 1 */ val HEADER: typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER with Double = js.native
-  /* 0 */ val HEADER_GROUPING: typings.agDashGrid.distLibGridSerializerMod.RowType.HEADER_GROUPING with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RowType with Double] = js.native
+  /* 2 */ @js.native
+  object BODY extends TopLevel[BODY with Double]
+  
+  /* 1 */ @js.native
+  object HEADER extends TopLevel[HEADER with Double]
+  
+  /* 0 */ @js.native
+  object HEADER_GROUPING extends TopLevel[HEADER_GROUPING with Double]
+  
 }
 

@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesGitInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Abandoned
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Completed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Failed
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Queued
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +46,22 @@ object GitAsyncOperationStatus extends js.Object {
   @js.native
   sealed trait Queued extends GitAsyncOperationStatus
   
-  /* 5 */ val Abandoned: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Abandoned with Double = js.native
-  /* 3 */ val Completed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Completed with Double = js.native
-  /* 4 */ val Failed: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Failed with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.InProgress with Double = js.native
-  /* 1 */ val Queued: typings.vsoDashNodeDashApi.interfacesGitInterfacesMod.GitAsyncOperationStatus.Queued with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GitAsyncOperationStatus with Double] = js.native
+  /* 5 */ @js.native
+  object Abandoned extends TopLevel[Abandoned with Double]
+  
+  /* 3 */ @js.native
+  object Completed extends TopLevel[Completed with Double]
+  
+  /* 4 */ @js.native
+  object Failed extends TopLevel[Failed with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 1 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
 }
 

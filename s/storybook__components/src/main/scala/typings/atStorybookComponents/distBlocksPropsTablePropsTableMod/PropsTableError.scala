@@ -1,5 +1,8 @@
 package typings.atStorybookComponents.distBlocksPropsTablePropsTableMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.NO_COMPONENT
+import typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.PROPS_UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object PropsTableError extends js.Object {
   @js.native
   sealed trait PROPS_UNSUPPORTED extends PropsTableError
   
-  /* "No component found" */ val NO_COMPONENT: typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.NO_COMPONENT with String = js.native
-  /* "Props unsupported. See Props documentation for your framework." */ val PROPS_UNSUPPORTED: typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableError.PROPS_UNSUPPORTED with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PropsTableError with String] = js.native
+  /* "No component found" */ @js.native
+  object NO_COMPONENT extends TopLevel[NO_COMPONENT with String]
+  
+  /* "Props unsupported. See Props documentation for your framework." */ @js.native
+  object PROPS_UNSUPPORTED extends TopLevel[PROPS_UNSUPPORTED with String]
+  
 }
 

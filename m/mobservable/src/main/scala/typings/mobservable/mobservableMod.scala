@@ -1,6 +1,7 @@
 package typings.mobservable
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.TopLevel
 import typings.mobservable.libInterfacesMod.IArrayChange
 import typings.mobservable.libInterfacesMod.IArraySplice
 import typings.mobservable.libInterfacesMod.IDependencyTree
@@ -146,7 +147,6 @@ object mobservableMod extends js.Object {
     @js.native
     class SimpleEventEmitter () extends default
     
-    var SimpleEventEmitter: Instantiable0[default] = js.native
     def getDNode(thing: js.Any): js.Any = js.native
     def getDependencyTree(thing: js.Any): IDependencyTree = js.native
     def getDependencyTree(thing: js.Any, property: String): IDependencyTree = js.native
@@ -156,6 +156,9 @@ object mobservableMod extends js.Object {
     def trackTransitions(extensive: Boolean): Lambda = js.native
     def trackTransitions(extensive: Boolean, onReport: js.Function1[/* lines */ ITransitionEvent, Unit]): Lambda = js.native
     def withStrict(newStrict: Boolean, func: Lambda): Unit = js.native
+    @js.native
+    object SimpleEventEmitter extends TopLevel[Instantiable0[default]]
+    
   }
   
 }

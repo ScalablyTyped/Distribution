@@ -1,5 +1,47 @@
 package typings.typescript.typescriptMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.typescript.typescriptMod.TypeFlags.Any
+import typings.typescript.typescriptMod.TypeFlags.BigInt
+import typings.typescript.typescriptMod.TypeFlags.BigIntLike
+import typings.typescript.typescriptMod.TypeFlags.Boolean
+import typings.typescript.typescriptMod.TypeFlags.BooleanLike
+import typings.typescript.typescriptMod.TypeFlags.Conditional
+import typings.typescript.typescriptMod.TypeFlags.ESSymbol
+import typings.typescript.typescriptMod.TypeFlags.ESSymbolLike
+import typings.typescript.typescriptMod.TypeFlags.Enum
+import typings.typescript.typescriptMod.TypeFlags.EnumLike
+import typings.typescript.typescriptMod.TypeFlags.EnumLiteral
+import typings.typescript.typescriptMod.TypeFlags.Index
+import typings.typescript.typescriptMod.TypeFlags.IndexedAccess
+import typings.typescript.typescriptMod.TypeFlags.Instantiable
+import typings.typescript.typescriptMod.TypeFlags.InstantiableNonPrimitive
+import typings.typescript.typescriptMod.TypeFlags.InstantiablePrimitive
+import typings.typescript.typescriptMod.TypeFlags.Intersection
+import typings.typescript.typescriptMod.TypeFlags.Literal
+import typings.typescript.typescriptMod.TypeFlags.Narrowable
+import typings.typescript.typescriptMod.TypeFlags.Never
+import typings.typescript.typescriptMod.TypeFlags.NonPrimitive
+import typings.typescript.typescriptMod.TypeFlags.NotUnionOrUnit
+import typings.typescript.typescriptMod.TypeFlags.Null
+import typings.typescript.typescriptMod.TypeFlags.Number
+import typings.typescript.typescriptMod.TypeFlags.NumberLike
+import typings.typescript.typescriptMod.TypeFlags.NumberLiteral
+import typings.typescript.typescriptMod.TypeFlags.Object
+import typings.typescript.typescriptMod.TypeFlags.PossiblyFalsy
+import typings.typescript.typescriptMod.TypeFlags.String
+import typings.typescript.typescriptMod.TypeFlags.StringLike
+import typings.typescript.typescriptMod.TypeFlags.StringOrNumberLiteral
+import typings.typescript.typescriptMod.TypeFlags.StructuredOrInstantiable
+import typings.typescript.typescriptMod.TypeFlags.Substitution
+import typings.typescript.typescriptMod.TypeFlags.Undefined
+import typings.typescript.typescriptMod.TypeFlags.Union
+import typings.typescript.typescriptMod.TypeFlags.UnionOrIntersection
+import typings.typescript.typescriptMod.TypeFlags.UniqueESSymbol
+import typings.typescript.typescriptMod.TypeFlags.Unit
+import typings.typescript.typescriptMod.TypeFlags.Unknown
+import typings.typescript.typescriptMod.TypeFlags.Void
+import typings.typescript.typescriptMod.TypeFlags.VoidLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -151,54 +193,154 @@ object TypeFlags extends js.Object {
   @js.native
   sealed trait VoidLike extends TypeFlags
   
-  /* 1 */ val Any: typings.typescript.typescriptMod.TypeFlags.Any with Double = js.native
-  /* 64 */ val BigInt: typings.typescript.typescriptMod.TypeFlags.BigInt with Double = js.native
-  /* 2112 */ val BigIntLike: typings.typescript.typescriptMod.TypeFlags.BigIntLike with Double = js.native
-  /* 2048 */ val BigIntLiteral: typings.typescript.typescriptMod.TypeFlags.BigIntLiteral with Double = js.native
-  /* 16 */ val Boolean: typings.typescript.typescriptMod.TypeFlags.Boolean with Double = js.native
-  /* 528 */ val BooleanLike: typings.typescript.typescriptMod.TypeFlags.BooleanLike with Double = js.native
-  /* 512 */ val BooleanLiteral: typings.typescript.typescriptMod.TypeFlags.BooleanLiteral with Double = js.native
-  /* 16777216 */ val Conditional: typings.typescript.typescriptMod.TypeFlags.Conditional with Double = js.native
-  /* 4096 */ val ESSymbol: typings.typescript.typescriptMod.TypeFlags.ESSymbol with Double = js.native
-  /* 12288 */ val ESSymbolLike: typings.typescript.typescriptMod.TypeFlags.ESSymbolLike with Double = js.native
-  /* 32 */ val Enum: typings.typescript.typescriptMod.TypeFlags.Enum with Double = js.native
-  /* 1056 */ val EnumLike: typings.typescript.typescriptMod.TypeFlags.EnumLike with Double = js.native
-  /* 1024 */ val EnumLiteral: typings.typescript.typescriptMod.TypeFlags.EnumLiteral with Double = js.native
-  /* 4194304 */ val Index: typings.typescript.typescriptMod.TypeFlags.Index with Double = js.native
-  /* 8388608 */ val IndexedAccess: typings.typescript.typescriptMod.TypeFlags.IndexedAccess with Double = js.native
-  /* 63176704 */ val Instantiable: typings.typescript.typescriptMod.TypeFlags.Instantiable with Double = js.native
-  /* 58982400 */ val InstantiableNonPrimitive: typings.typescript.typescriptMod.TypeFlags.InstantiableNonPrimitive with Double = js.native
-  /* 4194304 */ val InstantiablePrimitive: typings.typescript.typescriptMod.TypeFlags.InstantiablePrimitive with Double = js.native
-  /* 2097152 */ val Intersection: typings.typescript.typescriptMod.TypeFlags.Intersection with Double = js.native
-  /* 2944 */ val Literal: typings.typescript.typescriptMod.TypeFlags.Literal with Double = js.native
-  /* 133970943 */ val Narrowable: typings.typescript.typescriptMod.TypeFlags.Narrowable with Double = js.native
-  /* 131072 */ val Never: typings.typescript.typescriptMod.TypeFlags.Never with Double = js.native
-  /* 67108864 */ val NonPrimitive: typings.typescript.typescriptMod.TypeFlags.NonPrimitive with Double = js.native
-  /* 67637251 */ val NotUnionOrUnit: typings.typescript.typescriptMod.TypeFlags.NotUnionOrUnit with Double = js.native
-  /* 65536 */ val Null: typings.typescript.typescriptMod.TypeFlags.Null with Double = js.native
-  /* 8 */ val Number: typings.typescript.typescriptMod.TypeFlags.Number with Double = js.native
-  /* 296 */ val NumberLike: typings.typescript.typescriptMod.TypeFlags.NumberLike with Double = js.native
-  /* 256 */ val NumberLiteral: typings.typescript.typescriptMod.TypeFlags.NumberLiteral with Double = js.native
-  /* 524288 */ val Object: typings.typescript.typescriptMod.TypeFlags.Object with Double = js.native
-  /* 117724 */ val PossiblyFalsy: typings.typescript.typescriptMod.TypeFlags.PossiblyFalsy with Double = js.native
-  /* 4 */ val String: typings.typescript.typescriptMod.TypeFlags.String with Double = js.native
-  /* 132 */ val StringLike: typings.typescript.typescriptMod.TypeFlags.StringLike with Double = js.native
-  /* 128 */ val StringLiteral: typings.typescript.typescriptMod.TypeFlags.StringLiteral with Double = js.native
-  /* 384 */ val StringOrNumberLiteral: typings.typescript.typescriptMod.TypeFlags.StringOrNumberLiteral with Double = js.native
-  /* 66846720 */ val StructuredOrInstantiable: typings.typescript.typescriptMod.TypeFlags.StructuredOrInstantiable with Double = js.native
-  /* 3670016 */ val StructuredType: typings.typescript.typescriptMod.TypeFlags.StructuredType with Double = js.native
-  /* 33554432 */ val Substitution: typings.typescript.typescriptMod.TypeFlags.Substitution with Double = js.native
-  /* 262144 */ val TypeParameter: typings.typescript.typescriptMod.TypeFlags.TypeParameter with Double = js.native
-  /* 8650752 */ val TypeVariable: typings.typescript.typescriptMod.TypeFlags.TypeVariable with Double = js.native
-  /* 32768 */ val Undefined: typings.typescript.typescriptMod.TypeFlags.Undefined with Double = js.native
-  /* 1048576 */ val Union: typings.typescript.typescriptMod.TypeFlags.Union with Double = js.native
-  /* 3145728 */ val UnionOrIntersection: typings.typescript.typescriptMod.TypeFlags.UnionOrIntersection with Double = js.native
-  /* 8192 */ val UniqueESSymbol: typings.typescript.typescriptMod.TypeFlags.UniqueESSymbol with Double = js.native
-  /* 109440 */ val Unit: typings.typescript.typescriptMod.TypeFlags.Unit with Double = js.native
-  /* 2 */ val Unknown: typings.typescript.typescriptMod.TypeFlags.Unknown with Double = js.native
-  /* 16384 */ val Void: typings.typescript.typescriptMod.TypeFlags.Void with Double = js.native
-  /* 49152 */ val VoidLike: typings.typescript.typescriptMod.TypeFlags.VoidLike with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TypeFlags with Double] = js.native
+  /* 1 */ @js.native
+  object Any extends TopLevel[Any with Double]
+  
+  /* 64 */ @js.native
+  object BigInt extends TopLevel[BigInt with Double]
+  
+  /* 2112 */ @js.native
+  object BigIntLike extends TopLevel[BigIntLike with Double]
+  
+  /* 2048 */ @js.native
+  object BigIntLiteral
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.BigIntLiteral with Double]
+  
+  /* 16 */ @js.native
+  object Boolean extends TopLevel[Boolean with Double]
+  
+  /* 528 */ @js.native
+  object BooleanLike extends TopLevel[BooleanLike with Double]
+  
+  /* 512 */ @js.native
+  object BooleanLiteral
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.BooleanLiteral with Double]
+  
+  /* 16777216 */ @js.native
+  object Conditional extends TopLevel[Conditional with Double]
+  
+  /* 4096 */ @js.native
+  object ESSymbol extends TopLevel[ESSymbol with Double]
+  
+  /* 12288 */ @js.native
+  object ESSymbolLike extends TopLevel[ESSymbolLike with Double]
+  
+  /* 32 */ @js.native
+  object Enum extends TopLevel[Enum with Double]
+  
+  /* 1056 */ @js.native
+  object EnumLike extends TopLevel[EnumLike with Double]
+  
+  /* 1024 */ @js.native
+  object EnumLiteral extends TopLevel[EnumLiteral with Double]
+  
+  /* 4194304 */ @js.native
+  object Index extends TopLevel[Index with Double]
+  
+  /* 8388608 */ @js.native
+  object IndexedAccess extends TopLevel[IndexedAccess with Double]
+  
+  /* 63176704 */ @js.native
+  object Instantiable extends TopLevel[Instantiable with Double]
+  
+  /* 58982400 */ @js.native
+  object InstantiableNonPrimitive extends TopLevel[InstantiableNonPrimitive with Double]
+  
+  /* 4194304 */ @js.native
+  object InstantiablePrimitive extends TopLevel[InstantiablePrimitive with Double]
+  
+  /* 2097152 */ @js.native
+  object Intersection extends TopLevel[Intersection with Double]
+  
+  /* 2944 */ @js.native
+  object Literal extends TopLevel[Literal with Double]
+  
+  /* 133970943 */ @js.native
+  object Narrowable extends TopLevel[Narrowable with Double]
+  
+  /* 131072 */ @js.native
+  object Never extends TopLevel[Never with Double]
+  
+  /* 67108864 */ @js.native
+  object NonPrimitive extends TopLevel[NonPrimitive with Double]
+  
+  /* 67637251 */ @js.native
+  object NotUnionOrUnit extends TopLevel[NotUnionOrUnit with Double]
+  
+  /* 65536 */ @js.native
+  object Null extends TopLevel[Null with Double]
+  
+  /* 8 */ @js.native
+  object Number extends TopLevel[Number with Double]
+  
+  /* 296 */ @js.native
+  object NumberLike extends TopLevel[NumberLike with Double]
+  
+  /* 256 */ @js.native
+  object NumberLiteral extends TopLevel[NumberLiteral with Double]
+  
+  /* 524288 */ @js.native
+  object Object extends TopLevel[Object with Double]
+  
+  /* 117724 */ @js.native
+  object PossiblyFalsy extends TopLevel[PossiblyFalsy with Double]
+  
+  /* 4 */ @js.native
+  object String extends TopLevel[String with Double]
+  
+  /* 132 */ @js.native
+  object StringLike extends TopLevel[StringLike with Double]
+  
+  /* 128 */ @js.native
+  object StringLiteral
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.StringLiteral with Double]
+  
+  /* 384 */ @js.native
+  object StringOrNumberLiteral extends TopLevel[StringOrNumberLiteral with Double]
+  
+  /* 66846720 */ @js.native
+  object StructuredOrInstantiable extends TopLevel[StructuredOrInstantiable with Double]
+  
+  /* 3670016 */ @js.native
+  object StructuredType
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.StructuredType with Double]
+  
+  /* 33554432 */ @js.native
+  object Substitution extends TopLevel[Substitution with Double]
+  
+  /* 262144 */ @js.native
+  object TypeParameter
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.TypeParameter with Double]
+  
+  /* 8650752 */ @js.native
+  object TypeVariable
+    extends TopLevel[typings.typescript.typescriptMod.TypeFlags.TypeVariable with Double]
+  
+  /* 32768 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
+  /* 1048576 */ @js.native
+  object Union extends TopLevel[Union with Double]
+  
+  /* 3145728 */ @js.native
+  object UnionOrIntersection extends TopLevel[UnionOrIntersection with Double]
+  
+  /* 8192 */ @js.native
+  object UniqueESSymbol extends TopLevel[UniqueESSymbol with Double]
+  
+  /* 109440 */ @js.native
+  object Unit extends TopLevel[Unit with Double]
+  
+  /* 2 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
+  /* 16384 */ @js.native
+  object Void extends TopLevel[Void with Double]
+  
+  /* 49152 */ @js.native
+  object VoidLike extends TopLevel[VoidLike with Double]
+  
 }
 

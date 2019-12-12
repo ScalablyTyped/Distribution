@@ -1,5 +1,6 @@
 package typings.ono
 
+import org.scalablytyped.runtime.TopLevel
 import typings.ono.esmTypesMod.ErrorLike
 import typings.ono.esmTypesMod.ErrorLikeConstructor
 import typings.ono.esmTypesMod.OnoConstructor
@@ -17,7 +18,9 @@ object esmOnoMod extends js.Object {
     def this(constructor: ErrorLikeConstructor[T]) = this()
   }
   
-  val Ono: OnoConstructor = js.native
   val ono: OnoSingleton = js.native
+  @js.native
+  object Ono extends TopLevel[OnoConstructor]
+  
 }
 

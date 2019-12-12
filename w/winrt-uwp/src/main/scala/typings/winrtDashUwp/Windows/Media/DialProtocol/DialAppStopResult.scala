@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Media.DialProtocol
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.networkFailure
+import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.operationNotSupported
+import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.stopFailed
+import typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.stopped
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object DialAppStopResult extends js.Object {
   @js.native
   sealed trait stopped extends DialAppStopResult
   
-  /* 3 */ val networkFailure: typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.networkFailure with Double = js.native
-  /* 2 */ val operationNotSupported: typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.operationNotSupported with Double = js.native
-  /* 1 */ val stopFailed: typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.stopFailed with Double = js.native
-  /* 0 */ val stopped: typings.winrtDashUwp.Windows.Media.DialProtocol.DialAppStopResult.stopped with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DialAppStopResult with Double] = js.native
+  /* 3 */ @js.native
+  object networkFailure extends TopLevel[networkFailure with Double]
+  
+  /* 2 */ @js.native
+  object operationNotSupported extends TopLevel[operationNotSupported with Double]
+  
+  /* 1 */ @js.native
+  object stopFailed extends TopLevel[stopFailed with Double]
+  
+  /* 0 */ @js.native
+  object stopped extends TopLevel[stopped with Double]
+  
 }
 

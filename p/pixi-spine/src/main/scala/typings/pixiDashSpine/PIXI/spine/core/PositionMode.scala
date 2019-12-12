@@ -1,5 +1,8 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.PositionMode.Fixed
+import typings.pixiDashSpine.PIXI.spine.core.PositionMode.Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object PositionMode extends js.Object {
   @js.native
   sealed trait Percent extends PositionMode
   
-  /* 0 */ val Fixed: typings.pixiDashSpine.PIXI.spine.core.PositionMode.Fixed with Double = js.native
-  /* 1 */ val Percent: typings.pixiDashSpine.PIXI.spine.core.PositionMode.Percent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PositionMode with Double] = js.native
+  /* 0 */ @js.native
+  object Fixed extends TopLevel[Fixed with Double]
+  
+  /* 1 */ @js.native
+  object Percent extends TopLevel[Percent with Double]
+  
 }
 

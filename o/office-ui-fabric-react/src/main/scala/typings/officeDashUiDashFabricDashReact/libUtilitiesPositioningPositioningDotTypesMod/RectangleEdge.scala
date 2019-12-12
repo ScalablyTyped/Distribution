@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.bottom
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.left
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.right
+import typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object RectangleEdge extends js.Object {
   @js.native
   sealed trait top extends RectangleEdge
   
-  /* -1 */ val bottom: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.bottom with Double = js.native
-  /* 2 */ val left: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.left with Double = js.native
-  /* -2 */ val right: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.right with Double = js.native
-  /* 1 */ val top: typings.officeDashUiDashFabricDashReact.libUtilitiesPositioningPositioningDotTypesMod.RectangleEdge.top with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RectangleEdge with Double] = js.native
+  /* -1 */ @js.native
+  object bottom extends TopLevel[bottom with Double]
+  
+  /* 2 */ @js.native
+  object left extends TopLevel[left with Double]
+  
+  /* -2 */ @js.native
+  object right extends TopLevel[right with Double]
+  
+  /* 1 */ @js.native
+  object top extends TopLevel[top with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.openpgp.openpgpMod.enums
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openpgp.openpgpMod.enums.features.modification_detection
+import typings.openpgp.openpgpMod.enums.features.v5_keys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,10 +36,17 @@ object features extends js.Object {
   @js.native
   sealed trait v5_keys extends features
   
-  /* 2 */ val aead: typings.openpgp.openpgpMod.enums.features.aead with Double = js.native
-  /* 1 */ val modification_detection: typings.openpgp.openpgpMod.enums.features.modification_detection with Double = js.native
-  /* 4 */ val v5_keys: typings.openpgp.openpgpMod.enums.features.v5_keys with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[features with Double] = js.native
+  /* 2 */ @js.native
+  object aead
+    extends TopLevel[typings.openpgp.openpgpMod.enums.features.aead with Double]
+  
+  /* 1 */ @js.native
+  object modification_detection extends TopLevel[modification_detection with Double]
+  
+  /* 4 */ @js.native
+  object v5_keys extends TopLevel[v5_keys with Double]
+  
 }
 

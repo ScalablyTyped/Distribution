@@ -3,6 +3,7 @@ package typings.reactDashSelect.srcComponentsMenuMod
 import typings.react.reactMod.Component
 import typings.react.reactMod.Ref
 import typings.reactDashSelect.Anon_GetPortalPlacement
+import typings.reactDashSelect.MenuPropsOptionTypeMenuState
 import typings.reactDashSelect.srcTypesMod.OptionTypeBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation._
 class Menu[OptionType /* <: OptionTypeBase */] ()
   extends Component[MenuProps[OptionType], MenuState, js.Any] {
   def getPlacement(ref: Ref[_]): Unit = js.native
-  def getState(): MenuProps[OptionType] with MenuState = js.native
+  def getState(): MenuPropsOptionTypeMenuState[OptionType] = js.native
 }
 
 /* static members */

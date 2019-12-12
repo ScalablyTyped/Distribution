@@ -1,5 +1,68 @@
 package typings.officeDashJs.OneNote
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.OneNote.NumberType.aiueo
+import typings.officeDashJs.OneNote.NumberType.arabic
+import typings.officeDashJs.OneNote.NumberType.arabic1
+import typings.officeDashJs.OneNote.NumberType.arabic2
+import typings.officeDashJs.OneNote.NumberType.arabicLZ
+import typings.officeDashJs.OneNote.NumberType.bullet
+import typings.officeDashJs.OneNote.NumberType.cardtext
+import typings.officeDashJs.OneNote.NumberType.chiManSty
+import typings.officeDashJs.OneNote.NumberType.chnDbNum1
+import typings.officeDashJs.OneNote.NumberType.chnDbNum2
+import typings.officeDashJs.OneNote.NumberType.chnDbNum3
+import typings.officeDashJs.OneNote.NumberType.chnDbNum4
+import typings.officeDashJs.OneNote.NumberType.chosung
+import typings.officeDashJs.OneNote.NumberType.circlenum
+import typings.officeDashJs.OneNote.NumberType.custom
+import typings.officeDashJs.OneNote.NumberType.daiueo
+import typings.officeDashJs.OneNote.NumberType.darabic
+import typings.officeDashJs.OneNote.NumberType.dbChar
+import typings.officeDashJs.OneNote.NumberType.dbNum1
+import typings.officeDashJs.OneNote.NumberType.dbNum2
+import typings.officeDashJs.OneNote.NumberType.dbNum3
+import typings.officeDashJs.OneNote.NumberType.dbNum4
+import typings.officeDashJs.OneNote.NumberType.diroha
+import typings.officeDashJs.OneNote.NumberType.ganada
+import typings.officeDashJs.OneNote.NumberType.gb1
+import typings.officeDashJs.OneNote.NumberType.gb2
+import typings.officeDashJs.OneNote.NumberType.gb3
+import typings.officeDashJs.OneNote.NumberType.gb4
+import typings.officeDashJs.OneNote.NumberType.hebrew1
+import typings.officeDashJs.OneNote.NumberType.hebrew2
+import typings.officeDashJs.OneNote.NumberType.hex
+import typings.officeDashJs.OneNote.NumberType.hindi1
+import typings.officeDashJs.OneNote.NumberType.hindi2
+import typings.officeDashJs.OneNote.NumberType.hindi3
+import typings.officeDashJs.OneNote.NumberType.iroha
+import typings.officeDashJs.OneNote.NumberType.korDbNum1
+import typings.officeDashJs.OneNote.NumberType.korDbNum2
+import typings.officeDashJs.OneNote.NumberType.korDbNum3
+import typings.officeDashJs.OneNote.NumberType.korDbNum4
+import typings.officeDashJs.OneNote.NumberType.lcgreek
+import typings.officeDashJs.OneNote.NumberType.lcletter
+import typings.officeDashJs.OneNote.NumberType.lcroman
+import typings.officeDashJs.OneNote.NumberType.lcrus
+import typings.officeDashJs.OneNote.NumberType.lim
+import typings.officeDashJs.OneNote.NumberType.none
+import typings.officeDashJs.OneNote.NumberType.numInDash
+import typings.officeDashJs.OneNote.NumberType.ordinal
+import typings.officeDashJs.OneNote.NumberType.ordtext
+import typings.officeDashJs.OneNote.NumberType.sbChar
+import typings.officeDashJs.OneNote.NumberType.thai1
+import typings.officeDashJs.OneNote.NumberType.thai2
+import typings.officeDashJs.OneNote.NumberType.tpeDbNum1
+import typings.officeDashJs.OneNote.NumberType.tpeDbNum2
+import typings.officeDashJs.OneNote.NumberType.tpeDbNum3
+import typings.officeDashJs.OneNote.NumberType.tpeDbNum4
+import typings.officeDashJs.OneNote.NumberType.ucgreek
+import typings.officeDashJs.OneNote.NumberType.ucletter
+import typings.officeDashJs.OneNote.NumberType.ucroman
+import typings.officeDashJs.OneNote.NumberType.ucrus
+import typings.officeDashJs.OneNote.NumberType.zodiac1
+import typings.officeDashJs.OneNote.NumberType.zodiac2
+import typings.officeDashJs.OneNote.NumberType.zodiac3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -199,69 +262,193 @@ object NumberType extends js.Object {
   @js.native
   sealed trait zodiac3 extends NumberType
   
-  /* "Aiueo" */ val aiueo: typings.officeDashJs.OneNote.NumberType.aiueo with String = js.native
-  /* "Arabic" */ val arabic: typings.officeDashJs.OneNote.NumberType.arabic with String = js.native
-  /* "Arabic1" */ val arabic1: typings.officeDashJs.OneNote.NumberType.arabic1 with String = js.native
-  /* "Arabic2" */ val arabic2: typings.officeDashJs.OneNote.NumberType.arabic2 with String = js.native
-  /* "ArabicLZ" */ val arabicLZ: typings.officeDashJs.OneNote.NumberType.arabicLZ with String = js.native
-  /* "Bullet" */ val bullet: typings.officeDashJs.OneNote.NumberType.bullet with String = js.native
-  /* "Cardtext" */ val cardtext: typings.officeDashJs.OneNote.NumberType.cardtext with String = js.native
-  /* "ChiManSty" */ val chiManSty: typings.officeDashJs.OneNote.NumberType.chiManSty with String = js.native
-  /* "ChnDbNum1" */ val chnDbNum1: typings.officeDashJs.OneNote.NumberType.chnDbNum1 with String = js.native
-  /* "ChnDbNum2" */ val chnDbNum2: typings.officeDashJs.OneNote.NumberType.chnDbNum2 with String = js.native
-  /* "ChnDbNum3" */ val chnDbNum3: typings.officeDashJs.OneNote.NumberType.chnDbNum3 with String = js.native
-  /* "ChnDbNum4" */ val chnDbNum4: typings.officeDashJs.OneNote.NumberType.chnDbNum4 with String = js.native
-  /* "Chosung" */ val chosung: typings.officeDashJs.OneNote.NumberType.chosung with String = js.native
-  /* "Circlenum" */ val circlenum: typings.officeDashJs.OneNote.NumberType.circlenum with String = js.native
-  /* "Custom" */ val custom: typings.officeDashJs.OneNote.NumberType.custom with String = js.native
-  /* "DAiueo" */ val daiueo: typings.officeDashJs.OneNote.NumberType.daiueo with String = js.native
-  /* "DArabic" */ val darabic: typings.officeDashJs.OneNote.NumberType.darabic with String = js.native
-  /* "DbChar" */ val dbChar: typings.officeDashJs.OneNote.NumberType.dbChar with String = js.native
-  /* "DbNum1" */ val dbNum1: typings.officeDashJs.OneNote.NumberType.dbNum1 with String = js.native
-  /* "DbNum2" */ val dbNum2: typings.officeDashJs.OneNote.NumberType.dbNum2 with String = js.native
-  /* "DbNum3" */ val dbNum3: typings.officeDashJs.OneNote.NumberType.dbNum3 with String = js.native
-  /* "DbNum4" */ val dbNum4: typings.officeDashJs.OneNote.NumberType.dbNum4 with String = js.native
-  /* "DIroha" */ val diroha: typings.officeDashJs.OneNote.NumberType.diroha with String = js.native
-  /* "Ganada" */ val ganada: typings.officeDashJs.OneNote.NumberType.ganada with String = js.native
-  /* "GB1" */ val gb1: typings.officeDashJs.OneNote.NumberType.gb1 with String = js.native
-  /* "GB2" */ val gb2: typings.officeDashJs.OneNote.NumberType.gb2 with String = js.native
-  /* "GB3" */ val gb3: typings.officeDashJs.OneNote.NumberType.gb3 with String = js.native
-  /* "GB4" */ val gb4: typings.officeDashJs.OneNote.NumberType.gb4 with String = js.native
-  /* "Hebrew1" */ val hebrew1: typings.officeDashJs.OneNote.NumberType.hebrew1 with String = js.native
-  /* "Hebrew2" */ val hebrew2: typings.officeDashJs.OneNote.NumberType.hebrew2 with String = js.native
-  /* "Hex" */ val hex: typings.officeDashJs.OneNote.NumberType.hex with String = js.native
-  /* "Hindi1" */ val hindi1: typings.officeDashJs.OneNote.NumberType.hindi1 with String = js.native
-  /* "Hindi2" */ val hindi2: typings.officeDashJs.OneNote.NumberType.hindi2 with String = js.native
-  /* "Hindi3" */ val hindi3: typings.officeDashJs.OneNote.NumberType.hindi3 with String = js.native
-  /* "Iroha" */ val iroha: typings.officeDashJs.OneNote.NumberType.iroha with String = js.native
-  /* "KorDbNum1" */ val korDbNum1: typings.officeDashJs.OneNote.NumberType.korDbNum1 with String = js.native
-  /* "KorDbNum2" */ val korDbNum2: typings.officeDashJs.OneNote.NumberType.korDbNum2 with String = js.native
-  /* "KorDbNum3" */ val korDbNum3: typings.officeDashJs.OneNote.NumberType.korDbNum3 with String = js.native
-  /* "KorDbNum4" */ val korDbNum4: typings.officeDashJs.OneNote.NumberType.korDbNum4 with String = js.native
-  /* "LCGreek" */ val lcgreek: typings.officeDashJs.OneNote.NumberType.lcgreek with String = js.native
-  /* "LCLetter" */ val lcletter: typings.officeDashJs.OneNote.NumberType.lcletter with String = js.native
-  /* "LCRoman" */ val lcroman: typings.officeDashJs.OneNote.NumberType.lcroman with String = js.native
-  /* "LCRus" */ val lcrus: typings.officeDashJs.OneNote.NumberType.lcrus with String = js.native
-  /* "Lim" */ val lim: typings.officeDashJs.OneNote.NumberType.lim with String = js.native
-  /* "None" */ val none: typings.officeDashJs.OneNote.NumberType.none with String = js.native
-  /* "NumInDash" */ val numInDash: typings.officeDashJs.OneNote.NumberType.numInDash with String = js.native
-  /* "Ordinal" */ val ordinal: typings.officeDashJs.OneNote.NumberType.ordinal with String = js.native
-  /* "Ordtext" */ val ordtext: typings.officeDashJs.OneNote.NumberType.ordtext with String = js.native
-  /* "SbChar" */ val sbChar: typings.officeDashJs.OneNote.NumberType.sbChar with String = js.native
-  /* "Thai1" */ val thai1: typings.officeDashJs.OneNote.NumberType.thai1 with String = js.native
-  /* "Thai2" */ val thai2: typings.officeDashJs.OneNote.NumberType.thai2 with String = js.native
-  /* "TpeDbNum1" */ val tpeDbNum1: typings.officeDashJs.OneNote.NumberType.tpeDbNum1 with String = js.native
-  /* "TpeDbNum2" */ val tpeDbNum2: typings.officeDashJs.OneNote.NumberType.tpeDbNum2 with String = js.native
-  /* "TpeDbNum3" */ val tpeDbNum3: typings.officeDashJs.OneNote.NumberType.tpeDbNum3 with String = js.native
-  /* "TpeDbNum4" */ val tpeDbNum4: typings.officeDashJs.OneNote.NumberType.tpeDbNum4 with String = js.native
-  /* "UCGreek" */ val ucgreek: typings.officeDashJs.OneNote.NumberType.ucgreek with String = js.native
-  /* "UCLetter" */ val ucletter: typings.officeDashJs.OneNote.NumberType.ucletter with String = js.native
-  /* "UCRoman" */ val ucroman: typings.officeDashJs.OneNote.NumberType.ucroman with String = js.native
-  /* "UCRus" */ val ucrus: typings.officeDashJs.OneNote.NumberType.ucrus with String = js.native
-  /* "Zodiac1" */ val zodiac1: typings.officeDashJs.OneNote.NumberType.zodiac1 with String = js.native
-  /* "Zodiac2" */ val zodiac2: typings.officeDashJs.OneNote.NumberType.zodiac2 with String = js.native
-  /* "Zodiac3" */ val zodiac3: typings.officeDashJs.OneNote.NumberType.zodiac3 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[NumberType with String] = js.native
+  /* "Aiueo" */ @js.native
+  object aiueo extends TopLevel[aiueo with String]
+  
+  /* "Arabic" */ @js.native
+  object arabic extends TopLevel[arabic with String]
+  
+  /* "Arabic1" */ @js.native
+  object arabic1 extends TopLevel[arabic1 with String]
+  
+  /* "Arabic2" */ @js.native
+  object arabic2 extends TopLevel[arabic2 with String]
+  
+  /* "ArabicLZ" */ @js.native
+  object arabicLZ extends TopLevel[arabicLZ with String]
+  
+  /* "Bullet" */ @js.native
+  object bullet extends TopLevel[bullet with String]
+  
+  /* "Cardtext" */ @js.native
+  object cardtext extends TopLevel[cardtext with String]
+  
+  /* "ChiManSty" */ @js.native
+  object chiManSty extends TopLevel[chiManSty with String]
+  
+  /* "ChnDbNum1" */ @js.native
+  object chnDbNum1 extends TopLevel[chnDbNum1 with String]
+  
+  /* "ChnDbNum2" */ @js.native
+  object chnDbNum2 extends TopLevel[chnDbNum2 with String]
+  
+  /* "ChnDbNum3" */ @js.native
+  object chnDbNum3 extends TopLevel[chnDbNum3 with String]
+  
+  /* "ChnDbNum4" */ @js.native
+  object chnDbNum4 extends TopLevel[chnDbNum4 with String]
+  
+  /* "Chosung" */ @js.native
+  object chosung extends TopLevel[chosung with String]
+  
+  /* "Circlenum" */ @js.native
+  object circlenum extends TopLevel[circlenum with String]
+  
+  /* "Custom" */ @js.native
+  object custom extends TopLevel[custom with String]
+  
+  /* "DAiueo" */ @js.native
+  object daiueo extends TopLevel[daiueo with String]
+  
+  /* "DArabic" */ @js.native
+  object darabic extends TopLevel[darabic with String]
+  
+  /* "DbChar" */ @js.native
+  object dbChar extends TopLevel[dbChar with String]
+  
+  /* "DbNum1" */ @js.native
+  object dbNum1 extends TopLevel[dbNum1 with String]
+  
+  /* "DbNum2" */ @js.native
+  object dbNum2 extends TopLevel[dbNum2 with String]
+  
+  /* "DbNum3" */ @js.native
+  object dbNum3 extends TopLevel[dbNum3 with String]
+  
+  /* "DbNum4" */ @js.native
+  object dbNum4 extends TopLevel[dbNum4 with String]
+  
+  /* "DIroha" */ @js.native
+  object diroha extends TopLevel[diroha with String]
+  
+  /* "Ganada" */ @js.native
+  object ganada extends TopLevel[ganada with String]
+  
+  /* "GB1" */ @js.native
+  object gb1 extends TopLevel[gb1 with String]
+  
+  /* "GB2" */ @js.native
+  object gb2 extends TopLevel[gb2 with String]
+  
+  /* "GB3" */ @js.native
+  object gb3 extends TopLevel[gb3 with String]
+  
+  /* "GB4" */ @js.native
+  object gb4 extends TopLevel[gb4 with String]
+  
+  /* "Hebrew1" */ @js.native
+  object hebrew1 extends TopLevel[hebrew1 with String]
+  
+  /* "Hebrew2" */ @js.native
+  object hebrew2 extends TopLevel[hebrew2 with String]
+  
+  /* "Hex" */ @js.native
+  object hex extends TopLevel[hex with String]
+  
+  /* "Hindi1" */ @js.native
+  object hindi1 extends TopLevel[hindi1 with String]
+  
+  /* "Hindi2" */ @js.native
+  object hindi2 extends TopLevel[hindi2 with String]
+  
+  /* "Hindi3" */ @js.native
+  object hindi3 extends TopLevel[hindi3 with String]
+  
+  /* "Iroha" */ @js.native
+  object iroha extends TopLevel[iroha with String]
+  
+  /* "KorDbNum1" */ @js.native
+  object korDbNum1 extends TopLevel[korDbNum1 with String]
+  
+  /* "KorDbNum2" */ @js.native
+  object korDbNum2 extends TopLevel[korDbNum2 with String]
+  
+  /* "KorDbNum3" */ @js.native
+  object korDbNum3 extends TopLevel[korDbNum3 with String]
+  
+  /* "KorDbNum4" */ @js.native
+  object korDbNum4 extends TopLevel[korDbNum4 with String]
+  
+  /* "LCGreek" */ @js.native
+  object lcgreek extends TopLevel[lcgreek with String]
+  
+  /* "LCLetter" */ @js.native
+  object lcletter extends TopLevel[lcletter with String]
+  
+  /* "LCRoman" */ @js.native
+  object lcroman extends TopLevel[lcroman with String]
+  
+  /* "LCRus" */ @js.native
+  object lcrus extends TopLevel[lcrus with String]
+  
+  /* "Lim" */ @js.native
+  object lim extends TopLevel[lim with String]
+  
+  /* "None" */ @js.native
+  object none extends TopLevel[none with String]
+  
+  /* "NumInDash" */ @js.native
+  object numInDash extends TopLevel[numInDash with String]
+  
+  /* "Ordinal" */ @js.native
+  object ordinal extends TopLevel[ordinal with String]
+  
+  /* "Ordtext" */ @js.native
+  object ordtext extends TopLevel[ordtext with String]
+  
+  /* "SbChar" */ @js.native
+  object sbChar extends TopLevel[sbChar with String]
+  
+  /* "Thai1" */ @js.native
+  object thai1 extends TopLevel[thai1 with String]
+  
+  /* "Thai2" */ @js.native
+  object thai2 extends TopLevel[thai2 with String]
+  
+  /* "TpeDbNum1" */ @js.native
+  object tpeDbNum1 extends TopLevel[tpeDbNum1 with String]
+  
+  /* "TpeDbNum2" */ @js.native
+  object tpeDbNum2 extends TopLevel[tpeDbNum2 with String]
+  
+  /* "TpeDbNum3" */ @js.native
+  object tpeDbNum3 extends TopLevel[tpeDbNum3 with String]
+  
+  /* "TpeDbNum4" */ @js.native
+  object tpeDbNum4 extends TopLevel[tpeDbNum4 with String]
+  
+  /* "UCGreek" */ @js.native
+  object ucgreek extends TopLevel[ucgreek with String]
+  
+  /* "UCLetter" */ @js.native
+  object ucletter extends TopLevel[ucletter with String]
+  
+  /* "UCRoman" */ @js.native
+  object ucroman extends TopLevel[ucroman with String]
+  
+  /* "UCRus" */ @js.native
+  object ucrus extends TopLevel[ucrus with String]
+  
+  /* "Zodiac1" */ @js.native
+  object zodiac1 extends TopLevel[zodiac1 with String]
+  
+  /* "Zodiac2" */ @js.native
+  object zodiac2 extends TopLevel[zodiac2 with String]
+  
+  /* "Zodiac3" */ @js.native
+  object zodiac3 extends TopLevel[zodiac3 with String]
+  
 }
 

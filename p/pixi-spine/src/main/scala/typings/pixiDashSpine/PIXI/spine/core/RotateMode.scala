@@ -1,5 +1,9 @@
 package typings.pixiDashSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.pixiDashSpine.PIXI.spine.core.RotateMode.Chain
+import typings.pixiDashSpine.PIXI.spine.core.RotateMode.ChainScale
+import typings.pixiDashSpine.PIXI.spine.core.RotateMode.Tangent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object RotateMode extends js.Object {
   @js.native
   sealed trait Tangent extends RotateMode
   
-  /* 1 */ val Chain: typings.pixiDashSpine.PIXI.spine.core.RotateMode.Chain with Double = js.native
-  /* 2 */ val ChainScale: typings.pixiDashSpine.PIXI.spine.core.RotateMode.ChainScale with Double = js.native
-  /* 0 */ val Tangent: typings.pixiDashSpine.PIXI.spine.core.RotateMode.Tangent with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RotateMode with Double] = js.native
+  /* 1 */ @js.native
+  object Chain extends TopLevel[Chain with Double]
+  
+  /* 2 */ @js.native
+  object ChainScale extends TopLevel[ChainScale with Double]
+  
+  /* 0 */ @js.native
+  object Tangent extends TopLevel[Tangent with Double]
+  
 }
 

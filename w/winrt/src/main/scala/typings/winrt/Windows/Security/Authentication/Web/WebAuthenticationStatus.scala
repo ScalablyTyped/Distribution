@@ -1,5 +1,9 @@
 package typings.winrt.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.errorHttp
+import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.success
+import typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.userCancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object WebAuthenticationStatus extends js.Object {
   @js.native
   sealed trait userCancel extends WebAuthenticationStatus
   
-  /* 2 */ val errorHttp: typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.errorHttp with Double = js.native
-  /* 0 */ val success: typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.success with Double = js.native
-  /* 1 */ val userCancel: typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationStatus.userCancel with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[WebAuthenticationStatus with Double] = js.native
+  /* 2 */ @js.native
+  object errorHttp extends TopLevel[errorHttp with Double]
+  
+  /* 0 */ @js.native
+  object success extends TopLevel[success with Double]
+  
+  /* 1 */ @js.native
+  object userCancel extends TopLevel[userCancel with Double]
+  
 }
 

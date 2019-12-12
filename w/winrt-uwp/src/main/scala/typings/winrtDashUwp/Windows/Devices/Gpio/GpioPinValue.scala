@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Devices.Gpio
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.high
+import typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.low
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object GpioPinValue extends js.Object {
   @js.native
   sealed trait low extends GpioPinValue
   
-  /* 1 */ val high: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.high with Double = js.native
-  /* 0 */ val low: typings.winrtDashUwp.Windows.Devices.Gpio.GpioPinValue.low with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GpioPinValue with Double] = js.native
+  /* 1 */ @js.native
+  object high extends TopLevel[high with Double]
+  
+  /* 0 */ @js.native
+  object low extends TopLevel[low with Double]
+  
 }
 

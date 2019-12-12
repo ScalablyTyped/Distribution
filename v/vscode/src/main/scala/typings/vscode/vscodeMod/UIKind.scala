@@ -1,5 +1,8 @@
 package typings.vscode.vscodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vscode.vscodeMod.UIKind.Desktop
+import typings.vscode.vscodeMod.UIKind.Web
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,9 +25,13 @@ object UIKind extends js.Object {
   @js.native
   sealed trait Web extends UIKind
   
-  /* 1 */ val Desktop: typings.vscode.vscodeMod.UIKind.Desktop with Double = js.native
-  /* 2 */ val Web: typings.vscode.vscodeMod.UIKind.Web with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[UIKind with Double] = js.native
+  /* 1 */ @js.native
+  object Desktop extends TopLevel[Desktop with Double]
+  
+  /* 2 */ @js.native
+  object Web extends TopLevel[Web with Double]
+  
 }
 

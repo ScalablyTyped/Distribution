@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.Spreadsheet
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Column
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Default
+import typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Row
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SelectionType extends js.Object {
   @js.native
   sealed trait Row extends SelectionType
   
-  /* 0 */ val Column: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Column with Double = js.native
-  /* 2 */ val Default: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Default with Double = js.native
-  /* 1 */ val Row: typings.ejDotWebDotAll.ej.Spreadsheet.SelectionType.Row with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SelectionType with Double] = js.native
+  /* 0 */ @js.native
+  object Column extends TopLevel[Column with Double]
+  
+  /* 2 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object Row extends TopLevel[Row with Double]
+  
 }
 

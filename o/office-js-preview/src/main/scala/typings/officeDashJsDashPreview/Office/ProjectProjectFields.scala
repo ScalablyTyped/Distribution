@@ -1,5 +1,19 @@
 package typings.officeDashJsDashPreview.Office
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencyDigits
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencySymbol
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencySymbolPosition
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.DurationUnits
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.Finish
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.GUID
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.ProjectServerUrl
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.ReadOnly
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.Start
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.VERSION
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.WSSList
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.WSSUrl
+import typings.officeDashJsDashPreview.Office.ProjectProjectFields.WorkUnits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,20 +107,46 @@ object ProjectProjectFields extends js.Object {
   @js.native
   sealed trait WorkUnits extends ProjectProjectFields
   
-  /* 0 */ val CurrencyDigits: typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencyDigits with Double = js.native
-  /* 1 */ val CurrencySymbol: typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencySymbol with Double = js.native
-  /* 2 */ val CurrencySymbolPosition: typings.officeDashJsDashPreview.Office.ProjectProjectFields.CurrencySymbolPosition with Double = js.native
-  /* 3 */ val DurationUnits: typings.officeDashJsDashPreview.Office.ProjectProjectFields.DurationUnits with Double = js.native
-  /* 5 */ val Finish: typings.officeDashJsDashPreview.Office.ProjectProjectFields.Finish with Double = js.native
-  /* 4 */ val GUID: typings.officeDashJsDashPreview.Office.ProjectProjectFields.GUID with Double = js.native
-  /* 10 */ val ProjectServerUrl: typings.officeDashJsDashPreview.Office.ProjectProjectFields.ProjectServerUrl with Double = js.native
-  /* 7 */ val ReadOnly: typings.officeDashJsDashPreview.Office.ProjectProjectFields.ReadOnly with Double = js.native
-  /* 6 */ val Start: typings.officeDashJsDashPreview.Office.ProjectProjectFields.Start with Double = js.native
-  /* 8 */ val VERSION: typings.officeDashJsDashPreview.Office.ProjectProjectFields.VERSION with Double = js.native
-  /* 12 */ val WSSList: typings.officeDashJsDashPreview.Office.ProjectProjectFields.WSSList with Double = js.native
-  /* 11 */ val WSSUrl: typings.officeDashJsDashPreview.Office.ProjectProjectFields.WSSUrl with Double = js.native
-  /* 9 */ val WorkUnits: typings.officeDashJsDashPreview.Office.ProjectProjectFields.WorkUnits with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProjectProjectFields with Double] = js.native
+  /* 0 */ @js.native
+  object CurrencyDigits extends TopLevel[CurrencyDigits with Double]
+  
+  /* 1 */ @js.native
+  object CurrencySymbol extends TopLevel[CurrencySymbol with Double]
+  
+  /* 2 */ @js.native
+  object CurrencySymbolPosition extends TopLevel[CurrencySymbolPosition with Double]
+  
+  /* 3 */ @js.native
+  object DurationUnits extends TopLevel[DurationUnits with Double]
+  
+  /* 5 */ @js.native
+  object Finish extends TopLevel[Finish with Double]
+  
+  /* 4 */ @js.native
+  object GUID extends TopLevel[GUID with Double]
+  
+  /* 10 */ @js.native
+  object ProjectServerUrl extends TopLevel[ProjectServerUrl with Double]
+  
+  /* 7 */ @js.native
+  object ReadOnly extends TopLevel[ReadOnly with Double]
+  
+  /* 6 */ @js.native
+  object Start extends TopLevel[Start with Double]
+  
+  /* 8 */ @js.native
+  object VERSION extends TopLevel[VERSION with Double]
+  
+  /* 12 */ @js.native
+  object WSSList extends TopLevel[WSSList with Double]
+  
+  /* 11 */ @js.native
+  object WSSUrl extends TopLevel[WSSUrl with Double]
+  
+  /* 9 */ @js.native
+  object WorkUnits extends TopLevel[WorkUnits with Double]
+  
 }
 

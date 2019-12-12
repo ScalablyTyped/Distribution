@@ -1,5 +1,12 @@
 package typings.winrtDashUwp.Windows.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.archive
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.directory
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.locallyIncomplete
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.normal
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.readOnly
+import typings.winrtDashUwp.Windows.Storage.FileAttributes.temporary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,13 +42,25 @@ object FileAttributes extends js.Object {
   @js.native
   sealed trait temporary extends FileAttributes
   
-  /* 3 */ val archive: typings.winrtDashUwp.Windows.Storage.FileAttributes.archive with Double = js.native
-  /* 2 */ val directory: typings.winrtDashUwp.Windows.Storage.FileAttributes.directory with Double = js.native
-  /* 5 */ val locallyIncomplete: typings.winrtDashUwp.Windows.Storage.FileAttributes.locallyIncomplete with Double = js.native
-  /* 0 */ val normal: typings.winrtDashUwp.Windows.Storage.FileAttributes.normal with Double = js.native
-  /* 1 */ val readOnly: typings.winrtDashUwp.Windows.Storage.FileAttributes.readOnly with Double = js.native
-  /* 4 */ val temporary: typings.winrtDashUwp.Windows.Storage.FileAttributes.temporary with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FileAttributes with Double] = js.native
+  /* 3 */ @js.native
+  object archive extends TopLevel[archive with Double]
+  
+  /* 2 */ @js.native
+  object directory extends TopLevel[directory with Double]
+  
+  /* 5 */ @js.native
+  object locallyIncomplete extends TopLevel[locallyIncomplete with Double]
+  
+  /* 0 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 1 */ @js.native
+  object readOnly extends TopLevel[readOnly with Double]
+  
+  /* 4 */ @js.native
+  object temporary extends TopLevel[temporary with Double]
+  
 }
 

@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiLab
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiLab.autocompleteAutocompleteMod.AutocompleteProps
 import typings.atMaterialDashUiLab.ratingRatingMod.RatingProps
 import typings.atMaterialDashUiLab.speedDialActionSpeedDialActionMod.SpeedDialActionProps
@@ -28,7 +29,6 @@ object atMaterialDashUiLabMod extends js.Object {
     def this(props: RatingProps, context: js.Any) = this()
   }
   
-  val Rating: ComponentType[RatingProps] = js.native
   val Skeleton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverridableComponent<SkeletonTypeMap> */ js.Any = js.native
   val ToggleButton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBase<ToggleButtonTypeMap> */ js.Any = js.native
   val createFilterOptions: CreateFilterOptions = js.native
@@ -40,5 +40,8 @@ object atMaterialDashUiLabMod extends js.Object {
   def TreeItem(props: TreeItemProps): Element = js.native
   def TreeView(props: TreeViewProps): Element = js.native
   def useAutocomplete(props: UseAutocompleteProps): Anon_AnchorEl = js.native
+  @js.native
+  object Rating extends TopLevel[ComponentType[RatingProps]]
+  
 }
 

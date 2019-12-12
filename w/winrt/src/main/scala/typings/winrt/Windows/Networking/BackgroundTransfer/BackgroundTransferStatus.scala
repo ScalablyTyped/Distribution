@@ -1,5 +1,14 @@
 package typings.winrt.Windows.Networking.BackgroundTransfer
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.canceled
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.completed
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.error
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.idle
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedByApplication
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedCostedNetwork
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedNoNetwork
+import typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.running
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object BackgroundTransferStatus extends js.Object {
   @js.native
   sealed trait running extends BackgroundTransferStatus
   
-  /* 6 */ val canceled: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.canceled with Double = js.native
-  /* 5 */ val completed: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.completed with Double = js.native
-  /* 7 */ val error: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.error with Double = js.native
-  /* 0 */ val idle: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.idle with Double = js.native
-  /* 2 */ val pausedByApplication: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedByApplication with Double = js.native
-  /* 3 */ val pausedCostedNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedCostedNetwork with Double = js.native
-  /* 4 */ val pausedNoNetwork: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.pausedNoNetwork with Double = js.native
-  /* 1 */ val running: typings.winrt.Windows.Networking.BackgroundTransfer.BackgroundTransferStatus.running with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BackgroundTransferStatus with Double] = js.native
+  /* 6 */ @js.native
+  object canceled extends TopLevel[canceled with Double]
+  
+  /* 5 */ @js.native
+  object completed extends TopLevel[completed with Double]
+  
+  /* 7 */ @js.native
+  object error extends TopLevel[error with Double]
+  
+  /* 0 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
+  /* 2 */ @js.native
+  object pausedByApplication extends TopLevel[pausedByApplication with Double]
+  
+  /* 3 */ @js.native
+  object pausedCostedNetwork extends TopLevel[pausedCostedNetwork with Double]
+  
+  /* 4 */ @js.native
+  object pausedNoNetwork extends TopLevel[pausedNoNetwork with Double]
+  
+  /* 1 */ @js.native
+  object running extends TopLevel[running with Double]
+  
 }
 

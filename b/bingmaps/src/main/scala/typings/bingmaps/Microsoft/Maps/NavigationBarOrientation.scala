@@ -1,5 +1,8 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.TopLevel
+import typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.horizontal
+import typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +21,13 @@ object NavigationBarOrientation extends js.Object {
   @js.native
   sealed trait vertical extends NavigationBarOrientation
   
-  /* 0 */ val horizontal: typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.horizontal with Double = js.native
-  /* 1 */ val vertical: typings.bingmaps.Microsoft.Maps.NavigationBarOrientation.vertical with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NavigationBarOrientation with Double] = js.native
+  /* 0 */ @js.native
+  object horizontal extends TopLevel[horizontal with Double]
+  
+  /* 1 */ @js.native
+  object vertical extends TopLevel[vertical with Double]
+  
 }
 

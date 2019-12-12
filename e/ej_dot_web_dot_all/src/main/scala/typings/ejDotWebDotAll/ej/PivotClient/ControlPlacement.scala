@@ -1,5 +1,6 @@
 package typings.ejDotWebDotAll.ej.PivotClient
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +19,15 @@ object ControlPlacement extends js.Object {
   @js.native
   sealed trait Tile extends ControlPlacement
   
-  /* 0 */ val Tab: typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tab with Double = js.native
-  /* 1 */ val Tile: typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tile with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControlPlacement with Double] = js.native
+  /* 0 */ @js.native
+  object Tab
+    extends TopLevel[typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tab with Double]
+  
+  /* 1 */ @js.native
+  object Tile
+    extends TopLevel[typings.ejDotWebDotAll.ej.PivotClient.ControlPlacement.Tile with Double]
+  
 }
 

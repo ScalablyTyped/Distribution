@@ -1,5 +1,12 @@
 package typings.officeDashJs.Word
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashJs.Word.RangeLocation.after
+import typings.officeDashJs.Word.RangeLocation.before
+import typings.officeDashJs.Word.RangeLocation.content
+import typings.officeDashJs.Word.RangeLocation.end
+import typings.officeDashJs.Word.RangeLocation.start
+import typings.officeDashJs.Word.RangeLocation.whole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,13 +68,25 @@ object RangeLocation extends js.Object {
   @js.native
   sealed trait whole extends RangeLocation
   
-  /* "After" */ val after: typings.officeDashJs.Word.RangeLocation.after with String = js.native
-  /* "Before" */ val before: typings.officeDashJs.Word.RangeLocation.before with String = js.native
-  /* "Content" */ val content: typings.officeDashJs.Word.RangeLocation.content with String = js.native
-  /* "End" */ val end: typings.officeDashJs.Word.RangeLocation.end with String = js.native
-  /* "Start" */ val start: typings.officeDashJs.Word.RangeLocation.start with String = js.native
-  /* "Whole" */ val whole: typings.officeDashJs.Word.RangeLocation.whole with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[RangeLocation with String] = js.native
+  /* "After" */ @js.native
+  object after extends TopLevel[after with String]
+  
+  /* "Before" */ @js.native
+  object before extends TopLevel[before with String]
+  
+  /* "Content" */ @js.native
+  object content extends TopLevel[content with String]
+  
+  /* "End" */ @js.native
+  object end extends TopLevel[end with String]
+  
+  /* "Start" */ @js.native
+  object start extends TopLevel[start with String]
+  
+  /* "Whole" */ @js.native
+  object whole extends TopLevel[whole with String]
+  
 }
 

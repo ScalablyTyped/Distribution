@@ -1,5 +1,10 @@
 package typings.winrtDashUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http10
+import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http11
+import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http20
+import typings.winrtDashUwp.Windows.Web.Http.HttpVersion.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,11 +32,19 @@ object HttpVersion extends js.Object {
   @js.native
   sealed trait none extends HttpVersion
   
-  /* 1 */ val http10: typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http10 with Double = js.native
-  /* 2 */ val http11: typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http11 with Double = js.native
-  /* 3 */ val http20: typings.winrtDashUwp.Windows.Web.Http.HttpVersion.http20 with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Web.Http.HttpVersion.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HttpVersion with Double] = js.native
+  /* 1 */ @js.native
+  object http10 extends TopLevel[http10 with Double]
+  
+  /* 2 */ @js.native
+  object http11 extends TopLevel[http11 with Double]
+  
+  /* 3 */ @js.native
+  object http20 extends TopLevel[http20 with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.openui5.sap.ui.layout
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.ui.layout.SideContentPosition.Begin
+import typings.openui5.sap.ui.layout.SideContentPosition.End
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object SideContentPosition extends js.Object {
   @js.native
   sealed trait End extends SideContentPosition
   
-  /* 0 */ val Begin: typings.openui5.sap.ui.layout.SideContentPosition.Begin with Double = js.native
-  /* 1 */ val End: typings.openui5.sap.ui.layout.SideContentPosition.End with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SideContentPosition with Double] = js.native
+  /* 0 */ @js.native
+  object Begin extends TopLevel[Begin with Double]
+  
+  /* 1 */ @js.native
+  object End extends TopLevel[End with Double]
+  
 }
 

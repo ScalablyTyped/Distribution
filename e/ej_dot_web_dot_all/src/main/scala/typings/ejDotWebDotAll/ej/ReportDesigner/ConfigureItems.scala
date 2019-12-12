@@ -1,5 +1,11 @@
 package typings.ejDotWebDotAll.ej.ReportDesigner
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.All
+import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Data
+import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.ImageManager
+import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Parameter
+import typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Property
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,12 +36,22 @@ object ConfigureItems extends js.Object {
   @js.native
   sealed trait Property extends ConfigureItems
   
-  /* 4 */ val All: typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.All with Double = js.native
-  /* 1 */ val Data: typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Data with Double = js.native
-  /* 3 */ val ImageManager: typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.ImageManager with Double = js.native
-  /* 2 */ val Parameter: typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Parameter with Double = js.native
-  /* 0 */ val Property: typings.ejDotWebDotAll.ej.ReportDesigner.ConfigureItems.Property with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ConfigureItems with Double] = js.native
+  /* 4 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 1 */ @js.native
+  object Data extends TopLevel[Data with Double]
+  
+  /* 3 */ @js.native
+  object ImageManager extends TopLevel[ImageManager with Double]
+  
+  /* 2 */ @js.native
+  object Parameter extends TopLevel[Parameter with Double]
+  
+  /* 0 */ @js.native
+  object Property extends TopLevel[Property with Double]
+  
 }
 

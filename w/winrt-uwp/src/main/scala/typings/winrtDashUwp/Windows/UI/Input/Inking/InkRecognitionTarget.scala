@@ -1,5 +1,9 @@
 package typings.winrtDashUwp.Windows.UI.Input.Inking
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.all
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.recent
+import typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +27,16 @@ object InkRecognitionTarget extends js.Object {
   @js.native
   sealed trait selected extends InkRecognitionTarget
   
-  /* 0 */ val all: typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.all with Double = js.native
-  /* 2 */ val recent: typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.recent with Double = js.native
-  /* 1 */ val selected: typings.winrtDashUwp.Windows.UI.Input.Inking.InkRecognitionTarget.selected with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InkRecognitionTarget with Double] = js.native
+  /* 0 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 2 */ @js.native
+  object recent extends TopLevel[recent with Double]
+  
+  /* 1 */ @js.native
+  object selected extends TopLevel[selected with Double]
+  
 }
 

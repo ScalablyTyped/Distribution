@@ -1,5 +1,26 @@
 package typings.ejDotWebDotAll.ej.ReportDesigner
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.AlignGrid
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Alignment
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.All
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Center
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Copy
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Cut
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Delete
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Distribute
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.EditDesign
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.New
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Open
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Order
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Paste
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Preview
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Redo
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Save
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Sizing
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Undo
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.View
+import typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -90,27 +111,67 @@ object ToolbarItems extends js.Object {
   @js.native
   sealed trait Zoom extends ToolbarItems
   
-  /* 15 */ val AlignGrid: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.AlignGrid with Double = js.native
-  /* 12 */ val Alignment: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Alignment with Double = js.native
-  /* 19 */ val All: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.All with Double = js.native
-  /* 11 */ val Center: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Center with Double = js.native
-  /* 4 */ val Copy: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Copy with Double = js.native
-  /* 3 */ val Cut: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Cut with Double = js.native
-  /* 6 */ val Delete: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Delete with Double = js.native
-  /* 13 */ val Distribute: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Distribute with Double = js.native
-  /* 16 */ val EditDesign: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.EditDesign with Double = js.native
-  /* 0 */ val New: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.New with Double = js.native
-  /* 1 */ val Open: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Open with Double = js.native
-  /* 10 */ val Order: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Order with Double = js.native
-  /* 5 */ val Paste: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Paste with Double = js.native
-  /* 18 */ val Preview: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Preview with Double = js.native
-  /* 8 */ val Redo: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Redo with Double = js.native
-  /* 2 */ val Save: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Save with Double = js.native
-  /* 14 */ val Sizing: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Sizing with Double = js.native
-  /* 7 */ val Undo: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Undo with Double = js.native
-  /* 17 */ val View: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.View with Double = js.native
-  /* 9 */ val Zoom: typings.ejDotWebDotAll.ej.ReportDesigner.ToolbarItems.Zoom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ToolbarItems with Double] = js.native
+  /* 15 */ @js.native
+  object AlignGrid extends TopLevel[AlignGrid with Double]
+  
+  /* 12 */ @js.native
+  object Alignment extends TopLevel[Alignment with Double]
+  
+  /* 19 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 11 */ @js.native
+  object Center extends TopLevel[Center with Double]
+  
+  /* 4 */ @js.native
+  object Copy extends TopLevel[Copy with Double]
+  
+  /* 3 */ @js.native
+  object Cut extends TopLevel[Cut with Double]
+  
+  /* 6 */ @js.native
+  object Delete extends TopLevel[Delete with Double]
+  
+  /* 13 */ @js.native
+  object Distribute extends TopLevel[Distribute with Double]
+  
+  /* 16 */ @js.native
+  object EditDesign extends TopLevel[EditDesign with Double]
+  
+  /* 0 */ @js.native
+  object New extends TopLevel[New with Double]
+  
+  /* 1 */ @js.native
+  object Open extends TopLevel[Open with Double]
+  
+  /* 10 */ @js.native
+  object Order extends TopLevel[Order with Double]
+  
+  /* 5 */ @js.native
+  object Paste extends TopLevel[Paste with Double]
+  
+  /* 18 */ @js.native
+  object Preview extends TopLevel[Preview with Double]
+  
+  /* 8 */ @js.native
+  object Redo extends TopLevel[Redo with Double]
+  
+  /* 2 */ @js.native
+  object Save extends TopLevel[Save with Double]
+  
+  /* 14 */ @js.native
+  object Sizing extends TopLevel[Sizing with Double]
+  
+  /* 7 */ @js.native
+  object Undo extends TopLevel[Undo with Double]
+  
+  /* 17 */ @js.native
+  object View extends TopLevel[View with Double]
+  
+  /* 9 */ @js.native
+  object Zoom extends TopLevel[Zoom with Double]
+  
 }
 

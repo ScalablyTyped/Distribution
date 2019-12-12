@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.UI.Text.Core
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.failed
+import typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.succeeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object CoreTextTextUpdatingResult extends js.Object {
   @js.native
   sealed trait succeeded extends CoreTextTextUpdatingResult
   
-  /* 1 */ val failed: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.failed with Double = js.native
-  /* 0 */ val succeeded: typings.winrtDashUwp.Windows.UI.Text.Core.CoreTextTextUpdatingResult.succeeded with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CoreTextTextUpdatingResult with Double] = js.native
+  /* 1 */ @js.native
+  object failed extends TopLevel[failed with Double]
+  
+  /* 0 */ @js.native
+  object succeeded extends TopLevel[succeeded with Double]
+  
 }
 

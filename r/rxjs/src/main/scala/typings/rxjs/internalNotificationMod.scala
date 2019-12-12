@@ -1,7 +1,11 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.internalNotificationMod.Notification
 import typings.rxjs.internalNotificationMod.NotificationKind
+import typings.rxjs.internalNotificationMod.NotificationKind.COMPLETE
+import typings.rxjs.internalNotificationMod.NotificationKind.ERROR
+import typings.rxjs.internalNotificationMod.NotificationKind.NEXT
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalTypesMod.PartialObserver
 import typings.rxjs.rxjsStrings.C
@@ -127,11 +131,17 @@ object internalNotificationMod extends js.Object {
     @js.native
     sealed trait NEXT extends NotificationKind
     
-    /* "C" */ val COMPLETE: typings.rxjs.internalNotificationMod.NotificationKind.COMPLETE with String = js.native
-    /* "E" */ val ERROR: typings.rxjs.internalNotificationMod.NotificationKind.ERROR with String = js.native
-    /* "N" */ val NEXT: typings.rxjs.internalNotificationMod.NotificationKind.NEXT with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[NotificationKind with String] = js.native
+    /* "C" */ @js.native
+    object COMPLETE extends TopLevel[COMPLETE with String]
+    
+    /* "E" */ @js.native
+    object ERROR extends TopLevel[ERROR with String]
+    
+    /* "N" */ @js.native
+    object NEXT extends TopLevel[NEXT with String]
+    
   }
   
 }

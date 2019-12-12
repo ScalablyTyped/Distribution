@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "5.3.0-bb9feb"
+version := "5.3.0-b143d9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

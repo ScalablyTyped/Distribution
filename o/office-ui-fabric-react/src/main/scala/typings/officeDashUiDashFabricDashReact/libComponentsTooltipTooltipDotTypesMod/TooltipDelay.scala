@@ -1,5 +1,9 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.long
+import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.medium
+import typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.zero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,10 +23,16 @@ object TooltipDelay extends js.Object {
   @js.native
   sealed trait zero extends TooltipDelay
   
-  /* 2 */ val long: typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.long with Double = js.native
-  /* 1 */ val medium: typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.medium with Double = js.native
-  /* 0 */ val zero: typings.officeDashUiDashFabricDashReact.libComponentsTooltipTooltipDotTypesMod.TooltipDelay.zero with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TooltipDelay with Double] = js.native
+  /* 2 */ @js.native
+  object long extends TopLevel[long with Double]
+  
+  /* 1 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
+  /* 0 */ @js.native
+  object zero extends TopLevel[zero with Double]
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.winrt.Windows.UI.Popups
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay
+import typings.winrt.Windows.UI.Popups.MessageDialogOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object MessageDialogOptions extends js.Object {
   @js.native
   sealed trait none extends MessageDialogOptions
   
-  /* 1 */ val acceptUserInputAfterDelay: typings.winrt.Windows.UI.Popups.MessageDialogOptions.acceptUserInputAfterDelay with Double = js.native
-  /* 0 */ val none: typings.winrt.Windows.UI.Popups.MessageDialogOptions.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MessageDialogOptions with Double] = js.native
+  /* 1 */ @js.native
+  object acceptUserInputAfterDelay extends TopLevel[acceptUserInputAfterDelay with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

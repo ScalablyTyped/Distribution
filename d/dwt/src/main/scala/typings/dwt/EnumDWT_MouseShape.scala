@@ -1,5 +1,10 @@
 package typings.dwt
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dwt.EnumDWT_MouseShape.Crosshair
+import typings.dwt.EnumDWT_MouseShape.Default
+import typings.dwt.EnumDWT_MouseShape.Hand
+import typings.dwt.EnumDWT_MouseShape.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,11 +27,19 @@ object EnumDWT_MouseShape extends js.Object {
   @js.native
   sealed trait Zoom extends EnumDWT_MouseShape
   
-  /* 2 */ val Crosshair: typings.dwt.EnumDWT_MouseShape.Crosshair with Double = js.native
-  /* 0 */ val Default: typings.dwt.EnumDWT_MouseShape.Default with Double = js.native
-  /* 1 */ val Hand: typings.dwt.EnumDWT_MouseShape.Hand with Double = js.native
-  /* 3 */ val Zoom: typings.dwt.EnumDWT_MouseShape.Zoom with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWT_MouseShape with Double] = js.native
+  /* 2 */ @js.native
+  object Crosshair extends TopLevel[Crosshair with Double]
+  
+  /* 0 */ @js.native
+  object Default extends TopLevel[Default with Double]
+  
+  /* 1 */ @js.native
+  object Hand extends TopLevel[Hand with Double]
+  
+  /* 3 */ @js.native
+  object Zoom extends TopLevel[Zoom with Double]
+  
 }
 

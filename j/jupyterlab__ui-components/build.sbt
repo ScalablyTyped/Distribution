@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__ui-components"
-version := "1.2.1-6dfd5b"
+version := "1.2.1-8b02af"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,11 +13,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-815e08",
   "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-9147b0",
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-075c8c",
-  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-ca1d2a",
+  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-6381db",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "typestyle" % "2.0.4-e6dde4")
+  "org.scalablytyped" %%% "typestyle" % "2.0.4-cb69bc")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

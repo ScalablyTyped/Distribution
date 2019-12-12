@@ -1,5 +1,9 @@
 package typings.devexpressDashWeb
 
+import org.scalablytyped.runtime.TopLevel
+import typings.devexpressDashWeb.TableHeightUnitType.Auto
+import typings.devexpressDashWeb.TableHeightUnitType.Exact
+import typings.devexpressDashWeb.TableHeightUnitType.Minimum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,10 +35,16 @@ object TableHeightUnitType extends js.Object {
   @js.native
   sealed trait Minimum extends TableHeightUnitType
   
-  /* 1 */ val Auto: typings.devexpressDashWeb.TableHeightUnitType.Auto with Double = js.native
-  /* 2 */ val Exact: typings.devexpressDashWeb.TableHeightUnitType.Exact with Double = js.native
-  /* 0 */ val Minimum: typings.devexpressDashWeb.TableHeightUnitType.Minimum with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TableHeightUnitType with Double] = js.native
+  /* 1 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 2 */ @js.native
+  object Exact extends TopLevel[Exact with Double]
+  
+  /* 0 */ @js.native
+  object Minimum extends TopLevel[Minimum with Double]
+  
 }
 

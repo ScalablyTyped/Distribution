@@ -1,6 +1,8 @@
 package typings.watsonDashDeveloperDashCloud.assistantV1Mod
 
+import org.scalablytyped.runtime.TopLevel
 import typings.watsonDashDeveloperDashCloud.assistantV1Mod.GetWorkspaceConstants.Sort
+import typings.watsonDashDeveloperDashCloud.assistantV1Mod.GetWorkspaceConstants.Sort.STABLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,9 +20,11 @@ object GetWorkspaceConstants extends js.Object {
     @js.native
     sealed trait STABLE extends Sort
     
-    /* "stable" */ val STABLE: typings.watsonDashDeveloperDashCloud.assistantV1Mod.GetWorkspaceConstants.Sort.STABLE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Sort with String] = js.native
+    /* "stable" */ @js.native
+    object STABLE extends TopLevel[STABLE with String]
+    
   }
   
 }

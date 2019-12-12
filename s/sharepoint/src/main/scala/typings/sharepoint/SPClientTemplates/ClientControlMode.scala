@@ -1,5 +1,11 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.TopLevel
+import typings.sharepoint.SPClientTemplates.ClientControlMode.DisplayForm
+import typings.sharepoint.SPClientTemplates.ClientControlMode.EditForm
+import typings.sharepoint.SPClientTemplates.ClientControlMode.Invalid
+import typings.sharepoint.SPClientTemplates.ClientControlMode.NewForm
+import typings.sharepoint.SPClientTemplates.ClientControlMode.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object ClientControlMode extends js.Object {
   @js.native
   sealed trait View extends ClientControlMode
   
-  /* 1 */ val DisplayForm: typings.sharepoint.SPClientTemplates.ClientControlMode.DisplayForm with Double = js.native
-  /* 2 */ val EditForm: typings.sharepoint.SPClientTemplates.ClientControlMode.EditForm with Double = js.native
-  /* 0 */ val Invalid: typings.sharepoint.SPClientTemplates.ClientControlMode.Invalid with Double = js.native
-  /* 3 */ val NewForm: typings.sharepoint.SPClientTemplates.ClientControlMode.NewForm with Double = js.native
-  /* 4 */ val View: typings.sharepoint.SPClientTemplates.ClientControlMode.View with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ClientControlMode with Double] = js.native
+  /* 1 */ @js.native
+  object DisplayForm extends TopLevel[DisplayForm with Double]
+  
+  /* 2 */ @js.native
+  object EditForm extends TopLevel[EditForm with Double]
+  
+  /* 0 */ @js.native
+  object Invalid extends TopLevel[Invalid with Double]
+  
+  /* 3 */ @js.native
+  object NewForm extends TopLevel[NewForm with Double]
+  
+  /* 4 */ @js.native
+  object View extends TopLevel[View with Double]
+  
 }
 

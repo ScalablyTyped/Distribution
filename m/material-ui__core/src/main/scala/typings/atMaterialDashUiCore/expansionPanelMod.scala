@@ -1,5 +1,6 @@
 package typings.atMaterialDashUiCore
 
+import org.scalablytyped.runtime.TopLevel
 import typings.atMaterialDashUiCore.expansionPanelExpansionPanelMod.ExpansionPanelProps
 import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentState
@@ -18,6 +19,8 @@ object expansionPanelMod extends js.Object {
     def this(props: ExpansionPanelProps, context: js.Any) = this()
   }
   
-  val default: ComponentType[ExpansionPanelProps] = js.native
+  @js.native
+  object default extends TopLevel[ComponentType[ExpansionPanelProps]]
+  
 }
 

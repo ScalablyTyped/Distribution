@@ -1,5 +1,14 @@
 package typings.syslogDashClient.syslogDashClientMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.syslogDashClient.syslogDashClientMod.Severity.Alert
+import typings.syslogDashClient.syslogDashClientMod.Severity.Critical
+import typings.syslogDashClient.syslogDashClientMod.Severity.Debug
+import typings.syslogDashClient.syslogDashClientMod.Severity.Emergency
+import typings.syslogDashClient.syslogDashClientMod.Severity.Error
+import typings.syslogDashClient.syslogDashClientMod.Severity.Informational
+import typings.syslogDashClient.syslogDashClientMod.Severity.Notice
+import typings.syslogDashClient.syslogDashClientMod.Severity.Warning
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,15 +43,31 @@ object Severity extends js.Object {
   @js.native
   sealed trait Warning extends Severity
   
-  /* 1 */ val Alert: typings.syslogDashClient.syslogDashClientMod.Severity.Alert with Double = js.native
-  /* 2 */ val Critical: typings.syslogDashClient.syslogDashClientMod.Severity.Critical with Double = js.native
-  /* 7 */ val Debug: typings.syslogDashClient.syslogDashClientMod.Severity.Debug with Double = js.native
-  /* 0 */ val Emergency: typings.syslogDashClient.syslogDashClientMod.Severity.Emergency with Double = js.native
-  /* 3 */ val Error: typings.syslogDashClient.syslogDashClientMod.Severity.Error with Double = js.native
-  /* 6 */ val Informational: typings.syslogDashClient.syslogDashClientMod.Severity.Informational with Double = js.native
-  /* 5 */ val Notice: typings.syslogDashClient.syslogDashClientMod.Severity.Notice with Double = js.native
-  /* 4 */ val Warning: typings.syslogDashClient.syslogDashClientMod.Severity.Warning with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Severity with Double] = js.native
+  /* 1 */ @js.native
+  object Alert extends TopLevel[Alert with Double]
+  
+  /* 2 */ @js.native
+  object Critical extends TopLevel[Critical with Double]
+  
+  /* 7 */ @js.native
+  object Debug extends TopLevel[Debug with Double]
+  
+  /* 0 */ @js.native
+  object Emergency extends TopLevel[Emergency with Double]
+  
+  /* 3 */ @js.native
+  object Error extends TopLevel[Error with Double]
+  
+  /* 6 */ @js.native
+  object Informational extends TopLevel[Informational with Double]
+  
+  /* 5 */ @js.native
+  object Notice extends TopLevel[Notice with Double]
+  
+  /* 4 */ @js.native
+  object Warning extends TopLevel[Warning with Double]
+  
 }
 

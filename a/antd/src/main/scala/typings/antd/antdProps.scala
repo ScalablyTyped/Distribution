@@ -143,6 +143,9 @@ trait antdProps {
   def DateDashPickerProps: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
   type DateDashPickerProps = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
   @scala.inline
+  def `DateDashPickerDate-pickerProps`: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
+  type `DateDashPickerDate-pickerProps` = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
+  @scala.inline
   def DatePickerProps: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
   type DatePickerProps = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
   @scala.inline

@@ -1,5 +1,14 @@
 package typings.winrtDashUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.atLeast
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.double
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.exactly
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.multiple
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.oneAndHalf
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.percent
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.single
+import typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +52,31 @@ object LineSpacingRule extends js.Object {
   @js.native
   sealed trait undefined extends LineSpacingRule
   
-  /* 4 */ val atLeast: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.atLeast with Double = js.native
-  /* 3 */ val double: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.double with Double = js.native
-  /* 5 */ val exactly: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.exactly with Double = js.native
-  /* 6 */ val multiple: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.multiple with Double = js.native
-  /* 2 */ val oneAndHalf: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.oneAndHalf with Double = js.native
-  /* 7 */ val percent: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.percent with Double = js.native
-  /* 1 */ val single: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.single with Double = js.native
-  /* 0 */ val undefined: typings.winrtDashUwp.Windows.UI.Text.LineSpacingRule.undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LineSpacingRule with Double] = js.native
+  /* 4 */ @js.native
+  object atLeast extends TopLevel[atLeast with Double]
+  
+  /* 3 */ @js.native
+  object double extends TopLevel[double with Double]
+  
+  /* 5 */ @js.native
+  object exactly extends TopLevel[exactly with Double]
+  
+  /* 6 */ @js.native
+  object multiple extends TopLevel[multiple with Double]
+  
+  /* 2 */ @js.native
+  object oneAndHalf extends TopLevel[oneAndHalf with Double]
+  
+  /* 7 */ @js.native
+  object percent extends TopLevel[percent with Double]
+  
+  /* 1 */ @js.native
+  object single extends TopLevel[single with Double]
+  
+  /* 0 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
 }
 

@@ -1,6 +1,11 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.TopLevel
 import typings.sharepoint.SP.Discovery.ExportStatus
+import typings.sharepoint.SP.Discovery.ExportStatus.complete
+import typings.sharepoint.SP.Discovery.ExportStatus.failed
+import typings.sharepoint.SP.Discovery.ExportStatus.notStarted
+import typings.sharepoint.SP.Discovery.ExportStatus.started
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,12 +48,20 @@ object Discovery extends js.Object {
     @js.native
     sealed trait started extends ExportStatus
     
-    /* 2 */ val complete: typings.sharepoint.SP.Discovery.ExportStatus.complete with Double = js.native
-    /* 3 */ val failed: typings.sharepoint.SP.Discovery.ExportStatus.failed with Double = js.native
-    /* 0 */ val notStarted: typings.sharepoint.SP.Discovery.ExportStatus.notStarted with Double = js.native
-    /* 1 */ val started: typings.sharepoint.SP.Discovery.ExportStatus.started with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ExportStatus with Double] = js.native
+    /* 2 */ @js.native
+    object complete extends TopLevel[complete with Double]
+    
+    /* 3 */ @js.native
+    object failed extends TopLevel[failed with Double]
+    
+    /* 0 */ @js.native
+    object notStarted extends TopLevel[notStarted with Double]
+    
+    /* 1 */ @js.native
+    object started extends TopLevel[started with Double]
+    
   }
   
 }

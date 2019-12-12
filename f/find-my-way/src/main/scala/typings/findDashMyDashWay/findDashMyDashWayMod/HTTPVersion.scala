@@ -1,5 +1,8 @@
 package typings.findDashMyDashWay.findDashMyDashWayMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V1
+import typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object HTTPVersion extends js.Object {
   @js.native
   sealed trait V2 extends HTTPVersion
   
-  /* "http1" */ val V1: typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V1 with String = js.native
-  /* "http2" */ val V2: typings.findDashMyDashWay.findDashMyDashWayMod.HTTPVersion.V2 with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[HTTPVersion with String] = js.native
+  /* "http1" */ @js.native
+  object V1 extends TopLevel[V1 with String]
+  
+  /* "http2" */ @js.native
+  object V2 extends TopLevel[V2 with String]
+  
 }
 

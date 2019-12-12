@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.DatePicker
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.DatePicker.Header.Min
+import typings.ejDotWebDotAll.ej.DatePicker.Header.None
+import typings.ejDotWebDotAll.ej.DatePicker.Header.Short
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object Header extends js.Object {
   @js.native
   sealed trait Short extends Header
   
-  /* 2 */ val Min: typings.ejDotWebDotAll.ej.DatePicker.Header.Min with Double = js.native
-  /* 0 */ val None: typings.ejDotWebDotAll.ej.DatePicker.Header.None with Double = js.native
-  /* 1 */ val Short: typings.ejDotWebDotAll.ej.DatePicker.Header.Short with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Header with Double] = js.native
+  /* 2 */ @js.native
+  object Min extends TopLevel[Min with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 1 */ @js.native
+  object Short extends TopLevel[Short with Double]
+  
 }
 

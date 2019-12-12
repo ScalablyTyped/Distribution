@@ -1,5 +1,8 @@
 package typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Left
+import typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object HDirection extends js.Object {
   @js.native
   sealed trait Right extends HDirection
   
-  /* 0 */ val Left: typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Left with Double = js.native
-  /* 1 */ val Right: typings.agDashGrid.distLibDragAndDropDragAndDropServiceMod.HDirection.Right with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[HDirection with Double] = js.native
+  /* 0 */ @js.native
+  object Left extends TopLevel[Left with Double]
+  
+  /* 1 */ @js.native
+  object Right extends TopLevel[Right with Double]
+  
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browserfs"
-version := "1.4.3-fd7834"
+version := "1.4.3-6ad8c7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

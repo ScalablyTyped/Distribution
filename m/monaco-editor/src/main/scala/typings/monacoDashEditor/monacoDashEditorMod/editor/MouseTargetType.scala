@@ -1,5 +1,20 @@
 package typings.monacoDashEditor.monacoDashEditorMod.editor
 
+import org.scalablytyped.runtime.TopLevel
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_EMPTY
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_TEXT
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_VIEW_ZONE
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_WIDGET
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_GLYPH_MARGIN
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_DECORATIONS
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_NUMBERS
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_VIEW_ZONE
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OUTSIDE_EDITOR
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERLAY_WIDGET
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERVIEW_RULER
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.SCROLLBAR
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.TEXTAREA
+import typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.UNKNOWN
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -94,21 +109,49 @@ object MouseTargetType extends js.Object {
   @js.native
   sealed trait UNKNOWN extends MouseTargetType
   
-  /* 7 */ val CONTENT_EMPTY: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_EMPTY with Double = js.native
-  /* 6 */ val CONTENT_TEXT: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_TEXT with Double = js.native
-  /* 8 */ val CONTENT_VIEW_ZONE: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_VIEW_ZONE with Double = js.native
-  /* 9 */ val CONTENT_WIDGET: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.CONTENT_WIDGET with Double = js.native
-  /* 2 */ val GUTTER_GLYPH_MARGIN: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_GLYPH_MARGIN with Double = js.native
-  /* 4 */ val GUTTER_LINE_DECORATIONS: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_DECORATIONS with Double = js.native
-  /* 3 */ val GUTTER_LINE_NUMBERS: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_LINE_NUMBERS with Double = js.native
-  /* 5 */ val GUTTER_VIEW_ZONE: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.GUTTER_VIEW_ZONE with Double = js.native
-  /* 13 */ val OUTSIDE_EDITOR: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OUTSIDE_EDITOR with Double = js.native
-  /* 12 */ val OVERLAY_WIDGET: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERLAY_WIDGET with Double = js.native
-  /* 10 */ val OVERVIEW_RULER: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.OVERVIEW_RULER with Double = js.native
-  /* 11 */ val SCROLLBAR: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.SCROLLBAR with Double = js.native
-  /* 1 */ val TEXTAREA: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.TEXTAREA with Double = js.native
-  /* 0 */ val UNKNOWN: typings.monacoDashEditor.monacoDashEditorMod.editor.MouseTargetType.UNKNOWN with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MouseTargetType with Double] = js.native
+  /* 7 */ @js.native
+  object CONTENT_EMPTY extends TopLevel[CONTENT_EMPTY with Double]
+  
+  /* 6 */ @js.native
+  object CONTENT_TEXT extends TopLevel[CONTENT_TEXT with Double]
+  
+  /* 8 */ @js.native
+  object CONTENT_VIEW_ZONE extends TopLevel[CONTENT_VIEW_ZONE with Double]
+  
+  /* 9 */ @js.native
+  object CONTENT_WIDGET extends TopLevel[CONTENT_WIDGET with Double]
+  
+  /* 2 */ @js.native
+  object GUTTER_GLYPH_MARGIN extends TopLevel[GUTTER_GLYPH_MARGIN with Double]
+  
+  /* 4 */ @js.native
+  object GUTTER_LINE_DECORATIONS extends TopLevel[GUTTER_LINE_DECORATIONS with Double]
+  
+  /* 3 */ @js.native
+  object GUTTER_LINE_NUMBERS extends TopLevel[GUTTER_LINE_NUMBERS with Double]
+  
+  /* 5 */ @js.native
+  object GUTTER_VIEW_ZONE extends TopLevel[GUTTER_VIEW_ZONE with Double]
+  
+  /* 13 */ @js.native
+  object OUTSIDE_EDITOR extends TopLevel[OUTSIDE_EDITOR with Double]
+  
+  /* 12 */ @js.native
+  object OVERLAY_WIDGET extends TopLevel[OVERLAY_WIDGET with Double]
+  
+  /* 10 */ @js.native
+  object OVERVIEW_RULER extends TopLevel[OVERVIEW_RULER with Double]
+  
+  /* 11 */ @js.native
+  object SCROLLBAR extends TopLevel[SCROLLBAR with Double]
+  
+  /* 1 */ @js.native
+  object TEXTAREA extends TopLevel[TEXTAREA with Double]
+  
+  /* 0 */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  
 }
 

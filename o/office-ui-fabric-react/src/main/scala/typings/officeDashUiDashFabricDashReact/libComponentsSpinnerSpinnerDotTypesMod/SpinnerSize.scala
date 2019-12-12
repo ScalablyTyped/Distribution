@@ -1,5 +1,10 @@
 package typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.large
+import typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.medium
+import typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.small
+import typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.xSmall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,11 +39,19 @@ object SpinnerSize extends js.Object {
   @js.native
   sealed trait xSmall extends SpinnerSize
   
-  /* 3 */ val large: typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.large with Double = js.native
-  /* 2 */ val medium: typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.medium with Double = js.native
-  /* 1 */ val small: typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.small with Double = js.native
-  /* 0 */ val xSmall: typings.officeDashUiDashFabricDashReact.libComponentsSpinnerSpinnerDotTypesMod.SpinnerSize.xSmall with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SpinnerSize with Double] = js.native
+  /* 3 */ @js.native
+  object large extends TopLevel[large with Double]
+  
+  /* 2 */ @js.native
+  object medium extends TopLevel[medium with Double]
+  
+  /* 1 */ @js.native
+  object small extends TopLevel[small with Double]
+  
+  /* 0 */ @js.native
+  object xSmall extends TopLevel[xSmall with Double]
+  
 }
 

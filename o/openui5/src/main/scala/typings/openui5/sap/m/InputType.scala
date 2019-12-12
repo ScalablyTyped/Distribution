@@ -1,5 +1,17 @@
 package typings.openui5.sap.m
 
+import org.scalablytyped.runtime.TopLevel
+import typings.openui5.sap.m.InputType.Date
+import typings.openui5.sap.m.InputType.Datetime
+import typings.openui5.sap.m.InputType.DatetimeLocale
+import typings.openui5.sap.m.InputType.Email
+import typings.openui5.sap.m.InputType.Month
+import typings.openui5.sap.m.InputType.Number
+import typings.openui5.sap.m.InputType.Password
+import typings.openui5.sap.m.InputType.Tel
+import typings.openui5.sap.m.InputType.Time
+import typings.openui5.sap.m.InputType.Url
+import typings.openui5.sap.m.InputType.Week
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,19 +62,44 @@ object InputType extends js.Object {
   @js.native
   sealed trait Week extends InputType
   
-  /* 0 */ val Date: typings.openui5.sap.m.InputType.Date with Double = js.native
-  /* 1 */ val Datetime: typings.openui5.sap.m.InputType.Datetime with Double = js.native
-  /* 2 */ val DatetimeLocale: typings.openui5.sap.m.InputType.DatetimeLocale with Double = js.native
-  /* 3 */ val Email: typings.openui5.sap.m.InputType.Email with Double = js.native
-  /* 4 */ val Month: typings.openui5.sap.m.InputType.Month with Double = js.native
-  /* 5 */ val Number: typings.openui5.sap.m.InputType.Number with Double = js.native
-  /* 6 */ val Password: typings.openui5.sap.m.InputType.Password with Double = js.native
-  /* 7 */ val Tel: typings.openui5.sap.m.InputType.Tel with Double = js.native
-  /* 8 */ val Text: typings.openui5.sap.m.InputType.Text with Double = js.native
-  /* 9 */ val Time: typings.openui5.sap.m.InputType.Time with Double = js.native
-  /* 10 */ val Url: typings.openui5.sap.m.InputType.Url with Double = js.native
-  /* 11 */ val Week: typings.openui5.sap.m.InputType.Week with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InputType with Double] = js.native
+  /* 0 */ @js.native
+  object Date extends TopLevel[Date with Double]
+  
+  /* 1 */ @js.native
+  object Datetime extends TopLevel[Datetime with Double]
+  
+  /* 2 */ @js.native
+  object DatetimeLocale extends TopLevel[DatetimeLocale with Double]
+  
+  /* 3 */ @js.native
+  object Email extends TopLevel[Email with Double]
+  
+  /* 4 */ @js.native
+  object Month extends TopLevel[Month with Double]
+  
+  /* 5 */ @js.native
+  object Number extends TopLevel[Number with Double]
+  
+  /* 6 */ @js.native
+  object Password extends TopLevel[Password with Double]
+  
+  /* 7 */ @js.native
+  object Tel extends TopLevel[Tel with Double]
+  
+  /* 8 */ @js.native
+  object Text
+    extends TopLevel[typings.openui5.sap.m.InputType.Text with Double]
+  
+  /* 9 */ @js.native
+  object Time extends TopLevel[Time with Double]
+  
+  /* 10 */ @js.native
+  object Url extends TopLevel[Url with Double]
+  
+  /* 11 */ @js.native
+  object Week extends TopLevel[Week with Double]
+  
 }
 

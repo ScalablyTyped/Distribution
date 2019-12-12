@@ -1,5 +1,9 @@
 package typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.None
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.Tree
+import typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItemTypeExtension
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,12 +44,28 @@ object FieldUsage extends js.Object {
   @js.native
   sealed trait WorkItemTypeExtension extends FieldUsage
   
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.None with Double = js.native
-  /* 3 */ val Tree: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.Tree with Double = js.native
-  /* 1 */ val WorkItem: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItem with Double = js.native
-  /* 2 */ val WorkItemLink: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItemLink with Double = js.native
-  /* 4 */ val WorkItemTypeExtension: typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItemTypeExtension with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FieldUsage with Double] = js.native
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
+  /* 3 */ @js.native
+  object Tree extends TopLevel[Tree with Double]
+  
+  /* 1 */ @js.native
+  object WorkItem
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItem with Double
+        ]
+  
+  /* 2 */ @js.native
+  object WorkItemLink
+    extends TopLevel[
+          typings.vsoDashNodeDashApi.interfacesWorkItemTrackingInterfacesMod.FieldUsage.WorkItemLink with Double
+        ]
+  
+  /* 4 */ @js.native
+  object WorkItemTypeExtension extends TopLevel[WorkItemTypeExtension with Double]
+  
 }
 

@@ -1,5 +1,15 @@
 package typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Canceled
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.InProgress
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.NotStarted
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.PartiallySucceeded
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Queued
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Rejected
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Scheduled
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Succeeded
+import typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +47,34 @@ object EnvironmentStatus extends js.Object {
   @js.native
   sealed trait Undefined extends EnvironmentStatus
   
-  /* 8 */ val Canceled: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Canceled with Double = js.native
-  /* 2 */ val InProgress: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.InProgress with Double = js.native
-  /* 1 */ val NotStarted: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.NotStarted with Double = js.native
-  /* 128 */ val PartiallySucceeded: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.PartiallySucceeded with Double = js.native
-  /* 32 */ val Queued: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Queued with Double = js.native
-  /* 16 */ val Rejected: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Rejected with Double = js.native
-  /* 64 */ val Scheduled: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Scheduled with Double = js.native
-  /* 4 */ val Succeeded: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Succeeded with Double = js.native
-  /* 0 */ val Undefined: typings.vsoDashNodeDashApi.interfacesReleaseInterfacesMod.EnvironmentStatus.Undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnvironmentStatus with Double] = js.native
+  /* 8 */ @js.native
+  object Canceled extends TopLevel[Canceled with Double]
+  
+  /* 2 */ @js.native
+  object InProgress extends TopLevel[InProgress with Double]
+  
+  /* 1 */ @js.native
+  object NotStarted extends TopLevel[NotStarted with Double]
+  
+  /* 128 */ @js.native
+  object PartiallySucceeded extends TopLevel[PartiallySucceeded with Double]
+  
+  /* 32 */ @js.native
+  object Queued extends TopLevel[Queued with Double]
+  
+  /* 16 */ @js.native
+  object Rejected extends TopLevel[Rejected with Double]
+  
+  /* 64 */ @js.native
+  object Scheduled extends TopLevel[Scheduled with Double]
+  
+  /* 4 */ @js.native
+  object Succeeded extends TopLevel[Succeeded with Double]
+  
+  /* 0 */ @js.native
+  object Undefined extends TopLevel[Undefined with Double]
+  
 }
 

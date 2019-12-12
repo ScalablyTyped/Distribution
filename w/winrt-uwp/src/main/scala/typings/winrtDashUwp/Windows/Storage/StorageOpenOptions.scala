@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Storage
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.allowOnlyReaders
+import typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object StorageOpenOptions extends js.Object {
   @js.native
   sealed trait none extends StorageOpenOptions
   
-  /* 1 */ val allowOnlyReaders: typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.allowOnlyReaders with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.Storage.StorageOpenOptions.none with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StorageOpenOptions with Double] = js.native
+  /* 1 */ @js.native
+  object allowOnlyReaders extends TopLevel[allowOnlyReaders with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
 }
 

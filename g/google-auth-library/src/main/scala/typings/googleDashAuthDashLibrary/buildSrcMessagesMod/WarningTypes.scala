@@ -1,5 +1,8 @@
 package typings.googleDashAuthDashLibrary.buildSrcMessagesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.DEPRECATION
+import typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.WARNING
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +19,13 @@ object WarningTypes extends js.Object {
   @js.native
   sealed trait WARNING extends WarningTypes
   
-  /* "DeprecationWarning" */ val DEPRECATION: typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.DEPRECATION with String = js.native
-  /* "Warning" */ val WARNING: typings.googleDashAuthDashLibrary.buildSrcMessagesMod.WarningTypes.WARNING with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[WarningTypes with String] = js.native
+  /* "DeprecationWarning" */ @js.native
+  object DEPRECATION extends TopLevel[DEPRECATION with String]
+  
+  /* "Warning" */ @js.native
+  object WARNING extends TopLevel[WARNING with String]
+  
 }
 

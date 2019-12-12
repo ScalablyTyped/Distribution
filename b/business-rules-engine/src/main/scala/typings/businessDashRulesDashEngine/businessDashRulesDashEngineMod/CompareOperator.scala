@@ -1,5 +1,12 @@
 package typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.Equal
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThan
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThanEqual
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThan
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThanEqual
+import typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.NotEqual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,13 +35,25 @@ object CompareOperator extends js.Object {
   @js.native
   sealed trait NotEqual extends CompareOperator
   
-  /* 2 */ val Equal: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.Equal with Double = js.native
-  /* 5 */ val GreaterThan: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThan with Double = js.native
-  /* 4 */ val GreaterThanEqual: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.GreaterThanEqual with Double = js.native
-  /* 0 */ val LessThan: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThan with Double = js.native
-  /* 1 */ val LessThanEqual: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.LessThanEqual with Double = js.native
-  /* 3 */ val NotEqual: typings.businessDashRulesDashEngine.businessDashRulesDashEngineMod.CompareOperator.NotEqual with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[CompareOperator with Double] = js.native
+  /* 2 */ @js.native
+  object Equal extends TopLevel[Equal with Double]
+  
+  /* 5 */ @js.native
+  object GreaterThan extends TopLevel[GreaterThan with Double]
+  
+  /* 4 */ @js.native
+  object GreaterThanEqual extends TopLevel[GreaterThanEqual with Double]
+  
+  /* 0 */ @js.native
+  object LessThan extends TopLevel[LessThan with Double]
+  
+  /* 1 */ @js.native
+  object LessThanEqual extends TopLevel[LessThanEqual with Double]
+  
+  /* 3 */ @js.native
+  object NotEqual extends TopLevel[NotEqual with Double]
+  
 }
 

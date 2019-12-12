@@ -1,5 +1,8 @@
 package typings.winrtDashUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelActivityEventType.active
+import typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelActivityEventType.idle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +22,13 @@ object VpnChannelActivityEventType extends js.Object {
   @js.native
   sealed trait idle extends VpnChannelActivityEventType
   
-  /* 1 */ val active: typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelActivityEventType.active with Double = js.native
-  /* 0 */ val idle: typings.winrtDashUwp.Windows.Networking.Vpn.VpnChannelActivityEventType.idle with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[VpnChannelActivityEventType with Double] = js.native
+  /* 1 */ @js.native
+  object active extends TopLevel[active with Double]
+  
+  /* 0 */ @js.native
+  object idle extends TopLevel[idle with Double]
+  
 }
 

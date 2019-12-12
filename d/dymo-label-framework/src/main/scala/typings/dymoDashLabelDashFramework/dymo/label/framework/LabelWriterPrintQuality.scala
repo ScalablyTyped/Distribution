@@ -1,5 +1,9 @@
 package typings.dymoDashLabelDashFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.TopLevel
+import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Auto
+import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.BarcodeAndGraphics
+import typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,10 +29,16 @@ object LabelWriterPrintQuality extends js.Object {
   @js.native
   sealed trait Text extends LabelWriterPrintQuality
   
-  /* 2 */ val Auto: typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Auto with Double = js.native
-  /* 1 */ val BarcodeAndGraphics: typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.BarcodeAndGraphics with Double = js.native
-  /* 0 */ val Text: typings.dymoDashLabelDashFramework.dymo.label.framework.LabelWriterPrintQuality.Text with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[LabelWriterPrintQuality with Double] = js.native
+  /* 2 */ @js.native
+  object Auto extends TopLevel[Auto with Double]
+  
+  /* 1 */ @js.native
+  object BarcodeAndGraphics extends TopLevel[BarcodeAndGraphics with Double]
+  
+  /* 0 */ @js.native
+  object Text extends TopLevel[Text with Double]
+  
 }
 

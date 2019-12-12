@@ -1,5 +1,11 @@
 package typings.winrtDashUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.all
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.email
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.name
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.none
+import typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.phone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,12 +37,22 @@ object ContactQuerySearchFields extends js.Object {
   @js.native
   sealed trait phone extends ContactQuerySearchFields
   
-  /* 4 */ val all: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.all with Double = js.native
-  /* 2 */ val email: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.email with Double = js.native
-  /* 1 */ val name: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.name with Double = js.native
-  /* 0 */ val none: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.none with Double = js.native
-  /* 3 */ val phone: typings.winrtDashUwp.Windows.ApplicationModel.Contacts.ContactQuerySearchFields.phone with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ContactQuerySearchFields with Double] = js.native
+  /* 4 */ @js.native
+  object all extends TopLevel[all with Double]
+  
+  /* 2 */ @js.native
+  object email extends TopLevel[email with Double]
+  
+  /* 1 */ @js.native
+  object name extends TopLevel[name with Double]
+  
+  /* 0 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 3 */ @js.native
+  object phone extends TopLevel[phone with Double]
+  
 }
 

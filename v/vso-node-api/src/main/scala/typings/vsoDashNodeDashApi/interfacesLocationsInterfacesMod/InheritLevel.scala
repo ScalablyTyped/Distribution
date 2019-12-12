@@ -1,5 +1,11 @@
 package typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Account
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.All
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Collection
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Deployment
+import typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.None
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,12 +31,22 @@ object InheritLevel extends js.Object {
   @js.native
   sealed trait None extends InheritLevel
   
-  /* 2 */ val Account: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Account with Double = js.native
-  /* 7 */ val All: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.All with Double = js.native
-  /* 4 */ val Collection: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Collection with Double = js.native
-  /* 1 */ val Deployment: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.Deployment with Double = js.native
-  /* 0 */ val None: typings.vsoDashNodeDashApi.interfacesLocationsInterfacesMod.InheritLevel.None with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InheritLevel with Double] = js.native
+  /* 2 */ @js.native
+  object Account extends TopLevel[Account with Double]
+  
+  /* 7 */ @js.native
+  object All extends TopLevel[All with Double]
+  
+  /* 4 */ @js.native
+  object Collection extends TopLevel[Collection with Double]
+  
+  /* 1 */ @js.native
+  object Deployment extends TopLevel[Deployment with Double]
+  
+  /* 0 */ @js.native
+  object None extends TopLevel[None with Double]
+  
 }
 

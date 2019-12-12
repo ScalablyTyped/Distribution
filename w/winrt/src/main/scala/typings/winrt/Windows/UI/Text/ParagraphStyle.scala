@@ -1,5 +1,18 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.TopLevel
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading1
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading2
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading3
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading4
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading5
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading6
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading7
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading8
+import typings.winrt.Windows.UI.Text.ParagraphStyle.heading9
+import typings.winrt.Windows.UI.Text.ParagraphStyle.none
+import typings.winrt.Windows.UI.Text.ParagraphStyle.normal
+import typings.winrt.Windows.UI.Text.ParagraphStyle.undefined
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,19 +59,43 @@ object ParagraphStyle extends js.Object {
   @js.native
   sealed trait undefined extends ParagraphStyle
   
-  /* 3 */ val heading1: typings.winrt.Windows.UI.Text.ParagraphStyle.heading1 with Double = js.native
-  /* 4 */ val heading2: typings.winrt.Windows.UI.Text.ParagraphStyle.heading2 with Double = js.native
-  /* 5 */ val heading3: typings.winrt.Windows.UI.Text.ParagraphStyle.heading3 with Double = js.native
-  /* 6 */ val heading4: typings.winrt.Windows.UI.Text.ParagraphStyle.heading4 with Double = js.native
-  /* 7 */ val heading5: typings.winrt.Windows.UI.Text.ParagraphStyle.heading5 with Double = js.native
-  /* 8 */ val heading6: typings.winrt.Windows.UI.Text.ParagraphStyle.heading6 with Double = js.native
-  /* 9 */ val heading7: typings.winrt.Windows.UI.Text.ParagraphStyle.heading7 with Double = js.native
-  /* 10 */ val heading8: typings.winrt.Windows.UI.Text.ParagraphStyle.heading8 with Double = js.native
-  /* 11 */ val heading9: typings.winrt.Windows.UI.Text.ParagraphStyle.heading9 with Double = js.native
-  /* 1 */ val none: typings.winrt.Windows.UI.Text.ParagraphStyle.none with Double = js.native
-  /* 2 */ val normal: typings.winrt.Windows.UI.Text.ParagraphStyle.normal with Double = js.native
-  /* 0 */ val undefined: typings.winrt.Windows.UI.Text.ParagraphStyle.undefined with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ParagraphStyle with Double] = js.native
+  /* 3 */ @js.native
+  object heading1 extends TopLevel[heading1 with Double]
+  
+  /* 4 */ @js.native
+  object heading2 extends TopLevel[heading2 with Double]
+  
+  /* 5 */ @js.native
+  object heading3 extends TopLevel[heading3 with Double]
+  
+  /* 6 */ @js.native
+  object heading4 extends TopLevel[heading4 with Double]
+  
+  /* 7 */ @js.native
+  object heading5 extends TopLevel[heading5 with Double]
+  
+  /* 8 */ @js.native
+  object heading6 extends TopLevel[heading6 with Double]
+  
+  /* 9 */ @js.native
+  object heading7 extends TopLevel[heading7 with Double]
+  
+  /* 10 */ @js.native
+  object heading8 extends TopLevel[heading8 with Double]
+  
+  /* 11 */ @js.native
+  object heading9 extends TopLevel[heading9 with Double]
+  
+  /* 1 */ @js.native
+  object none extends TopLevel[none with Double]
+  
+  /* 2 */ @js.native
+  object normal extends TopLevel[normal with Double]
+  
+  /* 0 */ @js.native
+  object undefined extends TopLevel[undefined with Double]
+  
 }
 

@@ -1,5 +1,9 @@
 package typings.ejDotWebDotAll.ej.datavisualization.Diagram
 
+import org.scalablytyped.runtime.TopLevel
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.NoWrap
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.Wrap
+import typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object TextWrapping extends js.Object {
   @js.native
   sealed trait WrapWithOverflow extends TextWrapping
   
-  /* 0 */ val NoWrap: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.NoWrap with Double = js.native
-  /* 1 */ val Wrap: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.Wrap with Double = js.native
-  /* 2 */ val WrapWithOverflow: typings.ejDotWebDotAll.ej.datavisualization.Diagram.TextWrapping.WrapWithOverflow with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TextWrapping with Double] = js.native
+  /* 0 */ @js.native
+  object NoWrap extends TopLevel[NoWrap with Double]
+  
+  /* 1 */ @js.native
+  object Wrap extends TopLevel[Wrap with Double]
+  
+  /* 2 */ @js.native
+  object WrapWithOverflow extends TopLevel[WrapWithOverflow with Double]
+  
 }
 

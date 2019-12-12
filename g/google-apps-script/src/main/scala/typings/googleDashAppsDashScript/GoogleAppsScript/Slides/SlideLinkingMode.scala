@@ -1,5 +1,9 @@
 package typings.googleDashAppsDashScript.GoogleAppsScript.Slides
 
+import org.scalablytyped.runtime.TopLevel
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.LINKED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.NOT_LINKED
+import typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.UNSUPPORTED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,10 +26,16 @@ object SlideLinkingMode extends js.Object {
   @js.native
   sealed trait UNSUPPORTED extends SlideLinkingMode
   
-  /* 1 */ val LINKED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.LINKED with Double = js.native
-  /* 2 */ val NOT_LINKED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.NOT_LINKED with Double = js.native
-  /* 0 */ val UNSUPPORTED: typings.googleDashAppsDashScript.GoogleAppsScript.Slides.SlideLinkingMode.UNSUPPORTED with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SlideLinkingMode with Double] = js.native
+  /* 1 */ @js.native
+  object LINKED extends TopLevel[LINKED with Double]
+  
+  /* 2 */ @js.native
+  object NOT_LINKED extends TopLevel[NOT_LINKED with Double]
+  
+  /* 0 */ @js.native
+  object UNSUPPORTED extends TopLevel[UNSUPPORTED with Double]
+  
 }
 

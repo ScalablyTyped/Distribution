@@ -1,5 +1,9 @@
 package typings.atFirebaseFirestore.distSrcCoreTypesMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Offline
+import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Online
+import typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Unknown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,10 +39,16 @@ object OnlineState extends js.Object {
   @js.native
   sealed trait Unknown extends OnlineState
   
-  /* 2 */ val Offline: typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Offline with Double = js.native
-  /* 1 */ val Online: typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Online with Double = js.native
-  /* 0 */ val Unknown: typings.atFirebaseFirestore.distSrcCoreTypesMod.OnlineState.Unknown with Double = js.native
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[OnlineState with Double] = js.native
+  /* 2 */ @js.native
+  object Offline extends TopLevel[Offline with Double]
+  
+  /* 1 */ @js.native
+  object Online extends TopLevel[Online with Double]
+  
+  /* 0 */ @js.native
+  object Unknown extends TopLevel[Unknown with Double]
+  
 }
 
