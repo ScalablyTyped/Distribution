@@ -13,7 +13,15 @@ class IonicNamespace protected () extends Namespace {
   def this(hasEnvProject: IonicEnvironmentDeps) = this()
   var _env: IonicEnvironment = js.native
   var _project: js.UndefOr[IProject] = js.native
+  @JSName("env")
+  def env_MIonicNamespace(): IonicEnvironment = js.native
+  @JSName("env")
+  def env_MIonicNamespace(env: IonicEnvironment): js.Any = js.native
   @JSName("project")
-  var project_IonicNamespace: js.UndefOr[IProject] = js.native
+  def project_Any(): js.Any = js.native
+  @JSName("project")
+  def project_MIonicNamespace(): js.UndefOr[IProject] = js.native
+  @JSName("project")
+  def project_MIonicNamespace(p: IProject): js.Any = js.native
 }
 

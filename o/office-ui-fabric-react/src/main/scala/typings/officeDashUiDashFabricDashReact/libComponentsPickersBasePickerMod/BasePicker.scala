@@ -36,6 +36,7 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
     */
   var SuggestionOfProperType: Instantiable1[/* props */ ISuggestionsProps[T], Suggestions[T]] = js.native
   var _ariaMap: IPickerAriaIds = js.native
+  var _completeGenericSuggestion: js.Any = js.native
   /**
     * Suggestions are normally shown after the user updates text and the text
     * is non-empty, but also when the user clicks on the input element.
@@ -46,7 +47,6 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   var _id: js.Any = js.native
   var _onResolveSuggestions: js.Any = js.native
   var _onSelectedItemsUpdated: js.Any = js.native
-  var _onValidateInput: js.Any = js.native
   var _requestSuggestionsOnClick: js.Any = js.native
   var _styledSuggestions: js.Any = js.native
   /**
@@ -76,19 +76,12 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   /* protected */ def addItem(item: T): Unit = js.native
   /* protected */ def addItemByIndex(index: Double): Unit = js.native
   /* protected */ def canAddItems(): Boolean = js.native
-  def completeSuggestion(): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MBasePicker(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MBasePicker(): Unit = js.native
   def dismissSuggestions(): Unit = js.native
   def dismissSuggestions(ev: js.Any): Unit = js.native
-  /** Sets focus to the focus zone. */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
-  /** Set focus to the input */
-  /* CompleteClass */
-  override def focusInput(): Unit = js.native
   /* protected */ def getActiveDescendant(): js.UndefOr[String] = js.native
   /* protected */ def getSuggestionsAlert(): js.UndefOr[Element] = js.native
   /* protected */ def getSuggestionsAlert(suggestionAlertClassName: String): js.UndefOr[Element] = js.native

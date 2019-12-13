@@ -20,6 +20,7 @@ object FitBoundsOptions {
     curve: Int | Double = null,
     duration: Int | Double = null,
     easing: /* time */ Double => Double = null,
+    essential: js.UndefOr[Boolean] = js.undefined,
     linear: js.UndefOr[Boolean] = js.undefined,
     maxDuration: Int | Double = null,
     maxZoom: Int | Double = null,
@@ -39,6 +40,7 @@ object FitBoundsOptions {
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
+    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.asInstanceOf[js.Any])
     if (!js.isUndefined(linear)) __obj.updateDynamic("linear")(linear.asInstanceOf[js.Any])
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])

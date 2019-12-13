@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "create-react-context" : "0.2.2"
+      "create-react-context" : "0.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "create-react-context" : "0.2.2"
+      "create-react-context" : "0.3.0"
     }
   ],
   "compile-devDependencies" : [

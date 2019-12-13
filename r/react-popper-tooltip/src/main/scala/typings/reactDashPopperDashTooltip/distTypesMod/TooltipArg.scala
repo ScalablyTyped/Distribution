@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TooltipArg extends js.Object {
-  var arrowRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = js.native
+  var arrowRef: Ref = js.native
   var placement: Placement = js.native
-  var tooltipRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = js.native
+  var tooltipRef: Ref = js.native
   def getArrowProps(): GetArrowPropsArg = js.native
   def getArrowProps(arg: GetArrowPropsArg): GetArrowPropsArg = js.native
   def getTooltipProps(): GetTooltipPropsArg = js.native

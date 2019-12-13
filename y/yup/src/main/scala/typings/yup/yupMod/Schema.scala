@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Schema[T] extends js.Object {
+  def cast(): T = js.native
   def cast(value: js.Any): T = js.native
   def cast(value: js.Any, options: js.Any): T = js.native
   def concat(schema: this.type): this.type = js.native

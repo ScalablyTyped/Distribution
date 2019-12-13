@@ -19,6 +19,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.DeploymentList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSliceList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointsList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.EventList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.FlowSchemaList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.HorizontalPodAutoscalerList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.IngressList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.JobList
@@ -37,6 +38,7 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodPresetList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodSecurityPolicyList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.PodTemplateList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityClassList
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityLevelConfigurationList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicaSetList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.ReplicationControllerList
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.ResourceQuotaList
@@ -156,9 +158,9 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sD
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`coordinationDOTk8sDOTio/v1beta1`
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`
-import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1beta1/EndpointSlice`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`discoveryDOTk8sDOTio/v1beta1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1/EventList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1/Event`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`eventsDOTk8sDOTio/v1beta1`
@@ -175,6 +177,11 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1/
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1/ReplicaSetList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1/ReplicaSet`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`extensions/v1beta1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`networkingDOTk8sDOTio/v1`
@@ -231,6 +238,8 @@ import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`schedulingDOTk8sDOT
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`settingsDOTk8sDOTio/v1alpha1`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1/CSINodeList`
+import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1/CSINode`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1/StorageClassList`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1/StorageClass`
 import typings.atPulumiKubernetes.atPulumiKubernetesStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`
@@ -432,9 +441,9 @@ import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceAccount
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceSpec
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.ServiceStatus
 import typings.atPulumiKubernetes.typesOutputMod.core.v1.TopologySelectorTerm
-import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.Endpoint
-import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.EndpointPort
-import typings.atPulumiKubernetes.typesOutputMod.discovery.v1alpha1.EndpointSlice
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1beta1.Endpoint
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1beta1.EndpointPort
+import typings.atPulumiKubernetes.typesOutputMod.discovery.v1beta1.EndpointSlice
 import typings.atPulumiKubernetes.typesOutputMod.events.v1beta1.Event
 import typings.atPulumiKubernetes.typesOutputMod.events.v1beta1.EventSeries
 import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.Ingress
@@ -444,6 +453,12 @@ import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.NetworkPolic
 import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.NetworkPolicySpec
 import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.PodSecurityPolicy
 import typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.PodSecurityPolicySpec
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.FlowSchema
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.FlowSchemaSpec
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.FlowSchemaStatus
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.PriorityLevelConfiguration
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.PriorityLevelConfigurationSpec
+import typings.atPulumiKubernetes.typesOutputMod.flowcontrol.v1alpha1.PriorityLevelConfigurationStatus
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ListMeta
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.ObjectMeta
 import typings.atPulumiKubernetes.typesOutputMod.meta.v1.StatusDetails
@@ -465,14 +480,14 @@ import typings.atPulumiKubernetes.typesOutputMod.rbac.v1.Subject
 import typings.atPulumiKubernetes.typesOutputMod.scheduling.v1.PriorityClass
 import typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1.PodPreset
 import typings.atPulumiKubernetes.typesOutputMod.settings.v1alpha1.PodPresetSpec
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.CSINode
+import typings.atPulumiKubernetes.typesOutputMod.storage.v1.CSINodeSpec
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1.StorageClass
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachment
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachmentSpec
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1.VolumeAttachmentStatus
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSIDriver
 import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSIDriverSpec
-import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINode
-import typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINodeSpec
 import typings.atPulumiPulumi.atPulumiPulumiMod.ComponentResource
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Output
@@ -3026,91 +3041,83 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: spec
   ): Output[typings.atPulumiKubernetes.typesOutputMod.coordination.v1beta1.LeaseSpec] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     name: String,
     property: apiVersion
-  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
-  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String, property: items): Output[js.Array[EndpointSlice]] = js.native
-  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String, property: kind): Output[EndpointSliceList] = js.native
+  ): Output[`discoveryDOTk8sDOTio/v1beta1`] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`, name: String, property: items): Output[js.Array[EndpointSlice]] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`, name: String, property: kind): Output[EndpointSliceList] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     name: String,
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     namespace: String,
     name: String,
     property: apiVersion
-  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  ): Output[`discoveryDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     namespace: String,
     name: String,
     property: items
   ): Output[js.Array[EndpointSlice]] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     namespace: String,
     name: String,
     property: kind
   ): Output[EndpointSliceList] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     namespace: String,
     name: String,
     property: metadata
   ): Output[ListMeta] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     name: String,
     property: addressType
   ): Output[String] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String, property: apiVersion): Output[`discoveryDOTk8sDOTio/v1beta1`] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String, property: endpoints_): Output[js.Array[Endpoint]] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSlice] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String, property: metadata): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String, property: ports): Output[js.Array[EndpointPort]] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
-    name: String,
-    property: apiVersion
-  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
-  def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
-    name: String,
-    property: endpoints_
-  ): Output[js.Array[Endpoint]] = js.native
-  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSlice] = js.native
-  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String, property: ports): Output[js.Array[EndpointPort]] = js.native
-  def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: addressType
   ): Output[String] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: apiVersion
-  ): Output[`discoveryDOTk8sDOTio/v1alpha1`] = js.native
+  ): Output[`discoveryDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: endpoints_
   ): Output[js.Array[Endpoint]] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: kind
   ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.EndpointSlice] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: metadata
   ): Output[ObjectMeta] = js.native
   def getResourceProperty(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`,
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`,
     namespace: String,
     name: String,
     property: ports
@@ -3597,6 +3604,204 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: status_
   ): Output[typings.atPulumiKubernetes.typesOutputMod.extensions.v1beta1.ReplicaSetStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    name: String,
+    property: items
+  ): Output[js.Array[FlowSchema]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    name: String,
+    property: kind
+  ): Output[FlowSchemaList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[FlowSchema]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[FlowSchemaList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.FlowSchema] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    name: String,
+    property: spec
+  ): Output[FlowSchemaSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    name: String,
+    property: status_
+  ): Output[FlowSchemaStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.FlowSchema] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String,
+    property: spec
+  ): Output[FlowSchemaSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String,
+    property: status_
+  ): Output[FlowSchemaStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    name: String,
+    property: items
+  ): Output[js.Array[PriorityLevelConfiguration]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    name: String,
+    property: kind
+  ): Output[PriorityLevelConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[PriorityLevelConfiguration]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[PriorityLevelConfigurationList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityLevelConfiguration] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String,
+    property: spec
+  ): Output[PriorityLevelConfigurationSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String,
+    property: status_
+  ): Output[PriorityLevelConfigurationStatus] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.PriorityLevelConfiguration] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String,
+    property: spec
+  ): Output[PriorityLevelConfigurationSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String,
+    property: status_
+  ): Output[PriorityLevelConfigurationStatus] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: apiVersion): Output[`networkingDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.networking.v1.NetworkPolicy]] = js.native
   def getResourceProperty(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicyList`, name: String, property: kind): Output[NetworkPolicyList] = js.native
@@ -5415,6 +5620,52 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     name: String,
     property: spec
   ): Output[PodPresetSpec] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, name: String, property: apiVersion): Output[`storageDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, name: String, property: items): Output[js.Array[CSINode]] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, name: String, property: kind): Output[CSINodeList] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, name: String, property: metadata): Output[ListMeta] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`storageDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`,
+    namespace: String,
+    name: String,
+    property: items
+  ): Output[js.Array[CSINode]] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`,
+    namespace: String,
+    name: String,
+    property: kind
+  ): Output[CSINodeList] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ListMeta] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, name: String, property: apiVersion): Output[`storageDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSINode] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, name: String, property: metadata): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, name: String, property: spec): Output[CSINodeSpec] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`,
+    namespace: String,
+    name: String,
+    property: apiVersion
+  ): Output[`storageDOTk8sDOTio/v1`] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, namespace: String, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSINode] = js.native
+  def getResourceProperty(
+    groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`,
+    namespace: String,
+    name: String,
+    property: metadata
+  ): Output[ObjectMeta] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, namespace: String, name: String, property: spec): Output[CSINodeSpec] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, name: String, property: apiVersion): Output[`storageDOTk8sDOTio/v1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, name: String, property: items): Output[js.Array[StorageClass]] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClassList`, name: String, property: kind): Output[StorageClassList] = js.native
@@ -5724,7 +5975,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     property: spec
   ): Output[CSIDriverSpec] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String, property: apiVersion): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String, property: items): Output[js.Array[CSINode]] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String, property: items): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINode]] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String, property: kind): Output[CSINodeList] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`, name: String, property: metadata): Output[ListMeta] = js.native
   def getResourceProperty(
@@ -5738,7 +5989,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: items
-  ): Output[js.Array[CSINode]] = js.native
+  ): Output[js.Array[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINode]] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINodeList`,
     namespace: String,
@@ -5754,7 +6005,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String, property: apiVersion): Output[`storageDOTk8sDOTio/v1beta1`] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String, property: kind): Output[typings.atPulumiKubernetes.atPulumiKubernetesStrings.CSINode] = js.native
   def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String, property: metadata): Output[ObjectMeta] = js.native
-  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String, property: spec): Output[CSINodeSpec] = js.native
+  def getResourceProperty(groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`, name: String, property: spec): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINodeSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/CSINode`,
     namespace: String,
@@ -5778,7 +6029,7 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
     namespace: String,
     name: String,
     property: spec
-  ): Output[CSINodeSpec] = js.native
+  ): Output[typings.atPulumiKubernetes.typesOutputMod.storage.v1beta1.CSINodeSpec] = js.native
   def getResourceProperty(
     groupVersionKind: `storageDOTk8sDOTio/v1beta1/StorageClassList`,
     name: String,
@@ -6939,24 +7190,20 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   @JSName("getResource")
   def getResource_coordinationk8siov1beta1LeaseList(groupVersionKind: `coordinationDOTk8sDOTio/v1beta1/LeaseList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.coordination.v1beta1.LeaseList] = js.native
   @JSName("getResource")
-  def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSlice
+  def getResource_discoveryk8siov1beta1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1beta1.EndpointSlice] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1beta1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1beta1.EndpointSlice] = js.native
+  @JSName("getResource")
+  def getResource_discoveryk8siov1beta1EndpointSliceList(groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1beta1.EndpointSliceList
   ] = js.native
   @JSName("getResource")
-  def getResource_discoveryk8siov1alpha1EndpointSlice(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`, namespace: String, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSlice
-  ] = js.native
-  @JSName("getResource")
-  def getResource_discoveryk8siov1alpha1EndpointSliceList(groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`, name: String): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSliceList
-  ] = js.native
-  @JSName("getResource")
-  def getResource_discoveryk8siov1alpha1EndpointSliceList(
-    groupVersionKind: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`,
+  def getResource_discoveryk8siov1beta1EndpointSliceList(
+    groupVersionKind: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`,
     namespace: String,
     name: String
   ): Output[
-    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1alpha1.EndpointSliceList
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.discovery.v1beta1.EndpointSliceList
   ] = js.native
   @JSName("getResource")
   def getResource_eventsk8siov1beta1Event(groupVersionKind: `eventsDOTk8sDOTio/v1beta1/Event`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.events.v1beta1.Event] = js.native
@@ -7041,6 +7288,56 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   @JSName("getResource")
   def getResource_extensionsv1beta1ReplicaSetList(groupVersionKind: `extensions/v1beta1/ReplicaSetList`, namespace: String, name: String): Output[
     typings.atPulumiKubernetes.atPulumiKubernetesMod.extensions.v1beta1.ReplicaSetList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1FlowSchema(groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.FlowSchema] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1FlowSchema(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`,
+    namespace: String,
+    name: String
+  ): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.FlowSchema] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1FlowSchemaList(groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`, name: String): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.FlowSchemaList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1FlowSchemaList(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.FlowSchemaList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1PriorityLevelConfiguration(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.PriorityLevelConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1PriorityLevelConfiguration(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.PriorityLevelConfiguration
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1PriorityLevelConfigurationList(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.PriorityLevelConfigurationList
+  ] = js.native
+  @JSName("getResource")
+  def getResource_flowcontrolapiserverk8siov1alpha1PriorityLevelConfigurationList(
+    groupVersionKind: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`,
+    namespace: String,
+    name: String
+  ): Output[
+    typings.atPulumiKubernetes.atPulumiKubernetesMod.flowcontrol.v1alpha1.PriorityLevelConfigurationList
   ] = js.native
   @JSName("getResource")
   def getResource_networkingk8siov1NetworkPolicy(groupVersionKind: `networkingDOTk8sDOTio/v1/NetworkPolicy`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.networking.v1.NetworkPolicy] = js.native
@@ -7350,6 +7647,14 @@ abstract class CollectionComponentResource protected () extends ComponentResourc
   def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPresetList] = js.native
   @JSName("getResource")
   def getResource_settingsk8siov1alpha1PodPresetList(groupVersionKind: `settingsDOTk8sDOTio/v1alpha1/PodPresetList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.settings.v1alpha1.PodPresetList] = js.native
+  @JSName("getResource")
+  def getResource_storagek8siov1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.CSINode] = js.native
+  @JSName("getResource")
+  def getResource_storagek8siov1CSINode(groupVersionKind: `storageDOTk8sDOTio/v1/CSINode`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.CSINode] = js.native
+  @JSName("getResource")
+  def getResource_storagek8siov1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.CSINodeList] = js.native
+  @JSName("getResource")
+  def getResource_storagek8siov1CSINodeList(groupVersionKind: `storageDOTk8sDOTio/v1/CSINodeList`, namespace: String, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.CSINodeList] = js.native
   @JSName("getResource")
   def getResource_storagek8siov1StorageClass(groupVersionKind: `storageDOTk8sDOTio/v1/StorageClass`, name: String): Output[typings.atPulumiKubernetes.atPulumiKubernetesMod.storage.v1.StorageClass] = js.native
   @JSName("getResource")

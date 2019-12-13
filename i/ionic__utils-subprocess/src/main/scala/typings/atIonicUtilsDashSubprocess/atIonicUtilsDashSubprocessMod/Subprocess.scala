@@ -15,13 +15,13 @@ class Subprocess protected () extends js.Object {
   var _options: SpawnOptions = js.native
   var args: js.Array[String] = js.native
   var name: String = js.native
-  val options: SpawnOptions = js.native
   val path: js.UndefOr[String] = js.native
   def bashify(): String = js.native
   def bashify(hasMaskArgv0MaskArgv1ShiftArgv0: SubprocessBashifyOptions): String = js.native
   def bashifyArg(arg: String): String = js.native
   def combinedOutput(): js.Promise[String] = js.native
   def maskArg(arg: String): String = js.native
+  def options(): SpawnOptions = js.native
   def output(): js.Promise[String] = js.native
   def run(): js.Promise[Unit] with Anon_P = js.native
   def spawn(): ChildProcess = js.native

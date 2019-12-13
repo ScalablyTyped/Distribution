@@ -18,8 +18,6 @@ import scala.scalajs.js.annotation._
   *
   * - userProfile: Provides information about the user in an Outlook add-in.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
@@ -49,8 +47,6 @@ trait Mailbox extends js.Object {
     *
     *  More information is under {@link Office.Diagnostics}. 
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -65,8 +61,6 @@ trait Mailbox extends js.Object {
     *
     * In compose mode you must call the saveAsync method before you can use the ewsUrl member. 
     * Your app must have ReadWriteItem permissions to call the saveAsync method.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -210,8 +204,6 @@ trait Mailbox extends js.Object {
     * If the mail app is running in Outlook on the web, the convertToLocalClientTime method will return a dictionary object with the values set to 
     * the time zone specified in the EAC.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -249,8 +241,6 @@ trait Mailbox extends js.Object {
     * The convertToUtcClientTime method converts a dictionary containing a local date and time to a Date object with the correct values for the 
     * local date and time.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -278,8 +268,6 @@ trait Mailbox extends js.Object {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -303,8 +291,6 @@ trait Mailbox extends js.Object {
     * an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -332,8 +318,6 @@ trait Mailbox extends js.Object {
     * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -410,7 +394,7 @@ trait Mailbox extends js.Object {
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
     * The `saveAsync` method requires a minimum permission level of **ReadWriteItem**.
     *
-    * [Api set: Mailbox 1.0 for Read mode support; 1.3 for Compose mode support]
+    * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
     *
     * @remarks
     *
@@ -504,8 +488,6 @@ trait Mailbox extends js.Object {
     *
     * The token is returned as a string in the `asyncResult.value` property.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -568,8 +550,6 @@ trait Mailbox extends js.Object {
     * You do not need to set the encoding value when your mail app is running in Outlook on the web. 
     * You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. 
     * You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *

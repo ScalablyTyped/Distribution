@@ -27,6 +27,9 @@ trait reactstrapProps {
   def ButtonGroupProps: typings.reactstrap.libButtonGroupMod.ButtonGroupProps.type = typings.reactstrap.libButtonGroupMod.ButtonGroupProps
   type ButtonGroupProps = typings.reactstrap.libButtonGroupMod.ButtonGroupProps
   @scala.inline
+  def ButtonToggleProps: typings.reactstrap.libButtonToggleMod.ButtonToggleProps.type = typings.reactstrap.libButtonToggleMod.ButtonToggleProps
+  type ButtonToggleProps = typings.reactstrap.libButtonToggleMod.ButtonToggleProps
+  @scala.inline
   def ButtonToolbarProps: typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps.type = typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps
   type ButtonToolbarProps = typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps
   @scala.inline
@@ -185,6 +188,9 @@ trait reactstrapProps {
   @scala.inline
   def NavbarBrandProps: typings.reactstrap.libNavbarBrandMod.NavbarBrandProps.type = typings.reactstrap.libNavbarBrandMod.NavbarBrandProps
   type NavbarBrandProps = typings.reactstrap.libNavbarBrandMod.NavbarBrandProps
+  @scala.inline
+  def NavbarTextProps: typings.reactstrap.libNavbarTextMod.NavbarTextProps.type = typings.reactstrap.libNavbarTextMod.NavbarTextProps
+  type NavbarTextProps = typings.reactstrap.libNavbarTextMod.NavbarTextProps
   @scala.inline
   def NavbarTogglerProps: typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps.type = typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps
   type NavbarTogglerProps = typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps

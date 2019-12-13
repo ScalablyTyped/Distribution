@@ -831,6 +831,7 @@ object _Transforms {
     scale: Double | TransformField = null,
     smooth: Boolean | SignalRef = null,
     thresholds: (js.Array[Double | SignalRef]) | SignalRef = null,
+    translate: js.Array[Double] | TransformField = null,
     zero: Boolean | SignalRef = null
   ): _Transforms = {
     val __obj = js.Dynamic.literal()
@@ -843,6 +844,7 @@ object _Transforms {
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Transforms]
   }

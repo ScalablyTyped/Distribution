@@ -46,9 +46,6 @@ object atFormatjsIntlDashRelativetimeformatStrings {
        with typings.atFormatjsIntlDashRelativetimeformat.libTypesMod.Units
   
   @js.native
-  sealed trait literal extends js.Object
-  
-  @js.native
   sealed trait localeMatcher extends js.Object
   
   @js.native
@@ -161,8 +158,6 @@ object atFormatjsIntlDashRelativetimeformatStrings {
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
   def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline

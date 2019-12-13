@@ -954,6 +954,8 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def StackItem: ComponentType[StackItemProps] = typings.officeDashUiDashFabricDashReact.libComponentsStackStackItemStackItemMod.default.asInstanceOf[typings.react.reactMod.ComponentType[StackItemProps]]
   @scala.inline
+  def StatusCalloutExample: ComponentType[js.Object] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libComponentsCalloutExamplesCalloutDotStatusDotExampleMod.StatusCalloutExample].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
   def Sticky: ComponentType[StickyProps] = js.constructorOf[typings.officeDashUiDashFabricDashReact.libStickyMod.Sticky].asInstanceOf[typings.react.reactMod.ComponentType[StickyProps]]
   @scala.inline
   def SuggestionItemNormal: ComponentType[SuggestionItemNormalProps] = typings.officeDashUiDashFabricDashReact.libComponentsPickersPeoplePickerPeoplePickerItemsSuggestionItemDefaultMod.asInstanceOf[js.Dynamic].selectDynamic("SuggestionItemNormal").asInstanceOf[typings.react.reactMod.ComponentType[SuggestionItemNormalProps]]

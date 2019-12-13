@@ -5,10 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object openidDashClientMod {
+  import typings.got.gotMod.GotOptions
   import typings.node.httpMod.IncomingMessage
   import typings.std.Error
 
-  type CustomHttpOptionsProvider = js.Function1[/* options */ HttpRequestOptions, HttpRequestOptions]
+  type CustomHttpOptionsProvider = js.Function1[/* options */ HttpOptions, HttpOptions]
+  type HttpOptions = GotOptions[String | Null]
   type RetryFunction = js.Function2[/* retry */ Double, /* error */ Error, Double]
   type StrategyVerifyCallback[TUser] = js.Function2[
     /* tokenset */ TokenSet, 

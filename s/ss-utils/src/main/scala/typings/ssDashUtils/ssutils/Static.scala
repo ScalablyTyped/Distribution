@@ -22,6 +22,8 @@ trait Static extends js.Object {
   def createUrl(route: String, args: js.Any): String = js.native
   def dfmt(d: Date): String = js.native
   def dfmthm(d: Date): String = js.native
+  def disposeServerEvents(): Unit = js.native
+  def disposeServerEvents(cb: js.Function): Unit = js.native
   def getSelection(): String = js.native
   def humanize(s: String): String = js.native
   def normalize(dto: js.Any): js.Any = js.native

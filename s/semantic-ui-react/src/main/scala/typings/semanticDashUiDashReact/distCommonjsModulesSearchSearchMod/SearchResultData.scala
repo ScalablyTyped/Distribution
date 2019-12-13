@@ -32,6 +32,7 @@ object SearchResultData {
     aligned: String = null,
     as: js.Any = null,
     category: js.UndefOr[Boolean] = js.undefined,
+    categoryLayoutRenderer: /* props */ SearchCategoryProps => ReactElement = null,
     categoryRenderer: /* props */ SearchCategoryProps => ReactElement = null,
     className: String = null,
     defaultOpen: js.UndefOr[Boolean] = js.undefined,
@@ -61,6 +62,7 @@ object SearchResultData {
     if (aligned != null) __obj.updateDynamic("aligned")(aligned.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    if (categoryLayoutRenderer != null) __obj.updateDynamic("categoryLayoutRenderer")(js.Any.fromFunction1(categoryLayoutRenderer))
     if (categoryRenderer != null) __obj.updateDynamic("categoryRenderer")(js.Any.fromFunction1(categoryRenderer))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])

@@ -33,5 +33,12 @@ object layer extends js.Object {
       Unit
     ]
   ): Layer = js.native
+  def apply(
+    assembler: js.Function1[
+      /* addLayerCallback */ js.Function1[/* layerToAdd */ IconOrText | js.Array[IconOrText], Unit], 
+      Unit
+    ],
+    params: LayerParams
+  ): Layer = js.native
 }
 

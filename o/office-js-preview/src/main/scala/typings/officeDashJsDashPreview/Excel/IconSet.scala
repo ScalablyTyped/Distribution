@@ -12,8 +12,6 @@ import typings.officeDashJsDashPreview.Excel.IconSet.fourRating
 import typings.officeDashJsDashPreview.Excel.IconSet.fourRedToBlack
 import typings.officeDashJsDashPreview.Excel.IconSet.fourTrafficLights
 import typings.officeDashJsDashPreview.Excel.IconSet.invalid
-import typings.officeDashJsDashPreview.Excel.IconSet.linkedEntityFinanceIcon
-import typings.officeDashJsDashPreview.Excel.IconSet.linkedEntityMapIcon
 import typings.officeDashJsDashPreview.Excel.IconSet.threeArrows
 import typings.officeDashJsDashPreview.Excel.IconSet.threeArrowsGray
 import typings.officeDashJsDashPreview.Excel.IconSet.threeFlags
@@ -69,12 +67,6 @@ object IconSet extends js.Object {
   
   @js.native
   sealed trait invalid extends IconSet
-  
-  @js.native
-  sealed trait linkedEntityFinanceIcon extends IconSet
-  
-  @js.native
-  sealed trait linkedEntityMapIcon extends IconSet
   
   @js.native
   sealed trait threeArrows extends IconSet
@@ -140,12 +132,6 @@ object IconSet extends js.Object {
   
   /* "Invalid" */ @js.native
   object invalid extends TopLevel[invalid with String]
-  
-  /* "LinkedEntityFinanceIcon" */ @js.native
-  object linkedEntityFinanceIcon extends TopLevel[linkedEntityFinanceIcon with String]
-  
-  /* "LinkedEntityMapIcon" */ @js.native
-  object linkedEntityMapIcon extends TopLevel[linkedEntityMapIcon with String]
   
   /* "ThreeArrows" */ @js.native
   object threeArrows extends TopLevel[threeArrows with String]

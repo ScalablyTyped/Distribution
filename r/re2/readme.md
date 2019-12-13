@@ -1,7 +1,7 @@
 
 # Scala.js typings for re2
 
-Typings are for version 1.10.4
+Typings are for version 1.10.5
 
 ## Library description:
 Bindings for RE2: fast, safe alternative to backtracking regular expression engines.

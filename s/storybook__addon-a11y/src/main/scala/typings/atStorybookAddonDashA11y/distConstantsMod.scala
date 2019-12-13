@@ -18,6 +18,7 @@ object distConstantsMod extends js.Object {
   val PARAM_KEY: a11y = js.native
   @js.native
   object EVENTS extends js.Object {
+    var ERROR: String = js.native
     var REQUEST: String = js.native
     var RESULT: String = js.native
   }

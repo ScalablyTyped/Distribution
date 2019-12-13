@@ -1,5 +1,6 @@
 package typings.instagramDashPrivateDashApi.distCoreRequestMod
 
+import typings.instagramDashPrivateDashApi.Anon_AcceptEncoding
 import typings.instagramDashPrivateDashApi.PartialAttemptOptionsany
 import typings.instagramDashPrivateDashApi.distCoreClientMod.IgApiClient
 import typings.instagramDashPrivateDashApi.distErrorsMod.IgClientError
@@ -19,12 +20,13 @@ class Request protected () extends js.Object {
   var client: js.Any = js.native
   var defaults: Partial[Options] = js.native
   @JSName("end$")
-  var end$: Subject[js.Object] = js.native
+  var end$: Subject[_] = js.native
   @JSName("error$")
   var error$: Subject[IgClientError] = js.native
-  var faultTolerantRequest: js.Any = js.native
-  var getDefaultHeaders: js.Any = js.native
   var handleResponseError: js.Any = js.native
+  var updateState: js.Any = js.native
+  /* protected */ def faultTolerantRequest(options: Options): js.Promise[_] = js.native
+  def getDefaultHeaders(): Anon_AcceptEncoding = js.native
   def send[T](userOptions: Options): js.Promise[IgResponse[T]] = js.native
   def send[T](userOptions: Options, onlyCheckHttpStatus: Boolean): js.Promise[IgResponse[T]] = js.native
   def sign(payload: Payload): SignedPost = js.native

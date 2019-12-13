@@ -24,8 +24,6 @@ object libIntegrationsEnterpriseMod extends js.Object {
     val archiveUrl_Integration: js.UndefOr[scala.Nothing] = js.native
     var chooseApp: js.Any = js.native
     var chooseAppToLink: js.Any = js.native
-    @JSName("config")
-    val config_Integration: EnterpriseIntegrationConfig = js.native
     var createNewApp: js.Any = js.native
     var getAppClient: js.Any = js.native
     var getPK: js.Any = js.native
@@ -34,6 +32,8 @@ object libIntegrationsEnterpriseMod extends js.Object {
     val summary_Integration: `Ionic Enterprise Edition provides premier native solutions, UI, & support for companies building cross-platform appsDOT` = js.native
     var updateNPMRC: js.Any = js.native
     var validatePK: js.Any = js.native
+    @JSName("config")
+    def config_MIntegration(): EnterpriseIntegrationConfig = js.native
   }
   
 }

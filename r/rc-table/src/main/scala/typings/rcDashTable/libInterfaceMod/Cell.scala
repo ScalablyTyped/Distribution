@@ -11,6 +11,7 @@ trait Cell extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var colSpan: js.UndefOr[Double] = js.undefined
   var column: js.UndefOr[ColumnType[DefaultValueType]] = js.undefined
+  var isLast: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
   var rowSpan: js.UndefOr[Double] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -23,6 +24,7 @@ object Cell {
     className: String = null,
     colSpan: Int | Double = null,
     column: ColumnType[DefaultValueType] = null,
+    isLast: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
     rowSpan: Int | Double = null,
     style: CSSProperties = null
@@ -32,6 +34,7 @@ object Cell {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLast)) __obj.updateDynamic("isLast")(isLast.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

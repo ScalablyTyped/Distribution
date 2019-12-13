@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "snabbdom" : "0.7.3"
+      "snabbdom" : "0.7.4"
     }
   ],
   "test-dependencies" : [
     {
-      "snabbdom" : "0.7.3"
+      "snabbdom" : "0.7.4"
     }
   ],
   "compile-devDependencies" : [

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnySchema
-  extends JoiObject
+  extends SchemaInternals
      with _Schema {
   /**
     * Starts a ruleset in order to apply multiple rule options. The set ends when `rule()`, `keep()`, `message()`, or `warn()` is called.

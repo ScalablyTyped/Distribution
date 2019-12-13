@@ -1,7 +1,7 @@
 package typings.atFirebaseMessaging
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseMessaging.distSrcControllersBaseDashControllerMod.BaseController
+import typings.atFirebaseMessaging.distSrcInterfacesInternalDashServicesMod.FirebaseInternalServices
 import typings.std.ServiceWorkerRegistration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,7 +15,7 @@ object distSrcControllersWindowDashControllerMod extends js.Object {
     /**
       * A service that provides a MessagingService instance.
       */
-    def this(app: FirebaseApp) = this()
+    def this(services: FirebaseInternalServices) = this()
     var messageObserver: js.Any = js.native
     val onMessageInternal: js.Any = js.native
     val onTokenRefreshInternal: js.Any = js.native

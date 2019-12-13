@@ -18,6 +18,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -122,7 +123,7 @@ object ObjectHTMLAttributes {
     classID: String = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     data: String = null,
@@ -306,7 +307,7 @@ object ObjectHTMLAttributes {
     if (classID != null) __obj.updateDynamic("classID")(classID.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

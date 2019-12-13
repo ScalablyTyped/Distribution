@@ -1,5 +1,6 @@
 package typings.parse.Parse.Push
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Installation
 import typings.parse.Parse.Query
 import typings.std.Date
@@ -19,7 +20,7 @@ trait PushData extends js.Object {
   var push_time: js.UndefOr[Date] = js.undefined
   var sound: js.UndefOr[String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
-  var where: js.UndefOr[Query[Installation[_]]] = js.undefined
+  var where: js.UndefOr[Query[Installation[Attributes]]] = js.undefined
 }
 
 object PushData {
@@ -36,7 +37,7 @@ object PushData {
     push_time: Date = null,
     sound: String = null,
     title: String = null,
-    where: Query[Installation[_]] = null
+    where: Query[Installation[Attributes]] = null
   ): PushData = {
     val __obj = js.Dynamic.literal()
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])

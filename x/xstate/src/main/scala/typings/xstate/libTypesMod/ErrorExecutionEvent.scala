@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ErrorExecutionEvent
-  extends EventObject
-     with BuiltInEvent[js.Any] {
+trait ErrorExecutionEvent extends EventObject {
   var data: js.Any
   var src: String
   @JSName("type")
@@ -16,10 +14,9 @@ trait ErrorExecutionEvent
 
 object ErrorExecutionEvent {
   @scala.inline
-  def apply(data: js.Any, src: String, `type`: ErrorExecution, id: String | Double = null): ErrorExecutionEvent = {
+  def apply(data: js.Any, src: String, `type`: ErrorExecution): ErrorExecutionEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorExecutionEvent]
   }
 }

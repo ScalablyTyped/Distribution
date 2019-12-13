@@ -34,11 +34,11 @@ trait `Typeofpower-assert` extends js.Object {
   def doesNotThrow(block: js.Function, message: String): Unit = js.native
   def equal(actual: js.Any, expected: js.Any): Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: String): Unit = js.native
-  def fail(): Unit = js.native
-  def fail(actual: js.Any): Unit = js.native
-  def fail(actual: js.Any, expected: js.Any): Unit = js.native
-  def fail(actual: js.Any, expected: js.Any, message: String): Unit = js.native
-  def fail(actual: js.Any, expected: js.Any, message: String, operator: String): Unit = js.native
+  def fail(): scala.Nothing = js.native
+  def fail(actual: js.Any): scala.Nothing = js.native
+  def fail(actual: js.Any, expected: js.Any): scala.Nothing = js.native
+  def fail(actual: js.Any, expected: js.Any, message: String): scala.Nothing = js.native
+  def fail(actual: js.Any, expected: js.Any, message: String, operator: String): scala.Nothing = js.native
   def ifError(value: js.Any): Unit = js.native
   def notDeepEqual(acutal: js.Any, expected: js.Any): Unit = js.native
   def notDeepEqual(acutal: js.Any, expected: js.Any, message: String): Unit = js.native

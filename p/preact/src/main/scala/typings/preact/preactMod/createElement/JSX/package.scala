@@ -32,7 +32,11 @@ package object JSX {
   type DragEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedDragEvent[Target]]
   type Element = VNode[js.Any]
   type ElementClass = Component[js.Any, js.Any]
-  type EventHandler[E /* <: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[EventTarget, Event] */] = js.Function1[/* event */ E, Unit]
+  type EventHandler[E /* <: typings.preact.srcJsxMod.JSXInternal.TargetedEvent[EventTarget, Event] */] = js.ThisFunction1[
+    /* import warning: importer.ImportType#apply Failed type conversion: E['currentTarget'] */ /* this */ js.Any, 
+    /* event */ E, 
+    Unit
+  ]
   type FocusEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedFocusEvent[Target]]
   type GenericEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedEvent[Target, Event]]
   type KeyboardEventHandler[Target /* <: EventTarget */] = typings.preact.srcJsxMod.JSXInternal.EventHandler[typings.preact.srcJsxMod.JSXInternal.TargetedKeyboardEvent[Target]]

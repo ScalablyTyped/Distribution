@@ -1,7 +1,7 @@
 package typings.atIonicReact
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.atIonicCore.atIonicCoreMod.ComponentRef
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonPopoverElement
 import typings.atIonicCore.distTypesComponentsPopoverPopoverDashInterfaceMod.PopoverOptions
 import typings.atIonicReact.atIonicReactStrings.animated
 import typings.atIonicReact.atIonicReactStrings.backdropDismiss
@@ -18,7 +18,8 @@ import typings.atIonicReact.atIonicReactStrings.mode
 import typings.atIonicReact.atIonicReactStrings.showBackdrop
 import typings.atIonicReact.atIonicReactStrings.translucent
 import typings.atIonicReact.distTypesComponentsCreateOverlayComponentMod.ReactOverlayProps
-import typings.react.reactMod.Context
+import typings.react.reactMod.ForwardRefExoticComponent
+import typings.react.reactMod.RefAttributes
 import typings.std.Omit
 import typings.std.Pick
 import scala.scalajs.js
@@ -28,26 +29,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react/dist/types/components/IonPopover", JSImport.Namespace)
 @js.native
 object distTypesComponentsIonPopoverMod extends js.Object {
-  @js.native
-  class IonPopover protected () extends Anon_AnimatedBackdropDismiss {
-    def this(props: (Pick[
-            PopoverOptions[ComponentRef], 
-            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
-          ]) with Anon_ChildrenReactNode with ReactOverlayProps) = this()
-  }
-  
-  @js.native
-  object IonPopover extends Instantiable1[
-          /* props */ (Pick[
-            PopoverOptions[ComponentRef], 
-            id | mode | animated | translucent | showBackdrop | backdropDismiss | cssClass | delegate | keyboardClose | enterAnimation | leaveAnimation | event
-          ]) with Anon_ChildrenReactNode with ReactOverlayProps, 
-          Anon_AnimatedBackdropDismiss
-        ] {
-    var contextType: js.UndefOr[Context[_]] = js.native
-    val displayName: String = js.native
-  }
-  
-  type ReactPopoverOptions = (Omit[PopoverOptions[ComponentRef], component | componentProps]) with Anon_ChildrenReactNode
+  val IonPopover: ForwardRefExoticComponent[
+    Anon_ChildrenForwardedRefHTMLIonPopoverElement with (Pick[
+      PopoverOptions[ComponentRef], 
+      id | mode | animated | translucent | cssClass | backdropDismiss | keyboardClose | enterAnimation | leaveAnimation | showBackdrop | delegate | event
+    ]) with ReactOverlayProps with RefAttributes[HTMLIonPopoverElement]
+  ] = js.native
+  type ReactPopoverOptions = (Omit[PopoverOptions[ComponentRef], component | componentProps]) with Anon_Children
 }
 

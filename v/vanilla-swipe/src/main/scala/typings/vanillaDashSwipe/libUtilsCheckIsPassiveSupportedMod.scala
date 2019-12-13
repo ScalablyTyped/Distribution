@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 object libUtilsCheckIsPassiveSupportedMod extends js.Object {
   def checkIsPassiveSupported(): Boolean = js.native
   def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = js.native
+  def noop(): Unit = js.native
 }
 

@@ -1058,9 +1058,6 @@ object officeDashUiDashFabricDashReactStrings {
   sealed trait rightDate_442ea326 extends js.Object
   
   @js.native
-  sealed trait role extends js.Object
-  
-  @js.native
   sealed trait rootIsChecked_8fa98695 extends js.Object
   
   @js.native
@@ -1107,6 +1104,9 @@ object officeDashUiDashFabricDashReactStrings {
   
   @js.native
   sealed trait shouldSelectFirstItem extends js.Object
+  
+  @js.native
+  sealed trait showForceResolve extends js.Object
   
   @js.native
   sealed trait showRemoveButtons extends js.Object
@@ -2063,8 +2063,6 @@ object officeDashUiDashFabricDashReactStrings {
   @scala.inline
   def rightDate_442ea326: rightDate_442ea326 = "rightDate_442ea326".asInstanceOf[rightDate_442ea326]
   @scala.inline
-  def role: role = "role".asInstanceOf[role]
-  @scala.inline
   def rootIsChecked_8fa98695: rootIsChecked_8fa98695 = "rootIsChecked_8fa98695".asInstanceOf[rootIsChecked_8fa98695]
   @scala.inline
   def rootVertical_c0c0a405: rootVertical_c0c0a405 = "rootVertical_c0c0a405".asInstanceOf[rootVertical_c0c0a405]
@@ -2096,6 +2094,8 @@ object officeDashUiDashFabricDashReactStrings {
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
   def shouldSelectFirstItem: shouldSelectFirstItem = "shouldSelectFirstItem".asInstanceOf[shouldSelectFirstItem]
+  @scala.inline
+  def showForceResolve: showForceResolve = "showForceResolve".asInstanceOf[showForceResolve]
   @scala.inline
   def showRemoveButtons: showRemoveButtons = "showRemoveButtons".asInstanceOf[showRemoveButtons]
   @scala.inline

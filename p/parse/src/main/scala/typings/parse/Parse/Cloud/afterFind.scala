@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object afterFind extends js.Object {
   def apply(arg1: js.Any): Unit = js.native
-  def apply(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Promise[_] | _]): Unit = js.native
+  def apply(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
 }
 

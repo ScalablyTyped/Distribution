@@ -22,10 +22,10 @@ class Slot protected () extends js.Object {
   var darkColor: Color = js.native
   var data: SlotData = js.native
   var deform: js.Array[Double] = js.native
+  var hackAttachment: Attachment = js.native
+  var hackRegion: TextureRegion = js.native
   var meshes: js.Any = js.native
   var sprites: js.Any = js.native
-  var tempAttachment: Attachment = js.native
-  var tempRegion: TextureRegion = js.native
   def getAttachment(): Attachment = js.native
   def getAttachmentTime(): Double = js.native
   def setAttachment(attachment: Attachment): Unit = js.native

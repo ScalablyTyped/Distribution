@@ -64,7 +64,7 @@ class SoundComponent protected () extends Component {
     * @name pc.SoundComponent#addSlot
     * @description Creates a new {@link pc.SoundSlot} with the specified name.
     * @param {String} name The name of the slot
-    * @param {Object} options Settings for the slot
+    * @param {Object} [options] Settings for the slot
     * @param {Number} [options.volume=1] The playback volume, between 0 and 1.
     * @param {Number} [options.pitch=1] The relative pitch, default of 1, plays at normal pitch.
     * @param {Boolean} [options.loop=false] If true the sound will restart when it reaches the end.
@@ -84,6 +84,7 @@ class SoundComponent protected () extends Component {
     * // play
     * this.entity.sound.play('beep');
     */
+  def addSlot(name: String): SoundSlot = js.native
   def addSlot(name: String, options: Anon_Asset): SoundSlot = js.native
   /**
     * @function

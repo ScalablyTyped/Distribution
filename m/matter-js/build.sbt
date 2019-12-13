@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "matter-js"
-version := "0.10.1-dt-20191101Z-117147"
+version := "0.10.1-dt-20191210Z-868d39"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,9 +15,7 @@ trait FuseOptions[T] extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var includeMatches: js.UndefOr[Boolean] = js.undefined
   var includeScore: js.UndefOr[Boolean] = js.undefined
-  var keys: js.UndefOr[
-    (js.Array[Anon_Name[T] | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any)
-  ] = js.undefined
+  var keys: js.UndefOr[js.Array[Anon_Name[T] | String]] = js.undefined
   var location: js.UndefOr[Double] = js.undefined
   var matchAllTokens: js.UndefOr[Boolean] = js.undefined
   var maxPatternLength: js.UndefOr[Double] = js.undefined
@@ -40,7 +38,7 @@ object FuseOptions {
     id: String = null,
     includeMatches: js.UndefOr[Boolean] = js.undefined,
     includeScore: js.UndefOr[Boolean] = js.undefined,
-    keys: (js.Array[Anon_Name[T] | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) = null,
+    keys: js.Array[Anon_Name[T] | String] = null,
     location: Int | Double = null,
     matchAllTokens: js.UndefOr[Boolean] = js.undefined,
     maxPatternLength: Int | Double = null,

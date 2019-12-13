@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
   * The list of contacts extracted from the body of an email message or appointment is returned in the contacts property of the
   * {@link Office.Entities | Entities} object returned by the getEntities or getEntitiesByType method of the current item.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted

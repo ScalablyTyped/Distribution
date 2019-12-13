@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait PartialClassNameMapAutocompleteClassKey extends js.Object {
   var clearIndicator: js.UndefOr[String] = js.undefined
   var clearIndicatorDirty: js.UndefOr[String] = js.undefined
+  var endAdornment: js.UndefOr[String] = js.undefined
   var focused: js.UndefOr[String] = js.undefined
   var groupLabel: js.UndefOr[String] = js.undefined
   var groupUl: js.UndefOr[String] = js.undefined
@@ -25,6 +26,7 @@ trait PartialClassNameMapAutocompleteClassKey extends js.Object {
   var popupIndicatorOpen: js.UndefOr[String] = js.undefined
   var root: js.UndefOr[String] = js.undefined
   var tag: js.UndefOr[String] = js.undefined
+  var tagSizeSmall: js.UndefOr[String] = js.undefined
 }
 
 object PartialClassNameMapAutocompleteClassKey {
@@ -32,6 +34,7 @@ object PartialClassNameMapAutocompleteClassKey {
   def apply(
     clearIndicator: String = null,
     clearIndicatorDirty: String = null,
+    endAdornment: String = null,
     focused: String = null,
     groupLabel: String = null,
     groupUl: String = null,
@@ -48,11 +51,13 @@ object PartialClassNameMapAutocompleteClassKey {
     popupIndicator: String = null,
     popupIndicatorOpen: String = null,
     root: String = null,
-    tag: String = null
+    tag: String = null,
+    tagSizeSmall: String = null
   ): PartialClassNameMapAutocompleteClassKey = {
     val __obj = js.Dynamic.literal()
     if (clearIndicator != null) __obj.updateDynamic("clearIndicator")(clearIndicator.asInstanceOf[js.Any])
     if (clearIndicatorDirty != null) __obj.updateDynamic("clearIndicatorDirty")(clearIndicatorDirty.asInstanceOf[js.Any])
+    if (endAdornment != null) __obj.updateDynamic("endAdornment")(endAdornment.asInstanceOf[js.Any])
     if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (groupLabel != null) __obj.updateDynamic("groupLabel")(groupLabel.asInstanceOf[js.Any])
     if (groupUl != null) __obj.updateDynamic("groupUl")(groupUl.asInstanceOf[js.Any])
@@ -70,6 +75,7 @@ object PartialClassNameMapAutocompleteClassKey {
     if (popupIndicatorOpen != null) __obj.updateDynamic("popupIndicatorOpen")(popupIndicatorOpen.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (tagSizeSmall != null) __obj.updateDynamic("tagSizeSmall")(tagSizeSmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapAutocompleteClassKey]
   }
 }

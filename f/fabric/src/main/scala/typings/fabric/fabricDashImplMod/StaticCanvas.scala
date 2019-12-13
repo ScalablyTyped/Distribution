@@ -278,6 +278,7 @@ class StaticCanvas protected ()
   	 * @chainable
   	 */
   def setBackgroundColor(backgroundColor: String, callback: js.Function): Canvas = js.native
+  def setBackgroundColor(backgroundColor: Gradient, callback: js.Function): Canvas = js.native
   def setBackgroundColor(backgroundColor: Pattern, callback: js.Function): Canvas = js.native
   def setBackgroundImage(image: String, callback: js.Function): Canvas = js.native
   def setBackgroundImage(image: String, callback: js.Function, options: IImageOptions): Canvas = js.native

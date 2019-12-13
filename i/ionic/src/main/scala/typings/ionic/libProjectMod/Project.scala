@@ -12,11 +12,17 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Project protected () extends IProject {
   def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
-  @JSName("config")
-  val config_Project: ProjectConfig = js.native
   val e: ProjectDeps = js.native
   var originalConfigFile: js.UndefOr[StringDictionary[js.Any]] = js.native
-  val packageJsonPath: String = js.native
+  @JSName("config")
+  def config_MProject(): ProjectConfig = js.native
+  @JSName("directory")
+  def directory_MProject(): String = js.native
+  @JSName("filePath")
+  def filePath_MProject(): String = js.native
   /* protected */ def getIntegrations(): js.Promise[js.Array[IIntegration[ProjectIntegration]]] = js.native
+  def packageJsonPath(): String = js.native
+  @JSName("pathPrefix")
+  def pathPrefix_MProject(): js.Array[String] = js.native
 }
 

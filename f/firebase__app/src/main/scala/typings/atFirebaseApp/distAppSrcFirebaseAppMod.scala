@@ -3,9 +3,10 @@ package typings.atFirebaseApp
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseAppConfig
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseOptions
-import typings.atFirebaseAppDashTypes.privateMod.FirebaseAppInternals
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseService
 import typings.atFirebaseAppDashTypes.privateMod._FirebaseNamespace
+import typings.atFirebaseComponent.atFirebaseComponentMod.Component
+import typings.atFirebaseComponent.distSrcTypesMod.Name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,25 +17,22 @@ object distAppSrcFirebaseAppMod extends js.Object {
   @js.native
   class FirebaseAppImpl protected () extends FirebaseApp {
     def this(options: FirebaseOptions, config: FirebaseAppConfig, firebase_ : _FirebaseNamespace) = this()
-    var INTERNAL: FirebaseAppInternals = js.native
-    var analyticsEventRequests_ : js.Any = js.native
     var automaticDataCollectionEnabled_ : js.Any = js.native
     /**
       * This function will throw an Error if the App has already been deleted -
       * use before performing API actions on the App.
       */
     var checkDestroyed_ : js.Any = js.native
-    /**
-      * Callback function used to extend an App instance at the time
-      * of service instance creation.
-      */
-    var extendApp: js.Any = js.native
+    var container: js.Any = js.native
     val firebase_ : js.Any = js.native
     var isDeleted_ : js.Any = js.native
     val name_ : js.Any = js.native
     val options_ : js.Any = js.native
-    var services_ : js.Any = js.native
-    var tokenListeners_ : js.Any = js.native
+    /**
+      * @param component the component being added to this app's container
+      */
+    def _addComponent(component: Component[Name]): Unit = js.native
+    def _addOrOverwriteComponent(component: Component[Name]): Unit = js.native
     /**
       * Return a service instance associated with this app (creating it
       * on demand), identified by the passed instanceIdentifier.

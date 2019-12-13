@@ -14,19 +14,19 @@ object distCoreFeedMod extends js.Object {
   abstract class Feed[Response, Item] () extends Repository {
     var attemptOptions: PartialAttemptOptionsany = js.native
     var chance: Chance = js.native
-    @JSName("items$")
-    val items$: Observable[js.Array[Item]] = js.native
     var moreAvailable: Boolean = js.native
     var rankToken: String = js.native
-    var state: Response = js.native
     def deserialize(data: String): Unit = js.native
     def isMoreAvailable(): Boolean = js.native
     def items(): js.Promise[js.Array[Item]] = js.native
+    @JSName("items$")
+    def items$(): Observable[js.Array[Item]] = js.native
     def observable(): Observable[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[_]]): Observable[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[_]], attemptOptions: PartialAttemptOptionsany): Observable[js.Array[Item]] = js.native
     def request(args: js.Any*): js.Promise[Response] = js.native
     def serialize(): String = js.native
+    /* protected */ def state(response: Response): js.Any = js.native
     def toPlain(): js.Object = js.native
   }
   

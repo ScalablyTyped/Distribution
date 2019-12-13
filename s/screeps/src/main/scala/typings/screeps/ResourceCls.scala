@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Resource")
 @js.native
 class ResourceCls protected () extends Resource[ResourceConstant] {
-  def this(id: String) = this()
+  def this(id: Id[Resource[ResourceConstant]]) = this()
   /**
     * The amount of resource units containing.
     */
@@ -22,7 +22,7 @@ class ResourceCls protected () extends Resource[ResourceConstant] {
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * An object representing the position of this object in the room.
     */

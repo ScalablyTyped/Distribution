@@ -48,6 +48,7 @@ object geolibMod extends js.Object {
   def getCompassDirection(origin: GeolibInputCoordinates, dest: GeolibInputCoordinates, bearingFn: BearingFunction): S | W | NNE | NE | ENE | E | ESE | SE | SSE | SSW | SW | WSW | WNW | NW | NNW | N = js.native
   def getCoordinateKey[Keys](point: GeolibInputCoordinates, keysToLookup: js.Array[Keys]): js.UndefOr[Keys] = js.native
   def getCoordinateKeys(point: GeolibInputCoordinates): Anon_0 | Anon_01 = js.native
+  def getCoordinateKeys(point: GeolibInputCoordinates, keysToLookup: Anon_Altitude): Anon_0 | Anon_01 = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates): Double = js.native
   def getDistance(from: GeolibInputCoordinates, to: GeolibInputCoordinates, accuracy: Double): Double = js.native
   def getDistanceFromLine(point: GeolibInputCoordinates, lineStart: GeolibInputCoordinates, lineEnd: GeolibInputCoordinates): Double = js.native

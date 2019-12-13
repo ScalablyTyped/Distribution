@@ -15,7 +15,19 @@ object atStorybookAddonDashA11yStrings {
   sealed trait a11y extends js.Object
   
   @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
   sealed trait iframe extends js.Object
+  
+  @js.native
+  sealed trait ran extends js.Object
+  
+  @js.native
+  sealed trait ready extends js.Object
+  
+  @js.native
+  sealed trait running extends js.Object
   
   @js.native
   sealed trait `storybook/a11y` extends js.Object
@@ -27,7 +39,15 @@ object atStorybookAddonDashA11yStrings {
   @scala.inline
   def a11y: a11y = "a11y".asInstanceOf[a11y]
   @scala.inline
+  def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
+  @scala.inline
+  def ran: ran = "ran".asInstanceOf[ran]
+  @scala.inline
+  def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
+  def running: running = "running".asInstanceOf[running]
   @scala.inline
   def `storybook/a11y`: `storybook/a11y` = "storybook/a11y".asInstanceOf[`storybook/a11y`]
 }

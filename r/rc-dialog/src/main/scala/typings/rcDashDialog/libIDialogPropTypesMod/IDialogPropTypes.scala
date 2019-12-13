@@ -21,6 +21,7 @@ trait IDialogPropTypes extends js.Object {
   var closable: js.UndefOr[Boolean] = js.undefined
   var closeIcon: js.UndefOr[ReactNode] = js.undefined
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
+  var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
   var footer: js.UndefOr[ReactNode] = js.undefined
   var forceRender: js.UndefOr[Boolean] = js.undefined
   var getContainer: js.UndefOr[IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false`] = js.undefined
@@ -58,6 +59,7 @@ object IDialogPropTypes {
     closable: js.UndefOr[Boolean] = js.undefined,
     closeIcon: ReactNode = null,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
+    focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined,
     footer: ReactNode = null,
     forceRender: js.UndefOr[Boolean] = js.undefined,
     getContainer: IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false` = null,
@@ -92,6 +94,7 @@ object IDialogPropTypes {
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusTriggerAfterClose)) __obj.updateDynamic("focusTriggerAfterClose")(focusTriggerAfterClose.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PasswordlessStartOptions extends js.Object {
-  var authParams: js.UndefOr[js.Any] = js.undefined
+  var authParams: js.UndefOr[PasswordlessStartAuthParams] = js.undefined
   var connection: String
   var email: js.UndefOr[String] = js.undefined
   var phoneNumber: js.UndefOr[String] = js.undefined
@@ -17,7 +17,7 @@ object PasswordlessStartOptions {
   def apply(
     connection: String,
     send: String,
-    authParams: js.Any = null,
+    authParams: PasswordlessStartAuthParams = null,
     email: String = null,
     phoneNumber: String = null
   ): PasswordlessStartOptions = {

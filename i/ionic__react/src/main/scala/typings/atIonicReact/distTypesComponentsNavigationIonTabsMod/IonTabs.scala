@@ -24,6 +24,6 @@ class IonTabs protected ()
 @JSImport("@ionic/react/dist/types/components/navigation/IonTabs", "IonTabs")
 @js.native
 object IonTabs extends js.Object {
-  val contextType: Context[NavContextState] = js.native
+  def contextType(): Context[NavContextState] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__channels"
-version := "5.2.6-06fa66"
+version := "5.2.8-5bc41d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

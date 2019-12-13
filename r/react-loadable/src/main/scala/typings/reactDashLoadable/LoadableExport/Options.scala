@@ -18,7 +18,7 @@ object Options {
   @scala.inline
   def OptionsWithoutRender[Props, Exports /* <: js.Object */](
     loader: () => js.Promise[ComponentType[Props] | Anon_Default[Props]],
-    loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
+    loading: ComponentType[LoadingComponentProps],
     delay: Double | `false` = null,
     modules: js.Array[String] = null,
     timeout: Double | `false` = null,
@@ -34,7 +34,7 @@ object Options {
   @scala.inline
   def OptionsWithRender[Props, Exports /* <: js.Object */](
     loader: () => js.Promise[Exports],
-    loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
+    loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
     delay: Double | `false` = null,
     modules: js.Array[String] = null,

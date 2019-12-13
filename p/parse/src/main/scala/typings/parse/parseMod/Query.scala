@@ -1,6 +1,7 @@
 package typings.parse.parseMod
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.parse.Parse.Attributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Creates a new parse Parse.Query for the given Parse.Object subclass.
   * @param objectClass -
   *   An instance of a subclass of Parse.Object, or a Parse className string.
-  * @class
   *
   * <p>Parse.Query defines a query that is used to fetch Parse.Objects. The
   * most common use case is finding all objects that match a query through the
@@ -63,19 +63,19 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "Query")
 @js.native
-class Query[T /* <: typings.parse.Parse.Object[_] */] protected ()
+class Query[T /* <: typings.parse.Parse.Object[Attributes] */] protected ()
   extends typings.parse.nodeMod.Query[T] {
   def this(objectClass: String) = this()
-  def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
+  def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T | typings.parse.Parse.Object[Attributes]]) = this()
 }
 
 /* static members */
 @JSImport("parse", "Query")
 @js.native
 object Query extends js.Object {
-  def and[U /* <: typings.parse.Parse.Object[_] */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
-  def fromJSON[U /* <: typings.parse.Parse.Object[_] */](className: String, json: js.Any): typings.parse.Parse.Query[U] = js.native
-  def nor[U /* <: typings.parse.Parse.Object[_] */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
-  def or[U /* <: typings.parse.Parse.Object[_] */](var_args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
+  def and[U /* <: typings.parse.Parse.Object[Attributes] */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
+  def fromJSON[U /* <: typings.parse.Parse.Object[Attributes] */](className: String, json: js.Any): typings.parse.Parse.Query[U] = js.native
+  def nor[U /* <: typings.parse.Parse.Object[Attributes] */](args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
+  def or[U /* <: typings.parse.Parse.Object[Attributes] */](var_args: typings.parse.Parse.Query[U]*): typings.parse.Parse.Query[U] = js.native
 }
 

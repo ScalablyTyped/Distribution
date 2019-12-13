@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureContainer")
 @js.native
 class StructureContainerCls protected () extends StructureContainer {
-  def this(id: String) = this()
+  def this(id: Id[StructureContainer]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -27,7 +27,7 @@ class StructureContainerCls protected () extends StructureContainer {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * An object representing the position of this object in the room.
     */
@@ -48,6 +48,7 @@ class StructureContainerCls protected () extends StructureContainer {
   override var store: StoreDefinition = js.native
   /**
     * The total amount of resources the structure can contain.
+    * @deprecated An alias for .store.getCapacity().
     */
   /* CompleteClass */
   override var storeCapacity: Double = js.native

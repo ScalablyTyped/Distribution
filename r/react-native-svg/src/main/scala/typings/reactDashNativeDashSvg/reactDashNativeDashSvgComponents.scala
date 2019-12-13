@@ -23,6 +23,8 @@ object reactDashNativeDashSvgComponents extends reactDashNativeDashSvgProps {
   @scala.inline
   def LinearGradient: ComponentType[LinearGradientProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.LinearGradient].asInstanceOf[typings.react.reactMod.ComponentType[LinearGradientProps]]
   @scala.inline
+  def Marker: ComponentType[MarkerProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[MarkerProps]]
+  @scala.inline
   def Mask: ComponentType[MaskProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Mask].asInstanceOf[typings.react.reactMod.ComponentType[MaskProps]]
   @scala.inline
   def Path: ComponentType[PathProps] = js.constructorOf[typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.Path].asInstanceOf[typings.react.reactMod.ComponentType[PathProps]]

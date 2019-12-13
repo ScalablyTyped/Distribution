@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Tombstone")
 @js.native
 class TombstoneCls protected () extends Tombstone {
-  def this(id: String) = this()
+  def this(id: Id[Tombstone]) = this()
   /**
     * An object containing the deceased creep.
     */
@@ -28,7 +28,7 @@ class TombstoneCls protected () extends Tombstone {
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * An object representing the position of this object in the room.
     */
@@ -42,7 +42,7 @@ class TombstoneCls protected () extends Tombstone {
     * You can use lodash.sum to get the total amount of contents.
     */
   /* CompleteClass */
-  override var store: StoreDefinition = js.native
+  override var store: StoreDefinitionUnlimited = js.native
   /**
     * The amount of game ticks before this tombstone decays.
     */

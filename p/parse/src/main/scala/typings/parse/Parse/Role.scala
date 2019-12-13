@@ -1,5 +1,6 @@
 package typings.parse.Parse
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,18 +14,19 @@ import scala.scalajs.js.annotation._
   *
   * <p>Roles must have a name (which cannot be changed after creation of the
   * role), and must specify an ACL.</p>
-  * @class
   * A Parse.Role is a local representation of a role persisted to the Parse
   * cloud.
   */
-@JSGlobal("Parse.Role")
 @js.native
-class Role[T /* <: js.Any */] protected () extends Object[T] {
-  def this(name: String, acl: ACL) = this()
+trait Role[T /* <: Attributes */] extends Object[T] {
   def getName(): String = js.native
-  def getRoles(): Relation[Role[_], Role[_]] = js.native
-  def getUsers(): Relation[Role[_], User[_]] = js.native
+  def getRoles(): Relation[Role[Attributes], Role[Attributes]] = js.native
+  def getUsers(): Relation[Role[Attributes], User[Attributes]] = js.native
   def setName(name: String): js.Any = js.native
   def setName(name: String, options: SuccessFailureOptions): js.Any = js.native
 }
+
+@JSGlobal("Parse.Role")
+@js.native
+object Role extends TopLevel[RoleConstructor]
 

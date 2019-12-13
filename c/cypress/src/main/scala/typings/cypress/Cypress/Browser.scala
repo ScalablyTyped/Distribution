@@ -21,7 +21,7 @@ trait Browser extends js.Object {
   var displayName: Electron | Chrome | Canary | Chromium | FireFox
   var isHeaded: Boolean
   var isHeadless: Boolean
-  var majorVersion: String
+  var majorVersion: Double
   var name: electron_ | chrome_ | canary_ | chromium_ | firefox_
   var path: String
   var version: String
@@ -33,7 +33,7 @@ object Browser {
     displayName: Electron | Chrome | Canary | Chromium | FireFox,
     isHeaded: Boolean,
     isHeadless: Boolean,
-    majorVersion: String,
+    majorVersion: Double,
     name: electron_ | chrome_ | canary_ | chromium_ | firefox_,
     path: String,
     version: String

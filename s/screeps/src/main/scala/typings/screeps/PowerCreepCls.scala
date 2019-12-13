@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PowerCreep")
 @js.native
 class PowerCreepCls protected () extends PowerCreep {
-  def this(id: String) = this()
+  def this(id: Id[PowerCreep]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */

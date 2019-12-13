@@ -17,9 +17,11 @@ trait Legend extends js.Object {
   @JSName("itemWidth")
   var itemWidth_Original: IGetSet[Double, Legend] = js.native
   @JSName("legendText")
-  var legendText_Original: IGetSet[_, Legend] = js.native
+  var legendText_Original: IGetSet[js.Function, Legend] = js.native
   @JSName("legendWidth")
   var legendWidth_Original: IGetSet[Double, Legend] = js.native
+  @JSName("maxItems")
+  var maxItems_Original: IGetSet[Double, Legend] = js.native
   @JSName("x")
   var x_Original: IGetSet[Double, Legend] = js.native
   @JSName("y")
@@ -34,11 +36,12 @@ trait Legend extends js.Object {
   def itemHeight(t: Double): Legend = js.native
   def itemWidth(): Double = js.native
   def itemWidth(t: Double): Legend = js.native
-  def legendText(): js.Any = js.native
-  def legendText(t: js.Any): Legend = js.native
+  def legendText(): js.Function = js.native
+  def legendText(t: js.Function): Legend = js.native
   def legendWidth(): Double = js.native
   def legendWidth(t: Double): Legend = js.native
-  def render(): Unit = js.native
+  def maxItems(): Double = js.native
+  def maxItems(t: Double): Legend = js.native
   def x(): Double = js.native
   def x(t: Double): Legend = js.native
   def y(): Double = js.native

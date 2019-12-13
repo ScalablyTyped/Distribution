@@ -2,12 +2,25 @@ package typings.dc.dcMod
 
 import typings.d3DashSelection.d3DashSelectionMod.BaseType
 import typings.d3DashSelection.d3DashSelectionMod.Selection
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Utils extends js.Object {
-  def add(l: js.Any, r: js.Any): js.Any
+  def add(l: Double, r: String): Date | Double = js.native
+  def add(l: Double, r: String, t: String): Date | Double = js.native
+  def add(l: Double, r: String, t: js.Function): Date | Double = js.native
+  def add(l: Double, r: Double): Date | Double = js.native
+  def add(l: Double, r: Double, t: String): Date | Double = js.native
+  def add(l: Double, r: Double, t: js.Function): Date | Double = js.native
+  def add(l: Date, r: String): Date | Double = js.native
+  def add(l: Date, r: String, t: String): Date | Double = js.native
+  def add(l: Date, r: String, t: js.Function): Date | Double = js.native
+  def add(l: Date, r: Double): Date | Double = js.native
+  def add(l: Date, r: Double, t: String): Date | Double = js.native
+  def add(l: Date, r: Double, t: js.Function): Date | Double = js.native
   def appendOrSelect(
     parent: Selection[
       _, 
@@ -16,54 +29,38 @@ trait Utils extends js.Object {
       /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     selector: String,
-    tag: js.Any
+    tag: String
   ): Selection[
     _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
     BaseType, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-  ]
-  def clamp(n: Double, min: Double, max: Double): Double
-  def isFloat(n: js.Any): Boolean
-  def isInteger(n: js.Any): Boolean
-  def isNegligible(n: js.Any): Boolean
-  def isNumber(n: js.Any): Boolean
-  def nameToId(name: String): String
-  def printSingleValue(filter: js.Any): String
-  def safeNumber(n: js.Any): Double
-  def subtract(l: js.Any, r: js.Any): js.Any
-  def uniqueId(): Double
-}
-
-object Utils {
-  @scala.inline
-  def apply(
-    add: (js.Any, js.Any) => js.Any,
-    appendOrSelect: (Selection[
-      _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-    ], String, js.Any) => Selection[
-      _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
-    ],
-    clamp: (Double, Double, Double) => Double,
-    isFloat: js.Any => Boolean,
-    isInteger: js.Any => Boolean,
-    isNegligible: js.Any => Boolean,
-    isNumber: js.Any => Boolean,
-    nameToId: String => String,
-    printSingleValue: js.Any => String,
-    safeNumber: js.Any => Double,
-    subtract: (js.Any, js.Any) => js.Any,
-    uniqueId: () => Double
-  ): Utils = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), appendOrSelect = js.Any.fromFunction3(appendOrSelect), clamp = js.Any.fromFunction3(clamp), isFloat = js.Any.fromFunction1(isFloat), isInteger = js.Any.fromFunction1(isInteger), isNegligible = js.Any.fromFunction1(isNegligible), isNumber = js.Any.fromFunction1(isNumber), nameToId = js.Any.fromFunction1(nameToId), printSingleValue = js.Any.fromFunction1(printSingleValue), safeNumber = js.Any.fromFunction1(safeNumber), subtract = js.Any.fromFunction2(subtract), uniqueId = js.Any.fromFunction0(uniqueId))
-  
-    __obj.asInstanceOf[Utils]
-  }
+  ] = js.native
+  def arraysEqual(): Boolean = js.native
+  def arraysEqual(a1: js.Array[_]): Boolean = js.native
+  def arraysEqual(a1: js.Array[_], a2: js.Array[_]): Boolean = js.native
+  def arraysEqual(a1: Null, a2: js.Array[_]): Boolean = js.native
+  def clamp(`val`: Double, min: Double, max: Double): Double = js.native
+  def constant(x: js.Any): js.Function0[_] = js.native
+  def isFloat(n: js.Any): Boolean = js.native
+  def isInteger(n: js.Any): Boolean = js.native
+  def isNegligible(n: js.Any): Boolean = js.native
+  def isNumber(n: js.Any): Boolean = js.native
+  def nameToId(name: String): String = js.native
+  def printSingleValue(filter: js.Any): String = js.native
+  def safeNumber(n: js.Any): Double = js.native
+  def subtract(l: Double, r: String): Date | Double = js.native
+  def subtract(l: Double, r: String, t: String): Date | Double = js.native
+  def subtract(l: Double, r: String, t: js.Function): Date | Double = js.native
+  def subtract(l: Double, r: Double): Date | Double = js.native
+  def subtract(l: Double, r: Double, t: String): Date | Double = js.native
+  def subtract(l: Double, r: Double, t: js.Function): Date | Double = js.native
+  def subtract(l: Date, r: String): Date | Double = js.native
+  def subtract(l: Date, r: String, t: String): Date | Double = js.native
+  def subtract(l: Date, r: String, t: js.Function): Date | Double = js.native
+  def subtract(l: Date, r: Double): Date | Double = js.native
+  def subtract(l: Date, r: Double, t: String): Date | Double = js.native
+  def subtract(l: Date, r: Double, t: js.Function): Date | Double = js.native
+  def uniqueId(): Double = js.native
 }
 

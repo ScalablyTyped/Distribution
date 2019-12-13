@@ -80,7 +80,7 @@ object libMod extends js.Object {
   val FormattedPlural: (ForwardRefExoticComponent[
     (Pick[
       typings.reactDashIntl.libComponentsPluralMod.Props, 
-      children | other | zero | one | two | few | many | `type` | localeMatcher | format | value
+      children | other | zero | one | two | few | many | localeMatcher | `type` | format | value
     ]) with Anon_ForwardedRefInstance with RefAttributes[_]
   ]) with Anon_WrappedComponentComponentType = js.native
   val FormattedTime: FC[DateTimeFormatOptions with CustomFormatConfig with Anon_Value] = js.native

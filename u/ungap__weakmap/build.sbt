@@ -1,0 +1,14 @@
+organization := "org.scalablytyped"
+name := "ungap__weakmap"
+version := "0.1-dt-20191127Z-d7a9d0"
+scalaVersion := "2.12.10"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped" %%% "std" % "3.7-1d724d")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
+        

@@ -1,5 +1,6 @@
 package typings.mapboxDashGl
 
+import typings.mapboxDashGl.mapboxDashGlMod.Alignment
 import typings.mapboxDashGl.mapboxDashGlMod.Anchor
 import typings.mapboxDashGl.mapboxDashGlMod.ExpressionName
 import typings.mapboxDashGl.mapboxDashGlMod.PluginStatus
@@ -113,7 +114,7 @@ object mapboxDashGlStrings {
   sealed trait atan extends ExpressionName
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends Alignment
   
   @js.native
   sealed trait background extends js.Object
@@ -347,7 +348,7 @@ object mapboxDashGlStrings {
   sealed trait lowercase extends js.Object
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map extends Alignment
   
   @js.native
   sealed trait mapbox extends js.Object
@@ -578,7 +579,7 @@ object mapboxDashGlStrings {
   sealed trait video extends js.Object
   
   @js.native
-  sealed trait viewport extends js.Object
+  sealed trait viewport extends Alignment
   
   @js.native
   sealed trait `viewport-y` extends js.Object

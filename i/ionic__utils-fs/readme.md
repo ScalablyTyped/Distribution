@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-fs
 
-Typings are for version 2.0.8
+Typings are for version 2.0.9
 
 ## Library description:
 Filesystem utils for Node

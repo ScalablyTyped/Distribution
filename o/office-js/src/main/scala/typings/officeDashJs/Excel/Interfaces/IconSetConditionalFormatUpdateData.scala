@@ -13,8 +13,6 @@ import typings.officeDashJs.officeDashJsStrings.FourRating
 import typings.officeDashJs.officeDashJsStrings.FourRedToBlack
 import typings.officeDashJs.officeDashJsStrings.FourTrafficLights
 import typings.officeDashJs.officeDashJsStrings.Invalid
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityFinanceIcon
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityMapIcon
 import typings.officeDashJs.officeDashJsStrings.ThreeArrows
 import typings.officeDashJs.officeDashJsStrings.ThreeArrowsGray
 import typings.officeDashJs.officeDashJsStrings.ThreeFlags
@@ -59,7 +57,7 @@ trait IconSetConditionalFormatUpdateData extends js.Object {
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[
-    IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes | LinkedEntityFinanceIcon | LinkedEntityMapIcon
+    IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
   ] = js.undefined
 }
 
@@ -69,7 +67,7 @@ object IconSetConditionalFormatUpdateData {
     criteria: js.Array[ConditionalIconCriterion] = null,
     reverseIconOrder: js.UndefOr[Boolean] = js.undefined,
     showIconOnly: js.UndefOr[Boolean] = js.undefined,
-    style: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes | LinkedEntityFinanceIcon | LinkedEntityMapIcon = null
+    style: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes = null
   ): IconSetConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
     if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])

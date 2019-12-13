@@ -1,9 +1,10 @@
 package typings.atIonicReact
 
-import org.scalablytyped.runtime.Instantiable1
+import typings.atIonicCore.distTypesComponentsMod._Global_.HTMLIonToastElement
 import typings.atIonicCore.distTypesComponentsToastToastDashInterfaceMod.ToastOptions
 import typings.atIonicReact.distTypesComponentsCreateControllerComponentMod.ReactControllerProps
-import typings.react.reactMod.Context
+import typings.react.reactMod.ForwardRefExoticComponent
+import typings.react.reactMod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,19 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/react/dist/types/components/IonToast", JSImport.Namespace)
 @js.native
 object distTypesComponentsIonToastMod extends js.Object {
-  @js.native
-  class IonToast protected () extends Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext {
-    def this(props: ToastOptions with ReactControllerProps) = this()
-  }
-  
-  @js.native
-  object IonToast extends Instantiable1[
-          /* props */ ToastOptions with ReactControllerProps, 
-          Anon_CallbackComponentDidMountComponentDidUpdateComponentWillUnmountContext
-        ] {
-    var contextType: js.UndefOr[Context[_]] = js.native
-    val displayName: String = js.native
-  }
-  
+  val IonToast: ForwardRefExoticComponent[
+    ToastOptions with ReactControllerProps with Anon_ForwardedRefHTMLIonToastElement with RefAttributes[HTMLIonToastElement]
+  ] = js.native
 }
 

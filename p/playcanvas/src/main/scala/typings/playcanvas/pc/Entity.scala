@@ -164,7 +164,7 @@ class Entity () extends GraphNode {
     *   <li>"sound" - see {@link pc.SoundComponent}</li>
     *   <li>"sprite" - see {@link pc.SpriteComponent}</li>
     * </ul>
-    * @param {Object} data The initialization data for the specific component type. Refer to each
+    * @param {Object} [data] The initialization data for the specific component type. Refer to each
     * specific component's API reference page for details on valid values for this parameter.
     * @returns {pc.Component} The new Component that was attached to the entity or null if there
     * was an error.
@@ -176,6 +176,7 @@ class Entity () extends GraphNode {
     *   clearColor: new pc.Color(1,0,0),
     * });
     */
+  def addComponent(`type`: String): Component = js.native
   def addComponent(`type`: String, data: js.Any): Component = js.native
   /**
     * @function

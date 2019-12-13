@@ -1,7 +1,6 @@
 package typings.rcDashTable
 
 import typings.react.reactMod.ComponentType
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,13 +21,13 @@ object rcDashTableComponents extends rcDashTableProps {
   @scala.inline
   def Lib[ValueType]: ComponentType[LibProps[ValueType]] = js.constructorOf[typings.rcDashTable.libMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[LibProps[ValueType]]]
   @scala.inline
-  def LibColumn: ComponentType[LibColumnProps[Record[String, js.Any]]] = typings.rcDashTable.libMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[LibColumnProps[typings.std.Record[java.lang.String, js.Any]]]]
+  def LibColumn: ComponentType[LibColumnProps] = typings.rcDashTable.libMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[LibColumnProps]]
   @scala.inline
   def Table[ValueType]: ComponentType[TableProps[ValueType]] = js.constructorOf[typings.rcDashTable.libTableMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[TableProps[ValueType]]]
   @scala.inline
   def TableCell[ValueType]: ComponentType[TableCellProps[ValueType]] = js.constructorOf[typings.rcDashTable.libTableCellMod.default[ValueType]].asInstanceOf[typings.react.reactMod.ComponentType[TableCellProps[ValueType]]]
   @scala.inline
-  def TableColumn: ComponentType[TableColumnProps[Record[String, js.Any]]] = typings.rcDashTable.libTableMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[TableColumnProps[typings.std.Record[java.lang.String, js.Any]]]]
+  def TableColumn: ComponentType[TableColumnProps] = typings.rcDashTable.libTableMod.default.Column.asInstanceOf[typings.react.reactMod.ComponentType[TableColumnProps]]
   @scala.inline
   def TableHeader: ComponentType[TableHeaderProps] = typings.rcDashTable.libTableHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TableHeaderProps]]
 }

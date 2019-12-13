@@ -1,12 +1,11 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsNumbers.`7`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("PWR_OPERATE_OBSERVER")
 @js.native
-object PWR_OPERATE_OBSERVER extends TopLevel[`7`]
+object PWR_OPERATE_OBSERVER extends TopLevel[PWR_OPERATE_OBSERVER]
 

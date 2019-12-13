@@ -1,5 +1,8 @@
 package typings.reactDashSound.reactDashSoundMod
 
+import typings.reactDashSound.reactDashSoundStrings.PAUSED
+import typings.reactDashSound.reactDashSoundStrings.PLAYING
+import typings.reactDashSound.reactDashSoundStrings.STOPPED
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +20,7 @@ trait ReactSoundProps extends js.Object {
   var onResume: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   var playFromPosition: js.UndefOr[Double] = js.undefined
-  var playStatus: PlayStatus
+  var playStatus: PLAYING | STOPPED | PAUSED
   var playbackRate: js.UndefOr[Double] = js.undefined
   var position: js.UndefOr[Double] = js.undefined
   var url: String
@@ -27,7 +30,7 @@ trait ReactSoundProps extends js.Object {
 object ReactSoundProps {
   @scala.inline
   def apply(
-    playStatus: PlayStatus,
+    playStatus: PLAYING | STOPPED | PAUSED,
     url: String,
     autoLoad: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,

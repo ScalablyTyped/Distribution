@@ -27,7 +27,7 @@ object FormattedPlural extends TopLevel[
       (ForwardRefExoticComponent[
         (Pick[
           Props_2, 
-          children | other | zero | one | two | few | many | `type` | localeMatcher | format | value
+          children | other | zero | one | two | few | many | localeMatcher | `type` | format | value
         ]) with Anon_ForwardedRefInstance with RefAttributes[_]
       ]) with Anon_WrappedComponentComponentTypeProps2
     ]

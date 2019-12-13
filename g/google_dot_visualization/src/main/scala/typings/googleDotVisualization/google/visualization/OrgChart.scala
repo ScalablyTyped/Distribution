@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.visualization.OrgChart")
 @js.native
-class OrgChart () extends CoreChartBase {
+class OrgChart () extends ChartBase {
   def collapse(row: Double, collapsed: Boolean): Unit = js.native
   def draw(data: DataTable, options: OrgChartOptions): Unit = js.native
   def draw(data: DataView, options: OrgChartOptions): Unit = js.native

@@ -81,7 +81,7 @@ trait IScreenOptions extends INodeOptions {
   /**
     * Whether the focused element grabs all keypresses.
     */
-  var grabKeys: js.UndefOr[js.Any] = js.undefined
+  var grabKeys: js.UndefOr[Boolean] = js.undefined
   /**
     * Height of the screen (same as program.rows).
     */
@@ -205,7 +205,7 @@ object IScreenOptions {
     focused: BlessedElement = null,
     forceUnicode: js.UndefOr[Boolean] = js.undefined,
     fullUnicode: js.UndefOr[Boolean] = js.undefined,
-    grabKeys: js.Any = null,
+    grabKeys: js.UndefOr[Boolean] = js.undefined,
     height: TPosition = null,
     hover: js.Any = null,
     ignoreDockContrast: js.UndefOr[Boolean] = js.undefined,
@@ -251,7 +251,7 @@ object IScreenOptions {
     if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (!js.isUndefined(forceUnicode)) __obj.updateDynamic("forceUnicode")(forceUnicode.asInstanceOf[js.Any])
     if (!js.isUndefined(fullUnicode)) __obj.updateDynamic("fullUnicode")(fullUnicode.asInstanceOf[js.Any])
-    if (grabKeys != null) __obj.updateDynamic("grabKeys")(grabKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(grabKeys)) __obj.updateDynamic("grabKeys")(grabKeys.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreDockContrast)) __obj.updateDynamic("ignoreDockContrast")(ignoreDockContrast.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "baconjs" : "3.0.11"
+      "baconjs" : "3.0.12"
     }
   ],
   "test-dependencies" : [
     {
-      "baconjs" : "3.0.11"
+      "baconjs" : "3.0.12"
     }
   ],
   "compile-devDependencies" : [

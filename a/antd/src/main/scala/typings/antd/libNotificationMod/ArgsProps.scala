@@ -11,6 +11,7 @@ trait ArgsProps extends js.Object {
   var bottom: js.UndefOr[Double] = js.undefined
   var btn: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var closeIcon: js.UndefOr[ReactNode] = js.undefined
   var description: js.UndefOr[ReactNode] = js.undefined
   var duration: js.UndefOr[Double | Null] = js.undefined
   var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
@@ -32,6 +33,7 @@ object ArgsProps {
     bottom: Int | Double = null,
     btn: ReactNode = null,
     className: String = null,
+    closeIcon: ReactNode = null,
     description: ReactNode = null,
     duration: Int | Double = null,
     getContainer: () => HTMLElement = null,
@@ -50,6 +52,7 @@ object ArgsProps {
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (btn != null) __obj.updateDynamic("btn")(btn.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(js.Any.fromFunction0(getContainer))

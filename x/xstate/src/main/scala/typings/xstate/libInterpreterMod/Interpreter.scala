@@ -2,43 +2,58 @@ package typings.xstate.libInterpreterMod
 
 import typings.std.Map
 import typings.std.Partial
-import typings.std.Record
 import typings.xstate.Anon_AutoForward
-import typings.xstate.Anon_Type
 import typings.xstate.Fn_Machine
 import typings.xstate.libActorMod.Actor
 import typings.xstate.libStateMod.State
 import typings.xstate.libTypesMod.ActionFunctionMap
+import typings.xstate.libTypesMod.AnyEventObject
 import typings.xstate.libTypesMod.DoneEvent
 import typings.xstate.libTypesMod.Event
+import typings.xstate.libTypesMod.EventData
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.InterpreterOptions
-import typings.xstate.libTypesMod.OmniEvent
-import typings.xstate.libTypesMod.OmniEventObject
-import typings.xstate.libTypesMod.SingleOrArray
+import typings.xstate.libTypesMod.Observer
+import typings.xstate.libTypesMod.Spawnable
 import typings.xstate.libTypesMod.StateMachine
 import typings.xstate.libTypesMod.StateSchema
 import typings.xstate.libTypesMod.StateValue
 import typings.xstate.libTypesMod.StateValueMap
+import typings.xstate.libTypesMod.Typestate
+import typings.xstate.libTypesMod.Unsubscribable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("xstate/lib/interpreter", "Interpreter")
 @js.native
-class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] protected () extends Actor[State[TContext, TEvent], OmniEventObject[TEvent]] {
+class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] protected ()
+  extends Actor[State[TContext, TEvent, js.Any, js.Any], TEvent] {
   /**
     * Creates a new Interpreter instance (i.e., service) for the given machine with the provided options, if any.
     *
     * @param machine The machine to be interpreted
     * @param options Interpreter options
     */
-  def this(machine: StateMachine[TContext, TStateSchema, TEvent]) = this()
-  def this(machine: StateMachine[TContext, TStateSchema, TEvent], options: Partial[InterpreterOptions]) = this()
+  def this(machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]]) = this()
+  def this(
+    machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]],
+    options: Partial[InterpreterOptions]
+  ) = this()
+  def this(
+    machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]],
+    options: Partial[InterpreterOptions],
+    sessionId: String
+  ) = this()
+  /**
+    * The current state of the interpreted machine.
+    */
+  var _state: js.UndefOr[js.Any] = js.native
+  var _status: js.Any = js.native
   var attachDev: js.Any = js.native
   var batch: js.Any = js.native
   var cancel: js.Any = js.native
-  var children: Map[String | Double, Actor[_, EventObject]] = js.native
+  var children: Map[String | Double, Actor[_, AnyEventObject]] = js.native
   /**
     * The clock that is responsible for setting and clearing timeouts, such as delayed events and transitions.
     */
@@ -53,30 +68,27 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
   var forward: js.Any = js.native
   var forwardTo: js.Any = js.native
   /**
-    * The initial state of the machine.
-    */
-  var initialState: State[TContext, TEvent] = js.native
-  /**
     * Whether the service is started.
     */
   var initialized: Boolean = js.native
   var listeners: js.Any = js.native
   var logger: js.Any = js.native
-  var machine: StateMachine[TContext, TStateSchema, TEvent] = js.native
+  var machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]] = js.native
   var options: InterpreterOptions = js.native
   var parent: js.UndefOr[Interpreter[_, _, EventObject]] = js.native
-  var reportUnhandledExceptionOnInvocation: js.Any = js.native
   var scheduler: js.Any = js.native
   var sendListeners: js.Any = js.native
+  var sendTo: js.Any = js.native
+  /**
+    * The globally unique process ID for this invocation.
+    */
+  var sessionId: String = js.native
   var spawnActivity: js.Any = js.native
+  var spawnActor: js.Any = js.native
   var spawnCallback: js.Any = js.native
   var spawnEffect: js.Any = js.native
   var spawnObservable: js.Any = js.native
   var spawnPromise: js.Any = js.native
-  /**
-    * The current state of the interpreted machine.
-    */
-  var state: State[TContext, TEvent] = js.native
   var stopChild: js.Any = js.native
   var stopListeners: js.Any = js.native
   var update: js.Any = js.native
@@ -86,15 +98,16 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
     * @param state The state whose actions will be executed
     * @param actionsConfig The action implementations to use
     */
-  def execute(state: State[TContext, TEvent]): Unit = js.native
-  def execute(state: State[TContext, TEvent], actionsConfig: ActionFunctionMap[TContext, TEvent]): Unit = js.native
+  def execute(state: State[TContext, TEvent, _, _]): Unit = js.native
+  def execute(state: State[TContext, TEvent, _, _], actionsConfig: ActionFunctionMap[TContext, TEvent]): Unit = js.native
   /**
     * Alias for Interpreter.prototype.start
     */
   def init(): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def init(initialState: String): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  def init(initialState: State[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def init(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def init(initialState: StateValueMap): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def initialState(): State[TContext, TEvent, _, _] = js.native
   /**
     * Returns the next state given the interpreter's current state and the event.
     *
@@ -102,7 +115,8 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
     *
     * @param event The event to determine the next state
     */
-  def nextState(event: OmniEvent[TEvent]): State[TContext, TEvent] = js.native
+  def nextState(event: Event[TEvent]): State[TContext, TEvent, _, _] = js.native
+  def nextState(event: typings.xstate.libTypesMod.SCXML.Event[TEvent]): State[TContext, TEvent, _, _] = js.native
   /**
     * Removes a listener.
     * @param listener The listener to remove
@@ -134,27 +148,42 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
     */
   def onStop(listener: Listener): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def onTransition(listener: StateListener[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  def send(event: SingleOrArray[OmniEvent[TEvent]], payload: (Record[String, _]) with Anon_Type): State[TContext, TEvent] = js.native
-  def sendTo(event: OmniEventObject[TEvent], to: String): Unit = js.native
-  def sendTo(event: OmniEventObject[TEvent], to: Double): Unit = js.native
-  def sendTo(event: OmniEventObject[TEvent], to: Actor[_, EventObject]): Unit = js.native
+  def send(event: TEvent, payload: EventData): State[TContext, TEvent, _, _] = js.native
+  def send(event: js.Array[Event[TEvent]]): State[TContext, TEvent, _, _] = js.native
+  def send(event: js.Array[Event[TEvent]], payload: EventData): State[TContext, TEvent, _, _] = js.native
+  def send(event: typings.xstate.libTypesMod.SCXML.Event[TEvent]): State[TContext, TEvent, _, _] = js.native
+  def send(event: typings.xstate.libTypesMod.SCXML.Event[TEvent], payload: EventData): State[TContext, TEvent, _, _] = js.native
+  @JSName("send")
+  def send_type(
+    event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
+  ): State[TContext, TEvent, _, _] = js.native
+  @JSName("send")
+  def send_type(
+    event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
+    payload: EventData
+  ): State[TContext, TEvent, _, _] = js.native
   /**
     * Returns a send function bound to this interpreter instance.
     *
     * @param event The event to be sent by the sender.
     */
-  def sender(event: Event[TEvent]): js.Function0[State[TContext, TEvent]] = js.native
-  def spawn[TChildContext](entity: Spawnable[TChildContext], name: String): Actor[_, EventObject] = js.native
-  def spawn[TChildContext](entity: Spawnable[TChildContext], name: String, options: SpawnOptions): Actor[_, EventObject] = js.native
-  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: EventObject */](machine: StateMachine[TChildContext, TChildStateSchema, TChildEvents]): Actor[State[TChildContext, TChildEvents], EventObject] = js.native
-  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: EventObject */](machine: StateMachine[TChildContext, TChildStateSchema, TChildEvents], options: Anon_AutoForward): Actor[State[TChildContext, TChildEvents], EventObject] = js.native
+  def sender(event: Event[TEvent]): js.Function0[State[TContext, TEvent, _, _]] = js.native
+  def spawn(entity: Spawnable, name: String): Actor[_, AnyEventObject] = js.native
+  def spawn(entity: Spawnable, name: String, options: SpawnOptions): Actor[_, AnyEventObject] = js.native
+  def spawnMachine[TChildContext, TChildStateSchema, TChildEvent /* <: EventObject */](machine: StateMachine[TChildContext, TChildStateSchema, TChildEvent, Typestate[TChildContext]]): Interpreter[TChildContext, TChildStateSchema, TChildEvent] = js.native
+  def spawnMachine[TChildContext, TChildStateSchema, TChildEvent /* <: EventObject */](
+    machine: StateMachine[TChildContext, TChildStateSchema, TChildEvent, Typestate[TChildContext]],
+    options: Anon_AutoForward
+  ): Interpreter[TChildContext, TChildStateSchema, TChildEvent] = js.native
   /**
     * Starts the interpreter from the given state, or the initial state.
     * @param initialState The state to start the statechart from
     */
   def start(): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  def start(initialState: State[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def start(initialState: State[TContext, TEvent, _, _]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def start(initialState: StateValue): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  @JSName("state")
+  def state_MInterpreter(): State[TContext, TEvent, _, _] = js.native
   /**
     * Stops the interpreter and unsubscribe all listeners.
     *
@@ -162,6 +191,7 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: Even
     */
   @JSName("stop")
   def stop_MInterpreter(): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def subscribe(observer: Observer[State[TContext, TEvent, _, _]]): Unsubscribable = js.native
 }
 
 /* static members */
@@ -177,7 +207,10 @@ object Interpreter extends js.Object {
   var defaultOptions: InterpreterOptions = js.native
   @JSName("interpret")
   var interpret_Original: Fn_Machine = js.native
-  def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  def interpret[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent], options: Partial[InterpreterOptions]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]]): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def interpret[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+    machine: StateMachine[TContext, TStateSchema, TEvent, Typestate[TContext]],
+    options: Partial[InterpreterOptions]
+  ): Interpreter[TContext, TStateSchema, TEvent] = js.native
 }
 

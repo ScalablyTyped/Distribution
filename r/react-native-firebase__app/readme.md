@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-firebase__app
 
-Typings are for version 6.1.0
+Typings are for version 6.2.0
 
 ## Library description:
 A well tested, feature rich Firebase implementation for React Native, supporting iOS & Android. Individual module support for Admob, Analytics, Auth, Crash Reporting, Cloud Firestore, Database, Dynamic Links, Functions, Messaging (FCM), Remote Config, Sto

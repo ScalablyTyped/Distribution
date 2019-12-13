@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion__styled-base"
-version := "10.0.19-31c96d"
+version := "10.0.19-d9e0a9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__serialize" % "0.11.11-f6e8da",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.2-602d68",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

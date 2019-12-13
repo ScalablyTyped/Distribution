@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait ConstructorProps extends js.Object {
   var delta: js.UndefOr[Double | `10`] = js.undefined
-  var element: HTMLElement | Null
+  var element: js.UndefOr[HTMLElement | Null] = js.undefined
   var mouseTrackingEnabled: js.UndefOr[Boolean] = js.undefined
   var onSwiped: js.UndefOr[EventHandler] = js.undefined
   var onSwiping: js.UndefOr[EventHandler] = js.undefined

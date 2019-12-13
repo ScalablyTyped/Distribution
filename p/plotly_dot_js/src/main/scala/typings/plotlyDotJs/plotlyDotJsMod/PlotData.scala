@@ -67,7 +67,9 @@ import typings.plotlyDotJs.plotlyDotJsStrings.best
 import typings.plotlyDotJs.plotlyDotJsStrings.box
 import typings.plotlyDotJs.plotlyDotJsStrings.candlestick
 import typings.plotlyDotJs.plotlyDotJsStrings.choropleth
+import typings.plotlyDotJs.plotlyDotJsStrings.clockwise
 import typings.plotlyDotJs.plotlyDotJsStrings.contour
+import typings.plotlyDotJs.plotlyDotJsStrings.counterclockwise
 import typings.plotlyDotJs.plotlyDotJsStrings.delta
 import typings.plotlyDotJs.plotlyDotJsStrings.diameter
 import typings.plotlyDotJs.plotlyDotJsStrings.fast
@@ -134,6 +136,7 @@ trait PlotData extends js.Object {
   var connectgaps: Boolean
   var customdata: js.Array[Datum]
   var delta: Anon_Bottom
+  var direction: clockwise | counterclockwise
   var error_x: ErrorBar
   var error_y: ErrorBar
   var fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext
@@ -154,9 +157,11 @@ trait PlotData extends js.Object {
   var `line.smoothing`: Double
   var `line.width`: Double
   var marker: Partial[PlotMarker]
-   // Drawing.symbolList
   var `marker.color`: Color
+  var `marker.colorscale`: ColorScale | js.Array[ColorScale]
   var `marker.line`: Partial[ScatterMarkerLine]
+  var `marker.line.color`: Color
+  var `marker.line.colorscale`: ColorScale | js.Array[ColorScale]
   var `marker.maxdisplayed`: Double
   var `marker.opacity`: Double | js.Array[Double]
   var `marker.pad.b`: Double
@@ -165,12 +170,12 @@ trait PlotData extends js.Object {
    // TODO
   var `marker.pad.t`: Double
   var `marker.showscale`: Boolean
-  var `marker.size`: Double | js.Array[Double]
+  var `marker.size`: Double | (js.Array[js.Array[Double] | Double])
   var `marker.sizemax`: Double
   var `marker.sizemin`: Double
   var `marker.sizemode`: diameter | area
   var `marker.sizeref`: Double
-  var `marker.symbol`: String | js.Array[String]
+  var `marker.symbol`: MarkerSymbol | js.Array[MarkerSymbol]
   var mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`
   var name: String
   var number: Anon_Font
@@ -211,6 +216,7 @@ object PlotData {
     connectgaps: Boolean,
     customdata: js.Array[Datum],
     delta: Anon_Bottom,
+    direction: clockwise | counterclockwise,
     error_x: ErrorBar,
     error_y: ErrorBar,
     fill: none | tozeroy | tozerox | tonexty | tonextx | toself | tonext,
@@ -232,7 +238,10 @@ object PlotData {
     `line.width`: Double,
     marker: Partial[PlotMarker],
     `marker.color`: Color,
+    `marker.colorscale`: ColorScale | js.Array[ColorScale],
     `marker.line`: Partial[ScatterMarkerLine],
+    `marker.line.color`: Color,
+    `marker.line.colorscale`: ColorScale | js.Array[ColorScale],
     `marker.maxdisplayed`: Double,
     `marker.opacity`: Double | js.Array[Double],
     `marker.pad.b`: Double,
@@ -240,12 +249,12 @@ object PlotData {
     `marker.pad.r`: Double,
     `marker.pad.t`: Double,
     `marker.showscale`: Boolean,
-    `marker.size`: Double | js.Array[Double],
+    `marker.size`: Double | (js.Array[js.Array[Double] | Double]),
     `marker.sizemax`: Double,
     `marker.sizemin`: Double,
     `marker.sizemode`: diameter | area,
     `marker.sizeref`: Double,
-    `marker.symbol`: String | js.Array[String],
+    `marker.symbol`: MarkerSymbol | js.Array[MarkerSymbol],
     mode: lines | markers | text | `lines+markers` | `text+markers` | `text+lines` | `text+lines+markers` | none | gauge | number | delta | `number+delta` | `gauge+number` | `gauge+number+delta` | `gauge+delta`,
     name: String,
     number: Anon_Font,
@@ -276,7 +285,7 @@ object PlotData {
     z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: fast | best | `false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx.asInstanceOf[js.Any], boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps.asInstanceOf[js.Any], customdata = customdata.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], error_x = error_x.asInstanceOf[js.Any], error_y = error_y.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor.asInstanceOf[js.Any], gauge = gauge.asInstanceOf[js.Any], hole = hole.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], legendgroup = legendgroup.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], stackgroup = stackgroup.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], transforms = transforms.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xbins = xbins.asInstanceOf[js.Any], xgap = xgap.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], ygap = ygap.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])
@@ -284,7 +293,10 @@ object PlotData {
     __obj.updateDynamic("line.smoothing")(`line.smoothing`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.width")(`line.width`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.color")(`marker.color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.colorscale")(`marker.colorscale`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.line")(`marker.line`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line.color")(`marker.line.color`.asInstanceOf[js.Any])
+    __obj.updateDynamic("marker.line.colorscale")(`marker.line.colorscale`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.maxdisplayed")(`marker.maxdisplayed`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.opacity")(`marker.opacity`.asInstanceOf[js.Any])
     __obj.updateDynamic("marker.pad.b")(`marker.pad.b`.asInstanceOf[js.Any])

@@ -48,6 +48,9 @@ trait victoryProps {
   def VictoryPieProps: typings.victory.victoryMod.VictoryPieProps.type = typings.victory.victoryMod.VictoryPieProps
   type VictoryPieProps = typings.victory.victoryMod.VictoryPieProps
   @scala.inline
+  def VictoryPortalProps: typings.victory.victoryMod.VictoryPortalProps.type = typings.victory.victoryMod.VictoryPortalProps
+  type VictoryPortalProps = typings.victory.victoryMod.VictoryPortalProps
+  @scala.inline
   def VictoryScatterProps: typings.victory.victoryMod.VictoryScatterProps.type = typings.victory.victoryMod.VictoryScatterProps
   type VictoryScatterProps = typings.victory.victoryMod.VictoryScatterProps
   @scala.inline

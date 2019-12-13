@@ -17,6 +17,7 @@ trait IsocontourTransform extends _Transforms {
   var scale: js.UndefOr[Double | TransformField] = js.undefined
   var smooth: js.UndefOr[Boolean | SignalRef] = js.undefined
   var thresholds: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
+  var translate: js.UndefOr[js.Array[Double] | TransformField] = js.undefined
   var `type`: isocontour
   var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
 }
@@ -33,6 +34,7 @@ object IsocontourTransform {
     scale: Double | TransformField = null,
     smooth: Boolean | SignalRef = null,
     thresholds: (js.Array[Double | SignalRef]) | SignalRef = null,
+    translate: js.Array[Double] | TransformField = null,
     zero: Boolean | SignalRef = null
   ): IsocontourTransform = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +47,7 @@ object IsocontourTransform {
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsocontourTransform]
   }

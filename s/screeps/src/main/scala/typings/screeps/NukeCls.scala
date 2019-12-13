@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Nuke")
 @js.native
 class NukeCls protected () extends Nuke {
-  def this(id: String) = this()
+  def this(id: Id[Nuke]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -17,7 +17,7 @@ class NukeCls protected () extends Nuke {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * The name of the room where this nuke has been launched from.
     */

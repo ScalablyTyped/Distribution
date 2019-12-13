@@ -913,10 +913,16 @@ object atIonicReactStrings {
   sealed trait placeholder extends js.Object
   
   @js.native
+  sealed trait pop extends js.Object
+  
+  @js.native
   sealed trait prefix extends js.Object
   
   @js.native
   sealed trait property extends js.Object
+  
+  @js.native
+  sealed trait push extends js.Object
   
   @js.native
   sealed trait pwa extends js.Object
@@ -931,6 +937,9 @@ object atIonicReactStrings {
   sealed trait rel extends js.Object
   
   @js.native
+  sealed trait replace extends js.Object
+  
+  @js.native
   sealed trait resource extends js.Object
   
   @js.native
@@ -938,6 +947,9 @@ object atIonicReactStrings {
   
   @js.native
   sealed trait role extends js.Object
+  
+  @js.native
+  sealed trait root extends RouterDirection
   
   @js.native
   sealed trait routerDirection extends js.Object
@@ -1001,6 +1013,9 @@ object atIonicReactStrings {
   
   @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait translate extends js.Object
   
   @js.native
   sealed trait translucent extends js.Object
@@ -1622,9 +1637,13 @@ object atIonicReactStrings {
   @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   @scala.inline
+  def pop: pop = "pop".asInstanceOf[pop]
+  @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   @scala.inline
   def property: property = "property".asInstanceOf[property]
+  @scala.inline
+  def push: push = "push".asInstanceOf[push]
   @scala.inline
   def pwa: pwa = "pwa".asInstanceOf[pwa]
   @scala.inline
@@ -1634,11 +1653,15 @@ object atIonicReactStrings {
   @scala.inline
   def rel: rel = "rel".asInstanceOf[rel]
   @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def resource: resource = "resource".asInstanceOf[resource]
   @scala.inline
   def results: results = "results".asInstanceOf[results]
   @scala.inline
   def role: role = "role".asInstanceOf[role]
+  @scala.inline
+  def root: root = "root".asInstanceOf[root]
   @scala.inline
   def routerDirection: routerDirection = "routerDirection".asInstanceOf[routerDirection]
   @scala.inline
@@ -1681,6 +1704,8 @@ object atIonicReactStrings {
   def title: title = "title".asInstanceOf[title]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def translate: translate = "translate".asInstanceOf[translate]
   @scala.inline
   def translucent: translucent = "translucent".asInstanceOf[translucent]
   @scala.inline

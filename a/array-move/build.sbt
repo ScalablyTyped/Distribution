@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array-move"
-version := "2.2.0-996d87"
+version := "2.2.1-f60055"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

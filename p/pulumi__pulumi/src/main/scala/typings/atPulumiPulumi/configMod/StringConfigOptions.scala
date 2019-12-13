@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * StringConfigOptions may be used to constrain the set of legal values a string config value may contain.
-  */
 trait StringConfigOptions[K /* <: String */] extends js.Object {
   /**
     * The legal enum values. If it does not match, a ConfigEnumError is thrown.

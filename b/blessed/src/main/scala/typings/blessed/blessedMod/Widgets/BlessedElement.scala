@@ -134,7 +134,7 @@ abstract class BlessedElement protected () extends NodeWithEvents {
     */
   def enableDrag(): Unit = js.native
   /**
-    * Enable key and mouse events. Calls bot enableMouse and enableKeys.
+    * Enable key and mouse events. Calls both `enableMouse()` and `enableKeys()`.
     */
   def enableInput(): Unit = js.native
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for neffos_dot_js
 
-Typings are for version 0.1.22
+Typings are for version 0.1.25
 
 ## Library description:
 javascript client for the modern neffos websocket framework

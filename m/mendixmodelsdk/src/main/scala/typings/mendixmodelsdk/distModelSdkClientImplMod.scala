@@ -96,16 +96,11 @@ object distModelSdkClientImplMod extends js.Object {
       callback: IVoidCallback,
       errorCallback: IErrorCallback
     ): Unit = js.native
-    def exportMpk(workingCopyId: String, outFilePath: String): js.Promise[Double] = js.native
+    def exportMpk(workingCopyId: String, outFilePath: String): js.Promise[Unit] = js.native
     /**
       * Exports this working copy as MPK.
       */
-    def exportMpk(
-      workingCopyId: String,
-      outFilePath: String,
-      callback: ICallback[Double],
-      errorCallback: IErrorCallback
-    ): Unit = js.native
+    def exportMpk(workingCopyId: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     def getAppEnvironmentStatus(workingCopyId: String): js.Promise[IEnvironmentStatus] = js.native
     def getAppEnvironmentStatus(workingCopyId: String, callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
     def getAppEnvironmentStatusV2(workingCopyId: String): js.Promise[IEnvironmentStatus] = js.native

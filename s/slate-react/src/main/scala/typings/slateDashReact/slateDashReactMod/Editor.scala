@@ -109,7 +109,7 @@ import scala.scalajs.js.annotation._
 @JSImport("slate-react", "Editor")
 @js.native
 class Editor ()
-  extends Component[EditorProps, EditorState, js.Any]
+  extends Component[EditorProps[Editor], EditorState, js.Any]
      with Controller {
   // Controller
   var addAnnotation: Fn_Annotation = js.native
@@ -447,7 +447,7 @@ class Editor ()
   @JSName("normalize")
   var normalize_FEditor: Fn_Controller = js.native
   val operations: List[Operation] = js.native
-  val plugins: js.Array[Plugin] = js.native
+  val plugins: js.Array[Plugin[Editor]] = js.native
   var query: Fn_ArgsQuery = js.native
   val readOnly: Boolean = js.native
   @JSName("redo")
@@ -550,6 +550,11 @@ class Editor ()
   def findRange(domRange: Selection): typings.slate.slateMod.Range | Null = js.native
   def findSelection(domSelection: Selection): typings.slate.slateMod.Selection | Null = js.native
   // Instance methods
-  def resolveController(plugins: js.Array[Plugin], schema: SchemaProperties, commands: js.Array[_], queries: js.Array[_]): Unit = js.native
+  def resolveController(
+    plugins: js.Array[Plugin[Editor]],
+    schema: SchemaProperties,
+    commands: js.Array[_],
+    queries: js.Array[_]
+  ): Unit = js.native
 }
 

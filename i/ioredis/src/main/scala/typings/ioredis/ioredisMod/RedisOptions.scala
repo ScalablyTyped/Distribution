@@ -3,7 +3,6 @@ package typings.ioredis.ioredisMod
 import typings.ioredis.Anon_Host
 import typings.ioredis.ioredisNumbers.`1`
 import typings.ioredis.ioredisNumbers.`2`
-import typings.ioredis.ioredisNumbers.`false`
 import typings.ioredis.ioredisStrings.master
 import typings.ioredis.ioredisStrings.slave
 import typings.node.tlsMod.ConnectionOptions
@@ -116,7 +115,7 @@ trait RedisOptions extends js.Object {
     * When the return value isn't a number, ioredis will stop trying to reconnect.
     * Fixed in: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/15858
     */
-  var retryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double | `false`]] = js.undefined
+  var retryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double | Unit | Null]] = js.undefined
   /**
     * default: "master".
     */
@@ -126,7 +125,7 @@ trait RedisOptions extends js.Object {
     * If `sentinelRetryStrategy` returns a valid delay time, ioredis will try to reconnect from scratch.
     * default: function(times) { return Math.min(times * 10, 1000); }
     */
-  var sentinelRetryStrategy: js.UndefOr[js.Function1[/* retryAttempts */ Double, Double]] = js.undefined
+  var sentinelRetryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double | Unit | Null]] = js.undefined
   var sentinelTLS: js.UndefOr[SecureContextOptions] = js.undefined
   var sentinels: js.UndefOr[js.Array[Anon_Host]] = js.undefined
   /**
@@ -167,10 +166,10 @@ object RedisOptions {
     preferredSlaves: PreferredSlaves = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     reconnectOnError: /* error */ Error => Boolean | `1` | `2` = null,
-    retryStrategy: /* times */ Double => Double | `false` = null,
+    retryStrategy: /* times */ Double => Double | Unit | Null = null,
     role: master | slave = null,
     sentinelPassword: String = null,
-    sentinelRetryStrategy: /* retryAttempts */ Double => Double = null,
+    sentinelRetryStrategy: /* times */ Double => Double | Unit | Null = null,
     sentinelTLS: SecureContextOptions = null,
     sentinels: js.Array[Anon_Host] = null,
     showFriendlyErrorStack: js.UndefOr[Boolean] = js.undefined,

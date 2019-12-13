@@ -1,7 +1,7 @@
 
 # Scala.js typings for mssql
 
-Typings are for version 4.3.0
+Typings are for version 6.0.0
 
 ## Library description:
 Microsoft SQL Server client for Node.js.

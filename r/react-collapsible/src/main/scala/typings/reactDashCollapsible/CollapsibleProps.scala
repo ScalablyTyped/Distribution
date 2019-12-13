@@ -19,6 +19,7 @@ trait CollapsibleProps
      with ClassAttributes[Collapsible] {
   var accordionPosition: js.UndefOr[String | Double] = js.undefined
   var classParentString: js.UndefOr[String] = js.undefined
+  var contentContainerTagName: js.UndefOr[String] = js.undefined
   var contentInnerClassName: js.UndefOr[String] = js.undefined
   var contentOuterClassName: js.UndefOr[String] = js.undefined
   var easing: js.UndefOr[String] = js.undefined
@@ -50,6 +51,7 @@ object CollapsibleProps {
     ClassAttributes: ClassAttributes[Collapsible] = null,
     accordionPosition: String | Double = null,
     classParentString: String = null,
+    contentContainerTagName: String = null,
     contentInnerClassName: String = null,
     contentOuterClassName: String = null,
     easing: String = null,
@@ -76,6 +78,7 @@ object CollapsibleProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (accordionPosition != null) __obj.updateDynamic("accordionPosition")(accordionPosition.asInstanceOf[js.Any])
     if (classParentString != null) __obj.updateDynamic("classParentString")(classParentString.asInstanceOf[js.Any])
+    if (contentContainerTagName != null) __obj.updateDynamic("contentContainerTagName")(contentContainerTagName.asInstanceOf[js.Any])
     if (contentInnerClassName != null) __obj.updateDynamic("contentInnerClassName")(contentInnerClassName.asInstanceOf[js.Any])
     if (contentOuterClassName != null) __obj.updateDynamic("contentOuterClassName")(contentOuterClassName.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])

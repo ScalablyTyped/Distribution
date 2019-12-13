@@ -1,5 +1,6 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Object
 import typings.parse.Parse.Query
 import typings.parse.Parse.User
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait BeforeFindRequest extends TriggerRequest {
   var count: Boolean
   var isGet: Boolean
-  var query: Query[Object[_]]
+  var query: Query[Object[Attributes]]
   var readPreference: js.UndefOr[ReadPreferenceOption] = js.undefined
 }
 
@@ -22,14 +23,14 @@ object BeforeFindRequest {
     ip: String,
     isGet: Boolean,
     log: js.Any,
-    `object`: Object[_],
-    query: Query[Object[_]],
+    `object`: Object[Attributes],
+    query: Query[Object[Attributes]],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object[_] = null,
+    original: Object[Attributes] = null,
     readPreference: ReadPreferenceOption = null,
-    user: User[_] = null
+    user: User[Attributes] = null
   ): BeforeFindRequest = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], isGet = isGet.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

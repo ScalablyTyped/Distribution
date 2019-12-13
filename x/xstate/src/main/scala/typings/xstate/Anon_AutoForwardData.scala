@@ -8,6 +8,7 @@ import typings.xstate.libTypesMod.PropertyMapper
 import typings.xstate.libTypesMod.SingleOrArray
 import typings.xstate.libTypesMod.StateMachine
 import typings.xstate.libTypesMod.TransitionConfig
+import typings.xstate.libTypesMod.Typestate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,13 +49,13 @@ trait Anon_AutoForwardData[TContext, TEvent /* <: EventObject */] extends js.Obj
   /**
     * The source of the machine to be invoked, or the machine itself.
     */
-  var src: String | (StateMachine[_, _, _]) | (InvokeCreator[_, _])
+  var src: String | (StateMachine[_, _, _, Typestate[_]]) | (InvokeCreator[_, _])
 }
 
 object Anon_AutoForwardData {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
-    src: String | (StateMachine[_, _, _]) | (InvokeCreator[_, _]),
+    src: String | (StateMachine[_, _, _, Typestate[_]]) | (InvokeCreator[_, _]),
     autoForward: js.UndefOr[Boolean] = js.undefined,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     forward: js.UndefOr[Boolean] = js.undefined,

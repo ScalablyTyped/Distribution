@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rox-node"
-version := "4.8-dt-20191105Z-78daf3"
+version := "4.8-dt-20191203Z-f47e73"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

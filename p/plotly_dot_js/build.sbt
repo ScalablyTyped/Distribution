@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plotly_dot_js"
-version := "1.44-dt-20191126Z-b2e676"
+version := "1.44-dt-20191210Z-9c71db"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -39,8 +39,8 @@ class CommentCollection () extends ClientObject {
     * [Api set: ExcelApi 1.10]
     *
     * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApi Preview for CommentRichContent object]
-    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.plain`.
+    * @param content The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
+    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
     */
   def add(cellAddress: Range, content: CommentRichContent): Comment = js.native
   def add(cellAddress: Range, content: CommentRichContent, contentType: ContentType): Comment = js.native

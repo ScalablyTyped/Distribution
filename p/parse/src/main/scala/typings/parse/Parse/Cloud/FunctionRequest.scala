@@ -1,5 +1,6 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +10,7 @@ trait FunctionRequest extends js.Object {
   var installationId: js.UndefOr[String] = js.undefined
   var master: js.UndefOr[Boolean] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
-  var user: js.UndefOr[User[_]] = js.undefined
+  var user: js.UndefOr[User[Attributes]] = js.undefined
 }
 
 object FunctionRequest {
@@ -18,7 +19,7 @@ object FunctionRequest {
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
     params: js.Any = null,
-    user: User[_] = null
+    user: User[Attributes] = null
   ): FunctionRequest = {
     val __obj = js.Dynamic.literal()
     if (installationId != null) __obj.updateDynamic("installationId")(installationId.asInstanceOf[js.Any])

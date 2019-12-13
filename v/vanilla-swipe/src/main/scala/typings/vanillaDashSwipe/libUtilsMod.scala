@@ -20,10 +20,15 @@ object libUtilsMod extends js.Object {
   def checkIsMoreThanSingleTouches(e: js.Any): Boolean = js.native
   def checkIsPassiveSupported(): Boolean = js.native
   def checkIsPassiveSupported(isPassiveSupported: Boolean): Boolean = js.native
+  def createOptions(): js.Object = js.native
+  def createOptions(proxy: js.Object): js.Object = js.native
   def getInitialProps(): Anon_Delta = js.native
   def getInitialProps(props: js.Object): Anon_Delta = js.native
   def getInitialState(): Anon_IsSwiping = js.native
-  def rotateByAngle(position: Anon_X): typings.vanillaDashSwipe.libUtilsRotateByAngleMod.Value = js.native
-  def rotateByAngle(position: Anon_X, angle: Double): typings.vanillaDashSwipe.libUtilsRotateByAngleMod.Value = js.native
+  def getOptions(): Anon_Passive | Anon_PassiveUndefined = js.native
+  def getOptions(isPassiveSupported: Boolean): Anon_Passive | Anon_PassiveUndefined = js.native
+  def noop(): Unit = js.native
+  def rotateByAngle(position: Anon_XY): typings.vanillaDashSwipe.libUtilsRotateByAngleMod.Value = js.native
+  def rotateByAngle(position: Anon_XY, angle: Double): typings.vanillaDashSwipe.libUtilsRotateByAngleMod.Value = js.native
 }
 

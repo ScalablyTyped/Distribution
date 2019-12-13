@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object apiRequestParamsMod {
   type CcrStats = Generic
   type ClusterRemoteInfo = Generic
+  type EnrichStats = Generic
   type IlmGetStatus = Generic
   type IlmStart = Generic
   type IlmStop = Generic
@@ -21,6 +22,8 @@ package object apiRequestParamsMod {
   type SecurityAuthenticate = Generic
   type SecurityGetBuiltinPrivileges = Generic
   type SecurityGetUserPrivileges = Generic
+  type SlmExecuteRetention = Generic
+  type SlmGetStats = Generic
   type SslCertificates = Generic
   type WatcherStart = Generic
   type WatcherStop = Generic

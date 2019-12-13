@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-pnp" : "1.1.4"
+      "ts-pnp" : "1.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-pnp" : "1.1.4"
+      "ts-pnp" : "1.1.5"
     }
   ],
   "compile-devDependencies" : [

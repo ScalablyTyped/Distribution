@@ -1,16 +1,19 @@
 package typings.atMaterialDashUiCore
 
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreMod.PropTypes.Color
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.Empty
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`additions text`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`after-edge`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`before-edge`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`inline`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`text-after-edge`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`text-before-edge`
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.`use-credentials`
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.action
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.additions
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.all
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.alphabetic
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.anonymous
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.ascending
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.assertive
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.auto
@@ -76,6 +79,7 @@ import typings.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -176,7 +180,7 @@ trait PartialSvgIconProps extends js.Object {
   var ascent: js.UndefOr[Double | String] = js.undefined
   var attributeName: js.UndefOr[String] = js.undefined
   var attributeType: js.UndefOr[String] = js.undefined
-  var autoReverse: js.UndefOr[Double | String] = js.undefined
+  var autoReverse: js.UndefOr[Booleanish] = js.undefined
   var azimuth: js.UndefOr[Double | String] = js.undefined
   var baseFrequency: js.UndefOr[Double | String] = js.undefined
   var baseProfile: js.UndefOr[Double | String] = js.undefined
@@ -202,6 +206,7 @@ trait PartialSvgIconProps extends js.Object {
   var component: js.UndefOr[ReactType[SvgIconProps]] = js.undefined
   var contentScriptType: js.UndefOr[Double | String] = js.undefined
   var contentStyleType: js.UndefOr[Double | String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | Empty] = js.undefined
   var cursor: js.UndefOr[Double | String] = js.undefined
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
@@ -222,7 +227,7 @@ trait PartialSvgIconProps extends js.Object {
   var enableBackground: js.UndefOr[Double | String] = js.undefined
   var end: js.UndefOr[Double | String] = js.undefined
   var exponent: js.UndefOr[Double | String] = js.undefined
-  var externalResourcesRequired: js.UndefOr[Double | String] = js.undefined
+  var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
@@ -231,7 +236,7 @@ trait PartialSvgIconProps extends js.Object {
   var filterUnits: js.UndefOr[Double | String] = js.undefined
   var floodColor: js.UndefOr[Double | String] = js.undefined
   var floodOpacity: js.UndefOr[Double | String] = js.undefined
-  var focusable: js.UndefOr[Double | String] = js.undefined
+  var focusable: js.UndefOr[Booleanish | auto] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[inherit | default | small | large] = js.undefined
   var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
@@ -399,7 +404,7 @@ trait PartialSvgIconProps extends js.Object {
   var pointsAtX: js.UndefOr[Double | String] = js.undefined
   var pointsAtY: js.UndefOr[Double | String] = js.undefined
   var pointsAtZ: js.UndefOr[Double | String] = js.undefined
-  var preserveAlpha: js.UndefOr[Double | String] = js.undefined
+  var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var primitiveUnits: js.UndefOr[Double | String] = js.undefined
   var r: js.UndefOr[Double | String] = js.undefined
@@ -573,7 +578,7 @@ object PartialSvgIconProps {
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: Double | String = null,
+    autoReverse: js.UndefOr[Boolean] = js.undefined,
     azimuth: Double | String = null,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
@@ -599,6 +604,7 @@ object PartialSvgIconProps {
     component: ReactType[SvgIconProps] = null,
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
+    crossOrigin: anonymous | `use-credentials` | Empty = null,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,
@@ -619,7 +625,7 @@ object PartialSvgIconProps {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: Double | String = null,
+    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: nonzero | evenodd | inherit = null,
@@ -628,7 +634,7 @@ object PartialSvgIconProps {
     filterUnits: Double | String = null,
     floodColor: Double | String = null,
     floodOpacity: Double | String = null,
-    focusable: Double | String = null,
+    focusable: Booleanish | auto = null,
     fontFamily: String = null,
     fontSize: inherit | default | small | large = null,
     fontSizeAdjust: Double | String = null,
@@ -766,8 +772,7 @@ object PartialSvgIconProps {
     onSelect: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onStalled: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
     onSubmit: FormEvent[SVGSVGElement] => Unit = null,
-    onSuspend: SyntheticEvent[SVGSVGElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[SVGSVGElement, Event] => Unit = null
+    onSuspend: SyntheticEvent[SVGSVGElement, Event] => Unit = null
   ): PartialSvgIconProps = {
     val __obj = js.Dynamic.literal()
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
@@ -829,7 +834,7 @@ object PartialSvgIconProps {
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (autoReverse != null) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
@@ -855,6 +860,7 @@ object PartialSvgIconProps {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
     if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
@@ -875,7 +881,7 @@ object PartialSvgIconProps {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (externalResourcesRequired != null) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -1023,7 +1029,6 @@ object PartialSvgIconProps {
     if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
     __obj.asInstanceOf[PartialSvgIconProps]
   }
 }

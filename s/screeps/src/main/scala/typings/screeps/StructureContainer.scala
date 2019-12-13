@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait StructureContainer
   extends Structure[STRUCTURE_CONTAINER]
+     with AnyStoreStructure
      with AnyStructure {
   /**
     * An object with the structure contents. Each object key is one of the RESOURCE_* constants, values are resources
@@ -18,6 +19,7 @@ trait StructureContainer
   var store: StoreDefinition
   /**
     * The total amount of resources the structure can contain.
+    * @deprecated An alias for .store.getCapacity().
     */
   var storeCapacity: Double
   /**

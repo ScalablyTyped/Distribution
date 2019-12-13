@@ -18,6 +18,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -118,7 +119,7 @@ object MetaHTMLAttributes {
     className: String = null,
     color: String = null,
     content: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -297,7 +298,7 @@ object MetaHTMLAttributes {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

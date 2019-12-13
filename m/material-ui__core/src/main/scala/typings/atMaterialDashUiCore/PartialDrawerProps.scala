@@ -18,6 +18,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grid
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.horizontal
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.inherit
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.left
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.link
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.list
@@ -57,6 +58,7 @@ import typings.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -167,7 +169,7 @@ trait PartialDrawerProps extends js.Object {
   var closeAfterTransition: js.UndefOr[Boolean] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance]] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
@@ -180,7 +182,7 @@ trait PartialDrawerProps extends js.Object {
   var disableEscapeKeyDown: js.UndefOr[Boolean] = js.undefined
   var disablePortal: js.UndefOr[Boolean] = js.undefined
   var disableRestoreFocus: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var elevation: js.UndefOr[Double] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var hideBackdrop: js.UndefOr[Boolean] = js.undefined
@@ -297,7 +299,7 @@ trait PartialDrawerProps extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -380,7 +382,7 @@ object PartialDrawerProps {
     closeAfterTransition: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -590,7 +592,7 @@ object PartialDrawerProps {
     if (!js.isUndefined(closeAfterTransition)) __obj.updateDynamic("closeAfterTransition")(closeAfterTransition.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

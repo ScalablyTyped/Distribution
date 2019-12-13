@@ -2,7 +2,6 @@ package typings.pino.pinoMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.EventEmitter
-import typings.pino.Anon_Key
 import typings.pino.pinoStrings.`level-change`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -114,6 +113,10 @@ trait BaseLogger extends EventEmitter {
   @JSName("addListener")
   def addListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
   /**
+    * Returns an object containing all the current bindings, cloned from the ones passed in via logger.child().
+    */
+  def bindings(): Bindings = js.native
+  /**
     * Creates a child logger, setting all key-value pairs in `bindings` as properties in the log lines. All serializers will be applied to the given pair.
     * Child loggers use the same output stream as the parent and inherit the current log level of the parent at the time they are spawned.
     * From v2.x.x the log level of a child is mutable (whereas in v1.x.x it was immutable), and can be set independently of the parent.
@@ -122,7 +125,7 @@ trait BaseLogger extends EventEmitter {
     * @param bindings: an object of key-value pairs to include in log lines as properties.
     * @returns a child logger instance.
     */
-  def child(bindings: Anon_Key): Logger = js.native
+  def child(bindings: Bindings): Logger = js.native
   /**
     * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.

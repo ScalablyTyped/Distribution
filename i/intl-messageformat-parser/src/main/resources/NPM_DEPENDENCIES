@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "intl-messageformat-parser" : "3.3.0"
+      "intl-messageformat-parser" : "3.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "intl-messageformat-parser" : "3.3.0"
+      "intl-messageformat-parser" : "3.5.1"
     }
   ],
   "compile-devDependencies" : [

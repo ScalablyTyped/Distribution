@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-resolve-dependencies"
-version := "24.9.0-8380df"
+version := "24.9.0-0193c6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,18 +8,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-84e0a0",
   "org.scalablytyped" %%% "callsites" % "3.1.0-3bda2a",
   "org.scalablytyped" %%% "chalk" % "2.4.2-fe7c64",
-  "org.scalablytyped" %%% "expect" % "24.9.0-c327b4",
+  "org.scalablytyped" %%% "expect" % "24.9.0-60104d",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-bbbcc9",
-  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-758db0",
+  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-a98f11",
   "org.scalablytyped" %%% "jest-matcher-utils" % "21.0-dt-20190212Z-073f1d",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-cae444",
-  "org.scalablytyped" %%% "jest-resolve" % "24.9.0-6d029a",
-  "org.scalablytyped" %%% "jest-snapshot" % "24.9.0-e9eda5",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-c4501d",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-d44a70",
+  "org.scalablytyped" %%% "jest-resolve" % "24.9.0-2080ca",
+  "org.scalablytyped" %%% "jest-snapshot" % "24.9.0-dd7ed0",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-810b3d",
   "org.scalablytyped" %%% "jest__source-map" % "24.9.0-48095f",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-a30eb9",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-141d8f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-1ab04d",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-045540",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "pretty-format" % "24.9.0-692341",
   "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-b11e18",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",

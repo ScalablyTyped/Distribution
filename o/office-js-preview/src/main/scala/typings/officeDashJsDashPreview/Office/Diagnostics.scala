@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 /**
   * Provides diagnostic information to an Outlook add-in.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -37,8 +35,6 @@ trait Diagnostics extends js.Object {
     * - "ThreeColumns", which is displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a 
     * desktop computer.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -53,8 +49,6 @@ trait Diagnostics extends js.Object {
     *
     * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -67,8 +61,6 @@ trait Diagnostics extends js.Object {
     *
     * If the mail add-in is running in Outlook on a desktop or mobile client, the hostVersion property returns the version of the host 
     * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 

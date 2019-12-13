@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_markercluster_dot_layersupport"
-version := "1.0-dt-20180214Z-39c38e"
+version := "1.0-dt-20180214Z-132278"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-f488cd",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191022Z-2475b2",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191203Z-ca609b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

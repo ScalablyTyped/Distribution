@@ -1,6 +1,7 @@
 package typings.parse.parseMod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Cloud.AfterDeleteRequest
 import typings.parse.Parse.Cloud.AfterFindRequest
 import typings.parse.Parse.Cloud.AfterSaveRequest
@@ -18,7 +19,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @namespace Contains functions for calling and declaring
+  * Contains functions for calling and declaring
   * <a href="/docs/cloud_code_guide#functions">cloud functions</a>.
   * <p><strong><em>
   *   Some functions are only available from Cloud Code.
@@ -36,7 +37,7 @@ object Cloud extends js.Object {
   def afterDelete(arg1: js.Any): Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def afterFind(arg1: js.Any): Unit = js.native
-  def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, js.Promise[_] | _]): Unit = js.native
+  def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
   def afterSave(arg1: js.Any): Unit = js.native
   def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def beforeDelete(arg1: js.Any): Unit = js.native
@@ -46,26 +47,26 @@ object Cloud extends js.Object {
     arg1: js.Any,
     func: js.Function1[
       /* request */ BeforeFindRequest, 
-      (js.Promise[typings.parse.Parse.Query[typings.parse.Parse.Object[_]] | Unit]) | typings.parse.Parse.Query[typings.parse.Parse.Object[_]] | Unit
+      (js.Promise[typings.parse.Parse.Query[typings.parse.Parse.Object[Attributes]] | Unit]) | typings.parse.Parse.Query[typings.parse.Parse.Object[Attributes]] | Unit
     ]
   ): Unit = js.native
   def beforeLogin(): Unit = js.native
-  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, js.Promise[_] | _]): Unit = js.native
+  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, _]): Unit = js.native
   def beforeSave(arg1: js.Any): Unit = js.native
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
   def define(name: String): Unit = js.native
-  def define(name: String, func: js.Function1[/* request */ FunctionRequest, js.Promise[_] | _]): Unit = js.native
+  def define(name: String, func: js.Function1[/* request */ FunctionRequest, _]): Unit = js.native
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.Parse.Object[_]] = js.native
+  def getJobStatus(jobStatusId: String): js.Promise[typings.parse.Parse.Object[Attributes]] = js.native
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  def getJobsData(): js.Promise[typings.parse.Parse.Object[_]] = js.native
+  def getJobsData(): js.Promise[typings.parse.Parse.Object[Attributes]] = js.native
   def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native

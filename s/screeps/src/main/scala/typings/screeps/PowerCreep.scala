@@ -15,10 +15,12 @@ trait PowerCreep
      with AnyCreep {
   /**
     * An object with the creep's cargo contents.
+    * @deprecated An alias for Creep.store.
     */
   var carry: StoreDefinition = js.native
   /**
     * The total amount of resources the creep can carry.
+    * @deprecated An alias for Creep.store.getCapacity().
     */
   var carryCapacity: Double = js.native
   /**
@@ -40,7 +42,7 @@ trait PowerCreep
   /**
     * A unique identifier. You can use `Game.getObjectById` method to retrieve an object instance by its id.
     */
-  var id: String = js.native
+  var id: Id[this.type] = js.native
   /**
     * The power creep's level.
     */
@@ -78,6 +80,10 @@ trait PowerCreep
     * Note: This is a timestamp, not ticks as powerCreeps are not shard dependent.
     */
   var spawnCooldownTime: js.UndefOr[Double] = js.native
+  /**
+    * A Store object that contains cargo of this creep.
+    */
+  var store: StoreDefinition = js.native
   /**
     * The remaining amount of game ticks after which the creep will die and become unspawned. Undefined if the creep is not spawned in the world.
     */

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */] extends TransitionConfig[TContext, TEvent] {
   @JSName("target")
-  var target_TargetTransitionConfig: TransitionTarget[TContext]
+  var target_TargetTransitionConfig: TransitionTarget[TContext, TEvent]
 }
 
 object TargetTransitionConfig {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
-    target: TransitionTarget[TContext],
-    actions: SingleOrArray[Action[TContext, TEvent]] = null,
+    target: TransitionTarget[TContext, TEvent],
+    actions: Actions[TContext, TEvent] = null,
     cond: Condition[TContext, TEvent] = null,
     in: StateValue = null,
     internal: js.UndefOr[Boolean] = js.undefined,

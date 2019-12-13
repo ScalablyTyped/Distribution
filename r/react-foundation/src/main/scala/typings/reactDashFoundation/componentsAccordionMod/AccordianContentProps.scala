@@ -3,6 +3,7 @@ package typings.reactDashFoundation.componentsAccordionMod
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AriaAttributes
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
@@ -37,6 +38,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -93,14 +95,14 @@ import scala.scalajs.js.annotation._
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -134,7 +136,7 @@ import scala.scalajs.js.annotation._
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -208,7 +210,7 @@ object AccordianContentProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -412,7 +414,7 @@ object AccordianContentProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ trait RowChart
   @JSName("elasticX")
   var elasticX_Original: IGetSet[Boolean, RowChart] = js.native
   @JSName("fixedBarHeight")
-  var fixedBarHeight_Original: IGetSet[Double, RowChart] = js.native
+  var fixedBarHeight_Original: IGetSet[Boolean | Double, RowChart] = js.native
   @JSName("gap")
   var gap_Original: IGetSet[Double, RowChart] = js.native
   @JSName("labelOffsetX")
@@ -33,7 +33,8 @@ trait RowChart
   var x_Original: IGetSet[Scale[Double], RowChart] = js.native
   def elasticX(): Boolean = js.native
   def elasticX(t: Boolean): RowChart = js.native
-  def fixedBarHeight(): Double = js.native
+  def fixedBarHeight(): Boolean | Double = js.native
+  def fixedBarHeight(t: Boolean): RowChart = js.native
   def fixedBarHeight(t: Double): RowChart = js.native
   def gap(): Double = js.native
   def gap(t: Double): RowChart = js.native

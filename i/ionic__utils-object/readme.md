@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-object
 
-Typings are for version 1.0.5
+Typings are for version 1.0.6
 
 ## Library description:
 Object utils

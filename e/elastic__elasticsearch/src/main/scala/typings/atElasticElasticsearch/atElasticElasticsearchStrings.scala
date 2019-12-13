@@ -42,6 +42,9 @@ object atElasticElasticsearchStrings {
   sealed trait create extends js.Object
   
   @js.native
+  sealed trait `d (Days)` extends js.Object
+  
+  @js.native
   sealed trait delimited extends js.Object
   
   @js.native
@@ -75,6 +78,9 @@ object atElasticElasticsearchStrings {
   sealed trait gzip extends js.Object
   
   @js.native
+  sealed trait `h (Hours)` extends js.Object
+  
+  @js.native
   sealed trait high extends js.Object
   
   @js.native
@@ -105,10 +111,22 @@ object atElasticElasticsearchStrings {
   sealed trait m extends js.Object
   
   @js.native
+  sealed trait `m (Minutes)` extends js.Object
+  
+  @js.native
   sealed trait mb extends js.Object
   
   @js.native
+  sealed trait `micros (Microseconds)` extends js.Object
+  
+  @js.native
   sealed trait missing extends js.Object
+  
+  @js.native
+  sealed trait `ms (Milliseconds)` extends js.Object
+  
+  @js.native
+  sealed trait `nanos (Nanoseconds)` extends js.Object
   
   @js.native
   sealed trait ndjson extends js.Object
@@ -157,6 +175,9 @@ object atElasticElasticsearchStrings {
   
   @js.native
   sealed trait red extends js.Object
+  
+  @js.native
+  sealed trait `s (Seconds)` extends js.Object
   
   @js.native
   sealed trait semi_structured_text extends js.Object
@@ -213,6 +234,8 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   @scala.inline
+  def `d (Days)`: `d (Days)` = "d (Days)".asInstanceOf[`d (Days)`]
+  @scala.inline
   def delimited: delimited = "delimited".asInstanceOf[delimited]
   @scala.inline
   def dfs_query_and_fetch: dfs_query_and_fetch = "dfs_query_and_fetch".asInstanceOf[dfs_query_and_fetch]
@@ -235,6 +258,8 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def gzip: gzip = "gzip".asInstanceOf[gzip]
   @scala.inline
+  def `h (Hours)`: `h (Hours)` = "h (Hours)".asInstanceOf[`h (Hours)`]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
   def immediate: immediate = "immediate".asInstanceOf[immediate]
@@ -255,9 +280,17 @@ object atElasticElasticsearchStrings {
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
+  def `m (Minutes)`: `m (Minutes)` = "m (Minutes)".asInstanceOf[`m (Minutes)`]
+  @scala.inline
   def mb: mb = "mb".asInstanceOf[mb]
   @scala.inline
+  def `micros (Microseconds)`: `micros (Microseconds)` = "micros (Microseconds)".asInstanceOf[`micros (Microseconds)`]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
+  def `ms (Milliseconds)`: `ms (Milliseconds)` = "ms (Milliseconds)".asInstanceOf[`ms (Milliseconds)`]
+  @scala.inline
+  def `nanos (Nanoseconds)`: `nanos (Nanoseconds)` = "nanos (Nanoseconds)".asInstanceOf[`nanos (Nanoseconds)`]
   @scala.inline
   def ndjson: ndjson = "ndjson".asInstanceOf[ndjson]
   @scala.inline
@@ -290,6 +323,8 @@ object atElasticElasticsearchStrings {
   def query_then_fetch: query_then_fetch = "query_then_fetch".asInstanceOf[query_then_fetch]
   @scala.inline
   def red: red = "red".asInstanceOf[red]
+  @scala.inline
+  def `s (Seconds)`: `s (Seconds)` = "s (Seconds)".asInstanceOf[`s (Seconds)`]
   @scala.inline
   def semi_structured_text: semi_structured_text = "semi_structured_text".asInstanceOf[semi_structured_text]
   @scala.inline

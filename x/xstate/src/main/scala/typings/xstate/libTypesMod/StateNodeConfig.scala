@@ -1,13 +1,18 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.libStateNodeMod.StateNode
+import typings.xstate.xstateStrings.`final`
+import typings.xstate.xstateStrings.atomic
+import typings.xstate.xstateStrings.compound
 import typings.xstate.xstateStrings.deep
+import typings.xstate.xstateStrings.history
+import typings.xstate.xstateStrings.parallel
 import typings.xstate.xstateStrings.shallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] extends js.Object {
+trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends SimpleOrStateNodeConfig[TContext, TStateSchema, TEvent] {
   /**
     * The activities to be started upon entering the state node,
     * and stopped upon exiting the state node.
@@ -20,8 +25,10 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   var after: js.UndefOr[DelayedTransitions[TContext, TEvent]] = js.undefined
   /**
     * The initial context (extended state) of the machine.
+    *
+    * Can be an object or a function that returns an object.
     */
-  var context: js.UndefOr[TContext] = js.undefined
+  var context: js.UndefOr[TContext | js.Function0[TContext]] = js.undefined
   /**
     * The data sent with the "done.state._id_" event if this is a final state node.
     *
@@ -36,11 +43,11 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   /**
     * The action(s) to be executed upon entering the state node.
     */
-  var entry: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  var entry: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   /**
     * The action(s) to be executed upon exiting the state node.
     */
-  var exit: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  var exit: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   /**
     * Indicates whether the state node is a history state node, and what
     * type of history:
@@ -61,7 +68,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   /**
     * The services to invoke upon entering this state node. These services will be stopped upon exiting this state node.
     */
-  var invoke: js.UndefOr[InvokesConfig[TContext, TEvent]] = js.undefined
+  var invoke: js.UndefOr[SingleOrArray[InvokeConfig[TContext, TEvent]]] = js.undefined
   /**
     * The relative key of the state node, which represents its location in the overall state value.
     * This is automatically determined by the configuration shape via the key where it was defined.
@@ -86,13 +93,13 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
     *
     * @deprecated Use `entry` instead.
     */
-  var onEntry: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  var onEntry: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   /**
     * The action(s) to be executed upon exiting the state node.
     *
     * @deprecated Use `exit` instead.
     */
-  var onExit: js.UndefOr[SingleOrArray[Action[TContext, TEvent]]] = js.undefined
+  var onExit: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   /**
     * The order this state node appears. Corresponds to the implicit SCXML document order.
     */
@@ -104,7 +111,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   /**
     * @private
     */
-  var parent: js.UndefOr[StateNode[TContext, _, TEvent]] = js.undefined
+  var parent: js.UndefOr[StateNode[TContext, _, TEvent, _]] = js.undefined
   /**
     * The mapping of state node keys to their state node configurations (recursive).
     */
@@ -119,35 +126,35 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
     *  - `'history'` - history state node
     *  - `'final'` - final state node
     */
-  var `type`: js.UndefOr[StateTypes] = js.undefined
+  var `type`: js.UndefOr[atomic | compound | parallel | `final` | history] = js.undefined
 }
 
 object StateNodeConfig {
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](
+  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
-    context: TContext = null,
+    context: TContext | js.Function0[TContext] = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: String = null,
-    entry: SingleOrArray[Action[TContext, TEvent]] = null,
-    exit: SingleOrArray[Action[TContext, TEvent]] = null,
+    entry: Actions[TContext, TEvent] = null,
+    exit: Actions[TContext, TEvent] = null,
     history: shallow | deep | Boolean = null,
     id: String = null,
     initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
-    invoke: InvokesConfig[TContext, TEvent] = null,
+    invoke: SingleOrArray[InvokeConfig[TContext, TEvent]] = null,
     key: String = null,
     meta: js.Any = null,
     on: TransitionsConfig[TContext, TEvent] = null,
     onDone: String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]]) = null,
-    onEntry: SingleOrArray[Action[TContext, TEvent]] = null,
-    onExit: SingleOrArray[Action[TContext, TEvent]] = null,
+    onEntry: Actions[TContext, TEvent] = null,
+    onExit: Actions[TContext, TEvent] = null,
     order: Int | Double = null,
     parallel: js.UndefOr[Boolean] = js.undefined,
-    parent: StateNode[TContext, _, TEvent] = null,
+    parent: StateNode[TContext, _, TEvent, _] = null,
     states: StatesConfig[TContext, TStateSchema, TEvent] = null,
     strict: js.UndefOr[Boolean] = js.undefined,
-    `type`: StateTypes = null
+    `type`: atomic | compound | parallel | `final` | history = null
   ): StateNodeConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal()
     if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])

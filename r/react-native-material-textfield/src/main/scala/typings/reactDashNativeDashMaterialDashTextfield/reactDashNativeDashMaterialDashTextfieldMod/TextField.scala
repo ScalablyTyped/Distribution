@@ -30,6 +30,11 @@ class TextField ()
     */
   def isRestricted(): Boolean = js.native
   /*
+    * Set current value
+    */
+  def setValue(): Unit = js.native
+  def setValue(value: String): Unit = js.native
+  /*
     * Get current value
     */
   def value(): String = js.native

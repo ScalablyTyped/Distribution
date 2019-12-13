@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fuse_dot_js"
-version := "3.4.5-b1a6ec"
+version := "3.4.6-44d6f7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

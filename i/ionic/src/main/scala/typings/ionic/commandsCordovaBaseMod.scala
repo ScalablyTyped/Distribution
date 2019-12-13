@@ -16,10 +16,10 @@ object commandsCordovaBaseMod extends js.Object {
   @js.native
   abstract class CordovaCommand () extends Command {
     var _integration: js.UndefOr[js.Any] = js.native
-    val integration: Required[ProjectIntegration] = js.native
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: Anon_PromptToInstall): js.Promise[Unit] = js.native
+    /* protected */ def integration(): Required[ProjectIntegration] = js.native
     /* protected */ def preRunChecks(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String]): js.Promise[Unit] = js.native
     /* protected */ def runCordova(argList: js.Array[String], hasFatalOnNotFoundTruncateErrorOutputOptions: IShellRunOptions): js.Promise[Unit] = js.native

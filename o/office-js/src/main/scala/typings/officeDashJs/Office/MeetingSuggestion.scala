@@ -14,8 +14,6 @@ import scala.scalajs.js.annotation._
   * begin and end. 
   * The values are in the default time zone specified for the current user.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

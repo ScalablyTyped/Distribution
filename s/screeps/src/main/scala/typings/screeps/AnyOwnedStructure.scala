@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   - typings.screeps.StructureController
   - typings.screeps.StructureExtension
   - typings.screeps.StructureExtractor
+  - typings.screeps.StructureFactory
+  - typings.screeps.StructureInvaderCore
   - typings.screeps.StructureKeeperLair
   - typings.screeps.StructureLab
   - typings.screeps.StructureLink

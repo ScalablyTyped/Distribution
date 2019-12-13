@@ -1,6 +1,7 @@
 package typings.atAntDashDesignProDashLayout.libBasicLayoutMod
 
 import typings.antd.libMenuMod.MenuProps
+import typings.atAntDashDesignProDashLayout.Anon_Id
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.MenuDataItemisUrlboolean
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutNumbers.`false`
@@ -41,7 +42,7 @@ import scala.scalajs.js.annotation._
   /**
     * 兼用 content的 margin
     */
-  var disableContentMargin: Boolean
+  var disableContentMargin: js.UndefOr[Boolean] = js.undefined
   /**
     * 是否禁用移动端模式，有的管理系统不需要移动端模式，此属性设置为true即可
     */
@@ -62,6 +63,7 @@ import scala.scalajs.js.annotation._
     /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any
   ] = js.undefined
   var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
+  var loading: js.UndefOr[Boolean] = js.undefined
   var locale: js.UndefOr[localeType] = js.undefined
   /**
     * logo url
@@ -84,7 +86,12 @@ import scala.scalajs.js.annotation._
   var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
   var pageTitleRender: js.UndefOr[
     WithFalse[
-      js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
+      js.Function3[
+        /* props */ GetPageTitleProps, 
+        /* defaultPageTitle */ js.UndefOr[String], 
+        /* info */ js.UndefOr[Anon_Id], 
+        String
+      ]
     ]
   ] = js.undefined
   var primaryColor: js.UndefOr[String] = js.undefined
@@ -95,7 +102,6 @@ import scala.scalajs.js.annotation._
 object BasicLayoutProps {
   @scala.inline
   def apply(
-    disableContentMargin: Boolean,
     breadcrumbRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any = null,
     breakpoint: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SiderProps * / any['breakpoint'] */ js.Any) | `false` = null,
     className: String = null,
@@ -103,6 +109,7 @@ object BasicLayoutProps {
     collapsedButtonRender: WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]] = null,
     contentStyle: CSSProperties = null,
     contentWidth: ContentWidth = null,
+    disableContentMargin: js.UndefOr[Boolean] = js.undefined,
     disableMobile: js.UndefOr[Boolean] = js.undefined,
     fixSiderbar: js.UndefOr[Boolean] = js.undefined,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
@@ -114,6 +121,8 @@ object BasicLayoutProps {
     isMobile: js.UndefOr[Boolean] = js.undefined,
     itemRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['itemRender'] */ js.Any = null,
     layout: sidemenu | topmenu = null,
+    links: js.Array[ReactNode] = null,
+    loading: js.UndefOr[Boolean] = js.undefined,
     locale: localeType = null,
     logo: ReactNode | WithFalse[js.Function0[ReactNode]] = null,
     menu: Anon_Locale = null,
@@ -128,7 +137,12 @@ object BasicLayoutProps {
     onCollapse: /* collapsed */ Boolean => Unit = null,
     onMenuHeaderClick: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     pageTitleRender: WithFalse[
-      js.Function2[/* props */ GetPageTitleProps, /* defaultPageTitle */ js.UndefOr[String], String]
+      js.Function3[
+        /* props */ GetPageTitleProps, 
+        /* defaultPageTitle */ js.UndefOr[String], 
+        /* info */ js.UndefOr[Anon_Id], 
+        String
+      ]
     ] = null,
     primaryColor: String = null,
     rightContentRender: WithFalse[js.Function1[BasicLayoutProps, ReactNode]] = null,
@@ -136,7 +150,7 @@ object BasicLayoutProps {
     style: CSSProperties = null,
     title: String = null
   ): BasicLayoutProps = {
-    val __obj = js.Dynamic.literal(disableContentMargin = disableContentMargin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (breadcrumbRender != null) __obj.updateDynamic("breadcrumbRender")(js.Any.fromFunction1(breadcrumbRender))
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -144,6 +158,7 @@ object BasicLayoutProps {
     if (collapsedButtonRender != null) __obj.updateDynamic("collapsedButtonRender")(collapsedButtonRender.asInstanceOf[js.Any])
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableContentMargin)) __obj.updateDynamic("disableContentMargin")(disableContentMargin.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMobile)) __obj.updateDynamic("disableMobile")(disableMobile.asInstanceOf[js.Any])
     if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
@@ -155,6 +170,8 @@ object BasicLayoutProps {
     if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
     if (itemRender != null) __obj.updateDynamic("itemRender")(itemRender.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])

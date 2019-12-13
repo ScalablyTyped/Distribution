@@ -81,7 +81,7 @@ object IImageOptions {
     dirty: js.UndefOr[Boolean] = js.undefined,
     evented: js.UndefOr[Boolean] = js.undefined,
     excludeFromExport: js.UndefOr[Boolean] = js.undefined,
-    fill: String | Pattern = null,
+    fill: String | Pattern | Gradient = null,
     fillRule: String = null,
     filters: js.Array[IBaseFilter] = null,
     flipX: js.UndefOr[Boolean] = js.undefined,

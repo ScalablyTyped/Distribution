@@ -26,6 +26,7 @@ object PageHeaderWrapperProps {
     tabList: js.Array[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabPaneProps */ _
     ] = null,
+    tabProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TabsProps */ js.Any = null,
     title: ReactNode | `false` = null
   ): PageHeaderWrapperProps = {
     val __obj = js.Dynamic.literal()
@@ -36,6 +37,7 @@ object PageHeaderWrapperProps {
     if (tabActiveKey != null) __obj.updateDynamic("tabActiveKey")(tabActiveKey.asInstanceOf[js.Any])
     if (tabBarExtraContent != null) __obj.updateDynamic("tabBarExtraContent")(tabBarExtraContent.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
+    if (tabProps != null) __obj.updateDynamic("tabProps")(tabProps.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderWrapperProps]
   }

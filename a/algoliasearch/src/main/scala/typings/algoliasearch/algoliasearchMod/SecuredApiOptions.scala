@@ -32,10 +32,6 @@ trait SecuredApiOptions extends QueryParameters {
     */
   var restrictIndices: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
-    * Allows you to restrict a single user to performing a maximum of N API calls per hour
-    */
-  var userToken: js.UndefOr[String] = js.undefined
-  /**
     * Defines the expiration date of the API key
     */
   var validUntil: js.UndefOr[Double] = js.undefined

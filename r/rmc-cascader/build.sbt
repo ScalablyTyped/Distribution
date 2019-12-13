@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rmc-cascader"
-version := "5.0.3-186a9a"
+version := "5.0.3-8af5c5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191121Z-cb9adb",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-9bd9a7",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191210Z-aec922",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.10-8f0c8b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

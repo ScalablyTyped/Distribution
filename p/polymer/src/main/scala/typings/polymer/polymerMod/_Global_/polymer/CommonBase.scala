@@ -36,7 +36,15 @@ trait CommonBase extends js.Object {
   var attributeChanged: js.UndefOr[
     js.Function3[/* name */ String, /* oldValue */ js.Any, /* newValue */ js.Any, Unit]
   ] = js.native
-  var attributeChangedCallback: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+  var attributeChangedCallback: js.UndefOr[
+    js.Function4[
+      /* attributeName */ String, 
+      /* oldValue */ String | Null, 
+      /* newValue */ String | Null, 
+      /* namespace */ String | Null, 
+      Unit
+    ]
+  ] = js.native
   var attributeFollows: js.UndefOr[
     js.Function3[/* name */ String, /* toElement */ HTMLElement, /* fromElement */ HTMLElement, Unit]
   ] = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait BubbleOverlayChart
   extends BubbleMixin[BubbleOverlayChart]
      with BaseMixin[BubbleOverlayChart] {
-  def point(name: String, x: Double, y: Double): Unit = js.native
+  def point(name: String, x: Double, y: Double): BubbleOverlayChart = js.native
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/cli-framework-prompts" : "1.0.2"
+      "@ionic/cli-framework-prompts" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/cli-framework-prompts" : "1.0.2"
+      "@ionic/cli-framework-prompts" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

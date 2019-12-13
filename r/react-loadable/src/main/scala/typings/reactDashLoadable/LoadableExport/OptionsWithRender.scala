@@ -36,7 +36,7 @@ object OptionsWithRender {
   @scala.inline
   def apply[Props, Exports /* <: js.Object */](
     loader: () => js.Promise[Exports],
-    loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
+    loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
     delay: Double | `false` = null,
     modules: js.Array[String] = null,

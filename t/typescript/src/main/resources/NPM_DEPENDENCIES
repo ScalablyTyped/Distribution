@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typescript" : "3.7.2"
+      "typescript" : "3.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "typescript" : "3.7.2"
+      "typescript" : "3.7.3"
     }
   ],
   "compile-devDependencies" : [

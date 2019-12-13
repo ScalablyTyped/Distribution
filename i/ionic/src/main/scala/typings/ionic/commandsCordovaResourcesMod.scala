@@ -14,7 +14,7 @@ object commandsCordovaResourcesMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.atIonicCliDashFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
-  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: namespace. Inlined preRun */ @js.native
+  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
   class ResourcesCommand () extends CordovaCommand {
     def getBuildPlatforms(): js.Promise[js.Array[String]] = js.native
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native

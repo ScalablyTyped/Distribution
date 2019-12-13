@@ -14,7 +14,6 @@ abstract class OAuth2Flow protected () extends js.Object {
   val e: OAuth2FlowDeps = js.native
   val redirectHost: String = js.native
   val redirectPort: Double = js.native
-  val redirectUrl: String = js.native
   val tokenUrl: String = js.native
   /* protected */ def base64URLEncode(buffer: Buffer): String = js.native
   /* protected */ def generateAuthorizationParameters(challenge: String): AuthorizationParameters = js.native
@@ -24,6 +23,7 @@ abstract class OAuth2Flow protected () extends js.Object {
   /* protected */ def getAccessToken(authorizationCode: String, verifier: String): js.Promise[String] = js.native
   /* protected */ def getAuthorizationCode(): js.Promise[String] = js.native
   /* protected */ def getSuccessHtml(): js.Promise[String] = js.native
+  def redirectUrl(): String = js.native
   def run(): js.Promise[String] = js.native
 }
 

@@ -57,17 +57,12 @@ trait Market extends js.Object {
   /**
     * Create a market order in your terminal. You will be charged `price*amount*0.05` credits when the order is placed.
     *
-    * The maximum orders count is 50 per player. You can create an order at any time with any amount,
+    * The maximum orders count is 300 per player. You can create an order at any time with any amount,
     * it will be automatically activated and deactivated depending on the resource/credits availability.
+    *
+    * An order expires in 30 days after its creation, and the remaining market fee is returned.
     */
-  def createOrder(`type`: String, resourceType: MarketResourceConstant, price: Double, totalAmount: Double): ScreepsReturnCode = js.native
-  def createOrder(
-    `type`: String,
-    resourceType: MarketResourceConstant,
-    price: Double,
-    totalAmount: Double,
-    roomName: String
-  ): ScreepsReturnCode = js.native
+  def createOrder(params: Anon_Price): ScreepsReturnCode = js.native
   /**
     * Execute a trade deal from your Terminal to another player's Terminal using the specified buy/sell order.
     *
@@ -80,6 +75,7 @@ trait Market extends js.Object {
   def deal(orderId: String, amount: Double, targetRoomName: String): ScreepsReturnCode = js.native
   /**
     * Add more capacity to an existing order. It will affect `remainingAmount` and `totalAmount` properties. You will be charged `price*addAmount*0.05` credits.
+    * Extending the order doesn't update its expiration time.
     * @param orderId The order ID as provided in Game.market.orders
     * @param addAmount How much capacity to add. Cannot be a negative value.
     * @returns One of the following codes: `OK`, `ERR_NOT_ENOUGH_RESOURCES`, `ERR_INVALID_ARGS`
@@ -93,6 +89,13 @@ trait Market extends js.Object {
   def getAllOrders(): js.Array[Order] = js.native
   def getAllOrders(filter: js.Function1[/* o */ Order, Boolean]): js.Array[Order] = js.native
   def getAllOrders(filter: OrderFilter): js.Array[Order] = js.native
+  /**
+    * Get daily price history of the specified resource on the market for the last 14 days.
+    * @param resource One of the RESOURCE_* constants. If undefined, returns history data for all resources. Optional
+    * @returns An array of objects with resource info.
+    */
+  def getHistory(): js.Array[PriceHistory] = js.native
+  def getHistory(resource: ResourceConstant): js.Array[PriceHistory] = js.native
   /**
     * Retrieve info for specific market order.
     * @param orderId The order ID.

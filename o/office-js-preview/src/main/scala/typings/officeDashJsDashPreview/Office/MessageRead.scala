@@ -20,8 +20,6 @@ trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -41,8 +39,6 @@ trait MessageRead extends Message {
     * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. 
     * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -53,8 +49,6 @@ trait MessageRead extends Message {
   /**
     * Gets the date and time that an item was created.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -64,8 +58,6 @@ trait MessageRead extends Message {
   var dateTimeCreated: Date = js.native
   /**
     * Gets the date and time that an item was last modified.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -85,8 +77,6 @@ trait MessageRead extends Message {
     * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -104,8 +94,6 @@ trait MessageRead extends Message {
     * 
     * The from property returns an EmailAddressDetails object.
     * 
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -115,8 +103,6 @@ trait MessageRead extends Message {
   var from: EmailAddressDetails = js.native
   /**
     * Gets the Internet message identifier for an email message.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -130,8 +116,6 @@ trait MessageRead extends Message {
     * 
     * You can create custom message classes that extends a default message class, for example, a custom appointment message class 
     * IPM.Appointment.Contoso.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -176,8 +160,6 @@ trait MessageRead extends Message {
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -189,8 +171,6 @@ trait MessageRead extends Message {
     * Gets the location of a meeting request.
     *
     * The location property returns a string that contains the location of the appointment.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -205,8 +185,6 @@ trait MessageRead extends Message {
     * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by 
     * email programs. 
     * To get the subject of the item with the prefixes intact, use the subject property.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -245,8 +223,6 @@ trait MessageRead extends Message {
     *
     * **Note**: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -259,8 +235,6 @@ trait MessageRead extends Message {
     *
     * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. 
     * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -276,8 +250,6 @@ trait MessageRead extends Message {
     *
     * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -291,8 +263,6 @@ trait MessageRead extends Message {
     *
     * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. 
     * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -314,8 +284,6 @@ trait MessageRead extends Message {
     * If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -341,8 +309,6 @@ trait MessageRead extends Message {
     * If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -372,8 +338,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -397,8 +361,6 @@ trait MessageRead extends Message {
     * If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -443,8 +405,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -455,8 +415,6 @@ trait MessageRead extends Message {
     * Gets the entities found in the selected item's body.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -470,8 +428,6 @@ trait MessageRead extends Message {
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @param entityType - One of the EntityType enumeration values.
     * 
@@ -537,8 +493,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    * 
     * @param entityType - One of the EntityType enumeration values.
     *
     * @returns
@@ -607,8 +561,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -628,8 +580,6 @@ trait MessageRead extends Message {
     * in the manifest XML file with the specified FilterName element value.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -659,8 +609,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @returns
     * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
     * The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule 
@@ -687,8 +635,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @returns
     * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
     * The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule 
@@ -713,8 +659,6 @@ trait MessageRead extends Message {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @returns
     * An array that contains the strings that match the regular expression defined in the manifest XML file.
     *
@@ -737,8 +681,6 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @returns
     * An array that contains the strings that match the regular expression defined in the manifest XML file.

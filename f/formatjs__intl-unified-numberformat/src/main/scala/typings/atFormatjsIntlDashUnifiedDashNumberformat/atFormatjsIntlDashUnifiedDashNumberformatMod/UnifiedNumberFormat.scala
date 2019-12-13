@@ -1,8 +1,9 @@
 package typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod
 
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatStrings.localeMatcher
+import typings.atFormatjsIntlDashUtils.Anon_Currencies
+import typings.atFormatjsIntlDashUtils.distTypesMod.Locale
 import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnifiedNumberFormatLocaleData
-import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnitData
 import typings.std.Intl.NumberFormat
 import typings.std.Pick
 import typings.std.Record
@@ -17,9 +18,10 @@ class UnifiedNumberFormat () extends NumberFormat {
   def this(locales: js.Array[String]) = this()
   def this(locales: String, options: UnifiedNumberFormatOptions) = this()
   def this(locales: js.Array[String], options: UnifiedNumberFormatOptions) = this()
+  var currencyNarrowSymbol: js.UndefOr[js.Any] = js.native
   var nf: js.Any = js.native
-  var patternData: js.UndefOr[js.Any] = js.native
   var pl: js.Any = js.native
+  var unitPattern: js.UndefOr[js.Any] = js.native
 }
 
 /* static members */
@@ -30,7 +32,7 @@ object UnifiedNumberFormat extends js.Object {
   var __defaultLocale: js.Any = js.native
   var availableLocales: js.Any = js.native
   var getDefaultLocale: js.Any = js.native
-  var localeData: Record[String, Record[String, UnitData]] = js.native
+  var localeData: Record[Locale, Anon_Currencies] = js.native
   var polyfilled: Boolean = js.native
   var relevantExtensionKeys: js.Any = js.native
   def __addLocaleData(data: UnifiedNumberFormatLocaleData*): scala.Unit = js.native

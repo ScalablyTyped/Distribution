@@ -1,6 +1,5 @@
 package typings.xstate.libTypesMod
 
-import typings.std.Record
 import typings.xstate.xstateStrings.external
 import typings.xstate.xstateStrings.internal
 import typings.xstate.xstateStrings.platform
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object SCXML extends js.Object {
   @js.native
-  trait Event extends js.Object {
+  trait Event[TEvent /* <: EventObject */] extends js.Object {
     /**
       * @private
       */
@@ -27,7 +26,7 @@ object SCXML extends js.Object {
       * If the conversion is not possible, the Processor must leave the field blank
       * and must place an error 'error.execution' in the internal event queue.
       */
-    var data: js.UndefOr[Record[String, _]] = js.native
+    var data: TEvent = js.native
     /**
       * If this event is generated from an invoked child process, the SCXML Processor
       * must set this field to the invoke id of the invocation that triggered the child process.

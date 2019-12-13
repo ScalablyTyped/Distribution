@@ -35,6 +35,10 @@ trait ReelsMediaFeedResponseItem extends js.Object {
   var reel_mentions: js.UndefOr[js.Array[ReelsMediaFeedResponseReelMentionsItem]] = js.undefined
   var show_one_tap_fb_share_tooltip: Boolean
   var story_cta: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryCtaItem]] = js.undefined
+  var story_polls: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryPollsItem]] = js.undefined
+  var story_questions: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuestionsItem]] = js.undefined
+  var story_quizs: js.UndefOr[js.Array[ReelsMediaFeedResponseStoryQuizsItem]] = js.undefined
+  var story_sliders: js.UndefOr[js.Array[ReelsMediaFeedResponseStorySlidersItem]] = js.undefined
   var supports_reel_reactions: Boolean
   var taken_at: Double
   var user: ReelsMediaFeedResponseUser
@@ -83,7 +87,11 @@ object ReelsMediaFeedResponseItem {
     imported_taken_at: Int | Double = null,
     link_text: String = null,
     reel_mentions: js.Array[ReelsMediaFeedResponseReelMentionsItem] = null,
-    story_cta: js.Array[ReelsMediaFeedResponseStoryCtaItem] = null
+    story_cta: js.Array[ReelsMediaFeedResponseStoryCtaItem] = null,
+    story_polls: js.Array[ReelsMediaFeedResponseStoryPollsItem] = null,
+    story_questions: js.Array[ReelsMediaFeedResponseStoryQuestionsItem] = null,
+    story_quizs: js.Array[ReelsMediaFeedResponseStoryQuizsItem] = null,
+    story_sliders: js.Array[ReelsMediaFeedResponseStorySlidersItem] = null
   ): ReelsMediaFeedResponseItem = {
     val __obj = js.Dynamic.literal(can_reply = can_reply.asInstanceOf[js.Any], can_reshare = can_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], caption_position = caption_position.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], expiring_at = expiring_at.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_audio = has_audio.asInstanceOf[js.Any], has_shared_to_fb = has_shared_to_fb.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], is_dash_eligible = is_dash_eligible.asInstanceOf[js.Any], is_reel_media = is_reel_media.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], number_of_qualities = number_of_qualities.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], show_one_tap_fb_share_tooltip = show_one_tap_fb_share_tooltip.asInstanceOf[js.Any], supports_reel_reactions = supports_reel_reactions.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], video_codec = video_codec.asInstanceOf[js.Any], video_dash_manifest = video_dash_manifest.asInstanceOf[js.Any], video_duration = video_duration.asInstanceOf[js.Any], video_versions = video_versions.asInstanceOf[js.Any])
     if (ad_action != null) __obj.updateDynamic("ad_action")(ad_action.asInstanceOf[js.Any])
@@ -91,6 +99,10 @@ object ReelsMediaFeedResponseItem {
     if (link_text != null) __obj.updateDynamic("link_text")(link_text.asInstanceOf[js.Any])
     if (reel_mentions != null) __obj.updateDynamic("reel_mentions")(reel_mentions.asInstanceOf[js.Any])
     if (story_cta != null) __obj.updateDynamic("story_cta")(story_cta.asInstanceOf[js.Any])
+    if (story_polls != null) __obj.updateDynamic("story_polls")(story_polls.asInstanceOf[js.Any])
+    if (story_questions != null) __obj.updateDynamic("story_questions")(story_questions.asInstanceOf[js.Any])
+    if (story_quizs != null) __obj.updateDynamic("story_quizs")(story_quizs.asInstanceOf[js.Any])
+    if (story_sliders != null) __obj.updateDynamic("story_sliders")(story_sliders.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseItem]
   }
 }

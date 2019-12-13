@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DestroyOptions extends SyncOptions {
+  /** @default true */
   var require: js.UndefOr[Boolean] = js.undefined
 }
 

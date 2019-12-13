@@ -10,11 +10,10 @@ trait DoneEventObject extends EventObject {
 
 object DoneEventObject {
   @scala.inline
-  def apply(`type`: String, data: js.Any = null, id: String | Double = null): DoneEventObject = {
+  def apply(`type`: String, data: js.Any = null): DoneEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoneEventObject]
   }
 }

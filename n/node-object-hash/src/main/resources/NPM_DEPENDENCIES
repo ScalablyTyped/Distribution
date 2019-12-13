@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-object-hash" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-object-hash" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

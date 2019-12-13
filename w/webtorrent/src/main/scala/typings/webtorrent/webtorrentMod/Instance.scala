@@ -38,6 +38,10 @@ trait Instance extends EventEmitter {
     opts: TorrentOptions,
     cb: js.Function1[/* torrent */ Torrent, _]
   ): Torrent = js.native
+  def add(torrent: File): Torrent = js.native
+  def add(torrent: File, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
+  def add(torrent: File, opts: TorrentOptions): Torrent = js.native
+  def add(torrent: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, _]): Torrent = js.native
   def destroy(): Unit = js.native
   def destroy(callback: js.Function1[/* err */ Error | String, Unit]): Unit = js.native
   def get(torrentId: String): Torrent | Unit = js.native

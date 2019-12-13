@@ -26,7 +26,7 @@ object typesInternalDispatcherMod extends js.Object {
     var queue: js.Array[Event[V]] = js.native
     var subscriptions: js.Array[Subscription[V]] = js.native
     var unsubSrc: js.UndefOr[Unsub] = js.native
-    def _subscribe(arg: EventSink[V]): js.Any = js.native
+    def _subscribe(arg: EventSink[V]): Unsub = js.native
     def handleEvent(event: Event[V]): js.Any = js.native
     def hasSubscribers(): Boolean = js.native
     def inspect(): js.Any = js.native

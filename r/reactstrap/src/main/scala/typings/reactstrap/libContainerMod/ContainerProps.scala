@@ -3,6 +3,7 @@ package typings.reactstrap.libContainerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
@@ -38,6 +39,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -76,7 +78,7 @@ trait ContainerProps
   extends HTMLAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var fluid: js.UndefOr[Boolean] = js.undefined
+  var fluid: js.UndefOr[Boolean | String] = js.undefined
   var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
@@ -140,7 +142,7 @@ object ContainerProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     cssModule: CSSModule = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -149,7 +151,7 @@ object ContainerProps {
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    fluid: js.UndefOr[Boolean] = js.undefined,
+    fluid: Boolean | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -319,7 +321,7 @@ object ContainerProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -328,7 +330,7 @@ object ContainerProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
+    if (fluid != null) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])

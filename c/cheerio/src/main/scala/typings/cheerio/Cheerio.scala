@@ -39,7 +39,7 @@ trait Cheerio
   // The map's values *can* be `any` but they'll all be cast to strings
   // regardless.
   def attr(map: StringDictionary[js.Any]): Cheerio = js.native
-  def attr(name: String): String = js.native
+  def attr(name: String): js.UndefOr[String] = js.native
   // `value` *can* be `any` here but:
   // 1. That makes type-checking the function-type useless
   // 2. It's converted to a string anyways

@@ -19,6 +19,7 @@ trait Transport extends js.Object {
   @JSName("emit")
   var emit_Original: emitFn with noopFn = js.native
   var maxRetries: Double = js.native
+  var opaqueIdPrefix: String | Null = js.native
   var requestTimeout: Double = js.native
   var serializer: typings.atElasticElasticsearch.libSerializerMod.default = js.native
   var sniffEndpoint: String = js.native

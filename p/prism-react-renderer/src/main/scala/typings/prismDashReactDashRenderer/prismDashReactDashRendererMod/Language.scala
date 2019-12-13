@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.scss
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.sql
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.stylus
+  - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.tsx
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.typescript
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.wasm
   - typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.yaml
@@ -98,6 +99,8 @@ object Language {
   def sql: typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.sql = this.cast("sql")
   @scala.inline
   def stylus: typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.stylus = this.cast("stylus")
+  @scala.inline
+  def tsx: typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.tsx = this.cast("tsx")
   @scala.inline
   def typescript: typings.prismDashReactDashRenderer.prismDashReactDashRendererStrings.typescript = this.cast("typescript")
   @scala.inline

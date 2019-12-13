@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_TAG_MISSING
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_REQUIRED_BY_MISSING
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_TAG_REQUIRED_BY_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_EXCLUDED_BY_TAG
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_EXTENSION_UNUSED
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.EXTENSION_UNUSED
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_EXTENSION_DEPRECATED_VERSION
@@ -21,18 +22,23 @@ import scala.scalajs.js.annotation._
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_ATTR_VALUE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_ATTRIBUTE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_VALUE_REQUIRED_BY_LAYOUT
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_LAYOUT_ATTRIBUTES
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.IMPLIED_LAYOUT_INVALID
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.SPECIFIED_LAYOUT_INVALID
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ATTR_MISSING
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ONEOF_ATTR_MISSING
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ANYOF_ATTR_MISSING
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_DIMENSION
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_UNIQUE_TAG
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DUPLICATE_UNIQUE_TAG_WARNING
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WRONG_PARENT_TAG
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.STYLESHEET_TOO_LONG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.STYLESHEET_AND_INLINE_STYLE_TOO_LONG
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INLINE_STYLE_TOO_LONG
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_CDATA_MISSING_OR_INCORRECT
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CDATA_VIOLATES_BLACKLIST
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.NON_WHITESPACE_CDATA_ENCOUNTERED
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_JSON_CDATA
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEPRECATED_ATTR
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEPRECATED_TAG
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_PROPERTY_MISSING_FROM_ATTR_VALUE
@@ -70,7 +76,9 @@ import scala.scalajs.js.annotation._
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.ATTR_MISSING_REQUIRED_EXTENSION
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DOCUMENT_TOO_COMPLEX
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_UTF8
-  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DOCUMENT_SIZE_LIMIT_EXCEEDED
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEV_MODE_ONLY
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.VALUE_SET_MISMATCH
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_INVALID_AT_RULE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_STRAY_TRAILING_BACKSLASH
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_UNTERMINATED_COMMENT
@@ -98,6 +106,7 @@ import scala.scalajs.js.annotation._
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_MEDIA_TYPE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_MEDIA_FEATURE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_PROPERTY_VALUE
+  - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_EXCESSIVELY_NESTED
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_DISALLOWED_PROPERTY_VALUE_WITH_HINT
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_PROPERTY_DISALLOWED_WITHIN_AT_RULE
   - typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_PROPERTY_DISALLOWED_TOGETHER_WITH
@@ -125,7 +134,7 @@ object ValidationErrorCode {
   @scala.inline
   def CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR = this.cast("CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR")
   @scala.inline
-  def CSS_SYNTAX: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX = this.cast("CSS_SYNTAX")
+  def CSS_EXCESSIVELY_NESTED: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_EXCESSIVELY_NESTED = this.cast("CSS_EXCESSIVELY_NESTED")
   @scala.inline
   def CSS_SYNTAX_BAD_URL: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.CSS_SYNTAX_BAD_URL = this.cast("CSS_SYNTAX_BAD_URL")
   @scala.inline
@@ -193,6 +202,8 @@ object ValidationErrorCode {
   @scala.inline
   def DEPRECATED_TAG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEPRECATED_TAG = this.cast("DEPRECATED_TAG")
   @scala.inline
+  def DEV_MODE_ONLY: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DEV_MODE_ONLY = this.cast("DEV_MODE_ONLY")
+  @scala.inline
   def DISALLOWED_ATTR: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_ATTR = this.cast("DISALLOWED_ATTR")
   @scala.inline
   def DISALLOWED_CHILD_TAG_NAME: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_CHILD_TAG_NAME = this.cast("DISALLOWED_CHILD_TAG_NAME")
@@ -214,6 +225,8 @@ object ValidationErrorCode {
   def DISALLOWED_TAG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_TAG = this.cast("DISALLOWED_TAG")
   @scala.inline
   def DISALLOWED_TAG_ANCESTOR: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DISALLOWED_TAG_ANCESTOR = this.cast("DISALLOWED_TAG_ANCESTOR")
+  @scala.inline
+  def DOCUMENT_SIZE_LIMIT_EXCEEDED: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DOCUMENT_SIZE_LIMIT_EXCEEDED = this.cast("DOCUMENT_SIZE_LIMIT_EXCEEDED")
   @scala.inline
   def DOCUMENT_TOO_COMPLEX: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.DOCUMENT_TOO_COMPLEX = this.cast("DOCUMENT_TOO_COMPLEX")
   @scala.inline
@@ -239,7 +252,11 @@ object ValidationErrorCode {
   @scala.inline
   def INCORRECT_NUM_CHILD_TAGS: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INCORRECT_NUM_CHILD_TAGS = this.cast("INCORRECT_NUM_CHILD_TAGS")
   @scala.inline
+  def INLINE_STYLE_TOO_LONG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INLINE_STYLE_TOO_LONG = this.cast("INLINE_STYLE_TOO_LONG")
+  @scala.inline
   def INVALID_ATTR_VALUE: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_ATTR_VALUE = this.cast("INVALID_ATTR_VALUE")
+  @scala.inline
+  def INVALID_JSON_CDATA: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_JSON_CDATA = this.cast("INVALID_JSON_CDATA")
   @scala.inline
   def INVALID_PROPERTY_VALUE_IN_ATTR_VALUE: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_PROPERTY_VALUE_IN_ATTR_VALUE = this.cast("INVALID_PROPERTY_VALUE_IN_ATTR_VALUE")
   @scala.inline
@@ -248,6 +265,8 @@ object ValidationErrorCode {
   def INVALID_URL_PROTOCOL: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_URL_PROTOCOL = this.cast("INVALID_URL_PROTOCOL")
   @scala.inline
   def INVALID_UTF8: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.INVALID_UTF8 = this.cast("INVALID_UTF8")
+  @scala.inline
+  def MANDATORY_ANYOF_ATTR_MISSING: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ANYOF_ATTR_MISSING = this.cast("MANDATORY_ANYOF_ATTR_MISSING")
   @scala.inline
   def MANDATORY_ATTR_MISSING: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_ATTR_MISSING = this.cast("MANDATORY_ATTR_MISSING")
   @scala.inline
@@ -267,6 +286,8 @@ object ValidationErrorCode {
   @scala.inline
   def MANDATORY_TAG_MISSING: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MANDATORY_TAG_MISSING = this.cast("MANDATORY_TAG_MISSING")
   @scala.inline
+  def MISSING_LAYOUT_ATTRIBUTES: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_LAYOUT_ATTRIBUTES = this.cast("MISSING_LAYOUT_ATTRIBUTES")
+  @scala.inline
   def MISSING_REQUIRED_EXTENSION: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_REQUIRED_EXTENSION = this.cast("MISSING_REQUIRED_EXTENSION")
   @scala.inline
   def MISSING_URL: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.MISSING_URL = this.cast("MISSING_URL")
@@ -277,7 +298,11 @@ object ValidationErrorCode {
   @scala.inline
   def SPECIFIED_LAYOUT_INVALID: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.SPECIFIED_LAYOUT_INVALID = this.cast("SPECIFIED_LAYOUT_INVALID")
   @scala.inline
+  def STYLESHEET_AND_INLINE_STYLE_TOO_LONG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.STYLESHEET_AND_INLINE_STYLE_TOO_LONG = this.cast("STYLESHEET_AND_INLINE_STYLE_TOO_LONG")
+  @scala.inline
   def STYLESHEET_TOO_LONG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.STYLESHEET_TOO_LONG = this.cast("STYLESHEET_TOO_LONG")
+  @scala.inline
+  def TAG_EXCLUDED_BY_TAG: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_EXCLUDED_BY_TAG = this.cast("TAG_EXCLUDED_BY_TAG")
   @scala.inline
   def TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS = this.cast("TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS")
   @scala.inline
@@ -292,6 +317,8 @@ object ValidationErrorCode {
   def UNESCAPED_TEMPLATE_IN_ATTR_VALUE: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.UNESCAPED_TEMPLATE_IN_ATTR_VALUE = this.cast("UNESCAPED_TEMPLATE_IN_ATTR_VALUE")
   @scala.inline
   def UNKNOWN_CODE: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.UNKNOWN_CODE = this.cast("UNKNOWN_CODE")
+  @scala.inline
+  def VALUE_SET_MISMATCH: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.VALUE_SET_MISMATCH = this.cast("VALUE_SET_MISMATCH")
   @scala.inline
   def WARNING_EXTENSION_DEPRECATED_VERSION: typings.amphtmlDashValidator.amphtmlDashValidatorStrings.WARNING_EXTENSION_DEPRECATED_VERSION = this.cast("WARNING_EXTENSION_DEPRECATED_VERSION")
   @scala.inline

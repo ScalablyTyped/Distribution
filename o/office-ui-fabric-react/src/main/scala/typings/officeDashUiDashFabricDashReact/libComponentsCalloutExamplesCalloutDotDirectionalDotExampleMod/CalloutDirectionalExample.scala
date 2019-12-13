@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 class CalloutDirectionalExample protected ()
   extends Component[js.Object, ICalloutDirectionalExampleState, js.Any] {
   def this(props: js.Object) = this()
+  var _descriptionId: js.Any = js.native
+  var _labelId: js.Any = js.native
   var _menuButtonElement: js.Any = js.native
   var _onBeakWidthSlider: js.Any = js.native
   var _onCalloutDismiss: js.Any = js.native

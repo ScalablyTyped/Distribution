@@ -5,7 +5,6 @@ import typings.node.Anon_Stderr
 import typings.node.Anon_StderrStdout
 import typings.node.Anon_StderrStdoutBuffer
 import typings.node.Buffer
-import typings.node.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +18,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      Error | Null, 
+      ExecException | Null, 
       Buffer | (/* stdout */ java.lang.String), 
       Buffer | (/* stderr */ java.lang.String), 
       Unit
@@ -34,14 +33,14 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def apply(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     options: ExecFileOptionsWithOtherEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -52,7 +51,7 @@ object execFile extends js.Object {
     args: js.UndefOr[scala.Nothing],
     options: ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -63,7 +62,7 @@ object execFile extends js.Object {
     args: js.UndefOr[scala.Nothing],
     options: ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -74,7 +73,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -90,7 +89,7 @@ object execFile extends js.Object {
     args: js.Array[java.lang.String],
     options: Anon_EncodingNull with ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -100,14 +99,14 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def apply(
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: ExecFileOptionsWithOtherEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -118,7 +117,7 @@ object execFile extends js.Object {
     args: js.Array[java.lang.String],
     options: ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -129,7 +128,7 @@ object execFile extends js.Object {
     args: js.Array[java.lang.String],
     options: ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -139,7 +138,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: Null,
     callback: js.Function3[
-      Error | Null, 
+      ExecException | Null, 
       Buffer | (/* stdout */ java.lang.String), 
       Buffer | (/* stderr */ java.lang.String), 
       Unit
@@ -150,14 +149,14 @@ object execFile extends js.Object {
     file: java.lang.String,
     args: Null,
     options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   def apply(
     file: java.lang.String,
     args: Null,
     options: ExecFileOptionsWithOtherEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -168,7 +167,7 @@ object execFile extends js.Object {
     args: Null,
     options: ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -179,7 +178,7 @@ object execFile extends js.Object {
     args: Null,
     options: ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -189,7 +188,7 @@ object execFile extends js.Object {
   def apply(
     file: java.lang.String,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -201,7 +200,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     options: Anon_EncodingNull with ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -211,7 +210,7 @@ object execFile extends js.Object {
   def apply(
     file: java.lang.String,
     options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[/* error */ Error | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[/* error */ ExecException | Null, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
   ): ChildProcess = js.native
   // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
   // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
@@ -219,7 +218,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     options: ExecFileOptionsWithOtherEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String | Buffer, 
       /* stderr */ java.lang.String | Buffer, 
       Unit
@@ -230,7 +229,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     options: ExecFileOptionsWithStringEncoding,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit
@@ -241,7 +240,7 @@ object execFile extends js.Object {
     file: java.lang.String,
     options: ExecFileOptions,
     callback: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ ExecException | Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
       Unit

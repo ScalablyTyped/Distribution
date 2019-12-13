@@ -1,7 +1,7 @@
 
 # Scala.js typings for playcanvas
 
-Typings are for version 1.23.5
+Typings are for version 1.24.1
 
 ## Library description:
 PlayCanvas WebGL game engine

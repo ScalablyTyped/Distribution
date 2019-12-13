@@ -194,8 +194,7 @@ trait PodSpec extends js.Object {
     * Share a single process namespace between all of the containers in a pod. When this is set
     * containers will be able to view and signal processes from other containers in the same pod,
     * and the first process in each container will not be assigned PID 1. HostPID and
-    * ShareProcessNamespace cannot both be set. Optional: Default to false. This field is
-    * beta-level and may be disabled with the PodShareProcessNamespace feature.
+    * ShareProcessNamespace cannot both be set. Optional: Default to false.
     */
   var shareProcessNamespace: js.UndefOr[Input[Boolean]] = js.undefined
   /**

@@ -14,6 +14,7 @@ object libAutoScrollMod extends js.Object {
     var _computeScrollVelocity: js.Any = js.native
     var _events: js.Any = js.native
     var _incrementScroll: js.Any = js.native
+    var _isVerticalScroll: js.Any = js.native
     var _onMouseMove: js.Any = js.native
     var _onTouchMove: js.Any = js.native
     var _scrollRect: js.Any = js.native

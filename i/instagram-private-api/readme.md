@@ -1,7 +1,7 @@
 
 # Scala.js typings for instagram-private-api
 
-Typings are for version 1.33.0
+Typings are for version 1.36.1
 
 ## Library description:
 Instagram private API wrapper for full access to instagram

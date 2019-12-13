@@ -80,6 +80,11 @@ trait UseAutocompleteProps extends js.Object {
     */
   var getOptionLabel: js.UndefOr[js.Function1[/* option */ js.Any, String]] = js.undefined
   /**
+    * Used to determine if an option is selected.
+    * Uses strict equality by default.
+    */
+  var getOptionSelected: js.UndefOr[js.Function2[/* option */ js.Any, /* value */ js.Any, Boolean]] = js.undefined
+  /**
     * If provided, the options will be grouped under the returned string.
     * The groupBy value is also used as the text for group headings when `renderGroup` is not provided.
     *
@@ -142,6 +147,9 @@ trait UseAutocompleteProps extends js.Object {
   var options: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * The value of the autocomplete.
+    *
+    * The value must have reference equality with the option in order to be selected.
+    * You can customize the equality behavior with the `getOptionSelected` prop.
     */
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -164,6 +172,7 @@ object UseAutocompleteProps {
     freeSolo: js.UndefOr[Boolean] = js.undefined,
     getOptionDisabled: /* option */ js.Any => Boolean = null,
     getOptionLabel: /* option */ js.Any => String = null,
+    getOptionSelected: (/* option */ js.Any, /* value */ js.Any) => Boolean = null,
     groupBy: /* option */ js.Any => String = null,
     id: String = null,
     includeInputInList: js.UndefOr[Boolean] = js.undefined,
@@ -193,6 +202,7 @@ object UseAutocompleteProps {
     if (!js.isUndefined(freeSolo)) __obj.updateDynamic("freeSolo")(freeSolo.asInstanceOf[js.Any])
     if (getOptionDisabled != null) __obj.updateDynamic("getOptionDisabled")(js.Any.fromFunction1(getOptionDisabled))
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))
+    if (getOptionSelected != null) __obj.updateDynamic("getOptionSelected")(js.Any.fromFunction2(getOptionSelected))
     if (groupBy != null) __obj.updateDynamic("groupBy")(js.Any.fromFunction1(groupBy))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(includeInputInList)) __obj.updateDynamic("includeInputInList")(includeInputInList.asInstanceOf[js.Any])

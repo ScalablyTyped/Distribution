@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
   *
   * An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

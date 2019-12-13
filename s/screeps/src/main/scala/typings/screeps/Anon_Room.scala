@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Room extends js.Object {
-  // EVENT_EXIT
   var room: String
   var x: Double
   var y: Double

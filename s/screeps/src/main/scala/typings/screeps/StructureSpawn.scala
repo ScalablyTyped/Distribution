@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
+import typings.screeps.screepsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,13 +15,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StructureSpawn
   extends OwnedStructure[STRUCTURE_SPAWN]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with AnyStoreStructure {
   /**
     * The amount of energy containing in the spawn.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   var energy: Double = js.native
   /**
     * The total amount of energy the spawn can contain
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   var energyCapacity: Double = js.native
   /**
@@ -40,6 +44,10 @@ trait StructureSpawn
     * If the spawn is in process of spawning a new creep, this object will contain the new creep’s information, or null otherwise.
     */
   var spawning: Spawning | Null = js.native
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  var store: Store[RESOURCE_ENERGY, `false`] = js.native
   /**
     * Check if a creep can be created.
     *

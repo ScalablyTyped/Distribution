@@ -7,18 +7,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Border extends js.Object {
-  var border: js.UndefOr[Vec4] = js.undefined
-  var pivot: js.UndefOr[Vec2] = js.undefined
-  var rect: js.UndefOr[Vec4] = js.undefined
+  var border: Vec4
+  var pivot: Vec2
+  var rect: Vec4
 }
 
 object Anon_Border {
   @scala.inline
-  def apply(border: Vec4 = null, pivot: Vec2 = null, rect: Vec4 = null): Anon_Border = {
-    val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
-    if (rect != null) __obj.updateDynamic("rect")(rect.asInstanceOf[js.Any])
+  def apply(border: Vec4, pivot: Vec2, rect: Vec4): Anon_Border = {
+    val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], pivot = pivot.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Border]
   }
 }

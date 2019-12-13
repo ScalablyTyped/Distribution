@@ -15,7 +15,7 @@ trait SharedStatelessProps extends js.Object {
   var focusMenu: js.UndefOr[js.Function1[/* event */ FocusEvent | MouseEvent | KeyboardEvent, _]] = js.undefined
   var getRequiredItemProps: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]] = js.undefined
   var highlightedIndex: js.UndefOr[Double] = js.undefined
-  var items: js.Array[_]
+  var items: ItemsT
   var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.reactMod.FocusEvent[HTMLElement], _]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.reactMod.FocusEvent[HTMLElement], _]] = js.undefined
@@ -26,7 +26,7 @@ trait SharedStatelessProps extends js.Object {
 object SharedStatelessProps {
   @scala.inline
   def apply(
-    items: js.Array[_],
+    items: ItemsT,
     activedescendantId: String = null,
     focusMenu: /* event */ FocusEvent | MouseEvent | KeyboardEvent => _ = null,
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,

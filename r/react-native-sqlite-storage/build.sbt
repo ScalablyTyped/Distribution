@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-sqlite-storage"
-version := "3.3-dt-20180529Z-678887"
+version := "3.3-dt-20191207Z-e0f2d3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

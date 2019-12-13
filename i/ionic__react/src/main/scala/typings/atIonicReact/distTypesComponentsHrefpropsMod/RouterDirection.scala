@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.atIonicReact.atIonicReactStrings.forward
   - typings.atIonicReact.atIonicReactStrings.back
+  - typings.atIonicReact.atIonicReactStrings.root
   - typings.atIonicReact.atIonicReactStrings.none
 */
 trait RouterDirection extends js.Object
@@ -20,5 +21,7 @@ object RouterDirection {
   def forward: typings.atIonicReact.atIonicReactStrings.forward = this.cast("forward")
   @scala.inline
   def none: typings.atIonicReact.atIonicReactStrings.none = this.cast("none")
+  @scala.inline
+  def root: typings.atIonicReact.atIonicReactStrings.root = this.cast("root")
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "materialize-css"
-version := "1.0-dt-20181208Z-a69e8b"
+version := "1.0-dt-20191204Z-319aac"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

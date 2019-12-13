@@ -5,11 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mailparserMod {
+  import typings.mailparser.Anon_Key
   import typings.node.Buffer
   import typings.node.streamMod.Stream
   import typings.std.Date
   import typings.std.Map
 
+  type HeaderLines = js.Array[Anon_Key]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - js.Array[java.lang.String]

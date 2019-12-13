@@ -3,7 +3,12 @@ package typings.xstate.libTypesMod
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.xstateNumbers.`false`
 import typings.xstate.xstateNumbers.`true`
+import typings.xstate.xstateStrings.`final`
+import typings.xstate.xstateStrings.atomic
+import typings.xstate.xstateStrings.compound
 import typings.xstate.xstateStrings.deep
+import typings.xstate.xstateStrings.history
+import typings.xstate.xstateStrings.parallel
 import typings.xstate.xstateStrings.shallow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,27 +26,27 @@ object HistoryStateNodeConfig {
     history: shallow | deep | `true`,
     activities: SingleOrArray[Activity[TContext, TEvent]] = null,
     after: DelayedTransitions[TContext, TEvent] = null,
-    context: TContext = null,
+    context: TContext | js.Function0[TContext] = null,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     delimiter: String = null,
-    entry: SingleOrArray[Action[TContext, TEvent]] = null,
-    exit: SingleOrArray[Action[TContext, TEvent]] = null,
+    entry: Actions[TContext, TEvent] = null,
+    exit: Actions[TContext, TEvent] = null,
     id: String = null,
     initial: js.UndefOr[scala.Nothing] = js.undefined,
-    invoke: InvokesConfig[TContext, TEvent] = null,
+    invoke: SingleOrArray[InvokeConfig[TContext, TEvent]] = null,
     key: String = null,
     meta: js.Any = null,
     on: TransitionsConfig[TContext, TEvent] = null,
     onDone: js.UndefOr[scala.Nothing] = js.undefined,
-    onEntry: SingleOrArray[Action[TContext, TEvent]] = null,
-    onExit: SingleOrArray[Action[TContext, TEvent]] = null,
+    onEntry: Actions[TContext, TEvent] = null,
+    onExit: Actions[TContext, TEvent] = null,
     order: Int | Double = null,
     parallel: `false` = null,
-    parent: StateNode[TContext, _, TEvent] = null,
+    parent: StateNode[TContext, _, TEvent, _] = null,
     states: js.UndefOr[scala.Nothing] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined,
     target: StateValue = null,
-    `type`: StateTypes = null
+    `type`: atomic | compound | parallel | `final` | history = null
   ): HistoryStateNodeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
     if (activities != null) __obj.updateDynamic("activities")(activities.asInstanceOf[js.Any])

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait PureAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
   @JSName("type")
   var type_PureAction: Pure
-  def get(context: TContext, event: OmniEventObject[TEvent]): js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]
+  def get(context: TContext, event: TEvent): js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]
 }
 
 object PureAction {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
-    get: (TContext, OmniEventObject[TEvent]) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]],
+    get: (TContext, TEvent) => js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]],
     `type`: Pure,
     exec: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => js.Any | Unit = null
   ): PureAction[TContext, TEvent] = {

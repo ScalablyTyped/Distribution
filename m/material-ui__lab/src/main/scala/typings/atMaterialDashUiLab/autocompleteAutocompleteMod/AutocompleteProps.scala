@@ -18,10 +18,12 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.execute
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grammar
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.grid
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.horizontal
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.inherit
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.link
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.list
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.listbox
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.location
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.medium
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.menu
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.mixed
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.move
@@ -36,6 +38,7 @@ import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.polite
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.popup
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.removals
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.search
+import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.small
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.spelling
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.step
 import typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tel
@@ -49,6 +52,7 @@ import typings.atMaterialDashUiLab.useAutocompleteUseAutocompleteMod.FilterOptio
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent
@@ -182,6 +186,8 @@ trait AutocompleteProps extends js.Object {
   var clearOnEscape: js.UndefOr[Boolean] = js.undefined
   /**
     * Override the default text for the *clear* icon button.
+    *
+    * For localization purposes, you can use the provided [translations](/guides/localization/).
     */
   var clearText: js.UndefOr[String] = js.undefined
   /**
@@ -190,10 +196,12 @@ trait AutocompleteProps extends js.Object {
   var closeIcon: js.UndefOr[ReactNode] = js.undefined
   /**
     * Override the default text for the *close popup* icon button.
+    *
+    * For localization purposes, you can use the provided [translations](/guides/localization/).
     */
   var closeText: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
@@ -234,7 +242,7 @@ trait AutocompleteProps extends js.Object {
     * If `true`, the input will be disabled.
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   /**
     * A filter function that determines the options that are eligible.
     *
@@ -262,6 +270,11 @@ trait AutocompleteProps extends js.Object {
     * It's used to fill the input (and the list box options if `renderOption` is not provided).
     */
   var getOptionLabel: js.UndefOr[js.Function1[/* option */ js.Any, String]] = js.undefined
+  /**
+    * Used to determine if an option is selected.
+    * Uses strict equality by default.
+    */
+  var getOptionSelected: js.UndefOr[js.Function2[/* option */ js.Any, /* value */ js.Any, Boolean]] = js.undefined
   /**
     * If provided, the options will be grouped under the returned string.
     * The groupBy value is also used as the text for group headings when `renderGroup` is not provided.
@@ -300,6 +313,8 @@ trait AutocompleteProps extends js.Object {
   var loading: js.UndefOr[Boolean] = js.undefined
   /**
     * Text to display when in a loading state.
+    *
+    * For localization purposes, you can use the provided [translations](/guides/localization/).
     */
   var loadingText: js.UndefOr[ReactNode] = js.undefined
   /**
@@ -308,6 +323,8 @@ trait AutocompleteProps extends js.Object {
   var multiple: js.UndefOr[Boolean] = js.undefined
   /**
     * Text to display when there are no options.
+    *
+    * For localization purposes, you can use the provided [translations](/guides/localization/).
     */
   var noOptionsText: js.UndefOr[ReactNode] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -422,6 +439,8 @@ trait AutocompleteProps extends js.Object {
   var open: js.UndefOr[Boolean] = js.undefined
   /**
     * Override the default text for the *open popup* icon button.
+    *
+    * For localization purposes, you can use the provided [translations](/guides/localization/).
     */
   var openText: js.UndefOr[String] = js.undefined
   /**
@@ -463,8 +482,12 @@ trait AutocompleteProps extends js.Object {
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
+  /**
+    * The size of the autocomplete.
+    */
+  var size: js.UndefOr[small | medium] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -475,6 +498,9 @@ trait AutocompleteProps extends js.Object {
   var unselectable: js.UndefOr[on | off] = js.undefined
   /**
     * The value of the autocomplete.
+    *
+    * The value must have reference equality with the option in order to be selected.
+    * You can customize the equality behavior with the `getOptionSelected` prop.
     */
   var value: js.UndefOr[js.Any] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
@@ -557,7 +583,7 @@ object AutocompleteProps {
     closeIcon: ReactNode = null,
     closeText: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -577,6 +603,7 @@ object AutocompleteProps {
     freeSolo: js.UndefOr[Boolean] = js.undefined,
     getOptionDisabled: /* option */ js.Any => Boolean = null,
     getOptionLabel: /* option */ js.Any => String = null,
+    getOptionSelected: (/* option */ js.Any, /* value */ js.Any) => Boolean = null,
     groupBy: /* option */ js.Any => String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -693,6 +720,7 @@ object AutocompleteProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
+    size: small | medium = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -773,7 +801,7 @@ object AutocompleteProps {
     if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
     if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -793,6 +821,7 @@ object AutocompleteProps {
     if (!js.isUndefined(freeSolo)) __obj.updateDynamic("freeSolo")(freeSolo.asInstanceOf[js.Any])
     if (getOptionDisabled != null) __obj.updateDynamic("getOptionDisabled")(js.Any.fromFunction1(getOptionDisabled))
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))
+    if (getOptionSelected != null) __obj.updateDynamic("getOptionSelected")(js.Any.fromFunction2(getOptionSelected))
     if (groupBy != null) __obj.updateDynamic("groupBy")(js.Any.fromFunction1(groupBy))
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
@@ -909,6 +938,7 @@ object AutocompleteProps {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

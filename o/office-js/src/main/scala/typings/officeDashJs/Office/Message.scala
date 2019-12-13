@@ -23,8 +23,6 @@ trait Message extends Item {
     * You get null for this property for a new item in a compose form. 
     * If the user sets a subject and saves the item, the conversationId property will return a value.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

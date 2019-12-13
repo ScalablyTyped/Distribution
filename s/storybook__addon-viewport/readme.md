@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-viewport
 
-Typings are for version 5.2.6
+Typings are for version 5.2.8
 
 ## Library description:
 Storybook addon to change the viewport size to mobile

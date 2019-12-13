@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__vue
 
-Typings are for version 5.2.6
+Typings are for version 5.2.8
 
 ## Library description:
 Storybook for Vue: Develop Vue Component in isolation with Hot Reloading.

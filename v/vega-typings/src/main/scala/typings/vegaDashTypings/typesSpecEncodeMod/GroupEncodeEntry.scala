@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait GroupEncodeEntry extends RectEncodeEntry {
   var clip: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
+  var strokeForeground: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
+  var strokeOffset: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 
 object GroupEncodeEntry {
@@ -26,8 +28,10 @@ object GroupEncodeEntry {
     strokeCap: ProductionRule[StringValueRef] = null,
     strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
     strokeDashOffset: ProductionRule[NumericValueRef] = null,
+    strokeForeground: ProductionRule[BooleanValueRef] = null,
     strokeJoin: ProductionRule[StringValueRef] = null,
     strokeMiterLimit: ProductionRule[NumericValueRef] = null,
+    strokeOffset: ProductionRule[NumericValueRef] = null,
     strokeOpacity: ProductionRule[NumericValueRef] = null,
     strokeWidth: ProductionRule[NumericValueRef] = null,
     tooltip: ProductionRule[StringValueRef] = null,
@@ -55,8 +59,10 @@ object GroupEncodeEntry {
     if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
     if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])
     if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])
+    if (strokeForeground != null) __obj.updateDynamic("strokeForeground")(strokeForeground.asInstanceOf[js.Any])
     if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin.asInstanceOf[js.Any])
     if (strokeMiterLimit != null) __obj.updateDynamic("strokeMiterLimit")(strokeMiterLimit.asInstanceOf[js.Any])
+    if (strokeOffset != null) __obj.updateDynamic("strokeOffset")(strokeOffset.asInstanceOf[js.Any])
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

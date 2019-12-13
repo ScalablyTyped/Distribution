@@ -4,10 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("natural", "TreebankWordTokenizer")
-@js.native
-class TreebankWordTokenizer () extends Tokenizer {
-  /* CompleteClass */
-  override def tokenize(text: String): js.Array[String] = js.native
+trait TreebankWordTokenizer extends Tokenizer
+
+object TreebankWordTokenizer {
+  @scala.inline
+  def apply(tokenize: String => js.Array[String]): TreebankWordTokenizer = {
+    val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
+  
+    __obj.asInstanceOf[TreebankWordTokenizer]
+  }
 }
 

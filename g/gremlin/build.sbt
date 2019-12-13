@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gremlin"
-version := "3.4-dt-20190805Z-2553ed"
+version := "3.4-dt-20191210Z-853078"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

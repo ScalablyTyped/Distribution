@@ -26,6 +26,10 @@ object srcInterfacesGeneratorsIdentifierDashNamesDashGeneratorsIIdentifierNamesG
       * @returns {boolean}
       */
     def isValidIdentifierName(identifierName: String): Boolean = js.native
+    /**
+      * @param {string} name
+      */
+    def preserveName(name: String): Unit = js.native
   }
   
 }

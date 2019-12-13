@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 /**
   * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
-  * 
-  * [Api set: Mailbox 1.0]
   *
   * @remarks
   * 
@@ -58,8 +56,6 @@ trait UserProfile extends js.Object {
   /**
     * Gets the user's display name.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -70,8 +66,6 @@ trait UserProfile extends js.Object {
   /**
     * Gets the user's display name.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -81,8 +75,6 @@ trait UserProfile extends js.Object {
   var emailAddress: String
   /**
     * Gets the user's SMTP email address.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 

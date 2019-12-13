@@ -1896,12 +1896,6 @@ object officeDashJsDashPreviewStrings {
   sealed trait LinearTrend extends js.Object
   
   @js.native
-  sealed trait LinkedEntityFinanceIcon extends js.Object
-  
-  @js.native
-  sealed trait LinkedEntityMapIcon extends js.Object
-  
-  @js.native
   sealed trait List extends js.Object
   
   @js.native
@@ -4769,10 +4763,6 @@ object officeDashJsDashPreviewStrings {
   def LinearGradient: LinearGradient = "LinearGradient".asInstanceOf[LinearGradient]
   @scala.inline
   def LinearTrend: LinearTrend = "LinearTrend".asInstanceOf[LinearTrend]
-  @scala.inline
-  def LinkedEntityFinanceIcon: LinkedEntityFinanceIcon = "LinkedEntityFinanceIcon".asInstanceOf[LinkedEntityFinanceIcon]
-  @scala.inline
-  def LinkedEntityMapIcon: LinkedEntityMapIcon = "LinkedEntityMapIcon".asInstanceOf[LinkedEntityMapIcon]
   @scala.inline
   def List: List = "List".asInstanceOf[List]
   @scala.inline

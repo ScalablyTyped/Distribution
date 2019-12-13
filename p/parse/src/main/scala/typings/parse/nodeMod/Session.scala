@@ -1,18 +1,12 @@
 package typings.parse.nodeMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.parse.Parse.SessionConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("parse/node", "Session")
 @js.native
-class Session[T /* <: js.Any */] ()
-  extends typings.parse.Parse.Session[T]
-
-/* static members */
-@JSImport("parse/node", "Session")
-@js.native
-object Session extends js.Object {
-  def current(): js.Promise[typings.parse.Parse.Session[_]] = js.native
-}
+object Session extends TopLevel[SessionConstructor]
 

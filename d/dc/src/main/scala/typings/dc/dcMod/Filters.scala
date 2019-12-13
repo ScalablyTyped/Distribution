@@ -5,19 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Filters extends js.Object {
-  def RangedFilter(low: js.Any, high: js.Any): Filter
-  def RangedTwoDimensionalFilter(arr: js.Array[_]): Filter
-  def TwoDimensionalFilter(arr: js.Array[_]): Filter
+  def HierarchyFilter(path: String): Filter
+  def RangedFilter(low: Double, high: Double): Filter
+  def RangedTwoDimensionalFilter(arr: js.Array[js.Array[Double]]): Filter
+  def TwoDimensionalFilter(filter: js.Array[Double]): Filter
 }
 
 object Filters {
   @scala.inline
   def apply(
-    RangedFilter: (js.Any, js.Any) => Filter,
-    RangedTwoDimensionalFilter: js.Array[_] => Filter,
-    TwoDimensionalFilter: js.Array[_] => Filter
+    HierarchyFilter: String => Filter,
+    RangedFilter: (Double, Double) => Filter,
+    RangedTwoDimensionalFilter: js.Array[js.Array[Double]] => Filter,
+    TwoDimensionalFilter: js.Array[Double] => Filter
   ): Filters = {
-    val __obj = js.Dynamic.literal(RangedFilter = js.Any.fromFunction2(RangedFilter), RangedTwoDimensionalFilter = js.Any.fromFunction1(RangedTwoDimensionalFilter), TwoDimensionalFilter = js.Any.fromFunction1(TwoDimensionalFilter))
+    val __obj = js.Dynamic.literal(HierarchyFilter = js.Any.fromFunction1(HierarchyFilter), RangedFilter = js.Any.fromFunction2(RangedFilter), RangedTwoDimensionalFilter = js.Any.fromFunction1(RangedTwoDimensionalFilter), TwoDimensionalFilter = js.Any.fromFunction1(TwoDimensionalFilter))
   
     __obj.asInstanceOf[Filters]
   }

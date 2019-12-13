@@ -22,6 +22,13 @@ trait CPU extends js.Object {
     */
   var getHeapStatistics: js.UndefOr[js.Function0[HeapStatistics]] = js.undefined
   /**
+    * This method will be undefined if you are not using IVM.
+    *
+    * Reset your runtime environment and wipe all data in heap memory.
+    * Player code execution stops immediately.
+    */
+  var halt: js.UndefOr[js.Function0[scala.Nothing]] = js.undefined
+  /**
     * Your assigned CPU limit for the current shard.
     */
   var limit: Double
@@ -56,10 +63,12 @@ object CPU {
     setShardLimits: CPUShardLimits => OK | ERR_BUSY | ERR_INVALID_ARGS,
     shardLimits: CPUShardLimits,
     tickLimit: Double,
-    getHeapStatistics: () => HeapStatistics = null
+    getHeapStatistics: () => HeapStatistics = null,
+    halt: () => scala.Nothing = null
   ): CPU = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], getUsed = js.Any.fromFunction0(getUsed), limit = limit.asInstanceOf[js.Any], setShardLimits = js.Any.fromFunction1(setShardLimits), shardLimits = shardLimits.asInstanceOf[js.Any], tickLimit = tickLimit.asInstanceOf[js.Any])
     if (getHeapStatistics != null) __obj.updateDynamic("getHeapStatistics")(js.Any.fromFunction0(getHeapStatistics))
+    if (halt != null) __obj.updateDynamic("halt")(js.Any.fromFunction0(halt))
     __obj.asInstanceOf[CPU]
   }
 }

@@ -35,6 +35,6 @@ object runtimeStackMod extends js.Object {
   val rootPulumiStackTypeName: `pulumi:pulumi:Stack` = js.native
   def getStackResource(): js.UndefOr[Stack] = js.native
   def registerStackTransformation(t: ResourceTransformation): Unit = js.native
-  def runInPulumiStack(init: js.Function0[_]): js.Promise[js.UndefOr[Inputs]] = js.native
+  def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native
 }
 

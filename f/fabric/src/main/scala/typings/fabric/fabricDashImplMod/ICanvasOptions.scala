@@ -61,7 +61,7 @@ trait ICanvasOptions extends IStaticCanvasOptions {
   /**
   	 * Color of object's fill
   	 */
-  var fill: js.UndefOr[String | Pattern] = js.undefined
+  var fill: js.UndefOr[String | Pattern | Gradient] = js.undefined
   /**
   	 * Indicates if the canvas can fire middle click events
   	 * @type Boolean
@@ -220,7 +220,7 @@ object ICanvasOptions {
     controlsAboveOverlay: js.UndefOr[Boolean] = js.undefined,
     defaultCursor: String = null,
     enableRetinaScaling: js.UndefOr[Boolean] = js.undefined,
-    fill: String | Pattern = null,
+    fill: String | Pattern | Gradient = null,
     fireMiddleClick: js.UndefOr[Boolean] = js.undefined,
     fireRightClick: js.UndefOr[Boolean] = js.undefined,
     freeDrawingCursor: String = null,

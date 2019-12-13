@@ -1,5 +1,8 @@
 package typings.parse.reactDashNativeMod
 
+import typings.parse.Anon_Base64
+import typings.parse.Anon_Uri
+import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,12 +10,11 @@ import scala.scalajs.js.annotation._
 /**
   * A Parse.File is a local representation of a file that is saved to the Parse
   * cloud.
-  * @class
-  * @param name {String} The file's name. This will be prefixed by a unique
+  * @param name The file's name. This will be prefixed by a unique
   *     value once the file has finished saving. The file name must begin with
   *     an alphanumeric character, and consist of alphanumeric characters,
   *     periods, spaces, underscores, or dashes.
-  * @param data {Array} The data for the file, as either:
+  * @param data The data for the file, as either:
   *     1. an Array of byte value Numbers, or
   *     2. an Object like { base64: "..." } with a base64-encoded String.
   *     3. a File object selected with a file upload control. (3) only works
@@ -29,7 +31,7 @@ import scala.scalajs.js.annotation._
   *     // The file either could not be read, or could not be saved to Parse.
   *   });
   * }</pre>
-  * @param type {String} Optional Content-Type header to use for the file. If
+  * @param type Optional Content-Type header to use for the file. If
   *     this is omitted, the content type will be inferred from the name's
   *     extension.
   */
@@ -37,7 +39,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class File protected ()
   extends typings.parse.nodeMod.File {
-  def this(name: String, data: js.Any) = this()
-  def this(name: String, data: js.Any, `type`: String) = this()
+  def this(name: String, data: js.Array[Double]) = this()
+  def this(name: String, data: Anon_Base64) = this()
+  def this(name: String, data: Anon_Uri) = this()
+  def this(name: String, data: Blob) = this()
+  def this(name: String, data: js.Array[Double], `type`: String) = this()
+  def this(name: String, data: Anon_Base64, `type`: String) = this()
+  def this(name: String, data: Anon_Uri, `type`: String) = this()
+  def this(name: String, data: Blob, `type`: String) = this()
 }
 

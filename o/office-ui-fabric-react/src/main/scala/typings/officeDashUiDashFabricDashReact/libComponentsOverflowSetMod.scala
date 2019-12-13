@@ -1,10 +1,7 @@
 package typings.officeDashUiDashFabricDashReact
 
 import typings.officeDashUiDashFabricDashReact.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.role
-import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.vertical
 import typings.react.reactMod.StatelessComponent
-import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,11 +16,5 @@ object libComponentsOverflowSetMod extends js.Object {
   }
   
   val OverflowSet: StatelessComponent[IOverflowSetProps] = js.native
-  /* static members */
-  @js.native
-  object OverflowSetBase extends js.Object {
-    var defaultProps: Pick[IOverflowSetProps, vertical | role] = js.native
-  }
-  
 }
 

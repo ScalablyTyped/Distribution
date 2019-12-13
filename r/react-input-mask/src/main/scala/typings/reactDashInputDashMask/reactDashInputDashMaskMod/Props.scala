@@ -3,6 +3,7 @@ package typings.reactDashInputDashMask.reactDashInputDashMaskMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent
@@ -39,6 +40,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -68,6 +70,7 @@ import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event
 import typings.std.HTMLInputElement
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,7 +117,7 @@ trait Props extends InputHTMLAttributes[HTMLInputElement] {
     * Any character can be escaped with backslash, which usually will appear as double backslash in JS strings.
     * For example, German phone mask with unremoveable prefix +49 will look like `mask="+4\\9 99 999 99"` or `mask={"+4\\\\9 99 999 99"}`
     */
-  var mask: String
+  var mask: String | (js.Array[String | RegExp])
   /**
     * Character to cover unfilled editable parts of mask. Default character is "_". If set to null, unfilled parts will be empty, like in ordinary input.
     */
@@ -124,7 +127,7 @@ trait Props extends InputHTMLAttributes[HTMLInputElement] {
 object Props {
   @scala.inline
   def apply(
-    mask: String,
+    mask: String | (js.Array[String | RegExp]),
     about: String = null,
     accept: String = null,
     accessKey: String = null,
@@ -189,7 +192,7 @@ object Props {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     crossOrigin: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -400,7 +403,7 @@ object Props {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])

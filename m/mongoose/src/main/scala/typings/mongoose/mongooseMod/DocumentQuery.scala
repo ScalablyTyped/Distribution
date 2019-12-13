@@ -473,7 +473,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   /**
     * Determines the MongoDB nodes from which to read.
     * @param pref one of the listed preference options or aliases
-    * @tags optional tags for this query
+    * @param tags optional tags for this query
     */
   def read(pref: String): this.type = js.native
   def read(pref: String, tags: js.Array[_]): this.type = js.native

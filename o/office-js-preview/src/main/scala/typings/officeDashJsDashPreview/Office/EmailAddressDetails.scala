@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 /**
   * Provides the email properties of the sender or specified recipients of an email message or appointment.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

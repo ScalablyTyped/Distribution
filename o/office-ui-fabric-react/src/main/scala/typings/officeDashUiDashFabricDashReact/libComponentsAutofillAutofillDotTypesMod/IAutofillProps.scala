@@ -5,6 +5,7 @@ import typings.atUifabricUtilities.libKeyCodesMod.KeyCodes
 import typings.officeDashUiDashFabricDashReact.libComponentsAutofillAutofillMod.Autofill
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ClipboardEvent
@@ -40,6 +41,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -95,12 +97,22 @@ trait IAutofillProps extends InputHTMLAttributes[HTMLInputElement | Autofill] {
   var enableAutofillOnKeyPress: js.UndefOr[js.Array[KeyCodes]] = js.undefined
   /**
     * A callback used to modify the input string.
+    *
+    * @param composing - true if the change event was triggered while the
+    * inner input was in the middle of a multi-character composition.
+    * (for example, jp-hiragana IME input)
     */
-  var onInputChange: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
+  var onInputChange: js.UndefOr[js.Function2[/* value */ String, /* composing */ Boolean, String]] = js.undefined
   /**
     * A callback for when the current input value changes.
+    *
+    * @param composing - true if the change event was triggered while the
+    * inner input was in the middle of a multi-character composition.
+    * (for example, jp-hiragana IME input)
     */
-  var onInputValueChange: js.UndefOr[js.Function1[/* newValue */ js.UndefOr[String], Unit]] = js.undefined
+  var onInputValueChange: js.UndefOr[
+    js.Function2[/* newValue */ js.UndefOr[String], /* composing */ js.UndefOr[Boolean], Unit]
+  ] = js.undefined
   /**
     * Should the value of the input be selected? True if we're focused on our input, false otherwise.
     * We need to explicitly not select the text in the autofill if we are no longer focused.
@@ -193,7 +205,7 @@ object IAutofillProps {
     className: String = null,
     color: String = null,
     componentRef: IRefObject[IAutofill] = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     crossOrigin: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -263,8 +275,8 @@ object IAutofillProps {
     onError: SyntheticEvent[HTMLInputElement | Autofill, Event] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement | Autofill] => Unit = null,
     onInput: FormEvent[HTMLInputElement | Autofill] => Unit = null,
-    onInputChange: /* value */ String => String = null,
-    onInputValueChange: /* newValue */ js.UndefOr[String] => Unit = null,
+    onInputChange: (/* value */ String, /* composing */ Boolean) => String = null,
+    onInputValueChange: (/* newValue */ js.UndefOr[String], /* composing */ js.UndefOr[Boolean]) => Unit = null,
     onInvalid: FormEvent[HTMLInputElement | Autofill] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLInputElement | Autofill] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLInputElement | Autofill] => Unit = null,
@@ -408,7 +420,7 @@ object IAutofillProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -478,8 +490,8 @@ object IAutofillProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction1(onInputChange))
-    if (onInputValueChange != null) __obj.updateDynamic("onInputValueChange")(js.Any.fromFunction1(onInputValueChange))
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(js.Any.fromFunction2(onInputChange))
+    if (onInputValueChange != null) __obj.updateDynamic("onInputValueChange")(js.Any.fromFunction2(onInputValueChange))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))

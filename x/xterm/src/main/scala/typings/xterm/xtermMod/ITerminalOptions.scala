@@ -34,7 +34,7 @@ trait ITerminalOptions extends js.Object {
   var cols: js.UndefOr[Double] = js.undefined
   /**
     * When enabled the cursor will be set to the beginning of the next line
-    * with every new line. This equivalent to sending '\r\n' for each '\n'.
+    * with every new line. This is equivalent to sending '\r\n' for each '\n'.
     * Normally the termios settings of the underlying PTY deals with the
     * translation of '\n' to '\r\n' and this setting should not be used. If you
     * deal with data from a non-PTY related source, this settings might be
@@ -112,6 +112,17 @@ trait ITerminalOptions extends js.Object {
     * Whether to treat option as the meta key.
     */
   var macOptionIsMeta: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The minimum contrast ratio for text in the terminal, setting this will
+    * change the foreground color dynamically depending on whether the contrast
+    * ratio is met. Example values:
+    *
+    * - 1: The default, do nothing.
+    * - 4.5: Minimum for WCAG AA compliance.
+    * - 7: Minimum for WCAG AAA compliance.
+    * - 21: White on black or black on white.
+    */
+  var minimumContrastRatio: js.UndefOr[Double] = js.undefined
   /**
     * The type of renderer to use, this allows using the fallback DOM renderer
     * when canvas is too slow for the environment. The following features do
@@ -195,6 +206,7 @@ object ITerminalOptions {
     logLevel: LogLevel = null,
     macOptionClickForcesSelection: js.UndefOr[Boolean] = js.undefined,
     macOptionIsMeta: js.UndefOr[Boolean] = js.undefined,
+    minimumContrastRatio: Int | Double = null,
     rendererType: RendererType = null,
     rightClickSelectsWord: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
@@ -227,6 +239,7 @@ object ITerminalOptions {
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(macOptionClickForcesSelection)) __obj.updateDynamic("macOptionClickForcesSelection")(macOptionClickForcesSelection.asInstanceOf[js.Any])
     if (!js.isUndefined(macOptionIsMeta)) __obj.updateDynamic("macOptionIsMeta")(macOptionIsMeta.asInstanceOf[js.Any])
+    if (minimumContrastRatio != null) __obj.updateDynamic("minimumContrastRatio")(minimumContrastRatio.asInstanceOf[js.Any])
     if (rendererType != null) __obj.updateDynamic("rendererType")(rendererType.asInstanceOf[js.Any])
     if (!js.isUndefined(rightClickSelectsWord)) __obj.updateDynamic("rightClickSelectsWord")(rightClickSelectsWord.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

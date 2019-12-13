@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "vega-scale" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "vega-scale" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

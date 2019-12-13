@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureRoad")
 @js.native
 class StructureRoadCls protected () extends StructureRoad {
-  def this(id: String) = this()
+  def this(id: Id[StructureRoad]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -27,7 +27,7 @@ class StructureRoadCls protected () extends StructureRoad {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * An object representing the position of this object in the room.
     */

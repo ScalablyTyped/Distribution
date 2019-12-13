@@ -54,6 +54,9 @@ object preactStrings {
   sealed trait linearRGB extends js.Object
   
   @js.native
+  sealed trait ltr extends js.Object
+  
+  @js.native
   sealed trait mathematical extends js.Object
   
   @js.native
@@ -79,6 +82,9 @@ object preactStrings {
   
   @js.native
   sealed trait round extends js.Object
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait sRGB extends js.Object
@@ -134,6 +140,8 @@ object preactStrings {
   @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
   @scala.inline
   def medial: medial = "medial".asInstanceOf[medial]
@@ -151,6 +159,8 @@ object preactStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   @scala.inline

@@ -46,6 +46,9 @@ import scala.scalajs.js.annotation._
   *     <li>{@link pc.PIXELFORMAT_PVRTC_4BPP_RGB_1}</li>
   *     <li>{@link pc.PIXELFORMAT_PVRTC_4BPP_RGBA_1}</li>
   *     <li>{@link pc.PIXELFORMAT_111110F}</li>
+  *     <li>{@link pc.PIXELFORMAT_ASTC_4x4}>/li>
+  *     <li>{@link pc.PIXELFORMAT_ATC_RGB}</li>
+  *     <li>{@link pc.PIXELFORMAT_ATC_RGBA}</li>
   * </ul>
   * Defaults to pc.PIXELFORMAT_R8_G8_B8_A8.
   * @param {Number} [options.minFilter] The minification filter type to use. Defaults to {@link pc.FILTER_LINEAR_MIPMAP_LINEAR}
@@ -215,6 +218,9 @@ class Texture protected () extends js.Object {
     *     <li>{@link pc.PIXELFORMAT_PVRTC_4BPP_RGB_1}</li>
     *     <li>{@link pc.PIXELFORMAT_PVRTC_4BPP_RGBA_1}</li>
     *     <li>{@link pc.PIXELFORMAT_111110F}</li>
+    *     <li>{@link pc.PIXELFORMAT_ASTC_4x4}>/li>
+    *     <li>{@link pc.PIXELFORMAT_ATC_RGB}</li>
+    *     <li>{@link pc.PIXELFORMAT_ATC_RGBA}</li>
     * </ul>
     */
   val format: Double = js.native

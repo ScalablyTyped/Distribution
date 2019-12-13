@@ -76,6 +76,7 @@ object distLibModelsReflectionsMod extends js.Object {
     /* 262144 */ val Accessor: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Accessor with Double = js.native
     /* 4096 */ val CallSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.CallSignature with Double = js.native
     /* 128 */ val Class: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Class with Double = js.native
+    /* 8654336 */ val ClassMember: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ClassMember with Double = js.native
     /* 384 */ val ClassOrInterface: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ClassOrInterface with Double = js.native
     /* 512 */ val Constructor: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Constructor with Double = js.native
     /* 16384 */ val ConstructorSignature: typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ConstructorSignature with Double = js.native

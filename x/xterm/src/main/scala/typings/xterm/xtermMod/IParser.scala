@@ -14,7 +14,7 @@ trait IParser extends js.Object {
     * array will contain subarrays with their numercial values.
     * Return true if the sequence was handled; false if we should try
     * a previous handler (set by addCsiHandler or setCsiHandler).
-    * The most recently-added handler is tried first.
+    * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
   def addCsiHandler(
@@ -35,7 +35,7 @@ trait IParser extends js.Object {
     * The function gets the payload and numerical parameters as arguments.
     * Return true if the sequence was handled; false if we should try
     * a previous handler (set by addDcsHandler or setDcsHandler).
-    * The most recently-added handler is tried first.
+    * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
   def addDcsHandler(
@@ -50,7 +50,7 @@ trait IParser extends js.Object {
     * @param callback The function to handle the sequence.
     * Return true if the sequence was handled; false if we should try
     * a previous handler (set by addEscHandler or setEscHandler).
-    * The most recently-added handler is tried first.
+    * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
   def addEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable
@@ -67,7 +67,7 @@ trait IParser extends js.Object {
     * The callback is called with OSC data string.
     * Return true if the sequence was handled; false if we should try
     * a previous handler (set by addOscHandler or setOscHandler).
-    * The most recently-added handler is tried first.
+    * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
   def addOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable

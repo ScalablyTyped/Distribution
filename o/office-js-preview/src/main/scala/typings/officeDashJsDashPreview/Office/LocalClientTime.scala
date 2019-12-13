@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a date and time in the local client's time zone. Read mode only.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   *
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

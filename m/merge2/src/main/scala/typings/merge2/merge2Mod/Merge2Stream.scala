@@ -1,16 +1,13 @@
 package typings.merge2.merge2Mod
 
 import typings.merge2.merge2Strings.queueDrain
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Merge2Stream
-  extends ReadableStream
-     with WritableStream {
+trait Merge2Stream extends Transform {
   /**
     * @summary    Add more streams to an existing merged stream
     *

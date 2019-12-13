@@ -30,6 +30,9 @@ trait reactDashNativeDashSvgProps {
   def LinearGradientProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.LinearGradientProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.LinearGradientProps
   type LinearGradientProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.LinearGradientProps
   @scala.inline
+  def MarkerProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MarkerProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MarkerProps
+  type MarkerProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MarkerProps
+  @scala.inline
   def MaskProps: typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MaskProps.type = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MaskProps
   type MaskProps = typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.MaskProps
   @scala.inline

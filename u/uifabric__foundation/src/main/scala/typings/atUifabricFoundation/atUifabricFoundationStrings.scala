@@ -336,6 +336,9 @@ object atUifabricFoundationStrings {
   sealed trait img extends js.Object
   
   @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
   sealed trait `inline` extends js.Object
   
   @js.native
@@ -879,6 +882,8 @@ object atUifabricFoundationStrings {
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline

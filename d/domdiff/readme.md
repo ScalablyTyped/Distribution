@@ -1,7 +1,7 @@
 
 # Scala.js typings for domdiff
 
-Typings are for version 2.1.0
+Typings are for version 2.2.1
 
 ## Library description:
 A fast and simple way to diff childNodes

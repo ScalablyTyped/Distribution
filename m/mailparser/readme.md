@@ -1,7 +1,7 @@
 
 # Scala.js typings for mailparser
 
-Typings are for version 2.4
+Typings are for version 2.7
 
 ## Library description:
 Parse e-mails

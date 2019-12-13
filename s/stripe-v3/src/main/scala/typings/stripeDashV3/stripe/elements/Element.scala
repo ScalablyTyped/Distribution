@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Element extends js.Object {
+  def addEventListener(event: eventTypes, handler: handler): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_click(event: click, handler: js.Function1[/* response */ Anon_PreventDefault, Unit]): Unit = js.native
   def blur(): Unit = js.native
   def clear(): Unit = js.native
   def destroy(): Unit = js.native

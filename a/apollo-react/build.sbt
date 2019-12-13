@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-ebbeae"
+version := "0.7.1-a0611e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
   "org.scalablytyped" %%% "redux" % "4.0.4-507b3f",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "typed-graphql" % "1.0.2-9db1c7",

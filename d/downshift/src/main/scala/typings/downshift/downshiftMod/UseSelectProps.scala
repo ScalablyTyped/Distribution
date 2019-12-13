@@ -32,8 +32,8 @@ trait UseSelectProps[Item] extends js.Object {
   var stateReducer: js.UndefOr[
     js.Function2[
       /* state */ UseSelectState[Item], 
-      /* changes */ UseSelectStateChangeOptions[Item], 
-      Partial[UseSelectStateChangeOptions[Item]]
+      /* actionAndChanges */ UseSelectStateChangeOptions[Item], 
+      UseSelectState[Item]
     ]
   ] = js.undefined
   var toggleButtonId: js.UndefOr[String] = js.undefined
@@ -65,7 +65,7 @@ object UseSelectProps {
     onSelectedItemChange: /* changes */ Partial[UseSelectState[Item]] => Unit = null,
     onStateChange: /* changes */ Partial[UseSelectState[Item]] => Unit = null,
     selectedItem: Item = null,
-    stateReducer: (/* state */ UseSelectState[Item], /* changes */ UseSelectStateChangeOptions[Item]) => Partial[UseSelectStateChangeOptions[Item]] = null,
+    stateReducer: (/* state */ UseSelectState[Item], /* actionAndChanges */ UseSelectStateChangeOptions[Item]) => UseSelectState[Item] = null,
     toggleButtonId: String = null
   ): UseSelectProps[Item] = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])

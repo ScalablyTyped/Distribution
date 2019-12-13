@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object styledDashComponentsMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.csstype.csstypeMod.Properties
+  import typings.hoistDashNonDashReactDashStatics.hoistDashNonDashReactDashStaticsMod.NonReactStatics
   import typings.react.reactMod.ComponentClass
   import typings.react.reactMod.ComponentPropsWithRef
   import typings.react.reactMod.ComponentState
@@ -71,7 +72,7 @@ package object styledDashComponentsMod {
   type SimpleInterpolation = _SimpleInterpolation | String | Double | FalseyValue
   type StyledComponent[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
-  String) with (StyledComponentBase[C, T, O, A])
+  String) with (StyledComponentBase[C, T, O, A]) with (NonReactStatics[C, js.Object])
   type StyledComponentInnerAttrs[C /* <: AnyStyledComponent */] = js.Any
   type StyledComponentInnerComponent[C /* <: ComponentType[_] */] = C
   type StyledComponentInnerOtherProps[C /* <: AnyStyledComponent */] = js.Any

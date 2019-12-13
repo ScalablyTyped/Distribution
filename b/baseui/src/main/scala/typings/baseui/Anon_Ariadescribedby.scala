@@ -1,5 +1,8 @@
 package typings.baseui
 
+import typings.baseui.baseuiStrings.compact
+import typings.baseui.baseuiStrings.default_
+import typings.baseui.baseuiStrings.large_
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -22,6 +25,7 @@ trait Anon_Ariadescribedby extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[default_ | compact | large_] = js.undefined
 }
 
 object Anon_Ariadescribedby {
@@ -39,7 +43,8 @@ object Anon_Ariadescribedby {
     onClose: () => _ = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined
+    required: js.UndefOr[Boolean] = js.undefined,
+    size: default_ | compact | large_ = null
   ): Anon_Ariadescribedby = {
     val __obj = js.Dynamic.literal()
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
@@ -55,6 +60,7 @@ object Anon_Ariadescribedby {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Ariadescribedby]
   }
 }

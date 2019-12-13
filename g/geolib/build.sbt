@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geolib"
-version := "3.1.0-68cb4b"
+version := "3.2.0-4807e2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

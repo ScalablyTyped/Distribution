@@ -19,6 +19,12 @@ object ^ extends js.Object {
   ] = js.native
   var __spreadArrays: js.Function0[js.Array[js.Any]] = js.native
   var koTemplate: js.Any = js.native
+  var registerFunction: js.Function3[
+    /* name */ String, 
+    /* func */ js.Function1[/* params */ js.Array[js.Any], js.Any], 
+    /* isAsync */ js.UndefOr[Boolean], 
+    Unit
+  ] = js.native
   var registerTemplateEngine: js.Function2[/* ko */ js.Any, /* platform */ String, Unit] = js.native
   var surveyCss: js.Any = js.native
 }

@@ -199,6 +199,18 @@ object distOpsArrayUnderscoreOpsMod extends js.Object {
   }
   
   @js.native
+  object broadcastTo extends js.Object {
+    def apply[R /* <: Rank */](
+      x: Tensor[Rank],
+      shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    ): Tensor[R] = js.native
+    def apply[R /* <: Rank */](
+      x: TensorLike,
+      shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
+    ): Tensor[R] = js.native
+  }
+  
+  @js.native
   object cast extends js.Object {
     def apply[T /* <: Tensor[Rank] */](x: T, dtype: DataType): T = js.native
     def apply[T /* <: Tensor[Rank] */](x: TensorLike, dtype: DataType): T = js.native

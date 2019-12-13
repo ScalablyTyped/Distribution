@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 package object libSchemaDotInterfaceMod {
   import org.scalablytyped.runtime.StringDictionary
 
-  type SchemaInterface = StringDictionary[SingleFieldInterface | NestedFieldsInterface]
+  type SchemaInterface = StringDictionary[SchemaInterfaceField]
 }

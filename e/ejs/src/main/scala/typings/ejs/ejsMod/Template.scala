@@ -17,12 +17,6 @@ class Template protected () extends js.Object {
   def this(text: String) = this()
   def this(text: String, opts: Options) = this()
   /**
-  	 * The compiled dependencies of this template.
-  	 *
-  	 * Always empty if legacy include directives are disabled.
-  	 */
-  val dependencies: js.Array[String] = js.native
-  /**
   	 * The compiled JavaScript function source, or the empty string
   	 * if the template hasn't been compiled yet.
   	 */

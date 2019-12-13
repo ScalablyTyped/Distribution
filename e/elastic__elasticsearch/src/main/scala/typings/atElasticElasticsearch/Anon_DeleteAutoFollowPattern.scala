@@ -6,8 +6,10 @@ import typings.atElasticElasticsearch.apiRequestParamsMod.CcrFollowInfo
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrFollowStats
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrForgetFollower
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrGetAutoFollowPattern
+import typings.atElasticElasticsearch.apiRequestParamsMod.CcrPauseAutoFollowPattern
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrPauseFollow
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrPutAutoFollowPattern
+import typings.atElasticElasticsearch.apiRequestParamsMod.CcrResumeAutoFollowPattern
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrResumeFollow
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrStats
 import typings.atElasticElasticsearch.apiRequestParamsMod.CcrUnfollow
@@ -44,16 +46,24 @@ trait Anon_DeleteAutoFollowPattern extends js.Object {
   var getAutoFollowPattern_Original: ApiMethod[CcrGetAutoFollowPattern, _] = js.native
   @JSName("get_auto_follow_pattern")
   var get_auto_follow_pattern_Original: ApiMethod[CcrGetAutoFollowPattern, _] = js.native
+  @JSName("pauseAutoFollowPattern")
+  var pauseAutoFollowPattern_Original: ApiMethod[CcrPauseAutoFollowPattern, _] = js.native
   @JSName("pauseFollow")
   var pauseFollow_Original: ApiMethod[CcrPauseFollow, _] = js.native
+  @JSName("pause_auto_follow_pattern")
+  var pause_auto_follow_pattern_Original: ApiMethod[CcrPauseAutoFollowPattern, _] = js.native
   @JSName("pause_follow")
   var pause_follow_Original: ApiMethod[CcrPauseFollow, _] = js.native
   @JSName("putAutoFollowPattern")
   var putAutoFollowPattern_Original: ApiMethod[CcrPutAutoFollowPattern[_], _] = js.native
   @JSName("put_auto_follow_pattern")
   var put_auto_follow_pattern_Original: ApiMethod[CcrPutAutoFollowPattern[_], _] = js.native
+  @JSName("resumeAutoFollowPattern")
+  var resumeAutoFollowPattern_Original: ApiMethod[CcrResumeAutoFollowPattern, _] = js.native
   @JSName("resumeFollow")
   var resumeFollow_Original: ApiMethod[CcrResumeFollow[_], _] = js.native
+  @JSName("resume_auto_follow_pattern")
+  var resume_auto_follow_pattern_Original: ApiMethod[CcrResumeAutoFollowPattern, _] = js.native
   @JSName("resume_follow")
   var resume_follow_Original: ApiMethod[CcrResumeFollow[_], _] = js.native
   @JSName("stats")
@@ -149,6 +159,14 @@ trait Anon_DeleteAutoFollowPattern extends js.Object {
   def get_auto_follow_pattern(params: CcrGetAutoFollowPattern, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_auto_follow_pattern(params: CcrGetAutoFollowPattern, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def pauseAutoFollowPattern(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def pauseAutoFollowPattern(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def pauseAutoFollowPattern(params: CcrPauseAutoFollowPattern): js.Promise[ApiResponse[_, _]] = js.native
+  def pauseAutoFollowPattern(params: CcrPauseAutoFollowPattern, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def pauseAutoFollowPattern(params: CcrPauseAutoFollowPattern, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def pauseAutoFollowPattern(params: CcrPauseAutoFollowPattern, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def pauseFollow(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def pauseFollow(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -156,6 +174,14 @@ trait Anon_DeleteAutoFollowPattern extends js.Object {
   def pauseFollow(params: CcrPauseFollow, callback: callbackFn[_]): TransportRequestCallback = js.native
   def pauseFollow(params: CcrPauseFollow, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def pauseFollow(params: CcrPauseFollow, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def pause_auto_follow_pattern(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def pause_auto_follow_pattern(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def pause_auto_follow_pattern(params: CcrPauseAutoFollowPattern): js.Promise[ApiResponse[_, _]] = js.native
+  def pause_auto_follow_pattern(params: CcrPauseAutoFollowPattern, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def pause_auto_follow_pattern(params: CcrPauseAutoFollowPattern, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def pause_auto_follow_pattern(params: CcrPauseAutoFollowPattern, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def pause_follow(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -181,6 +207,14 @@ trait Anon_DeleteAutoFollowPattern extends js.Object {
   def put_auto_follow_pattern(params: CcrPutAutoFollowPattern[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def put_auto_follow_pattern(params: CcrPutAutoFollowPattern[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def resumeAutoFollowPattern(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def resumeAutoFollowPattern(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def resumeAutoFollowPattern(params: CcrResumeAutoFollowPattern): js.Promise[ApiResponse[_, _]] = js.native
+  def resumeAutoFollowPattern(params: CcrResumeAutoFollowPattern, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def resumeAutoFollowPattern(params: CcrResumeAutoFollowPattern, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def resumeAutoFollowPattern(params: CcrResumeAutoFollowPattern, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def resumeFollow(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def resumeFollow(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -188,6 +222,14 @@ trait Anon_DeleteAutoFollowPattern extends js.Object {
   def resumeFollow(params: CcrResumeFollow[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def resumeFollow(params: CcrResumeFollow[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def resumeFollow(params: CcrResumeFollow[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def resume_auto_follow_pattern(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def resume_auto_follow_pattern(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def resume_auto_follow_pattern(params: CcrResumeAutoFollowPattern): js.Promise[ApiResponse[_, _]] = js.native
+  def resume_auto_follow_pattern(params: CcrResumeAutoFollowPattern, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def resume_auto_follow_pattern(params: CcrResumeAutoFollowPattern, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def resume_auto_follow_pattern(params: CcrResumeAutoFollowPattern, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def resume_follow(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

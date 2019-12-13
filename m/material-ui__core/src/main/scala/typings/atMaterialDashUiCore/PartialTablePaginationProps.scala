@@ -64,6 +64,7 @@ import typings.atMaterialDashUiCore.tablePaginationTablePaginationMod.TablePagin
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ChangeEvent
 import typings.react.reactMod.ChangeEventHandler
@@ -173,7 +174,7 @@ trait PartialTablePaginationProps extends js.Object {
   var colSpan: js.UndefOr[Double] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var component: js.UndefOr[ReactType[TablePaginationBaseProps]] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var count: js.UndefOr[Double] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
@@ -181,7 +182,7 @@ trait PartialTablePaginationProps extends js.Object {
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var headers: js.UndefOr[String] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -302,7 +303,7 @@ trait PartialTablePaginationProps extends js.Object {
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var sortDirection: js.UndefOr[SortDirection] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -383,7 +384,7 @@ object PartialTablePaginationProps {
     colSpan: Int | Double = null,
     color: String = null,
     component: ReactType[TablePaginationBaseProps] = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     count: Int | Double = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -584,7 +585,7 @@ object PartialTablePaginationProps {
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])

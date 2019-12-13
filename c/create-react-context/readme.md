@@ -1,7 +1,7 @@
 
 # Scala.js typings for create-react-context
 
-Typings are for version 0.2.2
+Typings are for version 0.3.0
 
 ## Library description:
 Polyfill for the proposed React context API

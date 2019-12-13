@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "re2" : "1.10.4"
+      "re2" : "1.10.5"
     }
   ],
   "test-dependencies" : [
     {
-      "re2" : "1.10.4"
+      "re2" : "1.10.5"
     }
   ],
   "compile-devDependencies" : [

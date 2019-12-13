@@ -37,7 +37,7 @@ trait CookieSetOptions extends js.Object {
   /**
     * Is the same site
     */
-  var sameSite: js.UndefOr[Boolean] = js.undefined
+  var sameSite: js.UndefOr[Boolean | String] = js.undefined
   /**
     * Encrypt the cookie's value or not
     */
@@ -58,7 +58,7 @@ object CookieSetOptions {
     maxAge: Int | Double = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
-    sameSite: js.UndefOr[Boolean] = js.undefined,
+    sameSite: Boolean | String = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     signed: js.UndefOr[Boolean] = js.undefined
   ): CookieSetOptions = {
@@ -70,7 +70,7 @@ object CookieSetOptions {
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(sameSite)) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieSetOptions]

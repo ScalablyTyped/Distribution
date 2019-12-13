@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone")
 @js.native
-class SelectionZone ()
-  extends BaseComponent[ISelectionZoneProps, js.Object] {
+class SelectionZone protected () extends BaseComponent[ISelectionZoneProps, ISelectionZoneState] {
+  def this(props: ISelectionZoneProps) = this()
   var _clearAndSelectIndex: js.Any = js.native
   var _findItemRoot: js.Any = js.native
   /**
@@ -53,6 +53,7 @@ class SelectionZone ()
   var _onKeyDownCapture: js.Any = js.native
   var _onMouseDown: js.Any = js.native
   var _onMouseDownCapture: js.Any = js.native
+  var _onSelectionChange: js.Any = js.native
   var _onToggleAllClick: js.Any = js.native
   var _onToggleClick: js.Any = js.native
   var _onTouchStartCapture: js.Any = js.native
@@ -69,6 +70,8 @@ class SelectionZone ()
   var _updateModifiers: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSelectionZone(): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MSelectionZone(previousProps: ISelectionZoneProps): Unit = js.native
   /**
     * In some cases, the consuming scenario requires to set focus on a row without having SelectionZone
     * react to the event. Note that focus events in IE \<= 11 will occur asynchronously after .focus() has
@@ -83,5 +86,6 @@ class SelectionZone ()
 @js.native
 object SelectionZone extends js.Object {
   var defaultProps: Anon_IsSelectedOnFocus = js.native
+  def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
 }
 

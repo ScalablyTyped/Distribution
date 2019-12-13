@@ -19,7 +19,7 @@ object reactDashNavigationComponents extends reactDashNavigationProps {
   @scala.inline
   def ScrollView: ComponentType[ScrollViewProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.ScrollView].asInstanceOf[typings.react.reactMod.ComponentType[ScrollViewProps]]
   @scala.inline
-  def SectionList: ComponentType[SectionListProps[js.Any]] = typings.reactDashNavigation.reactDashNavigationMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[js.Any]]]
+  def SectionList[SectionT]: ComponentType[SectionListProps[SectionT]] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.SectionList[SectionT]].asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[SectionT]]]
   @scala.inline
   def ThemedStatusBar: ComponentType[ThemedStatusBarProps] = js.constructorOf[typings.reactDashNavigation.reactDashNavigationMod.Themed.StatusBar].asInstanceOf[typings.react.reactMod.ComponentType[ThemedStatusBarProps]]
   @scala.inline

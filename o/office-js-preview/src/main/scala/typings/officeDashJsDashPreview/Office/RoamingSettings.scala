@@ -9,8 +9,6 @@ trait RoamingSettings extends js.Object {
   /**
     * Retrieves the specified setting.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
@@ -23,8 +21,6 @@ trait RoamingSettings extends js.Object {
   def get(name: String): js.Any = js.native
   /**
     * Removes the specified setting
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -41,8 +37,6 @@ trait RoamingSettings extends js.Object {
     * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use 
     * the set and get methods to work with the in-memory copy of the settings property bag. 
     * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -64,8 +58,6 @@ trait RoamingSettings extends js.Object {
     * A maximum of 32KB is available for the settings of each add-in.
     *
     * Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 

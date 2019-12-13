@@ -725,7 +725,7 @@ trait Assert extends js.Object {
   def isFunction[T](value: T): Unit = js.native
   def isFunction[T](value: T, message: String): Unit = js.native
   /**
-    * Asserts that value is not null.
+    * Asserts that value is NaN.
     *
     * @type T   Type of value.
     * @param value   Actual value.
@@ -800,7 +800,7 @@ trait Assert extends js.Object {
   def isNotFunction[T](value: T): Unit = js.native
   def isNotFunction[T](value: T, message: String): Unit = js.native
   /**
-    * Asserts that value is not null.
+    * Asserts that value is not NaN.
     *
     * @type T   Type of value.
     * @param value   Actual value.

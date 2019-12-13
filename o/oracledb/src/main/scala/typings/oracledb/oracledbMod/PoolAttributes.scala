@@ -92,6 +92,13 @@ trait PoolAttributes extends js.Object {
     */
   var poolMax: js.UndefOr[Double] = js.undefined
   /**
+    * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
+    * This optional property overrides the oracledb.poolMaxPerShard property.
+    * 
+    * @since 4.1
+    */
+  var poolMaxPerShard: js.UndefOr[Double] = js.undefined
+  /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
     * This optional property overrides the oracledb.poolMin property.
     *
@@ -177,6 +184,7 @@ object PoolAttributes {
     poolAlias: String = null,
     poolIncrement: Int | Double = null,
     poolMax: Int | Double = null,
+    poolMaxPerShard: Int | Double = null,
     poolMin: Int | Double = null,
     poolPingInterval: Int | Double = null,
     poolTimeout: Int | Double = null,
@@ -202,6 +210,7 @@ object PoolAttributes {
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
     if (poolIncrement != null) __obj.updateDynamic("poolIncrement")(poolIncrement.asInstanceOf[js.Any])
     if (poolMax != null) __obj.updateDynamic("poolMax")(poolMax.asInstanceOf[js.Any])
+    if (poolMaxPerShard != null) __obj.updateDynamic("poolMaxPerShard")(poolMaxPerShard.asInstanceOf[js.Any])
     if (poolMin != null) __obj.updateDynamic("poolMin")(poolMin.asInstanceOf[js.Any])
     if (poolPingInterval != null) __obj.updateDynamic("poolPingInterval")(poolPingInterval.asInstanceOf[js.Any])
     if (poolTimeout != null) __obj.updateDynamic("poolTimeout")(poolTimeout.asInstanceOf[js.Any])

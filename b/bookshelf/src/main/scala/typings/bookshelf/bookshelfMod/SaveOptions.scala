@@ -9,6 +9,7 @@ trait SaveOptions extends SyncOptions {
   var defaults: js.UndefOr[String] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var patch: js.UndefOr[Boolean] = js.undefined
+  /** @default true */
   var require: js.UndefOr[Boolean] = js.undefined
 }
 

@@ -11,8 +11,6 @@ import typings.officeDashJs.officeDashJsStrings.FourRating
 import typings.officeDashJs.officeDashJsStrings.FourRedToBlack
 import typings.officeDashJs.officeDashJsStrings.FourTrafficLights
 import typings.officeDashJs.officeDashJsStrings.Invalid
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityFinanceIcon
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityMapIcon
 import typings.officeDashJs.officeDashJsStrings.ThreeArrows
 import typings.officeDashJs.officeDashJsStrings.ThreeArrowsGray
 import typings.officeDashJs.officeDashJsStrings.ThreeFlags
@@ -47,14 +45,14 @@ trait Icon extends js.Object {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes | LinkedEntityFinanceIcon | LinkedEntityMapIcon
+  var set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
 }
 
 object Icon {
   @scala.inline
   def apply(
     index: Double,
-    set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes | LinkedEntityFinanceIcon | LinkedEntityMapIcon
+    set: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
   ): Icon = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
   

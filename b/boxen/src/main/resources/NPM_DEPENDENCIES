@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "boxen" : "4.1.0"
+      "boxen" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "boxen" : "4.1.0"
+      "boxen" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

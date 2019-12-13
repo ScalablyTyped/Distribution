@@ -111,6 +111,12 @@ object atPulumiKubernetesStrings {
   sealed trait EventList extends js.Object
   
   @js.native
+  sealed trait FlowSchema extends js.Object
+  
+  @js.native
+  sealed trait FlowSchemaList extends js.Object
+  
+  @js.native
   sealed trait HorizontalPodAutoscaler extends js.Object
   
   @js.native
@@ -214,6 +220,12 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait PriorityClassList extends js.Object
+  
+  @js.native
+  sealed trait PriorityLevelConfiguration extends js.Object
+  
+  @js.native
+  sealed trait PriorityLevelConfigurationList extends js.Object
   
   @js.native
   sealed trait ReplicaSet extends js.Object
@@ -666,13 +678,13 @@ object atPulumiKubernetesStrings {
   sealed trait details extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1alpha1` extends js.Object
+  sealed trait `discoveryDOTk8sDOTio/v1beta1` extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice` extends js.Object
+  sealed trait `discoveryDOTk8sDOTio/v1beta1/EndpointSlice` extends js.Object
   
   @js.native
-  sealed trait `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` extends js.Object
+  sealed trait `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList` extends js.Object
   
   @js.native
   sealed trait endpoints_ extends js.Object
@@ -730,6 +742,21 @@ object atPulumiKubernetesStrings {
   
   @js.native
   sealed trait firstTimestamp extends js.Object
+  
+  @js.native
+  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1` extends js.Object
+  
+  @js.native
+  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema` extends js.Object
+  
+  @js.native
+  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList` extends js.Object
+  
+  @js.native
+  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration` extends js.Object
+  
+  @js.native
+  sealed trait `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList` extends js.Object
   
   @js.native
   sealed trait globalDefault extends js.Object
@@ -999,6 +1026,12 @@ object atPulumiKubernetesStrings {
   sealed trait `storageDOTk8sDOTio/v1` extends js.Object
   
   @js.native
+  sealed trait `storageDOTk8sDOTio/v1/CSINode` extends js.Object
+  
+  @js.native
+  sealed trait `storageDOTk8sDOTio/v1/CSINodeList` extends js.Object
+  
+  @js.native
   sealed trait `storageDOTk8sDOTio/v1/StorageClass` extends js.Object
   
   @js.native
@@ -1249,6 +1282,10 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def EventList: EventList = "EventList".asInstanceOf[EventList]
   @scala.inline
+  def FlowSchema: FlowSchema = "FlowSchema".asInstanceOf[FlowSchema]
+  @scala.inline
+  def FlowSchemaList: FlowSchemaList = "FlowSchemaList".asInstanceOf[FlowSchemaList]
+  @scala.inline
   def HorizontalPodAutoscaler: HorizontalPodAutoscaler = "HorizontalPodAutoscaler".asInstanceOf[HorizontalPodAutoscaler]
   @scala.inline
   def HorizontalPodAutoscalerList: HorizontalPodAutoscalerList = "HorizontalPodAutoscalerList".asInstanceOf[HorizontalPodAutoscalerList]
@@ -1318,6 +1355,10 @@ object atPulumiKubernetesStrings {
   def PriorityClass: PriorityClass = "PriorityClass".asInstanceOf[PriorityClass]
   @scala.inline
   def PriorityClassList: PriorityClassList = "PriorityClassList".asInstanceOf[PriorityClassList]
+  @scala.inline
+  def PriorityLevelConfiguration: PriorityLevelConfiguration = "PriorityLevelConfiguration".asInstanceOf[PriorityLevelConfiguration]
+  @scala.inline
+  def PriorityLevelConfigurationList: PriorityLevelConfigurationList = "PriorityLevelConfigurationList".asInstanceOf[PriorityLevelConfigurationList]
   @scala.inline
   def ReplicaSet: ReplicaSet = "ReplicaSet".asInstanceOf[ReplicaSet]
   @scala.inline
@@ -1619,11 +1660,11 @@ object atPulumiKubernetesStrings {
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1alpha1`: `discoveryDOTk8sDOTio/v1alpha1` = "discovery.k8s.io/v1alpha1".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1`]
+  def `discoveryDOTk8sDOTio/v1beta1`: `discoveryDOTk8sDOTio/v1beta1` = "discovery.k8s.io/v1beta1".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1`]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`: `discoveryDOTk8sDOTio/v1alpha1/EndpointSlice` = "discovery.k8s.io/v1alpha1/EndpointSlice".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1/EndpointSlice`]
+  def `discoveryDOTk8sDOTio/v1beta1/EndpointSlice`: `discoveryDOTk8sDOTio/v1beta1/EndpointSlice` = "discovery.k8s.io/v1beta1/EndpointSlice".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1/EndpointSlice`]
   @scala.inline
-  def `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`: `discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList` = "discovery.k8s.io/v1alpha1/EndpointSliceList".asInstanceOf[`discoveryDOTk8sDOTio/v1alpha1/EndpointSliceList`]
+  def `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`: `discoveryDOTk8sDOTio/v1beta1/EndpointSliceList` = "discovery.k8s.io/v1beta1/EndpointSliceList".asInstanceOf[`discoveryDOTk8sDOTio/v1beta1/EndpointSliceList`]
   @scala.inline
   def endpoints_ : endpoints_ = "endpoints".asInstanceOf[endpoints_]
   @scala.inline
@@ -1662,6 +1703,16 @@ object atPulumiKubernetesStrings {
   def `extensions/v1beta1/ReplicaSetList`: `extensions/v1beta1/ReplicaSetList` = "extensions/v1beta1/ReplicaSetList".asInstanceOf[`extensions/v1beta1/ReplicaSetList`]
   @scala.inline
   def firstTimestamp: firstTimestamp = "firstTimestamp".asInstanceOf[firstTimestamp]
+  @scala.inline
+  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1` = "flowcontrol.apiserver.k8s.io/v1alpha1".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1`]
+  @scala.inline
+  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema` = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchema".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchema`]
+  @scala.inline
+  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList` = "flowcontrol.apiserver.k8s.io/v1alpha1/FlowSchemaList".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/FlowSchemaList`]
+  @scala.inline
+  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration` = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfiguration".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfiguration`]
+  @scala.inline
+  def `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`: `flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList` = "flowcontrol.apiserver.k8s.io/v1alpha1/PriorityLevelConfigurationList".asInstanceOf[`flowcontrolDOTapiserverDOTk8sDOTio/v1alpha1/PriorityLevelConfigurationList`]
   @scala.inline
   def globalDefault: globalDefault = "globalDefault".asInstanceOf[globalDefault]
   @scala.inline
@@ -1840,6 +1891,10 @@ object atPulumiKubernetesStrings {
   def status_ : status_ = "status".asInstanceOf[status_]
   @scala.inline
   def `storageDOTk8sDOTio/v1`: `storageDOTk8sDOTio/v1` = "storage.k8s.io/v1".asInstanceOf[`storageDOTk8sDOTio/v1`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1/CSINode`: `storageDOTk8sDOTio/v1/CSINode` = "storage.k8s.io/v1/CSINode".asInstanceOf[`storageDOTk8sDOTio/v1/CSINode`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1/CSINodeList`: `storageDOTk8sDOTio/v1/CSINodeList` = "storage.k8s.io/v1/CSINodeList".asInstanceOf[`storageDOTk8sDOTio/v1/CSINodeList`]
   @scala.inline
   def `storageDOTk8sDOTio/v1/StorageClass`: `storageDOTk8sDOTio/v1/StorageClass` = "storage.k8s.io/v1/StorageClass".asInstanceOf[`storageDOTk8sDOTio/v1/StorageClass`]
   @scala.inline

@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 @JSImport("slate", "Editor")
 @js.native
 class Editor protected () extends Controller {
-  def this(attributes: EditorProperties) = this()
-  def this(attributes: EditorProperties, options: EditorOptions) = this()
+  def this(attributes: EditorProperties[Editor]) = this()
+  def this(attributes: EditorProperties[Editor], options: EditorOptions) = this()
   var controller: Controller = js.native
   var middleware: js.Object = js.native
   var `object`: editor = js.native
   var operations: List[Operation] = js.native
-  var plugins: js.Array[Plugin] = js.native
+  var plugins: js.Array[Plugin[Editor]] = js.native
   var readOnly: Boolean = js.native
   var value: Value = js.native
   /**

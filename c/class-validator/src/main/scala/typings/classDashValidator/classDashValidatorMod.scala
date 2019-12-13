@@ -1,22 +1,15 @@
 package typings.classDashValidator
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.classDashValidator.classDashValidatorStrings.`10`
-import typings.classDashValidator.classDashValidatorStrings.`13`
 import typings.classDashValidator.classDashValidatorStrings.`3`
 import typings.classDashValidator.classDashValidatorStrings.`4`
 import typings.classDashValidator.classDashValidatorStrings.`5`
-import typings.classDashValidator.classDashValidatorStrings.`6`
 import typings.classDashValidator.containerMod.UseContainerOptions
 import typings.classDashValidator.decoratorValidationOptionsMod.ValidationOptions
 import typings.classDashValidator.registerDashDecoratorMod.ValidationDecoratorOptions
 import typings.classDashValidator.validationDashSchemaValidationSchemaMod.ValidationSchema
 import typings.classDashValidator.validationValidationArgumentsMod.ValidationArguments
-import typings.classDashValidator.validationValidationTypeOptionsMod.IsCurrencyOptions
-import typings.classDashValidator.validationValidationTypeOptionsMod.IsEmailOptions
-import typings.classDashValidator.validationValidationTypeOptionsMod.IsFQDNOptions
 import typings.classDashValidator.validationValidationTypeOptionsMod.IsNumberOptions
-import typings.classDashValidator.validationValidationTypeOptionsMod.IsURLOptions
 import typings.classDashValidator.validationValidatorOptionsMod.ValidatorOptions
 import typings.std.Date
 import typings.std.RegExp
@@ -62,9 +55,11 @@ object classDashValidatorMod extends js.Object {
   def Equals(comparison: js.Any): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def Equals(comparison: js.Any, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsAlpha(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsAlpha(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsAlpha(locale: String): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsAlpha(locale: String, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsAlphanumeric(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsAlphanumeric(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsAlphanumeric(locale: String): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsAlphanumeric(locale: String, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsArray(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsArray(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsAscii(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -81,56 +76,81 @@ object classDashValidatorMod extends js.Object {
   def IsCreditCard(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsCreditCard(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsCurrency(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsCurrency(options: IsCurrencyOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsCurrency(options: IsCurrencyOptions, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsCurrency(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsCurrencyOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsCurrency(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsCurrencyOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDate(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDate(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDateString(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDateString(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsDecimal(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsDecimal(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsDecimalOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsDecimal(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsDecimalOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDefined(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDefined(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDivisibleBy(num: Double): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsDivisibleBy(num: Double, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsEmail(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsEmail(options: IsEmailOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsEmail(options: IsEmailOptions, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsEmail(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsEmailOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsEmail(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsEmailOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsEmpty(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsEmpty(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsEnum(entity: js.Object): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsEnum(entity: js.Object, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsFQDN(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsFQDN(options: IsFQDNOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsFQDN(options: IsFQDNOptions, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsFQDN(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsFQDNOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsFQDN(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsFQDNOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsFullWidth(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsFullWidth(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHalfWidth(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHalfWidth(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsHash(algorithm: String): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsHash(algorithm: String, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHexColor(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHexColor(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHexadecimal(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsHexadecimal(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsIP(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsIP")
-  def IsIP_4(version: `4`): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsIP")
-  def IsIP_4(version: `4`, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsIP")
-  def IsIP_6(version: `6`): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsIP")
-  def IsIP_6(version: `6`, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsIP(version: Double): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsIP(version: Double, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsISBN(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsISBN")
-  def IsISBN_10(version: `10`): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsISBN")
-  def IsISBN_10(version: `10`, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsISBN")
-  def IsISBN_13(version: `13`): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  @JSName("IsISBN")
-  def IsISBN_13(version: `13`, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISBN(version: Double): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISBN(version: Double, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsISIN(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsISIN(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISO31661Alpha2(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISO31661Alpha2(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISO31661Alpha3(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISO31661Alpha3(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsISO8601(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsISO8601(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISSN(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISSN(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsISSNOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsISSN(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsISSNOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsIn(values: js.Array[_]): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsIn(values: js.Array[_], validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsInstance(targetType: Instantiable1[/* args (repeated) */ js.Any, js.Any]): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -142,8 +162,18 @@ object classDashValidatorMod extends js.Object {
   def IsInt(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsJSON(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsJSON(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsJWT(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsJWT(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLatLong(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLatLong(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLatitude(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLatitude(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLongitude(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsLongitude(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsLowercase(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsLowercase(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsMACAddress(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsMACAddress(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsMilitaryTime(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsMilitaryTime(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsMobilePhone(locale: String): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -156,6 +186,8 @@ object classDashValidatorMod extends js.Object {
   def IsNegative(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNotEmpty(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNotEmpty(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsNotEmptyObject(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsNotEmptyObject(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNotIn(values: js.Array[_]): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNotIn(values: js.Array[_], validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNumber(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -163,10 +195,15 @@ object classDashValidatorMod extends js.Object {
   def IsNumber(options: IsNumberOptions, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNumberString(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsNumberString(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsNumberString(validationOptions: ValidationOptions, NumberOptions: IsNumberOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsObject(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsObject(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsOptional(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsOptional(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsPhoneNumber(region: String): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsPhoneNumber(region: String, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsPort(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsPort(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsPositive(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsPositive(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsString(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -189,8 +226,13 @@ object classDashValidatorMod extends js.Object {
   def IsUppercase(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsUppercase(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsUrl(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsUrl(options: IsURLOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
-  def IsUrl(options: IsURLOptions, validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsUrl(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsURLOptions */ js.Any
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def IsUrl(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValidatorJS.IsURLOptions */ js.Any,
+    validationOptions: ValidationOptions
+  ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsVariableWidth(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def IsVariableWidth(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def Length(min: Double): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
@@ -227,6 +269,8 @@ object classDashValidatorMod extends js.Object {
   ): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def ValidateNested(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def ValidateNested(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def ValidatePromise(): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
+  def ValidatePromise(validationOptions: ValidationOptions): js.Function2[/* object */ js.Object, /* propertyName */ String, Unit] = js.native
   def ValidatorConstraint(): js.Function1[/* target */ js.Function, Unit] = js.native
   def ValidatorConstraint(options: Anon_Async): js.Function1[/* target */ js.Function, Unit] = js.native
   def getFromContainer[T](someClass: js.Function): T = js.native
@@ -280,6 +324,7 @@ object classDashValidatorMod extends js.Object {
     var IS_CURRENCY: String = js.native
     var IS_DATE: String = js.native
     var IS_DATE_STRING: String = js.native
+    var IS_DECIMAL: String = js.native
     var IS_DEFINED: String = js.native
     var IS_DIVISIBLE_BY: String = js.native
     var IS_EMAIL: String = js.native
@@ -288,6 +333,7 @@ object classDashValidatorMod extends js.Object {
     var IS_FQDN: String = js.native
     var IS_FULL_WIDTH: String = js.native
     var IS_HALF_WIDTH: String = js.native
+    var IS_HASH: String = js.native
     var IS_HEXADECIMAL: String = js.native
     var IS_HEX_COLOR: String = js.native
     var IS_IN: String = js.native
@@ -296,19 +342,30 @@ object classDashValidatorMod extends js.Object {
     var IS_IP: String = js.native
     var IS_ISBN: String = js.native
     var IS_ISIN: String = js.native
+    var IS_ISO31661_ALPHA_2: String = js.native
+    var IS_ISO31661_ALPHA_3: String = js.native
     var IS_ISO8601: String = js.native
+    var IS_ISSN: String = js.native
     var IS_JSON: String = js.native
+    var IS_JWT: String = js.native
+    var IS_LATITUDE: String = js.native
+    var IS_LATLONG: String = js.native
+    var IS_LONGITUDE: String = js.native
     var IS_LOWERCASE: String = js.native
+    var IS_MAC_ADDRESS: String = js.native
     var IS_MILITARY_TIME: String = js.native
     var IS_MOBILE_PHONE: String = js.native
     var IS_MONGO_ID: String = js.native
     var IS_MULTIBYTE: String = js.native
     var IS_NEGATIVE: String = js.native
     var IS_NOT_EMPTY: String = js.native
+    var IS_NOT_EMPTY_OBJECT: String = js.native
     var IS_NOT_IN: String = js.native
     var IS_NUMBER: String = js.native
     var IS_NUMBER_STRING: String = js.native
+    var IS_OBJECT: String = js.native
     var IS_PHONE_NUMBER: String = js.native
+    var IS_PORT: String = js.native
     var IS_POSITIVE: String = js.native
     var IS_STRING: String = js.native
     var IS_SURROGATE_PAIR: String = js.native
@@ -327,6 +384,7 @@ object classDashValidatorMod extends js.Object {
     var NESTED_VALIDATION: String = js.native
     var NOT_CONTAINS: String = js.native
     var NOT_EQUALS: String = js.native
+    var PROMISE_VALIDATION: String = js.native
     var WHITELIST: String = js.native
     /**
       * Gets default validation error message for the given validation type.

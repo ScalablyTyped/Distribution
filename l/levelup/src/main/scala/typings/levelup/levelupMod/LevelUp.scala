@@ -4,6 +4,7 @@ import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractBatch
 import typings.abstractDashLeveldown.abstractDashLeveldownMod.AbstractIteratorOptions
 import typings.abstractDashLeveldown.abstractDashLeveldownMod.ErrorCallback
 import typings.levelup.levelupStrings.batch
+import typings.levelup.levelupStrings.clear
 import typings.levelup.levelupStrings.closed
 import typings.levelup.levelupStrings.closing
 import typings.levelup.levelupStrings.del
@@ -19,6 +20,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LevelUp[DB, Iterator] extends EventEmitter {
+  var clear: InferDBClear[DB] = js.native
   var del: InferDBDel[DB] = js.native
   var get: InferDBGet[DB] = js.native
   var put: InferDBPut[DB] = js.native
@@ -50,6 +52,11 @@ trait LevelUp[DB, Iterator] extends EventEmitter {
     */
   @JSName("on")
   def on_batch(event: batch, cb: js.Function1[/* ary */ js.Array[_], Unit]): this.type = js.native
+  /*
+    emitted when clear is called
+    */
+  @JSName("on")
+  def on_clear(event: clear, cb: js.Function1[/* opts */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_closed(event: closed, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")

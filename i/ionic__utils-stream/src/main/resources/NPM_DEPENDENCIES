@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-stream" : "2.0.4"
+      "@ionic/utils-stream" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-stream" : "2.0.4"
+      "@ionic/utils-stream" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

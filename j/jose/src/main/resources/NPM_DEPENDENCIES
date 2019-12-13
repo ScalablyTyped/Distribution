@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jose" : "1.14.0"
+      "jose" : "1.17.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jose" : "1.14.0"
+      "jose" : "1.17.1"
     }
   ],
   "compile-devDependencies" : [

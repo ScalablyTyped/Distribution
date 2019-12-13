@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-knobs
 
-Typings are for version 5.2.6
+Typings are for version 5.2.8
 
 ## Library description:
 Storybook Addon Prop Editor Component

@@ -191,6 +191,7 @@ object distTypesCommonDotTypesMod extends js.Object {
     - typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.story_viewer_default
     - typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.find_friends_contacts
     - typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.explore_people
+    - typings.instagramDashPrivateDashApi.instagramDashPrivateDashApiStrings.igtv_feed_timeline
     - java.lang.String
   */
   type IgAppModule = _IgAppModule | String

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 package object Parse {
   import org.scalablytyped.runtime.StringDictionary
 
+  type Attributes = StringDictionary[js.Any]
   type AuthData = StringDictionary[js.Any]
-  type Object[T /* <: js.Any */] = Object_[T]
-  type Query[T /* <: Object[_] */] = Query_[T]
+  type Object[T /* <: Attributes */] = Object_[T]
+  type Query[T /* <: Object[Attributes] */] = Query_[T]
 }

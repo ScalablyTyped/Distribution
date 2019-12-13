@@ -12,9 +12,6 @@ object screepsNumbers {
   sealed trait `-10` extends js.Object
   
   @js.native
-  sealed trait `-106` extends js.Object
-  
-  @js.native
   sealed trait `-11` extends js.Object
   
   @js.native
@@ -114,6 +111,12 @@ object screepsNumbers {
   sealed trait `100000000` extends js.Object
   
   @js.native
+  sealed trait `1001` extends js.Object
+  
+  @js.native
+  sealed trait `1002` extends js.Object
+  
+  @js.native
   sealed trait `101` extends js.Object
   
   @js.native
@@ -183,6 +186,12 @@ object screepsNumbers {
   sealed trait `121` extends js.Object
   
   @js.native
+  sealed trait `122` extends js.Object
+  
+  @js.native
+  sealed trait `123` extends js.Object
+  
+  @js.native
   sealed trait `13` extends js.Object
   
   @js.native
@@ -201,7 +210,13 @@ object screepsNumbers {
   sealed trait `15000` extends js.Object
   
   @js.native
+  sealed trait `150000` extends js.Object
+  
+  @js.native
   sealed trait `16` extends js.Object
+  
+  @js.native
+  sealed trait `160` extends js.Object
   
   @js.native
   sealed trait `17` extends js.Object
@@ -244,6 +259,9 @@ object screepsNumbers {
   
   @js.native
   sealed trait `20000` extends js.Object
+  
+  @js.native
+  sealed trait `200000` extends js.Object
   
   @js.native
   sealed trait `2000000` extends js.Object
@@ -333,7 +351,13 @@ object screepsNumbers {
   sealed trait `6` extends js.Object
   
   @js.native
+  sealed trait `60` extends js.Object
+  
+  @js.native
   sealed trait `600` extends js.Object
+  
+  @js.native
+  sealed trait `65` extends js.Object
   
   @js.native
   sealed trait `7` extends js.Object
@@ -345,6 +369,9 @@ object screepsNumbers {
   sealed trait `8` extends js.Object
   
   @js.native
+  sealed trait `80` extends js.Object
+  
+  @js.native
   sealed trait `800` extends js.Object
   
   @js.native
@@ -352,6 +379,9 @@ object screepsNumbers {
   
   @js.native
   sealed trait `9` extends js.Object
+  
+  @js.native
+  sealed trait _2592000000 extends js.Object
   
   @js.native
   sealed trait `false` extends js.Object
@@ -363,8 +393,6 @@ object screepsNumbers {
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   @scala.inline
   def `-10`: `-10` = -10.asInstanceOf[`-10`]
-  @scala.inline
-  def `-106`: `-106` = -106.asInstanceOf[`-106`]
   @scala.inline
   def `-11`: `-11` = -11.asInstanceOf[`-11`]
   @scala.inline
@@ -432,6 +460,10 @@ object screepsNumbers {
   @scala.inline
   def `100000000`: `100000000` = 100000000.asInstanceOf[`100000000`]
   @scala.inline
+  def `1001`: `1001` = 1001.asInstanceOf[`1001`]
+  @scala.inline
+  def `1002`: `1002` = 1002.asInstanceOf[`1002`]
+  @scala.inline
   def `101`: `101` = 101.asInstanceOf[`101`]
   @scala.inline
   def `102`: `102` = 102.asInstanceOf[`102`]
@@ -478,6 +510,10 @@ object screepsNumbers {
   @scala.inline
   def `121`: `121` = 121.asInstanceOf[`121`]
   @scala.inline
+  def `122`: `122` = 122.asInstanceOf[`122`]
+  @scala.inline
+  def `123`: `123` = 123.asInstanceOf[`123`]
+  @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   @scala.inline
   def `14`: `14` = 14.asInstanceOf[`14`]
@@ -490,7 +526,11 @@ object screepsNumbers {
   @scala.inline
   def `15000`: `15000` = 15000.asInstanceOf[`15000`]
   @scala.inline
+  def `150000`: `150000` = 150000.asInstanceOf[`150000`]
+  @scala.inline
   def `16`: `16` = 16.asInstanceOf[`16`]
+  @scala.inline
+  def `160`: `160` = 160.asInstanceOf[`160`]
   @scala.inline
   def `17`: `17` = 17.asInstanceOf[`17`]
   @scala.inline
@@ -519,6 +559,8 @@ object screepsNumbers {
   def `200`: `200` = 200.asInstanceOf[`200`]
   @scala.inline
   def `20000`: `20000` = 20000.asInstanceOf[`20000`]
+  @scala.inline
+  def `200000`: `200000` = 200000.asInstanceOf[`200000`]
   @scala.inline
   def `2000000`: `2000000` = 2000000.asInstanceOf[`2000000`]
   @scala.inline
@@ -578,7 +620,11 @@ object screepsNumbers {
   @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
+  def `60`: `60` = 60.asInstanceOf[`60`]
+  @scala.inline
   def `600`: `600` = 600.asInstanceOf[`600`]
+  @scala.inline
+  def `65`: `65` = 65.asInstanceOf[`65`]
   @scala.inline
   def `7`: `7` = 7.asInstanceOf[`7`]
   @scala.inline
@@ -586,11 +632,15 @@ object screepsNumbers {
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
   @scala.inline
+  def `80`: `80` = 80.asInstanceOf[`80`]
+  @scala.inline
   def `800`: `800` = 800.asInstanceOf[`800`]
   @scala.inline
   def `86400000`: `86400000` = 86400000.asInstanceOf[`86400000`]
   @scala.inline
   def `9`: `9` = 9.asInstanceOf[`9`]
+  @scala.inline
+  def _2592000000: _2592000000 = 2592000000.0.asInstanceOf[_2592000000]
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
   @scala.inline

@@ -7,7 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * RoleBindingList is a collection of RoleBindings
+  * RoleBindingList is a collection of RoleBindings Deprecated in v1.17 in favor of
+  * rbac.authorization.k8s.io/v1 RoleBindingList, and will no longer be served in v1.20.
   */
 trait RoleBindingList extends js.Object {
   /**

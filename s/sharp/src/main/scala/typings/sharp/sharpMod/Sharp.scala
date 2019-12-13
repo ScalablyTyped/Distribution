@@ -308,6 +308,14 @@ trait Sharp extends Duplex {
     * @returns A sharp instance that can be used to chain operations
     */
   def resize(): Sharp = js.native
+  /**
+    * Shorthand for resize(null, null, options);
+    *
+    * @param options resize options
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def resize(options: ResizeOptions): Sharp = js.native
   def resize(width: Double): Sharp = js.native
   def resize(width: Double, height: Double): Sharp = js.native
   def resize(width: Double, height: Double, options: ResizeOptions): Sharp = js.native

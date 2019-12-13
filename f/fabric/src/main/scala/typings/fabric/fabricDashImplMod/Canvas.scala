@@ -85,7 +85,7 @@ class Canvas protected () extends StaticCanvas {
   /**
   	 * Color of object's fill
   	 */
-  var fill: js.UndefOr[String | Pattern] = js.native
+  var fill: js.UndefOr[String | Pattern | Gradient] = js.native
   /**
   	 * Indicates if the canvas can fire middle click events
   	 * @type Boolean

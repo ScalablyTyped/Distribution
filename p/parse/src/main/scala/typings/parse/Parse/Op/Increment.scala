@@ -1,12 +1,12 @@
 package typings.parse.Parse.Op
 
-import typings.parse.Parse.IBaseObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Increment extends IBaseObject {
+trait Increment extends js.Object {
   var amount: Double
+  def toJSON(): js.Any
 }
 
 object Increment {

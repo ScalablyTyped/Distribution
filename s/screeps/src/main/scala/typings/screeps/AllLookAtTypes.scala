@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait AllLookAtTypes extends js.Object {
   var constructionSite: ConstructionSite[BuildableStructureConstant]
   var creep: Creep
+  var deposit: Deposit
   var energy: Resource[RESOURCE_ENERGY]
   var exit: js.Any
    // TODO what type is this?
@@ -15,6 +16,7 @@ trait AllLookAtTypes extends js.Object {
   var nuke: Nuke
   var powerCreep: PowerCreep
   var resource: Resource[ResourceConstant]
+  var ruin: Ruin
   var source: Source
   var structure: Structure[StructureConstant]
   var terrain: Terrain
@@ -26,6 +28,7 @@ object AllLookAtTypes {
   def apply(
     constructionSite: ConstructionSite[BuildableStructureConstant],
     creep: Creep,
+    deposit: Deposit,
     energy: Resource[RESOURCE_ENERGY],
     exit: js.Any,
     flag: Flag,
@@ -33,12 +36,13 @@ object AllLookAtTypes {
     nuke: Nuke,
     powerCreep: PowerCreep,
     resource: Resource[ResourceConstant],
+    ruin: Ruin,
     source: Source,
     structure: Structure[StructureConstant],
     terrain: Terrain,
     tombstone: Tombstone
   ): AllLookAtTypes = {
-    val __obj = js.Dynamic.literal(constructionSite = constructionSite.asInstanceOf[js.Any], creep = creep.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], mineral = mineral.asInstanceOf[js.Any], nuke = nuke.asInstanceOf[js.Any], powerCreep = powerCreep.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], terrain = terrain.asInstanceOf[js.Any], tombstone = tombstone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructionSite = constructionSite.asInstanceOf[js.Any], creep = creep.asInstanceOf[js.Any], deposit = deposit.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], mineral = mineral.asInstanceOf[js.Any], nuke = nuke.asInstanceOf[js.Any], powerCreep = powerCreep.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], ruin = ruin.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], terrain = terrain.asInstanceOf[js.Any], tombstone = tombstone.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AllLookAtTypes]
   }

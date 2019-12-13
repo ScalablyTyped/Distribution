@@ -18,6 +18,7 @@ object distFeedsMusicDashSearchDotFeedMod extends js.Object {
     var query: String = js.native
     var searchSessionId: String = js.native
     def request(): js.Promise[MusicSearchFeedResponseRootObject] = js.native
+    /* protected */ def state(response: js.Any): js.Any = js.native
   }
   
 }

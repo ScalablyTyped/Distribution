@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureObserver")
 @js.native
 class StructureObserverCls protected () extends StructureObserver {
-  def this(id: String) = this()
+  def this(id: Id[StructureObserver]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -27,7 +27,7 @@ class StructureObserverCls protected () extends StructureObserver {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
     */

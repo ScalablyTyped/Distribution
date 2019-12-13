@@ -68,6 +68,9 @@ import scala.scalajs.js.annotation._
 
 object vegaDashTypingsStrings {
   @js.native
+  sealed trait ExcludeMappedValueRef extends js.Object
+  
+  @js.native
   sealed trait accent
     extends Categorical
        with ColorScheme
@@ -2787,6 +2790,8 @@ object vegaDashTypingsStrings {
   @js.native
   sealed trait `zoom-out` extends Cursor
   
+  @scala.inline
+  def ExcludeMappedValueRef: ExcludeMappedValueRef = "ExcludeMappedValueRef".asInstanceOf[ExcludeMappedValueRef]
   @scala.inline
   def accent: accent = "accent".asInstanceOf[accent]
   @scala.inline

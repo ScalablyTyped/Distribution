@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csv-stringify" : "5.3.3"
+      "csv-stringify" : "5.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "csv-stringify" : "5.3.3"
+      "csv-stringify" : "5.3.4"
     }
   ],
   "compile-devDependencies" : [

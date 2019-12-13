@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var accessGroup: js.UndefOr[String] = js.undefined
   var accessible: js.UndefOr[ACCESSIBLE] = js.undefined
   var authenticationPrompt: js.UndefOr[String] = js.undefined
-  var authenticationType: js.UndefOr[LAPolicy] = js.undefined
+  var authenticationType: js.UndefOr[AUTHENTICATION_TYPE] = js.undefined
   var securityLevel: js.UndefOr[SECURITY_LEVEL] = js.undefined
   var service: js.UndefOr[String] = js.undefined
 }
@@ -21,7 +21,7 @@ object Options {
     accessGroup: String = null,
     accessible: ACCESSIBLE = null,
     authenticationPrompt: String = null,
-    authenticationType: LAPolicy = null,
+    authenticationType: AUTHENTICATION_TYPE = null,
     securityLevel: SECURITY_LEVEL = null,
     service: String = null
   ): Options = {

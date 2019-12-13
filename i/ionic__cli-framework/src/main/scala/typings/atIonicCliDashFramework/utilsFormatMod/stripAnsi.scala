@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/utils/format", "stripAnsi")
 @js.native
 object stripAnsi extends js.Object {
-  def apply(string: String): String = js.native
+  def default(string: String): String = js.native
 }
 

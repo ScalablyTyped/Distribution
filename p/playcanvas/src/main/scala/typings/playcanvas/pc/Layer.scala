@@ -94,7 +94,7 @@ import scala.scalajs.js.annotation._
   * This function will receive camera index as the only argument. You can get the actual camera being used by looking up {@link pc.LayerComposition#cameras} with this index.
   * @property {Function} onDrawCall Custom function that is called before every mesh instance in this layer is rendered.
   * It is not recommended to set this function when rendering many objects every frame due to performance reasons.
-  * @property {Function} id A unique ID of the layer.
+  * @property {Number} id A unique ID of the layer.
   * Layer IDs are stored inside {@link pc.ModelComponent#layers}, {@link pc.CameraComponent#layers}, {@link pc.LightComponent#layers} and {@link pc.ElementComponent#layers} instead of names.
   * Can be used in {@link pc.LayerComposition#getLayerById}.
   */
@@ -122,6 +122,12 @@ class Layer protected () extends js.Object {
     * Enable the layer. Disabled layers are skipped. Defaults to true.
     */
   var enabled: Boolean = js.native
+  /**
+    * A unique ID of the layer.
+    * Layer IDs are stored inside {@link pc.ModelComponent#layers}, {@link pc.CameraComponent#layers}, {@link pc.LightComponent#layers} and {@link pc.ElementComponent#layers} instead of names.
+    * Can be used in {@link pc.LayerComposition#getLayerById}.
+    */
+  var id: Double = js.native
   /**
     * Make this layer render the same mesh instances that another layer does instead of having its own mesh instance list.
     * Both layers must share cameras. Frustum culling is only performed for one layer.
@@ -235,12 +241,6 @@ class Layer protected () extends js.Object {
     * Visibility mask that interacts with {@link pc.MeshInstance#mask}.
     */
   def cullingMask(params: js.Any*): js.Any = js.native
-  /**
-    * A unique ID of the layer.
-    * Layer IDs are stored inside {@link pc.ModelComponent#layers}, {@link pc.CameraComponent#layers}, {@link pc.LightComponent#layers} and {@link pc.ElementComponent#layers} instead of names.
-    * Can be used in {@link pc.LayerComposition#getLayerById}.
-    */
-  def id(params: js.Any*): js.Any = js.native
   /**
     * Custom function that is called after the layer has been disabled.
     * This happens when:

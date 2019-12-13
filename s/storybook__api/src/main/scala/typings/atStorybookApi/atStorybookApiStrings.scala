@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 object atStorybookApiStrings {
   @js.native
-  sealed trait `5DOT2DOT6` extends js.Object
+  sealed trait `5DOT2DOT8` extends js.Object
   
   @js.native
   sealed trait `@storybook/ui/store` extends js.Object
@@ -108,7 +108,7 @@ object atStorybookApiStrings {
   sealed trait toolbar extends Action
   
   @scala.inline
-  def `5DOT2DOT6`: `5DOT2DOT6` = "5.2.6".asInstanceOf[`5DOT2DOT6`]
+  def `5DOT2DOT8`: `5DOT2DOT8` = "5.2.8".asInstanceOf[`5DOT2DOT8`]
   @scala.inline
   def `@storybook/ui/store`: `@storybook/ui/store` = "@storybook/ui/store".asInstanceOf[`@storybook/ui/store`]
   @scala.inline

@@ -36,6 +36,7 @@ object validationValidationTypesMod extends js.Object {
     var IS_CURRENCY: String = js.native
     var IS_DATE: String = js.native
     var IS_DATE_STRING: String = js.native
+    var IS_DECIMAL: String = js.native
     var IS_DEFINED: String = js.native
     var IS_DIVISIBLE_BY: String = js.native
     var IS_EMAIL: String = js.native
@@ -44,6 +45,7 @@ object validationValidationTypesMod extends js.Object {
     var IS_FQDN: String = js.native
     var IS_FULL_WIDTH: String = js.native
     var IS_HALF_WIDTH: String = js.native
+    var IS_HASH: String = js.native
     var IS_HEXADECIMAL: String = js.native
     var IS_HEX_COLOR: String = js.native
     var IS_IN: String = js.native
@@ -52,19 +54,30 @@ object validationValidationTypesMod extends js.Object {
     var IS_IP: String = js.native
     var IS_ISBN: String = js.native
     var IS_ISIN: String = js.native
+    var IS_ISO31661_ALPHA_2: String = js.native
+    var IS_ISO31661_ALPHA_3: String = js.native
     var IS_ISO8601: String = js.native
+    var IS_ISSN: String = js.native
     var IS_JSON: String = js.native
+    var IS_JWT: String = js.native
+    var IS_LATITUDE: String = js.native
+    var IS_LATLONG: String = js.native
+    var IS_LONGITUDE: String = js.native
     var IS_LOWERCASE: String = js.native
+    var IS_MAC_ADDRESS: String = js.native
     var IS_MILITARY_TIME: String = js.native
     var IS_MOBILE_PHONE: String = js.native
     var IS_MONGO_ID: String = js.native
     var IS_MULTIBYTE: String = js.native
     var IS_NEGATIVE: String = js.native
     var IS_NOT_EMPTY: String = js.native
+    var IS_NOT_EMPTY_OBJECT: String = js.native
     var IS_NOT_IN: String = js.native
     var IS_NUMBER: String = js.native
     var IS_NUMBER_STRING: String = js.native
+    var IS_OBJECT: String = js.native
     var IS_PHONE_NUMBER: String = js.native
+    var IS_PORT: String = js.native
     var IS_POSITIVE: String = js.native
     var IS_STRING: String = js.native
     var IS_SURROGATE_PAIR: String = js.native
@@ -83,6 +96,7 @@ object validationValidationTypesMod extends js.Object {
     var NESTED_VALIDATION: String = js.native
     var NOT_CONTAINS: String = js.native
     var NOT_EQUALS: String = js.native
+    var PROMISE_VALIDATION: String = js.native
     var WHITELIST: String = js.native
     /**
       * Gets default validation error message for the given validation type.

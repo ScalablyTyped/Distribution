@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * A Parse.Schema object is for handling schema data from Parse.
   * All the schemas methods require MasterKey.
   *
-  * @param {String} className Parse Class string
+  * @param className Parse Class string
   *
   * https://parseplatform.org/Parse-SDK-JS/api/master/Parse.Schema.html
   *

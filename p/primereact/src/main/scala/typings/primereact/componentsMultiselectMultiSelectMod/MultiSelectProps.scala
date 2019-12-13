@@ -18,6 +18,7 @@ trait MultiSelectProps extends js.Object {
   var fixedPlaceholder: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
+  var maxSelectedLabels: js.UndefOr[Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ Anon_OriginalEventValue, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
@@ -26,6 +27,7 @@ trait MultiSelectProps extends js.Object {
   var placeholder: js.UndefOr[String] = js.undefined
   var scrollHeight: js.UndefOr[String] = js.undefined
   var selectedItemTemplate: js.UndefOr[js.Function1[/* value */ js.Any, js.UndefOr[Element]]] = js.undefined
+  var selectedItemsLabel: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[Boolean] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
@@ -44,6 +46,7 @@ object MultiSelectProps {
     fixedPlaceholder: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
+    maxSelectedLabels: Int | Double = null,
     onBlur: /* event */ Event => Unit = null,
     onChange: /* e */ Anon_OriginalEventValue => Unit = null,
     onFocus: /* event */ Event => Unit = null,
@@ -52,6 +55,7 @@ object MultiSelectProps {
     placeholder: String = null,
     scrollHeight: String = null,
     selectedItemTemplate: /* value */ js.Any => js.UndefOr[Element] = null,
+    selectedItemsLabel: String = null,
     style: js.Object = null,
     tabIndex: js.UndefOr[Boolean] = js.undefined,
     tooltip: js.Any = null,
@@ -67,6 +71,7 @@ object MultiSelectProps {
     if (!js.isUndefined(fixedPlaceholder)) __obj.updateDynamic("fixedPlaceholder")(fixedPlaceholder.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
+    if (maxSelectedLabels != null) __obj.updateDynamic("maxSelectedLabels")(maxSelectedLabels.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
@@ -75,6 +80,7 @@ object MultiSelectProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
     if (selectedItemTemplate != null) __obj.updateDynamic("selectedItemTemplate")(js.Any.fromFunction1(selectedItemTemplate))
+    if (selectedItemsLabel != null) __obj.updateDynamic("selectedItemsLabel")(selectedItemsLabel.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

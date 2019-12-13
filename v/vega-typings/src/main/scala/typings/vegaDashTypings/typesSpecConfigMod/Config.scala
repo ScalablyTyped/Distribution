@@ -1,10 +1,12 @@
 package typings.vegaDashTypings.typesSpecConfigMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.vegaDashTypings.Anon_Any
-import typings.vegaDashTypings.Anon_Category
 import typings.vegaDashTypings.typesSpecAutosizeMod.AutoSize
+import typings.vegaDashTypings.typesSpecColorMod.Color
 import typings.vegaDashTypings.typesSpecSignalMod.InitSignal
 import typings.vegaDashTypings.typesSpecSignalMod.NewSignal
+import typings.vegaDashTypings.typesSpecSignalMod.SignalRef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,16 +15,15 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig> ]:? std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig>[P]}
 - Dropped {[ P in keyof std.Record<vega-typings.vega-typings/types/spec/config.AxisConfigKeys, vega-typings.vega-typings/types/spec/config.AxisConfig> ]:? std.Record<vega-typings.vega-typings/types/spec/config.AxisConfigKeys, vega-typings.vega-typings/types/spec/config.AxisConfig>[P]} */ trait Config extends js.Object {
   var autosize: js.UndefOr[AutoSize] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[Null | Color | SignalRef] = js.undefined
    // TODO
   var events: js.UndefOr[Anon_Any] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
-   // TODO
   var legend: js.UndefOr[LegendConfig] = js.undefined
   var projection: js.UndefOr[ProjectionConfig] = js.undefined
-  var range: js.UndefOr[Anon_Category] = js.undefined
+  var range: js.UndefOr[RangeConfig] = js.undefined
   var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[StringDictionary[MarkConfig]] = js.undefined
   var title: js.UndefOr[TitleConfig] = js.undefined
 }
 
@@ -30,14 +31,14 @@ object Config {
   @scala.inline
   def apply(
     autosize: AutoSize = null,
-    background: String = null,
+    background: Color | SignalRef = null,
     events: Anon_Any = null,
     group: js.Any = null,
     legend: LegendConfig = null,
     projection: ProjectionConfig = null,
-    range: Anon_Category = null,
+    range: RangeConfig = null,
     signals: js.Array[InitSignal | NewSignal] = null,
-    style: js.Any = null,
+    style: StringDictionary[MarkConfig] = null,
     title: TitleConfig = null
   ): Config = {
     val __obj = js.Dynamic.literal()

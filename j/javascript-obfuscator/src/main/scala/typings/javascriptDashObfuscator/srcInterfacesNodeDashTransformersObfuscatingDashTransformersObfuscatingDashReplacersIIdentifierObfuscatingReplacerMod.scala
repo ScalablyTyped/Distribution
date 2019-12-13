@@ -13,6 +13,10 @@ object srcInterfacesNodeDashTransformersObfuscatingDashTransformersObfuscatingDa
   @js.native
   trait IIdentifierObfuscatingReplacer extends IObfuscatingReplacer[Identifier] {
     /**
+      * @param {string} name
+      */
+    def preserveName(name: String): Unit = js.native
+    /**
       * @param {string} nodeValue
       * @param {TNodeWithLexicalScope} lexicalScopeNode
       */

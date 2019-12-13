@@ -56,8 +56,7 @@ trait CommentLoadOptions extends js.Object {
     *
     * Gets the entities (e.g. people) that are mentioned in comments.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   var mentions: js.UndefOr[Boolean] = js.native
   /**
@@ -72,8 +71,7 @@ trait CommentLoadOptions extends js.Object {
     *
     * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   var richContent: js.UndefOr[Boolean] = js.native
 }

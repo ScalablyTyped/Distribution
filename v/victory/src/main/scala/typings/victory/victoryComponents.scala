@@ -35,6 +35,8 @@ object victoryComponents extends victoryProps {
   @scala.inline
   def VictoryPie: ComponentType[VictoryPieProps] = js.constructorOf[typings.victory.victoryMod.VictoryPie].asInstanceOf[typings.react.reactMod.ComponentType[VictoryPieProps]]
   @scala.inline
+  def VictoryPortal: ComponentType[VictoryPortalProps] = js.constructorOf[typings.victory.victoryMod.VictoryPortal].asInstanceOf[typings.react.reactMod.ComponentType[VictoryPortalProps]]
+  @scala.inline
   def VictoryScatter: ComponentType[VictoryScatterProps] = js.constructorOf[typings.victory.victoryMod.VictoryScatter].asInstanceOf[typings.react.reactMod.ComponentType[VictoryScatterProps]]
   @scala.inline
   def VictoryStack: ComponentType[VictoryStackProps] = js.constructorOf[typings.victory.victoryMod.VictoryStack].asInstanceOf[typings.react.reactMod.ComponentType[VictoryStackProps]]

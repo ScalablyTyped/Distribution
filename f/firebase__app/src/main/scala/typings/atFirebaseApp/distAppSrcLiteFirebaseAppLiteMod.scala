@@ -21,16 +21,11 @@ object distAppSrcLiteFirebaseAppLiteMod extends js.Object {
       * use before performing API actions on the App.
       */
     var checkDestroyed_ : js.Any = js.native
-    /**
-      * Callback function used to extend an App instance at the time
-      * of service instance creation.
-      */
-    var extendApp: js.Any = js.native
+    var container: js.Any = js.native
     val firebase_ : js.Any = js.native
     var isDeleted_ : js.Any = js.native
     val name_ : js.Any = js.native
     val options_ : js.Any = js.native
-    var services_ : js.Any = js.native
     /**
       * Return a service instance associated with this app (creating it
       * on demand), identified by the passed instanceIdentifier.

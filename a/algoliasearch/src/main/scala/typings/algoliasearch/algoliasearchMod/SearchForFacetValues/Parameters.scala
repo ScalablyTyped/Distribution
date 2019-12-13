@@ -99,7 +99,8 @@ object Parameters {
     synonyms: js.UndefOr[Boolean] = js.undefined,
     tagFilters: js.Array[String] = null,
     typoTolerance: Boolean | min | strict = null,
-    userData: String | js.Object = null
+    userData: String | js.Object = null,
+    userToken: String = null
   ): Parameters = {
     val __obj = js.Dynamic.literal(facetName = facetName.asInstanceOf[js.Any], facetQuery = facetQuery.asInstanceOf[js.Any])
     if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
@@ -160,6 +161,7 @@ object Parameters {
     if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
 }

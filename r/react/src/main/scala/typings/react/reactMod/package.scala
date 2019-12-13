@@ -29,6 +29,7 @@ package object reactMod {
   type AnimationEventHandler[T] = EventHandler[AnimationEvent[T]]
   // tslint:disable-next-line:no-empty-interface
   type AudioHTMLAttributes[T] = MediaHTMLAttributes[T]
+  type Booleanish = Boolean
   type CElement[P, T /* <: Component[P, ComponentState, _] */] = ComponentElement[P, T]
   type CFactory[P, T /* <: Component[P, ComponentState, _] */] = ComponentFactory[P, T]
   type ChangeEventHandler[T] = EventHandler[ChangeEvent[T]]

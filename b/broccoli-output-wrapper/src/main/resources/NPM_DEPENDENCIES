@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "broccoli-output-wrapper" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "broccoli-output-wrapper" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

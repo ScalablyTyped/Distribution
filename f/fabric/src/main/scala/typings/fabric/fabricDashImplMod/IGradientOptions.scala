@@ -1,6 +1,5 @@
 package typings.fabric.fabricDashImplMod
 
-import typings.fabric.Anon_R1
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,8 +8,8 @@ trait IGradientOptions extends js.Object {
   /**
   	 * Color stops object eg. {0:string; 1:string;
   	 */
-  var colorStops: js.UndefOr[js.Any] = js.undefined
-  var coords: js.UndefOr[Anon_R1] = js.undefined
+  var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.undefined
+  var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
   var gradientTransform: js.UndefOr[js.Any] = js.undefined
   /**
   	 * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
@@ -28,8 +27,8 @@ trait IGradientOptions extends js.Object {
 object IGradientOptions {
   @scala.inline
   def apply(
-    colorStops: js.Any = null,
-    coords: Anon_R1 = null,
+    colorStops: IGradientOptionsColorStops = null,
+    coords: IGradientOptionsCoords = null,
     gradientTransform: js.Any = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,

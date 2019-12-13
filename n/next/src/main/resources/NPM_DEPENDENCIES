@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "next" : "9.1.4"
+      "next" : "9.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "next" : "9.1.4"
+      "next" : "9.1.5"
     }
   ],
   "compile-devDependencies" : [

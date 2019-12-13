@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mentions
 
-Typings are for version 3.0
+Typings are for version 3.3
 
 ## Library description:
 React mentions input

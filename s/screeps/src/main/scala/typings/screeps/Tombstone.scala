@@ -24,7 +24,7 @@ trait Tombstone extends RoomObject {
     * A unique object identificator.
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
     */
-  var id: String
+  var id: Id[this.type]
   /**
     * An object with the tombstone contents.
     * Each object key is one of the RESOURCE_* constants, values are resources amounts.
@@ -32,7 +32,7 @@ trait Tombstone extends RoomObject {
     * other resources are undefined when empty.
     * You can use lodash.sum to get the total amount of contents.
     */
-  var store: StoreDefinition
+  var store: StoreDefinitionUnlimited
   /**
     * The amount of game ticks before this tombstone decays.
     */

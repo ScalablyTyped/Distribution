@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frida-gum"
-version := "14.2-dt-20191108Z-28cd7f"
+version := "14.4-dt-20191210Z-7c4177"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

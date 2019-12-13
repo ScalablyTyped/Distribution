@@ -5,6 +5,7 @@ import typings.jose.joseMod.ECCurve
 import typings.jose.joseMod.JSONWebKeySet
 import typings.jose.joseMod.JWK.Key
 import typings.jose.joseMod.OKPCurve
+import typings.jose.joseMod._ConsumeKeyInput
 import typings.jose.joseStrings.EC
 import typings.jose.joseStrings.OKP
 import typings.jose.joseStrings.RSA
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("jose", "JWKS.KeyStore")
 @js.native
-class KeyStore () extends js.Object {
+class KeyStore () extends _ConsumeKeyInput {
   def this(keys: js.Array[Key]) = this()
   var size: Double = js.native
   def add(key: Key): Unit = js.native

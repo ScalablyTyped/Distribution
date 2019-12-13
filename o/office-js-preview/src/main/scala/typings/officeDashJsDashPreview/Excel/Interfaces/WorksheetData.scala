@@ -33,6 +33,14 @@ trait WorksheetData extends js.Object {
   var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
   /**
     *
+    * Returns a collection of worksheet-level custom properties.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var customProperties: js.UndefOr[js.Array[WorksheetCustomPropertyData]] = js.undefined
+  /**
+    *
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
@@ -178,6 +186,7 @@ object WorksheetData {
     autoFilter: AutoFilterData = null,
     charts: js.Array[ChartData] = null,
     comments: js.Array[CommentData] = null,
+    customProperties: js.Array[WorksheetCustomPropertyData] = null,
     enableCalculation: js.UndefOr[Boolean] = js.undefined,
     horizontalPageBreaks: js.Array[PageBreakData] = null,
     id: String = null,
@@ -202,6 +211,7 @@ object WorksheetData {
     if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
     if (charts != null) __obj.updateDynamic("charts")(charts.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties.asInstanceOf[js.Any])
     if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation.asInstanceOf[js.Any])
     if (horizontalPageBreaks != null) __obj.updateDynamic("horizontalPageBreaks")(horizontalPageBreaks.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

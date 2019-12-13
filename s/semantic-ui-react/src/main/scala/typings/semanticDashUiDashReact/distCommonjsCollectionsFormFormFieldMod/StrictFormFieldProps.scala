@@ -29,6 +29,8 @@ trait StrictFormFieldProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   /** Individual fields may display an error state along with a message. */
   var error: js.UndefOr[Boolean | SemanticShorthandItem[LabelProps]] = js.undefined
+  /** The id of the control */
+  var id: js.UndefOr[Double | String] = js.undefined
   /** A field can have its label next to instead of above it. */
   var `inline`: js.UndefOr[Boolean] = js.undefined
   /** Mutually exclusive with children. */
@@ -51,6 +53,7 @@ object StrictFormFieldProps {
     control: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: Boolean | SemanticShorthandItem[LabelProps] = null,
+    id: Double | String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     label: SemanticShorthandItem[HtmlLabelProps] = null,
     required: js.Any = null,
@@ -65,6 +68,7 @@ object StrictFormFieldProps {
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

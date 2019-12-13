@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureRampart")
 @js.native
 class StructureRampartCls protected () extends StructureRampart {
-  def this(id: String) = this()
+  def this(id: Id[StructureRampart]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -27,7 +27,7 @@ class StructureRampartCls protected () extends StructureRampart {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * If false (default), only your creeps can step on the same square. If true, any hostile creeps can pass through.
     */

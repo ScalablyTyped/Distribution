@@ -19,7 +19,7 @@ object distTypesComponentsIonRouterOutletMod extends js.Object {
         typings.atIonicCore.distTypesComponentsMod.LocalJSX.IonRouterOutlet with Anon_Ref with IonicReactProps, 
         HTMLIonRouterOutletElement
       ], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 257 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 258 */ js.Any
     ]) with RefAttributes[HTMLIonRouterOutletElement]
   ] = js.native
 }

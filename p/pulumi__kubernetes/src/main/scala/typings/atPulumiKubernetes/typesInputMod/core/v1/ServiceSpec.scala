@@ -106,6 +106,18 @@ trait ServiceSpec extends js.Object {
     */
   var sessionAffinityConfig: js.UndefOr[Input[SessionAffinityConfig]] = js.undefined
   /**
+    * topologyKeys is a preference-order list of topology keys which implementations of services
+    * should use to preferentially sort endpoints when accessing this Service, it can not be used
+    * at the same time as externalTrafficPolicy=Local. Topology keys must be valid label keys and
+    * at most 16 keys may be specified. Endpoints are chosen based on the first topology key with
+    * available backends. If this field is specified and all entries have no backends that match
+    * the topology of the client, the service has no backends for that client and connections
+    * should fail. The special value "*" may be used to mean "any topology". This catch-all
+    * value, if used, only makes sense as the last value in the list. If this is not specified or
+    * empty, no topology constraints will be applied.
+    */
+  var topologyKeys: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  /**
     * type determines how the Service is exposed. Defaults to ClusterIP. Valid options are
     * ExternalName, ClusterIP, NodePort, and LoadBalancer. "ExternalName" maps to the specified
     * externalName. "ClusterIP" allocates a cluster-internal IP address for load-balancing to
@@ -136,6 +148,7 @@ object ServiceSpec {
     selector: Input[StringDictionary[Input[String]]] = null,
     sessionAffinity: Input[String] = null,
     sessionAffinityConfig: Input[SessionAffinityConfig] = null,
+    topologyKeys: Input[js.Array[Input[String]]] = null,
     `type`: Input[String] = null
   ): ServiceSpec = {
     val __obj = js.Dynamic.literal()
@@ -152,6 +165,7 @@ object ServiceSpec {
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity.asInstanceOf[js.Any])
     if (sessionAffinityConfig != null) __obj.updateDynamic("sessionAffinityConfig")(sessionAffinityConfig.asInstanceOf[js.Any])
+    if (topologyKeys != null) __obj.updateDynamic("topologyKeys")(topologyKeys.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSpec]
   }

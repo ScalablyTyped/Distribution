@@ -24,6 +24,10 @@ trait ISelectableOption extends js.Object {
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
   /**
+    * ID attribute associated with this option
+    */
+  var id: js.UndefOr[String] = js.undefined
+  /**
     * Index for this option
     */
   var index: js.UndefOr[Double] = js.undefined
@@ -56,6 +60,7 @@ object ISelectableOption {
     data: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     index: Int | Double = null,
     itemType: SelectableOptionMenuItemType = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -66,6 +71,7 @@ object ISelectableOption {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])

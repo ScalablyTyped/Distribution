@@ -414,8 +414,9 @@ class GraphNode () extends EventHandler {
     * @name pc.GraphNode#reparent
     * @description Remove graph node from current parent and add as child to new parent
     * @param {pc.GraphNode} parent New parent to attach graph node to
-    * @param {Number} index (optional) The child index where the child node should be placed.
+    * @param {Number} [index] The child index where the child node should be placed.
     */
+  def reparent(parent: GraphNode): Unit = js.native
   def reparent(parent: GraphNode, index: Double): Unit = js.native
   def rotate(x: Double): Unit = js.native
   def rotate(x: Double, y: Double): Unit = js.native

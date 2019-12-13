@@ -8,6 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * @deprecated storage/v1beta1/CSINode is not supported by Kubernetes 1.16+ clusters. Use
+  * storage/v1beta1/CSINode instead.
+  *
   * CSINode holds information about all CSI drivers installed on a node. CSI drivers do not need
   * to create the CSINode object directly. As long as they use the node-driver-registrar sidecar
   * container, the kubelet will automatically populate the CSINode object for the CSI driver as

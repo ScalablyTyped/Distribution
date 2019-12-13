@@ -1,5 +1,6 @@
 package typings.screeps
 
+import typings.screeps.screepsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructurePowerSpawn")
 @js.native
 class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
-  def this(id: String) = this()
+  def this(id: Id[StructurePowerSpawn]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -15,11 +16,13 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
   override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The amount of energy containing in this structure.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   /* CompleteClass */
   override var energy: Double = js.native
   /**
     * The total amount of energy this structure can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   /* CompleteClass */
   override var energyCapacity: Double = js.native
@@ -37,7 +40,7 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
     */
@@ -55,11 +58,13 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
   override var pos: RoomPosition = js.native
   /**
     * The amount of power containing in this structure.
+    * @deprecated An alias for .store[RESOURCE_POWER].
     */
   /* CompleteClass */
   override var power: Double = js.native
   /**
     * The total amount of power this structure can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_POWER).
     */
   /* CompleteClass */
   override var powerCapacity: Double = js.native
@@ -70,6 +75,11 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
   /* CompleteClass */
   @JSName("room")
   override var room_Structure: Room = js.native
+  /**
+    *
+    */
+  /* CompleteClass */
+  override var store: Store[RESOURCE_ENERGY | RESOURCE_POWER, `false`] = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

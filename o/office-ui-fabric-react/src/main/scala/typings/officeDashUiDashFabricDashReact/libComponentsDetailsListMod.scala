@@ -8,6 +8,8 @@ import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsLi
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowCheckDotTypesMod.IDetailsRowCheckProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps
 import typings.officeDashUiDashFabricDashReact.libComponentsDetailsListDetailsRowFieldsDotTypesMod.IDetailsRowFieldsProps
+import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
+import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneState
 import typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactStrings.change
 import typings.react.reactMod.FunctionComponent
 import typings.react.reactMod.MouseEvent
@@ -52,8 +54,10 @@ object libComponentsDetailsListMod extends js.Object {
   }
   
   @js.native
-  class SelectionZone ()
-    extends typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionMod.SelectionZone
+  class SelectionZone protected ()
+    extends typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionMod.SelectionZone {
+    def this(props: ISelectionZoneProps) = this()
+  }
   
   val DetailsHeader: StatelessComponent[IDetailsHeaderBaseProps] = js.native
   val DetailsList: StatelessComponent[IDetailsListProps] = js.native
@@ -200,6 +204,7 @@ object libComponentsDetailsListMod extends js.Object {
   @js.native
   object SelectionZone extends js.Object {
     var defaultProps: Anon_IsSelectedOnFocus = js.native
+    def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
   }
   
 }

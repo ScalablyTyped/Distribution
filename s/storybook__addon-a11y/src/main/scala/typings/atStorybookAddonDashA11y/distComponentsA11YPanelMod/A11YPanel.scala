@@ -16,6 +16,7 @@ class A11YPanel ()
   def componentDidUpdate_MA11YPanel(prevProps: A11YPanelProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MA11YPanel(): Unit = js.native
+  def onError(error: js.Any): Unit = js.native
   def onUpdate(hasPassesViolationsIncomplete: AxeResults): Unit = js.native
   def request(): Unit = js.native
 }

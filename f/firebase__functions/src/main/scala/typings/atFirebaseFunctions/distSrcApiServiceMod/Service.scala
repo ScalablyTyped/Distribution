@@ -1,9 +1,11 @@
 package typings.atFirebaseFunctions.distSrcApiServiceMod
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseService
+import typings.atFirebaseComponent.atFirebaseComponentMod.Provider
 import typings.atFirebaseFunctions.Anon_Delete
+import typings.atFirebaseFunctions.atFirebaseAppDashTypesMod.FirebaseApp
 import typings.atFirebaseFunctionsDashTypes.atFirebaseFunctionsDashTypesMod.FirebaseFunctions
+import typings.atFirebaseMessagingDashTypes.atFirebaseMessagingDashTypesMod.FirebaseMessagingName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +20,25 @@ class Service protected ()
     * @param app_ The FirebaseApp to use.
     * @param region_ The region to call functions in.
     */
-  def this(app_ : FirebaseApp) = this()
-  def this(app_ : FirebaseApp, region_ : String) = this()
+  def this(
+    app_ : FirebaseApp,
+    authProvider: Provider[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
+      ],
+    messagingProvider: Provider[FirebaseMessagingName]
+  ) = this()
+  def this(
+    app_ : FirebaseApp,
+    authProvider: Provider[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseAuthInternalName */ _
+      ],
+    messagingProvider: Provider[FirebaseMessagingName],
+    region_ : String
+  ) = this()
   @JSName("INTERNAL")
   var INTERNAL_Service: Anon_Delete = js.native
   /* CompleteClass */
-  override var app: FirebaseApp = js.native
+  override var app: typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var app_ : js.Any = js.native
   /**
     * Calls a callable function asynchronously and returns the result.

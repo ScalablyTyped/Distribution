@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__metapackage"
-version := "1.2.3-06b551"
+version := "1.2.4-be36fc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

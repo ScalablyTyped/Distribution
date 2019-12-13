@@ -13,5 +13,5 @@ package object Airtable {
       String | Double | Boolean | Collaborator | (js.Array[Attachment | Collaborator | String])
     ]
   ]
-  type Response[TFields] = js.Array[Row[TFields]]
+  type Records[TFields] = js.Array[Record[TFields]]
 }

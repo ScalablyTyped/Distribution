@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-truncate
 
-Typings are for version 2.0.0
+Typings are for version 2.1.0
 
 ## Library description:
 Truncate a string to a specific width in the terminal

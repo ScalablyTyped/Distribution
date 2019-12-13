@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 object vanillaDashSwipeMod extends js.Object {
   @js.native
   trait VanillaSwipe extends js.Object {
-    var isPassiveSupported: Boolean = js.native
     var props: ConstructorProps = js.native
     var state: State = js.native
     def cleanupMouseListeners(): Unit = js.native

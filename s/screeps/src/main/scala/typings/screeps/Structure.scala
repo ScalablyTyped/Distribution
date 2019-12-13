@@ -20,7 +20,7 @@ trait Structure[T /* <: StructureConstant */] extends RoomObject {
   /**
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
-  var id: String
+  var id: Id[this.type]
   /**
     * If you can get an instance of a Structure, you can see it.
     * If you can see the Structure, you can see the room it's in.

@@ -79,7 +79,7 @@ object ITextboxOptions {
     editingBorderColor: String = null,
     evented: js.UndefOr[Boolean] = js.undefined,
     excludeFromExport: js.UndefOr[Boolean] = js.undefined,
-    fill: String | Pattern = null,
+    fill: String | Pattern | Gradient = null,
     fillRule: String = null,
     flipX: js.UndefOr[Boolean] = js.undefined,
     flipY: js.UndefOr[Boolean] = js.undefined,

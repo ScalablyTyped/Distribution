@@ -23,6 +23,7 @@ object IDropdownOption {
     data: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     index: Int | Double = null,
     isSelected: js.UndefOr[Boolean] = js.undefined,
     itemType: SelectableOptionMenuItemType = null,
@@ -34,6 +35,7 @@ object IDropdownOption {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])

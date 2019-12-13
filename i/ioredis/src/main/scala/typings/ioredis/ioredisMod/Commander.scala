@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Commander extends js.Object {
   def createBuiltinCommand(commandName: String): js.Object
-  def defineCommand(name: String, definition: Anon_Lua): js.Any
+  def defineCommand(name: String, definition: Anon_Lua): Unit
   def getBuiltinCommands(): js.Array[String]
   def sendCommand(): Unit
 }
@@ -16,7 +16,7 @@ object Commander {
   @scala.inline
   def apply(
     createBuiltinCommand: String => js.Object,
-    defineCommand: (String, Anon_Lua) => js.Any,
+    defineCommand: (String, Anon_Lua) => Unit,
     getBuiltinCommands: () => js.Array[String],
     sendCommand: () => Unit
   ): Commander = {

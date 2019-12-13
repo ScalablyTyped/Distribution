@@ -37,8 +37,14 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
   def count(): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   def count(column: String): typings.bluebird.bluebirdMod.^[Double | String] = js.native
   def count(column: String, options: SyncOptions): typings.bluebird.bluebirdMod.^[Double | String] = js.native
+  /**
+    * @throws {NoRowsDeletedError} if no records are deleted and `options.required !== false`
+    */
   def destroy(): typings.bluebird.bluebirdMod.^[T] = js.native
   def destroy(options: DestroyOptions): typings.bluebird.bluebirdMod.^[T] = js.native
+  /**
+    * @throws {NotFoundError} if no result and `options.required !== false`
+    */
   def fetch(): typings.bluebird.bluebirdMod.^[T] = js.native
   def fetch(options: FetchOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def fetchAll(): typings.bluebird.bluebirdMod.^[Collection[T]] = js.native
@@ -74,6 +80,9 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
   def refresh(): typings.bluebird.bluebirdMod.^[T] = js.native
   def refresh(options: FetchOptions): typings.bluebird.bluebirdMod.^[T] = js.native
   def resetQuery(): T = js.native
+  /**
+    * @throws {NoRowsUpdatedError} if updating and `options.required !== false`
+    */
   def save(): typings.bluebird.bluebirdMod.^[T] = js.native
   def save(attrs: StringDictionary[js.Any]): typings.bluebird.bluebirdMod.^[T] = js.native
   def save(attrs: StringDictionary[js.Any], options: SaveOptions): typings.bluebird.bluebirdMod.^[T] = js.native

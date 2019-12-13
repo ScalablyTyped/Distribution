@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prism-react-renderer" : "0.1.7"
+      "prism-react-renderer" : "1.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "prism-react-renderer" : "0.1.7"
+      "prism-react-renderer" : "1.0.2"
     }
   ],
   "compile-devDependencies" : [

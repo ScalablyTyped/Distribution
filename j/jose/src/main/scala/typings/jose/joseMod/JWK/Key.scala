@@ -1,5 +1,6 @@
 package typings.jose.joseMod.JWK
 
+import typings.jose.joseMod._ProduceKeyInput
 import typings.jose.joseMod.keyObjectTypes
 import typings.jose.joseMod.keyOperation
 import typings.jose.joseMod.keyType
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("jose", "JWK.Key")
 @js.native
-class Key () extends js.Object {
+class Key () extends _ProduceKeyInput {
   var alg: js.UndefOr[String] = js.native
   var keyObject: KeyObject = js.native
   var key_ops: js.UndefOr[js.Array[keyOperation]] = js.native

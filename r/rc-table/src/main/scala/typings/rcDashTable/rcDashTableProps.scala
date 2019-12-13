@@ -29,7 +29,7 @@ trait rcDashTableProps {
   type LibProps[ValueType] = typings.rcDashTable.libTableMod.TableProps[ValueType]
   @scala.inline
   def LibColumnProps: ColumnType.type = typings.rcDashTable.libInterfaceMod.ColumnType
-  type LibColumnProps[ValueType] = ColumnType[ValueType]
+  type LibColumnProps = typings.rcDashTable.libColumnMod.ColumnProps
   @scala.inline
   def TableProps: typings.rcDashTable.libTableMod.TableProps.type = typings.rcDashTable.libTableMod.TableProps
   type TableProps[ValueType] = typings.rcDashTable.libTableMod.TableProps[ValueType]
@@ -38,7 +38,7 @@ trait rcDashTableProps {
   type TableCellProps[ValueType] = typings.rcDashTable.libTableCellMod.TableCellProps[ValueType]
   @scala.inline
   def TableColumnProps: ColumnType.type = typings.rcDashTable.libInterfaceMod.ColumnType
-  type TableColumnProps[ValueType] = ColumnType[ValueType]
+  type TableColumnProps = typings.rcDashTable.libColumnMod.ColumnProps
   @scala.inline
   def TableHeaderProps: typings.rcDashTable.libTableHeaderMod.TableHeaderProps.type = typings.rcDashTable.libTableHeaderMod.TableHeaderProps
   type TableHeaderProps = typings.rcDashTable.libTableHeaderMod.TableHeaderProps

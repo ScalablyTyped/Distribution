@@ -2,6 +2,7 @@ package typings.atAntDashDesignProDashLayout
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.`en-US`
+import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.`it-IT`
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.`zh-CN`
 import typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutStrings.`zh-TW`
 import scala.scalajs.js
@@ -14,6 +15,8 @@ object libLocalesMod extends js.Object {
   def default(): StringDictionary[String] = js.native
   @JSName("default")
   def default_enUS(locale: `en-US`): StringDictionary[String] = js.native
+  @JSName("default")
+  def default_itIT(locale: `it-IT`): StringDictionary[String] = js.native
   @JSName("default")
   def default_zhCN(locale: `zh-CN`): StringDictionary[String] = js.native
   @JSName("default")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ejs
 
-Typings are for version 2.7
+Typings are for version 3.0
 
 ## Library description:
 Embedded JavaScript templates

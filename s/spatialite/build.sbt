@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "spatialite"
-version := "0.0-dt-20190212Z-a1c5bf"
+version := "0.0-dt-20190212Z-5f9bd4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
-  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20190226Z-3c7fe7",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
+  "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20190226Z-f5b214",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

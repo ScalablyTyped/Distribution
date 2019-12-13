@@ -11,8 +11,12 @@ trait GuardMeta[TContext, TEvent /* <: EventObject */] extends StateMeta[TContex
 
 object GuardMeta {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](cond: Guard[TContext, TEvent], state: State[TContext, TEvent]): GuardMeta[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(cond = cond.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  def apply[TContext, TEvent /* <: EventObject */](
+    _event: typings.xstate.libTypesMod.SCXML.Event[TEvent],
+    cond: Guard[TContext, TEvent],
+    state: State[TContext, TEvent, _, _]
+  ): GuardMeta[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], cond = cond.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GuardMeta[TContext, TEvent]]
   }

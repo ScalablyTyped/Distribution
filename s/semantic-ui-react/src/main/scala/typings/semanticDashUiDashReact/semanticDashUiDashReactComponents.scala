@@ -299,6 +299,8 @@ object semanticDashUiDashReactComponents extends semanticDashUiDashReactProps {
   @scala.inline
   def SearchCategory: ComponentType[SearchCategoryProps] = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SearchCategoryProps]]
   @scala.inline
+  def SearchCategoryLayout: ComponentType[SearchCategoryLayoutProps] = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SearchCategoryLayoutProps]]
+  @scala.inline
   def SearchDefault: ComponentType[SearchDefaultProps] = typings.semanticDashUiDashReact.distCommonjsModulesSearchMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SearchDefaultProps]]
   @scala.inline
   def SearchResult: ComponentType[SearchResultProps] = js.constructorOf[typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SearchResultProps]]

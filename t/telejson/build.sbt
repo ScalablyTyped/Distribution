@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "telejson"
-version := "3.1.0-4c35d8"
+version := "3.3.0-dc44d8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

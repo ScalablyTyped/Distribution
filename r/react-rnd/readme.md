@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-rnd
 
-Typings are for version 10.1.1
+Typings are for version 10.1.3
 
 ## Library description:
 <p align="center"><img src ="https://github.com/bokuweb/react-rnd/blob/master/logo.png?raw=true" /></p>

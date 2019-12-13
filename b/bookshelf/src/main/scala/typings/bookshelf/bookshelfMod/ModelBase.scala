@@ -27,15 +27,12 @@ abstract class ModelBase[T /* <: Model[_] */] ()
   def has(attribute: String): Boolean = js.native
   def hasChanged(): Boolean = js.native
   def hasChanged(attribute: String): Boolean = js.native
-  // lodash methods
-  def invert[R /* <: js.Object */](): R = js.native
   def isNew(): Boolean = js.native
-  def keys(): js.Array[String] = js.native
+  // lodash methods
   def omit[R /* <: js.Object */](): R = js.native
   def omit[R /* <: js.Object */](attributes: String*): R = js.native
   def omit[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean]): R = js.native
   def omit[R /* <: js.Object */](predicate: ObjectIterator[_, Boolean], thisArg: js.Any): R = js.native
-  def pairs(): js.Array[js.Array[_]] = js.native
   def parse(response: js.Object): js.Object = js.native
   def pick[R /* <: js.Object */](): R = js.native
   def pick[R /* <: js.Object */](attributes: String*): R = js.native
@@ -57,6 +54,5 @@ abstract class ModelBase[T /* <: Model[_] */] ()
   def toJSON(): js.Any = js.native
   def toJSON(options: SerializeOptions): js.Any = js.native
   def unset(attribute: String): T = js.native
-  def values(): js.Array[_] = js.native
 }
 

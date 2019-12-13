@@ -49,6 +49,7 @@ object ActivityIndicatorStyle extends js.Object {
   /**
   			 * Fires a synthesized event to any registered listeners.
   			 */
+  def fireEvent(name: String): Unit = js.native
   def fireEvent(name: String, event: js.Any): Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ActivityIndicatorStyle.apiName> property.

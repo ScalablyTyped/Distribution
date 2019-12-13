@@ -1,5 +1,12 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d (Days)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h (Hours)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m (Minutes)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros (Microseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms (Milliseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos (Nanoseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s (Seconds)`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +15,10 @@ trait CatHealth extends Generic {
   var format: js.UndefOr[String] = js.undefined
   var h: js.UndefOr[String | js.Array[String]] = js.undefined
   var help: js.UndefOr[Boolean] = js.undefined
-  var local: js.UndefOr[Boolean] = js.undefined
-  var master_timeout: js.UndefOr[String] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
+  var time: js.UndefOr[
+    (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`)
+  ] = js.undefined
   var ts: js.UndefOr[Boolean] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,12 +33,11 @@ object CatHealth {
     help: js.UndefOr[Boolean] = js.undefined,
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    master_timeout: String = null,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
     source: String = null,
+    time: (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`) = null,
     ts: js.UndefOr[Boolean] = js.undefined,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatHealth = {
@@ -42,12 +49,11 @@ object CatHealth {
     if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (!js.isUndefined(ts)) __obj.updateDynamic("ts")(ts.asInstanceOf[js.Any])
     if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatHealth]

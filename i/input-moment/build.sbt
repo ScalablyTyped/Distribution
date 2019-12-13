@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "input-moment"
-version := "0.4-dt-20190731Z-a3467e"
+version := "0.4-dt-20190731Z-883a4a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
   "org.scalablytyped" %%% "moment" % "2.24.0-534f7e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

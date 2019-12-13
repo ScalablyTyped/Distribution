@@ -24,7 +24,7 @@ trait RangePickerProps extends PickerProps {
   var defaultPickerValue: js.UndefOr[RangePickerValue] = js.undefined
   var defaultValue: js.UndefOr[RangePickerValue] = js.undefined
   var disabledTime: js.UndefOr[
-    js.Function2[/* current */ js.UndefOr[Moment], /* type */ String, Anon_DisabledHours]
+    js.Function2[/* current */ RangePickerValue, /* type */ String, Anon_DisabledHours]
   ] = js.undefined
   var mode: js.UndefOr[String | js.Array[String]] = js.undefined
   var onCalendarChange: js.UndefOr[
@@ -68,8 +68,8 @@ object RangePickerProps {
     defaultPickerValue: RangePickerValue = null,
     defaultValue: RangePickerValue = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[Moment] => Boolean = null,
-    disabledTime: (/* current */ js.UndefOr[Moment], /* type */ String) => Anon_DisabledHours = null,
+    disabledDate: /* current */ Moment | Null => Boolean = null,
+    disabledTime: (/* current */ RangePickerValue, /* type */ String) => Anon_DisabledHours = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getCalendarContainer: /* triggerNode */ Element => HTMLElement = null,

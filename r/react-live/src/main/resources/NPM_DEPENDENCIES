@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-live" : "2.2.1"
+      "react-live" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-live" : "2.2.1"
+      "react-live" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

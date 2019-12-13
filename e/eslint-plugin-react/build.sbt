@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eslint-plugin-react"
-version := "7.16.0-97716e"
+version := "7.17.0-176f99"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

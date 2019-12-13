@@ -1,5 +1,6 @@
 package typings.instagramDashPrivateDashApi.distTypesPostingDotVideoDotOptionsMod
 
+import typings.instagramDashPrivateDashApi.Anon_Storystickerids
 import typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDashStoryDotOptionsMod.StoryAttachedMedia
 import typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDashStoryDotOptionsMod.StoryChat
 import typings.instagramDashPrivateDashApi.distTypesMediaDotConfigureDashStoryDotOptionsMod.StoryCountdown
@@ -44,6 +45,7 @@ object PostingStoryVideoOptions {
     recipientUsers: js.Array[String] = null,
     replyType: story | String = null,
     slider: StorySlider = null,
+    stickerConfig: js.Any with Anon_Storystickerids = null,
     threadIds: js.Array[String] = null,
     toBesties: js.UndefOr[Boolean] = js.undefined,
     transcodeDelay: Int | Double = null,
@@ -64,6 +66,7 @@ object PostingStoryVideoOptions {
     if (recipientUsers != null) __obj.updateDynamic("recipientUsers")(recipientUsers.asInstanceOf[js.Any])
     if (replyType != null) __obj.updateDynamic("replyType")(replyType.asInstanceOf[js.Any])
     if (slider != null) __obj.updateDynamic("slider")(slider.asInstanceOf[js.Any])
+    if (stickerConfig != null) __obj.updateDynamic("stickerConfig")(stickerConfig.asInstanceOf[js.Any])
     if (threadIds != null) __obj.updateDynamic("threadIds")(threadIds.asInstanceOf[js.Any])
     if (!js.isUndefined(toBesties)) __obj.updateDynamic("toBesties")(toBesties.asInstanceOf[js.Any])
     if (transcodeDelay != null) __obj.updateDynamic("transcodeDelay")(transcodeDelay.asInstanceOf[js.Any])

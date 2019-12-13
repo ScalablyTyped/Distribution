@@ -17,6 +17,7 @@ import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
 import typings.antd.antdStrings.horizontal
+import typings.antd.antdStrings.inherit
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
@@ -46,6 +47,7 @@ import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.CompositionEventHandler
@@ -127,14 +129,14 @@ trait WeakValidationMapBasicProps extends js.Object {
   var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var contentEditable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Anon_Html | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
   var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var draggable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   var hasSider: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -238,7 +240,7 @@ trait WeakValidationMapBasicProps extends js.Object {
   var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var spellCheck: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
@@ -309,14 +311,14 @@ object WeakValidationMapBasicProps {
     children: Validator[js.UndefOr[Null | ReactNode]] = null,
     className: Validator[js.UndefOr[Null | String]] = null,
     color: Validator[js.UndefOr[Null | String]] = null,
-    contentEditable: Validator[js.UndefOr[Boolean | Null]] = null,
+    contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
     dangerouslySetInnerHTML: Validator[js.UndefOr[Anon_Html | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
     defaultValue: Validator[js.UndefOr[js.Array[String] | Double | Null | String]] = null,
     dir: Validator[js.UndefOr[Null | String]] = null,
-    draggable: Validator[js.UndefOr[Boolean | Null]] = null,
+    draggable: Validator[js.UndefOr[Booleanish | Null]] = null,
     hasSider: Validator[js.UndefOr[Boolean | Null]] = null,
     hidden: Validator[js.UndefOr[Boolean | Null]] = null,
     id: Validator[js.UndefOr[Null | String]] = null,
@@ -418,7 +420,7 @@ object WeakValidationMapBasicProps {
     role: Validator[js.UndefOr[Null | String]] = null,
     security: Validator[js.UndefOr[Null | String]] = null,
     slot: Validator[js.UndefOr[Null | String]] = null,
-    spellCheck: Validator[js.UndefOr[Boolean | Null]] = null,
+    spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,
     style: Validator[js.UndefOr[CSSProperties | Null]] = null,
     suppressContentEditableWarning: Validator[js.UndefOr[Boolean | Null]] = null,
     suppressHydrationWarning: Validator[js.UndefOr[Boolean | Null]] = null,

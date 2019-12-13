@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 	 * Global options for preact
 	 */
 trait Options extends js.Object {
+  var __suspenseDidResolve: js.UndefOr[js.Function2[/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit], Unit]] = js.undefined
   var debounceRendering: js.UndefOr[js.Function1[/* cb */ js.Function0[Unit], Unit]] = js.undefined
   /** Attach a hook that is invoked after a vnode has rendered. */
   var diffed: js.UndefOr[js.Function1[/* vnode */ VNode[js.Object], Unit]] = js.undefined
@@ -29,6 +30,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    __suspenseDidResolve: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit = null,
     debounceRendering: /* cb */ js.Function0[Unit] => Unit = null,
     diffed: /* vnode */ VNode[js.Object] => Unit = null,
     event: /* e */ Event => Unit = null,
@@ -38,6 +40,7 @@ object Options {
     vnode: /* vnode */ VNode[js.Object] => Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (__suspenseDidResolve != null) __obj.updateDynamic("__suspenseDidResolve")(js.Any.fromFunction2(__suspenseDidResolve))
     if (debounceRendering != null) __obj.updateDynamic("debounceRendering")(js.Any.fromFunction1(debounceRendering))
     if (diffed != null) __obj.updateDynamic("diffed")(js.Any.fromFunction1(diffed))
     if (event != null) __obj.updateDynamic("event")(js.Any.fromFunction1(event))

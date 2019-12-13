@@ -39,24 +39,6 @@ class ScriptType protected ()
 @js.native
 object ScriptType extends js.Object {
   /**
-    * @field
-    * @static
-    * @readonly
-    * @type pc.ScriptAttributes
-    * @name pc.ScriptType.attributes
-    * @description The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}
-    * @example
-    * var PlayerController = pc.createScript('playerController');
-    *
-    * PlayerController.attributes.add('speed', {
-    *     type: 'number',
-    *     title: 'Speed',
-    *     placeholder: 'km/h',
-    *     default: 22.2
-    * });
-    */
-  val attributes: typings.playcanvas.pc.ScriptAttributes = js.native
-  /**
     * @readonly
     * @static
     * @function

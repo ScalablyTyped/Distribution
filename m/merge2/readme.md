@@ -1,7 +1,7 @@
 
 # Scala.js typings for merge2
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Merge multiple streams into one stream in sequence or parallel.

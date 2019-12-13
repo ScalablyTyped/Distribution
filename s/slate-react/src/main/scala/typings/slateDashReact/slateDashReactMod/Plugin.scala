@@ -12,6 +12,7 @@ import typings.react.reactMod.NativeMouseEvent
 import typings.react.reactMod.SyntheticEvent
 import typings.slate.slateMod.Command
 import typings.slate.slateMod.CommandFunc
+import typings.slate.slateMod.Controller
 import typings.slate.slateMod.Node
 import typings.slate.slateMod.Query
 import typings.slate.slateMod.QueryFunc
@@ -23,22 +24,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Plugin
-  extends typings.slate.slateMod.Plugin
-     with PluginOrPlugins {
-  var decorateNode: js.UndefOr[
-    js.Function3[
-      /* node */ Node, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
-  ] = js.undefined
+trait Plugin[T /* <: Controller */]
+  extends typings.slate.slateMod.Plugin[T]
+     with PluginOrPlugins[T] {
+  var decorateNode: js.UndefOr[js.Function3[/* node */ Node, /* editor */ T, /* next */ js.Function0[_], _]] = js.undefined
   var onBeforeInput: js.UndefOr[EventHook[FormEvent[Element]]] = js.undefined
   var onBlur: js.UndefOr[EventHook[FocusEvent[Element]]] = js.undefined
   var onClick: js.UndefOr[EventHook[MouseEvent[Element, NativeMouseEvent]]] = js.undefined
   var onCompositionEnd: js.UndefOr[EventHook[CompositionEvent[Element]]] = js.undefined
   var onCompositionStart: js.UndefOr[EventHook[CompositionEvent[Element]]] = js.undefined
+  var onContextMenu: js.UndefOr[EventHook[MouseEvent[Element, NativeMouseEvent]]] = js.undefined
   var onCopy: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
   var onCut: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
   var onDragEnd: js.UndefOr[EventHook[DragEvent[Element]]] = js.undefined
@@ -54,60 +49,25 @@ trait Plugin
   var onPaste: js.UndefOr[EventHook[ClipboardEvent[Element]]] = js.undefined
   var onSelect: js.UndefOr[EventHook[SyntheticEvent[Element, Event]]] = js.undefined
   var renderAnnotation: js.UndefOr[
-    js.Function3[
-      /* props */ RenderAnnotationProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderAnnotationProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderBlock: js.UndefOr[
-    js.Function3[
-      /* props */ RenderBlockProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderBlockProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderDecoration: js.UndefOr[
-    js.Function3[
-      /* props */ RenderDecorationProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderDecorationProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderDocument: js.UndefOr[
-    js.Function3[
-      /* props */ RenderDocumentProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderDocumentProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderEditor: js.UndefOr[
-    js.Function3[
-      /* props */ EditorProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ EditorProps[Editor], /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderInline: js.UndefOr[
-    js.Function3[
-      /* props */ RenderInlineProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderInlineProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var renderMark: js.UndefOr[
-    js.Function3[
-      /* props */ RenderMarkProps, 
-      /* editor */ typings.slate.slateMod.Editor, 
-      /* next */ js.Function0[_], 
-      _
-    ]
+    js.Function3[/* props */ RenderMarkProps, /* editor */ T, /* next */ js.Function0[_], _]
   ] = js.undefined
   var shouldNodeComponentUpdate: js.UndefOr[
     js.Function4[
@@ -122,18 +82,19 @@ trait Plugin
 
 object Plugin {
   @scala.inline
-  def apply(
-    commands: StringDictionary[CommandFunc] = null,
-    decorateNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    normalizeNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => (js.Function1[/* editor */ typings.slate.slateMod.Editor, Unit]) | Unit = null,
+  def apply[T /* <: Controller */](
+    commands: StringDictionary[CommandFunc[T]] = null,
+    decorateNode: (/* node */ Node, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    normalizeNode: (/* node */ Node, T, /* next */ js.Function0[Unit]) => (js.Function1[T, Unit]) | Unit = null,
     onBeforeInput: (FormEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onBlur: (FocusEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onChange: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
+    onChange: (T, /* next */ js.Function0[Unit]) => Unit = null,
     onClick: (MouseEvent[Element, NativeMouseEvent], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onCommand: (/* command */ Command, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
+    onCommand: (/* command */ Command, T, /* next */ js.Function0[Unit]) => Unit = null,
     onCompositionEnd: (CompositionEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onCompositionStart: (CompositionEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onConstruct: (/* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
+    onConstruct: (T, /* next */ js.Function0[Unit]) => Unit = null,
+    onContextMenu: (MouseEvent[Element, NativeMouseEvent], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onCopy: (ClipboardEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onCut: (ClipboardEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onDragEnd: (DragEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
@@ -147,20 +108,20 @@ object Plugin {
     onInput: (FormEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onKeyDown: (KeyboardEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
     onPaste: (ClipboardEvent[Element], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    onQuery: (/* query */ Query, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => Unit = null,
+    onQuery: (/* query */ Query, T, /* next */ js.Function0[Unit]) => Unit = null,
     onSelect: (SyntheticEvent[Element, Event], /* editor */ Editor, /* next */ js.Function0[js.Any]) => js.Any = null,
-    queries: StringDictionary[QueryFunc] = null,
-    renderAnnotation: (/* props */ RenderAnnotationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderBlock: (/* props */ RenderBlockProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderDecoration: (/* props */ RenderDecorationProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderDocument: (/* props */ RenderDocumentProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderEditor: (/* props */ EditorProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderInline: (/* props */ RenderInlineProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderMark: (/* props */ RenderMarkProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
+    queries: StringDictionary[QueryFunc[T]] = null,
+    renderAnnotation: (/* props */ RenderAnnotationProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderBlock: (/* props */ RenderBlockProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderDecoration: (/* props */ RenderDecorationProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderDocument: (/* props */ RenderDocumentProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderEditor: (/* props */ EditorProps[Editor], /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderInline: (/* props */ RenderInlineProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
+    renderMark: (/* props */ RenderMarkProps, /* editor */ T, /* next */ js.Function0[_]) => _ = null,
     schema: SchemaProperties = null,
     shouldNodeComponentUpdate: (/* previousProps */ RenderNodeProps, /* props */ RenderNodeProps, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    validateNode: (/* node */ Node, /* editor */ typings.slate.slateMod.Editor, /* next */ js.Function0[Unit]) => SlateError | Unit = null
-  ): Plugin = {
+    validateNode: (/* node */ Node, T, /* next */ js.Function0[Unit]) => SlateError | Unit = null
+  ): Plugin[T] = {
     val __obj = js.Dynamic.literal()
     if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
     if (decorateNode != null) __obj.updateDynamic("decorateNode")(js.Any.fromFunction3(decorateNode))
@@ -173,6 +134,7 @@ object Plugin {
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction3(onCompositionEnd))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction3(onCompositionStart))
     if (onConstruct != null) __obj.updateDynamic("onConstruct")(js.Any.fromFunction2(onConstruct))
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction3(onContextMenu))
     if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction3(onCopy))
     if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction3(onCut))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction3(onDragEnd))
@@ -199,7 +161,7 @@ object Plugin {
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     if (shouldNodeComponentUpdate != null) __obj.updateDynamic("shouldNodeComponentUpdate")(js.Any.fromFunction4(shouldNodeComponentUpdate))
     if (validateNode != null) __obj.updateDynamic("validateNode")(js.Any.fromFunction3(validateNode))
-    __obj.asInstanceOf[Plugin]
+    __obj.asInstanceOf[Plugin[T]]
   }
 }
 

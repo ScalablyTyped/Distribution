@@ -22,6 +22,12 @@ trait RoxSetupOptions extends js.Object {
     ]
   ] = js.undefined
   var platform: js.UndefOr[String] = js.undefined
+  /**
+    * Set Roxy's URL for automated tests or local development.
+    *
+    * https://support.rollout.io/docs/microservices-automated-testing-and-local-development
+    */
+  var roxy: js.UndefOr[String] = js.undefined
   var version: js.UndefOr[String] = js.undefined
 }
 
@@ -35,6 +41,7 @@ object RoxSetupOptions {
     freeze: RoxFlagFreezeLevel = null,
     impressionHandler: (/* reporting */ RoxReporting, /* experiment */ RoxExperiment, /* context */ js.Any) => Unit = null,
     platform: String = null,
+    roxy: String = null,
     version: String = null
   ): RoxSetupOptions = {
     val __obj = js.Dynamic.literal()
@@ -45,6 +52,7 @@ object RoxSetupOptions {
     if (freeze != null) __obj.updateDynamic("freeze")(freeze.asInstanceOf[js.Any])
     if (impressionHandler != null) __obj.updateDynamic("impressionHandler")(js.Any.fromFunction3(impressionHandler))
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (roxy != null) __obj.updateDynamic("roxy")(roxy.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoxSetupOptions]
   }

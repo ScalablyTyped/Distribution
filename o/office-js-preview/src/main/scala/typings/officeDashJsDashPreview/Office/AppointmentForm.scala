@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 /**
   * The AppointmentForm namespace is used to access the currently selected appointment.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
@@ -46,8 +44,6 @@ trait AppointmentForm extends js.Object {
     * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -65,8 +61,6 @@ trait AppointmentForm extends js.Object {
     * *Compose mode*
     *
     * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -92,8 +86,6 @@ trait AppointmentForm extends js.Object {
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -118,8 +110,6 @@ trait AppointmentForm extends js.Object {
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -129,8 +119,6 @@ trait AppointmentForm extends js.Object {
   var requiredAttendees: js.Array[EmailAddressDetails | Recipients]
   /**
     * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -156,8 +144,6 @@ trait AppointmentForm extends js.Object {
     * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -177,8 +163,6 @@ trait AppointmentForm extends js.Object {
     * *Compose mode*
     *
     * The subject property returns a Subject object that provides methods to get and set the subject.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *

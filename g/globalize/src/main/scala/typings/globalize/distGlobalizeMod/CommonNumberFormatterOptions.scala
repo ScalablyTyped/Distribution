@@ -2,13 +2,19 @@ package typings.globalize.distGlobalizeMod
 
 import typings.globalize.globalizeStrings.ceil
 import typings.globalize.globalizeStrings.floor
+import typings.globalize.globalizeStrings.long
 import typings.globalize.globalizeStrings.round
+import typings.globalize.globalizeStrings.short
 import typings.globalize.globalizeStrings.truncate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonNumberFormatterOptions extends js.Object {
+  /**
+  		 * String `short` or `long` indicating which compact number format should be used to represent the number.
+  		 */
+  var compact: js.UndefOr[short | long] = js.undefined
   /**
   		 * Non-negative integer Number values indicating the minimum and maximum fraction digits to be used.
   		 * Numbers will be rounded or padded with trailing zeroes if necessary.
@@ -54,6 +60,7 @@ trait CommonNumberFormatterOptions extends js.Object {
 object CommonNumberFormatterOptions {
   @scala.inline
   def apply(
+    compact: short | long = null,
     maximumFractionDigits: Int | Double = null,
     maximumSignificantDigits: Int | Double = null,
     minimumFractionDigits: Int | Double = null,
@@ -63,6 +70,7 @@ object CommonNumberFormatterOptions {
     useGrouping: js.UndefOr[Boolean] = js.undefined
   ): CommonNumberFormatterOptions = {
     val __obj = js.Dynamic.literal()
+    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (maximumFractionDigits != null) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.asInstanceOf[js.Any])
     if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])
     if (minimumFractionDigits != null) __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits.asInstanceOf[js.Any])

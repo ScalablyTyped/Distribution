@@ -39,7 +39,7 @@ object OptionsWithMap {
     loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
     */ typings.reactDashLoadable.reactDashLoadableStrings.OptionsWithMap with Exports,
-    loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
+    loading: ComponentType[LoadingComponentProps],
     render: (Exports, Props) => ReactNode,
     delay: Double | `false` = null,
     modules: js.Array[String] = null,

@@ -69,6 +69,7 @@ trait IOverflowSetProps extends ClassAttributes[OverflowSetBase] {
   var styles: js.UndefOr[IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles]] = js.undefined
   /**
     * Change item layout direction to vertical/stacked.
+    * Setting vertical to true also changes default role to "menu".
     * @defaultvalue false
     */
   var vertical: js.UndefOr[Boolean] = js.undefined

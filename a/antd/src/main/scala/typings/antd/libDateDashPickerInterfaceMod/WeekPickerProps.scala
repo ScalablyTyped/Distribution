@@ -29,7 +29,7 @@ object WeekPickerProps {
     defaultPickerValue: Moment = null,
     defaultValue: Moment = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[Moment] => Boolean = null,
+    disabledDate: /* current */ Moment | Null => Boolean = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getCalendarContainer: /* triggerNode */ Element => HTMLElement = null,

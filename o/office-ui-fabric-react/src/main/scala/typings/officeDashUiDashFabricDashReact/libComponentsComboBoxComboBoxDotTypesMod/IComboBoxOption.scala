@@ -31,6 +31,7 @@ object IComboBoxOption {
     data: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
     index: Int | Double = null,
     itemType: SelectableOptionMenuItemType = null,
     selected: js.UndefOr[Boolean] = js.undefined,
@@ -43,6 +44,7 @@ object IComboBoxOption {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])

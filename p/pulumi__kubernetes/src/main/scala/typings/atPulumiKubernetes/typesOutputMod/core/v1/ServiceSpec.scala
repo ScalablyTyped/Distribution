@@ -105,6 +105,18 @@ trait ServiceSpec extends js.Object {
     */
   val sessionAffinityConfig: SessionAffinityConfig
   /**
+    * topologyKeys is a preference-order list of topology keys which implementations of services
+    * should use to preferentially sort endpoints when accessing this Service, it can not be used
+    * at the same time as externalTrafficPolicy=Local. Topology keys must be valid label keys and
+    * at most 16 keys may be specified. Endpoints are chosen based on the first topology key with
+    * available backends. If this field is specified and all entries have no backends that match
+    * the topology of the client, the service has no backends for that client and connections
+    * should fail. The special value "*" may be used to mean "any topology". This catch-all
+    * value, if used, only makes sense as the last value in the list. If this is not specified or
+    * empty, no topology constraints will be applied.
+    */
+  val topologyKeys: js.Array[String]
+  /**
     * type determines how the Service is exposed. Defaults to ClusterIP. Valid options are
     * ExternalName, ClusterIP, NodePort, and LoadBalancer. "ExternalName" maps to the specified
     * externalName. "ClusterIP" allocates a cluster-internal IP address for load-balancing to
@@ -135,9 +147,10 @@ object ServiceSpec {
     selector: StringDictionary[String],
     sessionAffinity: String,
     sessionAffinityConfig: SessionAffinityConfig,
+    topologyKeys: js.Array[String],
     `type`: String
   ): ServiceSpec = {
-    val __obj = js.Dynamic.literal(clusterIP = clusterIP.asInstanceOf[js.Any], externalIPs = externalIPs.asInstanceOf[js.Any], externalName = externalName.asInstanceOf[js.Any], externalTrafficPolicy = externalTrafficPolicy.asInstanceOf[js.Any], healthCheckNodePort = healthCheckNodePort.asInstanceOf[js.Any], ipFamily = ipFamily.asInstanceOf[js.Any], loadBalancerIP = loadBalancerIP.asInstanceOf[js.Any], loadBalancerSourceRanges = loadBalancerSourceRanges.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any], publishNotReadyAddresses = publishNotReadyAddresses.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], sessionAffinity = sessionAffinity.asInstanceOf[js.Any], sessionAffinityConfig = sessionAffinityConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterIP = clusterIP.asInstanceOf[js.Any], externalIPs = externalIPs.asInstanceOf[js.Any], externalName = externalName.asInstanceOf[js.Any], externalTrafficPolicy = externalTrafficPolicy.asInstanceOf[js.Any], healthCheckNodePort = healthCheckNodePort.asInstanceOf[js.Any], ipFamily = ipFamily.asInstanceOf[js.Any], loadBalancerIP = loadBalancerIP.asInstanceOf[js.Any], loadBalancerSourceRanges = loadBalancerSourceRanges.asInstanceOf[js.Any], ports = ports.asInstanceOf[js.Any], publishNotReadyAddresses = publishNotReadyAddresses.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], sessionAffinity = sessionAffinity.asInstanceOf[js.Any], sessionAffinityConfig = sessionAffinityConfig.asInstanceOf[js.Any], topologyKeys = topologyKeys.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceSpec]
   }

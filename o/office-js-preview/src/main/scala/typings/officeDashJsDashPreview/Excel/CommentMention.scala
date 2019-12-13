@@ -8,32 +8,28 @@ import scala.scalajs.js.annotation._
   *
   * Represents the entity that is mentioned in comments.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApiOnline 1.1]
   */
 trait CommentMention extends js.Object {
   /**
     *
     * Gets or sets the email address of the entity that is mentioned in comment.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   var email: String
   /**
     *
-    * Gets or sets the id of the entity. This is aligned with the id information in `CommentRichContent.richContent`.
+    * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   var id: Double
   /**
     *
     * Gets or sets the name of the entity that is mentioned in comment.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     */
   var name: String
 }

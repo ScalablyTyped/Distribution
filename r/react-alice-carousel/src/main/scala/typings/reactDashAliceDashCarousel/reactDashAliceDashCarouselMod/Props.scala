@@ -1,5 +1,6 @@
 package typings.reactDashAliceDashCarousel.reactDashAliceDashCarouselMod
 
+import typings.reactDashAliceDashCarousel.reactDashAliceDashCarouselStrings.responsive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +42,15 @@ trait Props extends js.Object {
     * Default: false.
     */
   var buttonsDisabled: js.UndefOr[Boolean] = js.undefined
+  /** Defines the behavior strategy for controls.
+    *
+    * Default: 'default'
+    *
+    * If `responsive` is specified, dots navigation will be hidden if the number of gallery items is equal to the number of items on the slide
+    */
+  var controlsStrategy: js.UndefOr[
+    typings.reactDashAliceDashCarousel.reactDashAliceDashCarouselStrings.default | responsive
+  ] = js.undefined
   /**
     * If this property is identified as true auto play animation will be stopped after clicking user on any gallery button
     *
@@ -180,6 +190,7 @@ object Props {
     autoPlayDirection: String = null,
     autoPlayInterval: Int | Double = null,
     buttonsDisabled: js.UndefOr[Boolean] = js.undefined,
+    controlsStrategy: typings.reactDashAliceDashCarousel.reactDashAliceDashCarouselStrings.default | responsive = null,
     disableAutoPlayOnAction: js.UndefOr[Boolean] = js.undefined,
     dotsDisabled: js.UndefOr[Boolean] = js.undefined,
     duration: Int | Double = null,
@@ -211,6 +222,7 @@ object Props {
     if (autoPlayDirection != null) __obj.updateDynamic("autoPlayDirection")(autoPlayDirection.asInstanceOf[js.Any])
     if (autoPlayInterval != null) __obj.updateDynamic("autoPlayInterval")(autoPlayInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(buttonsDisabled)) __obj.updateDynamic("buttonsDisabled")(buttonsDisabled.asInstanceOf[js.Any])
+    if (controlsStrategy != null) __obj.updateDynamic("controlsStrategy")(controlsStrategy.asInstanceOf[js.Any])
     if (!js.isUndefined(disableAutoPlayOnAction)) __obj.updateDynamic("disableAutoPlayOnAction")(disableAutoPlayOnAction.asInstanceOf[js.Any])
     if (!js.isUndefined(dotsDisabled)) __obj.updateDynamic("dotsDisabled")(dotsDisabled.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

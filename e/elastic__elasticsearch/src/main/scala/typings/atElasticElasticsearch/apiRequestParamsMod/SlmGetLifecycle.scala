@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SlmGetLifecycle extends Generic {
-  var policy_id: js.UndefOr[String] = js.undefined
+  var policy_id: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 
 object SlmGetLifecycle {
@@ -16,7 +16,7 @@ object SlmGetLifecycle {
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     method: String = null,
-    policy_id: String = null,
+    policy_id: String | js.Array[String] = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     source: String = null
   ): SlmGetLifecycle = {

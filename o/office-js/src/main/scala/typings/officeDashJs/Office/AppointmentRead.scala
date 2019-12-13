@@ -17,8 +17,6 @@ trait AppointmentRead extends ItemRead {
   /**
     * Gets the date and time that an item was created.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -28,8 +26,6 @@ trait AppointmentRead extends ItemRead {
   var dateTimeCreated: Date = js.native
   /**
     * Gets the date and time that an item was last modified.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -48,8 +44,6 @@ trait AppointmentRead extends ItemRead {
     *
     * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -78,8 +72,6 @@ trait AppointmentRead extends ItemRead {
     *
     * The location property returns a string that contains the location of the appointment.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -93,8 +85,6 @@ trait AppointmentRead extends ItemRead {
     * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each optional attendee to 
     * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -104,8 +94,6 @@ trait AppointmentRead extends ItemRead {
   var optionalAttendees: js.Array[EmailAddressDetails] = js.native
   /**
     * Gets the email address of the meeting organizer for a specified meeting.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -140,8 +128,6 @@ trait AppointmentRead extends ItemRead {
     * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each required attendee to 
     * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -154,8 +140,6 @@ trait AppointmentRead extends ItemRead {
     *
     * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. 
     * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *

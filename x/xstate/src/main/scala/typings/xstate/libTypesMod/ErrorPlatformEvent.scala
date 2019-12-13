@@ -10,10 +10,9 @@ trait ErrorPlatformEvent extends EventObject {
 
 object ErrorPlatformEvent {
   @scala.inline
-  def apply(data: js.Any, `type`: String, id: String | Double = null): ErrorPlatformEvent = {
+  def apply(data: js.Any, `type`: String): ErrorPlatformEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPlatformEvent]
   }
 }

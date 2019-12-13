@@ -17,7 +17,7 @@ trait Mineral[T /* <: MineralConstant */] extends RoomObject {
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
-  var id: String
+  var id: Id[this.type]
   /**
     * The remaining amount of resources.
     */

@@ -94,17 +94,6 @@ trait Options extends js.Object {
   	 */
   var filename: js.UndefOr[String] = js.undefined
   /**
-  	 * Whether to enable legacy preprocessor include directives.
-  	 *
-  	 * @default true
-  	 *
-  	 * @example
-  	 * ```ejs
-  	 * <%- include foo %>
-  	 * ```
-  	 */
-  var legacyInclude: js.UndefOr[Boolean] = js.undefined
-  /**
   	 * Name to use for the object storing local variables when not using `with` or destructuring.
   	 *
   	 * @default ejs.localsName
@@ -158,7 +147,6 @@ object Options {
     destructuredLocals: js.Array[String] = null,
     escape: /* markup */ js.UndefOr[js.Any] => String = null,
     filename: String = null,
-    legacyInclude: js.UndefOr[Boolean] = js.undefined,
     localsName: String = null,
     openDelimiter: String = null,
     rmWhitespace: js.UndefOr[Boolean] = js.undefined,
@@ -178,7 +166,6 @@ object Options {
     if (destructuredLocals != null) __obj.updateDynamic("destructuredLocals")(destructuredLocals.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(js.Any.fromFunction1(escape))
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacyInclude)) __obj.updateDynamic("legacyInclude")(legacyInclude.asInstanceOf[js.Any])
     if (localsName != null) __obj.updateDynamic("localsName")(localsName.asInstanceOf[js.Any])
     if (openDelimiter != null) __obj.updateDynamic("openDelimiter")(openDelimiter.asInstanceOf[js.Any])
     if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace.asInstanceOf[js.Any])

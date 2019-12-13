@@ -185,6 +185,18 @@ object ^ extends js.Object {
     */
   var poolMax: Double = js.native
   /**
+    * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
+    * 
+    * This property may be overridden when creating a connection pool.
+    * 
+    * When this property is set, and a new connection request would cause the number of connections to the target shard to exceed the limit,
+    * then that new connection request will block until a suitable connection has been released back to the pool.
+    * Importantly, when blocked, the queueTimeout value will be ignored and the pending connection request will consume one worker thread.
+    * 
+    * @since 4.1
+    */
+  var poolMaxPerShard: Double = js.native
+  /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
     *
     * This property may be overridden when creating a connection pool.

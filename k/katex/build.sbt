@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "katex"
-version := "0.10-dt-20190911Z-861ec6"
+version := "0.11-dt-20191207Z-e13663"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

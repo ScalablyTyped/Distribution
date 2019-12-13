@@ -11,8 +11,6 @@ sealed trait ItemType extends js.Object
 /**
   * Specifies an item's type.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read

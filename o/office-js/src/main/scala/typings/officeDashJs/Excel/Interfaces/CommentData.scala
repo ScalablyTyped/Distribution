@@ -1,5 +1,6 @@
 package typings.officeDashJs.Excel.Interfaces
 
+import typings.officeDashJs.Excel.CommentMention
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,11 +45,25 @@ trait CommentData extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   /**
     *
+    * Gets the entities (e.g. people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    */
+  var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
+  /**
+    *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
+  /**
+    *
+    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    */
+  var richContent: js.UndefOr[String] = js.undefined
 }
 
 object CommentData {
@@ -59,7 +74,9 @@ object CommentData {
     content: String = null,
     creationDate: Date = null,
     id: String = null,
-    replies: js.Array[CommentReplyData] = null
+    mentions: js.Array[CommentMention] = null,
+    replies: js.Array[CommentReplyData] = null,
+    richContent: String = null
   ): CommentData = {
     val __obj = js.Dynamic.literal()
     if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
@@ -67,7 +84,9 @@ object CommentData {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
     if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
+    if (richContent != null) __obj.updateDynamic("richContent")(richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentData]
   }
 }

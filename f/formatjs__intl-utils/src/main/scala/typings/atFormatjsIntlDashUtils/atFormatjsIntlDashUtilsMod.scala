@@ -3,6 +3,7 @@ package typings.atFormatjsIntlDashUtils
 import typings.atFormatjsIntlDashUtils.atFormatjsIntlDashUtilsStrings.boolean
 import typings.atFormatjsIntlDashUtils.atFormatjsIntlDashUtilsStrings.string
 import typings.atFormatjsIntlDashUtils.distDiffMod.Thresholds
+import typings.atFormatjsIntlDashUtils.distPolyfillDashUtilsMod.LiteralPart
 import typings.atFormatjsIntlDashUtils.distResolveDashLocaleMod.ResolveLocaleResult
 import typings.atFormatjsIntlDashUtils.distTypesMod.LocaleData
 import typings.std.Date
@@ -91,7 +92,10 @@ object atFormatjsIntlDashUtilsMod extends js.Object {
   def getParentLocalesByLang(lang: String): Record[String, String] = js.native
   def invariant(condition: Boolean, message: String): Unit = js.native
   def invariant(condition: Boolean, message: String, Err: js.Any): Unit = js.native
+  def isLiteralPart(patternPart: Anon_TypeValueString): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/polyfill-utils.LiteralPart */ Boolean = js.native
+  def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/polyfill-utils.LiteralPart */ Boolean = js.native
   def isMissingLocaleDataError(e: Error): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/resolve-locale.MissingLocaleDataError */ Boolean = js.native
+  def partitionPattern(pattern: String): js.Array[Anon_Type | Anon_TypeValue] = js.native
   def selectUnit(from: Double): Anon_Unit = js.native
   def selectUnit(from: Double, to: Double): Anon_Unit = js.native
   def selectUnit(from: Double, to: Double, thresholds: Partial[Thresholds]): Anon_Unit = js.native
@@ -112,5 +116,11 @@ object atFormatjsIntlDashUtilsMod extends js.Object {
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String], options: Anon_Bestfit): js.Array[String] = js.native
   def toObject[T](arg: T): T = js.native
   def unpackData[T /* <: Record[String, _] */](locale: String, localeData: LocaleData[T]): T = js.native
+  def unpackData[T /* <: Record[String, _] */](
+    locale: String,
+    localeData: LocaleData[T],
+    /** By default shallow merge the dictionaries. */
+  reducer: js.Function2[/* all */ T, /* d */ T, T]
+  ): T = js.native
 }
 

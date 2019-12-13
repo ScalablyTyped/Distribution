@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 trait TileOptions extends js.Object {
   /** Tile angle of rotation, must be a multiple of 90. (optional, default 0) */
   var angle: js.UndefOr[Double] = js.undefined
+  /** background colour, parsed by the color module, defaults to white without transparency. (optional, default {r:255,g:255,b:255,alpha:1}) */
+  var background: js.UndefOr[String | RGBA] = js.undefined
   /** Tile container, with value fs (filesystem) or zip (compressed file). (optional, default 'fs') */
   var container: js.UndefOr[String] = js.undefined
   /** How deep to make the pyramid, possible values are "onepixel", "onetile" or "one" (default based on layout) */
@@ -25,6 +27,7 @@ object TileOptions {
   @scala.inline
   def apply(
     angle: Int | Double = null,
+    background: String | RGBA = null,
     container: String = null,
     depth: String = null,
     layout: TileLayout = null,
@@ -34,6 +37,7 @@ object TileOptions {
   ): TileOptions = {
     val __obj = js.Dynamic.literal()
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])

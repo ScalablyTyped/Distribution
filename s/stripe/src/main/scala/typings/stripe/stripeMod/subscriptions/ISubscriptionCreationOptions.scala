@@ -8,6 +8,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISubscriptionCreationOptions extends ISubscriptionCustCreationOptions {
+  /**
+    * A timestamp at which the subscription should cancel. If set to a date before the current period ends
+    * this will cause a proration if prorate=true.
+    */
+  var cancel_at: js.UndefOr[Double | Null] = js.undefined
+  /**
+    * Boolean indicating whether this subscription should cancel at the end of the current period.
+    */
+  var cancel_at_period_end: js.UndefOr[Boolean] = js.undefined
   /***
     * The identifier of the customer to subscribe.
     */
@@ -21,6 +30,8 @@ object ISubscriptionCreationOptions {
     application_fee_percent: Int | Double = null,
     billing: SubscriptionBilling = null,
     billing_cycle_anchor: Int | Double = null,
+    cancel_at: Int | Double = null,
+    cancel_at_period_end: js.UndefOr[Boolean] = js.undefined,
     coupon: String = null,
     days_until_due: Int | Double = null,
     default_source: String | ICardSourceCreationOptions = null,
@@ -42,6 +53,8 @@ object ISubscriptionCreationOptions {
     if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
     if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
     if (billing_cycle_anchor != null) __obj.updateDynamic("billing_cycle_anchor")(billing_cycle_anchor.asInstanceOf[js.Any])
+    if (cancel_at != null) __obj.updateDynamic("cancel_at")(cancel_at.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel_at_period_end)) __obj.updateDynamic("cancel_at_period_end")(cancel_at_period_end.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
     if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])

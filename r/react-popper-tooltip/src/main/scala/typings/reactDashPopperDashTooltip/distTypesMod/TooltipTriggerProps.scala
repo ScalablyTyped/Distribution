@@ -37,15 +37,11 @@ trait TooltipTriggerProps extends js.Object {
   /**
     * Function that can be used to obtain a tooltip element reference
     */
-  var getTooltipRef: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
-  ] = js.undefined
+  var getTooltipRef: js.UndefOr[Ref] = js.undefined
   /**
     * Function that can be used to obtain a trigger element reference
     */
-  var getTriggerRef: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any
-  ] = js.undefined
+  var getTriggerRef: js.UndefOr[Ref] = js.undefined
   /**
     * Modifiers passed directly to the underlying popper.js instance
     * For more information, refer to Popper.js’ modifier docs:
@@ -106,8 +102,8 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => ReactNode,
     trigger: Trigger,
     usePortal: Boolean,
-    getTooltipRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
-    getTriggerRef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactPopper.RefHandler */ js.Any = null,
+    getTooltipRef: Ref = null,
+    getTriggerRef: Ref = null,
     modifiers: Modifiers = null,
     tooltipShown: js.UndefOr[Boolean] = js.undefined
   ): TooltipTriggerProps = {

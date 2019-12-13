@@ -1,6 +1,5 @@
 package typings.amphtmlDashValidator
 
-import typings.amphtmlDashValidator.amphtmlDashValidatorMod.ErrorCategoryCode
 import typings.amphtmlDashValidator.amphtmlDashValidatorMod.ValidationErrorCode
 import typings.amphtmlDashValidator.amphtmlDashValidatorMod.ValidationErrorSeverity
 import typings.amphtmlDashValidator.amphtmlDashValidatorMod.ValidationResultStatus
@@ -9,15 +8,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object amphtmlDashValidatorStrings {
-  @js.native
-  sealed trait AMP_HTML_TEMPLATE_PROBLEM extends ErrorCategoryCode
-  
-  @js.native
-  sealed trait AMP_LAYOUT_PROBLEM extends ErrorCategoryCode
-  
-  @js.native
-  sealed trait AMP_TAG_PROBLEM extends ErrorCategoryCode
-  
   @js.native
   sealed trait ATTR_DISALLOWED_BY_IMPLIED_LAYOUT extends ValidationErrorCode
   
@@ -34,9 +24,6 @@ object amphtmlDashValidatorStrings {
   sealed trait ATTR_VALUE_REQUIRED_BY_LAYOUT extends ValidationErrorCode
   
   @js.native
-  sealed trait AUTHOR_STYLESHEET_PROBLEM extends ErrorCategoryCode
-  
-  @js.native
   sealed trait BASE_TAG_MUST_PRECEED_ALL_URLS extends ValidationErrorCode
   
   @js.native
@@ -49,7 +36,7 @@ object amphtmlDashValidatorStrings {
   sealed trait CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR extends ValidationErrorCode
   
   @js.native
-  sealed trait CSS_SYNTAX extends ValidationErrorCode
+  sealed trait CSS_EXCESSIVELY_NESTED extends ValidationErrorCode
   
   @js.native
   sealed trait CSS_SYNTAX_BAD_URL extends ValidationErrorCode
@@ -145,16 +132,13 @@ object amphtmlDashValidatorStrings {
   sealed trait CSS_SYNTAX_UNTERMINATED_STRING extends ValidationErrorCode
   
   @js.native
-  sealed trait CUSTOM_JAVASCRIPT_DISALLOWED extends ErrorCategoryCode
-  
-  @js.native
   sealed trait DEPRECATED_ATTR extends ValidationErrorCode
   
   @js.native
   sealed trait DEPRECATED_TAG extends ValidationErrorCode
   
   @js.native
-  sealed trait DEPRECATION extends ErrorCategoryCode
+  sealed trait DEV_MODE_ONLY extends ValidationErrorCode
   
   @js.native
   sealed trait DISALLOWED_ATTR extends ValidationErrorCode
@@ -167,12 +151,6 @@ object amphtmlDashValidatorStrings {
   
   @js.native
   sealed trait DISALLOWED_FIRST_CHILD_TAG_NAME extends ValidationErrorCode
-  
-  @js.native
-  sealed trait DISALLOWED_HTML extends ErrorCategoryCode
-  
-  @js.native
-  sealed trait DISALLOWED_HTML_WITH_AMP_EQUIVALENT extends ErrorCategoryCode
   
   @js.native
   sealed trait DISALLOWED_MANUFACTURED_BODY extends ValidationErrorCode
@@ -194,6 +172,9 @@ object amphtmlDashValidatorStrings {
   
   @js.native
   sealed trait DISALLOWED_TAG_ANCESTOR extends ValidationErrorCode
+  
+  @js.native
+  sealed trait DOCUMENT_SIZE_LIMIT_EXCEEDED extends ValidationErrorCode
   
   @js.native
   sealed trait DOCUMENT_TOO_COMPLEX extends ValidationErrorCode
@@ -226,9 +207,6 @@ object amphtmlDashValidatorStrings {
   sealed trait GENERAL_DISALLOWED_TAG extends ValidationErrorCode
   
   @js.native
-  sealed trait GENERIC extends ErrorCategoryCode
-  
-  @js.native
   sealed trait IMPLIED_LAYOUT_INVALID extends ValidationErrorCode
   
   @js.native
@@ -241,7 +219,13 @@ object amphtmlDashValidatorStrings {
   sealed trait INCORRECT_NUM_CHILD_TAGS extends ValidationErrorCode
   
   @js.native
+  sealed trait INLINE_STYLE_TOO_LONG extends ValidationErrorCode
+  
+  @js.native
   sealed trait INVALID_ATTR_VALUE extends ValidationErrorCode
+  
+  @js.native
+  sealed trait INVALID_JSON_CDATA extends ValidationErrorCode
   
   @js.native
   sealed trait INVALID_PROPERTY_VALUE_IN_ATTR_VALUE extends ValidationErrorCode
@@ -256,7 +240,7 @@ object amphtmlDashValidatorStrings {
   sealed trait INVALID_UTF8 extends ValidationErrorCode
   
   @js.native
-  sealed trait MANDATORY_AMP_TAG_MISSING_OR_INCORRECT extends ErrorCategoryCode
+  sealed trait MANDATORY_ANYOF_ATTR_MISSING extends ValidationErrorCode
   
   @js.native
   sealed trait MANDATORY_ATTR_MISSING extends ValidationErrorCode
@@ -286,6 +270,9 @@ object amphtmlDashValidatorStrings {
   sealed trait MANDATORY_TAG_MISSING extends ValidationErrorCode
   
   @js.native
+  sealed trait MISSING_LAYOUT_ATTRIBUTES extends ValidationErrorCode
+  
+  @js.native
   sealed trait MISSING_REQUIRED_EXTENSION extends ValidationErrorCode
   
   @js.native
@@ -304,7 +291,13 @@ object amphtmlDashValidatorStrings {
   sealed trait SPECIFIED_LAYOUT_INVALID extends ValidationErrorCode
   
   @js.native
+  sealed trait STYLESHEET_AND_INLINE_STYLE_TOO_LONG extends ValidationErrorCode
+  
+  @js.native
   sealed trait STYLESHEET_TOO_LONG extends ValidationErrorCode
+  
+  @js.native
+  sealed trait TAG_EXCLUDED_BY_TAG extends ValidationErrorCode
   
   @js.native
   sealed trait TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS extends ValidationErrorCode
@@ -325,15 +318,16 @@ object amphtmlDashValidatorStrings {
   sealed trait UNESCAPED_TEMPLATE_IN_ATTR_VALUE extends ValidationErrorCode
   
   @js.native
-  sealed trait UNKNOWN
-    extends ErrorCategoryCode
-       with ValidationResultStatus
+  sealed trait UNKNOWN extends ValidationResultStatus
   
   @js.native
   sealed trait UNKNOWN_CODE extends ValidationErrorCode
   
   @js.native
   sealed trait UNKNOWN_SEVERITY extends ValidationErrorSeverity
+  
+  @js.native
+  sealed trait VALUE_SET_MISMATCH extends ValidationErrorCode
   
   @js.native
   sealed trait WARNING extends ValidationErrorSeverity
@@ -351,12 +345,6 @@ object amphtmlDashValidatorStrings {
   sealed trait WRONG_PARENT_TAG extends ValidationErrorCode
   
   @scala.inline
-  def AMP_HTML_TEMPLATE_PROBLEM: AMP_HTML_TEMPLATE_PROBLEM = "AMP_HTML_TEMPLATE_PROBLEM".asInstanceOf[AMP_HTML_TEMPLATE_PROBLEM]
-  @scala.inline
-  def AMP_LAYOUT_PROBLEM: AMP_LAYOUT_PROBLEM = "AMP_LAYOUT_PROBLEM".asInstanceOf[AMP_LAYOUT_PROBLEM]
-  @scala.inline
-  def AMP_TAG_PROBLEM: AMP_TAG_PROBLEM = "AMP_TAG_PROBLEM".asInstanceOf[AMP_TAG_PROBLEM]
-  @scala.inline
   def ATTR_DISALLOWED_BY_IMPLIED_LAYOUT: ATTR_DISALLOWED_BY_IMPLIED_LAYOUT = "ATTR_DISALLOWED_BY_IMPLIED_LAYOUT".asInstanceOf[ATTR_DISALLOWED_BY_IMPLIED_LAYOUT]
   @scala.inline
   def ATTR_DISALLOWED_BY_SPECIFIED_LAYOUT: ATTR_DISALLOWED_BY_SPECIFIED_LAYOUT = "ATTR_DISALLOWED_BY_SPECIFIED_LAYOUT".asInstanceOf[ATTR_DISALLOWED_BY_SPECIFIED_LAYOUT]
@@ -367,8 +355,6 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def ATTR_VALUE_REQUIRED_BY_LAYOUT: ATTR_VALUE_REQUIRED_BY_LAYOUT = "ATTR_VALUE_REQUIRED_BY_LAYOUT".asInstanceOf[ATTR_VALUE_REQUIRED_BY_LAYOUT]
   @scala.inline
-  def AUTHOR_STYLESHEET_PROBLEM: AUTHOR_STYLESHEET_PROBLEM = "AUTHOR_STYLESHEET_PROBLEM".asInstanceOf[AUTHOR_STYLESHEET_PROBLEM]
-  @scala.inline
   def BASE_TAG_MUST_PRECEED_ALL_URLS: BASE_TAG_MUST_PRECEED_ALL_URLS = "BASE_TAG_MUST_PRECEED_ALL_URLS".asInstanceOf[BASE_TAG_MUST_PRECEED_ALL_URLS]
   @scala.inline
   def CDATA_VIOLATES_BLACKLIST: CDATA_VIOLATES_BLACKLIST = "CDATA_VIOLATES_BLACKLIST".asInstanceOf[CDATA_VIOLATES_BLACKLIST]
@@ -377,7 +363,7 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR: CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR = "CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR".asInstanceOf[CHILD_TAG_DOES_NOT_SATISFY_REFERENCE_POINT_SINGULAR]
   @scala.inline
-  def CSS_SYNTAX: CSS_SYNTAX = "CSS_SYNTAX".asInstanceOf[CSS_SYNTAX]
+  def CSS_EXCESSIVELY_NESTED: CSS_EXCESSIVELY_NESTED = "CSS_EXCESSIVELY_NESTED".asInstanceOf[CSS_EXCESSIVELY_NESTED]
   @scala.inline
   def CSS_SYNTAX_BAD_URL: CSS_SYNTAX_BAD_URL = "CSS_SYNTAX_BAD_URL".asInstanceOf[CSS_SYNTAX_BAD_URL]
   @scala.inline
@@ -441,13 +427,11 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def CSS_SYNTAX_UNTERMINATED_STRING: CSS_SYNTAX_UNTERMINATED_STRING = "CSS_SYNTAX_UNTERMINATED_STRING".asInstanceOf[CSS_SYNTAX_UNTERMINATED_STRING]
   @scala.inline
-  def CUSTOM_JAVASCRIPT_DISALLOWED: CUSTOM_JAVASCRIPT_DISALLOWED = "CUSTOM_JAVASCRIPT_DISALLOWED".asInstanceOf[CUSTOM_JAVASCRIPT_DISALLOWED]
-  @scala.inline
   def DEPRECATED_ATTR: DEPRECATED_ATTR = "DEPRECATED_ATTR".asInstanceOf[DEPRECATED_ATTR]
   @scala.inline
   def DEPRECATED_TAG: DEPRECATED_TAG = "DEPRECATED_TAG".asInstanceOf[DEPRECATED_TAG]
   @scala.inline
-  def DEPRECATION: DEPRECATION = "DEPRECATION".asInstanceOf[DEPRECATION]
+  def DEV_MODE_ONLY: DEV_MODE_ONLY = "DEV_MODE_ONLY".asInstanceOf[DEV_MODE_ONLY]
   @scala.inline
   def DISALLOWED_ATTR: DISALLOWED_ATTR = "DISALLOWED_ATTR".asInstanceOf[DISALLOWED_ATTR]
   @scala.inline
@@ -456,10 +440,6 @@ object amphtmlDashValidatorStrings {
   def DISALLOWED_DOMAIN: DISALLOWED_DOMAIN = "DISALLOWED_DOMAIN".asInstanceOf[DISALLOWED_DOMAIN]
   @scala.inline
   def DISALLOWED_FIRST_CHILD_TAG_NAME: DISALLOWED_FIRST_CHILD_TAG_NAME = "DISALLOWED_FIRST_CHILD_TAG_NAME".asInstanceOf[DISALLOWED_FIRST_CHILD_TAG_NAME]
-  @scala.inline
-  def DISALLOWED_HTML: DISALLOWED_HTML = "DISALLOWED_HTML".asInstanceOf[DISALLOWED_HTML]
-  @scala.inline
-  def DISALLOWED_HTML_WITH_AMP_EQUIVALENT: DISALLOWED_HTML_WITH_AMP_EQUIVALENT = "DISALLOWED_HTML_WITH_AMP_EQUIVALENT".asInstanceOf[DISALLOWED_HTML_WITH_AMP_EQUIVALENT]
   @scala.inline
   def DISALLOWED_MANUFACTURED_BODY: DISALLOWED_MANUFACTURED_BODY = "DISALLOWED_MANUFACTURED_BODY".asInstanceOf[DISALLOWED_MANUFACTURED_BODY]
   @scala.inline
@@ -474,6 +454,8 @@ object amphtmlDashValidatorStrings {
   def DISALLOWED_TAG: DISALLOWED_TAG = "DISALLOWED_TAG".asInstanceOf[DISALLOWED_TAG]
   @scala.inline
   def DISALLOWED_TAG_ANCESTOR: DISALLOWED_TAG_ANCESTOR = "DISALLOWED_TAG_ANCESTOR".asInstanceOf[DISALLOWED_TAG_ANCESTOR]
+  @scala.inline
+  def DOCUMENT_SIZE_LIMIT_EXCEEDED: DOCUMENT_SIZE_LIMIT_EXCEEDED = "DOCUMENT_SIZE_LIMIT_EXCEEDED".asInstanceOf[DOCUMENT_SIZE_LIMIT_EXCEEDED]
   @scala.inline
   def DOCUMENT_TOO_COMPLEX: DOCUMENT_TOO_COMPLEX = "DOCUMENT_TOO_COMPLEX".asInstanceOf[DOCUMENT_TOO_COMPLEX]
   @scala.inline
@@ -495,8 +477,6 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def GENERAL_DISALLOWED_TAG: GENERAL_DISALLOWED_TAG = "GENERAL_DISALLOWED_TAG".asInstanceOf[GENERAL_DISALLOWED_TAG]
   @scala.inline
-  def GENERIC: GENERIC = "GENERIC".asInstanceOf[GENERIC]
-  @scala.inline
   def IMPLIED_LAYOUT_INVALID: IMPLIED_LAYOUT_INVALID = "IMPLIED_LAYOUT_INVALID".asInstanceOf[IMPLIED_LAYOUT_INVALID]
   @scala.inline
   def INCONSISTENT_UNITS_FOR_WIDTH_AND_HEIGHT: INCONSISTENT_UNITS_FOR_WIDTH_AND_HEIGHT = "INCONSISTENT_UNITS_FOR_WIDTH_AND_HEIGHT".asInstanceOf[INCONSISTENT_UNITS_FOR_WIDTH_AND_HEIGHT]
@@ -505,7 +485,11 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def INCORRECT_NUM_CHILD_TAGS: INCORRECT_NUM_CHILD_TAGS = "INCORRECT_NUM_CHILD_TAGS".asInstanceOf[INCORRECT_NUM_CHILD_TAGS]
   @scala.inline
+  def INLINE_STYLE_TOO_LONG: INLINE_STYLE_TOO_LONG = "INLINE_STYLE_TOO_LONG".asInstanceOf[INLINE_STYLE_TOO_LONG]
+  @scala.inline
   def INVALID_ATTR_VALUE: INVALID_ATTR_VALUE = "INVALID_ATTR_VALUE".asInstanceOf[INVALID_ATTR_VALUE]
+  @scala.inline
+  def INVALID_JSON_CDATA: INVALID_JSON_CDATA = "INVALID_JSON_CDATA".asInstanceOf[INVALID_JSON_CDATA]
   @scala.inline
   def INVALID_PROPERTY_VALUE_IN_ATTR_VALUE: INVALID_PROPERTY_VALUE_IN_ATTR_VALUE = "INVALID_PROPERTY_VALUE_IN_ATTR_VALUE".asInstanceOf[INVALID_PROPERTY_VALUE_IN_ATTR_VALUE]
   @scala.inline
@@ -515,7 +499,7 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def INVALID_UTF8: INVALID_UTF8 = "INVALID_UTF8".asInstanceOf[INVALID_UTF8]
   @scala.inline
-  def MANDATORY_AMP_TAG_MISSING_OR_INCORRECT: MANDATORY_AMP_TAG_MISSING_OR_INCORRECT = "MANDATORY_AMP_TAG_MISSING_OR_INCORRECT".asInstanceOf[MANDATORY_AMP_TAG_MISSING_OR_INCORRECT]
+  def MANDATORY_ANYOF_ATTR_MISSING: MANDATORY_ANYOF_ATTR_MISSING = "MANDATORY_ANYOF_ATTR_MISSING".asInstanceOf[MANDATORY_ANYOF_ATTR_MISSING]
   @scala.inline
   def MANDATORY_ATTR_MISSING: MANDATORY_ATTR_MISSING = "MANDATORY_ATTR_MISSING".asInstanceOf[MANDATORY_ATTR_MISSING]
   @scala.inline
@@ -535,6 +519,8 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def MANDATORY_TAG_MISSING: MANDATORY_TAG_MISSING = "MANDATORY_TAG_MISSING".asInstanceOf[MANDATORY_TAG_MISSING]
   @scala.inline
+  def MISSING_LAYOUT_ATTRIBUTES: MISSING_LAYOUT_ATTRIBUTES = "MISSING_LAYOUT_ATTRIBUTES".asInstanceOf[MISSING_LAYOUT_ATTRIBUTES]
+  @scala.inline
   def MISSING_REQUIRED_EXTENSION: MISSING_REQUIRED_EXTENSION = "MISSING_REQUIRED_EXTENSION".asInstanceOf[MISSING_REQUIRED_EXTENSION]
   @scala.inline
   def MISSING_URL: MISSING_URL = "MISSING_URL".asInstanceOf[MISSING_URL]
@@ -547,7 +533,11 @@ object amphtmlDashValidatorStrings {
   @scala.inline
   def SPECIFIED_LAYOUT_INVALID: SPECIFIED_LAYOUT_INVALID = "SPECIFIED_LAYOUT_INVALID".asInstanceOf[SPECIFIED_LAYOUT_INVALID]
   @scala.inline
+  def STYLESHEET_AND_INLINE_STYLE_TOO_LONG: STYLESHEET_AND_INLINE_STYLE_TOO_LONG = "STYLESHEET_AND_INLINE_STYLE_TOO_LONG".asInstanceOf[STYLESHEET_AND_INLINE_STYLE_TOO_LONG]
+  @scala.inline
   def STYLESHEET_TOO_LONG: STYLESHEET_TOO_LONG = "STYLESHEET_TOO_LONG".asInstanceOf[STYLESHEET_TOO_LONG]
+  @scala.inline
+  def TAG_EXCLUDED_BY_TAG: TAG_EXCLUDED_BY_TAG = "TAG_EXCLUDED_BY_TAG".asInstanceOf[TAG_EXCLUDED_BY_TAG]
   @scala.inline
   def TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS: TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS = "TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS".asInstanceOf[TAG_NOT_ALLOWED_TO_HAVE_SIBLINGS]
   @scala.inline
@@ -566,6 +556,8 @@ object amphtmlDashValidatorStrings {
   def UNKNOWN_CODE: UNKNOWN_CODE = "UNKNOWN_CODE".asInstanceOf[UNKNOWN_CODE]
   @scala.inline
   def UNKNOWN_SEVERITY: UNKNOWN_SEVERITY = "UNKNOWN_SEVERITY".asInstanceOf[UNKNOWN_SEVERITY]
+  @scala.inline
+  def VALUE_SET_MISMATCH: VALUE_SET_MISMATCH = "VALUE_SET_MISMATCH".asInstanceOf[VALUE_SET_MISMATCH]
   @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
   @scala.inline

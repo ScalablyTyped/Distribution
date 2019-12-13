@@ -6,6 +6,18 @@ import typings.stripe.stripeMod.customerTaxIds.TaxIdType
 import typings.stripe.stripeMod.errors.RawType
 import typings.stripe.stripeMod.events.EventType
 import typings.stripe.stripeMod.files.IPurpose
+import typings.stripe.stripeMod.issuing.authorizations.AuthorizationMethod
+import typings.stripe.stripeMod.issuing.authorizations.AuthorizationStatus
+import typings.stripe.stripeMod.issuing.authorizations.WalletProvider
+import typings.stripe.stripeMod.issuing.cardholders.CardholderStatus
+import typings.stripe.stripeMod.issuing.cardholders.CardholderType
+import typings.stripe.stripeMod.issuing.cardholders.SpendingLimitInterval
+import typings.stripe.stripeMod.issuing.cards.IssuingCardReplacementReason
+import typings.stripe.stripeMod.issuing.cards.IssuingCardStatus
+import typings.stripe.stripeMod.issuing.cards.IssuingCardType
+import typings.stripe.stripeMod.issuing.disputes.IssuingDisputeReason
+import typings.stripe.stripeMod.issuing.disputes.IssuingDisputeStatus
+import typings.stripe.stripeMod.issuing.transactions.TransactionType
 import typings.stripe.stripeMod.orders.OrderStatus
 import typings.stripe.stripeMod.paymentIntents.PaymentIntendDataFutureUsageOptions
 import typings.stripe.stripeMod.paymentIntents.PaymentIntentDataCaptureMethodOptions
@@ -19,7 +31,6 @@ import typings.stripe.stripeMod.payouts.PayoutTypes
 import typings.stripe.stripeMod.plans.IntervalUnit
 import typings.stripe.stripeMod.products.ProductType
 import typings.stripe.stripeMod.setupIntents.SetupIntentCancelationReason
-import typings.stripe.stripeMod.setupIntents.SetupIntentPaymentMethodType
 import typings.stripe.stripeMod.setupIntents.SetupIntentUsageType
 import typings.stripe.stripeMod.subscriptions.SubscriptionBilling
 import typings.stripe.stripeMod.subscriptions.SubscriptionStatus
@@ -112,13 +123,22 @@ object stripeStrings {
   sealed trait accountDOTupdated extends EventType
   
   @js.native
+  sealed trait account_compliance_disabled extends js.Object
+  
+  @js.native
+  sealed trait account_inactive extends js.Object
+  
+  @js.native
   sealed trait ach_credit_transfer extends js.Object
   
   @js.native
   sealed trait ach_debit extends js.Object
   
   @js.native
-  sealed trait active extends SubscriptionStatus
+  sealed trait active
+    extends CardholderStatus
+       with IssuingCardStatus
+       with SubscriptionStatus
   
   @js.native
   sealed trait adjustment extends CustomerBalanceTransactionType
@@ -131,6 +151,12 @@ object stripeStrings {
   
   @js.native
   sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait all_time extends SpendingLimitInterval
+  
+  @js.native
+  sealed trait allowed_categories extends js.Object
   
   @js.native
   sealed trait amex extends CardBrand
@@ -148,7 +174,7 @@ object stripeStrings {
   sealed trait api_error extends RawType
   
   @js.native
-  sealed trait apple_pay extends js.Object
+  sealed trait apple_pay extends WalletProvider
   
   @js.native
   sealed trait application extends js.Object
@@ -184,7 +210,13 @@ object stripeStrings {
   sealed trait au_abn extends TaxIdType
   
   @js.native
+  sealed trait authentication_failed extends js.Object
+  
+  @js.native
   sealed trait authorization_code extends js.Object
+  
+  @js.native
+  sealed trait authorization_controls extends js.Object
   
   @js.native
   sealed trait authorized extends js.Object
@@ -221,7 +253,10 @@ object stripeStrings {
   sealed trait bitcoin_receiver extends SourceTypes
   
   @js.native
-  sealed trait blocked extends js.Object
+  sealed trait blocked extends CardholderStatus
+  
+  @js.native
+  sealed trait blocked_categories extends js.Object
   
   @js.native
   sealed trait book extends js.Object
@@ -230,11 +265,18 @@ object stripeStrings {
   sealed trait bucket extends js.Object
   
   @js.native
+  sealed trait bulk extends js.Object
+  
+  @js.native
+  sealed trait business_entity extends CardholderType
+  
+  @js.native
   sealed trait business_logo extends IPurpose
   
   @js.native
   sealed trait canceled
-    extends OrderStatus
+    extends IssuingCardStatus
+       with OrderStatus
        with Statuses
        with SubscriptionStatus
   
@@ -242,19 +284,31 @@ object stripeStrings {
   sealed trait capabilityDOTupdated extends EventType
   
   @js.native
+  sealed trait capture extends TransactionType
+  
+  @js.native
   sealed trait card
     extends PaymentIntentPaymentMethodType
        with PayoutTypes
-       with SetupIntentPaymentMethodType
        with SourceTypes
+  
+  @js.native
+  sealed trait card_active extends js.Object
   
   @js.native
   sealed trait card_error extends RawType
   
   @js.native
-  sealed trait card_present
-    extends PaymentIntentPaymentMethodType
-       with SetupIntentPaymentMethodType
+  sealed trait card_inactive extends js.Object
+  
+  @js.native
+  sealed trait card_present extends js.Object
+  
+  @js.native
+  sealed trait cardholder extends js.Object
+  
+  @js.native
+  sealed trait cash_withdrawal extends TransactionType
   
   @js.native
   sealed trait challenge_only extends js.Object
@@ -314,6 +368,12 @@ object stripeStrings {
   sealed trait checkoutDOTsessionDOTcompleted extends EventType
   
   @js.native
+  sealed trait chip extends AuthorizationMethod
+  
+  @js.native
+  sealed trait closed extends AuthorizationStatus
+  
+  @js.native
   sealed trait code_verification extends js.Object
   
   @js.native
@@ -321,6 +381,9 @@ object stripeStrings {
   
   @js.native
   sealed trait consumed extends js.Object
+  
+  @js.native
+  sealed trait contactless extends AuthorizationMethod
   
   @js.native
   sealed trait country_spec extends js.Object
@@ -422,7 +485,10 @@ object stripeStrings {
   sealed trait da extends js.Object
   
   @js.native
-  sealed trait daily extends js.Object
+  sealed trait daily extends SpendingLimitInterval
+  
+  @js.native
+  sealed trait damage extends IssuingCardReplacementReason
   
   @js.native
   sealed trait day extends IntervalUnit
@@ -443,6 +509,9 @@ object stripeStrings {
   sealed trait declined_by_network extends js.Object
   
   @js.native
+  sealed trait delivered extends js.Object
+  
+  @js.native
   sealed trait diners extends CardBrand
   
   @js.native
@@ -455,10 +524,13 @@ object stripeStrings {
   sealed trait discover_ extends CardBrand
   
   @js.native
-  sealed trait dispute extends js.Object
+  sealed trait dispute extends TransactionType
   
   @js.native
   sealed trait dispute_evidence extends IPurpose
+  
+  @js.native
+  sealed trait dispute_loss extends TransactionType
   
   @js.native
   sealed trait disputed extends js.Object
@@ -512,6 +584,9 @@ object stripeStrings {
   sealed trait exempt extends js.Object
   
   @js.native
+  sealed trait expiration extends IssuingCardReplacementReason
+  
+  @js.native
   sealed trait expired_or_canceled_card extends js.Object
   
   @js.native
@@ -525,6 +600,9 @@ object stripeStrings {
   
   @js.native
   sealed trait failed_invoice extends PaymentIntentStripeProvidedCancellationReason
+  
+  @js.native
+  sealed trait failure extends js.Object
   
   @js.native
   sealed trait female extends js.Object
@@ -554,6 +632,9 @@ object stripeStrings {
   sealed trait fraud extends js.Object
   
   @js.native
+  sealed trait fraudlent extends IssuingDisputeReason
+  
+  @js.native
   sealed trait fraudulent
     extends CreditNoteReason
        with PaymentIntentUserProvidedCancellationReason
@@ -574,13 +655,13 @@ object stripeStrings {
   sealed trait good extends ProductType
   
   @js.native
-  sealed trait google_pay extends js.Object
+  sealed trait google_pay extends WalletProvider
   
   @js.native
   sealed trait graduated extends js.Object
   
   @js.native
-  sealed trait ideal extends js.Object
+  sealed trait ideal extends PaymentIntentPaymentMethodType
   
   @js.native
   sealed trait idempotency_error extends RawType
@@ -598,7 +679,9 @@ object stripeStrings {
   sealed trait in_transit extends Statuses
   
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive
+    extends CardholderStatus
+       with IssuingCardStatus
   
   @js.native
   sealed trait incomplete extends SubscriptionStatus
@@ -619,7 +702,7 @@ object stripeStrings {
   sealed trait increment extends IUsageRecordAction
   
   @js.native
-  sealed trait individual extends js.Object
+  sealed trait individual extends CardholderType
   
   @js.native
   sealed trait inf extends js.Object
@@ -703,6 +786,24 @@ object stripeStrings {
   sealed trait issuer_declined extends js.Object
   
   @js.native
+  sealed trait issuingDOTauthorization extends js.Object
+  
+  @js.native
+  sealed trait issuingDOTcard extends js.Object
+  
+  @js.native
+  sealed trait issuingDOTcard_details extends js.Object
+  
+  @js.native
+  sealed trait issuingDOTcardholder extends js.Object
+  
+  @js.native
+  sealed trait issuingDOTdispute extends js.Object
+  
+  @js.native
+  sealed trait issuingDOTtransaction extends js.Object
+  
+  @js.native
   sealed trait issuing_authorizationDOTcreated extends EventType
   
   @js.native
@@ -754,6 +855,9 @@ object stripeStrings {
   sealed trait jpg extends js.Object
   
   @js.native
+  sealed trait keyed_in extends AuthorizationMethod
+  
+  @js.native
   sealed trait klarna extends js.Object
   
   @js.native
@@ -775,10 +879,18 @@ object stripeStrings {
   sealed trait list extends js.Object
   
   @js.native
+  sealed trait listed extends js.Object
+  
+  @js.native
   sealed trait login_link extends js.Object
   
   @js.native
-  sealed trait lost extends js.Object
+  sealed trait loss extends IssuingCardReplacementReason
+  
+  @js.native
+  sealed trait lost
+    extends IssuingCardStatus
+       with IssuingDisputeStatus
   
   @js.native
   sealed trait lost_or_stolen_card extends js.Object
@@ -802,10 +914,22 @@ object stripeStrings {
   sealed trait masterpass extends js.Object
   
   @js.native
+  sealed trait `match` extends js.Object
+  
+  @js.native
   sealed trait max extends js.Object
   
   @js.native
+  sealed trait max_amount extends js.Object
+  
+  @js.native
+  sealed trait max_approvals extends js.Object
+  
+  @js.native
   sealed trait metered extends js.Object
+  
+  @js.native
+  sealed trait mismatch extends js.Object
   
   @js.native
   sealed trait missing extends js.Object
@@ -817,7 +941,7 @@ object stripeStrings {
   sealed trait month extends IntervalUnit
   
   @js.native
-  sealed trait monthly extends js.Object
+  sealed trait monthly extends SpendingLimitInterval
   
   @js.native
   sealed trait multibanco extends js.Object
@@ -842,6 +966,9 @@ object stripeStrings {
   
   @js.native
   sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait not_provided extends js.Object
   
   @js.native
   sealed trait not_required extends js.Object
@@ -877,7 +1004,7 @@ object stripeStrings {
   sealed trait one_time extends js.Object
   
   @js.native
-  sealed trait online extends js.Object
+  sealed trait online extends AuthorizationMethod
   
   @js.native
   sealed trait open extends js.Object
@@ -907,7 +1034,7 @@ object stripeStrings {
   sealed trait order_returnDOTcreated extends EventType
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other extends IssuingDisputeReason
   
   @js.native
   sealed trait out_of_stock extends js.Object
@@ -990,7 +1117,12 @@ object stripeStrings {
   sealed trait pdf extends js.Object
   
   @js.native
-  sealed trait pending extends Statuses
+  sealed trait pending
+    extends AuthorizationStatus
+       with Statuses
+  
+  @js.native
+  sealed trait per_authorization extends SpendingLimitInterval
   
   @js.native
   sealed trait per_unit extends js.Object
@@ -1006,6 +1138,9 @@ object stripeStrings {
   
   @js.native
   sealed trait personDOTupdated extends EventType
+  
+  @js.native
+  sealed trait physical extends IssuingCardType
   
   @js.native
   sealed trait pl extends js.Object
@@ -1098,7 +1233,10 @@ object stripeStrings {
   sealed trait refresh_token extends js.Object
   
   @js.native
-  sealed trait refund extends js.Object
+  sealed trait refund extends TransactionType
+  
+  @js.native
+  sealed trait refund_reversal extends TransactionType
   
   @js.native
   sealed trait refunded extends js.Object
@@ -1108,6 +1246,9 @@ object stripeStrings {
   
   @js.native
   sealed trait refused extends js.Object
+  
+  @js.native
+  sealed trait rejectedDOTlisted extends js.Object
   
   @js.native
   sealed trait repeating extends js.Object
@@ -1163,7 +1304,7 @@ object stripeStrings {
   sealed trait reverse extends js.Object
   
   @js.native
-  sealed trait reversed extends js.Object
+  sealed trait reversed extends AuthorizationStatus
   
   @js.native
   sealed trait reversed_after_approval extends js.Object
@@ -1184,7 +1325,7 @@ object stripeStrings {
   sealed trait safe extends js.Object
   
   @js.native
-  sealed trait samsung_pay extends js.Object
+  sealed trait samsung_pay extends WalletProvider
   
   @js.native
   sealed trait saturday extends js.Object
@@ -1199,7 +1340,7 @@ object stripeStrings {
   sealed trait send_invoice extends SubscriptionBilling
   
   @js.native
-  sealed trait sepa_debit extends SetupIntentPaymentMethodType
+  sealed trait sepa_debit extends PaymentIntentPaymentMethodType
   
   @js.native
   sealed trait service extends ProductType
@@ -1224,6 +1365,9 @@ object stripeStrings {
   
   @js.native
   sealed trait setup_intentDOTsucceeded extends EventType
+  
+  @js.native
+  sealed trait shipped extends js.Object
   
   @js.native
   sealed trait shipping extends js.Object
@@ -1274,7 +1418,13 @@ object stripeStrings {
   sealed trait sourceDOTtransactionDOTupdated extends EventType
   
   @js.native
+  sealed trait spending_limits extends js.Object
+  
+  @js.native
   sealed trait standard extends PayoutMethods
+  
+  @js.native
+  sealed trait stolen extends IssuingCardStatus
   
   @js.native
   sealed trait string extends js.Object
@@ -1331,13 +1481,22 @@ object stripeStrings {
   sealed trait succeeded extends js.Object
   
   @js.native
+  sealed trait success extends js.Object
+  
+  @js.native
   sealed trait sum extends js.Object
   
   @js.native
   sealed trait sunday extends js.Object
   
   @js.native
+  sealed trait suspected_fraud extends js.Object
+  
+  @js.native
   sealed trait sv extends js.Object
+  
+  @js.native
+  sealed trait swipe extends AuthorizationMethod
   
   @js.native
   sealed trait tax extends js.Object
@@ -1356,6 +1515,9 @@ object stripeStrings {
   
   @js.native
   sealed trait terms_of_service extends js.Object
+  
+  @js.native
+  sealed trait theft extends IssuingCardReplacementReason
   
   @js.native
   sealed trait three_d_secure extends js.Object
@@ -1424,7 +1586,7 @@ object stripeStrings {
   sealed trait uncollectible extends js.Object
   
   @js.native
-  sealed trait under_review extends js.Object
+  sealed trait under_review extends IssuingDisputeStatus
   
   @js.native
   sealed trait unionpay extends CardBrand
@@ -1442,6 +1604,9 @@ object stripeStrings {
   
   @js.native
   sealed trait unspent_receiver_credit extends CustomerBalanceTransactionType
+  
+  @js.native
+  sealed trait unsubmitted extends IssuingDisputeStatus
   
   @js.native
   sealed trait unverified extends js.Object
@@ -1474,6 +1639,9 @@ object stripeStrings {
   sealed trait verified extends js.Object
   
   @js.native
+  sealed trait virtual extends IssuingCardType
+  
+  @js.native
   sealed trait visa_ extends CardBrand
   
   @js.native
@@ -1498,7 +1666,16 @@ object stripeStrings {
   sealed trait warning_under_review extends js.Object
   
   @js.native
+  sealed trait webhook_approved extends js.Object
+  
+  @js.native
+  sealed trait webhook_declined extends js.Object
+  
+  @js.native
   sealed trait webhook_endpoint extends js.Object
+  
+  @js.native
+  sealed trait webhook_timeout extends js.Object
   
   @js.native
   sealed trait wechat extends js.Object
@@ -1510,13 +1687,16 @@ object stripeStrings {
   sealed trait week extends IntervalUnit
   
   @js.native
-  sealed trait weekly extends js.Object
+  sealed trait weekly extends SpendingLimitInterval
   
   @js.native
-  sealed trait won extends js.Object
+  sealed trait won extends IssuingDisputeStatus
   
   @js.native
   sealed trait year extends IntervalUnit
+  
+  @js.native
+  sealed trait yearly extends SpendingLimitInterval
   
   @js.native
   sealed trait zh extends js.Object
@@ -1574,6 +1754,10 @@ object stripeStrings {
   @scala.inline
   def accountDOTupdated: accountDOTupdated = "account.updated".asInstanceOf[accountDOTupdated]
   @scala.inline
+  def account_compliance_disabled: account_compliance_disabled = "account_compliance_disabled".asInstanceOf[account_compliance_disabled]
+  @scala.inline
+  def account_inactive: account_inactive = "account_inactive".asInstanceOf[account_inactive]
+  @scala.inline
   def ach_credit_transfer: ach_credit_transfer = "ach_credit_transfer".asInstanceOf[ach_credit_transfer]
   @scala.inline
   def ach_debit: ach_debit = "ach_debit".asInstanceOf[ach_debit]
@@ -1587,6 +1771,10 @@ object stripeStrings {
   def alipay_account: alipay_account = "alipay_account".asInstanceOf[alipay_account]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def all_time: all_time = "all_time".asInstanceOf[all_time]
+  @scala.inline
+  def allowed_categories: allowed_categories = "allowed_categories".asInstanceOf[allowed_categories]
   @scala.inline
   def amex: amex = "amex".asInstanceOf[amex]
   @scala.inline
@@ -1622,7 +1810,11 @@ object stripeStrings {
   @scala.inline
   def au_abn: au_abn = "au_abn".asInstanceOf[au_abn]
   @scala.inline
+  def authentication_failed: authentication_failed = "authentication_failed".asInstanceOf[authentication_failed]
+  @scala.inline
   def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
+  @scala.inline
+  def authorization_controls: authorization_controls = "authorization_controls".asInstanceOf[authorization_controls]
   @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
   @scala.inline
@@ -1646,9 +1838,15 @@ object stripeStrings {
   @scala.inline
   def blocked: blocked = "blocked".asInstanceOf[blocked]
   @scala.inline
+  def blocked_categories: blocked_categories = "blocked_categories".asInstanceOf[blocked_categories]
+  @scala.inline
   def book: book = "book".asInstanceOf[book]
   @scala.inline
   def bucket: bucket = "bucket".asInstanceOf[bucket]
+  @scala.inline
+  def bulk: bulk = "bulk".asInstanceOf[bulk]
+  @scala.inline
+  def business_entity: business_entity = "business_entity".asInstanceOf[business_entity]
   @scala.inline
   def business_logo: business_logo = "business_logo".asInstanceOf[business_logo]
   @scala.inline
@@ -1656,11 +1854,21 @@ object stripeStrings {
   @scala.inline
   def capabilityDOTupdated: capabilityDOTupdated = "capability.updated".asInstanceOf[capabilityDOTupdated]
   @scala.inline
+  def capture: capture = "capture".asInstanceOf[capture]
+  @scala.inline
   def card: card = "card".asInstanceOf[card]
+  @scala.inline
+  def card_active: card_active = "card_active".asInstanceOf[card_active]
   @scala.inline
   def card_error: card_error = "card_error".asInstanceOf[card_error]
   @scala.inline
+  def card_inactive: card_inactive = "card_inactive".asInstanceOf[card_inactive]
+  @scala.inline
   def card_present: card_present = "card_present".asInstanceOf[card_present]
+  @scala.inline
+  def cardholder: cardholder = "cardholder".asInstanceOf[cardholder]
+  @scala.inline
+  def cash_withdrawal: cash_withdrawal = "cash_withdrawal".asInstanceOf[cash_withdrawal]
   @scala.inline
   def challenge_only: challenge_only = "challenge_only".asInstanceOf[challenge_only]
   @scala.inline
@@ -1700,11 +1908,17 @@ object stripeStrings {
   @scala.inline
   def checkoutDOTsessionDOTcompleted: checkoutDOTsessionDOTcompleted = "checkout.session.completed".asInstanceOf[checkoutDOTsessionDOTcompleted]
   @scala.inline
+  def chip: chip = "chip".asInstanceOf[chip]
+  @scala.inline
+  def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def code_verification: code_verification = "code_verification".asInstanceOf[code_verification]
   @scala.inline
   def company: company = "company".asInstanceOf[company]
   @scala.inline
   def consumed: consumed = "consumed".asInstanceOf[consumed]
+  @scala.inline
+  def contactless: contactless = "contactless".asInstanceOf[contactless]
   @scala.inline
   def country_spec: country_spec = "country_spec".asInstanceOf[country_spec]
   @scala.inline
@@ -1774,6 +1988,8 @@ object stripeStrings {
   @scala.inline
   def daily: daily = "daily".asInstanceOf[daily]
   @scala.inline
+  def damage: damage = "damage".asInstanceOf[damage]
+  @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def de: de = "de".asInstanceOf[de]
@@ -1786,6 +2002,8 @@ object stripeStrings {
   @scala.inline
   def declined_by_network: declined_by_network = "declined_by_network".asInstanceOf[declined_by_network]
   @scala.inline
+  def delivered: delivered = "delivered".asInstanceOf[delivered]
+  @scala.inline
   def diners: diners = "diners".asInstanceOf[diners]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
@@ -1797,6 +2015,8 @@ object stripeStrings {
   def dispute: dispute = "dispute".asInstanceOf[dispute]
   @scala.inline
   def dispute_evidence: dispute_evidence = "dispute_evidence".asInstanceOf[dispute_evidence]
+  @scala.inline
+  def dispute_loss: dispute_loss = "dispute_loss".asInstanceOf[dispute_loss]
   @scala.inline
   def disputed: disputed = "disputed".asInstanceOf[disputed]
   @scala.inline
@@ -1830,6 +2050,8 @@ object stripeStrings {
   @scala.inline
   def exempt: exempt = "exempt".asInstanceOf[exempt]
   @scala.inline
+  def expiration: expiration = "expiration".asInstanceOf[expiration]
+  @scala.inline
   def expired_or_canceled_card: expired_or_canceled_card = "expired_or_canceled_card".asInstanceOf[expired_or_canceled_card]
   @scala.inline
   def express: express = "express".asInstanceOf[express]
@@ -1839,6 +2061,8 @@ object stripeStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def failed_invoice: failed_invoice = "failed_invoice".asInstanceOf[failed_invoice]
+  @scala.inline
+  def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
   def female: female = "female".asInstanceOf[female]
   @scala.inline
@@ -1857,6 +2081,8 @@ object stripeStrings {
   def fr: fr = "fr".asInstanceOf[fr]
   @scala.inline
   def fraud: fraud = "fraud".asInstanceOf[fraud]
+  @scala.inline
+  def fraudlent: fraudlent = "fraudlent".asInstanceOf[fraudlent]
   @scala.inline
   def fraudulent: fraudulent = "fraudulent".asInstanceOf[fraudulent]
   @scala.inline
@@ -1956,6 +2182,18 @@ object stripeStrings {
   @scala.inline
   def issuer_declined: issuer_declined = "issuer_declined".asInstanceOf[issuer_declined]
   @scala.inline
+  def issuingDOTauthorization: issuingDOTauthorization = "issuing.authorization".asInstanceOf[issuingDOTauthorization]
+  @scala.inline
+  def issuingDOTcard: issuingDOTcard = "issuing.card".asInstanceOf[issuingDOTcard]
+  @scala.inline
+  def issuingDOTcard_details: issuingDOTcard_details = "issuing.card_details".asInstanceOf[issuingDOTcard_details]
+  @scala.inline
+  def issuingDOTcardholder: issuingDOTcardholder = "issuing.cardholder".asInstanceOf[issuingDOTcardholder]
+  @scala.inline
+  def issuingDOTdispute: issuingDOTdispute = "issuing.dispute".asInstanceOf[issuingDOTdispute]
+  @scala.inline
+  def issuingDOTtransaction: issuingDOTtransaction = "issuing.transaction".asInstanceOf[issuingDOTtransaction]
+  @scala.inline
   def issuing_authorizationDOTcreated: issuing_authorizationDOTcreated = "issuing_authorization.created".asInstanceOf[issuing_authorizationDOTcreated]
   @scala.inline
   def issuing_authorizationDOTrequest: issuing_authorizationDOTrequest = "issuing_authorization.request".asInstanceOf[issuing_authorizationDOTrequest]
@@ -1990,6 +2228,8 @@ object stripeStrings {
   @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   @scala.inline
+  def keyed_in: keyed_in = "keyed_in".asInstanceOf[keyed_in]
+  @scala.inline
   def klarna: klarna = "klarna".asInstanceOf[klarna]
   @scala.inline
   def last_during_period: last_during_period = "last_during_period".asInstanceOf[last_during_period]
@@ -2004,7 +2244,11 @@ object stripeStrings {
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   @scala.inline
+  def listed: listed = "listed".asInstanceOf[listed]
+  @scala.inline
   def login_link: login_link = "login_link".asInstanceOf[login_link]
+  @scala.inline
+  def loss: loss = "loss".asInstanceOf[loss]
   @scala.inline
   def lost: lost = "lost".asInstanceOf[lost]
   @scala.inline
@@ -2022,9 +2266,17 @@ object stripeStrings {
   @scala.inline
   def masterpass: masterpass = "masterpass".asInstanceOf[masterpass]
   @scala.inline
+  def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
+  def max_amount: max_amount = "max_amount".asInstanceOf[max_amount]
+  @scala.inline
+  def max_approvals: max_approvals = "max_approvals".asInstanceOf[max_approvals]
+  @scala.inline
   def metered: metered = "metered".asInstanceOf[metered]
+  @scala.inline
+  def mismatch: mismatch = "mismatch".asInstanceOf[mismatch]
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   @scala.inline
@@ -2049,6 +2301,8 @@ object stripeStrings {
   def no_vat: no_vat = "no_vat".asInstanceOf[no_vat]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def not_provided: not_provided = "not_provided".asInstanceOf[not_provided]
   @scala.inline
   def not_required: not_required = "not_required".asInstanceOf[not_required]
   @scala.inline
@@ -2144,6 +2398,8 @@ object stripeStrings {
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
+  def per_authorization: per_authorization = "per_authorization".asInstanceOf[per_authorization]
+  @scala.inline
   def per_unit: per_unit = "per_unit".asInstanceOf[per_unit]
   @scala.inline
   def person: person = "person".asInstanceOf[person]
@@ -2153,6 +2409,8 @@ object stripeStrings {
   def personDOTdeleted: personDOTdeleted = "person.deleted".asInstanceOf[personDOTdeleted]
   @scala.inline
   def personDOTupdated: personDOTupdated = "person.updated".asInstanceOf[personDOTupdated]
+  @scala.inline
+  def physical: physical = "physical".asInstanceOf[physical]
   @scala.inline
   def pl: pl = "pl".asInstanceOf[pl]
   @scala.inline
@@ -2216,11 +2474,15 @@ object stripeStrings {
   @scala.inline
   def refund: refund = "refund".asInstanceOf[refund]
   @scala.inline
+  def refund_reversal: refund_reversal = "refund_reversal".asInstanceOf[refund_reversal]
+  @scala.inline
   def refunded: refunded = "refunded".asInstanceOf[refunded]
   @scala.inline
   def refunded_as_fraud: refunded_as_fraud = "refunded_as_fraud".asInstanceOf[refunded_as_fraud]
   @scala.inline
   def refused: refused = "refused".asInstanceOf[refused]
+  @scala.inline
+  def rejectedDOTlisted: rejectedDOTlisted = "rejected.listed".asInstanceOf[rejectedDOTlisted]
   @scala.inline
   def repeating: repeating = "repeating".asInstanceOf[repeating]
   @scala.inline
@@ -2298,6 +2560,8 @@ object stripeStrings {
   @scala.inline
   def setup_intentDOTsucceeded: setup_intentDOTsucceeded = "setup_intent.succeeded".asInstanceOf[setup_intentDOTsucceeded]
   @scala.inline
+  def shipped: shipped = "shipped".asInstanceOf[shipped]
+  @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
   @scala.inline
   def sigmaDOTscheduled_query_runDOTcreated: sigmaDOTscheduled_query_runDOTcreated = "sigma.scheduled_query_run.created".asInstanceOf[sigmaDOTscheduled_query_runDOTcreated]
@@ -2330,7 +2594,11 @@ object stripeStrings {
   @scala.inline
   def sourceDOTtransactionDOTupdated: sourceDOTtransactionDOTupdated = "source.transaction.updated".asInstanceOf[sourceDOTtransactionDOTupdated]
   @scala.inline
+  def spending_limits: spending_limits = "spending_limits".asInstanceOf[spending_limits]
+  @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
+  @scala.inline
+  def stolen: stolen = "stolen".asInstanceOf[stolen]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
@@ -2368,11 +2636,17 @@ object stripeStrings {
   @scala.inline
   def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline
   def sunday: sunday = "sunday".asInstanceOf[sunday]
   @scala.inline
+  def suspected_fraud: suspected_fraud = "suspected_fraud".asInstanceOf[suspected_fraud]
+  @scala.inline
   def sv: sv = "sv".asInstanceOf[sv]
+  @scala.inline
+  def swipe: swipe = "swipe".asInstanceOf[swipe]
   @scala.inline
   def tax: tax = "tax".asInstanceOf[tax]
   @scala.inline
@@ -2385,6 +2659,8 @@ object stripeStrings {
   def tax_rateDOTupdated: tax_rateDOTupdated = "tax_rate.updated".asInstanceOf[tax_rateDOTupdated]
   @scala.inline
   def terms_of_service: terms_of_service = "terms_of_service".asInstanceOf[terms_of_service]
+  @scala.inline
+  def theft: theft = "theft".asInstanceOf[theft]
   @scala.inline
   def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
   @scala.inline
@@ -2442,6 +2718,8 @@ object stripeStrings {
   @scala.inline
   def unspent_receiver_credit: unspent_receiver_credit = "unspent_receiver_credit".asInstanceOf[unspent_receiver_credit]
   @scala.inline
+  def unsubmitted: unsubmitted = "unsubmitted".asInstanceOf[unsubmitted]
+  @scala.inline
   def unverified: unverified = "unverified".asInstanceOf[unverified]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
@@ -2462,6 +2740,8 @@ object stripeStrings {
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
   @scala.inline
+  def virtual: virtual = "virtual".asInstanceOf[virtual]
+  @scala.inline
   def visa_ : visa_ = "visa".asInstanceOf[visa_]
   @scala.inline
   def visa_checkout: visa_checkout = "visa_checkout".asInstanceOf[visa_checkout]
@@ -2478,7 +2758,13 @@ object stripeStrings {
   @scala.inline
   def warning_under_review: warning_under_review = "warning_under_review".asInstanceOf[warning_under_review]
   @scala.inline
+  def webhook_approved: webhook_approved = "webhook_approved".asInstanceOf[webhook_approved]
+  @scala.inline
+  def webhook_declined: webhook_declined = "webhook_declined".asInstanceOf[webhook_declined]
+  @scala.inline
   def webhook_endpoint: webhook_endpoint = "webhook_endpoint".asInstanceOf[webhook_endpoint]
+  @scala.inline
+  def webhook_timeout: webhook_timeout = "webhook_timeout".asInstanceOf[webhook_timeout]
   @scala.inline
   def wechat: wechat = "wechat".asInstanceOf[wechat]
   @scala.inline
@@ -2491,6 +2777,8 @@ object stripeStrings {
   def won: won = "won".asInstanceOf[won]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def yearly: yearly = "yearly".asInstanceOf[yearly]
   @scala.inline
   def zh: zh = "zh".asInstanceOf[zh]
 }

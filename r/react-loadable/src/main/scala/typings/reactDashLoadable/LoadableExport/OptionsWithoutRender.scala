@@ -22,7 +22,7 @@ object OptionsWithoutRender {
   @scala.inline
   def apply[Props](
     loader: () => js.Promise[ComponentType[Props] | Anon_Default[Props]],
-    loading: ComponentType[LoadingComponentProps] | js.Function0[Null],
+    loading: ComponentType[LoadingComponentProps],
     delay: Double | `false` = null,
     modules: js.Array[String] = null,
     timeout: Double | `false` = null,

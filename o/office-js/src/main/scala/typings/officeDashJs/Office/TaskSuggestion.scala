@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
   * The list of tasks suggested in an email message is returned in the taskSuggestions property of the {@link Office.Entities | Entities} object 
   * that is returned when the getEntities or getEntitiesByType method is called on the active item.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

@@ -1,7 +1,7 @@
 
 # Scala.js typings for riot
 
-Typings are for version 4.6.6
+Typings are for version 4.7.1
 
 ## Library description:
 Simple and elegant component-based UI library

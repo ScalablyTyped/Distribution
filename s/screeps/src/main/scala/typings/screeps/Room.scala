@@ -5,6 +5,7 @@ import typings.screeps.screepsNumbers.`false`
 import typings.screeps.screepsNumbers.`true`
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
+import typings.screeps.screepsStrings.deposit
 import typings.screeps.screepsStrings.energy
 import typings.screeps.screepsStrings.exit
 import typings.screeps.screepsStrings.flag
@@ -12,6 +13,7 @@ import typings.screeps.screepsStrings.mineral
 import typings.screeps.screepsStrings.nuke
 import typings.screeps.screepsStrings.powerCreep
 import typings.screeps.screepsStrings.resource
+import typings.screeps.screepsStrings.ruin
 import typings.screeps.screepsStrings.source
 import typings.screeps.screepsStrings.structure
 import typings.screeps.screepsStrings.terrain
@@ -154,7 +156,6 @@ trait Room extends js.Object {
     *  * FIND_SOURCES
     *  * FIND_SOURCES_ACTIVE
     *  * FIND_DROPPED_RESOURCES
-    *  * FIND_DROPPED_ENERGY
     *  * FIND_STRUCTURES
     *  * FIND_MY_STRUCTURES
     *  * FIND_HOSTILE_STRUCTURES
@@ -200,8 +201,8 @@ trait Room extends js.Object {
   /**
     * Returns an array of events happened on the previous tick in this room.
     */
-  def getEventLog(): js.Array[EventItem[EventConstant]] = js.native
-  def getEventLog(raw: Boolean): js.Array[EventItem[EventConstant]] = js.native
+  def getEventLog(): js.Array[EventItem] = js.native
+  def getEventLog(raw: Boolean): js.Array[EventItem] = js.native
   /**
     * Creates a RoomPosition object at the specified location.
     * @param x The X position.
@@ -279,6 +280,8 @@ trait Room extends js.Object {
   ): LookForAtAreaResultArray[ConstructionSite[BuildableStructureConstant], constructionSite] = js.native
   def lookForAtArea(`type`: creep, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Creep, creep] = js.native
   def lookForAtArea(`type`: creep, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Creep, creep] = js.native
+  def lookForAtArea(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Deposit, deposit] = js.native
+  def lookForAtArea(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Deposit, deposit] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], energy] = js.native
   def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[_, exit] = js.native
@@ -293,6 +296,8 @@ trait Room extends js.Object {
   def lookForAtArea(`type`: powerCreep, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[PowerCreep, powerCreep] = js.native
   def lookForAtArea(`type`: resource, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Resource[ResourceConstant], resource] = js.native
   def lookForAtArea(`type`: resource, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Resource[ResourceConstant], resource] = js.native
+  def lookForAtArea(`type`: ruin, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Ruin, ruin] = js.native
+  def lookForAtArea(`type`: ruin, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Ruin, ruin] = js.native
   def lookForAtArea(`type`: source, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Source, source] = js.native
   def lookForAtArea(`type`: source, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Source, source] = js.native
   def lookForAtArea(`type`: structure, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Structure[StructureConstant], structure] = js.native
@@ -316,6 +321,8 @@ trait Room extends js.Object {
   @JSName("lookForAtArea")
   def lookForAtArea_creep(`type`: creep, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Creep, creep] = js.native
   @JSName("lookForAtArea")
+  def lookForAtArea_deposit(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Deposit, deposit] = js.native
+  @JSName("lookForAtArea")
   def lookForAtArea_energy(`type`: energy, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[_, exit] = js.native
@@ -329,6 +336,8 @@ trait Room extends js.Object {
   def lookForAtArea_powerCreep(`type`: powerCreep, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[PowerCreep, powerCreep] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_resource(`type`: resource, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Resource[ResourceConstant], resource] = js.native
+  @JSName("lookForAtArea")
+  def lookForAtArea_ruin(`type`: ruin, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Ruin, ruin] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_source(`type`: source, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Source, source] = js.native
   @JSName("lookForAtArea")
@@ -362,6 +371,12 @@ trait Room extends js.Object {
   def lookForAt_creep(`type`: creep, target: _HasRoomPosition): js.Array[Creep] = js.native
   @JSName("lookForAt")
   def lookForAt_creep(`type`: creep, x: Double, y: Double): js.Array[Creep] = js.native
+  @JSName("lookForAt")
+  def lookForAt_deposit(`type`: deposit, target: RoomPosition): js.Array[Deposit] = js.native
+  @JSName("lookForAt")
+  def lookForAt_deposit(`type`: deposit, target: _HasRoomPosition): js.Array[Deposit] = js.native
+  @JSName("lookForAt")
+  def lookForAt_deposit(`type`: deposit, x: Double, y: Double): js.Array[Deposit] = js.native
   @JSName("lookForAt")
   def lookForAt_energy(`type`: energy, target: RoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
@@ -404,6 +419,12 @@ trait Room extends js.Object {
   def lookForAt_resource(`type`: resource, target: _HasRoomPosition): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_resource(`type`: resource, x: Double, y: Double): js.Array[Resource[ResourceConstant]] = js.native
+  @JSName("lookForAt")
+  def lookForAt_ruin(`type`: ruin, target: RoomPosition): js.Array[Ruin] = js.native
+  @JSName("lookForAt")
+  def lookForAt_ruin(`type`: ruin, target: _HasRoomPosition): js.Array[Ruin] = js.native
+  @JSName("lookForAt")
+  def lookForAt_ruin(`type`: ruin, x: Double, y: Double): js.Array[Ruin] = js.native
   @JSName("lookForAt")
   def lookForAt_source(`type`: source, target: RoomPosition): js.Array[Source] = js.native
   @JSName("lookForAt")

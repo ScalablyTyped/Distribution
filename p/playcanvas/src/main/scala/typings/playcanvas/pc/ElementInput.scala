@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   * @description Create a new pc.ElementInput instance.
   * @param {Element} domElement The DOM element
   * @param {Object} [options] Optional arguments
-  * @param {Object} [options.useMouse] Whether to allow mouse input. Defaults to true.
-  * @param {Object} [options.useTouch] Whether to allow touch input. Defaults to true.
+  * @param {Boolean} [options.useMouse] Whether to allow mouse input. Defaults to true.
+  * @param {Boolean} [options.useTouch] Whether to allow touch input. Defaults to true.
   */
 @JSGlobal("pc.ElementInput")
 @js.native

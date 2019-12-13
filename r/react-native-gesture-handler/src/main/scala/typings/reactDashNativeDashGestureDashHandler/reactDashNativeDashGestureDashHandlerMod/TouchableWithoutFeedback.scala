@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-gesture-handler", "TouchableWithoutFeedback")
 @js.native
 class TouchableWithoutFeedback ()
-  extends Component[TouchableWithoutFeedbackProperties, js.Object, js.Any]
+  extends Component[TouchableWithoutFeedbackProperties | ContainedTouchableProperties, js.Object, js.Any]
 

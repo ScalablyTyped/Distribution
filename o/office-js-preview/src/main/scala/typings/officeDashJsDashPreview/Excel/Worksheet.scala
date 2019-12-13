@@ -56,6 +56,14 @@ class Worksheet () extends ClientObject {
   var context_Worksheet: RequestContext = js.native
   /**
     *
+    * Returns a collection of worksheet-level custom properties.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val customProperties: WorksheetCustomPropertyCollection = js.native
+  /**
+    *
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *

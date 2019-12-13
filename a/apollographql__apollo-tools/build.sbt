@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollographql__apollo-tools"
-version := "0.4.1-9bc7ef"
+version := "0.4.2-6a1cf2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,6 +12,7 @@ trait TransportRequestOptions extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
   var ignore: js.UndefOr[js.Array[Double]] = js.undefined
   var maxRetries: js.UndefOr[Double] = js.undefined
+  var opaqueId: js.UndefOr[String] = js.undefined
   var querystring: js.UndefOr[anyObject] = js.undefined
   var requestTimeout: js.UndefOr[Double | String] = js.undefined
   var warnings: js.UndefOr[js.Array[String]] = js.undefined
@@ -27,6 +28,7 @@ object TransportRequestOptions {
     id: js.Any = null,
     ignore: js.Array[Double] = null,
     maxRetries: Int | Double = null,
+    opaqueId: String = null,
     querystring: anyObject = null,
     requestTimeout: Double | String = null,
     warnings: js.Array[String] = null
@@ -39,6 +41,7 @@ object TransportRequestOptions {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (opaqueId != null) __obj.updateDynamic("opaqueId")(opaqueId.asInstanceOf[js.Any])
     if (querystring != null) __obj.updateDynamic("querystring")(querystring.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

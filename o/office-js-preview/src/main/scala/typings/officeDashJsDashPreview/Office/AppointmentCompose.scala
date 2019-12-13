@@ -22,8 +22,6 @@ trait AppointmentCompose extends ItemCompose {
     * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -48,8 +46,6 @@ trait AppointmentCompose extends ItemCompose {
     * Gets or sets the location of an appointment. The location property returns a {@link Office.Location | Location} object that provides methods that are 
     * used to get and set the location of the appointment.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -66,8 +62,6 @@ trait AppointmentCompose extends ItemCompose {
     * - Get 500 members maximum.
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -120,8 +114,6 @@ trait AppointmentCompose extends ItemCompose {
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -137,8 +129,6 @@ trait AppointmentCompose extends ItemCompose {
     *
     * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
     * the client to UTC for the server.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *

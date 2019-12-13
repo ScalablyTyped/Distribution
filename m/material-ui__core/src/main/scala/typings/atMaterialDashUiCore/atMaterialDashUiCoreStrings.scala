@@ -114,6 +114,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait ConsistentWith extends js.Object
   
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
   sealed trait JS extends js.Object
   
   @js.native
@@ -252,6 +255,9 @@ object atMaterialDashUiCoreStrings {
   
   @js.native
   sealed trait animated extends InputLabelClassKey
+  
+  @js.native
+  sealed trait anonymous extends js.Object
   
   @js.native
   sealed trait asc extends SortDirection
@@ -2055,6 +2061,9 @@ object atMaterialDashUiCoreStrings {
   sealed trait url extends js.Object
   
   @js.native
+  sealed trait `use-credentials` extends js.Object
+  
+  @js.native
   sealed trait variant extends ContextFromPropsKey
   
   @js.native
@@ -2106,6 +2115,8 @@ object atMaterialDashUiCoreStrings {
   def `@global`: `@global` = "@global".asInstanceOf[`@global`]
   @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
@@ -2188,6 +2199,8 @@ object atMaterialDashUiCoreStrings {
   def anchorPosition: anchorPosition = "anchorPosition".asInstanceOf[anchorPosition]
   @scala.inline
   def animated: animated = "animated".asInstanceOf[animated]
+  @scala.inline
+  def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
@@ -3086,6 +3099,8 @@ object atMaterialDashUiCoreStrings {
   def up: up = "up".asInstanceOf[up]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   @scala.inline
   def variant: variant = "variant".asInstanceOf[variant]
   @scala.inline

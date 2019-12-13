@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 object custom extends js.Object {
   val clock_tolerance: js.Symbol = js.native
   val http_options: js.Symbol = js.native
-  def setHttpOptionsDefaults(params: HttpRequestOptions): js.UndefOr[scala.Nothing] = js.native
+  def setHttpOptionsDefaults(params: HttpOptions): js.UndefOr[scala.Nothing] = js.native
 }
 

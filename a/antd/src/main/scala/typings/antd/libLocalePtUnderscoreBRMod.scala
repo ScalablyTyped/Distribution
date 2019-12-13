@@ -16,6 +16,7 @@ object libLocalePtUnderscoreBRMod extends js.Object {
     var Pagination: js.Any = js.native
     var Popconfirm: Anon_CancelTextOkText = js.native
     var Table: Anon_FilterConfirm = js.native
+    var Text: Anon_Copied = js.native
     var TimePicker: Anon_Placeholder = js.native
     var Transfer: Anon_ItemUnit = js.native
     var Upload: Anon_DownloadFile = js.native

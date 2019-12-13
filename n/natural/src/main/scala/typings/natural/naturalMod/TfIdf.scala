@@ -4,10 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("natural", "TfIdf")
 @js.native
-class TfIdf () extends js.Object {
-  def this(deserialized: js.Any) = this()
+trait TfIdf extends js.Object {
   def addDocument(document: String): Unit = js.native
   def addDocument(document: String, key: String): Unit = js.native
   def addDocument(document: String, key: String, restoreCache: Boolean): Unit = js.native

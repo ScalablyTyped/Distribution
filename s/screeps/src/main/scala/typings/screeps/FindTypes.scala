@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FindTypes extends /* key */ NumberDictionary[
-      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone | Deposit | Ruin
     ] {
   var `1`: RoomPosition
    // FIND_EXIT_LEFT
@@ -53,6 +53,10 @@ trait FindTypes extends /* key */ NumberDictionary[
   var `120`: PowerCreep
    // FIND_MY_POWER_CREEPS
   var `121`: PowerCreep
+   // FIND_HOSTILE_POWER_CREEPS
+  var `122`: Deposit
+   // FIND_DEPOSITS
+  var `123`: Ruin
    // FIND_EXIT_TOP
   var `3`: RoomPosition
    // FIND_EXIT_RIGHT
@@ -87,11 +91,13 @@ object FindTypes {
     `119`: PowerCreep,
     `120`: PowerCreep,
     `121`: PowerCreep,
+    `122`: Deposit,
+    `123`: Ruin,
     `3`: RoomPosition,
     `5`: RoomPosition,
     `7`: RoomPosition,
     NumberDictionary: /* key */ NumberDictionary[
-      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone | Deposit | Ruin
     ] = null
   ): FindTypes = {
     val __obj = js.Dynamic.literal()
@@ -118,6 +124,8 @@ object FindTypes {
     __obj.updateDynamic("119")(`119`.asInstanceOf[js.Any])
     __obj.updateDynamic("120")(`120`.asInstanceOf[js.Any])
     __obj.updateDynamic("121")(`121`.asInstanceOf[js.Any])
+    __obj.updateDynamic("122")(`122`.asInstanceOf[js.Any])
+    __obj.updateDynamic("123")(`123`.asInstanceOf[js.Any])
     __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
     __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
     __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])

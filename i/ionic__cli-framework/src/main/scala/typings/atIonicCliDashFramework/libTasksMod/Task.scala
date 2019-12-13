@@ -17,7 +17,6 @@ class Task () extends EventEmitter {
   def this(hasMsgTickInterval: TaskOptions) = this()
   var _msg: String = js.native
   var intervalId: js.UndefOr[Timer] = js.native
-  var msg: String = js.native
   var progressRatio: js.UndefOr[Double] = js.native
   var running: Boolean = js.native
   var tickInterval: js.UndefOr[Double] = js.native
@@ -34,6 +33,8 @@ class Task () extends EventEmitter {
   def emit_tick(name: tick): Boolean = js.native
   def end(): this.type = js.native
   def fail(): this.type = js.native
+  def msg(): String = js.native
+  def msg(msg: String): js.Any = js.native
   @JSName("on")
   def on_clear(name: clear, handler: js.Function0[Unit]): this.type = js.native
   @JSName("on")

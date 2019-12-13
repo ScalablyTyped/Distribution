@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-rules-engine"
-version := "5.0.0-alpha3-201152"
+version := "5.0.0-a2592c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,7 @@ package typings.vegaDashTypings.typesSpecConfigMod
 
 import typings.vegaDashTypings.typesSpecAxisMod.LabelOverlap
 import typings.vegaDashTypings.typesSpecAxisMod.TickCount
+import typings.vegaDashTypings.typesSpecColorMod.Color
 import typings.vegaDashTypings.typesSpecEncodeMod.Orientation
 import typings.vegaDashTypings.typesSpecLayoutMod.LayoutAlign
 import typings.vegaDashTypings.typesSpecLegendMod.BaseLegend
@@ -32,13 +33,13 @@ trait LegendConfig extends BaseLegend {
   /**
     * The maximum allowed length in pixels of color ramp gradient labels.
     */
-  var gradientLabelLimit: js.UndefOr[NumberValue] = js.undefined
+  var gradientLabelLimit: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * Vertical offset in pixels for color ramp gradient labels.
     *
     * __Default value:__ `2`.
     */
-  var gradientLabelOffset: js.UndefOr[NumberValue] = js.undefined
+  var gradientLabelOffset: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * Legend orient group layout parameters.
     */
@@ -46,23 +47,23 @@ trait LegendConfig extends BaseLegend {
   /**
     * Border stroke dash pattern for the full legend.
     */
-  var strokeDash: js.UndefOr[js.Array[Double]] = js.undefined
+  var strokeDash: js.UndefOr[js.Array[Double] | SignalRef] = js.undefined
   /**
     * Border stroke width for the full legend.
     */
-  var strokeWidth: js.UndefOr[NumberValue] = js.undefined
+  var strokeWidth: js.UndefOr[Double | SignalRef] = js.undefined
   /**
     * Default fill color for legend symbols. Only applied if there is no `"fill"` scale color encoding for the legend.
     *
     * __Default value:__ `"transparent"`.
     */
-  var symbolBaseFillColor: js.UndefOr[ColorValue] = js.undefined
+  var symbolBaseFillColor: js.UndefOr[Null | Color | SignalRef] = js.undefined
   /**
     * Default stroke color for legend symbols. Only applied if there is no `"fill"` scale color encoding for the legend.
     *
     * __Default value:__ `"gray"`.
     */
-  var symbolBaseStrokeColor: js.UndefOr[ColorValue] = js.undefined
+  var symbolBaseStrokeColor: js.UndefOr[Null | Color | SignalRef] = js.undefined
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for symbol legends.
     *
@@ -80,8 +81,8 @@ object LegendConfig {
     cornerRadius: NumberValue = null,
     fillColor: ColorValue = null,
     gradientDirection: Orientation = null,
-    gradientLabelLimit: NumberValue = null,
-    gradientLabelOffset: NumberValue = null,
+    gradientLabelLimit: Double | SignalRef = null,
+    gradientLabelOffset: Double | SignalRef = null,
     gradientLength: Double | SignalRef = null,
     gradientOpacity: NumberValue = null,
     gradientStrokeColor: ColorValue = null,
@@ -109,10 +110,10 @@ object LegendConfig {
     padding: NumberValue = null,
     rowPadding: Double | SignalRef = null,
     strokeColor: ColorValue = null,
-    strokeDash: js.Array[Double] = null,
-    strokeWidth: NumberValue = null,
-    symbolBaseFillColor: ColorValue = null,
-    symbolBaseStrokeColor: ColorValue = null,
+    strokeDash: js.Array[Double] | SignalRef = null,
+    strokeWidth: Double | SignalRef = null,
+    symbolBaseFillColor: Color | SignalRef = null,
+    symbolBaseStrokeColor: Color | SignalRef = null,
     symbolDash: DashArrayValue = null,
     symbolDashOffset: NumberValue = null,
     symbolDirection: Orientation = null,

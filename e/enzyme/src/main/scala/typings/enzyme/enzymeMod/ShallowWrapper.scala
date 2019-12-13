@@ -84,6 +84,16 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
   def findWhere(
     predicate: js.Function1[/* wrapper */ ShallowWrapper[_, _, Component[js.Object, js.Object, _]], Boolean]
   ): ShallowWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
+  @JSName("find")
+  def find_props[C2 /* <: Component[js.Object, js.Object, _] */](
+    componentClass: ComponentClass[
+      /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any
+    ]
+  ): ShallowWrapper[
+    /* import warning: importer.ImportType#apply Failed type conversion: C2['props'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: C2['state'] */ js.Any, 
+    C2
+  ] = js.native
   /**
     * If a wrappingComponent was passed in options,
     * this methods returns a ShallowWrapper around the rendered wrappingComponent.

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 trait Anon_AmountHealType extends js.Object {
   var amount: Double
   var healType: EventHealType
-  // EVENT_HEAL
   var targetId: String
 }
 

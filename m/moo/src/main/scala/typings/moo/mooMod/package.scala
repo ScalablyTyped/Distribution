@@ -8,6 +8,6 @@ package object mooMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.RegExp
 
-  type Rules = StringDictionary[RegExp | String | (js.Array[Rule | String]) | Rule]
+  type Rules = StringDictionary[RegExp | String | (js.Array[Rule | String]) | Rule | ErrorRule | FallbackRule]
   type TypeMapper = js.Function1[/* x */ String, String]
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 object atTensorflowTfjsDashCoreStrings {
   @js.native
-  sealed trait `1DOT3DOT2` extends js.Object
+  sealed trait `1DOT4DOT0` extends js.Object
   
   @js.native
   sealed trait `BACKSLASHn  // OpenGL ES does not support round functionDOTBACKSLASHn  // The algorithm is based on banker_quotes roundingDOTBACKSLASHn  float base = floor(x);BACKSLASHn  if ((x - base) < 0DOT5) {BACKSLASHn    return floor(x);BACKSLASHn  } else if ((x - base) > 0DOT5) {BACKSLASHn    return ceil(x);BACKSLASHn  } else {BACKSLASHn    if (mod(base, 2DOT0) == 0DOT0) {BACKSLASHn      return base;BACKSLASHn    } else {BACKSLASHn      return base + 1DOT0;BACKSLASHn    }BACKSLASHn  }BACKSLASHn` extends js.Object
@@ -358,7 +358,7 @@ object atTensorflowTfjsDashCoreStrings {
   sealed trait valid_ extends js.Object
   
   @scala.inline
-  def `1DOT3DOT2`: `1DOT3DOT2` = "1.3.2".asInstanceOf[`1DOT3DOT2`]
+  def `1DOT4DOT0`: `1DOT4DOT0` = "1.4.0".asInstanceOf[`1DOT4DOT0`]
   @scala.inline
   def `BACKSLASHn  // OpenGL ES does not support round functionDOTBACKSLASHn  // The algorithm is based on banker_quotes roundingDOTBACKSLASHn  float base = floor(x);BACKSLASHn  if ((x - base) < 0DOT5) {BACKSLASHn    return floor(x);BACKSLASHn  } else if ((x - base) > 0DOT5) {BACKSLASHn    return ceil(x);BACKSLASHn  } else {BACKSLASHn    if (mod(base, 2DOT0) == 0DOT0) {BACKSLASHn      return base;BACKSLASHn    } else {BACKSLASHn      return base + 1DOT0;BACKSLASHn    }BACKSLASHn  }BACKSLASHn`: `BACKSLASHn  // OpenGL ES does not support round functionDOTBACKSLASHn  // The algorithm is based on banker_quotes roundingDOTBACKSLASHn  float base = floor(x);BACKSLASHn  if ((x - base) < 0DOT5) {BACKSLASHn    return floor(x);BACKSLASHn  } else if ((x - base) > 0DOT5) {BACKSLASHn    return ceil(x);BACKSLASHn  } else {BACKSLASHn    if (mod(base, 2DOT0) == 0DOT0) {BACKSLASHn      return base;BACKSLASHn    } else {BACKSLASHn      return base + 1DOT0;BACKSLASHn    }BACKSLASHn  }BACKSLASHn` = "\n  // OpenGL ES does not support round function.\n  // The algorithm is based on banker's rounding.\n  float base = floor(x);\n  if ((x - base) < 0.5) {\n    return floor(x);\n  } else if ((x - base) > 0.5) {\n    return ceil(x);\n  } else {\n    if (mod(base, 2.0) == 0.0) {\n      return base;\n    } else {\n      return base + 1.0;\n    }\n  }\n".asInstanceOf[`BACKSLASHn  // OpenGL ES does not support round functionDOTBACKSLASHn  // The algorithm is based on banker_quotes roundingDOTBACKSLASHn  float base = floor(x);BACKSLASHn  if ((x - base) < 0DOT5) {BACKSLASHn    return floor(x);BACKSLASHn  } else if ((x - base) > 0DOT5) {BACKSLASHn    return ceil(x);BACKSLASHn  } else {BACKSLASHn    if (mod(base, 2DOT0) == 0DOT0) {BACKSLASHn      return base;BACKSLASHn    } else {BACKSLASHn      return base + 1DOT0;BACKSLASHn    }BACKSLASHn  }BACKSLASHn`]
   @scala.inline

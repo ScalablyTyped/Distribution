@@ -21,5 +21,6 @@ object use extends js.Object {
     * @param className Canonical class name to get a wrapper for.
     */
   def apply(className: String): Wrapper = js.native
+  def apply(className: String, options: UseOptions): Wrapper = js.native
 }
 

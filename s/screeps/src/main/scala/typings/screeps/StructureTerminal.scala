@@ -11,23 +11,25 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StructureTerminal
   extends OwnedStructure[STRUCTURE_TERMINAL]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with AnyStoreStructure {
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.
     */
   var cooldown: Double = js.native
   /**
-    * An object with the storage contents. Each object key is one of the RESOURCE_* constants, values are resources amounts.
+    * A Store object that contains cargo of this structure.
     */
   var store: StoreDefinition = js.native
   /**
     * The total amount of resources the storage can contain.
+    * @deprecated An alias for .store.getCapacity().
     */
   var storeCapacity: Double = js.native
   /**
     * Sends resource to a Terminal in another room with the specified name.
     * @param resourceType One of the RESOURCE_* constants.
-    * @param amount The amount of resources to be sent. The minimum amount is 100.
+    * @param amount The amount of resources to be sent.
     * @param destination The name of the target room. You don't have to gain visibility in this room.
     * @param description The description of the transaction. It is visible to the recipient. The maximum length is 100 characters.
     */

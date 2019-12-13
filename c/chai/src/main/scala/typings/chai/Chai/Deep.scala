@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Deep extends js.Object {
+  @JSName("contain")
+  var contain_Original: Include = js.native
+  @JSName("contains")
+  var contains_Original: Include = js.native
   @JSName("eq")
   var eq_Original: Equal = js.native
   @JSName("equal")
@@ -14,6 +18,8 @@ trait Deep extends js.Object {
   var equals_Original: Equal = js.native
   @JSName("include")
   var include_Original: Include = js.native
+  @JSName("includes")
+  var includes_Original: Include = js.native
   @JSName("members")
   var members_Original: Members = js.native
   var nested: Nested = js.native
@@ -21,6 +27,10 @@ trait Deep extends js.Object {
   var own: Own = js.native
   @JSName("property")
   var property_Original: Property = js.native
+  def contain(value: js.Any): Assertion = js.native
+  def contain(value: js.Any, message: String): Assertion = js.native
+  def contains(value: js.Any): Assertion = js.native
+  def contains(value: js.Any, message: String): Assertion = js.native
   def eq(value: js.Any): Assertion = js.native
   def eq(value: js.Any, message: String): Assertion = js.native
   def equal(value: js.Any): Assertion = js.native
@@ -29,6 +39,8 @@ trait Deep extends js.Object {
   def equals(value: js.Any, message: String): Assertion = js.native
   def include(value: js.Any): Assertion = js.native
   def include(value: js.Any, message: String): Assertion = js.native
+  def includes(value: js.Any): Assertion = js.native
+  def includes(value: js.Any, message: String): Assertion = js.native
   def members(set: js.Array[_]): Assertion = js.native
   def members(set: js.Array[_], message: String): Assertion = js.native
   def property(name: String): Assertion = js.native

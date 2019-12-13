@@ -4,16 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Data extends js.Object {
-  var data: String
-  var id: Double
-  var username: String
+trait Anon_Data extends EventItem {
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_ATTACK] */ js.Any
+  var event: EVENT_ATTACK
+  var objectId: String
 }
 
 object Anon_Data {
   @scala.inline
-  def apply(data: String, id: Double, username: String): Anon_Data = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  def apply(
+    data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_ATTACK] */ js.Any,
+    event: EVENT_ATTACK,
+    objectId: String
+  ): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Data]
   }

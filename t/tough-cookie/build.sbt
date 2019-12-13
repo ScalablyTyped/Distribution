@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tough-cookie"
-version := "2.3-dt-20190117Z-8d3912"
+version := "2.3-dt-20191206Z-8f6096"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,10 +5,9 @@ import typings.rcDashTable.Anon_Children
 import typings.rcDashTable.Anon_ChildrenColumns
 import typings.rcDashTable.Anon_Components
 import typings.rcDashTable.TypeofClassColumnGroup
-import typings.rcDashTable.libInterfaceMod.ColumnType
+import typings.rcDashTable.libColumnMod.ColumnProps
 import typings.rcDashTable.libInterfaceMod.DefaultValueType
-import typings.react.reactMod.FunctionComponent
-import typings.std.Record
+import typings.react.reactMod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +22,7 @@ class default[ValueType] protected () extends Table[ValueType] {
 @JSImport("rc-table/lib/Table", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Column: FunctionComponent[ColumnType[Record[String, _]]] = js.native
+  var Column: FC[ColumnProps] = js.native
   var ColumnGroup: TypeofClassColumnGroup = js.native
   var childContextTypes: Anon_Components = js.native
   var defaultProps: Anon_BodyStyle = js.native

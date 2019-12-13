@@ -60,11 +60,25 @@ class Comment () extends ClientObject {
   val id: String = js.native
   /**
     *
+    * Gets the entities (e.g. people) that are mentioned in comments.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    */
+  val mentions: js.Array[CommentMention] = js.native
+  /**
+    *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
     * [Api set: ExcelApi 1.10]
     */
   val replies: CommentReplyCollection = js.native
+  /**
+    *
+    * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    */
+  val richContent: String = js.native
   /**
     *
     * Deletes the comment and all the connected replies.
@@ -109,5 +123,14 @@ class Comment () extends ClientObject {
     * Whereas the original Excel.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): CommentData = js.native
+  /**
+    *
+    * Updates the comment content with a specially formatted string and a list of mentions.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    *
+    * @param contentWithMentions The content for the comment. This contains a specially formatted string and a list of mentions that will be parsed into the string when displayed by Excel.
+    */
+  def updateMentions(contentWithMentions: CommentRichContent): Unit = js.native
 }
 

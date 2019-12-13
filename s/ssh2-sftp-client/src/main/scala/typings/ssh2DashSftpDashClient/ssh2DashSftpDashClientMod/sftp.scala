@@ -9,6 +9,7 @@ import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.`-`
 import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.d
 import typings.ssh2DashSftpDashClient.ssh2DashSftpDashClientStrings.l
 import typings.ssh2DashStreams.ssh2DashStreamsMod.TransferOptions
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,6 +37,8 @@ trait sftp extends js.Object {
   def get(path: String, dst: ReadableStream): js.Promise[String | ReadableStream | Buffer] = js.native
   def get(path: String, dst: ReadableStream, options: TransferOptions): js.Promise[String | ReadableStream | Buffer] = js.native
   def list(remoteFilePath: String): js.Promise[js.Array[FileInfo]] = js.native
+  def list(remoteFilePath: String, pattern: String): js.Promise[js.Array[FileInfo]] = js.native
+  def list(remoteFilePath: String, pattern: RegExp): js.Promise[js.Array[FileInfo]] = js.native
   def mkdir(remoteFilePath: String): js.Promise[String] = js.native
   def mkdir(remoteFilePath: String, recursive: Boolean): js.Promise[String] = js.native
   def on(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native

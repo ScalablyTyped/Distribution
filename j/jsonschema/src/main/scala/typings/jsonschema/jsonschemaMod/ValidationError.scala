@@ -21,5 +21,6 @@ class ValidationError protected () extends js.Object {
   var name: String = js.native
   var property: String = js.native
   var schema: String | Schema = js.native
+  var stack: String = js.native
 }
 

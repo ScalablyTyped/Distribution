@@ -27,19 +27,19 @@ object distTypesComponentsInnerDashProxiesMod extends js.Object {
   val IonBackButtonInner: ForwardRefExoticComponent[
     (Pick[IonBackButton, disabled | text | color | mode | `type` | defaultHref]) with (Pick[
       HTMLAttributes[HTMLIonBackButtonElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonBackButtonElement]
   ] = js.native
   val IonRouterOutletInner: ForwardRefExoticComponent[
     IonRouterOutlet with (Pick[
       HTMLAttributes[HTMLIonRouterOutletElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonRouterOutletElement]
   ] = js.native
   val IonTabBarInner: ForwardRefExoticComponent[
     IonTabBar with (Pick[
       HTMLAttributes[HTMLIonTabBarElement], 
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 253 */ js.Any
     ]) with IonicReactProps with RefAttributes[HTMLIonTabBarElement]
   ] = js.native
 }

@@ -17,6 +17,7 @@ import typings.atUifabricFoundation.atUifabricFoundationStrings.execute
 import typings.atUifabricFoundation.atUifabricFoundationStrings.grammar
 import typings.atUifabricFoundation.atUifabricFoundationStrings.grid
 import typings.atUifabricFoundation.atUifabricFoundationStrings.horizontal
+import typings.atUifabricFoundation.atUifabricFoundationStrings.inherit
 import typings.atUifabricFoundation.atUifabricFoundationStrings.link
 import typings.atUifabricFoundation.atUifabricFoundationStrings.list
 import typings.atUifabricFoundation.atUifabricFoundationStrings.listbox
@@ -47,6 +48,7 @@ import typings.atUifabricFoundation.atUifabricFoundationStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -280,7 +282,7 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
@@ -288,7 +290,7 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -418,7 +420,7 @@ trait DetailedHTMLPropsHTMLAttributesanyany extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -489,7 +491,7 @@ object DetailedHTMLPropsHTMLAttributesanyany {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -666,7 +668,7 @@ object DetailedHTMLPropsHTMLAttributesanyany {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

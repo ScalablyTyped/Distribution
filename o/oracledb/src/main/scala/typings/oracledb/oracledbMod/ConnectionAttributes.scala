@@ -1,5 +1,7 @@
 package typings.oracledb.oracledbMod
 
+import typings.node.Buffer
+import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -77,10 +79,24 @@ trait ConnectionAttributes extends js.Object {
     */
   var privilege: js.UndefOr[Double] = js.undefined
   /**
+    * Allows a connection to be established directly to a database shard.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
+    * @since 4.1
+    */
+  var shardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
+  /**
     * The number of statements to be cached in the statement cache of each connection.
     * This optional property may be used to override the oracledb.stmtCacheSize property.
     */
   var stmtCacheSize: js.UndefOr[Double] = js.undefined
+  /**
+    * Allows a connection to be established directly to a database shard.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#sharding
+    * @since 4.1
+    */
+  var superShardingKey: js.UndefOr[js.Array[String | Double | Date | Buffer]] = js.undefined
   /**
     * Used when getting a connection from a connection pool.
     * Indicates the tag that a connection returned from a connection pool should have.
@@ -108,7 +124,9 @@ object ConnectionAttributes {
     password: String = null,
     poolAlias: String = null,
     privilege: Int | Double = null,
+    shardingKey: js.Array[String | Double | Date | Buffer] = null,
     stmtCacheSize: Int | Double = null,
+    superShardingKey: js.Array[String | Double | Date | Buffer] = null,
     tag: String = null,
     user: String = null
   ): ConnectionAttributes = {
@@ -123,7 +141,9 @@ object ConnectionAttributes {
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias.asInstanceOf[js.Any])
     if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
+    if (shardingKey != null) __obj.updateDynamic("shardingKey")(shardingKey.asInstanceOf[js.Any])
     if (stmtCacheSize != null) __obj.updateDynamic("stmtCacheSize")(stmtCacheSize.asInstanceOf[js.Any])
+    if (superShardingKey != null) __obj.updateDynamic("superShardingKey")(superShardingKey.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAttributes]

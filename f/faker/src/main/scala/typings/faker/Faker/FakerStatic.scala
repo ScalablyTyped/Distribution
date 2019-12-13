@@ -38,6 +38,7 @@ trait FakerStatic extends js.Object {
   var name: Anon_FindName
   var phone: Anon_Format
   var random: Anon_AlphaNumeric
+  var seedValue: js.UndefOr[Double] = js.undefined
   var system: Anon_CommonFileExt
   var vehicle: Anon_ColorFuel
   def fake(str: String): String
@@ -68,10 +69,11 @@ object FakerStatic {
     seed: Double => Unit,
     setLocale: String => Unit,
     system: Anon_CommonFileExt,
-    vehicle: Anon_ColorFuel
+    vehicle: Anon_ColorFuel,
+    seedValue: Int | Double = null
   ): FakerStatic = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commerce = commerce.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], fake = js.Any.fromFunction1(fake), finance = finance.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], hacker = hacker.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], internet = internet.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], lorem = lorem.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], random = random.asInstanceOf[js.Any], seed = js.Any.fromFunction1(seed), setLocale = js.Any.fromFunction1(setLocale), system = system.asInstanceOf[js.Any], vehicle = vehicle.asInstanceOf[js.Any])
-  
+    if (seedValue != null) __obj.updateDynamic("seedValue")(seedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FakerStatic]
   }
 }

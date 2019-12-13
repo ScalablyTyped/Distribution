@@ -7,12 +7,12 @@ import typings.xstate.libTypesMod.ActionTypes.Cancel
 import typings.xstate.libTypesMod.ActionTypes.DoneInvoke
 import typings.xstate.libTypesMod.ActionTypes.DoneState
 import typings.xstate.libTypesMod.ActionTypes.ErrorCommunication
+import typings.xstate.libTypesMod.ActionTypes.ErrorCustom
 import typings.xstate.libTypesMod.ActionTypes.ErrorExecution
 import typings.xstate.libTypesMod.ActionTypes.ErrorPlatform
 import typings.xstate.libTypesMod.ActionTypes.Init
 import typings.xstate.libTypesMod.ActionTypes.Invoke
 import typings.xstate.libTypesMod.ActionTypes.Log
-import typings.xstate.libTypesMod.ActionTypes.NullEvent
 import typings.xstate.libTypesMod.ActionTypes.Pure
 import typings.xstate.libTypesMod.ActionTypes.Raise
 import typings.xstate.libTypesMod.ActionTypes.Send
@@ -46,6 +46,9 @@ object ActionTypes extends js.Object {
   
   @js.native
   sealed trait ErrorCommunication extends ActionTypes
+  
+  @js.native
+  sealed trait ErrorCustom extends ActionTypes
   
   @js.native
   sealed trait ErrorExecution extends ActionTypes
@@ -103,6 +106,9 @@ object ActionTypes extends js.Object {
   /* "error.communication" */ @js.native
   object ErrorCommunication extends TopLevel[ErrorCommunication with String]
   
+  /* "xstate.error" */ @js.native
+  object ErrorCustom extends TopLevel[ErrorCustom with String]
+  
   /* "error.execution" */ @js.native
   object ErrorExecution extends TopLevel[ErrorExecution with String]
   
@@ -119,7 +125,8 @@ object ActionTypes extends js.Object {
   object Log extends TopLevel[Log with String]
   
   /* "" */ @js.native
-  object NullEvent extends TopLevel[NullEvent with String]
+  object NullEvent
+    extends TopLevel[typings.xstate.libTypesMod.ActionTypes.NullEvent with String]
   
   /* "xstate.pure" */ @js.native
   object Pure extends TopLevel[Pure with String]

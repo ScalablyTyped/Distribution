@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "keystonejs__apollo-helpers"
-version := "5.0-dt-20191115Z-ba92cf"
+version := "5.0-dt-20191115Z-0d8602"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-5c00d3",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-3ec72b",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-dbbefd",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b2c6f4",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-7b0398",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-051e33",
   "org.scalablytyped" %%% "graphql" % "14.5.8-92eff2",
   "org.scalablytyped" %%% "keystonejs__fields" % "5.1-dt-20191115Z-7ad2af",
-  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191115Z-4cc2da",
+  "org.scalablytyped" %%% "keystonejs__keystone" % "5.2-dt-20191115Z-a09dc2",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-f2210d",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

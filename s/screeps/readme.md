@@ -1,7 +1,7 @@
 
 # Scala.js typings for screeps
 
-Typings are for version 2.5
+Typings are for version 3.0
 
 ## Library description:
 A standalone server for programming game Screeps

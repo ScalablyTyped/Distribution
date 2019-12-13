@@ -1,6 +1,6 @@
 package typings.atFirebaseMessaging
 
-import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseMessaging.distSrcInterfacesInternalDashServicesMod.FirebaseInternalServices
 import typings.atFirebaseMessaging.distSrcInterfacesTokenDashDetailsMod.TokenDetails
 import typings.atFirebaseMessaging.distSrcModelsDbDashInterfaceMod.DbInterface
 import scala.scalajs.js
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 object distSrcModelsTokenDashDetailsDashModelMod extends js.Object {
   @js.native
   class TokenDetailsModel protected () extends DbInterface {
-    def this(app: FirebaseApp) = this()
-    val app: js.Any = js.native
+    def this(services: FirebaseInternalServices) = this()
+    val services: js.Any = js.native
     /**
       * This method deletes details of the current FCM token.
       * It's returning a promise in case we need to move to an async

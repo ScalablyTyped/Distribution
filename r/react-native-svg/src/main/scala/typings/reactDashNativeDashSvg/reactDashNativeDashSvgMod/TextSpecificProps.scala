@@ -23,6 +23,7 @@ trait TextSpecificProps
      with ResponderProps
      with TouchableProps
      with DefinitionProps
+     with CommonMarkerProps
      with CommonMaskProps
      with FontProps {
   var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
@@ -62,6 +63,10 @@ object TextSpecificProps {
     kerning: NumberProp = null,
     lengthAdjust: LengthAdjust = null,
     letterSpacing: NumberProp = null,
+    marker: String = null,
+    markerEnd: String = null,
+    markerMid: String = null,
+    markerStart: String = null,
     mask: String = null,
     onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
@@ -138,6 +143,10 @@ object TextSpecificProps {
     if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
     if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust.asInstanceOf[js.Any])
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
+    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
+    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))

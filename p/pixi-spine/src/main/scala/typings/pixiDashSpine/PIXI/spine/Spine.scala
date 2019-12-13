@@ -20,6 +20,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Spine protected () extends js.Object {
   def this(spineData: SkeletonData) = this()
+  var _autoUpdate: js.Any = js.native
+  var _visible: js.Any = js.native
   var autoUpdate: Boolean = js.native
   val delayLimit: Double = js.native
   var lastTime: Double = js.native
@@ -38,6 +40,7 @@ class Spine protected () extends js.Object {
   ] = js.native
   var tint: Double = js.native
   var tintRgb: ArrayLike[Double] = js.native
+  var visible: Boolean = js.native
   def autoUpdateTransform(): Unit = js.native
   def createGraphics(slot: Slot, clip: ClippingAttachment): js.Any = js.native
   def createMesh(slot: Slot, attachment: MeshAttachment): SpineMesh = js.native

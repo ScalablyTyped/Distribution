@@ -42,7 +42,10 @@ class Screen protected () extends NodeWithEvents {
     * Relative bottom offset, always zero.
     */
   var bottom: TPosition = js.native
-  var cleanSides: js.Any = js.native
+  /**
+    * Array of `Element` instances that may receive click/mouse events.
+    */
+  var clickable: js.Array[BlessedElement] = js.native
   /**
     * Same as screen.width.
     */
@@ -83,7 +86,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * Whether the focused element grabs all keypresses.
     */
-  var grabKeys: js.Any = js.native
+  var grabKeys: Boolean = js.native
   /**
     * Height of the screen (same as program.rows).
     */
@@ -91,7 +94,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * The currently hovered element. Only set if mouse events are bound.
     */
-  var hover: js.Any = js.native
+  var hover: BlessedElement = js.native
   /**
     * Normally, dockable borders will not dock if the colors or attributes are different. This option
     * will allow them to dock regardless. It may produce some odd looking multi-colored borders though.
@@ -107,6 +110,10 @@ class Screen protected () extends NodeWithEvents {
     * net.Socket if you want to make a program that runs over telnet or something of that nature.
     */
   var input: Writable = js.native
+  /**
+    * Array of `Element` instances that may receive key events.
+    */
+  var keyable: js.Array[BlessedElement] = js.native
   /**
     * Relative left offset, always zero.
     */
@@ -191,6 +198,11 @@ class Screen protected () extends NodeWithEvents {
     */
   def alloc(): Unit = js.native
   /**
+    * Parse the sides of an element to determine whether an element has uniform cells on both sides.
+    * If it does, we can use CSR to optimize scrolling on a scrollable element.
+    */
+  def cleanSides(el: BlessedElement): Boolean = js.native
+  /**
     * Clear any region on the screen.
     */
   def clearRegion(x1: Double, x2: Double, y1: Double, y2: Double): Unit = js.native
@@ -268,7 +280,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * Focus element by offset of focusable elements.
     */
-  def focusOffset(offset: Double): js.Any = js.native
+  def focusOffset(offset: Double): Unit = js.native
   /**
     * Pop element off the focus stack.
     */
@@ -331,7 +343,7 @@ class Screen protected () extends NodeWithEvents {
   /**
     * Set effects based on two events and attributes.
     */
-  def setEffects(el: BlessedElement, fel: BlessedElement, over: js.Any, out: js.Any, effects: js.Any, temp: js.Any): Unit = js.native
+  def setEffects(el: BlessedElement, fel: BlessedElement, over: String, out: String, effects: js.Any, temp: js.Any): Unit = js.native
   /**
     * Reset the terminal to term. Reloads terminfo.
     */

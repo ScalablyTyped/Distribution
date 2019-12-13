@@ -11,9 +11,9 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
   var cond: js.UndefOr[Condition[TContext, TEvent with Anon_TypeTEventType_867072877[TEventType]]] = js.undefined
   var event: TEventType
   var meta: js.UndefOr[MetaObject] = js.undefined
-  var source: StateNode[TContext, _, TEvent]
-  var target: StateNode[TContext, _, TEvent]
-  var transition: TransitionDefinition[TContext, OmniEventObject[TEvent]]
+  var source: StateNode[TContext, _, TEvent, _]
+  var target: StateNode[TContext, _, TEvent, _]
+  var transition: TransitionDefinition[TContext, TEvent]
 }
 
 object Edge {
@@ -21,9 +21,9 @@ object Edge {
   def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
     actions: js.Array[Action[TContext, TEvent]],
     event: TEventType,
-    source: StateNode[TContext, _, TEvent],
-    target: StateNode[TContext, _, TEvent],
-    transition: TransitionDefinition[TContext, OmniEventObject[TEvent]],
+    source: StateNode[TContext, _, TEvent, _],
+    target: StateNode[TContext, _, TEvent, _],
+    transition: TransitionDefinition[TContext, TEvent],
     cond: Condition[TContext, TEvent with Anon_TypeTEventType_867072877[TEventType]] = null,
     meta: MetaObject = null
   ): Edge[TContext, TEvent, TEventType] = {

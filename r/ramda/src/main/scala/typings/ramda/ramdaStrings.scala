@@ -12,9 +12,6 @@ object ramdaStrings {
   sealed trait Boolean extends js.Object
   
   @js.native
-  sealed trait CleanedGaps extends js.Object
-  
-  @js.native
   sealed trait Evolvable extends js.Object
   
   @js.native
@@ -33,13 +30,7 @@ object ramdaStrings {
   sealed trait Object extends js.Object
   
   @js.native
-  sealed trait PartialGaps extends js.Object
-  
-  @js.native
   sealed trait RegExp extends js.Object
-  
-  @js.native
-  sealed trait Static extends js.Object
   
   @js.native
   sealed trait String extends js.Object
@@ -48,17 +39,27 @@ object ramdaStrings {
   sealed trait Undefined extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait applySpec extends js.Object
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait array_ extends js.Object
+  
+  @js.native
+  sealed trait deep extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait flat extends js.Object
+  
+  @js.native
+  sealed trait object_ extends js.Object
   
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
-  @scala.inline
-  def CleanedGaps: CleanedGaps = "CleanedGaps".asInstanceOf[CleanedGaps]
   @scala.inline
   def Evolvable: Evolvable = "Evolvable".asInstanceOf[Evolvable]
   @scala.inline
@@ -72,18 +73,22 @@ object ramdaStrings {
   @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
   @scala.inline
-  def PartialGaps: PartialGaps = "PartialGaps".asInstanceOf[PartialGaps]
-  @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
-  @scala.inline
-  def Static: Static = "Static".asInstanceOf[Static]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline
   def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
   @scala.inline
-  def array: array = "array".asInstanceOf[array]
+  def applySpec: applySpec = "applySpec".asInstanceOf[applySpec]
   @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  def array_ : array_ = "array".asInstanceOf[array_]
+  @scala.inline
+  def deep: deep = "deep".asInstanceOf[deep]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def flat: flat = "flat".asInstanceOf[flat]
+  @scala.inline
+  def object_ : object_ = "object".asInstanceOf[object_]
 }
 

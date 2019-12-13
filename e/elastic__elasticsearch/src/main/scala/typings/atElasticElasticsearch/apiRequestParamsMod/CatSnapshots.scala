@@ -1,5 +1,12 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d (Days)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h (Hours)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m (Minutes)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros (Microseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms (Milliseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos (Nanoseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s (Seconds)`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +19,9 @@ trait CatSnapshots extends Generic {
   var master_timeout: js.UndefOr[String] = js.undefined
   var repository: js.UndefOr[String | js.Array[String]] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
+  var time: js.UndefOr[
+    (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`)
+  ] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -32,6 +42,7 @@ object CatSnapshots {
     repository: String | js.Array[String] = null,
     s: String | js.Array[String] = null,
     source: String = null,
+    time: (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`) = null,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatSnapshots = {
     val __obj = js.Dynamic.literal()
@@ -49,6 +60,7 @@ object CatSnapshots {
     if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatSnapshots]
   }

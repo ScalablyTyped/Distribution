@@ -16,15 +16,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object distTypesComponentsNavigationIonBackButtonMod extends js.Object {
   @js.native
-  class IonBackButton protected () extends Anon_CallbackClickButton {
+  class IonBackButton protected () extends Anon_Callback {
     def this(props: Props) = this()
     def this(props: Props, context: js.Any) = this()
   }
   
   @js.native
   object IonBackButton
-    extends Instantiable2[/* props */ Props, /* context */ js.Any, Anon_CallbackClickButton]
-       with Instantiable1[/* props */ Props, Anon_CallbackClickButton] {
+    extends Instantiable2[/* props */ Props, /* context */ js.Any, Anon_Callback]
+       with Instantiable1[/* props */ Props, Anon_Callback] {
     val contextType: Context[NavContextState] = js.native
     val displayName: String = js.native
   }

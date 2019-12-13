@@ -29,7 +29,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps because var conflicts: as, children, className, disabled, error, `inline`. Inlined content, control, label, required, `type`, width */ trait StrictFormSelectProps extends StrictSelectProps {
+- typings.semanticDashUiDashReact.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps because var conflicts: as, children, className, disabled, error, `inline`. Inlined content, control, id, label, required, `type`, width */ trait StrictFormSelectProps extends StrictSelectProps {
   /** Shorthand for primary content. */
   var content: js.UndefOr[SemanticShorthandContent] = js.undefined
   /** A FormField control prop. */
@@ -37,6 +37,8 @@ import scala.scalajs.js.annotation._
   /** Individual fields may display an error state along with a message. */
   @JSName("error")
   var error_StrictFormSelectProps: js.UndefOr[js.Any] = js.undefined
+  /** The id of the control */
+  var id: js.UndefOr[Double | String] = js.undefined
   /** Mutually exclusive with children. */
   var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.undefined
   /** A field can show that input is mandatory.  Requires a label. */
@@ -79,6 +81,7 @@ object StrictFormSelectProps {
     fluid: js.UndefOr[Boolean] = js.undefined,
     header: ReactNode = null,
     icon: js.Any = null,
+    id: Double | String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     item: js.UndefOr[Boolean] = js.undefined,
     label: SemanticShorthandItem[HtmlLabelProps] = null,
@@ -155,6 +158,7 @@ object StrictFormSelectProps {
     if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

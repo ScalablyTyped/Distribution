@@ -13,7 +13,7 @@ trait BodyPartDefinition extends js.Object {
     *
     * If the body part is boosted, this property specifies the mineral type which is used for boosting.
     */
-  var boost: js.UndefOr[ResourceConstant] = js.undefined
+  var boost: js.UndefOr[MineralBoostConstant] = js.undefined
   /**
     * The remaining amount of hit points of this body part.
     */
@@ -26,7 +26,7 @@ trait BodyPartDefinition extends js.Object {
 
 object BodyPartDefinition {
   @scala.inline
-  def apply(hits: Double, `type`: BodyPartConstant, boost: ResourceConstant = null): BodyPartDefinition = {
+  def apply(hits: Double, `type`: BodyPartConstant, boost: MineralBoostConstant = null): BodyPartDefinition = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (boost != null) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])

@@ -29,7 +29,10 @@ abstract class NamespaceHelpFormatter[C /* <: ICommand[C, N, M, I, O] */, N /* <
     * @return `true` to keep, `false` to discard
     */
   def filterCommandCallback(meta: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = js.native
+  def getCommandMetadataList(): js.Promise[js.Array[HydratedCommandMetadata[C, N, M, I, O]]] = js.native
   def getNamespaceFullName(): js.Promise[String] = js.native
   def getNamespaceMetadata(): js.Promise[NamespaceMetadata] = js.native
+  /* protected */ def normalizeCommandMetadata(metadata: HydratedCommandMetadata[C, N, M, I, O]): HydratedCommandMetadata[C, N, M, I, O] = js.native
+  /* protected */ def normalizeMetadata(metadata: NamespaceMetadata): NamespaceMetadata = js.native
 }
 

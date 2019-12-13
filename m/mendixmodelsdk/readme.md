@@ -1,7 +1,7 @@
 
 # Scala.js typings for mendixmodelsdk
 
-Typings are for version 4.27.0
+Typings are for version 4.27.1
 
 ## Library description:
 Mendix Model SDK

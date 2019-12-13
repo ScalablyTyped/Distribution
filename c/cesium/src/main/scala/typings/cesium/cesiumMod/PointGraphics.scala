@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.Anon_Color
+import typings.cesium.Anon_ColorDisableDepthTestDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PointGraphics")
 @js.native
 class PointGraphics () extends js.Object {
-  def this(options: Anon_Color) = this()
+  def this(options: Anon_ColorDisableDepthTestDistance) = this()
   var color: Property = js.native
   val definitionChanged: Event[js.Array[_]] = js.native
   var disableDepthTestDistance: Property = js.native

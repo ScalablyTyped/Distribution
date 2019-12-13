@@ -10,6 +10,7 @@ class Animation protected () extends js.Object {
   def this(name: String, timelines: js.Array[Timeline], duration: Double) = this()
   var duration: Double = js.native
   var name: String = js.native
+  var timelineIds: js.Array[Boolean] = js.native
   var timelines: js.Array[Timeline] = js.native
   @JSName("apply")
   def apply(
@@ -22,6 +23,7 @@ class Animation protected () extends js.Object {
     blend: MixBlend,
     direction: MixDirection
   ): Unit = js.native
+  def hasTimeline(id: Double): Boolean = js.native
 }
 
 /* static members */

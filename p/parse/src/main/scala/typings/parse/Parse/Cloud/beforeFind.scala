@@ -1,5 +1,6 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Object
 import typings.parse.Parse.Query
 import scala.scalajs.js
@@ -14,7 +15,7 @@ object beforeFind extends js.Object {
     arg1: js.Any,
     func: js.Function1[
       /* request */ BeforeFindRequest, 
-      (js.Promise[Query[Object[_]] | Unit]) | Query[Object[_]] | Unit
+      (js.Promise[Query[Object[Attributes]] | Unit]) | Query[Object[Attributes]] | Unit
     ]
   ): Unit = js.native
 }

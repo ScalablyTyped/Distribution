@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.visualization.AnnotationChart")
 @js.native
-class AnnotationChart () extends CoreChartBase {
+class AnnotationChart () extends ChartBaseClearable {
   def draw(data: DataTable, options: AnnotationChartOptions): Unit = js.native
+  def draw(data: DataTable, options: AnnotationChartOptions, state: js.Any): Unit = js.native
   def draw(data: DataView, options: AnnotationChartOptions): Unit = js.native
+  def draw(data: DataView, options: AnnotationChartOptions, state: js.Any): Unit = js.native
   def getVisibleChartRange(): Anon_End = js.native
   def hideDataColumns(columnIndexes: js.Array[Double]): Unit = js.native
   def hideDataColumns(columnIndexes: Double): Unit = js.native

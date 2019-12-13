@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.6.0-97cc0e"
+version := "1.6.0-73fe35"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,16 +10,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-069b07",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190717Z-78ad87",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-bf1299",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20190322Z-67a687",
   "org.scalablytyped" %%% "source-map" % "0.7.3-651620",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-7c63f1",
-  "org.scalablytyped" %%% "tslint" % "5.20.1-de3d85",
-  "org.scalablytyped" %%% "typescript" % "3.7.2-91627a",
+  "org.scalablytyped" %%% "tslint" % "5.20.1-4284d1",
+  "org.scalablytyped" %%% "typescript" % "3.7.3-9e3d9a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-40c681",
-  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-f7ef3e",
-  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-05c57b",
+  "org.scalablytyped" %%% "webpack" % "4.41-dt-20191116Z-19b194",
+  "org.scalablytyped" %%% "webpack-sources" % "0.1-dt-20180625Z-155881",
   "org.scalablytyped" %%% "worker-rpc" % "0.1.1-6d9cec")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

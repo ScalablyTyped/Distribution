@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-gesture-handler" : "1.5.1"
+      "react-native-gesture-handler" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-gesture-handler" : "1.5.1"
+      "react-native-gesture-handler" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

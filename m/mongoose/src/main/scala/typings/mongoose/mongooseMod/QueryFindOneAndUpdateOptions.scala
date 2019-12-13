@@ -47,6 +47,7 @@ object QueryFindOneAndUpdateOptions {
     rawResult: js.UndefOr[Boolean] = js.undefined,
     runValidators: js.UndefOr[Boolean] = js.undefined,
     select: js.Any = null,
+    session: ClientSession = null,
     setDefaultsOnInsert: js.UndefOr[Boolean] = js.undefined,
     sort: js.Any = null,
     strict: Boolean | String = null,
@@ -63,6 +64,7 @@ object QueryFindOneAndUpdateOptions {
     if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.asInstanceOf[js.Any])
     if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])

@@ -112,7 +112,7 @@ object runtime extends js.Object {
     allProps: js.Any
   ): Unit = js.native
   def rpcKeepAlive(): js.Function0[Unit] = js.native
-  def runInPulumiStack(init: js.Function0[_]): js.Promise[js.UndefOr[Inputs]] = js.native
+  def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native
   def serialize(): Boolean = js.native
   def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = js.native
   def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = js.native

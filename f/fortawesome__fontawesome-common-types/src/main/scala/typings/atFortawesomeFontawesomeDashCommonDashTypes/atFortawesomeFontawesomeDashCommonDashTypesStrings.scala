@@ -53,6 +53,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait affiliatetheme extends IconName
   
   @js.native
+  sealed trait `air-conditioner` extends IconName
+  
+  @js.native
   sealed trait `air-freshener` extends IconName
   
   @js.native
@@ -81,6 +84,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait alicorn extends IconName
+  
+  @js.native
+  sealed trait alien extends IconName
+  
+  @js.native
+  sealed trait `alien-monster` extends IconName
   
   @js.native
   sealed trait `align-center` extends IconName
@@ -431,6 +440,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `bags-shopping` extends IconName
   
   @js.native
+  sealed trait bahai extends IconName
+  
+  @js.native
   sealed trait `balance-scale` extends IconName
   
   @js.native
@@ -521,6 +533,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait bed extends IconName
   
   @js.native
+  sealed trait `bed-alt` extends IconName
+  
+  @js.native
+  sealed trait `bed-bunk` extends IconName
+  
+  @js.native
+  sealed trait `bed-empty` extends IconName
+  
+  @js.native
   sealed trait beer extends IconName
   
   @js.native
@@ -534,6 +555,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `bell-exclamation` extends IconName
+  
+  @js.native
+  sealed trait `bell-on` extends IconName
   
   @js.native
   sealed trait `bell-plus` extends IconName
@@ -606,6 +630,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait blind extends IconName
+  
+  @js.native
+  sealed trait blinds extends IconName
+  
+  @js.native
+  sealed trait `blinds-open` extends IconName
+  
+  @js.native
+  sealed trait `blinds-raised` extends IconName
   
   @js.native
   sealed trait blog extends IconName
@@ -923,6 +956,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `camera-alt` extends IconName
   
   @js.native
+  sealed trait `camera-home` extends IconName
+  
+  @js.native
   sealed trait `camera-movie` extends IconName
   
   @js.native
@@ -992,6 +1028,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `car-wash` extends IconName
   
   @js.native
+  sealed trait caravan extends IconName
+  
+  @js.native
+  sealed trait `caravan-alt` extends IconName
+  
+  @js.native
   sealed trait `caret-circle-down` extends IconName
   
   @js.native
@@ -1047,6 +1089,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait cat extends IconName
+  
+  @js.native
+  sealed trait `cat-space` extends IconName
   
   @js.native
   sealed trait cauldron extends IconName
@@ -1415,6 +1460,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait coffee extends IconName
   
   @js.native
+  sealed trait `coffee-pot` extends IconName
+  
+  @js.native
   sealed trait `coffee-togo` extends IconName
   
   @js.native
@@ -1434,6 +1482,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait columns extends IconName
+  
+  @js.native
+  sealed trait comet extends IconName
   
   @js.native
   sealed trait comment extends IconName
@@ -2186,6 +2237,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait fan extends IconName
   
   @js.native
+  sealed trait `fan-table` extends IconName
+  
+  @js.native
   sealed trait `fantasy-flight-games` extends IconName
   
   @js.native
@@ -2202,6 +2256,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `fast-forward` extends IconName
+  
+  @js.native
+  sealed trait faucet extends IconName
+  
+  @js.native
+  sealed trait `faucet-drip` extends IconName
   
   @js.native
   sealed trait fax extends IconName
@@ -2376,6 +2436,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait firefox extends IconName
+  
+  @js.native
+  sealed trait `firefox-browser` extends IconName
   
   @js.native
   sealed trait fireplace extends IconName
@@ -2570,6 +2633,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `galactic-senate` extends IconName
   
   @js.native
+  sealed trait galaxy extends IconName
+  
+  @js.native
   sealed trait `game-board` extends IconName
   
   @js.native
@@ -2583,6 +2649,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `gamepad-alt` extends IconName
+  
+  @js.native
+  sealed trait garage extends IconName
+  
+  @js.native
+  sealed trait `garage-car` extends IconName
+  
+  @js.native
+  sealed trait `garage-open` extends IconName
   
   @js.native
   sealed trait `gas-pump` extends IconName
@@ -2984,9 +3059,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `hat-wizard` extends IconName
   
   @js.native
-  sealed trait haykal extends IconName
-  
-  @js.native
   sealed trait hdd extends IconName
   
   @js.native
@@ -3033,6 +3105,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait heartbeat extends IconName
+  
+  @js.native
+  sealed trait heat extends IconName
   
   @js.native
   sealed trait helicopter extends IconName
@@ -3149,10 +3224,28 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `hourglass-start` extends IconName
   
   @js.native
+  sealed trait house extends IconName
+  
+  @js.native
   sealed trait `house-damage` extends IconName
   
   @js.native
+  sealed trait `house-day` extends IconName
+  
+  @js.native
   sealed trait `house-flood` extends IconName
+  
+  @js.native
+  sealed trait `house-leave` extends IconName
+  
+  @js.native
+  sealed trait `house-night` extends IconName
+  
+  @js.native
+  sealed trait `house-return` extends IconName
+  
+  @js.native
+  sealed trait `house-signal` extends IconName
   
   @js.native
   sealed trait houzz extends IconName
@@ -3198,6 +3291,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `id-card-alt` extends IconName
+  
+  @js.native
+  sealed trait ideal extends IconName
   
   @js.native
   sealed trait igloo extends IconName
@@ -3398,6 +3494,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait lamp extends IconName
   
   @js.native
+  sealed trait `lamp-desk` extends IconName
+  
+  @js.native
+  sealed trait `lamp-floor` extends IconName
+  
+  @js.native
   sealed trait landmark extends IconName
   
   @js.native
@@ -3489,6 +3591,18 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `life-ring` extends IconName
+  
+  @js.native
+  sealed trait `light-ceiling` extends IconName
+  
+  @js.native
+  sealed trait `light-switch` extends IconName
+  
+  @js.native
+  sealed trait `light-switch-off` extends IconName
+  
+  @js.native
+  sealed trait `light-switch-on` extends IconName
   
   @js.native
   sealed trait lightbulb extends IconName
@@ -3788,6 +3902,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait meteor extends IconName
   
   @js.native
+  sealed trait microblog extends IconName
+  
+  @js.native
   sealed trait microchip extends IconName
   
   @js.native
@@ -3810,6 +3927,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait microsoft extends IconName
+  
+  @js.native
+  sealed trait microwave extends IconName
   
   @js.native
   sealed trait `mind-share` extends IconName
@@ -4055,6 +4175,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait outdent extends IconName
   
   @js.native
+  sealed trait outlet extends IconName
+  
+  @js.native
+  sealed trait oven extends IconName
+  
+  @js.native
   sealed trait overline extends IconName
   
   @js.native
@@ -4286,6 +4412,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `pied-piper-pp` extends IconName
   
   @js.native
+  sealed trait `pied-piper-square` extends IconName
+  
+  @js.native
   sealed trait pig extends IconName
   
   @js.native
@@ -4325,6 +4454,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `plane-departure` extends IconName
   
   @js.native
+  sealed trait `planet-moon` extends IconName
+  
+  @js.native
+  sealed trait `planet-ringed` extends IconName
+  
+  @js.native
   sealed trait play extends IconName
   
   @js.native
@@ -4361,6 +4496,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `podium-star` extends IconName
   
   @js.native
+  sealed trait `police-box` extends IconName
+  
+  @js.native
   sealed trait poll extends IconName
   
   @js.native
@@ -4380,6 +4518,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait popcorn extends IconName
+  
+  @js.native
+  sealed trait `portal-enter` extends IconName
+  
+  @js.native
+  sealed trait `portal-exit` extends IconName
   
   @js.native
   sealed trait portrait extends IconName
@@ -4487,6 +4631,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait racquet extends IconName
   
   @js.native
+  sealed trait radar extends IconName
+  
+  @js.native
   sealed trait radiation extends IconName
   
   @js.native
@@ -4518,6 +4665,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait ravelry extends IconName
+  
+  @js.native
+  sealed trait raygun extends IconName
   
   @js.native
   sealed trait react extends IconName
@@ -4569,6 +4719,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `redo-alt` extends IconName
+  
+  @js.native
+  sealed trait refrigerator extends IconName
   
   @js.native
   sealed trait registered extends IconName
@@ -4638,6 +4791,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait rocket extends IconName
+  
+  @js.native
+  sealed trait `rocket-launch` extends IconName
   
   @js.native
   sealed trait rocketchat extends IconName
@@ -4820,6 +4976,21 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `send-backward` extends IconName
   
   @js.native
+  sealed trait sensor extends IconName
+  
+  @js.native
+  sealed trait `sensor-alert` extends IconName
+  
+  @js.native
+  sealed trait `sensor-fire` extends IconName
+  
+  @js.native
+  sealed trait `sensor-on` extends IconName
+  
+  @js.native
+  sealed trait `sensor-smoke` extends IconName
+  
+  @js.native
   sealed trait server extends IconName
   
   @js.native
@@ -4979,6 +5150,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait simplybuilt extends IconName
   
   @js.native
+  sealed trait siren extends IconName
+  
+  @js.native
+  sealed trait `siren-on` extends IconName
+  
+  @js.native
   sealed trait sistrix extends IconName
   
   @js.native
@@ -5123,6 +5300,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `solar-panel` extends IconName
   
   @js.native
+  sealed trait `solar-system` extends IconName
+  
+  @js.native
   sealed trait sort extends IconName
   
   @js.native
@@ -5151,6 +5331,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `sort-amount-up-alt` extends IconName
+  
+  @js.native
+  sealed trait `sort-circle` extends IconName
+  
+  @js.native
+  sealed trait `sort-circle-down` extends IconName
+  
+  @js.native
+  sealed trait `sort-circle-up` extends IconName
   
   @js.native
   sealed trait `sort-down` extends IconName
@@ -5210,6 +5399,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `space-shuttle` extends IconName
   
   @js.native
+  sealed trait `space-station-moon` extends IconName
+  
+  @js.native
+  sealed trait `space-station-moon-alt` extends IconName
+  
+  @js.native
   sealed trait spade extends IconName
   
   @js.native
@@ -5253,6 +5448,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `spray-can` extends IconName
+  
+  @js.native
+  sealed trait sprinkler extends IconName
   
   @js.native
   sealed trait square extends IconName
@@ -5312,7 +5510,22 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `star-of-life` extends IconName
   
   @js.native
+  sealed trait `star-shooting` extends IconName
+  
+  @js.native
+  sealed trait starfighter extends IconName
+  
+  @js.native
+  sealed trait `starfighter-alt` extends IconName
+  
+  @js.native
   sealed trait stars extends IconName
+  
+  @js.native
+  sealed trait starship extends IconName
+  
+  @js.native
+  sealed trait `starship-freighter` extends IconName
   
   @js.native
   sealed trait staylinked extends IconName
@@ -5465,7 +5678,16 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait sword extends IconName
   
   @js.native
+  sealed trait `sword-laser` extends IconName
+  
+  @js.native
+  sealed trait `sword-laser-alt` extends IconName
+  
+  @js.native
   sealed trait swords extends IconName
+  
+  @js.native
+  sealed trait `swords-laser` extends IconName
   
   @js.native
   sealed trait symfony extends IconName
@@ -5585,6 +5807,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `telegram-plane` extends IconName
   
   @js.native
+  sealed trait telescope extends IconName
+  
+  @js.native
+  sealed trait `temperature-down` extends IconName
+  
+  @js.native
   sealed trait `temperature-frigid` extends IconName
   
   @js.native
@@ -5595,6 +5823,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `temperature-low` extends IconName
+  
+  @js.native
+  sealed trait `temperature-up` extends IconName
   
   @js.native
   sealed trait `tencent-weibo` extends IconName
@@ -5795,6 +6026,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `traffic-light-stop` extends IconName
   
   @js.native
+  sealed trait trailer extends IconName
+  
+  @js.native
   sealed trait train extends IconName
   
   @js.native
@@ -5805,6 +6039,21 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `transgender-alt` extends IconName
+  
+  @js.native
+  sealed trait transporter extends IconName
+  
+  @js.native
+  sealed trait `transporter-1` extends IconName
+  
+  @js.native
+  sealed trait `transporter-2` extends IconName
+  
+  @js.native
+  sealed trait `transporter-3` extends IconName
+  
+  @js.native
+  sealed trait `transporter-empty` extends IconName
   
   @js.native
   sealed trait trash extends IconName
@@ -5951,6 +6200,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait ubuntu extends IconName
   
   @js.native
+  sealed trait ufo extends IconName
+  
+  @js.native
+  sealed trait `ufo-beam` extends IconName
+  
+  @js.native
   sealed trait uikit extends IconName
   
   @js.native
@@ -5979,6 +6234,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait uniregistry extends IconName
+  
+  @js.native
+  sealed trait unity extends IconName
   
   @js.native
   sealed trait `universal-access` extends IconName
@@ -6018,6 +6276,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait user extends IconName
+  
+  @js.native
+  sealed trait `user-alien` extends IconName
   
   @js.native
   sealed trait `user-alt` extends IconName
@@ -6092,6 +6353,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `user-plus` extends IconName
   
   @js.native
+  sealed trait `user-robot` extends IconName
+  
+  @js.native
   sealed trait `user-secret` extends IconName
   
   @js.native
@@ -6108,6 +6372,9 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait `user-times` extends IconName
+  
+  @js.native
+  sealed trait `user-visor` extends IconName
   
   @js.native
   sealed trait users extends IconName
@@ -6147,6 +6414,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   
   @js.native
   sealed trait vaadin extends IconName
+  
+  @js.native
+  sealed trait vacuum extends IconName
+  
+  @js.native
+  sealed trait `vacuum-robot` extends IconName
   
   @js.native
   sealed trait `value-absolute` extends IconName
@@ -6398,6 +6671,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   sealed trait `window-close` extends IconName
   
   @js.native
+  sealed trait `window-frame` extends IconName
+  
+  @js.native
+  sealed trait `window-frame-open` extends IconName
+  
+  @js.native
   sealed trait `window-maximize` extends IconName
   
   @js.native
@@ -6539,6 +6818,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def affiliatetheme: affiliatetheme = "affiliatetheme".asInstanceOf[affiliatetheme]
   @scala.inline
+  def `air-conditioner`: `air-conditioner` = "air-conditioner".asInstanceOf[`air-conditioner`]
+  @scala.inline
   def `air-freshener`: `air-freshener` = "air-freshener".asInstanceOf[`air-freshener`]
   @scala.inline
   def airbnb: airbnb = "airbnb".asInstanceOf[airbnb]
@@ -6558,6 +6839,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def algolia: algolia = "algolia".asInstanceOf[algolia]
   @scala.inline
   def alicorn: alicorn = "alicorn".asInstanceOf[alicorn]
+  @scala.inline
+  def alien: alien = "alien".asInstanceOf[alien]
+  @scala.inline
+  def `alien-monster`: `alien-monster` = "alien-monster".asInstanceOf[`alien-monster`]
   @scala.inline
   def `align-center`: `align-center` = "align-center".asInstanceOf[`align-center`]
   @scala.inline
@@ -6791,6 +7076,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `bags-shopping`: `bags-shopping` = "bags-shopping".asInstanceOf[`bags-shopping`]
   @scala.inline
+  def bahai: bahai = "bahai".asInstanceOf[bahai]
+  @scala.inline
   def `balance-scale`: `balance-scale` = "balance-scale".asInstanceOf[`balance-scale`]
   @scala.inline
   def `balance-scale-left`: `balance-scale-left` = "balance-scale-left".asInstanceOf[`balance-scale-left`]
@@ -6851,6 +7138,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def bed: bed = "bed".asInstanceOf[bed]
   @scala.inline
+  def `bed-alt`: `bed-alt` = "bed-alt".asInstanceOf[`bed-alt`]
+  @scala.inline
+  def `bed-bunk`: `bed-bunk` = "bed-bunk".asInstanceOf[`bed-bunk`]
+  @scala.inline
+  def `bed-empty`: `bed-empty` = "bed-empty".asInstanceOf[`bed-empty`]
+  @scala.inline
   def beer: beer = "beer".asInstanceOf[beer]
   @scala.inline
   def behance: behance = "behance".asInstanceOf[behance]
@@ -6860,6 +7153,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def bell: bell = "bell".asInstanceOf[bell]
   @scala.inline
   def `bell-exclamation`: `bell-exclamation` = "bell-exclamation".asInstanceOf[`bell-exclamation`]
+  @scala.inline
+  def `bell-on`: `bell-on` = "bell-on".asInstanceOf[`bell-on`]
   @scala.inline
   def `bell-plus`: `bell-plus` = "bell-plus".asInstanceOf[`bell-plus`]
   @scala.inline
@@ -6908,6 +7203,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `blender-phone`: `blender-phone` = "blender-phone".asInstanceOf[`blender-phone`]
   @scala.inline
   def blind: blind = "blind".asInstanceOf[blind]
+  @scala.inline
+  def blinds: blinds = "blinds".asInstanceOf[blinds]
+  @scala.inline
+  def `blinds-open`: `blinds-open` = "blinds-open".asInstanceOf[`blinds-open`]
+  @scala.inline
+  def `blinds-raised`: `blinds-raised` = "blinds-raised".asInstanceOf[`blinds-raised`]
   @scala.inline
   def blog: blog = "blog".asInstanceOf[blog]
   @scala.inline
@@ -7119,6 +7420,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `camera-alt`: `camera-alt` = "camera-alt".asInstanceOf[`camera-alt`]
   @scala.inline
+  def `camera-home`: `camera-home` = "camera-home".asInstanceOf[`camera-home`]
+  @scala.inline
   def `camera-movie`: `camera-movie` = "camera-movie".asInstanceOf[`camera-movie`]
   @scala.inline
   def `camera-polaroid`: `camera-polaroid` = "camera-polaroid".asInstanceOf[`camera-polaroid`]
@@ -7165,6 +7468,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `car-wash`: `car-wash` = "car-wash".asInstanceOf[`car-wash`]
   @scala.inline
+  def caravan: caravan = "caravan".asInstanceOf[caravan]
+  @scala.inline
+  def `caravan-alt`: `caravan-alt` = "caravan-alt".asInstanceOf[`caravan-alt`]
+  @scala.inline
   def `caret-circle-down`: `caret-circle-down` = "caret-circle-down".asInstanceOf[`caret-circle-down`]
   @scala.inline
   def `caret-circle-left`: `caret-circle-left` = "caret-circle-left".asInstanceOf[`caret-circle-left`]
@@ -7202,6 +7509,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `cassette-tape`: `cassette-tape` = "cassette-tape".asInstanceOf[`cassette-tape`]
   @scala.inline
   def cat: cat = "cat".asInstanceOf[cat]
+  @scala.inline
+  def `cat-space`: `cat-space` = "cat-space".asInstanceOf[`cat-space`]
   @scala.inline
   def cauldron: cauldron = "cauldron".asInstanceOf[cauldron]
   @scala.inline
@@ -7445,6 +7754,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def coffee: coffee = "coffee".asInstanceOf[coffee]
   @scala.inline
+  def `coffee-pot`: `coffee-pot` = "coffee-pot".asInstanceOf[`coffee-pot`]
+  @scala.inline
   def `coffee-togo`: `coffee-togo` = "coffee-togo".asInstanceOf[`coffee-togo`]
   @scala.inline
   def coffin: coffin = "coffin".asInstanceOf[coffin]
@@ -7458,6 +7769,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def coins: coins = "coins".asInstanceOf[coins]
   @scala.inline
   def columns: columns = "columns".asInstanceOf[columns]
+  @scala.inline
+  def comet: comet = "comet".asInstanceOf[comet]
   @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
   @scala.inline
@@ -7959,6 +8272,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def fan: fan = "fan".asInstanceOf[fan]
   @scala.inline
+  def `fan-table`: `fan-table` = "fan-table".asInstanceOf[`fan-table`]
+  @scala.inline
   def `fantasy-flight-games`: `fantasy-flight-games` = "fantasy-flight-games".asInstanceOf[`fantasy-flight-games`]
   @scala.inline
   def far: far = "far".asInstanceOf[far]
@@ -7970,6 +8285,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `fast-backward`: `fast-backward` = "fast-backward".asInstanceOf[`fast-backward`]
   @scala.inline
   def `fast-forward`: `fast-forward` = "fast-forward".asInstanceOf[`fast-forward`]
+  @scala.inline
+  def faucet: faucet = "faucet".asInstanceOf[faucet]
+  @scala.inline
+  def `faucet-drip`: `faucet-drip` = "faucet-drip".asInstanceOf[`faucet-drip`]
   @scala.inline
   def fax: fax = "fax".asInstanceOf[fax]
   @scala.inline
@@ -8086,6 +8405,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `fire-smoke`: `fire-smoke` = "fire-smoke".asInstanceOf[`fire-smoke`]
   @scala.inline
   def firefox: firefox = "firefox".asInstanceOf[firefox]
+  @scala.inline
+  def `firefox-browser`: `firefox-browser` = "firefox-browser".asInstanceOf[`firefox-browser`]
   @scala.inline
   def fireplace: fireplace = "fireplace".asInstanceOf[fireplace]
   @scala.inline
@@ -8215,6 +8536,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `galactic-senate`: `galactic-senate` = "galactic-senate".asInstanceOf[`galactic-senate`]
   @scala.inline
+  def galaxy: galaxy = "galaxy".asInstanceOf[galaxy]
+  @scala.inline
   def `game-board`: `game-board` = "game-board".asInstanceOf[`game-board`]
   @scala.inline
   def `game-board-alt`: `game-board-alt` = "game-board-alt".asInstanceOf[`game-board-alt`]
@@ -8224,6 +8547,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
   @scala.inline
   def `gamepad-alt`: `gamepad-alt` = "gamepad-alt".asInstanceOf[`gamepad-alt`]
+  @scala.inline
+  def garage: garage = "garage".asInstanceOf[garage]
+  @scala.inline
+  def `garage-car`: `garage-car` = "garage-car".asInstanceOf[`garage-car`]
+  @scala.inline
+  def `garage-open`: `garage-open` = "garage-open".asInstanceOf[`garage-open`]
   @scala.inline
   def `gas-pump`: `gas-pump` = "gas-pump".asInstanceOf[`gas-pump`]
   @scala.inline
@@ -8491,8 +8820,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `hat-wizard`: `hat-wizard` = "hat-wizard".asInstanceOf[`hat-wizard`]
   @scala.inline
-  def haykal: haykal = "haykal".asInstanceOf[haykal]
-  @scala.inline
   def hdd: hdd = "hdd".asInstanceOf[hdd]
   @scala.inline
   def `head-side`: `head-side` = "head-side".asInstanceOf[`head-side`]
@@ -8524,6 +8851,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `heart-square`: `heart-square` = "heart-square".asInstanceOf[`heart-square`]
   @scala.inline
   def heartbeat: heartbeat = "heartbeat".asInstanceOf[heartbeat]
+  @scala.inline
+  def heat: heat = "heat".asInstanceOf[heat]
   @scala.inline
   def helicopter: helicopter = "helicopter".asInstanceOf[helicopter]
   @scala.inline
@@ -8601,9 +8930,21 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `hourglass-start`: `hourglass-start` = "hourglass-start".asInstanceOf[`hourglass-start`]
   @scala.inline
+  def house: house = "house".asInstanceOf[house]
+  @scala.inline
   def `house-damage`: `house-damage` = "house-damage".asInstanceOf[`house-damage`]
   @scala.inline
+  def `house-day`: `house-day` = "house-day".asInstanceOf[`house-day`]
+  @scala.inline
   def `house-flood`: `house-flood` = "house-flood".asInstanceOf[`house-flood`]
+  @scala.inline
+  def `house-leave`: `house-leave` = "house-leave".asInstanceOf[`house-leave`]
+  @scala.inline
+  def `house-night`: `house-night` = "house-night".asInstanceOf[`house-night`]
+  @scala.inline
+  def `house-return`: `house-return` = "house-return".asInstanceOf[`house-return`]
+  @scala.inline
+  def `house-signal`: `house-signal` = "house-signal".asInstanceOf[`house-signal`]
   @scala.inline
   def houzz: houzz = "houzz".asInstanceOf[houzz]
   @scala.inline
@@ -8634,6 +8975,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `id-card`: `id-card` = "id-card".asInstanceOf[`id-card`]
   @scala.inline
   def `id-card-alt`: `id-card-alt` = "id-card-alt".asInstanceOf[`id-card-alt`]
+  @scala.inline
+  def ideal: ideal = "ideal".asInstanceOf[ideal]
   @scala.inline
   def igloo: igloo = "igloo".asInstanceOf[igloo]
   @scala.inline
@@ -8767,6 +9110,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def lamp: lamp = "lamp".asInstanceOf[lamp]
   @scala.inline
+  def `lamp-desk`: `lamp-desk` = "lamp-desk".asInstanceOf[`lamp-desk`]
+  @scala.inline
+  def `lamp-floor`: `lamp-floor` = "lamp-floor".asInstanceOf[`lamp-floor`]
+  @scala.inline
   def landmark: landmark = "landmark".asInstanceOf[landmark]
   @scala.inline
   def `landmark-alt`: `landmark-alt` = "landmark-alt".asInstanceOf[`landmark-alt`]
@@ -8828,6 +9175,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `level-up-alt`: `level-up-alt` = "level-up-alt".asInstanceOf[`level-up-alt`]
   @scala.inline
   def `life-ring`: `life-ring` = "life-ring".asInstanceOf[`life-ring`]
+  @scala.inline
+  def `light-ceiling`: `light-ceiling` = "light-ceiling".asInstanceOf[`light-ceiling`]
+  @scala.inline
+  def `light-switch`: `light-switch` = "light-switch".asInstanceOf[`light-switch`]
+  @scala.inline
+  def `light-switch-off`: `light-switch-off` = "light-switch-off".asInstanceOf[`light-switch-off`]
+  @scala.inline
+  def `light-switch-on`: `light-switch-on` = "light-switch-on".asInstanceOf[`light-switch-on`]
   @scala.inline
   def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
   @scala.inline
@@ -9027,6 +9382,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def meteor: meteor = "meteor".asInstanceOf[meteor]
   @scala.inline
+  def microblog: microblog = "microblog".asInstanceOf[microblog]
+  @scala.inline
   def microchip: microchip = "microchip".asInstanceOf[microchip]
   @scala.inline
   def microphone: microphone = "microphone".asInstanceOf[microphone]
@@ -9042,6 +9399,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def microscope: microscope = "microscope".asInstanceOf[microscope]
   @scala.inline
   def microsoft: microsoft = "microsoft".asInstanceOf[microsoft]
+  @scala.inline
+  def microwave: microwave = "microwave".asInstanceOf[microwave]
   @scala.inline
   def `mind-share`: `mind-share` = "mind-share".asInstanceOf[`mind-share`]
   @scala.inline
@@ -9205,6 +9564,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def outdent: outdent = "outdent".asInstanceOf[outdent]
   @scala.inline
+  def outlet: outlet = "outlet".asInstanceOf[outlet]
+  @scala.inline
+  def oven: oven = "oven".asInstanceOf[oven]
+  @scala.inline
   def overline: overline = "overline".asInstanceOf[overline]
   @scala.inline
   def `page-break`: `page-break` = "page-break".asInstanceOf[`page-break`]
@@ -9359,6 +9722,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `pied-piper-pp`: `pied-piper-pp` = "pied-piper-pp".asInstanceOf[`pied-piper-pp`]
   @scala.inline
+  def `pied-piper-square`: `pied-piper-square` = "pied-piper-square".asInstanceOf[`pied-piper-square`]
+  @scala.inline
   def pig: pig = "pig".asInstanceOf[pig]
   @scala.inline
   def `piggy-bank`: `piggy-bank` = "piggy-bank".asInstanceOf[`piggy-bank`]
@@ -9385,6 +9750,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `plane-departure`: `plane-departure` = "plane-departure".asInstanceOf[`plane-departure`]
   @scala.inline
+  def `planet-moon`: `planet-moon` = "planet-moon".asInstanceOf[`planet-moon`]
+  @scala.inline
+  def `planet-ringed`: `planet-ringed` = "planet-ringed".asInstanceOf[`planet-ringed`]
+  @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
   def `play-circle`: `play-circle` = "play-circle".asInstanceOf[`play-circle`]
@@ -9409,6 +9778,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `podium-star`: `podium-star` = "podium-star".asInstanceOf[`podium-star`]
   @scala.inline
+  def `police-box`: `police-box` = "police-box".asInstanceOf[`police-box`]
+  @scala.inline
   def poll: poll = "poll".asInstanceOf[poll]
   @scala.inline
   def `poll-h`: `poll-h` = "poll-h".asInstanceOf[`poll-h`]
@@ -9422,6 +9793,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def poop: poop = "poop".asInstanceOf[poop]
   @scala.inline
   def popcorn: popcorn = "popcorn".asInstanceOf[popcorn]
+  @scala.inline
+  def `portal-enter`: `portal-enter` = "portal-enter".asInstanceOf[`portal-enter`]
+  @scala.inline
+  def `portal-exit`: `portal-exit` = "portal-exit".asInstanceOf[`portal-exit`]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   @scala.inline
@@ -9493,6 +9868,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def racquet: racquet = "racquet".asInstanceOf[racquet]
   @scala.inline
+  def radar: radar = "radar".asInstanceOf[radar]
+  @scala.inline
   def radiation: radiation = "radiation".asInstanceOf[radiation]
   @scala.inline
   def `radiation-alt`: `radiation-alt` = "radiation-alt".asInstanceOf[`radiation-alt`]
@@ -9514,6 +9891,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `raspberry-pi`: `raspberry-pi` = "raspberry-pi".asInstanceOf[`raspberry-pi`]
   @scala.inline
   def ravelry: ravelry = "ravelry".asInstanceOf[ravelry]
+  @scala.inline
+  def raygun: raygun = "raygun".asInstanceOf[raygun]
   @scala.inline
   def react: react = "react".asInstanceOf[react]
   @scala.inline
@@ -9548,6 +9927,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def redo: redo = "redo".asInstanceOf[redo]
   @scala.inline
   def `redo-alt`: `redo-alt` = "redo-alt".asInstanceOf[`redo-alt`]
+  @scala.inline
+  def refrigerator: refrigerator = "refrigerator".asInstanceOf[refrigerator]
   @scala.inline
   def registered: registered = "registered".asInstanceOf[registered]
   @scala.inline
@@ -9594,6 +9975,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def robot: robot = "robot".asInstanceOf[robot]
   @scala.inline
   def rocket: rocket = "rocket".asInstanceOf[rocket]
+  @scala.inline
+  def `rocket-launch`: `rocket-launch` = "rocket-launch".asInstanceOf[`rocket-launch`]
   @scala.inline
   def rocketchat: rocketchat = "rocketchat".asInstanceOf[rocketchat]
   @scala.inline
@@ -9715,6 +10098,16 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `send-backward`: `send-backward` = "send-backward".asInstanceOf[`send-backward`]
   @scala.inline
+  def sensor: sensor = "sensor".asInstanceOf[sensor]
+  @scala.inline
+  def `sensor-alert`: `sensor-alert` = "sensor-alert".asInstanceOf[`sensor-alert`]
+  @scala.inline
+  def `sensor-fire`: `sensor-fire` = "sensor-fire".asInstanceOf[`sensor-fire`]
+  @scala.inline
+  def `sensor-on`: `sensor-on` = "sensor-on".asInstanceOf[`sensor-on`]
+  @scala.inline
+  def `sensor-smoke`: `sensor-smoke` = "sensor-smoke".asInstanceOf[`sensor-smoke`]
+  @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline
   def servicestack: servicestack = "servicestack".asInstanceOf[servicestack]
@@ -9821,6 +10214,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def simplybuilt: simplybuilt = "simplybuilt".asInstanceOf[simplybuilt]
   @scala.inline
+  def siren: siren = "siren".asInstanceOf[siren]
+  @scala.inline
+  def `siren-on`: `siren-on` = "siren-on".asInstanceOf[`siren-on`]
+  @scala.inline
   def sistrix: sistrix = "sistrix".asInstanceOf[sistrix]
   @scala.inline
   def sitemap: sitemap = "sitemap".asInstanceOf[sitemap]
@@ -9917,6 +10314,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `solar-panel`: `solar-panel` = "solar-panel".asInstanceOf[`solar-panel`]
   @scala.inline
+  def `solar-system`: `solar-system` = "solar-system".asInstanceOf[`solar-system`]
+  @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   @scala.inline
   def `sort-alpha-down`: `sort-alpha-down` = "sort-alpha-down".asInstanceOf[`sort-alpha-down`]
@@ -9936,6 +10335,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `sort-amount-up`: `sort-amount-up` = "sort-amount-up".asInstanceOf[`sort-amount-up`]
   @scala.inline
   def `sort-amount-up-alt`: `sort-amount-up-alt` = "sort-amount-up-alt".asInstanceOf[`sort-amount-up-alt`]
+  @scala.inline
+  def `sort-circle`: `sort-circle` = "sort-circle".asInstanceOf[`sort-circle`]
+  @scala.inline
+  def `sort-circle-down`: `sort-circle-down` = "sort-circle-down".asInstanceOf[`sort-circle-down`]
+  @scala.inline
+  def `sort-circle-up`: `sort-circle-up` = "sort-circle-up".asInstanceOf[`sort-circle-up`]
   @scala.inline
   def `sort-down`: `sort-down` = "sort-down".asInstanceOf[`sort-down`]
   @scala.inline
@@ -9975,6 +10380,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `space-shuttle`: `space-shuttle` = "space-shuttle".asInstanceOf[`space-shuttle`]
   @scala.inline
+  def `space-station-moon`: `space-station-moon` = "space-station-moon".asInstanceOf[`space-station-moon`]
+  @scala.inline
+  def `space-station-moon-alt`: `space-station-moon-alt` = "space-station-moon-alt".asInstanceOf[`space-station-moon-alt`]
+  @scala.inline
   def spade: spade = "spade".asInstanceOf[spade]
   @scala.inline
   def sparkles: sparkles = "sparkles".asInstanceOf[sparkles]
@@ -10004,6 +10413,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def spotify: spotify = "spotify".asInstanceOf[spotify]
   @scala.inline
   def `spray-can`: `spray-can` = "spray-can".asInstanceOf[`spray-can`]
+  @scala.inline
+  def sprinkler: sprinkler = "sprinkler".asInstanceOf[sprinkler]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
@@ -10043,7 +10454,17 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `star-of-life`: `star-of-life` = "star-of-life".asInstanceOf[`star-of-life`]
   @scala.inline
+  def `star-shooting`: `star-shooting` = "star-shooting".asInstanceOf[`star-shooting`]
+  @scala.inline
+  def starfighter: starfighter = "starfighter".asInstanceOf[starfighter]
+  @scala.inline
+  def `starfighter-alt`: `starfighter-alt` = "starfighter-alt".asInstanceOf[`starfighter-alt`]
+  @scala.inline
   def stars: stars = "stars".asInstanceOf[stars]
+  @scala.inline
+  def starship: starship = "starship".asInstanceOf[starship]
+  @scala.inline
+  def `starship-freighter`: `starship-freighter` = "starship-freighter".asInstanceOf[`starship-freighter`]
   @scala.inline
   def staylinked: staylinked = "staylinked".asInstanceOf[staylinked]
   @scala.inline
@@ -10145,7 +10566,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def sword: sword = "sword".asInstanceOf[sword]
   @scala.inline
+  def `sword-laser`: `sword-laser` = "sword-laser".asInstanceOf[`sword-laser`]
+  @scala.inline
+  def `sword-laser-alt`: `sword-laser-alt` = "sword-laser-alt".asInstanceOf[`sword-laser-alt`]
+  @scala.inline
   def swords: swords = "swords".asInstanceOf[swords]
+  @scala.inline
+  def `swords-laser`: `swords-laser` = "swords-laser".asInstanceOf[`swords-laser`]
   @scala.inline
   def symfony: symfony = "symfony".asInstanceOf[symfony]
   @scala.inline
@@ -10225,6 +10652,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `telegram-plane`: `telegram-plane` = "telegram-plane".asInstanceOf[`telegram-plane`]
   @scala.inline
+  def telescope: telescope = "telescope".asInstanceOf[telescope]
+  @scala.inline
+  def `temperature-down`: `temperature-down` = "temperature-down".asInstanceOf[`temperature-down`]
+  @scala.inline
   def `temperature-frigid`: `temperature-frigid` = "temperature-frigid".asInstanceOf[`temperature-frigid`]
   @scala.inline
   def `temperature-high`: `temperature-high` = "temperature-high".asInstanceOf[`temperature-high`]
@@ -10232,6 +10663,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `temperature-hot`: `temperature-hot` = "temperature-hot".asInstanceOf[`temperature-hot`]
   @scala.inline
   def `temperature-low`: `temperature-low` = "temperature-low".asInstanceOf[`temperature-low`]
+  @scala.inline
+  def `temperature-up`: `temperature-up` = "temperature-up".asInstanceOf[`temperature-up`]
   @scala.inline
   def `tencent-weibo`: `tencent-weibo` = "tencent-weibo".asInstanceOf[`tencent-weibo`]
   @scala.inline
@@ -10365,6 +10798,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `traffic-light-stop`: `traffic-light-stop` = "traffic-light-stop".asInstanceOf[`traffic-light-stop`]
   @scala.inline
+  def trailer: trailer = "trailer".asInstanceOf[trailer]
+  @scala.inline
   def train: train = "train".asInstanceOf[train]
   @scala.inline
   def tram: tram = "tram".asInstanceOf[tram]
@@ -10372,6 +10807,16 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def transgender: transgender = "transgender".asInstanceOf[transgender]
   @scala.inline
   def `transgender-alt`: `transgender-alt` = "transgender-alt".asInstanceOf[`transgender-alt`]
+  @scala.inline
+  def transporter: transporter = "transporter".asInstanceOf[transporter]
+  @scala.inline
+  def `transporter-1`: `transporter-1` = "transporter-1".asInstanceOf[`transporter-1`]
+  @scala.inline
+  def `transporter-2`: `transporter-2` = "transporter-2".asInstanceOf[`transporter-2`]
+  @scala.inline
+  def `transporter-3`: `transporter-3` = "transporter-3".asInstanceOf[`transporter-3`]
+  @scala.inline
+  def `transporter-empty`: `transporter-empty` = "transporter-empty".asInstanceOf[`transporter-empty`]
   @scala.inline
   def trash: trash = "trash".asInstanceOf[trash]
   @scala.inline
@@ -10469,6 +10914,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
   @scala.inline
+  def ufo: ufo = "ufo".asInstanceOf[ufo]
+  @scala.inline
+  def `ufo-beam`: `ufo-beam` = "ufo-beam".asInstanceOf[`ufo-beam`]
+  @scala.inline
   def uikit: uikit = "uikit".asInstanceOf[uikit]
   @scala.inline
   def umbraco: umbraco = "umbraco".asInstanceOf[umbraco]
@@ -10488,6 +10937,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def union: union = "union".asInstanceOf[union]
   @scala.inline
   def uniregistry: uniregistry = "uniregistry".asInstanceOf[uniregistry]
+  @scala.inline
+  def unity: unity = "unity".asInstanceOf[unity]
   @scala.inline
   def `universal-access`: `universal-access` = "universal-access".asInstanceOf[`universal-access`]
   @scala.inline
@@ -10514,6 +10965,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `usd-square`: `usd-square` = "usd-square".asInstanceOf[`usd-square`]
   @scala.inline
   def user: user = "user".asInstanceOf[user]
+  @scala.inline
+  def `user-alien`: `user-alien` = "user-alien".asInstanceOf[`user-alien`]
   @scala.inline
   def `user-alt`: `user-alt` = "user-alt".asInstanceOf[`user-alt`]
   @scala.inline
@@ -10563,6 +11016,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   @scala.inline
   def `user-plus`: `user-plus` = "user-plus".asInstanceOf[`user-plus`]
   @scala.inline
+  def `user-robot`: `user-robot` = "user-robot".asInstanceOf[`user-robot`]
+  @scala.inline
   def `user-secret`: `user-secret` = "user-secret".asInstanceOf[`user-secret`]
   @scala.inline
   def `user-shield`: `user-shield` = "user-shield".asInstanceOf[`user-shield`]
@@ -10574,6 +11029,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `user-tie`: `user-tie` = "user-tie".asInstanceOf[`user-tie`]
   @scala.inline
   def `user-times`: `user-times` = "user-times".asInstanceOf[`user-times`]
+  @scala.inline
+  def `user-visor`: `user-visor` = "user-visor".asInstanceOf[`user-visor`]
   @scala.inline
   def users: users = "users".asInstanceOf[users]
   @scala.inline
@@ -10600,6 +11057,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `utensils-alt`: `utensils-alt` = "utensils-alt".asInstanceOf[`utensils-alt`]
   @scala.inline
   def vaadin: vaadin = "vaadin".asInstanceOf[vaadin]
+  @scala.inline
+  def vacuum: vacuum = "vacuum".asInstanceOf[vacuum]
+  @scala.inline
+  def `vacuum-robot`: `vacuum-robot` = "vacuum-robot".asInstanceOf[`vacuum-robot`]
   @scala.inline
   def `value-absolute`: `value-absolute` = "value-absolute".asInstanceOf[`value-absolute`]
   @scala.inline
@@ -10766,6 +11227,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesStrings {
   def `window-alt`: `window-alt` = "window-alt".asInstanceOf[`window-alt`]
   @scala.inline
   def `window-close`: `window-close` = "window-close".asInstanceOf[`window-close`]
+  @scala.inline
+  def `window-frame`: `window-frame` = "window-frame".asInstanceOf[`window-frame`]
+  @scala.inline
+  def `window-frame-open`: `window-frame-open` = "window-frame-open".asInstanceOf[`window-frame-open`]
   @scala.inline
   def `window-maximize`: `window-maximize` = "window-maximize".asInstanceOf[`window-maximize`]
   @scala.inline

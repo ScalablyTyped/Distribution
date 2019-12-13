@@ -315,6 +315,11 @@ trait QueryParameters extends js.Object {
     */
   var typoTolerance: js.UndefOr[Boolean | min | strict] = js.undefined
   var userData: js.UndefOr[String | js.Object] = js.undefined
+  /**
+    * Associates a certain user token with the current search
+    * https://www.algolia.com/doc/api-reference/api-parameters/userToken/
+    */
+  var userToken: js.UndefOr[String] = js.undefined
 }
 
 object QueryParameters {
@@ -376,7 +381,8 @@ object QueryParameters {
     synonyms: js.UndefOr[Boolean] = js.undefined,
     tagFilters: js.Array[String] = null,
     typoTolerance: Boolean | min | strict = null,
-    userData: String | js.Object = null
+    userData: String | js.Object = null,
+    userToken: String = null
   ): QueryParameters = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
@@ -436,6 +442,7 @@ object QueryParameters {
     if (tagFilters != null) __obj.updateDynamic("tagFilters")(tagFilters.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameters]
   }
 }

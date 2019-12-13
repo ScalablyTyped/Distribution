@@ -20,6 +20,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.filled
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grid
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.horizontal
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.inherit
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.link
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.list
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.listbox
@@ -52,6 +53,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -149,7 +151,7 @@ trait FormControlProps extends js.Object {
   var classes: js.UndefOr[PartialClassNameMapFormControlClassKey] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var component: js.UndefOr[ReactType[FormControlProps]] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
@@ -157,7 +159,7 @@ trait FormControlProps extends js.Object {
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var fullWidth: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -263,7 +265,7 @@ trait FormControlProps extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -337,7 +339,7 @@ object FormControlProps {
     classes: PartialClassNameMapFormControlClassKey = null,
     color: String = null,
     component: ReactType[FormControlProps] = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -522,7 +524,7 @@ object FormControlProps {
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

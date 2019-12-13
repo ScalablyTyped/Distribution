@@ -19,6 +19,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.execute
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grammar
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.grid
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.horizontal
+import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.inherit
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.link
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.list
 import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.listbox
@@ -51,6 +52,7 @@ import typings.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
 import typings.react.reactMod.CompositionEvent
@@ -146,14 +148,14 @@ trait TabIndicatorProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var classes: js.UndefOr[PartialClassNameMapTabIndicatorClassKey] = js.undefined
   var color: secondary | primary | String
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -254,7 +256,7 @@ trait TabIndicatorProps extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: Anon_Left
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -327,7 +329,7 @@ object TabIndicatorProps {
     children: ReactNode = null,
     className: String = null,
     classes: PartialClassNameMapTabIndicatorClassKey = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -502,7 +504,7 @@ object TabIndicatorProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

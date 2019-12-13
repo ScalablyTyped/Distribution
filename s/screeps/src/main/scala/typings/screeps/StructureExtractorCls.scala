@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureExtractor")
 @js.native
 class StructureExtractorCls protected () extends StructureExtractor {
-  def this(id: String) = this()
+  def this(id: Id[StructureExtractor]) = this()
   /**
     * The amount of game ticks until the next harvest action is possible.
     */
@@ -32,7 +32,7 @@ class StructureExtractorCls protected () extends StructureExtractor {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
     */

@@ -1,11 +1,13 @@
 package typings.handsontable.handsontableMod.Handsontable
 
 import typings.handsontable.handsontableMod.Handsontable.wot.OverlayType
+import typings.std.CSSRule
 import typings.std.CSSStyleDeclaration
 import typings.std.Document
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.HTMLIFrameElement
 import typings.std.RegExp
 import typings.std.Window
 import scala.scalajs.js
@@ -31,8 +33,10 @@ trait Dom extends js.Object {
   def getComputedStyle(element: HTMLElement): CSSStyleDeclaration | js.Object = js.native
   def getComputedStyle(element: HTMLElement, rootWindow: Window): CSSStyleDeclaration | js.Object = js.native
   def getCssTransform(element: HTMLElement): Double | Unit = js.native
+  def getFrameElement(frame: Window): HTMLIFrameElement | Null = js.native
   def getParent(element: HTMLElement): HTMLElement | Unit = js.native
   def getParent(element: HTMLElement, level: Double): HTMLElement | Unit = js.native
+  def getParentWindow(frame: Window): Window | Null = js.native
   def getScrollLeft(element: HTMLElement): Double = js.native
   def getScrollLeft(element: HTMLElement, rootWindow: Window): Double = js.native
   def getScrollTop(element: HTMLElement): Double = js.native
@@ -50,6 +54,7 @@ trait Dom extends js.Object {
   def getWindowScrollLeft(rootWindow: Window): Double = js.native
   def getWindowScrollTop(): Double = js.native
   def getWindowScrollTop(rootWindow: Window): Double = js.native
+  def hasAccessToParentWindow(frame: Window): Boolean = js.native
   def hasClass(element: HTMLElement, className: String): Boolean = js.native
   def hasHorizontalScrollbar(element: HTMLElement): Boolean = js.native
   def hasVerticalScrollbar(element: HTMLElement): Boolean = js.native
@@ -65,6 +70,7 @@ trait Dom extends js.Object {
   def isOutsideInput(element: HTMLElement): Boolean = js.native
   def isRightClick(event: Event): Boolean = js.native
   def isVisible(elem: HTMLElement): Boolean = js.native
+  def matchesCSSRules(elem: HTMLElement, rule: CSSRule): Boolean = js.native
   def offset(elem: HTMLElement): js.Object = js.native
   def outerHeight(elem: HTMLElement): Double = js.native
   def outerWidth(element: HTMLElement): Double = js.native

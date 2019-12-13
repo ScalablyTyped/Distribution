@@ -56,7 +56,9 @@ trait Options extends js.Object {
   /**
     * The secret key used to check the signature of the token *or* a *key lookup function*
     */
-  var key: js.UndefOr[String | js.Array[String] | js.Promise[Anon_ExtraInfo]] = js.undefined
+  var key: js.UndefOr[
+    String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[Anon_ExtraInfo]])
+  ] = js.undefined
   /**
     * If you want to set a custom key for your payload token use the
     * `payloadKey` option. To disable payload token set payloadKey to `false` or
@@ -112,7 +114,7 @@ object Options {
     customExtractionFunc: /* request */ Request => String = null,
     errorFunc: /* ctx */ ErrorContext => ErrorContext = null,
     headerKey: String | Boolean = null,
-    key: String | js.Array[String] | js.Promise[Anon_ExtraInfo] = null,
+    key: String | js.Array[String] | (js.Function1[/* decodedToken */ js.Any, js.Promise[Anon_ExtraInfo]]) = null,
     payloadKey: String | Boolean = null,
     responseFunc: (/* request */ Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit]) => Unit = null,
     tokenType: String = null,

@@ -171,6 +171,9 @@ object fridaDashGumStrings {
        with ArmConditionCode
   
   @js.native
+  sealed trait all extends CodeTraps
+  
+  @js.native
   sealed trait anonymous extends UnixSocketType
   
   @js.native
@@ -227,6 +230,9 @@ object fridaDashGumStrings {
   
   @js.native
   sealed trait compile extends StalkerEventType
+  
+  @js.native
+  sealed trait consult extends js.Object
   
   @js.native
   sealed trait cooperative extends SchedulingBehavior
@@ -334,7 +340,9 @@ object fridaDashGumStrings {
   sealed trait darwin extends Platform
   
   @js.native
-  sealed trait default extends NativeABI
+  sealed trait default
+    extends CodeTraps
+       with NativeABI
   
   @js.native
   sealed trait dword extends X86PointerTarget
@@ -1050,6 +1058,9 @@ object fridaDashGumStrings {
   sealed trait `single-step` extends ExceptionType
   
   @js.native
+  sealed trait skip extends js.Object
+  
+  @js.native
   sealed trait sl extends ArmRegister
   
   @js.native
@@ -1554,6 +1565,8 @@ object fridaDashGumStrings {
   @scala.inline
   def al: al = "al".asInstanceOf[al]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   @scala.inline
   def `apsr-nzcvq`: `apsr-nzcvq` = "apsr-nzcvq".asInstanceOf[`apsr-nzcvq`]
@@ -1589,6 +1602,8 @@ object fridaDashGumStrings {
   def common: common = "common".asInstanceOf[common]
   @scala.inline
   def compile: compile = "compile".asInstanceOf[compile]
+  @scala.inline
+  def consult: consult = "consult".asInstanceOf[consult]
   @scala.inline
   def cooperative: cooperative = "cooperative".asInstanceOf[cooperative]
   @scala.inline
@@ -2077,6 +2092,8 @@ object fridaDashGumStrings {
   def `signed-offset`: `signed-offset` = "signed-offset".asInstanceOf[`signed-offset`]
   @scala.inline
   def `single-step`: `single-step` = "single-step".asInstanceOf[`single-step`]
+  @scala.inline
+  def skip: skip = "skip".asInstanceOf[skip]
   @scala.inline
   def sl: sl = "sl".asInstanceOf[sl]
   @scala.inline

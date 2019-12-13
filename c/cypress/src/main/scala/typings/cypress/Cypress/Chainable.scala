@@ -522,6 +522,7 @@ import typings.std.Partial
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.RegExp
+import typings.std.ReturnType
 import typings.std.SecurityPolicyViolationEvent
 import typings.std.Storage
 import typings.std.TouchEvent
@@ -8221,6 +8222,11 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/invoke
     */
   def invoke(functionName: String, args: js.Any*): Chainable[Subject] = js.native
+  /**
+    * Invoke a function in an array of functions.
+    * @see https://on.cypress.io/invoke
+    */
+  def invoke[T /* <: js.Function1[/* repeated */ js.Any, _] */, Subject /* <: js.Array[T] */](index: Double): Chainable[ReturnType[T]] = js.native
   // don't have a way to express return types yet
   /**
     * Get a property’s value on the previously yielded subject.
@@ -8235,6 +8241,13 @@ trait Chainable[Subject] extends js.Object {
   def its[K /* <: String */](propertyName: K): Chainable[
     /* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any
   ] = js.native
+  /**
+    * Get a value by index from an array yielded from the previous command.
+    * @see https://on.cypress.io/its
+    * @example
+    *    cy.wrap(['a', 'b']).its(1).should('equal', 'b')
+    */
+  def its[T, Subject /* <: js.Array[T] */](index: Double): Chainable[T] = js.native
   /**
     * Get the last DOM element within a set of DOM elements.
     *

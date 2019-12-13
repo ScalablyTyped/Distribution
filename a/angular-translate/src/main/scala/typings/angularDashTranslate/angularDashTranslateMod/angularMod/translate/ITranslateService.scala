@@ -92,6 +92,22 @@ trait ITranslateService extends js.Object {
   def isPostCompilingEnabled(): Boolean = js.native
   def isReady(): Boolean = js.native
   def loaderCache(): js.Any = js.native
+  /**
+    * @ngdoc function
+    * @name pascalprecht.translate.$translate#negotiateLocale
+    * @methodOf pascalprecht.translate.$translate
+    *
+    * @description
+    * Returns a language key based on available languages and language aliases. If a
+    * language key cannot be resolved, returns undefined.
+    *
+    * If no or a falsy key is given, returns undefined.
+    *
+    * @param key Language key
+    * @return Language key or undefined if no language key is found.
+    */
+  def negotiateLocale(): js.UndefOr[String] = js.native
+  def negotiateLocale(key: String): js.UndefOr[String] = js.native
   def onReady(): IPromise[Unit] = js.native
   def onReady(fn: js.Function0[Unit]): IPromise[Unit] = js.native
   def preferredLanguage(): String = js.native

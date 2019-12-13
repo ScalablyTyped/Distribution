@@ -21,6 +21,16 @@ trait StrictSearchCategoryProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   /** Shorthand for primary content. */
   var content: js.UndefOr[SemanticShorthandContent] = js.undefined
+  /**
+    * Renders the SearchCategory layout.
+    *
+    * @param {object} categoryContent - The Renderable SearchCategory contents.
+    * @param {object} resultsContent - The Renderable SearchResult contents.
+    * @returns {*} - Renderable SearchCategory layout.
+    */
+  var layoutRenderer: js.UndefOr[
+    js.Function2[/* categoryContent */ ReactElement, /* resultsContent */ ReactElement, ReactElement]
+  ] = js.undefined
   /** Display name. */
   var name: js.UndefOr[String] = js.undefined
   /**
@@ -42,6 +52,7 @@ object StrictSearchCategoryProps {
     children: ReactNode = null,
     className: String = null,
     content: SemanticShorthandContent = null,
+    layoutRenderer: (/* categoryContent */ ReactElement, /* resultsContent */ ReactElement) => ReactElement = null,
     name: String = null,
     renderer: /* props */ SearchCategoryProps => ReactElement = null,
     results: js.Array[ComponentClass[SearchResultProps, ComponentState]] = null
@@ -52,6 +63,7 @@ object StrictSearchCategoryProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (layoutRenderer != null) __obj.updateDynamic("layoutRenderer")(js.Any.fromFunction2(layoutRenderer))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction1(renderer))
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])

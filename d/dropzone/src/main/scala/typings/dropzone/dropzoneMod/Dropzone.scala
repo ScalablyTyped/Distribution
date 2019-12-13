@@ -125,7 +125,9 @@ trait Dropzone extends js.Object {
   @JSName("emit")
   def emit_sendingmultiple(eventName: sendingmultiple, files: js.Array[DropzoneFile], xhr: XMLHttpRequest, formData: FormData): Dropzone = js.native
   @JSName("emit")
-  def emit_success(eventName: success, file: DropzoneFile): Dropzone = js.native
+  def emit_success(eventName: success, file: DropzoneFile, response: String): Dropzone = js.native
+  @JSName("emit")
+  def emit_success(eventName: success, file: DropzoneFile, response: js.Object): Dropzone = js.native
   @JSName("emit")
   def emit_successmultiple(eventName: successmultiple, files: js.Array[DropzoneFile]): Dropzone = js.native
   @JSName("emit")
@@ -211,7 +213,10 @@ trait Dropzone extends js.Object {
     ]
   ): Dropzone = js.native
   @JSName("on")
-  def on_success(eventName: success, callback: js.Function1[/* file */ DropzoneFile, _]): Dropzone = js.native
+  def on_success(
+    eventName: success,
+    callback: js.Function2[/* file */ DropzoneFile, /* response */ js.Object | String, _]
+  ): Dropzone = js.native
   @JSName("on")
   def on_successmultiple(eventName: successmultiple, callback: js.Function1[/* files */ js.Array[DropzoneFile], _]): Dropzone = js.native
   @JSName("on")

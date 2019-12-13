@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "alloy"
-version := "1.14-dt-20191119Z-8137ad"
+version := "1.14-dt-20191119Z-6e0055"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-72186b",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-2d253b",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "titanium" % "8.0-dt-20191119Z-b3ed65",
+  "org.scalablytyped" %%% "titanium" % "8.0-dt-20191202Z-dbf8f9",
   "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-6a6110")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

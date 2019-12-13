@@ -44,7 +44,11 @@ trait ITeachingBubbleProps
     */
   var footerContent: js.UndefOr[String | Element] = js.undefined
   /**
-    * Does the TeachingBubble have a close button in the top right corner?
+    * Whether the TeachingBubble renders close button in the top right corner.
+    */
+  var hasCloseButton: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @deprecated Use `hasCloseButton`.
     */
   var hasCloseIcon: js.UndefOr[Boolean] = js.undefined
   /**
@@ -60,11 +64,11 @@ trait ITeachingBubbleProps
     */
   var headline: js.UndefOr[String] = js.undefined
   /**
-    * An Image for the Teaching Bubble.
+    * An Image for the TeachingBubble.
     */
   var illustrationImage: js.UndefOr[IImageProps] = js.undefined
   /**
-    * Whether or not the Teaching Bubble is wide, with image on the left side.
+    * Whether or not the TeachingBubble is wide, with image on the left side.
     */
   var isWide: js.UndefOr[Boolean] = js.undefined
   /**
@@ -111,6 +115,7 @@ object ITeachingBubbleProps {
     firstFocusableSelector: String | js.Function0[String] = null,
     footerContent: String | Element = null,
     forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
+    hasCloseButton: js.UndefOr[Boolean] = js.undefined,
     hasCloseIcon: js.UndefOr[Boolean] = js.undefined,
     hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined,
     hasSmallHeadline: js.UndefOr[Boolean] = js.undefined,
@@ -139,6 +144,7 @@ object ITeachingBubbleProps {
     if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
     if (footerContent != null) __obj.updateDynamic("footerContent")(footerContent.asInstanceOf[js.Any])
     if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])
     if (!js.isUndefined(hasCloseIcon)) __obj.updateDynamic("hasCloseIcon")(hasCloseIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(hasCondensedHeadline)) __obj.updateDynamic("hasCondensedHeadline")(hasCondensedHeadline.asInstanceOf[js.Any])
     if (!js.isUndefined(hasSmallHeadline)) __obj.updateDynamic("hasSmallHeadline")(hasSmallHeadline.asInstanceOf[js.Any])

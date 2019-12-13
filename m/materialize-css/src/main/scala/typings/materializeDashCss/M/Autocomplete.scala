@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("M.Autocomplete")
 @js.native
-class Autocomplete () extends Component[AutocompleteOptions] {
+class Autocomplete ()
+  extends Component[AutocompleteOptions]
+     with Openable {
   /**
     * Index of the current selected option.
     */
@@ -18,10 +20,12 @@ class Autocomplete () extends Component[AutocompleteOptions] {
     * Number of matching autocomplete options.
     */
   var count: Double = js.native
-  /**
-    * If the autocomplete is open.
-    */
-  var isOpen: Boolean = js.native
+  /* CompleteClass */
+  override var isOpen: Boolean = js.native
+  /* CompleteClass */
+  override def close(): Unit = js.native
+  /* CompleteClass */
+  override def open(): Unit = js.native
   /**
     * Select a specific autocomplete options.
     * @param el Element of the autocomplete option.

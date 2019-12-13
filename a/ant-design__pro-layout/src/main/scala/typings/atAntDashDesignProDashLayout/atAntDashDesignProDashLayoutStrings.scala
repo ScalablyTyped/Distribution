@@ -16,6 +16,9 @@ object atAntDashDesignProDashLayoutStrings {
   sealed trait `en-US` extends js.Object
   
   @js.native
+  sealed trait `it-IT` extends js.Object
+  
+  @js.native
   sealed trait itemRender extends js.Object
   
   @js.native
@@ -42,6 +45,8 @@ object atAntDashDesignProDashLayoutStrings {
   def Fluid: Fluid = "Fluid".asInstanceOf[Fluid]
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
+  @scala.inline
+  def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
   @scala.inline
   def itemRender: itemRender = "itemRender".asInstanceOf[itemRender]
   @scala.inline

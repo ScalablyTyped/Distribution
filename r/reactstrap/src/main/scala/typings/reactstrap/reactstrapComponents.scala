@@ -21,6 +21,8 @@ object reactstrapComponents extends reactstrapProps {
   @scala.inline
   def ButtonGroup[T]: ComponentType[ButtonGroupProps] = js.constructorOf[typings.reactstrap.libButtonGroupMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ButtonGroupProps]]
   @scala.inline
+  def ButtonToggle[T]: ComponentType[ButtonToggleProps] = js.constructorOf[typings.reactstrap.libButtonToggleMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ButtonToggleProps]]
+  @scala.inline
   def ButtonToolbar[T]: ComponentType[ButtonToolbarProps] = js.constructorOf[typings.reactstrap.libButtonToolbarMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[ButtonToolbarProps]]
   @scala.inline
   def Card[T]: ComponentType[CardProps] = js.constructorOf[typings.reactstrap.libCardMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[CardProps]]
@@ -126,6 +128,8 @@ object reactstrapComponents extends reactstrapProps {
   def Navbar[T]: ComponentType[NavbarProps] = js.constructorOf[typings.reactstrap.libNavbarMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[NavbarProps]]
   @scala.inline
   def NavbarBrand[T]: ComponentType[NavbarBrandProps] = js.constructorOf[typings.reactstrap.libNavbarBrandMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[NavbarBrandProps]]
+  @scala.inline
+  def NavbarText[T]: ComponentType[NavbarTextProps] = js.constructorOf[typings.reactstrap.libNavbarTextMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[NavbarTextProps]]
   @scala.inline
   def NavbarToggler[T]: ComponentType[NavbarTogglerProps] = js.constructorOf[typings.reactstrap.libNavbarTogglerMod.default[T]].asInstanceOf[typings.react.reactMod.ComponentType[NavbarTogglerProps]]
   @scala.inline

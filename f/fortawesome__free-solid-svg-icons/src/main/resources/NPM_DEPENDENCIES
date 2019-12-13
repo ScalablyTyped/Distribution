@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fortawesome/free-solid-svg-icons" : "5.11.2"
+      "@fortawesome/free-solid-svg-icons" : "5.12.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@fortawesome/free-solid-svg-icons" : "5.11.2"
+      "@fortawesome/free-solid-svg-icons" : "5.12.0"
     }
   ],
   "compile-devDependencies" : [

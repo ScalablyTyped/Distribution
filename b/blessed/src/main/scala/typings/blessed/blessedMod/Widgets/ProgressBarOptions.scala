@@ -18,40 +18,34 @@ trait ProgressBarOptions extends BoxOptions {
   /**
     * the amount filled (0 - 100).
     */
-  var filled: Double
+  var filled: js.UndefOr[Double] = js.undefined
   /**
     * enable key support.
     */
   @JSName("keys")
-  var keys_ProgressBarOptions: Boolean
+  var keys_ProgressBarOptions: js.UndefOr[Boolean] = js.undefined
   /**
     * enable mouse support.
     */
   @JSName("mouse")
-  var mouse_ProgressBarOptions: Boolean
+  var mouse_ProgressBarOptions: js.UndefOr[Boolean] = js.undefined
   /**
     * can be `horizontal` or `vertical`.
     */
-  var orientation: String
+  var orientation: js.UndefOr[String] = js.undefined
   /**
     * the character to fill the bar with (default is space).
     */
-  var pch: String
+  var pch: js.UndefOr[String] = js.undefined
   /**
     * same as `filled`.
     */
-  var value: Double
+  var value: js.UndefOr[Double] = js.undefined
 }
 
 object ProgressBarOptions {
   @scala.inline
   def apply(
-    filled: Double,
-    keys: Boolean,
-    mouse: Boolean,
-    orientation: String,
-    pch: String,
-    value: Double,
     align: left | center | right = null,
     alwaysScroll: js.UndefOr[Boolean] = js.undefined,
     baseLimit: Int | Double = null,
@@ -66,6 +60,7 @@ object ProgressBarOptions {
     content: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     fg: String = null,
+    filled: Int | Double = null,
     focusable: js.UndefOr[Boolean] = js.undefined,
     focused: BlessedElement = null,
     height: Double | String = null,
@@ -73,11 +68,15 @@ object ProgressBarOptions {
     hoverText: String = null,
     input: js.UndefOr[Boolean] = js.undefined,
     keyable: js.UndefOr[Boolean] = js.undefined,
+    keys: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
     left: TTopLeft = null,
+    mouse: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
+    orientation: String = null,
     padding: Double | Padding = null,
     parent: Node = null,
+    pch: String = null,
     position: Position = null,
     right: TPosition = null,
     screen: Screen = null,
@@ -90,10 +89,11 @@ object ProgressBarOptions {
     top: TTopLeft = null,
     underline: String = null,
     valign: top | middle | bottom = null,
+    value: Int | Double = null,
     vi: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): ProgressBarOptions = {
-    val __obj = js.Dynamic.literal(filled = filled.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], mouse = mouse.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], pch = pch.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysScroll)) __obj.updateDynamic("alwaysScroll")(alwaysScroll.asInstanceOf[js.Any])
     if (baseLimit != null) __obj.updateDynamic("baseLimit")(baseLimit.asInstanceOf[js.Any])
@@ -108,6 +108,7 @@ object ProgressBarOptions {
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (fg != null) __obj.updateDynamic("fg")(fg.asInstanceOf[js.Any])
+    if (filled != null) __obj.updateDynamic("filled")(filled.asInstanceOf[js.Any])
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
     if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
@@ -115,11 +116,15 @@ object ProgressBarOptions {
     if (hoverText != null) __obj.updateDynamic("hoverText")(hoverText.asInstanceOf[js.Any])
     if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (!js.isUndefined(keyable)) __obj.updateDynamic("keyable")(keyable.asInstanceOf[js.Any])
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouse)) __obj.updateDynamic("mouse")(mouse.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (pch != null) __obj.updateDynamic("pch")(pch.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
@@ -132,6 +137,7 @@ object ProgressBarOptions {
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (!js.isUndefined(vi)) __obj.updateDynamic("vi")(vi.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressBarOptions]

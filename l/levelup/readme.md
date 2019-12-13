@@ -1,7 +1,7 @@
 
 # Scala.js typings for levelup
 
-Typings are for version 3.1
+Typings are for version 4.3
 
 ## Library description:
 Fast & simple storage - a Node.js-style LevelDB wrapper

@@ -19,6 +19,7 @@ trait TransportOptions extends js.Object {
   var name: String = js.native
   var nodeFilter: js.UndefOr[nodeFilterFn] = js.native
   var nodeSelector: js.UndefOr[String | nodeSelectorFn] = js.native
+  var opaqueIdPrefix: js.UndefOr[String] = js.native
   var requestTimeout: Double | String = js.native
   var serializer: typings.atElasticElasticsearch.libSerializerMod.default = js.native
   var sniffEndpoint: String = js.native

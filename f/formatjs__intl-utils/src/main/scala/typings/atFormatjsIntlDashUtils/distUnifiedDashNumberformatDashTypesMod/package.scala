@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distUnifiedDashNumberformatDashTypesMod {
+  import typings.atFormatjsIntlDashUtils.Anon_Currencies
   import typings.atFormatjsIntlDashUtils.distTypesMod.LocaleData
-  import typings.std.Record
 
-  type UnifiedNumberFormatLocaleData = LocaleData[Record[String, UnitData]]
+  type UnifiedNumberFormatLocaleData = LocaleData[Anon_Currencies]
 }

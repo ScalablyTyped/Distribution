@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait APIGatewayProxyEvent extends js.Object {
   var body: String | Null
-  var headers: StringDictionary[String]
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var httpMethod: String
   var isBase64Encoded: Boolean
   var multiValueHeaders: StringDictionary[js.Array[String]]
@@ -23,7 +23,6 @@ trait APIGatewayProxyEvent extends js.Object {
 object APIGatewayProxyEvent {
   @scala.inline
   def apply(
-    headers: StringDictionary[String],
     httpMethod: String,
     isBase64Encoded: Boolean,
     multiValueHeaders: StringDictionary[js.Array[String]],
@@ -31,13 +30,15 @@ object APIGatewayProxyEvent {
     requestContext: APIGatewayEventRequestContext,
     resource: String,
     body: String = null,
+    headers: StringDictionary[String] = null,
     multiValueQueryStringParameters: StringDictionary[js.Array[String]] = null,
     pathParameters: StringDictionary[String] = null,
     queryStringParameters: StringDictionary[String] = null,
     stageVariables: StringDictionary[String] = null
   ): APIGatewayProxyEvent = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], multiValueHeaders = multiValueHeaders.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters.asInstanceOf[js.Any])
     if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters.asInstanceOf[js.Any])
     if (queryStringParameters != null) __obj.updateDynamic("queryStringParameters")(queryStringParameters.asInstanceOf[js.Any])

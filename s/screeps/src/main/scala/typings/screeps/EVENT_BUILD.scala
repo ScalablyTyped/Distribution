@@ -1,12 +1,11 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.screeps.screepsNumbers.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSGlobal("EVENT_BUILD")
 @js.native
-object EVENT_BUILD extends TopLevel[`4`]
+object EVENT_BUILD extends TopLevel[EVENT_BUILD]
 

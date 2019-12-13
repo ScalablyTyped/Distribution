@@ -17,6 +17,10 @@ class Issuer[TClient /* <: Client */] protected ()
     */
   var Client: TypeOfGenericClient[TClient] = js.native
   /**
+    * Returns the <FAPIClient> class tied to this issuer.
+    */
+  var FAPIClient: TypeOfGenericClient[TClient] = js.native
+  /**
     * Returns metadata from the issuer's discovery document.
     */
   var metadata: IssuerMetadata = js.native

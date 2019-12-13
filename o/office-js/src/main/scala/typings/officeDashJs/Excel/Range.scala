@@ -998,6 +998,17 @@ class Range () extends ClientObject {
     */
   def merge(): Unit = js.native
   def merge(across: Boolean): Unit = js.native
+  def moveTo(destinationRange: String): Unit = js.native
+  /**
+    *
+    * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
+    The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+    *
+    * [Api set: ExcelApiOnline 1.1]
+    *
+    * @param destinationRange destinationRange Specifies the range to where the information in this range will be moved.
+    */
+  def moveTo(destinationRange: Range): Unit = js.native
   /**
     *
     * Removes duplicate values from the range specified by the columns.

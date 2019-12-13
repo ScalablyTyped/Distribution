@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object distErrorsIgDashActionDashSpamDotErrorMod extends js.Object {
   @js.native
   class IgActionSpamError () extends IgResponseError[SpamResponse] {
-    val expirationDate: String | Null = js.native
+    def expirationDate(): String | Null = js.native
   }
   
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "neffos_dot_js"
-version := "0.1.22-9c53af"
+version := "0.1.25-1b7b08"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

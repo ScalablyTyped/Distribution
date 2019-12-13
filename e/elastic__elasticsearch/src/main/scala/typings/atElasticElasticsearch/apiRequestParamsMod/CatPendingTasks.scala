@@ -1,5 +1,12 @@
 package typings.atElasticElasticsearch.apiRequestParamsMod
 
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`d (Days)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`h (Hours)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`m (Minutes)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`micros (Microseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`ms (Milliseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`nanos (Nanoseconds)`
+import typings.atElasticElasticsearch.atElasticElasticsearchStrings.`s (Seconds)`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +18,9 @@ trait CatPendingTasks extends Generic {
   var local: js.UndefOr[Boolean] = js.undefined
   var master_timeout: js.UndefOr[String] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
+  var time: js.UndefOr[
+    (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`)
+  ] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -30,6 +40,7 @@ object CatPendingTasks {
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
     source: String = null,
+    time: (`d (Days)`) | (`h (Hours)`) | (`m (Minutes)`) | (`s (Seconds)`) | (`ms (Milliseconds)`) | (`micros (Microseconds)`) | (`nanos (Nanoseconds)`) = null,
     v: js.UndefOr[Boolean] = js.undefined
   ): CatPendingTasks = {
     val __obj = js.Dynamic.literal()
@@ -46,6 +57,7 @@ object CatPendingTasks {
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatPendingTasks]
   }

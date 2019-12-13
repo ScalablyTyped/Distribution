@@ -34,7 +34,7 @@ trait CustomResourceDefinitionSpec extends js.Object {
   var preserveUnknownFields: js.UndefOr[Input[Boolean]] = js.undefined
   /**
     * scope indicates whether the defined custom resource is cluster- or namespace-scoped.
-    * Allowed values are `Cluster` and `Namespaced`. Default is `Namespaced`.
+    * Allowed values are `Cluster` and `Namespaced`.
     */
   var scope: Input[String]
   /**

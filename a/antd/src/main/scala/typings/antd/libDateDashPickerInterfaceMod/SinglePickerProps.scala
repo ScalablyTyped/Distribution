@@ -7,12 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SinglePickerProps extends js.Object {
-  var defaultPickerValue: js.UndefOr[Moment] = js.undefined
-  var defaultValue: js.UndefOr[Moment] = js.undefined
+  var defaultPickerValue: js.UndefOr[Moment | Null] = js.undefined
+  var defaultValue: js.UndefOr[Moment | Null] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* date */ Moment | Null, /* dateString */ String, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ DatePickerMode, ReactNode]] = js.undefined
-  var value: js.UndefOr[Moment] = js.undefined
+  var value: js.UndefOr[Moment | Null] = js.undefined
 }
 
 object SinglePickerProps {

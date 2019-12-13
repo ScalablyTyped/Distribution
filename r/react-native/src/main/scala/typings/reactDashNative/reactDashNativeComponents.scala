@@ -69,7 +69,7 @@ object reactDashNativeComponents extends reactDashNativeProps {
   @scala.inline
   def ScrollView: ComponentType[ScrollViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ScrollView].asInstanceOf[typings.react.reactMod.ComponentType[ScrollViewProps]]
   @scala.inline
-  def SectionList: ComponentType[SectionListProps[js.Any]] = typings.reactDashNative.reactDashNativeMod.SectionList.asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[js.Any]]]
+  def SectionList[SectionT]: ComponentType[SectionListProps[SectionT]] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SectionList[SectionT]].asInstanceOf[typings.react.reactMod.ComponentType[SectionListProps[SectionT]]]
   @scala.inline
   def SegmentedControlIOS: ComponentType[SegmentedControlIOSProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.SegmentedControlIOS].asInstanceOf[typings.react.reactMod.ComponentType[SegmentedControlIOSProps]]
   @scala.inline
@@ -110,5 +110,7 @@ object reactDashNativeComponents extends reactDashNativeProps {
   def View: ComponentType[ViewProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.View].asInstanceOf[typings.react.reactMod.ComponentType[ViewProps]]
   @scala.inline
   def ViewPagerAndroid: ComponentType[ViewPagerAndroidProps] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.ViewPagerAndroid].asInstanceOf[typings.react.reactMod.ComponentType[ViewPagerAndroidProps]]
+  @scala.inline
+  def YellowBox: ComponentType[js.Any] = js.constructorOf[typings.reactDashNative.reactDashNativeMod.YellowBox].asInstanceOf[typings.react.reactMod.ComponentType[js.Any]]
 }
 

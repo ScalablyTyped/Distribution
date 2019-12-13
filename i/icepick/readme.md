@@ -1,7 +1,7 @@
 
 # Scala.js typings for icepick
 
-Typings are for version v1.3.0
+Typings are for version 2.3
 
 ## Library description:
 Utilities for treating frozen JavaScript objects as persistent immutable collections.

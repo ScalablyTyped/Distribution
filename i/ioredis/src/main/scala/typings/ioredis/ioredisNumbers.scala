@@ -1,15 +1,16 @@
 package typings.ioredis
 
+import typings.ioredis.ioredisMod.BooleanResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object ioredisNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0` extends BooleanResponse
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends BooleanResponse
   
   @js.native
   sealed trait `2` extends js.Object

@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 trait IRendererOptions extends js.Object {
   /**
+    * Sets scene background
+    * @type string
+    * default undefined
+    */
+  var background: js.UndefOr[String] = js.undefined
+  /**
     * A flag that specifies if `render.bounds` should be used when rendering.
     *
     * @property options.hasBounds
@@ -40,12 +46,14 @@ trait IRendererOptions extends js.Object {
 object IRendererOptions {
   @scala.inline
   def apply(
+    background: String = null,
     hasBounds: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     width: Int | Double = null,
     wireframes: js.UndefOr[Boolean] = js.undefined
   ): IRendererOptions = {
     val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

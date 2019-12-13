@@ -2,6 +2,7 @@ package typings.atFirebaseAnalytics.distSrcErrorsMod
 
 import typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`already-exists`
 import typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`already-initialized`
+import typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`interop-component-reg-failed`
 import typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`no-ga-id`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`no-ga-id`
   - typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`already-exists`
   - typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`already-initialized`
+  - typings.atFirebaseAnalytics.atFirebaseAnalyticsStrings.`interop-component-reg-failed`
 */
 trait AnalyticsError extends js.Object
 
@@ -19,6 +21,8 @@ object AnalyticsError {
   def ALREADY_EXISTS: `already-exists` = this.cast("already-exists")
   @scala.inline
   def ALREADY_INITIALIZED: `already-initialized` = this.cast("already-initialized")
+  @scala.inline
+  def INTEROP_COMPONENT_REG_FAILED: `interop-component-reg-failed` = this.cast("interop-component-reg-failed")
   @scala.inline
   def NO_GA_ID: `no-ga-id` = this.cast("no-ga-id")
   @scala.inline

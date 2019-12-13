@@ -135,7 +135,7 @@ trait IObjectOptions extends js.Object {
   /**
   	 * Color of object's fill
   	 */
-  var fill: js.UndefOr[String | Pattern] = js.undefined
+  var fill: js.UndefOr[String | Pattern | Gradient] = js.undefined
   /**
   	 * Fill rule used to fill an object
   	 * accepted values are nonzero, evenodd
@@ -458,7 +458,7 @@ object IObjectOptions {
     dirty: js.UndefOr[Boolean] = js.undefined,
     evented: js.UndefOr[Boolean] = js.undefined,
     excludeFromExport: js.UndefOr[Boolean] = js.undefined,
-    fill: String | Pattern = null,
+    fill: String | Pattern | Gradient = null,
     fillRule: String = null,
     flipX: js.UndefOr[Boolean] = js.undefined,
     flipY: js.UndefOr[Boolean] = js.undefined,

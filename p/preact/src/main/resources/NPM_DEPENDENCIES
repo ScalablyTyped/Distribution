@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "preact" : "10.0.5"
+      "preact" : "10.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "preact" : "10.0.5"
+      "preact" : "10.1.0"
     }
   ],
   "compile-devDependencies" : [

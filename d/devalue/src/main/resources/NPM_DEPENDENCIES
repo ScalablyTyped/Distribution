@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devalue" : "2.0.0"
+      "devalue" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "devalue" : "2.0.0"
+      "devalue" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

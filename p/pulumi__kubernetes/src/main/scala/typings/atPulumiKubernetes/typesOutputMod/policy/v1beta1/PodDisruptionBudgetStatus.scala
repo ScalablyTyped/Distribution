@@ -40,7 +40,7 @@ trait PodDisruptionBudgetStatus extends js.Object {
   val expectedPods: Double
   /**
     * Most recent generation observed when updating this PDB status. PodDisruptionsAllowed and
-    * other status informatio is valid only if observedGeneration equals to PDB's object
+    * other status information is valid only if observedGeneration equals to PDB's object
     * generation.
     */
   val observedGeneration: Double

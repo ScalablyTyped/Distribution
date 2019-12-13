@@ -15,8 +15,6 @@ sealed trait ResponseType extends js.Object
 /**  
   * Specifies the type of response to a meeting invitation.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read

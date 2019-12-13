@@ -7,7 +7,7 @@ import typings.instagramDashPrivateDashApi.distResponsesAccountDotRepositoryDotL
 import typings.instagramDashPrivateDashApi.distResponsesStatusDotResponseMod.StatusResponse
 import typings.instagramDashPrivateDashApi.distTypesAccountDotEditDashProfileDotOptionsMod.AccountEditProfileOptions
 import typings.instagramDashPrivateDashApi.distTypesAccountDotTwoDashFactorDashLoginDotOptionsMod.AccountTwoFactorLoginOptions
-import typings.node.fsMod.ReadStream
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object distRepositoriesAccountDotRepositoryMod extends js.Object {
   class AccountRepository () extends Repository {
     var command: js.Any = js.native
     def changePassword(oldPassword: String, newPassword: String): js.Promise[_] = js.native
-    def changeProfilePicture(stream: ReadStream): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
+    def changeProfilePicture(picture: Buffer): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
     def contactPointPrefill(): js.Promise[_] = js.native
     def contactPointPrefill(usage: String): js.Promise[_] = js.native
     def create(hasUsernamePasswordEmailFirst_name: Anon_Email): js.Promise[_] = js.native
@@ -34,10 +34,17 @@ object distRepositoriesAccountDotRepositoryMod extends js.Object {
     def readMsisdnHeader(): js.Promise[_] = js.native
     def readMsisdnHeader(usage: String): js.Promise[_] = js.native
     def removeProfilePicture(): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
+    def sendRecoveryFlowEmail(query: String): js.Promise[_] = js.native
     def setBiography(text: String): js.Promise[AccountRepositoryCurrentUserResponseUser] = js.native
     def setPrivate(): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
     def setPublic(): js.Promise[AccountRepositoryCurrentUserResponseRootObject] = js.native
     def twoFactorLogin(options: AccountTwoFactorLoginOptions): js.Promise[AccountRepositoryLoginResponseLogged_in_user] = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object AccountRepository extends js.Object {
+    var createJazoest: js.Any = js.native
   }
   
 }

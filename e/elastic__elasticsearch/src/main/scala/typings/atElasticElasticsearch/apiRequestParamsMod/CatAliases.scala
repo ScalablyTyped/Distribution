@@ -9,7 +9,6 @@ trait CatAliases extends Generic {
   var h: js.UndefOr[String | js.Array[String]] = js.undefined
   var help: js.UndefOr[Boolean] = js.undefined
   var local: js.UndefOr[Boolean] = js.undefined
-  var master_timeout: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String | js.Array[String]] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +25,6 @@ object CatAliases {
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     local: js.UndefOr[Boolean] = js.undefined,
-    master_timeout: String = null,
     method: String = null,
     name: String | js.Array[String] = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
@@ -43,7 +41,6 @@ object CatAliases {
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])

@@ -53,6 +53,9 @@ trait SelectOverrides extends js.Object {
   var SearchIcon: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ] = js.undefined
+  var SearchIconContainer: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+  ] = js.undefined
   var SelectArrow: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
   ] = js.undefined
@@ -86,6 +89,7 @@ object SelectOverrides {
     Popover: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     Root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     SearchIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
+    SearchIconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     SelectArrow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     SingleValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
     StatefulMenu: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
@@ -108,6 +112,7 @@ object SelectOverrides {
     if (Popover != null) __obj.updateDynamic("Popover")(Popover.asInstanceOf[js.Any])
     if (Root != null) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
     if (SearchIcon != null) __obj.updateDynamic("SearchIcon")(SearchIcon.asInstanceOf[js.Any])
+    if (SearchIconContainer != null) __obj.updateDynamic("SearchIconContainer")(SearchIconContainer.asInstanceOf[js.Any])
     if (SelectArrow != null) __obj.updateDynamic("SelectArrow")(SelectArrow.asInstanceOf[js.Any])
     if (SingleValue != null) __obj.updateDynamic("SingleValue")(SingleValue.asInstanceOf[js.Any])
     if (StatefulMenu != null) __obj.updateDynamic("StatefulMenu")(StatefulMenu.asInstanceOf[js.Any])

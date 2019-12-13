@@ -40,9 +40,18 @@ trait ISubscriptionUpdateOptions extends IDataOptionsWithMetadata {
     */
   var days_until_due: js.UndefOr[Double] = js.undefined
   /**
+    * ID of the default payment method for the subscription. It must belong to the customer associated with the subscription. If not set, invoices will use the default payment method in the customer’s invoice settings.
+    */
+  var default_payment_method: js.UndefOr[String] = js.undefined
+  var default_source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
+  /**
     * List of subscription items, each with an attached plan.
     */
   var items: js.UndefOr[js.Array[ISubscriptionUpdateItem]] = js.undefined
+  /**
+    * Indicates if a customer is on or off-session while an invoice payment is attempted.
+    */
+  var off_session: js.UndefOr[Boolean] = js.undefined
   /**
     * Boolean (default true). Used to prevent Stripe Invoicing from automatically paying the subscription when the term changes.
     * This can be set to false when used with services like Avalara that need to augment an invoice before the subscription is paid.
@@ -72,7 +81,6 @@ trait ISubscriptionUpdateOptions extends IDataOptionsWithMetadata {
     * the quantity attribute and will default to 1 unless you pass a quantity parameter.
     */
   var quantity: js.UndefOr[Double] = js.undefined
-  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
   /**
     * A positive decimal (with at most two decimal places) between 1 and 100. This represents the percentage of the subscription invoice
     * subtotal that will be calculated and added as tax to the final amount each billing period. For example, a plan which charges $10/month
@@ -96,16 +104,18 @@ object ISubscriptionUpdateOptions {
     cancel_at_period_end: js.UndefOr[Boolean] = js.undefined,
     coupon: String = null,
     days_until_due: Int | Double = null,
+    default_payment_method: String = null,
+    default_source: String | ICardSourceCreationOptions = null,
     expand: js.Array[String] = null,
     include: js.Array[String] = null,
     items: js.Array[ISubscriptionUpdateItem] = null,
     metadata: IOptionsMetadata = null,
+    off_session: js.UndefOr[Boolean] = js.undefined,
     pay_immediately: js.UndefOr[Boolean] = js.undefined,
     plan: String = null,
     prorate: js.UndefOr[Boolean] = js.undefined,
     proration_date: Int | Double = null,
     quantity: Int | Double = null,
-    source: String | ICardSourceCreationOptions = null,
     tax_percent: Int | Double = null,
     trial_end: Double | now = null
   ): ISubscriptionUpdateOptions = {
@@ -116,16 +126,18 @@ object ISubscriptionUpdateOptions {
     if (!js.isUndefined(cancel_at_period_end)) __obj.updateDynamic("cancel_at_period_end")(cancel_at_period_end.asInstanceOf[js.Any])
     if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
     if (days_until_due != null) __obj.updateDynamic("days_until_due")(days_until_due.asInstanceOf[js.Any])
+    if (default_payment_method != null) __obj.updateDynamic("default_payment_method")(default_payment_method.asInstanceOf[js.Any])
+    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (!js.isUndefined(off_session)) __obj.updateDynamic("off_session")(off_session.asInstanceOf[js.Any])
     if (!js.isUndefined(pay_immediately)) __obj.updateDynamic("pay_immediately")(pay_immediately.asInstanceOf[js.Any])
     if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate.asInstanceOf[js.Any])
     if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionUpdateOptions]

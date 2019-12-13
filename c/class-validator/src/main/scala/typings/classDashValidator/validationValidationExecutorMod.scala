@@ -26,7 +26,9 @@ object validationValidationExecutorMod extends js.Object {
     var ignoreAsyncValidations: Boolean = js.native
     var mapContexts: js.Any = js.native
     var metadataStorage: js.Any = js.native
+    var nestedPromiseValidations: js.Any = js.native
     var nestedValidations: js.Any = js.native
+    var performValidations: js.Any = js.native
     var validator: js.Any = js.native
     var validatorOptions: js.UndefOr[js.Any] = js.native
     def execute(`object`: js.Object, targetSchema: String, validationErrors: js.Array[ValidationError]): Unit = js.native

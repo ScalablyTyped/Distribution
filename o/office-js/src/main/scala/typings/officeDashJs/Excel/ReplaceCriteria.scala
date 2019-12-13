@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 trait ReplaceCriteria extends js.Object {
   /**
     *
-    * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`). Default is false (partial).
+    * Specifies whether the match needs to be complete or partial.
+    A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`).
+    Default is false (partial).
     *
     * [Api set: ExcelApi 1.9]
     */

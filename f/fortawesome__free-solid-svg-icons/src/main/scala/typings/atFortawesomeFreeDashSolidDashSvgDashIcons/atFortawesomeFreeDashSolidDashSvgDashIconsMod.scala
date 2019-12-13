@@ -63,6 +63,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faBackspace: IconDefinition = js.native
   val faBackward: IconDefinition = js.native
   val faBacon: IconDefinition = js.native
+  val faBahai: IconDefinition = js.native
   val faBalanceScale: IconDefinition = js.native
   val faBalanceScaleLeft: IconDefinition = js.native
   val faBalanceScaleRight: IconDefinition = js.native
@@ -147,6 +148,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faCarBattery: IconDefinition = js.native
   val faCarCrash: IconDefinition = js.native
   val faCarSide: IconDefinition = js.native
+  val faCaravan: IconDefinition = js.native
   val faCaretDown: IconDefinition = js.native
   val faCaretLeft: IconDefinition = js.native
   val faCaretRight: IconDefinition = js.native
@@ -231,6 +233,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faCompactDisc: IconDefinition = js.native
   val faCompass: IconDefinition = js.native
   val faCompress: IconDefinition = js.native
+  val faCompressAlt: IconDefinition = js.native
   val faCompressArrowsAlt: IconDefinition = js.native
   val faConciergeBell: IconDefinition = js.native
   val faCookie: IconDefinition = js.native
@@ -307,6 +310,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faExclamationCircle: IconDefinition = js.native
   val faExclamationTriangle: IconDefinition = js.native
   val faExpand: IconDefinition = js.native
+  val faExpandAlt: IconDefinition = js.native
   val faExpandArrowsAlt: IconDefinition = js.native
   val faExternalLinkAlt: IconDefinition = js.native
   val faExternalLinkSquareAlt: IconDefinition = js.native
@@ -443,7 +447,6 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faHatCowboy: IconDefinition = js.native
   val faHatCowboySide: IconDefinition = js.native
   val faHatWizard: IconDefinition = js.native
-  val faHaykal: IconDefinition = js.native
   val faHdd: IconDefinition = js.native
   val faHeading: IconDefinition = js.native
   val faHeadphones: IconDefinition = js.native
@@ -875,6 +878,7 @@ object atFortawesomeFreeDashSolidDashSvgDashIconsMod extends js.Object {
   val faTractor: IconDefinition = js.native
   val faTrademark: IconDefinition = js.native
   val faTrafficLight: IconDefinition = js.native
+  val faTrailer: IconDefinition = js.native
   val faTrain: IconDefinition = js.native
   val faTram: IconDefinition = js.native
   val faTransgender: IconDefinition = js.native

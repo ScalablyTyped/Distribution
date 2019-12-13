@@ -26,6 +26,7 @@ object FormFieldProps {
     control: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: Boolean | SemanticShorthandItem[LabelProps] = null,
+    id: Double | String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     label: SemanticShorthandItem[HtmlLabelProps] = null,
     required: js.Any = null,
@@ -41,6 +42,7 @@ object FormFieldProps {
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])

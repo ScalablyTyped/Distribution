@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redom" : "3.24.2"
+      "redom" : "3.24.3"
     }
   ],
   "test-dependencies" : [
     {
-      "redom" : "3.24.2"
+      "redom" : "3.24.3"
     }
   ],
   "compile-devDependencies" : [

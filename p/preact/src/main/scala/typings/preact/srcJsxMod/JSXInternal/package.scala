@@ -32,7 +32,11 @@ package object JSXInternal {
   type DragEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedDragEvent[Target]]
   type Element = VNode[js.Any]
   type ElementClass = Component[js.Any, js.Any]
-  type EventHandler[E /* <: TargetedEvent[EventTarget, Event] */] = js.Function1[/* event */ E, Unit]
+  type EventHandler[E /* <: TargetedEvent[EventTarget, Event] */] = js.ThisFunction1[
+    /* import warning: importer.ImportType#apply Failed type conversion: E['currentTarget'] */ /* this */ js.Any, 
+    /* event */ E, 
+    Unit
+  ]
   type FocusEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedFocusEvent[Target]]
   type GenericEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedEvent[Target, Event]]
   type KeyboardEventHandler[Target /* <: EventTarget */] = EventHandler[TargetedKeyboardEvent[Target]]

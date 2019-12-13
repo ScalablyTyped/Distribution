@@ -1,6 +1,5 @@
 package typings.ramda
 
-import typings.ramda.ToolsNs.HasTail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,12 +36,10 @@ object ramdaNumbers {
   sealed trait `9` extends js.Object
   
   @js.native
-  sealed trait `false`
-    extends HasTail[js.Any]
+  sealed trait `false` extends js.Object
   
   @js.native
-  sealed trait `true`
-    extends HasTail[js.Any]
+  sealed trait `true` extends js.Object
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

@@ -11,7 +11,7 @@ class AnimationState protected () extends js.Object {
   var animationsChanged: Boolean = js.native
   var data: AnimationStateData = js.native
   var events: js.Array[Event] = js.native
-  var listeners: js.Array[AnimationStateListener2] = js.native
+  var listeners: js.Array[AnimationStateListener] = js.native
   var propertyIDs: IntSet = js.native
   var queue: EventQueue = js.native
   var timeScale: Double = js.native
@@ -22,7 +22,7 @@ class AnimationState protected () extends js.Object {
   def addAnimationByName(trackIndex: Double, animationName: String, loop: Boolean, delay: Double): Unit = js.native
   def addAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean, delay: Double): TrackEntry = js.native
   def addEmptyAnimation(trackIndex: Double, mixDuration: Double, delay: Double): TrackEntry = js.native
-  def addListener(listener: AnimationStateListener2): Unit = js.native
+  def addListener(listener: AnimationStateListener): Unit = js.native
   @JSName("apply")
   def apply(skeleton: Skeleton): Boolean = js.native
   def applyMixingFrom(to: TrackEntry, skeleton: Skeleton, blend: MixBlend): Double = js.native
@@ -47,13 +47,12 @@ class AnimationState protected () extends js.Object {
   def getCurrent(trackIndex: Double): TrackEntry = js.native
   def hasAnimation(animationName: String): Boolean = js.native
   def hasAnimationByName(animationName: String): Boolean = js.native
-  def hasTimeline(entry: TrackEntry, id: Double): Boolean = js.native
   def onComplete(trackIndex: Double, loopCount: Double): js.Any = js.native
   def onEnd(trackIndex: Double): js.Any = js.native
   def onEvent(trackIndex: Double, event: Event): js.Any = js.native
   def onStart(trackIndex: Double): js.Any = js.native
   def queueEvents(entry: TrackEntry, animationTime: Double): Unit = js.native
-  def removeListener(listener: AnimationStateListener2): Unit = js.native
+  def removeListener(listener: AnimationStateListener): Unit = js.native
   def setAnimation(trackIndex: Double, animationName: String, loop: Boolean): TrackEntry = js.native
   def setAnimationByName(trackIndex: Double, animationName: String, loop: Boolean): Unit = js.native
   def setAnimationWith(trackIndex: Double, animation: Animation, loop: Boolean): TrackEntry = js.native

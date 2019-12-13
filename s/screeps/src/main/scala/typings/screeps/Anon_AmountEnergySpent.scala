@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 trait Anon_AmountEnergySpent extends js.Object {
   var amount: Double
   var energySpent: Double
-  // EVENT_REPAIR
   var targetId: String
 }
 

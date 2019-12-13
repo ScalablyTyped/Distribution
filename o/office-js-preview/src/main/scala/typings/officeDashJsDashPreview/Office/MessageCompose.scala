@@ -45,8 +45,6 @@ trait MessageCompose extends Message {
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -92,8 +90,6 @@ trait MessageCompose extends Message {
     *
     * The subject property returns a Subject object that provides methods to get and set the subject.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -111,8 +107,6 @@ trait MessageCompose extends Message {
     * - Get 500 members maximum.
     *
     * - Set a maximum of 100 members per call, up to 500 members total.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -513,8 +507,6 @@ trait MessageCompose extends Message {
     * To access the selected data from the callback method, call asyncResult.value.data. 
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
     *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-    *
     * [Api set: Mailbox 1.2]
     *
     * @returns
@@ -539,8 +531,6 @@ trait MessageCompose extends Message {
     *
     * To access the selected data from the callback method, call asyncResult.value.data.
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-    *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
     *
     * [Api set: Mailbox 1.2]
     *
@@ -568,8 +558,6 @@ trait MessageCompose extends Message {
     * To access the selected data from the callback method, call asyncResult.value.data. 
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
     *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-    *
     * [Api set: Mailbox 1.2]
     *
     * @returns
@@ -596,8 +584,6 @@ trait MessageCompose extends Message {
     *
     * To access the selected data from the callback method, call asyncResult.value.data.
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-    *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
     *
     * [Api set: Mailbox 1.2]
     *

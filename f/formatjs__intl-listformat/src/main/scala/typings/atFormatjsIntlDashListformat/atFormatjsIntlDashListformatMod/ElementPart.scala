@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ElementPart extends Part {
+trait ElementPart extends js.Object {
   var `type`: element
   var value: String
 }

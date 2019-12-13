@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ActionObject[TContext, TEvent /* <: EventObject */]
-  extends /* other */ StringDictionary[js.Any] {
+  extends /* other */ StringDictionary[js.Any]
+     with _Action[TContext, TEvent] {
   /**
     * The implementation for executing the action.
     */

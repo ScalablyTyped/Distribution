@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rox-react-native"
-version := "4.8-dt-20191105Z-6c5aa4"
+version := "4.8-dt-20191203Z-519970"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

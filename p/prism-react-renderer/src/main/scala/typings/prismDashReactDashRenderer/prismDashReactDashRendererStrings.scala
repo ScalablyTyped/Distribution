@@ -136,6 +136,9 @@ object prismDashReactDashRendererStrings {
   sealed trait stylus extends Language
   
   @js.native
+  sealed trait tsx extends Language
+  
+  @js.native
   sealed trait typescript extends Language
   
   @js.native
@@ -236,6 +239,8 @@ object prismDashReactDashRendererStrings {
   def sql: sql = "sql".asInstanceOf[sql]
   @scala.inline
   def stylus: stylus = "stylus".asInstanceOf[stylus]
+  @scala.inline
+  def tsx: tsx = "tsx".asInstanceOf[tsx]
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline

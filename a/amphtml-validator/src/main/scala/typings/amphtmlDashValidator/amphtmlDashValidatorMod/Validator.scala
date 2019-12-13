@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
 class Validator () extends Script {
   var sandbox: Context = js.native
   def validateString(stringToValidate: String): ValidationResult = js.native
+  def validateString(stringToValidate: String, htmlFormat: String): ValidationResult = js.native
 }
 

@@ -7,14 +7,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Initial[TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */] extends js.Object {
+trait Anon_Initial[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends js.Object {
   var initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
   var states: StatesConfig[_, TStateSchema, TEvent]
 }
 
 object Anon_Initial {
   @scala.inline
-  def apply[TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](
+  def apply[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any,
     states: StatesConfig[_, TStateSchema, TEvent]
   ): Anon_Initial[TStateSchema, TEvent] = {

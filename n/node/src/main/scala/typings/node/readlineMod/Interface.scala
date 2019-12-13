@@ -8,7 +8,6 @@ import typings.node.nodeStrings.SIGCONT
 import typings.node.nodeStrings.SIGINT
 import typings.node.nodeStrings.SIGTSTP
 import typings.node.nodeStrings.close
-import typings.node.nodeStrings.line
 import typings.node.nodeStrings.pause
 import typings.node.nodeStrings.resume
 import scala.scalajs.js
@@ -41,6 +40,12 @@ class Interface protected () extends EventEmitter {
   protected def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
   protected def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
+  /** The current cursor position in the input line */
+  val cursor: Double = js.native
+  // Need direct access to line/cursor data, for use in external processes
+  // see: https://github.com/nodejs/node/issues/30347
+  /** The current input data */
+  val line: java.lang.String = js.native
   val terminal: Boolean = js.native
   @JSName("addListener")
   def addListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
@@ -51,7 +56,7 @@ class Interface protected () extends EventEmitter {
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_line(event: line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
+  def addListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
@@ -66,7 +71,7 @@ class Interface protected () extends EventEmitter {
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
-  def emit_line(event: line, input: java.lang.String): Boolean = js.native
+  def emit_line(event: typings.node.nodeStrings.line, input: java.lang.String): Boolean = js.native
   @JSName("emit")
   def emit_pause(event: pause): Boolean = js.native
   @JSName("emit")
@@ -80,7 +85,7 @@ class Interface protected () extends EventEmitter {
   @JSName("on")
   def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_line(event: line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
+  def on_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
   @JSName("on")
   def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -94,7 +99,7 @@ class Interface protected () extends EventEmitter {
   @JSName("once")
   def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_line(event: line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
+  def once_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
   @JSName("once")
   def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -109,7 +114,7 @@ class Interface protected () extends EventEmitter {
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_line(event: line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
+  def prependListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -123,7 +128,7 @@ class Interface protected () extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_line(event: line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
+  def prependOnceListener_line(event: typings.node.nodeStrings.line, listener: js.Function1[/* input */ java.lang.String, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")

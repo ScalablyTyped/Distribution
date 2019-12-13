@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mineral")
 @js.native
 class MineralCls protected () extends Mineral[MineralConstant] {
-  def this(id: String) = this()
+  def this(id: Id[Mineral[MineralConstant]]) = this()
   /**
     * The density of this mineral deposit, one of the `DENSITY_*` constants.
     */
@@ -22,7 +22,7 @@ class MineralCls protected () extends Mineral[MineralConstant] {
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * The remaining amount of resources.
     */

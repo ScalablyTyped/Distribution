@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
   * An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the phoneNumbers property of the 
   * Entities object that is returned when you call the getEntities method on the selected item.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

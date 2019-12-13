@@ -16,6 +16,7 @@ trait GridLineOptions extends js.Object {
   var lineWidth: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var offsetGridLines: js.UndefOr[Boolean] = js.undefined
   var tickMarkLength: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.undefined
   var zeroLineBorderDash: js.UndefOr[js.Array[Double]] = js.undefined
   var zeroLineBorderDashOffset: js.UndefOr[Double] = js.undefined
   var zeroLineColor: js.UndefOr[ChartColor] = js.undefined
@@ -36,6 +37,7 @@ object GridLineOptions {
     lineWidth: Double | js.Array[Double] = null,
     offsetGridLines: js.UndefOr[Boolean] = js.undefined,
     tickMarkLength: Int | Double = null,
+    z: Int | Double = null,
     zeroLineBorderDash: js.Array[Double] = null,
     zeroLineBorderDashOffset: Int | Double = null,
     zeroLineColor: ChartColor = null,
@@ -53,6 +55,7 @@ object GridLineOptions {
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(offsetGridLines)) __obj.updateDynamic("offsetGridLines")(offsetGridLines.asInstanceOf[js.Any])
     if (tickMarkLength != null) __obj.updateDynamic("tickMarkLength")(tickMarkLength.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     if (zeroLineBorderDash != null) __obj.updateDynamic("zeroLineBorderDash")(zeroLineBorderDash.asInstanceOf[js.Any])
     if (zeroLineBorderDashOffset != null) __obj.updateDynamic("zeroLineBorderDashOffset")(zeroLineBorderDashOffset.asInstanceOf[js.Any])
     if (zeroLineColor != null) __obj.updateDynamic("zeroLineColor")(zeroLineColor.asInstanceOf[js.Any])

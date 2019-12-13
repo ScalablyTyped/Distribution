@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-translate"
-version := "2.16-dt-20191105Z-e32d1c"
+version := "2.16-dt-20191210Z-5cc812"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -3,8 +3,9 @@ package typings.atFormatjsIntlDashUnifiedDashNumberformat
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatStrings.localeMatcher
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod.UnifiedNumberFormat
 import typings.atFormatjsIntlDashUnifiedDashNumberformat.libCoreMod.UnifiedNumberFormatOptions
+import typings.atFormatjsIntlDashUtils.Anon_Currencies
+import typings.atFormatjsIntlDashUtils.distTypesMod.Locale
 import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnifiedNumberFormatLocaleData
-import typings.atFormatjsIntlDashUtils.distUnifiedDashNumberformatDashTypesMod.UnitData
 import typings.std.Pick
 import typings.std.Record
 import scala.scalajs.js
@@ -29,7 +30,7 @@ object libLocalesMod extends js.Object {
     var __defaultLocale: js.Any = js.native
     var availableLocales: js.Any = js.native
     var getDefaultLocale: js.Any = js.native
-    var localeData: Record[String, Record[String, UnitData]] = js.native
+    var localeData: Record[Locale, Anon_Currencies] = js.native
     var polyfilled: Boolean = js.native
     var relevantExtensionKeys: js.Any = js.native
     def __addLocaleData(data: UnifiedNumberFormatLocaleData*): Unit = js.native

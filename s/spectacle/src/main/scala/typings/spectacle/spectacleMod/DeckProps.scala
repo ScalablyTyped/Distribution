@@ -12,6 +12,8 @@ trait DeckProps extends js.Object {
   var contentHeight: js.UndefOr[String] = js.undefined
   var contentWidth: js.UndefOr[String] = js.undefined
   var controls: js.UndefOr[Boolean] = js.undefined
+  var disableKeyboardControls: js.UndefOr[Boolean] = js.undefined
+  var disableTouchControls: js.UndefOr[Boolean] = js.undefined
   var globalStyles: js.UndefOr[Boolean] = js.undefined
   var history: js.UndefOr[js.Any] = js.undefined
   var onStateChange: js.UndefOr[
@@ -35,6 +37,8 @@ object DeckProps {
     contentHeight: String = null,
     contentWidth: String = null,
     controls: js.UndefOr[Boolean] = js.undefined,
+    disableKeyboardControls: js.UndefOr[Boolean] = js.undefined,
+    disableTouchControls: js.UndefOr[Boolean] = js.undefined,
     globalStyles: js.UndefOr[Boolean] = js.undefined,
     history: js.Any = null,
     onStateChange: (/* previousState */ js.UndefOr[String], /* nextState */ js.UndefOr[String]) => Unit = null,
@@ -52,6 +56,8 @@ object DeckProps {
     if (contentHeight != null) __obj.updateDynamic("contentHeight")(contentHeight.asInstanceOf[js.Any])
     if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableKeyboardControls)) __obj.updateDynamic("disableKeyboardControls")(disableKeyboardControls.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableTouchControls)) __obj.updateDynamic("disableTouchControls")(disableTouchControls.asInstanceOf[js.Any])
     if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction2(onStateChange))

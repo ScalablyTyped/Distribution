@@ -164,8 +164,6 @@ abstract class Observable[V] protected () extends js.Object {
     
     */
   def delay(delayMs: Double): this.type = js.native
-  /** @hidden */
-  def delayChanges(desc: Desc, f: EventStreamDelay[V]): this.type = js.native
   /**
     * Returns the an array of dependencies that the Observable has. For instance, for `a.map(function() {}).deps()`, would return `[a]`.
     This method returns the "visible" dependencies only, skipping internal details.  This method is thus suitable for visualization tools.
@@ -653,6 +651,8 @@ abstract class Observable[V] protected () extends js.Object {
     */
   def transform[V2](transformer: Transformer[V, V2]): Observable[V2] = js.native
   def transform[V2](transformer: Transformer[V, V2], desc: Desc): Observable[V2] = js.native
+  /** @hidden */
+  def transformChanges(desc: Desc, f: EventStreamDelay[V]): this.type = js.native
   def withDesc(): this.type = js.native
   def withDesc(desc: Desc): this.type = js.native
   /**

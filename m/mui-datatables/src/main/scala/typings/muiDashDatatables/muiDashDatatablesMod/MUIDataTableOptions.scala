@@ -10,7 +10,6 @@ import typings.muiDashDatatables.muiDashDatatablesStrings.reset
 import typings.react.reactMod.Component
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod._Global_.JSX.Element
-import typings.std.BlobPart
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,7 +94,7 @@ trait MUIDataTableOptions extends js.Object {
       /* buildBody */ js.Function1[/* data */ js.Any, String], 
       /* columns */ js.Any, 
       /* data */ js.Any, 
-      BlobPart
+      String
     ]
   ] = js.undefined
   var onFilterChange: js.UndefOr[
@@ -182,7 +181,7 @@ object MUIDataTableOptions {
     onChangeRowsPerPage: /* numberOfRows */ Double => Unit = null,
     onColumnSortChange: (/* changedColumn */ String, /* direction */ String) => Unit = null,
     onColumnViewChange: (/* changedColumn */ String, /* action */ String) => Unit = null,
-    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => BlobPart = null,
+    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, String], /* buildBody */ js.Function1[/* data */ js.Any, String], /* columns */ js.Any, /* data */ js.Any) => String = null,
     onFilterChange: (/* changedColumn */ String, /* filterList */ js.Array[_], /* type */ FilterType | chip | reset) => Unit = null,
     onFilterDialogClose: () => Unit = null,
     onFilterDialogOpen: () => Unit = null,

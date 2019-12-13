@@ -18,9 +18,6 @@ object atFormatjsIntlDashListformatStrings {
   sealed trait element extends js.Object
   
   @js.native
-  sealed trait literal extends js.Object
-  
-  @js.native
   sealed trait localeMatcher extends js.Object
   
   @js.native
@@ -46,8 +43,6 @@ object atFormatjsIntlDashListformatStrings {
   def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
   def localeMatcher: localeMatcher = "localeMatcher".asInstanceOf[localeMatcher]
   @scala.inline

@@ -14,6 +14,7 @@ object distFeedsUserDashStoryDotFeedMod extends js.Object {
   class UserStoryFeed () extends Feed[UserStoryFeedResponseRootObject, UserStoryFeedResponseItemsItem] {
     var userId: String | Double = js.native
     def request(): js.Promise[UserStoryFeedResponseRootObject] = js.native
+    /* protected */ def state(response: js.Any): js.Any = js.native
   }
   
 }

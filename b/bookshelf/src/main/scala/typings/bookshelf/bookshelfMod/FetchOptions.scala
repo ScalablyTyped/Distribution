@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FetchOptions extends SyncOptions {
   var columns: js.UndefOr[String | js.Array[String]] = js.undefined
+  /** @default true */
   var require: js.UndefOr[Boolean] = js.undefined
   var withRelated: js.UndefOr[js.Array[String | WithRelatedQuery]] = js.undefined
 }

@@ -115,6 +115,9 @@ object atMaterialDashUiLabStrings {
   sealed trait email extends js.Object
   
   @js.native
+  sealed trait endAdornment extends AutocompleteClassKey
+  
+  @js.native
   sealed trait escapeKeyDown extends CloseReason
   
   @js.native
@@ -198,6 +201,9 @@ object atMaterialDashUiLabStrings {
   
   @js.native
   sealed trait iconWithOpenIconOpen extends SpeedDialIconClassKey
+  
+  @js.native
+  sealed trait inherit extends js.Object
   
   @js.native
   sealed trait `inline` extends js.Object
@@ -398,6 +404,9 @@ object atMaterialDashUiLabStrings {
   sealed trait tag extends AutocompleteClassKey
   
   @js.native
+  sealed trait tagSizeSmall extends AutocompleteClassKey
+  
+  @js.native
   sealed trait tel extends js.Object
   
   @js.native
@@ -506,6 +515,8 @@ object atMaterialDashUiLabStrings {
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
+  def endAdornment: endAdornment = "endAdornment".asInstanceOf[endAdornment]
+  @scala.inline
   def escapeKeyDown: escapeKeyDown = "escapeKeyDown".asInstanceOf[escapeKeyDown]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
@@ -559,6 +570,8 @@ object atMaterialDashUiLabStrings {
   def iconOpen: iconOpen = "iconOpen".asInstanceOf[iconOpen]
   @scala.inline
   def iconWithOpenIconOpen: iconWithOpenIconOpen = "iconWithOpenIconOpen".asInstanceOf[iconWithOpenIconOpen]
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
@@ -681,6 +694,8 @@ object atMaterialDashUiLabStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
+  @scala.inline
+  def tagSizeSmall: tagSizeSmall = "tagSizeSmall".asInstanceOf[tagSizeSmall]
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline

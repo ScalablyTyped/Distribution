@@ -17,6 +17,7 @@ trait ColumnProps[T] extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var colSpan: js.UndefOr[Double] = js.undefined
   var dataIndex: js.UndefOr[String] = js.undefined
+  var defaultFilteredValue: js.UndefOr[js.Array[_]] = js.undefined
   var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
   var ellipsis: js.UndefOr[Boolean] = js.undefined
   var filterDropdown: js.UndefOr[ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode])] = js.undefined
@@ -48,6 +49,7 @@ object ColumnProps {
     className: String = null,
     colSpan: Int | Double = null,
     dataIndex: String = null,
+    defaultFilteredValue: js.Array[_] = null,
     defaultSortOrder: SortOrder = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
     filterDropdown: ReactNode | (js.Function1[/* props */ FilterDropdownProps, ReactNode]) = null,
@@ -76,6 +78,7 @@ object ColumnProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
+    if (defaultFilteredValue != null) __obj.updateDynamic("defaultFilteredValue")(defaultFilteredValue.asInstanceOf[js.Any])
     if (defaultSortOrder != null) __obj.updateDynamic("defaultSortOrder")(defaultSortOrder.asInstanceOf[js.Any])
     if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
     if (filterDropdown != null) __obj.updateDynamic("filterDropdown")(filterDropdown.asInstanceOf[js.Any])

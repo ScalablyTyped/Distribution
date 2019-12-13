@@ -1,6 +1,7 @@
 package typings.jsonschema.jsonschemaMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +36,7 @@ trait Schema extends js.Object {
   var multipleOf: js.UndefOr[Double] = js.native
   var not: js.UndefOr[Schema] = js.native
   var oneOf: js.UndefOr[js.Array[Schema]] = js.native
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String | RegExp] = js.native
   var patternProperties: js.UndefOr[StringDictionary[Schema]] = js.native
   var properties: js.UndefOr[StringDictionary[Schema]] = js.native
   var required: js.UndefOr[js.Array[String]] = js.native

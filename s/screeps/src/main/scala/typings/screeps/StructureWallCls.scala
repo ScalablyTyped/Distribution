@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureWall")
 @js.native
 class StructureWallCls protected () extends StructureWall {
-  def this(id: String) = this()
+  def this(id: Id[StructureWall]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -27,7 +27,7 @@ class StructureWallCls protected () extends StructureWall {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * An object representing the position of this object in the room.
     */

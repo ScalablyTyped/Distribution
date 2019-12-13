@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-redis
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 koa session with redis using koa-generic-session

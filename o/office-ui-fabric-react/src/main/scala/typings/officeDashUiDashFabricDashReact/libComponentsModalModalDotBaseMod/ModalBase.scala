@@ -16,6 +16,7 @@ class ModalBase protected ()
   var _allowScrollOnModal: js.Any = js.native
   var _focusTrapZone: js.Any = js.native
   var _getMoveDelta: js.Any = js.native
+  var _hasRegisteredKeyUp: js.Any = js.native
   var _lastSetX: js.Any = js.native
   var _lastSetY: js.Any = js.native
   var _onDrag: js.Any = js.native
@@ -28,9 +29,12 @@ class ModalBase protected ()
   var _onModalClose: js.Any = js.native
   var _onModalCloseTimer: js.Any = js.native
   var _onModalContextMenuClose: js.Any = js.native
+  var _registerForKeyUp: js.Any = js.native
   var _scrollableContent: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MModalBase(newProps: IModalProps): Unit = js.native
+  @JSName("componentDidMount")
+  def componentDidMount_MModalBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MModalBase(prevProps: IModalProps, prevState: IDialogState): Unit = js.native
   /**

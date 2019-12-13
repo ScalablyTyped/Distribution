@@ -18,7 +18,7 @@ class ^ () extends Redis {
   /* CompleteClass */
   override def createBuiltinCommand(commandName: String): js.Object = js.native
   /* CompleteClass */
-  override def defineCommand(name: String, definition: Anon_Lua): js.Any = js.native
+  override def defineCommand(name: String, definition: Anon_Lua): Unit = js.native
   /* CompleteClass */
   override def getBuiltinCommands(): js.Array[String] = js.native
   /* CompleteClass */

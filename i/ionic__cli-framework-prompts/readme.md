@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__cli-framework-prompts
 
-Typings are for version 1.0.2
+Typings are for version 1.0.4
 
 ## Library description:
 The interactive prompts portion of Ionic CLI Framework

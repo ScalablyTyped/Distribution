@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait IBuffer extends js.Object {
   /**
     * The line within the buffer where the top of the bottom page is (when
-    * fully scrolled down);
+    * fully scrolled down).
     */
   val baseY: Double
   /**

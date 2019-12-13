@@ -1,5 +1,6 @@
 package typings.screeps
 
+import typings.screeps.screepsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("StructureExtension")
 @js.native
 class StructureExtensionCls protected () extends StructureExtension {
-  def this(id: String) = this()
+  def this(id: Id[StructureExtension]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -15,11 +16,13 @@ class StructureExtensionCls protected () extends StructureExtension {
   override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The amount of energy containing in the extension.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   /* CompleteClass */
   override var energy: Double = js.native
   /**
     * The total amount of energy the extension can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   /* CompleteClass */
   override var energyCapacity: Double = js.native
@@ -37,7 +40,7 @@ class StructureExtensionCls protected () extends StructureExtension {
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * Whether this is your own structure. Walls and roads don't have this property as they are considered neutral structures.
     */
@@ -60,6 +63,11 @@ class StructureExtensionCls protected () extends StructureExtension {
   /* CompleteClass */
   @JSName("room")
   override var room_Structure: Room = js.native
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  /* CompleteClass */
+  override var store: Store[RESOURCE_ENERGY, `false`] = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

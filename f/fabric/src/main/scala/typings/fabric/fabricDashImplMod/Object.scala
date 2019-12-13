@@ -608,7 +608,7 @@ class Object ()
   @JSName("setGradient")
   def setGradient_fill(property: fill): Object = js.native
   @JSName("setGradient")
-  def setGradient_fill(property: fill, options: IGradientOptions): Object = js.native
+  def setGradient_fill(property: fill, options: OGradientOptions): Object = js.native
   /**
   	 * Sets gradient (fill or stroke) of an object
   	 * **Backwards incompatibility note:** This method was named "setGradientFill" until v1.1.0
@@ -618,7 +618,7 @@ class Object ()
   @JSName("setGradient")
   def setGradient_stroke(property: stroke): Object = js.native
   @JSName("setGradient")
-  def setGradient_stroke(property: stroke, options: IGradientOptions): Object = js.native
+  def setGradient_stroke(property: stroke, options: OGradientOptions): Object = js.native
   /**
   	 * This callback function is called by the parent group of an object every
   	 * time a non-delegated property changes on the group. It is passed the key

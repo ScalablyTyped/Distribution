@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-move
 
-Typings are for version 2.2.0
+Typings are for version 2.2.1
 
 ## Library description:
 Move an array item to a different position

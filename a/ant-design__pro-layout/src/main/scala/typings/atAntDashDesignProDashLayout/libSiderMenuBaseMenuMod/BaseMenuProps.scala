@@ -33,6 +33,11 @@ import scala.scalajs.js.annotation._
   var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.undefined
   var openKeys: js.UndefOr[WithFalse[js.Array[String]]] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
+  var subMenuItemRender: js.UndefOr[
+    WithFalse[
+      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
+    ]
+  ] = js.undefined
   var theme: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any
   ] = js.undefined
@@ -56,6 +61,9 @@ object BaseMenuProps {
     onOpenChange: /* openKeys */ js.Array[String] => Unit = null,
     openKeys: WithFalse[js.Array[String]] = null,
     style: CSSProperties = null,
+    subMenuItemRender: WithFalse[
+      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
+    ] = null,
     theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuTheme */ js.Any = null
   ): BaseMenuProps = {
     val __obj = js.Dynamic.literal()
@@ -72,6 +80,7 @@ object BaseMenuProps {
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (subMenuItemRender != null) __obj.updateDynamic("subMenuItemRender")(subMenuItemRender.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMenuProps]
   }

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JWKOctKey
-  extends BasicParameters
+  extends _ProduceKeyInput
+     with BasicParameters
      with JSONWebKey {
   var k: js.UndefOr[String] = js.undefined
   // no x5c

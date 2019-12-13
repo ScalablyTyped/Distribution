@@ -22,7 +22,7 @@ trait PickerProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var dateRender: js.UndefOr[js.Function2[/* current */ Moment, /* today */ Moment, ReactNode]] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* current */ js.UndefOr[Moment], Boolean]] = js.undefined
+  var disabledDate: js.UndefOr[js.Function1[/* current */ Moment | Null, Boolean]] = js.undefined
   var dropdownClassName: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String | js.Array[String]] = js.undefined
   var getCalendarContainer: js.UndefOr[js.Function1[/* triggerNode */ Element, HTMLElement]] = js.undefined
@@ -51,7 +51,7 @@ object PickerProps {
     className: String = null,
     dateRender: (/* current */ Moment, /* today */ Moment) => ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[Moment] => Boolean = null,
+    disabledDate: /* current */ Moment | Null => Boolean = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getCalendarContainer: /* triggerNode */ Element => HTMLElement = null,

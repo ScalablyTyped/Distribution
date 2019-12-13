@@ -4,10 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("natural", "WordPunctTokenizer")
-@js.native
-class WordPunctTokenizer () extends Tokenizer {
-  /* CompleteClass */
-  override def tokenize(text: String): js.Array[String] = js.native
+trait WordPunctTokenizer extends Tokenizer
+
+object WordPunctTokenizer {
+  @scala.inline
+  def apply(tokenize: String => js.Array[String]): WordPunctTokenizer = {
+    val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
+  
+    __obj.asInstanceOf[WordPunctTokenizer]
+  }
 }
 

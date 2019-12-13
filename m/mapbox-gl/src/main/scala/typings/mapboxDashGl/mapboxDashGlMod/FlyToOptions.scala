@@ -24,6 +24,7 @@ object FlyToOptions {
     curve: Int | Double = null,
     duration: Int | Double = null,
     easing: /* time */ Double => Double = null,
+    essential: js.UndefOr[Boolean] = js.undefined,
     maxDuration: Int | Double = null,
     minZoom: Int | Double = null,
     offset: PointLike = null,
@@ -40,6 +41,7 @@ object FlyToOptions {
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
+    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.asInstanceOf[js.Any])
     if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

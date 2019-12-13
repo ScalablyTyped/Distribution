@@ -2,6 +2,7 @@ package typings.csvDashStringify.csvDashStringifyMod
 
 import typings.csvDashStringify.Anon_BooleanDate
 import typings.node.Buffer
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,9 +50,9 @@ trait Options extends js.Object {
     */
   var quoted_empty: js.UndefOr[Boolean] = js.undefined
   /**
-    * Boolean, default to false, quote all fields matching a regular expression.
+    * String or RegExp, no default, quote all fields matching a regular expression.
     */
-  var quoted_match: js.UndefOr[Boolean] = js.undefined
+  var quoted_match: js.UndefOr[String | RegExp] = js.undefined
   /**
     * Boolean, default to false, quote all fields of type string even if not required.
     */
@@ -76,7 +77,7 @@ object Options {
     quote: String | Buffer | Boolean = null,
     quoted: js.UndefOr[Boolean] = js.undefined,
     quoted_empty: js.UndefOr[Boolean] = js.undefined,
-    quoted_match: js.UndefOr[Boolean] = js.undefined,
+    quoted_match: String | RegExp = null,
     quoted_string: js.UndefOr[Boolean] = js.undefined,
     record_delimiter: RecordDelimiter = null
   ): Options = {
@@ -90,7 +91,7 @@ object Options {
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
     if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted.asInstanceOf[js.Any])
     if (!js.isUndefined(quoted_empty)) __obj.updateDynamic("quoted_empty")(quoted_empty.asInstanceOf[js.Any])
-    if (!js.isUndefined(quoted_match)) __obj.updateDynamic("quoted_match")(quoted_match.asInstanceOf[js.Any])
+    if (quoted_match != null) __obj.updateDynamic("quoted_match")(quoted_match.asInstanceOf[js.Any])
     if (!js.isUndefined(quoted_string)) __obj.updateDynamic("quoted_string")(quoted_string.asInstanceOf[js.Any])
     if (record_delimiter != null) __obj.updateDynamic("record_delimiter")(record_delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

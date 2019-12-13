@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "icepick"
-version := "v1.3.0-dt-20190322Z-4beca0"
+version := "2.3-dt-20191204Z-b7de2e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

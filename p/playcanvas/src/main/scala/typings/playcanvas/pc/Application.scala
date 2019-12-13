@@ -109,6 +109,12 @@ class Application protected () extends EventHandler {
     */
   var graphicsDevice: GraphicsDevice = js.native
   /**
+    * @name pc.Application#i18n
+    * @type {pc.I18n}
+    * @description Handles localization
+    */
+  var i18n: I18n = js.native
+  /**
     * @name pc.Application#keyboard
     * @type {pc.Keyboard}
     * @description The keyboard device.

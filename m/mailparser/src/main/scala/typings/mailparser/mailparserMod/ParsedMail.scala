@@ -33,6 +33,10 @@ trait ParsedMail extends js.Object {
   	 */
   var from: AddressObject
   /**
+  	 * An array of raw header lines
+  	 */
+  var headerLines: HeaderLines
+  /**
   	 * A Map object with lowercase header keys.
   	 *
   	 * - All address headers are converted into address objects.
@@ -94,6 +98,7 @@ object ParsedMail {
   @scala.inline
   def apply(
     from: AddressObject,
+    headerLines: HeaderLines,
     headers: Headers,
     html: String | Boolean,
     subject: String,
@@ -110,7 +115,7 @@ object ParsedMail {
     references: js.Array[String] = null,
     replyTo: AddressObject = null
   ): ParsedMail = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textAsHtml = textAsHtml.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textAsHtml = textAsHtml.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])

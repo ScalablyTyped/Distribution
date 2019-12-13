@@ -13,6 +13,8 @@ trait QueryFindOneAndRemoveOptions extends js.Object {
   var rawResult: js.UndefOr[Boolean] = js.undefined
   /** sets the document fields to return */
   var select: js.UndefOr[js.Any] = js.undefined
+  /** use client session for transaction */
+  var session: js.UndefOr[ClientSession] = js.undefined
   /**
     * if multiple docs are found by the conditions, sets the sort order to choose
     * which doc to update
@@ -29,6 +31,7 @@ object QueryFindOneAndRemoveOptions {
     projection: js.Any = null,
     rawResult: js.UndefOr[Boolean] = js.undefined,
     select: js.Any = null,
+    session: ClientSession = null,
     sort: js.Any = null,
     strict: Boolean | String = null
   ): QueryFindOneAndRemoveOptions = {
@@ -37,6 +40,7 @@ object QueryFindOneAndRemoveOptions {
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFindOneAndRemoveOptions]

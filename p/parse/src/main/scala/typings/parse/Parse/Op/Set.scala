@@ -1,11 +1,11 @@
 package typings.parse.Parse.Op
 
-import typings.parse.Parse.IBaseObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Set extends IBaseObject {
+trait Set extends js.Object {
+  def toJSON(): js.Any
   def value(): js.Any
 }
 

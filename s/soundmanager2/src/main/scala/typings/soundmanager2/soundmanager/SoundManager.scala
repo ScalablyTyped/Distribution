@@ -1,5 +1,6 @@
 package typings.soundmanager2.soundmanager
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SoundManager extends SoundManagerProps {
+  var audioFormats: js.UndefOr[StringDictionary[SoundManagerAudioFormat]] = js.native
   def canPlayLink(domElement: HTMLElement): Boolean = js.native
   def canPlayMIME(MIMEtype: String): Boolean = js.native
   def canPlayURL(mediaURL: String): Boolean = js.native

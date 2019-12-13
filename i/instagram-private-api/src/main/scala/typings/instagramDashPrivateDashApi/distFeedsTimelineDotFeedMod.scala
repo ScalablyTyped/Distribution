@@ -19,6 +19,7 @@ object distFeedsTimelineDotFeedMod extends js.Object {
     var tag: String = js.native
     def request(): js.Promise[TimelineFeedResponse] = js.native
     def request(options: TimelineFeedsOptions): js.Promise[TimelineFeedResponse] = js.native
+    def state(body: js.Any): js.Any = js.native
   }
   
 }

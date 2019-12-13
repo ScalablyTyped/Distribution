@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Relation")
 @js.native
-class Relation[S /* <: Object[_] */, T /* <: Object[_] */] () extends BaseObject {
+class Relation[S /* <: Object[Attributes] */, T /* <: Object[Attributes] */] () extends js.Object {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
   var key: String = js.native
   var parent: S = js.native
   var targetClassName: String = js.native
-  //Adds a Parse.Object or an array of Parse.Objects to the relation.
+  // Adds a Parse.Object or an array of Parse.Objects to the relation.
   def add(`object`: T): Unit = js.native
   def add(`object`: js.Array[T]): Unit = js.native
   // Returns a Parse.Query that is limited to objects in this relation.
@@ -24,5 +24,6 @@ class Relation[S /* <: Object[_] */, T /* <: Object[_] */] () extends BaseObject
   // Removes a Parse.Object or an array of Parse.Objects from this relation.
   def remove(`object`: T): Unit = js.native
   def remove(`object`: js.Array[T]): Unit = js.native
+  def toJSON(): js.Any = js.native
 }
 

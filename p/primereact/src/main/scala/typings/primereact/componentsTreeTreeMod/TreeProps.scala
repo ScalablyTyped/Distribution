@@ -13,6 +13,7 @@ trait TreeProps extends js.Object {
   var contentClassName: js.UndefOr[String] = js.undefined
   var contentStyle: js.UndefOr[js.Object] = js.undefined
   var contextMenuSelectionKey: js.UndefOr[js.Any] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   var dragdropScope: js.UndefOr[String] = js.undefined
   var expandedKeys: js.UndefOr[js.Any] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
@@ -48,6 +49,7 @@ object TreeProps {
     contentClassName: String = null,
     contentStyle: js.Object = null,
     contextMenuSelectionKey: js.Any = null,
+    disabled: js.UndefOr[Boolean] = js.undefined,
     dragdropScope: String = null,
     expandedKeys: js.Any = null,
     filter: js.UndefOr[Boolean] = js.undefined,
@@ -80,6 +82,7 @@ object TreeProps {
     if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
     if (contextMenuSelectionKey != null) __obj.updateDynamic("contextMenuSelectionKey")(contextMenuSelectionKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (dragdropScope != null) __obj.updateDynamic("dragdropScope")(dragdropScope.asInstanceOf[js.Any])
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])

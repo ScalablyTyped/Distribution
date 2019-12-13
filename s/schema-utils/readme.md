@@ -1,7 +1,7 @@
 
 # Scala.js typings for schema-utils
 
-Typings are for version 2.5.0
+Typings are for version 2.6.1
 
 ## Library description:
 webpack Validation Utils

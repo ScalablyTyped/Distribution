@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/integrations/cordova/config", "loadCordovaConfig")
 @js.native
 object loadCordovaConfig extends js.Object {
-  def apply(integration: Required[ProjectIntegration]): js.Promise[ConfigConfig] = js.native
+  def apply(integration: Required[ProjectIntegration]): js.Promise[CordovaConfig] = js.native
 }
 

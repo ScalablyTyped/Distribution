@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "morphdom"
-version := "2.5.10-924d0f"
+version := "2.5.12-5c1eaa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

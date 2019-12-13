@@ -20,10 +20,12 @@ trait Creep
   var body: js.Array[BodyPartDefinition] = js.native
   /**
     * An object with the creep's cargo contents.
+    * @deprecated Is an alias for Creep.store
     */
   var carry: StoreDefinition = js.native
   /**
     * The total amount of resources the creep can carry.
+    * @deprecated alias for Creep.store.getCapacity
     */
   var carryCapacity: Double = js.native
   /**
@@ -41,7 +43,7 @@ trait Creep
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
-  var id: String = js.native
+  var id: Id[this.type] = js.native
   /**
     * A shorthand to `Memory.creeps[creep.name]`. You can use it for quick access the creep’s specific memory data object.
     */
@@ -71,6 +73,10 @@ trait Creep
     * Whether this creep is still being spawned.
     */
   var spawning: Boolean = js.native
+  /**
+    * A Store object that contains cargo of this creep.
+    */
+  var store: StoreDefinition = js.native
   /**
     * The remaining amount of game ticks after which the creep will die.
     *
@@ -154,13 +160,14 @@ trait Creep
     * @param type A body part type, one of the following body part constants: MOVE, WORK, CARRY, ATTACK, RANGED_ATTACK, HEAL, TOUGH, CLAIM
     */
   def getActiveBodyparts(`type`: BodyPartConstant): Double = js.native
+  def harvest(target: Deposit): CreepActionReturnCode | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES = js.native
   def harvest(target: Mineral[MineralConstant]): CreepActionReturnCode | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES = js.native
   /**
-    * Harvest energy from the source.
+    * Harvest energy from the source or resource from minerals or deposits.
     *
     * Needs the WORK body part.
     *
-    * If the creep has an empty CARRY body part, the harvested energy is put into it; otherwise it is dropped on the ground.
+    * If the creep has an empty CARRY body part, the harvested resource is put into it; otherwise it is dropped on the ground.
     *
     * The target has to be at an adjacent square to the creep.
     * @param target The source object to be harvested.
@@ -323,8 +330,10 @@ trait Creep
     * @param target The target controller object to be upgraded.
     */
   def upgradeController(target: StructureController): ScreepsReturnCode = js.native
+  def withdraw(target: Ruin, resourceType: ResourceConstant): ScreepsReturnCode = js.native
+  def withdraw(target: Ruin, resourceType: ResourceConstant, amount: Double): ScreepsReturnCode = js.native
   /**
-    * Withdraw resources from a structure.
+    * Withdraw resources from a structure, a tombstone or a ruin.
     *
     * The target has to be at adjacent square to the creep.
     *

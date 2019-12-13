@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 trait Anon_AttackType extends js.Object {
   var attackType: EventAttackType
   var damage: Double
-  // EVENT_ATTACK
   var targetId: String
 }
 

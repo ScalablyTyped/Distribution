@@ -1,10 +1,13 @@
 package typings.react.reactMod
 
+import typings.react.reactStrings.Empty
 import typings.react.reactStrings.`after-edge`
 import typings.react.reactStrings.`before-edge`
 import typings.react.reactStrings.`text-after-edge`
 import typings.react.reactStrings.`text-before-edge`
+import typings.react.reactStrings.`use-credentials`
 import typings.react.reactStrings.alphabetic
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.auto
 import typings.react.reactStrings.baseline
 import typings.react.reactStrings.bevel
@@ -60,7 +63,7 @@ trait SVGAttributes[T]
   var ascent: js.UndefOr[Double | String] = js.undefined
   var attributeName: js.UndefOr[String] = js.undefined
   var attributeType: js.UndefOr[String] = js.undefined
-  var autoReverse: js.UndefOr[Double | String] = js.undefined
+  var autoReverse: js.UndefOr[Booleanish] = js.undefined
   var azimuth: js.UndefOr[Double | String] = js.undefined
   var baseFrequency: js.UndefOr[Double | String] = js.undefined
   var baseProfile: js.UndefOr[Double | String] = js.undefined
@@ -85,6 +88,7 @@ trait SVGAttributes[T]
   var colorRendering: js.UndefOr[Double | String] = js.undefined
   var contentScriptType: js.UndefOr[Double | String] = js.undefined
   var contentStyleType: js.UndefOr[Double | String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | Empty] = js.undefined
   var cursor: js.UndefOr[Double | String] = js.undefined
   var cx: js.UndefOr[Double | String] = js.undefined
   var cy: js.UndefOr[Double | String] = js.undefined
@@ -104,7 +108,7 @@ trait SVGAttributes[T]
   var enableBackground: js.UndefOr[Double | String] = js.undefined
   var end: js.UndefOr[Double | String] = js.undefined
   var exponent: js.UndefOr[Double | String] = js.undefined
-  var externalResourcesRequired: js.UndefOr[Double | String] = js.undefined
+  var externalResourcesRequired: js.UndefOr[Booleanish] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[nonzero | evenodd | inherit] = js.undefined
@@ -113,7 +117,7 @@ trait SVGAttributes[T]
   var filterUnits: js.UndefOr[Double | String] = js.undefined
   var floodColor: js.UndefOr[Double | String] = js.undefined
   var floodOpacity: js.UndefOr[Double | String] = js.undefined
-  var focusable: js.UndefOr[Double | String] = js.undefined
+  var focusable: js.UndefOr[Booleanish | auto] = js.undefined
   var fontFamily: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double | String] = js.undefined
   var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
@@ -199,7 +203,7 @@ trait SVGAttributes[T]
   var pointsAtX: js.UndefOr[Double | String] = js.undefined
   var pointsAtY: js.UndefOr[Double | String] = js.undefined
   var pointsAtZ: js.UndefOr[Double | String] = js.undefined
-  var preserveAlpha: js.UndefOr[Double | String] = js.undefined
+  var preserveAlpha: js.UndefOr[Booleanish] = js.undefined
   var preserveAspectRatio: js.UndefOr[String] = js.undefined
   var primitiveUnits: js.UndefOr[Double | String] = js.undefined
   var r: js.UndefOr[Double | String] = js.undefined
@@ -326,7 +330,7 @@ object SVGAttributes {
     ascent: Double | String = null,
     attributeName: String = null,
     attributeType: String = null,
-    autoReverse: Double | String = null,
+    autoReverse: js.UndefOr[Boolean] = js.undefined,
     azimuth: Double | String = null,
     baseFrequency: Double | String = null,
     baseProfile: Double | String = null,
@@ -349,6 +353,7 @@ object SVGAttributes {
     colorRendering: Double | String = null,
     contentScriptType: Double | String = null,
     contentStyleType: Double | String = null,
+    crossOrigin: anonymous | `use-credentials` | Empty = null,
     cursor: Double | String = null,
     cx: Double | String = null,
     cy: Double | String = null,
@@ -368,7 +373,7 @@ object SVGAttributes {
     enableBackground: Double | String = null,
     end: Double | String = null,
     exponent: Double | String = null,
-    externalResourcesRequired: Double | String = null,
+    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: nonzero | evenodd | inherit = null,
@@ -377,7 +382,7 @@ object SVGAttributes {
     filterUnits: Double | String = null,
     floodColor: Double | String = null,
     floodOpacity: Double | String = null,
-    focusable: Double | String = null,
+    focusable: Booleanish | auto = null,
     fontFamily: String = null,
     fontSize: Double | String = null,
     fontSizeAdjust: Double | String = null,
@@ -463,7 +468,7 @@ object SVGAttributes {
     pointsAtX: Double | String = null,
     pointsAtY: Double | String = null,
     pointsAtZ: Double | String = null,
-    preserveAlpha: Double | String = null,
+    preserveAlpha: js.UndefOr[Boolean] = js.undefined,
     preserveAspectRatio: String = null,
     primitiveUnits: Double | String = null,
     r: Double | String = null,
@@ -565,8 +570,7 @@ object SVGAttributes {
     xmlSpace: String = null,
     xmlns: String = null,
     xmlnsXlink: String = null,
-    y: Double | String = null,
-    y1: Double | String = null
+    y: Double | String = null
   ): SVGAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (AriaAttributes != null) js.Dynamic.global.Object.assign(__obj, AriaAttributes)
@@ -582,7 +586,7 @@ object SVGAttributes {
     if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
     if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
     if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (autoReverse != null) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
     if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
     if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
     if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
@@ -605,6 +609,7 @@ object SVGAttributes {
     if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
     if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
     if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
@@ -624,7 +629,7 @@ object SVGAttributes {
     if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (externalResourcesRequired != null) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
+    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -719,7 +724,7 @@ object SVGAttributes {
     if (pointsAtX != null) __obj.updateDynamic("pointsAtX")(pointsAtX.asInstanceOf[js.Any])
     if (pointsAtY != null) __obj.updateDynamic("pointsAtY")(pointsAtY.asInstanceOf[js.Any])
     if (pointsAtZ != null) __obj.updateDynamic("pointsAtZ")(pointsAtZ.asInstanceOf[js.Any])
-    if (preserveAlpha != null) __obj.updateDynamic("preserveAlpha")(preserveAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveAlpha)) __obj.updateDynamic("preserveAlpha")(preserveAlpha.asInstanceOf[js.Any])
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
     if (primitiveUnits != null) __obj.updateDynamic("primitiveUnits")(primitiveUnits.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
@@ -822,7 +827,6 @@ object SVGAttributes {
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
     if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[T]]
   }
 }

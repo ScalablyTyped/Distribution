@@ -1,7 +1,7 @@
 package typings.stripe.stripeMod.events
 
 import typings.stripe.Anon_Id
-import typings.stripe.Anon_Object
+import typings.stripe.Anon_Key
 import typings.stripe.stripeMod.IResourceObject
 import typings.stripe.stripeStrings.event
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait IEvent extends IResourceObject {
   /**
     * Hash containing data associated with the event.
     */
-  var data: Anon_Object
+  var data: Anon_Key
   var livemode: Boolean
   /**
     * Value is "event"
@@ -51,7 +51,7 @@ object IEvent {
   def apply(
     api_version: String,
     created: Double,
-    data: Anon_Object,
+    data: Anon_Key,
     id: String,
     livemode: Boolean,
     `object`: event,

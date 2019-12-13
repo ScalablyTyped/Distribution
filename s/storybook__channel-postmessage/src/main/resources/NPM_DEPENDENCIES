@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/channel-postmessage" : "5.2.6"
+      "@storybook/channel-postmessage" : "5.2.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/channel-postmessage" : "5.2.6"
+      "@storybook/channel-postmessage" : "5.2.8"
     }
   ],
   "compile-devDependencies" : [

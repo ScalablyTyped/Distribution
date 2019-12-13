@@ -30,6 +30,7 @@ object Attachment {
     content: Buffer,
     contentDisposition: String,
     contentType: String,
+    headerLines: HeaderLines,
     headers: Headers,
     related: Boolean,
     size: Double,
@@ -38,7 +39,7 @@ object Attachment {
     contentId: String = null,
     filename: String = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])

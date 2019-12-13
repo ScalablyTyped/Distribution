@@ -7,7 +7,16 @@ import scala.scalajs.js.annotation._
 
 object xstateStrings {
   @js.native
+  sealed trait `*` extends js.Object
+  
+  @js.native
   sealed trait DOT extends js.Object
+  
+  @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
+  sealed trait ExtractStateValue extends js.Object
   
   @js.native
   sealed trait PropertyAssigner extends js.Object
@@ -22,25 +31,19 @@ object xstateStrings {
   sealed trait StatesDefinition extends js.Object
   
   @js.native
-  sealed trait TransitionsConfig extends js.Object
+  sealed trait TransitionDefinitionMap extends js.Object
   
   @js.native
-  sealed trait TransitionsDefinition extends js.Object
-  
-  @js.native
-  sealed trait ValueAdjMapOptions extends js.Object
-  
-  @js.native
-  sealed trait actions extends js.Object
-  
-  @js.native
-  sealed trait assign extends js.Object
+  sealed trait TransitionsConfigMap extends js.Object
   
   @js.native
   sealed trait atomic extends _StateTypes
   
   @js.native
   sealed trait compound extends _StateTypes
+  
+  @js.native
+  sealed trait configuration extends js.Object
   
   @js.native
   sealed trait deep extends js.Object
@@ -70,10 +73,19 @@ object xstateStrings {
   sealed trait shallow extends js.Object
   
   @js.native
+  sealed trait transitions extends js.Object
+  
+  @js.native
   sealed trait xstateDOTguard extends js.Object
   
   @scala.inline
+  def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def DOT: DOT = ".".asInstanceOf[DOT]
+  @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def ExtractStateValue: ExtractStateValue = "ExtractStateValue".asInstanceOf[ExtractStateValue]
   @scala.inline
   def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
   @scala.inline
@@ -83,19 +95,15 @@ object xstateStrings {
   @scala.inline
   def StatesDefinition: StatesDefinition = "StatesDefinition".asInstanceOf[StatesDefinition]
   @scala.inline
-  def TransitionsConfig: TransitionsConfig = "TransitionsConfig".asInstanceOf[TransitionsConfig]
+  def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
   @scala.inline
-  def TransitionsDefinition: TransitionsDefinition = "TransitionsDefinition".asInstanceOf[TransitionsDefinition]
-  @scala.inline
-  def ValueAdjMapOptions: ValueAdjMapOptions = "ValueAdjMapOptions".asInstanceOf[ValueAdjMapOptions]
-  @scala.inline
-  def actions: actions = "actions".asInstanceOf[actions]
-  @scala.inline
-  def assign: assign = "assign".asInstanceOf[assign]
+  def TransitionsConfigMap: TransitionsConfigMap = "TransitionsConfigMap".asInstanceOf[TransitionsConfigMap]
   @scala.inline
   def atomic: atomic = "atomic".asInstanceOf[atomic]
   @scala.inline
   def compound: compound = "compound".asInstanceOf[compound]
+  @scala.inline
+  def configuration: configuration = "configuration".asInstanceOf[configuration]
   @scala.inline
   def deep: deep = "deep".asInstanceOf[deep]
   @scala.inline
@@ -114,6 +122,8 @@ object xstateStrings {
   def scxml: scxml = "scxml".asInstanceOf[scxml]
   @scala.inline
   def shallow: shallow = "shallow".asInstanceOf[shallow]
+  @scala.inline
+  def transitions: transitions = "transitions".asInstanceOf[transitions]
   @scala.inline
   def xstateDOTguard: xstateDOTguard = "xstate.guard".asInstanceOf[xstateDOTguard]
 }

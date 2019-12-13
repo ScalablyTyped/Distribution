@@ -15,6 +15,7 @@ trait PaginateOptions extends js.Object {
   var page: js.UndefOr[Double] = js.undefined
   /* tslint:disable-next-line: ban-types */
   var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions] = js.undefined
+  var read: js.UndefOr[ReadOptions] = js.undefined
   /* tslint:disable-next-line: ban-types */
   var select: js.UndefOr[js.Object | String] = js.undefined
   /* tslint:disable-next-line: ban-types */
@@ -32,6 +33,7 @@ object PaginateOptions {
     offset: Int | Double = null,
     page: Int | Double = null,
     populate: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions = null,
+    read: ReadOptions = null,
     select: js.Object | String = null,
     sort: js.Object | String = null
   ): PaginateOptions = {
@@ -44,6 +46,7 @@ object PaginateOptions {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginateOptions]

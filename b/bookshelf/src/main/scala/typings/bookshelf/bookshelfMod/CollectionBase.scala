@@ -5,7 +5,6 @@ import typings.lodash.lodashMod.Dictionary
 import typings.lodash.lodashMod.DictionaryIterator
 import typings.lodash.lodashMod.List
 import typings.lodash.lodashMod.ListIterator
-import typings.lodash.lodashMod.LoDashExplicitObjectWrapper
 import typings.lodash.lodashMod.MemoIterator
 import typings.lodash.lodashMod.ObjectIterator
 import scala.scalajs.js
@@ -40,7 +39,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   @JSName("any")
   def any_R_Object[R /* <: js.Object */](): Boolean = js.native
   def at(index: Double): T = js.native
-  def chain(): LoDashExplicitObjectWrapper[T] = js.native
   def collect(): js.Array[T] = js.native
   def collect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
   def collect(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): js.Array[T] = js.native
@@ -67,24 +65,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def detect[R /* <: js.Object */](predicate: R): T = js.native
   @JSName("detect")
   def detect_R_Object[R /* <: js.Object */](): T = js.native
-  def difference(values: T*): js.Array[T] = js.native
-  def drop(): js.Array[T] = js.native
-  def drop(n: Double): js.Array[T] = js.native
-  def each(): T = js.native
-  def each(callback: ObjectIterator[T, Unit]): T = js.native
-  def each(callback: ObjectIterator[T, Unit], thisArg: js.Any): T = js.native
-  @JSName("each")
-  def each_Dictionary(): Dictionary[T] = js.native
-  @JSName("each")
-  def each_Dictionary(callback: DictionaryIterator[T, Unit]): Dictionary[T] = js.native
-  @JSName("each")
-  def each_Dictionary(callback: DictionaryIterator[T, Unit], thisArg: js.Any): Dictionary[T] = js.native
-  @JSName("each")
-  def each_List(): List[T] = js.native
-  @JSName("each")
-  def each_List(callback: ListIterator[T, Unit]): List[T] = js.native
-  @JSName("each")
-  def each_List(callback: ListIterator[T, Unit], thisArg: js.Any): List[T] = js.native
   def every(): Boolean = js.native
   def every(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Boolean = js.native
   def every(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean]), thisArg: js.Any): Boolean = js.native
@@ -145,12 +125,8 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def groupBy[R /* <: js.Object */](predicate: R): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
   def groupBy_R_Object[R /* <: js.Object */](): Dictionary[js.Array[T]] = js.native
-  def head(): T = js.native
   def include(value: js.Any): Boolean = js.native
   def include(value: js.Any, fromIndex: Double): Boolean = js.native
-  def indexOf(value: js.Any): Double = js.native
-  def indexOf(value: js.Any, fromIndex: Double): Double = js.native
-  def initial(): js.Array[T] = js.native
   def inject[R](): R = js.native
   def inject[R](callback: MemoIterator[T, R]): R = js.native
   def inject[R](callback: MemoIterator[T, R], accumulator: R): R = js.native
@@ -161,8 +137,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def isEmpty(): Boolean = js.native
   def keys(): js.Array[String] = js.native
   def last(): T = js.native
-  def lastIndexOf(value: js.Any): Double = js.native
-  def lastIndexOf(value: js.Any, fromIndex: Double): Double = js.native
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
   // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](): js.Array[U] = js.native
@@ -170,22 +144,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def map[U](predicate: (DictionaryIterator[T, U]) | (ListIterator[T, U]), thisArg: js.Any): js.Array[U] = js.native
   def map[U](predicate: String): js.Array[U] = js.native
   def map[U](predicate: String, thisArg: js.Any): js.Array[U] = js.native
-  def max(): T = js.native
-  def max(predicate: String): T = js.native
-  def max(predicate: String, thisArg: js.Any): T = js.native
-  def max(predicate: ListIterator[T, Boolean]): T = js.native
-  def max(predicate: ListIterator[T, Boolean], thisArg: js.Any): T = js.native
-  def max[R /* <: js.Object */](predicate: R): T = js.native
-  @JSName("max")
-  def max_R_Object[R /* <: js.Object */](): T = js.native
-  def min(): T = js.native
-  def min(predicate: String): T = js.native
-  def min(predicate: String, thisArg: js.Any): T = js.native
-  def min(predicate: ListIterator[T, Boolean]): T = js.native
-  def min(predicate: ListIterator[T, Boolean], thisArg: js.Any): T = js.native
-  def min[R /* <: js.Object */](predicate: R): T = js.native
-  @JSName("min")
-  def min_R_Object[R /* <: js.Object */](): T = js.native
   def parse(response: js.Any): js.Any = js.native
   def pluck(attribute: String): js.Array[_] = js.native
   def pop(): Unit = js.native
@@ -232,8 +190,6 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def set(models: js.Array[StringDictionary[_] | T], options: CollectionSetOptions): Collection[T] = js.native
   def shift(): Unit = js.native
   def shift(options: EventOptions): Unit = js.native
-  def shuffle(): js.Array[T] = js.native
-  def size(): Double = js.native
   def slice(): Unit = js.native
   def slice(begin: Double): Unit = js.native
   def slice(begin: Double, end: Double): Unit = js.native
@@ -253,15 +209,11 @@ abstract class CollectionBase[T /* <: Model[_] */] () extends Events[T] {
   def sortBy[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
   @JSName("sortBy")
   def sortBy_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
-  def tail(): js.Array[T] = js.native
-  def take(): js.Array[T] = js.native
-  def take(n: Double): js.Array[T] = js.native
   def toArray(): js.Array[T] = js.native
   def toJSON(): js.Array[_] = js.native
   def toJSON(options: SerializeOptions): js.Array[_] = js.native
   def unshift(model: js.Any): Unit = js.native
   def unshift(model: js.Any, options: CollectionAddOptions): Unit = js.native
   def where(`match`: StringDictionary[js.Any], firstOnly: Boolean): T | Collection[T] = js.native
-  def without(values: js.Any*): js.Array[T] = js.native
 }
 

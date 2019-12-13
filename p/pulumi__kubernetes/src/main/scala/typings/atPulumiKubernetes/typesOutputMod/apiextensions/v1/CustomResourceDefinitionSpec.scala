@@ -33,7 +33,7 @@ trait CustomResourceDefinitionSpec extends js.Object {
   val preserveUnknownFields: Boolean
   /**
     * scope indicates whether the defined custom resource is cluster- or namespace-scoped.
-    * Allowed values are `Cluster` and `Namespaced`. Default is `Namespaced`.
+    * Allowed values are `Cluster` and `Namespaced`.
     */
   val scope: String
   /**

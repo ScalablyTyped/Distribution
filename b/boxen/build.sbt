@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "boxen"
-version := "4.1.0-79e237"
+version := "4.2.0-852446"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

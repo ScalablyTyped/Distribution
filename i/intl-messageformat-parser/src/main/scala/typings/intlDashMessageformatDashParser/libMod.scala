@@ -1,5 +1,6 @@
 package typings.intlDashMessageformatDashParser
 
+import typings.atFormatjsIntlDashUnifiedDashNumberformat.atFormatjsIntlDashUnifiedDashNumberformatMod.UnifiedNumberFormatOptions
 import typings.intlDashMessageformatDashParser.libMod.ParseOptions
 import typings.intlDashMessageformatDashParser.libParserMod.Expectation
 import typings.intlDashMessageformatDashParser.libParserMod.IFileRange
@@ -11,6 +12,7 @@ import typings.intlDashMessageformatDashParser.libTypesMod.LiteralElement
 import typings.intlDashMessageformatDashParser.libTypesMod.MessageFormatElement
 import typings.intlDashMessageformatDashParser.libTypesMod.NumberElement
 import typings.intlDashMessageformatDashParser.libTypesMod.NumberSkeleton
+import typings.intlDashMessageformatDashParser.libTypesMod.NumberSkeletonToken
 import typings.intlDashMessageformatDashParser.libTypesMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +29,7 @@ object libMod extends js.Object {
   }
   
   val pegParse: ParseFunction = js.native
+  def convertNumberSkeletonToNumberFormatOptions(tokens: js.Array[NumberSkeletonToken]): UnifiedNumberFormatOptions = js.native
   def createLiteralElement(value: String): LiteralElement = js.native
   def createNumberElement(value: String): NumberElement = js.native
   def createNumberElement(value: String, style: String): NumberElement = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for geolite2
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 Maxmind's GeoLite2 Free Databases

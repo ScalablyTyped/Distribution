@@ -115,7 +115,7 @@ trait ValidatingWebhook extends js.Object {
     */
   var rules: js.UndefOr[Input[js.Array[Input[RuleWithOperations]]]] = js.undefined
   /**
-    * SideEffects states whether this webhookk has side effects. Acceptable values are: Unknown,
+    * SideEffects states whether this webhook has side effects. Acceptable values are: Unknown,
     * None, Some, NoneOnDryRun Webhooks with side effects MUST implement a reconciliation system,
     * since a request may be rejected by a future step in the admission change and the side
     * effects therefore need to be undone. Requests with the dryRun attribute will be

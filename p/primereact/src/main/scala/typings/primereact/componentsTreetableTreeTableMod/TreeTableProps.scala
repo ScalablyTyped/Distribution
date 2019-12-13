@@ -1,6 +1,6 @@
 package typings.primereact.componentsTreetableTreeTableMod
 
-import typings.primereact.Anon_Columns
+import typings.primereact.Anon_ColumnsDragIndex
 import typings.primereact.Anon_Delta
 import typings.primereact.Anon_First
 import typings.primereact.Anon_MultiSortMeta
@@ -39,7 +39,7 @@ trait TreeTableProps extends js.Object {
   var loadingIcon: js.UndefOr[String] = js.undefined
   var metaKeySelection: js.UndefOr[Boolean] = js.undefined
   var multiSortMeta: js.UndefOr[js.Array[_]] = js.undefined
-  var onColReorder: js.UndefOr[js.Function1[/* e */ Anon_Columns, Unit]] = js.undefined
+  var onColReorder: js.UndefOr[js.Function1[/* e */ Anon_ColumnsDragIndex, Unit]] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* e */ Anon_NodeOriginalEvent, Unit]] = js.undefined
   var onColumnResizeEnd: js.UndefOr[js.Function1[/* e */ Anon_Delta, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* e */ Anon_Node, Unit]] = js.undefined
@@ -110,7 +110,7 @@ object TreeTableProps {
     loadingIcon: String = null,
     metaKeySelection: js.UndefOr[Boolean] = js.undefined,
     multiSortMeta: js.Array[_] = null,
-    onColReorder: /* e */ Anon_Columns => Unit = null,
+    onColReorder: /* e */ Anon_ColumnsDragIndex => Unit = null,
     onCollapse: /* e */ Anon_NodeOriginalEvent => Unit = null,
     onColumnResizeEnd: /* e */ Anon_Delta => Unit = null,
     onContextMenu: /* e */ Anon_Node => Unit = null,

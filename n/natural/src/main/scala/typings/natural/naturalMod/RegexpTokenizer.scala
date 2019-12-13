@@ -4,11 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("natural", "RegexpTokenizer")
-@js.native
-class RegexpTokenizer protected () extends Tokenizer {
-  def this(options: RegexTokenizerOptions) = this()
-  /* CompleteClass */
-  override def tokenize(text: String): js.Array[String] = js.native
+trait RegexpTokenizer extends Tokenizer
+
+object RegexpTokenizer {
+  @scala.inline
+  def apply(tokenize: String => js.Array[String]): RegexpTokenizer = {
+    val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
+  
+    __obj.asInstanceOf[RegexpTokenizer]
+  }
 }
 

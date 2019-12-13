@@ -28,6 +28,7 @@ object AttachmentStream {
     content: Stream,
     contentDisposition: String,
     contentType: String,
+    headerLines: HeaderLines,
     headers: Headers,
     release: () => Unit,
     size: Double,
@@ -37,7 +38,7 @@ object AttachmentStream {
     filename: String = null,
     related: js.UndefOr[Boolean] = js.undefined
   ): AttachmentStream = {
-    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])

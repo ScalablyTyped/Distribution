@@ -49,16 +49,14 @@ class MathBackendWebGL () extends KernelBackend {
   var endTimer: js.Any = js.native
   var fftImpl: js.Any = js.native
   var floatPrecisionValue: js.Any = js.native
-  var fromPixels2DContext: js.Any = js.native
   var getAndSaveBinary: js.Any = js.native
   var getCPUBackend: js.Any = js.native
   var getQueryTime: js.Any = js.native
   var getValuesFromTexture: js.Any = js.native
-  var gpgpu: js.UndefOr[js.Any] = js.native
+  var gpgpu: GPGPUContext = js.native
   var gpgpuCreatedLocally: js.Any = js.native
   var makeComplexComponentTensorInfo: js.Any = js.native
   var makeOutput: js.Any = js.native
-  var makeTensorInfo: js.Any = js.native
   var numBytesInGPU: js.Any = js.native
   var numMBBeforeWarning: js.Any = js.native
   var packTensor: js.Any = js.native
@@ -108,6 +106,7 @@ class MathBackendWebGL () extends KernelBackend {
   def getGPGPUContext(): GPGPUContext = js.native
   def getTexture(dataId: DataId): WebGLTexture = js.native
   def getTextureManager(): TextureManager = js.native
+  def makeTensorInfo(shape: js.Array[Double], dtype: DataType): TensorInfo = js.native
   def reshape[R /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any

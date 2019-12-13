@@ -50,8 +50,8 @@ class List[TData] () extends js.Object {
   def replace(oldItem: ListItem[TData], newItemOrList: List[TData]): List[TData] = js.native
   def replace(oldItem: ListItem[TData], newItemOrList: ListItem[TData]): List[TData] = js.native
   def shift(): js.UndefOr[ListItem[TData]] = js.native
-  def some(fn: IteratorFn[TData, Boolean, List[TData]]): Unit = js.native
-  def some[TContext](fn: IteratorFn[TData, Boolean, TContext], context: TContext): Unit = js.native
+  def some(fn: IteratorFn[TData, Boolean, List[TData]]): Boolean = js.native
+  def some[TContext](fn: IteratorFn[TData, Boolean, TContext], context: TContext): Boolean = js.native
   def toArray(): js.Array[TData] = js.native
   def toJSON(): js.Array[TData] = js.native
   def unshift(data: TData): Unit = js.native

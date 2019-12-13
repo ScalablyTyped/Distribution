@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ValidationError
-  extends Error
-     with JoiObject {
+trait ValidationError extends Error {
   var _object: js.Any = js.native
   /**
     * array of errors.
     */
   var details: js.Array[ValidationErrorItem] = js.native
+  var isJoi: Boolean = js.native
   @JSName("name")
   var name_ValidationError: typings.atHapiJoi.atHapiJoiStrings.ValidationError = js.native
   /**

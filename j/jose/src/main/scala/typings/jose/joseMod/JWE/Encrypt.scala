@@ -1,6 +1,6 @@
 package typings.jose.joseMod.JWE
 
-import typings.jose.joseMod.JWK.Key
+import typings.jose.joseMod.ProduceKeyInput
 import typings.jose.joseStrings.compact
 import typings.jose.joseStrings.flattened
 import typings.jose.joseStrings.general
@@ -26,32 +26,32 @@ class Encrypt protected () extends js.Object {
   def encrypt_flattened(serialization: flattened): FlattenedJWE = js.native
   @JSName("encrypt")
   def encrypt_general(serialization: general): GeneralJWE = js.native
-  def recipient(key: Key): Unit = js.native
-  def recipient(key: Key, header: js.Object): Unit = js.native
+  def recipient(key: ProduceKeyInput): Unit = js.native
+  def recipient(key: ProduceKeyInput, header: js.Object): Unit = js.native
 }
 
 @JSImport("jose", "JWE.encrypt")
 @js.native
 object encrypt extends js.Object {
-  def apply(payload: String, key: Key): String = js.native
-  def apply(payload: String, key: Key, `protected`: js.Object): String = js.native
-  def apply(payload: Buffer, key: Key): String = js.native
-  def apply(payload: Buffer, key: Key, `protected`: js.Object): String = js.native
-  def flattened(payload: String, key: Key): FlattenedJWE = js.native
-  def flattened(payload: String, key: Key, `protected`: js.Object): FlattenedJWE = js.native
-  def flattened(payload: String, key: Key, `protected`: js.Object, header: js.Object): FlattenedJWE = js.native
-  def flattened(payload: String, key: Key, `protected`: js.Object, header: js.Object, aad: String): FlattenedJWE = js.native
-  def flattened(payload: Buffer, key: Key): FlattenedJWE = js.native
-  def flattened(payload: Buffer, key: Key, `protected`: js.Object): FlattenedJWE = js.native
-  def flattened(payload: Buffer, key: Key, `protected`: js.Object, header: js.Object): FlattenedJWE = js.native
-  def flattened(payload: Buffer, key: Key, `protected`: js.Object, header: js.Object, aad: String): FlattenedJWE = js.native
-  def general(payload: String, key: Key): GeneralJWE = js.native
-  def general(payload: String, key: Key, `protected`: js.Object): GeneralJWE = js.native
-  def general(payload: String, key: Key, `protected`: js.Object, header: js.Object): GeneralJWE = js.native
-  def general(payload: String, key: Key, `protected`: js.Object, header: js.Object, aad: String): GeneralJWE = js.native
-  def general(payload: Buffer, key: Key): GeneralJWE = js.native
-  def general(payload: Buffer, key: Key, `protected`: js.Object): GeneralJWE = js.native
-  def general(payload: Buffer, key: Key, `protected`: js.Object, header: js.Object): GeneralJWE = js.native
-  def general(payload: Buffer, key: Key, `protected`: js.Object, header: js.Object, aad: String): GeneralJWE = js.native
+  def apply(payload: String, key: ProduceKeyInput): String = js.native
+  def apply(payload: String, key: ProduceKeyInput, `protected`: js.Object): String = js.native
+  def apply(payload: Buffer, key: ProduceKeyInput): String = js.native
+  def apply(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): String = js.native
+  def flattened(payload: String, key: ProduceKeyInput): FlattenedJWE = js.native
+  def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = js.native
+  def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, header: js.Object): FlattenedJWE = js.native
+  def flattened(payload: String, key: ProduceKeyInput, `protected`: js.Object, header: js.Object, aad: String): FlattenedJWE = js.native
+  def flattened(payload: Buffer, key: ProduceKeyInput): FlattenedJWE = js.native
+  def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): FlattenedJWE = js.native
+  def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, header: js.Object): FlattenedJWE = js.native
+  def flattened(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, header: js.Object, aad: String): FlattenedJWE = js.native
+  def general(payload: String, key: ProduceKeyInput): GeneralJWE = js.native
+  def general(payload: String, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = js.native
+  def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, header: js.Object): GeneralJWE = js.native
+  def general(payload: String, key: ProduceKeyInput, `protected`: js.Object, header: js.Object, aad: String): GeneralJWE = js.native
+  def general(payload: Buffer, key: ProduceKeyInput): GeneralJWE = js.native
+  def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object): GeneralJWE = js.native
+  def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, header: js.Object): GeneralJWE = js.native
+  def general(payload: Buffer, key: ProduceKeyInput, `protected`: js.Object, header: js.Object, aad: String): GeneralJWE = js.native
 }
 

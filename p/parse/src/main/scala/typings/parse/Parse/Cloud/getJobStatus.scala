@@ -1,5 +1,6 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,6 +14,6 @@ object getJobStatus extends js.Object {
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def apply(jobStatusId: String): js.Promise[Object[_]] = js.native
+  def apply(jobStatusId: String): js.Promise[Object[Attributes]] = js.native
 }
 

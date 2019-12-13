@@ -17,6 +17,7 @@ trait List extends js.Object {
   def add(values: js.Array[js.Object]): Unit = js.native
   def add(values: js.Array[js.Object], callback: js.Function1[/* item */ ListItem, Unit]): Unit = js.native
   def clear(): Unit = js.native
+  def filter(): Unit = js.native
   def filter(filterFunction: js.Function1[/* item */ ListItem, Boolean]): Unit = js.native
   def fuzzySearch(searchString: String): Unit = js.native
   def fuzzySearch(searchString: String, columns: js.Array[String]): Unit = js.native

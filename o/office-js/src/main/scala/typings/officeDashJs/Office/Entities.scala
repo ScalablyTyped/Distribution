@@ -27,8 +27,6 @@ import scala.scalajs.js.annotation._
   * When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity contains data; 
   * all other properties are null.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem

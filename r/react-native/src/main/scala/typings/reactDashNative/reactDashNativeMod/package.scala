@@ -190,7 +190,6 @@ package object reactDashNativeMod {
   type ScrollViewProperties = ScrollViewProps
   type ScrollViewPropertiesAndroid = ScrollViewPropsAndroid
   type ScrollViewPropertiesIOS = ScrollViewPropsIOS
-  type SectionList[ItemT] = SectionListStatic[ItemT]
   type SectionListProperties[ItemT] = SectionListProps[ItemT]
   type SectionListRenderItem[ItemT] = js.Function1[/* info */ SectionListRenderItemInfo[ItemT], ReactElement | Null]
   /**

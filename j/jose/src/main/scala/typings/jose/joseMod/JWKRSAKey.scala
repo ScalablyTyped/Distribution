@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait JWKRSAKey
   extends KeyParameters
-     with JSONWebKey {
+     with JSONWebKey
+     with _ProduceKeyInput {
   var d: js.UndefOr[String] = js.undefined
   var dp: js.UndefOr[String] = js.undefined
   var dq: js.UndefOr[String] = js.undefined

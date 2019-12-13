@@ -9,8 +9,6 @@ trait CatCount extends Generic {
   var h: js.UndefOr[String | js.Array[String]] = js.undefined
   var help: js.UndefOr[Boolean] = js.undefined
   var index: js.UndefOr[String | js.Array[String]] = js.undefined
-  var local: js.UndefOr[Boolean] = js.undefined
-  var master_timeout: js.UndefOr[String] = js.undefined
   var s: js.UndefOr[String | js.Array[String]] = js.undefined
   var v: js.UndefOr[Boolean] = js.undefined
 }
@@ -26,8 +24,6 @@ object CatCount {
     human: js.UndefOr[Boolean] = js.undefined,
     ignore: Double | js.Array[Double] = null,
     index: String | js.Array[String] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    master_timeout: String = null,
     method: String = null,
     pretty: js.UndefOr[Boolean] = js.undefined,
     s: String | js.Array[String] = null,
@@ -43,8 +39,6 @@ object CatCount {
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (master_timeout != null) __obj.updateDynamic("master_timeout")(master_timeout.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
     if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])

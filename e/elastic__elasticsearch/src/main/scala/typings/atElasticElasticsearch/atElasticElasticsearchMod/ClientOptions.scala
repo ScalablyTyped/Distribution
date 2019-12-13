@@ -41,6 +41,7 @@ trait ClientOptions extends js.Object {
   var nodeFilter: js.UndefOr[nodeFilterFn] = js.undefined
   var nodeSelector: js.UndefOr[nodeSelectorFn | String] = js.undefined
   var nodes: js.UndefOr[String | js.Array[String]] = js.undefined
+  var opaqueIdPrefix: js.UndefOr[String] = js.undefined
   var pingTimeout: js.UndefOr[Double] = js.undefined
   var requestTimeout: js.UndefOr[Double] = js.undefined
   var resurrectStrategy: js.UndefOr[ping | optimistic | none] = js.undefined
@@ -71,6 +72,7 @@ object ClientOptions {
     nodeFilter: /* connection */ typings.atElasticElasticsearch.libConnectionMod.default => Boolean = null,
     nodeSelector: nodeSelectorFn | String = null,
     nodes: String | js.Array[String] = null,
+    opaqueIdPrefix: String = null,
     pingTimeout: Int | Double = null,
     requestTimeout: Int | Double = null,
     resurrectStrategy: ping | optimistic | none = null,
@@ -98,6 +100,7 @@ object ClientOptions {
     if (nodeFilter != null) __obj.updateDynamic("nodeFilter")(js.Any.fromFunction1(nodeFilter))
     if (nodeSelector != null) __obj.updateDynamic("nodeSelector")(nodeSelector.asInstanceOf[js.Any])
     if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (opaqueIdPrefix != null) __obj.updateDynamic("opaqueIdPrefix")(opaqueIdPrefix.asInstanceOf[js.Any])
     if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     if (resurrectStrategy != null) __obj.updateDynamic("resurrectStrategy")(resurrectStrategy.asInstanceOf[js.Any])

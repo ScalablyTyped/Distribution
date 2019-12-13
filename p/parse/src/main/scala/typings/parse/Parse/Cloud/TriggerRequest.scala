@@ -1,5 +1,6 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Object
 import typings.parse.Parse.User
 import scala.scalajs.js
@@ -12,10 +13,10 @@ trait TriggerRequest extends js.Object {
   var ip: String
   var log: js.Any
   var master: js.UndefOr[Boolean] = js.undefined
-  var `object`: Object[_]
-  var original: js.UndefOr[Object[_]] = js.undefined
+  var `object`: Object[Attributes]
+  var original: js.UndefOr[Object[Attributes]] = js.undefined
   var triggerName: String
-  var user: js.UndefOr[User[_]] = js.undefined
+  var user: js.UndefOr[User[Attributes]] = js.undefined
 }
 
 object TriggerRequest {
@@ -24,12 +25,12 @@ object TriggerRequest {
     headers: js.Any,
     ip: String,
     log: js.Any,
-    `object`: Object[_],
+    `object`: Object[Attributes],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object[_] = null,
-    user: User[_] = null
+    original: Object[Attributes] = null,
+    user: User[Attributes] = null
   ): TriggerRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

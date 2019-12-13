@@ -2,6 +2,7 @@ package typings.primereact.componentsDatatableDataTableMod
 
 import typings.primereact.Anon_Columns
 import typings.primereact.Anon_Data
+import typings.primereact.Anon_DataField
 import typings.primereact.Anon_DataIndex
 import typings.primereact.Anon_DataOriginalEvent
 import typings.primereact.Anon_DataOriginalEventAny
@@ -31,6 +32,7 @@ trait DataTableProps extends js.Object {
   var emptyMessage: js.UndefOr[String] = js.undefined
   var expandedRows: js.UndefOr[js.Array[_]] = js.undefined
   var exportFilename: js.UndefOr[String] = js.undefined
+  var exportFunction: js.UndefOr[js.Function1[/* e */ Anon_DataField, _]] = js.undefined
   var filters: js.UndefOr[js.Object] = js.undefined
   var first: js.UndefOr[Double] = js.undefined
   var footer: js.UndefOr[js.Any] = js.undefined
@@ -124,6 +126,7 @@ object DataTableProps {
     emptyMessage: String = null,
     expandedRows: js.Array[_] = null,
     exportFilename: String = null,
+    exportFunction: /* e */ Anon_DataField => _ = null,
     filters: js.Object = null,
     first: Int | Double = null,
     footer: js.Any = null,
@@ -214,6 +217,7 @@ object DataTableProps {
     if (emptyMessage != null) __obj.updateDynamic("emptyMessage")(emptyMessage.asInstanceOf[js.Any])
     if (expandedRows != null) __obj.updateDynamic("expandedRows")(expandedRows.asInstanceOf[js.Any])
     if (exportFilename != null) __obj.updateDynamic("exportFilename")(exportFilename.asInstanceOf[js.Any])
+    if (exportFunction != null) __obj.updateDynamic("exportFunction")(js.Any.fromFunction1(exportFunction))
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])

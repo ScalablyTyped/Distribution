@@ -1,7 +1,7 @@
 
 # Scala.js typings for fuse_dot_js
 
-Typings are for version 3.4.5
+Typings are for version 3.4.6
 
 ## Library description:
 Lightweight fuzzy-search

@@ -41,7 +41,7 @@ trait PodDisruptionBudgetStatus extends js.Object {
   var expectedPods: Input[Double]
   /**
     * Most recent generation observed when updating this PDB status. PodDisruptionsAllowed and
-    * other status informatio is valid only if observedGeneration equals to PDB's object
+    * other status information is valid only if observedGeneration equals to PDB's object
     * generation.
     */
   var observedGeneration: js.UndefOr[Input[Double]] = js.undefined

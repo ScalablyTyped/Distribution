@@ -1,11 +1,13 @@
 package typings.parse.Parse.Cloud
 
+import typings.parse.Parse.Attributes
 import typings.parse.Parse.Object
 import typings.parse.Parse.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-line no-empty-interface
 trait BeforeSaveRequest extends TriggerRequest {
   var context: js.Object
 }
@@ -17,12 +19,12 @@ object BeforeSaveRequest {
     headers: js.Any,
     ip: String,
     log: js.Any,
-    `object`: Object[_],
+    `object`: Object[Attributes],
     triggerName: String,
     installationId: String = null,
     master: js.UndefOr[Boolean] = js.undefined,
-    original: Object[_] = null,
-    user: User[_] = null
+    original: Object[Attributes] = null,
+    user: User[Attributes] = null
   ): BeforeSaveRequest = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])

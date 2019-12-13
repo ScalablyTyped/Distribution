@@ -1,10 +1,13 @@
 package typings.openidDashClient.openidDashClientMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.got.gotMod.GotPromise
 import typings.jose.joseMod.JSONWebKeySet
+import typings.node.Buffer
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
 import typings.openidDashClient.Anon_Body
+import typings.openidDashClient.Anon_BodyGET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -130,6 +133,18 @@ class Client protected ()
     * determining the algorithms to use.
     */
   def requestObject(payload: RequestObjectPayload): js.Promise[String] = js.native
+  def resource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: String, options: Anon_BodyGET): GotPromise[Buffer] = js.native
+  /**
+    * Fetches an arbitrary resource with the provided Access Token.
+    *
+    * @param resourceUrl Resource URL to request a response from.
+    * @param accessToken Access Token value. When TokenSet instance is provided its access_token property
+    * will be used automatically.
+    * @param options Options for the request.
+    */
+  def resource(resourceUrl: String, accessToken: TokenSet): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: TokenSet, options: Anon_BodyGET): GotPromise[Buffer] = js.native
   /**
     * Revokes a token at the Authorization Server's revocation_endpoint.
     */

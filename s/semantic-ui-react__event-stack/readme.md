@@ -1,7 +1,7 @@
 
 # Scala.js typings for semantic-ui-react__event-stack
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 <!-- Name --> <h1 align="center">Event Stack</h1>

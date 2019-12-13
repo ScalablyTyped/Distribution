@@ -14,7 +14,7 @@ object commandsBuildMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.atIonicCliDashFramework.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.ICommand because Already inherited
-  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: namespace. Inlined preRun */ @js.native
+  - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @js.native
   class BuildCommand () extends Command {
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, metadata: CommandInstanceInfo): js.Promise[Unit] = js.native

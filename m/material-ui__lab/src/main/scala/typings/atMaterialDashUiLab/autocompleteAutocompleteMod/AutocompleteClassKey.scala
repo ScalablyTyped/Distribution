@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.root
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.focused
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tag
+  - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tagSizeSmall
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.inputRoot
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.input
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.inputFocused
+  - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.endAdornment
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.clearIndicator
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.clearIndicatorDirty
   - typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.popupIndicator
@@ -34,6 +36,8 @@ object AutocompleteClassKey {
   def clearIndicator: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.clearIndicator = this.cast("clearIndicator")
   @scala.inline
   def clearIndicatorDirty: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.clearIndicatorDirty = this.cast("clearIndicatorDirty")
+  @scala.inline
+  def endAdornment: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.endAdornment = this.cast("endAdornment")
   @scala.inline
   def focused: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.focused = this.cast("focused")
   @scala.inline
@@ -68,5 +72,7 @@ object AutocompleteClassKey {
   def root: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.root = this.cast("root")
   @scala.inline
   def tag: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tag = this.cast("tag")
+  @scala.inline
+  def tagSizeSmall: typings.atMaterialDashUiLab.atMaterialDashUiLabStrings.tagSizeSmall = this.cast("tagSizeSmall")
 }
 

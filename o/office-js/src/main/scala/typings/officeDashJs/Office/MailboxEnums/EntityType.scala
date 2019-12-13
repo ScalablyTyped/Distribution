@@ -14,8 +14,6 @@ sealed trait EntityType extends js.Object
 /**
   * Specifies an entity's type.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read

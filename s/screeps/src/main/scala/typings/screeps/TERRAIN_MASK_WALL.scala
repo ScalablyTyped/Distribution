@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("TERRAIN_MASK_WALL")
 @js.native
-object TERRAIN_MASK_WALL extends TopLevel[Double]
+object TERRAIN_MASK_WALL extends TopLevel[TERRAIN_MASK_WALL]
 

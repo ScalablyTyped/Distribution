@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@formatjs/intl-relativetimeformat" : "4.4.5"
+      "@formatjs/intl-relativetimeformat" : "4.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@formatjs/intl-relativetimeformat" : "4.4.5"
+      "@formatjs/intl-relativetimeformat" : "4.5.1"
     }
   ],
   "compile-devDependencies" : [

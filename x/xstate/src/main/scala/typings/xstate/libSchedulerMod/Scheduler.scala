@@ -15,6 +15,7 @@ class Scheduler () extends js.Object {
   var process: js.Any = js.native
   var processingEvent: js.Any = js.native
   var queue: js.Any = js.native
+  def clear(): Unit = js.native
   def initialize(): Unit = js.native
   def initialize(callback: js.Function0[Unit]): Unit = js.native
   def schedule(task: js.Function0[Unit]): Unit = js.native

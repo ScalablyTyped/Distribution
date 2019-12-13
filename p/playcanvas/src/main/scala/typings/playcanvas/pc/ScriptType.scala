@@ -36,6 +36,24 @@ class ScriptType protected () extends EventHandler {
     */
   var app: Application = js.native
   /**
+    * @field
+    * @static
+    * @readonly
+    * @type pc.ScriptAttributes
+    * @name pc.ScriptType#attributes
+    * @description The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}
+    * @example
+    * var PlayerController = pc.createScript('playerController');
+    *
+    * PlayerController.attributes.add('speed', {
+    *     type: 'number',
+    *     title: 'Speed',
+    *     placeholder: 'km/h',
+    *     default: 22.2
+    * });
+    */
+  val attributes: ScriptAttributes = js.native
+  /**
     * True if the instance of this type is in running state. False when script is not running,
     * because the Entity or any of its parents are disabled or the Script Component is disabled or the Script Instance is disabled.
     * When disabled no update methods will be called on each tick.
@@ -62,8 +80,9 @@ class ScriptType protected () extends EventHandler {
     * @function
     * @name pc.ScriptType#[postUpdate]
     * @description Called for enabled (running state) scripts on each tick, after update.
+    * @param {Number} dt The delta time in seconds since the last frame.
     */
-  var postUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+  var postUpdate: js.UndefOr[js.Function1[/* dt */ Double, Unit]] = js.native
   /**
     * @function
     * @name pc.ScriptType#[swap]
@@ -76,32 +95,15 @@ class ScriptType protected () extends EventHandler {
     * @function
     * @name pc.ScriptType#[update]
     * @description Called for enabled (running state) scripts on each tick.
+    * @param {Number} dt The delta time in seconds since the last frame.
     */
-  var update: js.UndefOr[js.Function0[Unit]] = js.native
+  var update: js.UndefOr[js.Function1[/* dt */ Double, Unit]] = js.native
 }
 
 /* static members */
 @JSGlobal("pc.ScriptType")
 @js.native
 object ScriptType extends js.Object {
-  /**
-    * @field
-    * @static
-    * @readonly
-    * @type pc.ScriptAttributes
-    * @name pc.ScriptType.attributes
-    * @description The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}
-    * @example
-    * var PlayerController = pc.createScript('playerController');
-    *
-    * PlayerController.attributes.add('speed', {
-    *     type: 'number',
-    *     title: 'Speed',
-    *     placeholder: 'km/h',
-    *     default: 22.2
-    * });
-    */
-  val attributes: ScriptAttributes = js.native
   /**
     * @readonly
     * @static

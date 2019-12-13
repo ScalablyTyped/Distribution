@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@semantic-ui-react/event-stack" : "3.1.0"
+      "@semantic-ui-react/event-stack" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@semantic-ui-react/event-stack" : "3.1.0"
+      "@semantic-ui-react/event-stack" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

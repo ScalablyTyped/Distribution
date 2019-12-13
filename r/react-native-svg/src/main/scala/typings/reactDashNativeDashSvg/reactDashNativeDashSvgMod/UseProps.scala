@@ -22,6 +22,7 @@ trait UseProps
      with ResponderProps
      with TouchableProps
      with DefinitionProps
+     with CommonMarkerProps
      with CommonMaskProps {
   var height: js.UndefOr[NumberProp] = js.undefined
   var href: js.UndefOr[String] = js.undefined
@@ -49,6 +50,10 @@ object UseProps {
     height: NumberProp = null,
     href: String = null,
     id: String = null,
+    marker: String = null,
+    markerEnd: String = null,
+    markerMid: String = null,
+    markerStart: String = null,
     mask: String = null,
     onLongPress: /* event */ GestureResponderEvent => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
@@ -109,6 +114,10 @@ object UseProps {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
+    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
+    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))

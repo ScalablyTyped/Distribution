@@ -18,6 +18,7 @@ trait ColumnProps extends js.Object {
   var editorValidatorEvent: js.UndefOr[String] = js.undefined
   var excludeGlobalFilter: js.UndefOr[Boolean] = js.undefined
   var expander: js.UndefOr[Boolean] = js.undefined
+  var exportable: js.UndefOr[Boolean] = js.undefined
   var field: js.UndefOr[String] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterElement: js.UndefOr[js.Object] = js.undefined
@@ -61,6 +62,7 @@ object ColumnProps {
     editorValidatorEvent: String = null,
     excludeGlobalFilter: js.UndefOr[Boolean] = js.undefined,
     expander: js.UndefOr[Boolean] = js.undefined,
+    exportable: js.UndefOr[Boolean] = js.undefined,
     field: String = null,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterElement: js.Object = null,
@@ -101,6 +103,7 @@ object ColumnProps {
     if (editorValidatorEvent != null) __obj.updateDynamic("editorValidatorEvent")(editorValidatorEvent.asInstanceOf[js.Any])
     if (!js.isUndefined(excludeGlobalFilter)) __obj.updateDynamic("excludeGlobalFilter")(excludeGlobalFilter.asInstanceOf[js.Any])
     if (!js.isUndefined(expander)) __obj.updateDynamic("expander")(expander.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportable)) __obj.updateDynamic("exportable")(exportable.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterElement != null) __obj.updateDynamic("filterElement")(filterElement.asInstanceOf[js.Any])

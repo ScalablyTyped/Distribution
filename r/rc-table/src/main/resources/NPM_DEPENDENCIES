@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-table" : "6.9.5"
+      "rc-table" : "6.10.7"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-table" : "6.9.5"
+      "rc-table" : "6.10.7"
     }
   ],
   "compile-devDependencies" : [

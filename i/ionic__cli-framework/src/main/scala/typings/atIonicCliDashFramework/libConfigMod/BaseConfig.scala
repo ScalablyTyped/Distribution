@@ -13,10 +13,11 @@ abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
   def this(p: String, hasPathPrefix: BaseConfigOptions) = this()
   var _getFile: js.Any = js.native
   var _setFile: js.Any = js.native
-  var c: T = js.native
-  val file: js.Any = js.native
   val p: String = js.native
   val pathPrefix: js.Array[String] = js.native
+  def c(): T = js.native
+  def c(value: T): js.Any = js.native
+  def file(): js.Any = js.native
   def get[P /* <: String */](property: P): /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any = js.native
   def get[P /* <: String */](
     property: P,

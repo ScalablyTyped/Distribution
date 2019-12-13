@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Accessor
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.CallSignature
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Class
+import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ClassMember
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ClassOrInterface
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.Constructor
 import typings.typedoc.distLibModelsReflectionsAbstractMod.ReflectionKind.ConstructorSignature
@@ -50,6 +51,9 @@ object ReflectionKind extends js.Object {
   
   @js.native
   sealed trait Class extends ReflectionKind
+  
+  @js.native
+  sealed trait ClassMember extends ReflectionKind
   
   @js.native
   sealed trait ClassOrInterface extends ReflectionKind
@@ -145,6 +149,9 @@ object ReflectionKind extends js.Object {
   
   /* 128 */ @js.native
   object Class extends TopLevel[Class with Double]
+  
+  /* 8654336 */ @js.native
+  object ClassMember extends TopLevel[ClassMember with Double]
   
   /* 384 */ @js.native
   object ClassOrInterface extends TopLevel[ClassOrInterface with Double]

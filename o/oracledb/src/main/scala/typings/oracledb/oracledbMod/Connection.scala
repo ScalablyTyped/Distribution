@@ -25,6 +25,14 @@ trait Connection extends js.Object {
     */
   var clientId: js.UndefOr[String] = js.native
   /**
+    * The client information for end-to-end application tracing.
+    * This is a write-only property. Displaying connection.clientInfo will show a value of null. 
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
+    * @since 4.1
+    */
+  var clientInfo: js.UndefOr[String] = js.native
+  /**
     * After setting currentSchema, SQL statements using unqualified references to schema objects will resolve to objects in the specified schema.
     * This setting does not change the session user or the current user, nor does it give the session user any additional system or object privileges for the session.
     * The value of currentSchema will be empty until it has been explicitly set.
@@ -33,6 +41,14 @@ trait Connection extends js.Object {
     * @since 4.0
     */
   var currentSchema: js.UndefOr[String] = js.native
+  /**
+    * The database operation information for end-to-end application tracing.
+    * This is a write-only property. Displaying connection.dbOp will show a value of null.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
+    * @since 4.1
+    */
+  var dbOp: js.UndefOr[String] = js.native
   /**
     * The module attribute for end-to-end application tracing.
     * This is a write-only property. Displaying a Connection object will show a value of null for this attribute.

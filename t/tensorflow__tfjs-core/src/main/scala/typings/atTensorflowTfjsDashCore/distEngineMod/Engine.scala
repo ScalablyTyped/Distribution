@@ -10,7 +10,6 @@ import typings.atTensorflowTfjsDashCore.distEnvironmentMod.Environment
 import typings.atTensorflowTfjsDashCore.distKernelUnderscoreRegistryMod.NamedAttrMap
 import typings.atTensorflowTfjsDashCore.distTensorMod.DataId
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
-import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor3D
 import typings.atTensorflowTfjsDashCore.distTensorMod.TensorTracker
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.GradSaveFunc
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedTensorMap
@@ -18,12 +17,7 @@ import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.NamedVariab
 import typings.atTensorflowTfjsDashCore.distTensorUnderscoreTypesMod.TensorContainer
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataType
 import typings.atTensorflowTfjsDashCore.distTypesMod.DataValues
-import typings.atTensorflowTfjsDashCore.distTypesMod.PixelData
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
-import typings.std.HTMLCanvasElement
-import typings.std.HTMLImageElement
-import typings.std.HTMLVideoElement
-import typings.std.ImageData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -93,11 +87,6 @@ class Engine protected ()
   def endScope(result: TensorContainer): Unit = js.native
   def findBackend(backendName: String): KernelBackend = js.native
   def findBackendFactory(backendName: String): js.Function0[KernelBackend | js.Promise[KernelBackend]] = js.native
-  def fromPixels(pixels: PixelData, numChannels: Double): Tensor3D = js.native
-  def fromPixels(pixels: HTMLCanvasElement, numChannels: Double): Tensor3D = js.native
-  def fromPixels(pixels: HTMLImageElement, numChannels: Double): Tensor3D = js.native
-  def fromPixels(pixels: HTMLVideoElement, numChannels: Double): Tensor3D = js.native
-  def fromPixels(pixels: ImageData, numChannels: Double): Tensor3D = js.native
   /**
     * Returns gradients of `f` with respect to each of the `xs`. The gradients
     * returned are of the same length as `xs`, but some might be null if `f`

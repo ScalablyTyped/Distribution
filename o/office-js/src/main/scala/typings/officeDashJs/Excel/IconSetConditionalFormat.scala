@@ -17,8 +17,6 @@ import typings.officeDashJs.officeDashJsStrings.FourRating
 import typings.officeDashJs.officeDashJsStrings.FourRedToBlack
 import typings.officeDashJs.officeDashJsStrings.FourTrafficLights
 import typings.officeDashJs.officeDashJsStrings.Invalid
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityFinanceIcon
-import typings.officeDashJs.officeDashJsStrings.LinkedEntityMapIcon
 import typings.officeDashJs.officeDashJsStrings.ThreeArrows
 import typings.officeDashJs.officeDashJsStrings.ThreeArrowsGray
 import typings.officeDashJs.officeDashJsStrings.ThreeFlags
@@ -72,7 +70,7 @@ class IconSetConditionalFormat () extends ClientObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var style: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes | LinkedEntityFinanceIcon | LinkedEntityMapIcon = js.native
+  var style: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *

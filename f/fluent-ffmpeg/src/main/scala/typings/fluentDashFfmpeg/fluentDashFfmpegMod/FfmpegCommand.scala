@@ -65,8 +65,14 @@ class FfmpegCommand () extends EventEmitter {
   def availableEncoders(callback: EncodersCallback): Unit = js.native
   def availableFilters(callback: FiltersCallback): Unit = js.native
   def availableFormats(callback: FormatsCallback): Unit = js.native
+  def complexFilter(spec: String): FfmpegCommand = js.native
+  def complexFilter(spec: String, map: String): FfmpegCommand = js.native
   def complexFilter(spec: String, map: js.Array[String]): FfmpegCommand = js.native
+  def complexFilter(spec: js.Array[String | FilterSpecification]): FfmpegCommand = js.native
+  def complexFilter(spec: js.Array[String | FilterSpecification], map: String): FfmpegCommand = js.native
   def complexFilter(spec: js.Array[String | FilterSpecification], map: js.Array[String]): FfmpegCommand = js.native
+  def complexFilter(spec: FilterSpecification): FfmpegCommand = js.native
+  def complexFilter(spec: FilterSpecification, map: String): FfmpegCommand = js.native
   def complexFilter(spec: FilterSpecification, map: js.Array[String]): FfmpegCommand = js.native
   def concat(target: String): FfmpegCommand = js.native
   def concat(target: String, options: Anon_End): FfmpegCommand = js.native
@@ -88,8 +94,14 @@ class FfmpegCommand () extends EventEmitter {
     callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]
   ): Unit = js.native
   def ffprobe(options: js.Array[String], callback: js.Function2[/* err */ js.Any, /* data */ FfprobeData, Unit]): Unit = js.native
+  def filterGraph(spec: String): FfmpegCommand = js.native
+  def filterGraph(spec: String, map: String): FfmpegCommand = js.native
   def filterGraph(spec: String, map: js.Array[String]): FfmpegCommand = js.native
+  def filterGraph(spec: js.Array[String | FilterSpecification]): FfmpegCommand = js.native
+  def filterGraph(spec: js.Array[String | FilterSpecification], map: String): FfmpegCommand = js.native
   def filterGraph(spec: js.Array[String | FilterSpecification], map: js.Array[String]): FfmpegCommand = js.native
+  def filterGraph(spec: FilterSpecification): FfmpegCommand = js.native
+  def filterGraph(spec: FilterSpecification, map: String): FfmpegCommand = js.native
   def filterGraph(spec: FilterSpecification, map: js.Array[String]): FfmpegCommand = js.native
   def flvmeta(): FfmpegCommand = js.native
   def format(format: String): FfmpegCommand = js.native

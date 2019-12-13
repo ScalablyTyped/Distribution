@@ -83,6 +83,7 @@ trait Helper extends js.Object {
   def isDefined(variable: js.Any): Boolean = js.native
   def isEdge(): Boolean = js.native
   def isEmpty(variable: js.Any): Boolean = js.native
+  def isFirefox(): Boolean = js.native
   def isFunction(func: js.Any): Boolean = js.native
   def isGetComputedStyleSupported(): Boolean = js.native
   def isIE(): Boolean = js.native

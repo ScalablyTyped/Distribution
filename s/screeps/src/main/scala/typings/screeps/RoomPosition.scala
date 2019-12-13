@@ -3,6 +3,7 @@ package typings.screeps
 import org.scalablytyped.runtime.TopLevel
 import typings.screeps.screepsStrings.constructionSite
 import typings.screeps.screepsStrings.creep
+import typings.screeps.screepsStrings.deposit
 import typings.screeps.screepsStrings.energy
 import typings.screeps.screepsStrings.exit
 import typings.screeps.screepsStrings.flag
@@ -10,6 +11,7 @@ import typings.screeps.screepsStrings.mineral
 import typings.screeps.screepsStrings.nuke
 import typings.screeps.screepsStrings.powerCreep
 import typings.screeps.screepsStrings.resource
+import typings.screeps.screepsStrings.ruin
 import typings.screeps.screepsStrings.source
 import typings.screeps.screepsStrings.structure
 import typings.screeps.screepsStrings.terrain
@@ -70,11 +72,12 @@ trait RoomPosition extends js.Object {
     * If not defined, a random name will be generated.
     * @param color The color of a new flag. Should be one of the COLOR_* constants
     * @param secondaryColor The secondary color of a new flag. Should be one of the COLOR_* constants. The default value is equal to color.
+    * @returns The name of the flag if created, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
-  def createFlag(): ScreepsReturnCode = js.native
-  def createFlag(name: String): ScreepsReturnCode = js.native
-  def createFlag(name: String, color: ColorConstant): ScreepsReturnCode = js.native
-  def createFlag(name: String, color: ColorConstant, secondaryColor: ColorConstant): ScreepsReturnCode = js.native
+  def createFlag(): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
     * @param objects An array of RoomPositions or objects with a RoomPosition
@@ -248,6 +251,8 @@ trait RoomPosition extends js.Object {
   @JSName("lookFor")
   def lookFor_creep(`type`: creep): js.Array[Creep] = js.native
   @JSName("lookFor")
+  def lookFor_deposit(`type`: deposit): js.Array[Deposit] = js.native
+  @JSName("lookFor")
   def lookFor_energy(`type`: energy): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookFor")
   def lookFor_exit(`type`: exit): js.Array[_] = js.native
@@ -261,6 +266,8 @@ trait RoomPosition extends js.Object {
   def lookFor_powerCreep(`type`: powerCreep): js.Array[PowerCreep] = js.native
   @JSName("lookFor")
   def lookFor_resource(`type`: resource): js.Array[Resource[ResourceConstant]] = js.native
+  @JSName("lookFor")
+  def lookFor_ruin(`type`: ruin): js.Array[Ruin] = js.native
   @JSName("lookFor")
   def lookFor_source(`type`: source): js.Array[Source] = js.native
   @JSName("lookFor")

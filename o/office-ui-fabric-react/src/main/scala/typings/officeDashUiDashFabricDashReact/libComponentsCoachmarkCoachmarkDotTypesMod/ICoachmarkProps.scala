@@ -121,6 +121,11 @@ trait ICoachmarkProps extends ClassAttributes[CoachmarkBase] {
     */
   var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   /**
+    * If true then the Coachmark beak (arrow pointing towards target) will always be visible as long as Coachmark is visible
+    * @defaultvalue false
+    */
+  var persistentBeak: js.UndefOr[Boolean] = js.undefined
+  /**
     * Props to pass to the PositioningContainer component. Specify the `directionalHint` to indicate
     * on which edge the Coachmark/TeachingBubble should be positioned.
     * @defaultvalue directionalHint: DirectionalHint.bottomAutoEdge
@@ -188,6 +193,7 @@ object ICoachmarkProps {
     onAnimationOpenStart: () => Unit = null,
     onDismiss: /* ev */ js.UndefOr[js.Any] => Unit = null,
     onMouseMove: /* e */ MouseEvent => Unit = null,
+    persistentBeak: js.UndefOr[Boolean] = js.undefined,
     positioningContainerProps: IPositioningContainerProps = null,
     preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined,
     preventFocusOnMount: js.UndefOr[Boolean] = js.undefined,
@@ -223,6 +229,7 @@ object ICoachmarkProps {
     if (onAnimationOpenStart != null) __obj.updateDynamic("onAnimationOpenStart")(js.Any.fromFunction0(onAnimationOpenStart))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
+    if (!js.isUndefined(persistentBeak)) __obj.updateDynamic("persistentBeak")(persistentBeak.asInstanceOf[js.Any])
     if (positioningContainerProps != null) __obj.updateDynamic("positioningContainerProps")(positioningContainerProps.asInstanceOf[js.Any])
     if (!js.isUndefined(preventDismissOnLostFocus)) __obj.updateDynamic("preventDismissOnLostFocus")(preventDismissOnLostFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(preventFocusOnMount)) __obj.updateDynamic("preventFocusOnMount")(preventFocusOnMount.asInstanceOf[js.Any])

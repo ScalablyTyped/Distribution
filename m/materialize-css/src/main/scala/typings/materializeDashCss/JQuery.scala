@@ -33,10 +33,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   def autocomplete(): JQuery = js.native
-  def autocomplete(options: Partial[AutocompleteOptions]): JQuery = js.native
   // Pick<T,K> to check methods exist.
-  @JSName("autocomplete")
-  def autocomplete_destroy(method: String): JQuery = js.native
+  def autocomplete(method: String): JQuery = js.native
+  def autocomplete(options: Partial[AutocompleteOptions]): JQuery = js.native
   @JSName("autocomplete")
   def autocomplete_selectOption(method: String, el: Element): JQuery = js.native
   @JSName("autocomplete")

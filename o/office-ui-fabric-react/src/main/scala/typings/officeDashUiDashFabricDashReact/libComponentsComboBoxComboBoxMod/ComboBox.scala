@@ -115,6 +115,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
     * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
     */
   var _isAltOrMeta: js.Any = js.native
+  var _isOptionChecked: js.Any = js.native
   /**
     * If we are coming from a mouseOut:
     * there is no visible selected option.

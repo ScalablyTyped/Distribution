@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-json-db"
-version := "1.0.2-cd25bc"
+version := "1.0.3-1cadc0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

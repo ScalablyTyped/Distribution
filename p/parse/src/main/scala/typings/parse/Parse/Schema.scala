@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * A Parse.Schema object is for handling schema data from Parse.
   * All the schemas methods require MasterKey.
   *
-  * @param {String} className Parse Class string
+  * @param className Parse Class string
   *
   * https://parseplatform.org/Parse-SDK-JS/api/master/Parse.Schema.html
   *
@@ -37,8 +37,8 @@ class Schema protected () extends js.Object {
   def addGeoPoint(name: String): this.type = js.native
   /**
     * Adding an Index to Create / Update a Schema
-    * @param {String} name Name of the field that will be created on Parse
-    * @param {Schema.Index} index { 'field': value } `field` should exist in the schema before using addIndex. `value` can be a (String|Number|Boolean|Date|Parse.File|Parse.GeoPoint|Array|Object|Pointer|Parse.Relation)
+    * @param name Name of the field that will be created on Parse
+    * @param index `{ 'field': value }` where `field` should exist in the schema before using addIndex.
     * @return Returns the schema, so you can chain this call.
     * @example
     * ```
@@ -50,16 +50,16 @@ class Schema protected () extends js.Object {
   def addObject(name: String): this.type = js.native
   /**
     * Adding Pointer Field
-    * @param {String} name Name of the field that will be created on Parse
-    * @param {String} targetClass  Name of the target Pointer Class
+    * @param name Name of the field that will be created on Parse
+    * @param targetClass  Name of the target Pointer Class
     * @return Returns the schema, so you can chain this call.
     */
   def addPointer(name: String, targetClass: String): this.type = js.native
   def addPolygon(name: String): this.type = js.native
   /**
     * Adding Relation Field
-    * @param {String} name Name of the field that will be created on Parse
-    * @param {String} targetClass  Name of the target Pointer Class
+    * @param name Name of the field that will be created on Parse
+    * @param targetClass  Name of the target Pointer Class
     * @return Returns the schema, so you can chain this call.
     */
   def addRelation(name: String, targetClass: String): this.type = js.native
@@ -70,7 +70,7 @@ class Schema protected () extends js.Object {
     * Valid options are:
     * - useMasterKey: In Cloud Code and Node only, causes the Master Key to be used for this request.
     * - sessionToken: A valid session token, used for making a request on behalf of a specific user.
-    * @returns {Promise} A promise that is resolved with the result when the query completes.
+    * @returns A promise that is resolved with the result when the query completes.
     */
   // @TODO Fix Promise<any>
   def delete(): js.Promise[_] = js.native
@@ -134,8 +134,10 @@ object Schema extends js.Object {
     - js.Array[js.Any]
     - js.Object
     - typings.parse.Parse.Pointer
-    - typings.parse.Parse.Relation[typings.parse.Parse.Object[js.Any], typings.parse.Parse.Object[js.Any]]
+    - typings.parse.Parse.Relation[
+  typings.parse.Parse.Object[typings.parse.Parse.Attributes], 
+  typings.parse.Parse.Object[typings.parse.Parse.Attributes]]
   */
-  type TYPE = _TYPE | js.Array[js.Any] | (Relation[Object[js.Any], Object[js.Any]]) | String | Double | Boolean | Date | js.Object
+  type TYPE = _TYPE | js.Array[js.Any] | (Relation[Object[Attributes], Object[Attributes]]) | String | Double | Boolean | Date | js.Object
 }
 

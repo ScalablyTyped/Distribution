@@ -17,7 +17,13 @@ object ioredisStrings {
   sealed trait COUNT extends js.Object
   
   @js.native
+  sealed trait GET extends js.Object
+  
+  @js.native
   sealed trait GROUP extends js.Object
+  
+  @js.native
+  sealed trait LIMIT extends js.Object
   
   @js.native
   sealed trait MATCH extends js.Object
@@ -26,13 +32,22 @@ object ioredisStrings {
   sealed trait MAXLEN extends js.Object
   
   @js.native
+  sealed trait NOKEY extends js.Object
+  
+  @js.native
   sealed trait NOSAVE extends js.Object
   
   @js.native
   sealed trait OK extends js.Object
   
   @js.native
+  sealed trait REWRITE extends js.Object
+  
+  @js.native
   sealed trait SAVE extends js.Object
+  
+  @js.native
+  sealed trait SET extends js.Object
   
   @js.native
   sealed trait TLSv1 extends SecureVersion
@@ -80,17 +95,27 @@ object ioredisStrings {
   @scala.inline
   def COUNT: COUNT = "COUNT".asInstanceOf[COUNT]
   @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
+  @scala.inline
+  def LIMIT: LIMIT = "LIMIT".asInstanceOf[LIMIT]
   @scala.inline
   def MATCH: MATCH = "MATCH".asInstanceOf[MATCH]
   @scala.inline
   def MAXLEN: MAXLEN = "MAXLEN".asInstanceOf[MAXLEN]
   @scala.inline
+  def NOKEY: NOKEY = "NOKEY".asInstanceOf[NOKEY]
+  @scala.inline
   def NOSAVE: NOSAVE = "NOSAVE".asInstanceOf[NOSAVE]
   @scala.inline
   def OK: OK = "OK".asInstanceOf[OK]
   @scala.inline
+  def REWRITE: REWRITE = "REWRITE".asInstanceOf[REWRITE]
+  @scala.inline
   def SAVE: SAVE = "SAVE".asInstanceOf[SAVE]
+  @scala.inline
+  def SET: SET = "SET".asInstanceOf[SET]
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   @scala.inline

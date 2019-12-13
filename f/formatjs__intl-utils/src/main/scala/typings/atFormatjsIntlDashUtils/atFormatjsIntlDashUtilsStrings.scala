@@ -46,6 +46,9 @@ object atFormatjsIntlDashUtilsStrings {
   sealed trait `hour-short` extends RelativeTimeField
   
   @js.native
+  sealed trait literal extends js.Object
+  
+  @js.native
   sealed trait lookup extends js.Object
   
   @js.native
@@ -72,6 +75,9 @@ object atFormatjsIntlDashUtilsStrings {
   
   @js.native
   sealed trait `month-short` extends RelativeTimeField
+  
+  @js.native
+  sealed trait narrowSymbol extends js.Object
   
   @js.native
   sealed trait one extends LDMLPluralRule
@@ -155,6 +161,8 @@ object atFormatjsIntlDashUtilsStrings {
   @scala.inline
   def `hour-short`: `hour-short` = "hour-short".asInstanceOf[`hour-short`]
   @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
   def many: many = "many".asInstanceOf[many]
@@ -170,6 +178,8 @@ object atFormatjsIntlDashUtilsStrings {
   def `month-narrow`: `month-narrow` = "month-narrow".asInstanceOf[`month-narrow`]
   @scala.inline
   def `month-short`: `month-short` = "month-short".asInstanceOf[`month-short`]
+  @scala.inline
+  def narrowSymbol: narrowSymbol = "narrowSymbol".asInstanceOf[narrowSymbol]
   @scala.inline
   def one: one = "one".asInstanceOf[one]
   @scala.inline

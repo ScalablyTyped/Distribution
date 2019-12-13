@@ -25,16 +25,20 @@ object atAntDashDesignProDashLayoutComponents extends atAntDashDesignProDashLayo
   @scala.inline
   def Header: ComponentType[HeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
   @scala.inline
+  def LayoutChange: ComponentType[LayoutChangeProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerLayoutChangeMod.default.asInstanceOf[typings.react.reactMod.ComponentType[LayoutChangeProps]]
+  @scala.inline
   def PageHeaderWrapper: ComponentType[PageHeaderWrapperProps] = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.default.asInstanceOf[typings.react.reactMod.ComponentType[PageHeaderWrapperProps]]
+  @scala.inline
+  def PageLoading: ComponentType[PageLoadingProps] = typings.atAntDashDesignProDashLayout.libPageLoadingMod.default.asInstanceOf[typings.react.reactMod.ComponentType[PageLoadingProps]]
   @scala.inline
   def ProDashLayout: ComponentType[ProDashLayoutProps] = typings.atAntDashDesignProDashLayout.atAntDashDesignProDashLayoutMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ProDashLayoutProps]]
   @scala.inline
-  def SettingDrawer: ComponentType[SettingDrawerProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libSettingDrawerMod.default].asInstanceOf[typings.react.reactMod.ComponentType[SettingDrawerProps]]
+  def SettingDrawer: ComponentType[SettingDrawerProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SettingDrawerProps]]
   @scala.inline
   def SiderMenu: ComponentType[SiderMenuProps] = typings.atAntDashDesignProDashLayout.libSiderMenuMod.default.asInstanceOf[typings.react.reactMod.ComponentType[SiderMenuProps]]
   @scala.inline
   def ThemeColor: ComponentType[ThemeColorProps] = typings.atAntDashDesignProDashLayout.libSettingDrawerThemeColorMod.default.asInstanceOf[typings.react.reactMod.ComponentType[ThemeColorProps]]
   @scala.inline
-  def TopNavHeader: ComponentType[TopNavHeaderProps] = js.constructorOf[typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.default].asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
+  def TopNavHeader: ComponentType[TopNavHeaderProps] = typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.default.asInstanceOf[typings.react.reactMod.ComponentType[TopNavHeaderProps]]
 }
 

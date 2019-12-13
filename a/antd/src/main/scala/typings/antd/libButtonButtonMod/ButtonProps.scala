@@ -18,6 +18,7 @@ import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
 import typings.antd.antdStrings.horizontal
+import typings.antd.antdStrings.inherit
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
 import typings.antd.antdStrings.listbox
@@ -48,6 +49,7 @@ import typings.antd.antdStrings.yes
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.AnimationEventHandler
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.ClipboardEventHandler
@@ -143,7 +145,7 @@ trait ButtonProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
@@ -152,7 +154,7 @@ trait ButtonProps extends js.Object {
   var dir: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var download: js.UndefOr[js.Any] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var form: js.UndefOr[String] = js.undefined
   var formAction: js.UndefOr[String] = js.undefined
   var formEncType: js.UndefOr[String] = js.undefined
@@ -272,7 +274,7 @@ trait ButtonProps extends js.Object {
   var shape: js.UndefOr[ButtonShape] = js.undefined
   var size: js.UndefOr[ButtonSize] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -348,7 +350,7 @@ object ButtonProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
     datatype: String = null,
@@ -550,7 +552,7 @@ object ButtonProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

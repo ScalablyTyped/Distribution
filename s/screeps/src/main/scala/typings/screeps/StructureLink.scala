@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
+import typings.screeps.screepsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,19 +12,26 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StructureLink
   extends OwnedStructure[STRUCTURE_LINK]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with AnyStoreStructure {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */
   var cooldown: Double = js.native
   /**
     * The amount of energy containing in the link.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   var energy: Double = js.native
   /**
     * The total amount of energy the link can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   var energyCapacity: Double = js.native
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  var store: Store[RESOURCE_ENERGY, `false`] = js.native
   /**
     * Transfer energy from the link to another link or a creep.
     *

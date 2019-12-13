@@ -31,7 +31,6 @@ class MathBackendCPU () extends KernelBackend {
   var fftRadix2: js.Any = js.native
   var firstUse: js.Any = js.native
   var fourierTransformByMatmul: js.Any = js.native
-  var fromPixels2DContext: js.Any = js.native
   var isExponentOf2: js.Any = js.native
   var makeOutput: js.Any = js.native
   var maxPool3dPositions: js.Any = js.native

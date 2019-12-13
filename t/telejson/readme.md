@@ -1,7 +1,7 @@
 
 # Scala.js typings for telejson
 
-Typings are for version 3.1.0
+Typings are for version 3.3.0
 
 ## Library description:
 A library for teleporting rich data to another place.

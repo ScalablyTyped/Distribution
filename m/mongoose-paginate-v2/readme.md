@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongoose-paginate-v2
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 A cursor based custom pagination library for Mongoose with customizable labels.

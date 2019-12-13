@@ -19,7 +19,7 @@ class TrackEntry () extends js.Object {
   var eventThreshold: Double = js.native
   var holdPrevious: Boolean = js.native
   var interruptAlpha: Double = js.native
-  var listener: AnimationStateListener2 = js.native
+  var listener: AnimationStateListener = js.native
   var loop: Boolean = js.native
   var mixBlend: MixBlend = js.native
   var mixDuration: Double = js.native

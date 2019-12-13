@@ -1,7 +1,7 @@
 
 # Scala.js typings for handsontable
 
-Typings are for version 7.2.2
+Typings are for version 7.3.0
 
 ## Library description:
 Handsontable is a JavaScript Spreadsheet Component available for React, Angular and Vue.

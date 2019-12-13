@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var context: js.UndefOr[String] = js.undefined
   var emitErrors: js.UndefOr[Boolean] = js.undefined
   var failOnError: js.UndefOr[Boolean] = js.undefined
-  var files: js.UndefOr[js.Array[String]] = js.undefined
+  var files: js.UndefOr[String | js.Array[String]] = js.undefined
   var fix: js.UndefOr[Boolean] = js.undefined
   var formatter: js.UndefOr[Formatter] = js.undefined
   var lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined
@@ -26,7 +26,7 @@ object Options {
     context: String = null,
     emitErrors: js.UndefOr[Boolean] = js.undefined,
     failOnError: js.UndefOr[Boolean] = js.undefined,
-    files: js.Array[String] = null,
+    files: String | js.Array[String] = null,
     fix: js.UndefOr[Boolean] = js.undefined,
     formatter: (/* messages */ js.Array[Message], /* source */ String) => String = null,
     lintDirtyModulesOnly: js.UndefOr[Boolean] = js.undefined,

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "jsdom-global"
-version := "3.0-dt-20191007Z-5bd42b"
+version := "3.0-dt-20191007Z-d715c4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20190626Z-e8c8e6",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20190626Z-01d170",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "std" % "3.7-1d724d",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-8d3912")
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-8f6096")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

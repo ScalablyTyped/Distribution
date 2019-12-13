@@ -4,6 +4,7 @@ import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
 import typings.atTensorflowTfjsDashCore.distTypesMod.Rank
+import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,5 +18,11 @@ object distOpsLinalgUnderscoreOpsMod extends js.Object {
     /* fullMatrices */ js.UndefOr[Boolean], 
     js.Tuple2[Tensor[Rank], Tensor[Rank]]
   ] = js.native
+  @js.native
+  object bandPart extends js.Object {
+    def apply[T /* <: Tensor[Rank] */](a: T, numLower: Double, numUpper: Double): T = js.native
+    def apply[T /* <: Tensor[Rank] */](a: TensorLike, numLower: Double, numUpper: Double): T = js.native
+  }
+  
 }
 

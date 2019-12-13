@@ -20,10 +20,10 @@ import scala.scalajs.js.annotation._
 trait DatePickerProps
   extends PickerProps
      with SinglePickerProps {
-  var disabledTime: js.UndefOr[js.Function1[/* current */ js.UndefOr[Moment], Anon_DisabledHours]] = js.undefined
+  var disabledTime: js.UndefOr[js.Function1[/* current */ js.UndefOr[Moment | Null], Anon_DisabledHours]] = js.undefined
   var mode: js.UndefOr[DatePickerMode] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* selectedTime */ Moment, Unit]] = js.undefined
-  var onPanelChange: js.UndefOr[js.Function2[/* value */ js.UndefOr[Moment], /* mode */ DatePickerMode, Unit]] = js.undefined
+  var onOk: js.UndefOr[js.Function1[/* selectedTime */ Moment | Null, Unit]] = js.undefined
+  var onPanelChange: js.UndefOr[js.Function2[/* value */ Moment | Null, /* mode */ DatePickerMode, Unit]] = js.undefined
   var showTime: js.UndefOr[TimePickerProps | Boolean] = js.undefined
   var showToday: js.UndefOr[Boolean] = js.undefined
 }
@@ -38,8 +38,8 @@ object DatePickerProps {
     defaultPickerValue: Moment = null,
     defaultValue: Moment = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledDate: /* current */ js.UndefOr[Moment] => Boolean = null,
-    disabledTime: /* current */ js.UndefOr[Moment] => Anon_DisabledHours = null,
+    disabledDate: /* current */ Moment | Null => Boolean = null,
+    disabledTime: /* current */ js.UndefOr[Moment | Null] => Anon_DisabledHours = null,
     dropdownClassName: String = null,
     format: String | js.Array[String] = null,
     getCalendarContainer: /* triggerNode */ Element => HTMLElement = null,
@@ -51,9 +51,9 @@ object DatePickerProps {
     onBlur: /* e */ SyntheticEvent[Element, Event] => Unit = null,
     onChange: (/* date */ Moment | Null, /* dateString */ String) => Unit = null,
     onFocus: FocusEvent[Element] => Unit = null,
-    onOk: /* selectedTime */ Moment => Unit = null,
+    onOk: /* selectedTime */ Moment | Null => Unit = null,
     onOpenChange: /* status */ Boolean => Unit = null,
-    onPanelChange: (/* value */ js.UndefOr[Moment], /* mode */ DatePickerMode) => Unit = null,
+    onPanelChange: (/* value */ Moment | Null, /* mode */ DatePickerMode) => Unit = null,
     open: js.UndefOr[Boolean] = js.undefined,
     pickerClass: String = null,
     pickerInputClass: String = null,

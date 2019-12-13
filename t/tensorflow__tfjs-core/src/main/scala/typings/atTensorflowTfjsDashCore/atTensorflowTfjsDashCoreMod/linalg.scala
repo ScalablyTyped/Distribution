@@ -2,6 +2,7 @@ package typings.atTensorflowTfjsDashCore.atTensorflowTfjsDashCoreMod
 
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor1D
 import typings.atTensorflowTfjsDashCore.distTensorMod.Tensor2D
+import typings.atTensorflowTfjsDashCore.distTypesMod.TensorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,5 +19,11 @@ object linalg extends js.Object {
       typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank]
     ]
   ] = js.native
+  @js.native
+  object bandPart extends js.Object {
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](a: T, numLower: Double, numUpper: Double): T = js.native
+    def apply[T /* <: typings.atTensorflowTfjsDashCore.distTensorMod.Tensor[typings.atTensorflowTfjsDashCore.distTypesMod.Rank] */](a: TensorLike, numLower: Double, numUpper: Double): T = js.native
+  }
+  
 }
 

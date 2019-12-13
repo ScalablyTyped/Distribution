@@ -14,7 +14,8 @@ trait EnvVarSource extends js.Object {
   val configMapKeyRef: ConfigMapKeySelector
   /**
     * Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels,
-    * metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP.
+    * metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP,
+    * status.podIPs.
     */
   val fieldRef: ObjectFieldSelector
   /**

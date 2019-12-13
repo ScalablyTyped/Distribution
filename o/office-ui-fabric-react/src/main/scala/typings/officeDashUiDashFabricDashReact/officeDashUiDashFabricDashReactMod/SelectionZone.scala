@@ -1,6 +1,8 @@
 package typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactMod
 
 import typings.officeDashUiDashFabricDashReact.Anon_IsSelectedOnFocus
+import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
+import typings.officeDashUiDashFabricDashReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,13 +20,16 @@ import scala.scalajs.js.annotation._
 - typings.officeDashUiDashFabricDashReact.libMarqueeSelectionMod.SelectionZone because Inheritance from two classes. Inlined 
 - typings.officeDashUiDashFabricDashReact.libSelectionMod.SelectionZone because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
-class SelectionZone ()
-  extends typings.officeDashUiDashFabricDashReact.libDetailsListMod.SelectionZone
+class SelectionZone protected ()
+  extends typings.officeDashUiDashFabricDashReact.libDetailsListMod.SelectionZone {
+  def this(props: ISelectionZoneProps) = this()
+}
 
 /* static members */
 @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {
   var defaultProps: Anon_IsSelectedOnFocus = js.native
+  def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = js.native
 }
 

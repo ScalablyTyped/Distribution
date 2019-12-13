@@ -30,6 +30,12 @@ trait Pool extends js.Object {
     */
   val poolMax: Double = js.native
   /**
+    * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
+    * 
+    * @since 4.1
+    */
+  val poolMaxPerShard: Double = js.native
+  /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
     */
   val poolMin: Double = js.native

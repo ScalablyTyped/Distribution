@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation._
   * Creates a new parse Parse.Query for the given Parse.Object subclass.
   * @param objectClass -
   *   An instance of a subclass of Parse.Object, or a Parse className string.
-  * @class
   *
   * <p>Parse.Query defines a query that is used to fetch Parse.Objects. The
   * most common use case is finding all objects that match a query through the
@@ -71,9 +70,9 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.Query")
 @js.native
-class Query_[T /* <: Object[_] */] protected () extends BaseObject {
+class Query_[T /* <: Object[Attributes] */] protected () extends js.Object {
   def this(objectClass: String) = this()
-  def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T]) = this()
+  def this(objectClass: Instantiable1[/* args (repeated) */ js.Any, T | Object[Attributes]]) = this()
   var className: String = js.native
   var objectClass: js.Any = js.native
   def addAscending(key: String): Query[T] = js.native
@@ -95,8 +94,8 @@ class Query_[T /* <: Object[_] */] protected () extends BaseObject {
   def descending(key: js.Array[String]): Query[T] = js.native
   def distinct[V](key: String): js.Promise[V] = js.native
   def doesNotExist(key: String): Query[T] = js.native
-  def doesNotMatchKeyInQuery[U /* <: Object[_] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
-  def doesNotMatchQuery[U /* <: Object[_] */](key: String, query: Query[U]): Query[T] = js.native
+  def doesNotMatchKeyInQuery[U /* <: Object[Attributes] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
+  def doesNotMatchQuery[U /* <: Object[Attributes] */](key: String, query: Query[U]): Query[T] = js.native
   def each(callback: js.Function): js.Promise[Unit] = js.native
   def each(callback: js.Function, options: EachOptions): js.Promise[Unit] = js.native
   def endsWith(key: String, suffix: String): Query[T] = js.native
@@ -116,14 +115,14 @@ class Query_[T /* <: Object[_] */] protected () extends BaseObject {
   def greaterThan(key: String, value: js.Any): Query[T] = js.native
   def greaterThanOrEqualTo(key: String, value: js.Any): Query[T] = js.native
   def include(key: String): Query[T] = js.native
-  def include(keys: js.Array[String]): Query[T] = js.native
+  def include(key: js.Array[String]): Query[T] = js.native
   def includeAll(): Query[T] = js.native
   def lessThan(key: String, value: js.Any): Query[T] = js.native
   def lessThanOrEqualTo(key: String, value: js.Any): Query[T] = js.native
   def limit(n: Double): Query[T] = js.native
   def matches(key: String, regex: RegExp, modifiers: js.Any): Query[T] = js.native
-  def matchesKeyInQuery[U /* <: Object[_] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
-  def matchesQuery[U /* <: Object[_] */](key: String, query: Query[U]): Query[T] = js.native
+  def matchesKeyInQuery[U /* <: Object[Attributes] */](key: String, queryKey: String, query: Query[U]): Query[T] = js.native
+  def matchesQuery[U /* <: Object[Attributes] */](key: String, query: Query[U]): Query[T] = js.native
   def near(key: String, point: GeoPoint): Query[T] = js.native
   def notContainedIn(key: String, values: js.Array[_]): Query[T] = js.native
   def notEqualTo(key: String, value: js.Any): Query[T] = js.native
@@ -133,6 +132,7 @@ class Query_[T /* <: Object[_] */] protected () extends BaseObject {
   def sortByTextScore(): this.type = js.native
   def startsWith(key: String, prefix: String): Query[T] = js.native
   def subscribe(): js.Promise[LiveQuerySubscription] = js.native
+  def toJSON(): js.Any = js.native
   def withJSON(json: js.Any): this.type = js.native
   def withinGeoBox(key: String, southwest: GeoPoint, northeast: GeoPoint): Query[T] = js.native
   def withinKilometers(key: String, point: GeoPoint, maxDistance: Double): Query[T] = js.native

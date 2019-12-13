@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ConstructionSite")
 @js.native
 class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructureConstant] {
-  def this(id: String) = this()
+  def this(id: Id[ConstructionSite[BuildableStructureConstant]]) = this()
   /**
     * Applied effects, an array of objects with the following properties:
     */
@@ -17,7 +17,7 @@ class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructu
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
-  override var id: String = js.native
+  override var id: Id[this.type] = js.native
   /**
     * Whether this is your own construction site.
     */

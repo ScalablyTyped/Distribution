@@ -1,7 +1,9 @@
 package typings.atFirebaseMessaging
 
 import typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesMod.FirebaseApp
+import typings.atFirebaseAppDashTypes.privateMod.FirebaseService
 import typings.atFirebaseAppDashTypes.privateMod.FirebaseServiceInternals
+import typings.atFirebaseMessaging.distSrcInterfacesInternalDashServicesMod.FirebaseInternalServices
 import typings.atFirebaseMessaging.distSrcInterfacesMessageDashPayloadMod.MessagePayload
 import typings.atFirebaseMessaging.distSrcModelsSubscriptionDashManagerMod.SubscriptionManager
 import typings.atFirebaseMessaging.distSrcModelsTokenDashDetailsDashModelMod.TokenDetailsModel
@@ -19,10 +21,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcControllersBaseDashControllerMod extends js.Object {
   @js.native
-  abstract class BaseController protected () extends FirebaseMessaging {
-    def this(app: FirebaseApp) = this()
-    var INTERNAL: FirebaseServiceInternals = js.native
-    val app: FirebaseApp = js.native
+  abstract class BaseController protected ()
+    extends FirebaseMessaging
+       with FirebaseService {
+    def this(services: FirebaseInternalServices) = this()
+    @JSName("INTERNAL")
+    var INTERNAL_BaseController: FirebaseServiceInternals = js.native
+    /* CompleteClass */
+    override var app: FirebaseApp = js.native
     /**
       * This method will delete the token from the client database, and make a
       * call to FCM to remove it from the server DB. Does not temper with the
@@ -40,6 +46,7 @@ object distSrcControllersBaseDashControllerMod extends js.Object {
       * the token, and to check if the token is still valid on FCM-side.
       */
     var manageExistingToken: js.Any = js.native
+    val services: FirebaseInternalServices = js.native
     val subscriptionManager: js.Any = js.native
     val tokenDetailsModel: js.Any = js.native
     var updateToken: js.Any = js.native

@@ -449,6 +449,9 @@ trait semanticDashUiDashReactProps {
   def SearchCategoryProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
   type SearchCategoryProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
   @scala.inline
+  def SearchCategoryLayoutProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps
+  type SearchCategoryLayoutProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryLayoutMod.SearchCategoryLayoutProps
+  @scala.inline
   def SearchDefaultProps: typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps.type = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps
   type SearchDefaultProps = typings.semanticDashUiDashReact.distCommonjsModulesSearchSearchMod.SearchProps
   @scala.inline

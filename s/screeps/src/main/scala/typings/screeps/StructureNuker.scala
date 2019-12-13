@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.TopLevel
+import typings.screeps.screepsNumbers.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,27 +15,36 @@ import scala.scalajs.js.annotation._
   */
 trait StructureNuker
   extends OwnedStructure[STRUCTURE_NUKER]
-     with AnyOwnedStructure {
+     with AnyOwnedStructure
+     with AnyStoreStructure {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */
   var cooldown: Double
   /**
     * The amount of energy contained in this structure.
+    * @deprecated An alias for .store[RESOURCE_ENERGY].
     */
   var energy: Double
   /**
     * The total amount of energy this structure can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_ENERGY).
     */
   var energyCapacity: Double
   /**
     * The amount of energy contained in this structure.
+    * @deprecated An alias for .store[RESOURCE_GHODIUM].
     */
   var ghodium: Double
   /**
     * The total amount of energy this structure can contain.
+    * @deprecated An alias for .store.getCapacity(RESOURCE_GHODIUM).
     */
   var ghodiumCapacity: Double
+  /**
+    * A Store object that contains cargo of this structure.
+    */
+  var store: Store[RESOURCE_ENERGY | RESOURCE_GHODIUM, `false`]
   /**
     * Launch a nuke to the specified position.
     * @param pos The target room position.

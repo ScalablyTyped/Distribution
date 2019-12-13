@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "nivo__line"
-version := "0.59.3-9e56bb"
+version := "0.59.3-014bf3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "nivo__axes" % "0.59.2-5552ec",
+  "org.scalablytyped" %%% "nivo__axes" % "0.59.2-87ebd1",
   "org.scalablytyped" %%% "nivo__colors" % "0.59.0-8e9d8f",
   "org.scalablytyped" %%% "nivo__core" % "0.59.1-2e5fdb",
-  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-83aff8",
+  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-5a7228",
   "org.scalablytyped" %%% "nivo__scales" % "0.59.3-5c8478",
-  "org.scalablytyped" %%% "nivo__tooltip" % "0.59.1-22c206",
+  "org.scalablytyped" %%% "nivo__tooltip" % "0.59.1-4d66f3",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

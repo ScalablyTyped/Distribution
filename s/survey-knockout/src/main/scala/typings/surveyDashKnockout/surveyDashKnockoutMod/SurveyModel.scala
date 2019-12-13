@@ -716,7 +716,7 @@ class SurveyModel ()
     */
   var onUpdateQuestionCssClasses: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
-    * The event is fired on uploading the file in QuestionFile. You may use it to change the file name or tells the library do not accept the file. There are three properties in options: options.name, options.file and options.accept.
+    * The event is fired on uploading the file in QuestionFile when storeDataAsText is set to false. You may use it to change the file name or tells the library do not accept the file. There are three properties in options: options.name, options.file and options.accept.
     * <br/> sender the survey object that fires the event
     * name: name, file: file, accept: accept
     * <br/> name the file name

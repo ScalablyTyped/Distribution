@@ -2,6 +2,9 @@ package typings.preact.preactMod.h.JSX
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.preact.preactMod.ClassAttributes
+import typings.preact.preactStrings.auto
+import typings.preact.preactStrings.ltr
+import typings.preact.preactStrings.rtl
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +54,7 @@ trait HTMLAttributes[RefType /* <: EventTarget */]
   var dateTime: js.UndefOr[String] = js.undefined
   var default: js.UndefOr[Boolean] = js.undefined
   var defer: js.UndefOr[Boolean] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
+  var dir: js.UndefOr[auto | rtl | ltr] = js.undefined
   var disableRemotePlayback: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var download: js.UndefOr[js.Any] = js.undefined
@@ -204,7 +207,7 @@ object HTMLAttributes {
     dateTime: String = null,
     default: js.UndefOr[Boolean] = js.undefined,
     defer: js.UndefOr[Boolean] = js.undefined,
-    dir: String = null,
+    dir: auto | rtl | ltr = null,
     disableRemotePlayback: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     download: js.Any = null,

@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "actions-on-google"
-version := "2.12.0-00fc17"
+version := "2.12.0-79a7a7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20191115Z-89e09b",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-5c00d3",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-3ec72b",
+  "org.scalablytyped" %%% "aws-lambda" % "8.10-dt-20191207Z-a6e9d3",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-dbbefd",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b2c6f4",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190808Z-ca3bb7",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-10cbdd",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-49513f",
-  "org.scalablytyped" %%% "gaxios" % "2.0.1-534dde",
-  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-b143d9",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-7b0398",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191115Z-051e33",
+  "org.scalablytyped" %%% "gaxios" % "2.0.1-02ca6b",
+  "org.scalablytyped" %%% "google-auth-library" % "5.3.0-f0accd",
   "org.scalablytyped" %%% "gtoken" % "4.1.0-420d70",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e84c0f",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-1b75dd",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-1f57e0",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-f2210d",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

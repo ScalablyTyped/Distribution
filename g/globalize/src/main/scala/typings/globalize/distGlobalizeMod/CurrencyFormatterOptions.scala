@@ -4,8 +4,10 @@ import typings.globalize.globalizeStrings.accounting
 import typings.globalize.globalizeStrings.ceil
 import typings.globalize.globalizeStrings.code
 import typings.globalize.globalizeStrings.floor
+import typings.globalize.globalizeStrings.long
 import typings.globalize.globalizeStrings.name
 import typings.globalize.globalizeStrings.round
+import typings.globalize.globalizeStrings.short
 import typings.globalize.globalizeStrings.symbol
 import typings.globalize.globalizeStrings.truncate
 import scala.scalajs.js
@@ -22,6 +24,7 @@ trait CurrencyFormatterOptions extends CommonNumberFormatterOptions {
 object CurrencyFormatterOptions {
   @scala.inline
   def apply(
+    compact: short | long = null,
     maximumFractionDigits: Int | Double = null,
     maximumSignificantDigits: Int | Double = null,
     minimumFractionDigits: Int | Double = null,
@@ -32,6 +35,7 @@ object CurrencyFormatterOptions {
     useGrouping: js.UndefOr[Boolean] = js.undefined
   ): CurrencyFormatterOptions = {
     val __obj = js.Dynamic.literal()
+    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (maximumFractionDigits != null) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.asInstanceOf[js.Any])
     if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])
     if (minimumFractionDigits != null) __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits.asInstanceOf[js.Any])

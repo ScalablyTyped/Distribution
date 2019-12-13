@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "neffos.js" : "0.1.22"
+      "neffos.js" : "0.1.25"
     }
   ],
   "test-dependencies" : [
     {
-      "neffos.js" : "0.1.22"
+      "neffos.js" : "0.1.25"
     }
   ],
   "compile-devDependencies" : [

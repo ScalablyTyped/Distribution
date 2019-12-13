@@ -21,8 +21,6 @@ abstract class Ailment protected () extends IAilment {
   var _debug: js.UndefOr[js.Any] = js.native
   val client: IClient = js.native
   val config: IConfig = js.native
-  @JSName("debug")
-  val debug_Original: Debugger = js.native
   /* CompleteClass */
   override val id: String = js.native
   /* CompleteClass */
@@ -31,7 +29,7 @@ abstract class Ailment protected () extends IAilment {
   val project: IProject = js.native
   val session: ISession = js.native
   val shell: IShell = js.native
-  def debug(formatter: js.Any, args: js.Any*): Unit = js.native
+  def debug(): Debugger = js.native
   /* CompleteClass */
   override def detected(): js.Promise[Boolean] = js.native
   def getLocalPackageJson(pkgName: String): js.Promise[js.UndefOr[PackageJson]] = js.native

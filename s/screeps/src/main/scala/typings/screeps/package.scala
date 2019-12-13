@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object screeps {
   import org.scalablytyped.runtime.NumberDictionary
   import org.scalablytyped.runtime.StringDictionary
-  import typings.screeps.screepsNumbers.`-106`
+  import typings.screeps.Tag.OpaqueTag
   import typings.screeps.screepsNumbers.`-10`
   import typings.screeps.screepsNumbers.`-11`
   import typings.screeps.screepsNumbers.`-12`
@@ -23,6 +23,8 @@ package object screeps {
   import typings.screeps.screepsNumbers.`-8`
   import typings.screeps.screepsNumbers.`-9`
   import typings.screeps.screepsNumbers.`0`
+  import typings.screeps.screepsNumbers.`1001`
+  import typings.screeps.screepsNumbers.`1002`
   import typings.screeps.screepsNumbers.`101`
   import typings.screeps.screepsNumbers.`102`
   import typings.screeps.screepsNumbers.`103`
@@ -46,6 +48,8 @@ package object screeps {
   import typings.screeps.screepsNumbers.`11`
   import typings.screeps.screepsNumbers.`120`
   import typings.screeps.screepsNumbers.`121`
+  import typings.screeps.screepsNumbers.`122`
+  import typings.screeps.screepsNumbers.`123`
   import typings.screeps.screepsNumbers.`12`
   import typings.screeps.screepsNumbers.`13`
   import typings.screeps.screepsNumbers.`14`
@@ -53,6 +57,7 @@ package object screeps {
   import typings.screeps.screepsNumbers.`16`
   import typings.screeps.screepsNumbers.`17`
   import typings.screeps.screepsNumbers.`18`
+  import typings.screeps.screepsNumbers.`19`
   import typings.screeps.screepsNumbers.`1`
   import typings.screeps.screepsNumbers.`2`
   import typings.screeps.screepsNumbers.`3`
@@ -62,6 +67,8 @@ package object screeps {
   import typings.screeps.screepsNumbers.`7`
   import typings.screeps.screepsNumbers.`8`
   import typings.screeps.screepsNumbers.`9`
+  import typings.screeps.screepsNumbers.`false`
+  import typings.screeps.screepsNumbers.`true`
   import typings.screeps.screepsStrings.G
   import typings.screeps.screepsStrings.GH
   import typings.screeps.screepsStrings.GH2O
@@ -103,49 +110,96 @@ package object screeps {
   import typings.screeps.screepsStrings.ZHO2
   import typings.screeps.screepsStrings.ZK
   import typings.screeps.screepsStrings.ZO
+  import typings.screeps.screepsStrings.alloy
   import typings.screeps.screepsStrings.attack
+  import typings.screeps.screepsStrings.battery
+  import typings.screeps.screepsStrings.biomass
+  import typings.screeps.screepsStrings.buy
   import typings.screeps.screepsStrings.carry
+  import typings.screeps.screepsStrings.cell
+  import typings.screeps.screepsStrings.circuit
   import typings.screeps.screepsStrings.claim
+  import typings.screeps.screepsStrings.composite
+  import typings.screeps.screepsStrings.concentrate
+  import typings.screeps.screepsStrings.condensate
   import typings.screeps.screepsStrings.constructedWall
   import typings.screeps.screepsStrings.constructionSite
   import typings.screeps.screepsStrings.container
   import typings.screeps.screepsStrings.controller
   import typings.screeps.screepsStrings.creep
+  import typings.screeps.screepsStrings.crystal
+  import typings.screeps.screepsStrings.deposit
+  import typings.screeps.screepsStrings.device
+  import typings.screeps.screepsStrings.emanation
   import typings.screeps.screepsStrings.energy
+  import typings.screeps.screepsStrings.essence
   import typings.screeps.screepsStrings.extension
+  import typings.screeps.screepsStrings.extract
   import typings.screeps.screepsStrings.extractor
+  import typings.screeps.screepsStrings.factory
+  import typings.screeps.screepsStrings.fixtures
   import typings.screeps.screepsStrings.flag
+  import typings.screeps.screepsStrings.frame
+  import typings.screeps.screepsStrings.ghodium_melt
   import typings.screeps.screepsStrings.heal
+  import typings.screeps.screepsStrings.hydraulics
+  import typings.screeps.screepsStrings.invaderCore
+  import typings.screeps.screepsStrings.keanium_bar
   import typings.screeps.screepsStrings.keeperLair
   import typings.screeps.screepsStrings.lab
+  import typings.screeps.screepsStrings.lemergium_bar
   import typings.screeps.screepsStrings.link
+  import typings.screeps.screepsStrings.liquid
+  import typings.screeps.screepsStrings.machine
+  import typings.screeps.screepsStrings.metal
+  import typings.screeps.screepsStrings.microchip
   import typings.screeps.screepsStrings.mineral
+  import typings.screeps.screepsStrings.mist
   import typings.screeps.screepsStrings.move
+  import typings.screeps.screepsStrings.muscle
   import typings.screeps.screepsStrings.nuke
   import typings.screeps.screepsStrings.nuker
   import typings.screeps.screepsStrings.observer
   import typings.screeps.screepsStrings.operator
   import typings.screeps.screepsStrings.ops
+  import typings.screeps.screepsStrings.organism
+  import typings.screeps.screepsStrings.organoid
+  import typings.screeps.screepsStrings.oxidant
+  import typings.screeps.screepsStrings.phlegm
   import typings.screeps.screepsStrings.portal
   import typings.screeps.screepsStrings.power
   import typings.screeps.screepsStrings.powerBank
   import typings.screeps.screepsStrings.powerCreep
   import typings.screeps.screepsStrings.powerSpawn
+  import typings.screeps.screepsStrings.purifier
   import typings.screeps.screepsStrings.rampart
   import typings.screeps.screepsStrings.ranged_attack
+  import typings.screeps.screepsStrings.reductant
   import typings.screeps.screepsStrings.resource
   import typings.screeps.screepsStrings.road
+  import typings.screeps.screepsStrings.ruin
+  import typings.screeps.screepsStrings.sell
+  import typings.screeps.screepsStrings.silicon
   import typings.screeps.screepsStrings.source
   import typings.screeps.screepsStrings.spawn
+  import typings.screeps.screepsStrings.spirit
   import typings.screeps.screepsStrings.storage
   import typings.screeps.screepsStrings.structure
+  import typings.screeps.screepsStrings.switch
   import typings.screeps.screepsStrings.terminal
   import typings.screeps.screepsStrings.terrain
+  import typings.screeps.screepsStrings.tissue
   import typings.screeps.screepsStrings.token
   import typings.screeps.screepsStrings.tombstone
   import typings.screeps.screepsStrings.tough
   import typings.screeps.screepsStrings.tower
+  import typings.screeps.screepsStrings.transistor
+  import typings.screeps.screepsStrings.tube
+  import typings.screeps.screepsStrings.utrium_bar
+  import typings.screeps.screepsStrings.wire
   import typings.screeps.screepsStrings.work
+  import typings.screeps.screepsStrings.zynthium_bar
+  import typings.std.Exclude
   import typings.std.Partial
   import typings.std.Pick
   import typings.std.Record
@@ -157,7 +211,7 @@ package object screeps {
   // Body Part Constants
   type BodyPartConstant = MOVE | WORK | CARRY | ATTACK | RANGED_ATTACK | TOUGH | HEAL | CLAIM
   // Structure Constants
-  type BuildableStructureConstant = STRUCTURE_EXTENSION | STRUCTURE_RAMPART | STRUCTURE_ROAD | STRUCTURE_SPAWN | STRUCTURE_LINK | STRUCTURE_WALL | STRUCTURE_STORAGE | STRUCTURE_TOWER | STRUCTURE_OBSERVER | STRUCTURE_POWER_SPAWN | STRUCTURE_EXTRACTOR | STRUCTURE_LAB | STRUCTURE_TERMINAL | STRUCTURE_CONTAINER | STRUCTURE_NUKER
+  type BuildableStructureConstant = STRUCTURE_EXTENSION | STRUCTURE_RAMPART | STRUCTURE_ROAD | STRUCTURE_SPAWN | STRUCTURE_LINK | STRUCTURE_WALL | STRUCTURE_STORAGE | STRUCTURE_TOWER | STRUCTURE_OBSERVER | STRUCTURE_POWER_SPAWN | STRUCTURE_EXTRACTOR | STRUCTURE_LAB | STRUCTURE_TERMINAL | STRUCTURE_CONTAINER | STRUCTURE_NUKER | STRUCTURE_FACTORY
   type CARRY = carry
   type CLAIM = claim
   type COLOR_BLUE = `3`
@@ -173,10 +227,16 @@ package object screeps {
   type CPUShardLimits = StringDictionary[Double]
   // Color Constants
   type ColorConstant = COLOR_RED | COLOR_PURPLE | COLOR_BLUE | COLOR_CYAN | COLOR_GREEN | COLOR_YELLOW | COLOR_ORANGE | COLOR_BROWN | COLOR_GREY | COLOR_WHITE
+  /** The commodities, produced by the Factory */
+  type CommodityConstant = RESOURCE_UTRIUM_BAR | RESOURCE_LEMERGIUM_BAR | RESOURCE_ZYNTHIUM_BAR | RESOURCE_KEANIUM_BAR | RESOURCE_GHODIUM_MELT | RESOURCE_OXIDANT | RESOURCE_REDUCTANT | RESOURCE_PURIFIER | RESOURCE_BATTERY | RESOURCE_COMPOSITE | RESOURCE_CRYSTAL | RESOURCE_LIQUID | RESOURCE_WIRE | RESOURCE_SWITCH | RESOURCE_TRANSISTOR | RESOURCE_MICROCHIP | RESOURCE_CIRCUIT | RESOURCE_DEVICE | RESOURCE_CELL | RESOURCE_PHLEGM | RESOURCE_TISSUE | RESOURCE_MUSCLE | RESOURCE_ORGANOID | RESOURCE_ORGANISM | RESOURCE_ALLOY | RESOURCE_TUBE | RESOURCE_FIXTURES | RESOURCE_FRAME | RESOURCE_HYDRAULICS | RESOURCE_MACHINE | RESOURCE_CONDENSATE | RESOURCE_CONCENTRATE | RESOURCE_EXTRACT | RESOURCE_SPIRIT | RESOURCE_EMANATION | RESOURCE_ESSENCE
   type CreepActionReturnCode = OK | ERR_NOT_OWNER | ERR_BUSY | ERR_INVALID_TARGET | ERR_NOT_IN_RANGE | ERR_NO_BODYPART | ERR_TIRED
   type CreepMoveReturnCode = OK | ERR_NOT_OWNER | ERR_BUSY | ERR_TIRED | ERR_NO_BODYPART
+  /** The raw deposits */
+  type DepositConstant = RESOURCE_MIST | RESOURCE_BIOMASS | RESOURCE_METAL | RESOURCE_SILICON
   // Direction Constants
   type DirectionConstant = TOP | TOP_RIGHT | RIGHT | BOTTOM_RIGHT | BOTTOM | BOTTOM_LEFT | LEFT | TOP_LEFT
+  type EFFECT_COLLAPSE_TIMER = `1002`
+  type EFFECT_INVULNERABILITY = `1001`
   type ERR_BUSY = `-4`
   type ERR_FULL = `-8`
   type ERR_GCL_NOT_ENOUGH = `-15`
@@ -208,11 +268,14 @@ package object screeps {
   type EVENT_HEAL_TYPE_MELEE = `1`
   type EVENT_HEAL_TYPE_RANGED = `2`
   type EVENT_OBJECT_DESTROYED = `2`
+  type EVENT_POWER = `11`
   type EVENT_REPAIR = `7`
   type EVENT_RESERVE_CONTROLLER = `8`
+  type EVENT_TRANSFER = `12`
   type EVENT_UPGRADE_CONTROLLER = `9`
+  type EffectConstant = EFFECT_INVULNERABILITY | EFFECT_COLLAPSE_TIMER
   type EventAttackType = EVENT_ATTACK_TYPE_MELEE | EVENT_ATTACK_TYPE_RANGED | EVENT_ATTACK_TYPE_RANGED_MASS | EVENT_ATTACK_TYPE_DISMANTLE | EVENT_ATTACK_TYPE_HIT_BACK | EVENT_ATTACK_TYPE_NUKE
-  type EventConstant = EVENT_ATTACK | EVENT_OBJECT_DESTROYED | EVENT_ATTACK_CONTROLLER | EVENT_BUILD | EVENT_HARVEST | EVENT_HEAL | EVENT_REPAIR | EVENT_RESERVE_CONTROLLER | EVENT_UPGRADE_CONTROLLER | EVENT_EXIT
+  type EventConstant = EVENT_ATTACK | EVENT_OBJECT_DESTROYED | EVENT_ATTACK_CONTROLLER | EVENT_BUILD | EVENT_HARVEST | EVENT_HEAL | EVENT_REPAIR | EVENT_RESERVE_CONTROLLER | EVENT_UPGRADE_CONTROLLER | EVENT_EXIT | EVENT_POWER | EVENT_TRANSFER
   type EventDestroyType = creep | StructureConstant
   type EventHealType = EVENT_HEAL_TYPE_MELEE | EVENT_HEAL_TYPE_RANGED
   // Find Constants
@@ -224,7 +287,7 @@ package object screeps {
   type ExitsInformation = Partial[Record[ExitKey, String]]
   type FIND_CONSTRUCTION_SITES = `111`
   type FIND_CREEPS = `101`
-  type FIND_DROPPED_ENERGY = `-106`
+  type FIND_DEPOSITS = `122`
   type FIND_DROPPED_RESOURCES = `106`
   type FIND_EXIT = `10`
   type FIND_EXIT_BOTTOM = `5`
@@ -245,6 +308,7 @@ package object screeps {
   type FIND_MY_STRUCTURES = `108`
   type FIND_NUKES = `117`
   type FIND_POWER_CREEPS = `119`
+  type FIND_RUINS = `123`
   type FIND_SOURCES = `105`
   type FIND_SOURCES_ACTIVE = `104`
   type FIND_STRUCTURES = `107`
@@ -254,17 +318,21 @@ package object screeps {
     Boolean
   ]
   type FilterObject = StringDictionary[js.Any]
-  type FindConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT | FIND_EXIT | FIND_CREEPS | FIND_MY_CREEPS | FIND_HOSTILE_CREEPS | FIND_SOURCES_ACTIVE | FIND_SOURCES | FIND_DROPPED_RESOURCES | FIND_STRUCTURES | FIND_MY_STRUCTURES | FIND_HOSTILE_STRUCTURES | FIND_FLAGS | FIND_CONSTRUCTION_SITES | FIND_MY_SPAWNS | FIND_HOSTILE_SPAWNS | FIND_MY_CONSTRUCTION_SITES | FIND_HOSTILE_CONSTRUCTION_SITES | FIND_MINERALS | FIND_NUKES | FIND_TOMBSTONES | FIND_POWER_CREEPS | FIND_MY_POWER_CREEPS | FIND_HOSTILE_POWER_CREEPS
+  type FindConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT | FIND_EXIT | FIND_CREEPS | FIND_MY_CREEPS | FIND_HOSTILE_CREEPS | FIND_SOURCES_ACTIVE | FIND_SOURCES | FIND_DROPPED_RESOURCES | FIND_STRUCTURES | FIND_MY_STRUCTURES | FIND_HOSTILE_STRUCTURES | FIND_FLAGS | FIND_CONSTRUCTION_SITES | FIND_MY_SPAWNS | FIND_HOSTILE_SPAWNS | FIND_MY_CONSTRUCTION_SITES | FIND_HOSTILE_CONSTRUCTION_SITES | FIND_MINERALS | FIND_NUKES | FIND_TOMBSTONES | FIND_POWER_CREEPS | FIND_MY_POWER_CREEPS | FIND_HOSTILE_POWER_CREEPS | FIND_DEPOSITS | FIND_RUINS
+  type GenericStore = GenericStoreBase with typings.screeps.screepsStrings.GenericStore with js.Any
   type HEAL = heal
+  type Id[T] = String with OpaqueTag[T]
   type LEFT = `7`
   type LOOK_CONSTRUCTION_SITES = constructionSite
   type LOOK_CREEPS = creep
+  type LOOK_DEPOSITS = deposit
   type LOOK_ENERGY = energy
   type LOOK_FLAGS = flag
   type LOOK_MINERALS = mineral
   type LOOK_NUKES = nuke
   type LOOK_POWER_CREEPS = powerCreep
   type LOOK_RESOURCES = resource
+  type LOOK_RUINS = ruin
   type LOOK_SOURCES = source
   type LOOK_STRUCTURES = structure
   type LOOK_TERRAIN = terrain
@@ -274,14 +342,23 @@ package object screeps {
   type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_XY
   type LookAtTypes = Partial[AllLookAtTypes]
   // Look Constants
-  type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES | LOOK_POWER_CREEPS
+  type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_DEPOSITS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES | LOOK_POWER_CREEPS | LOOK_RUINS
   type LookForAtAreaResultArray[T, K /* <: String */] = js.Array[LookForAtAreaResultWithPos[T, K]]
   type LookForAtAreaResultMatrix[T, K /* <: String */] = NumberDictionary[NumberDictionary[js.Array[LookForAtAreaResult[T, K]]]]
   type LookForAtAreaResultWithPos[T, K /* <: String */] = (LookForAtAreaResult[T, K]) with Anon_XY
   type MOVE = move
   type MarketResourceConstant = ResourceConstant | SUBSCRIPTION_TOKEN
-  type MineralConstant = RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_GHODIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST
+  /** The compounds which can't boost */
+  type MineralBaseCompoundsConstant = RESOURCE_HYDROXIDE | RESOURCE_ZYNTHIUM_KEANITE | RESOURCE_UTRIUM_LEMERGITE | RESOURCE_GHODIUM
+  /** The boosts (from tier 1 to tier 3) */
+  type MineralBoostConstant = RESOURCE_UTRIUM_HYDRIDE | RESOURCE_UTRIUM_OXIDE | RESOURCE_KEANIUM_HYDRIDE | RESOURCE_KEANIUM_OXIDE | RESOURCE_LEMERGIUM_HYDRIDE | RESOURCE_LEMERGIUM_OXIDE | RESOURCE_ZYNTHIUM_HYDRIDE | RESOURCE_ZYNTHIUM_OXIDE | RESOURCE_GHODIUM_HYDRIDE | RESOURCE_GHODIUM_OXIDE | RESOURCE_UTRIUM_ACID | RESOURCE_UTRIUM_ALKALIDE | RESOURCE_KEANIUM_ACID | RESOURCE_KEANIUM_ALKALIDE | RESOURCE_LEMERGIUM_ACID | RESOURCE_LEMERGIUM_ALKALIDE | RESOURCE_ZYNTHIUM_ACID | RESOURCE_ZYNTHIUM_ALKALIDE | RESOURCE_GHODIUM_ACID | RESOURCE_GHODIUM_ALKALIDE | RESOURCE_CATALYZED_UTRIUM_ACID | RESOURCE_CATALYZED_UTRIUM_ALKALIDE | RESOURCE_CATALYZED_KEANIUM_ACID | RESOURCE_CATALYZED_KEANIUM_ALKALIDE | RESOURCE_CATALYZED_LEMERGIUM_ACID | RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE | RESOURCE_CATALYZED_ZYNTHIUM_ACID | RESOURCE_CATALYZED_ZYNTHIUM_ALKALIDE | RESOURCE_CATALYZED_GHODIUM_ACID | RESOURCE_CATALYZED_GHODIUM_ALKALIDE
+  /** All the mineral compounds */
+  type MineralCompoundConstant = MineralBaseCompoundsConstant | MineralBoostConstant
+  /** The raw harvestable minerals */
+  type MineralConstant = RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST
   type OK = `0`
+  type ORDER_BUY = buy
+  type ORDER_SELL = sell
   type PWR_DISRUPT_SOURCE = `11`
   type PWR_DISRUPT_SPAWN = `9`
   type PWR_DISRUPT_TERMINAL = `15`
@@ -290,6 +367,7 @@ package object screeps {
   type PWR_GENERATE_OPS = `1`
   type PWR_OPERATE_CONTROLLER = `18`
   type PWR_OPERATE_EXTENSION = `6`
+  type PWR_OPERATE_FACTORY = `19`
   type PWR_OPERATE_LAB = `5`
   type PWR_OPERATE_OBSERVER = `7`
   type PWR_OPERATE_POWER = `16`
@@ -307,6 +385,9 @@ package object screeps {
     */
   type PowerCreepPowers = NumberDictionary[Anon_Cooldown]
   type RANGED_ATTACK = ranged_attack
+  type RESOURCE_ALLOY = alloy
+  type RESOURCE_BATTERY = battery
+  type RESOURCE_BIOMASS = biomass
   type RESOURCE_CATALYST = X
   type RESOURCE_CATALYZED_GHODIUM_ACID = XGH2O
   type RESOURCE_CATALYZED_GHODIUM_ALKALIDE = XGHO2
@@ -318,46 +399,85 @@ package object screeps {
   type RESOURCE_CATALYZED_UTRIUM_ALKALIDE = XUHO2
   type RESOURCE_CATALYZED_ZYNTHIUM_ACID = XZH2O
   type RESOURCE_CATALYZED_ZYNTHIUM_ALKALIDE = XZHO2
+  type RESOURCE_CELL = cell
+  type RESOURCE_CIRCUIT = circuit
+  type RESOURCE_COMPOSITE = composite
+  type RESOURCE_CONCENTRATE = concentrate
+  type RESOURCE_CONDENSATE = condensate
+  type RESOURCE_CRYSTAL = crystal
+  type RESOURCE_DEVICE = device
+  type RESOURCE_EMANATION = emanation
   type RESOURCE_ENERGY = energy
+  type RESOURCE_ESSENCE = essence
+  type RESOURCE_EXTRACT = extract
+  type RESOURCE_FIXTURES = fixtures
+  type RESOURCE_FRAME = frame
   type RESOURCE_GHODIUM = G
   type RESOURCE_GHODIUM_ACID = GH2O
   type RESOURCE_GHODIUM_ALKALIDE = GHO2
   type RESOURCE_GHODIUM_HYDRIDE = GH
+  type RESOURCE_GHODIUM_MELT = ghodium_melt
   type RESOURCE_GHODIUM_OXIDE = GO
+  type RESOURCE_HYDRAULICS = hydraulics
   type RESOURCE_HYDROGEN = H
   type RESOURCE_HYDROXIDE = OH
   type RESOURCE_KEANIUM = K
   type RESOURCE_KEANIUM_ACID = KH2O
   type RESOURCE_KEANIUM_ALKALIDE = KHO2
+  type RESOURCE_KEANIUM_BAR = keanium_bar
   type RESOURCE_KEANIUM_HYDRIDE = KH
   type RESOURCE_KEANIUM_OXIDE = KO
   type RESOURCE_LEMERGIUM = L
   type RESOURCE_LEMERGIUM_ACID = LH2O
   type RESOURCE_LEMERGIUM_ALKALIDE = LHO2
+  type RESOURCE_LEMERGIUM_BAR = lemergium_bar
   type RESOURCE_LEMERGIUM_HYDRIDE = LH
   type RESOURCE_LEMERGIUM_OXIDE = LO
+  type RESOURCE_LIQUID = liquid
+  type RESOURCE_MACHINE = machine
+  type RESOURCE_METAL = metal
+  type RESOURCE_MICROCHIP = microchip
+  type RESOURCE_MIST = mist
+  type RESOURCE_MUSCLE = muscle
   type RESOURCE_OPS = ops
+  type RESOURCE_ORGANISM = organism
+  type RESOURCE_ORGANOID = organoid
+  type RESOURCE_OXIDANT = oxidant
   type RESOURCE_OXYGEN = O
+  type RESOURCE_PHLEGM = phlegm
   type RESOURCE_POWER = power
+  type RESOURCE_PURIFIER = purifier
+  type RESOURCE_REDUCTANT = reductant
+  type RESOURCE_SILICON = silicon
+  type RESOURCE_SPIRIT = spirit
+  type RESOURCE_SWITCH = switch
+  type RESOURCE_TISSUE = tissue
+  type RESOURCE_TRANSISTOR = transistor
+  type RESOURCE_TUBE = tube
   type RESOURCE_UTRIUM = U
   type RESOURCE_UTRIUM_ACID = UH2O
   type RESOURCE_UTRIUM_ALKALIDE = UHO2
+  type RESOURCE_UTRIUM_BAR = utrium_bar
   type RESOURCE_UTRIUM_HYDRIDE = UH
   type RESOURCE_UTRIUM_LEMERGITE = UL
   type RESOURCE_UTRIUM_OXIDE = UO
+  type RESOURCE_WIRE = wire
   type RESOURCE_ZYNTHIUM = Z
   type RESOURCE_ZYNTHIUM_ACID = ZH2O
   type RESOURCE_ZYNTHIUM_ALKALIDE = ZHO2
+  type RESOURCE_ZYNTHIUM_BAR = zynthium_bar
   type RESOURCE_ZYNTHIUM_HYDRIDE = ZH
   type RESOURCE_ZYNTHIUM_KEANITE = ZK
   type RESOURCE_ZYNTHIUM_OXIDE = ZO
   type RIGHT = `3`
   // Resource Constants
-  type ResourceConstant = RESOURCE_ENERGY | RESOURCE_POWER | RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_GHODIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST | RESOURCE_HYDROXIDE | RESOURCE_ZYNTHIUM_KEANITE | RESOURCE_UTRIUM_LEMERGITE | RESOURCE_UTRIUM_HYDRIDE | RESOURCE_UTRIUM_OXIDE | RESOURCE_KEANIUM_HYDRIDE | RESOURCE_KEANIUM_OXIDE | RESOURCE_LEMERGIUM_HYDRIDE | RESOURCE_LEMERGIUM_OXIDE | RESOURCE_ZYNTHIUM_HYDRIDE | RESOURCE_ZYNTHIUM_OXIDE | RESOURCE_GHODIUM_HYDRIDE | RESOURCE_GHODIUM_OXIDE | RESOURCE_UTRIUM_ACID | RESOURCE_UTRIUM_ALKALIDE | RESOURCE_KEANIUM_ACID | RESOURCE_KEANIUM_ALKALIDE | RESOURCE_LEMERGIUM_ACID | RESOURCE_LEMERGIUM_ALKALIDE | RESOURCE_ZYNTHIUM_ACID | RESOURCE_ZYNTHIUM_ALKALIDE | RESOURCE_GHODIUM_ACID | RESOURCE_GHODIUM_ALKALIDE | RESOURCE_CATALYZED_UTRIUM_ACID | RESOURCE_CATALYZED_UTRIUM_ALKALIDE | RESOURCE_CATALYZED_KEANIUM_ACID | RESOURCE_CATALYZED_KEANIUM_ALKALIDE | RESOURCE_CATALYZED_LEMERGIUM_ACID | RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE | RESOURCE_CATALYZED_ZYNTHIUM_ACID | RESOURCE_CATALYZED_ZYNTHIUM_ALKALIDE | RESOURCE_CATALYZED_GHODIUM_ACID | RESOURCE_CATALYZED_GHODIUM_ALKALIDE | RESOURCE_OPS
+  type ResourceConstant = RESOURCE_ENERGY | RESOURCE_POWER | RESOURCE_OPS | MineralConstant | MineralCompoundConstant | DepositConstant | CommodityConstant
   type STRUCTURE_CONTAINER = container
   type STRUCTURE_CONTROLLER = controller
   type STRUCTURE_EXTENSION = extension
   type STRUCTURE_EXTRACTOR = extractor
+  type STRUCTURE_FACTORY = factory
+  type STRUCTURE_INVADER_CORE = invaderCore
   type STRUCTURE_KEEPER_LAIR = keeperLair
   type STRUCTURE_LAB = lab
   type STRUCTURE_LINK = link
@@ -376,8 +496,12 @@ package object screeps {
   type SUBSCRIPTION_TOKEN = token
   // Return Codes
   type ScreepsReturnCode = OK | ERR_NOT_OWNER | ERR_NO_PATH | ERR_BUSY | ERR_NAME_EXISTS | ERR_NOT_FOUND | ERR_NOT_ENOUGH_RESOURCES | ERR_NOT_ENOUGH_ENERGY | ERR_INVALID_TARGET | ERR_FULL | ERR_NOT_IN_RANGE | ERR_INVALID_ARGS | ERR_TIRED | ERR_NO_BODYPART | ERR_NOT_ENOUGH_EXTENSIONS | ERR_RCL_NOT_ENOUGH | ERR_GCL_NOT_ENOUGH
-  type StoreDefinition = (Partial[Record[_ResourceConstantSansEnergy, Double]]) with Anon_Energy
-  type StructureConstant = BuildableStructureConstant | STRUCTURE_KEEPER_LAIR | STRUCTURE_CONTROLLER | STRUCTURE_POWER_BANK | STRUCTURE_PORTAL
+  type Store[POSSIBLE_RESOURCES /* <: ResourceConstant */, UNLIMITED_STORE /* <: Boolean */] = (StoreBase[POSSIBLE_RESOURCES, UNLIMITED_STORE]) with typings.screeps.screepsStrings.Store with js.Any
+  /** A general purpose Store, which has a limited capacity */
+  type StoreDefinition = Store[ResourceConstant, `false`]
+  /** A general purpose Store, which has an unlimited capacity */
+  type StoreDefinitionUnlimited = Store[ResourceConstant, `true`]
+  type StructureConstant = BuildableStructureConstant | STRUCTURE_KEEPER_LAIR | STRUCTURE_CONTROLLER | STRUCTURE_POWER_BANK | STRUCTURE_PORTAL | STRUCTURE_INVADER_CORE
   type TERRAIN_MASK_LAVA = `4`
   type TERRAIN_MASK_SWAMP = `2`
   // Terrain mask constants
@@ -388,5 +512,5 @@ package object screeps {
   type TOP_RIGHT = `2`
   type TOUGH = tough
   type WORK = work
-  type _ResourceConstantSansEnergy = RESOURCE_POWER | RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_GHODIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST | RESOURCE_HYDROXIDE | RESOURCE_ZYNTHIUM_KEANITE | RESOURCE_UTRIUM_LEMERGITE | RESOURCE_UTRIUM_HYDRIDE | RESOURCE_UTRIUM_OXIDE | RESOURCE_KEANIUM_HYDRIDE | RESOURCE_KEANIUM_OXIDE | RESOURCE_LEMERGIUM_HYDRIDE | RESOURCE_LEMERGIUM_OXIDE | RESOURCE_ZYNTHIUM_HYDRIDE | RESOURCE_ZYNTHIUM_OXIDE | RESOURCE_GHODIUM_HYDRIDE | RESOURCE_GHODIUM_OXIDE | RESOURCE_UTRIUM_ACID | RESOURCE_UTRIUM_ALKALIDE | RESOURCE_KEANIUM_ACID | RESOURCE_KEANIUM_ALKALIDE | RESOURCE_LEMERGIUM_ACID | RESOURCE_LEMERGIUM_ALKALIDE | RESOURCE_ZYNTHIUM_ACID | RESOURCE_ZYNTHIUM_ALKALIDE | RESOURCE_GHODIUM_ACID | RESOURCE_GHODIUM_ALKALIDE | RESOURCE_CATALYZED_UTRIUM_ACID | RESOURCE_CATALYZED_UTRIUM_ALKALIDE | RESOURCE_CATALYZED_KEANIUM_ACID | RESOURCE_CATALYZED_KEANIUM_ALKALIDE | RESOURCE_CATALYZED_LEMERGIUM_ACID | RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE | RESOURCE_CATALYZED_ZYNTHIUM_ACID | RESOURCE_CATALYZED_ZYNTHIUM_ALKALIDE | RESOURCE_CATALYZED_GHODIUM_ACID | RESOURCE_CATALYZED_GHODIUM_ALKALIDE | RESOURCE_OPS
+  type _ResourceConstantSansEnergy = Exclude[ResourceConstant, RESOURCE_ENERGY]
 }

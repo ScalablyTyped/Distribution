@@ -17,6 +17,6 @@ object distTypesLifecycleMod extends js.Object {
   def useIonViewWillEnter(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
   def useIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
   def useIonViewWillLeave(callback: LifeCycleCallback, deps: js.Array[_]): Unit = js.native
-  def withIonLifeCycle(WrappedComponent: ComponentType[_]): Anon_ContextTypeProps = js.native
+  def withIonLifeCycle(WrappedComponent: ComponentType[_]): Anon_ContextType = js.native
 }
 

@@ -9,6 +9,9 @@ object levelupStrings {
   sealed trait batch extends js.Object
   
   @js.native
+  sealed trait clear extends js.Object
+  
+  @js.native
   sealed trait closed extends js.Object
   
   @js.native
@@ -31,6 +34,8 @@ object levelupStrings {
   
   @scala.inline
   def batch: batch = "batch".asInstanceOf[batch]
+  @scala.inline
+  def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline

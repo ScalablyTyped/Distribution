@@ -12,6 +12,7 @@ trait Request extends js.Object {
   var connectTimeout: js.UndefOr[Double] = js.undefined
   var contentType: js.UndefOr[String] = js.undefined
   var data: js.UndefOr[String] = js.undefined
+  var disableDisconnect: js.UndefOr[Boolean] = js.undefined
   var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
   var dispatchUrl: js.UndefOr[String] = js.undefined
   var dropHeaders: js.UndefOr[Boolean] = js.undefined
@@ -85,6 +86,7 @@ object Request {
     connectTimeout: Int | Double = null,
     contentType: String = null,
     data: String = null,
+    disableDisconnect: js.UndefOr[Boolean] = js.undefined,
     disconnect: () => Unit = null,
     dispatchUrl: String = null,
     dropHeaders: js.UndefOr[Boolean] = js.undefined,
@@ -147,6 +149,7 @@ object Request {
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableDisconnect)) __obj.updateDynamic("disableDisconnect")(disableDisconnect.asInstanceOf[js.Any])
     if (disconnect != null) __obj.updateDynamic("disconnect")(js.Any.fromFunction0(disconnect))
     if (dispatchUrl != null) __obj.updateDynamic("dispatchUrl")(dispatchUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(dropHeaders)) __obj.updateDynamic("dropHeaders")(dropHeaders.asInstanceOf[js.Any])

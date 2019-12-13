@@ -1058,8 +1058,7 @@ class Range () extends ClientObject {
     * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
     The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param destinationRange destinationRange Specifies the range to where the information in this range will be moved.
     */

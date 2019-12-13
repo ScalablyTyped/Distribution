@@ -1,6 +1,6 @@
 package typings.atBabelGenerator.atBabelGeneratorMod
 
-import typings.atBabelGenerator.Anon_Double
+import typings.atBabelGenerator.Anon_Backtick
 import typings.atBabelGenerator.atBabelGeneratorStrings.auto
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ trait GeneratorOptions extends js.Object {
   /**
     * Options for outputting jsesc representation.
     */
-  var jsescOption: js.UndefOr[Anon_Double] = js.undefined
+  var jsescOption: js.UndefOr[Anon_Backtick] = js.undefined
   /**
     * Set to true to run jsesc with "json": true to print "\\u00A9" vs. "©";
     */
@@ -89,7 +89,7 @@ object GeneratorOptions {
     concise: js.UndefOr[Boolean] = js.undefined,
     decoratorsBeforeExport: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
-    jsescOption: Anon_Double = null,
+    jsescOption: Anon_Backtick = null,
     jsonCompatibleStrings: js.UndefOr[Boolean] = js.undefined,
     minified: js.UndefOr[Boolean] = js.undefined,
     retainFunctionParens: js.UndefOr[Boolean] = js.undefined,

@@ -4,6 +4,7 @@ import typings.jose.joseMod.JWKECKey
 import typings.jose.joseMod.JWKOKPKey
 import typings.jose.joseMod.JWKOctKey
 import typings.jose.joseMod.JWKRSAKey
+import typings.jose.joseMod.KeyInput
 import typings.jose.joseMod.KeyParameters
 import typings.node.cryptoMod.KeyObject
 import scala.scalajs.js

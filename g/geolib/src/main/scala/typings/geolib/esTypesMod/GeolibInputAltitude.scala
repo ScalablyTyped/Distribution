@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.geolib.Anon_Alt
-  - typings.geolib.Anon_Altitude
+  - typings.geolib.Anon_AltitudeGeolibAltitudeInputValue
   - typings.geolib.Anon_Elevation
   - typings.geolib.Anon_Elev
 */
@@ -20,7 +20,7 @@ object GeolibInputAltitude {
     __obj.asInstanceOf[GeolibInputAltitude]
   }
   @scala.inline
-  def Anon_Altitude(altitude: Int | Double = null): GeolibInputAltitude = {
+  def Anon_AltitudeGeolibAltitudeInputValue(altitude: Int | Double = null): GeolibInputAltitude = {
     val __obj = js.Dynamic.literal()
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolibInputAltitude]

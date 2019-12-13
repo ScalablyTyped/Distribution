@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-collapsible" : "2.6.0"
+      "react-collapsible" : "2.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-collapsible" : "2.6.0"
+      "react-collapsible" : "2.6.2"
     }
   ],
   "compile-devDependencies" : [

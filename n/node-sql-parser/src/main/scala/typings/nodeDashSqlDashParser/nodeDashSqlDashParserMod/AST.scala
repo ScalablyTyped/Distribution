@@ -7,11 +7,13 @@ import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.insert
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.replace
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.select
 import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.update
+import typings.nodeDashSqlDashParser.nodeDashSqlDashParserStrings.use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Use
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Select
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Insert_Replace
   - typings.nodeDashSqlDashParser.nodeDashSqlDashParserMod.Update
@@ -21,6 +23,12 @@ import scala.scalajs.js.annotation._
 trait AST extends js.Object
 
 object AST {
+  @scala.inline
+  def Use(db: String, `type`: use): AST = {
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AST]
+  }
   @scala.inline
   def Update(
     set: js.Array[SetList],

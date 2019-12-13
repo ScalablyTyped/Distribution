@@ -1,7 +1,7 @@
 
 # Scala.js typings for bookshelf
 
-Typings are for version v0.13.0
+Typings are for version v1.0.1
 
 ## Library description:
 A lightweight ORM for PostgreSQL, MySQL, and SQLite3

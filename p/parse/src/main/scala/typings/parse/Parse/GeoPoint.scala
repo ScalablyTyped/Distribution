@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   *   new GeoPoint({latitude: 30, longitude: 30})
   *   new GeoPoint()  // defaults to (0, 0)
   *   </pre>
-  * @class
   *
   * <p>Represents a latitude / longitude point that may be associated
   * with a key in a ParseObject or used as a reference point for geo queries.
@@ -30,9 +29,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.GeoPoint")
 @js.native
-class GeoPoint ()
-  extends BaseObject
-     with _TYPE {
+class GeoPoint () extends _TYPE {
   def this(arg1: js.Any) = this()
   def this(arg1: js.Any, arg2: js.Any) = this()
   var latitude: Double = js.native
@@ -42,5 +39,6 @@ class GeoPoint ()
   def kilometersTo(point: GeoPoint): Double = js.native
   def milesTo(point: GeoPoint): Double = js.native
   def radiansTo(point: GeoPoint): Double = js.native
+  def toJSON(): js.Any = js.native
 }
 

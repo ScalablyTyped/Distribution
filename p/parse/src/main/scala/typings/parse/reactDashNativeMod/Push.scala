@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 
 /**
   * Contains functions to deal with Push in Parse
-  * @name Parse.Push
-  * @namespace
   */
 @JSImport("parse/react-native", "Push")
 @js.native

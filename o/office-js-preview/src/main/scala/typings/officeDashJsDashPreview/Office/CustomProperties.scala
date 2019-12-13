@@ -12,8 +12,6 @@ import scala.scalajs.js.annotation._
   *
   * Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -27,8 +25,6 @@ trait CustomProperties extends js.Object {
     * @param name - The name of the custom property to be returned.
     * @returns The value of the specified custom property.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -41,8 +37,6 @@ trait CustomProperties extends js.Object {
     *
     * To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
     * @param name - The name of the property to be removed.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -67,8 +61,6 @@ trait CustomProperties extends js.Object {
     *                 type Office.AsyncResult.
     * @param asyncContext - Optional. Any state data that is passed to the callback method.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -86,8 +78,6 @@ trait CustomProperties extends js.Object {
     * The set method creates a new property if the specified property does not already exist; 
     * otherwise, the existing value is replaced with the new value. 
     * The value parameter can be of any type; however, it is always passed to the server as a string.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 

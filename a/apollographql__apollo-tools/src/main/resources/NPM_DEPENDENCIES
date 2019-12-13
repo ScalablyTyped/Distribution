@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@apollographql/apollo-tools" : "0.4.1"
+      "@apollographql/apollo-tools" : "0.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@apollographql/apollo-tools" : "0.4.1"
+      "@apollographql/apollo-tools" : "0.4.2"
     }
   ],
   "compile-devDependencies" : [

@@ -15,8 +15,6 @@ import scala.scalajs.js.annotation._
   * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
   * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
   *
-  * [Api set: Mailbox 1.0]
-  *
   * @remarks
   * 
   * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
@@ -54,8 +52,6 @@ trait Item extends js.Object {
     *
     * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
     * an appointment.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -232,8 +228,6 @@ trait Item extends js.Object {
     * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
     * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
     * the server.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *

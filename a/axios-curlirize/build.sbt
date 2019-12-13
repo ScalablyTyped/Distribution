@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "axios-curlirize"
-version := "1.3-dt-20191127Z-ab3484"
+version := "1.3-dt-20191127Z-d534bf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

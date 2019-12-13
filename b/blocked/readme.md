@@ -1,7 +1,7 @@
 
 # Scala.js typings for blocked
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 check if the event loop is blocked

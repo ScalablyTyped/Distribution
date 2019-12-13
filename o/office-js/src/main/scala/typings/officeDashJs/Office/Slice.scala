@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   */
 trait Slice extends js.Object {
   /**
-    * Gets the raw data of the file slice in `Office.FileType.Text` ("text") or `Office.FileType.Compressed` ("compressed") format as specified 
-    * by the fileType parameter of the call to the Document.getFileAsync method.
+    * Gets the raw data of the file slice in `Office.FileType.Text` or `Office.FileType.Compressed` format as specified 
+    * by the `fileType` parameter of the call to the `Document.getFileAsync` method.
     *
     * @remarks
     * 

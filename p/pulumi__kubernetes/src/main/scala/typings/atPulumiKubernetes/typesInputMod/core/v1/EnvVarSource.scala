@@ -15,7 +15,8 @@ trait EnvVarSource extends js.Object {
   var configMapKeyRef: js.UndefOr[Input[ConfigMapKeySelector]] = js.undefined
   /**
     * Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels,
-    * metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP.
+    * metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP,
+    * status.podIPs.
     */
   var fieldRef: js.UndefOr[Input[ObjectFieldSelector]] = js.undefined
   /**

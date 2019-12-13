@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "globalize-compiler"
-version := "v0.2.0-dt-20190322Z-709959"
+version := "v0.2.0-dt-20190322Z-2cda1f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "cldrjs" % "0.4.4-dt-20191126Z-86062e",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191119Z-069b07",
-  "org.scalablytyped" %%% "globalize" % "0.0-unknown-dt-20191126Z-4612c2",
+  "org.scalablytyped" %%% "globalize" % "0.0-unknown-dt-20191207Z-a22b8c",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

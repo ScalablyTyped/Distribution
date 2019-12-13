@@ -8,7 +8,7 @@ import typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderView
 import typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
 import typings.atAntDashDesignProDashLayout.libRouteContextMod.RouteContextType
 import typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerProps
-import typings.atAntDashDesignProDashLayout.libSettingDrawerMod.SettingDrawerState
+import typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeaderProps
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MessageDescriptor
 import typings.atAntDashDesignProDashLayout.libTypingsMod.Route
@@ -25,14 +25,6 @@ object atAntDashDesignProDashLayoutMod extends js.Object {
   @js.native
   class DefaultHeader () extends HeaderView
   
-  @js.native
-  class SettingDrawer ()
-    extends typings.atAntDashDesignProDashLayout.libSettingDrawerMod.default
-  
-  @js.native
-  class TopNavHeader ()
-    extends typings.atAntDashDesignProDashLayout.libTopNavHeaderMod.TopNavHeader
-  
   /**
     * 🌃 Powerful and easy to use beautiful layout
     * 🏄‍ Support multiple topics and layout types
@@ -47,7 +39,10 @@ object atAntDashDesignProDashLayoutMod extends js.Object {
     */
   val GridContent: SFC[GridContentProps] = js.native
   val PageHeaderWrapper: SFC[PageHeaderWrapperProps] = js.native
+  val PageLoading: FC[Anon_Tip] = js.native
   val RouteContext: Context[RouteContextType] = js.native
+  val SettingDrawer: FC[SettingDrawerProps] = js.native
+  val TopNavHeader: FC[TopNavHeaderProps] = js.native
   /**
     * 🌃 Powerful and easy to use beautiful layout
     * 🏄‍ Support multiple topics and layout types
@@ -92,11 +87,5 @@ object atAntDashDesignProDashLayoutMod extends js.Object {
   ): Anon_Breadcrumb = js.native
   def getPageTitle(props: GetPageTitleProps): String = js.native
   def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = js.native
-  /* static members */
-  @js.native
-  object SettingDrawer extends js.Object {
-    def getDerivedStateFromProps(props: SettingDrawerProps): SettingDrawerState | Null = js.native
-  }
-  
 }
 

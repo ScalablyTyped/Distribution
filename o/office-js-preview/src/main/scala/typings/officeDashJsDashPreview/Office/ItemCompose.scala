@@ -21,8 +21,6 @@ trait ItemCompose extends Item {
     *
     * The subject property returns a Subject object that provides methods to get and set the subject.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -232,8 +230,6 @@ trait ItemCompose extends Item {
     * To access the selected data from the callback method, call asyncResult.value.data.
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
     *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-    *
     * [Api set: Mailbox 1.2]
     *
     * @returns
@@ -259,8 +255,6 @@ trait ItemCompose extends Item {
     *
     * To access the selected data from the callback method, call asyncResult.value.data.
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-    *
-    * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
     *
     * [Api set: Mailbox 1.2]
     *

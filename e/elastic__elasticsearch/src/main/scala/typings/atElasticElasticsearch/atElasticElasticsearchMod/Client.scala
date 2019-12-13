@@ -13,11 +13,12 @@ import typings.atElasticElasticsearch.Anon_ClearCursor
 import typings.atElasticElasticsearch.Anon_CloseJob
 import typings.atElasticElasticsearch.Anon_Delete
 import typings.atElasticElasticsearch.Anon_DeleteAutoFollowPattern
-import typings.atElasticElasticsearch.Anon_DeleteDataFrameTransform
 import typings.atElasticElasticsearch.Anon_DeleteJob
 import typings.atElasticElasticsearch.Anon_DeleteLifecycle
 import typings.atElasticElasticsearch.Anon_DeleteLifecycleDeletelifecycle
 import typings.atElasticElasticsearch.Anon_DeletePipeline
+import typings.atElasticElasticsearch.Anon_DeletePolicy
+import typings.atElasticElasticsearch.Anon_DeleteTransform
 import typings.atElasticElasticsearch.Anon_Deprecations
 import typings.atElasticElasticsearch.Anon_Explore
 import typings.atElasticElasticsearch.Anon_Force
@@ -87,8 +88,6 @@ class Client () extends EventEmitter {
   var count_Original: ApiMethod[Count[_], _] = js.native
   @JSName("create")
   var create_Original: ApiMethod[Create[_], _] = js.native
-  var dataFrame: Anon_DeleteDataFrameTransform = js.native
-  var data_frame: Anon_DeleteDataFrameTransform = js.native
   @JSName("deleteByQueryRethrottle")
   var deleteByQueryRethrottle_Original: ApiMethod[DeleteByQueryRethrottle, _] = js.native
   @JSName("deleteByQuery")
@@ -103,6 +102,7 @@ class Client () extends EventEmitter {
   var delete_by_query_rethrottle_Original: ApiMethod[DeleteByQueryRethrottle, _] = js.native
   @JSName("delete_script")
   var delete_script_Original: ApiMethod[DeleteScript, _] = js.native
+  var enrich: Anon_DeletePolicy = js.native
   @JSName("existsSource")
   var existsSource_Original: ApiMethod[ExistsSource, _] = js.native
   @JSName("exists")
@@ -196,6 +196,7 @@ class Client () extends EventEmitter {
   var tasks: Anon_Cancel = js.native
   @JSName("termvectors")
   var termvectors_Original: ApiMethod[Termvectors[_], _] = js.native
+  var transform: Anon_DeleteTransform = js.native
   var transport: typings.atElasticElasticsearch.libTransportMod.default = js.native
   @JSName("updateByQueryRethrottle")
   var updateByQueryRethrottle_Original: ApiMethod[UpdateByQueryRethrottle, _] = js.native

@@ -84,6 +84,14 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def Display4: ComponentType[Display4Props] = typings.baseui.typographyMod.Display4.asInstanceOf[typings.react.reactMod.ComponentType[Display4Props]]
   @scala.inline
+  def DisplayLarge: ComponentType[DisplayLargeProps] = typings.baseui.typographyMod.DisplayLarge.asInstanceOf[typings.react.reactMod.ComponentType[DisplayLargeProps]]
+  @scala.inline
+  def DisplayMedium: ComponentType[DisplayMediumProps] = typings.baseui.typographyMod.DisplayMedium.asInstanceOf[typings.react.reactMod.ComponentType[DisplayMediumProps]]
+  @scala.inline
+  def DisplaySmall: ComponentType[DisplaySmallProps] = typings.baseui.typographyMod.DisplaySmall.asInstanceOf[typings.react.reactMod.ComponentType[DisplaySmallProps]]
+  @scala.inline
+  def DisplayXSmall: ComponentType[DisplayXSmallProps] = typings.baseui.typographyMod.DisplayXSmall.asInstanceOf[typings.react.reactMod.ComponentType[DisplayXSmallProps]]
+  @scala.inline
   def Drawer: ComponentType[DrawerProps] = js.constructorOf[typings.baseui.drawerMod.Drawer].asInstanceOf[typings.react.reactMod.ComponentType[DrawerProps]]
   @scala.inline
   def EmoticonRating: ComponentType[EmoticonRatingProps] = js.constructorOf[typings.baseui.ratingMod.EmoticonRating].asInstanceOf[typings.react.reactMod.ComponentType[EmoticonRatingProps]]
@@ -120,7 +128,19 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def Heading: ComponentType[HeadingProps] = typings.baseui.headingMod.Heading.asInstanceOf[typings.react.reactMod.ComponentType[HeadingProps]]
   @scala.inline
+  def HeadingLarge: ComponentType[HeadingLargeProps] = typings.baseui.typographyMod.HeadingLarge.asInstanceOf[typings.react.reactMod.ComponentType[HeadingLargeProps]]
+  @scala.inline
   def HeadingLevel: ComponentType[HeadingLevelProps] = typings.baseui.headingMod.HeadingLevel.asInstanceOf[typings.react.reactMod.ComponentType[HeadingLevelProps]]
+  @scala.inline
+  def HeadingMedium: ComponentType[HeadingMediumProps] = typings.baseui.typographyMod.HeadingMedium.asInstanceOf[typings.react.reactMod.ComponentType[HeadingMediumProps]]
+  @scala.inline
+  def HeadingSmall: ComponentType[HeadingSmallProps] = typings.baseui.typographyMod.HeadingSmall.asInstanceOf[typings.react.reactMod.ComponentType[HeadingSmallProps]]
+  @scala.inline
+  def HeadingXLarge: ComponentType[HeadingXLargeProps] = typings.baseui.typographyMod.HeadingXLarge.asInstanceOf[typings.react.reactMod.ComponentType[HeadingXLargeProps]]
+  @scala.inline
+  def HeadingXSmall: ComponentType[HeadingXSmallProps] = typings.baseui.typographyMod.HeadingXSmall.asInstanceOf[typings.react.reactMod.ComponentType[HeadingXSmallProps]]
+  @scala.inline
+  def HeadingXXLarge: ComponentType[HeadingXXLargeProps] = typings.baseui.typographyMod.HeadingXXLarge.asInstanceOf[typings.react.reactMod.ComponentType[HeadingXXLargeProps]]
   @scala.inline
   def Hide: ComponentType[HideProps] = typings.baseui.iconMod.Hide.asInstanceOf[typings.react.reactMod.ComponentType[HideProps]]
   @scala.inline
@@ -135,6 +155,14 @@ object baseuiComponents extends baseuiProps {
   def Label3: ComponentType[Label3Props] = typings.baseui.typographyMod.Label3.asInstanceOf[typings.react.reactMod.ComponentType[Label3Props]]
   @scala.inline
   def Label4: ComponentType[Label4Props] = typings.baseui.typographyMod.Label4.asInstanceOf[typings.react.reactMod.ComponentType[Label4Props]]
+  @scala.inline
+  def LabelLarge: ComponentType[LabelLargeProps] = typings.baseui.typographyMod.LabelLarge.asInstanceOf[typings.react.reactMod.ComponentType[LabelLargeProps]]
+  @scala.inline
+  def LabelMedium: ComponentType[LabelMediumProps] = typings.baseui.typographyMod.LabelMedium.asInstanceOf[typings.react.reactMod.ComponentType[LabelMediumProps]]
+  @scala.inline
+  def LabelSmall: ComponentType[LabelSmallProps] = typings.baseui.typographyMod.LabelSmall.asInstanceOf[typings.react.reactMod.ComponentType[LabelSmallProps]]
+  @scala.inline
+  def LabelXSmall: ComponentType[LabelXSmallProps] = typings.baseui.typographyMod.LabelXSmall.asInstanceOf[typings.react.reactMod.ComponentType[LabelXSmallProps]]
   @scala.inline
   def Layer: ComponentType[LayerProps] = typings.baseui.layerMod.Layer.asInstanceOf[typings.react.reactMod.ComponentType[LayerProps]]
   @scala.inline
@@ -187,6 +215,14 @@ object baseuiComponents extends baseuiProps {
   def Paragraph3: ComponentType[Paragraph3Props] = typings.baseui.typographyMod.Paragraph3.asInstanceOf[typings.react.reactMod.ComponentType[Paragraph3Props]]
   @scala.inline
   def Paragraph4: ComponentType[Paragraph4Props] = typings.baseui.typographyMod.Paragraph4.asInstanceOf[typings.react.reactMod.ComponentType[Paragraph4Props]]
+  @scala.inline
+  def ParagraphLarge: ComponentType[ParagraphLargeProps] = typings.baseui.typographyMod.ParagraphLarge.asInstanceOf[typings.react.reactMod.ComponentType[ParagraphLargeProps]]
+  @scala.inline
+  def ParagraphMedium: ComponentType[ParagraphMediumProps] = typings.baseui.typographyMod.ParagraphMedium.asInstanceOf[typings.react.reactMod.ComponentType[ParagraphMediumProps]]
+  @scala.inline
+  def ParagraphSmall: ComponentType[ParagraphSmallProps] = typings.baseui.typographyMod.ParagraphSmall.asInstanceOf[typings.react.reactMod.ComponentType[ParagraphSmallProps]]
+  @scala.inline
+  def ParagraphXSmall: ComponentType[ParagraphXSmallProps] = typings.baseui.typographyMod.ParagraphXSmall.asInstanceOf[typings.react.reactMod.ComponentType[ParagraphXSmallProps]]
   @scala.inline
   def PaymentCard: ComponentType[PaymentCardProps] = js.constructorOf[typings.baseui.paymentDashCardMod.PaymentCard].asInstanceOf[typings.react.reactMod.ComponentType[PaymentCardProps]]
   @scala.inline

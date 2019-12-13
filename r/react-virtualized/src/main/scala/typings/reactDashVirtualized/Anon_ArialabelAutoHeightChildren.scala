@@ -2,6 +2,7 @@ package typings.reactDashVirtualized
 
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ReactNode
+import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashVirtualized.distEsCellMeasurerMod.CellMeasurerCache
 import typings.reactDashVirtualized.distEsTableMod.HeaderMouseEventHandlerParams
 import typings.reactDashVirtualized.distEsTableMod.RowMouseEventHandlerParams
@@ -61,7 +62,7 @@ trait Anon_ArialabelAutoHeightChildren extends js.Object {
   /** Optional id */
   var id: js.UndefOr[String] = js.undefined
   /** Optional renderer to be used in place of table body rows when rowCount is 0 */
-  var noRowsRenderer: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var noRowsRenderer: js.UndefOr[js.Function0[Element | Null]] = js.undefined
   /**
     * Optional callback when a column's header is clicked.
     * ({ columnData: any, dataKey: string }): void
@@ -182,7 +183,7 @@ object Anon_ArialabelAutoHeightChildren {
     headerStyle: js.Any = null,
     height: Int | Double = null,
     id: String = null,
-    noRowsRenderer: () => Unit = null,
+    noRowsRenderer: () => Element | Null = null,
     onHeaderClick: /* params */ HeaderMouseEventHandlerParams => Unit = null,
     onRowClick: /* info */ RowMouseEventHandlerParams => Unit = null,
     onRowDoubleClick: /* info */ RowMouseEventHandlerParams => Unit = null,

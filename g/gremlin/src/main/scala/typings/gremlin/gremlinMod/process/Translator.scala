@@ -10,6 +10,7 @@ class Translator protected () extends js.Object {
   def this(traversalSource: AnonymousTraversalSource) = this()
   def this(traversalSource: GraphTraversalSource) = this()
   def getTraversalSource(): Translator = js.native
+  def of(traversalSource: String): Unit = js.native
   def of(traversalSource: AnonymousTraversalSource): Unit = js.native
   def of(traversalSource: GraphTraversalSource): Unit = js.native
   def translate(bytecode: Bytecode): String = js.native

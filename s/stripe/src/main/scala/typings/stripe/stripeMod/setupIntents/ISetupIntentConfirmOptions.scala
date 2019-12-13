@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait ISetupIntentConfirmOptions extends js.Object {
   /**
+    * The client secret of this SetupIntent. Used for client-side confirmation using a publishable key. Please refer to dynamic authentication guide on how client_secret should be handled.
+    */
+  var client_secret: js.UndefOr[String] = js.undefined
+  /**
     * ID of the payment method (a PaymentMethod, Card, BankAccount, or saved Source object)
     * to attach to this SetupIntent.
     */
@@ -26,11 +30,13 @@ trait ISetupIntentConfirmOptions extends js.Object {
 object ISetupIntentConfirmOptions {
   @scala.inline
   def apply(
+    client_secret: String = null,
     payment_method: String = null,
     payment_method_options: ISetupIntentPaymentMethodOptions = null,
     return_url: String = null
   ): ISetupIntentConfirmOptions = {
     val __obj = js.Dynamic.literal()
+    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     if (payment_method_options != null) __obj.updateDynamic("payment_method_options")(payment_method_options.asInstanceOf[js.Any])
     if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])

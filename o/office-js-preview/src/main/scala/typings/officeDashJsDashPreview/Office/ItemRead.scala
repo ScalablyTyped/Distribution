@@ -17,8 +17,6 @@ trait ItemRead extends Item {
   /**
     * Gets the item's attachments as an array.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -34,11 +32,8 @@ trait ItemRead extends Item {
   /**
     * Gets the Exchange Web Services item class of the selected item.
     *
-    *
     * You can create custom message classes that extends a default message class, for example, a custom appointment message class 
     * IPM.Appointment.Contoso.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -82,8 +77,6 @@ trait ItemRead extends Item {
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -96,8 +89,6 @@ trait ItemRead extends Item {
     *
     * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by 
     * email programs. To get the subject of the item with the prefixes intact, use the subject property.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -112,8 +103,6 @@ trait ItemRead extends Item {
     * The subject property gets or sets the entire subject of the item, as sent by the email server.
     *
     * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     *
@@ -135,8 +124,6 @@ trait ItemRead extends Item {
     * If this isn't possible, then no error message is thrown.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
@@ -166,8 +153,6 @@ trait ItemRead extends Item {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -188,8 +173,6 @@ trait ItemRead extends Item {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -203,8 +186,6 @@ trait ItemRead extends Item {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    * 
     * @param entityType - One of the EntityType enumeration values.
     *
     * @returns
@@ -273,8 +254,6 @@ trait ItemRead extends Item {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @remarks
     *
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
@@ -303,8 +282,6 @@ trait ItemRead extends Item {
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
     *
-    * [Api set: Mailbox 1.0]
-    *
     * @returns
     * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
     * The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule 
@@ -328,8 +305,6 @@ trait ItemRead extends Item {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
     * **Note**: This method is not supported in Outlook on iOS or Android.
-    *
-    * [Api set: Mailbox 1.0]
     *
     * @returns
     * An array that contains the strings that match the regular expression defined in the manifest XML file.

@@ -24,12 +24,16 @@ object libCommandMod extends js.Object {
   - typings.ionic.definitionsMod.ICommand because var conflicts: namespace. Inlined env, project, execute */ @js.native
   abstract class Command protected () extends BaseCommand[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     def this(namespace: INamespace) = this()
-    val env: IonicEnvironment = js.native
-    val project: js.UndefOr[IProject] = js.native
+    @JSName("env")
+    val env_FCommand: IonicEnvironment = js.native
+    @JSName("project")
+    val project_FCommand: js.UndefOr[IProject] = js.native
     val taskChains: js.Array[TaskChain] = js.native
     def createTaskChain(): TaskChain = js.native
+    def env(): IonicEnvironment = js.native
     def execute(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     def getCleanInputsForTelemetry(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[js.Array[String]] = js.native
+    def project(): js.UndefOr[IProject] = js.native
   }
   
 }

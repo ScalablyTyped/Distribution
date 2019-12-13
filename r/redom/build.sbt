@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redom"
-version := "3.24.2-730e74"
+version := "3.24.3-9eaf77"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

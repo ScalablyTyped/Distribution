@@ -17,7 +17,9 @@ object distSrcExecutorGraphUnderscoreExecutorMod extends js.Object {
   class GraphExecutor protected () extends js.Object {
     def this(graph: Graph) = this()
     var SEPERATOR: js.Any = js.native
+    var _inputs: js.Any = js.native
     var _outputs: js.Any = js.native
+    var _signature: js.Any = js.native
     var _weightMap: js.Any = js.native
     var checkInputShapeAndType: js.Any = js.native
     var checkInputs: js.Any = js.native
@@ -41,9 +43,10 @@ object distSrcExecutorGraphUnderscoreExecutorMod extends js.Object {
     var graph: js.Any = js.native
     val inputNodes: js.Array[String] = js.native
     val inputs: js.Array[TensorInfo] = js.native
+    var mapInputs: js.Any = js.native
+    var mapOutputs: js.Any = js.native
     val outputNodes: js.Array[String] = js.native
     val outputs: js.Array[TensorInfo] = js.native
-    var placeholders: js.Any = js.native
     var processChildNodes: js.Any = js.native
     var processStack: js.Any = js.native
     var weightIds: js.Any = js.native

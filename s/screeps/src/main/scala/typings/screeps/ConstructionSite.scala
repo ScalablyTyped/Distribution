@@ -12,7 +12,7 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject
   /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
-  var id: String
+  var id: Id[this.type]
   /**
     * Whether this is your own construction site.
     */

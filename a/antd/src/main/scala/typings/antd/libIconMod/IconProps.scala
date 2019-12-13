@@ -7,14 +7,16 @@ import typings.react.reactMod.KeyboardEventHandler
 import typings.react.reactMod.MouseEvent
 import typings.react.reactMod.MouseEventHandler
 import typings.react.reactMod.NativeMouseEvent
+import typings.react.reactMod.SVGProps
 import typings.std.HTMLElement
+import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IconProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
-  var component: js.UndefOr[ComponentType[CustomIconComponentProps]] = js.undefined
+  var component: js.UndefOr[ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -34,7 +36,7 @@ object IconProps {
   @scala.inline
   def apply(
     className: String = null,
-    component: ComponentType[CustomIconComponentProps] = null,
+    component: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]] = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLElement] => Unit = null,
     prefixCls: String = null,

@@ -126,7 +126,7 @@ trait DropzoneOptions extends js.Object {
       Unit
     ]
   ] = js.undefined
-  var success: js.UndefOr[js.Function2[/* file */ DropzoneFile, /* response */ js.Object | String, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* file */ DropzoneFile, Unit]] = js.undefined
   var successmultiple: js.UndefOr[
     js.Function2[/* files */ js.Array[DropzoneFile], /* responseText */ String, Unit]
   ] = js.undefined
@@ -231,7 +231,7 @@ object DropzoneOptions {
     retryChunksLimit: Int | Double = null,
     sending: (/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData) => Unit = null,
     sendingmultiple: (/* files */ js.Array[DropzoneFile], /* xhr */ XMLHttpRequest, /* formData */ FormData) => Unit = null,
-    success: (/* file */ DropzoneFile, /* response */ js.Object | String) => Unit = null,
+    success: /* file */ DropzoneFile => Unit = null,
     successmultiple: (/* files */ js.Array[DropzoneFile], /* responseText */ String) => Unit = null,
     thumbnail: (/* file */ DropzoneFile, /* dataUrl */ String) => Unit = null,
     thumbnailHeight: Int | Double = null,
@@ -321,7 +321,7 @@ object DropzoneOptions {
     if (retryChunksLimit != null) __obj.updateDynamic("retryChunksLimit")(retryChunksLimit.asInstanceOf[js.Any])
     if (sending != null) __obj.updateDynamic("sending")(js.Any.fromFunction3(sending))
     if (sendingmultiple != null) __obj.updateDynamic("sendingmultiple")(js.Any.fromFunction3(sendingmultiple))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction2(success))
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     if (successmultiple != null) __obj.updateDynamic("successmultiple")(js.Any.fromFunction2(successmultiple))
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(js.Any.fromFunction2(thumbnail))
     if (thumbnailHeight != null) __obj.updateDynamic("thumbnailHeight")(thumbnailHeight.asInstanceOf[js.Any])

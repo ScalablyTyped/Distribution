@@ -1,6 +1,7 @@
 package typings.reactDashInputDashMask.reactDashInputDashMaskMod
 
 import typings.std.Record
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait MaskOptions extends js.Object {
   var alwaysShowMask: Boolean
   var formatChars: Record[String, String]
-  var mask: String
+  var mask: String | (js.Array[String | RegExp])
   var maskChar: String
   var permanents: js.Array[Double]
 }
@@ -18,7 +19,7 @@ object MaskOptions {
   def apply(
     alwaysShowMask: Boolean,
     formatChars: Record[String, String],
-    mask: String,
+    mask: String | (js.Array[String | RegExp]),
     maskChar: String,
     permanents: js.Array[Double]
   ): MaskOptions = {

@@ -13,6 +13,14 @@ trait PieChart
   var cx_Original: IGetSet[Double, PieChart] = js.native
   @JSName("cy")
   var cy_Original: IGetSet[Double, PieChart] = js.native
+  @JSName("drawPaths")
+  var drawPaths_Original: IGetSet[Boolean, PieChart] = js.native
+  @JSName("emptyTitle")
+  var emptyTitle_Original: IGetSet[String, PieChart] = js.native
+  @JSName("externalLabels")
+  var externalLabels_Original: IGetSet[Double, PieChart] = js.native
+  @JSName("externalRadiusPadding")
+  var externalRadiusPadding_Original: IGetSet[Double, PieChart] = js.native
   @JSName("innerRadius")
   var innerRadius_Original: IGetSet[Double, PieChart] = js.native
   @JSName("minAngleForLabel")
@@ -25,6 +33,14 @@ trait PieChart
   def cx(t: Double): PieChart = js.native
   def cy(): Double = js.native
   def cy(t: Double): PieChart = js.native
+  def drawPaths(): Boolean = js.native
+  def drawPaths(t: Boolean): PieChart = js.native
+  def emptyTitle(): String = js.native
+  def emptyTitle(t: String): PieChart = js.native
+  def externalLabels(): Double = js.native
+  def externalLabels(t: Double): PieChart = js.native
+  def externalRadiusPadding(): Double = js.native
+  def externalRadiusPadding(t: Double): PieChart = js.native
   def innerRadius(): Double = js.native
   def innerRadius(t: Double): PieChart = js.native
   def minAngleForLabel(): Double = js.native

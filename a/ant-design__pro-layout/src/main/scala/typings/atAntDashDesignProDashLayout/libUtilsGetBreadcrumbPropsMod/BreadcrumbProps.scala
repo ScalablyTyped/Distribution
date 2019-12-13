@@ -1,6 +1,5 @@
 package typings.atAntDashDesignProDashLayout.libUtilsGetBreadcrumbPropsMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.atAntDashDesignProDashLayout.Anon_Href
 import typings.atAntDashDesignProDashLayout.Anon_Locale
 import typings.atAntDashDesignProDashLayout.Anon_Pathname
@@ -8,13 +7,14 @@ import typings.atAntDashDesignProDashLayout.libTypingsMod.MenuDataItem
 import typings.atAntDashDesignProDashLayout.libTypingsMod.MessageDescriptor
 import typings.history.historyMod.Location
 import typings.history.historyMod.LocationState
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BreadcrumbProps extends js.Object {
-  var breadcrumb: js.UndefOr[StringDictionary[MenuDataItem]] = js.undefined
   var breadcrumbList: js.UndefOr[js.Array[Anon_Href]] = js.undefined
+  var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
   var breadcrumbRender: js.UndefOr[
     js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any, 
@@ -33,8 +33,8 @@ trait BreadcrumbProps extends js.Object {
 object BreadcrumbProps {
   @scala.inline
   def apply(
-    breadcrumb: StringDictionary[MenuDataItem] = null,
     breadcrumbList: js.Array[Anon_Href] = null,
+    breadcrumbMap: Map[String, MenuDataItem] = null,
     breadcrumbRender: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ /* routers */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AntdBreadcrumbProps * / any['routes'] */ js.Any = null,
     formatMessage: /* message */ MessageDescriptor => String = null,
     home: String = null,
@@ -43,8 +43,8 @@ object BreadcrumbProps {
     menu: Anon_Locale = null
   ): BreadcrumbProps = {
     val __obj = js.Dynamic.literal()
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
     if (breadcrumbList != null) __obj.updateDynamic("breadcrumbList")(breadcrumbList.asInstanceOf[js.Any])
+    if (breadcrumbMap != null) __obj.updateDynamic("breadcrumbMap")(breadcrumbMap.asInstanceOf[js.Any])
     if (breadcrumbRender != null) __obj.updateDynamic("breadcrumbRender")(js.Any.fromFunction1(breadcrumbRender))
     if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
     if (home != null) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])

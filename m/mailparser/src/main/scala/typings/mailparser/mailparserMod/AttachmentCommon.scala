@@ -39,6 +39,10 @@ trait AttachmentCommon extends js.Object {
   	 */
   var filename: js.UndefOr[String] = js.undefined
   /**
+  	 * An array of raw header lines for the attachment node.
+  	 */
+  var headerLines: HeaderLines
+  /**
   	 * A Map value that holds MIME headers for the attachment node.
   	 */
   var headers: Headers
@@ -65,6 +69,7 @@ object AttachmentCommon {
     content: js.Any,
     contentDisposition: String,
     contentType: String,
+    headerLines: HeaderLines,
     headers: Headers,
     size: Double,
     `type`: attachment,
@@ -73,7 +78,7 @@ object AttachmentCommon {
     filename: String = null,
     related: js.UndefOr[Boolean] = js.undefined
   ): AttachmentCommon = {
-    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
     if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])

@@ -18,6 +18,8 @@ trait ParseConfig extends js.Object {
    // default: undefined
   var complete: js.UndefOr[js.Function2[/* results */ ParseResult, /* file */ js.UndefOr[File], Unit]] = js.undefined
   var delimiter: js.UndefOr[String] = js.undefined
+   // default: undefined
+  var delimitersToGuess: js.UndefOr[js.Array[GuessableDelimiters]] = js.undefined
    // default: false
   var download: js.UndefOr[Boolean] = js.undefined
    // default: false
@@ -44,7 +46,7 @@ trait ParseConfig extends js.Object {
   var quoteChar: js.UndefOr[String] = js.undefined
    // default: undefined
   var skipEmptyLines: js.UndefOr[Boolean | greedy] = js.undefined
-   // default: undefined
+   // default: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
   // Callbacks
   var step: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, Unit]] = js.undefined
    // default: undefined
@@ -67,6 +69,7 @@ object ParseConfig {
     comments: Boolean | String = null,
     complete: (/* results */ ParseResult, /* file */ js.UndefOr[File]) => Unit = null,
     delimiter: String = null,
+    delimitersToGuess: js.Array[GuessableDelimiters] = null,
     download: js.UndefOr[Boolean] = js.undefined,
     downloadRequestHeaders: StringDictionary[String] = null,
     dynamicTyping: Boolean | (StringDictionary[Boolean] with NumberDictionary[Boolean]) | (js.Function1[/* field */ String | Double, Boolean]) = null,
@@ -92,6 +95,7 @@ object ParseConfig {
     if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (delimitersToGuess != null) __obj.updateDynamic("delimitersToGuess")(delimitersToGuess.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
     if (downloadRequestHeaders != null) __obj.updateDynamic("downloadRequestHeaders")(downloadRequestHeaders.asInstanceOf[js.Any])
     if (dynamicTyping != null) __obj.updateDynamic("dynamicTyping")(dynamicTyping.asInstanceOf[js.Any])

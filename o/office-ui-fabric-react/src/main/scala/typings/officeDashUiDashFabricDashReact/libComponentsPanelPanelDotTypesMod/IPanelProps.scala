@@ -10,6 +10,7 @@ import typings.officeDashUiDashFabricDashReact.libComponentsOverlayOverlayDotTyp
 import typings.officeDashUiDashFabricDashReact.libComponentsPanelPanelDotBaseMod.PanelBase
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
@@ -45,6 +46,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -304,7 +306,7 @@ object IPanelProps {
     color: String = null,
     componentId: String = null,
     componentRef: IRefObject[IPanel] = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     customWidth: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -513,7 +515,7 @@ object IPanelProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (componentId != null) __obj.updateDynamic("componentId")(componentId.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (customWidth != null) __obj.updateDynamic("customWidth")(customWidth.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])

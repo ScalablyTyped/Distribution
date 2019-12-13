@@ -19,9 +19,11 @@ trait LineChart
   @JSName("renderArea")
   var renderArea_Original: IGetSet[Boolean, LineChart] = js.native
   @JSName("renderDataPoints")
-  var renderDataPoints_Original: IGetSet[RenderDataPointOptions | _, LineChart] = js.native
+  var renderDataPoints_Original: IGetSet[RenderDataPointOptions, LineChart] = js.native
   @JSName("tension")
   var tension_Original: IGetSet[Double, LineChart] = js.native
+  @JSName("xyTipsOn")
+  var xyTipsOn_Original: IGetSet[Boolean, LineChart] = js.native
   def dashStyle(): js.Array[Double] = js.native
   def dashStyle(t: js.Array[Double]): LineChart = js.native
   def defined(): Accessor[_, Boolean] = js.native
@@ -32,10 +34,11 @@ trait LineChart
   def interpolate(t: String): LineChart = js.native
   def renderArea(): Boolean = js.native
   def renderArea(t: Boolean): LineChart = js.native
-  def renderDataPoints(): RenderDataPointOptions | js.Any = js.native
-  def renderDataPoints(t: js.Any): LineChart = js.native
+  def renderDataPoints(): RenderDataPointOptions = js.native
   def renderDataPoints(t: RenderDataPointOptions): LineChart = js.native
   def tension(): Double = js.native
   def tension(t: Double): LineChart = js.native
+  def xyTipsOn(): Boolean = js.native
+  def xyTipsOn(t: Boolean): LineChart = js.native
 }
 

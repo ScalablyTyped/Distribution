@@ -16,6 +16,7 @@ object distFeedsReelsDashMediaDotFeedMod extends js.Object {
     var source: IgAppModule = js.native
     var userIds: js.Array[Double | String] = js.native
     def request(): js.Promise[ReelsMediaFeedResponseRootObject] = js.native
+    /* protected */ def state(body: js.Any): js.Any = js.native
   }
   
 }

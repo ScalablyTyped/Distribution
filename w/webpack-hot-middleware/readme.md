@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-hot-middleware
 
-Typings are for version 2.16
+Typings are for version 2.25
 
 ## Library description:
 Webpack hot reloading you can attach to your own server

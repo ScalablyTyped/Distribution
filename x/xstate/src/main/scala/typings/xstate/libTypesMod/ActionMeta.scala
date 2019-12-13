@@ -11,8 +11,12 @@ trait ActionMeta[TContext, TEvent /* <: EventObject */] extends StateMeta[TConte
 
 object ActionMeta {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](action: ActionObject[TContext, TEvent], state: State[TContext, TEvent]): ActionMeta[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  def apply[TContext, TEvent /* <: EventObject */](
+    _event: typings.xstate.libTypesMod.SCXML.Event[TEvent],
+    action: ActionObject[TContext, TEvent],
+    state: State[TContext, TEvent, _, _]
+  ): ActionMeta[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any], action = action.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ActionMeta[TContext, TEvent]]
   }

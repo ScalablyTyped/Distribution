@@ -9,10 +9,10 @@ package object slateMod {
   import typings.immutable.Immutable.List
   import typings.immutable.Immutable.Map
 
-  type CommandFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, Editor]
+  type CommandFunc[T /* <: Controller */] = js.Function2[/* editor */ T, /* repeated */ js.Any, T]
   type Data = Map[js.Any, js.Any]
   type Path = List[Double] | js.Array[Double] | String
-  type QueryFunc = js.Function2[/* editor */ Editor, /* repeated */ js.Any, js.Any]
+  type QueryFunc[T /* <: Controller */] = js.Function2[/* editor */ T, /* repeated */ js.Any, js.Any]
   type RulesByNodeType = StringDictionary[Rules]
   type resetMemoization = js.Function0[Unit]
   type useMemoization = js.Function1[/* enabled */ Boolean, Unit]

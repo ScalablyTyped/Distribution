@@ -3,6 +3,7 @@ package typings.reactstrap.libListGroupMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.Anon_Html
 import typings.react.reactMod.AnimationEvent
+import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
 import typings.react.reactMod.CompositionEvent
@@ -38,6 +39,7 @@ import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
 import typings.react.reactStrings.grid
 import typings.react.reactStrings.horizontal
+import typings.react.reactStrings.inherit
 import typings.react.reactStrings.link
 import typings.react.reactStrings.list
 import typings.react.reactStrings.listbox
@@ -77,6 +79,7 @@ trait ListGroupProps
      with /* key */ StringDictionary[js.Any] {
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var flush: js.UndefOr[Boolean] = js.undefined
+  var horizontal: js.UndefOr[Boolean | String] = js.undefined
   var tag: js.UndefOr[String | ReactType[_]] = js.undefined
 }
 
@@ -140,7 +143,7 @@ object ListGroupProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     cssModule: CSSModule = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -151,6 +154,7 @@ object ListGroupProps {
     draggable: js.UndefOr[Boolean] = js.undefined,
     flush: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
+    horizontal: Boolean | String = null,
     id: String = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -319,7 +323,7 @@ object ListGroupProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -330,6 +334,7 @@ object ListGroupProps {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])

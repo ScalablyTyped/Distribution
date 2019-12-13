@@ -13,12 +13,12 @@ trait Segment[TContext, TEvent /* <: EventObject */] extends js.Object {
   /**
     * From state.
     */
-  var state: State[TContext, TEvent]
+  var state: State[TContext, TEvent, _, _]
 }
 
 object Segment {
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent]): Segment[TContext, TEvent] = {
+  def apply[TContext, TEvent /* <: EventObject */](event: TEvent, state: State[TContext, TEvent, _, _]): Segment[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Segment[TContext, TEvent]]

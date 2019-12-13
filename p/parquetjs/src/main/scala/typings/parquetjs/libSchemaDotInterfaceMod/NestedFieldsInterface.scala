@@ -4,16 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NestedFieldsInterface extends js.Object {
+trait NestedFieldsInterface extends SchemaInterfaceField {
   var fields: SchemaInterface
-  var repeated: Boolean
+  var optional: js.UndefOr[Boolean] = js.undefined
+  var repeated: js.UndefOr[Boolean] = js.undefined
 }
 
 object NestedFieldsInterface {
   @scala.inline
-  def apply(fields: SchemaInterface, repeated: Boolean): NestedFieldsInterface = {
-    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], repeated = repeated.asInstanceOf[js.Any])
-  
+  def apply(
+    fields: SchemaInterface,
+    optional: js.UndefOr[Boolean] = js.undefined,
+    repeated: js.UndefOr[Boolean] = js.undefined
+  ): NestedFieldsInterface = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedFieldsInterface]
   }
 }

@@ -19,9 +19,11 @@ import scala.scalajs.js.annotation._
     * If set to `true` spaces will not interrupt matching suggestions
     */
   var allowSpaceInQuery: js.UndefOr[Boolean] = js.undefined
+  var allowSuggestionsAboveCursor: js.UndefOr[Boolean] = js.undefined
   var children: ReactElement | js.Array[ReactElement]
   var className: js.UndefOr[String] = js.undefined
   var classNames: js.UndefOr[js.Any] = js.undefined
+  var ignoreAccents: js.UndefOr[Boolean] = js.undefined
   var inputRef: js.UndefOr[RefObject[HTMLInputElement | HTMLTextAreaElement]] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
@@ -51,8 +53,10 @@ object MentionsInputProps {
   def apply(
     children: ReactElement | js.Array[ReactElement],
     allowSpaceInQuery: js.UndefOr[Boolean] = js.undefined,
+    allowSuggestionsAboveCursor: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     classNames: js.Any = null,
+    ignoreAccents: js.UndefOr[Boolean] = js.undefined,
     inputRef: RefObject[HTMLInputElement | HTMLTextAreaElement] = null,
     onBlur: (/* event */ FocusEvent[HTMLInputElement | HTMLTextAreaElement], /* clickedSuggestion */ Boolean) => Unit = null,
     onChange: (/* event */ Anon_Target, /* newValue */ String, /* newPlainTextValue */ String, /* mentions */ js.Array[MentionItem]) => Unit = null,
@@ -66,8 +70,10 @@ object MentionsInputProps {
   ): MentionsInputProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSuggestionsAboveCursor)) __obj.updateDynamic("allowSuggestionsAboveCursor")(allowSuggestionsAboveCursor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAccents)) __obj.updateDynamic("ignoreAccents")(ignoreAccents.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4(onChange))

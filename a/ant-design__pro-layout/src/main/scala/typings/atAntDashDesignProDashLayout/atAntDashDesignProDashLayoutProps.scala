@@ -33,9 +33,13 @@ trait atAntDashDesignProDashLayoutProps {
   @scala.inline
   def HeaderProps: HeaderViewProps.type = typings.atAntDashDesignProDashLayout.libHeaderMod.HeaderViewProps
   type HeaderProps = HeaderViewProps
+  type LayoutChangeProps = Anon_ChangeSetting
   @scala.inline
   def PageHeaderWrapperProps: typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps.type = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
   type PageHeaderWrapperProps = typings.atAntDashDesignProDashLayout.libPageHeaderWrapperMod.PageHeaderWrapperProps
+  @scala.inline
+  def PageLoadingProps: Anon_Tip.type = typings.atAntDashDesignProDashLayout.Anon_Tip
+  type PageLoadingProps = Anon_Tip
   @scala.inline
   def ProDashLayoutProps: typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps.type = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps
   type ProDashLayoutProps = typings.atAntDashDesignProDashLayout.libBasicLayoutMod.BasicLayoutProps

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "4.5.1-de8a0e"
+version := "4.5.1-f8644a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191112Z-a2a9d8",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-6fdd70",
   "org.scalablytyped" %%% "csstype" % "2.6.6-a93afc",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20190715Z-8904b6",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-0c6220",
   "org.scalablytyped" %%% "jss" % "10.0.0-c5a653",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-ec43f0",
-  "org.scalablytyped" %%% "node" % "12.12-dt-20191126Z-959704",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.3-643f32",
+  "org.scalablytyped" %%% "node" % "12.12-dt-20191210Z-b5c359",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-a9bf73",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-5cddf8",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191126Z-3d1d47",
-  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20191126Z-fceb1e",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191209Z-f85fa6",
+  "org.scalablytyped" %%% "react-transition-group" % "4.2-dt-20191126Z-873168",
   "org.scalablytyped" %%% "std" % "3.7-1d724d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

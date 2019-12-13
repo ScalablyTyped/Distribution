@@ -205,7 +205,8 @@ object QueryParameters {
     tagFilters: js.Array[String] = null,
     tagRefinements: js.Array[String] = null,
     typoTolerance: Boolean | min | strict = null,
-    userData: String | js.Object = null
+    userData: String | js.Object = null,
+    userToken: String = null
   ): QueryParameters = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.asInstanceOf[js.Any])
@@ -277,6 +278,7 @@ object QueryParameters {
     if (tagRefinements != null) __obj.updateDynamic("tagRefinements")(tagRefinements.asInstanceOf[js.Any])
     if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryParameters]
   }
 }
